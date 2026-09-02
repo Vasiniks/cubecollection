@@ -1,0 +1,72 @@
+# model: gan-flagship-13
+# Pass 3 (model enumeration). GAN13 does not carry its own explicit "Nth generation" statement
+# on its own product page (contrast GAN12), but fits the same manufacturer-declared numbered
+# succession by naming pattern and dated evidence. Also the family's flagged "disappearance"
+# case: present in GAN's own "Flagship Series" nav dropdown as late as 2026-08-11
+# (gancube-swift-block-super-maglev-product) but absent from the equivalent, apparently
+# complete dropdown captured just eight days later, 2026-08-19
+# (gancube-gan17-magdrive-product). See research/notes/models/gan-pass3.md for the full
+# reasoning on why this is recorded as a narrowly-dated navigation change, not a discontinuation.
+id: gan-flagship-13
+entity: model
+family_id: gan-flagship-series
+manufacturer_id: gan
+name: "GAN13"
+scope_class: core
+generation:
+  label: "13"
+  ordinal: 13
+  basis: manufacturer_declared
+announced:
+  value: "2022-11"
+  precision: month
+  qualifier: before
+released:
+  value: "2022"
+  precision: year
+  qualifier: before
+  note: "A lower bound, not a release date. The model must have existed by 2022 because a dated limited edition of it did. Recorded with qualifier 'before' rather than 'exact' so it is never mistaken for the launch."
+description: |-
+  GAN's own current product page (gancube-gan13-maglev-product) sells "UV Coated", "Frosted",
+  and "GAN13 Maglev fx" as Versions of one listing, and describes "Magnetic Repulsion Drive"
+  and "Magnetic Attraction Drive — 30°+ Auto Aligning" without a separate non-Maglev tier
+  bundled on the same page (unlike GAN12/14's own pages, which bundle a Leap-and-Maglev
+  choice); no separate non-Maglev "GAN13 M Leap" listing was located this pass, so it is left
+  an open question whether one ever existed.
+
+  GAN13 disappearance: this generation is present in GAN's own "Flagship Series" nav dropdown
+  on 2026-08-11 ("GAN16 Maglev, GAN15, GAN14, GAN13 Maglev, GAN12, GAN11 Series...") and again
+  as late as 2026-02-28 in a separate capture (this archive's own discovery-session fetch of
+  gancube.com/products/gan-v100-leap-year-of-the-horse, not independently preserved as a
+  citable source this pass), but is absent from the equivalent, apparently complete dropdown
+  ("GAN16 Maglev, GAN15, GAN14, GAN12, GAN11 Series...") captured eight days after the 08-11
+  snapshot, on 2026-08-19. No source found this pass states GAN13 was discontinued, and its own
+  product page still resolved with HTTP 200 as of the last capture checked this pass
+  (2026-08-11); only its place in one specific navigation grouping is shown to have changed,
+  in a very narrow window. Recorded as an open lead, not a discontinuation fact.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [gancube-gan13-maglev-kunlun-le-product]
+    note: "Derived bound, not a stated date: GAN13 Maglev Kunlun, GAN's own 2022 Winter Limited Edition, dates the edition. A model cannot post-date its own limited edition, so this establishes 'no later than 2022'. The actual release date remains unresearched."
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan13-m-maglev-uv-3x3]
+    note: "TheCubicle's own earliest capture (2022-11-12) is a retailer-listing floor, not a manufacturer-stated date. Not part of gancube.com's own November 2024 archival event."
+  /generation/basis:
+    confidence: uncertain
+    sources: [gancube-gan13-maglev-product]
+    note: "No explicit 'Nth generation' statement was found on GAN13's own page (contrast gan-flagship-12); basis is extended from the same manufacturer-declared numbering pattern GAN12's page confirms directly, applied by naming-sequence analogy."
+  /relationships/0:
+    confidence: uncertain
+    note: "Inferred from GAN's sequential numbering; no explicit succession sentence found."
+  /description:
+    confidence: reported
+    sources: [gancube-swift-block-super-maglev-product, gancube-gan17-magdrive-product]
+    note: "The disappearance-window claim rests on comparing two GAN-authored navigation captures eight days apart, both already canonical sources; this pass did not independently preserve the 2026-02-28 capture referenced in the description as a third data point, so that specific date is recorded as discovery-session colour, not an attested fact."
+relationships:
+  - type: succeeds
+    target: gan-flagship-12
+    target_entity: model
+    note: "Inferred from GAN's own sequential generation numbering; no explicit succession sentence found."

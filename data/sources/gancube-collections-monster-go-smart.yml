@@ -1,0 +1,29 @@
+# source: gancube-collections-monster-go-smart
+# GAN's own storefront collection titled "Monster Go Smart Cube Series", housing the single
+# Monster Go smart 3x3 found in this pass (Monster Go 3Ai / "MG3 Ai"). Primary evidence for a
+# distinct "Monster Go Smart Cube Series" family, separate from the mechanical "Monster Go
+# 3x3" family, mirroring the same smart/mechanical split found on the GAN-branded side.
+id: gancube-collections-monster-go-smart
+entity: source
+kind: manufacturer_official
+title: "Monster Go Smart Cube Series | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/collections/monster-go-smart-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241127233248/https://www.gancube.com/collections/monster-go-smart-cube"
+excerpt: |-
+  Page title: "Monster Go Smart Cube Series | GANCUBE Official Website". Listed product:
+  "Monster Go 3Ai Smart Cube". Product description: "TRACKING AND BATTLE, AS ALWAYS: Monster Go
+  Smart Cube measures and saves your solve in 4 parameters: Time/Move/TPS/Fluency. Online
+  battle is also available in MG3 Ai. Match same level opponent within seconds, anytime,
+  anywhere! ALSO A GOOD CUBE FOR SPEED CUBING: Intelligence and performance are perfectly
+  combined in MG3 Ai. Weight only 81g while adopting sensors, battery, circuit board iniside,
+  and still keeps great handfeel and excellent corner cutting."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain the page title and the product description verbatim, including the source's own typo 'iniside' (for 'inside'), reproduced above exactly as captured."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own storefront collection page for its own sub-brand, tier 1 for Monster Go's own catalogue structure and naming ('MG3 Ai')."
+status: sourced

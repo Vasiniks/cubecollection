@@ -1,0 +1,25 @@
+# logo-placement
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: logo-placement, so the schema and this file cannot drift.
+
+id: logo-placement
+description: "Where a manufacturer logo appears."
+values:
+  - value: center_U
+    label: "Centre, one face"
+    description: "On a single centre piece."
+  - value: center_multiple
+    label: "Centre, several faces"
+    description: "On more than one centre piece."
+  - value: corner
+    label: "Corner"
+    description: "On a corner piece."
+  - value: internal
+    label: "Internal"
+    description: "Inside the puzzle only."
+  - value: none
+    label: "None"
+    description: "No logo."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

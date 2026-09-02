@@ -1,0 +1,42 @@
+# family: gan-i-carry-series
+# Pass 2 (family enumeration). GAN's second, separately-declared smart-cube line: GAN356 i
+# carry through GAN i carry 4. Distinct from gan-i-series and gan-ui-series on GAN's own
+# storefront. See research/notes/models/gan-pass2.md.
+
+id: gan-i-carry-series
+entity: family
+manufacturer_id: gan
+name: "GAN i Carry Series"
+aliases:
+  - "GAN356 i carry"
+  - "i carry Series"
+positioning: smart
+description: |-
+  A second GAN smart-cube line, sold from GAN's own storefront under a collection titled
+  "i carry Series" — distinct from "i Series" (gan-i-series) and "GAN ui Series"
+  (gan-ui-series) as three separate GAN-declared collections, all found during discovery of
+  gancube.com's own site navigation. As of 2026 the collection lists six current products
+  spanning at least two naming generations: "GAN356 i carry 2" and "GAN356 i carry E" carry
+  the older "356" prefix; "GAN i carry 4 Smart Cube" and its Minions/Year of the Horse/SSL
+  Limited siblings have dropped it, mirroring the same naming shift seen in gan-i-series.
+
+  No source located this pass states when this line was introduced or how "i carry" relates
+  mechanically or historically to "i" (a smaller/more portable smart cube sold alongside the
+  base "i" line, per the product naming, but not established as either a successor or a
+  parallel sibling by any source found). `introduced` is left unset rather than estimated from
+  the earliest available web-archive capture of gancube.com's current URL structure, which only
+  reflects when this specific site was archived at scale (November 2024) and is not evidence of
+  when the product line itself began.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: confirmed
+    sources: [gancube-collections-i-carry-series]
+    note: "GAN's own collection page filters every listed product under 'Cube Types: Smart Cube'."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-collections-i-carry-series]
+  /introduced:
+    confidence: unknown
+    note: "Researched and not found. See description for why the earliest available web-archive capture of a product URL under this line (2024-11-18) is not treated as evidence of the line's actual introduction date."

@@ -1,0 +1,21 @@
+# source: thecubicle-gan-356-i-carry-2
+# TheCubicle's listing for GAN356 i Carry 2, explicitly comparing its battery life and
+# elasticity system to "the previous versions" (plural) — succession evidence for the whole i
+# carry / i carry S lineage into i carry 2.
+id: thecubicle-gan-356-i-carry-2
+entity: source
+kind: retailer
+title: "GAN 356 i Carry 2 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-i-carry-2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240222175620/https://www.thecubicle.com/products/gan-356-i-carry-2"
+excerpt: "The GAN 356 i Carry 2 offers over 2x the battery life of the previous versions! And with the new GES Pro+ elasticity system, it is sure to be a top-performing smart cube."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'over 2x the battery life of the previous versions' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, explicitly comparing i Carry 2 to '(the) previous versions' (plural), read as covering both i Carry and i Carry S, and naming a new elasticity system (GES Pro+) as a genuine hardware change."
+status: sourced

@@ -1,0 +1,171 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "source"
+    },
+    "kind": {
+      "type": "string",
+      "x-vocab": "source-kinds"
+    },
+    "tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Derived from kind by default. Override only with a justification in reliability_note."
+    },
+    "title": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "preservation_method": {
+      "type": "string",
+      "x-vocab": "preservation-methods"
+    },
+    "archive_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "local_capture": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "checksum": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "format": {
+          "type": "string"
+        },
+        "captured": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      },
+      "required": [
+        "path",
+        "checksum"
+      ]
+    },
+    "excerpt": {
+      "type": "string",
+      "minLength": 40,
+      "description": "Must carry the claim without the page. The sentence, not a fragment."
+    },
+    "preservation_note": {
+      "type": "string"
+    },
+    "accessed": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "published": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2}$"
+    },
+    "region": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "link_status": {
+      "type": "string",
+      "x-vocab": "link-status"
+    },
+    "last_checked": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "reliability_note": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "kind",
+    "title",
+    "publisher",
+    "preservation_method"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "preservation_method": {
+            "const": "archive_url"
+          }
+        },
+        "required": [
+          "preservation_method"
+        ]
+      },
+      "then": {
+        "required": [
+          "archive_url"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "preservation_method": {
+            "const": "local_capture"
+          }
+        },
+        "required": [
+          "preservation_method"
+        ]
+      },
+      "then": {
+        "required": [
+          "local_capture"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "preservation_method": {
+            "const": "excerpt"
+          }
+        },
+        "required": [
+          "preservation_method"
+        ]
+      },
+      "then": {
+        "required": [
+          "excerpt"
+        ]
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/source.schema.json",
+  "title": "A citable document, with its preservation method"
+}

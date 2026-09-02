@@ -1,0 +1,509 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "variant"
+    },
+    "model_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "revision_ref": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "retailer": {
+            "type": "string"
+          },
+          "region": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$"
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          }
+        },
+        "required": [
+          "name"
+        ]
+      },
+      "description": "Every name this product has been sold under. Load-bearing for duplicate detection."
+    },
+    "scope_class": {
+      "type": "string",
+      "x-vocab": "scope-class"
+    },
+    "scope_justification": {
+      "type": "string"
+    },
+    "scope_decided_by": {
+      "type": "string"
+    },
+    "scope_decided_on": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "edition": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "x-vocab": "edition-types"
+          },
+          "x-critical": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "designation": {
+          "type": "string",
+          "x-critical": true,
+          "description": "The manufacturer's tier word for this configuration."
+        },
+        "limited": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "is_limited": {
+              "type": "boolean",
+              "x-critical": true
+            },
+            "run_size": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "x-critical": true,
+              "description": "Null when unknown. Never estimated."
+            },
+            "numbered": {
+              "type": "boolean"
+            },
+            "numbering_range": {
+              "type": "string"
+            }
+          }
+        },
+        "signature_of": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          }
+        },
+        "collaboration_with": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          }
+        },
+        "commemorates": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          }
+        },
+        "collaboration_name": {
+          "type": "string",
+          "description": "The collaborating party's name, verbatim, when it cannot be a record. collaboration_with resolves to a person or a manufacturer; a licensed entertainment property is neither, and most collaborations in this domain are licensed properties. Recording the name here keeps the fact rather than losing it to an empty reference. When the rightsholder is later sourced, add a manufacturer record with kind: collaborator and populate collaboration_with alongside this — the two are complementary, not alternatives."
+        }
+      }
+    },
+    "config": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "magnet_configuration": {
+          "type": "string",
+          "x-vocab": "magnet-configurations",
+          "x-critical": true
+        },
+        "magnet_strength": {
+          "type": "string",
+          "description": "As described by the source. Not a normalised number."
+        },
+        "core_system": {
+          "type": "string",
+          "x-vocab": "core-systems",
+          "x-critical": true
+        },
+        "maglev": {
+          "type": "string",
+          "x-vocab": "maglev",
+          "x-critical": true
+        },
+        "adjustment_system": {
+          "type": "string",
+          "x-vocab": "adjustment-systems",
+          "x-critical": true
+        },
+        "coating": {
+          "type": "string",
+          "x-vocab": "coatings",
+          "x-critical": true,
+          "description": "The cube's surface treatment, whoever applied it. When a service applied it, record 'aftermarket' here and the agency in service."
+        },
+        "materials": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "plastic": {
+              "type": "string"
+            },
+            "hardware": {
+              "type": "string"
+            },
+            "magnets": {
+              "type": "string"
+            }
+          }
+        },
+        "size_mm": {
+          "type": "number",
+          "x-critical": true
+        },
+        "weight_g": {
+          "type": "number",
+          "x-critical": true
+        },
+        "lubrication": {
+          "type": "string"
+        }
+      },
+      "description": "Overrides only. Unset means the model's value applies."
+    },
+    "colorway": {
+      "$ref": "https://cubecollection/schema/common/colorway.schema.json"
+    },
+    "legality": {
+      "$ref": "https://cubecollection/schema/common/legality.schema.json"
+    },
+    "smart": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "is_smart": {
+          "type": "boolean"
+        },
+        "connectivity": {
+          "type": "string"
+        },
+        "battery": {
+          "type": "string"
+        },
+        "companion_app": {
+          "type": "string"
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "description": "Present only for electronic cubes."
+    },
+    "packaging": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "form": {
+          "type": "string"
+        },
+        "contents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notable": {
+          "type": "string"
+        }
+      }
+    },
+    "releases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "region": {
+            "type": "string",
+            "pattern": "^([A-Z]{2}|INTL)$"
+          },
+          "date": {
+            "$ref": "https://cubecollection/schema/common/date.schema.json",
+            "x-critical": true
+          },
+          "channel": {
+            "type": "string",
+            "x-vocab": "release-channels"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "region",
+          "date"
+        ]
+      },
+      "description": "Release is per-region and the gap is often months."
+    },
+    "pricing": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "msrp": {
+          "$ref": "https://cubecollection/schema/common/money.schema.json",
+          "x-critical": true
+        },
+        "msrp_native": {
+          "$ref": "https://cubecollection/schema/common/money.schema.json"
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "date": {
+                "$ref": "https://cubecollection/schema/common/date.schema.json"
+              },
+              "kind": {
+                "type": "string",
+                "x-vocab": "price-kinds"
+              },
+              "price": {
+                "$ref": "https://cubecollection/schema/common/money.schema.json"
+              },
+              "retailer": {
+                "type": "string"
+              },
+              "condition": {
+                "type": "string",
+                "x-vocab": "price-condition"
+              },
+              "quantity_context": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+                "description": "Immutable identifier."
+              },
+              "note": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "date",
+              "kind",
+              "price",
+              "source"
+            ]
+          },
+          "description": "Typed price facts. The kinds are different species of fact and are never averaged together."
+        }
+      },
+      "description": "No current value is computed. See docs/data-architecture.md section 3.9."
+    },
+    "availability": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "production_status": {
+          "type": "string",
+          "x-vocab": "production-status",
+          "x-critical": true
+        },
+        "discontinued": {
+          "$ref": "https://cubecollection/schema/common/date.schema.json"
+        },
+        "still_purchasable_new": {
+          "type": "boolean",
+          "description": "Discontinued but sitting in retailer stock. A distinct state."
+        },
+        "last_seen_available": {
+          "$ref": "https://cubecollection/schema/common/date.schema.json"
+        }
+      }
+    },
+    "rarity": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "type": "string",
+          "x-vocab": "rarity-levels",
+          "x-critical": true
+        },
+        "basis": {
+          "type": "string",
+          "description": "Required whenever level is above uncommon."
+        },
+        "factors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "x-vocab": "rarity-factors"
+              },
+              "detail": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+                "description": "Immutable identifier."
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          },
+          "description": "Documented, attested reasons. The substance of a rarity claim."
+        },
+        "demand_note": {
+          "type": "string"
+        }
+      },
+      "description": "Qualitative only. No numeric score is stored anywhere in this archive."
+    },
+    "significance": {
+      "type": "string",
+      "description": "Why a collector cares. Sourced prose, no fabricated superlatives."
+    },
+    "media": {
+      "type": "array",
+      "items": {
+        "$ref": "https://cubecollection/schema/common/media.schema.json"
+      }
+    },
+    "representation": {
+      "$ref": "https://cubecollection/schema/common/representation.schema.json"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "https://cubecollection/schema/common/relationship.schema.json"
+      }
+    },
+    "former_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+        "description": "Immutable identifier."
+      }
+    },
+    "fingerprint": {
+      "type": "string",
+      "pattern": "^sha1:[0-9a-f]{40}$",
+      "x-derived": true,
+      "description": "Derived by the build for duplicate detection. Do not author."
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    },
+    "attestations": {
+      "$ref": "https://cubecollection/schema/common/attestation.schema.json"
+    },
+    "service": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "What an aftermarket servicer did to this cube, and who did it. Present only on serviced products, which must also carry a modified_from relationship to the exact base variant they were made from. config records what the object IS; service records what was done to it and by whom. Attestation of serviced_by is enforced by rule 39 when a service block is present, rather than by x-critical, which would demand provenance from every unserviced cube in the archive.",
+      "properties": {
+        "serviced_by": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+          "description": "Manufacturer id of the servicer. Services are manufacturer records with kind: service; no separate entity class exists or is needed."
+        },
+        "program": {
+          "type": "string",
+          "description": "The servicer's own name for the service line, verbatim — e.g. a named signature or mod series. Not the archive's wording."
+        },
+        "modifications": {
+          "type": "array",
+          "description": "One entry per distinct modification. A serviced product commonly carries several.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "kind": {
+                "type": "string",
+                "x-vocab": "service-modifications"
+              },
+              "detail": {
+                "type": "string",
+                "description": "What was actually done, as the source describes it. Do not generalise from a service's marketing copy to this specific product."
+              },
+              "source": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$"
+              }
+            },
+            "required": [
+              "kind"
+            ]
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "serviced_by",
+        "modifications"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "model_id",
+    "name",
+    "scope_class",
+    "status"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/variant.schema.json",
+  "title": "The atomic record: one materially distinct configuration as sold"
+}

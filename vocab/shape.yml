@@ -1,0 +1,16 @@
+# shape
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: shape, so the schema and this file cannot drift.
+
+id: shape
+description: "Overall external form of the puzzle."
+values:
+  - value: standard
+    label: "Standard"
+    description: "Flat-faced cube."
+  - value: pillowed
+    label: "Pillowed"
+    description: "Convex faces."
+  - value: other
+    label: "Other"
+    description: "Anything else. Describe in notes."

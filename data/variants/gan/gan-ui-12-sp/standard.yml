@@ -1,0 +1,18 @@
+# variant: gan-ui-12-sp--standard
+# Pass 4. "GAN12 ui SP Smart Cube" — a smart cube on its own dedicated listing. No source found
+# this pass states what "SP" stands for or how it differs mechanically from FreePlay/Maglev.
+id: gan-ui-12-sp--standard
+entity: variant
+model_id: gan-ui-12-sp
+name: "GAN12 ui SP"
+scope_class: core
+edition:
+  designation: "SP"
+  types: [standard, smart]
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [gancube-gan12-ui-sp-product]

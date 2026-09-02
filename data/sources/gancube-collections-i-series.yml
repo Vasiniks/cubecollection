@@ -1,0 +1,29 @@
+# source: gancube-collections-i-series
+# GAN's own storefront collection for its "i Series" smart cubes, one of three distinct
+# GAN-declared smart-cube collections found this pass (the other two are i carry Series and
+# ui Series). Primary evidence for treating "GAN i Series" as its own family, separate from
+# both the mechanical GAN356 line and the other two smart lines.
+id: gancube-collections-i-series
+entity: source
+kind: manufacturer_official
+title: "i Series | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/collections/i-series"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260811015557/https://www.gancube.com/collections/i-series"
+excerpt: |-
+  Page title: "i Series | GANCUBE". Collection grid, 2 results: "GAN i4" ($54.99-$111.98,
+  filtered under Cube Types: Smart Cube, 3x3 Cube; Level: Beginner) and "GAN i4 Maglev Minions
+  Edition" ($84.99-$126.98). Product description for GAN i4: "GAN i4 Smart Cube — Fully
+  Smart-Equipped [...] Backed with Zero-Loss Sensing, Omni-Motion Monitor, and other smart
+  technologies, this core precisely records your speed indicators [...] Rotate the white face
+  to wake up the cube [...] Explore other Chinese New Year editions like the GAN i4 Maglev
+  Minions Edition. Smart cubing can also be unlocked with the Cube Station App."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain the page title, the 2-result product grid, and the GAN i4 description verbatim."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own storefront collection page, tier 1 for GAN's own catalogue/collection structure. Only the current (2026) generation of this line is listed; earlier generations (GAN356 i, i2, i3) are known from other sources to have existed but are absent from this current listing, consistent with normal discontinuation rather than the family itself being new."
+status: sourced

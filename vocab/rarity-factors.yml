@@ -1,0 +1,40 @@
+# rarity-factors
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: rarity-factors, so the schema and this file cannot drift.
+
+id: rarity-factors
+description: "Documented, attested reasons a variant is hard to obtain. The exhibition may derive a visual indicator from these; the archive stores no score."
+values:
+  - value: limited_run
+    label: "Limited run"
+    description: "Production was bounded."
+  - value: single_region
+    label: "Single region"
+    description: "Sold in one market only."
+  - value: short_production_window
+    label: "Short production window"
+    description: "Produced only briefly."
+  - value: no_reissue
+    label: "No reissue"
+    description: "Never reproduced after the original run."
+  - value: bundle_exclusive
+    label: "Bundle exclusive"
+    description: "Obtainable only within a set."
+  - value: promotional_only
+    label: "Promotional only"
+    description: "Never sold at retail."
+  - value: prototype
+    label: "Prototype"
+    description: "Pre-production or unreleased."
+  - value: recalled
+    label: "Recalled"
+    description: "Withdrawn after release."
+  - value: low_survival_rate
+    label: "Low survival rate"
+    description: "Few documented surviving examples."
+  - value: high_secondary_demand
+    label: "High secondary demand"
+    description: "Documented sustained demand after discontinuation."
+  - value: unconfirmed_production
+    label: "Unconfirmed production"
+    description: "Production is reported but not established."

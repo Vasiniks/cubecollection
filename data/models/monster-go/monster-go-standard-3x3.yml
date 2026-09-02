@@ -1,0 +1,65 @@
+# model: monster-go-standard-3x3
+# Pass 3 (model enumeration). The entry-level, non-magnetic Monster Go 3x3, distinguished by
+# GAN's own product-page title ("Non-Magnetic Puzzle Cube") from every other Monster Go 3x3
+# model found this pass, all of which are magnetic. See research/notes/models/gan-pass3.md.
+id: monster-go-standard-3x3
+entity: model
+family_id: monster-go-3x3
+manufacturer_id: monster-go
+name: "Monster Go Standard 3x3"
+aliases:
+  - "Monster Go Standard 3x3 Non-Magnetic Puzzle Cube"
+scope_class: core
+generation:
+  label: "Standard"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  GAN's own product page title states directly: "Monster Go Standard 3x3 Non-Magnetic Puzzle
+  Cube" — the only 3x3 in the Monster Go 3x3 collection this pass found described as
+  non-magnetic. This is treated as a model-level distinction (a genuine mechanical absence of
+  the positioning-magnet system present in the sibling "Monster Go Magnetic 3x3 Cube" and
+  "Monster Go 352 M"), not merely a configuration choice, because no source found this pass
+  states that GAN sells magnetic and non-magnetic versions of one shared design — the two are
+  separate product pages at separate URLs with no combined listing, the same evidence pattern
+  already applied elsewhere in this pass (e.g. gan-v100-maglev vs. gan-v100-leap). This is
+  recorded as a judgement call under genuine uncertainty per DATA_MODEL §4.2's default-to-split
+  guidance, not a confirmed tooling difference; a future pass finding a shared-mould statement
+  should reconsider it as a variant of monster-go-magnetic-3x3 instead.
+
+  Page body beyond the title carried no further description or specification in this pass's
+  capture (a notably thin page compared to its siblings); no size, weight, or material was
+  located for this model.
+status: drafted
+specs:
+  magnet_architecture: none
+attestations:
+  /specs/magnet_architecture:
+    confidence: confirmed
+    sources: [gancube-monster-go-standard-3x3-product]
+    note: "GAN's own page title states 'Non-Magnetic' directly, the one specification this pass could confidently attest for this model."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. The earliest located capture (2024-11-12) falls inside gancube.com's site-wide November 2024 archival event and is not treated as a launch-date floor."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found."
+  /description:
+    confidence: uncertain
+    sources: [gancube-monster-go-standard-3x3-product]
+    note: "The model-level (vs. variant-level) boundary call itself is uncertain; see description."

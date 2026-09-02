@@ -1,0 +1,20 @@
+# source: thecubicle-gan356-i2
+# TheCubicle's listing for GAN356 i2, explicitly calling it GAN's "latest update" to GAN356 i —
+# the succession evidence for i -> i2.
+id: thecubicle-gan356-i2
+entity: source
+kind: retailer
+title: "GAN356 i2 3x3 Smart Cube – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-i2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920142531/https://www.thecubicle.com/products/gan356-i2"
+excerpt: "The GAN 356 i2 is GAN's latest update to its successful 3x3 smart cube, the GAN 356 i. Changes include faster charging time (2 hours), longer battery life, significantly longer standby time (60 days), and more storage! The GAN 356 i2 utilises Bluetooth to pair with your Android or Apple device through GAN's free app, 'Cube Station'."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'GAN's latest update to its successful 3x3 smart cube, the GAN 356 i' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, explicitly framing i2 as an update to i."
+status: sourced

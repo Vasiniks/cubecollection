@@ -1,0 +1,24 @@
+# variant: gan-i-carry-4--ssl-limited
+# Pass 4. "GAN i carry 4 SSL Limited" — named on GAN's own i carry Series collection page. "SSL"
+# not expanded by any source found this pass. No dedicated product-page description was
+# independently fetched this pass; existence, naming, and price range rest on the collection
+# listing alone.
+id: gan-i-carry-4--ssl-limited
+entity: variant
+model_id: gan-i-carry-4
+name: "GAN i carry 4 SSL Limited"
+scope_class: core
+edition:
+  name: "SSL Limited"
+  types: [limited, smart]
+  limited:
+    is_limited: true
+    run_size: null
+status: stub
+attestations:
+  /edition/name:
+    confidence: confirmed
+    sources: [gancube-collections-i-carry-series]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."

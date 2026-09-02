@@ -1,0 +1,25 @@
+# core-systems
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: core-systems, so the schema and this file cannot drift.
+
+id: core-systems
+description: "The central mechanism a design is built around."
+values:
+  - value: standard
+    label: "Standard"
+    description: "A conventional screw-and-spring core."
+  - value: ball_core
+    label: "Ball core"
+    description: "A core using a spherical central component the centre pieces seat against."
+  - value: dual_adjustment
+    label: "Dual adjustment"
+    description: "A core allowing tension and compression to be set independently."
+  - value: tri_layer
+    label: "Tri-layer"
+    description: "A core offering three independent adjustment axes."
+  - value: other
+    label: "Other"
+    description: "A documented core system not covered above. Describe in notes."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

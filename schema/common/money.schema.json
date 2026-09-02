@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "amount": {
+      "type": "number",
+      "minimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$",
+      "description": "ISO 4217, as originally quoted. Converted currency is never stored as a fact."
+    },
+    "region": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "tax_included": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "amount",
+    "currency"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/common/money.schema.json",
+  "title": "A price as originally quoted"
+}

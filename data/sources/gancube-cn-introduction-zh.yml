@@ -1,0 +1,20 @@
+# source: gancube-cn-introduction-zh
+# The Chinese-language company introduction on GAN's domestic site. Primary evidence for the
+# native brand name, the founder's Chinese name, and the registered legal entity.
+id: gancube-cn-introduction-zh
+entity: source
+kind: manufacturer_official
+title: "关于GANCUBE – GAN魔方"
+publisher: "广州淦源智能科技有限公司"
+url: "https://www.gancube.cn/introduction/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260310212852/https://www.gancube.cn/introduction/"
+excerpt: "GANCUBE，全球竞速魔方品牌，由创始人江淦源先生于2014年创立，在江先生的领导下，公司具备研发设计、生产制造、营销推广的全产业链营运能力，是一家拥有多项发明专利的新兴科技型企业。 [页面标题] 关于GANCUBE – GAN魔方 [页脚] 版权所有 © 2011-2023 广州淦源智能科技有限公司 粤ICP备16068632号"
+preservation_note: "Archive capture verified on 2026-09-01 to contain 江淦源, 2014年创立 and 广州淦源智能科技有限公司."
+accessed: "2026-09-01"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "Original Chinese retained verbatim in the excerpt per RESEARCH_SPEC section 3.6. Working translation of the opening sentence: 'GANCUBE, a global speedcube brand, was founded in 2014 by founder Mr. Jiang Ganyuan.' The page title renders the native brand name as GAN魔方. No machine translation is relied on for any recorded value beyond the founding year and the entity names, all of which survive translation."
+status: sourced

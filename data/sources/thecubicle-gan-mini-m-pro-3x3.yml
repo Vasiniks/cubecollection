@@ -1,0 +1,22 @@
+# source: thecubicle-gan-mini-m-pro-3x3
+# TheCubicle's listing for GAN Mini M Pro, stating the 53mm size explicitly — the size
+# difference from the standard ~56mm GAN11 M Pro shell is the evidence this pass relies on to
+# treat GAN Mini M Pro as its own model (a different size necessarily requires different
+# tooling, satisfying DATA_MODEL §4.2's mold test) rather than a variant of GAN11.
+id: thecubicle-gan-mini-m-pro-3x3
+entity: source
+kind: retailer
+title: "GAN Mini M Pro 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-mini-m-pro-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220714144109/https://www.thecubicle.com/products/gan-mini-m-pro-3x3"
+excerpt: "The GAN Mini M Pro 3x3 is a high performance speedcube in a small form factor. At 53mm across, this is the smallest fully adjustable 3x3 to ever be released. With 7 different magnetic settings and 16 different tension/compression settings, there is sure to be a setup here for you!"
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain '53mm' and 'smallest fully adjustable 3x3' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. 'Smallest fully adjustable 3x3 to ever be released' is a superlative/comparative claim (tier 4 for that specific claim per RESEARCH_SPEC §3.3/§5.2); the 53mm dimension itself is treated as a specification, admissible at tier 2."
+status: sourced

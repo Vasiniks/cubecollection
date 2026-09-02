@@ -1,0 +1,33 @@
+# model: gan-354-m
+# Pass 3 (model enumeration). The original GAN354 design: a compact (54mm) magnetic 3x3 with a
+# hand-tunable core, positioned as a smaller-format alternative to the mainline 356 Air SM.
+# Succeeded by GAN354 M v2. See research/notes/models/gan-pass3.md.
+id: gan-354-m
+entity: model
+family_id: gan-354
+manufacturer_id: gan
+name: "GAN354 M"
+scope_class: core
+generation:
+  label: "M"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2018-09"
+  precision: month
+  qualifier: before
+description: |-
+  The original compact-format (54mm) GAN354, magnetic, described by TheCubicle's earliest
+  capture as emulating "the flagship performance of the Air SM" in a smaller shell. Succeeded
+  by GAN354 M v2, which GAN's own product page frames as an upgrade ("WHAT'S NEW ON GAN 354
+  V2 — The core of new GAN354 has upgraded to plastic... tension adjustment of GES is now
+  numerical tuning").
+status: drafted
+attestations:
+  /announced:
+    confidence: probable
+    sources: [thecubicle-gan-354-m]
+    note: "TheCubicle's own retail-system 'Added: 2018-09-11' date (tier 2); not independently corroborated at tier 1. Already the primary evidence for the gan-354 family's own introduction date."
+  /generation/basis:
+    confidence: uncertain
+    note: "'354' is a product/family number in the same style as GAN's '356'/'357', not a stated sequential generation count; no manufacturer generation-ordinal statement was found."

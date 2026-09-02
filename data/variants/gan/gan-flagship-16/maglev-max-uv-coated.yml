@@ -1,0 +1,28 @@
+# variant: gan-flagship-16--maglev-max-uv-coated
+# Pass 4. "GAN16 Maglev MAX_UV Coated" — one of four Versions sold from GAN's own single GAN16
+# listing. 136 magnets including 12 dual magnetic rings for GES, per GAN's own comparison copy.
+id: gan-flagship-16--maglev-max-uv-coated
+entity: variant
+model_id: gan-flagship-16
+name: "GAN16 Maglev MAX (UV Coated)"
+aliases:
+  - { name: "GAN16 MagLev MAX UV 3x3", source: thecubicle-gan16-maglev-max-uv-3x3 }
+scope_class: core
+edition:
+  designation: "MAX"
+  types: [standard]
+config:
+  maglev: maglev
+  coating: uv
+status: stub
+attestations:
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan16-maglev-product]
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan16-maglev-product]
+  /edition/designation:
+    confidence: confirmed
+    sources: [gancube-gan16-maglev-product]
+    note: "GAN's own copy: '136 magnets (Including 12 dual magnetic rings for GES) in the Max version', contrasted against '88 magnets in the standard model.'"

@@ -1,0 +1,41 @@
+# model: gan-356-me-v2
+# Pass 3 (model enumeration). TheCubicle's description does not state an explicit succession
+# sentence; the "V2" naming numeral is the evidence relied on for treating this as GAN356 M E's
+# successor, at reduced confidence.
+id: gan-356-me-v2
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 Me V2"
+aliases:
+  - "GAN356 M E V2"
+scope_class: core
+generation:
+  label: "Me V2"
+  ordinal: 8
+  basis: community_convention
+announced:
+  value: "2025-01"
+  precision: month
+  qualifier: before
+description: |-
+  Magnetic, 4-elasticity/3-center-travel adjustment — the same feature language as GAN356 M E,
+  plus a "V2" version numeral. Treated as M E's successor on the strength of that numeral alone.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-me-v2]
+    note: "TheCubicle's earliest capture is 2025-01-18 (tier 2); a floor, not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-gan356-me-v2]
+    note: "Inferred from the 'V2' naming numeral only; no explicit succession sentence found."
+relationships:
+  - type: succeeds
+    target: gan-356-m-e
+    target_entity: model
+    note: "Inferred from naming ('M E' -> 'Me V2') and near-identical feature description; not an explicit manufacturer or retailer succession statement."

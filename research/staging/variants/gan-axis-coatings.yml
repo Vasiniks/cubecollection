@@ -1,0 +1,119 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN's factory surface-coating axis: what finishes GAN applies to plastic at the factory,
+  GAN's own naming for them, and how they are sold as distinct purchasable configurations.
+  This revision replaces an earlier pass in this file that relied on a search-tool paraphrase
+  rather than fetched page text (flagged in that pass's own open_questions); every excerpt
+  below was read directly from a live product page fetched on 2026-09-01. Aftermarket
+  ("aftermarket" vocab value) coatings applied by retailers/services are staged separately in
+  gan-axis-retailer-customizations.yml.
+
+  web.archive.org (the CDX API and snapshot host) was unreachable for this entire research
+  session (connection refused / timeout on every attempt, including a final retry at session
+  end) — see research/notes/variants/gan-discovery.md. Every source below is therefore
+  preserved as an `excerpt` from the live page rather than `archive_url`. This needs a
+  follow-up archive pass before these sources are promoted to data/sources/.
+
+findings:
+  - candidate: "UV Coated"
+    likely_model: { name: "sold as a purchasable configuration across most GAN 3x3 flagship and mainline lines (GAN15, GAN356 X V2 successor GAN356 XS, GAN 11 M Pro, GAN12-16 MagLev family, V100)", confidence: probable }
+    aliases: ["UV", "UV Coating", "UV Coated (NewBlack Edition)"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Version selector on the live product page reads: \"UV Coated (NewBlack Edition)\" — $49.99/$69.99 — and \"MagLev (Frosted)\" — $49.99/$69.99 — as two distinct purchase options of the same GAN15 product page. Product description: \"The GAN15 UV 3x3 (NewBlack) is GAN's newest build of the popular GAN15. The NewBlack features car-grade black plastic in its internals... It comes with extra corner/core magnets that you can swap to adjust the cube's magnetic feel.\" A verified customer review independently confirms the pairing: \"I own both a gan 15 maglev UV (white internals) and a newblack (springs)...\""
+      - url: "https://www.gancube.cn/en/patents/"
+        publisher: "GANCUBE (gancube.cn, GAN's CN-domestic official site)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Global site navigation under Shop > Magnetic Cubes lists \"GAN15 黑核\" (GAN15 Black Core) as a distinct catalog entry alongside \"GAN15 Maglev\", corroborating that the UV-coated/spring/black-internals configuration is catalogued by GAN as its own line, not merely a retailer bundling choice."
+    open_questions:
+      - "Confirmed here: on GAN15, 'UV Coated' pairs with the spring/non-MagLev core and 'MagLev' pairs with 'Frosted' as the two bundled factory configurations sold from one product page. Does this UV+spring / Frosted+MagLev pairing hold on every other model line, or is it specific to GAN15? Needs per-model confirmation in pass 5 (e.g., GAN16 MagLev MAX UV 3x3 exists as its own listing, distinct from a hypothetical 'GAN16 MagLev MAX Frosted', so the pairing is not universal)."
+
+  - candidate: "Frosted"
+    likely_model: { name: "GAN 356 X / 356 XS, GAN15/16 MagLev family as the MagLev-paired finish, GAN i4/V100 Leap smart and mechanical lines", confidence: probable }
+    aliases: ["Frosted Finish", "matte (grip) finish — distinct from GAN's own 'Matte' designation, see below"]
+    confidence: probable
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Version selector: \"MagLev (Frosted)\" listed as the alternate purchase option to \"UV Coated (NewBlack Edition)\" on the same product page."
+      - url: "https://www.thecubicle.com/products/gan-v100-maglev-3x3-frosted"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Product URL and title distinguish \"GAN V100 Maglev 3x3 Frosted\" from \"GAN V100 Maglev UV 3x3\" as separate product pages/SKUs — confirms Frosted vs UV is sold as a discrete choice on the V100 line, not merely a description."
+    open_questions:
+      - "Is GAN's own on-site designation capitalized/branded as 'Frosted' verbatim, or is it a retailer-only descriptor for an unbranded matte-grip finish? gancube.com product listings for the same SKUs need direct capture to settle this in pass 5."
+
+  - candidate: "Matte"
+    likely_model: { name: "GAN 356 X V2, GAN i4 Leap (smart)", confidence: probable }
+    aliases: []
+    confidence: probable
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-356-x-v2"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN 356 X V2 is GAN's newest update to the famous GAN 356 X. This new magnetic 3x3 speed cube is outfitted with a matte exterior and shares the same dual adjustment core as GAN's most recent flagship, the GAN 356 XS.\""
+      - url: "https://www.thecubicle.com/products/gan-i4-leap-frosted-3x3-smart-cube"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Product title uses \"Frosted (matte)\" as an equivalence: \"a refined frosted (matte) outer finish for effortless grip and stability\" — suggesting 'Matte' and 'Frosted' may be used interchangeably by this retailer for the same physical finish, which would make them ONE coating value, not two."
+    open_questions:
+      - "Unresolved and load-bearing for the vocab: is 'Matte' a GAN-branded coating distinct from 'Frosted' (both exist as separate vocab values in vocab/coatings.yml), or does at least one retailer conflate them as synonyms for the same finish? Needs GAN's own spec-sheet language checked directly per-model in pass 5, since treating them as synonyms would mean some existing 'Frosted'/'Matte' product-name pairs across the archive are the SAME coating, not two variants."
+
+  - candidate: "Soft Texture Coated"
+    likely_model: { name: "GAN 11 M Pro (2020 flagship)", confidence: confirmed }
+    aliases: ["Soft-touch", "Soft Texture"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/cubicle-custom-gan-11-m-pro-3x3-soft-texture-coated"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The Cubicle Pro Shop GAN 11 M Pro 3x3 (Soft Texture Coated) is our customizable version of GAN's 2020 flagship 3x3. This edition features a soft, tactile exterior similar to modern electronic accessories.\" ... \"Original puzzle made by GAN.\" ... \"Unfortunately, we are unable to remove the GAN logo due to the Soft Texture Coated surface. Instead, we provide a standard plastic GAN 11 M Pro center cap with a Cubicle Pro Shop logo. We include the original GAN Soft Texture Coated center cap in the packaging as well.\""
+    open_questions: []
+    note: >
+      Confirmed as a GAN-factory-applied coating (the retailer explicitly distinguishes "Original
+      puzzle made by GAN" with a "GAN Soft Texture Coated center cap" from its own aftermarket
+      cap swap). This is a real fourth coating distinct from UV/Frosted/Matte and maps to
+      vocab/coatings.yml's `other` value with a notes field naming it, unless the vocab should
+      gain a dedicated value — flagged for the schema owner's judgment, not decided here.
+
+  - candidate: "None / uncoated"
+    likely_model: { name: "GAN356 M Lite, most budget lines by default", confidence: uncertain }
+    aliases: []
+    confidence: uncertain
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan356-m-lite"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Product exists as its own SKU distinct from the coated/UV 'GAN356 M' listings, but the page's coating claim was not captured verbatim this pass — listed here as a lead, not a sourced finding."
+    open_questions:
+      - "Confirm whether GAN's entry-level 356 M / 356 M Lite ships uncoated by default, and whether that is ever marketed as its own configuration distinct from an implicitly-uncoated base SKU (which would not need a coating designation at all under the materiality rule, since 'no coating stated' is not the same claim as 'no-coating sold as a distinct option')."
+
+conflicts:
+  - claim: "Whether 'Matte' and 'Frosted' are the same physical finish under two names, or two distinct GAN coatings."
+    candidates:
+      - { value: "Two distinct coatings — GAN sells both 'Frosted' and 'Matte' SKUs of the same model (e.g. GAN12/13/14 MagLev each have separate 'Matte 3x3' and 'UV 3x3' retailer listing pairs, with no 'Frosted' listing on those specific models)", sources: ["https://www.thecubicle.com/products/cubicle-custom-gan12-m-maglev-matte-3x3", "https://www.thecubicle.com/products/cubicle-custom-gan12-m-maglev-uv-3x3"], confidence: reported }
+      - { value: "Same finish, two names — TheCubicle's own i4 Leap listing glosses 'Frosted' as '(matte)' in running prose", sources: ["https://www.thecubicle.com/products/gan-i4-leap-frosted-3x3-smart-cube"], confidence: uncertain }
+    note: >
+      Not adjudicated here. Evidence favors two distinct coatings existing as separate SKUs on
+      the GAN12/13/14 MagLev lines (Matte vs UV, no Frosted option offered there), while GAN15/16
+      and V100 offer Frosted vs UV pairs with no separate 'Matte' SKU seen. This may mean 'Matte'
+      and 'Frosted' are literally the same coating renamed between product generations, rather than
+      two coatings coexisting on one model. Needs GAN's own spec pages checked per generation.
+
+not_found:
+  - "No GAN-specific use of the coatings vocabulary's 'other' value was identified beyond Soft Texture Coated, which is recorded above as a candidate for it."
+  - "No confirmed instance of a GAN factory coating marketed under a proprietary brand name distinct from the generic descriptors UV / Frosted / Matte / Soft Texture Coated (contrast with the many named colourway/edition drops, which do carry proprietary names — see gan-axis-colourways.yml)."
+  - "GAN's own gancube.com product-page HTML for any UV/Frosted/Matte spec line was not captured verbatim this pass (only TheCubicle's retailer copy and gancube.cn's CN-domestic patents/nav pages) — a gap to close with gancube.com direct captures in pass 5, since manufacturer material is tier 1 and retailer material is tier 2."

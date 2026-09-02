@@ -1,0 +1,39 @@
+# model: gan-i-carry-4
+# Pass 3 (model enumeration). Current generation; the "356" prefix is dropped, mirroring the
+# same shift seen on the i-series' "GAN i4". No dedicated retailer or manufacturer product-page
+# source with a usable dating floor was located and verified this pass beyond the existing
+# collection-page source, so `announced` is left unknown rather than asserted from an
+# unverified capture. GAN's own collection page confirms this model coexists (as of 2026) with
+# earlier i-carry tiers ("GAN356 i carry 2", "GAN356 i carry E") still listed for sale in the
+# same collection, rather than replacing them outright — the numbering jump from "2"/"E" to
+# "4" (no "3" found) is an open naming question. See research/notes/models/gan-pass3.md.
+id: gan-i-carry-4
+entity: model
+family_id: gan-i-carry-series
+manufacturer_id: gan
+name: "GAN i carry 4"
+scope_class: core
+generation:
+  label: "i carry 4"
+  ordinal: 4
+  basis: manufacturer_declared
+description: |-
+  GAN's own storefront collection lists "GAN i carry 4 Smart Cube" ($34.99-$74.98) alongside
+  "GAN i carry 4 Minions Edition", "GAN i carry 4 Year of the Horse", and "GAN i carry 4 SSL
+  Limited" (all recorded as variants/editions of this one model), sold in the same collection
+  as the still-current "GAN356 i carry 2" and "GAN356 i carry E" — this generation is an
+  addition to the line-up, not a documented replacement of either older tier, per the evidence
+  found this pass. No "GAN i carry 3" (or "GAN356 i carry 3") was located, an open naming
+  question not resolved here.
+status: drafted
+attestations:
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. A CDX listing shows this product URL first captured 2026-02-19, but the fetch of that capture's content did not return usable text this pass and was not independently re-verified, so no date is attested from it. gancube-collections-i-carry-series (already canonical) establishes existence and naming as of its own 2026-08 capture only."
+  /generation/basis:
+    confidence: probable
+    sources: [gancube-collections-i-carry-series]
+    note: "The '4' naming numeral is GAN's own product name; naming-numeral rule applied consistently with gan-356-x-v2 elsewhere in this archive."
+  /description:
+    confidence: confirmed
+    sources: [gancube-collections-i-carry-series]

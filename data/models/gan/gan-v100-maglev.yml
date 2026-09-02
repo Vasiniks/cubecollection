@@ -1,0 +1,70 @@
+# model: gan-v100-maglev
+# Pass 3 (model enumeration). The base "GAN V100"/"GAN v100 Maglev" design: a MagLev
+# (magnetic-repulsion) mechanism, 55mm, 64g per GAN's own combo-page copy, TheCubicle
+# additionally reporting 76 magnets and a GAN16-derived tension-adjustment system. Split from
+# gan-v100-leap on the same evidence pattern already established for gan-356-maglev vs.
+# gan-356-m-e: separate product URLs, no combined "Versions" selector bundling MagLev and
+# spring-based tiers the way GAN12/14/15/16's own listings do (their own "Versions" selector on
+# this product offers only "UV Coated" — a single MagLev item). See
+# research/notes/models/gan-pass3.md.
+id: gan-v100-maglev
+entity: model
+family_id: gan-v100
+manufacturer_id: gan
+name: "GAN V100"
+aliases:
+  - "GAN v100 Maglev"
+scope_class: core
+generation:
+  label: "MagLev"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2025-10"
+  precision: month
+  qualifier: circa
+description: |-
+  GAN's own product page banner reads "GAN v100 Maglev is Available Now!" (captured
+  2025-10-24), the earliest V100 evidence found anywhere this pass. This page's own "Versions"
+  selector offers a single item ("UV Coated") — unlike GAN12/14/15/16's own listings, which
+  bundle a spring-based "Leap"/"M Leap" tier and a MagLev tier from one product page (see
+  gan-flagship-12's description). No combined listing was found for V100. TheCubicle's own
+  copy states V100 shares "GAN's advanced tension adjustment system—identical to the system
+  found in the flagship GAN16" and reports "76 strategically placed magnets" and "72 unique
+  setting combinations" (thecubicle-gan-v100-maglev-uv-3x3, tier 2). GAN's own combo-bundle
+  page states the base design directly: "Compact, featherweight 55mm size and 64g design"
+  (gancube-gan-v100-uv-coated-2026-easter-combo-product, tier 1) — the only place this pass
+  found GAN stating V100 Maglev's own size/weight numerically in its own copy; V100 Maglev's
+  own single-product page carries only tagline marketing copy with no numeric specification.
+
+  "GAN V100 Maglev Minions Edition" is recorded as an edition/variant of this model, not a
+  separate model — it is part of a cross-line "Minions" collaboration theme also applied to
+  GAN16 ui Maglev MAX and GAN i4, evidence of a colourway/collaboration theme rather than a
+  mechanism change (gancube-gan-v100-maglev-minions-edition-product). A themed bundle, "GAN
+  V100 UV Coated 2026 Easter Combo", reproduces this model's own marketing copy verbatim
+  alongside gan-v100-leap's own copy — read as a probable bundle of the two models, not
+  independently investigated as a pass-3 (model) question; left for pass 4.
+
+  `specs` is left entirely unset, matching the established pattern across every other GAN
+  flagship-tier model in this archive (see gan-flagship-12 through gan-flagship-17): GAN's own
+  "Versions" selectors and running copy consistently bundle coating and other configuration
+  choices under one listing without a model-level constant this archive can safely assert, and
+  numeric magnet/weight figures found here (76 magnets, 64g) come from a single source each
+  rather than corroborated manufacturer spec sheets, so they are recorded in prose rather than
+  in the `specs` object pending pass 4/5 corroboration.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [gancube-gan-v100-maglev-product]
+    note: "The 'Available Now!' banner on the earliest located capture (2025-10-24) indicates a genuinely recent launch at that date rather than an older product newly archived, but is not itself a dated announcement statement. Single data point; matches the family's own /introduced attestation on gan-v100.yml."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement was found for V100 (unlike GAN12's explicit 'the 12th generation of GANCUBE'). 'MagLev' is this archive's own label distinguishing this model from gan-v100-leap within the family, not a GAN-stated generation name."
+  /aliases:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-product]
+    note: "'GAN v100 Maglev' is the page's own product-name capitalisation; recorded as an alias rather than the canonical `name` per this archive's house-style normalization (§4.5)."
+  /description:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-product, thecubicle-gan-v100-maglev-uv-3x3, gancube-gan-v100-uv-coated-2026-easter-combo-product, gancube-gan-v100-maglev-minions-edition-product]

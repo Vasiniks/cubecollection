@@ -1,0 +1,22 @@
+# face-materials
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: face-materials, so the schema and this file cannot drift.
+
+id: face-materials
+description: "What carries the colour on a face."
+values:
+  - value: plastic
+    label: "Plastic"
+    description: "The piece's own plastic."
+  - value: vinyl_sticker
+    label: "Vinyl sticker"
+    description: "An applied vinyl sticker."
+  - value: printed
+    label: "Printed"
+    description: "Printed directly onto the piece."
+  - value: inlay
+    label: "Inlay"
+    description: "A recessed inlay."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

@@ -1,0 +1,42 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+
+      # The definitions themselves, before anything is validated against them.
+      - name: Schema and vocabulary self-consistency
+        run: npm run schemas
+
+      # Blocking. A failure here means a record may not be published.
+      - name: Validate — structural, provenance, integrity (rules 1-17, 37-38)
+        run: npm run validate
+
+      # Proves the checks themselves still fire, against tests/fixtures.
+      - name: Self-test
+        run: npm run selftest
+
+      - name: Build both bundles
+        run: npm run build
+
+      # A build that cannot prove the public bundle is clean does not ship one.
+      - name: Privacy gate
+        run: npm run privacy
+
+      # Advisory. Reported in the log, never blocking.
+      - name: Lint — semantic plausibility (rules 18-27)
+        run: npm run lint
+      - name: Duplicate queue (rules 28-30)
+        run: npm run duplicates
+      - name: Coverage report (rules 32-36)
+        run: npm run coverage

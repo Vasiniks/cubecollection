@@ -1,0 +1,91 @@
+# variant: gan-v100-maglev--picube-20-magnet-ball-core-mod
+# Pass 4.5 aftermarket enumeration, unblocked by the F9 service schema.
+#
+# IDENTITY VERDICT: a separately marketed aftermarket configuration, not an optional service.
+# TheCubicle lists it as its own named product with its own page and price, built on a specific
+# base cube. Under DATA_MODEL §4.1 that is a variant a collector could own; an optional service
+# selected at checkout on someone else's cube would not be.
+#
+# The servicer is PiCube, which performed the modification. TheCubicle retails it. Those are
+# different roles and only the first belongs in service.serviced_by.
+
+id: gan-v100-maglev--picube-20-magnet-ball-core-mod
+entity: variant
+model_id: gan-v100-maglev
+name: "GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)"
+scope_class: core
+edition:
+  types: [retailer_exclusive]
+config:
+  coating: uv
+  core_system: ball_core
+service:
+  serviced_by: picube
+  program: "PiCube 20-Magnet Ball-Core Mod"
+  modifications:
+    - kind: ball_core_mod
+      detail: "A 20-magnet ball-core modification, per the product's own name. What the twenty magnets do mechanically is not described by the source and is not inferred here."
+      source: thecubicle-gan-v100-maglev-uv-picube-mod
+  note: |-
+    Sold by TheCubicle, modified by PiCube. Only the base cube's own specifications are
+    inherited from the model; nothing about the modified cube's weight, feel or magnet
+    behaviour is recorded, because the source describes the service generically and
+    generalising from that to this product would be invention.
+relationships:
+  - type: modified_from
+    target: gan-v100-maglev--standard-uv-coated
+    target_entity: variant
+status: stub
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+    note: "TheCubicle's own product title, verbatim, from the product's own captured page. Probable rather than confirmed: TheCubicle is tier 2, and rule 9 correctly refuses to let one tier-2 source establish a confirmed claim. It is first-party for what the retailer sells, which is not the same as independent corroboration."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+    note: "TheCubicle names the base cube in the product title itself. Tier 2, satisfying rule 17's requirement for a sourced modified_from."
+  /service/serviced_by:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+    note: "PiCube is credited by name in the product title. TheCubicle is the retailer, not the servicer."
+  /service/modifications:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+    note: "From the product name, which states a ball-core modification. A name is weaker evidence than a specification table, and no teardown or spec sheet was found."
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+    note: "\"UV\" in the product title describes the base cube's coating, which the modification does not change."
+  /config/magnet_configuration:
+    confidence: unknown
+    note: "The name states twenty magnets but not their arrangement, and the vocabulary describes architecture rather than count."
+  /config/maglev:
+    confidence: unknown
+  /config/adjustment_system:
+    confidence: unknown
+  /config/size_mm:
+    confidence: unknown
+  /config/weight_g:
+    confidence: unknown
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+  /edition/designation:
+    confidence: unknown
+  /edition/limited/is_limited:
+    confidence: unknown
+  /edition/limited/run_size:
+    confidence: unknown
+  /pricing/msrp:
+    confidence: unknown
+  /availability/production_status:
+    confidence: unknown
+  /rarity/level:
+    confidence: unknown
+  /legality/wca_status:
+    confidence: unknown

@@ -1,0 +1,29 @@
+# source: gancube-collections-swift-block-3x3
+# GAN's own storefront collection for Swift Block's 3x3 cube line specifically (narrower than
+# the general Swift Block collection already recorded as gancube-collections-swift-block).
+# Primary evidence for a "Swift Block 3x3" family under the swift-block sub-brand.
+id: gancube-collections-swift-block-3x3
+entity: source
+kind: manufacturer_official
+title: "Swift Block 3x3 Speed Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/collections/swift-block-3x3-cubes"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241126024230/https://www.gancube.com/collections/swift-block-3x3-cubes"
+excerpt: |-
+  Page title: "Swift Block 3x3 Speed Cube | GANCUBE Official Website". Collection grid, 2
+  results, both filtered under Cube Types: 3x3 and Brand: swift block: "Swift Block 355S
+  Magnetic Cube" ($12.99) and "Swift Block 355 Maglev" ($18.99). Product description for the
+  355S: "48 Magnets for Precision and Speed — The Swift Block 355S 3×3 magnet speed cube
+  features 48 visible magnets [...] Stable, Easy-to-Tune Construction — Equipped with a new
+  numerical tension nut offering 5 adjustable settings [...] Lightweight and Perfectly Sized —
+  Weighing just 85 grams [...] Trusted Manufacturer — Swift Block is dedicated to quality and
+  customer satisfaction."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain the page title, the 2-result product grid, and the 355S product description verbatim."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own storefront collection page for the Swift Block sub-brand, tier 1 for Swift Block's own catalogue structure and naming ('355S', '355 Maglev'). A later (2026) Swift Block 3x3 product, 'Swift Block 3x3 Super Maglev', was also found this pass at a different URL not carrying '355' in its title (https://www.gancube.com/products/speed-cubing-cube-swift-3x3, captured 2026-08-11 onward) — recorded as a lead for pass 3 on whether Swift Block's naming moved away from the '355' numeral over time, not resolved here."
+status: sourced

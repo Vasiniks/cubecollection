@@ -1,0 +1,25 @@
+# variant: gan-357-original--ultimate
+# Pass 4. "GAN 357 Ultimate" ("GAN357U") — the serviced, full-featured tier of the original
+# GAN357: GAN Full Bright colour scheme, includes the metal adjusting tool, factory serviced/
+# lubed/polished by GAN staff.
+id: gan-357-original--ultimate
+entity: variant
+model_id: gan-357-original
+name: "GAN357 Ultimate"
+aliases:
+  - { name: "GAN357U", source: gancube-2016-earliest-capture }
+scope_class: core
+edition:
+  designation: "Ultimate"
+  types: [standard]
+colorway:
+  designation: "Full Bright"
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-gan-357-ultimate]
+    note: "'The GAN 357 Ultimate is the full-featured version of the original GAN 357.'"
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-gan-357-ultimate]

@@ -1,0 +1,60 @@
+# model: monster-go-magnetic-3x3
+# Pass 3 (model enumeration). The standard-size, magnetic Monster Go 3x3 — the sub-brand's
+# apparent flagship/primary design (the model most directly quoted in the family's own
+# "budget-friendly" positioning copy). See research/notes/models/gan-pass3.md.
+id: monster-go-magnetic-3x3
+entity: model
+family_id: monster-go-3x3
+manufacturer_id: monster-go
+name: "Monster Go Magnetic 3x3"
+aliases:
+  - "Monster Go Magnetic 3x3 Stickerless Speed Cube"
+  - "Monster Go 3x3 Magnetic Cube"
+scope_class: core
+generation:
+  label: "Magnetic"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  GAN's own product page: "The Monster Go 3×3 magnet cube offers premium features at a
+  budget-friendly price. With 48 magnets inside, it ensures consistently smooth turns. Unlike
+  other affordable cubes, it boasts a unique mechanism typically found in speed cubes priced
+  over $20" (gancube-monster-go-magnetic-3x3-specifications) — the same source already used at
+  family level for the "budget-friendly" positioning claim. No numeric size or weight was
+  stated on this page (contrast the sibling "Monster Go 352 M", which carries a full spec
+  table); no source found this pass states this model's own physical size.
+
+  "Monster Go Cloud & Rainbow & UT 3×3 Cube", sold at a separate URL also containing
+  "magnetic-speed-cube", is recorded as its own model (monster-go-cloud-rainbow-ut-3x3) rather
+  than folded into this one as a colourway variant, because no source found this pass states
+  the two share tooling — see that model's own description for the open question and the
+  `duplicate_of` relationship recorded there flagging the possibility they are the same design.
+status: drafted
+attestations:
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "GAN's own copy states '48 magnets' directly (tier 1) but not an arrangement (single/dual layer, core-corner, etc.), so specs.magnet_architecture is left unknown rather than guessed at from the count alone; the magnet count itself is recorded in prose only, since this archive's schema has no raw-count field at model level."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found. GAN's own copy describes positioning magnets, not a MagLev (spring-replacement) mechanism, and does not use the word 'MagLev' anywhere on this page — read as evidence this is a conventional-spring magnetic cube, not MagLev, but held at 'unknown' rather than asserted since no source states the spring/adjustment system directly."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. The earliest located capture (2024-11-12) falls inside gancube.com's site-wide November 2024 archival event and is not treated as a launch-date floor."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found."
+  /description:
+    confidence: confirmed
+    sources: [gancube-collections-monster-go-3x3, gancube-monster-go-magnetic-3x3-specifications]

@@ -1,0 +1,46 @@
+# model: gan-356-x
+# Pass 3 (model enumeration). GAN's own technology-history page dates this to 2018 and calls it
+# "the world's first quantifiable adjustment system core" — an explicit, manufacturer-declared
+# mechanism/core-geometry change from every prior 356 shell, a clean model-level case under
+# DATA_MODEL §4.2 (tooling/internal-geometry difference, not merely a sold configuration). See
+# research/notes/models/gan-pass3.md.
+id: gan-356-x
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 X"
+scope_class: core
+generation:
+  label: "X"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2018"
+  precision: year
+  qualifier: circa
+description: |-
+  GAN's own Chinese-language technology-history page states directly: "In 2018, the GAN356 X
+  introduced the world's first quantifiable adjustment system core — the quantifiable
+  adjustment steel-plastic IPG. This groundbreaking system enables adjustments to compression
+  and axial distance without the need for any tools." This is a first-party statement of a new
+  core mechanism/geometry, the clearest possible model-level boundary case in the whole GAN356
+  lineage. TheCubicle's own listing for "GAN356 X (IPG v5)" implies at least one earlier
+  hardware revision (IPG v4 or lower) was sold under the same "GAN356 X" name — recorded as a
+  model.revisions[] candidate, not researched further this pass (a lead for pass 4/5: was an
+  earlier IPG version ever sold as its own distinct SKU, or is 'IPG v5' simply this retailer's
+  way of specifying current stock?).
+revisions:
+  - id: ipg-version
+    label: "IPG core version (v4 vs v5)"
+    basis: community_reported
+    changes: "TheCubicle's listing titled 'GAN356 X (IPG v5)' implies GAN356 X shipped with at least two different IPG hardware revisions over its production run; not independently confirmed as a manufacturer-announced change."
+    distinguishable_by: "Retailer product title states the IPG version number directly where known."
+status: drafted
+attestations:
+  /announced:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+  /generation/basis:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+    note: "GAN's own history page explicitly credits the GAN356 X with introducing this core mechanism, a manufacturer-declared design milestone."

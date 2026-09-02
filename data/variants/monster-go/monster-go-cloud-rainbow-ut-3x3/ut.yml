@@ -1,0 +1,17 @@
+# variant: monster-go-cloud-rainbow-ut-3x3--ut
+# Pass 4. "UT" — fourth of four colourway options on the same single listing. No source found
+# this pass expands what "UT" stands for.
+id: monster-go-cloud-rainbow-ut-3x3--ut
+entity: variant
+model_id: monster-go-cloud-rainbow-ut-3x3
+name: "Monster Go UT"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "UT"
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-monster-go-cloud-rainbow-ut-versions]

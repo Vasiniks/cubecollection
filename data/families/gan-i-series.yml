@@ -1,0 +1,47 @@
+# family: gan-i-series
+# Pass 2 (family enumeration). GAN's first and base smart/electronic 3x3 cube line: GAN356 i
+# (2019) through GAN i4 (2026). One of three distinct GAN-declared smart-cube collections found
+# this pass; kept separate from gan-i-carry-series and gan-ui-series on the strength of GAN's
+# own site treating each as its own collection. See research/notes/models/gan-pass2.md.
+
+id: gan-i-series
+entity: family
+manufacturer_id: gan
+name: "GAN i Series"
+aliases:
+  - "GAN356 i"
+  - "i Series"
+introduced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+positioning: smart
+description: |-
+  GAN's original smart-cube line. GAN's own technology-history page dates it explicitly: "2019
+  was GAN's Year One of intelligence... the first-generation competitive-tier smart cube, the
+  GAN356 i, arrived," built around a "smart ball axis" that let the cube pair with GAN's
+  companion app. The line continued through GAN356 i2 and GAN356 i3 (product names seen in
+  GAN's own site navigation during discovery; not yet independently sourced as their own
+  records) and is current as of 2026 as "GAN i4" — the "356" prefix has been dropped from the
+  current generation's own name, a naming-convention shift for pass 3 to record at the model
+  level.
+
+  GAN's own current storefront serves this line from a collection literally titled "i Series",
+  distinct from two sibling smart collections, "i carry Series" (gan-i-carry-series) and
+  "GAN ui Series" (gan-ui-series) — treated as the manufacturer's own drawn boundary between
+  three related but separately-named smart lines, per RESEARCH_SPEC's guidance to read a
+  manufacturer's own collection structure as family evidence.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+    note: "GAN's own technology-history page states the year and the specific product (GAN356 i) explicitly and directly, not as an inference from a different subject."
+  /positioning:
+    confidence: confirmed
+    sources: [gancube-collections-i-series]
+    note: "GAN's own collection page filters every listed product under 'Cube Types: Smart Cube'."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history, gancube-collections-i-series]

@@ -1,0 +1,16 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Trips rule 39 in the other direction: says the cube was modified, but not how or by whom.
+id: zz-bad-modified-no-service
+entity: variant
+model_id: zz-bad-model
+name: ZZ Bad Modified No Service
+scope_class: core
+relationships:
+  - type: modified_from
+    target: zz-bad-variant
+    target_entity: variant
+status: drafted
+attestations:
+  "/relationships/0":
+    confidence: probable
+    sources: [zz-bad-src-unpreserved]

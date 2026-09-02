@@ -1,0 +1,66 @@
+# model: swift-block-355-maglev
+# Pass 3 (model enumeration). The MagLev-tier Swift Block 3x3, sold in parallel with the
+# non-Maglev "Swift Block 355S" from a separate product URL, per GAN's own nav grouping.
+# Succeeded circa 2026 by "Swift Block 3x3 Super Maglev", a lighter, differently-described
+# design under a naming pattern that drops the "355" numeral. See
+# research/notes/models/gan-pass3.md.
+id: swift-block-355-maglev
+entity: model
+family_id: swift-block-3x3
+manufacturer_id: swift-block
+name: "Swift Block 355 Maglev"
+aliases:
+  - "Swift Block 355 M Magnetic 3x3 Speed Cube"
+scope_class: core
+generation:
+  label: "355 Maglev"
+  ordinal: 2
+  basis: community_convention
+description: |-
+  GAN's own product page carries a "Specifications" table: "Size: 55x55x55 mm. Material:
+  Plastic. Weight: 91.8g" (gancube-swift-block-355-maglev-specifications), the fullest
+  manufacturer spec table found for any Swift Block 3x3. No further mechanism description was
+  captured on this page beyond the product's own name; "Maglev" in the name, and GAN's own site
+  navigation listing this separately from "Swift Block 355S", are the evidence relied on for
+  treating this as a genuine MagLev (magnetic-repulsion) mechanism distinct from 355S's
+  tension-nut system.
+
+  "Swift Block 3x3 Super Maglev", found at a URL and page title dropping the "355" numeral
+  (captured 2026-08-11), is recorded as a probable successor model (swift-block-super-maglev)
+  rather than a variant/rename of this one: it is lighter (71g vs. 91.8g), and its own copy
+  describes a distinct mechanism ("dual magnetic rings") not mentioned on this page. No source
+  found this pass states a succession relationship directly, so `succeeds` is recorded there at
+  reduced confidence.
+status: drafted
+specs:
+  size_mm: 55
+  weight_g: 91.8
+  maglev: maglev
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [gancube-swift-block-355-maglev-specifications]
+  /specs/weight_g:
+    confidence: confirmed
+    sources: [gancube-swift-block-355-maglev-specifications]
+  /specs/maglev:
+    confidence: uncertain
+    note: "Inferred from the product's own name and GAN's own nav grouping (separate from the non-Maglev '355S'), not from an explicit mechanism description on this page. No 'magnetic repulsion replaces springs' sentence was found for this specific model (contrast gan-356-maglev, where TheCubicle states this directly)."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet count or arrangement was stated on this page."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. The earliest located capture (2024-11-17) falls inside gancube.com's site-wide November 2024 archival event and is not treated as a launch-date floor."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found."
+  /description:
+    confidence: confirmed
+    sources: [gancube-collections-swift-block-3x3, gancube-swift-block-355-maglev-specifications]

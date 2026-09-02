@@ -1,0 +1,21 @@
+# variant: gan-356-air--ultimate
+# Pass 4. "GAN356 Air Ultimate" ("Air U"), named directly as the base product that "GAN356 Air
+# UM" magnetizes: "GAN356 Air UM is a magnetized GAN356 Air Ultimate" (TheCubicle). No separate
+# product page describing the Ultimate tier's own features independent of that sentence was
+# located this pass; existence and naming rest on this citation alone.
+id: gan-356-air--ultimate
+entity: variant
+model_id: gan-356-air
+name: "GAN356 Air Ultimate"
+aliases:
+  - { name: "GAN356 Air U", source: thecubicle-gan-356-air-um }
+scope_class: core
+edition:
+  designation: "Ultimate"
+  types: [standard]
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um]
+    note: "Named as the base product magnetized to produce Air UM: 'GAN356 Air UM is a magnetized GAN356 Air Ultimate.' No independent description of the Ultimate tier's own hardware was found this pass."

@@ -1,0 +1,23 @@
+# source: gancube-le-gan356-x-crystal-blue
+# GAN's own archived "Limited Edition" museum-style product page for a 2019 Summer GAN356 X
+# colourway, "Crystal Blue". Same non-purchasable display-page pattern as
+# gancube-le-gan356-air-s-love-pink.
+id: gancube-le-gan356-x-crystal-blue
+entity: source
+kind: manufacturer_official
+title: "GAN356 X Crystal Blue 2019 Summer Limited Edition | GANCUBE Limited Edition"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gancube-summer-limited-edition-gan356-x-crystal-blue"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250718003707/https://www.gancube.com/products/gancube-summer-limited-edition-gan356-x-crystal-blue"
+excerpt: |-
+  Page/product title: "2019 Summer Limited Edition GAN356 X Crystal Blue (For display only, not
+  for sale)". Regular price and sale price both $0.00, permanently "Sold Out".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the exact title string verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for the colourway's own name ('Crystal Blue'), season/year (2019 Summer), and base model (GAN356 X). Same display-page reasoning as gancube-le-gan356-air-s-love-pink."
+status: sourced

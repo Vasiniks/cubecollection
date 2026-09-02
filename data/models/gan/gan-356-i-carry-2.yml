@@ -1,0 +1,41 @@
+# model: gan-356-i-carry-2
+# Pass 3 (model enumeration). TheCubicle: "over 2x the battery life of the previous versions"
+# (plural) plus a new elasticity system (GES Pro+) — a genuine hardware change, not merely a
+# coating/colourway difference. See research/notes/models/gan-pass3.md.
+id: gan-356-i-carry-2
+entity: model
+family_id: gan-i-carry-series
+manufacturer_id: gan
+name: "GAN356 i Carry 2"
+scope_class: core
+generation:
+  label: "i Carry 2"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2024-02"
+  precision: month
+  qualifier: before
+description: |-
+  TheCubicle's own copy: "The GAN 356 i Carry 2 offers over 2x the battery life of the previous
+  versions! And with the new GES Pro+ elasticity system, it is sure to be a top-performing
+  smart cube." "Previous versions" (plural) is read as covering both the base i Carry and i
+  Carry S.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan-356-i-carry-2]
+    note: "TheCubicle's own earliest capture (2024-02-22) is a retailer-listing floor, not a manufacturer-stated date."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2]
+    note: "The '2' naming numeral is GAN's own product name; naming-numeral rule applied consistently with gan-356-x-v2 elsewhere in this archive."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2]
+relationships:
+  - type: succeeds
+    target: gan-356-i-carry-s
+    target_entity: model
+    note: "TheCubicle's 'over 2x the battery life of the previous versions' (plural) is read as encompassing i Carry S as the nearest predecessor; the exact predecessor is not named explicitly."

@@ -1,0 +1,40 @@
+# model: gan-356-rs2
+# Pass 3 (model enumeration). TheCubicle's description does not itself state a succession
+# sentence; the "2" version numeral is the naming evidence relied on for treating this as
+# GAN356 RS's successor, at reduced confidence.
+id: gan-356-rs2
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 RS2"
+scope_class: core
+generation:
+  label: "RS2"
+  ordinal: 4
+  basis: community_convention
+announced:
+  value: "2023-12"
+  precision: month
+  qualifier: before
+description: |-
+  A non-magnetic, budget-tier 356, "traditional honeycomb pattern on the internals," adjustable
+  tension and compression. Treated as RS's successor on the strength of the "2" naming alone;
+  no source found this pass states the succession explicitly.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-rs2]
+    note: "TheCubicle's earliest capture is 2023-12-05 (tier 2); a floor, not a manufacturer-stated launch date. This is a wide, unexplained gap from GAN356 RS's 2020 introduction; no source found this pass accounts for it."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-gan356-rs2]
+    note: "Inferred from the '2' naming numeral only; no explicit succession sentence found."
+relationships:
+  - type: succeeds
+    target: gan-356-rs
+    target_entity: model
+    note: "Inferred from naming ('RS' -> 'RS2'); not an explicit manufacturer or retailer succession statement."

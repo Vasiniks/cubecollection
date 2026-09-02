@@ -1,0 +1,19 @@
+# source: speedsolving-wiki-cubicle-labs
+# Community wiki. Tier 4 — corroborates, never establishes. Cited for the ownership of
+# Cubicle Labs and for the division of labour on the GAN 356 Air UM.
+id: speedsolving-wiki-cubicle-labs
+entity: source
+kind: wiki
+title: "Cubicle Labs - Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/Cubicle_Labs"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230105222328/https://www.speedsolving.com/wiki/index.php/Cubicle_Labs"
+excerpt: "Cubicle Labs is a division of TheCubicle.us, one of the most popular online cube stores, and is led by and was founded in 2016 by Christopher V Tran, more commonly known by simply Chris Tran. [...] Cubicle Labs has also worked directly with Gans to create the first mass-produced magnetic 3x3x3 cube, the GAN 356 Air UM."
+preservation_note: "Archive capture verified on 2026-09-01 to contain both sentences."
+accessed: "2026-09-01"
+language: en
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "Community-edited and unattributed at the level of the individual sentence. Tier 4: it corroborates and cannot establish. No first-party statement by TheCubicle confirming that Cubicle Labs is its division was located in pass 1."
+status: sourced

@@ -1,0 +1,18 @@
+# variant: monster-go-standard-3x3--standard
+# Pass 4. The only sold configuration found this pass: non-magnetic per GAN's own page title.
+id: monster-go-standard-3x3--standard
+entity: variant
+model_id: monster-go-standard-3x3
+name: "Monster Go Standard 3x3"
+aliases:
+  - { name: "Monster Go Standard 3x3 Non-Magnetic Puzzle Cube", source: gancube-monster-go-standard-3x3-product }
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /config/magnet_configuration:
+    confidence: confirmed
+    sources: [gancube-monster-go-standard-3x3-product]

@@ -1,0 +1,22 @@
+# source: gancube-2016-earliest-capture
+# The earliest web-archive capture of gancube.com itself (2016-08-08), predating every other
+# GAN source in this register by years. First-party for a third candidate founding-related date
+# — a footer copyright range beginning 2013 — and for confirming brand/entity continuity: the
+# ICP filing number here already matches the one on GAN's later domestic and Monster Go sites.
+id: gancube-2016-earliest-capture
+entity: source
+kind: manufacturer_official
+title: "GANCube - GANCube Official WebSite (earliest capture)"
+publisher: "GAN Cube Inc."
+url: "http://www.gancube.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20160808160806/http://www.gancube.com:80/"
+excerpt: "GANCube - GANCube Official WebSite [...] PRODUCTS: GAN356Air (New!), GAN356sV2, GAN357U, GAN357 [...] GAN356 Air Lighter. Faster. Stronger. GAN356sV2 Robust. Feel free. GAN357 Starts new Corner-Cutting era. [...] Copyright © 2013-2016 GAN Cube Inc. All rights reserved [...] 粤ICP备16068632号-1"
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain 'Copyright © 2013-2016 GAN Cube Inc.' and the ICP number verbatim. This is the earliest capture of gancube.com found in the CDX index (list run 2011-2016 returns no earlier result); the CDX index shows no capture of gancube.com at all before 2016-08-08, so it cannot itself confirm or rule out anything about 2011-2015 beyond this footer statement."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own site footer, tier 1 for GAN's own copyright/operating claims, but a copyright-range start year is a weaker and more ambiguous signal of 'founding' than an explicit founding statement — it may mark when this specific corporate name or site was first used rather than when the underlying brand or company began. Recorded as a third candidate date (2013) in the disputed /founded attestation on data/manufacturers/gan.yml, distinct from the 2010 brand-founding claim (ganspuzzle-brand-intro-2011) and the 2014 incorporation claim (gancube-cn-about-us-en, gancube-cn-introduction-zh, gancube-brand-story-about-us). The ICP filing number '粤ICP备16068632号-1' is the same base registration number (粤ICP备16068632号) used, without the '-1' sub-suffix, on gancube.cn and monster-go.com in later captures — documentary evidence that the same registered operator ran gancube.com by August 2016 already, tying this early corporate identity to the entity researched elsewhere in this register. The product line named here (GAN356 Air, GAN356sV2, GAN357U, GAN357) is a lead for pass 2's family/model enumeration, not resolved here."
+status: sourced

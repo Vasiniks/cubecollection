@@ -1,0 +1,23 @@
+# variant: gan-356-i--standard
+# Pass 4. GAN's first-generation smart cube, built around a "smart ball core" pairing with GAN's
+# companion app. No dedicated retailer product-page description was located this pass beyond
+# GAN's own technology-history statement; only one configuration found.
+id: gan-356-i--standard
+entity: variant
+model_id: gan-356-i
+name: "GAN356 i"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  companion_app: "Cube Station"
+status: stub
+attestations:
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+  /smart/companion_app:
+    confidence: uncertain
+    sources: [thecubicle-gan356-i2]
+    note: "'Cube Station' is confirmed by name for the successor i2's own listing, not independently confirmed for the base i itself this pass; extended by continuity."

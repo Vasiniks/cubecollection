@@ -1,0 +1,28 @@
+# variant: gan-356-air-s--master
+# Pass 4. "GAN 356 Air S (Master)" — the non-magnetized tier of this model, per TheCubicle's own
+# words: "the non-magnetized version of the Air SM... The magnet slots that are present in the
+# Air SM have been removed in the Air S." GES V2, honeycomb piece pattern.
+id: gan-356-air-s--master
+entity: variant
+model_id: gan-356-air-s
+name: "GAN356 Air S (Master)"
+scope_class: core
+edition:
+  designation: "S Master"
+  types: [standard]
+config:
+  magnet_configuration: none
+  adjustment_system: ges_nut
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-s-master]
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-s-master]
+    note: "'The magnet slots that are present in the Air SM have been removed in the Air S.'"
+  /config/adjustment_system:
+    confidence: reported
+    sources: [thecubicle-gan-356-air-s-master]
+    note: "'A new and improved elasticity system (GES V2)'; mapped to the ges_nut vocab value at reduced confidence since the exact adjustment mechanics are not fully described."

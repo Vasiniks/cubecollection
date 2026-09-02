@@ -1,0 +1,133 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "specimen"
+    },
+    "variant_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "acquired": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json",
+      "x-private": true
+    },
+    "acquired_from": {
+      "type": "string",
+      "x-private": true
+    },
+    "acquired_price": {
+      "$ref": "https://cubecollection/schema/common/money.schema.json",
+      "x-private": true
+    },
+    "condition": {
+      "type": "string",
+      "x-vocab": "specimen-condition",
+      "x-private": true
+    },
+    "condition_note": {
+      "type": "string",
+      "x-private": true
+    },
+    "completeness": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "box": {
+          "type": "boolean"
+        },
+        "manual": {
+          "type": "boolean"
+        },
+        "accessories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "modifications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "quantity": {
+            "type": "string",
+            "description": "What was measured, e.g. size_mm or weight_g."
+          },
+          "value": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string"
+          },
+          "measured_on": {
+            "type": "string",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "instrument": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "quantity",
+          "value",
+          "unit"
+        ]
+      },
+      "description": "First-party measurement. Tier 1 evidence, citable publicly even when the specimen record stays private."
+    },
+    "serial": {
+      "type": "string",
+      "x-private": true
+    },
+    "location": {
+      "type": "string",
+      "x-private": true
+    },
+    "notes": {
+      "type": "string",
+      "x-private": true
+    },
+    "private": {
+      "type": "boolean",
+      "default": true,
+      "description": "Default true. Set false only to publish this specimen deliberately."
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    },
+    "attestations": {
+      "$ref": "https://cubecollection/schema/common/attestation.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "variant_id",
+    "private",
+    "status"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/specimen.schema.json",
+  "title": "A physical unit held by the archivist. Private by default"
+}

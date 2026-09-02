@@ -1,0 +1,31 @@
+# source: gancube-gan-v100-leap-chinese-new-year-edition-product
+# GAN's own earlier product page for the same design later re-titled "GAN V100 Leap Year of
+# the Horse" (identical description text, identical specs). Cited to establish that the two
+# URLs/titles are the same underlying edition, and for a dated customer review corroborating
+# an approximate January 2026 launch.
+id: gancube-gan-v100-leap-chinese-new-year-edition-product
+entity: source
+kind: manufacturer_official
+title: "GAN V100 Leap Chinese New Year Edition | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan-v100-leap-chinese-new-year-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260127000000/https://www.gancube.com/products/gan-v100-leap-chinese-new-year-edition"
+excerpt: |-
+  "The GAN V100 Leap Chinese New Year Edition is a 55mm magnetic speed cube built for stable,
+  controlled performance. It features a spring-based GES system (no maglev) for a more
+  grounded and consistent turning feel. With 64 magnets, a lightweight 64g build, and a refined
+  frosted finish, it delivers reliable alignment and smooth control, finished with a
+  distinctive Chinese New Year special design." Text is verbatim identical to
+  gancube-gan-v100-leap-year-of-the-horse-product's own description, differing only in the
+  product's own name ("Chinese New Year Edition" vs. "Year of the Horse"). A dated customer
+  review on the page states: "today you guys have released your very first cube of 2026! The
+  chinese new year edition of the v100 leap."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the identical description text and the dated customer review verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for specifications (identical to the later-titled version of the same product). The customer review quoted is tier 5 (user-generated content) and is not cited as a fact source; it is recorded only as circumstantial context for approximate timing, not relied upon for the model's own attested date."
+status: sourced

@@ -1,0 +1,26 @@
+# source: gancube-gan-v100-maglev-minions-edition-product
+# GAN's own product page for "GAN V100 Maglev Minions Edition" — a collaboration/colourway
+# edition of the base GAN V100 Maglev model, part of a wider "Minions" collaboration also sold
+# across GAN16 ui Maglev MAX and GAN i4 (per this same page's own site navigation), not a
+# distinct mechanical design.
+id: gancube-gan-v100-maglev-minions-edition-product
+entity: source
+kind: manufacturer_official
+title: "GAN V100 Maglev Minions Edition | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan-v100-maglev-minions-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260629091822/https://www.gancube.com/products/gan-v100-maglev-minions-edition"
+excerpt: |-
+  Page title: "GAN V100 Maglev Minions Edition". Site navigation lists this alongside "GAN16
+  ui Maglev MAX Minions Edition" and "GAN i4 Maglev Minions Edition" as sibling products in the
+  same "Minions" collaboration line, distinct from the plain "GAN V100 Maglev" and "GAN16
+  Maglev" listings on the same nav.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the page title and the sibling 'Minions Edition' nav groupings verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page and site navigation, tier 1 for naming and catalogue structure. Full body copy describing whether this edition changes anything beyond colourway/theme was not extracted this pass; treated as an edition of the base MagLev model on the strength of the shared 'Minions Edition' naming pattern applied identically across three otherwise-unrelated existing models (V100, GAN16 ui Maglev MAX, GAN i4), which is evidence of a cross-line collaboration theme rather than a per-product mechanism change."
+status: sourced

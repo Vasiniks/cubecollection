@@ -1,0 +1,71 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "family"
+    },
+    "manufacturer_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "introduced": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "discontinued": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "positioning": {
+      "type": "string",
+      "x-vocab": "family-positioning"
+    },
+    "description": {
+      "type": "string"
+    },
+    "successor_family_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "former_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+        "description": "Immutable identifier."
+      }
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    },
+    "attestations": {
+      "$ref": "https://cubecollection/schema/common/attestation.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "manufacturer_id",
+    "name",
+    "status"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/family.schema.json",
+  "title": "A product line persisting across designs"
+}

@@ -1,0 +1,37 @@
+# model: gan-ui-12-sp
+# Pass 3 (model enumeration). "GAN12 ui SP Smart Cube", sold at its own dedicated URL, launched
+# after GAN12 ui FreePlay had already existed for some months. Recorded as its own model
+# (separate catalog listing, no shared "Versions" selector with FreePlay or Maglev) rather than
+# asserted as FreePlay's successor, since the two are shown to have coexisted for at least
+# several months. See research/notes/models/gan-pass3.md.
+id: gan-ui-12-sp
+entity: model
+family_id: gan-ui-series
+manufacturer_id: gan
+name: "GAN12 ui SP"
+scope_class: core
+generation:
+  label: "12 ui SP"
+  ordinal: 12
+  basis: community_convention
+announced:
+  value: "2025-07"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's own product page for "GAN12 ui SP Smart Cube", sold at a dedicated URL. First located
+  capture (2025-07-31) postdates GAN12 ui FreePlay's own first capture (2024-11-19) by roughly
+  eight months, and a later capture of the FreePlay URL (2026-02-08) shows it still resolving
+  well after SP's launch — this pass does not assert SP replaced FreePlay, only that both are
+  separate, apparently overlapping catalog listings sharing the "GAN12 ui" naming prefix. No
+  source found this pass states what "SP" stands for or how it differs mechanically from
+  FreePlay or the mechanical GAN12's own "M Leap"/"Maglev" tiers.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [gancube-gan12-ui-sp-product]
+    note: "gancube.com's own earliest located capture (2025-07-31) is a floor, not a manufacturer-stated date, but is not part of the November 2024 archival event."
+  /generation/basis:
+    confidence: uncertain
+    note: "'SP' is a tier word, not a stated sequential generation numeral; the '12' is GAN's own borrowed reference to the mechanical GAN12 base."

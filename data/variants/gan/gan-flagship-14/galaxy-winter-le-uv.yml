@@ -1,0 +1,70 @@
+# variant: gan-flagship-14--galaxy-winter-le-uv
+# Pass 4.5 targeted evidence pass. One of eight named GAN limited editions recovered by
+# enumerating GAN's archived product URLs. None appears in the live catalogue.
+id: gan-flagship-14--galaxy-winter-le-uv
+entity: variant
+model_id: gan-flagship-14
+name: "GAN14 Maglev Galaxy"
+scope_class: core
+aliases:
+  - name: "Galaxy"
+edition:
+  name: "Galaxy"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+colorway:
+  designation: "Galaxy"
+config:
+  maglev: maglev
+  coating: uv
+status: stub
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [gancube-gan14-maglev-galaxy-le-product]
+  /edition/name:
+    confidence: confirmed
+    sources: [gancube-gan14-maglev-galaxy-le-product]
+  /edition/types:
+    confidence: confirmed
+    sources: [gancube-gan14-maglev-galaxy-le-product]
+    note: "GAN's own page title names this a Limited Edition."
+  /edition/limited/is_limited:
+    confidence: confirmed
+    sources: [gancube-gan14-maglev-galaxy-le-product]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "GAN states no production quantity for its seasonal limited editions. Left null; never estimated."
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-gan14-maglev-galaxy-le-product]
+    note: "The edition name is the colourway name. Per-face colours, body plastic and finish are unresearched — this record establishes identity, not appearance."
+  /availability/production_status:
+    confidence: unknown
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan14-maglev-galaxy-le-product]
+    note: "GAN's own title reads \"_UV Coated\"."
+  /config/maglev:
+    confidence: probable
+    sources: [gancube-gan14-maglev-galaxy-le-product]
+    note: "From the product name only. A name is weaker evidence than a specification table."
+  /config/magnet_configuration:
+    confidence: unknown
+  /config/core_system:
+    confidence: unknown
+  /config/adjustment_system:
+    confidence: unknown
+  /config/size_mm:
+    confidence: unknown
+  /config/weight_g:
+    confidence: unknown
+  /pricing/msrp:
+    confidence: unknown
+  /rarity/level:
+    confidence: unknown
+  /legality/wca_status:
+    confidence: unknown

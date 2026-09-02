@@ -1,0 +1,9 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Trips rule 29: shares an alias with an unrelated record in a different lineage.
+# The lineage exemption must NOT swallow this one.
+id: zz-collider
+entity: manufacturer
+name: ZZ Collider
+kind: manufacturer
+aliases: ["ZZ Bad Lineage A"]
+status: stub

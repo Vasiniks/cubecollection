@@ -1,0 +1,21 @@
+# variant: gan-ui-12-maglev--standard
+# Pass 4. "GAN 12 ui Maglev" — a smart cube built on the mechanical GAN12 base with a MagLev
+# tensioning system, per TheCubicle's own retail description ("built like a GAN 12... with a
+# MagLev tensioning system").
+id: gan-ui-12-maglev--standard
+entity: variant
+model_id: gan-ui-12-maglev
+name: "GAN 12 ui Maglev"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+config:
+  maglev: maglev
+status: stub
+attestations:
+  /config/maglev:
+    confidence: probable
+    sources: [gancube-collections-ui-series]
+    note: "Edition name itself ('ui Maglev'); a retailer listing independently describes it as built like GAN12 'with a MagLev tensioning system' (not cited as a canonical source this pass — see research/notes/variants/gan-pass4.md)."

@@ -1,0 +1,16 @@
+# revision-basis
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: revision-basis, so the schema and this file cannot drift.
+
+id: revision-basis
+description: "Where a production revision claim comes from."
+values:
+  - value: manufacturer_declared
+    label: "Manufacturer declared"
+    description: "Announced or documented by the manufacturer."
+  - value: community_reported
+    label: "Community reported"
+    description: "Identified by collectors or reviewers."
+  - value: archivist_observed
+    label: "Archivist observed"
+    description: "Observed directly on specimens held by the archivist."

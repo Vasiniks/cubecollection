@@ -1,0 +1,12 @@
+# variant: swift-block-355-maglev--standard
+# Pass 4. The only sold configuration found this pass. Size (55mm), weight (91.8g), and maglev
+# are already attested at model level (model.specs) and inherited here without restatement, per
+# DATA_MODEL §7.2 rule 6's inheritance clause.
+id: swift-block-355-maglev--standard
+entity: variant
+model_id: swift-block-355-maglev
+name: "Swift Block 355 Maglev"
+scope_class: core
+edition:
+  types: [standard]
+status: stub

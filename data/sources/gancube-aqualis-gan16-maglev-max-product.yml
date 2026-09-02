@@ -1,0 +1,26 @@
+# source: gancube-aqualis-gan16-maglev-max-product
+# GAN's own product page for "AQUALIS - GAN16 Maglev MAX 2026 Summer Limited Edition", a named
+# seasonal limited-edition colourway of GAN16 Maglev MAX. Cited for existence, naming, price,
+# and box contents; no run size is stated anywhere on this page.
+id: gancube-aqualis-gan16-maglev-max-product
+entity: source
+kind: manufacturer_official
+title: "AQUALIS - GAN16 Maglev MAX 2026 Summer Limited Edition | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/aqualis-gan16-maglev-max-2026-summer-limited-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260811015554/https://www.gancube.com/products/aqualis-gan16-maglev-max-2026-summer-limited-edition"
+excerpt: |-
+  Product name: "AQUALIS - GAN16 Maglev MAX 2026 Summer Limited Edition". Regular price and
+  sale price both $89.99 (no discount active at capture). Box Includes: "Cube x1, Cube Bag x1,
+  Identity Card x1, Poster Card x1, Tuning Tools, GAN BOX x1, Stickers (2 sets), Manual x1,
+  Magnet Bar x8." No run-size, unit-count, or numbering language appears anywhere on the
+  captured page (title, pricing, or box-contents sections).
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the product name, price, and full box-contents list verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own naming, pricing, and packaging contents. The colourway's descriptive marketing language ('iridescent pearl finish', 'rose-tinted hues') was found on a TheCubicle retail listing, not captured verbatim on this GAN page in this pass; not relied on here."
+status: sourced

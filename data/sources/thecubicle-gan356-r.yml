@@ -1,0 +1,21 @@
+# source: thecubicle-gan356-r
+# TheCubicle's listing for GAN356 R, describing it as "a modern rework of the classic 356 S" —
+# the succession evidence linking the 2016-era bare "GAN356 S / S V2" line to this 2020 budget
+# non-magnetic model.
+id: thecubicle-gan356-r
+entity: source
+kind: retailer
+title: "GAN356 R Magnetic Speed Cube – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-r"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200806071827/https://www.thecubicle.com/products/gan356-r"
+excerpt: "The GAN356 R is a modern rework of the classic 356 S. It features GAN full bright stickerless shades, the new GES V3, and the IPG V2 core. If you prefer a non-magnetic feel, this is a great option at a great price."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'a modern rework of the classic 356 S' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, providing the only succession claim found this pass connecting the 2016-era 'GAN356 S / S V2' naming to a later GAN356 model."
+status: sourced

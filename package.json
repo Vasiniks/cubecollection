@@ -1,0 +1,30 @@
+{
+  "name": "cubecollection",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Collector-grade historical archive of 3x3 speedcubes, 2016-2026.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "lint": "node scripts/lint-semantic.mjs",
+    "duplicates": "node scripts/check-duplicates.mjs",
+    "links": "node scripts/check-links.mjs",
+    "coverage": "node scripts/report-coverage.mjs",
+    "build": "node scripts/build.mjs",
+    "privacy": "node scripts/check-privacy.mjs",
+    "check": "npm run schemas && npm run validate && npm run lint && npm run duplicates && npm run build && npm run privacy && npm run selftest && npm run coverage",
+    "new": "node scripts/new-record.mjs",
+    "selftest": "node scripts/selftest.mjs",
+    "schemas": "node scripts/check-schemas.mjs",
+    "wayback": "node scripts/wayback.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "js-yaml": "4.1.0"
+  }
+}

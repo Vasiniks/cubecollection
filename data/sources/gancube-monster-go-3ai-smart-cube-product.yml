@@ -1,0 +1,29 @@
+# source: gancube-monster-go-3ai-smart-cube-product
+# GAN's own dedicated product page for "Monster Go 3 AI 3x3 Smart Cube" (MG3 Ai), the single
+# model in the Monster Go Smart Cube Series family. Corroborates and extends the collection-page
+# excerpt already cited on that family record (gancube-collections-monster-go-smart).
+id: gancube-monster-go-3ai-smart-cube-product
+entity: source
+kind: manufacturer_official
+title: "Monster Go 3 AI 3x3 Smart Cube with Tracking & App Integration | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-3-ai-smart-puzzle-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241117072751/https://www.gancube.com/products/monster-go-3-ai-smart-puzzle-cube"
+excerpt: |-
+  "LONG-LASTING EDUCATIONAL SMART TOY: Monster Go Smart Cube is the 3x3 cube with compatible
+  app that helps you solve it as a beginner and improve yourself as a cuber. With inside
+  replaceable battery, it offers a 280-hour play time... TRACKING AND BATTLE, AS ALWAYS:
+  Monster Go Smart Cube measures and saves your solve in 4 parameters: Time/Move/TPS/Fluency.
+  Online battle is also available in MG3 Ai... ALSO A GOOD CUBE FOR SPEED CUBING: Intelligence
+  and performance are perfectly combined in MG3 Ai. Weight only 81g while adopting sensors,
+  battery, circuit board inside, and still keeps great handfeel and excellent corner cutting."
+  No numeric size (mm) specification was found on this page.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the description verbatim (including the source's own typo 'iniside', already noted on the collection-page source). This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own dedicated product page, tier 1 for its own specifications (81g weight, replaceable battery, 280-hour play time, app connectivity)."
+status: sourced

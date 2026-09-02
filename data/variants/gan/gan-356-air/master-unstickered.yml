@@ -1,0 +1,29 @@
+# variant: gan-356-air--master-unstickered
+# Pass 4. The same Master-tier hardware (adjusting tool, coloured GES components) sold without
+# stickers applied — a genuinely separate SKU per TheCubicle's own listing, marketed as a "DIY
+# Kit" for cubers who plan to re-sticker. Ships with the sticker set uninstalled rather than
+# with no stickers at all, so `colorway.application` is left unknown rather than asserted
+# `stickerless` (the body plastic colour under the stickers is not stated).
+id: gan-356-air--master-unstickered
+entity: variant
+model_id: gan-356-air
+name: "GAN356 Air Master (Unstickered)"
+aliases:
+  - { name: "Gans 356 Air Master (Unstickered)", source: thecubicle-gans-356-air-master-unstickered }
+scope_class: core
+edition:
+  designation: "Master"
+  name: "Unstickered / DIY Kit"
+  types: [standard]
+packaging:
+  form: "DIY Kit"
+  notable: "Sold fully assembled but with no stickers applied; a Gans Half-Bright sticker set and logo are included loose in the box for the buyer to apply."
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gans-356-air-master-unstickered]
+    note: "TheCubicle: 'This DIY Kit actually comes assembled but without any stickers (Gans Half-Bright stickers + logo are included with the DIY Kit).'"
+  /packaging/notable:
+    confidence: probable
+    sources: [thecubicle-gans-356-air-master-unstickered]

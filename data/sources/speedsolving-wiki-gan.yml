@@ -1,0 +1,19 @@
+# source: speedsolving-wiki-gan
+# Community wiki. Tier 4. Cited for the historical "Gans" / "Ganspuzzle" brand renderings and
+# as a corroborating account of the company's incorporation.
+id: speedsolving-wiki-gan
+entity: source
+kind: wiki
+title: "GAN - Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/GAN"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241116190935/https://www.speedsolving.com/wiki/index.php/GAN"
+excerpt: "They released their first cube in 2011, the Ganspuzzle I and have since innovated in 3x3 [...] Gans was incorporated as a company in 2014, as Gancube [...] This includes putting magnets in 3x3s (which was a collaboration with Cubicle Labs to make the GAN 356 Air UM) [...] The GAN Air UM was released in January 2017. [...] It was the result of a collaboration between Cubicle Labs and GAN. Cubicle Labs did the magnetism, while GAN made the \"U\"."
+preservation_note: "Archive capture verified on 2026-09-01 to contain the strings 'Gans' and 'Gancube'."
+accessed: "2026-09-01"
+language: en
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "Community-edited. Tier 4. The article uses 'Gans' and 'Gancube' interchangeably throughout, which is itself the alias evidence relied on here; its historical narrative is used only as corroboration and as a source of leads for pass 2."
+status: sourced

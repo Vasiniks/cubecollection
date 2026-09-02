@@ -1,0 +1,46 @@
+# model: gan-i4
+# Pass 3 (model enumeration). Current generation of the i-series; the "356" prefix is dropped
+# from this generation's own name, a naming-convention shift shared with the i-carry line's
+# "GAN i carry 4" and mirroring how the numbered flagship line long ago dropped any
+# family-name prefix of its own. Whether this generation actually postdates GAN356 i3 V2 in
+# GAN's own release order, or the two are sold in parallel as different tiers, is an open
+# question — see gan-356-i3-v2's own description. See research/notes/models/gan-pass3.md.
+id: gan-i4
+entity: model
+family_id: gan-i-series
+manufacturer_id: gan
+name: "GAN i4"
+scope_class: core
+generation:
+  label: "i4"
+  ordinal: 4
+  basis: manufacturer_declared
+announced:
+  value: "2026-08"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's own product page: feature headings include "Omni-directional Smart Ball Core", "Smart
+  Dual-Core Endurance Mode", "Omni-support Spherical Orbit", "Magnetic Levitation", "10 min
+  Quick Charging", "72 Handfeels." MagLev is offered as one of this model's own hardware
+  features/options per the same page; a "Maglev Minions Edition" is recorded as a variant
+  (limited/collaboration colourway), not a separate model, per GAN's own collection page
+  listing it alongside the base GAN i4 as one of two SKUs in the same "i Series" collection.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [gancube-gan-i4-smart-cube-product]
+    note: "The cited source's own preserved capture is dated 2026-08-11. A CDX listing shows an earlier capture of this product URL from 2026-03-08, not independently preserved as its own source this pass; the more conservative, actually-preserved date is used as the floor rather than the unfetched earlier one."
+  /generation/basis:
+    confidence: probable
+    sources: [gancube-gan-i4-smart-cube-product]
+    note: "The '4' naming numeral is GAN's own product name; naming-numeral rule applied consistently with gan-356-x-v2 and gan-356-i2 elsewhere in this archive."
+  /relationships/0:
+    confidence: uncertain
+    note: "Naming sequence only (i3 -> i4); see gan-356-i3-v2's own description for the dating anomaly this rests on."
+relationships:
+  - type: succeeds
+    target: gan-356-i3-v2
+    target_entity: model
+    note: "Inferred from the naming sequence alone (i3 V2 -> i4); no explicit succession sentence was found, and the two models' own dating floors do not confirm this order — see gan-356-i3-v2's description."

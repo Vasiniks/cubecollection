@@ -1,0 +1,20 @@
+# variant: monster-go-3ai--standard
+# Pass 4. The only sold configuration found this pass: app-connected (Time/Move/TPS/Fluency
+# tracking, online battle), user-replaceable battery (280h), 81g.
+id: monster-go-3ai--standard
+entity: variant
+model_id: monster-go-3ai
+name: "Monster Go 3 Ai"
+aliases:
+  - { name: "MG3 Ai", source: gancube-collections-monster-go-smart }
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  battery: "User-replaceable battery; up to 280 hours playtime, per GAN's own copy."
+status: stub
+attestations:
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [gancube-monster-go-3ai-smart-cube-product]

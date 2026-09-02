@@ -1,0 +1,10 @@
+# SYNTHETIC FIXTURE — not archive data. Trips rule 1: wrong types and an unknown enum value.
+
+id: zz-bad-malformed
+entity: variant
+model_id: zz-bad-model
+name: 12345
+scope_class: not_a_real_scope_class
+config:
+  core_system: teleportation
+status: drafted

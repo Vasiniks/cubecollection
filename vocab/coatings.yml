@@ -1,0 +1,28 @@
+# coatings
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: coatings, so the schema and this file cannot drift.
+
+id: coatings
+description: "Surface treatment applied to the plastic."
+values:
+  - value: none
+    label: "None"
+    description: "Untreated plastic."
+  - value: frosted
+    label: "Frosted"
+    description: "A frosted surface finish."
+  - value: uv
+    label: "UV coated"
+    description: "A UV-cured surface coating applied by the manufacturer."
+  - value: matte
+    label: "Matte"
+    description: "A matte surface treatment."
+  - value: aftermarket
+    label: "Aftermarket"
+    description: "A coating applied by a service rather than the manufacturer. Name the service in coating_applied_by."
+  - value: other
+    label: "Other"
+    description: "A documented coating not covered above."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

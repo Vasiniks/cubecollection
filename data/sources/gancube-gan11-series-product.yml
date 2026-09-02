@@ -1,0 +1,30 @@
+# source: gancube-gan11-series-product
+# GAN's own current product page for the "GAN11 Series". Fetched fresh this pass (pass 3).
+# Cited for the single most important model-boundary fact in the whole Flagship Series family:
+# GAN itself sells "GAN11 M Pro", "GAN11 M", "GAN 11 Air", and "GAN11 M Duo" as VERSIONS of one
+# product listing ("GAN11 Series, GAN11 M Pro, GAN11 M, GAN 11 Air, GAN11 M Duo" is the page's
+# own title; its own "Versions" selector offers "GAN11 M Pro UV Coated", "GAN11 M Pro Frosted
+# (Black)", "GAN11 M Duo", "GAN11 Air" from a single page/SKU family) — the manufacturer's own
+# evidence that these tier names are variant-level configurations of one design, not separate
+# models, under DATA_MODEL §4.2.
+id: gancube-gan11-series-product
+entity: source
+kind: manufacturer_official
+title: "GAN11 Series, GAN11 M Pro, GAN11 M, GAN 11 Air, GAN11 M Duo | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan11-series-flagship-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260719144225/https://www.gancube.com/products/gan11-series-flagship-speed-cube"
+excerpt: |-
+  Page title (verbatim): "GAN11 Series, GAN11 M Pro, GAN11 M, GAN 11 Air, GAN11 M Duo | GANCUBE".
+  "Versions" purchase selector on this one product page/listing: "GAN11 M Pro UV Coated",
+  "GAN11 M Pro Frosted (Black)", "GAN11 M Duo", "GAN11 Air" — four named tiers sold as
+  alternative purchase options of a single SKU family, not four separate product pages.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the page title and all four 'Versions' entries verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page and its own purchase-options structure, tier 1 for how GAN itself packages this product's tier names. Read as the manufacturer's own boundary evidence per RESEARCH_SPEC §5: a single listing offering several named tiers is evidence those tiers are variant-level configurations of one design, not separate design generations."
+status: sourced

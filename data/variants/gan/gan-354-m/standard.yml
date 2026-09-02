@@ -1,0 +1,16 @@
+# variant: gan-354-m--standard
+# Pass 4. GAN354 M: 54mm, magnetic, hand-tunable core.
+id: gan-354-m--standard
+entity: variant
+model_id: gan-354-m
+name: "GAN354 M"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  size_mm: 54
+status: stub
+attestations:
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-gan-354-m]

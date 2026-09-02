@@ -1,0 +1,65 @@
+# variant: gan-ui-16-maglev-max--minions-edition
+# Pass 4.5 cleanup. Discovered inside an existing source: GAN's own navigation, quoted in the
+# V100 Minions product source, lists "GAN16 ui Maglev MAX Minions Edition" as a sibling of the
+# V100 and i4 Minions products. No new source was needed — the evidence was already held and
+# unexploited, which is itself worth noting about how these sources get read.
+id: gan-ui-16-maglev-max--minions-edition
+entity: variant
+model_id: gan-ui-16-maglev-max
+name: "GAN16 ui Maglev MAX Minions Edition"
+scope_class: core
+edition:
+  designation: "MAX"
+  name: "Minions Edition"
+  types: [collaboration, smart]
+  collaboration_name: "Minions"
+config:
+  maglev: maglev
+colorway:
+  designation: "Minions Edition"
+smart:
+  is_smart: true
+status: stub
+
+attestations:
+  /edition/collaboration_name:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+    note: "GAN's own naming of the collaboration line. Recorded as a name because the collaborator is a licensed property, which the schema cannot hold as a reference — see F8. collaboration_with stays empty rather than pointing at a fabricated entity."
+  /name:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+    note: "Named verbatim in GAN's own site navigation as quoted in the V100 Minions product source. Probable rather than confirmed: the product's own page was not fetched this pass, so this rests on a sibling product's capture of the nav."
+  /edition/name:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+  /edition/types:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+    note: "\"collaboration\" from the nav's own grouping of a distinct \"Minions\" line, kept separate from the plain GAN16 Maglev listing. \"limited\" is deliberately NOT claimed: the sibling V100 Minions record carries it, but nothing in the evidence held states this product is a limited run, and inheriting an edition type from a sibling would be inference dressed as a fact."
+  /edition/limited/is_limited:
+    confidence: unknown
+  /edition/limited/run_size:
+    confidence: unknown
+  /colorway/designation:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+  /config/maglev:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+  /config/magnet_configuration:
+    confidence: unknown
+  /config/core_system:
+    confidence: unknown
+  /config/coating:
+    confidence: unknown
+  /config/adjustment_system:
+    confidence: unknown
+  /pricing/msrp:
+    confidence: unknown
+  /availability/production_status:
+    confidence: unknown
+  /rarity/level:
+    confidence: unknown
+  /legality/wca_status:
+    confidence: unknown

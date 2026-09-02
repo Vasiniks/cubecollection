@@ -1,0 +1,20 @@
+# source: thecubicle-gan356-rs
+# TheCubicle's listing for GAN356 RS, explicitly calling it "the latest update" to GAN356 R —
+# the succession evidence for R -> RS.
+id: thecubicle-gan356-rs
+entity: source
+kind: retailer
+title: "GAN356 RS – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-rs"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927045550/https://www.thecubicle.com/products/gan356-rs"
+excerpt: "The GAN 356 RS is the latest update of the popular budget friendly 3x3 speed cube from GAN, the 356 R. This puzzle features a smooth, soft GAN feel that is characteristic of their cubes. At 72g this puzzle represents the intersection between state-of-the-art engineering and budget consideration. AKA: GAN356RS, GAN 356RS, GAN 356 RS, GAN RS, 356 RS"
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'the latest update of... the 356 R' and the AKA list verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, explicitly framing RS as an update to R."
+status: sourced

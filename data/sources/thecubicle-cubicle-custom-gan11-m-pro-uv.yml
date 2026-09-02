@@ -1,0 +1,20 @@
+# source: thecubicle-cubicle-custom-gan11-m-pro-uv
+# A serviced GAN 3x3 sold by TheCubicle under its own Cubicle Pro Shop name, with a Cubicle
+# Pro Shop centre cap replacing GAN's. Evidence that TheCubicle is a service organisation.
+id: thecubicle-cubicle-custom-gan11-m-pro-uv
+entity: source
+kind: retailer
+title: "Cubicle Custom GAN 11 M Pro 3x3 (UV Coated) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://thecubicle.com/products/cubicle-custom-gan-11-m-pro-3x3-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230208200139/https://thecubicle.com/products/cubicle-custom-gan-11-m-pro-3x3-uv-coated"
+excerpt: "The Cubicle Pro Shop GAN 11 M Pro 3x3 (UV Coated) is our customizable version of GAN's 2020 flagship 3x3. [...] The Cubicle Pro Shop GAN 11 M Pro comes packaged with additional accessories, with your configuration pre-installed. [...] Unfortunately, we are unable to remove the GAN logo due to the UV Coated surface. Instead, we provide a standard plastic GAN 11 M Pro center cap with a Cubicle Pro Shop logo."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'Cubicle Pro Shop' and 'customizable version of GAN'. The live page now reports the product discontinued, so the archived capture is the load-bearing copy."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "First-party description by the servicing organisation of its own service on a GAN-produced cube."
+status: sourced

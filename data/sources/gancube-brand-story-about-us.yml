@@ -1,0 +1,25 @@
+# source: gancube-brand-story-about-us
+# GAN's own brand-story page. Tier 1 for GAN's identity, founding year, and — critically —
+# for the "Our Sub-brands" section, in which GAN names Monster Go and Swift Block as its own.
+id: gancube-brand-story-about-us
+entity: source
+kind: manufacturer_official
+title: "GANCUBE Brand Story - Our Journey in Speed Cubing"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/pages/about-us"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260719144224/https://www.gancube.com/pages/about-us"
+excerpt: |-
+  Milestones — 2014: "GANCUBE Inc. was established in Guangzhou.The cube brand, GANCUBE, made its debut."
+  2016: "In 2016, GANCUBE set its first world record and introduced the GAN Air UM to the world — the first mass-produced magnetic flagship cube."
+  2020: "GANCUBE acquired the recognition of highly potential technical company by the local government. Brain-training puzzle toy brand, Monster Go, was established."
+  2023: "Fashionable puzzle brand, Swift Block, started to hit the market."
+  Section heading: "Our Sub-brands" — followed by: "Monster Go is a brain-training puzzle toy brand with cultivating children's motors as its center." and "Swift Block is a leisure puzzle brand focusing on light brain-training and puzzle's intelligent innovation."
+preservation_note: "Archive capture verified on 2026-09-01 to contain the Milestones timeline, the 'Our Sub-brands' heading, and both sub-brand descriptions. Excerpt retained as a second layer because the page is a marketing page that GAN revises."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "Tier 1 for GAN's own corporate facts and for the brands it declares as its own. The same page's superlatives ('the first mass-produced magnetic flagship cube') are marketing copy and are tier 4 for that comparative claim."
+status: sourced

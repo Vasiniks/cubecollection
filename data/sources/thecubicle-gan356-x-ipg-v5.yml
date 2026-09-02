@@ -1,0 +1,27 @@
+# source: thecubicle-gan356-x-ipg-v5
+# TheCubicle's listing for "GAN356 X (IPG v5)", the specific hardware-revision-labelled
+# purchase configuration of GAN356 X. Cited for the GMS (interchangeable magnetic capsules)
+# mechanism and the IPG-V5/GES V3 tension system as sold on this cube, and as the source of the
+# "IPG v5" naming that gan-356-x.yml records as an open `model.revisions[]` question.
+id: thecubicle-gan356-x-ipg-v5
+entity: source
+kind: retailer
+title: "GAN 356 X (IPG v5) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-x-ipg-v5"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20201205182243/https://www.thecubicle.com/products/gan356-x-ipg-v5"
+excerpt: |-
+  "The GAN 356 X is the highly respected successor to the GAN Air SM. The X is loaded with a
+  host of unique, innovative technologies, including the new GAN Magnetic System, a set of
+  interchangeable magnetic capsules. This version comes with the IPG-V5 which uses the GES V3,
+  the traditional GES system from the GAN 354 M." Comes with: "Gan 356 X (IPG v5), Magnetic
+  capsules (GMS), GES nuts (IPG v5), GES/GMS manual."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'IPG-V5', 'GES V3', and 'Magnetic capsules (GMS)' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. Naming this SKU '(IPG v5)' implies at least one earlier IPG hardware revision was sold under the same 'GAN356 X' name at some point, but this page does not itself confirm an earlier version was sold as its own separately-purchasable listing — recorded as an open question on the model record (revisions[]), not resolved here."
+status: sourced

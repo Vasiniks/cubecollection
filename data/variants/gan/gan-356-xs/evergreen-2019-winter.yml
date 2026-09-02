@@ -1,0 +1,36 @@
+# variant: gan-356-xs--evergreen-2019-winter
+# Pass 4. "GAN356 X S Evergreen" (2019 Winter) — a named limited colourway of GAN356 XS, same
+# GAN "For display only, not for sale" museum-page evidence pattern used elsewhere in this wave.
+id: gan-356-xs--evergreen-2019-winter
+entity: variant
+model_id: gan-356-xs
+name: "GAN356 XS Evergreen"
+scope_class: core
+edition:
+  name: "2019 Winter Limited Edition"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+colorway:
+  designation: "Evergreen"
+  limited_name: "Evergreen"
+  scheme: custom
+availability:
+  production_status: discontinued
+  last_seen_available: { value: "2025-09", precision: month, qualifier: exact }
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-le-gan356-xs-evergreen]
+  /edition/limited/is_limited:
+    confidence: confirmed
+    sources: [gancube-le-gan356-xs-evergreen]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."
+  /availability/production_status:
+    confidence: probable
+    sources: [gancube-le-gan356-xs-evergreen]
+    note: "GAN's own archived page is a non-purchasable, permanently 'Sold Out' display-only record as of the 2025-09-14 capture."

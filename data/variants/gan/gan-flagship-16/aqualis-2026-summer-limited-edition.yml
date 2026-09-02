@@ -1,0 +1,40 @@
+# variant: gan-flagship-16--aqualis-2026-summer-limited-edition
+# Pass 4. "AQUALIS - GAN16 Maglev MAX 2026 Summer Limited Edition" — a named seasonal limited
+# colourway of GAN16 Maglev MAX, sold as its own full GAN product listing. TheCubicle's own
+# retail copy describes "a stunning, iridescent pearl finish" and "signature soft, rose-tinted
+# hues"; not independently verified by this pass against GAN's own body copy, so recorded at
+# reduced confidence.
+id: gan-flagship-16--aqualis-2026-summer-limited-edition
+entity: variant
+model_id: gan-flagship-16
+name: "AQUALIS - GAN16 Maglev MAX 2026 Summer Limited Edition"
+scope_class: core
+edition:
+  designation: "MAX"
+  name: "AQUALIS"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: maglev
+colorway:
+  designation: "AQUALIS"
+  limited_name: "AQUALIS"
+  scheme: custom
+packaging:
+  contents: ["Cube x1", "Cube Bag x1", "Identity Card x1", "Poster Card x1", "Tuning Tools", "GAN BOX x1", "Stickers (2 sets)", "Manual x1", "Magnet Bar x8"]
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-aqualis-gan16-maglev-max-product]
+  /edition/limited/is_limited:
+    confidence: confirmed
+    sources: [gancube-aqualis-gan16-maglev-max-product]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. No run-size, unit-count, or numbering language appears on GAN's own product page. Never estimated."
+  /packaging/contents:
+    confidence: confirmed
+    sources: [gancube-aqualis-gan16-maglev-max-product]

@@ -1,0 +1,16 @@
+# scope-class
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: scope-class, so the schema and this file cannot drift.
+
+id: scope-class
+description: "Whether a record belongs to the main archive, is admitted conditionally, or exists only so researchers can identify and dismiss it."
+values:
+  - value: core
+    label: "Core"
+    description: "WCA-legal 3x3 within the scope policy. The main archive."
+  - value: conditional
+    label: "Conditional"
+    description: "Non-WCA-legal 3x3 admitted on documented historical or collector significance. Requires scope_justification and at least one Tier 1-3 source."
+  - value: reference_only
+    label: "Reference only"
+    description: "Recorded for identification and disambiguation. Never exhibited."

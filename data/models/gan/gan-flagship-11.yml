@@ -1,0 +1,66 @@
+# model: gan-flagship-11
+# Pass 3 (model enumeration). The opening generation of GAN's numbered flagship succession,
+# introducing a magnetic core (8 omnidirectional magnetic particles) to the design per GAN's
+# own technology-history page — the manufacturer-declared mechanism milestone that anchors this
+# whole family. GAN's own current product page for this generation sells "GAN11 M Pro",
+# "GAN11 M", "GAN 11 Air", and "GAN11 M Duo" as VERSIONS of one listing
+# (gancube-gan11-series-product) — the cleanest possible manufacturer evidence that these tier
+# names are variant-level configurations of one design (DATA_MODEL §4.2 worked decision A),
+# not separate models, even though "Air" (no magnetic core) and "M Pro" (magnetic core) differ
+# in substantial hardware. See research/notes/models/gan-pass3.md.
+id: gan-flagship-11
+entity: model
+family_id: gan-flagship-series
+manufacturer_id: gan
+name: "GAN11"
+aliases:
+  - "GAN11 Series"
+  - "GAN 11 M Pro"
+scope_class: core
+generation:
+  label: "11"
+  ordinal: 11
+  basis: manufacturer_declared
+announced:
+  value: "2020"
+  precision: year
+  qualifier: exact
+released:
+  value: "2020"
+  precision: year
+  qualifier: before
+  note: "A lower bound, not a release date. The model must have existed by 2020 because a dated limited edition of it did. Recorded with qualifier 'before' rather than 'exact' so it is never mistaken for the launch."
+description: |-
+  GAN's own Chinese technology-history page dates this generation's headline product, "GAN 11
+  M Pro", to 2020 and calls it that year's "heavyweight flagship" (年度重磅旗舰), introducing a
+  magnetic core: "an omnidirectional magnetic particle" mechanism fitted above the axis.
+  TheCubicle's own retail copy for a serviced version independently calls the same product
+  "GAN's 2020 flagship 3x3". GAN's own current storefront lists "GAN11 M Pro", "GAN11 M",
+  "GAN 11 Air", and "GAN11 M Duo" as purchase-option "Versions" of a single product page/SKU
+  family — treated as variants of this one model.
+
+  "GAN Mini M Pro" (gan-mini-m-pro) borrows this generation's "M Pro" tier name for a smaller
+  (53mm) shell and is recorded as its own model under this same family rather than as a variant
+  here, since a different size necessarily means different tooling (DATA_MODEL §4.2's mould
+  test), not merely a different assembly-time configuration of this shell.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [gancube-gan11-m-pro-kun-le-product]
+    note: "Derived bound, not a stated date: GAN11 M Pro Kun, GAN's own 2020 Winter Limited Edition, dates the edition. A model cannot post-date its own limited edition, so this establishes 'no later than 2020'. The actual release date remains unresearched."
+  /announced:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history, thecubicle-cubicle-custom-gan11-m-pro-uv]
+    note: "GAN's own technology-history page (tier 1) dates the product and calls it that year's flagship; TheCubicle's own copy (tier 2) independently corroborates '2020 flagship'. Tier 1 alone would already meet confirmed under RESEARCH_SPEC §6."
+  /generation/basis:
+    confidence: probable
+    sources: [gancube-gan12-maglev-product]
+    note: "No source found this pass makes an explicit '11th generation' statement about GAN11 itself. This is inferred by entailment from GAN12's own page stating directly 'GAN12 Maglev is the 12th generation of GANCUBE' — a manufacturer-declared sequential numbering scheme that necessarily implies an 11th generation preceded it. Recorded at reduced confidence relative to GAN12's own direct statement."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]
+  /description:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]
+    note: "GAN's own 'Versions' selector on one product page/listing is the direct evidence for treating M Pro/M/Air/M Duo as variants, not models."

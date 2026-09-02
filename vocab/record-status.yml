@@ -1,0 +1,28 @@
+# record-status
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: record-status, so the schema and this file cannot drift.
+
+id: record-status
+description: "Lifecycle state of a record."
+values:
+  - value: stub
+    label: "Stub"
+    description: "Identity established, nothing else."
+  - value: drafted
+    label: "Drafted"
+    description: "Fields populated, provenance incomplete."
+  - value: sourced
+    label: "Sourced"
+    description: "Every critical field is attested or explicitly unknown."
+  - value: reviewed
+    label: "Reviewed"
+    description: "Quality control passed."
+  - value: published
+    label: "Published"
+    description: "Visible to the exhibition."
+  - value: disputed
+    label: "Disputed"
+    description: "Blocking conflict on a critical field. Cannot publish."
+  - value: deprecated
+    label: "Deprecated"
+    description: "Superseded or merged. Id retained permanently."

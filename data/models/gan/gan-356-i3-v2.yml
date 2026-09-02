@@ -1,0 +1,59 @@
+# model: gan-356-i3-v2
+# Pass 3 (model enumeration). Only "GAN356 i3 V2" was located as a distinct retailer listing
+# this pass; no separate bare "GAN356 i3" product was found on TheCubicle, so — following the
+# same reasoning already applied to gan-356-s-v2 elsewhere in this family tree — "V2" is
+# treated as likely part of this generation's launch name from the start, not a later revision
+# of a previously-sold plain "i3". See research/notes/models/gan-pass3.md for the dating
+# anomaly this record also flags.
+id: gan-356-i3-v2
+entity: model
+family_id: gan-i-series
+manufacturer_id: gan
+name: "GAN356 i3 V2"
+aliases:
+  - "GAN356 i3"
+scope_class: core
+generation:
+  label: "i3 V2"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2026-06"
+  precision: month
+  qualifier: before
+description: |-
+  TheCubicle's own copy: "Redefine the smart cubing experience with the GAN356 i3 V2
+  3x3—the latest evolution of the iconic GAN Bluetooth smart cube... Engineered for over 50,000
+  solves and 15 hours of active playtime on a single charge... 365-day standby." GAN's own site
+  navigation elsewhere (captured 2026-02-28, in this pass's discovery session but not preserved
+  as a separate citable source) lists this product as "GAN356 i 3 Smart Cube", recorded here as
+  an alias reflecting a nav-label spacing difference rather than a separate product.
+
+  Dating anomaly, recorded rather than resolved: TheCubicle's own earliest located capture of
+  this exact listing (2026-06-27) postdates gancube.com's own earliest located capture of the
+  next-named generation, "GAN i4" (2026-03-08). Taken at face value this would put i4 before
+  i3 V2, which is backwards for the naming sequence. This pass treats the naming sequence
+  (i, i2, i3 V2, i4) as the more reliable signal of true design order and records the
+  succession accordingly, while flagging that the retailer-floor dates do not confirm that
+  order and may instead reflect GAN356 i3 V2 continuing to sell as a lower-tier product
+  alongside the newer, "356"-prefix-dropped GAN i4 — the same coexistence pattern already
+  documented for the GAN356 mainline running alongside GAN Flagship Series, and for i-carry-2/
+  i-carry-e running alongside i-carry-4.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-i3-v2]
+    note: "TheCubicle's own earliest capture (2026-06-27) is a retailer-listing floor, not a manufacturer-stated date. See description for the dating anomaly relative to GAN i4."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-gan356-i3-v2]
+    note: "No standalone 'i3' (without 'V2') listing was located this pass; naming-numeral rule applied by analogy to gan-356-x-v2, at reduced confidence given the absence of a confirmed prior 'i3' to version against."
+  /relationships/0:
+    confidence: uncertain
+    note: "No explicit 'update to i2' sentence was found; inferred from the naming sequence (i2 -> i3) alone."
+relationships:
+  - type: succeeds
+    target: gan-356-i2
+    target_entity: model
+    note: "Inferred from the naming sequence (i2 -> i3); no explicit succession sentence naming i2 was found on the i3 V2 listing itself."

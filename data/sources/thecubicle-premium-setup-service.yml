@@ -1,0 +1,21 @@
+# source: thecubicle-premium-setup-service
+# TheCubicle's own description of its general lubrication-and-setup service, applied across
+# its whole catalogue rather than to any single product. General, first-party evidence for
+# classifying TheCubicle itself as kind: service.
+id: thecubicle-premium-setup-service
+entity: source
+kind: retailer
+title: "Introducing Our New Premium Cube Setup Service – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/pages/about-our-premium-setup-service"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251125190228/https://www.thecubicle.com/pages/about-our-premium-setup-service"
+excerpt: "We're excited to announce a major revamp of our premium cube lubrication and setup service! Now, you can add our popular Premium Setup Service to a much wider selection of cubes, including the latest releases and all your favorites, right from the product page! [...] Expanded Product Range: Our premium service is now available on more cubes than ever [...] at the time of this update, this service is available for over 700 puzzles! [...] Extended Warranty: Enjoy peace of mind with an extended 6-week warranty on cubes serviced with our premium setup."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'Premium Setup Service' and 'over 700 puzzles'."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "First-party description by TheCubicle of its own general lubrication/setup service, applied catalogue-wide rather than to one manufacturer. Cited only to establish the existence and general nature of the service, not any product-specific claim."
+status: sourced

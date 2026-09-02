@@ -1,0 +1,138 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-testbrand-tf-v1--flagship-uv
+entity: variant
+model_id: zz-testbrand-tf-v1
+name: ZZ Testbrand TF V1 Flagship, UV coated, stickerless
+scope_class: core
+aliases:
+  - { name: "TF V1 Flagship UV", retailer: "ZZ Test Retail" }
+edition:
+  types: [standard]
+  designation: Flagship
+  limited:
+    is_limited: false
+    run_size: null
+config:
+  # Overrides only. magnet_configuration, core_system, maglev, adjustment_system and
+  # size_mm are inherited from the model and deliberately not restated here.
+  coating: uv
+  weight_g: 61
+colorway:
+  designation: Stickerless (Bright)
+  application: stickerless
+  scheme: bright
+  body:
+    plastic_color_name: natural
+    translucency: opaque
+    finish: uv_coated
+  faces:
+    - { face: U, color_name: white,  color_normalized: "#f5f5f5", material: plastic }
+    - { face: D, color_name: yellow, color_normalized: "#ffd500", material: plastic }
+    - { face: F, color_name: green,  color_normalized: "#009e60", material: plastic }
+    - { face: B, color_name: blue,   color_normalized: "#0051ba", material: plastic }
+    - { face: L, color_name: orange, color_normalized: "#ff5800", material: plastic }
+    - { face: R, color_name: red,    color_normalized: "#c41e3a", material: plastic }
+  logo:
+    present: true
+    placement: center_U
+    treatment: printed
+legality:
+  wca_status: legal
+  as_of: { value: "2026-09", precision: month, qualifier: exact }
+  basis: Fixture value.
+releases:
+  - region: CN
+    date: { value: "2021-04", precision: month, qualifier: exact }
+    channel: manufacturer_direct
+  - region: INTL
+    date: { value: "2021-06", precision: month, qualifier: circa }
+    channel: international_retail
+pricing:
+  msrp: { amount: 54.99, currency: USD, region: US }
+  observations:
+    - date: { value: "2021-06-14", precision: day, qualifier: exact }
+      kind: retail_list
+      price: { amount: 54.99, currency: USD, region: US }
+      retailer: ZZ Test Retail
+      condition: new
+      source: zz-src-retailer
+    - date: { value: "2021-07-02", precision: day, qualifier: exact }
+      kind: archivist_paid
+      price: { amount: 49.00, currency: USD, region: US }
+      condition: new
+      source: zz-src-measure
+availability:
+  production_status: discontinued
+  discontinued: { value: "2024", precision: year, qualifier: circa }
+  last_seen_available: { value: "2024-02", precision: month, qualifier: circa }
+rarity:
+  level: scarce
+  basis: Fixture rarity, justified so rule 10 is satisfied.
+  factors:
+    - kind: limited_run
+      detail: Fixture factor.
+      source: zz-src-review
+media:
+  - id: med-001
+    class: photograph
+    role: hero
+    subject: specimen
+    path: assets/images/zz/hero.webp
+    origin: first_party
+    rights_status: owned
+    specimen_id: zz-spec-0001
+    checksum: "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  - id: med-002
+    class: manufacturer_render
+    role: product
+    subject: rendering
+    path: assets/images/zz/render.webp
+    origin: manufacturer
+    source: zz-src-official
+    rights_status: unclear
+status: published
+attestations:
+  "/edition/types":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/edition/designation":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/edition/limited/is_limited":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/edition/limited/run_size":
+    confidence: unknown
+  "/config/coating":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/config/weight_g":
+    confidence: probable
+    sources: [zz-src-retailer]
+  "/legality/wca_status":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/pricing/msrp":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/availability/production_status":
+    confidence: reported
+    sources: [zz-src-review]
+  "/rarity/level":
+    confidence: reported
+    sources: [zz-src-review]
+  "/releases/0/date":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/releases/1/date":
+    confidence: probable
+    sources: [zz-src-retailer]
+  "/colorway/faces/0/color_normalized":
+    confidence: reported
+    sources: [zz-src-retailer]
+    derived_from: sampled_from_image
+    derivation_note: "Read off a retail photograph; approximate."

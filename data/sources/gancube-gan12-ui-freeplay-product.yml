@@ -1,0 +1,22 @@
+# source: gancube-gan12-ui-freeplay-product
+# GAN's own product page for "GAN12 UI FreePlay Smart Speed Cube", sold at its own dedicated
+# URL separate from "GAN12 ui Maglev" and "GAN12 ui SP" — evidence these three are separate
+# catalog listings, not versions of one shared page (contrast the mechanical GAN12 page, which
+# bundles Leap/Maglev/coatings into one "Versions" selector).
+id: gancube-gan12-ui-freeplay-product
+entity: source
+kind: manufacturer_official
+title: "GAN12 UI FreePlay Smart Speed Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan12-ui-freeplay-3x3-flagship-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241119192339/https://www.gancube.com/products/gan12-ui-freeplay-3x3-flagship-speed-cube"
+excerpt: "Page title as captured 2024-11-19: \"GAN12 UI FreePlay Smart Speed Cube | GANCUBE Official Website\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to resolve with this exact title. This capture falls inside gancube.com's own site-wide November 2024 archival event, so it is cited for existence and naming only, not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for existence and naming. Body copy beyond the title was not extracted this pass."
+status: sourced

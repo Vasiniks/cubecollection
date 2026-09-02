@@ -1,0 +1,21 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-src-retailer
+entity: source
+kind: retailer
+title: ZZ Test Retail listing, TF V1 Flagship
+publisher: ZZ Test Retail
+url: https://example.invalid/zz-retail/tf-v1
+preservation_method: local_capture
+local_capture:
+  path: assets/captures/zz-retail-tf-v1.pdf
+  checksum: "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  format: pdf
+  captured: "2026-08-30"
+accessed: "2026-08-30"
+link_status: live
+last_checked: "2026-08-30"
+status: published

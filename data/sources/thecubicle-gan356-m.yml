@@ -1,0 +1,23 @@
+# source: thecubicle-gan356-m
+# TheCubicle's listing for GAN356 M, describing it as "reminiscent of a mix between the GAN XS
+# and GAN X V2" — comparative marketing language, not a manufacturer statement of shared mold.
+# A customer review on the same page (inadmissible tier 5, not cited as fact) claims the piece
+# design is identical to GAN X/X V2 with glued-in fixed magnets; recorded only as an unconfirmed
+# lead in the model's own notes, not relied on here.
+id: thecubicle-gan356-m
+entity: source
+kind: retailer
+title: "GAN356 M Magnetic Speed Cube – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927011710/https://www.thecubicle.com/products/gan356-m"
+excerpt: "The GAN 356 M is a modern, mid-range magnetic 3x3 speed cube by popular manufacturer GAN. This version comes with GAN's unique hand adjustable Numerical IPG Core and a set of spare GES nuts. Out of the box, the GAN 356 M has a fast, stable feel that is very reminiscent of a mix between the GAN XS and GAN X V2, two of GAN's most famous flagships."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'reminiscent of a mix between the GAN XS and GAN X V2' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. 'Reminiscent of a mix between' is comparative marketing language, not an explicit shared-mold statement, and is treated as insufficient on its own to collapse GAN356 M into a variant of GAN356 X V2; recorded as its own model at reduced confidence about the exact lineage."
+status: sourced

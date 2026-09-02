@@ -1,0 +1,11 @@
+# SYNTHETIC FIXTURE — not archive data. Predecessor half of the rule-20 lineage pair.
+id: zz-bad-lineage-a
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Lineage A
+scope_class: core
+released: { value: "2020", precision: year, qualifier: exact }
+specs:
+  core_system: standard
+status: stub

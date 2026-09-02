@@ -1,0 +1,75 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN's smart/electronic 3x3 lineage, whether each smart product is documented as deriving
+  from a specific mechanical base (smart_version_of relationship candidate), and where the
+  smart line itself splits into further variant-level configurations (coating/core/edition).
+
+findings:
+  - candidate: "GAN356 i — first-generation smart cube (2019)"
+    likely_model: { name: "GAN356 i, root of the whole 'i' smart lineage", confidence: confirmed }
+    aliases: ["Ganspuzzle i", "356i"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/gancubes-core-technology/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"2019 marked the inception of GAN smart cube technology, with the introduction of the first generation of smart speed cubes (GAN356 i) that debuted with an innovative smart ball core.\""
+      - url: "https://www.thecubicle.com/products/gan356-i2"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN 356 i2 is GAN's latest update to its successful 3x3 smart cube, the GAN 356 i. Changes include faster charging time (2 hours), longer battery life, significantly longer standby time (60 days)... utilises Bluetooth to pair with your Android or Apple device through GAN's free app, 'Cube Station'... also compatible with the GAN ROBOT.\""
+    open_questions:
+      - "GAN's smart line generations found this pass (i, i2, i3, i carry, i carry 2, i carry 4, i carry S, i carry E, GAN12/16 ui) form a long, actively-branching lineage that looks like it needs its OWN family-level treatment rather than being folded into the mechanical 356/12/16 families — flagged for the family/model researchers, not resolved here."
+
+  - candidate: "GAN 12/16 'ui' — smart version explicitly built on a named mechanical base"
+    likely_model: { name: "GAN12 UI derived from GAN12 UI Free Play / GAN12 MagLev mechanical base", confidence: probable }
+    aliases: ["GAN12 ui Maglev", "GAN12 ui FreePlay", "GAN12 ui SP", "GAN16 ui Maglev MAX"]
+    confidence: probable
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan12-ui-maglev-3x3-10th-anniversary-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN 12 UI MagLev 3x3 is everything you love about the GAN 12 UI Free Play, but with a MagLev tensioning system! This smart cube is built like a GAN 12, which means performance is top-tier! Connect it to your phone using Bluetooth, and with the free mobile application 'CubeStation' you can race your friends...\""
+    open_questions:
+      - "'built like a GAN 12' is retailer prose, not a GAN statement naming a specific mechanical variant id as the smart cube's base — good enough to record confidence: probable for the existence of a mechanical/smart pairing pattern, NOT strong enough on its own to write a `smart_version_of` relationship per rule 17 (needs tier 1-2 and this is borderline tier 2 prose, not a structural statement). Needs GAN's own product page for GAN12 UI MagLev checked directly."
+
+  - candidate: "Smart line's own internal variant axis: coating, core, and edition all recur INSIDE the smart line, same as the mechanical line"
+    likely_model: { name: "GAN i4 (Leap vs MagLev; Frosted vs UV; Minions Edition; Year of the Horse Edition)", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-i4-leap-frosted-3x3-smart-cube"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Dual-Core Endurance: Switch between full-power Performance Mode or legendary 200-hour Endurance Mode... Weighs just 74g... 72 flexible tuning combinations (6 travel gears x 12 tension gears)... Smart Ball Core & Tracking: Full 360° real-time gyroscopic tracking.\""
+      - url: "https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"Versions: Matte Variant / Matte + Halo Timer Variant\" — sold from ONE product page, same physical cube, difference is bundle-with-timer only. \"GAN i carry 4 Minions Edition features a matte finish. It uses replaceable button batteries... offering up to 150 hours of battery life... Size: 56mm, Weight: 71.2g, Magnet Amount: 48 Pieces, Tension System: GES Pro+... 12 levels of magnetic tension, 6 levels of center piece travel, providing 72-Gear Numerical Tuning.\""
+    open_questions:
+      - "The 'Matte Variant' vs 'Matte + Halo Timer Variant' choice on the same GAN i carry 4 Minions Edition listing is a bundle-inclusion difference (timer accessory), NOT a coating/config difference — both are 'matte' finish. Flagged as a clean NOT-a-new-variant example (bundled_with, per DATA_MODEL §4.1) for the boundary file."
+
+  - candidate: "Digital-only bundled content tied to smart cube purchase (app skins/avatar frames) — not a physical materiality trigger but worth recording as a real, sourced product fact"
+    likely_model: { name: "GAN i carry 4 Minions Edition, Amyth GAN16 MagLev MAX Winter LE", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"Box Includes: Cube *1, DIY Minions Stickers *1, Minions Skin & Effects & Avatar Frame (Benefit On APP)... the skin, effect, and avatar frame will be issued to the FIRST ACCOUNT you connect... Once redeemed, digital assets are considered fully delivered and are non-refundable.\""
+    open_questions:
+      - "No schema field obviously fits 'purchase unlocks account-bound digital collectible in a companion app' — this is not packaging, not media, not edition designation in the usual sense. Flagged as a possible schema gap for the smart-cube block (variant.smart) rather than worked around; recorded here as a finding, not silently dropped."
+
+conflicts: []
+
+not_found:
+  - "No standalone GAN 251 (2x2) smart cube distinct from 'GAN251 ui' was found this pass — out of 3x3 scope regardless, noted only because the naming pattern ('ui' suffix = smart) recurs there too and may help the family researcher recognize the pattern on other sizes."
+  - "Monster Go's own smart cube ('Monster Go 3 Ai Smart Puzzle Cube') returned HTTP 404 on TheCubicle and was not independently verified via a gancube.com or monster-go.com capture this pass — exists as a lead only."

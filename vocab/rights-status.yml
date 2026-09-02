@@ -1,0 +1,25 @@
+# rights-status
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: rights-status, so the schema and this file cannot drift.
+
+id: rights-status
+description: "The rights position for using an asset."
+values:
+  - value: owned
+    label: "Owned"
+    description: "The archivist holds the rights."
+  - value: licensed
+    label: "Licensed"
+    description: "Used under a licence."
+  - value: permission_granted
+    label: "Permission granted"
+    description: "Used with documented permission."
+  - value: fair_use_claimed
+    label: "Fair use claimed"
+    description: "Used under a claimed exception. Record the reasoning."
+  - value: unclear
+    label: "Unclear"
+    description: "Rights not established. Stored but never displayed publicly."
+  - value: do_not_publish
+    label: "Do not publish"
+    description: "Explicitly not to be displayed."

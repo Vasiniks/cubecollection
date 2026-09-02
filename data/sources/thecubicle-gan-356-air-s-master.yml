@@ -1,0 +1,26 @@
+# source: thecubicle-gan-356-air-s-master
+# TheCubicle's listing for the GAN 356 Air S (Master), the central source for this pass's
+# hardest 356-line boundary call: whether "Air S" is a new mold/design relative to the original
+# 2016 "GAN356 Air", or merely a variant. The listing's own language ("a unique honeycomb design
+# on the pieces"; "the magnet slots... have been removed... to make the puzzle as light as
+# possible") is read as describing a genuinely redesigned piece geometry distinct from the
+# original Air, while "Air S" vs "Air SM" (magnet slots present vs removed) is read as a
+# variant-level choice within that new "Air S" design — see gan-356-air-s.yml for the full
+# reasoning.
+id: thecubicle-gan-356-air-s-master
+entity: source
+kind: retailer
+title: "GAN 356 Air S (Master) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-air-s-master"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190718101059/https://www.thecubicle.com/products/gan-356-air-s-master"
+excerpt: "The GAN 356 Air S Master is now available! This version is the non-magnetized version of the Air SM with a design that prioritizes soft feel and light weight, a new and improved elasticity system (GES V2), and a unique honeycomb design on the pieces. The magnet slots that are present in the Air SM have been removed in the Air S in order to make the puzzle as light as possible, and the standard clear GES V2 nuts are pre-installed."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'honeycomb design' and 'magnet slots... have been removed' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. 'Magnet slots... removed' is read as evidence of a redesigned piece geometry (a model-level tooling difference from the original Air) rather than a mere assembly-time omission of parts, on the strength of the accompanying 'unique honeycomb design' language describing the whole piece set, not just the magnet-bearing area. This is an inference from marketing copy, not a manufacturer statement of mold identity, and is recorded at reduced confidence accordingly — see the model record's own attestation."
+status: sourced

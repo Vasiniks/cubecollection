@@ -1,0 +1,57 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN's tension/adjustment axis (config.adjustment_system, vocab/adjustment-systems.yml: screw
+  | ges_nut | tension_only | tension_compression | tri_adjust | tool_free | other | unknown).
+  This is almost always a design attribute of the mechanism itself rather than a purchasable
+  choice — flagged accordingly below.
+
+findings:
+  - candidate: "GES / GES+ — GAN Elasticity System, using Numerical IPG and GAN Tension Nut (GTN)"
+    likely_model: { name: "GAN356 (2015) onward — GAN's continuously-branded tensioning system across nearly the whole product history", confidence: confirmed }
+    aliases: ["GES", "GES+", "GES V2", "GES V3", "GES Pro", "GES Pro+", "Numerical IPG"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/patents/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"TECH | GES — The leading tech GAN Elasticity System (GES+), which consists of patented numerical IPG and gan tension nut (GTN). The 0.6/0.8/1.0 3 gear distance, with 4 groups of elastic force, to create 12 typical numerical mode, tuning elasticity becomes so easy and accurate. Screw end needle-clip, lock on the nuts. 0.6/0.8/1.0mm 3 distances, tune by hand. 4 sets of elasticity, change at will.\""
+      - url: "https://www.thecubicle.com/products/gan-i-carry-4-minions-edition"
+        publisher: "GANCUBE (product spec block on TheCubicle-adjacent GAN storefront)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"Tension System: GES Pro+ ... 12 levels of magnetic tension, 6 levels of center piece travel, prividing 72-Gear Numerical Tuning\" [sic, 'prividing' verbatim typo in source] — confirms GES has continued evolving (GES Pro+) into the current i carry 4 smart-cube generation, with a MUCH higher gear count (72) than the 12-mode figure quoted for the 2015-era system above."
+    open_questions:
+      - "GES version numbers (V2, V3, Pro, Pro+) appear to track the SAME underlying adjustment_system vocab value (most plausibly `tension_compression` or `tri_adjust` depending on exact axis count) across many models/years, i.e. this looks like a naming/versioning axis layered on top of one vocab value rather than several different vocab values. Needs the model-researcher to confirm whether GES version number should live in config.adjustment_system (as free text) or purely in notes, since the vocab is a closed enum."
+
+  - candidate: "Dual adjustment / tri-adjust core (independent tension AND compression control) — maps to vocab `tension_compression` or `tri_adjust`"
+    likely_model: { name: "GAN356 X (2018) onward, GAN356 XS, GAN 11 M Pro, GAN356 X V2", confidence: confirmed }
+    aliases: ["dual adjustment system", "quantifiable adjustment core"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-mini-m-pro-3x3"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"At 53mm across, this is the smallest fully adjustable 3x3 to ever be released. With 7 different magnetic settings and 16 different tension/compression settings, there is sure to be a setup here for you!\""
+    open_questions:
+      - "See gan-axis-core-systems.yml for the corresponding core_system finding — this is the same underlying mechanism described from the adjustment-axis side. Flagging so the two files are read together, not duplicated as two separate facts in canonical data."
+
+  - candidate: "GAN356 X's interchangeable IPG version as a purchasable configuration line (IPG v5 named in the product title itself)"
+    likely_model: { name: "GAN356 X", confidence: probable }
+    aliases: ["IPG v5", "IPG v4 (referenced but not directly captured)"]
+    confidence: probable
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan356-x-ipg-v5"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"This version comes with the IPG-V5 which uses the GES V3, the traditional GES system from the GAN 354 M.\" — the retailer sells this as a distinctly-titled SKU ('GAN356 X (IPG v5)'), implying an earlier IPG version of the same GAN356 X was also sold as its own listing at some point."
+    open_questions:
+      - "Was an 'IPG v4' GAN356 X ever sold as its OWN separate retail SKU (which would support treating IPG version as a variant-level materiality trigger under rule 3/10 — core system / materials the manufacturer distinguishes), or is 'IPG v5' simply this retailer's way of specifying which hardware revision the current stock happens to be (which would make it a model.revisions[] case, not a variant)? Not resolved this pass — a genuinely hard case for the boundary file."
+
+conflicts: []
+
+not_found:
+  - "No GAN product using vocab's `tool_free` value distinctly from `tension_compression`/`tri_adjust` was confirmed as its own separate configuration — GAN's own 'quantifiable adjustment... without the need for any tools' language (2018, GAN356 X) suggests tool_free and tension_compression may co-apply to the same mechanism rather than being mutually exclusive choices; not a vocab conflict, just a note that one GAN mechanism may need two vocab facts if the schema allows only one adjustment_system value per variant."

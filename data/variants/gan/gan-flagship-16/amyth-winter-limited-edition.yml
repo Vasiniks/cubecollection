@@ -1,0 +1,37 @@
+# variant: gan-flagship-16--amyth-winter-limited-edition
+# Pass 4. "Amyth - GAN16 Maglev MAX Winter Limited Edition" — a named seasonal limited colourway
+# of GAN16 Maglev MAX (crystalline purple), found only in a cross-sell block on another GAN
+# product page. No dedicated product-page URL for Amyth was located this pass; existence and
+# description rest on that cross-sell citation alone at reduced confidence.
+id: gan-flagship-16--amyth-winter-limited-edition
+entity: variant
+model_id: gan-flagship-16
+name: "Amyth - GAN16 Maglev MAX Winter Limited Edition"
+scope_class: core
+edition:
+  designation: "MAX"
+  name: "Amyth"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: maglev
+colorway:
+  designation: "Amyth"
+  limited_name: "Amyth"
+  scheme: custom
+  body:
+    plastic_color_name: "crystalline purple"
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: uncertain
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+    note: "Named and described only in a cross-sell block on an unrelated GAN product page ('GAN i carry 4 Minions Edition'), not on a dedicated Amyth product page. GAN's own copy on that cross-sell block: 'Crafted in a crystalline purple design inspired by winter frost... Built on the flagship structure of the GAN16 Maglev MAX.'"
+  /colorway/body/plastic_color_name:
+    confidence: uncertain
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."

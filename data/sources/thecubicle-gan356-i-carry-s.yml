@@ -1,0 +1,20 @@
+# source: thecubicle-gan356-i-carry-s
+# TheCubicle's listing for GAN356 i Carry S, describing improved battery life over the original
+# i Carry — the succession evidence for i Carry -> i Carry S.
+id: thecubicle-gan356-i-carry-s
+entity: source
+kind: retailer
+title: "GAN356 i Carry S 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-i-carry-s-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230904013727/https://www.thecubicle.com/products/gan356-i-carry-s-3x3"
+excerpt: "The GAN356 i Carry S 3x3 is a new smart cube from the famous manufacturer. This one has an improved battery life, up to 330 hours of fun on a single battery! This smart cube does not charge, it uses a replaceable coin battery under the core that is easily replaceable."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'improved battery life, up to 330 hours' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. Does not use an explicit 'update to' sentence; the comparative battery-life figure (330h vs. the original's stated 280h) is the succession evidence relied on."
+status: sourced

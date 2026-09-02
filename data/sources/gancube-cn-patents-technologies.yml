@@ -1,0 +1,46 @@
+# source: gancube-cn-patents-technologies
+# GAN's own "Patented Technologies on Speedcubes" page (gancube.cn, GAN's CN-domestic official
+# site). Cited for GAN's own naming and description of the GES/GES+ tensioning system and the
+# GMS (GAN Magnetic System) interchangeable-magnet-capsule mechanism, and for GAN's own
+# "Limited Edition" navigation/category listing of named colourways (existence of names only;
+# this page does not date individual colourways or state which model each pairs with).
+#
+# No web-archive capture exists for this URL under either the /en/patents/ or /patents/ path
+# (checked via `npm run wayback -- list` for both on 2026-09-02; zero captures either way). The
+# live page was fetched directly on 2026-09-02 and is quoted below verbatim; preservation_method
+# is `excerpt` rather than `archive_url` for this reason, and the gap is recorded here rather
+# than silently worked around.
+id: gancube-cn-patents-technologies
+entity: source
+kind: manufacturer_official
+title: "Patented Technologies on Speedcubes – GANCube"
+publisher: "GANCUBE (gancube.cn)"
+url: "https://www.gancube.cn/en/patents/"
+preservation_method: excerpt
+excerpt: |-
+  "TECH | GES — The leading tech GAN Elasticity System (GES+), which consists of patented
+  numerical IPG and gan tension nut (GTN). The 0.6/0.8/1.0 3 gear distance, with 4 groups of
+  elastic force, to create 12 typical numerical mode, tuning elasticity becomes so easy and
+  accurate. Screw end needle-clip, lock on the nuts."
+
+  "TECH | GMS — Benefitted by the invention of GAN Magnetic System, magnet strengths can be
+  easily exchanged for the first time. The GMS consists of patented magnet slots and flash
+  magnet capsules, including 3 sets of magnet capsules and one non-magnet capsule. Within 30
+  seconds, you can exchange the magnet strength only by hand."
+
+  Also describes a "2nd Generation Honeycomb" contact-surface design and states GAN led
+  "positive 55°, reverse 30° corner cutting" as a speedcube-industry standard (a comparative/
+  superlative claim, tier 4, not relied on as a specification here).
+
+  Site navigation lists a "Limited Edition" category including (partial, as captured): Flora
+  Blue, Love Pink, Ever Green, Crystal Blue, Vita Cube, Antique Rhyme, GAN11 Kun, GAN12
+  Cheering, GAN12 Chan, GAN13 KUNLUN, GAN13 Coloré, GAN14 Maglev Galaxy, and further entries not
+  individually enumerated in this capture.
+preservation_note: "No web-archive capture exists for this URL (checked both /en/patents/ and /patents/ via `npm run wayback -- list --from 2016 --to 2026`, zero results either way, 2026-09-02). Fetched directly from the live page on 2026-09-02 and quoted verbatim above. Flagged as a standing preservation gap: this source cannot currently be archive_url-backed and should be re-attempted in a future session, or the excerpt above treated as the load-bearing copy if the live page is later altered or removed."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product/technology page, tier 1 for its own named technologies (GES, GES+, GMS) and for the existence of named colourways under its own 'Limited Edition' category. Not a dated, per-SKU listing — it establishes that these names are GAN-declared, not which model or year each pairs with. 'Corner-cutting... led by GANCUBE as a speedcube standard' is comparative marketing copy (tier 4) and is not treated as a specification."
+status: sourced

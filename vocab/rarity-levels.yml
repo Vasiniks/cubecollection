@@ -1,0 +1,28 @@
+# rarity-levels
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: rarity-levels, so the schema and this file cannot drift.
+
+id: rarity-levels
+description: "Qualitative rarity. No numeric score is stored anywhere in this archive."
+values:
+  - value: common
+    label: "Common"
+    description: "Widely produced and widely available."
+  - value: uncommon
+    label: "Uncommon"
+    description: "Produced normally but no longer easy to obtain."
+  - value: scarce
+    label: "Scarce"
+    description: "Hard to obtain; documented limiting factors."
+  - value: rare
+    label: "Rare"
+    description: "Seldom encountered."
+  - value: very_rare
+    label: "Very rare"
+    description: "Very seldom encountered."
+  - value: one_of_a_kind
+    label: "One of a kind"
+    description: "A unique or near-unique object."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

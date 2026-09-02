@@ -1,0 +1,29 @@
+# variant: gan-flagship-11--m-pro-frosted-black
+# Pass 4. "GAN11 M Pro Frosted (Black)" — second of four Versions on GAN's own GAN11 Series
+# listing, differing only by coating and body colour from the UV-coated tier.
+id: gan-flagship-11--m-pro-frosted-black
+entity: variant
+model_id: gan-flagship-11
+name: "GAN11 M Pro (Frosted, Black)"
+scope_class: core
+edition:
+  designation: "M Pro"
+  types: [standard]
+config:
+  coating: frosted
+  magnet_configuration: core_corner
+  adjustment_system: tension_compression
+colorway:
+  body:
+    plastic_color_name: "Black"
+status: stub
+attestations:
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]
+  /colorway/body/plastic_color_name:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]
+  /config/magnet_configuration:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history, thecubicle-cubicle-custom-gan11-m-pro-uv]

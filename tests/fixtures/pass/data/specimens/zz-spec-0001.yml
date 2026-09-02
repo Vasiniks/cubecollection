@@ -1,0 +1,24 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-spec-0001
+entity: specimen
+variant_id: zz-testbrand-tf-v1--flagship-uv
+private: true
+acquired: { value: "2021-07-02", precision: day, qualifier: exact }
+acquired_from: ZZ Test Retail
+acquired_price: { amount: 49.00, currency: USD, region: US }
+condition: excellent
+condition_note: Fixture condition note. Must never reach the public bundle.
+serial: ZZ-SERIAL-0001
+location: Fixture shelf
+notes: Private fixture note.
+measurements:
+  - quantity: weight_g
+    value: 61.4
+    unit: g
+    method: digital scale
+    measured_on: "2021-07-05"
+status: published

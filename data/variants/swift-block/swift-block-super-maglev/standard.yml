@@ -1,0 +1,18 @@
+# variant: swift-block-super-maglev--standard
+# Pass 4. The base configuration: dual magnetic rings, 71g, 55mm, built-in GES tension system
+# with 8 adjustable settings.
+id: swift-block-super-maglev--standard
+entity: variant
+model_id: swift-block-super-maglev
+name: "Swift Block 3x3 Super Maglev"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  adjustment_system: tension_only
+status: stub
+attestations:
+  /config/adjustment_system:
+    confidence: uncertain
+    sources: [gancube-swift-block-super-maglev-specifications]
+    note: "'Built-in GES Tension System with 8 Adjustable Settings' does not map cleanly onto one vocab value; tension_only used at reduced confidence."

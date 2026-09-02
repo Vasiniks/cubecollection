@@ -1,0 +1,16 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Trips rule 1 (schema), 13 (computed valuation) and 14 (numeric rarity score).
+# additionalProperties:false already makes these unrepresentable; rules 13 and 14 exist so
+# the refusal is stated in the tooling's own voice and not only as a generic schema error.
+
+id: zz-bad-forbidden
+entity: variant
+model_id: zz-bad-model
+name: ZZ Bad Forbidden Fields
+scope_class: core
+current_value: { amount: 120, currency: USD }
+rarity:
+  level: rare
+  basis: Fixture basis.
+  score: 87
+status: drafted

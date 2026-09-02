@@ -1,0 +1,23 @@
+# variant: gan-flagship-13--uv-coated
+# Pass 4. "GAN13 Maglev, UV Coated" — one of three Versions sold from GAN's own single GAN13
+# listing. Magnetic Repulsion Drive (MagLev) and Magnetic Attraction Drive (30 degree+ auto
+# aligning) per GAN's own copy.
+id: gan-flagship-13--uv-coated
+entity: variant
+model_id: gan-flagship-13
+name: "GAN13 Maglev (UV Coated)"
+scope_class: core
+edition:
+  designation: "Maglev"
+  types: [standard]
+config:
+  maglev: maglev
+  coating: uv
+status: stub
+attestations:
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan13-maglev-product]
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan13-maglev-product]

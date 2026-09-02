@@ -1,0 +1,39 @@
+# variant: gan-flagship-15--newblack-uv-coated
+# Pass 4. "GAN15 NewBlack_UV Coated" — fourth of four Versions on GAN's own single GAN15
+# listing. "NewBlack" is GAN's own name for car-grade black internal plastic (a materials
+# distinction, not a coating); GAN's own CN site catalogues "GAN15 黑核" (GAN15 Black Core)
+# as its own separate entry alongside "GAN15 Maglev", corroborating this is treated as a
+# distinct line, not just a retailer bundling choice.
+id: gan-flagship-15--newblack-uv-coated
+entity: variant
+model_id: gan-flagship-15
+name: "GAN15 NewBlack (UV Coated)"
+aliases:
+  - { name: "GAN15 黑核 (GAN15 Black Core)", source: gancube-cn-patents-technologies }
+scope_class: core
+edition:
+  designation: "NewBlack"
+  types: [standard]
+config:
+  coating: uv
+  maglev: none
+  magnet_configuration: adjustable
+  magnet_strength: "Extra swappable corner/core magnets included, per TheCubicle."
+  materials:
+    plastic: "Car-grade black plastic internals ('NewBlack'), per TheCubicle."
+status: stub
+attestations:
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan15-product]
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-gan15-uv-3x3-newblack]
+    note: "A customer review independently corroborates: 'i own both a gan 15 maglev UV (white internals) and a newblack (springs)'. Held probable since the primary body copy does not itself use the word 'spring' for this SKU."
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-gan15-uv-3x3-newblack]
+  /config/materials/plastic:
+    confidence: probable
+    sources: [thecubicle-gan15-uv-3x3-newblack]
+    note: "TheCubicle: 'The NewBlack features car-grade black plastic in its internals, giving the cube a smooth, crisp, and durable feel with less friction and noise.'"

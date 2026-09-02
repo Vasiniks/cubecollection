@@ -1,0 +1,19 @@
+# manufacturer-kinds
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: manufacturer-kinds, so the schema and this file cannot drift.
+
+id: manufacturer-kinds
+description: "What kind of organisation a manufacturer record represents."
+values:
+  - value: manufacturer
+    label: "Manufacturer"
+    description: "An independent brand that produces cubes."
+  - value: sub_brand
+    label: "Sub-brand"
+    description: "A brand operating under a parent manufacturer."
+  - value: service
+    label: "Service"
+    description: "An organisation that modifies or sets up cubes produced by others."
+  - value: collaborator
+    label: "Collaborator"
+    description: "An organisation credited on a collaboration edition without producing it."

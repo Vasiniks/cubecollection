@@ -1,0 +1,23 @@
+# source: gancube-gan12-ui-sp-product
+# GAN's own product page for "GAN12 ui SP Smart Cube", sold at its own dedicated URL, first
+# archived after GAN12 ui FreePlay had already existed for some months — a lead (not resolved
+# this pass) on whether SP replaced FreePlay or the two were sold in parallel; a later capture
+# of the FreePlay URL (2026-02-08) shows FreePlay still resolving well after SP's own first
+# capture, which argues against a simple like-for-like replacement.
+id: gancube-gan12-ui-sp-product
+entity: source
+kind: manufacturer_official
+title: "GAN12 ui SP Smart Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan12-ui-sp-3x3-smart-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250731040923/https://www.gancube.com/products/gan12-ui-sp-3x3-smart-speed-cube"
+excerpt: "Page title as captured 2025-07-31: \"GAN12 ui SP Smart Cube | GANCUBE Official Website\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to resolve with this exact title. This capture is not part of gancube.com's November 2024 archival event, so it is treated as a genuine dating floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for existence, naming, and dating floor. Body copy beyond the title was not extracted this pass."
+status: sourced

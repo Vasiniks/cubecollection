@@ -1,0 +1,17 @@
+# price-condition
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: price-condition, so the schema and this file cannot drift.
+
+id: price-condition
+description: "Condition of the item a price applied to."
+values:
+  - value: new
+    label: "New"
+  - value: sealed
+    label: "Sealed"
+  - value: used
+    label: "Used"
+  - value: incomplete
+    label: "Incomplete"
+  - value: unknown
+    label: "Unknown"

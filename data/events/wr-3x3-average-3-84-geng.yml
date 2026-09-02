@@ -1,0 +1,24 @@
+# event: wr-3x3-average-3-84-geng
+
+id: wr-3x3-average-3-84-geng
+entity: event
+name: "XuanYi Geng's 3.84-second 3x3 world-record average"
+kind: milestone
+date:
+  value: "2026"
+  precision: year
+  qualifier: exact
+  note: "Year taken from the competition name 'Beijing Winter 2026' as given by the source. The season word is part of the competition's name, so precision stays at year."
+notes: |-
+  Set at the competition the source names as "Beijing Winter 2026", and described there as the
+  then-current world record. One of two records commemorated by the GAN16 MagLev MAX UV Dual-WR
+  Limited Edition.
+status: drafted
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+  /date:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]

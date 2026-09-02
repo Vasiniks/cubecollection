@@ -1,0 +1,26 @@
+# source: gancube-gan-i4-smart-cube-product
+# GAN's own current product page for "GAN i4", the current generation of the i-series smart-cube
+# line (the "356" prefix dropped from this generation's own name). Cited for existence, naming,
+# and confirmation that MagLev is offered as one of this model's own hardware features/options.
+id: gancube-gan-i4-smart-cube-product
+entity: source
+kind: manufacturer_official
+title: "GAN i4 | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan-i4-smart-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260811020031/https://www.gancube.com/products/gan-i4-smart-cube"
+excerpt: |-
+  Overview feature list (verbatim headings): "Omni-directional Smart Ball Core", "Smart
+  Dual-Core Endurance Mode", "Omni-support Spherical Orbit", "Magnetic Levitation", "10 min
+  Quick Charging", "72 Handfeels". "Records in Core PBs Solid Rock — Backed up with Zero-Loss
+  Sensing, Omni-Motion Monitor, and other advanced technologies, the smart ball core captures
+  all of your speeding indicator data..."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the feature-heading list and the 'smart ball core' paragraph verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own naming and features. No explicit launch date or generation-ordinal statement was found on this page; dating for GAN i4 in this pass rests on retailer archive-capture evidence instead (see model attestation)."
+status: sourced

@@ -1,0 +1,148 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "designation": {
+      "type": "string",
+      "description": "The manufacturer's own name for this colourway, verbatim. Never replaced by a normalised value."
+    },
+    "designation_native": {
+      "type": "string"
+    },
+    "limited_name": {
+      "type": "string"
+    },
+    "scheme": {
+      "type": "string",
+      "x-vocab": "colorway-scheme"
+    },
+    "application": {
+      "type": "string",
+      "x-vocab": "colorway-application"
+    },
+    "body": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "plastic_color_name": {
+          "type": "string",
+          "description": "Descriptive colour term as sourced."
+        },
+        "plastic_color_normalized": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "translucency": {
+          "type": "string",
+          "x-vocab": "colorway-translucency"
+        },
+        "finish": {
+          "type": "string",
+          "x-vocab": "colorway-finish"
+        }
+      }
+    },
+    "faces": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "face": {
+            "type": "string",
+            "x-vocab": "face-notation"
+          },
+          "color_name": {
+            "type": "string"
+          },
+          "color_normalized": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "material": {
+            "type": "string",
+            "x-vocab": "face-materials"
+          },
+          "finish": {
+            "type": "string",
+            "x-vocab": "colorway-finish"
+          }
+        },
+        "required": [
+          "face"
+        ]
+      },
+      "description": "Per-face description in standard cube notation."
+    },
+    "piece_colors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "piece_class": {
+            "type": "string",
+            "x-vocab": "piece-classes"
+          },
+          "color_name": {
+            "type": "string"
+          },
+          "color_normalized": {
+            "type": "string",
+            "pattern": "^#[0-9a-fA-F]{6}$"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "piece_class"
+        ]
+      },
+      "description": "Only where pieces differ from the face scheme."
+    },
+    "pattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "x-vocab": "colorway-pattern"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "logo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "present": {
+          "type": "boolean"
+        },
+        "placement": {
+          "type": "string",
+          "x-vocab": "logo-placement"
+        },
+        "treatment": {
+          "type": "string",
+          "x-vocab": "logo-treatment"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "completeness": {
+      "type": "string",
+      "x-vocab": "colorway-completeness",
+      "x-derived": true,
+      "description": "Derived by the build from what is populated. Do not author."
+    }
+  },
+  "description": "Expanded so the archive describes a colourway rather than labelling it. Every field is optional; an unpopulated colourway is an honest one.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/common/colorway.schema.json",
+  "title": "Full colourway description"
+}

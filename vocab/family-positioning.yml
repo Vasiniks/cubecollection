@@ -1,0 +1,22 @@
+# family-positioning
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: family-positioning, so the schema and this file cannot drift.
+
+id: family-positioning
+description: "Where a product family sat in its manufacturer's range."
+values:
+  - value: flagship
+    label: "Flagship"
+    description: "The manufacturer's leading line."
+  - value: mainline
+    label: "Mainline"
+    description: "A standard line below the flagship."
+  - value: budget
+    label: "Budget"
+    description: "A low-cost line."
+  - value: smart
+    label: "Smart"
+    description: "A line of electronic or app-connected cubes."
+  - value: special
+    label: "Special"
+    description: "A line outside the regular range."

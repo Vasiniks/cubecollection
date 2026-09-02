@@ -1,0 +1,20 @@
+# variant: gan-356-m-e--standard
+# Pass 4. GAN356 M E: honeycomb-touchface, 4-elasticity/3-center-travel adjustment, full-bright
+# matte finish.
+id: gan-356-m-e--standard
+entity: variant
+model_id: gan-356-m-e
+name: "GAN356 M E"
+aliases:
+  - { name: "GAN356 Me", source: gancube-gan17-magdrive-product }
+scope_class: core
+edition:
+  types: [standard]
+config:
+  coating: matte
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan-356-m-e-3x3]
+    note: "'a full-bright, matte finish.'"

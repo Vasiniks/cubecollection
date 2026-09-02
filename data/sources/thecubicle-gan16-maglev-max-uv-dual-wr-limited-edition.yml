@@ -1,0 +1,30 @@
+# source: thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition
+# TheCubicle's listing for the "GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition)", commemorating
+# Team GAN speedcuber XuanYi Geng's two 3x3 World Records. The only source located this pass
+# stating a run size for a GAN limited edition alongside the Max Park Signature Edition.
+id: thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition
+entity: source
+kind: retailer
+title: "GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3-dual-wr-limited-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260215043535/https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3-dual-wr-limited-edition"
+excerpt: |-
+  "Celebrate world-record-shattering speed with the GAN16 MagLev MAX UV 3x3 (Dual-WR Limited
+  Edition)! Crafted to commemorate Team GAN's superstar XuanYi Geng, this exclusive release
+  honors his iconic 3x3 World Records — a 3.05s single (Shenyang Spring 2025) and the current
+  World Record 3.84s average (Beijing Winter 2026). Each unit comes in a dual-WR laser-engraved
+  collector's case proudly displaying Geng's Chinese signature and both record times. Also
+  included is a commemorative postcard featuring his official WR scrambles, signed by Geng
+  himself — the perfect centerpiece for any serious cube collection. Limited to just 1,111
+  units worldwide, the GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition) is your chance to own
+  a piece of speedcubing history." Listed price (Stickerless option): $84.99 USD.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain '1,111 units worldwide', the World Record figures, and the $84.99 price verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. The run size (1,111 units) and the World Record figures are stated as specific facts, not comparative marketing language, and are treated as admissible under RESEARCH_SPEC §3.3. No numbering scheme (individually numbered units) is stated for this edition, unlike the GAN 356 Air UM Max Park Signature Edition's numbered VIP cards."
+status: sourced

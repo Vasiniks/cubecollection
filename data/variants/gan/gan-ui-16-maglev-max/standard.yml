@@ -1,0 +1,55 @@
+# variant: gan-ui-16-maglev-max--standard
+# Pass 4.5 cleanup. Created alongside its model, which Pass 4 could not create because model
+# creation is the model-researcher's lane. Claims only existence and naming; the source is
+# tier 1 for those and was explicitly not used for any specification claim.
+id: gan-ui-16-maglev-max--standard
+entity: variant
+model_id: gan-ui-16-maglev-max
+name: "GAN16 ui Maglev MAX"
+scope_class: core
+edition:
+  designation: "MAX"
+  types: [standard, smart]
+config:
+  maglev: maglev
+smart:
+  is_smart: true
+status: stub
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [gancube-gan16-ui-maglev-max-product]
+    note: "GAN's own product page title, verbatim."
+  /edition/designation:
+    confidence: probable
+    sources: [gancube-gan16-ui-maglev-max-product]
+    note: "\"MAX\" is carried in the product name. Whether GAN uses MAX as a tier designation or as part of the model name is one of the thin-tier-name questions staged in gan-pass4-boundary-questions.yml."
+  /edition/types:
+    confidence: probable
+    sources: [gancube-gan16-ui-maglev-max-product]
+    note: "\"smart\" from the product's placement in GAN's own Smart Cubes navigation under the GAN ui Series heading."
+  /config/maglev:
+    confidence: probable
+    sources: [gancube-gan16-ui-maglev-max-product]
+    note: "From the product name only. GAN names MagLev in the title; no specification page was captured this pass. Probable, not confirmed — a name is weaker evidence than a spec table."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [gancube-gan16-ui-maglev-max-product]
+  /config/magnet_configuration:
+    confidence: unknown
+  /config/core_system:
+    confidence: unknown
+  /config/coating:
+    confidence: unknown
+  /config/adjustment_system:
+    confidence: unknown
+  /pricing/msrp:
+    confidence: unknown
+  /availability/production_status:
+    confidence: unknown
+  /rarity/level:
+    confidence: unknown
+  /legality/wca_status:
+    confidence: unknown
+    note: "Smart cubes raise a genuine WCA-eligibility question that this archive has not researched for any smart product. Recorded as unknown across the smart lines rather than assumed either way."

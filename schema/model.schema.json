@@ -1,0 +1,217 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "model"
+    },
+    "family_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "manufacturer_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "scope_class": {
+      "type": "string",
+      "x-vocab": "scope-class"
+    },
+    "scope_justification": {
+      "type": "string",
+      "description": "Required when scope_class is conditional."
+    },
+    "scope_decided_by": {
+      "type": "string"
+    },
+    "scope_decided_on": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "generation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "ordinal": {
+          "type": "integer"
+        },
+        "basis": {
+          "type": "string",
+          "x-vocab": "generation-basis"
+        }
+      },
+      "required": [
+        "label",
+        "basis"
+      ]
+    },
+    "announced": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "released": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "designer": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+        "description": "Person id."
+      }
+    },
+    "specs": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "size_mm": {
+          "type": "number",
+          "x-critical": true
+        },
+        "weight_g": {
+          "type": "number",
+          "x-critical": true
+        },
+        "shape": {
+          "type": "string",
+          "x-vocab": "shape"
+        },
+        "core_system": {
+          "type": "string",
+          "x-vocab": "core-systems",
+          "x-critical": true
+        },
+        "maglev": {
+          "type": "string",
+          "x-vocab": "maglev",
+          "x-critical": true
+        },
+        "magnet_architecture": {
+          "type": "string",
+          "x-vocab": "magnet-configurations",
+          "x-critical": true
+        },
+        "adjustment_system": {
+          "type": "string",
+          "x-vocab": "adjustment-systems",
+          "x-critical": true
+        },
+        "materials": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "plastic": {
+              "type": "string"
+            },
+            "hardware": {
+              "type": "string"
+            },
+            "magnets": {
+              "type": "string"
+            }
+          }
+        },
+        "piece_count": {
+          "type": "integer"
+        }
+      },
+      "description": "Design-level defaults. A variant overrides only what differs."
+    },
+    "revisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          },
+          "label": {
+            "type": "string"
+          },
+          "approximate_period": {
+            "$ref": "https://cubecollection/schema/common/date.schema.json"
+          },
+          "changes": {
+            "type": "string"
+          },
+          "distinguishable_by": {
+            "type": "string"
+          },
+          "basis": {
+            "type": "string",
+            "x-vocab": "revision-basis"
+          }
+        },
+        "required": [
+          "id",
+          "label",
+          "basis"
+        ]
+      },
+      "description": "Undeclared mid-production changes. Not a separate file layer."
+    },
+    "geometry_profile_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Reserved. Unset in this phase.",
+      "x-reserved": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "https://cubecollection/schema/common/relationship.schema.json"
+      }
+    },
+    "former_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+        "description": "Immutable identifier."
+      }
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    },
+    "attestations": {
+      "$ref": "https://cubecollection/schema/common/attestation.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "family_id",
+    "manufacturer_id",
+    "name",
+    "scope_class",
+    "status"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/model.schema.json",
+  "title": "One design generation: a distinct mechanism and tooling"
+}

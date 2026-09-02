@@ -1,0 +1,18 @@
+# variant: gan-356-i-carry-s--standard
+# Pass 4. GAN356 i Carry S: improved battery life, up to 330 hours, replaceable coin battery, no
+# charging, per TheCubicle's own copy.
+id: gan-356-i-carry-s--standard
+entity: variant
+model_id: gan-356-i-carry-s
+name: "GAN356 i Carry S"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  battery: "Replaceable coin battery; up to 330 hours playtime, per TheCubicle."
+status: stub
+attestations:
+  /smart/battery:
+    confidence: probable
+    sources: [thecubicle-gan356-i-carry-s]

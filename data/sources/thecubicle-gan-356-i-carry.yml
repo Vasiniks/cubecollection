@@ -1,0 +1,21 @@
+# source: thecubicle-gan-356-i-carry
+# TheCubicle's listing for the first GAN356 i Carry (2021), calling it "GAN's newest magnetic
+# smart cube" and describing the coin-battery/no-gyroscope hardware philosophy that distinguishes
+# the whole i-carry lineage from the rechargeable, gyroscope-equipped i-series.
+id: thecubicle-gan-356-i-carry
+entity: source
+kind: retailer
+title: "GAN 356 i Carry – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-i-carry"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210405140138/https://www.thecubicle.com/products/gan-356-i-carry"
+excerpt: "The GAN 356 i Carry is GAN's newest magnetic smart cube. Instead of a charger, this cube is powered by replaceable coin batteries. At just $36.99, the GAN 356 i Carry is the most economical 3x3 smartcube on the market! Weighing 77g, this lightweight smart cube lasts for 280 hours of playtime (1 hour per day for 280 days). It has frosted plastic and beautiful pearly white internals. This model does not have a gyroscope."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'GAN's newest magnetic smart cube' and 'This model does not have a gyroscope' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, dating the product to (at latest) April 2021 and establishing the coin-battery/no-gyroscope design that distinguishes the whole i-carry line from i-series."
+status: sourced

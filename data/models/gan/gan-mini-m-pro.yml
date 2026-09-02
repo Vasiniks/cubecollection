@@ -1,0 +1,45 @@
+# model: gan-mini-m-pro
+# Pass 3 (model enumeration). A compact (53mm) spinoff of the numbered flagship line, borrowing
+# the "M Pro" tier name from GAN11 M Pro but sold under its own "Mini" name at its own size.
+# Recorded as its own model, placed within gan-flagship-series (rather than gan-354, whose
+# 54mm compact line uses the unrelated "354" numeral and a different naming lineage), on the
+# strength of the shared "M Pro" tier-name borrowing and TheCubicle's own explicit size claim.
+# A parallel smart sibling, "GAN Mini ui Free Play", is recorded separately under
+# gan-ui-series (gan-ui-mini-freeplay). See research/notes/models/gan-pass3.md — this
+# family-fit judgement call is flagged there for review, since no source found this pass
+# states which flagship generation's mechanism (if any specific one) GAN Mini M Pro is built
+# on.
+id: gan-mini-m-pro
+entity: model
+family_id: gan-flagship-series
+manufacturer_id: gan
+name: "GAN Mini M Pro"
+scope_class: core
+generation:
+  label: "Mini M Pro"
+  basis: community_convention
+announced:
+  value: "2022-07"
+  precision: month
+  qualifier: before
+description: |-
+  TheCubicle's own copy: "The GAN Mini M Pro 3x3 is a high performance speedcube in a small
+  form factor. At 53mm across, this is the smallest fully adjustable 3x3 to ever be released.
+  With 7 different magnetic settings and 16 different tension/compression settings..." The
+  53mm size is smaller than the standard ~56mm GAN11-series shell, necessarily implying
+  different tooling under DATA_MODEL §4.2's mould test, which is why this is recorded as its
+  own model rather than a variant of gan-flagship-11 despite the shared "M Pro" tier name.
+  "UV Coated" is recorded as a variant (coating) of this model.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan-mini-m-pro-3x3]
+    note: "TheCubicle's own earliest capture (2022-07-14) is a retailer-listing floor, not a manufacturer-stated date."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found; this is a spinoff/parallel product, not a member of the numbered flagship succession itself, so no ordinal is recorded."
+  /description:
+    confidence: probable
+    sources: [thecubicle-gan-mini-m-pro-3x3]
+    note: "'53mm' and 'smallest fully adjustable 3x3 to ever be released' — the size figure is treated as an admissible specification (tier 2); the superlative claim is retailer marketing copy (tier 4 for that specific claim per RESEARCH_SPEC §3.3) and is not relied upon as fact, only quoted."

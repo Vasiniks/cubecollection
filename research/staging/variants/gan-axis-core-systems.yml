@@ -1,0 +1,85 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN's core-mechanism axis (config.core_system, vocab/core-systems.yml: standard | ball_core |
+  dual_adjustment | tri_layer | other), and whether GAN ever used a literal ball-core design.
+  GAN's own site provides an unusually good tier-1 timeline for this axis (gancube.cn's "Core
+  Technology Evolution" page), used as the backbone of this file.
+
+findings:
+  - candidate: "IPG steel-plastic core, non-adjustable-by-user generations (v1-v4, 2015-2017) — maps to vocab `standard`"
+    likely_model: { name: "GAN356 (2015) through pre-2018 GAN356 variants", confidence: confirmed }
+    aliases: ["Steel-Plastic IPG Core"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/gancubes-core-technology/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"2015-2017 – Steel-Plastic IPG Core — GAN holds significant expertise in this essential technology, having developed the integrated molded steel-plastic IPG core for the GAN356 since its initial application in 2015... By 2017, the IPG core had seen five iterations (IPG v1 through v5), each generation improving in verticality and stability.\""
+    open_questions:
+      - "This tier-1 source dates IPG v1-v5 to 2015-2017, but v5 is documented on retail pages (see gan356-x-ipg-v5 finding elsewhere) as still shipping as late as the GAN 356 X (2018-2019 era). Either the IPG version number and the calendar year are not tightly coupled (a version can ship for years after introduction — most likely explanation), or there is a dating conflict. Not adjudicated here."
+
+  - candidate: "Quantifiable adjustment IPG core — maps to vocab `dual_adjustment` or `tri_layer`"
+    likely_model: { name: "GAN356 X (2018) onward; GAN356 XS (2019) upgraded 'wing-shaped' version; GAN 11 M Pro reuses the GAN356 XS core", confidence: confirmed }
+    aliases: ["dual adjustment core", "wing-shaped quantifiable adjustment core"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/gancubes-core-technology/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"2018 – Quantifiable Adjustment IPG Core — In 2018, the GAN356 X introduced the world's first quantifiable adjustment system core — the quantifiable adjustment steel-plastic IPG. This groundbreaking system enables adjustments to compression and axial distance without the need for any tools. Following this, in 2019, the GAN356 X S was launched, featuring an upgraded wing-shaped quantifiable adjustment core that bolstered both verticality and stability even further.\""
+      - url: "https://www.thecubicle.com/products/cubicle-custom-gan-11-m-pro-3x3-soft-texture-coated"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN 11 M Pro features the same dual adjustment system as the popular GAN 356 XS. Use the included adjustment tool to set elasticity to 6 different levels. Tension by hand to 4 different settings.\""
+      - url: "https://www.thecubicle.com/products/gan-356-x-v2"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"shares the same dual adjustment core as GAN's most recent flagship, the GAN 356 XS\" — confirms GAN 356 X V2, GAN 356 XS, and GAN 11 M Pro all share ONE core system across three separate named products/models, exactly the kind of shared-mechanism case geometry_profile (reserved, unpopulated) is meant for eventually."
+    open_questions: []
+
+  - candidate: "Smart ball core"
+    likely_model: { name: "GAN356 i (2019, first-generation smart cube) onward through the i-series smart line", confidence: confirmed }
+    aliases: ["ball core", "innovative smart ball core"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/gancubes-core-technology/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"2019 – Smart Ball Core — 2019 marked the inception of GAN smart cube technology, with the introduction of the first generation of smart speed cubes (GAN356 i) that debuted with an innovative smart ball core. This feature enabled the cube to connect with an app, allowing users to monitor the cube's status and record and analyze its data.\""
+    open_questions:
+      - "This IS a documented GAN ball-core design (vocab's `ball_core` value has a concrete example), but it is bound to the smart/electronic axis specifically (the ball houses the sensor). Needs confirmation whether any NON-smart GAN 3x3 ever used a literal ball core, or whether 'ball core' at GAN is smart-cube-exclusive terminology — see also the ambiguous 'Ball-Core' labelling on the mechanical GAN V100 noted below."
+
+  - candidate: "GAN V100's 'Ball-Core' magnetic core — possibly a naming collision with the smart ball core, not the same mechanism"
+    likely_model: { name: "GAN V100 MagLev", confidence: disputed }
+    aliases: []
+    confidence: uncertain
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-picube-20-magnet-ball-core-mod"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Already-cited source thecubicle-gan-v100-maglev-uv-picube-mod (data/sources/) titles this aftermarket product \"GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)\" — naming a third-party MOD that ADDS a 20-magnet ball core, implying the stock V100 does not ship with this specific ball-core configuration."
+      - url: "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3"
+        publisher: "TheCubicle (via WebSearch summary, not directly quoted this pass)"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Third-party retailer KewbzUK lists the stock product as \"GAN V100 Maglev (Magnetic, Maglev, UV, Ball-Core)\" in its own title, describing the core/magnet system as a 'ball-core' by name — contradicting the reading above that ball-core is PiCube-exclusive."
+    open_questions:
+      - "DISPUTED, recorded as such rather than picked: does the stock GAN V100 already ship with a (non-smart, mechanical) magnetic ball core, and PiCube's mod is a DIFFERENT/enhanced 20-magnet version of the same concept — or does 'ball-core' in KewbzUK's title loosely describe the spherical shape of GAN's ordinary magnetic core component (not a technical 'ball_core' vocab claim)? Not adjudicated. TheCubicle's own V100 product description was not captured verbatim this pass (only the PiCube-mod sibling page) — needs a direct fetch in pass 5 before deciding vocab core_system value for the stock V100."
+
+conflicts:
+  - claim: "Does the stock (unmodified) GAN V100 use a ball_core mechanism?"
+    candidates:
+      - { value: "No — ball-core is a PiCube aftermarket addition only", sources: ["https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-picube-20-magnet-ball-core-mod"], confidence: uncertain }
+      - { value: "Yes — third-party retailer titles the stock product as having a ball-core", sources: ["kewbz.co.uk product title, via WebSearch, not independently verified this pass"], confidence: uncertain }
+    note: "Neither candidate is strong enough to adjudicate; both are weak (one inference from a mod's existence, one from a single retailer's title). Left disputed pending a direct capture of GAN's own V100 spec page."
+
+not_found:
+  - "No GAN 3x3 using vocab's `tri_layer` value by that exact description was confirmed — the 'dual adjustment' core (tension + compression, two axes) found repeatedly may or may not extend to a documented third independent axis on any GAN model. Not found this pass."
+  - "GAN's own spec language for the current MagLev-generation core (GAN12 through GAN16, V100) beyond the 2021 'Magnetic Core 2.0' timeline entry was not captured in core_system-specific vocabulary terms this pass — see gan-axis-maglev.yml for what was found about MagLev specifically."

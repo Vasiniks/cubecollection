@@ -1,0 +1,64 @@
+# model: monster-go-352-m
+# Pass 3 (model enumeration). A compact-format (52mm) beginner-positioned Monster Go 3x3,
+# distinguished from the standard-size Monster Go 3x3 line by its own "352" numeral (matching
+# the size-in-the-name pattern already established for GAN's own "354" = 54mm compact line) and
+# by a genuinely different, GAN-confirmed physical size (52mm vs. the ~56mm implied standard).
+# A clear model-level (tooling) difference, not a configuration choice. See
+# research/notes/models/gan-pass3.md.
+id: monster-go-352-m
+entity: model
+family_id: monster-go-3x3
+manufacturer_id: monster-go
+name: "Monster Go 352 M"
+aliases:
+  - "Monster Go 352 M Magnetic Cube for Beginner"
+scope_class: core
+generation:
+  label: "352 M"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  GAN's own product page for Monster Go's sub-brand states a "Specifications" table directly:
+  "Size: 52x52x52 mm. Material: Plastic. Weight: 66g" (gancube-monster-go-352-m-specifications),
+  a compact format distinct from the ~56mm implied by the sibling "Monster Go Magnetic 3x3
+  Cube" and "Monster Go Standard 3x3 Cube" (neither of which states an explicit size, but
+  neither carries a size numeral in its own name the way "352" does). The product is titled
+  "for Beginner" and marketed as magnetic, though no source found this pass states an explicit
+  magnet count or arrangement for this specific model (contrast the standard-size "Monster Go
+  Magnetic 3x3 Cube", which states "48 magnets" directly).
+
+  `specs.size_mm` and `specs.weight_g` are populated directly from GAN's own spec table — the
+  only Monster Go or Swift Block product this pass found with a real manufacturer spec table
+  rather than pure marketing copy.
+status: drafted
+specs:
+  size_mm: 52
+  weight_g: 66
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [gancube-monster-go-352-m-specifications]
+  /specs/weight_g:
+    confidence: confirmed
+    sources: [gancube-monster-go-352-m-specifications]
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. GAN's page markets this as magnetic but states no magnet count or arrangement for this specific SKU."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found. No source states MagLev vs. conventional spring for this budget line; conventional spring is plausible for a sub-$15 product but not stated, so not assumed."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. The earliest located capture (2024-11-22) falls inside gancube.com's site-wide November 2024 archival event and is not treated as a launch-date floor, per the same caution already recorded on this pass's other Monster Go/Swift Block sources."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found; '352 M' is this archive's own use of GAN's own product-name numeral, not a stated generation count. No evidence was found this pass of a second Monster Go 352-series generation."
+  /description:
+    confidence: confirmed
+    sources: [gancube-monster-go-352-m-product, gancube-monster-go-352-m-specifications]

@@ -1,0 +1,27 @@
+# variant: gan-356-x--standard
+# Pass 4. GAN356 X, sold with GMS (interchangeable magnet capsules, user-swappable strength) and
+# an IPG-V5/GES V3 tension system per TheCubicle's own listing. The IPG version-number question
+# (was an "IPG v4" ever sold as its own SKU?) is left as a `model.revisions[]` question on the
+# model record, not split into a separate variant, since no source found this pass confirms an
+# earlier version was independently sold.
+id: gan-356-x--standard
+entity: variant
+model_id: gan-356-x
+name: "GAN356 X"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: adjustable
+  magnet_strength: "GMS (GAN Magnetic System): 3 sets of interchangeable magnet capsules plus one non-magnet capsule, user-swappable by hand in under 30 seconds, per GAN's own copy."
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /config/magnet_configuration:
+    confidence: confirmed
+    sources: [gancube-cn-patents-technologies, thecubicle-gan356-x-ipg-v5]
+    note: "Two independent tier sources agree: GAN's own technology page describes GMS directly; TheCubicle's own listing for this exact SKU independently confirms 'a set of interchangeable magnetic capsules.'"
+  /config/adjustment_system:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+    note: "GAN's own technology-history page: 'the world's first quantifiable adjustment system core... enables adjustments to compression and axial distance without the need for any tools.'"

@@ -1,0 +1,40 @@
+# variant: gan-356-air-s--love-pink-2018
+# Pass 4. "GAN356 Air S M Love Pink" (2018) — a named limited colourway of the magnetized "S M"
+# (SM) tier. Evidenced solely by GAN's own archived "For display only, not for sale" museum
+# page, preserved by GAN itself as a historical record rather than a live listing — read as
+# confirmation the colourway existed and was sold in 2018, and as discontinued by the time of
+# capture, not as evidence of exact release/discontinuation dates.
+id: gan-356-air-s--love-pink-2018
+entity: variant
+model_id: gan-356-air-s
+name: "GAN356 Air S M Love Pink"
+scope_class: core
+edition:
+  designation: "SM"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+colorway:
+  designation: "Love Pink"
+  limited_name: "Love Pink"
+  scheme: custom
+availability:
+  production_status: discontinued
+  last_seen_available: { value: "2025-08", precision: month, qualifier: exact }
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-le-gan356-air-s-love-pink]
+  /edition/limited/is_limited:
+    confidence: confirmed
+    sources: [gancube-le-gan356-air-s-love-pink]
+    note: "Page's own title: '2018 Limited Edition GAN356 Air S M Love Pink'."
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."
+  /availability/production_status:
+    confidence: probable
+    sources: [gancube-le-gan356-air-s-love-pink]
+    note: "GAN's own archived page is a non-purchasable ($0.00, permanently 'Sold Out') display-only record as of the 2025-08-11 capture, read as confirmation of discontinuation by that date; the true discontinuation date (likely circa 2018-2019) is not stated by any source found this pass."

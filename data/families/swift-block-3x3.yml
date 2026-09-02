@@ -1,0 +1,52 @@
+# family: swift-block-3x3
+# Pass 2 (family enumeration). Swift Block's 3x3 cube line, sold from a dedicated GAN
+# storefront collection under the swift-block sub-brand. See
+# research/notes/models/gan-pass2.md.
+
+id: swift-block-3x3
+entity: family
+manufacturer_id: swift-block
+name: "Swift Block 3x3"
+aliases:
+  - "Swift Block 355"
+introduced:
+  value: "2023"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  Swift Block's 3x3 cube line, sold from a GAN storefront collection ("Swift Block 3x3 Speed
+  Cube") under the swift-block sub-brand — the only 3x3 product category found for this
+  sub-brand this pass (its other known line, wiSlide, is a sliding-block puzzle, out of scope).
+  Models found this pass: "Swift Block 355S Magnetic Cube" ($12.99) and "Swift Block 355 Maglev"
+  ($18.99), plus a later (2026) product, "Swift Block 3x3 Super Maglev", found at a different
+  URL that drops the "355" numeral from its own title — a possible naming-convention shift for
+  pass 3 to record.
+
+  `positioning: budget` is the archive's own inference from price point (roughly $13-19 across
+  the models found, well below any GAN-branded 3x3), not a manufacturer self-description — the
+  355S's own product copy in fact pushes back against a budget framing ("Unlike typical budget
+  cubes, it incorporates an advanced mechanism previously reserved for premium models priced
+  over $20"), which is marketing copy about comparative performance, not a positioning
+  statement, and is not treated as overriding the objective price evidence.
+
+  `introduced` is inferred from Swift Block's own founding as a sub-brand (2023, per GAN's
+  brand-story page, already cited on data/manufacturers/swift-block.yml: "Fashionable puzzle
+  brand, Swift Block, started to hit the market" in 2023) on the reasoning that 3x3 cubes are
+  the only product category found for this sub-brand, so its market debut and this family's
+  introduction plausibly coincide — recorded at reduced confidence because no source states
+  this directly for the 3x3 line specifically.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [gancube-collections-swift-block-3x3]
+    note: "Inferred from price point; see description for the tension with the product's own marketing copy."
+  /introduced:
+    confidence: uncertain
+    sources: [gancube-brand-story-about-us]
+    note: "Bridges two distinct facts (the sub-brand's stated 2023 market debut, and this specific family's introduction) without a source stating them as the same event. See description."
+  /aliases:
+    confidence: probable
+    sources: [gancube-collections-swift-block-3x3]

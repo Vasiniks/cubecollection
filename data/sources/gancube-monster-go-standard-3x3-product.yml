@@ -1,0 +1,21 @@
+# source: gancube-monster-go-standard-3x3-product
+# GAN's own product page for the "Monster Go Standard 3x3 Non-Magnetic Puzzle Cube" — the
+# entry-level, non-magnetic Monster Go 3x3, distinguished from the magnetic models by its own
+# page title.
+id: gancube-monster-go-standard-3x3-product
+entity: source
+kind: manufacturer_official
+title: "Monster Go Standard 3x3 Non-Magnetic Puzzle Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-standard-3x3-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241112083851/https://www.gancube.com/products/monster-go-standard-3x3-speed-cube"
+excerpt: "Page title as captured 2024-11-12: \"Monster Go Standard 3x3 Non-Magnetic Puzzle Cube | GANCUBE Official Website\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain this exact title. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page for its own sub-brand, tier 1 for naming and existence. 'Non-Magnetic' in the page's own title is the direct evidence this pass relies on to distinguish this model from the magnetic Monster Go 3x3 line."
+status: sourced

@@ -1,0 +1,45 @@
+# model: gan-356-x-v2
+# Pass 3 (model enumeration). TheCubicle: "GAN 356 X V2 is GAN's newest update to the famous
+# GAN 356 X... Slightly lighter than its predecessor" — explicit succession language, treated
+# as a new model on the strength of the version-number signal (DATA_MODEL §4.2: "a
+# manufacturer's version number is a strong signal about design change") even though it reuses
+# the GAN356 XS core rather than introducing a new one. See research/notes/models/gan-pass3.md.
+id: gan-356-x-v2
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 X V2"
+scope_class: core
+generation:
+  label: "X V2"
+  ordinal: 5
+  basis: manufacturer_declared
+announced:
+  value: "2020-08"
+  precision: month
+  qualifier: before
+description: |-
+  Named successor to GAN356 X ("GAN's newest update to the famous GAN 356 X... slightly lighter
+  than its predecessor"), matte-finished, reusing GAN356 XS's dual-adjustment core rather than
+  debuting a new one of its own. Recorded as its own model on the strength of the explicit "V2"
+  naming and "predecessor" language rather than treated as a variant of XS, per DATA_MODEL
+  §4.2's guidance that a version number is strong (if not conclusive) evidence of a design
+  change.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan-356-x-v2]
+    note: "TheCubicle's earliest capture of this listing is 2020-08-12 (tier 2); a floor, not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-gan-356-x-v2]
+    note: "GAN's own use of the 'V2' numeral is the manufacturer-declared naming signal relied on; the retailer copy corroborates but is not itself the manufacturer's statement."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-gan-356-x-v2]
+relationships:
+  - type: succeeds
+    target: gan-356-x
+    target_entity: model
+    note: "TheCubicle: 'GAN's newest update to the famous GAN 356 X... slightly lighter than its predecessor.'"

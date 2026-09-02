@@ -1,0 +1,32 @@
+# source: gancube-gan-v100-leap-year-of-the-horse-product
+# GAN's own current product page for "GAN V100 Leap Year of the Horse" — the primary evidence
+# that GAN V100 Leap uses a spring-based (non-MagLev) mechanism, distinct from the base "GAN
+# V100"/"GAN v100 Maglev" model. Primary evidence for the gan-v100-leap model record.
+id: gancube-gan-v100-leap-year-of-the-horse-product
+entity: source
+kind: manufacturer_official
+title: "GAN V100 Leap Year of the Horse | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan-v100-leap-year-of-the-horse"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260228151244/https://www.gancube.com/products/gan-v100-leap-year-of-the-horse"
+excerpt: |-
+  "The GAN V100 Leap Year of the Horse is a 55mm magnetic speed cube built for stable,
+  controlled performance. It features a spring-based GES system (no maglev) for a more
+  grounded and consistent turning feel. With 64 magnets, a lightweight 64g build, and a refined
+  frosted finish, it delivers reliable alignment and smooth control, finished with a
+  distinctive Chinese New Year special design." FAQ: "The GAN V100 Leap focuses on stable,
+  grounded turning thanks to its spring-based GES system and magnetic alignment... If you
+  prefer a faster, floating feel, GAN's Maglev version might suit you better." A second FAQ
+  entry states the cube weighs "62 grams" (the body copy above states "64g"; both figures
+  appear verbatim on this same page and are not reconciled by any source found this pass). Site
+  navigation's own "3x3" listing shows "GAN V100 Leap Year of the Horse" and "GAN V100" as two
+  separate entries. Regular/sale price both $29.99.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the product description, FAQ text, and nav listing verbatim, including the unreconciled 62g/64g weight discrepancy."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own specifications (55mm, spring-based GES, 64 magnets). The page's own copy is internally inconsistent on weight (62g in one FAQ answer, 64g in the main description); recorded as an unresolved internal discrepancy rather than picking one figure."
+status: sourced

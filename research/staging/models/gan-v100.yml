@@ -1,0 +1,60 @@
+staged_by: model-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN V100's deeper identity question, left open after pass 2 resolved the narrower boundary
+  question of whether V100 belongs inside the gan-flagship-series family (it does not — see
+  data/families/gan-v100.yml for that resolved call and its evidence). What remains genuinely
+  unresolved and is staged here for pass 3: what "V100" denotes, why it exists as a separate
+  line launched in the same general period as GAN17, whether it will receive further numbered
+  generations (a "V200"?) or was a one-off, and whether any of its sub-models (V100, V100 Leap,
+  V100 MagLev) should themselves be split further under DATA_MODEL §4.2.
+
+findings:
+  - candidate: "GAN V100 — origin and naming"
+    aliases: ["GAN v100 Maglev", "GAN V100 Leap", "GAN V100 Leap Year of the Horse", "GAN V100 Maglev Minions Edition"]
+    confidence: uncertain
+    evidence:
+      - url: "https://www.gancube.com/products/gan-v100-3x3-maglev-cube"
+        archive_url: "https://web.archive.org/web/20251024004729/https://www.gancube.com/products/gan-v100-3x3-maglev-cube"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Page banner: 'GAN v100 Maglev is Available Now!' Site navigation breadcrumb for this product: 'Advanced Series'. The same page's surrounding navigation is dense with '10 Years'-branded products (GAN251 M Leap Ten Years Grand Gift Set, GAN251 M Air Ten Years Classic Gift Set, GANCUBE Ten Years Set Collection, GAN330 Keychain Ten Years Edition), consistent with a period when GAN was marketing a 10th-anniversary theme, though no source found this pass states that V100 itself is an anniversary product or that '100' in its name refers to a decade."
+      - url: "https://www.gancube.cn/gan-v100/"
+        archive_url: "https://web.archive.org/web/20251109225643/https://www.gancube.cn/gan-v100/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Nav categorises 'GAN V100' under '磁力系列' (Magnetic Series), not '旗舰魔方' (Flagship Cube)."
+    open_questions:
+      - "Does '100' in 'V100' refer to GAN's 10th anniversary (2024, per GAN's own 2014 founding date), a version/model number unrelated to the anniversary, or something else? No source found this pass states an explicit meaning."
+      - "Is GAN V100 a one-off / limited-run special line, or the start of a new numbered succession parallel to the Flagship Series (11-17)? Only one 'V' number (V100) has been found; no 'V200' or similar was located in this pass, which is consistent with either reading."
+      - "TheCubicle's own copy (thecubicle-gan-v100-maglev-uv-3x3, already a canonical source) describes V100 as sharing 'GAN's advanced tension adjustment system—identical to the system found in the flagship GAN16'. Does this indicate V100 is mechanically a lower-cost derivative of the GAN16 design specifically (which, if the underlying mould/mechanism is identical, could bear on whether V100's own models are new designs under DATA_MODEL §4.2, or a repackaging of GAN16 internals under a new marketing name)? Needs a direct spec comparison in pass 3, not resolved from marketing copy alone."
+      - "GAN V100 Leap: does 'Leap' here carry the same meaning as the recurring 'Leap' tier word found elsewhere in GAN's catalogue this pass (GAN i4 Leap, GAN 251 M Leap — denoting 'magnetic, large-angle alignment, but not MagLev')? If so, 'GAN V100 Leap' vs 'GAN V100 MagLev' would be the same variant-level pairing pattern seen on GAN15 (UV/spring vs MagLev/Frosted) applied to the V100 line — a lead for pass 4, not confirmed here."
+
+not_found:
+  - "No GAN source found this pass explicitly frames GAN V100 as a successor to, or replacement for, any Flagship Series generation."
+  - "No GAN source found this pass explains what distinguishes GAN V100 from GAN17 MagDrive as a matter of product strategy (why sell both at once)."
+
+resolution_pass3:
+  date: "2026-09-02"
+  by: model-researcher
+  summary: >
+    The sub-model split question is resolved: two canonical models were created,
+    data/models/gan/gan-v100-maglev.yml ("GAN V100" / "GAN v100 Maglev") and
+    data/models/gan/gan-v100-leap.yml ("GAN V100 Leap"), on the strength of GAN's own product
+    copy stating the Leap version uses "a spring-based GES system (no maglev)" versus the base
+    version's MagLev mechanism, combined with the same separate-URL/no-combined-listing evidence
+    pattern already used to split gan-356-maglev from gan-356-m-e. No "GAN V100 MagLev" model
+    distinct from the base "GAN V100" was found — they are the same product; "GAN v100 Maglev"
+    is recorded as an alias on gan-v100-maglev.yml, not a third model.
+  still_open:
+    - "Why V100 exists as a line separate from GAN17/the numbered Flagship succession, and
+       whether GAN intends further V-numbered generations (a 'V200'), remains unestablished by
+       any source found in either pass. No second V-number was found in this pass's discovery
+       (npm run wayback -- prefix 'gancube.com/products/gan-v100' and 'gancube.cn/gan-v100'),
+       which is consistent with either a one-off line or an early, still-single-generation
+       succession."
+    - "The 62g vs. 64g weight discrepancy on GAN V100 Leap's own product page (both figures
+       appear verbatim on the same GAN-authored page) is unresolved; recorded honestly on the
+       model record rather than picking one."

@@ -1,0 +1,33 @@
+# variant: gan-v100-maglev--minions-edition
+# Pass 4. "GAN V100 Maglev Minions Edition" — part of a cross-line "Minions" collaboration theme
+# also sold on GAN16 ui Maglev MAX and GAN i4 (per GAN's own site navigation on this product's
+# page), read as a colourway/collaboration theme rather than a mechanism change.
+id: gan-v100-maglev--minions-edition
+entity: variant
+model_id: gan-v100-maglev
+name: "GAN V100 Maglev Minions Edition"
+scope_class: core
+edition:
+  name: "Minions Edition"
+  types: [collaboration, limited]
+  collaboration_name: "Minions"
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: maglev
+colorway:
+  designation: "Minions Edition"
+status: stub
+attestations:
+  /edition/collaboration_name:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+    note: "GAN's own naming of the collaboration line. Recorded as a name because the collaborator is a licensed property, which the schema cannot hold as a reference — see F8. collaboration_with stays empty rather than pointing at a fabricated entity."
+  /edition/name:
+    confidence: confirmed
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+  /edition/types:
+    confidence: probable
+    sources: [gancube-gan-v100-maglev-minions-edition-product]
+    note: "Site navigation groups this alongside 'GAN16 ui Maglev MAX Minions Edition' and 'GAN i4 Maglev Minions Edition' as a cross-line collaboration theme, not a per-product mechanism change; the collaborator entity itself (the Minions/Illumination IP holder) is not modelled as a manufacturer or person record in this pass — flagged as a gap."

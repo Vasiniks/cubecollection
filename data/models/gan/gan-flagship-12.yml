@@ -1,0 +1,61 @@
+# model: gan-flagship-12
+# Pass 3 (model enumeration). GAN's own product page states directly: "GAN12 Maglev is the
+# 12th generation of GANCUBE" — the single strongest manufacturer-declared generation-ordinal
+# statement found anywhere in this pass, and the anchor for treating the whole GAN11-17
+# succession as manufacturer-declared generation numbering. The same page's own "Versions"
+# selector sells "GAN12 M Leap" and "GAN12 Maglev" (crossed with UV/Frosted coating and a
+# Sticker Version) from ONE listing — confirming Leap-vs-Maglev is a variant-level
+# core/magnet-system choice within this one model, not two models. See
+# research/notes/models/gan-pass3.md.
+id: gan-flagship-12
+entity: model
+family_id: gan-flagship-series
+manufacturer_id: gan
+name: "GAN12"
+scope_class: core
+generation:
+  label: "12"
+  ordinal: 12
+  basis: manufacturer_declared
+announced:
+  value: "2021-12"
+  precision: month
+  qualifier: before
+released:
+  value: "2022"
+  precision: year
+  qualifier: before
+  note: "A lower bound, not a release date. The model must have existed by 2022 because a dated limited edition of it did. Recorded with qualifier 'before' rather than 'exact' so it is never mistaken for the launch."
+description: |-
+  GAN's own product page: "GAN12 Maglev is the 12th generation of GANCUBE and is the testimony
+  of an innovative mechanism: a magnetic tensioning system. Compared with traditional-springs
+  cubes, GAN12 Maglev used embedded magnets to replace traditional springs... The GAN12 M Leap
+  features GES Pro+ technology and weighs 61 grams, while the GAN12 Maglev uses the new
+  Magnetic GES system at 66 grams." M Leap (magnetic, large-angle alignment, springs) and
+  Maglev (magnetic repulsion replacing springs) are treated as variants of this one model, sold
+  from a single listing (gancube-gan12-maglev-product).
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [gancube-gan12-maglev-chan-le-product]
+    note: "Derived bound, not a stated date: GAN12 Maglev Chan, GAN's own 2022 Summer Limited Edition, dates the edition. A model cannot post-date its own limited edition, so this establishes 'no later than 2022'. The actual release date remains unresearched."
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan12-m-leap-3x3]
+    note: "TheCubicle's own earliest capture (2021-12-05) is a retailer-listing floor, not a manufacturer-stated launch date. This capture is not part of gancube.com's own November 2024 archival event (gancube.com's first archived GAN12 product-page capture, in that event, would otherwise falsely suggest a late-2024 launch)."
+  /generation/basis:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]
+    note: "GAN's own product page states this directly and explicitly: 'the 12th generation of GANCUBE.' The clearest manufacturer-declared generation-ordinal statement located anywhere in this pass."
+  /relationships/0:
+    confidence: uncertain
+    note: "Inferred from the sequential numbering GAN itself declares (11 then 12); no explicit 'successor to GAN11' sentence was found."
+  /description:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]
+relationships:
+  - type: succeeds
+    target: gan-flagship-11
+    target_entity: model
+    note: "Inferred from GAN's own sequential generation numbering ('the 12th generation of GANCUBE'); no explicit succession sentence naming GAN11 was found."

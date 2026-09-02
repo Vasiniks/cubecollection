@@ -1,0 +1,17 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-src-review
+entity: source
+kind: review
+title: ZZ reviewer, TF V1 assessment
+publisher: ZZ Review Channel
+url: https://example.invalid/zz-review
+preservation_method: excerpt
+excerpt: "Fixture excerpt long enough to carry a claim on its own without the page surviving."
+accessed: "2026-08-30"
+link_status: live
+last_checked: "2026-08-30"
+status: published

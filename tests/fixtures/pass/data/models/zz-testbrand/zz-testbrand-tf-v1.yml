@@ -1,0 +1,57 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-testbrand-tf-v1
+entity: model
+family_id: zz-testbrand-tf
+manufacturer_id: zz-testbrand
+name: ZZ Testbrand TF V1
+scope_class: core
+generation:
+  label: V1
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2021-04"
+  precision: month
+  qualifier: exact
+specs:
+  size_mm: 55.5
+  weight_g: 62
+  shape: standard
+  core_system: ball_core
+  maglev: maglev
+  magnet_architecture: dual_layer
+  adjustment_system: tension_compression
+  piece_count: 26
+revisions:
+  - id: rev-b
+    label: Second mould
+    basis: community_reported
+    approximate_period:
+      value: "2021-Q4"
+      precision: quarter
+      qualifier: circa
+    changes: Fixture revision, exercising revision_ref resolution.
+status: published
+attestations:
+  "/specs/size_mm":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/specs/weight_g":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/specs/core_system":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/specs/maglev":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/specs/magnet_architecture":
+    confidence: confirmed
+    sources: [zz-src-official]
+  "/specs/adjustment_system":
+    confidence: confirmed
+    sources: [zz-src-official]

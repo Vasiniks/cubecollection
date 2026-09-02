@@ -1,0 +1,29 @@
+# variant: gan-flagship-12--maglev-sticker-black-internal
+# Pass 4. "GAN12 Maglev Sticker Version (Black Internal)" — a stickered, black-internal-plastic
+# tier of GAN12 Maglev, sold from the same single GAN12 listing.
+id: gan-flagship-12--maglev-sticker-black-internal
+entity: variant
+model_id: gan-flagship-12
+name: "GAN12 Maglev Sticker Version (Black Internal)"
+scope_class: core
+edition:
+  designation: "Maglev"
+  name: "Sticker Version"
+  types: [standard]
+config:
+  maglev: maglev
+colorway:
+  application: stickered
+  body:
+    plastic_color_name: "Black"
+status: stub
+attestations:
+  /colorway/application:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]
+  /colorway/body/plastic_color_name:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]

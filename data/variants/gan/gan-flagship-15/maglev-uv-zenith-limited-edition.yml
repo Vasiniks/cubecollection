@@ -1,0 +1,33 @@
+# variant: gan-flagship-15--maglev-uv-zenith-limited-edition
+# Pass 4. "GAN15 Maglev + UV Zenith (Limited Edition)" — named on TheCubicle's own GAN15
+# Versions selector, and independently corroborated as a GAN-declared name by GAN's own
+# gancube.cn "Limited Edition" navigation category, which lists "GAN15 Maglev Zenith".
+id: gan-flagship-15--maglev-uv-zenith-limited-edition
+entity: variant
+model_id: gan-flagship-15
+name: "GAN15 Maglev UV (Zenith Limited Edition)"
+scope_class: core
+edition:
+  designation: "Maglev"
+  name: "Zenith"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: maglev
+  coating: uv
+colorway:
+  limited_name: "Zenith"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan15-uv-3x3-newblack, gancube-cn-patents-technologies]
+    note: "TheCubicle's own Versions selector names 'MagLev + UV Zenith (Limited Edition)'; GAN's own gancube.cn 'Limited Edition' navigation category independently lists 'GAN15 Maglev Zenith', corroborating the name as GAN-declared rather than retailer-invented."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-gan15-uv-3x3-newblack]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."

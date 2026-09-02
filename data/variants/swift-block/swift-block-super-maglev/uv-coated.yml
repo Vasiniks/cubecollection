@@ -1,0 +1,19 @@
+# variant: swift-block-super-maglev--uv-coated
+# Pass 4. "Swift 3X3 Super Maglev UV" — a UV-coated tier described on the same product page as
+# the base Super Maglev ("durable UV coating"), sold as a configuration choice rather than a
+# separate listing.
+id: swift-block-super-maglev--uv-coated
+entity: variant
+model_id: swift-block-super-maglev
+name: "Swift Block 3x3 Super Maglev (UV)"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  coating: uv
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [gancube-swift-block-super-maglev-specifications]
+    note: "'A \"Swift 3X3 Super Maglev UV\" variant is also described (\"durable UV coating\")' per the same product page as the base model."

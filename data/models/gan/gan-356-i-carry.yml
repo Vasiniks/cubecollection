@@ -1,0 +1,35 @@
+# model: gan-356-i-carry
+# Pass 3 (model enumeration). The original i-carry design: a coin-battery-powered, no-gyroscope
+# smart cube, distinct in kind (not just tier) from the rechargeable, gyroscope-equipped
+# i-series. TheCubicle: "GAN's newest magnetic smart cube... powered by replaceable coin
+# batteries... This model does not have a gyroscope." See research/notes/models/gan-pass3.md.
+id: gan-356-i-carry
+entity: model
+family_id: gan-i-carry-series
+manufacturer_id: gan
+name: "GAN356 i Carry"
+scope_class: core
+generation:
+  label: "i Carry"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2021-04"
+  precision: month
+  qualifier: before
+description: |-
+  TheCubicle's own copy: "The GAN 356 i Carry is GAN's newest magnetic smart cube. Instead of a
+  charger, this cube is powered by replaceable coin batteries... Weighing 77g, this lightweight
+  smart cube lasts for 280 hours of playtime... It has frosted plastic and beautiful pearly
+  white internals. This model does not have a gyroscope." The coin-battery/no-gyroscope design
+  philosophy is what distinguishes the whole i-carry lineage from i-series, per this same
+  source.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan-356-i-carry]
+    note: "TheCubicle's own earliest capture (2021-04-05) is a retailer-listing floor, not a manufacturer-stated date."
+  /generation/basis:
+    confidence: uncertain
+    note: "'i Carry' is a tier/product-line name, not a stated sequential generation numeral; no manufacturer generation-ordinal statement was found."

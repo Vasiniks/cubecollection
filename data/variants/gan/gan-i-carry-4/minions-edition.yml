@@ -1,0 +1,58 @@
+# variant: gan-i-carry-4--minions-edition
+# Pass 4. "GAN i carry 4 Minions Edition": matte finish, replaceable button batteries (150h),
+# 56mm, 71.2g, GES Pro+ (12 tension levels x 6 center-piece-travel levels = 72-Gear Numerical
+# Tuning). Sold in two purchase options from one listing ("Matte Variant" / "Matte + Halo Timer
+# Variant") differing only by a bundled timer accessory — not recorded as two variants, per
+# DATA_MODEL §4.1 (bundle membership is not a materiality trigger).
+id: gan-i-carry-4--minions-edition
+entity: variant
+model_id: gan-i-carry-4
+name: "GAN i carry 4 Minions Edition"
+scope_class: core
+edition:
+  name: "Minions Edition"
+  types: [collaboration, limited, smart]
+  collaboration_name: "Minions"
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  coating: matte
+  size_mm: 56
+  weight_g: 71.2
+  adjustment_system: tension_compression
+colorway:
+  designation: "Minions Edition"
+  application: hybrid
+status: stub
+attestations:
+  /edition/collaboration_name:
+    confidence: probable
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+    note: "GAN's own naming of the collaboration line. Recorded as a name because the collaborator is a licensed property, which the schema cannot hold as a reference — see F8. collaboration_with stays empty rather than pointing at a fabricated entity."
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+  /config/size_mm:
+    confidence: confirmed
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+  /config/weight_g:
+    confidence: confirmed
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+  /config/adjustment_system:
+    confidence: probable
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+    note: "'12 levels of magnetic tension, 6 levels of center piece travel, providing 72-Gear Numerical Tuning.'"
+  /colorway/application:
+    confidence: uncertain
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+    note: "Box includes 'DIY Minions Stickers x1' applied to an otherwise matte-finished body; recorded as hybrid rather than stickerless or stickered outright."
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."
+significance: |-
+  Purchasers unlock a digital-only "Minions Skin & Effects & Avatar Frame" in GAN's Cube Station
+  companion app, issued to the first account connected; per GAN's own copy this is a
+  non-refundable, account-bound digital benefit, not a physical variant trait. Recorded here in
+  prose only — DATA_MODEL has no field for account-bound digital collectibles; flagged as a
+  possible schema gap in research/notes/variants/gan-pass4.md.

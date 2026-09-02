@@ -1,0 +1,31 @@
+# magnet-configurations
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: magnet-configurations, so the schema and this file cannot drift.
+
+id: magnet-configurations
+description: "How positioning magnets are arranged."
+values:
+  - value: none
+    label: "None"
+    description: "No positioning magnets."
+  - value: single_layer
+    label: "Single layer"
+    description: "One set of magnets between adjacent pieces."
+  - value: dual_layer
+    label: "Dual layer"
+    description: "Two sets of positioning magnets."
+  - value: core_corner
+    label: "Core-corner"
+    description: "Magnets acting between the core and the corner pieces."
+  - value: adjustable
+    label: "Adjustable"
+    description: "Magnet strength adjustable by the user without disassembly."
+  - value: monopole
+    label: "Monopole"
+    description: "A single-pole magnet arrangement."
+  - value: other
+    label: "Other"
+    description: "A documented arrangement not covered above."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

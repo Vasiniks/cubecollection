@@ -1,0 +1,54 @@
+# model: gan-flagship-15
+# Pass 3 (model enumeration). GAN's own product page bundles MagLev UV/Matte coating and a
+# "10 Years Grand Gift Set" bundle and a separate "NewBlack" colourway/coating tier from one
+# listing. Note on dating: gancube.com's own earliest located capture of any GAN15 product URL
+# is 2026-03, LATER than gancube.com's own GAN16 floor (2025-10) — logically backwards for a
+# sequential numbering scheme, and read as evidence the gancube.com floor reflects a URL
+# restructuring, not GAN15's actual introduction. TheCubicle's own, much earlier capture is
+# used instead. See research/notes/models/gan-pass3.md.
+id: gan-flagship-15
+entity: model
+family_id: gan-flagship-series
+manufacturer_id: gan
+name: "GAN15"
+scope_class: core
+generation:
+  label: "15"
+  ordinal: 15
+  basis: manufacturer_declared
+announced:
+  value: "2025-06"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's own product page: "Versions" selector offers "Maglev_UV Coated", "Maglev_Matte
+  Coated", "Maglev_10 Years Grand Gift Set_UV Coated", "NewBlack_UV Coated" from one listing —
+  coating, gift-set bundling, and a "NewBlack" colourway tier all treated as variant-level here.
+
+  Dating note: gancube.com's own earliest located capture of a GAN15 product URL is 2026-03-05,
+  which post-dates gancube.com's own earliest GAN16 capture (2025-10-24) — the successor
+  generation's own page appears to have been archived first. This pass reads that as evidence
+  the current gancube.com URL for GAN15 is a later restructuring of an existing product's page,
+  not GAN15's actual launch window, and relies instead on TheCubicle's own, considerably
+  earlier capture (2025-06-23) as the dating floor.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan15-maglev-3x3-frosted]
+    note: "TheCubicle's own earliest capture (2025-06-23) is a retailer-listing floor, not a manufacturer-stated date, but it is the more reliable of the two floors located this pass — see description for why gancube.com's own capture is not used."
+  /generation/basis:
+    confidence: uncertain
+    sources: [gancube-gan15-product]
+    note: "No explicit 'Nth generation' statement was found on GAN15's own page; basis is extended from GAN12's directly-confirmed manufacturer-declared numbering pattern, applied by naming-sequence analogy."
+  /relationships/0:
+    confidence: uncertain
+    note: "Inferred from GAN's sequential numbering; no explicit succession sentence found."
+  /description:
+    confidence: confirmed
+    sources: [gancube-gan15-product]
+relationships:
+  - type: succeeds
+    target: gan-flagship-14
+    target_entity: model
+    note: "Inferred from GAN's own sequential generation numbering; no explicit succession sentence found."

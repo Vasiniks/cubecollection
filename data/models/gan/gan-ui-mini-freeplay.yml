@@ -1,0 +1,34 @@
+# model: gan-ui-mini-freeplay
+# Pass 3 (model enumeration). A compact-format smart cube pairing "ui"-series electronics with
+# a Mini-format mechanical base, the smart sibling of the mechanical "GAN Mini M Pro"
+# (gan-mini-m-pro). Placed in gan-ui-series (naming pattern: "X ui Y", matching GAN12 ui/
+# GAN16 ui) rather than gan-i-series/gan-i-carry-series, which use a different naming
+# convention ("i"/"i carry" prefixes rather than "ui" tier word). See
+# research/notes/models/gan-pass3.md.
+id: gan-ui-mini-freeplay
+entity: model
+family_id: gan-ui-series
+manufacturer_id: gan
+name: "GAN Mini ui Free Play"
+scope_class: core
+generation:
+  label: "Mini ui Free Play"
+  basis: community_convention
+announced:
+  value: "2024-02"
+  precision: month
+  qualifier: before
+description: |-
+  A compact smart cube pairing GAN's "ui" smart electronics with a Mini-format mechanical
+  shell, mirroring the mechanical GAN Mini M Pro's compact spinoff of the numbered flagship
+  line. No dedicated GAN-authored product-page source was located this pass; existence and
+  dating rest on TheCubicle's own listing alone.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan-mini-ui-free-play]
+    note: "TheCubicle's own earliest capture (2024-02-14) is a retailer-listing floor, not a manufacturer-stated date."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found; a spinoff/parallel product, not part of a numbered succession of its own."

@@ -1,0 +1,30 @@
+# source: gancube-collections-ui-series
+# GAN's own storefront collection for its "ui Series" smart cubes — smart electronics paired
+# with the mechanical Flagship Series (numbered) base, e.g. "GAN12 ui MagLev" and "GAN16 ui
+# MagLev MAX". A third, separately-declared GAN smart-cube collection, distinct from both
+# "i Series" and "i carry Series". Primary evidence for treating "GAN ui Series" as its own
+# family, related to but distinct from GAN Flagship Series.
+id: gancube-collections-ui-series
+entity: source
+kind: manufacturer_official
+title: "GAN ui Series | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/collections/ui-series"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260811015557/https://www.gancube.com/collections/ui-series"
+excerpt: |-
+  Page title: "GAN ui Series | GANCUBE". Collection grid, 5 results, filtered under Cube Types:
+  Smart Cube (5), 2x2 Cube (1), 3x3 Cube (4): "GAN16 ui Maglev MAX Minions Edition"
+  ($149.99-$191.98), "GAN16 ui Maglev MAX" ($139.99-$181.98), "GAN251 ui Smart Cube"
+  ($79.99, 2x2 — out of this archive's 3x3 scope), "GAN12 ui SP Smart Cube" ($89.99-$99.99),
+  "GAN 12 ui Maglev" ($105.99-$115.99). Filter facets on this page include "professional
+  characteristic: Flagship plus AI. Titans allied (1 product)" and "advance characteristic:
+  Magnetic-levitated. New definition of speed (1 product)".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain the page title, the 5-result product grid, and the filter-facet text verbatim."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own storefront collection page, tier 1 for GAN's own catalogue/collection structure. The 'Flagship plus AI' facet text is marketing copy attached to one product (read here as GAN's own positioning language, not a specification); it is not treated as establishing a formal relationship to the GAN Flagship Series family, which is left to pass 3/4's `smart_version_of` relationship once individual models and variants exist."
+status: sourced

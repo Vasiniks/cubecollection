@@ -1,0 +1,22 @@
+# variant: gan-354-m-v2--standard
+# Pass 4. GAN354 M v2: upgraded plastic core, numerical GES tuning, 48 visible magnet capsules,
+# 54mm, six-colour outside / black inside per GAN's own copy.
+id: gan-354-m-v2--standard
+entity: variant
+model_id: gan-354-m-v2
+name: "GAN354 M v2"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  size_mm: 54
+  magnet_configuration: single_layer
+status: stub
+attestations:
+  /config/size_mm:
+    confidence: confirmed
+    sources: [gancube-gan354-m-v2-product]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [gancube-gan354-m-v2-product]
+    note: "GAN's own copy: '48 magnet capsules and they are all visible now.' Exact arrangement not stated further; single_layer used as the closest documented default at reduced confidence."

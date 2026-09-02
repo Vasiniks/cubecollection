@@ -1,0 +1,21 @@
+# source: monster-go-official-home
+# Monster Go's own site. Establishes the parent relationship from two independent directions:
+# the page says "Powered by GANCUBE" in its title, and its footer carries the same registered
+# legal entity and the same Guangdong ICP filing number as GAN's own domestic site.
+id: monster-go-official-home
+entity: source
+kind: manufacturer_official
+title: "Monster-Go - Powered by GANCUBE"
+publisher: "广州淦源智能科技有限公司"
+url: "https://www.monster-go.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260612202917/https://www.monster-go.com/"
+excerpt: "[page title] Monster-Go - Powered by GANCUBE [body] The Puzzle World of the Monster Go Brand — As a World-Leading speedcube brand, GANCUBE has created countless fun for cubers all around the world. With the mission of letting more children to enjoy the fun of solving cubes, we created the MONSTER GO WORLD. [...] we insist on GAN's outstanding quality, so that children would not be distracted by the defects of the cubes. [footer] 版权所有 © 2026 广州淦源智能科技有限公司 粤ICP备16068632号"
+preservation_note: "Archive capture verified on 2026-09-01 to contain both 'Powered by GANCUBE' and 广州淦源智能科技有限公司."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "The ICP filing number in this footer (粤ICP备16068632号) is identical to the one in the footer of gancube.cn. An ICP filing is issued to a registered operator, so this is a documentary link between the two sites rather than an inference from naming resemblance."
+status: sourced

@@ -1,0 +1,21 @@
+# source: thecubicle-gan356-i3-v2
+# TheCubicle's listing for GAN356 i3 V2, calling it "the latest evolution of the iconic GAN
+# Bluetooth smart cube" — succession evidence for i3 -> i3 V2, and evidence this whole "i"
+# lineage continued at least into mid-2026 alongside the newer "GAN i4" naming.
+id: thecubicle-gan356-i3-v2
+entity: source
+kind: retailer
+title: "GAN356 i3 V2 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-i3-v2-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260627042524/https://www.thecubicle.com/products/gan356-i3-v2-3x3"
+excerpt: "Redefine the smart cubing experience with the GAN356 i3 V2 3x3—the latest evolution of the iconic GAN Bluetooth smart cube. Designed for dedicated speedcubers and data-driven solvers, the i3 V2 combines next-level hardware with elite software integration for total control over your solves. Engineered for over 50,000 solves and 15 hours of active playtime on a single charge. The i3 V2 boasts 365-day standby..."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'the latest evolution of the iconic GAN Bluetooth smart cube' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. This capture (2026-06-27) postdates several GAN i4 product captures found this pass (from March-May 2026), so the exact ordering of 'i3 V2' relative to 'i4' in GAN's own release sequence is not established by this source alone; recorded as an open dating question in the model's own notes."
+status: sourced

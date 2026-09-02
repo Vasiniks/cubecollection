@@ -1,0 +1,24 @@
+# source: ganspuzzle-brand-intro-2011
+# The "品牌介绍" (Brand Introduction) page of ganspuzzle.com, the predecessor brand/site to
+# gancube.com, archived October 2011 — nearly three years before GAN's own about pages date
+# "GANCUBE Inc." founding to 2014. First-party self-description of the predecessor brand,
+# naming Jiang Ganyuan as founder and giving a distinct founding year, 2010, for the brand
+# itself (as opposed to the later company incorporation). Central to the disputed founding-date
+# question on data/manufacturers/gan.yml — see research/notes/manufacturers/gan-pass1.md.
+id: ganspuzzle-brand-intro-2011
+entity: source
+kind: manufacturer_official
+title: "品牌介绍 - 淦源魔方 (Brand Introduction - Ganspuzzle)"
+publisher: "淦源魔方 (Ganspuzzle)"
+url: "http://www.ganspuzzle.com/_d271302982.htm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20111028100334/http://www.ganspuzzle.com:80/_d271302982.htm"
+excerpt: "GANSPUZZLE 淦源 是由国内资深魔方玩家江淦源创立的自主品牌。成立于2010年。致力于自主开发全新的魔方结构，为魔方玩家们带来全新的体验和更好水平的产品。"
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain 江淦源 and 成立于2010年 verbatim. This is the earliest capture of this specific page found; the site's homepage was first captured 2011-10-27, one day earlier."
+accessed: "2026-09-01"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-01"
+reliability_note: "Machine-translated working sense, original retained verbatim above per RESEARCH_SPEC §3.6/3.7: 'GANSPUZZLE (Ganyuan) is an independent brand founded by veteran domestic speedcuber Jiang Ganyuan. Established in 2010. Committed to independently developing new cube mechanisms, bringing cubers a new experience and better-level products.' First-party self-description of the brand that preceded GANCUBE/GAN, tier 1 for its own founding claim. This 2010 brand-founding date is a different claim from '2014' (GANCUBE Inc.'s stated corporate incorporation, per gancube-cn-about-us-en and gancube-cn-introduction-zh) and from the '2013' copyright-range start found on gancube.com's own earliest archived capture (see gancube-2016-earliest-capture) — three tier-1 GAN/predecessor sources giving three different years for three plausibly different events (brand founding vs. company incorporation vs. an unexplained copyright epoch). Recorded as a disputed candidate rather than adjudicated; see data/manufacturers/gan.yml /founded attestation."
+status: sourced

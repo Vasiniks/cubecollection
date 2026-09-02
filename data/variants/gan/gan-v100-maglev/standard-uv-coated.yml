@@ -1,0 +1,34 @@
+# variant: gan-v100-maglev--standard-uv-coated
+# Pass 4. The base GAN V100 Maglev configuration: the single item ("UV Coated") on GAN's own
+# Versions selector for this listing. 55mm/64g per GAN's own combo-page copy; TheCubicle
+# additionally reports 76 magnets and a GAN16-derived tension system (tier 2, not independently
+# corroborated by GAN's own copy this pass).
+id: gan-v100-maglev--standard-uv-coated
+entity: variant
+model_id: gan-v100-maglev
+name: "GAN V100 Maglev (UV Coated)"
+aliases:
+  - { name: "GAN v100 Maglev", source: gancube-gan-v100-maglev-product }
+scope_class: core
+edition:
+  types: [standard]
+config:
+  maglev: maglev
+  coating: uv
+  size_mm: 55
+  weight_g: 64
+status: stub
+attestations:
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan-v100-maglev-product]
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan-v100-maglev-product]
+  /config/size_mm:
+    confidence: probable
+    sources: [gancube-gan-v100-uv-coated-2026-easter-combo-product]
+    note: "GAN's own combo-bundle page: 'Compact, featherweight 55mm size and 64g design' — the only place this pass found GAN stating V100 Maglev's own size/weight numerically; V100's own single-product page carries only tagline copy with no numbers."
+  /config/weight_g:
+    confidence: probable
+    sources: [gancube-gan-v100-uv-coated-2026-easter-combo-product]

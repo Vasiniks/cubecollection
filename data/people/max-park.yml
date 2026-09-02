@@ -1,0 +1,27 @@
+# person: max-park
+# Created in the Pass 4.5 cleanup to close F7: a signature edition existed with nowhere to
+# point. Only what the cited source actually states is recorded. No biographical detail is
+# included — the source mentions a pamphlet containing biography but does not quote it, and an
+# unquoted pamphlet is not evidence of its contents.
+
+id: max-park
+entity: person
+name: "Max Park"
+role: [speedcuber]
+notes: |-
+  Named by TheCubicle as the speedcuber whose 6.39-second 3x3 world-record average a GAN
+  signature edition replicates and commemorates. No WCA id is recorded: none was found in the
+  sources consulted, and inventing or inferring one would be fabrication.
+status: drafted
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+    note: "Single tier-2 source. The retailer is describing a product it sells, which is first-party for the product and second-hand for the person."
+  /role:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+  /wca_id:
+    confidence: unknown
+    note: "Searched for in the sources already held; not present. Not pursued further in a cleanup pass."

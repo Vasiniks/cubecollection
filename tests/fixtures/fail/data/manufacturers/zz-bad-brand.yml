@@ -1,0 +1,15 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-bad-brand
+entity: manufacturer
+name: ZZ Bad Brand
+kind: manufacturer
+parent_id: zz-does-not-exist
+status: published
+attestations:
+  "/kind":
+    confidence: confirmed
+    sources: [zz-bad-src-social]

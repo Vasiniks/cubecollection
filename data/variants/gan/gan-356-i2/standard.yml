@@ -1,0 +1,22 @@
+# variant: gan-356-i2--standard
+# Pass 4. GAN356 i2: faster charging (2h), longer battery/standby life (60 days), more storage,
+# Bluetooth pairing via the "Cube Station" app.
+id: gan-356-i2--standard
+entity: variant
+model_id: gan-356-i2
+name: "GAN356 i2"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  connectivity: "Bluetooth"
+  companion_app: "Cube Station"
+status: stub
+attestations:
+  /smart/connectivity:
+    confidence: probable
+    sources: [thecubicle-gan356-i2]
+  /smart/companion_app:
+    confidence: probable
+    sources: [thecubicle-gan356-i2]

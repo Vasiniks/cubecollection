@@ -1,0 +1,23 @@
+# event: wr-3x3-single-3-05-geng
+
+id: wr-3x3-single-3-05-geng
+entity: event
+name: "XuanYi Geng's 3.05-second 3x3 world-record single"
+kind: milestone
+date:
+  value: "2025"
+  precision: year
+  qualifier: exact
+  note: "Year taken from the competition name 'Shenyang Spring 2025' as given by the source. The season word is part of the competition's name, not an independent claim about the month, so precision stays at year."
+notes: |-
+  Set at the competition the source names as "Shenyang Spring 2025". One of two records
+  commemorated by the GAN16 MagLev MAX UV Dual-WR Limited Edition.
+status: drafted
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+  /date:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]

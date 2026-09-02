@@ -1,0 +1,23 @@
+# specimen-condition
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: specimen-condition, so the schema and this file cannot drift.
+
+id: specimen-condition
+description: "Condition of a physical unit held by the archivist."
+values:
+  - value: sealed
+    label: "Sealed"
+  - value: mint
+    label: "Mint"
+  - value: excellent
+    label: "Excellent"
+  - value: good
+    label: "Good"
+  - value: used
+    label: "Used"
+  - value: heavily_used
+    label: "Heavily used"
+  - value: incomplete
+    label: "Incomplete"
+  - value: damaged
+    label: "Damaged"

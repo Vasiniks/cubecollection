@@ -1,0 +1,33 @@
+# source: thecubicle-gan15-uv-3x3-newblack
+# TheCubicle's listing for "GAN15 UV 3x3 (NewBlack)". Cited for the NewBlack (car-grade black
+# internal plastic, spring-based, swappable corner/core magnets) configuration description, and
+# for its own "Versions" selector, which lists a wider set of GAN15 purchase options than GAN's
+# own gancube-gan15-product capture, including a "10th Anniversary Edition" and a "Zenith
+# (Limited Edition)" not otherwise found this pass.
+id: thecubicle-gan15-uv-3x3-newblack
+entity: source
+kind: retailer
+title: "GAN15 UV 3x3 (NewBlack) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250701233114/https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+excerpt: |-
+  "Versions" purchase selector on this one listing: "MagLev + UV", "UV Coated (NewBlack
+  Edition)", "MagLev + UV - 10th Anniversary Edition", "MagLev + UV (Frosted)", "MagLev + UV
+  Zenith (Limited Edition)". Description: "The GAN15 UV 3x3 (NewBlack) is GAN's newest build of
+  the popular GAN15. The NewBlack features car-grade black plastic in its internals, giving the
+  cube a smooth, crisp, and durable feel with less friction and noise. It comes with extra
+  corner/core magnets that you can swap to adjust the cube's magnetic feel." Feature bullets:
+  "Car-grade black internals", "Extra corner/core magnets". A verified customer review
+  independently confirms the spring/non-MagLev nature of this specific SKU: "I own both a gan
+  15 maglev UV (white internals) and a newblack (springs)... never in a million years would I
+  choose the springs as they're just so horribly slow."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the Versions list, the description, and the quoted customer review verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, for the NewBlack materials/mechanism description. A customer review (tier 5 on its own) independently corroborates the spring (non-MagLev) mechanism of the NewBlack SKU specifically, consistent with but not itself establishing that fact; the description text's own materials claim is the primary evidence relied upon. The wider Versions list (5 items) versus GAN's own gancube-gan15-product capture (4 items) is read as a possible timing difference (this capture is 2025-07, gancube-gan15-product's capture is 2026-08) rather than a discrepancy to adjudicate; not resolved this pass."
+status: sourced

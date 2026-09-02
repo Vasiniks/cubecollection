@@ -1,0 +1,20 @@
+# source: thecubicle-gan14-m-maglev-uv-3x3
+# TheCubicle's earliest-located listing for a GAN14 product. Used as the dating floor for
+# gan-flagship-14.
+id: thecubicle-gan14-m-maglev-uv-3x3
+entity: source
+kind: retailer
+title: "GAN14 M MagLev UV 3x3"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan14-m-maglev-uv-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240224051954/https://www.thecubicle.com/products/gan14-m-maglev-uv-3x3"
+excerpt: "Page title as captured 2024-02-24: \"GAN14 M MagLev UV 3x3\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02. A CDX listing shows an earlier capture of a query-string variant of this same URL dated 2023-12-15, but the clean product URL's own earliest confirmed content-bearing capture located this pass is 2024-02-24; the more conservative (later) date is used as the floor rather than the unfetched 2023-12 variant."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail listing, tier 2, used only to establish that GAN14 existed by 2024-02-24 — a genuine dating floor from a site with no known archival-event contamination."
+status: sourced

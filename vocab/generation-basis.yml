@@ -1,0 +1,13 @@
+# generation-basis
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: generation-basis, so the schema and this file cannot drift.
+
+id: generation-basis
+description: "Where a generation label comes from."
+values:
+  - value: manufacturer_declared
+    label: "Manufacturer declared"
+    description: "The manufacturer names this generation."
+  - value: community_convention
+    label: "Community convention"
+    description: "The community numbers it; the manufacturer does not."

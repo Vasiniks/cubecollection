@@ -1,0 +1,20 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-testbrand-tf-v1--standard-stickerless
+entity: variant
+model_id: zz-testbrand-tf-v1
+revision_ref: rev-b
+name: ZZ Testbrand TF V1 Standard, stickerless
+scope_class: core
+edition:
+  types: [standard]
+  designation: Standard
+config:
+  coating: none
+colorway:
+  designation: Stickerless
+  application: stickerless
+status: drafted

@@ -1,0 +1,24 @@
+# source: gancube-monster-go-cloud-rainbow-ut-versions
+# The same GAN product page as gancube-monster-go-cloud-rainbow-ut-product (created in a prior
+# session; not overwritten here), re-cited under a new id for its own variant selector, which
+# the earlier source record did not extract: four colourway options sold from one listing.
+id: gancube-monster-go-cloud-rainbow-ut-versions
+entity: source
+kind: manufacturer_official
+title: "Monster Go Cloud & Rainbow & UT 3×3 Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-cloud-rainbow-ut-3x3-magnetic-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241112094935/https://www.gancube.com/products/monster-go-cloud-rainbow-ut-3x3-magnetic-speed-cube"
+excerpt: |-
+  Variant selector, one product listing, 8 options: "Cloud - blue", "Cloud - pink", "Rainbow",
+  "UT", and the same four again suffixed "(premium package)". No numeric size, weight, or
+  magnet-count specification was found on this page. URL slug contains "magnetic-speed-cube".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain all 8 variant-selector labels verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page and variant selector, tier 1 for catalogue structure — four colourways sold from a single listing, clean evidence of a colourway-variant relationship at variant level. Whether this product shares tooling with the separately-URLed 'Monster Go Magnetic 3x3 Cube' is not established by this page; see the model record's own description for that open question."
+status: sourced

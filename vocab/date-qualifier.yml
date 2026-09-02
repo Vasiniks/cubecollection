@@ -1,0 +1,21 @@
+# date-qualifier
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: date-qualifier, so the schema and this file cannot drift.
+
+id: date-qualifier
+description: "How a date relates to the event it describes."
+values:
+  - value: exact
+    label: "Exact"
+  - value: circa
+    label: "Circa"
+    description: "Approximate."
+  - value: before
+    label: "Before"
+    description: "No later than."
+  - value: after
+    label: "After"
+    description: "No earlier than."
+  - value: between
+    label: "Between"
+    description: "Within a bounded range. Requires earliest and latest."

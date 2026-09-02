@@ -1,0 +1,21 @@
+# source: thecubicle-gan356-rs2
+# TheCubicle's listing for GAN356 RS2, a non-magnetic budget model. No explicit succession
+# sentence to RS was found on this page; the "2" version numeral is the naming evidence relied
+# on for treating this as RS's successor, at reduced confidence.
+id: thecubicle-gan356-rs2
+entity: source
+kind: retailer
+title: "GAN356 RS2 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-rs2-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231205061312/https://www.thecubicle.com/products/gan356-rs2-3x3"
+excerpt: "The GAN356 RS2 3x3 is a non-magnetic puzzle with adjustable tension and compression. With great corner-cutting and the traditional honeycomb pattern on the internals, this is a great cube for beginners or anyone who isn't a fan of magnetic 3x3s."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain this description verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. Does not itself state a succession from GAN356 RS; the 'RS2' naming is the evidence relied on for the succeeds relationship, recorded at reduced confidence."
+status: sourced

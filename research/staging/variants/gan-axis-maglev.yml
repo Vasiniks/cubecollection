@@ -1,0 +1,63 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN's MagLev axis: when it began, how it is named, and whether MagLev vs non-MagLev is sold
+  as a variant-level configuration choice (same model, either core) or is itself a
+  model-defining mechanism. Maps to config.maglev, vocab/maglev.yml (none | maglev |
+  ball_core_maglev | dual_maglev | unknown).
+
+findings:
+  - candidate: "MagLev origin — 'Magnetic Core 2.0' (2021)"
+    likely_model: { name: "First MagLev-branded GAN product not precisely dated this pass; GAN's own history frames 2021 as the year magnetic levitation entered the core lineage", confidence: probable }
+    aliases: ["magnetic levitation", "Magnetic Core 2.0"]
+    confidence: probable
+    evidence:
+      - url: "https://www.gancube.cn/en/gancubes-core-technology/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"In 2021, the introduction of Magnetic Core 2.0 heralded a new age of magnetic levitation in speedcubing. This upgraded version not only accomplishes a record-setting 30° automatic alignment, but by synergizing with the angular magnetic force of the corner piece, it generates repulsion, enabling remarkable advancements in speedcubing.\""
+    open_questions:
+      - "This tier-1 timeline entry does not name a specific model SKU for the 2021 introduction. Pass 3 (model enumeration) should cross-check which GAN model launched in/around 2021 (candidate: an early 'GAN12 MagLev' generation) against this date."
+
+  - candidate: "MagLev sold as an alternative core choice to spring/non-MagLev on the SAME product page (variant-level, not model-level)"
+    likely_model: { name: "GAN15 (UV/spring vs MagLev/Frosted), GAN i4 (Leap/spring vs MagLev)", confidence: confirmed }
+    aliases: ["MagLev (Frosted)", "GAN i4 Leap (non-MagLev, smart)", "GAN i4 MagLev (smart)"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Version selector on one product page: \"UV Coated (NewBlack Edition)\" (spring core, per customer review) vs \"MagLev (Frosted)\" — sold from the same listing as alternative purchase options."
+      - url: "https://www.thecubicle.com/products/gan-i4-leap-frosted-3x3-smart-cube"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN i4 Leap Frosted 3x3 (Smart Cube)... a precision-engineered spring tensioning system\" — named 'Leap' as GAN's own term for the non-MagLev tier, paired against the 'GAN i4 MagLev' smart cube sibling."
+      - url: "https://www.thecubicle.com/products/gan-251-m-leap"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN 251 M Leap is an updated 2x2 mechanism which features corner/core and traditional magnets just like the GAN 11 M Pro. This version also utilizes large angle magnetic alignment technology... This technology, combined with the 51mm size, makes this an extremely maneuverable puzzle.\" — 'Leap' here is a magnetic-but-not-MagLev tier, confirming 'Leap' is a GAN-wide naming pattern (mechanical AND smart lines) for a mid-tier magnetic system positioned below MagLev."
+    open_questions:
+      - "STRONG PATTERN, WORTH FLAGGING TO MODEL RESEARCHER: 'Leap' recurs as a GAN product-line word across at least four different model families (GAN i4 Leap, GAN 251 M Leap, GAN12 M Leap, GAN V100 Leap — see thecubicle-dedup evidence), always denoting 'magnetic, large-angle alignment, but NOT MagLev'. This looks like a genuine third tier alongside GAN's base magnetic and MagLev tiers, not a one-off SKU name — recommend the family/model passes treat 'Leap' as a recognized GAN edition-designation word (rule 7 of the materiality test) rather than a stray product name."
+
+  - candidate: "ball_core_maglev — combined ball core + MagLev"
+    likely_model: { name: "Unclear — possibly GAN V100 per the disputed 'Ball-Core' labelling in gan-axis-core-systems.yml", confidence: disputed }
+    aliases: []
+    confidence: disputed
+    evidence:
+      - url: "(see gan-axis-core-systems.yml conflict block)"
+        publisher: "n/a"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Cross-reference only — the same disputed ball-core evidence for GAN V100 would, if resolved in favour of 'yes, stock V100 has a ball core', make GAN V100 MagLev a `ball_core_maglev` case rather than plain `maglev`. Not resolved this pass."
+    open_questions:
+      - "Depends entirely on resolving the GAN V100 ball-core dispute in gan-axis-core-systems.yml first."
+
+conflicts: []
+
+not_found:
+  - "No GAN product explicitly using the vocab's `dual_maglev` (two magnetic-levitation stages) value was identified this pass."
+  - "No single GAN source was found stating the exact first MagLev-branded product name and release date in one place — this is a real gap for pass 3/5 to close (a manufacturer announcement or an early archived gancube.com product page would be the ideal tier-1 source; web.archive.org access failure this session blocked that search — see gan-discovery.md)."

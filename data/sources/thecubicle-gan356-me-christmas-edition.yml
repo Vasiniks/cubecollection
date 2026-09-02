@@ -1,0 +1,31 @@
+# source: thecubicle-gan356-me-christmas-edition
+# TheCubicle's listing for "GAN356 ME 3x3 (Christmas Edition)", a limited seasonal colourway of
+# GAN356 M E changing internal plastic colour, magnet capsule colour, and logo colour, plus a
+# themed sticker and bag.
+id: thecubicle-gan356-me-christmas-edition
+entity: source
+kind: retailer
+title: "GAN356 ME 3x3 (Christmas Edition) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-me-christmas-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251203212821/https://www.thecubicle.com/products/gan356-me-christmas-edition"
+excerpt: |-
+  "Celebrate the holiday season with the exclusive GAN356 ME 3x3 (Christmas Edition)! Specially
+  designed for speedcubers and collectors, this limited edition cube features festive green
+  internals, eye-catching red magnet capsules, and a unique red logo. It maintains all the
+  advanced features of the original GAN356 ME, including a robust 48 magnetic capsule system
+  and the precise GES Pro+ tension adjustment for a smooth, customizable solving experience.
+  This holiday edition also includes a Christmas-themed sticker to personalize one side of your
+  cube, as well as a vibrant red GAN Cube bag with a seasonal design." Listed price
+  (Stickerless): $24.99 USD. A verified customer review independently confirms "The red logo
+  and green internals are visually pleasing... and the bag with the cube riding a snowboard in
+  gold/red."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the description, price, and customer-review corroboration verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, for a genuine multi-part colourway change (internal plastic colour, magnet capsule colour, logo colour) plus a themed sticker and packaging accessory — read as materially distinct from the base GAN356 M E per DATA_MODEL §4.1 (colourway) rather than packaging alone."
+status: sourced

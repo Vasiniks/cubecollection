@@ -1,0 +1,75 @@
+# family: gan-flagship-series
+# Pass 2 (family enumeration). GAN's numbered top-tier 3x3 succession: GAN 11 M Pro (2020)
+# through GAN12, GAN13, GAN14, GAN15, GAN16, and GAN17 (2026). THE central, hardest boundary
+# call of this pass. Full reasoning, including the alternative reading this record rejects, is
+# in research/notes/models/gan-pass2.md — read that before treating this record's boundary as
+# settled. GAN V100 is deliberately excluded; see research/staging/models/gan-v100.yml.
+
+id: gan-flagship-series
+entity: family
+manufacturer_id: gan
+name: "GAN Flagship Series"
+aliases:
+  - "Flagship Series"
+  - "GAN Flagship"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: flagship
+description: |-
+  GAN's continuously-succeeding top-tier 3x3 line, sold under bare numbers (11 through 17)
+  with no shared name-word of its own beyond the numeral, distinct from the "356"-prefixed
+  mainline (gan-356) that continues to be sold in parallel throughout this family's entire
+  span. Treated as one family, not seven (or more) single-generation families, on the strength
+  of a manufacturer-drawn boundary found on GAN's own site in two independent forms:
+
+  1. GAN's own English-language storefront (gancube.com) carries a site-navigation dropdown
+     literally labelled "Flagship Series" that, as of August 2026, lists GAN16 Maglev, GAN15,
+     GAN14, GAN12, and "GAN11 Series" (with its own M Pro/M/Air/M Duo sub-variants) together —
+     excluding every 356-branded product from that same grouping.
+  2. GAN's Chinese-domestic site (gancube.cn) independently carries a "旗舰魔方" (Flagship
+     Cube) navigation category that, in an August 2025 capture, lists GAN16 Maglev, GAN15
+     Maglev, GAN14 Maglev Pro, GAN14, GAN13, GAN12 together.
+  3. GAN's own technology-history page explicitly calls the 2020 GAN 11 M Pro the "year's
+     heavyweight flagship" (年度重磅旗舰) in the same breath as describing the magnetic-core
+     technology that the 2021 MagLev generation and (per its own current product copy) GAN17
+     MagDrive continue to build on ("GAN17 MagDrive is GAN's flagship maglev 3x3 speed cube").
+
+  This reading is a judgement call, not a mechanical fact. Two complications are recorded
+  honestly rather than smoothed over:
+
+  - GAN's own "Series"/collection labelling is not perfectly stable. An older (November 2024)
+    gancube.com collection at a different URL ("flagship-speed-cubes", page title "GAN Flagship
+    Series Speed Cubes") mixed in 356-branded products (GAN356 M E, GAN356 RS2, GAN356 Maglev)
+    alongside the numbered line, and a separate "Advanced Series" collection from the same
+    period listed nearly the same numbered models (GAN11 M Pro through GAN15 Maglev) *again*,
+    under a different tier label. The cleaner, exclusive "Flagship Series" grouping used as this
+    family's primary evidence is the 2026 site-navigation dropdown specifically, not either of
+    these older merchandising collections, which read as relative, shifting price-tier buckets
+    rather than a stable family boundary. See research/notes/models/gan-pass2.md for the full
+    comparison.
+  - GAN13 appears in the August 2025 gancube.cn "Flagship" grouping but is absent from the
+    August 2026 gancube.com "Flagship Series" dropdown — a discontinued-generation lead for
+    pass 3, not resolved here.
+
+  GAN V100 is deliberately excluded from this family. See
+  research/staging/models/gan-v100.yml for the evidence and open question.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history, thecubicle-cubicle-custom-gan11-m-pro-uv]
+    note: "GAN's own technology-history page (tier 1) dates the GAN 11 M Pro, described as that year's flagship, to 2020. Independently, TheCubicle's own product copy (tier 2) calls the same product 'GAN's 2020 flagship 3x3'. Tier 1 alone is sufficient for confirmed under RESEARCH_SPEC §6; the tier-2 agreement is recorded as further corroboration."
+  /positioning:
+    confidence: confirmed
+    sources: [gancube-gan17-magdrive-product, gancube-cn-core-technology-history]
+    note: "GAN's own product copy and site navigation both use 'flagship'/'旗舰' as a first-party self-description of this line, not a third party's comparative claim."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-gan17-magdrive-product]
+    note: "'Flagship Series' is the literal nav dropdown label; 'GAN Flagship' collapses the redundant 'GAN' + 'GAN Flagship Series' repetition and is the archive's own normalized short form, not itself independently attested to a source."
+  /successor_family_id:
+    confidence: unknown
+    note: "Not applicable/not asserted. This family is ongoing (GAN17 MagDrive, 2026, is its current generation)."

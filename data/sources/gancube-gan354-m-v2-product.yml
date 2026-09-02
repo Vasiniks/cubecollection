@@ -1,0 +1,29 @@
+# source: gancube-gan354-m-v2-product
+# GAN's own product page for the GAN354 M (v2), a compact (54mm) 3x3 sold as its own named
+# line since at least 2018 (per thecubicle-gan-354-m). Tier 1 confirmation that GAN itself
+# treats "GAN354" as a persisting, multi-generation named product ("v2" implies a prior
+# generation), independent of the "GAN356" and "GAN Flagship Series" naming patterns.
+id: gancube-gan354-m-v2-product
+entity: source
+kind: manufacturer_official
+title: "GAN354 M Speed Cube - High-Performance Puzzle Cube for All Levels | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan354-m-3x3-stickerless-magnetic-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241206100629/https://www.gancube.com/products/gan354-m-3x3-stickerless-magnetic-speed-cube"
+excerpt: |-
+  Product title: "GAN354 M". Product description: "WHAT'S NEW ON GAN 354 V2 — The core of new
+  GAN354 has upgraded to plastic, lightweight and stable; And the tension adjustment of GES is
+  now numerial tuning [...] SIZE SMALLER FITS BETTER — At just 54mm, the GAN354 M v2 boasts a
+  comfortable, compact feel and is especially ideal for one-handed enthusiasts and cubers with
+  smaller hands [...] MAY THE MAGNETIC FORCE BE WITH YOU — GAN 354 M v2 contains 48 magnet
+  capsules and they are all visible now [...] With all symmetric lockup joints, GAN 354M v2 has
+  the same color inside(black), Six-Color outside."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain 'GAN354 M', 'GAN 354 V2', and '54mm' verbatim."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own product page, tier 1 for GAN's own naming and specification of this product. Marketing phrasing ('MAY THE MAGNETIC FORCE BE WITH YOU') is copy, not relied on for any fact beyond the product's own name and existence."
+status: sourced

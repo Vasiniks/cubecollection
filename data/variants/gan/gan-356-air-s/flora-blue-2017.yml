@@ -1,0 +1,37 @@
+# variant: gan-356-air-s--flora-blue-2017
+# Pass 4. "GAN356 Air S S M Flora Blue" (2017) — a named limited colourway of this model, same
+# GAN "For display only, not for sale" museum-page evidence pattern as Love Pink.
+id: gan-356-air-s--flora-blue-2017
+entity: variant
+model_id: gan-356-air-s
+name: "GAN356 Air S Flora Blue"
+scope_class: core
+edition:
+  designation: "SM"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+colorway:
+  designation: "Flora Blue"
+  limited_name: "Flora Blue"
+  scheme: custom
+availability:
+  production_status: discontinued
+  last_seen_available: { value: "2025-03", precision: month, qualifier: exact }
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-le-gan356-air-s-flora-blue]
+  /edition/limited/is_limited:
+    confidence: confirmed
+    sources: [gancube-le-gan356-air-s-flora-blue]
+    note: "Page's own title: '2017 Limited Edition GAN356 Air S S M Flora Blue'."
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."
+  /availability/production_status:
+    confidence: probable
+    sources: [gancube-le-gan356-air-s-flora-blue]
+    note: "GAN's own archived page is a non-purchasable, permanently 'Sold Out' display-only record as of the 2025-03-24 capture."

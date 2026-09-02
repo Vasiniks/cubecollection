@@ -1,0 +1,19 @@
+# media-subject
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: media-subject, so the schema and this file cannot drift.
+
+id: media-subject
+description: "What was in front of the camera."
+values:
+  - value: specimen
+    label: "Specimen"
+    description: "A unit held by the archivist."
+  - value: retail_unit
+    label: "Retail unit"
+    description: "A unit not held by the archivist."
+  - value: rendering
+    label: "Rendering"
+    description: "Not a physical object."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

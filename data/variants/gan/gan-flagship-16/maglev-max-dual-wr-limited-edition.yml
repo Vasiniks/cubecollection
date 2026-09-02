@@ -1,0 +1,61 @@
+# variant: gan-flagship-16--maglev-max-dual-wr-limited-edition
+# Pass 4. "GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition)" — a limited, commemorative edition
+# honouring Team GAN speedcuber XuanYi Geng's 3.05s single and 3.84s average World Records, sold
+# both as a Version on GAN's own single GAN16 listing and as its own full listing on TheCubicle.
+# Explicitly limited to 1,111 units worldwide; not individually numbered per unit (contrast the
+# Max Park Signature Edition on gan-356-air, which is).
+#
+# edition.signature_of is left unset: Geng's Chinese signature is laser-engraved on the case and
+# a signed postcard is included, which could support a `signature` edition type, but the cube
+# itself is not described as tuned to a personal setup (contrast the Max Park edition, which
+# explicitly is). Recorded as commemorative rather than signature; flagged as a judgement call
+# in research/notes/variants/gan-pass4.md.
+id: gan-flagship-16--maglev-max-dual-wr-limited-edition
+entity: variant
+model_id: gan-flagship-16
+name: "GAN16 Maglev MAX (Dual-WR Limited Edition)"
+aliases:
+  - { name: "GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition)", source: thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition }
+scope_class: core
+edition:
+  designation: "MAX"
+  name: "Dual-WR Limited Edition"
+  types: [limited, signature, commemorative]
+  limited:
+    is_limited: true
+    run_size: 1111
+    numbered: false
+  signature_of: [xuanyi-geng]
+  commemorates: [wr-3x3-single-3-05-geng, wr-3x3-average-3-84-geng]
+config:
+  maglev: maglev
+  coating: uv
+packaging:
+  notable: "Dual-WR laser-engraved collector's case displaying Geng's Chinese signature and both record times; includes a commemorative postcard with his official WR scrambles, signed by Geng."
+status: stub
+attestations:
+  /edition/name:
+    confidence: confirmed
+    sources: [gancube-gan16-maglev-product, thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+  /edition/limited/run_size:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+    note: "TheCubicle (tier 2), directly stated: 'Limited to just 1,111 units worldwide.'"
+  /edition/limited/numbered:
+    confidence: uncertain
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+    note: "No individual-unit numbering scheme is stated for this edition, unlike the Max Park Signature Edition's numbered VIP cards; recorded as false at reduced confidence rather than left unstated, since a numbering scheme's absence from a detailed listing is itself weak evidence."
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan16-maglev-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+    note: "\"signature\" added in the Pass 4.5 cleanup. The source states the collector's case displays Geng's Chinese signature and the included postcard is \"signed by Geng himself\". Asserting edition.signature_of while omitting the type from edition.types would leave the record internally incoherent. \"commemorative\" and \"limited\" are unchanged from Pass 4."
+  /edition/signature_of:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+  /edition/commemorates:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+    note: "Two records commemorated by one edition, hence \"Dual-WR\": a 3.05s single and a 3.84s average."

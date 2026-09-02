@@ -1,0 +1,29 @@
+# variant: gan-flagship-15--maglev-uv-10th-anniversary-edition
+# Pass 4. "GAN15 Maglev + UV - 10th Anniversary Edition" — found only on TheCubicle's own
+# Versions selector for GAN15 (not on GAN's own gancube-gan15-product capture, which was taken
+# roughly a year later and may reflect a since-retired Version). No body description beyond the
+# name itself was captured this pass.
+id: gan-flagship-15--maglev-uv-10th-anniversary-edition
+entity: variant
+model_id: gan-flagship-15
+name: "GAN15 Maglev UV (10th Anniversary Edition)"
+scope_class: core
+edition:
+  designation: "Maglev"
+  name: "10th Anniversary Edition"
+  types: [limited, anniversary]
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: maglev
+  coating: uv
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan15-uv-3x3-newblack]
+    note: "Named as one of five Versions on TheCubicle's own GAN15 listing ('MagLev + UV - 10th Anniversary Edition'); no independent GAN-authored product page for this specific edition was located this pass."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-gan15-uv-3x3-newblack]

@@ -1,0 +1,19 @@
+# capture-3d-classes
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: capture-3d-classes, so the schema and this file cannot drift.
+
+id: capture-3d-classes
+description: "How a three-dimensional capture was produced. Reserved: no capture pipeline exists in this phase."
+values:
+  - value: photogrammetry
+    label: "Photogrammetry"
+    description: "Reconstructed from photographs."
+  - value: structured_light
+    label: "Structured light"
+    description: "Captured with a structured-light scanner."
+  - value: cad
+    label: "CAD"
+    description: "A computer-aided design model."
+  - value: manual_model
+    label: "Manual model"
+    description: "Modelled by hand."

@@ -1,0 +1,15 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-bad-src-social
+entity: source
+kind: wiki
+tier: 5
+title: ZZ unattributed wiki page
+publisher: ZZ Wiki
+preservation_method: excerpt
+excerpt: "Fixture excerpt of an inadmissible source, long enough to satisfy minLength."
+reliability_note: Tier overridden to 5 to exercise rule 12.
+status: drafted

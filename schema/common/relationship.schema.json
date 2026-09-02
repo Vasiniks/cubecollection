@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "type": {
+      "type": "string",
+      "x-vocab": "relationship-types"
+    },
+    "target": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Id of the record this points at."
+    },
+    "target_entity": {
+      "type": "string",
+      "enum": [
+        "manufacturer",
+        "family",
+        "model",
+        "variant",
+        "person",
+        "event"
+      ]
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "type",
+    "target",
+    "target_entity"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/common/relationship.schema.json",
+  "title": "A typed, directional edge between records"
+}

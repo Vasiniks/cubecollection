@@ -1,0 +1,21 @@
+# source: gancube-gan14-maglev-pro-aurora-le-product
+# GAN's own product page for a named limited edition. Found in the Pass 4.5 cleanup by
+# enumerating every product URL GAN's storefront has ever had via archived CDX, rather than by
+# searching for the edition names — the live catalogue does not list these at all.
+id: gancube-gan14-maglev-pro-aurora-le-product
+entity: source
+kind: manufacturer_official
+title: "Aurora - GAN14 Maglev Pro Summer Limited Edition | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan14-maglev-pro-aurora-limited-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241127043440/https://www.gancube.com/products/gan14-maglev-pro-aurora-limited-edition"
+excerpt: "Page title, verbatim: \"Aurora - GAN14 Maglev Pro Summer Limited Edition | GANCUBE\"."
+preservation_note: "Fetched via `npm run wayback -- get` on 2026-09-02 and confirmed to carry this title. Cited for the edition's existence, name and naming only; no specification claim rests on it."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own storefront, tier 1 for the existence and naming of its own products."
+status: sourced

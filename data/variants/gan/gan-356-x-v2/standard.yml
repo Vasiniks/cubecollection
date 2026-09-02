@@ -1,0 +1,22 @@
+# variant: gan-356-x-v2--standard
+# Pass 4. GAN356 X V2, matte-finished, reusing the GAN356 XS core.
+id: gan-356-x-v2--standard
+entity: variant
+model_id: gan-356-x-v2
+name: "GAN356 X V2"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  coating: matte
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan-356-x-v2]
+    note: "'outfitted with a matte exterior.'"
+  /config/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-gan-356-x-v2]
+    note: "'shares the same dual adjustment core as GAN's most recent flagship, the GAN 356 XS.'"

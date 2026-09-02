@@ -1,0 +1,19 @@
+# derivation
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: derivation, so the schema and this file cannot drift.
+
+id: derivation
+description: "How a value was arrived at, when it was not stated outright by a source."
+values:
+  - value: stated
+    label: "Stated"
+    description: "Given explicitly by the source."
+  - value: measured
+    label: "Measured"
+    description: "Physically measured by the archivist."
+  - value: sampled_from_image
+    label: "Sampled from image"
+    description: "Read off a photograph or render. Carries the capture's lighting and white balance; may never be confirmed."
+  - value: inferred
+    label: "Inferred"
+    description: "Reasoned from other evidence rather than observed. May never be confirmed."

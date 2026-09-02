@@ -1,0 +1,18 @@
+# variant: gan-356-i-carry-2--standard
+# Pass 4. GAN356 i Carry 2: over 2x the battery life of previous i Carry versions, new GES Pro+
+# elasticity system, per TheCubicle's own copy.
+id: gan-356-i-carry-2--standard
+entity: variant
+model_id: gan-356-i-carry-2
+name: "GAN356 i Carry 2"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  battery: "Over 2x the battery life of the previous i Carry versions, per TheCubicle."
+status: stub
+attestations:
+  /smart/battery:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2]

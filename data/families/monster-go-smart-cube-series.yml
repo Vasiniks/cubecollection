@@ -1,0 +1,35 @@
+# family: monster-go-smart-cube-series
+# Pass 2 (family enumeration). Monster Go's smart/electronic 3x3 line, sold from its own
+# GAN-storefront collection distinct from the mechanical Monster Go 3x3 family. See
+# research/notes/models/gan-pass2.md.
+
+id: monster-go-smart-cube-series
+entity: family
+manufacturer_id: monster-go
+name: "Monster Go Smart Cube Series"
+aliases:
+  - "MG3 Ai"
+  - "Monster Go 3Ai Smart Cube"
+positioning: smart
+description: |-
+  Monster Go's smart/electronic 3x3 line, sold from a GAN storefront collection titled
+  "Monster Go Smart Cube Series", distinct from the mechanical "Monster Go 3x3" family
+  (monster-go-3x3). Only one product was found under this collection this pass: the "Monster Go
+  3Ai Smart Cube" ("MG3 Ai" in GAN's own shorthand), which measures solve time/move
+  count/TPS/fluency and supports "online battle" matching against opponents via a companion
+  app, weighing 81g.
+
+  Recorded as its own family, mirroring the split found on the GAN-branded side between
+  mechanical and smart lines (gan-356 vs. gan-i-series/gan-i-carry-series/gan-ui-series),
+  rather than folded into monster-go-3x3, because GAN's own site presents it as its own titled
+  collection.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: confirmed
+    sources: [gancube-collections-monster-go-smart]
+    note: "The collection's own title ('Smart Cube Series') and product description (app connectivity, onboard sensors/battery/circuit board) both directly establish this."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-collections-monster-go-smart]

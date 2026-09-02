@@ -1,0 +1,24 @@
+# source: gancube-swift-block-355s-product
+# GAN's own product page for "Swift Block 355S", titled "Smooth" in its full page title but
+# "Magnetic Cube" in GAN's own nav shorthand and on the sibling collection page — the base,
+# non-MagLev Swift Block 3x3, distinct from "Swift Block 355 Maglev".
+id: gancube-swift-block-355s-product
+entity: source
+kind: manufacturer_official
+title: "Swift Block 355S Smooth 3x3 Puzzle Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/swift-block-355s-3x3-puzzle-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241119102452/https://www.gancube.com/products/swift-block-355s-3x3-puzzle-cube"
+excerpt: |-
+  Page title as captured 2024-11-19: "Swift Block 355S Smooth 3x3 Puzzle Cube | GANCUBE Official
+  Website". The same page's own site navigation lists this product as "Swift Block 355S
+  Magnetic Cube" alongside a separate sibling entry "Swift Block 355 Maglev".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the page title and nav grouping verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for naming and catalogue structure."
+status: sourced

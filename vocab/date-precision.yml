@@ -1,0 +1,15 @@
+# date-precision
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: date-precision, so the schema and this file cannot drift.
+
+id: date-precision
+description: "How precisely a date is known."
+values:
+  - value: year
+    label: "Year"
+  - value: quarter
+    label: "Quarter"
+  - value: month
+    label: "Month"
+  - value: day
+    label: "Day"

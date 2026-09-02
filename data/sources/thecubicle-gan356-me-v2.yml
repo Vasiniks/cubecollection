@@ -1,0 +1,20 @@
+# source: thecubicle-gan356-me-v2
+# TheCubicle's listing for GAN356 Me V2. No explicit succession sentence was found; the "V2"
+# designation itself is the evidence relied on for treating this as GAN356 M E's successor.
+id: thecubicle-gan356-me-v2
+entity: source
+kind: retailer
+title: "GAN356 ME V2 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-me-v2-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250118023030/https://www.thecubicle.com/products/gan356-me-v2-3x3"
+excerpt: "The GAN356 ME V2 3x3 is a great way to get a high-performance GAN 3x3 at a reasonable price. This puzzle is magnetic, has 4 elasticity adjustments and 3 center travel adjustments, and is overall a great 3x3."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain this description verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. Does not itself state a succession from GAN356 M E; the 'V2' naming is the evidence relied on, recorded at reduced confidence."
+status: sourced

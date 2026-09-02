@@ -1,0 +1,28 @@
+# variant: gan-356-i-carry--standard
+# Pass 4. GAN356 i Carry: coin-battery powered (no charger), no gyroscope, 77g, 280 hours
+# playtime, frosted plastic with pearly white internals, per TheCubicle's own copy.
+id: gan-356-i-carry--standard
+entity: variant
+model_id: gan-356-i-carry
+name: "GAN356 i Carry"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  battery: "Replaceable coin battery (CR1632); ~280 hours playtime. No gyroscope."
+config:
+  weight_g: 77
+  coating: frosted
+status: stub
+attestations:
+  /smart/battery:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry]
+    note: "'It has frosted plastic and beautiful pearly white internals.'"

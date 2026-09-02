@@ -1,0 +1,64 @@
+# manufacturer: monster-go
+# Pass 1 (manufacturer register). Sub-brand of GAN, established from documentary evidence, not
+# naming resemblance — see attestations and research/notes/manufacturers/gan-pass1.md.
+
+id: monster-go
+entity: manufacturer
+name: "Monster Go"
+kind: sub_brand
+parent_id: gan
+country: CN
+founded:
+  value: "2020"
+  precision: year
+  qualifier: exact
+aliases:
+  - "Monster-Go"
+  - "MONSTER GO WORLD"
+  - "Mosnter GO"
+website: "https://www.monster-go.com/"
+notes: |-
+  **Parent relationship, established two independent ways.** (1) GAN's own brand-story page
+  names Monster Go under a section literally headed "Our Sub-brands": "Monster Go is a
+  brain-training puzzle toy brand with cultivating children's motors as its center"
+  (gancube-brand-story-about-us). (2) Monster Go's own official site independently states
+  "Powered by GANCUBE" in its own page title and describes itself in GAN's voice ("As a
+  World-Leading speedcube brand, GANCUBE has created... we insist on GAN's outstanding
+  quality"), AND its footer carries the identical registered legal entity
+  (广州淦源智能科技有限公司) and the identical ICP filing number (粤ICP备16068632号) as GAN's
+  own Chinese-domestic site (monster-go-official-home). An ICP filing is issued to a specific
+  registered operator, so this is documentary, not resemblance-based. (3) GAN's own
+  international storefront lists "Shop Mosnter GO" [sic, GAN's own typo] as one of only three
+  top-level shop sections on gancube.com itself, alongside GANCUBE and Swift Block
+  (gancube-collections-swift-block).
+
+  "Mosnter GO" is recorded as an alias because it appears verbatim in GAN's own live site
+  navigation (a first-party typo, not a third-party misspelling) and is exactly the kind of
+  variant that could otherwise read as a phantom brand.
+
+  No native-language (Chinese) name for Monster Go was located in this pass; only
+  English-language self-description was found on monster-go.com.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [gancube-brand-story-about-us, monster-go-official-home]
+  /parent_id:
+    confidence: confirmed
+    sources: [gancube-brand-story-about-us, monster-go-official-home, gancube-collections-swift-block]
+    note: "Two independent tier-1 first-party sources (GAN's own 'Our Sub-brands' page and Monster Go's own site) agree, corroborated by GAN's own storefront navigation treating Monster Go as one of its own shop sections. See notes field for the full chain, including the matching ICP filing number."
+  /country:
+    confidence: confirmed
+    sources: [monster-go-official-home]
+    note: "Same registered legal entity and address basis as GAN itself (广州淦源智能科技有限公司, Guangzhou)."
+  /founded:
+    confidence: confirmed
+    sources: [gancube-brand-story-about-us]
+    note: "Single tier-1 source stating the year outright ('Brain-training puzzle toy brand, Monster Go, was established' under the 2020 milestone). No independent corroborating source located this pass."
+  /website:
+    confidence: confirmed
+    sources: [monster-go-official-home]
+  /aliases:
+    confidence: probable
+    sources: [monster-go-official-home, gancube-collections-swift-block]

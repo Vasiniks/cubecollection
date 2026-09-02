@@ -1,0 +1,20 @@
+# variant: gan-flagship-11--air
+# Pass 4. "GAN11 Air" — fourth of four Versions on GAN's own GAN11 Series listing, read as the
+# non-magnetic-core tier (no "omnidirectional core-corner" magnets) by analogy to GAN356 Air's
+# own "Air" naming elsewhere in this archive; not independently confirmed for this specific
+# SKU.
+id: gan-flagship-11--air
+entity: variant
+model_id: gan-flagship-11
+name: "GAN11 Air"
+aliases:
+  - { name: "GAN 11 Air", source: gancube-gan11-series-product }
+scope_class: core
+edition:
+  designation: "Air"
+  types: [standard]
+status: stub
+attestations:
+  /edition/designation:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]

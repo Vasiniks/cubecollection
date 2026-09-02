@@ -1,0 +1,19 @@
+# variant: monster-go-magnetic-3x3--standard
+# Pass 4. The only sold configuration found this pass: 48 magnets per GAN's own copy; no size or
+# weight specification located.
+id: monster-go-magnetic-3x3--standard
+entity: variant
+model_id: monster-go-magnetic-3x3
+name: "Monster Go Magnetic 3x3"
+aliases:
+  - { name: "Monster Go Magnetic 3x3 Stickerless Speed Cube", source: gancube-monster-go-magnetic-3x3-specifications }
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_strength: "48 magnets, per GAN's own copy; exact arrangement not stated."
+status: stub
+attestations:
+  /config/magnet_strength:
+    confidence: confirmed
+    sources: [gancube-monster-go-magnetic-3x3-specifications]

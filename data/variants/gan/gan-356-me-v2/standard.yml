@@ -1,0 +1,17 @@
+# variant: gan-356-me-v2--standard
+# Pass 4. GAN356 Me V2, same feature language as GAN356 M E (4-elasticity/3-center-travel
+# adjustment) plus a "V2" version numeral.
+id: gan-356-me-v2--standard
+entity: variant
+model_id: gan-356-me-v2
+name: "GAN356 Me V2"
+aliases:
+  - { name: "GAN356 M E V2", source: thecubicle-gan356-me-v2 }
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-me-v2]

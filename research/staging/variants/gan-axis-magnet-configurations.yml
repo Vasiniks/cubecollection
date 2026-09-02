@@ -1,0 +1,63 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN's magnet-configuration axis, including its user-adjustable magnet systems, and whether
+  a given magnet configuration is a purchasable/swappable configuration (variant-level) or a
+  design-level difference (model-level). Maps to config.magnet_configuration and
+  magnet_strength in DATA_MODEL §3.5.2, vocab/magnet-configurations.yml.
+
+findings:
+  - candidate: "GMS — GAN Magnetic System (interchangeable magnet capsules, user-adjustable without disassembly)"
+    likely_model: { name: "GAN356 X and onward — the flagship/mainline pattern from 2018-2019 through at least GAN15/16", confidence: confirmed }
+    aliases: ["Numerical IPG + GMS", "interchangeable magnet capsules", "Magnetic capsules (GMS)"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/patents/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"TECH | GMS — Benefitted by the invention of GAN Magnetic System, magnet strengths can be easily exchanged for the first time. The GMS consists of patented magnet slots and flash magnet capsules, including 3 sets of magnet capsules and one non-magnet capsule. Within 30 seconds, you can exchange the magnet strength only by hand. Three magnet capsules, strong or weak, exchange at will. One set of non-magnet capsule, magnetic and magnetless hand feeling, easy to switch.\""
+      - url: "https://www.thecubicle.com/products/gan356-x-ipg-v5"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The X is loaded with a host of unique, innovative technologies, including the new GAN Magnetic System, a set of interchangeable magnetic capsules... Comes with: Gan 356 X (IPG v5), Magnetic capsules (GMS), GES nuts (IPG v5), GES/GMS manual.\""
+    open_questions:
+      - "This is a single physical product whose magnet strength is user-swappable via included capsules, not multiple separately-sold SKUs — it maps naturally to vocab's `adjustable` value on ONE variant record, with `magnet_strength` describing the swap range in prose. Should NOT be split into 'strong/medium/weak/non-magnetic' variant records; the whole point of GMS is that one purchase covers all four."
+
+  - candidate: "Corner-core / omnidirectional magnetic core (fixed core-to-corner magnet array, distinct from the older edge-to-corner-only positioning magnets)"
+    likely_model: { name: "GAN 11 M Pro (2020 flagship) onward", confidence: confirmed }
+    aliases: ["omnidirectional core positioning magnetic system", "Magnetic Core 2.0"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/gancubes-core-technology/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"2020 – Magnetic Core — This year, GAN has once again ushered in a new era of magnetic systems. The premium GAN 11 M Pro revealed a surprise to the global cubing community — the magnetic core. Its standout feature is the inclusion of 8 omnidirectional magnetic components mounted on the core, introducing an innovative omnidirectional core positioning magnetic system. In 2021, the introduction of Magnetic Core 2.0 heralded a new age of magnetic levitation in speedcubing. This upgraded version not only accomplishes a record-setting 30° automatic alignment, but by synergizing with the angular magnetic force of the corner piece, it generates repulsion.\""
+      - url: "https://www.thecubicle.com/products/cubicle-custom-gan-11-m-pro-3x3-soft-texture-coated"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"GAN's new omnidirectional magnetic core is the industry's first corner-core magnetic positioning system... In addition to the 48 traditionally placed magnets inside the cube, the GAN 11 M Pro features 8 pairs of magnets stemming from the core to each corner base.\""
+    open_questions:
+      - "This maps closely to vocab's `core_corner` value, but the 2021 'Magnetic Core 2.0' text explicitly ties the SAME lineage directly into MagLev ('a new age of magnetic levitation'). Needs pass-5 confirmation of exactly which model generation is the boundary between 'core-corner magnets, springs still present' and 'core-corner magnets, MagLev replaces springs' — see gan-axis-maglev.yml."
+
+  - candidate: "Air S vs Air SM — presence/absence of magnets as two named SKUs of nominally the same shell"
+    likely_model: { name: "GAN 356 Air S / Air SM (2018-2019)", confidence: confirmed }
+    aliases: ["Air S Master (non-magnetized)", "Air SM (magnetized)"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-356-air-s-master"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN 356 Air S Master is now available! This version is the non-magnetized version of the Air SM with a design that prioritizes soft feel and light weight... The magnet slots that are present in the Air SM have been removed in the Air S in order to make the puzzle as light as possible.\""
+    open_questions:
+      - "IMPORTANT BOUNDARY QUESTION, staged in full in gan-boundary-questions.yml: the source says magnet SLOTS were physically 'removed' in the Air S, i.e. the piece moulding itself differs (no magnet cavity), not just an assembly-time choice to omit magnets in an otherwise-identical piece. Under DATA_MODEL §4.2's test ('could the manufacturer produce both from the same design by choosing different parts at assembly? Yes → variant, No → model'), a different piece mould plausibly argues for two MODELS, not two variants of one model — contradicting the materiality-test guidance that magnet configuration differences default to variant-level. Recommend the model-researcher/main agent examine whether 'Air S' and 'Air SM' were treated as the same GAN356 Air generation or split."
+
+conflicts: []
+
+not_found:
+  - "No GAN 3x3 using vocab's `monopole` magnet-configuration value was identified this pass."
+  - "No GAN 3x3 marketed with a literal 'no magnets at all, never magnetic' configuration as a mainline flagship SKU was found beyond the historical Air S case above — GAN's mainline products from 356 X onward appear to ship magnetic by default with strength adjustment rather than a magnet/no-magnet choice."

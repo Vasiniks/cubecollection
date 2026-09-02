@@ -1,0 +1,34 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Identical to service-coated.yml in every fingerprint input EXCEPT its modified_from target.
+# Before the base variant joined the fingerprint these two collided, which is how the gap was
+# found — a real GAN16 mod and a real GAN16 MAX mod produced one fingerprint. If this fixture
+# ever collides again, that regression has returned.
+id: zz-testbrand-tf-v1--standard--zz-service-coated
+entity: variant
+model_id: zz-testbrand-tf-v1
+name: ZZ Testbrand TF V1 Standard, ZZ Test Service coating
+scope_class: core
+edition:
+  types: [standard]
+  designation: Flagship
+config:
+  coating: aftermarket
+service:
+  serviced_by: zz-testservice
+  program: "ZZ Custom Line"
+  modifications:
+    - kind: coating
+      detail: "Fixture coating treatment on a different base."
+      source: zz-src-retailer
+relationships:
+  - type: modified_from
+    target: zz-testbrand-tf-v1--standard-stickerless
+    target_entity: variant
+status: drafted
+attestations:
+  "/relationships/0":
+    confidence: probable
+    sources: [zz-src-retailer]
+  "/service/serviced_by":
+    confidence: probable
+    sources: [zz-src-retailer]

@@ -1,0 +1,70 @@
+# model: monster-go-cloud-rainbow-ut-3x3
+# Pass 3 (model enumeration). A Monster Go 3x3 sold from its own listing bundling four
+# colourway options ("Cloud - blue", "Cloud - pink", "Rainbow", "UT", each also in a "premium
+# package" tier) from one product page — clean variant-level colourway evidence within this
+# model, per DATA_MODEL worked decision C. Whether this model itself is a genuinely separate
+# design from monster-go-magnetic-3x3, or the same design under a second marketing URL, is
+# flagged as an open `duplicate_of` question rather than resolved. See
+# research/notes/models/gan-pass3.md.
+id: monster-go-cloud-rainbow-ut-3x3
+entity: model
+family_id: monster-go-3x3
+manufacturer_id: monster-go
+name: "Monster Go Cloud & Rainbow & UT 3x3"
+scope_class: core
+generation:
+  label: "Cloud & Rainbow & UT"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  GAN's own product page sells four colourway options ("Cloud - blue", "Cloud - pink",
+  "Rainbow", "UT") plus a "premium package" tier of each, all from one listing
+  (gancube-monster-go-cloud-rainbow-ut-versions) — a clean, single-listing colourway-variant
+  case, matching worked decision C (same design, new colours, one model).
+
+  Whether this design is itself the same underlying model as "Monster Go Magnetic 3x3 Cube"
+  (monster-go-magnetic-3x3) — both are magnetic, similarly priced (this model's own family-page
+  excerpt records $11.90-$11.99 vs. the standard model's $11.90), and this model's own URL
+  slug shares the phrase "magnetic-speed-cube" with the standard model's product description —
+  is genuinely unresolved. No source found this pass states they share or do not share tooling.
+  Recorded here as a separate model per DATA_MODEL §4.2's default-to-split guidance under
+  unclear evidence, with a `duplicate_of` relationship pointing at monster-go-magnetic-3x3 so
+  the suspicion is not silently dropped and the duplicate queue can keep raising it.
+status: drafted
+relationships:
+  - type: duplicate_of
+    target: monster-go-magnetic-3x3
+    target_entity: model
+    note: "Provisional. Same general design category (magnetic, similarly priced, overlapping URL vocabulary), but no source found this pass states they share tooling or are the same underlying product. Recorded as a flagged suspicion, not a claim, per RESEARCH_SPEC worked decision E's guidance for unconfirmed resemblance."
+attestations:
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet count or arrangement was stated on this page."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. The earliest located capture (2024-11-12) falls inside gancube.com's site-wide November 2024 archival event and is not treated as a launch-date floor."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found; 'Cloud & Rainbow & UT' is this archive's own use of the product's own name, not a stated generation label."
+  /relationships/0:
+    confidence: uncertain
+    sources: [gancube-collections-monster-go-3x3, gancube-monster-go-cloud-rainbow-ut-versions, gancube-monster-go-magnetic-3x3-specifications]
+    note: "Circumstantial (pricing and URL-vocabulary similarity), not a manufacturer statement. See description."
+  /description:
+    confidence: probable
+    sources: [gancube-monster-go-cloud-rainbow-ut-versions]

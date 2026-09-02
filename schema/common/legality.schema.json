@@ -1,0 +1,58 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "wca_status": {
+      "type": "string",
+      "x-vocab": "wca-status",
+      "x-critical": true
+    },
+    "as_of": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "basis": {
+      "type": "string"
+    },
+    "historical": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "status": {
+            "type": "string",
+            "x-vocab": "wca-status"
+          },
+          "from": {
+            "$ref": "https://cubecollection/schema/common/date.schema.json"
+          },
+          "to": {
+            "$ref": "https://cubecollection/schema/common/date.schema.json"
+          },
+          "regulation_reference": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "from"
+        ]
+      },
+      "description": "Populated only where evidence shows the status or the regulation differed. Today's status is not applied retroactively."
+    }
+  },
+  "required": [
+    "wca_status"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/common/legality.schema.json",
+  "title": "WCA competition eligibility, including historical periods"
+}

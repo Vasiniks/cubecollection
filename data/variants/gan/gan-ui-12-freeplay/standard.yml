@@ -1,0 +1,17 @@
+# variant: gan-ui-12-freeplay--standard
+# Pass 4. "GAN12 UI FreePlay Smart Speed Cube" — a smart cube built on the mechanical GAN12
+# base. No further variant-level differentiation (coating, colourway) was located this pass.
+id: gan-ui-12-freeplay--standard
+entity: variant
+model_id: gan-ui-12-freeplay
+name: "GAN12 ui FreePlay"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [gancube-gan12-ui-freeplay-product]

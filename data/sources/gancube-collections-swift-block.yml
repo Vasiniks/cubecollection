@@ -1,0 +1,22 @@
+# source: gancube-collections-swift-block
+# GAN's own international storefront selling Swift Block products directly, with Swift Block
+# named alongside GANCUBE and Monster Go in the site's own top-level shop navigation. Second,
+# independent line of tier-1 evidence for both sub-brand relationships beyond the brand-story
+# "Our Sub-brands" page.
+id: gancube-collections-swift-block
+entity: source
+kind: manufacturer_official
+title: "Swift Block Speed Cubes and Puzzles | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/collections/swift-block"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241125031550/https://www.gancube.com/collections/swift-block"
+excerpt: "Site navigation on GAN's own international storefront: \"Shop Best Sellers Shop GANCUBE Shop Mosnter GO Shop Swift Block\" (the 'Mosnter GO' spelling is verbatim from the live navigation markup, GAN's own typo for Monster Go). The Swift Block collection is served directly at gancube.com, GAN's own domain, rather than at an independently registered Swift Block site."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'Shop GANCUBE Shop Mosnter GO Shop Swift Block' and the page title crediting 'GANCUBE Official Website'. This is the earliest capture of this collection URL found in the CDX index (2024-11-25); the brand-story page's own milestone dates the Swift Block launch to 2023, so the collection's appearance on gancube.com's storefront postdates the brand's market debut."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own storefront including its own site navigation, tier 1 for GAN's own organisational and catalogue structure. Cited only for the fact that GANCUBE, Monster Go, and Swift Block are the three shop sections of GAN's own site, not for any comparative or superlative claim."
+status: sourced

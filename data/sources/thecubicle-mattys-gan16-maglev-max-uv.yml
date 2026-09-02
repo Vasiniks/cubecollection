@@ -1,0 +1,20 @@
+# source: thecubicle-mattys-gan16-maglev-max-uv
+# A GAN 3x3 set up by TheCubicle to a named competitor's specification and sold under that
+# competitor's name — a second, currently live, form of TheCubicle's service on GAN cubes.
+id: thecubicle-mattys-gan16-maglev-max-uv
+entity: source
+kind: retailer
+title: "Matty's GAN16 MagLev MAX UV 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mattys-gan16-maglev-max-uv-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250925155129/https://www.thecubicle.com/products/mattys-gan16-maglev-max-uv-3x3"
+excerpt: "This signature version of the puzzle is set up as an exact replica of the main 3x3 used by professional speedcuber Matty Hiroto Inaba."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'signature version' and 'Matty'."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "First-party description by the servicing organisation. The product sits in TheCubicle's own 'Signature Series' collection alongside two further GAN 3x3s, Tymon's GAN12 M MagLev UV 3x3 and Matty's GAN12 M MagLev UV 3x3 (NAR Edition)."
+status: sourced

@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "event"
+    },
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "kind": {
+      "type": "string",
+      "x-vocab": "event-kinds"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    },
+    "attestations": {
+      "$ref": "https://cubecollection/schema/common/attestation.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "name",
+    "kind",
+    "status"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/event.schema.json",
+  "title": "A named event a commemorative edition refers to"
+}

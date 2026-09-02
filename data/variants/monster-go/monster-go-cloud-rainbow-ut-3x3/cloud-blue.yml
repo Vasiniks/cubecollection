@@ -1,0 +1,20 @@
+# variant: monster-go-cloud-rainbow-ut-3x3--cloud-blue
+# Pass 4. "Cloud - blue" — one of four colourway options sold from GAN's own single Monster Go
+# Cloud & Rainbow & UT listing. A "(premium package)" tier of the same colourway is also sold
+# from this listing; not recorded as a second variant (packaging/accessory difference, not
+# independently confirmed as a material change) pending direct evidence of what "premium
+# package" adds.
+id: monster-go-cloud-rainbow-ut-3x3--cloud-blue
+entity: variant
+model_id: monster-go-cloud-rainbow-ut-3x3
+name: "Monster Go Cloud (Blue)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Cloud - blue"
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-monster-go-cloud-rainbow-ut-versions]

@@ -1,0 +1,80 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  Whether GAN sells the same mechanical cube stickered, stickerless, or unstickered (a DIY-kit
+  state distinct from either), and whether this is a purchasable configuration or a colourway
+  attribute. Maps to colorway.application in DATA_MODEL §3.6.
+
+findings:
+  - candidate: "Stickered (\"Master\" tier, sticker set pre-applied)"
+    likely_model: { name: "Gans 356 Air (2016 flagship) and its S/SM sub-line", confidence: confirmed }
+    aliases: ["Master Version", "half bright sticker set", "full bright sticker set"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gans-356-air-master-unstickered"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Master Version: This is the Master version of the Gans 356 Air. The Master version features the Gans half bright sticker set pre-applied to the cube.\" ... \"Advanced and Standard versions of the Gans 356 Air may become available in the future, but the Master version will be released first.\" ... \"Note: This DIY Kit actually comes assembled but without any stickers (Gans Half-Bright stickers + logo are included with the DIY Kit). This is ideal for someone who plans to resticker the cube anyway.\""
+      - url: "https://www.thecubicle.com/products/gans-core-v4"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Confirms the same-era product naming pattern (Gans Core V4 as a spare part \"for the Gans 356 Air\") establishing the Gans 356 Air ran multiple named sub-editions (Master, Advanced, Standard) as its manufacturer edition-designation tier."
+    open_questions:
+      - "'Master' here is simultaneously a sticker-set tier AND an edition designation (rule 7 of the materiality test) — flagged in gan-boundary-questions.yml as an overlap between two materiality triggers on the same object."
+
+  - candidate: "Unstickered (DIY / bare-plastic, sold as its own SKU)"
+    likely_model: { name: "Gans 356 Air Master, Gans 356 S/S V2, GAN 356 Air S/SM", confidence: confirmed }
+    aliases: ["DIY Kit", "Unstickered"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gans-356-air-master-unstickered"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Product exists at its own URL/SKU, distinct from the stickered \"Gans 356 Air Master\" listing, priced and sold separately: \"This DIY Kit actually comes assembled but without any stickers.\""
+      - url: "https://www.thecubicle.com/products/gan-356-air-s-master-unstickered"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Each Air S (Master) - Unstickered comes with a set of GAN classic stickers (not full-bright, which is out of stock)... Please note that the logo sticker and GES V2 spring set are NOT included.\" — sold as a separate configuration from the standard stickered \"GAN 356 Air S Master\" listing."
+    open_questions:
+      - "Both 'unstickered' listings found still ship WITH a sticker set (uninstalled), rather than a genuinely sticker-free stickerless body. This is closer to colorway.application: hybrid or a packaging/assembly-state distinction than to 'stickerless' in the DATA_MODEL sense (colour in the plastic itself). Needs the base plastic colour checked per SKU before assigning an application value — do not assume 'unstickered' = 'stickerless' without confirming the body plastic is itself coloured."
+
+  - candidate: "Stickerless (colour in the plastic, GAN's default from circa 2016 onward)"
+    likely_model: { name: "GAN 356 Air standard retail colourways (Black/White/Primary), and effectively all mainline GAN 3x3s from GAN356 Air onward", confidence: probable }
+    aliases: []
+    confidence: probable
+    evidence:
+      - url: "https://www.thecubicle.com/products/gans-356-air"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Live listing offers colourway options \"Black\", \"White\", \"Primary\" for the standard Gans 356 Air — consistent with stickerless body colour rather than an applied sticker set, though the page does not use the word 'stickerless' verbatim in the portion captured this pass."
+    open_questions:
+      - "Verbatim 'stickerless' language from GAN or TheCubicle was not captured for the standard retail line this pass — a reminder for pass 5 per DATA_MODEL's own warning that 'stickerless' must be populated as application, not treated as a default absence of information."
+
+  - candidate: "Hybrid (one side/one set of stickers included for user application on an otherwise stickerless cube)"
+    likely_model: { name: "Many later GAN limited/seasonal editions — e.g. GAN356 ME Christmas Edition, GAN356 i Carry Brainstorm Voyage Edition, AQUALIS GAN16 MagLev MAX", confidence: probable }
+    aliases: ["special edition sticker (1 side only)", "DIY stickers"]
+    confidence: probable
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan356-i-carry-2-brainstorm-voyage-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN356 i Carry (Brainstorm Voyage Edition) is a standard i Carry that comes in special edition packaging with some cool extras... a set of stickers for you to place on one side of the cube.\""
+      - url: "https://www.thecubicle.com/products/gan356-me-christmas-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"This holiday edition also includes a Christmas-themed sticker to personalize one side of your cube.\""
+    open_questions:
+      - "Is a single-side, user-applied optional sticker sufficient to trigger colourway/sticker-type materiality (rule 6) on its own, when the base cube is otherwise physically identical to the standard SKU (same plastic colours, same coating)? Staged as a boundary question in gan-boundary-questions.yml — this pattern recurs across many seasonal editions and the answer determines whether a large number of 'special edition sticker' drops are new variants or just bundled accessories."
+
+conflicts: []
+
+not_found:
+  - "No GAN product using colorway-application vocab's 'printed' or 'inlaid' values was identified for any 3x3 in this pass."
+  - "A genuinely stickerless-only (no sticker set included at all, ever) SKU distinguished by GAN's own marketing language as such was not directly quoted this pass — only inferred from colourway-name-only listings (Black/White/Primary)."

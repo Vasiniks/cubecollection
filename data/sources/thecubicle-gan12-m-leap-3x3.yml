@@ -1,0 +1,22 @@
+# source: thecubicle-gan12-m-leap-3x3
+# TheCubicle's earliest-located listing for a GAN12 product (the "M Leap" tier, i.e. magnetic
+# but not MagLev). Used as the dating floor for gan-flagship-12: the product existed by this
+# date, which is not part of gancube.com's own November 2024 site-wide archival event, so this
+# floor is treated as informative rather than an artifact of that event.
+id: thecubicle-gan12-m-leap-3x3
+entity: source
+kind: retailer
+title: "GAN12 M Leap 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan12-m-leap-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20211205203711/https://www.thecubicle.com/products/gan12-m-leap-3x3"
+excerpt: "Page title as captured 2021-12-05: \"GAN12 M Leap 3x3 – TheCubicle\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to resolve with this exact title at this date. Body copy beyond the title was not extracted this pass; the capture is cited only for the product's existence and dating floor."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail listing, tier 2, used only to establish that GAN12 existed by 2021-12-05 — a genuine dating floor, not a gancube.com-archival-event artifact (gancube.com's own earliest capture of a GAN12 product page is November 2024, which this pass treats as evidence of the site's own archival timing rather than the product's launch)."
+status: sourced

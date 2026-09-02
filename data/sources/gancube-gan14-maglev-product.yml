@@ -1,0 +1,28 @@
+# source: gancube-gan14-maglev-product
+# GAN's own current product page for "GAN14". Cited for the "Versions" selector confirming
+# "Maglev Pro" vs "Maglev" (crossed with UV/Frosted) are all variant-level options of ONE model
+# "GAN14", not separate models — the same pattern established on GAN12's page.
+id: gancube-gan14-maglev-product
+entity: source
+kind: manufacturer_official
+title: "GAN14 | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan14-maglev-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819145105/https://www.gancube.com/products/gan14-maglev-speed-cube"
+excerpt: |-
+  "Versions" purchase selector on this one page: "Maglev Pro_UV Coated", "Maglev Pro_Frosted",
+  "Maglev_UV Coated", "Maglev_Frosted" — four named tier/coating combinations sold from a single
+  listing. Description: "1296 Unique Configurations - The GAN14 Maglev is equipped with 1296
+  unique configuration options... Enhanced Core Positioning 4.0 - Equipped with 88 magnets..."
+  A verified customer review on the same page reads in part: "...its improvements over previous
+  GAN flagships (like the GAN 12 or 13) feel incremental rather than revolutionary" — a
+  community reviewer's own framing of GAN12/13/14 as a sequential flagship succession.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the Versions list, the description paragraph, and the quoted customer review verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for product structure. The quoted customer review is user-generated content on a manufacturer page and is not itself an admissible fact source (tier 5) — it is retained here only as descriptive colour illustrating that community usage already treats GAN12/13/14 as sequential flagships, corroborating rather than establishing that reading."
+status: sourced

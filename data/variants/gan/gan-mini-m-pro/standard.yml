@@ -1,0 +1,27 @@
+# variant: gan-mini-m-pro--standard
+# Pass 4. GAN Mini M Pro base configuration: 53mm, 7 magnetic settings, 16 tension/compression
+# settings.
+id: gan-mini-m-pro--standard
+entity: variant
+model_id: gan-mini-m-pro
+name: "GAN Mini M Pro"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  size_mm: 53
+  magnet_configuration: adjustable
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-gan-mini-m-pro-3x3]
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-gan-mini-m-pro-3x3]
+    note: "'7 different magnetic settings.'"
+  /config/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-gan-mini-m-pro-3x3]
+    note: "'16 different tension/compression settings.'"

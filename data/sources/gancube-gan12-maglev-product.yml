@@ -1,0 +1,33 @@
+# source: gancube-gan12-maglev-product
+# GAN's own current product page for "GAN12". The single most load-bearing source in the whole
+# Flagship Series pass-3 enumeration: it states outright that "GAN12 Maglev is the 12th
+# generation of GANCUBE" — direct manufacturer-declared generation numbering for the numbered
+# flagship succession — and its own "Versions" selector sells "GAN12 M Leap" and "GAN12 Maglev"
+# (plus UV/Frosted coating and a Sticker Version) from ONE listing, confirming Leap vs Maglev is
+# a variant-level core/magnet choice within one model, not two models.
+id: gancube-gan12-maglev-product
+entity: source
+kind: manufacturer_official
+title: "GAN12 | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan12-maglev-3x3-magnetic-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819145105/https://www.gancube.com/products/gan12-maglev-3x3-magnetic-speed-cube"
+excerpt: |-
+  Overview section: "GAN 12 Series-Flagship Magnet Nova — GAN12 Maglev is the 12th generation
+  of GANCUBE and is the testimony of an innovative mechanism: a magnetic tensioning system.
+  Compared with traditional-springs cubes, GAN12 Maglev used embedded magnets to replace
+  traditional springs."
+  "Versions" purchase selector on this one page: "Maglev_Frosted", "M Leap", "Maglev_UV Coated",
+  "Maglev Sticker Version (Black Internal)".
+  Description block: "A NEW ERA WITH GAN12 - The GAN12 M Leap features GES Pro+ technology and
+  weighs 61 grams, while the GAN12 Maglev uses the new Magnetic GES system at 66 grams. Both
+  versions feature Enhanced Core Positioning 2.0..."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain '12th generation of GANCUBE', the Versions list, and the 'A NEW ERA WITH GAN12' paragraph verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own generation numbering and product structure. 'The 12th generation of GANCUBE' is GAN's own explicit self-description of its numbering scheme, not a third-party inference, and is treated here as the anchor evidence that the whole GAN11-17 numbered succession is manufacturer-declared generation numbering (generation.basis: manufacturer_declared), not a community convention imposed on bare model numbers."
+status: sourced

@@ -1,0 +1,30 @@
+# source: gancube-cn-gan-v100-nav
+# GAN's own Chinese-domestic product page for GAN V100, cited for its site navigation, which
+# groups V100 under "磁力系列" (Magnetic Series) rather than under "旗舰魔方" (Flagship Cube) —
+# a separate, adjacent nav category on the same site. Independent (English vs. Chinese site)
+# corroboration of the same boundary finding as thecubicle-gan-v100-maglev-uv-3x3 and
+# gancube-gan17-magdrive-product: GAN V100 is not grouped with the numbered flagship
+# succession (GAN11-17) by GAN's own catalogue structure.
+id: gancube-cn-gan-v100-nav
+entity: source
+kind: manufacturer_official
+title: "GAN V100 – GAN魔方"
+publisher: "GANCUBE (gancube.cn)"
+url: "https://www.gancube.cn/gan-v100/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251109225643/https://www.gancube.cn/gan-v100/"
+excerpt: |-
+  Site navigation (verbatim), top-level shop categories: "智能系列 磁力系列 旗舰魔方 定制系列
+  异型系列 套装" (Smart Series / Magnetic Series / Flagship Cube / Customize Series / Shape-mod
+  Series / Sets). Under "磁力系列" (Magnetic Series): "GAN V100", "GAN16 Maglev", ... "GAN562 M".
+  Under "旗舰魔方" (Flagship Cube), a separate heading on the same page: "GAN16 Maglev", ...
+  — GAN V100 is listed once, under Magnetic Series, and does not appear under the Flagship Cube
+  heading.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain both '磁力系列' and '旗舰魔方' as distinct nav headings, with 'GAN V100' appearing under the former and 'GAN16 Maglev' repeated under both — i.e. GAN16 is catalogued under both Magnetic Series and Flagship Cube, while V100 is catalogued only under Magnetic Series."
+accessed: "2026-09-01"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own site navigation/catalogue structure, tier 1 for how GAN itself categorises its own products. Nav structure is dynamic and specific to this capture date."
+status: sourced

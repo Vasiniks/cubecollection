@@ -1,0 +1,72 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN's limited-edition program: naming, whether run sizes are ever stated, and how large this
+  axis actually is. Headline finding of the whole pass: GAN runs limited editions constantly
+  and on a recurring seasonal cadence on its flagship line, and — contrary to the usual
+  expectation that run size is almost never documented — TWO separate, explicit, numbered run
+  sizes were found and are recorded below. This is the exception, not the rule; most entries
+  below have run_size: null and that is stated, not omitted.
+
+findings:
+  - candidate: "GAN 356 Air UM Max Park Signature Edition — run size explicitly stated AND numbered"
+    likely_model: { name: "GAN 356 Air UM", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-356-air-um-max-park-signature-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Limited Edition: To commemorate Max Park's 6.39 WR average, only 639 of the GAN 356 Air UM Max Park Signature Edition will be available. Each puzzle will ship with a numbered VIP card, with numbers from 50001 to 50639.\""
+    open_questions:
+      - "run_size: 639, numbered: true, numbering_range: \"50001–50639\" — both directly stated by the retailer. This is also a signature edition and a commemorative edition simultaneously (edition.types multi-valued) — cross-referenced in gan-axis-signature-editions.yml. A customer review claims 'I believe they sold just over 400' — this is a weaker, contradicting, unsourced anecdotal figure; the official 639/numbered-card claim should be preferred and the anecdote left out of run_size entirely, not averaged or blended."
+
+  - candidate: "GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition) — run size explicitly stated"
+    likely_model: { name: "GAN16 MagLev MAX", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3-dual-wr-limited-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Limited to just 1,111 units worldwide, the GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition) is your chance to own a piece of speedcubing history.\""
+    open_questions:
+      - "run_size: 1111. Not numbered per-unit (no individual numbering scheme stated, unlike the Max Park edition above) — record numbered: false or unknown rather than assuming numbering exists just because run_size does."
+
+  - candidate: "GAN's flagship seasonal limited-edition program (no run size stated)"
+    likely_model: { name: "GAN16 MagLev MAX: AQUALIS (2026 Summer), Amyth (Winter)", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.com/products/aqualis-gan16-maglev-max-2026-summer-limited-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "No run-size, unit count, or numbering language appears anywhere on the captured product page (title, pricing, box contents). run_size: null."
+      - url: "https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Cross-sell block for Amyth: \"Note: Due to the special nature of limited-edition products, returns or exchanges will not be accepted once sold, except for issues related to product quality or shipping damage.\" — 'limited' is treated as a real sales-policy fact (final-sale status) even without a stated run size."
+    open_questions: []
+
+  - candidate: "GAN's earlier (2019-2021) named limited-edition colourway wave — likely a distinct, possibly discontinued, program"
+    likely_model: { name: "GAN356 Air S / GAN356 X: Love Pink, Flora Blue, Crystal Blue, Evergreen, Antique Rhyme, GAN11 Kun, GAN11 Summer, GAN12 Cheering, GAN12 Chan, GAN13 Kunlun, GAN13 Coloré, GAN14 Galaxy, GAN14 Pro Aurora, GAN15 Zenith, EmeraidoX/Emeraldox", confidence: reported }
+    aliases: []
+    confidence: reported
+    evidence:
+      - url: "https://www.gancube.cn/en/patents/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Full 'Limited Edition' nav category list — see gan-axis-colourways.yml for the verbatim excerpt. Names exist as a GAN-declared catalog category; per-product run size language was not captured for any of these this pass (several are pre-2026 and delisted from the live gancube.com store; web.archive.org was unreachable all session)."
+    open_questions:
+      - "This is the single largest concentration of leads this pass produced NO run-size data for. Every one of these names should be treated as run_size: null until a dedicated pass 5 fill, and none should be assumed non-numbered or numbered without a source."
+
+conflicts: []
+
+not_found:
+  - "No GAN source stating a run size for AQUALIS, Amyth, or any of the ~15 named colourways on the gancube.cn 'Limited Edition' nav list (aside from the two Max-Park/Dual-WR cases above) was found. This is the expected state per the hard constraint (never estimate, never infer from 'rare' language) and is recorded as such."
+  - "No secondary/collector marketplace evidence (e.g. eBay sold listings, community trade threads) was searched this pass for corroborating scarcity language on any limited edition — flagged as a lead for a future pass, not chased here since it would only support rarity.factors, not run_size."

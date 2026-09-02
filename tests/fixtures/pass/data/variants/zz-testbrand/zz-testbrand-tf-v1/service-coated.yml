@@ -1,0 +1,41 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Demonstrates the correct aftermarket shape after the F9 change: config records what the
+# object IS (an aftermarket-coated cube), service records what was done and by whom, and
+# modified_from names the exact base variant. Rule 39 requires service and modified_from
+# together.
+
+id: zz-testbrand-tf-v1--flagship-uv--zz-service-coated
+entity: variant
+model_id: zz-testbrand-tf-v1
+name: ZZ Testbrand TF V1 Flagship, ZZ Test Service coating
+scope_class: core
+edition:
+  types: [standard]
+  designation: Flagship
+config:
+  coating: aftermarket
+service:
+  serviced_by: zz-testservice
+  program: "ZZ Custom Line"
+  modifications:
+    - kind: coating
+      detail: "Fixture coating treatment."
+      source: zz-src-retailer
+    - kind: magnets_replaced
+      detail: "Fixture magnet swap, exercising a multi-modification record."
+      source: zz-src-retailer
+relationships:
+  - type: modified_from
+    target: zz-testbrand-tf-v1--flagship-uv
+    target_entity: variant
+status: drafted
+attestations:
+  "/relationships/0":
+    confidence: probable
+    sources: [zz-src-retailer]
+  "/service/serviced_by":
+    confidence: probable
+    sources: [zz-src-retailer]
+  "/service/modifications":
+    confidence: probable
+    sources: [zz-src-retailer]

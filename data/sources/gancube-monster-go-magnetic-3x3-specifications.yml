@@ -1,0 +1,26 @@
+# source: gancube-monster-go-magnetic-3x3-specifications
+# The same GAN product page as gancube-monster-go-magnetic-3x3-product (created in a prior
+# session; not overwritten here), re-cited under a new id for its own body marketing copy,
+# which states the magnet count directly: 48 magnets.
+id: gancube-monster-go-magnetic-3x3-specifications
+entity: source
+kind: manufacturer_official
+title: "Monster Go Magnetic 3x3 Stickerless Speed Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-3x3-magnetic-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241112093147/https://www.gancube.com/products/monster-go-3x3-magnetic-cube"
+excerpt: |-
+  "Affordable Magnetic Speed Cube - The Monster Go 3×3 magnet cube offers premium features at a
+  budget-friendly price. With 48 magnets inside, it ensures consistently smooth turns. Unlike
+  other affordable cubes, it boasts a unique mechanism typically found in speed cubes priced
+  over $20." No numeric size or weight specification was found on this page (no
+  "Specifications" table, unlike the sibling Monster Go 352 M page).
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the '48 magnets' description verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own specification (48 magnets). The 'unique mechanism typically found in speed cubes priced over $20' clause is comparative marketing copy (tier 4 for that specific claim), not treated as a specification."
+status: sourced

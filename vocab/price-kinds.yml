@@ -1,0 +1,22 @@
+# price-kinds
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: price-kinds, so the schema and this file cannot drift.
+
+id: price-kinds
+description: "What kind of price fact an observation records. These are different species of fact and must never be averaged together."
+values:
+  - value: msrp
+    label: "MSRP"
+    description: "The manufacturer's suggested retail price, stated by the manufacturer."
+  - value: retail_list
+    label: "Retail list"
+    description: "A retailer's listed price at a point in time."
+  - value: sale_actual
+    label: "Actual sale"
+    description: "An actual retail transaction, including a discounted sale."
+  - value: auction_sold
+    label: "Auction sold"
+    description: "A collector or secondary-market sold price."
+  - value: archivist_paid
+    label: "Archivist paid"
+    description: "What the archivist actually paid. Private; excluded from the public bundle."

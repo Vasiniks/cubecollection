@@ -1,0 +1,19 @@
+# SYNTHETIC FIXTURE — not archive data. Three warnings in one record:
+#   rule 22 — MagLev replaces springs, so a plain screw-and-spring core contradicts it
+#   rule 25 — the only variant of its model, yet carrying an edition designation, which
+#             almost always means sibling configurations exist and were never enumerated
+#   rule 27 — a WCA-illegal cube admitted as scope_class core rather than conditional
+id: zz-bad-solo
+entity: variant
+model_id: zz-bad-lineage-a
+name: ZZ Bad Solo Flagship
+scope_class: core
+edition:
+  types: [standard]
+  designation: Flagship
+config:
+  maglev: maglev
+legality:
+  wca_status: not_legal
+  basis: Fixture value.
+status: drafted

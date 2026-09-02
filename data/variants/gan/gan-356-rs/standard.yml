@@ -1,0 +1,18 @@
+# variant: gan-356-rs--standard
+# Pass 4. The single sold configuration found this pass: budget tier, 72g.
+id: gan-356-rs--standard
+entity: variant
+model_id: gan-356-rs
+name: "GAN356 RS"
+aliases:
+  - { name: "GAN 356RS", source: thecubicle-gan356-rs }
+scope_class: core
+edition:
+  types: [standard]
+config:
+  weight_g: 72
+status: stub
+attestations:
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-gan356-rs]

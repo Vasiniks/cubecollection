@@ -1,0 +1,16 @@
+# variant: gan-357-original--standard
+# Pass 4. Base "GAN357", GAN's early corner-cutting-focused 3x3.
+id: gan-357-original--standard
+entity: variant
+model_id: gan-357-original
+name: "GAN357"
+aliases:
+  - { name: "Gans 357", source: gancube-2016-earliest-capture }
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [gancube-2016-earliest-capture]

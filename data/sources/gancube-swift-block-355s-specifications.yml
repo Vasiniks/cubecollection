@@ -1,0 +1,28 @@
+# source: gancube-swift-block-355s-specifications
+# The same GAN product page as gancube-swift-block-355s-product (created in a prior session;
+# not overwritten here), re-cited under a new id for its own marketing/spec copy: magnet count,
+# tension-adjustment mechanism, and weight for the Swift Block 355S.
+id: gancube-swift-block-355s-specifications
+entity: source
+kind: manufacturer_official
+title: "Swift Block 355S Smooth 3x3 Puzzle Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/swift-block-355s-3x3-puzzle-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241119102452/https://www.gancube.com/products/swift-block-355s-3x3-puzzle-cube"
+excerpt: |-
+  "48 Magnets for Precision and Speed - The Swift Block 355S 3×3 magnet speed cube features 48
+  visible magnets that guide each layer smoothly into place... Unlike typical budget cubes, it
+  incorporates an advanced mechanism previously reserved for premium models priced over $20.
+  Stable, Easy-to-Tune Construction - Equipped with a new numerical tension nut offering 5
+  adjustable settings... Lightweight and Perfectly Sized - Weighing just 85 grams..." No
+  "Specifications" table (size/material) was found on this page, unlike the sibling "Swift
+  Block 355 Maglev" product.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the description bullets verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own specifications (48 magnets, 5-setting tension nut, 85g). 'Unlike typical budget cubes... previously reserved for premium models priced over $20' is comparative marketing copy (tier 4 for that specific claim), not treated as a specification."
+status: sourced

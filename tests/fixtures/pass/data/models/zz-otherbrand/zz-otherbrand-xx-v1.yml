@@ -1,0 +1,19 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-otherbrand-xx-v1
+entity: model
+family_id: zz-otherbrand-xx
+manufacturer_id: zz-otherbrand
+name: ZZ Otherbrand XX V1
+scope_class: core
+generation:
+  label: V1
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 55.5
+  core_system: ball_core
+status: drafted

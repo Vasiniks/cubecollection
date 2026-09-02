@@ -1,0 +1,20 @@
+# source: gancube-cn-about-us-en
+# The English-language About page on GAN's Chinese-domestic site (gancube.cn), which is a
+# different site from the international gancube.com. Names the founder and the legal entity.
+id: gancube-cn-about-us-en
+entity: source
+kind: manufacturer_official
+title: "About US – GANCube"
+publisher: "GANCUBE"
+url: "https://www.gancube.cn/en/about/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251220163500/https://www.gancube.cn/en/about/"
+excerpt: "GANCUBE Inc. was founded in 2014 by Mr. Jiang Ganyuan, who was the first NR holder of SpeedCubing in China. The company's bussiness spreads from research to development, design, manufacturing, marketing and promotion, all are about cubing. The company holds many patents and techniques on speedcubes. [page footer] All Rights Reserved (c) 2011-2023 Guangzhou Ganyuan Intelligent Technology Co. Ltd."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'Jiang Ganyuan' and 'founded in 2014'. Excerpt reproduces the footer's legal-entity line, which the archive rendering also carries."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own English-language copy on its domestic site; the spelling 'bussiness' is verbatim from the source. The footer copyright range begins 2011, which is earlier than the stated 2014 founding — see research/notes/manufacturers/gan-pass1.md."
+status: sourced

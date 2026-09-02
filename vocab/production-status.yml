@@ -1,0 +1,25 @@
+# production-status
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: production-status, so the schema and this file cannot drift.
+
+id: production-status
+description: "Whether the variant is being produced."
+values:
+  - value: announced
+    label: "Announced"
+    description: "Announced, not yet released."
+  - value: in_production
+    label: "In production"
+    description: "Currently produced."
+  - value: discontinued
+    label: "Discontinued"
+    description: "No longer produced."
+  - value: limited_run_complete
+    label: "Limited run complete"
+    description: "A bounded run that has finished."
+  - value: cancelled
+    label: "Cancelled"
+    description: "Announced and never produced."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

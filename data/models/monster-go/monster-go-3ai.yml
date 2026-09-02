@@ -1,0 +1,62 @@
+# model: monster-go-3ai
+# Pass 3 (model enumeration). The single smart/electronic Monster Go 3x3 found this pass,
+# "Monster Go 3 AI" (GAN's own shorthand: "MG3 Ai"). Sold from its own dedicated collection
+# ("Monster Go Smart Cube Series") and product page, no source found this pass of a second
+# generation or variant of this smart design. See research/notes/models/gan-pass3.md.
+id: monster-go-3ai
+entity: model
+family_id: monster-go-smart-cube-series
+manufacturer_id: monster-go
+name: "Monster Go 3 Ai"
+aliases:
+  - "MG3 Ai"
+  - "Monster Go 3 AI 3x3 Smart Cube"
+  - "Monster Go Smart Cube"
+scope_class: core
+generation:
+  label: "3 Ai"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  GAN's own product page: "Monster Go Smart Cube is the 3x3 cube with compatible app that helps
+  you solve it as a beginner and improve yourself as a cuber. With inside replaceable battery,
+  it offers a 280-hour play time... measures and saves your solve in 4 parameters:
+  Time/Move/TPS/Fluency. Online battle is also available in MG3 Ai... Weight only 81g while
+  adopting sensors, battery, circuit board inside" (gancube-monster-go-3ai-smart-cube-product).
+  App-connected solve tracking (time/move/TPS/fluency), online battle matching, and a
+  user-replaceable battery are the distinguishing features; no numeric size specification was
+  found. Positioned by GAN's own copy as an educational/STEM toy as much as a speedcube ("Also
+  a good cube for speed cubing"), consistent with the family's own `positioning: smart` and
+  Monster Go's own children's/beginner brand positioning (see monster-go manufacturer record).
+status: drafted
+specs:
+  weight_g: 81
+attestations:
+  /specs/weight_g:
+    confidence: confirmed
+    sources: [gancube-monster-go-3ai-smart-cube-product, gancube-collections-monster-go-smart]
+    note: "Stated identically on both GAN's dedicated product page and its collection listing."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. The earliest located capture (2024-11-17) falls inside gancube.com's site-wide November 2024 archival event and is not treated as a launch-date floor."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found; '3 Ai' is GAN's own product-name numeral, not a stated generation count. No evidence was found this pass of a second Monster Go smart-cube generation."
+  /description:
+    confidence: confirmed
+    sources: [gancube-monster-go-3ai-smart-cube-product, gancube-collections-monster-go-smart]

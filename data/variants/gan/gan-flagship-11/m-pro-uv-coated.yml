@@ -1,0 +1,34 @@
+# variant: gan-flagship-11--m-pro-uv-coated
+# Pass 4. "GAN11 M Pro UV Coated" — one of four Versions sold from GAN's own single GAN11 Series
+# product listing. Introduces the omnidirectional core-corner magnetic system per GAN's own
+# technology-history page.
+id: gan-flagship-11--m-pro-uv-coated
+entity: variant
+model_id: gan-flagship-11
+name: "GAN11 M Pro (UV Coated)"
+aliases:
+  - { name: "GAN 11 M Pro", source: gancube-gan11-series-product }
+scope_class: core
+edition:
+  designation: "M Pro"
+  types: [standard]
+config:
+  coating: uv
+  magnet_configuration: core_corner
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /edition/designation:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]
+  /config/magnet_configuration:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history, thecubicle-cubicle-custom-gan11-m-pro-uv]
+    note: "GAN's own history page: '8 omnidirectional magnetic components... an innovative omnidirectional core positioning magnetic system.' TheCubicle independently: 'the industry's first corner-core magnetic positioning system... 8 pairs of magnets stemming from the core to each corner base.'"
+  /config/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-cubicle-custom-gan11-m-pro-uv]
+    note: "TheCubicle: 'the same dual adjustment system as the popular GAN 356 XS.'"

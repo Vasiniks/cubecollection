@@ -1,0 +1,41 @@
+# model: gan-356-i2
+# Pass 3 (model enumeration). TheCubicle: "The GAN 356 i2 is GAN's latest update to its
+# successful 3x3 smart cube, the GAN 356 i" — explicit succession language, with hardware
+# changes (faster charging, longer battery/standby life, more storage). See
+# research/notes/models/gan-pass3.md.
+id: gan-356-i2
+entity: model
+family_id: gan-i-series
+manufacturer_id: gan
+name: "GAN356 i2"
+scope_class: core
+generation:
+  label: "i2"
+  ordinal: 2
+  basis: manufacturer_declared
+announced:
+  value: "2020-09"
+  precision: month
+  qualifier: before
+description: |-
+  TheCubicle's own copy: "The GAN 356 i2 is GAN's latest update to its successful 3x3 smart
+  cube, the GAN 356 i. Changes include faster charging time (2 hours), longer battery life,
+  significantly longer standby time (60 days), and more storage!"
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-i2]
+    note: "TheCubicle's own earliest capture (2020-09-20) is a retailer-listing floor, not a manufacturer-stated date."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-gan356-i2]
+    note: "The '2' naming numeral is GAN's own product name; applying the same naming-numeral rule used for gan-356-x-v2 elsewhere in this archive."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-gan356-i2]
+relationships:
+  - type: succeeds
+    target: gan-356-i
+    target_entity: model
+    note: "TheCubicle: 'GAN's latest update to its successful 3x3 smart cube, the GAN 356 i.'"

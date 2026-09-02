@@ -1,0 +1,29 @@
+# source: gancube-swift-block-super-maglev-specifications
+# The same GAN product page as gancube-swift-block-super-maglev-product (created in a prior
+# session; not overwritten here), re-cited under a new id for its own detailed marketing copy,
+# which states a mechanism ("dual magnetic rings"), weight, and size distinctly different from
+# the earlier "Swift Block 355 Maglev" — primary evidence this is a separate, later model.
+id: gancube-swift-block-super-maglev-specifications
+entity: source
+kind: manufacturer_official
+title: "Swift Block 3x3 Super Maglev"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/speed-cubing-cube-swift-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260811020330/https://www.gancube.com/products/speed-cubing-cube-swift-3x3"
+excerpt: |-
+  "Innovative Dual Magnetic Rings — At the heart of the Swift 3X3 Super are dual magnetic
+  rings. These rings create a strong magnetic grip between layers, ensuring the cube rotates
+  smoothly with zero sticking... Lightweight Design for Effortless Handling — Weighing only 71
+  grams, the Swift 3X3 Super is remarkably lightweight... with a cube size of 55mm... Built-in
+  GES Tension System with 8 Adjustable Settings — The Swift 3X3 Super includes a built-in GES
+  tension system. It offers 8 adjustable tension settings..." A "Swift 3X3 Super Maglev UV"
+  variant is also described ("durable UV coating").
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain all quoted specification copy verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own specifications (71g, 55mm, dual magnetic rings, 8-setting GES tension system). Notably lighter (71g vs. 91.8g) and mechanically described differently ('dual magnetic rings' vs. the earlier product's bare 'Maglev' name with no mechanism description) than gancube-swift-block-355-maglev-specifications, the primary evidence this pass relies on for treating this as a separate, later model rather than a renamed continuation of the same design."
+status: sourced

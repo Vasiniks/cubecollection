@@ -1,0 +1,21 @@
+# source: thecubicle-gan356-maglev
+# TheCubicle's listing for GAN356 MagLev, explicitly describing it as introducing repelling
+# magnets in place of a spring within the 356 lineage — a genuine mechanism change, the evidence
+# this pass relies on for treating it as its own model rather than a variant.
+id: thecubicle-gan356-maglev
+entity: source
+kind: retailer
+title: "GAN356 MagLev 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-maglev-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231205063447/https://www.thecubicle.com/products/gan356-maglev-3x3"
+excerpt: "The GAN356 MagLev represents a new twist on a familiar favorite. Joining the classic 356 series of GAN 3x3s, this new version incorporates the innovation and technology of 2023. This one has repelling magnets in place of a spring, offering not only a fresh approach but also enhanced performance. Featuring 6 tension adjustments, 6 center travel adjustments, corner/core magnetization, and the classic honeycomb pattern on its internals."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'repelling magnets in place of a spring' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, dating the model to '2023' in running prose and explicitly describing the spring-to-MagLev mechanism change."
+status: sourced

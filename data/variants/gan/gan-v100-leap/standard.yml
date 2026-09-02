@@ -1,0 +1,44 @@
+# variant: gan-v100-leap--standard
+# Pass 4. The only GAN V100 Leap design found this pass, sold to date only under themed names
+# with identical description text: "GAN V100 Leap Chinese New Year Edition" (earlier capture)
+# and "GAN V100 Leap Year of the Horse" (later capture, same URL structure change, word-for-word
+# identical body copy) — read as the same product retitled, not two products. Both names
+# recorded as aliases; a single variant record represents both.
+id: gan-v100-leap--standard
+entity: variant
+model_id: gan-v100-leap
+name: "GAN V100 Leap"
+aliases:
+  - { name: "GAN V100 Leap Chinese New Year Edition", source: gancube-gan-v100-leap-chinese-new-year-edition-product }
+  - { name: "GAN V100 Leap Year of the Horse", source: gancube-gan-v100-leap-year-of-the-horse-product }
+scope_class: core
+edition:
+  name: "Chinese New Year Edition / Year of the Horse"
+  types: [standard, limited]
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: none
+  size_mm: 55
+  weight_g: 64
+colorway:
+  body:
+    finish: "frosted"
+status: stub
+attestations:
+  /config/maglev:
+    confidence: probable
+    sources: [gancube-gan-v100-leap-year-of-the-horse-product]
+    note: "GAN's own copy: 'It features a spring-based GES system (no maglev).' Single tier-1 source; probable rather than confirmed since this is the only source found this pass for the mechanism claim."
+  /config/size_mm:
+    confidence: probable
+    sources: [gancube-gan-v100-leap-year-of-the-horse-product]
+  /config/weight_g:
+    confidence: uncertain
+    sources: [gancube-gan-v100-leap-year-of-the-horse-product]
+    note: "GAN's own single page is internally inconsistent: main body copy states 'a lightweight 64g build', but a separate FAQ answer on the very same page states '62 grams' instead. Both figures come from the same one source (not two independent sources), so this is recorded as an internal inconsistency at reduced confidence rather than a formal disputed block (rule 11 requires distinct sources per candidate). The value recorded in config.weight_g (64) is the main body copy's figure; the 62g FAQ figure is preserved here, not silently dropped."
+  /edition/types:
+    confidence: probable
+    sources: [gancube-gan-v100-leap-chinese-new-year-edition-product, gancube-gan-v100-leap-year-of-the-horse-product]
+    note: "Sold under a themed name each time it has appeared; no 'plain' V100 Leap listing without a theme name was located this pass, so `limited` is recorded alongside `standard` rather than asserting this is GAN's ordinary base configuration."

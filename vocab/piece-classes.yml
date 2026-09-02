@@ -1,0 +1,18 @@
+# piece-classes
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: piece-classes, so the schema and this file cannot drift.
+
+id: piece-classes
+description: "Class of piece a colour or property applies to."
+values:
+  - value: corner
+    label: "Corner"
+  - value: edge
+    label: "Edge"
+  - value: centre
+    label: "Centre"
+  - value: core
+    label: "Core"
+  - value: internal
+    label: "Internal"
+    description: "Any internal component."

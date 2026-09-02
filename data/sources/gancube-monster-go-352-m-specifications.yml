@@ -1,0 +1,26 @@
+# source: gancube-monster-go-352-m-specifications
+# The same GAN product page as gancube-monster-go-352-m-product (created in a prior session;
+# not overwritten here per the shared-source-lane rule), re-cited under a new id for its own
+# "Specifications" table, which the earlier source record did not extract: size, material, and
+# weight for the Monster Go 352 M Magnetic Cube.
+id: gancube-monster-go-352-m-specifications
+entity: source
+kind: manufacturer_official
+title: "Monster Go 352 M Magnetic Cube for Beginner | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-352-m-beginner-magnetic-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241122153719/https://www.gancube.com/products/monster-go-352-m-beginner-magnetic-cube"
+excerpt: |-
+  "Specifications — Size: 52x52x52 mm. Material: Plastic. Weight: 66g." Product description
+  (from the same page's marketing copy): "48 magnets inside" is not stated on this specific
+  page; magnet count is not given here (contrast the sibling 'Monster Go Magnetic 3x3 Cube',
+  which does state '48 magnets' in its own copy — gancube-monster-go-magnetic-3x3-product).
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the 'Specifications' table (Size/Material/Weight) verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product spec table, tier 1 for its own specifications per DATA_MODEL §5.2."
+status: sourced

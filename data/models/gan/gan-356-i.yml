@@ -1,0 +1,38 @@
+# model: gan-356-i
+# Pass 3 (model enumeration). GAN's first smart cube. GAN's own Chinese technology-history page
+# states directly: "2019, GAN's Year One of intelligence... the first-generation
+# competitive-tier smart cube, the GAN356 i, arrived" — an explicit manufacturer-declared
+# "first-generation" ordinal statement, the strongest possible basis for generation.basis. No
+# dedicated retailer product page was located this pass for the base "GAN356 i" itself (only
+# for its "i carry" and later "i2"/"i3" siblings), so this record rests on the manufacturer
+# source alone. See research/notes/models/gan-pass3.md.
+id: gan-356-i
+entity: model
+family_id: gan-i-series
+manufacturer_id: gan
+name: "GAN356 i"
+scope_class: core
+generation:
+  label: "i"
+  ordinal: 1
+  basis: manufacturer_declared
+announced:
+  value: "2019"
+  precision: year
+  qualifier: exact
+description: |-
+  GAN's first-generation smart cube, built around a "smart ball axis" pairing with GAN's
+  companion app, per GAN's own technology-history page (already the primary evidence for the
+  gan-i-series family record itself). No dedicated retailer listing for the base, non-"carry",
+  non-numbered "GAN356 i" was located this pass; its existence and dating rest on the
+  manufacturer's own tier-1 statement alone.
+status: drafted
+attestations:
+  /announced:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+    note: "GAN's own technology-history page states the year and product name directly and explicitly, calling it the 'first-generation' smart cube."
+  /generation/basis:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+    note: "'第一代竞速级智能魔方' ('the first-generation competitive-tier smart cube') is an explicit manufacturer-declared ordinal statement, not an archive inference."

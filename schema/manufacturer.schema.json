@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "manufacturer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "native_name": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "x-vocab": "manufacturer-kinds",
+      "x-critical": true
+    },
+    "parent_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Parent manufacturer, for sub-brands."
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "founded": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "ceased": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Every name any retailer has used. Feeds identity resolution."
+    },
+    "website": {
+      "type": "string",
+      "format": "uri"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "former_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+        "description": "Immutable identifier."
+      }
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    },
+    "attestations": {
+      "$ref": "https://cubecollection/schema/common/attestation.schema.json"
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "name",
+    "kind",
+    "status"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/manufacturer.schema.json",
+  "title": "Manufacturer, sub-brand, or service"
+}

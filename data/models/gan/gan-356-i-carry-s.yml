@@ -1,0 +1,42 @@
+# model: gan-356-i-carry-s
+# Pass 3 (model enumeration). TheCubicle describes improved battery life (330h vs the
+# original's 280h) over the original i Carry; no explicit "update to" sentence was found, so
+# the succession rests on the comparative battery-life figure. See
+# research/notes/models/gan-pass3.md.
+id: gan-356-i-carry-s
+entity: model
+family_id: gan-i-carry-series
+manufacturer_id: gan
+name: "GAN356 i Carry S"
+scope_class: core
+generation:
+  label: "i Carry S"
+  ordinal: 2
+  basis: community_convention
+announced:
+  value: "2023-09"
+  precision: month
+  qualifier: before
+description: |-
+  TheCubicle's own copy: "The GAN356 i Carry S 3x3 is a new smart cube from the famous
+  manufacturer. This one has an improved battery life, up to 330 hours of fun on a single
+  battery! This smart cube does not charge, it uses a replaceable coin battery under the core
+  that is easily replaceable." Same coin-battery, no-gyroscope philosophy as the base i Carry.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-i-carry-s]
+    note: "TheCubicle's own earliest capture (2023-09-04) is a retailer-listing floor, not a manufacturer-stated date."
+  /generation/basis:
+    confidence: uncertain
+    note: "'S' is a tier word, not a stated sequential generation numeral."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-gan356-i-carry-s]
+    note: "No explicit 'update to i Carry' sentence was found; inferred from the comparative battery-life figure (330h vs. the original's stated 280h) and shared coin-battery design."
+relationships:
+  - type: succeeds
+    target: gan-356-i-carry
+    target_entity: model
+    note: "Inferred from an improved-battery-life comparison (330h vs. the original's 280h) and the shared coin-battery, no-gyroscope design; no explicit succession sentence was found."

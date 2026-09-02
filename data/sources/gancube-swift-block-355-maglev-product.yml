@@ -1,0 +1,27 @@
+# source: gancube-swift-block-355-maglev-product
+# GAN's own product page for "Swift Block 355 M Magnetic 3x3 Speed Cube", sold at a URL slug
+# using "355-m" while the page's own title and GAN's own site navigation both call the product
+# "Swift Block 355 Maglev" — a genuine MagLev (magnetic repulsion) mechanism, distinct from the
+# non-MagLev "Swift Block 355S", per the sibling collection source
+# (gancube-collections-swift-block-3x3).
+id: gancube-swift-block-355-maglev-product
+entity: source
+kind: manufacturer_official
+title: "Swift Block 355 M Magnetic 3x3 Speed Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/swift-block-355-m-magnetic-3x3-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241117052526/https://www.gancube.com/products/swift-block-355-m-magnetic-3x3-cube"
+excerpt: |-
+  Page title as captured 2024-11-17: "Swift Block 355 M Magnetic 3x3 Speed Cube | GANCUBE
+  Official Website". The same page's own site navigation, captured in full, lists this product
+  under "Cubes" as "Swift Block 355 Maglev", alongside a sibling "Swift Block 355S Magnetic
+  Cube" listed separately — two distinct named products in Swift Block's own 3x3 nav grouping.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the page title and the two-item Swift Block nav grouping verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for naming and catalogue structure (two separate Swift Block 3x3 listings, not versions of one page)."
+status: sourced

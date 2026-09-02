@@ -1,0 +1,25 @@
+# colorway-application
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: colorway-application, so the schema and this file cannot drift.
+
+id: colorway-application
+description: "How colour is applied to the puzzle's faces."
+values:
+  - value: stickerless
+    label: "Stickerless"
+    description: "Colour is in the plastic of the pieces."
+  - value: stickered
+    label: "Stickered"
+    description: "Colour is applied as stickers over a single-colour body."
+  - value: hybrid
+    label: "Hybrid"
+    description: "Some faces stickered, some not."
+  - value: printed
+    label: "Printed"
+    description: "Colour or graphics printed directly onto the pieces."
+  - value: inlaid
+    label: "Inlaid"
+    description: "Colour applied as recessed inlays."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

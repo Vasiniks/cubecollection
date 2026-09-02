@@ -1,0 +1,37 @@
+# model: gan-356-rs
+# Pass 3 (model enumeration). TheCubicle: "GAN 356 RS is the latest update of the popular
+# budget friendly 3x3 speed cube from GAN, the 356 R" — direct succession language.
+id: gan-356-rs
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 RS"
+scope_class: core
+generation:
+  label: "RS"
+  ordinal: 3
+  basis: community_convention
+announced:
+  value: "2020-09"
+  precision: month
+  qualifier: before
+description: |-
+  Explicit "latest update" to GAN356 R per TheCubicle's own copy, budget-tier, 72g. Succeeded
+  by GAN356 RS2.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-rs]
+    note: "TheCubicle's earliest capture is 2020-09-27 (tier 2); a floor, not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found; ordinal reflects this archive's placement."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-gan356-rs]
+relationships:
+  - type: succeeds
+    target: gan-356-r
+    target_entity: model
+    note: "TheCubicle: 'the latest update of the popular budget friendly 3x3 speed cube from GAN, the 356 R.'"

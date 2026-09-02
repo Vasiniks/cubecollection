@@ -1,0 +1,26 @@
+# source: gancube-swift-block-355-maglev-specifications
+# The same GAN product page as gancube-swift-block-355-maglev-product (created in a prior
+# session; not overwritten here), re-cited under a new id for its own "Specifications" table:
+# size, material, and weight for the Swift Block 355 Maglev.
+id: gancube-swift-block-355-maglev-specifications
+entity: source
+kind: manufacturer_official
+title: "Swift Block 355 M Magnetic 3x3 Speed Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/swift-block-355-m-magnetic-3x3-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241117052526/https://www.gancube.com/products/swift-block-355-m-magnetic-3x3-cube"
+excerpt: |-
+  "Specifications — Size: 55x55x55 mm. Material: Plastic. Weight: 91.8g." No body description
+  text beyond the product name ("Swift Block 355 Maglev") and this spec table was captured on
+  this page for the mechanism itself; the "Maglev" designation in the product's own name and
+  in GAN's own nav grouping (alongside the non-maglev "Swift Block 355S") is the primary
+  evidence this pass relies on for treating it as a MagLev (magnetic-repulsion) mechanism.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the 'Specifications' table (Size/Material/Weight) verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product spec table, tier 1 for its own specifications."
+status: sourced

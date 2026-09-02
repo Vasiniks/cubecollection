@@ -1,0 +1,17 @@
+# variant: gan-ui-mini-freeplay--standard
+# Pass 4. "GAN Mini ui Free Play" — the smart sibling of the mechanical GAN Mini M Pro. No
+# dedicated GAN-authored product-page source was located this pass beyond TheCubicle's listing.
+id: gan-ui-mini-freeplay--standard
+entity: variant
+model_id: gan-ui-mini-freeplay
+name: "GAN Mini ui Free Play"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /smart/is_smart:
+    confidence: probable
+    sources: [thecubicle-gan-mini-ui-free-play]

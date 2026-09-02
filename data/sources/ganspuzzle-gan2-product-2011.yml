@@ -1,0 +1,23 @@
+# source: ganspuzzle-gan2-product-2011
+# A product page on ganspuzzle.com (the predecessor brand/site to gancube.com), archived
+# October 2011, describing "GAN2" (淦源2号) as designer Jiang Ganyuan's *second* independently
+# designed cube — corroborating tier-4 speedsolving-wiki-gan's claim that the brand's first
+# product ("Ganspuzzle I") predates this capture, and giving first-party biographical detail on
+# the founder used nowhere else in this register.
+id: ganspuzzle-gan2-product-2011
+entity: source
+kind: manufacturer_official
+title: "GAN2 淦源2号魔方 - 淦源魔方 (GAN2 Ganyuan No.2 Cube - Ganspuzzle)"
+publisher: "淦源魔方 (Ganspuzzle)"
+url: "http://www.ganspuzzle.com/_d271492402.htm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20111028120649/http://www.ganspuzzle.com:80/_d271492402.htm"
+excerpt: "ganspuzzle 淦源魔方专注于为玩家提供专业的竞速魔方，淦源2号（GAN2）是为高手设计的一款魔方。[...] 设计师：江淦源，网名gan，资深魔方玩家，06 07广州魔方公开赛3阶速拧冠军，国内首发cfop公式，一般称为gan手法。此魔方是其第二款自主设计魔方。"
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain 江淦源, 网名gan, and 第二款自主设计魔方 verbatim."
+accessed: "2026-09-01"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-01"
+reliability_note: "Machine-translated working sense, original retained verbatim above: 'Ganspuzzle focuses on providing players with professional speedcubes; the Ganyuan No.2 (GAN2) is a cube designed for advanced players. [...] Designer: Jiang Ganyuan, online handle \"gan\", veteran speedcuber, champion of the 2006/07 Guangzhou Cube Open 3x3 speed event, first in China to publish the CFOP method, commonly known as the \"gan technique\". This cube is his second independently designed cube.' First-party product copy naming the founder and confirming, by stating this is his 'second' design, that an earlier cube (matching speedsolving-wiki-gan's tier-4 claim of a 2011 'Ganspuzzle I') already existed by this capture date. Not independent corroboration of the Ganspuzzle I release year on its own — it establishes relative sequence (a first design existed before this one), not an absolute date for it."
+status: sourced

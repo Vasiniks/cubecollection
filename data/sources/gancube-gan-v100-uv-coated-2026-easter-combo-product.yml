@@ -1,0 +1,32 @@
+# source: gancube-gan-v100-uv-coated-2026-easter-combo-product
+# GAN's own product page for a themed bundle product ("GAN V100 UV Coated 2026 Easter Combo").
+# Cited primarily for its own reused GAN V100 Maglev marketing copy, which is the only place
+# this pass found GAN stating the base V100 Maglev's size and weight directly in its own words
+# (55mm / 64g) — the equivalent figures on GAN V100 Maglev's own single-product page
+# (gancube-gan-v100-maglev-product) were pure tagline copy with no numeric specification.
+id: gancube-gan-v100-uv-coated-2026-easter-combo-product
+entity: source
+kind: manufacturer_official
+title: "GAN V100 UV Coated 2026 Easter Combo | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan-v100-uv-coated-2026-easter-combo"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260330000000/https://www.gancube.com/products/gan-v100-uv-coated-2026-easter-combo"
+excerpt: |-
+  Variant selector: "Maglev_UV Coated_2026 Easter Combo". Body copy: "Choosing the GAN V100
+  maglev speed cube means embracing a competition-ready puzzle designed for enthusiasts...
+  Revolutionary omni-directional maglev positioning enabling ultra-smooth turns... Compact,
+  featherweight 55mm size and 64g design for enhanced comfort and agility." The same page also
+  reproduces, in full and unmodified, gancube-gan-v100-leap-year-of-the-horse-product's own
+  description text for "The GAN V100 Leap Year of the Horse" — read as evidence this bundle
+  combines the base V100 Maglev (UV Coated) with the V100 Leap Year of the Horse edition, not
+  as evidence of a third design; not confirmed as a bundle-contents statement this pass, and
+  left as a pass-4 (variant/bundle enumeration) question.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the variant selector label and both blocks of description copy verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for the base V100 Maglev's own stated size (55mm) and weight (64g) — manufacturer material is tier 1 for its own specifications per DATA_MODEL §5.2. The 'Easter Combo' bundle nature itself, and its exact contents, are not established at tier 1 by this page's copy alone and are flagged as unresolved rather than asserted."
+status: sourced

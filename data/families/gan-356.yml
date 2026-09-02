@@ -1,0 +1,63 @@
+# family: gan-356
+# Pass 2 (family enumeration). GAN's original numbered 3x3 line. Well evidenced as a single
+# persisting family spanning at least a decade: the same "356" naming appears on GAN's own
+# earliest archived site (2016: GAN356 Air, GAN356sV2) and is still current in 2026 (GAN356 Me,
+# GAN356 M e Minions), across intervening generations (X, XS, X V2, M, M E, RS, RS2) that pass 3
+# will enumerate as models. See research/notes/models/gan-pass2.md for the full boundary
+# reasoning, especially why this is treated as separate from the numbered "GAN Flagship Series"
+# family (gan-flagship-series) rather than one continuous lineage with it.
+
+id: gan-356
+entity: family
+manufacturer_id: gan
+name: "GAN356"
+aliases:
+  - "Gans 356"
+  - "GAN 356"
+  - "GANS356"
+introduced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  GAN's original numbered 3x3 speedcube line, and the longest-lived named product line in
+  GAN's history within this archive's scope. GAN's own technology-history page dates the
+  first steel-plastic IPG core to 2015, "developed and fitted... on the GAN356" — the earliest
+  direct evidence of the name (gancube-cn-core-technology-history). By August 2016, GAN's own
+  site was already selling multiple named sub-generations under this prefix simultaneously
+  (GAN356 Air, GAN356sV2), alongside a separately-named GAN357 line that did not survive (see
+  gan-357).
+
+  Through 2018-2019 the 356 line (X, XS) was explicitly GAN's flagship: GAN's own
+  technology-history page frames the 2018 GAN356 X as introducing "the world's first
+  digitally-adjustable core." From 2020 the flagship position moved to a new, separately
+  numbered line beginning with the GAN 11 M Pro (see gan-flagship-series) — GAN's own history
+  page calls that product the "year's heavyweight flagship" using different language from
+  anything applied to 356 after that point. GAN356 did not stop being sold when this happened:
+  it continued, and continues as of 2026 (GAN356 Me, GAN356 M e Minions Edition, appearing
+  alongside GAN17 MagDrive in GAN's own current site navigation), as GAN's mainline/advanced
+  tier below the numbered flagship succession, including its own smart-cube offshoots (see
+  gan-i-series, gan-i-carry-series) which carry the "356" prefix in their earliest generations.
+
+  `positioning: mainline` reflects the greater part of this family's 2020-2026 history and its
+  current catalogue role, not its 2015-2019 flagship period, which is recorded here rather than
+  in a second positioning value the schema does not support.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [gancube-cn-core-technology-history]
+    note: "GAN's own technology-history page dates the first IPG core's debut 'on the GAN356' to 2015, which is strong but indirect evidence for the family's own introduction (the page's subject is the axis technology, not the product launch date itself). Corroborated only in the weak sense that gancube-2016-earliest-capture already shows two named 356 sub-generations (Air, sV2) coexisting by August 2016, consistent with an origin at or before 2015-2016 but not independently dating it to 2015 specifically."
+  /positioning:
+    confidence: probable
+    sources: [gancube-cn-core-technology-history, gancube-gan17-magdrive-product]
+    note: "Synthesised from two facts, each individually confirmed but requiring the archivist's own judgement to combine: GAN's own history page treats the 356 X/XS generation (2018-2019) as flagship-tier language-wise, and GAN's own 2026 site navigation ('Flagship Series') no longer includes any 356-branded product, placing 356 outside the current flagship grouping. No single source states 'GAN356 is our mainline'; this is the archive's own synthesis, flagged for review."
+  /aliases:
+    confidence: probable
+    sources: [gancube-2016-earliest-capture, thecubicle-gans-356-air]
+    note: "'Gans 356' is TheCubicle's own historical spelling (thecubicle-gans-356-air, already in the register from pass 1); 'GANS356' and 'GAN 356' are spelling/spacing variants seen directly on GAN's own 2016 site footer and product nav (gancube-2016-earliest-capture)."
+  /successor_family_id:
+    confidence: unknown
+    note: "Left null/unset rather than guessing. GAN356 has not been discontinued and there is no evidence any family 'succeeds' it in the DATA_MODEL sense; the flagship position moved to gan-flagship-series in 2020 but GAN356 itself continued selling in parallel through 2026. Recording a successor here would misrepresent a positioning shift as a discontinuation."

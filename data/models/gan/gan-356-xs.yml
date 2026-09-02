@@ -1,0 +1,58 @@
+# model: gan-356-xs
+# Pass 3 (model enumeration). GAN's own technology-history page: "in 2019, the GAN356 X S was
+# launched, featuring an upgraded wing-shaped quantifiable adjustment core" — an explicit
+# manufacturer-declared core-geometry upgrade from GAN356 X, again a clean model-level case.
+# This core is later reused, per TheCubicle's own comparison copy, by GAN 11 M Pro and GAN356 X
+# V2 — recorded as `succeeds`/shared-mechanism notes, not as evidence those two are the same
+# model as XS itself. See research/notes/models/gan-pass3.md.
+id: gan-356-xs
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 XS"
+aliases:
+  - "GAN356 X S"
+scope_class: core
+generation:
+  label: "XS"
+  ordinal: 4
+  basis: manufacturer_declared
+announced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+released:
+  value: "2020"
+  precision: year
+  qualifier: before
+  note: "A lower bound, not a release date. The model must have existed by 2020 because a dated limited edition of it did. Recorded with qualifier 'before' rather than 'exact' so it is never mistaken for the launch."
+description: |-
+  Succeeds GAN356 X with an "upgraded wing-shaped quantifiable adjustment core that bolstered
+  both verticality and stability" (GAN's own technology-history page). This core is reused,
+  per TheCubicle's own retail copy, by GAN 11 M Pro ("the same dual adjustment system as the
+  popular GAN 356 XS") and GAN356 X V2 ("shares the same dual adjustment core... as GAN's most
+  recent flagship, the GAN 356 XS") — a documented case of one core design spanning three named
+  products/models, exactly the situation the reserved `geometry_profile` field is intended for
+  once populated. "XS Project α" and "XS Vita C" (found as separate product names this pass) are
+  treated as limited-edition variants of this model, not new models, pending a source stating
+  otherwise.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [gancube-gan356-xs-vita-c-le-product]
+    note: "Derived bound, not a stated date: GAN356 X S Vita C, GAN's own 2020 Summer Limited Edition, dates the edition. A model cannot post-date its own limited edition, so this establishes 'no later than 2020'. The actual release date remains unresearched."
+  /announced:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+  /generation/basis:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+  /relationships/0:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+relationships:
+  - type: succeeds
+    target: gan-356-x
+    target_entity: model
+    note: "GAN's own technology-history page frames the XS core explicitly as an upgrade of the X core introduced the prior year."

@@ -1,0 +1,21 @@
+# variant: gan-356-air-s--sm
+# Pass 4. "GAN 356 Air SM" — the magnetized tier of this model, the counterpart TheCubicle's
+# Air S (Master) listing describes as "non-magnetized version of the Air SM." No source found
+# this pass carries SM's own dedicated product description (only the Master listing's
+# contrasting language); existence and the magnetized fact rest on that contrast.
+id: gan-356-air-s--sm
+entity: variant
+model_id: gan-356-air-s
+name: "GAN356 Air SM"
+scope_class: core
+edition:
+  designation: "SM"
+  types: [standard]
+config:
+  magnet_strength: "Magnetized (magnet slots present); exact count/arrangement not stated by any source found this pass."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-s-master]
+    note: "Named only as the magnetized counterpart contrasted against by the Air S (Master) listing; no dedicated SM product page was located this pass."

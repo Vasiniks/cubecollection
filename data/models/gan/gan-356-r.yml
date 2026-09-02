@@ -1,0 +1,39 @@
+# model: gan-356-r
+# Pass 3 (model enumeration). TheCubicle: "GAN356 R is a modern rework of the classic 356 S" —
+# succeeds the bare 2016-era GAN356 S V2 line as a budget, non-magnetic-out-of-the-box design.
+# See research/notes/models/gan-pass3.md.
+id: gan-356-r
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 R"
+scope_class: core
+generation:
+  label: "R"
+  ordinal: 2
+  basis: community_convention
+announced:
+  value: "2020-08"
+  precision: month
+  qualifier: before
+description: |-
+  A "modern rework of the classic 356 S" (TheCubicle's own words), budget-positioned and
+  non-magnetic out of the box ("if you prefer a non-magnetic feel, this is a great option").
+  Features GES V3 and an IPG V2 core per the same listing. Succeeded by GAN356 RS the same year.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-r]
+    note: "TheCubicle's earliest capture is 2020-08-06 (tier 2); a floor, not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found; ordinal reflects this archive's placement within the S/R/RS/RS2 budget sub-lineage."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-gan356-r]
+relationships:
+  - type: succeeds
+    target: gan-356-s-v2
+    target_entity: model
+    note: "TheCubicle: 'a modern rework of the classic 356 S.'"

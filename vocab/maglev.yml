@@ -1,0 +1,22 @@
+# maglev
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: maglev, so the schema and this file cannot drift.
+
+id: maglev
+description: "Whether and how magnetic repulsion replaces springs in the core."
+values:
+  - value: none
+    label: "None"
+    description: "Conventional springs."
+  - value: maglev
+    label: "MagLev"
+    description: "Magnetic repulsion in place of springs."
+  - value: ball_core_maglev
+    label: "Ball-core MagLev"
+    description: "Magnetic repulsion combined with a ball core."
+  - value: dual_maglev
+    label: "Dual MagLev"
+    description: "Two magnetic repulsion stages."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

@@ -1,0 +1,27 @@
+# source: gancube-gan13-maglev-product
+# GAN's own current product page for "GAN13". Cited for the "Versions" selector confirming
+# "GAN13 Maglev fx" is a variant of GAN13, not a separate model, and as existence evidence for
+# GAN13 itself. Does not carry an explicit "Nth generation" self-statement the way GAN12's page
+# does; GAN13's place in the numbered sequence is inferred from the naming convention and dating
+# evidence elsewhere, not this source alone.
+id: gancube-gan13-maglev-product
+entity: source
+kind: manufacturer_official
+title: "GAN13 Maglev | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan13-maglev-magnetic-cubes"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260811125324/https://www.gancube.com/products/gan13-maglev-magnetic-cubes"
+excerpt: |-
+  Product name on page: "GAN13 Maglev". "Versions" purchase selector on this one page: "UV
+  Coated", "Frosted", "GAN13 Maglev fx" — three named options sold from a single listing.
+  Overview: "Magnetic Repulsion Drive — More stable and smooth repulsion feel... Magnetic
+  Attraction Drive — 30°+ Auto Aligning."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the Versions list and Overview text verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own product structure. No explicit generation-ordinal self-statement is made on this specific page (contrast gancube-gan12-maglev-product); GAN13's ordinal position is inferred from GAN's consistent numbering convention across the series, not restated here independently."
+status: sourced

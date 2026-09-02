@@ -1,0 +1,21 @@
+# source: thecubicle-gans-356-air
+# Alias evidence. TheCubicle's listing for GAN's 2016 flagship renders the brand as "Gans",
+# not "GAN" — the spelling a large part of the community and several retailers used in the
+# first half of the archive window.
+id: thecubicle-gans-356-air
+entity: source
+kind: retailer
+title: "Gans 356 Air – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gans-356-air"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260210040103/https://www.thecubicle.com/products/gans-356-air"
+excerpt: "Product and variant names as listed by TheCubicle: \"Gans 356 Air - Black\", \"Gans 356 Air - White\", \"Gans 356 Air - Primary\". The product URL slug is /products/gans-356-air. The same retailer lists every cube released after this one under the spelling \"GAN\"."
+preservation_note: "Archive capture verified on 2026-09-01 to contain the string 'Gans 356 Air'."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "Cited only for the brand spelling used in the listing, which is a fact about the listing itself and needs no corroboration."
+status: sourced

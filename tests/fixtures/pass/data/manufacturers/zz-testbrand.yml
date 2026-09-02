@@ -1,0 +1,16 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-testbrand
+entity: manufacturer
+name: ZZ Testbrand
+kind: manufacturer
+country: CN
+aliases: ["ZZ Test Brand", "Testbrand Cube"]
+status: published
+attestations:
+  "/kind":
+    confidence: confirmed
+    sources: [zz-src-official]

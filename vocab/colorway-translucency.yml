@@ -1,0 +1,22 @@
+# colorway-translucency
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: colorway-translucency, so the schema and this file cannot drift.
+
+id: colorway-translucency
+description: "Optical character of the body plastic."
+values:
+  - value: opaque
+    label: "Opaque"
+    description: "Not light-transmitting."
+  - value: translucent
+    label: "Translucent"
+    description: "Transmits light diffusely."
+  - value: transparent
+    label: "Transparent"
+    description: "Transmits light clearly."
+  - value: frosted_translucent
+    label: "Frosted translucent"
+    description: "Translucent with a frosted surface."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

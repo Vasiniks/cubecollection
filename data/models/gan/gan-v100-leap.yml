@@ -1,0 +1,61 @@
+# model: gan-v100-leap
+# Pass 3 (model enumeration). A spring-based (non-MagLev) GAN V100 design, sold to date only
+# under one themed edition, retitled once ("GAN V100 Leap Chinese New Year Edition" ->
+# "GAN V100 Leap Year of the Horse", identical description text both times). GAN's own copy
+# states directly "a spring-based GES system (no maglev)" — a genuine mechanism difference from
+# gan-v100-maglev, evidenced by separate product URLs with no combined "Versions" selector,
+# the same split pattern already applied to gan-356-maglev vs. gan-356-m-e. See
+# research/notes/models/gan-pass3.md.
+id: gan-v100-leap
+entity: model
+family_id: gan-v100
+manufacturer_id: gan
+name: "GAN V100 Leap"
+aliases:
+  - "GAN V100 Leap Chinese New Year Edition"
+  - "GAN V100 Leap Year of the Horse"
+scope_class: core
+generation:
+  label: "Leap"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2026-01"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's own product page: "The GAN V100 Leap Year of the Horse is a 55mm magnetic speed cube
+  built for stable, controlled performance. It features a spring-based GES system (no maglev)
+  for a more grounded and consistent turning feel. With 64 magnets, a lightweight 64g build
+  [a second FAQ answer on the same page instead states 62 grams — the discrepancy is GAN's
+  own and is not resolved by any source found this pass], and a refined frosted finish..."
+  (gancube-gan-v100-leap-year-of-the-horse-product). An earlier capture of the same design under
+  a different name and URL ("GAN V100 Leap Chinese New Year Edition", captured 2026-01-27)
+  carries word-for-word identical description text
+  (gancube-gan-v100-leap-chinese-new-year-edition-product) — read as the same product retitled,
+  not two products, since GAN gives no indication of any change beyond the name.
+
+  To date, no source found this pass shows a "plain" GAN V100 Leap sold without a themed
+  edition name (Chinese New Year / Year of the Horse) attached — only one design has been
+  found under this mechanism, always carrying that theme's name. This model record is named
+  for the underlying design ("GAN V100 Leap") on the pattern established elsewhere in this
+  archive (e.g. gan-356-maglev is a bare design name even though it is sold under themed/tier
+  names at variant level); the theme-specific names are recorded as aliases here and are
+  expected to become the `edition`/`colorway` on the corresponding variant record in pass 4.
+
+  `specs` is left unset per the same reasoning recorded on gan-v100-maglev's description.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [gancube-gan-v100-leap-chinese-new-year-edition-product]
+    note: "Earliest located capture of this design under either name is 2026-01-27 (a manufacturer-site floor, not a stated launch date). A dated customer review on the same page claims this was 'your very first cube of 2026', which is consistent with but not itself admissible evidence for (tier 5, user-generated content) an early-January 2026 launch."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal or explicit 'this is a new design' statement was found; the model-level split from gan-v100-maglev rests on the stated mechanism difference (spring GES vs. MagLev) and separate, non-combined product listings, not a manufacturer generation label."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-gan-v100-leap-chinese-new-year-edition-product, gancube-gan-v100-leap-year-of-the-horse-product]
+  /description:
+    confidence: probable
+    sources: [gancube-gan-v100-leap-year-of-the-horse-product, gancube-gan-v100-leap-chinese-new-year-edition-product]

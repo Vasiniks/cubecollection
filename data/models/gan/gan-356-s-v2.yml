@@ -1,0 +1,53 @@
+# model: gan-356-s-v2
+# Pass 3 (model enumeration). The bare "GAN356 S V2" line, sold in parallel with GAN356 Air
+# since at least August 2016 ("GAN356sV2" on GAN's own earliest archived site). A separate
+# design from Air: no source found this pass equates the two shells, and the "S" line is
+# addressed as its own product on GAN's 2016 navigation, distinct from "Air". Reworked into
+# GAN356 R in 2020 (see gan-356-r.yml's succeeds relationship). See
+# research/notes/models/gan-pass3.md.
+id: gan-356-s-v2
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 S V2"
+aliases:
+  - "GAN356sV2"
+  - "GAN 356S V2"
+  - "GAN356S"
+scope_class: core
+generation:
+  label: "S V2"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2016-08"
+  precision: month
+  qualifier: before
+description: |-
+  A separate, bare "S"-branded 356 shell sold alongside GAN356 Air from at least August 2016.
+  No source found this pass states whether an "S V1" existed as its own separate product before
+  this "V2" naming, or whether "V2" was simply part of the product's permanent name from launch;
+  left as an open question rather than asserting a predecessor. "S V2 Lite", "S V2 Master", and
+  "S V2 Advanced" (found as separate TheCubicle listings) are treated as variants of this one
+  model, on the same tier-word pattern established for GAN356 Air, though no source was found
+  this pass explicitly stating their shared-mold relationship the way thecubicle-gan-356-air-um
+  did for Air/Air UM.
+
+  GAN356 R (2020) is described by TheCubicle as "a modern rework of the classic 356 S" — treated
+  here as a succession claim from this model, not as evidence they are the same model, since "a
+  modern rework" implies a new design rather than a continuation of the same tooling.
+status: drafted
+attestations:
+  /announced:
+    confidence: confirmed
+    sources: [gancube-2016-earliest-capture]
+    note: "GAN's own site, tier 1, lists 'GAN356sV2' as a current product on 2016-08-08."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found; ordinal is this archive's own placement."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-2016-earliest-capture]
+  /description:
+    confidence: uncertain
+    note: "The Lite/Master/Advanced variant grouping is inferred by analogy to the Air line's tier-word pattern, not independently confirmed for this specific shell; the predecessor/successor relationship to GAN356 R rests on a single tier-2 retailer sentence ('a modern rework of the classic 356 S'), not a manufacturer statement."

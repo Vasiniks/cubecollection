@@ -1,0 +1,19 @@
+# colorway-completeness
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: colorway-completeness, so the schema and this file cannot drift.
+
+id: colorway-completeness
+description: "Derived. How much of the colourway is documented, and therefore whether the variant could be rendered procedurally."
+values:
+  - value: none
+    label: "None"
+    description: "No colourway data."
+  - value: partial
+    label: "Partial"
+    description: "Some colourway data; not enough to render."
+  - value: face_complete
+    label: "Face complete"
+    description: "All six faces documented."
+  - value: render_ready
+    label: "Render ready"
+    description: "Body, all six faces, and logo placement documented."

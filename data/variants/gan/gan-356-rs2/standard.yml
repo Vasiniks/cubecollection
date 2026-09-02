@@ -1,0 +1,21 @@
+# variant: gan-356-rs2--standard
+# Pass 4. The single sold configuration found this pass: non-magnetic, adjustable tension and
+# compression, "traditional honeycomb pattern on the internals."
+id: gan-356-rs2--standard
+entity: variant
+model_id: gan-356-rs2
+name: "GAN356 RS2"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-gan356-rs2]
+  /config/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-gan356-rs2]

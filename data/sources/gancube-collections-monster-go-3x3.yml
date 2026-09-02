@@ -1,0 +1,29 @@
+# source: gancube-collections-monster-go-3x3
+# GAN's own storefront collection for Monster Go's 3x3 cube line, served from gancube.com
+# (GAN's own domain) rather than a separately registered Monster Go site. Primary evidence for
+# a "Monster Go 3x3" family under the monster-go sub-brand.
+id: gancube-collections-monster-go-3x3
+entity: source
+kind: manufacturer_official
+title: "Monster Go 3x3 Speed Cubes | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/collections/monster-go-3x3-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241123044811/https://www.gancube.com/collections/monster-go-3x3-cube"
+excerpt: |-
+  Page title: "Monster Go 3x3 Speed Cubes | GANCUBE Official Website". Collection grid, 5
+  results: "Monster Go 352 M Magnetic Cube" ($11.99), "Monster Go Magnetic 3x3 Cube" ($11.90),
+  "Monster Go Standard 3x3 Cube" ($10.90), "Monster Go Cloud & Rainbow & UT 3×3 Cube"
+  ($11.90-$11.99), "Monster Go 328 Spelling Cube Set" ($11.99-$19.99). Product description for
+  Monster Go Magnetic 3x3 Cube: "Affordable Magnetic Speed Cube — The Monster Go 3×3 magnet
+  cube offers premium features at a budget-friendly price [...] It's a fantastic gift idea for
+  kids and beginners eager to enter the world of speed cubing [...] Get a helping hand with
+  CubeStation, our mobile app that provides the optimal solution."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain the page title, the 5-result product grid, and the product description verbatim."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own storefront collection page for its own sub-brand, tier 1 for Monster Go's own catalogue structure. Explicit kids/beginner marketing language ('gift idea for kids and beginners') is used here only to support the budget/children's positioning judgment, not as a specification."
+status: sourced

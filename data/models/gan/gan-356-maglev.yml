@@ -1,0 +1,37 @@
+# model: gan-356-maglev
+# Pass 3 (model enumeration). TheCubicle: "The GAN356 MagLev represents a new twist... this one
+# has repelling magnets in place of a spring" — a genuine mechanism change (springs replaced by
+# magnetic repulsion) within the 356 lineage, a clean model-level case.
+id: gan-356-maglev
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 MagLev"
+scope_class: core
+generation:
+  label: "MagLev"
+  ordinal: 7
+  basis: community_convention
+announced:
+  value: "2023"
+  precision: year
+  qualifier: circa
+description: |-
+  Introduces MagLev (repelling magnets replacing the spring) into the 356 mainline, sold as its
+  own product distinct from the parallel non-MagLev "GAN356 M E" tier (no shared-listing
+  evidence was found linking the two the way GAN12/14/15/16's own pages bundle their MagLev and
+  non-MagLev options together) — recorded as two separate current mainline models rather than
+  one model with variants, given the separate product URLs and lack of a combined "Versions"
+  listing. This is a judgement call under uncertainty, not a settled fact.
+status: drafted
+attestations:
+  /announced:
+    confidence: probable
+    sources: [thecubicle-gan356-maglev]
+    note: "TheCubicle's own running copy dates the model to '2023' directly (not merely an archive-capture floor)."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found."
+  /description:
+    confidence: uncertain
+    note: "The decision to treat GAN356 MagLev and GAN356 M E as separate models (rather than one model with maglev/non-maglev variants, as established for the numbered Flagship Series) rests on the absence of a combined listing, not a positive statement that they are different designs. Flagged for review if a combined GAN listing is later found."

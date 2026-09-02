@@ -1,0 +1,19 @@
+# variant: monster-go-cloud-rainbow-ut-3x3--rainbow
+# Pass 4. "Rainbow" — third of four colourway options on the same single listing.
+id: monster-go-cloud-rainbow-ut-3x3--rainbow
+entity: variant
+model_id: monster-go-cloud-rainbow-ut-3x3
+name: "Monster Go Rainbow"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Rainbow"
+  pattern:
+    kind: other
+    description: "Named 'Rainbow'; no per-face colour breakdown captured this pass."
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-monster-go-cloud-rainbow-ut-versions]

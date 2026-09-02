@@ -1,0 +1,31 @@
+# media-classes
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: media-classes, so the schema and this file cannot drift.
+
+id: media-classes
+description: "What kind of 2D asset this is. A manufacturer render is not a photograph, and the archive does not file it as one."
+values:
+  - value: photograph
+    label: "Photograph"
+    description: "A photograph of a physical object."
+  - value: manufacturer_render
+    label: "Manufacturer render"
+    description: "Computer-generated imagery produced by the manufacturer."
+  - value: product_listing_image
+    label: "Product listing image"
+    description: "An image from a retail listing, of unestablished origin."
+  - value: diagram
+    label: "Diagram"
+    description: "A technical or explanatory drawing."
+  - value: exploded_diagram
+    label: "Exploded diagram"
+    description: "A drawing showing components separated."
+  - value: screenshot
+    label: "Screenshot"
+    description: "A capture of a screen or application."
+  - value: video_still
+    label: "Video still"
+    description: "A frame extracted from video."
+  - value: scan_render
+    label: "Scan render"
+    description: "An image rendered from a 3D capture."

@@ -1,0 +1,45 @@
+# model: gan-356-m
+# Pass 3 (model enumeration). A mid-range magnetic 356, TheCubicle-described as "reminiscent of
+# a mix between the GAN XS and GAN X V2" (comparative marketing language, not a manufacturer
+# mold-identity statement). Recorded as its own model rather than a variant of X V2, since no
+# admissible source states they share a mold — see the source's own reliability_note for a
+# customer-review lead (inadmissible, tier 5) claiming otherwise, recorded honestly as an
+# unconfirmed lead rather than relied upon. See research/notes/models/gan-pass3.md.
+id: gan-356-m
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 M"
+aliases:
+  - "GAN356 Air M"
+scope_class: core
+generation:
+  label: "M"
+  ordinal: 6
+  basis: community_convention
+announced:
+  value: "2020-09"
+  precision: month
+  qualifier: before
+description: |-
+  Mid-range magnetic 356 with a hand-adjustable Numerical IPG core. "GAN356 Air M" (a nearly
+  identically dated, nearly identically described TheCubicle listing) is recorded here as an
+  alias rather than a separate model, on the reasoning that a manufacturer's own naming for one
+  product commonly drops or adds a tier word like "Air" over time (the same pattern documented
+  elsewhere in this family, e.g. the "356 i" -> "i" and "356 i carry" -> "i carry" prefix drops)
+  — this is a naming-identity judgement, not independently confirmed by a source stating the two
+  names refer to one product, and should be revisited if evidence surfaces distinguishing them.
+  "M Lite" is treated as a variant of this model, matching the tier-word pattern seen elsewhere
+  in the family.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan356-m]
+    note: "TheCubicle's earliest capture is 2020-09-27 (tier 2); a floor, not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found; ordinal reflects this archive's rough placement in the family's 2020 mainline refresh."
+  /aliases:
+    confidence: uncertain
+    note: "The 'GAN356 Air M' <-> 'GAN356 M' identity is this archive's own inference from matching dates and descriptions, not a source stating they are the same product. Flagged for a human reviewer."

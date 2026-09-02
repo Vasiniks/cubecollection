@@ -1,0 +1,22 @@
+# source: thecubicle-gan-v100-maglev-uv-3x3
+# TheCubicle's own (non-modded, base) listing for the GAN V100 MagLev UV 3x3. Cited for
+# language that explicitly distinguishes V100 from "the flagship GAN16" while noting it shares
+# that model's tensioning system — evidence used, alongside gancube-cn-gan-v100-nav, to keep
+# GAN V100 out of the GAN Flagship Series family pending its own resolution.
+id: thecubicle-gan-v100-maglev-uv-3x3
+entity: source
+kind: retailer
+title: "GAN V100 MagLev UV 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251020013636/https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3"
+excerpt: "Introducing the GAN V100 MagLev UV 3x3, the latest innovation from GAN for speedcubers and enthusiasts seeking a competitive edge. Featuring a compact 55mm design, this cube is engineered for agility and control in every solve. Benefit from 72 unique setting combinations using GAN's advanced tension adjustment system—identical to the system found in the flagship GAN16. Experience exceptionally smooth turning with the MagLev tension system, enhanced by an impressive total of 76 strategically placed magnets."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'the flagship GAN16' and '76 strategically placed magnets' verbatim."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "TheCubicle's own retail copy, tier 2. Describes V100 as sharing GAN16's tension system while referring to GAN16 itself, not V100, as 'the flagship' — read here as evidence about naming/positioning, not a technical specification, so treated cautiously (probable, not confirmed, on its own)."
+status: sourced

@@ -1,0 +1,23 @@
+# variant: gan-356-maglev--standard
+# Pass 4. GAN356 MagLev: repelling magnets in place of a spring, 6 tension adjustments, 6 center
+# travel adjustments, corner/core magnetization, classic honeycomb internals.
+id: gan-356-maglev--standard
+entity: variant
+model_id: gan-356-maglev
+name: "GAN356 MagLev"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  maglev: maglev
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-gan356-maglev]
+    note: "'This one has repelling magnets in place of a spring.'"
+  /config/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-gan356-maglev]
+    note: "'6 tension adjustments, 6 center travel adjustments.'"

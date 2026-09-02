@@ -1,0 +1,46 @@
+# family: gan-ui-series
+# Pass 2 (family enumeration). GAN's third, separately-declared smart-cube line: smart
+# electronics paired with the mechanical GAN Flagship Series base (e.g. GAN12 ui MagLev,
+# GAN16 ui MagLev MAX). Distinct from gan-i-series and gan-i-carry-series on GAN's own
+# storefront, and related to but distinct from gan-flagship-series. See
+# research/notes/models/gan-pass2.md.
+
+id: gan-ui-series
+entity: family
+manufacturer_id: gan
+name: "GAN ui Series"
+aliases:
+  - "ui Series"
+positioning: smart
+description: |-
+  A third GAN smart-cube line, sold from GAN's own storefront under a collection titled
+  "GAN ui Series" — distinct from "i Series" (gan-i-series) and "i carry Series"
+  (gan-i-carry-series). Unlike those two, every 3x3 product in this collection pairs smart
+  electronics with a model name drawn directly from the numbered Flagship Series (GAN12, GAN16)
+  rather than the "356"/"i" naming pattern, e.g. "GAN 12 ui Maglev" and "GAN16 ui Maglev MAX".
+  This is recorded as its own family rather than folded into gan-flagship-series because GAN's
+  own site treats it as its own collection with its own name; the mechanical/smart relationship
+  between, for example, "GAN16 ui Maglev MAX" and the mechanical "GAN16 Maglev" is left for
+  pass 3/4 to establish via the `smart_version_of` relationship at the model/variant level,
+  once both exist as records.
+
+  This collection also lists a 2x2 product (GAN251 ui Smart Cube), out of this archive's 3x3
+  scope and not counted toward this family.
+
+  No source located this pass states when this line was introduced; the earliest product URLs
+  found (GAN12 ui MagLev, GAN12 ui FreePlay) were first archived in the same November 2024
+  batch as most of gancube.com's current catalogue, which reflects the timing of the site's own
+  archival, not the line's actual launch date. `introduced` is left unset accordingly.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: confirmed
+    sources: [gancube-collections-ui-series]
+    note: "GAN's own collection page filters every listed product under 'Cube Types: Smart Cube'."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-collections-ui-series]
+  /introduced:
+    confidence: unknown
+    note: "Researched and not found. See description."

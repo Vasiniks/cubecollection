@@ -1,0 +1,22 @@
+# variant: gan-354-m-v2--explorer
+# Pass 4. "GAN 354 M V2 (Explorer)" — a re-release of GAN354 M v2 bundling an extra set of GES
+# tuning nuts (yellow, green, blue). Not a distinct mechanical design per TheCubicle's own
+# framing ("a recent re-release of the GAN 354 M V2"); recorded as a variant (packaging/
+# accessory bundle) rather than a new model.
+id: gan-354-m-v2--explorer
+entity: variant
+model_id: gan-354-m-v2
+name: "GAN 354 M V2 Explorer"
+scope_class: core
+edition:
+  name: "Explorer"
+  types: [standard]
+config:
+  size_mm: 54
+packaging:
+  notable: "Includes an extra set of coloured GES tuning nuts (yellow, green, blue) beyond the base GAN354 M v2's included set."
+status: stub
+attestations:
+  /packaging/notable:
+    confidence: probable
+    sources: [thecubicle-gan354-m-v2-explorer]

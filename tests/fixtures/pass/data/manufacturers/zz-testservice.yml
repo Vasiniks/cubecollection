@@ -1,0 +1,14 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-testservice
+entity: manufacturer
+name: ZZ Test Service
+kind: service
+status: published
+attestations:
+  "/kind":
+    confidence: confirmed
+    sources: [zz-src-official]

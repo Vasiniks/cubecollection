@@ -1,0 +1,97 @@
+# manufacturer: thecubicle
+# Pass 1 (manufacturer register). A US retailer that also services/customises GAN (and other
+# manufacturers') cubes and sells the result as identifiable, distinctly named products —
+# kind: service per DATA_MODEL §1.3. Do not enumerate its product lines here; that is pass 2.
+
+id: thecubicle
+entity: manufacturer
+name: "TheCubicle"
+kind: service
+country: US
+founded:
+  value: "2011-08"
+  precision: month
+  qualifier: exact
+aliases:
+  - "The Cubicle"
+  - "TheCubicle.com"
+  - "TheCubicle.us"
+  - "Cubicle Enterprises"
+  - "Cubicle Enterprises LLC"
+  - "Cubicle Pro Shop"
+  - "Cubicle Custom"
+website: "https://www.thecubicle.com/"
+notes: |-
+  **Legal identity.** TheCubicle's own About page: "TheCubicle.com is owned and operated by
+  Cubicle Enterprises LLC," operating out of New York, launched "in August of 2011"
+  (thecubicle-about-us).
+
+  **Why `kind: service`, evidenced on GAN cubes specifically.** TheCubicle sells GAN 3x3s
+  modified under its own named programs, e.g. the "Cubicle Pro Shop GAN 11 M Pro 3x3 (UV
+  Coated)" — TheCubicle's "customizable version of GAN's 2020 flagship 3x3", shipped with a
+  Cubicle Pro Shop-branded centre cap because the GAN logo cannot be removed under the UV
+  coating (thecubicle-cubicle-custom-gan11-m-pro-uv) — and named "Signature Series" setups
+  credited to individual competitors, e.g. "Matty's GAN16 MagLev MAX UV 3x3", "set up as an
+  exact replica of the main 3x3 used by professional speedcuber Matty Hiroto Inaba"
+  (thecubicle-mattys-gan16-maglev-max-uv), alongside sibling listings "Tymon's GAN12 M MagLev
+  UV 3x3" and "Matty's GAN12 M MagLev UV 3x3 (NAR Edition)" named in the same source. More
+  generally, TheCubicle's own site describes a catalogue-wide "Premium Cube Setup Service"
+  (lubrication and setup) "available... for over 700 puzzles" as of its most recent revamp
+  (thecubicle-premium-setup-service), and a "Cubicle Custom" collection applying the same
+  customisation program across many manufacturers, GAN included (seen in wayback prefix
+  enumeration of thecubicle.com/collections/cubicle-custom/manufacturer_gan and sibling
+  manufacturer_* paths for DaYan, MoYu, QiYi MoFangGe, X-Man Designs, YJ, Yuxin — a lead, not
+  independently cited as a source here since no single page text was captured for it).
+
+  **"Cubicle Pro Shop" and "Cubicle Custom" are in-house programme names, not separate
+  companies.** Both are used in TheCubicle's own first-person voice ("our customizable
+  version...") on product pages under thecubicle.com, with no separate founder, legal entity,
+  or About page located. They are recorded here as aliases so a future researcher who
+  encounters "Cubicle Pro Shop" or "Cubicle Custom" as a credited party does not create a
+  phantom manufacturer for either.
+
+  **Distinct from Cubicle Labs.** See data/manufacturers/cubicle-labs.yml. Cubicle Labs is
+  treated as its own manufacturer record because it has its own name, its own credited founder
+  (Chris Tran), its own logo, and is credited independently of "TheCubicle" in third-party
+  narratives of the GAN 356 Air UM — but no first-party statement by TheCubicle confirming
+  Cubicle Labs as its own division was located in this pass; the parent relationship rests on a
+  single tier-4 source. See that record's attestations.
+
+  **Distinct from PiCube.** See data/manufacturers/picube.yml. PiCube (picubeshop.com) is an
+  independently operated company, not owned by or a division of TheCubicle. TheCubicle credits
+  PiCube by name on some GAN listings (e.g. "GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core
+  Mod)") but the two are separate organisations.
+
+  **Source-tier correction (2026-09-01).** `thecubicle-about-us` was originally filed as
+  `kind: retailer` (tier 2), which left `/country`, `/founded`, and `/website` at `confirmed`
+  resting on a single tier-2 source — rule 9 correctly blocked validation. `thecubicle-about-us`
+  is TheCubicle's own "About Us" page, a first-party organisational statement about itself
+  (its own founding date, jurisdiction, and operating legal entity), not a retail product
+  listing — the same category already applied to `gancube-brand-story-about-us` and
+  `picubeshop-about-us` elsewhere in this register. Reclassified to `kind: manufacturer_official`
+  (tier 1), which is what a company's own corporate self-description has always been treated as
+  in this pass; no new source was added and no claim changed. See
+  research/notes/manufacturers/gan-pass1.md.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-mattys-gan16-maglev-max-uv, thecubicle-premium-setup-service]
+    note: "Three independent first-party product/service descriptions on GAN cubes and catalogue-wide, all describing TheCubicle modifying or setting up cubes produced by others and selling the result under its own naming — the DATA_MODEL §1.3 definition of kind: service."
+  /country:
+    confidence: confirmed
+    sources: [thecubicle-about-us]
+  /founded:
+    confidence: confirmed
+    sources: [thecubicle-about-us]
+  /website:
+    confidence: confirmed
+    sources: [thecubicle-about-us]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-about-us, speedsolving-wiki-cubicle-labs, thecubicle-cubicle-custom-gan11-m-pro-uv]
+    note: "'Cubicle Enterprises' / 'Cubicle Enterprises LLC' and 'TheCubicle.com' are tier 1 (thecubicle-about-us, first-party). 'TheCubicle.us' is tier 4 (speedsolving-wiki-cubicle-labs, used as the domain form in that article's own prose). 'Cubicle Pro Shop' and 'Cubicle Custom' are tier 2, first-party product-page usage."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-about-us, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-mattys-gan16-maglev-max-uv, thecubicle-premium-setup-service, speedsolving-wiki-cubicle-labs]

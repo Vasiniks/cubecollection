@@ -1,0 +1,27 @@
+# source: gancube-le-gan356-air-s-love-pink
+# GAN's own archived "Limited Edition" museum-style product page for a 2018 GAN356 Air S(M)
+# colourway, "Love Pink". The page itself is preserved by GAN as a non-purchasable ($0.00,
+# permanently "Sold Out", titled "For display only, not for sale") historical record — read as
+# evidence the colourway genuinely existed and was sold in 2018, not as evidence it is
+# currently available.
+id: gancube-le-gan356-air-s-love-pink
+entity: source
+kind: manufacturer_official
+title: "GAN356 Air S Love Pink 2018 Limited Edition | GANCUBE Limited Edition"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gancube-limited-edition-gan356-air-s-m-love-pink"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250811004545/https://www.gancube.com/products/gancube-limited-edition-gan356-air-s-m-love-pink"
+excerpt: |-
+  Page/product title: "2018 Limited Edition GAN356 Air S M Love Pink (For display only, not for
+  sale)". Regular price and sale price both $0.00. "Sold Out" permanently displayed; add-to-cart
+  disabled. No further body/colour description text was captured on this page beyond the title
+  and product imagery (not reviewed this pass).
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the exact title string and the $0.00/'Sold Out' state verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for the colourway's own name ('Love Pink'), year (2018), and base model ('GAN356 Air S M', i.e. the magnetized 'SM' tier of gan-356-air-s). GAN itself maintains this page as a historical/display record rather than a live listing, which this pass reads as first-party confirmation that the product existed and was discontinued by the time of capture, not as evidence of a specific launch or discontinuation date beyond the '2018' in the product's own name."
+status: sourced

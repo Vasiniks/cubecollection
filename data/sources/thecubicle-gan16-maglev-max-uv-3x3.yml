@@ -1,0 +1,20 @@
+# source: thecubicle-gan16-maglev-max-uv-3x3
+# TheCubicle's earliest-located listing for a GAN16 product, slightly earlier than the
+# already-cited Matty's signature GAN16 listing. Used as the dating floor for gan-flagship-16.
+id: thecubicle-gan16-maglev-max-uv-3x3
+entity: source
+kind: retailer
+title: "GAN16 MagLev MAX UV 3x3 [Pre-Order]"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250815041928/https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3"
+excerpt: "Page title as captured 2025-08-15: \"GAN16 MagLev MAX UV 3x3 [Pre-Order]\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to resolve with this exact title, including the '[Pre-Order]' tag, at this date."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail listing, tier 2. The '[Pre-Order]' tag in the title is itself evidence this capture is close to the product's actual launch window, strengthening this as a genuine dating floor rather than a long-after-the-fact archive artifact."
+status: sourced

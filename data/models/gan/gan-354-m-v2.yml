@@ -1,0 +1,47 @@
+# model: gan-354-m-v2
+# Pass 3 (model enumeration). Succeeds GAN354 M with an upgraded plastic core and numerical
+# (rather than hand-tunable) tension adjustment, per GAN's own product-page description. "V2"
+# in the name is treated as a manufacturer-declared version signal (DATA_MODEL §4.2's naming
+# rule), distinct from the bare tier-word naming used for the base model. "Explorer" is a
+# re-release plus accessory bundle of this same model, not a separate model, per
+# thecubicle-gan354-m-v2-explorer's own words ("a recent re-release of the GAN 354 M V2").
+# See research/notes/models/gan-pass3.md.
+id: gan-354-m-v2
+entity: model
+family_id: gan-354
+manufacturer_id: gan
+name: "GAN354 M v2"
+scope_class: core
+generation:
+  label: "M v2"
+  ordinal: 2
+  basis: manufacturer_declared
+announced:
+  value: "2020-08"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's own product page describes the upgrade over the base M directly: "The core of new
+  GAN354 has upgraded to plastic, lightweight and stable; And the tension adjustment of GES is
+  now numerical tuning... GAN 354 M v2 contains 48 magnet capsules and they are all visible
+  now." "Explorer" (an extra set of coloured GES tuning nuts bundled in) is recorded as a
+  variant of this model, not a new one, per TheCubicle's own framing of it as a re-release.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan354-m-v2-explorer]
+    note: "The 'Explorer' edition's own earliest capture (2020-08-09) describes itself as 'a recent re-release of the GAN 354 M V2', implying the base V2 already existed by this date; no earlier direct capture of the bare 'GAN 354 M V2' listing was located this pass, so this is treated as an indirect floor via the re-release, not a direct one."
+  /generation/basis:
+    confidence: probable
+    sources: [gancube-gan354-m-v2-product]
+    note: "GAN's own product page and product name both use the 'v2'/'V2' numeral directly ('WHAT'S NEW ON GAN 354 V2'), the same naming-numeral signal DATA_MODEL §4.2 treats as strong (though not conclusive) evidence of a manufacturer-declared design change, applied consistently with gan-356-x-v2 elsewhere in this archive."
+  /relationships/0:
+    confidence: probable
+    sources: [gancube-gan354-m-v2-product]
+    note: "GAN's own product copy frames the V2 core and tuning system as upgrades over the prior GAN354, read as succession."
+relationships:
+  - type: succeeds
+    target: gan-354-m
+    target_entity: model
+    note: "GAN's own product copy: 'WHAT'S NEW ON GAN 354 V2 — The core of new GAN354 has upgraded to plastic... tension adjustment of GES is now numerical tuning.'"

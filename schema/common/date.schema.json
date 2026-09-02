@@ -1,0 +1,135 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "value": {
+      "type": "string",
+      "pattern": "^\\d{4}(-(Q[1-4]|\\d{2}(-\\d{2})?))?$",
+      "description": "ISO 8601, truncated to the precision actually known. Quarters are written YYYY-Qn. The shape must match the declared precision."
+    },
+    "precision": {
+      "type": "string",
+      "x-vocab": "date-precision"
+    },
+    "qualifier": {
+      "type": "string",
+      "x-vocab": "date-qualifier"
+    },
+    "earliest": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "latest": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "value",
+    "precision",
+    "qualifier"
+  ],
+  "description": "A date that states how precisely it is known. Never a bare string.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "qualifier": {
+            "const": "between"
+          }
+        },
+        "required": [
+          "qualifier"
+        ]
+      },
+      "then": {
+        "required": [
+          "earliest",
+          "latest"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "precision": {
+            "const": "year"
+          }
+        },
+        "required": [
+          "precision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "pattern": "^\\d{4}$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "precision": {
+            "const": "quarter"
+          }
+        },
+        "required": [
+          "precision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "pattern": "^\\d{4}-Q[1-4]$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "precision": {
+            "const": "month"
+          }
+        },
+        "required": [
+          "precision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "pattern": "^\\d{4}-\\d{2}$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "precision": {
+            "const": "day"
+          }
+        },
+        "required": [
+          "precision"
+        ]
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          }
+        }
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/common/date.schema.json",
+  "title": "Date with explicit precision"
+}

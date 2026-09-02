@@ -1,0 +1,17 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-src-official
+entity: source
+kind: manufacturer_official
+title: ZZ Testbrand TF V1 product page
+publisher: ZZ Testbrand
+url: https://example.invalid/zz/tf-v1
+preservation_method: archive_url
+archive_url: https://web.archive.invalid/zz/tf-v1
+accessed: "2026-08-30"
+link_status: live
+last_checked: "2026-08-30"
+status: published

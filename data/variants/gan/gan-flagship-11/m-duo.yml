@@ -1,0 +1,18 @@
+# variant: gan-flagship-11--m-duo
+# Pass 4. "GAN11 M Duo" — third of four Versions on GAN's own GAN11 Series listing. No source
+# found this pass describes what distinguishes "Duo" from the base M Pro tier beyond the name
+# itself (a bundle of two cubes is a plausible reading but not confirmed).
+id: gan-flagship-11--m-duo
+entity: variant
+model_id: gan-flagship-11
+name: "GAN11 M Duo"
+scope_class: core
+edition:
+  designation: "M Duo"
+  types: [standard]
+status: stub
+attestations:
+  /edition/designation:
+    confidence: confirmed
+    sources: [gancube-gan11-series-product]
+    note: "Sold as one of four Versions on GAN's own single product listing. What physically distinguishes 'Duo' from 'M Pro' was not described in the portion of the page captured this pass."

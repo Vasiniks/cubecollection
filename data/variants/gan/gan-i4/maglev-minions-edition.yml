@@ -1,0 +1,32 @@
+# variant: gan-i4--maglev-minions-edition
+# Pass 4. "GAN i4 Maglev Minions Edition" — sold as the second product in GAN's own "i Series"
+# collection alongside the base GAN i4, part of the same cross-line "Minions" collaboration
+# theme also applied to GAN V100 Maglev and GAN16 ui Maglev MAX.
+id: gan-i4--maglev-minions-edition
+entity: variant
+model_id: gan-i4
+name: "GAN i4 Maglev Minions Edition"
+scope_class: core
+edition:
+  name: "Minions Edition"
+  types: [collaboration, limited, smart]
+  collaboration_name: "Minions"
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: maglev
+colorway:
+  designation: "Minions Edition"
+status: stub
+attestations:
+  /edition/collaboration_name:
+    confidence: probable
+    sources: [gancube-collections-i-series]
+    note: "GAN's own naming of the collaboration line. Recorded as a name because the collaborator is a licensed property, which the schema cannot hold as a reference — see F8. collaboration_with stays empty rather than pointing at a fabricated entity."
+  /edition/name:
+    confidence: confirmed
+    sources: [gancube-collections-i-series]
+  /config/maglev:
+    confidence: probable
+    sources: [gancube-collections-i-series]

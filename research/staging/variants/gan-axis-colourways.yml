@@ -1,0 +1,131 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  Colourways GAN sells as their own marketed configuration, including body plastic colour and
+  any colourway carrying its own proprietary marketing name. GAN runs an unusually large and
+  active program of named colourway drops — this file is a discovery inventory, not a filled
+  colourway.body/faces record (that is pass 5 work per variant, once models are canonical).
+  Strongest single finding of this pass: GAN's own gancube.cn site (tier 1, manufacturer_official)
+  independently lists almost the entire named-colourway roster found via TheCubicle (tier 2)
+  under its own "Limited Edition" navigation category, which is unusually strong cross-tier
+  corroboration for a discovery pass.
+
+findings:
+  - candidate: "GAN's own 'Limited Edition' colourway roster (tier 1 confirmation of names)"
+    likely_model: { name: "spans GAN11, GAN12, GAN13, GAN14, GAN15, GAN330 across at least 2020-2026", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.cn/en/patents/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Site navigation, Shop > Limited Edition, lists (verbatim, in order): 奇钰, EmeraidoX, GAN15 Maglev Zenith, Flora Blue, Love Pink, Ever Green, Crystal blue, Vita Cube, Antique Rhyme, GAN11 Kun, GAN11 Summer, GAN330 X ShanHeSheJiTu, GAN12 Cheering, GAN12 Chan, GAN13 KUNLUN, GAN13 Coloré, GAN14 Maglev Galaxy, GAN14 Maglev Pro Aurora."
+    open_questions:
+      - "奇钰 (pinyin approx. \"Qíyù\") is untranslated on the English-locale page — likely a colourway name rendered only in Chinese even on the EN site. Needs translation and cross-check against TheCubicle's English retail names to see if it maps to one of the English-named editions below, or is a China-market-exclusive colourway with no Western retail equivalent."
+      - "This is a global nav snapshot, not a dated per-SKU listing — it proves the NAMES exist as a GAN-declared category but not which specific model each pairs with, nor release dates. Pass 5 needs one product page per name."
+
+  - candidate: "AQUALIS (GAN16 MagLev MAX 2026 Summer Limited Edition)"
+    likely_model: { name: "GAN16 MagLev MAX", confidence: confirmed }
+    aliases: ["Aqualis - GAN16 Maglev MAX Summer LE"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.com/products/aqualis-gan16-maglev-max-2026-summer-limited-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "\"AQUALIS - GAN16 Maglev MAX 2026 Summer Limited Edition\", $89.99. Box Includes: Cube x1, Cube Bag x1, Identity Card x1, Poster Card x1, Tuning Tools, GAN BOX x1, Stickers (2 sets), Manual x1, Magnet Bar x8."
+      - url: "https://www.thecubicle.com/products/gan16-maglev-max-3x3-aqualis-summer-le"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Capture the essence of summer with the GAN16 MagLev MAX AQUALIS, a limited-edition masterpiece... a stunning, iridescent pearl finish that shifts with the light... signature soft, rose-tinted hues... Each set arrives with an exclusive accessory suite, including specialized stickers to customize your look, a dedicated GAN box, and premium tools.\""
+    open_questions:
+      - "Run size not stated on either page captured this pass. Record run_size: null per the hard constraint — do not infer one from 'limited-edition masterpiece' language."
+
+  - candidate: "Amyth (GAN16 MagLev MAX Winter Limited Edition)"
+    likely_model: { name: "GAN16 MagLev MAX", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Cross-sell block on an unrelated product page: \"Amyth - GAN16 Maglev MAX Winter Limited Edition ... Crafted in a crystalline purple design inspired by winter frost, the Maglev Cube Amyth introduces elevated control and ultra-smooth Maglev performance. Built on the flagship structure of the GAN16 Maglev MAX, this Collectible model offers a aesthetic made for true enthusiasts. Purchasers will unlock a special Cube Station skin and avatar frame... Note: Due to the special nature of limited-edition products, returns or exchanges will not be accepted once sold, except for issues related to product quality or shipping damage.\""
+    open_questions:
+      - "Amyth was not independently fetched from its own product page this pass (found only in a cross-sell block) — needs its own direct capture in pass 5. Together with AQUALIS, this establishes GAN runs recurring SEASONAL named colourway drops (Summer/Winter) on its current flagship, which is itself a pattern worth noting for future flagship generations."
+
+  - candidate: "Dual-WR Limited Edition (GAN16 MagLev MAX UV 3x3)"
+    likely_model: { name: "GAN16 MagLev MAX", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3-dual-wr-limited-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Celebrate world-record-shattering speed with the GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition)! Crafted to commemorate Team GAN's superstar XuanYi Geng, this exclusive release honors his iconic 3x3 World Records — a 3.05s single (Shenyang Spring 2025) and the current World Record 3.84s average (Beijing Winter 2026). Each unit comes in a dual-WR laser-engraved collector's case... Limited to just 1,111 units worldwide.\""
+    open_questions: []
+    note: >
+      This is the single strongest documented run_size in the whole pass (1,111 units, explicitly
+      stated) and belongs equally in gan-axis-limited-editions.yml and
+      gan-axis-commemorative-editions.yml — it is simultaneously limited, commemorative (honours
+      two specific named world records), and arguably a signature-adjacent tribute to a sponsored
+      athlete without being sold as his personal setup replica. See gan-axis-signature-editions.yml
+      for the signature/commemorative boundary discussion.
+
+  - candidate: "NewBlack (internal plastic colour/material, not a coating)"
+    likely_model: { name: "GAN15", confidence: confirmed }
+    aliases: ["GAN15 黑核 (GAN15 Black Core) — GAN's own CN-site catalog name"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan15-maglev-uv-3x3-newblack"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The NewBlack features car-grade black plastic in its internals, giving the cube a smooth, crisp, and durable feel with less friction and noise.\" Customer review: \"black internals for my color recognition... uv coating... simple adjustments...\""
+      - url: "https://www.gancube.cn/en/patents/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Nav lists \"GAN15 黑核\" (literally \"GAN15 black core\") as its own catalog entry alongside \"GAN15 Maglev\", confirming GAN itself treats this as a distinct product line, not just a retailer bundling choice."
+    open_questions:
+      - "This is 'materials the manufacturer distinguishes' (rule 10) applied to internal/core plastic colour rather than face colour — a genuine but unusual colourway/materials axis: the visible exterior colourway may be unchanged while the internal plastic material is the differentiator. Flagging for the colourway schema: DATA_MODEL §3.6's piece_colors[] (piece_class: internal) looks like the correct field for this, confirming the schema already anticipates it."
+
+  - candidate: "Christmas Edition (GAN356 ME)"
+    likely_model: { name: "GAN356 ME", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan356-me-christmas-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"this limited edition cube features festive green internals, eye-catching red magnet capsules, and a unique red logo... This holiday edition also includes a Christmas-themed sticker to personalize one side of your cube, as well as a vibrant red GAN Cube bag with a seasonal design.\""
+    open_questions: []
+    note: "Genuine multi-part colourway change (internal plastic colour + magnet capsule colour + logo colour), not packaging alone — a clean materiality case, contrast with Brainstorm Voyage Edition in gan-axis-packaging.yml which is closer to the packaging-only boundary."
+
+  - candidate: "Discontinued 2019-2020 named colourways (GAN356 Air S/X family) — Love Pink, Flora Blue, Crystal Blue, Evergreen"
+    likely_model: { name: "GAN356 Air S / GAN356 X", confidence: uncertain }
+    aliases: ["gancube-limited-edition-gan356-air-s-m-love-pink", "gancube-limited-edition-gan356-air-s-s-m-flora-blue", "gancube-summer-limited-edition-gan356-x-crystal-blue", "gancube-winter-limited-edition-gan356-x-s-evergreen"]
+    confidence: uncertain
+    evidence:
+      - url: "https://www.gancube.com/products/gancube-limited-edition-gan356-air-s-m-love-pink"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "URL returns HTTP 404 on the live site as of 2026-09-01 — the product page has been deleted. Discovered only via `npm run wayback -- prefix gancube.com/products/`, which enumerated the URL slug itself (evidence the product once existed) but this pass could not retrieve the archived page content because web.archive.org's snapshot host was unreachable for the full session (see research/notes/variants/gan-discovery.md)."
+      - url: "https://www.gancube.cn/en/patents/"
+        publisher: "GANCUBE (gancube.cn)"
+        kind: manufacturer_official
+        accessed: "2026-09-01"
+        excerpt: "Nav lists \"Love Pink\", \"Flora Blue\", \"Ever Green\", \"Crystal blue\" as GAN's own catalog names, corroborating the slugs found via wayback prefix enumeration and confirming these are/were real GAN colourway names, independent of the retrieval failure on the live URL."
+    open_questions:
+      - "HIGH PRIORITY FOLLOW-UP: these four are the clearest 'delisted product page, evidence survives only in archive' case this pass turned up, exactly the scenario RESEARCH_SPEC §3.6 anticipates. web.archive.org must be retried in a future session (or from a different network path) to pull the actual product descriptions, prices, and any run-size language before this evidence decays further. The slugs alone (via wayback prefix) plus the CN-site nav names are enough to confirm existence at `uncertain`/`reported` confidence but not enough to populate a colourway record."
+
+conflicts: []
+
+not_found:
+  - "No GAN 3x3 colourway using colorway.pattern kind values 'marbled', 'glitter', 'metallic', 'camouflage', or 'glow' was identified this pass. 'gradient'/'printed_graphic'/'split' are plausible fits for several of the named LE colourways above (e.g. AQUALIS's 'iridescent pearl finish' language suggests a gradient or metallic-adjacent pattern) but no source used those words verbatim, so pattern.kind is left unpopulated rather than guessed."
+  - "No hex-normalized colour values were sampled from images this pass — no media/images were reviewed, consistent with this agent's write lane (no media entries authored)."

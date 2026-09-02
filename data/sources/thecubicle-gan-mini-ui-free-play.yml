@@ -1,0 +1,22 @@
+# source: thecubicle-gan-mini-ui-free-play
+# TheCubicle's listing for "GAN Mini ui Free Play", a compact/mini smart cube pairing the
+# ui-series smart electronics with a compact (Mini-format) mechanical base, mirroring GAN Mini
+# M Pro's compact-mechanical spinoff of the numbered flagship line. Used as the dating floor
+# for gan-ui-mini-freeplay.
+id: thecubicle-gan-mini-ui-free-play
+entity: source
+kind: retailer
+title: "GAN Mini ui Free Play – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-mini-ui-free-play"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240214000133/https://www.thecubicle.com/products/gan-mini-ui-free-play"
+excerpt: "Page title as captured 2024-02-14: \"GAN Mini ui Free Play – TheCubicle\". Listed on-page at $104.99 (regular $114.99) as part of a sale promotion; the product also appears twice more in the same page's own recommendation carousels, confirming the name is stable at this capture, not a one-off listing typo."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the exact title/name string in at least three places on the same page."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail listing, tier 2, used for existence, naming, and a dating floor."
+status: sourced

@@ -1,0 +1,19 @@
+# preservation-methods
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: preservation-methods, so the schema and this file cannot drift.
+
+id: preservation-methods
+description: "How a source's evidence is preserved against the page disappearing. Preference order: archive_url, then local_capture, then excerpt."
+values:
+  - value: archive_url
+    label: "Archive URL"
+    description: "Captured in a third-party web archive. Strongly preferred."
+  - value: local_capture
+    label: "Local capture"
+    description: "A preserved local copy with a checksum. Preferred where archiving is impossible."
+  - value: excerpt
+    label: "Excerpt"
+    description: "A verbatim quotation long enough to carry the claim without the page. Acceptable."
+  - value: none
+    label: "None"
+    description: "Nothing preserved. Blocks publication of any critical field relying on it."

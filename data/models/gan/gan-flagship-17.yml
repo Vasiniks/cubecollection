@@ -1,0 +1,54 @@
+# model: gan-flagship-17
+# Pass 3 (model enumeration). GAN's current (2026) flagship generation. GAN's own product page
+# states directly "GAN17 MagDrive is GAN's flagship maglev 3x3 speed cube" — a first-party
+# positioning statement, though not itself a numbered-generation ordinal statement the way
+# GAN12's page carries. No TheCubicle listing was located this pass, so dating rests solely on
+# a gancube.com capture floor; flagged as the weakest-evidenced date in this family for that
+# reason. See research/notes/models/gan-pass3.md.
+id: gan-flagship-17
+entity: model
+family_id: gan-flagship-series
+manufacturer_id: gan
+name: "GAN17"
+aliases:
+  - "GAN17 MagDrive"
+scope_class: core
+generation:
+  label: "17"
+  ordinal: 17
+  basis: manufacturer_declared
+announced:
+  value: "2026-08"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's own product page: "GAN17 MagDrive is GAN's flagship maglev 3x3 speed cube, featuring
+  the Celestial Magnetic-Dynamic System with 196 magnets, One Magnet Core and Three Magnet
+  Realms for Full-Angle Navigation. It combines a 17.5 mm Micro Magnetic Core, Maglev,
+  Omni-support Spherical Orbit and Full-Freedom Numerical Tuning..." No source found this pass
+  states an explicit launch/announcement date or an "Nth generation" ordinal for GAN17
+  specifically; the 2026-08 floor is gancube.com's own earliest located capture of this
+  product's URL, and — unlike GAN12-14's Nov-2024-clustered floors — this capture is not part
+  of that site-wide archival event, but it is also not independently corroborated by any
+  non-gancube.com source located this pass, so it is held at reduced confidence.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [gancube-gan17-magdrive-product]
+    note: "gancube.com's own earliest located capture of this product URL (2026-08-11) is a manufacturer-site floor, not a stated launch date, and no independent (e.g. TheCubicle) corroboration was located this pass — the single weakest-evidenced date among GAN11-17."
+  /generation/basis:
+    confidence: uncertain
+    sources: [gancube-gan17-magdrive-product]
+    note: "No explicit 'Nth generation' statement was found on GAN17's own page; basis is extended from GAN12's directly-confirmed manufacturer-declared numbering pattern, applied by naming-sequence analogy. GAN17's own page does directly self-describe as 'GAN's flagship maglev 3x3 speed cube', a first-party positioning statement, which is the basis for gan-flagship-series' own family-level 'flagship' positioning attestation."
+  /relationships/0:
+    confidence: uncertain
+    note: "Inferred from GAN's sequential numbering; no explicit succession sentence found."
+  /description:
+    confidence: confirmed
+    sources: [gancube-gan17-magdrive-product]
+relationships:
+  - type: succeeds
+    target: gan-flagship-16
+    target_entity: model
+    note: "Inferred from GAN's own sequential generation numbering; no explicit succession sentence found."

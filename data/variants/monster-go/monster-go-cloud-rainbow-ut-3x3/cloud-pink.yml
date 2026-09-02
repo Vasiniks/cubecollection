@@ -1,0 +1,16 @@
+# variant: monster-go-cloud-rainbow-ut-3x3--cloud-pink
+# Pass 4. "Cloud - pink" — second of four colourway options on the same single listing.
+id: monster-go-cloud-rainbow-ut-3x3--cloud-pink
+entity: variant
+model_id: monster-go-cloud-rainbow-ut-3x3
+name: "Monster Go Cloud (Pink)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Cloud - pink"
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-monster-go-cloud-rainbow-ut-versions]

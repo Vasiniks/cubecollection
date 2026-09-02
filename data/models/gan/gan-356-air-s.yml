@@ -1,0 +1,52 @@
+# model: gan-356-air-s
+# Pass 3 (model enumeration). The hardest single boundary call of this pass. TheCubicle
+# describes "Air S" as having "a unique honeycomb design on the pieces" and states the magnet
+# slots present in "Air SM" "have been removed" in "Air S" to reduce weight. Read as a
+# redesigned piece geometry distinct from the original GAN356 Air (a mold-level difference,
+# DATA_MODEL §4.2), making "Air S" its own model — while "Air S" (non-magnetic) vs "Air SM"
+# (magnetic) are themselves treated as variants of THIS model, since both share the same
+# honeycomb piece family and differ only by whether magnets are installed (worked decision A
+# again, one level down). See thecubicle-gan-356-air-s-master and
+# research/notes/models/gan-pass3.md for the full reasoning and its explicit uncertainty.
+id: gan-356-air-s
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 Air S"
+aliases:
+  - "GAN 356 Air S"
+scope_class: core
+generation:
+  label: "Air S"
+  ordinal: 2
+  basis: community_convention
+announced:
+  value: "2019"
+  precision: year
+  qualifier: before
+description: |-
+  A honeycomb-piece redesign of the Air shell, distinguished from the original GAN356 Air by a
+  physically different piece geometry per TheCubicle's own description (see the source's own
+  excerpt). Sold as "Air S" (magnet slots removed, non-magnetic, lightest configuration) and
+  "Air SM" (magnet slots present, magnetized) from evidently the same honeycomb piece family —
+  treated as variants of this one model, not two models, since the removal/presence of a magnet
+  cavity in an otherwise-shared piece family is the same kind of assembly-time part choice as
+  worked decision A, one level more granular than the Air-vs-Air-S distinction itself.
+
+  This is recorded as a genuine judgement call, not a settled fact: an alternative, equally
+  defensible reading is that "Air S" and "Air SM" are themselves two separate models (if the
+  "removed" cavity really does require a distinct mold rather than a swappable/omittable
+  insert). Flagged explicitly for review rather than silently resolved either way.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan-356-air-s-master]
+    note: "TheCubicle's earliest capture of the Air S Master listing is 2019-07-18 (tier 2); this is an archive/retail-listing floor, not a manufacturer-stated launch date. GAN's own site was not found to carry a dated Air S announcement this pass."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found; ordinal is this archive's own placement, second after the original Air shell."
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-gan-356-air-s-master]
+    note: "The core model-vs-variant judgement rests on interpreting 'magnet slots... have been removed... unique honeycomb design' as describing a mold-level difference. This is the archive's own reading of retailer marketing language, not a manufacturer statement of tooling identity or difference, and is exactly the kind of case DATA_MODEL §4.2 says to default to splitting under uncertainty for — recorded as a live open question, not a closed one. A human reviewer should re-examine this call against a direct comparison of Air, Air S, and Air SM piece photographs if any become available."

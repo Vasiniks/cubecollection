@@ -1,0 +1,20 @@
+# source: thecubicle-gan-v100-maglev-uv-picube-mod
+# A GAN 3x3 sold under a product name that credits a third-party modder, PiCube. The only
+# citable evidence located in pass 1 that PiCube exists as an identifiable organisation.
+id: thecubicle-gan-v100-maglev-uv-picube-mod
+entity: source
+kind: retailer
+title: "GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-picube-20-magnet-ball-core-mod"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260713211035/https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-picube-20-magnet-ball-core-mod"
+excerpt: "Product title as listed by TheCubicle on 2026-09-01: \"GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)\". TheCubicle also maintains a PiCube collection at /collections/picube listing further GAN 3x3s under the same modder credit, among them \"GAN V100 MagLev Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod)\", \"GAN12 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)\", \"GAN16 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)\" and \"GAN16 MagLev MAX UV 3x3 (PiCube 20-Magnet Ball-Core Mod)\"."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'PiCube'. The excerpt records the sibling product names because the collection page itself is not separately archived."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "The listing credits PiCube in the product name but carries no prose describing who or what PiCube is. It establishes that modded GAN 3x3s are sold under a PiCube credit; it does not establish PiCube's country, ownership, or founding."
+status: sourced

@@ -1,0 +1,40 @@
+# variant: gan-356-air--um
+# Pass 4. "GAN356 Air UM" — a magnetized GAN356 Air Ultimate, per TheCubicle: "the world's first
+# mass produced magnetic 3x3, and is the culmination of a collaboration between GAN and Cubicle
+# Labs." A community wiki (tier 4, corroborating only) independently dates the release to
+# January 2017 and attributes the magnetism specifically to Cubicle Labs ("Cubicle Labs did the
+# magnetism, while GAN made the 'U'"). Held historically significant: GAN's own flagship and
+# reported world-record cube per the same TheCubicle listing (not independently corroborated
+# for the WR claim this pass).
+id: gan-356-air--um
+entity: variant
+model_id: gan-356-air
+name: "GAN356 Air UM"
+aliases:
+  - { name: "GAN Air UM", source: speedsolving-wiki-gan }
+scope_class: core
+edition:
+  designation: "UM"
+  types: [collaboration]
+  collaboration_with: [cubicle-labs]
+config:
+  magnet_strength: "Magnetized (magnet slots present per TheCubicle); exact magnet count/arrangement not stated by any source found this pass."
+status: stub
+significance: |-
+  TheCubicle (a party to the collaboration, so read cautiously) describes this as "GAN's
+  flagship 3x3 and current world record cube for both single and average" and "the world's
+  first mass produced magnetic 3x3" at the time of that listing; both are comparative/
+  superlative claims (RESEARCH_SPEC §3.3, tier 4 for that specific claim) attributed here, not
+  asserted as fact. The GAN/Cubicle Labs collaboration itself is corroborated by a second,
+  independent (tier 4) community source.
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um, speedsolving-wiki-gan]
+    note: "Two sources (one tier 2, one tier 4 corroborating) agree GAN and Cubicle Labs collaborated on this product's magnetism; held at probable rather than confirmed since the tier 4 source alone cannot establish and the tier 2 source is an interested party (TheCubicle operates Cubicle Labs)."
+  /edition/collaboration_with:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um, speedsolving-wiki-gan]

@@ -1,0 +1,71 @@
+# manufacturer: cubicle-labs
+# Pass 1 (manufacturer register). A named service organisation that magnetises/lubricates and
+# rebrands cubes made by other manufacturers, credited independently of TheCubicle in
+# third-party narrative even though it appears to operate as a division of TheCubicle. The
+# parent relationship itself is the weakest-evidenced claim in this register — see below.
+
+id: cubicle-labs
+entity: manufacturer
+name: "Cubicle Labs"
+kind: service
+parent_id: thecubicle
+founded:
+  value: "2016"
+  precision: year
+  qualifier: exact
+notes: |-
+  **What establishes `kind: service`.** TheCubicle's own product page for the "Cubicle Labs
+  WuQue M" states: "Original puzzle made by QiYi MoFangGe. It features a Cubicle Labs logo with
+  three orbitals on the white side," and describes Cubicle Labs installing magnets and applying
+  its own lubrication combination to a cube designed and manufactured by a different company,
+  then selling the result under the Cubicle Labs name (thecubicle-cubicle-labs-wuque-m — cited
+  for what kind of organisation Cubicle Labs is; the WuQue M itself is a QiYi product, not a GAN
+  one, and is out of scope for this register beyond establishing that fact). On the GAN side
+  specifically, TheCubicle's own listing for the GAN 356 Air UM states the cube "is the
+  culmination of a collaboration between GAN and Cubicle Labs" (thecubicle-gan-356-air-um), and
+  the Speedsolving wiki's GAN article, corroborating only, says "Cubicle Labs did the
+  magnetism, while GAN made the 'U'" (speedsolving-wiki-gan) for what the same wiki's Cubicle
+  Labs article calls "the first mass-produced magnetic 3x3x3 cube" (speedsolving-wiki-cubicle-
+  labs) — a landmark product in GAN's own line, not a Cubicle-Labs-branded product, which is why
+  this collaboration is a lead for pass 2's model-level relationships rather than something
+  resolved on this record.
+
+  **Unresolved: is Cubicle Labs a division of TheCubicle?** The only source making that
+  ownership claim directly is the Speedsolving wiki, tier 4: "Cubicle Labs is a division of
+  TheCubicle.us... founded in 2016 by Christopher V Tran" (speedsolving-wiki-cubicle-labs). No
+  first-party page on thecubicle.com stating "Cubicle Labs is our division/brand" was located
+  in this pass — TheCubicle's product pages use the Cubicle Labs name and logo without stating
+  the ownership relationship outright. `parent_id: thecubicle` is recorded here because it is
+  the best-evidenced candidate and is consistent with every other fact found (Cubicle Labs
+  products are sold exclusively through thecubicle.com; the name reads as a TheCubicle house
+  brand), but the attestation is `confidence: uncertain` on a single weak source, and this is
+  flagged explicitly as an unresolved identity question for pass 2 to chase toward a citable
+  first-party statement.
+
+  `country` is left unset: no source states a country for Cubicle Labs as distinct from
+  TheCubicle, and inferring one from the unconfirmed parent relationship would compound one
+  weak claim on another.
+
+  **Founder and founding year.** speedsolving-wiki-cubicle-labs (tier 4, the same single weak
+  source as the parent-ownership claim) names the founder as "Christopher V Tran, more commonly
+  known by simply Chris Tran" and dates the founding to 2016. No `person` record is created by
+  this pass. Recorded at `confidence: uncertain` — a single tier-4 source, consistent with
+  everything else found but not independently corroborated.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-cubicle-labs-wuque-m, thecubicle-gan-356-air-um]
+    note: "Two independent tier-2 first-party retailer product pages (both published by TheCubicle, Cubicle Labs' presumed operator) describing Cubicle Labs modifying a cube made by another manufacturer and selling it under its own name/logo, and separately its role providing the magnetising work on the GAN 356 Air UM. Corroborated, not established, by speedsolving-wiki-cubicle-labs (tier 4)."
+  /founded:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cubicle-labs]
+    note: "Single tier-4 source, the same one behind the /parent_id claim. States the founding year outright ('founded in 2016 by Christopher V Tran') but is not independently corroborated."
+  /parent_id:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cubicle-labs]
+    note: "Single tier-4 (community wiki) source is the only place this pass found the ownership claim stated outright. See notes field. Rule 6's inheritance clause does not relax this — parent_id is not on the manufacturer critical-field list, so this does not by itself block `sourced`, but the claim is weak and flagged for pass 2."
+  /country:
+    confidence: unknown
+    note: "Researched and not found: no source states a country for Cubicle Labs distinct from TheCubicle's. See notes field for why one is not inferred from the unconfirmed parent relationship."

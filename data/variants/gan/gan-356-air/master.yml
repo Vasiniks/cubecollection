@@ -1,0 +1,28 @@
+# variant: gan-356-air--master
+# Pass 4. The "Master" sticker tier of GAN356 Air: GAN's half-bright sticker set pre-applied at
+# the factory, plus a bundled plastic adjusting tool and coloured GES components. TheCubicle's
+# own copy states this was the first tier released, with "Advanced" and "Standard" only ever
+# described as possible future releases (not confirmed as ever sold — not recorded as variants
+# here; see research/notes/variants/gan-pass4.md).
+id: gan-356-air--master
+entity: variant
+model_id: gan-356-air
+name: "GAN356 Air Master"
+aliases:
+  - { name: "Gans 356 Air Master", source: thecubicle-gans-356-air-master-unstickered }
+scope_class: core
+edition:
+  designation: "Master"
+  types: [standard]
+colorway:
+  application: stickered
+  scheme: standard
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-gans-356-air-master-unstickered]
+    note: "TheCubicle: 'This is the Master version of the Gans 356 Air. The Master version features the Gans half bright sticker set pre-applied to the cube.'"
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-gans-356-air-master-unstickered]

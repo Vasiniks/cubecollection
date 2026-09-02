@@ -1,0 +1,79 @@
+# model: swift-block-super-maglev
+# Pass 3 (model enumeration). A later (found from an August 2026 capture) Swift Block 3x3,
+# sold at a URL and page title that drop the "355" numeral used by the earlier Swift Block 3x3
+# line, describing a distinct mechanism ("dual magnetic rings") and a notably lighter weight
+# than "Swift Block 355 Maglev". Recorded as a probable successor model, `confidence: uncertain`
+# on the succession claim per DATA_MODEL §4.2's default-to-split guidance. See
+# research/notes/models/gan-pass3.md.
+id: swift-block-super-maglev
+entity: model
+family_id: swift-block-3x3
+manufacturer_id: swift-block
+name: "Swift Block 3x3 Super Maglev"
+aliases:
+  - "Swift 3X3 Super Maglev"
+  - "Swift Block Super Maglev"
+scope_class: core
+generation:
+  label: "Super Maglev"
+  ordinal: 3
+  basis: community_convention
+description: |-
+  GAN's own product page: "At the heart of the Swift 3X3 Super are dual magnetic rings. These
+  rings create a strong magnetic grip between layers, ensuring the cube rotates smoothly with
+  zero sticking... Weighing only 71 grams... with a cube size of 55mm... Built-in GES Tension
+  System with 8 Adjustable Settings" (gancube-swift-block-super-maglev-specifications). A UV
+  coated version ("Swift 3X3 Super Maglev UV") is also described on the same page as a
+  configuration choice, not a separate product.
+
+  "Dual magnetic rings" is a materially different mechanism description from "Swift Block 355
+  Maglev"'s own page, which named no mechanism at all beyond the word "Maglev" in its title;
+  combined with a substantially lower weight (71g vs. 91.8g) and the loss of the "355" numeral
+  from the naming pattern used by every other Swift Block 3x3 model found this pass, this is
+  read as a new design generation. No source found this pass states a direct succession
+  sentence ("replaces the 355 Maglev" or similar); the `succeeds` relationship below is this
+  archive's own inference from the shared "Maglev" positioning, naming-family, and dated
+  capture order, held at `confidence: uncertain`.
+status: drafted
+specs:
+  size_mm: 55
+  weight_g: 71
+  maglev: maglev
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [gancube-swift-block-super-maglev-specifications]
+  /specs/weight_g:
+    confidence: confirmed
+    sources: [gancube-swift-block-super-maglev-specifications]
+  /specs/maglev:
+    confidence: probable
+    sources: [gancube-swift-block-super-maglev-specifications]
+    note: "GAN's own copy describes 'dual magnetic rings' creating 'a strong magnetic grip between layers' — a magnetic-repulsion description, read as MagLev, though the page does not use the bare word 'spring' to contrast it explicitly the way GAN V100 Leap's own copy does."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. 'Dual magnetic rings' does not map cleanly onto vocab/magnet-configurations.yml's existing values (single_layer/dual_layer/core_corner/adjustable/monopole/other) without over-interpreting; recorded in prose only."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "GAN's own copy names a 'built-in GES Tension System with 8 Adjustable Settings' (tier 1), which does not map cleanly onto a single vocab/adjustment-systems.yml value without over-interpreting; recorded in prose rather than the enum."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /announced:
+    confidence: unknown
+    note: "Researched and not found. The earliest located capture of this URL (2026-08-11) is a manufacturer-site floor, not a stated launch date, and is not part of gancube.com's November 2024 archival event."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found."
+  /relationships/0:
+    confidence: uncertain
+    sources: [gancube-swift-block-super-maglev-specifications, gancube-swift-block-355-maglev-specifications]
+    note: "Inferred from naming-family, shared 'Maglev' positioning, spec differences, and capture-date order; no explicit succession statement was found. See description."
+  /description:
+    confidence: probable
+    sources: [gancube-swift-block-super-maglev-specifications]
+relationships:
+  - type: succeeds
+    target: swift-block-355-maglev
+    target_entity: model
+    note: "Inferred, not manufacturer-stated. See description and the /relationships/0 attestation for the reasoning and its limits."

@@ -1,0 +1,68 @@
+# model: gan-ui-16-maglev-max
+# Created in the Pass 4.5 cleanup, closing the G1 gap identified in Pass 4 preparation: a
+# tier-1 GAN product page existed for this product with no model record anywhere in the archive.
+#
+# VERDICT: "underlying design changes."
+#
+# Reasoning, stated so it can be argued with:
+#   - GAN's own site navigation places this product under the "GAN ui Series" heading, and the
+#     source excerpt records it as "distinct from the mechanical 'GAN16 Maglev' listing". The
+#     manufacturer draws the boundary; the archive follows it.
+#   - It is therefore NOT a variant of gan-flagship-16. Attaching it there because the name
+#     contains "GAN16" was the specific error Pass 4 was warned against and correctly refused.
+#   - It is also not a configuration of any existing gan-ui-series model. All four of those
+#     (gan-ui-12-freeplay, gan-ui-12-maglev, gan-ui-12-sp, gan-ui-mini-freeplay) are built on a
+#     GAN12 or Mini shell. A different numbered shell generation is a different underlying
+#     design, not a different part chosen at assembly.
+#   - The evidentiary basis is the same one on which all four existing ui models were created:
+#     GAN's own listing and naming. Creating this one on a weaker basis than its siblings would
+#     be inconsistent; refusing to create it at all would leave the archive knowingly incomplete
+#     while holding a tier-1 source for the product's existence.
+#
+# WHAT IS NOT ESTABLISHED, and is recorded as an open question rather than asserted:
+#   - That this model uses the GAN16 mechanical shell. That is inferred from the name and from
+#     the family's pattern, and no source consulted states it. No smart_version_of relationship
+#     is created, because asserting an unsourced derivation is precisely what this archive
+#     refuses to do. See research/staging/variants/gan-pass4-boundary-questions.yml.
+
+id: gan-ui-16-maglev-max
+entity: model
+family_id: gan-ui-series
+manufacturer_id: gan
+name: "GAN16 ui Maglev MAX"
+scope_class: core
+generation:
+  label: "16 ui Maglev MAX"
+  basis: manufacturer_declared
+description: |-
+  GAN's smart-cube offering carrying the GAN16 designation, sold at its own product URL and
+  listed by GAN under the "GAN ui Series" heading of its own Smart Cubes navigation, separately
+  from the mechanical "GAN16 Maglev". Specifications are deliberately unfilled: this record
+  exists to give the product a correct parent, and specification research belongs to a later
+  pass.
+status: stub
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [gancube-gan16-ui-maglev-max-product]
+    note: "GAN's own product page title, verbatim: \"GAN16 ui Maglev MAX | GANCUBE\"."
+  /family_id:
+    confidence: probable
+    sources: [gancube-gan16-ui-maglev-max-product]
+    note: "GAN's own navigation lists the product under the 'GAN ui Series' heading, distinct from the mechanical GAN16 Maglev listing. Probable rather than confirmed: one source, and the family assignment rests on that navigation grouping rather than an explicit manufacturer statement of product lineage."
+  /generation:
+    confidence: probable
+    sources: [gancube-gan16-ui-maglev-max-product]
+  /specs/size_mm:
+    confidence: unknown
+  /specs/weight_g:
+    confidence: unknown
+  /specs/core_system:
+    confidence: unknown
+  /specs/maglev:
+    confidence: unknown
+  /specs/magnet_architecture:
+    confidence: unknown
+  /specs/adjustment_system:
+    confidence: unknown

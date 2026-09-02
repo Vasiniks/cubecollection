@@ -1,0 +1,26 @@
+# source: gancube-collections-i-carry-series
+# GAN's own storefront collection for its "i carry Series" smart cubes, a second and
+# separately-declared GAN smart-cube collection distinct from "i Series". Primary evidence for
+# treating "GAN i Carry Series" as its own family.
+id: gancube-collections-i-carry-series
+entity: source
+kind: manufacturer_official
+title: "i carry Series | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/collections/i-carry-series"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260811015558/https://www.gancube.com/collections/i-carry-series"
+excerpt: |-
+  Page title: "i carry Series | GANCUBE". Collection grid, 6 results, all filtered under Cube
+  Types: Smart Cube, 3x3 Cube: "GAN356 i carry 2" ($35.99-$48.99), "GAN356 i carry E"
+  ($25.99-$32.99), "GAN i carry 4 Smart Cube" ($34.99-$74.98), "GAN i carry 4 Minions Edition"
+  ($39.99-$81.98), "GAN i carry 4 Year of the Horse" ($34.99-$64.98), "GAN i carry 4 SSL
+  Limited" ($39.99-$81.98).
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain the page title and all six product names/prices verbatim."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own storefront collection page, tier 1 for GAN's own catalogue/collection structure. Products span at least two naming generations ('GAN356 i carry' prefix vs. bare 'GAN i carry 4'), a naming-convention shift for pass 3 to record at the model level, not resolved here."
+status: sourced

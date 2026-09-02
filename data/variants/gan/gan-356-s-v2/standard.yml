@@ -1,0 +1,20 @@
+# variant: gan-356-s-v2--standard
+# Pass 4. The base "GAN356sV2"/"GAN356 S V2" configuration. No source found this pass confirms
+# "Lite"/"Master"/"Advanced" sub-tiers were ever actually sold for this specific shell (the
+# model description's mention of them is an unconfirmed pattern-analogy extension from the Air
+# line, not an independent citation for this model) — staged as a lead, not recorded as
+# variants here. See research/notes/variants/gan-pass4.md.
+id: gan-356-s-v2--standard
+entity: variant
+model_id: gan-356-s-v2
+name: "GAN356 S V2"
+aliases:
+  - { name: "GAN356sV2", source: gancube-2016-earliest-capture }
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [gancube-2016-earliest-capture]

@@ -1,0 +1,78 @@
+# manufacturer: picube
+# Pass 1 (manufacturer register). An independent company operating picubeshop.com, credited by
+# name on GAN cubes TheCubicle sells with a PiCube-designed modification. Not owned by
+# TheCubicle or GAN — see notes.
+
+id: picube
+entity: manufacturer
+name: "PiCube"
+kind: service
+country: GB
+founded:
+  value: "2017-08"
+  precision: month
+  qualifier: exact
+aliases:
+  - "Picube"
+  - "Picube Shop"
+  - "PicubeShop"
+  - "Picubeshop.com"
+  - "Seamoonbaby Ltd"
+website: "https://www.picubeshop.com/"
+notes: |-
+  **How PiCube surfaced in GAN research.** TheCubicle sells a "GAN V100 MagLev UV 3x3 (PiCube
+  20-Magnet Ball-Core Mod)" and maintains a "PiCube" collection listing further GAN 3x3s under
+  the same modder credit — "GAN V100 MagLev Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod)",
+  "GAN12 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)", "GAN16 MagLev UV 3x3 (PiCube
+  20-Magnet Ball-Core Mod)", "GAN16 MagLev MAX UV 3x3 (PiCube 20-Magnet Ball-Core Mod)"
+  (thecubicle-gan-v100-maglev-uv-picube-mod). That source alone did not establish who or what
+  PiCube is, so this pass researched it directly.
+
+  **What PiCube is.** PiCube's own About page (picubeshop-about-us) describes it as "an online
+  store created on august, 2017 with the passion to delivery the cubes and puzzles," which
+  "open[ed] our independent store on January 2020," selling "custom magnetic cubes" across
+  brand categories including GAN, MoYu, QiYi, DaYan, and YJ. This is the DATA_MODEL §1.3
+  definition of `kind: service` — a company that magnetises/customises cubes produced by other
+  manufacturers and sells the result as its own identifiable product — independently confirmed
+  by TheCubicle's own listing crediting a "PiCube ... Mod" on a base GAN cube.
+
+  **Founders named on the source.** "Who We Are: Bo Wang, Jiekang Pan, Zijia Feng" — recorded
+  here for provenance; no `person` records are created by this pass (person is a separate
+  entity type, out of this write lane).
+
+  **Unresolved: country.** The same About page states the registered company as "Seamoonbaby
+  Ltd," with "Company Address: Stone Hill Road, Bolton, England, BL4 9TP" — a UK address, which
+  is what `country: GB` is attested to. But the same paragraph also claims "Our custom magnetic
+  cubes have been recognized as the most professional and industry leading speed cubes in
+  China." These are not necessarily in conflict (a UK-registered holding/storefront company can
+  operate manufacturing or reputation-relevant activity elsewhere), but no source in this pass
+  states outright where PiCube's actual operations are based, so `country: GB` reflects only
+  the literal registered-address statement and is recorded at `probable` rather than
+  `confirmed`. Flagged as an unresolved identity question.
+
+  **Link status.** No capture of picubeshop.com's about page was found after 2023-11-11 in the
+  CDX index checked this pass; the site's current status as of 2026 was not independently
+  re-verified. Recorded as a lead for a link-sweep pass.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [picubeshop-about-us, thecubicle-gan-v100-maglev-uv-picube-mod]
+  /country:
+    confidence: probable
+    sources: [picubeshop-about-us]
+    note: "Registered company address in England, stated plainly on PiCube's own About page. See notes field for the unresolved tension with the same page's claim of recognition 'in China'."
+  /founded:
+    confidence: confirmed
+    sources: [picubeshop-about-us]
+    note: "'created on august, 2017' — PiCube's own stated founding of the online store. The same source separately dates 'our independent store' to January 2020, which is recorded as a distinct milestone in notes rather than a second founding date."
+  /website:
+    confidence: confirmed
+    sources: [picubeshop-about-us]
+  /aliases:
+    confidence: probable
+    sources: [picubeshop-about-us]
+  /notes:
+    confidence: confirmed
+    sources: [picubeshop-about-us, thecubicle-gan-v100-maglev-uv-picube-mod]

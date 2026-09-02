@@ -1,0 +1,52 @@
+# source: gancube-cn-core-technology-history
+# GAN's own Chinese-language "Core/Axis Technology Development History" article on
+# gancube.cn. Fetched and read directly in the original Chinese (not via the staging file's
+# citation, which pointed at an /en/ URL with no archive capture — see
+# research/notes/models/gan-pass2.md). The single richest tier-1 source located in this pass
+# for dating the technology lineage that ties GAN356 (2015-2019), the GAN11-onward numbered
+# flagship succession (2020-2021), and the GAN356 i smart line (2019) together as three
+# distinct but chronologically interlocking design histories.
+id: gancube-cn-core-technology-history
+entity: source
+kind: manufacturer_official
+title: "GANCUBE 轴心技术发展历程 (GANCUBE Core Technology Development History)"
+publisher: "GANCUBE (gancube.cn)"
+url: "https://www.gancube.cn/gancubes-core-technology/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250118175543/https://www.gancube.cn/gancubes-core-technology/"
+excerpt: |-
+  "2015-2017 钢塑IPG轴心 [...] GAN深谙轴心的这一技术关键，并从2015 年开始，于GAN356上首度开发搭载了
+  第一根钢塑一体IPG轴。[...] 此后直到2017年，IPG轴心历经IPG v1-IPG v5五代精进。"
+  "2018 数调IPG轴心 [...] 2018年，GAN356 X 携全球第一根数字化调试轴心——数调钢塑IPG颠覆上阵。[...]
+  2019，GAN356 X S上市，又将轴心升级为翼形数调轴。"
+  "2019 智能球轴 [...] 2019，GAN智能元年。第一代竞速级智能魔方——GAN356 i 传奇登场，它最为重磅的智能
+  中枢，恰恰正是这根智能球轴。"
+  "2020 磁力轴 [...] 年度重磅旗舰——GAN 11 M Pro，为全球魔方圈奉上了一个久违的惊喜——磁力轴。它的神奇
+  之处，是在轴心之上，搭载了8颗全向磁粒。"
+  "2021，磁力轴2.0顺势上阵，宣告了磁悬浮时代的开启。这根磁力轴2.0，不止破纪录地实现了30°自动漂移归位，
+  更与角块卡角磁力绝妙配合，主导了磁斥力的惊艳亮相。"
+  Also, earlier on the same timeline: "2013 全塑一体成型轴心 [...] 于2013年 在 GAN3 上惊艳亮相" — a
+  product named "GAN3" from 2013, noted here as a lead for pass 3, not otherwise researched in
+  this pass.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain every dated passage quoted above verbatim, including the 2015/GAN356, 2018/GAN356 X, 2019/GAN356 i, 2020/GAN 11 M Pro '旗舰' (flagship), and 2021 magnetic-levitation-era passages. Note: the staging file `research/staging/variants/gan-axis-core-systems.yml` and others cite this content at the URL `gancube.cn/en/gancubes-core-technology/` (an /en/ path); that exact URL has no capture in the CDX index as of this pass (`npm run wayback -- list` on it returns no captures). Only the CN-language URL without /en/ (used here) is archived. This source record supersedes that citation for reconciliation purposes."
+accessed: "2026-09-01"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: |-
+  Original Chinese retained verbatim above per RESEARCH_SPEC §3.6/3.7. Working translation of
+  the load-bearing sentences: "From 2015, GAN first developed and fitted the first steel-plastic
+  integrated IPG core on the GAN356." / "In 2018, the GAN356 X debuted the world's first
+  digitally-adjustable core... in 2019 the GAN356 X S upgraded to a wing-shaped adjustable
+  core." / "2019 was GAN's Year One of intelligence: the first-generation competitive-tier
+  smart cube, the GAN356 i, arrived, and its most important smart hub was precisely this smart
+  ball axis." / "This year [2020], GAN — the magnetic-force revolutionary — once again
+  triggered a wave of magnetic-system change. The year's heavyweight FLAGSHIP (年度重磅旗舰),
+  the GAN 11 M Pro, brought the global cubing community a long-awaited surprise: the magnetic
+  core, fitted with 8 omnidirectional magnetic particles above the axis." / "In 2021, Magnetic
+  Core 2.0 followed, announcing the beginning of the magnetic-levitation era." This is GAN's own
+  first-party technology history and is tier 1 for its own product/technology dating; "旗舰"
+  (flagship) applied to the GAN 11 M Pro is GAN's own positioning word for that product, not a
+  third party's characterisation.
+status: sourced

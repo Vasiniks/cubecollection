@@ -1,0 +1,37 @@
+# colorway-pattern
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: colorway-pattern, so the schema and this file cannot drift.
+
+id: colorway-pattern
+description: "A surface pattern beyond flat colour."
+values:
+  - value: none
+    label: "None"
+    description: "Flat colour."
+  - value: gradient
+    label: "Gradient"
+    description: "A graded colour transition."
+  - value: marbled
+    label: "Marbled"
+    description: "Marbled or swirled plastic."
+  - value: printed_graphic
+    label: "Printed graphic"
+    description: "A printed image or motif."
+  - value: split
+    label: "Split"
+    description: "Two or more colours split across a face or piece."
+  - value: glitter
+    label: "Glitter"
+    description: "Particulate sparkle in the plastic."
+  - value: metallic
+    label: "Metallic"
+    description: "A metallic finish or pigment."
+  - value: glow
+    label: "Glow"
+    description: "Phosphorescent."
+  - value: camouflage
+    label: "Camouflage"
+    description: "A camouflage motif."
+  - value: other
+    label: "Other"
+    description: "A documented pattern not covered above."

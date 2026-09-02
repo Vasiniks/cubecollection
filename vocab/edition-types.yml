@@ -1,0 +1,46 @@
+# edition-types
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: edition-types, so the schema and this file cannot drift.
+
+id: edition-types
+description: "What makes an edition distinct. Multi-valued."
+values:
+  - value: standard
+    label: "Standard"
+    description: "The regular retail configuration."
+  - value: limited
+    label: "Limited"
+    description: "Produced in a bounded run."
+  - value: commemorative
+    label: "Commemorative"
+    description: "Marking a named event."
+  - value: signature
+    label: "Signature"
+    description: "Bearing a named individual's signature or name."
+  - value: collaboration
+    label: "Collaboration"
+    description: "Produced with an external party."
+  - value: anniversary
+    label: "Anniversary"
+    description: "Marking an anniversary."
+  - value: promotional
+    label: "Promotional"
+    description: "Distributed promotionally rather than sold."
+  - value: bundle_exclusive
+    label: "Bundle exclusive"
+    description: "Sold only as part of a set."
+  - value: regional_exclusive
+    label: "Regional exclusive"
+    description: "Sold only in one market."
+  - value: retailer_exclusive
+    label: "Retailer exclusive"
+    description: "Sold only through one retailer."
+  - value: prototype
+    label: "Prototype"
+    description: "Pre-production or never generally sold."
+  - value: smart
+    label: "Smart"
+    description: "An electronic or app-connected configuration."
+  - value: other
+    label: "Other"
+    description: "A documented edition type not covered above."

@@ -1,0 +1,21 @@
+# variant: gan-flagship-13--frosted
+# Pass 4. "GAN13 Maglev, Frosted" — second of three Versions on GAN's own single GAN13 listing.
+id: gan-flagship-13--frosted
+entity: variant
+model_id: gan-flagship-13
+name: "GAN13 Maglev (Frosted)"
+scope_class: core
+edition:
+  designation: "Maglev"
+  types: [standard]
+config:
+  maglev: maglev
+  coating: frosted
+status: stub
+attestations:
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan13-maglev-product]
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan13-maglev-product]

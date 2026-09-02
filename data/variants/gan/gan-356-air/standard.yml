@@ -1,0 +1,29 @@
+# variant: gan-356-air--standard
+# Pass 4. The base GAN356 Air / "Gans 356 Air" configuration: stickerless body, sold in stock
+# colours "Black", "White", "Primary" per TheCubicle's own live listing options. Stock colour
+# options are recorded here as one "standard" variant rather than exploded into a separate
+# record per colour, since no source treats Black/White/Primary as separately named/marketed
+# editions the way GAN's true limited colourways are — a materiality judgement call, flagged in
+# research/notes/variants/gan-pass4.md for review.
+id: gan-356-air--standard
+entity: variant
+model_id: gan-356-air
+name: "GAN356 Air"
+aliases:
+  - { name: "Gans 356 Air", source: thecubicle-gans-356-air }
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+  scheme: standard
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gans-356-air]
+    note: "TheCubicle's own listing offers 'Black', 'White', 'Primary' stickerless colour options with no separate tier/edition name; read as the base/standard sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-gans-356-air]
+    note: "Inferred from the colour-name-only options (Black/White/Primary, consistent with a stickerless body) rather than a source using the word 'stickerless' verbatim for this specific listing."

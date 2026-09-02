@@ -1,0 +1,15 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-bad-model
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Model
+scope_class: core
+geometry_profile_id: zz-reserved-profile
+specs:
+  size_mm: 55.5
+status: stub

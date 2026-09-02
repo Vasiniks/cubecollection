@@ -1,0 +1,21 @@
+# source: gancube-monster-go-352-m-product
+# GAN's own product page for "Monster Go 352 M Magnetic Cube for Beginner" — a compact,
+# beginner-positioned Monster Go 3x3, named with its own numeral ("352") distinct from the
+# standard-size "Monster Go Magnetic 3x3 Cube" and "Monster Go Standard 3x3 Cube".
+id: gancube-monster-go-352-m-product
+entity: source
+kind: manufacturer_official
+title: "Monster Go 352 M Magnetic Cube for Beginner | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-352-m-beginner-magnetic-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241122153719/https://www.gancube.com/products/monster-go-352-m-beginner-magnetic-cube"
+excerpt: "Page title as captured 2024-11-22: \"Monster Go 352 M Magnetic Cube for Beginner | GANCUBE Official Website\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain this exact title. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor; body copy beyond the title (e.g. an explicit size in mm) was not extracted this pass."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page for its own sub-brand, tier 1 for naming and existence. The '352' numeral is read by analogy to GAN's own '354' compact-format naming as likely denoting a smaller size, but no source found this pass states an explicit dimension for this product, so no size is attested."
+status: sourced

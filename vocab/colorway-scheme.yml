@@ -1,0 +1,22 @@
+# colorway-scheme
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: colorway-scheme, so the schema and this file cannot drift.
+
+id: colorway-scheme
+description: "The colour scheme family, as named by the manufacturer or a source."
+values:
+  - value: standard
+    label: "Standard"
+    description: "The manufacturer's default scheme."
+  - value: bright
+    label: "Bright"
+    description: "A high-saturation scheme."
+  - value: pastel
+    label: "Pastel"
+    description: "A low-saturation scheme."
+  - value: custom
+    label: "Custom"
+    description: "A scheme specific to this product."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

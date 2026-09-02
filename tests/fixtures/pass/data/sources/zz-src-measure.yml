@@ -1,0 +1,13 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-src-measure
+entity: source
+kind: archivist_measurement
+title: Archivist measurement of specimen zz-spec-0001
+publisher: cubecollection
+preservation_method: excerpt
+excerpt: "Weighed at 61.4 g on a digital scale on 2021-07-05, specimen zz-spec-0001."
+status: published

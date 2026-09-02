@@ -1,0 +1,13 @@
+# capture-3d-status
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: capture-3d-status, so the schema and this file cannot drift.
+
+id: capture-3d-status
+description: "State of a three-dimensional capture. Reserved."
+values:
+  - value: planned
+    label: "Planned"
+  - value: in_progress
+    label: "In progress"
+  - value: available
+    label: "Available"

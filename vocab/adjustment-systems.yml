@@ -1,0 +1,31 @@
+# adjustment-systems
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: adjustment-systems, so the schema and this file cannot drift.
+
+id: adjustment-systems
+description: "How tension and related settings are changed."
+values:
+  - value: screw
+    label: "Screw"
+    description: "Conventional screw tension only."
+  - value: ges_nut
+    label: "Nut system"
+    description: "Interchangeable spring or nut inserts."
+  - value: tension_only
+    label: "Tension only"
+    description: "Tool-based tension adjustment."
+  - value: tension_compression
+    label: "Tension and compression"
+    description: "Independent tension and compression adjustment."
+  - value: tri_adjust
+    label: "Tri-adjust"
+    description: "Three independent adjustment parameters."
+  - value: tool_free
+    label: "Tool-free"
+    description: "Adjustment without tools."
+  - value: other
+    label: "Other"
+    description: "A documented system not covered above."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

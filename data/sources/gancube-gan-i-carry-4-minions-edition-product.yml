@@ -1,0 +1,37 @@
+# source: gancube-gan-i-carry-4-minions-edition-product
+# GAN's own product page for "GAN i carry 4 Minions Edition". Cited for the smart-cube's own
+# specification block (size, weight, tension system) and for a cross-sell block that is the
+# only evidence located this pass for "Amyth - GAN16 Maglev MAX Winter Limited Edition"'s own
+# existence and descriptive copy.
+id: gancube-gan-i-carry-4-minions-edition-product
+entity: source
+kind: manufacturer_official
+title: "GAN i carry 4 Minions Edition | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819145104/https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+excerpt: |-
+  "Matte Variant" and "Matte + Halo Timer Variant" purchase options on one listing (the two
+  differ only by inclusion of a bundled Halo Timer accessory, both otherwise a matte finish).
+  "GAN i carry 4 Minions Edition features a matte finish. It uses replaceable button batteries
+  with no charging required, offering up to 150 hours of battery life. It connects to the app
+  for smart training and tracking. Size: 56mm. Weight: 71.2g." Tension system: "12 levels of
+  magnetic tension, 6 levels of center piece travel, prividing 72-Gear Numerical Tuning" [sic,
+  verbatim source typo "prividing"].
+
+  Cross-sell block on the same page: "Amyth - GAN16 Maglev MAX Winter Limited Edition ...
+  Crafted in a crystalline purple design inspired by winter frost, the Maglev Cube Amyth
+  introduces elevated control and ultra-smooth Maglev performance. Built on the flagship
+  structure of the GAN16 Maglev MAX, this Collectible model offers a aesthetic made for true
+  enthusiasts. Purchasers will unlock a special Cube Station skin and avatar frame, bringing
+  the Amyth identity into your digital profile." No dedicated product-page URL for Amyth was
+  located from this cross-sell block (link target not preserved in the tag-stripped capture).
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the Variant selector, the size/weight/tension specification block, and the Amyth cross-sell paragraph verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for its own specifications and for the Amyth cross-sell copy quoted on this page. Amyth's own dedicated product page was not independently located or fetched this pass, so its existence and description rest on this cross-sell citation alone (uncertain, not confirmed)."
+status: sourced

@@ -1,0 +1,26 @@
+# variant: swift-block-355s--standard
+# Pass 4. The only sold configuration found this pass: 48 magnets, numerical tension nut with 5
+# adjustable settings, 85g.
+id: swift-block-355s--standard
+entity: variant
+model_id: swift-block-355s
+name: "Swift Block 355S"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  weight_g: 85
+  magnet_strength: "48 visible magnets, per GAN's own copy; exact arrangement not stated."
+  adjustment_system: ges_nut
+status: stub
+attestations:
+  /config/weight_g:
+    confidence: confirmed
+    sources: [gancube-swift-block-355s-specifications]
+  /config/magnet_strength:
+    confidence: confirmed
+    sources: [gancube-swift-block-355s-specifications]
+  /config/adjustment_system:
+    confidence: uncertain
+    sources: [gancube-swift-block-355s-specifications]
+    note: "'a new numerical tension nut offering 5 adjustable settings' does not map cleanly onto one vocab value; ges_nut used at reduced confidence."

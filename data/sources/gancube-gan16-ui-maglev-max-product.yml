@@ -1,0 +1,22 @@
+# source: gancube-gan16-ui-maglev-max-product
+# GAN's own current product page for "GAN16 ui Maglev MAX", the current generation of the
+# ui-series (smart electronics paired with the numbered Flagship Series shell). Cited only for
+# existence and naming; the page's substantive description text was not captured in full detail
+# this pass beyond the title and surrounding navigation.
+id: gancube-gan16-ui-maglev-max-product
+entity: source
+kind: manufacturer_official
+title: "GAN16 ui Maglev MAX | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan16-ui-maglev-max"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819145104/https://www.gancube.com/products/gan16-ui-maglev-max"
+excerpt: "Page title (verbatim): \"GAN16 ui Maglev MAX | GANCUBE\". The product appears in the site's own 'Smart Cubes' navigation dropdown under the 'GAN ui Series' heading, distinct from the mechanical 'GAN16 Maglev' listing."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the page title."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for existence and naming only in this pass; not yet used for any specification claim."
+status: sourced

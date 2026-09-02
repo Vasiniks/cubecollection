@@ -1,0 +1,19 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-otherbrand-xx-v1--standard
+entity: variant
+model_id: zz-otherbrand-xx-v1
+name: ZZ Otherbrand XX V1 Standard
+scope_class: core
+relationships:
+  - type: rebrand_of
+    target: zz-testbrand-tf-v1--standard-stickerless
+    target_entity: variant
+status: drafted
+attestations:
+  "/relationships/0":
+    confidence: probable
+    sources: [zz-src-official]

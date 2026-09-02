@@ -1,0 +1,38 @@
+# family: monster-go-3x3
+# Pass 2 (family enumeration). Monster Go's mechanical (non-smart) 3x3 line, sold from a
+# dedicated GAN storefront collection under the monster-go sub-brand. See
+# research/notes/models/gan-pass2.md.
+
+id: monster-go-3x3
+entity: family
+manufacturer_id: monster-go
+name: "Monster Go 3x3"
+positioning: budget
+description: |-
+  Monster Go's mechanical 3x3 line, sold from a GAN storefront collection ("Monster Go 3x3
+  Speed Cubes") explicitly self-described as budget-positioned: "Affordable Magnetic Speed
+  Cube — The Monster Go 3×3 magnet cube offers premium features at a budget-friendly price...
+  It's a fantastic gift idea for kids and beginners eager to enter the world of speed cubing."
+  This matches Monster Go's own manufacturer-record positioning as "a brain-training puzzle toy
+  brand with cultivating children's motors as its center" (per GAN's brand-story page, already
+  cited on data/manufacturers/monster-go.yml).
+
+  Models found under this collection this pass: Monster Go 352 M Magnetic Cube, Monster Go
+  Magnetic 3x3 Cube, Monster Go Standard 3x3 Cube, Monster Go Cloud & Rainbow & UT 3×3 Cube.
+  A fifth listed item, "Monster Go 328 Spelling Cube Set", appears in the same collection but
+  reads as an alphabet/novelty cube set rather than a standard 3x3 speedcube; left for pass 3
+  to individually assess for scope_class.
+
+  No source located this pass states when this family was introduced. Monster Go itself (the
+  sub-brand) was founded in 2020 per its own manufacturer record; whether this 3x3 line dates
+  to that founding or was added later is not established here.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: confirmed
+    sources: [gancube-collections-monster-go-3x3]
+    note: "GAN's own collection copy for this line uses 'budget-friendly' as a direct self-description of price positioning, not a comparative performance superlative."
+  /introduced:
+    confidence: unknown
+    note: "Researched and not found. See description for why Monster Go's own 2020 founding date is not treated as this family's introduction date without further evidence."

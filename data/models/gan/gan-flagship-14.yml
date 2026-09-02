@@ -1,0 +1,47 @@
+# model: gan-flagship-14
+# Pass 3 (model enumeration). GAN's own product page bundles "Maglev Pro" and "Maglev" (each
+# crossed with UV/Frosted coating) as Versions of one listing — Pro vs standard tier and
+# coating are variant-level, not model-level, choices within this one model. See
+# research/notes/models/gan-pass3.md.
+id: gan-flagship-14
+entity: model
+family_id: gan-flagship-series
+manufacturer_id: gan
+name: "GAN14"
+scope_class: core
+generation:
+  label: "14"
+  ordinal: 14
+  basis: manufacturer_declared
+announced:
+  value: "2024-02"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's own product page: "Versions" selector offers "Maglev Pro_UV Coated", "Maglev
+  Pro_Frosted", "Maglev_UV Coated", "Maglev_Frosted" from a single listing. Description:
+  "1296 Unique Configurations — The GAN14 Maglev is equipped with 1296 unique configuration
+  options... Enhanced Core Positioning 4.0 — Equipped with 88 magnets." "Maglev Pro" and
+  standard "Maglev" are treated as variants of this one model, matching the pattern already
+  established for GAN12.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan14-m-maglev-uv-3x3]
+    note: "TheCubicle's own earliest located capture of a GAN14 product (2024-02-24, or an unfetched query-string variant of the same URL from 2023-12-15) is a retailer-listing floor, not a manufacturer-stated date. Not part of gancube.com's own November 2024 archival event."
+  /generation/basis:
+    confidence: uncertain
+    sources: [gancube-gan14-maglev-product]
+    note: "No explicit 'Nth generation' statement was found on GAN14's own page; basis is extended from GAN12's directly-confirmed manufacturer-declared numbering pattern, applied by naming-sequence analogy. A verified customer review quoted on GAN14's own product page independently frames 'GAN 12 or 13' and GAN14 as a sequential flagship succession, corroborating but not itself an admissible fact source (tier 5, user-generated content)."
+  /relationships/0:
+    confidence: uncertain
+    note: "Inferred from GAN's sequential numbering; no explicit succession sentence found."
+  /description:
+    confidence: confirmed
+    sources: [gancube-gan14-maglev-product]
+relationships:
+  - type: succeeds
+    target: gan-flagship-13
+    target_entity: model
+    note: "Inferred from GAN's own sequential generation numbering; no explicit succession sentence found."

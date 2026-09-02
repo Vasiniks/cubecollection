@@ -1,0 +1,36 @@
+# variant: gan-356-x--crystal-blue-2019-summer
+# Pass 4. "GAN356 X Crystal Blue" (2019 Summer) — a named limited colourway of GAN356 X, same
+# GAN "For display only, not for sale" museum-page evidence pattern used for the Air S wave.
+id: gan-356-x--crystal-blue-2019-summer
+entity: variant
+model_id: gan-356-x
+name: "GAN356 X Crystal Blue"
+scope_class: core
+edition:
+  name: "2019 Summer Limited Edition"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+colorway:
+  designation: "Crystal Blue"
+  limited_name: "Crystal Blue"
+  scheme: custom
+availability:
+  production_status: discontinued
+  last_seen_available: { value: "2026-04", precision: month, qualifier: exact }
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: confirmed
+    sources: [gancube-le-gan356-x-crystal-blue]
+  /edition/limited/is_limited:
+    confidence: confirmed
+    sources: [gancube-le-gan356-x-crystal-blue]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."
+  /availability/production_status:
+    confidence: probable
+    sources: [gancube-le-gan356-x-crystal-blue]
+    note: "GAN's own archived page is a non-purchasable, permanently 'Sold Out' display-only record as of the 2026-04-21 capture."

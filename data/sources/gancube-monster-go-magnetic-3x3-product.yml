@@ -1,0 +1,19 @@
+# source: gancube-monster-go-magnetic-3x3-product
+# GAN's own product page for the standard-size "Monster Go Magnetic 3x3 Stickerless Speed Cube".
+id: gancube-monster-go-magnetic-3x3-product
+entity: source
+kind: manufacturer_official
+title: "Monster Go Magnetic 3x3 Stickerless Speed Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-3x3-magnetic-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241112093147/https://www.gancube.com/products/monster-go-3x3-magnetic-cube"
+excerpt: "Page title as captured 2024-11-12: \"Monster Go Magnetic 3x3 Stickerless Speed Cube | GANCUBE Official Website\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain this exact title. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page for its own sub-brand, tier 1 for naming and existence."
+status: sourced

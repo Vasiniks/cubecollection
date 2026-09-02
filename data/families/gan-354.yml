@@ -1,0 +1,42 @@
+# family: gan-354
+# Pass 2 (family enumeration). A compact-format (54mm) GAN 3x3 line, sold under its own bare
+# number since at least 2018, independent of both the GAN356 and GAN Flagship Series naming
+# patterns. GAN's own product page for the "v2" generation confirms this is a persisting,
+# multi-generation named line, not a one-off SKU. See research/notes/models/gan-pass2.md.
+
+id: gan-354
+entity: family
+manufacturer_id: gan
+name: "GAN354"
+introduced:
+  value: "2018"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  A compact-format 3x3 line (54mm, versus GAN's standard ~56mm), sold under the bare number
+  "354" rather than as a 356 or numbered-flagship sub-variant. TheCubicle's earliest capture of
+  a GAN354 M listing (2018) describes it as "a new miniature, magnetic 3x3 that emulates the
+  flagship performance of the Air SM" — framing it explicitly as a smaller-format alternative
+  to the mainline 356 Air SM rather than a successor to it. GAN's own product page for a later
+  "GAN354 M v2" generation, captured in 2024 and still headed "GAN354 M", confirms the line
+  persisted across at least two generations under this name.
+
+  `positioning: budget` is the archive's own inference from price point (roughly $22-40 across
+  the captures found) and market framing ("comfortable, compact feel... ideal for
+  one-handed enthusiasts and cubers with smaller hands"), not a manufacturer self-description;
+  recorded at reduced confidence accordingly.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-gan-354-m]
+    note: "Single tier-2 source (TheCubicle's own retail-system 'Added: 2018-09-11' date). GAN's own product page for this line (gancube-gan354-m-v2-product) does not state an introduction date. Not independently corroborated at tier 1."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-gan-354-m]
+    note: "Inferred from price point and marketing framing on a single tier-2 source; no manufacturer statement of positioning was found for this line specifically."
+  /discontinued:
+    confidence: unknown
+    note: "Researched and not found. TheCubicle's listing for this product persists in captures through at least 2025-05-25, and GAN's own site was still selling a 'v2' generation as of December 2024; no evidence of discontinuation was found this pass, so the field is left unset rather than asserting ongoing production without a positive statement to that effect either."

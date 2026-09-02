@@ -1,0 +1,24 @@
+# event: wr-3x3-average-6-39-max-park
+# The record a GAN signature edition commemorates, and — notably — the record its production
+# run size encodes: 639 units for a 6.39-second average.
+
+id: wr-3x3-average-6-39-max-park
+entity: event
+name: "Max Park's 6.39-second 3x3 world-record average"
+kind: milestone
+notes: |-
+  Commemorated by data/variants/gan/gan-356-air/um-max-park-signature.yml, whose stated run size
+  of 639 units numbered 50001-50639 encodes the record time.
+
+  No date is recorded. The only source held describes it as "his recent 6.39 World Record 3x3
+  average" without naming a competition or date. "Recent" relative to an undated retail listing
+  is not a date, and deriving one from the listing's archive capture would be inventing a fact.
+status: drafted
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+  /date:
+    confidence: unknown
+    note: "Searched in the sources held; the record is described only as 'recent'. A WCA results lookup would settle it and is a cheap, high-value follow-up."

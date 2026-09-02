@@ -1,0 +1,59 @@
+# source-kinds
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: source-kinds, so the schema and this file cannot drift.
+
+id: source-kinds
+description: "What kind of document a source is. Determines the default tier."
+values:
+  - value: manufacturer_official
+    tier: 1
+    label: "Manufacturer official"
+    description: "A manufacturer's own page, specification sheet, or announcement."
+  - value: patent
+    tier: 1
+    label: "Patent"
+    description: "A patent or published application."
+  - value: packaging
+    tier: 1
+    label: "Packaging"
+    description: "The product's packaging."
+  - value: manual
+    tier: 1
+    label: "Manual"
+    description: "Documentation shipped with the product."
+  - value: retailer
+    tier: 2
+    label: "Retailer"
+    description: "A retail listing."
+  - value: press
+    tier: 2
+    label: "Press"
+    description: "An established publication."
+  - value: review
+    tier: 3
+    label: "Review"
+    description: "A named reviewer's assessment."
+  - value: forum
+    tier: 3
+    label: "Forum"
+    description: "A community forum thread."
+  - value: video
+    tier: 3
+    label: "Video"
+    description: "Video content."
+  - value: marketplace
+    tier: 4
+    label: "Marketplace"
+    description: "A secondary-market listing."
+  - value: wiki
+    tier: 4
+    label: "Wiki"
+    description: "A community-edited reference."
+  - value: archivist_measurement
+    tier: 1
+    label: "Archivist measurement"
+    description: "A measurement taken by the archivist."
+  - value: archivist_photo
+    tier: 1
+    label: "Archivist photograph"
+    description: "A photograph taken by the archivist."

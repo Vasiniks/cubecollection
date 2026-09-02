@@ -1,0 +1,16 @@
+# wca-status
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: wca-status, so the schema and this file cannot drift.
+
+id: wca-status
+description: "Whether a puzzle is eligible for WCA competition."
+values:
+  - value: legal
+    label: "Legal"
+    description: "Eligible under the regulations in force at the stated date."
+  - value: not_legal
+    label: "Not legal"
+    description: "Not eligible under the regulations in force at the stated date."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

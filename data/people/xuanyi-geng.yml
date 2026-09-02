@@ -1,0 +1,25 @@
+# person: xuanyi-geng
+# Created in the Pass 4.5 cleanup to close F7 for the GAN16 Dual-WR Limited Edition.
+
+id: xuanyi-geng
+entity: person
+name: "XuanYi Geng"
+role: [speedcuber]
+notes: |-
+  Described by TheCubicle as "Team GAN's superstar", i.e. a GAN-sponsored competitor, and as
+  the holder of the two 3x3 world records a GAN limited edition commemorates. A Chinese-language
+  signature is reproduced on that edition's packaging, but the source does not give the
+  characters, so no native_name is recorded rather than transliterating one.
+status: drafted
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+    note: "Single tier-2 source, romanised as 'XuanYi Geng' in the retailer's own copy."
+  /role:
+    confidence: probable
+    sources: [thecubicle-gan16-maglev-max-uv-dual-wr-limited-edition]
+  /native_name:
+    confidence: unknown
+    note: "The source states a Chinese signature appears on the packaging but does not reproduce the characters."

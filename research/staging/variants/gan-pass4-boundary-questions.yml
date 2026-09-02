@@ -1,0 +1,166 @@
+staged_by: variant-researcher
+staged_on: "2026-09-02"
+scope: >
+  Unresolved identity and boundary questions surfaced during Pass 4 (variant enumeration)
+  across gan/monster-go/swift-block. Distinct from the 10 gan-axis-*.yml discovery files
+  (pre-existing leads, not modified here — content preserved per instruction). This file
+  records what Pass 4 itself could not resolve while building 90 canonical variant records
+  across all 47 models. See research/notes/variants/gan-pass4.md for the full session log.
+
+findings:
+  - candidate: "GAN16 ui Maglev MAX has a tier-1 product-page source but no model record"
+    likely_model: { name: "would be a model under gan-ui-series, parallel to gan-ui-12-freeplay/maglev/sp", confidence: confirmed }
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.com/products/gan16-ui-maglev-max"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-02"
+        excerpt: "Source gancube-gan16-ui-maglev-max-product already exists in data/sources/. The product appears in GAN's own 'GAN ui Series' site navigation, and gancube-collections-ui-series independently lists 'GAN16 ui Maglev MAX Minions Edition' and 'GAN16 ui Maglev MAX' as two of five results in that collection."
+    open_questions:
+      - "This is Gap G1 from research/notes/models/gan-pass4-prep.md, restated: a missing MODEL, not a missing variant. Per this pass's explicit instruction ('do not attach it under gan-flagship-16 because the name contains GAN16... stage the problem and do not fabricate a parent'), no variant was created for GAN16 ui Maglev MAX or its Minions Edition sibling. Both are cross-referenced from gan-flagship-16 and gan-v100-maglev/gan-i4's own Minions Edition variants (same cross-line collaboration theme) but have no home of their own. This is the model-researcher's lane to close."
+
+  - candidate: "Amyth - GAN16 Maglev MAX Winter Limited Edition — no dedicated product-page URL located"
+    likely_model: { name: "gan-flagship-16", confidence: confirmed }
+    confidence: uncertain
+    evidence:
+      - url: "https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-02"
+        excerpt: "Amyth is described only in a cross-sell block on an unrelated product's page (see gancube-gan-i-carry-4-minions-edition-product). No dedicated URL was found via wayback prefix search on gancube.com/products/gan16-maglev-max* or gancube.com/products/amyth* this pass."
+    open_questions:
+      - "The variant gan-flagship-16--amyth-winter-limited-edition was created at reduced confidence on this single indirect citation. A dedicated product page, if one exists, should be found and cited directly in a future pass — the cross-sell block's link target was not preserved in the tag-stripped wayback capture."
+
+  - candidate: "GAN356 Air Advanced / Air Grand Master / Air Pro — named in gan-356-air.yml's own description but not independently sourced this pass"
+    likely_model: { name: "gan-356-air", confidence: uncertain }
+    confidence: uncertain
+    evidence:
+      - url: "https://www.thecubicle.com/products/gans-356-air-master-unstickered"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-02"
+        excerpt: "'Advanced and Standard versions of the Gans 356 Air may become available in the future, but the Master version will be released first.' (thecubicle-gans-356-air-master-unstickered, 2020 capture) — explicitly conditional/future language, not confirmation either was ever sold. 'Grand Master' and 'Pro' were not found stated anywhere by this pass at all."
+    open_questions:
+      - "No variant was created for Advanced, Grand Master, or Pro this pass — the only direct source found treats Advanced/Standard as merely possible future releases, and Grand Master/Pro have no citation at all found this pass. If a future pass finds a direct product-page or retailer listing for any of these, they belong as siblings of gan-356-air--master/--ultimate/--um. Do not create these three from the model description's own prose alone; that prose itself was pattern-extended, not independently sourced, in pass 3."
+
+  - candidate: "Monster Go 328 Spelling Cube Set — excluded by Pass 3, not investigated in Pass 4"
+    likely_model: { name: "unknown base shell", confidence: uncertain }
+    confidence: uncertain
+    evidence:
+      - url: "https://www.gancube.com/products/monster-go-328-spelling-cube-set"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-02"
+        excerpt: "Not fetched this pass. Pass 3's own model description for monster-go-magnetic-3x3 records this as excluded pending a base-shell and scope_class determination (probably non-WCA-legal lettered stickers)."
+    open_questions:
+      - "Left excluded per Pass 3's own reasoning. If it is a lettered-sticker variant of an existing Monster Go 3x3 shell, it needs scope_class: conditional with a scope_justification and tier 1-3 source before it can enter as a variant, per RESEARCH_SPEC §2.2 — not investigated this pass; flagged as a lead for the next Pass 4 session."
+
+  - candidate: "GAN356 X 'IPG v5' — revision or variant?"
+    likely_model: { name: "gan-356-x", confidence: confirmed }
+    confidence: uncertain
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan356-x-ipg-v5"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-02"
+        excerpt: "thecubicle-gan356-x-ipg-v5 (new source this pass): 'This version comes with the IPG-V5 which uses the GES V3, the traditional GES system from the GAN 354 M.' No source found this pass confirms an earlier IPG version (v4 or lower) was ever independently sold as its own GAN356 X SKU."
+    open_questions:
+      - "gan-356-x.yml already carries a model.revisions[] entry for this ('ipg-version', basis: community_reported). This pass recorded only ONE variant for GAN356 X ('standard', describing the IPG v5/GMS configuration as sold) rather than splitting IPG versions into separate variants, since no earlier version's independent sale as a distinct SKU was confirmed. If evidence of an independently-sold 'IPG v4' SKU surfaces, it becomes a sibling variant with `revision_ref` pointing at the model's revision entry."
+
+  - candidate: "Digital-only bundled content (app skins, avatar frames) — no schema field"
+    likely_model: { name: "cross-cutting: gan-i-carry-4--minions-edition and others", confidence: confirmed }
+    confidence: confirmed
+    evidence:
+      - url: "https://www.gancube.com/products/gan-i-carry-4-minions-edition"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-02"
+        excerpt: "GAN's own copy: 'the skin, effect, and avatar frame will be issued to the FIRST ACCOUNT you connect... Once redeemed, digital assets are considered fully delivered and are non-refundable.'"
+    open_questions:
+      - "Recorded in `significance` prose on gan-i-carry-4--minions-edition rather than any structured field — DATA_MODEL has no field for an account-bound digital collectible bundled with a physical purchase. This is a genuine schema gap, not worked around; a human should decide whether it deserves a field (e.g. under `packaging` or a new `digital_bundle` block) or stays as prose permanently."
+
+  - candidate: "'FZ' product-line prefix (fz-gan13-*, fz-gan15-*, box-fz-stealth-*) — plausibly Feliks Zemdegs, unconfirmed"
+    likely_model: { name: "cross-cutting, multiple gan-flagship-series models", confidence: uncertain }
+    confidence: uncertain
+    evidence:
+      - url: "n/a — carried over from research/staging/variants/gan-axis-signature-editions.yml"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Original staging finding, not independently re-verified this pass: 'FZ' found only as a retailer product-line PREFIX with no product description confirming the initials this pass."
+    open_questions:
+      - "Not investigated further in Pass 4; no gan-flagship-* variant this pass records an 'FZ' edition. If confirmed as a TheCubicle Signature Series product (Feliks Zemdegs), it is a `modified_from` aftermarket variant per DATA_MODEL §4.3, not a GAN edition — same pattern as Matty's/Tymon's products, which were also not instantiated as canonical variants this pass (retailer signature-tuning products were deprioritised in favour of covering all 47 models at least once; a dedicated aftermarket-focused Pass 4 session would enumerate TheCubicle's own Signature Series and PiCube collections systematically)."
+
+  - candidate: "Aftermarket / retailer-customised variants (Cubicle Labs, PiCube) — only one instantiated (Max Park Signature Edition)"
+    likely_model: { name: "cross-cutting", confidence: confirmed }
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-picube-20-magnet-ball-core-mod"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Already-canonical source thecubicle-gan-v100-maglev-uv-picube-mod documents a PiCube 20-magnet ball-core mod of GAN V100 MagLev; sibling PiCube mods exist for GAN12 MagLev, GAN16 MagLev, and GAN16 MagLev MAX per the same source's own excerpt. None instantiated as canonical variants this pass."
+    open_questions:
+      - "TheCubicle's own 'Signature Series' (Matty's, Tymon's, Leo's) and 'PiCube' collections are large, systematic aftermarket product lines that DATA_MODEL §4.3 explicitly wants covered ('retailer customisations' is one of the GAN pilot's nine required cases). Only gan-356-air--um-max-park-signature was instantiated this pass, as the single richest-evidenced example (stated run size). A dedicated follow-up pass should enumerate the PiCube and Signature Series collections as `modified_from` variants of their respective base GAN variants, with `coating_applied_by: picube` or `coating_applied_by: cubicle-labs`."
+
+  - candidate: "vocab/coatings.yml has no value for 'Soft Texture Coated' (GAN 11 M Pro)"
+    likely_model: { name: "gan-flagship-11", confidence: confirmed }
+    confidence: confirmed
+    evidence:
+      - url: "n/a — carried over from research/staging/variants/gan-axis-coatings.yml, not independently re-verified this pass"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "TheCubicle's Cubicle Pro Shop product distinguishes 'Original puzzle made by GAN' with a 'GAN Soft Texture Coated center cap' from its own aftermarket cap swap — confirmed as a GAN-factory coating, not a Cubicle Pro Shop invention, per the pre-existing staging file's own reading."
+    open_questions:
+      - "No gan-flagship-11 variant was created for a Soft Texture Coated tier this pass (only UV Coated and Frosted, both directly confirmed on GAN's own gancube-gan11-series-product Versions selector). This remains G4 from gan-pass4-prep.md, unresolved: schema/vocab is not this agent's write lane. Flagged again here for a human decision — is it a distinct vocab value, or an alias for an existing one?"
+
+  - candidate: "'Duo' (GAN11), 'fx' (GAN13 Maglev fx), 'MAX-L' (GAN16), 'SP' (GAN12 ui) — GAN's own Versions/listing names with no description of what they change"
+    likely_model: { name: "gan-flagship-11, gan-flagship-13, gan-flagship-16, gan-ui-12-sp", confidence: confirmed }
+    confidence: uncertain
+    evidence:
+      - url: "n/a — see gancube-gan11-series-product, gancube-gan13-maglev-product, gancube-gan16-maglev-product, gancube-gan12-ui-sp-product"
+        publisher: "GANCUBE"
+        kind: manufacturer_official
+        accessed: "2026-09-02"
+        excerpt: "All four names are confirmed to exist as GAN-sold configurations/listings (tier 1), but none of the four sources captured this pass describes the specific mechanical or feature difference the tier name denotes."
+    open_questions:
+      - "All four were still recorded as variants (existence is well-evidenced), but their config blocks are thin or empty pending a pass 5 fill that reads the full product page body copy for each (not just the Versions selector / title, which is what this pass's time budget allowed for most of the Flagship Series)."
+
+conflicts: []
+
+not_found:
+  - "No person or event records exist anywhere in data/people/ or data/events/ (both directories are empty). This blocks edition.signature_of and edition.commemorates from ever being populated with real ids — gan-356-air--um-max-park-signature (Max Park), gan-flagship-16--maglev-max-dual-wr-limited-edition (XuanYi Geng, and the two World Record events it commemorates), and gan-356-air--um's collaboration_with (which DOES resolve, since Cubicle Labs is a manufacturer record) all reflect this gap. Person/event creation is outside this agent's write lane (data/variants, research/staging/variants, data/sources, research/notes/variants only) and is not clearly any other named agent's lane either per docs/research-agents.md — flagged as a process gap for a human to assign."
+  - "'Monster Go Cloud & Rainbow & UT' colourways each also have a '(premium package)' purchase tier on the same listing (8 total Versions: 4 colourways x standard/premium). Only the 4 base colourways were instantiated as variants this pass; 'premium package' contents were not described anywhere found this pass, so it was not recorded as a fifth materiality axis. If it later proves to add or change something material (not just extra packaging), 4 more variants would be needed."
+
+  - candidate: "GAN V100 MagLev Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod) — real product, base variant missing"
+    likely_model: { name: "gan-v100-maglev", confidence: confirmed }
+    confidence: probable
+    staged_by: pass-4.5
+    staged_on: "2026-09-02"
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-v100-maglev-uv-3x3-picube-20-magnet-ball-core-mod"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "Named in TheCubicle's own catalogue listing alongside the four PiCube mods instantiated in pass 4.5, as \"GAN V100 MagLev Frosted 3x3 (PiCube 20-Magnet Ball-Core Mod)\"."
+    open_questions:
+      - "Why staged rather than instantiated: its base variant does not exist. gan-v100-maglev has only standard-uv-coated and minions-edition; no frosted variant has been evidenced. Creating one from a mod product's name would infer a base product's existence from a derivative's title, which is a chain of inference the archive does not permit. Instantiate once a GAN source evidences a frosted V100 MagLev."
+      - "Rule 39 would in any case block the mod record, since modified_from could not resolve."
+
+  - candidate: "PiCube collection composition changed between 2025 and 2026 — a dating signal, not a product"
+    likely_model: { name: "cross-cutting", confidence: confirmed }
+    confidence: probable
+    staged_by: pass-4.5
+    staged_on: "2026-09-02"
+    evidence:
+      - url: "https://www.thecubicle.com/collections/picube"
+        archive_url: "https://web.archive.org/web/20250919030447/https://www.thecubicle.com/collections/picube"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-02"
+        excerpt: "The 2025-09-19 capture of TheCubicle's PiCube collection lists only Square-1 modifications (multiple 'PiCube MGC SQ-1' configurations). None of the GAN 3x3 PiCube mods named in the 2026 source appears in it."
+    open_questions:
+      - "This capture was fetched as potential corroboration for the GAN 3x3 mods and deliberately NOT used as such: it does not contain them. Treating a collection page from one date as evidence for products present on another date would be a real and easy error."
+      - "It is instead a negative dating signal: the GAN 3x3 PiCube line appears to post-date 2025-09. Worth confirming against later captures when the aftermarket line is researched properly."

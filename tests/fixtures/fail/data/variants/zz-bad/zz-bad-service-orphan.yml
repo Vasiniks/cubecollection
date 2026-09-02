@@ -1,0 +1,12 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Trips rule 39: a service block describing work on nothing — no modified_from names the base.
+id: zz-bad-service-orphan
+entity: variant
+model_id: zz-bad-model
+name: ZZ Bad Service Orphan
+scope_class: core
+service:
+  serviced_by: zz-bad-brand
+  modifications:
+    - kind: tuning
+status: drafted

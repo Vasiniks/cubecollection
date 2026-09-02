@@ -1,0 +1,14 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Trips rule 20: claims to succeed a model released two years AFTER it.
+id: zz-bad-lineage-b
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Lineage B
+scope_class: core
+released: { value: "2018", precision: year, qualifier: exact }
+relationships:
+  - type: succeeds
+    target: zz-bad-lineage-a
+    target_entity: model
+status: stub

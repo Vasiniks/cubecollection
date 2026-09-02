@@ -1,0 +1,23 @@
+# source: gancube-le-gan356-xs-evergreen
+# GAN's own archived "Limited Edition" museum-style product page for a 2019 Winter GAN356 X S
+# colourway, "Evergreen". Same non-purchasable display-page pattern as
+# gancube-le-gan356-air-s-love-pink.
+id: gancube-le-gan356-xs-evergreen
+entity: source
+kind: manufacturer_official
+title: "GAN356 X Evergreen 2019 Winter Limited Edition | GANCUBE Limited Edition"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gancube-winter-limited-edition-gan356-x-s-evergreen"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250914081637/https://www.gancube.com/products/gancube-winter-limited-edition-gan356-x-s-evergreen"
+excerpt: |-
+  Page/product title: "2019 Winter Limited Edition GAN356 X S Evergreen (For display only, not
+  for sale)". Regular price and sale price both $0.00, permanently "Sold Out".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the exact title string verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for the colourway's own name ('Evergreen'), season/year (2019 Winter), and base model (GAN356 X S, i.e. gan-356-xs). Same display-page reasoning as gancube-le-gan356-air-s-love-pink."
+status: sourced

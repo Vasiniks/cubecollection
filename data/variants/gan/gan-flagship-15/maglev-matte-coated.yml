@@ -1,0 +1,22 @@
+# variant: gan-flagship-15--maglev-matte-coated
+# Pass 4. "GAN15 Maglev_Matte Coated" — second of four Versions on GAN's own single GAN15
+# listing.
+id: gan-flagship-15--maglev-matte-coated
+entity: variant
+model_id: gan-flagship-15
+name: "GAN15 Maglev (Matte Coated)"
+scope_class: core
+edition:
+  designation: "Maglev"
+  types: [standard]
+config:
+  maglev: maglev
+  coating: matte
+status: stub
+attestations:
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan15-product]
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan15-product]

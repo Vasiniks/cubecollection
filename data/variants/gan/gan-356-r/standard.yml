@@ -1,0 +1,22 @@
+# variant: gan-356-r--standard
+# Pass 4. The single sold configuration found this pass: non-magnetic, GES V3, IPG V2 core.
+id: gan-356-r--standard
+entity: variant
+model_id: gan-356-r
+name: "GAN356 R"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+  adjustment_system: ges_nut
+status: stub
+attestations:
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-gan356-r]
+    note: "'If you prefer a non-magnetic feel, this is a great option at a great price.'"
+  /config/adjustment_system:
+    confidence: uncertain
+    sources: [thecubicle-gan356-r]
+    note: "'the new GES V3, and the IPG V2 core' — mapped to ges_nut at reduced confidence."

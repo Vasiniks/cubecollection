@@ -1,0 +1,54 @@
+staged_by: variant-researcher
+staged_on: "2026-09-01"
+scope: >
+  GAN 3x3s bearing a named individual's signature/name, and whether each is a GAN-issued
+  signature edition (edition.signature_of, tier 1-2) or a RETAILER's named tuning product that
+  merely credits a speedcuber (which belongs in gan-axis-retailer-customizations.yml instead,
+  as a `modified_from` aftermarket case, not a GAN edition). This distinction is the main
+  materiality question this file exists to separate out.
+
+findings:
+  - candidate: "GAN 356 Air UM Max Park Signature Edition — a genuine GAN-issued signature edition"
+    likely_model: { name: "GAN 356 Air UM", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan-356-air-um-max-park-signature-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"The GAN356 Air UM Max Park Signature Edition is a replica of the cube used by Max Park in his recent 6.39 World Record 3x3 average. This cube is tuned to Max's exact specifications and comes with yellow GES nuts pre-installed... This cube comes with a tensioning tool, a special Max Park Signature VIP card, a package containing the six other GES nuts, and an exclusive pamphlet with biographical information on Max.\""
+    open_questions:
+      - "Product name itself says 'Signature Edition' and TheCubicle's product URL/title format matches its OWN GAN-branded product naming pattern (e.g. gan-356-air-um, not a 'cubicle-custom-' or 'mattys-' prefix), suggesting this was sold as a GAN-line product rather than a TheCubicle Pro Shop customization, even though a customer review states 'setup from Cubicle Labs' (TheCubicle's in-house tuning division — see already-existing source speedsolving-wiki-cubicle-labs and thecubicle-gan-356-air-um). RECOMMEND treating this as edition.types: [limited, signature, commemorative] on a GAN-attributed variant, with signature_of pointing to a person record for Max Park, while separately noting Cubicle Labs' tuning involvement in significance/notes — but this blends 'GAN edition' and 'Cubicle Labs setup' in a way that needs the main agent's judgment. Staged as a boundary question in gan-boundary-questions.yml."
+
+  - candidate: "GAN16 MagLev MAX UV 3x3 (Dual-WR Limited Edition) — tribute to a sponsored athlete's world records, NOT sold as a personal-setup replica"
+    likely_model: { name: "GAN16 MagLev MAX", confidence: confirmed }
+    aliases: []
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/gan16-maglev-max-uv-3x3-dual-wr-limited-edition"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Crafted to commemorate Team GAN's superstar XuanYi Geng, this exclusive release honors his iconic 3x3 World Records... Each unit comes in a dual-WR laser-engraved collector's case proudly displaying Geng's Chinese signature and both record times. Also included is a commemorative postcard featuring his official WR scrambles, signed by Geng himself.\""
+    open_questions:
+      - "Contains a literal signature (Geng's Chinese signature engraved on the case, and his signature on the included postcard) but the CUBE ITSELF is not described as tuned to Geng's personal specification (contrast with the Max Park case, which explicitly is 'tuned to Max's exact specifications'). This is closer to a pure commemorative/collaboration edition that happens to carry a signature as a design element, than to a 'signature edition' in the sense of a replica setup. Recommend edition.types: [limited, commemorative] with signature_of possibly still applicable given the literal engraved signature — flagged for adjudication, not resolved here."
+
+  - candidate: "Retailer-named 'signature-style' tuning products (TheCubicle's own naming, credits a speedcuber, GAN is the base manufacturer) — belongs under modified_from, not GAN edition.signature_of"
+    likely_model: { name: "Matty's GAN12 M MagLev UV 3x3 (Matty Hiroto Inaba); Mattys GAN 11 M Pro 3x3 (Soft Texture Coated); Leos GAN 11 M Pro 3x3", confidence: confirmed }
+    aliases: ["TheCubicle Signature Series"]
+    confidence: confirmed
+    evidence:
+      - url: "https://www.thecubicle.com/products/mattys-gan12-m-maglev-3x3-uv-coated"
+        publisher: "TheCubicle"
+        kind: retailer
+        accessed: "2026-09-01"
+        excerpt: "\"Matty's GAN12 M MagLev UV 3x3 is an exact replica of the 3x3 main used by world class speedcuber Matty Hiroto Inaba. This puzzle comes lubed with a balanced mixture of Angstrom Gravitas, Angstrom Dignitas, and DNM-37... Cube comes with Matty's 3.01 PB Scramble applied... Original puzzle made by GAN. It features an opaque Matty logo covering the original logo on the white side.\" (cross-references already-existing source thecubicle-mattys-gan16-maglev-max-uv, which independently documents TheCubicle's 'Signature Series' collection housing this product alongside \"Tymon's GAN12 M MagLev UV 3x3\" and \"Matty's GAN12 M MagLev UV 3x3 (NAR Edition)\".)"
+    open_questions:
+      - "'Leos GAN 11 M Pro 3x3' was found only as a URL slug this pass (no description fetched) — needs a direct capture to confirm which speedcuber 'Leo' refers to and whether it belongs in this same TheCubicle Signature Series pattern. A 'Tymons' product was named only inside the ALREADY-EXISTING source thecubicle-mattys-gan16-maglev-max-uv's excerpt (Tymon Kolasiński, presumably) but no live 'tymons-*' URL was found in this session's fresh crawl of thecubicle.com/products/ — it may have been discontinued/renamed since that source was captured. Flagged as an alias-collision / discontinuation lead, not resolved."
+
+conflicts: []
+
+not_found:
+  - "No GAN-issued (i.e., sold on gancube.com under GAN's own branding, not a retailer's Signature Series) edition bearing a speedcuber's name OTHER than Max Park and (arguably) XuanYi Geng was found this pass. GAN's own site's product-name vocabulary for 'signature' specifically was not independently confirmed — both cases above were captured via TheCubicle, which is tier 2 for GAN's own editions (it may be reproducing GAN's copy) versus tier 1/first-party for TheCubicle's own Signature Series products. This tier distinction matters and should be preserved in reconciliation, not flattened."
+  - "Feliks Zemdegs ('FZ') was found only as a retailer product-line PREFIX (fz-gan13-m-maglev-uv-3x3, fz-gan15-uv-3x3-newblack, box-fz-stealth-gan15-maglev-uv, etc. — a large family of products) with no product description confirming the initials stand for Feliks Zemdegs captured this pass — a plausible but UNCONFIRMED identification. Do not assume; verify with a direct fetch of one fz-* product's full description or TheCubicle's own 'FZ' collection/about page before writing this into canonical data."

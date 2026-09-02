@@ -1,0 +1,21 @@
+# source: gancube-gan11-m-pro-kun-le-product
+# GAN's own product page for a named limited edition. Found in the Pass 4.5 cleanup by
+# enumerating every product URL GAN's storefront has ever had via archived CDX, rather than by
+# searching for the edition names — the live catalogue does not list these at all.
+id: gancube-gan11-m-pro-kun-le-product
+entity: source
+kind: manufacturer_official
+title: "2020 Winter Limited Edition GAN11 M Pro Kun (For display only, not for sale) | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gancube-gan11-m-pro-kun"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260421002122id_/https://www.gancube.com/products/gancube-gan11-m-pro-kun"
+excerpt: "Page title, verbatim: \"2020 Winter Limited Edition GAN11 M Pro Kun (For display only, not for sale) | GANCUBE\"."
+preservation_note: "Fetched via `npm run wayback -- get` on 2026-09-02 and confirmed to carry this title. Cited for the edition's existence, name, dating and museum status only; no specification claim rests on it."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own storefront, tier 1 for the existence and naming of its own products. The parenthetical \"For display only, not for sale\" is GAN retaining a delisted product page as a record — first-party evidence of discontinuation, not of a current offer."
+status: sourced

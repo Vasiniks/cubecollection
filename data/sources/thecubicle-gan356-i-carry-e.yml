@@ -1,0 +1,21 @@
+# source: thecubicle-gan356-i-carry-e
+# TheCubicle's listing for GAN356 i Carry E, explicitly calling it "an updated version" of the
+# "original i Carry" with a specific battery-hardware change (CR1632 coin cell swapped for two
+# LR43 button batteries) and no gyroscope/motion tracking.
+id: thecubicle-gan356-i-carry-e
+entity: source
+kind: retailer
+title: "GAN356 i Carry E 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-i-carry-e-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250810152613/https://www.thecubicle.com/products/gan356-i-carry-e-3x3"
+excerpt: "GAN356 i Carry E is an updated version of GAN's lightweight smart cube designed for casual solvers who want app-connected functionality without the high cost of gyroscopes or full-motion tracking. This version swaps the CR1632 battery from the original i Carry for two LR43 button batteries, offering about 150 hours of battery life. It tracks moves but not orientation, making it ideal for practice and casual smartcubing."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'an updated version of GAN's lightweight smart cube... swaps the CR1632 battery from the original i Carry' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. Explicitly ties this model back to 'the original i Carry' rather than to i Carry S or i Carry 2 specifically, which is why this pass records its succeeds relationship pointing at the original i Carry model, not the more recent i Carry 2."
+status: sourced

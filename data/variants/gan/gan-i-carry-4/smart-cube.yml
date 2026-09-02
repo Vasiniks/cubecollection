@@ -1,0 +1,27 @@
+# variant: gan-i-carry-4--smart-cube
+# Pass 4. The base "GAN i carry 4 Smart Cube" listing, per GAN's own collection page.
+id: gan-i-carry-4--smart-cube
+entity: variant
+model_id: gan-i-carry-4
+name: "GAN i carry 4 Smart Cube"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  battery: "Replaceable button batteries; up to 150 hours battery life; 56mm, 71.2g per GAN's own copy for the Minions Edition sibling of this model."
+config:
+  size_mm: 56
+  weight_g: 71.2
+status: stub
+attestations:
+  /edition/types:
+    confidence: confirmed
+    sources: [gancube-collections-i-carry-series]
+  /config/size_mm:
+    confidence: probable
+    sources: [gancube-gan-i-carry-4-minions-edition-product]
+    note: "Size/weight figures are taken from the Minions Edition variant's own product page, which describes itself as sharing the base i carry 4 hardware; not independently confirmed on the base listing's own page this pass."
+  /config/weight_g:
+    confidence: probable
+    sources: [gancube-gan-i-carry-4-minions-edition-product]

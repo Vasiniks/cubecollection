@@ -1,0 +1,55 @@
+# manufacturer: swift-block
+# Pass 1 (manufacturer register). Sub-brand of GAN, established from documentary evidence, not
+# naming resemblance — see attestations and research/notes/manufacturers/gan-pass1.md.
+
+id: swift-block
+entity: manufacturer
+name: "Swift Block"
+kind: sub_brand
+parent_id: gan
+founded:
+  value: "2023"
+  precision: year
+  qualifier: exact
+aliases: []
+notes: |-
+  **Parent relationship.** GAN's own brand-story page names Swift Block under the section
+  headed "Our Sub-brands": "Swift Block is a leisure puzzle brand focusing on light
+  brain-training and puzzle's intelligent innovation" (gancube-brand-story-about-us), with the
+  2023 milestone entry "Fashionable puzzle brand, Swift Block, started to hit the market."
+  Independently, GAN's own international storefront serves a Swift Block collection directly
+  at gancube.com/collections/swift-block — GAN's own domain, not a separately registered Swift
+  Block site — and lists "Shop Swift Block" as one of only three top-level shop sections in its
+  own site navigation, alongside GANCUBE and Monster Go (gancube-collections-swift-block).
+
+  **No independent website or legal-entity page found.** Unlike Monster Go, which has its own
+  domain (monster-go.com) with its own footer carrying a matching ICP filing number, no
+  separately registered Swift Block domain or About/legal page was located this pass. Swift
+  Block is sold exclusively through gancube.com as far as this pass's research reached, which
+  if anything is stronger evidence of it being an in-house label rather than a separate
+  company — but `country` is left unset on this record rather than inferring GAN's Guangzhou
+  location without a direct statement. `website` is likewise left unset: gancube.com's
+  collection page is not Swift Block's own site, it is GAN's.
+
+  No aliases beyond "Swift Block" itself were located; product-line names seen in passing
+  (Swift Block 355S, Swift Block wiSlide Klotski) are product/family names, not brand aliases,
+  and belong to pass 2.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [gancube-brand-story-about-us, gancube-collections-swift-block]
+  /parent_id:
+    confidence: confirmed
+    sources: [gancube-brand-story-about-us, gancube-collections-swift-block]
+    note: "Single-publisher evidence (both sources are GAN's own site), but the claim itself is a first-party organisational statement plus first-party catalogue structure (sold on GAN's own domain, listed as GAN's own shop section) rather than a comparative/marketing claim, so tier 1 applies. No independent (non-GAN) corroboration was located this pass — see notes field."
+  /founded:
+    confidence: confirmed
+    sources: [gancube-brand-story-about-us]
+  /country:
+    confidence: unknown
+    note: "Researched and not found: no source states a country for Swift Block distinct from GAN's own. Left unset rather than inferring GAN's Guangzhou location from the parent relationship alone. See notes field."
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independently registered Swift Block domain was located. gancube.com's own /collections/swift-block page is GAN's site, not Swift Block's, so it is not recorded as this record's website. See notes field."

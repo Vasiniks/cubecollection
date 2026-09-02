@@ -1,0 +1,59 @@
+# family: gan-v100
+# Pass 2 (family enumeration). A GAN 3x3 line launched circa October 2025, sold under a naming
+# pattern ("V100") distinct from both the numbered Flagship Series and the 356 mainline, and
+# explicitly placed by GAN's own site outside its "Flagship"/"旗舰魔方" navigation category.
+# Recorded as its own family rather than as a member of gan-flagship-series; the deeper
+# question of what "V100" denotes and why it exists alongside GAN17 is staged, not resolved,
+# in research/staging/models/gan-v100.yml. See research/notes/models/gan-pass2.md.
+
+id: gan-v100
+entity: family
+manufacturer_id: gan
+name: "GAN V100"
+introduced:
+  value: "2025-10"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  A GAN 3x3 line first found in this pass on GAN's own site as of an October 2025 capture
+  ("GAN v100 Maglev is Available Now!"), sold under models including GAN V100, GAN V100 Leap,
+  GAN V100 MagLev, GAN V100 Leap Year of the Horse, and GAN V100 MagLev Minions Edition.
+
+  Deliberately excluded from gan-flagship-series on three independent pieces of evidence,
+  gathered across both of GAN's own sites and one major retailer:
+
+  1. GAN's own English-language site nav breadcrumb for a V100 product reads "Advanced Series",
+     not "Flagship Series" (product-page capture, 2025-10-24).
+  2. GAN's own Chinese-domestic site (gancube.cn) categorises "GAN V100" under "磁力系列"
+     (Magnetic Series) and does not list it under the separate "旗舰魔方" (Flagship Cube)
+     heading on the same page, even though "GAN16 Maglev" appears under both headings
+     (gancube-cn-gan-v100-nav).
+  3. TheCubicle's own retail copy describes the V100 as sharing "GAN's advanced tension
+     adjustment system—identical to the system found in the flagship GAN16" — language that
+     refers to GAN16, not V100, as "the flagship" (thecubicle-gan-v100-maglev-uv-3x3).
+  4. GAN's own August 2026 site navigation (gancube-gan17-magdrive-product) lists "GAN V100" in
+     its flat "3x3" product listing but not in either its "Flagship Series" dropdown or its
+     separate per-generation quick-nav list ("GAN16 Maglev Series" ... "GAN11 Series").
+
+  `positioning: mainline` is the nearest fit in this archive's controlled vocabulary
+  (flagship/mainline/budget/smart/special) for the "Advanced Series" breadcrumb GAN itself uses;
+  the vocabulary has no "advanced" tier, so this is recorded as an approximation, at reduced
+  confidence, rather than treated as an exact match.
+
+  Why V100 exists as a separate line at all — whether it is a special/anniversary product
+  distinct from the annual numbered succession, a permanent second flagship-adjacent tier, or
+  something else — is not established by any source found this pass and is left as an open
+  question. See research/staging/models/gan-v100.yml for the fuller discovery notes this
+  boundary call was built on.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-3x3]
+    note: "Earliest capture found of a GAN V100 product page (2025-10-24) carries the on-page banner 'GAN v100 Maglev is Available Now!', consistent with a genuinely recent launch at that date rather than an older product newly archived. Single data point; not independently corroborated with an explicit GAN announcement date."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-gan-v100-maglev-uv-3x3, gancube-cn-gan-v100-nav]
+    note: "See description. 'mainline' approximates GAN's own 'Advanced Series' breadcrumb/category, which has no exact match in vocab/family-positioning.yml."

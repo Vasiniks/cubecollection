@@ -1,0 +1,23 @@
+# source: gancube-monster-go-cloud-rainbow-ut-product
+# GAN's own product page for "Monster Go Cloud & Rainbow & UT 3x3 Cube", listed at a URL
+# containing "magnetic-speed-cube" and priced close to the standard "Monster Go Magnetic 3x3
+# Cube" — read in this pass as a colourway grouping of that same magnetic design (three named
+# colourways bundled under one product title) rather than a distinct mechanical model, though
+# no source found this pass states this explicitly; recorded as a judgement call.
+id: gancube-monster-go-cloud-rainbow-ut-product
+entity: source
+kind: manufacturer_official
+title: "Monster Go Cloud & Rainbow & UT 3×3 Cube | GANCUBE Official Website"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/monster-go-cloud-rainbow-ut-3x3-magnetic-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241112094935/https://www.gancube.com/products/monster-go-cloud-rainbow-ut-3x3-magnetic-speed-cube"
+excerpt: "Page title as captured 2024-11-12: \"Monster Go Cloud & Rainbow & UT 3×3 Cube | GANCUBE Official Website\". URL slug contains 'magnetic-speed-cube', the same phrase used in the standard Monster Go Magnetic 3x3 Cube's own URL."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain this exact title. Body copy describing the mechanism was not captured in a form distinguishable from the standard Monster Go Magnetic 3x3 Cube's own copy this pass; the URL-slug and pricing similarity are the only evidence available for the judgement recorded on the model this source supports."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page for its own sub-brand, tier 1 for naming and existence; tier of evidence for the model-boundary judgement (colourway of the standard magnetic model vs. a distinct design) is weak and recorded as such on the model record."
+status: sourced

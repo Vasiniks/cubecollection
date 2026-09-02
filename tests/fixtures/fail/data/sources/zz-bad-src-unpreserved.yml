@@ -1,0 +1,13 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-bad-src-unpreserved
+entity: source
+kind: retailer
+title: ZZ unpreserved listing
+publisher: ZZ Nowhere
+url: https://example.invalid/gone
+preservation_method: none
+status: drafted

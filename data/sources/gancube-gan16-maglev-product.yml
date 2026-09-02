@@ -1,0 +1,27 @@
+# source: gancube-gan16-maglev-product
+# GAN's own current product page for "GAN16". Cited for the "Versions" selector confirming
+# "Maglev MAX" and "MAX-L" are variant-level tiers of ONE model "GAN16" (differing by magnet
+# count, 88 vs 136, per the page's own running copy), and for a limited edition sold from the
+# same listing.
+id: gancube-gan16-maglev-product
+entity: source
+kind: manufacturer_official
+title: "GAN16 Maglev | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan16-maglev-3x3-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819145608/https://www.gancube.com/products/gan16-maglev-3x3-speed-cube"
+excerpt: |-
+  "Versions" purchase selector on this one page: "Maglev MAX_UV Coated", "Maglev_UV Coated",
+  "MAX-L_UV Coated", "Maglev_Max Dual-WR Limited Edition of Geng Xuanyi" — four named options
+  sold from a single listing. Running copy: "Whether you choose the standard GAN16 Maglev or
+  the GAN16 Maglev MAX, expect fast and precise turns every solve... Featuring 88 magnets in the
+  standard model and 136 magnets (Including 12 dual magnetic rings for GES) in the Max version."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the Versions list and the '88 magnets... 136 magnets' comparison verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for product structure and for GAN's own framing of 'standard' vs 'MAX' as two versions of one product ('whether you choose... or...') rather than two separate products."
+status: sourced

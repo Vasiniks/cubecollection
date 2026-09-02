@@ -1,0 +1,35 @@
+# source: thecubicle-gan-356-air-um-max-park-signature-edition
+# TheCubicle's listing for the "GAN 356 Air UM Max Park Signature Edition", a limited, numbered,
+# signature/commemorative tuning of the GAN356 Air UM commemorating Max Park's 6.39s WR 3x3
+# average. The strongest documented run size and per-unit numbering scheme found anywhere in
+# this pass.
+id: thecubicle-gan-356-air-um-max-park-signature-edition
+entity: source
+kind: retailer
+title: "GAN 356 Air UM Max Park Signature Edition – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-air-um-max-park-signature-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250810152847/https://www.thecubicle.com/products/gan-356-air-um-max-park-signature-edition"
+excerpt: |-
+  "The GAN356 Air UM Max Park Signature Edition is a replica of the cube used by Max Park in
+  his recent 6.39 World Record 3x3 average. This cube is tuned to Max's exact specifications
+  and comes with yellow GES nuts pre-installed, a lube combination of Cubicle Weight 5 on the
+  core and Lubicle Silk on the pieces, and slightly looser tensions. Max's setup accentuates
+  the Air UM's speed and freedom of turning, producing a cube with maximum quickness and
+  smoothness. This cube comes with a tensioning tool, a special Max Park Signature VIP card, a
+  package containing the six other GES nuts, and an exclusive pamphlet with biographical
+  information on Max. Limited Edition: To commemorate Max Park's 6.39 WR average, only 639 of
+  the GAN 356 Air UM Max Park Signature Edition will be available. Each puzzle will ship with a
+  numbered VIP card, with numbers from 50001 to 50639." Listed price at this capture: $46.39
+  USD. Filed by TheCubicle under its own "Signature Series" navigation category. A verified
+  customer review states: "This cube is a UM with the setup of Max Parks WR cube, setup from
+  Cubicle Labs."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the run-size and numbering-range sentence, the price, and the customer review verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, for the specific, non-superlative run-size and numbering claim (639 units, numbered 50001-50639), which RESEARCH_SPEC §3.3 treats as an admissible specification-like fact rather than comparative marketing copy. A customer review (tier 5, inadmissible on its own) independently names Cubicle Labs as the party that performed the tuning setup, consistent with thecubicle-gan-356-air-um's own statement that Cubicle Labs and GAN collaborated on the Air UM generally; relied on here only as corroborating context for the aftermarket/collaboration reading, not as a standalone fact source. A second, contradicting customer review claims a run of 'just over 400' units sold; this is unsourced anecdote and is not recorded as a candidate value, per the hard rule against inferring run size from informal claims."
+status: sourced

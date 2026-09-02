@@ -1,0 +1,28 @@
+# colorway-finish
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: colorway-finish, so the schema and this file cannot drift.
+
+id: colorway-finish
+description: "Surface finish as it reads visually."
+values:
+  - value: matte
+    label: "Matte"
+    description: "Non-reflective."
+  - value: glossy
+    label: "Glossy"
+    description: "Reflective."
+  - value: frosted
+    label: "Frosted"
+    description: "Finely textured, diffusing."
+  - value: uv_coated
+    label: "UV coated"
+    description: "A UV-cured coating."
+  - value: textured
+    label: "Textured"
+    description: "Deliberately textured surface."
+  - value: soft_touch
+    label: "Soft touch"
+    description: "A soft-feel coating."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."

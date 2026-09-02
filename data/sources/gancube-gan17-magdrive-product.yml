@@ -1,0 +1,45 @@
+# source: gancube-gan17-magdrive-product
+# GAN's own product page for the GAN17 MagDrive (2026), captured with its full site
+# navigation. Used in pass 2 for three separate facts: (1) GAN's own first-party description
+# of GAN17 as its flagship 3x3; (2) the site's own "Flagship Series" navigation grouping,
+# which lists GAN16/15/14/12/11 together and is the primary evidence for treating that
+# numbered succession as one family; (3) confirmation that GAN356 ("GAN356 Me") and GAN V100
+# both remain current, separately-listed 3x3 products in 2026, sitting outside that "Flagship
+# Series" grouping.
+id: gancube-gan17-magdrive-product
+entity: source
+kind: manufacturer_official
+title: "GAN17 MagDrive | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan17-magdrive"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819145103/https://www.gancube.com/products/gan17-magdrive"
+excerpt: |-
+  Product description: "GAN17 MagDrive is GAN's flagship maglev 3x3 speed cube, featuring the
+  Celestial Magnetic-Dynamic System with 196 magnets, One Magnet Core and Three Magnet Realms
+  for Full-Angle Navigation. It combines a 17.5 mm Micro Magnetic Core, Maglev, Omni-support
+  Spherical Orbit and Full-Freedom Numerical Tuning to deliver adjustable magnetic guidance,
+  stability and control for high-performance speedcubing."
+
+  Site navigation, "Flagship Series" dropdown (verbatim entries, in order): "GAN16 Maglev",
+  "GAN15", "GAN14", "GAN12", "GAN11 Series, GAN11 M Pro, GAN11 M, GAN 11 Air, GAN11 M Duo",
+  followed by the non-3x3 siblings "GAN562 M", "GAN460 M V2", "GAN251 M Series".
+
+  Site navigation, "3x3" flat listing (verbatim, in order, abridged to items relevant to this
+  citation): "GAN17 MagDrive", "GAN16 Maglev", "GAN16 ui Maglev MAX", ... "GAN356 M e Minions",
+  ... "GAN V100 Leap Year of the Horse", "GAN V100", "GAN15 NewBlack UV Coated", ... — GAN356
+  and GAN V100 items appear in this flat "3x3" list but do NOT appear in the "Flagship Series"
+  dropdown above, nor in a second, separate per-generation quick-nav list further down the same
+  page ("GAN16 Maglev Series", "GAN15 Maglev Series", "GAN14 Maglev Series", "GAN13 Maglev
+  Series", "GAN12 Maglev Series", "GAN11 Series").
+
+  Site navigation, "Smart Cubes" dropdown (verbatim): "GAN ui Series", "i Series",
+  "i carry Series".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain 'GAN17 MagDrive is GAN's flagship maglev 3x3 speed cube', the 'Flagship Series' dropdown list, the flat '3x3' listing, and the 'Smart Cubes' dropdown verbatim."
+accessed: "2026-09-01"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "GAN's own product page and site navigation, tier 1 for GAN's own product naming, catalogue structure, and self-description of a product's market position (flagship). 'Flagship' as applied to GAN17 in running copy is treated here as GAN's own positioning statement about itself, which DATA_MODEL/RESEARCH_SPEC treat as admissible (a manufacturer's self-description of its own catalogue structure), not as a comparative superlative claim about performance. The site's navigation is dynamic and will change with the next product drop; nothing here should be assumed stable beyond this capture date."
+status: sourced

@@ -1,0 +1,46 @@
+# model: gan-357-original
+# Pass 3 (model enumeration). The single design generation found for the gan-357 family. Sold
+# under the bare name "GAN357" and, per GAN's own 2016 site navigation, also as "GAN357U" —
+# read as the same design's "Ultimate" (serviced/full-featured) tier rather than a second
+# design, on the strength of thecubicle-gan-357-ultimate's own words: "the full-featured
+# version of the original GAN 357" (worked decision A/C pattern: a tier word describing the
+# same underlying shell, not a different mould). No evidence was found this pass of a second
+# GAN357 generation (no "357 V2" or equivalent). See research/notes/models/gan-pass3.md.
+id: gan-357-original
+entity: model
+family_id: gan-357
+manufacturer_id: gan
+name: "GAN357"
+aliases:
+  - "GAN357U"
+scope_class: core
+generation:
+  label: "GAN357"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2016-08"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's early corner-cutting-focused 3x3, sold alongside GAN356 from at least August 2016
+  ("GAN357 Starts new Corner-Cutting era" — see gan-357 family record) and apparently
+  discontinued from GAN's mainline catalogue well before it disappeared from TheCubicle's own
+  legacy listings, where "GAN 357 Ultimate" persisted at least through TheCubicle's 2022
+  capture as a serviced tier of "the original GAN 357" (thecubicle-gan-357-ultimate). Treated
+  as one model with "GAN357" (base) and "GAN357U"/"Ultimate" as variants — the same
+  serviced/tier-word pattern already established for the GAN356 Air line — rather than as two
+  models, since no source found this pass distinguishes them by mould or mechanism.
+status: drafted
+attestations:
+  /announced:
+    confidence: confirmed
+    sources: [gancube-2016-earliest-capture]
+    note: "GAN's own site, tier 1, lists 'GAN357' and 'GAN357U' as current products on 2016-08-08 (already the primary evidence for the gan-357 family record itself)."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal or successor-design statement was found for GAN357 itself; 'GAN357' is a product/family number in the same style as GAN's '356', not a stated sequential generation count."
+  /aliases:
+    confidence: probable
+    sources: [gancube-2016-earliest-capture, thecubicle-gan-357-ultimate]
+    note: "'GAN357U' is GAN's own 2016 nav listing; thecubicle-gan-357-ultimate's description of 'Ultimate' as a tier of 'the original GAN 357' is the evidence relied on for reading 'U'/'Ultimate' as this same model's variant, not a separate design."

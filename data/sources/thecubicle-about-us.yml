@@ -1,0 +1,26 @@
+# source: thecubicle-about-us
+# TheCubicle's own About page. First-party for its own identity, jurisdiction, launch date,
+# and operating company. Reclassified 2026-09-01 (see research/notes/manufacturers/gan-pass1.md)
+# from kind: retailer to kind: manufacturer_official, matching the convention already applied
+# to gancube-brand-story-about-us and picubeshop-about-us in this same register: an
+# organisation's own "About Us" page is a first-party official statement about itself, not a
+# retail listing, and is tier 1 for its own corporate facts under RESEARCH_SPEC §3.3 /
+# DATA_MODEL §5.2 rule 2 even though the organisation is a retailer/service by `kind` in its
+# manufacturer record.
+id: thecubicle-about-us
+entity: source
+kind: manufacturer_official
+title: "About Us – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/pages/about-us"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260824140519/https://www.thecubicle.com/pages/about-us"
+excerpt: "TheCubicle.com is a leading USA-based online specialty cube store committed to providing customers with a superior online shopping experience, excellent puzzle variety, and an innovative cubing experience. TheCubicle operates in New York and has served thousands of puzzle fans from beginners to world champions. [...] TheCubicle was launched in August of 2011 with a handful of popular World Cubing Association puzzles and a variety of hand-done custom mods. [...] TheCubicle.com is owned and operated by Cubicle Enterprises LLC."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'Cubicle Enterprises', 'August of 2011' and 'New York'."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "TheCubicle's own first-party self-description, tier 1 for its own corporate facts (founding date, jurisdiction, operating legal entity) on the same basis as gancube-brand-story-about-us and picubeshop-about-us elsewhere in this register. Its 'leading' and 'superior' claims are marketing copy and establish nothing — tier 4 for any comparative claim, per RESEARCH_SPEC §3.3."
+status: sourced

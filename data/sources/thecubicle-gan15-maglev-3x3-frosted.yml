@@ -1,0 +1,22 @@
+# source: thecubicle-gan15-maglev-3x3-frosted
+# TheCubicle's earliest-located listing for a GAN15 product, and notably earlier than
+# gancube.com's own first archived capture of any GAN15 product URL (2026-03) — evidence that
+# the gancube.com floor for GAN15 reflects a later URL restructuring, not the product's actual
+# launch. Used as the dating floor for gan-flagship-15.
+id: thecubicle-gan15-maglev-3x3-frosted
+entity: source
+kind: retailer
+title: "GAN15 MagLev 3x3 (Frosted)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan15-maglev-3x3-frosted"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250623183707/https://www.thecubicle.com/products/gan15-maglev-3x3-frosted"
+excerpt: "Page title as captured 2025-06-23: \"GAN15 MagLev 3x3 (Frosted)\"."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to resolve with this exact title at this date."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail listing, tier 2. This capture (2025-06-23) predates gancube.com's own earliest located capture of any GAN15 product URL (2026-03-05) by roughly nine months — used in this pass as evidence that the gancube.com floor is a URL-restructuring artifact, not a true launch-adjacent date, and that this TheCubicle floor is the more reliable of the two."
+status: sourced

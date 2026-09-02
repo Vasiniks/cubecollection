@@ -1,0 +1,32 @@
+# model: gan-ui-12-maglev
+# Pass 3 (model enumeration). "GAN12 ui Maglev 3x3 Magnetic Smart Cube", sold at its own
+# dedicated URL — a third GAN12 ui listing, separate from FreePlay and SP. See
+# research/notes/models/gan-pass3.md.
+id: gan-ui-12-maglev
+entity: model
+family_id: gan-ui-series
+manufacturer_id: gan
+name: "GAN12 ui Maglev"
+scope_class: core
+generation:
+  label: "12 ui Maglev"
+  ordinal: 12
+  basis: community_convention
+description: |-
+  GAN's own storefront lists "GAN 12 ui Maglev" ($105.99-$115.99) in the "GAN ui Series"
+  collection (gancube-collections-ui-series), the highest-priced of the three GAN12 ui listings
+  found this pass (FreePlay and SP both priced lower). A dedicated product-page URL
+  ("gan12-ui-maglev-3x3-magnetic-smart-cube") was located during discovery but its content was
+  not fetched and preserved as a separate source this pass; existence and naming rest on the
+  collection-page source alone.
+status: drafted
+attestations:
+  /announced:
+    confidence: unknown
+    note: "Researched and not found within this pass's time budget. A CDX listing shows this product URL first captured 2024-12-06, inside or immediately adjacent to gancube.com's own November-2024 archival event, so even if fetched this would likely not be a reliable floor."
+  /generation/basis:
+    confidence: uncertain
+    note: "'Maglev' is a tier word, not a stated sequential generation numeral; the '12' is GAN's own borrowed reference to the mechanical GAN12 base."
+  /description:
+    confidence: confirmed
+    sources: [gancube-collections-ui-series]

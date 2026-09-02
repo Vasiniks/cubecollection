@@ -1,0 +1,18 @@
+# variant: gan-356-i3-v2--standard
+# Pass 4. GAN356 i3 V2: over 50,000 solves and 15 hours active playtime per charge, 365-day
+# standby, per TheCubicle's own copy.
+id: gan-356-i3-v2--standard
+entity: variant
+model_id: gan-356-i3-v2
+name: "GAN356 i3 V2"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  battery: "15 hours active playtime per charge; 365-day standby, per TheCubicle."
+status: stub
+attestations:
+  /smart/battery:
+    confidence: probable
+    sources: [thecubicle-gan356-i3-v2]

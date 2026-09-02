@@ -1,0 +1,25 @@
+# variant: gan-i4--standard
+# Pass 4. "GAN i4 Smart Cube" — Omni-directional Smart Ball Core, Smart Dual-Core Endurance
+# Mode, Magnetic Levitation offered as a feature/option, 10-min quick charging, per GAN's own
+# collection listing and product page.
+id: gan-i4--standard
+entity: variant
+model_id: gan-i4
+name: "GAN i4 Smart Cube"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  companion_app: "Cube Station"
+config:
+  maglev: maglev
+status: stub
+attestations:
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [gancube-gan-i4-smart-cube-product]
+  /config/maglev:
+    confidence: probable
+    sources: [gancube-gan-i4-smart-cube-product]
+    note: "'Magnetic Levitation' is listed as a feature heading on GAN's own page; whether MagLev is the only sold configuration of this model or one of several tiers (mirroring the mechanical i4 Leap/MagLev split reported elsewhere) is not resolved this pass."

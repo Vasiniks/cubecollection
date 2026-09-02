@@ -1,0 +1,19 @@
+# variant: gan-356-i-carry-e--standard
+# Pass 4. GAN356 i Carry E: swaps the original i Carry's CR1632 coin battery for two LR43
+# button batteries, ~150 hours; tracks moves but not orientation (no gyroscope), per
+# TheCubicle's own copy.
+id: gan-356-i-carry-e--standard
+entity: variant
+model_id: gan-356-i-carry-e
+name: "GAN356 i Carry E"
+scope_class: core
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+  battery: "Two replaceable LR43 button batteries; ~150 hours playtime. Tracks moves but not orientation (no gyroscope)."
+status: stub
+attestations:
+  /smart/battery:
+    confidence: probable
+    sources: [thecubicle-gan356-i-carry-e]

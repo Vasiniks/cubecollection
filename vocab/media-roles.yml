@@ -1,0 +1,37 @@
+# media-roles
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: media-roles, so the schema and this file cannot drift.
+
+id: media-roles
+description: "What the asset shows."
+values:
+  - value: hero
+    label: "Hero"
+    description: "The primary representative image."
+  - value: product
+    label: "Product"
+    description: "A general external view."
+  - value: packaging
+    label: "Packaging"
+    description: "The box or packaging."
+  - value: internal
+    label: "Internal"
+    description: "Internal components in place."
+  - value: core
+    label: "Core"
+    description: "The core mechanism."
+  - value: mechanism
+    label: "Mechanism"
+    description: "A mechanical detail."
+  - value: exploded
+    label: "Exploded"
+    description: "Components separated."
+  - value: comparison
+    label: "Comparison"
+    description: "Shown alongside another product."
+  - value: in_hand
+    label: "In hand"
+    description: "Held, for scale."
+  - value: detail
+    label: "Detail"
+    description: "A close detail."

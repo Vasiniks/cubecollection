@@ -1,0 +1,19 @@
+# face-notation
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: face-notation, so the schema and this file cannot drift.
+
+id: face-notation
+description: "Cube face, in standard speedcubing notation."
+values:
+  - value: U
+    label: "Up"
+  - value: D
+    label: "Down"
+  - value: F
+    label: "Front"
+  - value: B
+    label: "Back"
+  - value: L
+    label: "Left"
+  - value: R
+    label: "Right"

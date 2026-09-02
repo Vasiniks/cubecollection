@@ -1,0 +1,84 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "procedural": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "geometry_profile_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+          "description": "Reserved. Left unset in this phase.",
+          "x-reserved": true
+        },
+        "colorway_completeness": {
+          "type": "string",
+          "x-vocab": "colorway-completeness",
+          "x-derived": true
+        },
+        "renderable": {
+          "type": "boolean",
+          "x-derived": true
+        },
+        "blockers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "x-derived": true
+        }
+      }
+    },
+    "captured_3d": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          },
+          "class": {
+            "type": "string",
+            "x-vocab": "capture-3d-classes"
+          },
+          "status": {
+            "type": "string",
+            "x-vocab": "capture-3d-status"
+          },
+          "path": {
+            "type": "string"
+          },
+          "creator": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+            "description": "Immutable identifier."
+          },
+          "rights_status": {
+            "type": "string",
+            "x-vocab": "rights-status"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "class",
+          "status"
+        ]
+      },
+      "description": "Expected to be empty. Nothing in this schema assumes a scan exists."
+    }
+  },
+  "description": "Separates what can be generated from what was captured. No asset pipeline exists in this phase.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/common/representation.schema.json",
+  "title": "How a variant can be represented in three dimensions"
+}

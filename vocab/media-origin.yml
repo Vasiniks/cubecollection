@@ -1,0 +1,20 @@
+# media-origin
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: media-origin, so the schema and this file cannot drift.
+
+id: media-origin
+description: "Who produced the asset."
+values:
+  - value: first_party
+    label: "First party"
+    description: "Produced by the archivist."
+  - value: manufacturer
+    label: "Manufacturer"
+  - value: retailer
+    label: "Retailer"
+  - value: community
+    label: "Community"
+  - value: press
+    label: "Press"
+  - value: marketplace
+    label: "Marketplace"

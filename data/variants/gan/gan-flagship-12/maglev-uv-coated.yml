@@ -1,0 +1,27 @@
+# variant: gan-flagship-12--maglev-uv-coated
+# Pass 4. "GAN12 Maglev_UV Coated" — the MagLev tier, GES Pro+/Magnetic GES system, 66g, sold
+# from the same single GAN12 listing.
+id: gan-flagship-12--maglev-uv-coated
+entity: variant
+model_id: gan-flagship-12
+name: "GAN12 Maglev (UV Coated)"
+scope_class: core
+edition:
+  designation: "Maglev"
+  types: [standard]
+config:
+  maglev: maglev
+  coating: uv
+  weight_g: 66
+status: stub
+attestations:
+  /config/maglev:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]
+    note: "GAN's own copy: 'GAN12 Maglev is the 12th generation of GANCUBE... used embedded magnets to replace traditional springs.'"
+  /config/coating:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]
+  /config/weight_g:
+    confidence: confirmed
+    sources: [gancube-gan12-maglev-product]

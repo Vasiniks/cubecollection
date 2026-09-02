@@ -1,0 +1,110 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "class": {
+      "type": "string",
+      "x-vocab": "media-classes",
+      "description": "A manufacturer render is not a photograph and is not filed as one."
+    },
+    "role": {
+      "type": "string",
+      "x-vocab": "media-roles"
+    },
+    "subject": {
+      "type": "string",
+      "x-vocab": "media-subject"
+    },
+    "path": {
+      "type": "string",
+      "description": "Repository-relative path under assets/."
+    },
+    "view": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string",
+      "x-vocab": "media-origin"
+    },
+    "creator": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Source id. Required unless origin is first_party."
+    },
+    "rights_status": {
+      "type": "string",
+      "x-vocab": "rights-status"
+    },
+    "rights_note": {
+      "type": "string"
+    },
+    "captured": {
+      "$ref": "https://cubecollection/schema/common/date.schema.json"
+    },
+    "specimen_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Owned unit this was shot from.",
+      "x-private": true
+    },
+    "dimensions": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "w": {
+          "type": "integer"
+        },
+        "h": {
+          "type": "integer"
+        }
+      }
+    },
+    "checksum": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "id",
+    "class",
+    "role",
+    "path",
+    "origin",
+    "rights_status"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "not": {
+          "properties": {
+            "origin": {
+              "const": "first_party"
+            }
+          },
+          "required": [
+            "origin"
+          ]
+        }
+      },
+      "then": {
+        "required": [
+          "source"
+        ]
+      }
+    }
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/common/media.schema.json",
+  "title": "A two-dimensional asset"
+}

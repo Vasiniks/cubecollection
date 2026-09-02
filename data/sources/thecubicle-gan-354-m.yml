@@ -1,0 +1,21 @@
+# source: thecubicle-gan-354-m
+# TheCubicle's earliest-captured listing for the GAN354 M, dated by the retailer's own system
+# to 2018-09-11. The only source located in this pass giving GAN354 M an approximate origin
+# date (GAN's own product page, gancube-gan354-m-v2-product, does not state one).
+id: thecubicle-gan-354-m
+entity: source
+kind: retailer
+title: "GAN 354 M – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-354-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190919090935/https://www.thecubicle.com/products/gan-354-m"
+excerpt: "The GAN354 M is a new miniature, magnetic 3x3 that emulates the flagship performance of the Air SM. At just 54mm, the GAN354 M boasts a comfortable, compact feel and is especially ideal for one-handed enthusiasts and cubers with smaller hands. [...] Manufacturer: GAN Type: 3x3 Gross Weight: 181g Added: 2018-09-11"
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'GAN354 M', '54mm', and 'Added: 2018-09-11' verbatim."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "TheCubicle's own retail copy and internal 'Added' date field, tier 2. The single source for GAN354 M's approximate introduction date; not independently corroborated by a GAN-dated source in this pass, so the date is held at probable rather than confirmed."
+status: sourced

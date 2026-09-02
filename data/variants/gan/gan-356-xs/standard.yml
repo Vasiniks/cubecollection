@@ -1,0 +1,20 @@
+# variant: gan-356-xs--standard
+# Pass 4. GAN356 XS, the "upgraded wing-shaped quantifiable adjustment core" generation per
+# GAN's own technology-history page.
+id: gan-356-xs--standard
+entity: variant
+model_id: gan-356-xs
+name: "GAN356 XS"
+aliases:
+  - { name: "GAN356 X S", source: gancube-cn-core-technology-history }
+scope_class: core
+edition:
+  types: [standard]
+config:
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /config/adjustment_system:
+    confidence: confirmed
+    sources: [gancube-cn-core-technology-history]
+    note: "'an upgraded wing-shaped quantifiable adjustment core that bolstered both verticality and stability.'"

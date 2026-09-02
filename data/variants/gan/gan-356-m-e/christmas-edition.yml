@@ -1,0 +1,54 @@
+# variant: gan-356-m-e--christmas-edition
+# Pass 4. "GAN356 ME 3x3 (Christmas Edition)" — a limited seasonal colourway changing internal
+# plastic colour (green), magnet capsule colour (red), and logo colour (red), plus a themed
+# sticker and bag. A genuine multi-part colourway change, not packaging alone.
+id: gan-356-m-e--christmas-edition
+entity: variant
+model_id: gan-356-m-e
+name: "GAN356 ME 3x3 (Christmas Edition)"
+scope_class: core
+edition:
+  name: "Christmas Edition"
+  types: [limited]
+  limited:
+    is_limited: true
+    run_size: null
+colorway:
+  designation: "Christmas Edition"
+  limited_name: "Christmas Edition"
+  scheme: custom
+  logo:
+    present: true
+    treatment: printed
+    description: "Red logo, per TheCubicle: 'a unique red logo.'"
+  piece_colors:
+    - piece_class: internal
+      color_name: "green"
+      note: "'festive green internals' per TheCubicle."
+    - piece_class: internal
+      color_name: "red"
+      note: "Magnet capsules specifically, per TheCubicle: 'eye-catching red magnet capsules.' vocab/piece-classes.yml has no dedicated 'magnet capsule' value; recorded under 'internal' with this note distinguishing it from the green internal plastic above."
+packaging:
+  form: "Retail box"
+  notable: "Includes a Christmas-themed sticker for one side of the cube and a red GAN Cube bag with a seasonal design."
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-gan356-me-christmas-edition]
+  /colorway/piece_colors/0/color_name:
+    confidence: probable
+    sources: [thecubicle-gan356-me-christmas-edition]
+  /colorway/piece_colors/1/color_name:
+    confidence: probable
+    sources: [thecubicle-gan356-me-christmas-edition]
+  /colorway/logo/description:
+    confidence: probable
+    sources: [thecubicle-gan356-me-christmas-edition]
+  /edition/limited/is_limited:
+    confidence: probable
+    sources: [thecubicle-gan356-me-christmas-edition]
+    note: "TheCubicle's own copy: 'this limited edition cube.'"
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found. Never estimated."

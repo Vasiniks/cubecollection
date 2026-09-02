@@ -1,0 +1,23 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-testbrand-tf-v1--novelty-oversize
+entity: variant
+model_id: zz-testbrand-tf-v1
+name: ZZ Testbrand TF V1 Oversize novelty
+scope_class: conditional
+scope_justification: >-
+  Fixture justification. Admitted to exercise the conditional-scope gate, not because a
+  novelty puzzle belongs in the main archive.
+scope_decided_by: archivist
+scope_decided_on: "2026-09-01"
+legality:
+  wca_status: not_legal
+  basis: Fixture value.
+status: drafted
+attestations:
+  "/scope_justification":
+    confidence: reported
+    sources: [zz-src-review]

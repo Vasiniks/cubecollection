@@ -1,0 +1,20 @@
+# source: thecubicle-gan-356-air-um
+# TheCubicle's product page for the GAN 356 Air UM. The reason this source exists in pass 1 is
+# the sentence naming Cubicle Labs as GAN's partner on that cube.
+id: thecubicle-gan-356-air-um
+entity: source
+kind: retailer
+title: "GAN 356 Air UM – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-air-um"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260210040113/https://www.thecubicle.com/products/gan-356-air-um"
+excerpt: "The GAN356 Air UM is a magnetized GAN356 Air Ultimate, GAN's flagship 3x3 and current world record cube for both single and average. The Air UM is the world's first mass produced magnetic 3x3, and is the culmination of a collaboration between GAN and Cubicle Labs."
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'Cubicle Labs' and 'first mass produced magnetic 3x3'."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "TheCubicle is Cubicle Labs' own operator, so this is a first-party statement about Cubicle Labs' involvement and an interested statement about the cube's significance. 'World's first mass produced magnetic 3x3' is a superlative and is tier 4 for that claim; the collaboration itself is the part relied on here."
+status: sourced

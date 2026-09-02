@@ -1,0 +1,16 @@
+# variant: gan-356-m--standard
+# Pass 4. GAN356 M, mid-range, hand-adjustable Numerical IPG core.
+id: gan-356-m--standard
+entity: variant
+model_id: gan-356-m
+name: "GAN356 M"
+aliases:
+  - { name: "GAN356 Air M", source: thecubicle-gan356-m }
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-m]

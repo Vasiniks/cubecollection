@@ -1,0 +1,38 @@
+# model: gan-356-m-e
+# Pass 3 (model enumeration). The honeycomb-touchface, spring/elasticity-adjustment (non-MagLev)
+# mainline 356 tier, sold in parallel with GAN356 MagLev from late 2023.
+id: gan-356-m-e
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 M E"
+aliases:
+  - "GAN356 Me"
+scope_class: core
+generation:
+  label: "M E"
+  ordinal: 7
+  basis: community_convention
+announced:
+  value: "2023-12"
+  precision: month
+  qualifier: before
+description: |-
+  Magnetic, honeycomb-touchface, 4-elasticity/3-center-travel adjustment, matte finish. "GAN356
+  Me" (merged spelling, used in GAN's own current 2026 site navigation, e.g. "GAN356 Me
+  Minions") is recorded as an alias of this same model rather than a separate model, given the
+  identical feature description and the pattern of GAN dropping/merging spacing in product names
+  over time elsewhere in this family. Succeeded by GAN356 Me V2 (2025).
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-gan-356-m-e-3x3]
+    note: "TheCubicle's earliest capture is 2023-12-05 (tier 2); a floor, not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement found."
+  /aliases:
+    confidence: uncertain
+    sources: [gancube-gan17-magdrive-product]
+    note: "'GAN356 Me' appears in GAN's own 2026 site navigation ('GAN356 Me Minions'); treated as a merged-spacing alias of 'GAN356 M E' rather than a separate model on grounds of identical feature description, not an explicit manufacturer statement equating the two spellings."

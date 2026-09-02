@@ -1,0 +1,24 @@
+# source: picubeshop-about-us
+# PiCube's own About Us page on picubeshop.com. First-party for PiCube's founding date,
+# founders, legal entity, registered address, and the brands (including GAN) it sells
+# customised/magnetised cubes for.
+id: picubeshop-about-us
+entity: source
+kind: manufacturer_official
+title: "About Us – Picube Shop"
+publisher: "Picube Shop"
+url: "https://www.picubeshop.com/pages/about-us"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231111015219/https://www.picubeshop.com/pages/about-us"
+excerpt: |-
+  [nav categories] Brands: MoYu, QiYi, GAN, DaYan, YJ, Other.
+  [body] "About Us — Welcome to Picube Shop: Picube, an online store created on august, 2017 with the passion to delivery the cubes and puzzles. With the business expend we open our independent store on January 2020. Our custom magnetic cubes have been recognized as the most professional and industry leading speed cubes in China. Many top cubers set new records with our custom speed cubes."
+  "Who We Are: Bo Wang, Jiekang Pan, Zijia Feng"
+  "Company Name：Seamoonbaby Ltd. Company Address：Stone Hill Road, Bolton, England, BL4 9TP. (NOT FOR RETURN)"
+preservation_note: "Archive capture verified on 2026-09-01 to contain 'created on august, 2017', the three named principals, and the 'Seamoonbaby Ltd' / Bolton, England company-address line. This is the most recent about-us capture found in the CDX index for this URL as of 2026-09-01; no capture after 2023-11-11 was located."
+accessed: "2026-09-01"
+language: en
+link_status: dead
+last_checked: "2026-09-01"
+reliability_note: "PiCube's own first-party self-description, tier 1 for its own corporate facts (founding date, principals, legal entity, registered address). The page also states its custom magnetic cubes are 'recognized as the most professional and industry leading speed cubes in China' in the same paragraph as a UK company address — see research/notes/manufacturers/gan-pass1.md for the resulting country ambiguity, which this pass leaves unresolved. Spelling 'august' and 'expend' (for 'expand') are verbatim from the source."
+status: sourced

@@ -1,0 +1,22 @@
+# source: thecubicle-gan-357-ultimate
+# TheCubicle's listing for "GAN 357 Ultimate", which explicitly identifies itself as a tier of
+# "the original GAN 357" rather than a new design — resolving whether GAN357 needed more than
+# one model record. Also resolves the apparent 2022 date gap: this is a persisting old product
+# still catalogued at TheCubicle, not a revival of the "357" name.
+id: thecubicle-gan-357-ultimate
+entity: source
+kind: retailer
+title: "GAN 357 Ultimate – TheCubicle"
+publisher: "TheCubicle"
+url: "https://thecubicle.com/products/gan-357-ultimate"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221206155722/https://thecubicle.com/products/gan-357-ultimate"
+excerpt: "The GAN 357 Ultimate is the full-featured version of the original GAN 357. It features the GAN Full Bright color scheme and includes the metal adjusting tool inside the box. As with all puzzles in GAN's ultimate series, the GAN 357 Ultimate has been serviced, lubed, and polished by GAN staff to ensure a great experience right out of the box."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'the full-featured version of the original GAN 357' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, explicitly framing 'Ultimate' as a tier of the same design as the base GAN357 rather than a separate product — the evidence this pass relies on to keep GAN357 as one model with variants, not two models."
+status: sourced

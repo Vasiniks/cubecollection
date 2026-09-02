@@ -1,0 +1,31 @@
+# source: thecubicle-gans-356-air-master-unstickered
+# TheCubicle's listing for the "Gans 356 Air Master (Unstickered)" DIY kit. The direct evidence
+# for the "Master" sticker tier as GAN356 Air's first-released edition designation, and for an
+# unstickered/DIY-kit configuration sold as its own SKU. Also states that "Advanced" and
+# "Standard" versions were only planned, not yet released, at the time of this capture — read
+# as evidence against asserting either was ever actually sold, absent a later source.
+id: thecubicle-gans-356-air-master-unstickered
+entity: source
+kind: retailer
+title: "Gans 356 Air Master (Unstickered) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gans-356-air-master-unstickered"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920104723/https://www.thecubicle.com/products/gans-356-air-master-unstickered"
+excerpt: |-
+  "Master Version: This is the Master version of the Gans 356 Air. The Master version features
+  the Gans half bright sticker set pre-applied to the cube. It also comes with the plastic
+  adjusting tool and a set of Red (S6), Orange (S7), and Yellow (S9) GES Components. Advanced
+  and Standard versions of the Gans 356 Air may become available in the future, but the Master
+  version will be released first. Note: This DIY Kit actually comes assembled but without any
+  stickers (Gans Half-Bright stickers + logo are included with the DIY Kit). This is ideal for
+  someone who plans to resticker the cube anyway and doesn't want to take time removing the
+  stickers."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the Master-version description and the 'Advanced and Standard... may become available in the future' sentence verbatim. This capture (2020) postdates the product's actual sale window (GAN356 Air's own family window is 2016-2019); the listing appears to have persisted in TheCubicle's catalogue past the product's active retail life, so this is not treated as a 2020 launch date for anything, only as a source of description text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. 'Advanced and Standard versions... may become available in the future' is explicitly conditional/future language at the time of this capture — it is evidence that GAN or TheCubicle considered these tiers, not evidence either was ever actually released as a distinct sold product. No source located this pass confirms an 'Air Advanced' or 'Air Standard' SKU was ever sold; not asserted as a variant on that basis."
+status: sourced

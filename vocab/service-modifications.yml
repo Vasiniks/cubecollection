@@ -1,0 +1,44 @@
+# service-modifications
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: service-modifications, so the schema and this file
+# cannot drift.
+
+id: service-modifications
+description: "What an aftermarket servicer physically did to a cube. One entry per distinct modification; a single serviced product commonly carries several. Records the action, not the resulting specification — a magnet change that alters magnet_configuration also updates config, with its own attestation."
+values:
+  - value: tuning
+    label: "Tuning"
+    description: "Tensions, compression, or spring settings altered to a specified setup."
+  - value: lubrication
+    label: "Lubrication"
+    description: "Named lubricants applied to core or pieces."
+  - value: magnets_added
+    label: "Magnets added"
+    description: "Magnets installed in a cube that shipped without them."
+  - value: magnets_replaced
+    label: "Magnets replaced"
+    description: "Factory magnets removed and different ones fitted."
+  - value: magnet_strength_adjusted
+    label: "Magnet strength adjusted"
+    description: "Magnet strength changed without changing the architecture."
+  - value: ball_core_mod
+    label: "Ball-core modification"
+    description: "The core assembly modified or replaced with a ball-core arrangement."
+  - value: core_replaced
+    label: "Core replaced"
+    description: "The core assembly swapped for another."
+  - value: maglev_conversion
+    label: "MagLev conversion"
+    description: "Springs replaced with magnetic repulsion. Record only where a source states it."
+  - value: spring_replaced
+    label: "Springs replaced"
+    description: "Springs swapped, without conversion to magnetic repulsion."
+  - value: coating
+    label: "Coating"
+    description: "A surface coating applied after manufacture. The resulting surface is also recorded as config.coating."
+  - value: sticker_applied
+    label: "Stickers applied"
+    description: "A sticker set applied to a cube sold unstickered."
+  - value: other
+    label: "Other"
+    description: "A documented modification not covered above. Describe it in detail."

@@ -1,0 +1,75 @@
+# variant: gan-356-air--um-max-park-signature
+# Pass 4. "GAN 356 Air UM Max Park Signature Edition" — a specifically tuned, numbered, limited
+# run of GAN356 Air UM, replicating Max Park's setup for his 6.39s WR 3x3 average. Sold under a
+# GAN-style product name on TheCubicle, with the tuning/lube setup credited to Cubicle Labs by
+# an independent customer review; recorded as a `modified_from` aftermarket variant of the base
+# Air UM per DATA_MODEL §4.3, since the distinguishing facts (specific lube combination, GES
+# nut colour, VIP card, pamphlet) are a servicing/tuning treatment rather than a GAN factory
+# configuration difference. This blends "GAN-branded/limited edition" and "Cubicle Labs
+# aftermarket setup" in a way a human reviewer should examine directly (see
+# research/notes/variants/gan-pass4.md).
+#
+# The single strongest documented run size and per-unit numbering scheme found anywhere in
+# this pass: 639 units, numbered 50001-50639.
+id: gan-356-air--um-max-park-signature
+entity: variant
+model_id: gan-356-air
+name: "GAN 356 Air UM Max Park Signature Edition"
+scope_class: core
+edition:
+  designation: "UM"
+  name: "Max Park Signature Edition"
+  types: [limited, signature, commemorative]
+  limited:
+    is_limited: true
+    run_size: 639
+    numbered: true
+    numbering_range: "50001-50639"
+  signature_of: [max-park]
+  commemorates: [wr-3x3-average-6-39-max-park]
+config:
+  lubrication: "Cubicle Weight 5 (core) and Lubicle Silk (pieces) per TheCubicle; yellow GES nuts pre-installed, slightly looser tensions."
+service:
+  serviced_by: cubicle-labs
+  program: "Signature Series"
+  modifications:
+    - kind: tuning
+      detail: "Yellow GES nuts pre-installed and slightly looser tensions, tuned to Max Park's stated setup."
+      source: thecubicle-gan-356-air-um-max-park-signature-edition
+    - kind: lubrication
+      detail: "Cubicle Weight 5 on the core, Lubicle Silk on the pieces."
+      source: thecubicle-gan-356-air-um-max-park-signature-edition
+  note: |-
+    Migrated in the Pass 4.5 F9 fix. This record previously carried config.coating_applied_by,
+    which was the only servicer field the schema had — on a product that was never coated. The
+    service performed was tuning and lubrication, and it is now recorded as such.
+significance: |-
+  Commemorates Max Park's 6.39s WR 3x3 average. Tuned to a specific setup (yellow GES nuts,
+  named lube combination) attributed by TheCubicle to replicate the cube Max Park used, per
+  TheCubicle's own listing. A customer review independently states the setup was performed by
+  Cubicle Labs.
+relationships:
+  - type: modified_from
+    target: gan-356-air--um
+    target_entity: variant
+    note: "The base, un-tuned GAN356 Air UM configuration this edition modifies with a specific lube/tuning setup, per TheCubicle's own description."
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+  /edition/limited/run_size:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+    note: "TheCubicle (tier 2), directly stated, not a superlative or estimate: 'only 639 of the GAN 356 Air UM Max Park Signature Edition will be available... numbers from 50001 to 50639.' A single unsourced customer review claims 'just over 400' were sold; not recorded as a candidate value per the hard rule against inferring run size from informal anecdote."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+  /edition/signature_of:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+    note: "The product is named a Signature Edition after him and is described as tuned to his specifications. Added in the Pass 4.5 cleanup, when person records first existed to point at."
+  /edition/commemorates:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um-max-park-signature-edition]
+    note: "Source: \"To commemorate Max Park's ... 6.39 World Record 3x3 average\". The run size of 639 encodes the record time."

@@ -1,0 +1,40 @@
+# relationship-types
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: relationship-types, so the schema and this file cannot drift.
+
+id: relationship-types
+description: "Typed, directional edges between records."
+values:
+  - value: succeeds
+    label: "Succeeds"
+    description: "A later design in the same lineage."
+  - value: reissue_of
+    label: "Reissue of"
+    description: "A later production of a substantially identical product."
+  - value: modified_from
+    label: "Modified from"
+    description: "An aftermarket service applied to a base variant."
+  - value: smart_version_of
+    label: "Smart version of"
+    description: "An electronic sibling of a mechanical variant."
+  - value: rebrand_of
+    label: "Rebrand of"
+    description: "The same physical product sold under another brand. Preserved, never collapsed."
+  - value: bundled_with
+    label: "Bundled with"
+    description: "Sold together as a set."
+  - value: commemorates
+    label: "Commemorates"
+    description: "Refers to an event record."
+  - value: signature_of
+    label: "Signature of"
+    description: "Bears a named individual's signature."
+  - value: collaboration_with
+    label: "Collaboration with"
+    description: "Produced with a named party."
+  - value: duplicate_of
+    label: "Duplicate of"
+    description: "Provisionally the same object as another record."
+  - value: merged_into
+    label: "Merged into"
+    description: "Resolved as a duplicate and retired."

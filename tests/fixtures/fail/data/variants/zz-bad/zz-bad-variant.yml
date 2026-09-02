@@ -1,0 +1,63 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Every id here is prefixed zz- and every value is invented to exercise a rule.
+# Nothing in tests/fixtures is ever loaded into data/ or published.
+
+
+id: zz-bad-variant
+entity: variant
+model_id: zz-bad-model
+name: ZZ Bad Variant
+scope_class: core
+fingerprint: "sha1:0000000000000000000000000000000000000000"
+edition:
+  types: [standard]
+  designation: Flagship
+config:
+  coating: uv
+  size_mm: 999
+  weight_g: 999
+colorway:
+  application: stickerless
+  faces:
+    - { face: U, color_name: white, color_normalized: "#ffffff", material: vinyl_sticker }
+legality:
+  wca_status: legal
+rarity:
+  level: very_rare
+releases:
+  - region: CN
+    date: { value: "2001-01", precision: month, qualifier: exact }
+availability:
+  production_status: discontinued
+  discontinued: { value: "1999", precision: year, qualifier: exact }
+pricing:
+  msrp: { amount: 10, currency: USD }
+  observations:
+    - date: { value: "2022-01-01", precision: day, qualifier: exact }
+      kind: retail_list
+      price: { amount: 5000, currency: USD }
+      source: zz-bad-src-unpreserved
+relationships:
+  - type: rebrand_of
+    target: zz-bad-model
+    target_entity: model
+status: published
+attestations:
+  "/no/such/path":
+    confidence: probable
+    sources: [zz-bad-src-unpreserved]
+  "/config/coating":
+    confidence: confirmed
+    sources: [zz-bad-src-unpreserved]
+  "/colorway/faces/0/color_normalized":
+    confidence: confirmed
+    sources: [zz-bad-src-unpreserved]
+    derived_from: sampled_from_image
+  "/legality/wca_status":
+    confidence: disputed
+    disputed:
+      - { value: legal, sources: [zz-bad-src-unpreserved], confidence: reported }
+      - { value: legal, sources: [zz-bad-src-unpreserved], confidence: reported }
+  "/rarity/level":
+    confidence: reported
+    sources: [zz-bad-src-social]

@@ -1,0 +1,20 @@
+# source: thecubicle-cubicle-labs-wuque-m
+# Establishes what Cubicle Labs is as an organisation: it takes a puzzle made by another
+# manufacturer, magnetises and lubricates it, and sells the result under its own name.
+id: thecubicle-cubicle-labs-wuque-m
+entity: source
+kind: retailer
+title: "Cubicle Labs WuQue M – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cubicle-labs-wuque-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240224050734/https://www.thecubicle.com/products/cubicle-labs-wuque-m"
+excerpt: "The Cubicle Labs WuQue M is a premium-made 4x4 with a set of medium magnets installed in the pieces. The magnets inside the cube act as a positioning system that greatly enhances puzzle stability and compliance when turning quickly. The Cubicle Labs WuQue M is lubed with a combination of Cubicle silicone weight 4, Lubicle Silk, and DNM-37 on the pieces for a quick, smooth, and controllable cube. [...] Original puzzle made by QiYi MoFangGe. It features a Cubicle Labs logo with three orbitals on the white side."
+preservation_note: "Corrected 2026-09-01 (research/qc/gan-2026-09-01.md M1): an earlier revision of this record stated no web-archive capture of this URL was located, which was false — `npm run wayback -- list` returns ten distinct captures of this exact URL, 2019-09-30 through 2024-02-24. The most recent (2024-02-24) was fetched and confirmed to contain the excerpt above verbatim, including 'premium-made 4x4', 'QiYi MoFangGe', and 'three orbitals'. Now preserved by archive_url."
+accessed: "2026-09-01"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-01"
+reliability_note: "The product is not a GAN cube. It is cited only to establish what kind of organisation Cubicle Labs is, because no equivalent Cubicle-Labs-branded GAN 3x3 was found."
+status: sourced

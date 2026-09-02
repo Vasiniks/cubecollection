@@ -1,0 +1,21 @@
+# source: thecubicle-gan-356-x-v2
+# TheCubicle's listing for GAN356 X V2, explicitly calling it GAN's "newest update" to GAN356 X
+# and its "predecessor" — the succession evidence for X -> X V2, and confirmation it reuses the
+# GAN356 XS core.
+id: thecubicle-gan-356-x-v2
+entity: source
+kind: retailer
+title: "GAN 356 X V2 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-x-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200812040100/https://www.thecubicle.com/products/gan-356-x-v2"
+excerpt: "The GAN 356 X V2 is GAN's newest update to the famous GAN 356 X. This new magnetic 3x3 speed cube is outfitted with a matte exterior and shares the same dual adjustment core as GAN's most recent flagship, the GAN 356 XS. Slightly lighter than its predecessor, the GAN 356 X V2 is a fast and smooth cube with modern, easily adjustable settings."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain 'newest update to the famous GAN 356 X' and 'lighter than its predecessor' verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2, explicitly framing X V2 as an update to and successor of X, while noting it reuses XS's core."
+status: sourced

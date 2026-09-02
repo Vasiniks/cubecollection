@@ -1,0 +1,56 @@
+# model: gan-356-air
+# Pass 3 (model enumeration). The root design of the GAN356 family: the original 2015/2016
+# "Air" shell, GAN's flagship 2016-2019. Variants sold under this one design carry tier words
+# (Air, Air Advanced, Air Master, Air Grand Master, Air Ultimate, Air UM, Air Pro) that this
+# pass treats as configuration-level, not model-level, on the strength of
+# thecubicle-gan-356-air-um's own statement that "Air UM" is "a magnetized GAN356 Air Ultimate"
+# — i.e. the manufacturer/servicer's own language describes these as the same design with
+# different hardware installed at assembly, the textbook worked-decision-A case (DATA_MODEL
+# §4.2). See research/notes/models/gan-pass3.md.
+id: gan-356-air
+entity: model
+family_id: gan-356
+manufacturer_id: gan
+name: "GAN356 Air"
+aliases:
+  - "Gans 356 Air"
+  - "GAN 356 Air"
+scope_class: core
+generation:
+  label: "Air"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2016-08"
+  precision: month
+  qualifier: before
+description: |-
+  GAN's original numbered-line flagship shell, sold from at least August 2016 (GAN's own
+  earliest archived site capture already lists "GAN356 Air (New!)" as a current headline
+  product) through 2019, when the flagship position moved to the honeycomb "Air S" redesign and
+  then to GAN356 X. "Air Advanced", "Air Master", "Air Grand Master", "Air Ultimate" (Air U),
+  "Air UM" (magnetized Ultimate), and "Air Pro" are treated as variants of this one model:
+  TheCubicle's own product copy states directly that "GAN356 Air UM is a magnetized GAN356 Air
+  Ultimate," i.e. the same shell with magnets installed at assembly — the DATA_MODEL §4.2
+  worked-decision-A pattern (different core/magnet hardware chosen at assembly = variant, not
+  model).
+
+  Distinguished at model level from the later "GAN356 Air S" (honeycomb-piece redesign,
+  ~2018-2019) and from the bare "GAN356 S / S V2" line, which the 2016 capture already lists as
+  a separate simultaneous product.
+status: drafted
+attestations:
+  /announced:
+    confidence: confirmed
+    sources: [gancube-2016-earliest-capture]
+    note: "GAN's own site, tier 1, lists 'GAN356 Air (New!)' as a current headline product on 2016-08-08. 'Before' this date is a floor, not an estimate of true launch, which may be earlier (the family record dates GAN356 generally to circa 2015 on separate technology-history evidence)."
+  /generation/basis:
+    confidence: uncertain
+    note: "GAN gives this shell no generation ordinal of its own (unlike the later numbered Flagship Series); 'ordinal: 1' is this archive's own placement of it as the family's earliest identified design, not a manufacturer-declared number."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-2016-earliest-capture, thecubicle-gans-356-air]
+  /description:
+    confidence: probable
+    sources: [thecubicle-gan-356-air-um]
+    note: "'Air UM is a magnetized GAN356 Air Ultimate' is the specific evidence relied on for treating the whole Air/Advanced/Master/Grand Master/Ultimate/UM/Pro tier-word family as variants of one model rather than several models. No equivalent sentence was found for every tier word individually (e.g. 'Air Advanced' or 'Air Pro' specifically); the reasoning is extended to them by naming-pattern analogy, recorded at reduced confidence."

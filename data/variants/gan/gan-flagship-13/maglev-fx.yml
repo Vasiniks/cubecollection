@@ -1,0 +1,19 @@
+# variant: gan-flagship-13--maglev-fx
+# Pass 4. "GAN13 Maglev fx" — third of three Versions on GAN's own single GAN13 listing. No
+# source found this pass describes what "fx" changes beyond the name itself.
+id: gan-flagship-13--maglev-fx
+entity: variant
+model_id: gan-flagship-13
+name: "GAN13 Maglev fx"
+scope_class: core
+edition:
+  designation: "Maglev fx"
+  types: [standard]
+config:
+  maglev: maglev
+status: stub
+attestations:
+  /edition/designation:
+    confidence: confirmed
+    sources: [gancube-gan13-maglev-product]
+    note: "Sold as one of three Versions on GAN's own single product listing. What 'fx' specifically changes was not described in the portion of the page captured this pass."

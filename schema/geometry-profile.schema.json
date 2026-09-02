@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+      "description": "Immutable identifier."
+    },
+    "entity": {
+      "const": "geometry_profile"
+    },
+    "name": {
+      "type": "string"
+    },
+    "applies_to_models": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
+        "description": "Immutable identifier."
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "x-vocab": "record-status"
+    }
+  },
+  "required": [
+    "id",
+    "entity",
+    "name",
+    "status"
+  ],
+  "description": "Reserved. The schema exists so that models sharing a mechanism can one day reference one shell description. No records are created and no renderer is built in this phase.",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/geometry-profile.schema.json",
+  "title": "A reusable 3D shell description. RESERVED"
+}

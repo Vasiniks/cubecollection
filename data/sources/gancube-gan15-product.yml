@@ -1,0 +1,24 @@
+# source: gancube-gan15-product
+# GAN's own current product page for "GAN15". Cited for the "Versions" selector confirming
+# MagLev UV/Matte and a "NewBlack" coating tier are all variant-level options of ONE model
+# "GAN15", consistent with the pattern on GAN12/14/16.
+id: gancube-gan15-product
+entity: source
+kind: manufacturer_official
+title: "GAN15 | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan15-3x3-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819145104/https://www.gancube.com/products/gan15-3x3-speed-cube"
+excerpt: |-
+  "Versions" purchase selector on this one page: "Maglev_UV Coated", "Maglev_Matte Coated",
+  "Maglev_10 Years Grand Gift Set_UV Coated", "NewBlack_UV Coated" — four named options sold
+  from a single listing.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the Versions list verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for product structure."
+status: sourced

@@ -1,0 +1,20 @@
+# source: thecubicle-gan-356-m-e-3x3
+# TheCubicle's listing for GAN356 M E, the honeycomb-touchface, spring/elasticity (non-MagLev)
+# mainline tier sold in parallel with GAN356 MagLev from late 2023.
+id: thecubicle-gan-356-m-e-3x3
+entity: source
+kind: retailer
+title: "GAN 356 M E 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-m-e-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231205062240/https://www.thecubicle.com/products/gan-356-m-e-3x3"
+excerpt: "The GAN 356 M E 3x3 is a magnetic 3x3 with many features! It has a honeycomb pattern on the contact surfaces, 4 elasticity adjustments, 3 center travel adjustments, and a full-bright, matte finish. This is one of the best-value GAN 3x3s that has ever been released."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain this description verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "TheCubicle's own retail copy, tier 2. No explicit succession statement to an earlier GAN356 M is made; recorded as its own model given the distinct 'M E' naming and honeycomb-generation hardware description."
+status: sourced

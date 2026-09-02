@@ -1,0 +1,57 @@
+# family: gan-357
+# Pass 2 (family enumeration). A genuinely separate, early, apparently short-lived GAN 3x3
+# line, sold in parallel with GAN356 as of GAN's earliest archived site capture (August 2016)
+# and absent from every later capture of GAN's catalogue examined this pass. Recorded here
+# rather than silently folded into gan-356 because GAN's own 2016 site names and markets it
+# as its own product with its own marketing tagline, distinct from every 356 tagline on the
+# same page. See research/notes/models/gan-pass2.md.
+
+id: gan-357
+entity: family
+manufacturer_id: gan
+name: "GAN357"
+aliases:
+  - "GAN357U"
+introduced:
+  value: "2016-08"
+  precision: month
+  qualifier: before
+description: |-
+  A GAN 3x3 line sold alongside GAN356 as of GAN's earliest archived website capture
+  (2016-08-08): the site's own product navigation lists "GAN356Air (New!), GAN356sV2, GAN357U,
+  GAN357" as four separate products, and the same page's own marketing copy gives GAN357 its
+  own distinct tagline ("GAN357 Starts new Corner-Cutting era"), different in kind from the
+  356 taglines on the same page ("Lighter. Faster. Stronger." for Air; "Robust. Feel free." for
+  sV2). This is treated as evidence of a genuinely separate named product line, not a 356
+  sub-variant, under the same reasoning as worked decision B (RESEARCH_SPEC §4): a different
+  name given independent marketing copy by the manufacturer itself.
+
+  No capture of gancube.com's product catalogue after 2016 was found to include GAN357 or
+  GAN357U by name. A stale URL (gancube.com/gan357) still resolved with an HTTP 200 as late as
+  2022, but its page body, when fetched, contained only the site's generic navigation wrapper
+  with no GAN357-specific content and no "357" entry anywhere in that navigation's own product
+  listings — consistent with discontinuation well before 2022, though no source states an exact
+  discontinuation date, so `discontinued` is left unset rather than estimated.
+
+  Relationship to GAN356 (did 356 "succeed" 357, or did they simply run in parallel until 357
+  was dropped?) is not established by any source found this pass and is recorded as an open
+  question rather than a `successor_family_id`/`succeeds` claim.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: confirmed
+    sources: [gancube-2016-earliest-capture]
+    note: "GAN's own site, tier 1, directly lists the product as for sale on 2016-08-08. The qualifier 'before' with this date is a floor, not an estimate of the true introduction date, which may be earlier."
+  /aliases:
+    confidence: confirmed
+    sources: [gancube-2016-earliest-capture]
+  /positioning:
+    confidence: unknown
+    note: "Researched and not found. GAN's 2016 site treats GAN357 as a headline product alongside the then-new GAN356 Air, which is weak circumstantial evidence it may have been positioned competitively (flagship-adjacent) rather than budget, but no source states a positioning and this is not asserted."
+  /discontinued:
+    confidence: unknown
+    note: "Researched and not found. No source states when GAN357 was discontinued. It is absent from every gancube.com catalogue capture located after 2016; a 2022 capture of a URL bearing its old slug shows no unique content, consistent with (but not proof of) an earlier discontinuation. See description."
+  /successor_family_id:
+    confidence: unknown
+    note: "Not asserted. No source states that GAN356 succeeded or absorbed GAN357; both existed simultaneously in 2016 and GAN357 later disappeared from the catalogue with no announced reason found. Recorded as an open question in description rather than an unevidenced relationship."

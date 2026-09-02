@@ -1,0 +1,30 @@
+# source: gancube-gan-v100-maglev-product
+# GAN's own current product page for "GAN v100 Maglev". A single-version listing (UV Coated
+# only) — narrower evidence than the numbered flagship pages, since GAN V100 Leap is sold at a
+# separate URL rather than as an option on this same page. Used for GAN V100's own existence,
+# naming, and the model-level boundary discussion in gan-v100-maglev.yml (which records the
+# resulting uncertainty explicitly rather than treating this page as equivalent proof to
+# GAN12/14/16's shared-listing evidence).
+id: gancube-gan-v100-maglev-product
+entity: source
+kind: manufacturer_official
+title: "GAN v100 Maglev | GANCUBE"
+publisher: "GANCUBE"
+url: "https://www.gancube.com/products/gan-v100-3x3-maglev-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251113024805/https://www.gancube.com/products/gan-v100-3x3-maglev-cube"
+excerpt: |-
+  Product name: "GAN v100 Maglev". "Versions" purchase selector on this page: "UV Coated" only
+  — no Leap or non-Maglev option is offered from this specific listing.
+  Marketing copy: "BORN A PIONEER... Omni-Directional Positioning... MAGLEV LEVITATED LIFTED
+  LEVELED... Omni-Support Spherical Orbit... Ultralight Design... Numerical Tuning... Pioneer
+  Speeding Design... Black Inner Surface." Box contents: "GAN V100 Maglev, GAN Box, User Manual
+  (Including online tutorial), Tuning Tools."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the product name, the single-item Versions selector, and the box-contents list verbatim."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "GAN's own product page, tier 1 for product structure. Notably this listing offers only ONE version (UV Coated), unlike GAN12/14/15/16's own pages which bundle several tier names into one listing — this asymmetry is exactly why V100's Leap/MagLev boundary is recorded at reduced confidence rather than treated as equivalently well-evidenced."
+status: sourced

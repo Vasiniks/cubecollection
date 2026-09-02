@@ -1,0 +1,22 @@
+# release-channels
+# Controlled vocabulary. validate.mjs injects these values as the enum for every
+# schema property annotated x-vocab: release-channels, so the schema and this file cannot drift.
+
+id: release-channels
+description: "How a release reached buyers in a region."
+values:
+  - value: manufacturer_direct
+    label: "Manufacturer direct"
+    description: "Sold by the manufacturer."
+  - value: domestic_retail
+    label: "Domestic retail"
+    description: "Sold through retailers in the manufacturer's home market."
+  - value: international_retail
+    label: "International retail"
+    description: "Sold through retailers outside the home market."
+  - value: promotional
+    label: "Promotional"
+    description: "Distributed rather than sold."
+  - value: unknown
+    label: "Unknown"
+    description: "Researched and not established."
