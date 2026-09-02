@@ -1,0 +1,31 @@
+# source: rubiks-history-2024
+# Rubik's own official "History" page (rubiks.com/history), captured 2024-07-02 — its 50th
+# anniversary year. Tier 1, first-party: the brand's own timeline of its own history, including
+# the 2021 Spin Master acquisition stated on the brand's own site.
+id: rubiks-history-2024
+entity: source
+kind: manufacturer_official
+title: "50 Years of Rubik's Cube | History — The Official Rubik's Cube"
+publisher: "Rubik's / Spin Master Ltd."
+url: "https://www.rubiks.com/history"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240702155346id_/https://www.rubiks.com/history"
+excerpt: |-
+  "1974 Ernő Rubik, a Hungarian architecture professor, creates a prototype of a
+  three-dimensional cube. ... 1975 Ernő Rubik patents the mechanism used in his 3D cube, now
+  known as the Magic Cube. ... 1980 The Magic Cube is renamed 'Rubik's Cube', and the world is
+  never the same again! ... 2021 Rubik's is acquired by the Canadian children's entertainment
+  company Spin Master. ... © 2024 Spin Master Ltd. All rights reserved."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party brand history, published on the brand's own 50th
+  anniversary in its own words. Distinguishes three separate dated events relevant to /founded:
+  the 1974 invention/prototype in Hungary, the 1980 renaming of the product to 'Rubik's Cube',
+  and the 2021 Spin Master acquisition (corroborating spinmaster-rubiks-acquisition-2021 and
+  licenseglobal-spinmaster-rubiks independently, in the brand's own words). Footer copyright
+  '© 2024 Spin Master Ltd.' further corroborates Spin Master's ownership of the site/brand as
+  of the capture date."
+status: sourced

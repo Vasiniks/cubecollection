@@ -1,0 +1,37 @@
+# source: companies-house-rubiks-brand-ltd
+# UK government company registry record for Rubik's Brand Limited. Tier override to 1: this is
+# a primary legal document of incorporation and registered office, not a press report about one
+# — analogous in evidentiary weight to a patent record, for which the vocabulary already grants
+# tier 1. No `kind: government_registry` exists in vocab/source-kinds.yml, so `press` is used as
+# the closest available kind and the tier is explicitly overridden with this note per
+# RESEARCH_SPEC §3.1.
+id: companies-house-rubiks-brand-ltd
+entity: source
+kind: press
+tier: 1
+title: "RUBIK'S BRAND LIMITED — overview (company number 08431416)"
+publisher: "Companies House (UK Government)"
+url: "https://find-and-update.company-information.service.gov.uk/company/08431416"
+preservation_method: excerpt
+excerpt: |-
+  "RUBIK'S BRAND LIMITED - Company number 08431416 ... Registered office address Meridian
+  House, Fieldhouse Lane, Marlow, England, SL7 1TB ... Incorporation date 6 March 2013 ...
+  Company status Active ... Company type Private limited Company ... Nature of business
+  (SIC) 74100 - Specialised design activities."
+preservation_note: "No archive.org capture of this exact Companies House record page was sought
+  this pass; Companies House records are live government data that update in place (e.g.
+  officer changes), so the excerpt captures the identity facts (legal name, incorporation date,
+  registered country, company number) that do not change retroactively."
+accessed: "2026-09-02"
+language: en
+region: GB
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Primary government company-registration record, not press reporting despite
+  the `press` kind label (no closer vocabulary value exists). Establishes the UK legal
+  incorporation of the entity 'Rubik's Brand Limited' and its registered office in England, and
+  its incorporation date of 2013-03-06 — this is the founding of the *current corporate entity*
+  registered as owner of the Rubik's brand, not the founding of the brand itself (1980, per
+  rubiks-history-2024) or the invention of the product (1974, per the same source). Three
+  distinct events; see the manufacturer record's disputed /founded attestation."
+status: sourced

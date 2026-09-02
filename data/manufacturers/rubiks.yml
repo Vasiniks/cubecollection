@@ -1,0 +1,117 @@
+# manufacturer: rubiks
+# Pass 1 (manufacturer register). A licensed toy brand, not a Chinese speedcube-focused
+# manufacturer like the rest of this pass — the eponymous puzzle and the only 3x3 brand in this
+# archive whose corporate ownership changed hands within the 2016-2026 window. See
+# research/notes/manufacturers/global-pass0.md for the broader method this pass used.
+
+id: rubiks
+entity: manufacturer
+name: "Rubik's"
+kind: manufacturer
+country: GB
+founded:
+  value: "1980"
+  precision: year
+  qualifier: circa
+  note: "Multi-candidate, not a single clean date — see the /founded attestation and /notes.
+    1980 is when the product now called 'Rubik's Cube' was renamed from 'Magic Cube', per the
+    brand's own history page. Three other dated events for this brand's history are recorded
+    rather than picked from silently: 1974 (Ernő Rubik's prototype, Hungary), 1975 (the
+    mechanism patent), and 2013-03-06 (incorporation of the current legal entity, Rubik's Brand
+    Limited, in England)."
+aliases:
+  - "Rubik's Cube"
+  - "Rubiks"
+  - "Rubik's Brand Ltd"
+  - "Rubik's Brand Limited"
+  - "RBL"
+website: "https://www.rubiks.com/"
+notes: |-
+  **What this record represents.** This is the brand/rights-holder entity that puts 3x3s into
+  the world under the "Rubik's" name in the 2016-2026 window, not a claim about who physically
+  manufactures the cubes. Rubik's, like most toy brands, licenses production out; **the entity
+  or entities that actually manufacture Rubik's-branded cubes during this period were not
+  established by any source reviewed this pass and are recorded as `unknown`** rather than
+  assumed. This matters for this archive specifically because a Rubik's-branded cube's
+  manufacturing identity may differ from its brand identity, and conflating the two would
+  misattribute the product.
+
+  **Corporate history, three distinct events.** Rubik's own 50th-anniversary history page
+  (rubiks-history-2024, tier 1, first-party) lays out a timeline in its own words: Ernő Rubik, a
+  Hungarian architecture professor, built a prototype 3D cube in 1974; he patented the mechanism
+  in 1975; the product (called "Magic Cube" in Hungary) was renamed "Rubik's Cube" in 1980. None
+  of these are the founding of a company in the sense this schema's `founded` field is used for
+  elsewhere in this register (a manufacturer's own incorporation) — they are the invention and
+  branding of the *product*, which for most of this record's history (1980s-2013) is
+  documented, per general web search summary only and not independently verified this pass, as
+  having been managed by Seven Towns Ltd and the founding Rubik/Kremer families rather than by
+  the entity that exists today. UK Companies House (companies-house-rubiks-brand-ltd, tier 1
+  government registry) records the current legal entity, "Rubik's Brand Limited," as
+  incorporated 2013-03-06, registered office in Marlow, England — this is the closest thing to
+  a sourced company-founding date for the entity currently operating the brand, and is why
+  `country: GB` is recorded (the brand's current legal domicile), distinct from Hungary (the
+  product's country of invention).
+
+  **Ownership change inside the archive's window.** Spin Master Corp. (Toronto, Canada)
+  announced completion of its acquisition of Rubik's Brand Ltd effective 2021-01-05
+  (spinmaster-rubiks-acquisition-2021, tier 1 press release), corroborated independently by
+  trade press (licenseglobal-spinmaster-rubiks, tier 2) and by Rubik's own site, which by 2022
+  listed "SPIN MASTER" as a top-level item in its own "About" navigation
+  (rubiks-com-2022, tier 1) and by 2024 carried a "© 2024 Spin Master Ltd." footer
+  (rubiks-history-2024). This is a genuine acquisition inside the 2016-2026 scope window, not a
+  naming ambiguity: Rubik's Brand Limited continues to exist as the registered legal entity
+  (per Companies House, still active), now owned by Spin Master rather than by the founding
+  families. **No `spinmaster` manufacturer record is created here**, because Spin Master does
+  not itself put 3x3 cubes into the world under its own name — the products remain sold as
+  "Rubik's" — and DATA_MODEL's `sub_brand`/`parent_id` machinery models a brand operating under
+  a cube-brand parent, not a corporate holding-company relationship. The acquisition is
+  documented here in prose rather than structurally, the same limitation already noted for the
+  MoYu/YJ relationship in data/manufacturers/moyu.yml (see also finding F2 in
+  docs/pilot-audit.md re: no manufacturer-to-manufacturer relationship field existing yet).
+
+  **In-scope product.** Rubik's own site (rubiks-com-2022) confirms a magnetic 3x3 speed cube
+  among its current products ("EXCLUSIVE: The New Rubik's Speed Cube – Engineered for Speed With
+  Magnets"), which is why this brand is in scope for this archive at all — most of Rubik's
+  catalogue (the classic non-magnetic retail cube, Rubik's Snake, Rubik's Magic, etc.) is
+  outside this archive's WCA-legal-speedcube focus, but the speed-cube line is squarely in
+  scope and belongs to pass 2 for family/model enumeration.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [rubiks-history-2024, rubiks-com-2022]
+    note: "Tier 1, first-party. The brand's own site documents itself as the entity selling 3x3
+      cube products (including a magnetic speedcube) under the Rubik's name; sufficient alone
+      per the confidence table."
+  /country:
+    confidence: confirmed
+    sources: [companies-house-rubiks-brand-ltd]
+    note: "UK government company registry, tier 1 (overridden from the default press tier — see
+      that source's reliability_note), naming Rubik's Brand Limited's registered office as
+      Marlow, England. Recorded as the brand's current legal domicile, distinct from Hungary
+      (the product's country of invention) which is documented in /notes rather than in this
+      field."
+  /founded:
+    confidence: probable
+    sources: [rubiks-history-2024]
+    note: "Not a genuine multi-source dispute (rule 11 requires distinct sources per candidate;
+      three of the four candidate events below come from this one source), so recorded as a
+      single adjudicated value rather than forced into the disputed structure. 1980 (renaming
+      of the product to 'Rubik's Cube') is used as the headline value because it is the closest
+      analogue to 'founded' used elsewhere in this register. Three other dated events for this
+      brand's history are preserved in /notes rather than silently dropped: 1974 (Ernő Rubik's
+      prototype, Hungary), 1975 (the mechanism patent, both per rubiks-history-2024), and
+      2013-03-06 (incorporation of the current legal entity, Rubik's Brand Limited, England,
+      per companies-house-rubiks-brand-ltd, tier 1, confirmed independently as a fact in its own
+      right — see that source and /notes)."
+  /aliases:
+    confidence: probable
+    sources: [rubiks-com-2022, companies-house-rubiks-brand-ltd]
+  /website:
+    confidence: confirmed
+    sources: [rubiks-com-2022]
+  /notes:
+    confidence: probable
+    sources: [rubiks-history-2024, rubiks-com-2022, companies-house-rubiks-brand-ltd,
+      spinmaster-rubiks-acquisition-2021, licenseglobal-spinmaster-rubiks]
