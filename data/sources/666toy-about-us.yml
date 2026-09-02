@@ -1,0 +1,26 @@
+# source: 666toy-about-us
+# YuXin's own official "About Us" page (666toy.com). Tier 1, first-party.
+id: 666toy-about-us
+entity: source
+kind: manufacturer_official
+title: "About Us - Yuxin"
+publisher: "Yu Xin Science And Educational Toys Co., Ltd."
+url: "https://www.666toy.com/about-us/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260422173958/https://www.666toy.com/about-us/"
+excerpt: |-
+  "Yu Xin Science And Educational Toys Co., Ltd... Founded 1998... one of the earliest
+  enterprises in China to produce Magic Cube." Location given as Fengxiang Street, Chenghai
+  District, Shantou, Guangdong, China. States the company operates six major brands: Yuxin,
+  Yizhi Play Palace, Zhisheng, Sudie Cup, Qiuya, and Quan Brain Doctor.
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1 for YuXin's own corporate facts. The 'six major brands' list mixes a
+  cube brand (Yuxin) with what read as other toy/product-category lines (Sudie Cup — likely a
+  stacking-cup line, given the industry pattern already seen at MoYu and YJ) rather than
+  further speedcube brands; none beyond 'Yuxin' itself is investigated in this pass, since none
+  appeared in the retailer sweep behind research/staging/manufacturers/global-pass0-candidates.yml."
+status: sourced

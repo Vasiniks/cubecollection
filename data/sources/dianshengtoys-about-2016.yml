@@ -1,0 +1,28 @@
+# source: dianshengtoys-about-2016
+# DianSheng's own English "About Us" page (dianshengtoys.com), captured 2016. Tier 1,
+# first-party — states an explicit founding year distinct from the site's copyright footer.
+id: dianshengtoys-about-2016
+entity: source
+kind: manufacturer_official
+title: "Dian Sheng Cube | Point Sheng Company Profile"
+publisher: "Shantou Chenghai DianSheng Toys Co., Ltd."
+url: "http://dianshengtoys.com/en/about.php"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20160826141653id_/http://dianshengtoys.com/en/about.php"
+excerpt: |-
+  "Shantou Chenghai DianSheng Toys Co., Ltd. is a set of R & D, manufacturing Magic Cube and
+  sales in one of the toys company. The company was established in 1997, after years of
+  development... we get the good reputation in the world market with Magic Cube." Chinese
+  parallel text: "点盛塑料玩具有限公司是玩具魔方行业内的精英". Footer: "Copyright © 2009 DIAN
+  SHENG PLASTIC TOY C,Ltd", address "Guangdong Province Shantou City Chenghai District Lianxia
+  Town Duting Industry Zone".
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party. States an explicit 1997 founding year in prose, distinct
+  from — and earlier than — the same page's own 2009 copyright-footer year; the 1997 statement
+  is preferred as the founding date (a direct founding claim outranks a copyright range, per the
+  same reasoning applied to GAN's footer-vs-statement distinction in gancube-2016-earliest-capture)."
+status: sourced

@@ -1,0 +1,34 @@
+# source: cubingchina-about-mf8
+# Cubing China's own "About" page. Cubing China's founders name MF8 and its founder directly as
+# their own predecessor organisation — first-party for Cubing China, and the strongest
+# available primary-adjacent source for MF8's own founding history located this pass.
+id: cubingchina-about-mf8
+entity: source
+kind: manufacturer_official
+title: "About - Cubing China"
+publisher: "Cubing China"
+url: "https://cubing.com/about.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230611085014/https://cubing.com/about.html"
+excerpt: |-
+  "Cubing China (cubingchina.com) is established by Mr. Fok (the founder of MF8), Baiqiang
+  Dong (WCA Results Team member), and Ming Zheng (WCA Delegate for China). The predecessor of
+  Cubing China was the MF8 cubing forum and its online competition registration system." States
+  MF8 (bbs.mf8-china.com) was founded in January 2004 as "the earliest Chinese website
+  specializing in Rubik's Cubes and other puzzles" and became "the largest and most
+  professional cubing forum in the Chinese cubing community."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "First-party for Cubing China's own founding narrative, in which it names MF8
+  and Mr. Fok as its direct predecessor and founder — tier 1 for that organisational-history
+  claim. It documents MF8's origin as a cubing forum/community rather than a puzzle
+  manufacturing company, which is a distinct but related fact from MF8's later identity selling
+  named puzzle products (see DaYan's own site listing 'DaYan+MF8 4x4' as a joint product,
+  dayancube-official-2013). This source does not itself confirm MF8 the forum and MF8 the
+  puzzle-selling brand are the same organisation, only that they share a name and a founder
+  figure; recorded as `probable` rather than `confirmed` on data/manufacturers/mf8.yml
+  accordingly."
+status: sourced

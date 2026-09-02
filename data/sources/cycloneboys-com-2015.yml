@@ -1,0 +1,32 @@
+# source: cycloneboys-com-2015
+# Cyclone Boys' official storefront domain (cycloneboys.com), captured 2015. Tier 1,
+# first-party — and the source of an important alias finding: "MoYou" used interchangeably
+# with "cycloneboys" on the same store.
+id: cycloneboys-com-2015
+entity: source
+kind: manufacturer_official
+title: "cycloneboys.com storefront, 2015 capture"
+publisher: "Cyclone Boys"
+url: "http://www.cycloneboys.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150102015352id_/http://www.cycloneboys.com:80/"
+excerpt: |-
+  Page title: "cyclone boys,cyclone boys 2x2,MoYou 3x3,MoYou speeding 3x3 cube,moyou 4x4
+  black". Product listings consistently pair the two names: "MoYou (cycloneboys) Speeding cube
+  5.6cm 3x3x3 White", "MoYou(cycloneboys) Speeding cube 5.6cm 3x3x3 stickerless", "moyou (cyclone
+  boys) cube 3x3 5.6cm Stickerless(6pcs)".
+preservation_note: "A later capture of the same domain (2016-01-03) shows the site defaced by a
+  hacker group ('Hacked B1ooD_Sl4y3r'), so this earlier 2015 capture was used instead."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party storefront. Establishes 'MoYou' as a name used
+  interchangeably with 'Cyclone Boys' on the brand's own official domain — recorded as an alias.
+  This is NOT the same brand as 'MoYu' (data/manufacturers/moyu.yml): the spellings differ
+  ('MoYou' vs 'MoYu') and the two are otherwise unrelated companies. Flagged explicitly in
+  data/manufacturers/cyclone-boys.yml notes because the near-identical spelling is exactly the
+  kind of confusion QC rule 29 (alias collision) exists to catch, and a future researcher should
+  not merge them on the strength of the name alone."
+status: sourced

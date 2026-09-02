@@ -1,0 +1,27 @@
+# source: spinmaster-rubiks-acquisition-2021
+# Spin Master's own press release announcing completion of its acquisition of Rubik's Brand
+# Ltd. Tier 1, first-party — establishes the ownership change central to this record.
+id: spinmaster-rubiks-acquisition-2021
+entity: source
+kind: manufacturer_official
+title: "Spin Master Completes Acquisition of Rubik's Cube®"
+publisher: "Spin Master Corp."
+url: "https://spinmaster.mediaroom.com/2021-01-05-Spin-Master-Completes-Acquisition-of-Rubiks-Cube-R"
+preservation_method: excerpt
+excerpt: |-
+  "TORONTO, Jan. 5, 2021 ... Spin Master Corp. ... today announced that it has completed the
+  acquisition of Rubik's Brand Ltd, owner of the world-famous Rubik's Cube®."
+preservation_note: "No archive.org capture of this exact mediaroom.com URL was found in this
+  pass (CDX returned no captures). Preserved as a verbatim excerpt from a direct fetch of the
+  live page; the sentence quoted carries the claim (transaction, date, and both companies named)
+  standing alone, satisfying the excerpt requirement."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party corporate announcement, naming both the acquirer (Spin
+  Master Corp., Toronto) and the acquired entity (Rubik's Brand Ltd) and the completion date.
+  Corroborated by contemporaneous trade press (licenseglobal-spinmaster-rubiks) reporting the
+  same transaction."
+status: sourced

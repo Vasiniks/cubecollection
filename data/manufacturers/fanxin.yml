@@ -1,0 +1,45 @@
+# manufacturer: fanxin
+# Pass 1 (manufacturer register). Chinese manufacturer of budget puzzles and novelty shape
+# mods, seen at SpeedCubeShop in the pass-0 sweep.
+
+id: fanxin
+entity: manufacturer
+name: "FanXin"
+kind: manufacturer
+country: CN
+aliases:
+  - "Fanxin"
+  - "FanXin Toys"
+notes: |-
+  **Identity.** TheCubicle's own product spec table for the FanXin 3x3 gives "Manufacturer:
+  FanXin" (thecubicle-fanxin-3x3) — tier 2 retailer, the only source located this pass directly
+  naming FanXin as a manufacturer. No independent FanXin-branded domain, About page, community
+  wiki article, or company-registration record was located in the time available this pass —
+  general web search returns only retailer listings (TheCubicle, SpeedCubeShop, ZiiCube,
+  MasKeCubos, China Magic Cube) and no first-party source. This is the weakest-evidenced of the
+  14 strong candidates this pass was asked to canonicalise, recorded at `drafted` rather than
+  `sourced` accordingly. A general web search summary (not independently verified or cited)
+  suggested the brand emerged around 2015 in Guangzhou, specialising in non-WCA novelty and
+  shape-mod puzzles rather than competitive speedcubes — recorded here as an unconfirmed lead
+  for a future pass, not as a sourced fact.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-3x3]
+    note: "Single tier 2 retailer source. No independent corroboration located this pass."
+  /country:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-3x3]
+    note: "Inferred only from FanXin being sold alongside, and manufactured in the same style
+      as, contemporary Chinese puzzle brands; no direct statement of country was found."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-3x3]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no FanXin-branded domain was located this pass."
+  /notes:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-3x3]

@@ -1,0 +1,62 @@
+# manufacturer: qj
+# Pass 1 (manufacturer register). An older Chinese puzzle manufacturer, seen at SpeedCubeShop
+# in the pass-0 sweep (slug "qj-educational"), distinct from QiYi despite the similar
+# initialism.
+
+id: qj
+entity: manufacturer
+name: "QJ"
+kind: manufacturer
+country: CN
+founded:
+  value: "2003"
+  precision: year
+  qualifier: circa
+  note: "QJ's own 2012-2013 site states 'we have been doing magic cubes for ten years', which
+    places founding activity at approximately 2002-2003 — a relative statement, not a stated
+    year, hence circa."
+aliases:
+  - "QJ Cube"
+  - "QJ Puzzle"
+  - "QJ Magic Cube"
+notes: |-
+  **Identity and founding.** QJ's own official site states: "QJ toy factory is located in
+  Guangdong province. We have been doing magic cubes for ten years... we build our own mould,
+  design department, injection and packaging workshop" (qjcube-official-2013) — tier 1,
+  first-party.
+
+  **Distinct from QiYi.** "QJ" and "QiYi" are separate companies despite both being Guangdong
+  puzzle manufacturers with overlapping initials; TheCubicle's own site maintains separate
+  manufacturer filters for "QJ" and "QiYi MoFangGe" (general web search), and QJ's own site
+  content, product range (classical NxN cubes, Pyraminx, Megaminx, Tetraminx, SSQ, Skewb,
+  timers) and self-description are independent of QiYi's own "About Us" page and its "family of
+  brands" (see data/manufacturers/qiyi.yml). Not merged; flagged explicitly given the naming
+  similarity, the same caution already applied to "MoYou"/"MoYu" at data/manufacturers/cyclone-
+  boys.yml.
+
+  **Current status uncertain.** No capture of qjcube.com after 2013 was found in the CDX index
+  checked this pass; `website` is left `unknown` rather than citing a domain whose current
+  operation was not verified. Whether QJ is still active within the 2016-2026 scope window is
+  an open question for pass 2 (family/model enumeration) to establish from product evidence.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [qjcube-official-2013]
+  /country:
+    confidence: confirmed
+    sources: [qjcube-official-2013]
+  /founded:
+    confidence: probable
+    sources: [qjcube-official-2013]
+  /aliases:
+    confidence: probable
+    sources: [qjcube-official-2013]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no capture of qjcube.com after 2013 was located; current
+      operational status not established this pass."
+  /notes:
+    confidence: probable
+    sources: [qjcube-official-2013]

@@ -1,0 +1,94 @@
+# manufacturer: qiyi
+# Pass 1 (manufacturer register). One of the largest Chinese speedcube manufacturers of the
+# period. TheCubicle's own slug pairs "qiyi" and "qiyi-mofangge", itself alias evidence.
+
+id: qiyi
+entity: manufacturer
+name: "QiYi"
+native_name: "奇艺"
+kind: manufacturer
+country: CN
+founded:
+  value: "1998"
+  precision: year
+  qualifier: exact
+  note: "1998 as a general plastic toy manufacturer; QiYi's own site states it 'officially
+    pivoted into speed cube development and launched its dedicated cube brand' in 2008. Both
+    years are QiYi's own stated history, not in tension — recorded as the company's founding,
+    with the 2008 cube pivot noted in `notes` rather than as a second founding date."
+aliases:
+  - "QiYi MoFangGe"
+  - "QiYi MoFangge"
+  - "QY Cube"
+  - "QY Toys"
+  - "MoFangGe"
+  - "MoFangge"
+  - "魔方格"
+  - "GuangDong QiYi MoFangGe Science & Technology Industrial Co., Ltd."
+  - "Guangdong QiYi MoFangGe Science and Technology Industrial Co., Ltd."
+website: "https://theqiyi.com/"
+notes: |-
+  **Identity and founding.** QiYi's own About page states it was "founded" in 1998 as a plastic
+  toy manufacturer in Shantou's Chenghai District, Guangdong, and "officially pivoted into
+  speed cube development and launched its dedicated cube brand" in 2008 (theqiyi-about-us) —
+  tier 1, first-party. The Speedsolving wiki gives the native names "奇艺" (QiYi) and "魔方格"
+  (MoFangGe) (speedsolving-wiki-qiyi) — tier 4, corroborating only; QiYi's own site uses only
+  the English/romanised forms.
+
+  **QiYi's own stated "family of brands".** theqiyi-about-us lists, in QiYi's own words: "QY
+  Cube" (main speed cube line), "QY Toys" (heritage entry-level line), "MoFangGe" ("the original
+  brand identity that still appears on many classic designs, representing the roots of QIYI in
+  early cube development"), and "X-Man Design" ("a premium sub brand created in close
+  collaboration with an independent designer known as X-Man"). QY Cube, QY Toys, and MoFangGe
+  read as QiYi's own internal product-line names rather than separately identifiable companies —
+  no independent legal entity, founder, or domain was found for any of the three, and MoFangGe
+  in particular is described in the same source as QiYi's own "original brand identity", i.e.
+  an earlier name for QiYi itself rather than a distinct organisation. They are recorded here as
+  aliases rather than as separate manufacturer or sub_brand records. **X-Man Design is treated
+  differently** — see data/manufacturers/x-man-design.yml — because QiYi's own page names an
+  independent designer behind it and a name-carrying flagship line (Tornado) distinct from
+  QiYi's own numbered range.
+
+  **An earlier QiYi storefront (qiyicube.com, captured 2018)** carried the page title "QiYi Cube
+  – The Valk, MoFangGe, X-Man Design Speed Cube" and sold Valk-branded 3x3s directly
+  (qiyicube-storefront-2018). "Valk" does not appear in the 2026 About page's "family of
+  brands" list. This is recorded as a lead, not resolved further this pass: Valk is treated as a
+  QiYi product line (per the pass-0 brief and Mats Valk's well-documented collaboration with
+  QiYi), and whether that line is still active, was folded into another line, or lapsed is a
+  pass-2/family-enumeration question, not a manufacturer-identity one.
+
+  **Domain correction.** An earlier pass-0 domain sweep recorded `qiyicube.com` as a miss
+  ("domains_guessed_no_hit"). It in fact has multiple captures back to 2018 — a false negative,
+  corrected in the backlog file per the brief's standing warning about that sweep. `qy-toys.com`
+  was also checked this pass and found to be an unrelated, apparently hijacked domain (spam
+  content, no QiYi connection) despite the superficially matching name — not recorded as an
+  alias or a lead.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [theqiyi-about-us, qiyicube-storefront-2018]
+    note: "QiYi's own site, in its own first-person corporate voice, describes designing,
+      engineering, and manufacturing its own cube products — tier 1, sufficient alone."
+  /native_name:
+    confidence: probable
+    sources: [speedsolving-wiki-qiyi]
+    note: "Tier 4 only; no tier 1-2 source located this pass gives the Chinese characters
+      directly, though theqiyi-about-us's own English brand name and origin story are
+      consistent with it."
+  /country:
+    confidence: confirmed
+    sources: [theqiyi-about-us]
+  /founded:
+    confidence: confirmed
+    sources: [theqiyi-about-us]
+  /aliases:
+    confidence: probable
+    sources: [theqiyi-about-us, qiyicube-storefront-2018, speedsolving-wiki-qiyi]
+  /website:
+    confidence: confirmed
+    sources: [theqiyi-about-us]
+  /notes:
+    confidence: probable
+    sources: [theqiyi-about-us, qiyicube-storefront-2018, speedsolving-wiki-qiyi]

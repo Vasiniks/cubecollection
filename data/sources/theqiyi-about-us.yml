@@ -1,0 +1,37 @@
+# source: theqiyi-about-us
+# QiYi's own official "About Us" page (theqiyi.com). Tier 1, first-party — founding, structure,
+# and, critically, its own stated "family of brands" including X-Man Design as a sub brand.
+id: theqiyi-about-us
+entity: source
+kind: manufacturer_official
+title: "About Us - QiYi"
+publisher: "QIYI"
+url: "https://theqiyi.com/about-us.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260902211811/https://theqiyi.com/about-us.html"
+excerpt: |-
+  "Global leader in speed cubes and twisty puzzles since 1998 ... From our home in the Chenghai
+  District of Shantou, Guangdong Province, we design, engineer and produce puzzles...". "1998
+  Founded". "The journey of QIYI began in 1998, when the company started as a plastic toy
+  manufacturer in Shantou... In 2008 QIYI officially pivoted into speed cube development and
+  launched its dedicated cube brand." Section "Our family of brands": "While the global brand
+  name is QIYI, our product universe includes several sub lines... QY Cube The main speed cube
+  line... QY Toys Our heritage puzzle line... MoFangGe The original brand identity that still
+  appears on many classic designs, representing the roots of QIYI in early cube development.
+  X-Man Design A premium sub brand created in close collaboration with an independent designer
+  known as X-Man. This line includes some of our most advanced competition hardware, especially
+  the Tornado series." Elsewhere: "the X-Man Tornado series used by top level competitors" and
+  "The Tornado line of 3x3 flagships... represent a deep partnership between competition
+  experience and engineering execution" — both treating Tornado as a product line within X-Man
+  Design, not a separate brand.
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1 for QiYi's own corporate facts and for which sub-lines it names as its
+  own — including the explicit 'sub brand' framing of X-Man Design. Superlative language
+  elsewhere on the page ('global leader', 'most advanced competition hardware') is marketing
+  copy and tier 4 for any comparative claim, per RESEARCH_SPEC 3.3; not relied on here for
+  anything beyond the structural/historical statements quoted."
+status: sourced

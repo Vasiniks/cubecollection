@@ -1,0 +1,34 @@
+# source: speedsolving-wiki-moyu
+# Speedsolving.com community wiki article on MoYu. Tier 4 (unattributed/community wiki) —
+# corroborates only. Used for the MoYu/YJ (Yongjun) origin narrative and sub-brand list, which
+# no tier 1-2 source located this pass states directly.
+id: speedsolving-wiki-moyu
+entity: source
+kind: wiki
+title: "MoYu — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/MoYu"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250829124920/https://www.speedsolving.com/wiki/index.php/MoYu"
+excerpt: |-
+  States MoYu "was created around 2012 as a platform for external designers to provide designs
+  to YJ for production, marketing, etc.", i.e. began as a YongJun (YJ) sub-brand, and "parted
+  ways [from YJ] by 2019 at the latest, although an exact date is unconfirmed", after which the
+  two operate as separate entities with different factories. States the brand name combines
+  "Mo" (magic, as Rubik's Cubes are called Magic Cubes in China) and "Yu" (region/land), and
+  that the marking "魔域文化" ("MoYu Culture") appears on cubes. Lists sub-brands/designer
+  labels: MoFang JiaoShi ("Cubing Classroom", "the most successful MoYu sub-brand"), Cong's
+  Design (Fucong Fei), GuoGuan (Guoquan Zhang), MoHuan ShouSu (Haixu Zhang, who later founded
+  the VIN brand), SenHuan, MoJue, YanCheng, MoYu Blocks. States website moyucube.com, years
+  active "2013-present".
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited wiki with no named author or citation trail for the
+  YJ-origin claim specifically. Corroborates but does not alone establish the MoYu/YJ
+  relationship or founding date; recorded as `reported`/`uncertain` accordingly on the citing
+  records. Independently useful because it names several long-tail candidates already carried
+  in research/staging/manufacturers/global-pass0-candidates.yml (MoHuanShouSu, SenHuan) as
+  MoYu-affiliated designer brands rather than unrelated companies."
+status: sourced

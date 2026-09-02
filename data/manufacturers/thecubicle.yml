@@ -20,6 +20,10 @@ aliases:
   - "Cubicle Enterprises LLC"
   - "Cubicle Pro Shop"
   - "Cubicle Custom"
+  - "FZ"
+  - "Mystic"
+  - "Angstrom"
+  - "Angstrom Research"
 website: "https://www.thecubicle.com/"
 notes: |-
   **Legal identity.** TheCubicle's own About page: "TheCubicle.com is owned and operated by
@@ -62,6 +66,32 @@ notes: |-
   PiCube by name on some GAN listings (e.g. "GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core
   Mod)") but the two are separate organisations.
 
+  **"FZ", "Mystic", and "Angstrom Research" are further in-house premium tuning-line names,
+  resolved during the global manufacturer-register pass (2026-09-02).** TheCubicle's own
+  site-wide "Premium" navigation menu lists exactly six items: "CubeHead", "Signature Series",
+  "Angstrom Research", "Mystic", "FZ", "Cubicle Pro Shop" (thecubicle-premium-megamenu). A "FZ
+  GAN13 M MagLev UV 3x3" product page sells a GAN cube with a named "FZ setup configuration"
+  (specific MagLev/tension/lube/logo choices) in exactly the same shape as the already-documented
+  Signature Series and Cubicle Pro Shop listings; a sibling "fz-lube-bundle" product and a
+  site-wide "FZ-Stealth Lube" promotion confirm the same naming across the catalogue
+  (thecubicle-premium-megamenu). No separate founder, legal entity, domain, or About page was
+  located for "FZ", "Mystic", or "Angstrom Research" distinct from TheCubicle — the same
+  evidentiary gap already noted above for "Cubicle Pro Shop" and "Cubicle Custom" — so they are
+  recorded here as further in-house programme-name aliases rather than separate manufacturer
+  records, pending any future evidence of an independent identity behind any of them. Angstrom
+  Research specifically applies to big-cube (4x4-7x7) tuning of QiYi/MoYu products (e.g.
+  "angstrom-aofu-v5-7x7-magnetic-double-track", "angstrom-weilong-wrm-v10-3x3..."), per the URL
+  slugs enumerated this pass; not independently cited as its own source since no distinct page
+  text beyond the product-naming pattern was needed to establish the point. **This resolves the
+  pass-0 brief's open FZ/FangShi question**: "FZ" here has no connection to FangShi (see
+  data/manufacturers/fangshi.yml), an unrelated, independent Chinese shape-mod puzzle
+  manufacturer. Whether "FZ" specifically stands for speedcuber Feliks Zemdegs, as the initials
+  and TheCubicle's existing practice of naming Signature Series setups after named competitors
+  both suggest, is plausible but was not stated on any page found this pass and is recorded as
+  an open lead, not a fact. **"CubeHead", by contrast, is genuinely just an apparel/merchandise
+  line** (tee, cap, hoodie, cube cover — thecubicle-premium-megamenu) despite sharing the same
+  "Premium" megamenu placement; it is not a cube tuning line and is not added as an alias here.
+
   **Source-tier correction (2026-09-01).** `thecubicle-about-us` was originally filed as
   `kind: retailer` (tier 2), which left `/country`, `/founded`, and `/website` at `confirmed`
   resting on a single tier-2 source — rule 9 correctly blocked validation. `thecubicle-about-us`
@@ -90,8 +120,8 @@ attestations:
     sources: [thecubicle-about-us]
   /aliases:
     confidence: probable
-    sources: [thecubicle-about-us, speedsolving-wiki-cubicle-labs, thecubicle-cubicle-custom-gan11-m-pro-uv]
-    note: "'Cubicle Enterprises' / 'Cubicle Enterprises LLC' and 'TheCubicle.com' are tier 1 (thecubicle-about-us, first-party). 'TheCubicle.us' is tier 4 (speedsolving-wiki-cubicle-labs, used as the domain form in that article's own prose). 'Cubicle Pro Shop' and 'Cubicle Custom' are tier 2, first-party product-page usage."
+    sources: [thecubicle-about-us, speedsolving-wiki-cubicle-labs, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-premium-megamenu]
+    note: "'Cubicle Enterprises' / 'Cubicle Enterprises LLC' and 'TheCubicle.com' are tier 1 (thecubicle-about-us, first-party). 'TheCubicle.us' is tier 4 (speedsolving-wiki-cubicle-labs, used as the domain form in that article's own prose). 'Cubicle Pro Shop', 'Cubicle Custom', 'FZ', 'Mystic', and 'Angstrom'/'Angstrom Research' are tier 1, first-party product-page and navigation usage (thecubicle-premium-megamenu for the latter three)."
   /notes:
     confidence: probable
-    sources: [thecubicle-about-us, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-mattys-gan16-maglev-max-uv, thecubicle-premium-setup-service, speedsolving-wiki-cubicle-labs]
+    sources: [thecubicle-about-us, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-mattys-gan16-maglev-max-uv, thecubicle-premium-setup-service, speedsolving-wiki-cubicle-labs, thecubicle-premium-megamenu]

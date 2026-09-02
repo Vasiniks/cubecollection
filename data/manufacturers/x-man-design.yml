@@ -1,0 +1,68 @@
+# manufacturer: x-man-design
+# Pass 1 (manufacturer register). Sub-brand of QiYi, established from QiYi's own first-party
+# "About Us" page naming it a "sub brand". One of the three probable sub-brand relationships
+# this pass was asked to resolve from evidence.
+
+id: x-man-design
+entity: manufacturer
+name: "X-Man Design"
+kind: sub_brand
+parent_id: qiyi
+country: CN
+aliases:
+  - "X-Man"
+  - "XMD"
+  - "X-Man Designs"
+notes: |-
+  **Parent relationship.** QiYi's own "About Us" page states plainly: "X-Man Design A premium
+  sub brand created in close collaboration with an independent designer known as X-Man. This
+  line includes some of our most advanced competition hardware, especially the Tornado series"
+  (theqiyi-about-us) — first-party, tier 1, and an explicit "sub brand" statement rather than an
+  inference from naming resemblance. An earlier QiYi storefront (2018) already carried "X-Man
+  Design" alongside "The Valk" and "MoFangGe" in its own page title (qiyicube-storefront-2018),
+  showing the association predates the current About page by years. The Speedsolving wiki lists
+  X-Man Design under QiYi's own "Sub-Brands" heading (speedsolving-wiki-qiyi) — tier 4,
+  corroborating only.
+
+  **No independent legal entity, founder statement, or domain was located this pass** beyond
+  QiYi's own description of "an independent designer known as X-Man" — a person, not a
+  registered company, per the source's own wording. `website` and `country` (beyond QiYi's own
+  China base) are left unresolved rather than assumed; `country: CN` is recorded only insofar as
+  X-Man Design's products are manufactured within QiYi's own Guangdong operation per the same
+  source, not as an independently confirmed fact about a separate legal entity.
+
+  **Tornado is a product line, not a further sub-brand.** theqiyi-about-us itself treats
+  "Tornado" as "the Tornado series" and "the Tornado line of 3x3 flagships" within X-Man Design,
+  not as a separately named brand — confirming the pass-0 brief's existing classification
+  (product_lines_not_manufacturers). No manufacturer record is created for Tornado; it belongs
+  to pass 2 as a family under x-man-design.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [theqiyi-about-us]
+    note: "QiYi's own page states outright '[X-Man Design is] a premium sub brand' — a tier 1,
+      first-party, explicit statement, not an inference. Rule 9 is satisfied by this single
+      tier 1 source; qiyicube-storefront-2018 and speedsolving-wiki-qiyi corroborate."
+  /parent_id:
+    confidence: confirmed
+    sources: [theqiyi-about-us, qiyicube-storefront-2018, speedsolving-wiki-qiyi]
+  /country:
+    confidence: uncertain
+    sources: [theqiyi-about-us]
+    note: "Inferred only from X-Man Design being produced within QiYi's own Guangdong
+      operation, per the same source describing it as a 'sub brand' with 'hardware' produced
+      there — not an independent statement about X-Man Design's own registration or location."
+  /aliases:
+    confidence: probable
+    sources: [theqiyi-about-us, qiyicube-storefront-2018]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no separately identifiable X-Man Design domain was located
+      this pass. QiYi's own storefronts (qiyicube.com historically, theqiyi.com currently) carry
+      X-Man Design products, but neither is X-Man Design's own site any more than gancube.com's
+      Swift Block collection is Swift Block's own site — see the swift-block.yml precedent."
+  /notes:
+    confidence: probable
+    sources: [theqiyi-about-us, qiyicube-storefront-2018, speedsolving-wiki-qiyi]

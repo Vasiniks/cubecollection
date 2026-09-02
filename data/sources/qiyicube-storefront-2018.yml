@@ -1,0 +1,30 @@
+# source: qiyicube-storefront-2018
+# Earlier QiYi storefront (qiyicube.com, captured 2018) with its own page title naming its
+# product lines. Tier 1, first-party, and years before theqiyi-about-us — corroborates brand
+# continuity.
+id: qiyicube-storefront-2018
+entity: source
+kind: manufacturer_official
+title: "QiYi Cube – The Valk, MoFangGe, X-Man Design Speed Cube (storefront, 2018 capture)"
+publisher: "QiYi"
+url: "https://www.qiyicube.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20181210034501id_/https://www.qiyicube.com/"
+excerpt: |-
+  Page title: "QiYi Cube – The Valk, MoFangGe, X-Man Design Speed Cube". Storefront lists Valk
+  2 M, Valk 3 (Black/Stickerless/White), Valk3 Power (Black/M Black/M Stickerless) as its own
+  catalogue items.
+preservation_note: "Domain qiyicube.com was previously checked in an earlier pass-0 domain
+  sweep and recorded as a miss ('domains_guessed_no_hit'); it in fact has multiple captures
+  (2018 and 2024) — a false negative from that earlier check, corrected here per the brief's
+  warning that a miss means the guess-check failed, not that no site exists."
+accessed: "2026-09-02"
+language: en
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party storefront naming. Establishes that QiYi itself grouped
+  Valk, MoFangGe, and X-Man Design under its own 'QiYi Cube' storefront in 2018, i.e. treated
+  them as its own product lines/sub-brands at that time — consistent with, though not identical
+  to, the later theqiyi-about-us framing (which by 2026 lists QY Cube/QY Toys/MoFangGe/X-Man
+  Design as its 'family of brands' and does not mention Valk by name)."
+status: sourced

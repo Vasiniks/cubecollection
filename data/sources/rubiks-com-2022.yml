@@ -1,0 +1,25 @@
+# source: rubiks-com-2022
+# Rubik's own official site (rubiks.com), captured 2022. Tier 1, first-party — confirms Spin
+# Master ownership post-acquisition and lists a magnetic 3x3 speedcube among current products.
+id: rubiks-com-2022
+entity: source
+kind: manufacturer_official
+title: "Rubik's America | Rubik's Official Website"
+publisher: "Rubik's / Spin Master"
+url: "http://www.rubiks.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220101171507id_/http://www.rubiks.com/"
+excerpt: |-
+  Site navigation "About" section: "HISTORY OF THE RUBIK'S CUBE / SPIN MASTER / DISTRIBUTORS /
+  OUR SOLVERS" — Spin Master listed as its own top-level About item on Rubik's own site.
+  Homepage banner: "EXCLUSIVE: The New Rubik's Speed Cube – Engineered for Speed With Magnets".
+  Product navigation includes "Speedcubes & Accessories".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party. Confirms Spin Master's ownership of the Rubik's brand
+  post-2021 directly on Rubik's own site navigation, and establishes that the brand sells a
+  magnetic 3x3 speedcube (in scope for this archive) alongside its classic cube line."
+status: sourced

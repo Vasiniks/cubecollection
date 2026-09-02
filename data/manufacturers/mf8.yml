@@ -1,0 +1,79 @@
+# manufacturer: mf8
+# Pass 1 (manufacturer register). Seen at both retailers surveyed in the pass-0 sweep; also
+# named as a direct collaborator on DaYan's own product list ("DaYan+MF8 4x4").
+
+id: mf8
+entity: manufacturer
+name: "MF8"
+kind: manufacturer
+country: CN
+founded:
+  value: "2004-01"
+  precision: month
+  qualifier: circa
+  note: "Date given for the MF8 cubing forum/community specifically, per Cubing China's own
+    founding narrative; whether this is the same founding moment as MF8's later puzzle-selling
+    brand identity is not independently confirmed. See notes."
+aliases:
+  - "MF8 Puzzles"
+  - "MF8 Cube Club"
+  - "中国魔方俱乐部"
+notes: |-
+  **Origin as a forum/community, not (initially) a manufacturer.** Cubing China's own "About"
+  page states it was "established by Mr. Fok (the founder of MF8), Baiqiang Dong..., and Ming
+  Zheng...", that "the predecessor of Cubing China was the MF8 cubing forum and its online
+  competition registration system", and that MF8 (bbs.mf8-china.com) was founded in January
+  2004 as "the earliest Chinese website specializing in Rubik's Cubes and other puzzles"
+  (cubingchina-about-mf8) — first-party for Cubing China's own history, and the strongest
+  available source for MF8's origin found this pass. This documents MF8's origin as a community
+  forum, not a plastics manufacturer.
+
+  **MF8 as a puzzle brand.** Separately, DaYan's own official 2013 product list includes
+  "DaYan+MF8 4x4" as a named joint product (dayancube-official-2013), and MF8-branded shape-mod
+  puzzles are widely sold at specialist retailers under the "MF8" name (general web search;
+  Cubezz.com listing "MF8 Chinese Fu Lattices Panel Magic Cube Puzzle", not independently cited
+  here as it is a single retailer listing). No source located this pass states explicitly that
+  the community/forum entity and the puzzle-brand entity are formally the same legal
+  organisation, though the shared name, the shared "Mr. Fok" founder figure, and MF8's
+  documented role convening designers (the same role the DaYan collaboration and general
+  community history describe) make it very likely they are one continuous organisation
+  operating in both capacities. `kind: manufacturer` is recorded at `probable` rather than
+  `confirmed` accordingly — MF8's own retail/manufacturing-facing site was not independently
+  located and verified this pass (an old `china-magic-cube.com` domain was found with captures
+  2010-2011 but could not be confirmed as MF8's own site in the time available, and is recorded
+  as a lead, not a source).
+
+  **Distinct from DaYan.** MF8 is a separate, independent company from DaYan — the "DaYan+MF8
+  4x4" naming and DaYan's own wiki entry both describe it as a *collaboration between two
+  companies*, not a sub-brand relationship in either direction.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [cubingchina-about-mf8, dayancube-official-2013]
+    note: "No single source directly states 'MF8 designs/manufactures its own puzzle products
+      under its own brand' in as many words. cubingchina-about-mf8 establishes MF8's origin and
+      founder (tier 1, first-party for Cubing China's own history); dayancube-official-2013
+      corroborates MF8 as a real, independent, product-naming company via the joint 'DaYan+MF8
+      4x4'. Recorded at probable rather than confirmed pending a direct MF8-brand source."
+  /country:
+    confidence: probable
+    sources: [cubingchina-about-mf8]
+  /founded:
+    confidence: uncertain
+    sources: [cubingchina-about-mf8]
+    note: "Dates the MF8 forum specifically; speedsolving-wiki-mf8 separately marks founding
+      'unknown'. See notes for the forum/brand identity question this date does not resolve."
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mf8]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no MF8-branded manufacturer site was confirmed this pass.
+      bbs.mf8-china.com (the forum) and a possibly-related china-magic-cube.com (dead, captures
+      2010-2011 only) are recorded as leads in
+      research/staging/manufacturers/global-pass0-candidates.yml, not as sourced facts."
+  /notes:
+    confidence: probable
+    sources: [cubingchina-about-mf8, dayancube-official-2013, speedsolving-wiki-mf8]

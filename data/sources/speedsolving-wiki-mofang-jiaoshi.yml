@@ -1,0 +1,28 @@
+# source: speedsolving-wiki-mofang-jiaoshi
+# Speedsolving.com community wiki article on MoFang JiaoShi (MFJS). Tier 4 — corroborates only.
+id: speedsolving-wiki-mofang-jiaoshi
+entity: source
+kind: wiki
+title: "MoFang JiaoShi — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=MoFang_JiaoShi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260405010335/https://www.speedsolving.com/wiki/index.php?title=MoFang_JiaoShi"
+excerpt: |-
+  States MoFang JiaoShi (native name 魇方教室, also transliterated 魔方教室, marketed in English
+  as "Cubing Classroom") is "a sub-brand of Moyu", founding date "unknown", active
+  "2016-present", specialising in beginner-friendly and budget-tier cubes sold worldwide from
+  China-based operations. Organises "Meilong" (2x2 through 7x7, Pyraminx and other shapes) as a
+  distinct product-line catalogue section within MoFang JiaoShi's own listing, alongside the
+  numbered MF/MF2/MF3/RS3M line.
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail for the sub-brand claim. Used
+  only as corroboration alongside moyucube-official-home-2022 (tier 1, MoYu's own site naming
+  '魔方教室' among its own house names) and retailer/marketplace brand-hierarchy usage
+  (cuboss-mfjs-brand-page). Also the source for treating Meilong as a product line rather than
+  a separate sub-brand — see data/manufacturers/mfjs.yml notes and the
+  global-pass0-candidates.yml annotation."
+status: sourced

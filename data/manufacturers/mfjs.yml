@@ -1,0 +1,85 @@
+# manufacturer: mfjs
+# Pass 1 (manufacturer register). Sub-brand of MoYu, established from MoYu's own first-party
+# site naming it among its own house names, corroborated by a community wiki and a retailer's
+# brand hierarchy. One of the three probable sub-brand relationships this pass was asked to
+# resolve from evidence.
+
+id: mfjs
+entity: manufacturer
+name: "MoFang JiaoShi"
+native_name: "魔方教室"
+kind: sub_brand
+parent_id: moyu
+country: CN
+founded:
+  value: "2016"
+  precision: year
+  qualifier: circa
+aliases:
+  - "MFJS"
+  - "Mofang Jiaoshi"
+  - "Cubing Classroom"
+  - "MoYu MoFang JiaoShi"
+notes: |-
+  **Parent relationship.** MoYu's own official site, in its own page title, names "魔方教室"
+  (MoFang JiaoShi) among a short list of its own house/sub-brand names, alongside its numbered
+  cube product range (moyucube-official-home-2022) — first-party, tier 1. The Speedsolving wiki
+  independently states MoFang JiaoShi ("Cubing Classroom") "is a sub-brand of Moyu"
+  (speedsolving-wiki-mofang-jiaoshi) — tier 4, corroborating only. A EU retailer's own catalogue
+  structure files "Cubing Classroom (MFJS)" as a category nested under a "moyu" brand path
+  (cuboss-mfjs-brand-page) — tier 2 retailer taxonomy, corroborating only. No independent MFJS
+  legal-entity page, About page, or standalone domain was located this pass; MFJS products are
+  sold under moyucube.com and via retailers using the "MoYu MoFang JiaoShi" or "MFJS" naming,
+  consistent with an in-house label rather than a separately registered company — the same
+  reasoning applied to GAN's Swift Block (data/manufacturers/swift-block.yml). `website` is
+  therefore left `unknown` rather than pointing at moyucube.com, which is MoYu's own site, not
+  a separately identifiable MFJS site.
+
+  **Founding.** No source states an explicit founding date; the Speedsolving wiki gives "active
+  2016-present" with founding itself marked "unknown" on that page. Recorded here as `circa
+  2016` with `confidence: uncertain` on the attestation, since it is a single tier-4 source
+  describing activity rather than a stated founding fact.
+
+  **Meilong is a product line, not a further sub-brand.** Both the Speedsolving wiki
+  (speedsolving-wiki-mofang-jiaoshi) and retailer/marketplace listings found in general web
+  search (e.g. "CuberSpeed Moyu MoFang JiaoShi Meilong ... MFJS MEILONG ... Cubing Classroom")
+  consistently present Meilong as a named product-line catalogue *within* MoFang JiaoShi's own
+  range, sold under the MFJS/Cubing Classroom name, not as a separately branded or separately
+  identified company. No manufacturer record is created for Meilong; it belongs to pass 2 as a
+  MFJS family. This directly answers the pass-0 brief's open question ("Meilong may be a product
+  line rather than a sub-brand") — the evidence supports product line.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [moyucube-official-home-2022, speedsolving-wiki-mofang-jiaoshi, cuboss-mfjs-brand-page]
+    note: "Tier 1 first-party naming (MoYu's own site) plus two corroborating tier 2/4 sources
+      independently treating MFJS as a MoYu-subordinate brand rather than an independent
+      company. Rule 9 is satisfied by the tier 1 source alone; the others corroborate."
+  /parent_id:
+    confidence: confirmed
+    sources: [moyucube-official-home-2022, speedsolving-wiki-mofang-jiaoshi, cuboss-mfjs-brand-page]
+  /native_name:
+    confidence: probable
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+    note: "The native form appears in MoYu's own site title (moyucube-official-home-2022) as
+      '魔方教室', matching the wiki's stated native name. Recorded at probable rather than
+      confirmed because MoYu's own listing is a bare name in a title tag, not a labelled
+      'native name' field."
+  /founded:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+    note: "Single tier-4 source giving 'active 2016-present' with founding itself marked
+      unknown on the same page. Recorded as the weakest confidence value available rather than
+      omitted, since it is the only date evidence found this pass."
+  /aliases:
+    confidence: probable
+    sources: [speedsolving-wiki-mofang-jiaoshi, cuboss-mfjs-brand-page]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no separately registered MFJS domain or About page was
+      located this pass. See notes."
+  /notes:
+    confidence: probable
+    sources: [moyucube-official-home-2022, speedsolving-wiki-mofang-jiaoshi, cuboss-mfjs-brand-page]

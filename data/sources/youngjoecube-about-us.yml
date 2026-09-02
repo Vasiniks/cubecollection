@@ -1,0 +1,28 @@
+# source: youngjoecube-about-us
+# YJ's own official "About Us" page (youngjoecube.com, the current English-facing storefront
+# for Guangdong Yongjun Technology Industrial Co., Ltd.). Tier 1, first-party.
+id: youngjoecube-about-us
+entity: source
+kind: manufacturer_official
+title: "About Us - Yongjun Technology Industry"
+publisher: "Guangdong Yongjun Technology Industrial Co., Ltd."
+url: "https://www.youngjoecube.com/about-us"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260511210432id_/https://www.youngjoecube.com/about-us"
+excerpt: |-
+  "Guangdong Yongjun Technology Industrial Co., Ltd are a factory specializing in manufacturing
+  and selling cube products for more than 20 years. Our main products are magic cube,
+  professional magnetic cube, magnetic building block, speed cups, magic snake, timer, cube
+  bag, etc." "Founded in 2005, we are a professional educational toy enterprise that integrates
+  product research, development, manufacturing, and sales. Located in Chenghai District,
+  Shantou City, Guangdong Province, also known as 'Toy and Gift City' in China, our company is
+  situated in the Shangjiao Industrial Zone..."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1 for YJ's own corporate facts. Does not mention MoYu or MGC by name on
+  this page; those relationships/lines are corroborated only by tier 3-4 sources — see
+  data/manufacturers/yj.yml notes."
+status: sourced

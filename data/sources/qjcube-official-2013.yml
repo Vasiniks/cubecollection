@@ -1,0 +1,26 @@
+# source: qjcube-official-2013
+# QJ's own official site (qjcube.com), captured 2013. Tier 1, first-party.
+id: qjcube-official-2013
+entity: source
+kind: manufacturer_official
+title: "The Official Website of QJ Puzzle Cubes"
+publisher: "QJ Cube"
+url: "http://www.qjcube.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20130424004339id_/http://www.qjcube.com"
+excerpt: |-
+  "QJ toy factory is located in Guangdong province. We have been doing magic cubes for ten
+  years. With the effort of our professional employee and advanced equipments, we build our own
+  mould, design department, injection and packaging workshop... Our products include classical
+  magic cubes (2x2,3x3,4x4,5x5), Pyraminx, Megaminx, Tetraminx, SSQ, Skewb cubes and Timers."
+  Footer: "© Copyright 2012 QJcube.com".
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party. 'We have been doing magic cubes for ten years' as of a
+  2012-2013 site places founding activity at approximately 2002-2003; recorded as a
+  circa/approximate founding year rather than an exact one, since the statement is relative
+  rather than a stated year."
+status: sourced

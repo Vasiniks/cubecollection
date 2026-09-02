@@ -1,0 +1,31 @@
+# source: dayancube-official-2013
+# DaYan's own official site (dayancube.com), captured 2013. Tier 1, first-party — names its own
+# founder, brand-name origin, and product range, and documents a collaboration with MF8.
+id: dayancube-official-2013
+entity: source
+kind: manufacturer_official
+title: "The official website for Dayan Cubes"
+publisher: "Dayan Cube"
+url: "http://dayancube.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20130805065800id_/http://dayancube.com/"
+excerpt: |-
+  "The official website for Dayan Cubes, including Dayan Zhanchi, Dayan Guhong -- Wholesale and
+  Retail." "Dayan Cube is a Chinese brand designed by Daqing Bao. DaYan is the pinyin of his
+  username '大烟头' (Da Yan Tou). The logo on Dayan cube uses the last character '头'." "The
+  founder of Dayan Brand: Daqing Bao." Product list includes "Dayan 2X2", "Dayan Crazy Cube",
+  "DaYan II GuHong", "DaYan III LingYun", "DaYan IV LunHui", "DaYan V ZhanChi", "Dayan VI
+  Panshi", "DaYan Gem Cube", "Dayan Bermuda Cube", "DaYan Megaminx", and "DaYan+MF8 4x4" (a
+  joint product with a separate company, MF8). Footer: "© Copyright 2011".
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party, for DaYan's own founder, brand-name etymology, and
+  product range, and for the DaYan+MF8 4x4 naming a distinct collaborating company. The '©
+  Copyright 2011' footer is a weak, ambiguous signal of when the site/brand began (a copyright
+  range start rather than a founding statement — the same caveat applied to
+  gancube-2016-earliest-capture in the GAN register) and is recorded only as evidence of
+  activity by 2011, not as a founding date."
+status: sourced

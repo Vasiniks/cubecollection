@@ -1,0 +1,32 @@
+# source: dianshengtoys-home-2025
+# DianSheng's own current site homepage (dianshengtoys.com), captured 2025. Tier 1, first-party
+# — carries the current legal name and, critically, lists "MSCUBE" as its own product news item.
+id: dianshengtoys-home-2025
+entity: source
+kind: manufacturer_official
+title: "汕头市澄海区点盛玩具有限公司 (Shantou Chenghai District Diansheng Toys Co., Ltd.) — homepage"
+publisher: "Shantou Chenghai District Diansheng Toys Co., Ltd."
+url: "http://www.dianshengtoys.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250421195521id_/http://www.dianshengtoys.com/"
+excerpt: |-
+  Page header: "汕头市澄海区点盛玩具有限公司，点盛玩具，点盛魔方" ("Shantou Chenghai District
+  Diansheng Toys Co., Ltd., Diansheng Toys, Diansheng Cube"). Own news items include: "点盛
+  星系团" (DianSheng Galaxy Cluster), "MSCUBE旗舰魔方" (MSCUBE flagship cube), "点盛战队-Elliott
+  Kobelansky打破三阶盲拧世界纪录！" (DianSheng team — Elliott Kobelansky breaks the 3x3
+  blindfolded world record), and "纪录奖金 | 点盛&MS'疯狂奖学金'启动！" (Record bounty |
+  DianSheng & MS 'Crazy Scholarship' launches!) — DianSheng's own site names "MS"/"MSCUBE"
+  alongside its own product announcements, treating it as its own line rather than an unrelated
+  company.
+accessed: "2026-09-02"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party. Establishes the current legal/brand name and directly
+  supports treating MsCube/MSCUBE — a long-tail candidate already carried in
+  research/staging/manufacturers/global-pass0-candidates.yml as an unresolved 'smart-cube
+  brand' — as a DianSheng product line rather than a separate manufacturer. This is a
+  title/news-listing association, not an explicit 'MSCUBE is our sub-brand' statement, so it is
+  recorded at `probable` rather than `confirmed` on the citing claim."
+status: sourced

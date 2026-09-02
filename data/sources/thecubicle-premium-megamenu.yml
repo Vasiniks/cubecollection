@@ -1,0 +1,38 @@
+# source: thecubicle-premium-megamenu
+# TheCubicle's own site navigation ("Premium" megamenu) and an individual product page,
+# captured 2025. First-party, tier 1 — resolves the FZ/FangShi question raised in the pass-0
+# brief and establishes several in-house premium tuning line names.
+id: thecubicle-premium-megamenu
+entity: source
+kind: manufacturer_official
+title: "TheCubicle site navigation — 'Premium' menu, and FZ GAN13 M MagLev UV 3x3 product page"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fz-gan13-m-maglev-uv-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250930id_/https://www.thecubicle.com/products/fz-gan13-m-maglev-uv-3x3"
+excerpt: |-
+  Site-wide "Premium" navigation menu lists exactly six items: "CubeHead", "Signature Series",
+  "Angstrom Research", "Mystic", "FZ", "Cubicle Pro Shop". Product page title: "FZ GAN13 M
+  MagLev UV 3x3" — a GAN13 M MagLev UV 3x3 (a GAN product, base manufacturer unaffected) sold
+  with a named "FZ setup configuration": "MagLev: 3, Center Travel: 3, Magnet Strength: 3,
+  Track Lube: Calm, Piece Lube: Dignitas, Glide, Rush, Logo: FZ, Logo Side: Orange". A sibling
+  bundle product is named "fz-lube-bundle". "FZ-Stealth Lube now available" appears as a
+  site-wide promotional banner. CubeHead's own product line, checked separately
+  (thecubicle.com/products/cubehead-*), is entirely apparel and merchandise (tee, cap, hoodie,
+  cube cover, embroidered logo) — not a cube tuning line.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party. Resolves the pass-0 brief's open FZ/FangShi question:
+  'FZ' at TheCubicle is a named in-house premium tuning/setup configuration applied to base
+  cubes from other manufacturers (seen here on a GAN product; the pass-0 brief's fz-gan13-*,
+  fz-gan15-* slugs are the same naming pattern), listed in TheCubicle's own navigation alongside
+  other named tuning lines (Angstrom Research, Mystic, Cubicle Pro Shop) and its own Signature
+  Series. It has no documented connection to FangShi (see data/manufacturers/fangshi.yml), an
+  unrelated independent Chinese shape-mod puzzle manufacturer. Whether 'FZ' specifically stands
+  for speedcuber Feliks Zemdegs is plausible (TheCubicle's Signature Series already credits
+  named competitors elsewhere, per thecubicle-mattys-gan16-maglev-max-uv) but is NOT stated on
+  this page or confirmed by any source found this pass — recorded as an open lead, not a fact."
+status: sourced

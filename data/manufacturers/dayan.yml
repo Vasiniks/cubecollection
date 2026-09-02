@@ -1,0 +1,94 @@
+# manufacturer: dayan
+# Pass 1 (manufacturer register). Historically significant Chinese manufacturer (GuHong,
+# ZhanChi); still seen at both retailers surveyed in the pass-0 sweep.
+
+id: dayan
+entity: manufacturer
+name: "DaYan"
+kind: manufacturer
+country: CN
+founded:
+  value: "2011"
+  precision: year
+  qualifier: circa
+  note: "Disputed — see /founded attestation. dayancube.com's own footer reads '© Copyright
+    2011'; the Speedsolving wiki separately states 'Founded: 2004', years before DaYan's own
+    documented product history."
+aliases:
+  - "Dayan"
+  - "Dayan Cube"
+  - "DaYan Cube"
+  - "大雁"
+  - "DY"
+  - "Big Goose"
+  - "DaiYan"
+  - "TaiYan"
+website: "http://dayancube.com/"
+notes: |-
+  **Identity and founder.** DaYan's own official site states: "Dayan Cube is a Chinese brand
+  designed by Daqing Bao. DaYan is the pinyin of his username '大烟头' (Da Yan Tou)"
+  (dayancube-official-2013) — tier 1, first-party. The Speedsolving wiki gives a different
+  account of the brand-name character, "大雁" (a wild goose, using a different "yan" character
+  than the designer's username) (speedsolving-wiki-dayan) — tier 4, and not necessarily in
+  conflict with the pinyin-origin story (a brand can be *named after* a homophone of a founder's
+  username while formally using different, more auspicious characters), but not resolved
+  further this pass. Both spellings are recorded as aliases; `native_name` is left unset rather
+  than picking one, since neither source states outright which characters DaYan itself uses as
+  its formal brand name (dayancube.com's own site is entirely in English/pinyin in the capture
+  reviewed).
+
+  **Founding.** DaYan's own site footer reads "© Copyright 2011" (dayancube-official-2013) — a
+  copyright-range signal, not a founding statement, and consistent with the brand's documented
+  product history beginning with GuHong (2011) and ZhanChi (2012). The Speedsolving wiki instead
+  states "Founded: 2004" with no citation trail (speedsolving-wiki-dayan). Recorded as `circa
+  2011` with the 2004 claim noted as disputed rather than adopted, since it predates every other
+  piece of evidence found this pass by years and no source explains what "founded" refers to at
+  that date (e.g. the founder's own puzzle-modding activity versus the DaYan brand's commercial
+  debut).
+
+  **Relationship to MF8.** DaYan's own product list includes "DaYan+MF8 4x4", and the
+  Speedsolving wiki states "Dayan collaborated with MF8, another Chinese company, to produce a
+  4x4x4 Cube" (dayancube-official-2013, speedsolving-wiki-dayan). This documents MF8 as a
+  distinct, independent company from DaYan — relevant corroboration for
+  data/manufacturers/mf8.yml — rather than a DaYan sub-brand or vice versa.
+
+  **Guhong lead, deferred.** The pass-0 brief flags "Guhong" as possibly having moved from DaYan
+  to QiYi (TheCubicle's `guhong-pro-m-3x3` slug). This pass confirms GuHong as an original DaYan
+  model name (DaYan II GuHong, in DaYan's own 2013 product list) but did not locate a source
+  establishing a transfer of the name to QiYi or explaining a later "Guhong Pro M" product under
+  a different manufacturer. Left as an open lead for pass 2 (model enumeration), which is where
+  a name moving between manufacturers' family/model trees would actually be resolved — this
+  register does not create model records.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [dayancube-official-2013]
+    note: "DaYan's own official site describes its own founder and its own manufactured product
+      range — tier 1, sufficient alone."
+  /country:
+    confidence: probable
+    sources: [dayancube-official-2013]
+    note: "Inferred from 'a Chinese brand' and the .com site's own framing; no explicit address
+      or registration was found in the capture reviewed. Corroborated generally by every
+      secondary source treating DaYan as a mainland Chinese manufacturer alongside its
+      contemporaries (MF8, QiYi, YJ)."
+  /founded:
+    confidence: disputed
+    disputed:
+      - { value: "2004", sources: [speedsolving-wiki-dayan], confidence: uncertain }
+      - { value: "active by 2011 (site copyright footer)", sources: [dayancube-official-2013], confidence: uncertain }
+    adjudication: "Not adjudicated. Recorded here at circa 2011 (the stronger, tier 1-adjacent
+      signal, though still only a copyright footer) because it is consistent with DaYan's
+      documented product timeline; the 2004 wiki date has no citation trail and no supporting
+      product evidence. See notes."
+  /aliases:
+    confidence: probable
+    sources: [dayancube-official-2013, speedsolving-wiki-dayan]
+  /website:
+    confidence: confirmed
+    sources: [dayancube-official-2013]
+  /notes:
+    confidence: probable
+    sources: [dayancube-official-2013, speedsolving-wiki-dayan]

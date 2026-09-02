@@ -1,0 +1,32 @@
+# source: baike-baidu-moyu
+# Baidu Baike (community-edited encyclopedia) entry for MoYu. Tier 4 (unattributed wiki) —
+# corroborates only, never establishes alone. Used here for a candidate founding/registration
+# date and legal-entity name, in tension with the earlier activity shown by
+# moyucube-doc-2013-earliest.
+id: baike-baidu-moyu
+entity: source
+kind: wiki
+title: "魔域 (Moyu) — Baidu Baike"
+publisher: "Baidu Baike"
+url: "https://baike.baidu.com/en/item/Moyu/3296706"
+preservation_method: excerpt
+excerpt: |-
+  States the legal entity as "Shantou Chenghai District Moyu Culture Co., Ltd." ("汕头市澄海区
+  魔域文化用品有限公司"-type registration), founding/registration date "August 25, 2016",
+  registered capital 10 million RMB, legal representative Chen Yonghuang, location Chenghai
+  District, Shantou City, Guangdong Province.
+preservation_note: "Community-edited wiki page; no archive.org capture of this exact URL was
+  found in this pass (CDX returned no captures for the baike.baidu.com item path tried).
+  Recorded as excerpt from direct access; treat as tier 4 corroboration only, per rule 12/source
+  hierarchy — never cited to establish a fact alone."
+accessed: "2026-09-02"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, unattributed community wiki. The 2016-08-25 date most likely reflects
+  a formal company/legal registration, which may postdate the brand's actual market activity —
+  moyucube-doc-2013-earliest (tier 1) shows the moyucube.com site and MoYu name already active
+  in 2013. Both dates are recorded; see the disputed /founded attestation on
+  data/manufacturers/moyu.yml."
+status: sourced

@@ -1,0 +1,23 @@
+# source: thecubicle-fanxin-3x3
+# TheCubicle's own product listing for the FanXin 3x3, captured 2020. Tier 2 retailer — the
+# only source located this pass naming FanXin as a manufacturer.
+id: thecubicle-fanxin-3x3
+entity: source
+kind: retailer
+title: "FanXin 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fanxin-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927004009id_/https://www.thecubicle.com/products/fanxin-3x3"
+excerpt: |-
+  "The FanXin 3x3 draws inspiration from other 3x3 cube mechanisms, yet it strikes a good
+  balance between affordability and performance." Spec table: "Manufacturer: FanXin".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2 retailer. Establishes 'FanXin' as a named manufacturer on the retail
+  spec table. No independent FanXin domain, About page, or community wiki article was located
+  this pass — the weakest-evidenced of the 14 strong candidates in this register."
+status: sourced

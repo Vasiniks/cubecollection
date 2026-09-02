@@ -1,0 +1,40 @@
+# source: moyucube-official-home-2022
+# MoYu's own official homepage (moyucube.com). Tier 1 for MoYu's own identity: legal/brand
+# name, and — critically — a title-tag listing of its own house sub-brands, unmediated by any
+# retailer or wiki.
+id: moyucube-official-home-2022
+entity: source
+kind: manufacturer_official
+title: "魔域文化传播有限公司 (MoYu Culture Communication Co., Ltd.) — official homepage"
+publisher: "MoYu Culture Communication Co., Ltd."
+url: "http://www.moyucube.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221021021726id_/http://www.moyucube.com/"
+excerpt: |-
+  Page <title>: "魔域文化传播有限公司---二阶魔方|三阶魔方|四阶魔方|五阶魔方|六阶魔方|七阶魔方|
+  八阶魔方|九阶魔方|十三阶魔方|十五阶魔方|正阶竞技魔方|正阶入门魔方|异形魔方|磁力魔方|指尖螺旋|
+  魔域速叠杯飞叠杯飞碟杯子|魔方教室、洋葱设计、国冠、魔爵、魔幻手速、乐涛、森幻、燕成-moyucube.com"
+  — translated: "MoYu Culture Communication Co., Ltd. --- 2x2 cube | 3x3 cube | 4x4 cube | 5x5
+  cube | 6x6 cube | 7x7 cube | 8x8 cube | 9x9 cube | 13x13 cube | 15x15 cube | standard
+  competition cube | standard beginner cube | shape-mod cube | magnetic cube | fidget spinner |
+  MoYu speed stacking/flying/flying-disc cups | 魔方教室 (MoFang JiaoShi), 洋葱设计 (Cong's/Onion
+  Design), 国冠 (GuoGuan), 魔爵 (MoJue), 魔幻手速 (MoHuan ShouSu), 乐涛 (LeTao), 森幻 (SenHuan),
+  燕成 (YanCheng) - moyucube.com". Body links to /cn/index.asp and /en/index.asp only; the
+  substantive content is in the title/meta tags of this entry page.
+preservation_note: "Page served by archive.org in GB2312/GBK encoding without a matching HTTP
+  charset on plain fetch; raw bytes fetched directly and decoded with `iconv -f GBK -t UTF-8`
+  to recover the excerpt above. `npm run wayback -- get` mis-decodes this page (replacement
+  characters) because it assumes UTF-8 — recorded here so a future researcher does not
+  conclude the page is empty or garbled beyond recovery."
+accessed: "2026-09-02"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1 for MoYu's own self-naming, domain, and the list of names it groups
+  under its own title tag as house product/sub-brand names. It is a title-tag/meta enumeration,
+  not prose describing corporate structure, so it establishes 'MoYu itself uses these names
+  together' rather than the precise legal relationship between MoYu and each named brand — see
+  data/manufacturers/mfjs.yml for how this is combined with other evidence for MFJS
+  specifically."
+status: sourced

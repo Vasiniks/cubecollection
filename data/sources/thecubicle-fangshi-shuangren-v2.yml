@@ -1,0 +1,29 @@
+# source: thecubicle-fangshi-shuangren-v2
+# TheCubicle's own product listing for the FangShi ShuangRen V2, captured 2019. Tier 2 retailer
+# — the strongest source located this pass identifying FangShi's manufacturer name and its
+# "Funs Puzzle" alias.
+id: thecubicle-fangshi-shuangren-v2
+entity: source
+kind: retailer
+title: "FangShi ShuangRen V2 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fangshi-shuangren-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824090550id_/https://www.thecubicle.com/products/fangshi-shuangren-v2"
+excerpt: |-
+  "The FangShi ShuangRen V2, 'frosted blade' in Chinese, is the latest 57mm 3x3 by the Funs
+  Puzzle manufacturer. It features a few minor improvements in design over the original FangShi
+  ShuangRen, which has been discontinued." Spec table: "Manufacturer: FangShi".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2 retailer. Establishes 'FangShi' as the manufacturer name used on the
+  retail spec table, and independently names 'Funs Puzzle' as the manufacturer in the product
+  description prose — the strongest link found this pass between the two names. No FangShi- or
+  Funs-branded official domain was located this pass (fangshi.net, the pass-0 domain guess, is
+  a domain-parking page in every capture checked, unrelated to the puzzle company); this
+  retailer listing and the Speedsolving wiki (speedsolving-wiki-fangshi) are the best available
+  sources for FangShi's identity."
+status: sourced

@@ -1,0 +1,70 @@
+# manufacturer: fangshi
+# Pass 1 (manufacturer register). An independent Chinese puzzle manufacturer, historically
+# significant for the ShuangRen 3x3 line, unrelated to the "FZ" naming resolved on
+# data/manufacturers/thecubicle.yml — see notes for the full disambiguation.
+
+id: fangshi
+entity: manufacturer
+name: "FangShi"
+kind: manufacturer
+country: CN
+aliases:
+  - "Fangshi"
+  - "Funs"
+  - "Funs Puzzle"
+notes: |-
+  **FangShi vs "FZ" — the pass-0 brief's open question, resolved.** The two are unrelated.
+  "FZ" is TheCubicle's own in-house premium tuning-line name (setup configurations sold on
+  base cubes from other manufacturers, most visibly GAN — e.g. "FZ GAN13 M MagLev UV 3x3") —
+  see data/manufacturers/thecubicle.yml, which documents this fully with its own source
+  (thecubicle-premium-megamenu). FangShi, this record, is an independent Chinese manufacturer
+  producing its own shape-mod and 3x3 puzzle products under the FangShi name since well before
+  TheCubicle's "FZ" naming existed. `speedcubeshop.com`'s "fangshi" collection (product slugs
+  such as `fangshi-2x2-ghost-cube`, `fangshi-master-mixup-cube-v1` through `v7`,
+  `fangshi-limcube-*`, `fangshi-morpho-*`) is entirely shape-mod and novelty-puzzle products,
+  consistent with FangShi's documented specialisation, and shares no naming pattern with "FZ" at
+  all beyond an unrelated two-letter coincidence.
+
+  **Identity.** TheCubicle's own product listing for the FangShi ShuangRen V2 states: "The
+  FangShi ShuangRen V2... is the latest 57mm 3x3 by the Funs Puzzle manufacturer" and its spec
+  table gives "Manufacturer: FangShi" (thecubicle-fangshi-shuangren-v2) — tier 2 retailer, the
+  strongest source located this pass linking "FangShi" and "Funs"/"Funs Puzzle" as names for the
+  same manufacturer. The Speedsolving wiki corroborates FangShi as a real puzzle-producing
+  company with ShuangRen as its historically famous flagship 3x3 line (speedsolving-wiki-
+  fangshi) — tier 4, corroborating only.
+
+  **No independent domain confirmed — another false lead avoided.** `fangshi.net` (the pass-0
+  domain guess) is a domain-parking/broker page in every capture checked this pass (2004-2017),
+  entirely unconnected to the puzzle company — the same pattern already found for
+  `shengshou.com` and `diansheng.com`/`diansheng.net`. No FangShi- or Funs-branded official
+  domain was located this pass; `china-magic-cube.com`, which lists "Funs/Fangshi-Puzzle Cube"
+  as one of many brands, reads as a general third-party Chinese wholesaler carrying multiple
+  manufacturers' products (the same site was also found carrying MF8 and LanLan products),
+  not FangShi's own site, and is recorded only as a lead, not cited as a source.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2, speedsolving-wiki-fangshi]
+    note: "No first-party FangShi source was located this pass (see notes on the domain
+      search). A single tier 2 retailer source explicitly names FangShi as 'Manufacturer' on
+      its own spec table, corroborated by a tier 4 wiki. Recorded at probable rather than
+      confirmed pending a first-party source."
+  /country:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Inferred only from FangShi being grouped with contemporary Chinese manufacturers
+      (DaYan, MF8, LanLan) across every source consulted; no direct statement of country or
+      registration was found."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "'Funs'/'Funs Puzzle' rests on a single tier 2 source's product-description prose."
+  /website:
+    confidence: unknown
+    note: "Researched and not found: fangshi.net is confirmed unrelated (domain broker); no
+      FangShi- or Funs-branded domain was located this pass."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2, speedsolving-wiki-fangshi, thecubicle-premium-megamenu]

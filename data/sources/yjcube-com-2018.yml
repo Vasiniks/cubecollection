@@ -1,0 +1,27 @@
+# source: yjcube-com-2018
+# YJ's earlier official domain (yjcube.com), captured 2018. Tier 1, first-party — native name
+# and product range, years before youngjoecube.com is attested.
+id: yjcube-com-2018
+entity: source
+kind: manufacturer_official
+title: "永骏魔方 (Yongjun Cube) — official site, 2018 capture"
+publisher: "永骏魔方 / Yongjun"
+url: "http://yjcube.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20180410232932id_/http://yjcube.com/"
+excerpt: |-
+  Site header: "永骏魔方" (Yongjun Cube). Navigation: "首页 / 关于我们 / 产品展示 / 永骏资讯 /
+  视频教学 / 联系我们" (Home / About Us / Products / Yongjun News / Video Tutorials / Contact
+  Us). Product categories listed: "二阶 / 三阶 / 四阶 / 五阶 / 六阶 / 七阶 / 异形 / 套装" (2x2 /
+  3x3 / 4x4 / 5x5 / 6x6 / 7x7 / shape-mods / sets).
+preservation_note: "Fetched via `npm run wayback -- get`; content decoded cleanly as UTF-8
+  (unlike moyucube.com's GBK-encoded pages from the same period)."
+accessed: "2026-09-02"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party. Establishes the native brand name '永骏魔方' and that
+  yjcube.com was YJ's own domain selling a full numbered-cube range years before
+  youngjoecube.com is attested as its current site."
+status: sourced

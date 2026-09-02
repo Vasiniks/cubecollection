@@ -1,0 +1,106 @@
+# manufacturer: moyu
+# Pass 1 (manufacturer register). One of the largest Chinese speedcube manufacturers of the
+# period, seen at both retailers surveyed in the pass-0 sweep. See
+# research/notes/manufacturers/global-pass0.md for method.
+
+id: moyu
+entity: manufacturer
+name: "MoYu"
+native_name: "魔域"
+kind: manufacturer
+country: CN
+founded:
+  value: "2013"
+  precision: year
+  qualifier: circa
+  note: "Disputed — see /founded attestation. moyucube.com content dated 2013-08-05 shows the
+    brand active under this name well before the 2016-08-25 company-registration date reported
+    by Baidu Baike."
+aliases:
+  - "Moyu"
+  - "MoYu Cube"
+  - "MoYu Culture"
+  - "MoYu Culture Communication Co., Ltd."
+  - "魔域文化传播有限公司"
+  - "Shantou Chenghai District Moyu Culture Co., Ltd."
+  - "moyucube.com"
+  - "moyutoys.com"
+website: "http://www.moyucube.com/"
+notes: |-
+  **Identity.** MoYu's own site (moyucube.com), captured 2022, gives its legal/brand name as
+  "魔域文化传播有限公司" (MoYu Culture Communication Co., Ltd.) and lists 2x2 through 15x15
+  cubes, shape mods, and magnetic cubes among its own products in its own page title
+  (moyucube-official-home-2022) — direct, first-party evidence of `kind: manufacturer`. An
+  earlier capture (2015, content dated 2013) shows the same legal name and two domains,
+  moyucube.com and moyutoys.com, both recorded as aliases (moyucube-doc-2013-earliest). Baidu
+  Baike separately gives the legal entity as "Shantou Chenghai District Moyu Culture Co., Ltd.",
+  registered 2016-08-25, legal representative Chen Yonghuang (baike-baidu-moyu) — tier 4,
+  corroboration only.
+
+  **Relationship to YJ (Yongjun).** The Speedsolving wiki states MoYu began around 2012 "as a
+  platform for external designers to provide designs to YJ for production, marketing, etc." —
+  i.e. started life as a YJ-affiliated design label — and "parted ways [from YJ] by 2019 at the
+  latest", after which the two operated as separate companies with separate factories
+  (speedsolving-wiki-moyu). This is tier 4 only; no tier 1-2 source corroborating or
+  contradicting it was located this pass. It is recorded here as a documented lead, not acted
+  on: MoYu is recorded as an independent `kind: manufacturer` for the whole 2016-2026 scope
+  window, since even the wiki's own account places any YJ dependency before 2019 and this
+  archive's period begins 2016. If a tier 1-2 source later establishes a YJ/MoYu manufacturer
+  relationship as a manufacturer-level lineage, DATA_MODEL currently has no field for a
+  manufacturer-to-manufacturer `succeeds`/spinoff relationship (see the GAN pilot's F2 finding
+  in docs/pilot-audit.md) — this would need the same schema extension.
+
+  **Own-stated sub-brands.** MoYu's own site title tag (moyucube-official-home-2022) lists, by
+  Chinese name, alongside its numbered-cube product range: 魔方教室 (MoFang JiaoShi — see
+  data/manufacturers/mfjs.yml), 洋葱设计 (Cong's/Onion Design), 国冠 (GuoGuan), 魔爵 (MoJue),
+  魔幻手速 (MoHuan ShouSu), 乐涛 (LeTao), 森幻 (SenHuan), and 燕成 (YanCheng). Several of these
+  match long-tail candidates already carried in
+  research/staging/manufacturers/global-pass0-candidates.yml (MoHuanShouSu, SenHuan) under
+  ambiguous identity. This pass canonicalises only MoFang JiaoShi (the one flagged as a probable
+  sub-brand in the research brief); the remainder are annotated back into the backlog as
+  MoYu-affiliated leads rather than canonicalised, for lack of time this pass to verify each
+  individually — see the backlog file.
+
+  **Product lines, not sub-brands.** WeiLong, AoLong, AoSu, AoChuang, TangLong are MoYu product
+  lines (design/model families), not separate brands or companies — consistent with the
+  pass-0 finding already recorded for WeiLong/TangLong. They belong to pass 2, not this
+  register.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [moyucube-official-home-2022]
+    note: "MoYu's own site, in its own page title, lists cube products by size and type as its
+      own catalogue — first-party, tier 1, sufficient alone per the confidence table."
+  /native_name:
+    confidence: probable
+    sources: [moyucube-official-home-2022, moyucube-doc-2013-earliest]
+    note: "'魔域' is the brand element of the company's own stated legal name '魔域文化传播有限公司'
+      across two first-party captures years apart. No source was found stating '魔域' alone as
+      a standalone brand name distinct from the fuller legal name, so this is recorded at
+      probable rather than confirmed."
+  /country:
+    confidence: confirmed
+    sources: [moyucube-official-home-2022, baike-baidu-moyu]
+    note: "First-party .cn-hosted site plus a Guangdong registration address; consistent across
+      an independent (if tier 4) source."
+  /founded:
+    confidence: disputed
+    disputed:
+      - { value: "2016-08-25 (company registration)", sources: [baike-baidu-moyu], confidence: uncertain }
+      - { value: "active by 2013", sources: [moyucube-doc-2013-earliest], confidence: probable }
+      - { value: "created around 2012 as a YJ-affiliated design label", sources: [speedsolving-wiki-moyu], confidence: uncertain }
+    adjudication: "Not adjudicated. The 2016 date most plausibly marks a formal legal
+      registration rather than the brand's market debut, given that moyucube.com content dated
+      2013-08-05 already carries the same legal-style name; the wiki's 2012 date is a single
+      tier-4 claim with no citation trail. Left disputed rather than picking one; see notes."
+  /aliases:
+    confidence: probable
+    sources: [moyucube-official-home-2022, moyucube-doc-2013-earliest, baike-baidu-moyu]
+  /website:
+    confidence: confirmed
+    sources: [moyucube-official-home-2022]
+  /notes:
+    confidence: probable
+    sources: [moyucube-official-home-2022, moyucube-doc-2013-earliest, baike-baidu-moyu, speedsolving-wiki-moyu]

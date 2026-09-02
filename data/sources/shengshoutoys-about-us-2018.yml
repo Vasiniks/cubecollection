@@ -1,0 +1,31 @@
+# source: shengshoutoys-about-us-2018
+# ShengShou's own "About Us" / Company Profile page (shengshoutoys.com), captured 2018. Tier 1,
+# first-party.
+id: shengshoutoys-about-us-2018
+entity: source
+kind: manufacturer_official
+title: "::ShengShou Cube:: - About Us - Company Profile"
+publisher: "Chenghai Hui Qi Jia Toys Co., Ltd."
+url: "http://www.shengshoutoys.com/en/About.asp"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20180620210344id_/http://www.shengshoutoys.com:80/en/About.asp"
+excerpt: |-
+  "Our company, Hui Qijia Toys was founded in 2000, which is a comprehensive enterprise that
+  provides full range of independent magical cube design, production, trade all under one roof.
+  And it is located in ChengHai area ShanTou city GuangDong province, China... Hui Qijia has
+  focused on mould processing and production since 2000. Moreover, we created our proprietary
+  brand 'ShengShou' in 2009 and it becomes a model for Chinese local cube brand." Footer:
+  "CopyRight © 2016 Chenghai Hui Qi Jia Toys Co., Ltd."
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party, and directly resolves the parent-company/brand
+  distinction: 'Hui Qijia Toys' (founded 2000) is the legal manufacturing company; 'ShengShou'
+  is its cube brand name, created 2009. `shengshou.com` (a different, unrelated domain — a
+  parked/portal page in every capture checked this pass, 2003-2017) is NOT this company's site
+  and is not recorded as an alias domain; `shengshoutoys.com` is the correct historical domain,
+  now dead/hijacked (a live fetch in 2026 returns a certificate for an unrelated site,
+  xjtianshan.com)."
+status: sourced

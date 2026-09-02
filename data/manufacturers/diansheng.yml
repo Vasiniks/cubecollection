@@ -1,0 +1,75 @@
+# manufacturer: diansheng
+# Pass 1 (manufacturer register). Chinese manufacturer seen at both retailers in the pass-0
+# sweep, historically an early "Type-E" 3x3 maker and now known for large NxN/magnetic cubes.
+
+id: diansheng
+entity: manufacturer
+name: "DianSheng"
+native_name: "点盛"
+kind: manufacturer
+country: CN
+founded:
+  value: "1997"
+  precision: year
+  qualifier: exact
+aliases:
+  - "Dian Sheng"
+  - "Diansheng"
+  - "Point Sheng"
+  - "DianSheng Toys Co., Ltd."
+  - "Shantou Chenghai DianSheng Toys Co., Ltd."
+  - "点盛玩具"
+  - "点盛魔方"
+notes: |-
+  **Identity and founding.** DianSheng's own English "About Us" page states: "Shantou Chenghai
+  DianSheng Toys Co., Ltd. is a set of R & D, manufacturing Magic Cube and sales in one of the
+  toys company. The company was established in 1997" (dianshengtoys-about-2016) — tier 1,
+  first-party, and preferred over the same page's separate 2009 copyright-footer year. The
+  current homepage (2025 capture) carries the header "汕头市澄海区点盛玩具有限公司，点盛玩具，
+  点盛魔方" (dianshengtoys-home-2025), giving the native name "点盛" and confirming brand
+  continuity from the 2016 capture to 2025.
+
+  **Domain correction — false leads avoided.** Both `diansheng.net` and `diansheng.com` (the
+  intuitively obvious domains, and the ones a domain-guessing sweep would try first) are, in
+  every capture checked this pass, unrelated domain-parking/broker pages with no connection to
+  the toy company. The real historical and current domain is `dianshengtoys.com` (English path
+  at `/en/about.php`, later restructured; Chinese homepage at `www.dianshengtoys.com`), found
+  only via general web search. `website` is left `unknown` rather than pointing at a domain,
+  since the live 2026 status of dianshengtoys.com was not independently re-verified this pass
+  (the archive captures used are 2016 and 2025); this is a live-status gap, not an identity one.
+
+  **MsCube resolved as a DianSheng product line, not a separate manufacturer.** The pass-0
+  brief flagged "MsCube" as a "smart-cube brand" with unresolved identity. DianSheng's own 2025
+  homepage lists "MSCUBE旗舰魔方" (MSCUBE flagship cube) among its own news/product items,
+  alongside "点盛&MS'疯狂奖学金'" (DianSheng & MS "Crazy Scholarship") naming a joint
+  record-bounty program (dianshengtoys-home-2025) — first-party, though a listing/naming
+  association rather than an explicit "MSCUBE is our brand" statement, hence recorded at
+  `probable`. No manufacturer or sub_brand record is created for MsCube this pass; it is
+  reclassified in the backlog file from an independent long-tail candidate to a DianSheng
+  product-line lead, for pass 2 to confirm and place as a family.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [dianshengtoys-about-2016, dianshengtoys-home-2025]
+  /native_name:
+    confidence: confirmed
+    sources: [dianshengtoys-home-2025]
+  /country:
+    confidence: confirmed
+    sources: [dianshengtoys-about-2016, dianshengtoys-home-2025]
+  /founded:
+    confidence: confirmed
+    sources: [dianshengtoys-about-2016]
+  /aliases:
+    confidence: probable
+    sources: [dianshengtoys-about-2016, dianshengtoys-home-2025]
+  /website:
+    confidence: unknown
+    note: "Researched and not found live: dianshengtoys.com is the correct historical domain
+      (unlike diansheng.com/diansheng.net, both unrelated), but its current 2026 live status was
+      not independently re-verified this pass. See notes."
+  /notes:
+    confidence: probable
+    sources: [dianshengtoys-about-2016, dianshengtoys-home-2025]

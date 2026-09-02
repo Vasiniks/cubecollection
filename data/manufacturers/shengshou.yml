@@ -1,0 +1,70 @@
+# manufacturer: shengshou
+# Pass 1 (manufacturer register). Chinese manufacturer seen at both retailers in the pass-0
+# sweep, historically significant as an early "big cube" (4x4-19x19) pioneer.
+
+id: shengshou
+entity: manufacturer
+name: "ShengShou"
+native_name: "圣手"
+kind: manufacturer
+country: CN
+founded:
+  value: "2009"
+  precision: year
+  qualifier: exact
+  note: "ShengShou's own site distinguishes the founding of its parent company, Hui Qijia Toys
+    (2000), from the creation of the 'ShengShou' brand specifically (2009). This record dates
+    the brand, since 'ShengShou' rather than 'Hui Qijia' is the name used throughout the
+    2016-2026 retail record this archive covers."
+aliases:
+  - "Shengshou"
+  - "SS"
+  - "Hui Qijia Toys"
+  - "Hui Qi Jia"
+  - "Chenghai Hui Qi Jia Toys Co., Ltd."
+notes: |-
+  **Identity, founding, and parent/brand distinction.** ShengShou's own "About Us" page states:
+  "Our company, Hui Qijia Toys was founded in 2000... located in ChengHai area ShanTou city
+  GuangDong province, China... we created our proprietary brand 'ShengShou' in 2009"
+  (shengshoutoys-about-us-2018) — tier 1, first-party. The Speedsolving wiki independently gives
+  the native name "圣手" (shèngshǒu, "divine hand") (speedsolving-wiki-shengshou) — tier 4,
+  corroborating only.
+
+  **Domain correction — important false lead avoided.** `shengshou.com` looks like the obvious
+  official domain and was carried in the pass-0 candidate list without a domain check. Every
+  archive.org capture of `shengshou.com` found this pass (spanning 2003-2017) is either a
+  parked/portal page or unrelated Chinese-language content — never the cube manufacturer. The
+  actual historical site is `shengshoutoys.com`, found via general web search rather than domain
+  guessing. `website` is left `unknown` on this record rather than pointing at either domain:
+  `shengshoutoys.com` no longer resolves to the manufacturer as of 2026 (a live fetch attempt
+  returns a TLS certificate for an unrelated site, xjtianshan.com), and no current official
+  domain was confirmed this pass. This is recorded as a caution for any future researcher
+  tempted to guess `shengshou.com` again.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [shengshoutoys-about-us-2018]
+  /native_name:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou]
+    note: "Tier 4 only; no tier 1-2 source located this pass gives the Chinese characters
+      directly (shengshoutoys-about-us-2018's About page, in the capture reviewed, is
+      English-language and does not carry the Chinese brand name itself)."
+  /country:
+    confidence: confirmed
+    sources: [shengshoutoys-about-us-2018]
+  /founded:
+    confidence: confirmed
+    sources: [shengshoutoys-about-us-2018]
+  /aliases:
+    confidence: probable
+    sources: [shengshoutoys-about-us-2018]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no current, live official ShengShou domain was confirmed
+      this pass. See notes for the shengshou.com / shengshoutoys.com distinction."
+  /notes:
+    confidence: probable
+    sources: [shengshoutoys-about-us-2018, speedsolving-wiki-shengshou]

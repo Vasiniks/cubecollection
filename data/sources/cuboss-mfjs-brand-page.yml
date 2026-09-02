@@ -1,0 +1,23 @@
+# source: cuboss-mfjs-brand-page
+# Cuboss.com (EU retailer) catalogue structure nesting "Cubing Classroom (MFJS)" under a "MoYu"
+# brand parent. Tier 2 retailer, corroborating only — a URL/catalogue hierarchy, not prose.
+id: cuboss-mfjs-brand-page
+entity: source
+kind: retailer
+title: "Buy MFJS Cubes | Cuboss.com — brands/moyu/cubing-classroom-mfjs"
+publisher: "Cuboss.com"
+url: "https://cuboss.com/product-category/brands/moyu/cubing-classroom-mfjs/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250114031102/https://cuboss.com/product-category/brands/moyu/cubing-classroom-mfjs/"
+preservation_note: "The evidentiary content is the URL path itself — the retailer files 'Cubing
+  Classroom (MFJS)' as a category nested under a 'moyu' brand path — rather than prose on the
+  page, which is mostly site chrome (nav, FAQ, wishlist)."
+accessed: "2026-09-02"
+language: en
+region: EU
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "One retailer's catalogue taxonomy. Corroborates the MoYu/MFJS parent
+  relationship already stated in prose by moyucube-official-home-2022 (tier 1) and
+  speedsolving-wiki-mofang-jiaoshi (tier 4); does not establish it alone."
+status: sourced

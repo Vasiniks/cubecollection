@@ -1,0 +1,24 @@
+# source: licenseglobal-spinmaster-rubiks
+# Trade press coverage of the Spin Master / Rubik's Brand Ltd transaction. Tier 2 (established
+# press) — corroborates the tier 1 press release.
+id: licenseglobal-spinmaster-rubiks
+entity: source
+kind: press
+title: "Spin Master to Acquire Rubik's Cube"
+publisher: "License Global (Informa)"
+url: "https://www.licenseglobal.com/toys-games/spin-master-acquire-rubiks-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210125180851/https://www.licenseglobal.com/toys-games/spin-master-acquire-rubiks-cube"
+preservation_note: "Article body largely site navigation in the captured/tag-stripped form
+  retrieved this pass; the headline and URL itself state the transaction (Spin Master acquiring
+  Rubik's Cube/Rubik's Brand Ltd), corroborating spinmaster-rubiks-acquisition-2021's own
+  first-party announcement."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, established trade press, reporting the same transaction as the tier 1
+  press release. Independent in the sense of a separate publisher, though it is reporting the
+  same corporate announcement rather than independent investigation."
+status: sourced

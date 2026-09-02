@@ -1,0 +1,59 @@
+# manufacturer: yuxin
+# Pass 1 (manufacturer register). Chinese manufacturer seen at TheCubicle in the pass-0 sweep,
+# known for the Little Magic budget line and a Kevin Hays collaboration (Hays7).
+
+id: yuxin
+entity: manufacturer
+name: "YuXin"
+kind: manufacturer
+country: CN
+founded:
+  value: "1998"
+  precision: year
+  qualifier: exact
+aliases:
+  - "Yuxin"
+  - "YUXIN Magic Cube"
+  - "Yu Xin Science And Educational Toys Co., Ltd."
+  - "666toy.com"
+website: "https://www.666toy.com/"
+notes: |-
+  **Identity and founding.** YuXin's own "About Us" page states: "Yu Xin Science And
+  Educational Toys Co., Ltd... Founded 1998... one of the earliest enterprises in China to
+  produce Magic Cube", located on Fengxiang Street, Chenghai District, Shantou, Guangdong
+  (666toy-about-us) — tier 1, first-party.
+
+  **Product lines, not further sub-brands (deferred).** The same page lists "six major brands":
+  Yuxin, Yizhi Play Palace, Zhisheng, Sudie Cup, Qiuya, and Quan Brain Doctor. Only "Yuxin"
+  itself appeared as a candidate in the pass-0 retailer sweep; the other five were not
+  investigated individually this pass and are not recorded as sub-brand or manufacturer
+  records — they read as adjacent toy/stacking-cup/brain-training product lines by name (a
+  pattern already seen at MoYu and YJ, both of which also list stacking-cup lines among their
+  own "family of brands"), but this is inference, not sourced. Flagged in the backlog file as
+  an unverified lead should any of them surface independently.
+
+  **Little Magic and Hays7** are YuXin product/model names (a budget line and a signature
+  collaboration with Kevin Hays respectively, per general web search), not separate companies —
+  consistent with the pattern already established for MGC/YJ, WeiLong/MoYu, and Valk/QiYi. They
+  belong to pass 2, not this register.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [666toy-about-us]
+  /country:
+    confidence: confirmed
+    sources: [666toy-about-us]
+  /founded:
+    confidence: confirmed
+    sources: [666toy-about-us]
+  /aliases:
+    confidence: probable
+    sources: [666toy-about-us]
+  /website:
+    confidence: confirmed
+    sources: [666toy-about-us]
+  /notes:
+    confidence: probable
+    sources: [666toy-about-us]

@@ -1,0 +1,77 @@
+# manufacturer: yj
+# Pass 1 (manufacturer register). One of the largest Chinese speedcube manufacturers of the
+# period; historically connected to MoYu's founding (see data/manufacturers/moyu.yml).
+
+id: yj
+entity: manufacturer
+name: "YJ"
+native_name: "永骏"
+kind: manufacturer
+country: CN
+founded:
+  value: "2005"
+  precision: year
+  qualifier: exact
+aliases:
+  - "YongJun"
+  - "Yong Jun"
+  - "Yongjun Cube"
+  - "Yongjun Plastic Products Factory"
+  - "Guangdong Yongjun Technology Industrial Co., Ltd."
+  - "永骏魔方"
+  - "yjcube.com"
+website: "https://www.youngjoecube.com/"
+notes: |-
+  **Identity and founding.** YJ's own current "About Us" page states: "Guangdong Yongjun
+  Technology Industrial Co., Ltd are a factory specializing in manufacturing and selling cube
+  products for more than 20 years... Founded in 2005... Located in Chenghai District, Shantou
+  City, Guangdong Province" (youngjoecube-about-us) — tier 1, first-party. An earlier official
+  domain, yjcube.com (captured 2018), independently carries the native name "永骏魔方" (Yongjun
+  Cube) and the same product range (yjcube-com-2018) — also tier 1, first-party, and recorded
+  as an alias/former primary domain.
+
+  **Relationship to MoYu.** The Speedsolving wiki states YJ "created a separate sub-brand called
+  MoYu as a production platform for third-party puzzle designers" around 2012, "which is why
+  you can see a YJ logo on all MoYu boxes today" (speedsolving-wiki-yongjun) — tier 4,
+  corroborating only, no independent tier 1-2 confirmation located this pass. This is the same
+  relationship documented (also at tier 4) from the other side in data/manufacturers/moyu.yml,
+  where the same wiki states MoYu "parted ways [from YJ] by 2019 at the latest". No
+  manufacturer-level relationship field exists in the current schema to record a
+  historical/lapsed parent-child link between two now-independent manufacturer records (see
+  docs/pilot-audit.md F2) — both MoYu and YJ are recorded as independent `kind: manufacturer`
+  records for this archive's 2016-2026 scope, with the pre-2019 relationship documented in prose
+  on both records rather than as a structured relationship.
+
+  **MGC is a YJ product line, not a separate brand.** The Speedsolving wiki describes "MGC" as
+  released May 2018, "a strong magnetic positioning system", followed by MGC V2 and MGC Elite,
+  entirely within YJ's own product history (speedsolving-wiki-yongjun) — tier 4, but consistent
+  with the pass-0 brief's existing product_lines_not_manufacturers classification. No
+  manufacturer record is created for MGC; it belongs to pass 2 as a family under yj.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [youngjoecube-about-us, yjcube-com-2018]
+    note: "YJ's own site, in its own corporate voice, describes designing, manufacturing, and
+      selling its own cube products — tier 1, sufficient alone."
+  /native_name:
+    confidence: confirmed
+    sources: [yjcube-com-2018]
+    note: "'永骏魔方' appears directly on YJ's own (earlier) official site header — tier 1,
+      first-party."
+  /country:
+    confidence: confirmed
+    sources: [youngjoecube-about-us]
+  /founded:
+    confidence: confirmed
+    sources: [youngjoecube-about-us]
+  /aliases:
+    confidence: probable
+    sources: [youngjoecube-about-us, yjcube-com-2018, speedsolving-wiki-yongjun]
+  /website:
+    confidence: confirmed
+    sources: [youngjoecube-about-us]
+  /notes:
+    confidence: probable
+    sources: [youngjoecube-about-us, yjcube-com-2018, speedsolving-wiki-yongjun]

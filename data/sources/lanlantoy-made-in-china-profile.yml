@@ -1,0 +1,33 @@
+# source: lanlantoy-made-in-china-profile
+# Lanlan Toy Co., Ltd.'s own self-authored vendor profile, hosted on the made-in-china.com B2B
+# marketplace. First-party content about itself, despite third-party hosting — see
+# reliability_note for why this is classified manufacturer_official rather than marketplace.
+id: lanlantoy-made-in-china-profile
+entity: source
+kind: manufacturer_official
+title: "Lanlan Toy Co.,Ltd. — company profile"
+publisher: "Lanlan Toy Co., Ltd."
+url: "https://lanlantoy.en.made-in-china.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20171025103854/http://lanlantoy.en.made-in-china.com:80/"
+excerpt: |-
+  "Lanlan toys is a manufactory which specilize in educational toys such as magic cube,
+  basketball and so on." Company profile gives founding year 2009 and location Chenghai,
+  Shantou, Guangdong, China. Product range: magic cubes from 2-layer through 7x7x7, transparent
+  void cubes, floppy cubes, and shape mods.
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "This is a vendor-authored company profile on a B2B marketplace
+  (made-in-china.com), not a page the vendor controls independently of the platform. Classified
+  `manufacturer_official` rather than the vocabulary's default `marketplace` because the content
+  is the company's own first-party self-description of itself (its own founding year, location,
+  and product range) rather than a third party's listing or resale of the company's products —
+  the same reasoning DATA_MODEL/pilot-audit F1 applies to a manufacturer's own About page
+  regardless of where it is hosted. Overridden per RESEARCH_SPEC 3.1's tier-default rule; this
+  note is the required justification. No independent LanLan-branded domain (e.g.
+  lanlan-puzzle.com, checked and confirmed to have no captures this pass) was located, so this
+  marketplace profile is the strongest first-party source found for LanLan's identity."
+status: sourced

@@ -17,24 +17,69 @@ scope: >
   canonicalisation. Recall first; identity resolution is the next step.
 
 # ---------------------------------------------------------------- already canonical
-already_canonical: [gan, monster-go, swift-block, thecubicle, picube, cubicle-labs]
+already_canonical: [gan, monster-go, swift-block, thecubicle, picube, cubicle-labs, moyu, mfjs]
 
 # ---------------------------------------------------------------- high confidence: real
 # manufacturers, seen at BOTH retailers, and named in the project seed list
 strong_candidates:
-  - { name: "MoYu",          slugs: [moyu, moyu-speed-cubes],        seen: [thecubicle, speedcubeshop] }
+  - { name: "MoYu",          slugs: [moyu, moyu-speed-cubes],        seen: [thecubicle, speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/moyu.yml, kind: manufacturer, confirmed via moyucube.com's own site (tier 1)." }
   - { name: "QiYi",          slugs: [qiyi, qiyi-mofangge],           seen: [thecubicle, speedcubeshop],
-      note: "QiYi MoFangGe. TheCubicle's slug pairs the two names, which is itself alias evidence." }
-  - { name: "YJ",            slugs: [yj, yj-budget-magnetic-collection], seen: [thecubicle] }
-  - { name: "DaYan",         slugs: [dayan],                          seen: [thecubicle, speedcubeshop] }
-  - { name: "YuXin",         slugs: [yuxin],                          seen: [thecubicle] }
-  - { name: "ShengShou",     slugs: [shengshou, shengshou-fto],       seen: [thecubicle, speedcubeshop] }
-  - { name: "DianSheng",     slugs: [diansheng, diansheng-fto],       seen: [thecubicle, speedcubeshop] }
-  - { name: "Cyclone Boys",  slugs: [cyclone-boys],                   seen: [speedcubeshop] }
-  - { name: "LanLan",        slugs: [lanlan],                         seen: [thecubicle, speedcubeshop] }
-  - { name: "MF8",           slugs: [mf8],                            seen: [thecubicle, speedcubeshop] }
+      status: "CANONICALISED as data/manufacturers/qiyi.yml. kind: manufacturer, confirmed.
+        theqiyi.com's own About page also resolves X-Man Design as a sub_brand (see below) and
+        treats QY Cube/QY Toys/MoFangGe as its own in-house line names (recorded as aliases,
+        not separate records). Domain correction: qiyicube.com was wrongly recorded as a miss
+        in the earlier domain sweep — it has captures back to 2018." }
+  - { name: "YJ",            slugs: [yj, yj-budget-magnetic-collection], seen: [thecubicle],
+      status: "CANONICALISED as data/manufacturers/yj.yml, kind: manufacturer, confirmed via
+        youngjoecube.com's own About page. Historical YJ->MoYu spinoff relationship (~2012)
+        documented in prose on both records at tier 4 only; MGC confirmed as a YJ product line." }
+  - { name: "DaYan",         slugs: [dayan],                          seen: [thecubicle, speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/dayan.yml, kind: manufacturer, confirmed.
+        Founding year disputed (2004 wiki vs circa-2011 site evidence), left disputed. Guhong
+        DaYan->QiYi name-movement lead NOT resolved — deferred explicitly to pass 2." }
+  - { name: "YuXin",         slugs: [yuxin],                          seen: [thecubicle],
+      status: "CANONICALISED as data/manufacturers/yuxin.yml, kind: manufacturer, confirmed via
+        666toy.com's own About page (Yu Xin Science And Educational Toys Co., Ltd, founded
+        1998)." }
+  - { name: "ShengShou",     slugs: [shengshou, shengshou-fto],       seen: [thecubicle, speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/shengshou.yml, kind: manufacturer, confirmed.
+        IMPORTANT: shengshou.com is NOT the manufacturer's domain (parked/portal page in every
+        capture 2003-2017) — the real historical site is shengshoutoys.com, found only via
+        general web search, not domain guessing. website left unknown (shengshoutoys.com is
+        also dead/hijacked as of 2026)." }
+  - { name: "DianSheng",     slugs: [diansheng, diansheng-fto],       seen: [thecubicle, speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/diansheng.yml, kind: manufacturer, confirmed
+        (established 1997 per its own About page). IMPORTANT: diansheng.com and diansheng.net
+        are BOTH unrelated domain-parking pages, not the manufacturer — real domain is
+        dianshengtoys.com, found only via web search. Also resolves the MsCube long-tail
+        candidate below as a DianSheng product line." }
+  - { name: "Cyclone Boys",  slugs: [cyclone-boys],                   seen: [speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/cyclone-boys.yml, kind: manufacturer,
+        confirmed via its own storefront. Alias finding: cycloneboys.com's own store sells
+        cubes as 'MoYou (cycloneboys)' — 'MoYou' recorded as an alias. NOTE: 'MoYou' is NOT
+        'MoYu' (data/manufacturers/moyu.yml) despite similar spelling — flagged explicitly to
+        prevent a false alias-collision merge." }
+  - { name: "LanLan",        slugs: [lanlan],                         seen: [thecubicle, speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/lanlan.yml, kind: manufacturer, confirmed
+        (founded 2009) via a self-authored made-in-china.com vendor profile, reclassified
+        manufacturer_official per its own first-party content. No independent LanLan domain
+        found (lanlan-puzzle.com and lanlantoy.com both have zero archive.org captures)." }
+  - { name: "MF8",           slugs: [mf8],                            seen: [thecubicle, speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/mf8.yml, kind: manufacturer at confidence
+        probable only (status: drafted, not sourced) — MF8's origin as a cubing forum (founded
+        by Mr. Fok, per Cubing China's own About page) is well evidenced, but no source directly
+        confirms the forum entity and the puzzle-brand entity are the same organisation.
+        CORRECTION: china-magic-cube.com is NOT an MF8-specific site — later research (FangShi,
+        LanLan) established it is a general third-party Chinese wholesaler carrying MANY
+        manufacturers' products (MF8, FangShi/Funs, LanLan all found listed there). Not cited as
+        a source for any single brand's identity; still no confirmed MF8-branded domain." }
   - { name: "FangShi",       slugs: [fangshi],                        seen: [speedcubeshop],
-      note: "Possibly the same entity as TheCubicle's 'fz' prefix, flagged as unknown during the GAN pass. Investigate before creating either." }
+      status: "CANONICALISED as data/manufacturers/fangshi.yml, kind: manufacturer at confidence
+        probable only (status: drafted). RESOLVED as UNRELATED to 'FZ' — see the FZ entry below
+        and data/manufacturers/thecubicle.yml. Alias found: FangShi = 'Funs'/'Funs Puzzle' per
+        TheCubicle's own ShuangRen V2 listing. fangshi.net is a domain-broker page, NOT the
+        manufacturer's site — no independent domain confirmed." }
   - { name: "FanXin",        slugs: [fanxin],                         seen: [speedcubeshop] }
   - { name: "QJ",            slugs: [qj-educational],                 seen: [speedcubeshop] }
   - { name: "Rubik's",       slugs: [rubiks],                         seen: [thecubicle, speedcubeshop],
@@ -42,10 +87,28 @@ strong_candidates:
 
 # ---------------------------------------------------------------- sub-brand candidates
 probable_sub_brands:
-  - { name: "X-Man Design",  slugs: [x-man-designs],  suspected_parent: "QiYi" }
-  - { name: "MFJS / MoFang JiaoShi", slugs: [mfjs, mofang-jiaoshi], suspected_parent: "MoYu" }
+  - { name: "X-Man Design",  slugs: [x-man-designs],  suspected_parent: "QiYi",
+      status: "CANONICALISED as data/manufacturers/x-man-design.yml, kind: sub_brand,
+        parent_id: qiyi. QiYi's own About page states outright: 'X-Man Design [is] a premium
+        sub brand created in close collaboration with an independent designer known as X-Man.'
+        Tornado confirmed as a product line within X-Man Design, not a separate brand." }
+  - { name: "MFJS / MoFang JiaoShi", slugs: [mfjs, mofang-jiaoshi], suspected_parent: "MoYu",
+      status: "CANONICALISED as data/manufacturers/mfjs.yml, kind: sub_brand, parent_id: moyu.
+        Established from MoYu's own site (moyucube-official-home-2022, tier 1, names 魔方教室
+        among its own house names) plus speedsolving wiki and a retailer brand-hierarchy page." }
   - { name: "Meilong",       slugs: [moyu-meilong],   suspected_parent: "MoYu",
-      note: "May be a product line rather than a sub-brand. MoYu's internal structure is not GAN's; do not assume." }
+      status: "RESOLVED — product line, not a sub-brand. Consistently sold/catalogued as a
+        Meilong-named product range *within* MFJS/Cubing Classroom (speedsolving wiki,
+        marketplace listings 'MoYu MoFang JiaoShi Meilong ... MFJS MEILONG'). No manufacturer
+        record created; belongs to pass 2 as a family under mfjs." }
+
+  # New leads surfaced while researching MoYu, not yet individually verified (see
+  # moyucube-official-home-2022, a tier-1 source naming these alongside MFJS on MoYu's own
+  # site): 洋葱设计 (Cong's/Onion Design), 国冠 (GuoGuan), 魔爵 (MoJue), 魔幻手速 (MoHuan ShouSu
+  # — matches the long_tail_candidates entry below), 乐涛 (LeTao), 森幻 (SenHuan — matches the
+  # long_tail_candidates entry below), 燕成 (YanCheng). Each needs its own identity check before
+  # a sub_brand or manufacturer record is created — MoYu's own title-tag listing groups them
+  # together but does not state the precise legal relationship for each.
 
 # ---------------------------------------------------------------- NOT manufacturers
 # The project seed list mixes companies with product lines. Creating manufacturer records for
@@ -69,7 +132,13 @@ long_tail_candidates:
   - { name: "KungFu",       slugs: [kungfu] }
   - { name: "LingAo",       slugs: [lingao] }
   - { name: "HelloCube",    slugs: [hellocube] }
-  - { name: "MsCube",       slugs: [mscube], note: "Smart-cube brand. Smart-cube companies are a named blind spot for this pass." }
+  - { name: "MsCube",       slugs: [mscube],
+      status: "RESOLVED — product line of DianSheng, not an independent manufacturer.
+        dianshengtoys.com's own current homepage lists 'MSCUBE旗舰魔方' among its own
+        news/products and a joint 'DianSheng & MS' record-bounty program (probable confidence;
+        see data/manufacturers/diansheng.yml notes). No manufacturer record created; belongs to
+        pass 2 as a family under diansheng. Smart-cube companies remain a named blind spot more
+        broadly — this only resolves the MsCube name specifically." }
   - { name: "Cube4You",     slugs: [cube4you], note: "Historical; archived domain cube4you.com has captures." }
   - { name: "CubeLab",      slugs: [cubelab] }
   - { name: "VeryPuzzle",   slugs: [verypuzzle], note: "Archived domain verypuzzle.com has captures. May be non-3x3 specialist." }
@@ -80,7 +149,10 @@ long_tail_candidates:
   - { name: "Tingman",      slugs: [tingman] }
   - { name: "Kanyon",       slugs: [kanyon] }
   - { name: "Celeritas",    slugs: [celeritas] }
-  - { name: "Mystic",       slugs: [mystic] }
+  - { name: "Mystic",       slugs: [mystic],
+      status: "RESOLVED — a TheCubicle in-house premium tuning-line name (same evidence and
+        treatment as FZ/Angstrom Research above). Recorded as an alias on
+        data/manufacturers/thecubicle.yml, not its own record." }
   - { name: "Ninja",        slugs: [ninja] }
   - { name: "StuCube",      slugs: [stucube-collection] }
   - { name: "UniCube",      slugs: [uni-cube, unicube-collection, unicube-magnetic], note: "May be SpeedCubeShop's own house line rather than an independent manufacturer — the -magnetic/-non-magnetic split resembles a retailer's own product tiering." }
@@ -95,7 +167,11 @@ long_tail_candidates:
   - { name: "Puzzle Pals",  slugs: [puzzle-pals] }
   - { name: "Swiftcubing Designs", slugs: [swiftcubing-designs] }
   - { name: "Cubing GG",    slugs: [cubing-gg] }
-  - { name: "CubeHead",     slugs: [cubehead, cubehead-apparel], note: "Probably a creator/apparel brand, not a cube manufacturer. Verify before creating." }
+  - { name: "CubeHead",     slugs: [cubehead, cubehead-apparel],
+      status: "VERIFIED — confirmed apparel/merchandise only (tee, cap, hoodie, cube cover,
+        embroidered logo per thecubicle.com/products/cubehead-*). Not a cube manufacturer or
+        tuning line despite sharing TheCubicle's 'Premium' megamenu placement with FZ/Angstrom/
+        Mystic. No record created." }
   - { name: "AJ",           slugs: [aj] }
   - { name: "Lee",          slugs: [lee] }
   - { name: "Max",          slugs: [max, max-lubes, max-lube-system], note: "Almost certainly a lubricant brand, not a cube manufacturer." }
@@ -103,9 +179,21 @@ long_tail_candidates:
 # ---------------------------------------------------------------- service / modifier candidates
 service_candidates:
   - { name: "Angstrom Research", slugs: [angstrom, angstrom-research, angstrom-studio],
-      note: "TheCubicle's coating and setup line. Likely kind: service, possibly parent_id: thecubicle, mirroring cubicle-labs. Verify rather than assume." }
+      status: "RESOLVED — verified, and the brief's own guess ('mirroring cubicle-labs') does
+        NOT hold. Unlike Cubicle Labs (its own name, founder, logo, third-party credit),
+        Angstrom Research has no independent founder, legal entity, or domain distinct from
+        TheCubicle — it sits in TheCubicle's own 'Premium' navigation menu alongside 'FZ',
+        'Mystic', 'Cubicle Pro Shop' as a named in-house big-cube (4x4-7x7) tuning line. Recorded
+        as an alias on data/manufacturers/thecubicle.yml, not its own manufacturer record." }
   - { name: "FZ",            slugs: [fz, fz-lubricants],
-      note: "Unresolved prefix carried over from the GAN pass (fz-gan13-*, fz-gan15-*). The lubricant collection suggests a setup/service line rather than a manufacturer. May relate to FangShi. Genuinely open." }
+      status: "RESOLVED — 'FZ' is TheCubicle's own in-house premium tuning/setup-configuration
+        line (like 'Cubicle Pro Shop', 'Angstrom Research', 'Mystic'), applied to base cubes
+        from other manufacturers (documented on a GAN product this pass). It has NO relationship
+        to FangShi (data/manufacturers/fangshi.yml) — the shared two letters are coincidence.
+        No separate manufacturer record created; recorded as an alias on
+        data/manufacturers/thecubicle.yml, cited to thecubicle-premium-megamenu. Whether 'FZ'
+        specifically stands for Feliks Zemdegs is plausible but UNCONFIRMED — left as an open
+        lead, not a fact." }
 
 # ---------------------------------------------------------------- official domains checked
 # One CDX 'nearest' lookup each at 2022-01-01. A miss means this guessed domain has no capture,

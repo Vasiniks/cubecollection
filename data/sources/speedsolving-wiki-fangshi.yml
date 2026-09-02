@@ -1,0 +1,24 @@
+# source: speedsolving-wiki-fangshi
+# Speedsolving.com community wiki article on Fangshi. Tier 4 — corroborates only.
+id: speedsolving-wiki-fangshi
+entity: source
+kind: wiki
+title: "Fangshi — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/Fangshi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190915235742/https://www.speedsolving.com/wiki/index.php/Fangshi"
+excerpt: |-
+  Founding date: unknown. Describes "Shuang Ren" as a product line ("the Fangshi ShuangRen
+  3x3... later released in new sizes"), not the company name, and lists other product names in
+  Chinese characters (ShiShuang, XingYu). No native Chinese company name or "Funs" alias is
+  given on this page.
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, sparse, no citation trail. Corroborates FangShi as
+  a real puzzle-producing company with ShuangRen as its flagship product line, consistent with
+  thecubicle-fangshi-shuangren-v2. Does not itself confirm the 'Funs Puzzle' alias, which comes
+  only from the tier 2 retailer source."
+status: sourced

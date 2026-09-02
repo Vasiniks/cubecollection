@@ -1,0 +1,25 @@
+# source: speedsolving-wiki-shengshou
+# Speedsolving.com community wiki article on ShengShou. Tier 4 — corroborates only. Used for
+# the native Chinese name and brand-name meaning.
+id: speedsolving-wiki-shengshou
+entity: source
+kind: wiki
+title: "Shengshou — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/Shengshou"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260225062526/https://www.speedsolving.com/wiki/index.php/Shengshou"
+excerpt: |-
+  "ShengShou (traditional/simplified Chinese: 圣手 pinyin: shèngshǒu, pronounced SHENG-shoo)".
+  States the name means "divine hand" or more generally "a highly skilled practitioner". Founded
+  date on this page: "unknown". Notes ShengShou "first became widely known after the release of
+  the high-quality 4x4 cube" and was among the first to focus on large NxN cubes.
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail; gives founding as unknown, in
+  contrast with shengshoutoys-about-us-2018's explicit 2000 (parent company) / 2009 (brand)
+  dates. Used only for the native-name gloss, which the tier 1 source does not itself state in
+  Chinese characters."
+status: sourced

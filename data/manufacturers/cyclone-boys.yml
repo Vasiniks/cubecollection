@@ -1,0 +1,63 @@
+# manufacturer: cyclone-boys
+# Pass 1 (manufacturer register). Seen at SpeedCubeShop in the pass-0 sweep.
+
+id: cyclone-boys
+entity: manufacturer
+name: "Cyclone Boys"
+native_name: "旋风小子"
+kind: manufacturer
+country: CN
+aliases:
+  - "CycloneBoys"
+  - "MoYou"
+  - "Shenzhou Plastic Products Factory"
+notes: |-
+  **Identity.** Cyclone Boys' own storefront domain (cycloneboys.com, captured 2015) sells
+  cubes under both the "Cyclone Boys" and "MoYou" names interchangeably — e.g. "MoYou
+  (cycloneboys) Speeding cube 5.6cm 3x3x3 White" (cycloneboys-com-2015) — tier 1, first-party.
+  The Speedsolving wiki independently gives the native name "旋风小子" (XuanFeng XiaoZi) and
+  names the underlying manufacturer as "the Shenzhou plastic products factory, Chenghai
+  District, Shantou city, Lianxia town" (speedsolving-wiki-cyclone-boys) — tier 4, corroborating
+  only.
+
+  **"MoYou" is NOT "MoYu" — flagged explicitly against confusion.** The alias "MoYou" recorded
+  here is spelled and pronounced distinctly from "MoYu" (data/manufacturers/moyu.yml), a much
+  larger and entirely unrelated manufacturer. The two names are close enough in spelling that a
+  future researcher or an automated alias-collision check (QC rule 29) could mistake one for a
+  misspelling of the other; they are not. This is recorded here as a standing caution rather
+  than left to be rediscovered.
+
+  **Website uncertainty.** cycloneboys.com is confirmed as Cyclone Boys' own branded storefront
+  in 2015 (a domain-guess that succeeded, unlike the shengshou.com/diansheng.com cases above),
+  but a later 2016 capture shows the same domain defaced by a hacker group, and its current
+  (2026) live status was not re-verified this pass. `website` is left `unknown` rather than
+  citing a domain that may no longer belong to this brand.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [cycloneboys-com-2015]
+    note: "Cyclone Boys' own storefront selling its own branded cube products — tier 1,
+      sufficient alone."
+  /native_name:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cyclone-boys]
+    note: "Tier 4 only; not corroborated by a tier 1-2 source stating the Chinese characters
+      directly."
+  /country:
+    confidence: probable
+    sources: [cycloneboys-com-2015, speedsolving-wiki-cyclone-boys]
+    note: "Inferred from the .com storefront's product sourcing and the wiki's specific factory
+      location; no direct first-party statement of country/registration was found in the
+      capture reviewed."
+  /aliases:
+    confidence: probable
+    sources: [cycloneboys-com-2015, speedsolving-wiki-cyclone-boys]
+  /website:
+    confidence: unknown
+    note: "Researched and not found live: cycloneboys.com was confirmed as the brand's own
+      domain in 2015 but was defaced by 2016 and not re-verified as current. See notes."
+  /notes:
+    confidence: probable
+    sources: [cycloneboys-com-2015, speedsolving-wiki-cyclone-boys]

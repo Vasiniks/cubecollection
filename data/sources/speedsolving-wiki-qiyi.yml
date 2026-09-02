@@ -1,0 +1,25 @@
+# source: speedsolving-wiki-qiyi
+# Speedsolving.com community wiki article on QiYi. Tier 4 — corroborates only. Used for native
+# Chinese names.
+id: speedsolving-wiki-qiyi
+entity: source
+kind: wiki
+title: "QiYi — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=QiYi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260303165428/https://www.speedsolving.com/wiki/index.php?title=QiYi"
+excerpt: |-
+  "QiYi (Chinese: 奇艺), also known as MoFangGe (Chinese: 魔方格)." States founding date
+  "unknown". Lists X-Man Design under a "Sub-Brands" heading. States "Their development
+  platform, MoFangGe, was founded by cube inventor Du ChaoYu" to provide "a creation,
+  development platform to the outstanding designers which come from the whole world."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail. Used only to corroborate native
+  names ('奇艺', '魔方格') already implied by theqiyi-about-us's own English-language brand
+  names, and the X-Man Design sub-brand relationship already established at tier 1 by
+  theqiyi-about-us."
+status: sourced

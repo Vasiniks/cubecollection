@@ -1,0 +1,28 @@
+# source: speedsolving-wiki-dayan
+# Speedsolving.com community wiki article on DaYan. Tier 4 — corroborates only. Used for a
+# candidate founding year and an alias list.
+id: speedsolving-wiki-dayan
+entity: source
+kind: wiki
+title: "DaYan — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/DaYan"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250815111151/http://www.speedsolving.com/wiki/index.php/DaYan"
+excerpt: |-
+  "Founded: 2004". "DaYan is a Chinese brand designed by Daqing Bao (包大庆)." States the brand
+  name is properly "大雁" (a wild goose), using a different "yan" character than the designer's
+  username "大烟头" that dayancube.com's own site cites as the pinyin origin. "Dayan
+  collaborated with MF8, another Chinese company, to produce a 4x4x4 Cube." Aliases listed:
+  "大雁, DY, Big Goose, DaiYan, and TaiYan".
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail for the 2004 founding date, which
+  predates DaYan's own documented product history (GuHong/ZhanChi era, early 2010s) by several
+  years and is in tension with dayancube-official-2013's own '© Copyright 2011' footer.
+  Recorded as a disputed candidate rather than adopted outright — see the /founded attestation
+  on data/manufacturers/dayan.yml. Also gives a competing account of the brand-name character
+  (大雁 vs. dayancube.com's own '大烟头' pinyin-origin story) — both recorded."
+status: sourced

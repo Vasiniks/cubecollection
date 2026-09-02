@@ -1,0 +1,32 @@
+# source: moyucube-doc-2013-earliest
+# Earliest substantive capture of moyucube.com content found this pass (2013-08-05 dated news
+# item, captured 2015-01-03). Establishes the brand/site existed under this legal name and at
+# both moyucube.com and moyutoys.com by 2013 — years before the 2016 registration date reported
+# by baike-baidu-moyu.
+id: moyucube-doc-2013-earliest
+entity: source
+kind: manufacturer_official
+title: "魔域文化传播有限公司 — 公司动态 (company news, dated 2013-08-05)"
+publisher: "MoYu Culture Communication Co., Ltd."
+url: "http://www.moyucube.com/cn/doc_e.asp?option=view&MyWebDocId=1346"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150103233422id_/http://www.moyucube.com:80/cn/doc_e.asp?option=view&MyWebDocId=1346"
+excerpt: |-
+  <title>魔域文化传播有限公司</title> <meta name="keywords" content="魔域文化传播有限公司-www.moyucube.com，www.moyutoys.com" />
+  Article body, dated "2013-8-5 9:25:07": "参加比赛赢取大奖" ("Enter the competition, win a big
+  prize") — "到魔方论坛参加三速魔方线上赛。赢取500元奖金" ("Join the cube forum's 3x3 speed
+  online competition, win a 500-yuan prize").
+preservation_note: "Fetched directly from web.archive.org and decoded with iconv -f GBK -t
+  UTF-8; the site's declared charset is gb2312 and plain UTF-8 decoding of this capture
+  produces replacement characters."
+accessed: "2026-09-02"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party — establishes the company's own legal Chinese name and
+  its use of two domains (moyucube.com and moyutoys.com) by 2013, and that the dated content
+  (2013-08-05) existed under that name. It does not itself state a founding date; it is used
+  here only to establish activity by 2013, distinct from the 2016 company-registration date
+  reported elsewhere. See the /founded attestation on data/manufacturers/moyu.yml."
+status: sourced

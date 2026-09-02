@@ -1,0 +1,57 @@
+# manufacturer: lanlan
+# Pass 1 (manufacturer register). Chinese manufacturer seen at both retailers in the pass-0
+# sweep, known for shape-mod puzzles.
+
+id: lanlan
+entity: manufacturer
+name: "LanLan"
+kind: manufacturer
+country: CN
+founded:
+  value: "2009"
+  precision: year
+  qualifier: exact
+aliases:
+  - "Lanlan"
+  - "Lanlan Toy Co., Ltd."
+notes: |-
+  **Identity and founding.** No independently branded LanLan domain was located this pass
+  (`lanlan-puzzle.com`, the guess carried in the pass-0 domain sweep, and `lanlantoy.com` both
+  have no archive.org captures at all). The strongest first-party source found is
+  Lanlan Toy Co., Ltd.'s own self-authored company profile hosted on the made-in-china.com B2B
+  marketplace: "Lanlan toys is a manufactory which specilize in educational toys such as magic
+  cube, basketball and so on", giving founding year 2009 and location Chenghai, Shantou,
+  Guangdong (lanlantoy-made-in-china-profile) — classified `manufacturer_official` rather than
+  `marketplace` because the content is the company's own first-party self-description; see that
+  source's reliability_note for the justification this override requires. The Speedsolving wiki
+  independently gives the same founding year, "Founded: 2009" (speedsolving-wiki-lanlan) — tier
+  4, but agreeing with the tier 1 figure.
+
+  **Website left unknown.** Given the absence of a confirmed independent domain, `website` is
+  recorded as `unknown` rather than pointing at the made-in-china.com marketplace profile, which
+  is a vendor listing, not LanLan's own site.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [lanlantoy-made-in-china-profile]
+    note: "Company's own first-party description of its own manufacturing business, hosted on a
+      third-party B2B platform but authored by the company about itself — see the source's
+      reliability_note. Rule 9 satisfied by this single tier 1 source alone."
+  /country:
+    confidence: confirmed
+    sources: [lanlantoy-made-in-china-profile]
+  /founded:
+    confidence: confirmed
+    sources: [lanlantoy-made-in-china-profile, speedsolving-wiki-lanlan]
+  /aliases:
+    confidence: probable
+    sources: [lanlantoy-made-in-china-profile]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: neither lanlan-puzzle.com (the pass-0 domain guess) nor
+      lanlantoy.com has any archive.org capture."
+  /notes:
+    confidence: probable
+    sources: [lanlantoy-made-in-china-profile, speedsolving-wiki-lanlan]

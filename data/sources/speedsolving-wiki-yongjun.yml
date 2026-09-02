@@ -1,0 +1,28 @@
+# source: speedsolving-wiki-yongjun
+# Speedsolving.com community wiki article on YongJun/YJ. Tier 4 — corroborates only. Used for
+# the MoYu-origin narrative and the MGC product line, which youngjoecube-about-us does not
+# mention.
+id: speedsolving-wiki-yongjun
+entity: source
+kind: wiki
+title: "YongJun — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=YongJun"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260214060202/https://www.speedsolving.com/wiki/index.php?title=YongJun"
+excerpt: |-
+  "YongJun (Chinese: 永骏, and often known as YJ)", also referred to as "Yongjun Plastic
+  Products Factory". Founded "unknown", "Years Active: 2010-present". "Around 2012 they also
+  created a separate sub-brand called MoYu as a production platform for third-party puzzle
+  designers, which is why you can see a YJ logo on all MoYu boxes today." Describes the MGC,
+  "released May 2018", as YJ's own budget-flagship line with "a strong magnetic positioning
+  system", later followed by "MGC V2" and "MGC Elite".
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail. Corroborates the MoYu/YJ
+  historical relationship already recorded (at tier 4) in data/manufacturers/moyu.yml, and is
+  the only source located this pass naming MGC as a YJ product line rather than a separate
+  company — consistent with the pass-0 brief's existing product_lines_not_manufacturers entry."
+status: sourced
