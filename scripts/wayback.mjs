@@ -22,10 +22,21 @@ const flag = (name, dflt) => {
   return i === -1 ? dflt : rest[i + 1];
 };
 
-async function http(url) {
-  const res = await fetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(45000) });
-  if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-  return res.text();
+async function http(url, timeoutMs = 90000) {
+  try {
+    const res = await fetch(url, { headers: { 'user-agent': UA }, signal: AbortSignal.timeout(timeoutMs) });
+    if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
+    return res.text();
+  } catch (err) {
+    // A date-filtered CDX query over a heavily-crawled domain scans a lot before it answers.
+    // Say so, rather than reporting a bare "fetch failed" that looks like the domain has no
+    // captures at all — which is the opposite of the truth and the wrong conclusion to draw.
+    if (err?.name === 'TimeoutError' || /timeout/i.test(err?.message ?? '')) {
+      throw new Error(`timed out after ${timeoutMs / 1000}s. A --from/--to filter on a large `
+        + `domain is slow; try 'nearest <url> <YYYYMMDD>' for a bounded lookup, or drop the filter.`);
+    }
+    throw err;
+  }
 }
 
 async function cdx(params) {
