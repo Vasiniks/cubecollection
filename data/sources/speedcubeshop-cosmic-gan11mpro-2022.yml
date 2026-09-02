@@ -1,0 +1,33 @@
+# source: speedcubeshop-cosmic-gan11mpro-2022
+# SpeedCubeShop's own product page for a "Cosmic GAN 11 M Pro 3x3", archived 2022-04-22. Tier 2
+# retailer product/spec page, first-party for SpeedCubeShop's own service naming and its own
+# "Brand" spec field.
+id: speedcubeshop-cosmic-gan11mpro-2022
+entity: source
+kind: retailer
+title: "Cosmic GAN 11 M Pro 3x3 | Free Shipping Available – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/cosmic-gan-11-m-pro-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220422222935id_/https://speedcubeshop.com/products/cosmic-gan-11-m-pro-3x3"
+excerpt: |-
+  Product spec table: "Brand / SpeedCubeShop". Setup-tier selector: "Premium Setup: Cosmic —
+  Complete lube & tensioning service, Smooth & controllable turning, Free extended warranty &
+  storage bag" alongside lesser tiers described as "Partial lube & tensioning service, Fast &
+  light turning" and "Choose your own lubricants, stickers, coatings & more!" and "No
+  lubrication service, Tensions may be uneven". Description: "Let us use our 10 years of custom
+  cube experience to create something special for you. Cosmic cubes are consistently used to
+  break world records... From the core to the stickers..., there isn't a part of your Cosmic
+  cube that our experts do not improve. We are so confident in the durability of our service
+  that every Cosmic cube includes a 6-month extended warranty."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "First-party retailer product page naming SpeedCubeShop itself as the 'Brand'
+  of a cube physically produced by GAN, and describing 'Cosmic' as one tier of SpeedCubeShop's
+  own in-house lubrication/tensioning/tuning setup service applied at the point of sale — the
+  DATA_MODEL §1.3 definition of kind: service, and the same evidentiary pattern already used
+  for TheCubicle's in-house tuning lines (thecubicle-premium-megamenu)."
+status: sourced

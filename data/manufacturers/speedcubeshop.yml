@@ -1,0 +1,100 @@
+# manufacturer: speedcubeshop
+# Pass 1 (manufacturer register). A US retailer that also services/tunes other manufacturers'
+# cubes at multiple named tiers and sells the result under those tier names — kind: service per
+# DATA_MODEL §1.3, the same pattern already established for thecubicle. Resolves the pass-0
+# UniCube / Supernova / Cosmic house-line suspicion (see
+# research/staging/manufacturers/global-pass0-candidates.yml). Do not enumerate its setup tiers
+# or products as separate manufacturer records; that work (if any belongs at all) is pass 2's.
+
+id: speedcubeshop
+entity: manufacturer
+name: "SpeedCubeShop"
+kind: service
+country: US
+founded:
+  value: "2009"
+  precision: year
+  qualifier: exact
+aliases:
+  - "Speed Cube Shop"
+  - "SCS"
+  - "Cosmic"
+  - "Supernova"
+  - "UniCube"
+website: "https://speedcubeshop.com/"
+notes: |-
+  **Legal identity and founding.** SpeedCubeShop's own "About Us" page (archived 2016, content
+  unchanged in substance since): "In 2009, Cameron Brown (owner), was growing tired of dealing
+  with unreliable service and expensive shipping rates to order his cubes from Chinese
+  stores... Cameron's dream was to start the first USA-based cubing store" (speedcubeshop-
+  about-us-2016) — tier 1, first-party. The same page states "SpeedCubeShop is based in
+  California"; later material (general web search, not independently captured this pass) places
+  current operations in North Las Vegas, Nevada — a relocation within the US, not recorded as a
+  fact of its own beyond `country: US`.
+
+  **Why `kind: service`: the UniCube / Supernova / Cosmic finding.** These three names, flagged
+  in pass 0 as a suspected retailer house-line pattern, are confirmed as exactly that. Product
+  URL prefixes at speedcubeshop.com apply all three names across cubes from every manufacturer
+  in this register — e.g. `cosmic-gan-11-m-pro-3x3`, `unicube-moyu-rs3-m-2021-3x3-maglev`,
+  `supernova-mf3rs2-m-3x3` (a YJ MGC/MoFang JiaoShi RS2), `cosmic-diansheng-solar-s-2x2-
+  magnetic` — the same "apply a house name across every base manufacturer's products" pattern
+  already documented for TheCubicle's Cubicle Custom. Two independent product pages (a "Cosmic
+  GAN 11 M Pro 3x3" and a "UniCube GAN 11 M Pro 3x3", both first-party SpeedCubeShop pages) each
+  give a retailer spec-table field "Brand: SpeedCubeShop" — the retailer naming *itself*, not
+  GAN, as the brand of the finished product (speedcubeshop-cosmic-gan11mpro-2022,
+  speedcubeshop-unicube-gan11mpro-2020). A third page ("Supernova GAN 11 M Pro 3x3") gives the
+  same "Brand: SpeedCubeShop" field, checked but not separately cited as it would duplicate the
+  same finding a third time. The Cosmic page's own "Premium Setup" selector spells out what the
+  names are: tiered lubrication/tensioning/coating/sticker/warranty service options, with
+  "Cosmic" as the top tier ("Complete lube & tensioning service... Free extended warranty &
+  storage bag"), a lesser "Partial lube & tensioning service" tier, and a "Choose your own
+  lubricants, stickers, coatings & more!" tier, alongside "No lubrication service" (the
+  unmodified base cube). The page's own description states: "Let us use our 10 years of custom
+  cube experience to create something special for you... From the core to the stickers..., there
+  isn't a part of your Cosmic cube that our experts do not improve" (speedcubeshop-cosmic-
+  gan11mpro-2022) — first-party description of applying a modification/tuning service to a base
+  cube made by another manufacturer, the DATA_MODEL §1.3 definition of `kind: service`.
+
+  **Tier hierarchy, not resolved to a precise ranking this pass.** The three names plainly
+  correspond to different setup-tier price points (each base cube is sold three times over,
+  once per tier name, alongside an untuned "no service" option), but this pass did not establish
+  a definitive Cosmic > Supernova > UniCube ranking or precisely what differs between Supernova
+  and UniCube's service content beyond the Cosmic page's own selector text quoted above — left
+  for pass 2 if the archive ever needs to model SpeedCubeShop-serviced variants at that level of
+  detail.
+
+  **Not the same pattern as TheCubicle's named lines exactly.** TheCubicle's "FZ" / "Mystic" /
+  "Angstrom Research" are each a single premium tier per cube category (big cubes vs. 3x3s);
+  SpeedCubeShop instead runs three parallel tiers across its *entire* catalogue on every product
+  page, which is why the pass-0 `-magnetic` / `-non-magnetic` slug-split suspicion undersold the
+  pattern's actual size — it turned out to be three tiers times the whole catalogue, not two
+  magnet variants of one line.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [speedcubeshop-cosmic-gan11mpro-2022, speedcubeshop-unicube-gan11mpro-2020]
+    note: "Two independent first-party product pages, each stating SpeedCubeShop as the
+      product's own 'Brand' while describing a lubrication/tensioning/tuning service applied to
+      a cube physically produced by GAN — the DATA_MODEL §1.3 definition of kind: service,
+      sufficient alone per the confidence table (two independent tier 2 sources agreeing, both
+      first-party to the servicer)."
+  /country:
+    confidence: confirmed
+    sources: [speedcubeshop-about-us-2016]
+  /founded:
+    confidence: confirmed
+    sources: [speedcubeshop-about-us-2016]
+  /aliases:
+    confidence: confirmed
+    sources: [speedcubeshop-about-us-2016, speedcubeshop-cosmic-gan11mpro-2022, speedcubeshop-unicube-gan11mpro-2020]
+    note: "'Cosmic', 'Supernova', and 'UniCube' are tier 1/2, first-party in-house service-tier
+      names (see /notes), the same treatment already applied to TheCubicle's 'FZ' / 'Mystic' /
+      'Angstrom Research'."
+  /website:
+    confidence: confirmed
+    sources: [speedcubeshop-about-us-2016]
+  /notes:
+    confidence: probable
+    sources: [speedcubeshop-about-us-2016, speedcubeshop-cosmic-gan11mpro-2022, speedcubeshop-unicube-gan11mpro-2020]

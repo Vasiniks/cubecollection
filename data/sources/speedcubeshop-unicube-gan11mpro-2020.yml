@@ -1,0 +1,24 @@
+# source: speedcubeshop-unicube-gan11mpro-2020
+# SpeedCubeShop's own product page for a "UniCube GAN 11 M Pro 3x3", archived 2020-11-27. Tier 2
+# retailer product/spec page, first-party for SpeedCubeShop's own "Brand" spec field, cited to
+# corroborate the same finding as speedcubeshop-cosmic-gan11mpro-2022 across a second setup tier
+# name (independent product page, not a copy of the same wording).
+id: speedcubeshop-unicube-gan11mpro-2020
+entity: source
+kind: retailer
+title: "UniCube GAN 11 M Pro 3x3 – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/unicube-gan-11-m-pro-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20201127112407id_/https://speedcubeshop.com/products/unicube-gan-11-m-pro-3x3"
+excerpt: |-
+  Product spec table: "Product Type / 3x3 ... Brand / SpeedCubeShop ... Base Price:"
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Corroborates speedcubeshop-cosmic-gan11mpro-2022's 'Brand: SpeedCubeShop'
+  finding on a separately-named setup tier (UniCube) and a different base cube listing, not a
+  copy of the same page — same publisher, genuinely separate product page and capture."
+status: sourced

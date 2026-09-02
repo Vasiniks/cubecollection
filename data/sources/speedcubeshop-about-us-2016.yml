@@ -1,0 +1,29 @@
+# source: speedcubeshop-about-us-2016
+# SpeedCubeShop's own "About Us" page, archived 2016-01-11 (just before this archive's window
+# opens, but stating a founding fact that does not change retroactively). Tier 1, first-party
+# organisational self-description.
+id: speedcubeshop-about-us-2016
+entity: source
+kind: manufacturer_official
+title: "About Us – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/pages/about-us"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20160111113534id_/http://speedcubeshop.com:80/pages/about-us"
+excerpt: |-
+  "In 2009, Cameron Brown (owner), was growing tired of dealing with unreliable service and
+  expensive shipping rates to order his cubes from Chinese stores. Cameron's dream was to start
+  the first USA-based cubing store and help the cubing community get speedcubes quickly, and at
+  low prices. ... Since 2009, SpeedCubeShop has continued to grow year after year, earning the
+  trust of cubers world-wide. SpeedCubeShop is based in California."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "First-party organisational self-description (founding year, founder,
+  country), the same category already applied to thecubicle-about-us elsewhere in this
+  register. Later company material (general web search, not independently captured this pass)
+  places the operation in North Las Vegas, Nevada in more recent years — a relocation within
+  the US, not a change of country, and not cited as a fact here beyond /country."
+status: sourced

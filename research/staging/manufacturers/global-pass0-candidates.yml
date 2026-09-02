@@ -155,9 +155,18 @@ long_tail_candidates:
         data/manufacturers/thecubicle.yml, not its own record." }
   - { name: "Ninja",        slugs: [ninja] }
   - { name: "StuCube",      slugs: [stucube-collection] }
-  - { name: "UniCube",      slugs: [uni-cube, unicube-collection, unicube-magnetic], note: "May be SpeedCubeShop's own house line rather than an independent manufacturer — the -magnetic/-non-magnetic split resembles a retailer's own product tiering." }
-  - { name: "Supernova",    slugs: [supernova-series, supernova-magnetic], note: "Same suspicion as UniCube." }
-  - { name: "Cosmic",       slugs: [cosmic-cubes, cosmic-magnetic], note: "Same suspicion." }
+  - { name: "UniCube",      slugs: [uni-cube, unicube-collection, unicube-magnetic],
+      status: "RESOLVED — confirmed as one of SpeedCubeShop's own three in-house setup-tier
+        names (with Cosmic and Supernova), not an independent manufacturer. See
+        data/manufacturers/speedcubeshop.yml, kind: service. Two independent first-party
+        SpeedCubeShop product pages give a retailer spec-table field reading 'Brand:
+        SpeedCubeShop' on cubes physically produced by GAN, and the same three-name prefix
+        pattern (cosmic-/supernova-/unicube-) is applied across every manufacturer's products
+        sitewide, exactly mirroring TheCubicle's Cubicle Custom pattern one layer wider." }
+  - { name: "Supernova",    slugs: [supernova-series, supernova-magnetic],
+      status: "RESOLVED — same finding as UniCube. See data/manufacturers/speedcubeshop.yml." }
+  - { name: "Cosmic",       slugs: [cosmic-cubes, cosmic-magnetic],
+      status: "RESOLVED — same finding as UniCube. See data/manufacturers/speedcubeshop.yml." }
   - { name: "Haitun",       slugs: [haitun-waverider-v1] }
   - { name: "HuDong",       slugs: [hudong-light] }
   - { name: "Geranium Puzzles", slugs: [geranium-puzzles] }
