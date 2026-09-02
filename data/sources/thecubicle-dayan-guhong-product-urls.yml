@@ -1,0 +1,35 @@
+# source: thecubicle-dayan-guhong-product-urls
+# TheCubicle's own product URL structure for the GuHong line, enumerated via wayback CDX
+# `prefix` across 2019-2026 captures. Tier 2, first-party retailer naming, cited to close the
+# pass-0 "Guhong may have moved from DaYan to QiYi" lead.
+id: thecubicle-dayan-guhong-product-urls
+entity: source
+kind: retailer
+title: "thecubicle.com/products/dayan-guhong-* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-guhong-pro-m-3x3-54mm-maglev"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/dayan-guhong returns captures
+  spanning 2019-07-21 through 2026-03-07, every one under the "dayan-guhong-*" path: e.g.
+  dayan-guhong, dayan-guhong-3x3-v4-m, dayan-guhong-diy-kit, dayan-guhong-pro-3x3-54mm-maglev,
+  dayan-guhong-pro-m-3x3-54mm-maglev, dayan-guhong-pro-m-3x3-55mm-maglev, and further
+  standard/magnetic/maglev size variants — every GuHong-named product at this retailer, across
+  the full span of captures found, is named under the "dayan-" prefix with no "qiyi-guhong" or
+  similar path ever appearing.
+preservation_note: "The claim is the absence of a naming pattern across a CDX enumeration
+  output, which does not reduce to a single quotable sentence from one page; the CDX query
+  output itself (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/products/dayan-guhong --limit 40`) is preserved verbatim as the
+  excerpt."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer product naming, consistent across seven years
+  of captures. Closes a pass-0 lead that had speculated 'Guhong' might have moved from DaYan to
+  QiYi based on a collection-tag slug (guhong-pro-m-3x3) that turned out to be alphabetically
+  adjacent to unrelated 'g' collections, not evidence of a QiYi/X-Man relationship — see
+  data/manufacturers/dayan.yml notes."
+status: sourced

@@ -115,12 +115,31 @@ probable_sub_brands:
 # these would fracture the archive at the wrong layer, and is the single most likely error in
 # this pass.
 product_lines_not_manufacturers:
-  - { name: "Valk",     belongs_to: "QiYi",  note: "A product line from QiYi's collaboration with Mats Valk. A person and a line, not a company." }
-  - { name: "MGC",      belongs_to: "YJ",    note: "A YJ product line." }
-  - { name: "WeiLong",  belongs_to: "MoYu",  note: "A MoYu product line. TheCubicle slugs moyu-weilong-wrm-v9/v10 confirm the pairing." }
-  - { name: "TangLong", belongs_to: "MoYu",  note: "A MoYu product line." }
-  - { name: "Tornado",  belongs_to: "QiYi / X-Man", note: "Slugs tornado-v3, tornado-v4 sit beside x-man-designs." }
-  - { name: "Guhong",   belongs_to: "DaYan or QiYi", note: "Slug guhong-pro-m-3x3; historically a DaYan name. Investigate — the name may have moved between companies, which would be a notable identity finding." }
+  - { name: "Valk",     belongs_to: "QiYi",  note: "CONFIRMED (general web search, not
+      independently captured this pass): QiYi's own site theqiyi.com hosts a 'QiYi Valk 3'
+      product page directly. A product line from QiYi's collaboration with Mats Valk,
+      discontinued circa 2022 per general web search when Valk's contract with QiYi expired,
+      phased out in favour of X-Man Design. A person and a line, not a company." }
+  - { name: "MGC",      belongs_to: "YJ",    note: "CONFIRMED: YJ's own site (youngjoecube.com)
+      sells MGC-line products directly ('Speed Cube/MGC Magnetic Cube/Record Holder YJ Yongjun
+      Magic Cube', per general web search of the site's own title). A YJ product line, not a
+      company." }
+  - { name: "WeiLong",  belongs_to: "MoYu",  note: "CONFIRMED. TheCubicle slugs
+      moyu-weilong-wrm-v9/v10 use the literal prefix 'moyu-weilong-', not mere alphabetical
+      adjacency (contrast the Guhong false lead below) — genuine naming evidence of the
+      pairing." }
+  - { name: "TangLong", belongs_to: "MoYu",  note: "A MoYu product line; see data/manufacturers/moyu.yml notes (own-site listing)." }
+  - { name: "Tornado",  belongs_to: "QiYi / X-Man", note: "CONFIRMED via product naming, not
+      the collection-slug adjacency originally cited (which, per the Guhong finding below, is
+      not reliable evidence on its own). Every retailer product title located this pass reads
+      'QiYi X-Man Tornado V3' (Cubelelo, Walmart, eBay, MasterCubeStore, Mcubes — general web
+      search, not independently captured this pass), consistent with X-Man Design's existing
+      sub_brand-of-QiYi record." }
+  - { name: "Guhong",   belongs_to: "DaYan", note: "RESOLVED — no identity movement. The
+      guhong-pro-m-3x3 slug is a bare collection tag, alphabetically adjacent to unrelated 'g'
+      collections (geranium-puzzles, haitun-waverider-v1), not evidence of any QiYi/X-Man
+      relationship. TheCubicle's own product URLs consistently prefix every GuHong-named cube
+      dayan-guhong-* across 2019-2026 captures. See data/manufacturers/dayan.yml notes." }
 
 # ---------------------------------------------------------------- long tail, unverified
 # Seen once, or at one retailer, or ambiguous between brand / product / retailer line.

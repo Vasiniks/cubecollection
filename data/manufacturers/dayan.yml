@@ -52,13 +52,25 @@ notes: |-
   distinct, independent company from DaYan — relevant corroboration for
   data/manufacturers/mf8.yml — rather than a DaYan sub-brand or vice versa.
 
-  **Guhong lead, deferred.** The pass-0 brief flags "Guhong" as possibly having moved from DaYan
-  to QiYi (TheCubicle's `guhong-pro-m-3x3` slug). This pass confirms GuHong as an original DaYan
-  model name (DaYan II GuHong, in DaYan's own 2013 product list) but did not locate a source
-  establishing a transfer of the name to QiYi or explaining a later "Guhong Pro M" product under
-  a different manufacturer. Left as an open lead for pass 2 (model enumeration), which is where
-  a name moving between manufacturers' family/model trees would actually be resolved — this
-  register does not create model records.
+  **Guhong lead, closed — no identity movement found.** A previous pass-0 pass flagged "Guhong"
+  as possibly having moved from DaYan to QiYi, reasoning from a bare collection-tag slug
+  (`guhong-pro-m-3x3`) seen in an alphabetised list of retailer collections. Re-examining that
+  list (research/staging/manufacturers/thecubicle-collections-archived.txt) shows the slug
+  sitting between `geranium-puzzles` and `haitun-waverider-v1` — ordinary alphabetical
+  adjacency, not adjacency to `x-man-designs` (which sorts under "x"), so the original
+  "may have moved" hypothesis rested on a misread of the source list rather than any actual
+  co-location. Positive evidence points the other way: TheCubicle's own *product* URLs (not
+  collection tags) for every GuHong-named cube found in captures spanning 2019-2026 — the
+  original GuHong, GuHong V4 M, GuHong Pro, GuHong Pro M, in 54/55/56mm and maglev/magnetic/
+  standard variants — are consistently path-prefixed `dayan-guhong-*`
+  (thecubicle-dayan-guhong-product-urls), and general web search of speedsolving.com community
+  threads titled "DaYan GuHong Pro M" and "DaYan GuHong Pro+" corroborates the same continuous
+  DaYan attribution (general web search summary, not independently captured or cited as a
+  source). No source located this pass names a "QiYi Guhong" product at all. This lead is
+  closed: GuHong is a continuous DaYan model-family name from its 2011 debut (DaYan II GuHong)
+  through at least the Pro M generation, with no evidence of the name moving to another
+  manufacturer. Family/model-level enumeration of the GuHong line is pass 2's work, not this
+  register's.
 status: sourced
 
 attestations:
@@ -91,4 +103,4 @@ attestations:
     sources: [dayancube-official-2013]
   /notes:
     confidence: probable
-    sources: [dayancube-official-2013, speedsolving-wiki-dayan]
+    sources: [dayancube-official-2013, speedsolving-wiki-dayan, thecubicle-dayan-guhong-product-urls]
