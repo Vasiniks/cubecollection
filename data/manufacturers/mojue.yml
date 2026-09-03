@@ -1,0 +1,66 @@
+# manufacturer: mojue
+# Pass 1 (manufacturer register), Priority 3 — one of the seven names MoYu's own site
+# (moyucube-official-home-2022) lists alongside itself. No dedicated wiki page or independent
+# storefront was located this pass, unlike GuoGuan (see data/manufacturers/guoguan.yml); the
+# sub_brand reading here rests on structural analogy, stated as such, not as settled fact.
+
+id: mojue
+entity: manufacturer
+name: "MoJue"
+native_name: "魔爵"
+kind: sub_brand
+parent_id: moyu
+country: CN
+aliases:
+  - "Mo Jue"
+notes: |-
+  **Open question, stated plainly.** No dedicated Speedsolving wiki page, independent MoJue
+  domain, or storefront was located this pass — unlike GuoGuan, whose wiki page states its
+  sub-brand relationship to MoYu directly (data/manufacturers/guoguan.yml). Whether MoJue is a
+  genuine operating sub-brand or simply a MoYu-internal product-line name (the WeiLong/TangLong
+  treatment) is **not settled by this pass's evidence**. It is recorded here as `sub_brand`
+  because the available evidence pattern-matches GuoGuan's more strongly than it matches the
+  confirmed product-line cases:
+
+  1. MoYu's own site lists "魔爵" (MoJue) by name among a short set of house names in its own
+     page title, alongside GuoGuan and MoFang JiaoShi (moyucube-official-home-2022).
+  2. TheCubicle's archived product slugs show exactly one MoJue product found this pass,
+     `mojue-m3` — a standalone 3x3 name with no "moyu-" prefix, the same structural pattern
+     used to support GuoGuan's and PBCube's sub-brand status (contrast `moyu-weilong-*`, which
+     is consistently prefixed).
+
+  This is thin: a single product slug is much weaker evidence than GuoGuan's dedicated wiki
+  page and multi-product range. If a future pass finds either a direct relationship statement
+  or evidence that "M3" is simply catalogued as a MoYu product elsewhere, this record's `kind`
+  should be revisited.
+
+  **Product evidence.** `mojue-m3` (TheCubicle archived product slug) — a 3x3, not otherwise
+  described this pass. Pass-2 material.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+    note: "No source directly states the relationship type for MoJue specifically (contrast
+      GuoGuan). Recorded as sub_brand by structural analogy to GuoGuan (own-name product
+      without a moyu- prefix, grouped in MoYu's own house-name list) rather than by direct
+      evidence — see notes for the open question stated explicitly."
+  /parent_id:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /native_name:
+    confidence: probable
+    sources: [moyucube-official-home-2022]
+  /country:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /aliases:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independent MoJue domain located this pass."
+  /notes:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]

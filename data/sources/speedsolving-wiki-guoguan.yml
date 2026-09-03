@@ -1,0 +1,26 @@
+# source: speedsolving-wiki-guoguan
+# The Speedsolving.com Wiki's individual GuoGuan page. Directly states the sub-brand
+# relationship to MoYu — the strongest evidence found this pass for any of MoYu's seven
+# affiliated names, and used by analogy for the others in the same batch.
+id: speedsolving-wiki-guoguan
+entity: source
+kind: wiki
+title: "GuoGuan - Speedsolving.com Wiki"
+publisher: "Speedsolving.com Wiki"
+url: "https://www.speedsolving.com/wiki/index.php/GuoGuan"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200811155737id_/https://www.speedsolving.com/wiki/index.php/GuoGuan"
+excerpt: |-
+  "GuoGuan / Company / Founded: unknown / Location: China / Years Active: 2016-present / Areas
+  served: Worldwide / Website: [unknown] / Production / Products: Guoguan Xinghen 2x2, Guoguan
+  Yuexiao 3x3 and others / GuoGuan is a MoYu sub-brand made for cubes exclusively designed by
+  Guoquan Zhang (张国全)." Page last edited 4 May 2019 per the page's own footer.
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited wiki, no citation trail of its own for the
+  sub-brand claim. Direct and specific ('a MoYu sub-brand'), not a naming inference, which is
+  why it is treated as sufficient for `reported` rather than discarded — but never sufficient
+  alone for `confirmed` per DATA_MODEL §5.1."
+status: sourced

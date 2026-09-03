@@ -50,16 +50,32 @@ notes: |-
   manufacturer-to-manufacturer `succeeds`/spinoff relationship (see the GAN pilot's F2 finding
   in docs/pilot-audit.md) — this would need the same schema extension.
 
-  **Own-stated sub-brands.** MoYu's own site title tag (moyucube-official-home-2022) lists, by
-  Chinese name, alongside its numbered-cube product range: 魔方教室 (MoFang JiaoShi — see
-  data/manufacturers/mfjs.yml), 洋葱设计 (Cong's/Onion Design), 国冠 (GuoGuan), 魔爵 (MoJue),
-  魔幻手速 (MoHuan ShouSu), 乐涛 (LeTao), 森幻 (SenHuan), and 燕成 (YanCheng). Several of these
-  match long-tail candidates already carried in
-  research/staging/manufacturers/global-pass0-candidates.yml (MoHuanShouSu, SenHuan) under
-  ambiguous identity. This pass canonicalises only MoFang JiaoShi (the one flagged as a probable
-  sub-brand in the research brief); the remainder are annotated back into the backlog as
-  MoYu-affiliated leads rather than canonicalised, for lack of time this pass to verify each
-  individually — see the backlog file.
+  **Own-stated sub-brands — resolved (2026-09-02).** MoYu's own site title tag
+  (moyucube-official-home-2022) lists, by Chinese name, alongside its numbered-cube product
+  range: 魔方教室 (MoFang JiaoShi — see data/manufacturers/mfjs.yml), 洋葱设计 (Cong's/Onion
+  Design), 国冠 (GuoGuan), 魔爵 (MoJue), 魔幻手速 (MoHuan ShouSu), 乐涛 (LeTao), 森幻 (SenHuan),
+  and 燕成 (YanCheng). This pass individually canonicalised five of the seven as
+  `kind: sub_brand`, `parent_id: moyu`:
+
+  - **GuoGuan** (data/manufacturers/guoguan.yml) — the one name with a dedicated Speedsolving
+    wiki page stating the relationship directly ("a MoYu sub-brand"), used as the evidentiary
+    template for the rest.
+  - **MoJue, SenHuan, MoHuanShouSu, YanCheng** (their own records) — no dedicated wiki page or
+    direct relationship statement exists for any of these four; each is recorded `sub_brand` by
+    structural analogy to GuoGuan (a standalone product name, no "moyu-" retailer-slug prefix,
+    grouped in this same title tag) at `confidence: uncertain`, with the open question stated
+    explicitly in each record's notes rather than silently resolved. YanCheng's evidence is the
+    thinnest (a single, unconfirmed product slug).
+
+  **洋葱设计 (Cong's/Onion Design) and 乐涛 (LeTao) remain unresolved, no record created.**
+  Cong's Design has a real product range at TheCubicle (`congs-design-meichen-skewb`,
+  `-meichi-pyraminx`, `-meiying`, `-meiyu-4x4`, plus its own `congs-design-t-shirt` merch line)
+  but no 3x3 product was found among the slugs enumerated this pass, and no wiki page or direct
+  relationship statement was located — it is plausibly a designer/shape-mod sub-line rather
+  than a 3x3-relevant sub-brand, but this is not established. LeTao has no product-slug
+  evidence at all beyond appearing in this same title tag; nothing else was found this pass.
+  Both remain in research/staging/manufacturers/global-pass0-candidates.yml as open leads
+  rather than being force-fit into a record.
 
   **Product lines, not sub-brands.** WeiLong, AoLong, AoSu, AoChuang, TangLong are MoYu product
   lines (design/model families), not separate brands or companies — consistent with the

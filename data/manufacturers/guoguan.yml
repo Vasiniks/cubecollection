@@ -1,0 +1,78 @@
+# manufacturer: guoguan
+# Pass 1 (manufacturer register), Priority 3 — one of the seven names MoYu's own site
+# (moyucube-official-home-2022) lists alongside itself. Resolved this pass via a dedicated
+# Speedsolving wiki page that states the relationship directly, rather than by analogy.
+
+id: guoguan
+entity: manufacturer
+name: "GuoGuan"
+native_name: "国冠"
+kind: sub_brand
+parent_id: moyu
+country: CN
+founded:
+  value: "2016"
+  precision: year
+  qualifier: circa
+aliases:
+  - "Guoguan"
+  - "Guo Guan"
+notes: |-
+  **Parent relationship.** The Speedsolving wiki's dedicated GuoGuan page states directly:
+  "GuoGuan is a MoYu sub-brand made for cubes exclusively designed by Guoquan Zhang (张国全)"
+  (speedsolving-wiki-guoguan) — tier 4, but a specific, direct statement of the relationship
+  type, not an inference from naming or grouping. Corroborated by MoYu's own site
+  (moyucube-official-home-2022), which lists "国冠" (GuoGuan) among a short set of house names
+  in its own page title alongside its numbered-cube range and MoFang JiaoShi (see
+  data/manufacturers/moyu.yml).
+
+  **Product evidence.** TheCubicle's own archived product slugs (`guoguan-xinghen-2x2`,
+  `guoguan-xinghen-2x2-mhss-chuwen-2x2-sticker-set`, `guoguan-xinghen-2x2-tsm`,
+  `guoguan-xinghen-m-2x2`, `guoguan-yuexiao`, `-e`, `-edm`, `-pro`, `-pro-m`, `-unstickered`)
+  show a real, actively sold product range including at least one 3x3 (GuoGuan Yuexiao,
+  several magnetic/edition variants) — matching the wiki page's own product list ("Guoguan
+  Xinghen 2x2, Guoguan Yuexiao 3x3 and others"). None of these slugs carry a "moyu-" prefix,
+  unlike MoYu's own product lines (WeiLong, TangLong — see data/manufacturers/moyu.yml), which
+  is the same structural signal (a standalone brand identity in retailer naming, despite a
+  documented parent) used for the MFJS sub-brand determination. Pass-2 material, not
+  enumerated further here.
+
+  **This is the template used for the other MoYu-affiliated names in this batch** (MoJue,
+  SenHuan, MoHuanShouSu, YanCheng — see their own records) where no dedicated wiki page exists
+  and the sub_brand reading rests on the structural analogy to GuoGuan rather than a direct
+  statement. GuoGuan itself is the one name in the set with direct, specific evidence.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: reported
+    sources: [speedsolving-wiki-guoguan, moyucube-official-home-2022]
+    note: "A single tier 4 source states the relationship directly and specifically ('a MoYu
+      sub-brand'); MoYu's own tier 1 site corroborates only that the two names are grouped
+      together, not the precise legal relationship. Per the confidence table this is `reported`
+      (a tier 3-class specific claim, nothing contradicting), not `confirmed`, which would need
+      tier 1-2 support stating the relationship itself."
+  /parent_id:
+    confidence: reported
+    sources: [speedsolving-wiki-guoguan, moyucube-official-home-2022]
+  /native_name:
+    confidence: probable
+    sources: [moyucube-official-home-2022]
+  /founded:
+    confidence: uncertain
+    sources: [speedsolving-wiki-guoguan]
+    note: "Wiki page gives 'Founded: unknown' and 'Years Active: 2016-present' — recorded as
+      circa 2016 activity, not a stated founding, at the weakest usable confidence."
+  /country:
+    confidence: reported
+    sources: [speedsolving-wiki-guoguan, moyucube-official-home-2022]
+  /aliases:
+    confidence: probable
+    sources: [speedsolving-wiki-guoguan]
+  /website:
+    confidence: unknown
+    note: "Wiki page states 'Website: [unknown]'; no independent GuoGuan domain located this
+      pass either."
+  /notes:
+    confidence: reported
+    sources: [speedsolving-wiki-guoguan, moyucube-official-home-2022]

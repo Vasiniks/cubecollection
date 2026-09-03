@@ -1,0 +1,57 @@
+# manufacturer: senhuan
+# Pass 1 (manufacturer register), Priority 3 — one of the seven names MoYu's own site
+# (moyucube-official-home-2022) lists alongside itself. Also carried in the pass-0 long-tail
+# backlog under the same open question. See data/manufacturers/guoguan.yml for the template
+# this record follows and data/manufacturers/mojue.yml for the identical reasoning caveat.
+
+id: senhuan
+entity: manufacturer
+name: "SenHuan"
+native_name: "森幻"
+kind: sub_brand
+parent_id: moyu
+country: CN
+aliases:
+  - "Sen Huan"
+notes: |-
+  **Open question, stated plainly.** As with MoJue (data/manufacturers/mojue.yml), no
+  dedicated wiki page or independent SenHuan domain was located this pass. Recorded as
+  `sub_brand` by the same structural analogy to GuoGuan (data/manufacturers/guoguan.yml):
+  MoYu's own site lists "森幻" (SenHuan) among its house names (moyucube-official-home-2022),
+  and TheCubicle's archived product slugs show a real, standalone-named product range —
+  `senhuan-mars-3x3`, `senhuan-mars-s-3x3`, `senhuan-zhanlang-2x2`, `senhuan-zhanlang-2x2-
+  sticker-set`, `senhuan-zhanlang-m-2x2` — with no "moyu-" prefix on any of them, including at
+  least two distinct 3x3s (SenHuan Mars, Mars S). This is a stronger product range than
+  MoJue's single slug, but still no source directly states the relationship type, so this
+  remains an analogy, not a settled fact. If a future pass finds a direct statement either way,
+  revisit `kind`.
+
+  **Product evidence.** `senhuan-mars-3x3` and `senhuan-mars-s-3x3` — two named 3x3s. Pass-2
+  material, not enumerated further here.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+    note: "Same reasoning and caveat as data/manufacturers/mojue.yml: no source directly states
+      the relationship type for SenHuan specifically. Recorded sub_brand by structural analogy
+      to GuoGuan, not by direct evidence."
+  /parent_id:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /native_name:
+    confidence: probable
+    sources: [moyucube-official-home-2022]
+  /country:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /aliases:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independent SenHuan domain located this pass."
+  /notes:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]

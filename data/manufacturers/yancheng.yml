@@ -1,0 +1,51 @@
+# manufacturer: yancheng
+# Pass 1 (manufacturer register), Priority 3 — one of the seven names MoYu's own site
+# (moyucube-official-home-2022) lists alongside itself. See data/manufacturers/guoguan.yml for
+# the template this record follows and data/manufacturers/mojue.yml for the identical
+# reasoning caveat. The thinnest evidence of the four analogy-based records in this batch.
+
+id: yancheng
+entity: manufacturer
+name: "YanCheng"
+native_name: "燕成"
+kind: sub_brand
+parent_id: moyu
+country: CN
+aliases:
+  - "Yan Cheng"
+notes: |-
+  **Open question, stated plainly — thinnest evidence in this group.** Only a single product
+  slug was found this pass, `yancheng-yan3`, whose 3x3 status was not independently confirmed
+  by fetching the product page (not done this pass under time constraint — a lead, not a
+  finding). No dedicated wiki page or independent domain was located. Recorded as `sub_brand`
+  by the same structural analogy as MoJue/SenHuan/MoHuanShouSu (own name, no "moyu-" prefix,
+  grouped in MoYu's own house-name list at moyucube-official-home-2022), but this is the
+  weakest-evidenced of the four analogy records and should be the first revisited if new
+  evidence surfaces — including the basic question of whether "Yan3" is a 3x3 at all.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+    note: "No source directly states the relationship type for YanCheng specifically, and the
+      product evidence is a single unconfirmed slug. Recorded sub_brand by structural analogy
+      to GuoGuan, at the weakest defensible confidence in this batch."
+  /parent_id:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /native_name:
+    confidence: probable
+    sources: [moyucube-official-home-2022]
+  /country:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /aliases:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independent YanCheng domain located this pass."
+  /notes:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]

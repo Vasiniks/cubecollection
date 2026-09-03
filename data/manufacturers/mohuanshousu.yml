@@ -1,0 +1,53 @@
+# manufacturer: mohuanshousu
+# Pass 1 (manufacturer register), Priority 3 — one of the seven names MoYu's own site
+# (moyucube-official-home-2022) lists alongside itself. Also carried in the pass-0 long-tail
+# backlog under the same open question. See data/manufacturers/guoguan.yml for the template
+# this record follows and data/manufacturers/mojue.yml for the identical reasoning caveat.
+
+id: mohuanshousu
+entity: manufacturer
+name: "MoHuanShouSu"
+native_name: "魔幻手速"
+kind: sub_brand
+parent_id: moyu
+country: CN
+aliases:
+  - "MoHuan ShouSu"
+  - "Mo Huan Shou Su"
+notes: |-
+  **Open question, stated plainly.** Same evidentiary situation as MoJue and SenHuan (see
+  those records): no dedicated wiki page or independent domain located this pass. Recorded as
+  `sub_brand` by structural analogy to GuoGuan. MoYu's own site lists "魔幻手速" (MoHuan
+  ShouSu) among its house names (moyucube-official-home-2022); TheCubicle's archived product
+  slugs show `mohuan-shousu-chufeng-3x3` and `mohuan-shousu-chuwen-2x2` — a standalone-named
+  3x3 and 2x2 with no "moyu-" prefix. If a future pass finds a direct relationship statement
+  either way, revisit `kind`.
+
+  **Product evidence.** `mohuan-shousu-chufeng-3x3` — one named 3x3. Pass-2 material.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+    note: "Same reasoning and caveat as data/manufacturers/mojue.yml: no source directly states
+      the relationship type for MoHuanShouSu specifically. Recorded sub_brand by structural
+      analogy to GuoGuan, not by direct evidence."
+  /parent_id:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /native_name:
+    confidence: probable
+    sources: [moyucube-official-home-2022]
+  /country:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /aliases:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independent MoHuanShouSu domain located this pass."
+  /notes:
+    confidence: uncertain
+    sources: [moyucube-official-home-2022]
