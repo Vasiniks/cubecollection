@@ -301,3 +301,31 @@ exact launch date (only capture-date evidence, earliest 2020-09-18).
 `positioning`/`description`.
 
 ---
+## SenHuan — 1 family
+
+**Candidates considered:** SenHuan Mars (+ Mars S), SenHuan Zhanlang (2x2 — out of scope, not
+evaluated as a family).
+
+**Accepted (1):** `senhuan-mars` — one family across two generations. TheCubicle's own Mars S
+description frames it directly as a successor: "the new and improved version of the original
+SenHuan Mars ... a variety of design improvements on top of the unique small inner circle
+structure of the original," the same "one persisting name, direct succession language" pattern
+used for `guoguan-yuexiao` this session.
+
+**Sub-brand caution note — a non-finding, recorded for completeness.** Unlike MoJue and
+MoHuanShouSu this session, **neither** SenHuan product page found this pass restates a "MoYu
+sub-branded" claim. This is not evidence against the existing `data/manufacturers/senhuan.yml`
+parent-relationship reading (silence is not counter-evidence), but it means this manufacturer
+did not produce the same additional corroboration MoJue/MoHuanShouSu did — recorded honestly
+rather than implied.
+
+**Rejected:** SenHuan Zhanlang (2x2, out of 3x3x3 scope).
+
+**Unresolved questions:** exact launch date for the original Mars (only capture-date evidence);
+whether any further SenHuan 3x3 beyond Mars/Mars S exists (prefix sweep found none).
+
+**Sources added:** `thecubicle-senhuan-mars-3x3-2019`, `thecubicle-senhuan-mars-s-3x3-2019`.
+
+**Confidence:** `uncertain` on `introduced`/`positioning`; `reported` on `description`.
+
+---

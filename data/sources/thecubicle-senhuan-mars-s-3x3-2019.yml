@@ -1,0 +1,31 @@
+# source: thecubicle-senhuan-mars-s-3x3-2019
+# TheCubicle product page for the "SenHuan Mars S 3x3," archived 2019-07-21. Establishes Mars
+# S as a design-improved successor generation to the original SenHuan Mars, within one family.
+id: thecubicle-senhuan-mars-s-3x3-2019
+entity: source
+kind: retailer
+title: "SenHuan Mars S 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/senhuan-mars-s-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721002554id_/https://www.thecubicle.com/products/senhuan-mars-s-3x3"
+excerpt: |-
+  Product Description: "The SenHuan Mars S is the new and improved version of the original
+  SenHuan Mars. It features a variety of design improvements on top of the unique small inner
+  circle structure of the original SenHuan Mars, including more durable and elastic SWP
+  springs and a re-designed center piece." Marked "This product has been discontinued
+  indefinitely or we aren't sure when it will be back in stock." Structured "Product
+  Specifications": "Manufacturer: SenHuan / Type: 3x3 / Gross Weight: 172g / Added:
+  2018-09-11 / Dimensions: 56.5mm³."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Directly frames Mars S as an incremental design update ('a variety of design
+  improvements on top of the unique small inner circle structure of the original') rather
+  than an unrelated product — used to support treating Mars/Mars S as one family
+  (`senhuan-mars`) rather than two. The 'Added: 2018-09-11' field is treated as unreliable for
+  dating this product — see thecubicle-mojue-m3-2020's reliability_note."
+status: sourced

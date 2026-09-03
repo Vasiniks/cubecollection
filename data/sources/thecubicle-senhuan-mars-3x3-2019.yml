@@ -1,0 +1,33 @@
+# source: thecubicle-senhuan-mars-3x3-2019
+# TheCubicle product page for the original "SenHuan Mars 3x3," archived 2019-08-24. Discovery
+# via the second-layer product-slug sweep on thecubicle.com/products/senhuan*, following the
+# same method already used for HuaMeng/GuoGuan/MoJue/MoHuanShouSu this session.
+id: thecubicle-senhuan-mars-3x3-2019
+entity: source
+kind: retailer
+title: "SenHuan Mars 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/senhuan-mars-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824064628id_/https://www.thecubicle.com/products/senhuan-mars-3x3"
+excerpt: |-
+  Product Description: "The Mars 3x3 is the first cube produced by the SenHuan brand. It uses
+  a unique ultra-small inner circle design that is touted to increase stability and reduce
+  turning resistance. It also features high-precision molded 3-piece corners that allows for
+  stickerless versions. The puzzle is packaged in a large plastic case." Marked "This product
+  has been discontinued indefinitely or we aren't sure when it will be back in stock."
+  Structured "Product Specifications": "Manufacturer: SenHuan / Type: 3x3 / Gross Weight:
+  172g / Added: 2018-09-11 / Dimensions: 56.0mm³ / Item Weight: 90.0g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Unlike the equivalent MoJue and MoHuanShouSu pages found this session, this page does not
+  restate a 'MoYu sub-branded' claim for SenHuan — no additional corroboration of the existing
+  parent-relationship reading was found here, and none is claimed. The 'Added: 2018-09-11'
+  field is treated as unreliable for dating this product — see
+  thecubicle-mojue-m3-2020's reliability_note for the recurring-date pattern found across
+  several unrelated products this pass."
+status: sourced
