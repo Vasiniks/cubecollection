@@ -1,0 +1,27 @@
+# source: thecubicle-calvins-puzzle-manufacturer-filter
+# TheCubicle's own manufacturer-filtered collection page for "Calvin's Puzzle". Tier 2,
+# first-party retailer categorisation naming Calvin's Puzzle as a distinct manufacturer
+# (248 items filed under it at the time of access).
+id: thecubicle-calvins-puzzle-manufacturer-filter
+entity: source
+kind: retailer
+title: "Products – Filtered by \"Manufacturer: Calvin's Puzzle\" – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/all/manufacturer_calvins-puzzle"
+preservation_method: excerpt
+excerpt: |-
+  Page title and filter: "Manufacturer: Calvin's Puzzle" — 248 items listed under this
+  manufacturer filter at the time of access. No further descriptive text about the manufacturer
+  itself is present on the page.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "First-party retailer categorisation treating 'Calvin's Puzzle' as its own
+  distinct manufacturer (not a retailer house label), corroborated by the same brand being
+  filed as a manufacturer at multiple independent retailers (SpeedCubeShop, MasKeCubos, Cuboss,
+  CubeIn, Cubewerkz, JPearly — general web search, not independently captured this pass). Does
+  not establish country, founder, or founding date, which remain unknown/uncertain — see
+  hknowstore-calvins-puzzle-storefront for the weak lead on those."
+status: sourced

@@ -1,0 +1,31 @@
+# source: hknowstore-calvins-puzzle-storefront
+# hknowstore.com's own live storefront, fetched directly (not via wayback, no archived capture
+# located with usable content this pass). Tier 2 at best (a retailer/brand's own site), used
+# only to record an internally ambiguous location signal, not as confirmation of a fact.
+id: hknowstore-calvins-puzzle-storefront
+entity: source
+kind: retailer
+title: "Now Store — hknowstore.com"
+publisher: "Now Store / hknowstore.com"
+url: "https://www.hknowstore.com/"
+preservation_method: excerpt
+excerpt: |-
+  Storefront categories include "Calvin's Puzzles", "V-Cubes", "Meffert Puzzles", "Neocube", and
+  "Calvin's Lubes". Social media handle referenced: "calvin.nowstore". Contact channels listed:
+  WeChat, QQ, and WhatsApp with phone number +86 18025313298 (a mainland Chinese country code,
+  not Hong Kong's +852, despite the "hk" in the domain name and "HK" appearing in branding).
+preservation_note: "No archive.org capture with usable rendered content was found for this
+  domain in the time available this pass (captures exist but returned chrome/navigation only,
+  the same JS-rendering gap seen elsewhere in this pass for Shopify-style storefronts); fetched
+  live and preserved as an excerpt describing what was observed, including the internal
+  ambiguity itself (HK-branded domain vs. a mainland Chinese contact number) rather than
+  resolving it silently."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "The country signal in this single source is internally ambiguous (Hong Kong
+  domain/branding vs. mainland Chinese +86 contact number) and is not treated as confirming
+  either Hong Kong or mainland China; /country is left `unknown` on the manufacturer record
+  rather than picking one from a single conflicted source."
+status: sourced
