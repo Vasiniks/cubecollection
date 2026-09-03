@@ -1,0 +1,32 @@
+# source: thecubicle-limcube-fangshi
+# TheCubicle's own structured spec tables for three separately-named "LimCube"-branded
+# products, each independently listing "FangShi" as the structured Manufacturer field.
+
+id: thecubicle-limcube-fangshi
+entity: source
+kind: retailer
+title: "LimCube Fission Skewb / Master Mixup I / Hollow XO Cube – TheCubicle (three listings)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/limcube-fission-skewb"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230131025205/https://www.thecubicle.com/products/limcube-fission-skewb"
+excerpt: |-
+  "LimCube Fission Skewb" Product Specifications table: "Manufacturer / FangShi", "Type /
+  Shape Mods". The same "Manufacturer / FangShi" field, with the product itself named
+  "LimCube [...]", recurs on at least two further separately-fetched LimCube-branded listings
+  this pass: "LimCube Master Mixup I" (archive_url
+  https://web.archive.org/web/20230206164333/https://www.thecubicle.com/products/limcube-master-mixup-i)
+  and "LimCube Hollow XO Cube" (archive_url
+  https://web.archive.org/web/20230131043609/https://www.thecubicle.com/products/limcube-hollow-xo-cube).
+  None of the three product descriptions mentions FangShi in prose — only the structured spec
+  field does, consistently.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation, repeated identically across
+  three distinct products at the same retailer — strong internal consistency, but still one
+  publisher. Independent corroboration from a second retailer is recorded separately (see
+  speedcubeshop-fangshi-collection-2021)."
+status: sourced

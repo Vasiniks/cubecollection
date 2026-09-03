@@ -1,0 +1,35 @@
+# source: speedcubeshop-fangshi-collection-2021
+# SpeedCubeShop's own "fangshi" collection page and product URLs, titling several products
+# "FangShi limCube ..." directly — independent, second-retailer corroboration of the
+# FangShi/LimCube relationship found via TheCubicle's structured spec fields.
+
+id: speedcubeshop-fangshi-collection-2021
+entity: source
+kind: retailer
+title: "FangShi Collection – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/collections/fangshi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210923061037/https://speedcubeshop.com/collections/fangshi"
+excerpt: |-
+  Product listing titles under SpeedCubeShop's own "fangshi" collection include: "FangShi
+  limCube 2x2 Transform Pyraminx (Rhombohedron)", "FangShi limCube 2x2 Transform Pyraminx",
+  "FangShi limCube 2x2 Transform Pyraminx (Octahedron)", "FangShi limCube 2x2 Transform
+  Pyraminx (Pyrastar)", "FangShi limCube 2x2 Frame Pyraminx". A later crawl (2025-01-03) of the
+  same collection also captures product URLs under this collection path named
+  `fangshi-limcube-2x2-frame-pyraminx`, `fangshi-limcube-2x2-transform-pyraminx-rhombohedron`,
+  `fangshi-limcube-cakez-2x2x2-skewb-mech`, `fangshi-limcube-hexagram-octahedron`, and
+  `fangshi-limcube-kaleidoscope-hex-prism`, filed alongside plain `fangshi-*` products
+  (fangshi-fission-skewb, fangshi-master-mixup-cube-v1 through v7, fangshi-xo-cube) under the
+  same top-level "fangshi" collection.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation, independent of TheCubicle
+  (different publisher, different wording — titles 'FangShi limCube X' rather than a separate
+  structured 'Manufacturer' field). Combined with thecubicle-limcube-fangshi, two independent
+  tier 2 sources agree that LimCube-named products are filed as FangShi's own, supporting
+  `confidence: confirmed` on the relationship per DATA_MODEL rule 9."
+status: sourced

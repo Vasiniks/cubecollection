@@ -1,0 +1,31 @@
+# source: thecubicle-newisland-lightning
+# TheCubicle's own product page and structured spec table for "Newisland Lightning",
+# establishing Newisland as a real 3x3-manufacturing name in the retailer's own
+# categorisation.
+
+id: thecubicle-newisland-lightning
+entity: source
+kind: retailer
+title: "Newisland Lightning – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/newisland-lightning"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230131204530/https://www.thecubicle.com/products/newisland-lightning"
+excerpt: |-
+  "The Newisland Lightning is a high-quality 3x3 speedcube marketed by Newisland. It rotates
+  very smoothly right out of the box, and comes pre-lubricated from the factory." Product
+  Specifications table: "Manufacturer / Newisland", "Type / 3x3", added to the catalogue
+  2018-09-11, dimensions 56.5mm.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. Several customer reviews
+  independently describe the mechanism as effectively identical to the QiYi Thunderclap
+  ('It's the same as the thunderclap... Just with extra pieces and a set of poor quality
+  stickers.') — a plausible rebrand_of lead, but this is tier-4-equivalent customer opinion,
+  not a manufacturer statement or documented supply relationship, so no `rebrand_of`
+  relationship is recorded; left as an open lead for pass 2/4 per DATA_MODEL rule 17's
+  evidentiary requirement."
+status: sourced

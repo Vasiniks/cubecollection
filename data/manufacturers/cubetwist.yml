@@ -1,0 +1,42 @@
+# manufacturer: cubetwist
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1. Surfaced as a product-title
+# prefix (cubetwist-, 28 slugs, novelty/keychain cubes) in the second-layer sweep and named on
+# the Speedsolving wiki's aggregate manufacturer list.
+
+id: cubetwist
+entity: manufacturer
+name: "CubeTwist"
+kind: manufacturer
+aliases: []
+notes: |-
+  **Identity.** Named on the Speedsolving wiki's aggregate "List of manufactures" page
+  (tier 4, name-only mention, no individual page exists for CubeTwist specifically).
+  Independently corroborated by TheCubicle's own structured spec field
+  (thecubicle-cubetwist-star-cube, tier 2): "Manufacturer / CubeTwist" on the "CubeTwist 3x3
+  Star Cube."
+
+  **Product character.** Every CubeTwist-named product enumerated in the second-layer slug
+  sweep is a novelty or shape-mod variant: barrel cubes, double/triple/conjoined cubes,
+  keychain cubes, mirror blocks, house cubes, an "inequilateral 3x3," Square-1/2, and an Oskar
+  Gear 5x5. No standard WCA-legal 3x3 was found under the CubeTwist name this pass — this is a
+  novelty specialist in the same character as HelloCube, VeryPuzzle, and Calvin's Puzzle,
+  already canonicalised in this register on the same basis. Any specific product's
+  `scope_class` is a pass 2/4 question.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-cubetwist-star-cube]
+    note: "Tier 2 retailer structured field naming a real, specific product. The aggregate
+      Speedsolving wiki mention corroborates CubeTwist's general recognition as a manufacturer
+      name but is too thin (name-only, no individual page) to establish anything alone."
+  /country:
+    confidence: unknown
+    note: "Researched and not found this pass."
+  /website:
+    confidence: unknown
+    note: "No domain checked or located this pass."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-cubetwist-star-cube]

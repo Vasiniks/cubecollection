@@ -1,0 +1,42 @@
+# manufacturer: lefun
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1 backlog item (surfaced as a
+# product-title prefix, lefun-, 54 slugs, in the second-layer sweep and confirmed real via a
+# product-page fetch this session).
+
+id: lefun
+entity: manufacturer
+name: "LeFun"
+kind: manufacturer
+aliases:
+  - "Lefun"
+notes: |-
+  **Identity.** TheCubicle's own structured spec field (thecubicle-lefun-formula-3x3, tier 2):
+  "Manufacturer / Lefun", "Type / 3x3" on the "Lefun Formula 3x3" — a plain standard 3x3, not a
+  novelty variant. No first-party LeFun source (own domain, own About page) or independent
+  wiki page was located this pass; no Speedsolving wiki entry exists for LeFun individually.
+
+  **Product character.** The great majority of LeFun-named products enumerated in the
+  second-layer slug sweep are novelty and decorative 3x3 variants sold as gift items —
+  calendar cube, dollar-bill/hundred-dollar cube, gradient cube, sudoku cube, periodic-table
+  cube, Christmas- and Halloween-themed cubes, carbon-fibre gift-boxed sets — alongside
+  non-3x3 shape mods (fisher cube, windmill cube, dino cube, master pyraminx) and keychain
+  miniatures. "Formula 3x3" is the one plain standard-3x3 SKU located this pass under the
+  LeFun name, so LeFun is treated as a real, if largely novelty-focused, 3x3 manufacturer
+  rather than excluded — consistent with the "include broadly, decide scope later" instruction.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-lefun-formula-3x3]
+    note: "Single tier 2 retailer source, but specific and structured (names a real, plain
+      standard 3x3 as well as dozens of novelty variants), not a bare mention."
+  /country:
+    confidence: unknown
+    note: "Researched and not found this pass."
+  /website:
+    confidence: unknown
+    note: "No domain checked or located this pass."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-lefun-formula-3x3]

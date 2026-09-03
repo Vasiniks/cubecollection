@@ -1,0 +1,27 @@
+# source: thecubicle-cubestyle-4x4
+# TheCubicle's own product page for "CubeStyle 4x4", carrying a recurring product-description
+# phrase ("FangGe sub-branded") also found verbatim on the CubeStyle 3x3 listing.
+
+id: thecubicle-cubestyle-4x4
+entity: source
+kind: retailer
+title: "CubeStyle 4x4 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cubestyle-4x4"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241113115630/https://www.thecubicle.com/products/cubestyle-4x4"
+excerpt: |-
+  "The CubeStyle 4x4 is a FangGe sub-branded 4x4 that draws inspiration from other modern 4x4
+  cube mechanisms, yet it strikes a good balance between affordability and performance."
+  Product Specifications table: "Manufacturer / CubeStyle".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. The same 'FangGe sub-branded'
+  phrase recurs verbatim on the CubeStyle 3x3 listing, so this is TheCubicle's own consistent
+  description rather than a one-off error, but 'FangGe' is not independently identified this
+  pass — see data/manufacturers/cubestyle.yml notes for the open question (a plausible but
+  unconfirmed reading is a truncation of 'MoFangGe', QiYi's own in-house name)."
+status: sourced

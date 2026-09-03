@@ -1,0 +1,54 @@
+# manufacturer: limcube
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1 backlog item, and a genuine
+# sub-brand finding. Originally staged as an ambiguous "long tail" name (shape-mod specialist,
+# no manufacturer filter checked); resolved this session as a FangShi-branded line via two
+# independent retailers' own structured data.
+
+id: limcube
+entity: manufacturer
+name: "LimCube"
+kind: sub_brand
+parent_id: fangshi
+aliases:
+  - "Lim Cube"
+notes: |-
+  **Resolved as a FangShi line, not an independent manufacturer.** TheCubicle's own structured
+  spec field lists "Manufacturer: FangShi" — not "LimCube" — on every LimCube-named product
+  checked this pass: "LimCube Fission Skewb," "LimCube Master Mixup I," and "LimCube Hollow XO
+  Cube" (thecubicle-limcube-fangshi). None of the three product *descriptions* mentions FangShi
+  in prose, only the structured field — an internal-to-TheCubicle pattern that alone would be
+  one source. Independently, SpeedCubeShop files these exact products under its own top-level
+  "fangshi" collection and titles several of them "FangShi limCube ..." directly
+  (speedcubeshop-fangshi-collection-2021) — a second retailer, different wording, same
+  conclusion.
+
+  **Why `sub_brand` and not a bare product line.** LimCube carries its own distinct,
+  consistently-applied brand name across a substantial, coherent product range (skewb
+  variants, mixup cubes, a ghost cube, an XO cube) sold at two separate retailers under that
+  name specifically, which is the same evidentiary shape already used for PBCube (MoYu) and
+  X-Man Design (QiYi) in this register, rather than a plain descriptive line name like WeiLong
+  or TangLong. No independent LimCube legal entity, founder, or domain was found, consistent
+  with operating as FangShi's own sub-brand rather than a separate company.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [thecubicle-limcube-fangshi, speedcubeshop-fangshi-collection-2021]
+    note: "Two genuinely independent tier 2 sources (different retailers, different wording —
+      a structured spec field at one, product-title naming at the other) agree that LimCube is
+      FangShi's own line, satisfying DATA_MODEL rule 9's confirmed threshold."
+  /parent_id:
+    confidence: confirmed
+    sources: [thecubicle-limcube-fangshi, speedcubeshop-fangshi-collection-2021]
+    note: "Same evidence as /kind; satisfies rule 17's requirement of at least one tier 1-2
+      source for a relationship claim, here doubled."
+  /aliases:
+    confidence: uncertain
+    sources: [speedcubeshop-fangshi-collection-2021]
+  /website:
+    confidence: unknown
+    note: "No independent LimCube domain located or expected, given the sub-brand finding."
+  /notes:
+    confidence: confirmed
+    sources: [thecubicle-limcube-fangshi, speedcubeshop-fangshi-collection-2021]

@@ -1,0 +1,28 @@
+# source: thecubicle-cubestyle-3x3
+# TheCubicle's own product page and structured spec table for "CubeStyle 3x3", a real,
+# reviewed, currently-sold budget 3x3 (18 reviews at capture time).
+
+id: thecubicle-cubestyle-3x3
+entity: source
+kind: retailer
+title: "CubeStyle 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cubestyle-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240530043834/https://www.thecubicle.com/products/cubestyle-3x3"
+excerpt: |-
+  "The CubeStyle 3x3 is a FangGe sub-branded 3x3 that draws inspiration from other modern 3x3
+  cube mechanisms, yet it strikes a good balance between affordability and performance."
+  Product Specifications table: "Manufacturer / CubeStyle", "Type / 3x3". 18 customer reviews
+  at capture time, describing it as a budget (~$6) stickerless 3x3 compared favourably to the
+  Valk 3 and Warrior W.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation, with substantial customer
+  review activity confirming this is a genuinely sold, standard WCA-legal 3x3 (not a novelty
+  variant) — unlike most other CubeStyle products found in the same slug sweep (2x2 mirror
+  cube, axis cube, fisher cube), which are shape mods."
+status: sourced

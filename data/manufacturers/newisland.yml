@@ -1,0 +1,41 @@
+# manufacturer: newisland
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1 backlog item (surfaced as a
+# product-title prefix, newisland-lightning/-phoenix, 3 slugs, in the second-layer sweep).
+
+id: newisland
+entity: manufacturer
+name: "Newisland"
+kind: manufacturer
+aliases:
+  - "New Island"
+notes: |-
+  **Identity.** TheCubicle's own structured spec field (thecubicle-newisland-lightning, tier
+  2): "Manufacturer / Newisland", "Type / 3x3" on the "Newisland Lightning," and the product
+  description itself states "The Newisland Lightning is a high-quality 3x3 speedcube marketed
+  by Newisland." Added to TheCubicle's catalogue 2018-09-11, per the listing's own "Added"
+  field, placing this brand's known activity inside the archive window.
+
+  **Unresolved rebrand suspicion.** Several customer reviews describe the mechanism as
+  effectively identical to the QiYi Thunderclap ("It's the same as the thunderclap, but if you
+  like the unboxing experience and loose parts, I recommend this," "Yes, it is a thunderclap
+  but...."). This is a plausible `rebrand_of` lead but rests entirely on tier-4-equivalent
+  customer opinion, not a manufacturer statement or documented supply relationship — DATA_MODEL
+  rule 17 requires a tier 1-2 source for a `rebrand_of` claim, so none is recorded. Flagged
+  here for a pass 2/4 researcher to pursue with a direct comparison or manufacturer statement.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning]
+    note: "Single tier 2 retailer source, but specific: names a real, dated, reviewed product
+      as Newisland's own."
+  /country:
+    confidence: unknown
+    note: "Researched and not found this pass."
+  /website:
+    confidence: unknown
+    note: "No domain checked or located this pass."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning]

@@ -1,0 +1,25 @@
+# source: thecubicle-cubetwist-star-cube
+# TheCubicle's own product page and structured spec table for "CubeTwist 3x3 Star Cube",
+# corroborating CubeTwist as a real manufacturer name in the retailer's own categorisation.
+
+id: thecubicle-cubetwist-star-cube
+entity: source
+kind: retailer
+title: "CubeTwist 3x3 Star Cube – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cubetwist-3x3-star-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220118204042/https://www.thecubicle.com/products/cubetwist-3x3-star-cube"
+excerpt: |-
+  "The CubeTwist 3x3 Star Cube features lightweight construction, smooth turning, and textured
+  stickers." Product Specifications table: "Manufacturer / CubeTwist".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. Every other CubeTwist-named
+  product enumerated in the same slug sweep (double cube, triple cube, siamese/mirror cube,
+  house cube, square-1/2, master magic, oskar gear 5x5) is a novelty or shape-mod variant; no
+  standard WCA-legal 3x3 was found under the CubeTwist name this pass."
+status: sourced

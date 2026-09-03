@@ -1,0 +1,60 @@
+# manufacturer: cubestyle
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1. Surfaced as a product-title
+# prefix (cubestyle-, 35 slugs) in the second-layer sweep. NOTE: cubestyle.com is an unrelated
+# German seating-furniture company (Sitzwürfel/footstools) — a domain false lead, recorded here
+# so it is not walked again.
+
+id: cubestyle
+entity: manufacturer
+name: "CubeStyle"
+kind: manufacturer
+aliases: []
+notes: |-
+  **Identity.** TheCubicle's own structured spec field names "CubeStyle" as Manufacturer on
+  both a real, reviewed standard 3x3 (thecubicle-cubestyle-3x3, "CubeStyle 3x3", 18 reviews,
+  budget stickerless cube compared to the Valk 3) and a 4x4 (thecubicle-cubestyle-4x4). Both
+  product descriptions carry the identical phrase "is a FangGe sub-branded [3x3/4x4]" — tier 2,
+  recurring verbatim across at least two distinct products, so this is TheCubicle's own
+  consistent description, not a one-off typo.
+
+  **Open question, not resolved: what is "FangGe"?** No independent source naming a company
+  called "FangGe" was located this pass. The name is suggestively close to "MoFangGe"
+  (魔方格), which `data/manufacturers/qiyi.yml` already documents as one of QiYi's own in-house
+  line names ("the original company name... predating the QiYi/MoFangGe rebrand," alias
+  "MoFangGe"/"MoFangge"). If "FangGe" is TheCubicle's shorthand for MoFangGe, CubeStyle would
+  be QiYi-affiliated; equally plausible is that "FangGe" denotes some other, unidentified
+  manufacturer, or is itself a retailer shorthand error. Per the "unsure -> keep separate,
+  record the question" instruction, no `parent_id` is set and CubeStyle is recorded as its own
+  `kind: manufacturer`, not a `sub_brand` — a wrong split here is recoverable by merge; a wrong
+  merge onto QiYi would not be.
+
+  **cubestyle.com is NOT this manufacturer.** A 2020 capture of cubestyle.com resolves to a
+  German seating/footstool company ("Sitzwürfel, Sitzhocker, Hocker... von CUBESTYLE kaufen,"
+  Parthenstein, Germany) — an unrelated business sharing only the name. No independent
+  CubeStyle-the-cube-brand domain was located this pass.
+
+  **Scope.** Most CubeStyle products enumerated in the slug sweep are shape mods and
+  carbon-fibre novelty variants (axis cube, mirror cube, fisher cube, kilominx, mastermorphix);
+  "CubeStyle 3x3" and "CubeStyle 4x4" are the plain standard puzzles found.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-cubestyle-3x3, thecubicle-cubestyle-4x4]
+    note: "Same-publisher (TheCubicle) structured field, repeated across two distinct products
+      — internally consistent but a single independent source by the independence rule. No
+      first-party CubeStyle source located; cubestyle.com confirmed unrelated."
+  /country:
+    confidence: unknown
+    note: "Researched and not found. No source states CubeStyle's country of origin; its
+      products are consistent with the general Chinese-manufacturer cluster seen throughout
+      this pass, but that is an inference, not a stated fact, so left unknown rather than
+      guessed."
+  /website:
+    confidence: unknown
+    note: "cubestyle.com is confirmed unrelated (a German furniture company). No alternative
+      domain located."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-cubestyle-3x3, thecubicle-cubestyle-4x4]

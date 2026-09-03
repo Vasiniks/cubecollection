@@ -1,0 +1,25 @@
+# source: thecubicle-lefun-formula-3x3
+# TheCubicle's own product page and structured spec table for "LeFun Formula 3x3" — a plain,
+# standard 3x3 (not a novelty/decorative variant) under the LeFun name.
+
+id: thecubicle-lefun-formula-3x3
+entity: source
+kind: retailer
+title: "Lefun Formula 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-formula-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230129081452/https://www.thecubicle.com/products/lefun-formula-3x3"
+excerpt: |-
+  Product Specifications table: "Manufacturer / Lefun", "Type / 3x3".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. Most other LeFun-named
+  products enumerated in the same slug sweep are novelty/decorative 3x3 variants (calendar
+  cube, dollar-bill cube, gradient cube, holiday-themed cubes) or non-3x3 shape mods (fisher
+  cube, windmill cube, dino cube) — 'Formula 3x3' is the one plain standard-3x3 SKU located
+  this pass under the LeFun name."
+status: sourced
