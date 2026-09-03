@@ -1,0 +1,58 @@
+# model: qiyi-thunderclap-v2
+# Pass 3 (model enumeration). Explicit manufacturer-numbered successor to qiyi-thunderclap-v1,
+# per TheCubicle's own retailer copy calling it "the hotly-anticipated successor to the
+# original QiYi Thunderclap". See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-thunderclap-v2
+entity: model
+family_id: qiyi-thunderclap
+manufacturer_id: qiyi
+name: "QiYi Thunderclap V2"
+scope_class: core
+generation:
+  label: "Thunderclap V2"
+  ordinal: 2
+  basis: manufacturer_declared
+announced:
+  value: "2016"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 56.0
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi Thunderclap V2 Released
+  Mid 2016" (the same page elsewhere notes it was "generally inferior" to V1 in community
+  reception, a performance opinion not relied on for any spec or identity claim here).
+  TheCubicle's own retailer copy (thecubicle-qiyi-thunderclap-v2-product) independently and more
+  strongly frames it as "the hotly-anticipated successor to the original QiYi Thunderclap" and
+  notes a packaging change (clear plastic box in place of the cube bag). `size_mm: 56.0` (vs
+  the original's 56.5mm) is taken from that same retailer spec table.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('Mid 2016'); TheCubicle's capture carries only the 'Added: 2018-09-11'
+      artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v2-product]
+    note: "Both the manufacturer's own product name and TheCubicle's retailer copy use 'V2'
+      directly, and the retailer explicitly calls it a 'successor' — a manufacturer-declared
+      version signal per DATA_MODEL section 4.2, stronger than a bare community numbering
+      convention."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v2-product]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v2-product]
+    note: "'the hotly-anticipated successor to the original QiYi Thunderclap' is direct,
+      explicit tier-2 succession language."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-thunderclap-v2-product]
+relationships:
+  - type: succeeds
+    target: qiyi-thunderclap-v1
+    target_entity: model
+    note: "TheCubicle: 'the hotly-anticipated successor to the original QiYi Thunderclap'."

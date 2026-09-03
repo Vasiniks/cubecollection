@@ -1,0 +1,71 @@
+# model: qiyi-thunderclap-v1
+# Pass 3 (model enumeration). QiYi's original, unsuffixed "Thunderclap", independently
+# corroborated as a redesign succeeding qiyi-bullfight-original by both a tier-3(-overridden)
+# wiki source and, more strongly, TheCubicle's own tier-2 retailer copy. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-thunderclap-v1
+entity: model
+family_id: qiyi-thunderclap
+manufacturer_id: qiyi
+name: "QiYi Thunderclap"
+aliases:
+  - "LeiTing"
+  - "QiYi LeiTing"
+scope_class: core
+generation:
+  label: "Thunderclap"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 56.5
+description: |-
+  QiYi's original "Thunderclap" (LeiTing, 雷霆), per the Speedsolving wiki
+  (speedsolving-wiki-qiyi-products: "Released Mid 2015. The QiYi Thunderclap was an improved
+  version of the Bullfight"), independently corroborated at tier 2 by TheCubicle's own product
+  copy (thecubicle-qiyi-thunderclap-3x3-product: "The mechanism appears to be an improved
+  version of the QiYi Bullfight"). The two sources are worded differently rather than one
+  copying the other, so this is treated as genuine independent corroboration under RESEARCH_SPEC
+  3.2, not a single source counted twice.
+  `size_mm: 56.5` is taken from TheCubicle's spec table. No generation ordinal or version suffix
+  is used by either source for this earliest Thunderclap; "V2" and "V3/M" are both explicitly
+  numbered by contrast (see qiyi-thunderclap-v2 and qiyi-thunderclap-v3-m), so this model is
+  treated as the line's un-numbered first generation.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('Mid 2015'); TheCubicle's own capture of this product carries only
+      the 'Added: 2018-09-11' catalogue-migration artifact, which per this archive's standing
+      policy is never used as release-date evidence."
+  /generation/basis:
+    confidence: uncertain
+    note: "Neither source gives this model an explicit ordinal; treated as the family's earliest
+      identified design by elimination (V2 and V3/M are both explicitly numbered)."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-3x3-product]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-3x3-product, speedsolving-wiki-qiyi-products]
+    note: "TheCubicle's own words ('an improved version of the QiYi Bullfight') independently
+      corroborate the wiki's identical framing, raising this above the wiki-alone 'reported'
+      ceiling to 'probable' (one tier-2 source, uncontradicted, per the confidence table) while
+      stopping short of 'confirmed', which requires either a tier-1 source or two independent
+      tier-2 sources and this is one tier-2 plus one tier-3(-overridden) source."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-thunderclap-3x3-product]
+relationships:
+  - type: succeeds
+    target: qiyi-bullfight-original
+    target_entity: model
+    note: "'The mechanism appears to be an improved version of the QiYi Bullfight'
+      (TheCubicle, tier 2), corroborating the wiki's 'an improved version of the Bullfight'."

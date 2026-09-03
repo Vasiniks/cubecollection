@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-ms-3x3-product
+# TheCubicle's product page for the QiYi MS 3x3 (2025 capture). Tier 2, first-party retailer copy and spec table.
+id: thecubicle-qiyi-ms-3x3-product
+entity: source
+kind: retailer
+title: "QiYi MS 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-ms-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250108213425/https://www.thecubicle.com/products/qiyi-ms-3x3"
+excerpt: |-
+  Product Description: "The QiYi MS 3x3 is a magnetic 3x3 speed cube built for performance and economy. Part of QiYi's new economy \"MS\" line, this 3x3 features a clean, crispy feel that provides a super precise solving experience. The MS 3x3 is undoubtedly one of the best economy cubes ever produced, and has even caught the attention of competitive solvers." Product Specifications: Manufacturer QiYi; Type 3x3; Gross Weight 146g; Magnets Magnetic; Item Weight 81.8g. No Dimensions row at this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table, corroborating the Speedsolving wiki's positioning and existence claim for the MS 3x3 at a stronger tier. No Dimensions row appears in this particular capture's spec table, so `specs.size_mm` is left unset for the model rather than taken from the wiki's tier-3-only "56.5mm" claim, which RESEARCH_SPEC's S6 policy does not permit for a specification. "one of the best economy cubes ever produced" is marketing superlative, tier 4 under RESEARCH_SPEC 3.3, and is not treated as a specification or significance claim.
+status: sourced

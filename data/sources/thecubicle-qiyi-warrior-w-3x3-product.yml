@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-warrior-w-3x3-product
+# TheCubicle's product page for the QiYi Warrior W 3x3 (2025 capture). Tier 2, first-party retailer copy and spec table.
+id: thecubicle-qiyi-warrior-w-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Warrior W 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-warrior-w-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250427181426/https://www.thecubicle.com/products/qiyi-warrior-w-3x3"
+excerpt: |-
+  Product Description: "The QiYi Warrior W 3x3 is the new and improved version of the QiYi Warrior 3x3. Despite its economy price, the Warrior W stands out as an exceptionally smooth and solid speed cube right out of the box. Great as an inexpensive speed cube for both beginners and enthusiasts!" Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 85g; Dimensions 56.0mm; Item Weight 81.7g. ("Added: 2018-09-11" also appears in this table; per this archive's standing policy this catalogue-migration artifact is not used as a release date.)
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. "the new and improved version of the QiYi Warrior 3x3" is direct retailer-stated succession evidence, independent of and corroborating the Speedsolving wiki's own wording ("an updated version of the original Warrior 3x3"). `size_mm: 56.0` is taken from this table.
+status: sourced

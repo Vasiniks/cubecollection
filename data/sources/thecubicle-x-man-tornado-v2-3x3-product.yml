@@ -1,0 +1,20 @@
+# source: thecubicle-x-man-tornado-v2-3x3-product
+# TheCubicle's product page for the X-Man Tornado V2 (2021 capture). Tier 2, first-party retailer copy and spec table.
+id: thecubicle-x-man-tornado-v2-3x3-product
+entity: source
+kind: retailer
+title: "X-Man Tornado V2 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/x-man-tornado-v2-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210527155025/https://www.thecubicle.com/products/x-man-tornado-v2-3x3"
+excerpt: |-
+  Product Description: "The X-Man Tornado v2 is the latest 3x3 flagship release from QiYi. It is more stable than many other flagships and features a robust adjustment system with 125 total setting combinations. Use the free included tool to adjust tension, spring elasticity, and magnet strength. At 55mm, this cube is great for those who prefer slightly smaller puzzles." Product Specifications: Manufacturer X-Man Designs; Type 3x3; Gross Weight 300g; Dimensions 55.0mm; Magnets Magnetic; Item Weight 72.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table, corroborating (independently of the qiyi-mp family's wiki-sourced mention of "the X-Man Tornado V2... 54.5mm") that Tornado V2 is a genuine, distinct, magnetic 3x3 generation. This source gives 55.0mm rather than the wiki's 54.5mm; recorded as the retailer's own directly-measured spec-table figure, preferred per RESEARCH_SPEC's tier ordering over the wiki's uncorroborated number, and the wiki's competing figure is not used for `specs.size_mm`.
+status: sourced

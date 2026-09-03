@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-m-pro-v2-3x3-flagship-product
+# TheCubicle's product page for the QiYi M Pro V2 3x3 (Flagship) (2025 capture). Tier 2, first-party retailer copy and spec table for the explicitly re-numbered generation.
+id: thecubicle-qiyi-m-pro-v2-3x3-flagship-product
+entity: source
+kind: retailer
+title: "QiYi M Pro V2 3x3 (Flagship) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-m-pro-v2-3x3-flagship"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250409191232/https://www.thecubicle.com/products/qiyi-m-pro-v2-3x3-flagship"
+excerpt: |-
+  Product Description: "The QiYi M Pro V2 3x3 is a budget-friendly magnetic 3x3. This puzzle has tension (screw) and compression adjustment, and piece-to-piece magnetization. This is the Flagship version which has a matte finish." Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 128g; Dimensions 55.5mm; Magnets Magnetic; Item Weight 68.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. The retailer's own product slug and copy both use "V2" directly, a manufacturer-declared version signal per DATA_MODEL section 4.2; the description itself does not state a mechanism difference from the base M Pro beyond "piece-to-piece magnetization", so the model/identity claim rests on the version-numbering signal alone rather than an explicit succession statement, and is recorded at reduced confidence accordingly. `size_mm: 55.5` differs from the base M Pro's 55.0mm.
+status: sourced

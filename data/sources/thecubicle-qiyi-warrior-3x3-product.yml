@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-warrior-3x3-product
+# TheCubicle's product page for the original (unsuffixed) QiYi Warrior 3x3, captured while already discontinued. Tier 2, first-party retailer copy establishing the 'original Warrior' predecessor implied by Warrior W's own description.
+id: thecubicle-qiyi-warrior-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Warrior 3x3 - TheCubicle (2020 capture, discontinued)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-warrior-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918203109/https://www.thecubicle.com/products/qiyi-warrior-3x3"
+excerpt: |-
+  Page banner: "This product has been discontinued indefinitely or we aren't sure when it will be back in stock." Product Description: "The QiYi Warrior 3x3 is the 2nd release in QiYi's \"MoFangGe\" series of stickerless speedcubes. It cuts corners well and turns smoothly right out of the box." Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 100g. No Dimensions or Item Weight row given at this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer product description. The only source located this pass giving the un-suffixed "Warrior" its own product page and calling it QiYi's own "2nd release" in the MoFangGe stickerless line, which corroborates (independently of the Speedsolving wiki) that a distinct pre-"Warrior W" product genuinely existed and was sold, not merely implied by later marketing copy. No size or item-weight figure is given at this capture, so `specs.size_mm` is left unset for the corresponding model rather than inferred from a sibling product.
+status: sourced

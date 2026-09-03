@@ -1,0 +1,20 @@
+# source: thecubicle-valk-3-power-m-product
+# TheCubicle's product page for the Valk 3 Power M (2019 capture). Tier 2, first-party retailer copy explicitly describing it as a factory-magnetized version of the Valk 3 Power.
+id: thecubicle-valk-3-power-m-product
+entity: source
+kind: retailer
+title: "Valk 3 Power M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-3-power-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721133414/https://www.thecubicle.com/products/valk-3-power-m"
+excerpt: |-
+  Product Description: "The Valk 3 Power M is the newest 3x3 under the iconic Valk line by QiYi MoFangGe. The Valk Power features a dual vertical core, capped pieces, pure primary internals, and a very smooth and soft feel. This version has been pre-magnetized by the factory for a smooth and tactile solving experience." Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 231g; Dimensions 55.5mm; Item Weight 94.4g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "pre-magnetized by the factory" applied to the same "dual vertical core, capped pieces" description used for the base Power page is the worked-decision-A evidence for treating Power M as a variant of qiyi-valk-3-power, not a separate model.
+status: sourced

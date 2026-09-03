@@ -1,0 +1,20 @@
+# source: thecubicle-valk-4-m-strong-product
+# TheCubicle's product page for the Valk 4 M Strong (2019 capture). Tier 2, first-party retailer copy; the magnet-strength sibling of thecubicle-valk-4-m-standard-product, also a 4x4.
+id: thecubicle-valk-4-m-strong-product
+entity: source
+kind: retailer
+title: "Valk 4 M Strong - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-4-m-strong"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191209025624/https://www.thecubicle.com/products/valk-4-m-strong"
+excerpt: |-
+  Product Description: "The Valk 4 M is the first 4x4 in the iconic Valk line... This version has stronger magnets." Product Specifications: Manufacturer QiYi MoFangGe; Type 4x4; Gross Weight 324g; Dimensions 60.0mm; Item Weight 142.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table, confirming (via "Type: 4x4") that this is a magnet-strength configuration of the same 4x4 product as thecubicle-valk-4-m-standard-product, not a 3x3. Out of scope per RESEARCH_SPEC section 2.4; no model created.
+status: sourced

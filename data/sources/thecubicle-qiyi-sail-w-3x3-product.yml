@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-sail-w-3x3-product
+# TheCubicle's product page for the QiYi Sail W 3x3 (2025 capture). Tier 2, first-party retailer copy describing specific design changes.
+id: thecubicle-qiyi-sail-w-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Sail W 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-sail-w-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250317135505/https://www.thecubicle.com/products/qiyi-sail-w-3x3"
+excerpt: |-
+  Product Description: "The QiYi Sail W is a new budget friendly 3x3 speed cube. It features a reinforced mechanism to make it more sturdy and less accident prone. It also has new design features like a rounded off center cap to reduce catching. Overall, a solid choice for a speed cuber looking for an inexpensive yet reliable 3x3." Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 88g; Dimensions 56.0mm; Item Weight 79.5g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description naming specific design changes ("reinforced mechanism", "rounded off center cap") over the base Sail, supporting model-level (not merely configuration-level) treatment, though no source found this pass states directly that Sail W succeeds the original Sail by name (the "W" suffix pattern mirrors Warrior W's, a naming-analogy lead only). `size_mm: 56.0` is taken from this table, distinct from the original Sail's 56.5mm.
+status: sourced

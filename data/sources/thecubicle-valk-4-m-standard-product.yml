@@ -1,0 +1,20 @@
+# source: thecubicle-valk-4-m-standard-product
+# TheCubicle's product page for the Valk 4 M Standard (2019 capture). Tier 2, first-party retailer copy establishing this as a 4x4, not a 3x3 — an out-of-scope finding.
+id: thecubicle-valk-4-m-standard-product
+entity: source
+kind: retailer
+title: "Valk 4 M Standard - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-4-m-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190723131225/https://www.thecubicle.com/products/valk-4-m-standard"
+excerpt: |-
+  Product Description: "The Valk 4 M is the first 4x4 in the iconic Valk line. It measures a compact 60mm across... This version has lighter magnets." Product Specifications: Manufacturer QiYi MoFangGe; Type 4x4; Gross Weight 324g; Dimensions 60.0mm; Item Weight 142.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. "Type: 4x4" and "the first 4x4 in the iconic Valk line" are unambiguous: this is a 4x4x4 puzzle, out of scope per RESEARCH_SPEC section 2.4. No model is created for it under qiyi-valk in this pass.
+status: sourced

@@ -1,0 +1,20 @@
+# source: thecubicle-valk-5-m-product
+# TheCubicle's product page for the Valk 5 M (2019 capture). Tier 2, first-party retailer copy establishing this as a 5x5, not a 3x3 — an out-of-scope finding.
+id: thecubicle-valk-5-m-product
+entity: source
+kind: retailer
+title: "Valk 5 M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-5-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191020173350/https://www.thecubicle.com/products/valk-5-m"
+excerpt: |-
+  Product Description: "The Valk 5 M is a fast, smooth 5x5 from QiYi, famous for setting the current 5x5 single and average world records. The first magnetic 5x5 by QiYi..." Product Specifications: Manufacturer QiYi MoFangGe; Type 5x5; Gross Weight 340g; Dimensions 62.0mm; Item Weight 136.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. "Type: 5x5" and "a fast, smooth 5x5" are unambiguous. Out of scope per RESEARCH_SPEC section 2.4; no model created for it under qiyi-valk in this pass.
+status: sourced

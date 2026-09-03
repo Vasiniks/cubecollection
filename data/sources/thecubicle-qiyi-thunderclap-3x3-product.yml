@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-thunderclap-3x3-product
+# TheCubicle's product page for the original QiYi Thunderclap 3x3 (2020 capture). Tier 2, first-party retailer copy independently corroborating the Bullfight-to-Thunderclap succession.
+id: thecubicle-qiyi-thunderclap-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Thunderclap 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-thunderclap-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922074250/https://www.thecubicle.com/products/qiyi-thunderclap-3x3"
+excerpt: |-
+  Product Description: "The QiYi Thunderclap 3x3 is the latest speed cube in QiYi's MoFangGe series. The mechanism appears to be an improved version of the QiYi Bullfight. Out of the box, it turns smoothly and has a clacky feeling. It comes in a large box with a high-quality mesh cube bag." Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 127g; Dimensions 56.5mm; Item Weight 84.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "The mechanism appears to be an improved version of the QiYi Bullfight" independently corroborates, at tier 2, the Speedsolving wiki's tier-3 claim that Thunderclap succeeds Bullfight — the two sources are worded differently, so this is treated as genuine independent corroboration, not the same sentence copied twice (RESEARCH_SPEC 3.2). `size_mm: 56.5` is taken from this table.
+status: sourced

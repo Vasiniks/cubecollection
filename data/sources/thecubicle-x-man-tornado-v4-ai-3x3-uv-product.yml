@@ -1,0 +1,20 @@
+# source: thecubicle-x-man-tornado-v4-ai-3x3-uv-product
+# TheCubicle's product page for the X-Man Tornado V4 AI 3x3 UV (2025 capture). Tier 2, first-party retailer copy describing this as the smart/electronic sibling of the Tornado V4, and giving a size figure for the V4 platform.
+id: thecubicle-x-man-tornado-v4-ai-3x3-uv-product
+entity: source
+kind: retailer
+title: "X-Man Tornado V4 AI 3x3 UV (with Charging Base) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/x-man-tornado-v4-ai-3x3-uv-with-charging-base"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250913163308/https://www.thecubicle.com/products/x-man-tornado-v4-ai-3x3-uv-with-charging-base"
+excerpt: |-
+  Product Description: "Bring your speedcubing into the future with the X-Man Tornado V4 AI 3x3 UV — the smart upgrade of the world-renowned Tornado V4... Designed for Champions: Standard 55.5mm size for familiar, ergonomic control. Lightweight 76.5g frame... Sleek UV coating..." Includes a high-precision gyroscope, "magnetic foot positioning system", and a companion "Smart Player Pro APP". Product Specifications: Manufacturer X-Man Design; Type 3x3 Speed Cubes, Smart Cubes and Bluetooth; Gross Weight 405g; Magnets Magnetic.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "the smart upgrade of the world-renowned Tornado V4" is treated as evidence this shares the V4 mechanical platform with electronics added (a variant-level smart/mechanical difference per DATA_MODEL section 4.1's explicit list, not a separate model), consistent with the qiyi-m-pro family's own precedent for QiYi/X-Man smart siblings. "Standard 55.5mm size" is used, at reduced confidence given it describes this specific smart variant rather than the mechanical V4 M Flagship page directly, as the basis for x-man-tornado-v4's own `specs.size_mm`.
+status: sourced

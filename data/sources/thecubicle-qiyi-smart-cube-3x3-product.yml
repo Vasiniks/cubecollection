@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-smart-cube-3x3-product
+# TheCubicle's product page for the QiYi Smart Cube 3x3 (2025 capture). Tier 2, first-party retailer copy describing the electronic sibling the Speedsolving wiki links to 'M Pro Elite'.
+id: thecubicle-qiyi-smart-cube-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Smart Cube 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-smart-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250120100158/https://www.thecubicle.com/products/qiyi-smart-cube-3x3"
+excerpt: |-
+  Product Description: "Get the QiYi Smart Cube 3x3 to step up your cubing game! This puzzle, alongside the free 'Smart Player' app, can help you improve with three different modes: individual exercise, global 1v1, and room competition. This cube has hand-adjustable tensions and comes with 48 magnets in the corners and edges. It boasts over 800 hours of battery life and comes with a spare set of springs to adjust elasticity. Get yours today and start improving now! The stickerless version is built for speed and has squared-off corners for more control. The black version is the \"Art Version\" which has rounded corners and gives you a very nostalgic, black plastic with stickers look." Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes, Smart Cubes and Bluetooth; Gross Weight 160g; Magnets Magnetic.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. Does not itself use the name "M Pro Elite" or state a shared design with it; that link comes solely from the Speedsolving wiki (speedsolving-wiki-qiyi-products: "QiYi M Pro Elite... the non smart version of the Qiyi Smartcube. It featured the same adjustment system"), a single tier-3(-overridden) source with no retailer corroboration of the cross-reference specifically. Cited here only for the Smart Cube's own existence and description, at tier 2; the Elite/Smart-Cube shared-design claim itself remains `reported` on the wiki alone. "hand-adjustable tensions", "48 magnets in the corners and edges" describe the shared shell design in enough qualitative detail to support treating stickerless-squared and black-rounded ("Art Version") as configuration-level ('faces'/'body' colorway and corner-finish) differences, not separate designs, but this is flagged as a pass-4 (variant) question, not resolved here.
+status: sourced
