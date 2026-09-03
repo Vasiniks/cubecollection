@@ -1,0 +1,31 @@
+# source: thecubicle-maru-3x3
+# TheCubicle's own product page for the "Maru 3x3", liquidating old stock of a discontinued
+# product. Tier 2 retailer, but with unusually specific historical prose about the product's
+# age and discontinuation.
+
+id: thecubicle-maru-3x3
+entity: source
+kind: retailer
+title: "Maru 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230202211307/https://www.thecubicle.com/products/maru-3x3"
+excerpt: |-
+  "The original Maru 3x3 was one of the first cubes ever released by Maru several years ago.
+  While the puzzle has been discontinued for quite some time, we recently came across a
+  limited number of them, which we are liquidating at a reduced price." Product Specifications
+  table: "Manufacturer / Maru", dimensions 57.0mm, gross weight 141g. A customer review dates
+  the product's original release to approximately 2011 ("now, I already have one of these...
+  keep i[n] mind the weilong had[n]'t come out yet anyway... get it if you want a tast[e] of
+  2011").
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. Confirms Maru as a real,
+  historically early (circa 2011) 3x3 speedcube manufacturer whose flagship product was long
+  discontinued by the time of this listing. Does not establish whether Maru the company is
+  still active or has any ongoing production; that remains unknown."
+status: sourced

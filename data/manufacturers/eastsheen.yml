@@ -1,0 +1,72 @@
+# manufacturer: eastsheen
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1. Historically important
+# pre-2016 Taiwanese manufacturer, explicitly named in the closeout brief as a bracket case:
+# the archive claims 2016-2026 coverage, and Eastsheen's own website evidence suggests its
+# active web presence had substantially faded well before 2016, while a major English-language
+# retailer nonetheless kept selling an Eastsheen-branded 3x3 as late as 2025.
+
+id: eastsheen
+entity: manufacturer
+name: "Eastsheen"
+kind: manufacturer
+country: TW
+founded:
+  value: "1981"
+  precision: year
+  qualifier: exact
+aliases:
+  - "East Sheen"
+notes: |-
+  **Identity and history.** Speedsolving wiki (speedsolving-wiki-eastsheen, tier 4): "East
+  Sheen (or Eastsheen) is a puzzle manufacturer based in Taiwan founded by Chen Sen Li,"
+  founded 1981, based in Kaohsiung, "Years Active: 1981-Present." Historically known for
+  "Magic Cubes (commonly known as Eastsheen cubes), which are similar to Rubik's Cubes" but
+  "lighter, smaller and cheaper," recognisable by a purple/pink face replacing the usual
+  orange.
+
+  **Still sold within the archive window, contradicting a stray impression that Eastsheen
+  makes no 3x3s.** TheCubicle's own structured spec table for the "Eastsheen 3x3x3 Cube with
+  Wall Stickers" (thecubicle-eastsheen-wall-stickers, tier 2) reads "Manufacturer: Eastsheen"
+  and its own product description calls it "a standard Eastsheen 3x3" — captures of this exact
+  listing span 2021 through 2025, squarely inside this archive's window. This is treated as the
+  operative fact over the (undated, possibly outdated) wiki characterisation.
+
+  **Own-domain evidence is inconclusive, not contradictory.** eastsheen.com is a parked
+  domain-for-sale page in every capture checked across 2011-2016 (and frame-based/unreadable
+  in 2009), meaning the company's own website was not actively representing it for most, if
+  not all, of the years immediately preceding this archive's 2016 start. This does not
+  establish the company itself ceased operating — Chinese/Taiwanese toy manufacturers of this
+  era frequently sold through distributors without maintaining an English-language storefront
+  — but it does mean no first-party Eastsheen source was reachable this pass, and `ceased` is
+  left unknown rather than inferred from a dead domain alone.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-eastsheen-wall-stickers, speedsolving-wiki-eastsheen]
+    note: "Tier 2 retailer structured field, nothing contradicting, corroborated by tier 4
+      wiki. Not confirmed absent a first-party Eastsheen source."
+  /country:
+    confidence: reported
+    sources: [speedsolving-wiki-eastsheen]
+  /founded:
+    confidence: reported
+    sources: [speedsolving-wiki-eastsheen]
+  /ceased:
+    confidence: unknown
+    note: "Researched and not found. The company's own domain was already a parked page by
+      2011 and remained so through the archive window's start, but this is website evidence,
+      not company evidence, and a retailer was still selling an Eastsheen-branded 3x3 as late
+      as 2025. No statement of Eastsheen ceasing operations was located."
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-eastsheen]
+  /website:
+    confidence: unknown
+    note: "eastsheen.com is confirmed as a domain-parking/for-sale page in every capture from
+      2011 onward, and frame-based/unreadable in the one earlier capture checked (2009) — not
+      usable as the manufacturer's own site. No alternative official domain was located."
+  /notes:
+    confidence: probable
+    sources: [speedsolving-wiki-eastsheen, thecubicle-eastsheen-wall-stickers]

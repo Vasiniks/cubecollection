@@ -1,0 +1,66 @@
+# manufacturer: witeden
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1 (historically significant
+# older manufacturers). Found as a high-count product-title prefix (witeden-, 64 slugs) at
+# TheCubicle in the second-layer sweep, individually researched here.
+
+id: witeden
+entity: manufacturer
+name: "WitEden"
+native_name: "智力乐园"
+kind: manufacturer
+country: CN
+founded:
+  value: "2005"
+  precision: year
+  qualifier: exact
+aliases:
+  - "Wit Eden"
+  - "ZhiLi LeYuan"
+notes: |-
+  **Identity and history.** Speedsolving wiki (speedsolving-wiki-witeden, tier 4): native name
+  智力乐园 (ZhiLi LeYuan, "Intellectual paradise"), based in Guangzhou (Canton), China; started
+  in 2005 as "WitEden's Magic Shop"; around 2006 the founder created the "GuoBing" (Type C)
+  3x3x3 speedcube, which was popular circa 2007-2011; since 2010 the company has focused on
+  "unusual designs such as Crazy cubes, Super cubes, cuboids etc." Corroborated independently
+  by TheCubicle's own structured retailer data (thecubicle-witeden-mixup-plus, tier 2):
+  "Manufacturer: WitEden" on a mixup-shape-mod product, and dozens of further WitEden-branded
+  cuboid products (2x2x4 through 3x3x17 and beyond) enumerated in the second-layer product-slug
+  sweep, entirely consistent with the wiki's "unusual designs" characterisation.
+
+  **Scope note.** No standard WCA-legal 3x3 product from WitEden was located this pass — every
+  WitEden-branded product found at TheCubicle is a cuboid, mixup, or other shape-mod variant.
+  The historically significant "GuoBing (Type C)" 3x3x3 (2006-2011) predates this archive's
+  2016 start and was not re-confirmed as still sold within the 2016-2026 window; whether any
+  WitEden 3x3 belongs in the archive at all (and if so, at what `scope_class`) is a pass 2/4
+  question, not resolved here. Recorded broadly per the "include broadly, decide scope later"
+  instruction: this is a real, active (per TheCubicle listings into 2022) manufacturer whose
+  historical 3x3 contribution (GuoBing) is worth being able to identify and dismiss or admit
+  later, even if its present-day catalogue is shape-mod specialist.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [speedsolving-wiki-witeden, thecubicle-witeden-mixup-plus]
+    note: "Tier 4 wiki (specific: native name, founding year, founder history) corroborated by
+      an independent tier 2 retailer structured field. Not confirmed because no first-party
+      WitEden source (own domain, own About page) was located this pass."
+  /country:
+    confidence: reported
+    sources: [speedsolving-wiki-witeden]
+  /founded:
+    confidence: reported
+    sources: [speedsolving-wiki-witeden]
+  /native_name:
+    confidence: reported
+    sources: [speedsolving-wiki-witeden]
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-witeden]
+  /website:
+    confidence: unknown
+    note: "Researched and not found this pass: no witeden.com-equivalent domain was checked
+      independently; the wiki does not state one. Left unknown rather than guessed."
+  /notes:
+    confidence: probable
+    sources: [speedsolving-wiki-witeden, thecubicle-witeden-mixup-plus]

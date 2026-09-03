@@ -1,0 +1,26 @@
+# source: speedsolving-wiki-witeden
+# Speedsolving.com wiki's dedicated WitEden page. Tier 4 (unattributed community wiki).
+
+id: speedsolving-wiki-witeden
+entity: source
+kind: wiki
+title: "WitEden — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/WitEden"
+preservation_method: excerpt
+excerpt: |-
+  Infobox: "Founded: 2005. Location: GuangZhou, China. Years Active: 2006 to present."
+  Opening paragraph: "WitEden (智力乐园, ZhiLi LeYuan, literally 'Intellectual paradise') is a
+  puzzles manufacturer and wholesaler based in GuangZhou (Canton) China." The company "became
+  known between 2007-2011 for producing the Type C (GuoBing) 3x3x3 speedcube." "The business
+  started as WitEden's Magic Shop in 2005... Around 2006, the founder created the GuoBing
+  speedcube, which gained popularity in the speedcubing community. Since 2010, the company has
+  focused on manufacturing unusual puzzle designs, including cuboids, super cubes, and
+  specialty items like Mixup cubes and Wormhole puzzles."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Unattributed community wiki, tier 4 by default. Provides the native name,
+  founding year, location, and product-focus history found nowhere else this pass."
+status: sourced

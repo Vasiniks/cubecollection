@@ -1,0 +1,26 @@
+# source: thecubicle-witeden-mixup-plus
+# TheCubicle's own structured spec table for a WitEden-branded product, corroborating the
+# manufacturer identity independently of the Speedsolving wiki.
+
+id: thecubicle-witeden-mixup-plus
+entity: source
+kind: retailer
+title: "WitEden 3x3x3 Mixup Plus – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220517171802/https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+excerpt: |-
+  Product Specifications table: "Manufacturer / WitEden", "Type / Other". Sits alongside
+  dozens of other WitEden-branded cuboid and mixup-shape-mod products at the same retailer
+  (witeden-2x2x4-cuboid, witeden-3x3x10-i, witeden-3x3x3-mixup-edge-split, etc.), consistent
+  with the Speedsolving wiki's description of WitEden's post-2010 focus on unusual designs.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. No standard WCA-legal 3x3
+  product from WitEden was located this pass among the enumerated slugs; this is a pass-1
+  identity source only, not a pass-4 product survey."
+status: sourced

@@ -1,0 +1,22 @@
+# source: speedsolving-wiki-maru
+# Speedsolving.com wiki's dedicated Maru page. Tier 4 (unattributed community wiki).
+
+id: speedsolving-wiki-maru
+entity: source
+kind: wiki
+title: "Maru — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/Maru"
+preservation_method: excerpt
+excerpt: |-
+  Infobox: "Founded: unknown. Location: Taiwan. Years Active: unknown." Opening paragraph:
+  "Maru is a Taiwanese puzzle manufacturer."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Unattributed community wiki, tier 4 by default, and unusually thin even for
+  this tier (the wiki's own infobox marks founding and years active 'unknown'). Corroborated
+  by a maru.tw domain capture (2020) whose page title reads 'MARUCUBE小丸號官方網站', consistent
+  with a Taiwan-based cube-branded site, though no further page content survived that capture."
+status: sourced

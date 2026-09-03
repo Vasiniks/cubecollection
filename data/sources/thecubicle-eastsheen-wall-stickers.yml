@@ -1,0 +1,28 @@
+# source: thecubicle-eastsheen-wall-stickers
+# TheCubicle's own product page and structured spec table for the "Eastsheen 3x3x3 Cube with
+# Wall Stickers", confirming Eastsheen as a real, currently-sold-through cube manufacturer
+# within the archive window (captures 2021-2025).
+
+id: thecubicle-eastsheen-wall-stickers
+entity: source
+kind: retailer
+title: "Eastsheen 3x3x3 Cube with Wall Stickers – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/eastsheen-3x3x3-cube-with-wall-stickers"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230129085914/https://www.thecubicle.com/products/eastsheen-3x3x3-cube-with-wall-stickers"
+excerpt: |-
+  "The Eastsheen 3x3x3 Cube with Wall Stickers is a standard Eastsheen 3x3 with stickers
+  applied that have a marble texture look to them." Product Specifications table: "Manufacturer
+  / Eastsheen".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. Establishes that Eastsheen was
+  an active, currently-referenced cube brand at a major English-language retailer as late as
+  2025 (a further capture exists at that date), contradicting an ambiguous other-source
+  suggestion that Eastsheen 'does not produce 3x3 cubes' — resolved in favour of this direct,
+  specific, structured-field evidence."
+status: sourced

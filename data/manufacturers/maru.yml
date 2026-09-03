@@ -1,0 +1,56 @@
+# manufacturer: maru
+# Pass 1 (manufacturer register), Global Pass 0 closeout, Target 1. A historically early
+# (circa 2011) Taiwanese 3x3 manufacturer, surfaced as a product-title prefix (maru-, 37 slugs)
+# in the second-layer sweep and individually researched here.
+
+id: maru
+entity: manufacturer
+name: "Maru"
+kind: manufacturer
+country: TW
+aliases:
+  - "MaruCube"
+notes: |-
+  **Identity.** Speedsolving wiki (speedsolving-wiki-maru, tier 4, unusually thin even for
+  this tier): "Maru is a Taiwanese puzzle manufacturer," with founding and years-active both
+  marked "unknown" by the wiki's own infobox. Independently corroborated by TheCubicle's own
+  structured spec field (thecubicle-maru-3x3, tier 2): "Manufacturer: Maru." A `maru.tw` domain
+  capture from 2020 (title "MARUCUBE小丸號官方網站") is consistent with a Taiwan-based,
+  cube-branded website still resolving at that date, though no further page content survived
+  the capture to serve as a usable source.
+
+  **Historical and discontinued.** TheCubicle's "Maru 3x3" listing (thecubicle-maru-3x3)
+  describes it as "one of the first cubes ever released by Maru several years ago," long
+  discontinued by the time of the (2023-captured) listing, which was liquidating old stock. A
+  customer review independently dates the original product to approximately 2011 ("get it if
+  you want a tast[e] of 2011... the weilong hadn't come out yet"). This places Maru's known
+  flagship 3x3 product before this archive's 2016 start; whether Maru had later, in-window
+  3x3 products is unresolved — the domain capture (2020) suggests the company or its site
+  persisted into the archive window, but no specific later product was located this pass.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [speedsolving-wiki-maru, thecubicle-maru-3x3]
+    note: "Tier 4 wiki (thin) corroborated by an independent tier 2 retailer structured field
+      naming Maru as manufacturer of a real, specific historical product."
+  /country:
+    confidence: reported
+    sources: [speedsolving-wiki-maru]
+  /founded:
+    confidence: unknown
+    note: "Researched and not found. The wiki's own infobox marks this 'unknown'; a 2011
+      release date is documented for Maru's earliest known product but that is not the same
+      claim as the company's founding date."
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-maru]
+  /website:
+    confidence: unknown
+    note: "maru.tw resolved with a cube-branded title as of a 2020 capture but yielded no
+      further readable content this pass; not confirmed as the company's current or official
+      site with enough confidence to record."
+  /notes:
+    confidence: probable
+    sources: [speedsolving-wiki-maru, thecubicle-maru-3x3]

@@ -1,0 +1,28 @@
+# source: speedsolving-wiki-eastsheen
+# Speedsolving.com wiki's dedicated Eastsheen page. Tier 4 (unattributed community wiki, per
+# vocab/source-kinds.yml) — corroborates only, never establishes alone.
+
+id: speedsolving-wiki-eastsheen
+entity: source
+kind: wiki
+title: "East Sheen — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/Eastsheen"
+preservation_method: excerpt
+excerpt: |-
+  Infobox: "Founded: 1981. Location: Kaohsiung, Taiwan. Years Active: 1981-Present. Areas
+  served: Worldwide." Opening paragraph: "East Sheen (or Eastsheen) is a puzzle manufacturer
+  based in Taiwan founded by Chen Sen Li. They specialized in developing Magic Cubes (commonly
+  known as Eastsheen cubes), which are similar to Rubik's Cubes." The article further notes
+  Eastsheen cubes "are also much lighter, smaller and cheaper however Eastsheen cubes have the
+  habit to lock up sometimes. You can easily recognize Eastsheen cubes by their purple/pink
+  face, which is orange on a regular cube."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Unattributed community wiki, tier 4 by default. No web.archive.org capture
+  fetched for this specific page this pass (fetched live via WebFetch); the wiki itself notes
+  the article 'may be currently outdated' regarding new products. Provides founding/location/
+  founder detail found nowhere else this pass — corroborates only, does not establish alone."
+status: sourced

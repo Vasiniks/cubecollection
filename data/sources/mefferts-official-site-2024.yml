@@ -1,0 +1,32 @@
+# source: mefferts-official-site-2024
+# Meffert's own official homepage, archived. Tier 1, manufacturer_official — the company's own
+# statement of its founding, founder, and location.
+
+id: mefferts-official-site-2024
+entity: source
+kind: manufacturer_official
+title: "Home | Meffert's Puzzles"
+publisher: "Meffert's Puzzles & Games"
+url: "https://mefferts.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240102105259/http://mefferts.com/"
+excerpt: |-
+  "About US Our story began in 1970 when our founder Uwe Meffert, a German puzzle designer and
+  inventor created his first puzzle, the Pyraminx. Through it was not until 1981, that he
+  finally shared his invention with the world, to a roaring success, reaching over 100 million
+  homes in just 3 years... Meffert's Puzzles & Games. 2008 Remex Centre, 42 Wong Chuk Hang Rd,
+  Aberdeen, Hong Kong. © 2023 - Mefferts.com All rights reserved."
+accessed: "2026-09-02"
+published:
+  value: "2023"
+  precision: year
+  qualifier: exact
+language: en
+region: HK
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Own-site company history; tier 1 for the company's own founding/location
+  claims (self-reported, not independently audited). The site was mid-redesign at capture
+  time ('Sorry for the Wait... hitting some speedbumps'), so this is a placeholder page, not
+  a full product catalogue — sufficient for identity, not for product enumeration (pass 2)."
+status: sourced
