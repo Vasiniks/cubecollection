@@ -1,0 +1,56 @@
+# manufacturer: zcube
+# Pass 1 (manufacturer register). Long-tail candidate from research/staging/manufacturers/
+# global-pass0-candidates.yml. Weakly sourced — a single tier 4 wiki article is the only source
+# located this pass — recorded at `drafted`, the same treatment already given to fangshi and
+# fanxin elsewhere in this register for comparably thin sourcing.
+
+id: zcube
+entity: manufacturer
+name: "Z-Cube"
+kind: manufacturer
+country: CN
+aliases:
+  - "ZCube"
+  - "Z"
+notes: |-
+  **Identity.** The Speedsolving.com community wiki describes Z-Cube ("also known as ZCube or
+  Z") as "a twisty puzzle company that mainly sells budget puzzles and novelty cubes"
+  (speedsolving-wiki-zcube) — tier 4, the only source located this pass. No independent
+  Z-Cube-branded domain, About page, or company-registration record was found in the time
+  available.
+
+  **Notable and unusual: a documented rebrander.** The same wiki source states Z-Cube "often,
+  but not always, repackage[s] cubes from other brands such as QiYi and sell[s] them under a
+  different name," giving a specific example: "the Z Carbon Fiber 3x3 is a QiYi Warrior W
+  restickered with carbon fiber-style stickers (that are in fact made of vinyl)," and notes
+  "their repackaging of puzzles and their use of the term 'carbon fiber' has become
+  controversial." This is directly relevant to DATA_MODEL §4.4 (rebrands): if a future pass
+  confirms a specific Z-Cube product as a QiYi rebrand at tier 1-2, that product would get its
+  own variant record under Z-Cube's own model tree plus a `rebrand_of` relationship to the QiYi
+  original, per rule 17 — not collapsed into the QiYi product. Not actioned in this register,
+  which does not create model or variant records; flagged here so pass 2/4 does not have to
+  rediscover the lead.
+
+  **Founding and website unknown.** The wiki's own infobox states "Founded: unknown ... Website:
+  [???]" and marks its own page "currently outdated" — recorded here as `unknown`, researched
+  and not found, rather than left silently absent.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [speedsolving-wiki-zcube]
+    note: "Single tier 4 wiki source. No independent corroboration located this pass."
+  /country:
+    confidence: uncertain
+    sources: [speedsolving-wiki-zcube]
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-zcube]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: the only source located this pass explicitly states its
+      own website field is unknown."
+  /notes:
+    confidence: uncertain
+    sources: [speedsolving-wiki-zcube]

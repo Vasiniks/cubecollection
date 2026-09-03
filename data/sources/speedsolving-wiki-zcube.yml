@@ -1,0 +1,30 @@
+# source: speedsolving-wiki-zcube
+# Speedsolving.com community wiki article on Z-Cube/ZCube, archived 2020-08-07. Tier 4,
+# community-edited reference — corroboration only, but the only source located this pass
+# describing this company at all.
+id: speedsolving-wiki-zcube
+entity: source
+kind: wiki
+title: "Z-Cube - Speedsolving.com Wiki"
+publisher: "Speedsolving.com Wiki"
+url: "https://www.speedsolving.com/wiki/index.php/Z-Cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200807130509id_/https://www.speedsolving.com/wiki/index.php/Z-Cube"
+excerpt: |-
+  "Z, also known as ZCube or Z, is a twisty puzzle company that mainly sells budget puzzles and
+  novelty cubes. They often, but not always, repackage cubes from other brands such as QiYi and
+  sell them under a different name. For example, the Z Carbon Fiber 3x3 is a QiYi Warrior W
+  restickered with carbon fiber-style stickers (that are in fact made of vinyl). Their
+  repackaging of puzzles and their use of the term 'carbon fiber' has become controversial."
+  Infobox: "Founded: unknown / Location: China / Years Active: ??? / Website: [???]"
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited wiki, explicitly marked by its own editors as
+  'currently outdated' with founding date and website unknown even to the wiki. Sufficient
+  only to establish existence and a general description (a China-based budget/novelty puzzle
+  seller that frequently rebrands other manufacturers' products), not to confirm founding,
+  precise legal identity, or country beyond a general characterisation."
+status: sourced

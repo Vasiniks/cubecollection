@@ -1,0 +1,69 @@
+# manufacturer: cube4you
+# Pass 1 (manufacturer register). Long-tail candidate. Historically significant (one of the
+# earliest sellers of Chinese-manufactured speedcubes internationally, active before this
+# archive's 2016 window opens) and still operating a storefront within the window, though its
+# later product range shifted toward novelty/specialty puzzles. Weakly sourced — recorded at
+# `drafted`.
+
+id: cube4you
+entity: manufacturer
+name: "Cube4You"
+kind: manufacturer
+country: CN
+founded:
+  value: "2007"
+  precision: year
+  qualifier: circa
+aliases:
+  - "Cube For You"
+  - "C4U"
+  - "C4Y"
+website: "http://cube4you.com/"
+notes: |-
+  **Identity and history.** The Speedsolving.com community wiki (2010 capture, tier 4, the only
+  capture of this specific page found): "Founded: 2007 / Location: China ... Well known puzzle
+  shop, selling a wide range of products. Also manufactures the puzzles listed below" (C4U Cube,
+  Gigaminx, Teraminx) (speedsolving-wiki-cube4you-2010). A general web search summary (not
+  independently verified or cited as its own source) describes Cube4You as based in Shanghai and
+  significant circa 2007-2012 as a principal early online retailer of Chinese-manufactured
+  speedcubes, sold as DIY kits — consistent with, but not independently confirming beyond, the
+  wiki source.
+
+  **Still operating within the archive's window, but its product range shifted.** Direct wayback
+  browsing of cube4you.com (not itself cited as carrying a specific fact, since no single page
+  text beyond product-title enumeration was needed) shows the storefront active in captures from
+  2019 through at least 2022, but its listed products by then are "3D print chromium" puzzles,
+  metallized cuboids, and novelty items (e.g. a "braille-tile-3x3x3-cube"), rather than
+  mainstream WCA-legal 3x3 speedcubes of the kind the rest of this register covers. Whether
+  Cube4You sold a standard WCA-legal 3x3 within the 2016-2026 window specifically is not
+  established this pass; deferred to pass 2 (family/model enumeration), where any in-scope
+  products would carry the relevant `scope_class`.
+
+  **Founding year is approximate.** The wiki source gives "2007" with no citation of its own;
+  recorded as `circa` accordingly.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cube4you-2010]
+    note: "Single tier 4 wiki source, self-marked incomplete by its own editors. No independent
+      corroboration located this pass."
+  /country:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cube4you-2010]
+  /founded:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cube4you-2010]
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cube4you-2010]
+  /website:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cube4you-2010]
+    note: "The domain was live and carrying this exact URL as of a 2010 capture and remained
+      operative as of 2022 captures browsed this pass; not elevated to confirmed since no tier
+      1-2 source states it directly."
+  /notes:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cube4you-2010]
