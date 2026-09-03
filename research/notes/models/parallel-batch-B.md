@@ -329,3 +329,65 @@ whether any further SenHuan 3x3 beyond Mars/Mars S exists (prefix sweep found no
 **Confidence:** `uncertain` on `introduced`/`positioning`; `reported` on `description`.
 
 ---
+## YanCheng — 1 family
+
+**Open question from pass 1 resolved.** `data/manufacturers/yancheng.yml` explicitly flagged
+"the basic question of whether 'Yan3' is a 3x3 at all" as unconfirmed, since the product page
+had not been fetched. This pass fetched it: TheCubicle's own structured spec table states
+"Type: 3x3" and lists it under the site's own "3x3" navigation category — confirmed.
+
+**Candidates considered:** YanCheng YAN3 — the only YanCheng product-slug capture found at all
+(`thecubicle.com/products/yancheng*` returns exactly one URL).
+
+**Accepted (1):** `yancheng-yan3`, described by the retailer as "the first cube released by
+the YanCheng brand," with no second product, predecessor, or successor found.
+
+**Sub-brand caution note — another non-finding, recorded for completeness.** As with SenHuan,
+no "MoYu sub-branded" claim appears on this page — no additional corroboration of the existing
+`data/manufacturers/yancheng.yml` parent-relationship reading found here, and none claimed.
+
+**Rejected:** none — no second product to weigh.
+
+**Unresolved questions:** exact launch date (only a single, already-discontinued 2020 capture
+found; `circa 2018` recorded on weak, indirect grounds — see the family's own attestation
+note).
+
+**Sources added:** `thecubicle-yancheng-yan3-2020`.
+
+**Confidence:** `uncertain` on `introduced`/`positioning`; `reported` on `description`.
+
+---
+
+## Batch B complete — summary
+
+All eight assigned manufacturers researched: `cube4you` (1 family), `zcube` (0 — genuine
+finding), `huameng` (2), `guoguan` (1), `mojue` (1), `mohuanshousu` (1), `senhuan` (1),
+`yancheng` (1). **8 families total across 8 manufacturers.**
+
+**The single most important cross-cutting finding in this batch:** three of the five
+"structural-analogy-only" MoYu-affiliated manufacturers this task flagged for caution
+(`mojue`, `mohuanshousu`, and independently `guoguan`, whose relationship was already
+better-evidenced) turned out to have **direct, explicit "MoYu sub-branded" statements in
+TheCubicle's own retailer copy** — materially stronger evidence than the structural-analogy
+reasoning those manufacturer records currently rest on. `senhuan` and `yancheng` did **not**
+produce equivalent corroboration (their pages are silent on the relationship, which is not
+evidence against it either). **No manufacturer record was changed by me** — this is
+deliberately left for a human to review, per the task's explicit caution against upgrading
+corporate relationships during a family pass. The relevant sources are
+`thecubicle-mojue-m3-2020` and `thecubicle-mohuan-shousu-chufeng-2020`.
+
+**A second cross-cutting methodological finding:** the literal date string "Added: 2018-09-11"
+recurs verbatim across many unrelated products from at least six different brands checked this
+pass (GuoGuan YueXiao Pro, YueXiao Pro M, MoJue M3, MoHuan ShouSu ChuFeng, SenHuan Mars, SenHuan
+Mars S, YanCheng YAN3, several Z-brand items) — almost certainly a one-time TheCubicle
+catalogue-migration default rather than a genuine per-product listing date. Every `introduced`
+date in this batch was checked against this pattern and, where the only evidence was this
+specific date, downgraded to a weaker capture-date-based inference instead. Flagged prominently
+here because this same field is likely to mislead any other pass relying on TheCubicle's own
+"Added" spec-table field for a launch date without cross-checking for the same repeated value.
+
+**Cross-manufacturer leads not actioned (out of this pass's write lane):** `zcube`'s "Z
+Magnetic 3x3" (MFJS MF3RS base, magnetized by "Z-Cubes") and "Z Carbon Fiber 3x3" (QiYi Warrior
+W base, restickered) — see the Z-Cube section above.
+
+**Queue exhausted. Ready for reassignment.**

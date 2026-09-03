@@ -1,0 +1,51 @@
+# family: yancheng-yan3
+# Pass 2 (family enumeration). YanCheng's only found product, and the only YanCheng product
+# capture found at all this pass (`npm run wayback -- prefix thecubicle.com/products/yancheng`
+# returns exactly one URL). Resolves pass 1's own open question of whether "Yan3" is even a
+# 3x3 — confirmed here.
+
+id: yancheng-yan3
+entity: family
+manufacturer_id: yancheng
+name: "YanCheng YAN3"
+aliases:
+  - "Yan3"
+  - "YAN 3"
+introduced:
+  value: "2018"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  TheCubicle's own description (thecubicle-yancheng-yan3-2020): "The YAN3 is the first cube
+  released by the YanCheng brand. It has a unique gliding feel that makes turning feel
+  exceptionally effortless. The puzzle is packaged inside a special drawer-style box."
+  Confirmed by the same page's structured spec table as "Type: 3x3" — resolving pass 1's own
+  stated open question in `data/manufacturers/yancheng.yml` about whether this product is a
+  3x3 at all. Sold at $3.99 in multiple colourways (Black, White, Primary, Stickerless
+  Bright), and marked discontinued on the only capture found. No second YanCheng product,
+  predecessor, or successor was found this pass. No "MoYu sub-branded" claim is made on this
+  page (contrast MoJue and MoHuanShouSu this session) — no additional corroboration of or
+  contradiction to `data/manufacturers/yancheng.yml`'s existing parent-relationship reading
+  was found here.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-yancheng-yan3-2020]
+    note: "Only one capture (2020-09-27) was found; the product is already marked discontinued
+      on it, and is described as YanCheng's 'first cube', so an earlier actual release is
+      likely but not dated by any source found this pass. The product's own 'Added:
+      2018-09-11' spec-table field is deliberately not used — see
+      thecubicle-mojue-m3-2020's reliability_note for the recurring-date pattern found across
+      several unrelated products this pass — but is consistent with a 2018-ish release,
+      hence `circa 2018` rather than `circa 2020`."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-yancheng-yan3-2020]
+    note: "No source states a positioning tier; inferred `budget` from the $3.99 price point,
+      the lowest of any product found in this batch of six manufacturers."
+  /description:
+    confidence: reported
+    sources: [thecubicle-yancheng-yan3-2020]
