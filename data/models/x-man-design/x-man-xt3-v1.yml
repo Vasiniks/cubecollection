@@ -1,0 +1,54 @@
+# model: x-man-xt3-v1
+# Pass 3 (model enumeration). The only XT3 generation found this pass; a separate, cheaper-tier
+# X-Man Design line positioned explicitly against Tornado. Reuses the existing
+# thecubicle-x-man-xt3-v1-3x3-flagship-product source (created in pass 2) rather than fetching a
+# new one. See research/qc/pass3-agent-b-qiyi.md.
+id: x-man-xt3-v1
+entity: model
+family_id: x-man-xt3
+manufacturer_id: x-man-design
+name: "X-Man XT3 V1"
+scope_class: core
+generation:
+  label: "XT3 V1"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.0
+description: |-
+  Per TheCubicle's product page (thecubicle-x-man-xt3-v1-3x3-flagship-product): "The X-Man XT3
+  V1 3x3 (Flagship) is a 3x3 release from X-Man that gives you flagship features without the
+  flagship price... This is the Flagship version that has springs and a matte outer finish."
+  A staff reply on the same page states: "This cube has a simpler adjustment system than the
+  Tornado that makes this cube both cheaper and more durable" — evidence of a genuinely simpler,
+  distinct adjustment mechanism from Tornado, not merely a cheaper configuration of the same
+  design, supporting model-level (not variant-level) treatment relative to the Tornado line.
+  A customer review on the same page disagrees in the other direction ("it feels like a tv3 was
+  combined with a qiyi m pro (it even has the same pieces as tv3)"), quoted rather than
+  adjudicated, per that source's own reliability note — this tension is the evidence a future
+  pass would need to establish whether XT3 shares any tooling with Tornado V3; not resolved here.
+
+  No XT3 "V2" or later generation was located this pass (checked: x-man-xt3-v2, x-man-xt3-v2-3x3,
+  x-man-xt-3-v2-3x3-flagship — no snapshot found for any). "Flagship", "Flagship + UV", and
+  "Pioneer MagLev + UV" are the versions offered on the same product page and are treated as
+  variants of this one model, not separate models.
+  No dated release statement was found this pass; `announced`/`released` are left unset.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+    note: "The existing source record's own excerpt (written in pass 2) does not quote the spec
+      table; this pass directly re-fetched the same archived snapshot
+      (web.archive.org/web/20250930042853/.../x-man-xt3-v1-3x3-flagship) and confirmed its
+      Product Specifications table gives Dimensions: 55.0mm, Manufacturer: X-Man Design, Type:
+      3x3 Speed Cubes, Magnets: Magnetic, Item Weight: 65.0g. The archive_url preservation method
+      preserves the whole page, not only its excerpt, so this is a legitimate citation of the
+      same source rather than an unsourced addition; the existing source file is not edited,
+      per this pass's 'never overwrite a source created in another session' constraint."
+  /description:
+    confidence: reported
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
