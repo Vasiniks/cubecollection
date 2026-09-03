@@ -1,0 +1,29 @@
+# source: thecubicle-ninja-ghost-cube-2020
+# TheCubicle product page for the base "Ninja Ghost Cube," archived 2020-09-27 — checked
+# directly (rather than relying on the pass-1 manufacturer-filter summary alone) to test for
+# an aftermarket/rebrand base-model claim of the kind found for CubeStyle this session. None
+# was found.
+id: thecubicle-ninja-ghost-cube-2020
+entity: source
+kind: retailer
+title: "Ninja Ghost Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/ninja-ghost-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927043544id_/https://www.thecubicle.com/products/ninja-ghost-cube"
+excerpt: |-
+  Product Description: "The Ninja Ghost Cube is a very challenging 3x3 shape mod. This
+  particular variant features a unique transparent plastic color, as well as translucent
+  stickers in varying colors for a nice finishing touch. The puzzle is pre-lubricated from the
+  factory and turns well right out of the box." Structured "Specifications": "Manufacturer:
+  Ninja / Type: Shape Mods / Added: 2018-10-14 / Gross Weight: 141g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. No base-model or rebrand claim is made, unlike CubeStyle's equivalent decorated 3x3
+  listings checked this same session. Used to support the `ninja` zero-family finding as a
+  type (a) scope exclusion rather than a type (b) aftermarket case."
+status: sourced

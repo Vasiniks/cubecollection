@@ -1,0 +1,28 @@
+# source: speedcubeshop-ninja-ghost-cube-2019
+# SpeedCubeShop's own "Ninja Ghost Cube 3x3" product page, archived 2019-08-21 — an
+# independent second retailer confirming Ninja's product range is limited to Ghost Cube shape
+# mods, corroborating TheCubicle's own manufacturer-filter finding already in
+# data/manufacturers/ninja.yml.
+id: speedcubeshop-ninja-ghost-cube-2019
+entity: source
+kind: retailer
+title: "Ninja Ghost Cube 3x3 - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/ninja-ghost-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190821000000/https://speedcubeshop.com/products/ninja-ghost-cube-3x3"
+excerpt: |-
+  Product listing for "Ninja Ghost Cube 3x3", still live and re-captured through at least
+  2025. Full prefix enumeration (`speedcubeshop.com/products/ninja*`) returns 16 URLs, every
+  one this same single Ghost Cube product (with tracking-parameter variants) — no second Ninja
+  product or standard 3x3 SKU found under the Ninja name at this retailer.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer categorisation, independent of TheCubicle's
+  own manufacturer-filter source already in data/manufacturers/ninja.yml (different retailer,
+  different capture). Two independent tier 2 sources now agree Ninja's entire found product
+  range is Ghost Cube shape mods — used to support the `ninja` zero-family finding."
+status: sourced
