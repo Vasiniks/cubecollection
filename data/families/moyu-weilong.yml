@@ -1,0 +1,67 @@
+# family: moyu-weilong
+# Pass 2 (family enumeration). MoYu's continuously-succeeding flagship 3x3 line, the most
+# historically significant MoYu family in this archive's 2016-2026 scope. Treated as one
+# family across GTS/GTS2/GTS3/WR/WR M/V9/Super per the same "manufacturer/community numbered
+# succession is one family" reasoning applied to gan-flagship-series in the GAN pilot — here
+# the evidence is a single persisting name ("WeiLong") carried through every generation, which
+# is more direct evidence than GAN's bare numerals.
+
+id: moyu-weilong
+entity: family
+manufacturer_id: moyu
+name: "MoYu WeiLong"
+aliases:
+  - "WeiLong"
+  - "Weilong"
+introduced:
+  value: "2014"
+  precision: year
+  qualifier: circa
+positioning: flagship
+description: |-
+  MoYu's flagship 3x3 succession, sold continuously under the "WeiLong" name from its debut
+  (as an explicit, deliberate improvement on moyu-huanying, per speedsolving-wiki-moyu) through
+  at least the WeiLong V9 and WeiLong Super generations noted on the same wiki page (a March
+  2024 capture). The name recurs across every generation found — WeiLong V2, WeiLong GTS
+  (2016), GTS2 (2017), GTS3/3M/3LM (2018), WR/WR M (2019), WR M 2020, WR M 2021/2021 MagLev,
+  V9 (2023), Super (late 2023) — all under one shared, manufacturer-given name, which is
+  stronger direct evidence for treating this as one family than GAN's bare numerals (that
+  family instead relied on a manufacturer-drawn navigation grouping). TheCubicle's own current
+  "MoYu" brand collection independently confirms "WeiLong" as a live, retailer-recognised
+  family name as of a 2021 capture (thecubicle-com-moyu-3x3-collection-2021), listing GTS2 M,
+  GTS3 M, GTS3 LM, and WR M generations concurrently on sale.
+
+  **MoYu WeiLong AI**, described by the wiki as MoYu's first smartcube, sharing pieces with the
+  WR M 2020 generation, is treated here as a smart variant/model within this family rather than
+  a separate family — its own name carries "WeiLong" and its mechanism is explicitly the WR M
+  2020's. This is a pass-3 model-boundary question, not resolved further at this pass; flagged
+  in research/notes/models/global-pass2-families.md as a lead. `moyu-ai` (MoYu AI, released
+  2023) is deliberately kept as its own separate family — the wiki's own text states "Not to be
+  confused with the WeiLong AI" and describes a from-the-ground-up different app and product,
+  not a WeiLong-branded item.
+
+  Generation names, dates, and mechanism details above are pass-3 (model enumeration) material,
+  not resolved here — only the family boundary is decided at this pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]
+    note: "TheCubicle's AoLong-era captures place the WeiLong V2 as already sold by 2015 (seen
+      as a 'customers also bought' item on the 2015-10-04 TangLong sticker-page capture within
+      thecubicle-us-moyu-early-3x3-lines); the wiki's own 'WeiLong created after HuanYing'
+      narrative and its listing of 'WeiLong V2' before 'WeiLong GTS (2016)' place the original
+      WeiLong at approximately 2014. No source states an exact date, so recorded `circa`."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+    note: "The wiki repeatedly frames later WeiLong generations (V9, Super) as MoYu's premier
+      competitive line and TheCubicle's own collection groups WeiLong alongside 'Premium' /
+      'Angstrom Research' / 'Cubicle Pro Shop' tuned tiers, consistent with flagship
+      positioning. No manufacturer-first-party 'flagship' self-description was found this pass
+      (MoYu's own ASP-era site could not be read cleanly — ee research notes), hence `probable`
+      rather than `confirmed`."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]

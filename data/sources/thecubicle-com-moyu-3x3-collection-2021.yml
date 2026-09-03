@@ -1,0 +1,37 @@
+# source: thecubicle-com-moyu-3x3-collection-2021
+# TheCubicle's modern Shopify catalogue (thecubicle.com), "MoYu" brand collection filtered to
+# 3x3, captured 2021-01-14. Tier 2, first-party retailer naming. Used as pass-2 evidence that
+# "WeiLong" and "RS3 M" are the current, retailer-recognised MoYu 3x3 family names as of 2021,
+# each already spanning multiple generations at that date.
+id: thecubicle-com-moyu-3x3-collection-2021
+entity: source
+kind: retailer
+title: "MoYu – Filtered by \"Type: 3x3\" – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/moyu/type_3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210114060207id_/https://www.thecubicle.com/collections/moyu/type_3x3"
+excerpt: |-
+  Product-title listing (abridged to distinct family names) captured on this page: "MoYu RS3 M
+  2020 3x3", "MoYu WeiLong GTS3 M 3x3", "MoYu WeiLong WR M 3x3", "MoYu WeiLong GTS2 M 3x3",
+  "Angstrom WeiLong GTS3 M 3x3", "MoYu WeiLong WR M 2020 3x3", "Mystic WeiLong WR M 3x3", "Pro
+  Shop WeiLong GTS3 M 3x3", "Angstrom RS3 M 2020+ 3x3", "Mystic WeiLong GTS3 M 3x3", "Pro Shop
+  RS3 M 2020+ 3x3", "Angstrom WeiLong WR M 3x3", "MoYu WeiLong GTS2 M 3x3 (LE)", "MoYu WeiLong
+  GTS2 M 3x3 (WCA Record Edition)", "Mystic RS3 M 2020+ 3x3", "MoYu WeiLong GTS3 LM 3x3", "Pro
+  Shop Weilong WR M 3x3", "Celeritas WeiLong WR M 3x3", "Celeritas RS3 M 2020+ 3x3", "MoYu
+  WeiLong GTS3 3x3", "Celeritas WeiLong GTS3 M 3x3", "MoYu WeiLong WR 3x3", "Angstrom WeiLong WR
+  M 2020 3x3", "MAX RS3 M 2020+ 3x3". "Angstrom", "Mystic", "Pro Shop", "Celeritas", and "MAX"
+  are TheCubicle's own in-house tuned/customised product tiers applied to the same two base
+  MoYu lines, not separate manufacturer families.
+preservation_note: "Fetched via `npm run wayback -- get`; the excerpt reproduces the product
+  titles verbatim as listed."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer naming, current as of the 2021-01-14 capture.
+  Sufficient alone for `probable` confidence that WeiLong and RS3 M are real, persisting MoYu
+  3x3 family names; corroborated by the independent (tier 4) Speedsolving wiki article, which
+  gives the fuller generation history behind each name."
+status: sourced

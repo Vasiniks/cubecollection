@@ -1,0 +1,61 @@
+# source: thecubicle-us-moyu-early-3x3-lines
+# TheCubicle's early (pre-Shopify, "thecubicle.us") catalogue, 2013-2016 captures, directly
+# naming and retailing six distinct MoYu 3x3 product lines. Tier 2, first-party retailer
+# naming and dating, used as pass-2 (family enumeration) evidence for MoYu's early 3x3 history
+# alongside the Speedsolving wiki (speedsolving-wiki-moyu).
+id: thecubicle-us-moyu-early-3x3-lines
+entity: source
+kind: retailer
+title: "thecubicle.us product pages — MoYu HuanYing, LiYing, AoLong (V2), TangLong, DianMa, HuaLong"
+publisher: "TheCubicle"
+url: "http://thecubicle.us/moyu-huanying-p-606.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20130622054125id_/http://thecubicle.us:80/moyu-huanying-p-606.html"
+excerpt: |-
+  Six separately-named MoYu 3x3 product pages captured on thecubicle.us:
+
+  - "MoYu HuanYing" (http://thecubicle.us/moyu-huanying-p-606.html, captured 2013-06-22):
+    "The MoYu HuanYing, 'illusion shadow' in Chinese, is a speedy new 3x3 with unique design
+    features... This cube is very flexible and boasts excellent corner cutting."
+  - "MoYu LiYing" (http://thecubicle.us/moyu-liying-p-2153.html, captured 2014-03-05): titled
+    page, "MoYu LiYing", $15.00, category "3x3".
+  - "Cubicle AoLong V2" (http://thecubicle.us/cubicle-aolong-p-5091.html, captured
+    2015-09-18): "The Cubicle AoLong v2 is fast, clicky and sturdy... Original puzzle made by
+    MoYu." 57.0mm. Image-filename evidence on the same domain (moyuaolongb*.jpg,
+    moyuaolongv2b*.jpg, moyuaolonggtbtn*.jpg) additionally shows "AoLong", "AoLong V2", and
+    "AoLong GT" as three separate MoYu product names, consistent with the Speedsolving wiki's
+    "MoYu AoLong / AoLong V2 / AoLong GT" section headings. A separate sticker-only listing
+    (http://thecubicle.us/57mm-aolong-p-595.html) states "Specifications: Release Date Before
+    June 2013" — recorded but not relied on for a precise date, since it is a generic
+    sticker-product spec field rather than a dated announcement, and reads earlier than every
+    other piece of AoLong evidence found.
+  - "3x3 Red 56mm - TangLong" sticker page (http://thecubicle.us/56mm-tanglong-p-5127.html,
+    captured 2015-10-04), confirming a "TangLong"-named 56mm MoYu 3x3 sold at this retailer by
+    October 2015.
+  - "3x3 Red 57mm - DianMa" sticker page (http://thecubicle.us/57mm-dianma-p-2595.html,
+    captured 2015-05-09; earliest same-slug capture found is 2014-08-02), confirming a
+    "DianMa"-named 57mm MoYu 3x3.
+  - "3x3 Red 57mm - HuaLong" sticker page (http://thecubicle.us/57mm-hualong-p-4279.html,
+    captured 2015-10-15; a "MoYu HuaLong - DIY Kit" also appears as a related product on the
+    2015-07-10 AoLong sticker-page capture), confirming a "HuaLong"-named 57mm MoYu 3x3.
+
+  None of these six product pages is itself attributed to a manufacturer other than MoYu; the
+  AoLong V2 page states "Original puzzle made by MoYu" explicitly. None of the four capture
+  dates should be read as a launch date — each records only that thecubicle.us was already
+  selling the named product by that date.
+preservation_note: "Six page captures at a shared domain and era; excerpt collects the
+  load-bearing sentence or title from each rather than each page's full markup, per D3/§3.5 —
+  the six individual archive.org snapshot URLs (dated 2013-06-22, 2014-03-05, 2015-09-18,
+  2015-10-04, 2015-05-09, 2015-10-15) are the primary preservation; the excerpt names each
+  explicitly for retrieval."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer naming and dating, not a manufacturer source.
+  Sufficient per RESEARCH_SPEC to establish a family's existence and approximate era at
+  `probable`, not `confirmed`; corroborated at each name by the independent (tier 4)
+  Speedsolving wiki article, which was not itself relied on alone for any of these six lines'
+  existence."
+status: sourced

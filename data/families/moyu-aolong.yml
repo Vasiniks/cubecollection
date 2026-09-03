@@ -1,0 +1,64 @@
+# family: moyu-aolong
+# Pass 2 (family enumeration). MoYu's other early competitive-tier 3x3 line, sold in parallel
+# with moyu-weilong for several years (AoLong, AoLong V2, AoLong GT) before disappearing from
+# TheCubicle's modern (Shopify-era) MoYu catalogue.
+
+id: moyu-aolong
+entity: family
+manufacturer_id: moyu
+name: "MoYu AoLong"
+aliases:
+  - "AoLong"
+  - "Aolong"
+introduced:
+  value: "2014"
+  precision: year
+  qualifier: circa
+positioning: flagship
+discontinued:
+  value: "2016"
+  precision: year
+  qualifier: circa
+  note: "Approximate. No source states a discontinuation date; the latest AoLong-family capture
+    found at thecubicle.us is from 2016 (AoLong GT era), and no AoLong-named product appears in
+    TheCubicle's modern Shopify-era MoYu collection (thecubicle-com-moyu-3x3-collection-2021).
+    Recorded as `circa` and low-confidence per the standing 'discontinuation is inferred from
+    disappearance' rule."
+description: |-
+  A MoYu 3x3 line sold under the "AoLong" name across at least three generations (AoLong,
+  AoLong V2, AoLong GT), confirmed at TheCubicle from at least mid-2014 (54.5mm-labelled sticker
+  variants) through a 57mm "Cubicle AoLong V2" custom-shop listing captured 2015-09-18
+  explicitly crediting "Original puzzle made by MoYu" (thecubicle-us-moyu-early-3x3-lines).
+  The Speedsolving wiki describes AoLong as using "the mechanism of the MoYu AoSu", MoYu's 4x4,
+  and AoLong V2 as a running production change made in 2014 in response to a competitive
+  incident (a corner-twist DNF at a Feliks Zemdegs world-record attempt); AoLong GT is
+  described as a further, less well-received revision (speedsolving-wiki-moyu). This family's
+  relationship to moyu-weilong is left unresolved at this pass — both lines were retailed
+  concurrently for at least 2014-2016, and no source states whether MoYu positioned the two as
+  a single flagship/second-tier split or as parallel competing designs. `positioning: flagship`
+  is recorded provisionally on the strength of AoLong's competition-record association in the
+  wiki narrative; a human reviewer may prefer a different reading.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "A sticker-only listing for '57mm-aolong' states a generic spec field 'Release Date
+      Before June 2013', earlier than every other AoLong-related capture and not corroborated
+      elsewhere; not relied on. Recorded `circa 2014` instead from the broader capture pattern
+      (54.5mm variants from mid-2014, the 'Cubicle AoLong V2' full-product page from
+      2015-09-18) and the wiki's placement of the AoLong V2 controversy in 'July 2014'."
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Inferred from the wiki's competition-record narrative around AoLong V2, not a stated
+      manufacturer tier claim. See description."
+  /discontinued:
+    confidence: uncertain
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "Absence from a 2021 retailer collection is evidence of disappearance by then, not a
+      dated discontinuation. See discontinued.note."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]

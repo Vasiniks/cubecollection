@@ -1,0 +1,38 @@
+# family: moyu-ai
+# Pass 2 (family enumeration). MoYu's non-WeiLong-branded smart-cube line. Kept deliberately
+# separate from moyu-weilong, whose own smart product ("WeiLong AI") the wiki explicitly
+# distinguishes from this one ("Not to be confused with the WeiLong AI").
+
+id: moyu-ai
+entity: family
+manufacturer_id: moyu
+name: "MoYu AI"
+introduced:
+  value: "2023-08"
+  precision: month
+  qualifier: circa
+positioning: smart
+description: |-
+  A MoYu smart-cube product released, per the Speedsolving wiki, in August 2023: "Not to be
+  confused with the WeiLong AI. Released in August 2023, the non-magnetic version is currently
+  both the cheapest smartcube and the only non-magnetic smartcube... The piece design of the
+  cube is similar to that of the WeiLong V9" (speedsolving-wiki-moyu). Kept as its own family
+  rather than folded into moyu-weilong because the wiki source itself treats "MoYu AI" and
+  "MoYu WeiLong AI" as two named products the reader could otherwise confuse, remade "from the
+  ground up" with a different app — a manufacturer-drawn (or at least community-recognised)
+  naming boundary, even though the piece design is described as WeiLong-V9-derived. This is a
+  single tier 4 source; no manufacturer or retailer corroboration was found this pass, and no
+  official MoYu source was located confirming a persisting "AI" product name beyond this one
+  2023 release. Flagged for corroboration in a later pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 4 source; no corroboration found this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "'Smart cube' classification is not in dispute (it has a rechargeable/app-connected
+      design per the source), but no manufacturer source corroborates."

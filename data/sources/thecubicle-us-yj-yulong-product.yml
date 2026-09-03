@@ -1,0 +1,29 @@
+# source: thecubicle-us-yj-yulong-product
+# TheCubicle's early ("thecubicle.us") product page for "YJ YuLong", captured 2014-03-15. Tier
+# 2, first-party retailer naming. Cited specifically to correct a naming collision: the
+# Speedsolving wiki's MoYu article lists a "MoYu YuLong" under MoYu's own 3x3 section, but this
+# retailer's product page attributes the name "YuLong" to YJ, not MoYu.
+id: thecubicle-us-yj-yulong-product
+entity: source
+kind: retailer
+title: "TheCubicle.us : YJ YuLong : 3x3"
+publisher: "TheCubicle"
+url: "http://thecubicle.us/yulong-p-1921.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20140315070513id_/http://thecubicle.us:80/yulong-p-1921.html"
+excerpt: |-
+  Page title and heading: "TheCubicle.us : YJ YuLong : 3x3" ... "$8.00 YJ YuLong". No MoYu
+  attribution anywhere on the page.
+preservation_note: "Fetched via `npm run wayback -- get`; excerpt reproduces the page title and
+  product heading verbatim."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer naming. Used only to establish which
+  manufacturer's product 'YuLong' names — sufficient for that narrow purpose against a single
+  tier 4 (wiki) source that attributes the same name to a different manufacturer. See
+  data/manufacturers/moyu.yml-adjacent research notes (research/notes/models/global-pass2-families.md)
+  for the correction this closes."
+status: sourced

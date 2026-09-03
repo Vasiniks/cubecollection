@@ -1,0 +1,50 @@
+# family: moyu-huanying
+# Pass 2 (family enumeration). MoYu's earliest documented named 3x3, predating and explicitly
+# described as the design MoYu's WeiLong line was created to improve on. Single generation
+# found; no "HuanYing V2" or similar was located.
+
+id: moyu-huanying
+entity: family
+manufacturer_id: moyu
+name: "MoYu HuanYing"
+aliases:
+  - "HuanYing"
+introduced:
+  value: "2013"
+  precision: year
+  qualifier: circa
+positioning: mainline
+successor_family_id: moyu-weilong
+description: |-
+  MoYu's earliest documented named 3x3 line, retailed by TheCubicle from at least June 2013
+  (thecubicle-us-moyu-early-3x3-lines). The Speedsolving wiki states directly that "The WeiLong
+  was created after the HuanYing and was a deliberate attempt to improve on the HuanYing"
+  (speedsolving-wiki-moyu) — the basis for `successor_family_id`. No second generation or
+  "HuanYing V2" was found in either source; this reads as a single-model family rather than a
+  persisting numbered line, recorded as its own family per the same reasoning GAN357 and
+  GAN354 were kept separate from GAN356 in the GAN pilot (a real, standalone name, not a
+  colourway or a sub-variant of another line).
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "Retailer capture dated 2013-06-22 is the earliest evidence found; not a stated
+      launch date, so recorded `circa` per the 'two dating traps' guidance."
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No source explicitly states HuanYing's market tier. Recorded `mainline` (rather than
+      `flagship`) only because the wiki frames WeiLong, its successor, as the deliberate
+      improvement that went on to become MoYu's flagship — implying HuanYing itself was not
+      yet at that tier. This is an inference, not a stated fact; a human reviewer may prefer
+      leaving `positioning` unset instead."
+  /successor_family_id:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 4 source stating the succession directly in its own prose. No tier 1-2
+      corroboration found."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]

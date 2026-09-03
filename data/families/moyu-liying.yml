@@ -1,0 +1,35 @@
+# family: moyu-liying
+# Pass 2 (family enumeration). A minor, apparently single-generation MoYu 3x3 line from the
+# same 2013-2015 era as moyu-huanying and moyu-aolong. Recorded as its own family rather than
+# omitted, per the standing rule that a missed family is a systematically missing region of
+# the archive.
+
+id: moyu-liying
+entity: family
+manufacturer_id: moyu
+name: "MoYu LiYing"
+aliases:
+  - "LiYing"
+introduced:
+  value: "2014"
+  precision: year
+  qualifier: circa
+description: |-
+  A MoYu 3x3 confirmed sold at TheCubicle from at least March 2014
+  (thecubicle-us-moyu-early-3x3-lines: "MoYu LiYing", $15.00, category "3x3"). No second
+  generation, no manufacturer-first-party page, and no description beyond a bare product
+  listing was found this pass — the Speedsolving wiki's own MoYu article lists "MoYu LiYing" as
+  a section heading with no body text at all, which this pass reads as the wiki itself having
+  no further information, not as evidence the product is trivial or miscategorised.
+  `positioning` is left unset rather than guessed; no source states a market tier for this
+  product.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "Earliest capture found is 2014-03-05; not a stated launch date."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]

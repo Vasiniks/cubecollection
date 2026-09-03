@@ -1,0 +1,44 @@
+# family: moyu-tanglong
+# Pass 2 (family enumeration). A MoYu mainline 3x3, explicitly positioned by community
+# reporting as a direct GAN356 competitor at its release.
+
+id: moyu-tanglong
+entity: family
+manufacturer_id: moyu
+name: "MoYu TangLong"
+aliases:
+  - "TangLong"
+introduced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  A MoYu 3x3 confirmed sold at TheCubicle from at least October 2015
+  (thecubicle-us-moyu-early-3x3-lines: "3x3 Red 56mm - TangLong" sticker listing). The
+  Speedsolving wiki states "The MoYu TangLong was released soon after the Gans 356 to compete
+  with it. Its main differences from the Gans is that it is more stable, and is also slightly
+  slower" (speedsolving-wiki-moyu) — used here only for approximate dating (GAN356 dates to
+  2015 per data/families/gan-356.yml) and to record the mainline/competitive positioning, not
+  as a comparative performance claim. No second generation ("TangLong V2" or similar) was found
+  in either source, though the name recurs in data/manufacturers/moyu.yml's own pass-1 notes as
+  one of MoYu's recognised product lines.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]
+    note: "Retailer capture from 2015-10-04 is the earliest found; the wiki's 'released soon
+      after the Gans 356' places it in the same 2015 window as GAN356's own dating. Neither
+      states an exact launch date."
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 4 source. 'Competing with' a mainline GAN356-era product is read as
+      mainline positioning, not flagship — GAN356 itself was GAN's mainline/flagship-adjacent
+      line at the time, not a budget product, but TangLong is not otherwise described as a
+      top-tier competition cube."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]

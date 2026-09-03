@@ -1,0 +1,33 @@
+# family: moyu-dianma
+# Pass 2 (family enumeration). A minor, single-generation, poorly-received MoYu 3x3 from 2014.
+
+id: moyu-dianma
+entity: family
+manufacturer_id: moyu
+name: "MoYu DianMa"
+aliases:
+  - "DianMa"
+introduced:
+  value: "2014"
+  precision: year
+  qualifier: circa
+description: |-
+  A MoYu 3x3 confirmed sold at TheCubicle from at least August 2014
+  (thecubicle-us-moyu-early-3x3-lines: "3x3 Red 57mm - DianMa" sticker listing). The
+  Speedsolving wiki describes it as "Considered a failure by many cubers" with plastic-moulding
+  and popping problems (speedsolving-wiki-moyu), a community assessment recorded here only as
+  provenance for the product's existence and reception, not adopted into `significance` or any
+  other field without its own review. No second generation found. `positioning` left unset —
+  no source states a tier, and a product described as a failure is not obviously the
+  manufacturer's intended budget/mainline/flagship placement.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "Earliest capture found for this product's sticker page is 2014-08-02; not a stated
+      launch date."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]

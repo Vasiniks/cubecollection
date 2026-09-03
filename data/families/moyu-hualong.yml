@@ -1,0 +1,34 @@
+# family: moyu-hualong
+# Pass 2 (family enumeration). A minor MoYu 3x3 from 2015, contemporary with moyu-aolong and
+# moyu-tanglong.
+
+id: moyu-hualong
+entity: family
+manufacturer_id: moyu
+name: "MoYu HuaLong"
+aliases:
+  - "HuaLong"
+introduced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+description: |-
+  A MoYu 3x3 confirmed sold at TheCubicle from at least May 2015
+  (thecubicle-us-moyu-early-3x3-lines: "3x3 Red 57mm - HuaLong" sticker listing; a "MoYu
+  HuaLong - DIY Kit" also appears as a cross-sell on a 2015-07-10 AoLong-era page capture). The
+  Speedsolving wiki describes it as "a rather unique, scratchy cube that gained popularity in
+  late spring 2015" with "similar internal mechanism patterns" to AoLong
+  (speedsolving-wiki-moyu). No second generation found. `positioning` left unset; no source
+  states a tier.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]
+    note: "Retailer capture from 2015-05-11 (earliest 57mm-hualong sticker page found) is
+      broadly consistent with the wiki's own 'late spring 2015' popularity claim; neither
+      states an exact launch date."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]

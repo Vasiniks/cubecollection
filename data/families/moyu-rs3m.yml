@@ -1,0 +1,46 @@
+# family: moyu-rs3m
+# Pass 2 (family enumeration). MoYu's persisting budget/value 3x3 line, sold continuously
+# since 2020 through multiple named generations (2020, MagLev, Super, Super V2, V5).
+
+id: moyu-rs3m
+entity: family
+manufacturer_id: moyu
+name: "MoYu RS3M"
+aliases:
+  - "RS3 M"
+  - "RS3M"
+  - "MoYu RS3 M"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  MoYu's budget/value 3x3 succession, sold under the "RS3M"/"RS3 M" name from its 2020 debut
+  through at least "RS3M V5" (late 2023, per speedsolving-wiki-moyu) and confirmed still
+  current at TheCubicle as of a 2021 capture alongside the flagship WeiLong line
+  (thecubicle-com-moyu-3x3-collection-2021: "MoYu RS3 M 2020 3x3", "Angstrom RS3 M 2020+ 3x3",
+  etc.). The wiki describes it as "Considered one of the best 3x3s of all time" at a "cheap
+  price point of only $9" and separately notes the line's own branding straddles MoYu and its
+  sub-brand MFJS ("the tremendously popular 'RS' line of puzzles from MoYu/MFJS", in the wiki's
+  own Skewb section) — this ambiguity is recorded here rather than resolved; `manufacturer_id`
+  is kept at `moyu` on the strength of TheCubicle's own retailer attribution
+  (thecubicle-com-moyu-3x3-collection-2021 files every RS3M product under its "MoYu" brand
+  collection, not under a separate MFJS collection), but a future pass revisiting MFJS
+  specifically should check this again.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+    note: "Both sources place the original RS3M at 2020 ('RS3 M 2020' as the product's own
+      name, and the wiki's own placement of it before the 2021 MagLev generation)."
+  /positioning:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu]
+    note: "The wiki's own repeated framing of RS3M as a very-low-price product ('$9', '$8.99'
+      for later generations) against WeiLong's premium pricing is read as budget positioning."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
