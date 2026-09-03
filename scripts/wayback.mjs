@@ -74,13 +74,21 @@ try {
       console.log(`  ${t.slice(0, 4)}-${t.slice(4, 6)}-${t.slice(6, 8)}  ${r.statuscode}  ${snapshotUrl(t, r.original)}`);
     }
   } else if (cmd === 'prefix') {
+    const limit = Number(flag('limit', '200'));
     const rows = await cdx({
       url: target, matchType: 'prefix', fl: 'original,timestamp,statuscode',
-      collapse: 'urlkey', filter: 'statuscode:200', limit: flag('limit', '200'),
+      collapse: 'urlkey', filter: 'statuscode:200', limit: String(limit),
     });
     if (!rows.length) { console.log('no captures'); process.exit(0); }
     console.log(`${rows.length} distinct URL(s) captured under this prefix:\n`);
     for (const r of rows) console.log(`  ${r.timestamp.slice(0, 8)}  ${r.original}`);
+    // A result that exactly fills the limit was almost certainly truncated. Saying so matters:
+    // this command is used to decide a brand does not exist at a retailer, and a silently
+    // capped list turns "I stopped looking" into "there is nothing there".
+    if (rows.length >= limit) {
+      console.log(`\n  ⚠ hit the --limit of ${limit}. This list is probably TRUNCATED, not complete.`);
+      console.log(`    Re-run with a higher --limit before concluding anything is absent.`);
+    }
   } else if (cmd === 'nearest') {
     const ts = rest[0] ?? target;
     const rows = await cdx({ url: target, fl: 'timestamp,original,statuscode', limit: '1', from: ts, to: ts.slice(0, 4) + '1231' });
