@@ -25,5 +25,5 @@ reliability_note: "Tier 2, first-party retailer categorisation, independent of T
   own manufacturer-filter source already in data/manufacturers/hellocube.yml (different
   retailer, different capture). Two independent tier 2 sources now agree HelloCube's entire
   found product range is Gear Cube mechanisms — used to support the `hellocube` zero-family
-  finding in research/notes/models/parallel-batch-B.md."
+  finding in research/notes/models/global-pass2-families.md."
 status: sourced

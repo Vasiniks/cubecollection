@@ -84,13 +84,19 @@ status: sourced
 
 attestations:
   /kind:
-    confidence: confirmed
+    confidence: probable
     sources: [speedcubeshop-cosmic-gan11mpro-2022, speedcubeshop-unicube-gan11mpro-2020]
-    note: "Two independent first-party product pages, each stating SpeedCubeShop as the
-      product's own 'Brand' while describing a lubrication/tensioning/tuning service applied to
-      a cube physically produced by GAN — the DATA_MODEL §1.3 definition of kind: service,
-      sufficient alone per the confidence table (two independent tier 2 sources agreeing, both
-      first-party to the servicer)."
+    note: "DOWNGRADED from `confirmed` 2026-09-03 (issue D-F1). The prior note claimed 'two
+      independent tier 2 sources'; both are SpeedCubeShop's own pages. **One publisher repeating
+      itself is a single evidence chain, not independent corroboration** — rule 9 was extended
+      the same day to enforce the independence it already claimed to require, and caught this.
+
+      The substance is not in doubt: both pages state SpeedCubeShop as the product's own 'Brand'
+      while describing a lubrication/tensioning/tuning service applied to a cube physically
+      produced by GAN — the DATA_MODEL §1.3 definition of kind: service. `probable` is the
+      correct level for one uncontradicted tier-2 evidence chain that is first-party to the
+      servicer. A genuinely independent source describing SpeedCubeShop as a service operation
+      would restore `confirmed`."
   /country:
     confidence: confirmed
     sources: [speedcubeshop-about-us-2016]

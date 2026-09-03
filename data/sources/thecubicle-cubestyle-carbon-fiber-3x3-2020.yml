@@ -31,5 +31,5 @@ reliability_note: "TheCubicle's own structured spec table and product-descriptio
   under the base manufacturer's (QiYi's or YJ's) own model tree with a `modified_from`
   relationship and a `service` block naming CubeStyle as the servicer, not under a CubeStyle
   family. Not used to create a `cubestyle` family; preserved as a cross-manufacturer lead for
-  QiYi/YJ variant research. See research/notes/models/parallel-batch-B.md, 'CubeStyle'."
+  QiYi/YJ variant research. See research/notes/models/global-pass2-families.md, 'CubeStyle'."
 status: sourced

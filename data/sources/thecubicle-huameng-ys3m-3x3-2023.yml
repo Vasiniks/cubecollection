@@ -26,7 +26,7 @@ region: US
 link_status: dead
 last_checked: "2026-09-03"
 reliability_note: "TheCubicle's own structured spec table, tier 2. The description's opening
-  words, 'The MoYu HuaMeng YS3M...', are flagged in research/notes/models/parallel-batch-B.md
+  words, 'The MoYu HuaMeng YS3M...', are flagged in research/notes/models/global-pass2-families.md
   as an unresolved lead — it may be a copy-paste template artefact from another product
   description (TheCubicle's product copy is known to be templated) rather than a considered
   statement that HuaMeng is a MoYu-affiliated brand, and is not treated here as evidence of a

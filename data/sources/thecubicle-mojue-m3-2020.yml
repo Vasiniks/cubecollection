@@ -29,7 +29,7 @@ reliability_note: "TheCubicle's own product-description prose directly and expli
   thus far') — tier 2, a specific retailer statement, not an inference from naming or
   category grouping. This is materially stronger evidence for the parent relationship than
   the structural-analogy reasoning data/manufacturers/mojue.yml currently records at
-  `confidence: uncertain`; flagged in research/notes/models/parallel-batch-B.md for a human to
+  `confidence: uncertain`; flagged in research/notes/models/global-pass2-families.md for a human to
   weigh, not acted on directly (out of this pass's write lane). The 'Added: 2018-09-11' field
   is treated as unreliable for dating this specific product — the identical date recurs
   verbatim across several unrelated products found this pass (GuoGuan YueXiao Pro, YueXiao Pro

@@ -4,7 +4,7 @@
 # aftermarket-modified or shape-mod products based on other manufacturers' designs, per
 # DATA_MODEL §4.3/4.4, and this specific page is the direct evidence for that finding for this
 # one product. Preserved here as a lead for the manufacturer(s) that actually own this
-# product's model tree (MFJS) — see research/notes/models/parallel-batch-B.md, "Z-Cube — 0
+# product's model tree (MFJS) — see research/notes/models/global-pass2-families.md, "Z-Cube — 0
 # families".
 id: thecubicle-z-magnetic-3x3-2020
 entity: source

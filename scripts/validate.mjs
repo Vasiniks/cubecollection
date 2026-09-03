@@ -256,8 +256,23 @@ for (const rec of records) {
     if (att.confidence === 'confirmed') {
       const hasTier1 = tiers.includes(1);
       const tier2Plus = new Set((att.sources ?? []).filter((s) => (tierOf(s) ?? 9) <= 2));
+      // Rule 9 says "independent", so it must mean it. Counting distinct source ids alone
+      // let several pages from ONE publisher pass as mutual corroboration - a publisher
+      // repeating itself is one evidence chain, not two. Sources with no publisher recorded
+      // are treated as distinct, so a missing field cannot silently merge two real sources.
+      const publishersOf = (ids) => {
+        const out = new Set();
+        for (const id of ids) {
+          const p = sourceRecords.get(id)?.publisher;
+          out.add(p ? `pub:${String(p).trim().toLowerCase()}` : `src:${id}`);
+        }
+        return out;
+      };
+      const independentPublishers = publishersOf(tier2Plus);
       if (!hasTier1 && tier2Plus.size < 2) {
         report.error('9', rec.file, `${ptr} is "confirmed" but has neither a tier 1 source nor two independent tier 1-2 sources.`);
+      } else if (!hasTier1 && independentPublishers.size < 2) {
+        report.error('9', rec.file, `${ptr} is "confirmed" on ${tier2Plus.size} tier 1-2 sources that all share one publisher (${[...independentPublishers][0].replace(/^pub:/, '')}). One publisher repeating itself is a single evidence chain, not independent corroboration.`);
       }
       if (att.derived_from === 'sampled_from_image' || att.derived_from === 'inferred') {
         report.error('16', rec.file, `${ptr} is "confirmed" but derived_from is "${att.derived_from}". A value read off an image or reasoned out may never be confirmed.`);

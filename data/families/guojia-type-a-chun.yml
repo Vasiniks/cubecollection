@@ -42,13 +42,22 @@ attestations:
   /introduced:
     confidence: uncertain
     sources: [thecubicle-guojia-type-a-chun2-2020]
-    note: "TheCubicle's own 'Added: 2018-11-07' field is this specific listing's catalogue
-      date at TheCubicle, not GuoJia's own release date for either the Chun1 or Chun2
-      generation — GuoJia's brand history (per data/manufacturers/guojia.yml) traces to 2006,
-      so an earlier real release for at least Chun1 is plausible but not established. Recorded
-      at year precision, `qualifier: circa`, with `confidence: uncertain` doing the real work
-      of signalling this is a retailer-listing date standing in for an unknown manufacturer
-      date, not a rounded-but-trusted approximation."
+    note: "TheCubicle's own 'Added: 2018-11-07' field is not GuoJia's release date for either
+      the Chun1 or Chun2 generation. GuoJia's brand history (per data/manufacturers/guojia.yml)
+      traces to 2006, so an earlier real release for at least Chun1 is plausible but not
+      established.
+
+      WEAKENED FURTHER 2026-09-03 (issue D-F2). This note previously treated the value as a
+      genuine per-listing catalogue date. It may not even be that: the identical string
+      'Added: 2018-11-07' also appears on an unrelated Maru product, and TheCubicle is now known
+      to carry at least two proven catalogue-migration date artifacts — 'Added: 2018-09-11'
+      (29 occurrences, 22 sources, 13 unrelated brands) and 'Added: 2018-10-14' (6 sources,
+      5 unrelated brands: CubeTwist, LeFun, Meffert's, Ninja, VeryPuzzle). Two brands is weaker
+      evidence than those clusters, so this is recorded as suspected rather than proven, but the
+      value should not be relied on as a listing date either.
+
+      `confidence: uncertain` and `qualifier: circa` are retained and now carry the full weight:
+      this is a retailer field of doubtful meaning standing in for an unknown manufacturer date."
   /positioning:
     confidence: uncertain
     sources: [thecubicle-guojia-type-a-chun2-2020]

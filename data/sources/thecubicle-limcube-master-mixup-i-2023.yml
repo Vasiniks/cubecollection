@@ -24,5 +24,5 @@ reliability_note: "TheCubicle's own structured spec table and product-descriptio
   2. Confirms this LimCube line is a 10x10x10-based mixup mechanism, not a 3x3x3 product at
   all, and independently corroborates the FangShi parent-manufacturer field already recorded
   in data/manufacturers/limcube.yml. Used to support the `limcube` zero-family finding in
-  research/notes/models/parallel-batch-B.md."
+  research/notes/models/global-pass2-families.md."
 status: sourced

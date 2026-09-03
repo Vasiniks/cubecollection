@@ -125,9 +125,19 @@ status: sourced
 
 attestations:
   /kind:
-    confidence: confirmed
+    confidence: probable
     sources: [thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-mattys-gan16-maglev-max-uv, thecubicle-premium-setup-service]
-    note: "Three independent first-party product/service descriptions on GAN cubes and catalogue-wide, all describing TheCubicle modifying or setting up cubes produced by others and selling the result under its own naming — the DATA_MODEL §1.3 definition of kind: service."
+    note: "DOWNGRADED from `confirmed` 2026-09-03 (issue D-F1). The prior note called these
+      'three independent first-party product/service descriptions'; all three are TheCubicle's
+      own pages. **One publisher repeating itself is a single evidence chain, not independent
+      corroboration** — rule 9 was extended the same day to enforce the independence it already
+      claimed to require, and caught this.
+
+      The substance is not in doubt: all three describe TheCubicle modifying or setting up cubes
+      physically produced by other manufacturers, which is the DATA_MODEL §1.3 definition of
+      kind: service. `probable` is the correct level for one uncontradicted tier-2 evidence
+      chain that is first-party to the servicer. A genuinely independent source would restore
+      `confirmed`."
   /country:
     confidence: confirmed
     sources: [thecubicle-about-us]
