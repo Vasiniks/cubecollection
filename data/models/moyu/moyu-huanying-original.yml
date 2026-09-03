@@ -1,0 +1,44 @@
+# model: moyu-huanying-original
+# Pass 3 (model enumeration). The single design generation found for the moyu-huanying family.
+# No "HuanYing V2" or equivalent numbered successor was located; the family's own successor
+# is a different named line (moyu-weilong), not a second HuanYing generation. See
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-huanying-original
+entity: model
+family_id: moyu-huanying
+manufacturer_id: moyu
+name: "MoYu HuanYing"
+scope_class: core
+generation:
+  label: "HuanYing"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2013-06-22"
+  precision: day
+  qualifier: before
+description: |-
+  TheCubicle's own product page (thecubicle-us-moyu-early-3x3-lines), captured 2013-06-22:
+  "The MoYu HuanYing, 'illusion shadow' in Chinese, is a speedy new 3x3 with unique design
+  features... This cube is very flexible and boasts excellent corner cutting." The Speedsolving
+  wiki (speedsolving-wiki-moyu) gives a fuller mechanism description: a "flattened" torpedo
+  piece design, a minimal-plastic, lightweight interior, and a reputation for being "a bit
+  noisy" but with good corner cutting and low pop rates. No second generation or "HuanYing V2"
+  was found in either source.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "TheCubicle's capture (2013-06-22) is a retailer-listing floor establishing the
+      product was already for sale by this date, not a manufacturer-stated launch date. No
+      earlier capture was located this pass."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer or retailer generation-numbering statement exists for a single-
+      product line; recorded community_convention per the same reasoning applied to
+      gan-357-original (a bare, unnumbered product name, not a generation label assigned by
+      anyone)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]

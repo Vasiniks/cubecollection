@@ -1,0 +1,37 @@
+# model: moyu-liying-original
+# Pass 3 (model enumeration). The single design generation found for the moyu-liying family.
+# The Speedsolving wiki's own MoYu article lists "MoYu LiYing" as a bare section heading with
+# no body text — read as the wiki itself having nothing further, not as evidence the product
+# is trivial. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-liying-original
+entity: model
+family_id: moyu-liying
+manufacturer_id: moyu
+name: "MoYu LiYing"
+scope_class: core
+generation:
+  label: "LiYing"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2014-03-05"
+  precision: day
+  qualifier: before
+description: |-
+  TheCubicle's own product page (thecubicle-us-moyu-early-3x3-lines), captured 2014-03-05:
+  "MoYu LiYing", $15.00, category "3x3". No further description, mechanism detail, or second
+  generation was found in either this source or the Speedsolving wiki (speedsolving-wiki-moyu),
+  which carries only a bare, empty section heading for this product.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "Retailer-listing floor (2014-03-05), not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: uncertain
+    note: "Single, unnumbered product name; no generation-numbering statement exists. Recorded
+      community_convention per the gan-357-original precedent."
+  /description:
+    confidence: reported
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]

@@ -1,0 +1,37 @@
+# model: moyu-dianma-original
+# Pass 3 (model enumeration). The single design generation found for the moyu-dianma family.
+# See research/qc/pass3-agent-a-moyu.md.
+id: moyu-dianma-original
+entity: model
+family_id: moyu-dianma
+manufacturer_id: moyu
+name: "MoYu DianMa"
+scope_class: core
+generation:
+  label: "DianMa"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2014-08-02"
+  precision: day
+  qualifier: before
+description: |-
+  TheCubicle's own sticker-page listing (thecubicle-us-moyu-early-3x3-lines): "3x3 Red 57mm -
+  DianMa", with the earliest same-slug capture found at 2014-08-02 (a later capture of the same
+  page is dated 2015-05-09). The Speedsolving wiki (speedsolving-wiki-moyu) describes it as
+  "Considered a failure by many cubers" with plastic-moulding and popping problems — recorded
+  here only as provenance for the product's existence and community reception, not adopted into
+  any rarity or significance field. No second generation found.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "Retailer-listing floor (2014-08-02), not a manufacturer-stated launch date."
+  /generation/basis:
+    confidence: uncertain
+    note: "Single, unnumbered product name; recorded community_convention per the
+      gan-357-original precedent."
+  /description:
+    confidence: reported
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]

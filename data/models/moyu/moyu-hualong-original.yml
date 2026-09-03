@@ -1,0 +1,43 @@
+# model: moyu-hualong-original
+# Pass 3 (model enumeration). The single design generation found for the moyu-hualong family.
+# See research/qc/pass3-agent-a-moyu.md.
+id: moyu-hualong-original
+entity: model
+family_id: moyu-hualong
+manufacturer_id: moyu
+name: "MoYu HuaLong"
+scope_class: core
+generation:
+  label: "HuaLong"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2015-10-15"
+  precision: day
+  qualifier: before
+description: |-
+  TheCubicle's own sticker-page listing (thecubicle-us-moyu-early-3x3-lines), captured
+  2015-10-15: "3x3 Red 57mm - HuaLong". The same source notes a "MoYu HuaLong - DIY Kit"
+  appearing as a related/cross-sell product on an AoLong sticker-page capture dated 2015-07-10,
+  a possible earlier lead for this product's existence, not independently confirmed as the
+  same finished product and not relied on as the primary floor. The Speedsolving wiki
+  (speedsolving-wiki-moyu) describes it as "a rather unique, scratchy cube that gained
+  popularity in late spring 2015" with "similar internal mechanism patterns" to AoLong. No
+  second generation found.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "Retailer-listing floor (2015-10-15), not a manufacturer-stated launch date. The
+      wiki's 'late spring 2015' popularity claim and the earlier 2015-07-10 DIY-kit cross-sell
+      reference both suggest an earlier actual launch, but neither is a direct dated statement
+      about this specific product's release, so the later, directly-captured page date is used
+      as the attested floor."
+  /generation/basis:
+    confidence: uncertain
+    note: "Single, unnumbered product name; recorded community_convention per the
+      gan-357-original precedent."
+  /description:
+    confidence: reported
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]

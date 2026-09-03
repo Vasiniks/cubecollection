@@ -1,0 +1,42 @@
+# model: moyu-tanglong-original
+# Pass 3 (model enumeration). The single design generation found for the moyu-tanglong family.
+# No "TangLong V2" or equivalent successor was located. See
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-tanglong-original
+entity: model
+family_id: moyu-tanglong
+manufacturer_id: moyu
+name: "MoYu TangLong"
+scope_class: core
+generation:
+  label: "TangLong"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2015-10-04"
+  precision: day
+  qualifier: before
+description: |-
+  TheCubicle's own sticker-page listing (thecubicle-us-moyu-early-3x3-lines), captured
+  2015-10-04: "3x3 Red 56mm - TangLong". The Speedsolving wiki (speedsolving-wiki-moyu) states
+  "The MoYu TangLong was released soon after the Gans 356 to compete with it. Its main
+  differences from the Gans is that it is more stable, and is also slightly slower. This puzzle
+  came in colors like blue, cyan, and pink, unlike former puzzles" — used here only for
+  approximate placement relative to GAN356 (see data/families/gan-356.yml) and colourway
+  availability, not as a comparative-performance claim adopted as fact. No second generation
+  found.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "Retailer-listing floor (2015-10-04), not a manufacturer-stated launch date. The
+      wiki's 'released soon after the Gans 356' is consistent with this floor but is not
+      itself a dated statement precise enough to rely on independently."
+  /generation/basis:
+    confidence: uncertain
+    note: "Single, unnumbered product name; recorded community_convention per the
+      gan-357-original precedent."
+  /description:
+    confidence: reported
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]
