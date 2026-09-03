@@ -1,0 +1,49 @@
+# model: yj-chilong-original
+# Pass 3 (model enumeration), agent D. YJ ChiLong's sole documented 3x3 generation.
+id: yj-chilong-original
+entity: model
+family_id: yj-chilong
+manufacturer_id: yj
+name: "YJ ChiLong"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ ChiLong Released November
+  2013. The ChiLong is very similar to the SuLong, except it has extra grooves on the corners
+  and edges. It is slightly faster than the SuLong." TheCubicle's own product description
+  (thecubicle-yj-chilong-product, 2019-07-18 capture): "The YJ ChiLong's internal mechanism has
+  been adapted from the YJ SuLong. New features include removable torpedoes and tracks on the
+  edge pieces similar to those in the ShengShou Aurora." No successor carrying the "ChiLong"
+  name was found (per yj-chilong.yml); this is the family's sole model.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found. Only a Gross (packaged) Weight of 104g was found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in either source; this predates YJ's magnetic era."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-chilong-product]

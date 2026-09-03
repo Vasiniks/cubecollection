@@ -1,0 +1,25 @@
+# source: thecubicle-yj-ruilong-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ RuiLong 3x3, a
+# 2019 capture.
+id: thecubicle-yj-ruilong-3x3-product
+entity: source
+kind: retailer
+title: "YJ RuiLong 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-ruilong-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191113040445id_/https://www.thecubicle.com/products/yj-ruilong-3x3"
+excerpt: |-
+  Product Description: "The RuiLong is an economy 3x3 by puzzle manufacturer YJ. The RuiLong is
+  moderately quick, sturdy, with a clicky feel and features similar design motifs as the classic
+  AoLong v2 cube." Product Specifications: Manufacturer YJ, Type 3x3, Gross Weight 100g,
+  Dimensions 56.0mm, Item Weight 84.2g. An "Added: 2018-10-30" field is also present — a
+  catalogue-migration-style artifact per the Pass 3 admission policy section 3, not used as a
+  date anywhere in this record's dependents.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table."
+status: sourced

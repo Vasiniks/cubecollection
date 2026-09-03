@@ -1,0 +1,54 @@
+# model: yj-ruilong-original
+# Pass 3 (model enumeration), agent D. YJ RuiLong's sole documented 3x3 generation.
+id: yj-ruilong-original
+entity: model
+family_id: yj-ruilong
+manufacturer_id: yj
+name: "YJ RuiLong"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.0
+  weight_g: 84.2
+  shape: standard
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ RuiLong Released October
+  2018 as part of the 'Rui' line of budget cubes. The RuiLong is insanely fast, sturdy, with a
+  clicky feel and features similar design motifs as the classic MoYu AoLong v2 cube, however it
+  is almost uncontrollable." TheCubicle's own product description
+  (thecubicle-yj-ruilong-3x3-product, 2019-11-13 capture) corroborates the design comparison.
+  No successor generation or retailer capture beyond this single entry was found (per
+  yj-ruilong.yml); this is the family's sole model.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-ruilong-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-ruilong-3x3-product]
+    note: "Item Weight (84.2g), not Gross Weight (100g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-ruilong-3x3-product]
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in either source."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-ruilong-3x3-product]
