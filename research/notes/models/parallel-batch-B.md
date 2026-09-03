@@ -745,3 +745,45 @@ for any future thin/obscure manufacturer in this register.
 coordinator's note that this warning was propagated to Agent A.
 
 **Queue exhausted. Ready for reassignment.**
+
+# Third assignment (hellocube, newisland, cubestyle, cubetwist, haitun, ninja)
+
+Merged to main as `d9dc93c` before this section began; not re-litigated here. Continuing to
+append to this same file per the coordinator's instruction. This is the final unassigned pool
+per the coordinator's third-assignment message.
+
+## HelloCube — 0 families (scope exclusion, type (a))
+
+**Prior tested, did not hold.** The task brief flagged HelloCube as "likeliest to hold
+something real." Tested directly rather than assumed.
+
+**Method.** Pass 1's own manufacturer-filter source (`thecubicle-hellocube-manufacturer-
+filter-2021`, 4 products, all Gear Cube/shape-mod) was corroborated with a full product-slug
+prefix sweep at the same retailer (`npm run wayback -- prefix
+thecubicle.com/products/hellocube`, 11 URLs) and an **independent second retailer**
+(`npm run wayback -- prefix speedcubeshop.com/products/hellocube`, 17 URLs).
+
+**Finding.** Both retailers, independently, carry only Gear Cube mechanisms under the
+HelloCube name: 2x2 Gear Cube/Gear Shift, 3x3 Gear Cube, 3x3 Gear Cube Extreme (a "different
+kind of gear cube mechanism" per its own description, still explicitly "Type: Gear Cubes"),
+2x2 Mirror Cube, Flat 2x2. A Gear Cube forces synchronised turning through embedded gearing —
+a fundamentally different move mechanic from a 3x3x3, not merely a cosmetic shape mod of one,
+and both retailers categorise it as its own type, separate from their own "3x3" categories.
+
+**Zero families created — type (a), scope exclusion**, on stronger evidence than most
+zero-results in this register: two independent retailers, several products each, no exception
+found. No `hellocube` family record was created.
+
+**Rejected:** every HelloCube product found (all Gear Cube/Mirror Cube/Flat Cube) — scope
+exclusion, not a model/variant-boundary call.
+
+**Unresolved questions:** none of substance — this is a clean result across independent
+sources, not a thin one.
+
+**Sources added:** `speedcubeshop-hellocube-gear-cube-2019`,
+`thecubicle-hellocube-gear-cube-extreme-2022`.
+
+**Confidence:** `confirmed`-adjacent for the scope exclusion itself (two independent tier 2
+retailers, mutually consistent, no exception across 11 + 17 product URLs).
+
+---

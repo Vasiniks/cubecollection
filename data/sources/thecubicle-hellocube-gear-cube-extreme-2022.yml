@@ -1,0 +1,28 @@
+# source: thecubicle-hellocube-gear-cube-extreme-2022
+# TheCubicle product page for the "HelloCube 3x3 Gear Cube Extreme," archived 2022-10-14 —
+# checked as the most-developed HelloCube product found (a named variant/evolution of the
+# base Gear Cube mechanism) to confirm it remains a Gear Cube, not a 3x3x3.
+id: thecubicle-hellocube-gear-cube-extreme-2022
+entity: source
+kind: retailer
+title: "HelloCube 3x3 Gear Cube Extreme - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/hellocube-3x3-gear-cube-extreme"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221014122346id_/https://www.thecubicle.com/products/hellocube-3x3-gear-cube-extreme"
+excerpt: |-
+  Product Description: "The HelloCube 3x3 Gear Cube Extreme is a different kind of gear cube
+  mechanism. With this version, one of the slice layers is free to move independent of the
+  gears. If you're familiar with the standard 3x3 gear cube, this could be a new challenge!"
+  Structured "Specifications": "Manufacturer: HelloCube / Type: Gear Cubes / Added:
+  2021-06-07 / Gross Weight: 162g / Dimensions: 60.0mm³ / Item Weight: 137.0g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Confirms the retailer's own 'Type: Gear Cubes' categorisation persists even for
+  HelloCube's most-developed/named product variant — used to support the `hellocube`
+  zero-family finding."
+status: sourced
