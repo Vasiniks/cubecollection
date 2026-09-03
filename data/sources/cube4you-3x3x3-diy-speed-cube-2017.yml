@@ -1,0 +1,32 @@
+# source: cube4you-3x3x3-diy-speed-cube-2017
+# Cube4You's own storefront (cube4you.com), 3x3x3 category page, archived 2017-04-22. First
+# tier 1 evidence (manufacturer's own site, own house brand) that Cube4You's generic "3x3x3
+# DIY Speed Cube" line was still sold within this archive's 2016-2026 window, alongside a
+# reseller catalogue of DaYan/QJ/ShengShou/other brands on the same storefront.
+id: cube4you-3x3x3-diy-speed-cube-2017
+entity: source
+kind: manufacturer_official
+title: "3x3x3 - Cube4you Online Cube Store"
+publisher: "Cube4You"
+url: "http://cube4you.com/3x3x3-c-7_9.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20170422222952id_/http://cube4you.com:80/3x3x3-c-7_9.html"
+excerpt: |-
+  Category listing "3x3x3 (54)" filterable by Manufacturer: "Cube4you, Dayan, Diansheng,
+  Eastsheen, Lanlan, Meffert's, MF8, QJ, Shengen, Shengshou, Type C" (i.e. Cube4You's own
+  storefront resells other brands alongside its own). House-brand listings: "Cube4you 3x3x3
+  DIY Speed Cube - Black / this cube don't need sanding, after lube, it will turn well. it's
+  diy, you need assemble it yourself. Size:57*57*57mm Material:ABS ... $5.99", repeated for
+  Blue, Glow Blue, Green, Orange, Pink, Transparent, and White colourways, each priced $5.99-
+  $6.99. No further named 3x3 line (beyond this generic "DIY Speed Cube") appears on this
+  category page.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Manufacturer's own storefront selling its own house brand — tier 1 for the
+  product's own existence, naming, and basic specifications (size, material) per DATA_MODEL
+  §5.1's rule that manufacturer material is tier 1 for its own specifications. Superlative
+  copy ('it will turn well') is marketing, not treated as a specification claim."
+status: sourced

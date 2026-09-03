@@ -1,0 +1,48 @@
+# family: cube4you-3x3
+# Pass 2 (family enumeration). Cube4You's generic, own-branded "3x3x3 DIY Speed Cube" —
+# the only 3x3x3 named product line this pass found being sold by Cube4You itself (as
+# distinct from the DaYan/QJ/ShengShou/other-brand stock the same storefront also resells)
+# within this archive's 2016-2026 window. Treated the same way `fanxin-3x3` was: a genuine,
+# named, manufacturer-sold base 3x3 that is not marketed under any fancier model name.
+
+id: cube4you-3x3
+entity: family
+manufacturer_id: cube4you
+name: "Cube4You 3x3x3 Speed Cube"
+aliases:
+  - "Cube4you 3x3x3 DIY Speed Cube"
+  - "Cube4you 3x3x3 Speed Cube (NIB)"
+positioning: budget
+description: |-
+  Cube4You's own house-brand 57mm ABS 3x3x3, sold unassembled ("DIY") in a range of colours
+  (Black, Blue, Glow Blue, Green, Orange, Pink, Transparent, White) via its own storefront,
+  cube4you.com (cube4you-3x3x3-diy-speed-cube-2017). A 2016-09-21 capture of the same category
+  page (browsed this pass but not separately cited, identical listing) shows the same product
+  under the near-identical name "Cube4you 3x3x3 Speed Cube (NIB)" — treated as the same family
+  under a minor naming variation, not a new product. This is a generic budget cube with no
+  further model-name branding beyond the manufacturer's own name; it is listed for sale
+  alongside a much larger reseller catalogue of DaYan, QJ, ShengShou, Diansheng and other
+  brands' cubes on the same storefront (not part of this family — those are separate
+  manufacturers' own products).
+
+  No source found this pass documents a specific launch date for this exact product name, nor
+  an exact discontinuation date. The last capture found this pass of Cube4You's own 3x3x3
+  category page (under this URL structure) is 2017-04-22; by later captures (2019 onward) the
+  storefront had migrated to a WordPress-based site emphasising 3D-printed novelty puzzles
+  (per data/manufacturers/cube4you.yml's own notes), with no equivalent house-brand 3x3
+  speed-cube category found in the time available this pass. `discontinued` is left `unknown`
+  rather than guessed from this absence — a further, deeper prefix sweep of the 2019+ site
+  structure was not run this pass.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [cube4you-3x3x3-diy-speed-cube-2017]
+    note: "A $5.99-$6.99 unassembled ABS cube, priced and described as entry-level DIY stock
+      rather than a competitive flagship. No manufacturer-first-party 'budget' self-description
+      was found; inferred from price and description, consistent with the budget/novelty
+      characterisation already recorded for Cube4You in pass 1."
+  /description:
+    confidence: reported
+    sources: [cube4you-3x3x3-diy-speed-cube-2017]
