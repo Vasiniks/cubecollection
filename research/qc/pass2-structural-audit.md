@@ -574,3 +574,71 @@ There is one silver lining for `qiyi-valk`: the counter-evidence that made its a
 shaky (*"QiYi's own about-us page doesn't mention Valk"*) came **from this same unreliable
 page**, and is now much weaker. The `manufacturer_id: qiyi` assignment is therefore *better*
 supported than it appeared, resting on the genuine 2018 `qiyicube.com` storefront.
+
+---
+
+# Window 2 — remediation-gate invariant checks (main session)
+
+Run at `e10215d` while the four specialists worked, deliberately in lanes none of them cover.
+
+## S16 — The tier-1 source landscape is sound; `theqiyi-about-us` is an outlier, not a pattern
+
+After Q1, the obvious worry is that other `kind: manufacturer_official` sources — which derive
+to **tier 1**, the only class that alone satisfies rule 9 — might be equally bogus. **Checked
+directly. They are not.**
+
+95 `manufacturer_official` sources are cited. The most load-bearing:
+
+| Citations | Source | URL | Assessment |
+|---|---|---|---|
+| 38 | `moyucube-official-home-2022` | `moyucube.com` | **Genuine** — titled with the registered entity 魔域文化传播有限公司 (MoYu Culture Communication Co., Ltd.), archived 2022 |
+| 19 | `gancube-cn-core-technology-history` | `gancube.cn` | Genuine — GAN's Chinese-domestic domain |
+| 18 | `dayancube-official-2013` | `dayancube.com` | Genuine — 2013 capture |
+| **16** | **`theqiyi-about-us`** | **`theqiyi.com`** | **SUSPECT — see Q1** |
+| 13 | `gancube-2016-earliest-capture` | `gancube.com` | Genuine |
+| 13, 13, 11, 10 ×4 | `gancube-*` product/brand pages | `gancube.com` | Genuine |
+| 11 | `giiker-about-us-2022` | `giiker.com` | Plausible |
+| 10 | `qiyicube-storefront-2018` | `qiyicube.com` | Plausible — the surviving QiYi tier-1 |
+
+**This materially bounds Q1.** The archive's tier-1 backbone rests on genuine manufacturer
+domains carrying real corporate identifiers. One source is wrong; the class is not compromised.
+That is the difference between a contained defect and a systemic one, and it is why Q1 blocks
+11 families rather than the archive.
+
+Note the precise figure: `theqiyi-about-us` carries **16 citations in total**; the "six" in Q1 is
+the narrower and more serious subset — `confirmed` attestations with **no other tier-1 support**.
+
+## S17 — 95 citations rest on excerpt-only evidence (the Eastsheen exposure class, quantified)
+
+The Eastsheen preservation gap (S3) arose because a source used `preservation_method: excerpt`
+with **no `archive_url`** — so the excerpt *is* the preservation, and a sentence quoted from the
+page but absent from the excerpt is unsupported.
+
+Quantified archive-wide:
+
+- **26** sources are excerpt-only with no `archive_url`
+- **25** of those are actually cited
+- they carry **95 attestation citations**
+
+Every one of those 95 has the same failure mode available to it: the claim may rest on page text
+that was never captured, and nothing in the toolchain can detect it. S3 was found only because a
+specialist happened to compare a quotation against its excerpt.
+
+**Recommendation (not applied — too broad for this gate):** for cited excerpt-only sources,
+either add an `archive_url` or verify that the excerpt actually contains the text each citing
+attestation relies on. Prioritise the ones supporting `confirmed`/`probable` claims. This is a
+finite, enumerable backlog, not an open-ended audit.
+
+## S18 — Link rot is fully mitigated
+
+- **75** cited sources have `link_status: dead`
+- **0** of them lack an `archive_url`
+
+Every dead link in the archive is preserved. This is the preservation discipline working exactly
+as designed, and it deserves recording alongside the failures.
+
+## S19 — 24 orphan sources
+
+24 of 284 sources are cited by no attestation. Per standing policy these are **not** deleted —
+several are deliberate groundwork from interrupted runs (MFJS/Meilong, `thecubicle-us-yj-yulong-product`,
+GiiKER). Recorded as a known, accepted state rather than a defect.
