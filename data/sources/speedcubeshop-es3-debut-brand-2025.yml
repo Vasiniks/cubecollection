@@ -1,0 +1,29 @@
+# source: speedcubeshop-es3-debut-brand-2025
+# SpeedCubeShop's own product description for "ES3 3x3 (Magnetic)", independently corroborating
+# data/manufacturers/escube.yml (found via a different retailer, TheCubicle, in an earlier
+# session) as a real, distinct, recently-launched manufacturer.
+
+id: speedcubeshop-es3-debut-brand-2025
+entity: source
+kind: retailer
+title: "ES3 3x3 (Magnetic) – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/es3-3x3-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250617074543/https://speedcubeshop.com/products/es3-3x3-magnetic"
+excerpt: |-
+  "ES3 3x3 (Magnetic) is the debut release for the new brand, ES Cube! This speed cube focuses
+  on easy-to-use adjustments and a simple yet effective design."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation, independent of TheCubicle's own
+  structured-field evidence for ESCube (thecubicle-escube-air-3x3-20-magnet-ball-core). Two
+  different retailers, two different presentations of the same fact (a structured spec field
+  at one, a direct 'debut release for the new brand' statement at the other), supporting
+  `confidence: confirmed` on ESCube's `kind` per DATA_MODEL rule 9. Also independently dates
+  ES Cube as a 'new brand' as of this listing, consistent with escube.yml's characterisation as
+  a recently-launched manufacturer rather than an established one."
+status: sourced

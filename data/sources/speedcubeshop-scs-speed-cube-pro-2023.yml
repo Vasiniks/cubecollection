@@ -1,0 +1,29 @@
+# source: speedcubeshop-scs-speed-cube-pro-2023
+# A fourth SpeedCubeShop own-branded product line, found in the SpeedCubeShop /products/
+# prefix sweep (Global Pass 0 closeout, Target 2), distinct from Cosmic/Supernova/UniCube: a
+# plain own-branded 3x3 rather than a tuning tier applied to another manufacturer's cube.
+
+id: speedcubeshop-scs-speed-cube-pro-2023
+entity: source
+kind: retailer
+title: "SCS Speed Cube Pro 3x3 Magnetic – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/scs-speed-cube-pro-3x3-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231211222447/https://speedcubeshop.com/products/scs-speed-cube-pro-3x3-magnetic"
+excerpt: |-
+  "SCS Speed Cube Pro 3x3 Magnetic is a professional-grade speed cube twisty puzzle fit for
+  all skill levels! Ditch your old, stiff cube and experience super smooth, fast turning
+  powered by 48 small internal magnets." Product Specifications table: "Brand /
+  SpeedCubeShop", "Type / 3x3", "Magnets / Moderate", "Size / 56 mm", "Weight / 71 g".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. Unlike Cosmic/Supernova/
+  UniCube (a tuning service applied to base cubes from other manufacturers), this is presented
+  as a plain, standalone own-branded 3x3 with no base-manufacturer credited anywhere on the
+  page — consistent with `kind: service` retailers occasionally also selling fully in-house
+  budget products, not a new finding that changes the record's `kind`."
+status: sourced

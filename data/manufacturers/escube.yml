@@ -29,14 +29,23 @@ notes: |-
   `website` left unset. `country: CN` follows the same naming-convention inference already
   applied to HuaMeng in this same discovery batch — see data/manufacturers/huameng.yml for the
   identical reasoning and its caveats.
+
+  **Independently corroborated at a second retailer (Global Pass 0 closeout, Target 2).**
+  SpeedCubeShop's own product description for its "ES3 3x3 (Magnetic)" listing states directly:
+  "ES3 3x3 (Magnetic) is the debut release for the new brand, ES Cube!"
+  (speedcubeshop-es3-debut-brand-2025) — a second, independent tier 2 retailer, different
+  wording from TheCubicle's structured field, agreeing that ES Cube/ESCube is a real,
+  specifically recently-launched ("new brand") manufacturer. This satisfies DATA_MODEL rule 9
+  (two independent tier 2 sources agreeing), so `/kind` is raised to `confirmed`.
 status: drafted
 
 attestations:
   /kind:
-    confidence: probable
-    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
-    note: "Single tier 2 retailer source with a genuine structured spec-table 'Manufacturer'
-      field. Nothing contradicting was found."
+    confidence: confirmed
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-debut-brand-2025]
+    note: "Two independent tier 2 retailer sources (different publishers, different wording —
+      a structured spec-table field at one, a direct 'debut release for the new brand'
+      statement at the other) agree. Raised from probable to confirmed this session."
   /country:
     confidence: uncertain
     note: "Researched and not directly stated by any source found this pass; inferred from
@@ -48,5 +57,5 @@ attestations:
     confidence: unknown
     note: "Researched and not found: no independent ESCube domain located this pass."
   /notes:
-    confidence: probable
-    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+    confidence: confirmed
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-debut-brand-2025]

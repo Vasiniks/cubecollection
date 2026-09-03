@@ -21,6 +21,7 @@ aliases:
   - "Cosmic"
   - "Supernova"
   - "UniCube"
+  - "SCS Speed Cube Pro"
 website: "https://speedcubeshop.com/"
 notes: |-
   **Legal identity and founding.** SpeedCubeShop's own "About Us" page (archived 2016, content
@@ -63,6 +64,16 @@ notes: |-
   for pass 2 if the archive ever needs to model SpeedCubeShop-serviced variants at that level of
   detail.
 
+  **A fourth own-branded line, different in character: "SCS Speed Cube Pro."** Found in the
+  `/products/` prefix sweep (Global Pass 0 closeout, Target 2): "SCS Speed Cube Pro 3x3
+  Magnetic is a professional-grade speed cube... powered by 48 small internal magnets," with
+  its own spec table reading "Brand / SpeedCubeShop" (speedcubeshop-scs-speed-cube-pro-2023).
+  Unlike Cosmic/Supernova/UniCube, no base manufacturer is credited anywhere on this listing —
+  it reads as a plain, standalone, fully in-house budget 3x3 rather than a tuning service
+  applied to another manufacturer's cube. Recorded as a further alias/product line, not a
+  change to `kind`: a service business selling one in-house budget product alongside its
+  tuning tiers does not stop being a service business.
+
   **Not the same pattern as TheCubicle's named lines exactly.** TheCubicle's "FZ" / "Mystic" /
   "Angstrom Research" are each a single premium tier per cube category (big cubes vs. 3x3s);
   SpeedCubeShop instead runs three parallel tiers across its *entire* catalogue on every product
@@ -88,10 +99,11 @@ attestations:
     sources: [speedcubeshop-about-us-2016]
   /aliases:
     confidence: confirmed
-    sources: [speedcubeshop-about-us-2016, speedcubeshop-cosmic-gan11mpro-2022, speedcubeshop-unicube-gan11mpro-2020]
+    sources: [speedcubeshop-about-us-2016, speedcubeshop-cosmic-gan11mpro-2022, speedcubeshop-unicube-gan11mpro-2020, speedcubeshop-scs-speed-cube-pro-2023]
     note: "'Cosmic', 'Supernova', and 'UniCube' are tier 1/2, first-party in-house service-tier
       names (see /notes), the same treatment already applied to TheCubicle's 'FZ' / 'Mystic' /
-      'Angstrom Research'."
+      'Angstrom Research'. 'SCS Speed Cube Pro' is a fourth own-branded line, this one a plain
+      standalone product rather than a tuning tier."
   /website:
     confidence: confirmed
     sources: [speedcubeshop-about-us-2016]
