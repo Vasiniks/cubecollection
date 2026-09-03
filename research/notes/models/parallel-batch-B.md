@@ -143,3 +143,48 @@ research). `speedsolving-wiki-zcube` (pass 1, reused, not recreated).
 contradicting) — thin, but consistent across every product checked.
 
 ---
+## HuaMeng — 2 families
+
+**Method.** Pass 1's own `data/manufacturers/huameng.yml` already identified two named 3x3
+lines from a product-slug enumeration (TG, YS3M) but deferred description to pass 2. This
+pass fetched both lines' earliest-found TheCubicle product pages directly.
+
+**Candidates considered:** HuaMeng TG (+ Ball-Core, Maglev Ball-Core, Maglev Ball-Core UV,
+Spirit Pearl Limited Edition, TG V2 20-Magnet Ball-Core), HuaMeng YS3M (+ Ball-Core, Maglev,
+Ball-Core UV Maglev, YS3-M 20-Core Magnetic Maglev Ball-Core UV).
+
+**Accepted (2):** `huameng-ys3m` (earlier, Added 2023-02-17), `huameng-tg` (later, Added
+2024-10-23).
+
+**Boundary call: kept as two separate families, not one line with a naming change.** No
+source found this pass frames either line as the other's successor or rename; the two ran
+concurrently (YS3M captures continue into 2025 alongside TG's 2024-2026 captures) with
+distinct marketing identities (YS3M: dragon-scale surface texture, YuSheng Du endorsement;
+TG: a 1620-combination hand-adjustability pitch). Each carries its own further sub-line
+succession (TG → TG V2) which is pass-3 generation material, not actioned here.
+
+**Significant unresolved lead, flagged rather than acted on.** TheCubicle's own YS3M product
+description opens "The MoYu HuaMeng YS3M is..." — a direct textual pairing of "MoYu" and
+"HuaMeng" in the retailer's own copy. This is exactly the kind of evidence the task brief
+warned me to treat cautiously: HuaMeng's own pass-1 manufacturer record
+(`data/manufacturers/huameng.yml`) is currently `kind: manufacturer` (independent, not a
+MoYu sub-brand), and I have **not** changed that reading or its confidence. The pairing could
+be a genuine signal or could be a templated-copy artefact (TheCubicle's product descriptions
+are known to reuse boilerplate); no second source repeats it (HuaMeng's own TG page says only
+"HuaMeng"), so it is recorded as an open lead in `huameng-ys3m.yml`'s own description, not
+promoted to a relationship claim anywhere. A human or a future pass with more time should
+decide whether this is worth chasing to a first-party HuaMeng or MoYu statement.
+
+**No boundary disputes** beyond the above — each family is its own clearly single-lineage
+product with no ambiguity about which family a given product slug belongs to.
+
+**Sources added:** `thecubicle-huameng-ys3m-3x3-2023`. `thecubicle-huameng-tg-3x3-ball-core`
+(pass 1, reused — a pre-existing source, not recreated; its "Added: 2024-10-23" field was read
+directly off the same preserved archive capture and cited even though the source's own
+excerpt text does not separately quote it).
+
+**Confidence:** `reported` throughout (single tier 2 retailer source per family, nothing
+contradicting); `uncertain` on `huameng-tg`'s `positioning` specifically, since no source
+calls it "flagship" by name the way YS3M's own page does.
+
+---

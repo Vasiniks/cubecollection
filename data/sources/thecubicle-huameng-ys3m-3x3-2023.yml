@@ -1,0 +1,37 @@
+# source: thecubicle-huameng-ys3m-3x3-2023
+# TheCubicle product page for the "HuaMeng YS3M" (standard/piece-to-piece-magnetized
+# version), archived 2023-03-21 — earliest capture found this pass of HuaMeng's YS3M line,
+# and the source establishing it as a distinct family from HuaMeng TG (thecubicle-huameng-
+# tg-3x3-ball-core, added over a year and a half later per that page's own "Added" field).
+id: thecubicle-huameng-ys3m-3x3-2023
+entity: source
+kind: retailer
+title: "HuaMeng YS3M 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-ys3m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230321004754id_/https://www.thecubicle.com/products/huameng-ys3m-3x3"
+excerpt: |-
+  Product Description: "The MoYu HuaMeng YS3M is the latest flagship 3x3 release from the
+  famous cube company. This puzzle features amazing corner cutting, adjustable
+  tensions/compressions, a dragon scale pattern to reduce sticking, and is designed/endorsed
+  by the 3x3 world record single holder YuSheng Du. This is the standard version that has only
+  piece-to-piece magnetization. Get the Maglev version here. Get the Ball-core version here."
+  Structured "Product Specifications" table: "Manufacturer: HuaMeng / Type: 3x3 / Added:
+  2023-02-17 / Gross Weight: 217g / Dimensions: 55.0mm³ / Magnets: Magnetic / Item Weight:
+  76.0g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table, tier 2. The description's opening
+  words, 'The MoYu HuaMeng YS3M...', are flagged in research/notes/models/parallel-batch-B.md
+  as an unresolved lead — it may be a copy-paste template artefact from another product
+  description (TheCubicle's product copy is known to be templated) rather than a considered
+  statement that HuaMeng is a MoYu-affiliated brand, and is not treated here as evidence of a
+  parent/sub-brand relationship. The 'latest flagship' and endorsement claims are
+  comparative/promotional copy (tier 4 per DATA_MODEL §5.2 rule 2), not treated as established
+  facts by this source alone; the specification fields (manufacturer name, type, weight,
+  dimensions, magnetic) are treated as tier 2 per §5.1."
+status: sourced
