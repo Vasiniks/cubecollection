@@ -1,0 +1,33 @@
+# source: thecubicle-moretry-tianma-x3-v4-maglev-2022
+# TheCubicle's own product page for the MoreTry TianMa X3 V4 (MagLev), captured via Wayback.
+# Tier 2, first-party retailer copy describing the introduction of a MagLev mechanism at this
+# generation.
+id: thecubicle-moretry-tianma-x3-v4-maglev-2022
+entity: source
+kind: retailer
+title: "Moretry Tianma X3 V4 (MagLev) 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moretry-tianma-x3-v4-3x3-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220707000000id_/https://www.thecubicle.com/products/moretry-tianma-x3-v4-3x3-maglev"
+excerpt: |-
+  "The Moretry Tianma X3 V4 (MagLev) is a 3x3 from the new company that features traditional
+  corner/edge magnetization along with corner base/edge magnets. This version includes enlarged
+  corner base magnets, allowing them to interact with a repelling magnet in the centers to aid
+  with alignment. The MagLev version replaces the traditional spring with a magnetic levitation
+  system that has 6 magnetic rings instead of 2 for a more linear tensions." Product
+  Specifications: "Manufacturer: Moretry / Type: 3x3 / Added: 2022-03-14 / Gross Weight: 294g /
+  Dimensions: 55.5mm 3 / Magnets: Magnetic".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. Directly documents a mechanism-level change (spring
+  replaced by a 6-magnet MagLev system) introduced at the V4 generation of the same persisting
+  'Tianma X3' name — the strongest single piece of evidence this pass found that later
+  'versions' within this family are genuine design-level changes, not merely configuration
+  differences, though the exact model/variant boundary for each version is left to pass 3 per
+  DATA_MODEL §4.2. Same 'Added: 2022-03-14' templating artifact noted on the V1 and V3 sources
+  applies here too."
+status: sourced

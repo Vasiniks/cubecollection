@@ -184,3 +184,72 @@ different manufacturer's brand identity (Rubik's), not a GoCube-branded product.
 re-attested at the family level beyond a cross-reference).
 
 ---
+
+## MoreTry — 1 family
+
+**Task framing.** "Recovered from a TheCubicle `/products/` prefix sweep; its footprint may be
+thin. Do not manufacture families simply because the manufacturer exists." Inspected the
+existing `thecubicle-moretry-live-2026` source first, per the standing groundwork-inspection
+practice — it already named "MoreTry Tianma X3 (V1 through V4)" and "MoreTry TianMa X3+"
+directly, which was enough of a lead to justify a dedicated `thecubicle.com/products/moretry*`
+prefix sweep rather than assuming thinness.
+
+**Finding: the footprint is not thin at all — it is unusually rich and completely
+single-line.** A `thecubicle.com/products/moretry*` sweep (26 URLs, 19 distinct 3x3 product
+slugs after de-duplicating query-string variants) and a parallel `speedcubeshop.com` sweep both
+show **every single MoreTry 3x3 product carrying the "Tianma X3" name**, in a real, described,
+manufacturer-numbered generation sequence (V1 Standard -> V3 Snap -> V4 MagLev, plus V2
+Enhanced, V3 Plus, a "+" suffix range, and a "ZCube Edition" collaboration also tied to the
+SAOCube naming lead that originally surfaced MoreTry in pass 1). This is the strongest,
+best-corroborated single-family case in this agent's queue so far — direct product-copy
+evidence of an actual mechanism change between named versions (V1's plain corner/edge
+magnetization vs. V4's "magnetic levitation system... 6 magnetic rings instead of 2," replacing
+the spring outright), not merely a retailer's own version numbering.
+
+**Families accepted (1):** `moretry-tianma-x3`.
+
+**Boundary reasoning — one family, not several, and not zero.** Zero was never seriously in
+play once the prefix sweep ran: 24 of MoreTry's 27 total TheCubicle SKUs are 3x3s and every one
+of them is a "Tianma X3" variant of some kind (the remaining 3 are own-branded lubricants, out
+of category). The only real boundary question was whether "V1," "V3/V3 Plus," "V4/MagLev," and
+the "+" range should be split into separate families or models — resolved by treating them as
+one family per the persisting shared name (the same reasoning moyu-weilong and particula-gocube
+in this session use), with the actual model-vs-variant boundary between versions explicitly
+left to pass 3, since a mechanism-level change (the V4 MagLev spring replacement) is exactly the
+kind of fact §4.2 says should decide a model split, not a family split.
+
+**A data-quality catch worth flagging for pass 3/5.** Every MoreTry product page checked (V1,
+V3, V4) carries the identical retailer "Added: 2022-03-14" date regardless of version or actual
+capture date — almost certainly a shared brand-onboarding-date templating artifact at
+TheCubicle, not each version's real release date. Recorded honestly in each source's own
+reliability_note and reflected in the family's `introduced` attestation (`uncertain` despite
+three agreeing sources, precisely because the agreement is not independent).
+
+**A fetch-reliability note.** One attempt to retrieve the "V2 (Enhanced)" product page returned
+content that read as belonging to a different version (V4's own description text appeared under
+the V2 URL on one `wayback get` call without an explicit timestamp) — not used as evidence
+anywhere; treated as an unreliable capture rather than cited. Timestamped re-fetches of the same
+URL then failed outright ("fetch failed") on three consecutive retries. Per this project's own
+wayback-tooling guidance, a failed fetch is not treated as evidence of absence — V2's own
+description is simply left unestablished this pass, not guessed at from the (probably
+mismatched) content that did load.
+
+**An unconfirmed domain lead, deliberately not chased into a source.** `moretry.com` has
+Wayback captures from 2011-2012 and again 2021 — not verified this pass as actually belonging
+to this cube manufacturer (the same kind of coincidental-name-collision risk already caught and
+ruled out for `gocube.com` earlier in this session). Flagged in the family record's own
+description as an open lead, nothing built on it.
+
+**Unresolved for pass 3:**
+- Exact release dates for each numbered version (all currently only bounded by the shared,
+  unreliable "2022-03-14" retailer date).
+- V2 (Enhanced)'s own mechanism description — not reliably retrieved this pass.
+- The relationship between the numbered V1-V4 range and the unnumbered "TianMa X3+" /
+  track-count-named range (successor tier? parallel budget/premium split? pass 3 question).
+- Whether `moretry.com` is genuinely this manufacturer's own domain.
+
+**Sources created this session (MoreTry):** `thecubicle-moretry-tianma-x3-v1-2023`,
+`thecubicle-moretry-tianma-x3-v3-snap-2022`, `thecubicle-moretry-tianma-x3-v4-maglev-2022`.
+Reused without modification: `thecubicle-moretry-live-2026` (pass 1).
+
+---
