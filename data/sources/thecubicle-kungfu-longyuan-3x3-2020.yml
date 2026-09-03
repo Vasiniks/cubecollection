@@ -1,0 +1,28 @@
+# source: thecubicle-kungfu-longyuan-3x3-2020
+# TheCubicle product page for the "KungFu LongYuan 3x3," archived 2020-09-18. Corroborates the
+# pass-1 Speedsolving wiki source, which already described LongYuan as "a budget cube from
+# KungFu."
+id: thecubicle-kungfu-longyuan-3x3-2020
+entity: source
+kind: retailer
+title: "KungFu LongYuan 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/kungfu-longyuan-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918210001id_/https://www.thecubicle.com/products/kungfu-longyuan-3x3"
+excerpt: |-
+  Product Description: "The KungFu LongYuan 3x3 is a new, lightweight stickerless speed cube
+  with a very low price point. It features vibrant colors and feels solid yet smooth right out
+  of the box. A cube stand is included inside the packaging. Great as an inexpensive first
+  speedcube for beginners!" Structured "Specifications": "Manufacturer: KungFu / Type: 3x3 /
+  Added: 2018-09-11 / Gross Weight: 86g / Dimensions: 56.0mm³ / Item Weight: 70.2g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. The 'Added: 2018-09-11' field is treated as unreliable for dating this product — see
+  thecubicle-mojue-m3-2020's reliability_note for the recurring-date pattern found across
+  several unrelated products this batch."
+status: sourced

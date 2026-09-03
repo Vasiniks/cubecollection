@@ -1,0 +1,29 @@
+# source: thecubicle-kungfu-qinghong-3x3-2021
+# TheCubicle product page for the "KungFu QingHong 3x3," archived 2021-01-21. Corroborates the
+# pass-1 Speedsolving wiki source (speedsolving-wiki-kungfu) with an independent tier 2
+# retailer.
+id: thecubicle-kungfu-qinghong-3x3-2021
+entity: source
+kind: retailer
+title: "KungFu QingHong 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/kungfu-qinghong-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210121021815id_/https://www.thecubicle.com/products/kungfu-qinghong-3x3"
+excerpt: |-
+  Product Description: "The KungFu QingHong is a new 3x3 from the popular Chinese brand
+  KungFu. Designed with speedcubing performance in mind, the QingHong 3x3 features solid
+  performance at a low price point." Structured "Specifications": "Manufacturer: KungFu /
+  Type: 3x3 / Added: 2018-09-11 / Gross Weight: 104g / Dimensions: 56.0mm³ / Item Weight:
+  84.7g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2 — the first retailer-level corroboration this register has for KungFu beyond the single
+  tier 4 Speedsolving wiki source. The 'Added: 2018-09-11' field is treated as unreliable for
+  dating this product — see thecubicle-mojue-m3-2020's reliability_note for the recurring-date
+  pattern found across several unrelated products this batch."
+status: sourced

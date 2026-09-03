@@ -1,0 +1,38 @@
+# family: kungfu-longyuan
+# Pass 2 (family enumeration). One of three distinctly-named KungFu 3x3 lines found this pass
+# (see also `kungfu-qinghong`, `kungfu-dot-cube`). Independently corroborates the pass-1
+# Speedsolving wiki source's own characterisation of LongYuan as "a budget cube from KungFu."
+
+id: kungfu-longyuan
+entity: family
+manufacturer_id: kungfu
+name: "KungFu LongYuan"
+aliases: []
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  TheCubicle's own description (thecubicle-kungfu-longyuan-3x3-2020): "The KungFu LongYuan 3x3
+  is a new, lightweight stickerless speed cube with a very low price point... Great as an
+  inexpensive first speedcube for beginners!" — an entry-level product, priced and framed even
+  more explicitly as budget than `kungfu-qinghong`. No successor or predecessor generation was
+  found this pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-kungfu-longyuan-3x3-2020]
+    note: "Earliest capture found this pass is 2020-09-18. The product's own 'Added:
+      2018-09-11' spec-table field is deliberately not used — see
+      thecubicle-mojue-m3-2020's reliability_note."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-kungfu-longyuan-3x3-2020]
+    note: "Retailer's own description explicitly frames it as 'a very low price point'
+      beginner product."
+  /description:
+    confidence: reported
+    sources: [thecubicle-kungfu-longyuan-3x3-2020]

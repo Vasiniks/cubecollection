@@ -1,0 +1,28 @@
+# source: thecubicle-kungfu-dot-cube-3x3-2020
+# TheCubicle product page for the "KungFu Dot Cube 3x3," archived 2020-09-22 — a third named
+# KungFu 3x3 not listed in the pass-1 Speedsolving wiki source, found via the product-slug
+# prefix sweep.
+id: thecubicle-kungfu-dot-cube-3x3-2020
+entity: source
+kind: retailer
+title: "Kung Fu Dot Cube 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/kungfu-dot-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922232820id_/https://www.thecubicle.com/products/kungfu-dot-cube-3x3"
+excerpt: |-
+  Product Description: "The Kung Fu Dot Cube is a well performing, sculpted 3x3 with plastic
+  circular tiles on each face. A tool to remove these tiles is also included, allowing for a
+  changeable color scheme." Structured "Specifications": "Manufacturer: KungFu / Type: 3x3 /
+  Added: 2018-09-11 / Gross Weight: 95g / Dimensions: 56.0mm³ / Item Weight: 79.3g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. A novelty removable-tile colour-scheme product, distinct in kind from QingHong/LongYuan's
+  plain-speedcube positioning, kept as its own family rather than folded into either. The
+  'Added: 2018-09-11' field is treated as unreliable for dating this product — see
+  thecubicle-mojue-m3-2020's reliability_note."
+status: sourced

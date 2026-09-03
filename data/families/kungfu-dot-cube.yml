@@ -1,0 +1,43 @@
+# family: kungfu-dot-cube
+# Pass 2 (family enumeration). A third named KungFu 3x3 line, not listed in the pass-1
+# Speedsolving wiki source (which named only QingHong and LongYuan among KungFu's 3x3s) — found
+# via a direct product-slug prefix sweep this pass. A novelty removable-tile colour-scheme
+# product, distinct in kind from `kungfu-qinghong`/`kungfu-longyuan`'s plain-speedcube
+# positioning.
+
+id: kungfu-dot-cube
+entity: family
+manufacturer_id: kungfu
+name: "KungFu Dot Cube"
+aliases:
+  - "Kung Fu Dot Cube"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: special
+description: |-
+  TheCubicle's own description (thecubicle-kungfu-dot-cube-3x3-2020): "The Kung Fu Dot Cube is
+  a well performing, sculpted 3x3 with plastic circular tiles on each face. A tool to remove
+  these tiles is also included, allowing for a changeable color scheme." A standard-shaped
+  3x3x3 mechanism (56.0mm³, per the same spec table) with a distinctive removable-tile surface
+  treatment, closer in character to a decorative/novelty edition than a plain competitive
+  speedcube, hence `positioning: special` rather than `budget` despite KungFu's otherwise
+  budget-tier range.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-kungfu-dot-cube-3x3-2020]
+    note: "Earliest capture found this pass is 2020-09-22. The product's own 'Added:
+      2018-09-11' spec-table field is deliberately not used — see
+      thecubicle-mojue-m3-2020's reliability_note."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-kungfu-dot-cube-3x3-2020]
+    note: "No source states a positioning tier; inferred `special` from its distinctive
+      removable-tile surface treatment rather than a plain speedcube pitch."
+  /description:
+    confidence: reported
+    sources: [thecubicle-kungfu-dot-cube-3x3-2020]

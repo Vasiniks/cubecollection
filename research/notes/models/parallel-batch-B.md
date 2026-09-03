@@ -680,3 +680,68 @@ editions, even though this pass keeps it in the same family.
 dimensional/weight evidence across three separate listings).
 
 ---
+## KungFu — 3 families
+
+**Method.** `data/manufacturers/kungfu.yml` already named two 3x3s (QingHong, LongYuan) via
+its single tier 4 Speedsolving wiki source. `npm run wayback -- prefix
+thecubicle.com/products/kungfu` (9 URLs) independently corroborated both at a tier 2 retailer
+and surfaced a third, undocumented-by-the-wiki 3x3: **Dot Cube**.
+
+**Candidates considered:** KungFu QingHong, KungFu LongYuan, KungFu Dot Cube, KungFu 3x3 Gear
+Cube (a gear-mechanism puzzle, not a 3x3x3 — rejected on scope grounds), KungFu YueHun 2x2
+(the wiki's own "YueHan" appears to be a transliteration variant of the same product; out of
+scope as a 2x2 either way), KungFu CangFeng/JuQue 4x4s (out of scope).
+
+**Accepted (3):** `kungfu-qinghong` ("solid performance at a low price point"),
+`kungfu-longyuan` ("a very low price point... inexpensive first speedcube for beginners"),
+`kungfu-dot-cube` (a removable-tile novelty colour-scheme 3x3, not previously documented in
+this register at all). No source relates any of the three to the others as a succession or
+naming variant — each is its own distinctly-named, independently-positioned budget product,
+so each is its own family (the same "distinctly named, no stated succession" reasoning used
+for ShengShou's several independent lines in the main pass-2 log).
+
+**Rejected:** KungFu 3x3 Gear Cube (a gear-mechanism puzzle — RESEARCH_SPEC §2.4 scope, not a
+3x3x3 despite the "3x3" in its own name, the same pattern already seen with Z-Cube's "Slip
+3x3" and VeryPuzzle's "Slip 3x3" last/this session); KungFu YueHun/YueHan 2x2 and
+CangFeng/JuQue 4x4s (out of 3x3x3 scope entirely).
+
+**Unresolved questions:** exact introduction dates for all three (capture-date evidence only,
+and the suspect "Added: 2018-09-11" field appears on all three — not used); whether "YueHun"
+(TheCubicle's product slug) and "YueHan" (the wiki's spelling) are the same 2x2 product or two
+different ones — immaterial to this pass's 3x3x3 scope either way, but flagged for whoever
+eventually researches KungFu's 2x2 range.
+
+**Sources added:** `thecubicle-kungfu-qinghong-3x3-2021`, `thecubicle-kungfu-longyuan-
+3x3-2020`, `thecubicle-kungfu-dot-cube-3x3-2020`.
+
+**Confidence:** `reported` on `description`/`positioning` (tier 2 retailer sources,
+corroborating the existing tier 4 wiki source for two of three); `uncertain` on `introduced`
+throughout.
+
+---
+
+## Second assignment complete — summary
+
+All eight assigned manufacturers researched: `verypuzzle` (0 — genuine finding), `limcube`
+(0 — genuine finding), `escube` (2), `pbcube` (1), `xinlexin` (0 — genuine finding, first-party
+resolved), `guojia` (1), `lefun` (1, deliberately covering ~12 print-theme editions as one
+family), `kungfu` (3). **8 families total across 8 manufacturers, 3 of them genuine
+zero-family findings** — exactly the pattern the coordinator's brief predicted for this batch.
+
+**Sub-brand caution:** `limcube` and `pbcube` sub-brand/parent relationships were left
+untouched throughout — no new evidence bearing on either surfaced this session (LimCube's
+zero-family result reinforces, without changing confidence on, its existing FangShi
+attribution; PBCube's single product reinforces, without changing confidence on, its existing
+MoYu attribution).
+
+**A useful discovery technique surfaced this session:** TheCubicle's own manufacturer-filter
+dropdown, captured in full while researching VeryPuzzle, lists every brand value in its
+product taxonomy at once — this is how `guojia`'s and `kungfu`'s TheCubicle footprints were
+confirmed to exist at all, rather than by guessing product-slug prefixes blind. Worth reusing
+for any future thin/obscure manufacturer in this register.
+
+**The `Added: 2018-09-11` data trap flagged last session recurred throughout this batch**
+(KungFu's all three products, again) — continuing to refuse it as a date source per the
+coordinator's note that this warning was propagated to Agent A.
+
+**Queue exhausted. Ready for reassignment.**
