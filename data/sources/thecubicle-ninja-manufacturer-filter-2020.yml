@@ -1,0 +1,28 @@
+# source: thecubicle-ninja-manufacturer-filter-2020
+# TheCubicle's own manufacturer-filtered collection page for "Ninja", archived 2020-09-20.
+# Tier 2, first-party retailer categorisation.
+id: thecubicle-ninja-manufacturer-filter-2020
+entity: source
+kind: retailer
+title: "Products – Filtered by \"Manufacturer: Ninja\" – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/all/manufacturer_ninja"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920105158id_/https://www.thecubicle.com/collections/all/manufacturer_ninja"
+excerpt: |-
+  Page title and filter: "Manufacturer: Ninja". Three products listed: "Ninja Ghost Cube",
+  "Ninja Ghost Cube (Starry Sky)", "Ninja Ghost Cube - Unstickered" — all Ghost Cube shape
+  modifications, not standard WCA-legal 3x3s. A separate "Ghost Hand" manufacturer filter link
+  appears adjacent in the sidebar, a distinct brand also making shape-mod puzzles, not
+  independently investigated this pass.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation, sufficient to establish
+  existence and product category (Ghost Cube-style shape modifications) but not country,
+  founding, or legal identity, all of which are unknown. Relevant to scope_class: Ghost Cube is
+  a non-WCA-legal shape modification, so any Ninja product admitted to the archive at pass 2/4
+  would need a `conditional` scope_class with its own justification, not `core`."
+status: sourced

@@ -1,0 +1,55 @@
+# manufacturer: verypuzzle
+# Pass 1 (manufacturer register). Long-tail candidate; a specialty shape-mod / non-3x3 twisty
+# puzzle maker. Included per the "enumerate broadly" instruction — no standard WCA-legal 3x3
+# product was found under its own name this pass, so any admitted product would need
+# `scope_class: conditional`, decided at pass 2/4, not here. Also resolves "Geranium Puzzles"
+# (a separate pass-0 long-tail candidate) as a VeryPuzzle product line.
+
+id: verypuzzle
+entity: manufacturer
+name: "VeryPuzzle"
+kind: manufacturer
+aliases:
+  - "Very Puzzle"
+  - "VeryPuzzles"
+notes: |-
+  **Identity.** TheCubicle's own manufacturer-filtered collection page names "VeryPuzzle" as a
+  distinct manufacturer with 43 items listed at the time archived
+  (thecubicle-verypuzzle-manufacturer-filter-2021) — tier 2, first-party retailer
+  categorisation, the only source located this pass. No independent domain, About page, or
+  company-registration record was located; country and founding are left unknown, though
+  general recall from the pass-0 brief (not independently verified) notes a live
+  verypuzzle.com domain has archive.org captures — a lead for a future pass, not cited as its
+  own fact here.
+
+  **Product range is shape mods and non-3x3 twisty puzzles, not standard speedcubes.** Every
+  product title located under this manufacturer filter carries a "VeryPuzzle" prefix and falls
+  into shape modifications (Clover Cube, Clover Dodecahedron/Icosahedron/Octahedron), Megaminx-
+  family puzzles ("Minx+"), and other non-3x3 categories (Tuttminx, Eliac Puzzle). No standard
+  WCA-legal 3x3 was seen under this filter.
+
+  **Resolves "Geranium Puzzles" as a VeryPuzzle line, not a separate manufacturer.** The pass-0
+  candidate list separately carried "Geranium Puzzles" as its own long-tail candidate. The same
+  retailer page shows a "Geranium Puzzles" sidebar sub-collection, but every product actually
+  filed there is itself named with a "VeryPuzzle" prefix ("VeryPuzzle Butterfly Geranium",
+  "VeryPuzzle Geranium Plus", "VeryPuzzle Geranium Plus V2") — a retailer sub-category grouping
+  a VeryPuzzle product family, not a distinct brand. No separate manufacturer record created for
+  Geranium Puzzles.
+
+  **Scope note.** This register does not decide scope_class, a model/variant-level field; it
+  records the manufacturer's existence so a future pass can admit a specific historically or
+  collector-significant product under `scope_class: conditional` rather than the brand being
+  invisible to the archive.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [thecubicle-verypuzzle-manufacturer-filter-2021]
+    note: "Single tier 2 retailer source. No independent corroboration located this pass."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-verypuzzle-manufacturer-filter-2021]
+  /notes:
+    confidence: uncertain
+    sources: [thecubicle-verypuzzle-manufacturer-filter-2021]

@@ -1,0 +1,43 @@
+# manufacturer: ninja
+# Pass 1 (manufacturer register). Long-tail candidate; a shape-modification puzzle maker
+# (Ghost Cube), not a standard WCA-legal 3x3 manufacturer. Included per the "enumerate broadly"
+# instruction — any admitted product would need `scope_class: conditional`, decided at pass 2/4,
+# not here.
+
+id: ninja
+entity: manufacturer
+name: "Ninja"
+kind: manufacturer
+aliases:
+  - "Ninja Puzzle"
+notes: |-
+  **Identity.** TheCubicle's own manufacturer-filtered collection page names "Ninja" as a
+  distinct manufacturer, listing three "Ghost Cube"-style shape modification products (Ninja
+  Ghost Cube, Ninja Ghost Cube (Starry Sky), Ninja Ghost Cube - Unstickered)
+  (thecubicle-ninja-manufacturer-filter-2020) — tier 2, first-party retailer categorisation, the
+  only source located this pass. No independent domain, About page, or company-registration
+  record was located; country and founding are left unknown.
+
+  **Scope note.** A Ghost Cube is a non-WCA-legal shape modification (a cube mechanism reshaped
+  so the solved state is not a cube). This register does not decide scope_class, which is a
+  model/variant-level field; it records the manufacturer's existence so a future pass can admit
+  a specific product under `scope_class: conditional` with its own justification if it proves
+  historically or collector significant, rather than the brand being invisible to the archive.
+
+  **Distinct "Ghost Hand" brand noted, not investigated.** The same retailer page's sidebar
+  shows an adjacent "Ghost Hand" manufacturer filter — a separately-named brand also making
+  shape-mod puzzles. Not confused with Ninja here; not independently researched this pass; left
+  as a further long-tail lead for a future session.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [thecubicle-ninja-manufacturer-filter-2020]
+    note: "Single tier 2 retailer source. No independent corroboration located this pass."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-ninja-manufacturer-filter-2020]
+  /notes:
+    confidence: uncertain
+    sources: [thecubicle-ninja-manufacturer-filter-2020]

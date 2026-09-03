@@ -182,8 +182,16 @@ long_tail_candidates:
         broadly — this only resolves the MsCube name specifically." }
   - { name: "Cube4You",     slugs: [cube4you], note: "Historical; archived domain cube4you.com has captures." }
   - { name: "CubeLab",      slugs: [cubelab] }
-  - { name: "VeryPuzzle",   slugs: [verypuzzle], note: "Archived domain verypuzzle.com has captures. May be non-3x3 specialist." }
-  - { name: "Calvin's Puzzle", slugs: [calvins-puzzle], note: "Likely a manufacturer of non-WCA and shape-mod puzzles; 3x3 relevance unestablished." }
+  - { name: "VeryPuzzle",   slugs: [verypuzzle],
+      status: "CANONICALISED as data/manufacturers/verypuzzle.yml, kind: manufacturer at
+        `drafted`/uncertain. Confirmed non-3x3 specialist per TheCubicle's own manufacturer
+        filter (43 items, all shape mods / Minx+ / Tuttminx, no standard 3x3). Also resolves
+        the separate 'Geranium Puzzles' candidate below as a VeryPuzzle line." }
+  - { name: "Calvin's Puzzle", slugs: [calvins-puzzle],
+      status: "CANONICALISED as data/manufacturers/calvins-puzzle.yml, kind: manufacturer at
+        `drafted`/uncertain. Country left explicitly unknown (internally conflicting HK/mainland
+        China signal in the one source found). Mostly non-WCA shape mods and cuboids; 3x3
+        relevance for a specific product is a pass 2/4 scope_class question." }
   - { name: "ZCube",        slugs: [zcube] }
   - { name: "SaoCube",      slugs: [saocube] }
   - { name: "Vin Cube",     slugs: [vin-cube] }
@@ -194,7 +202,11 @@ long_tail_candidates:
       status: "RESOLVED — a TheCubicle in-house premium tuning-line name (same evidence and
         treatment as FZ/Angstrom Research above). Recorded as an alias on
         data/manufacturers/thecubicle.yml, not its own record." }
-  - { name: "Ninja",        slugs: [ninja] }
+  - { name: "Ninja",        slugs: [ninja],
+      status: "CANONICALISED as data/manufacturers/ninja.yml, kind: manufacturer at
+        `drafted`/uncertain. TheCubicle's own manufacturer filter lists three 'Ninja Ghost
+        Cube' shape-mod products — a scope_class: conditional candidate for pass 2/4, not a
+        WCA-legal 3x3 maker. An adjacent 'Ghost Hand' brand noted but not investigated." }
   - { name: "StuCube",      slugs: [stucube-collection] }
   - { name: "UniCube",      slugs: [uni-cube, unicube-collection, unicube-magnetic],
       status: "RESOLVED — confirmed as one of SpeedCubeShop's own three in-house setup-tier
@@ -220,7 +232,11 @@ long_tail_candidates:
         same TheCubicle page reads 'FanXin HuDong' / 'FanXin hardware' in its title and prose
         but 'Manufacturer: HuDong' in its own structured spec field. See
         data/manufacturers/fanxin.yml notes. No separate manufacturer record created." }
-  - { name: "Geranium Puzzles", slugs: [geranium-puzzles] }
+  - { name: "Geranium Puzzles", slugs: [geranium-puzzles],
+      status: "RESOLVED — a VeryPuzzle product line, not an independent manufacturer. Every
+        product filed under TheCubicle's 'Geranium Puzzles' sidebar sub-collection is itself
+        named with a 'VeryPuzzle' prefix. See data/manufacturers/verypuzzle.yml. No separate
+        record created." }
   - { name: "The Yoo Cubes", slugs: [the-yoo-cubes] }
   - { name: "Zepuzzles",    slugs: [zepuzzles] }
   - { name: "LBL Designs",  slugs: [lbl-designs] }

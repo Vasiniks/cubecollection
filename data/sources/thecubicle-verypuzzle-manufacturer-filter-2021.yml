@@ -1,0 +1,35 @@
+# source: thecubicle-verypuzzle-manufacturer-filter-2021
+# TheCubicle's own manufacturer-filtered collection page for "VeryPuzzle", archived 2021-02-02.
+# Tier 2, first-party retailer categorisation. Also resolves "Geranium Puzzles" (a separate
+# pass-0 long-tail candidate) as a VeryPuzzle product line, not an independent manufacturer.
+id: thecubicle-verypuzzle-manufacturer-filter-2021
+entity: source
+kind: retailer
+title: "Products – Filtered by \"Manufacturer: VeryPuzzle\" – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/all/manufacturer_verypuzzle"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210202064118id_/https://www.thecubicle.com/collections/all/manufacturer_verypuzzle"
+excerpt: |-
+  Page title and filter: "Manufacturer: VeryPuzzle". A "Geranium Puzzles" sub-collection link
+  appears in the sidebar, but every product actually filed under the VeryPuzzle manufacturer
+  filter is named with a "VeryPuzzle" prefix, including the Geranium-named ones: "VeryPuzzle
+  Butterfly Geranium", "VeryPuzzle Geranium Plus", "VeryPuzzle Geranium Plus V2", alongside
+  "VeryPuzzle Classical Tuttminx", "VeryPuzzle Clover Cube", "VeryPuzzle Clover Cube Plus",
+  "VeryPuzzle Clover Dodecahedron", "VeryPuzzle Clover Icosahedron D1", "VeryPuzzle Clover
+  Octahedron", "VeryPuzzle Clover Octahedron Fragmentation", "VeryPuzzle Eliac Puzzle", and
+  others — no standard WCA-legal 3x3 among them, all shape mods, Megaminx-family ("Minx+"), and
+  other non-3x3 twisty puzzle categories.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation. Establishes VeryPuzzle as a
+  real, distinct manufacturer of specialty/shape-mod puzzles, and resolves 'Geranium Puzzles'
+  (a separate pass-0 candidate name) as a VeryPuzzle-branded sub-line, not an independent
+  manufacturer — every actual product title carries the 'VeryPuzzle' prefix regardless of which
+  sidebar sub-collection it sits in. Does not establish country or founding, left unknown.
+  Relevant to scope_class: no 3x3 product was seen under this filter, so any VeryPuzzle product
+  admitted to the archive would most likely need `conditional` scope_class, not `core`."
+status: sourced
