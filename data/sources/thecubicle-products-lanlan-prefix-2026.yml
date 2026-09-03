@@ -1,0 +1,58 @@
+# source: thecubicle-products-lanlan-prefix-2026
+# TheCubicle's own product-URL structure under /products/lanlan-*, enumerated via wayback CDX
+# `prefix` on 2026-09-03 during the Pass 2 adjudication gate. Tier 2, first-party retailer
+# naming. Created specifically to close an evidentiary gap: LanLan's zero-family conclusion was
+# the only one of eight reached without the retailer prefix sweep applied to every sibling case.
+# The sweep confirms the conclusion — no standard 3x3x3 LanLan product exists in the catalogue.
+id: thecubicle-products-lanlan-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/lanlan-* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lanlan-void-cube"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/lanlan returns 99 captures
+  spanning 2019-07-18 through 2026-03-29, resolving to 59 distinct product slugs. The list was
+  NOT truncated (99 rows returned against a --limit of 400, no truncation warning emitted).
+
+  Complete distinct slug list: lanlan-12-axis-dodecahedron, lanlan-2x2, lanlan-2x2-dodecahedron,
+  lanlan-3x3-diamond, lanlan-3x3-geary-cube, lanlan-3x3x2, lanlan-3x3x2-pie,
+  lanlan-4-corners-cube, lanlan-4x4, lanlan-4x4-octahedron, lanlan-5x5, lanlan-7x7,
+  lanlan-andromeda-cube, lanlan-butterflower-cube, lanlan-cane-ball,
+  lanlan-clover-octahedron-cube, lanlan-clover-pyraminx, lanlan-crazy-comet,
+  lanlan-curvy-copter, lanlan-curvy-windmill-cube, lanlan-ddr-pillowed-3x3-rhombohedron,
+  lanlan-edges-only-void-cube, lanlan-flower-copter, lanlan-gear-3x3-hexagonal-dipyramid,
+  lanlan-gear-hexadecahedron, lanlan-gear-hexagonal-prism, lanlan-gear-honey-copter,
+  lanlan-gear-mastermorphix, lanlan-gear-megaminx, lanlan-gear-octahedron,
+  lanlan-gear-rhombic-dodecahedron, lanlan-gear-tetrakaidecahedron, lanlan-grid-skewb,
+  lanlan-hollow-sticker-curvy-copter, lanlan-honey-copter, lanlan-jewel-cube,
+  lanlan-master-clover-cube, lanlan-master-skewb, lanlan-mastermorphix, lanlan-mosaic-cube,
+  lanlan-octahedron, lanlan-pitcher-4-corner-cube, lanlan-rainbow-snake, lanlan-rex-cube,
+  lanlan-rhombic-dodecahedron, lanlan-scopperil, lanlan-skewb, lanlan-skewb-curvy-rhombohedron,
+  lanlan-skewb-diamond, lanlan-skewb-dodecahedron, lanlan-skewb-pe, lanlan-skewb-spring-set,
+  lanlan-squished-skewb, lanlan-star-pyraminx, lanlan-sunflower-cube,
+  lanlan-super-floppy-1x3x3, lanlan-void-cube, lanlan-wolf-tooth-cube, lanlan-x-skewb.
+
+  Every slug containing "3x3" is a non-standard mechanism, not a 3x3x3 speedcube:
+  lanlan-3x3-diamond (shape mod), lanlan-3x3-geary-cube (gear cube), lanlan-3x3x2 and
+  lanlan-3x3x2-pie (3x3x2, a different puzzle), lanlan-ddr-pillowed-3x3-rhombohedron (shape
+  mod), lanlan-gear-3x3-hexagonal-dipyramid (gear/shape mod), lanlan-super-floppy-1x3x3
+  (1x3x3). No standard 3x3x3 LanLan product appears anywhere in the enumeration.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  thecubicle.com/products/lanlan --limit 400`) is the primary evidence; the excerpt reproduces
+  the full distinct-slug list and the date range directly, per RESEARCH_SPEC 3.5's allowance for
+  evidence that does not reduce to one page's text. The non-truncation of the list is recorded
+  explicitly because a limit-truncated prefix result would not be evidence of absence."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Retailer URL enumeration, tier 2. Establishes what TheCubicle stocked under
+  the LanLan brand across 2019-2026, which is strong negative evidence for a standard 3x3x3
+  given LanLan's confirmed retail presence there, but it is one retailer: it cannot prove LanLan
+  never produced a standard 3x3x3 for another market. It raises the LanLan zero-family finding
+  to the same evidentiary standard as its seven sibling zero-family cases; it does not make the
+  finding absolute."
+status: sourced

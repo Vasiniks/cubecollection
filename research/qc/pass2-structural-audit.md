@@ -439,3 +439,47 @@ fits the tier-3 definition better than "unattributed wiki". But the override sho
 `kind: wiki` — a short unattributed wiki stub genuinely is tier 4, and the distinction must
 survive. Applying it narrowly also leaves S1's 21 single-tier-4-source families still flagged,
 since promoting the tier does not create corroboration.
+
+---
+
+## S14 — RESOLVED BY DIRECT TEST: LanLan's zero-family finding was under-evidenced but is correct
+
+The taxonomy challenge argued that `lanlan` was the **only one of eight zero-family conclusions
+reached without a retailer prefix sweep** — the exact check that corroborated all seven siblings
+— and was therefore plausibly a **D (evidence insufficient) recorded as an A (no in-scope family
+exists)**. The wiki's own phrasing ("originally known for their standard cubes") made a genuine
+3x3 line plausible.
+
+**The gap was real. I ran the missing sweep rather than leaving it open.**
+
+`npm run wayback -- prefix thecubicle.com/products/lanlan --limit 400` returned **99 captures
+spanning 2019-07-18 to 2026-03-29, resolving to 59 distinct product slugs**, and the list was
+**not truncated** (99 rows against a limit of 400, no truncation warning) — which matters,
+because a truncated list would not have been evidence of absence.
+
+**Result: the original conclusion is correct.** Every slug containing "3x3" is a non-standard
+mechanism:
+
+| Slug | What it actually is |
+|---|---|
+| `lanlan-3x3-diamond` | shape mod |
+| `lanlan-3x3-geary-cube` | gear cube |
+| `lanlan-3x3x2`, `lanlan-3x3x2-pie` | 3x3x2 — a different puzzle |
+| `lanlan-ddr-pillowed-3x3-rhombohedron` | shape mod |
+| `lanlan-gear-3x3-hexagonal-dipyramid` | gear/shape mod |
+| `lanlan-super-floppy-1x3x3` | 1x3x3 |
+
+The rest of the 59 are 2x2, 4x4, 5x5, 7x7, skewbs, gear puzzles, shape mods and the Void Cube.
+**No standard 3x3x3 LanLan product appears anywhere.**
+
+**Classification: A — no in-scope 3x3 family found** (previously A on weaker evidence; now
+evidenced to the same standard as its seven siblings).
+
+Evidence preserved as `data/sources/thecubicle-products-lanlan-prefix-2026.yml`, with the full
+59-slug list, the non-truncation fact recorded explicitly, and a `reliability_note` stating the
+honest limit: this is one retailer, so it raises the finding to its siblings' standard but
+cannot prove LanLan never made a standard 3x3x3 for another market.
+
+This is the model outcome for the gate: a specialist identified a methodological gap, the gap
+was real, the test was cheap, and running it converted an assumption into evidence — in this
+case confirming rather than overturning the original call.
