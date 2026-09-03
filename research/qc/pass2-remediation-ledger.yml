@@ -11,13 +11,13 @@
 meta:
   baseline_sha: "9068899"
   updated: "2026-09-03"
-  phase: "window-1 complete - all four specialists reported, corrections applied"
+  phase: "Pass 2.5 complete - held attestations closed, mf8 blocker resolved, methodology amended"
   counts:
     entities: 54
     families: 122
     models: 48
     variants: 104
-    sources: 285
+    sources: 289
 
 issues:
 
@@ -97,7 +97,7 @@ issues:
     last_updated: "2026-09-03"
 
   - id: E2
-    severity: high
+    severity: medium      # corrected from high 2026-09-03: see e2-single-source-classification.md
     status: open
     title: "21 families rest on a single tier-4 source with no corroboration at all"
     category: evidence-quality
@@ -119,8 +119,10 @@ issues:
       corroboration, so the underlying single-source concern persists for all 21 originals.
     confidence: high
     downstream_impact: >-
-      9 families now (was 21). mf8-crazy-3x3x3 deliberately stayed tier 4 - its rule-15 hard
-      block at Pass 3 is real and was NOT dissolved by convenient re-tiering.
+      7 families now (was 21, then 9). Both MF8 families gained tier-2 retailer sources in Pass
+      2.5, resolving the class-C blocker. The remaining 7 (diansheng x4, yuxin x3) are class A:
+      every claim is held at `uncertain`, and each is a distinctly named line, so evidence is
+      weak but no family boundary is in doubt. A research backlog, not a gate item.
     owner: main
     last_updated: "2026-09-03"
 
@@ -265,7 +267,12 @@ issues:
       design). Rule 15 requires conditional scope_class to cite at least one tier 1-3 source.
       Eight cite a tier-2 TheCubicle page and can satisfy it; mf8-crazy-3x3x3 has only tier 4.
     counterevidence: "none"
-    recommendation: "Human policy decision on conditional admission; get a tier 1-3 source for mf8-crazy-3x3x3."
+    recommendation: >-
+      PARTIALLY RESOLVED 2026-09-03. mf8-crazy-3x3x3 now has three independent tier-2 retailer
+      sources, so rule 15 is satisfiable for it and the hard block is gone. mf8-legend turned out
+      to be an ordinary WCA-format 3x3, so rule 15 never applied there. The remaining item is the
+      human policy decision on conditional admission for the 8 genuinely non-WCA families, which
+      is a Pass 3/4 scope call rather than an evidence gap - each already cites a tier-2 source.
     confidence: high
     downstream_impact: "mf8-crazy-3x3x3 will hard-fail validation at Pass 3."
     owner: main
@@ -371,5 +378,156 @@ issues:
       dedicated operator field. A schema decision, not a data error.
     confidence: medium
     downstream_impact: "None for Pass 3."
+    owner: main
+    last_updated: "2026-09-03"
+
+  # ---- Pass 2.5 (2026-09-03) ----
+
+  - id: E1b
+    severity: medium
+    status: resolved
+    title: "12 held tier-4 attestations adjudicated; tier-4-only violations now zero"
+    category: evidence-policy
+    affected_records: "mfjs.yml, mf8-crazy-3x3x3, mf8-legend, mfjs-meilong, mfjs-mf3, mfjs-mini-3x3"
+    evidence: >-
+      Agent A checked each against the live pages. The MoFang JiaoShi page carries a live "This
+      page may be currently outdated" banner (verified verbatim by the main session); the MF8
+      page is a stub failing the long-form prong. Neither qualifies for the tier-3 override.
+    counterevidence: "Both pages are edit-protected, which satisfies one prong but not all."
+    recommendation: >-
+      RESOLVED. All 12 downgraded to `uncertain`. Archive-wide count of reported/probable
+      attestations resting solely on tier-4 sources is now ZERO, closing E1 completely.
+    confidence: high
+    downstream_impact: "Closed."
+    owner: agent-a / main
+    last_updated: "2026-09-03"
+
+  - id: D-M1
+    severity: medium
+    status: resolved
+    title: "Duplicate source records for the same wiki page, some at asymmetric tiers"
+    category: source-integrity
+    affected_records: >-
+      speedsolving-wiki-mfjs-products/-mofang-jiaoshi (merged); speedsolving-wiki-dayan,
+      -cyclone-boys, -yongjun (tier aligned with their -products siblings)
+    evidence: >-
+      The MFJS pair resolve to one page - path URL redirects to query URL, and two captures 8
+      months apart are byte-identical. Separately, three pairs shared an identical URL while
+      holding different tiers: tier 3 under one id, derived tier 4 under the sibling.
+    counterevidence: "Different capture dates could in principle preserve different page states; diffed and they do not."
+    recommendation: >-
+      RESOLVED. MFJS pair merged, citations repointed, loser retained as a redirect marker cited
+      by nothing. The three asymmetric siblings given the same tier-3 override plus an explicit
+      one-evidence-chain warning, since rule 9's publisher check cannot catch a same-publisher
+      duplicate. Verified no attestation cites both members of any pair.
+    confidence: high
+    downstream_impact: "Closed. Removes a live false-corroboration trap."
+    owner: agent-d / main
+    last_updated: "2026-09-03"
+
+  - id: D-B1
+    severity: medium
+    status: resolved
+    title: "qiyi.yml prose still narrated the withdrawn affiliate page as authoritative"
+    category: internal-consistency
+    affected_records: [data/manufacturers/qiyi.yml]
+    evidence: >-
+      The Q1 fix repointed attestations but never touched the free-text notes, which continued
+      to describe theqiyi-about-us as "QiYi's own About page - tier 1, first-party" and repeated
+      the "independent designer known as X-Man" claim that x-man-design.yml withdrew as
+      factually wrong the same day. Two alias values, "QY Cube" and "QY Toys", appear only in
+      the withdrawn source and in none of the three sources now cited.
+    counterevidence: "none"
+    recommendation: >-
+      RESOLVED. Narrative rewritten so the record no longer contradicts its own sibling.
+      /aliases downgraded to `uncertain`; the two unsupported values retained rather than
+      deleted, because an alias that is wrong is still a string a researcher may encounter.
+    confidence: high
+    downstream_impact: "Closed. A mechanical source-swap is not a fix if the prose still argues the old case."
+    owner: agent-d / main
+    last_updated: "2026-09-03"
+
+  - id: D-B2
+    severity: medium
+    status: resolved
+    title: "Two probable attestations rested on tier-3-only sources"
+    category: evidence-policy
+    affected_records: [data/manufacturers/qiyi.yml, data/families/moyu-rs3m.yml]
+    evidence: >-
+      vocab/confidence.yml defines `probable` as requiring a TIER 2 source; tier 3 supports only
+      `reported`. The E1 tier-3 overrides fixed these attestations' tier-4 problem and missed
+      their confidence level. Swept archive-wide: exactly 2 instances.
+    counterevidence: "none"
+    recommendation: "RESOLVED. Both downgraded to `reported`. Probable-without-tier-2 is now zero."
+    confidence: high
+    downstream_impact: "Closed. A defect introduced by the E1 remediation itself."
+    owner: agent-d / main
+    last_updated: "2026-09-03"
+
+  - id: D-M2
+    severity: low
+    status: resolved
+    title: "Rule 9's new publisher-independence branch had no test fixture"
+    category: validation-coverage
+    affected_records: [scripts/selftest.mjs, tests/fixtures/fail/]
+    evidence: >-
+      Rule 9 fired in the fail fixture only via its ORIGINAL branch. A regression in the new
+      same-publisher branch would have passed selftest undetected.
+    counterevidence: "none"
+    recommendation: >-
+      RESOLVED. Added fixtures zz-samepub-a/b (same publisher, both tier 2) and an assertion on
+      the branch's own message text rather than on rule 9 firing at all.
+    confidence: high
+    downstream_impact: "Closed."
+    owner: agent-d / main
+    last_updated: "2026-09-03"
+
+  - id: C-M1
+    severity: medium
+    status: resolved
+    title: "Methodology: official-site-first misses live manufacturers whose domains have died"
+    category: research-methodology
+    affected_records: [RESEARCH_SPEC.md, data/manufacturers/dayan.yml]
+    evidence: >-
+      DaYan and ShengShou are demonstrably active - dozens of current retailer SKUs including
+      2026-dated items - while their official domains are dead or squatted. dayan.yml recorded
+      /website `confirmed` off a 2013 capture; the live domain fails with an expired TLS
+      certificate. Swift Block, by contrast, was correctly found BY the official-site route, so
+      the method is not broadly broken.
+    counterevidence: >-
+      The archive already compensated in practice via archived retailer sweeps, which is how
+      MoreTry, HuaMeng, ESCube and PBCube were found. The gap was that this was never mandatory.
+    recommendation: >-
+      RESOLVED. RESEARCH_SPEC.md section 3.6a added, making two checks mandatory before
+      enumeration is called complete: an archived retailer /products/ prefix sweep even when the
+      official site is healthy, and at least one non-US/English retailer. Both must leave a
+      written trace. Also requires live-verifying a website before recording /website confirmed.
+      dayan.yml corrected accordingly.
+    confidence: high
+    downstream_impact: "Closed as a policy gap. See C-B1 for the concrete lead it surfaced."
+    owner: agent-c / main
+    last_updated: "2026-09-03"
+
+  - id: C-B1
+    severity: medium
+    status: open
+    title: "Cubelelo 'Drift' house brand absent from the entity register"
+    category: research-completeness
+    affected_records: "none yet - entity not created"
+    evidence: >-
+      Cubelelo, a major Indian retailer never swept by the existing discovery method, carries a
+      house brand "Drift" with roughly 60 SKUs, each listing "Brand: Cubelelo" - structurally
+      identical to the TheCubicle and SpeedCubeShop house lines already canonicalised as
+      kind: service entities. Absent from all 54 entities.
+    counterevidence: >-
+      Not yet verified whether Drift products are 3x3s in scope, or whether Cubelelo
+      manufactures versus rebadges. Reported as a lead only; no record created.
+    recommendation: >-
+      Research before or early in Pass 3. Do NOT create an entity on retailer categorisation
+      alone - the same caution that governed the MoJue/MoHuanShouSu sub-brand claims.
+    confidence: medium
+    downstream_impact: >-
+      Does not block Pass 3. If real, it is a missing entity rather than a wrong one, so it adds
+      to the archive rather than invalidating existing records.
     owner: main
     last_updated: "2026-09-03"

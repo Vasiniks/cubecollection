@@ -2,8 +2,8 @@
 
 **Timestamp:** 2026-09-03
 **Current SHA:** see `git log -1` (baseline for this effort: `9068899`)
-**Phase:** Window 1 COMPLETE — all four specialists reported; verified corrections applied
-**Gate:** 🟡 YELLOW — ready with documented risk. See `PASS2_HANDOFF.md`.
+**Phase:** PASS 2.5 COMPLETE — held attestations closed, mf8 blocker resolved, methodology amended
+**Gate:** 🟢 **GREEN — READY.** See `PASS2_HANDOFF.md`.
 
 ## Counts (verified from repository)
 
@@ -13,7 +13,7 @@
 | families | 122 |
 | models | **48** (unchanged — gan 40, monster-go 5, swift-block 3) |
 | variants | **104** (unchanged) |
-| sources | 285 |
+| sources | 289 |
 | families with zero models | 111 — the Pass 3 queue |
 
 ## Specialists
@@ -33,7 +33,7 @@ All four are **read-only over `data/`** and write one report each in an isolated
 
 See `pass2-remediation-ledger.yml` for the authoritative machine-readable ledger.
 
-**15 issues tracked · 11 resolved · 4 open.**
+**22 issues tracked · 17 resolved · 5 open · 0 critical · 0 high.**
 
 - **Critical: 0 open.** `Q1` RESOLVED (QiYi re-sourced to qiyitoys.net). `E1` RESOLVED
   (differentiated tier policy; 111 violations → 12 held for human decision).
@@ -78,3 +78,22 @@ See `PASS2_HANDOFF.md` § "Next session instructions". In short:
 ## Hard constraint
 
 **Pass 3 has not started and must not start during this effort.** Models remain 48, variants 104.
+
+---
+
+## Pass 2.5 final state (2026-09-03)
+
+**Gate: GREEN.** 22 issues tracked, 17 resolved, 5 open — all medium/low, none able to
+materially corrupt model enumeration.
+
+**Closed this round:** `E1b` (12 held attestations → 0 tier-4-only violations archive-wide) ·
+`S6` blocker half (mf8 rule-15 resolved with three tier-2 sources) · `D-B1` `D-B2` `D-M1` `D-M2`
+(four defects found inside the previous remediation) · `C-M1` (methodology amended into
+`RESEARCH_SPEC.md` § 3.6a).
+
+**Still open, all non-blocking:** `E2` (7 class-A families) · `S6` (conditional-admission policy
+call) · `D-F4` (single-source concentration) · `C-B1` (Cubelelo "Drift" lead) · `D-F5`
+(`cubicle-labs` schema wording).
+
+**Validation:** `npm run check` green; one pre-existing rule-25 advisory.
+**Models 48 · variants 104 — unchanged. Pass 3 has not started.**

@@ -169,6 +169,61 @@ catalogue, which by construction shows only what is currently for sale.
 `get` returns the snapshot with tags stripped, using the `id_` raw form so the archive's own
 banner and rewriting do not contaminate an excerpt.
 
+### 3.6a Discovery breadth — mandatory checks before declaring enumeration complete
+
+*Added 2026-09-03 after the Pass 2.5 methodology audit
+(`research/qc/agent-c-swift-block-methodology.md`).*
+
+The governing principle is **broad discovery, narrow corroboration**. Discovery may use weak
+sources freely; load-bearing facts must still be substantiated by stronger ones. The failure
+mode this section exists to prevent is the opposite of over-claiming — it is **silent
+incompleteness**, where a manufacturer looks fully enumerated because its own website was
+tidy.
+
+The audit found the risk is real but bounded, and concentrated in specific places. Two
+concrete probes established it: **DaYan** and **ShengShou** are both demonstrably active
+companies — dozens of current SKUs at specialist retailers, including 2026-dated releases —
+whose own official domains are dead or now resolve to unrelated businesses. For those two, a
+methodology anchored on official sites would have found nothing while the retailer channel
+carried the full catalogue.
+
+Note the counter-example, so this is not over-corrected: **Swift Block** was found correctly
+*by* the official-site-first route, from GAN's own brand-story page naming it under "Our
+Sub-brands". Official sites remain the strongest evidence when they exist and are maintained.
+The amendment below is about what to do **in addition**, not instead.
+
+Two checks are therefore **required** before family enumeration for a manufacturer may be
+called complete. Both are cheap, and both must leave a written trace so a reviewer can verify
+they happened.
+
+**1. Run at least one archived retailer `/products/` prefix sweep, even when the official site
+is healthy.** A live catalogue shows only what is currently for sale; a manufacturer's own site
+almost never lists what it discontinued a decade ago. This project's `/products/` prefix sweep
+previously surfaced **MoreTry, HuaMeng, ESCube and PBCube** — brands absent from live sites
+entirely — and later confirmed **LanLan's** zero-family finding to the standard its siblings
+already met. Record the outcome either way, including an explicit "swept, nothing new found".
+Absence of a recorded sweep is treated as *not searched*, never as *nothing there*.
+
+**2. Include at least one non-US/English retailer in discovery.** The audit found that
+**Cubelelo**, a major Indian retailer never swept by the existing method, carries its own house
+brand ("Drift", ~60 SKUs, "Brand: Cubelelo" on every listing) structurally identical to the
+TheCubicle and SpeedCubeShop house lines the archive has already canonicalised — and it is
+absent from the 54-entity register. One retailer's regional catalogue can hold an entire entity
+the rest of the method never sees. Record the retailer checked and the outcome.
+
+**Live-verify a `website` value before recording `/website` at `confirmed`.** A domain that was
+genuinely a manufacturer's own site in 2013 may today be expired, parked, or re-registered by
+an unrelated company, and a `confirmed` claim resting on an old capture silently becomes false.
+If the domain no longer serves the manufacturer, omit the `website` field and record
+`/website: unknown` with a note — the treatment already used correctly in `shengshou.yml` and
+`cyclone-boys.yml`. The historical capture remains valid evidence for *historical* facts; it is
+current-state claims it cannot support. `dayan.yml` was corrected under this rule.
+
+**What this section does not license.** Do not scrape whole forums or entire retailer
+catalogues. Do not treat retailer taxonomy, URL slugs, or product naming as lineage evidence —
+that error produced the withdrawn DaYan/QiYi "Guhong migration" hypothesis. Forums and
+community sources are for **discovery and corroboration, never automatic truth**.
+
 ### 3.7 Translation
 
 Machine-translated material keeps the original text in `excerpt` and gets a

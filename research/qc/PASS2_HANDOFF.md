@@ -7,7 +7,9 @@ you do not need the conversation that produced it.
 
 ---
 
-## PASS-3 GATE: 🟡 **YELLOW — READY WITH DOCUMENTED RISK**
+## PASS-3 GATE: 🟢 **GREEN — READY**
+
+*(was YELLOW at `9ec413d`; raised 2026-09-03 after Pass 2.5 closed the remaining blockers)*
 
 Both critical blockers are **resolved**. No unresolved critical or high issue remains that would
 materially corrupt model enumeration. Four medium/low issues remain open and are documented below.
@@ -28,7 +30,7 @@ Not GREEN, because: 9 families still rest on a single tier-4 source with no corr
 | families | 122 |
 | **models** | **48** — unchanged since `9068899` |
 | **variants** | **104** — unchanged since `9068899` |
-| sources | 285 (+1) |
+| sources | 289 (+5) |
 | families with zero models | 111 — the Pass 3 queue |
 
 **Pass 3 has NOT started.** Models and variants are untouched throughout this effort.
@@ -39,6 +41,9 @@ Not GREEN, because: 9 families still rest on a single tier-4 source with no corr
 
 | Commit | Change |
 |---|---|
+| `cb23fd2` | E2 classified A/B/C; E2 severity corrected high→medium |
+| `16110db` | **Pass 2.5**: 12 held attestations closed · mf8 rule-15 blocker resolved · D-B1/B2/M1/M2 fixed |
+| _this_ | Methodology amendment (RESEARCH_SPEC 3.6a) · ledger/status/handoff |
 | `e10215d` | Durable ledger + status established |
 | `e757007` | Main-session invariant checks (S16–S19) |
 | `405e27c` | **Q1 resolved** — QiYi/X-Man re-sourced to the genuine corporate site |
@@ -212,3 +217,84 @@ Then, in order:
 
 **Pass 3 model enumeration did not begin during this effort and must not begin until the open
 decisions above are taken.** Models 48, variants 104, verified unchanged.
+
+---
+
+# PASS 2.5 ADDENDUM (2026-09-03)
+
+## Held attestations — 12 of 12 resolved, **zero remain**
+
+All twelve were checked against the **live** pages, not the archived excerpts.
+
+| Source | Attestations | Verdict |
+|---|---|---|
+| `speedsolving-wiki-mofang-jiaoshi` (+ its duplicate) | 8 | **Downgraded to `uncertain`** — live "This page may be currently outdated" banner, quoted verbatim; fails the override test |
+| `speedsolving-wiki-mf8-products` | 4 | **Downgraded to `uncertain`** — a stub with a bare product list; fails the long-form prong independently of any banner |
+
+**Archive-wide `reported`/`probable` attestations resting solely on tier-4 sources: 0.** E1 is
+fully closed.
+
+`mfjs-mf3` `/successor_family_id` → `moyu-rs3m` got extra scrutiny: it is the **only
+cross-manufacturer successor link in the archive** (swept to confirm). It is structurally
+coherent — MFJS *is* a MoYu sub-brand — but the previous note **overstated the evidence**,
+claiming an explicit succession the page does not make; it says the RS3M is "an updated version
+of the MF3RS3" in a separate section. Link retained at `uncertain`, overstatement corrected.
+
+## `mf8-crazy-3x3x3` — **RESOLVED**, the class-C blocker is gone
+
+Three independent tier-2 retailer sources across three publisher-and-date combinations
+(SpeedCubeShop 2015, TheCubicle 2020, SpeedCubeShop 2024), plus one for `mf8-legend`. Live URLs
+independently re-verified by the main session. `/description` and `/positioning` upgraded to
+`probable`; **`/introduced` deliberately NOT upgraded** — the new sources establish circulation,
+not a release date.
+
+`scope_class: reference_only` was considered and **rejected on evidence**: the line was in
+retail circulation 2015–2025, inside the archive window, so `conditional` is the honest outcome.
+`mf8-legend` turned out to be an ordinary WCA-format 3x3, so rule 15 never applied to it at all.
+
+## Defects found **inside the previous remediation** — all fixed
+
+The adversarial pass was aimed at the freshly-landed fixes, and found four:
+
+- **`D-B1`** — the Q1 fix repointed `qiyi.yml`'s attestations but left its **prose** narrating the
+  withdrawn affiliate page as "tier 1, first-party", still repeating the "independent designer"
+  claim its own sibling record had withdrawn as wrong the same day. *A mechanical source-swap is
+  not a fix if the prose still argues the old case.* Rewritten. Two alias values (`QY Cube`,
+  `QY Toys`) exist only in the withdrawn source — `/aliases` downgraded, values retained and flagged.
+- **`D-B2`** — two `probable` attestations rested on tier-3-only sources. The E1 overrides fixed
+  their *tier* and missed that `probable` requires **tier 2**. Both → `reported`. Now zero.
+- **`D-M1`** — three Speedsolving pairs resolve to the **same URL at two different tiers**. One page
+  cannot be two tiers. Aligned, with an explicit one-evidence-chain warning, since rule 9's
+  publisher check cannot catch a same-publisher duplicate. The MFJS pair (byte-identical captures
+  8 months apart) was merged outright.
+- **`D-M2`** — rule 9's new publisher branch had **no fixture**, so a regression would have passed
+  selftest. Added `zz-samepub-a/b` and an assertion on the branch's own message, not on "9" firing.
+
+## Methodology — **amended**, in `RESEARCH_SPEC.md` § 3.6a
+
+The premise that Swift Block was missed is **false** — it is in the archive and was found *by*
+the official-site route. But two probes showed a real, bounded gap: **DaYan** and **ShengShou**
+are active companies (2026-dated SKUs at retailers) whose **own domains are dead or squatted**.
+
+Now **mandatory** before enumeration may be called complete, each leaving a written trace:
+1. An archived retailer `/products/` prefix sweep **even when the official site is healthy**.
+2. **At least one non-US/English retailer.**
+3. **Live-verify a domain** before recording `/website: confirmed`; omit the field and record
+   `unknown` if it no longer serves the manufacturer. `dayan.yml` corrected under this rule.
+
+## Open issues — 5, none blocking
+
+| id | sev | status |
+|---|---|---|
+| `E2` | medium | 7 families on a single tier-4 source, all **class A** — enrichment backlog |
+| `S6` | medium | Conditional-admission **policy** call for 8 non-WCA families; each already cites tier 2 |
+| `D-F4` | medium | Single-source/publisher concentration — completeness backlog |
+| `C-B1` | medium | Cubelelo "Drift" — a lead to research, not a defect |
+| `D-F5` | low | `cubicle-labs` `parent_id` on a non-`sub_brand` record — schema wording |
+
+## Next action for the Pass 3 session
+
+1. Read `research/qc/gan-family-boundary-rule.md` **before any GAN model work**.
+2. Take the `S6` conditional-admission policy decision — it is a scope call, not an evidence gap.
+3. Apply `RESEARCH_SPEC.md` § 3.6a to every manufacturer enumerated.
+4. Begin Pass 3 model enumeration. **111 of 122 families have zero models.**
