@@ -22,6 +22,19 @@ notes: |-
   suggested the brand emerged around 2015 in Guangzhou, specialising in non-WCA novelty and
   shape-mod puzzles rather than competitive speedcubes — recorded here as an unconfirmed lead
   for a future pass, not as a sourced fact.
+
+  **"HuDong" is a FanXin product line, not a separate manufacturer — with a flagged internal
+  contradiction.** TheCubicle's product page for the "HuDong Light 3x3" is titled and
+  URL-prefixed "fanxin-hudong-*" and its own prose reads "The FanXin HuDong is a huge step for
+  FanXin hardware," but the same page's structured "Manufacturer" spec field reads "HuDong"
+  alone, not "FanXin" (thecubicle-fanxin-hudong-2024). This register treats HuDong as a FanXin
+  product/model line (the more specific and informative prose reading, consistent with how
+  "Guhong" and other model-family names are handled elsewhere in this register) rather than
+  creating an independent "HuDong" manufacturer record, but the contradiction itself is
+  preserved rather than silently resolved — a future researcher with better evidence (e.g. a
+  FanXin or HuDong first-party source) may find the two are in fact separate companies in a
+  supply/OEM relationship, which would need a `rebrand_of` or similar evidenced relationship,
+  not an assumption from this single ambiguous retailer field.
 status: drafted
 
 attestations:
@@ -42,4 +55,4 @@ attestations:
     note: "Researched and not found: no FanXin-branded domain was located this pass."
   /notes:
     confidence: uncertain
-    sources: [thecubicle-fanxin-3x3]
+    sources: [thecubicle-fanxin-3x3, thecubicle-fanxin-hudong-2024]

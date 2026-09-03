@@ -1,0 +1,27 @@
+# source: thecubicle-haitun-waverider-v1-2024
+# TheCubicle's own product page for the "HaiTun Waverider V1 3x3 (Flagship)", archived
+# 2024-02-10. Tier 2, first-party retailer product/spec page.
+id: thecubicle-haitun-waverider-v1-2024
+entity: source
+kind: retailer
+title: "HaiTun Waverider V1 3x3 (Flagship) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/haitun-cube-3x3-flagship"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240210044709id_/https://www.thecubicle.com/products/haitun-cube-3x3-flagship"
+excerpt: |-
+  Product Description: "The Waverider V1 is a new 3x3 speedcube by the emerging brand Haitun
+  Cube. This Flagship version features traditional corner-edge magnets as well as little (but
+  surprisingly strong) magnets embedded into the feet of each piece, creating a dynamic magnet
+  positioning system..." Product Specifications table: "Manufacturer / HaiTun ... Type / 3x3 ...
+  Added / 2024-01-17."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer product page, explicitly describing Haitun Cube
+  as 'the emerging brand' (i.e. a genuinely independent, newly-arrived manufacturer, not a
+  house line of TheCubicle or a rebrand of another maker) and naming it directly in the
+  retailer's own 'Manufacturer' spec field."
+status: sourced

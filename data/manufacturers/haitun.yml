@@ -1,0 +1,45 @@
+# manufacturer: haitun
+# Pass 1 (manufacturer register). Long-tail candidate, and a genuinely new (as of the source
+# located) entrant rather than a historical brand — "the emerging brand Haitun Cube" per its
+# retailer's own description, with a documented model succession (V1 through V2 Ultimate)
+# reaching into 2026 captures.
+
+id: haitun
+entity: manufacturer
+name: "HaiTun"
+kind: manufacturer
+aliases:
+  - "Haitun Cube"
+  - "Haitun"
+notes: |-
+  **Identity.** TheCubicle's own product page for the "HaiTun Waverider V1 3x3 (Flagship)"
+  states directly: "The Waverider V1 is a new 3x3 speedcube by the emerging brand Haitun Cube,"
+  and its own Product Specifications table gives "Manufacturer: HaiTun" (thecubicle-haitun-
+  waverider-v1-2024) — tier 2, first-party retailer description, explicit that this is an
+  independent brand rather than a house line or rebrand. No independent Haitun-branded domain,
+  About page, or company-registration record was located in the time available this pass, so
+  country and founding are left `unknown` rather than guessed — "海豚" (a plausible Chinese
+  reading of "Haitun", meaning "dolphin") is a lead, not a confirmed native name, and is not
+  recorded as `native_name` without a source stating it directly.
+
+  **Product succession, useful for pass 2.** TheCubicle's own product URLs (enumerated via
+  wayback CDX prefix, not independently cited beyond this description) show a Waverider V1 in
+  2024 (flagship, standard, and a limited edition, plus a dedicated adjustment tool), followed
+  by a Waverider V2 (standard, pioneer, flagship, and an "Ultimate" tier) with captures into
+  2026 — a young but actively developed brand across the tail of this archive's window, worth
+  flagging for pass 2's family/model enumeration.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-2024]
+    note: "Single tier 2 source, but an explicit first-party statement ('the emerging brand
+      Haitun Cube') rather than a bare manufacturer-filter mention — recorded at probable
+      rather than uncertain accordingly."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-2024]
+  /notes:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-2024]

@@ -208,8 +208,18 @@ long_tail_candidates:
       status: "RESOLVED — same finding as UniCube. See data/manufacturers/speedcubeshop.yml." }
   - { name: "Cosmic",       slugs: [cosmic-cubes, cosmic-magnetic],
       status: "RESOLVED — same finding as UniCube. See data/manufacturers/speedcubeshop.yml." }
-  - { name: "Haitun",       slugs: [haitun-waverider-v1] }
-  - { name: "HuDong",       slugs: [hudong-light] }
+  - { name: "Haitun",       slugs: [haitun-waverider-v1],
+      status: "CANONICALISED as data/manufacturers/haitun.yml, kind: manufacturer at
+        `drafted`/probable. TheCubicle's own product page states directly: 'The Waverider V1
+        is a new 3x3 speedcube by the emerging brand Haitun Cube' — an explicit first-party
+        statement, not a bare filter mention. A young brand with an active V1->V2 succession
+        reaching into 2026 captures." }
+  - { name: "HuDong",       slugs: [hudong-light],
+      status: "RESOLVED — a FanXin product line, not an independent manufacturer, though the
+        evidence is internally contradictory and flagged rather than silently resolved: the
+        same TheCubicle page reads 'FanXin HuDong' / 'FanXin hardware' in its title and prose
+        but 'Manufacturer: HuDong' in its own structured spec field. See
+        data/manufacturers/fanxin.yml notes. No separate manufacturer record created." }
   - { name: "Geranium Puzzles", slugs: [geranium-puzzles] }
   - { name: "The Yoo Cubes", slugs: [the-yoo-cubes] }
   - { name: "Zepuzzles",    slugs: [zepuzzles] }

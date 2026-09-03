@@ -1,0 +1,32 @@
+# source: thecubicle-fanxin-hudong-2024
+# TheCubicle's own product page for the "FanXin HuDong Light 3x3 (Standard)", archived
+# 2024-10-09. Tier 2, first-party retailer product/spec page, cited specifically because it
+# contains an internal naming inconsistency worth preserving rather than silently resolving.
+id: thecubicle-fanxin-hudong-2024
+entity: source
+kind: retailer
+title: "HuDong Light 3x3 Standard – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241009113827id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+excerpt: |-
+  Product URL and title use "fanxin-hudong-*" / "HuDong Light". Description: "The FanXin
+  HuDong is a huge step for FanXin hardware. This is an extremely modern and competitive
+  flagship 3x3... This cube has piece-to-piece magnetization, an 8 magnet ball-core with
+  repelling edge magnets, and corner foot-to-edge foot magnets." Product Specifications table:
+  "Manufacturer / HuDong ... Type / 3x3 ... Added / 2024-10-04."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer page, but internally inconsistent about
+  whether 'FanXin' or 'HuDong' is the manufacturer: the product URL, title, and prose
+  description all say 'FanXin HuDong' and 'FanXin hardware', while the same page's own
+  structured 'Manufacturer' spec field reads 'HuDong' alone. Preserved as-is rather than
+  silently picking one reading — see data/manufacturers/fanxin.yml notes for how this is
+  handled (HuDong recorded as a FanXin product line, not a separate manufacturer record,
+  because the prose is more specific/informative than the single-word structured field, but the
+  contradiction itself is flagged as unresolved)."
+status: sourced
