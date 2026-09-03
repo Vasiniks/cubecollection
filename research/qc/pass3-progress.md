@@ -1,57 +1,80 @@
 # Pass 3 — model enumeration progress
 
-**Started:** 2026-09-03 · **Baseline:** `23ccaf1` · **Policy:** `research/qc/pass3-admission-policy.md`
+**Updated:** 2026-09-03 · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
+**Batch 1: COMPLETE** — all four lanes merged, including two recovered after a rate-limit kill.
 
-Live progress record. A fresh session should read this plus the admission policy and be able to
-resume without re-reading the research history.
+## Invariants (verified at this commit)
 
-## Invariants (must hold at every commit)
+| | Frozen at | Now | |
+|---|---|---|---|
+| entities | 54 | **54** | ✓ |
+| families | **122 — FROZEN** | **122** | ✓ |
+| variants | **104 — Pass 4, must not change** | **104** | ✓ |
+| models | 48 at Pass 3 start | **156** | +108 |
+| sources | 289 at Pass 3 start | **367** | +78 |
 
-| | Frozen at | Now |
-|---|---|---|
-| entities | 54 | 54 |
-| families | **122 — FROZEN** | 122 |
-| variants | **104 — Pass 4, must not change** | 104 |
-| models | 48 at start | 71 |
-| sources | 289 at start | 289 |
-
-## Status
-
-**Phase:** Agent A (MoYu lane) complete. See `research/qc/pass3-agent-a-moyu.md` for full
-per-family reasoning, escalations, and the machine-readable model list.
+Verified programmatically across all 156 models: every `family_id` resolves, every model's
+`manufacturer_id` matches its family's, every model carries `scope_class`, no duplicate ids.
 
 ## Coverage
 
-| Manufacturer | Families | Models | Status |
-|---|---|---|---|
-| gan | 8 | 40 | pilot complete (Pass 3 done) |
-| monster-go | 2 | 5 | pilot complete |
-| swift-block | 1 | 3 | pilot complete |
-| moyu | 9 | 23 | **Agent A complete** — see pass3-agent-a-moyu.md |
-| *all others* | 102 | 0 | **not started** |
+**55 of 122 families now have models. 67 remain unenumerated.**
 
-## Zero-model families (confirmed, with reasoning)
+| Manufacturer | Models | Status |
+|---|---|---|
+| gan | 40 | pilot (pre-Pass 3) |
+| qiyi | 24 | **Batch 1 ✓** |
+| dayan | 23 | **Batch 1 ✓** (recovered) |
+| moyu | 23 | **Batch 1 ✓** |
+| yj | 22 | **Batch 1 ✓** (recovered) |
+| shengshou | 11 | **Batch 1 ✓** (recovered) |
+| monster-go | 5 | pilot |
+| x-man-design | 5 | **Batch 1 ✓** |
+| swift-block | 3 | pilot |
 
-*none recorded yet*
+`scope_class`: **core 152 · reference_only 3 · conditional 1**
 
-## Escalations (taxonomy questions — do NOT mutate, record here)
+## Batch 1 disposition
 
-*none from Agent A (MoYu lane). One candidate checked and cleared: the Speedsolving MoYu wiki
-article lists a "MoYu YuLong" 3x3 not among moyu's 9 families — confirmed already correctly
-handled as `data/families/yj-yulong.yml` (attributed to YJ, "Sometimes bore the MoYu logo," per
-`speedsolving-wiki-yongjun-products`). No taxonomy error; not escalated.*
+| Lane | Outcome |
+|---|---|
+| **A — MoYu** (9 families) | 23 models. Merged `a1ec16c`. |
+| **B — QiYi + X-Man** (11 families) | 29 models, 33 sources. Held for QA, both items reconciled, then merged. |
+| **C — DaYan** (8 families) | 23 models. **Terminated by rate limit**; committed work + 3 uncommitted TengYun records recovered from the surviving worktree. |
+| **D — YJ + ShengShou** (16 families) | 33 models. **Terminated by rate limit**; committed work + 9 uncommitted MGC records recovered. |
 
-## Open model candidates (discovered, not accepted)
+**Nothing was re-researched.** Both killed lanes had intact worktrees; their uncommitted records
+validated clean and were committed rather than discarded.
 
-*From Agent A (MoYu lane), pass-4 leads recorded in the relevant model files' descriptions
-rather than here (each is tied to a specific model's evidence):*
-- *WeiLong AI — expected `smart_version_of` variant of `moyu-weilong-wr-m-2020`, not a model.*
-- *WeiLong WR M, GTS2 M/(LE)/(WCA Record Edition), GTS3 M/LM — magnet-configuration variants of
-  their respective base models.*
-- *WR M 2021 MagLev; V9 Standard/Maglev/Ballcore (+ a Jan-2024 20-magnet Ballcore SKU); Super's
-  8/8/20-magnet configurations — all variant leads on their respective model files.*
-- *RS3M MagLev and RS3M 2020 UV — variant leads on `moyu-rs3m-2020`. Super RS3M
-  Standard/Maglev/Ball Core, Super RS3M V2's three configurations, and RS3M V5's six
-  configurations — variant leads on their respective model files.*
-- *A possible "RS3M 2021" generation — evidence too thin (one ambiguous mention) to promote to
-  a model or even a `revisions[]` entry; recorded as an open question in `moyu-rs3m-2020.yml`.*
+## Escalations
+
+| id | Status |
+|---|---|
+| **E-VALK-1** | Open — `research/qc/pass3-escalation-valk.md`. Prose-only defect in `qiyi-valk`'s description; **no family mutated**. |
+
+## Scope-class discrimination (worth preserving as precedent)
+
+`qiyi-sail-big` was admitted `conditional` on documented competitive feet-solving use.
+`qiyi-warrior-plus` and `qiyi-qimeng-plus` were left `reference_only` — oversized, but with no
+documented significance. This is the S6 policy's "significance, not mere unusualness" rule
+applied correctly rather than everything being swept into `conditional`.
+
+## Remaining work — 67 zero-model families
+
+Next batch, by evidence strength and historical weight:
+**yuxin** (7) · **diansheng** (5) · **cyclone-boys** (5) · **maru** (4) · **rubiks** (3) ·
+**mfjs** (3) · **fanxin** (3) · **kungfu** (3) · **calvins-puzzle** (3) · **witeden** (3)
+
+Then the ~28 single- and double-family manufacturers.
+
+## Open questions carried forward
+
+- Several MoYu/QiYi model/variant calls flagged `uncertain` by their agents (WeiLong V2,
+  RS3M "2021", `qiyi-warrior-m` vs `-m-pro`, `qiyi-m-pro-v2`) — recorded in the agent reports,
+  not silently resolved.
+- No `specs` block was created anywhere in Batch 1: no tier 1–2 spec source was found, and the
+  policy forbids specs from weaker sources. Left unset rather than guessed.
+
+## Pass 4
+
+**NOT STARTED.** Variants remain at 104.
