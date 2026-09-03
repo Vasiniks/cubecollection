@@ -1,0 +1,71 @@
+# model: moyu-weilong-v9
+# Pass 3 (model enumeration). A new named flagship generation, described as a deliberate
+# "back-to-basics" design combining WR M 2020's split-piece construction with WR M 2019's
+# internal geometry — read as a genuine design change (a stated redesign, not a sold
+# configuration of an existing shell), meeting the model boundary even though it explicitly
+# recombines elements of two prior generations. Standard/Maglev/Ballcore are recorded as
+# variants of this one model (core-system and maglev differences), not separate models. See
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-v9
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong V9"
+aliases:
+  - "MoYu WeiLong V9 Standard/Maglev/Ballcore"
+scope_class: core
+generation:
+  label: "V9"
+  ordinal: 9
+  basis: manufacturer_declared
+released:
+  value: "2023"
+  precision: year
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Released spring 2023. It featured a
+  split-piece design a la WR M 2020, but the internal geometry is most similar to the WRM 2019,
+  as a 'back-to-basics' type design. So far, the Standard version is the cheapest of the
+  Weilong series from the past few years, but it loses adjustable magnet strength. Maglev
+  features maglev springs and purple corner/edge stalks, and the Ballcore features corner-core
+  magnets as well as repelling edge magnets similar to that of the GAN 13." Standard, Maglev,
+  and Ballcore are recorded as variants of this model (core-system/maglev/magnet-architecture
+  differences), not separate models, per DATA_MODEL §4.2.
+
+  Lead for pass 4, not adopted as a model or revision here: "A 20-magnet Ballcore version was
+  released in January 2024, adding 12 more core magnets to attract to the edge-repelling
+  magnets. Retails for $47.99" — read as a further magnet-architecture variant of the Ballcore
+  configuration, a sold configuration difference, not a new design generation.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct statement ('Released spring 2023'). Recorded at year
+      precision with qualifier 'circa'; 'spring' is not converted to a specific quarter to
+      avoid inventing precision the source does not itself give in ISO terms."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No tier 1-2 corroboration was found this pass for 'V9' as a MoYu retail name; single
+      tier 3 source."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki explicitly compares V9's construction to both WR M 2020 (split-piece) and WR M
+      2019 (internal geometry), naming its lineage directly, but does not state a single
+      immediate predecessor. WR M 2019 is the same product this archive records as
+      moyu-weilong-wr (the wiki elsewhere calls the WR generation's magnetic configuration
+      'WR M', released circa 2019). Recorded succeeding WR M 2021 as the nearest chronological
+      generation, at reduced confidence."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-wr-m-2021
+    target_entity: model
+    note: "Chronologically the next named WeiLong generation after WR M 2021/2021 MagLev in the
+      wiki's own article ordering; the wiki's own comparison text names WR M 2020 and WR M 2019
+      as design influences rather than a single direct predecessor, so this succession edge is
+      recorded at reduced confidence."

@@ -1,0 +1,40 @@
+# model: moyu-weilong-original
+# Pass 3 (model enumeration). The opening generation of MoYu's flagship WeiLong succession,
+# described by the wiki as a deliberate improvement on moyu-huanying. See
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-original
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong"
+scope_class: core
+generation:
+  label: "WeiLong"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The WeiLong was created after the HuanYing
+  and was a deliberate attempt to improve on the HuanYing. They kept the squished torpedo,
+  adding more plastic to the interior corner pieces, and making the corner cutting better...
+  The corner stalks are short and rounded and the base is wider to help prevent popping...
+  This cube is fast and effortless but as a consequence has a reputation of being
+  uncontrollable at high speeds." No manufacturer or retailer source dating this specific
+  generation was located this pass; the family record's own "circa 2014" introduction date
+  rests on broader capture-pattern reasoning (a "WeiLong V2" cross-sell reportedly seen by
+  2015, and the wiki's own placement of "WeiLong V2" before "WeiLong GTS (2016)") rather than a
+  dated statement about this bare first generation specifically, so no `released`/`announced`
+  date is recorded on this model record.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer or retailer generation-ordinal statement was found for the bare,
+      unnumbered 'WeiLong' product; recorded community_convention per the gan-357-original
+      precedent."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. See description for why the family's own circa-2014 date
+      is not repeated here as a model-level attestation."

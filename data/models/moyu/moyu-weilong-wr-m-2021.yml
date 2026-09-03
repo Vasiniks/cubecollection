@@ -1,0 +1,59 @@
+# model: moyu-weilong-wr-m-2021
+# Pass 3 (model enumeration). A clear model boundary: the wiki states this generation "switched
+# to using a capped design as opposed to a split-piece" relative to WR M 2020 — a direct piece-
+# construction (mould) change. The "2021 MagLev" configuration (magnetic levitation replacing
+# springs, plus purple internals) is recorded as a variant of this model, not a separate model,
+# per the task's own explicit guidance that MagLev-vs-spring is a variant-level, not model-
+# level, distinction. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-wr-m-2021
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong WR M 2021"
+aliases:
+  - "MoYu WeiLong WR M 2021/2021 MagLev"
+scope_class: core
+generation:
+  label: "WR M 2021"
+  ordinal: 8
+  basis: manufacturer_declared
+released:
+  value: "2021"
+  precision: year
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "It was released in late 2021, as the name
+  suggests. It featured virtually the same internal geometry as the 2020 but switched to using
+  a capped design as opposed to a split-piece. It featured adjustable magnets across 5
+  settings, and as the name hints, the Maglev version sports magnetic levitation as well as
+  purple internals." The capped-vs-split-piece change is the basis for a new model despite
+  otherwise similar internal geometry; the MagLev configuration (magnetic levitation replacing
+  springs, purple internals) is recorded as a variant of this same model, not a separate model,
+  matching the same test applied to gan-356-maglev elsewhere in this archive and the explicit
+  "MagLev vs. spring" example in this pass's own guidance.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct statement ('released in late 2021'). Recorded at year
+      precision with qualifier 'circa' rather than inventing a specific quarter for 'late'."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No tier 1-2 corroboration of this specific generation's retail name was found this
+      pass (it postdates the 2021-01-14 TheCubicle capture used elsewhere in this family)."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'virtually the same internal geometry as the 2020 but switched to using a
+      capped design', a direct comparative/succession statement."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-wr-m-2020
+    target_entity: model
+    note: "Wiki: 'virtually the same internal geometry as the 2020', naming its predecessor
+      directly."

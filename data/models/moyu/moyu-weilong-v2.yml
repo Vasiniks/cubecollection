@@ -1,0 +1,54 @@
+# model: moyu-weilong-v2
+# Pass 3 (model enumeration). BOUNDARY CALL, recorded per DATA_MODEL §4.2's "when unclear,
+# split" rule (worked decision G). The wiki's own description of this generation ("The most
+# notable change is how the pieces are put together. Other than this, the mechanism remains
+# largely unchanged") reads more like an assembly-method difference than a mould/mechanism
+# change, which would argue for treating it as a variant of moyu-weilong-original rather than a
+# new model. Split into its own model anyway because: (1) it carries the manufacturer's own
+# "V2" version numeral, itself evidence (though not authority) of a design change per DATA_MODEL
+# §4.2; (2) "how the pieces are put together" is genuinely ambiguous between an assembly-time
+# configuration choice and a piece/tooling change; (3) splitting is recoverable by merge, and
+# collapsing here would silently discard a documented generation. `confidence: uncertain` is
+# recorded on the generation claim throughout. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-v2
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong V2"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: community_convention
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The MoYu WeiLong V2 is the second revision
+  of the tremendously popular MoYu WeiLong. The most notable change is how the pieces are put
+  together. Other than this, the mechanism remains largely unchanged." No manufacturer or
+  retailer source describing or dating this generation directly was located this pass; the
+  moyu-weilong family record itself notes a possible 2015 retailer cross-sell reference to
+  "WeiLong V2" that this pass could not independently re-verify against the cited source's own
+  preserved excerpt (see research/qc/pass3-agent-a-moyu.md).
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    note: "'V2' appears in the wiki's own section heading and prose as if a real product name,
+      but no tier 1-2 source was found this pass independently confirming MoYu itself used this
+      exact name at retail. Recorded community_convention, not manufacturer_declared, pending
+      that corroboration."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source. The described change ('how the pieces are put together...
+      mechanism remains largely unchanged') is internally ambiguous about whether this is a
+      model-level or variant-level difference; see the file header for the boundary reasoning."
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki explicitly calls this 'the second revision' of WeiLong, supporting a succession
+      reading, but the underlying mould/mechanism-change question is unresolved (see header)."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-original
+    target_entity: model
+    note: "Wiki: 'the second revision of the tremendously popular MoYu WeiLong'."

@@ -1,0 +1,69 @@
+# model: moyu-weilong-wr-m-2020
+# Pass 3 (model enumeration). BOUNDARY CALL, recorded per DATA_MODEL §4.2 worked decision G
+# ("when unclear, split"). The wiki's own description ("a new color scheme and frosted
+# plastic, along with the MoYu spring adjustment feature") is genuinely ambiguous: colour and a
+# plastic surface finish read as variant-level material/treatment choices, while "the MoYu
+# spring adjustment feature" could describe either a genuinely new internal tensioning
+# mechanism or simply the already-existing GTS3-era adjustment system carried over. Split into
+# its own model rather than folded into moyu-weilong-wr as a variant, on the strength of it
+# being the manufacturer's own named yearly generation (a pattern this family repeats at WR M
+# 2021 and RS3M's own year-badged generations) and the wiki's explicit "successor to the
+# popular WR M" framing.
+#
+# WeiLong AI (the smartcube) is NOT recorded as a separate model or as a model here: the wiki
+# states it shares pieces with this generation ("regarded... as the best-turning smartcube due
+# to sharing pieces with the WRM 2020"), which per DATA_MODEL §4.2 makes it a `smart_version_of`
+# variant of WR M 2020, not a distinct design — expected pass-4 work, flagged here for that
+# researcher. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-wr-m-2020
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong WR M 2020"
+scope_class: core
+generation:
+  label: "WR M 2020"
+  ordinal: 7
+  basis: manufacturer_declared
+released:
+  value: "2020"
+  precision: year
+  qualifier: exact
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Released in 2020, the Weilong WR M 2020 was
+  the successor to the popular WR M. The WR M 2020 featured a new color scheme and frosted
+  plastic, along with the MoYu spring adjustment feature. It had an extremely smooth and fast
+  feel." TheCubicle's own catalogue (thecubicle-com-moyu-3x3-collection-2021, captured
+  2021-01-14) independently confirms "MoYu WeiLong WR M 2020 3x3" and "Angstrom WeiLong WR M
+  2020 3x3" as real, currently-sold retail listings.
+
+  Lead for pass 4: "MoYu WeiLong AI", per the wiki, "shar[es] pieces with the WRM 2020" and is
+  MoYu's first smartcube. This is read as a `smart_version_of` variant of this model (an
+  electronic sibling sharing the mechanical design), not a separate model or family — see
+  header note.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct year-level dated statement ('released in 2020')."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+    note: "'WR M 2020' corroborated as a real, current MoYu retail name by an independent tier
+      2 retailer listing."
+  /description:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "See header for the model/variant boundary ambiguity this record splits on. 'New
+      color scheme and frosted plastic' read alone would argue for variant level; kept as a
+      model per the split-when-unclear rule."
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'the successor to the popular WR M', a direct succession statement."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-wr
+    target_entity: model
+    note: "Wiki: 'the Weilong WR M 2020 was the successor to the popular WR M'."

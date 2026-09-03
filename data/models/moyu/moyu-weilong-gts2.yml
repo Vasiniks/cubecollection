@@ -1,0 +1,52 @@
+# model: moyu-weilong-gts2
+# Pass 3 (model enumeration). A clear model boundary: "a 3-piece corner design that allows for
+# stickerless versions" is a direct piece-construction (mould) change from GTS's capped,
+# non-split design. Corroborated at retail as late as 2021 (as its "GTS2 M" magnetic variant).
+# See research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-gts2
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong GTS2"
+scope_class: core
+generation:
+  label: "GTS2"
+  ordinal: 4
+  basis: manufacturer_declared
+released:
+  value: "2017"
+  precision: year
+  qualifier: exact
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The MoYu WeiLong GTS2 was released in 2017.
+  It is an improvement to the GTS1 with a 3-piece corner design that allows for stickerless
+  versions, and a slightly better feel to the previous. It was widely considered one of the
+  best speedcubes after its release." TheCubicle's own Shopify-era catalogue
+  (thecubicle-com-moyu-3x3-collection-2021), captured 2021-01-14, lists "MoYu WeiLong GTS2 M
+  3x3", "MoYu WeiLong GTS2 M 3x3 (LE)", and "MoYu WeiLong GTS2 M 3x3 (WCA Record Edition)" —
+  magnetic and limited-edition configurations of this same base design, treated as variants,
+  not separate models, per DATA_MODEL §4.2.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct year-level dated statement ('released in 2017')."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+    note: "'GTS2' is corroborated as a real MoYu retail name by an independent tier 2 retailer
+      listing (its 'GTS2 M' magnetic configuration), in addition to the wiki."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'an improvement to the GTS1', a direct succession statement."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-gts
+    target_entity: model
+    note: "Wiki calls this generation 'the GTS1' in its own GTS2 entry, directly naming its
+      predecessor."

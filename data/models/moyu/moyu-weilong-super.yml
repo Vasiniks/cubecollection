@@ -1,0 +1,53 @@
+# model: moyu-weilong-super
+# Pass 3 (model enumeration). A new named flagship generation, described as returning to a
+# capped piece design similar to WR M 2021 and "departing from the V9" (split-piece) — a
+# stated piece-construction difference from the immediately preceding model, meeting the model
+# boundary. Its magnet/core configurations are recorded as variants, not separate models. See
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-super
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong Super"
+scope_class: core
+generation:
+  label: "Super"
+  ordinal: 10
+  basis: manufacturer_declared
+released:
+  value: "2023"
+  precision: year
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Released late 2023. It featured a capped
+  design similar to the WRM 2021, departing from the V9, and shares a similar internal
+  geometry. Coming in primary plastic internals only, it featured an 8-magnet ball-core with
+  spring, 8-magnet ball-core with maglev, and 20-magnet ball-core with maglev... Considered
+  inferior to the V9 in terms of price-to-performance." The three magnet/spring configurations
+  named are recorded as variants of this one model, per DATA_MODEL §4.2.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct statement ('Released late 2023'). Recorded at year
+      precision with qualifier 'circa'."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No tier 1-2 corroboration was found this pass for 'Super' as a MoYu retail name;
+      single tier 3 source."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'a capped design similar to the WRM 2021, departing from the V9', a direct
+      comparative statement naming V9 as the immediate predecessor being departed from."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-v9
+    target_entity: model
+    note: "Wiki: 'departing from the V9', and 'Considered inferior to the V9 in terms of
+      price-to-performance' — both treat V9 as the immediately preceding generation."
