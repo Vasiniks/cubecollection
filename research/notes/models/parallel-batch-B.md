@@ -523,3 +523,31 @@ last session.
 contradicting; genuinely recent product with thin but directly-dated evidence).
 
 ---
+## PBCube — 1 family
+
+**Sub-brand caution note.** `data/manufacturers/pbcube.yml` already records `kind: sub_brand`
+/ `parent_id: moyu` at `confidence: probable`, from a direct retailer statement ("MoYu's
+specialized sub-brand, PBCube"). This pass found no second product and no reason to revisit
+that reading; it is left untouched.
+
+**Candidates considered:** PBCube WR — the only PBCube product-slug capture found at all
+(`thecubicle.com/products/pbcube*` returns exactly one URL, confirming the same thin-footprint
+caution the task brief raised).
+
+**Accepted (1):** `pbcube-wr`, explicitly "the flagship release from MoYu's specialized
+sub-brand, PBCube" per TheCubicle's own copy, added 2026-08-25 and still listed "[Pre-Order]"
+on the only capture found — a genuinely brand-new, not-yet-widely-available product.
+
+**Rejected:** none — no second product to weigh.
+
+**Unresolved questions:** whether "WR" echoes MoYu's own WeiLong WR naming in any way beyond
+coincidence/shared corporate parent (flagged as an unactioned lead in the family's own
+description, not treated as a relationship without evidence).
+
+**Sources added:** none new — cites the existing pass-1 source
+(`thecubicle-pbcube-wr-3x3-maglev-uv`); the `introduced` date was read directly off the
+already-preserved capture.
+
+**Confidence:** `reported` throughout (single tier 2 source, nothing contradicting).
+
+---
