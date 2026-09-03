@@ -253,3 +253,57 @@ description as an open lead, nothing built on it.
 Reused without modification: `thecubicle-moretry-live-2026` (pass 1).
 
 ---
+
+## Eastsheen — 1 family (a genuine judgement call, documented in full)
+
+**Groundwork inspected first.** Pass 1's `data/manufacturers/eastsheen.yml` already flags this
+manufacturer as a deliberate "bracket case" and had already found and resolved a direct
+contradiction: the Speedsolving wiki's own dedicated Eastsheen page states "East Sheen does not
+produce 3x3 cubes," while TheCubicle's own structured product listing for an "Eastsheen 3x3x3
+Cube with Wall Stickers" (spanning captures 2021-2025) names "Eastsheen" as the manufacturer of
+record. Pass 1 preferred the direct retailer evidence; this pass applies that same resolution
+at the family level rather than re-litigating it, per the instruction to preserve prior review
+flags rather than silently re-deciding them.
+
+**Discovery to check whether the footprint is wider than one SKU.** A
+`thecubicle.com/products/eastsheen*` prefix sweep found exactly one 3x3 SKU across the entire
+retailer (the same Wall Stickers listing already sourced) plus five 2x2/4x4/5x5 SKUs, all out
+of this archive's 3x3x3 scope. A `speedcubeshop.com/products/eastsheen*` sweep found **zero**
+3x3 products at all — only 2x2 (mini/keychain, Super), Super 4x4, and Super 5x5 — independently
+consistent with the wiki's "does not produce 3x3 cubes" framing rather than contradicting it
+further. Re-fetching the wiki page live (WebFetch, no archive.org capture available/used)
+confirmed its full product list: 2x2 (Types A/C/E/M), 4x4 and 5x5 (Types A/C/E/M/P), and
+keychain mini/multi cubes — no 3x3 anywhere on the page, and no release dates given for
+anything.
+
+**Family accepted (1):** `eastsheen-3x3` — the base "standard Eastsheen 3x3" implied directly
+by TheCubicle's own product copy ("The Eastsheen 3x3x3 Cube with Wall Stickers is a standard
+Eastsheen 3x3 with stickers applied..."), read as the underlying product name, with "Wall
+Stickers" left as a pass-4 sticker-variant lead rather than folded into the family name or
+split into its own model.
+
+**Boundary reasoning — why one thin family, not zero.** This was the closest call in this
+agent's queue so far. Arguments for zero (matching the LanLan precedent): only one retailer
+carries it, no second source corroborates it, and a dedicated community wiki page directly and
+specifically denies this manufacturer makes 3x3s at all. Arguments for one (which won): unlike
+LanLan's Void Cube (a bare undescribed name with no spec table) or ShengShou's rejected Gem/Tank
+(a single dismissive sentence), this product has a full structured spec table (weight,
+dimensions, a specific retailer-attested manufacturer field), a substantive descriptive
+sentence naming an implied base product, and four-plus years of continuous retail listing
+(2021-2025) at a major English-language retailer — a genuinely different evidentiary shape from
+every case rejected elsewhere in this project's pass 2 work on thinness grounds. The deciding
+factor was durability of the retail listing plus real specification data, not name-recognition
+or manufacturer prominence.
+
+**Recorded, not resolved: the wiki/retailer contradiction stays live.** The family record's own
+`/description` attestation is deliberately set to `reported` rather than `probable`, and its
+prose states the contradiction explicitly rather than picking a side quietly. A future pass with
+capacity to find an Eastsheen first-party source (the company's own domain has been a parked
+page since at least 2011, per pass 1) or a second independent retailer could settle this either
+way.
+
+**No new sources created this manufacturer** — both facts needed (the wiki's product list and
+the retailer's product copy) were already sourced in pass 1; this pass only re-verified them
+(the wiki live, the retailer sweep for corroboration) and applied the family-level boundary call.
+
+---
