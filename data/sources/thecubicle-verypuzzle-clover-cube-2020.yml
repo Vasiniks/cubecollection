@@ -1,0 +1,31 @@
+# source: thecubicle-verypuzzle-clover-cube-2020
+# TheCubicle product page for the "VeryPuzzle Clover Cube," archived 2020-09-27 — checked as
+# the most plausible candidate for a documented-significance 3x3-mechanism-based shape mod in
+# VeryPuzzle's catalogue (a 3x3x3-based cutting style, distinct from the Megaminx-family
+# Geranium/Tuttminx lines that dominate the rest of the catalogue).
+id: thecubicle-verypuzzle-clover-cube-2020
+entity: source
+kind: retailer
+title: "VeryPuzzle Clover Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/verypuzzle-clover-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927045721id_/https://www.thecubicle.com/products/verypuzzle-clover-cube"
+excerpt: |-
+  Product Description: "The VeryPuzzle Clover Cube is an ornate, shape-shifting puzzle. It has
+  2 spots on each edge of the cube that can be rotated freely. The puzzle comes unstickered,
+  but stickers are included." Structured "Specifications": "Manufacturer: VeryPuzzle / Type:
+  Shape Mods / Added: 2018-10-14 / Gross Weight: 304g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. The retailer's own 'Type' field classifies this as 'Shape Mods', a separate category from
+  its own 'WCA Puzzles > 3x3' category. No documented historical significance (a production
+  first, an influence on later designs, a collector market) was found beyond generic novelty
+  description — fails RESEARCH_SPEC §2.2's conditional-admission bar on the evidence found
+  this pass. Used to support the `verypuzzle` zero-family finding in
+  research/notes/models/parallel-batch-B.md."
+status: sourced

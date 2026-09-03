@@ -391,3 +391,57 @@ Magnetic 3x3" (MFJS MF3RS base, magnetized by "Z-Cubes") and "Z Carbon Fiber 3x3
 W base, restickered) — see the Z-Cube section above.
 
 **Queue exhausted. Ready for reassignment.**
+
+# Second assignment (verypuzzle, limcube, escube, pbcube, xinlexin, guojia, lefun, kungfu)
+
+Merged to main as `cee929f` before this section began; that merge is not re-litigated here.
+Continuing to append to this same file per the coordinator's instruction.
+
+## VeryPuzzle — 0 families
+
+**Method.** Pass 1's own `data/manufacturers/verypuzzle.yml` already found, via TheCubicle's
+manufacturer-filter page, that VeryPuzzle's catalogue is shape mods and non-3x3 twisty puzzles
+with "no standard WCA-legal 3x3 ... seen under this filter," and deferred a final call to pass
+2. This pass fetched the full page (52 product URLs via `npm run wayback -- prefix
+thecubicle.com/products/verypuzzle`) and specifically checked the two most plausible
+candidates for an in-scope product: the one item with "3x3" literally in its own name, and the
+one item built on a 3x3x3-derived cutting style.
+
+**Candidates considered:**
+- **VeryPuzzle Slip 3x3** — the only product carrying "3x3" in its name. TheCubicle's own
+  description: "a 3x3 shape mod where all of the pieces rotate independently of the rest of
+  the puzzle" — a fundamentally non-standard mechanism (not a WCA-legal 3x3x3 permutation),
+  sold as a DIY/unstickered kit, no documented significance beyond generic description.
+  **Rejected.**
+- **VeryPuzzle Clover Cube** (+ Plus, Dodecahedron, Icosahedron D1, Octahedron, Octahedron
+  Fragmentation) — a 3x3x3-mechanism-based shape mod line, VeryPuzzle's most 3x3-adjacent
+  product family by mechanism. TheCubicle's own "Type" field classifies it as "Shape Mods," a
+  separate category from its own "3x3" WCA category, and its own product description is
+  generic novelty copy ("an ornate, shape-shifting puzzle") with no documented production
+  first, collector market, or design influence found this pass. **Rejected** on the same
+  evidentiary bar already applied to Z-Cube's shape mods last session (RESEARCH_SPEC §2.2:
+  "'It is interesting' is not a justification").
+- The remaining ~45 products (Geranium series, Tuttminx series, Lovebird, HATO Puzzle, Hex
+  Shaper, Seven Star UFO, Snow Mystery, Super Star, Truncated Icosidodecahedron) are
+  Megaminx-family or other non-cube twisty-puzzle types, out of this archive's 3x3x3 scope
+  entirely (RESEARCH_SPEC §2.4) — not individually fetched, consistent with their category
+  placement on the same manufacturer-filter page.
+
+**Zero families created — a genuine finding, not a gap**, on the same LanLan precedent: a
+specialist shape-mod/non-3x3 manufacturer whose entire found catalogue either falls outside
+this archive's 3x3x3 scope or fails the conditional-admission significance bar for the one
+3x3x3-mechanism line found. No `verypuzzle` family record was created.
+
+**Unresolved questions:** whether a deeper look (a first-party VeryPuzzle site, if one exists,
+was not located either pass) would surface documented significance for the Clover Cube line
+specifically — VeryPuzzle is a long-running specialist house per the task brief, and "first to
+market with a lobed/clover cutting style" is exactly the kind of claim that would flip this
+call if a citable source stated it. Recorded as an open lead, not chased further this pass.
+
+**Sources added:** `thecubicle-verypuzzle-slip-3x3-2020`, `thecubicle-verypuzzle-clover-
+cube-2020`. `thecubicle-verypuzzle-manufacturer-filter-2021` (pass 1, reused).
+
+**Confidence:** `reported` (tier 2 retailer sources, mutually consistent, nothing
+contradicting).
+
+---

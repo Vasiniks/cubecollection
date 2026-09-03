@@ -1,0 +1,31 @@
+# source: thecubicle-verypuzzle-slip-3x3-2020
+# TheCubicle product page for the "VeryPuzzle Slip 3x3," archived 2020-09-20 — the one product
+# in VeryPuzzle's full catalogue (found via `npm run wayback -- prefix
+# thecubicle.com/products/verypuzzle`, 52 URLs) that carries "3x3" in its own name. Checked
+# specifically to test whether it is a standard WCA-legal 3x3 the earlier manufacturer-filter
+# source might have missed; it is not.
+id: thecubicle-verypuzzle-slip-3x3-2020
+entity: source
+kind: retailer
+title: "VeryPuzzle Slip 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/verypuzzle-slip-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920114950id_/https://www.thecubicle.com/products/verypuzzle-slip-3x3"
+excerpt: |-
+  Product Description: "The VeryPuzzle Slip 3x3 is a 3x3 shape mod where all of the pieces
+  rotate independently of the rest of the puzzle. Tired of orienting edges or doing OLL on
+  your 3x3 solves? If yes, then this is the puzzle for you. This is a DIY kit that is fully
+  assembled, all you have to do is sticker it."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own product-description prose, tier 2. Despite the '3x3' in
+  its own product name, this is explicitly a non-standard-mechanism shape mod/gimmick ('all of
+  the pieces rotate independently'), not a WCA-legal 3x3x3, and carries no documented
+  historical or collector significance beyond generic novelty description — fails
+  RESEARCH_SPEC §2.2's conditional-admission bar. Used to support the `verypuzzle` zero-family
+  finding in research/notes/models/parallel-batch-B.md."
+status: sourced
