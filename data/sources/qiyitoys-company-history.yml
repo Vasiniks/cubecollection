@@ -1,0 +1,59 @@
+# source: qiyitoys-company-history
+# QiYi's genuine corporate site (qiyitoys.net), "About Us / Company History" page. Tier 1,
+# first-party. Created 2026-09-03 during the Pass 2 remediation gate to replace
+# theqiyi-about-us, which was found to be an Amazon-affiliate site rather than QiYi's own
+# (see research/qc/pass2-human-review.md issue Q1).
+#
+# Legitimacy was established before use, not assumed: the page carries a live Chinese
+# government ICP filing (粤ICP备2021105271号) tied to a named legal entity, a physical address
+# in Chenghai District, Shantou, and the domain has Wayback captures running from 2016-07-04
+# through 2025 — i.e. it long predates and outlives the affiliate domain it replaces.
+# Every quotation below was verified verbatim by direct fetch of the live page on 2026-09-03.
+id: qiyitoys-company-history
+entity: source
+kind: manufacturer_official
+title: "公司简介 / 发展历程 (About Us / Company History) — 广东奇艺魔方格科教实业有限公司"
+publisher: "广东奇艺魔方格科教实业有限公司 (Guangdong QiYi MoFangGe Science & Education Industrial Co., Ltd.)"
+url: "http://www.qiyitoys.net/col.jsp?id=101"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250710215210/https://www.qiyitoys.net/col.jsp?id=101"
+excerpt: |-
+  Legal entity and location: "广东奇艺魔方格科教实业有限公司" (Guangdong QiYi MoFangGe Science &
+  Education Industrial Co., Ltd.), located in Chenghai District (澄海区), Shantou City (汕头市),
+  Guangdong.
+
+  Founding: "广东奇艺魔方格科教实业有限公司成立于1998年" — the company was founded in 1998.
+
+  Dated company-history entries relevant to this archive:
+
+  - 2015: "奇艺首席设计师张小静创立「XMD」品牌" — QiYi's **chief designer** Zhang Xiaojing (张小静)
+    founded the "XMD" brand. XMD is therefore an internally-founded house brand created by
+    QiYi's own chief designer, NOT a collaboration with an unaffiliated outside designer.
+
+  - 2016: "公司携手著名魔方选手 Mats Valk 创立专业速拧魔方品牌「The Valk」" — the company
+    [QiYi] partnered with the well-known cuber Mats Valk to found the professional speedcubing
+    brand "The Valk". The Valk is thus QiYi's own brand, founded by QiYi in partnership with
+    Mats Valk — it is not a line under XMD / X-Man Design.
+
+  Footer: "©广东奇艺魔方格科教实业有限公司 版权所有 粤ICP备2021105271号"
+preservation_note: "Live page fetched and quoted verbatim 2026-09-03; the archive_url is the
+  2025-07-10 Wayback capture of the same page. Domain-level captures of qiyitoys.net run from
+  2016-07-04 onward, establishing long-running continuity rather than a recently-stood-up site."
+accessed: "2026-09-03"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party, for QiYi's own corporate facts: legal entity name,
+  location, founding year, and the dated company-history entries covering XMD and The Valk.
+  Legitimacy is evidenced by the ICP filing (粤ICP备2021105271号), the named legal entity, a
+  physical address, and Wayback continuity from 2016 — the checks that theqiyi.com fails.
+
+  Residual gap, stated rather than hidden: the ICP filing number was NOT cross-verified against
+  China's MIIT registry directly this pass, so the filing is taken at face value from the page
+  itself. This does not affect the corporate-history claims, which are first-party statements by
+  the entity about itself, but a future pass should close it.
+
+  As a company's own promotional history page, superlative or comparative language elsewhere on
+  the site is marketing copy and tier 4 for any comparative claim, per RESEARCH_SPEC 3.3."
+status: sourced

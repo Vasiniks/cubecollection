@@ -34,8 +34,12 @@ description: |-
   Valk 2 M and Valk 3 variants, consistent with `introduced` circa 2018 or slightly earlier
   (Valk2 M implies an unlisted original Valk/Valk 1 that this pass did not chase further).
 
-  **Boundary call: manufacturer_id set to qiyi, not x-man-design.** This is the pass's least
-  certain family-boundary decision and is recorded in full in
+  **Boundary call: manufacturer_id set to qiyi, not x-man-design — RESOLVED 2026-09-03.**
+  QiYi's own corporate history (qiyitoys-company-history) states that in 2016 *the company*
+  partnered with Mats Valk to found the "The Valk" brand, which settles this directly in favour
+  of `qiyi`; see the /manufacturer_id attestation. The paragraph below records the reasoning as
+  it stood before that evidence was found, and is retained for provenance. It was the pass's
+  least certain family-boundary decision and is recorded in full in
   research/notes/models/global-pass2-families.md. The Speedsolving wiki's own "Sub-Brands"
   section lists "X-Man Design" and "TheValk" as two parallel, separately-headed entries under
   QiYi (not nesting Valk inside X-Man Design), and the 2018 QiYi storefront page title likewise
@@ -65,13 +69,27 @@ attestations:
     confidence: reported
     sources: [qiyicube-storefront-2018, speedsolving-wiki-qiyi-products]
   /manufacturer_id:
-    confidence: uncertain
-    sources: [speedsolving-wiki-qiyi-products, qiyicube-storefront-2018, theqiyi-about-us]
-    note: "See description. Two tier-4/tier-1(storefront) sources treat Valk as parallel to,
-      not nested inside, X-Man Design; QiYi's current tier-1 brand page omits Valk entirely.
-      Recorded uncertain rather than adjusted between qiyi and x-man-design without a source
-      stating the relationship directly."
+    confidence: confirmed
+    sources: [qiyitoys-company-history, qiyicube-storefront-2018, speedsolving-wiki-qiyi-products]
+    note: "RESOLVED and UPGRADED from `uncertain` on 2026-09-03 (issue Q1). This was the pass's
+      least certain family-boundary decision; a first-party source now settles it directly.
+
+      QiYi's genuine corporate site carries a dated 2016 company-history entry stating verbatim:
+      「公司携手著名魔方选手 Mats Valk 创立专业速拧魔方品牌「The Valk」」 — *the company [QiYi]
+      partnered with the well-known cuber Mats Valk to found the professional speedcubing brand
+      'The Valk'*. The Valk is therefore QiYi's own brand, founded by QiYi in partnership with
+      Mats Valk. It is NOT a line under XMD / X-Man Design, which the same page records
+      separately as founded in 2015 by QiYi's chief designer.
+
+      The prior counter-evidence is also withdrawn, not merely outweighed: the observation that
+      'QiYi's own brand page omits Valk entirely' came from theqiyi-about-us, since established
+      as an Amazon-affiliate site rather than QiYi's own. Both the doubt and its source are gone.
+
+      `confirmed` is satisfied by a single tier-1 first-party source per the confidence table;
+      qiyicube-storefront-2018 (QiYi's own 2018 storefront titling 'The Valk' and 'X-Man Design'
+      as coordinate terms) independently corroborates, and the wiki's parallel sub-brand listing
+      agrees at tier 4."
   /description:
     confidence: reported
     sources: [qiyicube-storefront-2018, speedsolving-wiki-qiyi-products,
-      thecubicle-products-valk-prefix-2025, theqiyi-about-us]
+      thecubicle-products-valk-prefix-2025, qiyitoys-company-history]

@@ -15,12 +15,22 @@ introduced:
   qualifier: circa
 positioning: flagship
 description: |-
-  X-Man Design's flagship 3x3 succession, named directly by QiYi's own first-party "About Us"
-  page (theqiyi-about-us, created in pass 1): "[X-Man Design] includes some of our most advanced
-  competition hardware, especially the Tornado series" and, elsewhere on the same page, "The
-  Tornado line of 3x3 flagships... represent[s] a deep partnership between competition
-  experience and engineering execution" — an explicit, tier 1, first-party statement that
-  Tornado is X-Man Design's own flagship line, not merely a retailer label.
+  X-Man Design's flagship 3x3 succession.
+
+  **Evidence withdrawn and confidence reduced 2026-09-03 (issue Q1).** This description
+  previously rested on theqiyi-about-us, described as "QiYi's own first-party About Us page",
+  quoting "[X-Man Design] includes some of our most advanced competition hardware, especially
+  the Tornado series" and "The Tornado line of 3x3 flagships...". That page has since been
+  established as an **Amazon-affiliate site, not QiYi's own** (see
+  research/qc/pass2-human-review.md, issue Q1), so those quotations are no longer tier-1
+  first-party evidence and are not treated as evidence of anything here.
+
+  Unlike data/manufacturers/qiyi.yml and x-man-design.yml, **no replacement first-party evidence
+  for Tornado was found** on QiYi's genuine corporate site (qiyitoys-company-history) this pass.
+  The family's flagship positioning therefore now rests on tier-2 retailer evidence alone, and
+  the confidence has been reduced accordingly rather than re-sourced. The family itself is not
+  in doubt — the products are real and durably listed — only the "X-Man Design's own flagship
+  line" characterisation, which currently has no first-party support.
 
   TheCubicle's own "x-man-designs" collection (thecubicle-x-man-designs-collection-2025) shows
   the succession concurrently as V3 (Standard, Magnetic Core, Pioneer UV, and a "Pioneer 3x3
@@ -48,15 +58,23 @@ attestations:
       captures used here by an unstated margin — TheCubicle's product-URL enumeration does not
       itself carry launch dates, only capture dates). Flagged as a pass-3 dating gap."
   /positioning:
-    confidence: confirmed
-    sources: [theqiyi-about-us]
-    note: "QiYi's own tier 1 page states this directly and unambiguously twice ('most advanced
-      competition hardware, especially the Tornado series'; 'The Tornado line of 3x3
-      flagships') — sufficient alone per the confidence table."
+    confidence: probable
+    sources: [thecubicle-x-man-designs-collection-2025,
+      thecubicle-x-man-xt3-v1-3x3-flagship-product]
+    note: "DOWNGRADED from `confirmed` 2026-09-03 (issue Q1). The sole prior source,
+      theqiyi-about-us, was treated as tier-1 first-party but is an Amazon-affiliate site; its
+      'most advanced competition hardware' and 'Tornado line of 3x3 flagships' wording is
+      withdrawn as evidence. No first-party replacement was found on QiYi's genuine corporate
+      site this pass. `probable` reflects uncontradicted tier-2 retailer evidence, per the
+      confidence table's 'one Tier 2 source, uncontradicted'. A first-party QiYi or XMD
+      statement would restore `confirmed`."
   /aliases:
-    confidence: confirmed
-    sources: [theqiyi-about-us]
+    confidence: probable
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "DOWNGRADED from `confirmed` 2026-09-03 (issue Q1) — previously rested solely on the
+      withdrawn theqiyi-about-us. 'Tornado' and 'X-Man Design Tornado' are both attested in
+      TheCubicle's own X-Man Design collection, tier 2, uncontradicted."
   /description:
     confidence: reported
-    sources: [theqiyi-about-us, thecubicle-x-man-designs-collection-2025,
+    sources: [thecubicle-x-man-designs-collection-2025,
       thecubicle-x-man-xt3-v1-3x3-flagship-product]

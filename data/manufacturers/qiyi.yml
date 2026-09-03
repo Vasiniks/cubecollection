@@ -26,7 +26,7 @@ aliases:
   - "魔方格"
   - "GuangDong QiYi MoFangGe Science & Technology Industrial Co., Ltd."
   - "Guangdong QiYi MoFangGe Science and Technology Industrial Co., Ltd."
-website: "https://theqiyi.com/"
+website: "http://www.qiyitoys.net/"
 notes: |-
   **Identity and founding.** QiYi's own About page states it was "founded" in 1998 as a plastic
   toy manufacturer in Shantou's Chenghai District, Guangdong, and "officially pivoted into
@@ -68,9 +68,11 @@ status: sourced
 attestations:
   /kind:
     confidence: confirmed
-    sources: [theqiyi-about-us, qiyicube-storefront-2018]
-    note: "QiYi's own site, in its own first-person corporate voice, describes designing,
-      engineering, and manufacturing its own cube products — tier 1, sufficient alone."
+    sources: [qiyitoys-company-history, qiyicube-storefront-2018]
+    note: "QiYi's own corporate site (qiyitoys.net), in its own first-person voice, identifies
+      the legal entity 广东奇艺魔方格科教实业有限公司 as a manufacturer in Chenghai, Shantou.
+      Re-sourced 2026-09-03: previously cited theqiyi-about-us, since established as an
+      Amazon-affiliate site rather than QiYi's own (issue Q1)."
   /native_name:
     confidence: probable
     sources: [speedsolving-wiki-qiyi]
@@ -79,16 +81,29 @@ attestations:
       consistent with it."
   /country:
     confidence: confirmed
-    sources: [theqiyi-about-us]
+    sources: [qiyitoys-company-history]
+    note: "Re-sourced 2026-09-03 from QiYi's genuine corporate site, which states the legal
+      entity's address in Chenghai District, Shantou City, Guangdong, and carries the ICP filing
+      粤ICP备2021105271号. Previously rested on theqiyi-about-us (issue Q1)."
   /founded:
     confidence: confirmed
-    sources: [theqiyi-about-us]
+    sources: [qiyitoys-company-history]
+    note: "Re-sourced 2026-09-03. QiYi's own corporate site states verbatim
+      「广东奇艺魔方格科教实业有限公司成立于1998年」 — founded 1998. This first-party statement
+      replaces theqiyi-about-us (issue Q1) and also settles the Speedsolving wiki's
+      'founding year unknown'."
   /aliases:
     confidence: probable
-    sources: [theqiyi-about-us, qiyicube-storefront-2018, speedsolving-wiki-qiyi]
+    sources: [qiyitoys-company-history, qiyicube-storefront-2018, speedsolving-wiki-qiyi]
   /website:
     confidence: confirmed
-    sources: [theqiyi-about-us]
+    sources: [qiyitoys-company-history]
+    note: "VALUE CORRECTED 2026-09-03, not merely re-sourced. Previously recorded
+      https://theqiyi.com/ — an Amazon-affiliate site registered 2025-10-10, not QiYi's own
+      (issue Q1). qiyitoys.net is the genuine corporate domain: ICP filing 粤ICP备2021105271号,
+      named legal entity, physical address, Wayback captures from 2016-07-04 onward. Note
+      qiyicube.com was genuinely QiYi's storefront in 2018 but has since lapsed and been
+      re-registered; it is valid historical evidence, not a current-state source."
   /notes:
     confidence: probable
-    sources: [theqiyi-about-us, qiyicube-storefront-2018, speedsolving-wiki-qiyi]
+    sources: [qiyitoys-company-history, qiyicube-storefront-2018, speedsolving-wiki-qiyi]

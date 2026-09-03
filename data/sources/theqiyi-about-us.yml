@@ -1,9 +1,12 @@
 # source: theqiyi-about-us
-# QiYi's own official "About Us" page (theqiyi.com). Tier 1, first-party — founding, structure,
-# and, critically, its own stated "family of brands" including X-Man Design as a sub brand.
+# ⚠ NOT A MANUFACTURER SOURCE. Retained for the record; demoted to tier 4 on 2026-09-03.
+# theqiyi.com presents itself as QiYi but is an Amazon-affiliate content site, not QiYi's own.
+# QiYi's genuine corporate site is qiyitoys.net — see qiyitoys-company-history, which replaces
+# this record everywhere it was cited. Full reasoning: research/qc/pass2-human-review.md (Q1).
 id: theqiyi-about-us
 entity: source
 kind: manufacturer_official
+tier: 4
 title: "About Us - QiYi"
 publisher: "QIYI"
 url: "https://theqiyi.com/about-us.html"
@@ -29,9 +32,36 @@ language: en
 region: CN
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 1 for QiYi's own corporate facts and for which sub-lines it names as its
-  own — including the explicit 'sub brand' framing of X-Man Design. Superlative language
-  elsewhere on the page ('global leader', 'most advanced competition hardware') is marketing
-  copy and tier 4 for any comparative claim, per RESEARCH_SPEC 3.3; not relied on here for
-  anything beyond the structural/historical statements quoted."
+reliability_note: "DEMOTED TO TIER 4 on 2026-09-03 via explicit override (issue Q1). This was
+  recorded as kind: manufacturer_official, which derives to tier 1 — the strongest evidence
+  class and the only one that alone satisfies rule 9 for a `confirmed` claim. It is not a
+  manufacturer source.
+
+  Evidence, verified by direct fetch of the live page on 2026-09-03: the footer reads verbatim
+  'QIYI is a participant in the Amazon Services LLC Associates Program, an advertising program
+  designed to provide a means for sites to earn advertising fees by advertising and linking to
+  Amazon.com © 2025 QIYI. All rights reserved.' There is no ICP filing (mandatory for a
+  legitimate mainland-Chinese company site), no contact address, and no native checkout;
+  products link out to Amazon. A manufacturer does not earn affiliate commission on its own
+  products. The domain was registered 2025-10-10 and has no Wayback history predating the
+  capture this project itself triggered.
+
+  Contrast qiyitoys.net (qiyitoys-company-history), which carries ICP filing 粤ICP备2021105271号,
+  the named legal entity 广东奇艺魔方格科教实业有限公司, a physical address in Chenghai, Shantou,
+  and Wayback captures from 2016-07-04 onward.
+
+  The `kind` field is deliberately left as manufacturer_official with an explicit `tier: 4`
+  override rather than re-kinded: the vocabulary has no value for 'affiliate/marketing site
+  impersonating a manufacturer', and RESEARCH_SPEC tier 4 expressly covers 'marketing copy
+  without specifications'. The override is the honest mechanism and keeps the anomaly visible
+  rather than disguising it as an ordinary retailer or wiki record.
+
+  One substantive claim from this page was not merely unsupported but WRONG: it described X-Man
+  Design as 'created in close collaboration with an independent designer known as X-Man', which
+  QiYi's own corporate history contradicts — XMD was founded in 2015 by QiYi's chief designer
+  Zhang Xiaojing, an internal employee. See data/manufacturers/x-man-design.yml.
+
+  RETAINED, not deleted, per the archive's orphaned-source policy and because a future
+  researcher who encounters theqiyi.com needs to find this determination rather than repeat the
+  mistake. It is cited by no attestation as of 2026-09-03."
 status: sourced
