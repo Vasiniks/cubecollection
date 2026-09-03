@@ -1,0 +1,52 @@
+# model: shengshou-pearl-original
+# Pass 3 (model enumeration), agent D. ShengShou Pearl's sole documented 3x3 generation.
+id: shengshou-pearl-original
+entity: model
+family_id: shengshou-pearl
+manufacturer_id: shengshou
+name: "ShengShou Pearl 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.0
+  weight_g: 83.9
+  shape: standard
+description: |-
+  TheCubicle's own product description (thecubicle-shengshou-pearl-3x3-product, 2019-08-24
+  capture): "The ShengShou Pearl 3x3 is the latest and greatest 3x3 from ShengShou. With many
+  modern features and improvements, the Pearl 3x3 is the most sophisticated 3x3 from ShengShou
+  thus far." No successor 3x3 generation carrying the "Pearl" name was found (per
+  shengshou-pearl.yml); this is the family's sole model.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-pearl-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-shengshou-pearl-3x3-product]
+    note: "Item Weight (83.9g), not Gross Weight (100g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-pearl-3x3-product]
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in this product's own description."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-pearl-3x3-product]

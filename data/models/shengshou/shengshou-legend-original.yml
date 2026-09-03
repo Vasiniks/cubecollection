@@ -1,0 +1,65 @@
+# model: shengshou-legend-original
+# Pass 3 (model enumeration), agent D. ShengShou Legend's standard 3x3 generation. Metallic and
+# magnetic-metallic SKUs found at TheCubicle (shengshou-legend-3x3-metallic,
+# shengshou-legend-3x3-m-metallic) are treated as variants of this model (a coating/finish plus
+# a magnet-configuration option, per DATA_MODEL 4.1's materiality test for variants, not a
+# distinct design) — not enumerated further here, per this pass's model/variant boundary.
+id: shengshou-legend-original
+entity: model
+family_id: shengshou-legend
+manufacturer_id: shengshou
+name: "ShengShou Legend 3x3"
+aliases:
+  - "ShengShou Legend S 5.7cm 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.5
+  weight_g: 79.1
+  shape: standard
+description: |-
+  TheCubicle's own product description (thecubicle-shengshou-legend-3x3-product, 2019-07-16
+  capture): "The ShengShou Legend 3x3 is a new, lightweight speedcube with a very low price
+  point. It feels solid yet smooth right out of the box. Great as an inexpensive first
+  speedcube for beginners!" Cubelelo's own listing (cubelelo-shengshou-products-prefix-2026)
+  titles the same product "ShengShou Legend S 5.7cm 3x3" while its body copy is the identical
+  "The ShengShou Legend 3x3 is a budget-friendly cube..." description — read as this retailer's
+  own naming/sizing convention for the same base product, not evidence of a separate
+  manufacturer-declared "Legend S" generation, and recorded here only as an alias.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-legend-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-shengshou-legend-3x3-product]
+    note: "Item Weight (79.1g), not Gross Weight (91g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-legend-3x3-product]
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in this product's own description; a magnetic ('M') SKU exists as a separate, later-captured variant."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /aliases:
+    confidence: uncertain
+    sources: [cubelelo-shengshou-products-prefix-2026]
+    note: "Retailer product-title naming only, not a manufacturer-declared alternate name."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found for this specific product."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-legend-3x3-product]

@@ -1,0 +1,32 @@
+# source: thecubicle-shengshou-big-legend-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Big
+# Legend 3x3 (7.0cm), a 2020 capture — an oversized-format version of the Legend 3x3, found via
+# the RESEARCH_SPEC 3.6a discovery sweep.
+id: thecubicle-shengshou-big-legend-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Big Legend 3x3 (7.0cm) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-big-legend-3x3-7-0cm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918200230id_/https://www.thecubicle.com/products/shengshou-big-legend-3x3-7-0cm"
+excerpt: |-
+  Product Description: "The ShengShou Big Legend 3x3 (7.0cm) is simply a bigger version of the
+  ShengShou Legend 3x3. At the same size as the ShengShou 7x7 Mini, the Big Legend 3x3 is
+  large, yet comfortable to hold and solve. It features the same internal mechanism as the
+  original ShengShou Legend, which allows for smooth turning and excellent corner cutting."
+  A customer review adds: "The cube as a whole, to me, feels like a supersized guanlong."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. States directly that the
+  mechanism is 'the same' as the original Legend, which argues for variant status under
+  DATA_MODEL 4.2's ordinary materiality test; but a 7.0cm cube cannot physically be produced
+  from a 5.65cm cube's mould by choosing different parts at assembly (DATA_MODEL 4.2's tooling
+  clause), so a different mould is necessarily involved regardless of the retailer's 'same
+  mechanism' framing. Recorded as a genuinely uncertain model/variant boundary case, resolved
+  in favour of a new model per the default-to-split instruction — see the dependent model
+  record's own attestations."
+status: sourced

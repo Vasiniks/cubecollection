@@ -1,0 +1,23 @@
+# source: thecubicle-shengshou-legend-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Legend
+# 3x3, a 2019 capture.
+id: thecubicle-shengshou-legend-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Legend 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-legend-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190716063512id_/https://www.thecubicle.com/products/shengshou-legend-3x3"
+excerpt: |-
+  Product Description: "The ShengShou Legend 3x3 is a new, lightweight speedcube with a very
+  low price point. It feels solid yet smooth right out of the box. Great as an inexpensive
+  first speedcube for beginners!" Product Specifications: Manufacturer ShengShou, Type 3x3,
+  Gross Weight 91g, Dimensions 56.5mm, Item Weight 79.1g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table."
+status: sourced

@@ -1,0 +1,24 @@
+# source: thecubicle-shengshou-pearl-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Pearl
+# 3x3, a 2019 capture.
+id: thecubicle-shengshou-pearl-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Pearl 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-pearl-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824100120id_/https://www.thecubicle.com/products/shengshou-pearl-3x3"
+excerpt: |-
+  Product Description: "The ShengShou Pearl 3x3 is the latest and greatest 3x3 from ShengShou.
+  With many modern features and improvements, the Pearl 3x3 is the most sophisticated 3x3 from
+  ShengShou thus far, and it is expected to be competitive with some of the other top-tier 3x3s
+  currently on the market." Product Specifications: Manufacturer ShengShou, Type 3x3, Gross
+  Weight 100g, Dimensions 56.0mm, Item Weight 83.9g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table."
+status: sourced

@@ -1,0 +1,45 @@
+# model: shengshou-wind-original
+# Pass 3 (model enumeration), agent D. ShengShou Wind's sole documented 3x3 generation.
+id: shengshou-wind-original
+entity: model
+family_id: shengshou-wind
+manufacturer_id: shengshou
+name: "ShengShou Wind 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  TheCubicle's own product description (thecubicle-shengshou-wind-3x3-product, 2020-12-03
+  capture): "The ShengShou Wind is a 3x3 designed by popular big cube maker, ShengShou. This
+  cube features a circular track embedded on the centers and edges that allows for soft and
+  easy rotation. This puzzle has durable, high quality stickers and is smooth out of the box."
+  No size or weight specification was present in this capture. No successor 3x3 generation
+  carrying the "Wind" name was found (per shengshou-wind.yml); this is the family's sole model.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found. No specification table was present on the captured page."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in this product's own description."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention for a single-model family; no manufacturer or community numbering was found."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-wind-3x3-product]

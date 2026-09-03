@@ -1,0 +1,43 @@
+# source: cubelelo-shengshou-products-prefix-2026
+# Pass 3 (model enumeration), agent D. The RESEARCH_SPEC section 3.6a non-US/English retailer
+# check for ShengShou, using Cubelelo (India) per the admission policy's own named precedent
+# for this check. A wayback CDX `prefix` sweep of cubelelo.com/products/shengshou* (47 distinct
+# captured URLs, 2020-2025).
+id: cubelelo-shengshou-products-prefix-2026
+entity: source
+kind: retailer
+title: "cubelelo.com/products/shengshou* — product URL enumeration (non-US/English retailer check)"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/shengshou-legend-3x3-stickerless"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.cubelelo.com/products/shengshou (2020-2025 captures, 47
+  distinct URLs) returns mostly big-cube, Megaminx, Pyraminx, Mr. M big-cube, and mirror-cube
+  products. 3x3-relevant paths found: shengshou-legend-3x3-stickerless (2020-09-24) and
+  shengshou-legend-s-5-7cm-3x3-black (2020-09-29, product title "ShengShou Legend S 5.7cm 3x3"
+  but body description reads "The ShengShou Legend 3x3 is a budget-friendly cube..." — read as
+  this retailer's own naming/sizing convention for the plain Legend 3x3, not independent
+  evidence of a manufacturer-declared "Legend S" generation) and shengshou-3x3-mirror-cube (a
+  shape mod, out of this pass's 3x3x3 scope). Also found: shengshou-lubix-aurora-v3-3x3
+  (2020-09-25) — "Lubix" reads as a possible third-party rebrand naming, not a ShengShou-
+  branded product; no "lubix" manufacturer record exists in this archive, so this is recorded
+  as a lead only, not chased further (outside this agent's manufacturer lane in either case).
+  shengshou-mr-m-6x6-magnetic and shengshou-mr-m-7x7-stickerless-magnetic confirm Mr. M as a
+  cross-category naming line at this retailer too, consistent with speedsolving-wiki-shengshou-
+  products, but neither is a 3x3.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix https://www.cubelelo.com/products/shengshou --limit 200`) is the primary evidence; the
+  excerpt reproduces the path list and dates directly."
+accessed: "2026-09-03"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure. RESEARCH_SPEC section 3.6a compliance
+  record: non-US/English retailer checked = Cubelelo (India). Outcome: no new ShengShou 3x3
+  family or model surfaced beyond what thecubicle-shengshou-products-prefix-2026 already found
+  (Legend 3x3 corroborated only); the "Legend S"/"Lubix Aurora V3" naming variants found here
+  were evaluated and NOT admitted as separate models — see this record's own excerpt for the
+  reasoning on each.
+status: sourced

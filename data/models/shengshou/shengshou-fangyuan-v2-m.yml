@@ -1,0 +1,77 @@
+# model: shengshou-fangyuan-v2-m
+# Pass 3 (model enumeration), agent D. The magnetized "V2" generation of ShengShou FangYuan,
+# named directly by the Speedsolving wiki: "ShengShou FangYuan V2 M — A magnetized version of
+# the ShengShou FangYuan" (speedsolving-wiki-shengshou-products). Recorded as a new model
+# rather than a variant of shengshou-fangyuan-original because the manufacturer's own "V2"
+# naming is combined with a measurably different size (56.0mm vs. 56.5mm) and item weight
+# (79.0g vs. 89.1g) beyond the added magnets — DATA_MODEL section 4.2's default-to-split
+# treatment applied under genuine uncertainty (a magnet-only change alone would be a variant;
+# the accompanying dimension change is the deciding factor, held here at uncertain confidence).
+id: shengshou-fangyuan-v2-m
+entity: model
+family_id: shengshou-fangyuan
+manufacturer_id: shengshou
+name: "ShengShou FangYuan V2 M"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+  weight_g: 79.0
+  shape: standard
+  magnet_architecture: single_layer
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou FangYuan V2 M —
+  A magnetized version of the ShengShou FangYuan. Also released with little to no publicity."
+  TheCubicle's own product description (thecubicle-shengshou-fangyuan-v2-m-product, 2019-09-22
+  capture): "The ShengShou FangYuan V2 M is the newest flagship 3x3 from ShengShou. Out of the
+  box it is extremely fast and airy with medium magnet strength."
+status: drafted
+relationships:
+  - type: succeeds
+    target: shengshou-fangyuan-original
+    target_entity: model
+    note: "The Speedsolving wiki names this directly as 'a magnetized version of the ShengShou
+      FangYuan'; TheCubicle's own 'V' naming and its distinct dimensions/weight are read
+      together as sufficient for a model-level rather than variant-level distinction, but this
+      boundary call is held at uncertain confidence given the difference could alternatively be
+      read as a sold configuration of one design."
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-v2-m-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-v2-m-product]
+    note: "Item Weight (79.0g), not Gross Weight (168g, which includes retail packaging)."
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-v2-m-product, speedsolving-wiki-shengshou-products]
+    note: "'Magnetized version' and 'medium magnet strength'; exact architecture (single vs.
+      dual layer) not stated, single_layer recorded as the more conservative default for a
+      2019-era budget/mid-tier magnetic 3x3 rather than confirmed directly."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-fangyuan-v2-m-product]
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-fangyuan-v2-m-product]
+    note: "'V2' is the wiki's and (implicitly, via the 'V' product-title convention seen
+      elsewhere in this pass) the manufacturer's own naming, not a community-assigned ordinal."
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-fangyuan-v2-m-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-fangyuan-v2-m-product]

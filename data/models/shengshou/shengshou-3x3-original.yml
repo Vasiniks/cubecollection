@@ -1,0 +1,57 @@
+# model: shengshou-3x3-original
+# Pass 3 (model enumeration), agent D. ShengShou's original, unnamed-beyond-the-brand 3x3 —
+# the family's sole model. TheCubicle's own retailer copy independently states it is "the
+# precursor to the ShengShou Wind 3x3", corroborating the frozen family-level split between
+# shengshou-3x3 and shengshou-wind established in Pass 2.
+id: shengshou-3x3-original
+entity: model
+family_id: shengshou-3x3
+manufacturer_id: shengshou
+name: "ShengShou 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 57.0
+  weight_g: 86.2
+  shape: standard
+description: |-
+  TheCubicle's own product description: "The original ShengShou 3x3 was one of the first cubes
+  ever released by ShengShou and the precursor to the ShengShou Wind 3x3. While the puzzle has
+  been discontinued for quite some time, we recently came across a limited number of them,
+  which we are liquidating at a reduced price" (thecubicle-shengshou-3x3-product, 2020-09-22
+  capture). This is the sole model of this family; no successor carrying this exact
+  unqualified "ShengShou 3x3" name was found.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-shengshou-3x3-product]
+    note: "Item Weight (86.2g), not Gross Weight (104g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-3x3-product]
+    note: "Inferred from ordinary 3x3 speedcube category placement; no explicit 'standard shape' statement was found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in this product's own description."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "No manufacturer generation-ordinal statement was found; this is this archive's own convention for a single-model family, not a manufacturer or community numbering."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-3x3-product]
