@@ -17,6 +17,11 @@ excerpt: |-
   Eastsheen cubes "are also much lighter, smaller and cheaper however Eastsheen cubes have the
   habit to lock up sometimes. You can easily recognize Eastsheen cubes by their purple/pink
   face, which is orange on a regular cube."
+
+  **The article states flatly: "East Sheen does not produce 3x3 cubes."** Its product listing
+  covers only 2x2 cubes (Types A, C, E, M), 4x4 cubes (Types A, C, E, M, P), 5x5 cubes (Types
+  A, C, E, M, P), Mini cubes (2x2 variants, S and R types), and Multi cubes (assembled 2x2
+  combinations, S and R types). No 3x3x3 product of any kind is listed.
 accessed: "2026-09-02"
 language: en
 link_status: live
@@ -24,5 +29,15 @@ last_checked: "2026-09-02"
 reliability_note: "Unattributed community wiki, tier 4 by default. No web.archive.org capture
   fetched for this specific page this pass (fetched live via WebFetch); the wiki itself notes
   the article 'may be currently outdated' regarding new products. Provides founding/location/
-  founder detail found nowhere else this pass — corroborates only, does not establish alone."
+  founder detail found nowhere else this pass — corroborates only, does not establish alone.
+
+  Excerpt corrected 2026-09-03 during the Pass 2 adjudication gate. The original excerpt
+  omitted the 'East Sheen does not produce 3x3 cubes' sentence and the product listing, even
+  though three records (data/families/eastsheen-3x3.yml twice, and the Pass 2 research log)
+  quote that sentence from this source. Because this source's preservation_method is `excerpt`
+  with no archive_url, the excerpt IS the preservation — so the archive was citing a sentence
+  its own evidence did not hold. The sentence was re-verified verbatim against the live page on
+  2026-09-03 and is genuine; this was a preservation gap, not a misquotation. The omission ran
+  against the archive's interest: the missing text is the strongest counter-evidence to
+  eastsheen-3x3 existing at all."
 status: sourced

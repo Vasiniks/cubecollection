@@ -243,3 +243,46 @@ Checked programmatically across all 122 families:
   rather than rule-29 duplicates (that exemption is already lineage-aware)
 
 **111 of 122 families currently have zero models** — that is the size of the Pass 3 queue.
+
+---
+
+## S10 — HIGH, CORRECTED AND FIXED: Eastsheen preservation gap (not a fabricated quotation)
+
+The independent taxonomy review reported that the sentence *"East Sheen does not produce 3x3
+cubes"* — quoted three times in `data/families/eastsheen-3x3.yml` and the Pass 2 log — **does
+not appear in the cited source's preserved excerpt**.
+
+**The first half is correct; the framing is not.** Verified in two steps:
+
+1. Read `data/sources/speedsolving-wiki-eastsheen.yml` in full. Its `excerpt` covers the
+   infobox, the opening paragraph, and a note about weight and the purple/pink face. It
+   contains **no** sentence about 3x3 production. Confirmed.
+2. Fetched the live wiki page. The sentence **is genuine and appears verbatim**: *"East Sheen
+   does not produce 3×3 cubes."* The page lists only 2x2 (Types A, C, E, M), 4x4 and 5x5 (Types
+   A, C, E, M, P), Mini cubes and Multi cubes — no 3x3x3 of any kind.
+
+So this was **not** a fabricated or misattributed quotation. It was a **preservation gap**: the
+source uses `preservation_method: excerpt` with **no `archive_url`**, so the excerpt *is* the
+preservation — and the captured excerpt omitted the one sentence the archive leaned on hardest.
+The archive was citing evidence its own preservation did not hold.
+
+Recording the distinction precisely matters: a fabricated quotation would be the most serious
+defect class this archive can have (PRODUCT.md forbids fabrication outright), whereas an
+incomplete excerpt is a preservation-discipline failure. Conflating them would misstate the
+health of the layer.
+
+**Correction applied** (narrow, decisive, no taxonomy change): the excerpt in
+`data/sources/speedsolving-wiki-eastsheen.yml` now includes the verbatim sentence and the full
+product listing, re-verified against the live page on 2026-09-03, with a `reliability_note`
+recording what was missing, why it mattered, and that the sentence is genuine.
+
+**Note on direction of error.** The omitted text is the strongest evidence *against*
+`eastsheen-3x3` existing. The gap therefore worked against the archive's own family, not in
+favour of it — this was sloppy preservation, not motivated reasoning. The substantive question
+(did Eastsheen ever sell a standard 3x3, and was it an OEM/rebrand?) remains open and is
+addressed in the entity-identity memo; the family stays at `reported` pending that.
+
+**Systemic follow-up.** Any source with `preservation_method: excerpt` and no `archive_url` has
+the same exposure: the excerpt is the whole evidence, so anything quoted from the page but not
+captured is unsupported. The source-independence audit should quantify how many sources are in
+that position.
