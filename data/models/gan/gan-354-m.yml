@@ -25,9 +25,13 @@ description: |-
 status: drafted
 attestations:
   /announced:
-    confidence: probable
+    confidence: uncertain
     sources: [thecubicle-gan-354-m]
-    note: "TheCubicle's own retail-system 'Added: 2018-09-11' date (tier 2); not independently corroborated at tier 1. Already the primary evidence for the gan-354 family's own introduction date."
+    note: "DOWNGRADED from `probable` on 2026-09-03 (Pass 2 adjudication gate), for the same
+      reason as the parent family data/families/gan-354.yml: the 'Added: 2018-09-11' field is a
+      TheCubicle catalogue-migration artifact, appearing verbatim 29 times across 22 sources and
+      13 unrelated brands, not a per-product date. It cannot carry a `probable` announcement
+      date. Retained as a weak upper bound only. No tier-1 announcement date found."
   /generation/basis:
     confidence: uncertain
     note: "'354' is a product/family number in the same style as GAN's '356'/'357', not a stated sequential generation count; no manufacturer generation-ordinal statement was found."

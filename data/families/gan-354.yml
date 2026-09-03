@@ -30,9 +30,20 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: probable
+    confidence: uncertain
     sources: [thecubicle-gan-354-m]
-    note: "Single tier-2 source (TheCubicle's own retail-system 'Added: 2018-09-11' date). GAN's own product page for this line (gancube-gan354-m-v2-product) does not state an introduction date. Not independently corroborated at tier 1."
+    note: "DOWNGRADED from `probable` on 2026-09-03 (Pass 2 adjudication gate). The sole
+      evidence was TheCubicle's 'Added: 2018-09-11' spec-table field, which has since been
+      established as a catalogue-migration artifact rather than a per-product date: the same
+      literal string appears 29 times across 22 source records spanning 13 unrelated brands
+      (CubeStyle, GAN, GuoGuan, GuoJia, KungFu, Maru, MoHuanShouSu, MoJue, NewIsland, QJ,
+      SenHuan, YanCheng, Z-Cube). A single date cannot be the true listing date for products
+      from 13 brands, so it cannot support a `probable` introduction date for the GAN 354.
+      Every later Pass 2 record deliberately refuses this field; this record and
+      data/models/gan/gan-354-m.yml predate that discovery and were missed at the time. The
+      2018 value is retained as a weak upper bound only — the line demonstrably existed by
+      then. GAN's own product page (gancube-gan354-m-v2-product) states no introduction date.
+      A tier-1 date remains unfound."
   /positioning:
     confidence: uncertain
     sources: [thecubicle-gan-354-m]

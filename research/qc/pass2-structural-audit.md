@@ -286,3 +286,45 @@ addressed in the entity-identity memo; the family stays at `reported` pending th
 the same exposure: the excerpt is the whole evidence, so anything quoted from the page but not
 captured is unsupported. The source-independence audit should quantify how many sources are in
 that position.
+
+---
+
+## S11 — HIGH, VERIFIED AND FIXED: two records still rested `probable` on the catalogue artifact
+
+The source-independence audit reported that `gan-354` and `gan-354-m` still rest on the
+`Added: 2018-09-11` TheCubicle catalogue-migration artifact. **Verified and confirmed.**
+
+**The artifact is now proven quantitatively**, not merely asserted: the literal string
+`Added: 2018-09-11` occurs **29 times across 22 source records spanning 13 unrelated brands** —
+CubeStyle, GAN, GuoGuan, GuoJia, KungFu, Maru, MoHuanShouSu, MoJue, NewIsland, QJ, SenHuan,
+YanCheng, Z-Cube. One literal date cannot be the true per-product listing date for products
+from thirteen different manufacturers.
+
+**Nine records cite it. Seven were already handling it correctly:**
+
+| Record | Pointer | Confidence | Verdict |
+|---|---|---|---|
+| `cubestyle-3x3` | `/introduced` | `uncertain` | correct — note says field "deliberately not used" |
+| `mohuanshousu-chufeng` | `/introduced` | `uncertain` | correct |
+| `senhuan-mars` | `/introduced` | `uncertain` | correct |
+| `mojue-m3` | `/introduced` | `uncertain` | correct |
+| `newisland-phoenix` | `/introduced` | `uncertain` | correct |
+| `qj-candy-3x3` | `/introduced` | `uncertain` | correct |
+| `qj-pillowed-3x3` | `/introduced` | `uncertain` | correct |
+| **`gan-354`** | `/introduced` | **`probable`** | **contaminated — fixed** |
+| **`gan-354-m`** | `/announced` | **`probable`** | **contaminated — fixed** |
+
+The two contaminated records **predate the artifact's discovery**; every record written after it
+refuses the field explicitly. This is a straightforward miss, not a methodological failure — and
+it is worth stating that the archive's own later discipline is what made the two survivors
+visible.
+
+**Correction applied** (narrow, decisive, no taxonomy change): both downgraded `probable` →
+`uncertain`, with the full quantified reasoning recorded in each attestation note. The 2018
+values are **retained as weak upper bounds** — the products demonstrably existed by then — rather
+than deleted, since removing them would lose real information. GAN's own product page states no
+introduction date; a tier-1 date remains unfound.
+
+**Why this one mattered more than the other seven.** `gan-354-m` is inside the built model layer.
+An artifact date held at `probable` on a model is exactly the kind of value that propagates into
+a chronological exhibition and is then very hard to trace back.
