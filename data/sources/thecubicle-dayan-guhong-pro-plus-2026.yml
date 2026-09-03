@@ -1,0 +1,40 @@
+# source: thecubicle-dayan-guhong-pro-plus-2026
+# Pass 3 (model enumeration). TheCubicle's own product description for a newer GuHong-line SKU
+# whose title reads "DaYan GuHong Pro+" though its URL slug drops the "+" (dayan-guhong-pro-*).
+# Explicit succession language ("the next evolution of the legendary GuHong lineup ... a truly
+# worthy upgrade for loyal GuHong Pro users") distinct from and later than GuHong Pro M.
+id: thecubicle-dayan-guhong-pro-plus-2026
+entity: source
+kind: retailer
+title: "DaYan GuHong Pro+ 3x3 54mm (MagLev) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-guhong-pro-3x3-54mm-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260307064515id_/https://www.thecubicle.com/products/dayan-guhong-pro-3x3-54mm-maglev"
+excerpt: |-
+  Page title: "DaYan GuHong Pro+ 3x3 54mm (MagLev)". Product description: "The DaYan GuHong
+  Pro+ 3x3 54mm (MagLev) is the next evolution of the legendary GuHong lineup, tailored for
+  speedcubers who demand peak performance and flexibility. This Pro+ version introduces a suite
+  of cutting-edge enhancements, including adjustable corner-core magnets, a fully magnetic
+  core, and easy-to-use numerical tension adjustment settings ... Choose from two magnetic
+  systems: Standard Magnetic (64 magnets) for reliable stability, or MagLev (94 magnets) ...
+  Available in three sizes -- 54mm, 55mm, and 56mm ... A truly worthy upgrade for loyal GuHong
+  Pro users and the ideal choice for any speedcuber looking for next-level performance and
+  customizability." Retailer's own spec/catalogue field: "Gross Weight 156g", "Magnets:
+  Magnetic" ("Added 2025-10-08" is a catalogue-entry date, not used as a release statement).
+preservation_note: "Fetched via `npm run wayback -- get` on 2026-09-03. A CDX `prefix` sweep of
+  thecubicle.com/products/dayan-guhong-pro-3x3 the same day found this URL family's earliest
+  captured sub-page (a ?f=versions query variant) dated 2025-11-12, used only as an existence
+  floor, never as a launch date."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product copy naming this SKU 'Pro+' and framing
+  it explicitly as an upgrade from 'GuHong Pro' (i.e. GuHong Pro M) — model-identity evidence
+  under DATA_MODEL §4.2's mechanism-difference test (new adjustable corner-core magnet system,
+  numerical tension adjustment), independently corroborated by
+  speedcubeshop-dayan-guhong-pro-plus (same generation, same 'Pro Plus' naming, different
+  retailer)."
+status: sourced

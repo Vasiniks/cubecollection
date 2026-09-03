@@ -1,0 +1,50 @@
+# model: dayan-guhong-v2
+# Pass 3 (model enumeration). TheCubicle's own description: "The GuHong returns with
+# torpedoes! This more recent version of the DaYan GuHong feels smoother than its predecessor
+# and does not pop" — a distinct piece-geometry change (torpedo anti-pop pieces added to the
+# edges), a mechanism difference under DATA_MODEL §4.2, not a sold configuration of the V1
+# shell. See research/notes/models/dayan-pass3.md.
+id: dayan-guhong-v2
+entity: model
+family_id: dayan-guhong
+manufacturer_id: dayan
+name: "DaYan GuHong V2"
+aliases:
+  - "GuHong Version 2"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: community_convention
+announced:
+  value: "2012-04"
+  precision: month
+  qualifier: circa
+description: |-
+  Adds torpedo (anti-pop) edge pieces absent from the original GuHong, per TheCubicle's own
+  copy: "The GuHong returns with torpedoes! This more recent version of the DaYan GuHong feels
+  smoother than its predecessor and does not pop" (thecubicle-dayan-guhong-descriptions) — a
+  piece-geometry change, model-level under DATA_MODEL §4.2 worked decision B. April 2012 date
+  per the Speedsolving wiki; no manufacturer-first-party date statement was found.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-guhong-descriptions]
+    note: "'V2' is the retailer's and the wiki's shared naming convention; no DaYan-first-party
+      source calling it 'GuHong V2' was found this pass (dayancube-official-2013 predates it)."
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-descriptions]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-guhong-v1
+    target_entity: model
+    note: "TheCubicle: 'This more recent version of the DaYan GuHong feels smoother than its
+      predecessor.'"

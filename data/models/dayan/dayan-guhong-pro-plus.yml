@@ -1,0 +1,78 @@
+# model: dayan-guhong-pro-plus
+# Pass 3 (model enumeration). Two independent tier-2 retailers (TheCubicle, SpeedCubeShop)
+# both name this "GuHong Pro+" and both describe it as an upgrade from GuHong Pro (M):
+# TheCubicle calls it "the next evolution of the legendary GuHong lineup ... a truly worthy
+# upgrade for loyal GuHong Pro users," introducing "adjustable corner-core magnets" and
+# "numerical tension adjustment settings" in place of Pro M's 5-position hand-adjustable
+# tension. A mechanism/adjustment-system change under DATA_MODEL §4.2, not merely a
+# reconfiguration. See research/notes/models/dayan-pass3.md.
+id: dayan-guhong-pro-plus
+entity: model
+family_id: dayan-guhong
+manufacturer_id: dayan
+name: "DaYan GuHong Pro+"
+aliases:
+  - "DaYan GuHong Pro Plus"
+  - "GuHong Pro" # retailer URL slugs for this SKU drop the "+"; do not confuse with the
+    # earlier, distinct "GuHong Pro M" (dayan-guhong-pro-m), which the retailer copy
+    # consistently distinguishes from this generation by name.
+scope_class: core
+generation:
+  label: "Pro+"
+  ordinal: 6
+  basis: community_convention
+announced:
+  value: "2025-10"
+  precision: month
+  qualifier: before
+specs:
+  magnet_architecture: core_corner
+description: |-
+  TheCubicle's own copy: "The DaYan GuHong Pro+ 3x3 54mm (MagLev) is the next evolution of the
+  legendary GuHong lineup, tailored for speedcubers who demand peak performance and
+  flexibility. This Pro+ version introduces a suite of cutting-edge enhancements, including
+  adjustable corner-core magnets, a fully magnetic core, and easy-to-use numerical tension
+  adjustment settings... A truly worthy upgrade for loyal GuHong Pro users"
+  (thecubicle-dayan-guhong-pro-plus-2026). SpeedCubeShop independently names and describes the
+  same generation: "The DaYan GuHong Pro+ 3x3 (Magnetic, Core Magnets) – 54mm is a
+  competition-ready 3x3 speed cube... corner-to-core magnets (core magnets) improve alignment
+  control" (speedcubeshop-dayan-guhong-pro-plus). Sold in the same 54/55/56mm x
+  magnetic/maglev configuration structure as GuHong Pro M, treated identically as
+  variant-level per DATA_MODEL §4.2. No manufacturer-first-party or dated-press statement of a
+  release date was found; the earliest retailer evidence is a 2025-11 CDX capture
+  (thecubicle-dayan-guhong-pro-plus-2026's preservation_note) and an "Added 2025-10-08"
+  catalogue field at TheCubicle, neither treated as a launch date, so `announced` is recorded
+  only as a "before 2025-10" floor per the S6 policy's treatment of circulation-only evidence.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-dayan-guhong-pro-plus-2026]
+    note: "A retailer catalogue floor ('Added 2025-10-08'), not a launch date. Recorded with
+      qualifier 'before' per the S6 policy's explicit guidance for this exact situation, so it
+      is never mistaken for the actual release date, which remains unresearched."
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [speedcubeshop-dayan-guhong-pro-plus]
+    note: "SpeedCubeShop's own product-description copy states 'corner-to-core magnets (core
+      magnets)' directly — the retailer's own copy, not a customer review, satisfying the S6
+      policy's tier 1-2 requirement for specifications."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-dayan-guhong-pro-plus-2026, speedcubeshop-dayan-guhong-pro-plus]
+    note: "Neither retailer states a numbered generation ordinal; 6 is this archive's own
+      sequential count following the wiki's Version 1 through Pro M numbering, not a claim
+      either retailer makes."
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-pro-plus-2026, speedcubeshop-dayan-guhong-pro-plus]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-pro-plus-2026]
+relationships:
+  - type: succeeds
+    target: dayan-guhong-pro-m
+    target_entity: model
+    note: "TheCubicle: 'a truly worthy upgrade for loyal GuHong Pro users' — 'GuHong Pro' here
+      referring to GuHong Pro M, the only earlier 'Pro'-named GuHong generation found this
+      pass."
