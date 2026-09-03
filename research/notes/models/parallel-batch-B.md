@@ -930,3 +930,41 @@ CubeTwist, not actioned by me).
 but consistent across every product type checked, with an explicit "Type" field on each).
 
 ---
+## HaiTun — 1 family
+
+**Prior tested, held.** The task brief flagged HaiTun as "likeliest to hold something real" —
+confirmed, and this is the most substantial, cleanly-documented single family in this third
+assignment.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/haitun` (9 URLs) confirmed
+pass 1's own Waverider V1 finding and surfaced the full V2 generation (Standard, Pioneer,
+Flagship, Ultimate) plus a V1 Limited Edition and adjustment-tool accessory not previously
+documented.
+
+**Candidates considered:** HaiTun Waverider V1 (Flagship/Standard/Limited Edition), HaiTun
+Waverider V2 (Standard/Pioneer/Flagship/Ultimate).
+
+**Accepted (1):** `haitun-waverider` — one family across both generations. TheCubicle's own V2
+description states directly: "the highly anticipated **second generation** from boutique
+manufacturer HaiTun" — an explicit, unambiguous succession statement, the strongest of its
+kind found in this entire third assignment.
+
+**No aftermarket/rebrand pattern found** — both generations are described as HaiTun's own
+design ("by the emerging brand Haitun Cube"; "Crafted by boutique manufacturer HaiTun"),
+unlike this batch's CubeStyle finding. Positive evidence of originality, not merely an absence
+of a rebrand claim.
+
+**Rejected:** none — every HaiTun product found belongs cleanly to this one family.
+
+**Unresolved questions:** whether HaiTun has any product beyond Waverider (none found, but a
+young/thin brand with a correspondingly thin footprint at this one retailer); exact V1
+introduction date precision (month-level from a genuinely trustworthy "Added" field, a rare
+case in this register where that field was not the suspect recurring date).
+
+**Sources added:** `thecubicle-haitun-waverider-v2-standard-2026`, `thecubicle-haitun-
+waverider-v2-ultimate-2026`. `thecubicle-haitun-waverider-v1-2024` (pass 1, reused).
+
+**Confidence:** `reported` throughout (tier 2 retailer sources, mutually consistent, explicit
+succession language, nothing contradicting).
+
+---
