@@ -59,3 +59,87 @@ contradicting, but thin — no second independent source corroborates this speci
 name).
 
 ---
+## Z-Cube — 0 families
+
+**Method.** `speedsolving-wiki-zcube` (already in the archive from pass 1) frames this
+manufacturer as "a twisty puzzle company that mainly sells budget puzzles and novelty cubes"
+that "often, but not always, repackage[s] cubes from other brands such as QiYi and sell[s]
+them under a different name," naming a specific example: "the Z Carbon Fiber 3x3 is a QiYi
+Warrior W restickered with carbon fiber-style stickers." This pass tested that claim against
+TheCubicle's own archived "Z-" product range (`npm run wayback -- prefix
+thecubicle.com/products/z-`, ~90 URLs) rather than accepting the wiki's framing at face value.
+
+**Candidates considered, and why each was rejected as a Z-Cube family:**
+
+- **Z Magnetic 3x3** (`thecubicle-z-magnetic-3x3-2020`) — TheCubicle's own product
+  description states directly: "The base model for the Z Magnetic 3x3 is the highly acclaimed
+  MF3RS from Cubing Classroom, and it was magnetized by Z-Cubes." This is DATA_MODEL §4.3's
+  aftermarket pattern exactly — a base cube (MFJS's MF3RS) modified by a service (magnet
+  installation) and sold under a trade name ("Z"). Per §4.3, this belongs as a **variant under
+  MFJS's own model tree** (`modified_from` the MF3RS base variant, a `service` block naming
+  the magnetizer), not as a Z-Cube family. Also notable, and flagged as a lead rather than
+  acted on: the same page claims this was "the first commercially-available magnetized 3x3 to
+  hit the market" — a comparative/superlative claim (tier 4 per DATA_MODEL §5.2 rule 2 even
+  though it is a manufacturer/retailer page), not verified independently this pass, but a
+  historically significant lead for whoever researches MFJS's MF3RS variants or the broader
+  history of magnetized cubes.
+- **Z Carbon Fiber 3x3** and **Z Colorful Carbon Fiber 3x3** (`thecubicle-z-carbon-fiber-3x3-
+  2019`) — per the wiki, the former is a restickered QiYi Warrior W. Both are sticker-mod
+  decorations of an existing base cube (DATA_MODEL §4.1's materiality test explicitly lists
+  "coating... colourway or sticker type" as variant-level, and §4.3 as aftermarket), which
+  belongs under the **base cube's own model tree** with a service/coating record, not as a new
+  Z-Cube family. The Colorful variant's own base was not independently identified this pass
+  (no product page names it, unlike the Magnetic one) but is presumed the same pattern absent
+  contrary evidence.
+- **Z Rainbow 3x3** — "a pre-stickered 3x3 sticker mod" (TheCubicle's own description) — same
+  sticker-mod-of-a-base-cube pattern as Carbon Fiber, base cube not identified this pass.
+- **Z Round 3x3**, **Z Concave 3x3**, and (by the same pattern, not individually fetched this
+  pass) **Z Wave 3x3**, **Z Maze 3x3**, **Z Penrose 3x3**, **Z Void Cube** — TheCubicle's own
+  "Type" field classifies at least Round as **"Shape Mods,"** a separate category from its own
+  "3x3" WCA-puzzle category. These are non-WCA-legal shape modifications with no documented
+  historical or collector significance found this pass beyond generic novelty-marketing
+  description ("appears to be pushed in on all sides") — they fail RESEARCH_SPEC §2.2's
+  conditional-admission bar ("'It is interesting' is not a justification") outright, so no
+  family (even a `conditional`-scoped one) is created for them. Recorded here as a lead only.
+- All remaining "Z-" product-prefix hits found this pass (cube bags, lube, screwdrivers, a
+  Luban lock puzzle, a pen holder, a money-cube box, various non-3x3 puzzle types — Skewb,
+  Pyraminx, Helicopter Cube, Curvy Copter, Gear Cube, 7x7) are out of this archive's 3x3x3
+  scope entirely (RESEARCH_SPEC §2.4) or are accessories, not puzzles.
+
+**Zero families created — a genuine finding, not a gap.** Every Z-branded 3×3×3-shaped product
+identified this pass is, on the evidence found, either (a) a decorative or magnet-installation
+modification of an already-manufactured cube from a *named* other manufacturer (MFJS, QiYi),
+which DATA_MODEL §4.3 places under that other manufacturer's own model tree, not Z-Cube's, or
+(b) a non-WCA-legal shape mod with no documented significance clearing the conditional-
+admission bar. Z-Cube itself, on this pass's evidence, appears to be a private-label
+customisation/rebrand operation rather than a manufacturer with its own persisting 3x3 design
+lineage — consistent with, and now substantiated beyond, the wiki's own one-line
+characterisation. No `zcube` family record was created.
+
+**Cross-manufacturer leads flagged for a future pass (not actioned by me — out of my write
+lane and out of scope for pass 2):** MFJS's MF3RS has a documented magnetized aftermarket
+edition ("Z Magnetic 3x3" / magnetized by "Z-Cubes", 2018-09-11) that a future MFJS
+variant-enumeration pass should pick up; QiYi's Warrior W has a documented restickered
+aftermarket edition ("Z Carbon Fiber 3x3") that a future QiYi variant-enumeration pass should
+pick up. Both are recorded in the two new sources below, cited by neither manufacturer's
+existing family/model records (MFJS and QiYi are marked complete for pass 2 in this batch's
+assignment and were not otherwise touched).
+
+**Unresolved questions:** whether "Z-Cubes" (the servicer named in the Magnetic 3x3
+description) and "Z" (the brand name in TheCubicle's own spec-table "Manufacturer" field) are
+the same entity as the "Z-Cube/ZCube/Z" described by the Speedsolving wiki, or a related but
+distinct trade name TheCubicle used for its own house customisation service — not resolved
+this pass; a `kind: service` reading of the existing `zcube` manufacturer register entry (it
+is currently `kind: manufacturer`) may deserve reconsideration by whoever holds that record,
+but that is a pass-1 manufacturer-register concern, out of this pass's write lane, and is
+flagged here rather than acted on.
+
+**Sources added:** `thecubicle-z-magnetic-3x3-2020`, `thecubicle-z-carbon-fiber-3x3-2019`
+(neither cited by a family record, per the above — preserved as leads for MFJS/QiYi variant
+research). `speedsolving-wiki-zcube` (pass 1, reused, not recreated).
+
+**Confidence:** the zero-family conclusion itself rests on `reported`-tier evidence (one tier
+4 wiki source plus two tier 2 retailer product pages, mutually consistent, nothing
+contradicting) — thin, but consistent across every product checked.
+
+---
