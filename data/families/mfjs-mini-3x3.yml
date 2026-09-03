@@ -1,0 +1,35 @@
+# family: mfjs-mini-3x3
+# Pass 2 (family enumeration). A compact-format 3x3 series sold across several small sizes,
+# including keychain scale, distinct from MFJS's ordinary-sized budget lines.
+
+id: mfjs-mini-3x3
+entity: family
+manufacturer_id: mfjs
+name: "MoFang JiaoShi Mini 3x3 Series"
+aliases:
+  - "MFJS Mini 3x3"
+positioning: special
+description: |-
+  Per the Speedsolving wiki's own product-history section (speedsolving-wiki-mfjs-products):
+  "MoFang JiaoShi Mini 3x3 Series — A series of smaller 3x3x3s that are produced in sizes of
+  50mm, 45mm, 40mm, 35mm and 30mm." TheCubicle's own product-URL history
+  (thecubicle-mofang-jiaoshi-mini-3x3-prefix) corroborates four of the five stated sizes with
+  concrete, dated products (50mm and 45mm standard-format minis, plus 35mm and 40mm keychain-
+  scale cubes); a 30mm size was not independently found at this retailer this pass.
+
+  No manufacturer-first-party source or exact launch date was located; `introduced` left unset
+  rather than inferred from a retailer capture date. Recorded `positioning: special` rather than
+  `budget`, since a compact/novelty size range is a distinct market segment from MFJS's
+  ordinary-sized budget catalogue, the same reasoning applied to yj-zhilong.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mfjs-products, thecubicle-mofang-jiaoshi-mini-3x3-prefix]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products, thecubicle-mofang-jiaoshi-mini-3x3-prefix]

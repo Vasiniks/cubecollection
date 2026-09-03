@@ -1,0 +1,54 @@
+# family: mfjs-meilong
+# Pass 2 (family enumeration). MFJS's Meilong line, a wide budget catalogue spanning many
+# puzzle sizes and shapes; recorded here for its 3x3 generations only. Manufacturer_id resolved
+# to mfjs per the pass-1 register's own explicit finding, despite a documented retailer
+# attribution drift toward MoYu in more recent captures.
+
+id: mfjs-meilong
+entity: family
+manufacturer_id: mfjs
+name: "MFJS Meilong"
+aliases:
+  - "Meilong"
+  - "MoYu Meilong"
+introduced:
+  value: "2019-04"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  MFJS's "Meilong" budget line, per the Speedsolving wiki's own product-history section
+  (speedsolving-wiki-mfjs-products): "Meilong 3x3 — The Meilong 3 was released 2019-04-02.
+  Meilong 3x3 M — An updated version of the Meilong 3 with magnets... Meilong 3C." A separate,
+  fuller wiki source independently frames Meilong as "2x2 through 7x7, Pyraminx and other
+  shapes" catalogued as "a distinct product-line catalogue section within MoFang JiaoShi's own
+  listing" (speedsolving-wiki-mofang-jiaoshi) — this family record covers only the 3x3
+  generations within that wider catalogue.
+
+  SpeedCubeShop's own retailer captures (speedcubeshop-mfjs-meilong-collections) show the same
+  attribution ambiguity already documented for RS3M (mfjs-mf3.yml/moyu-rs3m.yml): a 2025-01-03
+  capture files every Meilong product, including 3x3, under this retailer's "MoFang JiaoShi"
+  brand collection, while 2025-11 through 2026-06 captures instead file newer Meilong 3x3
+  generations ("V2 Magnetic", "V2 Magnetic UV Coated", "V2 Magnetic Lite") under a "moyu-speed-
+  cubes"/"moyu-meilong" collection path — the same retailer's own brand attribution shifting
+  over less than a year. `manufacturer_id` is kept at `mfjs` per the pass-1 manufacturer
+  register's own explicit finding on data/manufacturers/mfjs.yml ("Meilong is a product line,
+  not a further sub-brand... belongs to pass 2 as a MFJS family," directly answering the pass-0
+  brief's open question), not reopened here; the retailer drift is recorded as a documented
+  complication rather than grounds to override that register-level decision.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products, speedcubeshop-mfjs-meilong-collections]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products, speedsolving-wiki-mofang-jiaoshi,
+      speedcubeshop-mfjs-meilong-collections]

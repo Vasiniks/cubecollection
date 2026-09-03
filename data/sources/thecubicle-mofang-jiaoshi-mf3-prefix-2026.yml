@@ -1,0 +1,40 @@
+# source: thecubicle-mofang-jiaoshi-mf3-prefix-2026
+# TheCubicle's own product-URL structure under /products/mofang-jiaoshi-mf3*, enumerated via
+# wayback CDX `prefix` (2019-2026 captures). Tier 2, first-party retailer naming — establishes
+# that the base MF3/MF3RS/MF3RS2/MF3RS3 succession remained on sale as a distinct product tier
+# through at least mid-2026, concurrently with the RS3M generations the wiki treats as a joint
+# MoYu/MFJS line (see moyu-rs3m.yml).
+id: thecubicle-mofang-jiaoshi-mf3-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/mofang-jiaoshi-mf3* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mf3-3x3-unstickered"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/mofang-jiaoshi-mf3 returns 3x3
+  product paths spanning 2019-07-16 (mofang-jiaoshi-mf3rs) through 2026-06-26
+  (mofang-jiaoshi-mf3-3x3, still resolving with a live srsltid tracking parameter), including:
+  mofang-jiaoshi-mf3-3x3 and mofang-jiaoshi-mf3-3x3-unstickered (both still resolving as of
+  2026-02-20/2026-06-26 captures), mofang-jiaoshi-mf3rs (2019-07-16), mofang-jiaoshi-mf3rs2
+  (2019-05-12), mofang-jiaoshi-mf3rs3 (2020-09-20, still resolving as of a 2024-09-05 capture),
+  mofang-jiaoshi-mf3s (2020-09-18) — no "mf3rs4" or later-numbered path was found under either
+  the "mofang-jiaoshi-mf3rs4" or bare "mf3rs4" prefix (both queried directly, zero rows). Also
+  present under the same root but out of this archive's 3x3 scope: mf2/mf2s/mf2c (2x2),
+  mf4/mf4s (4x4), mf5/mf5s (5x5), mf7s (7x7), mfsq1 (Square-1), and several shape mods (mirror
+  cube, fisher mirror cube, dice cube, mastermorphix, pyraminx, skewb, megaminx, windmill mirror
+  cube).
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/products/mofang-jiaoshi-mf3 --limit 300`) is the primary evidence;
+  the excerpt reproduces the path list and dates directly, per D3/RESEARCH_SPEC 3.5's allowance
+  for evidence that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure, consistent across seven
+  years of captures. Establishes MF3RS3 as the base line's last numbered generation and its
+  continued sale as a distinct budget tier alongside RS3M; does not by itself state a
+  manufacturer's own generation ordinal."
+status: sourced

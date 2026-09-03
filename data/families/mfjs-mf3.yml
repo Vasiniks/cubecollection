@@ -1,0 +1,61 @@
+# family: mfjs-mf3
+# Pass 2 (family enumeration). MFJS's original budget 3x3 succession, from its 2016 debut
+# through the last MFJS-exclusive numbered generation (MF3RS3, 2018) — the point at which the
+# wiki's own text hands the line to a jointly MoYu/MFJS-branded successor, moyu-rs3m.
+
+id: mfjs-mf3
+entity: family
+manufacturer_id: mfjs
+name: "MFJS MF3"
+aliases:
+  - "MF3RS"
+successor_family_id: moyu-rs3m
+introduced:
+  value: "2016-10"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  MFJS's original budget 3x3 succession, per the Speedsolving wiki's own product-history
+  section (speedsolving-wiki-mfjs-products): "MF3 — The MF3 was released 2016-10-11... MF3RS —
+  The MF3RS was released 2016-12-22... MF3RS2 — The MF3RS2 was released 2017-09-29... MF3RS3 —
+  [released] in December 2018... RS3M 2020 — An updated version of the MF3RS3 released mid
+  2020... For more information, see MoYu." The wiki's own redirect language at RS3M 2020 marks
+  the boundary this family stops at: every RS3M-named generation (2020 onward) is treated as
+  moyu-rs3m instead (see that family's own notes on the same manufacturer-attribution
+  ambiguity), while MF3 through MF3RS3 carry no such redirect and are MFJS's own, per the wiki's
+  own structure.
+
+  `successor_family_id` is set to `moyu-rs3m` on the strength of the wiki's own explicit
+  "an updated version of the MF3RS3" language — the clearest stated succession-between-families
+  claim found anywhere in this pass, stronger than the YJ MGC/Meta or QiYi Bullfight/Thunderclap
+  cases where no direct succession sentence was found.
+
+  TheCubicle's own product-URL history (thecubicle-mofang-jiaoshi-mf3-prefix-2026) shows the
+  base MF3/MF3RS/MF3RS2/MF3RS3 line still resolving as recently as a 2026-06-26 capture — this
+  budget tier continued selling in parallel with RS3M for at least six years after RS3M's own
+  debut, the same "successor exists, predecessor line still sold" pattern already documented for
+  yj-mgc/yj-meta and gan-356/gan-flagship-series.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products]
+    note: "The wiki's own infobox describes MFJS generally as focused on 'beginner-friendly'
+      and 'budget cubes'; no manufacturer-first-party positioning statement specific to this
+      line was found this pass."
+  /successor_family_id:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products]
+    note: "Single tier-4 source ('An updated version of the MF3RS3'), but explicit and direct,
+      unlike other succession calls this pass left unset for lack of comparable wording."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-mfjs-products, thecubicle-mofang-jiaoshi-mf3-prefix-2026]

@@ -218,6 +218,51 @@ naming only, a pass-3 question.
 
 ---
 
-## MFJS
+## MFJS — 3 families
 
-*(not yet started)*
+**Method note.** MFJS's identity, sub-brand relationship, and the Meilong/RS3M product-line
+questions were substantially pre-resolved in pass 1 (`data/manufacturers/mfjs.yml`'s own notes)
+and by the prior session's `moyu-rs3m.yml`. This pass's job was narrower than for QiYi/YJ/DaYan:
+enumerate what pass 1 had already flagged as belonging here, and resolve the RS3M boundary
+question `moyu-rs3m.yml` itself left open ("a future pass revisiting MFJS specifically should
+check this again").
+
+**Candidates considered:** MF3/MF3RS/MF3RS2/MF3RS3, RS3M (2020 onward), Meilong (+3x3 M/3C/V2
+generations), MoFang JiaoShi Mini 3x3 Series.
+
+**Accepted (3):** `mfjs-mf3`, `mfjs-meilong`, `mfjs-mini-3x3`.
+
+**Deliberately not created: a separate MFJS-side RS3M family.** `moyu-rs3m` already exists
+(manufacturer_id: `moyu`, created in the prior MoYu session) and this pass did not duplicate it.
+Instead, `mfjs-mf3.yml` sets `successor_family_id: moyu-rs3m` directly, backed by the wiki's own
+explicit sentence — "RS3M 2020 — An updated version of the MF3RS3... For more information, see
+MoYu" — the single clearest stated family-to-family succession found anywhere in this session,
+and stronger evidence than either the QiYi Bullfight/Thunderclap or YJ MGC/Meta cases, where no
+comparably direct wording existed. This is the first `successor_family_id` set anywhere in this
+pass's output.
+
+**The RS3M/Meilong manufacturer-attribution question, closed for RS3M, left open for Meilong.**
+Both lines show a retailer filing products under "MoYu" in some captures and under "MoFang
+JiaoShi"/MFJS in others. For RS3M, the prior session already adjudicated this (kept at `moyu`,
+per TheCubicle's own consistent attribution) and this pass did not reopen it. For Meilong, the
+pass-1 manufacturer register already made an explicit finding (`mfjs.yml`: "Meilong is a product
+line, not a further sub-brand... belongs to pass 2 as a MFJS family") that this pass followed
+rather than re-litigated, even though a newer SpeedCubeShop capture (2025-11 onward) shows the
+same MoYu-collection drift RS3M shows. `mfjs-meilong.yml` documents this complication in full
+rather than silently picking a side.
+
+**The MF3/RS3M parallel-currency finding.** TheCubicle's own product-URL history shows the base
+MF3RS3 tier still resolving as of a 2026-06-26 capture — six years after RS3M's own 2020 debut.
+This is the third instance this session of a "successor" line launching without its predecessor
+being discontinued (after QiYi MP/M Pro and YJ MGC/Meta), now with the added twist that here a
+`successor_family_id` genuinely was set, precisely because the source's wording was more direct
+than in the other two cases — the pattern is the same, but the evidentiary bar this pass applied
+was met here and not there.
+
+**Sources created this session (MFJS):** `thecubicle-mofang-jiaoshi-mf3-prefix-2026`,
+`thecubicle-mofang-jiaoshi-mini-3x3-prefix`. Reused from pass 1 without modification:
+`speedsolving-wiki-mfjs-products`, `speedsolving-wiki-mofang-jiaoshi`, `cuboss-mfjs-brand-page`,
+`moyucube-official-home-2022`. The orphaned `speedcubeshop-mfjs-meilong-collections`, named explicitly in this session's brief as orphaned,
+is now wired into `mfjs-meilong.yml`'s provenance. `speedsolving-wiki-mfjs-products` (also named
+as orphaned in the brief) turned out not to be cited by any record before this session — it is
+now wired into both `mfjs-mf3.yml` and `mfjs-meilong.yml`.
