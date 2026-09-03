@@ -1,0 +1,60 @@
+# family: calvins-crazy-3x3
+# Pass 2 (family enumeration). Calvin's Puzzle's specialism, per pass 1's own finding, is
+# non-WCA shape mods, cuboids, and novelty twisty puzzles, not standard speedcubes — this
+# family and its two siblings (calvins-crazy-mirror-3x3, calvins-bandaged-3x3-maze-300) are the
+# only 3x3-mechanism products found across a ~90-slug catalogue that carry a genuinely
+# distinctive, specifically-described mechanism, rather than a bare decorative name. Every
+# accepted family here will need its own `scope_class: conditional` justification at the
+# model/variant level in a future pass, per DATA_MODEL §1.4 — deliberately not decided here.
+
+id: calvins-crazy-3x3
+entity: family
+manufacturer_id: calvins-puzzle
+name: "Calvin's Full-Function Crazy 3x3"
+aliases:
+  - "Full-Function Crazy 3x3 (Center-Locking)"
+introduced:
+  value: "2023"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-calvins-full-function-crazy-3x3's own reliability_note on TheCubicle's repeating
+    'Added:' field artifact). The genuine Wayback crawl timestamp of the source used is
+    2023-02-06, used only as an 'existed by' upper bound."
+positioning: special
+description: |-
+  A "Crazy" 3x3 mechanism variant, described directly in TheCubicle's own product copy: "The
+  Full-Function Crazy 3x3 is a puzzle from Calvin that has circles on the center of each face.
+  These circles do not turn when you turn the face, they're 'locked' into place. It can still be
+  fully scrambled and offers quite the challenge if you're never solved a Crazy puzzle before"
+  (thecubicle-calvins-full-function-crazy-3x3, tier 2). TheCubicle's own "Type" field files this
+  under "Shape Mods," consistent with pass 1's characterisation of this manufacturer.
+
+  The same retailer's catalogue also carries "Full-Function Crazy Megaminx (Center-Locking)" and
+  "Full-Function Crazy Tetrahedron (Center-Locking)" — the same named mechanism concept applied
+  to other puzzle shapes, out of this archive's 3x3x3 scope and not otherwise investigated this
+  pass; noted here only to record that "Full-Function Crazy... Center-Locking" reads as a
+  persisting Calvin's Puzzle design concept across shapes, not a name unique to the 3x3.
+
+  Almost certainly non-WCA-legal (a "crazy" mechanism with locked, independently-non-turning
+  center circles is not a standard 3x3x3 by WCA regulation); the `scope_class: conditional`
+  justification and admission is deferred to pass 3/4 per DATA_MODEL §1.4.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-calvins-full-function-crazy-3x3]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-calvins-full-function-crazy-3x3]
+    note: "No source states a positioning label; `special` records this record's own
+      out-of-competitive-category reading given the non-standard mechanism."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-calvins-full-function-crazy-3x3]
+  /description:
+    confidence: reported
+    sources: [thecubicle-calvins-full-function-crazy-3x3]

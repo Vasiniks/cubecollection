@@ -1,0 +1,31 @@
+# source: thecubicle-calvins-bandaged-3x3-maze-300
+# TheCubicle's own product page for the Calvin's Bandaged 3x3 (Maze-300 Cube), captured via
+# Wayback. Tier 2, first-party retailer copy describing a bandaged (movement-restricted) 3x3.
+id: thecubicle-calvins-bandaged-3x3-maze-300
+entity: source
+kind: retailer
+title: "Calvin's Bandaged 3x3 (Maze-300 Cube) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/calvins-bandaged-3x3-maze-300-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230205083517id_/https://www.thecubicle.com/products/calvins-bandaged-3x3-maze-300-cube"
+excerpt: |-
+  "The Calvin's Bandaged 3x3 (Maze-300 Cube) is a standard 3x3 with 3D printed tiles attached to
+  the pieces. These tiles bandage some of the pieces, restricting movement. This cube is almost
+  as difficult to scramble as it is to solve!" Product Specifications: "Manufacturer: Calvin's
+  Puzzle / Type: Shape Mods."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. TheCubicle's own 'Type' field files this under 'Shape
+  Mods.' Notably, this is described as physically built on 'a standard 3x3' base with attached
+  bandaging tiles, rather than a from-scratch different mechanism — a fact a future model/
+  variant pass may want to weigh under DATA_MODEL §4.3's aftermarket/service framing rather than
+  as an independent design, though this pass records it only as a family per the retailer's own
+  distinct product naming and attribution. This page's own in-page 'Added' field is not used as
+  dating evidence, per this pass's standing cross-agent finding on TheCubicle's repeating
+  'Added:' dates; the genuine Wayback crawl timestamp (2023-02-05) is used instead as an
+  'existed by' upper bound."
+status: sourced

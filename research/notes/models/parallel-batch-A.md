@@ -489,3 +489,79 @@ Reused without modification: `mefferts-official-site-2024` (pass 1, cited only v
 manufacturer record, not directly on this family).
 
 ---
+
+## Calvin's Puzzle — 3 families
+
+**Groundwork inspected first.** Pass 1's `data/manufacturers/calvins-puzzle.yml` already
+characterised this brand as "primarily a designer/maker of non-WCA shape mods, cuboids, and
+novelty twisty puzzles rather than mainstream WCA-legal 3x3 speedcubes," explicitly deferring
+`scope_class` decisions to pass 2/4.
+
+**Discovery.** A `thecubicle.com/products/calvins*` CDX prefix sweep returned roughly 90
+distinct product slugs — overwhelmingly cuboids (3x3x4, 3x3x5 in a dozen-plus named
+sub-variants), 4x4-based "House Cube"/"Glassy House Cube" shape mods, Megaminx/Square-1/Skewb
+variants, and slide puzzles, confirming pass 1's characterisation. Of everything with a 3x3x3
+mechanism or shape, five candidates stood out on their own described mechanism: "Full-Function
+Crazy 3x3 (Center-Locking)," "Bandaged 3x3 (Maze-300 Cube)," "Crazy Mirror 3x3x3" (4- and
+6-Circle configurations), "Horror Mirror 3x3 Cube," and "Mirror Camouflage 3x3x3." Fetched and
+read all five product pages directly.
+
+**Families accepted (3):** `calvins-crazy-3x3` (locked, non-turning center circles — "It can
+still be fully scrambled and offers quite the challenge if you're never solved a Crazy puzzle
+before"), `calvins-crazy-mirror-3x3` (the same "Crazy" mechanism concept combined with a
+mirror-cube shape, circles independently rotating — 4-Circle and 6-Circle configurations kept
+as one family/model per DATA_MODEL §4.2, not split), `calvins-bandaged-3x3-maze-300` (a
+"standard 3x3 with 3D printed tiles attached to the pieces" restricting movement).
+
+**Rejected (2), for two different, specific reasons:**
+- **Mirror Camouflage 3x3x3** — its own retailer description states directly "Calvin's Mirror
+  Camouflage 3x3x3 is a **4x4** with 3D printed pieces attached to the outside to make it
+  resemble a standard 3x3 mirror cube." Despite the "3x3x3" in its own product name, this is
+  actually a 4x4x4 mechanism — out of this archive's 3x3x3 scope by category, not a boundary
+  judgement call. A genuinely useful catch: a product's own name is not reliable evidence of
+  its actual mechanism size, and this pass read the full description rather than trusting the
+  slug.
+- **Horror Mirror 3x3 Cube** — described only as "a standard mirror 3x3, but included in the
+  package is a set of two solution stickers. Once applied, you can solve it by shape or by
+  color!" This is a real, distinct accessory-bundle idea, but the base object itself is "a
+  standard mirror 3x3" (a generic, widely-produced puzzle category, not a Calvin's-specific
+  mechanism the way the other three are), and the distinguishing feature (bundled solution
+  stickers) reads as a packaging/accessory difference rather than a design difference. Recorded
+  as an open lead rather than built into a family, on the same "generic name plus one
+  incremental detail" reasoning that excluded Meffert's Hollow Cube 3x3 and 3x3 Egg earlier in
+  this queue.
+
+**Boundary reasoning — three separate families, not fewer.** `calvins-crazy-3x3` and
+`calvins-crazy-mirror-3x3` share the word "Crazy" and a locked/independently-rotating-circle
+concept, but are described as genuinely different objects — one a standard-shape cube with
+non-turning centers, the other a mirror-shape cube with independently *rotating* circles glued
+on via 3D-printed extensions. Kept separate rather than merged under one "Crazy" family, per
+this project's standing "a shared word is not shared design" discipline (QiYi Bullfight/
+Thunderclap, YJ SuLong/ChiLong/YuLong).
+
+**A modification/service question flagged, not resolved, on the Bandaged 3x3.** Its own
+description ("a standard 3x3 with 3D printed tiles attached to the pieces") reads closer to a
+base cube plus an added modification than a from-scratch design — explicitly flagged in the
+family record's own description for a future pass to weigh under DATA_MODEL §4.3's
+`modified_from`/`service` framing, rather than silently treated as an independent Calvin's
+design. Not acted on this pass since the base cube's own manufacturer is not stated by the
+source available.
+
+**Dating discipline applied, per the cross-agent correction above.** No TheCubicle in-page
+"Added:" field used as evidence anywhere in this manufacturer; every `introduced` is a
+`qualifier: before` bound from genuine Wayback crawl timestamps only.
+
+**Unresolved for pass 3:**
+- The Bandaged 3x3's possible service/modification framing.
+- `scope_class: conditional` justification and admission for all three families (all are
+  certainly non-WCA-legal mechanisms).
+- Whether Horror Mirror 3x3 warrants reconsideration with more time/evidence.
+- Calvin's Puzzle's own country/founding remain unknown, unchanged from pass 1 — not
+  re-investigated this pass since it was outside this pass's scope.
+
+**Sources created this session (Calvin's Puzzle):** `thecubicle-calvins-full-function-crazy-3x3`,
+`thecubicle-calvins-bandaged-3x3-maze-300`, `thecubicle-calvins-crazy-mirror-3x3x3`. No pre-
+existing product-level sources existed to reuse beyond the manufacturer-register sources already
+on `data/manufacturers/calvins-puzzle.yml`.
+
+---

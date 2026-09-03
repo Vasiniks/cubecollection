@@ -1,0 +1,62 @@
+# family: calvins-bandaged-3x3-maze-300
+# Pass 2 (family enumeration). See calvins-crazy-3x3.yml's header comment for the shared
+# boundary reasoning applied across this manufacturer's three accepted 3x3 families this pass.
+# Notably built on a standard 3x3 base (per its own retailer description) with attached
+# bandaging tiles, rather than a from-scratch different mechanism — flagged for a future
+# model/variant pass to weigh whether this is better modelled as a modification/service under
+# DATA_MODEL §4.3 rather than an independent design; recorded here only as a distinct,
+# specifically-named, specifically-described family per the retailer's own product naming.
+
+id: calvins-bandaged-3x3-maze-300
+entity: family
+manufacturer_id: calvins-puzzle
+name: "Calvin's Bandaged 3x3 (Maze-300 Cube)"
+aliases:
+  - "Maze-300 Cube"
+introduced:
+  value: "2023"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-calvins-bandaged-3x3-maze-300's own reliability_note). The genuine Wayback crawl
+    timestamp of the source used is 2023-02-05, used only as an 'existed by' upper bound."
+positioning: special
+description: |-
+  A "bandaged" 3x3 (a recognised twisty-puzzle category in which certain pieces are physically
+  restricted from moving independently), described directly in TheCubicle's own product copy:
+  "The Calvin's Bandaged 3x3 (Maze-300 Cube) is a standard 3x3 with 3D printed tiles attached to
+  the pieces. These tiles bandage some of the pieces, restricting movement. This cube is almost
+  as difficult to scramble as it is to solve!" (thecubicle-calvins-bandaged-3x3-maze-300, tier
+  2). TheCubicle's own "Type" field files this under "Shape Mods."
+
+  **A possible modification/service question, flagged rather than resolved.** The source
+  describes this as physically "a standard 3x3 with 3D printed tiles attached" — closer in
+  description to a base cube with an added modification than a from-scratch different design. A
+  future model/variant pass should consider whether DATA_MODEL §4.3's `modified_from`/`service`
+  framing (with Calvin's Puzzle as `kind: service` for this specific product) is a better fit
+  than treating this as an independent Calvin's-designed model, since the base 3x3's own
+  manufacturer is not stated by this source. Not resolved here; the family record is created
+  under `calvins-puzzle` per the retailer's own attribution and product naming, which is the
+  operative fact at this pass.
+
+  Almost certainly non-WCA-legal; the `scope_class: conditional` justification and admission is
+  deferred to pass 3/4 per DATA_MODEL §1.4.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-calvins-bandaged-3x3-maze-300]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-calvins-bandaged-3x3-maze-300]
+    note: "No source states a positioning label; `special` records this record's own
+      out-of-competitive-category reading given the non-standard mechanism."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-calvins-bandaged-3x3-maze-300]
+  /description:
+    confidence: reported
+    sources: [thecubicle-calvins-bandaged-3x3-maze-300]
