@@ -1,0 +1,54 @@
+# model: qiyi-m-pro-standard
+# Pass 3 (model enumeration). The base M Pro generation. "Standard" and "MagLev" configurations
+# are treated as variants of this one model per the wiki's own explicit "multiple versions"
+# framing; not modelled separately. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-m-pro-standard
+entity: model
+family_id: qiyi-m-pro
+manufacturer_id: qiyi
+name: "QiYi M Pro"
+scope_class: core
+generation:
+  label: "M Pro"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2023"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 55.0
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "Qiyi M Pro Released mid 2023.
+  This was QiYi's budget magnetic 3x3 release... This 3x3 also has multiple versions" — Standard
+  (48 magnets, stickered/stickerless), Maglev, and Maglev with Ballcore, explicitly described as
+  configurations of one product, not separate models (DATA_MODEL section 4.2 worked decision A).
+  TheCubicle's own product page for the base configuration
+  (thecubicle-qiyi-m-pro-3x3-product) independently corroborates: "The QiYi M Pro 3x3 is a
+  budget-friendly, magnetic puzzle from QiYi. It features a hand-adjustable compression system."
+  A separate MagLev product page (thecubicle-qiyi-m-pro-3x3-maglev-product) exists at the same
+  55.0mm size and is treated as a variant of this model, not modelled separately, consistent
+  with the wiki's framing.
+  "M Pro" carries no manufacturer-declared ordinal of its own (unlike the later, explicitly
+  numbered "V2"), so `generation.basis` is recorded as community_convention for the ordinal
+  placement, following the same treatment given to gan-356-air and qiyi-ms-original elsewhere in
+  this archive.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('mid 2023'); TheCubicle's capture carries only the 'Added:
+      2023-05-12' artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer ordinal is given for the base 'M Pro'; treated as the family's
+      earliest identified design because 'V2' and 'Elite' are both explicitly named as later/
+      further generations by the wiki."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-3x3-product]
+  /description:
+    confidence: probable
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-m-pro-3x3-product,
+      thecubicle-qiyi-m-pro-3x3-maglev-product]
