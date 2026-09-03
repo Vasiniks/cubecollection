@@ -233,3 +233,46 @@ adjustable magnetic system" superlative claim, not independently verified.
 contradicting).
 
 ---
+## MoJue — 1 family
+
+**Sub-brand caution applied — this is the strongest relationship-evidence finding in this
+batch.** `data/manufacturers/mojue.yml` currently records `kind: sub_brand` at
+`confidence: uncertain`, reasoned entirely from structural analogy to GuoGuan (own product
+name, no "moyu-" prefix, grouped in MoYu's own house-name list) because "no source directly
+states the relationship type for MoJue specifically." This pass found one: TheCubicle's own
+MoJue M3 product description states, twice, that MoJue is "MoYu sub-branded" ("an exciting
+new high-end MoYu sub-branded 3x3... among the most promising MoYu sub-brands thus far") — a
+direct, specific, tier 2 retailer statement, not an inference. **I have not changed
+`data/manufacturers/mojue.yml` or its confidence** — that file is outside my write lane and
+the task brief explicitly warns against upgrading corporate relationships on retailer copy
+during this family pass. The finding is recorded in `mojue-m3.yml`'s own description and here,
+flagged clearly for a human to weigh raising the confidence on `/kind` given this materially
+stronger, more direct source than what that record currently cites.
+
+**Candidates considered:** MoJue M3 — the only MoJue product-slug capture found
+(`thecubicle.com/products/mojue*` returns exactly one page).
+
+**Accepted (1):** `mojue-m3`, on the same "single generic-but-named product = one family"
+precedent as `cube4you-3x3`/`fanxin-3x3`/`mf8-legend`.
+
+**Rejected:** none — no second MoJue product was found to weigh against.
+
+**Method note on a suspect date field.** The product's "Added: 2018-09-11" spec-table field
+recurs verbatim across several unrelated products checked this pass (GuoGuan YueXiao Pro,
+YueXiao Pro M, several Z-brand items) — almost certainly a one-time catalogue-migration
+default at TheCubicle rather than a genuine per-product listing date. Flagged here because it
+could otherwise silently poison `introduced` dates across several families in this archive if
+taken at face value; not used for `mojue-m3`'s or `guoguan-yuexiao`'s `introduced` fields (see
+those records' own attestation notes). Worth a broader check by whoever next relies on
+TheCubicle's "Added" field for a launch date.
+
+**Unresolved questions:** exact MoJue/MoYu relationship confidence (flagged above); exact
+launch date (only a single, undated-beyond-"soon" 2020 capture found); whether MoJue M3 ever
+shipped beyond pre-order (not checked further this pass).
+
+**Sources added:** `thecubicle-mojue-m3-2020`.
+
+**Confidence:** `uncertain` on `introduced`/`positioning` (single weak-dated source);
+`reported` on `description`.
+
+---
