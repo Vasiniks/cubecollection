@@ -1,0 +1,53 @@
+# family: rubiks-connected
+# Pass 2 (family enumeration). Rubik's smart/electronic 3x3 line — Bluetooth-connected,
+# app-companion, manufactured (per data/manufacturers/particula.yml and
+# data/manufacturers/rubiks.yml) by Particula rather than by whatever entity or entities make
+# the mechanical Speed Cube. Kept as its own family per DATA_MODEL's smart-cube treatment
+# elsewhere in this archive (see e.g. moyu-ai, giiker, and GAN's smart lines): a smart/
+# electronic capability difference is always family/model-relevant, never a mere variant
+# configuration of a mechanical line, because the object itself is materially different
+# (electronics, battery, Bluetooth radio) rather than a parts/material/treatment choice at
+# assembly.
+
+id: rubiks-connected
+entity: family
+manufacturer_id: rubiks
+name: "Rubik's Connected"
+aliases:
+  - "Rubik's Connected X"
+  - "ConnectedX"
+positioning: smart
+description: |-
+  Rubik's Bluetooth-connected smart cube line. Particula's own 2021 press coverage of its
+  Series A funding round states it "will start production of... Rubiks Connected (in
+  partnership with Rubiks)" (tech-eu-particula-series-a-2021, already sourced in
+  data/manufacturers/particula.yml and data/manufacturers/rubiks.yml) — the clearest documented
+  answer this archive has to which entity manufactures any Rubik's-branded 3x3 product. The
+  current generation, "Rubik's Connected X" (rubiks-com-connected-x-product-2025), is described
+  on Rubik's own site: "Track your every twist and turn with ConnectedX's Bluetooth
+  integration that connects to your smartphone or tablet... download the Rubik's Connected App
+  to access solving resources, leaderboards, mini games, and more."
+
+  No plain "Rubik's Connected" (without the "X") product page was found under rubiks.com's
+  current product prefix this pass — only "Rubik's Connected X" — which is consistent with,
+  but does not confirm on its own, an original "Rubik's Connected" having been superseded by
+  an "X" generation. Recorded as one family spanning both under the persisting "Connected"
+  name, per the same reasoning applied to moyu-weilong's persisting-name generations elsewhere
+  in this pass; the exact generational boundary (whether "Connected" and "Connected X" are one
+  model with a revision, or two models under this family) is left to pass 3.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: confirmed
+    sources: [rubiks-com-connected-x-product-2025]
+  /description:
+    confidence: probable
+    sources: [rubiks-com-connected-x-product-2025]
+    note: "The manufacturing-relationship claim (Particula) is attested in
+      data/manufacturers/particula.yml and data/manufacturers/rubiks.yml, not re-attested here
+      to avoid duplicating that record's own provenance; this family record's description
+      cross-references it."
+  /aliases:
+    confidence: probable
+    sources: [rubiks-com-connected-x-product-2025]

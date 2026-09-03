@@ -1,0 +1,90 @@
+# family: rubiks-classic
+# Pass 2 (family enumeration). The original Rubik's Cube line, continuously sold since 1980
+# (see data/manufacturers/rubiks.yml for the brand's own history and the 2021 Spin Master
+# acquisition). This is the highest-volume boundary call made for this manufacturer: Rubik's
+# own site (rubiks.com) gives separate product pages and separate marketing names to a large
+# number of surface/material/sticker treatments of what is, on the evidence gathered this
+# pass, the same underlying mechanism — Crystal (transparent plastic), Phantom (thermochromic
+# tiles), Retro (50th-anniversary boxy-edge/gold-side commemorative), Re-Cube (recycled
+# plastic), Coach Cube (peel-away numbered stickers, "once you've solved you now have a
+# regular 3x3 Cube to use"), Impossible (iridescent colour-shifting tiles), Disney 3x3, and a
+# run of licensed-character "Cuber" collaborations (Batman, Iron Man, Spider-Man, Hulk, Black
+# Panther, Hello Kitty), plus at least one motorsport tie-in (Mercedes-AMG Petronas F1 Team
+# Cube) and a "Wednesday Cube" tie-in. Every one of these product pages that was checked this
+# pass (rubiks-com-classic-special-editions-2024) explicitly or implicitly frames itself as
+# "just like the classic Rubik's Cube" with a stated surface, material, or sticker difference
+# only — textbook variant-level differences per DATA_MODEL §4.2 ("a manufacturer-sold
+# configuration difference belongs at variant level even when it changes substantial
+# hardware... could the manufacturer produce both from the same underlying design by choosing
+# different parts, materials, or treatment at assembly? Yes -> variant"). None of the pages
+# checked claim a different core, mechanism, or turning system from the base cube. These are
+# therefore recorded here as leads for pass 3/4 (model/variant enumeration) under this one
+# family, not as separate families or models.
+
+id: rubiks-classic
+entity: family
+manufacturer_id: rubiks
+name: "Rubik's Cube"
+aliases:
+  - "Rubik's 3x3 Cube"
+  - "The Original Rubik's Cube"
+  - "Magic Cube"
+introduced:
+  value: "1980"
+  precision: year
+  qualifier: exact
+  note: "Per rubiks-history-2024 (already sourced in data/manufacturers/rubiks.yml): the
+    product was renamed from 'Magic Cube' to 'Rubik's Cube' in 1980. This family record
+    represents the commercial product line under that name, not Erno Rubik's 1974 prototype or
+    the 1975 mechanism patent, both of which predate any commercial family."
+positioning: mainline
+description: |-
+  The eponymous product: a 3x3x3 twisty puzzle sold continuously under the "Rubik's Cube" name
+  since 1980, per the brand's own history page (already sourced in data/manufacturers/rubiks.yml
+  as rubiks-history-2024). Rubik's own current product page for the base line (rubiks-com-3x3-
+  cube-product-2024) describes "Improved Play: the new and improved Rubik's Cube features a
+  mechanism that results in a smoother, faster and more reliable play," and a "Stickerless"
+  option "replaced with plastic tiles" — both framed as an evolution of one persisting product
+  rather than a distinct new design, consistent with treating this as one family across
+  decades of incremental mechanism refinement (pass 3's job to periodise into generations,
+  where evidence supports it).
+
+  **Positioning.** Recorded `mainline` rather than `flagship`, because Rubik's own current site
+  navigation and product structure treats "Rubik's Speed" (data/families/rubiks-speed.yml) as
+  the dedicated line for serious/competitive solving — this classic line is the mass-market,
+  general-audience product the brand is named for, not itself marketed as a speedcubing
+  product. This is a judgement call, not a manufacturer self-description; flagged as such.
+
+  **What is deliberately NOT split into separate families here** (see header comment for the
+  full boundary reasoning): Rubik's Crystal, Rubik's Phantom, Rubik's Retro, Rubik's Re-Cube,
+  Rubik's Coach Cube, Rubik's Impossible, Rubik's Disney 3x3, and the licensed "Cuber"
+  collaboration line (Batman, Iron Man, Spider-Man, Hulk, Black Panther, Hello Kitty Cubers),
+  plus the Mercedes-AMG Petronas F1 Team Cube and the "Wednesday Cube" — all found via a
+  `rubiks.com/products` CDX prefix sweep, all read as surface/material/sticker/commemorative
+  treatments of this same classic mechanism on the evidence available this pass. Pass 4 should
+  enumerate each as a variant of this family's model(s), with `edition.collaboration_with` set
+  for the licensed-character lines and `edition.commemorates` for Retro (50th anniversary).
+
+  **Legality note for a future pass, not resolved here.** Some of these (Phantom's
+  thermochromic tiles hidden until touched; Impossible's angle-dependent iridescent colour)
+  may raise `legality.wca_status` questions at the variant level — recorded as a flag for pass
+  4/5, not decided at this family-enumeration pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: confirmed
+    sources: [rubiks-history-2024]
+  /positioning:
+    confidence: uncertain
+    sources: [rubiks-com-3x3-cube-product-2024, rubiks-com-speed-product-2024]
+    note: "Judgement call inferred from Rubik's own site structure (a separate 'Rubik's Speed'
+      product/category distinct from the base 'Rubik's 3x3 Cube'), not a manufacturer
+      self-description of either line's tier."
+  /description:
+    confidence: probable
+    sources: [rubiks-com-3x3-cube-product-2024, rubiks-com-classic-special-editions-2024,
+      rubiks-history-2024]
+  /aliases:
+    confidence: probable
+    sources: [rubiks-history-2024, rubiks-com-3x3-cube-product-2024]

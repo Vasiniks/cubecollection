@@ -1,0 +1,26 @@
+# source: rubiks-com-2017-speedcube-category
+# Rubik's own official site (rubiks.com, UK/Rubik's Brand Ltd era, pre-Spin Master), captured
+# January 2017. Tier 1, first-party. Establishes a "Speed Cube" product category on Rubik's
+# own site within this archive's scope window, earlier than the "New... magnetic" relaunch
+# documented in rubiks-com-2022.
+id: rubiks-com-2017-speedcube-category
+entity: source
+kind: manufacturer_official
+title: "The Home of Rubik's Cube | Rubik's Official Website"
+publisher: "Rubik's Brand Ltd"
+url: "http://rubiks.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20170102031638id_/http://rubiks.com/"
+excerpt: |-
+  Main site navigation, store section: "Cubes / Speed Cube / Other Games / Stickers / Novelty
+  Gifts / Electronic / Clothing." Footer: "© 2017 Rubik's Brand Ltd. All Rights Reserved."
+accessed: "2026-09-03"
+language: en
+region: GB
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Category-navigation-level evidence only — no product detail page for the
+  2017-era Speed Cube itself was captured this pass, so this establishes the category's
+  existence and approximate date, not the product's specifications. Used only to set
+  data/families/rubiks-speed.yml's introduced date at a coarse (circa, year-level) precision."
+status: sourced

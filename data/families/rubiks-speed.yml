@@ -1,0 +1,78 @@
+# family: rubiks-speed
+# Pass 2 (family enumeration). Rubik's own dedicated speedcubing line, distinct from
+# rubiks-classic.yml on genuine mechanism grounds (magnets, a "stronger, more reliable core"),
+# not merely colourway or material — the opposite boundary call from the classic-line special
+# editions, made deliberately because the evidence differs. This is the single most
+# archive-relevant Rubik's-branded family, since it is the brand's own WCA-legal speedcube
+# product.
+
+id: rubiks-speed
+entity: family
+manufacturer_id: rubiks
+name: "Rubik's Speed"
+aliases:
+  - "Rubik's Speed Cube"
+  - "Speed Cube"
+introduced:
+  value: "2016"
+  precision: year
+  qualifier: circa
+  note: "A 'Speed Cube' product category already existed in Rubik's own site navigation by
+    January 2017 (rubiks-com-2017-speedcube-category); no earlier or later exact launch date
+    was found this pass, so recorded circa at the year preceding that capture. This earliest
+    documented Speed Cube generation is not stated to be magnetic — Rubik's own 2022 site
+    (rubiks-com-2022, already sourced at data/manufacturers/rubiks.yml) separately banners
+    'EXCLUSIVE: The New Rubik's Speed Cube — Engineered for Speed With Magnets,' language that
+    reads as introducing a revised, magnetic generation of an already-existing line rather than
+    the line's original launch. Whether this is a `model.revisions` change or a new `model`
+    under this family (per DATA_MODEL §4.2 — magnets are the paradigm 'substantial hardware
+    difference,' but the operative test is whether it was a same-design configuration choice
+    or a different tooling/mechanism) is left to pass 3, which will need a source describing
+    the actual mechanism change rather than only marketing copy."
+positioning: mainline
+description: |-
+  Rubik's own dedicated, continuously-marketed speedcubing product, presented on the brand's
+  own site as a distinct category/product from the base "Rubik's 3x3 Cube" (rubiks-classic).
+  The current-generation product page (rubiks-com-speed-product-2024) states: "Constructed
+  with magnets for added stability and precision, and a stronger, more reliable core... The
+  new magnetic Rubik's Speed Cube turns at an accelerated racing pace under complete control...
+  comes pre-lubricated." These are genuine mechanism/hardware claims (magnets, core), not
+  colourway or material claims, which is why this is kept as its own family rather than folded
+  into rubiks-classic the way Crystal/Phantom/Retro/etc. were (see rubiks-classic.yml's header
+  comment for that contrasting boundary call).
+
+  An earlier, non-magnetic "Speed Cube" product category already existed on Rubik's own site
+  by January 2017 (rubiks-com-2017-speedcube-category, UK/Rubik's Brand Ltd era, pre-Spin
+  Master acquisition) — no page content beyond the navigation label itself was captured this
+  pass, so nothing is claimed here about that earlier generation's specific mechanism beyond
+  its bare existence and name. Whether the 2017-era and current magnetic Speed Cube are the
+  same model with a revision, or two separate models under this one family, is pass 3 work.
+
+  **Manufacturing identity, deliberately left open.** data/manufacturers/rubiks.yml records
+  that the entity or entities that physically manufacture Rubik's-branded mechanical
+  speedcubes were not established by any source reviewed in pass 1, with one narrow exception
+  (Particula for the smart "Rubik's Connected" line — see rubiks-connected.yml). Nothing found
+  this pass narrows that gap for the mechanical Speed Cube specifically; recorded as still
+  `unknown` rather than assumed.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [rubiks-com-2017-speedcube-category]
+    note: "Category-navigation-level evidence only, at a coarse year-level precision. No
+      manufacturer press release or product-launch announcement for either the original or the
+      magnetic generation was found this pass."
+  /positioning:
+    confidence: probable
+    sources: [rubiks-com-speed-product-2024]
+    note: "Inferred from the product's own dedicated speedcubing-focused marketing copy
+      ('twist and turn faster than ever,' 'built for speed') and its separation from the base
+      classic-cube product line on Rubik's own site, not a manufacturer-stated tier."
+  /description:
+    confidence: probable
+    sources: [rubiks-com-speed-product-2024, rubiks-com-2017-speedcube-category,
+      rubiks-com-2022]
+  /aliases:
+    confidence: probable
+    sources: [rubiks-com-speed-product-2024, rubiks-com-2017-speedcube-category]

@@ -1,0 +1,29 @@
+# source: rubiks-com-speed-product-2024
+# Rubik's own official site, "Rubik's Speed" product page, captured via Wayback. Tier 1,
+# first-party. The current-generation magnetic Speed Cube.
+id: rubiks-com-speed-product-2024
+entity: source
+kind: manufacturer_official
+title: "Rubik's Speed – The Official Rubik's Cube"
+publisher: "Rubik's / Spin Master"
+url: "https://www.rubiks.com/products/rubiks-speed"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241116045045id_/https://www.rubiks.com/products/rubiks-speed"
+excerpt: |-
+  "The Rubik's Speed Cube is designed to help you twist and turn faster than ever before.
+  Constructed with magnets for added stability and precision, and a stronger, more reliable
+  core, the Rubik's Speed Cube is built for speed! ... ENGINEERED FOR SPEED: The new magnetic
+  Rubik's Speed Cube turns at an accelerated racing pace... SMOOTHER PLAY: The magnetic Rubik's
+  Speed Cube features a stronger core and has a mechanism designed to make it faster, smoother
+  & more reliable than ever... The speed Cube comes pre-lubricated."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party specification claims (magnets, core, pre-lubrication)
+  distinguished from comparative marketing copy ('faster than ever'), per the tier-4-for-
+  comparative-claims rule. Confirms the current Speed Cube generation is magnetic, distinct
+  from the earlier non-magnetic 'Speed Cube' category documented in
+  rubiks-com-2017-speedcube-category — the generational split is left to pass 3."
+status: sourced

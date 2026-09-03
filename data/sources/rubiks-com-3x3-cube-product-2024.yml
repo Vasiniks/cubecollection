@@ -1,0 +1,29 @@
+# source: rubiks-com-3x3-cube-product-2024
+# Rubik's own official site, "Rubik's 3x3 Cube" product page, captured via Wayback. Tier 1,
+# first-party.
+id: rubiks-com-3x3-cube-product-2024
+entity: source
+kind: manufacturer_official
+title: "Rubik's 3x3 Cube – The Official Rubik's Cube"
+publisher: "Rubik's / Spin Master"
+url: "https://www.rubiks.com/products/rubiks-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240525000000id_/https://www.rubiks.com/products/rubiks-3x3"
+excerpt: |-
+  "Meet the puzzle that changed the world! The original 3x3 Rubik's Cube has captivated
+  generations... Improved Play: The new and improved Rubik's Cube features a mechanism that
+  results in a smoother, faster and more reliable play. Stickerless: The traditional stickers
+  have been replaced with plastic tiles which means no fading, peeling or cheating!" Related
+  items shown on the same page: "Rubik's Classic Bundle," "Rubik's Disney 3x3," "Rubik's Coach
+  Cube," "Rubik's Keychain Cubes." Footer: "© 2024 Spin Master Ltd."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party. Establishes the classic 3x3 line as Rubik's own
+  current flagship-of-the-classic-range product page, and that a stickerless tile version
+  exists alongside the traditional stickered cube. Marketing superlatives ('the puzzle that
+  changed the world') are not treated as specifications, per the tier-4-for-comparative-claims
+  rule; only the stickerless/mechanism statements are treated as tier 1 specification facts."
+status: sourced

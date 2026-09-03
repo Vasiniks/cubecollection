@@ -531,3 +531,92 @@ SpeedCubeShop's own catalog history — no other major retailer's QJ collection/
 was swept this pass given the manufacturer's evidently thin scope-window footprint. Both
 families carry no confirmed manufacturer-first-party release date (retailer "Added" dates
 only), left at `uncertain`/`probable` accordingly.
+
+---
+
+## Rubik's — 3 families
+
+**Method note.** `rubiks.com` was rebuilt at least once inside the scope window (old
+PHP-style `/products/3d_puzzles/*.php` URLs through ~2013, a UK/Rubik's-Brand-Ltd-era
+Shopify-like site by 2017-2019, then a current-generation site from ~2024 using
+`/products/rubiks-<slug>` URLs). A `rubiks.com/products` CDX prefix sweep against the current
+URL scheme returned ~60 named products; most (2x2/4x4 puzzles, Race, Snake, Cage, Tower,
+Gridlock, Sensory, Color Block, Edge, Pyramid, Roll, Tetris, Apprentice [a 2x2, confirmed by
+fetching its page], bundles) are out of scope entirely (not 3x3x3). Of what remained, the
+central finding this manufacturer produced was a boundary call, not a discovery gap.
+
+**Candidates considered:** Rubik's 3x3 Cube (classic), Rubik's Speed, Rubik's Connected /
+Connected X, Rubik's Crystal, Rubik's Phantom, Rubik's Retro, Rubik's Re-Cube, Rubik's Coach
+Cube, Rubik's Impossible, Rubik's Disney 3x3, licensed "Cuber" collaborations (Batman, Iron
+Man, Spider-Man, Hulk, Black Panther, Hello Kitty), Mercedes-AMG Petronas F1 Team Cube,
+Wednesday Cube.
+
+**Accepted (3):** `rubiks-classic`, `rubiks-speed`, `rubiks-connected`.
+
+**The central boundary call — everything else folded into `rubiks-classic` as variant-level
+leads, not separate families.** Six product pages were fetched and read in full (Crystal,
+Phantom, Retro, Re-Cube, Coach Cube, Impossible); every one explicitly frames itself as "just
+like the classic Rubik's Cube" with a stated surface, material, or sticker difference only
+(transparent plastic; thermochromic tiles; boxy 50th-anniversary commemorative shell;
+recycled plastic; peel-away numbered stickers that reveal "a regular 3×3 Cube" underneath;
+iridescent angle-shifting tiles). None claims a different core, mechanism, or turning system.
+Per DATA_MODEL §4.2's test ("could the manufacturer produce both from the same underlying
+design by choosing different parts, materials, or treatment at assembly? Yes -> variant"),
+these are textbook variants of one shared design, not new families or models — despite each
+having its own dedicated product page and marketing name, which on a page-count basis would
+suggest six-plus more families. The licensed "Cuber" collaborations and Disney 3x3 were not
+individually fetched but are inferred to be the same pattern (character-themed sticker/colour
+treatments of the classic mechanism, per the same site's consistent template and the
+`edition.collaboration_with` field existing precisely for this case) and are recorded as pass
+4 leads in `rubiks-classic.yml`'s description rather than chased individually at this pass —
+enumerating every licensed collaboration's own model/variant boundary is pass 3/4 work, not
+family enumeration.
+
+**Kept separate: `rubiks-speed`.** The opposite call, made deliberately because the evidence
+differs: the current Speed Cube's own product page states genuine mechanism/hardware
+differences (magnets, "a stronger, more reliable core"), not colourway or material. A
+`rubiks.com` capture from January 2017 shows a "Speed Cube" site category already existing
+under the pre-Spin-Master UK entity, years before the 2022 "New... magnetic" relaunch
+language — recorded as one family spanning a possible non-magnetic-to-magnetic generational
+change, with the exact model/revision boundary explicitly left to pass 3 (no source found
+this pass describes the earlier generation's actual mechanism, only its category label).
+
+**Kept separate: `rubiks-connected`.** Smart/electronic capability is treated as always
+family-relevant in this archive (consistent with `giiker`, `moyu-ai`, and GAN's smart lines
+elsewhere in this project) — the object itself differs materially (electronics, Bluetooth,
+battery), not merely a parts/material choice at assembly. This is also the family that
+directly answers part of pass 1's "who manufactures Rubik's-branded cubes" open question:
+Particula, per its own 2021 press coverage, already sourced in `data/manufacturers/particula.yml`
+and `data/manufacturers/rubiks.yml`. No plain "Rubik's Connected" (without "X") product page
+exists on the current site — only "Connected X" — so the family spans a persisting name across
+a possible generational split, the same pattern as `rubiks-speed`.
+
+**Leads verified/refuted from the task brief:**
+- *"Corporate/ownership change mid-window"* — **confirmed**, already fully sourced in pass 1
+  (`data/manufacturers/rubiks.yml`): Spin Master's acquisition of Rubik's Brand Ltd, effective
+  2021-01-05. Not re-litigated here; the family records cross-reference it rather than
+  re-attesting it.
+- *"Licensed manufacture"* — **partially confirmed, partially still open.** Confirmed for the
+  smart-cube line only (Particula). The mechanical Speed Cube's and classic cube's actual
+  manufacturer remain `unknown`, exactly as pass 1 left them — nothing found this pass narrows
+  that gap, and both family records say so explicitly rather than silently dropping the
+  question.
+
+**Unresolved for pass 3:**
+- Whether the 2017-era non-magnetic Speed Cube and the current magnetic Speed Cube are one
+  model with a `revisions[]` entry or two models joined by `succeeds` — no source describing
+  the actual pre-magnetic mechanism was found this pass, only the category's bare existence.
+- Same open question for Connected vs. Connected X.
+- The full enumeration and per-product sourcing of the classic line's special/collaboration
+  editions (Crystal, Phantom, Retro, Re-Cube, Coach Cube, Impossible, Disney 3x3, the six-plus
+  licensed "Cuber" collaborations, the Mercedes-AMG F1 tie-in, the Wednesday Cube) as variants
+  — deliberately deferred to pass 4, not attempted here.
+- Whether Rubik's Phantom's or Rubik's Impossible's colour-reveal/colour-shift properties bear
+  on `legality.wca_status` at the variant level — flagged in `rubiks-classic.yml`, not decided.
+
+**Sources created this session (Rubik's):** `rubiks-com-2017-speedcube-category`,
+`rubiks-com-3x3-cube-product-2024`, `rubiks-com-speed-product-2024`,
+`rubiks-com-connected-x-product-2025`, `rubiks-com-classic-special-editions-2024` (a
+deliberate six-page bundle, see that source's own `reliability_note` for why). Reused from
+pass 1 without modification: `rubiks-history-2024`, `rubiks-com-2022`,
+`tech-eu-particula-series-a-2021`, `particula-about-us-2024`.

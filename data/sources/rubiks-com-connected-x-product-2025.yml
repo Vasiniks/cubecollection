@@ -1,0 +1,28 @@
+# source: rubiks-com-connected-x-product-2025
+# Rubik's own official site, "Rubik's Connected X" product page, captured via Wayback. Tier 1,
+# first-party. The current smart-cube generation.
+id: rubiks-com-connected-x-product-2025
+entity: source
+kind: manufacturer_official
+title: "Rubik's Connected X – The Official Rubik's Cube"
+publisher: "Rubik's / Spin Master"
+url: "https://www.rubiks.com/products/rubiks-connected-x"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250225030614id_/https://www.rubiks.com/products/rubiks-connected-x"
+excerpt: |-
+  "Evolve your solve with the ConnectedX Cube. Track your every twist and turn with
+  ConnectedX's Bluetooth integration that connects to your smartphone or tablet... download
+  the Rubik's Connected App to access solving resources, leaderboards, mini games, and more."
+  Only "Rubik's Connected X" appears under this URL prefix on rubiks.com as of this capture;
+  no plain "Rubik's Connected" product page was found under rubiks.com/products this pass
+  (see data/manufacturers/particula.yml for the earlier "Rubik's Connected," made by
+  Particula, documented from press coverage rather than a rubiks.com product page).
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party. Confirms the current smart-cube product name and
+  Bluetooth/app functionality. Does not itself name Particula as manufacturer — that
+  relationship is sourced separately in data/manufacturers/particula.yml via press coverage."
+status: sourced

@@ -1,0 +1,53 @@
+# source: rubiks-com-classic-special-editions-2024
+# Six of Rubik's own official product pages for named special/material/commemorative
+# treatments of the classic 3x3 mechanism, captured via Wayback and bundled into one source
+# record because each states the same underlying fact this record exists to support: that the
+# product is "just like the classic Rubik's Cube" with a surface/material/sticker difference
+# only, not a distinct mechanism. Used to support the model/variant-boundary reasoning in
+# data/families/rubiks-classic.yml's description, not to attest individual per-product
+# specifications (that is pass 3/4 work, one source per product at that point).
+id: rubiks-com-classic-special-editions-2024
+entity: source
+kind: manufacturer_official
+title: "Rubik's Phantom / Crystal / Retro / Re-Cube / Coach Cube / Impossible — product pages"
+publisher: "Rubik's / Spin Master"
+url: "https://www.rubiks.com/products/rubiks-phantom"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240619000000id_/https://www.rubiks.com/products/rubiks-phantom"
+excerpt: |-
+  Rubik's Phantom (rubiks.com/products/rubiks-phantom, captured 2024-06-19): "Thermochromic
+  technology reveals the hidden fun in this innovative Cube. Touch the tiles to reveal the
+  Phantom's colors with the heat of your touch!"
+
+  Rubik's Crystal (rubiks.com/products/rubiks-crystal, captured 2025-08-31): "This transparent
+  3×3 Cube takes you behind the curtain to see how the Cube works as you twist and turn."
+
+  Rubik's Retro (rubiks.com/products/rubiks-retro, captured 2024-06-13): "Launched to
+  celebrate Rubik's 50th anniversary, this special edition Rubik's Cube looks and feels like
+  it came right out of a time capsule! ... classic boxy edges, slower turning, stickers, gold
+  side, and special anniversary logo, presented in a retro plastic display case."
+
+  Rubik's Re-Cube (rubiks.com/products/rubiks-recube, captured 2025-03-03): "The Rubik's
+  Re-Cube is the world-famous puzzle made with 100% recycled plastic ... Rubik's Re-Cube is
+  the same 3×3 Cube you know and love, created with sustainability as top of mind."
+
+  Rubik's Coach Cube (rubiks.com/products/rubiks-coach-cube, captured 2024-10-05): "It's a
+  Rubik's Cube with a simplified solving process designed for first-time solvers ... Your
+  Coach Cube starts covered by black, numbered stickers. Follow along to remove the stickers
+  and solve! Once you've solved you now have a regular 3×3 Cube to use!"
+
+  Rubik's Impossible (rubiks.com/products/rubiks-impossible, captured 2024-11-02): "The
+  Rubik's Impossible is a 3×3 Rubik's puzzle cube with a high challenge level. It's just like
+  the classic Rubik's Cube, but it changes colors depending on the angle. The iridescent tiles
+  change color when viewed from different angles."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Six separate Wayback captures bundled into one source record because each
+  backs the identical claim (surface/material/sticker treatment of the shared classic
+  mechanism, not a distinct design) rather than six independent specification facts. Pass 3/4
+  should split these into per-product sources when researching each as its own model/variant;
+  this record exists only to support the family-level boundary call made at pass 2."
+status: sourced
