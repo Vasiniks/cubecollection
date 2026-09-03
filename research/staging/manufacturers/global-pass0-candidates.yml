@@ -182,8 +182,14 @@ product_lines_not_manufacturers:
 # Seen once, or at one retailer, or ambiguous between brand / product / retailer line.
 # Each needs identity work before any record is created.
 long_tail_candidates:
-  - { name: "MoHuanShouSu", slugs: [mohuan-shousu], note: "Chinese brand; native name likely required for resolution." }
-  - { name: "SenHuan",      slugs: [senhuan] }
+  - { name: "MoHuanShouSu", slugs: [mohuan-shousu],
+      status: "CANONICALISED as data/manufacturers/mohuanshousu.yml, kind: sub_brand,
+        parent_id: moyu, confidence: uncertain (structural analogy to GuoGuan, no direct
+        relationship statement found). See the Priority 3 MoYu-affiliate addendum in
+        global-pass0.md." }
+  - { name: "SenHuan",      slugs: [senhuan],
+      status: "CANONICALISED as data/manufacturers/senhuan.yml, kind: sub_brand, parent_id:
+        moyu, confidence: uncertain, same reasoning as MoHuanShouSu above." }
   - { name: "HeShu",        slugs: [heshu] }
   - { name: "KungFu",       slugs: [kungfu],
       status: "CANONICALISED as data/manufacturers/kungfu.yml, kind: manufacturer at
@@ -244,6 +250,22 @@ long_tail_candidates:
       status: "RESOLVED — a TheCubicle in-house premium tuning-line name (same evidence and
         treatment as FZ/Angstrom Research above). Recorded as an alias on
         data/manufacturers/thecubicle.yml, not its own record." }
+  - { name: "Celeritas",    slugs: [celeritas],
+      status: "RESOLVED — a TheCubicle in-house premium tuning-line name, same treatment as
+        Mystic/FZ/Angstrom Research. An earlier (2023) navigation capture shows it in
+        TheCubicle's own 'Premium' megamenu, and product-slug enumeration shows the
+        'celeritas-' prefix applied across many manufacturers' big cubes and 3x3s (MoYu,
+        DaYan). Recorded as an alias on data/manufacturers/thecubicle.yml." }
+  - { name: "Max",          slugs: [max, max-lubes, max-lube-system],
+      status: "RESOLVED — also a TheCubicle in-house Premium megamenu item (same 2023 capture
+        as Celeritas above), not purely a lubricant brand as originally guessed. Recorded as
+        an alias on data/manufacturers/thecubicle.yml." }
+  - { name: "Cubing GG",    slugs: [cubing-gg],
+      status: "RESOLVED — not a cube manufacturer. TheCubicle's own site (2025 capture)
+        promotes 'Cubing.GG Courses and Coaching!' and sells named coaching-session products
+        ('1-Hour 3x3 Solve Analysis with Caiden Lee — Cubing.GG Coaching Session'). A
+        coaching/education brand, out of this archive's scope (not a manufacturer, service, or
+        collaborator in the DATA_MODEL sense). No record created." }
   - { name: "Ninja",        slugs: [ninja],
       status: "CANONICALISED as data/manufacturers/ninja.yml, kind: manufacturer at
         `drafted`/uncertain. TheCubicle's own manufacturer filter lists three 'Ninja Ghost
@@ -366,3 +388,71 @@ service_candidates:
 domains_with_captures:  [yjcube.com, dayancube.com, cycloneboys.com, verypuzzle.com, cube4you.com]
 domains_guessed_no_hit: [moyu.com.cn, qiyicube.com, yuxincube.com, shengshou.com, diansheng.net,
                          fangshi.net, lanlan-puzzle.com, mf8-puzzle.com, mscube.cn, qjcube.com]
+
+
+# ---------------------------------------------------------------- second-layer discovery (2026-09-02)
+# Method: npm run wayback -- prefix 'thecubicle.com/products/' --limit 30000 -> 11,740 captured
+# URLs, 4,917 distinct slugs after query-string/dedup. First-token frequency count surfaced
+# brand-shaped prefixes invisible to the collection-URL sweep (which requires a top-level
+# collection page — the MoreTry gap). Full raw output NOT saved to the repo (large, in
+# /private/tmp scratch); the token-frequency table and slug greps are reproducible by re-running
+# the command above. See global-pass0.md addendum 3 for the full writeup.
+#
+# CANONICALISED this pass: huameng, escube (both kind: manufacturer, drafted/probable — real
+# "Manufacturer" spec-table fields on TheCubicle), pbcube (kind: sub_brand of moyu, drafted/
+# probable — TheCubicle states "MoYu's specialized sub-brand, PBCube" directly).
+#
+# Confirmed real (product-title evidence found) but NOT canonicalised this pass — each needs a
+# product-page fetch (Manufacturer spec field or description) before a record is created:
+second_layer_candidates:
+  - { name: "LBL Designs", slugs: [lbl-designs-anti-pop-diy-kit-for-diansheng-galaxy-fto, lbl-designs-diy-kit-for-weilong-and-rs-skewb, lbl-designs-gan-skewb-core-upgrade-kit, lbl-designs-stevin-4x4, lbl-designs-t-shirt],
+      note: "REAL, not a bare name — sells aftermarket DIY upgrade kits FOR other
+        manufacturers' cubes (DianSheng Galaxy FTO, MoYu WeiLong skewb, GAN skewb) plus a
+        t-shirt and at least one own-named product (Stevin 4x4). Almost certainly kind:
+        service (parts/kit maker) on the same evidentiary shape as LBL's DIY-kit pattern, not
+        yet fetched/confirmed with a product-page source this pass." }
+  - { name: "Tingman",     slugs: [tingman-cube-3x3, tingman-cube-cover, tingman-cube-stand, tingman-live-in-the-usa-ticket-la-show, tingman-live-challenge-accepted-texas-pm],
+      note: "REAL — has an actual 3x3 product ('Tingman Cube 3x3') AND live-event tickets
+        ('Tingman Live in the USA'), suggesting a creator/community-figure brand with a
+        genuine cube product rather than a pure manufacturer or pure merch line. Needs a
+        product-page fetch to determine kind (manufacturer vs. collaborator) before
+        canonicalising." }
+  - { name: "Lee",         slugs: [lee-2x2-axis-cube, lee-2x2-fisher-cube, lee-3x3x2-split-mirror-cube, lee-ai-bandaged-mirror-4x4x4-cube, lee-bandaged-mirror-3x3x3-cube],
+      note: "REAL, resolves the pass-0 caution ('high risk of being a signature-edition
+        credit') — a genuine standalone shape-mod design brand with dozens of SKUs
+        (axis/fisher/mirror/bandaged cubes), not a signature credit. Mostly non-standard 3x3
+        variants (scope_class: conditional territory), not yet canonicalised." }
+  - { name: "AJ",          slugs: [aj-4x4-curvy-dinominx, aj-bauhinia-dodecahedron-ii, aj-bubble-skewb, aj-clover-icosahedron-20-color, aj-clover-mastermorphix-diy-stickers],
+      note: "REAL, same resolution as Lee above — a genuine shape-mod design brand, not a
+        signature credit. Not yet canonicalised." }
+  - { name: "Zepuzzles",   slugs: [zepuzzles-big-3x3-fto-11cm, zepuzzles-squished-3x3-with-6-color-tiles, zepuzzles-domino-skewb],
+      note: "REAL — confirms the pass-0 guess (novelty/shape-mod maker). Has 3x3-adjacent
+        products (FTO, squished/tiled 3x3 variants) that would be scope_class: conditional
+        candidates, not standard WCA-legal 3x3s. Not yet canonicalised." }
+  - { name: "Kanyon",      slugs: [kanyon-2-circle-puzzle, kanyon-3x5x5, kanyon-gear-stand, kanyon-hexagon-1, kanyon-kaleidoscope-cuboctahedron],
+      note: "REAL — a shape-mod/novelty puzzle brand (circle puzzles, cuboids, kaleidoscope
+        forms), no standard 3x3 found among the slugs enumerated this pass. Not yet
+        canonicalised." }
+  - { name: "Vin Cube",    slugs: [vincube-4x4-v2-apex, vincube-4x4-v2-sprint, vincube-4x4-v2-surge],
+      note: "REAL — only 4x4 products found this pass ('Vin Cube 4x4 V2' line), no 3x3
+        confirmed yet. Needs a broader slug search or product-page fetch before scope/kind
+        can be assessed." }
+  - { name: "Cong's Design", slugs: [congs-design-meichen-skewb, congs-design-meichi-pyraminx, congs-design-meiying, congs-design-meiyu-4x4, congs-design-t-shirt],
+      note: "MoYu-affiliated (洋葱设计 / Onion Design, one of the seven names on
+        moyucube-official-home-2022 — see the Priority 3 addendum in global-pass0.md and
+        data/manufacturers/moyu.yml). Real shape-mod/4x4 product range plus its own t-shirt
+        merch line, but no 3x3 found and no relationship statement located, so left
+        unresolved deliberately rather than force-analogised to GuoGuan like the other four."}
+
+# Newly surfaced, real 3x3 makers not yet individually researched (name + first product slug
+# only, found in the same frequency sweep, high first-token counts suggesting substantial
+# product ranges): WitEden (witeden-, 64 slugs, mostly shape-mod/cuboid specialist per titles),
+# LeFun (lefun-, 54, shape-mod/novelty), Mefferts (mefferts-, 49, the historically important
+# Uwe Mefferts puzzle company — pre-dates this archive's window, scope-relevant for lineage
+# only), Maru (maru-, 37, has maru-3x3 and maru-4x4 directly), CubeStyle (cubestyle-, 35, has
+# cubestyle-3x3 directly), CubeTwist (cubetwist-, 28, novelty/keychain cubes), LimCube
+# (limcube-, 19, shape-mod specialist), Eastsheen (eastsheen-, 8, the historically important
+# Taiwanese pre-2016 brand — lineage-relevant), Adheron (adheron-heavy/-lite, 2, unclear
+# product type, needs a fetch), NewIsland (newisland-lightning/-phoenix, 3, unclear product
+# type). None fetched or canonicalised this pass — recorded here so the next pass does not
+# re-run the same 11,740-URL sweep to rediscover them.

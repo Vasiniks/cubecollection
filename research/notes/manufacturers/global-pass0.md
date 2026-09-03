@@ -223,3 +223,46 @@ cube4you, calvins-puzzle — plus fanxin/qj canonicalised from the earlier hando
 queue), 24 new sources, and five structural findings (Guhong closed, UniCube/Supernova/Cosmic
 resolved, HuDong resolved, Geranium Puzzles resolved, MoreTry discovered) written up at the point
 each was established.
+
+---
+
+## Addendum 3 — second-layer discovery via product-title prefixes (2026-09-02)
+
+Attacked the MoreTry-shaped gap directly, per instruction: enumerated
+`thecubicle.com/products/` (11,740 captured URLs, 4,917 distinct slugs), took the first
+hyphen-token of each, and reviewed the frequency table for brand-shaped prefixes absent from
+the collection-URL sweep. High recall, cheap, reproducible.
+
+**Canonicalised:** HuaMeng, ESCube (`kind: manufacturer`, real "Manufacturer" spec-table
+fields), PBCube (`kind: sub_brand` of MoYu, stated directly by the retailer: "MoYu's
+specialized sub-brand, PBCube"). **Resolved into thecubicle.yml:** Celeritas and MAX are two
+further in-house Premium tuning-line names (an earlier 2023 navigation capture has 8 megamenu
+items where the previously-cited capture has 6). **Resolved as out-of-scope:** Cubing GG is a
+coaching/courses brand, not a manufacturer.
+
+**MoYu's seven affiliated names, individually verdicted** (Priority 3): GuoGuan resolved
+`sub_brand` via a dedicated Speedsolving wiki page stating the relationship directly. MoJue,
+SenHuan, MoHuanShouSu, YanCheng recorded `sub_brand` at `confidence: uncertain` by structural
+analogy (own product naming, no "moyu-" prefix) — the open question is stated in each record,
+not silently resolved. Cong's Design and LeTao left unresolved, no record created — see the
+backlog file's new `second_layer_candidates` section.
+
+**Confirmed real but not yet canonicalised** (product-title evidence found, no product-page
+fetch done yet): LBL Designs (aftermarket DIY kits — likely `kind: service`), Tingman (has a
+real "Tingman Cube 3x3" plus live-event tickets — creator brand?), Lee and AJ (both resolve the
+pass-0 "signature-credit" caution: genuine standalone shape-mod design brands with dozens of
+SKUs each), Zepuzzles and Kanyon (novelty/shape-mod specialists), Vin Cube (4x4 only found so
+far). Full detail and slug evidence in the backlog file.
+
+**Not yet researched at all**, surfaced only as frequency-table hits with real product slugs
+attached: WitEden, LeFun, Mefferts (historically important, pre-dates this archive's window),
+Maru, CubeStyle, CubeTwist, LimCube, Eastsheen (historically important pre-2016 Taiwanese
+brand), Adheron, NewIsland. Recorded in the backlog rather than left to be rediscovered by
+re-running the sweep.
+
+**Not attempted this session:** the equivalent `speedcubeshop.com/products/` prefix sweep,
+smart-cube makers beyond GiiKER/Particula/PBCube, and Chinese-language discovery beyond what
+MoYu's own site already yielded. Session's WebSearch budget was exhausted before this addendum
+began (inherited from a prior session in the same environment); all evidence above comes from
+`wayback` and `WebFetch` (Speedsolving wiki only — most individual wiki pages for these names
+do not exist, confirmed by 404).
