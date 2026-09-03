@@ -1,0 +1,60 @@
+# family: guojia-type-a-chun
+# Pass 2 (family enumeration). GuoJia's only 3x3x3 product documented at any retailer found
+# this pass, and the first tier 2 corroboration of the historically significant tier 4
+# Chinese-language brand profile already in data/manufacturers/guojia.yml (which describes
+# GuoJia as "the earliest domestic 3x3 cube released specifically for speedcubing players",
+# 2006, growing to 19 models across several series). TheCubicle's own product page directly
+# names two generations under one persisting product name ("Chun1", "Chun2"), which is used
+# here to establish one family rather than an isolated single product.
+
+id: guojia-type-a-chun
+entity: family
+manufacturer_id: guojia
+name: "GuoJia Type A Chun"
+aliases:
+  - "Type A Chun"
+introduced:
+  value: "2018"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  TheCubicle's own description of the surviving generation: "The Type A Chun2 is a 3x3 cube
+  that features a unique internal mechanism and steel parts for the edge pieces. It is
+  currently only available in DIY Kit form." (thecubicle-guojia-type-a-chun2-2020). The same
+  page's own disclaimer directly names a predecessor: "The steel parts provided are designed
+  for the Type A Chun1 since the Chun2's steel parts are no longer in production" — a real,
+  retailer-documented design succession (Chun1 -> Chun2) within one persisting product name,
+  the basis for treating this as one family rather than a single isolated product.
+
+  This is very likely part of the wider GuoJia range described only in general terms by the
+  brand-profile source already cited in `data/manufacturers/guojia.yml` (19 models across
+  several series including "甲二"/Jiǎ Èr and "甲五"/Jiǎ Wǔ, "甲" itself meaning roughly
+  "first/A" — plausibly the same root as this product's English "Type A" naming), but no
+  source found this pass draws the connection explicitly between "Type A" and "甲" by name, so
+  this is recorded as a plausible but unconfirmed link, not a stated fact. Both Chun1 and Chun2
+  are marked "Discontinued" on the one capture found; whether either generation was ever sold
+  as a fully-assembled (non-DIY) product, and the wider 19-model range's own product names, are
+  not established by this pass's evidence.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "TheCubicle's own 'Added: 2018-11-07' field is this specific listing's catalogue
+      date at TheCubicle, not GuoJia's own release date for either the Chun1 or Chun2
+      generation — GuoJia's brand history (per data/manufacturers/guojia.yml) traces to 2006,
+      so an earlier real release for at least Chun1 is plausible but not established. Recorded
+      at year precision, `qualifier: circa`, with `confidence: uncertain` doing the real work
+      of signalling this is a retailer-listing date standing in for an unknown manufacturer
+      date, not a rounded-but-trusted approximation."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "No source states a positioning tier; `mainline` is a weak default given GuoJia's
+      description elsewhere as a domestic speedcubing-focused brand with a substantial
+      (19-model) range, not a single flagship product."
+  /description:
+    confidence: reported
+    sources: [thecubicle-guojia-type-a-chun2-2020]

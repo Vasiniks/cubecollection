@@ -1,0 +1,30 @@
+# source: thecubicle-guojia-manufacturer-filter-2021
+# TheCubicle's own manufacturer-filtered collection page for "GuoJia", archived 2021-02-02 —
+# discovered via TheCubicle's full manufacturer-filter dropdown list (which independently
+# confirms GuoJia, KungFu, LeFun, and the MoYu-affiliated names as recognised manufacturer
+# values in TheCubicle's own product taxonomy, not just names found via slug-guessing).
+# Resolves pass 1's own open question of whether GuoJia was still active/documented within
+# this archive's window — it is, via this one surviving product.
+id: thecubicle-guojia-manufacturer-filter-2021
+entity: source
+kind: retailer
+title: "Products – Filtered by \"Manufacturer: GuoJia\" – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/all/manufacturer_guojia"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210202062201id_/https://www.thecubicle.com/collections/all/manufacturer_guojia"
+excerpt: |-
+  Filtered by "Manufacturer: GuoJia": exactly two products, both marked "Discontinued": "GuoJia
+  Square-1" (not a 3x3x3, out of this archive's scope) and "Type A Chun2 - DIY Kit" (4
+  reviews).
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured manufacturer-filter categorisation, tier 2.
+  Confirms GuoJia is recognised as a distinct manufacturer in TheCubicle's own product
+  taxonomy (found via the site's full manufacturer-filter dropdown, not slug-guessing), and
+  that its only 3x3-relevant surviving product at this retailer is the Type A Chun2 (see
+  thecubicle-guojia-type-a-chun2-2020 for the product page itself)."
+status: sourced

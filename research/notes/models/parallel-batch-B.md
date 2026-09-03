@@ -551,3 +551,45 @@ already-preserved capture.
 **Confidence:** `reported` throughout (single tier 2 source, nothing contradicting).
 
 ---
+## GuoJia — 1 family
+
+**Method note — a useful discovery technique for the rest of this batch.** TheCubicle's own
+manufacturer-filter dropdown (captured in full while checking VeryPuzzle, see that section)
+lists every manufacturer value in its own product taxonomy, including several this register
+had only found via Chinese-language search or slug-guessing: GuoJia, KungFu, and LeFun are all
+independently confirmed present in that dropdown, meaning TheCubicle carried at least one
+tagged product from each at some point. This resolved pass 1's own open question for GuoJia
+("Activity within the 2016-2026 window is unknown") — it was carried, if thinly.
+
+**Candidates considered:** filtering `thecubicle.com/collections/all/manufacturer_guojia`
+(2021 capture) to exactly two products: **GuoJia Square-1** (not a 3x3x3, out of scope,
+rejected on scope grounds) and **Type A Chun2 - DIY Kit**.
+
+**Accepted (1):** `guojia-type-a-chun` — TheCubicle's own description confirms this is
+genuinely "a 3x3 cube," and its own disclaimer text names an undocumented predecessor
+generation directly: "The steel parts provided are designed for the Type A Chun1 since the
+Chun2's steel parts are no longer in production" — a real design succession (Chun1 → Chun2)
+under one persisting name, the same "one family, direct succession language" pattern used
+repeatedly this batch.
+
+**Historically significant, thinly evidenced.** This is the first tier 2 corroboration this
+register has for GuoJia at all, beyond the single tier 4 Chinese brand-profile source
+(`baiqiang-guojia-mofang-profile`) already in `data/manufacturers/guojia.yml`, which frames
+GuoJia as "the earliest domestic 3x3 cube released specifically for speedcubing players"
+(2006) with a 19-model range across several series. A plausible but **unconfirmed** link
+between this product's "Type A" naming and that source's "甲" (jiǎ, "first/A") series naming
+is noted in `guojia-type-a-chun.yml`'s own description as a lead, not asserted as fact.
+
+**Rejected:** GuoJia Square-1 (not a 3x3x3, RESEARCH_SPEC §2.4 scope).
+
+**Unresolved questions:** the relationship (if any) between "Type A" and the brand-profile
+source's "甲"-numbered series; whether GuoJia's wider 19-model range includes further 3x3
+products not carried by TheCubicle (a Chinese-language retailer sweep was not run this pass —
+time budget); exact introduction date for either Chun generation.
+
+**Sources added:** `thecubicle-guojia-manufacturer-filter-2021`,
+`thecubicle-guojia-type-a-chun2-2020`.
+
+**Confidence:** `uncertain` on `introduced`/`positioning`; `reported` on `description`.
+
+---
