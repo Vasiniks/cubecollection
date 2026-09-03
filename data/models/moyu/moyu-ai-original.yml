@@ -1,0 +1,48 @@
+# model: moyu-ai-original
+# Pass 3 (model enumeration). The single design generation found for the moyu-ai family,
+# deliberately kept separate from moyu-weilong per the family record's own reasoning (the wiki
+# itself distinguishes "MoYu AI" from "the WeiLong AI" as two different named products with two
+# different apps). See research/qc/pass3-agent-a-moyu.md.
+id: moyu-ai-original
+entity: model
+family_id: moyu-ai
+manufacturer_id: moyu
+name: "MoYu AI"
+scope_class: core
+generation:
+  label: "AI"
+  ordinal: 1
+  basis: manufacturer_declared
+announced:
+  value: "2023-08"
+  precision: month
+  qualifier: exact
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Not to be confused with the WeiLong AI.
+  Released in August 2023, the non-magnetic version is currently both the cheapest smartcube
+  and the only non-magnetic smartcube. The app was improved upon since the WeiLong AI having
+  been remade from the ground up. The piece design of the cube is similar to that of the
+  WeiLong V9." "Non-magnetic version" implies at least one other (magnetic) configuration is
+  sold; magnetic/non-magnetic is a variant-level (assembly-time) difference, not a separate
+  model, per DATA_MODEL §4.2's materiality test. No manufacturer or retailer source
+  corroborating this product was located this pass; recorded on the strength of this single
+  tier 3 source alone.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source (permitted claim type: approximate chronology), stated at month
+      precision directly by the source ('Released in August 2023'). No corroboration found; the
+      family's own attestation for the same claim was recorded 'uncertain' before the E1
+      tier-override of this source from 4 to 3 was in effect — see research/qc/
+      pass3-agent-a-moyu.md for this discrepancy, left unresolved on the family record since it
+      is out of this pass's write lane."
+  /generation/basis:
+    confidence: uncertain
+    note: "Single, unnumbered product name; only one generation of this line is documented.
+      Recorded manufacturer_declared because 'MoYu AI' is the product's own retail name, at
+      reduced confidence given the single-source basis."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]

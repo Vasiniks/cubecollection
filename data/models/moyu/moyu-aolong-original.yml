@@ -1,0 +1,46 @@
+# model: moyu-aolong-original
+# Pass 3 (model enumeration). The opening generation of the moyu-aolong family, described by
+# the Speedsolving wiki as using the mechanism of the MoYu AoSu 4x4. Succeeded by AoLong V2
+# (a documented plastic/mould change made in response to a competitive incident) and later
+# AoLong GT. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-aolong-original
+entity: model
+family_id: moyu-aolong
+manufacturer_id: moyu
+name: "MoYu AoLong"
+scope_class: core
+generation:
+  label: "AoLong"
+  ordinal: 1
+  basis: manufacturer_declared
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The Aolong improves on the Weilong's weak
+  points. It is known for taking the mechanism of the MoYu Aosu, which many consider to be the
+  best 4x4 speedcube... it is much more controllable while maintaining a decent amount of speed
+  from the Weilong." TheCubicle's early catalogue (thecubicle-us-moyu-early-3x3-lines) confirms
+  "AoLong" as a real, separately-named MoYu product via image-filename evidence on its own
+  domain (moyuaolongb*.jpg) alongside the separately-named "AoLong V2" and "AoLong GT" files,
+  though this source's own excerpt gives an explicit capture date for the "Cubicle AoLong V2"
+  full product page only (2015-09-18), not for the bare original AoLong page — so no
+  independent retailer-floor date is attested here for this specific generation. Superseded by
+  AoLong V2, which the wiki dates to a "July 2014" controversy, implying this generation existed
+  before that.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    note: "'AoLong' is MoYu's own retail product name (manufacturer_declared per the naming
+      test), but no tier 1-2 source states an ordinal/generation scheme explicitly; recorded at
+      reduced confidence."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu, thecubicle-us-moyu-early-3x3-lines]
+    note: "Existence corroborated by tier 2 (image-filename evidence) and tier 3 (wiki
+      narrative); mechanism description ('AoSu mechanism') rests on the wiki alone."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No direct dated statement or retailer-capture floor was found this pass for the
+      bare 'AoLong' (pre-V2) product specifically. It must predate the wiki's own 'July 2014'
+      dating of the AoLong V2 controversy, since V2 is described as a running production change
+      made in response to that incident — an inferred, not stated, upper bound. Left unset
+      rather than recording a specific date on this inference alone."

@@ -1,0 +1,55 @@
+# model: moyu-rs3m-super-v2
+# Pass 3 (model enumeration). A clear model boundary: "a capped piece design (as opposed to
+# split-piece with a separate corner stalk)" is a direct piece-construction (mould) change from
+# Super RS3M. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-rs3m-super-v2
+entity: model
+family_id: moyu-rs3m
+manufacturer_id: moyu
+name: "MoYu Super RS3M V2"
+aliases:
+  - "MoYu RS3M Super V2"
+scope_class: core
+generation:
+  label: "Super V2"
+  ordinal: 3
+  basis: manufacturer_declared
+released:
+  value: "2023"
+  precision: year
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The second version (or fourth, fifth, and
+  sixth?) versions of the Super RS3M and the fourth version of the RS3M, with a capped piece
+  design (as opposed to split-piece with a separate corner stalk), an updated external piece
+  design featuring UV coating and repelling edge magnets (Ballcore only). Released mid-2023."
+  The wiki's own parenthetical ("fourth, fifth, and sixth?") acknowledges its own generation-
+  counting is uncertain across the RS3M line's several concurrent Standard/Maglev/Ballcore
+  configurations; this record follows the wiki's own primary "fourth version of the RS3M"
+  framing, i.e. as the model succeeding Super RS3M. UV coating and repelling edge magnets
+  (Ballcore only) are recorded as variant-level configurations, not separate models.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct statement ('Released mid-2023'). Recorded at year
+      precision with qualifier 'circa'."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No tier 1-2 corroboration found this pass; single tier 3 source, which itself
+      expresses uncertainty about this generation's own ordinal count."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'The second version... of the Super RS3M', a direct succession statement,
+      despite its own stated uncertainty about the line's overall ordinal count."
+relationships:
+  - type: succeeds
+    target: moyu-rs3m-super
+    target_entity: model
+    note: "Wiki: 'The second version... of the Super RS3M'."

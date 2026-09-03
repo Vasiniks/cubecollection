@@ -1,0 +1,54 @@
+# model: moyu-weilong-gts
+# Pass 3 (model enumeration). HARD CASE resolved as a clear model boundary: the wiki states
+# this generation is "designed with caps on the pieces rather than the pieces being split into
+# multiple sections, meaning that a stickerless version would not be possible" — a piece-
+# construction (mould) difference from prior generations, not a sold configuration. See
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-gts
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong GTS"
+scope_class: core
+generation:
+  label: "GTS"
+  ordinal: 3
+  basis: manufacturer_declared
+released:
+  value: "2016"
+  precision: year
+  qualifier: exact
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The MoYu WeiLong GTS was released in 2016.
+  It is fast and very smooth. It corner cuts nearly two pieces forward and one piece reverse,
+  so that it rarely catches. It is designed with caps on the pieces rather than the pieces
+  being split into multiple sections, meaning that a stickerless version would not be
+  possible." The capped, non-split piece construction is the basis for treating this as a new
+  design generation rather than a variant of WeiLong V2.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct year-level dated statement ('released in 2016'), the
+      permitted precision for this source's approximate-chronology claim type."
+  /generation/basis:
+    confidence: uncertain
+    note: "'GTS' is MoYu's own retail product name, but no tier 1-2 source corroborating the
+      name specifically for the (unsuffixed) 2016 generation was found this pass — only later
+      GTS2/GTS3 generations are corroborated by thecubicle-com-moyu-3x3-collection-2021."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No source states a direct GTS-succeeds-V2 statement; inferred from the wiki's own
+      table-of-contents ordering (WeiLong -> V2 -> GTS -> GTS2 -> ...) and the shared 'WeiLong'
+      name."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-v2
+    target_entity: model
+    note: "Wiki's own article ordering places GTS immediately after WeiLong V2 in the family's
+      history; no explicit succession sentence was found."

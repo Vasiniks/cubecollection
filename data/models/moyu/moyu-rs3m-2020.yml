@@ -1,0 +1,65 @@
+# model: moyu-rs3m-2020
+# Pass 3 (model enumeration). HARD CASE resolved. The opening generation of MoYu's budget RS3M
+# succession. "RS3M MagLev" and "RS3M 2020 UV" are recorded as VARIANTS of this same model, not
+# separate models: the wiki describes MagLev only as a mechanism-tier option ("uses MagLev
+# technology, having 2 repelling magnets that replicate springs" — the task's own explicit
+# "MagLev vs spring" variant example) and UV coating is explicitly listed as a variant example
+# in this pass's own guidance. A possible "RS3M 2021" is NOT promoted to its own model: the
+# wiki mentions "the RS3M 2020/2021" only in passing, in one sentence, describing the Super
+# RS3M as an update to both years jointly, with no distinguishing feature ever stated for a
+# 2021-specific design. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-rs3m-2020
+entity: model
+family_id: moyu-rs3m
+manufacturer_id: moyu
+name: "MoYu RS3M 2020"
+scope_class: core
+generation:
+  label: "2020"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2021-01-14"
+  precision: day
+  qualifier: before
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Considered one of the best 3x3s of all time,
+  this puzzle features magnets, a dual adjustment system in which you could change the spring
+  compression and a cheap price point of only $9. There is, however, a major problem being that
+  the puzzle has very weak magnets." TheCubicle's own catalogue
+  (thecubicle-com-moyu-3x3-collection-2021, captured 2021-01-14) independently confirms "MoYu
+  RS3 M 2020 3x3", "Angstrom RS3 M 2020+ 3x3", "Mystic RS3 M 2020+ 3x3", "Pro Shop RS3 M 2020+
+  3x3", "Celeritas RS3 M 2020+ 3x3", and "MAX RS3 M 2020+ 3x3" as real, currently-sold retail
+  listings — TheCubicle's own in-house tuning tiers of this same base line, not separate
+  manufacturer models.
+
+  Variant leads for pass 4, not created here: "MoYu RS3M MagLev" (wiki: "uses MagLev
+  technology, having 2 repelling magnets that replicate springs... also very fast" — a MagLev-
+  vs-spring configuration of this same design); "MoYu RS3M 2020 UV" (wiki: "A slight update to
+  the RS3M 2020 adding UV coating and slightly stronger magnets... the cheapest mass-produced
+  UV-coated puzzle at 17.99 USD" — a coating/magnet-strength configuration).
+
+  "2021" is mentioned once, in passing, in the wiki's own "Super RS3M" entry ("An updated
+  version of the RS3M 2020/2021"), with no distinguishing design feature ever stated for a
+  2021-specific generation. Not promoted to its own model or `revisions[]` entry on the
+  strength of that single ambiguous mention; flagged here as an open question rather than
+  either fabricated or silently dropped.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "Retailer-listing floor (2021-01-14), not a manufacturer-stated launch date. The
+      product's own name ('RS3M 2020') plausibly reflects an actual 2020 launch year per MoYu's
+      naming convention, but no source found this pass makes a direct dated 'released in 2020'
+      statement about this specific model (contrast moyu-weilong-wr-m-2020, which the wiki
+      dates directly) — that inference is recorded here in prose, not adopted as the
+      attested date."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+    note: "'RS3M 2020' corroborated as a real MoYu retail name by an independent tier 2
+      retailer listing in addition to the wiki."
+  /description:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]

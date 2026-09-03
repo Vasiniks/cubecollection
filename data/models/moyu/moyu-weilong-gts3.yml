@@ -1,0 +1,67 @@
+# model: moyu-weilong-gts3
+# Pass 3 (model enumeration). A new spring-compression adjustment mechanism, sold "magnetic,
+# nonmagnetic, or with light magnets" (the wiki's own words) — magnet configuration is a
+# variant-level difference per DATA_MODEL §4.2's worked decision A, so "GTS3", "GTS3 M" (or
+# "3M"), and "GTS3 LM" ("light magnets") are recorded here as one model, not three. See
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-gts3
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong GTS3"
+aliases:
+  - "MoYu WeiLong GTS3/3M/3LM"
+scope_class: core
+generation:
+  label: "GTS3"
+  ordinal: 5
+  basis: manufacturer_declared
+released:
+  value: "2018"
+  precision: year
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Released May-September 2018, these cubes
+  feature a new system in which it is possible to easily change the spring compression and
+  therefore control how fast you want the cube to be... It combined the stability of the GTS2
+  and the flexibility of the GTS3 and came magnetic, nonmagnetic, or with light magnets." The
+  new user-adjustable spring-compression mechanism is the basis for treating this as a new
+  design generation. "3M" (full-strength magnets) and "3LM" ("light magnets") are magnet-
+  architecture options of this same design and are recorded as variants, not separate models,
+  per DATA_MODEL §4.2 worked decision A; TheCubicle's own catalogue
+  (thecubicle-com-moyu-3x3-collection-2021) independently corroborates this reading, listing
+  "MoYu WeiLong GTS3 3x3", "MoYu WeiLong GTS3 M 3x3", and "MoYu WeiLong GTS3 LM 3x3" as three
+  separate purchase options rather than three separate manufacturer lines.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source giving an explicit release-window statement ('May-September
+      2018'). Recorded at year precision with qualifier 'circa' rather than attempting a
+      between-range, since the source's own permitted claim type is approximate chronology, not
+      day-precision dating; the exact five-month window is preserved here in prose."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+    note: "'GTS3' corroborated as a real MoYu retail name by an independent tier 2 retailer
+      listing in addition to the wiki."
+  /description:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+    note: "The magnet-configuration-as-variant reading is corroborated by TheCubicle's own
+      catalogue selling GTS3, GTS3 M, and GTS3 LM as parallel, contemporaneous listings under
+      one product line."
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'combined the stability of the GTS2 and the flexibility of the GTS3' (read as
+      the WR, since the sentence's own second clause names 'GTS3' redundantly with itself — a
+      likely wiki wording error; taken here only as evidence of succession from GTS2, not as a
+      claim about the WR)."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-gts2
+    target_entity: model
+    note: "Wiki's own article ordering and naming ('GTS3' immediately following 'GTS2') plus
+      its comparison to 'the stability of the GTS2'."

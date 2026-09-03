@@ -1,0 +1,48 @@
+# model: moyu-aolong-gt
+# Pass 3 (model enumeration). A further AoLong revision with square (rather than hollow/round)
+# corners — a piece-geometry (mould) difference, not a configuration choice — poorly received
+# per the wiki. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-aolong-gt
+entity: model
+family_id: moyu-aolong
+manufacturer_id: moyu
+name: "MoYu AoLong GT"
+scope_class: core
+generation:
+  label: "GT"
+  ordinal: 3
+  basis: manufacturer_declared
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Considered a failure by many cubers, and the
+  Aolong V2 is recommended over it. Basically a worse Aolong V2 with square corners. It also had
+  unusual sticker shades which MoYu claimed was for the square corners." "Square corners" versus
+  AoLong V2's corner geometry is read as a piece/mould difference (DATA_MODEL §4.2's mould
+  test), not a sold configuration of the same shells. TheCubicle's early catalogue
+  (thecubicle-us-moyu-early-3x3-lines) corroborates the name's existence via image-filename
+  evidence on its own domain (moyuaolonggtbtn*.jpg), though no dated product-page capture
+  specific to AoLong GT was found in that source's excerpt.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    note: "'GT' is MoYu's own retail product name, but only the wiki (tier 3) and a bare
+      image-filename fragment (tier 2, not a full dated page) evidence it; no explicit
+      manufacturer generation-ordinal statement was found."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu, thecubicle-us-moyu-early-3x3-lines]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No dated statement or retailer-capture floor specific to
+      AoLong GT was located this pass."
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki frames GT as a further, worse revision following V2 ('the Aolong V2 is
+      recommended over it'), with a stated piece-geometry difference (square corners)."
+relationships:
+  - type: succeeds
+    target: moyu-aolong-v2
+    target_entity: model
+    note: "Wiki narrative places GT after V2 in the family's history, as a lesser-regarded
+      further revision."

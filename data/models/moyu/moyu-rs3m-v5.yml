@@ -1,0 +1,59 @@
+# model: moyu-rs3m-v5
+# Pass 3 (model enumeration). A clear model boundary: the wiki states this generation "returns
+# back to the original Super V1 split-piece design" — a direct piece-construction (mould)
+# reversal from Super V2's capped design, i.e. a distinct mould from its immediate predecessor.
+# Its several adjustment-system/coating configurations are recorded as variants of this one
+# model. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-rs3m-v5
+entity: model
+family_id: moyu-rs3m
+manufacturer_id: moyu
+name: "MoYu RS3M V5"
+aliases:
+  - "MoYu RS3M V5 Standard/DAS/DAS with Robot/MagLev/Ballcore UV"
+scope_class: core
+generation:
+  label: "V5"
+  ordinal: 4
+  basis: manufacturer_declared
+released:
+  value: "2023"
+  precision: year
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The fifth version of the RS3M lineup of
+  cubes, released in late 2023. The cube returns back to the original Super V1 split-piece
+  design, but borrowing some elements of the WeiLong WRM V9. It comes with either a spring, a
+  spring-and-ratchet system with either a spring or maglev, and in the UV version, a
+  core-magnetic system. This cube retails at 8.99, 9.99, 12.99, 15.99, 17.99, and 24.99 for
+  each respective version." The return to a split-piece design (versus Super V2's capped
+  design) is read as a distinct mould/piece-construction difference from the immediately
+  preceding model. "Standard", "DAS", "DAS with Robot", "MagLev", and "Ballcore UV" name six
+  price points reflecting adjustment-system, MagLev, and coating/core-magnet differences,
+  recorded as variants of this one model per DATA_MODEL §4.2, not six separate models.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source, direct statement ('released in late 2023'). Recorded at year
+      precision with qualifier 'circa'."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No tier 1-2 corroboration was found this pass for 'RS3M V5' as a MoYu retail name;
+      single tier 3 source."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'The fifth version of the RS3M lineup of cubes... returns back to the original
+      Super V1 split-piece design', naming its place in the lineage directly."
+relationships:
+  - type: succeeds
+    target: moyu-rs3m-super-v2
+    target_entity: model
+    note: "Wiki's own 'fifth version of the RS3M lineup' places this immediately after Super
+      RS3M V2 (its own 'fourth version') in the family's chronology."

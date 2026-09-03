@@ -1,0 +1,63 @@
+# model: moyu-aolong-v2
+# Pass 3 (model enumeration). A documented plastic/mould revision of AoLong, made mid-2014 in
+# response to a competitive incident (a corner-twist DNF at a Feliks Zemdegs world-record
+# attempt). Recorded as a new model rather than a variant of moyu-aolong-original: the wiki
+# frames it as intended to change piece behaviour (reduce corner twists), and the first
+# production batch used a different plastic outright before MoYu corrected course — a tooling/
+# material change to the underlying design, not a configuration choice offered alongside the
+# original at assembly. See DATA_MODEL §4.2 worked decision B and
+# research/qc/pass3-agent-a-moyu.md.
+id: moyu-aolong-v2
+entity: model
+family_id: moyu-aolong
+manufacturer_id: moyu
+name: "MoYu AoLong V2"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+released:
+  value: "2014-07"
+  precision: month
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "The MoYu AoLong V2 is an updated version of
+  the original MoYu AoLong. It was intended to reduce corner twists after Feliks Zemdegs
+  received a DNF on a would-be world record due to a corner twist. However, 'bad' Aolongs exist
+  due to the V2 controversy in July 2014. MoYu decided to produce the first batch of Aolong V2s
+  with a different plastic while discontinuing the V1. Once everyone noticed how poor the
+  performance was on the new cubes, MoYu changed the plastic on all new V2s." TheCubicle's own
+  full product page, "Cubicle AoLong V2" (thecubicle-us-moyu-early-3x3-lines, captured
+  2015-09-18), independently confirms the product as "made by MoYu" ("Original puzzle made by
+  MoYu") at 57.0mm — a later capture than the original 2014 launch, evidencing continued sale
+  rather than the launch itself.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Tier 3 source; permitted claim type is 'approximate chronology' per this source's
+      own reliability_note, so recorded at month precision ('July 2014') rather than the day
+      precision the wiki's own prose implies. The wiki dates the V2 controversy, not
+      necessarily the exact product-launch day; read as approximately concurrent."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-us-moyu-early-3x3-lines]
+    note: "'V2' is MoYu's own retail product name (TheCubicle's page title is literally
+      'Cubicle AoLong V2'), corroborated by two independent sources at different tiers."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu, thecubicle-us-moyu-early-3x3-lines]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'an updated version of the original MoYu AoLong', with a stated design intent
+      (reduce corner twists) and a documented plastic/mould change, distinct from a mere
+      configuration change."
+relationships:
+  - type: succeeds
+    target: moyu-aolong-original
+    target_entity: model
+    note: "Wiki: 'an updated version of the original MoYu AoLong', with a stated design intent
+      (reduce corner twists) distinct from a mere configuration change."

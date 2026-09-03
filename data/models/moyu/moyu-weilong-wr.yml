@@ -1,0 +1,63 @@
+# model: moyu-weilong-wr
+# Pass 3 (model enumeration). HARD CASE resolved: "WR" and "WR M" are recorded as ONE model.
+# The wiki describes the design change as "a GTS3 without ridges" (a piece-geometry change from
+# GTS3, sufficient for a new model), then separately notes magnet strength ("the same as the
+# GTS3 LM") as the only difference from the non-magnetic version — magnet architecture is a
+# variant-level difference per DATA_MODEL §4.2's materiality test, not a mould/mechanism change.
+# "WR M" is therefore NOT created as its own model here; it belongs at variant level (pass 4)
+# under this model. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-weilong-wr
+entity: model
+family_id: moyu-weilong
+manufacturer_id: moyu
+name: "MoYu WeiLong WR"
+aliases:
+  - "MoYu WeiLong WR/WR M"
+scope_class: core
+generation:
+  label: "WR"
+  ordinal: 6
+  basis: manufacturer_declared
+released:
+  value: "2019"
+  precision: year
+  qualifier: circa
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "Released on 4/3/2019, is a GTS3 without
+  ridges. The magnets were weaker, the same as the GTS3 LM. It was also widely popular and
+  considered one of the best speedcubes, but many cubers complained that the magnets were just
+  a tad too weak." "Without ridges" is a piece-geometry difference from GTS3, the basis for a
+  new model; the magnet-strength comparison to GTS3 LM is a configuration-level observation, not
+  a second mould. TheCubicle's own catalogue (thecubicle-com-moyu-3x3-collection-2021, captured
+  2021-01-14) lists both "MoYu WeiLong WR 3x3" (non-magnetic) and "MoYu WeiLong WR M 3x3"
+  (magnetic) as parallel, contemporaneous options of the same product line, corroborating the
+  variant-level reading. "WR M" is recorded here in `aliases` and description only; it is not a
+  separate model record.
+status: drafted
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "The wiki's own date string '4/3/2019' is ambiguous between day-month and month-day
+      reading (April 3 vs. March 4), and this source's own reliability_note forbids relying on
+      it for day-precision dates. Recorded at year precision only; the exact day is not
+      attested."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+    note: "'WR' corroborated as a real MoYu retail name by an independent tier 2 retailer
+      listing of the non-magnetic 'MoYu WeiLong WR 3x3'."
+  /description:
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-com-moyu-3x3-collection-2021]
+    note: "The WR/WR-M-as-one-model reading rests on the wiki's own framing (magnets are the
+      only stated difference) plus TheCubicle's parallel-listing corroboration."
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'a GTS3 without ridges', a direct comparative/succession statement."
+relationships:
+  - type: succeeds
+    target: moyu-weilong-gts3
+    target_entity: model
+    note: "Wiki: 'a GTS3 without ridges' — a stated piece-geometry difference from GTS3."
