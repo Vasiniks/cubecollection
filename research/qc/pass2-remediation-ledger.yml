@@ -255,7 +255,7 @@ issues:
 
   - id: S6
     severity: medium
-    status: open
+    status: resolved
     title: "9 wholly non-WCA families will need scope_class + tier 1-3 source at Pass 3"
     category: scope-policy
     affected_records: >-
@@ -273,6 +273,17 @@ issues:
       to be an ordinary WCA-format 3x3, so rule 15 never applied there. The remaining item is the
       human policy decision on conditional admission for the 8 genuinely non-WCA families, which
       is a Pass 3/4 scope call rather than an evidence gap - each already cites a tier-2 source.
+
+      RESOLVED 2026-09-03. The conditional-admission policy is decided and recorded in
+      research/qc/pass3-admission-policy.md, binding for Pass 3. Key decisions: (1) evidence
+      requirements are separated by claim class - model existence needs one tier 1-3 source,
+      specifications need tier 1-2, and release dates need an explicit dated statement, never a
+      crawl timestamp or an "Added:" field; (2) scope_class conditional requires a justification
+      stating historical or collector SIGNIFICANCE, not merely that the puzzle is unusual;
+      (3) reference_only is the correct home for a real product with no historical weight,
+      rather than inventing significance for it; (4) a model may be admitted on existence
+      evidence alone, with date and specs simply left unset - an undated model is honest, an
+      invented date is a defect.
     confidence: high
     downstream_impact: "mf8-crazy-3x3x3 will hard-fail validation at Pass 3."
     owner: main
