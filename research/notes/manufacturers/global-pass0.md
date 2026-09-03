@@ -163,3 +163,63 @@ Not yet checked: whether GAN's own smart-cube line (referenced only in passing i
 `thecubicle.yml`'s existing notes, "GAN ROBOT"/Bluetooth timer) needs its own smart-product
 identity work — deferred, since GAN is already canonicalised as a manufacturer and any smart
 sub-line is pass 2's concern (family/model), not a new pass-1 identity.
+
+---
+
+## Addendum 2 — long-tail sweep, MoreTry discovery, session close (2026-09-02)
+
+Continuing the same session. Summary of the rest of the pass:
+
+**Product-line traps confirmed with direct evidence, not slug adjacency.** Valk, MGC, WeiLong,
+TangLong, and Tornado were re-confirmed against retailer product titles and manufacturer-owned
+pages rather than resting on the collection-slug adjacency the original pass-0 brief used — see
+the Guhong finding above for why adjacency alone was not trustworthy.
+
+**HuDong resolved as a FanXin line, with an unresolved internal contradiction preserved.**
+TheCubicle's own product page for "HuDong Light 3x3" contradicts itself: title and prose say
+"FanXin HuDong" / "FanXin hardware", but the same page's structured "Manufacturer" spec field
+reads "HuDong" alone. Recorded as a FanXin product line (the more informative reading) with the
+contradiction flagged rather than silently resolved.
+
+**A second PiCube-shaped service found: SAOCube.** Named and credited across DaYan, MoreTry,
+MoYu, and QiYi/X-Man products at TheCubicle, the same "named third-party mod" pattern as PiCube.
+One open question left deliberately unresolved: an apparently own-branded "SAOCube V56" 3x3 that
+doesn't fit a pure-service reading and has no populated product description yet.
+
+**MoreTry — a real, substantial manufacturer missing from the original two-retailer sweep
+entirely.** 24 3x3 products plus an own-branded lubricant line at TheCubicle, independently named
+on the Speedsolving wiki's manufacturer list, found only by following a product-naming lead
+surfaced while investigating SAOCube. This is the clearest evidence this pass produced that the
+pass-0 collection-URL sweep, while high-recall, is not exhaustive even at a single English-
+language retailer — a manufacturer can be filed under a manufacturer-filter URL that was never
+enumerated because no corresponding top-level collection page existed to sweep.
+
+**Shape-mod / non-3x3 specialists canonicalised anyway.** Ninja (Ghost Cube), VeryPuzzle (Clover/
+Geranium/Tuttminx shape mods and Minx+), HelloCube (Gear/Mirror/Flat Cube), and Calvin's Puzzle
+(cuboids and shape mods) are all real, distinct manufacturers with essentially no WCA-legal 3x3
+product seen this pass. Canonicalised per the "include broadly, decide scope later" instruction
+rather than excluded for being out of core scope — each would need its own `scope_class:
+conditional` justification at pass 2/4 if a specific product is ever admitted. "Geranium Puzzles"
+resolved as a VeryPuzzle sub-line in the process (every product under that name still carries the
+"VeryPuzzle" prefix).
+
+**Chinese-language discovery, second round.** GuoGuan (国冠), MoJue (魔爵), and five further names
+MoYu's own site lists alongside itself are corroborated by general Chinese-language search as
+brands "built by MoYu Culture" — ruling out the "independent company" reading, but not resolving
+sub_brand vs. product-line for any individual name (no independent storefront was found for
+GuoGuan specifically on a targeted search). Left open rather than guessed.
+
+**WebSearch budget exhausted mid-session.** This session's web-search allowance (200 calls) was
+used up partway through the long-tail sweep. The remainder of the untouched candidates (Vin Cube,
+Tingman, Kanyon, Celeritas, The Yoo Cubes, Zepuzzles, LBL Designs, Puzzle Pals, Swiftcubing
+Designs, Cubing GG, AJ, Lee, HeShu, MoHuanShouSu, SenHuan, CubeLab, StuCube) were checked as far
+as WebFetch and wayback allowed (individual Speedsolving wiki pages, TheCubicle manufacturer
+filters) and, where nothing was found, annotated in the candidate file with what each specifically
+needs rather than left bare — a session that resumes web search should start there.
+
+**Net this session:** 19 new manufacturer records (rubiks, speedcubeshop, giiker, particula,
+xinlexin, guojia, kungfu, haitun, ninja, verypuzzle, hellocube, saocube, moretry, zcube,
+cube4you, calvins-puzzle — plus fanxin/qj canonicalised from the earlier handoff's remaining
+queue), 24 new sources, and five structural findings (Guhong closed, UniCube/Supernova/Cosmic
+resolved, HuDong resolved, Geranium Puzzles resolved, MoreTry discovered) written up at the point
+each was established.

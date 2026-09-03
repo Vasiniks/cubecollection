@@ -17,7 +17,12 @@ scope: >
   canonicalisation. Recall first; identity resolution is the next step.
 
 # ---------------------------------------------------------------- already canonical
-already_canonical: [gan, monster-go, swift-block, thecubicle, picube, cubicle-labs, moyu, mfjs]
+already_canonical: [gan, monster-go, swift-block, thecubicle, picube, cubicle-labs, moyu, mfjs,
+  rubiks, speedcubeshop, giiker, particula, xinlexin, guojia, kungfu, haitun, ninja, verypuzzle,
+  hellocube, saocube, moretry, zcube, cube4you, calvins-puzzle, fanxin, qj]
+# giiker/particula are smart-cube makers (a named blind spot in the original brief, now
+# substantially closed — see global-pass0.md addendum). xinlexin/guojia are Chinese-language
+# discoveries invisible to both English-language retailer sweeps.
 
 # ---------------------------------------------------------------- high confidence: real
 # manufacturers, seen at BOTH retailers, and named in the project seed list
@@ -201,7 +206,11 @@ long_tail_candidates:
         see data/manufacturers/diansheng.yml notes). No manufacturer record created; belongs to
         pass 2 as a family under diansheng. Smart-cube companies remain a named blind spot more
         broadly — this only resolves the MsCube name specifically." }
-  - { name: "Cube4You",     slugs: [cube4you], note: "Historical; archived domain cube4you.com has captures." }
+  - { name: "Cube4You",     slugs: [cube4you],
+      status: "CANONICALISED as data/manufacturers/cube4you.yml, kind: manufacturer at
+        `drafted`/uncertain (single tier 4 wiki source, founded circa 2007, China). Still
+        operating a storefront within the archive window (2019-2022 captures) but its later
+        product range shifted toward 3D-printed novelty puzzles rather than WCA-legal 3x3s." }
   - { name: "CubeLab",      slugs: [cubelab], note: "CHECKED, not canonicalised: no
       'manufacturer_cubelab' filter exists at TheCubicle as of this pass. Needs a different
       lead (own domain, or a hit at another retailer) before this can be resolved either way." }
@@ -215,7 +224,11 @@ long_tail_candidates:
         `drafted`/uncertain. Country left explicitly unknown (internally conflicting HK/mainland
         China signal in the one source found). Mostly non-WCA shape mods and cuboids; 3x3
         relevance for a specific product is a pass 2/4 scope_class question." }
-  - { name: "ZCube",        slugs: [zcube] }
+  - { name: "ZCube",        slugs: [zcube],
+      status: "CANONICALISED as data/manufacturers/zcube.yml, kind: manufacturer at
+        `drafted`/uncertain (single tier 4 wiki source). Documented as a repeat rebrander of
+        QiYi products (e.g. Z Carbon Fiber 3x3 = a restickered QiYi Warrior W) — a rebrand_of
+        lead for pass 2/4, not actioned in this register." }
   - { name: "SaoCube",      slugs: [saocube],
       status: "CANONICALISED as data/manufacturers/saocube.yml, kind: service at
         `drafted`/uncertain — the same 'named mod credited across many manufacturers'
@@ -283,6 +296,50 @@ long_tail_candidates:
   - { name: "AJ",           slugs: [aj] }
   - { name: "Lee",          slugs: [lee] }
   - { name: "Max",          slugs: [max, max-lubes, max-lube-system], note: "Almost certainly a lubricant brand, not a cube manufacturer." }
+
+  # ---- Untouched this session (2026-09-02) — checked against Speedsolving wiki individual
+  # pages (no capture existed for most) and against WebSearch before the session's search
+  # budget was exhausted. Each needs one of the leads below before a record can be created;
+  # "not found this session" is not evidence of non-existence.
+  - { name: "MoHuanShouSu", slugs: [mohuan-shousu], note: "Chinese name 魔幻手速, per MoYu's own
+      site (moyucube-official-home-2022) grouped among names MoYu itself lists — see the MoYu
+      sub-brand addendum above. Needs the same per-brand independent-storefront check already
+      done (and inconclusive) for GuoGuan before sub_brand vs. product-line can be decided." }
+  - { name: "SenHuan",      slugs: [senhuan], note: "Chinese name 森幻, same MoYu-affiliated
+      group as MoHuanShouSu above; same open question." }
+  - { name: "HeShu",        slugs: [heshu], note: "Appears on the Speedsolving wiki's aggregate
+      'List of manufactures' page (a name-only mention, no individual page found/archived this
+      session) — real enough to keep on the list, too thin to canonicalise from that alone.
+      Needs an individual wiki page, retailer manufacturer-filter page, or native-name search." }
+  - { name: "Vin Cube",     slugs: [vin-cube], note: "No Speedsolving wiki page located (wayback
+      query failed/timed out rather than confirming absence — see the tooling note in
+      global-pass0.md; retry in a future session rather than treating as resolved)." }
+  - { name: "Tingman",      slugs: [tingman], note: "No individual wiki page or retailer
+      manufacturer-filter checked yet this session." }
+  - { name: "Kanyon",       slugs: [kanyon], note: "Same as Tingman — unchecked." }
+  - { name: "Celeritas",    slugs: [celeritas], note: "Same as Tingman — unchecked." }
+  - { name: "The Yoo Cubes", slugs: [the-yoo-cubes], note: "Name suggests an individual
+      designer/small-batch shape-mod maker (compare LBL Designs, Puzzle Pals, Swiftcubing
+      Designs, Cubing GG below) rather than a mainstream manufacturer — plausible but
+      unverified; would need a TheCubicle/SpeedCubeShop manufacturer-filter check or a
+      dedicated storefront." }
+  - { name: "Zepuzzles",    slugs: [zepuzzles], note: "Same character as The Yoo Cubes —
+      unverified." }
+  - { name: "LBL Designs",  slugs: [lbl-designs], note: "Same character as The Yoo Cubes —
+      unverified." }
+  - { name: "Puzzle Pals",  slugs: [puzzle-pals], note: "Same character as The Yoo Cubes —
+      unverified." }
+  - { name: "Swiftcubing Designs", slugs: [swiftcubing-designs], note: "Same character as The
+      Yoo Cubes — unverified." }
+  - { name: "Cubing GG",    slugs: [cubing-gg], note: "Same character as The Yoo Cubes —
+      unverified; 'GG' suggests a possible individual-creator or small YouTube-affiliated
+      brand rather than a manufacturer, but this is a guess, not a finding." }
+  - { name: "AJ",           slugs: [aj], note: "Single-token name, high risk of being a
+      speedcuber's initials on a signature edition rather than a manufacturer (compare
+      TheCubicle's 'Signature Series' pattern on data/manufacturers/thecubicle.yml) — needs a
+      manufacturer-filter or product-description check before any classification." }
+  - { name: "Lee",          slugs: [lee], note: "Same caution as AJ — a common surname, high
+      risk of being a signature-edition credit rather than a manufacturer name." }
 
 # ---------------------------------------------------------------- service / modifier candidates
 service_candidates:
