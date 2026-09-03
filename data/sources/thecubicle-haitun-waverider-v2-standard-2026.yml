@@ -1,0 +1,33 @@
+# source: thecubicle-haitun-waverider-v2-standard-2026
+# TheCubicle product page for the "HaiTun Waverider V2 3x3 (Standard)," archived 2026-02-27 —
+# directly states this is HaiTun's second generation, confirming `haitun-waverider` as one
+# family spanning V1 and V2.
+id: thecubicle-haitun-waverider-v2-standard-2026
+entity: source
+kind: retailer
+title: "HaiTun Waverider V2 3x3 (Standard) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260227065516id_/https://www.thecubicle.com/products/haitun-waverider-3x3-v2-standard"
+excerpt: |-
+  Product Description: "Experience next-level speedcubing performance with the HaiTun
+  Waverider V2 3x3 (Standard), the highly anticipated second generation from boutique
+  manufacturer HaiTun. Designed for the discerning cuber, the Waverider V2 brings cutting-edge
+  adjustability and magnetic precision into one premium package... Micro-Numerical Dual
+  Adjustment: Enjoy 64 unique tactile combinations with 8 levels of spring compression and 8
+  levels of center tension... Advanced 26-Point Core: A 3D accelerated magnetic positioning
+  system features up to 26 core magnets and a total of 94 configurable magnets..." Structured
+  "Specifications": "Manufacturer: HaiTun / Type: 3x3 Speed Cubes / Added: 2026-02-03 / Gross
+  Weight: 280g / Magnets: Magnetic."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Directly states this is 'the highly anticipated second generation' — the basis for
+  treating V1 and V2 as one persisting family (`haitun-waverider`) rather than two. Also
+  independently describes HaiTun as a 'boutique manufacturer', consistent with pass 1's
+  'emerging brand' framing."
+status: sourced

@@ -1,0 +1,56 @@
+# family: haitun-waverider
+# Pass 2 (family enumeration). HaiTun's only found 3x3 line, and — on this pass's evidence —
+# its sole product line at all. A young, actively developed flagship line spanning two
+# retailer-documented generations (V1, V2) under one persisting name, reaching from early 2024
+# to mid-2026 captures.
+
+id: haitun-waverider
+entity: family
+manufacturer_id: haitun
+name: "HaiTun Waverider"
+aliases:
+  - "Haitun Cube 3x3"
+introduced:
+  value: "2024-01"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  TheCubicle's own description of the first generation: "The Waverider V1 is a new 3x3
+  speedcube by the emerging brand Haitun Cube" (thecubicle-haitun-waverider-v1-2024, Added
+  2024-01-17), sold in at least Flagship, Standard, and a Limited Edition configuration (plus
+  a dedicated adjustment tool accessory) — pass-3/4 configuration material, not enumerated
+  further here. A second generation directly and explicitly succeeds it: "the HaiTun Waverider
+  V2 3x3 (Standard), the highly anticipated **second generation** from boutique manufacturer
+  HaiTun" (thecubicle-haitun-waverider-v2-standard-2026, Added 2026-02-03), itself sold across
+  at least Standard, Pioneer, Flagship, and an "Ultimate" top tier — "the crown jewel of the
+  Waverider V2 series" per its own page (thecubicle-haitun-waverider-v2-ultimate-2026, Added
+  2026-03-07). Both generations are explicitly described as HaiTun's own design ("by the
+  emerging brand Haitun Cube"; "Crafted by boutique manufacturer HaiTun") — no rebrand or
+  aftermarket claim was found for any HaiTun product this pass, unlike this session's CubeStyle
+  finding.
+
+  No further HaiTun product line beyond Waverider was found this pass — on current evidence,
+  Waverider appears to be HaiTun's entire product range, consistent with `data/manufacturers/
+  haitun.yml`'s own framing of this as "a genuinely new... entrant" rather than a historical
+  brand with a wider back-catalogue.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-haitun-waverider-v1-2024]
+    note: "TheCubicle's own structured spec-table 'Added: 2024-01-17' field, truncated to
+      month precision. Not the suspect '2018-09-11' migration-artefact date flagged elsewhere
+      in this register — a distinct, plausible, and (unlike most products in this register)
+      genuinely recent per-product date, consistent with the source's own 'emerging brand'
+      framing."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-haitun-waverider-v1-2024, thecubicle-haitun-waverider-v2-ultimate-2026]
+    note: "Both generations carry an explicit 'Flagship' configuration tier in the retailer's
+      own naming, and V2's own copy calls its own top tier 'a new benchmark for flagship 3x3
+      speedcubes' — direct retailer framing, not an inference."
+  /description:
+    confidence: reported
+    sources: [thecubicle-haitun-waverider-v1-2024, thecubicle-haitun-waverider-v2-standard-2026, thecubicle-haitun-waverider-v2-ultimate-2026]

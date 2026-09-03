@@ -1,0 +1,74 @@
+# family: cubestyle-3x3
+# Pass 2 (family enumeration). CubeStyle's plain, "FangGe sub-branded" base 3x3 — kept
+# separate from the Carbon Fiber and Hollow Sticker decorated lines found under the same
+# manufacturer name this pass, which TheCubicle's own copy identifies as restickered QiYi
+# Warrior W / YJ GuanLong base cubes (a DATA_MODEL §4.3 aftermarket pattern, not a CubeStyle
+# design — see this pass's log for the full reasoning; not represented as a family here).
+
+id: cubestyle-3x3
+entity: family
+manufacturer_id: cubestyle
+name: "CubeStyle 3x3"
+aliases: []
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  TheCubicle's own description (thecubicle-cubestyle-3x3, already in the archive from pass 1):
+  "The CubeStyle 3x3 is a FangGe sub-branded 3x3 that draws inspiration from other modern 3x3
+  cube mechanisms, yet it strikes a good balance between affordability and performance." Unlike
+  CubeStyle's Carbon Fiber and Hollow Sticker decorated 3x3 listings (checked this pass, see
+  below), this plain listing's own description does **not** name a specific base cube model —
+  it describes drawing "inspiration from" mechanisms generally, not restickering one named
+  product, so it is treated as CubeStyle/FangGe's own budget design rather than a documented
+  aftermarket product, and given its own family.
+
+  **What "FangGe" is remains an open question**, unresolved by this pass on the same terms
+  pass 1 left it in `data/manufacturers/cubestyle.yml`: possibly a shorthand for "MoFangGe"
+  (QiYi's own historical in-house name), possibly an unidentified separate manufacturer. Not
+  resolved further here — no `parent_id` is implied by this family record.
+
+  **Two further CubeStyle-named 3x3 listings were checked this pass and found to be explicit
+  aftermarket resticker products, not CubeStyle designs — deliberately excluded from this
+  family:** "CubeStyle Carbon Fiber 3x3" ("The base cube model ... is the QiYi Warrior W 3x3
+  ... and the YJ GuanLong for the Phantom (Stickerless Pink) version",
+  thecubicle-cubestyle-carbon-fiber-3x3-2020) and "CubeStyle [Hollow Sticker] 3x3" ("The base
+  cube model for the CubeStyle 3x3 is the YJ GuanLong 3x3 (Warrior W for the Stickerless
+  Bright variant)", thecubicle-cubestyle-hollow-sticker-3x3-2020). Both name a specific base
+  manufacturer's model directly — per DATA_MODEL §4.3, these belong under QiYi's Warrior W and
+  YJ's GuanLong model trees respectively, with a `modified_from` relationship and a `service`
+  block naming CubeStyle as the servicer, not under a CubeStyle family. Not actioned further
+  here (out of this pass's write lane and scope — pass 3/4 territory for QiYi and YJ, neither
+  of which is in my assigned queue); flagged as a cross-manufacturer lead in this pass's log.
+
+  A wider range of CubeStyle-named non-3x3x3 products (2x2, 4x4, 5x5, Pyraminx, Megaminx,
+  Skewb, Square-1, Axis Cube, Fisher Cube, Windmill Cube, Kilominx, Twist Cube, Penrose 3x3 —
+  a shape mod despite the "3x3" in its own name, 3x3x2/Constrained 3x3x2) were found in the
+  same product-slug sweep and are out of this archive's 3x3x3 scope entirely, not evaluated
+  further.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-cubestyle-3x3]
+    note: "Earliest capture found this pass under this exact URL is 2024-05-30, but the
+      product's customer-review volume (18 reviews) at that capture implies a considerably
+      earlier real launch; no earlier capture of this specific product page was located this
+      pass. The suspect 'Added: 2018-09-11' spec-table field, present on this and every other
+      CubeStyle 3x3-shaped listing checked, is deliberately not used — see
+      thecubicle-mojue-m3-2020's reliability_note for the recurring-date pattern found across
+      many unrelated products in this register. Recorded at the weakest defensible year,
+      `circa 2020`, splitting the difference between the suspect date and the confirmed
+      capture."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-cubestyle-3x3]
+    note: "Retailer's own description explicitly frames it around 'affordability'; customer
+      reviews price it around $6 and compare it to the Valk 3 and Warrior W as a budget
+      alternative."
+  /description:
+    confidence: reported
+    sources: [thecubicle-cubestyle-3x3, thecubicle-cubestyle-carbon-fiber-3x3-2020, thecubicle-cubestyle-hollow-sticker-3x3-2020]

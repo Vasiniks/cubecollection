@@ -745,3 +745,306 @@ for any future thin/obscure manufacturer in this register.
 coordinator's note that this warning was propagated to Agent A.
 
 **Queue exhausted. Ready for reassignment.**
+
+# Third assignment (hellocube, newisland, cubestyle, cubetwist, haitun, ninja)
+
+Merged to main as `d9dc93c` before this section began; not re-litigated here. Continuing to
+append to this same file per the coordinator's instruction. This is the final unassigned pool
+per the coordinator's third-assignment message.
+
+## HelloCube — 0 families (scope exclusion, type (a))
+
+**Prior tested, did not hold.** The task brief flagged HelloCube as "likeliest to hold
+something real." Tested directly rather than assumed.
+
+**Method.** Pass 1's own manufacturer-filter source (`thecubicle-hellocube-manufacturer-
+filter-2021`, 4 products, all Gear Cube/shape-mod) was corroborated with a full product-slug
+prefix sweep at the same retailer (`npm run wayback -- prefix
+thecubicle.com/products/hellocube`, 11 URLs) and an **independent second retailer**
+(`npm run wayback -- prefix speedcubeshop.com/products/hellocube`, 17 URLs).
+
+**Finding.** Both retailers, independently, carry only Gear Cube mechanisms under the
+HelloCube name: 2x2 Gear Cube/Gear Shift, 3x3 Gear Cube, 3x3 Gear Cube Extreme (a "different
+kind of gear cube mechanism" per its own description, still explicitly "Type: Gear Cubes"),
+2x2 Mirror Cube, Flat 2x2. A Gear Cube forces synchronised turning through embedded gearing —
+a fundamentally different move mechanic from a 3x3x3, not merely a cosmetic shape mod of one,
+and both retailers categorise it as its own type, separate from their own "3x3" categories.
+
+**Zero families created — type (a), scope exclusion**, on stronger evidence than most
+zero-results in this register: two independent retailers, several products each, no exception
+found. No `hellocube` family record was created.
+
+**Rejected:** every HelloCube product found (all Gear Cube/Mirror Cube/Flat Cube) — scope
+exclusion, not a model/variant-boundary call.
+
+**Unresolved questions:** none of substance — this is a clean result across independent
+sources, not a thin one.
+
+**Sources added:** `speedcubeshop-hellocube-gear-cube-2019`,
+`thecubicle-hellocube-gear-cube-extreme-2022`.
+
+**Confidence:** `confirmed`-adjacent for the scope exclusion itself (two independent tier 2
+retailers, mutually consistent, no exception across 11 + 17 product URLs).
+
+---
+## Newisland — 2 families
+
+**Prior tested, partially held.** The task brief flagged Newisland as "likeliest to hold
+something real" — confirmed: two named, in-scope 3x3 lines, both standard-shaped (56.5-57mm),
+neither a scope exclusion.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/newisland` (5 URLs) found a
+second generation of the already-documented Lightning line (V2) plus a wholly undocumented
+second product line, Phoenix. A SpeedCubeShop prefix sweep for this manufacturer returned no
+captures — not treated as evidence of absence, simply a retailer this brand does not appear
+to have reached.
+
+**Candidates considered:** Newisland Lightning (+ V2), Newisland Phoenix.
+
+**Accepted (2):** `newisland-lightning` (spanning both generations under one persisting name —
+TheCubicle's own V2 description is near-identical to the original's, the same "one family,
+minor wording change, no stated mechanism change" pattern used elsewhere this register),
+`newisland-phoenix` (a separately-named line, no stated relationship to Lightning).
+
+**Rebrand suspicion carried forward, not resolved.** `data/manufacturers/newisland.yml`
+already flags a QiYi Thunderclap rebrand suspicion from customer-review opinion alone (tier
+4-equivalent, insufficient for DATA_MODEL rule 17). This pass found the Lightning V2 page's
+own description states it is "marketed **and created exclusively** by Newisland" — some
+retailer-level counter-evidence, but still promotional copy, not a documented supply
+relationship. **Left exactly as open as pass 1 left it**, recorded in `newisland-lightning.
+yml`'s own description rather than resolved either way. Per the coordinator's framing, this
+would be a type (b) finding (aftermarket/rebrand) *if* confirmed — it is not confirmed, so no
+`kind` miscategorisation flag is warranted at this pass; simply an open lead.
+
+**Rejected:** none — both found lines are in-scope, standard 3x3x3 products.
+
+**Unresolved questions:** the rebrand suspicion (above); whether Lightning V2 differs
+mechanically from V1 or is the same design with a revised accessory bundle (pass 3 question);
+exact introduction dates (capture-date evidence only, "Added: 2018-09-11" refused as usual).
+
+**Sources added:** `thecubicle-newisland-lightning-v2-2019`, `thecubicle-newisland-
+phoenix-2019`. `thecubicle-newisland-lightning` (pass 1, reused).
+
+**Confidence:** `reported` on `description`; `uncertain` on `introduced`/`positioning`
+throughout.
+
+---
+## CubeStyle — 1 family + a clean type (b) finding
+
+**A genuine second aftermarket/rebrand case, better-evidenced than Z-Cube's.** `npm run
+wayback -- prefix thecubicle.com/products/cubestyle` (72 URLs) found, alongside the
+already-known plain "CubeStyle 3x3", two further 3x3-shaped listings — "CubeStyle Carbon Fiber
+3x3" and "CubeStyle [Hollow Sticker] 3x3" — whose own TheCubicle descriptions **name their
+exact base cube models directly**: "The base cube model for the CubeStyle Carbon Fiber 3x3 is
+the QiYi Warrior W 3x3 ... and the YJ GuanLong for the Phantom (Stickerless Pink) version" and
+"The base cube model for the CubeStyle 3x3 is the YJ GuanLong 3x3 (Warrior W for the
+Stickerless Bright variant)." Unlike the Z-Cube case last batch (which rested on a single tier
+4 wiki claim), this is TheCubicle's own tier 2 structured product copy, stating the base model
+by name for two separate products.
+
+**Boundary reasoning.** Per DATA_MODEL §4.3, a restickered/recoated base cube sold under a
+trade name belongs under the **base manufacturer's own model tree** (QiYi's Warrior W; YJ's
+GuanLong) with a `modified_from` relationship and a `service` block naming the servicer
+(CubeStyle) — not under CubeStyle's own family tree. **No `cubestyle` family was created for
+either of these two products.** They are preserved as cross-manufacturer leads for whoever
+researches QiYi's Warrior W or YJ's GuanLong variant trees (neither manufacturer is in my
+assigned queue, and QiYi/YJ are both marked complete for pass 2 already).
+
+**The plain "CubeStyle 3x3" is different in kind and was kept as its own family.** Its own
+description ("draws inspiration from other modern 3x3 cube mechanisms") does not name one
+specific base model the way the decorated listings do — it reads as CubeStyle's/FangGe's own
+budget design, not a documented rebrand. **Accepted (1):** `cubestyle-3x3`.
+
+**The open "FangGe" question is not resolved this pass**, on the same terms
+`data/manufacturers/cubestyle.yml` already left it (a plausible but unconfirmed reading as
+"MoFangGe," QiYi's own historical in-house name) — recorded in `cubestyle-3x3.yml`'s own
+description, no `parent_id` implied.
+
+**Rejected:** CubeStyle 2x2, 4x4, 5x5, Pyraminx, Megaminx, Skewb, Square-1, Axis Cube, Fisher
+Cube, Windmill Cube, Kilominx, Twist Cube — out of 3x3x3 scope. "CubeStyle Penrose 3x3" and
+"CubeStyle Carbon Fiber Penrose 3x3" — despite "3x3" in their own names, these are shape mods
+(the same "Penrose" pattern already excluded for Z-Cube last batch), not fetched individually
+this pass given the consistent naming signal. "CubeStyle 3x3x2" / "Constrained 3x3x2" — a
+different shape, not a 3x3x3.
+
+**Unresolved questions:** the "FangGe" identity; exact introduction date for `cubestyle-3x3`
+(only a 2024 capture found despite 18 reviews implying an earlier real launch); whether the
+Carbon Fiber/Hollow Sticker products' base-cube attributions should prompt a `rebrand_of` or
+`modified_from` lead to be picked up specifically by QiYi's or YJ's next variant pass.
+
+**Sources added:** `thecubicle-cubestyle-carbon-fiber-3x3-2020`, `thecubicle-cubestyle-hollow-
+sticker-3x3-2020`. `thecubicle-cubestyle-3x3` (pass 1, reused).
+
+**Confidence:** `reported` on `description`/`positioning`; `uncertain` on `introduced`. The
+aftermarket finding itself is `reported`-to-`probable` — a single tier 2 source per product,
+directly stated rather than inferred, and internally consistent across two separate listings.
+
+---
+## CubeTwist — 0 families (scope exclusion, type (a) — the (b) prior did not hold)
+
+**Prior tested, did not hold.** The task brief flagged CubeTwist as a likely type (b)
+(aftermarket/rebrand) candidate on prior signal. Tested directly: no base-model-naming claim
+of the kind found for CubeStyle or Z-Cube was found anywhere in CubeTwist's catalogue. This is
+a clean type (a) scope exclusion instead.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/cubetwist` (40 URLs) enumerates
+CubeTwist's full found catalogue: Barrel Cube I/II, Double/Triple/Conjoined Cube variants,
+Mirror Blocks/Double Cube, Siamese Mirror Cube I/II, House Cube I/II/III, Star Cube,
+Inequilateral 3x3, Bandaged 3x3 DIY Kit, Bandaged 4x4/Pyraminx, Square-1/2, Oskar Gear 5x5,
+"Magic"/"Master Magic" (non-cube puzzles). Three of the most 3x3x3-adjacent-sounding products
+were fetched directly: **Star Cube** ("Type: Shape Mods", no base-model claim), **Inequilateral
+3x3** ("a 3x3 shape mod with unevenly-sized layers... Type: Shape Mods"), and **Bandaged 3x3 -
+DIY Kit** ("a non-tiled CubeTwist 3x3 with a full set of special colored tiles... to design
+just about any kind of bandaged 3x3" — CubeTwist's own base mould, no external base-model
+claim, filed under "DIY Kits" not "3x3"). None names another manufacturer's model the way
+CubeStyle's decorated 3x3s did.
+
+**Zero families created — type (a), scope exclusion.** Every CubeTwist product checked is
+either a shape mod (non-WCA-legal, no documented significance clearing RESEARCH_SPEC §2.2's
+bar) or a bandaged-cube accessory kit (a distinct, non-competitive puzzle category). No
+`cubetwist` family record was created.
+
+**A URL-reuse trap worth flagging explicitly, unrelated to the family question but
+important.** The product slug `cubetwist-conjoined-3x3` was found in the prefix sweep with
+only a single capture, dated 2024-03-04 — but that capture's own page title reads "3x3 Double
+Cube I" and its structured spec table states **"Manufacturer: Calvin's Puzzle"**, not
+CubeTwist at all. This URL almost certainly changed hands (a deleted CubeTwist product's
+Shopify handle reused for an unrelated Calvin's Puzzle product) rather than representing any
+CubeTwist/Calvin's Puzzle relationship. **Not actioned** — Calvin's Puzzle belongs to Agent A,
+not touched here — but flagged so nobody (on either side of this research effort) misreads
+this specific URL as CubeTwist evidence, or as a CubeTwist/Calvin's-Puzzle rebrand lead. This
+is also a general methodological caution: a bare product-slug prefix hit is not proof the slug
+still belongs to the manufacturer implied by its name; the page content must be checked.
+
+**Rejected:** every CubeTwist product enumerated — scope exclusion (shape mods/DIY accessory
+kits), not a model/variant-boundary call.
+
+**Unresolved questions:** none of substance for the zero-family conclusion itself; the
+`cubetwist-conjoined-3x3` URL-reuse question is closed (belongs to Calvin's Puzzle, not
+CubeTwist, not actioned by me).
+
+**Sources added:** `thecubicle-cubetwist-star-cube-2020`, `thecubicle-cubetwist-bandaged-
+3x3-diy-kit-2019`. `thecubicle-cubetwist-star-cube` (pass 1, not superseded, both retained).
+
+**Confidence:** `reported`-to-`probable` for the scope exclusion (single-retailer evidence,
+but consistent across every product type checked, with an explicit "Type" field on each).
+
+---
+## HaiTun — 1 family
+
+**Prior tested, held.** The task brief flagged HaiTun as "likeliest to hold something real" —
+confirmed, and this is the most substantial, cleanly-documented single family in this third
+assignment.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/haitun` (9 URLs) confirmed
+pass 1's own Waverider V1 finding and surfaced the full V2 generation (Standard, Pioneer,
+Flagship, Ultimate) plus a V1 Limited Edition and adjustment-tool accessory not previously
+documented.
+
+**Candidates considered:** HaiTun Waverider V1 (Flagship/Standard/Limited Edition), HaiTun
+Waverider V2 (Standard/Pioneer/Flagship/Ultimate).
+
+**Accepted (1):** `haitun-waverider` — one family across both generations. TheCubicle's own V2
+description states directly: "the highly anticipated **second generation** from boutique
+manufacturer HaiTun" — an explicit, unambiguous succession statement, the strongest of its
+kind found in this entire third assignment.
+
+**No aftermarket/rebrand pattern found** — both generations are described as HaiTun's own
+design ("by the emerging brand Haitun Cube"; "Crafted by boutique manufacturer HaiTun"),
+unlike this batch's CubeStyle finding. Positive evidence of originality, not merely an absence
+of a rebrand claim.
+
+**Rejected:** none — every HaiTun product found belongs cleanly to this one family.
+
+**Unresolved questions:** whether HaiTun has any product beyond Waverider (none found, but a
+young/thin brand with a correspondingly thin footprint at this one retailer); exact V1
+introduction date precision (month-level from a genuinely trustworthy "Added" field, a rare
+case in this register where that field was not the suspect recurring date).
+
+**Sources added:** `thecubicle-haitun-waverider-v2-standard-2026`, `thecubicle-haitun-
+waverider-v2-ultimate-2026`. `thecubicle-haitun-waverider-v1-2024` (pass 1, reused).
+
+**Confidence:** `reported` throughout (tier 2 retailer sources, mutually consistent, explicit
+succession language, nothing contradicting).
+
+---
+## Ninja — 0 families (scope exclusion, type (a) — the (b) prior did not hold)
+
+**Prior tested, did not hold.** The task brief flagged Ninja as a likely type (b)
+(aftermarket/rebrand) candidate on prior signal, alongside CubeTwist. Tested directly, same
+result as CubeTwist: no base-model-naming claim was found anywhere in Ninja's catalogue,
+across two independent retailers.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/ninja` (6 URLs: base Ghost
+Cube, Starry Sky variant, Unstickered variant) and, independently, `npm run wayback -- prefix
+speedcubeshop.com/products/ninja` (16 URLs, all the same single Ghost Cube listing with
+tracking-parameter variants). Both the base Ghost Cube and the Starry Sky decorated variant
+were fetched directly and checked specifically for a CubeStyle-style base-model attribution;
+neither makes one.
+
+**Finding.** "The Ninja Ghost Cube is a very challenging 3x3 shape mod" (base) / "a special
+3x3 Ghost Cube with a starry sky pattern printed on all 6 sides" (Starry Sky) — both
+"Type: Shape Mods" per TheCubicle's own field, no external manufacturer named. A Ghost Cube is
+a non-WCA-legal shape modification (the solved state is not a cube), with no documented
+historical or collector significance beyond generic novelty description found at either
+retailer — fails RESEARCH_SPEC §2.2's conditional-admission bar.
+
+**Zero families created — type (a), scope exclusion**, corroborated at two independent
+retailers with no exception. No `ninja` family record was created.
+
+**A "Ghost Hand" lead noted in pass 1 remains unactioned**, as pass 1 itself flagged — a
+separate manufacturer name, not investigated this pass (not in my assigned queue).
+
+**Rejected:** every Ninja product found (base, Starry Sky, Unstickered Ghost Cube) — scope
+exclusion.
+
+**Unresolved questions:** none of substance for the zero-family conclusion; "Ghost Hand"
+remains an open long-tail lead for whoever is assigned it.
+
+**Sources added:** `thecubicle-ninja-ghost-cube-2020`, `speedcubeshop-ninja-ghost-cube-2019`.
+
+**Confidence:** `confirmed`-adjacent for the scope exclusion (two independent tier 2 retailers,
+mutually consistent, no exception).
+
+---
+
+## Third assignment complete — summary
+
+All six final unassigned entities researched: `hellocube` (0 — type (a)), `newisland` (2),
+`cubestyle` (1, plus a documented type (b) finding excluded from the family count), `cubetwist`
+(0 — type (a), tested and rejected a (b) prior), `haitun` (1), `ninja` (0 — type (a), tested
+and rejected a (b) prior). **4 families across 6 manufacturers, 3 zero-family findings, all
+type (a) scope exclusions, and one genuine type (b) aftermarket finding (CubeStyle) that
+correctly produced fewer families than candidate products, not more.**
+
+**On the task brief's two-kind-of-zero framework:** all three zero-family results this batch
+(`hellocube`, `cubetwist`, `ninja`) are **type (a) scope exclusions** — non-3x3x3 mechanisms
+(Gear Cubes, shape mods, DIY bandaging kits), each corroborated across independent sources or
+multiple product checks. **No pure type (b) zero-family case occurred this batch** — CubeStyle
+produced a type (b) finding but the manufacturer itself still had one genuine family
+(`cubestyle-3x3`), so it was not a zero-family result. The two entities flagged as likeliest
+type (b) candidates (CubeTwist, Ninja) tested negative for that specific pattern and resolved
+as ordinary type (a) exclusions instead — the prior was worth testing but did not hold for
+either.
+
+**CubeStyle's finding is this session's clearest type (b) case**, better-evidenced than
+Z-Cube's (a direct tier 2 retailer statement naming the exact base models — QiYi Warrior W,
+YJ GuanLong — for two separate CubeStyle-branded products) rather than a single tier 4 wiki
+claim. Neither QiYi nor YJ's manufacturer record was touched; the finding is preserved as a
+cross-manufacturer lead in two new sources for whoever next works either brand's variant tree.
+
+**A methodological finding worth flagging on its own:** the `cubetwist-conjoined-3x3` URL
+slug was found, on its only capture, to actually belong to a completely different manufacturer
+(Calvin's Puzzle) that had since taken over the same product handle. Not acted on (Calvin's
+Puzzle is Agent A's), but recorded as a general caution: a product-slug prefix hit naming a
+manufacturer is not proof the current page content still belongs to that manufacturer — the
+page must be checked, not just the URL.
+
+**Sub-brand caution:** none of these six entities carry an existing sub-brand/parent
+relationship, so this specific caution did not apply this batch.
+
+**Sources added:** 10 new sources this batch, reusing 4 existing pass-1 sources rather than
+duplicating them.
+
+**Per the coordinator's instruction: this exhausts the entire unassigned pool. Stopping here
+and reporting back rather than looking for further work.**

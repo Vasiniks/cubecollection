@@ -1,0 +1,29 @@
+# source: thecubicle-haitun-waverider-v2-ultimate-2026
+# TheCubicle product page for the "HaiTun Waverider V2 3x3 (Ultimate)," archived 2026-06-16 —
+# the top tier of the V2 generation, confirming a Flagship/Standard/Pioneer/Ultimate
+# configuration spread within V2 alone.
+id: thecubicle-haitun-waverider-v2-ultimate-2026
+entity: source
+kind: retailer
+title: "HaiTun Waverider V2 3x3 (Ultimate) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/haitun-waverider-v2-3x3-ultimate"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260616201220id_/https://www.thecubicle.com/products/haitun-waverider-v2-3x3-ultimate"
+excerpt: |-
+  Product Description: "The HaiTun Waverider V2 3x3 (Ultimate) sets a new benchmark for
+  flagship 3x3 speedcubes. Crafted by boutique manufacturer HaiTun, the Ultimate is the crown
+  jewel of the Waverider V2 series, boasting a revolutionary magnet system with 94 magnets in
+  total, including a 20-magnet core and six integrated magnetic rings..." Structured
+  "Specifications": "Manufacturer: HaiTun / Type: 3x3 Speed Cubes / Added: 2026-03-07 / Gross
+  Weight: 282g / Magnets: Magnetic."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Explicitly calls this 'the crown jewel of the Waverider V2 series' — pass-3/4 material on
+  the configuration tier within V2, cited here only to support the family-level description of
+  an actively multi-tiered, currently-developing product line."
+status: sourced

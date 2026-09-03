@@ -1,0 +1,29 @@
+# source: speedcubeshop-hellocube-gear-cube-2019
+# SpeedCubeShop's own "HelloCube 3x3 Gear Cube" product page, archived 2019-08-25 — an
+# independent second retailer confirming HelloCube's product range is Gear Cube mechanisms,
+# not standard 3x3x3 speedcubes, corroborating TheCubicle's own manufacturer-filter finding
+# already in data/manufacturers/hellocube.yml.
+id: speedcubeshop-hellocube-gear-cube-2019
+entity: source
+kind: retailer
+title: "HelloCube 3x3 Gear Cube - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/hellocube-3x3-gear-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190825000000/https://speedcubeshop.com/products/hellocube-3x3-gear-cube"
+excerpt: |-
+  Product listing for "HelloCube 3x3 Gear Cube" under SpeedCubeShop's own Gear Cube category,
+  alongside a companion "HelloCube 2x2 Gear Shift". Full prefix enumeration
+  (`speedcubeshop.com/products/hellocube*`) returns 17 URLs, every one a Gear Cube/Gear Shift
+  product — no standard 3x3 SKU found under the HelloCube name at this retailer either.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer categorisation, independent of TheCubicle's
+  own manufacturer-filter source already in data/manufacturers/hellocube.yml (different
+  retailer, different capture). Two independent tier 2 sources now agree HelloCube's entire
+  found product range is Gear Cube mechanisms — used to support the `hellocube` zero-family
+  finding in research/notes/models/parallel-batch-B.md."
+status: sourced

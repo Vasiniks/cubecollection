@@ -1,0 +1,35 @@
+# source: thecubicle-newisland-lightning-v2-2019
+# TheCubicle product page for the "Newisland Lightning V2," archived 2019-07-21 — the second
+# generation of the Lightning line already partly documented via `thecubicle-newisland-
+# lightning` in data/manufacturers/newisland.yml.
+id: thecubicle-newisland-lightning-v2-2019
+entity: source
+kind: retailer
+title: "Newisland Lightning V2 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/newisland-lightning-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721133852id_/https://www.thecubicle.com/products/newisland-lightning-v2"
+excerpt: |-
+  Product Description: "The Newisland Lightning V2 is a high-quality 3x3 speedcube marketed
+  and created exclusively by Newisland. It rotates very smoothly right out of the box, and
+  comes pre-lubricated from the factory. It also comes with a mesh cube bag inside the sturdy
+  box, as well as a maintenance/solution manual and an extra set of factory stickers." Marked
+  "This product has been discontinued indefinitely or we aren't sure when it will be back in
+  stock." Structured "Specifications": "Manufacturer: Newisland / Type: 3x3 / Gross Weight:
+  150g / Added: 2018-09-11 / Dimensions: 56.5mm³ / Item Weight: 85.6g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. The phrase 'marketed and created exclusively by Newisland' is worth weighing directly
+  against data/manufacturers/newisland.yml's own flagged rebrand suspicion (customer reviews
+  comparing this line to the QiYi Thunderclap): a retailer statement of exclusive origin is
+  some counter-evidence, but is itself promotional copy, not a documented supply-chain fact,
+  so this pass leaves the rebrand question exactly as open as pass 1 left it — neither
+  confirmed nor dismissed. The 'Added: 2018-09-11' field is treated as unreliable for dating
+  this product — see thecubicle-mojue-m3-2020's reliability_note for the recurring-date
+  pattern found across many unrelated products in this register."
+status: sourced
