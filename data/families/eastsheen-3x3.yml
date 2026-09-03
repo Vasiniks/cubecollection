@@ -1,0 +1,86 @@
+# family: eastsheen-3x3
+# Pass 2 (family enumeration). Eastsheen's sole 3x3x3 product found anywhere this pass, kept as
+# a real, if unusually thin, family record — a directly documented boundary call, not a default
+# "the manufacturer exists so give it a family" outcome. The Speedsolving wiki's own dedicated
+# Eastsheen page states flatly "East Sheen does not produce 3x3 cubes," listing only 2x2/4x4/5x5
+# lines. This is squarely contradicted by TheCubicle's own structured, first-party-attributed
+# product listing for a 3x3 explicitly described as "a standard Eastsheen 3x3," sold
+# continuously across captures from 2021 through 2025 — the same resolution pass 1 already made
+# on data/manufacturers/eastsheen.yml, applied here at the family level rather than
+# re-litigated. Recorded honestly as a live contradiction, not silently picked.
+
+id: eastsheen-3x3
+entity: family
+manufacturer_id: eastsheen
+name: "Eastsheen 3x3"
+aliases:
+  - "Eastsheen 3x3x3 Cube"
+introduced:
+  value: "2021"
+  precision: year
+  qualifier: before
+  note: "TheCubicle's own catalogue records 'Added: 2021-05-11' for the one product variant
+    found (the Wall Stickers edition) — a retailer catalogue date, not a stated manufacturer
+    release date, and Eastsheen's own founding dates to 1981 per pass 1's manufacturer record,
+    so this product could well be much older than its first retailer listing. `before 2021`
+    records only that this specific listing existed by that date, not a claimed original
+    release year."
+positioning: budget
+description: |-
+  Eastsheen's sole in-scope 3x3x3 speedcube found across every source checked this pass — a
+  single, thin, but real and specifically evidenced product line, not a manufacturer-exists
+  default. TheCubicle's own product copy for the one variant found, "Eastsheen 3x3x3 Cube with
+  Wall Stickers" (thecubicle-eastsheen-wall-stickers, tier 2, already sourced in pass 1),
+  describes it directly as "a standard Eastsheen 3x3 with stickers applied that have a marble
+  texture look to them" — the phrase "a standard Eastsheen 3x3" is read here as evidence of an
+  underlying base product ("Eastsheen 3x3"), of which the "Wall Stickers" treatment is a
+  decorative sticker variant, not a separate named line. This family record names the base
+  product; the Wall Stickers sticker treatment is left as a pass-4 (variant enumeration) lead,
+  not created as its own family or model.
+
+  **A direct, unresolved contradiction with community documentation, carried forward from pass
+  1.** The Speedsolving wiki's own dedicated Eastsheen page (fetched live this pass, no
+  archive.org capture used) states, in a section specifically addressing this question, "East
+  Sheen does not produce 3×3 cubes," and its own product listing covers only 2x2/4x4/5x5 "Type
+  A/C/E/M/P" lines and mini/multi keychain cubes — no 3x3 anywhere. This family record exists
+  because pass 1 already weighed this conflict and preferred TheCubicle's direct, structured,
+  first-party-attributed ("Manufacturer: Eastsheen") product listing, sold continuously across
+  captures spanning at least 2021 through 2025, over the wiki's undated blanket statement (the
+  wiki itself elsewhere warns its own pages "may be currently outdated"). This is not treated as
+  fully resolved, only as the better-evidenced reading available this pass — a human should
+  weigh this explicitly rather than take either side as settled.
+
+  **No second retailer corroborates this product.** A dedicated `speedcubeshop.com/products/
+  eastsheen*` prefix sweep this pass found Eastsheen 2x2 (mini/keychain, Super), 4x4 (Super),
+  and 5x5 (Super) products, but no 3x3 at all — consistent with the wiki's framing and meaning
+  this product's only found evidence anywhere is a single retailer, over a single product
+  listing. Recorded as `positioning: budget` on the strength of Eastsheen's own long-standing
+  reputation (per the wiki, "lighter, smaller and cheaper" than a standard Rubik's-style cube)
+  rather than any statement specific to this 3x3 product; flagged at `uncertain` confidence
+  accordingly.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-eastsheen-wall-stickers]
+    note: "Single tier 2 retailer catalogue date for the one sticker-variant listing found; no
+      manufacturer-first-party date exists (Eastsheen's own domain has been parked since at
+      least 2011, per data/manufacturers/eastsheen.yml)."
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-eastsheen]
+    note: "Inferred from the wiki's general characterisation of the brand ('lighter, smaller
+      and cheaper' than a regular cube) applied to its 2x2/4x4/5x5 lines, not stated for this
+      specific 3x3 product — a best-fit reading, not a direct claim."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-eastsheen-wall-stickers]
+  /description:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers, speedsolving-wiki-eastsheen]
+    note: "The two sources directly contradict each other on whether Eastsheen makes 3x3 cubes
+      at all — recorded as `reported` (tier 2 retailer evidence, single source, nothing
+      independently confirming, one contradicting community source) rather than `probable`,
+      reflecting that genuine unresolved tension honestly instead of overstating confidence in
+      either direction."

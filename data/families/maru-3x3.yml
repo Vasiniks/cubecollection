@@ -1,0 +1,70 @@
+# family: maru-3x3
+# Pass 2 (family enumeration). Maru's original, historically-early flagship 3x3 — already
+# substantially researched in pass 1 (data/manufacturers/maru.yml), where a customer review
+# independently dated the product to approximately 2011, "the weilong hadn't come out yet."
+# Predates this archive's 2016 start, but is treated the same way DaYan's, MoYu's, and other
+# manufacturers' pre-2016 flagship designs are treated elsewhere in this project: a historically
+# important design that remained sold (here, liquidating discontinued stock) within the archive
+# window, not excluded on age alone. Kept separate from `maru-cx3` and `maru-vx-3` — no source
+# found anywhere this pass states any succession between these three differently-named Maru 3x3
+# lines, so no invented continuity is recorded between them.
+
+id: maru-3x3
+entity: family
+manufacturer_id: maru
+name: "Maru 3x3"
+aliases:
+  - "Maru Original 3x3"
+introduced:
+  value: "2011"
+  precision: year
+  qualifier: circa
+  note: "Not a manufacturer-stated date. A TheCubicle customer review, already sourced in pass
+    1 (thecubicle-maru-3x3), places the product's original release at approximately 2011 by
+    reference to the MoYu WeiLong ('now, I already have one of these... keep in mind the
+    weilong hadn't come out yet'). TheCubicle's own copy independently calls it 'one of the
+    first cubes ever released by Maru several years ago,' consistent with an early-2010s
+    original release, though no source states an exact year directly."
+positioning: mainline
+description: |-
+  Maru's original 3x3 speedcube, already substantially documented in pass 1: TheCubicle's own
+  copy describes it as "one of the first cubes ever released by Maru several years ago," long
+  discontinued by the time of its (2023-captured) liquidation listing (thecubicle-maru-3x3,
+  tier 2, pass 1).
+
+  **A documented sticker-treatment variant, not a separate family.** TheCubicle also sold a
+  "Maru 3x3 (Special Patterns)" edition, whose own product copy states directly: "The original
+  Maru 3x3 is available with a variety of special patterns on the stickers" — confirming this is
+  a decorative sticker variant of the same base product (thecubicle-maru-3x3-special-patterns,
+  tier 2, new this pass), not a distinct model or family. Recorded here as a pass-4 (variant
+  enumeration) lead on this family record.
+
+  **Deliberately kept separate from `maru-cx3` and `maru-vx-3`.** Both are later, differently-
+  named Maru 3x3 products found this pass. No source found anywhere — TheCubicle's own copy for
+  either line, the Speedsolving wiki's thin Maru page, or any other source checked — states or
+  implies that CX3 or VX-3 succeeded, replaced, or was marketed as a later generation of this
+  original 3x3. Per this project's standing practice elsewhere (e.g. QiYi Bullfight/Thunderclap,
+  YJ SuLong/ChiLong/YuLong), a shared manufacturer and a shared broad product category is not
+  treated as evidence of one continuous lineage absent a stated succession — these are recorded
+  as three separate families.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-maru-3x3]
+    note: "Already recorded at pass 1; carried forward unchanged. Single tier 2 source (a
+      customer review, not the retailer's own structured field), nothing independently
+      corroborating an exact year."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-maru-3x3]
+    note: "No source states a positioning label directly; `mainline` is this record's own
+      best-fit reading (Maru's original, presumably flagship-at-the-time product, later
+      superseded in relevance by CX3 and VX-3), not a stated claim."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-maru-3x3]
+  /description:
+    confidence: probable
+    sources: [thecubicle-maru-3x3, thecubicle-maru-3x3-special-patterns]

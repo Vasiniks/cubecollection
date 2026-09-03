@@ -1,0 +1,87 @@
+# family: giiker-supercube
+# Pass 2 (family enumeration). GiiKER's smart/electronic 3x3 line — the product that made the
+# manufacturer, per its own history ("2018 ... SUPERCUBE(R) i3 released - The world's 1st smart
+# cube"). Kept as its own family, separate from giiker-m3, because smart/electronic capability
+# is treated as always family-relevant in this archive (the same call the pilot made for GAN's
+# i Series/i Carry/ui Series against its mechanical flagship line, and that a parallel pass-2
+# thread made for Rubik's Connected against the classic mechanical line) — not a variant-level
+# configuration difference chosen at assembly, but a stated deliberate product split
+# (electronics present vs. explicitly absent) documented directly by a retailer source on the
+# sibling record.
+
+id: giiker-supercube
+entity: family
+manufacturer_id: giiker
+name: "GiiKER SUPERCUBE"
+aliases:
+  - "SUPERCUBE"
+  - "Super Cube"
+  - "GiiKER Super Cube"
+  - "Giiker Smart Cube"
+introduced:
+  value: "2018"
+  precision: year
+  qualifier: exact
+positioning: smart
+description: |-
+  GiiKER's flagship smart/electronic 3x3 line, and by its own account the product that
+  established the company: GiiKER's own "About Us" timeline (giiker-about-us-2022, tier 1)
+  states "2018 January: Smart cube technology and applications presented at Nuremberg toy fair;
+  March: SUPERCUBE(R) i3 released - The world's 1st smart cube," followed by "2019 Supercube
+  series presented at CES, New York and Nuremberg toy fair. A global leader in developing and
+  manufacturing smart cubes." At least two named generations are independently attested: the
+  original "Giiker Super Cube" (i3) and the "Giiker Super Cube i3S," which TheCubicle's own
+  product copy (thecubicle-giiker-super-cube-i3s-2019, tier 2) describes directly as "an updated
+  version of the previous Giiker Super Cube," with "updated software, Bluetooth v. 4.0, and
+  bright vibrant stickers" — a manufacturer-external source independently corroborating the
+  succession the timeline implies.
+
+  No dedicated product page for the plain "i3" (pre-S) generation was found at GiiKER's own
+  site, TheCubicle, or SpeedCubeShop in this pass's wayback coverage — only the i3S survives in
+  every retailer catalogue captured (giiker-com-supercube-i3s-product-2022,
+  thecubicle-giiker-super-cube-i3s-2019, and a SpeedCubeShop 2020 capture of the same product
+  found during discovery but not separately sourced here). The i3S product page itself persisted
+  on GiiKER's own site from at least 2022 through an 2026-08-19 capture
+  (giiker-com-supercube-i3s-2026-soldout), by which date it is marked "Sold out" and the
+  standalone "SUPERCUBE" entry has dropped out of the site's primary shop navigation (present as
+  late as a 2025-07-17 capture of a different page on the same domain). This reads as a line in
+  decline by 2026, not a confirmed discontinuation — no source states the line has formally
+  ended, so `discontinued` is left unset rather than inferred from stock status.
+
+  **GiCUBE, an open lead, not built into this family.** GiiKER's own timeline separately states
+  "2014 GiCUBE(R) released and birth of the idea of smart cube later on" — a single ambiguous
+  sentence that does not itself claim GiCUBE was an electronic/app-connected product (if
+  anything, "birth of the idea... later on" implies the smart-cube concept came *after*
+  GiCUBE). No product page, specification, or retailer listing for GiCUBE was found anywhere in
+  this pass. Not built into this family or given its own record on evidence this thin; flagged
+  here as an open lead for a future pass with more source material, rather than silently dropped
+  or guessed into a "precursor model."
+
+  **GiiKER Super Cube i2 (2x2, tiled) excluded** — out of this archive's 3x3x3 scope by puzzle
+  category, not a boundary call; found at both TheCubicle and SpeedCubeShop alongside the i3S.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+    note: "Tier 1, first-party, an exact month-level date stated directly ('March: SUPERCUBE(R)
+      i3 released'), recorded here at year precision since the family record captures the
+      line's founding year, not a single model's exact release date (that belongs to pass 3)."
+  /positioning:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+    note: "GiiKER's own about-us page directly self-describes as 'A global leader in developing
+      and manufacturing smart cubes' by 2019 — a first-party statement of exactly the vocab's
+      own `smart` category, not an inference."
+  /aliases:
+    confidence: probable
+    sources: [giiker-about-us-2022, giiker-com-supercube-i3s-product-2022, thecubicle-giiker-super-cube-i3s-2019]
+    note: "'SUPERCUBE' and 'Super Cube' are the manufacturer's and retailer's own spellings
+      respectively of the same name; 'Giiker Smart Cube' is the phrase TheCubicle's own M3
+      product copy uses to refer back to this line ('the original Giiker Smart Cube') rather
+      than a name found on a SUPERCUBE-line product itself, hence `probable` rather than
+      `confirmed` for that specific alias."
+  /description:
+    confidence: probable
+    sources: [giiker-about-us-2022, giiker-com-supercube-i3s-product-2022, thecubicle-giiker-super-cube-i3s-2019, giiker-com-supercube-i3s-2026-soldout]

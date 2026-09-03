@@ -1,0 +1,32 @@
+# source: thecubicle-gocube-edge-3x3-2020
+# TheCubicle's own product page for the GoCube Edge 3x3, captured via Wayback. Tier 2,
+# first-party retailer copy with real specs and a "one of the first smart cubes" framing claim.
+id: thecubicle-gocube-edge-3x3-2020
+entity: source
+kind: retailer
+title: "GoCube Edge 3x3 Smart Cube – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gocube-edge-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927040929id_/https://www.thecubicle.com/products/gocube-edge-3x3"
+excerpt: |-
+  "One of the first smart cubes ever released, The GoCube Edge is a magnetic 3x3 equipped with
+  Bluetooth 5.0. This model features a novel pillowed design, giving it a cool, futuristic
+  appearance. GoCube's accompanying app allows you to race with cubers around the world, play
+  mini-games, learn, and compete in speedcubing events. The GoCube Edge 3x3 comes with a USB
+  charger, a charging stand, a high quality cube pouch, and a 1-year warranty by the
+  manufacturer." Product Specifications: "Manufacturer: GoCube / Type: 3x3 / Added: 2020-09-01 /
+  Gross Weight: 436g / Dimensions: 60.0mm 3 / Magnets: Magnetic / Item Weight: 125.0g".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. The 'one of the first smart cubes ever released' framing
+  is treated as a comparative/marketing claim (tier-4-for-comparative-claims rule), not a
+  specification fact — used descriptively, not to date GoCube's actual founding. 'Added:
+  2020-09-01' is TheCubicle's own catalogue-add date, not necessarily GoCube Edge's original
+  release date (getgocube-com-2019-basic-edge-skus already shows Edge on sale in December
+  2019); recorded on the family record as the retailer's own attested date only, not conflated
+  with a first release."
+status: sourced

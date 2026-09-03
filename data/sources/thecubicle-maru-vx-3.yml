@@ -1,0 +1,28 @@
+# source: thecubicle-maru-vx-3
+# TheCubicle's own product page for the Maru VX-3, captured via Wayback. Tier 2, first-party
+# retailer copy describing a plain, no-frills budget 3x3.
+id: thecubicle-maru-vx-3
+entity: source
+kind: retailer
+title: "Maru VX-3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-vx-3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250219115733id_/https://www.thecubicle.com/products/maru-vx-3"
+excerpt: |-
+  "The VX-3 is an airy puzzle from the famous brand Maru. This puzzle has no frills or fancy
+  features, just a plain 3x3 with a modern design." Product Specifications: "Manufacturer: Maru
+  / Gross Weight: 105g".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. This pass's own `thecubicle.com/products/maru*` CDX prefix
+  sweep shows the earliest capture of this exact product page dated 2022-12-05, used only as an
+  'existed by' upper bound, not this page's own in-page 'Added' field (not trusted as dating
+  evidence per this pass's cross-agent finding on TheCubicle's repeating 'Added:' dates). The
+  same prefix sweep shows magnetic variants of this base model ('VX-3 Core M', 'VX-3 Core M
+  MagLev') at this retailer — read as variant-level configuration options of this same model per
+  DATA_MODEL §4.2, not separately sourced or built into separate models/families at this pass."
+status: sourced

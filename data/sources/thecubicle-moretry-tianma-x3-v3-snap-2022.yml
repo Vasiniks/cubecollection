@@ -1,0 +1,36 @@
+# source: thecubicle-moretry-tianma-x3-v3-snap-2022
+# TheCubicle's own product page for the MoreTry TianMa X3 V3 (Snap), captured via Wayback.
+# Tier 2, first-party retailer copy describing a specific magnet-alignment mechanism change
+# from the V1 generation.
+id: thecubicle-moretry-tianma-x3-v3-snap-2022
+entity: source
+kind: retailer
+title: "Moretry Tianma X3 V3 (Snap) 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moretry-tianma-x3-v3-3x3-snap"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250710015909id_/https://www.thecubicle.com/products/moretry-tianma-x3-v3-3x3-snap"
+excerpt: |-
+  "The Moretry Tianma X3 V3 (Snap) is a 3x3 from the new company that features traditional
+  corner/edge magnetization along with corner base/edge magnets. This version includes enlarged
+  corner base magnets, allowing them to interact with a repelling magnet in the centers to aid
+  with alignment." Product Specifications: "Manufacturer: Moretry / Added: 2022-03-14 / Gross
+  Weight: 294g / Dimensions: 55.5mm 3 / Magnets: Magnetic / Item Weight: 79.0g".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. Establishes a real, described mechanism progression from
+  V1 (plain corner/edge magnetization) to V3 ('enlarged corner base magnets... interact with a
+  repelling magnet in the centers to aid with alignment') under the persisting 'Tianma X3' name
+  — direct evidence this is a genuine versioned lineage, not merely a retailer's own numbering.
+  Same 'Added: 2022-03-14' templating artifact noted in thecubicle-moretry-tianma-x3-v1-2023
+  applies here too, and is not used as dating evidence anywhere. CORRECTION: this source's own
+  id carries a '-2022' qualifier from an earlier draft that assumed a 2022-07-06 capture (one
+  exists in the CDX index for this URL); the content actually quoted here was retrieved from
+  the live/latest-resolving capture, confirmed as 2025-07-10, and the archive_url now points at
+  that exact snapshot. The id is not renamed per this project's immutable-id policy, but the
+  actual capture date is 2025, not 2022 — noted here so the mismatch is not silently carried
+  forward."
+status: sourced

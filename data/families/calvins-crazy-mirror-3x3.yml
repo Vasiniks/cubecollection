@@ -1,0 +1,57 @@
+# family: calvins-crazy-mirror-3x3
+# Pass 2 (family enumeration). See calvins-crazy-3x3.yml's header comment for the shared
+# boundary reasoning applied across this manufacturer's three accepted 3x3 families this pass.
+# A distinct design from calvins-crazy-3x3 (that one has locked, non-turning centers on a
+# standard-shape cube; this one has independently-rotating circles built onto a mirror-cube
+# shape) — kept separate as two different, specifically-described mechanisms sharing only the
+# "Crazy" name element, not one family.
+
+id: calvins-crazy-mirror-3x3
+entity: family
+manufacturer_id: calvins-puzzle
+name: "Calvin's Crazy Mirror 3x3x3"
+aliases:
+  - "Crazy Mirror 3x3x3"
+introduced:
+  value: "2023"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-calvins-crazy-mirror-3x3x3's own reliability_note). The genuine Wayback crawl
+    timestamp of the earliest capture found (the 4-Circle configuration, 2023-02-06) is used
+    only as an 'existed by' upper bound."
+positioning: special
+description: |-
+  A "Crazy" mechanism 3x3 built into a mirror-cube shape, described directly in TheCubicle's own
+  product copy: "The Calvin's Crazy Mirror 3x3x3... is a crazy 3x3 with 3D printed extensions
+  glued onto it to make it into a mirror cube. The circles can rotate independently of the rest
+  of the puzzle, leading to some seriously confusing scrambles" (thecubicle-calvins-crazy-
+  mirror-3x3x3, tier 2). TheCubicle's own "Type" field files this under "Shape Mods."
+
+  **Sold in two circle-count configurations, treated as one family/model with variant-level
+  configuration, not two.** "4 Circles" and "6 Circles" versions are identically worded aside
+  from the circle count, matching DATA_MODEL §4.2's test directly (a configuration chosen at
+  assembly, not a different underlying design) — both cited from a single source record; left
+  as a pass-4 (variant enumeration) lead, not split here.
+
+  Almost certainly non-WCA-legal; the `scope_class: conditional` justification and admission is
+  deferred to pass 3/4 per DATA_MODEL §1.4.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-calvins-crazy-mirror-3x3x3]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-calvins-crazy-mirror-3x3x3]
+    note: "No source states a positioning label; `special` records this record's own
+      out-of-competitive-category reading given the non-standard mechanism."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-calvins-crazy-mirror-3x3x3]
+  /description:
+    confidence: reported
+    sources: [thecubicle-calvins-crazy-mirror-3x3x3]

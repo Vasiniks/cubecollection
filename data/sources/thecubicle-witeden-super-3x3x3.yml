@@ -1,0 +1,29 @@
+# source: thecubicle-witeden-super-3x3x3
+# TheCubicle's own product page for the WitEden Super 3x3x3, captured via Wayback. Tier 2,
+# first-party retailer copy describing a mechanism matching the Speedsolving wiki's own
+# characterisation of WitEden's "Super cube" specialty.
+id: thecubicle-witeden-super-3x3x3
+entity: source
+kind: retailer
+title: "WitEden Super 3x3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-super-3x3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250317153319id_/https://www.thecubicle.com/products/witeden-super-3x3x3"
+excerpt: |-
+  "The WitEden Super 3x3x3 features a circular structure on the white and yellow faces which
+  can only be turned by the middle layer. This allows it to be manipulated in more ways than a
+  conventional 3x3 cube can." Product Specifications: "Manufacturer: WitEden."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. 'Super 3x3x3' directly matches the Speedsolving wiki's own
+  characterisation of WitEden's post-2010 focus (speedsolving-wiki-witeden, pass 1): 'since
+  2010 the company has focused on unusual designs such as Crazy cubes, Super cubes, cuboids
+  etc.' — this product is read as the company's 'Super cube' 3x3x3 instance specifically. This
+  page's own in-page 'Added' field is not used as dating evidence, per this pass's standing
+  cross-agent finding on TheCubicle's repeating 'Added:' dates; the genuine Wayback crawl
+  timestamp (2020-09-23) is used instead as an 'existed by' upper bound."
+status: sourced

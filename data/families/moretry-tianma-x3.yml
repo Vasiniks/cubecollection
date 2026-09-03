@@ -1,0 +1,104 @@
+# family: moretry-tianma-x3
+# Pass 2 (family enumeration). MoreTry's sole 3x3 speedcube product line found this pass — every
+# one of its 24 3x3 SKUs at TheCubicle (per thecubicle-moretry-live-2026, pass 1) and every
+# MoreTry 3x3 product found at SpeedCubeShop this pass carries the "Tianma X3" name, in a
+# manufacturer-numbered generation sequence (V1 through at least V4, plus "V3 Plus" and a
+# "ZCube Edition" collaboration). This is the single clearest, richest family evidence found
+# across this session's queue: not a retailer collection page or loose marketing wording, but a
+# real, sustained, versioned product lineage independently corroborated at two separate
+# retailers over roughly 2022-2025.
+
+id: moretry-tianma-x3
+entity: family
+manufacturer_id: moretry
+name: "MoreTry TianMa X3"
+aliases:
+  - "MoreTry Tianma X3"
+  - "Moretry Tianma X3"
+  - "TianMa X3"
+  - "MoreTry TianMa X3+"
+introduced:
+  value: "2022"
+  precision: year
+  qualifier: circa
+  note: "Every MoreTry TianMa X3 product page checked this pass (V1, V3, V4) carries the
+    identical retailer catalogue date 'Added: 2022-03-14' regardless of version number or the
+    page's own later capture date — almost certainly a templating artifact recording when
+    TheCubicle first onboarded the MoreTry brand, not each version's individual release date.
+    Recorded at year precision, `circa`, as the earliest confirmed evidence of this family's
+    existence at retail, not as a claimed exact release date for any specific version."
+positioning: mainline
+description: |-
+  MoreTry's flagship, and on the evidence found this pass, only 3x3 speedcube product line: the
+  "TianMa X3." TheCubicle's own product copy independently describes MoreTry as "the new
+  company" as of the V1 (Standard) listing (thecubicle-moretry-tianma-x3-v1-2023, tier 2),
+  consistent with pass 1's own finding that MoreTry is a manufacturer "entirely absent from the
+  pass-0 candidate list."
+
+  **A real, described generation sequence, not just a bare version number.** TheCubicle's own
+  copy documents a genuine mechanism progression across versions of the same name:
+  - **V1 (Standard):** "features traditional corner/edge magnetization"
+    (thecubicle-moretry-tianma-x3-v1-2023).
+  - **V3 (Snap):** "traditional corner/edge magnetization along with corner base/edge magnets...
+    enlarged corner base magnets, allowing them to interact with a repelling magnet in the
+    centers to aid with alignment" (thecubicle-moretry-tianma-x3-v3-snap-2022) — a described,
+    specific hardware addition over V1.
+  - **V4 (MagLev):** the same V3-generation magnet layout, but "replaces the traditional spring
+    with a magnetic levitation system that has 6 magnetic rings instead of 2 for a more linear
+    tensions" (thecubicle-moretry-tianma-x3-v4-maglev-2022) — a genuine mechanism-level change
+    (spring-based tensioning replaced entirely), the strongest evidence in this record that
+    "version" here tracks real design change, not merely a sold configuration choice.
+
+  A further **"V2 (Enhanced)"** and **"V3 Plus"** (including a UV-coated edition) are attested
+  by name at TheCubicle's own product-URL history (per the wayback prefix sweep this pass) but
+  their own individual product-description text was not cleanly retrievable this session (one
+  fetch attempt returned content that appeared to belong to a different version's page, likely a
+  retailer templating/redirect artifact — not used as evidence here to avoid citing an unreliable
+  capture). Their existence as named SKUs is recorded; their specific mechanism description is
+  left to pass 3.
+
+  **"MoreTry TianMa X3+" and unnumbered magnet-track variants** ("Single/Double/Triple-Track
+  Magnetic Frosted," "8-Magnet Ball-Core MagLev," "32-Magnet Ball-Core") and a **"ZCube
+  Edition"** collaboration (also appearing on a "SAOCube SE" naming, the same cross-brand lead
+  that originally surfaced MoreTry in pass 1) all persist under the same "Tianma X3" root name
+  per TheCubicle's own 2025-2026 product-URL captures — read as later configurations/variants of
+  this same family rather than a naming change, though the "+" suffix's exact relationship to
+  the numbered V1-V4 generations (a later flagship tier? a rename?) is left entirely to pass 3.
+
+  **No other MoreTry 3x3 product line was found anywhere this pass.** Both TheCubicle's own
+  manufacturer-filtered collection (thecubicle-moretry-live-2026, pass 1: "24" 3x3 products) and
+  a dedicated `thecubicle.com/products/moretry*` URL-prefix sweep this pass show every 3x3 SKU
+  carrying the "Tianma X3" name; the remaining 3 non-3x3 SKUs are MoreTry's own-branded
+  lubricants (Lube I/II/III), out of this archive's product-category scope entirely. A parallel
+  `speedcubeshop.com/products/moretry*` sweep independently corroborates the same single-line
+  picture through at least 2025.
+
+  **A domain lead, not chased into a source.** `moretry.com` has Wayback captures from 2011-2012
+  and again 2021, but this pass did not verify whether that domain actually belongs to this
+  cube manufacturer or is another coincidental name collision (the kind already caught and
+  ruled out for `gocube.com` while researching Particula in this same session) — flagged as an
+  unconfirmed lead for a future pass, not treated as evidence either way here.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v1-2023, thecubicle-moretry-tianma-x3-v3-snap-2022, thecubicle-moretry-tianma-x3-v4-maglev-2022]
+    note: "All three sources carry the identical 'Added: 2022-03-14' date across different
+      product versions — treated as a shared catalogue-onboarding artifact, not independent
+      corroboration of a true release date, hence `uncertain` rather than `probable` despite
+      three sources agreeing."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-moretry-live-2026]
+    note: "No source states a positioning label directly. `mainline` is this record's own
+      best-fit reading: MoreTry has, on the evidence found, exactly one 3x3 line, which by
+      elimination is neither a budget nor a flagship-alongside-others tier — it is simply the
+      whole of the manufacturer's 3x3 range. A human should revisit this once MoreTry's pricing
+      relative to competitors, not researched this pass, is known."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-moretry-live-2026, thecubicle-moretry-tianma-x3-v1-2023]
+  /description:
+    confidence: probable
+    sources: [thecubicle-moretry-live-2026, thecubicle-moretry-tianma-x3-v1-2023, thecubicle-moretry-tianma-x3-v3-snap-2022, thecubicle-moretry-tianma-x3-v4-maglev-2022]

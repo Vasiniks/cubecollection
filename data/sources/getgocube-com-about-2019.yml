@@ -1,0 +1,28 @@
+# source: getgocube-com-about-2019
+# GoCube's own "About" page at getgocube.com, captured 2019-09-16. Tier 1, first-party
+# statement that GoCube is Particula's product, corroborating the manufacturer relationship
+# already recorded in data/manufacturers/particula.yml.
+id: getgocube-com-about-2019
+entity: source
+kind: manufacturer_official
+title: "About - GoCube (getgocube.com)"
+publisher: "GoCube / Particula"
+url: "https://getgocube.com/about/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190916171152id_/https://getgocube.com/about/"
+excerpt: |-
+  "GoCube is a product of tireless engineering and tweaking by Particula. A company focusing on
+  developing Smart Toys and products. In the last years, we've developed, manufactured and sold
+  a number of smart connected toys all over the world... it was only a matter of time before
+  this group of magic-obsessed problem solvers figured out a way to solve one of the most
+  challenging problems we encountered: how to effectively fit a world of technology into a
+  standard size rotating cube."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party, direct statement that GoCube is Particula's own
+  product. No exact GoCube launch date or year is stated on this page; used only to corroborate
+  the manufacturer relationship, not to date the product."
+status: sourced

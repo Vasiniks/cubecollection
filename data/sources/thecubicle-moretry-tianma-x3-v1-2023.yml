@@ -1,0 +1,30 @@
+# source: thecubicle-moretry-tianma-x3-v1-2023
+# TheCubicle's own product page for the MoreTry TianMa X3 V1 (Standard), captured via Wayback.
+# Tier 2, first-party retailer copy naming MoreTry as "the new company" and giving the earliest
+# generation's mechanism description.
+id: thecubicle-moretry-tianma-x3-v1-2023
+entity: source
+kind: retailer
+title: "Moretry Tianma X3 V1 (Standard) 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moretry-tianma-x3-v1-3x3-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230129090505id_/https://www.thecubicle.com/products/moretry-tianma-x3-v1-3x3-standard"
+excerpt: |-
+  "The Moretry Tianma X3 V1 (Standard) is a 3x3 from the new company that features traditional
+  corner/edge magnetization." Product Specifications: "Manufacturer: Moretry / Type: 3x3 /
+  Added: 2022-03-14 / Gross Weight: 210g / Dimensions: 55.5mm 3 / Magnets: Magnetic / Item
+  Weight: 75.0g".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. 'from the new company' independently corroborates pass 1's
+  own finding that MoreTry was a newly-arrived manufacturer as of this listing. DATA QUALITY
+  NOTE: every MoreTry TianMa X3 product page checked this pass (V1, V3, V4) shows the identical
+  'Added: 2022-03-14' date regardless of the product's own version number or evident later
+  capture date — almost certainly a templating artifact reflecting the brand's own catalogue
+  onboarding date at this retailer, not each individual version's actual release date. Recorded
+  here verbatim; not treated as V1's specific release date on the family record."
+status: sourced

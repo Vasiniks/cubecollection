@@ -1,0 +1,28 @@
+# source: thecubicle-calvins-full-function-crazy-3x3
+# TheCubicle's own product page for the Calvin's Full-Function Crazy 3x3 (Center-Locking),
+# captured via Wayback. Tier 2, first-party retailer copy describing a "crazy" (locked-center)
+# mechanism variant of the 3x3.
+id: thecubicle-calvins-full-function-crazy-3x3
+entity: source
+kind: retailer
+title: "Calvin's Full-Function Crazy 3x3 (Center-Locking) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/calvins-full-function-crazy-3x3-center-locking"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230206170524id_/https://www.thecubicle.com/products/calvins-full-function-crazy-3x3-center-locking"
+excerpt: |-
+  "The Full-Function Crazy 3x3 is a puzzle from Calvin that has circles on the center of each
+  face. These circles do not turn when you turn the face, they're 'locked' into place. It can
+  still be fully scrambled and offers quite the challenge if you're never solved a Crazy puzzle
+  before." Product Specifications: "Manufacturer: Calvin's Puzzle / Type: Shape Mods."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. TheCubicle's own 'Type' field files this under 'Shape
+  Mods,' consistent with pass 1's own characterisation of Calvin's Puzzle as primarily a
+  non-WCA specialist. This page's own in-page 'Added' field is not used as dating evidence, per
+  this pass's standing cross-agent finding on TheCubicle's repeating 'Added:' dates; the genuine
+  Wayback crawl timestamp (2023-02-06) is used instead as an 'existed by' upper bound."
+status: sourced

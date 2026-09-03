@@ -1,0 +1,28 @@
+# source: thecubicle-witeden-camouflage-3x3x3
+# TheCubicle's own product page for the WitEden Camouflage 3x3x3, captured via Wayback. Tier 2,
+# first-party retailer copy.
+id: thecubicle-witeden-camouflage-3x3x3
+entity: source
+kind: retailer
+title: "WitEden Camouflage 3x3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-camouflage-3x3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250912225812id_/https://www.thecubicle.com/products/witeden-camouflage-3x3x3"
+excerpt: |-
+  "The WitEden Camouflage 3x3x3 appears at first to be a 3x3x3 cube with a thin middle layer.
+  However, it is 'camouflaged,' and the middle layer actually has an irregular center of
+  rotation." Product Specifications: "Manufacturer: WitEden."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. Confirmed, unlike Calvin's 'Mirror Camouflage 3x3x3'
+  found elsewhere in this pass, to genuinely be a 3x3x3-shaped mechanism (an 'irregular center
+  of rotation' on the middle layer, not a differently-sized cube in disguise) — checked
+  specifically after that other manufacturer's naming trap. This page's own in-page 'Added'
+  field is not used as dating evidence, per this pass's standing cross-agent finding on
+  TheCubicle's repeating 'Added:' dates; the genuine Wayback crawl timestamp (2020-08-04) is
+  used instead as an 'existed by' upper bound."
+status: sourced

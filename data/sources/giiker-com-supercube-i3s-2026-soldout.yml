@@ -1,0 +1,39 @@
+# source: giiker-com-supercube-i3s-2026-soldout
+# GiiKER's own official site, "SUPERCUBE® i3S" product page, a later Wayback capture than
+# giiker-com-supercube-i3s-product-2022, showing the product's continued (if unstocked) survival
+# and the site's current shop navigation. Tier 1, first-party.
+id: giiker-com-supercube-i3s-2026-soldout
+entity: source
+kind: manufacturer_official
+title: "SUPERCUBE® i3S – GiiKER (2026 capture, sold out)"
+publisher: "GiiKER"
+url: "https://www.giiker.com/products/supercube-electronic-bluetooth-speed-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260819125301id_/https://www.giiker.com/products/supercube-electronic-bluetooth-speed-cube-3x3"
+excerpt: |-
+  Page title "SUPERCUBE® i3S – GiiKER". Shop navigation: "Home / Shop / SUPER SLIDE / SUPER
+  BLOCKS / TIC-TAC-TOE BOLT / SUPER DECODER / SUPER REVERSI / SMART SUDOKU / SUPER LUDO / SMART
+  FOUR / Replacement Part / Support / Contact Us / APP Download / User Manual / About us / Track
+  Your Order" — no standalone "SUPERCUBE" nav entry remains at this capture date, unlike the
+  2025-07-17 capture of giiker.com/pages/supercube-user-manual, whose nav still listed
+  "SUPERCUBE" alongside the other product lines. Product body: "by GiiKER SUPERCUBE® i3S Sold
+  out / $39.99 ... Default Title - Sold out - $39.99". Marketing copy is otherwise unchanged
+  from the 2022 capture ("Smart and Connected... endorsed by MoMA... Join our SUPER CUBE
+  community of more than one million users").
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party. Used only to establish that the SUPERCUBE i3S product
+  page, and by extension the SUPERCUBE name, persisted from its original 2018 debut through at
+  least this 2026-08-19 capture, and that by this date it is marked 'Sold out' and has dropped
+  out of the site's primary shop navigation (present in a 2025-07-17 capture of a different
+  page on the same domain, giiker.com/pages/supercube-user-manual, not independently captured
+  as its own source here). This is treated as evidence of decline, not as a stated
+  discontinuation — no source found states the SUPERCUBE line has formally ended, so
+  `discontinued` is left unset on data/families/giiker-supercube.yml rather than inferred from
+  stock status alone. Marketing superlatives ('endorsed by MoMA') are the same copy already
+  recorded as tier-4-for-comparative-claims in giiker-com-supercube-i3s-product-2022 and are not
+  re-treated as specification facts here."
+status: sourced
