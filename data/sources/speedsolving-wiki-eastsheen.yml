@@ -26,18 +26,33 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Unattributed community wiki, tier 4 by default. No web.archive.org capture
-  fetched for this specific page this pass (fetched live via WebFetch); the wiki itself notes
-  the article 'may be currently outdated' regarding new products. Provides founding/location/
-  founder detail found nowhere else this pass — corroborates only, does not establish alone.
+reliability_note: |-
+  Unattributed community wiki, tier 4 by default. No web.archive.org capture fetched for this
+  specific page this pass (fetched live via WebFetch); the wiki itself notes the article 'may be
+  currently outdated' regarding new products. Provides founding/location/ founder detail found
+  nowhere else this pass — corroborates only, does not establish alone.
+  Excerpt corrected 2026-09-03 during the Pass 2 adjudication gate. The original excerpt omitted
+  the 'East Sheen does not produce 3x3 cubes' sentence and the product listing, even though three
+  records (data/families/eastsheen-3x3.yml twice, and the Pass 2 research log) quote that sentence
+  from this source. Because this source's preservation_method is `excerpt` with no archive_url,
+  the excerpt IS the preservation — so the archive was citing a sentence its own evidence did not
+  hold. The sentence was re-verified verbatim against the live page on 2026-09-03 and is genuine;
+  this was a preservation gap, not a misquotation. The omission ran against the archive's
+  interest: the missing text is the strongest counter-evidence to eastsheen-3x3 existing at all.
 
-  Excerpt corrected 2026-09-03 during the Pass 2 adjudication gate. The original excerpt
-  omitted the 'East Sheen does not produce 3x3 cubes' sentence and the product listing, even
-  though three records (data/families/eastsheen-3x3.yml twice, and the Pass 2 research log)
-  quote that sentence from this source. Because this source's preservation_method is `excerpt`
-  with no archive_url, the excerpt IS the preservation — so the archive was citing a sentence
-  its own evidence did not hold. The sentence was re-verified verbatim against the live page on
-  2026-09-03 and is genuine; this was a preservation gap, not a misquotation. The omission ran
-  against the archive's interest: the missing text is the strongest counter-evidence to
-  eastsheen-3x3 existing at all."
+  HELD AT TIER 4, and dependent claims downgraded, 2026-09-03 (issue E1). Six sibling Speedsolving
+  pages were given an individually-justified tier-3 override this pass because they are edit-
+  protected, revision-tracked, substantial, and carry no staleness banner. This page was
+  deliberately NOT upgraded. It self-flags the 'may be currently outdated' staleness banner, and
+  this record separately required an excerpt correction during the first adjudication gate (issue
+  S3).
+
+  Consequence: 2 attestation(s) resting solely on this source were downgraded from
+  `reported`/`probable` to `uncertain`, since vocab/confidence.yml defines `reported` as requiring
+  a tier-3 source and RESEARCH_SPEC line 103 states tier 4 'corroborates only, never establishes'.
+  The claims are not alleged to be false - no false claim was found in this set - only under-
+  evidenced for the confidence they carried.
+
+  To restore a higher confidence, add a tier 1-2 source rather than re-tiering this page. See
+  research/qc/evidence-tier-remediation-matrix.yml.
 status: sourced

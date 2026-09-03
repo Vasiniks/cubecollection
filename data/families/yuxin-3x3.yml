@@ -30,5 +30,5 @@ attestations:
     note: "No explicit positioning statement; recorded 'mainline' as the least overclaiming
       reading for YuXin's first 3x3 product."
   /description:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-yuxin-products]

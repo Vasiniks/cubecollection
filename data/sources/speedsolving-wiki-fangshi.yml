@@ -17,8 +17,24 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, sparse, no citation trail. Corroborates FangShi as
-  a real puzzle-producing company with ShuangRen as its flagship product line, consistent with
-  thecubicle-fangshi-shuangren-v2. Does not itself confirm the 'Funs Puzzle' alias, which comes
-  only from the tier 2 retailer source."
+reliability_note: |-
+  Tier 4, community-edited, sparse, no citation trail. Corroborates FangShi as a real puzzle-
+  producing company with ShuangRen as its flagship product line, consistent with thecubicle-
+  fangshi-shuangren-v2. Does not itself confirm the 'Funs Puzzle' alias, which comes only from the
+  tier 2 retailer source.
+
+  HELD AT TIER 4, and dependent claims downgraded, 2026-09-03 (issue E1). Six sibling Speedsolving
+  pages were given an individually-justified tier-3 override this pass because they are edit-
+  protected, revision-tracked, substantial, and carry no staleness banner. This page was
+  deliberately NOT upgraded. The page is thin rather than long-form, so it does not meet
+  RESEARCH_SPEC line 102's tier-3 'long-form community documentation' bar.
+
+  Consequence: 2 attestation(s) resting solely on this source were downgraded from
+  `reported`/`probable` to `uncertain`, since vocab/confidence.yml defines `reported` as requiring
+  a tier-3 source and RESEARCH_SPEC line 103 states tier 4 'corroborates only, never establishes'.
+  The claims are not alleged to be false - no false claim was found in this set - only under-
+  evidenced for the confidence they carried.
+
+  To restore a higher confidence, add a tier 1-2 source rather than re-tiering this page. See
+  research/qc/evidence-tier-remediation-matrix.yml.
 status: sourced

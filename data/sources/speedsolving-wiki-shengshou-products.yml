@@ -40,9 +40,24 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, carries its own 'may be currently outdated'
-  editorial warning. Several entries (Rainbow, Gem, Tank) are undated and given only a single
-  dismissive sentence; not created as families this pass on a significance/evidence basis, and
-  recorded as leads rather than silently dropped — see
-  research/notes/models/global-pass2-families.md."
+reliability_note: |-
+  Tier 4, community-edited, carries its own 'may be currently outdated' editorial warning. Several
+  entries (Rainbow, Gem, Tank) are undated and given only a single dismissive sentence; not
+  created as families this pass on a significance/evidence basis, and recorded as leads rather
+  than silently dropped — see research/notes/models/global-pass2-families.md.
+
+  HELD AT TIER 4, and dependent claims downgraded, 2026-09-03 (issue E1). Six sibling Speedsolving
+  pages were given an individually-justified tier-3 override this pass because they are edit-
+  protected, revision-tracked, substantial, and carry no staleness banner. This page was
+  deliberately NOT upgraded. It self-flags the same 'may be currently outdated' staleness banner
+  already noted in this record.
+
+  Consequence: 9 attestation(s) resting solely on this source were downgraded from
+  `reported`/`probable` to `uncertain`, since vocab/confidence.yml defines `reported` as requiring
+  a tier-3 source and RESEARCH_SPEC line 103 states tier 4 'corroborates only, never establishes'.
+  The claims are not alleged to be false - no false claim was found in this set - only under-
+  evidenced for the confidence they carried.
+
+  To restore a higher confidence, add a tier 1-2 source rather than re-tiering this page. See
+  research/qc/evidence-tier-remediation-matrix.yml.
 status: sourced

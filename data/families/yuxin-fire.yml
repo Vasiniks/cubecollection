@@ -26,11 +26,11 @@ status: drafted
 
 attestations:
   /successor_family_id:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-yuxin-products]
   /positioning:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-yuxin-products]
   /description:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-yuxin-products]

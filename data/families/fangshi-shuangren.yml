@@ -31,13 +31,13 @@ status: drafted
 
 attestations:
   /positioning:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-fangshi]
     note: "'Regarded as an excellent cube on its first release' and its status as the
       manufacturer's most documented product across every source found this pass are read as
       flagship-tier positioning; no manufacturer-first-party statement was found."
   /aliases:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-fangshi]
   /description:
     confidence: reported

@@ -25,7 +25,7 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-shengshou-products]
     note: "The source states only 'before June 2013', a floor rather than an estimate of the
       true release date."
@@ -33,7 +33,7 @@ attestations:
     confidence: uncertain
     sources: [speedsolving-wiki-shengshou-products]
   /aliases:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-shengshou-products]
   /description:
     confidence: reported

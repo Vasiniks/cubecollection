@@ -31,14 +31,14 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-diansheng-products]
   /positioning:
     confidence: uncertain
     sources: [speedsolving-wiki-diansheng-products]
   /aliases:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-diansheng-products]
   /description:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-diansheng-products]

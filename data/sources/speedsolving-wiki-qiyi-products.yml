@@ -7,6 +7,7 @@
 id: speedsolving-wiki-qiyi-products
 entity: source
 kind: wiki
+tier: 3
 title: "QiYi — Speedsolving.com Wiki (3x3 product history and Sub-Brands section)"
 publisher: "Speedsolving.com"
 url: "https://www.speedsolving.com/wiki/index.php?title=QiYi"
@@ -45,11 +46,34 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, no citation trail for any release date. Used for
-  family-boundary structure (which named lines persisted across generations) and as a lead for
-  dating, corroborated where possible against TheCubicle's own retailer captures. The wiki's own
-  'Sub-Brands' heading lists X-Man Design and TheValk as parallel, separate QiYi sub-brands
-  rather than nesting TheValk inside X-Man Design — the evidentiary basis for treating
-  qiyi-valk's manufacturer_id as qiyi rather than x-man-design; see
-  research/notes/models/global-pass2-families.md."
+reliability_note: |-
+  Tier 4, community-edited, no citation trail for any release date. Used for family-boundary
+  structure (which named lines persisted across generations) and as a lead for dating,
+  corroborated where possible against TheCubicle's own retailer captures. The wiki's own 'Sub-
+  Brands' heading lists X-Man Design and TheValk as parallel, separate QiYi sub-brands rather than
+  nesting TheValk inside X-Man Design — the evidentiary basis for treating qiyi-valk's
+  manufacturer_id as qiyi rather than x-man-design; see research/notes/models/global-
+  pass2-families.md.
+
+  TIER OVERRIDE TO 3, applied 2026-09-03 (issue E1). `kind: wiki` derives to tier 4 by default,
+  and tier 4's definition targets 'unattributed wikis'. This specific page does not match that
+  description, and does match RESEARCH_SPEC line 102's tier-3 definition, 'long-form community
+  documentation': it is edit-protected rather than open-anonymous, revision-tracked, substantial,
+  and carries dated product entries. It shows NO 'may be currently outdated' banner - checked on
+  the LIVE page, not inferred from the archived excerpt.
+
+  SOURCE-SPECIFIC, never a kind-wide rule. `kind: wiki` remains tier 4 archive-wide. Sibling
+  Speedsolving pages that DO carry the staleness banner - speedsolving-wiki-witeden, -diansheng-
+  products, -shengshou-products, -yuxin-products - were deliberately left at tier 4 and their
+  dependent claims downgraded to `uncertain` instead. The discriminator is the banner and the
+  protection status, both independently verifiable, not the publisher's name.
+
+  This override cannot manufacture false certainty: tier 3 still fails rule 9, which requires a
+  tier 1 source or two independent tier 1-2 sources for `confirmed`. What it does is make
+  `reported` correct by definition for claims resting on this page - exactly what
+  vocab/confidence.yml already required ('Tier 3 source, uncontradicted and plausible').
+
+  PERMITTED claim types: product existence, naming, line membership, approximate chronology.
+  FORBIDDEN: specifications, corporate ownership or sub-brand relationships, day-precision dates.
+  See research/qc/evidence-tier-remediation-matrix.yml.
 status: sourced

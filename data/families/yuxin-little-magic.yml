@@ -29,7 +29,7 @@ status: drafted
 
 attestations:
   /positioning:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-yuxin-products]
   /description:
     confidence: reported

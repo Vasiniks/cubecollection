@@ -21,6 +21,23 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Unattributed community wiki, tier 4 by default. Provides the native name,
-  founding year, location, and product-focus history found nowhere else this pass."
+reliability_note: |-
+  Unattributed community wiki, tier 4 by default. Provides the native name, founding year,
+  location, and product-focus history found nowhere else this pass.
+
+  HELD AT TIER 4, and dependent claims downgraded, 2026-09-03 (issue E1). Six sibling Speedsolving
+  pages were given an individually-justified tier-3 override this pass because they are edit-
+  protected, revision-tracked, substantial, and carry no staleness banner. This page was
+  deliberately NOT upgraded. It carries a live 'This page may be currently outdated (since new
+  cubes/products may be released)' banner, verified directly on the live page on 2026-09-03, which
+  the previous reliability_note did not mention.
+
+  Consequence: 3 attestation(s) resting solely on this source were downgraded from
+  `reported`/`probable` to `uncertain`, since vocab/confidence.yml defines `reported` as requiring
+  a tier-3 source and RESEARCH_SPEC line 103 states tier 4 'corroborates only, never establishes'.
+  The claims are not alleged to be false - no false claim was found in this set - only under-
+  evidenced for the confidence they carried.
+
+  To restore a higher confidence, add a tier 1-2 source rather than re-tiering this page. See
+  research/qc/evidence-tier-remediation-matrix.yml.
 status: sourced

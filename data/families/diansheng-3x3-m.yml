@@ -20,8 +20,8 @@ status: drafted
 
 attestations:
   /positioning:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-diansheng-products]
   /description:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-diansheng-products]

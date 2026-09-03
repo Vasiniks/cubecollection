@@ -48,10 +48,10 @@ attestations:
     note: "Tier 2 retailer structured field, nothing contradicting, corroborated by tier 4
       wiki. Not confirmed absent a first-party Eastsheen source."
   /country:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-eastsheen]
   /founded:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-eastsheen]
   /ceased:
     confidence: unknown

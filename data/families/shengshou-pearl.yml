@@ -24,13 +24,13 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-shengshou-products]
   /positioning:
     confidence: uncertain
     sources: [speedsolving-wiki-shengshou-products]
   /aliases:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-shengshou-products]
   /description:
     confidence: reported

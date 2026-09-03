@@ -67,7 +67,7 @@ attestations:
     confidence: reported
     sources: [speedsolving-wiki-guoguan, moyucube-official-home-2022]
   /aliases:
-    confidence: probable
+    confidence: uncertain
     sources: [speedsolving-wiki-guoguan]
   /website:
     confidence: unknown

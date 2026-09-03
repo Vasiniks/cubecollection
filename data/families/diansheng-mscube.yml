@@ -48,7 +48,7 @@ attestations:
     note: "No explicit positioning statement from either source; recorded 'mainline' as the
       least overclaiming reading."
   /aliases:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-diansheng-products]
   /description:
     confidence: reported

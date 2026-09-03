@@ -36,7 +36,7 @@ attestations:
     note: "Tier 4 wiki (thin) corroborated by an independent tier 2 retailer structured field
       naming Maru as manufacturer of a real, specific historical product."
   /country:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-maru]
   /founded:
     confidence: unknown
