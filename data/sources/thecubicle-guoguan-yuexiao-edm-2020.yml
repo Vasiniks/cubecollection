@@ -1,0 +1,35 @@
+# source: thecubicle-guoguan-yuexiao-edm-2020
+# TheCubicle product page for the "GuoGuan YueXiao EDM," archived 2020-09-23. A third
+# documented generation within the guoguan-yuexiao family, with a historically notable claim
+# (world's first adjustable magnetic system) flagged as a lead for pass 3/4, not adjudicated
+# here.
+id: thecubicle-guoguan-yuexiao-edm-2020
+entity: source
+kind: retailer
+title: "GuoGuan YueXiao EDM - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/guoguan-yuexiao-edm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200923195610id_/https://www.thecubicle.com/products/guoguan-yuexiao-edm"
+excerpt: |-
+  Product Description: "The GuoGuan YueXiao EDM is the latest 3x3 released by GuoGuan. This
+  puzzle features fantastic innovations like the world's first adjustable (not interchangeable)
+  magnetic system. This, mixed with the ultra-lightweight feel and top-of-the-line performance
+  are sure to make for a great 3x3." Structured "Product Specifications": "Manufacturer:
+  GuoGuan / Type: 3x3 / Added: 2019-06-19 / Gross Weight: 198g / Dimensions: 55.5mm³ / Magnets:
+  Magnetic / Item Weight: 72.0g." A companion listing, "GuoGuan YueXiao E" (same Added date,
+  189g gross weight, no `Magnets` field), is described on its own page as "the unmagnetized
+  version of the YueXiao EDM ... retains the magnetic capsules found in the EDM, there are
+  simply no magnets in them" — a variant-level (magnetized/unmagnetized) distinction, not a
+  separate design, per DATA_MODEL §4.1.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. The 'world's first adjustable magnetic system' claim is comparative/superlative copy
+  (tier 4 per DATA_MODEL §5.2 rule 2), not independently verified this pass, and not treated
+  as an established fact — flagged as a historically notable lead for whoever researches
+  magnet-system history at model/variant level."
+status: sourced

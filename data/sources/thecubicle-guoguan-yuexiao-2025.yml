@@ -1,0 +1,34 @@
+# source: thecubicle-guoguan-yuexiao-2025
+# TheCubicle's product page for the original "GuoGuan YueXiao," archived 2025-08-30 — the
+# base URL has stayed live and been continuously re-captured since at least 2021, still
+# describing the original 2016 design as of this capture. Directly states the GuoGuan/MoYu
+# relationship already recorded (at `reported` confidence) in data/manufacturers/guoguan.yml,
+# independently of that record's own sources — corroborating, not contradicting.
+id: thecubicle-guoguan-yuexiao-2025
+entity: source
+kind: retailer
+title: "GuoGuan Yuexiao - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/guoguan-yuexiao"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250830215417id_/https://www.thecubicle.com/products/guoguan-yuexiao"
+excerpt: |-
+  Product Description: "The YueXiao is the first cube from GuoGuan, a new and exciting brand
+  by MoYu. It features an appearance and design similar to that of the Cong's Design MeiYing,
+  but with an all-new core design and more rounded edges. The cube turns very well right out
+  of the box, and it has a slightly scratchy feeling to it." Structured "Product
+  Specifications" table: "Manufacturer: GuoGuan / Added: 2018-09-11 / Gross Weight: 95g /
+  Dimensions: 56.0mm³ / Item Weight: 86.0g." 278 customer reviews recorded on this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose,
+  tier 2. The 'Added: 2018-09-11' field is this specific listing's catalogue date, not the
+  manufacturer's original release date — a companion page for the YueXiao Pro (cited
+  separately) independently describes the original YueXiao as 'one of the most iconic cubes
+  of 2016,' which is preferred for the family's `introduced` date. The GuoGuan/MoYu
+  relationship statement here ('a new and exciting brand by MoYu') independently corroborates,
+  without contradicting, the relationship already recorded in data/manufacturers/guoguan.yml."
+status: sourced

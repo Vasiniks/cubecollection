@@ -188,3 +188,48 @@ contradicting); `uncertain` on `huameng-tg`'s `positioning` specifically, since 
 calls it "flagship" by name the way YS3M's own page does.
 
 ---
+## GuoGuan — 1 family
+
+**Sub-brand caution applied.** GuoGuan's parent relationship to MoYu is already recorded at
+`reported` confidence in `data/manufacturers/guoguan.yml` (a dedicated Speedsolving wiki page,
+tier 4, stating the relationship directly, plus MoYu's own site grouping the name). This pass
+found **two further, independent tier 2 corroborations** of the same relationship —
+TheCubicle's own YueXiao product description ("the first cube from GuoGuan, a new and
+exciting brand by MoYu") and the YueXiao Pro M's packaging description ("includes... a
+collectible MoYu card"). Per this task's standing instruction, **I have not touched
+`data/manufacturers/guoguan.yml` or its confidence** — both corroborations are recorded in
+`guoguan-yuexiao.yml`'s own description as findings for a human to weigh, not acted on.
+
+**Candidates considered:** GuoGuan Xinghen (2x2 — **out of this archive's 3x3x3 scope
+entirely**, not evaluated as a family), GuoGuan Yuexiao (+ Pro, Pro M, EDM, E).
+
+**Accepted (1):** `guoguan-yuexiao` — the persisting family name across three retailer-
+documented generations: original YueXiao (2016), YueXiao Pro (2018, explicitly "a brand new
+mechanism... more rounded corner piece design" per TheCubicle — a genuine DATA_MODEL §4.2
+model-level change), and YueXiao EDM (2019, "the world's first adjustable... magnetic
+system," per the same retailer, not independently verified). "Pro M" and "E" are magnet-
+configuration variants of Pro and EDM respectively (TheCubicle's own copy: Pro M is "the
+factory-magnetized version of the YueXiao Pro"; E is "the unmagnetized version of the YueXiao
+EDM") — variant-level per DATA_MODEL §4.1, not separate generations, and not separately
+enumerated at this pass.
+
+**Boundary reasoning.** One family, one persisting name ("YueXiao") carried through direct
+retailer-stated generational succession — the same pattern already used for `moyu-weilong` in
+this register. No `successor_family_id` needed since all generations share the one family
+name; the Pro/EDM succession is pass-3 `model.succeeds` material.
+
+**Rejected:** GuoGuan Xinghen (2x2, not a 3x3x3 product — RESEARCH_SPEC §2.4 scope, not a
+family-boundary call).
+
+**Unresolved questions:** exact GuoGuan/MoYu corporate relationship confidence (flagged, not
+changed — see above); whether "YueXiao EDM" represents a further mechanism change from "Pro"
+or reuses Pro's mechanism with an added magnet system (pass-3 question); the "world's first
+adjustable magnetic system" superlative claim, not independently verified.
+
+**Sources added:** `thecubicle-guoguan-yuexiao-2025`, `thecubicle-guoguan-yuexiao-pro-2018`,
+`thecubicle-guoguan-yuexiao-edm-2020`.
+
+**Confidence:** `reported` throughout (tier 2 retailer sources, mutually consistent, nothing
+contradicting).
+
+---
