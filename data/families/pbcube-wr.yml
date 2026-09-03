@@ -1,0 +1,50 @@
+# family: pbcube-wr
+# Pass 2 (family enumeration). PBCube's only found 3x3 product — a single-item family on the
+# same "generic-but-named base product" precedent as `mojue-m3`/`escube-air`, since no second
+# PBCube-branded 3x3 was found this pass (`npm run wayback -- prefix
+# thecubicle.com/products/pbcube` returns exactly one URL).
+
+id: pbcube-wr
+entity: family
+manufacturer_id: pbcube
+name: "PBCube WR"
+aliases: []
+introduced:
+  value: "2026-08"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  TheCubicle's own product description (thecubicle-pbcube-wr-3x3-maglev-uv): "The PBCube WR
+  3x3 (20-Magnet Ball-Core + MagLev + UV) is the flagship release from MoYu's specialized
+  sub-brand, PBCube. Masterfully engineered and endorsed by 3x3 World Champion Yiheng Wang,
+  this puzzle delivers the high-caliber performance and tuning setup used on the world stage."
+  Structured spec table: "Manufacturer: MoYu PBCube / Type: 3x3 Speed Cubes / Added:
+  2026-08-25" — read directly off the same preserved archive capture already cited by that
+  source (its own excerpt does not separately quote the "Added" field). Listed "[Pre-Order]"
+  in its own page title as of this capture, so this is a very recently announced product, not
+  yet in wide circulation. The described magnet/MagLev/adjustment/coating configuration detail
+  is pass-3/4 material, not enumerated further here.
+
+  The name "WR" plausibly echoes MoYu's own "WeiLong WR" naming (see `moyu-weilong.yml`), but
+  no source found this pass states a direct design relationship between the two beyond the
+  shared corporate parent — not treated as a `succeeds`/`rebrand_of` lead without evidence.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "TheCubicle's own structured spec-table 'Added: 2026-08-25' field, truncated to
+      month precision and qualified `circa` since 'Added' is a listing date, not a stated
+      manufacturer release date. Not the suspect '2018-09-11' migration-artefact date flagged
+      elsewhere in this batch — a distinct, plausible, and very recent per-product date,
+      consistent with the page's own '[Pre-Order]' status."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Retailer's own description explicitly calls it 'the flagship release' — a direct
+      statement, but from a single tier 2 source, hence `reported` rather than `confirmed`."
+  /description:
+    confidence: reported
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]

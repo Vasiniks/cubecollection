@@ -1,0 +1,61 @@
+# family: lefun-3x3
+# Pass 2 (family enumeration). LeFun's generic base 3x3 mold, sold under a very large number
+# of individually-named print-theme/novelty-gift editions (a full `npm run wayback -- prefix
+# thecubicle.com/products/lefun` sweep returns over 60 URLs, the great majority of them
+# 3x3x3-shaped items each carrying a distinct decorative theme name). Boundary reasoning: two
+# of these editions were fetched and checked directly against the pass-1-sourced "Formula 3x3"
+# baseline (`thecubicle-lefun-formula-3x3`) — near-identical dimensions (~55.5-56.0mm) and
+# weight (~77-79g) under the same "Manufacturer: Lefun / Type: 3x3" spec-table fields, with the
+# only stated difference being the printed sticker/tile theme. Per DATA_MODEL §4.1 ("colourway
+# or sticker type" is explicitly variant-level, not model/family-level), this is treated as
+# ONE family — a generic base 3x3 sold across many decorative editions — rather than a
+# separate family per printed theme, on the same "single generic-but-named base product"
+# precedent as `cube4you-3x3` (one base mold, several named colourway/theme SKUs).
+
+id: lefun-3x3
+entity: family
+manufacturer_id: lefun
+name: "LeFun 3x3"
+aliases:
+  - "LeFun Formula 3x3"
+positioning: budget
+description: |-
+  LeFun's generic base 3x3, documented under dozens of individually-marketed print-theme/gift
+  editions at TheCubicle, of which two were fetched and compared directly this pass: **Formula
+  3x3** — "a puzzle that is intended to assist you with learning a blind recognition scheme...
+  The lettering is raised and printed directly on the puzzle" (55.5mm³, 77g,
+  `thecubicle-lefun-formula-3x3`) — and **Sudoku 3x3** — "a game within a puzzle! You can use
+  this 3x3 to do sudoku puzzles with the numbers printed on the pieces!" (56.0mm³, 78g,
+  `thecubicle-lefun-sudoku-3x3-2022`). The near-identical dimensions and weight across a
+  different printed theme support treating these as decorated editions of one base mold, not
+  separate designs.
+
+  A large further group of print-theme editions was found via slug enumeration but not
+  individually fetched this pass, on the same evidentiary pattern: Calendar Cube, Dollar Cube,
+  Hundred-Dollar Cube, Periodic Table Cube (+ V2), Number Cube, Respect Cube, Gradient Cube,
+  Christmas Cube (+ V2), Halloween Cube, Blue Sudoku Cube — all carrying "3x3" in their own
+  product name and, on the one further page checked at random (Calendar Cube, 56.0mm³, 79g,
+  "Type: 3x3 Speed Cubes Picture Cubes" per `thecubicle-lefun-calendar-cube-3x3-2026`), the
+  same dimensional/weight profile. Recorded here as
+  belonging to this family, pending pass-3/4 confirmation of each as a variant rather than
+  (rarely) a genuinely different mould.
+
+  **Explicitly excluded from this family** (different puzzle types or mechanisms, not
+  variants of a 3x3x3): LeFun's non-3x3 shape mods and other puzzle types found in the same
+  slug sweep — Fisher Cube, Windmill Cube, Dino Cube, Pyramorphix, Megamorphix, MoYan I (a
+  5-layered 12-sided puzzle, confirmed via `Type: Shape Mods` on its own product page),
+  Ghost/Master Pyraminx, Pyraminx Duo, Skewb, 2x2/2x2x3/3x3x2 items, 4x4/7x7 items, Venus
+  Cube, Barrel/Column Barrel Cube, keychain miniatures, and a "Deformed 3x3 Centrosphere"
+  (name alone suggests a shape mod, not independently confirmed this pass) — none evaluated
+  further here.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-lefun-formula-3x3, thecubicle-lefun-sudoku-3x3-2022, thecubicle-lefun-calendar-cube-3x3-2026]
+    note: "No source states a positioning tier; inferred `budget` from LeFun's overwhelmingly
+      novelty/gift-oriented catalogue and price point (typically single-digit USD)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-lefun-formula-3x3, thecubicle-lefun-sudoku-3x3-2022, thecubicle-lefun-calendar-cube-3x3-2026]

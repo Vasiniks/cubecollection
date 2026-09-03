@@ -1,0 +1,37 @@
+# family: kungfu-qinghong
+# Pass 2 (family enumeration). One of three distinctly-named KungFu 3x3 lines found this pass
+# (see also `kungfu-longyuan`, `kungfu-dot-cube`), corroborating a name already listed (without
+# detail) in data/manufacturers/kungfu.yml's own pass-1 wiki source.
+
+id: kungfu-qinghong
+entity: family
+manufacturer_id: kungfu
+name: "KungFu QingHong"
+aliases: []
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  TheCubicle's own description (thecubicle-kungfu-qinghong-3x3-2021): "The KungFu QingHong is
+  a new 3x3 from the popular Chinese brand KungFu. Designed with speedcubing performance in
+  mind, the QingHong 3x3 features solid performance at a low price point." No successor or
+  predecessor generation was found this pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-kungfu-qinghong-3x3-2021]
+    note: "Earliest capture found this pass is 2021-01-21. The product's own 'Added:
+      2018-09-11' spec-table field is deliberately not used — see
+      thecubicle-mojue-m3-2020's reliability_note for the recurring-date pattern found across
+      several unrelated products this batch."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-kungfu-qinghong-3x3-2021]
+    note: "Retailer's own description explicitly frames it as 'a low price point' product."
+  /description:
+    confidence: reported
+    sources: [thecubicle-kungfu-qinghong-3x3-2021]

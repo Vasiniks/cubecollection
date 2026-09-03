@@ -1,0 +1,38 @@
+# source: thecubicle-guojia-type-a-chun2-2020
+# TheCubicle product page for the "Type A Chun2 - DIY Kit," archived 2020-09-20 — the one
+# 3x3x3 product this pass located under GuoJia's own name at any retailer, and the first
+# tier 2 corroboration of the historically significant tier 4 brand-profile source already in
+# data/manufacturers/guojia.yml (baiqiang-guojia-mofang-profile).
+id: thecubicle-guojia-type-a-chun2-2020
+entity: source
+kind: retailer
+title: "Type A Chun2 - DIY Kit - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/type-a-chun2-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920110050id_/https://www.thecubicle.com/products/type-a-chun2-diy-kit"
+excerpt: |-
+  Product Description: "The Type A Chun2 is a 3x3 cube that features a unique internal
+  mechanism and steel parts for the edge pieces. It is currently only available in DIY Kit
+  form. Disclaimer: The steel parts provided are designed for the Type A Chun1 since the
+  Chun2's steel parts are no longer in production. The steel parts still fit, but glue may be
+  required to hold all of the steel pieces in place. The cube is usable without the steel
+  parts, although the feel of the cube is different without them." Structured "Specifications"
+  table: "Manufacturer: GuoJia / Type: DIY Kits / Added: 2018-11-07 / Gross Weight: 103g."
+  Marked "Discontinued" on this and the only other capture found.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own product-description prose and structured spec table, tier
+  2 — the first retailer-level corroboration this register has for GuoJia beyond the single
+  tier 4 Chinese brand-profile source (baiqiang-guojia-mofang-profile) already cited in
+  data/manufacturers/guojia.yml.
+  Directly names a predecessor product ('Type A Chun1') not otherwise documented in this
+  register, establishing a real design succession (Chun1 -> Chun2) within one product family.
+  The 'Added: 2018-11-07' field is a plausible, distinct per-product date (not the suspect
+  '2018-09-11' migration artefact flagged elsewhere in this batch), though it is still only a
+  TheCubicle catalogue date, not necessarily GuoJia's own original release date for either
+  Chun generation."
+status: sourced

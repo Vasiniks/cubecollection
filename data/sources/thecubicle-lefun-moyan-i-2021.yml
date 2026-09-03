@@ -1,0 +1,25 @@
+# source: thecubicle-lefun-moyan-i-2021
+# TheCubicle product page for the "Lefun MoYan I," archived 2021-03-05 — checked to confirm
+# this LeFun-named product, despite its "MoYan I" model-like name, is not a 3x3x3.
+id: thecubicle-lefun-moyan-i-2021
+entity: source
+kind: retailer
+title: "Lefun MoYan I - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-moyan-i"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210305042514id_/https://www.thecubicle.com/products/lefun-moyan-i"
+excerpt: |-
+  Product Description: "The Lefun MoYan I is an intricate 5-layered puzzle with 12 sides. It
+  features a black stickered, and a stickerless bright design." Structured "Specifications":
+  "Manufacturer: Lefun / Type: Shape Mods / Added: 2018-10-14 / Gross Weight: 113g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Confirms this is a 12-sided (dodecahedral, Megaminx-family) puzzle, not a 3x3x3, despite
+  carrying a distinct model-like name — excluded from `lefun-3x3` on that basis, and out of
+  this archive's scope entirely per RESEARCH_SPEC §2.4."
+status: sourced

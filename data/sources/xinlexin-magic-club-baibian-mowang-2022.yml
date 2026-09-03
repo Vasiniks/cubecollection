@@ -1,0 +1,35 @@
+# source: xinlexin-magic-club-baibian-mowang-2022
+# Xinlexin's own English-language corporate site, the "百变魔王" (Baibian Mowang) / "Magic
+# Club" brand's own product-listing page (bid=10), archived 2022-11-26 — a first-party tier 1
+# source. Resolves pass 1's own open question ("Whether '百变魔王' specifically includes
+# WCA-legal 3x3 speedcubes... is not established by the source located this pass") in the
+# negative: this brand's products are Magic Snake ("Moche") puzzles, not 3x3x3 cubes.
+id: xinlexin-magic-club-baibian-mowang-2022
+entity: source
+kind: manufacturer_official
+title: "百变魔王 (Magic Club) Product List - Guangdong Xinlexin Education and Culture Co.,Ltd"
+publisher: "Guangdong Xinlexin Education and Culture Co., Ltd."
+url: "http://www.xinlexin.com/en/ProductList.aspx?type=brand&bid=10"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221126225639id_/http://www.xinlexin.com/en/ProductList.aspx?type=brand&bid=10"
+excerpt: |-
+  Product listing under the "百变魔王" (Baibian Mowang) / "Magic Club" brand, one page of
+  eight product-code thumbnails (NO.809103/809106, NO.809102/809105, NO.809100, NO.809104,
+  NO.809501, NO.809401, NO.809301, NO.809201) captioned as a group: "百变魔王魔尺" (Baibian
+  Mowang Moche — "Moche" being the Chinese term for a Magic Snake / twistable segmented-ruler
+  puzzle, not a 3x3x3 cube).
+accessed: "2026-09-03"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "First-party manufacturer site, tier 1 per DATA_MODEL §5.1 for the
+  company's own product-line identity. Directly establishes that Xinlexin's '百变魔王'
+  (Baibian Mowang) brand line, the only cube-adjacent product line named in
+  data/manufacturers/xinlexin.yml's own tier 4 source, consists of Magic Snake ('Moche')
+  puzzles — a different twisty-puzzle category entirely, out of this archive's 3x3x3 scope per
+  RESEARCH_SPEC §2.4. A companion brand, '变形教室' / 'Magic Classroom' (`bid=9`), was checked
+  in the same session and found to be spinning tops and toy construction vehicles, likewise
+  not cube-related. Used to support the `xinlexin` zero-family finding in
+  research/notes/models/parallel-batch-B.md."
+status: sourced

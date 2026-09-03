@@ -391,3 +391,357 @@ Magnetic 3x3" (MFJS MF3RS base, magnetized by "Z-Cubes") and "Z Carbon Fiber 3x3
 W base, restickered) — see the Z-Cube section above.
 
 **Queue exhausted. Ready for reassignment.**
+
+# Second assignment (verypuzzle, limcube, escube, pbcube, xinlexin, guojia, lefun, kungfu)
+
+Merged to main as `cee929f` before this section began; that merge is not re-litigated here.
+Continuing to append to this same file per the coordinator's instruction.
+
+## VeryPuzzle — 0 families
+
+**Method.** Pass 1's own `data/manufacturers/verypuzzle.yml` already found, via TheCubicle's
+manufacturer-filter page, that VeryPuzzle's catalogue is shape mods and non-3x3 twisty puzzles
+with "no standard WCA-legal 3x3 ... seen under this filter," and deferred a final call to pass
+2. This pass fetched the full page (52 product URLs via `npm run wayback -- prefix
+thecubicle.com/products/verypuzzle`) and specifically checked the two most plausible
+candidates for an in-scope product: the one item with "3x3" literally in its own name, and the
+one item built on a 3x3x3-derived cutting style.
+
+**Candidates considered:**
+- **VeryPuzzle Slip 3x3** — the only product carrying "3x3" in its name. TheCubicle's own
+  description: "a 3x3 shape mod where all of the pieces rotate independently of the rest of
+  the puzzle" — a fundamentally non-standard mechanism (not a WCA-legal 3x3x3 permutation),
+  sold as a DIY/unstickered kit, no documented significance beyond generic description.
+  **Rejected.**
+- **VeryPuzzle Clover Cube** (+ Plus, Dodecahedron, Icosahedron D1, Octahedron, Octahedron
+  Fragmentation) — a 3x3x3-mechanism-based shape mod line, VeryPuzzle's most 3x3-adjacent
+  product family by mechanism. TheCubicle's own "Type" field classifies it as "Shape Mods," a
+  separate category from its own "3x3" WCA category, and its own product description is
+  generic novelty copy ("an ornate, shape-shifting puzzle") with no documented production
+  first, collector market, or design influence found this pass. **Rejected** on the same
+  evidentiary bar already applied to Z-Cube's shape mods last session (RESEARCH_SPEC §2.2:
+  "'It is interesting' is not a justification").
+- The remaining ~45 products (Geranium series, Tuttminx series, Lovebird, HATO Puzzle, Hex
+  Shaper, Seven Star UFO, Snow Mystery, Super Star, Truncated Icosidodecahedron) are
+  Megaminx-family or other non-cube twisty-puzzle types, out of this archive's 3x3x3 scope
+  entirely (RESEARCH_SPEC §2.4) — not individually fetched, consistent with their category
+  placement on the same manufacturer-filter page.
+
+**Zero families created — a genuine finding, not a gap**, on the same LanLan precedent: a
+specialist shape-mod/non-3x3 manufacturer whose entire found catalogue either falls outside
+this archive's 3x3x3 scope or fails the conditional-admission significance bar for the one
+3x3x3-mechanism line found. No `verypuzzle` family record was created.
+
+**Unresolved questions:** whether a deeper look (a first-party VeryPuzzle site, if one exists,
+was not located either pass) would surface documented significance for the Clover Cube line
+specifically — VeryPuzzle is a long-running specialist house per the task brief, and "first to
+market with a lobed/clover cutting style" is exactly the kind of claim that would flip this
+call if a citable source stated it. Recorded as an open lead, not chased further this pass.
+
+**Sources added:** `thecubicle-verypuzzle-slip-3x3-2020`, `thecubicle-verypuzzle-clover-
+cube-2020`. `thecubicle-verypuzzle-manufacturer-filter-2021` (pass 1, reused).
+
+**Confidence:** `reported` (tier 2 retailer sources, mutually consistent, nothing
+contradicting).
+
+---
+## LimCube — 0 families
+
+**Sub-brand caution note.** `data/manufacturers/limcube.yml` already records `kind: sub_brand`
+/ `parent_id: fangshi` at `confidence: confirmed`, from two independent tier 2 retailers. This
+pass did not touch that record; it only enumerated LimCube's product range for 3x3x3 content.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/limcube` (37 URLs) enumerates
+LimCube's full found catalogue: 2x2 Ghost Cube, 2x2 Transform Rhombohedron II, CakeZ (2x2x2
+Skewb Mech), Circle Pyramorphix I/II, Crucis Cube 3x3 Skewb V2, Fission Skewb, Hexagram
+Octahedron, Hollow XO Cube, HyperV 2x2x2 Offset Skewb Plus, Kaleidoscope Hex Prism, Master
+Mixup 0/I/II/III/VII, Rhombohedron III, SuperZ and WonderZ 2x2x2 Skewb Cubes.
+
+**Candidates considered:** the Master Mixup series (0 through VII) is the only line with real
+depth (5 numbered generations) and was checked directly. TheCubicle's own product description
+of Master Mixup I: "This may look like a **bandaged 10x10**, but this cube moves in ways that
+you would never expect!" — a 10x10x10-based mixup mechanism, not a 3x3x3 product at all,
+confirmed by the same page's own "Type: Shape Mods" field. Every other LimCube product found
+is either explicitly Skewb-family (Fission Skewb, Crucis Cube 3x3 **Skewb**, HyperV, SuperZ,
+WonderZ), 2x2-based (Ghost Cube, Circle Pyramorphix), or another non-3x3x3 polyhedron
+(Rhombohedron, Octahedron, Hex Prism) — none 3x3x3-mechanism-based, all out of this archive's
+scope per RESEARCH_SPEC §2.4 ("Puzzles other than 3×3×3").
+
+**Zero families created — a genuine finding.** LimCube's entire found catalogue, across every
+line checked, is built on 2x2x2, Skewb, or 10x10x10 mechanisms — none of it is a 3x3x3 product,
+so no family-boundary question even arises. No `limcube` family record was created.
+
+**Rejected:** all of the above, on scope grounds rather than a family-boundary judgement call.
+
+**Sources added:** `thecubicle-limcube-master-mixup-i-2023` (also independently corroborates
+the existing FangShi parent-manufacturer field, consistent with, not contradicting, the
+existing confirmed relationship).
+
+**Confidence:** `confirmed`-adjacent — the scope exclusion rests on direct retailer
+"Type"/description statements for the products actually checked, consistent across every one.
+
+---
+## ESCube — 2 families
+
+**Method.** Pass 1's own `data/manufacturers/escube.yml` already identified two named 3x3
+lines (Air, ES3) via product-slug enumeration and a second independent retailer
+(SpeedCubeShop) confirming ES3 as "the debut release for the new brand, ES Cube!" This pass
+confirmed the full product-slug range (`npm run wayback -- prefix
+thecubicle.com/products/escube`, 4 URLs total — a genuinely thin footprint, exactly the "do
+not manufacture families because the manufacturer exists" caution the task brief raised) and
+fetched TheCubicle's own Air page directly for its own dating.
+
+**Candidates considered:** ESCube ES3 (+ base magnetic, 8-Magnet Ball-Core, 20-Magnet
+Ball-Core UV-Coated configurations), ESCube Air (20-Magnet Ball-Core configuration found).
+
+**Accepted (2):** `escube-es3` (earlier — SpeedCubeShop's own capture, dated 2025-06-17,
+calls it "the debut release for the new brand"), `escube-air` (later — TheCubicle's own spec
+table reads "Added: 2025-11-13", and its own description calls it "This latest release from
+ESCube").
+
+**Boundary call: kept as two families, not one line/generation.** No source frames Air as a
+direct successor generation of ES3 by name (unlike, say, `senhuan-mars`/`mars-s` or
+`guoguan-yuexiao`'s Pro/EDM progression) — they are two differently-named, differently-priced
+lines sold by the same very-recently-launched manufacturer, on the same reasoning already
+applied to HuaMeng's TG/YS3M split this session.
+
+**Rejected:** none — the entire found catalogue (4 URLs) resolved cleanly into these two
+families with no undated or ambiguous leftover.
+
+**Unresolved questions:** whether ESCube has released anything since (this is an extremely
+recently-founded brand per both retailers' own framing, and this pass's captures run only to
+around November 2025); exact relationship, if any, between the Air and ES3 lines beyond
+sequential release order.
+
+**Sources added:** none new — both families cite pass-1 sources already in the archive
+(`thecubicle-escube-air-3x3-20-magnet-ball-core`, `speedcubeshop-es3-debut-brand-2025`); the
+Air family's `introduced` date was read directly off the already-preserved capture, per the
+same "cite the existing source, don't duplicate the archive_url" practice used for HuaMeng TG
+last session.
+
+**Confidence:** `reported` throughout (tier 2 retailer sources, mutually consistent, nothing
+contradicting; genuinely recent product with thin but directly-dated evidence).
+
+---
+## PBCube — 1 family
+
+**Sub-brand caution note.** `data/manufacturers/pbcube.yml` already records `kind: sub_brand`
+/ `parent_id: moyu` at `confidence: probable`, from a direct retailer statement ("MoYu's
+specialized sub-brand, PBCube"). This pass found no second product and no reason to revisit
+that reading; it is left untouched.
+
+**Candidates considered:** PBCube WR — the only PBCube product-slug capture found at all
+(`thecubicle.com/products/pbcube*` returns exactly one URL, confirming the same thin-footprint
+caution the task brief raised).
+
+**Accepted (1):** `pbcube-wr`, explicitly "the flagship release from MoYu's specialized
+sub-brand, PBCube" per TheCubicle's own copy, added 2026-08-25 and still listed "[Pre-Order]"
+on the only capture found — a genuinely brand-new, not-yet-widely-available product.
+
+**Rejected:** none — no second product to weigh.
+
+**Unresolved questions:** whether "WR" echoes MoYu's own WeiLong WR naming in any way beyond
+coincidence/shared corporate parent (flagged as an unactioned lead in the family's own
+description, not treated as a relationship without evidence).
+
+**Sources added:** none new — cites the existing pass-1 source
+(`thecubicle-pbcube-wr-3x3-maglev-uv`); the `introduced` date was read directly off the
+already-preserved capture.
+
+**Confidence:** `reported` throughout (single tier 2 source, nothing contradicting).
+
+---
+## GuoJia — 1 family
+
+**Method note — a useful discovery technique for the rest of this batch.** TheCubicle's own
+manufacturer-filter dropdown (captured in full while checking VeryPuzzle, see that section)
+lists every manufacturer value in its own product taxonomy, including several this register
+had only found via Chinese-language search or slug-guessing: GuoJia, KungFu, and LeFun are all
+independently confirmed present in that dropdown, meaning TheCubicle carried at least one
+tagged product from each at some point. This resolved pass 1's own open question for GuoJia
+("Activity within the 2016-2026 window is unknown") — it was carried, if thinly.
+
+**Candidates considered:** filtering `thecubicle.com/collections/all/manufacturer_guojia`
+(2021 capture) to exactly two products: **GuoJia Square-1** (not a 3x3x3, out of scope,
+rejected on scope grounds) and **Type A Chun2 - DIY Kit**.
+
+**Accepted (1):** `guojia-type-a-chun` — TheCubicle's own description confirms this is
+genuinely "a 3x3 cube," and its own disclaimer text names an undocumented predecessor
+generation directly: "The steel parts provided are designed for the Type A Chun1 since the
+Chun2's steel parts are no longer in production" — a real design succession (Chun1 → Chun2)
+under one persisting name, the same "one family, direct succession language" pattern used
+repeatedly this batch.
+
+**Historically significant, thinly evidenced.** This is the first tier 2 corroboration this
+register has for GuoJia at all, beyond the single tier 4 Chinese brand-profile source
+(`baiqiang-guojia-mofang-profile`) already in `data/manufacturers/guojia.yml`, which frames
+GuoJia as "the earliest domestic 3x3 cube released specifically for speedcubing players"
+(2006) with a 19-model range across several series. A plausible but **unconfirmed** link
+between this product's "Type A" naming and that source's "甲" (jiǎ, "first/A") series naming
+is noted in `guojia-type-a-chun.yml`'s own description as a lead, not asserted as fact.
+
+**Rejected:** GuoJia Square-1 (not a 3x3x3, RESEARCH_SPEC §2.4 scope).
+
+**Unresolved questions:** the relationship (if any) between "Type A" and the brand-profile
+source's "甲"-numbered series; whether GuoJia's wider 19-model range includes further 3x3
+products not carried by TheCubicle (a Chinese-language retailer sweep was not run this pass —
+time budget); exact introduction date for either Chun generation.
+
+**Sources added:** `thecubicle-guojia-manufacturer-filter-2021`,
+`thecubicle-guojia-type-a-chun2-2020`.
+
+**Confidence:** `uncertain` on `introduced`/`positioning`; `reported` on `description`.
+
+---
+## Xinlexin — 0 families
+
+**Pass 1's own open question resolved, in the negative.** `data/manufacturers/xinlexin.yml`
+found a single tier 4 Chinese brand-directory profile naming "百变魔王" (Baibian Mowang) as
+Xinlexin's cube-branded product line, but explicitly left open "whether '百变魔王'
+specifically includes WCA-legal 3x3 speedcubes, as opposed to non-WCA novelty cubes, snake
+puzzles, or other toy categories entirely." This pass went to Xinlexin's own first-party
+corporate site (xinlexin.com, still live with wayback captures through at least 2025) and
+found the answer directly.
+
+**Method.** Xinlexin's own English-language site has a four-brand navigation menu (GUDI
+Building Blocks, Magic Classroom, Magic Club, a spinning-top series), each pairing a Chinese
+brand name with an internal product-filter ID. "百变魔王" maps to the "Magic Club" label
+(`bid=10`) — fetched directly.
+
+**Finding.** The "百变魔王" (Magic Club) product listing's own caption reads "百变魔王魔尺"
+(Baibian Mowang **Moche**) — "Moche" (魔尺) is the Chinese term for a **Magic Snake** puzzle
+(a twistable segmented-ruler toy), not a 3x3x3 cube. Every product thumbnail on the page's own
+listing is a Moche/Magic Snake SKU. The companion "变形教室"/"Magic Classroom" brand (`bid=9`)
+was also checked and found to be spinning tops and toy construction vehicles — also unrelated.
+
+**Zero families created — a genuine finding**, and a cleaner one than most in this batch: this
+is not a case of thin evidence or ambiguous scope, but a first-party source directly and
+specifically resolving the exact open question pass 1 raised. Xinlexin is a real, verified
+general toy manufacturer (confirmed by its own corporate site, independent of the tier 4
+brand-directory profile) but has no documented 3x3x3 speedcube product at all — its "百变魔王"
+line is Magic Snake puzzles, entirely out of this archive's scope (RESEARCH_SPEC §2.4,
+"Puzzles other than 3×3×3"). No `xinlexin` family record was created.
+
+**Unresolved questions:** whether Xinlexin's "GUDI Building Blocks" brand (unrelated to
+puzzles, not checked) or any other unlisted brand/product includes a 3x3x3 cube — considered
+very unlikely given the company's own four-brand structure is now fully accounted for, but not
+exhaustively verified.
+
+**Sources added:** `xinlexin-en-brand-nav-2022`, `xinlexin-magic-club-baibian-mowang-2022` —
+both first-party (tier 1) manufacturer sources, an upgrade in evidence quality over pass 1's
+single tier 4 source for this manufacturer.
+
+**Confidence:** the zero-family conclusion rests on tier 1 first-party evidence, directly on
+point — the strongest-evidenced zero-family finding in this batch.
+
+---
+## LeFun — 1 family
+
+**Method and a boundary call worth flagging explicitly.** `npm run wayback -- prefix
+thecubicle.com/products/lefun` returns well over 60 URLs — by far the largest single-
+manufacturer product sweep in either of my assignments. The great majority are individually-
+named print-theme/novelty-gift 3x3x3 SKUs (Sudoku, Calendar, Dollar, Hundred-Dollar, Periodic
+Table ×2, Number, Respect, Gradient, Christmas ×2, Halloween, Blue Sudoku), plus a separate
+group of genuinely different puzzle types (Fisher Cube, Windmill Cube, Dino Cube,
+Pyramorphix, Megamorphix, MoYan I — a 12-sided dodecahedral puzzle confirmed via its own
+"Type: Shape Mods" field despite its model-like name — Pyraminx Duo/Ghost/Master, Skewb,
+2x2/2x2x3/3x3x2/4x4/7x7 items, Venus Cube, Barrel Cubes, keychains).
+
+**Rather than create one family per printed theme, I fetched three of the plain-3x3-shaped
+listings directly and compared them** (Formula, Sudoku, Calendar Cube): all three carry
+near-identical dimensions (~55.5-56.0mm) and weight (~77-79g) under the same "Manufacturer:
+Lefun / Type: 3x3[...]" spec-table fields, with the only stated difference being the printed
+sticker/tile theme. Per DATA_MODEL §4.1 ("colourway or sticker type" is explicitly variant-
+level), I treated this as **one family** — a generic base 3x3 mold sold across many decorated
+editions — rather than a family per theme, on the same reasoning already used for
+`cube4you-3x3`. This is a considered boundary call, not a shortcut: creating 10+ near-identical
+single-SKU "families" here would have been the kind of coverage-by-lowering-the-bar the task
+brief and PRODUCT.md both warn against, and would have obscured rather than revealed the
+actual shape of this manufacturer's catalogue.
+
+**Accepted (1):** `lefun-3x3`, spanning Formula (BLD-training lettering) and the print-theme
+gift range, with the genuinely different-mechanism/shape-mod items explicitly excluded in the
+family's own description rather than silently dropped.
+
+**Rejected:** every non-3x3x3 item found (listed above) — scope exclusions, not a
+model/variant-boundary call.
+
+**Unresolved questions:** whether any of the untested print-theme editions (Dollar, Periodic
+Table, etc.) turns out to differ dimensionally or mechanically from the three checked — a
+pass-3/4 question when those variants are actually enumerated; whether "Formula" specifically
+(a functional BLD-training tool, not merely decorative) should eventually be split into its
+own model at that pass, given it serves a different purpose than the purely-decorative gift
+editions, even though this pass keeps it in the same family.
+
+**Sources added:** `thecubicle-lefun-sudoku-3x3-2022`, `thecubicle-lefun-calendar-cube-
+3x3-2026`, `thecubicle-lefun-moyan-i-2021`. `thecubicle-lefun-formula-3x3` (pass 1, reused).
+
+**Confidence:** `reported` throughout (tier 2 retailer sources, mutually consistent
+dimensional/weight evidence across three separate listings).
+
+---
+## KungFu — 3 families
+
+**Method.** `data/manufacturers/kungfu.yml` already named two 3x3s (QingHong, LongYuan) via
+its single tier 4 Speedsolving wiki source. `npm run wayback -- prefix
+thecubicle.com/products/kungfu` (9 URLs) independently corroborated both at a tier 2 retailer
+and surfaced a third, undocumented-by-the-wiki 3x3: **Dot Cube**.
+
+**Candidates considered:** KungFu QingHong, KungFu LongYuan, KungFu Dot Cube, KungFu 3x3 Gear
+Cube (a gear-mechanism puzzle, not a 3x3x3 — rejected on scope grounds), KungFu YueHun 2x2
+(the wiki's own "YueHan" appears to be a transliteration variant of the same product; out of
+scope as a 2x2 either way), KungFu CangFeng/JuQue 4x4s (out of scope).
+
+**Accepted (3):** `kungfu-qinghong` ("solid performance at a low price point"),
+`kungfu-longyuan` ("a very low price point... inexpensive first speedcube for beginners"),
+`kungfu-dot-cube` (a removable-tile novelty colour-scheme 3x3, not previously documented in
+this register at all). No source relates any of the three to the others as a succession or
+naming variant — each is its own distinctly-named, independently-positioned budget product,
+so each is its own family (the same "distinctly named, no stated succession" reasoning used
+for ShengShou's several independent lines in the main pass-2 log).
+
+**Rejected:** KungFu 3x3 Gear Cube (a gear-mechanism puzzle — RESEARCH_SPEC §2.4 scope, not a
+3x3x3 despite the "3x3" in its own name, the same pattern already seen with Z-Cube's "Slip
+3x3" and VeryPuzzle's "Slip 3x3" last/this session); KungFu YueHun/YueHan 2x2 and
+CangFeng/JuQue 4x4s (out of 3x3x3 scope entirely).
+
+**Unresolved questions:** exact introduction dates for all three (capture-date evidence only,
+and the suspect "Added: 2018-09-11" field appears on all three — not used); whether "YueHun"
+(TheCubicle's product slug) and "YueHan" (the wiki's spelling) are the same 2x2 product or two
+different ones — immaterial to this pass's 3x3x3 scope either way, but flagged for whoever
+eventually researches KungFu's 2x2 range.
+
+**Sources added:** `thecubicle-kungfu-qinghong-3x3-2021`, `thecubicle-kungfu-longyuan-
+3x3-2020`, `thecubicle-kungfu-dot-cube-3x3-2020`.
+
+**Confidence:** `reported` on `description`/`positioning` (tier 2 retailer sources,
+corroborating the existing tier 4 wiki source for two of three); `uncertain` on `introduced`
+throughout.
+
+---
+
+## Second assignment complete — summary
+
+All eight assigned manufacturers researched: `verypuzzle` (0 — genuine finding), `limcube`
+(0 — genuine finding), `escube` (2), `pbcube` (1), `xinlexin` (0 — genuine finding, first-party
+resolved), `guojia` (1), `lefun` (1, deliberately covering ~12 print-theme editions as one
+family), `kungfu` (3). **8 families total across 8 manufacturers, 3 of them genuine
+zero-family findings** — exactly the pattern the coordinator's brief predicted for this batch.
+
+**Sub-brand caution:** `limcube` and `pbcube` sub-brand/parent relationships were left
+untouched throughout — no new evidence bearing on either surfaced this session (LimCube's
+zero-family result reinforces, without changing confidence on, its existing FangShi
+attribution; PBCube's single product reinforces, without changing confidence on, its existing
+MoYu attribution).
+
+**A useful discovery technique surfaced this session:** TheCubicle's own manufacturer-filter
+dropdown, captured in full while researching VeryPuzzle, lists every brand value in its
+product taxonomy at once — this is how `guojia`'s and `kungfu`'s TheCubicle footprints were
+confirmed to exist at all, rather than by guessing product-slug prefixes blind. Worth reusing
+for any future thin/obscure manufacturer in this register.
+
+**The `Added: 2018-09-11` data trap flagged last session recurred throughout this batch**
+(KungFu's all three products, again) — continuing to refuse it as a date source per the
+coordinator's note that this warning was propagated to Agent A.
+
+**Queue exhausted. Ready for reassignment.**
