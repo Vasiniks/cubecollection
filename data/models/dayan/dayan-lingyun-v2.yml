@@ -1,0 +1,48 @@
+# model: dayan-lingyun-v2
+# Pass 3 (model enumeration). TheCubicle's own copy: "This is the second version of the DaYan
+# LingYun. It features torpedoes" -- an explicit piece-geometry change (anti-pop torpedo
+# pieces added), model-level under DATA_MODEL §4.2. See research/notes/models/dayan-pass3.md.
+id: dayan-lingyun-v2
+entity: model
+family_id: dayan-lingyun
+manufacturer_id: dayan
+name: "DaYan LingYun V2"
+aliases:
+  - "LingYun Version 2"
+  - "DaYan LingYun II"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: community_convention
+announced:
+  value: "2011-09"
+  precision: month
+  qualifier: circa
+description: |-
+  TheCubicle's own copy: "This is the second version of the DaYan LingYun. It features
+  torpedoes and has a distinct, crispy feel. This cube is light and quick after lubing and is
+  slightly smaller than its cousins, the GuHong and Zhanchi" (thecubicle-dayan-lingyun-v2) —
+  corroborating the wiki's claim of added torpedo (anti-pop) pieces. SpeedCubeShop
+  independently sells the same generation as "DaYan LingYun II". September 2011 date per the
+  Speedsolving wiki ("included torpedo pieces, preventing (most) pops").
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-lingyun-v2]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-lingyun-v2, speedsolving-wiki-dayan-products]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+relationships:
+  - type: succeeds
+    target: dayan-lingyun-v1
+    target_entity: model
+    note: "Both TheCubicle and the wiki explicitly identify this as 'the second version of the
+      DaYan LingYun,' adding torpedo pieces the first generation lacked."

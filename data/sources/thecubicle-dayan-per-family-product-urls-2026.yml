@@ -1,0 +1,51 @@
+# source: thecubicle-dayan-per-family-product-urls-2026
+# Pass 3 (model enumeration). CDX `prefix` enumerations of TheCubicle's own product-URL space
+# for six DaYan 3x3 families, run individually per family (rather than one truncated
+# collection-wide sweep) on 2026-09-03, to establish which named generations each family
+# actually has a retailer SKU for. Existence-level evidence only; no product descriptions are
+# quoted here (see the per-family *-descriptions.yml sources for those).
+id: thecubicle-dayan-per-family-product-urls-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/dayan-{taiyan,xiangyun,lingyun,lunhui,panshi,zhanchi}* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-lingyun-v2"
+preservation_method: excerpt
+excerpt: |-
+  `npm run wayback -- prefix thecubicle.com/products/dayan-taiyan --limit 300` returns exactly
+  one 3x3 product path: dayan-taiyan.
+
+  `npm run wayback -- prefix thecubicle.com/products/dayan-xiangyun --limit 300` returns
+  exactly one 3x3 product path: dayan-xiangyun-3x3 (earliest capture 2020-09-27).
+
+  `npm run wayback -- prefix thecubicle.com/products/dayan-lingyun --limit 300` returns two
+  paths, both a single generation: dayan-lingyun-v2 (earliest capture 2019-07-18) and
+  dayan-lingyun-v2-diy-kit. No "dayan-lingyun" (v1, unsuffixed) product page was found at this
+  retailer; LingYun V1's existence rests on speedsolving-wiki-dayan-products alone.
+
+  `npm run wayback -- prefix thecubicle.com/products/dayan-lunhui --limit 300` returns three
+  paths: dayan-lunhui (earliest capture 2020-11-11), dayan-lunhui-2017, and
+  dayan-lunhui-diy-kit.
+
+  `npm run wayback -- prefix thecubicle.com/products/dayan-panshi --limit 300` returns two
+  paths: dayan-panshi (earliest capture 2020-09-22) and dayan-panshi-diy-kit.
+
+  `npm run wayback -- prefix thecubicle.com/products/dayan-zhanchi --limit 300` returns:
+  dayan-zhanchi, dayan-zhanchi-2017, dayan-zhanchi-2018, dayan-zhanchi-diy-kit,
+  dayan-zhanchi-pro-m-3x3, and dayan-zhanchi-v5-m-3x3-{standard,premium,fancy}. No
+  "dayan-zhanchi-42mm" or "dayan-zhanchi-50mm" product path was found at this retailer under
+  this prefix depth; those two exist only in the SpeedCubeShop 2015 captures (see
+  speedcubeshop-dayan-zhanchi-size-diy-kits) and are recorded as "not found at TheCubicle",
+  never as "did not exist".
+preservation_note: "CDX prefix enumeration output (reproducible via the commands quoted above)
+  is the primary evidence; the excerpt reproduces the path lists directly, per the same
+  allowance used by thecubicle-dayan-collection-2025 and thecubicle-dayan-guhong-product-urls."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer catalogue structure. Used only to establish
+  which named generations exist as distinct SKUs at this retailer and their earliest known
+  circulation floor; never used as a release date."
+status: sourced

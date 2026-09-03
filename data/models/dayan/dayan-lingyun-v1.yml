@@ -1,0 +1,40 @@
+# model: dayan-lingyun-v1
+# Pass 3 (model enumeration). DaYan's third numbered product. Rests on
+# speedsolving-wiki-dayan-products alone (tier 3); no retailer capture of an unsuffixed
+# "dayan-lingyun" (as opposed to "-v2") product page was found at TheCubicle or SpeedCubeShop
+# under the prefixes swept this pass. See research/notes/models/dayan-pass3.md.
+id: dayan-lingyun-v1
+entity: model
+family_id: dayan-lingyun
+manufacturer_id: dayan
+name: "DaYan LingYun"
+aliases:
+  - "DaYan III LingYun"
+  - "LingYun Version 1"
+scope_class: core
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2010"
+  precision: year
+  qualifier: circa
+description: |-
+  DaYan's third numbered product ("DaYan III LingYun" per dayancube-official-2013). Per the
+  Speedsolving wiki: "LingYun Version 1 ... Released 2010. This cube was fast but prone to
+  popping. It was slightly smaller, yet heavier than the GuHong, with similar pieces." No
+  retailer product page distinct from "dayan-lingyun-v2" was located this pass
+  (thecubicle-dayan-per-family-product-urls-2026): existence rests on the wiki alone, at tier
+  3. Not to be confused with the "DaYan LingYun II" naming SpeedCubeShop uses for V2.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-per-family-product-urls-2026]

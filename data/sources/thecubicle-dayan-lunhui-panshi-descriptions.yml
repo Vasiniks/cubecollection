@@ -1,0 +1,34 @@
+# source: thecubicle-dayan-lunhui-panshi-descriptions
+# Pass 3 (model enumeration). TheCubicle's own product-description text for DaYan LunHui 2017
+# and DaYan PanShi, fetched directly via `npm run wayback -- get` on 2026-09-03. The PanShi
+# capture independently corroborates the family record's discontinuation account.
+id: thecubicle-dayan-lunhui-panshi-descriptions
+entity: source
+kind: retailer
+title: "DaYan LunHui 2017 and DaYan PanShi product pages — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-panshi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922id_/https://www.thecubicle.com/products/dayan-panshi"
+excerpt: |-
+  DaYan LunHui 2017, captured 2020-09-20 (https://web.archive.org/web/20200920id_/https://www.thecubicle.com/products/dayan-lunhui-2017):
+  "The DaYan LunHui 2017 is a new 3x3 that retains the same dense feel of the original LunHui."
+
+  DaYan PanShi, captured 2020-09-22 (https://web.archive.org/web/20200922id_/https://www.thecubicle.com/products/dayan-panshi):
+  "The DaYan PanShi is DaYan's highly anticipated 6th cube in its 3x3 series. As the name
+  suggests, the PanShi is intended to be sturdy as a rock. As of early 2014, production of the
+  DaYan PanShi has been stopped indefinitely by the manufacturer. As we are no longer able to
+  obtain more of this product, it has been discontinued."
+preservation_note: "Two separate `npm run wayback -- get` fetches, condensed into one source
+  record."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product copy. The PanShi excerpt is an
+  independent tier-2 statement that the manufacturer itself stopped production 'as of early
+  2014' — corroborating, not contradicting, the family record's existing note that
+  circulation was established 'by August 2013' with the February 2013 launch month resting on
+  a single tier-4/3 wiki claim only."
+status: sourced

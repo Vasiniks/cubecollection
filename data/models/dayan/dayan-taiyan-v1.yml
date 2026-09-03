@@ -1,0 +1,43 @@
+# model: dayan-taiyan-v1
+# Pass 3 (model enumeration). DaYan's first cube, single-generation. Existence corroborated by
+# a TheCubicle product page; the naming-origin narrative rests on the Speedsolving wiki alone.
+# Notably absent from dayancube-official-2013's own product list. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-taiyan-v1
+entity: model
+family_id: dayan-taiyan
+manufacturer_id: dayan
+name: "DaYan TaiYan"
+aliases:
+  - "Dayan 3x3"
+scope_class: core
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2011"
+  precision: year
+  qualifier: circa
+description: |-
+  DaYan's first cube, the family's only generation. Per the Speedsolving wiki: "The Dayan
+  Taiyan was the first cube made by Dayan. It was originally just called 'Dayan 3x3,' however
+  it was mistranslated as 'Taiyan.' In 2011 'Taiyan'... was adopted as the official model
+  name... They are now quite rare to find and can be discerned from other Dayan cubes by their
+  lack of Florain holes." A TheCubicle product page ("dayan-taiyan") was found under this
+  retailer's naming (thecubicle-dayan-per-family-product-urls-2026), corroborating existence,
+  though DaYan's own 2013 official site (dayancube-official-2013) does not list "TaiYan" (or
+  "Dayan 3x3") among its named products at all — noted, not resolved, as a gap in tier-1
+  corroboration for this specific family/model, consistent with the wiki's own framing of it
+  as DaYan's earliest and rarest product.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-per-family-product-urls-2026]
