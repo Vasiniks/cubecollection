@@ -1,0 +1,38 @@
+# source: thecubicle-mohuan-shousu-chufeng-2020
+# TheCubicle's only found product page for "MoHuan ShouSu ChuFeng," archived 2020-09-18 — the
+# only MoHuanShouSu 3x3 product-slug capture found this pass (the manufacturer's other found
+# slug, mohuan-shousu-chuwen-2x2, is a 2x2, out of scope). Directly states MoHuanShouSu is a
+# "MoYu sub-branded" product — the same pattern of direct retailer evidence found for MoJue
+# this session, materially stronger than the structural-analogy reasoning
+# data/manufacturers/mohuanshousu.yml currently rests its `kind: sub_brand` reading on.
+id: thecubicle-mohuan-shousu-chufeng-2020
+entity: source
+kind: retailer
+title: "MoHuan ShouSu ChuFeng - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mohuan-shousu-chufeng-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918232251id_/https://www.thecubicle.com/products/mohuan-shousu-chufeng-3x3"
+excerpt: |-
+  Product Description: "The MoHuan ShouSu ChuFeng is a new MoYu sub-branded 3x3 that was
+  designed by Zhang HaiXu, the former 4x4 world record holder. The ChuFeng offers many premium
+  design features at a mid-range price, and it has a unique crunchy feel." Structured "Product
+  Specifications" table: "Manufacturer: MoHuan ShouSu / Type: 3x3 / Added: 2018-09-11 / Gross
+  Weight: 100g / Dimensions: 56.0mm³ / Item Weight: 82.0g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own product-description prose directly and explicitly calls
+  MoHuan ShouSu a 'MoYu sub-branded' product — tier 2, a specific retailer statement, not an
+  inference from naming or category grouping. Materially stronger evidence for the parent
+  relationship than the structural-analogy reasoning data/manufacturers/mohuanshousu.yml
+  currently records at `confidence: uncertain`; flagged in
+  research/notes/models/parallel-batch-B.md for a human to weigh, not acted on directly (out
+  of this pass's write lane). The 'Added: 2018-09-11' field is treated as unreliable for
+  dating this product — see thecubicle-mojue-m3-2020's reliability_note for the same
+  recurring-date pattern found across several unrelated products this pass — and is not used
+  for this family's `introduced` field. 'Mid-range price' is used for `positioning`, not
+  `flagship`."
+status: sourced

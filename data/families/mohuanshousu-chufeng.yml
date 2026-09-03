@@ -1,0 +1,52 @@
+# family: mohuanshousu-chufeng
+# Pass 2 (family enumeration). MoHuanShouSu's only found 3x3 product — a single-item family
+# on the same "generic-but-named base product" precedent as `mojue-m3`/`cube4you-3x3`, since no
+# second MoHuanShouSu-branded 3x3 was found this pass.
+
+id: mohuanshousu-chufeng
+entity: family
+manufacturer_id: mohuanshousu
+name: "MoHuan ShouSu ChuFeng"
+aliases:
+  - "MoHuanShouSu ChuFeng"
+  - "Chu Feng"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  The only MoHuanShouSu-branded 3x3 product found this pass (`npm run wayback -- prefix
+  thecubicle.com/products/mohuan` returns exactly two products: this 3x3 and a separate,
+  out-of-scope `mohuan-shousu-chuwen-2x2`). TheCubicle's own description, earliest capture
+  2020-09-18 (thecubicle-mohuan-shousu-chufeng-2020): "The MoHuan ShouSu ChuFeng is a new MoYu
+  sub-branded 3x3 that was designed by Zhang HaiXu, the former 4x4 world record holder. The
+  ChuFeng offers many premium design features at a mid-range price, and it has a unique
+  crunchy feel." The "mid-range price" framing is used for `positioning: mainline` rather than
+  `flagship`.
+
+  **Significant unresolved lead, flagged rather than acted on.** As with MoJue this session
+  (see `mojue-m3.yml`), this retailer description directly and explicitly calls MoHuanShouSu
+  "MoYu sub-branded" — materially stronger, more direct evidence than the naming-analogy
+  reasoning `data/manufacturers/mohuanshousu.yml` currently rests its existing `kind:
+  sub_brand` / `confidence: uncertain` reading on. Not acted on here (out of this pass's write
+  lane); flagged for a human to weigh raising that record's confidence.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-mohuan-shousu-chufeng-2020]
+    note: "Earliest capture found this pass (2020-09-18) describes it as 'a new MoYu
+      sub-branded 3x3', consistent with a recent launch, but no first-party announcement date
+      was found. The product's own 'Added: 2018-09-11' spec-table field is deliberately not
+      used — see thecubicle-mojue-m3-2020's reliability_note for why (a suspected
+      catalogue-migration artefact recurring across several unrelated products)."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-mohuan-shousu-chufeng-2020]
+    note: "Retailer copy explicitly frames it as 'mid-range price' with 'premium design
+      features' — read as a mainline, not flagship, positioning."
+  /description:
+    confidence: reported
+    sources: [thecubicle-mohuan-shousu-chufeng-2020]

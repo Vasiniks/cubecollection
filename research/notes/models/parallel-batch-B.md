@@ -276,3 +276,28 @@ shipped beyond pre-order (not checked further this pass).
 `reported` on `description`.
 
 ---
+## MoHuanShouSu — 1 family
+
+**Sub-brand caution applied — same pattern as MoJue.** `data/manufacturers/mohuanshousu.yml`
+currently records `kind: sub_brand` at `confidence: uncertain` by structural analogy only.
+TheCubicle's own MoHuan ShouSu ChuFeng product description states directly: "The MoHuan ShouSu
+ChuFeng is a new **MoYu sub-branded** 3x3 that was designed by Zhang HaiXu, the former 4x4
+world record holder." Same treatment as MoJue: **not acted on**, flagged here and in
+`mohuanshousu-chufeng.yml`'s own description for a human to weigh.
+
+**Candidates considered:** MoHuan ShouSu ChuFeng — the only 3x3 product-slug capture found
+(the manufacturer's other found slug, `mohuan-shousu-chuwen-2x2`, is a 2x2, out of scope).
+
+**Accepted (1):** `mohuanshousu-chufeng`.
+
+**Rejected:** none beyond the out-of-scope 2x2.
+
+**Unresolved questions:** exact MoHuanShouSu/MoYu relationship confidence (flagged above);
+exact launch date (only capture-date evidence, earliest 2020-09-18).
+
+**Sources added:** `thecubicle-mohuan-shousu-chufeng-2020`.
+
+**Confidence:** `uncertain` on `introduced` (capture-date only); `reported` on
+`positioning`/`description`.
+
+---
