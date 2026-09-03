@@ -1,0 +1,53 @@
+# model: moyu-rs3m-super
+# Pass 3 (model enumeration). A new named generation with a stated new external piece pattern
+# ("a dragon scale design on the pieces") — a piece-mould difference, not a sold configuration
+# — sold stickerless-only in three magnet/spring configurations, recorded here as variants of
+# this one model. See research/qc/pass3-agent-a-moyu.md.
+id: moyu-rs3m-super
+entity: model
+family_id: moyu-rs3m
+manufacturer_id: moyu
+name: "MoYu Super RS3M"
+aliases:
+  - "MoYu RS3M Super"
+scope_class: core
+generation:
+  label: "Super"
+  ordinal: 2
+  basis: manufacturer_declared
+description: |-
+  The Speedsolving wiki (speedsolving-wiki-moyu): "An updated version of the RS3M 2020/2021.
+  This puzzle comes in stickerless only and comes in 3 versions. MoYu Super RS3M Standard: The
+  first version of the Super RS3M that has a dragon scale design on the pieces and comes with
+  the standard DAS of the RS3M. MoYu Super RS3M Maglev: The second version of the Super RS3M
+  that has MagLev instead of springs. The internals of this puzzle are purple... MoYu Super
+  RS3M Ball Core: The third version of the Super RS3M has MagLev and a ball-core that has
+  corner-core magnets... Currently the second cheapest mass-produced puzzle with corner-core
+  magnets." The "dragon scale design on the pieces" is read as a distinct external piece mould,
+  the basis for a new model; Standard, Maglev, and Ball Core are recorded as variants of this
+  one model (spring/MagLev and core-system differences), per DATA_MODEL §4.2.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "No tier 1-2 corroboration was found this pass for 'Super RS3M' as a MoYu retail
+      name; single tier 3 source. It postdates the 2021-01-14 TheCubicle capture used elsewhere
+      in this family, so that source could not corroborate it."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No dated statement was located for this generation
+      specifically; only its own successor (Super RS3M V2, 'mid-2023') is dated, giving an
+      inferred upper bound not recorded as an attested value."
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'An updated version of the RS3M 2020/2021', a direct succession statement."
+relationships:
+  - type: succeeds
+    target: moyu-rs3m-2020
+    target_entity: model
+    note: "Wiki: 'An updated version of the RS3M 2020/2021'."
