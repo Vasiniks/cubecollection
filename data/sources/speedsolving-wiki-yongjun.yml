@@ -5,6 +5,7 @@
 id: speedsolving-wiki-yongjun
 entity: source
 kind: wiki
+tier: 3
 title: "YongJun — Speedsolving.com Wiki"
 publisher: "Speedsolving.com"
 url: "https://www.speedsolving.com/wiki/index.php?title=YongJun"
@@ -21,8 +22,33 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, no citation trail. Corroborates the MoYu/YJ
-  historical relationship already recorded (at tier 4) in data/manufacturers/moyu.yml, and is
-  the only source located this pass naming MGC as a YJ product line rather than a separate
-  company — consistent with the pass-0 brief's existing product_lines_not_manufacturers entry."
+reliability_note: |-
+  Tier 4, community-edited, no citation trail. Corroborates the MoYu/YJ historical relationship
+  already recorded (at tier 4) in data/manufacturers/moyu.yml, and is the only source located this
+  pass naming MGC as a YJ product line rather than a separate company — consistent with the pass-0
+  brief's existing product_lines_not_manufacturers entry.
+
+  TIER OVERRIDE TO 3, applied 2026-09-03 (issue D-M1). This record and speedsolving-wiki-yongjun-
+  products resolve to the SAME underlying Speedsolving page - identical URL - but were held at
+  different tiers: speedsolving-wiki-yongjun-products received an individually-justified tier-3
+  override during E1 while this record was left deriving to tier 4. One page cannot be two tiers.
+  An identical page carrying different evidentiary weight under two ids is a live trap for future
+  resemblance-based tier inference, which this archive's policy forbids.
+
+  The tier-3 justification recorded on speedsolving-wiki-yongjun-products applies verbatim and was
+  verified for that record: edit-protected rather than open-anonymous, revision-tracked,
+  substantial, dated product entries, and no staleness banner on the live page.
+
+  This override is SOURCE-SPECIFIC. `kind: wiki` remains tier 4 archive-wide, and sibling
+  Speedsolving pages that DO carry a staleness banner were deliberately left at tier 4 with their
+  dependent claims downgraded instead.
+
+  PERMITTED claim types, unchanged: product existence, naming, line membership, approximate
+  chronology. FORBIDDEN: specifications, corporate ownership or sub-brand relationships, day-
+  precision dates.
+
+  DUPLICATE-SOURCE NOTE: this record and speedsolving-wiki-yongjun-products should be considered
+  ONE evidence chain. Citing both on a single attestation is false corroboration, and rule 9's
+  publisher-independence check will not catch it because both share the Speedsolving.com
+  publisher. See research/qc/agent-d-adversarial-audit.md.
 status: sourced

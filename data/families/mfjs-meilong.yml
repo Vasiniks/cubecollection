@@ -40,15 +40,14 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
-    sources: [speedsolving-wiki-mfjs-products]
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
   /positioning:
-    confidence: reported
+    confidence: uncertain
     sources: [speedsolving-wiki-mofang-jiaoshi]
   /aliases:
     confidence: reported
-    sources: [speedsolving-wiki-mfjs-products, speedcubeshop-mfjs-meilong-collections]
+    sources: [speedsolving-wiki-mofang-jiaoshi, speedcubeshop-mfjs-meilong-collections]
   /description:
     confidence: reported
-    sources: [speedsolving-wiki-mfjs-products, speedsolving-wiki-mofang-jiaoshi,
-      speedcubeshop-mfjs-meilong-collections]
+    sources: [speedsolving-wiki-mofang-jiaoshi, speedcubeshop-mfjs-meilong-collections]

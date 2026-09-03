@@ -25,13 +25,21 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
-    sources: [speedsolving-wiki-mf8-products]
-  /positioning:
     confidence: uncertain
     sources: [speedsolving-wiki-mf8-products]
-    note: "No explicit positioning statement; recorded 'mainline' as the least overclaiming
-      reading, MF8 having no other standard 3x3 to position this against."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-mf8-legend-v2]
+    note: "No explicit positioning statement from MF8; 'mainline' recorded as the least
+      overclaiming reading, MF8 having no other standard 3x3 to position this against.
+      UPGRADED from `uncertain` 2026-09-03 (Pass 2.5) on TheCubicle's own structured spec table
+      classifying it Type: 3x3 at 56.0mm - an ordinary competition-format cube, tier 2 and
+      uncontradicted, which supports the mainline reading."
   /description:
-    confidence: reported
-    sources: [speedsolving-wiki-mf8-products]
+    confidence: probable
+    sources: [speedsolving-wiki-mf8-products, thecubicle-mf8-legend-v2]
+    note: "UPGRADED from `uncertain` 2026-09-03 (Pass 2.5). TheCubicle's own product page and
+      structured spec table (Type: 3x3, 56.0mm, 100g) is tier 2 and uncontradicted. It also
+      settles that this is an ordinary WCA-format 3x3, so rule 15's conditional-admission
+      requirement never applies to this family - it was class B on the E2 list only because of
+      its tier-4-only sourcing, which this resolves."

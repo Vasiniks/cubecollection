@@ -26,10 +26,10 @@ status: drafted
 attestations:
   /positioning:
     confidence: uncertain
-    sources: [speedsolving-wiki-mfjs-products, thecubicle-mofang-jiaoshi-mini-3x3-prefix]
+    sources: [speedsolving-wiki-mofang-jiaoshi, thecubicle-mofang-jiaoshi-mini-3x3-prefix]
   /aliases:
-    confidence: reported
-    sources: [speedsolving-wiki-mfjs-products]
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
   /description:
     confidence: reported
-    sources: [speedsolving-wiki-mfjs-products, thecubicle-mofang-jiaoshi-mini-3x3-prefix]
+    sources: [speedsolving-wiki-mofang-jiaoshi, thecubicle-mofang-jiaoshi-mini-3x3-prefix]

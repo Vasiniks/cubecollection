@@ -37,10 +37,15 @@ attestations:
     note: "Both sources place the original RS3M at 2020 ('RS3 M 2020' as the product's own
       name, and the wiki's own placement of it before the 2021 MagLev generation)."
   /positioning:
-    confidence: probable
+    confidence: reported
     sources: [speedsolving-wiki-moyu]
-    note: "The wiki's own repeated framing of RS3M as a very-low-price product ('$9', '$8.99'
-      for later generations) against WeiLong's premium pricing is read as budget positioning."
+    note: |-
+      The wiki's own repeated framing of RS3M as a very-low-price product ('$9', '$8.99' for later
+      generations) against WeiLong's premium pricing is read as budget positioning. DOWNGRADED from
+      `probable` to `reported` 2026-09-03 (Pass 2.5, issue D-B2). The cited source carries a tier-3
+      override applied during E1, which resolved its tier-4 problem but not this one:
+      vocab/confidence.yml defines `probable` as requiring a TIER 2 source, while tier 3 supports
+      only `reported`. The E1 remediation corrected the tier and missed the confidence level here.
   /aliases:
     confidence: probable
     sources: [thecubicle-com-moyu-3x3-collection-2021]

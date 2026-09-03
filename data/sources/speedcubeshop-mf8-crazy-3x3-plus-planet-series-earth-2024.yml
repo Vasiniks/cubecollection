@@ -1,0 +1,34 @@
+# source: speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024
+# Tier 2 retailer. Shows the MF8 Crazy line in circulation into 2024, inside the archive window.
+id: speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024
+entity: source
+kind: retailer
+title: "Mf8 Crazy 3x3 Plus Planet Series (Earth) – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-earth"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240918023540/https://speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-earth"
+excerpt: |-
+  "Mf8 Crazy 3x3 Plus Planet Series (Earth) is a 3x3 with crazy cuts that vary by each version
+  adding to the challenge. Collect the entire series!" Product Details: "Type: Shape Mod /
+  Brand: Mf8 / Size: 57 mm / Magnets: None."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2 retailer, structured spec table, wording independent of both the 2015 SpeedCubeShop and
+  the 2020 TheCubicle listings — three genuinely separate descriptions, not one text reused.
+
+  Establishes continued retail circulation of an MF8 "Crazy...Plus" 3x3-mechanism line into
+  2024-2025 (sibling Wayback captures for the same Planet Series run 2023-2025), i.e. well
+  inside the archive's ~2016-2026 window rather than only at the family's 2010 origin. This is
+  what rules out `scope_class: reference_only` for this family.
+
+  OPEN MODEL-BOUNDARY QUESTION, flagged not resolved (Pass 3 is frozen): whether "Crazy 3x3x3"
+  (2010 wiki), "Crazy 3x3 Planets" (2018-2020) and "Crazy 3x3 Plus Planet Series" (2023-2025)
+  are one design or distinct generations. Note this page's own "Type: Shape Mod" classification.
+
+  Live URL today soft-redirects to a generic catalogue page; preservation rests on this capture.
+status: sourced

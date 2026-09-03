@@ -26,10 +26,11 @@ description: |-
   ambiguity), while MF3 through MF3RS3 carry no such redirect and are MFJS's own, per the wiki's
   own structure.
 
-  `successor_family_id` is set to `moyu-rs3m` on the strength of the wiki's own explicit
-  "an updated version of the MF3RS3" language — the clearest stated succession-between-families
-  claim found anywhere in this pass, stronger than the YJ MGC/Meta or QiYi Bullfight/Thunderclap
-  cases where no direct succession sentence was found.
+  `successor_family_id` is set to `moyu-rs3m` on the strength of the wiki describing the RS3M
+  2020 as "an updated version of the MF3RS3". **Re-read 2026-09-03 and found weaker than
+  previously characterised**: the page does not state a succession, and presents the RS3M in a
+  separate section linked to MoYu rather than as a continuation. Held at `uncertain`; see the
+  /successor_family_id attestation for the full reasoning.
 
   TheCubicle's own product-URL history (thecubicle-mofang-jiaoshi-mf3-prefix-2026) shows the
   base MF3/MF3RS/MF3RS2/MF3RS3 line still resolving as recently as a 2026-06-26 capture — this
@@ -40,22 +41,44 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
-    sources: [speedsolving-wiki-mfjs-products]
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
   /positioning:
-    confidence: reported
-    sources: [speedsolving-wiki-mfjs-products]
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
     note: "The wiki's own infobox describes MFJS generally as focused on 'beginner-friendly'
       and 'budget cubes'; no manufacturer-first-party positioning statement specific to this
       line was found this pass."
   /successor_family_id:
-    confidence: reported
-    sources: [speedsolving-wiki-mfjs-products]
-    note: "Single tier-4 source ('An updated version of the MF3RS3'), but explicit and direct,
-      unlike other succession calls this pass left unset for lack of comparable wording."
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+    note: "DOWNGRADED from `reported` 2026-09-03 (issue E1, held-attestation adjudication).
+
+      This is the ONLY cross-manufacturer successor_family_id in the archive - swept and
+      confirmed: mfjs-mf3 (manufacturer_id: mfjs) -> moyu-rs3m (manufacturer_id: moyu). It is
+      structurally coherent rather than anomalous, because MFJS is itself a MoYu sub-brand
+      (data/manufacturers/mfjs.yml, parent_id: moyu), so this records a line moving from a
+      sub-brand to its parent, not a jump between unrelated companies.
+
+      Two reasons for the downgrade. First, the sole source is tier 4 and carries a live
+      staleness banner ('This page may be currently outdated...'), verified on the live page
+      2026-09-03, so it is not eligible for the source-specific tier-3 override. Second, and
+      more important, the previous note overstated it: the page does NOT state a succession.
+      It describes the RS3M 2020 as 'an updated version of the MF3RS3' in a separate section
+      linked to MoYu. That supports a relationship but is not the explicit succession claim
+      this note previously asserted.
+
+      A lineage claim is also outside the permitted claim types for wiki-class evidence under
+      the established evidence policy (existence, naming, line membership, approximate
+      chronology - never ownership or lineage).
+
+      The link is RETAINED at `uncertain` rather than removed: the relationship is widely
+      understood and the source does support it weakly. A tier 1-2 statement from MoYu or MFJS
+      would restore a higher confidence. Flagged as the highest-propagation-risk item of the
+      twelve, because Pass 3 models inherit family lineage."
   /aliases:
-    confidence: reported
-    sources: [speedsolving-wiki-mfjs-products]
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
   /description:
     confidence: reported
-    sources: [speedsolving-wiki-mfjs-products, thecubicle-mofang-jiaoshi-mf3-prefix-2026]
+    sources: [speedsolving-wiki-mofang-jiaoshi, thecubicle-mofang-jiaoshi-mf3-prefix-2026]

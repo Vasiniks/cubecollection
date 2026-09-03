@@ -1,0 +1,33 @@
+# source: thecubicle-mf8-legend-v2
+# Tier 2 retailer. Confirms MF8 Legend V2 is an ordinary WCA-format 3x3, so rule 15 never applies.
+id: thecubicle-mf8-legend-v2
+entity: source
+kind: retailer
+title: "MF8 Legend V2 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mf8-legend-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922074539/https://www.thecubicle.com/products/mf8-legend-v2"
+excerpt: |-
+  "The MF8 Legend V2 is the latest 3x3 speedcube by MF8. It measures 56mm across, and it feels
+  smooth right out of the box. The tiles are embedded into the cube's design, so they are very
+  durable..." Product Specifications: "Manufacturer: mf8 / Type: 3x3 / Gross Weight: 100g /
+  Dimensions: 56.0mm."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2 retailer, genuine structured spec table. Its "Type: 3x3" classification and 56mm
+  dimension establish this as an ordinary WCA-format speedcube, which is why rule 15's
+  conditional-admission requirement does not apply to this family.
+
+  The in-page "Added: 2018-09-11" field is NOT used as an introduction date — that literal
+  string is this archive's most heavily documented TheCubicle catalogue-migration artifact,
+  recurring 29 times across 22 sources and 13 unrelated brands. The 2020-09-22 Wayback crawl
+  timestamp is an "existed by" upper bound only.
+
+  Live URL independently re-verified by the main session on 2026-09-03 (HTTP 200, embedded
+  product title "MF8 Legend V2"), giving two independent access paths.
+status: sourced

@@ -61,7 +61,7 @@ attestations:
     confidence: confirmed
     sources: [moyucube-official-home-2022, speedsolving-wiki-mofang-jiaoshi, cuboss-mfjs-brand-page]
   /native_name:
-    confidence: probable
+    confidence: uncertain
     sources: [speedsolving-wiki-mofang-jiaoshi]
     note: "The native form appears in MoYu's own site title (moyucube-official-home-2022) as
       '魔方教室', matching the wiki's stated native name. Recorded at probable rather than

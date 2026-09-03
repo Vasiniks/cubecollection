@@ -1,0 +1,31 @@
+# source: thecubicle-mf8-crazy-3x3-planets-assorted
+# Tier 2 retailer with a genuine structured spec table. Created 2026-09-03 during Pass 2.5.
+id: thecubicle-mf8-crazy-3x3-planets-assorted
+entity: source
+kind: retailer
+title: "mf8 Crazy 3x3 Planets (Assorted) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mf8-crazy-3x3-planets-assorted"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200925205947/https://www.thecubicle.com/products/mf8-crazy-3x3-planets-assorted"
+excerpt: |-
+  Product Specifications: "Manufacturer: mf8 / Type: Cuboids / Gross Weight: 145g." The page was
+  marked "discontinued indefinitely" as of this 2020 capture. (The in-page "Added: 2018-10-14"
+  field is deliberately NOT used as dating evidence — see reliability_note.)
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2 retailer, genuine structured spec table (manufacturer/type/weight fields present).
+
+  The in-page "Added:" date is NOT used as an introduction date. "Added: 2018-10-14" is one of
+  three documented TheCubicle catalogue-migration artifacts in this archive, recurring verbatim
+  across 6 sources and 5 unrelated brands (CubeTwist, LeFun, Meffert's, Ninja, VeryPuzzle). The
+  2020-09-25 Wayback crawl timestamp is usable only as an "existed by" upper bound, consistent
+  with every sibling non-WCA family in this archive.
+
+  The live URL was independently re-verified by the main session on 2026-09-03 (HTTP 200,
+  resolving to this same product), giving this source two independent access paths.
+status: sourced

@@ -1,4 +1,6 @@
 # source: speedsolving-wiki-mfjs-products
+# ⚠ SUPERSEDED - duplicate of speedsolving-wiki-mofang-jiaoshi (same page, identical captures).
+# Cited by nothing. Retained as a redirect marker. Cite the canonical record instead.
 # Speedsolving.com community wiki article on MoFang JiaoShi (MFJS). Tier 4 — corroborates only.
 # Used in pass 2 for MFJS's own product-line history: the MF3/MF3RS/RS3M budget-3x3 succession,
 # the separate Meilong 3x3 line, and the MoFang JiaoShi Mini 3x3 Series.
@@ -37,8 +39,26 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited wiki with no named author or citation trail.
-  Sufficient alone only for `uncertain`/`reported` confidence per RESEARCH_SPEC; used here
-  primarily for dating and family-boundary structure, corroborated where possible against
-  retailer captures."
+reliability_note: |-
+  Tier 4, community-edited wiki with no named author or citation trail. Sufficient alone only for
+  `uncertain`/`reported` confidence per RESEARCH_SPEC; used here primarily for dating and family-
+  boundary structure, corroborated where possible against retailer captures.
+
+  SUPERSEDED 2026-09-03 (Pass 2.5). This record and speedsolving-wiki-mofang-jiaoshi are TWO
+  SOURCE RECORDS FOR ONE PAGE. Verified: the path-style URL used here
+  (/wiki/index.php/MoFang_JiaoShi) redirects to the query-style URL used there
+  (?title=MoFang_JiaoShi), and the two archived captures - 20250818091604 here and 20260405010335
+  there, eight months apart - were pulled and diffed and have byte-identical body content.
+
+  All citations were repointed to speedsolving-wiki-mofang-jiaoshi, which is retained as the
+  canonical record. Nothing was lost in the merge: the captures are provably identical, so this
+  record preserved no page state the surviving one does not.
+
+  RETAINED, not deleted, per the archive's orphaned-source policy and so that a future researcher
+  who encounters the path-style URL finds this determination rather than re-creating a duplicate.
+  It is cited by zero attestations as of 2026-09-03. DO NOT CITE THIS RECORD - cite speedsolving-
+  wiki-mofang-jiaoshi.
+
+  The page also carries a live 'This page may be currently outdated' banner, so it stays tier 4
+  and is ineligible for the source-specific tier-3 override.
 status: sourced

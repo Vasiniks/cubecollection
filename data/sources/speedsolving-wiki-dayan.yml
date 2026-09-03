@@ -4,6 +4,7 @@
 id: speedsolving-wiki-dayan
 entity: source
 kind: wiki
+tier: 3
 title: "DaYan — Speedsolving.com Wiki"
 publisher: "Speedsolving.com"
 url: "https://www.speedsolving.com/wiki/index.php/DaYan"
@@ -19,10 +20,35 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, no citation trail for the 2004 founding date, which
-  predates DaYan's own documented product history (GuHong/ZhanChi era, early 2010s) by several
-  years and is in tension with dayancube-official-2013's own '© Copyright 2011' footer.
-  Recorded as a disputed candidate rather than adopted outright — see the /founded attestation
-  on data/manufacturers/dayan.yml. Also gives a competing account of the brand-name character
-  (大雁 vs. dayancube.com's own '大烟头' pinyin-origin story) — both recorded."
+reliability_note: |-
+  Tier 4, community-edited, no citation trail for the 2004 founding date, which predates DaYan's
+  own documented product history (GuHong/ZhanChi era, early 2010s) by several years and is in
+  tension with dayancube-official-2013's own '© Copyright 2011' footer. Recorded as a disputed
+  candidate rather than adopted outright — see the /founded attestation on
+  data/manufacturers/dayan.yml. Also gives a competing account of the brand-name character (大雁 vs.
+  dayancube.com's own '大烟头' pinyin-origin story) — both recorded.
+
+  TIER OVERRIDE TO 3, applied 2026-09-03 (issue D-M1). This record and speedsolving-wiki-dayan-
+  products resolve to the SAME underlying Speedsolving page - identical URL - but were held at
+  different tiers: speedsolving-wiki-dayan-products received an individually-justified tier-3
+  override during E1 while this record was left deriving to tier 4. One page cannot be two tiers.
+  An identical page carrying different evidentiary weight under two ids is a live trap for future
+  resemblance-based tier inference, which this archive's policy forbids.
+
+  The tier-3 justification recorded on speedsolving-wiki-dayan-products applies verbatim and was
+  verified for that record: edit-protected rather than open-anonymous, revision-tracked,
+  substantial, dated product entries, and no staleness banner on the live page.
+
+  This override is SOURCE-SPECIFIC. `kind: wiki` remains tier 4 archive-wide, and sibling
+  Speedsolving pages that DO carry a staleness banner were deliberately left at tier 4 with their
+  dependent claims downgraded instead.
+
+  PERMITTED claim types, unchanged: product existence, naming, line membership, approximate
+  chronology. FORBIDDEN: specifications, corporate ownership or sub-brand relationships, day-
+  precision dates.
+
+  DUPLICATE-SOURCE NOTE: this record and speedsolving-wiki-dayan-products should be considered ONE
+  evidence chain. Citing both on a single attestation is false corroboration, and rule 9's
+  publisher-independence check will not catch it because both share the Speedsolving.com
+  publisher. See research/qc/agent-d-adversarial-audit.md.
 status: sourced

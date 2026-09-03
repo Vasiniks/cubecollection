@@ -23,7 +23,6 @@ aliases:
   - "Big Goose"
   - "DaiYan"
   - "TaiYan"
-website: "http://dayancube.com/"
 notes: |-
   **Identity and founder.** DaYan's own official site states: "Dayan Cube is a Chinese brand
   designed by Daqing Bao. DaYan is the pinyin of his username '大烟头' (Da Yan Tou)"
@@ -99,8 +98,26 @@ attestations:
     confidence: probable
     sources: [dayancube-official-2013, speedsolving-wiki-dayan]
   /website:
-    confidence: confirmed
-    sources: [dayancube-official-2013]
+    confidence: unknown
+    note: "CHANGED from `confirmed` 2026-09-03 (Pass 2.5). The `website` field was removed and
+      this attestation set to `unknown`, matching how shengshou.yml and cyclone-boys.yml already
+      handle the identical situation - both omit the field and record `unknown` when a former
+      official domain has died.
+
+      The prior state asserted `confirmed` on dayancube-official-2013, a 2013 capture. That
+      source is genuine and remains valid evidence for the HISTORICAL fact that dayancube.com
+      was DaYan's own domain - it is still cited for /founded, /country and /notes. It cannot
+      support a CURRENT-state website claim thirteen years later. Verified 2026-09-03: the live
+      domain fails with an expired TLS certificate, and Wayback shows no capture of it serving
+      DaYan content after 2012-2013.
+
+      This is not evidence DaYan is defunct - the company is demonstrably active, with dozens of
+      current SKUs at specialist retailers including 2026-dated releases. Only its own domain is
+      gone. `unknown` here means researched and not found, per vocab/confidence.yml.
+
+      Recorded because it is a general pattern, not a one-off: a `confirmed` /website resting on
+      an old capture silently becomes false as domains lapse or are re-registered by unrelated
+      parties. See research/qc/agent-c-swift-block-methodology.md."
   /notes:
     confidence: probable
     sources: [dayancube-official-2013, speedsolving-wiki-dayan, thecubicle-dayan-guhong-product-urls]

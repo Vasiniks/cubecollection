@@ -1,0 +1,27 @@
+# source: speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015
+# Tier 2 retailer. Earliest capture found for MF8's Crazy 3x3 line. Created 2026-09-03 during
+# Pass 2.5 to give mf8-crazy-3x3x3 tier 1-3 evidence, which rule 15 will require at Pass 3.
+id: speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015
+entity: source
+kind: retailer
+title: "Mf8 Crazy Planet Assortment 3x3x3 – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "http://www.speedcubeshop.com/products/mf8-crazy-planet-assortment-3x3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20151116012311/http://www.speedcubeshop.com:80/products/mf8-crazy-planet-assortment-3x3x3"
+excerpt: |-
+  "Mf8 Crazy Planet Assortment 3x3x3" — "This 3x3x3 is much more of a challenge since it is the
+  crazy version by mf8. The rotation of this puzzle is clicky and the layers lock into place
+  making this puzzle easier to manipulate. You can complete your collection by collecting all of
+  the planets!"
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2 retailer. Earliest capture found for this MF8 product line (2015-11, just before the
+  archive's approximately-2016 floor); cited for the mechanism description and the explicit
+  "3x3x3" naming, NOT for a release date. The live URL today soft-redirects to SpeedCubeShop's
+  homepage, so preservation rests entirely on this archive capture.
+status: sourced

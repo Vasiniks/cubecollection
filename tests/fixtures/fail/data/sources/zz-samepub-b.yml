@@ -1,0 +1,11 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Pairs with zz-samepub-a: same publisher, both tier 2.
+id: zz-samepub-b
+entity: source
+kind: retailer
+title: ZZ same-publisher page B
+publisher: ZZ Retail Co
+preservation_method: excerpt
+excerpt: "Fixture excerpt B from ZZ Retail Co, long enough to satisfy minLength."
+reliability_note: Exercises rule 9's same-publisher branch together with zz-samepub-a.
+status: drafted

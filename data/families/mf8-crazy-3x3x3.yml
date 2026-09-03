@@ -27,11 +27,29 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
-    sources: [speedsolving-wiki-mf8-products]
-  /positioning:
     confidence: uncertain
     sources: [speedsolving-wiki-mf8-products]
+    note: "Deliberately NOT upgraded. The new tier-2 retailer sources establish the line was in
+      circulation by 2015 and again in 2024, but none states a release date; the 2010 value
+      still rests on the tier-4 wiki alone. Retailer crawl timestamps are `existed by` upper
+      bounds, not release dates."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-mf8-crazy-3x3-planets-assorted,
+      speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+    note: "UPGRADED from `uncertain` 2026-09-03. Both retailers classify this as a
+      non-standard mechanism in their own structured spec tables (TheCubicle 'Type: Cuboids';
+      SpeedCubeShop 'Type: Shape Mod'), two independent publishers agreeing, supporting
+      `positioning: special`."
   /description:
-    confidence: reported
-    sources: [speedsolving-wiki-mf8-products]
+    confidence: probable
+    sources: [speedsolving-wiki-mf8-products,
+      speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015,
+      thecubicle-mf8-crazy-3x3-planets-assorted,
+      speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+    note: "UPGRADED from `uncertain` 2026-09-03 (Pass 2.5, issue E2/S6). Three independent
+      tier-2 retailer sources across three publishers-and-dates (SpeedCubeShop 2015,
+      TheCubicle 2020, SpeedCubeShop 2024) describe the crazy/circle mechanism in independent
+      wording. `probable` per the confidence table (tier 2, uncontradicted). Not `confirmed`:
+      no tier-1 MF8 source was found, and rule 9 now also requires publisher independence,
+      which two SpeedCubeShop listings do not supply between themselves."

@@ -28,26 +28,41 @@ aliases:
   - "Guangdong QiYi MoFangGe Science and Technology Industrial Co., Ltd."
 website: "http://www.qiyitoys.net/"
 notes: |-
-  **Identity and founding.** QiYi's own About page states it was "founded" in 1998 as a plastic
-  toy manufacturer in Shantou's Chenghai District, Guangdong, and "officially pivoted into
-  speed cube development and launched its dedicated cube brand" in 2008 (theqiyi-about-us) —
-  tier 1, first-party. The Speedsolving wiki gives the native names "奇艺" (QiYi) and "魔方格"
-  (MoFangGe) (speedsolving-wiki-qiyi) — tier 4, corroborating only; QiYi's own site uses only
-  the English/romanised forms.
+  **Identity and founding.** QiYi's genuine corporate site states verbatim
+  「广东奇艺魔方格科教实业有限公司成立于1998年」 — the company was founded in 1998 — and gives the
+  legal entity name and an address in Chenghai District, Shantou, Guangdong, under ICP filing
+  粤ICP备2021105271号 (qiyitoys-company-history). Tier 1, first-party. The Speedsolving wiki gives
+  the native names "奇艺" (QiYi) and "魔方格" (MoFangGe) (speedsolving-wiki-qiyi).
 
-  **QiYi's own stated "family of brands".** theqiyi-about-us lists, in QiYi's own words: "QY
-  Cube" (main speed cube line), "QY Toys" (heritage entry-level line), "MoFangGe" ("the original
-  brand identity that still appears on many classic designs, representing the roots of QIYI in
-  early cube development"), and "X-Man Design" ("a premium sub brand created in close
-  collaboration with an independent designer known as X-Man"). QY Cube, QY Toys, and MoFangGe
-  read as QiYi's own internal product-line names rather than separately identifiable companies —
-  no independent legal entity, founder, or domain was found for any of the three, and MoFangGe
-  in particular is described in the same source as QiYi's own "original brand identity", i.e.
-  an earlier name for QiYi itself rather than a distinct organisation. They are recorded here as
-  aliases rather than as separate manufacturer or sub_brand records. **X-Man Design is treated
-  differently** — see data/manufacturers/x-man-design.yml — because QiYi's own page names an
-  independent designer behind it and a name-carrying flagship line (Tornado) distinct from
-  QiYi's own numbered range.
+  **NARRATIVE REWRITTEN 2026-09-03 (issue Q1, completed under D-B1).** This section previously
+  attributed the founding narrative and a "family of brands" list to `theqiyi-about-us`,
+  described as "QiYi's own About page — tier 1, first-party". That page has since been
+  established as an **Amazon-affiliate site, not QiYi's own**, and demoted to tier 4. The Q1 fix
+  re-sourced this record's attestations but left this prose behind, so the notes went on
+  narrating a withdrawn source as authoritative. That is corrected here.
+
+  Two specific claims are **withdrawn, not merely re-sourced**:
+
+  1. The description of X-Man Design as "created in close collaboration with an independent
+     designer known as X-Man" is **factually wrong**. QiYi's own corporate history records that
+     in 2015 「奇艺首席设计师张小静创立「XMD」品牌」 — XMD was founded by QiYi's own **chief
+     designer**, Zhang Xiaojing, an internal employee, not an unaffiliated outside collaborator.
+     data/manufacturers/x-man-design.yml withdrew this on 2026-09-03; this record now agrees
+     rather than contradicting its own sibling.
+  2. The "family of brands" list ("QY Cube", "QY Toys", "MoFangGe", "X-Man Design") came solely
+     from the affiliate page and has **no first-party corroboration**. The underlying
+     classification decision is unchanged and still sound on other grounds: MoFangGe is
+     independently attested as a QiYi brand name by qiyicube-storefront-2018 and the Speedsolving
+     wiki, and no independent legal entity, founder, or domain was found for any of QY Cube, QY
+     Toys or MoFangGe — so they remain **aliases** rather than separate manufacturer records.
+     "QY Cube" and "QY Toys" specifically are retained in `aliases` on the withdrawn page's
+     authority alone and should be re-verified or removed by a future pass; they are flagged in
+     the /aliases attestation.
+
+  **X-Man Design is still treated as a separate sub_brand record** — see
+  data/manufacturers/x-man-design.yml — but now on the correct basis: QiYi's own dated 2015
+  company-history entry naming it as an internally-founded house brand with a name-carrying
+  flagship line (Tornado) distinct from QiYi's own numbered range.
 
   **An earlier QiYi storefront (qiyicube.com, captured 2018)** carried the page title "QiYi Cube
   – The Valk, MoFangGe, X-Man Design Speed Cube" and sold Valk-branded 3x3s directly
@@ -74,11 +89,17 @@ attestations:
       Re-sourced 2026-09-03: previously cited theqiyi-about-us, since established as an
       Amazon-affiliate site rather than QiYi's own (issue Q1)."
   /native_name:
-    confidence: probable
+    confidence: reported
     sources: [speedsolving-wiki-qiyi]
-    note: "Tier 4 only; no tier 1-2 source located this pass gives the Chinese characters
-      directly, though theqiyi-about-us's own English brand name and origin story are
-      consistent with it."
+    note: |-
+      No tier 1-2 source located gives the Chinese characters directly. The cited Speedsolving
+      page now carries a tier-3 override (issue E1). The withdrawn theqiyi-about-us page is
+      deliberately NOT cited as corroboration here, per issue Q1.
+      DOWNGRADED from `probable` to `reported` 2026-09-03 (Pass 2.5, issue D-B2). The cited source
+      carries a tier-3 override applied during E1, which resolved its tier-4 problem but not this
+      one: vocab/confidence.yml defines `probable` as requiring a TIER 2 source, while tier 3
+      supports only `reported`. The E1 remediation corrected the tier and missed the confidence
+      level here.
   /country:
     confidence: confirmed
     sources: [qiyitoys-company-history]
@@ -93,8 +114,20 @@ attestations:
       replaces theqiyi-about-us (issue Q1) and also settles the Speedsolving wiki's
       'founding year unknown'."
   /aliases:
-    confidence: probable
+    confidence: uncertain
     sources: [qiyitoys-company-history, qiyicube-storefront-2018, speedsolving-wiki-qiyi]
+    note: |-
+      DOWNGRADED from `probable` 2026-09-03 (issue D-B1). The sources were mechanically
+      repointed during the Q1 fix, but two alias VALUES were not re-verified against them:
+      "QY Cube" and "QY Toys" appear only in the excerpt of the withdrawn `theqiyi-about-us`
+      affiliate page and in none of the three sources now cited. The remaining aliases
+      ("QiYi MoFangGe", "MoFangGe", "魔方格" and their spelling variants) are genuinely
+      supported by qiyicube-storefront-2018 and speedsolving-wiki-qiyi.
+
+      The two unsupported values are RETAINED rather than deleted, because an alias that is
+      wrong is still a string a researcher may encounter and need to resolve, and removing
+      them would lose that. `uncertain` now covers the field honestly. A future pass should
+      either corroborate "QY Cube"/"QY Toys" from a first-party QiYi source or remove them.
   /website:
     confidence: confirmed
     sources: [qiyitoys-company-history]

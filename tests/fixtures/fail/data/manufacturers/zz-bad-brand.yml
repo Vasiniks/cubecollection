@@ -13,3 +13,6 @@ attestations:
   "/kind":
     confidence: confirmed
     sources: [zz-bad-src-social]
+  "/country":
+    confidence: confirmed
+    sources: [zz-samepub-a, zz-samepub-b]

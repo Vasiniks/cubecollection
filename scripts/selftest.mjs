@@ -54,6 +54,11 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   const fired = rulesIn(v.out);
   const expected = [2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 37, 38, 39];
   const missing = expected.filter((r) => !fired.has(r));
+  // Rule 9 has two distinct branches. Firing "9" at all does not prove the
+  // publisher-independence branch works, so assert its message specifically.
+  /share one publisher/.test(v.out)
+    ? ok('rule 9 publisher independence fires', 'same-publisher sources rejected as corroboration')
+    : bad('rule 9 publisher independence fires', 'no same-publisher [9] message in fail-fixture output');
   missing.length === 0
     ? ok('blocking rules fire', `${expected.join(', ')}`)
     : bad('blocking rules fire', `never fired: ${missing.join(', ')}`);
