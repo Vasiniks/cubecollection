@@ -1,0 +1,47 @@
+# model: qiyi-valk-3-elite
+# Pass 3 (model enumeration). A sibling 3x3 design within the "Valk 3" generation, distinguished
+# by a described new magnet and adjustment system. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-valk-3-elite
+entity: model
+family_id: qiyi-valk
+manufacturer_id: qiyi
+name: "Valk 3 Elite"
+aliases:
+  - "Valk3 Elite M"
+  - "Valk Elite"
+  - "Elite M"
+scope_class: core
+generation:
+  label: "Valk 3 Elite"
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.5
+description: |-
+  Per TheCubicle's product page (thecubicle-valk-3-elite-m-product): "The Valk 3 Elite M is the
+  long-awaited flagship from the famous Valk line by QiYi MoFangGe... This cube features a brand
+  new magnetic system with three different levels of strength. The moderate and strong versions
+  feature a 'twin-magnetic' scheme and use 'center-edge' plus 'corner-edge' magnetism for
+  positioning. Additionally, QiYi introduced its own version of an elasticity adjustment system
+  that also conveniently reduces spring noise." "A brand new magnetic system" combined with a
+  named new adjustment mechanism ("its own version of an elasticity adjustment system") is
+  treated as evidence of a genuinely distinct design under DATA_MODEL section 4.2, not a
+  magnet-strength option chosen at assembly on an existing shell (contrast Valk 3 M's and Valk 3
+  Power M's explicit "factory magnetized version of..." phrasing).
+
+  No `succeeds` relationship is asserted to the base Valk 3 or to Valk 3 Power: no source states
+  Elite replaces either, and "AKA: Valk3 Elite M, Valk 3 Elite, Valk3Elitem, Valk Elite, Elite M,
+  Elite, Valk3Elite" (from the same product page) is the source for this model's `aliases`.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-valk-3-elite-m-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-valk-3-elite-m-product]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-valk-3-elite-m-product]
+  /description:
+    confidence: probable
+    sources: [thecubicle-valk-3-elite-m-product]
