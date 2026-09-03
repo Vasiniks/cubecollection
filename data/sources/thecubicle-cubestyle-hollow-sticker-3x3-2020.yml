@@ -1,0 +1,34 @@
+# source: thecubicle-cubestyle-hollow-sticker-3x3-2020
+# TheCubicle product page for the "CubeStyle [Hollow Sticker] 3x3," archived 2020-10-26 —
+# directly names the exact base cube models this decorated product is restickered from, the
+# same DATA_MODEL §4.3 aftermarket pattern as thecubicle-cubestyle-carbon-fiber-3x3-2020.
+id: thecubicle-cubestyle-hollow-sticker-3x3-2020
+entity: source
+kind: retailer
+title: "CubeStyle 3x3 (Hollow Sticker) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cubestyle-hollow-sticker-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20201026160446id_/https://www.thecubicle.com/products/cubestyle-hollow-sticker-3x3"
+excerpt: |-
+  Product Description: "The CubeStyle 3x3 is a 3x3 cube with hollow black stickers applied to
+  all 6 sides in the same color. The hollow stickers give the cube an exquisite look and make
+  it a fine addition to any collection. The base cube model for the CubeStyle 3x3 is the YJ
+  GuanLong 3x3 (Warrior W for the Stickerless Bright variant). It is packaged in a CubeStyle
+  box." Structured "Specifications": "Manufacturer: CubeStyle / Type: 3x3 / Added: 2018-09-11 /
+  Gross Weight: 77g / Dimensions: 56.0mm³ / Item Weight: 66.2g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2 — again a direct, specific, named-base-model statement (YJ GuanLong; QiYi Warrior W for one
+  colourway). DATA_MODEL §4.3 aftermarket pattern, the same reasoning as
+  thecubicle-cubestyle-carbon-fiber-3x3-2020. Note this product's own page title is identical
+  to the plain 'CubeStyle 3x3' listing's own description opening sentence ('The CubeStyle 3x3
+  is...') despite being a different, decorated product at a different URL — a naming collision
+  worth flagging for whoever untangles CubeStyle's product tree at pass 3/4. Not used to
+  create a `cubestyle` family; preserved as a cross-manufacturer lead. See
+  research/notes/models/parallel-batch-B.md, 'CubeStyle'."
+status: sourced

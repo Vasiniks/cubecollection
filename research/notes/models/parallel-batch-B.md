@@ -829,3 +829,54 @@ phoenix-2019`. `thecubicle-newisland-lightning` (pass 1, reused).
 throughout.
 
 ---
+## CubeStyle — 1 family + a clean type (b) finding
+
+**A genuine second aftermarket/rebrand case, better-evidenced than Z-Cube's.** `npm run
+wayback -- prefix thecubicle.com/products/cubestyle` (72 URLs) found, alongside the
+already-known plain "CubeStyle 3x3", two further 3x3-shaped listings — "CubeStyle Carbon Fiber
+3x3" and "CubeStyle [Hollow Sticker] 3x3" — whose own TheCubicle descriptions **name their
+exact base cube models directly**: "The base cube model for the CubeStyle Carbon Fiber 3x3 is
+the QiYi Warrior W 3x3 ... and the YJ GuanLong for the Phantom (Stickerless Pink) version" and
+"The base cube model for the CubeStyle 3x3 is the YJ GuanLong 3x3 (Warrior W for the
+Stickerless Bright variant)." Unlike the Z-Cube case last batch (which rested on a single tier
+4 wiki claim), this is TheCubicle's own tier 2 structured product copy, stating the base model
+by name for two separate products.
+
+**Boundary reasoning.** Per DATA_MODEL §4.3, a restickered/recoated base cube sold under a
+trade name belongs under the **base manufacturer's own model tree** (QiYi's Warrior W; YJ's
+GuanLong) with a `modified_from` relationship and a `service` block naming the servicer
+(CubeStyle) — not under CubeStyle's own family tree. **No `cubestyle` family was created for
+either of these two products.** They are preserved as cross-manufacturer leads for whoever
+researches QiYi's Warrior W or YJ's GuanLong variant trees (neither manufacturer is in my
+assigned queue, and QiYi/YJ are both marked complete for pass 2 already).
+
+**The plain "CubeStyle 3x3" is different in kind and was kept as its own family.** Its own
+description ("draws inspiration from other modern 3x3 cube mechanisms") does not name one
+specific base model the way the decorated listings do — it reads as CubeStyle's/FangGe's own
+budget design, not a documented rebrand. **Accepted (1):** `cubestyle-3x3`.
+
+**The open "FangGe" question is not resolved this pass**, on the same terms
+`data/manufacturers/cubestyle.yml` already left it (a plausible but unconfirmed reading as
+"MoFangGe," QiYi's own historical in-house name) — recorded in `cubestyle-3x3.yml`'s own
+description, no `parent_id` implied.
+
+**Rejected:** CubeStyle 2x2, 4x4, 5x5, Pyraminx, Megaminx, Skewb, Square-1, Axis Cube, Fisher
+Cube, Windmill Cube, Kilominx, Twist Cube — out of 3x3x3 scope. "CubeStyle Penrose 3x3" and
+"CubeStyle Carbon Fiber Penrose 3x3" — despite "3x3" in their own names, these are shape mods
+(the same "Penrose" pattern already excluded for Z-Cube last batch), not fetched individually
+this pass given the consistent naming signal. "CubeStyle 3x3x2" / "Constrained 3x3x2" — a
+different shape, not a 3x3x3.
+
+**Unresolved questions:** the "FangGe" identity; exact introduction date for `cubestyle-3x3`
+(only a 2024 capture found despite 18 reviews implying an earlier real launch); whether the
+Carbon Fiber/Hollow Sticker products' base-cube attributions should prompt a `rebrand_of` or
+`modified_from` lead to be picked up specifically by QiYi's or YJ's next variant pass.
+
+**Sources added:** `thecubicle-cubestyle-carbon-fiber-3x3-2020`, `thecubicle-cubestyle-hollow-
+sticker-3x3-2020`. `thecubicle-cubestyle-3x3` (pass 1, reused).
+
+**Confidence:** `reported` on `description`/`positioning`; `uncertain` on `introduced`. The
+aftermarket finding itself is `reported`-to-`probable` — a single tier 2 source per product,
+directly stated rather than inferred, and internally consistent across two separate listings.
+
+---

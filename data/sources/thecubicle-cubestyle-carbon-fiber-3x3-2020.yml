@@ -1,0 +1,35 @@
+# source: thecubicle-cubestyle-carbon-fiber-3x3-2020
+# TheCubicle product page for the "CubeStyle Carbon Fiber 3x3," archived 2020-09-19 —
+# directly names the exact base cube models this decorated product is restickered from,
+# resolving it as a DATA_MODEL §4.3 aftermarket product, not a CubeStyle-original design.
+id: thecubicle-cubestyle-carbon-fiber-3x3-2020
+entity: source
+kind: retailer
+title: "CubeStyle Carbon Fiber 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cubestyle-carbon-fiber-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200919025107id_/https://www.thecubicle.com/products/cubestyle-carbon-fiber-3x3"
+excerpt: |-
+  Product Description: "The CubeStyle Carbon Fiber 3x3 is a budget-friendly stickerless 3x3
+  with carbon fiber black stickers applied on all 6 sides, which gives the cube a unique look
+  and texture. The base cube model for the CubeStyle Carbon Fiber 3x3 is the QiYi Warrior W
+  3x3 for the Phantom (Stickerless Bright) version and the YJ GuanLong for the Phantom
+  (Stickerless Pink) version. It is packaged in a CubeStyle box." Structured "Specifications":
+  "Manufacturer: CubeStyle / Type: 3x3 / Added: 2018-09-11 / Gross Weight: 77g / Dimensions:
+  56.0mm³ / Item Weight: 66.9g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2 — a direct, specific, named-base-model statement (not an inference), naming two different
+  base cubes for two different colourway variants of the same product listing (QiYi Warrior W;
+  YJ GuanLong). This is DATA_MODEL §4.3's aftermarket pattern: a base cube restickered with a
+  carbon-fibre-look coating and repackaged under a trade name — the resulting product belongs
+  under the base manufacturer's (QiYi's or YJ's) own model tree with a `modified_from`
+  relationship and a `service` block naming CubeStyle as the servicer, not under a CubeStyle
+  family. Not used to create a `cubestyle` family; preserved as a cross-manufacturer lead for
+  QiYi/YJ variant research. See research/notes/models/parallel-batch-B.md, 'CubeStyle'."
+status: sourced
