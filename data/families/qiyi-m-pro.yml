@@ -1,0 +1,58 @@
+# family: qiyi-m-pro
+# Pass 2 (family enumeration). QiYi's current (as of 2025) budget-magnetic 3x3 line, "M Pro",
+# spanning a base generation with several sold hardware configurations, an "Elite" successor,
+# a "V2" generation the retailer itself calls "flagship", and a same-generation smart sibling.
+
+id: qiyi-m-pro
+entity: family
+manufacturer_id: qiyi
+name: "QiYi M Pro"
+aliases: []
+introduced:
+  value: "2023"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  QiYi's "M Pro" 3x3 line, per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "Qiyi
+  M Pro Released mid 2023. This was QiYi's budget magnetic 3x3 release... This 3x3 also has
+  multiple versions" — Standard (48 magnets, stickered/stickerless), Maglev, and Maglev with
+  Ballcore, described there as configurations of the same product rather than separate models
+  (a variant-level distinction under DATA_MODEL section 4.2, not a family question). The same
+  page then lists "QiYi M Pro Elite Released around mid to late 2024... the non smart version of
+  the Qiyi Smartcube. It featured the same adjustment system. It also came in a UV version and
+  an Art version," and, separately, "QiYi Smart Cube 3x3 Released early 2024... free 'Smart
+  Player' app... a UV Version and a 'Art version'."
+
+  TheCubicle's own "qiyi-mofangge" collection (thecubicle-qiyi-mofangge-collection-2025) carries
+  "qiyi-m-pro-3x3", "qiyi-m-pro-3x3-maglev", and "qiyi-m-pro-v2-3x3-flagship" — the retailer's
+  own product-slug language explicitly calling the V2 generation "flagship", i.e. by 2025 this
+  line had moved from QiYi's stated 2023 "budget" positioning toward a flagship-tier product,
+  the same kind of positioning drift the GAN pilot documented for GAN356 (see docs/pilot-audit.md
+  F4). `positioning` is recorded at the line's stated origin (`budget`) rather than its current
+  state; a `positioning_history` field does not exist in the current schema (the same F4 gap).
+
+  **QiYi Smart Cube 3x3 is treated as part of this family, not a separate one.** The wiki's own
+  description of M Pro Elite as "the non smart version of the Qiyi Smartcube" with "the same
+  adjustment system" describes a shared design generation differing only in electronics — a
+  model/variant-level (smart vs. mechanical) distinction per DATA_MODEL section 4.2, not a
+  distinct product lineage. This mirrors the GAN pilot's treatment of "GAN ui Series" relative to
+  GAN Flagship Series, except here the evidence points to folding rather than splitting, because
+  no separately-named collection or persisting multi-generation smart line was found for QiYi
+  (contrast GAN, whose smart lines carry their own persisting collection names). Flagged for
+  pass 3 to confirm directly against QiYi's own product pages.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "'Budget magnetic 3x3 release' is the wiki's own description of the base 2023
+      generation; see description for the later 'flagship' retailer framing of V2, not adopted
+      into this field."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-mofangge-collection-2025]

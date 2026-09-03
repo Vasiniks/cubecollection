@@ -1,0 +1,36 @@
+# source: thecubicle-products-valk-prefix-2025
+# TheCubicle's own product-URL structure under /products/valk-*, enumerated via wayback CDX
+# `prefix` (2019-2025 captures). Tier 2, first-party retailer naming — establishes the Valk 3x3
+# succession (Valk2 M, Valk 3 family, Valk 4 M, Valk 5 M) as a persisting, continuously-sold
+# named line through at least November 2025.
+id: thecubicle-products-valk-prefix-2025
+entity: source
+kind: retailer
+title: "thecubicle.com/products/valk-* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-5-m"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/valk returns captures spanning
+  2019-01-29 through 2025-11-02, under a single "valk-*" naming pattern: valk2-m (2019-08-25),
+  valk-3 (2019-01-29), valk-3-m (2019-05-12), valk-3-elite (2020-08-12), valk-3-power
+  (2019-07-16), valk-3-power-m (2019-07-21), valk-3-mini-4-74cm (2019-12-15), valk-4-m-standard
+  (2019-07-23), valk-4-m-strong (2019-12-09), valk-5-m (2019-10-20, still resolving 200 as of
+  2025-11-02) — no "the-valk" or hyphenated "valk-3-mini-4.74cm" collection page was found under
+  a dedicated /collections/valk or /collections/thevalk path in the same enumeration window,
+  consistent with Valk being sold as a named product line via individual /products/ pages rather
+  than its own standalone collection at this retailer as of the captures found.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/products/valk --limit 300`) is the primary evidence; the excerpt
+  reproduces the path list and date range directly, per D3/RESEARCH_SPEC 3.5's allowance for
+  evidence that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer product naming, consistent across six years of
+  captures (2019-2025). Establishes the Valk generational succession and that it remained
+  current at this retailer through at least November 2025; does not by itself establish which
+  QiYi/X-Man Design entity currently sustains the line — see qiyi-valk.yml notes."
+status: sourced

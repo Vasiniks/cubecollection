@@ -1,0 +1,43 @@
+# family: qiyi-ms
+# Pass 2 (family enumeration). QiYi's "MS" naming tier, a cross-category budget-magnetic label
+# (also seen on 2x2 and 4x4 products); recorded here as a family only for its single documented
+# 3x3 entry, since no further 3x3-specific generation was found.
+
+id: qiyi-ms
+entity: family
+manufacturer_id: qiyi
+name: "QiYi MS"
+aliases: []
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  QiYi's "MS" line, per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi MS 3x3
+  Released early 2020. A budget 3x3 that is magnetized and is considered to be one of the best
+  3x3s for its price range, competing with the MoYu RS3M and YJ YuLong V2 M. This puzzle comes in
+  a stickered (black) version and a stickerless version. It measures 56.5mm and features a very
+  unique 'clacky' noise." The same wiki page independently describes "MS" as a cross-category
+  QiYi naming tier ("released under Qiyi's popular 'MS' line") applied to 2x2 and 4x4 products
+  as well, i.e. a shared naming/tier convention rather than a 3x3-specific line — the same
+  pattern the GAN pass 2 log records for GAN's "Leap" tier word.
+
+  Only one 3x3 generation under this exact name was found in either the wiki or TheCubicle's own
+  "qiyi-mofangge" collection (which still lists "qiyi-ms-3x3" as of 2024-2025,
+  thecubicle-qiyi-mofangge-collection-2025) — no "MS2", "MS V2", or similar successor. Recorded
+  as its own family on the strength of being a genuinely QiYi-given standalone product name
+  (per the same reasoning applied to gan-357 in the GAN pilot: a real, single-generation named
+  line is not evidence of a missing family, it is the family), not a placeholder.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-mofangge-collection-2025]

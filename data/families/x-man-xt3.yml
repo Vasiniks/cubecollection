@@ -1,0 +1,48 @@
+# family: x-man-xt3
+# Pass 2 (family enumeration). A separate, newer X-Man Design 3x3 line positioned explicitly by
+# the retailer as a lower-cost alternative to Tornado, with a distinct, simpler adjustment
+# system per both retailer copy and customer description.
+
+id: x-man-xt3
+entity: family
+manufacturer_id: x-man-design
+name: "X-Man XT3"
+aliases:
+  - "XT3"
+positioning: mainline
+description: |-
+  A 3x3 line from X-Man Design named "XT3", found at TheCubicle under "x-man-xt3-v1-3x3-flagship"
+  and "x-man-xt-3-v1-3x3-flagship-uv" (thecubicle-x-man-designs-collection-2025). The retailer's
+  own product description positions it explicitly relative to Tornado, X-Man's stated flagship
+  line: "The X-Man XT3 V1 3x3 (Flagship) is a 3x3 release from X-Man that gives you flagship
+  features without the flagship price" (thecubicle-x-man-xt3-v1-3x3-flagship-product) — i.e.
+  marketed by the retailer as flagship-adjacent but explicitly not the flagship line itself,
+  recorded here as `mainline` rather than `flagship` to avoid overclaiming past the source's own
+  careful phrasing.
+
+  Customer reviews on the same product page describe a mechanically distinct product from
+  Tornado, not merely a repackaging: "it feels like a tv3 was combined with a qiyi m pro (it
+  even has the same pieces as tv3)" versus a staff reply stating "This cube has a simpler
+  adjustment system than the Tornado that makes this cube both cheaper and more durable" — two
+  disagreeing characterisations of how similar the internal parts are, both quoted rather than
+  adjudicated. This tension is exactly the kind of evidence pass 3 will need to resolve the
+  model/variant boundary (DATA_MODEL section 4.2: same tooling reused under a different name
+  versus a genuinely distinct design) — not resolved at this family-enumeration pass, where the
+  question is only whether "XT3" is a real, separately-named X-Man line (it is) and not a
+  configuration of Tornado sold under another name (no source states that).
+
+  No manufacturer-first-party page for XT3 was located this pass; `introduced` is left unset
+  rather than inferred from a single 2025 retailer capture, which establishes only that the
+  product existed by then (2025-09-30), not when it launched.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+  /aliases:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+  /description:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025, thecubicle-x-man-xt3-v1-3x3-flagship-product]

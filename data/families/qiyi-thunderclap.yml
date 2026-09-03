@@ -1,0 +1,55 @@
+# family: qiyi-thunderclap
+# Pass 2 (family enumeration). QiYi's earliest sustained named 3x3 line, an "improved version"
+# of the earlier Bullfight (see qiyi-bullfight.yml), carried through at least three named
+# generations.
+
+id: qiyi-thunderclap
+entity: family
+manufacturer_id: qiyi
+name: "QiYi Thunderclap"
+aliases:
+  - "LeiTing"
+  - "QiYi LeiTing"
+introduced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  QiYi's own budget-tier 3x3 succession, named "Thunderclap" (LeiTing, 雷霆) across at least
+  three generations per the Speedsolving wiki's own product-history section
+  (speedsolving-wiki-qiyi-products): the original Thunderclap (mid 2015, "an improved version of
+  the [QiYi] Bullfight"), Thunderclap V2 (mid 2016, described by the same wiki as generally
+  inferior to V1), and Thunderclap V3/M (late 2019). TheCubicle's own "qiyi-mofangge" collection
+  still carries "qiyi-thunderclap-v3-m" as of its 2024-2025 captures
+  (thecubicle-qiyi-mofangge-collection-2025), i.e. the line was still current retail stock at
+  least five years after its stated V3 release.
+
+  The wiki also states a competing manufacturer, Newisland, rebranded the original Thunderclap
+  as the "Lightning" — recorded here only as a lead relevant to a possible `rebrand_of`
+  relationship at the variant level; not resolved at this pass and not evidence against
+  Thunderclap's own family boundary.
+
+  Generation dating, mechanism detail, and the Bullfight/Thunderclap succession question
+  (whether Bullfight should instead be treated as Thunderclap's own first generation rather than
+  a separate family — see qiyi-bullfight.yml) are pass-3 material, not resolved here.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-4 source ('Released Mid 2015'), no tier 1-2 corroboration of the exact
+      date found this pass. Recorded circa."
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "The wiki repeatedly frames Thunderclap as a budget/entry cube ('a premium speedcube
+      but almost at a budget cube price', 'a very cheap cube') competing with other budget lines
+      (MF3RS2). No manufacturer-first-party positioning statement was found this pass."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-mofangge-collection-2025]

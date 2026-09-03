@@ -1,0 +1,34 @@
+# source: thecubicle-x-man-xt3-v1-3x3-flagship-product
+# TheCubicle's own product page for the X-Man XT3 V1 3x3 (2025 capture). Tier 2, first-party
+# retailer copy plus verbatim customer reviews describing the cube against the Tornado line.
+id: thecubicle-x-man-xt3-v1-3x3-flagship-product
+entity: source
+kind: retailer
+title: "X-Man XT3 V1 3x3 (Flagship) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/x-man-designs/products/x-man-xt3-v1-3x3-flagship"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250930042853id_/https://www.thecubicle.com/collections/x-man-designs/products/x-man-xt3-v1-3x3-flagship"
+excerpt: |-
+  Product Description: "The X-Man XT3 V1 3x3 (Flagship) is a 3x3 release from X-Man that gives
+  you flagship features without the flagship price. Adjust the tension and compression and make
+  this puzzle fit your turning style perfectly! This is the Flagship version that has springs
+  and a matte outer finish." Versions offered on this page: "Flagship", "Flagship + UV",
+  "Pioneer MagLev + UV". Customer reviews (verbatim, representative): "it feels like a tv3 was
+  combined with a qiyi m pro (it even has the same pieces as tv3)"; "This cube is awesome. It
+  feels like a Tornado V3 but lighter"; "It is Like a Tornado but without all the adjustments for
+  the Magnets and because of that it is very light"; a staff reply states "This cube has a
+  simpler adjustment system than the Tornado that makes this cube both cheaper and more
+  durable".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2 for the retailer's own product description ('gives you flagship
+  features without the flagship price', an explicit positioning-relative-to-Tornado claim from
+  the seller, not the manufacturer). Customer reviews are tier 4/5 community opinion, cited only
+  descriptively (what the product feels like relative to Tornado) and not for any specification
+  or date; one reviewer's claim of shared pieces with Tornado V3 is disputed by another
+  describing a different, simpler adjustment system — both quoted rather than adjudicated."
+status: sourced

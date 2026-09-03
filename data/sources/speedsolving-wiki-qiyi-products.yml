@@ -1,0 +1,55 @@
+# source: speedsolving-wiki-qiyi-products
+# The same Speedsolving.com wiki article as speedsolving-wiki-qiyi (created in a prior session),
+# a second source record for its 3x3 product-history section and "Sub-Brands" section, following
+# the precedent of speedsolving-wiki-mfjs-products alongside speedsolving-wiki-mofang-jiaoshi:
+# the earlier record's excerpt did not cover this content, and it was not created by me this
+# session, so it is not overwritten. Tier 4 — corroborates only.
+id: speedsolving-wiki-qiyi-products
+entity: source
+kind: wiki
+title: "QiYi — Speedsolving.com Wiki (3x3 product history and Sub-Brands section)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=QiYi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260303165428/https://www.speedsolving.com/wiki/index.php?title=QiYi"
+excerpt: |-
+  3x3 section, in order, with release-date claims as given: "QiYi Bullfight (DouNiu) Released
+  Early 2015 ... QiYi Thunderclap (LeiTing) Released Mid 2015. The QiYi Thunderclap was an
+  improved version of the Bullfight ... QiYi Thunderclap V2 Released Mid 2016 ... Qiyi
+  Thunderclap V3/M Released Late 2019 ... QiYi Sail (QiHang) Released Late 2015. The QiYi Sail
+  is a 3x3x3 budget cube ... QiYi Big Sail Released Late 2016 ... a 6.8 cm 3x3 version of their
+  budget 3x3, the Sail ... QiYi Warrior W (YongShi) Released Late 2016. The QiYi Warrior W is an
+  updated version of the original Warrior 3x3 ... QiYi Sail W Released mid 2019 ... Qiyi Warrior
+  S Released around late 2019. This 3x3 was a updated version of the Warrior W ... QiYi WuWei M
+  Released Late 2019, one of the first magnetic 3x3s to be released by QiYi ... QiYi MS 3x3
+  Released early 2020. A budget 3x3 that is magnetized ... competing with the MoYu RS3M and YJ
+  YuLong V2 M ... QiYi MP 3x3 Released October 2021. The newest flagship 3x3 from QiYi that
+  bears a striking resemblance to the X-Man Tornado V2 but measures 56mm over the Tornados V2's
+  54.5mm ... considered a budget version of the Tornado v2 ... QiYi Black Mamba V3 3x3 Released
+  April 2022. This is the 3rd version of the Black Mamba line of puzzles from QiYi (although
+  these puzzles were before QiYi was a good speedcubing company) ... Qiyi M Pro Released mid
+  2023. This was QiYi's budget magnetic 3x3 release ... This 3x3 also has multiple versions
+  [Standard / Maglev / Maglev with Ballcore] ... QiYi M Pro Elite Released around mid to late
+  2024. This cube is the non smart version of the Qiyi Smartcube. It featured the same
+  adjustment system ... QiYi Smart Cube 3x3 Released early 2024 ... free 'Smart Player' app."
+
+  "Sub-Brands" section: "X-Man Design See X-Man Design. TheValk TheValk is a sub-brand created
+  for the release of the Valk 3, a 3x3x3 cube designed by former world record holder Mats Valk
+  that he used to set a former world record single of 4.74 seconds ... Afterwards, The Valk 3
+  Mini and The Valk Power also came out with positive feedback. QiYi Cube QiYi Cube is QiYi
+  MoFangGe's line of budget cubes."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from the 3x3 section and the Sub-Brands section
+  verbatim, condensed with ellipses where intervening text is unrelated commentary."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail for any release date. Used for
+  family-boundary structure (which named lines persisted across generations) and as a lead for
+  dating, corroborated where possible against TheCubicle's own retailer captures. The wiki's own
+  'Sub-Brands' heading lists X-Man Design and TheValk as parallel, separate QiYi sub-brands
+  rather than nesting TheValk inside X-Man Design — the evidentiary basis for treating
+  qiyi-valk's manufacturer_id as qiyi rather than x-man-design; see
+  research/notes/models/global-pass2-families.md."
+status: sourced

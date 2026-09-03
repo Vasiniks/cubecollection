@@ -1,0 +1,24 @@
+# source: thecubicle-x-man-volt-v2-collection-2019
+# TheCubicle's 2019 capture of an "X-Man Volt V2" collection page. Tier 2, first-party retailer
+# naming, cited only to establish that Volt is a Square-1, not a 3x3 — closing a discovery lead
+# from the same "x-man" prefix enumeration that surfaced the Tornado/XT3 lines.
+id: thecubicle-x-man-volt-v2-collection-2019
+entity: source
+kind: retailer
+title: "X-Man Volt V2 – TheCubicle (collection page, 2019 capture)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/x-man-volt-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191118233547id_/https://www.thecubicle.com/collections/x-man-volt-v2"
+excerpt: |-
+  Page title "X-Man Volt V2 – TheCubicle". The page's own top-level category navigation, at the
+  point this collection page loads, is filtered to a single facet: "ALL / Square-1" — i.e.
+  TheCubicle files this product under its Square-1 category, not 3x3.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer category placement. Sufficient to exclude Volt
+  from this archive's 3x3 scope; not relied on for any other claim."
+status: sourced

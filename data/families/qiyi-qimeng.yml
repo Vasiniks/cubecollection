@@ -1,0 +1,42 @@
+# family: qiyi-qimeng
+# Pass 2 (family enumeration). QiYi's beginner-tier 3x3 line, "QiMeng", found via TheCubicle's
+# own retailer collection rather than the (October 2024-edited) Speedsolving wiki, which does not
+# list it — recorded from retailer evidence alone.
+
+id: qiyi-qimeng
+entity: family
+manufacturer_id: qiyi
+name: "QiYi QiMeng"
+aliases: []
+positioning: budget
+description: |-
+  A QiYi beginner/entry-level 3x3 line named "QiMeng", found only in TheCubicle's own
+  "qiyi-mofangge" collection captures (thecubicle-qiyi-mofangge-collection-2025):
+  "qiyi-qimeng-plus-3x3-m-9cm", "qiyi-qimeng-v3-3x3-tiled", and "qiyi-qimeng-v3-3x3-tiled-bumpy"
+  — a base, a "Plus" magnetic configuration, and a "V3" generation with a tiled-surface option,
+  concurrently sold as of the 2024-2025 capture window.
+
+  Not present on the Speedsolving wiki's QiYi article as of its last edit (24 October 2024,
+  speedsolving-wiki-qiyi-products) — either newer than that edit or simply not documented there.
+  No manufacturer-first-party source was located this pass. `introduced` is left unset rather
+  than inferred from capture dates, since a retailer capture date establishes only that the
+  product existed by then, not when it launched — searched and not resolvable to a date this
+  pass, recorded here in prose per RESEARCH_SPEC's "unknown means someone looked" distinction,
+  since the schema's Date type requires a value/precision/qualifier triple that a bare "searched
+  and found nothing" cannot honestly populate.
+
+  A native Chinese name for this line was not located this pass — the pinyin "QiMeng" is
+  reproduced as given by the retailer's own product slugs only; no Chinese-character form is
+  recorded, to avoid supplying one from unsourced recall.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-mofangge-collection-2025]
+    note: "Inferred only from the 'QiMeng'/beginner naming convention and small size (9cm listed
+      for the Plus configuration, i.e. a compact/child-oriented format); no manufacturer or
+      reviewer statement of positioning was found."
+  /description:
+    confidence: reported
+    sources: [thecubicle-qiyi-mofangge-collection-2025]

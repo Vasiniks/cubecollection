@@ -1,0 +1,77 @@
+# family: qiyi-valk
+# Pass 2 (family enumeration). QiYi's flagship 3x3 line associated with world-record holder
+# Mats Valk, persisting under the "Valk" name across at least five numbered generations and
+# still current as of late 2025. Manufacturer_id resolved to qiyi rather than x-man-design —
+# see the boundary reasoning below.
+
+id: qiyi-valk
+entity: family
+manufacturer_id: qiyi
+name: "QiYi Valk"
+aliases:
+  - "The Valk"
+  - "TheValk"
+  - "Valk"
+introduced:
+  value: "2018"
+  precision: year
+  qualifier: circa
+positioning: flagship
+description: |-
+  QiYi's flagship 3x3 line designed in collaboration with former world-record holder Mats Valk,
+  persisting under the "Valk" name across generations documented at TheCubicle
+  (thecubicle-products-valk-prefix-2025): Valk2 M, Valk 3 (with M, Elite, Power, Power M, and
+  Mini sub-versions), Valk 4 M (Standard and Strong), and Valk 5 M — the last still resolving
+  live product pages as of a November 2025 capture, i.e. the line remained current at least
+  through late 2025. The Speedsolving wiki independently corroborates the origin and the
+  earliest generation's significance (speedsolving-wiki-qiyi-products): "TheValk is a sub-brand
+  created for the release of the Valk 3, a 3x3x3 cube designed by former world record holder
+  Mats Valk that he used to set a former world record single of 4.74 seconds. It was the main of
+  a large percentage of speedcubers after its release."
+
+  A 2018 QiYi storefront capture (qiyicube-storefront-2018, created in pass 1) shows "The Valk"
+  already a headline product ("QiYi Cube – The Valk, MoFangGe, X-Man Design Speed Cube") selling
+  Valk 2 M and Valk 3 variants, consistent with `introduced` circa 2018 or slightly earlier
+  (Valk2 M implies an unlisted original Valk/Valk 1 that this pass did not chase further).
+
+  **Boundary call: manufacturer_id set to qiyi, not x-man-design.** This is the pass's least
+  certain family-boundary decision and is recorded in full in
+  research/notes/models/global-pass2-families.md. The Speedsolving wiki's own "Sub-Brands"
+  section lists "X-Man Design" and "TheValk" as two parallel, separately-headed entries under
+  QiYi (not nesting Valk inside X-Man Design), and the 2018 QiYi storefront page title likewise
+  names "The Valk" and "X-Man Design" as two separate items rather than one containing the
+  other. Against that: QiYi's own current (2026) "family of brands" page
+  (theqiyi-about-us) does not mention Valk by name at all, only X-Man Design — Valk may have
+  been folded administratively into X-Man Design's product range since 2018, or may simply have
+  been omitted from a marketing page that is not an exhaustive brand list. No source located
+  this pass states either reading directly. Recorded at `qiyi` on the strength of the two
+  parallel-listing sources found; flagged for a human reviewer.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [qiyicube-storefront-2018, speedsolving-wiki-qiyi-products]
+    note: "The 2018 storefront capture already shows Valk 2 M and Valk 3 for sale, implying an
+      earlier original Valk this pass did not date directly; recorded circa 2018 as the latest
+      possible date, not the earliest."
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "'It was the main of a large percentage of speedcubers after its release' following a
+      world-record single is read as flagship-tier positioning; no manufacturer-first-party
+      'flagship' self-description was found this pass."
+  /aliases:
+    confidence: reported
+    sources: [qiyicube-storefront-2018, speedsolving-wiki-qiyi-products]
+  /manufacturer_id:
+    confidence: uncertain
+    sources: [speedsolving-wiki-qiyi-products, qiyicube-storefront-2018, theqiyi-about-us]
+    note: "See description. Two tier-4/tier-1(storefront) sources treat Valk as parallel to,
+      not nested inside, X-Man Design; QiYi's current tier-1 brand page omits Valk entirely.
+      Recorded uncertain rather than adjusted between qiyi and x-man-design without a source
+      stating the relationship directly."
+  /description:
+    confidence: reported
+    sources: [qiyicube-storefront-2018, speedsolving-wiki-qiyi-products,
+      thecubicle-products-valk-prefix-2025, theqiyi-about-us]

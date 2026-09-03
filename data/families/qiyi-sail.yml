@@ -1,0 +1,45 @@
+# family: qiyi-sail
+# Pass 2 (family enumeration). QiYi's budget 3x3 line named "Sail" (QiHang), persisting across
+# at least three named products including a distinct oversized ("Big Sail") variant used for a
+# named competitive event.
+
+id: qiyi-sail
+entity: family
+manufacturer_id: qiyi
+name: "QiYi Sail"
+aliases:
+  - "QiHang"
+  - "QiYi QiHang"
+introduced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  QiYi's budget 3x3 line named "Sail" (QiHang, 起航), per the Speedsolving wiki's own
+  product-history section (speedsolving-wiki-qiyi-products): the original Sail (late 2015,
+  "a 3x3x3 budget cube... considered to be one of the best budget cubes on the market for its
+  performance and was used in the US Nationals Sail Challenge in 2016 and 2017"), QiYi Big Sail
+  (late 2016, "a 6.8 cm 3x3 version of their budget 3x3, the Sail... often used for feet
+  solving"), and Sail W (mid 2019, "a new budget friendly puzzle"). TheCubicle's own
+  "qiyi-mofangge" collection still carries "qiyi-sail-w-3x3" as of its 2024-2025 captures
+  (thecubicle-qiyi-mofangge-collection-2025).
+
+  Big Sail is recorded here as part of the same family rather than a separate line: the wiki's
+  own text explicitly derives it from "their budget 3x3, the Sail" as a size variant for a
+  specific competition use, not a differently-named product.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-mofangge-collection-2025]

@@ -1,0 +1,39 @@
+# source: thecubicle-qiyi-mofangge-collection-2025
+# TheCubicle's own "qiyi-mofangge" collection product-URL structure, enumerated via wayback CDX
+# `prefix` (2024-2025 captures). Tier 2, first-party retailer naming — corroborates which named
+# QiYi 3x3 lines were concurrently on sale as of 2025, and gives the "flagship" self-description
+# for M Pro V2.
+id: thecubicle-qiyi-mofangge-collection-2025
+entity: source
+kind: retailer
+title: "thecubicle.com/collections/qiyi-mofangge/products/* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/qiyi-mofangge"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/collections/qiyi-mofangge returns 3x3
+  product paths including (2024-2025 captures): qiyi-dimension-3x3, qiyi-fluffy-3x3,
+  qiyi-m-pro-3x3, qiyi-m-pro-3x3-maglev, qiyi-m-pro-v2-3x3-flagship, qiyi-mini-3x3-3-0cm,
+  qiyi-mofangge-m-lube-3ml, qiyi-ms-3x3, qiyi-qimeng-plus-3x3-m-9cm, qiyi-qimeng-v3-3x3-tiled,
+  qiyi-qimeng-v3-3x3-tiled-bumpy, qiyi-sail-w-3x3, qiyi-smart-cube-3x3, qiyi-thunderclap-v3-m,
+  qiyi-void-cube-3x3-magnetic, qiyi-warrior-m-3x3-magnetic, qiyi-warrior-m-pro-3x3,
+  qiyi-warrior-plus-3x3-18-8cm, qiyi-warrior-plus-3x3-m-18-8cm, qiyi-warrior-s-3x3,
+  qiyi-warrior-w-3x3 — every named 3x3 line found in this session's QiYi discovery, concurrently
+  filed under this one retailer collection as of the 2024-2025 capture window, plus non-3x3
+  items (klotski, mirror blocks, timers) filed in the same collection and excluded from this
+  archive's scope. Product URL slug "qiyi-m-pro-v2-3x3-flagship" is the retailer's own naming,
+  not manufacturer copy.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/collections/qiyi --limit 300`) is the primary evidence; no single
+  page transcript captures the whole collection, so the excerpt reproduces the path list
+  directly, per D3/RESEARCH_SPEC 3.5's allowance for evidence that does not reduce to one page's
+  text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure. Corroborates the wiki's
+  (tier 4) product-line names and approximate currency as of 2024-2025 for lines this pass
+  relied on; does not establish release dates alone."
+status: sourced

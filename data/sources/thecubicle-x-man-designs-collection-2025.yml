@@ -1,0 +1,41 @@
+# source: thecubicle-x-man-designs-collection-2025
+# TheCubicle's own "x-man-designs" collection product-URL structure, enumerated via wayback CDX
+# `prefix` (2025 captures). Tier 2, first-party retailer naming — establishes the Tornado V3/V4
+# succession (including AI/smart and multiple in-house tuning-tier reissues of the same base
+# product) and the separate XT3 flagship-budget line, both filed under this one collection.
+id: thecubicle-x-man-designs-collection-2025
+entity: source
+kind: retailer
+title: "thecubicle.com/collections/x-man-designs/products/* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/x-man-designs"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/collections/x-man-designs returns 3x3
+  product paths (2025 captures) including: x-man-tornado-v3-flagship-standard-blank-center-cap,
+  x-man-tornado-v3-m-magnetic-core, x-man-tornado-v3-m-pioneer-3x3-revived-limited-edition,
+  x-man-tornado-v3-m-pioneer-uv-3x3, x-man-tornado-v3-m-standard, x-man-tornado-v3-pioneer-
+  blank-center-cap, x-man-tornado-v4-ai-3x3-uv-with-charging-base, x-man-tornado-v4-m-3x3-
+  flagship, x-man-tornado-v4-m-3x3-pioneer-uv, x-man-xt-3-v1-3x3-flagship-uv,
+  x-man-xt3-v1-3x3-flagship — plus several in-house tuning-service reissues of the Tornado V3/V4
+  base products under other TheCubicle programme names (angstrom-tornado-v3-m-flagship,
+  angstrom-tornado-v4-m-3x3-flagship, cubicle-custom-tornado-v3-m-flagship, cubicle-pro-shop-x-
+  man-tornado-v4-m-3x3-flagship, cubicle-pro-shop-x-man-tornado-v4-m-3x3-pioneer-uv,
+  fz-tornado-v4-m-3x3-flagship, fz-tornado-v4-m-3x3-pioneer-uv) — aftermarket/service material,
+  out of pass 2 scope, noted only to show these are TheCubicle service tiers applied to the
+  Tornado base, not separate X-Man product lines. Non-3x3 items in the same collection (x-man-
+  hong 5x5, x-man-spark 7x7, x-man-wingy skewb) excluded from this archive's scope.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/collections/x-man --limit 300`) is the primary evidence; the excerpt
+  reproduces the path list directly, per D3/RESEARCH_SPEC 3.5's allowance for evidence that does
+  not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure. Establishes that Tornado
+  (V3, V4, V4 AI) and XT3 are the two named 3x3 lines TheCubicle files under X-Man Design as of
+  2025, and that neither Volt (a Square-1, per thecubicle-x-man-volt-v2-collection-2019) nor any
+  other 3x3 name appears in this collection."
+status: sourced

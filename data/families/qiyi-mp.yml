@@ -1,0 +1,50 @@
+# family: qiyi-mp
+# Pass 2 (family enumeration). A single documented QiYi 3x3, named "MP", positioned by the
+# community as a near-clone of the X-Man Tornado V2. Kept deliberately separate from
+# qiyi-m-pro (below): the names are visually similar but textually distinct, and no source
+# states a succession between them.
+
+id: qiyi-mp
+entity: family
+manufacturer_id: qiyi
+name: "QiYi MP"
+aliases: []
+introduced:
+  value: "2021-10"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  A single documented QiYi 3x3 named "MP", per the Speedsolving wiki (speedsolving-
+  wiki-qiyi-products): "QiYi MP 3x3 Released October 2021. The newest flagship 3x3 from QiYi
+  that bears a striking resemblance to the X-Man Tornado V2 but measures 56mm over the Tornados
+  V2's 54.5mm. It has an adjustment system similar to the Tornado V2's but without elasticity
+  and magnetic adjustments. It is considered a budget version of the Tornado v2."
+
+  Not found in TheCubicle's own 2024-2025 "qiyi-mofangge" collection captures
+  (thecubicle-qiyi-mofangge-collection-2025), unlike every other QiYi 3x3 line recorded this
+  pass — consistent with, though not proof of, discontinuation by that date.
+
+  **Deliberately not merged with qiyi-m-pro.** "MP" (2021) and "M Pro" (per the same wiki page,
+  first dated mid-2023) are textually distinct names, and nothing in either the wiki or any
+  retailer capture found this pass states MP was renamed or succeeded by M Pro — the wiki
+  describes them as two separate product entries with no cross-reference. Splitting rather than
+  collapsing per the standing instruction that an unclear boundary should default to separate
+  records; flagged as an open question for pass 3 in
+  research/notes/models/global-pass2-families.md.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "The wiki calls it 'the newest flagship 3x3 from QiYi' at time of writing but also 'a
+      budget version of the Tornado v2' in the same entry — an internally tensioned
+      characterisation. Recorded `mainline` rather than `flagship` or `budget` as the least
+      overclaiming reading; a human should revisit."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-mofangge-collection-2025]

@@ -1,0 +1,62 @@
+# family: qiyi-bullfight
+# Pass 2 (family enumeration). QiYi's earliest documented 3x3 name, kept as its own family
+# rather than folded into qiyi-thunderclap because no source gives it the "Thunderclap" name —
+# the wiki instead describes Thunderclap as a distinct, later, "improved version" of it, the
+# same relationship pattern the GAN pilot recorded via `succeeds` rather than a shared family
+# (RESEARCH_SPEC section 4, worked decision B/F pattern applied to a family-level rather than
+# model-level case).
+
+id: qiyi-bullfight
+entity: family
+manufacturer_id: qiyi
+name: "QiYi Bullfight"
+aliases:
+  - "DouNiu"
+  - "QiYi DouNiu"
+introduced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+positioning: budget
+discontinued:
+  value: "2015"
+  precision: year
+  qualifier: circa
+  note: "No source states a discontinuation date; recorded circa the same year as introduction
+    only because Thunderclap, its stated successor, is dated to the same year and no later
+    Bullfight-named product was found. Treated as a single-generation historical family per
+    RESEARCH_SPEC's instruction to preserve such families rather than omit them."
+description: |-
+  QiYi's earliest documented 3x3 product name found this pass, per the Speedsolving wiki's own
+  product history (speedsolving-wiki-qiyi-products): "Released Early 2015. The QiYi Bullfight is
+  known for the controversy involving this and the Newisland Phoenix. Newisland got ahold of
+  QiYi's plans of the Bullfight, and made their own version and called it the Phoenix... Newisland
+  later came clean and admitted that the Phoenix was indeed a knockoff of the Bullfight."
+
+  Recorded as its own single-generation family rather than as qiyi-thunderclap's first
+  generation: no source located this pass gives it the "Thunderclap" name, and the wiki's own
+  language ("The QiYi Thunderclap was an improved version of the Bullfight") describes a
+  succession between two differently-named products, not one continuous name. If a tier 1-2
+  source later documents Bullfight and Thunderclap sharing tooling or being marketed as one
+  line, this boundary should be revisited — flagged in
+  research/notes/models/global-pass2-families.md.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-4 source, no citation trail, no corroborating retailer capture found this
+      pass (the product does not appear in TheCubicle's 2024-2025 collection captures, consistent
+      with a discontinued 2015 product but not independently confirmed)."
+  /discontinued:
+    confidence: uncertain
+    sources: [speedsolving-wiki-qiyi-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Inferred only from its being named alongside Sail/Warrior/Thunderclap as an early
+      inexpensive competitor product; no explicit budget/flagship statement was found."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]

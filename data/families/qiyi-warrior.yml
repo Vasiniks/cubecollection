@@ -1,0 +1,57 @@
+# family: qiyi-warrior
+# Pass 2 (family enumeration). QiYi's budget 3x3 line named "Warrior" (YongShi), the longest
+# concurrently-sold named QiYi budget line found this pass, still current as of 2024-2025.
+
+id: qiyi-warrior
+entity: family
+manufacturer_id: qiyi
+name: "QiYi Warrior"
+aliases:
+  - "YongShi"
+  - "QiYi YongShi"
+introduced:
+  value: "2016"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  QiYi's budget 3x3 line named "Warrior" (YongShi, 勇士), per the Speedsolving wiki's own
+  product-history section (speedsolving-wiki-qiyi-products): "QiYi Warrior W (YongShi) Released
+  Late 2016... an updated version of the original Warrior 3x3... one of the best budget cubes,
+  being cheaper than the MF3RS, MF3RS2 and Yuxin Little Magic" (implying a still-earlier,
+  unnamed-by-generation "original Warrior" this pass did not chase further) and "Qiyi Warrior S
+  Released around late 2019... an updated version of the Warrior W."
+
+  TheCubicle's own "qiyi-mofangge" collection shows the line still expanding in 2024-2025, with
+  "qiyi-warrior-w-3x3", "qiyi-warrior-s-3x3", "qiyi-warrior-m-3x3-magnetic",
+  "qiyi-warrior-m-pro-3x3", "qiyi-warrior-plus-3x3-18-8cm" and "qiyi-warrior-plus-3x3-m-18-8cm"
+  all concurrently listed (thecubicle-qiyi-mofangge-collection-2025) — an oversized "Plus"
+  configuration parallel to Sail's "Big Sail", plus an apparently still-active magnetic ("M",
+  "M Pro") succession beyond the wiki's own last-edited (October 2024) coverage. A further
+  "QiYi Warrior Plus Max 3x3 (38cm)" was seen in an unrelated product-page navigation banner
+  this pass (visible in thecubicle-x-man-xt3-v1-3x3-flagship-product's own site-wide "on sale"
+  notifications) — corroborating an oversized "Plus"/"Max" sub-line continuing to the present,
+  not chased further.
+
+  Generation ordering, exact dates for the "M"/"M Pro"/"Plus" sub-names, and whether the
+  unnamed "original Warrior" the wiki implies predates this family's `introduced` date are
+  pass-3 material.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Dated to Warrior W's 'Late 2016' release, the earliest dated Warrior-named product
+      found; the wiki's own text implies an earlier undated 'original Warrior' predecessor,
+      recorded as an open question rather than adjusted into the date."
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-mofangge-collection-2025,
+      thecubicle-x-man-xt3-v1-3x3-flagship-product]

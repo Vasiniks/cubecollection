@@ -1,0 +1,62 @@
+# family: x-man-tornado
+# Pass 2 (family enumeration). X-Man Design's flagship 3x3 line, named directly by QiYi's own
+# first-party "About Us" page as X-Man Design's flagship series.
+
+id: x-man-tornado
+entity: family
+manufacturer_id: x-man-design
+name: "X-Man Tornado"
+aliases:
+  - "Tornado"
+  - "X-Man Design Tornado"
+introduced:
+  value: "2018"
+  precision: year
+  qualifier: circa
+positioning: flagship
+description: |-
+  X-Man Design's flagship 3x3 succession, named directly by QiYi's own first-party "About Us"
+  page (theqiyi-about-us, created in pass 1): "[X-Man Design] includes some of our most advanced
+  competition hardware, especially the Tornado series" and, elsewhere on the same page, "The
+  Tornado line of 3x3 flagships... represent[s] a deep partnership between competition
+  experience and engineering execution" — an explicit, tier 1, first-party statement that
+  Tornado is X-Man Design's own flagship line, not merely a retailer label.
+
+  TheCubicle's own "x-man-designs" collection (thecubicle-x-man-designs-collection-2025) shows
+  the succession concurrently as V3 (Standard, Magnetic Core, Pioneer UV, and a "Pioneer 3x3
+  Revived Limited Edition" reissue) and V4 (M/Flagship, Pioneer UV, and V4 AI — a smart/electronic
+  sibling with a UV finish and charging base). GAN356 XS and MoYu WR M MagLev 2021 are named
+  alongside "the Tornado v4" in one customer review found this pass
+  (thecubicle-x-man-xt3-v1-3x3-flagship-product) as contemporary flagship-tier peers, consistent
+  with the flagship positioning QiYi itself states.
+
+  **Tornado V4 AI is treated here as part of this family, not split out**, on the same reasoning
+  DATA_MODEL section 4.2 and the GAN pilot's smart-line treatment give: whether it belongs as a
+  smart model/variant within Tornado or should be split into its own family (parallel to GAN's
+  separately-named smart collections) is a pass-3 question this pass does not resolve, flagged
+  in research/notes/models/global-pass2-families.md. No dedicated "X-Man smart cube" collection
+  name (analogous to GAN's "i Series"/"ui Series") was found this pass, which is why it was not
+  pre-emptively split.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "No source located this pass states an exact Tornado-line launch date; recorded circa
+      2018 from the earliest Tornado-generation evidence available (V3 predates the 2025
+      captures used here by an unstated margin — TheCubicle's product-URL enumeration does not
+      itself carry launch dates, only capture dates). Flagged as a pass-3 dating gap."
+  /positioning:
+    confidence: confirmed
+    sources: [theqiyi-about-us]
+    note: "QiYi's own tier 1 page states this directly and unambiguously twice ('most advanced
+      competition hardware, especially the Tornado series'; 'The Tornado line of 3x3
+      flagships') — sufficient alone per the confidence table."
+  /aliases:
+    confidence: confirmed
+    sources: [theqiyi-about-us]
+  /description:
+    confidence: reported
+    sources: [theqiyi-about-us, thecubicle-x-man-designs-collection-2025,
+      thecubicle-x-man-xt3-v1-3x3-flagship-product]
