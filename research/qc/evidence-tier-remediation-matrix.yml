@@ -1,0 +1,789 @@
+# evidence-tier-remediation-matrix
+# Written by Agent B, remediation gate (Pass 2). Source of the 111 count and methodology:
+# research/qc/agent-b-evidence-policy.md — read that first for the reasoning; this file is
+# meant to be actionable on its own by a future session without re-reading the Pass 2 log.
+#
+# Scope: every source that backs at least one of the 111 attestations (107 'reported', 4
+# 'probable') resting solely on a tier-4 source, as independently re-derived and confirmed
+# exact by this agent (see method in the companion .md). Does not include data/ edits — this
+# agent's write lane is research/qc/ only. A future session (or a human) applies the
+# 'decision' and 'mechanism' fields below as data/ edits.
+
+policy:
+  rule: >-
+    A confidence value of 'reported' or 'probable' requires at least one cited source at tier <=3 or
+    tier <=2 respectively (per vocab/confidence.yml, as written). A solitary tier-4 source backing
+    an attestation must use 'uncertain', never 'reported'/'probable', unless that specific source
+    has an individually-justified tier override to tier 3 recorded on the source file itself
+    (source.tier + reliability_note, the existing RESEARCH_SPEC S3.1 mechanism). A tier override is
+    source-specific, never kind-wide: 'kind: wiki' stays tier 4 by default archive-wide. An override
+    to tier 3 is justified only when ALL of: (1) editing is restricted/protected, not
+    open-anonymous; (2) a revision history exists; (3) the specific page carries no self-declared
+    outdated/stub/DNF banner as of the capture used; (4) the claim being cited is within
+    claim_types_permitted for tier 3 (see below) -- corporate/ownership relationships and numeric
+    specifications are never covered by a tier-3 wiki override regardless of how well-curated the
+    page is. Positioning classifications and any comparative/superlative characterisation drawn from
+    such a source are capped at 'reported' and may never reach 'confirmed', matching RESEARCH_SPEC
+    S3.3's manufacturer-marketing rule applied by analogy to community sources. Precise (day-level
+    or unqualified-month) dates never rest on this source class alone, upgraded or not; record at
+    'quarter' or 'year' precision with qualifier 'circa'. When a source cannot be verified against
+    criteria (1)-(3) directly (rather than inferred from family resemblance to a verified sibling),
+    the conservative default is tier 4 / confidence 'uncertain' until verified -- never 'reported'
+    on the strength of resemblance alone.
+  claim_types_tier3_permitted:
+    - existence_and_naming
+    - approximate_chronology_quarter_or_year_circa_only
+    - family_succession_same_manufacturer
+    - positioning_capped_at_reported_never_confirmed
+    - descriptive_prose_with_comparative_language_attributed_not_adopted
+  claim_types_tier4_permitted:
+    - existence_and_naming_at_uncertain_only
+    - approximate_chronology_at_uncertain_only
+  claim_types_forbidden_regardless_of_tier:
+    - >-
+      numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+      adjustment_system, coating)
+    - >-
+      corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+      modified_from)
+    - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+    - precise_day_or_unqualified_month_dates
+  verification_procedure_for_a_wiki_tier_override:
+    - >-
+      WebFetch the live page (not the archived capture) on speedsolving.com directly;
+      web.archive.org refuses WebFetch per RESEARCH_SPEC S3.6, use scripts/wayback.mjs there if
+      archived-only verification is needed instead
+    - Check for an edit-protection notice ("This page is protected")
+    - Check for a working History / past-revisions link
+    - >-
+      Check for any self-declared staleness banner ("may be currently outdated", "DNF", "stub")
+      anywhere on the page, not just the excerpted section
+    - >-
+      Only then set source.tier: 3 with a reliability_note stating what was checked and when,
+      following the companies-house-rubiks-brand-ltd precedent
+entries:
+  - source_id: speedsolving-wiki-qiyi-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 3
+    mechanism: 'tier override on source record (tier: 3 + reliability_note), no kind change'
+    justification: >-
+      Verified live (2026-09-03): page is edit-protected, revision-history-tracked, carries 2
+      external footnote citations, and shows no self-declared outdated/stub banner. Meets
+      RESEARCH_SPEC tier 3's own definition ('long-form community documentation') for
+      existence/naming/approximate-dating/positioning claims. Individual release-date claims within
+      the prose are still uncited within the page itself, so date precision stays capped (see
+      claim_types_permitted) regardless of the tier change.
+    affected_attestations:
+      count: 16
+      pointers:
+        - data/families/qiyi-bullfight.yml/description (reported)
+        - data/families/qiyi-m-pro.yml/introduced (reported)
+        - data/families/qiyi-m-pro.yml/positioning (reported)
+        - data/families/qiyi-mp.yml/introduced (reported)
+        - data/families/qiyi-ms.yml/introduced (reported)
+        - data/families/qiyi-ms.yml/positioning (reported)
+        - data/families/qiyi-sail.yml/introduced (reported)
+        - data/families/qiyi-sail.yml/positioning (reported)
+        - data/families/qiyi-sail.yml/aliases (reported)
+        - data/families/qiyi-thunderclap.yml/introduced (reported)
+        - data/families/qiyi-thunderclap.yml/positioning (reported)
+        - data/families/qiyi-thunderclap.yml/aliases (reported)
+        - data/families/qiyi-valk.yml/positioning (reported)
+        - data/families/qiyi-warrior.yml/introduced (reported)
+        - data/families/qiyi-warrior.yml/positioning (reported)
+        - data/families/qiyi-warrior.yml/aliases (reported)
+    claim_types_permitted:
+      - existence_and_naming
+      - approximate_chronology_quarter_or_year_circa_only
+      - family_succession_same_manufacturer
+      - positioning_capped_at_reported_never_confirmed
+      - descriptive_prose_with_comparative_language_attributed_not_adopted
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: override_tier
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      WebFetch of https://www.speedsolving.com/wiki/index.php?title=QiYi on 2026-09-03: 'This page
+      is protected'; History link present; 2 numbered footnotes; no outdated banner. Same underlying
+      page also backs speedsolving-wiki-qiyi.
+  - source_id: speedsolving-wiki-qiyi
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 3
+    mechanism: 'tier override on source record (tier: 3 + reliability_note), no kind change'
+    justification: >-
+      Same physical page as speedsolving-wiki-qiyi-products (title=QiYi), verified live; see that
+      entry. Backs only /native_name on the qiyi manufacturer record.
+    affected_attestations:
+      count: 1
+      pointers:
+        - data/manufacturers/qiyi.yml/native_name (probable)
+    claim_types_permitted:
+      - existence_and_naming
+      - approximate_chronology_quarter_or_year_circa_only
+      - family_succession_same_manufacturer
+      - positioning_capped_at_reported_never_confirmed
+      - descriptive_prose_with_comparative_language_attributed_not_adopted
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: override_tier
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: Same WebFetch verification as speedsolving-wiki-qiyi-products.
+  - source_id: speedsolving-wiki-yongjun-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 3
+    mechanism: 'tier override on source record (tier: 3 + reliability_note), no kind change'
+    justification: >-
+      Verified live (2026-09-03): edit-protected, revision-history-tracked, numbered external
+      footnotes present, no outdated banner. Meets tier 3's own definition for the claim types
+      below. Page itself predates 2024+ YJ products (ZhiLong, MGC Evo II, Meta/Meta3) per the
+      existing source record's own note — absence of those products on this page is not evidence
+      they don't exist, already correctly handled in the existing reliability_note.
+    affected_attestations:
+      count: 16
+      pointers:
+        - data/families/yj-chilong.yml/introduced (reported)
+        - data/families/yj-chilong.yml/positioning (reported)
+        - data/families/yj-chilong.yml/description (reported)
+        - data/families/yj-guanlong.yml/introduced (reported)
+        - data/families/yj-guanlong.yml/positioning (reported)
+        - data/families/yj-jinjiao.yml/introduced (reported)
+        - data/families/yj-jinjiao.yml/positioning (reported)
+        - data/families/yj-mgc.yml/introduced (reported)
+        - data/families/yj-mgc.yml/positioning (reported)
+        - data/families/yj-ruilong.yml/introduced (reported)
+        - data/families/yj-ruilong.yml/positioning (reported)
+        - data/families/yj-ruilong.yml/description (reported)
+        - data/families/yj-sulong.yml/introduced (reported)
+        - data/families/yj-sulong.yml/positioning (reported)
+        - data/families/yj-sulong.yml/description (reported)
+        - data/families/yj-yulong.yml/positioning (reported)
+    claim_types_permitted:
+      - existence_and_naming
+      - approximate_chronology_quarter_or_year_circa_only
+      - family_succession_same_manufacturer
+      - positioning_capped_at_reported_never_confirmed
+      - descriptive_prose_with_comparative_language_attributed_not_adopted
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: override_tier
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      WebFetch of https://www.speedsolving.com/wiki/index.php?title=YongJun on 2026-09-03: 'This
+      page is protected'; History link present; numbered footnotes on YJ/MoYu relationship and
+      company info; no outdated banner.
+  - source_id: speedsolving-wiki-dayan-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 3
+    mechanism: 'tier override on source record (tier: 3 + reliability_note), no kind change'
+    justification: >-
+      Verified live (2026-09-03): edit-protected, revision-history-tracked, numbered footnotes
+      concentrated in the product-release sections specifically (stronger than the archive-side
+      reliability_note currently claims, which says "no citation trail for any individual release
+      date" — worth softening on the next touch, not contradicting the recommendation). No outdated
+      banner. Numbering scheme independently corroborated at tier 1 by dayancube-official-2013 per
+      the existing record.
+    affected_attestations:
+      count: 15
+      pointers:
+        - data/families/dayan-guhong.yml/introduced (reported)
+        - data/families/dayan-guhong.yml/positioning (reported)
+        - data/families/dayan-lingyun.yml/introduced (reported)
+        - data/families/dayan-lunhui.yml/introduced (reported)
+        - data/families/dayan-panshi.yml/positioning (reported)
+        - data/families/dayan-taiyan.yml/introduced (reported)
+        - data/families/dayan-taiyan.yml/aliases (reported)
+        - data/families/dayan-taiyan.yml/description (reported)
+        - data/families/dayan-tengyun.yml/introduced (reported)
+        - data/families/dayan-tengyun.yml/positioning (reported)
+        - data/families/dayan-tengyun.yml/aliases (reported)
+        - data/families/dayan-xiangyun.yml/introduced (reported)
+        - data/families/dayan-xiangyun.yml/description (reported)
+        - data/families/dayan-zhanchi.yml/introduced (reported)
+        - data/families/dayan-zhanchi.yml/positioning (reported)
+    claim_types_permitted:
+      - existence_and_naming
+      - approximate_chronology_quarter_or_year_circa_only
+      - family_succession_same_manufacturer
+      - positioning_capped_at_reported_never_confirmed
+      - descriptive_prose_with_comparative_language_attributed_not_adopted
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: override_tier
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      WebFetch of https://www.speedsolving.com/wiki/index.php?title=DaYan on 2026-09-03: 'This page
+      is protected'; History link; footnotes '[1][2][3]' appearing primarily within product release
+      sections; no outdated banner.
+  - source_id: speedsolving-wiki-cyclone-boys-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 3
+    mechanism: 'tier override on source record (tier: 3 + reliability_note), no kind change'
+    justification: >-
+      Verified live (2026-09-03): edit-protected, revision-history-tracked, one footnote
+      (manufacturing location, external China-toy-trade source), no outdated banner.
+    affected_attestations:
+      count: 12
+      pointers:
+        - data/families/cyclone-boys-feichi.yml/introduced (reported)
+        - data/families/cyclone-boys-feichi.yml/positioning (reported)
+        - data/families/cyclone-boys-feichi.yml/description (reported)
+        - data/families/cyclone-boys-feijue.yml/positioning (reported)
+        - data/families/cyclone-boys-feijue.yml/description (reported)
+        - data/families/cyclone-boys-feiwu.yml/introduced (reported)
+        - data/families/cyclone-boys-feiwu.yml/successor_family_id (reported)
+        - data/families/cyclone-boys-feiwu.yml/positioning (reported)
+        - data/families/cyclone-boys-feiwu.yml/description (reported)
+        - data/families/cyclone-boys-metallic-3x3.yml/description (reported)
+        - data/families/cyclone-boys-mini-3x3.yml/introduced (reported)
+        - data/families/cyclone-boys-mini-3x3.yml/description (reported)
+    claim_types_permitted:
+      - existence_and_naming
+      - approximate_chronology_quarter_or_year_circa_only
+      - family_succession_same_manufacturer
+      - positioning_capped_at_reported_never_confirmed
+      - descriptive_prose_with_comparative_language_attributed_not_adopted
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: override_tier
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      WebFetch of https://www.speedsolving.com/wiki/index.php?title=Cyclone_Boys on 2026-09-03:
+      'This page is protected'; History link; 1 footnote; no outdated banner.
+  - source_id: speedsolving-wiki-moyu
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 3
+    mechanism: 'tier override on source record (tier: 3 + reliability_note), no kind change'
+    justification: >-
+      Verified live (2026-09-03): edit-protected, revision-history-tracked, no outdated banner. The
+      one successor_family_id claim it backs (moyu-huanying) is an in-house lineage claim, not a
+      cross-company relationship, so it stays inside claim_types_permitted. The MoYu/YJ origin
+      narrative this source also backs elsewhere in the archive is correctly kept at
+      reported/uncertain per the existing record's own note and is not touched by this override
+      alone (a relationship-adjacent claim; see claim_types_forbidden).
+    affected_attestations:
+      count: 3
+      pointers:
+        - data/families/moyu-huanying.yml/successor_family_id (reported)
+        - data/families/moyu-rs3m.yml/positioning (probable)
+        - data/families/moyu-tanglong.yml/positioning (reported)
+    claim_types_permitted:
+      - existence_and_naming
+      - approximate_chronology_quarter_or_year_circa_only
+      - family_succession_same_manufacturer
+      - positioning_capped_at_reported_never_confirmed
+      - descriptive_prose_with_comparative_language_attributed_not_adopted
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: override_tier
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      WebFetch of https://www.speedsolving.com/wiki/index.php?title=MoYu on 2026-09-03: 'This page
+      is protected'; History link; no outdated banner.
+  - source_id: speedsolving-wiki-diansheng-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: none — source stays tier 4; recommend confidence relabel on citing attestations
+    justification: >-
+      Source record's own reliability_note already states this page 'carries its own may be
+      currently outdated editorial warning.' A self-declared staleness warning is the concrete case
+      tier 4's definition names ('unattributed wikis... never establishes'). reported overstates it;
+      the correct label per vocab/confidence.yml is uncertain ('weak or single-source').
+    affected_attestations:
+      count: 9
+      pointers:
+        - data/families/diansheng-3x3-m.yml/positioning (reported)
+        - data/families/diansheng-3x3-m.yml/description (reported)
+        - data/families/diansheng-mscube.yml/aliases (reported)
+        - data/families/diansheng-solar-s3m.yml/positioning (reported)
+        - data/families/diansheng-solar-s3m.yml/description (reported)
+        - data/families/diansheng-stickerless-3x3.yml/description (reported)
+        - data/families/diansheng-type-e.yml/introduced (reported)
+        - data/families/diansheng-type-e.yml/aliases (reported)
+        - data/families/diansheng-type-e.yml/description (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      data/sources/speedsolving-wiki-diansheng-products.yml reliability_note: "carries its own 'may
+      be currently outdated' editorial warning".
+  - source_id: speedsolving-wiki-shengshou-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: none — source stays tier 4; recommend confidence relabel on citing attestations
+    justification: >-
+      Same pattern as diansheng-products: source's own reliability_note states the page 'carries its
+      own may be currently outdated editorial warning.'
+    affected_attestations:
+      count: 9
+      pointers:
+        - data/families/shengshou-aurora.yml/introduced (reported)
+        - data/families/shengshou-aurora.yml/aliases (reported)
+        - data/families/shengshou-fangyuan.yml/introduced (reported)
+        - data/families/shengshou-legend.yml/introduced (reported)
+        - data/families/shengshou-legend.yml/aliases (reported)
+        - data/families/shengshou-pearl.yml/introduced (reported)
+        - data/families/shengshou-pearl.yml/aliases (reported)
+        - data/families/shengshou-wind.yml/introduced (reported)
+        - data/families/shengshou-wind.yml/aliases (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      data/sources/speedsolving-wiki-shengshou-products.yml reliability_note: "carries its own 'may
+      be currently outdated' editorial warning".
+  - source_id: speedsolving-wiki-yuxin-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: none — source stays tier 4; recommend confidence relabel on citing attestations
+    justification: >-
+      Same pattern: source's own reliability_note states the page 'carries its own may be currently
+      outdated editorial warning' and additionally 'gives no release dates for any 3x3 product' —
+      the weakest-evidenced of the three self-flagged -products pages.
+    affected_attestations:
+      count: 9
+      pointers:
+        - data/families/yuxin-3x3.yml/description (reported)
+        - data/families/yuxin-black-kirin.yml/positioning (reported)
+        - data/families/yuxin-fire.yml/successor_family_id (reported)
+        - data/families/yuxin-fire.yml/positioning (reported)
+        - data/families/yuxin-fire.yml/description (reported)
+        - data/families/yuxin-huanglong.yml/positioning (reported)
+        - data/families/yuxin-little-magic.yml/positioning (reported)
+        - data/families/yuxin-water.yml/positioning (reported)
+        - data/families/yuxin-water.yml/description (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      data/sources/speedsolving-wiki-yuxin-products.yml reliability_note: "carries its own 'may be
+      currently outdated' editorial warning".
+  - source_id: speedsolving-wiki-witeden
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: >-
+      none — source stays tier 4; recommend confidence relabel on citing attestations, plus a
+      correction to the source record's own reliability_note (data/ edit, outside this agent's write
+      lane)
+    justification: >-
+      Live verification (2026-09-03) found this page DOES carry the 'This page may be currently
+      outdated... take care about information on this page' banner and is tagged 'Perhaps Outdated
+      pages' by the wiki's own categorisation — but the existing
+      data/sources/speedsolving-wiki-witeden.yml reliability_note does not mention this at all
+      ('Unattributed community wiki, tier 4 by default. Provides the native name, founding year,
+      location, and product-focus history found nowhere else this pass.'). This is a real gap in the
+      prior session's verification, not just a policy call: the source record should be corrected to
+      note the banner, and the three attestations resting on it should not be read as more solid
+      than a self-flagged-stale tier-4 page warrants.
+    affected_attestations:
+      count: 3
+      pointers:
+        - data/manufacturers/witeden.yml/country (reported)
+        - data/manufacturers/witeden.yml/founded (reported)
+        - data/manufacturers/witeden.yml/native_name (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: high
+    requires_human_decision: true
+    evidence: >-
+      WebFetch of https://www.speedsolving.com/wiki/index.php?title=WitEden on 2026-09-03: banner
+      text 'This page may be currently outdated (since new cubes/products may be released). Take
+      care about information on this page and update it if you know more recent information.'; page
+      categorised 'Perhaps Outdated pages'. This contradicts nothing already recorded — it is
+      information the existing source record is simply missing.
+  - source_id: speedsolving-wiki-eastsheen
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: none — source stays tier 4; recommend confidence relabel on citing attestations
+    justification: >-
+      Source record's own reliability_note already states 'the wiki itself notes the article may be
+      currently outdated regarding new products.' Correctly self-aware already; the fix here is only
+      the confidence label on the two citing attestations (reported -> uncertain), consistent with
+      the source's own documented caveat.
+    affected_attestations:
+      count: 2
+      pointers:
+        - data/manufacturers/eastsheen.yml/country (reported)
+        - data/manufacturers/eastsheen.yml/founded (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      data/sources/speedsolving-wiki-eastsheen.yml reliability_note: "the wiki itself notes the
+      article 'may be currently outdated' regarding new products".
+  - source_id: speedsolving-wiki-fangshi
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: none — source stays tier 4; recommend confidence relabel on citing attestations
+    justification: >-
+      Source record's own reliability_note describes this page as 'sparse, no citation trail' — not
+      self-flagged outdated, but thin enough that a solitary tier-4 citation should read as
+      uncertain rather than reported. No live verification performed for this specific low-weight (2
+      attestations) source; the existing record's own characterisation is sufficient to decide
+      against an upgrade.
+    affected_attestations:
+      count: 2
+      pointers:
+        - data/families/fangshi-shuangren.yml/positioning (reported)
+        - data/families/fangshi-shuangren.yml/aliases (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: medium
+    requires_human_decision: false
+    evidence: >-
+      data/sources/speedsolving-wiki-fangshi.yml reliability_note: 'Tier 4, community-edited,
+      sparse, no citation trail.'
+  - source_id: speedsolving-wiki-guoguan
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: none — source stays tier 4; recommend confidence relabel on the /aliases attestation only
+    justification: >-
+      The single attestation in the 111 that cites this source (manufacturer guoguan /aliases,
+      probable) is a solitary tier-4 citation and probable requires a tier <=2 source per
+      vocab/confidence.yml; relabel to uncertain. Note this source ALSO backs guoguan.kind and
+      guoguan.parent_id (both x-critical, both reported) alongside a tier-1 source
+      (moyucube-official-home-2022) — that pair is NOT in the 111 (a tier-1 source is cited,
+      satisfying the letter of 'reported'), but the record's own note admits the tier-1 source only
+      shows the two names grouped, not the specific relationship this tier-4 source states directly.
+      Flagged separately in adjacent_findings; not resolved by this entry's decision.
+    affected_attestations:
+      count: 1
+      pointers:
+        - data/manufacturers/guoguan.yml/aliases (probable)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      data/manufacturers/guoguan.yml: /founded already correctly recorded uncertain from this same
+      source ('Wiki page gives Founded: unknown... recorded... at the weakest usable confidence') —
+      the /aliases attestation from the identical source should be held to the same standard.
+  - source_id: speedsolving-wiki-maru
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: 4
+    mechanism: none — source stays tier 4; recommend confidence relabel on citing attestation
+    justification: >-
+      Source record's own reliability_note calls this page 'unusually thin even for this tier' and
+      notes its own infobox marks founding and years active 'unknown.' A page that self-reports not
+      knowing its subject's founding year is not upgrade material; the single reported /country
+      attestation resting on it alone should read uncertain.
+    affected_attestations:
+      count: 1
+      pointers:
+        - data/manufacturers/maru.yml/country (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: downgrade
+    confidence_in_recommendation: high
+    requires_human_decision: false
+    evidence: >-
+      data/sources/speedsolving-wiki-maru.yml reliability_note: "unusually thin even for this tier
+      (the wiki's own infobox marks founding and years active 'unknown')".
+  - source_id: speedsolving-wiki-mfjs-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: null
+    mechanism: pending — verify live before choosing override_tier or downgrade
+    justification: >-
+      Structurally resembles the five verified override_tier sources (same site, same '-products'
+      companion-page convention; the qiyi-products source record's own header states it followed
+      'the precedent of speedsolving-wiki-mfjs-products alongside
+      speedsolving-wiki-mofang-jiaoshi'), which is suggestive but not verified — I did not
+      independently fetch this specific page. The existing reliability_note ('no named author or
+      citation trail... sufficient alone only for uncertain/reported') does not mention an outdated
+      banner either way. Do not resolve on family resemblance alone.
+    affected_attestations:
+      count: 6
+      pointers:
+        - data/families/mfjs-meilong.yml/introduced (reported)
+        - data/families/mfjs-mf3.yml/introduced (reported)
+        - data/families/mfjs-mf3.yml/positioning (reported)
+        - data/families/mfjs-mf3.yml/successor_family_id (reported)
+        - data/families/mfjs-mf3.yml/aliases (reported)
+        - data/families/mfjs-mini-3x3.yml/aliases (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: leave_unresolved
+    confidence_in_recommendation: low
+    requires_human_decision: true
+    evidence: >-
+      Not independently fetched this session. Action for the next session: WebFetch the live
+      speedsolving.com MFJS wiki page (title likely 'MFJS' or 'MoFangGe'), check for
+      edit-protection, revision history, and any 'may be currently outdated' banner, then apply the
+      same override_tier or downgrade logic used for the six verified sources. Interim: treat as
+      tier 4, confidence uncertain, not reported.
+  - source_id: speedsolving-wiki-mf8-products
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: null
+    mechanism: pending — verify live before choosing override_tier or downgrade
+    justification: >-
+      Not independently verified live this session. Existing reliability_note: 'no citation trail
+      for any date, though the list is framed as ordered by year of release rather than as prose
+      commentary' — a mildly positive structural signal (a dated list, not free narrative) but not
+      equivalent to the protection/history/footnote verification done for the six confirmed sources.
+    affected_attestations:
+      count: 4
+      pointers:
+        - data/families/mf8-crazy-3x3x3.yml/introduced (reported)
+        - data/families/mf8-crazy-3x3x3.yml/description (reported)
+        - data/families/mf8-legend.yml/introduced (reported)
+        - data/families/mf8-legend.yml/description (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: leave_unresolved
+    confidence_in_recommendation: low
+    requires_human_decision: true
+    evidence: >-
+      Not independently fetched this session. Action: WebFetch the live speedsolving.com MF8 wiki
+      page, check edit-protection/history/outdated-banner, then apply the six-source verification
+      pattern. Interim: treat as tier 4, confidence uncertain.
+  - source_id: speedsolving-wiki-mofang-jiaoshi
+    current_kind: wiki
+    derived_tier: 4
+    recommended_tier: null
+    mechanism: >-
+      pending — verify live; and even if verified as tier-3-eligible, the two attestations here sit
+      close to a relationship-type claim that should stay capped regardless
+    justification: >-
+      Not independently verified live this session. The two attestations here (mfjs manufacturer
+      /native_name; mfjs-meilong family /positioning) are individually low-stakes claim types, but
+      this exact source is also the evidentiary basis (per the mfjs.yml notes referenced in its own
+      reliability_note) for treating Meilong as a product line rather than a separate sub-brand — a
+      structural/relationship-adjacent call. Recommend resolving the underlying page verification
+      before mechanically changing anything, rather than upgrading the two low-stakes pointers in
+      isolation while the harder relationship question next to them stays open.
+    affected_attestations:
+      count: 2
+      pointers:
+        - data/manufacturers/mfjs.yml/native_name (probable)
+        - data/families/mfjs-meilong.yml/positioning (reported)
+    claim_types_permitted:
+      - existence_and_naming_at_uncertain_only
+      - approximate_chronology_at_uncertain_only
+    claim_types_forbidden:
+      - >-
+        numeric_specifications (size_mm, weight_g, magnet_configuration, core_system, maglev,
+        adjustment_system, coating)
+      - >-
+        corporate_ownership_or_subbrand_relationships (parent_id, kind:sub_brand, rebrand_of,
+        modified_from)
+      - confirmed_confidence (schema rule 9 already blocks this; restated for durability)
+      - precise_day_or_unqualified_month_dates
+    decision: leave_unresolved
+    confidence_in_recommendation: low
+    requires_human_decision: true
+    evidence: >-
+      Not independently fetched this session. Action: WebFetch the live speedsolving.com
+      MoFangGe/MFJS wiki page and re-evaluate alongside the Meilong product-line-vs-sub-brand
+      question already flagged in data/manufacturers/mfjs.yml.
+adjacent_findings:
+  - id: guoguan-kind-parent_id-mixed-tier
+    records:
+      - data/manufacturers/guoguan.yml#/kind
+      - data/manufacturers/guoguan.yml#/parent_id
+    description: >-
+      Both are x-critical fields (manufacturer.kind) attested 'reported', citing
+      speedsolving-wiki-guoguan (tier 4, states the sub-brand relationship directly) AND
+      moyucube-official-home-2022 (tier 1, but per the record's own note only shows the two brand
+      names grouped together on one page, not the specific parent/sub-brand relationship). This
+      satisfies the letter of vocab/confidence.yml ('reported' needs a tier <=3 source, and a tier-1
+      source is cited) but the tier-1 source may not actually carry the specific claim being
+      attested. Not in the 111 (tier composition is mixed, not all-tier-4), found while auditing
+      speedsolving-wiki-guoguan for its /aliases citation.
+    severity: >-
+      higher than the 111 individually, because kind/parent_id are x-critical and determine how the
+      whole guoguan manufacturer and everything under it is classified
+    recommendation: >-
+      requires_human_decision: a human (or the source-auditor agent, whose lane this closer
+      resembles) should re-read moyucube-official-home-2022 directly and confirm whether it actually
+      states the parent/sub-brand relationship or only co-lists the names, and adjust the
+      attestation accordingly.
+    requires_human_decision: true
+summary:
+  total_attestations_affected: 111
+  total_sources_affected: 17
+  total_records_affected: 59
+  decisions:
+    override_tier: 63
+    downgrade: 36
+    leave_unresolved: 12
+    retain: 0
+    replace_source: 0
+    remove_claim: 0
+  requires_human_decision_sources: 4
+  requires_human_decision_attestations: 15
+  validate_clean_before_and_after: true
+  critical_fields_among_the_111: 0
