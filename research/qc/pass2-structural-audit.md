@@ -483,3 +483,94 @@ cannot prove LanLan never made a standard 3x3x3 for another market.
 This is the model outcome for the gate: a specialist identified a methodological gap, the gap
 was real, the test was cheap, and running it converted an assumption into evidence — in this
 case confirming rather than overturning the original call.
+
+---
+
+## S15 — **CRITICAL / BLOCKING**: `theqiyi-about-us` is not a manufacturer source
+
+The entity-identity research flagged that `theqiyi.com` may not be QiYi's real site. **Verified
+directly, and confirmed. This is the most serious finding of the gate.**
+
+### The evidence
+
+Fetching `https://theqiyi.com/about-us.html` returns a footer reading, verbatim:
+
+> *"QIYI is a participant in the Amazon Services LLC Associates Program, an advertising program
+> designed to provide a means for sites to earn advertising fees by advertising and linking to
+> Amazon.com © 2025 QIYI. All rights reserved."*
+
+Plus: **no ICP filing number** (mandatory for a legitimate mainland-Chinese company site), no
+contact address, no native checkout, products linking out to Amazon, and a 2025 copyright.
+
+**A manufacturer does not run an Amazon affiliate programme to earn commission on its own
+products.** This is an affiliate/content site that presents itself in QiYi's name.
+
+Corroborating: the Speedsolving wiki gives QiYi's site as `qiyitoys.net` and its founding year as
+**"unknown"** — while `theqiyi.com` asserts a specific "1998 Founded" narrative found nowhere
+else.
+
+### Why this is severe
+
+The record is `kind: manufacturer_official`, which **derives to tier 1** — the strongest evidence
+class, and the only one that alone satisfies rule 9 for a `confirmed` claim. This is precisely
+the systemic amplification path predicted in S6, now observed in a real record.
+
+`data/manufacturers/qiyi.yml` also records `website: "https://theqiyi.com/"` at `confirmed` —
+i.e. the archive currently states that an Amazon affiliate site *is* QiYi's official website.
+
+### Blast radius — measured, not estimated
+
+Six `confirmed` attestations cite it **with no other tier-1 support** and would fail rule 9 if
+its tier were corrected:
+
+| Record | Pointer | Other sources | Rule 9 without it |
+|---|---|---|---|
+| `qiyi` | `/country` | none | **FAILS** |
+| `qiyi` | `/founded` | none | **FAILS** |
+| `qiyi` | `/website` | none | **FAILS** |
+| `x-man-design` | `/kind` | none | **FAILS** |
+| `x-man-tornado` | `/positioning` | none | **FAILS** |
+| `x-man-tornado` | `/aliases` | none | **FAILS** |
+| `qiyi` | `/kind` | `qiyicube-storefront-2018`=T1 | survives |
+| `x-man-design` | `/parent_id` | `qiyicube-storefront-2018`=T1 | survives |
+
+Also cited at lower confidence by `qiyi-valk` and in two other source records.
+
+**The QiYi founding date (1998) and the entire "family of brands" corporate structure — the
+evidence that X-Man Design is a QiYi sub-brand — currently rest on this source.**
+
+### Why I did **not** apply the fix
+
+Re-kinding it is decisive in principle but **not a narrow correction**: it breaks six `confirmed`
+attestations across two manufacturer records and one family, turning `npm run check` red, and
+Phase 18 requires the repository to be left green. It also needs replacement research (what *is*
+QiYi's real domain — `qiyicube.com`, `qiyitoys.net`, or another?) that is beyond an audit pass.
+
+Per the gate's own rule for ambiguous manufacturer relationships — *document first, adjudicate
+deliberately* — it is recorded here in full rather than applied.
+
+### Recommended remediation (in order)
+
+1. **Re-kind `theqiyi-about-us`.** `kind: manufacturer_official` is factually false. The vocab
+   has no "affiliate site" value; the honest route is the explicit `tier: 4` override (already
+   supported, used by `companies-house-rubiks-brand-ltd`) with a written justification, since
+   RESEARCH_SPEC tier 4 covers *"marketing copy without specifications"*.
+2. **Downgrade the six orphaned `confirmed` attestations** to `uncertain`, or re-source them.
+3. **Correct `qiyi.website`** — do not record an affiliate domain as the manufacturer's site.
+4. **Re-source QiYi's founding year.** It is currently unsupported; the wiki says "unknown".
+   Note `qiyicube-storefront-2018` (`qiyicube.com`, 2018 capture) appears genuine and survives as
+   real tier-1 evidence for QiYi's own storefront and product lines.
+5. **Re-verify `x-man-design` `/kind`** against a genuine first-party source. Its `/parent_id`
+   survives independently on `qiyicube-storefront-2018`, so the QiYi→X-Man relationship itself is
+   not in doubt — only the "sub brand" characterisation sourced from the affiliate page.
+
+### Effect on the gate's verdict
+
+This alone moves QiYi and X-Man Design — **11 families between them, including the disputed
+`qiyi-valk` and `x-man-tornado`** — from "ready after minor corrections" to **blocked pending
+correction**. The remaining ~111 families are unaffected.
+
+There is one silver lining for `qiyi-valk`: the counter-evidence that made its attribution look
+shaky (*"QiYi's own about-us page doesn't mention Valk"*) came **from this same unreliable
+page**, and is now much weaker. The `manufacturer_id: qiyi` assignment is therefore *better*
+supported than it appeared, resting on the genuine 2018 `qiyicube.com` storefront.
