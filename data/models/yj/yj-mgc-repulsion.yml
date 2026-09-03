@@ -1,0 +1,59 @@
+# model: yj-mgc-repulsion
+# Pass 3 (model enumeration), agent D. A distinct MGC-line side-branch: same-polarity
+# ("repel") magnets, a genuinely different magnet-architecture mechanism from every other MGC
+# generation. No source found this pass names a specific predecessor, so no succeeds
+# relationship is recorded; this is documented as a parallel branch, not slotted into a strict
+# linear ordinal sequence with false precision.
+id: yj-mgc-repulsion
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC Repulsion"
+scope_class: core
+generation:
+  label: "Repulsion"
+  basis: manufacturer_declared
+specs:
+  magnet_architecture: monopole
+description: |-
+  TheCubicle's own product description, in full (thecubicle-yj-mgc-repulsion-3x3-product,
+  2021-10-08 capture): "The MGC Repulsion is a 3x3 that has a feature unlike any other. Some of
+  the magnets in this puzzle repel each other rather than attract. This gives the cube an
+  extremely unique feel." No predecessor or successor is named by this source; recorded as a
+  parallel MGC-line branch rather than assigned a numbered ordinal in the family's main
+  succession (per thecubicle-yj-mgc-prefix-2026's own note that the MGC line shows more than
+  one instance of parallel, non-strictly-linear generations).
+status: drafted
+attestations:
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-repulsion-3x3-product]
+    note: "'Some of the magnets... repel each other rather than attract' is closest to the
+      'monopole' vocabulary value (a same-pole/repelling arrangement), though the vocabulary
+      description ('a single-pole magnet arrangement') does not exactly describe a mixed
+      attract/repel design; recorded as the best available match with this caveat."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-repulsion-3x3-product]
+    note: "'Repulsion' is YJ's own product name; no ordinal is assigned given its side-branch status (see description)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-mgc-repulsion-3x3-product]

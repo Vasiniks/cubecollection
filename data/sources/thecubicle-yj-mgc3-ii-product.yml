@@ -1,0 +1,28 @@
+# source: thecubicle-yj-mgc3-ii-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC3 II (the
+# Speedsolving wiki's "MGC V2"), a 2020 capture. "MGC3" is TheCubicle's own puzzle-size-coded
+# naming for the 3x3 member of the MGC line (compare "MGC2" for 2x2, "MGC4" for 4x4, seen
+# elsewhere in the same product-URL family), not a generation ordinal itself.
+id: thecubicle-yj-mgc3-ii-product
+entity: source
+kind: retailer
+title: "YJ MGC3 II Speed Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc3-ii"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927014105id_/https://www.thecubicle.com/products/yj-mgc3-ii"
+excerpt: |-
+  Product Description: "The YJ MGC3 II is a magnetic 3x3 speed cube by YJ, and the update to
+  the YJ MGC3. A magnetic cube 8 grams lighter than its predecessor, the MGC3 II comes this
+  time in stickerless, making it accessible for more people. It is inherently faster than the
+  V1 and has really good forward corner cutting." Page metadata/tags: "MGC 3, MGC3 v2, MGC".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. Matches the Speedsolving
+  wiki's own 'MGC V2' description (new spring system, first stickerless MGC option) closely
+  enough to be treated as the same generation under a retailer-specific product-title
+  convention, not a separate product."
+status: sourced

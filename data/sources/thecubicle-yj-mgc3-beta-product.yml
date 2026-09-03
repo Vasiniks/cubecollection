@@ -1,0 +1,33 @@
+# source: thecubicle-yj-mgc3-beta-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC3 Beta
+# (8-Magnet Ball-Core + UV Coated configuration), a 2025 capture, stating directly "a brand new
+# mechanism and philosophy" — the clearest first-party mechanism-change statement found for any
+# MGC generation this pass.
+id: thecubicle-yj-mgc3-beta-product
+entity: source
+kind: retailer
+title: "YJ MGC3 Beta 3x3 (8-Magnet Ball-Core + UV Coated) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc3-beta-8-magnet-ball-core-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251130012646id_/https://www.thecubicle.com/products/yj-mgc3-beta-8-magnet-ball-core-uv-coated"
+excerpt: |-
+  Product Description: "The YJ MGC3 Beta is the latest 3x3 speedcube from YJ, featuring a brand
+  new mechanism and philosophy. Designed by the same mind behind the legendary Alpha Cube, the
+  Beta boasts a balanced magnetic feel, great corner cutting, and a wonderfully comfortable
+  hand-feel. This version of the Beta has UV coating and an 8-magnet ball core for extra
+  stability. The YJ MGC3 Beta delivers its unique blend of speedcubing performance at a very
+  competitive price."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. 'A brand new mechanism and
+  philosophy' is an explicit, first-party mechanism-change statement, the clearest model-level
+  case found for any MGC generation this pass. 'This version of the Beta' language confirms
+  that the 8-magnet ball-core UV-coated configuration is a sold variant of one base 'MGC3 Beta'
+  model, not a separate generation — a plain 'yj-mgc3-beta' product path and a
+  'yj-mgc3-beta-limited-edition' path also exist at this retailer, both treated as variants of
+  this model per this pass's boundary."
+status: sourced

@@ -1,0 +1,83 @@
+# model: yj-mgc-elite
+# Pass 3 (model enumeration), agent D. The Speedsolving wiki's "MGC Elite" / TheCubicle's "MGC3
+# Elite" — "the first YJ cube to have customisable magnets" per the wiki, confirmed by the
+# retailer's own "adjustable magnet strength and elasticity" description.
+id: yj-mgc-elite
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC Elite"
+aliases:
+  - "YJ MGC3 Elite"
+scope_class: core
+generation:
+  label: "Elite"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 55.5
+  weight_g: 87.0
+  shape: standard
+  magnet_architecture: adjustable
+  adjustment_system: tension_only
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ MGC Elite The YJ MGC
+  Elite which was released in 2019, is the first YJ cube to have customisable magnets."
+  TheCubicle's own product description (thecubicle-yj-mgc3-elite-product, 2019-12-15 capture):
+  "The MGC Elite is an upcoming flagship 3x3 made by YJ. A strong improvement over its
+  predecessor, the MGC Elite has adjustable magnet strength and elasticity, coupled with a
+  flexible, traditional tensioning screw."
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-mgc-v2
+    target_entity: model
+    note: "TheCubicle's own copy calls this 'a strong improvement over its predecessor' without
+      naming the predecessor by name; MGC V2 is the nearest prior generation by the wiki's own
+      listing order."
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-elite-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-elite-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-elite-product]
+    note: "Item Weight (87.0g), not Gross Weight (186g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-elite-product]
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-mgc3-elite-product]
+    note: "'Customisable magnets' / 'adjustable magnet strength' maps directly to the 'adjustable' vocabulary value."
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-elite-product]
+    note: "'A flexible, traditional tensioning screw' plus adjustable elasticity; recorded as
+      tension_only as the closest vocabulary match, though the elasticity-adjustment mechanism
+      itself is not fully described."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-elite-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-mgc3-elite-product]

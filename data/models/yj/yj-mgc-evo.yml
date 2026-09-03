@@ -1,0 +1,57 @@
+# model: yj-mgc-evo
+# Pass 3 (model enumeration), agent D. "MGC Evo" — a new, more granular dual-axis (magnetic +
+# compression) hand-adjustment mechanism, per TheCubicle's own copy. Named only as "the latest
+# 3x3 in the MGC line" with no specific predecessor identified, so no succeeds relationship is
+# recorded (its capture date, 2022-05-22, falls between MGC3 Elite V2's own 2022-10-19 capture
+# and MGC Repulsion's 2021-10-08 capture, another sign the MGC line ran more than one branch
+# concurrently around this period rather than one strict succession).
+id: yj-mgc-evo
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC Evo"
+scope_class: core
+generation:
+  label: "Evo"
+  basis: manufacturer_declared
+specs:
+  adjustment_system: tension_compression
+description: |-
+  TheCubicle's own product description (thecubicle-yj-mgc-evo-3x3-product, 2022-05-22
+  capture): "The YJ MGC Evo is the latest 3x3 in the MGC line. This cube features 6 magnetic
+  adjustments and 10 compression adjustments. All of these can be changed with just your hand
+  and this small screwdriver that comes with the puzzle." No ordinal is assigned given the
+  MGC line's documented parallel-branch pattern around this period (see this record's preface
+  note and yj-mgc-repulsion.yml).
+status: drafted
+attestations:
+  /specs/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-3x3-product]
+    note: "'6 magnetic adjustments and 10 compression adjustments' maps to tension_compression (independent tension/compression adjustment)."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "'6 magnetic adjustments' confirms adjustable magnets, but this is already captured
+      in adjustment_system; magnet_architecture left unset since no distinct architecture
+      detail (layer count etc.) was stated."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-3x3-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-mgc-evo-3x3-product]

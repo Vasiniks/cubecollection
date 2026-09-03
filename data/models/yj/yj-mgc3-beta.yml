@@ -1,0 +1,59 @@
+# model: yj-mgc3-beta
+# Pass 3 (model enumeration), agent D. "MGC3 Beta" — TheCubicle's own copy states directly "a
+# brand new mechanism and philosophy," the clearest first-party mechanism-change statement
+# found for any MGC generation this pass. TheCubicle sells at least three configurations under
+# this name (a plain "yj-mgc3-beta" path, "8-Magnet Ball-Core + UV Coated", and a "Limited
+# Edition") — all treated as variants of this one model, per its own "This version of the Beta
+# has..." framing, not further generations.
+id: yj-mgc3-beta
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC3 Beta"
+scope_class: core
+generation:
+  label: "Beta"
+  basis: manufacturer_declared
+specs:
+  core_system: ball_core
+description: |-
+  TheCubicle's own product description (thecubicle-yj-mgc3-beta-product, 2025-11-30 capture,
+  earliest capture found 2025-06-04): "The YJ MGC3 Beta is the latest 3x3 speedcube from YJ,
+  featuring a brand new mechanism and philosophy. Designed by the same mind behind the
+  legendary Alpha Cube, the Beta boasts a balanced magnetic feel, great corner cutting, and a
+  wonderfully comfortable hand-feel. This version of the Beta has UV coating and an 8-magnet
+  ball core for extra stability." "This version" language confirms the ball-core/UV
+  configuration is a sold variant of one base model, not a separate generation.
+status: drafted
+attestations:
+  /specs/core_system:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-beta-product]
+    note: "'An 8-magnet ball core' is stated for the specific UV-coated configuration fetched;
+      whether the plain (non-ball-core) 'yj-mgc3-beta' base path shares this core or differs
+      is a pass-4 variant question this record does not resolve, hence uncertain rather than
+      probable at the model level."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found in enough detail to map to a single vocabulary value."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-mgc3-beta-product]

@@ -1,0 +1,69 @@
+# model: yj-mgc-original
+# Pass 3 (model enumeration), agent D. The original YJ MGC (May 2018 per the Speedsolving
+# wiki) — YJ's flagship line and, per the family record, its most historically significant
+# product. The clean starting point of a succession that continues, per
+# thecubicle-yj-mgc-prefix-2026, to at least "MGC Sigma" (2026).
+id: yj-mgc-original
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: manufacturer_declared
+announced:
+  value: "2018-05"
+  precision: month
+  qualifier: circa
+specs:
+  size_mm: 55.5
+  weight_g: 85.8
+  shape: standard
+  magnet_architecture: single_layer
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products, tier-3 override): "YJ MGC
+  Released May 2018, supposedly after 3 years of design and improvement, it is only available
+  in magnetic, black and white... features a strong magnetic positioning system... at an
+  economical price of $12... Its main rival is emerging to be the GAN356R, which it completely
+  outstrips." TheCubicle's own product description (thecubicle-yj-mgc-original-product,
+  2019-07-21 capture): "The YJ MGC is a new, high quality 3x3 by veteran cube producer, YJ. The
+  MGC comes at a compact size of 55mm and features a magnetic positioning system, primary
+  internals, and stellar all-around performance."
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-original-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-original-product]
+    note: "Item Weight (85.8g), not Gross Weight (195g, which includes retail packaging and possibly a bundled sticker set)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc-original-product]
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-mgc-original-product]
+    note: "'Strong magnetic positioning system'; exact architecture not stated in vocabulary
+      terms, single_layer recorded as the conservative default (no adjustability or ball-core
+      is mentioned, unlike later generations)."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found. No adjustment system is mentioned; this predates MGC's later adjustable generations (Elite onward)."
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-mgc-original-product]

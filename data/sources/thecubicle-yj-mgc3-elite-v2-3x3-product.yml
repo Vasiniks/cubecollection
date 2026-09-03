@@ -1,0 +1,29 @@
+# source: thecubicle-yj-mgc3-elite-v2-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC3 Elite V2, a
+# 2022 capture. The described mechanism (adjustable elasticity and magnet strength, traditional
+# tensioning screw) is nearly identical wording to the original Elite's own description; the
+# only stated physical difference is frosted plastic.
+id: thecubicle-yj-mgc3-elite-v2-3x3-product
+entity: source
+kind: retailer
+title: "YJ MGC3 Elite V2 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc3-elite-v2-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221019035607id_/https://www.thecubicle.com/products/yj-mgc3-elite-v2-3x3"
+excerpt: |-
+  Product Description: "The MGC Elite v2 is YJ's flagship 3x3. The MGC Elite V2 has adjustable
+  elasticity and magnet strength, coupled with a traditional tensioning screw. This combination
+  of customization options makes the MGC Elite very straightforward and easy to tune to your
+  liking... The second version of this puzzle comes with frosted plastic."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. 'The second version of
+  this puzzle' is explicit succession language, but the only stated physical difference from
+  the original Elite is 'frosted plastic' — ordinarily a variant-level (material/finish) trait
+  under DATA_MODEL 4.1, not a mechanism difference. The dependent model record holds this
+  boundary call at uncertain confidence for this reason."
+status: sourced

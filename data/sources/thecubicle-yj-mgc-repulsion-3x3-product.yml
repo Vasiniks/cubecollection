@@ -1,0 +1,28 @@
+# source: thecubicle-yj-mgc-repulsion-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC Repulsion
+# 3x3, a 2021 capture, describing a genuinely distinct magnet-polarity mechanism (some magnets
+# repel rather than attract) unlike any other MGC generation.
+id: thecubicle-yj-mgc-repulsion-3x3-product
+entity: source
+kind: retailer
+title: "YJ MGC Repulsion 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc-repulsion-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20211008181542id_/https://www.thecubicle.com/products/yj-mgc-repulsion-3x3"
+excerpt: |-
+  Product Description, in full: "The MGC Repulsion is a 3x3 that has a feature unlike any
+  other. Some of the magnets in this puzzle repel each other rather than attract. This gives
+  the cube an extremely unique feel. Experience it for yourself with the YJ MGC Repulsion 3x3."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. A same-polarity ('repel')
+  magnet arrangement is a genuinely distinct magnet-architecture mechanism from every other MGC
+  generation's ordinary attracting positioning magnets, and is sold as its own standalone SKU
+  rather than a checkout option of another MGC product — a model-level case under DATA_MODEL
+  4.2. No source found this pass states which prior MGC generation it is a direct successor
+  of, so no succeeds relationship is set on the dependent model record."
+status: sourced

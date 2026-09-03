@@ -1,0 +1,29 @@
+# source: thecubicle-yj-mgc-est-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC EST 3x3, a
+# 2024 capture, describing new edge-piece geometry ("cutouts on the edges") — a mould-level
+# change under DATA_MODEL 4.2.
+id: thecubicle-yj-mgc-est-3x3-product
+entity: source
+kind: retailer
+title: "YJ MGC EST 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc-est-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240910055518id_/https://www.thecubicle.com/products/yj-mgc-est-3x3"
+excerpt: |-
+  Product Description: "The MGC EST 3x3 is the latest 3x3 from YJ. YJ has done its best to
+  innovate in the 3x3 space, with this cube having cutouts on the edges as well as a completely
+  unique adjustment system. The YJ MGC EST 3x3, while having a non-standard look, has good
+  performance right out of the box." Comes with: YJ MGC EST 3x3, spare magnets, adjustment
+  screws and springs, extra center pieces to make the cube more flexible, MGC EST cube bag.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. 'Cutouts on the edges' is
+  a direct statement of a piece-geometry (mould-level) change, and 'a completely unique
+  adjustment system' a further mechanism change — a clean model-level case under DATA_MODEL
+  4.2. Named only as 'the latest 3x3 from YJ', with no specific predecessor identified by name,
+  so no succeeds relationship is set on the dependent model record."
+status: sourced
