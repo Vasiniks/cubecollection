@@ -1,0 +1,48 @@
+# source: thecubicle-fanxin-3x3-products
+# TheCubicle's own product pages and product-URL enumeration for FanXin's standard-format 3x3
+# lines (2020-2025 captures). Tier 2, first-party retailer copy — the only source located this
+# pass for FanXin's 3x3 product history, since no Speedsolving wiki page exists for this
+# manufacturer (checked directly, both capitalisations return 404).
+id: thecubicle-fanxin-3x3-products
+entity: source
+kind: retailer
+title: "FanXin 3x3, Magnetic 3x3, and HuDong Light 3x3 — TheCubicle product pages"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241009000000id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+excerpt: |-
+  "fanxin-3x3" (first captured 2020-09-27): Product Description: "The FanXin 3x3 draws
+  inspiration from other 3x3 cube mechanisms, yet it strikes a good balance between
+  affordability and performance."
+
+  "fanxin-magnetic-3x3" (first captured 2020-08-04): Product Description: "This Magnetic 3x3
+  speed cube is FanXin's first attempt at a modern, magnetic puzzle. It is a classic design with
+  a papery/scratchy feel."
+
+  "fanxin-hudong-light-3x3-standard" (first captured 2024-10-09, also sold in "Flagship UV" and
+  "Ultra Maglev UV" configurations, both first captured 2024-10-08): Product Description: "The
+  FanXin HuDong is a huge step for FanXin hardware. This is an extremely modern and competitive
+  flagship 3x3. Every version has tension and compression adjustments... This cube has
+  piece-to-piece magnetization, an 8 magnet ball-core with repelling edge magnets, and corner
+  foot-to-edge foot magnets."
+
+  A CDX prefix enumeration of https://www.thecubicle.com/products/fanxin (reproducible via
+  `npm run wayback -- prefix https://www.thecubicle.com/products/fanxin --limit 200`) also
+  surfaces a wide range of non-standard-format 3x3 shape mods styled as fruit and objects
+  (Apple, Banana 2x2x3, Orange, Peach, Pear, Lemon, Basketball 3x3, plus dinosaur-shaped
+  puzzles, a Nautilus cube, and others), none individually dated or described beyond a bare
+  product name — not chased further this pass, recorded as a group lead rather than
+  individually assessed.
+preservation_note: "Fetched via `npm run wayback -- get` for each individual product page on
+  2026-09-02; excerpt combines the load-bearing product-description sentences from all three
+  standard-format 3x3 products plus a summary of the prefix enumeration's shape-mod findings."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer product descriptions, consistent across 2020 and
+  2024 capture windows. The only source found this pass for FanXin's 3x3 product history — no
+  manufacturer-first-party source or community wiki page exists for this manufacturer."
+status: sourced

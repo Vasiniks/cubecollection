@@ -1,0 +1,23 @@
+# family: fanxin-magnetic-3x3
+# Pass 2 (family enumeration). FanXin's first magnetic 3x3.
+
+id: fanxin-magnetic-3x3
+entity: family
+manufacturer_id: fanxin
+name: "FanXin Magnetic 3x3"
+aliases: []
+positioning: budget
+description: |-
+  Per TheCubicle's own product page (thecubicle-fanxin-3x3-products): "This Magnetic 3x3 speed
+  cube is FanXin's first attempt at a modern, magnetic puzzle. It is a classic design with a
+  papery/scratchy feel." First captured 2020-08-04; no exact launch date is stated. No successor
+  generation carrying this exact name was found.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3-products]
+  /description:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3-products]

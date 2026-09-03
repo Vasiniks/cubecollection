@@ -1,0 +1,39 @@
+# family: fanxin-hudong
+# Pass 2 (family enumeration). FanXin's competitive flagship 3x3, explicitly framed by the
+# retailer as a step-change for the brand's hardware.
+
+id: fanxin-hudong
+entity: family
+manufacturer_id: fanxin
+name: "FanXin HuDong"
+aliases:
+  - "HuDong Light"
+introduced:
+  value: "2024-10"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  Per TheCubicle's own product page (thecubicle-fanxin-3x3-products): "The FanXin HuDong is a
+  huge step for FanXin hardware. This is an extremely modern and competitive flagship 3x3. Every
+  version has tension and compression adjustments... This cube has piece-to-piece
+  magnetization, an 8 magnet ball-core with repelling edge magnets, and corner foot-to-edge foot
+  magnets." Sold in Standard, Flagship UV, and Ultra Maglev UV configurations, first captured
+  2024-10-08/09 — this pass's most recently-launched flagship family found for any manufacturer
+  outside the Tier 1 group (QiYi, YJ, DaYan, MFJS).
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3-products]
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3-products]
+    note: "The retailer's own copy states 'flagship' directly."
+  /aliases:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3-products]
+  /description:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3-products]

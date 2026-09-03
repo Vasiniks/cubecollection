@@ -449,3 +449,28 @@ section headers but empty body text — recorded as open leads, not families, si
 actually known about them beyond the bare name.
 
 **No new sources created for FangShi** — both sources needed already existed from pass 1.
+
+---
+
+## FanXin — 3 families
+
+No Speedsolving wiki page exists for FanXin (checked both capitalisations, both 404). All
+evidence is TheCubicle's own product copy. **Accepted (3):** `fanxin-3x3` (base standard 3x3),
+`fanxin-magnetic-3x3` ("FanXin's first attempt at a modern, magnetic puzzle"), `fanxin-hudong`
+(2024, retailer-stated flagship, three configurations). A wide range of fruit/novelty shape-mod
+3x3s (Apple, Banana, Orange, Peach, Pear, Lemon, Basketball, dinosaur shapes, Nautilus) found in
+the same product-URL enumeration were **not** created as families — undated, undescribed beyond
+a bare product name, recorded as a group lead in `thecubicle-fanxin-3x3-products`'s own excerpt.
+
+**Sources created this session (FanXin):** `thecubicle-fanxin-3x3-products`.
+
+---
+
+## Session paused here — QJ, Rubik's, GiiKER, Particula, MoreTry, and remaining zero-family
+entities not yet reached
+
+Tier 1 (QiYi, X-Man Design, YJ, DaYan, MFJS) complete, plus YuXin, ShengShou, DianSheng, Cyclone
+Boys, LanLan (0 families, genuine finding), MF8, FangShi, FanXin. Stopped mid-batch on the
+"then" list at the point this log entry was written, due to a session budget constraint flagged
+by the operator. Everything through FanXin is committed and pushed; nothing below this line
+represents lost work — it is simply not yet started.
