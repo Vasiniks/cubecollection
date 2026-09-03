@@ -41,6 +41,20 @@ description: |-
   the vocabulary has no "advanced" tier, so this is recorded as an approximation, at reduced
   confidence, rather than treated as an exact match.
 
+  **Caveat on evidence point 1, added 2026-09-03 (Pass 2 adjudication gate).** The "Advanced
+  Series" breadcrumb should not be treated as decisive on its own. The same label was, per
+  research/notes/models/gan-pass2.md, encountered in November 2024 attached to generations
+  (GAN11 M Pro through GAN15 Maglev) that this archive now treats as core `gan-flagship-series`
+  members, and was dismissed there as unstable merchandising noise. The archive therefore
+  relies on that label in one record and dismisses it in another. If "Advanced Series" was at
+  some point GAN's own label for what later became "Flagship Series", then a 2025 "Advanced
+  Series" breadcrumb on V100 is ambiguous rather than exclusionary.
+
+  **The exclusion conclusion is unchanged**, because evidence points 2, 3 and 4 are independent
+  of that label and each supports it on its own — in particular the Chinese-site placement under
+  磁力系列 but not 旗舰魔方, on a page that lists GAN16 Maglev under both, which is a positive
+  signal rather than a tagging gap. Only the weight of point 1 is reduced.
+
   Why V100 exists as a separate line at all — whether it is a special/anniversary product
   distinct from the annual numbered succession, a permanent second flagship-adjacent tier, or
   something else — is not established by any source found this pass and is left as an open
