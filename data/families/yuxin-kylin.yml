@@ -1,0 +1,30 @@
+# family: yuxin-kylin
+# Pass 2 (family enumeration). A tiled, magnetized 3x3, documented only in a "V2 M" generation
+# — the family name and ordinal itself imply an earlier, undocumented generation.
+
+id: yuxin-kylin
+entity: family
+manufacturer_id: yuxin
+name: "YuXin Kylin"
+aliases: []
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yuxin-products): "YuXin Kylin V2 M — Another
+  tiled 3x3 from YuXin, with this one being magnetized. It and the YuXin Black Kirin V2 can be
+  bought with transparent plastic." Only a "V2 M" generation is documented by either the wiki or
+  TheCubicle's own product history (thecubicle-yuxin-collection-2025, "yuxin-kylin-3x3-v2-m",
+  no standalone V1 path found) — the "V2" ordinal implies an earlier YuXin Kylin generation
+  neither source names or dates directly. Recorded as its own family on the strength of the
+  documented V2 M product; the undated implied predecessor is flagged as an open lead rather
+  than assumed.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-yuxin-products]
+    note: "No explicit positioning statement; inferred as budget-tier from its similarity to
+      Black Kirin, explicitly compared in the same source sentence."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products, thecubicle-yuxin-collection-2025]

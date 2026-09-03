@@ -1,0 +1,34 @@
+# family: yuxin-3x3
+# Pass 2 (family enumeration). YuXin's original, unnamed-beyond-the-brand 3x3, its first
+# product in the category and now discontinued.
+
+id: yuxin-3x3
+entity: family
+manufacturer_id: yuxin
+name: "YuXin 3x3"
+aliases: []
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yuxin-products): "YuXin 3x3 — The YuXin 3x3 was
+  the first 3x3 to be produced by YuXin. It was offered in black, white or stickerless. However,
+  it seems to no longer be in production, with major online cube shops such as TheCubicle
+  discontinuing it and SpeedCubeShop not even having it on sale. It has been widely replaced by
+  the YuXin Little Magic 3x3." No standalone product name beyond the brand itself, and no
+  successor bearing this exact name — recorded as its own family, with the wiki's own text
+  pointing at yuxin-little-magic as its de facto (not formally stated) replacement in the
+  market, not a declared succession, so `successor_family_id` is left unset rather than pointed
+  there.
+
+  No release date is given by the source (this wiki page carries no dates for any YuXin
+  product); `introduced` is left unset rather than guessed.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-yuxin-products]
+    note: "No explicit positioning statement; recorded 'mainline' as the least overclaiming
+      reading for YuXin's first 3x3 product."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]

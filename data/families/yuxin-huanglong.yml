@@ -1,0 +1,31 @@
+# family: yuxin-huanglong
+# Pass 2 (family enumeration). A second YuXin flagship-tier 3x3, explicitly positioned by the
+# wiki as debated competition for Little Magic rather than a budget product.
+
+id: yuxin-huanglong
+entity: family
+manufacturer_id: yuxin
+name: "YuXin HuangLong"
+aliases: []
+positioning: flagship
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yuxin-products): "YuXin HuangLong 3x3 — Another
+  flagship puzzle from YuXin. When it came out, it was debated on whether this or the Little
+  Magic was better. Many people still stuck with the Little Magic as it was cheaper," followed
+  by "YuXin HuangLong 3x3 M — A Factory Magnetized version of the YuXin Huanglong 3x3."
+  TheCubicle's own product history (thecubicle-yuxin-collection-2025) shows a further generation
+  beyond the wiki's coverage: "yuxin-huanglong-3x3-v2-m-uv-coated", first captured 2025-10-01.
+
+  "HuangLong" is also YuXin's naming for several large NxN cubes (7x7 through 11x11, per the
+  wiki's own "Non-WCA" and 7x7 sections) — a cross-category naming convention, the same pattern
+  already noted for other manufacturers' shared tier words this pass; this family covers the
+  3x3 generations only.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products, thecubicle-yuxin-collection-2025]

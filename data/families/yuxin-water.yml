@@ -1,0 +1,26 @@
+# family: yuxin-water
+# Pass 2 (family enumeration). The stated successor to yuxin-fire, a single documented
+# generation.
+
+id: yuxin-water
+entity: family
+manufacturer_id: yuxin
+name: "YuXin Water"
+aliases: []
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yuxin-products): "YuXin Water 3x3 — This puzzle
+  was the successor to the YuXin Fire and was available in Black and White plastic." No further
+  generation or retailer capture was found this pass; recorded as a single-generation family,
+  likely superseded in turn by yuxin-little-magic per the wiki's own broader framing of Little
+  Magic as YuXin's current budget flagship, though no source states that succession directly
+  (unlike Fire→Water), so no further `successor_family_id` chain is asserted.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]

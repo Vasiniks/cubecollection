@@ -262,7 +262,48 @@ was met here and not there.
 **Sources created this session (MFJS):** `thecubicle-mofang-jiaoshi-mf3-prefix-2026`,
 `thecubicle-mofang-jiaoshi-mini-3x3-prefix`. Reused from pass 1 without modification:
 `speedsolving-wiki-mfjs-products`, `speedsolving-wiki-mofang-jiaoshi`, `cuboss-mfjs-brand-page`,
-`moyucube-official-home-2022`. The orphaned `speedcubeshop-mfjs-meilong-collections`, named explicitly in this session's brief as orphaned,
-is now wired into `mfjs-meilong.yml`'s provenance. `speedsolving-wiki-mfjs-products` (also named
-as orphaned in the brief) turned out not to be cited by any record before this session — it is
-now wired into both `mfjs-mf3.yml` and `mfjs-meilong.yml`.
+`moyucube-official-home-2022`. The orphaned `speedcubeshop-mfjs-meilong-collections`, named
+explicitly in this session's brief as orphaned, is now wired into `mfjs-meilong.yml`'s
+provenance. `speedsolving-wiki-mfjs-products` (also named as orphaned in the brief) turned out
+not to be cited by any record before this session — it is now wired into both `mfjs-mf3.yml`
+and `mfjs-meilong.yml`.
+
+---
+
+## YuXin — 7 families
+
+**Method note.** The Speedsolving wiki's YuXin page carries its own standing editorial warning
+("This page may be currently outdated") and, unlike every wiki page used earlier this pass,
+gives **no release date for any product**. Every `introduced` field this pass would otherwise
+have sourced from it is left unset rather than guessed at a false precision — the first
+manufacturer this session where dating had to be dropped almost entirely for lack of source
+material, not for lack of trying.
+
+**Candidates considered:** YuXin 3x3 (original), Fire (+Fire S), Water, Little Magic (+M/M V2),
+HuangLong (+M/V2 M UV Coated), Black Kirin (+V2), Kylin (V2 M only), plus four newer,
+wiki-undocumented 2025-2026 retailer products (Lustrous Cube, Super Hero Cube Mini, 3x3 Treasure
+Box, 3x3 Magnetic Sliding Tile Cube).
+
+**Accepted (7):** `yuxin-3x3`, `yuxin-fire`, `yuxin-water`, `yuxin-little-magic`,
+`yuxin-huanglong`, `yuxin-black-kirin`, `yuxin-kylin`.
+
+**Deferred, not created:** the four newer 2025-2026 retailer-only products (Lustrous Cube, Super
+Hero Cube Mini, 3x3 Treasure Box, 3x3 Magnetic Sliding Tile Cube) — no wiki or manufacturer
+coverage, names suggestive of novelty/gift-market products rather than competition cubes, and no
+significance evidence found this pass. Recorded as open leads in
+`thecubicle-yuxin-collection-2025`'s own excerpt rather than silently dropped or force-fit into
+families.
+
+**The boundary call that matters most here: Fire to Water kept as two families, joined by
+`successor_family_id`.** The wiki states directly, under Water's own entry, "This puzzle was the
+successor to the YuXin Fire" — comparable in directness to the MFJS MF3-to-RS3M succession
+recorded earlier this pass, though here at tier 4 only (no tier 1-2 corroboration was found).
+Recorded rather than left as prose, on the same reasoning as `mfjs-mf3`.
+
+**Historical/discontinued families preserved:** `yuxin-3x3` (YuXin's first 3x3, explicitly
+stated by the wiki to be out of production at both retailers it names) and `yuxin-water` (no
+generation after the original found).
+
+**Sources created this session (YuXin):** `speedsolving-wiki-yuxin-products`,
+`thecubicle-yuxin-collection-2025`. No pre-existing YuXin-specific sources existed to reuse
+beyond the manufacturer-register sources already on `data/manufacturers/yuxin.yml`.

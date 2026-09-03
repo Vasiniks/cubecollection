@@ -1,0 +1,30 @@
+# family: yuxin-black-kirin
+# Pass 2 (family enumeration). A budget 3x3 line explicitly compared to Little Magic by the
+# wiki, with a documented tiled second generation.
+
+id: yuxin-black-kirin
+entity: family
+manufacturer_id: yuxin
+name: "YuXin Black Kirin"
+aliases: []
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yuxin-products): "YuXin Black Kirin 3x3 — The
+  YuXin Black Kirin 3x3 is a budget 3x3 that resembles the Little Magic," followed by "YuXin
+  Black Kirin 3x3 V2 — This puzzle is an update to the YuXin Black Kirin 3x3 sporting a tiled
+  look. This puzzle, while being good, can come with defects."
+
+  "Black Kirin" is also YuXin's naming for a 4x4, mirror cube, skewb, and pyraminx (per
+  thecubicle-yuxin-collection-2025), a cross-category naming convention this family record
+  covers only for its 3x3 generations. No standalone "yuxin-black-kirin-3x3" product path was
+  found at TheCubicle this pass despite the wiki documenting two 3x3 generations — recorded as a
+  retailer-coverage gap, not evidence against the line's existence.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products, thecubicle-yuxin-collection-2025]

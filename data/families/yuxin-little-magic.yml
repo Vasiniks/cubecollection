@@ -1,0 +1,36 @@
+# family: yuxin-little-magic
+# Pass 2 (family enumeration). YuXin's flagship budget line and its most historically
+# significant 3x3, per the wiki's own opening summary of the brand.
+
+id: yuxin-little-magic
+entity: family
+manufacturer_id: yuxin
+name: "YuXin Little Magic"
+aliases: []
+positioning: budget
+description: |-
+  YuXin's flagship budget line, per the Speedsolving wiki's own page-level summary
+  (speedsolving-wiki-yuxin-products): "Yuxin is a Chinese cube brand famous for its big cubes
+  and economy line, Little Magic... Little Magic cubes are widely respected as some of the best
+  performing budget puzzles in the market." The 3x3 section documents three generations: "YuXin
+  Little Magic — ... a newer and more famous 3x3 by YuXin. It has widely replaced the original
+  YuXin 3x3... rated as one of the better budget 3x3s," "YuXin Little Magic M — A factory
+  magnetized version of the Little Magic with glossy, stickerless plastic," and "YuXin Little
+  Magic M V2 — An updated version... Sporting a brick pattern design on the pieces and having an
+  adjustment system, much like the Moyu RS3M." TheCubicle's own product history
+  (thecubicle-yuxin-collection-2025) independently confirms all three generations
+  (yuxin-little-magic-3x3, -3x3-m, -3x3-v2-m) as concurrently or sequentially sold through a
+  2024-09-12 capture.
+
+  Recorded `positioning: budget` per the source's own explicit framing, even though the wiki
+  separately calls this line YuXin's most famous product overall — "budget" and "the brand's
+  best-known line" are not in tension here, unlike QiYi M Pro's drift toward "flagship" pricing.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products, thecubicle-yuxin-collection-2025]

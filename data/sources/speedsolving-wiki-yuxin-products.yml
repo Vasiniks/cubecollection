@@ -1,0 +1,46 @@
+# source: speedsolving-wiki-yuxin-products
+# Speedsolving.com community wiki article on YuXin. Tier 4 — corroborates only. Used for 3x3
+# product-line structure and succession language; the page itself carries a standing editorial
+# warning ("This page may be currently outdated") and gives no release dates for any product,
+# unlike the equivalent QiYi/YJ/DaYan/MFJS wiki pages used elsewhere this pass.
+id: speedsolving-wiki-yuxin-products
+entity: source
+kind: wiki
+title: "YuXin — Speedsolving.com Wiki (3x3 product history)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=YuXin"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260405010335/https://www.speedsolving.com/wiki/index.php?title=YuXin"
+excerpt: |-
+  Page-level summary: "Yuxin is a Chinese cube brand famous for its big cubes and economy line,
+  Little Magic. In 2018, Yuxin launched a collaboration with professional speedcuber Kevin Hays
+  to create the Hays7... On the economy side, Little Magic cubes are widely respected as some
+  of the best performing budget puzzles in the market."
+
+  3x3 section, in order, no individual dates given: "YuXin 3x3 — The YuXin 3x3 was the first 3x3
+  to be produced by YuXin... it seems to no longer be in production... widely replaced by the
+  YuXin Little Magic 3x3. YuXin Fire 3x3 — The YuXin Fire was the first of many budget cubes
+  from YuXin... YuXin Fire S 3x3 — An updated version of the YuXin Fire coming in only
+  stickerless plastic. YuXin Water 3x3 — This puzzle was the successor to the YuXin Fire...
+  YuXin Little Magic — The YuXin Little Magic 3x3 is a newer and more famous 3x3 by YuXin. It
+  has widely replaced the original YuXin 3x3... rated as one of the better budget 3x3s. YuXin
+  Little Magic M — A factory magnetized version of the Little Magic... YuXin Little Magic M V2 —
+  An updated version of the YuXin Little Magic M. Sporting a brick pattern design on the pieces
+  and having an adjustment system, much like the Moyu RS3M. YuXin HuangLong 3x3 — Another
+  flagship puzzle from YuXin. When it came out, it was debated on whether this or the Little
+  Magic was better... YuXin HuangLong 3x3 M — A Factory Magnetized version of the YuXin Huanglong
+  3x3. YuXin Black Kirin 3x3 — a budget 3x3 that resembles the Little Magic. YuXin Black Kirin
+  3x3 V2 — This puzzle is an update to the YuXin Black Kirin 3x3 sporting a tiled look... YuXin
+  Kylin V2 M — Another tiled 3x3 from YuXin, with this one being magnetized."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from the page summary and 3x3 section verbatim,
+  condensed with ellipses where intervening text is unrelated commentary on turning feel."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, carries its own 'may be currently outdated'
+  editorial warning and gives no release dates for any 3x3 product — every `introduced` field
+  sourced from this record alone is left unset rather than guessed at a precision the source
+  does not support."
+status: sourced

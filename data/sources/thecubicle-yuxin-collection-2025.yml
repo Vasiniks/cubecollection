@@ -1,0 +1,38 @@
+# source: thecubicle-yuxin-collection-2025
+# TheCubicle's own "yuxin" collection product-URL structure, enumerated via wayback CDX `prefix`
+# (2019-2026 captures). Tier 2, first-party retailer naming — corroborates Little Magic,
+# HuangLong, Black Kirin, and Kylin as concurrently-sold named YuXin 3x3 lines, and gives
+# generation labels (V2, UV Coated) the wiki does not.
+id: thecubicle-yuxin-collection-2025
+entity: source
+kind: retailer
+title: "thecubicle.com/collections/yuxin/products/* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/yuxin"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/collections/yuxin returns 3x3 product
+  paths including: yuxin-little-magic-3x3 and yuxin-little-magic-3x3-m (2022-10-25),
+  yuxin-little-magic-3x3-v2-m (2024-09-12), yuxin-huanglong-3x3-m (2022-10-14),
+  yuxin-huanglong-3x3-v2-m-uv-coated (2025-10-01), yuxin-kylin-3x3-v2-m (2022-10-14) — no
+  standalone "yuxin-kylin-3x3" (V1) path was found, consistent with the wiki's own section
+  heading "YuXin Kylin V2 M" as the only documented generation — yuxin-black-kirin-4x4 and
+  -4x4-v2, -mirror-cube, -skewb (non-3x3 Black Kirin-named products, shown for context; no
+  distinct "yuxin-black-kirin-3x3" path was found at this retailer, though the wiki documents
+  one) — plus newer, undocumented-by-the-wiki products: yuxin-lustrous-cube-3x3 (2025-11-27),
+  yuxin-super-hero-cube-3x3-mini-3-5cm (2025-10-01), yuxin-3x3-treasure-box (2025-08-28),
+  yuxin-3x3-magnetic-sliding-tile-cube (2025-11-28) — not chased further this pass, recorded as
+  leads in research/notes/models/global-pass2-families.md.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/collections/yuxin --limit 300`) is the primary evidence; the
+  excerpt reproduces the path list and dates directly, per D3/RESEARCH_SPEC 3.5's allowance for
+  evidence that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure, consistent across four
+  years of captures. Corroborates the wiki's product-line names and adds generation labels the
+  wiki text itself lacks; does not by itself state release dates."
+status: sourced

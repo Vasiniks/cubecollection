@@ -1,0 +1,36 @@
+# family: yuxin-fire
+# Pass 2 (family enumeration). YuXin's first named budget 3x3 line, kept separate from its
+# stated successor (yuxin-water) per the "different name = different family, linked by
+# succession" reasoning applied elsewhere this pass (mfjs-mf3/moyu-rs3m).
+
+id: yuxin-fire
+entity: family
+manufacturer_id: yuxin
+name: "YuXin Fire"
+aliases: []
+successor_family_id: yuxin-water
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yuxin-products): "YuXin Fire 3x3 — The YuXin Fire
+  was the first of many budget cubes from YuXin, coming in Black, White, and stickerless
+  options. The puzzle is considered to be slow and sluggish," followed by "YuXin Fire S 3x3 — An
+  updated version of the YuXin Fire coming in only stickerless plastic."
+
+  `successor_family_id` is set to `yuxin-water` on the strength of the wiki's own direct
+  statement under that family's own entry ("This puzzle was the successor to the YuXin Fire") —
+  comparable in directness to the mfjs-mf3/moyu-rs3m succession recorded this pass, though here
+  at tier 4 only rather than corroborated by any tier 1-2 source.
+
+  No release date is given by the source; `introduced` left unset rather than guessed.
+status: drafted
+
+attestations:
+  /successor_family_id:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yuxin-products]
