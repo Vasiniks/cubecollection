@@ -1,0 +1,55 @@
+# manufacturer: pbcube
+# Pass 1 (manufacturer register), second-layer discovery. Found via product-title-prefix
+# enumeration of TheCubicle's archived /products/ URLs (pbcube-wr-*). A MoYu sub-brand, stated
+# directly by the retailer rather than inferred from naming — see notes.
+
+id: pbcube
+entity: manufacturer
+name: "PBCube"
+kind: sub_brand
+parent_id: moyu
+country: CN
+aliases:
+  - "PB Cube"
+notes: |-
+  **Parent relationship.** TheCubicle's own product description states directly: "The PBCube
+  WR 3x3 ... is the flagship release from MoYu's specialized sub-brand, PBCube"
+  (thecubicle-pbcube-wr-3x3-maglev-uv), corroborated by the same page's structured
+  "Manufacturer" spec field reading "MoYu / PBCube". Product naming ("WR" — likely referencing
+  MoYu's WeiLong RS/WR line) is consistent with, but not the basis for, this relationship
+  claim.
+
+  **Signature/endorsement detail.** The same source states the product is "engineered and
+  endorsed by 3x3 World Champion Yiheng Wang," with named preset tension/elasticity/magnet
+  settings ("Yiheng Wang's signature setup") — a `person`/`signature_of` lead for pass 2/4, not
+  actioned here.
+
+  **Country and website.** No independent PBCube domain or About page was located this pass;
+  `website` left unset. `country: CN` follows from the stated MoYu parent relationship (see
+  data/manufacturers/moyu.yml), not independently confirmed for PBCube specifically.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Single tier 2 retailer source, but a direct first-person statement of the corporate
+      relationship rather than an inference — 'MoYu's specialized sub-brand, PBCube'. No
+      contradicting or corroborating second source was found this pass."
+  /parent_id:
+    confidence: probable
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+  /country:
+    confidence: uncertain
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Inferred from the stated MoYu parent relationship, not independently stated for
+      PBCube."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independent PBCube domain located this pass."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]

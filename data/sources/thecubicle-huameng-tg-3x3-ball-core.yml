@@ -1,0 +1,29 @@
+# source: thecubicle-huameng-tg-3x3-ball-core
+# TheCubicle product page for the HuaMeng TG 3x3 (Ball-Core), found via the second-layer
+# product-title-prefix sweep (huameng-tg-*, huameng-ys3m-*), not the original collection-URL
+# sweep. First tier-2 evidence that HuaMeng is a real, distinct 3x3 manufacturer.
+id: thecubicle-huameng-tg-3x3-ball-core
+entity: source
+kind: retailer
+title: "HuaMeng TG 3x3 (Ball-Core) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-tg-3x3-ball-core"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250801151342id_/https://www.thecubicle.com/products/huameng-tg-3x3-ball-core"
+excerpt: |-
+  Page title: "HuaMeng TG 3x3 (Ball-Core) - TheCubicle". Product description: "The HuaMeng TG
+  is the most feature-rich 3x3 we've seen so far! With 1620 different adjustment combinations
+  you can find one that fits your turning style. It has hand-adjustable compression settings
+  and a tool to adjust tensions and magnet strength..." Structured "Product Specifications"
+  table field: "Manufacturer / HuaMeng". Site-wide promo banner elsewhere on the same capture:
+  "HuaMeng Spirit Pearl Limited Edition 3x3 / Limited to 999 worldwide!" — a distinct limited
+  edition, noted here as a pass-2 lead, not actioned.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "A real structured spec-table entry ('Manufacturer: HuaMeng'), not a copied
+  marketing paragraph — treated as tier 2 per DATA_MODEL §5.1, sufficient alone for `probable`
+  confidence on HuaMeng's existence and identity as the maker of this 3x3."
+status: sourced

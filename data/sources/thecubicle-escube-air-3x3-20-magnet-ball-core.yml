@@ -1,0 +1,26 @@
+# source: thecubicle-escube-air-3x3-20-magnet-ball-core
+# TheCubicle product page for the ESCube Air 3x3, found via the second-layer product-title-
+# prefix sweep (escube-air-*, escube-es3-*). First tier-2 evidence that ESCube is a real,
+# distinct 3x3 manufacturer.
+id: thecubicle-escube-air-3x3-20-magnet-ball-core
+entity: source
+kind: retailer
+title: "ESCube Air 3x3 (20-Magnet Ball-Core) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/escube-air-3x3-20-magnet-ball-core"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260616201655id_/https://www.thecubicle.com/products/escube-air-3x3-20-magnet-ball-core"
+excerpt: |-
+  Page title: "ESCube Air 3x3 (20-Magnet Ball-Core) - TheCubicle". Product description:
+  "ESCube Air 3x3 is a new core-magnetic speedcubing on a budget. This latest release from
+  ESCube features a fully magnetic ball-core design, providing enhanced stability and turning
+  control for speedcubers of every skill level..." Structured "Product Specifications" table
+  field: "Manufacturer / ESCube".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "A real structured spec-table entry ('Manufacturer: ESCube'), not a copied
+  marketing paragraph — tier 2 per DATA_MODEL §5.1, sufficient alone for `probable` confidence."
+status: sourced

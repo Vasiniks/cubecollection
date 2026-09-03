@@ -24,6 +24,8 @@ aliases:
   - "Mystic"
   - "Angstrom"
   - "Angstrom Research"
+  - "Celeritas"
+  - "MAX"
 website: "https://www.thecubicle.com/"
 notes: |-
   **Legal identity.** TheCubicle's own About page: "TheCubicle.com is owned and operated by
@@ -92,6 +94,23 @@ notes: |-
   line** (tee, cap, hoodie, cube cover — thecubicle-premium-megamenu) despite sharing the same
   "Premium" megamenu placement; it is not a cube tuning line and is not added as an alias here.
 
+  **"Celeritas" and "MAX" are two further in-house Premium tuning-line names, found during the
+  second-layer manufacturer sweep (2026-09-02).** An earlier-dated (2023-01-31) capture of
+  TheCubicle's own site-wide navigation lists eight "Premium" items rather than the six
+  captured later: "Team Cubicle Signature Series", "CubeHead", "Angstrom Research", "Cubicle
+  Pro Shop", "Mystic", "Celeritas", "MAX", "Cubicle Custom"
+  (thecubicle-celeritas-dayan-guhong-v4-m-3x3). "Celeritas" is applied, in the same source, to a
+  DaYan GuHong V4 sold as "Celeritas DaYan GuHong V4 M 3x3", and product-slug enumeration this
+  pass shows the same "celeritas-" prefix applied across many other manufacturers' cubes (MoYu
+  AoChuang/AoFu/AoShi/AoSu big cubes, further DaYan products) -- the identical pattern already
+  documented for Angstrom Research, just not confined to big cubes. Recorded here as further
+  in-house programme-name aliases rather than separate manufacturer records, resolving both
+  names out of the pass-0 long-tail backlog (`Celeritas`, `Max`). The menu-item-count
+  discrepancy between this 2023 capture and the later thecubicle-premium-megamenu capture (8 vs.
+  6 items) is recorded as-is rather than silently reconciled -- it may reflect a genuine
+  navigation redesign that dropped or merged two lines, which a future pass could date more
+  precisely.
+
   **Source-tier correction (2026-09-01).** `thecubicle-about-us` was originally filed as
   `kind: retailer` (tier 2), which left `/country`, `/founded`, and `/website` at `confirmed`
   resting on a single tier-2 source — rule 9 correctly blocked validation. `thecubicle-about-us`
@@ -120,8 +139,8 @@ attestations:
     sources: [thecubicle-about-us]
   /aliases:
     confidence: probable
-    sources: [thecubicle-about-us, speedsolving-wiki-cubicle-labs, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-premium-megamenu]
+    sources: [thecubicle-about-us, speedsolving-wiki-cubicle-labs, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-premium-megamenu, thecubicle-celeritas-dayan-guhong-v4-m-3x3]
     note: "'Cubicle Enterprises' / 'Cubicle Enterprises LLC' and 'TheCubicle.com' are tier 1 (thecubicle-about-us, first-party). 'TheCubicle.us' is tier 4 (speedsolving-wiki-cubicle-labs, used as the domain form in that article's own prose). 'Cubicle Pro Shop', 'Cubicle Custom', 'FZ', 'Mystic', and 'Angstrom'/'Angstrom Research' are tier 1, first-party product-page and navigation usage (thecubicle-premium-megamenu for the latter three)."
   /notes:
     confidence: probable
-    sources: [thecubicle-about-us, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-mattys-gan16-maglev-max-uv, thecubicle-premium-setup-service, speedsolving-wiki-cubicle-labs, thecubicle-premium-megamenu]
+    sources: [thecubicle-about-us, thecubicle-cubicle-custom-gan11-m-pro-uv, thecubicle-mattys-gan16-maglev-max-uv, thecubicle-premium-setup-service, speedsolving-wiki-cubicle-labs, thecubicle-premium-megamenu, thecubicle-celeritas-dayan-guhong-v4-m-3x3]

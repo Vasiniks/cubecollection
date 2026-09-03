@@ -1,0 +1,63 @@
+# manufacturer: huameng
+# Pass 1 (manufacturer register), second-layer discovery. Found via product-title-prefix
+# enumeration of TheCubicle's archived /products/ URLs (huameng-tg-*, huameng-ys3m-*) — a brand
+# entirely absent from the original collection-URL sweep, which had no top-level "HuaMeng"
+# collection page to enumerate. See research/notes/manufacturers/global-pass0.md addendum 3.
+
+id: huameng
+entity: manufacturer
+name: "HuaMeng"
+kind: manufacturer
+country: CN
+aliases:
+  - "Hua Meng"
+notes: |-
+  **Identity.** TheCubicle's own structured "Product Specifications" table names "HuaMeng" as
+  the `Manufacturer` field on its "HuaMeng TG 3x3 (Ball-Core)" listing
+  (thecubicle-huameng-tg-3x3-ball-core) — a real spec-table entry, not copied marketing prose,
+  treated as tier 2 per DATA_MODEL §5.1.
+
+  **Product range found this pass.** Product-slug enumeration of thecubicle.com/products/
+  found a substantial HuaMeng 3x3 range: `huameng-tg-3x3-ball-core`, `-maglev-ball-core`,
+  `-maglev-ball-core-uv`, `-spirit-pearl-limited-edition`, `-tg-v2-3x3-20-magnet-ball-core`,
+  plus a second line `huameng-ys3m-3x3`, `-ball-core`, `-ball-core-uv-magnetic-core-maglev`,
+  `-maglev`, and `huameng-ys3-m-20-core-magnetic-maglev-ball-core-uv` — a full-featured,
+  actively developed 3x3 line (multiple magnet/core/maglev/coating configurations across at
+  least two named product lines, TG and YS3M) as of 2025 captures. This is pass-2 material and
+  not enumerated further here.
+
+  **Country.** No first-party HuaMeng site or About page was located this pass (no independent
+  `huameng`-branded domain confirmed; `website` left blank rather than guessed). `country: CN`
+  is recorded at `probable` only, inferred from the product naming convention (Chinese-brand
+  romanised names, consistent with the rest of this Chinese-manufacturer-heavy register) and
+  the near-universal pattern among the other budget/mid-tier 3x3 makers found in this sweep —
+  flagged as inference, not a stated fact, and should be corrected if a direct source turns up.
+
+  **No relationship to any other registered manufacturer was found or claimed anywhere in this
+  pass's sources.** Recorded as an independent `kind: manufacturer`, distinct from the
+  MoYu-sub-brand pattern established for PBCube (see data/manufacturers/pbcube.yml) even though
+  both were found via the same product-prefix sweep.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "Single tier 2 retailer source with a genuine structured spec-table 'Manufacturer'
+      field, not a copied marketing paragraph. Nothing contradicting was found. Per the
+      confidence table this is `probable`, not `confirmed` (would need a second independent
+      tier 2 source or a tier 1 first-party HuaMeng source)."
+  /country:
+    confidence: uncertain
+    note: "Researched and not directly stated by any source found this pass; inferred from
+      naming convention only. See notes. Recorded as uncertain rather than omitted because a
+      value was reasoned toward, even though weakly."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independent HuaMeng domain located this pass."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-ball-core]

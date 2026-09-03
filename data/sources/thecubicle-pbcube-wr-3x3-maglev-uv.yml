@@ -1,0 +1,31 @@
+# source: thecubicle-pbcube-wr-3x3-maglev-uv
+# TheCubicle product page for the PBCube WR 3x3, found via the second-layer product-title-
+# prefix sweep. Directly states PBCube is a MoYu sub-brand — resolves the pass-0 long-tail
+# "PB Cube"-shaped gap and answers the sub_brand-vs-independent question with a first-party-
+# adjacent retailer statement, not inference from naming alone.
+id: thecubicle-pbcube-wr-3x3-maglev-uv
+entity: source
+kind: retailer
+title: "PBCube WR 3x3 (20-Magnet Ball-Core + MagLev + UV) [Pre-Order] - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/pbcube-wr-3x3-20-magnet-ball-core-maglev-uv"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260830113511id_/https://www.thecubicle.com/products/pbcube-wr-3x3-20-magnet-ball-core-maglev-uv"
+excerpt: |-
+  Page title: "PBCube WR 3x3 (20-Magnet Ball-Core + MagLev + UV) [Pre-Order] - TheCubicle".
+  Byline reads "MoYu / PBCube". Product description: "The PBCube WR 3x3 ... is the flagship
+  release from MoYu's specialized sub-brand, PBCube. Masterfully engineered and endorsed by
+  3x3 World Champion Yiheng Wang, this puzzle delivers the high-caliber performance and tuning
+  setup used on the world stage..." Structured "Product Specifications" table field:
+  "Manufacturer / MoYu / PBCube".
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "A retailer's own product-description prose directly states the corporate
+  relationship ('MoYu's specialized sub-brand, PBCube'), corroborated by the same page's
+  structured spec-table field pairing 'MoYu' and 'PBCube' under Manufacturer. Tier 2 per
+  DATA_MODEL §5.1; a single source, so `probable` rather than `confirmed`, but a direct
+  statement rather than an inference from product naming."
+status: sourced

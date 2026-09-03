@@ -1,0 +1,52 @@
+# manufacturer: escube
+# Pass 1 (manufacturer register), second-layer discovery. Found via product-title-prefix
+# enumeration of TheCubicle's archived /products/ URLs (escube-air-*, escube-es3-*) — absent
+# from the original collection-URL sweep. See research/notes/manufacturers/global-pass0.md
+# addendum 3.
+
+id: escube
+entity: manufacturer
+name: "ESCube"
+kind: manufacturer
+country: CN
+aliases:
+  - "ES Cube"
+  - "ES3"
+notes: |-
+  **Identity.** TheCubicle's own structured "Product Specifications" table names "ESCube" as
+  the `Manufacturer` field on its "ESCube Air 3x3 (20-Magnet Ball-Core)" listing
+  (thecubicle-escube-air-3x3-20-magnet-ball-core) — a real spec-table entry, tier 2 per
+  DATA_MODEL §5.1.
+
+  **Product range found this pass.** Product-slug enumeration found `escube-air-3x3-20-magnet-
+  ball-core`, `escube-es3-3x3-magnetic`, `escube-es3-3x3-magnetic-20-magnet-ball-core-uv-
+  coated`, `escube-es3-3x3-magnetic-8-magnet-ball-core` — two named 3x3 lines (Air and ES3)
+  each with multiple magnet-configuration and coating variants, positioned per the product
+  description as a budget-tier core-magnetic 3x3 maker ("speedcubing on a budget"). Pass-2
+  material, not enumerated further here.
+
+  **Country and website.** No independent ESCube site or About page was located this pass;
+  `website` left unset. `country: CN` follows the same naming-convention inference already
+  applied to HuaMeng in this same discovery batch — see data/manufacturers/huameng.yml for the
+  identical reasoning and its caveats.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+    note: "Single tier 2 retailer source with a genuine structured spec-table 'Manufacturer'
+      field. Nothing contradicting was found."
+  /country:
+    confidence: uncertain
+    note: "Researched and not directly stated by any source found this pass; inferred from
+      naming convention only, same caveat as huameng.yml."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+  /website:
+    confidence: unknown
+    note: "Researched and not found: no independent ESCube domain located this pass."
+  /notes:
+    confidence: probable
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]

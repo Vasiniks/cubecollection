@@ -1,0 +1,30 @@
+# source: thecubicle-celeritas-dayan-guhong-v4-m-3x3
+# A 2023 TheCubicle product page and site-wide navigation capture. Used to establish that
+# "Celeritas" and "MAX" are further items in TheCubicle's own in-house "Premium" tuning-line
+# megamenu, alongside the already-documented Angstrom Research / Mystic / FZ / Cubicle Pro
+# Shop / CubeHead / Signature Series set — a earlier-dated capture than
+# thecubicle-premium-megamenu, and the megamenu item list differs between the two (6 items in
+# the later capture vs. 8 in this one), which is recorded as a finding, not silently merged.
+id: thecubicle-celeritas-dayan-guhong-v4-m-3x3
+entity: source
+kind: retailer
+title: "Celeritas DaYan GuHong V4 M 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/celeritas-dayan-guhong-v4-m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230131034632id_/https://www.thecubicle.com/products/celeritas-dayan-guhong-v4-m-3x3"
+excerpt: |-
+  Page title: "Celeritas DaYan GuHong V4 M 3x3 - TheCubicle". Site-wide navigation, "Premium"
+  section, lists (in this order): "Team Cubicle Signature Series", "CubeHead", "Angstrom
+  Research", "Cubicle Pro Shop", "Mystic", "Celeritas", "MAX", "Cubicle Custom" — eight items,
+  applied here to a DaYan GuHong V4 base 3x3 sold under the "Celeritas" name.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "First-party retailer navigation and product naming, tier 2 by default kind
+  (retailer) though the navigation-menu content itself is a first-party statement of
+  TheCubicle's own in-house programme names, treated the same way thecubicle-premium-megamenu
+  already is elsewhere in this register."
+status: sourced
