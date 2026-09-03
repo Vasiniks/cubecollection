@@ -1,0 +1,46 @@
+# family: dayan-panshi
+# Pass 2 (family enumeration). "Dayan 6" per DaYan's own numbering (confirmed at tier 1 by
+# dayancube-official-2013: "Dayan VI Panshi"), explicitly described by the wiki as the product
+# that ended DaYan's period of market dominance.
+
+id: dayan-panshi
+entity: family
+manufacturer_id: dayan
+name: "DaYan PanShi"
+aliases:
+  - "Dayan VI Panshi"
+introduced:
+  value: "2013-02"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  DaYan's sixth numbered product, per the Speedsolving wiki's numbered product history
+  (speedsolving-wiki-dayan-products): "Dayan 6: PanShi — Released February 2013. Considered a
+  disappointment, this cube saw the end of Dayan's dominance in 3x3 market. Out of the box it
+  was clicky, slow, and rough... It is currently quite hard to find." DaYan's own official 2013
+  site lists "Dayan VI Panshi" directly (dayancube-official-2013), confirming DaYan's own
+  numbering and that the product was on sale by the site's August 2013 capture.
+
+  No later generation and no retailer capture from 2019 or later were found this pass; recorded
+  as a single-generation historical family — explicitly significant despite (indeed because of)
+  its poor critical reception, per the wiki's own framing that it marked a turning point in
+  DaYan's market position.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: confirmed
+    sources: [speedsolving-wiki-dayan-products, dayancube-official-2013]
+    note: "The wiki's stated release month is corroborated by dayancube-official-2013's own
+      site, captured 2013-08-05, already listing 'Dayan VI Panshi' for sale — consistent with,
+      though not an independent confirmation of, the exact February 2013 date."
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /aliases:
+    confidence: confirmed
+    sources: [dayancube-official-2013]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, dayancube-official-2013]

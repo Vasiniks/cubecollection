@@ -1,0 +1,38 @@
+# source: thecubicle-dayan-collection-2025
+# TheCubicle's own "dayan" collection product-URL structure, enumerated via wayback CDX `prefix`
+# (2019-2025 captures). Tier 2, first-party retailer naming — corroborates GuHong, ZhanChi, and
+# TengYun as concurrently-sold named DaYan 3x3 lines, and is the sole evidence this pass found
+# for ZhanChi V5 M and TengYun V3 M, both newer than the Speedsolving wiki's September 2023 last
+# edit.
+id: thecubicle-dayan-collection-2025
+entity: source
+kind: retailer
+title: "thecubicle.com/collections/dayan/products/* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/dayan"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/collections/dayan returns 3x3 product
+  paths including: dayan-zhanchi and dayan-zhanchi-2018 (2019-07-18), dayan-zhanchi-pro-m-3x3
+  (2021-09-18), dayan-tengyun-m-3x3 and dayan-tengyun-v2-m-3x3 (2021-09-18),
+  dayan-guhong-3x3-v4-m (2021-09-22), dayan-guhong-v3-m (2024-04-15),
+  dayan-guhong-pro-m-3x3-{54,55,56}mm-{standard,maglev} (2024-04-15/20, six size/configuration
+  paths), dayan-tengyun-v3-m-3x3 (2024-04-15), dayan-zhanchi-v5-m-3x3-{standard,premium,fancy}
+  (2025-04-13/14/17, three configuration paths) — the last two representing generations newer
+  than the Speedsolving wiki's own coverage (speedsolving-wiki-dayan-products, last edited
+  2023-09-01). Non-3x3x3 items in the same collection (Megaminx, Bermuda Cube, Gem Cube, Skewb,
+  Tangram, Wheels of Wisdom, FTO, NeZha 5x5, 12/16/30-axis puzzle balls) excluded from this
+  archive's scope.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/collections/dayan --limit 300`) is the primary evidence; the
+  excerpt reproduces the path list and dates directly, per D3/RESEARCH_SPEC 3.5's allowance for
+  evidence that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure, consistent across six years
+  of captures. The only evidence this pass found for ZhanChi V5 M and TengYun V3 M; does not by
+  itself state a manufacturer-declared generation ordinal for either."
+status: sourced

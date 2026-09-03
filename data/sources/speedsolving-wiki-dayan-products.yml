@@ -1,0 +1,71 @@
+# source: speedsolving-wiki-dayan-products
+# The same Speedsolving.com wiki article as speedsolving-wiki-dayan (created in a prior
+# session), a second source record for its numbered 3x3 product-history section, following the
+# precedent of speedsolving-wiki-mfjs-products alongside speedsolving-wiki-mofang-jiaoshi: the
+# earlier record's excerpt covered founder/naming/aliases only, not this content, and was not
+# created by me this session, so it is not overwritten. Tier 4 — corroborates only. The wiki's
+# own numbered headings ("Dayan 1: TaiYan", "Dayan 2: GuHong", ... "Dayan 8: TengYun M") mirror
+# DaYan's own official numbering as independently attested at tier 1 by dayancube-official-2013
+# ("DaYan II GuHong", "DaYan III LingYun", "DaYan IV LunHui", "DaYan V ZhanChi", "Dayan VI
+# Panshi") — this is the single strongest piece of family-boundary evidence found this pass:
+# a manufacturer's own numbered succession, not merely a wiki editor's organisational choice.
+id: speedsolving-wiki-dayan-products
+entity: source
+kind: wiki
+title: "DaYan — Speedsolving.com Wiki (numbered 3x3 product history)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/DaYan"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250815111151/http://www.speedsolving.com/wiki/index.php/DaYan"
+excerpt: |-
+  "Dayan 1: TaiYan — The Dayan Taiyan was the first cube made by Dayan. It was originally just
+  called 'Dayan 3x3', however it was mistranslated as 'Taiyan'. In 2011 'Taiyan' ... was adopted
+  as the official model name ... They are now quite rare to find and can be discerned from other
+  Dayan cubes by their lack of Florain holes."
+
+  "Dayan 2: GuHong — GuHong Version 1 ... Released June 2010 ... the first speedcube capable of
+  noticeable reverse corner cutting. GuHong Version 2 ... Released April 2012 ... GuHong Version
+  3 M ... Released to some cube stores December 2019 ... featuring magnets like the TengYun ...
+  GuHong Version V4 M ... Released late 2020 ... GuHong Pro M ... Released August 2023 ...
+  three sizes available (54, 55, and 56 mm), standard corner-core magnets with optional maglev
+  ... Currently the cheapest puzzle with corner-core magnets."
+
+  "Dayan 3: LingYun — LingYun Version 1 ... Released 2010 ... LingYun Version 2 ... Released
+  September 2011 ... included torpedo pieces, preventing (most) pops."
+
+  "Dayan 4: LunHui — Dayan LunHui ... Released April 2011. This is the fourth 3x3 cube in the
+  Dayan series ... Dayan LunHui 2017 — Released August 2017."
+
+  "Dayan 5: ZhanChi — Dayan ZhanChi ... Released July 2011. This is the fifth 3x3 cube in the
+  Dayan series. It became one of the most popular speedcubes (and the one used by Feliks
+  Zemdegs to obtain multiple former world records) ... Dayan ZhanChi 2017 — Released August
+  2017 ... Dayan's first new release in six years ... Dayan ZhanChi 2018 — Released November
+  2018 ... Dayan Zhanchi Pro M — Released late April 2021 ... ZhanChi 42mm — Released 2012.
+  This is a smaller version of the Zhanchi."
+
+  "Dayan 6: PanShi — Released February 2013. Considered a disappointment, this cube saw the end
+  of Dayan's dominance in 3x3 market."
+
+  "Dayan 7: XiangYun — Released March 2018. An improvement upon the ZhanChi 2017 design."
+
+  "Dayan 8: TengYun M — TengYun M Version 1 ... Released January 2019. Considered a comeback
+  for Dayan and their first competitively viable 3x3 in about 6-7 years ... the first
+  mass-produced Dayan 3x3 with magnets. TengYun M Version 2 ... released in early 2020, and
+  featured customization options, such as adjustable springs, and magnet strength ... for the
+  first time, DaYan has a competitively viable cube."
+
+  Page-level summary line: "DaYan ... is a cubing manufacturer of many well-known, but
+  outdated, speedcubes such as the GuHong and the ZhanChi. It is making a comeback in the
+  speedcubing world with the TengYun 3x3 and 2x2 cubes, as well as with the GuHong V3 M."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from each numbered section verbatim, condensed with
+  ellipses where intervening text is unrelated commentary on turning feel."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail for any individual release date,
+  though the numbering scheme itself is independently corroborated at tier 1 by
+  dayancube-official-2013. Last edited 1 September 2023 per the page's own footer — predates
+  DaYan ZhanChi V5 M and TengYun V3 M, both found only via thecubicle-dayan-collection-2025."
+status: sourced

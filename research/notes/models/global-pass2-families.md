@@ -162,9 +162,59 @@ in this session's brief — now wired into `yj-yulong.yml`'s provenance).
 
 ---
 
-## DaYan
+## DaYan — 8 families
 
-*(not yet started)*
+**Method note.** Unlike QiYi and YJ, DaYan's own official site (`dayancube.com`, captured 2013
+in pass 1 as `dayancube-official-2013`) directly lists a **manufacturer-declared numbering
+scheme** — "DaYan II GuHong", "DaYan III LingYun", "DaYan IV LunHui", "DaYan V ZhanChi", "Dayan
+VI Panshi" — and the Speedsolving wiki's own product-history section independently organises
+around the identical numbering ("Dayan 1: TaiYan" through "Dayan 8: TengYun M"). This is the
+strongest family-boundary evidence found anywhere in this session: a tier 1 manufacturer source
+and a tier 4 community source agree on the same discrete numbered succession, for five of the
+eight lines. `speedsolving-wiki-dayan-products` documents this reasoning directly rather than
+leaving it implicit.
+
+**Candidates considered:** TaiYan (1), GuHong (2), LingYun (3), LunHui (4), ZhanChi (5, +42mm),
+PanShi (6), XiangYun (7), TengYun M (8), DaYan+MF8 4x4, DaYan Megaminx, DaYan NeZha 5x5 M, DaYan
+Tengyun 2x2.
+
+**Accepted (8):** `dayan-taiyan`, `dayan-guhong`, `dayan-lingyun`, `dayan-lunhui`,
+`dayan-zhanchi`, `dayan-panshi`, `dayan-xiangyun`, `dayan-tengyun` — one family per numbered
+line, exactly matching DaYan's own numbering where it is independently attested (1 through 6)
+and the wiki's own extension of the same scheme where it is not (7, 8 — dayancube-official-2013
+predates both by years, so their "Dayan 7"/"Dayan 8" ordinals are recorded at tier 4 confidence
+only, flagged explicitly on each record).
+
+**Rejected/excluded — all for the same reason (wrong puzzle category, not a boundary call):**
+DaYan+MF8 4x4 (4x4x4), DaYan Megaminx and its "V2 M" generation (Megaminx), DaYan NeZha 5x5 M
+(5x5x5), DaYan Tengyun 2x2/2x2 V2 M (2x2x2), and the wiki's "Other products" list (DaYan 2x2,
+Pyraminx, Crazy 3x3x2, Gem Cube, Bermuda Cube, Octahedron, Skewb/F-Skewb, Tanagram, Wheel of
+Wisdom, Bagua Cube — shape mods and non-3x3x3 puzzles). None of these needed a boundary
+judgement; all are out of this archive's 3x3x3 scope by category.
+
+**Kept deliberately separate, not merged:**
+- **ZhanChi 42mm folded into `dayan-zhanchi`** (a stated size variant, "a smaller version of
+  the Zhanchi... used as the core for the DaYan Zhanchi 2x2"), the same reasoning applied to
+  QiYi Big Sail within `qiyi-sail`.
+- **No family was collapsed across numbered lines.** Even where the wiki's own prose states a
+  mechanical inheritance between adjacent numbers (e.g. GuHong's edges/corners informing later
+  designs), each numbered product is DaYan's own distinct, separately-numbered release — the
+  numbering itself *is* the family boundary here, not evidence for merging.
+
+**Historical/discontinued families preserved:** `dayan-taiyan`, `dayan-lingyun`, `dayan-lunhui`,
+`dayan-panshi`, `dayan-xiangyun` are all single-or-two-generation lines with no retailer capture
+found after 2019 (LunHui's 2017 revival is its most recent evidence). Kept per the standing
+instruction against letting current-catalogue absence erase a documented historical line.
+
+**Unresolved gaps:** exact TaiYan original-release date (only the 2011 official-naming date is
+sourced); whether TengYun and ZhanChi's newest generations (V3 M, V5 M respectively — both newer
+than the wiki's September 2023 edit) carry a DaYan-declared ordinal or are retailer/community
+naming only, a pass-3 question.
+
+**Sources created this session (DaYan):** `speedsolving-wiki-dayan-products`,
+`thecubicle-dayan-collection-2025`. Reused from pass 1 without modification:
+`dayancube-official-2013`, `speedsolving-wiki-dayan`, `thecubicle-dayan-guhong-product-urls`,
+`thecubicle-celeritas-dayan-guhong-v4-m-3x3`.
 
 ---
 

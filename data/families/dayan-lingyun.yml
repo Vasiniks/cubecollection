@@ -1,0 +1,42 @@
+# family: dayan-lingyun
+# Pass 2 (family enumeration). "Dayan 3" per DaYan's own numbering (confirmed at tier 1 by
+# dayancube-official-2013: "DaYan III LingYun").
+
+id: dayan-lingyun
+entity: family
+manufacturer_id: dayan
+name: "DaYan LingYun"
+aliases:
+  - "DaYan III LingYun"
+introduced:
+  value: "2010"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  DaYan's third numbered product, per the Speedsolving wiki's numbered product history
+  (speedsolving-wiki-dayan-products): "LingYun Version 1 ... Released 2010. This cube was fast
+  but prone to popping. It was slightly smaller, yet heavier than the GuHong, with similar
+  pieces..." followed by "LingYun Version 2 ... Released September 2011... included torpedo
+  pieces, preventing (most) pops." DaYan's own official 2013 site lists "DaYan III LingYun"
+  directly (dayancube-official-2013), confirming DaYan's own numbering.
+
+  No third generation and no retailer capture from 2019 or later were found this pass; recorded
+  as a two-generation historical family per the standing instruction to preserve such lines.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+    note: "No explicit positioning statement; recorded 'mainline' rather than 'flagship' since
+      the wiki does not single it out the way it does GuHong or ZhanChi."
+  /aliases:
+    confidence: confirmed
+    sources: [dayancube-official-2013]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, dayancube-official-2013]

@@ -1,0 +1,50 @@
+# family: dayan-tengyun
+# Pass 2 (family enumeration). "Dayan 8" per the wiki's own numbering, explicitly framed by the
+# wiki as DaYan's competitive comeback and independently confirmed still current in a third
+# (V3 M) generation as of 2024, six years after debut.
+
+id: dayan-tengyun
+entity: family
+manufacturer_id: dayan
+name: "DaYan TengYun"
+aliases:
+  - "TengYun M"
+introduced:
+  value: "2019-01"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  DaYan's eighth numbered product, per the Speedsolving wiki's numbered product history
+  (speedsolving-wiki-dayan-products): "Dayan 8: TengYun M — TengYun M Version 1 ... Released
+  January 2019. Considered a comeback for Dayan and their first competitively viable 3x3 in
+  about 6-7 years... the first mass-produced Dayan 3x3 with magnets," followed by "TengYun M
+  Version 2 ... released in early 2020, and featured customization options, such as adjustable
+  springs, and magnet strength... for the first time, DaYan has a competitively viable cube."
+  The wiki's own page-level summary independently states DaYan "is making a comeback in the
+  speedcubing world with the TengYun 3x3 and 2x2 cubes" — explicit flagship-comeback framing,
+  not merely this pass's inference.
+
+  TheCubicle's own product history for the "dayan" collection (thecubicle-dayan-collection-2025)
+  shows a third generation beyond the wiki's September 2023 coverage: "dayan-tengyun-v3-m-3x3",
+  first captured April 2024 — the line continuing at least five years past its debut. A separate
+  "Tengyun 2x2 M" / "Tengyun 2x2 V2 M" succession exists in the same wiki section but is a
+  different puzzle category, out of this archive's 3x3 scope.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+    note: "The wiki's own page-level summary calls this DaYan's 'comeback' line directly;
+      recorded 'flagship' as the closest available vocabulary value. No manufacturer-first-party
+      statement was found this pass."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-collection-2025]

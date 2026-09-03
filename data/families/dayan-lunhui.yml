@@ -1,0 +1,43 @@
+# family: dayan-lunhui
+# Pass 2 (family enumeration). "Dayan 4" per DaYan's own numbering (confirmed at tier 1 by
+# dayancube-official-2013: "DaYan IV LunHui").
+
+id: dayan-lunhui
+entity: family
+manufacturer_id: dayan
+name: "DaYan LunHui"
+aliases:
+  - "DaYan IV LunHui"
+introduced:
+  value: "2011-04"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  DaYan's fourth numbered product, per the Speedsolving wiki's numbered product history
+  (speedsolving-wiki-dayan-products): "Dayan LunHui ... Released April 2011. This is the fourth
+  3x3 cube in the Dayan series ... the first Dayan cube to include torpedo pieces ... The corner
+  cutting was considered superb, with a unique feel," followed by "Dayan LunHui 2017 — Released
+  August 2017" (no further detail given). DaYan's own official 2013 site lists "DaYan IV
+  LunHui" directly (dayancube-official-2013), confirming DaYan's own numbering.
+
+  No retailer capture from 2019 or later carrying a "lunhui" 3x3 product path was found this
+  pass; recorded as a two-generation historical family, the 2017 revival separated from the
+  original by six years with no further generation after it found.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+    note: "No explicit positioning statement; recorded 'mainline' as the least overclaiming
+      reading."
+  /aliases:
+    confidence: confirmed
+    sources: [dayancube-official-2013]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, dayancube-official-2013]

@@ -1,0 +1,56 @@
+# family: dayan-zhanchi
+# Pass 2 (family enumeration). "Dayan 5" per DaYan's own numbering (confirmed at tier 1 by
+# dayancube-official-2013: "DaYan V ZhanChi"), the line most associated with a documented former
+# world-record holder, sold continuously into a fifth generation ("V5 M") as of 2025.
+
+id: dayan-zhanchi
+entity: family
+manufacturer_id: dayan
+name: "DaYan ZhanChi"
+aliases:
+  - "DaYan V ZhanChi"
+introduced:
+  value: "2011-07"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  DaYan's fifth numbered product, per the Speedsolving wiki's numbered product history
+  (speedsolving-wiki-dayan-products): "Dayan ZhanChi ... Released July 2011. This is the fifth
+  3x3 cube in the Dayan series. It became one of the most popular speedcubes (and the one used
+  by Feliks Zemdegs to obtain multiple former world records)... it was also, by far, the most
+  modded cube, ever," with several retailer/community mod tiers named directly (TheCubicle's own
+  one-handed and "ZhanChi Silk" versions, Puzzle Addictions's CPM mod, Lubix's "48 point edge
+  mod" — all now discontinued per the same source; not pursued as aftermarket records this
+  pass). Followed by "Dayan ZhanChi 2017 — Released August 2017... Dayan's first new release in
+  six years. Considered a disappointment," "Dayan ZhanChi 2018 — Released November 2018... A
+  substantial improvement," and "Dayan Zhanchi Pro M — Released late April 2021... weighing only
+  77 grams and having adjustable magnets, elasticities, and tensions." A smaller "ZhanChi 42mm"
+  (2012) size variant is treated as part of this family, per the same "size variant of the
+  budget line" reasoning applied to qiyi-sail's Big Sail.
+
+  TheCubicle's own product history for the "dayan" collection (thecubicle-dayan-collection-2025)
+  shows a further generation beyond the wiki's September 2023 coverage: "dayan-zhanchi-v5-m-3x3"
+  in Standard, Premium, and Fancy configurations, first captured April 2025 — the line's fifth
+  generation continuing at least fourteen years after the original. DaYan's own official 2013
+  site lists "DaYan V ZhanChi" directly (dayancube-official-2013), confirming DaYan's own
+  numbering.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+    note: "'One of the most popular speedcubes' used to set world records, and DaYan's most
+      extensively modded product, read as flagship-tier; no manufacturer-first-party statement
+      was found this pass."
+  /aliases:
+    confidence: confirmed
+    sources: [dayancube-official-2013]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, dayancube-official-2013,
+      thecubicle-dayan-collection-2025]

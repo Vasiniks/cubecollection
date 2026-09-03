@@ -1,0 +1,41 @@
+# family: dayan-xiangyun
+# Pass 2 (family enumeration). "Dayan 7" per the wiki's own numbering — not independently
+# corroborated at tier 1 (dayancube-official-2013 predates it by five years), so aliased
+# without a "DaYan VII" form asserted from that source.
+
+id: dayan-xiangyun
+entity: family
+manufacturer_id: dayan
+name: "DaYan XiangYun"
+aliases: []
+introduced:
+  value: "2018-03"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  DaYan's seventh numbered product, per the Speedsolving wiki's numbered product history
+  (speedsolving-wiki-dayan-products): "Dayan 7: XiangYun — Released March 2018. An improvement
+  upon the ZhanChi 2017 design. It had a new capped design, rounded internal corners and a
+  brighter color scheme. But still considered an unstable cube, with noticeable corner
+  catching." Positioned by the wiki as a transitional product between the ZhanChi 2017/2018
+  generations and TengYun's 2019 "comeback" (see dayan-tengyun.yml), rather than as its own
+  successful line.
+
+  No later generation and no retailer capture from 2019 or later were found this pass; recorded
+  as a single-generation historical family. dayancube-official-2013 predates this product by
+  five years and therefore does not corroborate a "Dayan VII" numbering the way it does for
+  GuHong through PanShi — the "Dayan 7" ordinal here is the wiki's own attribution only, at
+  tier 4, not independently confirmed.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]

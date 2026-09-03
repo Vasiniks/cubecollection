@@ -1,0 +1,47 @@
+# family: dayan-taiyan
+# Pass 2 (family enumeration). DaYan's first cube, "Dayan 1" per the wiki's own numbering,
+# original numbered position corroborated at tier 1 by dayancube-official-2013's product list
+# structure (see speedsolving-wiki-dayan-products.yml's own note for the full reasoning shared
+# across all eight DaYan numbered families).
+
+id: dayan-taiyan
+entity: family
+manufacturer_id: dayan
+name: "DaYan TaiYan"
+aliases:
+  - "Dayan 3x3"
+introduced:
+  value: "2011"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  DaYan's first cube, per the Speedsolving wiki's numbered product history
+  (speedsolving-wiki-dayan-products): "Dayan 1: TaiYan — The Dayan Taiyan was the first cube
+  made by Dayan. It was originally just called 'Dayan 3x3', however it was mistranslated as
+  'Taiyan'. In 2011 'Taiyan' (which means 'Enormous Blaze') was adopted as the official model
+  name. They are now quite rare to find and can be discerned from other Dayan cubes by their
+  lack of Florain holes."
+
+  No later cube carries the "TaiYan" name in either this wiki or any retailer capture found this
+  pass; recorded as a single-generation historical family. `introduced` is dated to 2011 (the
+  official-naming date, the only date the source gives) rather than an earlier, unstated
+  original-release date, since the source explicitly distinguishes the two.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+    note: "No explicit positioning statement; recorded 'mainline' as the least overclaiming
+      reading for DaYan's first product, before any flagship/budget tiering existed within the
+      brand."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]

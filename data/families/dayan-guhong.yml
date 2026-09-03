@@ -1,0 +1,55 @@
+# family: dayan-guhong
+# Pass 2 (family enumeration). "Dayan 2" per DaYan's own numbering (confirmed at tier 1 by
+# dayancube-official-2013: "DaYan II GuHong"), DaYan's most historically significant 3x3 and the
+# subject of a pass-1 lead-closure (see notes) establishing continuous DaYan attribution through
+# 2026.
+
+id: dayan-guhong
+entity: family
+manufacturer_id: dayan
+name: "DaYan GuHong"
+aliases:
+  - "DaYan II GuHong"
+introduced:
+  value: "2010-06"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  DaYan's second numbered product and its most historically significant 3x3, per the
+  Speedsolving wiki's numbered product history (speedsolving-wiki-dayan-products): "GuHong
+  Version 1 ... Released June 2010 ... the first speedcube capable of noticeable reverse corner
+  cutting," used by many top cubers of its era. The wiki records a long, if not fully
+  continuous, generational succession: GuHong Version 2 (April 2012, "pretty much a GuHong with
+  anchor pieces"), GuHong Version 3 M (December 2019, "featuring magnets like the TengYun"),
+  GuHong Version V4 M (late 2020, lightweight 70g), and GuHong Pro M (August 2023, three sizes —
+  54/55/56mm — with corner-core magnets and optional maglev, "currently the cheapest puzzle
+  with corner-core magnets"). TheCubicle's own product history for the "guhong" root
+  (thecubicle-dayan-guhong-product-urls, created in pass 1) independently corroborates the V3 M
+  through Pro M succession's continuous DaYan attribution across seven years of captures, with
+  no "qiyi-guhong" or similar naming ever appearing — closing a pass-1 lead that had speculated
+  the name might have moved to another manufacturer.
+
+  DaYan's own official 2013 site (dayancube-official-2013, created in pass 1) lists "DaYan II
+  GuHong" directly in its own product list, confirming this is DaYan's own numbering, not a
+  wiki editorial convention — the strongest single piece of family-boundary evidence available
+  for any DaYan line this pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+    note: "Inferred from the wiki's own framing ('a very popular cube used by many cubers') and
+      DaYan's subsequent GuHong-led product renewal ('making a comeback ... with the GuHong V3
+      M'); no manufacturer-first-party 'flagship' statement was found this pass."
+  /aliases:
+    confidence: confirmed
+    sources: [dayancube-official-2013]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, dayancube-official-2013,
+      thecubicle-dayan-guhong-product-urls, thecubicle-dayan-collection-2025]
