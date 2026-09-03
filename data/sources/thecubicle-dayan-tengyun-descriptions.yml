@@ -1,0 +1,44 @@
+# source: thecubicle-dayan-tengyun-descriptions
+# Pass 3 (model enumeration). TheCubicle's own product-description text for three TengYun
+# generations (M, V2 M, V3 M), fetched directly via `npm run wayback -- get` on 2026-09-03,
+# each stating a distinct mechanism/adjustment-system change.
+id: thecubicle-dayan-tengyun-descriptions
+entity: source
+kind: retailer
+title: "DaYan TengYun M / V2 M / V3 M 3x3 product pages — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-tengyun-m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927id_/https://www.thecubicle.com/products/dayan-tengyun-m-3x3"
+excerpt: |-
+  DaYan TengYun M 3x3, captured 2020-09-27 (https://web.archive.org/web/20200927id_/https://www.thecubicle.com/products/dayan-tengyun-m-3x3):
+  "The DaYan TengYun M is a smooth, 55 mm 3x3 speed cube that is one of the quietest 3x3's on
+  the market. It has a unique design and feel that sets it apart from other modern 3x3's."
+  "Comes with: DaYan TengYun M 3x3, Two extra sets of springs (standard and strong)."
+
+  DaYan TengYun V2 M 3x3, captured 2020-09-21 (https://web.archive.org/web/20200921085730id_/https://www.thecubicle.com/products/dayan-tengyun-v2-m-3x3):
+  "The DaYan TengYun V2 M is an exciting new magnetic 3x3 speed cube from classic manufacturer
+  DaYan. Weighing in at a modest 83g, the TengYun V2 M features three magnetic settings that
+  you can adjust by rotating a plate, as well as adjustable elasticities and tensions without
+  having to switch out any components. Using DaYan's new adjustment tool, you can choose from
+  four tensions and four elasticity settings. The TengYun V2 M's edge pieces have a similar
+  wave-like design akin to the GuHong V3 M."
+
+  DaYan TengYun V3 M 3x3, captured 2023-01-31 (https://web.archive.org/web/20230131032453id_/https://www.thecubicle.com/products/dayan-tengyun-v3-m-3x3):
+  "The DaYan TengYun V3 M 3x3 is a great leap forward for DaYan's 3x3 design. This one uses
+  tension/compression nuts that attach directly to the core. There are over 60 unique settings
+  on the DaYan TengYun V3 M."
+preservation_note: "Three separate `npm run wayback -- get` fetches, condensed into one source
+  record per this archive's established grouping pattern. The V3 M capture (2023-01-31) is
+  materially earlier than the 2024-04-15 first-capture date recorded on
+  thecubicle-dayan-collection-2025 for the same product, which only enumerated a later CDX
+  prefix window — this record supersedes that one as the earliest known circulation floor for
+  TengYun V3 M specifically. Neither date is a release date; both are retailer-listing floors."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product copy. The V2 M weight (83g) and V3 M
+  adjustment-system description are the retailer's own copy, not customer reviews."
+status: sourced

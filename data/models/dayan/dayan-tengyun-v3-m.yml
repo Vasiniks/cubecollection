@@ -1,0 +1,61 @@
+# model: dayan-tengyun-v3-m
+# Pass 3 (model enumeration). TheCubicle's own copy: "This one uses tension/compression nuts
+# that attach directly to the core" -- a distinct adjustment-mechanism redesign from V2 M's
+# rotating-plate/tool system, model-level under DATA_MODEL §4.2. The earliest capture found
+# this pass (2023-01) is materially earlier than the 2024-04 floor recorded on the family
+# record, itself sourced to a narrower CDX window; recorded here without editing the frozen
+# family file. See research/notes/models/dayan-pass3.md.
+id: dayan-tengyun-v3-m
+entity: model
+family_id: dayan-tengyun
+manufacturer_id: dayan
+name: "DaYan TengYun V3 M"
+scope_class: core
+generation:
+  label: "V3 M"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2023-01"
+  precision: month
+  qualifier: before
+description: |-
+  TheCubicle's own copy: "The DaYan TengYun V3 M 3x3 is a great leap forward for DaYan's 3x3
+  design. This one uses tension/compression nuts that attach directly to the core. There are
+  over 60 unique settings on the DaYan TengYun V3 M" (thecubicle-dayan-tengyun-descriptions) —
+  an adjustment-mechanism redesign (nuts attached directly to the core, replacing V2 M's
+  rotating magnet plate and separate tool), model-level under DATA_MODEL §4.2. This generation
+  postdates the Speedsolving wiki's own last edit (1 September 2023) and is not covered by it
+  at all; both its existence and its release timing rest on retailer evidence only. The
+  earliest capture located this pass (2023-01-31, thecubicle-dayan-tengyun-descriptions) is
+  materially earlier than the 2024-04-15 floor the family record cites (drawn from a narrower
+  CDX collection-page sweep, thecubicle-dayan-collection-2025) — both are retailer-listing
+  floors, never release dates, and this discrepancy is noted here rather than silently
+  reconciled, since editing the family record is outside this pass's write lane.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-dayan-tengyun-descriptions]
+    note: "A retailer-listing floor (earliest capture 2023-01-31), not a stated launch date.
+      Recorded with qualifier 'before' per the S6 policy's explicit treatment of this exact
+      situation."
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-dayan-tengyun-descriptions]
+    note: "'V3 M' continues DaYan's own naming convention for this model line (see
+      dayan-tengyun-m, dayan-tengyun-v2-m), though no dedicated manufacturer-first-party
+      statement calling it 'the third generation' was found."
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-tengyun-v2-m
+    target_entity: model
+    note: "The 'V3 M' name continues the same numbered sequence as V2 M and the original M;
+      TheCubicle calls it 'a great leap forward for DaYan's 3x3 design' with a materially
+      different adjustment mechanism from V2 M's."
