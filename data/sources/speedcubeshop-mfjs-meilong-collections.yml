@@ -1,0 +1,47 @@
+# source: speedcubeshop-mfjs-meilong-collections
+# SpeedCubeShop's own retailer brand collections, two captures showing Meilong-named products
+# filed under both a "MoFang JiaoShi" collection (2025-01-03, product slugs prefixed
+# "mofang-jiaoshi-meilong-*") and a separate "moyu-speed-cubes"/"moyu-meilong" collection
+# (2025-11 through 2026-06, product slugs prefixed "moyu-meilong-*"). Tier 2, first-party
+# retailer catalogue structure. Cited for the Meilong family's manufacturer-attribution
+# ambiguity, not for any specification.
+id: speedcubeshop-mfjs-meilong-collections
+entity: source
+kind: retailer
+title: "SpeedCubeShop — \"MoFang JiaoShi\" and \"MoYu Meilong\"/\"MoYu Speed Cubes\" collections"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/collections/mofang-jiaoshi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250103000000*/https://speedcubeshop.com/collections/mofang-jiaoshi"
+excerpt: |-
+  2025-01-03 capture of https://speedcubeshop.com/collections/mofang-jiaoshi lists, among many
+  other MFJS-branded products, "mofang-jiaoshi-meilong-2x2", "mofang-jiaoshi-meilong-3x3",
+  "mofang-jiaoshi-meilong-4x4", "mofang-jiaoshi-meilong-5x5", "mofang-jiaoshi-meilong-8x8"
+  through "-13x13", "mofang-jiaoshi-meilong-pyraminx", "mofang-jiaoshi-meilong-skewb" and its
+  "mixup" variants, "mofang-jiaoshi-meilong-clover-3x3", "mofang-jiaoshi-meilong-gift-box", and
+  "mofang-jiaoshi-meilong-kilominx" — the entire Meilong catalogue filed under this retailer's
+  "MoFang JiaoShi" brand collection at that date.
+
+  Separately, captures from 2025-11 through 2026-06 (e.g.
+  https://speedcubeshop.com/collections/moyu-speed-cubes/products/moyu-meilong-3x3-v2-magnetic,
+  https://speedcubeshop.com/collections/moyu-meilong) show newer Meilong-named products (3x3
+  V2 Magnetic, 3x3 V2 Magnetic UV Coated, 3x3 V2 Magnetic Lite, 6x6 V2, 7x7 V2 Magnetic, 8x8
+  V3, 9x9 V3, 10x10 V2, and a dedicated "moyu-meilong" collection page) filed instead under a
+  "moyu-speed-cubes" collection path, i.e. under this retailer's "MoYu" brand grouping rather
+  than its "MoFang JiaoShi" one.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  speedcubeshop.com/collections/mofang-jiaoshi --limit 500` and the equivalent
+  `moyu-speed-cubes`/`moyu-meilong` prefixes) is the primary evidence; no single page transcript
+  captures the comparison, so the excerpt reproduces the two path patterns and their dates
+  directly, per D3/§3.5's allowance for evidence that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure. Two different collection
+  placements for the same product line, years apart, at the same retailer — read as evidence
+  that this retailer's own brand attribution for Meilong is not stable over time, not as
+  evidence that MoYu and MFJS are the same entity. Cited only for that ambiguity; not relied on
+  for any specification or date."
+status: sourced

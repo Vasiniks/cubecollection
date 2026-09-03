@@ -1,0 +1,44 @@
+# source: speedsolving-wiki-mfjs-products
+# Speedsolving.com community wiki article on MoFang JiaoShi (MFJS). Tier 4 — corroborates only.
+# Used in pass 2 for MFJS's own product-line history: the MF3/MF3RS/RS3M budget-3x3 succession,
+# the separate Meilong 3x3 line, and the MoFang JiaoShi Mini 3x3 Series.
+id: speedsolving-wiki-mfjs-products
+entity: source
+kind: wiki
+title: "MoFang JiaoShi — Speedsolving.com Wiki"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php/MoFang_JiaoShi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250818091604/https://www.speedsolving.com/wiki/index.php/MoFang_JiaoShi"
+excerpt: |-
+  Infobox: "MoFang JiaoShi, Cubing Classroom... a sub-brand of Moyu. The brand focuses on
+  making beginner-friendly puzzles. Their products are also considered budget cubes." Years
+  Active: "2016-present". Products list includes "MF2S, MF3S, MF3RS, MF5, MF5S, MF7, and
+  others".
+
+  3x3 section, in order: "MF3 — The MF3 was released 2016-10-11... MF3RS — The MF3RS was
+  released 2016-12-22... MF3RS2 — The MF3RS2 was released 2017-09-29... MF3RS3 — [released] in
+  December 2018... RS3M 2020 — An updated version of the MF3RS3 released mid 2020... For more
+  information, see MoYu. — RS3M 2021 (MagLev) — An updated version of the RS3M 2020... For more
+  information, see MoYu. — Super RS3M (2022) — An updated version of the RS3M 2021... For more
+  information, see MoYu. — MoFang JiaoShi Mini 3x3 Series — A series of smaller 3x3x3s that are
+  produced in sizes of 50mm, 45mm, 40mm, 35mm and 30mm. — Meilong 3x3 — The Meilong 3 was
+  released 2019-04-02. — Meilong 3x3 M — An updated version of the Meilong 3 with magnets...
+  — Meilong 3C".
+
+  The page explicitly redirects the reader to the MoYu wiki article ("For more information,
+  see MoYu") for every RS3M-named generation from 2020 onward, while listing MF3/MF3RS/MF3RS2/
+  MF3RS3 (2016-2018) without any such redirect — read as this wiki's own recognition that the
+  RS3M-named generations are jointly associated with both MoYu and MFJS, while the earlier
+  MF3/MF3RS generations are MFJS's alone.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from the infobox and the 3x3 section verbatim."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited wiki with no named author or citation trail.
+  Sufficient alone only for `uncertain`/`reported` confidence per RESEARCH_SPEC; used here
+  primarily for dating and family-boundary structure, corroborated where possible against
+  retailer captures."
+status: sourced
