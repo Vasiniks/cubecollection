@@ -1,0 +1,29 @@
+# source: thecubicle-mscube-ms3l-3x3-standard-product
+# TheCubicle's own product page for the MsCube MS3L 3x3 (Standard), captures spanning
+# 2023-2026 (still resolving as of a June 2026 capture). Tier 2, first-party retailer copy.
+id: thecubicle-mscube-ms3l-3x3-standard-product
+entity: source
+kind: retailer
+title: "MsCube MS3L 3x3 (Standard) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mscube-ms3l-3x3-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230206150957id_/https://www.thecubicle.com/products/mscube-ms3l-3x3-standard"
+excerpt: |-
+  Product Description: "The MsCube MS3L 3x3 (Standard) features a spiderweb pattern on the
+  contact surfaces, swappable center/core pieces to adjust tension, a compression adjustment
+  under each center cap, and a traditional magnetic layout with magnets in the edges and
+  corners. This version has primary plastic internals." Also sold in an "Enhanced" configuration
+  (mscube-ms3l-3x3-enhanced, same 2023-02-06 capture window). The product page does not itself
+  name DianSheng; the ownership relationship is sourced from
+  speedsolving-wiki-diansheng-products only.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer product description, consistent across captures
+  spanning 2023-2026 (still resolving as of 2026-06-11). Establishes the MS3L 3x3 as a real,
+  concretely specified, long-selling product; does not itself establish the DianSheng
+  relationship."
+status: sourced

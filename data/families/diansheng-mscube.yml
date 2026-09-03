@@ -1,0 +1,55 @@
+# family: diansheng-mscube
+# Pass 2 (family enumeration). A separately-branded line owned by DianSheng per a tier 4 source
+# — closes a lead flagged in this session's brief ("MsCube → reported as a DianSheng line but
+# never sourced, treat as a lead to verify"). Now sourced, though only at tier 4; the
+# manufacturer_id assignment should be revisited if a stronger source surfaces.
+
+id: diansheng-mscube
+entity: family
+manufacturer_id: diansheng
+name: "MsCube"
+aliases:
+  - "Mscube"
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki's DianSheng article (speedsolving-wiki-diansheng-products): DianSheng
+  is known "for owning the Mscube line of puzzles" — the only source located this pass stating
+  this relationship directly, and the reason this family is placed under `manufacturer_id:
+  diansheng` rather than recorded as an independent brand.
+
+  The concrete evidenced 3x3 product is the "MsCube MS3L 3x3", sold in Standard and Enhanced
+  configurations, per TheCubicle's own product page (thecubicle-mscube-ms3l-3x3-standard-product):
+  "features a spiderweb pattern on the contact surfaces, swappable center/core pieces to adjust
+  tension, a compression adjustment under each center cap, and a traditional magnetic layout
+  with magnets in the edges and corners." That retailer capture spans 2023 through at least a
+  2026-06-11 capture, i.e. a real, several-year-selling product, not a one-off listing. The
+  retailer's own product copy does not itself name DianSheng.
+
+  **Confidence caveat, stated plainly.** The DianSheng/MsCube ownership claim rests on a single
+  tier 4 source with no citation trail. It is treated here as sufficient to place the family
+  under `diansheng` (per this session's brief's explicit instruction to treat and verify this
+  lead), but it is exactly the kind of single-weak-source claim RESEARCH_SPEC's confidence table
+  calls `uncertain`, not `confirmed` or `probable` — recorded accordingly on every attestation
+  below, and flagged for a human to seek a tier 1-2 source (a DianSheng or MsCube first-party
+  page) before this placement is treated as settled.
+status: drafted
+
+attestations:
+  /manufacturer_id:
+    confidence: uncertain
+    sources: [speedsolving-wiki-diansheng-products]
+    note: "Single tier-4 source, no citation trail, no independent corroboration found this
+      pass. This is the pass's clearest 'lead closed but not confirmed' case — recorded as
+      resolved-for-now rather than left as an open lead, per this session's specific
+      instruction, but at the lowest usable confidence value."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+    note: "No explicit positioning statement from either source; recorded 'mainline' as the
+      least overclaiming reading."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products, thecubicle-mscube-ms3l-3x3-standard-product]

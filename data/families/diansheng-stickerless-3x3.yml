@@ -1,0 +1,26 @@
+# family: diansheng-stickerless-3x3
+# Pass 2 (family enumeration). A single-generation, poorly-regarded DianSheng 3x3, kept as its
+# own record on the strength of a documented community-media appearance.
+
+id: diansheng-stickerless-3x3
+entity: family
+manufacturer_id: diansheng
+name: "DianSheng Stickerless 3x3"
+aliases: []
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-diansheng-products): "DianSheng Stickerless 3x3 —
+  A very bad 3x3 from when Diansheng wasn't a reputable cube company. YouTuber Cubey Time used
+  this puzzle for his very popular 'Will It Lube?' series." No release date is given by the
+  source. Recorded as its own family despite the thin critical reception and lack of a date,
+  because of the documented named appearance in a specific, named community video series — a
+  concrete collector-relevant fact, not merely an opinion.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-diansheng-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]

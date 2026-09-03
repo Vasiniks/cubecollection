@@ -1,0 +1,27 @@
+# family: diansheng-3x3-m
+# Pass 2 (family enumeration). DianSheng's magnetic budget 3x3, positioned by the wiki as a
+# weak competitor to the established budget-magnetic field.
+
+id: diansheng-3x3-m
+entity: family
+manufacturer_id: diansheng
+name: "DianSheng 3x3 M"
+aliases: []
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-diansheng-products): "DianSheng 3x3 M — A recent
+  release from DianSheng. This a magnetized 3x3 that, much like its 2x2 counterpart, isn't all
+  that great with cubes like the MoYu RS3M competing with the likes of GAN puzzles. This puzzle
+  also has weird center caps that are reminiscent of the Rubik's first 'speed cube'." No release
+  date is given by the source. Its interchangeable center caps are stated to be shared with
+  diansheng-solar-s3m, its later flagship sibling — a hardware detail, not evidence the two are
+  the same family.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]

@@ -1,0 +1,44 @@
+# source: speedsolving-wiki-diansheng-products
+# Speedsolving.com community wiki article on DianSheng. Tier 4 — corroborates only. The page
+# carries its own standing editorial warning ("This page may be currently outdated"). This is
+# also the source that closes the pass-0/global-identity lead on "MsCube": the page states
+# directly that DianSheng owns the MsCube line.
+id: speedsolving-wiki-diansheng-products
+entity: source
+kind: wiki
+title: "Diansheng — Speedsolving.com Wiki (3x3 product history)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=DianSheng"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260405010335/https://www.speedsolving.com/wiki/index.php?title=Diansheng"
+excerpt: |-
+  Page-level summary: "DianSheng are a manufacturer formerly known for their Type-E 3x3x3 cube
+  and other puzzles, but are now known for their 8x8-11x11 magnetic puzzles and for owning the
+  Mscube line of puzzles." This is the first and only source found this pass directly stating
+  the DianSheng/MsCube relationship — closing the lead flagged in this session's brief
+  ("MsCube → reported as a DianSheng line but never sourced").
+
+  3x3 section: "3x3x3 Cube 'Type-E' (Released c. 2008) ... Type E cubes are known as Diansheng
+  (or DS) cubes. Out of the box they were quite bad, but after lubing with silicone they became
+  much better ... Because of their very light weight, and very loose, smooth turning; DS 3x3x3's
+  were often used in One-Handed cubing." "DianSheng Stickerless 3x3 — A very bad 3x3 from when
+  Diansheng wasn't a reputable cube company. YouTuber Cubey Time used this puzzle for his very
+  popular 'Will It Lube?' series." "DianSheng 3x3 M — A recent release from DianSheng. This a
+  magnetized 3x3 that, much like its 2x2 counterpart, isn't all that great with cubes like the
+  MoYu RS3M competing with the likes of GAN puzzles. This puzzle also has weird center caps that
+  are reminiscent of the Rubik's first 'speed cube'." "DianSheng Solar S3M 3x3 — The latest
+  flagship release from DianSheng. Very similar to the GAN 356X, with a scale pattern on the
+  cubes and black internals with stickerless caps. This puzzle has interchangeable center caps
+  that are the same as the DianSheng 3x3 M."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from the page summary and 3x3 section verbatim,
+  condensed with ellipses where intervening text is unrelated commentary."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, carries its own 'may be currently outdated'
+  editorial warning, and gives no independent citation for the DianSheng/MsCube ownership
+  claim. No tier 1-2 source corroborating that specific relationship was found this pass;
+  recorded at `reported` confidence on diansheng-mscube.yml accordingly, not `confirmed`."
+status: sourced

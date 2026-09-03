@@ -344,3 +344,34 @@ big-cube lines, which this pass's scope does not cover.
 
 **Sources created this session (ShengShou):** `speedsolving-wiki-shengshou-products`,
 `thecubicle-shengshou-collection-2025`.
+
+---
+
+## DianSheng — 5 families
+
+**The lead closure this manufacturer exists to deliver.** This session's brief flagged
+"MsCube → *reported* as a DianSheng line but never sourced, treat as a lead to verify." The
+Speedsolving wiki's own DianSheng page states directly, in its opening summary, that DianSheng
+is known "for owning the Mscube line of puzzles." This is a real source, but only a tier 4 one
+with no citation trail — `diansheng-mscube.yml` records the relationship at `confidence:
+uncertain` throughout, deliberately not overclaiming a single weak source into something
+stronger just because it happens to confirm a standing lead. A human should look for a tier 1-2
+DianSheng or MsCube first-party source before treating this placement as settled.
+
+**Candidates considered:** Type-E (2008), Stickerless 3x3, 3x3 M, Solar S3M, MsCube (MS3L).
+
+**Accepted (5):** `diansheng-type-e`, `diansheng-stickerless-3x3`, `diansheng-3x3-m`,
+`diansheng-solar-s3m`, `diansheng-mscube`.
+
+**Kept in, despite thin evidence, for a stated reason:** `diansheng-stickerless-3x3` has no
+release date and a single dismissive sentence, the same shape of evidence that led to Gem/Tank
+being excluded at ShengShou — but it also carries a specific, named community-media appearance
+("YouTuber Cubey Time used this puzzle for his very popular 'Will It Lube?' series"), a concrete
+collector-relevant fact rather than an opinion, which tipped this one case toward inclusion.
+
+**No boundary disputes this manufacturer.** Every family here is its own distinct DianSheng name
+with no stated succession between differently-named products; MsCube is a separately-branded
+line under the same manufacturer_id, not merged with any DianSheng-named family.
+
+**Sources created this session (DianSheng):** `speedsolving-wiki-diansheng-products`,
+`thecubicle-mscube-ms3l-3x3-standard-product`.

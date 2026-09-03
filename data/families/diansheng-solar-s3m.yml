@@ -1,0 +1,27 @@
+# family: diansheng-solar-s3m
+# Pass 2 (family enumeration). DianSheng's current flagship 3x3, explicitly compared by the
+# wiki to a contemporary GAN flagship.
+
+id: diansheng-solar-s3m
+entity: family
+manufacturer_id: diansheng
+name: "DianSheng Solar S3M"
+aliases: []
+positioning: flagship
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-diansheng-products): "DianSheng Solar S3M 3x3 —
+  The latest flagship release from DianSheng. Very similar to the GAN 356X, with a scale pattern
+  on the cubes and black internals with stickerless caps. This puzzle has interchangeable center
+  caps that are the same as the DianSheng 3x3 M." "Solar" is also DianSheng's naming for a
+  current flagship 2x2 ("DianSheng Solar S2M 2x2 — The latest flagship 2x2 release from
+  DianSheng," per the same wiki page) — a cross-category naming convention this family covers
+  only for its 3x3. No release date is given by the source.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]

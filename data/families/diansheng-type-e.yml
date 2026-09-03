@@ -1,0 +1,44 @@
+# family: diansheng-type-e
+# Pass 2 (family enumeration). DianSheng's earliest documented 3x3, historically significant
+# as a distinct community-named "type" of early speedcube.
+
+id: diansheng-type-e
+entity: family
+manufacturer_id: diansheng
+name: "DianSheng Type-E"
+aliases:
+  - "DS cube"
+introduced:
+  value: "2008"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-diansheng-products): "3x3x3 Cube 'Type-E'
+  (Released c. 2008) ... Type E cubes are known as Diansheng (or DS) cubes. Out of the box they
+  were quite bad, but after lubing with silicone they became much better ... There are two types
+  of DS cubes, no.222 and no.333. Rather than stickers, the Diansheng no.333 has the colors
+  painted onto the sides of the cube ... Because of their very light weight, and very loose,
+  smooth turning; DS 3x3x3's were often used in One-Handed cubing."
+
+  "Type-E" is a community-assigned category name for an early speedcube design lineage (paired
+  with "Type A/B/C/D" designations used elsewhere in this era's cubing community, per general
+  domain knowledge not independently re-verified this pass) rather than DianSheng's own product
+  marketing name; recorded as this manufacturer's family name regardless, since it is the name
+  by which this product is documented and the wiki's own page title treats it as DianSheng's
+  defining early product ("formerly known for their Type-E 3x3x3 cube").
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-diansheng-products]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-diansheng-products]
