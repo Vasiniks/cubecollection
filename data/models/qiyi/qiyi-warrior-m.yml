@@ -1,0 +1,56 @@
+# model: qiyi-warrior-m
+# Pass 3 (model enumeration). BOUNDARY CALL, recorded explicitly for human review. TheCubicle's
+# product copy never states "Warrior M is a magnetized version of Warrior W/S" the way
+# thecubicle-valk-3-m-product says exactly that for Valk 3 M — the phrasing worked decision A
+# (DATA_MODEL section 4.2) turns on. Instead the description is generic ("brings magnetic
+# stability... factory-installed magnets"), and the item weight (58.0g) is substantially lower
+# than either Warrior W (81.7g) or Warrior S (77.0g) at a similar or larger size. Split into its
+# own model under the standing "when the evidence is unclear, default to new model" instruction,
+# at reduced confidence on the identity claim itself. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-warrior-m
+entity: model
+family_id: qiyi-warrior
+manufacturer_id: qiyi
+name: "QiYi Warrior M"
+scope_class: core
+generation:
+  label: "Warrior M"
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+description: |-
+  Per TheCubicle's product page (thecubicle-qiyi-warrior-m-3x3-magnetic-product): "The QiYi
+  Warrior M is a budget-friendly 3x3 cube that brings magnetic stability to beginner and casual
+  solvers. Featuring factory-installed magnets, it offers a satisfying, tactile feel... a
+  durable, stickerless design."
+
+  **Model/variant boundary call, recorded for review.** Unlike the Valk line (where
+  thecubicle-valk-3-m-product explicitly says Valk 3 M "is a factory magnetized version of" the
+  base Valk 3 — DATA_MODEL section 4.2 worked decision A, textbook variant), no source found
+  this pass states Warrior M is a magnetized Warrior W or Warrior S. The item weight
+  (58.0g) is markedly lower than Warrior W's 81.7g or Warrior S's 77.0g at a similar (56.0mm)
+  or larger size, which reads as physical evidence of different piece geometry rather than the
+  same shell with magnets added at assembly. This is treated as sufficient, on the standing
+  "when the evidence is unclear, default to new model" instruction, to record Warrior M as its
+  own model rather than a variant of Warrior S — but the evidence is a weight inference, not a
+  stated mechanism difference, so the generation/identity claim is recorded at `uncertain`
+  rather than `probable`. No `succeeds` relationship is asserted: no source states Warrior M
+  replaces or follows Warrior S, only that both are concurrently retailed as of 2024-2025
+  (thecubicle-qiyi-mofangge-collection-2025).
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-warrior-m-3x3-magnetic-product]
+    note: "'Warrior M' is the manufacturer/retailer's own product name, but no ordinal or
+      explicit succession statement was found; see the description's full boundary-call
+      reasoning."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-m-3x3-magnetic-product]
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-warrior-m-3x3-magnetic-product]
+    note: "The model/variant boundary call itself (new model vs. a magnetic variant of Warrior
+      S) rests on an indirect weight-based inference, not a direct mechanism statement, and is
+      flagged for human review."

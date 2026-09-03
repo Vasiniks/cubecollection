@@ -1,0 +1,50 @@
+# model: qiyi-warrior-m-pro
+# Pass 3 (model enumeration). BOUNDARY CALL, recorded explicitly for human review, on the same
+# basis as qiyi-warrior-m: generic marketing copy, no stated mechanism relationship to any
+# sibling Warrior model, but a distinct size (55.0mm, vs Warrior M's 56.0mm) taken as weak
+# physical evidence of a further distinct design. Not to be confused with the unrelated
+# `qiyi-m-pro` FAMILY (a separate, higher-tier QiYi product line first released 2023) — this is
+# a Warrior-branded product using "M Pro" only as a tier suffix; see
+# research/qc/pass3-agent-b-qiyi.md for the naming-collision note.
+id: qiyi-warrior-m-pro
+entity: model
+family_id: qiyi-warrior
+manufacturer_id: qiyi
+name: "QiYi Warrior M Pro"
+scope_class: core
+generation:
+  label: "Warrior M Pro"
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.0
+description: |-
+  Per TheCubicle's product page (thecubicle-qiyi-warrior-m-pro-3x3-product): "The QiYi Warrior M
+  Pro 3x3 is an inexpensive magnetic 3x3 with good corner-cutting and decent performance. This
+  is a great puzzle for beginners or anyone looking for a good travel cube!"
+
+  **Naming-collision note.** This product is filed under TheCubicle's "qiyi-mofangge" (Warrior)
+  collection with a "qiyi-warrior-m-pro-3x3" slug, i.e. it is a Warrior-line product using "M
+  Pro" as a tier suffix (following the W / S / M / M Pro naming progression within Warrior
+  itself), and is NOT the same product as, nor evidence about, the unrelated `qiyi-m-pro`
+  family (QiYi's separate flagship-adjacent "M Pro" line, first released mid-2023 per that
+  family's own record). The two are kept structurally separate per their frozen family
+  assignments; this note exists so the naming resemblance is not mistaken for a relationship by
+  a later pass.
+
+  **Model/variant boundary call, recorded for review**, on the same basis as qiyi-warrior-m: no
+  source states this is a magnetized version of any sibling Warrior model, and its 55.0mm size
+  differs from Warrior M's 56.0mm, treated as weak physical evidence of a further distinct
+  design rather than a shared-shell configuration. No `succeeds` relationship is asserted.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-warrior-m-pro-3x3-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-m-pro-3x3-product]
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-warrior-m-pro-3x3-product]
+    note: "The model/variant boundary call rests on a size difference alone, not a stated
+      mechanism difference, and is flagged for human review."

@@ -1,0 +1,46 @@
+# model: qiyi-warrior-original
+# Pass 3 (model enumeration). The un-suffixed "Warrior" implied by Warrior W's own "updated
+# version of the original Warrior 3x3" description, and independently confirmed to exist by
+# TheCubicle's own product page calling it QiYi's "2nd release" in the MoFangGe stickerless
+# line. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-warrior-original
+entity: model
+family_id: qiyi-warrior
+manufacturer_id: qiyi
+name: "QiYi Warrior"
+aliases:
+  - "YongShi"
+  - "QiYi YongShi"
+scope_class: core
+generation:
+  label: "Warrior"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  The predecessor implied by both the Speedsolving wiki ("QiYi Warrior W... an updated version
+  of the original Warrior 3x3", speedsolving-wiki-qiyi-products) and, independently, by
+  TheCubicle's own product page (thecubicle-qiyi-warrior-3x3-product: "The QiYi Warrior 3x3 is
+  the 2nd release in QiYi's \"MoFangGe\" series of stickerless speedcubes"), captured while
+  already discontinued. No date, size, or weight beyond a bare "Gross Weight: 100g" figure was
+  found this pass from any tier 1-2 source; `specs` is left unset rather than guessed, and
+  `announced` is left unset rather than inferred from the "Added: 2018-09-11" catalogue artifact
+  on the same retailer page, which this archive's standing policy never treats as release-date
+  evidence.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    note: "Neither source gives this model an explicit ordinal or generation number; treated as
+      the family's earliest identified design because 'W', 'S', 'M', and 'M Pro' are all
+      explicitly suffixed by contrast."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-3x3-product, speedsolving-wiki-qiyi-products]
+    note: "Existence is corroborated by one tier-2 first-party retailer page (which does not use
+      the word 'original' or reference Warrior W, so it is independent wording, not a copy of
+      the wiki's framing) plus the wiki's own reference in describing Warrior W. `probable`
+      reflects a genuine tier-2 source, uncontradicted, per the confidence table; not
+      `confirmed`, which needs a tier-1 source or two independent tier-2 sources."

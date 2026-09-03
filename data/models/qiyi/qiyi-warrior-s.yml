@@ -1,0 +1,53 @@
+# model: qiyi-warrior-s
+# Pass 3 (model enumeration). Explicitly-stated mechanism upgrade over Warrior W, per
+# TheCubicle's own retailer copy. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-warrior-s
+entity: model
+family_id: qiyi-warrior
+manufacturer_id: qiyi
+name: "QiYi Warrior S"
+scope_class: core
+generation:
+  label: "Warrior S"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 55.5
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "Qiyi Warrior S Released around
+  late 2019. This 3x3 was a updated version of the Warrior W." TheCubicle's own retailer copy
+  (thecubicle-qiyi-warrior-s-3x3-product) states directly: "An updated version of the Warrior W,
+  the Warrior S features an upgraded mechanism for better performance" — a genuine mechanism
+  change, not merely a marketing update, and at a different size (55.5mm vs Warrior W's 56.0mm).
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('around late 2019'); TheCubicle's capture carries only the 'Added:
+      2019-10-31' artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-s-3x3-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-s-3x3-product]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-s-3x3-product]
+    note: "'An updated version of the Warrior W, the Warrior S features an upgraded mechanism for
+      better performance' is direct, explicit tier-2 retailer evidence of both succession and a
+      genuine mechanism change."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-warrior-s-3x3-product]
+relationships:
+  - type: succeeds
+    target: qiyi-warrior-w
+    target_entity: model
+    note: "TheCubicle: 'An updated version of the Warrior W, the Warrior S features an upgraded
+      mechanism for better performance.'"

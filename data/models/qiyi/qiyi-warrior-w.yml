@@ -1,0 +1,53 @@
+# model: qiyi-warrior-w
+# Pass 3 (model enumeration). QiYi's explicitly-named successor to the original Warrior, per
+# both the Speedsolving wiki and TheCubicle's own retailer copy. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-warrior-w
+entity: model
+family_id: qiyi-warrior
+manufacturer_id: qiyi
+name: "QiYi Warrior W"
+scope_class: core
+generation:
+  label: "Warrior W"
+  ordinal: 2
+  basis: manufacturer_declared
+announced:
+  value: "2016"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 56.0
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi Warrior W (YongShi)
+  Released Late 2016... an updated version of the original Warrior 3x3." TheCubicle's own
+  retailer copy (thecubicle-qiyi-warrior-w-3x3-product) independently frames it as "the new and
+  improved version of the QiYi Warrior 3x3." `size_mm: 56.0` is taken from that retailer's spec
+  table.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('Late 2016'); TheCubicle's capture carries only the 'Added:
+      2018-09-11' artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-w-3x3-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-w-3x3-product]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-w-3x3-product, speedsolving-wiki-qiyi-products]
+    note: "TheCubicle's independent wording ('new and improved version of the QiYi Warrior 3x3')
+      corroborates the wiki's framing ('an updated version of the original Warrior 3x3')."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-warrior-w-3x3-product]
+relationships:
+  - type: succeeds
+    target: qiyi-warrior-original
+    target_entity: model
+    note: "TheCubicle: 'the new and improved version of the QiYi Warrior 3x3'; wiki: 'an updated
+      version of the original Warrior 3x3'."
