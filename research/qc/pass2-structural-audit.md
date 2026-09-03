@@ -168,3 +168,78 @@ Current distribution: `retailer` 145, `manufacturer_official` 101, `wiki` 33, `p
 
 This is a *systemic* amplification path: one mis-kinded record upgrades every claim citing it.
 Flagged to the source-independence audit for verification; not asserted here as a defect.
+
+---
+
+## S7 — HIGH: the "GAN 356" name is split across three families (22 models affected)
+
+Querying which models actually sit under each GAN family exposes a boundary question that is
+invisible when the families are read one at a time:
+
+| Family | Models | Sample model ids |
+|---|---|---|
+| `gan-356` | 13 | `gan-356-air-s`, `gan-356-m`, `gan-356-maglev`, … |
+| `gan-i-series` | 4 | **`gan-356-i`**, **`gan-356-i2`**, `gan-356-i3-v2`, `gan-i4` |
+| `gan-i-carry-series` | 5 | **`gan-356-i-carry`**, **`gan-356-i-carry-2`**, **`gan-356-i-carry-e`**, **`gan-356-i-carry-s`**, `gan-i-carry-4` |
+| `gan-flagship-series` | 8 | `gan-flagship-11` … `gan-flagship-17` |
+| `gan-ui-series` | 5 | `gan-ui-12-freeplay`, `gan-ui-16-maglev-max`, … |
+| `gan-v100` | 2 | `gan-v100-leap`, `gan-v100-maglev` |
+| `gan-354` | 2 | `gan-354-m`, `gan-354-m-v2` |
+| `gan-357` | 1 | `gan-357-original` |
+
+**Six of the nine models in `gan-i-series` and `gan-i-carry-series` are named "GAN 356".**
+
+So the archive currently holds two incompatible readings simultaneously:
+
+- `gan-356` is treated as a **family** (a numbered product line), yet
+- products whose own manufacturer-given name is "GAN 356 i" / "GAN 356 i Carry" are filed
+  **outside** it, in smart-cube families.
+
+Both readings are defensible in isolation. Either "356" names a hardware platform and the smart
+variants belong inside it, or the smart line is its own lineage and the "356" in its name is
+vestigial. What is *not* defensible is holding both without stating the rule.
+
+Compare the treatment of `gan-flagship-series`, where GAN11–GAN17 were deliberately kept as one
+family *despite* changing numbers. The stated reasoning there — a manufacturer-drawn navigation
+grouping outweighs numeric change — appears to be applied inconsistently: numeric identity is
+treated as non-decisive for the flagship line but decisive for 356 vs i vs i-carry.
+
+**Downstream impact.** This is the highest-impact open boundary in the archive, because it is
+the only part where models are already built: 22 models and their variants are filed by this
+rule. Changing it later means re-parenting real records, not just editing a family.
+
+**This is a question for adjudication, not a defect to fix.** Recorded here so the specialist
+review answers it against GAN's own site organisation rather than against retailer categories.
+
+---
+
+## S8 — Confirmed sound: the 22 generic `<maker>-3x3` families are not placeholders
+
+22 families carry a bare `<manufacturer>-3x3`-style id. That pattern is the archive's main
+placeholder risk, so it was checked directly rather than assumed.
+
+Sampling their header comments shows they are deliberate and documented — e.g. `yuxin-3x3`
+("YuXin's original, unnamed-beyond-the-brand 3x3, its first product in the category"),
+`shengshou-3x3` ("first, unnamed-beyond-the-brand 3x3, long discontinued"), `fanxin-3x3`
+("base, unnamed-beyond-the-brand standard 3x3"). A real product with no series name is a
+legitimate family, not a placeholder. **No action needed.**
+
+One forward risk worth stating: an "unnamed base" family is a *bucket*, and in Pass 3 it can
+silently absorb unrelated products that merely lack a better home. These 22 need an explicit
+filing rule before model enumeration — specifically that a model may be filed under a generic
+family only when no named lineage claims it, and never merely because its name is unknown.
+
+---
+
+## S9 — Referential integrity: clean
+
+Checked programmatically across all 122 families:
+
+- **0** broken `manufacturer_id` references
+- **0** broken `successor_family_id` references (4 families set one)
+- **0** family-name collisions after normalisation
+- **0** orphan `family_id` values on the 48 models
+- 17 manufacturers have exactly one family; all were confirmed to be genuine sole lineages
+  rather than rule-29 duplicates (that exemption is already lineage-aware)
+
+**111 of 122 families currently have zero models** — that is the size of the Pass 3 queue.
