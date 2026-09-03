@@ -1,0 +1,31 @@
+# source: thecubicle-giiker-m3-3x3-2020
+# TheCubicle's own product page for the Giiker M3 3x3, captured via Wayback. Tier 2,
+# first-party retailer copy with real specs and an explicit design-relationship statement to
+# the electronic SUPERCUBE line.
+id: thecubicle-giiker-m3-3x3-2020
+entity: source
+kind: retailer
+title: "Giiker M3 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/giiker-m3-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920121202id_/https://www.thecubicle.com/products/giiker-m3-3x3"
+excerpt: |-
+  "The Giiker M3 3x3 retains the feel and sound of the original Giiker Smart Cube but without
+  the internal electronics. It features strong magnets and a classic color scheme on black
+  plastic." Product Specifications: "Manufacturer: XiaoMi / Type: 3x3 / Added: 2018-10-30 /
+  Gross Weight: 136g / Dimensions: 56.5mm 3 / Magnets: Magnetic / Item Weight: 99.0g"
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own 'Manufacturer' field names 'XiaoMi' rather than 'GiiKER' —
+  the same retailer filing convention noted in thecubicle-giiker-super-cube-i3s-2019, not
+  independent evidence of a different manufacturer. The key fact this source backs is the
+  design relationship: a mechanical, non-electronic 3x3 built on the same shell/tooling as the
+  electronic SUPERCUBE line ('retains the feel and sound of the original Giiker Smart Cube but
+  without the internal electronics'), which is why this is treated as its own family rather
+  than a bare configuration of the smart cube — see data/families/giiker-m3.yml's header
+  comment for the boundary reasoning."
+status: sourced

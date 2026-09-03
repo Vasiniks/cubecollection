@@ -1,0 +1,30 @@
+# source: thecubicle-giiker-super-cube-i3s-2019
+# TheCubicle's own product page for the GiiKER Super Cube i3S, captured via Wayback. Tier 2,
+# first-party retailer copy with real specs (weight, dimensions) and an explicit succession
+# statement.
+id: thecubicle-giiker-super-cube-i3s-2019
+entity: source
+kind: retailer
+title: "Giiker Super Cube i3S – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/giiker-super-cube-i3s"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190512000000id_/https://www.thecubicle.com/products/giiker-super-cube-i3s"
+excerpt: |-
+  "The Giiker Super Cube i3S is an updated version of the previous Giiker Super Cube. This
+  version comes with updated software, Bluetooth v. 4.0, and bright vibrant stickers.
+  Manufacturer: XiaoMi / Gross Weight: 213g / Dimensions: 56.5mm 3 / Item Weight: 104.6g"
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own 'Manufacturer' field names 'XiaoMi' rather than 'GiiKER' —
+  a retailer filing/naming convention, consistent with the Xiaomi ecosystem-distribution
+  relationship already documented at data/manufacturers/giiker.yml (kind: retailer
+  categorisation, not a claim that Xiaomi itself designed or built the product). The
+  succession statement ('an updated version of the previous Giiker Super Cube') is the key
+  fact this source backs: it establishes i3S as a later generation of an earlier, unnamed-here
+  'Giiker Super Cube,' consistent with GiiKER's own about-us page timeline ('2018 SUPERCUBE i3
+  released')."
+status: sourced

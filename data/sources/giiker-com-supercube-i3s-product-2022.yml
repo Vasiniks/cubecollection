@@ -1,0 +1,28 @@
+# source: giiker-com-supercube-i3s-product-2022
+# GiiKER's own official site, "SUPERCUBE® i3S" product page, captured via Wayback. Tier 1,
+# first-party.
+id: giiker-com-supercube-i3s-product-2022
+entity: source
+kind: manufacturer_official
+title: "SUPERCUBE® i3S – GiiKER"
+publisher: "GiiKER"
+url: "https://giiker.com/products/supercube-electronic-bluetooth-speed-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221002151115id_/https://giiker.com/products/supercube-electronic-bluetooth-speed-cube-3x3"
+excerpt: |-
+  "SUPERCUBE® i3S ... Smart and Connected: App connected smart cube with real-time tracking
+  technology, unlocking a whole new world of learning & improving, mini-games, online battle,
+  and Cubers' community. It's educational and innovative, endorsed by MoMA as the next
+  generation cube for the 21st century... Interactive tutorials: The APP tracks your smart
+  cube's moves in real-time... Connect with friends: Join our SUPER CUBE community of more
+  than one million users."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party. Marketing superlatives ('endorsed by MoMA,' 'next
+  generation cube for the 21st century') recorded here for completeness but not treated as
+  specification facts, per the tier-4-for-comparative-claims rule; the app-connectivity and
+  real-time-tracking functionality are treated as tier 1 specification facts."
+status: sourced
