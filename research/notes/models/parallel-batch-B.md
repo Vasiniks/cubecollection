@@ -445,3 +445,39 @@ cube-2020`. `thecubicle-verypuzzle-manufacturer-filter-2021` (pass 1, reused).
 contradicting).
 
 ---
+## LimCube — 0 families
+
+**Sub-brand caution note.** `data/manufacturers/limcube.yml` already records `kind: sub_brand`
+/ `parent_id: fangshi` at `confidence: confirmed`, from two independent tier 2 retailers. This
+pass did not touch that record; it only enumerated LimCube's product range for 3x3x3 content.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/limcube` (37 URLs) enumerates
+LimCube's full found catalogue: 2x2 Ghost Cube, 2x2 Transform Rhombohedron II, CakeZ (2x2x2
+Skewb Mech), Circle Pyramorphix I/II, Crucis Cube 3x3 Skewb V2, Fission Skewb, Hexagram
+Octahedron, Hollow XO Cube, HyperV 2x2x2 Offset Skewb Plus, Kaleidoscope Hex Prism, Master
+Mixup 0/I/II/III/VII, Rhombohedron III, SuperZ and WonderZ 2x2x2 Skewb Cubes.
+
+**Candidates considered:** the Master Mixup series (0 through VII) is the only line with real
+depth (5 numbered generations) and was checked directly. TheCubicle's own product description
+of Master Mixup I: "This may look like a **bandaged 10x10**, but this cube moves in ways that
+you would never expect!" — a 10x10x10-based mixup mechanism, not a 3x3x3 product at all,
+confirmed by the same page's own "Type: Shape Mods" field. Every other LimCube product found
+is either explicitly Skewb-family (Fission Skewb, Crucis Cube 3x3 **Skewb**, HyperV, SuperZ,
+WonderZ), 2x2-based (Ghost Cube, Circle Pyramorphix), or another non-3x3x3 polyhedron
+(Rhombohedron, Octahedron, Hex Prism) — none 3x3x3-mechanism-based, all out of this archive's
+scope per RESEARCH_SPEC §2.4 ("Puzzles other than 3×3×3").
+
+**Zero families created — a genuine finding.** LimCube's entire found catalogue, across every
+line checked, is built on 2x2x2, Skewb, or 10x10x10 mechanisms — none of it is a 3x3x3 product,
+so no family-boundary question even arises. No `limcube` family record was created.
+
+**Rejected:** all of the above, on scope grounds rather than a family-boundary judgement call.
+
+**Sources added:** `thecubicle-limcube-master-mixup-i-2023` (also independently corroborates
+the existing FangShi parent-manufacturer field, consistent with, not contradicting, the
+existing confirmed relationship).
+
+**Confidence:** `confirmed`-adjacent — the scope exclusion rests on direct retailer
+"Type"/description statements for the products actually checked, consistent across every one.
+
+---
