@@ -1,0 +1,53 @@
+# model: x-man-tornado-v2
+# Pass 3 (model enumeration). Explicit numbered successor to the original Tornado, corroborated
+# independently by the qiyi-mp family's own sourcing and by the Tornado V3 page's own retrospective
+# description of "issues that were present in the V2". See research/qc/pass3-agent-b-qiyi.md.
+id: x-man-tornado-v2
+entity: model
+family_id: x-man-tornado
+manufacturer_id: x-man-design
+name: "X-Man Tornado V2"
+scope_class: core
+generation:
+  label: "Tornado V2"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.0
+description: |-
+  Per TheCubicle's product page (thecubicle-x-man-tornado-v2-3x3-product): "The X-Man Tornado v2
+  is the latest 3x3 flagship release from QiYi. It is more stable than many other flagships and
+  features a robust adjustment system with 125 total setting combinations. Use the free included
+  tool to adjust tension, spring elasticity, and magnet strength. At 55mm, this cube is great for
+  those who prefer slightly smaller puzzles." `size_mm: 55.0` is taken from this page's own spec
+  table. Independently referenced by the qiyi-mp family's own wiki source, which compares that
+  product's size (56mm) "over the Tornados V2's 54.5mm" — a slightly different figure from this
+  retailer's own 55.0mm; the retailer's directly-measured spec-table figure is preferred here
+  over the uncorroborated wiki number, per RESEARCH_SPEC's source-tier ordering.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-x-man-tornado-v2-3x3-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v2-3x3-product]
+    note: "A competing figure (54.5mm) appears in a separate wiki-sourced comparison (see
+      qiyi-mp-original.yml); not adopted here since it is a single tier-3(-overridden) source's
+      indirect comparison, not this product's own spec table."
+  /description:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v2-3x3-product]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-x-man-tornado-v2-3x3-product]
+    note: "Inferred from sequential manufacturer numbering (unnumbered original, then 'V2'); no
+      direct 'successor to the original Tornado' statement was found for V2 itself."
+relationships:
+  - type: succeeds
+    target: x-man-tornado-v1
+    target_entity: model
+    note: "Sequential manufacturer numbering (unnumbered original, then 'V2'); no direct
+      'successor to the original Tornado' statement was found for V2 itself, so this is
+      recorded at `reported` rather than `probable` (contrast the V2-to-V3 edge, which IS
+      directly stated by the V3 product page)."

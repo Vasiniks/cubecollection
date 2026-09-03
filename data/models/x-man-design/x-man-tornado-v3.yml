@@ -1,0 +1,63 @@
+# model: x-man-tornado-v3
+# Pass 3 (model enumeration). Explicit successor to Tornado V2, with a stated mechanical change
+# (rivets replaced by screws) rather than only a marketing version bump. "Pioneer" and "Magnetic
+# Core" configurations are treated as variants of this model, not modelled separately. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: x-man-tornado-v3
+entity: model
+family_id: x-man-tornado
+manufacturer_id: x-man-design
+name: "X-Man Tornado V3"
+scope_class: core
+generation:
+  label: "Tornado V3"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2022"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 55.5
+description: |-
+  Per TheCubicle's product page (thecubicle-x-man-tornado-v3-m-standard-product): "The X-Man
+  Tornado V3 M is QiYi's new flagship 3x3 speedcube... X-man has released 3 versions,
+  introducing core magnets and maglev tech to the Tornado line. It solves some small issues that
+  were present in the V2 like replacing the rivets with screws and allowing the center caps to
+  fit from any orientation. The improved mechanism gives a more cohesive, smooth feel when
+  turning." Replacing rivets with screws is a genuine, explicit mechanical change from V2 (not
+  merely a marketing version bump), and "3 versions" (Standard, Magnetic Core, Pioneer MagLev) is
+  the manufacturer/retailer's own framing of magnet/maglev configuration options within this one
+  generation — treated as variants of this model per DATA_MODEL section 4.2 worked decision A,
+  not separate models. A "Pioneer 3x3 Revived Limited Edition" reissue
+  (thecubicle-x-man-designs-collection-2025) is likewise left as a pass-4 variant question.
+  `size_mm: 55.5` (vs V2's 55.0mm) is taken from this page's spec table.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+    note: "No explicit dated release statement was found for V3 itself; the retailer's own
+      'Added: 2022-09-16' catalogue field is not used as release-date evidence per standing
+      policy, so this date is a rough placement from the capture window only, held at
+      `uncertain`."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+    note: "'It solves some small issues that were present in the V2 like replacing the rivets
+      with screws' is direct, explicit tier-2 succession and mechanism-change evidence."
+  /description:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product, thecubicle-x-man-designs-collection-2025]
+relationships:
+  - type: succeeds
+    target: x-man-tornado-v2
+    target_entity: model
+    note: "TheCubicle: 'It solves some small issues that were present in the V2 like replacing
+      the rivets with screws...'"

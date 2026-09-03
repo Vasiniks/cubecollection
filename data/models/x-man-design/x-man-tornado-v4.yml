@@ -1,0 +1,75 @@
+# model: x-man-tornado-v4
+# Pass 3 (model enumeration). Explicit successor to Tornado V3, with a stated new core system
+# (ball-core). "V4 AI" (the smart/electronic sibling) is treated as a variant of this model, not
+# a separate model — a deliberate boundary call, recorded for review. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: x-man-tornado-v4
+entity: model
+family_id: x-man-tornado
+manufacturer_id: x-man-design
+name: "X-Man Tornado V4"
+scope_class: core
+generation:
+  label: "Tornado V4"
+  ordinal: 4
+  basis: manufacturer_declared
+announced:
+  value: "2024"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 55.5
+description: |-
+  Per TheCubicle's product page (thecubicle-x-man-tornado-v4-m-3x3-flagship-product): "This
+  puzzle is a successor to the Tornado V3 which has set many world records over the last few
+  years. This one has a ball-core, and an updated adjustment system that allows you to adjust
+  the magnet strength in an entire corner with just a single twist!" A ball-core is a named,
+  specific core-system change from V3 (which is not described as ball-core), the basis for
+  model-level treatment. That page's own spec table has no Dimensions row; `size_mm: 55.5` is
+  instead taken, at reduced confidence, from thecubicle-x-man-tornado-v4-ai-3x3-uv-product's own
+  "Standard 55.5mm size for familiar, ergonomic control" statement for the same V4 platform.
+
+  **Model/variant boundary call, recorded for review: "Tornado V4 AI" is treated as a variant of
+  this model, not a separate model.** TheCubicle's own copy for the AI product describes it
+  directly as "the smart upgrade of the world-renowned Tornado V4" (thecubicle-x-man-tornado-
+  v4-ai-3x3-uv-product), i.e. built on the same mechanical platform with electronics (gyroscope,
+  "magnetic foot positioning system", companion app) added. DATA_MODEL section 4.1 explicitly
+  lists smart/electronic capability as a variant-level (not model-level) difference, and this
+  matches the precedent already set for QiYi's own M Pro Elite/Smart Cube pairing
+  (qiyi-m-pro-elite.yml) — the opposite treatment from GAN's separately-named, persisting smart
+  FAMILIES (i Series, ui Series), because no separately-named persisting "X-Man smart" collection
+  identity was found for Tornado, only this one product.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-x-man-tornado-v4-m-3x3-flagship-product]
+    note: "No explicit dated release statement was found for V4 itself; the retailer's own
+      'Added: 2024-09-19' catalogue field is not used as release-date evidence per standing
+      policy."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-m-3x3-flagship-product]
+  /specs/size_mm:
+    confidence: uncertain
+    sources: [thecubicle-x-man-tornado-v4-ai-3x3-uv-product]
+    note: "Taken from the AI smart-variant's own product copy rather than the mechanical V4 M
+      Flagship page directly (whose spec table lacks a Dimensions row at this capture);
+      downgraded from `probable` to `uncertain` for that indirection."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-m-3x3-flagship-product]
+    note: "'This puzzle is a successor to the Tornado V3' is direct, explicit tier-2 succession
+      language, plus a named core-system change (ball-core)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-x-man-tornado-v4-m-3x3-flagship-product, thecubicle-x-man-tornado-v4-ai-3x3-uv-product]
+    note: "The smart/mechanical model-vs-variant boundary call for 'V4 AI' rests on the AI
+      page's own 'smart upgrade of... Tornado V4' framing; flagged for human review as a
+      judgment call, consistent with the same call made for qiyi-m-pro-elite."
+relationships:
+  - type: succeeds
+    target: x-man-tornado-v3
+    target_entity: model
+    note: "TheCubicle: 'This puzzle is a successor to the Tornado V3 which has set many world
+      records over the last few years.'"
