@@ -1,0 +1,50 @@
+# model: yj-yulong-original
+# Pass 3 (model enumeration), agent D. The original YJ YuLong (2013), YJ's first stickerless
+# cube per the wiki. Identity is separately corroborated by thecubicle-us-yj-yulong-product (a
+# 2014 capture used in Pass 1/2 to resolve a naming collision with a same-named MoYu product).
+id: yj-yulong-original
+entity: model
+family_id: yj-yulong
+manufacturer_id: yj
+name: "YJ YuLong"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ YuLong Released December
+  2013. The mechanism was largely adapted from the ChiLong but with some slight changes that
+  looked more like a modern speedcube... Notably, the cube was YJ's first stickerless cube."
+  TheCubicle's own product description (thecubicle-yj-yulong-original-product-2019, 2019-08-24
+  capture): "The YJ YuLong mechanism has been mostly adapted from the YJ ChiLong, but it
+  features minor adjustments that allow stickerless variants to be produced."
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found. Only a Gross (packaged) Weight of 100g was found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Neither source mentions magnets for this original generation; recorded as unknown rather than asserting 'none' outright given no explicit statement either way."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found for this specific product (only its successors carry version labels)."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-yulong-original-product-2019, thecubicle-us-yj-yulong-product]

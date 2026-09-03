@@ -1,0 +1,69 @@
+# model: yj-yulong-v2-m
+# Pass 3 (model enumeration), agent D. The wiki's "YuLong V2 M" — a factory-magnetized,
+# explicitly-named "updated version" of the original YuLong. Recorded as a new model rather
+# than a variant under DATA_MODEL 4.2's default-to-split instruction: "updated version" plus
+# factory magnetization together are read as more than a sold configuration of one design,
+# though the wiki does not itself detail what specifically changed beyond magnetization, so
+# this boundary call is held at uncertain confidence.
+id: yj-yulong-v2-m
+entity: model
+family_id: yj-yulong
+manufacturer_id: yj
+name: "YJ YuLong V2 M"
+scope_class: core
+generation:
+  label: "V2 M"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+  weight_g: 88.9
+  shape: standard
+  magnet_architecture: single_layer
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ YuLong V2 M A factory
+  magnetized and updated version of the YJ YuLong. Considered to be great budget magnetic 3x3,
+  with competitors including the QiYi MS and the MoYu RS3M 2020." TheCubicle's own product page
+  (thecubicle-yj-yulong-v2-m-product, 2019-05-12 capture) carries a spec table (56.0mm,
+  88.9g item weight) but no prose description in this particular capture.
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-yulong-original
+    target_entity: model
+    note: "The wiki names this directly as 'a factory magnetized and updated version of the YJ
+      YuLong'."
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-v2-m-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-v2-m-product]
+    note: "Item Weight (88.9g), not Gross Weight (103g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-yulong-v2-m-product]
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [speedsolving-wiki-yongjun-products]
+    note: "'Factory magnetized' confirmed; exact architecture not stated, single_layer recorded
+      as the conservative default for a budget 2019-era magnetic 3x3."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-yulong-v2-m-product]

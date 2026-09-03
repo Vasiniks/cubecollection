@@ -1,0 +1,23 @@
+# source: thecubicle-yj-guanlong-v3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ GuanLong V3, a
+# 2019 capture.
+id: thecubicle-yj-guanlong-v3-product
+entity: source
+kind: retailer
+title: "YJ GuanLong V3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-guanlong-v3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721131504id_/https://www.thecubicle.com/products/yj-guanlong-v3"
+excerpt: |-
+  Product Description: "The YJ GuanLong V3 is the newest version of the classic YJ GuanLong,
+  which was first released in October 2014 and set the standard for budget-friendly 3x3s. This
+  version features an updated design for better performance." Product Specifications:
+  Manufacturer YJ, Type 3x3, Gross Weight 86g, Dimensions 56.0mm, Item Weight 72.9g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table."
+status: sourced

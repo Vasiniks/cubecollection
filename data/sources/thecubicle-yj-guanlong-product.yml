@@ -1,0 +1,23 @@
+# source: thecubicle-yj-guanlong-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the original YJ
+# GuanLong, a 2019 capture.
+id: thecubicle-yj-guanlong-product
+entity: source
+kind: retailer
+title: "YJ GuanLong - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-guanlong"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721130319id_/https://www.thecubicle.com/products/yj-guanlong"
+excerpt: |-
+  Product Description: "The YJ GuanLong is a new, lightweight speedcube with a very low price
+  point. It features pieces and mechanism similar to the YJ SuLong. Great as an inexpensive
+  first speedcube for beginners!" Product Specifications: Manufacturer YJ, Type 3x3, Gross
+  Weight 82g, Dimensions 56.0mm. No Item Weight field was present in this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and partial spec table."
+status: sourced

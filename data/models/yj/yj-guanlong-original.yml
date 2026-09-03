@@ -1,0 +1,55 @@
+# model: yj-guanlong-original
+# Pass 3 (model enumeration), agent D. The original YJ GuanLong, one of the best-selling budget
+# 3x3s ever made per the family's own Pass 2 description (subreddit meme about ubiquity).
+id: yj-guanlong-original
+entity: model
+family_id: yj-guanlong
+manufacturer_id: yj
+name: "YJ GuanLong"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.0
+  shape: standard
+  magnet_architecture: none
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ GuanLong Released October
+  2014. The YJ GuanLong was a popular budget cube from YJ. It featured a simple, blocky
+  mechanism and was popular for modding." TheCubicle's own product description
+  (thecubicle-yj-guanlong-product, 2019-07-21 capture): "The YJ GuanLong is a new, lightweight
+  speedcube with a very low price point. It features pieces and mechanism similar to the YJ
+  SuLong."
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-guanlong-product]
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-guanlong-product]
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-yj-guanlong-product]
+    note: "No magnet is mentioned in the original's own description, in contrast to the later
+      'yj-mgc' magnetic line; this predates YJ's magnetic-budget era."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found. Only a Gross (packaged) Weight of 82g was found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found for this specific product (only its successors carry version labels)."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-product]

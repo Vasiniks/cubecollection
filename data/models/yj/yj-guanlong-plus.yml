@@ -1,0 +1,68 @@
+# model: yj-guanlong-plus
+# Pass 3 (model enumeration), agent D. The wiki's "GuanLong V2"/"GuanLong Plus" — TheCubicle's
+# own copy states a redesigned mould ("squared off corners and a more sophisticated internal
+# design"), a clean model-level case under DATA_MODEL 4.2.
+id: yj-guanlong-plus
+entity: model
+family_id: yj-guanlong
+manufacturer_id: yj
+name: "YJ GuanLong Plus"
+aliases:
+  - "YJ GuanLong V2"
+scope_class: core
+generation:
+  label: "Plus"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+  weight_g: 75.2
+  shape: standard
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ would later release the YJ
+  Guanlong V2 also known as the YJ Guanlong Plus." TheCubicle's own product description
+  (thecubicle-yj-guanlong-plus-3x3-product, 2019-07-23 capture): "The YJ GuanLong Plus is the
+  new and updated version of the classic YJ GuanLong... The update includes squared off corners
+  and a more sophisticated internal design that give it a more modern feel compared to the
+  original GuanLong."
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-guanlong-original
+    target_entity: model
+    note: "TheCubicle's own copy: 'the new and updated version of the classic YJ GuanLong.'"
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-guanlong-plus-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-guanlong-plus-3x3-product]
+    note: "Item Weight (75.2g), not Gross Weight (91g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-guanlong-plus-3x3-product]
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-plus-3x3-product]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-yj-guanlong-plus-3x3-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-plus-3x3-product]

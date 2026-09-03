@@ -1,0 +1,66 @@
+# model: yj-yulong-v3-m
+# Pass 3 (model enumeration), agent D. A third YuLong generation, found via TheCubicle's own
+# 2025-era "yj" collection (thecubicle-yj-collection-2025) and not covered by the November-2023
+# wiki. TheCubicle's own copy states directly "the updated internal mechanism enhances
+# corner-cutting and durability" — a first-party mechanism-change statement.
+id: yj-yulong-v3-m
+entity: model
+family_id: yj-yulong
+manufacturer_id: yj
+name: "YJ YuLong 3x3 V3 M"
+scope_class: core
+generation:
+  label: "V3 M"
+  ordinal: 3
+  basis: manufacturer_declared
+specs:
+  magnet_architecture: single_layer
+description: |-
+  TheCubicle's own product description (thecubicle-yj-yulong-3x3-v3-m-product, 2025-04-14
+  capture): "The YJ YuLong 3x3 V3 M is a budget-friendly magnetic 3x3 speed cube that delivers
+  impressive performance for its price. With factory-installed magnets, this cube offers a
+  smooth, stable, and controllable turning experience... The updated internal mechanism
+  enhances corner-cutting and durability." A UV-coated configuration of this same "V3 M" design
+  also exists at this retailer (yj-yulong-3x3-v3-m-uv-coated,
+  yj-yulong-3x3-v3-m-uv-coated-clicky) — treated as variants of this model (a coating/tuning
+  option), not further generations, per this pass's model/variant boundary.
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-yulong-v2-m
+    target_entity: model
+    note: "Ordering follows the naming-numeral convention (V2 M to V3 M) and this being the
+      next YuLong generation found beyond V2 M; neither source names V2 M as the specific
+      predecessor by name."
+attestations:
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-yj-yulong-3x3-v3-m-product]
+    note: "'Factory-installed magnets' confirmed; exact architecture not stated."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-product, thecubicle-yj-collection-2025]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-yj-yulong-3x3-v3-m-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-yulong-3x3-v3-m-product]

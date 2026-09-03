@@ -1,0 +1,27 @@
+# source: thecubicle-yj-yulong-3x3-v3-m-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ YuLong 3x3 V3 M,
+# a 2025 capture, stating directly "the updated internal mechanism enhances corner-cutting and
+# durability" — a first-party statement of a mechanism-level change from the V2 M.
+id: thecubicle-yj-yulong-3x3-v3-m-product
+entity: source
+kind: retailer
+title: "YJ YuLong 3x3 V3 M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-yulong-3x3-v3-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250414063239id_/https://www.thecubicle.com/products/yj-yulong-3x3-v3-m"
+excerpt: |-
+  Product Description: "The YJ YuLong 3x3 V3 M is a budget-friendly magnetic 3x3 speed cube
+  that delivers impressive performance for its price. With factory-installed magnets, this
+  cube offers a smooth, stable, and controllable turning experience, reducing lockups and
+  improving overall solving efficiency. The updated internal mechanism enhances corner-cutting
+  and durability, making it a great choice for both beginner and intermediate solvers."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. 'The updated internal
+  mechanism' is a direct statement of a mechanism-level (not merely coating/configuration)
+  change, a model-level case under DATA_MODEL 4.2."
+status: sourced
