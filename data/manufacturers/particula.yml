@@ -1,0 +1,90 @@
+# manufacturer: particula
+# Pass 1 (manufacturer register). Israeli smart-toy company; maker of GoCube (its own brand)
+# and, in partnership with Rubik's, the manufacturing entity behind "Rubik's Connected" — a
+# direct, sourced answer to part of the manufacturing-entity question left open in
+# data/manufacturers/rubiks.yml. Smart 3x3s are explicitly in scope per PRODUCT.md §2.1.
+
+id: particula
+entity: manufacturer
+name: "Particula"
+kind: manufacturer
+country: IL
+founded:
+  value: "2017"
+  precision: year
+  qualifier: exact
+  note: "Disputed — see /founded attestation. Particula's own site states 2017; a 2021 press
+    profile independently states 2018 and names Netanya as the city."
+aliases:
+  - "Particula Ltd."
+  - "Particula Tech"
+  - "GoCube"
+website: "https://particula-tech.com/"
+notes: |-
+  **Identity.** Particula's own "About Us" page: "We revive new Phygital life to the classic
+  games and toys, powering them with powerful technology into the digital era... Since founded
+  in 2017, we have three Kickstarter campaigns successfully delivered. Our award winning GoCube
+  & GoDice generated an accumulated +$1.3 million on Kickstarter" (particula-about-us-2024) —
+  tier 1, first-party. GoCube, GoDice, and GoChess are named as its product lines.
+
+  **Founding, disputed.** Particula's own site states 2017 (particula-about-us-2024); an
+  established tech-industry press profile of its 2021 Series A round independently states
+  "Founded in Netanya in 2018" (tech-eu-particula-series-a-2021), naming a specific Israeli city
+  not given anywhere on the company's own site reviewed this pass. Both are otherwise
+  consistent (Israeli smart-toy company, GoCube as its first product), so this is recorded as a
+  genuine year discrepancy rather than adopting one source silently.
+
+  **Country.** Netanya, Israel, per tech-eu-particula-series-a-2021 (tier 2, explicit); no
+  country statement was located on Particula's own site content reviewed this pass.
+
+  **Manufacturer of "Rubik's Connected" — relevant to data/manufacturers/rubiks.yml.**
+  tech-eu-particula-series-a-2021 states directly, in its own reporting voice: "the company will
+  start production of several new consumer tech products, such as Rubiks Connected (in
+  partnership with Rubiks)." Particula's own site separately lists "Rubik's Connected" among its
+  current products, marketed as "The original Rubik's - Now Smart" (general web search of the
+  live particula-tech.com/pages/gocube page, not independently captured this pass beyond the
+  particula-about-us-2024 navigation listing). This is a tier 2 source directly answering, for
+  this one product line, the "manufacturing identity may differ from the brand" question raised
+  in data/manufacturers/rubiks.yml: Particula is the manufacturing/production partner behind the
+  Rubik's-branded smart-cube line specifically. This does **not** establish who manufactures
+  Rubik's non-smart mechanical speedcubes or the classic 3x3 — recorded here as a scoped finding,
+  not extended to the whole Rubik's catalogue. Pass 2 should record "Rubik's Connected" as a
+  Rubik's-branded smart-cube family/model with a documented manufacturing relationship to
+  Particula, distinct from GoCube (Particula's own independently-branded smart cube).
+
+  **In-scope product.** GoCube (Particula's own brand) and Rubik's Connected (manufactured by
+  Particula, sold under the Rubik's brand) are both smart/electronic 3x3s with Bluetooth
+  connectivity and companion apps — squarely in PRODUCT.md's in-scope smart 3x3 category.
+  Family/model enumeration is pass 2's work, not this register's.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [particula-about-us-2024, tech-eu-particula-series-a-2021]
+    note: "Two independent sources (one tier 1 first-party, one tier 2 press) describing
+      Particula as the maker/producer of a named smart-cube product line — sufficient alone per
+      the confidence table."
+  /country:
+    confidence: probable
+    sources: [tech-eu-particula-series-a-2021]
+    note: "Single tier 2 source naming Israel/Netanya explicitly; not independently corroborated
+      by a second source this pass, so probable rather than confirmed."
+  /founded:
+    confidence: disputed
+    disputed:
+      - { value: "2017", sources: [particula-about-us-2024], confidence: probable }
+      - { value: "2018 (Netanya)", sources: [tech-eu-particula-series-a-2021], confidence: probable }
+    adjudication: "Not adjudicated. Both are otherwise-reliable sources (one first-party, one
+      established press) giving a one-year-apart founding date with no indication of which
+      event each refers to (e.g. legal incorporation vs. first product work). Recorded as
+      disputed per rule 11 rather than picking one."
+  /aliases:
+    confidence: probable
+    sources: [particula-about-us-2024]
+  /website:
+    confidence: confirmed
+    sources: [particula-about-us-2024]
+  /notes:
+    confidence: probable
+    sources: [particula-about-us-2024, tech-eu-particula-series-a-2021]

@@ -109,3 +109,57 @@ SpeedCubeShop keeps an alternative reading alive. Genuinely open.
 4. Test the UniCube / Supernova / Cosmic house-line suspicion
 5. Chinese-language discovery, which is where the remaining recall is
 6. Smart-cube companies as a named blind spot — `MsCube` is the only one found so far
+
+---
+
+## Addendum — smart-cube discovery, Guhong closure, SpeedCubeShop house lines (2026-09-02)
+
+Continuing from the handoff above. Four findings this session, each written up at the point of
+discovery rather than batched:
+
+**Rubik's canonicalised.** `data/manufacturers/rubiks.yml` — a licensed brand, not a Chinese
+manufacturer. Country recorded as GB (Rubik's Brand Limited, UK Companies House incorporation
+2013-03-06), distinct from Hungary (product invention, 1974) and Canada (Spin Master, the 2021
+acquirer). `founded` recorded as 1980 (product renamed "Rubik's Cube") with the other three dated
+events preserved in prose rather than forced into a false multi-source dispute (rule 11 needs
+distinct sources per candidate; three of four events here share one source).
+
+**UniCube / Supernova / Cosmic resolved.** All three are SpeedCubeShop's own in-house setup-tier
+names, applied across every manufacturer's products sitewide (same pattern as TheCubicle's
+Cubicle Custom, one layer wider — three tiers times the whole catalogue, not two magnet variants
+of one line as the pass-0 brief guessed). Confirmed via first-party SpeedCubeShop product pages
+stating "Brand: SpeedCubeShop" in their own spec table on cubes physically made by GAN.
+`data/manufacturers/speedcubeshop.yml` created, kind: service, founded 2009 (Cameron Brown,
+originally California, later Nevada).
+
+**Guhong lead closed — a methodology finding, not just a fact.** The pass-0 brief's suspicion
+that "Guhong" moved from DaYan to QiYi rested entirely on a bare collection-tag slug
+(`guhong-pro-m-3x3`) sitting near `x-man-designs` in an *alphabetised* list of retailer
+collections. It doesn't: `guhong-pro-m-3x3` sorts under "g", `x-man-designs` under "x"; they were
+never actually adjacent. TheCubicle's own **product** URLs (as opposed to collection tags) for
+every GuHong-named cube found in captures spanning 2019-2026 are consistently prefixed
+`dayan-guhong-*`, and no "QiYi Guhong" product was found anywhere. Closed: no identity movement.
+**Worth flagging structurally**: this is the second time in this register that a slug-adjacency
+argument looked like evidence and wasn't (Tornado's adjacency to `x-man-designs` also turned out
+to be alphabetical coincidence, though Tornado's actual QiYi/X-Man attribution independently holds
+up on direct product-naming evidence). Collection-tag co-location in an alphabetised list should
+not be treated as relationship evidence going forward without checking the sort order first.
+
+**Smart-cube blind spot substantially closed.** Two manufacturers added:
+
+- **GiiKER** (`data/manufacturers/giiker.yml`) — Chinese smart-cube pioneer, founded 2012 per its
+  own site, GiCUBE (2014) then SUPERCUBE (2018, "the world's first smart connected cube" per its
+  own claim — a superlative, recorded as copy not fact). Sold under a "Xiaomi Giiker" name at some
+  retailers, reflecting distribution through Xiaomi's ecosystem/crowdfunding platform rather than
+  manufacture by Xiaomi; no separate Xiaomi manufacturer record created for that reason.
+- **Particula** (`data/manufacturers/particula.yml`) — Israeli, GoCube is its own brand, and it is
+  also **the manufacturing/production partner behind "Rubik's Connected"**, per its own funding-
+  round press coverage ("will start production of... Rubiks Connected, in partnership with
+  Rubiks"). This directly and usefully answers, for one specific Rubik's product line, the
+  manufacturing-identity question `rubiks.yml` otherwise leaves `unknown` — cross-referenced in
+  both records. Founding year disputed (2017 per Particula's own site vs. 2018/Netanya per press).
+
+Not yet checked: whether GAN's own smart-cube line (referenced only in passing in
+`thecubicle.yml`'s existing notes, "GAN ROBOT"/Bluetooth timer) needs its own smart-product
+identity work — deferred, since GAN is already canonicalised as a manufacturer and any smart
+sub-line is pass 2's concern (family/model), not a new pass-1 identity.

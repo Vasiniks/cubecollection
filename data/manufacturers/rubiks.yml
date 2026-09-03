@@ -32,9 +32,17 @@ notes: |-
   manufactures the cubes. Rubik's, like most toy brands, licenses production out; **the entity
   or entities that actually manufacture Rubik's-branded cubes during this period were not
   established by any source reviewed this pass and are recorded as `unknown`** rather than
-  assumed. This matters for this archive specifically because a Rubik's-branded cube's
-  manufacturing identity may differ from its brand identity, and conflating the two would
-  misattribute the product.
+  assumed, with one scoped exception below. This matters for this archive specifically because
+  a Rubik's-branded cube's manufacturing identity may differ from its brand identity, and
+  conflating the two would misattribute the product.
+
+  **Exception, scoped: "Rubik's Connected" (smart cube).** See data/manufacturers/particula.yml.
+  Particula (Netanya, Israel) states in press coverage of its own funding round that it
+  "will start production of... Rubiks Connected (in partnership with Rubiks)"
+  (tech-eu-particula-series-a-2021, tier 2) and lists "Rubik's Connected" among its own current
+  products (particula-about-us-2024). This answers the manufacturing-entity question for the
+  smart/electronic Rubik's 3x3 line specifically — it does **not** establish who manufactures
+  Rubik's non-smart mechanical speedcubes or the classic 3x3, which remain `unknown` here.
 
   **Corporate history, three distinct events.** Rubik's own 50th-anniversary history page
   (rubiks-history-2024, tier 1, first-party) lays out a timeline in its own words: Ernő Rubik, a
@@ -114,4 +122,5 @@ attestations:
   /notes:
     confidence: probable
     sources: [rubiks-history-2024, rubiks-com-2022, companies-house-rubiks-brand-ltd,
-      spinmaster-rubiks-acquisition-2021, licenseglobal-spinmaster-rubiks]
+      spinmaster-rubiks-acquisition-2021, licenseglobal-spinmaster-rubiks,
+      tech-eu-particula-series-a-2021, particula-about-us-2024]

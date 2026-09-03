@@ -1,0 +1,85 @@
+# manufacturer: giiker
+# Pass 1 (manufacturer register). A smart/electronic 3x3 manufacturer — the named blind spot
+# flagged in the global pass-0 brief. Smart 3x3s are explicitly in scope per PRODUCT.md §2.1.
+
+id: giiker
+entity: manufacturer
+name: "GiiKER"
+native_name: "计客"
+kind: manufacturer
+country: CN
+founded:
+  value: "2012"
+  precision: year
+  qualifier: exact
+aliases:
+  - "Giiker"
+  - "GiiKER计客"
+  - "Xiaomi Giiker"
+  - "Xiaomi Giiker Cube"
+  - "Xiaomi Mijia Giiker Super Smart Cube"
+  - "Fs Giiker Technology Co., Ltd."
+website: "https://giiker.com/"
+notes: |-
+  **Identity and founding.** GiiKER's own "About Us" page states "GiiKER (derived from
+  'Geeker') is a technology company with a dedication to the development of smart and
+  connected edutainment products," and gives its own founding timeline: "2012 GiiKER team
+  founded," "2014 GiCUBE(R) released," "2018 ... SUPERCUBE(R) i3 released - The world's 1st
+  smart cube," and by 2019 self-describes as "A global leader in developing and manufacturing
+  smart cubes" (giiker-about-us-2022) — tier 1, first-party. The page's own title and copyright
+  render the Chinese name "计客" alongside "GiiKER"; no source located this pass states whether
+  "计客" is used as a standalone brand name or only alongside the English form, so `native_name`
+  is recorded as probable rather than confirmed.
+
+  **Country.** GiiKER's own site is a bilingual (English/Chinese) Shopify storefront; a trade-
+  shipment aggregator profile gives a Guangdong, China address for "Fs Giiker Technology Co.,
+  Ltd." (giiker-importgenius-address) — tier 4, corroboration only, not independently verified
+  against a company-registration record. No tier 1-2 source states GiiKER's registered country
+  outright, so `country: CN` is recorded at `probable` rather than `confirmed`.
+
+  **In-scope product.** GiiKER's SUPERCUBE line and its predecessor GiCUBE are smart/electronic
+  3x3s with Bluetooth connectivity and companion apps — squarely in PRODUCT.md's in-scope smart
+  3x3 category. Family/model enumeration (GiCUBE, SUPERCUBE i3, and any successors) is pass 2's
+  work, not this register's.
+
+  **"Xiaomi Giiker" is a distribution/ecosystem relationship, not a separate manufacturer.**
+  Retailers (e.g. TheCubicle's "Xiaomi Giiker Cube" listing, per general web search of the
+  product title, not independently captured this pass) sell GiiKER's smart cube under a
+  "Xiaomi"-prefixed name, reflecting sale through Xiaomi's crowdfunding/ecosystem platform
+  (Xiaomi Youpin) rather than manufacture by Xiaomi itself — the same distinction the archive
+  draws elsewhere between a brand and its manufacturing/distribution partner (see
+  data/manufacturers/rubiks.yml for the analogous Rubik's/Particula relationship). No separate
+  "Xiaomi" manufacturer record is created: Xiaomi is not, on the evidence found this pass, the
+  producer of this cube, and creating a record for a company that does not itself put 3x3s into
+  the world (beyond funding/distributing others') would misattribute the product. "Xiaomi
+  Giiker" and related retailer naming are recorded as aliases here instead, so a future
+  researcher who encounters the name resolves it to this record rather than inventing a
+  phantom "Xiaomi" cube manufacturer.
+status: sourced
+
+attestations:
+  /kind:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+    note: "Tier 1, first-party. GiiKER's own site describes itself as developing and
+      manufacturing smart cube products; sufficient alone per the confidence table."
+  /native_name:
+    confidence: probable
+    sources: [giiker-about-us-2022]
+  /country:
+    confidence: probable
+    sources: [giiker-about-us-2022, giiker-importgenius-address]
+    note: "No tier 1-2 source states the registered country outright; inferred from the
+      bilingual Chinese-language site content and corroborated by a tier 4 trade-data address."
+  /founded:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+  /aliases:
+    confidence: probable
+    sources: [giiker-about-us-2022, giiker-importgenius-address]
+  /website:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+  /notes:
+    confidence: probable
+    sources: [giiker-about-us-2022, giiker-importgenius-address]

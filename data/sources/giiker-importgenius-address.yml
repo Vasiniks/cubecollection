@@ -1,0 +1,24 @@
+# source: giiker-importgenius-address
+# A trade-shipment data aggregator's supplier profile for "Fs Giiker Technology Co.,Ltd.",
+# giving a Guangdong, China registered address. Tier 4, corroboration only — not sufficient
+# alone to confirm /country, but consistent with GiiKER's own Chinese-language site content.
+id: giiker-importgenius-address
+entity: source
+kind: marketplace
+title: "Fs Giiker Technology Co.,Ltd. | See Recent Shipments"
+publisher: "ImportGenius"
+url: "https://www.importgenius.com/suppliers/fs-giiker-technology-co-ltd"
+preservation_method: excerpt
+excerpt: |-
+  "Fs Giiker Technology Co., Ltd. ... Room 2, 1st Floor, Building T, No.1 Sanle North Road,
+  Sanhongqi Committee, Beijiao Town, Shunde District, Foshan 528311, Guangdong, China."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4 trade-data aggregator profile, not independently verified against a
+  primary company-registration record. Used only to corroborate country (China), not as a
+  standalone confirmation of any critical field — giiker-about-us-2022 (tier 1) carries the
+  identity claim itself."
+status: sourced

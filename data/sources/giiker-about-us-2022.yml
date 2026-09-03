@@ -1,0 +1,33 @@
+# source: giiker-about-us-2022
+# GiiKER's own "About Us" page (giiker.com), archived 2022-10-02. Tier 1, first-party,
+# including the company's own founding timeline.
+id: giiker-about-us-2022
+entity: source
+kind: manufacturer_official
+title: "About Us – GiiKER 计客"
+publisher: "GiiKER"
+url: "https://giiker.com/pages/about-us"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221002171450id_/https://giiker.com/pages/about-us"
+excerpt: |-
+  "GiiKER (derived from 'Geeker') is a technology company with a dedication to the development
+  of smart and connected edutainment products... In 2018, we launched the world's first smart
+  connected cube - SUPERCUBE(R)... Time Line: 2012 GiiKER team founded / 2014 GiCUBE(R)
+  released and birth of the idea of smart cube later on / 2015 First Smart Core prototype came
+  out, which can track each center's rotations / 2016 Smart cube product design, first molding
+  and user testing / 2017 Puzzle School app released... / 2018 January: Smart cube technology
+  and applications presented at Nuremberg toy fair; March: SUPERCUBE(R) i3 released - The
+  world's 1st smart cube / 2019 Supercube series presented at CES, New York and Nuremberg toy
+  fair. A global leader in developing and manufacturing smart cubes / 2020 More smart chess
+  products presented at Nuremberg toy fair, app downloads exceed 15 millions." Page title and
+  copyright footer both render the Chinese name "计客" alongside "GiiKER".
+accessed: "2026-09-02"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 1, first-party corporate history/timeline, the strongest evidence
+  located this pass for GiiKER's own founding date (2012, team) and its smart-cube product
+  history (GiCUBE 2014, SUPERCUBE 2018). Does not itself state a city or registered country;
+  see giiker-importgenius-address for that supplementary tier 4 detail."
+status: sourced

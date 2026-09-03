@@ -1,0 +1,32 @@
+# source: tech-eu-particula-series-a-2021
+# Trade press coverage of Particula's Series A funding round. Tier 2 (established tech/startup
+# press) — independently names Particula's city and founding year, and states the Rubik's
+# partnership behind "Rubik's Connected" directly.
+id: tech-eu-particula-series-a-2021
+entity: source
+kind: press
+title: "Israeli smart toy producer Particula closes $5 million Series A"
+publisher: "Tech.eu"
+url: "https://tech.eu/2021/02/10/particula-series-a/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220925id_/https://tech.eu/2021/02/10/particula-series-a"
+excerpt: |-
+  "Particula, an Israeli startup creating connected toys that blend the offline and online
+  worlds, has raised a $5 million Series A... With the new capital, the company will start
+  production of several new consumer tech products, such as Rubiks Connected (in partnership
+  with Rubiks), and GoDice... The connection with Rubiks goes back further. Particula's first
+  product was a smart connected Rubiks cube known as the 'GoCube.' The toy... was used in the
+  RedBull's Rubiks World Cup, a global virtual event. Founded in Netanya in 2018, the startup
+  currently has 20 team members..."
+accessed: "2026-09-02"
+language: en
+region: EU
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, established tech-industry press. Independently states the country
+  (Israel) and a city (Netanya) and founding year (2018), the latter disputed against
+  Particula's own site (2017, per particula-about-us-2024) — recorded as a genuine dispute
+  rather than adopting one silently. Also the source establishing, in the manufacturer's own
+  words, that Particula manufactures 'Rubik's Connected' in partnership with Rubik's — relevant
+  to the manufacturing-entity question left open in data/manufacturers/rubiks.yml."
+status: sourced
