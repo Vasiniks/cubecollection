@@ -1,0 +1,69 @@
+# model: dayan-zhanchi-v5-m
+# Pass 3 (model enumeration). TheCubicle's own copy: "The ZhanChi V5 M 3x3 is a new flagship
+# 3x3 from DaYan. This cube has everything you would ever want in a customizable 3x3. It has
+# adjustable tension, compression, and magnet strength" -- explicitly "a new flagship," a
+# further generation after Pro M, sold in Standard/Premium/Fancy configurations from one
+# listing (variant-level, not three models). See research/notes/models/dayan-pass3.md.
+id: dayan-zhanchi-v5-m
+entity: model
+family_id: dayan-zhanchi
+manufacturer_id: dayan
+name: "DaYan ZhanChi V5 M"
+aliases:
+  - "DaYan ZhanChi Pro V5"
+scope_class: core
+generation:
+  label: "V5 M"
+  ordinal: 5
+  basis: community_convention
+description: |-
+  TheCubicle's own copy: "The ZhanChi V5 M 3x3 is a new flagship 3x3 from DaYan. This cube has
+  everything you would ever want in a customizable 3x3. It has adjustable tension, compression,
+  and magnet strength. It comes in three different versions with varying degrees of magnetic
+  attraction and repulsion. This is the Standard version with white internals, conical spring
+  tensioning system, and edge/corner - corner/core magnetization"
+  (thecubicle-dayan-zhanchi-descriptions) — confirming Standard/Premium/Fancy are
+  variant-level configurations of one product listing, not separate models. SpeedCubeShop
+  independently sells the same generation under a slightly different retailer name, "ZhanChi
+  Pro V5" (dayan-zhanchi-pro-v5-3x3-{magnetic-ball-core, premium-magnetic-maglev-ball-core,
+  fancy-magnetic-maglev-ball-core}), recorded here as an alias rather than a separate model,
+  since both retailers describe the same tension/compression/magnet-strength customization set
+  for what is otherwise the same successor-to-Pro-M generation. No manufacturer-first-party or
+  dated-press statement of a release date was found; TheCubicle's earliest capture of this
+  specific product family is 2025-04 per thecubicle-dayan-collection-2025, a retailer-listing
+  floor, not a launch date.
+status: drafted
+attestations:
+  /announced:
+    confidence: unknown
+    note: "No dated statement was found for this generation's release; only retailer-listing
+      floors (earliest 2025-04, thecubicle-dayan-collection-2025) exist, and per the S6 policy
+      a crawl/listing floor is not recorded as a date value at all rather than mislabeled as
+      announced/released with a qualifier that implies more precision than is honest here."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-dayan-collection-2025, thecubicle-dayan-zhanchi-descriptions]
+    note: "Neither retailer states a numbered ordinal explicitly beyond the product name's own
+      'V5'; 5 is this archive's own sequential count following V1/2017/2018/Pro M."
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions, thecubicle-dayan-collection-2025]
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-dayan-collection-2025]
+    note: "'ZhanChi Pro V5' is inferred to be the same generation as 'ZhanChi V5 M' from
+      matching feature descriptions (tension/compression/magnet-strength customization,
+      Standard-vs-Premium-vs-Fancy-equivalent tiering) across the two retailers' product
+      pages, not from an explicit manufacturer statement that the two names refer to the same
+      SKU. Flagged as a soft identification, not a confirmed one."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-dayan-zhanchi-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-zhanchi-pro-m
+    target_entity: model
+    note: "TheCubicle calls it 'a new flagship 3x3 from DaYan' with a fuller adjustment system
+      than Pro M's fixed magnet/tension/elasticity combination; no explicit 'successor to Pro
+      M' sentence was found, so this relationship rests on ordinal naming and feature
+      progression rather than a direct manufacturer statement."

@@ -1,0 +1,34 @@
+# source: speedcubeshop-dayan-zhanchi-size-diy-kits
+# Pass 3 (model enumeration). SpeedCubeShop's own 2015 listings for two reduced-size ZhanChi
+# DIY kits, sold as their own distinct product pages (not a size selector on the standard
+# ZhanChi listing) — structural evidence toward treating 42mm and 50mm as separate models
+# rather than variant-level size configuration of the standard ZhanChi.
+id: speedcubeshop-dayan-zhanchi-size-diy-kits
+entity: source
+kind: retailer
+title: "DaYan ZhanChi 42mm and 50mm 3x3x3 DIY Kits — SpeedCubeShop (2015)"
+publisher: "SpeedCubeShop"
+url: "http://www.speedcubeshop.com/products/dayan-zhanchi-42mm-3x3x3-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20151113224753id_/http://www.speedcubeshop.com:80/products/dayan-zhanchi-42mm-3x3x3-diy-kit"
+excerpt: |-
+  "DaYan ZhanChi 42mm 3x3x3 DIY Kit". "The 42mm DaYan ZhanChi is the best performing miniature
+  cube on the market. You really do not lose any performance by dropping down to a 42mm cube,
+  some cubers prefer to use this for a one-handed cube or even as a two-handed cube." (captured
+  2015-11-13, https://web.archive.org/web/20151113224753id_/http://www.speedcubeshop.com:80/products/dayan-zhanchi-42mm-3x3x3-diy-kit)
+
+  A second, separate product page, "DaYan ZhanChi 50mm 3x3x3 DIY Kit" (captured 2015-12-01,
+  https://web.archive.org/web/20151201012341id_/http://speedcubeshop.com:80/products/dayan-zhanchi-50mm-3x3x3-diy-kit),
+  carries only the title and no further descriptive copy in the capture reviewed.
+preservation_note: "Two separate `npm run wayback -- get` fetches, condensed into one source
+  record. Each is its own retailer product page/URL, distinct from the standard-size ZhanChi
+  listing, rather than a size option chosen from within one listing."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2 by default kind (retailer), though the 50mm listing is thin (title
+  only, no descriptive spec text found in the capture reviewed) — recorded confidence for the
+  50mm model is downgraded accordingly (see dayan-zhanchi-50mm.yml)."
+status: sourced

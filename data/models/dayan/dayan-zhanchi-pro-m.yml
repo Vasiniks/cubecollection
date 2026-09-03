@@ -1,0 +1,66 @@
+# model: dayan-zhanchi-pro-m
+# Pass 3 (model enumeration). Two independent tier-2 retailers (TheCubicle, SpeedCubeShop)
+# corroborate this generation, including a rare structured "Released 04/23/21" field at
+# SpeedCubeShop closely matching the wiki's independently-worded "late April 2021" claim --
+# the single best-dated DaYan model in this pass. Adds a magnet/tension/elasticity system
+# borrowed from TengYun V2, a mechanism change under DATA_MODEL §4.2. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-zhanchi-pro-m
+entity: model
+family_id: dayan-zhanchi
+manufacturer_id: dayan
+name: "DaYan ZhanChi Pro M"
+scope_class: core
+generation:
+  label: "Pro M"
+  ordinal: 4
+  basis: community_convention
+announced:
+  value: "2021-04"
+  precision: month
+  qualifier: circa
+specs:
+  weight_g: 77
+description: |-
+  TheCubicle's own copy: "The DaYan ZhanChi Pro M is the newest iteration of the legendary
+  ZhanChi, a cube that dominated the cubing scene nearly a decade ago. This new version of the
+  ZhanChi is lightweight, and has adjustable magnets, elasticities, and tensions"
+  (thecubicle-dayan-zhanchi-descriptions). SpeedCubeShop's own copy independently corroborates
+  and adds detail: "The ZhanChi Pro M 3x3 is the most feature-packed ZhanChi yet! Aside from
+  mechanism updates to improve turning and stability, the ZhanChi Pro also borrows the magnet,
+  tension, and elasticity ... system from the TengYun V2" and carries a structured "Released
+  04/23/21" field plus a "77g" weight field (speedcubeshop-dayan-zhanchi-pro-m). Borrowing an
+  entire adjustment/magnet system from another family's design is a mechanism change under
+  DATA_MODEL §4.2, not a sold configuration of the prior ZhanChi 2018 shell.
+status: drafted
+attestations:
+  /announced:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-pro-m]
+    note: "SpeedCubeShop's own structured 'Released 04/23/21' field is a retailer-asserted
+      date, not a Wayback crawl timestamp or a Shopify 'Added:' catalogue artifact — the
+      strongest single date statement found for any DaYan model this pass. The independently
+      worded Speedsolving wiki claim ('late April 2021') corroborates without being the same
+      source twice, but the wiki alone is tier 3, so this is recorded as one qualifying tier-2
+      statement (`probable`) rather than promoted to `confirmed`."
+  /specs/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-pro-m]
+    note: "Retailer's own structured '77g' weight field; the wiki's later, unsourced '77 grams'
+      claim is consistent but not itself used to establish the figure (a wiki may never
+      establish a specification)."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products, speedcubeshop-dayan-zhanchi-pro-m]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions, speedcubeshop-dayan-zhanchi-pro-m]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-zhanchi-2018
+    target_entity: model
+    note: "TheCubicle calls it 'the newest iteration of the legendary ZhanChi'; the wiki's own
+      numbered succession places it directly after ZhanChi 2018."
