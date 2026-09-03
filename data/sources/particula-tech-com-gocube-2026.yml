@@ -1,0 +1,34 @@
+# source: particula-tech-com-gocube-2026
+# Particula's own current product page for GoCube (particula-tech.com), captured via Wayback.
+# Tier 1, first-party. Shows the line's current (2026) naming and price, and its continued
+# nav-level grouping alongside Rubik's Connected.
+id: particula-tech-com-gocube-2026
+entity: source
+kind: manufacturer_official
+title: "Smart Rubik's Cube: 3x3 GoCube Edge Full Pack | Particula"
+publisher: "Particula"
+url: "https://particula-tech.com/products/gocube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260826073553id_/https://particula-tech.com/products/gocube"
+excerpt: |-
+  Page title: "Smart Rubik's Cube: 3x3 GoCube Edge Full Pack | Particula". Site navigation
+  under "GoCube": "All Cubes / GoCube Edge Full Pack / GoCube 2x2 / Rubik's Connected / GoCube
+  Bundle Pack / Rubik's Connected BOGO DEAL / GoCube Accessories". Product body: "GoCube Edge
+  Full Pack $79.95 ... Smart & Interactive Cube: A digital twist on the classic Rubik's Cube.
+  Real-Time Feedback: Instant tracking of your moves and performance. Companion App:
+  Step-by-step tutorials, global challenges & games... Portable & Rechargeable: Long battery
+  life for on-the-go use."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party. Confirms the 'GoCube Edge' name and product line
+  persisted, still as the flagship 3x3 SKU, through this 2026-08-26 capture — over six years
+  after getgocube-com-2019-basic-edge-skus first attests it on sale. The site's own nav also
+  files 'Rubik's Connected' under the same 'GoCube' shop category as a commercial grouping;
+  this is not treated as evidence that Rubik's Connected belongs to the GoCube *family* as
+  defined by this archive (it is a separately-branded product under the Rubik's brand, per
+  data/families/rubiks-connected.yml, created independently of this session) — recorded here
+  only as a merchandising fact about Particula's own storefront, not a family-boundary claim."
+status: sourced

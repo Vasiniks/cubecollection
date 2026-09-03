@@ -1,0 +1,33 @@
+# source: getgocube-com-2019-basic-edge-skus
+# GoCube's own official product site at getgocube.com (Particula's original direct-to-consumer
+# domain for this product, distinct from the unrelated gocube.com, which belongs to an
+# unconnected Quebec storage/moving company — checked and ruled out this pass, see this
+# source's own reliability_note). Tier 1, first-party. Shows two concurrently-sold 3x3 SKUs.
+id: getgocube-com-2019-basic-edge-skus
+entity: source
+kind: manufacturer_official
+title: "Home Page - GoCube (getgocube.com)"
+publisher: "GoCube / Particula"
+url: "https://getgocube.com/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191216084535id_/https://getgocube.com/"
+excerpt: |-
+  "GoCube is a smart Rubik's cube that connects to your phone/tablet and tracks your moves in
+  real time. Finally, everyone CAN do the cube!... Top 20 Most Funded Gadgets Project." Product
+  listing: "cube GoCube Basic $79.95 $69.95 Add to cart / cube GoCube Edge Full Pack $99.95
+  $79.95 Add to cart / cube GoCube Edge Fam Pack $199.90 $149.95 Add to cart."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party. Confirms two named, concurrently-sold 3x3 models under
+  the persisting 'GoCube' name as of December 2019: 'GoCube Basic' and 'GoCube Edge' (sold as
+  'Full Pack' and 'Fam Pack' bundle tiers). IMPORTANT DOMAIN NOTE: `gocube.com` (without
+  'get') was checked this pass and found to belong to an entirely unrelated Quebec moving/
+  storage-container rental company ('Go Cube', copyright-dated 2015 on its own 404 page) at
+  every capture examined from 2018 through at least 2024 — a genuine domain-name collision, not
+  a rebrand or the same company. Do not treat any `gocube.com` capture as evidence about this
+  product; `getgocube.com` is the correct historical domain for Particula's GoCube during this
+  period, later consolidated into `particula-tech.com`."
+status: sourced

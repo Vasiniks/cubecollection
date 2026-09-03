@@ -1,0 +1,96 @@
+# family: particula-gocube
+# Pass 2 (family enumeration). Particula's own smart/electronic 3x3 line, sold under the
+# "GoCube" name across at least three named models found this pass (Basic, Edge, X) since at
+# least December 2019. The Rubik's-branded smart cube Particula manufactures separately
+# ("Rubik's Connected") is a distinct family under the Rubik's manufacturer record
+# (data/families/rubiks-connected.yml, created independently of this session, not restated
+# here per this session's own task brief) — GoCube is Particula's own independently-branded
+# product, and the two are never merged despite sharing a manufacturer and, per Particula's
+# own current site navigation, a shop-category grouping.
+
+id: particula-gocube
+entity: family
+manufacturer_id: particula
+name: "GoCube"
+aliases:
+  - "GoCube Basic"
+  - "GoCube Edge"
+  - "GoCube-X"
+  - "GoCube X"
+introduced:
+  value: "2019"
+  precision: year
+  qualifier: before
+  note: "The earliest content this pass could retrieve (getgocube.com's own site, first useful
+    capture 2019-07-19/2019-09-16) already shows an established product with two SKUs on sale
+    by December 2019 ('GoCube Basic' and 'GoCube Edge Full Pack'), Kickstarter-crowdfunding
+    references ('Top 20 Most Funded Gadgets Project'), and Particula's own about-us page
+    stating the company was founded in 2017 (disputed against a 2018 press date — see
+    data/manufacturers/particula.yml) with 'three Kickstarter campaigns successfully
+    delivered.' No source found this pass states GoCube's exact launch date or year directly,
+    so `qualifier: before` records only that the product existed by mid-2019, not that 2019 is
+    itself the launch year."
+positioning: smart
+description: |-
+  Particula's own smart/electronic 3x3 line. Particula's own site (getgocube-com-about-2019,
+  tier 1) states directly: "GoCube is a product of tireless engineering and tweaking by
+  Particula" — corroborating the manufacturer relationship already recorded in
+  data/manufacturers/particula.yml with a product-specific first-party source.
+
+  **At least two 3x3 models sold concurrently by December 2019**, per GoCube's own site
+  (getgocube-com-2019-basic-edge-skus, tier 1): "GoCube Basic" ($69.95 sale price) and "GoCube
+  Edge Full Pack" ($79.95 sale price, with a "GoCube Edge Fam Pack" bundle at $149.90). TheCubicle's
+  own later product copy for the Edge (thecubicle-gocube-edge-3x3-2020, tier 2) independently
+  describes it as "a magnetic 3x3 equipped with Bluetooth 5.0... a novel pillowed design" and
+  frames it (marketing language, not treated as a specification fact) as "one of the first smart
+  cubes ever released."
+
+  **A third named model, "GoCube-X," found by late 2021.** TheCubicle's own product copy
+  (thecubicle-gocube-x-3x3-2022, tier 2) describes it directly: "The GoCube-X 3x3 is a new, less
+  expensive smart cube from the famous brand. This one is non-magnetic, but still has all of the
+  tracking of the original GoCube!" — a stated, deliberate budget sibling within the same
+  persisting GoCube name, added to TheCubicle's catalogue 2021-11-22.
+
+  **The current (2026) flagship SKU is marketed as "GoCube Edge Full Pack"** at $79.95,
+  per a 2026-08-26 capture of Particula's own current product page
+  (particula-tech-com-gocube-2026, tier 1) — the "Edge" name has persisted essentially
+  unchanged in Particula's own marketing across at least seven years (2019-2026) of captures
+  found this pass.
+
+  Whether "GoCube Basic" (2019) and "GoCube-X" (2021) are the same design under two names, two
+  genuinely different budget-tier designs, or a single lineage where Basic was retired and
+  replaced by X, is left entirely to pass 3 — this family record establishes only that "GoCube"
+  is a real, persisting, manufacturer-first-party product name spanning multiple named models,
+  not a claim about tooling or succession between them.
+
+  **A domain-name hazard, flagged for any future researcher.** `gocube.com` (without "get") is
+  an entirely unrelated Quebec moving/storage-container-rental company at every capture checked
+  this pass (2018 through 2024) — a genuine coincidental collision, not a rebrand or predecessor
+  site. Particula's actual historical domain for this product is `getgocube.com`
+  (2019-2022-era), later consolidated into the umbrella `particula-tech.com` storefront. See
+  getgocube-com-2019-basic-edge-skus's own reliability_note for the full check.
+
+  **GoCube 2x2 excluded** — out of this archive's 3x3x3 scope by puzzle category, found
+  alongside the 3x3 models at every retailer checked (TheCubicle, SpeedCubeShop, Particula's own
+  site).
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [getgocube-com-2019-basic-edge-skus, particula-about-us-2024]
+    note: "No source states an exact launch year; recorded as an upper-bound `before 2019` per
+      the earliest useful capture found. A future pass with access to a Kickstarter-campaign
+      archive or press coverage of GoCube's original launch could tighten this considerably."
+  /positioning:
+    confidence: confirmed
+    sources: [getgocube-com-2019-basic-edge-skus, getgocube-com-about-2019]
+    note: "GoCube's own first-party site directly self-describes the product as 'a smart
+      Rubik's cube that connects to your phone/tablet' — a first-party statement of exactly the
+      vocab's own `smart` category."
+  /aliases:
+    confidence: confirmed
+    sources: [getgocube-com-2019-basic-edge-skus, thecubicle-gocube-edge-3x3-2020, thecubicle-gocube-x-3x3-2022, particula-tech-com-gocube-2026]
+  /description:
+    confidence: probable
+    sources: [getgocube-com-2019-basic-edge-skus, getgocube-com-about-2019, thecubicle-gocube-edge-3x3-2020, thecubicle-gocube-x-3x3-2022, particula-tech-com-gocube-2026]

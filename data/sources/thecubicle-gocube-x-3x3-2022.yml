@@ -1,0 +1,28 @@
+# source: thecubicle-gocube-x-3x3-2022
+# TheCubicle's own product page for the GoCube-X 3x3, captured via Wayback. Tier 2,
+# first-party retailer copy describing it as a cheaper, non-magnetic sibling of the original
+# GoCube.
+id: thecubicle-gocube-x-3x3-2022
+entity: source
+kind: retailer
+title: "GoCube-X 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gocube-x-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220518025147id_/https://www.thecubicle.com/products/gocube-x-3x3"
+excerpt: |-
+  "The GoCube-X 3x3 is a new, less expensive smart cube from the famous brand. This one is
+  non-magnetic, but still has all of the tracking of the original GoCube!" Product
+  Specifications: "Manufacturer: GoCube / Type: 3x3 / Added: 2021-11-22 / Gross Weight: 134g /
+  Dimensions: 57.0mm 3 / Item Weight: 103.0g" (no 'Magnets' row present, consistent with the
+  description's 'non-magnetic' claim).
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. 'from the famous brand' and 'the original GoCube' are the
+  key phrases establishing GoCube-X as a deliberate budget sibling within the same persisting
+  GoCube family, not an unrelated product. 'Added: 2021-11-22' is TheCubicle's own catalogue
+  date."
+status: sourced

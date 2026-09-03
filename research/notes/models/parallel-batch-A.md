@@ -108,3 +108,79 @@ below). Reused without modification: `giiker-about-us-2022`, `giiker-importgeniu
 `thecubicle-giiker-m3-3x3-2020`.
 
 ---
+
+## Particula — 1 family
+
+**Task framing.** "Determine whether its smart-cube products form coherent named 3x3 family
+lineages. Note a prior run found evidence Particula manufactured the Rubik's smart line — that
+relationship already exists; do not restate it as a new finding." Confirmed:
+`data/families/rubiks-connected.yml` already exists (created by a different session working
+the Rubik's queue) and already cites the Particula manufacturing relationship correctly. Not
+touched, not duplicated, not re-attested here.
+
+**Families accepted (1):** `particula-gocube` — Particula's own independently-branded smart 3x3
+line, distinct from the Rubik's-branded line it separately manufactures.
+
+**Discovery, and a genuine domain-collision hazard caught before it did damage.** Initial
+exploration of `gocube.com` (without "get") looked promising — the domain has Wayback captures
+stretching back to 2007 — but fetching actual page content revealed it is, at every capture
+examined from 2018 through 2024, an entirely unrelated Quebec moving/storage-container-rental
+company also called "Go Cube" (its own 404 page reads "© GoCube 2015"). This is a coincidental
+name collision, not a rebrand, predecessor, or shared-ownership situation. **No fact in this
+family record is sourced from `gocube.com`.** The correct historical domain, found by checking
+`particula-about-us-2024`'s own product-portfolio wording for a matching brand-specific URL
+pattern, is `getgocube.com` (used roughly 2019-2022, later folded into the umbrella
+`particula-tech.com` storefront visible today). Flagging this prominently in the family
+record's own description because it is exactly the kind of trap a future researcher working
+faster than this pass did could fall into.
+
+**What `getgocube.com`'s own December 2019 homepage shows, directly (tier 1):** two
+concurrently-sold 3x3 SKUs, "GoCube Basic" ($69.95) and "GoCube Edge Full Pack" ($79.95, plus a
+"GoCube Edge Fam Pack" bundle). A third model, "GoCube-X," appears at TheCubicle by November
+2021, described in the retailer's own copy as "a new, less expensive smart cube from the famous
+brand... non-magnetic, but still has all of the tracking of the original GoCube" — a stated
+deliberate budget sibling, not an unrelated product. The current (2026) flagship SKU is still
+marketed as "GoCube Edge Full Pack" per a live capture of Particula's own site, meaning the
+"Edge" name alone has persisted essentially unchanged for at least seven years across every
+capture checked.
+
+**Boundary reasoning — one family, not three, and not zero.** All three models (Basic, Edge,
+X) share the same manufacturer-first-party name ("GoCube") and functional description (app-
+connected, real-time move tracking) across every source found; nothing found treats any of them
+as belonging to a different lineage or as an independent product with its own separate identity.
+This is the same "persisting shared name across a numbered/tiered range" reasoning used
+elsewhere in this project's pass 2 work (e.g. moyu-weilong's persisting "WeiLong" name across
+GTS/GTS2/GTS3/WR generations) — a positive family case, not a default. Whether Basic-vs-Edge or
+Edge-vs-X represent genuinely different tooling/mechanisms, or configuration differences at the
+same design (magnetic vs. non-magnetic, e.g.), is explicitly deferred to pass 3 per DATA_MODEL
+§4.2 — this pass only establishes that they are one named family.
+
+**Not created as a separate finding: Rubik's Connected under Particula.** Already exists at
+`rubiks-connected.yml`, manufacturer `rubiks`, per the standing instruction. This session's own
+new source `particula-tech-com-gocube-2026` incidentally shows Particula's own storefront filing
+"Rubik's Connected" under the same "GoCube" shop-navigation category commercially — recorded in
+that source's own reliability_note as a merchandising fact only, explicitly not treated as
+family-boundary evidence, since `rubiks-connected` is a separately-branded product under a
+different manufacturer's brand identity (Rubik's), not a GoCube-branded product.
+
+**GoCube 2x2 excluded** — out of this archive's 3x3x3 scope by category, found alongside every
+3x3 model at every retailer/manufacturer source checked.
+
+**Unresolved for pass 3:**
+- GoCube's exact original launch year — no source found this pass states it directly; recorded
+  at `introduced: before 2019` rather than guessed. A Kickstarter-campaign-page archive or press
+  coverage of the original launch, not chased this pass (WebSearch budget exhausted), would
+  likely resolve this quickly for a future session.
+- Whether "GoCube Basic" and "GoCube-X" are the same design under two names or two separate
+  budget-tier designs.
+- Full current (2026) GoCube model range beyond what the "All Cubes" nav bare listing shows
+  (Edge Full Pack, 2x2, Bundle Pack) — not enumerated further since model/variant enumeration is
+  out of this pass's scope.
+
+**Sources created this session (Particula):** `getgocube-com-2019-basic-edge-skus`,
+`getgocube-com-about-2019`, `thecubicle-gocube-edge-3x3-2020`, `thecubicle-gocube-x-3x3-2022`,
+`particula-tech-com-gocube-2026`. Reused without modification: `particula-about-us-2024`,
+`tech-eu-particula-series-a-2021` (both already existed on the manufacturer record; not
+re-attested at the family level beyond a cross-reference).
+
+---
