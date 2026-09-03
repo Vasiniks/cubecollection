@@ -1,0 +1,41 @@
+# family: escube-es3
+# Pass 2 (family enumeration). ESCube's debut 3x3 line, explicitly stated by a retailer to be
+# "the debut release for the new brand, ES Cube!" — the earlier of ESCube's two found 3x3
+# lines (this pass's other, `escube-air`, is described as "the latest release from ESCube" on
+# a capture roughly five months later).
+
+id: escube-es3
+entity: family
+manufacturer_id: escube
+name: "ESCube ES3"
+aliases: []
+introduced:
+  value: "2025"
+  precision: year
+  qualifier: circa
+positioning: budget
+description: |-
+  SpeedCubeShop's own product description: "ES3 3x3 (Magnetic) is the debut release for the
+  new brand, ES Cube! This speed cube focuses on easy-to-use adjustments and a simple yet
+  effective design." (speedcubeshop-es3-debut-brand-2025, archived 2025-06-17). Sold in at
+  least three configurations found this pass — a standard magnetic version, an "8-Magnet
+  Ball-Core" version, and a "20-Magnet Ball-Core UV-Coated" version — pass-3/4 material, not
+  enumerated further here.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "SpeedCubeShop's own capture is dated 2025-06-17 and calls this the brand's 'debut
+      release', giving a `circa 2025` introduction. No first-party ESCube announcement with an
+      exact date was found."
+  /positioning:
+    confidence: reported
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "No source calls this line 'flagship'; ESCube's other found line (`escube-air`) is
+      explicitly described by TheCubicle as 'core-magnetic speedcubing on a budget', and this
+      is ESCube's cheaper/entry line by the same general positioning, hence `budget`."
+  /description:
+    confidence: reported
+    sources: [speedcubeshop-es3-debut-brand-2025]

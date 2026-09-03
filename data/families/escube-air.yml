@@ -1,0 +1,43 @@
+# family: escube-air
+# Pass 2 (family enumeration). ESCube's second found 3x3 line, later than `escube-es3` (Added
+# 2025-11-13 per TheCubicle's own spec table, versus ES3's June-2025-dated debut description).
+
+id: escube-air
+entity: family
+manufacturer_id: escube
+name: "ESCube Air"
+aliases: []
+introduced:
+  value: "2025-11"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  TheCubicle's own product description (thecubicle-escube-air-3x3-20-magnet-ball-core):
+  "ESCube Air 3x3 is a new core-magnetic speedcubing on a budget. This latest release from
+  ESCube features a fully magnetic ball-core design, providing enhanced stability and turning
+  control for speedcubers of every skill level. Fine-tune your solving experience with the
+  innovative numerical tension adjustment system... This is the 20 magnet version, meaning
+  that the corners attract to the core in the aligned state and repel it around the 45 degree
+  mark. Please note that, unlike other cubes with 20 magnet cores, this one does not have edge
+  foot magnets." Framed as ESCube's "latest release" relative to `escube-es3`, its earlier
+  debut line, but no source states Air is a direct design successor to ES3 specifically (a
+  different name, not a version-numbered continuation) — kept as its own family rather than a
+  generation of ES3.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+    note: "TheCubicle's own structured spec-table 'Added: 2025-11-13' field, read directly off
+      the same archived capture already cited by this source record (its own excerpt does not
+      quote this specific field). Not the suspect '2018-09-11' migration-artefact date flagged
+      in this batch's HuaMeng/MoJue sections — this is a distinct, plausible per-product date."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+    note: "Retailer's own description explicitly calls it 'speedcubing on a budget'."
+  /description:
+    confidence: reported
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]

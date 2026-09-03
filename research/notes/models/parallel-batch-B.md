@@ -481,3 +481,45 @@ existing confirmed relationship).
 "Type"/description statements for the products actually checked, consistent across every one.
 
 ---
+## ESCube — 2 families
+
+**Method.** Pass 1's own `data/manufacturers/escube.yml` already identified two named 3x3
+lines (Air, ES3) via product-slug enumeration and a second independent retailer
+(SpeedCubeShop) confirming ES3 as "the debut release for the new brand, ES Cube!" This pass
+confirmed the full product-slug range (`npm run wayback -- prefix
+thecubicle.com/products/escube`, 4 URLs total — a genuinely thin footprint, exactly the "do
+not manufacture families because the manufacturer exists" caution the task brief raised) and
+fetched TheCubicle's own Air page directly for its own dating.
+
+**Candidates considered:** ESCube ES3 (+ base magnetic, 8-Magnet Ball-Core, 20-Magnet
+Ball-Core UV-Coated configurations), ESCube Air (20-Magnet Ball-Core configuration found).
+
+**Accepted (2):** `escube-es3` (earlier — SpeedCubeShop's own capture, dated 2025-06-17,
+calls it "the debut release for the new brand"), `escube-air` (later — TheCubicle's own spec
+table reads "Added: 2025-11-13", and its own description calls it "This latest release from
+ESCube").
+
+**Boundary call: kept as two families, not one line/generation.** No source frames Air as a
+direct successor generation of ES3 by name (unlike, say, `senhuan-mars`/`mars-s` or
+`guoguan-yuexiao`'s Pro/EDM progression) — they are two differently-named, differently-priced
+lines sold by the same very-recently-launched manufacturer, on the same reasoning already
+applied to HuaMeng's TG/YS3M split this session.
+
+**Rejected:** none — the entire found catalogue (4 URLs) resolved cleanly into these two
+families with no undated or ambiguous leftover.
+
+**Unresolved questions:** whether ESCube has released anything since (this is an extremely
+recently-founded brand per both retailers' own framing, and this pass's captures run only to
+around November 2025); exact relationship, if any, between the Air and ES3 lines beyond
+sequential release order.
+
+**Sources added:** none new — both families cite pass-1 sources already in the archive
+(`thecubicle-escube-air-3x3-20-magnet-ball-core`, `speedcubeshop-es3-debut-brand-2025`); the
+Air family's `introduced` date was read directly off the already-preserved capture, per the
+same "cite the existing source, don't duplicate the archive_url" practice used for HuaMeng TG
+last session.
+
+**Confidence:** `reported` throughout (tier 2 retailer sources, mutually consistent, nothing
+contradicting; genuinely recent product with thin but directly-dated evidence).
+
+---
