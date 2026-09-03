@@ -1,0 +1,33 @@
+# model: qiyi-qimeng-plus
+# Pass 3 (model enumeration). An oversized (9cm) QiMeng configuration, on the same
+# reference_only basis as qiyi-warrior-plus: real and identifiable, but no documented
+# significance found this pass. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-qimeng-plus
+entity: model
+family_id: qiyi-qimeng
+manufacturer_id: qiyi
+name: "QiYi QiMeng Plus"
+scope_class: reference_only
+generation:
+  label: "QiMeng Plus"
+  basis: manufacturer_declared
+description: |-
+  Per TheCubicle's product page (thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product): "The QiYi
+  QiMeng Plus 3x3 M (9cm) is a big 3x3, but with magnets. If you have large hands and want to
+  try speedsolving a large 3x3, this is the puzzle you're looking for." At 90.0mm — roughly 1.6x
+  a standard ~55-56mm speedcube — this is treated as an oversized novelty configuration, a
+  distinct mould from qiyi-qimeng-v3 (DATA_MODEL section 4.2), but with no documented
+  competitive or historical significance found this pass to clear the RESEARCH_SPEC 2.2 bar for
+  `scope_class: conditional` (contrast qiyi-sail-big, which has documented feet-solving use).
+  Recorded as `reference_only` per DATA_MODEL section 1.4. No non-magnetic "QiMeng Plus" sibling
+  was located this pass; the "M" (magnetic) in the retailer's own naming is left as the model's
+  own configuration rather than split to a variant, since no non-magnetic Plus counterpart was
+  found to distinguish it from.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product]

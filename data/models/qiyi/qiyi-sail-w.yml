@@ -1,0 +1,50 @@
+# model: qiyi-sail-w
+# Pass 3 (model enumeration). The current (as of 2024-2025 retailer captures) Sail generation,
+# with TheCubicle's own copy naming specific design changes. No source found this pass states
+# directly that it succeeds the original Sail by name (the "W" suffix mirrors Warrior W's
+# naming pattern, a lead only); no `succeeds` relationship is asserted. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-sail-w
+entity: model
+family_id: qiyi-sail
+manufacturer_id: qiyi
+name: "QiYi Sail W"
+scope_class: core
+generation:
+  label: "Sail W"
+  basis: manufacturer_declared
+announced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 56.0
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi Sail W Released mid 2019...
+  a new budget friendly puzzle." TheCubicle's own product page
+  (thecubicle-qiyi-sail-w-3x3-product) names specific design changes directly: "a reinforced
+  mechanism to make it more sturdy and less accident prone... a rounded off center cap to reduce
+  catching." Still current as a retailer SKU as of the 2024-2025 captures used in pass 2
+  (thecubicle-qiyi-mofangge-collection-2025). `size_mm: 56.0` (vs the original Sail's 56.5mm) is
+  taken from the retailer's spec table.
+
+  No source located this pass states directly that Sail W succeeds or replaces the original
+  Sail by name; the "W" suffix mirroring Warrior W's own naming pattern is a lead, not evidence,
+  so no `succeeds` relationship is recorded here — flagged as an open question.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('mid 2019'); TheCubicle's capture carries only the 'Added:
+      2019-06-04' artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-qiyi-sail-w-3x3-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-sail-w-3x3-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-sail-w-3x3-product,
+      thecubicle-qiyi-mofangge-collection-2025]

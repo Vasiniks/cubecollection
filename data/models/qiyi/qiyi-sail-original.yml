@@ -1,0 +1,48 @@
+# model: qiyi-sail-original
+# Pass 3 (model enumeration). QiYi's original "Sail" (QiHang), corroborated at tier 2 by
+# TheCubicle's own product page. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-sail-original
+entity: model
+family_id: qiyi-sail
+manufacturer_id: qiyi
+name: "QiYi Sail"
+aliases:
+  - "QiHang"
+  - "QiYi QiHang"
+scope_class: core
+generation:
+  label: "Sail"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 56.5
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi Sail (QiHang) Released Late
+  2015. The QiYi Sail is a 3x3x3 budget cube... considered to be one of the best budget cubes on
+  the market." TheCubicle's own product page (thecubicle-qiyi-sail-3x3-product) independently
+  corroborates: "The QiYi Sail 3x3 is a new, lightweight speedcube with a very low price point."
+  `size_mm: 56.5` is taken from that retailer's spec table.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('Late 2015'); TheCubicle's capture carries only the 'Added:
+      2018-09-11' artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer ordinal was found; treated as the family's earliest identified design
+      since 'Big Sail' and 'Sail W' are both explicitly suffixed by contrast."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-sail-3x3-product]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: probable
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-sail-3x3-product]
