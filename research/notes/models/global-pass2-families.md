@@ -404,3 +404,48 @@ retailer collection prefix crawl was run for this manufacturer — the wiki's ow
 judged sufficient and consistent, and Cyclone Boys' current retail presence (per pass 1's own
 `cyclone-boys.yml`) is thin enough that a prefix crawl was unlikely to add much for the budget
 it would cost.
+
+---
+
+## LanLan — 0 families
+
+The Speedsolving wiki's own summary states LanLan was "Originally known for their standard
+cubes, they now produce many shape mods," but its dated/named product list contains no ordinary
+3x3x3 at all — only a "2x2x2 Cube," "4x4x4 Cube," "LanLan Skewb," and, under "Other puzzles," a
+"LanLan 3x3 Void cube" (a non-standard 3x3x3 mechanism, listed with no further description or
+date). No source found this pass documents a standard, WCA-format LanLan 3x3. Consistent with
+pass 1's own characterisation of this manufacturer ("known for shape-mod puzzles"). Zero
+families created — a genuine finding, not a gap: this manufacturer appears to sit almost
+entirely outside this archive's 3x3x3 scope. The Void Cube is left as an open lead (a
+`scope_class: conditional` candidate at a future model/variant pass) rather than force-fit into
+a family record on no real evidence.
+
+---
+
+## MF8 — 2 families
+
+MF8 is documented primarily as a speedsolving forum/community ("the largest cubing community")
+that also manufactures a largely shape-mod puzzle range (Megaminx, Square-1, Gigaminx, Teraminx,
+Curvy Copter, and similar). Of its entire dated product list, only two entries are 3x3x3-shaped
+products: **MF8 Legend** (2011, +V2 2013 — a standard 3x3, `mf8-legend.yml`) and **MF8 Crazy
+3x3x3** (2010, a gimmick series implied by the "Crazy" name to be a non-standard mechanism,
+`mf8-crazy-3x3x3.yml`, flagged for a future `scope_class` decision the same way `yj-jinjiao` was).
+No boundary disputes — each is its own clearly single-lineage, differently-purposed product.
+
+**Sources created this session (MF8):** `speedsolving-wiki-mf8-products`.
+
+---
+
+## FangShi — 1 family
+
+FangShi's identity and its ShuangRen flagship were already substantially established in pass 1
+(`data/manufacturers/fangshi.yml`'s own notes, plus `thecubicle-fangshi-shuangren-v2` and
+`speedsolving-wiki-fangshi`, both already sourced). This pass fetched the wiki page's fuller
+content and found no further 3x3 beyond ShuangRen/ShuangRen V2 — `fangshi-shuangren.yml` is kept
+as **one** family across both generations (unlike this pass's several "improved version, new
+name" splits), because the ShuangRen name itself persists unchanged across the V2 revision. Two
+further product names on the same wiki page, "FangShi GuangYing" and "FangShi JieYun," have
+section headers but empty body text — recorded as open leads, not families, since nothing is
+actually known about them beyond the bare name.
+
+**No new sources created for FangShi** — both sources needed already existed from pass 1.

@@ -1,0 +1,37 @@
+# family: mf8-crazy-3x3x3
+# Pass 2 (family enumeration). A "Crazy" 3x3x3 gimmick series — MF8's own name implies a
+# non-standard mechanism (per general domain knowledge of "Crazy" cube gimmick puzzles across
+# manufacturers, not independently re-verified this pass). Recorded for identity only;
+# scope_class is a model/variant-level field this pass does not set.
+
+id: mf8-crazy-3x3x3
+entity: family
+manufacturer_id: mf8
+name: "MF8 Crazy 3x3x3"
+aliases: []
+introduced:
+  value: "2010"
+  precision: year
+  qualifier: circa
+positioning: special
+description: |-
+  Per the Speedsolving wiki's dated product list (speedsolving-wiki-mf8-products): "MF8 Crazy
+  3x3x3 series" is listed under 2010, alongside a corresponding "MF8 Crazy 4x4x4 series" the
+  same year. No further description is given by the source beyond the dated list entry.
+
+  Whether any model or variant under this family qualifies for `scope_class: conditional` per
+  RESEARCH_SPEC section 2.2 (non-WCA-legal, admitted only on documented historical/collector
+  significance, with a written justification and a tier 1-3 source) is a pass 3/4 decision this
+  pass does not make — flagged explicitly, the same treatment given to yj-jinjiao.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-mf8-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mf8-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-mf8-products]

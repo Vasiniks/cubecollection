@@ -1,0 +1,44 @@
+# family: fangshi-shuangren
+# Pass 2 (family enumeration). FangShi's historically significant flagship 3x3, already
+# identified in pass 1 as the manufacturer's defining product. The only confirmed standard 3x3
+# line found for this manufacturer this pass.
+
+id: fangshi-shuangren
+entity: family
+manufacturer_id: fangshi
+name: "FangShi ShuangRen"
+aliases:
+  - "Fangshi Shuang Ren"
+positioning: flagship
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-fangshi, created in pass 1): "Fangshi ShuangRen
+  3x3 — Regarded as an excellent cube on its first release... The ShuangRen has since been
+  released in new sizes, and some cube retailers offer it in numerous colour combinations,"
+  followed by a listed "Fangshi ShuangRen V2 3x3" entry (no further description given). TheCubicle's
+  own product listing for the V2 (thecubicle-fangshi-shuangren-v2, created in pass 1) states:
+  "The FangShi ShuangRen V2... is the latest 57mm 3x3 by the Funs Puzzle manufacturer. It
+  features a few minor improvements in design over the original FangShi ShuangRen, which has
+  been discontinued."
+
+  Kept as one family across both generations, unlike this pass's other "improved version"
+  successions, because the name itself persists unchanged ("ShuangRen" → "ShuangRen V2") rather
+  than changing to a new name — the same reasoning that keeps moyu-weilong and gan-flagship-
+  series as single families across their own numbered generations.
+
+  The wiki's own "Contents" list also names "FangShi GuangYing" and "FangShi JieYun" as headers
+  with no body text under either — not chased further this pass, recorded as open leads.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-fangshi]
+    note: "'Regarded as an excellent cube on its first release' and its status as the
+      manufacturer's most documented product across every source found this pass are read as
+      flagship-tier positioning; no manufacturer-first-party statement was found."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-fangshi]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-fangshi, thecubicle-fangshi-shuangren-v2]

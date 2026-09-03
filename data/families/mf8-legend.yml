@@ -1,0 +1,37 @@
+# family: mf8-legend
+# Pass 2 (family enumeration). MF8's standard 3x3x3, the only ordinary (non-shape-mod) 3x3
+# found in its product history — MF8 is documented primarily as a speedsolving forum/community
+# that also manufactures a largely shape-mod puzzle range.
+
+id: mf8-legend
+entity: family
+manufacturer_id: mf8
+name: "MF8 Legend"
+aliases: []
+introduced:
+  value: "2011"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki's dated product list (speedsolving-wiki-mf8-products): "MF8 Legend
+  3x3x3" (2011) followed by "MF8 Legend V2 3x3x3" (2013). No further detail beyond the dated
+  list entries themselves was given by the source; no release-date-adjacent commentary,
+  performance review, or positioning statement was found. Every other MF8 product in the same
+  list is a Megaminx/Square-1/Gigaminx/Teraminx variant, a "Crazy" gimmick cube (see
+  mf8-crazy-3x3x3.yml), or another shape mod — this is the only standard-format 3x3x3 line MF8
+  is documented to have produced within this pass's evidence.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-mf8-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mf8-products]
+    note: "No explicit positioning statement; recorded 'mainline' as the least overclaiming
+      reading, MF8 having no other standard 3x3 to position this against."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-mf8-products]

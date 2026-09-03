@@ -1,0 +1,33 @@
+# source: speedsolving-wiki-mf8-products
+# Speedsolving.com community wiki article on MF8. Tier 4 — corroborates only. MF8 is primarily
+# documented as a speedcubing forum/community that also manufactures puzzles; its product list
+# is almost entirely shape mods (Megaminx, Square-1, Gigaminx, Teraminx, Curvy Copter, etc.),
+# out of this archive's 3x3x3 scope. Used here only for the two 3x3x3-relevant entries.
+id: speedsolving-wiki-mf8-products
+entity: source
+kind: wiki
+title: "MF8 — Speedsolving.com Wiki (dated product list)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=MF8"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260302112516/https://www.speedsolving.com/wiki/index.php?title=MF8"
+excerpt: |-
+  Page-level summary: "MF8 (中国魔方俱乐部 - China Cube Club) is a Chinese speedsolving forum, and
+  the largest cubing community. MF8 also manufacture and sell their own range of MF8-branded
+  puzzles." "A partial list of MF8 puzzles ordered by year of release": 2010 includes "MF8 Crazy
+  3x3x3 series" and "MF8 Crazy 4x4x4 series" (alongside Gigaminx and Teraminx, the same year);
+  2011 includes "MF8 Legend 3x3x3" (alongside Square-1 and Helicopter Dodecahedron variants);
+  2013 includes "MF8 Legend V2 3x3x3" (alongside Megaminx V3, Eitan's Star, Curvy Starminx).
+  Every other dated entry (2007-2016) is a shape mod, Megaminx/Square-1/Gigaminx/Teraminx
+  variant, or novelty puzzle, out of this archive's 3x3x3 scope.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences and the two 3x3x3-relevant list entries verbatim, with
+  surrounding non-3x3 entries summarised rather than quoted in full."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail for any date, though the list is
+  framed as ordered by year of release rather than as prose commentary. Last edited 16 July
+  2020 per the page's own footer."
+status: sourced
