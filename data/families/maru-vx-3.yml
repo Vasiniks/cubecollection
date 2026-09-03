@@ -1,0 +1,58 @@
+# family: maru-vx-3
+# Pass 2 (family enumeration). A later, budget-positioned Maru 3x3, also absent from pass 1's
+# manufacturer register. Found alongside maru-cx3 in this pass's `thecubicle.com/products/maru*`
+# CDX prefix sweep.
+
+id: maru-vx-3
+entity: family
+manufacturer_id: maru
+name: "Maru VX-3"
+aliases:
+  - "VX-3"
+  - "VX3"
+introduced:
+  value: "2022"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-maru-vx-3's own reliability_note). The earliest genuine Wayback crawl timestamp
+    for this exact product page found in this pass's own CDX prefix sweep is 2022-12-05, used
+    only as an 'existed by' upper bound, not a claimed release date."
+positioning: budget
+description: |-
+  A plain, no-frills Maru 3x3, described directly in TheCubicle's own product copy: "The VX-3 is
+  an airy puzzle from the famous brand Maru. This puzzle has no frills or fancy features, just a
+  plain 3x3 with a modern design" (thecubicle-maru-vx-3, tier 2) — read as a deliberate
+  budget/entry-level positioning relative to the design-credited, flagship-framed `maru-cx3`,
+  though no source uses the word "budget" directly.
+
+  **Magnetic configurations exist as later variants of this same base model, not separate
+  families.** The same CDX prefix sweep this pass found "Maru VX-3 Core M" and "Maru VX-3 Core M
+  MagLev" product pages at this retailer — read per DATA_MODEL §4.2 as a magnetic-core
+  configuration choice sold as options of the same underlying VX-3 design, not a distinct
+  design/mould/mechanism, and therefore left as pass-4 (variant enumeration) leads on this
+  family record rather than built into new models here. Their own product-description text was
+  not independently retrieved this pass.
+
+  **Deliberately kept as its own family, not merged with `maru-3x3` or `maru-cx3`.** See
+  `maru-3x3.yml`'s own header comment for the shared reasoning applied across all three of this
+  manufacturer's 3x3 lines found this pass: no source states any succession between them.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-maru-vx-3]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-maru-vx-3]
+    note: "Inferred from the retailer's own 'no frills or fancy features, just a plain 3x3'
+      framing; not a direct positioning statement."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3]
+  /description:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3]

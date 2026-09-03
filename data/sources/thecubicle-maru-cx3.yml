@@ -1,0 +1,33 @@
+# source: thecubicle-maru-cx3
+# TheCubicle's own product page for the Maru CX3 (Assembled), captured via Wayback. Tier 2,
+# first-party retailer copy naming a specific speedcuber the design credits as an inspiration.
+id: thecubicle-maru-cx3
+entity: source
+kind: retailer
+title: "Maru CX3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-cx3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250118140957id_/https://www.thecubicle.com/products/maru-cx3"
+excerpt: |-
+  "This is the Assembled version of this product. To see the Do-It-Yourself (DIY) version of
+  this product, please click here. The Maru CX3 is a hotly anticipated, high-quality 3x3
+  speedcube. Its design was inspired by our friend Cyoubx, who is a speedcuber himself. The Glow
+  In The Dark and Transparent versions feature transparent stickers." Product Specifications:
+  "Manufacturer: Maru".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. Establishes the CX3 as a real, named, design-credited
+  flagship-tier 3x3 (accompanying customer reviews independently and repeatedly compare it
+  favourably to the DaYan ZhanChi and MoYu WeiLong, placing it as a genuine competitive
+  speedcube, not a novelty item). This pass's own `thecubicle.com/products/maru*` CDX prefix
+  sweep shows the earliest capture of this exact product page (`/products/maru-cx3`) dated
+  2020-09-25, and companion accessory pages ('maru-cx3-diy-kit', 'maru-cx3-soft-spring-set')
+  captured as early as 2019-07 — used only as an 'existed by' upper bound on the family record,
+  not as a claimed release date, and not derived from this page's own in-page 'Added' field,
+  which is not trusted as dating evidence per this pass's cross-agent finding on TheCubicle's
+  repeating 'Added:' dates (see research/notes/models/parallel-batch-A.md)."
+status: sourced

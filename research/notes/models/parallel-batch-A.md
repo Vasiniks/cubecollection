@@ -353,3 +353,76 @@ repeated "Added:" date should be treated the same way. Acting on this before con
   never merged into Rubik's Connected). No manufacturer-record edits made outside my own queue.
 
 ---
+
+## Maru — 4 families
+
+**Groundwork inspected first.** Pass 1's `data/manufacturers/maru.yml` had already found and
+sourced Maru's original ~2011-era "Maru 3x3," explicitly flagged as pre-dating this archive's
+2016 start, and explicitly left open whether Maru had any later, in-window product (a 2020
+domain capture with a cube-branded title suggested the company/site persisted, but "no specific
+later product was located this pass").
+
+**This pass closes that gap, and it opens up considerably.** A `thecubicle.com/products/maru*`
+CDX prefix sweep (67 URLs) found not one but **two entirely separate, previously-undocumented
+named Maru 3x3 lines** — "CX3" and "VX-3" — plus a documented "smallest mass-produced 3x3 in the
+world" novelty product ("Nano Cube," 15mm) and a wide range of Maru-branded accessories, lube,
+and, notably, **aftermarket magnetic core DIY kits for other manufacturers' cubes** (RS3M 2020,
+TengYun V1, Tornado V2/V3, WeiLong WR M 2021, YuLong V2) — Maru operates partly as an
+aftermarket-parts service for other brands' flagship cubes, a fact worth flagging for a future
+pass even though it does not itself produce a new 3x3 family (Maru's *own* cubes are the only
+thing in scope for this pass; the DIY core kits modify other manufacturers' variants and belong,
+if anywhere, under those manufacturers' own `modified_from`/`service` treatment per DATA_MODEL
+§4.3 — not investigated further here, flagged as a lead only).
+
+**Families accepted (4):** `maru-3x3` (the original ~2011 product, already sourced in pass 1,
+carried forward with a documented "Special Patterns" sticker-variant lead added this pass),
+`maru-cx3` (a design-credited flagship-tier 3x3, "inspired by our friend Cyoubx, who is a
+speedcuber himself," existing by at least 2019-2020), `maru-vx-3` (a plain, budget-positioned
+3x3, "no frills or fancy features," existing by at least 2022, with magnetic Core M/Core M
+MagLev variants left as pass-4 leads), and `maru-nano` (a 15mm novelty DIY-kit cube carrying a
+specific "smallest mass-produced 3x3 cube in the world" claim).
+
+**Boundary reasoning — why four separate families, not one evolving lineage.** The temptation
+here was to read "3x3 -> CX3 -> VX-3" as one persisting Maru flagship succession the way
+moyu-weilong's persisting name was read earlier in this project. Resisted deliberately: no
+source anywhere this pass — not TheCubicle's own copy for any of the three, not the (thin)
+Speedsolving wiki page — states or implies a succession between them. They are three
+completely differently-named products from the same manufacturer with no stated lineage
+relationship, which per this project's own standing practice (QiYi Bullfight/Thunderclap, YJ
+SuLong/ChiLong/YuLong) is recorded as separate families, not merged into an invented
+continuity just because they share a manufacturer and a broad category.
+
+**A genuine judgement call on the Nano Cube.** Given the standing warning against "manufacturing
+families simply because the manufacturer exists," the Nano Cube's inclusion (and the parallel
+exclusion of the "Mini 3x3 30mm" and "Mini 3x3 Keychain Cube" found in the same sweep) turned on
+one thing: the Nano Cube carries a specific, falsifiable, documented significance claim ("the
+smallest mass-produced 3x3 cube in the world") matching RESEARCH_SPEC §2.2's own "documented
+production first" language for conditional admission, where the Mini 3x3 carries only a
+comparative-but-unremarkable "almost twice as small as most conventional 3x3 cubes." This is
+the same kind of line DianSheng's Stickerless 3x3 (kept, for a named media appearance) and
+ShengShou's Gem/Tank (rejected, for a bare dismissive sentence) drew elsewhere in this project —
+applied here to a different kind of evidence (a specific claim vs. a media appearance) but the
+same underlying test: is there something concrete and specific here, or just a name.
+
+**Dating discipline applied throughout, per the cross-agent correction above.** No family in
+this manufacturer uses any TheCubicle in-page "Added:" field as evidence. Every `introduced`
+value here is a `qualifier: before` bound derived from genuine external Wayback crawl
+timestamps found in this pass's own CDX prefix sweep, and every attestation says so explicitly.
+
+**Unresolved for pass 3:**
+- Whether Maru's aftermarket magnetic-core DIY kits for RS3M/TengYun/Tornado/WeiLong WR
+  M/YuLong belong anywhere in this archive as `service`/`modified_from` records under those
+  *other* manufacturers, and whether Maru itself should also carry `kind: service` alongside
+  `kind: manufacturer` on its own record (a manufacturer-record change, not made this pass —
+  flagged only).
+- VX-3's Core M and Core M MagLev variants' own descriptions (not independently retrieved).
+- Whether the Mini 3x3 (30mm) and Mini 3x3 Keychain Cube warrant their own family records in a
+  future pass with more time/evidence.
+- Exact release years for CX3, VX-3, and Nano — all currently only bounded by Wayback crawl
+  timestamps, not stated dates.
+
+**Sources created this session (Maru):** `thecubicle-maru-3x3-special-patterns`,
+`thecubicle-maru-cx3`, `thecubicle-maru-vx-3`, `thecubicle-maru-nano-3x3`. Reused without
+modification: `thecubicle-maru-3x3`, `speedsolving-wiki-maru` (both pass 1).
+
+---

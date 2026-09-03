@@ -1,0 +1,63 @@
+# family: maru-cx3
+# Pass 2 (family enumeration). A later, distinctly-named Maru flagship 3x3, absent from pass 1's
+# manufacturer register (which found only the original 2011-era "Maru 3x3"). Surfaced this pass
+# via a `thecubicle.com/products/maru*` CDX prefix sweep run specifically because pass 1 had
+# already flagged that a 2020 domain capture ("MARUCUBE小丸號官方網站") suggested the company or
+# its site persisted into the archive window without a specific later product having been found
+# yet — this family record closes that gap.
+
+id: maru-cx3
+entity: family
+manufacturer_id: maru
+name: "Maru CX3"
+aliases:
+  - "CX3"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-maru-cx3's own reliability_note on TheCubicle's repeating 'Added:' field
+    artifact). The earliest genuine Wayback crawl timestamp for this exact product page found
+    in this pass's own CDX prefix sweep is 2020-09-25, with companion accessory pages (a DIY
+    kit, a soft spring set) captured as early as 2019-07 — used only as an 'existed by' upper
+    bound, not a claimed release date."
+positioning: flagship
+description: |-
+  A Maru-designed flagship-tier 3x3, credited in TheCubicle's own product copy to a named
+  speedcuber: "The Maru CX3 is a hotly anticipated, high-quality 3x3 speedcube. Its design was
+  inspired by our friend Cyoubx, who is a speedcuber himself" (thecubicle-maru-cx3, tier 2).
+  Customer reviews on the same listing repeatedly and independently compare it favourably to the
+  DaYan ZhanChi and MoYu WeiLong ("the reverse corner cutting... surpasses the Zanchi and it is
+  more controllable than the Weilong"), placing it as a genuine, well-regarded competitive
+  speedcube of its era rather than a novelty or budget item — consistent with `positioning:
+  flagship` for this record, though no source states that label directly.
+
+  Sold in both an Assembled version and a separate DIY kit, with Glow-in-the-Dark and
+  Transparent colour options noted to use transparent stickers. No later numbered generation
+  (a "CX3 V2" or similar) was found anywhere this pass; whether CX3 was ever superseded by a
+  later Maru product, or remains Maru's own name for an ongoing product, is left unresolved.
+
+  **Deliberately kept as its own family, not merged with `maru-3x3` or `maru-vx-3`.** See
+  `maru-3x3.yml`'s own header comment for the shared reasoning applied across all three of this
+  manufacturer's 3x3 lines found this pass: no source states any succession between them.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-maru-cx3]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-maru-cx3]
+    note: "Inferred from favourable customer-review comparisons to established flagship
+      competitors (DaYan ZhanChi, MoYu WeiLong), not a direct manufacturer or retailer
+      statement of positioning."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-maru-cx3]
+  /description:
+    confidence: probable
+    sources: [thecubicle-maru-cx3]

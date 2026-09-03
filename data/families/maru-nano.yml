@@ -1,0 +1,72 @@
+# family: maru-nano
+# Pass 2 (family enumeration). A miniature novelty 3x3 carrying a specific, notable "smallest
+# mass-produced 3x3 in the world" claim — created as its own family on the strength of that
+# specific, documented significance claim (RESEARCH_SPEC §2.2's "documented production first"
+# admission criterion), not as a default inclusion of every small Maru product found. The actual
+# `scope_class: conditional` justification and admission this claim would require at the
+# model/variant level is explicitly deferred to pass 3/4, per DATA_MODEL §1.4 — this record
+# establishes identity only.
+
+id: maru-nano
+entity: family
+manufacturer_id: maru
+name: "Maru Nano Cube"
+aliases:
+  - "Maru Nano 3x3"
+  - "Nano Cube"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-maru-nano-3x3's own reliability_note). The genuine Wayback crawl timestamp of the
+    source used is 2020-08-07, used only as an 'existed by' upper bound."
+positioning: special
+description: |-
+  A 15mm miniature 3x3, sold as a self-assembly DIY kit. TheCubicle's own product copy states
+  directly: "At just 15mm across, the Maru Nano Cube is the smallest mass-produced 3x3 cube in
+  the world!" (thecubicle-maru-nano-3x3, tier 2) — a specific, falsifiable claim about a
+  documented production first, treated per the tier-4-for-comparative-claims rule as a
+  marketing superlative rather than an established fact, but concrete and specific enough (not
+  a bare "amazing" or "best-selling") to be recorded rather than discarded, and to weigh toward
+  collector significance for a future scope_class decision.
+
+  **Almost certainly outside WCA-legal size** (the WCA's minimum permitted 3x3 edge length is
+  far larger than 15mm) — recorded at `positioning: special` rather than any competitive tier,
+  and flagged here explicitly so a future pass does not default this product into `scope_class:
+  core` by omission. The actual conditional-admission justification belongs to pass 3/4, per
+  the same pattern already applied to `yj-jinjiao` and `mf8-crazy-3x3x3` elsewhere in this
+  project's pass 2 work.
+
+  **A related, larger novelty product, deliberately not built into its own family.** The same
+  CDX prefix sweep this pass found a "Maru Mini 3x3 (30mm)," described in its own retailer copy
+  as measuring "just 3cm across, making it almost twice as small as most conventional 3x3
+  cubes... it features a robust internal mechanism and turns smoothly right out of the box," and
+  a "Maru Mini 3x3 Keychain Cube." Both are real, distinctly named products with genuine
+  specification data, but neither carries a claim as specific or notable as the Nano Cube's
+  "smallest mass-produced... in the world," and building a separate family for every
+  differently-sized Maru novelty product found risks exactly the "manufacturing families simply
+  because the manufacturer exists" outcome this pass was explicitly warned against. Recorded
+  here as an open lead rather than silently dropped or force-fit into this family (they are a
+  different name and a different, larger size, not a generation of the Nano Cube).
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-maru-nano-3x3]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-maru-nano-3x3]
+    note: "No source states a positioning label; `special` records this record's own
+      out-of-competitive-category reading given the extreme non-standard size."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-maru-nano-3x3]
+  /description:
+    confidence: reported
+    sources: [thecubicle-maru-nano-3x3]
+    note: "Single tier 2 source; the central 'smallest mass-produced' claim is marketing copy,
+      not independently verified this pass."

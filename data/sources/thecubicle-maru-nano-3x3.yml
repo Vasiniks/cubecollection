@@ -1,0 +1,36 @@
+# source: thecubicle-maru-nano-3x3
+# TheCubicle's own product page for the Maru Nano Cube (15mm DIY Kit), captured via Wayback.
+# Tier 2, first-party retailer copy carrying a specific, notable "smallest mass-produced 3x3"
+# claim.
+id: thecubicle-maru-nano-3x3
+entity: source
+kind: retailer
+title: "Maru Nano 3x3 (15mm DIY Kit) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-nano-3x3-15mm-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200807041242id_/https://www.thecubicle.com/products/maru-nano-3x3-15mm-diy-kit"
+excerpt: |-
+  "At just 15mm across, the Maru Nano Cube is the smallest mass-produced 3x3 cube in the world!
+  This one-of-a-kind cube comes with a little cube pouch, set of stickers, and also the
+  cardboard cutouts to make your own nano cube box and nano cube stand (tape or glue required).
+  It also comes with a set of tweezers to help with assembly, and to help pick up the cube...
+  Please note that assembly is required for this cube -- the kit includes all of the parts you
+  need to assemble the cube by yourself." Product Specifications: "Manufacturer: Maru / Type:
+  DIY Kits / Gross Weight: 26g / Dimensions: 15.0mm 3".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. 'The smallest mass-produced 3x3 cube in the world' is a
+  specific, falsifiable production-first claim, treated per the tier-4-for-comparative-claims
+  rule as a marketing superlative rather than a confirmed fact, but specific and concrete enough
+  (unlike a bare 'amazing' or 'best-selling') to weigh toward this product's collector
+  significance per RESEARCH_SPEC §2.2's 'documented production first' criterion — flagged for a
+  future pass's scope_class decision, not resolved here. At 15mm this is certainly not
+  WCA-legal-size; this pass creates only the family-level identity record, deferring the actual
+  `scope_class: conditional` justification and admission to pass 3/4 per DATA_MODEL §1.4. This
+  page's own in-page 'Added: 2018-11-07' field is not used as dating evidence, per this pass's
+  standing cross-agent finding on TheCubicle's repeating 'Added:' dates."
+status: sourced
