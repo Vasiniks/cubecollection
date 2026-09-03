@@ -1,0 +1,47 @@
+# manufacturer: moretry
+# Pass 1 (manufacturer register). A dedicated, active 3x3 speedcube manufacturer entirely
+# absent from the pass-0 candidate list — found only by following a product-naming lead
+# surfaced while researching SAOCube (see data/manufacturers/saocube.yml). A useful reminder
+# that the two-retailer collection-URL sweep, while high-recall, is not exhaustive even for
+# English-language retailers: this brand's own manufacturer filter was never enumerated because
+# its slug did not appear among the collection paths originally swept.
+
+id: moretry
+entity: manufacturer
+name: "MoreTry"
+kind: manufacturer
+aliases:
+  - "More Try"
+notes: |-
+  **Identity and scale.** TheCubicle's own manufacturer-filtered collection page: "Brand:
+  MoreTry 27" — 27 total products, 24 of them 3x3 cubes ("MoreTry Tianma X3" V1 through V4,
+  "MoreTry TianMa X3+" across multiple magnet/finish configurations), plus three own-branded
+  lubricants ("MoreTry Lube I/II/III") (thecubicle-moretry-live-2026) — tier 2, first-party
+  retailer categorisation, the only source located this pass. Independently, "Moretry" appears
+  on the Speedsolving.com wiki's "List of manufactures" page (general web search, not
+  independently captured as its own source this pass) among recognised cube manufacturers,
+  corroborating this is a genuine, separately-recognised brand rather than a retailer
+  house-line. No independent domain, About page, or company-registration record was located in
+  the time available this pass; country and founding are left unknown.
+
+  **How this was found.** Not from either retailer collection-URL sweep in pass 0 — "moretry"
+  does not appear among the 260/386 slugs originally enumerated. It surfaced only via a product
+  name ("MoreTry TianMa X3+ ... SAOCube SE") encountered while investigating SAOCube. This is
+  worth flagging structurally: the collection-URL sweep is high-recall but not exhaustive even
+  at a single English-language retailer, since a manufacturer's products can be filed without a
+  corresponding top-level collection page ever being swept.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: probable
+    sources: [thecubicle-moretry-live-2026]
+    note: "Single tier 2 source, but substantial and specific (24 3x3 products plus an
+      own-branded lubricant line, not a bare mention), and independently named on the
+      Speedsolving wiki's manufacturer list — recorded at probable rather than uncertain."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-moretry-live-2026]
+  /notes:
+    confidence: probable
+    sources: [thecubicle-moretry-live-2026]

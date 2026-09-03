@@ -1,0 +1,34 @@
+# source: thecubicle-moretry-live-2026
+# TheCubicle's own manufacturer-filtered collection page for "MoreTry", fetched live (no
+# archive.org capture exists yet for this URL as of this pass). Tier 2, first-party retailer
+# categorisation. MoreTry also appears, independently, on the Speedsolving.com wiki's "List of
+# manufactures" page (general web search, not independently captured as its own source this
+# pass) under "Moretry" — corroborating this is a genuine, separately-recognised manufacturer.
+id: thecubicle-moretry-live-2026
+entity: source
+kind: retailer
+title: "Products – Filtered by \"Manufacturer: MoreTry\" – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/all/manufacturer_moretry"
+preservation_method: excerpt
+excerpt: |-
+  Filter sidebar: "Brand: MoreTry 27" — 27 total products, 20 in stock at the time of access.
+  "Type: 3x3 24" (24 of the 27 products are 3x3 cubes), "Lube 3" (three own-branded lubricants:
+  "MoreTry Lube I (Faster)", "MoreTry Lube II (Smoother)", "MoreTry Lube III (Slower)"). 3x3
+  product lines include "MoreTry Tianma X3" (V1 through V4) and "MoreTry TianMa X3+" across
+  multiple magnet configurations (8-magnet, 32-magnet, MagLev) and finishes (frosted), including
+  versions credited to a third-party setup ("MoreTry TianMa X3+ ZCube Edition").
+preservation_note: "No archive.org capture exists yet for this URL (CDX prefix query returned
+  'no captures') — preserved as a live-fetch excerpt; should be re-archived in a future session
+  once a capture exists."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation, substantial (24 3x3 products
+  plus own-branded lubricant, not a single-item mention) — this is a dedicated, active 3x3
+  speedcube manufacturer that was entirely absent from the pass-0 candidate list, found only by
+  following a lead (the 'MoreTry TianMa X3+ ... SAOCube SE' product name) surfaced while
+  researching SAOCube. Does not establish country or founding, both left unknown."
+status: sourced

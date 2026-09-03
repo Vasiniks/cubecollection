@@ -1,0 +1,52 @@
+# manufacturer: saocube
+# Pass 1 (manufacturer register). Long-tail candidate. A named setup/modification credited on
+# cubes from several other manufacturers — the same evidentiary pattern already established for
+# PiCube (data/manufacturers/picube.yml) — recorded as kind: service, with one open question
+# (an apparently own-branded "V56" model) flagged rather than resolved.
+
+id: saocube
+entity: manufacturer
+name: "SAOCube"
+kind: service
+aliases:
+  - "SAO Cube"
+notes: |-
+  **Identity and pattern.** TheCubicle's own manufacturer-filtered collection page and product
+  spec fields credit "SAOCube" as a named setup applied to base cubes from at least four other
+  manufacturers: "DaYan FTO ... SAOCube SE", "MoreTry TianMa X3+ 3x3 ... SAOCube SE", "MoYu RS3
+  M V5 3x3 ... SAOCube SE", "QiYi M Pro 2x2 ... SAOCube SE", "X-Man Tornado V3 3x3 Premium ...
+  SAOCube SE" (thecubicle-saocube-live-2026) — tier 2, first-party retailer categorisation, the
+  only source located this pass. This is the same "named third-party mod credited across many
+  manufacturers' products" pattern already documented for PiCube, which supports `kind:
+  service` per DATA_MODEL §1.3, rather than a single manufacturer's in-house tuning line (which
+  would apply to one manufacturer's products only, per the FZ/Angstrom/Mystic precedent) or a
+  retailer's own catalogue-wide tiering (the Cosmic/Supernova/UniCube precedent). No independent
+  domain, About page, founder name, or country was located in the time available this pass.
+
+  **Open question, not resolved: "SAOCube V56".** Two items under the same filter — "SAOCube
+  V56 3x3 (20-Magnet Ball-Core)" and "SAOCube V56 3x3 (Magnetic)" — are NOT credited to another
+  manufacturer's base design, and the latter's own product page gives "Manufacturer: SAOCube"
+  with a collection-page link styled the same way TheCubicle presents independent manufacturers
+  like GAN or MoYu, not the way it presents its own or others' setup-service credits. Whether
+  "V56" is SAOCube's own original design (which would argue for `kind: manufacturer` rather than
+  or in addition to `kind: service`) or a lightly-modified/rebadged version of an existing
+  design sold under a new name is not established — the product's own description page is an
+  unpopulated stub ("more details coming soon!"). Flagged for pass 2 rather than guessed at
+  here; `kind: service` is recorded because it is the better-evidenced, repeated pattern, not
+  because the V56 question is settled.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [thecubicle-saocube-live-2026]
+    note: "Single tier 2 retailer source, though the pattern (a named credit repeated across
+      four other manufacturers' base cubes) mirrors an already-corroborated case (PiCube)
+      closely enough to support kind: service at more than the weakest confidence; not raised
+      above uncertain because the V56 item complicates a clean service reading (see /notes)."
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-saocube-live-2026]
+  /notes:
+    confidence: uncertain
+    sources: [thecubicle-saocube-live-2026]

@@ -80,10 +80,28 @@ strong_candidates:
         and data/manufacturers/thecubicle.yml. Alias found: FangShi = 'Funs'/'Funs Puzzle' per
         TheCubicle's own ShuangRen V2 listing. fangshi.net is a domain-broker page, NOT the
         manufacturer's site — no independent domain confirmed." }
-  - { name: "FanXin",        slugs: [fanxin],                         seen: [speedcubeshop] }
-  - { name: "QJ",            slugs: [qj-educational],                 seen: [speedcubeshop] }
+  - { name: "FanXin",        slugs: [fanxin],                         seen: [speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/fanxin.yml, kind: manufacturer at
+        `drafted`/uncertain (single tier 2 retailer source). Also resolves 'HuDong' as a FanXin
+        product line (see the HuDong entry below) — with a flagged, unresolved internal
+        contradiction in the one source found." }
+  - { name: "QJ",            slugs: [qj-educational],                 seen: [speedcubeshop],
+      status: "CANONICALISED as data/manufacturers/qj.yml, kind: manufacturer, confirmed via its
+        own official 2013 site. Distinct from QiYi despite similar initials." }
   - { name: "Rubik's",       slugs: [rubiks],                         seen: [thecubicle, speedcubeshop],
-      note: "A licensed brand, not a Chinese manufacturer. Its 3x3s are made under licence by others; the manufacturing identity may differ from the brand and may have changed across the period." }
+      status: "CANONICALISED as data/manufacturers/rubiks.yml, kind: manufacturer, confirmed
+        (its own site, tier 1). A licensed brand, not a Chinese manufacturer — country recorded
+        as GB (Rubik's Brand Limited, UK Companies House), the 2021 Spin Master acquisition
+        documented, and the actual cube-manufacturing entity left explicitly unknown except for
+        the smart-cube line (see particula below)." }
+  - { name: "MoreTry",       slugs: [], seen: [thecubicle],
+      status: "CANONICALISED as data/manufacturers/moretry.yml, kind: manufacturer at
+        `drafted`/probable. NOT found via the original pass-0 collection-URL sweep (no
+        'moretry' slug among the 260/386 originally enumerated) — surfaced only via a product
+        name lead while researching SAOCube. TheCubicle's own manufacturer filter shows 27
+        products, 24 of them 3x3 cubes ('MoreTry Tianma X3'/'TianMa X3+' across several
+        generations) plus an own-branded lubricant line. A reminder that the collection-URL
+        sweep, while high-recall, is not exhaustive." }
 
 # ---------------------------------------------------------------- sub-brand candidates
 probable_sub_brands:
@@ -172,7 +190,10 @@ long_tail_candidates:
         such as the Rubik's Clock and Rubik's Magic. They do not produce any other kinds of
         twisty puzzles.' No 3x3 product exists to enumerate. No manufacturer record created —
         this archive is scoped to 3x3x3 speedcubes and LingAo makes none." }
-  - { name: "HelloCube",    slugs: [hellocube] }
+  - { name: "HelloCube",    slugs: [hellocube],
+      status: "CANONICALISED as data/manufacturers/hellocube.yml, kind: manufacturer at
+        `drafted`/uncertain. Gear Cube / Mirror Cube / Flat Cube shape mods per TheCubicle's
+        own manufacturer filter — a scope_class: conditional candidate, not WCA-legal 3x3s." }
   - { name: "MsCube",       slugs: [mscube],
       status: "RESOLVED — product line of DianSheng, not an independent manufacturer.
         dianshengtoys.com's own current homepage lists 'MSCUBE旗舰魔方' among its own
@@ -181,7 +202,9 @@ long_tail_candidates:
         pass 2 as a family under diansheng. Smart-cube companies remain a named blind spot more
         broadly — this only resolves the MsCube name specifically." }
   - { name: "Cube4You",     slugs: [cube4you], note: "Historical; archived domain cube4you.com has captures." }
-  - { name: "CubeLab",      slugs: [cubelab] }
+  - { name: "CubeLab",      slugs: [cubelab], note: "CHECKED, not canonicalised: no
+      'manufacturer_cubelab' filter exists at TheCubicle as of this pass. Needs a different
+      lead (own domain, or a hit at another retailer) before this can be resolved either way." }
   - { name: "VeryPuzzle",   slugs: [verypuzzle],
       status: "CANONICALISED as data/manufacturers/verypuzzle.yml, kind: manufacturer at
         `drafted`/uncertain. Confirmed non-3x3 specialist per TheCubicle's own manufacturer
@@ -193,7 +216,13 @@ long_tail_candidates:
         China signal in the one source found). Mostly non-WCA shape mods and cuboids; 3x3
         relevance for a specific product is a pass 2/4 scope_class question." }
   - { name: "ZCube",        slugs: [zcube] }
-  - { name: "SaoCube",      slugs: [saocube] }
+  - { name: "SaoCube",      slugs: [saocube],
+      status: "CANONICALISED as data/manufacturers/saocube.yml, kind: service at
+        `drafted`/uncertain — the same 'named mod credited across many manufacturers'
+        products' pattern as PiCube (DaYan, MoreTry, MoYu, QiYi/X-Man all seen). One open
+        question flagged, not resolved: an apparently own-branded 'SAOCube V56' 3x3 that may
+        complicate a clean service reading. Surfaced MoreTry as a new, previously-unlisted
+        manufacturer in the process (see strong_candidates-equivalent note under long tail)." }
   - { name: "Vin Cube",     slugs: [vin-cube] }
   - { name: "Tingman",      slugs: [tingman] }
   - { name: "Kanyon",       slugs: [kanyon] }
@@ -207,7 +236,10 @@ long_tail_candidates:
         `drafted`/uncertain. TheCubicle's own manufacturer filter lists three 'Ninja Ghost
         Cube' shape-mod products — a scope_class: conditional candidate for pass 2/4, not a
         WCA-legal 3x3 maker. An adjacent 'Ghost Hand' brand noted but not investigated." }
-  - { name: "StuCube",      slugs: [stucube-collection] }
+  - { name: "StuCube",      slugs: [stucube-collection], note: "CHECKED, not canonicalised:
+      no 'manufacturer_stucube' filter exists at TheCubicle as of this pass (the collection
+      slug found in pass 0 may be a curated/thematic collection rather than a manufacturer
+      filter). Needs a different lead before this can be resolved either way." }
   - { name: "UniCube",      slugs: [uni-cube, unicube-collection, unicube-magnetic],
       status: "RESOLVED — confirmed as one of SpeedCubeShop's own three in-house setup-tier
         names (with Cosmic and Supernova), not an independent manufacturer. See

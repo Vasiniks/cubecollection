@@ -1,0 +1,44 @@
+# source: thecubicle-saocube-live-2026
+# TheCubicle's own manufacturer-filtered collection page for "SAOCube" and its "SAOCube V56
+# 3x3 (Magnetic)" product page, fetched live (no archive.org capture exists yet for either URL
+# as of this pass — a recently-added brand/service). Tier 2, first-party retailer
+# categorisation.
+id: thecubicle-saocube-live-2026
+entity: source
+kind: retailer
+title: "Products – Filtered by \"Manufacturer: SAOCube\" – TheCubicle; SAOCube V56 3x3 (Magnetic) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/all/manufacturer_saocube"
+preservation_method: excerpt
+excerpt: |-
+  Collection page title/filter: "Manufacturer: SAOCube", 14 items in stock. Products credit
+  SAOCube as a named setup/modification applied to cubes from several other manufacturers —
+  "DaYan FTO (Magnetic + Ball-Core, Black Internals SAOCube SE)", "MoreTry TianMa X3+ 3x3
+  (32-Magnet Ball-Core + MagLev SAOCube SE)", "MoYu RS3 M V5 3x3 (Spring-Tension + Ball-Core +
+  Matte SAOCube SE)", "QiYi M Pro 2x2 (Ball-Core + UV SAOCube SE)", "X-Man Tornado V3 3x3
+  Premium (Flagship UV + 20-M Ball-Core SAOCube SE)" — the same "named setup credited across
+  many other manufacturers' base cubes" pattern already documented for PiCube
+  (data/manufacturers/picube.yml) and TheCubicle's own in-house lines. Two items are NOT
+  credited to another manufacturer: "SAOCube V56 3x3 (20-Magnet Ball-Core)" and "SAOCube V56
+  3x3 (Magnetic)" — the latter's own product page gives "Manufacturer: SAOCube" in its spec
+  field (with a linked collection page styled the same way GAN/MoYu/QiYi are presented) and a
+  stub description: "SAOCube V56 3x3 (Magnetic) - more details coming soon!"
+preservation_note: "No archive.org capture exists yet for either URL (CDX prefix queries
+  returned 'no captures' for both the collection page and every saocube-v56-* product slug
+  tried) — this is a recently-added brand/service at TheCubicle, not a case of failed
+  preservation. Preserved as a live-fetch excerpt; should be re-archived in a future session
+  once a capture exists."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation and product spec fields.
+  Sufficient to establish SAOCube's existence and its role modifying/setting up cubes from at
+  least four other manufacturers (DaYan, MoreTry, MoYu, QiYi/X-Man) under its own credited name
+  — the DATA_MODEL §1.3 pattern for kind: service. The 'SAOCube V56' item, credited to no other
+  manufacturer and treated by TheCubicle's own product-spec styling as if it were an
+  independent brand's own design, is a genuinely ambiguous signal (own model vs. a
+  lightly-modified rebrand of another maker's design under a new name) that this pass does not
+  resolve — its own page description is a placeholder stub with no specifications yet."
+status: sourced

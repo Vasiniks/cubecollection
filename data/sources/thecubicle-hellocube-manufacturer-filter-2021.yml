@@ -1,0 +1,26 @@
+# source: thecubicle-hellocube-manufacturer-filter-2021
+# TheCubicle's own manufacturer-filtered collection page for "HelloCube", archived 2021-02-02.
+# Tier 2, first-party retailer categorisation.
+id: thecubicle-hellocube-manufacturer-filter-2021
+entity: source
+kind: retailer
+title: "Products – Filtered by \"Manufacturer: HelloCube\" – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/all/manufacturer_hellocube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210202065318id_/https://www.thecubicle.com/collections/all/manufacturer_hellocube"
+excerpt: |-
+  Page title and filter: "Manufacturer: HelloCube". Products listed: "HelloCube 2x2 Gear Cube",
+  "HelloCube 2x2 Mirror Cube", "HelloCube 3x3 Gear Cube", "HelloCube Flat 2x2" — all Gear Cube
+  and shape-modification puzzles, not standard WCA-legal 3x3s.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer categorisation, sufficient to establish
+  existence and a budget/novelty product category (Gear Cube, Mirror Cube, Flat Cube shape
+  mods), not country, founding, or legal identity, all of which are unknown. Relevant to
+  scope_class: no standard 3x3 was seen under this filter, so any HelloCube product admitted
+  would most likely need `conditional` scope_class, not `core`."
+status: sourced

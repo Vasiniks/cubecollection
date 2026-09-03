@@ -1,0 +1,32 @@
+# manufacturer: hellocube
+# Pass 1 (manufacturer register). Long-tail candidate; a budget/novelty shape-mod puzzle maker
+# (Gear Cube, Mirror Cube, Flat Cube), not clearly a standard WCA-legal 3x3 manufacturer.
+# Included per the "enumerate broadly" instruction.
+
+id: hellocube
+entity: manufacturer
+name: "HelloCube"
+kind: manufacturer
+notes: |-
+  **Identity.** TheCubicle's own manufacturer-filtered collection page names "HelloCube" as a
+  distinct manufacturer, listing "HelloCube 2x2 Gear Cube", "HelloCube 2x2 Mirror Cube",
+  "HelloCube 3x3 Gear Cube", and "HelloCube Flat 2x2" (thecubicle-hellocube-manufacturer-
+  filter-2021) — tier 2, first-party retailer categorisation, the only source located this
+  pass. No independent domain, About page, or company-registration record was located; country
+  and founding are left unknown.
+
+  **Scope note.** Every product seen under this filter is a Gear Cube or shape modification
+  (Mirror Cube, Flat Cube) rather than a standard WCA-legal 3x3. This register does not decide
+  scope_class; it records the manufacturer's existence so a future pass can admit a specific
+  product under `scope_class: conditional` with its own justification if warranted, rather than
+  the brand being invisible to the archive.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [thecubicle-hellocube-manufacturer-filter-2021]
+    note: "Single tier 2 retailer source. No independent corroboration located this pass."
+  /notes:
+    confidence: uncertain
+    sources: [thecubicle-hellocube-manufacturer-filter-2021]
