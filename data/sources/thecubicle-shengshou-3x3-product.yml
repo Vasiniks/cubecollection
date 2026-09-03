@@ -1,0 +1,29 @@
+# source: thecubicle-shengshou-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the original,
+# unnamed-beyond-the-brand "ShengShou 3x3", a 2020 capture sold as legacy liquidation stock.
+id: thecubicle-shengshou-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922082857id_/https://www.thecubicle.com/products/shengshou-3x3"
+excerpt: |-
+  Product Description: "The original ShengShou 3x3 was one of the first cubes ever released by
+  ShengShou and the precursor to the ShengShou Wind 3x3. While the puzzle has been discontinued
+  for quite some time, we recently came across a limited number of them, which we are
+  liquidating at a reduced price." Product Specifications: Manufacturer ShengShou, Type 3x3,
+  Gross Weight 104g, Dimensions 57.0mm, Item Weight 86.2g. An "Added: 2018-09-11" field is also
+  present — a known catalogue-migration artifact per the Pass 3 admission policy section 3, not
+  used as a date anywhere in this record's dependents.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. Explicitly
+  identifies this as the precursor to ShengShou Wind, corroborating the two families' separate
+  identities. No release date is claimed by this source beyond the inadmissible 'Added' field;
+  release date is left unknown."
+status: sourced

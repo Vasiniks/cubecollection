@@ -1,0 +1,24 @@
+# source: thecubicle-shengshou-fangyuan-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou FangYuan
+# 3x3, a 2019 capture.
+id: thecubicle-shengshou-fangyuan-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou FangYuan 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-fangyuan-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190716055948id_/https://www.thecubicle.com/products/shengshou-fangyuan-3x3"
+excerpt: |-
+  Product Description: "The ShengShou FangYuan 3x3 is the latest and greatest 3x3 from
+  ShengShou. With many modern features and improvements, like corner tracks and anti-corner
+  twist designs the FangYuan 3x3 is the most sophisticated 3x3 from ShengShou thus far, and it
+  is expected to be among the best mid-tier 3x3s on the market today." Product Specifications:
+  Manufacturer ShengShou, Type 3x3, Gross Weight 104g, Dimensions 56.5mm, Item Weight 89.1g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table."
+status: sourced

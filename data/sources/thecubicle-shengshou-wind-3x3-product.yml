@@ -1,0 +1,24 @@
+# source: thecubicle-shengshou-wind-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Wind 3x3,
+# a 2020 capture.
+id: thecubicle-shengshou-wind-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Wind 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-wind-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20201203231201id_/https://www.thecubicle.com/products/shengshou-wind-3x3"
+excerpt: |-
+  Product Description: "The ShengShou Wind is a 3x3 designed by popular big cube maker,
+  ShengShou. This cube features a circular track embedded on the centers and edges that allows
+  for soft and easy rotation. This puzzle has durable, high quality stickers and is smooth out
+  of the box." No product-specification table (size/weight) was present in this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. No numeric specifications
+  found in this capture; size and weight left unknown on the dependent model record."
+status: sourced

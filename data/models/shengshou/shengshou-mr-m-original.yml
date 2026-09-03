@@ -1,0 +1,59 @@
+# model: shengshou-mr-m-original
+# Pass 3 (model enumeration), agent D. ShengShou's first magnetic cube, per both the
+# Speedsolving wiki and TheCubicle's own copy.
+id: shengshou-mr-m-original
+entity: model
+family_id: shengshou-mr-m
+manufacturer_id: shengshou
+name: "ShengShou Mr. M 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.0
+  weight_g: 97.3
+  shape: standard
+  magnet_architecture: single_layer
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou Mr. M —
+  ShengShou's first attempt at a magnetic cube. For its time, it wasn't the worst. The puzzle is
+  known for having VERY strong magnets." TheCubicle's own product description
+  (thecubicle-shengshou-mr-m-3x3-product, 2019-07-16 capture): "The ShengShou Mr. M 3x3 is
+  ShengShou's first magnetic cube release. It features vibrant stickerless shades and a unique
+  bumpy texture on the exterior. The magnets are placed inside designated slots inside the
+  cube."
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-mr-m-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-shengshou-mr-m-3x3-product]
+    note: "Item Weight (97.3g), not Gross Weight (109g, which includes retail packaging)."
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-mr-m-3x3-product]
+    note: "'Magnets are placed inside designated slots inside the cube' and 'VERY strong
+      magnets' (wiki); exact architecture not stated in vocabulary terms, single_layer recorded
+      as the conservative default for a first-generation magnetic 3x3 of this era."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-mr-m-3x3-product]
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found for this specific product (only its successors carry version labels)."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-mr-m-3x3-product]

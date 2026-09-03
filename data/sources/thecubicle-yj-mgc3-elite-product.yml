@@ -1,0 +1,26 @@
+# source: thecubicle-yj-mgc3-elite-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC3 Elite (the
+# Speedsolving wiki's "MGC Elite"), a 2019 capture, confirming adjustable magnets/elasticity —
+# the wiki's own "first YJ cube to have customisable magnets" claim.
+id: thecubicle-yj-mgc3-elite-product
+entity: source
+kind: retailer
+title: "YJ MGC3 Elite - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc3-elite"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191215095755id_/https://www.thecubicle.com/products/yj-mgc3-elite"
+excerpt: |-
+  Product Description: "The MGC Elite is an upcoming flagship 3x3 made by YJ. A strong
+  improvement over its predecessor, the MGC Elite has adjustable magnet strength and
+  elasticity, coupled with a flexible, traditional tensioning screw." Product Specifications:
+  Manufacturer YJ, Type 3x3, Gross Weight 186g, Dimensions 55.5mm, Item Weight 87.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table.
+  'Adjustable magnet strength and elasticity' matches the wiki's 'first YJ cube to have
+  customisable magnets' claim, a first-party statement of a new adjustment mechanism."
+status: sourced

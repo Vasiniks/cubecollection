@@ -1,0 +1,26 @@
+# source: thecubicle-yj-mgc-evo-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC Evo 3x3, a
+# 2022 capture, describing a new dual-axis (magnetic + compression) adjustment mechanism.
+id: thecubicle-yj-mgc-evo-3x3-product
+entity: source
+kind: retailer
+title: "YJ MGC Evo 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc-evo-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220522114958id_/https://www.thecubicle.com/products/yj-mgc-evo-3x3"
+excerpt: |-
+  Product Description: "The YJ MGC Evo is the latest 3x3 in the MGC line. This cube features 6
+  magnetic adjustments and 10 compression adjustments. All of these can be changed with just
+  your hand and this small screwdriver that comes with the puzzle."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. '6 magnetic adjustments
+  and 10 compression adjustments' is a distinct, more granular adjustment mechanism than any
+  earlier MGC generation's description, a model-level case under DATA_MODEL 4.2. Named only as
+  'the latest 3x3 in the MGC line', with no specific predecessor identified by name, so no
+  succeeds relationship is set on the dependent model record."
+status: sourced

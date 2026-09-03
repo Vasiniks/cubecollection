@@ -1,0 +1,29 @@
+# source: thecubicle-yj-yulong-original-product-2019
+# Pass 3 (model enumeration), agent D. TheCubicle's own 2019 capture of the current-at-the-time
+# YJ YuLong product page (distinct from the earlier 2014 thecubicle.us capture already recorded
+# as thecubicle-us-yj-yulong-product), used for design/mechanism description rather than
+# identity.
+id: thecubicle-yj-yulong-original-product-2019
+entity: source
+kind: retailer
+title: "YJ YuLong - TheCubicle (2019 capture)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-yulong"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824064601id_/https://www.thecubicle.com/products/yj-yulong"
+excerpt: |-
+  Product Description: "The YJ YuLong mechanism has been mostly adapted from the YJ ChiLong,
+  but it features minor adjustments that allow stickerless variants to be produced. Phantom
+  Stickerless cubes: The Phantom Stickerless variants of the YJ YuLong have black carbon-fiber
+  textured stickers placed on all sides, which gives the cube a unique look." Product
+  Specifications: Manufacturer YJ, Type 3x3, Gross Weight 100g. No Item Weight or Dimensions
+  field was present in this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. Corroborates the
+  ChiLong-to-YuLong mechanical-adaptation claim already documented (at tier 3) on
+  yj-yulong.yml."
+status: sourced

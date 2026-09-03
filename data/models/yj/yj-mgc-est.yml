@@ -1,0 +1,56 @@
+# model: yj-mgc-est
+# Pass 3 (model enumeration), agent D. "MGC EST" — new edge-piece geometry ("cutouts on the
+# edges") and a stated "completely unique adjustment system", a mould- and mechanism-level
+# change under DATA_MODEL 4.2. No source found this pass names a specific predecessor by name.
+id: yj-mgc-est
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC EST"
+scope_class: core
+generation:
+  label: "EST"
+  basis: manufacturer_declared
+specs:
+  adjustment_system: other
+description: |-
+  TheCubicle's own product description (thecubicle-yj-mgc-est-3x3-product, 2024-09-10 capture):
+  "The MGC EST 3x3 is the latest 3x3 from YJ. YJ has done its best to innovate in the 3x3 space,
+  with this cube having cutouts on the edges as well as a completely unique adjustment system.
+  The YJ MGC EST 3x3, while having a non-standard look, has good performance right out of the
+  box." Comes with spare magnets, adjustment screws and springs, extra center pieces, and an
+  MGC EST cube bag. A further sold configuration, "MGC EST 3x3 Customization Kit", exists at
+  this retailer — treated as a variant/accessory bundle, not a further generation.
+status: drafted
+attestations:
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc-est-3x3-product]
+    note: "'A completely unique adjustment system' does not map to any specific existing
+      vocabulary value; recorded as 'other' with this note flagging the description gap."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found. 'Non-standard look' is stated but does not clearly map to
+      the 'shape' vocabulary (which distinguishes overall external form, e.g. pillowed, not
+      edge cutouts on an otherwise standard cube)."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. 'Spare magnets' included in the box implies user-replaceable magnets, but no specific architecture is stated."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-est-3x3-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-mgc-est-3x3-product]

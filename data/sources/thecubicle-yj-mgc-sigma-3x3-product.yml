@@ -1,0 +1,27 @@
+# source: thecubicle-yj-mgc-sigma-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ MGC Sigma 3x3, a
+# 2026 capture, the newest MGC generation found this pass, explicitly framed as Beta's
+# successor.
+id: thecubicle-yj-mgc-sigma-3x3-product
+entity: source
+kind: retailer
+title: "YJ MGC Sigma 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc-sigma-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260216152704id_/https://www.thecubicle.com/products/yj-mgc-sigma-3x3"
+excerpt: |-
+  Product Description: "The YJ MGC Sigma is what the Beta was trying to be. Larger core
+  magnets lock the cube into place with smoother alignment. Lighter corner-edge magnets create
+  balance without hesitation. Sharper corner caps reduce unwanted twists at the source.
+  Finished with red accents and a new insignia."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. 'What the Beta was trying
+  to be' is explicit succession language relative to yj-mgc3-beta. 'Larger core magnets...
+  lighter corner-edge magnets... sharper corner caps' together describe both a magnet-
+  architecture and a piece-geometry change, a model-level case under DATA_MODEL 4.2."
+status: sourced

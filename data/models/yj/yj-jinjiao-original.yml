@@ -1,0 +1,55 @@
+# model: yj-jinjiao-original
+# Pass 3 (model enumeration), agent D. YJ JinJiao's sole documented 3x3 generation. Explicitly
+# non-WCA-legal per TheCubicle's own copy. `scope_class: reference_only` is used rather than
+# `conditional`, because no source found this pass states a documented historical or collector
+# significance beyond "it is an unusual concave shape mod" — per the S6 admission policy,
+# `reference_only` is the correct default here rather than inventing a significance claim to
+# clear the `conditional` bar.
+id: yj-jinjiao-original
+entity: model
+family_id: yj-jinjiao
+manufacturer_id: yj
+name: "YJ JinJiao"
+scope_class: reference_only
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ JinJiao Released December
+  2018. The YJ JinJiao is an interesting, non-comp-legal 3x3 which has a strange concaveness,
+  the corners spiking out from the rest of the cube, somewhat like the Super Floppy Fidget
+  Spinners... this cube is more of a collection piece than anything else." TheCubicle's own
+  product description (thecubicle-yj-jinjiao-3x3-product, 2020-09-20 capture) states directly:
+  "Although it is not WCA legal, it turns well out of the box and is a fun, different feeling
+  puzzle to solve!" No successor carrying the "JinJiao" name was found (per yj-jinjiao.yml);
+  this is the family's sole model.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Described as 'concave' with spiking corners; no vocabulary term other than 'other' fits, and 'other' was not set without a clearer description of the geometry, so this field is left unset rather than guessed."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-jinjiao-3x3-product]

@@ -1,0 +1,26 @@
+# source: thecubicle-yj-chilong-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ ChiLong, a 2019
+# capture.
+id: thecubicle-yj-chilong-product
+entity: source
+kind: retailer
+title: "YJ ChiLong - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-chilong"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190718064030id_/https://www.thecubicle.com/products/yj-chilong"
+excerpt: |-
+  Product Description: "The YJ ChiLong's internal mechanism has been adapted from the YJ
+  SuLong. New features include removable torpedoes and tracks on the edge pieces similar to
+  those in the ShengShou Aurora. Overall, the cube feels 'clackier' than the YJ SuLong and it
+  has less turning resistance." Product Specifications: Manufacturer YJ, Type 3x3, Gross Weight
+  104g. No Item Weight or Dimensions field was present in this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. Corroborates the
+  SuLong-to-ChiLong mechanical-adaptation claim already documented (at tier 3) on
+  yj-chilong.yml, without altering the frozen family-level split between the two."
+status: sourced

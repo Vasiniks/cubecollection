@@ -1,0 +1,69 @@
+# model: yj-meta3
+# Pass 3 (model enumeration), agent D. YJ Meta's sole model to date. TheCubicle sells three
+# configurations under this name (yj-meta3-3x3-magnetic, yj-meta3-3x3-8-magnet-ball-core-uv,
+# yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv), but its own copy states all three share
+# "the same upgraded base mechanism" — a variant-level (magnet count/ball-core/UV
+# coating/wing-magnets) materiality difference per DATA_MODEL 4.1, not a distinct model. Those
+# three configurations are pass-4 material, not enumerated as separate models here.
+id: yj-meta3
+entity: model
+family_id: yj-meta
+manufacturer_id: yj
+name: "YJ Meta3"
+aliases:
+  - "YJ Meta"
+scope_class: core
+generation:
+  label: "Meta3"
+  ordinal: 1
+  basis: manufacturer_declared
+description: |-
+  TheCubicle's own product description (thecubicle-yj-meta3-3x3-magnetic-product, 2026-06-16
+  capture): "The YJ Meta3 3x3 (Magnetic) is the standard version of the Meta. It comes equipped
+  with a piece-to-piece magnetic system for consistent turns at a great value. It keeps the same
+  upgraded base mechanism as the higher-end models, like center skirts, edge cut-outs, and
+  anti-twist corner caps, making it a more refined and controllable successor to the MGC Beta
+  3x3, without the extra features." "The higher-end models" (8-magnet ball-core UV and
+  wing-magnetic 8-magnet ball-core UV configurations) are read as variants of this one model,
+  not further generations, since the retailer's own copy states they share "the same upgraded
+  base mechanism." Per yj-meta.yml, this family is kept deliberately separate from yj-mgc
+  despite the explicit "successor to the MGC Beta 3x3" language, because MGC itself continued
+  past Meta3's launch (see that family's own reasoning) — `succeeds`/`relationships` to any
+  yj-mgc model is deliberately NOT set here for the same reason, pending a manufacturer-
+  first-party source.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found. The base 'Magnetic' configuration is described only as
+      'piece-to-piece magnetic', not MagLev; the ball-core UV configurations may differ, a
+      pass-4 variant question."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. 'Piece-to-piece magnetic system' does not map cleanly to a
+      single vocabulary value without further detail."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product]
+    note: "'Meta3' / 'Meta' is YJ's own product naming per the retailer's consistent usage across all three configurations; not a numbered version, so ordinal is 1 by default rather than evidenced directly."
+  /aliases:
+    confidence: reported
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product]

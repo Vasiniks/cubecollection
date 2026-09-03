@@ -1,0 +1,28 @@
+# source: thecubicle-shengshou-mr-m-v2-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Mr. M V2
+# 3x3, a 2020 capture (still resolving as of a 2026 capture), stating explicitly that it has
+# "an updated mechanism and a spring compression adjustment system."
+id: thecubicle-shengshou-mr-m-v2-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Mr. M V2 3x3 Magnetic Speed Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-mr-m-v2-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200923015747id_/https://www.thecubicle.com/products/shengshou-mr-m-v2-3x3"
+excerpt: |-
+  Product Description: "This 3x3 speed cube is the successor to the original Mr. M from
+  ShengShou. This new iteration comes with an updated mechanism and a spring compression
+  adjustment system!" A customer review adds detail: "While the Mr. M v2 doesn't come in
+  stickerless, or have the texture of the first Mr. M 3x3, the difference is big... It is very
+  light, and the springs can be changed without taking it apart."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. 'Updated mechanism and a
+  spring compression adjustment system' is a direct, first-party statement of a mechanism-level
+  (not merely configuration-level) change from the original Mr. M — a clean model-level case
+  under DATA_MODEL 4.2."
+status: sourced

@@ -1,0 +1,27 @@
+# source: thecubicle-yj-guanlong-plus-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ GuanLong Plus
+# (the wiki's "GuanLong V2"), a 2019 capture, stating a redesigned mould ("squared off corners
+# and a more sophisticated internal design").
+id: thecubicle-yj-guanlong-plus-3x3-product
+entity: source
+kind: retailer
+title: "YJ GuanLong Plus 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-guanlong-plus-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190723131446id_/https://www.thecubicle.com/products/yj-guanlong-plus-3x3"
+excerpt: |-
+  Product Description: "The YJ GuanLong Plus is the new and updated version of the classic YJ
+  GuanLong, which was first released in October 2014 and set the standard for budget-friendly
+  3x3s. The update includes squared off corners and a more sophisticated internal design that
+  give it a more modern feel compared to the original GuanLong." Product Specifications:
+  Manufacturer YJ, Type 3x3, Gross Weight 91g, Dimensions 56.0mm, Item Weight 75.2g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. 'Squared
+  off corners and a more sophisticated internal design' is a direct statement of piece-geometry
+  (mould-level) change, a clean model-level case under DATA_MODEL 4.2."
+status: sourced

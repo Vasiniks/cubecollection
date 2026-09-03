@@ -1,0 +1,75 @@
+# model: yj-mgc-elite-v2
+# Pass 3 (model enumeration), agent D. TheCubicle's own "MGC3 Elite V2". Recorded as a new
+# model rather than a variant of yj-mgc-elite under DATA_MODEL 4.2's default-to-split
+# instruction, though the case is genuinely marginal: the retailer's own mechanism description
+# is nearly word-for-word identical to the original Elite's, and the only stated physical
+# difference is "frosted plastic" — ordinarily a material/finish trait sold as a variant, not a
+# design change. The manufacturer's own "second version"/"V2" naming and its standing as a
+# fully separate, persistent product page are the deciding factors, held at uncertain
+# confidence throughout.
+id: yj-mgc-elite-v2
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC Elite V2"
+aliases:
+  - "YJ MGC3 Elite V2"
+scope_class: core
+generation:
+  label: "Elite V2"
+  ordinal: 4
+  basis: manufacturer_declared
+specs:
+  shape: standard
+  magnet_architecture: adjustable
+  adjustment_system: tension_only
+description: |-
+  TheCubicle's own product description (thecubicle-yj-mgc3-elite-v2-3x3-product, 2022-10-19
+  capture): "The MGC Elite v2 is YJ's flagship 3x3. The MGC Elite V2 has adjustable elasticity
+  and magnet strength, coupled with a traditional tensioning screw... The second version of
+  this puzzle comes with frosted plastic." This description is nearly identical to the original
+  Elite's own copy, differing chiefly in the stated plastic finish — flagged explicitly as a
+  boundary case a future pass with a manufacturer-first-party source should revisit.
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-mgc-elite
+    target_entity: model
+    note: "TheCubicle's own copy: 'The second version of this puzzle comes with frosted plastic.'"
+attestations:
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-elite-v2-3x3-product]
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-elite-v2-3x3-product]
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-elite-v2-3x3-product]
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-elite-v2-3x3-product]
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-elite-v2-3x3-product]
+    note: "'V2' is the manufacturer's own naming, but whether it denotes a genuine design
+      generation or a sold finish option of the original Elite is the unresolved question this
+      whole record flags — see description."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-elite-v2-3x3-product]
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-elite-v2-3x3-product]

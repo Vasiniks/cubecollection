@@ -1,0 +1,25 @@
+# source: thecubicle-yj-mgc-original-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the original YJ MGC, a
+# 2019 capture.
+id: thecubicle-yj-mgc-original-product
+entity: source
+kind: retailer
+title: "YJ MGC - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721133519id_/https://www.thecubicle.com/products/yj-mgc"
+excerpt: |-
+  Product Description: "The YJ MGC is a new, high quality 3x3 by veteran cube producer, YJ.
+  The MGC comes at a compact size of 55mm and features a magnetic positioning system, primary
+  internals, and stellar all-around performance. The MGC has a smooth, bubbly feel and delivers
+  many qualities typically attributed to flagship cubes at an economical price." Product
+  Specifications: Manufacturer YJ, Type 3x3, Gross Weight 195g, Dimensions 55.5mm, Item Weight
+  85.8g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table."
+status: sourced

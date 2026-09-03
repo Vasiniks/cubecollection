@@ -1,0 +1,65 @@
+# model: yj-guanlong-v3
+# Pass 3 (model enumeration), agent D. The wiki's "GuanLong V3".
+id: yj-guanlong-v3
+entity: model
+family_id: yj-guanlong
+manufacturer_id: yj
+name: "YJ GuanLong V3"
+scope_class: core
+generation:
+  label: "V3"
+  ordinal: 3
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+  weight_g: 72.9
+  shape: standard
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "another version called the YJ
+  Guanlong V3." TheCubicle's own product description (thecubicle-yj-guanlong-v3-product,
+  2019-07-21 capture): "The YJ GuanLong V3 is the newest version of the classic YJ GuanLong...
+  This version features an updated design for better performance." Neither source specifies
+  exactly what changed beyond "updated design"; the model/variant boundary judgement here rests
+  on the manufacturer's own "V3" naming continuing the established GuanLong version-number
+  convention (per DATA_MODEL 4.2, a version number is a weak-but-real signal of a design
+  change), not on a stated mould or mechanism detail.
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-guanlong-plus
+    target_entity: model
+    note: "Ordering follows the Speedsolving wiki's own listing order (GuanLong, V2/Plus, V3,
+      V4) and TheCubicle's 'newest version of the classic YJ GuanLong' framing; neither source
+      names Plus/V2 as the specific immediate predecessor by name."
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-guanlong-v3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-guanlong-v3-product]
+    note: "Item Weight (72.9g), not Gross Weight (86g, which includes retail packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-guanlong-v3-product]
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-v3-product]
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-v3-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-v3-product]

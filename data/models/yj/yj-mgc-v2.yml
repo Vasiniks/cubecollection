@@ -1,0 +1,75 @@
+# model: yj-mgc-v2
+# Pass 3 (model enumeration), agent D. The Speedsolving wiki's "MGC V2" / TheCubicle's "MGC3
+# II" — a new spring system explicitly compared to GAN's Elasticity System, and the first
+# stickerless MGC configuration.
+id: yj-mgc-v2
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC V2"
+aliases:
+  - "YJ MGC3 II"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+announced:
+  value: "2018-11"
+  precision: month
+  qualifier: circa
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products): "YJ MGC V2 Released November
+  2018. At $20, the MGC V2 was undoubtedly the best value for money 3x3 that was available... a
+  new spring system which is very similar to the Gans Elasticity System... A feature previously
+  unseen on the MGC is a stickerless variant." TheCubicle's own product description
+  (thecubicle-yj-mgc3-ii-product, 2020-09-27 capture): "The YJ MGC3 II is a magnetic 3x3 speed
+  cube by YJ, and the update to the YJ MGC3. A magnetic cube 8 grams lighter than its
+  predecessor, the MGC3 II comes this time in stickerless, making it accessible for more
+  people. It is inherently faster than the V1."
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-mgc-original
+    target_entity: model
+    note: "TheCubicle's own copy: 'the update to the YJ MGC3'; '8 grams lighter than its predecessor'; 'inherently faster than the V1'."
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-ii-product]
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Only a relative claim ('8 grams lighter than its predecessor') was found, not a direct measured figure; not recorded as a numeric spec."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "'A new spring system which is very similar to the Gans Elasticity System' does not
+      map cleanly onto a single adjustment-systems vocabulary value without more detail
+      (interchangeable springs suggest ges_nut, but this is not stated in those terms); left
+      unset rather than guessed."
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-yj-mgc3-ii-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-mgc3-ii-product]

@@ -1,0 +1,25 @@
+# source: thecubicle-shengshou-mr-m-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Mr. M
+# 3x3, a 2019 capture — "ShengShou's first magnetic cube release" per its own copy.
+id: thecubicle-shengshou-mr-m-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Mr. M 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-mr-m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190716062540id_/https://www.thecubicle.com/products/shengshou-mr-m-3x3"
+excerpt: |-
+  Product Description: "The ShengShou Mr. M 3x3 is ShengShou's first magnetic cube release. It
+  features vibrant stickerless shades and a unique bumpy texture on the exterior. The magnets
+  are placed inside designated slots inside the cube, and they give the cube a snappy and
+  tactile feeling. Out of the box, the cube is loose and fast." Product Specifications:
+  Manufacturer ShengShou, Type 3x3, Gross Weight 109g, Dimensions 56.0mm, Item Weight 97.3g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. Confirms
+  'ShengShou's first magnetic cube release', matching the Speedsolving wiki's own framing."
+status: sourced

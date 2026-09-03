@@ -1,0 +1,23 @@
+# source: thecubicle-yj-sulong-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ SuLong, a 2019
+# capture.
+id: thecubicle-yj-sulong-product
+entity: source
+kind: retailer
+title: "YJ SuLong - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-sulong"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721124110id_/https://www.thecubicle.com/products/yj-sulong"
+excerpt: |-
+  Product Description: "The YJ SuLong is the most recent 3x3 cube from YongJun. It measures
+  56mm across, and it strikes a good balance between affordability and performance." Product
+  Specifications: Manufacturer YJ, Type 3x3, Gross Weight 100g, Dimensions 56.0mm. No Item
+  Weight field was present in this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and partial spec table."
+status: sourced

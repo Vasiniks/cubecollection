@@ -1,0 +1,25 @@
+# source: thecubicle-yj-jinjiao-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ JinJiao 3x3, a
+# 2020 capture, stating directly "it is not WCA legal."
+id: thecubicle-yj-jinjiao-3x3-product
+entity: source
+kind: retailer
+title: "YJ JinJiao 3x3 Speed Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-jinjiao-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920112638id_/https://www.thecubicle.com/products/yj-jinjiao-3x3"
+excerpt: |-
+  Product Description: "The YJ JinJiao 3x3 is a concave 3x3 speed cube that slightly muted
+  stickerless shades. The most prominent feature of this puzzle, however, is the concave
+  design. Although it is not WCA legal, it turns well out of the box and is a fun, different
+  feeling puzzle to solve!"
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description, and the direct source for
+  this product's non-WCA-legal status (corroborating the Speedsolving wiki's own 'non-comp-legal'
+  framing at a stronger tier)."
+status: sourced

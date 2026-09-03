@@ -1,0 +1,29 @@
+# source: thecubicle-shengshou-mr-m-s-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Mr. M S
+# 3x3, a 2022 capture — thin retailer copy naming it "the latest in the Mr. M series" but citing
+# only a matte finish as the distinguishing feature from Mr. M V2.
+id: thecubicle-shengshou-mr-m-s-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Mr. M S 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-mr-m-s-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220323041131id_/https://www.thecubicle.com/products/shengshou-mr-m-s-3x3"
+excerpt: |-
+  Product Description (in full): "The Mr. M S 3x3 is the latest in the Mr. M series from
+  ShengShou. This is a magnetic puzzle with a matte finish."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description, but very thin — the only
+  distinguishing feature named is a matte finish (ordinarily a coating/variant-level trait, not
+  a mechanism difference). Named as its own generation ('the latest in the Mr. M series') by
+  the retailer and as 'Mr. MS — another updated version of the Mr. M' by the Speedsolving wiki
+  (speedsolving-wiki-shengshou-products), and sold as a fully separate, persistent product page
+  rather than a checkout option on the Mr. M V2 listing. The model/variant boundary here is
+  genuinely unclear; see the dependent model record's own attestations for the resulting
+  uncertain-confidence treatment."
+status: sourced

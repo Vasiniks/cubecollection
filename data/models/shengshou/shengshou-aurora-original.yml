@@ -1,0 +1,47 @@
+# model: shengshou-aurora-original
+# Pass 3 (model enumeration), agent D. ShengShou Aurora's sole documented 3x3 generation.
+id: shengshou-aurora-original
+entity: model
+family_id: shengshou-aurora
+manufacturer_id: shengshou
+name: "ShengShou Aurora 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+description: |-
+  TheCubicle's own product description (thecubicle-shengshou-aurora-3x3-product, 2019-07-18
+  capture): "The ShengShou Aurora is the latest 3x3 designed by popular big cube maker
+  ShengShou... An upgrade from the ShengShou Wind 3x3, the Aurora comes with larger holes
+  between the pieces which allow for more freedom in reverse corner cutting." No successor 3x3
+  generation carrying the "Aurora" name was found (per shengshou-aurora.yml); this is the
+  family's sole model. The retailer's product-specifications table gave only a Gross Weight
+  (95g, includes packaging) with no Item Weight or Dimensions field, so weight and size are
+  left unknown rather than recorded from a packaged-weight figure.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found. Only a Gross (packaged) Weight of 95g was found, not treated as an item-weight spec."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in this product's own description."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention for a single-model family; no manufacturer or community numbering was found."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-aurora-3x3-product]

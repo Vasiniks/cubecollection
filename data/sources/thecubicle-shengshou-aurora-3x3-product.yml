@@ -1,0 +1,31 @@
+# source: thecubicle-shengshou-aurora-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the ShengShou Aurora
+# 3x3, a 2019 capture. States directly that Aurora is "an upgrade from the ShengShou Wind 3x3" —
+# corroborating the two families' documented relationship without merging them (they remain
+# separate, differently-named products per the frozen Pass 2 family boundary).
+id: thecubicle-shengshou-aurora-3x3-product
+entity: source
+kind: retailer
+title: "ShengShou Aurora 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-aurora-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190718064147id_/https://www.thecubicle.com/products/shengshou-aurora-3x3"
+excerpt: |-
+  Product Description: "The ShengShou Aurora is the latest 3x3 designed by popular big cube
+  maker ShengShou. This cube features a circular track embedded on the centers and edges that
+  allows for soft and easy rotation. An upgrade from the ShengShou Wind 3x3, the Aurora comes
+  with larger holes between the pieces which allow for more freedom in reverse corner cutting.
+  This puzzle has durable, high quality stickers and is smooth out of the box." Product
+  specifications table: Manufacturer ShengShou, Type 3x3, Gross Weight 95g. No Item Weight or
+  Dimensions field was present in this capture (Gross Weight includes retail packaging and is
+  not used as a precise item-weight spec on the dependent model record).
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. 'An upgrade from the
+  ShengShou Wind 3x3' corroborates the wiki's own framing (speedsolving-wiki-shengshou-
+  products) without changing either family's frozen identity."
+status: sourced

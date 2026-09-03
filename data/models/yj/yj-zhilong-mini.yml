@@ -1,0 +1,57 @@
+# model: yj-zhilong-mini
+# Pass 3 (model enumeration), agent D. YJ ZhiLong's sole documented 3x3 generation, a compact
+# (50mm) format cube. `scope_class: core` is recorded provisionally: no source found this or
+# the prior pass states WCA competition regulations restrict a 50mm 3x3x3, so no non-WCA-legal
+# framing was found either, but this is flagged for human review given the unusually small size.
+id: yj-zhilong-mini
+entity: model
+family_id: yj-zhilong
+manufacturer_id: yj
+name: "YJ ZhiLong Mini 3x3 M"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 50.0
+  shape: standard
+  magnet_architecture: single_layer
+description: |-
+  TheCubicle's own product description (thecubicle-yj-zhilong-mini-3x3-product, 2023-03-22
+  capture, with an earlier capture from 2022-03-21): "The YJ ZhiLong Mini 3x3 M is a new
+  magnetic mini cube by YongJun Toys. Measuring 50mm across, the ZhiLong Mini 3x3 M boasts an
+  incredibly compact feel and a speedy turn... currently stands as the best 50mm cube on the
+  market. Perfect for people with smaller hands or cubers who prefer smaller puzzles." No
+  manufacturer-first-party source or further ZhiLong generation was found (per yj-zhilong.yml);
+  this is the family's sole model.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-zhilong-mini-3x3-product]
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-zhilong-mini-3x3-product]
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-yj-zhilong-mini-3x3-product]
+    note: "The 'M' in the product name and 'magnetic mini cube' in the description confirm magnets are present; exact architecture not stated."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found."
+  /description:
+    confidence: probable
+    sources: [thecubicle-yj-zhilong-mini-3x3-product]

@@ -1,0 +1,62 @@
+# model: yj-mgc-evo-ii
+# Pass 3 (model enumeration), agent D. "MGC Evo II" — the retailer's own naming-numeral
+# ("Evo II") and "new and improved version of their flagship 3x3" language are read together as
+# sufficient for a succeeds relationship to yj-mgc-evo, following the same naming-numeral
+# convention already applied elsewhere in this archive (e.g. gan-356-i-carry-2).
+id: yj-mgc-evo-ii
+entity: model
+family_id: yj-mgc
+manufacturer_id: yj
+name: "YJ MGC Evo II"
+scope_class: core
+generation:
+  label: "Evo II"
+  basis: manufacturer_declared
+specs:
+  magnet_architecture: adjustable
+description: |-
+  TheCubicle's own product description (thecubicle-yj-mgc-evo-ii-3x3-product, 2024-01-13
+  capture): "The YJ MGC Evo II is YJ's new and improved version of their flagship 3x3. This
+  updated puzzle has hand-adjustable settings and screwdriver-adjustable magnets... Please
+  note: the center caps of this puzzle only fit in two directions" (a piece-geometry detail
+  consistent with, though not conclusive proof of, a new mould). A further sold configuration,
+  "MGC Evo II 3x3 (Enhanced Core Positioning Edition)", also exists at this retailer — treated
+  as a variant/edition of this model, not a further generation, per this pass's boundary.
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-mgc-evo
+    target_entity: model
+    note: "'New and improved version of their flagship 3x3', plus the 'Evo II' naming numeral, read as a direct successor to MGC Evo."
+attestations:
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-product]
+    note: "'Screwdriver-adjustable magnets' maps to the 'adjustable' vocabulary value."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "'Hand-adjustable settings' is too vague to map to a specific vocabulary value; left unset rather than guessed."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-product]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-product]

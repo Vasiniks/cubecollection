@@ -1,0 +1,53 @@
+# model: yj-sulong-original
+# Pass 3 (model enumeration), agent D. YJ's earliest documented 3x3, the family's sole model.
+id: yj-sulong-original
+entity: model
+family_id: yj-sulong
+manufacturer_id: yj
+name: "YJ SuLong"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.0
+  shape: standard
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products, tier-3 override per that
+  source's own reliability note): "YJ SuLong Released October 2013. Considered a good budget
+  cube, with a unique light, smooth, and crispy feel... It was uniquely offered as a glow in
+  the dark cube which made up a large chunk of the sales." TheCubicle's own product description
+  (thecubicle-yj-sulong-product, 2019-07-21 capture): "The YJ SuLong is the most recent 3x3
+  cube from YongJun. It measures 56mm across, and it strikes a good balance between
+  affordability and performance." No successor carrying the "SuLong" name was found (per
+  yj-sulong.yml); this is the family's sole model.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yj-sulong-product]
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-sulong-product]
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found. Only a Gross (packaged) Weight of 100g was found, not treated as an item-weight spec."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No magnet is mentioned in either source; this predates YJ's magnetic era."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-sulong-product]

@@ -1,0 +1,58 @@
+# model: shengshou-fangyuan-original
+# Pass 3 (model enumeration), agent D. ShengShou FangYuan's original (non-magnetic) 3x3
+# generation.
+id: shengshou-fangyuan-original
+entity: model
+family_id: shengshou-fangyuan
+manufacturer_id: shengshou
+name: "ShengShou FangYuan 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.5
+  weight_g: 89.1
+  shape: standard
+  magnet_architecture: none
+description: |-
+  TheCubicle's own product description (thecubicle-shengshou-fangyuan-3x3-product, 2019-07-16
+  capture): "The ShengShou FangYuan 3x3 is the latest and greatest 3x3 from ShengShou. With many
+  modern features and improvements, like corner tracks and anti-corner twist designs the
+  FangYuan 3x3 is the most sophisticated 3x3 from ShengShou thus far." No magnet is mentioned in
+  this product's own description, in contrast to its successor (shengshou-fangyuan-v2-m).
+status: drafted
+relationships: []
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-3x3-product]
+    note: "Item Weight (89.1g), not Gross Weight (104g, which includes retail packaging)."
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-fangyuan-3x3-product]
+    note: "Inferred from the absence of any magnet mention, contrasted against the explicitly
+      magnetic successor's description. Not a direct manufacturer statement of 'non-magnetic'."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-fangyuan-3x3-product]
+    note: "Inferred from ordinary 3x3 speedcube category placement."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found for this specific product (only its successor carries a 'V2' label)."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-3x3-product]

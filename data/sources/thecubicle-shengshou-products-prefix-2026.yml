@@ -1,0 +1,63 @@
+# source: thecubicle-shengshou-products-prefix-2026
+# Pass 3 (model enumeration), agent D. A full, non-truncated wayback CDX `prefix` sweep of
+# thecubicle.com/products/shengshou* (474 distinct captured URLs, 2019-2026), run specifically
+# because RESEARCH_SPEC section 3.6a and this pass's brief flag ShengShou as a manufacturer
+# whose official domain is dead but whose retail catalogue is demonstrably current. This sweep
+# directly supersedes the narrower finding in thecubicle-shengshou-collection-2025 (a
+# collections-page-only crawl that found "no ordinary ShengShou 3x3" and was current only as of
+# that capture window): the /products/ prefix, run independently in this pass, surfaces
+# persistent 3x3 product pages for all seven families this agent was assigned
+# (shengshou-3x3, shengshou-wind, shengshou-aurora, shengshou-fangyuan, shengshou-legend,
+# shengshou-mr-m, shengshou-pearl) plus two 3x3 product lines with no corresponding family
+# record at all (see reliability_note).
+id: thecubicle-shengshou-products-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/shengshou* — full product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-3x3"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/shengshou (2019-2026 captures,
+  474 distinct URLs, not truncated) returns, among many non-3x3 ShengShou products (big cubes,
+  Megaminx, Pyraminx, Square-1, clocks, shape mods), the following 3x3-relevant product paths:
+  shengshou-3x3 (2020-09-22), shengshou-wind-3x3 (2020-12-03), shengshou-aurora-3x3 (2019-07-18)
+  and shengshou-aurora-3x3-unstickered (2020-09-20), shengshou-fangyuan-3x3 (2019-07-16),
+  shengshou-fangyuan-3x3-gift-box (2019-07-18), shengshou-fangyuan-v2-m (2019-09-22),
+  shengshou-legend-3x3 (2019-07-16), shengshou-legend-3x3-unstickered (2021-09-21),
+  shengshou-legend-3x3-metallic (2024-02-20), shengshou-legend-3x3-m-metallic (2024-04-19),
+  shengshou-big-legend-3x3-7-0cm (2020-09-18), shengshou-mr-m-3x3 (2019-07-16),
+  shengshou-mr-m-v2-3x3 (2020-09-23, still resolving as of a 2026-02-25 capture),
+  shengshou-mr-m-s-3x3 (2022-03-23), shengshou-pearl-3x3 (2019-08-24) — plus, outside this
+  pass's seven assigned families entirely, shengshou-crazy-3x3/-jelly-le/-v2 (a shape-mod line)
+  and shengshou-yufeng-3x3-m-magnetic-core-magelev (2023-02-05) and shengshou-yufeng-v2-3x3-m
+  (2023-06-03, still resolving as of a 2025-11-29 capture) — a "YuFeng" flagship 3x3 line with
+  no corresponding family record anywhere in data/families/. Also present: shengshou-rainbow-3x3,
+  shengshou-gem-3x3, shengshou-tank-3x3, shengshou-metal-cube-3x3, and several 46mm/keychain/
+  novelty 3x3 SKUs not chased this pass.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix https://www.thecubicle.com/products/shengshou --limit 2000`) is the primary evidence;
+  the excerpt reproduces the path list and dates directly, per D3/RESEARCH_SPEC 3.5's allowance
+  for evidence that does not reduce to one page's text."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure. RESEARCH_SPEC section 3.6a compliance record
+  for this pass: this is the required "archived retailer /products/ prefix sweep, even when the
+  official site is healthy" check (ShengShou's official site is in fact dead, per
+  data/manufacturers/shengshou.yml) — outcome: SWEPT, MUCH FOUND, not "nothing new". It directly
+  overturns the pass-2 ShengShou method note's premise that current ShengShou 3x3 presence had
+  "genuinely receded" — the /collections/ page used in pass 2 filters differently than the raw
+  /products/ prefix and missed a live, dated 3x3 catalogue.
+
+  IMPORTANT ESCALATION, not resolved by this source or this pass: ShengShou YuFeng (a magnetic-
+  core/maglev-marketed flagship 3x3, first captured 2023, still selling in 2025) and ShengShou
+  Crazy 3x3 (a shape-mod line) are both demonstrably real, currently-sold ShengShou 3x3 product
+  lines with NO corresponding family record in data/families/ (only 7 ShengShou 3x3 families
+  exist, all assigned to this agent, none named YuFeng or Crazy). Family creation is frozen for
+  Pass 3 per the taxonomy-freeze rule; this is recorded here and in this agent's report as a
+  finding for pass-2 re-opening, not acted on.
+status: sourced

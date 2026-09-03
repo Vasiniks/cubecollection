@@ -1,0 +1,25 @@
+# source: thecubicle-yj-yulong-v2-m-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ YuLong V2 M, a
+# 2019 capture. Body copy was thin (spec table only); the Speedsolving wiki's own text ("A
+# factory magnetized and updated version of the YJ YuLong") is the descriptive load-bearing
+# source, corroborated here for spec figures.
+id: thecubicle-yj-yulong-v2-m-product
+entity: source
+kind: retailer
+title: "YJ YuLong V2 M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-yulong-v2-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190512095850id_/https://www.thecubicle.com/products/yj-yulong-v2-m"
+excerpt: |-
+  Product Specifications: Manufacturer YJ, Type 3x3, Gross Weight 103g, Dimensions 56.0mm, Item
+  Weight 88.9g. No prose product description was present in this particular capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer spec table only; no descriptive copy in this
+  capture. Model-level identity and mechanism-change framing for this product rests on
+  speedsolving-wiki-yongjun-products (tier-3 override), not on this source."
+status: sourced

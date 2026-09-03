@@ -1,0 +1,76 @@
+# model: yj-guanlong-v4
+# Pass 3 (model enumeration), agent D. The wiki's "GuanLong V4" — TheCubicle's own copy states
+# a fixed-tension core, and a customer review adds that it shares its core with the MGC Evo
+# 3x3 and abandons the prior versions' screw-and-spring system entirely, a mechanism-level
+# change under DATA_MODEL 4.2.
+id: yj-guanlong-v4
+entity: model
+family_id: yj-guanlong
+manufacturer_id: yj
+name: "YJ GuanLong V4"
+scope_class: core
+generation:
+  label: "V4"
+  ordinal: 4
+  basis: manufacturer_declared
+specs:
+  shape: standard
+  core_system: standard
+  adjustment_system: other
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-yongjun-products, last edited November 2023):
+  "and now the YJ Guanlong V4." TheCubicle's own product description
+  (thecubicle-yj-guanlong-v4-3x3-product, 2022-07-07 capture): "The GuanLong has been one of
+  the top options for budget 3x3 since its release. The V4 offers a sturdy construction and
+  decent turning at a great price! This cube has fixed tensions to ensure consistent
+  performance out of the box." A customer review on the same page adds (community-level,
+  corroborating only): "this V4 uses a strange core and adjustment system. The core is the same
+  exact one that's used on the newest MGC EVO 3x3 but with no true adjustments for the
+  tensions. Unlike the previous 3 versions that used the traditional Screw and spring
+  adjustment system."
+status: drafted
+relationships:
+  - type: succeeds
+    target: yj-guanlong-v3
+    target_entity: model
+    note: "Ordering follows the Speedsolving wiki's own listing order and the naming-numeral
+      convention (V3 to V4); the retailer copy itself does not explicitly name V3 as the
+      predecessor."
+attestations:
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-yj-guanlong-v4-3x3-product]
+  /specs/core_system:
+    confidence: uncertain
+    sources: [thecubicle-yj-guanlong-v4-3x3-product]
+    note: "'Fixed tensions' (retailer) and the customer review's claim of a shared core with
+      the MGC Evo 3x3 (community-level, not independently confirmed) both point away from a
+      conventional screw-and-spring core, but no vocabulary value cleanly matches a
+      non-adjustable core; 'standard' recorded as the closest available term at low confidence."
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [thecubicle-yj-guanlong-v4-3x3-product]
+    note: "'Fixed tensions... no true adjustments' does not map to any adjustment-systems
+      vocabulary value cleanly (all existing values describe a working adjustment mechanism);
+      'other' recorded with this note flagging the mismatch for a future vocabulary review."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-v4-3x3-product]
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-v4-3x3-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-guanlong-v4-3x3-product]

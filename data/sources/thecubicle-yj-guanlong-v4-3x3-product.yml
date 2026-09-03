@@ -1,0 +1,32 @@
+# source: thecubicle-yj-guanlong-v4-3x3-product
+# Pass 3 (model enumeration), agent D. TheCubicle's own product page for the YJ GuanLong V4, a
+# 2022 capture. The retailer's own description states a fixed-tension core (a mechanism
+# change); a customer review (community-level, not the retailer's own claim) adds that this
+# version reuses "the same exact core" as the MGC Evo 3x3 with no true tension adjustment,
+# unlike "the previous 3 versions" which used a traditional screw-and-spring system.
+id: thecubicle-yj-guanlong-v4-3x3-product
+entity: source
+kind: retailer
+title: "YJ GuanLong V4 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-guanlong-v4-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220707140604id_/https://www.thecubicle.com/products/yj-guanlong-v4-3x3"
+excerpt: |-
+  Product Description: "The GuanLong has been one of the top options for budget 3x3 since its
+  release. The V4 offers a sturdy construction and decent turning at a great price! This cube
+  has fixed tensions to ensure consistent performance out of the box." A customer review adds:
+  "this V4 uses a strange core and adjustment system. The core is the same exact one that's
+  used on the newest MGC EVO 3x3 but with no true adjustments for the tensions. Unlike the
+  previous 3 versions that used the traditional Screw and spring adjustment system."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2 (retailer's own copy: 'fixed tensions'), corroborated by a tier-4
+  individual customer review naming a specific shared-core claim (not independently verified,
+  read as corroborating colour rather than a load-bearing spec on its own). A fixed-tension
+  core is a mechanism-level change from the prior versions' traditional screw/spring system, a
+  model-level case under DATA_MODEL 4.2."
+status: sourced

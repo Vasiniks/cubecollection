@@ -1,0 +1,74 @@
+# model: shengshou-legend-big
+# Pass 3 (model enumeration), agent D. An oversized (7.0cm) version of ShengShou Legend, found
+# via the RESEARCH_SPEC 3.6a discovery sweep of TheCubicle's own /products/ prefix — not present
+# in the Speedsolving wiki's ShengShou article. TheCubicle's own copy says this "features the
+# same internal mechanism as the original ShengShou Legend," which argues for a variant under
+# the ordinary materiality test; but DATA_MODEL 4.2's tooling clause holds that a 7.0cm cube
+# cannot be produced from the base Legend's ~5.65cm mould by choosing different parts at
+# assembly — a different mould is necessarily involved. Recorded as a new model at uncertain
+# confidence per the default-to-split instruction under genuine ambiguity, not as a confirmed
+# tooling difference; a future pass finding a direct manufacturer statement either way should
+# revisit this.
+id: shengshou-legend-big
+entity: model
+family_id: shengshou-legend
+manufacturer_id: shengshou
+name: "ShengShou Big Legend 3x3 (7.0cm)"
+scope_class: core
+generation:
+  label: "Big"
+  ordinal: 2
+  basis: community_convention
+specs:
+  size_mm: 70.0
+  shape: standard
+description: |-
+  TheCubicle's own product description (thecubicle-shengshou-big-legend-3x3-product, 2020-09-18
+  capture): "The ShengShou Big Legend 3x3 (7.0cm) is simply a bigger version of the ShengShou
+  Legend 3x3. At the same size as the ShengShou 7x7 Mini, the Big Legend 3x3 is large, yet
+  comfortable to hold and solve. It features the same internal mechanism as the original
+  ShengShou Legend." No source found this pass states whether WCA competition regulations
+  permit a 7.0cm 3x3x3; `scope_class: core` is recorded provisionally (no shape-mod or
+  novelty-only framing was found either), flagged here for human review rather than defaulted
+  silently.
+status: drafted
+relationships:
+  - type: succeeds
+    target: shengshou-legend-original
+    target_entity: model
+    note: "TheCubicle's own copy: 'simply a bigger version of the ShengShou Legend 3x3', 'the
+      same internal mechanism as the original ShengShou Legend.' Recorded as succeeds rather
+      than a variant relationship because the model/variant boundary call itself resolved to
+      model level; see this record's own preface note on that judgement."
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-big-legend-3x3-product]
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-big-legend-3x3-product]
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering was found."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-big-legend-3x3-product]
+    note: "The model-vs-variant boundary call is itself uncertain; see description."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-big-legend-3x3-product]

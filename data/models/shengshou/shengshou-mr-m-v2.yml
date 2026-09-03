@@ -1,0 +1,64 @@
+# model: shengshou-mr-m-v2
+# Pass 3 (model enumeration), agent D. The second ShengShou Mr. M generation, explicitly stated
+# by the retailer to carry "an updated mechanism and a spring compression adjustment system" —
+# a clean model-level case under DATA_MODEL 4.2.
+id: shengshou-mr-m-v2
+entity: model
+family_id: shengshou-mr-m
+manufacturer_id: shengshou
+name: "ShengShou Mr. M V2 3x3"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  shape: standard
+  magnet_architecture: single_layer
+  adjustment_system: tension_compression
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou Mr. M V2 — An
+  updated version of the original Mr. M. This puzzle is rarely brought up, mostly because it
+  sucks." TheCubicle's own product description (thecubicle-shengshou-mr-m-v2-3x3-product,
+  2020-09-23 capture, still resolving as of a 2026-02-25 capture): "This 3x3 speed cube is the
+  successor to the original Mr. M from ShengShou. This new iteration comes with an updated
+  mechanism and a spring compression adjustment system!"
+status: drafted
+relationships:
+  - type: succeeds
+    target: shengshou-mr-m-original
+    target_entity: model
+    note: "TheCubicle's own copy states directly: 'the successor to the original Mr. M from ShengShou.'"
+attestations:
+  /specs/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-shengshou-mr-m-v2-3x3-product]
+    note: "'A spring compression adjustment system' — read as tension_compression, the closest vocabulary match; exact mechanism not further specified."
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-mr-m-v2-3x3-product]
+    note: "Described only as 'magnetic'; exact architecture not stated."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-mr-m-v2-3x3-product]
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found in this capture."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: probable
+    sources: [speedsolving-wiki-shengshou-products]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-shengshou-mr-m-v2-3x3-product]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-mr-m-v2-3x3-product]

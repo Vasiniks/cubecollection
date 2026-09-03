@@ -1,0 +1,72 @@
+# model: shengshou-mr-m-s
+# Pass 3 (model enumeration), agent D. The third ShengShou Mr. M generation. The retailer's own
+# description is thin, naming only a matte finish as distinguishing it from Mr. M V2 — ordinarily
+# a variant-level (coating) trait, not a mechanism difference. Recorded as its own model rather
+# than a variant of shengshou-mr-m-v2, per DATA_MODEL 4.2's default-to-split instruction under
+# genuine uncertainty: it is named "another updated version" (not merely a finish option) by the
+# Speedsolving wiki, is sold as its own persistent, separately-URL'd product rather than a
+# checkout option on the V2 listing, and no source states it shares the V2 mould/mechanism
+# exactly. Confidence held at uncertain throughout for this reason.
+id: shengshou-mr-m-s
+entity: model
+family_id: shengshou-mr-m
+manufacturer_id: shengshou
+name: "ShengShou Mr. M S 3x3"
+scope_class: core
+generation:
+  label: "MS"
+  ordinal: 3
+  basis: manufacturer_declared
+specs:
+  magnet_architecture: single_layer
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "Shengshou Mr. MS —
+  Another updated version of the Mr. M. This puzzle is generally considered to be awful."
+  TheCubicle's own product description, in full (thecubicle-shengshou-mr-m-s-3x3-product,
+  2022-03-23 capture): "The Mr. M S 3x3 is the latest in the Mr. M series from ShengShou. This
+  is a magnetic puzzle with a matte finish." No mechanism change beyond the finish is stated by
+  either source, so this record's model-vs-variant boundary call is itself held at uncertain
+  confidence.
+status: drafted
+relationships:
+  - type: succeeds
+    target: shengshou-mr-m-v2
+    target_entity: model
+    note: "Ordering follows the Speedsolving wiki's own listing order (Mr. M, then Mr. M V2,
+      then Mr. MS) and TheCubicle's 'the latest in the Mr. M series' framing; neither source
+      names V2 as the specific immediate predecessor."
+attestations:
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-mr-m-s-3x3-product]
+    note: "Described only as 'magnetic'; exact architecture not stated."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-mr-m-s-3x3-product]
+    note: "'MS'/'S' naming appears on both sources as the manufacturer's own product name, but
+      whether it denotes a genuine design generation or a sold finish option of V2 is the
+      unresolved question this whole record flags."
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-mr-m-s-3x3-product]
+  /description:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-mr-m-s-3x3-product]
