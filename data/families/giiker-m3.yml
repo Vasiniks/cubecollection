@@ -1,0 +1,70 @@
+# family: giiker-m3
+# Pass 2 (family enumeration). GiiKER's mechanical, non-electronic 3x3 sharing the SUPERCUBE
+# shell/tooling — kept as its own family rather than folded into giiker-supercube, because the
+# evidence found describes it as a deliberate parallel product ("without the internal
+# electronics"), not a checkout-time configuration of the smart cube. This is the sibling case
+# the giiker-supercube.yml header comment reasons about; see that file for the fuller
+# smart-vs-mechanical boundary discussion applied identically across this manufacturer's two
+# families.
+
+id: giiker-m3
+entity: family
+manufacturer_id: giiker
+name: "GiiKER M3"
+aliases:
+  - "Giiker M3 3x3"
+introduced:
+  value: "2018"
+  precision: year
+  qualifier: circa
+  note: "TheCubicle's own catalogue records 'Added: 2018-10-30' — a retailer catalogue-add date,
+    not a stated manufacturer release date, hence `circa` rather than `exact`."
+positioning: special
+description: |-
+  A mechanical, non-electronic 3x3 built on the same shell/tooling as GiiKER's SUPERCUBE smart
+  cube line. TheCubicle's own product copy (thecubicle-giiker-m3-3x3-2020, tier 2) states
+  directly: "The Giiker M3 3x3 retains the feel and sound of the original Giiker Smart Cube but
+  without the internal electronics. It features strong magnets and a classic color scheme on
+  black plastic." The same source's specification table records it as added to the catalogue on
+  2018-10-30, with its own weight and dimension figures distinct from the i3S's.
+
+  `positioning: special` is recorded here rather than `mainline` or `smart`: it is explicitly
+  *not* the smart line (it is defined by the electronics' absence), and no evidence found this
+  pass positions it as GiiKER's standard/default 3x3 offering the way `mainline` would imply —
+  it reads, on the evidence available, as a dedicated mechanical spinoff of the smart-cube shell
+  for buyers who want the physical object without its electronics, a genuinely different market
+  proposition from either a flagship or a budget line.
+
+  Only a single generation/product page for this line was found across TheCubicle,
+  SpeedCubeShop, and GiiKER's own site (which does not list "M3" among its current products at
+  all — it appears only at third-party retailers). Whether the "same shell/tooling" claim in the
+  source excerpt means the mechanism is, at the model level, literally the identical mold with
+  the electronics bay left unpopulated, or a genuinely different internal geometry, is
+  explicitly left open for pass 3 — this family record only establishes that M3 is a real,
+  separately named, separately specified product warranting its own family, not a claim about
+  the underlying tooling.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-giiker-m3-3x3-2020]
+    note: "Single tier 2 retailer catalogue date ('Added: 2018-10-30'), not independently
+      corroborated by a second source or a manufacturer-first-party date this pass — `reported`
+      per the confidence table, not `probable`, since no second source was found at all (not
+      merely uncorroborated agreement)."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-giiker-m3-3x3-2020]
+    note: "No source states a positioning label directly; `special` is this record's own
+      best-fit reading of the retailer copy's framing (a mechanical variant of the smart-cube
+      shell, not a standard mainline product), recorded at `uncertain` rather than left
+      unset because the field is not critical (not on the §7.2 rule 6 list) and a stated,
+      flagged best-fit reading is more useful to a future researcher than silence — a human
+      should revisit this label once more evidence exists."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
+  /description:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
