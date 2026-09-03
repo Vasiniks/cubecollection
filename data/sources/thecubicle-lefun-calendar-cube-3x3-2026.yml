@@ -1,0 +1,30 @@
+# source: thecubicle-lefun-calendar-cube-3x3-2026
+# TheCubicle product page for the "Lefun Calendar Cube 3x3," archived 2026-01-02 — a second
+# spot-check of LeFun's print-theme novelty range against the `lefun-formula-3x3`/`lefun-
+# sudoku-3x3` dimensional baseline.
+id: thecubicle-lefun-calendar-cube-3x3-2026
+entity: source
+kind: retailer
+title: "Lefun Calendar Cube 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-calendar-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260102101900id_/https://www.thecubicle.com/products/lefun-calendar-cube-3x3"
+excerpt: |-
+  Product Description: "Keep your brain sharp and your schedule in sight with the Lefun
+  Calendar Cube 3x3! This fun and functional twist on the classic 3x3 features a full calendar
+  system across its faces, including months, days of the week, and numerical dates... Available
+  in blue and pink colors." Structured "Specifications": "Manufacturer: Lefun / Type: 3x3
+  Speed Cubes Picture Cubes / Added: 2025-04-11 / Gross Weight: 79g / Dimensions: 56.0mm³ /
+  Item Weight: 70.0g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Dimensions/weight consistent with `thecubicle-lefun-formula-3x3` and
+  `thecubicle-lefun-sudoku-3x3-2022`, supporting the `lefun-3x3` one-family reading. TheCubicle's
+  own category tag 'Picture Cubes' (in addition to '3x3 Speed Cubes') is a useful signal for a
+  future pass looking to bulk-identify this print-theme sub-range."
+status: sourced

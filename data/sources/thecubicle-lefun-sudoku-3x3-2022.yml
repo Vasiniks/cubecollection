@@ -1,0 +1,29 @@
+# source: thecubicle-lefun-sudoku-3x3-2022
+# TheCubicle product page for the "LeFun Sudoku 3x3," archived 2022-09-02 — checked as one of
+# several LeFun novelty/print-theme 3x3 listings to test whether each is a genuinely distinct
+# design or a decorated variant of the same generic base mold as `lefun-formula-3x3`.
+id: thecubicle-lefun-sudoku-3x3-2022
+entity: source
+kind: retailer
+title: "LeFun Sudoku 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-sudoku-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220902180730id_/https://www.thecubicle.com/products/lefun-sudoku-3x3"
+excerpt: |-
+  Product Description: "The LeFun Sudoku 3x3 is a game within a puzzle! You can use this 3x3
+  to do sudoku puzzles with the numbers printed on the pieces!" Structured "Specifications":
+  "Manufacturer: Lefun / Type: 3x3 / Added: 2020-11-03 / Gross Weight: 78g / Dimensions:
+  56.0mm³ / Item Weight: 66.3g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Dimensions and weight are near-identical to `thecubicle-lefun-formula-3x3`'s own
+  55.5mm³/77g figures — consistent with a shared generic base mold decorated with a different
+  printed sticker theme, i.e. a variant-level difference per DATA_MODEL §4.1 ('colourway or
+  sticker type'), not a separate design. Used to support treating LeFun's plain-3x3-shaped
+  novelty/gift range as one family (`lefun-3x3`) rather than one family per printed theme."
+status: sourced

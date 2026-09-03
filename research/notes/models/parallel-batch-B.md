@@ -635,3 +635,48 @@ single tier 4 source for this manufacturer.
 point — the strongest-evidenced zero-family finding in this batch.
 
 ---
+## LeFun — 1 family
+
+**Method and a boundary call worth flagging explicitly.** `npm run wayback -- prefix
+thecubicle.com/products/lefun` returns well over 60 URLs — by far the largest single-
+manufacturer product sweep in either of my assignments. The great majority are individually-
+named print-theme/novelty-gift 3x3x3 SKUs (Sudoku, Calendar, Dollar, Hundred-Dollar, Periodic
+Table ×2, Number, Respect, Gradient, Christmas ×2, Halloween, Blue Sudoku), plus a separate
+group of genuinely different puzzle types (Fisher Cube, Windmill Cube, Dino Cube,
+Pyramorphix, Megamorphix, MoYan I — a 12-sided dodecahedral puzzle confirmed via its own
+"Type: Shape Mods" field despite its model-like name — Pyraminx Duo/Ghost/Master, Skewb,
+2x2/2x2x3/3x3x2/4x4/7x7 items, Venus Cube, Barrel Cubes, keychains).
+
+**Rather than create one family per printed theme, I fetched three of the plain-3x3-shaped
+listings directly and compared them** (Formula, Sudoku, Calendar Cube): all three carry
+near-identical dimensions (~55.5-56.0mm) and weight (~77-79g) under the same "Manufacturer:
+Lefun / Type: 3x3[...]" spec-table fields, with the only stated difference being the printed
+sticker/tile theme. Per DATA_MODEL §4.1 ("colourway or sticker type" is explicitly variant-
+level), I treated this as **one family** — a generic base 3x3 mold sold across many decorated
+editions — rather than a family per theme, on the same reasoning already used for
+`cube4you-3x3`. This is a considered boundary call, not a shortcut: creating 10+ near-identical
+single-SKU "families" here would have been the kind of coverage-by-lowering-the-bar the task
+brief and PRODUCT.md both warn against, and would have obscured rather than revealed the
+actual shape of this manufacturer's catalogue.
+
+**Accepted (1):** `lefun-3x3`, spanning Formula (BLD-training lettering) and the print-theme
+gift range, with the genuinely different-mechanism/shape-mod items explicitly excluded in the
+family's own description rather than silently dropped.
+
+**Rejected:** every non-3x3x3 item found (listed above) — scope exclusions, not a
+model/variant-boundary call.
+
+**Unresolved questions:** whether any of the untested print-theme editions (Dollar, Periodic
+Table, etc.) turns out to differ dimensionally or mechanically from the three checked — a
+pass-3/4 question when those variants are actually enumerated; whether "Formula" specifically
+(a functional BLD-training tool, not merely decorative) should eventually be split into its
+own model at that pass, given it serves a different purpose than the purely-decorative gift
+editions, even though this pass keeps it in the same family.
+
+**Sources added:** `thecubicle-lefun-sudoku-3x3-2022`, `thecubicle-lefun-calendar-cube-
+3x3-2026`, `thecubicle-lefun-moyan-i-2021`. `thecubicle-lefun-formula-3x3` (pass 1, reused).
+
+**Confidence:** `reported` throughout (tier 2 retailer sources, mutually consistent
+dimensional/weight evidence across three separate listings).
+
+---
