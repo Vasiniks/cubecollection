@@ -1,0 +1,61 @@
+# family: newisland-lightning
+# Pass 2 (family enumeration). Newisland's flagship-named 3x3 line, spanning at least two
+# retailer-documented generations (original, V2) under one persisting name. Carries an
+# unresolved rebrand suspicion inherited from data/manufacturers/newisland.yml, preserved here
+# rather than resolved.
+
+id: newisland-lightning
+entity: family
+manufacturer_id: newisland
+name: "Newisland Lightning"
+aliases: []
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  TheCubicle's own description of the original: "The Newisland Lightning is a high-quality 3x3
+  speedcube marketed by Newisland. It rotates very smoothly right out of the box, and comes
+  pre-lubricated from the factory. It also comes with a mesh cube bag inside the sturdy box, as
+  well as a maintenance/solution manual, replacement edge/corner, and an extra set of factory
+  stickers." (thecubicle-newisland-lightning, already cited in data/manufacturers/newisland.yml
+  under its old id `thecubicle-newisland-lightning`). A second generation followed under the
+  same name: "The Newisland Lightning V2 is a high-quality 3x3 speedcube marketed **and
+  created exclusively** by Newisland" (thecubicle-newisland-lightning-v2-2019) — near-identical
+  wording to the original but for the added "created exclusively" phrase and a slightly
+  different accessory bundle (no replacement edge/corner piece). No source states a mechanism
+  change between the two, so the model-generation question (same design, new accessory bundle,
+  vs. a genuinely new mould) is left to pass 3.
+
+  **Unresolved rebrand suspicion, preserved from pass 1, not resolved here.**
+  `data/manufacturers/newisland.yml` already flags customer reviews describing this mechanism
+  as effectively identical to the QiYi Thunderclap ("It's the same as the thunderclap..."),
+  a lead resting on tier-4-equivalent opinion, not a manufacturer statement, and therefore not
+  actioned as a `rebrand_of` claim (DATA_MODEL rule 17 requires tier 1-2 evidence). This pass's
+  own finding — the V2 page's explicit "created **exclusively**" claim — is some retailer-level
+  counter-evidence, but is itself promotional copy, not a documented supply-chain fact. The
+  question is left exactly as open as pass 1 left it, for a pass 3/4 researcher with time for a
+  direct mechanical comparison.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-newisland-lightning, thecubicle-newisland-lightning-v2-2019]
+    note: "Earliest capture found this pass for either generation is 2019-07-21 (V2) /
+      2020-09-18 (original, per data/manufacturers/newisland.yml's own source) — the V2
+      capture predates the original's own earliest found capture, which is consistent with
+      captures being incomplete rather than V2 truly predating V1 (the product naming and
+      'created exclusively' language read as a genuine V1->V2 succession). The suspect 'Added:
+      2018-09-11' spec-table field, present on both pages, is deliberately not used — see
+      thecubicle-mojue-m3-2020's reliability_note."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-newisland-lightning, thecubicle-newisland-lightning-v2-2019]
+    note: "No source states a positioning tier; `mainline` is a weak default (a
+      full-accessory-bundle competitive 3x3, not marketed as either a budget or explicit
+      flagship product)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-newisland-lightning, thecubicle-newisland-lightning-v2-2019]

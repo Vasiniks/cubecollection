@@ -1,0 +1,33 @@
+# source: thecubicle-newisland-phoenix-2019
+# TheCubicle product page for the "Newisland Phoenix," archived 2019-07-18 — a second,
+# separately-named Newisland 3x3 line found via the product-slug prefix sweep, not previously
+# documented in data/manufacturers/newisland.yml.
+id: thecubicle-newisland-phoenix-2019
+entity: source
+kind: retailer
+title: "Newisland Phoenix - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/newisland-phoenix"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190718092431id_/https://www.thecubicle.com/products/newisland-phoenix"
+excerpt: |-
+  Product listing titled "Phoenix" (page's own product-description prose reads "The Newisland
+  Pheonix is a high-quality 3x3 speedcube marketed by Newisland. It rotates very smoothly
+  right out of the box, and comes pre-lubricated from the factory. It also comes with a mesh
+  cube bag inside the box" — note the retailer's own text misspells the product's name
+  "Pheonix" mid-paragraph despite titling the page "Phoenix"). Marked "This product has been
+  discontinued indefinitely or we aren't sure when it will be back in stock." Structured
+  "Specifications": "Manufacturer: Newisland / Type: 3x3 / Gross Weight: 145g / Added:
+  2018-09-11 / Dimensions: 57.0mm³." Sold in Stickerless/Black/White colourways.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Uses the weaker 'marketed by' phrasing (not 'created exclusively by', contrast
+  thecubicle-newisland-lightning-v2-2019), consistent with the original Lightning V1's own
+  phrasing. No source found this pass relates Phoenix to Lightning as a succession or shared
+  design; kept as its own family. The 'Added: 2018-09-11' field is treated as unreliable for
+  dating this product — see thecubicle-mojue-m3-2020's reliability_note."
+status: sourced

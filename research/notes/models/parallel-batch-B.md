@@ -787,3 +787,45 @@ sources, not a thin one.
 retailers, mutually consistent, no exception across 11 + 17 product URLs).
 
 ---
+## Newisland — 2 families
+
+**Prior tested, partially held.** The task brief flagged Newisland as "likeliest to hold
+something real" — confirmed: two named, in-scope 3x3 lines, both standard-shaped (56.5-57mm),
+neither a scope exclusion.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/newisland` (5 URLs) found a
+second generation of the already-documented Lightning line (V2) plus a wholly undocumented
+second product line, Phoenix. A SpeedCubeShop prefix sweep for this manufacturer returned no
+captures — not treated as evidence of absence, simply a retailer this brand does not appear
+to have reached.
+
+**Candidates considered:** Newisland Lightning (+ V2), Newisland Phoenix.
+
+**Accepted (2):** `newisland-lightning` (spanning both generations under one persisting name —
+TheCubicle's own V2 description is near-identical to the original's, the same "one family,
+minor wording change, no stated mechanism change" pattern used elsewhere this register),
+`newisland-phoenix` (a separately-named line, no stated relationship to Lightning).
+
+**Rebrand suspicion carried forward, not resolved.** `data/manufacturers/newisland.yml`
+already flags a QiYi Thunderclap rebrand suspicion from customer-review opinion alone (tier
+4-equivalent, insufficient for DATA_MODEL rule 17). This pass found the Lightning V2 page's
+own description states it is "marketed **and created exclusively** by Newisland" — some
+retailer-level counter-evidence, but still promotional copy, not a documented supply
+relationship. **Left exactly as open as pass 1 left it**, recorded in `newisland-lightning.
+yml`'s own description rather than resolved either way. Per the coordinator's framing, this
+would be a type (b) finding (aftermarket/rebrand) *if* confirmed — it is not confirmed, so no
+`kind` miscategorisation flag is warranted at this pass; simply an open lead.
+
+**Rejected:** none — both found lines are in-scope, standard 3x3x3 products.
+
+**Unresolved questions:** the rebrand suspicion (above); whether Lightning V2 differs
+mechanically from V1 or is the same design with a revised accessory bundle (pass 3 question);
+exact introduction dates (capture-date evidence only, "Added: 2018-09-11" refused as usual).
+
+**Sources added:** `thecubicle-newisland-lightning-v2-2019`, `thecubicle-newisland-
+phoenix-2019`. `thecubicle-newisland-lightning` (pass 1, reused).
+
+**Confidence:** `reported` on `description`; `uncertain` on `introduced`/`positioning`
+throughout.
+
+---

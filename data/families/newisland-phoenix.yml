@@ -1,0 +1,41 @@
+# family: newisland-phoenix
+# Pass 2 (family enumeration). A second, separately-named Newisland 3x3 line, found via the
+# product-slug prefix sweep this pass and not previously documented in
+# data/manufacturers/newisland.yml.
+
+id: newisland-phoenix
+entity: family
+manufacturer_id: newisland
+name: "Newisland Phoenix"
+aliases:
+  - "Newisland Pheonix"
+introduced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  TheCubicle's own description (thecubicle-newisland-phoenix-2019): "The Newisland Pheonix
+  [sic] is a high-quality 3x3 speedcube marketed by Newisland. It rotates very smoothly right
+  out of the box, and comes pre-lubricated from the factory. It also comes with a mesh cube
+  bag inside the box." No source found this pass relates Phoenix to `newisland-lightning` as a
+  succession or shared design — kept as its own family. Marked discontinued on the only
+  capture found.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-newisland-phoenix-2019]
+    note: "Earliest capture found this pass is 2019-07-18, already marked discontinued. The
+      product's own 'Added: 2018-09-11' spec-table field is deliberately not used — see
+      thecubicle-mojue-m3-2020's reliability_note for the recurring-date pattern found across
+      many unrelated products in this register."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-newisland-phoenix-2019]
+    note: "No source states a positioning tier; `mainline` is a weak default, consistent with
+      `newisland-lightning`'s own treatment."
+  /description:
+    confidence: reported
+    sources: [thecubicle-newisland-phoenix-2019]
