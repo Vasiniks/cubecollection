@@ -11,19 +11,19 @@
 meta:
   baseline_sha: "9068899"
   updated: "2026-09-03"
-  phase: "window-1 specialist research"
+  phase: "window-1 complete - all four specialists reported, corrections applied"
   counts:
     entities: 54
     families: 122
     models: 48
     variants: 104
-    sources: 284
+    sources: 285
 
 issues:
 
   - id: Q1
     severity: critical
-    status: in_progress
+    status: resolved
     title: "theqiyi-about-us is an Amazon affiliate site recorded as manufacturer_official (tier 1)"
     category: source-provenance
     affected_records:
@@ -45,20 +45,28 @@ issues:
       runs affiliate links, or that the domain changed hands. Agent A is tasked with falsifying
       the illegitimacy conclusion.
     recommendation: >-
-      Re-kind or apply explicit tier:4 override with justification; re-source or downgrade the
-      six orphaned confirmed attestations; correct qiyi.website; re-source QiYi's founding year.
-      Do NOT apply until replacement evidence exists - the fix breaks six confirmed claims and
-      would leave validation red.
+      RESOLVED 2026-09-03. Agent A located QiYi's genuine corporate site qiyitoys.net; the main
+      session verified every load-bearing claim by direct fetch before acting. New tier-1 source
+      qiyitoys-company-history created (ICP 粤ICP备2021105271号, named legal entity, physical
+      address, Wayback captures from 2016-07-04). Applied: qiyi re-sourced and website VALUE
+      corrected to qiyitoys.net; x-man-design re-sourced and the affiliate page's "independent
+      designer" framing withdrawn as factually wrong (XMD founded 2015 by QiYi's own chief
+      designer Zhang Xiaojing); x-man-tornado /positioning and /aliases DOWNGRADED
+      confirmed->probable because no first-party replacement exists for Tornado; qiyi-valk
+      /manufacturer_id UPGRADED uncertain->confirmed on the 2016 entry stating QiYi itself
+      founded The Valk; theqiyi-about-us demoted to tier 4 by explicit override and retained,
+      now cited by zero attestations.
     confidence: high
     downstream_impact: >-
-      Blocks Pass 3 for QiYi and X-Man Design (11 families). Models inherit manufacturer_id by
-      construction, so building on a disputed attribution means systemic re-parenting later.
-    owner: agent-a
+      UNBLOCKED. QiYi and X-Man Design (11 families) are now clear for Pass 3. Residual gap: the
+      ICP number was not cross-verified against China's MIIT registry directly - non-blocking,
+      recorded on the source.
+    owner: agent-a / main
     last_updated: "2026-09-03"
 
   - id: E1
     severity: critical
-    status: needs_human_decision
+    status: resolved
     title: "111 attestations rest solely on tier-4 sources, contradicting the archive's own rules"
     category: evidence-policy
     affected_records: "~53 of 122 families; 32 are /introduced fields; 107 reported + 4 probable"
@@ -72,15 +80,20 @@ issues:
       which arguably describes these pages better than tier 4's "unattributed wikis". Under that
       reading `reported` is already correct and no data need change.
     recommendation: >-
-      Two defensible options. (1) Downgrade all 111 to uncertain. (2) Use the existing per-source
-      tier override to reclassify the specific Speedsolving product-history pages to tier 3, with
-      individual written justification, never as a blanket rule for kind: wiki. Main session
-      leans to (2) scoped narrowly. Requires human sign-off either way.
-    confidence: high      # that a rule is broken; the resolution is a policy choice
+      RESOLVED 2026-09-03 by a differentiated per-source policy - better than either blanket
+      option originally framed. Discriminator verified live by the main session on both sides
+      (DaYan: no banner, edit-protected, long-form -> eligible; WitEden: live "may be currently
+      outdated" banner -> not eligible). Applied: tier-3 override on 6 Speedsolving pages
+      (63 attestations legitimised by 6 source-file edits, none touched); 36 attestations
+      downgraded to uncertain across 8 banner-carrying or thin sources; 12 attestations on 3
+      sources (mfjs-products, mf8-products, mofang-jiaoshi) HELD for human decision. Overrides
+      are source-specific with individual justification and restricted permitted claim types;
+      kind: wiki remains tier 4 archive-wide. A tier-3 override cannot create a false confirmed
+      - rule 9 still requires tier 1 or two independent tier 1-2.
+    confidence: high
     downstream_impact: >-
-      ~53 families. Enumerating models beneath them before the decision means redoing the
-      attestations afterwards.
-    owner: agent-b
+      111 violations reduced to 12. The remaining 12 are the deliberate human-decision set.
+    owner: agent-b / main
     last_updated: "2026-09-03"
 
   - id: E2
@@ -100,17 +113,20 @@ issues:
     counterevidence: >-
       The products are real; the families are not fabricated. This is under-evidencing, not error.
     recommendation: >-
-      Treat as a corroboration backlog, not deletions. Each needs one tier 1-2 source or an
-      explicit decision to hold at reported. Note E1 Option 2 does NOT dissolve this - promoting
-      a tier does not create corroboration.
+      PARTIALLY REDUCED 2026-09-03 by the E1 tier overrides: families whose best available source
+      is tier 4 fall from 21 to 9 (diansheng x4, mf8 x2, yuxin x3). The remaining 9 still need a
+      tier 1-2 source or an explicit decision to hold. Promoting a tier does not create
+      corroboration, so the underlying single-source concern persists for all 21 originals.
     confidence: high
-    downstream_impact: "17% of the family layer; mf8-crazy-3x3x3 will hard-fail rule 15 at Pass 3."
+    downstream_impact: >-
+      9 families now (was 21). mf8-crazy-3x3x3 deliberately stayed tier 4 - its rule-15 hard
+      block at Pass 3 is real and was NOT dissolved by convenient re-tiering.
     owner: main
     last_updated: "2026-09-03"
 
   - id: G1
     severity: high
-    status: in_progress
+    status: resolved
     title: "GAN 356 / i / i-carry boundary applies numeric identity inconsistently"
     category: taxonomy-boundary
     affected_records: >-
@@ -125,12 +141,20 @@ issues:
       Both readings are individually defensible: "356" may name a hardware platform, or the smart
       line may be its own lineage with a vestigial number. The inconsistency is the finding, not
       necessarily an error in either record.
-    recommendation: "Adjudicate and write the rule down before any further GAN model work."
-    confidence: high      # that the inconsistency is real
+    recommendation: >-
+      RESOLVED 2026-09-03. Rule written to research/qc/gan-family-boundary-rule.md: a GAN family
+      is the persistent name GAN itself keeps using; numeric change within a line does not create
+      a family, and a name element persisting while the number is dropped IS the family identity.
+      Decisive evidence is GAN's own naming behaviour - current products dropped the "356" prefix
+      while keeping "i"/"i carry" (gan-i4, gan-i-carry-4). Under this reading the two rules were
+      never different, only unstated. Includes a mechanical 4-step test for Pass 3.
+    confidence: high
     downstream_impact: >-
-      Highest-impact open boundary: 22 models already filed by this rule. Changing it later means
-      re-parenting real records, not editing a family.
-    owner: agent-c
+      ZERO model re-parenting - 0 of 41 GAN models move. The 22 already-built models stay put.
+      One question deliberately deferred to Pass 4 (non-blocking): whether gan-ui-series is an
+      independent family or a smart-electronics modifier on flagship models, since ui names are
+      parasitic on flagship names while i/i-carry carry their own numbering.
+    owner: agent-c / main
     last_updated: "2026-09-03"
 
   - id: S1
@@ -205,7 +229,7 @@ issues:
 
   - id: S5
     severity: low
-    status: resolved
+    status: resolved   # caveat RAISED then DISPROVED - see recommendation
     title: "gan-v100 relied on a label that gan-flagship-series dismissed as noise"
     category: evidence-weighting
     affected_records: [data/families/gan-v100.yml]
@@ -215,9 +239,15 @@ issues:
     counterevidence: >-
       Three other evidence lines (Chinese-site placement, retailer copy, Aug-2026 nav) are
       independent of the label and support exclusion on their own.
-    recommendation: "Exclusion stands; caveat recorded so the label is not treated as decisive."
-    confidence: medium
-    downstream_impact: "Closed unless Agent C overturns it."
+    recommendation: >-
+      My caveat's PREMISE was disproved by Agent C on 2026-09-03. A November 2024 gancube.com
+      product page carries a curated "Flagship Series" top-nav dropdown AND an auto-tagged
+      "Advanced Series" breadcrumb simultaneously, disagreeing about the same product. "Advanced
+      Series" is therefore a parallel still-current auto-tag, NOT a superseded predecessor label,
+      so it never made V100's status ambiguous. V100's exclusion stands and is better founded
+      than before; gan-v100.yml rewritten to record the caveat as resolved.
+    confidence: high
+    downstream_impact: "Closed. General lesson recorded: curated navigation outranks auto-tagged breadcrumbs."
     owner: main
     last_updated: "2026-09-03"
 
@@ -238,5 +268,108 @@ issues:
     recommendation: "Human policy decision on conditional admission; get a tier 1-3 source for mf8-crazy-3x3x3."
     confidence: high
     downstream_impact: "mf8-crazy-3x3x3 will hard-fail validation at Pass 3."
+    owner: main
+    last_updated: "2026-09-03"
+
+  # ---- Agent D second-order discoveries (window 1) ----
+
+  - id: D-F1
+    severity: high
+    status: resolved
+    title: "Rule 9 accepted same-publisher sources as independent corroboration"
+    category: validation-rule-gap
+    affected_records: [scripts/validate.mjs, data/manufacturers/thecubicle.yml, data/manufacturers/speedcubeshop.yml]
+    evidence: >-
+      Rule 9's error message claimed "two independent tier 1-2 sources" but the code counted
+      distinct source ids only; neither validate.mjs nor lint-semantic.mjs referenced `publisher`
+      anywhere. Measured blast radius: exactly 2 confirmed attestations passed solely on
+      same-publisher sources, both on x-critical manufacturer /kind fields.
+    counterevidence: >-
+      Both claims are substantively sound - a company's own pages describing its own service
+      business are genuine first-party evidence. The defect is the independence claim, not the
+      conclusion.
+    recommendation: >-
+      RESOLVED. Rule 9 extended to treat one publisher repeating itself as a single evidence
+      chain; sources with no publisher recorded are treated as distinct so a missing field cannot
+      silently merge two real sources. thecubicle /kind and speedcubeshop /kind downgraded
+      confirmed->probable. Selftest still proves every rule fires.
+    confidence: high
+    downstream_impact: "Closed, and the gap cannot recur archive-wide."
+    owner: agent-d / main
+    last_updated: "2026-09-03"
+
+  - id: D-F2
+    severity: medium
+    status: resolved
+    title: "Two further TheCubicle catalogue-migration date artifacts"
+    category: provenance
+    affected_records: [data/families/guojia-type-a-chun.yml]
+    evidence: >-
+      'Added: 2018-10-14' appears across 6 sources and 5 unrelated brands (CubeTwist, LeFun,
+      Meffert's, Ninja, VeryPuzzle) - definitively an artifact. 'Added: 2018-11-07' appears on
+      GuoJia and Maru - two brands, so suspected rather than proven.
+    counterevidence: "Two brands sharing a date is weaker evidence than the 13-brand 2018-09-11 cluster."
+    recommendation: >-
+      RESOLVED. Only one live claim rested on either. guojia-type-a-chun /introduced was already
+      at `uncertain` (correct) but its note treated the value as a genuine listing date; the note
+      now records it may be an artifact rather than a listing date at all. Confidence unchanged.
+    confidence: high
+    downstream_impact: "Closed. Three artifact dates are now documented for future passes to refuse."
+    owner: agent-d / main
+    last_updated: "2026-09-03"
+
+  - id: D-F3
+    severity: low
+    status: resolved
+    title: "14 records cited research notes deleted during the log merge"
+    category: referential-integrity
+    affected_records: "14 files under data/sources and data/families"
+    evidence: >-
+      parallel-batch-A.md and -B.md were merged into global-pass2-families.md and deleted at
+      27f402d without updating citing records. Dangling references introduced by that merge -
+      my own error, not a researcher's.
+    counterevidence: "none"
+    recommendation: "RESOLVED. All 14 repointed to research/notes/models/global-pass2-families.md."
+    confidence: high
+    downstream_impact: "Closed."
+    owner: agent-d / main
+    last_updated: "2026-09-03"
+
+  - id: D-F4
+    severity: medium
+    status: open
+    title: "Single-source and single-publisher dependence across the family layer"
+    category: evidence-quality
+    affected_records: "58/122 families single-source; 70/122 single-publisher; 12 with apparent but false multi-source corroboration"
+    evidence: >-
+      Quantified by Agent D beyond the tier-4 subset: 47.5% of families rest on one source,
+      57.4% on one publisher, and 12 families cite several sources from a single publisher,
+      giving the appearance of corroboration without the substance.
+    counterevidence: >-
+      Single-source is not the same as wrong; many are tier 1-2 and adequate for what they claim.
+    recommendation: >-
+      Not remediable in this gate. Treat as a standing corroboration backlog. The 12 false-
+      corroboration families are the priority subset since they read as better-evidenced than
+      they are. Rule 9's new publisher check now prevents this shape reaching `confirmed`.
+    confidence: high
+    downstream_impact: "Does not block Pass 3; affects how much weight family-level claims can bear."
+    owner: main
+    last_updated: "2026-09-03"
+
+  - id: D-F5
+    severity: low
+    status: open
+    title: "cubicle-labs uses parent_id on a non-sub_brand record"
+    category: schema-consistency
+    affected_records: [data/manufacturers/cubicle-labs.yml]
+    evidence: "The only manufacturer record using parent_id while kind is not sub_brand (it is service), against the schema field's own description."
+    counterevidence: >-
+      The relationship it expresses (Cubicle Labs belongs to TheCubicle) is real and worth
+      recording; the schema simply has no other field for it.
+    recommendation: >-
+      Leave as-is for now. Either widen the field description to permit service->parent, or add a
+      dedicated operator field. A schema decision, not a data error.
+    confidence: medium
+    downstream_impact: "None for Pass 3."
     owner: main
     last_updated: "2026-09-03"
