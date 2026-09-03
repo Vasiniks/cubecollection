@@ -1,0 +1,49 @@
+# model: dayan-tengyun-m
+# Pass 3 (model enumeration). DaYan's eighth numbered product and, per the wiki, "the first
+# mass-produced Dayan 3x3 with magnets" -- the introduction of magnets to DaYan's lineup is the
+# anchor fact used across this pass to infer that every earlier DaYan 3x3 model predates
+# magnets. TheCubicle's own copy corroborates the 55mm size. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-tengyun-m
+entity: model
+family_id: dayan-tengyun
+manufacturer_id: dayan
+name: "DaYan TengYun M"
+scope_class: core
+generation:
+  label: "M"
+  ordinal: 1
+  basis: manufacturer_declared
+announced:
+  value: "2019-01"
+  precision: month
+  qualifier: circa
+specs:
+  size_mm: 55
+description: |-
+  DaYan's eighth numbered product. Per the Speedsolving wiki: "TengYun M Version 1 ...
+  Released January 2019. Considered a comeback for Dayan and their first competitively viable
+  3x3 in about 6-7 years... the first mass-produced Dayan 3x3 with magnets." TheCubicle's own
+  copy corroborates the size and feel: "The DaYan TengYun M is a smooth, 55 mm 3x3 speed cube
+  that is one of the quietest 3x3's on the market. It has a unique design and feel that sets it
+  apart from other modern 3x3's" (thecubicle-dayan-tengyun-descriptions), and lists "Two extra
+  sets of springs (standard and strong)" included in the box — spring-based, not maglev,
+  tensioning for this first generation.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+    note: "The product name itself includes 'M' as DaYan's own naming (per the family record's
+      alias 'TengYun M'); treated as manufacturer_declared because the model name is the
+      generation label here, unlike the retrospective 'V1'/'V2' numbering this archive applies
+      to older, undesignated DaYan releases."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions, speedsolving-wiki-dayan-products]

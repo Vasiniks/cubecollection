@@ -1,0 +1,56 @@
+# source: thecubicle-dayan-guhong-descriptions
+# Pass 3 (model enumeration). TheCubicle's own product-description text (not customer reviews)
+# for five GuHong-line listings, fetched directly via `npm run wayback -- get` on 2026-09-03.
+# Used to corroborate model-level identity and mechanism differences across the GuHong V1-Pro M
+# succession; the Pro M capture also carries a genuine retailer spec table (size/weight/magnet
+# flag), tier 2 for specifications per the S6 policy.
+id: thecubicle-dayan-guhong-descriptions
+entity: source
+kind: retailer
+title: "DaYan GuHong product pages (V1, V2, V3 M, V4 M, Pro M) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-guhong"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190721124131id_/https://www.thecubicle.com/products/dayan-guhong"
+excerpt: |-
+  DaYan GuHong (V1), captured 2019-07-21 (https://web.archive.org/web/20190721124131id_/https://www.thecubicle.com/products/dayan-guhong):
+  "This product has been discontinued indefinitely or we aren't sure when it will be back in
+  stock." Listed under "Related Products in 'Discontinued'."
+
+  DaYan GuHong V2, captured 2020-11-12 (https://web.archive.org/web/20201112id_/https://www.thecubicle.com/products/dayan-guhong-v2):
+  "The GuHong returns with torpedoes! This more recent version of the DaYan GuHong feels
+  smoother than its predecessor and does not pop."
+
+  DaYan GuHong V3 M, captured 2020-09-27 (https://web.archive.org/web/20200927id_/https://www.thecubicle.com/products/dayan-guhong-v3-m):
+  "The GuHong V3 M is a modernized version of the iconic GuHong 3x3 from DaYan. At just 54 mm,
+  this cube is quite stable and features that swooshy TengYun feel that is quickly becoming a
+  signature of DaYan puzzles."
+
+  DaYan GuHong V4 M, captured 2020-11-18 (https://web.archive.org/web/20201118092650id_/https://www.thecubicle.com/products/dayan-guhong-3x3-v4-m):
+  "The GuHong V4 M from Dayan is the latest in the GuHong series, a famous line of cubes dating
+  back to 2010."
+
+  DaYan GuHong Pro M 3x3 (54mm, Standard), captured 2024-01-26
+  (https://web.archive.org/web/20240126030328id_/https://www.thecubicle.com/products/dayan-guhong-pro-m-3x3-54mm-standard):
+  Product description: "The DaYan GuHong Pro M 3x3 is the latest release from the famous
+  speedcubing brand. This 3x3 is magnetic, has a glossy outer finish, and turns well right out
+  of the box. Choose between 5 different tension settings that you can adjust by hand! ... This
+  is the 54mm standard version." Retailer's own spec table: Type "3x3", Dimensions "54.0mm",
+  Item Weight "67.0g", Gross Weight "151g", Magnets "Magnetic". (The same table's "Added
+  2023-08-31" field is a catalogue-entry date, not a release statement, and is not used as
+  one — see RESEARCH_SPEC.md's forbidden "Added:" pattern.)
+preservation_note: "Five separate `npm run wayback -- get` fetches, one per URL/timestamp
+  listed above, condensed into one source record per this archive's established pattern of
+  grouping same-session same-retailer captures (cf. thecubicle-dayan-collection-2025). Each
+  quoted paragraph is the retailer's own 'Product Description' copy or spec-table field, never
+  a customer review embedded on the same page."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product copy and spec table. The V1 capture
+  establishes discontinuation by 2019, not a launch date. The Pro M spec table is genuine
+  retailer-recorded size/weight/magnet data, admissible for specifications per the S6 policy
+  (tier 1-2 only); its own 'Added' field is excluded from any date claim."
+status: sourced

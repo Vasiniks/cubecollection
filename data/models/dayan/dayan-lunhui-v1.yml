@@ -1,0 +1,38 @@
+# model: dayan-lunhui-v1
+# Pass 3 (model enumeration). DaYan's fourth numbered product. TheCubicle's own capture
+# corroborates existence and naming; the release-month claim rests on the Speedsolving wiki
+# alone. See research/notes/models/dayan-pass3.md.
+id: dayan-lunhui-v1
+entity: model
+family_id: dayan-lunhui
+manufacturer_id: dayan
+name: "DaYan LunHui"
+aliases:
+  - "DaYan IV LunHui"
+scope_class: core
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2011-04"
+  precision: month
+  qualifier: circa
+description: |-
+  DaYan's fourth numbered product ("DaYan IV LunHui" per dayancube-official-2013). Per the
+  Speedsolving wiki: "Dayan LunHui ... Released April 2011. This is the fourth 3x3 cube in the
+  Dayan series ... the first Dayan cube to include torpedo pieces ... The corner cutting was
+  considered superb, with a unique feel." TheCubicle's own retailer capture corroborates
+  existence and naming (thecubicle-dayan-per-family-product-urls-2026, earliest capture
+  2020-11-11) but adds no further mechanism detail beyond the wiki.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-per-family-product-urls-2026]

@@ -1,0 +1,71 @@
+# model: dayan-tengyun-v2-m
+# Pass 3 (model enumeration). TheCubicle's own copy: "features three magnetic settings that
+# you can adjust by rotating a plate, as well as adjustable elasticities and tensions without
+# having to switch out any components" -- a new adjustable-magnet/tool-based tension system
+# replacing V1's fixed magnets and swap-in springs, a mechanism change under DATA_MODEL §4.2.
+# See research/notes/models/dayan-pass3.md.
+id: dayan-tengyun-v2-m
+entity: model
+family_id: dayan-tengyun
+manufacturer_id: dayan
+name: "DaYan TengYun V2 M"
+scope_class: core
+generation:
+  label: "V2 M"
+  ordinal: 2
+  basis: manufacturer_declared
+announced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+specs:
+  weight_g: 83
+  magnet_architecture: adjustable
+  adjustment_system: tension_compression
+description: |-
+  TheCubicle's own copy: "The DaYan TengYun V2 M is an exciting new magnetic 3x3 speed cube
+  from classic manufacturer DaYan. Weighing in at a modest 83g, the TengYun V2 M features three
+  magnetic settings that you can adjust by rotating a plate, as well as adjustable elasticities
+  and tensions without having to switch out any components. Using DaYan's new adjustment tool,
+  you can choose from four tensions and four elasticity settings. The TengYun V2 M's edge
+  pieces have a similar wave-like design akin to the GuHong V3 M"
+  (thecubicle-dayan-tengyun-descriptions). Per the wiki: "released in early 2020, and featured
+  customization options, such as adjustable springs, and magnet strength... for the first time,
+  DaYan has a competitively viable cube."
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions]
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions]
+    note: "'adjustable' per vocab/magnet-configurations.yml ('magnet strength adjustable by the
+      user without disassembly'), matching the retailer's own description of 'three magnetic
+      settings that you can adjust by rotating a plate.'"
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [thecubicle-dayan-tengyun-descriptions]
+    note: "'tension_compression' is the closest vocabulary value to the retailer's description
+      of independently adjustable 'elasticities and tensions'; the vocab's exact wording
+      ('independent tension and compression adjustment') is not a verbatim match to
+      'elasticity', so recorded at `uncertain` rather than `probable`."
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-tengyun-descriptions]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions, speedsolving-wiki-dayan-products]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-tengyun-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-tengyun-m
+    target_entity: model
+    note: "The wiki's own numbered succession ('TengYun M Version 2') places it directly after
+      the January 2019 original; TheCubicle independently calls it 'an exciting new magnetic
+      3x3' distinct from the base TengYun M listing."

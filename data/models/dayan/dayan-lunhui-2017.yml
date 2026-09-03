@@ -1,0 +1,46 @@
+# model: dayan-lunhui-2017
+# Pass 3 (model enumeration). TheCubicle's own copy: "The DaYan LunHui 2017 is a new 3x3 that
+# retains the same dense feel of the original LunHui" -- a distinct, dated re-release six years
+# after the original. See research/notes/models/dayan-pass3.md.
+id: dayan-lunhui-2017
+entity: model
+family_id: dayan-lunhui
+manufacturer_id: dayan
+name: "DaYan LunHui 2017"
+scope_class: core
+generation:
+  label: "2017"
+  ordinal: 2
+  basis: community_convention
+announced:
+  value: "2017-08"
+  precision: month
+  qualifier: circa
+description: |-
+  TheCubicle's own copy: "The DaYan LunHui 2017 is a new 3x3 that retains the same dense feel
+  of the original LunHui" (thecubicle-dayan-lunhui-panshi-descriptions) — explicitly framed by
+  the retailer as a new, distinct product ("a new 3x3") rather than a restock of the original,
+  six years after the 2011 LunHui. August 2017 date per the Speedsolving wiki. No further
+  mechanism detail (piece geometry, magnets, adjustment) was found for this generation in
+  either source; specs left unset.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-lunhui-panshi-descriptions, speedsolving-wiki-dayan-products]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-dayan-lunhui-panshi-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-lunhui-v1
+    target_entity: model
+    note: "TheCubicle explicitly calls it 'a new 3x3 that retains the same dense feel of the
+      original LunHui'; the wiki's own numbered succession places it directly after the 2011
+      original with no intervening LunHui release."

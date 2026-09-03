@@ -1,0 +1,36 @@
+# source: speedcubeshop-dayan-zhanchi-pro-m
+# Pass 3 (model enumeration). SpeedCubeShop's own listing carries a structured "Released"
+# field (distinct from a Wayback capture timestamp or a Shopify "Added:" catalogue field) that
+# happens to closely match the Speedsolving wiki's independent "late April 2021" claim for the
+# same product — the strongest release-date evidence found for any DaYan model this pass.
+id: speedcubeshop-dayan-zhanchi-pro-m
+entity: source
+kind: retailer
+title: "DaYan ZhanChi Pro M 3x3 — SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/dayan-zhanchi-pro-m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210513214625id_/https://speedcubeshop.com/products/dayan-zhanchi-pro-m-3x3"
+excerpt: |-
+  "DaYan ZhanChi Pro M 3x3". Structured field: "Released 04/23/21". Description: "The ZhanChi
+  Pro M 3x3 is the most feature-packed ZhanChi yet! Aside from mechanism updates to improve
+  turning and stability, the ZhanChi Pro also borrows the magnet, tension, and elasticity
+  (distance between core and centerpiece) system from the TengYun V2... Available in a new
+  Light Green color, we are excited to see the ZhanChi in the limelight again after its
+  original release in 2011." Structured field: "#weight#77g#weight#".
+preservation_note: "Fetched via `npm run wayback -- get` on 2026-09-03."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product copy. The page's own structured
+  'Released 04/23/21' field is a retailer-asserted release date, not a Shopify 'Added:'
+  catalogue-migration artifact and not a bare Wayback crawl timestamp — it is treated as an
+  explicit dated statement per the S6 policy's date-evidence class, though still only one
+  tier-2 source, hence `probable` rather than `confirmed` on any date it supports. It closely
+  matches (within days of) the independently-worded Speedsolving wiki claim of 'late April
+  2021' for the same product, which corroborates without being identical wording (not the
+  same-source-twice problem RESEARCH_SPEC §3.2 warns about). The '77g' weight field is tier-2
+  specification evidence, consistent with the wiki's later, unsourced '77 grams' claim."
+status: sourced

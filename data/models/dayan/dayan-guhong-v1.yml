@@ -1,0 +1,47 @@
+# model: dayan-guhong
+# Pass 3 (model enumeration). The original GuHong, DaYan's second numbered product. TheCubicle's
+# own 2019 capture shows it already "discontinued indefinitely" — existence and discontinuation
+# both tier 2; the June 2010 release month rests on speedsolving-wiki-dayan-products alone
+# (tier 3). No numeric spec table was found for this generation (pre-dates DaYan's own retailer
+# spec-table era); specs left unset rather than guessed. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-guhong-v1
+entity: model
+family_id: dayan-guhong
+manufacturer_id: dayan
+name: "DaYan GuHong"
+aliases:
+  - "DaYan GuHong V1"
+  - "GuHong Version 1"
+scope_class: core
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2010-06"
+  precision: month
+  qualifier: circa
+description: |-
+  DaYan's second numbered product and, per the family record, "the first speedcube capable of
+  noticeable reverse corner cutting." TheCubicle's own 2019 capture of the base "dayan-guhong"
+  product page shows it already "discontinued indefinitely" by that date
+  (thecubicle-dayan-guhong-descriptions), corroborating the family record's account of a long
+  active life before superseding generations arrived. No manufacturer-first-party statement of
+  the release month was found; the June 2010 date rests on the Speedsolving wiki alone.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+    note: "'GuHong Version 1' is the wiki's own retrospective numbering, applied once a V2
+      existed; DaYan's own 2013 site (dayancube-official-2013) lists this product simply as
+      'DaYan II GuHong' with no version suffix at all, so the 'V1' ordinal itself is a community
+      convention, not a manufacturer-declared one, even though the DaYan-numbered *family*
+      ordinal (II) is manufacturer-declared."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-guhong-descriptions]

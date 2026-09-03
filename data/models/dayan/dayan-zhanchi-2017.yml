@@ -1,0 +1,50 @@
+# model: dayan-zhanchi-2017
+# Pass 3 (model enumeration). TheCubicle's own description: "DaYan has completely revamped the
+# classic ZhanChi with modern speedcubing features... more rounded centers and a capped edge
+# and corner design, along with grooves along the interior" -- an explicit piece-geometry
+# redesign, model-level under DATA_MODEL §4.2. See research/notes/models/dayan-pass3.md.
+id: dayan-zhanchi-2017
+entity: model
+family_id: dayan-zhanchi
+manufacturer_id: dayan
+name: "DaYan ZhanChi 2017"
+scope_class: core
+generation:
+  label: "2017"
+  ordinal: 2
+  basis: community_convention
+announced:
+  value: "2017-08"
+  precision: month
+  qualifier: circa
+description: |-
+  TheCubicle's own copy: "The DaYan ZhanChi is back! With its first 3x3 release in over 6
+  years, DaYan has completely revamped the classic ZhanChi with modern speedcubing features
+  while preserving some of the basic design aspects from the original puzzle. The ZhanChi 2017
+  features more rounded centers and a capped edge and corner design, along with grooves along
+  the interior for a smoother feel" (thecubicle-dayan-zhanchi-descriptions) — an explicit
+  piece-geometry redesign against the original ZhanChi, corroborating the family record's own
+  characterization ("Dayan's first new release in six years"). August 2017 date per the
+  Speedsolving wiki.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-zhanchi-v1
+    target_entity: model
+    note: "TheCubicle: 'DaYan has completely revamped the classic ZhanChi... while preserving
+      some of the basic design aspects from the original puzzle,' after 'its first 3x3 release
+      in over 6 years' — placing this directly after the 2011 original in DaYan's own release
+      sequence, with no intervening 3x3 release."

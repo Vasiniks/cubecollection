@@ -1,0 +1,49 @@
+# model: dayan-guhong-v4-m
+# Pass 3 (model enumeration). TheCubicle's own description: "The GuHong V4 M from Dayan is the
+# latest in the GuHong series" — thin retailer copy, existence and naming only. The
+# speedsolving wiki separately credits it with a lightweight (70g) redesign. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-guhong-v4-m
+entity: model
+family_id: dayan-guhong
+manufacturer_id: dayan
+name: "DaYan GuHong V4 M"
+aliases:
+  - "GuHong Version V4 M"
+scope_class: core
+generation:
+  label: "V4 M"
+  ordinal: 4
+  basis: community_convention
+announced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+description: |-
+  Per the Speedsolving wiki: "GuHong Version V4 M ... Released late 2020," a lightweight (70g)
+  redesign. TheCubicle's own copy corroborates existence and naming only: "The GuHong V4 M from
+  Dayan is the latest in the GuHong series, a famous line of cubes dating back to 2010"
+  (thecubicle-dayan-guhong-descriptions) — no retailer spec table or mechanism detail was found
+  for this specific generation, so the 70g weight figure is recorded only in this description
+  as a wiki claim, not adopted into specs (specs require tier 1-2 per the S6 policy; a wiki may
+  never establish a specification).
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-guhong-descriptions]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-guhong-descriptions]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-dayan-guhong-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-guhong-v3-m
+    target_entity: model
+    note: "TheCubicle calls it 'the latest in the GuHong series'; the wiki's own numbered
+      succession places it directly after V3 M."

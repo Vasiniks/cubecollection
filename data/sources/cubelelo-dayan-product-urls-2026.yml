@@ -1,0 +1,38 @@
+# source: cubelelo-dayan-product-urls-2026
+# Pass 3 (model enumeration). RESEARCH_SPEC §3.6a compliance: a CDX `prefix` sweep of Cubelelo
+# (India), a major non-US retailer never previously swept for DaYan in this archive, run
+# 2026-09-03. Third-retailer corroboration for several DaYan 3x3 generations already admitted
+# from TheCubicle/SpeedCubeShop evidence; no new 3x3 model surfaced.
+id: cubelelo-dayan-product-urls-2026
+entity: source
+kind: retailer
+title: "cubelelo.com/products/dayan-* — product URL enumeration"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/dayan-zhanchi-v5-m-3x3-magnetic"
+preservation_method: excerpt
+excerpt: |-
+  `npm run wayback -- prefix cubelelo.com/products/dayan --limit 300` returns 36 distinct 3x3-
+  or-sibling product paths. 3x3 paths matching generations already admitted from other
+  retailers: dayan-guhong-pro-3x3-magnetic, dayan-guhong-pro-maglev-56mm-3x3-magnetic,
+  dayan-guhong-v3-m-3x3-magnetic, dayan-guhong-v3-m-stickerless-magnetic,
+  dayan-guhong-v4-m-3x3, dayan-tengyun-m-3x3-magnetic-stickerless-spare-parts,
+  dayan-tengyun-m-3x3-stickerless-magnetic, dayan-tengyun-v2-m-3x3-magnetic,
+  dayan-zhanchi-pro-m-3x3, dayan-zhanchi-pro-m-3x3-magnetic-refurbished,
+  dayan-zhanchi-v5-m-3x3-magnetic, dayan-zhanchi-v5-m-3x3-refurbished. No path naming a DaYan
+  3x3 generation absent from this pass's existing enumeration was found (e.g. no further
+  GuHong or ZhanChi generation, no un-enumerated TaiYan/LingYun/LunHui/PanShi/XiangYun SKU).
+  One out-of-scope lead noted for a future 2x2 pass, not pursued further here: "TengYun Plus M"
+  2x2 paths (dayan-tengyun-plus-m-2x2-magnetic, dayan-tengyun-plus-m-2x2-stickerless) name a
+  2x2-only generation newer than any 2x2 naming seen elsewhere in this pass's DaYan sources.
+preservation_note: "CDX prefix enumeration output (reproducible via the command quoted above)
+  is the primary evidence; the excerpt reproduces the path list directly."
+accessed: "2026-09-03"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer catalogue structure. Recorded specifically to
+  satisfy RESEARCH_SPEC §3.6a's mandatory non-US/English-market retailer check: 'swept,
+  corroboration only, nothing new found' for DaYan 3x3 — the honest negative-plus-corroboration
+  outcome the section requires be written down either way."
+status: sourced

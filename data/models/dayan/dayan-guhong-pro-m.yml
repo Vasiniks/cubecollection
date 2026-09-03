@@ -1,0 +1,64 @@
+# model: dayan-guhong-pro-m
+# Pass 3 (model enumeration). TheCubicle's own retailer spec table (Item Weight 67.0g,
+# Dimensions 54.0mm, Magnets: Magnetic) plus the family record's wiki-sourced claim of
+# "standard corner-core magnets with optional maglev" and three sizes (54/55/56mm) sold as
+# retailer configuration options from a single naming convention — sizes and
+# standard/maglev core choice are variant-level under DATA_MODEL §4.2 worked decision A, not
+# separate models. See research/notes/models/dayan-pass3.md.
+id: dayan-guhong-pro-m
+entity: model
+family_id: dayan-guhong
+manufacturer_id: dayan
+name: "DaYan GuHong Pro M"
+scope_class: core
+generation:
+  label: "Pro M"
+  ordinal: 5
+  basis: community_convention
+announced:
+  value: "2023-08"
+  precision: month
+  qualifier: circa
+description: |-
+  TheCubicle's own copy: "The DaYan GuHong Pro M 3x3 is the latest release from the famous
+  speedcubing brand. This 3x3 is magnetic, has a glossy outer finish, and turns well right out
+  of the box. Choose between 5 different tension settings that you can adjust by hand!"
+  (thecubicle-dayan-guhong-descriptions). Sold in three sizes (54/55/56mm) and two core options
+  (standard magnetic / maglev) from parallel product-page families at both TheCubicle and
+  SpeedCubeShop — per DATA_MODEL §4.2's separability-at-assembly test, these are variant-level
+  configuration choices of one design, not separate models. size_mm and weight_g are left off
+  this model's specs because they vary by the 54/55/56mm configuration
+  (thecubicle-dayan-guhong-descriptions' spec table gives 54.0mm/67.0g for the 54mm SKU
+  specifically). magnet_architecture is also left unset at model level: the wiki describes
+  "corner-core magnets" but a wiki may never establish a specification per the S6 policy, and
+  the only same-page "corner-core" wording found in TheCubicle's own capture sits inside a
+  customer review rather than the retailer's own product-description copy, so it does not
+  qualify as tier 1-2 evidence either. The successor GuHong Pro+ record below does carry a
+  retailer-authored "corner-to-core magnets" statement and sets this field there. August 2023
+  date per the Speedsolving wiki ("Released August 2023"); the retailer spec table's own
+  "Added 2023-08-31" field is NOT used as corroboration of this date, per RESEARCH_SPEC's
+  forbidden "Added:" pattern, even though the two happen to be close.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+    note: "The retailer capture's own 'Added 2023-08-31' field is excluded from this
+      attestation entirely, per the S6 policy's explicit list of forbidden date artifacts; it
+      is not cited even as weak corroboration."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-guhong-descriptions]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-descriptions, speedsolving-wiki-dayan-products]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+relationships:
+  - type: succeeds
+    target: dayan-guhong-v4-m
+    target_entity: model
+    note: "The wiki's own numbered succession (Version 1 through Pro M) places this directly
+      after V4 M; TheCubicle independently calls it 'the latest release' at the time of its
+      capture."

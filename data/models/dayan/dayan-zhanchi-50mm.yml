@@ -1,0 +1,39 @@
+# model: dayan-zhanchi-50mm
+# Pass 3 (model enumeration). A second reduced-size ZhanChi DIY kit, sold as its own
+# SpeedCubeShop product page in 2015 alongside the 42mm kit. Admitted on existence alone (S6
+# policy class 2): the capture carries only a title, no descriptive copy, so this record is
+# deliberately thin rather than padded with unsupported claims. See
+# research/notes/models/dayan-pass3.md for the model/variant boundary reasoning shared with
+# the 42mm record.
+id: dayan-zhanchi-50mm
+entity: model
+family_id: dayan-zhanchi
+manufacturer_id: dayan
+name: "DaYan ZhanChi 50mm"
+scope_class: core
+generation:
+  label: "50mm"
+  basis: community_convention
+specs:
+  size_mm: 50
+description: |-
+  SpeedCubeShop's own product page, "DaYan ZhanChi 50mm 3x3x3 DIY Kit" (captured 2015-12-01,
+  speedcubeshop-dayan-zhanchi-size-diy-kits), is the only evidence found for this generation
+  this pass. Unlike the sibling 42mm kit, the capture carries no descriptive body text beyond
+  the title, so existence and the 50mm size are the only claims made here; no release date, no
+  mechanism detail, and no relationship to dayan-zhanchi-v1 is asserted. It is recorded as a
+  separate model from the standard ZhanChi (its own distinct retailer product page, matching
+  the 42mm structural pattern) rather than a variant, but this is a genuinely thinner case than
+  the 42mm one and the boundary call is correspondingly less certain — flagged for review
+  rather than silently merged, per DATA_MODEL §4.2 worked decision G.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]
+  /description:
+    confidence: uncertain
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]

@@ -1,0 +1,51 @@
+# model: dayan-zhanchi-42mm
+# Pass 3 (model enumeration). A reduced-size ZhanChi sold as its own SpeedCubeShop product
+# page from at least 2015, described as "the best performing miniature cube on the market" --
+# not a "choose your size" configuration option on the standard-size ZhanChi listing (contrast
+# GuHong Pro M/Pro+, where 54/55/56mm are explicitly offered from one listing). Treated as a
+# separate model per the boundary-call reasoning in research/notes/models/dayan-pass3.md: a
+# drop from ~55mm to 42mm is a distinct mould/tooling scale, not an assembly-time parts choice,
+# and the retailer structure (its own page, not a size selector) supports that reading.
+id: dayan-zhanchi-42mm
+entity: model
+family_id: dayan-zhanchi
+manufacturer_id: dayan
+name: "DaYan ZhanChi 42mm"
+scope_class: core
+generation:
+  label: "42mm"
+  basis: community_convention
+announced:
+  value: "2012"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 42
+description: |-
+  Per the family record's own account (drawing on speedsolving-wiki-dayan-products): "ZhanChi
+  42mm — Released 2012. This is a smaller version of the Zhanchi." SpeedCubeShop's own DIY-kit
+  listing, captured 2015-11-13, independently corroborates existence and naming, and describes
+  it as a genuinely miniature product rather than a minor size tweak: "The 42mm DaYan ZhanChi
+  is the best performing miniature cube on the market. You really do not lose any performance
+  by dropping down to a 42mm cube" (speedcubeshop-dayan-zhanchi-size-diy-kits). Recorded as a
+  separate model from the standard-size ZhanChi (dayan-zhanchi-v1) rather than a variant of it,
+  because it is sold from its own distinct product page/SKU rather than as a size choice on one
+  listing — the opposite structure from GuHong Pro M/Pro+'s 54/55/56mm, which this archive
+  treats as variant-level. No `succeeds` relationship is recorded: this is a contemporaneous
+  alternate-mould size of the original ZhanChi, not a design generation that replaced it, and
+  DATA_MODEL's relationship vocabulary has no type for "concurrent alternate mould, same
+  family" — noted as a modelling gap in the pass-3 report rather than forced into `succeeds`.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /specs/size_mm:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products, speedcubeshop-dayan-zhanchi-size-diy-kits]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, speedcubeshop-dayan-zhanchi-size-diy-kits]

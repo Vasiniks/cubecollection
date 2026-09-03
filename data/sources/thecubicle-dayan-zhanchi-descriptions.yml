@@ -1,0 +1,53 @@
+# source: thecubicle-dayan-zhanchi-descriptions
+# Pass 3 (model enumeration). TheCubicle's own product-description text for five ZhanChi-line
+# listings (V1, 2017, 2018, Pro M, V5 M Standard), fetched directly via
+# `npm run wayback -- get` on 2026-09-03. Used to corroborate model-level identity and
+# mechanism differences across the ZhanChi succession.
+id: thecubicle-dayan-zhanchi-descriptions
+entity: source
+kind: retailer
+title: "DaYan ZhanChi product pages (V1, 2017, 2018, Pro M, V5 M) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-zhanchi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927001805id_/https://www.thecubicle.com/products/dayan-zhanchi"
+excerpt: |-
+  DaYan ZhanChi (V1), captured 2020-09-27 (https://web.archive.org/web/20200927001805id_/https://www.thecubicle.com/products/dayan-zhanchi):
+  "The DaYan ZhanChi is the fifth cube of the DaYan series and is quickly becoming one of the
+  most popular in the market... Features built-in torpedoes that minimize popping."
+
+  DaYan ZhanChi 2017, captured 2020-09-21 (https://web.archive.org/web/20200921092406id_/https://www.thecubicle.com/products/dayan-zhanchi-2017):
+  "The DaYan ZhanChi is back! With its first 3x3 release in over 6 years, DaYan has completely
+  revamped the classic ZhanChi with modern speedcubing features while preserving some of the
+  basic design aspects from the original puzzle. The ZhanChi 2017 features more rounded
+  centers and a capped edge and corner design, along with grooves along the interior for a
+  smoother feel."
+
+  DaYan ZhanChi 2018, captured 2019-08-24 (https://web.archive.org/web/20190824175520id_/https://www.thecubicle.com/products/dayan-zhanchi-2018):
+  "The DaYan ZhanChi 2018 is a surprising release from DaYan. Following the XiangYun, the
+  ZhanChi 2018 is a refreshing improvement in performance and feel."
+
+  DaYan ZhanChi Pro M 3x3, captured 2021-09-22 (https://web.archive.org/web/20210922083947id_/https://www.thecubicle.com/products/dayan-zhanchi-pro-m-3x3):
+  "The DaYan ZhanChi Pro M is the newest iteration of the legendary ZhanChi, a cube that
+  dominated the cubing scene nearly a decade ago. This new version of the ZhanChi is
+  lightweight, and has adjustable magnets, elasticities, and tensions."
+
+  DaYan ZhanChi V5 M 3x3 (Standard), captured 2025-07-01 (https://web.archive.org/web/20250701234853id_/https://www.thecubicle.com/products/dayan-zhanchi-v5-m-3x3-standard):
+  "The ZhanChi V5 M 3x3 is a new flagship 3x3 from DaYan. This cube has everything you would
+  ever want in a customizable 3x3. It has adjustable tension, compression, and magnet
+  strength. It comes in three different versions with varying degrees of magnetic attraction
+  and repulsion. This is the Standard version with white internals, conical spring tensioning
+  system, and edge/corner - corner/core magnetization."
+preservation_note: "Five separate `npm run wayback -- get` fetches, one per URL/timestamp
+  listed above, condensed into one source record per this archive's established grouping
+  pattern (cf. thecubicle-dayan-collection-2025)."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product copy, never customer reviews embedded
+  on the same pages. The V5 M excerpt establishes that 'Standard'/'Premium'/'Fancy' are
+  variant-level configurations of one product page ('It comes in three different versions'),
+  not three separate models."
+status: sourced

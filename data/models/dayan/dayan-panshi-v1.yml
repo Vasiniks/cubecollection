@@ -1,0 +1,51 @@
+# model: dayan-panshi-v1
+# Pass 3 (model enumeration). DaYan's sixth numbered product, single-generation. TheCubicle's
+# own capture independently confirms the manufacturer stopped production "as of early 2014" --
+# corroborating, not the disputed February 2013 launch date, but the family record's broader
+# account of a short, poorly-received production run. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-panshi-v1
+entity: model
+family_id: dayan-panshi
+manufacturer_id: dayan
+name: "DaYan PanShi"
+aliases:
+  - "Dayan VI Panshi"
+scope_class: core
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2013"
+  precision: year
+  qualifier: circa
+  note: "The family record's own attestation downgraded the February 2013 month claim to
+    `probable` because dayancube-official-2013 only bounds existence 'by August 2013' and the
+    month itself rests on speedsolving-wiki-dayan-products (tier 3) alone. This model record
+    inherits that same caution and is recorded at year precision rather than repeating an
+    unsupported month."
+description: |-
+  DaYan's sixth numbered product ("Dayan VI Panshi" per dayancube-official-2013), the family's
+  only generation. TheCubicle's own copy: "The DaYan PanShi is DaYan's highly anticipated 6th
+  cube in its 3x3 series. As the name suggests, the PanShi is intended to be sturdy as a rock.
+  As of early 2014, production of the DaYan PanShi has been stopped indefinitely by the
+  manufacturer" (thecubicle-dayan-lunhui-panshi-descriptions) — independent tier-2
+  corroboration of the family record's account (drawing on the wiki) that this generation was
+  "Considered a disappointment" and short-lived. No successor generation was found this pass.
+status: drafted
+attestations:
+  /announced:
+    confidence: probable
+    sources: [speedsolving-wiki-dayan-products, dayancube-official-2013]
+    note: "Mirrors the family record's own downgrade from `confirmed`: dayancube-official-2013
+      bounds existence to 'by August 2013' (an upper bound, not corroboration of the specific
+      month), and the February 2013 month itself rests solely on the tier-3/4 wiki. Recorded
+      here at year precision to avoid repeating a month-level claim the evidence does not
+      support."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-lunhui-panshi-descriptions]

@@ -1,0 +1,60 @@
+# model: dayan-guhong-v3-m
+# Pass 3 (model enumeration). TheCubicle's own description: "a modernized version of the
+# iconic GuHong ... features that swooshy TengYun feel" — the first magnetic GuHong generation,
+# per speedsolving-wiki-dayan-products ("featuring magnets like the TengYun"). A core/mechanism
+# change (non-magnetic to magnetic), model-level under DATA_MODEL §4.2. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-guhong-v3-m
+entity: model
+family_id: dayan-guhong
+manufacturer_id: dayan
+name: "DaYan GuHong V3 M"
+aliases:
+  - "GuHong Version 3 M"
+scope_class: core
+generation:
+  label: "V3 M"
+  ordinal: 3
+  basis: community_convention
+announced:
+  value: "2019-12"
+  precision: month
+  qualifier: circa
+specs:
+  size_mm: 54
+description: |-
+  DaYan's first magnetic GuHong, per TheCubicle's own copy: "The GuHong V3 M is a modernized
+  version of the iconic GuHong 3x3 from DaYan. At just 54 mm, this cube is quite stable and
+  features that swooshy TengYun feel that is quickly becoming a signature of DaYan puzzles"
+  (thecubicle-dayan-guhong-descriptions). The Speedsolving wiki independently states it was
+  "Released to some cube stores December 2019 ... featuring magnets like the TengYun" — the
+  addition of a magnet system to the previously non-magnetic GuHong lineage is a mechanism
+  change under DATA_MODEL §4.2, not a sold configuration. No numeric magnet-architecture detail
+  (e.g. layer count) was found in retailer copy for this generation specifically; left unset
+  rather than guessed.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-descriptions]
+    note: "Retailer's own product-description copy states '54 mm' directly; no alternate size
+      was found sold for this specific generation (unlike the later Pro M/Pro+ generations,
+      which offer 54/55/56mm as configuration choices)."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products, thecubicle-dayan-guhong-descriptions]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-descriptions, speedsolving-wiki-dayan-products]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-guhong-v2
+    target_entity: model
+    note: "TheCubicle calls it 'a modernized version of the iconic GuHong 3x3'; the family
+      record's own numbered succession places it directly after V2."

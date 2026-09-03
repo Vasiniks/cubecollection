@@ -1,0 +1,46 @@
+# model: dayan-zhanchi-2018
+# Pass 3 (model enumeration). TheCubicle's own description frames this as a further, distinct
+# release after both the 2017 ZhanChi and XiangYun: "Following the XiangYun, the ZhanChi 2018
+# is a refreshing improvement in performance and feel." See
+# research/notes/models/dayan-pass3.md.
+id: dayan-zhanchi-2018
+entity: model
+family_id: dayan-zhanchi
+manufacturer_id: dayan
+name: "DaYan ZhanChi 2018"
+scope_class: core
+generation:
+  label: "2018"
+  ordinal: 3
+  basis: community_convention
+announced:
+  value: "2018-11"
+  precision: month
+  qualifier: circa
+description: |-
+  TheCubicle's own copy: "The DaYan ZhanChi 2018 is a surprising release from DaYan. Following
+  the XiangYun, the ZhanChi 2018 is a refreshing improvement in performance and feel. If you
+  are nostalgic for DaYan 3x3's, this is a puzzle you should definitely check out"
+  (thecubicle-dayan-zhanchi-descriptions), corroborating the family record's own account ("A
+  substantial improvement"). November 2018 date per the Speedsolving wiki.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions]
+relationships:
+  - type: succeeds
+    target: dayan-zhanchi-2017
+    target_entity: model
+    note: "TheCubicle explicitly sequences it after both XiangYun and, by extension, the 2017
+      ZhanChi it revised; the wiki's own numbered succession places it directly after ZhanChi
+      2017 within the ZhanChi line specifically."

@@ -1,0 +1,25 @@
+# source: thecubicle-dayan-lingyun-v2
+# Pass 3 (model enumeration). TheCubicle's own product description for DaYan LingYun V2,
+# fetched via `npm run wayback -- get` on 2026-09-03.
+id: thecubicle-dayan-lingyun-v2
+entity: source
+kind: retailer
+title: "DaYan LingYun V2 — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-lingyun-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190718id_/https://www.thecubicle.com/products/dayan-lingyun-v2"
+excerpt: |-
+  "This product has been discontinued indefinitely or we aren't sure when it will be back in
+  stock." "This is the second version of the DaYan LingYun. It features torpedoes and has a
+  distinct, crispy feel. This cube is light and quick after lubing and is slightly smaller than
+  its cousins, the GuHong and Zhanchi." Listed under "Related Products in 'Discontinued'."
+preservation_note: "Fetched via `npm run wayback -- get` on 2026-09-03."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product copy. Corroborates the wiki's claim
+  that V2 added torpedo pieces, and independently establishes discontinuation by 2019."
+status: sourced

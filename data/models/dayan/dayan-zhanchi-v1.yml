@@ -1,0 +1,41 @@
+# model: dayan-zhanchi-v1
+# Pass 3 (model enumeration). DaYan's fifth numbered product, "the one used by Feliks Zemdegs
+# to obtain multiple former world records" per the family record. TheCubicle's own copy
+# independently corroborates existence, naming, and a torpedo-piece mechanism detail. See
+# research/notes/models/dayan-pass3.md.
+id: dayan-zhanchi-v1
+entity: model
+family_id: dayan-zhanchi
+manufacturer_id: dayan
+name: "DaYan ZhanChi"
+aliases:
+  - "DaYan V ZhanChi"
+scope_class: core
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2011-07"
+  precision: month
+  qualifier: circa
+description: |-
+  DaYan's fifth numbered product ("DaYan V ZhanChi" per dayancube-official-2013). TheCubicle's
+  own copy: "The DaYan ZhanChi is the fifth cube of the DaYan series and is quickly becoming
+  one of the most popular in the market... Features built-in torpedoes that minimize popping"
+  (thecubicle-dayan-zhanchi-descriptions) — independent tier-2 corroboration of the wiki's July
+  2011 release-month claim's product identity, though not of the date itself.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-dayan-products]
+    note: "'V1' is this archive's own label for the original, undesignated release, applied
+      only because later 'ZhanChi 2017'/'2018'/'Pro M'/'V5 M' generations exist; DaYan's own
+      2013 site lists it simply as 'DaYan V ZhanChi' with no internal version suffix."
+  /description:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-descriptions, speedsolving-wiki-dayan-products]
