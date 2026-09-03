@@ -1,0 +1,35 @@
+# source: thecubicle-maru-3x3-special-patterns
+# TheCubicle's own product page for "Maru 3x3 (Special Patterns)", a sticker-treatment variant
+# of the original Maru 3x3 already sourced in thecubicle-maru-3x3. Tier 2, first-party retailer
+# copy.
+id: thecubicle-maru-3x3-special-patterns
+entity: source
+kind: retailer
+title: "Maru 3x3 (Special Patterns) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-3x3-special-patterns"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927041907id_/https://www.thecubicle.com/products/maru-3x3-special-patterns"
+excerpt: |-
+  "The original Maru 3x3 is available with a variety of special patterns on the stickers. Some
+  of the patterns can be solved just like a normal 3x3, but others require additional steps to
+  be taken to ensure the patterns are returned to their original state. All Special Pattern
+  Maru 3x3s come with a blue Maru cube stand and approximately 6mL of Maru Lube." Product
+  Specifications: "Manufacturer: Maru / Type: 3x3 / Gross Weight: 154g / Dimensions: 57.0mm 3".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer. 'The original Maru 3x3 is available with...' directly
+  confirms this is a sticker/decorative treatment of the same base product already sourced in
+  thecubicle-maru-3x3, not a separate model or family — read as a pass-4 (variant enumeration)
+  lead on data/families/maru-3x3.yml, not built into a separate family here. DATA-INTEGRITY
+  NOTE (cross-agent finding): this page's own in-page 'Added: 2018-09-11' field is NOT used as
+  evidence of any date — that exact string was independently found to recur verbatim across
+  multiple unrelated Maru products (this page, the Maru CX3 assembled product, and the Maru
+  Mini 3x3 30mm) captured at different real Wayback crawl dates, which is the same
+  catalogue-migration/onboarding-artifact pattern already flagged for MoreTry's shared 'Added:
+  2022-03-14' date elsewhere in this pass. Only the genuine external Wayback crawl timestamp of
+  this source's own archive_url is used for any dating purpose."
+status: sourced

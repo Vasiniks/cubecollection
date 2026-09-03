@@ -14,19 +14,27 @@ name: "GiiKER M3"
 aliases:
   - "Giiker M3 3x3"
 introduced:
-  value: "2018"
+  value: "2020"
   precision: year
-  qualifier: circa
-  note: "TheCubicle's own catalogue records 'Added: 2018-10-30' — a retailer catalogue-add date,
-    not a stated manufacturer release date, hence `circa` rather than `exact`."
+  qualifier: before
+  note: "CORRECTED after a cross-agent finding: this record originally relied on TheCubicle's
+    own in-page 'Added: 2018-10-30' field. That exact date string was independently found to
+    recur verbatim on the unrelated GiiKER Super Cube i3S product page too
+    (thecubicle-giiker-super-cube-i3s-2019, a later-generation, differently-dated product per
+    its own succession claim) — the same kind of catalogue-migration/onboarding artifact
+    flagged elsewhere in this pass for MoreTry's shared 'Added: 2022-03-14' date, not a real
+    per-product date. No longer used as evidence here. Replaced with the genuine external
+    Wayback crawl timestamp of thecubicle-giiker-m3-3x3-2020's own archive_url (2020-09-20) as
+    an honest 'existed by' upper bound instead."
 positioning: special
 description: |-
   A mechanical, non-electronic 3x3 built on the same shell/tooling as GiiKER's SUPERCUBE smart
   cube line. TheCubicle's own product copy (thecubicle-giiker-m3-3x3-2020, tier 2) states
   directly: "The Giiker M3 3x3 retains the feel and sound of the original Giiker Smart Cube but
   without the internal electronics. It features strong magnets and a classic color scheme on
-  black plastic." The same source's specification table records it as added to the catalogue on
-  2018-10-30, with its own weight and dimension figures distinct from the i3S's.
+  black plastic." The same source's specification table records its own weight and dimension
+  figures, distinct from the i3S's. (Its in-page "Added" date is not used as evidence — see the
+  `/introduced` attestation's correction note.)
 
   `positioning: special` is recorded here rather than `mainline` or `smart`: it is explicitly
   *not* the smart line (it is defined by the electronics' absence), and no evidence found this
@@ -47,12 +55,12 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: reported
+    confidence: uncertain
     sources: [thecubicle-giiker-m3-3x3-2020]
-    note: "Single tier 2 retailer catalogue date ('Added: 2018-10-30'), not independently
-      corroborated by a second source or a manufacturer-first-party date this pass — `reported`
-      per the confidence table, not `probable`, since no second source was found at all (not
-      merely uncorroborated agreement)."
+    note: "Corrected (see the field's own note above): the in-page 'Added' date this record
+      previously relied on is a cross-product catalogue artifact, not a real date. Downgraded
+      from `reported` to `uncertain` accordingly — the only remaining basis is a bare Wayback
+      crawl-timestamp upper bound, not a stated date of any kind."
   /positioning:
     confidence: uncertain
     sources: [thecubicle-giiker-m3-3x3-2020]

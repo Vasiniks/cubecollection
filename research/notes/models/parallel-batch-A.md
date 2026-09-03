@@ -307,3 +307,49 @@ the retailer's product copy) were already sourced in pass 1; this pass only re-v
 (the wiki live, the retailer sweep for corroboration) and applied the family-level boundary call.
 
 ---
+
+## Cross-agent correction: TheCubicle "Added:" dates are not reliable per-product evidence
+
+Agent B (working a disjoint queue) flagged that the literal string `Added: 2018-09-11` recurs
+verbatim across unrelated products from several different brands on TheCubicle — a
+catalogue-migration/onboarding artifact, not a real per-product date — and warned that any
+repeated "Added:" date should be treated the same way. Acting on this before continuing:
+
+- **`data/families/giiker-m3.yml` corrected.** Its `/introduced` attestation originally relied
+  on TheCubicle's in-page `Added: 2018-10-30` for the GiiKER M3 product. Checked and confirmed:
+  that exact string also appears verbatim on the unrelated, later-generation GiiKER Super Cube
+  i3S page (thecubicle-giiker-super-cube-i3s-2019) — the same artifact pattern. Corrected to use
+  the source's genuine external Wayback crawl timestamp (2020-09-20) as an honest upper bound
+  instead, downgraded from `reported` to `uncertain`, and the correction is documented directly
+  in the record's own attestation note (not silently fixed).
+- **MoreTry's shared `Added: 2022-03-14`** had already been independently caught and correctly
+  handled (recorded at `uncertain` specifically because the date recurred identically across
+  three different version pages) before this cross-agent note arrived — no change needed there,
+  confirmed consistent with the same finding.
+- **A related provenance slip caught and fixed while auditing this:** the source
+  `thecubicle-moretry-tianma-x3-v3-snap-2022` had recorded an `archive_url` timestamp
+  (2022-07-06) that did not match the capture its own quoted excerpt actually came from
+  (confirmed via the tool's own snapshot-comment output to be 2025-07-10, since the
+  no-timestamp `get` call resolved to the latest capture, not the nearby 2022 one visible in the
+  CDX prefix listing). Fixed the `archive_url` to point at the exact 2025-07-10 snapshot and
+  added a correction note; the source id keeps its original '-2022' suffix per this project's
+  immutable-id policy, flagged explicitly so the mismatch isn't silently carried forward. Two
+  further sources (`thecubicle-moretry-tianma-x3-v1-2023`,
+  `thecubicle-moretry-tianma-x3-v4-maglev-2022`) had `archive_url` timestamps accurate to the
+  day but not the exact captured minute — tightened to the exact snapshot timestamp for
+  precision, no content or date claims changed.
+- **Going forward (Maru onward in this queue):** no TheCubicle "Added:" field is treated as
+  dating evidence at all unless independently cross-checked against unrelated products and
+  found not to repeat. Wayback's own external crawl timestamps (the `snapshot:` line the
+  `wayback get` tool itself reports) are used instead wherever a bound is needed, and are
+  clearly distinguished in every new source's reliability_note as crawl-time evidence, not
+  claimed release dates.
+- **Zero-family and sub-brand-flagging precedents from Agent B, noted for consistency, not
+  acted on outside my own queue:** B returned zero families for Z-Cube because its 3x3 catalogue
+  turned out to belong under the original manufacturer's tree (DATA_MODEL §4.3/4.4), and B found
+  stronger sub-brand evidence for two entities but deliberately made no manufacturer-record edit,
+  flagging for human review instead. Both are the same discipline already being applied in this
+  log's own decisions (e.g. Eastsheen's contradiction recorded rather than resolved, GoCube
+  never merged into Rubik's Connected). No manufacturer-record edits made outside my own queue.
+
+---
