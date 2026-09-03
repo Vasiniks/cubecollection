@@ -328,3 +328,38 @@ introduction date; a tier-1 date remains unfound.
 **Why this one mattered more than the other seven.** `gan-354-m` is inside the built model layer.
 An artifact date held at `probable` on a model is exactly the kind of value that propagates into
 a chronological exhibition and is then very hard to trace back.
+
+---
+
+## S12 — HIGH, VERIFIED AND FIXED: a `confirmed` claim whose own note disowned it (`dayan-panshi`)
+
+The source-independence audit reported an excerpt-vs-claim mismatch on
+`data/families/dayan-panshi.yml` `/introduced`. **Verified and confirmed.**
+
+The attestation was `confidence: confirmed`, citing two sources:
+
+- `speedsolving-wiki-dayan-products` — `kind: wiki` → **tier 4**
+- `dayancube-official-2013` — `kind: manufacturer_official` → **tier 1**
+
+Its own note read: the 2013-08-05 capture is *"consistent with, though **not an independent
+confirmation of**, the exact February 2013 date."*
+
+So the record simultaneously asserted `confirmed` and admitted in prose that its only tier-1
+source does not confirm the claim. The February month rests solely on a tier-4 wiki; the tier-1
+manufacturer capture establishes only that the product existed **by August 2013** — an upper
+bound on a different question.
+
+**Why validation could not catch this.** Rule 9 requires a `confirmed` attestation to cite a
+tier-1 source *or* two independent tier 1–2 sources. A tier-1 source **is** present, so the rule
+passes **structurally**. Nothing in the toolchain can test whether the cited source actually
+supports the specific sentence — that is a semantic judgement. This is the clearest instance in
+the archive of a rule being satisfied in form but not in substance, and it is worth recording as
+a general limitation rather than a one-off.
+
+**Correction applied** (narrow, decisive): `confirmed` → `probable`, with the reasoning recorded
+inline and the restoration condition stated (a tier 1–2 source giving the month). No source was
+removed and no date changed — only the confidence now matches the evidence.
+
+**Generalisation for the source audit backlog.** Any `confirmed` attestation that cites one
+tier-1 source *plus* a tier-4 source deserves the same check: is the tier-1 source carrying the
+claim, or merely present? This is a small, enumerable set and should be swept before Pass 3.

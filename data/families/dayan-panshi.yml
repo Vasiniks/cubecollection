@@ -30,11 +30,18 @@ status: drafted
 
 attestations:
   /introduced:
-    confidence: confirmed
+    confidence: probable
     sources: [speedsolving-wiki-dayan-products, dayancube-official-2013]
-    note: "The wiki's stated release month is corroborated by dayancube-official-2013's own
-      site, captured 2013-08-05, already listing 'Dayan VI Panshi' for sale — consistent with,
-      though not an independent confirmation of, the exact February 2013 date."
+    note: "DOWNGRADED from `confirmed` on 2026-09-03 (Pass 2 adjudication gate). The confidence
+      contradicted this note's own admission. The exact February 2013 month comes solely from
+      speedsolving-wiki-dayan-products, a tier-4 community wiki. The tier-1 source
+      dayancube-official-2013 is a 2013-08-05 capture of DaYan's own site already listing
+      'Dayan VI Panshi' for sale — which establishes only that the product existed *by August
+      2013*, an upper bound, and does not corroborate February specifically. Rule 9 was
+      satisfied structurally (a tier-1 source is present) but not substantively (that source
+      does not support this claim), so validation could not catch it. `probable` reflects a
+      plausible, bounded date from a single tier-4 origin. A tier 1-2 source stating the month
+      would restore `confirmed`."
   /positioning:
     confidence: reported
     sources: [speedsolving-wiki-dayan-products]
