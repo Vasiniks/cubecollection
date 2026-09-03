@@ -1,0 +1,26 @@
+# source: thecubicle-cubetwist-star-cube-2020
+# TheCubicle product page for the "CubeTwist 3x3 Star Cube," archived 2020-09-23 — a fuller
+# capture than the pass-1 `thecubicle-cubetwist-star-cube` source, confirming this is a shape
+# mod, not a standard 3x3x3.
+id: thecubicle-cubetwist-star-cube-2020
+entity: source
+kind: retailer
+title: "CubeTwist 3x3 Star Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cubetwist-3x3-star-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200923003719id_/https://www.thecubicle.com/products/cubetwist-3x3-star-cube"
+excerpt: |-
+  Product Description: "The CubeTwist 3x3 Star Cube features lightweight construction, smooth
+  turning, and textured stickers. It is available in white plastic." Structured
+  "Specifications": "Manufacturer: CubeTwist / Type: Shape Mods / Added: 2018-10-14 / Gross
+  Weight: 86g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. Confirms 'Type: Shape Mods' — no base-model or rebrand claim is made, unlike CubeStyle's
+  equivalent decorated 3x3 listings. Used to support the `cubetwist` zero-family finding."
+status: sourced

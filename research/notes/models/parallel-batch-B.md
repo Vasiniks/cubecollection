@@ -880,3 +880,53 @@ aftermarket finding itself is `reported`-to-`probable` — a single tier 2 sourc
 directly stated rather than inferred, and internally consistent across two separate listings.
 
 ---
+## CubeTwist — 0 families (scope exclusion, type (a) — the (b) prior did not hold)
+
+**Prior tested, did not hold.** The task brief flagged CubeTwist as a likely type (b)
+(aftermarket/rebrand) candidate on prior signal. Tested directly: no base-model-naming claim
+of the kind found for CubeStyle or Z-Cube was found anywhere in CubeTwist's catalogue. This is
+a clean type (a) scope exclusion instead.
+
+**Method.** `npm run wayback -- prefix thecubicle.com/products/cubetwist` (40 URLs) enumerates
+CubeTwist's full found catalogue: Barrel Cube I/II, Double/Triple/Conjoined Cube variants,
+Mirror Blocks/Double Cube, Siamese Mirror Cube I/II, House Cube I/II/III, Star Cube,
+Inequilateral 3x3, Bandaged 3x3 DIY Kit, Bandaged 4x4/Pyraminx, Square-1/2, Oskar Gear 5x5,
+"Magic"/"Master Magic" (non-cube puzzles). Three of the most 3x3x3-adjacent-sounding products
+were fetched directly: **Star Cube** ("Type: Shape Mods", no base-model claim), **Inequilateral
+3x3** ("a 3x3 shape mod with unevenly-sized layers... Type: Shape Mods"), and **Bandaged 3x3 -
+DIY Kit** ("a non-tiled CubeTwist 3x3 with a full set of special colored tiles... to design
+just about any kind of bandaged 3x3" — CubeTwist's own base mould, no external base-model
+claim, filed under "DIY Kits" not "3x3"). None names another manufacturer's model the way
+CubeStyle's decorated 3x3s did.
+
+**Zero families created — type (a), scope exclusion.** Every CubeTwist product checked is
+either a shape mod (non-WCA-legal, no documented significance clearing RESEARCH_SPEC §2.2's
+bar) or a bandaged-cube accessory kit (a distinct, non-competitive puzzle category). No
+`cubetwist` family record was created.
+
+**A URL-reuse trap worth flagging explicitly, unrelated to the family question but
+important.** The product slug `cubetwist-conjoined-3x3` was found in the prefix sweep with
+only a single capture, dated 2024-03-04 — but that capture's own page title reads "3x3 Double
+Cube I" and its structured spec table states **"Manufacturer: Calvin's Puzzle"**, not
+CubeTwist at all. This URL almost certainly changed hands (a deleted CubeTwist product's
+Shopify handle reused for an unrelated Calvin's Puzzle product) rather than representing any
+CubeTwist/Calvin's Puzzle relationship. **Not actioned** — Calvin's Puzzle belongs to Agent A,
+not touched here — but flagged so nobody (on either side of this research effort) misreads
+this specific URL as CubeTwist evidence, or as a CubeTwist/Calvin's-Puzzle rebrand lead. This
+is also a general methodological caution: a bare product-slug prefix hit is not proof the slug
+still belongs to the manufacturer implied by its name; the page content must be checked.
+
+**Rejected:** every CubeTwist product enumerated — scope exclusion (shape mods/DIY accessory
+kits), not a model/variant-boundary call.
+
+**Unresolved questions:** none of substance for the zero-family conclusion itself; the
+`cubetwist-conjoined-3x3` URL-reuse question is closed (belongs to Calvin's Puzzle, not
+CubeTwist, not actioned by me).
+
+**Sources added:** `thecubicle-cubetwist-star-cube-2020`, `thecubicle-cubetwist-bandaged-
+3x3-diy-kit-2019`. `thecubicle-cubetwist-star-cube` (pass 1, not superseded, both retained).
+
+**Confidence:** `reported`-to-`probable` for the scope exclusion (single-retailer evidence,
+but consistent across every product type checked, with an explicit "Type" field on each).
+
+---
