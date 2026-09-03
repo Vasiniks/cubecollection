@@ -593,3 +593,45 @@ time budget); exact introduction date for either Chun generation.
 **Confidence:** `uncertain` on `introduced`/`positioning`; `reported` on `description`.
 
 ---
+## Xinlexin — 0 families
+
+**Pass 1's own open question resolved, in the negative.** `data/manufacturers/xinlexin.yml`
+found a single tier 4 Chinese brand-directory profile naming "百变魔王" (Baibian Mowang) as
+Xinlexin's cube-branded product line, but explicitly left open "whether '百变魔王'
+specifically includes WCA-legal 3x3 speedcubes, as opposed to non-WCA novelty cubes, snake
+puzzles, or other toy categories entirely." This pass went to Xinlexin's own first-party
+corporate site (xinlexin.com, still live with wayback captures through at least 2025) and
+found the answer directly.
+
+**Method.** Xinlexin's own English-language site has a four-brand navigation menu (GUDI
+Building Blocks, Magic Classroom, Magic Club, a spinning-top series), each pairing a Chinese
+brand name with an internal product-filter ID. "百变魔王" maps to the "Magic Club" label
+(`bid=10`) — fetched directly.
+
+**Finding.** The "百变魔王" (Magic Club) product listing's own caption reads "百变魔王魔尺"
+(Baibian Mowang **Moche**) — "Moche" (魔尺) is the Chinese term for a **Magic Snake** puzzle
+(a twistable segmented-ruler toy), not a 3x3x3 cube. Every product thumbnail on the page's own
+listing is a Moche/Magic Snake SKU. The companion "变形教室"/"Magic Classroom" brand (`bid=9`)
+was also checked and found to be spinning tops and toy construction vehicles — also unrelated.
+
+**Zero families created — a genuine finding**, and a cleaner one than most in this batch: this
+is not a case of thin evidence or ambiguous scope, but a first-party source directly and
+specifically resolving the exact open question pass 1 raised. Xinlexin is a real, verified
+general toy manufacturer (confirmed by its own corporate site, independent of the tier 4
+brand-directory profile) but has no documented 3x3x3 speedcube product at all — its "百变魔王"
+line is Magic Snake puzzles, entirely out of this archive's scope (RESEARCH_SPEC §2.4,
+"Puzzles other than 3×3×3"). No `xinlexin` family record was created.
+
+**Unresolved questions:** whether Xinlexin's "GUDI Building Blocks" brand (unrelated to
+puzzles, not checked) or any other unlisted brand/product includes a 3x3x3 cube — considered
+very unlikely given the company's own four-brand structure is now fully accounted for, but not
+exhaustively verified.
+
+**Sources added:** `xinlexin-en-brand-nav-2022`, `xinlexin-magic-club-baibian-mowang-2022` —
+both first-party (tier 1) manufacturer sources, an upgrade in evidence quality over pass 1's
+single tier 4 source for this manufacturer.
+
+**Confidence:** the zero-family conclusion rests on tier 1 first-party evidence, directly on
+point — the strongest-evidenced zero-family finding in this batch.
+
+---

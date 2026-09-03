@@ -1,0 +1,32 @@
+# source: xinlexin-en-brand-nav-2022
+# Xinlexin's own English-language corporate site (xinlexin.com), main product-list page,
+# archived 2022-11-26 — a first-party tier 1 source. Its own "BRAND" navigation menu resolves
+# pass 1's open question about "百变魔王" (Baibian Mowang) by pairing every Chinese brand name
+# with its own English label and an internal `bid` product-filter parameter, which this pass
+# used to reach the brand's own product listing directly.
+id: xinlexin-en-brand-nav-2022
+entity: source
+kind: manufacturer_official
+title: "All Products - Guangdong Xinlexin Education and Culture Co.,Ltd"
+publisher: "Guangdong Xinlexin Education and Culture Co., Ltd."
+url: "http://www.xinlexin.com/en/ProductList.aspx"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221126213503id_/http://www.xinlexin.com/en/ProductList.aspx"
+excerpt: |-
+  Site's own "BRAND" navigation menu, four entries, each pairing a Chinese title attribute
+  with an English display label and an internal brand-filter link: title="变形教室" →
+  "Magic Classroom" (`bid=9`); title="古迪积木" → "GUDI Building Blocks" (`bid=8`);
+  title="百变魔王" → "Magic Club" (`bid=10`); a fourth spinning-top brand (link present, label
+  not captured in this excerpt). Company address given in the page footer: "Gounei Industrial
+  Zone, Lianxia Town, Chenghai District, Shantou City" — consistent with
+  data/manufacturers/xinlexin.yml's existing Chenghai District location.
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "First-party manufacturer site, tier 1 per DATA_MODEL §5.1 for the
+  company's own brand/product-line naming and structure. Directly resolves which internal
+  brand ID corresponds to '百变魔王' (Baibian Mowang), the cube-adjacent product line named
+  only via a third-party brand-directory profile in data/manufacturers/xinlexin.yml."
+status: sourced
