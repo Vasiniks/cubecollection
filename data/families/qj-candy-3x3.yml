@@ -1,0 +1,62 @@
+# family: qj-candy-3x3
+# Pass 2 (family enumeration). QJ is a legacy Guangdong puzzle manufacturer (see
+# data/manufacturers/qj.yml) whose 2016-2026 3x3 footprint, per an 18-URL TheCubicle
+# products/qj* prefix sweep, is thin: almost entirely shape-mod puzzles (Skewb, Megaminx,
+# Pyraminx Crystal, Tetrakaidecahedron, etc.) with exactly two named standard 3x3x3 products,
+# this one and qj-pillowed-3x3. Treated as its own family — a single named, described,
+# specified, individually-priced product line, the same evidentiary bar used for Cyclone
+# Boys' FeiWu/FeiChi this pass — rather than merged with qj-pillowed-3x3, since nothing found
+# states either succeeded or replaced the other; they are simply two separate concurrently
+# sold budget 3x3 products.
+
+id: qj-candy-3x3
+entity: family
+manufacturer_id: qj
+name: "QJ Candy 3x3"
+introduced:
+  value: "2018-09"
+  precision: month
+  qualifier: circa
+  note: "TheCubicle's own product page records 'Added: 2018-09-11' — its own listing date, not
+    a stated manufacturer release date, hence circa at month precision rather than exact at
+    day precision."
+discontinued:
+  value: "2019-08"
+  precision: month
+  qualifier: after
+  note: "The page itself states 'This product has been discontinued indefinitely,' captured
+    2019-08-24. The exact discontinuation date is not stated; this records only that it was
+    already discontinued by the capture date."
+positioning: budget
+description: |-
+  A budget stickerless 3x3, sold by TheCubicle at $5.99 in a black-body ('Stickerless') and a
+  pink-body ('Stickerless (Pink)') option. The retailer's own copy: "The QJ Candy 3x3 draws
+  inspiration from other 3x3 cube mechanisms, yet it strikes a good balance between
+  affordability and performance." Recorded specs on the same page: gross weight 95g,
+  dimensions 57.0mm. By the 2019-08-24 capture the product was discontinued indefinitely.
+
+  A qjcube.com 2012-2015 product-catalogue capture (qjcube-com-catalogue-2012) shows QJ
+  previously sold a "QJ 3x3 Speed Cube" at the same 5.7cm dimension under a different name —
+  recorded as an unconfirmed naming lead in that source's own excerpt, not adopted as a
+  confirmed predecessor relationship, since no source states these are the same product line
+  under a renamed listing.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+    note: "Single-retailer listing date only; no manufacturer-first-party release date found
+      this pass."
+  /discontinued:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+    note: "Inferred from price point ($5.99, the cheapest standard 3x3 found for this
+      manufacturer) and the retailer's own 'affordability' framing, not a manufacturer
+      self-description."
+  /description:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019, qjcube-com-catalogue-2012]

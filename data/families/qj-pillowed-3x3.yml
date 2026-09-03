@@ -1,0 +1,53 @@
+# family: qj-pillowed-3x3
+# Pass 2 (family enumeration). See qj-candy-3x3.yml's header for the shape of QJ's overall
+# 2016-2026 3x3 footprint. This is the second and last of QJ's two named standard 3x3x3
+# products found this pass.
+
+id: qj-pillowed-3x3
+entity: family
+manufacturer_id: qj
+name: "QJ Pillowed 3x3"
+introduced:
+  value: "2018-09"
+  precision: month
+  qualifier: circa
+  note: "TheCubicle's own product page records 'Added: 2018-09-11' — its own listing date, not
+    a stated manufacturer release date."
+discontinued:
+  value: "2019-08"
+  precision: month
+  qualifier: after
+  note: "The page itself states 'This product has been discontinued indefinitely,' captured
+    2019-08-21."
+positioning: budget
+description: |-
+  A budget 3x3 sold by TheCubicle at $7.99 in Black or White body colours. The retailer's own
+  copy: "This QJ 3x3 features a distinct pillowed shape that is intended to make it easier to
+  hold and turn." Recorded spec on the same page: gross weight 91g. By the 2019-08-21 capture
+  the product was discontinued indefinitely.
+
+  A qjcube.com 2012-2015 product-catalogue capture (qjcube-com-catalogue-2012) shows a URL
+  slug for a "3x3x3 Pillow-Shaped Magic Cube" under QJ's own site well before this archive's
+  scope window, establishing that the pillowed-3x3 shape was a long-running QJ product line
+  rather than a one-off 2018 introduction, though no source found this pass states the 2018
+  TheCubicle listing and the 2012 qjcube.com listing are the identical product (only that both
+  are QJ pillowed-shape 3x3s).
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-qj-pillowed-3x3-product-2019]
+    note: "Single-retailer listing date only; no manufacturer-first-party release date found
+      this pass."
+  /discontinued:
+    confidence: probable
+    sources: [thecubicle-qj-pillowed-3x3-product-2019]
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-qj-pillowed-3x3-product-2019]
+    note: "Inferred from price point and general market positioning of pillowed-shape 3x3s in
+      this era; no manufacturer self-description of tier found."
+  /description:
+    confidence: probable
+    sources: [thecubicle-qj-pillowed-3x3-product-2019, qjcube-com-catalogue-2012]

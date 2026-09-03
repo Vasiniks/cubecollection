@@ -1,0 +1,30 @@
+# source: thecubicle-qj-candy-3x3-product-2019
+# TheCubicle's own product page for the QJ Candy 3x3, captured via Wayback. Tier 2,
+# first-party retailer product copy with a real spec line (weight, dimension, added date).
+id: thecubicle-qj-candy-3x3-product-2019
+entity: source
+kind: retailer
+title: "QJ Candy 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qj-candy-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824065610id_/https://www.thecubicle.com/products/qj-candy-3x3"
+excerpt: |-
+  "QJ Candy 3x3 ... QJ ... Stickerless - $5.99 USD / Stickerless (Pink) - $5.99 USD ... This
+  product has been discontinued indefinitely or we aren't sure when it will be back in stock.
+  The QJ Candy 3x3 draws inspiration from other 3x3 cube mechanisms, yet it strikes a good
+  balance between affordability and performance. Manufacturer: QJ / Type: 3x3 / Gross Weight:
+  95g / Added: 2018-09-11 / Dimensions: 57.0mm 3"
+accessed: "2026-09-03"
+published:
+  value: "2018-09-11"
+  precision: day
+  qualifier: exact
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Single-retailer product copy; no independent second listing found this
+  pass. Treated as probable-level evidence for the product's existence, specs, and
+  discontinued status, not corroborated further."
+status: sourced

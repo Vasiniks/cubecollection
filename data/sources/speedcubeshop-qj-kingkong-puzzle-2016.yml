@@ -1,0 +1,26 @@
+# source: speedcubeshop-qj-kingkong-puzzle-2016
+# SpeedCubeShop's own product page for the "QJ King Kong Puzzle" / "Armadillo Cube," captured
+# via Wayback. Tier 2, first-party retailer copy. Used only as a lead in
+# research/notes/models/global-pass2-families.md — not enough here to justify a family record.
+id: speedcubeshop-qj-kingkong-puzzle-2016
+entity: source
+kind: retailer
+title: "QJ King Kong Puzzle | SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/qj-kingkong-puzzle"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20160809095824id_/https://speedcubeshop.com/products/qj-kingkong-puzzle"
+excerpt: |-
+  "The Armadillo Cube is a variation of the 3x3x3 puzzle. If you get stuck, you can simply
+  pull apart the puzzle to reset it back to it's solved state." Listed under the site's 3x3x3
+  category.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Single-sentence description, no dimensions, weight, price, or added date
+  captured. A non-standard 3x3x3 mechanism (pull-apart reset), analogous to the Void Cube lead
+  left open at data/families (see LanLan finding in the pass-2 notes) rather than a
+  full manufacturer-declared product line. Recorded as a lead, not built into a family."
+status: sourced

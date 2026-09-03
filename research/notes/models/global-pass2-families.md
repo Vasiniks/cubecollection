@@ -474,3 +474,60 @@ Boys, LanLan (0 families, genuine finding), MF8, FangShi, FanXin. Stopped mid-ba
 "then" list at the point this log entry was written, due to a session budget constraint flagged
 by the operator. Everything through FanXin is committed and pushed; nothing below this line
 represents lost work — it is simply not yet started.
+
+## Resuming session (named targets: QJ, Rubik's, GiiKER, Particula, MoreTry, then remaining
+## zero-family entities)
+
+Method note: WebSearch budget for this session was already exhausted before this batch began
+(200/200 used) — all discovery below uses `npm run wayback` (list/prefix/nearest/get) and
+direct WebFetch of live pages only. Flagging this so a future session knows why no fresh
+WebSearch leads appear in this section.
+
+---
+
+## QJ — 2 families
+
+**Candidates considered:** QJ Candy 3x3, QJ Pillowed 3x3, QJ KingKong Puzzle ("Armadillo
+Cube").
+
+**Accepted (2):** `qj-candy-3x3`, `qj-pillowed-3x3`.
+
+**Evidence base.** The Speedsolving wiki's own QJ page (`speedsolving-wiki-qj-2017`) names no
+3x3 sub-products at all — only a bare "QJ 3x3x3" list entry, thinner than every other
+manufacturer's wiki page used so far this pass. Discovery instead came from an 18-URL
+`thecubicle.com/products/qj*` CDX prefix sweep: of 18 products, 16 are shape-mods (Skewb,
+Megaminx, Pyraminx Crystal, Tetrakaidecahedron, Super Floppy 1x3x3, etc.) and exactly 2 are
+standard 3x3x3 products — QJ Candy 3x3 and QJ Pillowed 3x3, both added to TheCubicle's catalog
+on the same date (2018-09-11) and both already discontinued by their respective 2019
+captures. A qjcube.com 2012-2015 catalogue capture (`qjcube-com-catalogue-2012`, URL-slug
+level only, not full page content) shows QJ sold a similarly-dimensioned "3x3 Speed Cube"
+(5.7cm) and a "3x3x3 Pillow-Shaped Magic Cube" years earlier under its own site, which
+corroborates the pillowed-shape line's long-running existence but does **not** establish
+either 2012 product as the *same* product as its 2018 TheCubicle namesake — recorded as an
+unconfirmed naming lead in both family descriptions, not a claimed continuity.
+
+**Rejected: QJ KingKong Puzzle / "Armadillo Cube".** A single SpeedCubeShop 2016 listing
+(`speedcubeshop-qj-kingkong-puzzle-2016`) describes a non-standard, pull-apart-to-reset
+3x3x3 variant with one sentence of description, no dimensions, weight, or price captured.
+Treated the same way LanLan's Void Cube lead was treated in this same log: recorded as a lead
+in the source's own `reliability_note`, not built into a family on evidence this thin. A
+future model/variant pass could reconsider it as a `scope_class: conditional` candidate if
+better sourcing turns up.
+
+**Boundary reasoning.** Candy and Pillowed are kept as two separate families rather than
+merged or treated as variants of one line — nothing found states either succeeded, replaced,
+or was marketed as a configuration of the other; they are simply two separate concurrently
+sold budget 3x3 products with different shapes (standard-body stickerless vs. pillowed),
+different prices, and different weights. Per DATA_MODEL §4.2 a different shape/mould is model-
+or family-level, never a same-line configuration choice.
+
+**Sources created this session (QJ):** `thecubicle-qj-candy-3x3-product-2019`,
+`thecubicle-qj-pillowed-3x3-product-2019`, `speedsolving-wiki-qj-2017`,
+`qjcube-com-catalogue-2012`, `speedcubeshop-qj-kingkong-puzzle-2016` (this last cited only as
+a rejected-candidate lead, not backing any family record).
+
+**Unresolved:** whether QJ has any other 3x3 product line not captured in TheCubicle's or
+SpeedCubeShop's own catalog history — no other major retailer's QJ collection/product prefix
+was swept this pass given the manufacturer's evidently thin scope-window footprint. Both
+families carry no confirmed manufacturer-first-party release date (retailer "Added" dates
+only), left at `uncertain`/`probable` accordingly.

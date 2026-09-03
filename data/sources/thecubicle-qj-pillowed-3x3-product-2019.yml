@@ -1,0 +1,29 @@
+# source: thecubicle-qj-pillowed-3x3-product-2019
+# TheCubicle's own product page for the QJ Pillowed 3x3, captured via Wayback. Tier 2,
+# first-party retailer product copy with a real spec line (weight, added date).
+id: thecubicle-qj-pillowed-3x3-product-2019
+entity: source
+kind: retailer
+title: "QJ Pillowed 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qj-pillowed-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190821035005id_/https://www.thecubicle.com/products/qj-pillowed-3x3"
+excerpt: |-
+  "QJ Pillowed 3x3 ... QJ ... Black - $7.99 USD / White - $7.99 USD ... This product has been
+  discontinued indefinitely or we aren't sure when it will be back in stock. This QJ 3x3
+  features a distinct pillowed shape that is intended to make it easier to hold and turn.
+  Manufacturer: QJ / Type: 3x3 / Gross Weight: 91g / Added: 2018-09-11"
+accessed: "2026-09-03"
+published:
+  value: "2018-09-11"
+  precision: day
+  qualifier: exact
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Single-retailer product copy; no independent second listing found this
+  pass. Treated as probable-level evidence for the product's existence, specs, and
+  discontinued status, not corroborated further."
+status: sourced

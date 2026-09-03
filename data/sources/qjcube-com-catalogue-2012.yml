@@ -1,0 +1,36 @@
+# source: qjcube-com-catalogue-2012
+# QJ's own official site (qjcube.com), 2012-2015 product-catalogue captures. Tier 1,
+# first-party, pre-dating this archive's 2016-2026 scope window but establishing the naming
+# lineage of two products QJ continued to sell into the scope window (see
+# data/families/qj-candy-3x3.yml, data/families/qj-pillowed-3x3.yml).
+id: qjcube-com-catalogue-2012
+entity: source
+kind: manufacturer_official
+title: "QJ Cube — product category pages (qjcube.com, Joomla/VirtueMart storefront)"
+publisher: "QJ Cube"
+url: "http://www.qjcube.com/categories/qj-magic-cube/qj-3x3-speed-cube-black-5-7cm-detail"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20121026000000id_/http://www.qjcube.com:80/categories/qj-magic-cube/qj-3x3-speed-cube-black-5-7cm-detail"
+excerpt: |-
+  Category and product-detail URL slugs captured under qjcube.com/categories/qj-magic-cube
+  and qjcube.com/categories/qj-profiled-cube (2012-2015), including: "qj-3x3-speed-cube-black-
+  5-7cm-detail" / "qj-3x3-speed-cube-white-5-7cm-detail" (a 5.7cm "speed cube," the same
+  57.0mm dimension later stated for TheCubicle's 2018 "QJ Candy 3x3" listing, though no source
+  found this pass states these are the same product under a renamed listing — recorded as an
+  unconfirmed naming lead, not a claim); "qj-3x3-magic-cube-4-8cm-{black,blue,pink,white}-
+  detail" (a separate, smaller 4.8cm "magic cube" line); "qj-3x3x3-pillow-shaped-magic-cube-
+  detail" (QJ's pillowed 3x3, the same shape later sold as TheCubicle's 2018 "QJ Pillowed
+  3x3"); and "qj-king-kong-puzzle-cube-{black,white}-detail" (a non-standard, pull-apart
+  puzzle variant of the 3x3x3, later sold via SpeedCubeShop in 2016 as "QJ KingKong Puzzle" /
+  "The Armadillo Cube").
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "URL-slug-level evidence from a CDX prefix sweep, not full page content —
+  used only to establish that QJ's own site sold products under these naming lines pre-2016,
+  and as a lead for possible continuity with in-scope-window retailer listings. No page body
+  content was fetched for this source; do not cite it for specifications beyond what the URL
+  slugs themselves state (dimension, shape, category)."
+status: sourced

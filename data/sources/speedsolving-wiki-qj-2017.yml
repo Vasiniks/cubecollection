@@ -1,0 +1,28 @@
+# source: speedsolving-wiki-qj-2017
+# Speedsolving.com wiki's "QJ" manufacturer page, captured via Wayback. Tier 3, community
+# documentation, no named 3x3 products beyond a bare "QJ 3x3x3" line.
+id: speedsolving-wiki-qj-2017
+entity: source
+kind: wiki
+title: "QJ - Speedsolving.com Wiki"
+publisher: "Speedsolving.com Wiki"
+url: "https://www.speedsolving.com/wiki/index.php/QJ"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20171204222418id_/https://www.speedsolving.com/wiki/index.php/QJ"
+excerpt: |-
+  "QJ (QíJī, 奇积, meaning 'odd solution') is a Chinese puzzle brand. They have produced most
+  of the classic puzzles including 2x2, 3x3, 4x4, 5x5 cubes, as well as the Pyraminx,
+  Megaminx, Tetraminx, Square-1, and Skewb. They also produce a QJ timer which includes a data
+  port that can be connected with a computer." Location: Guangdong, China. Founded: unknown.
+  Products list includes only a bare "QJ 3x3x3" line item, with no named sub-models or
+  generations.
+accessed: "2026-09-03"
+language: en
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "The page's product list names entries generically by puzzle type (e.g.
+  'QJ 3x3x3') rather than by any manufacturer-given model or family name, unlike this wiki's
+  more detailed manufacturer pages (e.g. ShengShou, DianSheng, Cyclone Boys) used elsewhere in
+  this pass. Corroborates that QJ is a real, long-running Guangdong manufacturer but supplies
+  no 3x3-specific family names."
+status: sourced
