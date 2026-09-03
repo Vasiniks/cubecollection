@@ -19,10 +19,12 @@ scope: >
 # ---------------------------------------------------------------- already canonical
 already_canonical: [gan, monster-go, swift-block, thecubicle, picube, cubicle-labs, moyu, mfjs,
   rubiks, speedcubeshop, giiker, particula, xinlexin, guojia, kungfu, haitun, ninja, verypuzzle,
-  hellocube, saocube, moretry, zcube, cube4you, calvins-puzzle, fanxin, qj]
+  hellocube, saocube, moretry, zcube, cube4you, calvins-puzzle, fanxin, qj, witeden, eastsheen,
+  mefferts, maru, cubestyle, cubetwist, limcube, lefun, newisland]
 # giiker/particula are smart-cube makers (a named blind spot in the original brief, now
 # substantially closed — see global-pass0.md addendum). xinlexin/guojia are Chinese-language
-# discoveries invisible to both English-language retailer sweeps.
+# discoveries invisible to both English-language retailer sweeps. The Target-1 closeout batch
+# (witeden through newisland) is detailed further down in this file, under "Target 1 closeout".
 
 # ---------------------------------------------------------------- high confidence: real
 # manufacturers, seen at BOTH retailers, and named in the project seed list
@@ -444,15 +446,42 @@ second_layer_candidates:
         merch line, but no 3x3 found and no relationship statement located, so left
         unresolved deliberately rather than force-analogised to GuoGuan like the other four."}
 
-# Newly surfaced, real 3x3 makers not yet individually researched (name + first product slug
-# only, found in the same frequency sweep, high first-token counts suggesting substantial
-# product ranges): WitEden (witeden-, 64 slugs, mostly shape-mod/cuboid specialist per titles),
-# LeFun (lefun-, 54, shape-mod/novelty), Mefferts (mefferts-, 49, the historically important
-# Uwe Mefferts puzzle company — pre-dates this archive's window, scope-relevant for lineage
-# only), Maru (maru-, 37, has maru-3x3 and maru-4x4 directly), CubeStyle (cubestyle-, 35, has
-# cubestyle-3x3 directly), CubeTwist (cubetwist-, 28, novelty/keychain cubes), LimCube
-# (limcube-, 19, shape-mod specialist), Eastsheen (eastsheen-, 8, the historically important
-# Taiwanese pre-2016 brand — lineage-relevant), Adheron (adheron-heavy/-lite, 2, unclear
-# product type, needs a fetch), NewIsland (newisland-lightning/-phoenix, 3, unclear product
-# type). None fetched or canonicalised this pass — recorded here so the next pass does not
-# re-run the same 11,740-URL sweep to rediscover them.
+# ---------------------------------------------------------------- Target 1 closeout (2026-09-02)
+# Global Pass 0 closeout batch. All ten names below were individually researched this session.
+#
+# - WitEden: CANONICALISED, data/manufacturers/witeden.yml, kind: manufacturer, probable.
+#   China (Guangzhou), founded 2005, native name 智力乐园. Historically made the GuoBing (Type C)
+#   3x3 (2006-2011, pre-window); current catalogue is cuboids/mixup shape mods only.
+# - LeFun: CANONICALISED, data/manufacturers/lefun.yml, kind: manufacturer, probable. Mostly
+#   novelty/gift 3x3s; "Formula 3x3" is the one plain standard 3x3 SKU found.
+# - Mefferts: CANONICALISED, data/manufacturers/mefferts.yml, kind: manufacturer, CONFIRMED
+#   (tier 1, own site). Founded 1970 (Uwe Meffert, Pyraminx), Hong Kong, still active 2024.
+#   Shape-mod specialist; no standard WCA-legal 3x3 flagship found.
+# - Maru: CANONICALISED, data/manufacturers/maru.yml, kind: manufacturer, probable. Taiwan.
+#   Flagship 3x3 dates to circa 2011 (pre-window), long discontinued; founding unknown.
+# - CubeStyle: CANONICALISED, data/manufacturers/cubestyle.yml, kind: manufacturer, probable.
+#   cubestyle.com is a FALSE LEAD (unrelated German furniture company) — do not re-check it.
+#   Open question NOT resolved: TheCubicle calls it "a FangGe sub-branded 3x3/4x4" on two
+#   listings verbatim; "FangGe" is plausibly short for "MoFangGe" (QiYi's own in-house name,
+#   see data/manufacturers/qiyi.yml) but this is unconfirmed and no parent_id was set.
+# - CubeTwist: CANONICALISED, data/manufacturers/cubetwist.yml, kind: manufacturer, probable.
+#   Pure novelty/shape-mod specialist (double/triple/siamese/house cubes, Square-1/2); no
+#   standard 3x3 found.
+# - LimCube: RESOLVED as sub_brand, data/manufacturers/limcube.yml, parent_id: fangshi,
+#   CONFIRMED via two independent retailers (TheCubicle's structured "Manufacturer: FangShi"
+#   field on three LimCube-named products; SpeedCubeShop's own "fangshi" collection titling
+#   products "FangShi limCube ..." directly). No standalone manufacturer identity.
+# - Eastsheen: CANONICALISED, data/manufacturers/eastsheen.yml, kind: manufacturer, probable.
+#   Taiwan, founded 1981 (Chen Sen Li), Kaohsiung. Own domain (eastsheen.com) has been a parked
+#   for-sale page since at least 2011 — NOT usable as a source — but TheCubicle sold a
+#   "standard Eastsheen 3x3" as late as a 2025 capture, squarely inside the archive window.
+#   `ceased` left unknown; a dead retail domain is not evidence a manufacturer stopped.
+# - Adheron: RESOLVED — NOT a cube manufacturer. "Adheron Heavy/Lite" are lubricant products;
+#   TheCubicle's own spec field reads "Manufacturer: Strefa Kostek" (a Polish lube/cube-service
+#   brand), not "Adheron". No manufacturer record created. (See
+#   https://web.archive.org/web/20231207165852/https://www.thecubicle.com/products/adheron-heavy)
+# - NewIsland: CANONICALISED, data/manufacturers/newisland.yml, kind: manufacturer, probable.
+#   Real 3x3 ("Newisland Lightning", added to catalogue 2018-09-11). Unresolved rebrand
+#   suspicion in notes: multiple customer reviews call it identical to the QiYi Thunderclap,
+#   but this is customer opinion (tier 4-equivalent), not a tier 1-2 source, so no
+#   `rebrand_of` relationship was recorded per rule 17 — a lead for pass 2/4.

@@ -266,3 +266,79 @@ MoYu's own site already yielded. Session's WebSearch budget was exhausted before
 began (inherited from a prior session in the same environment); all evidence above comes from
 `wayback` and `WebFetch` (Speedsolving wiki only — most individual wiki pages for these names
 do not exist, confirmed by 404).
+
+---
+
+## Addendum 4 — Global Pass 0 closeout, Target 1: historical manufacturers (2026-09-02)
+
+Closeout batch. Ten names flagged in Addendum 3 as "not yet researched at all" were
+individually resolved this session: **WitEden, LeFun, Mefferts, Maru, CubeStyle, CubeTwist,
+LimCube, Eastsheen, Adheron, NewIsland.**
+
+**Method note: WebSearch was unavailable this session** (budget exhausted, inherited from a
+prior session in this same environment — see the tooling note this file already carries).
+Everything below comes from `wayback` (own-domain captures and retailer product-page fetches)
+and `WebFetch` against the Speedsolving.com wiki, with an explicit "quote verbatim" prompt used
+throughout so wiki claims are cited as excerpts, not as an intermediate model's paraphrase.
+
+**Nine canonicalised, one resolved as not-a-cube-brand:**
+
+- **Meffert's** is the strongest record of this batch — a genuine tier 1 own-site source
+  (mefferts.com, archived 2024) states its own history directly: founded 1970 by Uwe Meffert
+  (creator of the Pyraminx), based in Hong Kong, still operating. `confidence: confirmed`
+  throughout. Product-slug evidence shows it remains a shape-mod specialist with no standard
+  WCA-legal 3x3 flagship — in scope for the archive's history and lineage, not for a 3x3
+  product record without further scope work.
+- **Eastsheen** is the clearest "bracket case" the brief asked for. Its own domain
+  (eastsheen.com) has been a parked for-sale page in every capture from 2011 onward — it would
+  be easy to conclude the company was already gone before this archive's 2016 start. But
+  TheCubicle's own structured spec table sold a "standard Eastsheen 3x3" as late as a **2025**
+  capture. Recorded `ceased: unknown` rather than inferred from the dead retail domain — a
+  website's death is not a company's death, and this is exactly the kind of manufacturer a
+  live-catalogue-only method would misjudge in either direction.
+- **WitEden**: Guangzhou, China, founded 2005 (as "WitEden's Magic Shop"), native name 智力乐园.
+  Historically significant for the GuoBing (Type C) 3x3 (2006-2011, pre-window); current
+  catalogue (64 product slugs) is almost entirely cuboids and mixup shape mods.
+- **Maru**: Taiwan, flagship 3x3 dates to circa 2011 per a customer review on TheCubicle's own
+  liquidation listing for it ("get it if you want a tast[e] of 2011... the weilong hadn't come
+  out yet") — pre-window and long discontinued. Founding date itself unknown even to the
+  Speedsolving wiki's own infobox.
+- **CubeStyle**: real, reviewed, standard 3x3 confirmed at TheCubicle. **Domain false lead
+  flagged explicitly**: cubestyle.com is an unrelated German seating-furniture company
+  (Sitzwürfel/footstools) that happens to share the name — recorded so nobody re-checks it.
+  **Genuine open question, deliberately not resolved**: TheCubicle's own product description
+  calls it "a FangGe sub-branded 3x3" (and, verbatim, "4x4") on two separate listings. "FangGe"
+  is suggestively close to "MoFangGe," which `data/manufacturers/qiyi.yml` already documents as
+  one of QiYi's own in-house names — but no independent source confirms this reading, so no
+  `parent_id` was set. Recorded as an open lead in `cubestyle.yml`'s own notes rather than
+  guessed either way.
+- **CubeTwist**: confirmed via TheCubicle's own spec field; a pure novelty/shape-mod specialist
+  (double/triple/siamese cubes, house cubes, Square-1/2) with no standard 3x3 found.
+- **LeFun**: confirmed via TheCubicle's own spec field on one plain standard 3x3 ("Formula
+  3x3"); the other ~53 slugs in this manufacturer's range are novelty/gift-shaped 3x3s
+  (calendar, dollar-bill, sudoku, periodic-table, holiday-themed) or non-3x3 shape mods.
+- **NewIsland**: confirmed real (added to TheCubicle's catalogue 2018-09-11, inside the
+  archive window). **Unresolved rebrand lead, explicitly not actioned**: several customer
+  reviews call the "Newisland Lightning" mechanically identical to the QiYi Thunderclap, but
+  this is review opinion, not a tier 1-2 source, so rule 17's evidentiary bar for `rebrand_of`
+  is not met — left as a lead for pass 2/4, not asserted.
+- **Adheron resolved OUT OF SCOPE, no record created.** "Adheron Heavy/Lite" are lubricants,
+  not cubes — TheCubicle's own structured spec field names the manufacturer as "Strefa Kostek"
+  (a Polish cube-lube/service brand), not "Adheron" at all. A useful negative result: the
+  pass-0 brief's instinct that this name needed checking was correct, and checking it
+  correctly means recording *why* it is out of scope rather than silently dropping it.
+
+**A genuine sub-brand finding: LimCube is FangShi's own line, not an independent company.**
+TheCubicle's own structured "Manufacturer" field reads **"FangShi"** — not "LimCube" — on
+every LimCube-named product checked (Fission Skewb, Master Mixup I, Hollow XO Cube).
+Independently, SpeedCubeShop files the same kind of product under its own top-level "fangshi"
+collection and titles several of them **"FangShi limCube ..."** directly. Two different
+retailers, two different presentations of the same fact, satisfying `confidence: confirmed`
+under DATA_MODEL rule 9 without needing a first-party FangShi statement. `data/manufacturers/
+limcube.yml` is `kind: sub_brand`, `parent_id: fangshi` — the third sub-brand this register has
+resolved this way (after PBCube/MoYu and X-Man Design/QiYi), and a reminder that a name with
+its own dozens of SKUs and its own consistent branding can still not be an independent company.
+
+**Net this addendum:** 9 new manufacturer/sub_brand records (witeden, eastsheen, mefferts,
+maru, cubestyle, cubetwist, lefun, limcube, newisland), 1 name resolved out of scope with no
+record (Adheron), 13 new sources, all `npm run validate` clean, committed in two batches.
