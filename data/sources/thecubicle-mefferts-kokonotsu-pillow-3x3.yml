@@ -1,0 +1,37 @@
+# source: thecubicle-mefferts-kokonotsu-pillow-3x3
+# TheCubicle's own product page for the Meffert's Kokonotsu Pillow 3x3, captured via Wayback.
+# Tier 2, first-party retailer copy, plus customer-review content raising an unresolved
+# rebrand/resemblance lead against a separate "Molecube" product.
+id: thecubicle-mefferts-kokonotsu-pillow-3x3
+entity: source
+kind: retailer
+title: "Meffert's Kokonotsu Pillow 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mefferts-kokonotsu-pillow-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927180032id_/https://www.thecubicle.com/products/mefferts-kokonotsu-pillow-3x3"
+excerpt: |-
+  "The Meffert's Kokonotsu Pillow 3x3 is a non-traditional 3x3 puzzle variant that uses
+  solid-colored blocks as colors instead of stickers. There are 9 colors in total, and the
+  blocks must be arranged such that each color only appears once on each side in order to solve
+  the puzzle." Product Specifications: "Manufacturer: Meffert's / Gross Weight: 128g." Customer
+  reviews (unattributed to named reviewers beyond a first name/initial): "like the molecube this
+  is a molecube, but the turning is great" and "This puzzle looks to be the same as the molecube
+  puzzle that is sold in many physical stores... The molecule [sic] is a puzzle that isnt very
+  much fun to solve because it is loud and clicks with ball bearings, but this puzzle looks more
+  smooth."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer, for the manufacturer attribution and product description.
+  The embedded customer-review claim that this is 'the same as the molecube puzzle' is weak,
+  unattributed UGC (not the retailer's own structured/authoritative claim) and is NOT treated as
+  establishing a `rebrand_of` relationship per DATA_MODEL §4.4/RESEARCH_SPEC's rebrand rule
+  ('visual resemblance alone is a lead, not a claim') — recorded here only as an unresolved lead
+  for a future pass to chase toward a citable tier 1-2 source, not acted on. This page's own
+  in-page 'Added: 2018-10-14' field is not used as dating evidence, per this pass's standing
+  cross-agent finding on TheCubicle's repeating 'Added:' dates; the genuine Wayback crawl
+  timestamp of this exact page (2020-09-27) is used instead as an 'existed by' upper bound."
+status: sourced

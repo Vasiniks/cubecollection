@@ -426,3 +426,66 @@ timestamps found in this pass's own CDX prefix sweep, and every attestation says
 modification: `thecubicle-maru-3x3`, `speedsolving-wiki-maru` (both pass 1).
 
 ---
+
+## Meffert's — 1 family
+
+**Groundwork inspected first.** Pass 1's `data/manufacturers/mefferts.yml` had already run a
+49-slug `thecubicle-*` sweep and found the company "overwhelmingly a shape-mod specialist"
+(Pyraminx, Skewb, Gear Cube, Ghost Cube, Fisher Cube, Megaminx, Mastermorphix and similar), with
+exactly two slugs suggesting non-standard 3x3 variants and no standard WCA-legal 3x3 flagship at
+all — the pass-1 `scope_class` decision for either was explicitly deferred here.
+
+**Discovery.** Re-ran the same `thecubicle.com/products/mefferts*` prefix sweep (49 unique
+slugs) to check for anything missed and found a third relevant slug beyond pass 1's two:
+"Meffert's 3x3 Egg" (a metallized egg-shaped shape mod). Fetched all three product pages
+directly.
+
+**Families accepted (1):** `mefferts-kokonotsu` — the "Kokonotsu Pillow 3x3," described in
+TheCubicle's own copy as "a non-traditional 3x3 puzzle variant that uses solid-colored blocks as
+colors instead of stickers. There are 9 colors in total, and the blocks must be arranged such
+that each color only appears once on each side" — a genuinely distinctive puzzle mechanism, not
+a bare name.
+
+**Rejected/deferred (2), for a consistent, stated reason:**
+- **Hollow Cube 3x3** — described only as "a puzzle with hollow pieces! Turning is very clicky
+  due to the ball bearing alignment system. A fun novelty puzzle for any collector." Real but
+  generic; no distinguishing mechanism claim beyond "hollow," no significance statement.
+- **3x3 Egg** — described only as "a metallized egg puzzle that is a shape modification of a
+  3x3... a high quality, metallized finish with the Meffert's logo." Purely a decorative
+  shape/finish variant with no further distinguishing detail.
+
+Both are thinner than Kokonotsu on the exact same axis this pass has applied consistently
+elsewhere (Maru's Mini/Keychain vs. Nano Cube; ShengShou's rejected Gem/Tank vs. its accepted
+thin-but-real families): a bare descriptive name and a generic one-sentence description is not
+enough on its own, but a specific, distinctive, well-described mechanism or claim is. Recorded
+here rather than built into thin family records that would read as manufactured coverage.
+
+**A significant unresolved lead surfaced by customer reviews, deliberately not acted on: a
+possible "Molecube" rebrand/resemblance.** Two independent customer reviews on the Kokonotsu
+listing state, unprompted, that the puzzle "is the same as the molecube puzzle that is sold in
+many physical stores." This raises a real DATA_MODEL §4.4 `rebrand_of` question — but per that
+same rule, "visual resemblance alone is a lead, not a claim," and unattributed customer-review
+testimony is weaker evidence than even that. No relationship recorded; the family stays under
+`mefferts` per the retailer's own structured attribution, and the lead is flagged explicitly in
+both the source's reliability_note and the family record's own description so a future pass can
+chase "Molecube" toward a citable source rather than this identity being silently assumed
+settled. This is the same discipline Agent B's own Z-Cube finding illustrates from the other
+side (a brand's catalogue turning out to belong to a different manufacturer's tree) — here the
+evidence is far too weak to make that call, so it is recorded as a question, not an answer.
+
+**Dating discipline applied, per the cross-agent correction above.** No TheCubicle in-page
+"Added:" field used as evidence; `introduced` is a `qualifier: before` bound from the genuine
+Wayback crawl timestamp only.
+
+**Unresolved for pass 3:**
+- The Molecube resemblance lead.
+- Kokonotsu's `scope_class: conditional` justification and admission (almost certainly
+  non-WCA-legal given the described 9-colour constraint).
+- Whether Hollow Cube 3x3 or 3x3 Egg deserve reconsideration in a future pass with more time or
+  better sourcing.
+
+**Sources created this session (Meffert's):** `thecubicle-mefferts-kokonotsu-pillow-3x3`.
+Reused without modification: `mefferts-official-site-2024` (pass 1, cited only via the
+manufacturer record, not directly on this family).
+
+---

@@ -1,0 +1,71 @@
+# family: mefferts-kokonotsu
+# Pass 2 (family enumeration). Meffert's is a historically hugely significant twisty-puzzle
+# manufacturer (Uwe Meffert, inventor of the Pyraminx and Skewb) whose in-scope 3x3 output is,
+# per pass 1's own finding, "overwhelmingly a shape-mod specialist" with no standard WCA-legal
+# 3x3 flagship at all. Of the small number of 3x3-shaped/3x3-mechanism products this pass found,
+# only this one is created as a family — a deliberate, documented boundary call, not a default.
+
+id: mefferts-kokonotsu
+entity: family
+manufacturer_id: mefferts
+name: "Meffert's Kokonotsu"
+aliases:
+  - "Meffert's Kokonotsu Pillow 3x3"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-mefferts-kokonotsu-pillow-3x3's own reliability_note on TheCubicle's repeating
+    'Added:' field artifact, per this pass's standing cross-agent finding). The genuine Wayback
+    crawl timestamp of the source used is 2020-09-27, used only as an 'existed by' upper bound."
+positioning: special
+description: |-
+  A non-traditional 3x3-mechanism puzzle, described directly in TheCubicle's own product copy:
+  "The Meffert's Kokonotsu Pillow 3x3 is a non-traditional 3x3 puzzle variant that uses
+  solid-colored blocks as colors instead of stickers. There are 9 colors in total, and the
+  blocks must be arranged such that each color only appears once on each side in order to solve
+  the puzzle" (thecubicle-mefferts-kokonotsu-pillow-3x3, tier 2) — a genuinely distinctive
+  puzzle type (a 9-colour, one-per-side constraint rather than the standard 6-colour scheme),
+  not a bare novelty name, which is why this product was created as a family while two other
+  Meffert's 3x3-shaped products found in the same discovery sweep (a "Hollow Cube 3x3" and a
+  "3x3 Egg," both described only in generic, undated, one-sentence terms with no distinguishing
+  mechanism or significance claim) were not — recorded instead as open leads in this pass's own
+  batch log rather than built into thin family records.
+
+  **An unresolved rebrand/resemblance lead, deliberately not acted on.** Customer reviews
+  embedded in the same retailer listing state, unprompted and independently of each other, that
+  this puzzle is "the same as the molecube puzzle that is sold in many physical stores" — a
+  specific, named, alternate product ("Molecube") this pass did not independently research or
+  confirm. Per DATA_MODEL §4.4/RESEARCH_SPEC's own rebrand-of rule, "visual resemblance alone is
+  a lead, not a claim," and unattributed customer-review testimony is weaker evidence still —
+  no `rebrand_of` relationship is recorded here, and this family record's own `manufacturer_id`
+  remains `mefferts` per the retailer's own structured attribution. Flagged prominently so a
+  future pass can chase "Molecube" toward a citable tier 1-2 source before this identity is
+  taken as settled either way.
+
+  **Almost certainly non-WCA-legal** given the described non-standard colour/solve constraint;
+  the actual `scope_class: conditional` justification is deferred to pass 3/4 per DATA_MODEL
+  §1.4, flagged here so a future pass does not default this into `core` scope by omission.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
+    note: "No source states a positioning label; `special` records this record's own
+      out-of-competitive-category reading given the non-standard mechanism/colour scheme."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
+  /description:
+    confidence: reported
+    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
+    note: "Single tier 2 source for the product description; the Molecube-resemblance claim is
+      unattributed customer testimony, not independently verified this pass, and is recorded as
+      an open lead rather than a fact."
