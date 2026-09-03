@@ -1,0 +1,62 @@
+# family: yj-mgc
+# Pass 2 (family enumeration). YJ's flagship 3x3 line, its most historically significant, sold
+# continuously from 2018 through at least a February 2026 generation ("Sigma") — one of the
+# longest-lived single-name flagship successions found across this pass.
+
+id: yj-mgc
+entity: family
+manufacturer_id: yj
+name: "YJ MGC"
+aliases: []
+introduced:
+  value: "2018-05"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  YJ's flagship 3x3 line, per the Speedsolving wiki's own product history
+  (speedsolving-wiki-yongjun-products): "YJ MGC Released May 2018, supposedly after 3 years of
+  design and improvement... features a strong magnetic positioning system... delivers many
+  qualities typically attributed to flagship cubes at an economical price of $12... Its main
+  rival is emerging to be the GAN356R, which it completely outstrips." Followed by "YJ MGC V2
+  Released November 2018... a new spring system which is very similar to the Gans Elasticity
+  System... A feature previously unseen on the MGC is a stickerless variant," designed in
+  collaboration with SpeedCubeShop for its stock colours, and "YJ MGC Elite... released in 2019,
+  is the first YJ cube to have customisable magnets."
+
+  TheCubicle's own product-URL history for the "mgc" root (thecubicle-yj-mgc-prefix-2026) shows
+  the line continuing well past the wiki's November 2023 coverage: MGC3 Elite (by 2019),
+  MGC Repulsion (2021), MGC Evo (2022), MGC3 Elite V2 (2022), MGC Evo II, including an
+  "Enhanced Core Positioning Edition" (2024), MGC Est (2024), MGC3 Beta, including an 8-magnet
+  ball-core UV-coated maglev configuration and a limited edition (2025), and MGC Sigma (first
+  seen 2026-02-16) — a continuous, differently-suffixed succession spanning nearly eight years
+  of captures, still current as of this pass.
+
+  **YJ Meta/Meta3 is deliberately kept as its own family (yj-meta), not folded in here**, even
+  though TheCubicle's own Meta3 product copy calls it "a more refined and controllable successor
+  to the MGC Beta 3x3" (thecubicle-yj-meta3-3x3-magnetic-product) — see that family's own
+  description for the full boundary reasoning: MGC itself continued past Meta3's launch (MGC
+  Sigma is a later capture), so this reads as a parallel branch, not a full-line succession.
+  `successor_family_id` is therefore left unset on this record rather than pointed at Meta.
+
+  Exact generation ordering, whether "Elite"/"Evo"/"Est"/"Beta"/"Sigma" represent manufacturer-
+  declared generations or retailer-assigned configuration names, and which of these were sold
+  as genuinely distinct designs versus configurations of one design (DATA_MODEL section 4.2) are
+  pass-3 material.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+    note: "The wiki states MGC 'delivers many qualities typically attributed to flagship cubes'
+      and frames it as YJ's headline release; no manufacturer-first-party 'flagship'
+      self-description was found this pass (no bulk-crawled YJ storefront collections page was
+      located, per this pass's method note on youngjoecube.com's own thin CDX coverage)."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-mgc-prefix-2026,
+      thecubicle-yj-meta3-3x3-magnetic-product]

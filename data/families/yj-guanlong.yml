@@ -1,0 +1,43 @@
+# family: yj-guanlong
+# Pass 2 (family enumeration). YJ's other long-persisting budget 3x3 line, notable for a
+# well-documented community meme about its ubiquity and for driving a "Guan" naming convention
+# YJ reused across other product categories.
+
+id: yj-guanlong
+entity: family
+manufacturer_id: yj
+name: "YJ GuanLong"
+aliases: []
+introduced:
+  value: "2014-10"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  Per the Speedsolving wiki's own product history (speedsolving-wiki-yongjun-products): "YJ
+  GuanLong Released October 2014. The YJ GuanLong was a popular budget cube from YJ. It featured
+  a simple, blocky mechanism and was popular for modding... this made it rival the Qiyi Sail.
+  Due to it's low price, a meme was started on the /r/cubers subreddit about how 'everybody has
+  a couple of Guanlongs laying around!' YJ would later release the YJ Guanlong V2 also known as
+  the YJ Guanlong Plus, another version called the YJ Guanlong V3, and now [as of the wiki's
+  November 2023 edit] the YJ Guanlong V4." TheCubicle's own "yj" collection independently shows
+  a "yj-guanlong-plus-3x3" product still resolving as of a 2020-08-12 capture
+  (thecubicle-yj-collection-2025), corroborating the V2/Plus generation's currency.
+
+  "Guan" (冠, a naming element YJ also applied to 2x2/4x4/5x5/6x6/7x7 products per the same wiki
+  page — GuanPo, GuanSu, GuanChuang, GuanShi, GuanFu) reads as a cross-category budget naming
+  convention, the same pattern already noted for QiYi's "MS"/"Qi" tiers
+  (see qiyi-ms.yml) — recorded here only for GuanLong's own 3x3 succession, not as evidence for
+  a cross-category "Guan" family.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-yj-collection-2025]

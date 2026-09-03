@@ -1,0 +1,63 @@
+# family: yj-meta
+# Pass 2 (family enumeration). A newer YJ 3x3 line, launched 2025, explicitly positioned by
+# TheCubicle's own product copy as a refinement of the MGC Beta generation while the MGC line
+# itself continued in parallel — recorded as its own family rather than a new MGC generation.
+
+id: yj-meta
+entity: family
+manufacturer_id: yj
+name: "YJ Meta"
+aliases:
+  - "Meta3"
+introduced:
+  value: "2025"
+  precision: year
+  qualifier: circa
+positioning: flagship
+description: |-
+  A YJ 3x3 line named "Meta"/"Meta3", found at TheCubicle under yj-meta3-3x3-8-magnet-ball-core-
+  uv (2025-08-25), yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv (2025-08-25), and
+  yj-meta3-3x3-magnetic (2026-06-16). The retailer's own product description states: "The YJ
+  Meta3 3x3 (Magnetic) is the standard version of the Meta. It comes equipped with a piece-to-
+  piece magnetic system for consistent turns at a great value. It keeps the same upgraded base
+  mechanism as the higher-end models, like center skirts, edge cut-outs, and anti-twist corner
+  caps, making it a more refined and controllable successor to the MGC Beta 3x3, without the
+  extra features" (thecubicle-yj-meta3-3x3-magnetic-product) — an explicit, if retailer-stated
+  rather than manufacturer-stated, succession claim relative to one specific MGC generation.
+
+  **Kept as its own family rather than treated as MGC's next generation.** TheCubicle's own
+  "mgc" product history (thecubicle-yj-mgc-prefix-2026) shows the MGC line continuing after
+  Meta3's launch — "MGC Sigma" first appears in a 2026-02-16 capture, six months after Meta3's
+  earliest capture — which is inconsistent with Meta having fully replaced MGC. Read instead as
+  a parallel flagship branch, the same "positioning shift, not discontinuation" pattern the GAN
+  pilot documented for GAN356 versus GAN Flagship Series (docs/pilot-audit.md F4): both lines
+  are current at once. No `successor_family_id` is set on yj-mgc pointing here for the same
+  reason. This is the pass's clearest example of a retailer's "successor" language not being
+  sufficient on its own to establish a family-level succession — flagged in
+  research/notes/models/global-pass2-families.md as a boundary call a human should confirm once
+  a manufacturer-first-party source is found.
+
+  "The higher-end models" mentioned in the retailer copy implies at least one further Meta
+  configuration or generation above the base "Magnetic" version (the wing-magnetic/ball-core/UV
+  configurations found alongside it); resolving whether these are variants of one Meta3 design
+  or a further Meta generation is pass-3/4 material.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product]
+    note: "Dated from the earliest Meta3-named product capture found (2025-08-25); no
+      manufacturer-first-party launch date was located."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product]
+    note: "Inferred from its explicit comparison to MGC Beta (a flagship-tier MGC generation)
+      and 'higher-end models' language; no direct 'flagship' statement from either the retailer
+      or a manufacturer source was found."
+  /aliases:
+    confidence: reported
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product, thecubicle-yj-mgc-prefix-2026]

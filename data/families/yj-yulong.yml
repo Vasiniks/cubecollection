@@ -1,0 +1,43 @@
+# family: yj-yulong
+# Pass 2 (family enumeration). YJ's longest-persisting budget 3x3 line, from its 2013 debut
+# (mechanically derived from ChiLong per the wiki) through at least a V3 UV-coated generation
+# still sold in 2025.
+
+id: yj-yulong
+entity: family
+manufacturer_id: yj
+name: "YJ YuLong"
+aliases: []
+introduced:
+  value: "2013-12"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  Per the Speedsolving wiki's own product history (speedsolving-wiki-yongjun-products): "YJ
+  YuLong Released December 2013. The mechanism was largely adapted from the ChiLong but with
+  some slight changes that looked more like a modern speedcube... Sometimes bore the MoYu logo.
+  A budget cube with a light, crunchy feel... Notably, the cube was YJ's first stickerless cube."
+  A 2014 TheCubicle.us product-page capture (thecubicle-us-yj-yulong-product, created in pass 1
+  to correct a naming collision with a same-named MoYu product on the wiki's own MoYu article)
+  independently confirms "YJ YuLong" as a distinct, YJ-attributed retail product by March 2014.
+
+  The wiki records a factory-magnetised successor, "YJ YuLong V2 M... competitors including the
+  QiYi MS and the MoYu RS3M 2020," and TheCubicle's own current "yj" collection
+  (thecubicle-yj-collection-2025) carries both "yj-yulong-v2-m" (still resolving as of a
+  2025-11-24 capture) and a newer "yj-yulong-3x3-v3-m-uv-coated" (first seen 2025-08-01) — a
+  third generation the November-2023-edited wiki does not cover, i.e. the line was still
+  actively receiving new generations as of mid-2025.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-us-yj-yulong-product]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products, thecubicle-us-yj-yulong-product,
+      thecubicle-yj-collection-2025]

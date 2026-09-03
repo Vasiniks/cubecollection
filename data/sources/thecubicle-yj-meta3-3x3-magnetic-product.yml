@@ -1,0 +1,32 @@
+# source: thecubicle-yj-meta3-3x3-magnetic-product
+# TheCubicle's own product page for the YJ Meta3 3x3 (Magnetic), a 2026 capture. Tier 2,
+# first-party retailer copy explicitly describing Meta3 as a successor to "the MGC Beta 3x3" —
+# the load-bearing evidence for treating Meta as a related but separately-named line rather than
+# simply a new MGC generation.
+id: thecubicle-yj-meta3-3x3-magnetic-product
+entity: source
+kind: retailer
+title: "YJ Meta3 3x3 (Magnetic) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-meta3-3x3-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260616201730/https://www.thecubicle.com/products/yj-meta3-3x3-magnetic"
+excerpt: |-
+  Product Description: "The YJ Meta3 3x3 (Magnetic) is the standard version of the Meta. It
+  comes equipped with a piece-to-piece magnetic system for consistent turns at a great value.
+  It keeps the same upgraded base mechanism as the higher-end models, like center skirts, edge
+  cut-outs, and anti-twist corner caps, making it a more refined and controllable successor to
+  the MGC Beta 3x3, without the extra features."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer product description — the retailer's own
+  characterisation of Meta3 as 'a more refined and controllable successor to the MGC Beta 3x3',
+  not a manufacturer statement. Read alongside thecubicle-yj-mgc-prefix-2026 (which shows the
+  MGC line itself continuing past Meta3's own launch, with MGC Sigma appearing in a February
+  2026 capture) as evidence that Meta is a parallel branch rather than a full replacement of
+  MGC — the same 'positioning shift, not discontinuation' pattern the GAN pilot documented for
+  GAN356 versus GAN Flagship Series (docs/pilot-audit.md F4)."
+status: sourced

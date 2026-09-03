@@ -1,0 +1,33 @@
+# family: yj-zhilong
+# Pass 2 (family enumeration). A compact-format ("mini") YJ 3x3, found only via retailer
+# evidence — absent from the Speedsolving wiki page used elsewhere this pass, which predates it.
+
+id: yj-zhilong
+entity: family
+manufacturer_id: yj
+name: "YJ ZhiLong"
+aliases: []
+positioning: special
+description: |-
+  A compact-format YJ 3x3 named "ZhiLong", found at TheCubicle (thecubicle-yj-zhilong-mini-3x3-
+  product, capture dates 2022-03-21 and 2023-03-22): "The YJ ZhiLong Mini 3x3 M is a new
+  magnetic mini cube by YongJun Toys. Measuring 50mm across, the ZhiLong Mini 3x3 M boasts an
+  incredibly compact feel and a speedy turn... currently stands as the best 50mm cube on the
+  market. Perfect for people with smaller hands or cubers who prefer smaller puzzles."
+
+  Not present on the Speedsolving wiki's YongJun article (speedsolving-wiki-yongjun-products,
+  last edited November 2023) — either newer than the wiki's last edit or simply undocumented
+  there; the earliest capture found (2022-03-21) predates that edit, so the omission is more
+  likely a documentation gap than a dating one. No manufacturer-first-party source or further
+  ZhiLong generation was found this pass. Recorded `positioning: special` rather than `budget`
+  or `mainline`, since a compact/small-hands niche format is a distinct market segment from
+  YJ's ordinary budget or flagship range, per the source's own framing.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-yj-zhilong-mini-3x3-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-yj-zhilong-mini-3x3-product]

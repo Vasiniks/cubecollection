@@ -1,0 +1,27 @@
+# source: thecubicle-yj-zhilong-mini-3x3-product
+# TheCubicle's own product page for the YJ ZhiLong Mini 3x3 M, a 2023 capture (also captured
+# 2022). Tier 2, first-party retailer copy.
+id: thecubicle-yj-zhilong-mini-3x3-product
+entity: source
+kind: retailer
+title: "YJ ZhiLong Mini 3x3 M Magnetic Speed Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/yj/products/yj-zhilong-m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230322125122id_/https://www.thecubicle.com/collections/yj/products/yj-zhilong-m-3x3"
+excerpt: |-
+  Page title: "YJ ZhiLong Mini 3x3 M Magnetic Speed Cube - TheCubicle". Product Description:
+  "The YJ ZhiLong Mini 3x3 M is a new magnetic mini cube by YongJun Toys. Measuring 50mm across,
+  the ZhiLong Mini 3x3 M boasts an incredibly compact feel and a speedy turn... The YJ ZhiLong
+  Mini 3x3 M currently stands as the best 50mm cube on the market. Perfect for people with
+  smaller hands or cubers who prefer smaller puzzles." An earlier capture of the same URL exists
+  from 2022-03-21, establishing the product was on sale by that date.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer product description. Establishes ZhiLong as a
+  compact-format (50mm) niche line, not a mainline/flagship product; no manufacturer-first-party
+  source or further ZhiLong generation was located this pass."
+status: sourced

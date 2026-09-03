@@ -1,0 +1,38 @@
+# family: yj-sulong
+# Pass 2 (family enumeration). YJ's earliest documented 3x3 product name, a single-generation
+# historical budget cube.
+
+id: yj-sulong
+entity: family
+manufacturer_id: yj
+name: "YJ SuLong"
+aliases: []
+introduced:
+  value: "2013-10"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  YJ's earliest documented 3x3 per the Speedsolving wiki's own product history
+  (speedsolving-wiki-yongjun-products): "YJ SuLong Released October 2013. Considered a good
+  budget cube, with a unique light, smooth, and crispy feel and had very good corner-cutting for
+  the time... Considered a very 'safe' first cube for YJ at the time, unlike the MoYu cubes
+  produced at the time... It was uniquely offered as a glow in the dark cube which made up a
+  large chunk of the sales."
+
+  No successor carrying the "SuLong" name was found this pass, and no retailer capture from
+  2020 or later lists it — recorded as a single-generation, likely-discontinued family per the
+  standing instruction to preserve historical families rather than omit them for absence from
+  current catalogues.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]

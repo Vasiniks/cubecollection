@@ -95,9 +95,70 @@ Reused from pass 1 without modification: `theqiyi-about-us`, `qiyicube-storefron
 
 ---
 
-## YJ
+## YJ — 9 families
 
-*(in progress)*
+**Method note.** `youngjoecube.com`'s own CDX bulk-crawl coverage is as thin as
+`theqiyi.com`'s (see the note above) — only the pass-1 `about-us` page resolves. YJ's earlier
+domain, `yjcube.com`, was already captured in pass 1 for a single 2018 snapshot but has no
+richer product-listing crawl either. Discovery ran instead off the Speedsolving wiki's YongJun
+product-history section (last edited November 2023 — a hard boundary, noted on every family
+whose evidence sits partly or wholly after that date) and TheCubicle's own `/collections/yj` and
+`/products/yj-mgc*` prefix crawls, which cover 2019 through February 2026 and were essential for
+everything the wiki predates.
+
+**Candidates considered:** SuLong, ChiLong, YuLong (+V2 M/V3 M), GuanLong (+V2/Plus/V3/V4), MGC
+(+V2/Elite/MGC3 Elite/Evo/Evo II/Est/Beta/Sigma), Meta/Meta3, RuiLong, ZhiLong, JinJiao, four
+"Tiled 3x3s" (LingGan, Diamond Cube, Love Cube, Spade Cube).
+
+**Accepted (9):** `yj-sulong`, `yj-chilong`, `yj-yulong`, `yj-guanlong`, `yj-mgc`, `yj-meta`,
+`yj-ruilong`, `yj-zhilong`, `yj-jinjiao`.
+
+**Rejected/deferred:**
+- **The four "Tiled 3x3s"** (LingGan, Diamond Cube, Love Cube, Spade Cube) — the wiki lists them
+  under their own subsection with real, distinct given names, but with no release dates, no
+  retailer corroboration, and no indication whether they are separate designs or decorative
+  colourway/tile treatments of an existing GuanLong/YuLong-generation mechanism (a model/variant
+  question, not obviously a family one). Not created this pass on a significance/evidence basis;
+  recorded as an open lead rather than silently dropped.
+
+**The two boundary calls that matter most here:**
+- **SuLong / ChiLong / YuLong kept as three separate families**, not one "Long" lineage, even
+  though the wiki states YuLong's "mechanism was largely adapted from the ChiLong" and both
+  predate YuLong by one and two months respectively in late 2013. Only YuLong received further
+  named generations (V2 M, V3 M UV Coated, through 2025); SuLong and ChiLong are each a single
+  documented product with no successor found. Splitting here follows the same reasoning as
+  QiYi's Bullfight/Thunderclap: a stated mechanical inheritance between two *differently-named*
+  products is not the same claim as one persisting family name, and merging would manufacture a
+  continuity no source states directly.
+- **MGC and Meta/Meta3 kept as two families, not one, despite explicit retailer "successor"
+  language.** TheCubicle's own Meta3 product copy calls it "a more refined and controllable
+  successor to the MGC Beta 3x3" — the strongest single-sentence succession claim found in this
+  entire session. It was **not** treated as sufficient to merge the two families or to set
+  `successor_family_id`, because TheCubicle's own MGC product history shows the MGC line
+  continuing *after* Meta3's launch (MGC Sigma, first captured 2026-02-16, six months after
+  Meta3's earliest capture) — direct evidence against a full-line replacement. Read instead as a
+  parallel flagship branch, the same "positioning shift, not discontinuation" shape the GAN pilot
+  documented for GAN356 vs. GAN Flagship Series (`docs/pilot-audit.md` F4). **This is the
+  session's clearest demonstration that a retailer's own "successor" word is evidence, not
+  proof** — flagged for a human to revisit once a manufacturer-first-party YJ source is found for
+  either line.
+
+**Historical/discontinued families preserved:** `yj-sulong` and `yj-chilong` (both 2013, single
+generation, no post-2019 retailer capture found).
+
+**A conditional-scope flag, not resolved here:** `yj-jinjiao` is explicitly described by its own
+source as "non-comp-legal". The family record is created for identity per RESEARCH_SPEC's
+"conditional" admission still needing an identity record; whether any model/variant under it
+should carry `scope_class: conditional` with a written justification is left to pass 3/4,
+flagged explicitly in the record itself so it is not defaulted into `core` scope by omission.
+
+**Sources created this session (YJ):** `speedsolving-wiki-yongjun-products`,
+`thecubicle-yj-collection-2025`, `thecubicle-yj-mgc-prefix-2026`,
+`thecubicle-yj-meta3-3x3-magnetic-product`, `thecubicle-yj-zhilong-mini-3x3-product`. All tier 2
+(retailer) except the wiki source (tier 4). Reused from pass 1 without modification:
+`speedsolving-wiki-yongjun`, `youngjoecube-about-us`, `yjcube-com-2018`,
+`thecubicle-us-yj-yulong-product` (the last of these was one of the three orphaned sources named
+in this session's brief — now wired into `yj-yulong.yml`'s provenance).
 
 ---
 

@@ -1,0 +1,57 @@
+# source: speedsolving-wiki-yongjun-products
+# The same Speedsolving.com wiki article as speedsolving-wiki-yongjun (created in a prior
+# session), a second source record for its 3x3 product-history section, following the precedent
+# of speedsolving-wiki-mfjs-products alongside speedsolving-wiki-mofang-jiaoshi: the earlier
+# record's excerpt did not cover this content and was not created by me this session, so it is
+# not overwritten. Tier 4 — corroborates only. Last edited 5 November 2023 per the page's own
+# footer, i.e. it predates YJ's 2024-2026 products (ZhiLong, MGC Evo II onward, Meta/Meta3) —
+# noted so a later researcher does not read its silence on those as evidence against them.
+id: speedsolving-wiki-yongjun-products
+entity: source
+kind: wiki
+title: "YongJun — Speedsolving.com Wiki (3x3 product history section)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=YongJun"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260214060202/https://www.speedsolving.com/wiki/index.php?title=YongJun"
+excerpt: |-
+  3x3x3 section, in order: "YJ SuLong Released October 2013. Considered a good budget cube...
+  Considered a very 'safe' first cube for YJ at the time, unlike the MoYu cubes produced at the
+  time... YJ ChiLong Released November 2013. The ChiLong is very similar to the SuLong, except
+  it has extra grooves on the corners and edges... YJ YuLong Released December 2013. The
+  mechanism was largely adapted from the ChiLong... Sometimes bore the MoYu logo... the cube was
+  YJ's first stickerless cube... YJ YuLong V2 M A factory magnetized and updated version of the
+  YJ YuLong. Considered to be great budget magnetic 3x3, with competitors including the QiYi MS
+  and the MoYu RS3M 2020... YJ GuanLong Released October 2014. The YJ GuanLong was a popular
+  budget cube from YJ... YJ would later release the YJ Guanlong V2 also known as the YJ Guanlong
+  Plus, another version called the YJ Guanlong V3, and now the YJ Guanlong V4... YJ MGC Released
+  May 2018, supposedly after 3 years of design and improvement, it is only available in
+  magnetic, black and white... features a strong magnetic positioning system... at an
+  economical price of $12... Its main rival is emerging to be the GAN356R, which it completely
+  outstrips... YJ MGC V2 Released November 2018. At $20, the MGC V2 was undoubtedly the best
+  value for money 3x3 that was available... a new spring system which is very similar to the
+  Gans Elasticity System... A feature previously unseen on the MGC is a stickerless variant...
+  YJ MGC Elite The YJ MGC Elite which was released in 2019, is the first YJ cube to have
+  customisable magnets... YJ RuiLong Released October 2018 as part of the 'Rui' line of budget
+  cubes... features similar design motifs as the classic MoYu AoLong v2 cube... YJ JinJiao
+  Released December 2018. The YJ JinJiao is an interesting, non-comp-legal 3x3 which has a
+  strange concaveness, the corners spiking out from the rest of the cube... more of a collection
+  piece than anything else."
+
+  "Tiled 3x3s" subsection lists four further named products without individual release dates:
+  "YJ LingGan — A 3x3 cube with circular tiles embedded into the pieces. YJ Diamond Cube — The
+  Diamond Cube features diamond-like shaped tiles on the pieces in place of stickers. YJ Love
+  Cube — heart-shaped tiles... YJ Spade Cube — spade-shaped tiles..." — not chased further this
+  pass; recorded as a lead in research/notes/models/global-pass2-families.md.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from the 3x3 section verbatim, condensed with ellipses
+  where intervening text is unrelated commentary on turning feel."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail for any release date. Used for
+  family-boundary structure (which named lines persisted across generations) and as a lead for
+  dating, corroborated where possible against TheCubicle's own retailer captures. Predates
+  ZhiLong, MGC Evo II onward, and Meta/Meta3 — see this record's own preface note."
+status: sourced

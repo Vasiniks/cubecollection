@@ -1,0 +1,39 @@
+# source: thecubicle-yj-mgc-prefix-2026
+# TheCubicle's own product-URL structure under /products/yj-mgc*, enumerated via wayback CDX
+# `prefix` (2019-2026 captures). Tier 2, first-party retailer naming — establishes the MGC 3x3
+# generational succession from the original MGC (2019 sticker-set capture, implying the base
+# product predates it) through MGC3 Elite, MGC3 Elite V2, MGC Evo, MGC Evo II, MGC Est, MGC3
+# Beta, and MGC Sigma, continuously through a February 2026 capture — the longest and most
+# recently active YJ 3x3 lineage found this pass.
+id: thecubicle-yj-mgc-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/yj-mgc* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc-sigma-3x3"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/yj-mgc returns 3x3-relevant
+  captures spanning 2019-09-13 (yj-mgc-3x3-sticker-set) through 2026-02-16
+  (yj-mgc-sigma-3x3), including: yj-mgc3-elite (2019-12-15), yj-mgc-repulsion-3x3 (2021-10-08),
+  yj-mgc-evo-3x3 (2022-05-22), yj-mgc3-elite-v2-3x3 (2022-10-19), yj-mgc-evo-ii-3x3 (2024-01-13),
+  yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition (2024-04-18), yj-mgc-est-3x3 (2024-09-10),
+  yj-mgc-est-3x3-customization-kit (2025-08-01), yj-mgc3-beta-8-magnet-ball-core-uv-coated
+  (multiple variant paths, first seen 2025-06-04, still resolving through a 2025-12-01 "yj-mgc3-
+  beta?f=versions" capture), yj-mgc3-beta-limited-edition (2025-06-24), yj-mgc-sigma-3x3
+  (2026-02-16) — a continuous, differently-suffixed succession under the shared "mgc" root
+  spanning more than six years of captures.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/products/yj-mgc --limit 400`) is the primary evidence; the excerpt
+  reproduces the path list and dates directly, per D3/RESEARCH_SPEC 3.5's allowance for evidence
+  that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure, consistent across six years
+  of captures. Establishes the MGC succession's breadth and currency; does not by itself state
+  which sub-name (Elite/Evo/Est/Beta/Sigma) the manufacturer itself considers a numbered
+  generation versus a sold configuration — a pass-3 question."
+status: sourced

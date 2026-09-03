@@ -1,0 +1,39 @@
+# source: thecubicle-yj-collection-2025
+# TheCubicle's own "yj" collection product-URL structure, enumerated via wayback CDX `prefix`
+# (2019-2025 captures). Tier 2, first-party retailer naming — corroborates YuLong, GuanLong,
+# ZhiLong, JinJiao and MGC as concurrently-sold named YJ 3x3 lines as of the capture window, and
+# is the sole evidence this pass found for ZhiLong and for MGC's currency beyond 2023 (the wiki
+# used elsewhere predates both).
+id: thecubicle-yj-collection-2025
+entity: source
+kind: retailer
+title: "thecubicle.com/collections/yj/products/* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/yj"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/collections/yj returns 3x3 product paths
+  (2020-2025 captures) including: yj-guanlong-plus-3x3 (2020-08-12), yj-jinjiao-3x3
+  (2020-08-04), yj-zhilong-m-3x3 (2022-03-21), yj-blind-3x3 (2023-04-01), yj-mgc-2x2/-4x4/-5x5/
+  -6x6/-sq-1-fully-magnetic (2023-03-22, non-3x3 sizes shown for context), yj-mgc2-elite-2x2
+  (2023-03-22), yj-yulong-v2-m (2023-03-22, still resolving as of 2025-11-24),
+  yj-yulong-3x3-v3-m-uv-coated (2025-08-01), yj-tianyuan-o2-cube-v2 and -v3 (2024-12-23, a
+  non-cube shape/novelty item outside this archive's 3x3 scope) — plus a separate
+  "yj-budget-magnetic-collection" sub-path (2021-04-19 through 2022-05-18) carrying
+  yj-yulong-v2-m, yj-yulong-pyraminx-v2-m, yj-yuchuang-5x5-v2-m, yj-yupo-2x2-v2-m,
+  yj-yusu-4x4-v2-m as a distinct "budget magnetic" retailer-defined grouping (a retailer
+  merchandising category, not treated as family evidence per RESEARCH_SPEC's standing warning
+  that a category page is a discovery aid, not a boundary).
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/collections/yj --limit 400`) is the primary evidence; the excerpt
+  reproduces the path list and dates directly, per D3/RESEARCH_SPEC 3.5's allowance for evidence
+  that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure. The only evidence this pass
+  found for YJ ZhiLong and for MGC's currency past the Speedsolving wiki's November 2023 last
+  edit; corroborates but does not by itself establish product-line boundaries or dates."
+status: sourced

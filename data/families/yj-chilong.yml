@@ -1,0 +1,43 @@
+# family: yj-chilong
+# Pass 2 (family enumeration). A second, closely-related early YJ 3x3, kept separate from
+# yj-sulong because the wiki names them as two distinct products rather than one line, per the
+# same "differently-named sibling products are not one family" reasoning applied to
+# qiyi-bullfight/qiyi-thunderclap.
+
+id: yj-chilong
+entity: family
+manufacturer_id: yj
+name: "YJ ChiLong"
+aliases: []
+introduced:
+  value: "2013-11"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  Per the Speedsolving wiki's own product history (speedsolving-wiki-yongjun-products): "YJ
+  ChiLong Released November 2013. The ChiLong is very similar to the SuLong, except it has extra
+  grooves on the corners and edges. It is slightly faster than the SuLong. The SuLong was
+  usually cheaper, so probably better value-for-money." The same source then states "YJ YuLong...
+  The mechanism was largely adapted from the ChiLong" (December 2013) — i.e. ChiLong sits
+  between SuLong and YuLong in a rapid month-by-month 2013 succession of differently-named
+  budget products, of which only YuLong (see yj-yulong.yml) persisted as a multi-generation
+  line.
+
+  No successor carrying the "ChiLong" name and no retailer capture from 2020 or later were
+  found. Recorded as its own single-generation historical family for the same reason as
+  yj-sulong: a distinct manufacturer-given name is not evidence of a missing family, and
+  collapsing three differently-named 2013 products into one record would misrepresent what the
+  source actually says.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-yongjun-products]
