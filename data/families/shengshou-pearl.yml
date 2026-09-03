@@ -1,0 +1,37 @@
+# family: shengshou-pearl
+# Pass 2 (family enumeration). A single-generation, minimally-documented ShengShou 3x3.
+
+id: shengshou-pearl
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou Pearl"
+aliases:
+  - "MingZhu"
+introduced:
+  value: "2017-06"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou Pearl (MingZhu) —
+  Released June 2017." No further detail is given by the source beyond the release date and
+  name. No successor 3x3 generation was found. Absent from TheCubicle's current catalogue
+  (thecubicle-shengshou-collection-2025). Recorded despite the thin source material because a
+  specific, dated, manufacturer-named product is stronger evidence than the pass's other
+  excluded ShengShou candidates (Rainbow, Gem, Tank), which carry neither a date nor a
+  quotable description beyond a single dismissive sentence.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-collection-2025]

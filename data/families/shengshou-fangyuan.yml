@@ -1,0 +1,33 @@
+# family: shengshou-fangyuan
+# Pass 2 (family enumeration). A two-generation, favourably-reviewed mid-price ShengShou 3x3
+# line, including the brand's first magnetised version of this specific design.
+
+id: shengshou-fangyuan
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou FangYuan"
+aliases: []
+introduced:
+  value: "2016-08"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou FangYuan —
+  Released August 2016. Released with little publicity, a good mid-price cube. It doesn't catch
+  or pop, doesn't corner twist often, and corner cuts very well for a cube of its class,"
+  followed by "ShengShou FangYuan V2 M — A magnetized version of the ShengShou FangYuan. Also
+  released with little to no publicity." No further generation was found. Absent from
+  TheCubicle's current catalogue (thecubicle-shengshou-collection-2025).
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-collection-2025]

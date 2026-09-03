@@ -307,3 +307,40 @@ generation after the original found).
 **Sources created this session (YuXin):** `speedsolving-wiki-yuxin-products`,
 `thecubicle-yuxin-collection-2025`. No pre-existing YuXin-specific sources existed to reuse
 beyond the manufacturer-register sources already on `data/manufacturers/yuxin.yml`.
+
+---
+
+## ShengShou — 7 families
+
+**Method note.** Like YuXin, ShengShou's wiki page carries a standing "may be currently
+outdated" warning. Unlike YuXin, most entries here do carry a date, but several (Rainbow, Gem,
+Tank) do not, and are correspondingly excluded. TheCubicle's current (2025) ShengShou collection
+carries no ordinary 3x3 at all — only shape mods and big cubes — corroborating the wiki's own
+framing of ShengShou's 3x3 line as largely historical.
+
+**Candidates considered:** ShengShou 3x3 (original), Wind, Aurora, Rainbow, Legend, FangYuan
+(+V2 M), Pearl, Gem, Mr. M (+V2/MS), Tank.
+
+**Accepted (7):** `shengshou-3x3`, `shengshou-wind`, `shengshou-aurora`, `shengshou-legend`,
+`shengshou-fangyuan`, `shengshou-pearl`, `shengshou-mr-m`.
+
+**Rejected/deferred:**
+- **Rainbow** — "Shengshou's first attempt at a stickerless cube," a real historically notable
+  fact, but no date and no further detail found. Left as a lead rather than a family this pass,
+  a closer call than Gem/Tank below; a future pass with more time should reconsider it.
+- **Gem** and **Tank** — undated, single-sentence, explicitly dismissive entries ("why even
+  bother buying this?"). Not created as families on a significance/evidence basis, recorded as
+  leads in `speedsolving-wiki-shengshou-products`'s own reliability note rather than silently
+  dropped.
+
+**No boundary disputes this manufacturer** — every accepted family is its own distinct name with
+no stated succession between differently-named products (unlike Fire/Water at YuXin or
+Bullfight/Thunderclap at QiYi), so no `successor_family_id` calls were needed.
+
+**Historical/discontinued families preserved:** all seven. This is the first manufacturer this
+pass where *every* accepted family reads as historical/discontinued rather than currently sold —
+ShengShou's 3x3 presence appears to have genuinely receded in favour of its shape-mod and
+big-cube lines, which this pass's scope does not cover.
+
+**Sources created this session (ShengShou):** `speedsolving-wiki-shengshou-products`,
+`thecubicle-shengshou-collection-2025`.

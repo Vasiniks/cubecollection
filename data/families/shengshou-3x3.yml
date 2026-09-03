@@ -1,0 +1,25 @@
+# family: shengshou-3x3
+# Pass 2 (family enumeration). ShengShou's first, unnamed-beyond-the-brand 3x3, long
+# discontinued.
+
+id: shengshou-3x3
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou 3x3"
+aliases: []
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou 3x3 — This was
+  the first 3x3 from ShengShou, although not much is known about it. It has been discontinued
+  for a long time. Many different ShengShou 3x3 versions had been released prior to 2013."
+  TheCubicle's own current collection (thecubicle-shengshou-collection-2025) carries no ordinary
+  3x3 ShengShou product at all, consistent with long-term discontinuation.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-collection-2025]

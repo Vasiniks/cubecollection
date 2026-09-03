@@ -1,0 +1,48 @@
+# source: speedsolving-wiki-shengshou-products
+# Speedsolving.com community wiki article on ShengShou. Tier 4 — corroborates only. The page
+# carries its own standing editorial warning ("This page may be currently outdated"). Used for
+# 3x3 product-line structure and dating.
+id: speedsolving-wiki-shengshou-products
+entity: source
+kind: wiki
+title: "ShengShou — Speedsolving.com Wiki (3x3 product history)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=Shengshou"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241005070245/https://www.speedsolving.com/wiki/index.php?title=ShengShou"
+excerpt: |-
+  Page-level summary: "ShengShou... is a Chinese company that first became widely known after
+  the release of the high-quality 4x4 cube. Since then, they have expanded and have many
+  high-quality cubes. Recently ShengShou seems to be appealing to cube collectors."
+
+  3x3 section, in order: "ShengShou 3x3 — This was the first 3x3 from ShengShou, although not
+  much is known about it. It has been discontinued for a long time. Many different ShengShou 3x3
+  versions had been released prior to 2013. ShengShou Wind (Feng) — Released before June 2013.
+  This cube is famous for being the quietest cube ever produced. However there is little
+  corner-cutting with this cube and it is unsuitable as a speedcube. ShengShou Aurora (JiGuang) —
+  Released June 2013. A highly regarded cube on its release. Almost as quiet as the Shengshou
+  Wind, but with better corner-cutting. ShengShou Rainbow (CaiHong) — Shengshou's first attempt
+  at a stickerless cube. ShengShou Legend (ChuanQi) — Released March 2016. Shengshou's attempt
+  to produce a more modern cube. It is an underwhelming cube with rather poor corner-cutting.
+  ShengShou FangYuan — Released August 2016. Released with little publicity, a good mid-price
+  cube... ShengShou FangYuan V2 M — A magnetized version of the ShengShou FangYuan. Also
+  released with little to no publicity. ShengShou Pearl (MingZhu) — Released June 2017. ShengShou
+  Gem — One of the first 3x3s to have black internals with capped pieces... ShengShou Mr. M —
+  ShengShou's first attempt at a magnetic cube... known for having VERY strong magnets. ShengShou
+  Mr. M V2 — An updated version of the original Mr. M... rarely brought up, mostly because it
+  sucks. Shengshou Mr. MS — Another updated version of the Mr. M... generally considered to be
+  awful. ShengShou Tank 3x3 — A 3x3 similar to the Gem. It's a pretty average budget cube. With
+  puzzles like the RS3M existing, why even bother buying this?"
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from the page summary and 3x3 section verbatim,
+  condensed with ellipses where intervening text is unrelated commentary on turning feel."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, carries its own 'may be currently outdated'
+  editorial warning. Several entries (Rainbow, Gem, Tank) are undated and given only a single
+  dismissive sentence; not created as families this pass on a significance/evidence basis, and
+  recorded as leads rather than silently dropped — see
+  research/notes/models/global-pass2-families.md."
+status: sourced

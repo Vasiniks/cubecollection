@@ -1,0 +1,38 @@
+# family: shengshou-legend
+# Pass 2 (family enumeration). A single-generation ShengShou 3x3 explicitly framed by the wiki
+# as an attempt to modernise the brand's ageing 3x3 range.
+
+id: shengshou-legend
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou Legend"
+aliases:
+  - "ChuanQi"
+introduced:
+  value: "2016-03"
+  precision: month
+  qualifier: circa
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou Legend (ChuanQi)
+  — Released March 2016. Shengshou's attempt to produce a more modern cube. It is an
+  underwhelming cube with rather poor corner-cutting." "Legend" also names ShengShou 2x2, 4x4,
+  and 5x5 products (per the same wiki page's respective sections, 4x4 dated May 2017) — a
+  cross-category naming convention this family covers only for its 3x3. No successor 3x3
+  generation was found. Absent from TheCubicle's current catalogue
+  (thecubicle-shengshou-collection-2025).
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products]
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-collection-2025]

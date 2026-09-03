@@ -1,0 +1,33 @@
+# source: thecubicle-shengshou-collection-2025
+# TheCubicle's own "shengshou" collection product-URL structure, a 2025 capture. Tier 2,
+# first-party retailer naming — cited to corroborate that ShengShou's 3x3 lines are absent from
+# this retailer's current catalogue, consistent with the wiki's own framing of ShengShou's 3x3
+# history as largely historical/discontinued.
+id: thecubicle-shengshou-collection-2025
+entity: source
+kind: retailer
+title: "thecubicle.com/collections/shengshou/products/* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/shengshou"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/collections/shengshou (2025 captures)
+  returns only five products, all shape mods or big cubes, no 3x3: shengshou-3x3-mirror-blocks
+  (a mirror-block shape mod, not a standard 3x3x3), shengshou-6x6-mastermorphix,
+  shengshou-7x7-mastermorphix, shengshou-mr-m-megaminx, shengshou-teraminx-v2. No ordinary
+  ShengShou 3x3 product (Wind, Aurora, Legend, FangYuan, Pearl, or Mr. M 3x3) appears in this
+  retailer's catalogue as of the 2025 captures found.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.thecubicle.com/collections/shengshou --limit 200`) is the primary evidence; the
+  excerpt reproduces the path list directly, per D3/RESEARCH_SPEC 3.5's allowance for evidence
+  that does not reduce to one page's text."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 2, first-party retailer catalogue structure. Absence at one retailer in
+  one capture window is not proof of discontinuation across the whole market, but is consistent
+  corroborating evidence for the wiki's own dismissive framing of ShengShou's later 3x3
+  products."
+status: sourced

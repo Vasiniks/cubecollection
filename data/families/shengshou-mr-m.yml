@@ -1,0 +1,32 @@
+# family: shengshou-mr-m
+# Pass 2 (family enumeration). ShengShou's first magnetic 3x3 attempt and its two-generation
+# succession, both later generations reviewed unfavourably by the community source.
+
+id: shengshou-mr-m
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou Mr. M"
+aliases: []
+positioning: mainline
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-shengshou-products): "ShengShou Mr. M —
+  ShengShou's first attempt at a magnetic cube. For its time, it wasn't the worst. The puzzle is
+  known for having VERY strong magnets," followed by "ShengShou Mr. M V2 — An updated version of
+  the original Mr. M. This puzzle is rarely brought up, mostly because it sucks" and "Shengshou
+  Mr. MS — Another updated version of the Mr. M. This puzzle is generally considered to be
+  awful." No release dates are given by the source for any generation.
+
+  "Mr. M" also names a ShengShou 2x2 ("ShengShou's only attempt at a magnetic 2x2") and, per
+  TheCubicle's own current catalogue, a Megaminx ("shengshou-mr-m-megaminx",
+  thecubicle-shengshou-collection-2025) — a cross-category naming convention this family covers
+  only for its 3x3 generations. No 3x3 "Mr. M"-named product was found at TheCubicle's current
+  catalogue, consistent with the wiki's own unfavourable framing of the later generations.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-shengshou-products, thecubicle-shengshou-collection-2025]
