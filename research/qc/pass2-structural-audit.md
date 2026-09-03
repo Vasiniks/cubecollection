@@ -363,3 +363,79 @@ removed and no date changed — only the confidence now matches the evidence.
 **Generalisation for the source audit backlog.** Any `confirmed` attestation that cites one
 tier-1 source *plus* a tier-4 source deserves the same check: is the tier-1 source carrying the
 claim, or merely present? This is a small, enumerable set and should be swept before Pass 3.
+
+---
+
+## S13 — CRITICAL DECISION REQUIRED: 111 attestations violate the archive's own confidence rule
+
+Running the generalised sweep recommended in S12 produced two precise results.
+
+### (a) The `dayan-panshi` shape is rare — only 5 instances, and 4 are sound
+
+`confirmed` attestations citing a tier-1 **and** a tier-4 source together:
+
+| Record | Pointer | Sources | Verdict |
+|---|---|---|---|
+| `dayan-panshi` | `/introduced` | T4 wiki + T1 (bound only) | **was wrong — fixed in S12** |
+| `lanlan` | `/founded` | `lanlantoy-made-in-china-profile`=T1 + wiki=T4 | sound — T1 carries it |
+| `mfjs` | `/kind` | `moyucube-official-home-2022`=T1 + wiki=T4 + `cuboss-mfjs-brand-page`=T2 | sound |
+| `mfjs` | `/parent_id` | same as above | sound |
+| `moyu` | `/country` | `moyucube-official-home-2022`=T1 + `baike-baidu-moyu`=T4 | sound |
+| `x-man-design` | `/parent_id` | `theqiyi-about-us`=T1 + `qiyicube-storefront-2018`=T1 + wiki=T4 | sound — two T1 |
+
+**`dayan-panshi` was the genuine outlier.** No further downgrades are warranted here, and saying
+so matters: a mass-downgrade of this pattern would have damaged four correctly-evidenced claims.
+
+### (b) 111 attestations rest **solely** on tier-4 sources
+
+| Confidence | Count |
+|---|---|
+| `reported` | 107 |
+| `probable` | 4 |
+| **Total** | **111** |
+
+This corroborates the source-independence audit's independent estimate (~110) from a different
+method, across roughly 53 of 122 families. 32 of them are `/introduced` fields.
+
+**This is not a matter of taste. It contradicts two written rules:**
+
+- `vocab/confidence.yml` defines `reported` as *"**Tier 3 source**, uncontradicted and
+  plausible"* — not tier 4.
+- `RESEARCH_SPEC.md` line 103 defines tier 4 (*"marketplace listings, aggregators, unattributed
+  wikis, marketing copy"*) as **"Corroborates only. Never establishes."**
+
+By the archive's own definitions the correct value for a claim resting only on tier 4 is
+`uncertain` (*"weak or single-source"*).
+
+### The decision — and why I am not making it
+
+There are **two defensible resolutions, and they lead to very different archives.**
+
+**Option 1 — downgrade.** Move all 111 to `uncertain`. Faithful to the rules as written.
+Consequence: ~53 families lose their `reported` standing, and roughly a quarter of the archive's
+dates become explicitly weak. Honest, but it makes the chronological spine much thinner.
+
+**Option 2 — reclassify the source.** Use the existing `tier:` override field (already present in
+the schema and used once, by `companies-house-rubiks-brand-ltd`) to set the Speedsolving.com
+per-manufacturer product-history pages to **tier 3**, with a written justification. This is
+genuinely arguable: RESEARCH_SPEC line 102 defines tier 3 as *"named reputable reviewers,
+**long-form community documentation**, forum threads with corroborating detail"* — and these
+pages are long-form community documentation, maintained and revision-tracked. Tier 4's wording
+targets *"unattributed wikis"*. Whether Speedsolving's curated product histories are
+"unattributed wikis" or "long-form community documentation" is a real, unresolved question about
+this specific source, not a loophole.
+
+Under Option 2, `reported` becomes correct by definition for all 107, and no data changes.
+
+**This is the single most consequential decision in the Pass 2 gate.** It is a policy call about
+what the archive considers evidence — it changes the meaning of ~111 claims and the standing of
+53 families either way. It is explicitly **not** the kind of narrow, decisive correction this
+audit is authorised to apply unilaterally, so it is documented and left to the human.
+
+**My recommendation, offered but not applied: Option 2, scoped narrowly.** The Speedsolving
+per-manufacturer product-history pages are substantive, long-form, and revision-tracked, which
+fits the tier-3 definition better than "unattributed wiki". But the override should be applied
+**per source record with an individual justification**, never as a blanket rule for
+`kind: wiki` — a short unattributed wiki stub genuinely is tier 4, and the distinction must
+survive. Applying it narrowly also leaves S1's 21 single-tier-4-source families still flagged,
+since promoting the tier does not create corroboration.
