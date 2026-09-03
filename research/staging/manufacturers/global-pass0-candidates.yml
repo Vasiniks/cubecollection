@@ -485,3 +485,67 @@ second_layer_candidates:
 #   suspicion in notes: multiple customer reviews call it identical to the QiYi Thunderclap,
 #   but this is customer opinion (tier 4-equivalent), not a tier 1-2 source, so no
 #   `rebrand_of` relationship was recorded per rule 17 — a lead for pass 2/4.
+
+# ---------------------------------------------------------------- Target 2: SpeedCubeShop
+# /products/ prefix sweep (2026-09-02)
+# Method: npm run wayback -- prefix 'speedcubeshop.com/products/' --limit 80000 -> 32,897
+# captured URLs (the first attempt at --limit 25000 silently hit the cap; raised until the
+# returned count fell below the requested limit, confirming completeness at 32,897). 4,248
+# distinct slugs after query-string/.oembed/.atom/.js dedup. First-hyphen-token frequency count,
+# same technique as TheCubicle's /products/ sweep. Raw output NOT saved to the repo (large, in
+# /private/tmp scratch); reproducible by re-running the command above.
+#
+# Headline finding: SpeedCubeShop sells far more than cubes (Gundam/RC model kits, general
+# hobby merchandise — "rx-78-2-gundam-...", "kyosho-...", "1-10-rc-nissan-..." are NOT cube-
+# related at all and pollute the raw frequency table; filtered out below).
+#
+# CONFIRMED, folded into existing records (no new manufacturer needed):
+#   - ES Cube / ESCube (already canonical, data/manufacturers/escube.yml): SpeedCubeShop's own
+#     product description states "ES3 3x3 (Magnetic) is the debut release for the new brand, ES
+#     Cube!" — independent second-retailer corroboration, kind raised probable -> CONFIRMED.
+#   - MoFang JiaoShi ("mofang-jiaoshi-*", 68 slugs): this is MFJS written out in full, already
+#     canonicalised as data/manufacturers/mfjs.yml (sub_brand of MoYu). No action.
+#   - SpeedCubeShop's own further in-house line: "SCS Speed Cube Pro 3x3 Magnetic" ("Brand:
+#     SpeedCubeShop" on its own spec table) — added as an alias on
+#     data/manufacturers/speedcubeshop.yml, a plain own-branded product distinct in character
+#     from the Cosmic/Supernova/UniCube tuning tiers.
+#   - GoCube/GoDice ("gocube-*", "godice-*"): already covered as data/manufacturers/particula.yml
+#     aliases. No action.
+#   - Swift Block ("swift-block-*"): already canonical, data/manufacturers/swift-block.yml
+#     (sub_brand of GAN). No action.
+#
+# RESOLVED — not cube manufacturers, no record created:
+#   - "soup-*" (41 slugs): "Soup Lube" (a ramen-scented lubricant) plus a large "Soup Timmy"
+#     merchandise line (hoodies, mats, cube-display stands, stickers, an ornament) for an
+#     apparent content-creator collab named "Timmy" — no cube product found under this prefix,
+#     only lubricant and apparel/accessories. Out of scope.
+#   - "lubix-*" (3 slugs): "Lubix Certified Lubrication Service" / "Lubix Cube Lubricant" — a
+#     lubricant/service brand, not a cube manufacturer.
+#   - "psl-*" (11 slugs): apparel (jerseys printed with named speedcubers "Dylan Miller", "Kyle
+#     Santucci", "StuCube"), cube covers, mats, stickers — a merch/team brand, not a
+#     manufacturer. Possibly a `collaborator`-shaped entity but no cube product found under this
+#     name; not actioned in this pass.
+#   - "rx-*" (9 slugs): entirely Gundam/Mobile Suit model-kit product codes (RX-78-2, RX-93) —
+#     confirms SpeedCubeShop is a general hobby retailer; zero cube relevance.
+#
+# NOT ACTIONED — real leads, explicitly out of this bounded batch's budget:
+#   - "camcuber-*" (4 slugs: AoLong II, GuHong II, ZhanChi, ZhanChi 55mm 3x3x3): earliest
+#     capture is 2015-11-10 — PRE-DATES this archive's 2016 window. Reads like an early
+#     SpeedCubeShop private-label/setup line for then-current flagship cubes, structurally
+#     similar to (and possibly a predecessor of) Cosmic/Supernova/UniCube, but no capture
+#     confirming continued use inside the 2016-2026 window was found. Not fetched further; a
+#     lead for a future session if pre-2016 lineage work is ever prioritised.
+#   - "es3-*" beyond the debut-brand finding above, and Tomz ("tomz-*", 11 slugs: constrained
+#     cubes, cuboids) are a real shape-mod/novelty specialist matching this batch's explicit
+#     "do not spend budget on the shape-mod / one-person-designer long tail" instruction — not
+#     researched further, recorded here so a future sweep does not need to re-derive the slug
+#     list.
+#   - Person-shaped single tokens with signature/collab-edition character (not individually
+#     researched, same reasoning the brief applied to Tingman/Kanyon/AJ/Lee): "sidgman",
+#     "manish", "okamoto", "traiphum(s)", "eitan(s)", "sam", "dr", "tim", "timur", "troy",
+#     "jack", "ayi", "dlitwin", "jperm" (25 slugs — a genuine, larger signature-edition line
+#     worth a future look given its size, but still a person/collaborator-shaped case, not a
+#     manufacturer), "evgeniy" (10 slugs, same character as jperm).
+#   - Thin, ambiguous single/double-count tokens not pursued: "gg" (already resolved as Cubing
+#     GG, out of scope), "yz", "n50", "vk" — too little slug context to classify confidently in
+#     a bounded pass.

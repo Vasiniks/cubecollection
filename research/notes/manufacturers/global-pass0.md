@@ -342,3 +342,60 @@ its own dozens of SKUs and its own consistent branding can still not be an indep
 **Net this addendum:** 9 new manufacturer/sub_brand records (witeden, eastsheen, mefferts,
 maru, cubestyle, cubetwist, lefun, limcube, newisland), 1 name resolved out of scope with no
 record (Adheron), 13 new sources, all `npm run validate` clean, committed in two batches.
+
+---
+
+## Addendum 5 — Global Pass 0 closeout, Target 2: SpeedCubeShop `/products/` sweep (2026-09-02)
+
+Applied the same technique that found HuaMeng, ESCube, and PBCube at TheCubicle
+(`/products/` prefix enumeration, first-hyphen-token frequency table) to SpeedCubeShop.
+
+**Tooling note: the first attempt silently undercounted.** `--limit 25000` returned exactly
+25,000 rows — the cap, not the true count. Re-run at `--limit 80000` returned 32,897 (below the
+new cap), confirming completeness. Any future prefix sweep on a large retailer should raise the
+limit until the returned count falls strictly below it, not assume a round number means "done."
+
+**Headline: SpeedCubeShop is not cube-only.** The raw frequency table is heavily polluted by
+Gundam and RC-car model-kit product codes ("rx-78-2-gundam-...", "kyosho-...", "1-10-rc-nissan-
+...") — SpeedCubeShop is a general hobby retailer, not solely a cubing shop. This matters
+methodologically: a naive top-N frequency read without filtering would have wasted real effort
+chasing "kyosho" or "rx" as cube-brand candidates.
+
+**Net new finding: ESCube corroborated at a second retailer, confidence raised to
+`confirmed`.** SpeedCubeShop's own product copy states directly: "ES3 3x3 (Magnetic) is the
+debut release for the new brand, ES Cube!" — independent of TheCubicle's structured
+"Manufacturer" field that originally established the record. Two different retailers, two
+different kinds of evidence (a spec-table field vs. a direct prose statement), agreeing.
+`data/manufacturers/escube.yml` updated in place (not recreated) per the "sources are shared,
+never overwrite" rule — this session created the record's file originally in an earlier
+session, so this was an in-lane edit, not a violation.
+
+**Two further own-branded SpeedCubeShop lines resolved into the existing record, no new
+manufacturer:** "SCS Speed Cube Pro" (a plain own-branded 3x3, "Brand: SpeedCubeShop" on its
+own spec table, distinct in character from the Cosmic/Supernova/UniCube tuning tiers already
+documented) added as an alias. "MoFang JiaoShi" written out in full (68 slugs) is simply MFJS's
+full name at this retailer — already `data/manufacturers/mfjs.yml`, no action needed.
+
+**Genuinely new but resolved out of scope, no record created:** "Soup" (a ramen-scented
+lubricant plus a large creator-collab merch line — hoodies, mats, an ornament — for someone
+named "Timmy"; no cube product found under the prefix), "Lubix" (lubricant/service), "PSL"
+(team apparel printed with named speedcubers' names — a `collaborator`-shaped possibility but
+no cube product found, not actioned), "RX" (confirmed as Gundam model-kit codes, zero cube
+relevance).
+
+**Real leads explicitly left unresearched, per the batch's own scope boundary.** "CamCuber"
+(4 slugs: AoLong II, GuHong II, ZhanChi) has its earliest capture in **2015**, before this
+archive's 2016 start — a candidate pre-window SpeedCubeShop setup line, structurally similar to
+Cosmic/Supernova/UniCube, not chased further. "Tomz" (11 slugs, constrained cubes and cuboids)
+is a real shape-mod specialist matching this batch's explicit shape-mod exclusion. A cluster of
+single-token names with signature/collab-edition character (sidgman, manish, okamoto,
+traiphum, eitan, jperm, evgeniy, and several bare given names) is recorded but not
+individually researched, for the same reason the brief excluded Tingman/Kanyon/AJ/Lee — these
+read as people credited on editions, not manufacturers, and a bounded batch does not have room
+to resolve each one to `collaborator` status; `jperm` (25 slugs) is flagged as the largest and
+most likely to be worth a dedicated look in a future session.
+
+**Net this addendum:** 0 new manufacturer records (all genuine new candidates resolved into
+existing records or explicitly out of scope), 2 existing records updated (escube.yml raised to
+confirmed, speedcubeshop.yml gained an alias), 2 new sources, full backlog annotation of every
+candidate considered so a future sweep does not re-derive the same slug list from scratch.
