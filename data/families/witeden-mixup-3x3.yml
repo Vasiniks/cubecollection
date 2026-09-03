@@ -1,0 +1,74 @@
+# family: witeden-mixup-3x3
+# Pass 2 (family enumeration). WitEden's specialism, per pass 1's own finding (corroborating
+# the Speedsolving wiki), is "unusual designs such as Crazy cubes, Super cubes, cuboids etc."
+# since 2010, not standard WCA-legal 3x3 speedcubes — this family and its two siblings
+# (witeden-super-3x3x3, witeden-camouflage-3x3) are the three 3x3-mechanism product lines found
+# across a ~65-slug catalogue that carry genuinely distinctive, specifically-described
+# mechanisms. Every accepted family here will need its own `scope_class: conditional`
+# justification at the model/variant level in a future pass, per DATA_MODEL §1.4.
+
+id: witeden-mixup-3x3
+entity: family
+manufacturer_id: witeden
+name: "WitEden 3x3x3 Mixup"
+aliases:
+  - "WitEden Mixup"
+  - "WitEden & Oskar 3x3x3 Mixup"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-witeden-mixup-3x3-variants' own reliability_note). The earliest genuine Wayback
+    crawl timestamp found across the four variants examined (2020-08-04, the Oskar-credited
+    variant) is used only as an 'existed by' upper bound."
+positioning: special
+description: |-
+  A persisting WitEden product-line name applied to a well-known twisty-puzzle type, the "Mixup
+  Cube" (a 3x3x3-shaped puzzle whose deep-cut mechanism allows edge and center pieces to swap
+  positions, unlike a standard 3x3). TheCubicle's own catalogue carries at least four named
+  variants under this shared name, each with its own described mechanical detail
+  (thecubicle-witeden-mixup-3x3-variants, tier 2):
+  - **"WitEden & Oskar 3x3x3 Mixup"** — credited to a named designer ("Oskar," read as Oskar van
+    Deventer, a widely recognised twisty-puzzle designer, though this specific attribution was
+    not independently verified beyond the retailer's own product title this pass): "looks on the
+    outside just like any 3x3x3 puzzle with bigger outer layers. But the mechanism allows it to
+    be manipulated in many more ways compared to an ordinary 3x3x3."
+  - **"3x3x3 Mixup (Edge-Split)"** — "features split edges that can separate when all are
+    correctly aligned along the equator... adds a new layer of complexity through its hidden
+    edge mechanics."
+  - **"3x3x3 Mixup (30-Degree Turn)"** — "turns like a standard 3x3 puzzle until you figure out
+    how to unlock the inner layers."
+  - **"3x3x3 Mixup Plus"** — already sourced in pass 1 (thecubicle-witeden-mixup-plus), no
+    further description text retrieved this pass.
+
+  **Kept as one family, not four**, because all four share the same manufacturer-declared
+  "3x3x3 Mixup" name and the same base turning concept, differing only in a specific added
+  mechanical wrinkle (edge-splitting, a 30-degree unlock, or a named designer's variation) — read
+  as the model/variant-level distinctions DATA_MODEL §4.2 describes, deferred to pass 3 rather
+  than decided here. This is different from the "same word, different object" cases rejected
+  elsewhere this pass (e.g. Calvin's `calvins-crazy-3x3` vs. `calvins-crazy-mirror-3x3`): here
+  every variant is explicitly the same base "Mixup" puzzle type with an added twist, not a
+  differently-shaped or differently-purposed object.
+
+  Almost certainly non-WCA-legal; the `scope_class: conditional` justification and admission for
+  any specific variant is deferred to pass 3/4 per DATA_MODEL §1.4.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-witeden-mixup-3x3-variants]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-witeden-mixup-3x3-variants]
+    note: "No source states a positioning label; `special` records this record's own
+      out-of-competitive-category reading given the non-standard mechanism."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-witeden-mixup-3x3-variants]
+  /description:
+    confidence: reported
+    sources: [thecubicle-witeden-mixup-3x3-variants, thecubicle-witeden-mixup-plus]

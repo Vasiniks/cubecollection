@@ -1,0 +1,53 @@
+# family: witeden-super-3x3x3
+# Pass 2 (family enumeration). See witeden-mixup-3x3.yml's header comment for the shared
+# boundary reasoning applied across this manufacturer's three accepted 3x3 families this pass.
+# Read as WitEden's "Super cube" specialty applied specifically to the 3x3x3 shape, directly
+# matching the Speedsolving wiki's own characterisation of the company's post-2010 focus.
+
+id: witeden-super-3x3x3
+entity: family
+manufacturer_id: witeden
+name: "WitEden Super 3x3x3"
+aliases:
+  - "Super 3x3x3"
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: before
+  note: "No manufacturer-first-party or retailer-structured date is trusted this pass (see
+    thecubicle-witeden-super-3x3x3's own reliability_note). The genuine Wayback crawl timestamp
+    of the source used is 2020-09-23, used only as an 'existed by' upper bound."
+positioning: special
+description: |-
+  A "Super cube" mechanism applied to the 3x3x3 shape, described directly in TheCubicle's own
+  product copy: "The WitEden Super 3x3x3 features a circular structure on the white and yellow
+  faces which can only be turned by the middle layer. This allows it to be manipulated in more
+  ways than a conventional 3x3 cube can" (thecubicle-witeden-super-3x3x3, tier 2). "Super cube"
+  is named directly in the Speedsolving wiki's own characterisation of WitEden (already sourced
+  in pass 1, speedsolving-wiki-witeden): "since 2010 the company has focused on unusual designs
+  such as Crazy cubes, Super cubes, cuboids etc." — this product is read as that category's
+  3x3x3 instance specifically, not an inference from the product name alone.
+
+  Almost certainly non-WCA-legal; the `scope_class: conditional` justification and admission is
+  deferred to pass 3/4 per DATA_MODEL §1.4.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-witeden-super-3x3x3]
+    note: "Bare Wayback crawl-timestamp upper bound only, no stated release date found anywhere
+      this pass."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-witeden-super-3x3x3, speedsolving-wiki-witeden]
+    note: "The wiki independently names 'Super cubes' as one of the manufacturer's own
+      documented post-2010 specialties, corroborating the retailer's product-line naming — a
+      stronger basis than the `uncertain` positioning calls made elsewhere this pass for
+      products lacking this kind of independent category confirmation."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-witeden-super-3x3x3]
+  /description:
+    confidence: probable
+    sources: [thecubicle-witeden-super-3x3x3, speedsolving-wiki-witeden]

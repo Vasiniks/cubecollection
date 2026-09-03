@@ -1,0 +1,43 @@
+# source: thecubicle-witeden-mixup-3x3-variants
+# TheCubicle's own product pages for four "WitEden 3x3x3 Mixup" variants (Plus, Edge-Split,
+# 30-Degree Turn, and an Oskar van Deventer-credited design), captured via Wayback. Tier 2,
+# first-party retailer copy.
+id: thecubicle-witeden-mixup-3x3-variants
+entity: source
+kind: retailer
+title: "WitEden 3x3x3 Mixup (Plus / Edge-Split / 30-Degree Turn / Oskar) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220517171802id_/https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+excerpt: |-
+  Oskar variant (https://web.archive.org/web/20250801151456id_/https://www.thecubicle.com/products/witeden-oskar-3x3x3-mixup):
+  "The WitEden & Oskar 3x3x3 Mixup looks on the outside just like any 3x3x3 puzzle with bigger
+  outer layers. But the mechanism allows it to be manipulated in many more ways compared to an
+  ordinary 3x3x3." Edge-Split variant (https://web.archive.org/web/20250802005751id_/https://www.thecubicle.com/products/witeden-3x3x3-mixup-edge-split):
+  "The WitEden 3x3x3 Mixup (Edge-Split) features split edges that can separate when all are
+  correctly aligned along the equator. It turns like a typical Mixup puzzle, but adds a new
+  layer of complexity through its hidden edge mechanics." 30-Degree Turn variant
+  (https://web.archive.org/web/20250801151223id_/https://www.thecubicle.com/products/witeden-3x3x3-mixup-30-degree-turn):
+  "The WitEden 3x3x3 Mixup (30-Degree Turn) turns like a standard 3x3 puzzle until you figure
+  out how to unlock the inner layers." All four pages' Product Specifications table reads
+  "Manufacturer: WitEden".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, retailer, covering four differently-mechanised variants sharing the
+  persisting 'WitEden 3x3x3 Mixup' name. The 'Oskar' credit line names Oskar van Deventer, a
+  widely recognised twisty-puzzle designer, though this pass did not independently verify that
+  attribution beyond the retailer's own product title/copy. Each variant (Plus, Edge-Split,
+  30-Degree Turn) is described with a genuinely distinct mechanical detail, not a bare
+  configuration difference, but all four share the base 'Mixup' turning concept and the same
+  manufacturer-declared family name — grouped here as one family per DATA_MODEL's family-level
+  test ('a named product line persisting across designs'), with the actual model-vs-variant
+  boundary between them explicitly deferred to pass 3. None of these pages' in-page 'Added'
+  fields are used as dating evidence, per this pass's standing cross-agent finding on
+  TheCubicle's repeating 'Added:' dates; the earliest genuine Wayback crawl timestamp found
+  across all four (2020-08-04, for the Oskar variant) is used as the family's 'existed by'
+  upper bound."
+status: sourced

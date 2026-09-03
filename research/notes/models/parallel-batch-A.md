@@ -565,3 +565,80 @@ existing product-level sources existed to reuse beyond the manufacturer-register
 on `data/manufacturers/calvins-puzzle.yml`.
 
 ---
+
+## WitEden — 3 families (final manufacturer in this agent's queue)
+
+**Groundwork inspected first.** Pass 1's `data/manufacturers/witeden.yml` already characterised
+WitEden per the Speedsolving wiki as having "since 2010... focused on unusual designs such as
+Crazy cubes, Super cubes, cuboids etc.," noted its historically significant pre-2016 "GuoBing
+(Type C)" 3x3 (2006-2011, popular circa 2007-2011, not re-confirmed as still sold in-window),
+and explicitly deferred any in-window 3x3 finding to pass 2.
+
+**Discovery.** A `thecubicle.com/products/witeden*` CDX prefix sweep (~65 slugs) confirmed the
+catalogue is overwhelmingly cuboids (2x2x4 through 3x3x17) — out of 3x3x3 scope by shape — plus
+a genuine cluster of 3x3x3-shaped novelty mechanisms matching the wiki's own "Crazy cubes,
+Super cubes" language directly: a "3x3x3 Mixup" line (four named variants: Plus, Edge-Split,
+30-Degree Turn, and one credited to "Oskar," read as Oskar van Deventer though not
+independently verified), a "Super 3x3x3," and a "Camouflage 3x3x3." Fetched and read all of
+these plus two more (AI Bandaged Cube, Rainbow Cube) that turned out, on reading the full
+description, not to be 3x3x3-shaped at all.
+
+**Families accepted (3):** `witeden-mixup-3x3` (bundling the four "3x3x3 Mixup" variants under
+one persisting name — see below for why bundled, not split), `witeden-super-3x3x3` (a
+"Super cube" mechanism, positioning attested at `probable` rather than `uncertain` because the
+wiki independently and specifically names "Super cubes" as one of WitEden's own documented
+post-2010 specialties, not just this pass's own inference from a product name), and
+`witeden-camouflage-3x3` (a disguised-mechanism 3x3x3).
+
+**Rejected (2), both a shape/category check, not a boundary judgement:**
+- **AI Bandaged Cube** — its own description states "It resembles a mix between a 4x4 and a
+  2x2," not a 3x3x3.
+- **Rainbow Cube** — "The tetradecahedral shape is quite unique," a non-cubic shape entirely.
+
+**A naming trap explicitly caught and cross-referenced.** Earlier this queue, Calvin's Puzzle's
+"Mirror Camouflage 3x3x3" turned out, on reading its full description, to actually be a
+disguised 4x4x4. WitEden's similarly-named "Camouflage 3x3x3" was checked against exactly this
+risk before being accepted — its own description ("a 3x3x3 cube with a thin middle layer...
+camouflaged... an irregular center of rotation") confirms a genuine 3x3x3 mechanism. Both the
+family record and its source note this check explicitly, as a reusable lesson: **a product's own
+name, including a stated cube size, is not reliable evidence of its actual mechanism** — this
+pass read every full description rather than filtering by slug/title alone, and it mattered
+twice in one queue.
+
+**Boundary reasoning — the Mixup line bundled as one family, unlike this queue's other
+"same word, different design" splits.** Unlike Calvin's `calvins-crazy-3x3` vs.
+`calvins-crazy-mirror-3x3` (kept separate: same "Crazy" word, genuinely different mechanisms),
+all four WitEden "3x3x3 Mixup" variants are explicitly the same base Mixup-type turning concept
+with one added mechanical wrinkle each (edge-splitting, a 30-degree unlock, a named designer's
+variation) — read as model/variant-level distinctions per DATA_MODEL §4.2, not separate designs,
+and bundled into one family accordingly. This is the first case in this agent's entire queue
+where a "same name, several variants" pattern was bundled rather than split, and the write-up
+explains why the test came out differently here than at Calvin's.
+
+**Dating discipline applied, per the cross-agent correction above.** No TheCubicle in-page
+"Added:" field used as evidence anywhere in this manufacturer; every `introduced` is a
+`qualifier: before` bound from genuine Wayback crawl timestamps only.
+
+**Unresolved for pass 3:**
+- Whether the historically significant pre-2016 "GuoBing (Type C)" 3x3 (2006-2011) was ever
+  resold within the archive window, or should be recorded as `scope_class: reference_only`
+  identity only per RESEARCH_SPEC §2.4 (not created as a family this pass — no in-window
+  evidence found, and pass 1 already flagged this exact gap without closing it).
+- `scope_class: conditional` justification and admission for all three families (all certainly
+  non-WCA-legal).
+- Independent verification of the "Oskar" (van Deventer) design credit on the Mixup variant.
+- Model/variant-level split decisions within `witeden-mixup-3x3`.
+
+**Sources created this session (WitEden):** `thecubicle-witeden-mixup-3x3-variants`,
+`thecubicle-witeden-super-3x3x3`, `thecubicle-witeden-camouflage-3x3x3`. Reused without
+modification: `thecubicle-witeden-mixup-plus`, `speedsolving-wiki-witeden` (both pass 1).
+
+---
+
+## Queue complete
+
+All eight manufacturers in this agent's assigned queue (giiker, particula, moretry, eastsheen,
+maru, mefferts, calvins-puzzle, witeden) are now researched, sourced, logged, and committed.
+Final tally: 2 + 1 + 1 + 1 + 4 + 1 + 3 + 3 = **16 families** across 8 manufacturers, plus one
+cross-agent-triggered correction commit. See the manufacturer report at the end of this
+session's final response for the one-line-per-manufacturer summary with commit SHAs.
