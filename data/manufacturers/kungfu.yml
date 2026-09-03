@@ -1,0 +1,55 @@
+# manufacturer: kungfu
+# Pass 1 (manufacturer register). Long-tail candidate. A Chinese 3x3/2x2/4x4 puzzle brand
+# active from within this archive's window (2016-present per the source located), sold
+# internationally under an English brand name distinct from its Chinese legal/product name.
+
+id: kungfu
+entity: manufacturer
+name: "KungFu"
+native_name: "御魔"
+kind: manufacturer
+country: CN
+founded:
+  value: "2016"
+  precision: year
+  qualifier: circa
+  note: "'Years Active: 2016-present' and 'They began releasing cubes in 2016' per the only
+    source located this pass; not a stated company-registration date."
+aliases:
+  - "YuMo"
+  - "御魔"
+notes: |-
+  **Identity.** The Speedsolving.com community wiki: "KungFu (Chinese name: YuMo 御魔) is a
+  Chinese puzzle company based in Guangzhou. They began releasing cubes in 2016... The Chinese
+  name YuMo (御魔) is a combination of the words Control and Magic... The label 'KungFu' is used
+  to identify the brand internationally" (speedsolving-wiki-kungfu) — tier 4, the only source
+  located this pass, but specific and detailed rather than a bare name-list mention. No
+  independent website, company-registration record, or tier 1-2 source was located in the time
+  available.
+
+  **In-scope products.** The same source names 3x3 products directly: "KungFu QingHong" and
+  "KungFu LongYuan" (the latter "a budget cube from KungFu"), alongside a 2x2 ("KungFu YueHan")
+  and 4x4s ("KungFu CangFeng", "KungFu JuQue"). Family/model enumeration is pass 2's work, not
+  this register's.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [speedsolving-wiki-kungfu]
+    note: "Single tier 4 wiki source. No independent corroboration located this pass."
+  /native_name:
+    confidence: uncertain
+    sources: [speedsolving-wiki-kungfu]
+  /country:
+    confidence: uncertain
+    sources: [speedsolving-wiki-kungfu]
+  /founded:
+    confidence: uncertain
+    sources: [speedsolving-wiki-kungfu]
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-kungfu]
+  /notes:
+    confidence: uncertain
+    sources: [speedsolving-wiki-kungfu]

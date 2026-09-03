@@ -1,0 +1,33 @@
+# source: speedsolving-wiki-kungfu
+# Speedsolving.com community wiki article on KungFu (YuMo), archived 2019-09-18. Tier 4,
+# community-edited reference — corroboration only, but detailed and specific rather than a bare
+# name-list mention.
+id: speedsolving-wiki-kungfu
+entity: source
+kind: wiki
+title: "KungFu - Speedsolving.com Wiki"
+publisher: "Speedsolving.com Wiki"
+url: "https://www.speedsolving.com/wiki/index.php/KungFu"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190918111637id_/https://www.speedsolving.com/wiki/index.php/KungFu"
+excerpt: |-
+  "KungFu (Chinese name: YuMo 御魔) is a Chinese puzzle company based in Guangzhou. They began
+  releasing cubes in 2016." Infobox: "Founded: unknown / Location: China / Years Active:
+  2016-present / Areas served: Worldwide." Products listed: "KungFu CangFeng, KungFu JuQue,
+  KungFu QingHong" (4x4 and 3x3 models) and others, including the 3x3s "KungFu QingHong" and
+  "KungFu LongYuan" (described as "a budget cube from KungFu") and the 2x2 "KungFu YueHan".
+  "The Chinese name YuMo (御魔) is a combination of the words Control and Magic... The label
+  'KungFu' is used to identify the brand internationally."
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited wiki, self-marked as 'currently outdated' but
+  substantially more detailed than a bare brand-list mention (naming a Chinese brand name, a
+  city, a start year, and specific 3x3/2x2/4x4 product names). Sufficient to establish
+  existence, a general location, and an approximate active-since year at `uncertain`
+  confidence, not sufficient alone for `confirmed`. No independent website or company-
+  registration record was located this pass; the wiki's own infobox states its own website
+  field is empty."
+status: sourced

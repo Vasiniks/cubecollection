@@ -109,6 +109,20 @@ probable_sub_brands:
   # long_tail_candidates entry below), 燕成 (YanCheng). Each needs its own identity check before
   # a sub_brand or manufacturer record is created — MoYu's own title-tag listing groups them
   # together but does not state the precise legal relationship for each.
+  #
+  # Chinese-language follow-up (2026-09-02, general web search, no tier 1-3 source captured):
+  # multiple Chinese brand-directory results independently describe this same set as "由魔域
+  # 文化倾力打造的品牌" ("brands built with great effort by MoYu Culture") — i.e. general-search
+  # corroboration that these are MoYu-created brands/lines, not independent companies, which
+  # rules out the "independent manufacturer" reading. It does NOT resolve which DATA_MODEL
+  # `kind` fits: `sub_brand` (each an independently-operated brand under MoYu, the MFJS
+  # treatment) vs. simply a product-line name (the WeiLong/TangLong treatment) is still
+  # per-brand undetermined — no independent storefront, domain, or distinct market identity
+  # was found this pass for 国冠 (GuoGuan) specifically (a targeted search for a dedicated
+  # store/domain returned nothing), which argues against `sub_brand` for at least that one
+  # without better evidence. No manufacturer or sub_brand record created for any of these seven
+  # names this pass; still deferred, now with a firmer "these are MoYu's, not independent"
+  # finding but the sub_brand-vs-product-line question open per name.
 
 # ---------------------------------------------------------------- NOT manufacturers
 # The project seed list mixes companies with product lines. Creating manufacturer records for
@@ -148,8 +162,16 @@ long_tail_candidates:
   - { name: "MoHuanShouSu", slugs: [mohuan-shousu], note: "Chinese brand; native name likely required for resolution." }
   - { name: "SenHuan",      slugs: [senhuan] }
   - { name: "HeShu",        slugs: [heshu] }
-  - { name: "KungFu",       slugs: [kungfu] }
-  - { name: "LingAo",       slugs: [lingao] }
+  - { name: "KungFu",       slugs: [kungfu],
+      status: "CANONICALISED as data/manufacturers/kungfu.yml, kind: manufacturer at
+        `drafted`/uncertain (single tier 4 wiki source, but specific: Chinese name YuMo 御魔,
+        Guangzhou, cubes since 2016)." }
+  - { name: "LingAo",       slugs: [lingao],
+      status: "RESOLVED — out of scope, not a canonicalisation gap. Speedsolving wiki
+        (speedsolving-wiki-lingao): 'LingAo is a twisty puzzle producer that makes 2D puzzles
+        such as the Rubik's Clock and Rubik's Magic. They do not produce any other kinds of
+        twisty puzzles.' No 3x3 product exists to enumerate. No manufacturer record created —
+        this archive is scoped to 3x3x3 speedcubes and LingAo makes none." }
   - { name: "HelloCube",    slugs: [hellocube] }
   - { name: "MsCube",       slugs: [mscube],
       status: "RESOLVED — product line of DianSheng, not an independent manufacturer.

@@ -1,0 +1,27 @@
+# source: speedsolving-wiki-lingao
+# Speedsolving.com community wiki article on LingAo, archived 2019-08-21. Tier 4, cited only to
+# support a scope exclusion (no 3x3 products), not any manufacturer record.
+id: speedsolving-wiki-lingao
+entity: source
+kind: wiki
+title: "LingAo - Speedsolving.com Wiki"
+publisher: "Speedsolving.com Wiki"
+url: "https://www.speedsolving.com/wiki/index.php/LingAo"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190821005930id_/https://www.speedsolving.com/wiki/index.php/LingAo"
+excerpt: |-
+  "LingAo is a twisty puzzle producer that makes 2D puzzles such as the Rubik's Clock and
+  Rubik's Magic. They do not produce any other kinds of twisty puzzles. Mainly known for their
+  clock, as it's the only one that is still being produced..." The article documents only
+  Clock and Magic-family products (LingAo Magic Clock, LingAo Magic, LingAo Master Magic,
+  LingAo Mini Magic, LingAo 20-Panel Magic) with no 3x3 or other NxN cube listed.
+accessed: "2026-09-02"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited wiki. Cited only to support that LingAo makes no
+  3x3x3 product at all, which is a scope finding (out of scope for this archive per PRODUCT.md,
+  not merely 'conditional') rather than a manufacturer-identity claim, so no manufacturer
+  record is created for LingAo despite it appearing in the pass-0 long-tail candidate list."
+status: sourced
