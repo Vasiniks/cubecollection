@@ -1,0 +1,242 @@
+# Pass 2 remediation — master issue ledger (machine-readable)
+#
+# Stable issue IDs. NEVER renumber. Prefixes:
+#   Q  = QiYi / X-Man identity      E = evidence / tier policy
+#   G  = GAN boundary / pilot       D = second-order discovery
+#   S  = structural (from the first adjudication gate)
+#
+# status: open | in_progress | resolved | wont_fix | needs_human_decision
+# severity: critical | high | medium | low
+
+meta:
+  baseline_sha: "9068899"
+  updated: "2026-09-03"
+  phase: "window-1 specialist research"
+  counts:
+    entities: 54
+    families: 122
+    models: 48
+    variants: 104
+    sources: 284
+
+issues:
+
+  - id: Q1
+    severity: critical
+    status: in_progress
+    title: "theqiyi-about-us is an Amazon affiliate site recorded as manufacturer_official (tier 1)"
+    category: source-provenance
+    affected_records:
+      - data/sources/theqiyi-about-us.yml
+      - data/manufacturers/qiyi.yml          # /country /founded /website (confirmed, no other T1)
+      - data/manufacturers/x-man-design.yml  # /kind (confirmed, no other T1)
+      - data/families/x-man-tornado.yml      # /positioning /aliases (confirmed, no other T1)
+    evidence: >-
+      Live fetch of https://theqiyi.com/about-us.html returns a footer reading verbatim
+      "QIYI is a participant in the Amazon Services LLC Associates Program ... to earn
+      advertising fees by advertising and linking to Amazon.com (c) 2025 QIYI". No ICP filing,
+      no contact address, no native checkout, products link to Amazon. A manufacturer does not
+      earn affiliate commission on its own products. Speedsolving wiki gives a different domain
+      (qiyitoys.net) and founding year "unknown", while this page asserts a specific 1998
+      founding narrative found nowhere else.
+    counterevidence: >-
+      The page presents itself as QiYi's and its title/publisher claim first-party status. Not
+      yet excluded: that theqiyi.com is a legitimate QiYi regional or marketing site that also
+      runs affiliate links, or that the domain changed hands. Agent A is tasked with falsifying
+      the illegitimacy conclusion.
+    recommendation: >-
+      Re-kind or apply explicit tier:4 override with justification; re-source or downgrade the
+      six orphaned confirmed attestations; correct qiyi.website; re-source QiYi's founding year.
+      Do NOT apply until replacement evidence exists - the fix breaks six confirmed claims and
+      would leave validation red.
+    confidence: high
+    downstream_impact: >-
+      Blocks Pass 3 for QiYi and X-Man Design (11 families). Models inherit manufacturer_id by
+      construction, so building on a disputed attribution means systemic re-parenting later.
+    owner: agent-a
+    last_updated: "2026-09-03"
+
+  - id: E1
+    severity: critical
+    status: needs_human_decision
+    title: "111 attestations rest solely on tier-4 sources, contradicting the archive's own rules"
+    category: evidence-policy
+    affected_records: "~53 of 122 families; 32 are /introduced fields; 107 reported + 4 probable"
+    evidence: >-
+      vocab/confidence.yml defines `reported` as "Tier 3 source, uncontradicted and plausible".
+      RESEARCH_SPEC.md line 103 defines tier 4 as "Corroborates only. Never establishes".
+      Almost all 111 cite Speedsolving.com per-manufacturer product-history pages, which derive
+      to tier 4 via kind: wiki. Two independent methods converged on the count.
+    counterevidence: >-
+      RESEARCH_SPEC line 102 defines tier 3 as including "long-form community documentation",
+      which arguably describes these pages better than tier 4's "unattributed wikis". Under that
+      reading `reported` is already correct and no data need change.
+    recommendation: >-
+      Two defensible options. (1) Downgrade all 111 to uncertain. (2) Use the existing per-source
+      tier override to reclassify the specific Speedsolving product-history pages to tier 3, with
+      individual written justification, never as a blanket rule for kind: wiki. Main session
+      leans to (2) scoped narrowly. Requires human sign-off either way.
+    confidence: high      # that a rule is broken; the resolution is a policy choice
+    downstream_impact: >-
+      ~53 families. Enumerating models beneath them before the decision means redoing the
+      attestations afterwards.
+    owner: agent-b
+    last_updated: "2026-09-03"
+
+  - id: E2
+    severity: high
+    status: open
+    title: "21 families rest on a single tier-4 source with no corroboration at all"
+    category: evidence-quality
+    affected_records: >-
+      cyclone-boys-feichi, cyclone-boys-feijue, cyclone-boys-feiwu, cyclone-boys-metallic-3x3,
+      cyclone-boys-mini-3x3, diansheng-3x3-m, diansheng-solar-s3m, diansheng-stickerless-3x3,
+      diansheng-type-e, yj-chilong, yj-ruilong, yj-sulong, yuxin-3x3, yuxin-fire, yuxin-water,
+      mf8-crazy-3x3x3, mf8-legend, dayan-taiyan, dayan-xiangyun, moyu-ai, qiyi-bullfight
+    evidence: >-
+      Best-available-tier query across all 122 families: T1 25, T2 76, T3 0, T4+ 21. All 21 are
+      also single-source. Validation cannot catch it because the tier rules are conditional on
+      claimed confidence, not on existence.
+    counterevidence: >-
+      The products are real; the families are not fabricated. This is under-evidencing, not error.
+    recommendation: >-
+      Treat as a corroboration backlog, not deletions. Each needs one tier 1-2 source or an
+      explicit decision to hold at reported. Note E1 Option 2 does NOT dissolve this - promoting
+      a tier does not create corroboration.
+    confidence: high
+    downstream_impact: "17% of the family layer; mf8-crazy-3x3x3 will hard-fail rule 15 at Pass 3."
+    owner: main
+    last_updated: "2026-09-03"
+
+  - id: G1
+    severity: high
+    status: in_progress
+    title: "GAN 356 / i / i-carry boundary applies numeric identity inconsistently"
+    category: taxonomy-boundary
+    affected_records: >-
+      data/families/gan-356.yml, gan-i-series.yml, gan-i-carry-series.yml,
+      gan-flagship-series.yml; 22 already-built model records
+    evidence: >-
+      Six models whose manufacturer-given names begin "GAN 356" (gan-356-i, gan-356-i2,
+      gan-356-i-carry, -2, -e, -s) sit outside gan-356, while gan-flagship-series deliberately
+      keeps GAN11-GAN17 together despite numeric change. Numeric identity is therefore decisive
+      in one place and non-decisive in the other, with no stated rule.
+    counterevidence: >-
+      Both readings are individually defensible: "356" may name a hardware platform, or the smart
+      line may be its own lineage with a vestigial number. The inconsistency is the finding, not
+      necessarily an error in either record.
+    recommendation: "Adjudicate and write the rule down before any further GAN model work."
+    confidence: high      # that the inconsistency is real
+    downstream_impact: >-
+      Highest-impact open boundary: 22 models already filed by this rule. Changing it later means
+      re-parenting real records, not editing a family.
+    owner: agent-c
+    last_updated: "2026-09-03"
+
+  - id: S1
+    severity: medium
+    status: resolved
+    title: "gan-354 and gan-354-m rested probable on the Added: 2018-09-11 catalogue artifact"
+    category: provenance
+    affected_records: [data/families/gan-354.yml, data/models/gan/gan-354-m.yml]
+    evidence: >-
+      The literal string occurs 29 times across 22 sources and 13 unrelated brands, so it cannot
+      be a per-product date. Seven other records already held it at uncertain; these two predate
+      the discovery.
+    counterevidence: "none"
+    recommendation: "Downgraded to uncertain; 2018 values retained as weak upper bounds."
+    confidence: high
+    downstream_impact: "Closed. gan-354-m sits in the built model layer where it would have propagated."
+    owner: main
+    last_updated: "2026-09-03"
+
+  - id: S2
+    severity: medium
+    status: resolved
+    title: "dayan-panshi /introduced was confirmed while its own note disowned the claim"
+    category: confidence-mismatch
+    affected_records: [data/families/dayan-panshi.yml]
+    evidence: >-
+      Asserted confirmed citing a tier-4 wiki for the February 2013 month plus a tier-1 capture
+      that only establishes existence by August 2013. Rule 9 passed structurally (a tier-1 source
+      is cited) but not substantively.
+    counterevidence: "none"
+    recommendation: "Downgraded to probable. Sweep found only 5 instances of this shape, 4 sound."
+    confidence: high
+    downstream_impact: "Closed. Generalised lesson recorded: rule 9 cannot test claim support."
+    owner: main
+    last_updated: "2026-09-03"
+
+  - id: S3
+    severity: medium
+    status: resolved
+    title: "speedsolving-wiki-eastsheen excerpt omitted the sentence three records quote from it"
+    category: preservation
+    affected_records: [data/sources/speedsolving-wiki-eastsheen.yml]
+    evidence: >-
+      Reported as a possible fabricated quotation. Verified against the live page: the sentence
+      "East Sheen does not produce 3x3 cubes" is genuine and verbatim. The source uses
+      preservation_method: excerpt with no archive_url, so the excerpt IS the preservation - a
+      preservation gap, not fabrication.
+    counterevidence: "none"
+    recommendation: "Excerpt extended with the verbatim sentence and full product listing."
+    confidence: high
+    downstream_impact: >-
+      Closed. Systemic follow-up: every excerpt-only source has the same exposure - anything on
+      the page but not captured is unsupported.
+    owner: main
+    last_updated: "2026-09-03"
+
+  - id: S4
+    severity: medium
+    status: resolved
+    title: "LanLan zero-family conclusion lacked the retailer sweep every sibling received"
+    category: zero-family-evidence
+    affected_records: [data/sources/thecubicle-products-lanlan-prefix-2026.yml]
+    evidence: >-
+      Sweep run this gate: 99 captures, 59 distinct slugs, list NOT truncated. Every slug
+      containing "3x3" is a shape mod, gear cube, 3x3x2 or 1x3x3. No standard 3x3x3 exists.
+    counterevidence: "One retailer only; cannot prove LanLan never made one for another market."
+    recommendation: "Classification A confirmed. Evidence preserved as a new source record."
+    confidence: high
+    downstream_impact: "Closed. No D remains in the zero-family audit."
+    owner: main
+    last_updated: "2026-09-03"
+
+  - id: S5
+    severity: low
+    status: resolved
+    title: "gan-v100 relied on a label that gan-flagship-series dismissed as noise"
+    category: evidence-weighting
+    affected_records: [data/families/gan-v100.yml]
+    evidence: >-
+      The "Advanced Series" breadcrumb was used to exclude V100, while gan-pass2.md dismissed the
+      same label as unstable merchandising noise when it appeared on GAN11-GAN15.
+    counterevidence: >-
+      Three other evidence lines (Chinese-site placement, retailer copy, Aug-2026 nav) are
+      independent of the label and support exclusion on their own.
+    recommendation: "Exclusion stands; caveat recorded so the label is not treated as decisive."
+    confidence: medium
+    downstream_impact: "Closed unless Agent C overturns it."
+    owner: main
+    last_updated: "2026-09-03"
+
+  - id: S6
+    severity: medium
+    status: open
+    title: "9 wholly non-WCA families will need scope_class + tier 1-3 source at Pass 3"
+    category: scope-policy
+    affected_records: >-
+      maru-nano, calvins-crazy-3x3, calvins-crazy-mirror-3x3, calvins-bandaged-3x3-maze-300,
+      witeden-mixup-3x3, witeden-super-3x3x3, witeden-camouflage-3x3, mefferts-kokonotsu,
+      mf8-crazy-3x3x3
+    evidence: >-
+      scope_class is a required model/variant field (not a family field - that is correct by
+      design). Rule 15 requires conditional scope_class to cite at least one tier 1-3 source.
+      Eight cite a tier-2 TheCubicle page and can satisfy it; mf8-crazy-3x3x3 has only tier 4.
+    counterevidence: "none"
+    recommendation: "Human policy decision on conditional admission; get a tier 1-3 source for mf8-crazy-3x3x3."
+    confidence: high
+    downstream_impact: "mf8-crazy-3x3x3 will hard-fail validation at Pass 3."
+    owner: main
+    last_updated: "2026-09-03"
