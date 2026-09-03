@@ -1,0 +1,65 @@
+# manufacturer: xinlexin
+# Pass 1 (manufacturer register). A Chinese-language discovery finding — this general toy
+# manufacturer, headquartered in the same Shantou/Chenghai toy-manufacturing district as MoYu
+# (see data/manufacturers/moyu.yml), operates a cube product line ("百变魔王") not visible to
+# the two English-language retailer sweeps this register otherwise relied on.
+
+id: xinlexin
+entity: manufacturer
+name: "Xinlexin"
+native_name: "新乐新"
+kind: manufacturer
+country: CN
+founded:
+  value: "2000"
+  precision: year
+  qualifier: exact
+aliases:
+  - "XinLeXin"
+  - "新乐新"
+  - "Guangdong Xinlexin Science-Education Culture Co., Ltd."
+  - "广东新乐新科教文化股份有限公司"
+  - "Baibian Mowang"
+  - "百变魔王"
+notes: |-
+  **Identity and founding.** An industry brand-directory profile: "广东新乐新科教文化股份有限公司
+  成立于2000年，总部设于有'中国玩具城'之称的广东省汕头市澄海区" (Guangdong Xinlexin Science-
+  Education Culture Co., Ltd. was established in 2000, headquartered in Chenghai District,
+  Shantou City, Guangdong Province) (maigoo-xinlexin-brand-profile) — tier 4, the only source
+  located this pass, found via Chinese-language search rather than either English-language
+  retailer sweep this register otherwise relied on.
+
+  **A general toy company with a cube line, not a cube specialist.** The same source names
+  "百变魔王" (Baibian Mowang, "Ever-Changing Devil King") as Xinlexin's own cube-branded product
+  line, alongside "魔尺" (a twistable "magic ruler"/snake puzzle), "古迪积木" (Gudi building
+  blocks), and spinning-top and yo-yo product lines — this is a diversified toy manufacturer,
+  more comparable in structure to YuXin's multi-brand "智胜/全脑博士/速叠杯/益智玩宫" portfolio
+  (see data/manufacturers/yuxin.yml) than to a dedicated speedcube brand like GAN or MoYu.
+  Whether "百变魔王" specifically includes WCA-legal 3x3 speedcubes, as opposed to non-WCA
+  novelty cubes, snake puzzles, or other toy categories entirely, is **not** established by the
+  source located this pass and is deferred to pass 2.
+
+  **Same manufacturing district as MoYu.** Xinlexin's headquarters (Chenghai District, Shantou)
+  is the same toy-manufacturing district named in MoYu's own legal entity address ("Shantou
+  Chenghai District Moyu Culture Co., Ltd.", per data/manufacturers/moyu.yml) — a notable
+  regional concentration of toy/cube manufacturing worth keeping in mind for future Chinese-
+  language discovery, not evidence of any corporate relationship between the two companies.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [maigoo-xinlexin-brand-profile]
+    note: "Single tier 4 source. No independent corroboration located this pass."
+  /country:
+    confidence: uncertain
+    sources: [maigoo-xinlexin-brand-profile]
+  /founded:
+    confidence: uncertain
+    sources: [maigoo-xinlexin-brand-profile]
+  /aliases:
+    confidence: uncertain
+    sources: [maigoo-xinlexin-brand-profile]
+  /notes:
+    confidence: uncertain
+    sources: [maigoo-xinlexin-brand-profile]

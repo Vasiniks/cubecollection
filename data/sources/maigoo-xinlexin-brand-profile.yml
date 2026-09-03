@@ -1,0 +1,35 @@
+# source: maigoo-xinlexin-brand-profile
+# An industry brand-directory profile of Xinlexin (新乐新), a Chinese toy manufacturer whose
+# product lines include a cube brand ("百变魔王" / "Baibian Mowang"). Tier 4, unattributed
+# directory/wiki-style content — corroboration only, but the only source located this pass for
+# this company's founding and legal name.
+id: maigoo-xinlexin-brand-profile
+entity: source
+kind: wiki
+title: "新乐新XINLEXIN品牌介绍-新乐新玩具_魔方_悠悠球_陀螺_积木玩具-买购网"
+publisher: "Maigoo (买购网)"
+url: "https://www.maigoo.com/brand/76766.html"
+preservation_method: excerpt
+excerpt: |-
+  "广东新乐新科教文化股份有限公司成立于2000年，总部设于有'中国玩具城'之称的广东省汕头市澄海区。"
+  (Guangdong Xinlexin Science-Education Culture Co., Ltd. was established in 2000, headquartered
+  in Chenghai District, Shantou City, Guangdong Province — known as "China's Toy City".) The
+  page names "百变魔王" (Baibian Mowang) as one of Xinlexin's own brands, alongside "魔尺" (a
+  twistable "magic ruler"/snake puzzle), "古迪积木" (Gudi building blocks), and spinning-top and
+  yo-yo lines.
+preservation_note: "No archive.org capture of this page was found (CDX returned no captures for
+  this URL); preserved as a verbatim excerpt of the page's own identifying sentence, quoted in
+  its original Chinese per RESEARCH_SPEC §3.7 (translation is a source event; the original is
+  kept alongside the English gloss above)."
+accessed: "2026-09-02"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, an unattributed Chinese-language brand/industry directory site, not a
+  named author or established outlet. Sufficient to establish existence, a legal name, a
+  founding year, and a headquarters location, not sufficient alone to confirm at `confirmed`.
+  Whether Xinlexin's '百变魔王' cube line specifically includes WCA-legal 3x3 speedcubes (as
+  opposed to snake puzzles, building blocks, or other toy categories under the same corporate
+  umbrella) is not established by this source and is left for pass 2."
+status: sourced

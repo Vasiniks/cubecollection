@@ -1,0 +1,73 @@
+# manufacturer: guojia
+# Pass 1 (manufacturer register). A Chinese-language discovery finding — a historically
+# significant early Chinese speedcube brand, invisible to both English-language retailer
+# sweeps this register otherwise relied on. Included per the "enumerate broadly, including
+# brands that may later prove out of scope" instruction: whether GuoJia was still active within
+# this archive's 2016-2026 window is not established this pass, and is exactly the kind of
+# question a `reference_only` or fully-scoped record exists to hold rather than lose.
+
+id: guojia
+entity: manufacturer
+name: "GuoJia"
+native_name: "国甲魔方"
+kind: manufacturer
+country: CN
+founded:
+  value: "2006-05"
+  precision: month
+  qualifier: circa
+  note: "Date is when the brand's first cube version released, per the only source located
+    this pass, not a stated company-registration date."
+aliases:
+  - "Guojia"
+  - "GuoJia Cube"
+  - "国甲魔方"
+  - "Kunming GuoJia Sporting Goods Co., Ltd."
+  - "昆明国甲体育用品有限公司"
+notes: |-
+  **Identity and historical significance.** An industry brand-directory profile: "国甲魔方于
+  2006年5月推出第一版" (GuoJia Rubik's Cube released its first version in May 2006), describing
+  it as "国内最早专门针对魔方速度玩家推出的三阶魔方" (the earliest domestic 3x3 cube released
+  specifically for speedcubing players), attributed to "昆明国甲体育用品有限公司" (Kunming
+  GuoJia Sporting Goods Co., Ltd.) (baiqiang-guojia-mofang-profile) — tier 4, the only source
+  located this pass, found via Chinese-language search. The same source frames the brand's
+  original market position as filling a gap left by expensive, hard-to-obtain genuine Rubik's
+  cubes domestically, and states the brand grew to 19 models across multiple series (including
+  "甲二" and "甲五") described as reaching "professional-grade" status alongside other domestic
+  cube brands of the period.
+
+  **Not the same entity as "国冠" (GuoGuan).** MoYu's own site lists "国冠" (GuoGuan) among
+  brands named alongside its own product range (see data/manufacturers/moyu.yml notes,
+  moyucube-official-home-2022). "国甲" (Guojia, this record) and "国冠" (GuoGuan) share the
+  first character "国" (guo, "national") but differ in the second ("甲", jiǎ, "first/armor" vs.
+  "冠", guān, "crown") and in company name — no source located this pass connects them, and this
+  note exists specifically to prevent a future researcher from merging two similarly-spelled
+  but distinct brand names, the same caution already applied elsewhere in this register to
+  "MoYou"/"MoYu" and "QJ"/"QiYi".
+
+  **Activity within the 2016-2026 window is unknown.** No source located this pass states
+  whether GuoJia was still producing cubes by 2016, or had ceased before the archive's window
+  opens. `ceased` is left unset/`unknown` rather than assumed either way; this is precisely the
+  kind of historically significant but currently unverified brand the register is meant to
+  hold, per the "include broadly" instruction, rather than silently drop.
+status: drafted
+
+attestations:
+  /kind:
+    confidence: uncertain
+    sources: [baiqiang-guojia-mofang-profile]
+    note: "Single tier 4 source. No independent corroboration located this pass, though the
+      claim (a named Chinese company producing a documented 19-model cube range) is
+      internally detailed and specific rather than a bare brand-list mention."
+  /country:
+    confidence: uncertain
+    sources: [baiqiang-guojia-mofang-profile]
+  /founded:
+    confidence: uncertain
+    sources: [baiqiang-guojia-mofang-profile]
+  /aliases:
+    confidence: uncertain
+    sources: [baiqiang-guojia-mofang-profile]
+  /notes:
+    confidence: uncertain
+    sources: [baiqiang-guojia-mofang-profile]

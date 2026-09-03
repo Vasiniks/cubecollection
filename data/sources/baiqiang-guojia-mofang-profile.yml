@@ -1,0 +1,38 @@
+# source: baiqiang-guojia-mofang-profile
+# An industry brand-directory profile of GuoJia (国甲魔方), a historically significant early
+# Chinese speedcube brand. Tier 4, unattributed directory/wiki-style content — corroboration
+# only, but the only source located this pass for this company.
+id: baiqiang-guojia-mofang-profile
+entity: source
+kind: wiki
+title: "国甲魔方品牌介绍_国甲魔方是哪个公司品牌？"
+publisher: "Baiqiang (百强网)"
+url: "https://www.baiqiang.cn/jianjie/guojiamofang.html"
+preservation_method: excerpt
+excerpt: |-
+  "国甲魔方于2006年5月推出第一版" (GuoJia Rubik's Cube released its first version in May 2006),
+  described as "国内最早专门针对魔方速度玩家推出的三阶魔方" (the earliest domestic 3x3 cube
+  released specifically for speedcubing players), attributed to "昆明国甲体育用品有限公司"
+  (Kunming GuoJia Sporting Goods Co., Ltd.). Historical framing: "Rubik's魔方的价格高昂，在国内
+  不容易购买" (Rubik's-brand cubes were expensive and not easily purchasable domestically [at
+  the time]) as the market gap GuoJia filled. States the brand developed 19 models across
+  multiple series, including "甲二" and "甲五", becoming a professional-grade competitor
+  alongside other domestic cube brands of the period.
+preservation_note: "No archive.org capture of this page was found (CDX returned a server error
+  on this pass's query, not a confirmed absence — see the 'transient error is not evidence of
+  absence' rule; not retried further given time available). Preserved as a verbatim excerpt of
+  the page's own identifying sentences, quoted in its original Chinese per RESEARCH_SPEC §3.7."
+accessed: "2026-09-02"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, an unattributed Chinese-language brand/industry directory site.
+  Sufficient to establish existence, an approximate founding/product-launch date (2006), a
+  legal entity name, and a headquarters city (Kunming, Yunnan), not sufficient alone for
+  `confirmed`. Historically significant if the '2006, earliest domestic speedcuber-focused 3x3'
+  claim holds up under better sourcing — flagged as a lead worth chasing to a tier 1-3 source,
+  not adopted as settled fact from this tier 4 source alone. Whether GuoJia was still active
+  within this archive's 2016-2026 window, or is purely a pre-2016 predecessor, is not
+  established by this source; left `unknown` on /ceased."
+status: sourced
