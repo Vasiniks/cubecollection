@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-m-pro-3x3-maglev-product
+# TheCubicle's product page for the QiYi M Pro 3x3 (MagLev) (2025 capture). Tier 2, first-party retailer copy explicitly describing this as a version/configuration alongside the base M Pro, not a separate model.
+id: thecubicle-qiyi-m-pro-3x3-maglev-product
+entity: source
+kind: retailer
+title: "QiYi M Pro 3x3 (MagLev) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-m-pro-3x3-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250126095652/https://www.thecubicle.com/products/qiyi-m-pro-3x3-maglev"
+excerpt: |-
+  Product Description: "The QiYi M Pro 3x3 (MagLev) gives near-flagship performance at a fraction of the price! It has a medium/strong magnetic feel, a maglev tension system, compression adjustment, and traditional screw tension settings." Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 143g; Dimensions 55.0mm; Magnets Magnetic; Item Weight 80.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. Same 55.0mm size as the base M Pro; combined with the Speedsolving wiki's explicit framing of Standard/Maglev/Maglev-with-Ballcore as "multiple versions" of one product, this is treated as a variant of the base qiyi-m-pro-standard model (a MagLev core-system configuration chosen at assembly, DATA_MODEL section 4.2 worked decision A), not a separate model, and is not modelled separately in this pass.
+status: sourced

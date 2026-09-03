@@ -1,0 +1,37 @@
+# model: qiyi-valk-3-mini
+# Pass 3 (model enumeration). A distinctly-molded smaller-size sibling of the base Valk 3 — a
+# genuinely different design under DATA_MODEL section 4.2 given the size difference alone. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-valk-3-mini
+entity: model
+family_id: qiyi-valk
+manufacturer_id: qiyi
+name: "Valk 3 Mini"
+scope_class: core
+generation:
+  label: "Valk 3 Mini"
+  basis: manufacturer_declared
+specs:
+  size_mm: 47.4
+description: |-
+  Per TheCubicle's product page (thecubicle-valk-3-mini-product): "The Valk 3 Mini is the
+  miniature version of the highly-acclaimed Valk 3... At just 47.4mm across, the Valk 3 Mini
+  feels a little bit smaller than a typical 2x2, but due to high-precision molding, it retains
+  the classic feel of the original Valk 3." At 47.4mm (vs the base's 55.5mm), this is a distinct
+  mould from the base Valk 3 by necessity — a size difference of this magnitude cannot be
+  produced from the same tooling by choosing different parts at assembly, so it is model-level
+  under DATA_MODEL section 4.2 even though the retailer's own copy frames it as "the miniature
+  version of" the base cube. No `succeeds` relationship is asserted (a size sibling, not a
+  replacement); the base Valk 3's own `announced` date (August 2016) is sourced from this same
+  product page's description of its parent.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-valk-3-mini-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-valk-3-mini-product]
+  /description:
+    confidence: probable
+    sources: [thecubicle-valk-3-mini-product]

@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-m-pro-3x3-product
+# TheCubicle's product page for the base QiYi M Pro 3x3 (2024 capture). Tier 2, first-party retailer copy and spec table.
+id: thecubicle-qiyi-m-pro-3x3-product
+entity: source
+kind: retailer
+title: "QiYi M Pro 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-m-pro-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241229054704/https://www.thecubicle.com/products/qiyi-m-pro-3x3"
+excerpt: |-
+  Product Description: "The QiYi M Pro 3x3 is a budget-friendly, magnetic puzzle from QiYi. It features a hand-adjustable compression system, making it perfect for cubers on the go! If you're looking for a unique feel and great performance, all at a low price, this is the 3x3 for you." Product Specifications: Manufacturer QiYi; Type 3x3; Gross Weight 140g; Dimensions 55.0mm; Magnets Magnetic; Item Weight 76.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table for the base M Pro generation, corroborating the Speedsolving wiki's "released mid 2023" dating and "budget magnetic 3x3" positioning at a stronger tier. `size_mm: 55.0` is taken from this table. "hand-adjustable compression system" is descriptive marketing language, not detailed enough to select a specific `adjustment_system` vocabulary value with confidence.
+status: sourced

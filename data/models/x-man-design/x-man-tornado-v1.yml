@@ -1,0 +1,53 @@
+# model: x-man-tornado-v1
+# Pass 3 (model enumeration). X-Man Design's very first product, per TheCubicle's own retailer
+# copy. manufacturer_id is x-man-design, NOT qiyi — X-Man Design is a separate, frozen
+# manufacturer entity (a QiYi sub-brand). See research/qc/pass3-agent-b-qiyi.md.
+id: x-man-tornado-v1
+entity: model
+family_id: x-man-tornado
+manufacturer_id: x-man-design
+name: "X-Man Tornado"
+scope_class: core
+generation:
+  label: "Tornado"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2018"
+  precision: year
+  qualifier: before
+specs:
+  size_mm: 56.1
+description: |-
+  Per TheCubicle's product page (thecubicle-x-man-tornado-product, captured 2019 while already
+  discontinued): "The X-Man Tornado is the first cube from X-Man Designs, a new and exciting
+  brand by QiYi (MoFangGe) featuring the designs of an individual by the name of X-Man. It
+  borrows and improves upon various elements in QiYi MoFangGe 3x3 cubes." "the first cube from
+  X-Man Designs" is direct, explicit tier-2 evidence this is the family's earliest (V1) design
+  generation; non-magnetic, `size_mm: 56.1` per that page's spec table.
+
+  Note: this same page's "an individual by the name of X-Man" framing is the characterisation
+  later corrected by QiYi's own genuine corporate history (qiyitoys-company-history), which
+  states X-Man Design was founded internally by QiYi's own chief designer, Zhang Xiaojing — not
+  relied on here for anything beyond this product's own existence, description, and size.
+status: drafted
+attestations:
+  /announced:
+    confidence: uncertain
+    sources: [thecubicle-x-man-tornado-product]
+    note: "The retailer capture used here is from 2019, by which point the product was already
+      discontinued; the family's own `introduced: circa 2018` date is used as a floor
+      ('qualifier: before') rather than treating either capture date as a launch date, per
+      standing policy on catalogue timestamps."
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-x-man-tornado-product]
+    note: "'the first cube from X-Man Designs' is explicit tier-2 evidence of this being the
+      earliest design; no manufacturer ordinal ('V1') is used for this product itself — 'V2',
+      'V3', 'V4' are all explicitly numbered by contrast."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-product]
+  /description:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-product]

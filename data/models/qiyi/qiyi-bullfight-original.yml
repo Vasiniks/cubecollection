@@ -1,0 +1,57 @@
+# model: qiyi-bullfight-original
+# Pass 3 (model enumeration). The sole design generation found for the single-generation
+# qiyi-bullfight family. No source located this pass gives it a second generation or a version
+# suffix, so it is recorded as this family's only model rather than "V1" of a longer series.
+# Existence rests on a single tier-3(-overridden) source (speedsolving-wiki-qiyi-products); no
+# retailer page was found this pass (the product is absent from every 2024-2025 QiYi retailer
+# capture examined, consistent with a long-discontinued 2015 product). See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-bullfight-original
+entity: model
+family_id: qiyi-bullfight
+manufacturer_id: qiyi
+name: "QiYi Bullfight"
+aliases:
+  - "DouNiu"
+  - "QiYi DouNiu"
+scope_class: core
+generation:
+  label: "Bullfight"
+  ordinal: 1
+  basis: community_convention
+announced:
+  value: "2015"
+  precision: year
+  qualifier: circa
+description: |-
+  QiYi's earliest documented 3x3 product name, per the Speedsolving wiki's own product-history
+  section (speedsolving-wiki-qiyi-products): "Released Early 2015." No mechanism detail, size,
+  or weight was found this pass from any tier 1-2 source, so `specs` is left entirely unset
+  rather than populated from the wiki (which RESEARCH_SPEC's S6 admission policy does not permit
+  for a specification claim). Treated as this family's only model: no successor within the
+  "Bullfight"/"DouNiu" name was found, and the family record itself already documents
+  "Thunderclap" as a differently-named successor product rather than a later Bullfight
+  generation (see qiyi-thunderclap-v1's own `succeeds` relationship to this model).
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source ('Released Early 2015'), no tier 1-2 corroboration
+      of any date found this pass. No retailer capture of this product (under 'Bullfight',
+      'DouNiu', or any romanisation) was located at TheCubicle or elsewhere, consistent with a
+      product that lapsed before this archive's retailer-capture evidence window begins in
+      earnest, but this is an absence of evidence, not evidence of an earlier absence, and is
+      not treated as corroborating the date itself."
+  /generation/basis:
+    confidence: uncertain
+    note: "No manufacturer generation-ordinal statement was found; 'ordinal: 1' is this
+      archive's own placement of it as the family's (and, per Thunderclap V1's own product
+      copy, this manufacturer's overall named-3x3-line's) earliest identified design, not a
+      manufacturer-declared number."
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]

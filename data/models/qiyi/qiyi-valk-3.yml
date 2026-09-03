@@ -1,0 +1,90 @@
+# model: qiyi-valk-3
+# Pass 3 (model enumeration). MAJOR FINDING, recorded for human review: "Valk2 M", "Valk 4 M",
+# and "Valk 5 M" — which the qiyi-valk FAMILY record's own description lists as if they were
+# sequential 3x3 generations ("Valk2 M, Valk 3..., Valk 4 M..., and Valk 5 M") — are in fact a
+# 2x2, a 4x4, and a 5x5 respectively, per their own TheCubicle product pages. "Valk" appears to
+# be a cross-category QiYi brand where the numeral denotes cube SIZE (2x2/3x3/4x4/5x5), not a
+# sequence of 3x3 design generations. "Valk 3" is therefore, on the evidence found this pass,
+# the ONLY 3x3 generation in the Valk line; "Power", "Elite", and "Mini" are sibling 3x3 designs
+# within that one generation, not further numbered generations. See
+# research/qc/pass3-agent-b-qiyi.md for the full finding and its implications for the family
+# record (not edited here — families are frozen for this pass).
+id: qiyi-valk-3
+entity: model
+family_id: qiyi-valk
+manufacturer_id: qiyi
+name: "Valk 3"
+aliases:
+  - "QiYi Valk 3"
+scope_class: core
+generation:
+  label: "Valk 3"
+  ordinal: 1
+  basis: manufacturer_declared
+announced:
+  value: "2016-08"
+  precision: month
+  qualifier: exact
+specs:
+  size_mm: 55.5
+description: |-
+  The base (stickered, non-magnetic) Valk 3 configuration. Per TheCubicle's product page
+  (thecubicle-valk-3-mini-product, describing the Mini's parent): "the highly-acclaimed Valk 3,
+  which was first released to the market in August 2016" — an explicit dated release statement,
+  not a catalogue "Added" artifact. TheCubicle's own base product page
+  (thecubicle-valk-3-product) independently describes it: "Personally endorsed and used by
+  renowned speedcuber Mats Valk himself, the Valk 3 has been touted as the premier speedcube
+  from popular cube manufacturer QiYi/MoFangGe... high-quality vinyl stickers... QiYi
+  Half-Bright Color scheme." `size_mm: 55.5` is taken from that page's spec table.
+
+  **MAJOR FINDING — the Valk family's own "five numbered generations" framing does not survive
+  direct product-page evidence.** The qiyi-valk family record (frozen, not edited here) states
+  the line spans "Valk2 M, Valk 3..., Valk 4 M..., and Valk 5 M" as though these were sequential
+  3x3 design generations. Direct retailer evidence gathered this pass shows otherwise:
+  - Valk2 M is a **2x2**: thecubicle-valk2-m-product's own copy calls it "this 2x2" directly and
+    contrasts its magnet layout with "that of a 3x3."
+  - Valk 4 M (Standard/Strong) is a **4x4**: thecubicle-valk-4-m-standard-product /
+    thecubicle-valk-4-m-strong-product both give "Type: 4x4" and call it "the first 4x4 in the
+    iconic Valk line."
+  - Valk 5 M is a **5x5**: thecubicle-valk-5-m-product gives "Type: 5x5" and calls it "a fast,
+    smooth 5x5."
+  All three are genuinely out of this archive's scope (RESEARCH_SPEC 2.4: "Puzzles other than
+  3x3x3"), and no model is created for any of them. What this means for the family: "Valk" reads,
+  on this evidence, as a cross-category QiYi brand in which the number denotes the PUZZLE'S OWN
+  SIZE CLASS (2x2, 3x3, 4x4, 5x5), not a sequence of 3x3 design generations as the family's own
+  prose currently implies. On the evidence located this pass, **"Valk 3" is the only 3x3
+  generation the Valk brand has ever carried** — there is no evidence of a "Valk 1", "Valk 6", or
+  any other numbered 3x3 generation. "Power", "Elite", and "Mini" (see qiyi-valk-3-power,
+  qiyi-valk-3-elite, qiyi-valk-3-mini) are recorded as sibling 3x3 designs within this one
+  generation, not further numbered generations, since none of them carries any number beyond
+  "3" itself. This is flagged as a finding for the human reviewer of the frozen family record,
+  not corrected in that record by this agent.
+
+  Valk 3 M (a factory-magnetized configuration, per thecubicle-valk-3-m-product: "a factory
+  magnetized version of one of the most revered 3x3s") is treated as a variant of this model,
+  not modelled separately (DATA_MODEL section 4.2 worked decision A).
+status: drafted
+attestations:
+  /announced:
+    confidence: probable
+    sources: [thecubicle-valk-3-mini-product]
+    note: "'which was first released to the market in August 2016' is an explicit dated release
+      statement from a tier-2 retailer page, not a catalogue 'Added' artifact. Single-source;
+      `probable` per the confidence table ('one Tier 2 source, uncontradicted')."
+  /generation/basis:
+    confidence: reported
+    note: "'Valk 3' is the manufacturer's own product/brand numeral; see the description's
+      major-finding note on why this is treated as the line's only 3x3 generation rather than
+      one of several."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-valk-3-product]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-valk-3-product]
+  /description:
+    confidence: probable
+    sources: [thecubicle-valk-3-product, thecubicle-valk-3-mini-product, thecubicle-valk-3-m-product,
+      thecubicle-valk2-m-product, thecubicle-valk-4-m-standard-product,
+      thecubicle-valk-4-m-strong-product, thecubicle-valk-5-m-product,
+      speedsolving-wiki-qiyi-products]

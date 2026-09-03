@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-sail-3x3-product
+# TheCubicle's product page for the original QiYi Sail 3x3 (2020 capture). Tier 2, first-party retailer copy.
+id: thecubicle-qiyi-sail-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Sail 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-sail-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922083546/https://www.thecubicle.com/products/qiyi-sail-3x3"
+excerpt: |-
+  Product Description: "The QiYi Sail 3x3 is a new, lightweight speedcube with a very low price point. It feels stable yet smooth right out of the box. Great as an inexpensive first speedcube for beginners!" Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 95g; Dimensions 56.5mm. No Item Weight row at this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table, corroborating the Speedsolving wiki's dating and budget positioning of the original Sail. `size_mm: 56.5` is taken from this table.
+status: sourced

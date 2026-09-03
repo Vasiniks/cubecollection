@@ -1,0 +1,46 @@
+# model: qiyi-valk-3-power
+# Pass 3 (model enumeration). A sibling 3x3 design within the "Valk 3" generation, distinguished
+# from the base Valk 3 by a described internal-construction difference (not merely a
+# configuration choice). No `succeeds` relationship is asserted: a 2018 QiYi storefront capture
+# already lists both "Valk 3" and "Valk3 Power" concurrently, so this reads as a parallel tier,
+# not a later replacement. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-valk-3-power
+entity: model
+family_id: qiyi-valk
+manufacturer_id: qiyi
+name: "Valk 3 Power"
+scope_class: core
+generation:
+  label: "Valk 3 Power"
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.5
+description: |-
+  Per TheCubicle's product page (thecubicle-valk-3-power-product): "The Valk 3 Power is the
+  newest 3x3 under the iconic Valk line by QiYi MoFangGe. The Valk Power features a dual
+  vertical core, capped pieces, pure primary internals, and a very smooth and soft feel." This
+  names a specific internal-construction difference ("dual vertical core", "capped pieces") from
+  the base Valk 3's description, the basis for treating it as its own model under DATA_MODEL
+  section 4.2 rather than a configuration of the base Valk 3.
+
+  **No succession asserted.** A 2018 QiYi storefront capture (qiyicube-storefront-2018) already
+  lists "Valk3 Power (Black/M Black/M Stickerless)" alongside the base "Valk 3" as concurrent
+  catalogue items, so Power reads as a parallel tier sold from early in the line's life, not a
+  later replacement — "the newest 3x3 under the iconic Valk line" is retailer marketing framing
+  (tier 4 under RESEARCH_SPEC 3.3), not relied on for release-order.
+
+  Valk 3 Power M (per thecubicle-valk-3-power-m-product: "This version has been pre-magnetized
+  by the factory") is treated as a variant of this model, not modelled separately (DATA_MODEL
+  section 4.2 worked decision A).
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-valk-3-power-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-valk-3-power-product]
+  /description:
+    confidence: probable
+    sources: [thecubicle-valk-3-power-product, thecubicle-valk-3-power-m-product,
+      qiyicube-storefront-2018]

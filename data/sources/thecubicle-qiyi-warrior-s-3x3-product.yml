@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-warrior-s-3x3-product
+# TheCubicle's product page for the QiYi Warrior S 3x3 (2025 capture). Tier 2, first-party retailer copy explicitly describing a mechanism upgrade over Warrior W.
+id: thecubicle-qiyi-warrior-s-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Warrior S 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-warrior-s-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250430002307/https://www.thecubicle.com/products/qiyi-warrior-s-3x3"
+excerpt: |-
+  Product Description: "The QiYI Warrior S is a new budget friendly 3x3 speed cube from QiYi MoFangGe. An updated version of the Warrior W, the Warrior S features an upgraded mechanism for better performance." Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 85g; Dimensions 55.5mm; Item Weight 77.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "An updated version of the Warrior W, the Warrior S features an upgraded mechanism for better performance" is direct retailer evidence of both succession and a genuine mechanism change (not merely a configuration difference), the basis for treating Warrior S as its own model. `size_mm: 55.5` is taken from this table, distinct from Warrior W's 56.0mm.
+status: sourced

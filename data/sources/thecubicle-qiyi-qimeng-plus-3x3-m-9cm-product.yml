@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product
+# TheCubicle's product page for the QiYi QiMeng Plus 3x3 M (9cm) (2025 capture). Tier 2, first-party retailer copy establishing this as an oversized novelty configuration.
+id: thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product
+entity: source
+kind: retailer
+title: "QiYi QiMeng Plus 3x3 M (9cm) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-qimeng-plus-3x3-m-9cm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250219093257/https://www.thecubicle.com/products/qiyi-qimeng-plus-3x3-m-9cm"
+excerpt: |-
+  Product Description: "The QiYi QiMeng Plus 3x3 M (9cm) is a big 3x3, but with magnets. If you have large hands and want to try speedsolving a large 3x3, this is the puzzle you're looking for. Looks great on a desk and the turning is fantastic!" Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 293g; Dimensions 90.0mm; Magnets Magnetic; Item Weight 262.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. At 90.0mm (roughly 1.6x standard speedcube size), this is treated as scope_class: reference_only on the same oversized-novelty basis as thecubicle-qiyi-warrior-plus-3x3-product; no documented competitive or historical significance was found for this specific product this pass.
+status: sourced

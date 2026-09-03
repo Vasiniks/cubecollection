@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-thunderclap-v2-product
+# TheCubicle's product page for the QiYi Thunderclap V2 (2019 capture, discontinued). Tier 2, first-party retailer copy explicitly naming it 'successor' to the original Thunderclap.
+id: thecubicle-qiyi-thunderclap-v2-product
+entity: source
+kind: retailer
+title: "QiYi Thunderclap V2 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-thunderclap-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824071023/https://www.thecubicle.com/products/qiyi-thunderclap-v2"
+excerpt: |-
+  Page banner: "This product has been discontinued indefinitely or we aren't sure when it will be back in stock." Product Description: "The QiYi Thunderclap V2 is now available! As the hotly-anticipated successor to the original QiYi Thunderclap, the Thunderclap V2 is expected to meet or surpass expectations for a cube in the low-mid price range. The cube will also come with a clear plastic box in place of the cube bag that came with the original Thunderclap." Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 141g; Dimensions 56.0mm; Item Weight 88.5g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "the hotly-anticipated successor to the original QiYi Thunderclap" is direct, explicit retailer-stated succession language (stronger than a bare version-number inference). `size_mm: 56.0` is taken from this table, distinct from the original Thunderclap's 56.5mm.
+status: sourced

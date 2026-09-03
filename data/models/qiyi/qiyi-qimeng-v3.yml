@@ -1,0 +1,46 @@
+# model: qiyi-qimeng-v3
+# Pass 3 (model enumeration). The only standard-size QiMeng generation found this pass; sourced
+# entirely from TheCubicle's own retailer page since the Speedsolving wiki does not list this
+# line at all (per the family record's own notes). See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-qimeng-v3
+entity: model
+family_id: qiyi-qimeng
+manufacturer_id: qiyi
+name: "QiYi QiMeng V3"
+aliases:
+  - "QiYi QiMeng V3 (Tiled)"
+scope_class: core
+generation:
+  label: "QiMeng V3"
+  ordinal: 3
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.5
+description: |-
+  Per TheCubicle's product page (thecubicle-qiyi-qimeng-v3-3x3-tiled-product): "The QiYi QiMeng
+  V3 3x3 (Tiled) is a non-magnetic 3x3 that has great turning. If you're not a fan of magnets
+  and want a more classic look, this is the puzzle for you!" This is the sole tier 1-2 source
+  located this pass for this model; the Speedsolving wiki does not cover the QiMeng line at all
+  (last edited 24 October 2024, per qiyi-qimeng.yml's own notes), so there is no independent
+  corroboration and existence/identity is recorded at `probable` rather than `confirmed`.
+
+  A "V1"/"V2" predecessor is implied by the "V3" numbering but was not located this pass, and
+  is not recorded here; a "Tiled Bumpy" texture sibling
+  (thecubicle-qiyi-mofangge-collection-2025: "qiyi-qimeng-v3-3x3-tiled-bumpy") is treated as a
+  surface-texture variant of this same model, not a separate design, and is left for pass 4.
+  No dated release statement was found this pass (only the retailer's non-evidentiary "Added:
+  2024-01-03" catalogue field); `announced`/`released` are left unset rather than guessed.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product]
+  /description:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product, thecubicle-qiyi-mofangge-collection-2025]

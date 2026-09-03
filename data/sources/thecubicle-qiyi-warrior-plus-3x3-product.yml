@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-warrior-plus-3x3-product
+# TheCubicle's product page for the QiYi Warrior Plus 3x3 (18.8cm) (2025 capture). Tier 2, first-party retailer copy establishing this as a grossly oversized novelty product, not a WCA-legal speedcube.
+id: thecubicle-qiyi-warrior-plus-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Warrior Plus 3x3 (18.8cm) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-warrior-plus-3x3-18-8cm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250504230529/https://www.thecubicle.com/products/qiyi-warrior-plus-3x3-18-8cm"
+excerpt: |-
+  Product Description: "The QiYi Warrior Plus 3x3 (18.8cm) is a massive 3x3 that has fantastic turning for its size! Get it, solve it, use it as furniture; however you want to use this puzzle, it is sure to bring a good time!" Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 1200g; Dimensions 188.0mm; Item Weight 981.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. The retailer's own copy ("use it as furniture") and the 188.0mm dimension (well over 3x the standard ~56mm speedcube size) are the basis for treating this as scope_class: reference_only rather than core: it is a real, identifiable product but no source found this pass documents historical or competitive significance clearing the RESEARCH_SPEC section 2.2 bar for `conditional` admission.
+status: sourced

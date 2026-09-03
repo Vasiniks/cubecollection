@@ -1,0 +1,37 @@
+# model: qiyi-warrior-plus
+# Pass 3 (model enumeration). A grossly oversized (188mm) novelty configuration of the Warrior
+# line. scope_class: reference_only — real and identifiable, but no documented historical or
+# collector significance was found this pass to clear the RESEARCH_SPEC 2.2 bar for
+# `conditional` admission. Identity and aliases only, per the "real product, no significance"
+# treatment RESEARCH_SPEC prescribes rather than inventing a justification. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-warrior-plus
+entity: model
+family_id: qiyi-warrior
+manufacturer_id: qiyi
+name: "QiYi Warrior Plus"
+scope_class: reference_only
+generation:
+  label: "Warrior Plus"
+  basis: manufacturer_declared
+description: |-
+  Per TheCubicle's product page (thecubicle-qiyi-warrior-plus-3x3-product): "The QiYi Warrior
+  Plus 3x3 (18.8cm) is a massive 3x3 that has fantastic turning for its size! Get it, solve it,
+  use it as furniture..." At 188.0mm — roughly 3.3x a standard ~56mm speedcube — this is a
+  distinct mould from any standard-size Warrior model (a genuinely different design under
+  DATA_MODEL section 4.2, since the sheer size makes it un-producible from the same tooling),
+  but the retailer's own "use it as furniture" framing is novelty marketing, not a documented
+  historical or competitive claim, so it does not clear the RESEARCH_SPEC 2.2 bar for
+  `scope_class: conditional`. Recorded as `reference_only` per DATA_MODEL section 1.4: real,
+  identifiable, but not exhibited. TheCubicle's own 2024-2025 collection capture
+  (thecubicle-qiyi-mofangge-collection-2025) also lists a magnetic sibling
+  ("qiyi-warrior-plus-3x3-m-18-8cm"), not modelled separately here (a magnet-configuration
+  difference at the same size would be variant-level per DATA_MODEL section 4.1 in any case).
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: reported
+    sources: [thecubicle-qiyi-warrior-plus-3x3-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-qiyi-warrior-plus-3x3-product, thecubicle-qiyi-mofangge-collection-2025]

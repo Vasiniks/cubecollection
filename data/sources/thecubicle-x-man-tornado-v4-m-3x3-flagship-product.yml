@@ -1,0 +1,20 @@
+# source: thecubicle-x-man-tornado-v4-m-3x3-flagship-product
+# TheCubicle's product page for the X-Man Tornado V4 M 3x3 (Flagship) (2024 capture). Tier 2, first-party retailer copy explicitly naming succession and a new core system.
+id: thecubicle-x-man-tornado-v4-m-3x3-flagship-product
+entity: source
+kind: retailer
+title: "X-Man Tornado V4 M 3x3 (Flagship) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/x-man-tornado-v4-m-3x3-flagship"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241110170717/https://www.thecubicle.com/products/x-man-tornado-v4-m-3x3-flagship"
+excerpt: |-
+  Product Description: "This is the X-Man Tornado V4 M 3x3 (Flagship). This puzzle is a successor to the Tornado V3 which has set many world records over the last few years. This one has a ball-core, and an updated adjustment system that allows you to adjust the magnet strength in an entire corner with just a single twist! This version has a matte finish and a spring tensioning system." Product Specifications: Manufacturer X-Man Designs; Type 3x3; Gross Weight 263g; Magnets Magnetic. No Dimensions row at this capture.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "a successor to the Tornado V3" is explicit succession language, and "This one has a ball-core" names a specific core-system change from V3 (which the V3 page above does not describe as ball-core), the basis for model-level (not configuration-level) treatment. No Dimensions row appears at this capture, so `specs.size_mm` for this model instead relies on thecubicle-x-man-tornado-v4-ai-3x3-uv-product's "Standard 55.5mm size" statement for the same V4 platform (see that source's own reliability note).
+status: sourced

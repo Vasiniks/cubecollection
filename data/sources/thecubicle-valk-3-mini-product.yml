@@ -1,0 +1,20 @@
+# source: thecubicle-valk-3-mini-product
+# TheCubicle's product page for the Valk 3 Mini (4.74cm) (2019 capture). Tier 2, first-party retailer copy giving an explicit dated release statement for the base Valk 3 and establishing the Mini as a distinctly-molded smaller size.
+id: thecubicle-valk-3-mini-product
+entity: source
+kind: retailer
+title: "Valk 3 Mini - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-3-mini-4-74cm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191215185001/https://www.thecubicle.com/products/valk-3-mini-4-74cm"
+excerpt: |-
+  Product Description: "The Valk 3 Mini is the miniature version of the highly-acclaimed Valk 3, which was first released to the market in August 2016. At just 47.4mm across, the Valk 3 Mini feels a little bit smaller than a typical 2x2, but due to high-precision molding, it retains the classic feel of the original Valk 3." Product Specifications: Manufacturer Valk; Type 3x3; Gross Weight 191g; Dimensions 47.4mm; Item Weight 59.9g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "which was first released to the market in August 2016" is an explicit dated release statement for the BASE Valk 3 (not merely a catalogue "Added" artifact), used as the basis for qiyi-valk-3's own `announced`/`released` date. "due to high-precision molding" at 47.4mm (vs the base's 55.5mm) is the basis for treating the Mini as its own model — a size difference of this magnitude requires distinct tooling, not a same-mold configuration choice.
+status: sourced

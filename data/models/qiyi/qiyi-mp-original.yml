@@ -1,0 +1,48 @@
+# model: qiyi-mp-original
+# Pass 3 (model enumeration). The sole product found under the single-generation qiyi-mp
+# family. No TheCubicle (or other retailer) product page was located this pass under any
+# "qiyi-mp" slug; existence rests on the Speedsolving wiki alone. Deliberately NOT related to
+# the separate qiyi-m-pro family or its models — see that family's own notes and
+# research/qc/pass3-agent-b-qiyi.md for the naming-collision discussion.
+id: qiyi-mp-original
+entity: model
+family_id: qiyi-mp
+manufacturer_id: qiyi
+name: "QiYi MP"
+scope_class: core
+generation:
+  label: "MP"
+  ordinal: 1
+  basis: manufacturer_declared
+announced:
+  value: "2021-10"
+  precision: month
+  qualifier: circa
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi MP 3x3 Released October
+  2021. The newest flagship 3x3 from QiYi that bears a striking resemblance to the X-Man Tornado
+  V2 but measures 56mm over the Tornados V2's 54.5mm [thecubicle-x-man-tornado-v2-3x3-product
+  gives 55.0mm for Tornado V2's own spec table, not 54.5mm — the wiki's comparison figure for
+  Tornado V2 is not independently corroborated]. It has an adjustment system similar to the
+  Tornado V2's but without elasticity and magnetic adjustments. It is considered a budget
+  version of the Tornado v2." No retailer product page was located this pass under any
+  "qiyi-mp" URL pattern at TheCubicle (checked: qiyi-mp, qiyi-mp-3x3, qiyi-mp-3x3-magnetic), nor
+  is it present in TheCubicle's 2024-2025 "qiyi-mofangge" collection capture
+  (thecubicle-qiyi-mofangge-collection-2025) — consistent with, though not proof of,
+  discontinuation, as the family record already notes. Existence and all detail therefore rest
+  on the wiki alone (tier 3, overridden per E1), at `reported` confidence; `specs.size_mm` is
+  left unset rather than populated from the wiki's own uncorroborated 56mm figure, which
+  RESEARCH_SPEC's S6 policy does not permit for a specification claim.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source, no retailer corroboration found this pass despite
+      a direct search."

@@ -1,0 +1,71 @@
+# model: qiyi-thunderclap-v3-m
+# Pass 3 (model enumeration). The current (as of the 2024-2025 retailer captures) generation of
+# the Thunderclap line, with TheCubicle's own copy naming specific internal-mechanism changes
+# rather than only a marketing version bump. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-thunderclap-v3-m
+entity: model
+family_id: qiyi-thunderclap
+manufacturer_id: qiyi
+name: "QiYi Thunderclap V3 M"
+aliases:
+  - "Thunder Clap v3m"
+scope_class: core
+generation:
+  label: "Thunderclap V3 M"
+  ordinal: 3
+  basis: manufacturer_declared
+announced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 56.0
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "Qiyi Thunderclap V3/M Released
+  Late 2019." TheCubicle's own product copy (thecubicle-qiyi-thunderclap-v3-m-product) names
+  specific internal changes directly: "all primary plastic internals, a capped design to avoid
+  seams, an updated anti-pop mechanism, tracks on the pieces to reduce friction, and slots to
+  assure correct magnet positioning" — a genuine tooling/mechanism description, the stronger of
+  the two evidence classes DATA_MODEL section 4.2 distinguishes for a model-identity claim
+  (design/mould/mechanism difference, not merely a manufacturer version number). Still current
+  as a retailer SKU as of the 2024-2025 captures used in pass 2 (thecubicle-qiyi-mofangge-
+  collection-2025).
+  Magnet configuration is described only as "slots to assure correct magnet positioning", not
+  detailed enough to select a specific `magnet_architecture` vocabulary value with confidence;
+  left unset rather than guessed.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('Late 2019'); TheCubicle's capture carries only the 'Added:
+      2019-09-17' artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v3-m-product]
+    note: "Both the manufacturer's own product name/slug and the retailer's copy use 'V3'/'V3 M'
+      directly, and the retailer names specific internal-construction changes, not only a
+      version bump."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v3-m-product]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v3-m-product]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-qiyi-thunderclap-v3-m-product]
+    note: "TheCubicle calls it 'the latest release in the Thunderclap series' but does not name
+      V2 specifically as what it replaces; succession is inferred from the explicit sequential
+      numbering (V1 unnumbered, V2, V3), not a direct textual succession statement, so confidence
+      is held at `reported` rather than `probable`."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-thunderclap-v3-m-product,
+      thecubicle-qiyi-mofangge-collection-2025]
+relationships:
+  - type: succeeds
+    target: qiyi-thunderclap-v2
+    target_entity: model
+    note: "Inferred from sequential manufacturer numbering (V2 then V3), not an explicit
+      'successor to V2' statement; see the /relationships/0 attestation."

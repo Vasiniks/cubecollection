@@ -1,0 +1,20 @@
+# source: thecubicle-valk-3-m-product
+# TheCubicle's product page for the Valk 3 M (2019 capture). Tier 2, first-party retailer copy explicitly describing it as a factory-magnetized version of the base Valk 3, the model/variant boundary's textbook worked-decision-A case.
+id: thecubicle-valk-3-m-product
+entity: source
+kind: retailer
+title: "Valk 3 M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-3-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190512100400/https://www.thecubicle.com/products/valk-3-m"
+excerpt: |-
+  Product Description: "The Valk 3 M is a factory magnetized version of one of the most revered 3x3s of the last 3 years. Originally endorsed and used by renowned speedcuber Mats Valk himself, the Valk 3 was touted as the premier speedcube of its time from popular cube manufacturer QiYi/MoFangGe. This version features a light magnetic feel." Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 227g; Dimensions 55.5mm; Item Weight 85.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "a factory magnetized version of" the base Valk 3 is explicit, direct evidence of DATA_MODEL section 4.2's worked decision A (same shell, magnets chosen at assembly = variant, not model). Cited to support treating Valk 3 M as a variant of qiyi-valk-3, not modelled separately in this pass.
+status: sourced

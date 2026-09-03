@@ -1,0 +1,20 @@
+# source: thecubicle-valk-3-elite-m-product
+# TheCubicle's product page for the Valk 3 Elite M (2019 capture). Tier 2, first-party retailer copy describing a genuinely new magnet and adjustment system, the basis for treating Elite as its own model.
+id: thecubicle-valk-3-elite-m-product
+entity: source
+kind: retailer
+title: "Valk 3 Elite M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-3-elite"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200812034737/https://www.thecubicle.com/products/valk-3-elite"
+excerpt: |-
+  Product Description: "The Valk 3 Elite M is the long-awaited flagship from the famous Valk line by QiYi MoFangGe. Light and fast with a smooth, comfortable feel, the Valk 3 Elite M is favored by many cubers who enjoy fast turning with a uniform, consistent magnetic feel. The Valk Elite M comes with clear nuts (standard strength) and clear magnets in the center caps (standard strength). This cube features a brand new magnetic system with three different levels of strength. The moderate and strong versions feature a \"twin-magnetic\" scheme and use \"center-edge\" plus \"corner-edge\" magnetism for positioning. Additionally, QiYi introduced its own version of an elasticity adjustment system that also conveniently reduces spring noise." Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 272g; Dimensions 55.5mm; Magnets Magnetic; Item Weight 76.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "a brand new magnetic system" combined with "QiYi introduced its own version of an elasticity adjustment system" is direct retailer language naming a new adjustment mechanism (not merely a magnet-strength option chosen at assembly on an existing shell), the basis for treating Elite as its own model under DATA_MODEL section 4.2 rather than a configuration of the base Valk 3 or of Valk 3 Power.
+status: sourced

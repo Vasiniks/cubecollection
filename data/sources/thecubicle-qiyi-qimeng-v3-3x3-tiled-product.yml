@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-qimeng-v3-3x3-tiled-product
+# TheCubicle's product page for the QiYi QiMeng V3 3x3 (Tiled) (2025 capture). Tier 2, first-party retailer naming and spec table, sole source located this pass for this model.
+id: thecubicle-qiyi-qimeng-v3-3x3-tiled-product
+entity: source
+kind: retailer
+title: "QiYi QiMeng V3 3x3 (Tiled) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-qimeng-v3-3x3-tiled"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250317150157/https://www.thecubicle.com/products/qiyi-qimeng-v3-3x3-tiled"
+excerpt: |-
+  Product Description: "The QiYi QiMeng V3 3x3 (Tiled) is a non-magnetic 3x3 that has great turning. If you're not a fan of magnets and want a more classic look, this is the puzzle for you!" Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 90g; Dimensions 55.5mm; Item Weight 82.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table; the only source located this pass for the QiMeng line's "V3" generation number (not present on the Speedsolving wiki, per qiyi-qimeng.yml's own notes). No corroborating second source, so existence/identity is `probable` rather than `confirmed`. `size_mm: 55.5` is taken from this table.
+status: sourced

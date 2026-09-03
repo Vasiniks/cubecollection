@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-thunderclap-v3-m-product
+# TheCubicle's product page for the QiYi Thunderclap V3 M (2025 capture). Tier 2, first-party retailer copy detailing specific internal-mechanism changes.
+id: thecubicle-qiyi-thunderclap-v3-m-product
+entity: source
+kind: retailer
+title: "Thunderclap V3 M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-thunderclap-v3-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250429003206/https://www.thecubicle.com/products/qiyi-thunderclap-v3-m"
+excerpt: |-
+  Product Description: "The Thunderclap V3 M is the latest release in the Thunderclap series by QiYi MoFangGe. This budget friendly magnetic 3x3 speed cube features a host of new upgrades including all primary plastic internals, a capped design to avoid seams, an updated anti-pop mechanism, tracks on the pieces to reduce friction, and slots to assure correct magnet positioning. This puzzle has a classic QiYi feel for a great price!" AKA: "Thunder Clap v3m". Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 149g; Dimensions 56.0mm; Magnets Magnetic; Item Weight 92.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. Unlike the V1-to-V2 transition, this description names specific internal changes directly ("all primary plastic internals, a capped design... an updated anti-pop mechanism, tracks on the pieces... slots to assure correct magnet positioning"), i.e. genuine tooling/mechanism differences rather than only a marketing version number, the stronger of the two evidence classes DATA_MODEL section 4.2 distinguishes. `size_mm: 56.0` matches Thunderclap V2's figure; magnet configuration is not detailed precisely enough here to select a specific `magnet_architecture` vocabulary value.
+status: sourced

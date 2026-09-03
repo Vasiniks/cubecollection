@@ -1,0 +1,20 @@
+# source: thecubicle-valk-3-product
+# TheCubicle's product page for the base Valk 3 (2019 capture). Tier 2, first-party retailer copy and spec table.
+id: thecubicle-valk-3-product
+entity: source
+kind: retailer
+title: "Valk 3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190129194315/https://www.thecubicle.com/products/valk-3"
+excerpt: |-
+  Product Description: "The Valk 3 is one of the most-anticipated cubes of the year. Personally endorsed and used by renowned speedcuber Mats Valk himself, the Valk 3 has been touted as the premier speedcube from popular cube manufacturer QiYi/MoFangGe. The Valk 3 features high-quality vinyl stickers that are just 0.13mm thick in the QiYi Half-Bright Color scheme." Manufacturer: Valk. Type: 3x3. Product Specifications: Gross Weight 191g; Dimensions 55.5mm; Item Weight 82.3g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table for the base (stickered, non-magnetic) Valk 3 configuration. "Added: 2018-09-11" also appears in this table; per this archive's standing policy this catalogue-migration artifact is not used as a release date. `size_mm: 55.5` is taken from this table.
+status: sourced

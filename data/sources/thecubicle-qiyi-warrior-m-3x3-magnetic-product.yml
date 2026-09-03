@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-warrior-m-3x3-magnetic-product
+# TheCubicle's product page for the QiYi Warrior M 3x3 (Magnetic) (2025 capture). Tier 2, first-party retailer copy and spec table.
+id: thecubicle-qiyi-warrior-m-3x3-magnetic-product
+entity: source
+kind: retailer
+title: "QiYi Warrior M 3x3 (Magnetic) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-warrior-m-3x3-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250801151248/https://www.thecubicle.com/products/qiyi-warrior-m-3x3-magnetic"
+excerpt: |-
+  Product Description: "The QiYi Warrior M is a budget-friendly 3x3 cube that brings magnetic stability to beginner and casual solvers. Featuring factory-installed magnets, it offers a satisfying, tactile feel that improves turning accuracy and overall control. With smooth performance out of the box and a durable, stickerless design, the Warrior M is perfect for those looking to experience magnetic cubes without spending too much." Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 70g; Dimensions 56.0mm; Magnets Magnetic; Item Weight 58.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. Unlike thecubicle-valk-3-m-product's explicit "factory magnetized version of" phrasing for a same-shell magnetic variant, this description never states Warrior M is a magnetized Warrior W or S; combined with a substantially lower item weight (58.0g) than either Warrior W (81.7g) or Warrior S (77.0g) at a similar or larger size, this is treated as physical evidence of a distinct model rather than a same-shell magnetic configuration, at reduced confidence given the description alone does not name an internal mechanism difference directly. See qiyi-warrior-m.yml's own attestation for the full reasoning.
+status: sourced

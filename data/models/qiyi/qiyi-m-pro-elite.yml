@@ -1,0 +1,59 @@
+# model: qiyi-m-pro-elite
+# Pass 3 (model enumeration). BOUNDARY CALL, recorded for review. A third M Pro design
+# generation, named "Elite" for its mechanical form and "Smart Cube 3x3" for its electronic
+# sibling, per the wiki's own explicit claim that they share one shell ("the non smart version
+# of the Qiyi Smartcube... the same adjustment system"). This claim rests on a single tier-3
+# (overridden) source with no retailer corroboration naming "Elite" directly. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-m-pro-elite
+entity: model
+family_id: qiyi-m-pro
+manufacturer_id: qiyi
+name: "QiYi M Pro Elite"
+scope_class: core
+generation:
+  label: "M Pro Elite"
+  basis: manufacturer_declared
+announced:
+  value: "2024"
+  precision: year
+  qualifier: circa
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi M Pro Elite Released around
+  mid to late 2024. This cube is the non smart version of the Qiyi Smartcube. It featured the
+  same adjustment system. It also came in a UV version and an Art version." Separately, the same
+  page: "QiYi Smart Cube 3x3 Released early 2024... free 'Smart Player' app... a UV Version and a
+  'Art version.'" TheCubicle's own product page for the Smart Cube
+  (thecubicle-qiyi-smart-cube-3x3-product) independently corroborates the Smart Cube's own
+  existence, features, and "Art Version"/stickerless naming in rich detail, but never uses the
+  name "Elite" or states a shared design with it — that specific cross-reference rests on the
+  wiki alone.
+
+  **Model/variant boundary call, recorded for review.** Per DATA_MODEL section 4.1, smart vs.
+  mechanical capability is explicitly listed as a variant-level (not model-level) difference,
+  and the qiyi-m-pro family's own pass-2 record already established the precedent of treating
+  QiYi's Smart Cube as a same-design sibling rather than a separate family (unlike GAN's
+  persisting, separately-named smart collections). Consistent with both, "M Pro Elite" and
+  "Smart Cube 3x3" are treated here as ONE model (named for its mechanical/"Elite" branding,
+  since that is the archive's naming convention of using the manufacturer's own naming where
+  determinable), with "Smart Cube 3x3" left as a sibling variant name for pass 4 rather than
+  folded into `aliases` (they are genuinely different sold product names, not alternate wording
+  for the identical item — see DATA_MODEL section 4.5). No "Elite" retailer page was located at
+  TheCubicle under any tried slug this pass, so existence of "Elite" specifically, and the
+  claim that it shares Smart Cube's shell, both rest on the wiki alone at `reported`
+  confidence — flagged for a human reviewer, since this is a closer call than most of this
+  pass's model/variant boundary decisions.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-smart-cube-3x3-product]
+    note: "The shared-design claim linking 'Elite' and 'Smart Cube' rests on the wiki alone (a
+      single tier-3-overridden source); TheCubicle's Smart Cube page corroborates the Smart
+      Cube's own existence and description only, not the cross-reference to 'Elite'."

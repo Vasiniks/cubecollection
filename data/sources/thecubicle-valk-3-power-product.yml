@@ -1,0 +1,20 @@
+# source: thecubicle-valk-3-power-product
+# TheCubicle's product page for the Valk 3 Power (2020 capture). Tier 2, first-party retailer copy describing a distinct internal core/piece design, the basis for treating Power as its own model.
+id: thecubicle-valk-3-power-product
+entity: source
+kind: retailer
+title: "Valk 3 Power - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk-3-power"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20201024121131/https://www.thecubicle.com/products/valk-3-power"
+excerpt: |-
+  Product Description: "The Valk 3 Power is the newest 3x3 under the iconic Valk line by QiYi MoFangGe. The Valk Power features a dual vertical core, capped pieces, pure primary internals, and a very smooth and soft feel." Product Specifications: Manufacturer QiYi MoFangGe; Type 3x3; Gross Weight 222g; Dimensions 55.5mm; Item Weight 87.4g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "a dual vertical core, capped pieces, pure primary internals" names specific internal-construction features distinct from the base Valk 3's description, treated as evidence of a different underlying design (DATA_MODEL section 4.2), not a configuration of the base Valk 3. "the newest 3x3 under the iconic Valk line" is marketing framing (tier 4 under RESEARCH_SPEC 3.3) and is not relied on for release-order or succession claims.
+status: sourced

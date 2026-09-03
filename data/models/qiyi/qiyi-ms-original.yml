@@ -1,0 +1,47 @@
+# model: qiyi-ms-original
+# Pass 3 (model enumeration). The sole 3x3 generation found under the single-generation
+# qiyi-ms family, now corroborated at tier 2 as well as by the wiki. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-ms-original
+entity: model
+family_id: qiyi-ms
+manufacturer_id: qiyi
+name: "QiYi MS 3x3"
+scope_class: core
+generation:
+  label: "MS"
+  ordinal: 1
+  basis: manufacturer_declared
+announced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi MS 3x3 Released early 2020.
+  A budget 3x3 that is magnetized... This puzzle comes in a stickered (black) version and a
+  stickerless version. It measures 56.5mm." TheCubicle's own product page
+  (thecubicle-qiyi-ms-3x3-product) independently corroborates existence, magnetic configuration,
+  and positioning: "The QiYi MS 3x3 is a magnetic 3x3 speed cube built for performance and
+  economy. Part of QiYi's new economy 'MS' line..." That retailer's own spec table, however,
+  gives no Dimensions row at this capture, so `specs.size_mm` is left unset for this model
+  rather than populated from the wiki's uncorroborated 56.5mm figure, which RESEARCH_SPEC's S6
+  admission policy does not permit for a specification claim ("A wiki may never establish a
+  specification"). The stickered/stickerless distinction is a colourway/application difference,
+  left for pass 4 (variant enumeration).
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki-only date ('early 2020'); TheCubicle's capture carries only the 'Added:
+      2020-04-24' artifact, not used as release-date evidence per standing policy."
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "'MS' is the manufacturer's own line/product name; no numeral ordinal is given by
+      either source, so this is recorded as manufacturer_declared for the name itself while
+      ordinal:1 is this archive's own placement (only one 3x3 generation was found under this
+      name)."
+  /description:
+    confidence: probable
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-ms-3x3-product]

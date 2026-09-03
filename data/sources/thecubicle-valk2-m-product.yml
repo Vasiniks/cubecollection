@@ -1,0 +1,20 @@
+# source: thecubicle-valk2-m-product
+# TheCubicle's product page for the Valk2 M (2019 capture). Tier 2, first-party retailer copy establishing this as a 2x2, not a 3x3 — an out-of-scope finding for the qiyi-valk model tree, recorded here rather than silently omitted.
+id: thecubicle-valk2-m-product
+entity: source
+kind: retailer
+title: "Valk2 M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/valk2-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190825031609/https://www.thecubicle.com/products/valk2-m"
+excerpt: |-
+  Product Description: "The magnet positions on this 2x2 are unlike any seen on the market. Rather than the typical corner only magnet layout, the Valk2 M uses a corner/edge magnet layout resembling that of a 3x3. This gives the puzzle a smaller magnetic radius making the feel more consistent throughout the turn." Product Specifications: Manufacturer: QiYi MoFangGe; Dimensions 51.0mm; Item Weight 78.4g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. The product copy itself calls it "this 2x2" directly and compares its magnet layout to "that of a 3x3" as a point of contrast — unambiguous evidence Valk2 M is a 2x2x2 puzzle, not a 3x3. Per RESEARCH_SPEC section 2.4 ("Puzzles other than 3x3x3" are out of scope), no model is created for it under qiyi-valk in this pass; recorded here so the finding is not silently lost. See qiyi-valk-3.yml's description for the full note.
+status: sourced

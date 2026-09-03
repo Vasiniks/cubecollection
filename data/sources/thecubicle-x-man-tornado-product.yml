@@ -1,0 +1,20 @@
+# source: thecubicle-x-man-tornado-product
+# TheCubicle's product page for the original (unsuffixed) X-Man Tornado (2019 capture, discontinued). Tier 2, first-party retailer copy explicitly naming this X-Man Design's first product.
+id: thecubicle-x-man-tornado-product
+entity: source
+kind: retailer
+title: "X-Man Tornado - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/x-man-tornado"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824081538/https://www.thecubicle.com/products/x-man-tornado"
+excerpt: |-
+  Page banner: "This product has been discontinued indefinitely or we aren't sure when it will be back in stock." Product Description: "The X-Man Tornado is the first cube from X-Man Designs, a new and exciting brand by QiYi (MoFangGe) featuring the designs of an individual by the name of X-Man. It borrows and improves upon various elements in QiYi MoFangGe 3x3 cubes." Product Specifications: Manufacturer X-Man Designs; Type 3x3; Gross Weight 100g; Dimensions 56.1mm. No Magnets or Item Weight row given (non-magnetic).
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description. "the first cube from X-Man Designs" is direct, explicit evidence this is the family's earliest (V1) design generation. `size_mm: 56.1` is taken from this table. Note: this page's own "an individual by the name of X-Man" phrasing is the same characterisation later corrected by qiyitoys-company-history (X-Man Design was founded by QiYi's own chief designer); not relied on here for anything beyond product identity and existence.
+status: sourced

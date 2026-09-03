@@ -1,0 +1,20 @@
+# source: thecubicle-x-man-tornado-v3-m-standard-product
+# TheCubicle's product page for the X-Man Tornado V3 M Standard (2022 capture). Tier 2, first-party retailer copy explicitly naming a mechanism change from V2.
+id: thecubicle-x-man-tornado-v3-m-standard-product
+entity: source
+kind: retailer
+title: "X-Man Tornado V3 M Standard - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/x-man-tornado-v3-m-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250324035933/https://www.thecubicle.com/products/x-man-tornado-v3-m-standard"
+excerpt: |-
+  Product Description: "The X-Man Tornado V3 M is QiYi's new flagship 3x3 speedcube. This puzzle has amazing performance and easy customization. X-man has released 3 versions, introducing core magnets and maglev tech to the Tornado line. It solves some small issues that were present in the V2 like replacing the rivets with screws and allowing the center caps to fit from any orientation. The improved mechanism gives a more cohesive, smooth feel when turning." Product Specifications: Manufacturer X-Man Designs; Type 3x3 Speed Cubes; Gross Weight 233g; Dimensions 55.5mm; Magnets Magnetic; Item Weight 69.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. "It solves some small issues that were present in the V2 like replacing the rivets with screws" is direct, explicit evidence of a genuine mechanical change from Tornado V2 (rivets to screws), not merely a marketing version bump, and explicit succession language ("issues that were present in the V2"). `size_mm: 55.5` differs from V2's 55.0mm.
+status: sourced

@@ -1,0 +1,67 @@
+# model: qiyi-m-pro-v2
+# Pass 3 (model enumeration). Explicitly numbered successor generation, retailer-framed as
+# "Flagship" for this line. No source found this pass states a mechanism difference from the
+# base M Pro beyond the version number itself, so the identity claim is recorded at `uncertain`
+# rather than `probable`. See research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-m-pro-v2
+entity: model
+family_id: qiyi-m-pro
+manufacturer_id: qiyi
+name: "QiYi M Pro V2"
+scope_class: core
+generation:
+  label: "M Pro V2"
+  ordinal: 2
+  basis: manufacturer_declared
+announced:
+  value: "2024"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 55.5
+description: |-
+  Per TheCubicle's product page (thecubicle-qiyi-m-pro-v2-3x3-flagship-product, retailer slug
+  "qiyi-m-pro-v2-3x3-flagship"): "The QiYi M Pro V2 3x3 is a budget-friendly magnetic 3x3. This
+  puzzle has tension (screw) and compression adjustment, and piece-to-piece magnetization. This
+  is the Flagship version which has a matte finish." The retailer's own product slug and copy
+  both use "V2" directly — a manufacturer-declared version signal per DATA_MODEL section 4.2 —
+  and this line's own family record already notes TheCubicle's slug explicitly calling this
+  generation "flagship", a positioning shift from the base M Pro's 2023 budget launch.
+
+  **Identity confidence note.** No source states a mechanism or mould difference from the base
+  M Pro beyond the version number and a different size (55.5mm vs the base's 55.0mm); the
+  version-numbering signal alone is treated as sufficient under DATA_MODEL section 4.2 ("a
+  manufacturer's version number is a strong signal about design change") to record this as its
+  own model, but confidence on the identity claim itself is held at `uncertain` given the thin
+  direct evidence.
+status: drafted
+attestations:
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki dating for 'M Pro Elite' ('mid to late 2024') is used only as an approximate
+      floor for the line's second-generation era generally; TheCubicle's own capture of V2
+      carries only the 'Added: 2024-11-25' artifact, not used as release-date evidence per
+      standing policy. No source gives V2 its own explicit release statement this pass."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-m-pro-v2-3x3-flagship-product]
+    note: "See the description's identity confidence note."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-v2-3x3-flagship-product]
+  /description:
+    confidence: reported
+    sources: [thecubicle-qiyi-m-pro-v2-3x3-flagship-product]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-m-pro-v2-3x3-flagship-product]
+    note: "Inferred from explicit sequential numbering (base then 'V2'); no direct textual
+      succession statement was found."
+relationships:
+  - type: succeeds
+    target: qiyi-m-pro-standard
+    target_entity: model
+    note: "Inferred from explicit sequential numbering (base then 'V2'); no direct textual
+      succession statement was found, hence `uncertain` confidence — see the
+      /generation/basis attestation."

@@ -1,0 +1,51 @@
+# model: qiyi-sail-big
+# Pass 3 (model enumeration). An oversized (6.8cm) Sail configuration, but unlike
+# qiyi-warrior-plus and qiyi-qimeng-plus this one is documented as having been used in an actual
+# named speedsolving competition context (the Feet event), which is treated as clearing the
+# RESEARCH_SPEC 2.2 significance bar for scope_class: conditional. See
+# research/qc/pass3-agent-b-qiyi.md.
+id: qiyi-sail-big
+entity: model
+family_id: qiyi-sail
+manufacturer_id: qiyi
+name: "QiYi Big Sail"
+scope_class: conditional
+scope_justification: |-
+  Documented as used for competitive feet-solving, per the Speedsolving wiki: "QiYi Big Sail...
+  a 6.8 cm 3x3 version of their budget 3x3, the Sail... often used for feet solving." This is a
+  documented competitive-discipline use, not merely an oversized novelty item (contrast
+  qiyi-warrior-plus and qiyi-qimeng-plus, both left at `reference_only` for lacking any such
+  documented use). At 68mm it is well outside a standard ~55-56mm speedcube's dimensions, so it
+  is not treated as `core`.
+scope_decided_by: model-researcher-agent-b
+scope_decided_on: "2026-09-03"
+generation:
+  label: "Big Sail"
+  basis: manufacturer_declared
+announced:
+  value: "2016"
+  precision: year
+  qualifier: circa
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi Big Sail Released Late
+  2016... a 6.8 cm 3x3 version of their budget 3x3, the Sail... often used for feet solving."
+  No retailer product page was found this pass to corroborate at tier 2; the wiki's own words
+  explicitly derive it from the base Sail ("their budget 3x3, the Sail") as a size variant for a
+  specific competition use rather than a differently-named independent product, which is why it
+  is filed under the same family rather than its own (a pass-2 decision, unchanged here).
+  Treated as its own model, not a variant of qiyi-sail-original, because the size difference
+  (68mm vs 56.5mm) requires distinct tooling under DATA_MODEL section 4.2.
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /announced:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /generation/basis:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]

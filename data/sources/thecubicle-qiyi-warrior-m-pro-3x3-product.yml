@@ -1,0 +1,20 @@
+# source: thecubicle-qiyi-warrior-m-pro-3x3-product
+# TheCubicle's product page for the QiYi Warrior M Pro 3x3 (2025 capture). Tier 2, first-party retailer copy and spec table.
+id: thecubicle-qiyi-warrior-m-pro-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Warrior M Pro 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-warrior-m-pro-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250427184514/https://www.thecubicle.com/products/qiyi-warrior-m-pro-3x3"
+excerpt: |-
+  Product Description: "The QiYi Warrior M Pro 3x3 is an inexpensive magnetic 3x3 with good corner-cutting and decent performance. This is a great puzzle for beginners or anyone looking for a good travel cube!" Product Specifications: Manufacturer QiYi; Type 3x3 Speed Cubes; Gross Weight 84g; Dimensions 55.0mm; Magnets Magnetic; Item Weight 74.0g.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer description and spec table. Generic marketing copy with no stated relationship to Warrior W/S/M; `size_mm: 55.0` is distinct again from Warrior M's 56.0mm, treated as further (weak) physical evidence of a separate model rather than a shared-shell configuration. See qiyi-warrior-m-pro.yml's own attestation.
+status: sourced
