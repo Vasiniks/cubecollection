@@ -1,0 +1,51 @@
+# family: senhuan-mars
+# Pass 2 (family enumeration). SenHuan's only found 3x3 line, spanning two generations
+# (Mars, Mars S) under one persisting name, on the same pattern as `guoguan-yuexiao`. SenHuan's
+# other found product name, Zhanlang, is a 2x2 — out of this archive's 3x3x3 scope.
+
+id: senhuan-mars
+entity: family
+manufacturer_id: senhuan
+name: "SenHuan Mars"
+aliases: []
+introduced:
+  value: "2019"
+  precision: year
+  qualifier: circa
+positioning: mainline
+description: |-
+  TheCubicle's own description of the original: "The Mars 3x3 is the first cube produced by
+  the SenHuan brand. It uses a unique ultra-small inner circle design that is touted to
+  increase stability and reduce turning resistance. It also features high-precision molded
+  3-piece corners that allows for stickerless versions." (thecubicle-senhuan-mars-3x3-2019).
+  A second generation, **Mars S**, followed: "The SenHuan Mars S is the new and improved
+  version of the original SenHuan Mars. It features a variety of design improvements on top
+  of the unique small inner circle structure of the original SenHuan Mars, including more
+  durable and elastic SWP springs and a re-designed center piece."
+  (thecubicle-senhuan-mars-s-3x3-2019). Both are marked discontinued on every capture found
+  this pass. Unlike the equivalent MoJue and MoHuanShouSu product pages found this session,
+  neither SenHuan page restates a "MoYu sub-branded" claim — no additional corroboration of
+  `data/manufacturers/senhuan.yml`'s existing parent-relationship reading was found here
+  (nor is any contradiction), and this pass leaves that record untouched.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-senhuan-mars-3x3-2019]
+    note: "Earliest capture found this pass is 2019-07-21 (Mars S) / 2019-08-24 (original
+      Mars, presumably pre-existing by then since Mars S is framed as its successor). No
+      first-party announcement date found. The product's own 'Added: 2018-09-11' spec-table
+      field is deliberately not used — see thecubicle-mojue-m3-2020's reliability_note for the
+      recurring-date pattern found across several unrelated products this pass."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-senhuan-mars-3x3-2019]
+    note: "No source states a positioning tier directly; recorded `mainline` as a
+      non-flagship inference from the product's modest ~$5-14 retail price range seen on the
+      same captures and the absence of any 'flagship'/'premium' framing (contrast
+      `guoguan-yuexiao` and `huameng-ys3m`, both explicitly called flagship by their
+      retailer)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-senhuan-mars-3x3-2019, thecubicle-senhuan-mars-s-3x3-2019]

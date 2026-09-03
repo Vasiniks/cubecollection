@@ -1,0 +1,62 @@
+# family: huameng-ys3m
+# Pass 2 (family enumeration). HuaMeng's YS3M line — the earlier-documented of HuaMeng's two
+# 3x3 families found this pass (TheCubicle's own "Added" date is 2023-02-17, versus 2024-10-23
+# for huameng-tg), retailer-described as HuaMeng's flagship. Kept separate from `huameng-tg`:
+# no source found this pass frames one as a successor to the other, both were sold
+# concurrently (YS3M captures continue through at least 2025 alongside TG's 2024-2026
+# captures), and the two names carry entirely different marketing identities (dragon-scale
+# surface pattern / YuSheng Du endorsement for YS3M vs. a 1620-combination adjustability pitch
+# for TG) rather than reading as one line renamed.
+
+id: huameng-ys3m
+entity: family
+manufacturer_id: huameng
+name: "HuaMeng YS3M"
+aliases: []
+introduced:
+  value: "2023-02"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  TheCubicle's own product description (thecubicle-huameng-ys3m-3x3-2023): "The ... HuaMeng
+  YS3M is the latest flagship 3x3 release from the famous cube company. This puzzle features
+  amazing corner cutting, adjustable tensions/compressions, a dragon scale pattern to reduce
+  sticking, and is designed/endorsed by the 3x3 world record single holder YuSheng Du." Sold
+  in at least three configurations at launch per the same page's own cross-links — a standard
+  "piece-to-piece magnetization" version, a Maglev version, and a Ball-core version (config-
+  level, pass-3/4 material, not enumerated further here) — plus a further "YS3-M 20-Core
+  Magnetic Maglev Ball-Core UV" configuration found in a 2024-04-15 capture
+  (`huameng-ys3-m-20-core-magnetic-maglev-ball-core-uv`, product slug only, not fetched this
+  pass).
+
+  **Unresolved lead, not acted on.** The cited product description literally opens "The MoYu
+  HuaMeng YS3M is..." — a direct textual pairing of "MoYu" and "HuaMeng" that could be read as
+  evidence HuaMeng is a MoYu-affiliated brand, on the same pattern already recorded for
+  GuoGuan/MoJue/SenHuan/MoHuanShouSu/YanCheng (see those manufacturer records). It is
+  **not** treated as such evidence here: TheCubicle's product copy is known to reuse templated
+  boilerplate across listings, and no other capture, page, or source found this pass repeats
+  the pairing (including HuaMeng's own `thecubicle-huameng-tg-3x3-ball-core` listing, which
+  says only "HuaMeng"). Recorded as a lead for a future pass to verify or dismiss with better
+  evidence — not used to justify any change to `data/manufacturers/huameng.yml`'s existing
+  `kind: manufacturer` (independent) reading, which this pass leaves untouched per the
+  standing instruction not to upgrade corporate relationships on weak or single-source
+  evidence.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+    note: "TheCubicle's own structured spec-table 'Added: 2023-02-17' field on its earliest
+      found capture of this exact product, truncated to month precision and qualified `circa`
+      since 'Added' is a listing date, not a stated manufacturer release date."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+    note: "Retailer's own description explicitly calls it 'the latest flagship 3x3 release
+      from the famous cube company' — a direct retailer statement, not an inference, but a
+      single tier 2 source with promotional framing, hence `reported` rather than `confirmed`."
+  /description:
+    confidence: reported
+    sources: [thecubicle-huameng-ys3m-3x3-2023]

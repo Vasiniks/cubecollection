@@ -1,0 +1,33 @@
+# source: thecubicle-yancheng-yan3-2020
+# TheCubicle's only found product page for "YanCheng YAN3," archived 2020-09-27. Resolves the
+# open question left by data/manufacturers/yancheng.yml pass 1 ("the basic question of whether
+# 'Yan3' is a 3x3 at all") — TheCubicle's own structured "Type" field confirms it is.
+id: thecubicle-yancheng-yan3-2020
+entity: source
+kind: retailer
+title: "YanCheng YAN3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yancheng-yan3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927043033id_/https://www.thecubicle.com/products/yancheng-yan3"
+excerpt: |-
+  Product Description: "The YAN3 is the first cube released by the YanCheng brand. It has a
+  unique gliding feel that makes turning feel exceptionally effortless. The puzzle is packaged
+  inside a special drawer-style box." Marked "This product has been discontinued indefinitely
+  or we aren't sure when it will be back in stock." Structured "Product Specifications":
+  "Manufacturer: YanCheng / Type: 3x3 / Added: 2018-09-11 / Gross Weight: 122g / Dimensions:
+  56.0mm³ / Item Weight: 76.6g." Listed under TheCubicle's own "3x3" navigation category.
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2 — resolves data/manufacturers/yancheng.yml's own open question of whether this product is
+  a 3x3 at all (it is, per the retailer's own 'Type: 3x3' field and category placement). No
+  'MoYu sub-branded' claim is made here (contrast MoJue and MoHuanShouSu this session); no
+  additional corroboration of or contradiction to the existing parent-relationship reading was
+  found. The 'Added: 2018-09-11' field is treated as unreliable for dating this product — see
+  thecubicle-mojue-m3-2020's reliability_note for the recurring-date pattern found across
+  several unrelated products this pass."
+status: sourced

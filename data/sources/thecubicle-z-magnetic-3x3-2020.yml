@@ -1,0 +1,35 @@
+# source: thecubicle-z-magnetic-3x3-2020
+# TheCubicle product page for the "Z Magnetic 3x3," archived 2020-09-27. Not cited by any
+# family record this pass — Z-Cube's "3x3" range this pass was found to consist entirely of
+# aftermarket-modified or shape-mod products based on other manufacturers' designs, per
+# DATA_MODEL §4.3/4.4, and this specific page is the direct evidence for that finding for this
+# one product. Preserved here as a lead for the manufacturer(s) that actually own this
+# product's model tree (MFJS) — see research/notes/models/parallel-batch-B.md, "Z-Cube — 0
+# families".
+id: thecubicle-z-magnetic-3x3-2020
+entity: source
+kind: retailer
+title: "Z Magnetic 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/z-magnetic-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927012022id_/https://www.thecubicle.com/products/z-magnetic-3x3"
+excerpt: |-
+  Product Description: "The Z Magnetic 3x3 is the first commercially-available magnetized 3x3
+  to hit the market. The base model for the Z Magnetic 3x3 is the highly acclaimed MF3RS from
+  Cubing Classroom, and it was magnetized by Z-Cubes. Great as a first magnetic 3x3 for
+  beginners and intermediate cubers who want to feel what a magnetic cube is like." Structured
+  "Product Specifications" table: "Manufacturer: Z / Type: 3x3 / Added: 2018-09-11 / Gross
+  Weight: 109g / Dimensions: 56.0mm³ / Item Weight: 93.4g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table plus explicit product-description
+  prose naming the exact base model (MFJS's MF3RS / Cubing Classroom) and the modification
+  performed (magnetizing, by 'Z-Cubes') — a real, specific claim, not copied marketing filler.
+  Treated as tier 2 for identity/specification claims per DATA_MODEL §5.1; the 'first
+  commercially-available magnetized 3x3' claim is comparative/superlative copy (tier 4 per
+  §5.2 rule 2) and is not treated as an established fact by this source alone."
+status: sourced

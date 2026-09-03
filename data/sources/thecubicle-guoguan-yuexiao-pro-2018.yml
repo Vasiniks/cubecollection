@@ -1,0 +1,33 @@
+# source: thecubicle-guoguan-yuexiao-pro-2018
+# TheCubicle product page for the "GuoGuan YueXiao Pro," archived 2018-09-11. Establishes the
+# Pro generation as a genuinely new mechanism/mould relative to the original YueXiao (DATA_MODEL
+# §4.2 model-level boundary), and independently dates the original YueXiao to "2016."
+id: thecubicle-guoguan-yuexiao-pro-2018
+entity: source
+kind: retailer
+title: "YueXiao Pro - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/guoguan-yuexiao-pro"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922073950id_/https://www.thecubicle.com/products/guoguan-yuexiao-pro"
+excerpt: |-
+  Product Description: "The YueXiao Pro by GuoGuan is the highly-anticipated update to the
+  original YueXiao, one of the most iconic cubes of 2016. The YueXiao Pro features a brand new
+  mechanism with more internal tracks to help reduce friction and a more rounded corner piece
+  design that manages to preserve the anti-corner twisting characteristics of the original
+  YueXiao. The YueXiao Pro features slots for magnets to be easily added, but this particular
+  variant is not magnetized." Structured "Product Specifications": "Manufacturer: GuoGuan /
+  Type: 3x3 / Added: 2018-09-11 / Gross Weight: 163g / Dimensions: 56.0mm³ / Item Weight:
+  83.7g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
+  2. The explicit 'brand new mechanism' / 'more internal tracks' / 'more rounded corner piece
+  design' language is direct retailer evidence of a genuine mould/mechanism change (DATA_MODEL
+  §4.2), not merely a sold configuration — pass-3 material, noted here to support the family-
+  level `guoguan-yuexiao` boundary reasoning (one persisting family name across at least two
+  design generations)."
+status: sourced

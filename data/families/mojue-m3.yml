@@ -1,0 +1,55 @@
+# family: mojue-m3
+# Pass 2 (family enumeration). MoJue's only found 3x3 product — a single-item family on the
+# same "generic-but-named base product" precedent as `cube4you-3x3` and `fanxin-3x3`, since no
+# second MoJue-branded 3x3 was found this pass, and no succession or predecessor is documented.
+
+id: mojue-m3
+entity: family
+manufacturer_id: mojue
+name: "MoJue M3"
+aliases: []
+introduced:
+  value: "2020"
+  precision: year
+  qualifier: circa
+positioning: flagship
+description: |-
+  The only MoJue-branded 3x3 product found this pass (`npm run wayback -- prefix
+  thecubicle.com/products/mojue` returns exactly one product page). TheCubicle's own
+  description, as of a 2020-09-27 capture (thecubicle-mojue-m3-2020): "The MoJue M3 is an
+  exciting new high-end MoYu sub-branded 3x3 that will soon hit the market and is now
+  available for pre-order. With excellent performance and stability, it is expected to be
+  among the most promising MoYu sub-brands thus far." Read as describing a genuinely new,
+  not-yet-shipped product as of that capture, giving `introduced: circa 2020`.
+
+  **Significant unresolved lead, flagged rather than acted on.** This retailer description
+  directly and explicitly calls MoJue "MoYu sub-branded," twice, in its own prose — materially
+  stronger and more specific evidence than the naming-analogy reasoning
+  `data/manufacturers/mojue.yml` currently rests its existing `kind: sub_brand` /
+  `confidence: uncertain` reading on (that record found no direct relationship statement,
+  only a structural resemblance to the confirmed GuoGuan case). This pass does **not** change
+  that manufacturer record or its confidence — out of this pass's write lane, and per the
+  standing instruction not to upgrade corporate relationships on a single retailer's copy
+  alone — but the finding is significant enough that a human reviewer should look at raising
+  `mojue`'s `/kind` confidence given this new, more direct source.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [thecubicle-mojue-m3-2020]
+    note: "Only one capture of this product was found, describing it as 'will soon hit the
+      market... now available for pre-order' as of 2020-09-27. No first-party MoJue/MoYu
+      announcement with an exact date was found. The product's own 'Added: 2018-09-11'
+      spec-table field is deliberately not used — see thecubicle-mojue-m3-2020's own
+      reliability_note for why (a suspected catalogue-migration artefact, not a real
+      per-product date)."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-mojue-m3-2020]
+    note: "Retailer copy calls it 'high-end' and 'the most promising MoYu sub-brands thus
+      far' — read as flagship-adjacent framing, but this is MoJue's only documented product,
+      so 'flagship' versus 'mainline' is not a meaningfully tested distinction here."
+  /description:
+    confidence: reported
+    sources: [thecubicle-mojue-m3-2020]

@@ -1,0 +1,69 @@
+# family: guoguan-yuexiao
+# Pass 2 (family enumeration). GuoGuan's only 3x3 family found this pass (GuoGuan's other
+# named line, Xinghen, is a 2x2 — out of this archive's 3x3x3 scope, RESEARCH_SPEC §2.4 — and
+# is not a family here). "YueXiao" is a single persisting name carried across at least three
+# retailer-documented generations (original YueXiao 2016, YueXiao Pro 2018 with an explicitly
+# new mechanism, YueXiao EDM/E 2019), the same "one persisting name across generations"
+# reasoning already used for `moyu-weilong` and several other families in this register.
+
+id: guoguan-yuexiao
+entity: family
+manufacturer_id: guoguan
+name: "GuoGuan YueXiao"
+aliases:
+  - "Yuexiao"
+  - "Yue Xiao"
+introduced:
+  value: "2016"
+  precision: year
+  qualifier: circa
+positioning: flagship
+description: |-
+  GuoGuan's flagship — and, on this pass's evidence, only — 3x3 line, and explicitly stated by
+  TheCubicle to be "the first cube from GuoGuan, a new and exciting brand by MoYu"
+  (thecubicle-guoguan-yuexiao-2025) — an independent corroboration (this pass's own finding,
+  not previously cited) of the GuoGuan/MoYu sub-brand relationship already recorded at
+  `reported` confidence in data/manufacturers/guoguan.yml, not acted on here beyond noting it
+  (out of this pass's write lane; see research/notes/models/parallel-batch-B.md).
+
+  The original YueXiao is dated to 2016 by a companion product page's own description of it as
+  "one of the most iconic cubes of 2016" (thecubicle-guoguan-yuexiao-pro-2018) — its own product
+  page's structured "Added" field instead reads 2018-09-11, which is this specific listing's
+  catalogue date at TheCubicle, not the manufacturer's original release date, and is not used
+  for `introduced` here. TheCubicle's description also notes the original YueXiao's appearance
+  "similar to that of the Cong's Design MeiYing, but with an all-new core design" — a claimed
+  visual resemblance to another manufacturer's product, explicitly paired with a stated new
+  mechanism, so not treated as a `rebrand_of` lead (DATA_MODEL §4.4 requires evidence of a
+  shared manufacturer/supply relationship, not visual resemblance).
+
+  At least two further generations follow under the same family name: **YueXiao Pro** (2018),
+  described directly as having "a brand new mechanism with more internal tracks... and a more
+  rounded corner piece design" relative to the original (thecubicle-guoguan-yuexiao-pro-2018) —
+  a genuine model-level, not variant-level, difference per DATA_MODEL §4.2 — and **YueXiao
+  EDM** (2019), "the latest 3x3 released by GuoGuan" at the time, claiming "the world's first
+  adjustable (not interchangeable) magnetic system" (thecubicle-guoguan-yuexiao-edm-2020, a
+  comparative claim not independently verified this pass). A companion "YueXiao E" is the same
+  EDM generation's unmagnetized configuration, not a separate generation. "YueXiao Pro M" is
+  the factory-magnetized configuration of YueXiao Pro, likewise not a separate generation —
+  its own product page adds that it "includes... a collectible MoYu card" in its packaging, a
+  further piece of GuoGuan/MoYu corroboration noted here but not acted on. All generation and
+  configuration detail beyond this family-level summary is pass-3/4 material.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-guoguan-yuexiao-pro-2018]
+    note: "A companion product page's own prose calls the original YueXiao 'one of the most
+      iconic cubes of 2016' — a specific, if brief, retailer statement. No tier 1 GuoGuan/MoYu
+      first-party source with an exact date was found this pass, hence `reported` and `circa`
+      rather than `confirmed`/`exact`."
+  /positioning:
+    confidence: reported
+    sources: [thecubicle-guoguan-yuexiao-2025, thecubicle-guoguan-yuexiao-pro-2018]
+    note: "No source calls this line 'flagship' by name; inferred from it being GuoGuan's only
+      documented 3x3 line, continuously updated across at least three generations with
+      competition-oriented features (adjustable magnets, reduced-friction mechanism)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-guoguan-yuexiao-2025, thecubicle-guoguan-yuexiao-pro-2018, thecubicle-guoguan-yuexiao-edm-2020]

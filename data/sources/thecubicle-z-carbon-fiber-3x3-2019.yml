@@ -1,0 +1,29 @@
+# source: thecubicle-z-carbon-fiber-3x3-2019
+# TheCubicle product page for the "Z Carbon Fiber 3x3," archived 2019-09-19. Not cited by any
+# family record this pass, for the same reason as thecubicle-z-magnetic-3x3-2020 — see
+# research/notes/models/parallel-batch-B.md, "Z-Cube — 0 families".
+id: thecubicle-z-carbon-fiber-3x3-2019
+entity: source
+kind: retailer
+title: "Z Carbon Fiber 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/z-carbon-fiber-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190919002421id_/https://www.thecubicle.com/products/z-carbon-fiber-3x3"
+excerpt: |-
+  Product description: "The Z Carbon Fiber 3x3 is a budget-friendly stickerless 3x3 with
+  carbon fiber black stickers applied on all 6 sides, which gives the cube a unique look and
+  texture." Structured "Product Specifications" table: "Manufacturer: Z / Type: 3x3 / Gross
+  Weight: 95g / Added: 2018-09-11 / Dimensions: 56.0mm³ / Item Weight: 83.3g." Colour options
+  offered: "Phantom (Stickerless Pink)" and "Phantom (Stickerless Bright)".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own structured spec table plus product-description prose.
+  Does not itself name a base model (contrast thecubicle-z-magnetic-3x3-2020); the
+  identification of this product's base as a QiYi Warrior W comes from a separate tier 4
+  source, speedsolving-wiki-zcube, not from this page. Treated as tier 2 for this product's
+  own existence/specifications per DATA_MODEL §5.1."
+status: sourced

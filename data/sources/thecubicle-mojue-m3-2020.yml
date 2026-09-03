@@ -1,0 +1,40 @@
+# source: thecubicle-mojue-m3-2020
+# TheCubicle's only found product page for "MoJue M3," archived 2020-09-27 — the only MoJue
+# product-slug capture found this pass (`npm run wayback -- prefix
+# thecubicle.com/products/mojue`, 2 rows total, the other being a non-HTML .js asset of the
+# same page). Directly and explicitly states MoJue is a "MoYu sub-branded" product — much
+# stronger, more specific retailer evidence than the structural-analogy reasoning
+# data/manufacturers/mojue.yml currently rests its `kind: sub_brand` reading on.
+id: thecubicle-mojue-m3-2020
+entity: source
+kind: retailer
+title: "MoJue M3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mojue-m3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927181355id_/https://www.thecubicle.com/products/mojue-m3"
+excerpt: |-
+  Product Description: "The MoJue M3 is an exciting new high-end MoYu sub-branded 3x3 that
+  will soon hit the market and is now available for pre-order. With excellent performance and
+  stability, it is expected to be among the most promising MoYu sub-brands thus far."
+  Structured "Product Specifications" table: "Manufacturer: MoJue / Type: 3x3 / Added:
+  2018-09-11 / Gross Weight: 159g / Dimensions: 56.0mm³ / Item Weight: 75.2g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: "TheCubicle's own product-description prose directly and explicitly calls
+  MoJue a 'MoYu sub-branded' product, twice ('MoYu sub-branded 3x3' and 'MoYu sub-brands
+  thus far') — tier 2, a specific retailer statement, not an inference from naming or
+  category grouping. This is materially stronger evidence for the parent relationship than
+  the structural-analogy reasoning data/manufacturers/mojue.yml currently records at
+  `confidence: uncertain`; flagged in research/notes/models/parallel-batch-B.md for a human to
+  weigh, not acted on directly (out of this pass's write lane). The 'Added: 2018-09-11' field
+  is treated as unreliable for dating this specific product — the identical date recurs
+  verbatim across several unrelated products found this pass (GuoGuan YueXiao Pro, YueXiao Pro
+  M, several Z-brand items), consistent with a one-time catalogue-migration date rather than a
+  genuine per-product listing date, and is not used for this family's `introduced` field. The
+  description's own 'will soon hit the market... now available for pre-order' language,
+  read against this capture's own 2020-09-27 date, is used instead."
+status: sourced

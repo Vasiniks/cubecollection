@@ -1,0 +1,51 @@
+# family: huameng-tg
+# Pass 2 (family enumeration). HuaMeng's TG line, the later-documented of the two HuaMeng 3x3
+# families found this pass (Added 2024-10-23 per TheCubicle's own spec table, versus 2023-02
+# for huameng-ys3m). Kept separate from `huameng-ys3m` — see that family's own file for the
+# boundary reasoning shared between both.
+
+id: huameng-tg
+entity: family
+manufacturer_id: huameng
+name: "HuaMeng TG"
+aliases: []
+introduced:
+  value: "2024-10"
+  precision: month
+  qualifier: circa
+positioning: flagship
+description: |-
+  TheCubicle's own product description (thecubicle-huameng-tg-3x3-ball-core): "The HuaMeng TG
+  is the most feature-rich 3x3 we've seen so far! With 1620 different adjustment combinations
+  you can find one that fits your turning style. It has hand-adjustable compression settings
+  and a tool to adjust tensions and magnet strength. It has 6 tension settings, 9 compression
+  settings, 5 edge magnet adjustments, and 6 corner/core magnet adjustments." Sold in at least
+  four configurations found this pass — a standard/ball-core version, a "Maglev + Ball-Core"
+  version, a "Maglev + Ball-Core UV" version, and a "Spirit Pearl Limited Edition" (banner
+  copy: "Limited to 999 worldwide!") — plus a second-generation "TG V2 (20-Magnet, Ball-Core)"
+  found in a 2026-05-06 capture (`huameng-tg-v2-3x3-20-magnet-ball-core`, product slug only,
+  not fetched this pass; a pass-3 generation question, not resolved here). None of this
+  configuration/generation detail is enumerated further at this pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "TheCubicle's own structured spec-table 'Added: 2024-10-23' field, read directly off
+      the same archived capture already cited by this source record (its own excerpt does not
+      quote this specific field, but the field is present on the preserved page). Truncated to
+      month precision and qualified `circa` since 'Added' is a listing date, not a stated
+      manufacturer release date."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "No source calls this line 'flagship' by name (contrast huameng-ys3m, which the
+      retailer explicitly labels 'flagship'). Recorded `flagship` on the strength of TG's own
+      description ('the most feature-rich 3x3 we've seen so far') and its extensive
+      adjustability feature set, consistent with a top-tier competitive product, but this is
+      an inference from marketing framing rather than a direct label, hence `uncertain` rather
+      than `reported`."
+  /description:
+    confidence: reported
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
