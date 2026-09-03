@@ -1,0 +1,25 @@
+# family: cyclone-boys-metallic-3x3
+# Pass 2 (family enumeration). A single, notable Cyclone Boys 3x3 with a documented endorsement
+# from a named prominent community figure.
+
+id: cyclone-boys-metallic-3x3
+entity: family
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys Metallic 3x3"
+aliases: []
+positioning: special
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys Metallic
+  3x3 — A 3x3 with a shiny metallic coating on the outside. JPerm really likes this puzzle." No
+  release date was found. Recorded `positioning: special` for a distinctive finish/coating
+  product rather than an ordinary budget item, and kept as its own family on the strength of the
+  named-endorsement detail (a documented, specific claim, not a vague reputation).
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]

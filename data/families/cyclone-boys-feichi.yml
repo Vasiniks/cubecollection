@@ -1,0 +1,29 @@
+# family: cyclone-boys-feichi
+# Pass 2 (family enumeration). The stated successor to cyclone-boys-feiwu.
+
+id: cyclone-boys-feichi
+entity: family
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys FeiChi"
+aliases: []
+introduced:
+  value: "2016-10"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys FeiChi —
+  Released: October 2016. An improved version of the FeiWu, with improved turning and better
+  colours." No further generation was found.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]

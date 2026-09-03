@@ -1,0 +1,40 @@
+# family: cyclone-boys-feiwu
+# Pass 2 (family enumeration). A popular beginner Cyclone Boys 3x3, kept separate from its
+# stated successor (cyclone-boys-feichi) per the "different name = different family, linked by
+# succession" reasoning applied elsewhere this pass.
+
+id: cyclone-boys-feiwu
+entity: family
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys FeiWu"
+aliases: []
+successor_family_id: cyclone-boys-feichi
+introduced:
+  value: "2014-03"
+  precision: month
+  qualifier: circa
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys FeiWu —
+  Released: March 2014. A cheap but very solid cube. The FeiWu was a popular beginners cube and
+  was widely available on Amazon and similar stores... It is very controllable and robust: it
+  does not pop, doesn't really lock up, and the centre-caps never fall out."
+
+  `successor_family_id` is set to `cyclone-boys-feichi` on the strength of the wiki's own direct
+  statement under that family's entry ("An improved version of the FeiWu"), the same evidentiary
+  bar applied to mfjs-mf3/moyu-rs3m and yuxin-fire/yuxin-water this pass.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /successor_family_id:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]

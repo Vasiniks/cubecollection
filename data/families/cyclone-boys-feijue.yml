@@ -1,0 +1,23 @@
+# family: cyclone-boys-feijue
+# Pass 2 (family enumeration). Cyclone Boys' budget magnetic 3x3, explicitly benchmarked
+# against contemporary competitors by the wiki.
+
+id: cyclone-boys-feijue
+entity: family
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys FeiJue"
+aliases: []
+positioning: budget
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys FeiJue M —
+  Decent budget magnetic option, widely regarded as inferior to the Kylin V2 M and the Yulong V2
+  M." No release date or further generation was found.
+status: drafted
+
+attestations:
+  /positioning:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]

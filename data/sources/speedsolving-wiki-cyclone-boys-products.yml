@@ -1,0 +1,37 @@
+# source: speedsolving-wiki-cyclone-boys-products
+# The same Speedsolving.com wiki article as speedsolving-wiki-cyclone-boys (created in a prior
+# session), a second source record for its 3x3 product-history section, following the precedent
+# of speedsolving-wiki-mfjs-products alongside speedsolving-wiki-mofang-jiaoshi: the earlier
+# record's excerpt covered identity/founding, not this content, and was not created by me this
+# session, so it is not overwritten. Tier 4 — corroborates only.
+id: speedsolving-wiki-cyclone-boys-products
+entity: source
+kind: wiki
+title: "Cyclone Boys — Speedsolving.com Wiki (3x3 product history)"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/wiki/index.php?title=Cyclone_Boys"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260312183959/https://www.speedsolving.com/wiki/index.php?title=Cyclone_Boys"
+excerpt: |-
+  3x3x3 section: "Some of their older models of 3x3 cubes include: Cyclone Boys FeiXuan.
+  Released December 2013. Cyclone Boys XuanFeng. Released: January 2014. Cyclone Boys FeiHong.
+  Released February 2014. Cyclone Boys JisuZhiYun. Released January 2015." (No further detail
+  given for any of the four; not created as families this pass, recorded as leads.)
+
+  "Cyclone Boys FeiWu — Released: March 2014. A cheap but very solid cube. The FeiWu was a
+  popular beginners cube and was widely available on Amazon and similar stores. Only available
+  as stickerless. It is very controllable and robust: it does not pop, doesn't really lock up,
+  and the centre-caps never fall out... Cyclone Boys FeiChi — Released: October 2016. An
+  improved version of the FeiWu, with improved turning and better colours. Cyclone Boys Mini 3x3
+  — Released December 2016. A 40 mm cube. Cyclone Boys FeiJue M — Decent budget magnetic option,
+  widely regarded as inferior to the Kylin V2 M and the Yulong V2 M. Cyclone Boys Metallic 3x3 —
+  A 3x3 with a shiny metallic coating on the outside. JPerm really likes this puzzle."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02; excerpt
+  reproduces the load-bearing sentences from the 3x3 section verbatim."
+accessed: "2026-09-02"
+language: en
+link_status: live
+last_checked: "2026-09-02"
+reliability_note: "Tier 4, community-edited, no citation trail for any date. Last edited 29 May
+  2022 per the page's own footer. Used for family-boundary structure and dating."
+status: sourced

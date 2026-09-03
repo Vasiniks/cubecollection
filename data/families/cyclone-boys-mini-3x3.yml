@@ -1,0 +1,31 @@
+# family: cyclone-boys-mini-3x3
+# Pass 2 (family enumeration). A compact-format Cyclone Boys 3x3, a single documented
+# generation.
+
+id: cyclone-boys-mini-3x3
+entity: family
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys Mini 3x3"
+aliases: []
+introduced:
+  value: "2016-12"
+  precision: month
+  qualifier: circa
+positioning: special
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys Mini 3x3 —
+  Released December 2016. A 40 mm cube." No further detail or generation was found. Recorded
+  `positioning: special` for the same compact-format-niche reasoning applied to yj-zhilong and
+  mfjs-mini-3x3.
+status: drafted
+
+attestations:
+  /introduced:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /positioning:
+    confidence: uncertain
+    sources: [speedsolving-wiki-cyclone-boys-products]
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]

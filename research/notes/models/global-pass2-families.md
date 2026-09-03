@@ -375,3 +375,32 @@ line under the same manufacturer_id, not merged with any DianSheng-named family.
 
 **Sources created this session (DianSheng):** `speedsolving-wiki-diansheng-products`,
 `thecubicle-mscube-ms3l-3x3-standard-product`.
+
+---
+
+## Cyclone Boys — 5 families
+
+**Candidates considered:** FeiXuan, XuanFeng, FeiHong, JisuZhiYun (four minimally-documented
+"older models," dated but with no further description), FeiWu, FeiChi, Mini 3x3, FeiJue M,
+Metallic 3x3.
+
+**Accepted (5):** `cyclone-boys-feiwu`, `cyclone-boys-feichi`, `cyclone-boys-mini-3x3`,
+`cyclone-boys-feijue`, `cyclone-boys-metallic-3x3`.
+
+**Rejected/deferred:** the four "older models" (FeiXuan, XuanFeng, FeiHong, JisuZhiYun) — each
+has a specific release month but literally no further description beyond that in the source
+("Some of their older models of 3x3 cubes include: ... [name]. Released [date]."). This is
+thinner than even ShengShou's excluded Gem/Tank (which at least got a full sentence of critical
+commentary) and thinner than DianSheng's included Stickerless 3x3 (which had a named media
+appearance). Not created as families this pass; recorded verbatim as leads in
+`speedsolving-wiki-cyclone-boys-products`'s own excerpt.
+
+**Boundary call: FeiWu to FeiChi kept as two families, joined by `successor_family_id`** — the
+same "improved version of" wording and the same evidentiary bar used for MFJS MF3/RS3M and YuXin
+Fire/Water this pass.
+
+**Sources created this session (Cyclone Boys):** `speedsolving-wiki-cyclone-boys-products`. No
+retailer collection prefix crawl was run for this manufacturer — the wiki's own coverage was
+judged sufficient and consistent, and Cyclone Boys' current retail presence (per pass 1's own
+`cyclone-boys.yml`) is thin enough that a prefix crawl was unlikely to add much for the budget
+it would cost.
