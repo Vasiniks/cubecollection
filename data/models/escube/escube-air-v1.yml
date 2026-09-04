@@ -1,0 +1,96 @@
+# model: escube-air
+# Pass 3 (model enumeration), Agent C / Batch 3. ESCAPE FROM ZERO: this family was flagged as
+# a candidate zero-model outcome in the batch brief, but a wayback prefix sweep of both
+# thecubicle.com/products/escube and speedcubeshop.com/products/es3 found citable Tier 2
+# evidence for one model.
+#
+# **ESCALATION — family-boundary naming tension, not resolved here (families are frozen).**
+# TheCubicle names this product "ESCube Air 3x3 (20-Magnet Ball-Core)" (brand-scoped: ESCube +
+# "Air"), while SpeedCubeShop's independent, near-contemporaneous listing for what is almost
+# certainly the same physical product names it "ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core)"
+# (ES3-scoped: as if "Air" were an edition of the ES3 line, not its own line). This is direct
+# evidence in tension with the frozen escube-air / escube-es3 family split, which was made on
+# the strength of TheCubicle's naming alone. A Tier 5 customer review on the TheCubicle capture
+# ("The original ESCube was better") further implies collectors think of this as a successor
+# to "the original ESCube" — not citable, but consistent with the tension. This model record is
+# placed under `escube-air` per the frozen family assignment and is NOT merged or re-parented;
+# the naming conflict is reported to the batch owner for human review of the family split.
+id: escube-air-v1
+entity: model
+family_id: escube-air
+manufacturer_id: escube
+name: "ESCube Air"
+aliases:
+  - "ES3 Air"
+  - "ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core)"
+scope_class: core
+generation:
+  label: "Air"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  core_system: ball_core
+  shape: standard
+description: |-
+  TheCubicle's own product description (thecubicle-escube-air-3x3-20-magnet-ball-core, capture
+  2026-06-16, nearest listing capture 2026-02-28): "ESCube Air 3x3 is a new core-magnetic
+  speedcubing on a budget. This latest release from ESCube features a fully magnetic ball-core
+  design, providing enhanced stability and turning control for speedcubers of every skill
+  level. Fine-tune your solving experience with the innovative numerical tension adjustment
+  system... This is the 20 magnet version, meaning that the corners attract to the core in the
+  aligned state and repel it around the 45 degree mark. Please note that, unlike other cubes
+  with 20 magnet cores, this one does not have edge foot magnets." Structured table
+  (checked directly against the archived page by this agent on 2026-09-04; the on-file excerpt
+  for this source quotes only the description paragraph and the Manufacturer field): "Type: 3x3
+  Speed Cubes / Gross Weight: 132g / Magnets: Magnetic."
+
+  SpeedCubeShop's independent listing (speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core,
+  capture 2026-04-03): "The ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core) is a control-focused
+  3x3 speed cube... Standard piece magnets add crisp alignment... the 20-magnet ball-core adds
+  corner-to-core stability... Paired with a clever dual adjustment system..." Spec block:
+  "Size & weight: 56mm, ~78g / Core: 20-magnet ball-core / Design: Double-layer magnetism, mesh
+  contact surfaces." A "Version" selector on the same listing offers "20-Magnet Ball-Core" and
+  "8-Magnet Ball-Core" as configuration options of one product — variant-level material.
+
+  Two independent Tier 2 publishers agreeing on the ball-core mechanism supports
+  `confidence: confirmed` on `specs.core_system` (DATA_MODEL rule 9). `size_mm` (56, single
+  source) and `magnet_architecture` (SpeedCubeShop's "double-layer magnetism" combined with
+  "standard piece magnets" plus a 20-magnet core-corner system reads closest to the
+  `dual_layer` vocab value, but this is an interpretive mapping from marketing prose rather
+  than a labelled field) are both left at lower confidence / unset rather than forced.
+  `adjustment_system` is left unset: TheCubicle's "numerical tension adjustment system"
+  (tension-only reading) and SpeedCubeShop's "clever dual adjustment system" (which could mean
+  tension+compression, or could just mean "two magnet layers") are not confidently
+  reconcilable into one vocab value from marketing language alone, and are recorded as
+  candidate readings here rather than as a resolved `disputed` attestation, since it is not
+  clear the two retailers are even making incompatible claims about the same underlying fact.
+
+  `weight_g` is deliberately left unset at model level: TheCubicle's "Gross Weight: 132g" and
+  SpeedCubeShop's "~78g" almost certainly use different conventions (gross/shipping weight vs.
+  net item weight, the same distinction documented for escube-es3 and huameng-ys3m in this
+  batch), and picking one would misrepresent an unresolved measurement-convention gap as a
+  settled fact.
+status: drafted
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+    note: "TheCubicle's own brand-scoped name. See the escalation note above for the
+      SpeedCubeShop ES3-scoped alternative naming, recorded in /aliases."
+  /generation:
+    confidence: uncertain
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
+    note: "Ordinal 1 reflects only that no second 'Air' generation was found this pass;
+      whether 'Air' is itself ESCube's second overall 3x3 line (after ES3) or something else
+      entirely is exactly the open family-boundary question flagged above."
+  /specs/core_system:
+    confidence: confirmed
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
+    note: "Two independent Tier 2 publishers agree on a 20-magnet ball-core mechanism
+      (DATA_MODEL rule 9)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+  /description:
+    confidence: probable
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]

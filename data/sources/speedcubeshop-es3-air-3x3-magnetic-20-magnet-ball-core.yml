@@ -1,0 +1,44 @@
+# source: speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core
+# SpeedCubeShop product page for "ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core)", found via a
+# wayback prefix sweep of speedcubeshop.com/products/es3 during Pass 3 (Agent C, Batch 3).
+# Independently corroborates TheCubicle's `thecubicle-escube-air-3x3-20-magnet-ball-core` as
+# the same physical product, but under a materially different retailer naming convention — see
+# the model-boundary escalation note in research/qc/pass3-b3-agent-c-mf8-huameng-escube.md.
+id: speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core
+entity: source
+kind: retailer
+title: "ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core) - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/es3-air-3x3-magnetic-20-magnet-ball-core"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260403150022id_/https://speedcubeshop.com/products/es3-air-3x3-magnetic-20-magnet-ball-core"
+excerpt: |-
+  Page title: "ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core) | 3x3 Speed Cube". "Version:
+  20-Magnet Ball-Core / 8-Magnet Ball-Core" (a two-way configuration selector on one listing).
+  Product description: "The ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core) is a control-focused
+  3x3 speed cube designed to feel stable, accurate, and easy to tune. Standard piece magnets
+  add crisp alignment so turns 'click' into place, while the 20-magnet ball-core adds
+  corner-to-core stability for cleaner re-alignment and a more controllable turning feel.
+  Paired with a clever dual adjustment system and a dust-resistant contact design..." Spec
+  block: "Category: 3x3 magnetic speed cube (20-magnet ball-core) / Size & weight: 56mm,
+  ~78g / Core: 20-magnet ball-core / Design: Double-layer magnetism, mesh contact surfaces."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 retailer, structured spec content (Category/Size & weight/Core/Design block), naming
+  this product "ES3 Air" — i.e. as a configuration/edition of the "ES3" line — where
+  TheCubicle's independent listing for what is, on magnet-count and weight-class grounds,
+  almost certainly the same physical product names it "ESCube Air" (a brand-scoped name,
+  not an ES3-scoped one). Both agree on the "Air" name, the 20-magnet ball-core mechanism, and
+  a similar timeframe (this capture 2026-04; TheCubicle's nearest capture 2026-02-28), which is
+  why this source is used to CONFIRM `core_system: ball_core` for the escube-air model (two
+  independent Tier 2 publishers agreeing, DATA_MODEL rule 9) — but the naming divergence itself
+  is recorded as an unresolved family-boundary tension, not resolved by this agent (families
+  are frozen for Pass 3; see the escalation note). The "~78g" weight figure is NOT treated as
+  confirming or disputing TheCubicle's 132g "Gross Weight" for the same product — the two
+  retailers appear to use different weight conventions (net item weight vs. gross/shipping
+  weight), so both are recorded without adjudication and model-level `weight_g` is left unset.
+status: sourced

@@ -1,0 +1,70 @@
+# model: escube-es3
+# Pass 3 (model enumeration), Agent C / Batch 3. Single model. A wayback prefix sweep of
+# speedcubeshop.com/products/es3 found only configuration-level slugs (es3-3x3-magnetic,
+# es3-3x3-magnetic-core-magnets, es3-3x3-magnetic-20-core-magnets-uv-coated) plus the
+# "ES3 Air"-branded successor line treated under escube-air.yml — see that model's description
+# for the naming-overlap escalation.
+id: escube-es3-v1
+entity: model
+family_id: escube-es3
+manufacturer_id: escube
+name: "ESCube ES3"
+aliases:
+  - "ES3"
+  - "ES3 3x3 (Magnetic)"
+scope_class: core
+generation:
+  label: "ES3"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  core_system: dual_adjustment
+  adjustment_system: tension_compression
+  shape: standard
+description: |-
+  SpeedCubeShop's own product description (speedcubeshop-es3-debut-brand-2025, capture
+  2025-06-17): "ES3 3x3 (Magnetic) is the debut release for the new brand, ES Cube! This speed
+  cube focuses on easy-to-use adjustments and a simple yet effective design." The same
+  capture's "Version comparison" table (checked directly against the archived page by this
+  agent on 2026-09-04, same archive_url as speedcubeshop-es3-debut-brand-2025 — the excerpt on
+  file quotes only the debut-brand sentence, not this table) lists three sold configurations —
+  "Standard" (48 magnets, no core magnets, frosted, 77.6g), "8-Core Magnets" (64 magnets, 79.1g),
+  "20-Core Magnets" (76 magnets, UV exterior, 79.8g) — sharing a common "Key features" block:
+  "48 Factory installed magnets / Dual-adjustment core for independent spring compression &
+  tension (6 settings) / 'Mesh' piece design for smoother turning / Anti corner twist
+  mechanism," and overview claims of "55-degree forward corner cutting, 35-degree reverse
+  corner cutting, no tool required to make adjustments." The dual-adjustment core and
+  tension/compression settings are read as design-level defaults shared by all three sold
+  configurations (hence recorded in `specs`), while magnet count, exterior finish, and weight
+  visibly vary by configuration and are left for pass 4 (`magnet_architecture` and `weight_g`
+  are left unset at model level for this reason — DATA_MODEL's "belongs on the variant when it
+  varies by configuration" clause). No `size_mm` figure was found in either source.
+
+  A separate Product Details block on the same page gives (for the default/Standard selection):
+  "Type: 3x3 / Brand: ES Cube / Magnets: Strong / Weight: 77.6 g" — consistent with, not
+  contradicting, the version-comparison table.
+status: drafted
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+  /generation:
+    confidence: reported
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "SpeedCubeShop directly states this is 'the debut release for the new brand', a
+      first-party retailer statement supporting ordinal 1 more directly than most of this
+      batch's other ordinal-1 calls, though it is still a single Tier 2 source."
+  /specs/core_system:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "'Dual-adjustment core for independent spring compression & tension' maps directly to
+      the dual_adjustment vocab definition."
+  /specs/adjustment_system:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+  /specs/shape:
+    confidence: uncertain
+    sources: [speedcubeshop-es3-debut-brand-2025]
+  /description:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
