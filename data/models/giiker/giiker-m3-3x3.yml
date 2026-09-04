@@ -1,0 +1,86 @@
+# model: giiker-m3-3x3
+# Pass 3 (model enumeration), Batch 3 Agent A. Single-generation model for the giiker-m3
+# family (kept separate from giiker-supercube at pass 2 — see data/families/giiker-m3.yml).
+# Only one product page for this line was found in any capture checked this pass
+# (thecubicle.com/products/giiker-m3-3x3, 2020-09-20); it never appears on giiker.com's own
+# captured product/collection prefixes at all, nor at SpeedCubeShop. Treated as the sole
+# generation of this family rather than left as a stub without a model record, since a real,
+# separately-specified product is established at tier 2.
+id: giiker-m3-3x3
+entity: model
+family_id: giiker-m3
+manufacturer_id: giiker
+name: "GiiKER M3 3x3"
+aliases:
+  - "Giiker M3"
+scope_class: core
+generation:
+  label: "M3"
+  basis: manufacturer_declared
+description: |-
+  TheCubicle's own product copy (thecubicle-giiker-m3-3x3-2020, tier 2): "The Giiker M3 3x3
+  retains the feel and sound of the original Giiker Smart Cube but without the internal
+  electronics. It features strong magnets and a classic color scheme on black plastic."
+  Specification table: "Manufacturer: XiaoMi / Type: 3x3 / Gross Weight: 136g / Dimensions:
+  56.5mm 3 / Magnets: Magnetic / Item Weight: 99.0g." ("Manufacturer: XiaoMi" is TheCubicle's
+  own retailer-filing convention, not independent evidence of a different maker — see
+  data/families/giiker-m3.yml.)
+
+  Only one generation/product page for this line was found in this pass's discovery (a
+  giiker.com/products/ prefix sweep of 55 captured URLs contains no "M3" listing at all; nor
+  does thecubicle.com/products/giiker* beyond this single page, nor speedcubeshop.com's two
+  captured GiiKER listings). `generation.ordinal` is left unset because no second generation of
+  this specific mechanical line was found to number it against.
+
+  `generation.basis` is recorded as `manufacturer_declared` at `uncertain` confidence: "M3" is
+  used as the standing product name in TheCubicle's own retailer copy (not a description phrase
+  invented to characterise an otherwise-unnamed item), but no giiker.com-hosted first-party page
+  for "M3" was found to confirm the name originates with GiiKER itself rather than being a
+  distributor/retailer designation for an unbranded mechanical variant of the SUPERCUBE shell.
+status: drafted
+specs:
+  size_mm: 56.5
+  weight_g: 99.0
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-giiker-m3-3x3-2020]
+    note: "'Giiker M3 3x3' is used as a standing product name by TheCubicle, GiiKER's own site
+      was not found to independently confirm the name, hence uncertain rather than confirmed."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
+    note: "Recorded as the table's 'Item Weight' (99.0g) rather than 'Gross Weight' (136g,
+      which includes retail packaging)."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "TheCubicle's table states 'Magnets: Magnetic' but does not describe the arrangement
+      (single-layer, dual-layer, core-corner, etc.); no vocab value here means 'present,
+      arrangement unspecified', so the field is left unset rather than guessed, per the
+      precedent already set in dayan-guhong-pro-m.yml for the same kind of source."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. TheCubicle's own capture carries an in-page 'Added:
+      2018-10-30' field, but that exact string was independently found to recur verbatim on the
+      unrelated i3S product page (a different, differently-dated product per its own succession
+      claim) — the same catalogue-migration artifact already flagged and rejected on
+      data/families/giiker-m3.yml. Not used here as evidence of any kind, including as a
+      `before` bound, because it demonstrably does not track this specific product."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
+  /description:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
