@@ -1,0 +1,38 @@
+# model: kungfu-longyuan-3x3
+# Pass 3 (model enumeration), Agent D. Single model under `kungfu-longyuan`. Ordinary WCA-
+# format budget 3x3, `scope_class: core`.
+id: kungfu-longyuan-3x3
+entity: model
+family_id: kungfu-longyuan
+manufacturer_id: kungfu
+name: "KungFu LongYuan 3x3"
+scope_class: core
+description: |-
+  TheCubicle's own product page (thecubicle-kungfu-longyuan-3x3-2020, tier 2, first captured
+  2020-09-18): "The KungFu LongYuan 3x3 is a new, lightweight stickerless speed cube with a
+  very low price point. It features vibrant colors and feels solid yet smooth right out of the
+  box. A cube stand is included inside the packaging. Great as an inexpensive first speedcube
+  for beginners!" Structured spec table: "Type: 3x3 / Dimensions: 56.0mm³ / Gross Weight: 86g /
+  Item Weight: 70.2g." No successor or predecessor generation was found.
+specs:
+  size_mm: 56.0
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-kungfu-longyuan-3x3-2020]
+    note: "Single tier 2 retailer spec table ('Dimensions: 56.0mm³' — read as a 56.0mm edge
+      length, the retailer's own notation for a cube's linear dimension rather than a literal
+      cubic-millimetre volume)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-kungfu-longyuan-3x3-2020]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture located is 2020-09-18, a Wayback crawl
+      timestamp; the page's own 'Added: 2018-09-11' field is a documented recurring
+      catalogue-migration artifact (see thecubicle-mojue-m3-2020's reliability_note) and is not
+      used as a date. Left unset."

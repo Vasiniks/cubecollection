@@ -1,0 +1,65 @@
+# model: fanxin-hudong-3x3
+# Pass 3 (model enumeration), Agent D. Single model under `fanxin-hudong`. Sold in "Standard,"
+# "Flagship UV," and "Ultra Maglev UV" configurations per the family record — treated as one
+# model with three variant-level configurations (surface/UV treatment and a maglev-vs-standard
+# core tier), not three models, per DATA_MODEL section 4.2's explicit text that "a different
+# core assembly... sold as options of one product" is a variant difference even though maglev
+# is substantial hardware. Pass 4's work to enumerate the three as variants.
+id: fanxin-hudong-3x3
+entity: model
+family_id: fanxin-hudong
+manufacturer_id: fanxin
+name: "FanXin HuDong"
+aliases:
+  - "HuDong Light"
+  - "HuDong Light 3x3"
+scope_class: core
+description: |-
+  TheCubicle's own product page (thecubicle-fanxin-hudong-2024 / thecubicle-fanxin-3x3-
+  products, tier 2, first captured 2024-10-08/09): "The FanXin HuDong is a huge step for FanXin
+  hardware. This is an extremely modern and competitive flagship 3x3. Every version has tension
+  and compression adjustments... This cube has piece-to-piece magnetization, an 8 magnet
+  ball-core with repelling edge magnets, and corner foot-to-edge foot magnets." Sold in
+  "Standard," "Flagship UV," and "Ultra Maglev UV" configurations per the same source — the
+  "Ultra Maglev UV" tier swaps the ball core for a maglev core and adds UV coating, both
+  configuration choices at assembly of the same underlying design per DATA_MODEL section 4.2,
+  so this is recorded as one model.
+
+  **Naming contradiction, preserved not resolved.** The dedicated product page's own structured
+  "Manufacturer" spec field reads "HuDong" alone, while the same page's URL, title, and prose
+  all read "FanXin HuDong" / "FanXin hardware" (thecubicle-fanxin-hudong-2024). This model
+  record follows data/manufacturers/fanxin.yml's treatment (HuDong as a FanXin product line,
+  not a separate manufacturer) as the more specific and informative reading, without erasing
+  the contradiction — a future researcher with a first-party FanXin or HuDong source may find
+  these are in fact separate companies in a supply/OEM relationship.
+specs:
+  core_system: ball_core
+  magnet_architecture: dual_layer
+status: drafted
+attestations:
+  /description:
+    confidence: reported
+    sources: [thecubicle-fanxin-hudong-2024, thecubicle-fanxin-3x3-products]
+  /specs/core_system:
+    confidence: reported
+    sources: [thecubicle-fanxin-hudong-2024]
+    note: "Tier 2 retailer spec/description. Recorded as the model-level default for the
+      'Standard'/'Flagship UV' configurations; the 'Ultra Maglev UV' configuration overrides
+      this at variant level (pass 4)."
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-hudong-2024]
+    note: "Source describes 'piece-to-piece magnetization, an 8 magnet ball-core with
+      repelling edge magnets, and corner foot-to-edge foot magnets' — more than one distinct
+      magnet interaction (edge-to-edge and corner-to-edge), mapped here to the closest
+      available vocab/magnet-configurations.yml value (`dual_layer`) rather than a literal
+      match; not independently verified against a diagram or teardown."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found: no generation name or number beyond the single 'HuDong'
+      product name. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture located is 2024-10-08/09, a Wayback
+      crawl timestamp, not a release-date statement — not used as a date per the pass-3
+      admission policy section 3. Left unset."
