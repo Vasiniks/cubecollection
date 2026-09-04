@@ -1,0 +1,41 @@
+# source: cubezz-cyclone-boys-feiwu
+# Pass 3 (model enumeration), agent C, non-US retailer sweep (RESEARCH_SPEC §3.6a). Tier 2 —
+# first genuine spec-table evidence found for this product (the family's only other source,
+# speedsolving-wiki-cyclone-boys-products, is tier 3 and explicitly forbidden from establishing
+# specifications). Also load-bearing for a genuine date discrepancy: this capture predates the
+# wiki's stated "Released: March 2014" by over two months.
+id: cubezz-cyclone-boys-feiwu
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys FeiWu 3x3x3 Speedcube (Big Central Axis, Colored) – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-4392-Cyclone+Boys+FeiWu+3x3x3+Speedcube+Big+Central+Axis+Colored.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20131229023149id_/http://www.cubezz.com:80/Buy-4392-Cyclone+Boys+FeiWu+3x3x3+Speedcube+Big+Central+Axis+Colored.html"
+excerpt: |-
+  "The Cyclone Boys FeiWu is an amazing speedcube. It feels extremely sturdy but performs
+  s[u]rprisingly smooth. The turning on this cube is perfect. This is the colored new version
+  with big central axis." Specifications: "Brand: Cyclone Boys / Color: Colored / Package
+  Dimensions: 55*55*55mm / Weight: 95g."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront).
+  Genuine Wayback crawl timestamp 2013-12-29 — used only as an "existed by" upper bound, never
+  as a release date. This bound predates the Speedsolving wiki's own "Released: March 2014"
+  statement for the same product by more than two months, which the model record flags as an
+  unresolved date discrepancy rather than silently preferring one source.
+
+  "This is the colored new version with big central axis" implies at least one earlier/other
+  FeiWu axis variant already existed by this capture date, consistent with the wiki's own
+  "Only available as stickerless" framing being incomplete rather than with a later,
+  contradicting release date. Not investigated further this pass; recorded as a lead.
+
+  Specifications table is the first tier 1-2 (admissible) spec evidence found this pass for
+  this product; the wiki source's tier-3 override explicitly forbids using it to establish
+  specifications.
+status: sourced

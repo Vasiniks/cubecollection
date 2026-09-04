@@ -1,0 +1,35 @@
+# source: cubezz-cyclone-boys-mini-3x3
+# Pass 3 (model enumeration), agent C, non-US retailer sweep (RESEARCH_SPEC §3.6a). Tier 2 spec
+# evidence, and load-bearing for a significant date discrepancy: this capture predates the
+# wiki's stated "Released December 2016" by more than a year.
+id: cubezz-cyclone-boys-mini-3x3
+entity: source
+kind: retailer
+tier: 2
+title: "2pcs Cyclone Boys Mini 3x3x3 Magic Cube 40mm – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-4771-2pcs+Cyclone+Boys+Mini+3x3x3+Magic+Cube+40mm.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20151031171804id_/http://cubezz.com:80/Buy-4771-2pcs+Cyclone+Boys+Mini+3x3x3+Magic+Cube+40mm.html"
+excerpt: |-
+  "2pcs Cyclone Boys Mini 3x3x3 Magic Cube 40mm... Smart and good turning. Great for gift and
+  collection." Specifications: "Brand: Cyclone Boys / Color: Stickerless / Size: 40*40*40mm /
+  Weight: 29g."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront).
+  Genuine Wayback crawl timestamp 2015-10-31 — an "existed by" upper bound only, never used as
+  a release date — but this bound is more than a year EARLIER than the Speedsolving wiki's own
+  "Released December 2016" statement for the (apparently) same 40mm product. This is a
+  substantial, unresolved discrepancy, not a close corroboration like the FeiChi case
+  (cubezz-cyclone-boys-feichi); flagged prominently on the model record's /released attestation
+  as `disputed` rather than silently preferring either source.
+
+  Specifications table (40mm, 29g) is the first tier 1-2 (admissible) spec evidence found this
+  pass for this product; the wiki source's tier-3 override explicitly forbids using it to
+  establish specifications.
+status: sourced

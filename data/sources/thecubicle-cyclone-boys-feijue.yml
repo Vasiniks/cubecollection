@@ -1,0 +1,36 @@
+# source: thecubicle-cyclone-boys-feijue
+# Pass 3 (model enumeration), agent C. Found via a `thecubicle.com/products/cyclone*` CDX
+# prefix sweep (53 URLs). Tier 2, first-party US retailer copy, giving fuller specification
+# detail (a "Magnets: Magnetic" structured field, and a separate Item Weight) than
+# cubezz-cyclone-boys-feijue, and a second, independent tier 2 source agreeing exactly on the
+# 56mm dimension.
+id: thecubicle-cyclone-boys-feijue
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys FeiJue 3x3 M – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cyclone-boys-feijue-3x3-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918191614id_/https://www.thecubicle.com/products/cyclone-boys-feijue-3x3-m"
+excerpt: |-
+  "The Cyclone Boys FeiJue 3x3 M is a new magnetized 3x3 cube from Cyclone Boys. It features
+  highly rounded pieces, a modern internal mechanism, and magnetized slots in the edges and
+  corners. The FeiJue 3x3 M is packaged inside a large plastic display case." Product
+  Specifications: "Manufacturer: Cyclone Boys / Type: 3x3 / Gross Weight: 213g / Dimensions:
+  56.0mm3 / Magnets: Magnetic / Item Weight: 89.9g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party US retailer. Independently agrees with cubezz-cyclone-boys-feijue on the
+  56mm dimension exactly (two independent tier 2 sources = `confirmed` per rule 9). "Magnetized
+  slots in the edges and corners" is read as consistent with vocab/magnet-configurations.yml's
+  `single_layer` definition ("one set of magnets between adjacent pieces"), though the source
+  does not itself use that term, so this is recorded as an inference at reduced confidence
+  rather than a direct statement. This page's own in-page "Added: 2018-09-11" field is the SAME
+  recurring catalogue-migration artifact string already flagged elsewhere in this project (29
+  occurrences across 22 sources and 13 unrelated brands) and is not used as dating evidence.
+status: sourced

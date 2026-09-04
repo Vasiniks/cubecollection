@@ -1,0 +1,33 @@
+# source: thecubicle-cyclone-boys-mini-3x3
+# Pass 3 (model enumeration), agent C. Found via a `thecubicle.com/products/cyclone*` CDX
+# prefix sweep (53 URLs). Tier 2, first-party US retailer copy, agreeing closely with
+# cubezz-cyclone-boys-mini-3x3 on both dimension and weight.
+id: thecubicle-cyclone-boys-mini-3x3
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys Mini 3x3 (40mm) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cyclone-boys-mini-3x3-40mm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824065241id_/https://www.thecubicle.com/products/cyclone-boys-mini-3x3-40mm"
+excerpt: |-
+  "The Cyclone Boys Mini 3x3 is the latest miniature 3x3 to hit the market. At just 40mm
+  across, it is about two-thirds the size of a normal 3x3. In spite of its smaller form factor,
+  it performs well and turns smoothly right out of the box." Specifications: "Manufacturer:
+  Cyclone Boys / Type: 3x3 / Gross Weight: 36g / Dimensions: 40.0mm3 / Item Weight: 29.7g." Sold
+  in a "Stickerless (Bright)" colour option.
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party US retailer. Agrees exactly with cubezz-cyclone-boys-mini-3x3 on the 40mm
+  dimension and very closely on weight (29.7g "Item Weight" here vs. 29g "Weight" there) —
+  strong independent corroboration from a second retailer. "The latest miniature 3x3 to hit the
+  market" is generic marketing framing at the time of this listing (this capture: 2019-08-24),
+  not a release-date claim, and is not used as one. This page's own in-page "Added: 2018-09-11"
+  field is the SAME recurring catalogue-migration artifact string already flagged elsewhere in
+  this project and is not used as dating evidence.
+status: sourced

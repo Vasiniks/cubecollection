@@ -1,0 +1,84 @@
+# model: maru-vx-3-original
+# Pass 3 (model enumeration), agent C. Maru VX-3's sole documented generation. The same
+# `thecubicle.com/products/maru*` CDX prefix sweep (67 distinct URLs) that closed maru-cx3's
+# generation question also confirms exactly three magnetic-configuration SKUs of this same
+# named product ("vx-3-m", "vx-3-core-m", "vx-3-core-m-maglev") and no separately-named later
+# generation — read per DATA_MODEL §4.2 as sold configurations of this one model, not new
+# models, and left as pass-4 leads.
+id: maru-vx-3-original
+entity: model
+family_id: maru-vx-3
+manufacturer_id: maru
+name: "Maru VX-3"
+aliases:
+  - "Maru VX-3 M"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.0
+  weight_g: 105
+  shape: standard
+description: |-
+  TheCubicle's own product copy (thecubicle-maru-vx-3, tier 2): "The VX-3 is an airy puzzle
+  from the famous brand Maru. This puzzle has no frills or fancy features, just a plain 3x3
+  with a modern design." Its own structured spec table gives "Dimensions: 56.0mm" alongside two
+  distinct weight figures — "Gross Weight: 105g" (used here as `weight_g`, matching this
+  archive's convention on maru-3x3-original and thecubicle-maru-nano-3x3) and a separate "Item
+  Weight: 69.0g" (likely the bare cube excluding retail packaging, recorded here in prose only).
+  This pass's own `thecubicle.com/products/maru*` CDX prefix sweep found "Maru VX-3 M,"
+  "Maru VX-3 Core M," and "Maru VX-3 Core M MagLev" product pages at the same retailer — magnetic
+  configuration options of this same base design per DATA_MODEL §4.2, recorded as `aliases` and
+  pass-4 leads here rather than new models. No later numbered generation was found; this is the
+  family's sole model.
+status: drafted
+attestations:
+  /aliases:
+    confidence: reported
+    note: "This pass's own CDX prefix sweep of thecubicle.com/products/maru* found a 'maru-vx-3-m'
+      product page; its own product copy was not independently retrieved this pass, so this is
+      recorded as a naming lead only, not independently sourced beyond the URL slug itself."
+  /specs/size_mm:
+    confidence: reported
+    sources: [thecubicle-maru-vx-3]
+    note: "Single tier 2 source. Independently confirmed this pass by re-fetching the same
+      archive_url capture already recorded on thecubicle-maru-vx-3 (20250219115733), whose
+      existing excerpt did not reproduce the Dimensions field. No new source record was created
+      for this."
+  /specs/weight_g:
+    confidence: reported
+    sources: [thecubicle-maru-vx-3]
+    note: "Same re-fetch as /specs/size_mm. 'Gross Weight: 105g' used per this archive's
+      established convention; a separate 'Item Weight: 69.0g' figure from the same table is
+      not used here (see description)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-maru-vx-3]
+    note: "Not stated directly; inferred from ordinary product photography and the 'plain 3x3
+      with a modern design' description, the same convention applied elsewhere this pass."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found. A 'MagLev' configuration exists as a named SKU
+      ('vx-3-core-m-maglev') per this pass's own CDX sweep, but that is read as a variant-level
+      configuration option, not a default of this model's own design, since a non-MagLev 'VX-3'
+      is the base product actually sourced here."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found for the base (non-'M') configuration actually sourced here.
+      Magnetic-core SKUs exist as separate product pages ('vx-3-m', 'vx-3-core-m'), read as
+      configuration options per DATA_MODEL §4.2, not a default spec of this model."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found. This pass's own CDX prefix sweep found no later-numbered VX-3 generation."
+  /description:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3]

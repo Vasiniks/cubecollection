@@ -1,0 +1,98 @@
+# model: cyclone-boys-feichi-g3
+# Pass 3 (model enumeration), agent C. A second FeiChi generation, found via a
+# `thecubicle.com/products/cyclone*` CDX prefix sweep run to satisfy RESEARCH_SPEC §3.6a's
+# archived-retailer-sweep requirement (not the non-US sweep, which is Cubezz.com). TheCubicle's
+# own copy states directly this is "the latest generation 3x3 from Cyclone Boys... a refined
+# internal mechanism design" compared to its predecessor — a mechanism-level claim, which
+# DATA_MODEL §4.2 treats as model-level identity evidence, not a sold configuration. Per the
+# same section's "when the evidence is unclear, default to new model" guidance, this is created
+# as a new model with a `succeeds` relationship rather than folded into
+# `cyclone-boys-feichi-original`, even though only a single tier 2 source makes the claim.
+id: cyclone-boys-feichi-g3
+entity: model
+family_id: cyclone-boys-feichi
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys G3 FeiChi"
+scope_class: core
+generation:
+  label: "G3"
+  ordinal: 2
+  basis: community_convention
+specs:
+  size_mm: 56.0
+  weight_g: 109
+description: |-
+  TheCubicle's own product copy (thecubicle-cyclone-boys-g3-feichi, tier 2): "The Cyclone Boys
+  G3 FeiChi is the latest generation 3x3 from Cyclone Boys. It features an improved design
+  compared to its predecessor, including more rounded pieces and a refined internal mechanism
+  design." "G3" itself is read as this manufacturer's own size-coding prefix ("G" + cube order,
+  paralleling the same retailer's G4/G6/G7/G8 for 4x4/6x6/7x7/8x8), not a literal generation
+  count — the generation claim rests on the prose ("latest generation... predecessor...
+  refined internal mechanism"), not on the "G3" label's number. No "Magnets" spec field is
+  present (contrast cyclone-boys-feijue-original), and customer reviews mention a stickerless
+  option, consistent with this remaining a non-magnetic product like the original FeiChi.
+  `generation/basis` is recorded `community_convention` rather than `manufacturer_declared`:
+  the claim of a design change is a direct tier 2 statement, but no source states that Cyclone
+  Boys itself formally names or numbers this as a distinct generation — "G3" is this archive's
+  own convention for referring to it, following the retailer's own product title.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    note: "The underlying mechanism-change claim is `reported` (single tier 2 source), but
+      whether 'G3' itself constitutes a manufacturer-declared generation label, a retailer SKU
+      convention, or something else is not established by any source found this pass — see
+      thecubicle-cyclone-boys-g3-feichi's own reliability_note."
+  /specs/size_mm:
+    confidence: reported
+    sources: [thecubicle-cyclone-boys-g3-feichi]
+    note: "Single tier 2 source for this specific generation. Close to (not identical to)
+      cyclone-boys-feichi-original's own 57.0mm figure — read as ordinary measurement variance
+      between listings, not treated as evidence the two are actually the same generation
+      re-sold, since the source's own prose makes an explicit mechanism-change claim
+      independent of this figure."
+  /specs/weight_g:
+    confidence: reported
+    sources: [thecubicle-cyclone-boys-g3-feichi]
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. The source's own 'refined internal mechanism
+      design' is the basis for treating this as a distinct model, but no specific core-system
+      vocabulary value is stated."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No 'Magnets' spec field is present on this
+      source, and a customer review mentions a stickerless option, both consistent with (not
+      proof of) a non-magnetic product."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. This capture (2024-05-30) is an existed-by bound only, not
+      recorded as `released`; customer reviews referencing contemporaries (GTS2M, MF3RS,
+      ThunderClap V2) are consistent with a redesign sometime after the original FeiChi's 2016
+      era but do not narrow it further."
+  /description:
+    confidence: reported
+    sources: [thecubicle-cyclone-boys-g3-feichi]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-cyclone-boys-g3-feichi]
+    note: "Direct statement: 'the latest generation 3x3 from Cyclone Boys... compared to its
+      predecessor.' The predecessor is not named explicitly in the source, but 'FeiChi' naming
+      continuity and this being the only other FeiChi generation found this pass identify it as
+      cyclone-boys-feichi-original."
+relationships:
+  - type: succeeds
+    target: cyclone-boys-feichi-original
+    target_entity: model
+    note: "TheCubicle: 'the latest generation 3x3 from Cyclone Boys. It features an improved
+      design compared to its predecessor... a refined internal mechanism design.' Predecessor
+      identified by shared 'FeiChi' naming, not named directly in the source."

@@ -1,0 +1,40 @@
+# source: cubezz-maru-3x3
+# Pass 3 (model enumeration), agent C, non-US retailer sweep (RESEARCH_SPEC §3.6a). Cubezz.com
+# is a China-based retailer (English-language storefront), independent of TheCubicle, found via
+# a `cubezz.com/Buy-` CDX prefix sweep run specifically to satisfy the non-US/English-retailer
+# discovery requirement for this lane's Maru and Cyclone Boys families.
+id: cubezz-maru-3x3
+entity: source
+kind: retailer
+tier: 2
+title: "Maru 56mm 3x3x3 Magic Cube White – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-4128-Maru+56mm+3x3x3+Magic+Cube+White.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150326051049id_/http://www.cubezz.com:80/Buy-4128-Maru+56mm+3x3x3+Magic+Cube+White.html"
+excerpt: |-
+  "Maru 56mm 3x3x3 Magic Cube White" — "3x3x3 Magic Cube Specifications: Color: White,
+  Dimensions (L*W*H): 56.7 *56.7 *56.7 mm, Weight (including the packing): 84.0g." Product
+  description text is a generic templated boilerplate ("Align 54 squares so that the colors
+  match up on all 9 sides...") used across many of this retailer's magic-cube listings, not
+  specific narrative about this product.
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer listing. A second, independent retailer (distinct company from
+  TheCubicle, based in China rather than the US) selling a Maru 3x3 of essentially the same
+  dimension (56.7mm here vs. 57.0mm at thecubicle-maru-3x3) — read as corroborating the same
+  base "Maru 3x3" product's existence and approximate size at `confirmed` (two independent
+  tier 2 sources per rule 9), not as evidence of a separate model or family.
+
+  The weight figure (84.0g "including the packing") is NOT treated as contradicting
+  thecubicle-maru-3x3's "Gross Weight: 141g" figure — the two retailers may be weighing
+  different things (bare cube + minimal bag here vs. a fuller retail package there, and
+  thecubicle-maru-3x3-special-patterns separately shows 154g including a stand and lube) —
+  recorded as an open discrepancy in the model record rather than asserted as one true weight.
+  Product description text is boilerplate template copy shared across this retailer's other
+  "Magic Cube" listings, not treated as specific evidence about this product's design.
+status: sourced

@@ -1,0 +1,106 @@
+# model: cyclone-boys-feiwu-original
+# Pass 3 (model enumeration), agent C. Cyclone Boys FeiWu's sole documented generation. Model
+# existence and naming rest on the Speedsolving wiki's tier-3 override
+# (speedsolving-wiki-cyclone-boys-products), whose permitted claim types are product existence,
+# naming, line membership and approximate chronology only — never specifications. Specifications
+# below instead rest on two independent tier 2 retailers found this pass: a non-US retailer
+# (cubezz-cyclone-boys-feiwu, per RESEARCH_SPEC §3.6a) and a US retailer
+# (thecubicle-cyclone-boys-feiwu, from an archived `/products/cyclone*` prefix sweep).
+id: cyclone-boys-feiwu-original
+entity: model
+family_id: cyclone-boys-feiwu
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys FeiWu"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2014-03"
+  precision: month
+  qualifier: circa
+  note: "Disputed — see /released attestation. The Speedsolving wiki states 'Released: March
+    2014'; an independent tier 2 non-US retailer (cubezz-cyclone-boys-feiwu) shows a genuine
+    Wayback capture of a full FeiWu product page dated 2013-12-29, more than two months
+    earlier."
+specs:
+  size_mm: 56.0
+  weight_g: 86
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys FeiWu —
+  Released: March 2014. A cheap but very solid cube. The FeiWu was a popular beginners cube and
+  was widely available on Amazon and similar stores. Only available as stickerless. It is very
+  controllable and robust: it does not pop, doesn't really lock up, and the centre-caps never
+  fall out." Two independent tier 2 retailers corroborate its existence and rough
+  specifications: Cubezz.com (cubezz-cyclone-boys-feiwu, non-US) gives "Package Dimensions:
+  55*55*55mm / Weight: 95g" and describes "the colored new version with big central axis" —
+  implying a coloured, stickered configuration existed alongside the wiki's "only available as
+  stickerless" framing, a configuration-level detail left as a pass-4 lead rather than resolved
+  here. TheCubicle (thecubicle-cyclone-boys-feiwu, US) separately titles it "FeiWu (56mm)" and
+  gives "Gross Weight: 86g / Dimensions: 56.0mm3 / Item Weight: 76.0g," describing it as
+  borrowing "its design from other high-performing 3x3 cubes" (generic budget-cube framing, not
+  a specific lineage claim). No further FeiWu generation was found (per cyclone-boys-feiwu.yml);
+  this is the family's sole model, later succeeded by the separate `cyclone-boys-feichi`
+  family.
+status: drafted
+attestations:
+  /released:
+    confidence: disputed
+    disputed:
+      - value: "2014-03 (released, month precision)"
+        sources: [speedsolving-wiki-cyclone-boys-products]
+        confidence: reported
+        note: "Tier 3 override, permitted approximate-chronology claim type."
+      - value: "on sale by 2013-12-29 (existed-by bound, not a release date)"
+        sources: [cubezz-cyclone-boys-feiwu]
+        confidence: reported
+        note: "Genuine tier 2 Wayback crawl timestamp of a full product listing, predating the
+          wiki's stated release month. Not itself claimed as a release date, but hard to
+          reconcile with one being nearly three months later."
+    adjudication: "Not adjudicated. Recorded at the wiki's stated 2014-03 value because it is
+      the only source making an explicit release-date claim at all (the cubezz capture is
+      existence evidence, not a competing date claim), but confidence is held at `disputed`
+      rather than `reported` because a genuine, dated tier 2 listing predates it. A future pass
+      should look for the cubezz page's own earliest capture (this one may not be the page's
+      first appearance) before resolving this either way."
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [cubezz-cyclone-boys-feiwu, thecubicle-cyclone-boys-feiwu]
+    note: "Two independent tier 2 retailers give closely agreeing figures (55.0mm, 56.0mm) for
+      the same product, satisfying rule 9. The 1mm gap is treated as ordinary measurement/
+      rounding variance between two independently-run catalogues, not a genuine disagreement.
+      The wiki source may not be used for specifications per its own tier-3 override terms."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-cyclone-boys-feiwu]
+    note: "TheCubicle's own 'Gross Weight: 86g' used per this archive's established convention.
+      Cubezz's own single unqualified 'Weight: 95g' figure is in the same general range (a ~10%
+      gap) and is treated as roughly corroborating rather than contradicting, short of the
+      `confirmed` bar since the two figures are not close enough to call clearly identical."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Neither source describes this generation as
+      magnetic; the wiki elsewhere describes a later, separately named 'FeiJue M' as Cyclone
+      Boys' first magnetic 3x3 (see cyclone-boys-feijue-original.yml), consistent with this
+      earlier FeiWu generation being non-magnetic, but that is an inference, not a direct
+      statement about FeiWu itself, so left unknown rather than set to `none`."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found for this single-generation family."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-feiwu, thecubicle-cyclone-boys-feiwu]

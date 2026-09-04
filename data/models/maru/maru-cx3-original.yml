@@ -1,0 +1,79 @@
+# model: maru-cx3-original
+# Pass 3 (model enumeration), agent C. Maru CX3's sole documented generation. A dedicated CDX
+# prefix sweep of `thecubicle.com/products/maru*` (67 distinct URLs) confirms only the
+# Assembled version, a DIY kit, and a soft-spring-set accessory under this exact "cx3" name —
+# no "CX3 V2" or any later-numbered generation was found, closing the open question the family
+# record left for this pass.
+id: maru-cx3-original
+entity: model
+family_id: maru-cx3
+manufacturer_id: maru
+name: "Maru CX3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  weight_g: 95
+  shape: standard
+description: |-
+  TheCubicle's own product copy (thecubicle-maru-cx3, tier 2): "The Maru CX3 is a hotly
+  anticipated, high-quality 3x3 speedcube. Its design was inspired by our friend Cyoubx, who is
+  a speedcuber himself." Repeated, independent customer reviews on the same listing compare it
+  favourably to the DaYan ZhanChi and MoYu WeiLong ("the reverse corner cutting... surpasses the
+  Zanchi and it is more controllable than the Weilong"; "this cube is very fast... putting my
+  ZhanChi to shame"), and several separately describe it as noticeably larger than a standard
+  57mm cube ("slightly larger than a normal 57 millimeter," "a hair bigger than 57mm") — a
+  qualitative, customer-sourced observation, not a structured retailer measurement, so no
+  `size_mm` value is set from it. Sold in both an Assembled version (sourced here) and a
+  separate DIY kit, with Glow-in-the-Dark and Transparent colour options using transparent
+  stickers (pass-4 leads). `designer` is left unset: Cyoubx is named as a design inspiration in
+  TheCubicle's own copy, but no `person` record for them exists in this archive and creating one
+  is outside this pass's write lane. No later numbered generation was found; this is the
+  family's sole model.
+status: drafted
+attestations:
+  /specs/weight_g:
+    confidence: reported
+    sources: [thecubicle-maru-cx3]
+    note: "The existing thecubicle-maru-cx3 source's own excerpt quotes only 'Manufacturer:
+      Maru' from the spec table; this figure ('Gross Weight: 95g') was independently confirmed
+      this pass by re-fetching the SAME archive_url capture already recorded on that source
+      (20250118140957), which the earlier excerpt did not reproduce in full. No new source
+      record was created for this — citing the existing id rather than manufacturing a
+      near-duplicate source for the same page."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-maru-cx3]
+    note: "Not stated directly; inferred from ordinary product photography and no mention of a
+      non-standard geometry, the same convention applied elsewhere in this pass and to
+      yj-zhilong-mini.yml previously."
+  /specs/size_mm:
+    confidence: unknown
+    note: "TheCubicle's own structured spec table for this capture does not include a
+      Dimensions field (unlike its later maru-vx-3 and maru-nano-3x3 listings, which do).
+      Customer reviews describe it qualitatively as 'a hair bigger than 57mm,' which is not a
+      structured measurement and is not converted into a number here."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found. One customer review states 'the mechanism is ALL PLASTIC,'
+      which speaks against a metal-core or similar non-standard core, but is not itself enough
+      to positively assert a specific `core_system` vocabulary value."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. No source describes this generation as magnetic."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found. This pass's own `thecubicle.com/products/maru*` CDX prefix sweep (67 URLs) found
+      no 'CX3 V2' or equivalent, closing the open question left by maru-cx3.yml."
+  /description:
+    confidence: probable
+    sources: [thecubicle-maru-cx3]
