@@ -1,0 +1,63 @@
+# source: 666toy-huanglong-3x3-products
+# Pass 3 (model enumeration). YuXin's own site (666toy.com), the HuangLong Series category and
+# individual 3x3 product pages. Tier 1, first-party manufacturer product copy — establishes two
+# distinct 3x3 item numbers/designs (1523 family and 1524 family) within the HuangLong line.
+id: 666toy-huanglong-3x3-products
+entity: source
+kind: manufacturer_official
+title: "666toy.com — HuangLong Series product category and 3x3 product pages"
+publisher: "Yu Xin Science And Educational Toys Co., Ltd."
+url: "https://www.666toy.com/huanglong-series/"
+preservation_method: excerpt
+excerpt: |-
+  Category page (archive_url, capture 2025-11-16) lists, among other HuangLong-branded NxN and
+  megaminx products, two 3x3 item families: "Yuxin Huanglong 1524VT Maglev 3x3 magic Cube
+  Flagship Cube" and "Yuxin Huanglong 1524UV Maglev 3x3 magic Cube Flagship Cube" (both dated
+  2025-01-08 on the category page), described identically on their own product pages (captures
+  2025-11-12 and 2026-02-18 respectively): "Yuxin Huanglong Cube series is not only a symbol of
+  high-end magic Cube... Yuxin Huanglong 3x3 Maglev Magic Cube is not only a product, but also
+  an attitude" — no numeric spec table on either page, only marketing copy naming the mechanism
+  as "Maglev" and distinguishing "VT" and "UV" as two surface/plastic options of the same 1524
+  item number.
+
+  A second page (https://www.666toy.com/huanglong-series/2/) lists "Yuxin Huanglong 1523
+  Rubik's Cube, Flagship Rubik's Cube, High-end Product Series" and "Yuxin Huanglong 1523M
+  magnetic Rubik's Cube, Flagship Rubik's Cube, High-end Product Series" as separate item
+  numbers. Their own product pages give identical spec/feature text except for the word
+  "Magnetic" in 1523M's opening line: "Yuxin Huanglong [Magnetic] Rubik's Cube, standard racing
+  Rubik's Cube size, 55.5x55.5x55.5mm; 4 major upgrades to experience explosive speed
+  revolution: corner block with steel balls, three gasket design, extended clamp foot design,
+  and magnetic positioning design... Double gasket design... Extended Pin Design: Extended
+  Cross Anti POP Pin... two options available: fluorescent six colors and black." 1523/1523M
+  is a conventional (non-MagLev) spring-and-gasket core; the identical spec text between 1523
+  and 1523M is the basis for treating "M" (magnetized) as a variant of one design, not a
+  separate model, consistent with the wiki's own framing of "M" elsewhere in this brand.
+
+  The 1523-vs-1524 item-number and mechanism (spring/gasket vs MagLev) split is the basis for
+  treating these as two separate models (yuxin-huanglong-original, yuxin-huanglong-v2) per
+  DATA_MODEL §4.2. Neither page states an explicit release date; the category page's per-item
+  dates (2025-07-22, 2025-01-08, 2024-10-24 for various HuangLong products) are NOT used as
+  release dates — they read as CMS/catalogue timestamps of uncertain meaning, the same caution
+  already applied to retailer "Added:" fields in this archive, extended here to a manufacturer
+  CMS date field that is not an explicit dated prose statement. A "Related products" sidebar
+  module on multiple product pages shows a uniform "2018-07-16" date across dozens of unrelated
+  HuangLong products (megaminx, 17x17, 4x4, pyraminx) sharing no launch relationship — an
+  independent instance of the same catalogue-migration-artifact pattern already documented for
+  retailer "Added:" fields (see pass3-admission-policy.md §3), NOT used for any date claim.
+archive_url: "https://web.archive.org/web/20251116063056/https://www.666toy.com/huanglong-series/"
+preservation_note: "Category-page archive_url is the primary preserved capture; the excerpt
+  additionally reproduces individual product-page text (1524VT capture 20251112030300, 1524UV
+  capture 20260218151031, both reproducibly fetchable via `npm run wayback -- get <url>
+  <timestamp>`) and live-fetched 1523/1523M pages (200 OK at fetch time, not yet independently
+  archived by Wayback under their own URLs at time of research; content quoted verbatim in this
+  excerpt per RESEARCH_SPEC §3.5's allowance for evidence not reducible to one archived page)."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party manufacturer product copy. Marketing-register prose
+  ('is not only a product, but also an attitude') is tier 4 for comparative/superlative claims
+  per RESEARCH_SPEC §3.3, but the same pages' concrete statements (item numbers, 'Maglev',
+  55.5mm dimension, 'magnetic positioning design') are tier 1 specifications."
+status: sourced

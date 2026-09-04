@@ -1,0 +1,65 @@
+# model: yuxin-huanglong-original
+# Pass 3 (model enumeration). The opening 3x3 generation of the HuangLong flagship line: a
+# conventional spring-and-gasket core, manufacturer item number 1523 (magnetized as 1523M). No
+# manufacturer or retailer source gives this generation its own version numeral ("1523" is an
+# internal item number, not a marketed name); ordinal 1 assigned by community convention as the
+# generation the wiki and 666toy both treat as HuangLong's base 3x3, preceding the MagLev "V2"
+# generation (yuxin-huanglong-v2). See research/qc/pass3-b2-agent-a-yuxin.md.
+id: yuxin-huanglong-original
+entity: model
+family_id: yuxin-huanglong
+manufacturer_id: yuxin
+name: "YuXin HuangLong 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 55.5
+  core_system: standard
+  maglev: none
+description: |-
+  666toy's own product page (666toy-huanglong-3x3-products, item 1523): "Yuxin Huanglong
+  Rubik's Cube, standard racing Rubik's Cube size, 55.5x55.5x55.5mm; 4 major upgrades... corner
+  block with steel balls, three gasket design, extended clamp foot design, and magnetic
+  positioning design... Double gasket design... Extended Pin Design." A separate item, 1523M,
+  carries identical spec/feature text under a "Magnetic" heading — the Speedsolving wiki
+  independently frames this as "YuXin HuangLong 3x3 M — A Factory Magnetized version of the
+  YuXin Huanglong 3x3" (speedsolving-wiki-yuxin-products), and thecubicle-yuxin-collection-2025
+  records only "yuxin-huanglong-3x3-m" (no bare "-3x3" path) as a retail SKU — consistent with
+  "M" being a magnetized configuration of this one design, not a separate model.
+
+  `magnet_architecture` is left unset at the model level: both the 1523 and 1523M product pages
+  mention "magnetic positioning design" among the shared "4 major upgrades," making it unclear
+  from this evidence alone whether the base (non-M) SKU ships with positioning magnets absent or
+  merely un-populated — a distinction more properly recorded at variant level in pass 4.
+  `weight_g` and `piece_count` are left unset; no source found this pass states them for this
+  generation specifically.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [666toy-huanglong-3x3-products]
+    note: "Tier 1, manufacturer's own stated dimension ('55.5x55.5x55.5mm'), consistent across
+      both the 1523 and 1523M product pages."
+  /specs/core_system:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products]
+    note: "Inferred as 'standard' (screw-and-spring) from the manufacturer's own description of
+      a gasket/spring/screw-cap assembly, in explicit contrast to the MagLev mechanism named on
+      the 1524-item HuangLong V2 pages. No source uses the word 'standard' directly."
+  /specs/maglev:
+    confidence: confirmed
+    sources: [666toy-huanglong-3x3-products]
+    note: "Neither the 1523 nor 1523M page mentions MagLev/magnetic levitation; only the
+      separate 1524-item generation (yuxin-huanglong-v2) does."
+  /generation/basis:
+    confidence: uncertain
+    note: "No source names this generation with its own version numeral; 'Original'/ordinal 1
+      is this pass's own community-convention label for the design the wiki and 666toy both
+      treat as the un-suffixed base HuangLong 3x3, not a manufacturer or retailer term."
+  /description:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products, speedsolving-wiki-yuxin-products,
+      thecubicle-yuxin-collection-2025]

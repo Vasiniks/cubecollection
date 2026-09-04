@@ -1,0 +1,70 @@
+# model: yuxin-black-kirin-original
+# Pass 3 (model enumeration). The base 3x3 of the Black Kirin budget line. The manufacturer's
+# own site (666toy.com) spells this line "Black Kirin" on some product pages and "Black Kylin"
+# on others, with WORD-FOR-WORD IDENTICAL description text between a "Black K irin" (sic) page
+# and a "Black Kylin" page for what reads as the same item — direct manufacturer-side evidence
+# that these are alternate transliterations of one Chinese name (黑麒麟), not two products. This
+# model stays in the already-frozen yuxin-black-kirin family; it is NOT merged with the separate,
+# also-frozen yuxin-kylin family (which covers a different, non-"Black"-prefixed line — see
+# yuxin-kylin-v2 and 666toy-black-kirin-kylin-3x3-products for the evidence and reasoning).
+# The wiki's second, "tiled" 3x3 generation ("Black Kirin 3x3 V2") is NOT admitted as a model
+# this pass: no tier 1-3 source naming a 3x3-specific V2 for this line was found (only a 4x4 V2
+# and the wiki's own tier-4 mention). See research/qc/pass3-b2-agent-a-yuxin.md.
+id: yuxin-black-kirin-original
+entity: model
+family_id: yuxin-black-kirin
+manufacturer_id: yuxin
+name: "YuXin Black Kirin 3x3"
+aliases:
+  - "YuXin Black Kylin 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 55
+  adjustment_system: screw
+description: |-
+  666toy's own product pages (666toy-black-kirin-kylin-3x3-products), item 1740 ("Black K irin")
+  and item 1553 ("Black Kylin"), identical text: "Yuxin Black K[i/y]lin Rubik's Cube, standard
+  racing cube size: 55x55x55mm; More powerful feel, better use experience; The surface of the
+  Rubik's Cube is frosted... Designed specifically for racing, with higher fault tolerance...
+  Standard size, suitable for competition use; stable structure and not easy to break; The
+  central shaft is weight-reduced and feels light, and the built-in adjustment system is
+  adjustable for tightness... It has passed national certification and is safe." A third item
+  number, 1541 ("Black Kylin Rubik's Cube," with mirror-cube and Fisher-cube shape-mod siblings
+  sharing that number), appears elsewhere in the same category, read as a further SKU/renumbering
+  of this same base design rather than a distinguishable revision — no source describes a
+  feature difference between 1541, 1553, and 1740.
+
+  The Speedsolving wiki independently (speedsolving-wiki-yuxin-products): "YuXin Black Kirin 3x3
+  — The YuXin Black Kirin 3x3 is a budget 3x3 that resembles the Little Magic," followed by "...
+  V2 — This puzzle is an update to the YuXin Black Kirin 3x3 sporting a tiled look." No tier 1-3
+  source corroborating a 3x3-specific "V2" was found this pass despite crawling three category
+  pages (55 product URLs) on 666toy.com and cross-checking thecubicle-yuxin-collection-2025
+  (which independently notes no standalone "yuxin-black-kirin-3x3" path exists at that retailer
+  either) and cubezz-yuxin-3x3-collection-2026's full-domain sweep; the V2/tiled generation is
+  therefore not created as a model, per pass3-admission-policy.md's tier 1-3 bar for model
+  identity.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [666toy-black-kirin-kylin-3x3-products]
+    note: "Identical figure on two independently-titled ('Black Kirin' / 'Black Kylin')
+      manufacturer product pages for what the identical description text shows is one design."
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [666toy-black-kirin-kylin-3x3-products]
+    note: "'built-in adjustment system is adjustable for tightness' read as conventional screw
+      tension; no named mechanism given."
+  /name:
+    confidence: probable
+    sources: [666toy-black-kirin-kylin-3x3-products]
+    note: "'Black Kirin' recorded as the primary name to match the frozen family_id; 'Black
+      Kylin' recorded as an alias on the strength of the manufacturer's own identical-text
+      product page under that spelling."
+  /description:
+    confidence: confirmed
+    sources: [666toy-black-kirin-kylin-3x3-products, speedsolving-wiki-yuxin-products]

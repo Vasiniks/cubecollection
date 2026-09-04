@@ -1,0 +1,62 @@
+# model: yuxin-fire-original
+# Pass 3 (model enumeration). The single documented generation of YuXin's first budget 3x3.
+# Not found on 666toy.com's current site (a full-domain CDX sweep of 666toy.com found no "fire"
+# match at all — consistent with the wiki's own framing of this as an early, since-discontinued
+# product); found instead at cubezz.com, a China-based international retailer (RESEARCH_SPEC
+# §3.6a non-US/English discovery requirement), whose own product title is "Fire Kylin," not
+# plain "Fire." The wiki's separately-described "Fire S" generation is NOT admitted as its own
+# model: cubezz lists White/Black/Stickerless as three colour options of ONE item-number line
+# (4748/4749/4750), which is the basis for treating "Fire S" (stickerless) as a variant, not
+# the wiki's implied separate generation. See research/qc/pass3-b2-agent-a-yuxin.md.
+id: yuxin-fire-original
+entity: model
+family_id: yuxin-fire
+manufacturer_id: yuxin
+name: "YuXin Fire 3x3"
+aliases:
+  - "YuXin Fire Kylin 3x3x3 (retailer's own full product name)"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56
+  weight_g: 68
+description: |-
+  cubezz-yuxin-3x3-collection-2026: product page for "YuXin Fire Kylin 3x3x3 Magic Cube White"
+  (item 4748) carries a spec table: "Specifications: Brand: YuXin; Color: White; Size:
+  56x56x56mm; Weight: 68g." Items 4749 (Black) and 4750 (Stickerless) are the same line's other
+  colour/material options. The Speedsolving wiki independently (speedsolving-wiki-yuxin-
+  products): "YuXin Fire 3x3 — The YuXin Fire was the first of many budget cubes from YuXin,
+  coming in Black, White, and stickerless options. The puzzle is considered to be slow and
+  sluggish," followed by "YuXin Fire S 3x3 — An updated version of the YuXin Fire coming in only
+  stickerless plastic" — the wiki's three colour options match cubezz's three item numbers
+  exactly, and cubezz gives no indication that the stickerless SKU (4750) is a later, updated
+  design rather than a same-generation colour option, so "Fire S" is treated here as the
+  Stickerless configuration of this one model, not a separate generation.
+
+  No manufacturer (666toy.com) page for this product was found; a full-domain CDX sweep of
+  666toy.com (6,719 distinct URLs) returned no "fire"-matching product at all. No plain,
+  unqualified "YuXin Fire" (without "Kylin") listing was found either; "Fire Kylin" is recorded
+  as the retailer's own full name and given as an alias, while the model's primary `name` field
+  matches the frozen family's own "YuXin Fire" naming.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /name:
+    confidence: uncertain
+    sources: [cubezz-yuxin-3x3-collection-2026, speedsolving-wiki-yuxin-products]
+    note: "The only tier 1-3 source found (cubezz) names this product 'Fire Kylin,' not plain
+      'Fire'; 'YuXin Fire' is used as the primary name to match the frozen yuxin-fire family
+      and the wiki's own naming, with 'Fire Kylin' recorded as an alias."
+  /description:
+    confidence: reported
+    sources: [cubezz-yuxin-3x3-collection-2026, speedsolving-wiki-yuxin-products]
+    note: "Single tier 2 source (cubezz) for existence and specs, corroborating but not
+      independently establishing, the tier 4 wiki's colourway list and 'Fire S' framing."

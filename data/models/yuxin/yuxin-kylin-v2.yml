@@ -1,0 +1,52 @@
+# model: yuxin-kylin-v2
+# Pass 3 (model enumeration). The only documented generation of the (non-"Black") Kylin line —
+# manufacturer item 1543, the manufacturer's OWN product title reading "Kylin 1543 Rubik's Cube
+# V2" (tier 1 for the "V2" numeral). No "Kylin V1" (without "Black") was found by any source
+# this pass; the family record's own note that "the 'V2' ordinal implies an earlier YuXin Kylin
+# generation neither source names or dates directly" stands as an open lead, not fabricated
+# here. This is a SEPARATE family/model from yuxin-black-kirin (see that model's header and
+# 666toy-black-kirin-kylin-3x3-products for the Kirin/Kylin transliteration finding, which
+# applies to the "Black"-prefixed line only, not this one).
+id: yuxin-kylin-v2
+entity: model
+family_id: yuxin-kylin
+manufacturer_id: yuxin
+name: "YuXin Kylin V2"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.5
+description: |-
+  666toy's own product page (666toy-black-kirin-kylin-3x3-products), item 1543: "Yuxin Kylin
+  1543 Rubik's Cube V2, racing standard size: 55.5x55.5x55.5mm; Large fault-tolerant design, it
+  can be rotated even without alignment... Anti-stick grooves and extended foot design...
+  Available in black and clear colors." No magnet mention on this specific page. The
+  Speedsolving wiki independently (speedsolving-wiki-yuxin-products): "YuXin Kylin V2 M —
+  Another tiled 3x3 from YuXin, with this one being magnetized. It and the YuXin Black Kirin V2
+  can be bought with transparent plastic" — matching this page's own "black and clear colors."
+  thecubicle-yuxin-collection-2025 records "yuxin-kylin-3x3-v2-m" as a retail SKU (capture
+  2022-10-14); cubezz-yuxin-3x3-collection-2026 independently lists both "YuXin Kylin V2 3x3x3
+  Speed Cube" (non-magnetic, 55.5mm, 79g) and "YuXin Kylin V2 M 3x3x3 Magnetic Speed Cube"
+  (55.5mm, 84g) — the magnetized "M" and non-magnetized base read as a variant-level (weight/
+  magnet) difference on this one V2 design, not separate models, matching the "M" pattern
+  already applied to HuangLong and Little Magic in this family group.
+
+  `weight_g` is left unset at model level: the non-magnetic and magnetized SKUs differ (79g vs
+  84g per cubezz), so no single figure is a shared design-level default.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [666toy-black-kirin-kylin-3x3-products, cubezz-yuxin-3x3-collection-2026]
+    note: "Tier 1 manufacturer figure (55.5mm) corroborated by an independent tier 2 retailer."
+  /generation/basis:
+    confidence: confirmed
+    sources: [666toy-black-kirin-kylin-3x3-products]
+    note: "'V2' appears directly in the manufacturer's own product title for this item."
+  /description:
+    confidence: confirmed
+    sources: [666toy-black-kirin-kylin-3x3-products, speedsolving-wiki-yuxin-products,
+      thecubicle-yuxin-collection-2025, cubezz-yuxin-3x3-collection-2026]

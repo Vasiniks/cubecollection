@@ -1,0 +1,64 @@
+# source: cubezz-yuxin-3x3-collection-2026
+# Pass 3 (model enumeration). Cubezz.com, a China-based international speedcube retailer, per
+# RESEARCH_SPEC §3.6a's non-US/English retailer discovery requirement. Tier 2 (retailer, real
+# spec tables). Enumerated via wayback CDX domain sweep of cubezz.com (~38,900 distinct URLs,
+# collapsed by urlkey), filtered for "yuxin" product listings.
+id: cubezz-yuxin-3x3-collection-2026
+entity: source
+kind: retailer
+title: "cubezz.com — YuXin 3x3 product listings (CDX domain enumeration)"
+publisher: "Cubezz.com"
+url: "https://www.cubezz.com/"
+preservation_method: excerpt
+excerpt: |-
+  CDX domain enumeration of cubezz.com surfaces, among many other YuXin non-3x3 SKUs, these 3x3
+  listings relevant to this pass's families:
+
+  "YuXin Fire Kylin 3x3x3 Magic Cube White/Black/Stickerless" (items 4748/4749/4750). Product
+  page for item 4748 (capture 20260305063812) carries a real spec table: "Specifications: Brand:
+  YuXin; Color: White; Size: 56x56x56 mm; Weight: 68g" — corroborates the Speedsolving wiki's
+  "YuXin Fire" as a real retail product (the manufacturer's/retailer's own full name is "Fire
+  Kylin"; the wiki's separately-named "Fire S" is not found as its own item number — items
+  4748/4749/4750 are three colour/material options of ONE item-number line, the basis for
+  treating "Fire S" (stickerless) as a variant of Fire Kylin, not the wiki's implied separate
+  generation.
+
+  "YuXin Kylin V2 3x3x3 Speed Cube Transparent/Black" (5998/5999, non-magnetic) and "YuXin Kylin
+  V2 M 3x3x3 Magnetic Speed Cube" (5905/5906/5907, three colourways). Item 5998's page: "Size:
+  55.5x55.5x55.5mm; Weight: 79g"; item 5905's page: same size, "Weight: 84g" — corroborates the
+  666toy-sourced "Kylin 1543 Rubik's Cube V2" as the same design as the wiki's "Kylin V2 M",
+  with magnetization as a variant-level weight/configuration difference on one V2 design.
+
+  "YuXin HuangLong V2 MagLev 3x3x3 Speed Cube Texture VT Version" and "...UV Version" (items
+  7967/7968). Brand field on both pages reads "YuXin HuangLong MagLev"; sizes both 55.5mm;
+  weights 72.3g (VT) and 72.8g (UV) — corroborates 666toy's 1524VT/1524UV MagLev design as
+  "HuangLong V2" specifically (666toy's own product copy names the mechanism but not a "V2"
+  numeral; this retailer's independent naming, matching TheCubicle's own "-v2-m-uv-coated" slug
+  in thecubicle-yuxin-collection-2025, is the basis for the "V2" generation label).
+
+  "YuXin Little Magic V3 MagLev 3x3x3 Cube VT Version" and "...UV Version" (items 7978/7979).
+  Both pages: "Size: 55.5x55.5x55.5mm; Weight: 68.2g" — corroborates 666toy's "Small Magic 1722"
+  MagLev product as "Little Magic V3" specifically, resolving the manufacturer-side "Small
+  Magic"/"Little Magic" naming inconsistency toward the Little Magic family lineage (matching
+  the manufacturer's own category placement of that product under "little-magic-series").
+
+  Also present, not chased further this pass: "YuXin Little Magic M V2 3x3x3... Stickerless"
+  (6754) and "...UV Version" (7907), corroborating yuxin-little-magic-v2 at a second independent
+  retailer; "YuXin 3x3x3 Interlocked Cube Puzzle" (5769, a distinct interlocking mechanical
+  puzzle, NOT a 3x3x3 Rubik's-type cube, out of scope) and "YuXin 1x3x3 Magic Cube" (4682, a
+  cuboid, out of scope). No "YuXin Water" and no plain unqualified "YuXin 3x3x3 Magic Cube"
+  listing was found anywhere in the full domain enumeration — see the two zero-model family
+  writeups in research/qc/pass3-b2-agent-a-yuxin.md.
+preservation_note: "CDX domain enumeration (reproducible via the Wayback CDX API filtered to
+  url=cubezz.com&matchType=domain) is the primary evidence for product existence and naming;
+  individual product-page spec tables were fetched via `npm run wayback -- get <url>` and are
+  quoted verbatim above."
+accessed: "2026-09-03"
+language: en
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2 per vocab/source-kinds.yml default for kind: retailer — spec tables
+  (size, weight, brand, colour) on individual product pages meet RESEARCH_SPEC §3.1's 'real spec
+  tables' bar for tier 2, distinct in wording from thecubicle-yuxin-collection-2025 and from
+  666toy's own manufacturer copy, so treated as independent corroboration where both agree."
+status: sourced
