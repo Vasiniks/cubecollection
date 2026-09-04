@@ -1,0 +1,40 @@
+# model: rubiks-connected-original
+# Pass 3 (model enumeration), Agent D. The original "Rubik's Connected" smart-cube generation,
+# documented only via Particula's own 2021 funding-round press coverage rather than a captured
+# rubiks.com product page (none was found this pass; the family record already notes this
+# gap). Split from `rubiks-connected-x` per the default-to-new-model rule — the family record
+# explicitly left open whether "Connected" and "Connected X" are one model with a revision or
+# two models. See data/families/rubiks-connected.yml.
+id: rubiks-connected-original
+entity: model
+family_id: rubiks-connected
+manufacturer_id: rubiks
+name: "Rubik's Connected"
+scope_class: core
+generation:
+  label: "Connected"
+  ordinal: 1
+  basis: manufacturer_declared
+description: |-
+  Particula's own press coverage of its 2021 Series A funding round (tech-eu-particula-
+  series-a-2021, tier 2, already sourced in data/manufacturers/particula.yml and
+  data/manufacturers/rubiks.yml) states Particula "will start production of... Rubiks Connected
+  (in partnership with Rubiks)." No rubiks.com product page for plain "Rubik's Connected"
+  (without an "X") was located this pass under the site's current product prefix — only
+  "Rubik's Connected X" (rubiks-com-connected-x-product-2025) — so no first-party mechanism,
+  size, or specification detail is attested for this generation beyond its bare existence and
+  its Particula manufacturing relationship.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [tech-eu-particula-series-a-2021]
+    note: "'Rubik's Connected' (no suffix) is the name used in Particula's own 2021 press
+      coverage, read as the manufacturer-declared name for this generation; no formal ordinal
+      or version number is stated anywhere, so `ordinal: 1` here is this record's own inference
+      from being the first-documented name in the line, not a manufacturer-stated number."
+  /description:
+    confidence: reported
+    sources: [tech-eu-particula-series-a-2021]
+    note: "Tier 2 press coverage naming the product and its manufacturer relationship; no
+      rubiks.com first-party page for this specific generation was located this pass."

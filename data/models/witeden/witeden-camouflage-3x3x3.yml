@@ -1,0 +1,44 @@
+# model: witeden-camouflage-3x3x3
+# Pass 3 (model enumeration), Agent D. Single model under `witeden-camouflage-3x3`.
+# scope_class: reference_only — see decision note below.
+id: witeden-camouflage-3x3x3
+entity: model
+family_id: witeden-camouflage-3x3
+manufacturer_id: witeden
+name: "WitEden Camouflage 3x3x3"
+aliases:
+  - "Camouflage 3x3x3"
+scope_class: reference_only
+description: |-
+  TheCubicle's own product page (thecubicle-witeden-camouflage-3x3x3, tier 2): "The WitEden
+  Camouflage 3x3x3 appears at first to be a 3x3x3 cube with a thin middle layer. However, it is
+  'camouflaged,' and the middle layer actually has an irregular center of rotation." Confirmed
+  a genuine 3x3x3-shaped mechanism (not a differently-sized cube in disguise, a naming trap
+  caught elsewhere this pass at Calvin's Puzzle's similarly-named but actually-4x4 "Mirror
+  Camouflage 3x3x3").
+
+  **scope_class decision.** Recorded `reference_only`: this is a real, distinct, described
+  mechanism (an "irregular center of rotation" hidden in an apparently-ordinary middle layer),
+  but no source located this pass documents a named designer credit, competitive use, collector
+  market, or production-first claim for it — no coverage was found in the one general
+  puzzle-reference source checked this pass (wikipedia-combination-puzzle). A "surprise
+  mechanism" novelty framing alone does not clear the pass-3 admission policy section 2's
+  significance bar, so `reference_only` is used rather than an invented justification.
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+status: drafted
+attestations:
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-witeden-camouflage-3x3x3]
+  /description:
+    confidence: reported
+    sources: [thecubicle-witeden-camouflage-3x3x3]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The capture located (2020-08-04) is a Wayback crawl
+      timestamp, not a release-date statement — not used as a date per the pass-3 admission
+      policy section 3. Left unset."

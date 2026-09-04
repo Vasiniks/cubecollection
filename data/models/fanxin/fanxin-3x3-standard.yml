@@ -1,0 +1,29 @@
+# model: fanxin-3x3-standard
+# Pass 3 (model enumeration), Agent D. Single model under `fanxin-3x3`. No generation naming,
+# successor, or predecessor was found this pass — recorded on existence alone (admission class
+# 2), per the pass-3 admission policy.
+id: fanxin-3x3-standard
+entity: model
+family_id: fanxin-3x3
+manufacturer_id: fanxin
+name: "FanXin 3x3"
+scope_class: core
+description: |-
+  TheCubicle's own product page (thecubicle-fanxin-3x3, first captured 2020-09-27, tier 2):
+  "The FanXin 3x3 draws inspiration from other 3x3 cube mechanisms, yet it strikes a good
+  balance between affordability and performance." No mechanism detail beyond this general
+  description was found; no successor or predecessor generation carrying this name was located.
+status: drafted
+attestations:
+  /description:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3, thecubicle-fanxin-3x3-products]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found: no generation name, number, or successor/predecessor was
+      located for this product. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture located is 2020-09-27
+      (thecubicle-fanxin-3x3), a Wayback crawl timestamp, not a release-date statement — not
+      used as a date per the pass-3 admission policy section 3. Left unset."

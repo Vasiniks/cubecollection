@@ -1,0 +1,50 @@
+# model: kungfu-dot-cube-3x3
+# Pass 3 (model enumeration), Agent D. Single model under `kungfu-dot-cube`.
+# scope_class: reference_only — real and identifiable, but no documented historical or
+# collector significance was found this pass. See "scope_class decision" note below.
+id: kungfu-dot-cube-3x3
+entity: model
+family_id: kungfu-dot-cube
+manufacturer_id: kungfu
+name: "KungFu Dot Cube 3x3"
+scope_class: reference_only
+description: |-
+  TheCubicle's own product page (thecubicle-kungfu-dot-cube-3x3-2020, tier 2, first captured
+  2020-09-22): "The Kung Fu Dot Cube is a well performing, sculpted 3x3 with plastic circular
+  tiles on each face. A tool to remove these tiles is also included, allowing for a changeable
+  color scheme." Structured spec table: "Type: 3x3 / Dimensions: 56.0mm³ / Gross Weight: 95g /
+  Item Weight: 79.3g." The user-changeable, removable circular-tile face treatment is read as
+  the reason this is treated as a distinct model from `kungfu-qinghong-3x3`/`kungfu-longyuan-
+  3x3` (a genuinely different piece-face geometry, per DATA_MODEL section 4.2, not merely a
+  colourway), and as the reason it is out of WCA-legal `core` scope (a standard competition
+  cube's colour scheme is not user-changeable via removable tiles at the table).
+
+  **scope_class decision.** Recorded `reference_only` rather than `conditional`: this is a
+  real, identifiable, novelty product (a "sculpted" 3x3 with a removable-tile gimmick), but no
+  source located this pass documents any competitive use, collector market, production first,
+  or influence on later designs — the retailer's own description is purely a feature
+  description, not a significance claim. Per the pass-3 admission policy section 2, "it is
+  unusual" (or here, "it has a colour-changing gimmick") is explicitly not sufficient
+  justification for `conditional`; `reference_only` is used instead of inventing significance.
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+specs:
+  size_mm: 56.0
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-kungfu-dot-cube-3x3-2020]
+    note: "Single tier 2 retailer spec table ('Dimensions: 56.0mm³' — read as a 56.0mm edge
+      length)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-kungfu-dot-cube-3x3-2020]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture located is 2020-09-22, a Wayback crawl
+      timestamp; the page's own 'Added: 2018-09-11' field is a documented recurring
+      catalogue-migration artifact and is not used as a date. Left unset."

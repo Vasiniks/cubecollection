@@ -1,0 +1,58 @@
+# model: witeden-mixup-plus
+# Pass 3 (model enumeration), Agent D. One of four models under the frozen `witeden-mixup-3x3`
+# family — see witeden-mixup-oskar.yml for the shared split reasoning. Weaker evidence than its
+# three siblings: no mechanism-description text was retrieved for this specific SKU this pass,
+# only a structured manufacturer field. Admitted on existence alone (admission policy class 2),
+# not on identity/mechanism detail.
+id: witeden-mixup-plus
+entity: model
+family_id: witeden-mixup-3x3
+manufacturer_id: witeden
+name: "WitEden 3x3x3 Mixup Plus"
+scope_class: conditional
+scope_justification: |-
+  Bears the manufacturer's own persisting "3x3x3 Mixup" product name directly (the base Mixup
+  Cube concept documented as Oskar van Deventer's design mass-produced by WitEden — see
+  witeden-mixup-oskar.yml for the fuller version of this argument, wikipedia-oskar-van-deventer
+  and wikipedia-combination-puzzle, tier 4, corroboration only). TheCubicle's own dedicated
+  product page (thecubicle-witeden-mixup-plus, tier 2) names "WitEden" as manufacturer directly
+  on its structured spec table, supplying the rule-15 tier 1-3 requirement, though it gives no
+  mechanism-description prose distinguishing "Plus" from the plain Mixup concept — the
+  significance argument here rests on the shared documented lineage, not on a "Plus"-specific
+  claim, and is recorded at reduced confidence accordingly (see /scope_justification
+  attestation).
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+description: |-
+  TheCubicle's own structured spec table (thecubicle-witeden-mixup-plus, tier 2): "Manufacturer
+  / WitEden", "Type / Other" — no descriptive prose about the mechanism itself was retrieved
+  this pass. The URL slug ("witeden-3x3x3-mixup-plus") and product title are the only basis for
+  treating this as a distinct, separately-named product from the plain "3x3x3 Mixup" concept;
+  whether "Plus" denotes an added mechanical feature (as with Edge-Split and 30-Degree Turn) or
+  is simply this specific manufacturer's name for what other sources call the base Mixup
+  concept is genuinely unclear from the evidence gathered this pass, and is left as an open
+  question for a future pass with access to the full product description.
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: uncertain
+    sources: [thecubicle-witeden-mixup-plus, wikipedia-oskar-van-deventer,
+      wikipedia-combination-puzzle]
+    note: "The tier 1-3 evidentiary bar (rule 15) is met by thecubicle-witeden-mixup-plus; the
+      significance argument itself rests on the shared 'Mixup' lineage established for the
+      other three models in this family, not on any 'Plus'-specific documented significance,
+      hence `uncertain` rather than `reported`."
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-witeden-mixup-plus]
+    note: "Existence and manufacturer are reported at tier 2; the model-identity question
+      (whether 'Plus' is a distinct mechanism or simply this product's name for the base Mixup
+      concept) is explicitly unresolved."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The capture located (2022-05-17) is a Wayback crawl
+      timestamp, not a release-date statement — not used as a date per the pass-3 admission
+      policy section 3. Left unset."

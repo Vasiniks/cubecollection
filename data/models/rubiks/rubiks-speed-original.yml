@@ -1,0 +1,43 @@
+# model: rubiks-speed-original
+# Pass 3 (model enumeration), Agent D. The earlier, non-magnetic "Speed Cube" generation
+# documented only as a bare product-category name in Rubik's own January 2017 site navigation.
+# Split from `rubiks-speed-magnetic` per the RESEARCH_SPEC section 4.2 default-to-new-model
+# rule: the family record itself explicitly left open whether the 2017-era and current magnetic
+# generations are one model with a revision or two models, and no source describes either
+# generation's actual mechanism in enough detail to adjudicate confidently. Recorded separately
+# with `confidence: uncertain` on the generation claim rather than silently collapsed. See
+# data/families/rubiks-speed.yml.
+id: rubiks-speed-original
+entity: model
+family_id: rubiks-speed
+manufacturer_id: rubiks
+name: "Rubik's Speed Cube"
+scope_class: core
+generation:
+  label: "Speed Cube (pre-magnetic)"
+  basis: community_convention
+description: |-
+  Rubik's own official site, captured January 2017 (rubiks-com-2017-speedcube-category, tier
+  1, UK/Rubik's Brand Ltd era, pre-Spin Master): main store navigation lists "Cubes / Speed
+  Cube / Other Games / Stickers / Novelty Gifts / Electronic / Clothing" as top-level
+  categories, distinct from the base "Cubes" category. No product detail page was captured
+  this pass, so no mechanism, magnet, or core claim is attested for this generation beyond its
+  bare existence as a named product category on the brand's own site, predating the "new...
+  magnetic" relaunch documented for `rubiks-speed-magnetic`.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [rubiks-com-2017-speedcube-category]
+    note: "No manufacturer generation name or number was found — 'pre-magnetic' is this
+      record's own descriptive label for the earlier state implied by contrast with the later
+      'new... magnetic' banner (rubiks-com-2022), not a name Rubik's itself used. Recorded
+      `community_convention` because it is this archive's own convention, not the
+      manufacturer's, and flagged at reduced confidence accordingly."
+  /description:
+    confidence: reported
+    sources: [rubiks-com-2017-speedcube-category]
+    note: "Category-navigation-level evidence only (tier 1 source, but a thin claim: a nav-menu
+      label, not a product page). Confidence capped at `reported` rather than `confirmed`
+      because the claim itself (a distinct, non-magnetic generation) is inferred from the
+      absence of a magnet claim at this date, not stated directly."

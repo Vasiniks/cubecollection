@@ -1,0 +1,38 @@
+# source: wikipedia-oskar-van-deventer
+# Pass 3 (model enumeration), Agent D. Wikipedia's biographical article on puzzle designer
+# Oskar van Deventer, captured via Wayback. Tier 4 (unattributed/community-edited wiki by
+# default per vocab/source-kinds.yml), used as corroboration only — the tier1-3 evidence
+# required by rule 15 for `scope_class: conditional` on the WitEden Mixup models is supplied
+# by the existing tier 2 retailer sources (thecubicle-witeden-mixup-3x3-variants,
+# thecubicle-witeden-mixup-plus), not by this record.
+id: wikipedia-oskar-van-deventer
+entity: source
+kind: wiki
+title: "Oskar van Deventer — Wikipedia"
+publisher: "Wikipedia"
+url: "https://en.wikipedia.org/wiki/Oskar_van_Deventer"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241226015429/https://en.wikipedia.org/wiki/Oskar_van_Deventer"
+excerpt: |-
+  "Oskar van Deventer (born 1965) is a Dutch puzzle maker. He prototypes puzzles using 3D
+  printing. His work combines mathematics, physics, and design, and he collaborates at academic
+  institutions... Many of his combination puzzles are in mass production by Uwe Mèffert and
+  WitEden... He was a Guinness World Record holder for his 17×17×17 'Over the Top Cube'
+  Rubik's cube-style puzzle from 2012 to 2016... He has over 100 publications, over 80 patents
+  applications, and hundreds of standardization contributions." Under "Mass-produced puzzles":
+  "Mixup Cube: a 3×3×3 Rubik's cube that can perform 45° rotations on the middle layers,
+  allowing centers interchange with edges. It was mass-produced by WitEden." — footnoted to
+  "TwistyPuzzles.com > Museum > Mixup 3x3x3".
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 4 by default (unattributed/collaboratively-edited wiki), not
+  individually reviewed for a tier-3 override this pass. Corroborates, but does not alone
+  establish, that (a) Oskar van Deventer is an independently notable puzzle designer (Guinness
+  World Record holder, prolific patent holder, academically affiliated) and (b) his 'Mixup
+  Cube' design is specifically mass-produced by WitEden — used to support the significance
+  prose in the WitEden Mixup models' `scope_justification`, alongside the tier 2 retailer
+  source that supplies rule 15's required tier 1-3 evidence."
+status: sourced

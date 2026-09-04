@@ -1,0 +1,33 @@
+# model: fanxin-magnetic-3x3-standard
+# Pass 3 (model enumeration), Agent D. Single model under `fanxin-magnetic-3x3`. Note this is a
+# genuinely separate, frozen family from `fanxin-3x3` (see that family's pass-2 record); this
+# pass does not merge them, per the batch instruction to leave that question as an escalation
+# rather than act on it. No generation naming, successor, or predecessor was found.
+id: fanxin-magnetic-3x3-standard
+entity: model
+family_id: fanxin-magnetic-3x3
+manufacturer_id: fanxin
+name: "FanXin Magnetic 3x3"
+scope_class: core
+description: |-
+  TheCubicle's own product page (thecubicle-fanxin-3x3-products, first captured 2020-08-04,
+  tier 2): "This Magnetic 3x3 speed cube is FanXin's first attempt at a modern, magnetic
+  puzzle. It is a classic design with a papery/scratchy feel." Described directly by the
+  retailer as FanXin's "first attempt" at a magnetic 3x3 — read as a claim about the product's
+  place in FanXin's own catalogue development, not a claim that this is a new tooling
+  generation of the plain `fanxin-3x3` model; no source states a shared or derived mechanism
+  between the two families. No successor or predecessor generation carrying this name was
+  found.
+status: drafted
+attestations:
+  /description:
+    confidence: reported
+    sources: [thecubicle-fanxin-3x3-products]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture located is 2020-08-04, a Wayback crawl
+      timestamp, not a release-date statement — not used as a date per the pass-3 admission
+      policy section 3. Left unset."

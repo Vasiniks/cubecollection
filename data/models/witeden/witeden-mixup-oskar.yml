@@ -1,0 +1,62 @@
+# model: witeden-mixup-oskar
+# Pass 3 (model enumeration), Agent D. One of four models under the frozen `witeden-mixup-3x3`
+# family (see witeden-mixup-edge-split.yml, witeden-mixup-30-degree-turn.yml, witeden-mixup-
+# plus.yml for the siblings, and this note repeated in each for the shared boundary reasoning).
+# Pass 2 deliberately bundled these four into one family rather than splitting families; this
+# pass splits them into separate MODELS, not because of marketing labels, but because each is
+# described with its own distinct mechanical detail (a mold/internal-geometry difference under
+# DATA_MODEL section 4.2), which is design evidence, not a re-split on a hunch.
+id: witeden-mixup-oskar
+entity: model
+family_id: witeden-mixup-3x3
+manufacturer_id: witeden
+name: "WitEden & Oskar 3x3x3 Mixup"
+scope_class: conditional
+scope_justification: |-
+  The "Mixup Cube" is a documented, historically notable twisty-puzzle design credited to
+  Oskar van Deventer, an independently significant puzzle designer: Wikipedia states he "was a
+  Guinness World Record holder for his 17x17x17 'Over the Top Cube'... has over 100
+  publications, over 80 patents applications" and that his "Mixup Cube: a 3x3x3 Rubik's cube
+  that can perform 45 degrees rotations on the middle layers, allowing centers interchange with
+  edges... was mass-produced by WitEden" (wikipedia-oskar-van-deventer; corroborated
+  independently by wikipedia-combination-puzzle: "Invented by Oskar van Deventer, it looks like
+  a disproportional Rubik's Cube, but it allows the middle layer to turn 45 degrees and swap
+  center pieces with edge pieces" — both tier 4, corroboration only). TheCubicle's own product
+  page for this specific "& Oskar"-credited SKU (thecubicle-witeden-mixup-3x3-variants, tier 2)
+  supplies the rule-15 tier 1-3 requirement directly, naming the designer credit on the retail
+  product title itself. This is a documented place in twisty-puzzle design history (a named,
+  independently notable inventor's design, mass-produced by this specific manufacturer), not
+  merely "an unusual mechanism."
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+description: |-
+  TheCubicle's own product page (thecubicle-witeden-mixup-3x3-variants, tier 2): "The WitEden &
+  Oskar 3x3x3 Mixup looks on the outside just like any 3x3x3 puzzle with bigger outer layers.
+  But the mechanism allows it to be manipulated in many more ways compared to an ordinary
+  3x3x3." The "Oskar" credit is read as Oskar van Deventer, a widely recognised twisty-puzzle
+  designer independently documented (wikipedia-oskar-van-deventer) as the inventor of the
+  "Mixup Cube" concept mass-produced by WitEden — this specific attribution (that "Oskar" on
+  this product page means this individual) was not independently verified beyond the retailer's
+  own product title/copy this pass, and is recorded at reduced confidence accordingly.
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: reported
+    sources: [thecubicle-witeden-mixup-3x3-variants, wikipedia-oskar-van-deventer,
+      wikipedia-combination-puzzle]
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-witeden-mixup-3x3-variants]
+    note: "The mechanism description itself is reported/tier 2; the specific identification of
+      'Oskar' as Oskar van Deventer is this record's own inference, not independently verified,
+      hence `uncertain` overall rather than `reported`."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found: this is one of four parallel named designs under the
+      shared 'WitEden 3x3x3 Mixup' family name, not a numbered/sequential generation of any
+      other. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The earliest capture located across all four Mixup
+      variants (2020-08-04, this variant) is a Wayback crawl timestamp, not a release-date
+      statement — not used as a date per the pass-3 admission policy section 3. Left unset."

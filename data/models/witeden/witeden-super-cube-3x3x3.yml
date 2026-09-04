@@ -1,0 +1,49 @@
+# model: witeden-super-cube-3x3x3
+# Pass 3 (model enumeration), Agent D. Single model under `witeden-super-3x3x3`.
+# scope_class: reference_only — see decision note below.
+id: witeden-super-cube-3x3x3
+entity: model
+family_id: witeden-super-3x3x3
+manufacturer_id: witeden
+name: "WitEden Super 3x3x3"
+aliases:
+  - "Super 3x3x3"
+scope_class: reference_only
+description: |-
+  TheCubicle's own product page (thecubicle-witeden-super-3x3x3, tier 2): "The WitEden Super
+  3x3x3 features a circular structure on the white and yellow faces which can only be turned by
+  the middle layer. This allows it to be manipulated in more ways than a conventional 3x3 cube
+  can." The Speedsolving wiki independently names "Super cubes" among WitEden's own post-2010
+  specialties (speedsolving-wiki-witeden) — but that source is held at tier 4 by a prior QC
+  decision (issue E1, carries a live "may be currently outdated" banner) and corroborates only,
+  per RESEARCH_SPEC's standing rule that tier 4 "corroborates only, never establishes."
+
+  **scope_class decision.** Recorded `reference_only` rather than `conditional`: no tier 1-3
+  source located this pass documents a named designer credit, a competitive use, a collector
+  market, or a production-first claim for this specific mechanism (unlike the WitEden Mixup
+  models' documented Oskar van Deventer lineage). A general web search for "Super cube" or
+  "Supercube" as a named category found no coverage in the one general puzzle-reference source
+  checked this pass (wikipedia-combination-puzzle). Real, identifiable, genuinely distinct
+  mechanism from a standard 3x3 — but not documented as historically or collector significant,
+  so `reference_only` is used rather than an invented justification.
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+status: drafted
+attestations:
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-witeden-super-3x3x3]
+  /description:
+    confidence: probable
+    sources: [thecubicle-witeden-super-3x3x3, speedsolving-wiki-witeden]
+    note: "Mechanism description at tier 2 (reported); the 'Super cube' category name is
+      independently corroborated by the tier 4 wiki, consistent with but not elevating the
+      mechanism claim beyond what the tier 2 source alone supports."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The capture located (2020-09-23) is a Wayback crawl
+      timestamp, not a release-date statement — not used as a date per the pass-3 admission
+      policy section 3. Left unset."

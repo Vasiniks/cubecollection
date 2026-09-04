@@ -1,0 +1,68 @@
+# model: rubiks-classic-cube
+# Pass 3 (model enumeration), Agent D. Single model under `rubiks-classic`. Existence and
+# identity are both established directly on Rubik's own current product page. No manufacturer-
+# declared or community-numbered generation name was found (contrast the Speed line, which
+# does carry a "new magnetic" relaunch banner) — recorded with `generation` unset rather than
+# invented. The site's own "Improved Play" mechanism claim is recorded as an undated
+# `revisions[]` entry, not a second model, because no source describes what physically changed
+# or gives it a name/date distinguishing it as a different design rather than an incremental
+# running change. The special/material/sticker editions this family's pass-2 record already
+# identified (Crystal, Phantom, Retro, Re-Cube, Coach Cube, Impossible, Disney, the licensed
+# "Cuber" collaborations, etc.) are NOT modelled here — per DATA_MODEL section 4.2 and the
+# frozen family-level boundary call, they are variants of this one model, left to pass 4.
+id: rubiks-classic-cube
+entity: model
+family_id: rubiks-classic
+manufacturer_id: rubiks
+name: "Rubik's 3x3 Cube"
+aliases:
+  - "Rubik's Cube"
+  - "The Original Rubik's Cube"
+scope_class: core
+description: |-
+  Rubik's own current product page (rubiks-com-3x3-cube-product-2024, tier 1): "Meet the puzzle
+  that changed the world! ... Improved Play: The new and improved Rubik's Cube features a
+  mechanism that results in a smoother, faster and more reliable play. Stickerless: The
+  traditional stickers have been replaced with plastic tiles which means no fading, peeling or
+  cheating!" The "stickerless" option is a surface/material configuration (variant-level, per
+  the frozen family record); the "Improved Play" mechanism claim is recorded below as an
+  undated revision rather than a second model, since no source states what changed physically,
+  when, or gives the changed version its own name.
+
+  No manufacturer-declared or community-numbered generation scheme was found for this line
+  (contrast `rubiks-speed`, whose current generation is explicitly marketed as "The New Rubik's
+  Speed Cube"). This model is therefore recorded as the family's one persisting design across
+  the archive's 2016-2026 window, without a `generation` block, rather than inventing an
+  ordinal or label the sources do not support.
+revisions:
+  - id: improved-play
+    label: "\"Improved Play\" mechanism"
+    changes: "Rubik's own current product page states the cube 'features a mechanism that
+      results in a smoother, faster and more reliable play' than an earlier, unnamed prior
+      state of the same product. No source states what physically changed (core, spring
+      tension, piece tolerances, etc.), nor when the change took effect."
+    distinguishable_by: "Not stated by any source found this pass — no physical distinguishing
+      marks, dates, or packaging differences were located."
+    basis: manufacturer_declared
+status: drafted
+attestations:
+  /aliases:
+    confidence: probable
+    sources: [rubiks-com-3x3-cube-product-2024, rubiks-history-2024]
+  /description:
+    confidence: confirmed
+    sources: [rubiks-com-3x3-cube-product-2024]
+    note: "Tier 1, first-party manufacturer product page, directly naming and describing the
+      current product."
+  /revisions/0:
+    confidence: uncertain
+    sources: [rubiks-com-3x3-cube-product-2024]
+    note: "Manufacturer-stated but undated and physically unspecified marketing language
+      ('smoother, faster and more reliable') — recorded honestly as a claimed-but-unspecified
+      running change, not elevated to a distinct model absent any description of what actually
+      changed."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found: no manufacturer-declared or community-numbered generation
+      scheme exists for the base classic line in any source located this pass. Field left
+      unset rather than invented."

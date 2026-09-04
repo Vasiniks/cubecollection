@@ -1,0 +1,49 @@
+# model: calvins-full-function-crazy-3x3
+# Pass 3 (model enumeration), Agent D. Single model under `calvins-crazy-3x3`.
+# scope_class: reference_only. See "scope_class decision" note below — checked against
+# Wikipedia's documented "Crazy cube" definition and found to describe a mechanically
+# different concept, so that source is deliberately NOT used to support `conditional` here.
+id: calvins-full-function-crazy-3x3
+entity: model
+family_id: calvins-crazy-3x3
+manufacturer_id: calvins-puzzle
+name: "Calvin's Full-Function Crazy 3x3 (Center-Locking)"
+aliases:
+  - "Full-Function Crazy 3x3 (Center-Locking)"
+scope_class: reference_only
+description: |-
+  TheCubicle's own product page (thecubicle-calvins-full-function-crazy-3x3, tier 2): "The
+  Full-Function Crazy 3x3 is a puzzle from Calvin that has circles on the center of each face.
+  These circles do not turn when you turn the face, they're 'locked' into place. It can still
+  be fully scrambled and offers quite the challenge if you've never solved a Crazy puzzle
+  before." Filed under the retailer's own "Shape Mods" type.
+
+  **scope_class decision.** Recorded `reference_only` rather than `conditional`. Wikipedia's
+  general "Combination puzzle" reference article does document a named "Crazy cube" category
+  (wikipedia-combination-puzzle, tier 4, checked this pass) — but its description is
+  specifically of the 4x4x4 "Crazy cube type I / type II" mechanism, where the inner circles
+  are connected and still move (as 8 distinct pieces), not a 3x3 with fully locked,
+  non-turning centers. That mismatch was checked deliberately rather than assumed away: the
+  documented category does not clearly cover this specific mechanism, so it is not used to
+  support significance here. No other source located this pass documents a competitive use,
+  collector market, production first, or design influence for this specific product. Per the
+  pass-3 admission policy section 2, a real but undocumented-as-significant novelty mechanism
+  is recorded `reference_only`, not `conditional` on an invented or mismatched justification.
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+status: drafted
+attestations:
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-calvins-full-function-crazy-3x3]
+  /description:
+    confidence: reported
+    sources: [thecubicle-calvins-full-function-crazy-3x3, wikipedia-combination-puzzle]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The only capture located (2023-02-06) is a Wayback crawl
+      timestamp, not a release-date statement — not used as a date per the pass-3 admission
+      policy section 3. Left unset."
