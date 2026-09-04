@@ -1,7 +1,7 @@
 # Pass 3 — model enumeration progress
 
-**Updated:** 2026-09-03 · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
-**Batch 1: COMPLETE** — all four lanes merged, including two recovered after a rate-limit kill.
+**Updated:** 2026-09-04 · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
+**Batch 1: COMPLETE** · **Batch 2: COMPLETE** — all four lanes merged, two recovered after rate-limit kills.
 
 ## Invariants (verified at this commit)
 
@@ -10,70 +10,79 @@
 | entities | 54 | **54** | ✓ |
 | families | **122 — FROZEN** | **122** | ✓ |
 | variants | **104 — Pass 4, must not change** | **104** | ✓ |
-| models | 48 at Pass 3 start | **156** | +108 |
-| sources | 289 at Pass 3 start | **367** | +78 |
+| models | 48 at Pass 3 start | **207** | +159 |
+| sources | 289 at Pass 3 start | **400** | +111 |
 
-Verified programmatically across all 156 models: every `family_id` resolves, every model's
+Verified programmatically across all 207 models: every `family_id` resolves, every model's
 `manufacturer_id` matches its family's, every model carries `scope_class`, no duplicate ids.
+
+`scope_class`: **core 189 · reference_only 11 · conditional 7**
 
 ## Coverage
 
-**55 of 122 families now have models. 67 remain unenumerated.**
+**89 of 122 families now have models. 33 remain unenumerated.**
 
-| Manufacturer | Models | Status |
+| Manufacturer | Models | Batch |
 |---|---|---|
-| gan | 40 | pilot (pre-Pass 3) |
-| qiyi | 24 | **Batch 1 ✓** |
-| dayan | 23 | **Batch 1 ✓** (recovered) |
-| moyu | 23 | **Batch 1 ✓** |
-| yj | 22 | **Batch 1 ✓** (recovered) |
-| shengshou | 11 | **Batch 1 ✓** (recovered) |
+| gan | 40 | pilot |
+| qiyi | 24 | 1 |
+| moyu | 23 | 1 |
+| dayan | 23 | 1 |
+| yj | 22 | 1 |
+| shengshou | 11 | 1 |
+| mfjs | 10 | **2** |
+| yuxin | 8 | **2** |
+| cyclone-boys | 6 | **2** |
+| rubiks | 5 | **2** |
+| x-man-design | 5 | 1 |
 | monster-go | 5 | pilot |
-| x-man-design | 5 | **Batch 1 ✓** |
+| witeden | 7 | **2** |
+| calvins-puzzle | 3 | **2** |
+| kungfu | 3 | **2** |
+| fanxin | 3 | **2** |
+| maru | 4 | **2** |
+| diansheng | 4 | **2** |
 | swift-block | 3 | pilot |
 
-`scope_class`: **core 152 · reference_only 3 · conditional 1**
+## Zero-model families — deliberate findings, not gaps
 
-## Batch 1 disposition
-
-| Lane | Outcome |
+| Family | Reason |
 |---|---|
-| **A — MoYu** (9 families) | 23 models. Merged `a1ec16c`. |
-| **B — QiYi + X-Man** (11 families) | 29 models, 33 sources. Held for QA, both items reconciled, then merged. |
-| **C — DaYan** (8 families) | 23 models. **Terminated by rate limit**; committed work + 3 uncommitted TengYun records recovered from the surviving worktree. |
-| **D — YJ + ShengShou** (16 families) | 33 models. **Terminated by rate limit**; committed work + 9 uncommitted MGC records recovered. |
-
-**Nothing was re-researched.** Both killed lanes had intact worktrees; their uncommitted records
-validated clean and were committed rather than discarded.
+| `yuxin-3x3` | tier-4-only; full 666toy CDX sweep + TheCubicle + cubezz found no admissible model |
+| `yuxin-water` | same |
+| `cyclone-boys-metallic-3x3` | "Metallic" reads as a finish treatment — a Pass 4 variant axis, not a model line. Written up in `research/notes/models/cyclone-boys-metallic-3x3-zero-model.md` |
 
 ## Escalations
 
 | id | Status |
 |---|---|
-| **E-VALK-1** | Open — `research/qc/pass3-escalation-valk.md`. Prose-only defect in `qiyi-valk`'s description; **no family mutated**. |
+| **E-VALK-1** | Open — `research/qc/pass3-escalation-valk.md`. Prose-only defect in `qiyi-valk`; no family mutated. |
 
-## Scope-class discrimination (worth preserving as precedent)
+## Review items raised in Batch 2 (not silently resolved)
 
-`qiyi-sail-big` was admitted `conditional` on documented competitive feet-solving use.
-`qiyi-warrior-plus` and `qiyi-qimeng-plus` were left `reference_only` — oversized, but with no
-documented significance. This is the S6 policy's "significance, not mere unusualness" rule
-applied correctly rather than everything being swept into `conditional`.
+- **`yuxin-little-magic-v3` `/name`** at `uncertain` — the manufacturer titles it "Small Magic",
+  not "Little Magic". Filed on category placement plus independent retailer naming.
+- **Rubik's Speed split** (`original` / `magnetic`) at `uncertain` — sequential replacement plus a
+  declared core change, not two simultaneous SKUs. Revisit if a mechanism source appears.
+- **`witeden-mixup-plus`** at `uncertain` — name and spec table only, no mechanism evidence.
+- **Two orphaned MFJS keychain sources** (30mm, 35mm) with no model record — the agent was killed
+  before writing them. Retained per policy.
+- **FanXin plain vs magnetic** — a possible shared-tooling question that would need a *family*
+  merge. Out of Pass 3 scope; recorded, not acted on.
 
-## Remaining work — 67 zero-model families
+## Date artifacts — now three retailer plus one manufacturer
 
-Next batch, by evidence strength and historical weight:
-**yuxin** (7) · **diansheng** (5) · **cyclone-boys** (5) · **maru** (4) · **rubiks** (3) ·
-**mfjs** (3) · **fanxin** (3) · **kungfu** (3) · **calvins-puzzle** (3) · **witeden** (3)
+`Added: 2018-09-11` (29 occurrences / 22 sources / 13 brands) · `Added: 2018-10-14` ·
+`Added: 2018-11-07` · **NEW: `2018-07-16` uniform sidebar date on 666toy.com** — the first such
+artifact on a *manufacturer's own* site rather than a retailer's. All refused; none used as a date.
 
-Then the ~28 single- and double-family manufacturers.
+## Remaining work — 33 zero-model families
 
-## Open questions carried forward
-
-- Several MoYu/QiYi model/variant calls flagged `uncertain` by their agents (WeiLong V2,
-  RS3M "2021", `qiyi-warrior-m` vs `-m-pro`, `qiyi-m-pro-v2`) — recorded in the agent reports,
-  not silently resolved.
-- No `specs` block was created anywhere in Batch 1: no tier 1–2 spec source was found, and the
-  policy forbids specs from weaker sources. Left unset rather than guessed.
+Next batch candidates, by evidence strength: the ~28 single- and double-family manufacturers
+(`escube`, `giiker`, `huameng`, `newisland`, `qj`, `guoguan`, `guojia`, `haitun`, `lefun`,
+`mefferts`, `mohuanshousu`, `mojue`, `moretry`, `particula`, `pbcube`, `senhuan`, `yancheng`,
+`cube4you`, `cubestyle`, `eastsheen`, `fangshi`, `mf8`) plus the remaining `diansheng` and
+`yuxin` families that Batch 2 could not admit.
 
 ## Pass 4
 
