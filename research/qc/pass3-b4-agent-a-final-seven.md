@@ -259,4 +259,217 @@ such), `thecubicle-moretry-tianma-x3-plus-v3-2025`, `cubelelo-moretry-tianma-x3-
 
 ---
 
-(sections 6-7 to follow)
+## 6. `diansheng-type-e` — accepted, one model. PRIORITY 1, evidence-position case.
+
+**Search performed, in the order the evidence position required.** The family's sole existing
+source, `speedsolving-wiki-diansheng-products`, is tier 4 and — per the lane's own critical
+evidence position — cannot establish a model alone. WebSearch was unavailable this session
+(budget exhausted before this family was reached); DuckDuckGo and Bing were tried via WebFetch
+and returned unusable/irrelevant results (a CAPTCHA wall and off-topic hits respectively).
+**Pivoted to Speedsolving.com's own forum search directly** (not the wiki namespace) and found
+five real 2008 threads discussing DianSheng "Type E"/"(e)" cubes by name. Three were fetched in
+full: a dated hands-on review (2008-06-25), a for-sale listing (2008-12-23), and a discussion
+thread (2008-07-09) — all independent, all tier 3 (forum, per `vocab/source-kinds.yml`), none
+of them the wiki. Also checked `dianshengtoys.com`'s own earliest Wayback captures (2009,
+2011) hoping for first-party corroboration — both are garbled-encoding, domain-suspension-
+notice pages with no product content, not usable.
+
+**Accepted:** `diansheng-type-e-standard` — existence and identity now rest on the three tier 3
+forum threads (`reported` confidence, S6 class 2), not on the wiki. The wiki is retained only
+for descriptive detail (the "no.222"/"no.333" catalogue-number aside, the "very light weight"
+framing) per RESEARCH_SPEC §5.1 ("tier 4... corroborates only"). `released`: `before 2008` at
+year precision, `reported` — not a launch statement, but two independently dated 2008 forum
+posts (June, July) genuinely bound the product as already circulating and already owned by
+multiple posters by mid-2008, which is real circulation evidence under the S6 policy §3.
+Specs left entirely unset — no tier 1-2 measurement was found anywhere. A "painted vs.
+stickered" difference reported across the forum sources (one 2008 review found stickers on its
+own unit; a separate for-sale post describes a painted unit) is read as a sticker/colour-
+application variant difference within this one design, not a second model.
+
+**Id note.** The model is `diansheng-type-e-standard`, not the bare `diansheng-type-e` string —
+that string is the frozen family's own id, and rule 3's id-uniqueness check is global across
+entity types in this codebase's validator (confirmed by reading `scripts/validate.mjs`'s
+`seenIds` map), not scoped per entity type as the schema description alone might suggest. Both
+DianSheng models in this lane needed the `-standard` suffix for this reason.
+
+**§3.6a record.** Retailer prefix sweep: not applicable (no retailer carries this circa-2008
+product; TheCubicle's own `diansheng*` prefix sweep, re-run this pass, confirms only modern
+2020s SKUs, consistent with the family's own framing). Non-US/English retailer: not applicable
+for the same reason. Community-forum discovery (the applicable channel for a pre-retailer-era
+product) was the substitute breadth check, performed directly.
+
+**Sources used:** `speedsolving-wiki-diansheng-products` (existing, reused, downgraded to
+corroboration-only role). **Sources created:** `speedsolving-forum-diansheng-type-e-
+review-2008`, `speedsolving-forum-diansheng-for-sale-2008`, `speedsolving-forum-diansheng-
+questions-2008`.
+
+---
+
+## 7. `diansheng-stickerless-3x3` — accepted, one model. PRIORITY 1, evidence-position case.
+
+**Search performed.** Same starting position as `diansheng-type-e`: the sole existing source is
+tier 4 and inadmissible alone. Searched Speedsolving.com's own forum directly for "Diansheng
+stickerless" and found a real 2014 for-sale/trade thread ("WTB's at BASC 4") naming this exact
+product. Also searched for "Cubey Time" (the YouTuber the wiki credits) to test the wiki's
+specific "Will It Lube" claim independently — found the series itself is real and
+community-recognised (Speedsolving.com's own "Best YouTube cubing series" forum award, 2015 and
+2016), but **no source found this pass independently confirms the specific pairing** of a
+DianSheng Stickerless 3x3 with that series — that detail remains sourced to the wiki alone and
+is recorded as descriptive colour, not as load-bearing existence evidence. Attempted to fetch
+YouTube search results directly for the video itself; YouTube's search page is JS-rendered and
+returned no usable content via WebFetch.
+
+**Accepted:** `diansheng-stickerless-3x3-standard` — existence rests on the 2014 forum thread
+alone (`reported`, S6 class 2): a real trade of a "DianSheng Stickerless 3x3" at $6, with the
+seller's own words ("The 3x3 is not the best...") independently corroborating the family's "very
+bad 3x3" framing. `released` left `unknown` — deliberately, not merely "not found": the 2014
+thread is a *used-goods trade* thread, bounding circulation by that date but not closely enough
+to the product's real launch to justify even a `before` qualifier at a useful precision without
+overclaiming; a fabricated "before 2014" would imply more confidence than the evidence supports
+for something already being resold secondhand. Specs and generation both left unset — nothing
+found at any tier.
+
+**Id note.** Same collision and same fix as `diansheng-type-e`: model id is
+`diansheng-stickerless-3x3-standard`, distinct from the frozen family's bare
+`diansheng-stickerless-3x3` id.
+
+**§3.6a record.** Not applicable in the retailer sense (a circa-2010s low-end/secondhand
+product, not carried new at TheCubicle, Cubelelo, or Cubezz — not separately re-checked this
+pass given the community-forum evidence already found is the relevant channel for this kind of
+product). Community-forum discovery performed directly, as above.
+
+**Sources used:** `speedsolving-wiki-diansheng-products` (existing, reused, downgraded to
+corroboration-only role for the "Will It Lube" claim specifically). **Source created:**
+`speedsolving-forum-diansheng-stickerless-wtb-2014`.
+
+---
+
+## Escalations (summary)
+
+1. **`haitun-zhanlang` — likely missing family.** Cubezz.com carries a second, distinct HaiTun
+   product line ("ZhanLang V1," Standard/Flagship, `Manufacturer: HAITUN CUBE`) with no family
+   record anywhere in this archive. Not a taxonomy error (nothing mis-assigned), a probable
+   taxonomy *gap*. No family or model created (frozen for this lane). Evidence preserved at
+   `data/sources/cubezz-haitun-zhanlang-v1-standard.yml`. **Recommended action:** a future
+   family-enumeration pass should evaluate `haitun-zhanlang` as a candidate 123rd family.
+
+## Genuine open questions flagged for human review (not escalations, but worth a second look)
+
+- **`moretry-tianma-x3-v2`** is admitted on the thinnest evidence of any model in this lane — a
+  single incidental bundle-contents mention inside a page whose own body text describes a
+  different product (V4). Recorded honestly at `uncertain` throughout rather than discarded,
+  per S6 §4, but a reviewer may reasonably conclude this crosses into "too thin to keep" on
+  reflection; flagged rather than silently defended.
+- **`moretry-tianma-x3-plus`**'s exact relationship to the numbered V1-V4 sequence (successor to
+  V4 specifically, a parallel line, or something else) rests on one informal customer review,
+  not retailer or manufacturer copy. The product's own title ("Moretry Tianma X3+ **V3** 3x3")
+  raises an unresolved question — a parallel "+"-versioned sub-line — that this pass could not
+  settle with the evidence available.
+- **`guojia-type-a-chun1`**'s entire existence rests on one incidental sentence on a different
+  product's page. Admitted per policy, but a reviewer should know this is as thin as evidence
+  gets in this archive.
+
+---
+
+## Machine-readable summary
+
+```yaml
+- id: cubestyle-3x3-standard
+  family_id: cubestyle-3x3
+  name: "CubeStyle 3x3"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: probable
+- id: guojia-type-a-chun2
+  family_id: guojia-type-a-chun
+  name: "GuoJia Type A Chun2"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: reported
+- id: guojia-type-a-chun1
+  family_id: guojia-type-a-chun
+  name: "GuoJia Type A Chun1"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: uncertain
+- id: haitun-waverider-v1
+  family_id: haitun-waverider
+  name: "HaiTun Waverider V1"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: probable
+- id: haitun-waverider-v2
+  family_id: haitun-waverider
+  name: "HaiTun Waverider V2"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: probable
+- id: lefun-3x3-standard
+  family_id: lefun-3x3
+  name: "LeFun 3x3"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: reported
+- id: moretry-tianma-x3-v1
+  family_id: moretry-tianma-x3
+  name: "MoreTry TianMa X3 V1"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: reported
+- id: moretry-tianma-x3-v2
+  family_id: moretry-tianma-x3
+  name: "MoreTry TianMa X3 V2 (Enhanced)"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: uncertain
+- id: moretry-tianma-x3-v3
+  family_id: moretry-tianma-x3
+  name: "MoreTry TianMa X3 V3 (Snap)"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: reported
+- id: moretry-tianma-x3-v4
+  family_id: moretry-tianma-x3
+  name: "MoreTry TianMa X3 V4 (MagLev)"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: reported
+- id: moretry-tianma-x3-plus
+  family_id: moretry-tianma-x3
+  name: "MoreTry TianMa X3+"
+  scope_class: core
+  evidence_tier: 2
+  date_known: false
+  confidence: reported
+- id: diansheng-type-e-standard
+  family_id: diansheng-type-e
+  name: "DianSheng Type-E"
+  scope_class: core
+  evidence_tier: 3
+  date_known: false
+  confidence: reported
+- id: diansheng-stickerless-3x3-standard
+  family_id: diansheng-stickerless-3x3
+  name: "DianSheng Stickerless 3x3"
+  scope_class: core
+  evidence_tier: 3
+  date_known: false
+  confidence: reported
+```
+
+**Totals: 13 models accepted across all 7 families. 0 rejected as models (several rejected as
+variants/aftermarket, documented per family above). 0 zero-model findings (all seven families
+cleared the S6 admission bar, contrary to the plausible outcome flagged for
+`diansheng-stickerless-3x3` in the lane brief). 1 escalation (`haitun-zhanlang`, a likely
+missing family). 3 open questions flagged for human review without a formal escalation.**
+

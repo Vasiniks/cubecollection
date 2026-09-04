@@ -1,0 +1,61 @@
+# model: diansheng-stickerless-3x3-standard
+# Pass 3 final-seven lane, Agent A. PRIORITY 1 CASE — this family's only existing source
+# (speedsolving-wiki-diansheng-products) is tier 4 and cannot establish a model alone (S6
+# policy, binding). A 2014 Speedsolving.com FORUM thread (tier 3) locating a real for-sale/
+# trade of this exact named product is what clears the admission bar; the wiki source is
+# retained only for the "Will It Lube" descriptive detail, never as sole support for
+# existence. Id suffixed "-standard" (matching cube4you-3x3-standard/cubestyle-3x3-standard
+# house convention) to avoid colliding with the frozen family id, which is the bare
+# "diansheng-stickerless-3x3" string (validator rule 3 enforces global id uniqueness across
+# all entity types, not merely within "model").
+id: diansheng-stickerless-3x3-standard
+entity: model
+family_id: diansheng-stickerless-3x3
+manufacturer_id: diansheng
+name: "DianSheng Stickerless 3x3"
+scope_class: core
+description: |-
+  A 2014 Speedsolving.com forum thread (speedsolving-forum-diansheng-stickerless-wtb-2014)
+  documents a real for-sale/trade of this exact product: "DianSheng Stickerless 3x3" offered
+  at $6.00, with the seller noting directly "The 3x3 is not the best, so if you want, I will
+  throw in a YongJun GuanLong as well" — independent tier 3 corroboration of both the
+  product's existence and its poor reputation, consistent with the family's own framing.
+
+  The Speedsolving wiki (speedsolving-wiki-diansheng-products, tier 4, corroboration only):
+  "DianSheng Stickerless 3x3 — A very bad 3x3 from when Diansheng wasn't a reputable cube
+  company. YouTuber Cubey Time used this puzzle for his very popular 'Will It Lube?' series."
+  The "Will It Lube" series' own real popularity is independently corroborated (it won
+  Speedsolving.com's own community "Best YouTube cubing series" forum award in both 2015 and
+  2016), but no source found this pass independently confirms the *specific* claim that a
+  DianSheng Stickerless 3x3 was the cube featured in that series — that detail rests on the
+  wiki alone and is recorded as descriptive colour, not as this record's existence evidence.
+
+  No dimension, weight, exact release date, or generation information was found at any tier
+  this pass. This is a single, standalone design on current evidence — no successor,
+  predecessor, or numbered version was found anywhere.
+status: drafted
+attestations:
+  /description:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-stickerless-wtb-2014, speedsolving-wiki-diansheng-products]
+    note: "The load-bearing existence claim rests on the tier 3 forum source alone
+      (`reported`, per the S6 ladder: 'one tier 1-3 source naming it as a distinct product').
+      The wiki's own 'Will It Lube' detail is corroboration-only per RESEARCH_SPEC §5.1 and is
+      not, on its own, sufficient to raise confidence on that specific sub-claim."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The 2014 forum thread bounds the product as already
+      circulating (and already considered an established, if low-regarded, budget option) by
+      October 2014, but this is a used-goods trade thread, not a dated first-sale or
+      announcement statement, and is judged too weak even for a `before` qualifier at any
+      useful precision — recording 'before 2014' would imply more confidence in this being
+      close to the actual launch than the evidence supports for a product already being traded
+      secondhand. Left unset rather than recorded at a misleadingly precise bound."
+  /specs:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2 (the only bar this archive permits for a
+      specification). Left unset entirely."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. No successor, predecessor, or version number was located
+      for this product anywhere this pass. Field left unset rather than invented."
