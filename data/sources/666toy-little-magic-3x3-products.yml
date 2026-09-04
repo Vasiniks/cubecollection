@@ -1,0 +1,61 @@
+# source: 666toy-little-magic-3x3-products
+# Pass 3 (model enumeration). YuXin's own site (666toy.com), the Little Magic Series category
+# and individual 3x3 product pages. Tier 1, first-party manufacturer product copy — establishes
+# three distinct 3x3 item-number designs within the Little Magic line: 1513 (base), 1673M
+# (explicitly "V2" in the manufacturer's own copy), and 1722 "Small Magic" (MagLev).
+id: 666toy-little-magic-3x3-products
+entity: source
+kind: manufacturer_official
+title: "666toy.com — Little Magic Series product category and 3x3 product pages"
+publisher: "Yu Xin Science And Educational Toys Co., Ltd."
+url: "https://www.666toy.com/little-magic-series/"
+preservation_method: excerpt
+excerpt: |-
+  Product page "yuxin-little-magic-1513-magic-cube-special-for-competition..." (live-fetched):
+  "Little Magic Level 3 magic Cube, racing standard size, 55.5x55.5x55.5mm... Upgraded mold,
+  better feel, avoiding the light feel caused by hollow corner blocks; The axis is very light,
+  only 1.2g... Using 2mm screws, hardened and heat treated..." No magnet mention on this page.
+
+  Product page "yuxin-little-magic-1513m-magnetic-magic-cube-special-for-racing-competitions...
+  " (live-fetched): "The size specification of the Little Magic third-level magic Cube is the
+  standard size of the racing magic Cube: 55.7x55.7x55.7mm. The magic Cube has magnetic
+  positioning, and the edges and corners have magnet slots... Adjustable elasticity and
+  tightness can be adjusted freely..." A "1513M UV" product page repeats this text verbatim
+  plus "The new and upgraded UV version of the Little Magic 3x3 Series is worth owning!" — 1513/
+  1513M/1513M-UV read as one design with magnet and UV-coating options, not separate models.
+
+  Product page "yuxin-little-magic-1673m-magnetic-magic-cube-v2-special-for-racing-
+  competitions..." (live-fetched; item number 1673, distinct from 1513): "Little magic magnetic
+  magic Cube V2, racing standard size, 55.5 x 55.5 x 55.5mm, weight is about 76g... 12 Easily
+  adjustment of the hand feel, configure the auxiliary handle of the spring, can easily adjust
+  the elasticity... The brick pattern anti-adhesive trough, the magic cube rotates more
+  smoothly..." This is the manufacturer's own product title using "V2" directly, and describes
+  both a new piece-surface geometry ("brick pattern anti-adhesive trough" — matching the
+  Speedsolving wiki's independent "brick pattern design on the pieces") and a new adjustment
+  mechanism (spring-tension auxiliary handle) not present in the 1513 line's own description —
+  the basis for treating this as a distinct model (yuxin-little-magic-v2), manufacturer-declared.
+
+  Product page "yuxin-small-magic-1722-magnetic-suspension-third-order-rubik-s-cube..." (item
+  number 1722, filed by the manufacturer under the Little Magic Series category despite its own
+  page heading reading "Small Magic" rather than "Little Magic" — the same Kirin/Kylin-style
+  cross-page transliteration inconsistency independently observed on this manufacturer's Black
+  Kirin/Kylin pages): "Yuxin Little Magic Magnetically Suspended Third Order Magic Cube adopts
+  the leading magnetic levitation technology, which makes the Magic Cube rotate with greatly
+  reduced friction..." This page names the mechanism "Magic Levitation"/MagLev directly but does
+  not itself use a "V3" numeral; the "V3" generation label is corroborated at tier 2 by
+  cubezz-yuxin-3x3-collection-2026 ("YuXin Little Magic V3 MagLev 3x3x3 Cube").
+archive_url: "https://web.archive.org/web/20260207170311/https://www.666toy.com/little-magic-series/"
+preservation_note: "Category-page archive_url is the primary preserved capture. Individual
+  product pages were live-fetched (200 OK) at research time and are quoted verbatim in this
+  excerpt; several were independently confirmed present via Wayback's `available` API
+  (e.g. 1513 at 20260518123227, 1513M at 20260518125735, 1673M at 20251213172407, small-magic-
+  1722 at 20260510135759), reproducible via `npm run wayback -- get <url> <timestamp>`."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party manufacturer product copy for specifications (size,
+  weight, mechanism names, item numbers). Superlative marketing language elsewhere on these
+  pages is not relied on here."
+status: sourced

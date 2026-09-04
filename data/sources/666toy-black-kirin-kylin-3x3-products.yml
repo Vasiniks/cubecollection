@@ -1,0 +1,65 @@
+# source: 666toy-black-kirin-kylin-3x3-products
+# Pass 3 (model enumeration). YuXin's own site (666toy.com), the "Black Kirin Series" product
+# category (URL slug: black-kirin-series) and its individual product pages. Tier 1, first-party.
+#
+# ESCALATION-ADJACENT FINDING, not a taxonomy change: this category page itself mixes "Black
+# Kirin" and "Black Kylin" spellings across its own product titles for what the evidence below
+# shows is the same underlying line, and separately carries a plain "Kylin" (no "Black") 3x3
+# line. This source is used to populate BOTH of two already-frozen, separate families
+# (yuxin-black-kirin and yuxin-kylin) without merging them — see reasoning in the excerpt below
+# and in research/qc/pass3-b2-agent-a-yuxin.md.
+id: 666toy-black-kirin-kylin-3x3-products
+entity: source
+kind: manufacturer_official
+title: "666toy.com — Black Kirin Series product category and 3x3 product pages"
+publisher: "Yu Xin Science And Educational Toys Co., Ltd."
+url: "https://www.666toy.com/black-kirin-series/"
+preservation_method: excerpt
+excerpt: |-
+  The category page's own product links use both spellings for what is otherwise one item:
+  product page slug ".../yuxin-black-kirin-1740-rubik-s-cube-champion-series-beginner-series-
+  children-s-educational-toys/" (capture 20260516023102) displays the on-page heading "Yuxin
+  Black K irin  Rubik's Cube" (sic, a stray space) with description text: "standard racing cube
+  size: 55x55x55mm; More powerful feel, better use experience; The surface of the Rubik's Cube
+  is frosted... the built-in adjustment system is adjustable for tightness... passed national
+  certification and is safe." The separate product page slug ".../yuxin-black-kylin-1553-rubik-
+  s-cube-beginner-series-children-s-educational-toy-product/" (capture 20260518121627) gives
+  WORD-FOR-WORD IDENTICAL description text under the heading "Yuxin Black Kylin Rubik's Cube."
+  This identical-text pairing is direct manufacturer-side evidence that "Black Kirin" and
+  "Black Kylin" are alternate transliterations of the same Chinese product name (黑麒麟) used
+  inconsistently across this manufacturer's own site — not two different products. Item number
+  1541 ("yuxin-black-kylin-1541-rubik-s-cube...") is a third item number for what reads as the
+  same base 3x3 design (its shape-mod siblings 1541-mirror and 1541-fisher share the item
+  number). No 3x3-specific "V2"/tiled item number was found among this category's product links
+  after crawling three category pages (55 product URLs), consistent with
+  thecubicle-yuxin-collection-2025's own note that no standalone "yuxin-black-kirin-3x3" (V2)
+  path exists at that retailer either — the wiki's "Black Kirin 3x3 V2... tiled look" generation
+  is NOT corroborated at tier 1-3 by any source found this pass and is therefore not created as
+  a model.
+
+  Separately, the same category page also lists a plain "Kylin" (no "Black") item: product page
+  "yuxin-kylin-1543-rubik-s-cube-v2-beginner-series-children-s-educational-toy" (capture
+  20260516014548), heading "Yuxin Kylin 1543 Rubik's Cube V2" — the manufacturer's own product
+  title uses "V2" directly. Description: "racing standard size: 55.5x55.5x55.5mm; Large fault-
+  tolerant design... Anti-stick grooves and extended foot design... Available in black and clear
+  colors." This is a different, non-"Black"-prefixed line, matching the frozen yuxin-kylin
+  family (whose own wiki-sourced description says "It and the YuXin Black Kirin V2 can be
+  bought with transparent plastic" — i.e. the wiki itself treats Kylin and Black Kirin as two
+  related but SEPARATE lines, consistent with keeping the two families un-merged). No magnet
+  mention on this specific page; the wiki's "Kylin V2 M" magnetized designation is corroborated
+  separately by cubezz-yuxin-3x3-collection-2026 and thecubicle-yuxin-collection-2025's
+  "yuxin-kylin-3x3-v2-m" path.
+archive_url: "https://web.archive.org/web/20260516023505/https://www.666toy.com/black-kirin-series/"
+preservation_note: "Category-page archive_url (page 1) is the primary preserved capture; pages
+  2 (20260518132319) and 3 (20260518131547) of the same category, and the individual product
+  pages cited by their own capture timestamps above, are reproducible via `npm run wayback --
+  get <url> <timestamp>`."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 1, first-party manufacturer product copy. The Kirin/Kylin spelling
+  inconsistency is itself the load-bearing fact for the model-boundary reasoning above, not a
+  weakness of the source."
+status: sourced

@@ -1,0 +1,82 @@
+# model: yuxin-little-magic-v3
+# Pass 3 (model enumeration). A MagLev redesign of Little Magic — magnetic-repulsion core in
+# place of a spring core is a mechanism difference under DATA_MODEL §4.2. Manufacturer item
+# number 1722; the manufacturer's OWN product page names it "Small Magic" rather than "Little
+# Magic" (the same Kirin/Kylin-style cross-page transliteration inconsistency independently
+# observed on this manufacturer's Black Kirin/Kylin pages), but the manufacturer files the
+# product under its "little-magic-series" category, and an independent tier-2 retailer names it
+# "Little Magic V3 MagLev" directly. Kept in the yuxin-little-magic family on that basis. See
+# research/qc/pass3-b2-agent-a-yuxin.md.
+id: yuxin-little-magic-v3
+entity: model
+family_id: yuxin-little-magic
+manufacturer_id: yuxin
+name: "YuXin Little Magic V3 MagLev"
+aliases:
+  - "YuXin Small Magic (MagLev 3x3, manufacturer's own product-page name for this item)"
+scope_class: core
+generation:
+  label: "V3 (MagLev)"
+  ordinal: 3
+  basis: community_convention
+specs:
+  size_mm: 55.5
+  maglev: maglev
+  weight_g: 68.2
+description: |-
+  666toy's own product page, item 1722 (666toy-little-magic-3x3-products; filed under the
+  manufacturer's "little-magic-series" category, but titled "Yuxin Small Magic 1722 Magnetic
+  Suspension Third Order Rubik's Cube"): "Yuxin Little Magic Magnetically Suspended Third Order
+  Magic Cube adopts the leading magnetic levitation technology, which makes the Magic Cube
+  rotate with greatly reduced friction, smooth and light." No numeric spec table and no "V3"
+  numeral on this page. cubezz-yuxin-3x3-collection-2026 independently lists "YuXin Little Magic
+  V3 MagLev 3x3x3 Cube VT Version" and "...UV Version," both with size 55.5x55.5x55.5mm and
+  weight 68.2g — the basis for both the "V3" generation label and the size/weight specs recorded
+  here.
+
+  The manufacturer's own page text alternates between "Little Magic" (in the body copy, "Yuxin
+  Little Magic Magnetically Suspended...") and "Small Magic" (in the page's own title/heading),
+  which reads as an internal translation inconsistency rather than two distinct product lines —
+  paralleling the independently-documented Black Kirin/Black Kylin spelling inconsistency on
+  this same manufacturer's site (see 666toy-black-kirin-kylin-3x3-products). Recorded here under
+  the yuxin-little-magic family per the manufacturer's own category placement and the
+  independent retailer's "Little Magic V3" naming; `confidence: uncertain` recorded on the
+  family-identity link given the page's own conflicting title.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /specs/maglev:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products, cubezz-yuxin-3x3-collection-2026]
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "Identical figure (68.2g) on both the VT and UV retailer listings."
+  /generation/basis:
+    confidence: reported
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "'V3' is not present in 666toy's own product-page title/copy for this item (which
+      instead reads 'Small Magic'), only in one tier 2 retailer's naming."
+  /name:
+    confidence: uncertain
+    sources: [666toy-little-magic-3x3-products, cubezz-yuxin-3x3-collection-2026]
+    note: "The manufacturer's own page title for this item reads 'Small Magic,' not 'Little
+      Magic'; family placement (yuxin-little-magic) rests on the manufacturer's own category
+      filing plus the retailer's independent 'Little Magic V3' naming, not on the product
+      page's own title. Flagged for review — see the header note and
+      research/qc/pass3-b2-agent-a-yuxin.md."
+  /description:
+    confidence: reported
+    sources: [666toy-little-magic-3x3-products, cubezz-yuxin-3x3-collection-2026]
+  /relationships/0:
+    confidence: uncertain
+    note: "No source states a direct succession sentence from V2 to this MagLev generation;
+      inferred from item-number progression (1513 -> 1673 -> 1722) and mechanism change."
+relationships:
+  - type: succeeds
+    target: yuxin-little-magic-v2
+    target_entity: model
+    note: "Inferred from item-number progression and a MagLev-vs-spring mechanism change; no
+      direct succession statement found."

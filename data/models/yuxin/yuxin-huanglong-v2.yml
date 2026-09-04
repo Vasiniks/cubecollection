@@ -1,0 +1,78 @@
+# model: yuxin-huanglong-v2
+# Pass 3 (model enumeration). A MagLev redesign of the HuangLong 3x3 — magnetic-repulsion core
+# in place of the original's spring-and-gasket core is a mechanism difference under DATA_MODEL
+# §4.2, not a sold configuration, so this is a new model rather than a variant of
+# yuxin-huanglong-original. Manufacturer item number 1524 (vs. 1523 for the prior generation).
+# "V2" is not used in 666toy's own product-page prose for this item, but is corroborated by two
+# independent tier-2 retailers (cubezz, TheCubicle) using that exact numeral for this same
+# MagLev item. See research/qc/pass3-b2-agent-a-yuxin.md.
+id: yuxin-huanglong-v2
+entity: model
+family_id: yuxin-huanglong
+manufacturer_id: yuxin
+name: "YuXin HuangLong V2 MagLev"
+scope_class: core
+generation:
+  label: "V2 (MagLev)"
+  ordinal: 2
+  basis: community_convention
+specs:
+  size_mm: 55.5
+  maglev: maglev
+  weight_g: 72.3
+description: |-
+  666toy's own product pages for item 1524 (666toy-huanglong-3x3-products; "1524VT" and
+  "1524UV"): "Yuxin Huanglong 3x3 Maglev Magic Cube is not only a product, but also an
+  attitude..." — names the mechanism "Maglev" directly but gives no numeric spec table and no
+  "V2" numeral. cubezz-yuxin-3x3-collection-2026 independently lists "YuXin HuangLong V2 MagLev
+  3x3x3 Speed Cube Texture VT Version" and "...UV Version" with brand field "YuXin HuangLong
+  MagLev," size 55.5x55.5x55.5mm, and weight 72.3g (VT) / 72.8g (UV) — the two capture-to-capture
+  weight figures are treated as measurement noise around one design rather than a further split.
+  thecubicle-yuxin-collection-2025 independently records "yuxin-huanglong-3x3-v2-m-uv-coated" as
+  a retail SKU (first capture 2025-10-01), the second, independently-worded retailer source for
+  the "V2" numeral on this item.
+
+  "VT" and "UV" are treated as surface-treatment/plastic variants of this one MagLev design
+  (item 1524), not separate models, matching the "M"/"UV coated" variant pattern already
+  established for yuxin-huanglong-original and for MoYu WeiLong/RS3M elsewhere in this pass.
+  `weight_g` records the VT-version figure; the ~0.5g difference to the UV figure is not treated
+  as a model-level spec difference.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "Single tier 2 source states the dimension directly; 666toy's own pages for this item
+      give no numeric spec table."
+  /specs/maglev:
+    confidence: confirmed
+    sources: [666toy-huanglong-3x3-products, cubezz-yuxin-3x3-collection-2026]
+    note: "Tier 1 manufacturer copy ('Maglev Magic Cube') and an independent tier 2 retailer
+      ('MagLev' in the brand field) agree."
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "Single tier 2 source; VT version's figure (72.3g) used, UV version's (72.8g) noted
+      as consistent within measurement noise."
+  /generation/basis:
+    confidence: reported
+    sources: [cubezz-yuxin-3x3-collection-2026, thecubicle-yuxin-collection-2025]
+    note: "'V2' is not present in 666toy's own product-page prose for this item, only in two
+      independent tier-2 retailers' naming (differently worded: 'HuangLong V2 MagLev...VT
+      Version' vs '...v2-m-uv-coated'), which is why this is recorded community_convention
+      rather than manufacturer_declared, at a lower confidence than the identity claim itself."
+  /description:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products, cubezz-yuxin-3x3-collection-2026,
+      thecubicle-yuxin-collection-2025]
+  /relationships/0:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products]
+    note: "Inferred from the manufacturer's own item-number progression (1523 -> 1524) and
+      mechanism change (spring/gasket -> MagLev), not a direct succession statement."
+relationships:
+  - type: succeeds
+    target: yuxin-huanglong-original
+    target_entity: model
+    note: "Item-number progression (1523 -> 1524) and a stated mechanism change (spring/gasket
+      core -> MagLev) on the manufacturer's own site; no explicit 'succeeds' sentence found."

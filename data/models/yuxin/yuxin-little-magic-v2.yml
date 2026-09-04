@@ -1,0 +1,73 @@
+# model: yuxin-little-magic-v2
+# Pass 3 (model enumeration). A redesigned Little Magic generation: manufacturer item 1673
+# (distinct from 1513), the manufacturer's OWN product title reading "Little magic magnetic
+# magic Cube V2" (tier 1 for the "V2" numeral, unlike the HuangLong V2 case). New piece-surface
+# geometry ("brick pattern anti-adhesive trough" — matching the wiki's independently-worded
+# "brick pattern design on the pieces") and a new spring-tension adjustment mechanism are the
+# basis for model-level (not variant-level) treatment under DATA_MODEL §4.2.
+id: yuxin-little-magic-v2
+entity: model
+family_id: yuxin-little-magic
+manufacturer_id: yuxin
+name: "YuXin Little Magic M V2"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.5
+  maglev: none
+  adjustment_system: tool_free
+description: |-
+  666toy's own product page for item 1673M (666toy-little-magic-3x3-products): "Little magic
+  magnetic magic Cube V2, racing standard size, 55.5 x 55.5 x 55.5mm, weight is about 76g...
+  Add the magnetic adsorption technology... 12 Easily adjustment of the hand feel, configure the
+  auxiliary handle of the spring, can easily adjust the elasticity... The brick pattern anti
+  -adhesive trough, the magic cube rotates more smoothly..." The Speedsolving wiki independently
+  (speedsolving-wiki-yuxin-products): "YuXin Little Magic M V2 — An updated version of the YuXin
+  Little Magic M. Sporting a brick pattern design on the pieces and having an adjustment system,
+  much like the Moyu RS3M." thecubicle-yuxin-collection-2025 records "yuxin-little-magic-3x3-v2-
+  m" as a retail SKU (capture 2024-09-12); cubezz-yuxin-3x3-collection-2026 independently lists
+  "YuXin Little Magic M V2 3x3x3... Stickerless" and a UV-coated version — three independent
+  sources (tier 1 manufacturer, two tier 2 retailers) agreeing on this generation's existence
+  and "V2" naming.
+
+  `weight_g` is left unset at model level: 666toy states "weight is about 76g" only for the
+  1673M (magnetic) item; no source gives a non-magnetic 1673 base weight to establish a shared
+  design-level default distinct from the magnet's own contribution. `adjustment_system` is
+  recorded as `tool_free` on the strength of "auxiliary handle of the spring, can easily adjust
+  the elasticity" (adjustment via a handle, not a described tool) — the closest vocabulary
+  value, though the manufacturer's own text does not use the word "tool-free."
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products]
+  /specs/maglev:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products]
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [666toy-little-magic-3x3-products]
+    note: "'auxiliary handle of the spring, can easily adjust the elasticity' does not map
+      cleanly onto any single vocab value; 'tool_free' recorded as the closest reading, flagged
+      uncertain rather than asserted as a confident match."
+  /generation/basis:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products]
+    note: "'V2' appears directly in the manufacturer's own product title/copy for this item,
+      corroborated independently by two tier 2 retailers and the tier 4 wiki."
+  /description:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products, speedsolving-wiki-yuxin-products,
+      thecubicle-yuxin-collection-2025, cubezz-yuxin-3x3-collection-2026]
+  /relationships/0:
+    confidence: probable
+    sources: [speedsolving-wiki-yuxin-products]
+    note: "Wiki: 'An updated version of the YuXin Little Magic M' is direct succession language."
+relationships:
+  - type: succeeds
+    target: yuxin-little-magic-original
+    target_entity: model
+    note: "Speedsolving wiki: 'An updated version of the YuXin Little Magic M.'"

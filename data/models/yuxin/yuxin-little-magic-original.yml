@@ -1,0 +1,65 @@
+# model: yuxin-little-magic-original
+# Pass 3 (model enumeration). The opening generation of YuXin's best-known budget 3x3,
+# manufacturer item number 1513 (magnetized as 1513M, UV-coated as 1513M-UV). No source gives
+# this generation its own version numeral; treated as the base ("Original") generation preceding
+# the manufacturer-declared "V2" (item 1673, yuxin-little-magic-v2). See
+# research/qc/pass3-b2-agent-a-yuxin.md.
+id: yuxin-little-magic-original
+entity: model
+family_id: yuxin-little-magic
+manufacturer_id: yuxin
+name: "YuXin Little Magic 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 55.5
+  core_system: standard
+  maglev: none
+  adjustment_system: screw
+description: |-
+  666toy's own product page for item 1513 (666toy-little-magic-3x3-products): "Little Magic
+  Level 3 magic Cube, racing standard size, 55.5x55.5x55.5mm... Upgraded mold, better feel,
+  avoiding the light feel caused by hollow corner blocks; The axis is very light, only 1.2g...
+  Using 2mm screws, hardened and heat treated..." No magnet mention on this page. The
+  Speedsolving wiki (speedsolving-wiki-yuxin-products) independently: "YuXin Little Magic — ...
+  a newer and more famous 3x3 by YuXin. It has widely replaced the original YuXin 3x3... rated
+  as one of the better budget 3x3s."
+
+  Item 1513M's own page gives a slightly different dimension (55.7mm vs 1513's 55.5mm) alongside
+  its magnet description — read as measurement/rounding noise around the same mold rather than a
+  separate design, consistent with the wiki's "factory magnetized version" framing; `size_mm`
+  here records the base (1513) page's own figure. A further "1513M UV" page repeats the 1513M
+  text with an added UV-coating sentence, treated as a further variant of the same design, not a
+  separate model. `weight_g` is left unset: no source states an overall cube weight for this
+  generation (only the accessory base's weight, "4.5g," which is not the cube itself).
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products]
+  /specs/core_system:
+    confidence: probable
+    sources: [666toy-little-magic-3x3-products]
+    note: "Inferred as 'standard' (screw core) from the manufacturer's own '2mm screws' and
+      (on the 1513M page) 'gasket inside the spring' description; no MagLev or ball-core
+      language appears for this item."
+  /specs/maglev:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products]
+  /specs/adjustment_system:
+    confidence: probable
+    sources: [666toy-little-magic-3x3-products]
+    note: "1513M's own page: 'Adjustable elasticity and tightness can be adjusted freely to meet
+      different needs' — read as conventional screw-tension adjustment (no named mechanism, no
+      tool-free or dual-axis language), the least-overclaiming vocab value."
+  /generation/basis:
+    confidence: uncertain
+    note: "No source gives this generation its own version numeral; 'Original'/ordinal 1 is
+      this pass's community-convention label."
+  /description:
+    confidence: probable
+    sources: [666toy-little-magic-3x3-products, speedsolving-wiki-yuxin-products,
+      thecubicle-yuxin-collection-2025, cubezz-yuxin-3x3-collection-2026]
