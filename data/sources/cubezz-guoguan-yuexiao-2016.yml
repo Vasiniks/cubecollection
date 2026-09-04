@@ -1,0 +1,38 @@
+# source: cubezz-guoguan-yuexiao-2016
+# Pass 3 (model enumeration), agent D, non-US retailer sweep (RESEARCH_SPEC §3.6a). Earliest
+# found capture of the original GuoGuan YueXiao at any retailer this pass — an independent
+# tier 2 China-based storefront, predating TheCubicle's own earliest capture of this product
+# by over four years.
+id: cubezz-guoguan-yuexiao-2016
+entity: source
+kind: retailer
+tier: 2
+title: "GuoGuan Yuexiao 3x3x3 Speed Cube 55mm White – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-4837-GuoGuan+Yuexiao+3x3x3+Speed+Cube+55mm+White.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20160227140332id_/http://cubezz.com:80/Buy-4837-GuoGuan+Yuexiao+3x3x3+Speed+Cube+55mm+White.html"
+excerpt: |-
+  Product description: "GuoGuan Yuexiao 3x3x3 Speed Cube 55mm White — Yuexiao is the first
+  product of GuoGuan brand which has an excellent stability and corner cutting by its precise
+  design and segmented round technology..." Features: ".The first 3x3 speed cube from GuoGuan
+  brand." Specifications: ".Brand: GuoGuan / .Color: White / .Size: 55*55*55 mm / .Weight: 80g."
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront), the
+  same source type and site already used for the Cyclone Boys FeiChi precedent this register
+  (cubezz-cyclone-boys-feichi). Genuine capture 2016-02-27, an "existed by" upper bound only,
+  not a release date — but a real, specific product listing (not a bulk catalogue date), and
+  the earliest capture of this product found across any retailer this pass. States "Yuexiao is
+  the first product of GuoGuan brand" directly, corroborating (independently of TheCubicle) the
+  family's own understanding that YueXiao is GuoGuan's original 3x3. Gives "Size: 55*55*55mm /
+  Weight: 80g" — a earlier-generation spec reading that differs slightly from TheCubicle's later
+  (2025-capture) "Dimensions: 56.0mm / Item Weight: 86.0g" for the same nominal product; recorded
+  as a disputed spec at the model level rather than silently preferring one figure, since a 1mm/
+  6g difference across nine years of production could reflect either measurement rounding or an
+  undeclared production revision, and no source resolves which.
+status: sourced

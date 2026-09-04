@@ -1,0 +1,41 @@
+# source: cubezz-guoguan-yuexiao-pro-2017
+# Pass 3 (model enumeration), agent D, non-US retailer sweep (RESEARCH_SPEC §3.6a). An
+# independent tier 2 source for the YueXiao Pro generation, over a year earlier than
+# TheCubicle's own capture, independently corroborating the "new mechanism" model-boundary
+# claim and giving the only explicit dated statement found this pass for the original
+# YueXiao's release year.
+id: cubezz-guoguan-yuexiao-pro-2017
+entity: source
+kind: retailer
+tier: 2
+title: "GuoGuan Yuexiao Pro 3x3x3 Stickerless Speed Cube 56mm – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-5416-GuoGuan+Yuexiao+Pro+3x3x3+Stickerless+Speed+Cube+56mm.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20170813040340id_/http://www.cubezz.com:80/Buy-5416-GuoGuan+Yuexiao+Pro+3x3x3+Stickerless+Speed+Cube+56mm.html"
+excerpt: |-
+  Product description: "Yuexiao Pro uses new mechanism, the designer fully consider the
+  structure and performance of this model in designing. 3-segment section and 3-segment round
+  corner, Polyline type anti-corner-twisting design and anti-sticky concave, which bring the
+  speed cube mechanism to a new level. In 2015, GuoGuan released Yuexiao 3x3, then Xinghen 2x2
+  was released in the following year, now the new Yuexiao pro will definitely become a speed
+  cube with great performance!" Features: ".The enhanced version of YueXiao." Specifications:
+  ".Brand: GuoGuan / .Color: Stickerless / .Size: 56*56*56 mm / .Weight: 82g."
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US. Captured 2017-08-13, over a year before
+  TheCubicle's own earliest capture of this product (thecubicle-guoguan-yuexiao-pro-2018,
+  crawled 2020-09-22) — independently pushes back this generation's plausible circulation date.
+  Independently corroborates (not merely repeats — the wording differs entirely from
+  TheCubicle's) that YueXiao Pro is a genuine new-mechanism generation, not a sold
+  configuration, supporting the guoguan-yuexiao-pro model-boundary decision at DATA_MODEL §4.2.
+  Also gives the only explicit dated statement found this pass for the original YueXiao's
+  release: "In 2015, GuoGuan released Yuexiao 3x3" — a direct year-level claim, used for
+  `guoguan-yuexiao`'s own `released` field in preference to the vaguer "one of the most iconic
+  cubes of 2016" framing on thecubicle-guoguan-yuexiao-pro-2018 (which does not itself claim to
+  be a release-date statement and is not treated as contradicting this one).
+status: sourced
