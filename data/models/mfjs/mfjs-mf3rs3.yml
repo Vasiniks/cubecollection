@@ -1,0 +1,74 @@
+# model: mfjs-mf3rs3
+# Pass 3 (model enumeration). Fourth and, per this pass's own CDX prefix sweep, last MFJS-
+# exclusive numbered generation of the MF3 succession -- the family's own frozen record marks
+# the next named generation ("RS3M 2020") as jointly MoYu-branded and out of this family's
+# scope (see moyu-rs3m, not in this agent's lane). This model carries the strongest
+# design-difference evidence found in the whole MF3 line this pass.
+id: mfjs-mf3rs3
+entity: model
+family_id: mfjs-mf3
+manufacturer_id: mfjs
+name: "MFJS MF3RS3"
+scope_class: core
+generation:
+  label: "RS3"
+  ordinal: 4
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+  weight_g: 84.0
+released:
+  value: "2018"
+  precision: year
+  qualifier: circa
+description: |-
+  Per TheCubicle's own product page (thecubicle-mofang-jiaoshi-mf3rs3-product): "The
+  differences from the MF3RS2 are more rounded off corners, a revamped mechanism with new
+  anchor/torpedo design, and hardware in the corners! This puzzle also has slots for magnets in
+  the pieces." This is direct, tier 2, first-party evidence of a mechanism-level difference from
+  the immediately prior generation -- a genuine new design under this archive's model/variant
+  boundary rule, not merely a resold configuration. Dimensions 56.0mm, item weight 84.0g.
+
+  The Speedsolving wiki (speedsolving-wiki-mofang-jiaoshi, tier 4, see mfjs-mf3-v1.yml for the
+  standing evidence-tier ruling) gives "The MF3RS3 was released in December 2018. It is an
+  improved version of the MF3RS2 but is also more expensive. It is available in non-magnetic
+  and factory-magnetic." The magnetic/non-magnetic split is read as a variant-level
+  configuration of this one model, not a further model, consistent with this puzzle's own
+  described "slots for magnets" (i.e. magnets are an add-on/factory option on one shared
+  design). Recorded at year precision, `circa`, `uncertain`, per that ruling's ban on precise
+  month dates from this source.
+
+  `core_system` and `adjustment_system` are left unset: "anchor/torpedo design" names a real,
+  specific mechanism feature but does not map cleanly onto this archive's controlled
+  vocabulary, and guessing a vocabulary term for it risks misrepresenting the actual mechanism.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs3-product]
+    note: "Item Weight (net), not Gross Weight (196g, includes packaging)."
+  /released:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+    note: "Tier 4 only, approximate chronology at uncertain confidence per
+      research/qc/evidence-tier-remediation-matrix.yml; wiki's own stated month (December 2018)
+      rounded to year."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs3-product]
+    note: "Upgraded from `uncertain` (used elsewhere in this line) to `probable`: this is the
+      one generation in the succession where a tier 2 source states an explicit mechanism
+      difference from its immediate predecessor, not just marketing language."
+  /description:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs3-product, speedsolving-wiki-mofang-jiaoshi]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-mofang-jiaoshi-mf3rs3-product, speedsolving-wiki-mofang-jiaoshi]
+relationships:
+  - type: succeeds
+    target: mfjs-mf3rs2
+    target_entity: model

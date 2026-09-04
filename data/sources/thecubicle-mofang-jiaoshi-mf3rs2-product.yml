@@ -1,0 +1,29 @@
+# source: thecubicle-mofang-jiaoshi-mf3rs2-product
+# TheCubicle's own product page for the MoFang JiaoShi MF3RS2, captured 2019-05-12. Tier 2,
+# first-party retailer copy.
+id: thecubicle-mofang-jiaoshi-mf3rs2-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MF3RS2 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mf3rs2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190512141642id_/https://www.thecubicle.com/products/mofang-jiaoshi-mf3rs2"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MF3RS2 is a new MoYu sub-branded 3x3 in the Cubing
+  Classroom series. Like the MF3RS, the MF3RS2 features great performance and premium design
+  features that push the boundaries of what a budget-friendly cube can do. With excellent
+  performance and a low price point, the MF3RS2 is sure to be a top choice for both beginners
+  and intermediate cubers, and possibly even for advanced solvers." No spec-block dimensions or
+  weight were rendered in this particular capture's text scrape.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. Establishes MF3RS2 as a
+  distinct, separately-named product explicitly compared to its own predecessor ('Like the
+  MF3RS'). Does not itself state a release date or numeric specifications."
+status: sourced

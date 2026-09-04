@@ -1,0 +1,33 @@
+# source: thecubicle-mofang-jiaoshi-mf3rs3-product
+# TheCubicle's own product page for the MoFang JiaoShi MF3RS3, captured 2020-09-20 and still
+# resolving as of a 2024-09-05 capture. Tier 2, first-party retailer copy. The strongest single
+# piece of design-difference evidence found this pass for the MF3/MF3RS succession.
+id: thecubicle-mofang-jiaoshi-mf3rs3-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MF3RS3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mf3rs3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920150355id_/https://www.thecubicle.com/products/mofang-jiaoshi-mf3rs3"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MF3RS3 is for those looking for a competitive yet
+  budget friendly 3x3. Coming in at only $9.99, this puzzle's performance matches those of
+  puzzles well above that price. The differences from the MF3RS2 are more rounded off corners,
+  a revamped mechanism with new anchor/torpedo design, and hardware in the corners! This puzzle
+  also has slots for magnets in the pieces." Spec block: "Manufacturer: MoFang JiaoShi", "Type:
+  3x3", "Added: 2018-12-26" (a catalogue-migration-era field, not treated as a release date),
+  "Gross Weight: 196g", "Dimensions: 56.0mm^3", "Item Weight: 84.0g".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description, explicitly stating a
+  mechanism-level difference from the immediately prior generation ('a revamped mechanism with
+  new anchor/torpedo design, and hardware in the corners') -- direct evidence this is a new
+  design, not merely a sold configuration, per this archive's model/variant boundary rule. Does
+  not itself state a release date; 'Added:' is a documented non-date artifact field."
+status: sourced
