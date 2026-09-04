@@ -1,0 +1,73 @@
+# model: haitun-waverider-v2
+# Pass 3 final-seven lane, Agent A. HaiTun's second design generation, explicitly declared as
+# such by the retailer's own product copy. Configuration tiers (Standard, Pioneer, Flagship,
+# Ultimate, and a Cubezz-documented "Supreme Edition" not otherwise seen this pass) are
+# variants of this one model — pass 4 territory, not enumerated here.
+id: haitun-waverider-v2
+entity: model
+family_id: haitun-waverider
+manufacturer_id: haitun
+name: "HaiTun Waverider V2"
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+scope_class: core
+specs:
+  size_mm: 56.0
+description: |-
+  TheCubicle's own product page for the Standard configuration states directly: "the HaiTun
+  Waverider V2 3x3 (Standard), the highly anticipated second generation from boutique
+  manufacturer HaiTun" (thecubicle-haitun-waverider-v2-standard-2026) — an explicit,
+  manufacturer-attributed generation claim, not merely a retailer or community numbering, the
+  basis for `generation.basis: manufacturer_declared`. The Ultimate tier's own page separately
+  calls itself "the crown jewel of the Waverider V2 series" with "a revolutionary magnet system
+  with 94 magnets in total" (thecubicle-haitun-waverider-v2-ultimate-2026) — a substantial
+  hardware difference from the Standard tier's own magnet count, read per DATA_MODEL §4.2 as a
+  configuration difference within one model (a sold option, not a different mould/mechanism),
+  since no distinct-tooling claim was found for any V2 tier.
+
+  No TheCubicle capture of any V2 configuration checked this pass (Standard, Flagship, Pioneer,
+  Ultimate) gives a dimensions figure. A non-US retailer, Cubezz.com, independently lists a
+  "HAITUN Waverider V2 3x3x3 Speed Cube Standard Version" giving "Dimensions: 56x56x56
+  millimeters" (cubezz-haitun-waverider-v2-standard) — used here as the sole basis for
+  `specs.size_mm`. The same Cubezz listing also names a "Supreme Edition" tier not found at
+  TheCubicle this pass (possibly a rename or regional equivalent of the "Ultimate" tier, not
+  resolved this pass — a pass-4 lead).
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-standard-2026]
+    note: "Direct retailer statement naming this generation explicitly ('the highly
+      anticipated second generation from boutique manufacturer HaiTun') — a single tier 2
+      source but an explicit, unambiguous generation claim, not an inference."
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-haitun-waverider-v2-standard]
+    note: "Single tier 2 source (a non-US retailer, independent of TheCubicle). No TheCubicle
+      capture of any V2 tier checked this pass states a dimensions figure at all, so this is
+      the only evidence available; not corroborated by a second independent source, hence
+      `probable` rather than `confirmed`."
+  /description:
+    confidence: reported
+    sources: [thecubicle-haitun-waverider-v2-standard-2026, thecubicle-haitun-waverider-v2-ultimate-2026, cubezz-haitun-waverider-v2-standard]
+  /released:
+    confidence: unknown
+    note: "Researched and not found under the S6 policy's strict reading. TheCubicle's own
+      'Added: 2026-02-03' (Standard) and 'Added: 2026-03-07' (Ultimate) spec-table fields are
+      retailer 'Added:' fields, categorically inadmissible as release-date evidence per the S6
+      policy §3, regardless of whether they match one of the three specifically documented
+      artifact strings. The frozen family record's own `/introduced` attestation for V1 treats
+      a sibling field the same way the family record does generally (as `reported`); this
+      model record applies the later, binding, stricter S6 standard instead — see the parallel
+      note on `haitun-waverider-v1`. Left unset."
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-standard-2026]
+relationships:
+  - type: succeeds
+    target: haitun-waverider-v1
+    target_entity: model
+    note: "TheCubicle's own product copy states this generation is 'the highly anticipated
+      second generation' of the same persisting Waverider name, directly following V1."

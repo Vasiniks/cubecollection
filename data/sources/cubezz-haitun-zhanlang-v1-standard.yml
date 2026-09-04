@@ -1,0 +1,42 @@
+# source: cubezz-haitun-zhanlang-v1-standard
+# Cubezz.com (non-US/English retailer, per RESEARCH_SPEC §3.6a) product page for "HAITUN
+# ZhanLang V1 3x3x3 Speed Cube Standard Version," found this pass while sweeping Cubezz for
+# HaiTun as part of researching `haitun-waverider`. ESCALATION EVIDENCE: names a second,
+# entirely separate HaiTun product line ("ZhanLang") not represented by any family record in
+# this archive. Preserved here so the escalation is citable; no family or model is created from
+# it in this pass (family enumeration is frozen — see
+# research/qc/pass3-b4-agent-a-final-seven.md, "Escalations").
+id: cubezz-haitun-zhanlang-v1-standard
+entity: source
+kind: retailer
+title: "HAITUN ZhanLang V1 3x3x3 Speed Cube Standard Version - Cubezz.com"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-7601-HAITUN+ZhanLang+V1+3x3x3+Speed+Cube+Standard+Version.html"
+preservation_method: excerpt
+excerpt: |-
+  "HAITUN ZhanLang V1 3x3x3 Speed Cube Standard Version." Manufacturer: HAITUN CUBE.
+  Description: a magnetic-positioning, elastic-adjustable stickerless 3x3 ("flexible single
+  magnetic positioning, 6-level magnetic adjustable"; "8-level elastic adjustable").
+  Specifications: "Dimensions: 56 x 56 x 56 mm / Weight: 79 grams." Price US$15.99 (listed
+  US$20.79), in stock, one-year warranty. A companion "HAITUN ZhanLang V1 3x3x3 Speed Cube
+  Flagship Version" (US$18.99, product id 7600) is also listed, one ID lower than this Standard
+  listing (id 7601) — both product IDs (7600/7601) are numerically lower than the Waverider V2
+  listings found on the same site (8597-8599), consistent with ZhanLang V1 predating or being
+  contemporary with the earliest Waverider listings, though no dated statement was found to
+  confirm this ordering.
+preservation_note: "No archive.org capture exists for this exact Cubezz product URL as of this
+  pass (not checked via CDX this session — flagged for whoever follows up on the escalation);
+  preserved as a live-fetch excerpt in the interim."
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 2, first-party retailer product page with a structured spec block and
+  an explicit 'Manufacturer: HAITUN CUBE' field — the same manufacturer identity already
+  established for the Waverider line (data/manufacturers/haitun.yml), naming a second, distinct
+  product line ('ZhanLang') under the same manufacturer. Not used to create any family or model
+  record in this pass: family enumeration is frozen for this lane (see the S6/lane
+  instructions), and this is recorded purely as escalation evidence for a human reviewer to
+  action in a future family-enumeration pass."
+status: sourced

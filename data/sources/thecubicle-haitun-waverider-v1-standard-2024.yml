@@ -1,0 +1,33 @@
+# source: thecubicle-haitun-waverider-v1-standard-2024
+# TheCubicle's own product page for the "HaiTun Waverider V1 3x3 (Standard)", archived
+# 2024-02-22. Tier 2, first-party retailer product/spec page. Fetched this pass to
+# cross-check the Flagship configuration's dimension figure against a second configuration
+# tier of the same generation, for the model-level `specs.size_mm` attestation.
+id: thecubicle-haitun-waverider-v1-standard-2024
+entity: source
+kind: retailer
+title: "HaiTun Waverider V1 3x3 (Standard) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/haitun-cube-3x3-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240222171746id_/https://www.thecubicle.com/products/haitun-cube-3x3-standard"
+excerpt: |-
+  Product Description: "The Waverider V1 is a new 3x3 speedcube by the emerging brand Haitun
+  Cube. This Standard version features traditional corner-edge magnets and an easy-to-use
+  adjustment system with 8 tensions, 8 elasticities, and 6 magnet strengths..." Product
+  Specifications table: "Manufacturer / HaiTun ... Type / 3x3 ... Added / 2024-01-17 ... Gross
+  Weight / 218g ... Dimensions / 56.0mm³ ... Item Weight / 81.0g."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: "Tier 2, first-party retailer product page, a second configuration tier
+  (Standard) of the same V1 generation already sourced via
+  thecubicle-haitun-waverider-v1-2024 (Flagship). Its dimensions figure (56.0mm³) matches the
+  Flagship listing's own figure exactly, supporting size_mm as a genuine model-level shared
+  spec across V1's configuration tiers, not merely a Flagship-specific value. Weight differs
+  slightly between the two (218g/81.0g here vs 219g/82.0g on Flagship), consistent with a
+  small hardware difference between configuration tiers (more magnets on Flagship) — this is
+  why weight is left at variant level, not promoted to the model's `specs`."
+status: sourced

@@ -92,4 +92,66 @@ both checked, both negative — recorded above.
 
 ---
 
-(sections 3-7 to follow)
+## 3. `haitun-waverider` — accepted, two models. One escalation.
+
+**Search performed.** Re-ran a `thecubicle.com/products/haitun*` prefix sweep (confirms the
+family record: V1 Flagship/Standard/Limited-Edition/adjustment-tool, V2
+Standard/Pioneer/Flagship/Ultimate, no V3). Fetched full archived pages for V1 Flagship, V1
+Standard, V2 Standard, V2 Ultimate, V2 Flagship, and V2 Pioneer directly (not just existing
+sources' excerpts) specifically hunting for a dimensions figure, since none of the V2 sources
+already in the archive quote one. **Non-US retailer check: Cubezz.com**, searched for "haitun" —
+found, and fetched, a Waverider V2 Standard listing giving `56x56x56mm` (the only dimension
+figure found for V2 at all) and, unexpectedly, a **second HaiTun product line, "ZhanLang"**
+(Standard/Flagship, tier 2, `Manufacturer: HAITUN CUBE`) not represented by any family record in
+this archive — see Escalations below.
+
+**Boundary call — the task's own framing verified.** TheCubicle's V2 Standard page states
+directly: "the highly anticipated second generation from boutique manufacturer HaiTun" — a
+genuine generation claim, not a bare version-number coincidence, satisfying the manufacturer-
+declared-generation identity test cleanly. **Two models**, `haitun-waverider-v1` and
+`haitun-waverider-v2`, connected by `succeeds`. Within each generation, the configuration tiers
+(Flagship/Standard/Limited Edition for V1; Standard/Pioneer/Flagship/Ultimate/the Cubezz-only
+"Supreme Edition" for V2) are variants — sold options with different magnet counts, not
+different tooling — left to pass 4.
+
+**Accepted:**
+- `haitun-waverider-v1` — `generation.basis: manufacturer_declared`, `probable` (the V1/V2
+  naming is the product's own name throughout, read as passed through from HaiTun). Specs:
+  `size_mm: 56.0`, `probable`, corroborated identically across two configuration tiers
+  (Flagship 219g gross/82.0g item; Standard 218g gross/81.0g item — both 56.0mm³) — weight left
+  unset at model level since it visibly differs by configuration.
+- `haitun-waverider-v2` — same generation-basis reasoning, `probable`. Specs: `size_mm: 56.0`
+  at `probable`, sourced *only* from the new Cubezz listing since no TheCubicle V2 capture
+  checked this pass states a dimension at all — flagged plainly as single-source. `succeeds`
+  `haitun-waverider-v1`.
+
+**Dates — a deliberate divergence from the frozen family record, flagged explicitly.** The
+frozen family record (written before the S6 policy existed) treats TheCubicle's own `Added:`
+field as a `reported`-confidence per-product date for V1's `introduced`, reasoning it is not
+one of the three specifically-documented catalogue-migration artifact strings. The S6 policy
+(binding for this pass) is categorical — *any* retailer `Added:` field is inadmissible as a
+release date, not only the three named strings. Both models here leave `released` `unknown`
+rather than import the family record's now-superseded reading, and each model's attestation
+says so explicitly rather than silently diverging.
+
+**Escalation — likely missing family.** Cubezz.com carries a distinct HaiTun product line,
+"HAITUN ZhanLang V1" (Standard $15.99 / Flagship $18.99, `Manufacturer: HAITUN CUBE`,
+`56x56x56mm`/79g on the Standard listing), with product IDs (7600/7601) numerically well below
+the Waverider V2 IDs found on the same site (8597-8599) — suggestive of an earlier or parallel
+line, not investigated further since family creation is frozen for this lane. **No family or
+model was created for ZhanLang.** Preserved as `cubezz-haitun-zhanlang-v1-standard` (source
+only) for a future family-enumeration pass to action. This is not a taxonomy *error* (nothing
+here is mis-assigned) but a probable taxonomy *gap* — recorded per the same "record evidence,
+stop the branch, escalate" instruction.
+
+**§3.6a record.** Retailer prefix sweep: done (re-confirmed). Non-US/English retailer: Cubezz,
+checked, positive (V2 dimensions + the ZhanLang escalation) — recorded above.
+
+**Sources used:** `thecubicle-haitun-waverider-v1-2024`, `thecubicle-haitun-waverider-v2-
+standard-2026`, `thecubicle-haitun-waverider-v2-ultimate-2026` (existing, reused). **Sources
+created:** `thecubicle-haitun-waverider-v1-standard-2024`, `cubezz-haitun-waverider-v2-standard`,
+`cubezz-haitun-zhanlang-v1-standard`.
+
+---
+
+(sections 4-7 to follow)
