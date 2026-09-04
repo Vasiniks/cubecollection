@@ -1,0 +1,36 @@
+# source: thecubicle-fangshi-guangying
+# Pass 3/4 taxonomy investigation (Agent B, FangShi GuangYing/JieYun escalation). TheCubicle's
+# own product listing for "FangShi GuangYing," found via a `thecubicle.com/products/fangshi-
+# guangying` CDX prefix search. Preserved as decisive evidence toward the pass-2 taxonomy gap
+# recorded on data/families/fangshi-shuangren.yml and data/models/fangshi/fangshi-shuangren-
+# original.yml (both frozen, not edited by this investigation).
+id: thecubicle-fangshi-guangying
+entity: source
+kind: retailer
+tier: 2
+title: "FangShi GuangYing – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fangshi-guangying"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20201108112458id_/https://thecubicle.com/products/fangshi-guangying"
+excerpt: |-
+  "The FangShi GuangYing is now available! It features an assembly similar to that of the
+  FangShi ShuangRen, but with some major differences in the pieces that are widely expected to
+  make it perform even better than the FangShi ShuangRen." Product Specifications: "Manufacturer
+  / FangShi", "Type / 3x3", "Gross Weight / 95g", "Dimensions / 57.0mm". Price $14.99, sold in
+  seven colourways (Black, White, Primary, Blue, Pink, Transparent Blue, Transparent Pink);
+  listed as discontinued at time of capture. A customer review directly contrasts "the
+  shuangren and the shuangren v2" against "the guangying" as separate products ("It is a huge
+  improvement... over the shuangren and the shuangren v2").
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 first-party retailer listing. Establishes GuangYing as a named FangShi 3x3 product,
+  distinct from ShuangRen, with the retailer's own copy explicitly describing "some major
+  differences in the pieces" versus the ShuangRen — language pointing at a distinct piece
+  mould/mechanism rather than a sold configuration of the same design (DATA_MODEL §4.2).
+  Independently corroborated by a second, non-US retailer: see cubezz-fangshi-guangying.
+status: sourced

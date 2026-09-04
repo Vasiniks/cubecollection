@@ -1,0 +1,35 @@
+# source: cubezz-fangshi-guangying
+# Pass 3/4 taxonomy investigation (Agent B, FangShi GuangYing/JieYun escalation). Found via a
+# CDX domain-wide search of cubezz.com filtered for "guangying" (case-insensitive), independent
+# of TheCubicle. Preserved as the second, non-US retailer corroborating GuangYing as a real,
+# separately-branded FangShi/Funs Puzzle 3x3 product line.
+id: cubezz-fangshi-guangying
+entity: source
+kind: retailer
+tier: 2
+title: "Funs Puzzle GuangYing 3x3x3 Speed Cube Black – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-4635-Funs+Puzzle+GuangYing+3x3x3+Speed+Cube+Black.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150205040343id_/http://cubezz.com:80/Buy-4635-Funs+Puzzle+GuangYing+3x3x3+Speed+Cube+Black.html"
+excerpt: |-
+  "Funs Puzzle GuangYing 3x3x3 Speed Cube Black ... Brand new Funs Puzzle GuangYing 3x3x3 Speed
+  Cube ... Specifications: .Brand: Funs Puzzle(GuangYing) .Color: Black .Size: 57*57*57mm
+  .Weight: 86g." SKU "FUNSGY0B". The page's own "Related Top Sellers" rail lists this alongside
+  "Funs Puzzle ShuangRen II 3x3 Magic Cube 57mm Orignal Color," "Funs Puzzle Mini ShuangRen
+  54.6mm 3x3 Magic Cube White," and ShuangRen II DIY kits — as related but separately-named
+  sibling products, not variants of one listing.
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront),
+  independent of TheCubicle. The structured "Brand: Funs Puzzle(GuangYing)" field treats
+  GuangYing as its own named line under the Funs Puzzle brand, exactly the pattern already
+  established for ShuangRen ("Brand: Funs Puzzle" on that line's own cubezz listings). Weight
+  (86g) is lower than TheCubicle's 95g gross figure for GuangYing (thecubicle-fangshi-guangying)
+  — recorded as an unresolved discrepancy (possibly Gross vs net weight, or colourway variance),
+  not adjudicated by this investigation.
+status: sourced

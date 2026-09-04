@@ -1,0 +1,36 @@
+# source: cubezz-fangshi-jieyun
+# Pass 3/4 taxonomy investigation (Agent B, FangShi GuangYing/JieYun escalation). Found via a
+# CDX domain-wide search of cubezz.com filtered for "jieyun" (case-insensitive), independent of
+# TheCubicle. Preserved as the second, non-US retailer corroborating JieYun as a real,
+# separately-branded FangShi/Funs Puzzle 3x3 product line, and as the source for the "new
+# design" language distinguishing it from GuangYing.
+id: cubezz-fangshi-jieyun
+entity: source
+kind: retailer
+tier: 2
+title: "Funs Puzzle JieYun 3x3x3 Speed Cube 57mm Black – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-4719-Funs+Puzzle+JieYun+3x3x3+Speed+Cube+57mm+Black.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150925020454id_/http://cubezz.com:80/Buy-4719-Funs+Puzzle+JieYun+3x3x3+Speed+Cube+57mm+Black.html"
+excerpt: |-
+  "Funs Puzzle JieYun 3x3x3 Speed Cube 57mm Black ... Brand new 57mm Funs Puzzle JieYun 3x3x3
+  Speed Cube .Funs Puzzle new design . Very good feeling .Great anti-pop function ...
+  Specifications: .Brand: Funs Puzzle(JieYun) .Color: Black .Size: 57*57*57mm .Weight: 91g."
+  SKU "FUNSJY0B". A sibling capture the same session, "Funs Puzzle Mini JieYun 3x3x3 Speed Cube
+  546mm Black" (http://cubezz.com/Buy-4720-...), confirms a 54.6mm "Mini JieYun" size line
+  exists as a named variant of this same product, mirroring the "Mini ShuangRen" pattern.
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront),
+  independent of TheCubicle. "Funs Puzzle new design" is the retailer's own characterisation
+  (likely translated from the manufacturer's own marketing) of JieYun as a new design rather
+  than a configuration of an existing one, corroborating TheCubicle's "minor grooves on the
+  pieces" physical-mould distinction (thecubicle-fangshi-jieyun). The structured "Brand: Funs
+  Puzzle(JieYun)" field treats JieYun as its own named line, matching the pattern already seen
+  for GuangYing and ShuangRen on this same storefront.
+status: sourced
