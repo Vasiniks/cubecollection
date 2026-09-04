@@ -1,0 +1,69 @@
+# model: huameng-tg
+# Pass 3 (model enumeration), Agent C / Batch 3. The base "HuaMeng TG" design. A wayback
+# prefix sweep of thecubicle.com/products/huameng found the following slugs, all read as
+# configuration/edition variants of this one model (magnet architecture, coating, limited
+# packaging — all variant-level per DATA_MODEL §4.2 / RESEARCH_SPEC §4 worked decision A):
+# huameng-tg-3x3-ball-core (standard), huameng-tg-3x3-ball-core-uv, huameng-tg-3x3-maglev-
+# ball-core, huameng-tg-3x3-maglev-ball-core-uv, huameng-tg-3x3-spirit-pearl-limited-edition
+# ("Limited to 999 worldwide!"). None of these differ by mould or mechanism from each other —
+# only core-magnet/maglev/coating/packaging, which the manufacturer plainly sells as options of
+# one product line. See huameng-tg-v2.yml for the one slug treated as a candidate new model.
+id: huameng-tg-v1
+entity: model
+family_id: huameng-tg
+manufacturer_id: huameng
+name: "HuaMeng TG"
+aliases: []
+scope_class: core
+generation:
+  label: "TG"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  core_system: dual_adjustment
+  adjustment_system: tri_adjust
+  shape: standard
+description: |-
+  TheCubicle's own product description (thecubicle-huameng-tg-3x3-ball-core): "The HuaMeng TG
+  is the most feature-rich 3x3 we've seen so far! With 1620 different adjustment combinations
+  you can find one that fits your turning style. It has hand-adjustable compression settings
+  and a tool to adjust tensions and magnet strength. It has 6 tension settings, 9 compression
+  settings, 5 edge magnet adjustments, and 6 corner/core magnet adjustments." This is read as
+  a three-parameter (tension / compression / magnet-strength) adjustable core, hence
+  `adjustment_system: tri_adjust` and `core_system: dual_adjustment` (independent tension and
+  compression) — both are readings of a single retailer's descriptive marketing paragraph
+  rather than a structured spec-table field, so recorded `uncertain` rather than `probable`.
+
+  No source gives `size_mm` or `weight_g` for the base (non-limited-edition) configuration;
+  left unset. `magnet_architecture` also left unset at model level — it is documented as
+  user-adjustable in strength ("6 corner/core magnet adjustments") but the base architecture
+  (single/dual layer, core-corner) is not stated by this source.
+status: drafted
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+  /generation:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core, thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "Ordinal 1 is inferred only because a later 'TG V2' product name was found this pass
+      (see huameng-tg-v2.yml); no source calls the base product 'TG V1' or 'the first TG'."
+  /specs/core_system:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "Inferred from 'hand-adjustable compression settings and a tool to adjust tensions'
+      (independent tension/compression axes) — a reading of marketing prose, not a structured
+      field labelled core_system."
+  /specs/adjustment_system:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "Inferred from '6 tension settings, 9 compression settings, ... 6 corner/core magnet
+      adjustments' — three independently adjustable parameters, read as tri_adjust."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "No source explicitly states a standard (flat-faced) shape; recorded as the
+      least-overclaiming default for an ordinary WCA-format 3x3 speed cube."
+  /description:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
