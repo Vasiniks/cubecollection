@@ -1,0 +1,98 @@
+# model: particula-gocube-edge
+# Pass 3 (model enumeration), Batch 3 Agent A. The premium-tier "GoCube Edge" (SKU GC33E),
+# sold concurrently with base "GoCube" (SKU GC33A) from the earliest captures found this pass
+# (Sept-Dec 2019), and the lineage that later became simply "GoCube" (the flagship SKU) once
+# the "Basic" tier dropped out of GoCube's own site navigation by late 2021. Currently
+# marketed (2026) as "GoCube Edge Full Pack" — a packaging bundle of this same model, not a
+# separate one; see getgocube-com-2019-fullpack-bundle.
+id: particula-gocube-edge
+entity: model
+family_id: particula-gocube
+manufacturer_id: particula
+name: "GoCube Edge"
+aliases:
+  - "GoCube Edge Full Pack"
+scope_class: core
+generation:
+  label: "Edge"
+  basis: manufacturer_declared
+released:
+  value: "2019"
+  precision: year
+  qualifier: before
+description: |-
+  GoCube's own official product page (getgocube-com-2019-gocube-edge-product, tier 1) names
+  this "GoCube Edge" (SKU GC33E), described as "the advanced Edge model." The manufacturer's own
+  comparison table states a 250x tracking-accuracy advantage over the base "GoCube" (0.001 sec
+  vs. 0.25 sec) plus exclusive Advanced Statistics and unrestricted Online Battles. A customer
+  review on the same page names the "pillowed shape" directly, corroborated independently by
+  TheCubicle's own later copy (thecubicle-gocube-edge-3x3-2020, tier 2): "a magnetic 3x3
+  equipped with Bluetooth 5.0... a novel pillowed design, giving it a cool, futuristic
+  appearance," with a spec table: "Gross Weight: 436g / Dimensions: 60.0mm 3 / Magnets: Magnetic
+  / Item Weight: 125.0g." TheCubicle's copy also frames it (marketing language, not a
+  specification) as "one of the first smart cubes ever released."
+
+  **"GoCube Edge Full Pack" is this model, bundled, not a fourth model.** GoCube's own page for
+  that exact name (getgocube-com-2019-fullpack-bundle, tier 1) states its box "Includes – GoCube
+  EDGE, [a] charging stand... USB charger... [and a] Pouch" — a packaging bundle of this cube
+  plus accessories, per DATA_MODEL §4.1's explicit exclusion of packaging/bundle differences from
+  new-record status. Particula's current (2026) product page (particula-tech-com-gocube-2026)
+  continues to market this same model under exactly that bundle name as its flagship SKU, so
+  "GoCube Edge Full Pack" is carried here only as an alias, not a separate record.
+
+  **Model-identity boundary call** (mirrored from particula-gocube-basic.yml): the stated 250x
+  tracking-accuracy gap plus the pillowed shape (vs. Basic's apparently-standard shape, on which
+  no source is explicit) are treated together as design-level identity evidence for a separate
+  model from GoCube Basic, not a checkout-time accuracy/price tier of one design.
+status: drafted
+specs:
+  size_mm: 60.0
+  weight_g: 125.0
+  shape: pillowed
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [getgocube-com-2019-gocube-edge-product]
+    note: "No explicit dated release statement was found. The value recorded is a Wayback
+      crawl-timestamp lower bound (this product's own page was captured 2019-12-16), per S6
+      policy §3 — establishes only that the product existed by that date, not a launch date."
+  /generation/basis:
+    confidence: probable
+    sources: [getgocube-com-2019-gocube-edge-product, getgocube-com-2019-basic-edge-skus]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-gocube-edge-3x3-2020]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-gocube-edge-3x3-2020]
+    note: "Recorded as the table's 'Item Weight' (125.0g) rather than 'Gross Weight' (436g,
+      which includes retail packaging/accessories bundled into the Full Pack SKU TheCubicle was
+      selling)."
+  /specs/shape:
+    confidence: probable
+    sources: [thecubicle-gocube-edge-3x3-2020, getgocube-com-2019-gocube-edge-product]
+    note: "Tier 2 ('a novel pillowed design') independently corroborated by a customer review on
+      the manufacturer's own tier 1 page ('aside from the pillowed shape'). The customer review
+      is not itself treated as a standalone tier 1 specification claim (see that source's own
+      reliability_note), so this rests at `probable` on the tier 2 statement, not `confirmed`."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "TheCubicle's table states 'Magnets: Magnetic' but does not describe the arrangement;
+      left unset rather than guessed, per the same treatment applied to giiker-m3-3x3.yml and
+      the archive's existing dayan-guhong-pro-m.yml precedent."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /aliases:
+    confidence: confirmed
+    sources: [getgocube-com-2019-fullpack-bundle, particula-tech-com-gocube-2026]
+  /description:
+    confidence: probable
+    sources: [getgocube-com-2019-gocube-edge-product, thecubicle-gocube-edge-3x3-2020,
+      getgocube-com-2019-fullpack-bundle, particula-tech-com-gocube-2026]

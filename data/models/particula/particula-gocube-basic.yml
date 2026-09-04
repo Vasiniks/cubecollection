@@ -1,0 +1,84 @@
+# model: particula-gocube-basic
+# Pass 3 (model enumeration), Batch 3 Agent A. The base-tier "GoCube" (SKU GC33A), sold
+# concurrently with GoCube Edge (SKU GC33E) from at least the earliest captures found this
+# pass (Sept-Dec 2019). Named "Basic" here for id/file clarity only — the manufacturer's own
+# product page names it plainly "GoCube", contrasted against "GoCube Edge" in its own
+# comparison table. See research/qc/pass3-b3-agent-a-smartcubes.md for the Basic/Edge/X
+# boundary reasoning.
+id: particula-gocube-basic
+entity: model
+family_id: particula-gocube
+manufacturer_id: particula
+name: "GoCube"
+aliases:
+  - "GoCube Basic"
+scope_class: core
+generation:
+  label: "Basic"
+  basis: manufacturer_declared
+released:
+  value: "2019"
+  precision: year
+  qualifier: before
+description: |-
+  GoCube's own official product page (getgocube-com-2019-gocube-product, tier 1) names this
+  product plainly "GoCube" (SKU GC33A), and gives a direct first-party feature comparison
+  against "GoCube Edge" (SKU GC33E): "Note: Get the Edge version to access the group and friends
+  battle modes, accurate tracking, advanced statistics, and leaderboard." The comparison table
+  itself states a stated 250x difference in tracking accuracy — "0.25 sec" for this product vs.
+  "0.001 sec" for GoCube Edge — plus Edge-only Advanced Statistics and unrestricted Online
+  Battles. Concurrent sale is established directly: getgocube-com-2019-basic-edge-skus (also
+  tier 1) lists "GoCube Basic" ($69.95) and "GoCube Edge Full Pack" ($79.95) as two SKUs sold
+  side by side in December 2019.
+
+  **Model-identity boundary call.** No source states outright that this product uses a
+  different mould than GoCube Edge, but the stated 250x tracking-accuracy gap is treated as
+  evidence of a materially different sensor/IMU component (not merely a firmware setting), and
+  GoCube Edge's own page and a customer review both independently describe Edge's shape as
+  "pillowed" (getgocube-com-2019-gocube-edge-product; thecubicle-gocube-edge-3x3-2020's "novel
+  pillowed design") — a feature never mentioned on this product's own page. Taken together, this
+  is treated as sufficient identity evidence for two separate models rather than one model with
+  a checkout-time accuracy/price tier, though no source directly states this product's own shape
+  as `standard`, so `specs.shape` is left unset rather than inferred from the absence of the
+  word "pillowed."
+
+  No standalone "GoCube Basic" 3x3 product page was found at TheCubicle or SpeedCubeShop in this
+  pass's discovery (both retailers' captured GiiKER/GoCube prefixes carry only Edge and X) — the
+  only spec-bearing sources for this model are GoCube's own site, which gives no dimensions or
+  weight for this SKU. `specs.size_mm` and `specs.weight_g` are therefore left unset rather than
+  guessed from the Edge or X figures.
+status: drafted
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [getgocube-com-2019-gocube-product]
+    note: "No explicit dated release statement was found. The value recorded is a Wayback
+      crawl-timestamp lower bound (this product's own page was captured 2019-09-16), per S6
+      policy §3 — establishes only that the product existed by that date, not a launch date."
+  /generation/basis:
+    confidence: probable
+    sources: [getgocube-com-2019-gocube-product, getgocube-com-2019-basic-edge-skus]
+    note: "GoCube's own site names this product plainly 'GoCube' (distinct SKU GC33A) and its
+      own comparison table treats it as the counterpart to 'GoCube Edge' — a first-party naming
+      and feature distinction, not a retailer or community convention."
+  /name:
+    confidence: probable
+    sources: [getgocube-com-2019-gocube-product]
+    note: "The manufacturer's own product page title is plain 'GoCube', not 'GoCube Basic' — the
+      latter is TheCubicle-adjacent/family-record shorthand (per
+      data/families/particula-gocube.yml, which cites 'GoCube Basic' from
+      getgocube-com-2019-basic-edge-skus) also used directly in that source's own product
+      listing. Recorded as `name` here for disambiguation against the family and the Edge/X
+      siblings; 'GoCube Basic' is carried as an alias."
+  /specs:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No retailer spec table (TheCubicle,
+      SpeedCubeShop) for a standalone 'GoCube Basic' 3x3 was located; GoCube's own product page
+      gives no dimensions or weight for this SKU."
+  /description:
+    confidence: probable
+    sources: [getgocube-com-2019-gocube-product, getgocube-com-2019-basic-edge-skus,
+      getgocube-com-2019-gocube-edge-product, thecubicle-gocube-edge-3x3-2020]
+  /aliases:
+    confidence: confirmed
+    sources: [getgocube-com-2019-basic-edge-skus]

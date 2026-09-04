@@ -1,0 +1,44 @@
+# source: getgocube-com-2021-gocube-x-product
+# GoCube's own official product page for "GoCube-X" at getgocube.com, captured via Wayback.
+# Tier 1, first-party. Gives the key identity evidence distinguishing GoCube-X from GoCube
+# Edge: a coin-cell (non-rechargeable) power system, "classic shape" (vs. Edge's pillowed
+# shape), and a three-way "Compare cubes" feature/look-and-feel table.
+id: getgocube-com-2021-gocube-x-product
+entity: source
+kind: manufacturer_official
+title: "GoCube-X - GoCube (getgocube.com product page)"
+publisher: "GoCube / Particula"
+url: "https://getgocube.com/products/gocube-x/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20211027012722id_/https://getgocube.com/products/gocube-x/"
+excerpt: |-
+  "GoCube-X $39.95 [USD] $49.95 Sale! ... Gocube-X comes with: GoCube-X, Coin Battery included
+  (secured). *FIRST BATCH of Products – SOLD OUT!* 2nd BATCH AVAILABLE IN EARLY NOVEMBER!...
+  THIS IS the GoCube-X! A great starting point into the world of cubing! Now available in its
+  classic shape at a great price! ... Smart Sensors Continuously track and measure activity.
+  Bluetooth 5.0 Quality wireless connection. Low Power Battery Operated (Coin CR1225) Over 60
+  hours of play. New Neon Colors." "Compare cubes" table (GoCube-X / Rubik's Connected / GoCube):
+  Tutorial, Mini Games, Speed Cube, Magnetic Cube, Online Battles, Lights, 3D Tracking listed
+  per column; "Tracking accuracy: 0.001 sec" for all three; "Look & Feel: Classic shape, Neon
+  stickers [GoCube-X] / Classic design, Stickers [Rubik's Connected] / Premium, stickerless
+  [GoCube]." Site navigation at this capture: "Shop: GoCube / Rubik's Connected / GoCube 2x2 /
+  GoCube-X / Accessories" — no separate 'Basic' or 'Edge' nav entries remain; 'GoCube' alone is
+  now the flagship (formerly 'Edge'-branded) tier.
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: "Tier 1, first-party. 'Now available in its classic shape' and the comparison
+  table's own 'Classic shape... vs. Premium, stickerless' framing are read as GoCube-X using a
+  standard (non-pillowed) shape against the then-current flagship 'GoCube' (Edge lineage)'s
+  pillowed shape, though the word 'pillowed' is not used on this specific page (it is used on
+  getgocube-com-2019-gocube-edge-product and thecubicle-gocube-edge-3x3-2020 for the Edge
+  lineage). The CR1225 coin-cell power system is a stated hardware difference from GoCube/Edge's
+  rechargeable-via-MicroUSB system (getgocube-com-2019-gocube-product); together with the
+  dimensional difference already on record from thecubicle-gocube-x-3x3-2022 (57.0mm/103.0g vs.
+  Edge's 60.0mm/125.0g), this is treated as design/mould-level identity evidence for GoCube-X as
+  a separate model, not a configuration of Edge. 'FIRST BATCH... SOLD OUT... 2nd BATCH AVAILABLE
+  IN EARLY NOVEMBER' establishes GoCube-X was already on sale and had sold out an initial batch
+  before this 2021-10-27 capture, used only as a circulation `before` bound, not a release date."
+status: sourced

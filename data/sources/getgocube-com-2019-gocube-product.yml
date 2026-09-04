@@ -1,0 +1,37 @@
+# source: getgocube-com-2019-gocube-product
+# GoCube's own official product page for the base "GoCube" (no suffix; SKU GC33A) at
+# getgocube.com, captured via Wayback. Tier 1, first-party. Carries the manufacturer's own
+# "GoCube VS GoCube Edge" feature-comparison table, the key identity evidence distinguishing
+# this model from GoCube Edge.
+id: getgocube-com-2019-gocube-product
+entity: source
+kind: manufacturer_official
+title: "GoCube - GoCube (getgocube.com product page)"
+publisher: "GoCube / Particula"
+url: "https://getgocube.com/products/gocube/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190916171032id_/https://getgocube.com/products/gocube/"
+excerpt: |-
+  "GoCube $79.95 $100.00 ... SKU: GC33A / Category: cube. Get GoCube and experience a new world
+  of cubing. Learn, improve, play and battle with other Cubers around the world... Note: Get the
+  Edge version to access the group and friends battle modes, accurate tracking, advanced
+  statistics, and leaderboard. (please review the comparison table for details) GoCube kit comes
+  with GoCube and a customized USB charger." Feature table "GoCube VS GoCube Edge": Tutorial
+  (both), Mini Games (both), Online Battles "Limited*" for GoCube vs. full for GoCube Edge,
+  Leaderboard, "Tracking accuracy 0.25 sec [GoCube] / 0.001 sec [GoCube Edge]", Advanced
+  Statistics (Edge only). Footnote: "*Groups & friends modes are only supported by GoCube Edge
+  (GoCube enables only battles with random players)."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: "Tier 1, first-party. This is the manufacturer's own direct feature
+  comparison between 'GoCube' (this product, SKU GC33A) and 'GoCube Edge' (SKU GC33E, see
+  getgocube-com-2019-gocube-edge-product): a 250x difference in stated tracking accuracy
+  (0.25 sec vs 0.001 sec), consistent with different sensor/IMU hardware rather than a firmware
+  difference alone, used as identity evidence for treating GoCube (Basic) and GoCube Edge as
+  distinct models. No dimensions or weight are given on this page for the base GoCube; no other
+  retailer (TheCubicle, SpeedCubeShop) was found in this pass to have carried a standalone
+  'GoCube Basic' 3x3 listing, so this model's size_mm/weight_g remain unset."
+status: sourced
