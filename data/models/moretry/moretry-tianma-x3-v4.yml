@@ -1,0 +1,61 @@
+# model: moretry-tianma-x3-v4
+# Pass 3 final-seven lane, Agent A. The strongest mechanism-level evidence in this family: a
+# spring tensioning system fully replaced by a MagLev (magnetic levitation) system.
+id: moretry-tianma-x3-v4
+entity: model
+family_id: moretry-tianma-x3
+manufacturer_id: moretry
+name: "MoreTry TianMa X3 V4 (MagLev)"
+generation:
+  label: "V4"
+  ordinal: 4
+  basis: community_convention
+scope_class: core
+specs:
+  size_mm: 55.5
+description: |-
+  TheCubicle's own product page (thecubicle-moretry-tianma-x3-v4-maglev-2022, tier 2): "The
+  Moretry Tianma X3 V4 (MagLev) is a 3x3 from the new company that features traditional
+  corner/edge magnetization along with corner base/edge magnets. This version includes
+  enlarged corner base magnets, allowing them to interact with a repelling magnet in the
+  centers to aid with alignment. The MagLev version replaces the traditional spring with a
+  magnetic levitation system that has 6 magnetic rings instead of 2 for a more linear
+  tensions." Structured spec table: "Manufacturer: Moretry / Type: 3x3 / Added: 2022-03-14 /
+  Gross Weight: 294g / Dimensions: 55.5mm³ / Magnets: Magnetic." A genuine mechanism-level
+  change (spring-based tensioning replaced entirely by a magnet-ring levitation system) over
+  V3's shared magnet layout — per DATA_MODEL §4.2 the clearest identity evidence in this
+  family, since it is a described mechanism substitution, not merely a hardware option.
+  Later carried forward, per a customer review on the "TianMa X3+" page
+  (thecubicle-moretry-tianma-x3-plus-v3-2025), into the refined-mould "X3+" line: "I ended up
+  installing core magnets in this cube (tianma x3+) as well, then swapping the centers so I
+  could keep the hefty maglev system which I had grown to love in the X3 V4" — the basis for
+  `moretry-tianma-x3-plus`'s own `succeeds` relationship to this model.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v4-maglev-2022]
+    note: "Same reasoning as moretry-tianma-x3-v1/generation/basis."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v4-maglev-2022]
+  /description:
+    confidence: reported
+    sources: [thecubicle-moretry-tianma-x3-v4-maglev-2022, thecubicle-moretry-tianma-x3-plus-v3-2025]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Same 'Added: 2022-03-14' catalogue-artifact and S6-policy
+      reasoning as moretry-tianma-x3-v1. Left unset."
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-moretry-tianma-x3-v4-maglev-2022]
+    note: "V4's own description explicitly frames itself as the MagLev variant of V3's magnet
+      layout ('This version includes enlarged corner base magnets... The MagLev version
+      replaces the traditional spring...'), directly building on V3's described hardware."
+relationships:
+  - type: succeeds
+    target: moretry-tianma-x3-v3
+    target_entity: model
+    note: "V4's own description explicitly carries forward V3's magnet layout ('enlarged
+      corner base magnets... repelling magnet in the centers') and adds the MagLev mechanism
+      substitution on top of it."

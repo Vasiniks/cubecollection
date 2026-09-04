@@ -1,0 +1,30 @@
+# source: cubezz-moretry-tianma-x3-magnetic-variants
+# Cubezz.com (non-US/English retailer, per RESEARCH_SPEC §3.6a) search results for "moretry",
+# found this pass. Lists the base (non-"+") "TianMa X3" line under magnet-strength-tier names
+# distinct from the "X3+" line's own equivalent tiers found at Cubelelo — corroborating that
+# X3 and X3+ are sold as two parallel, separately-named product lines.
+id: cubezz-moretry-tianma-x3-magnetic-variants
+entity: source
+kind: retailer
+title: "MoreTry TianMa X3 search results - Cubezz.com"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/search.php?keywords=moretry"
+preservation_method: excerpt
+excerpt: |-
+  Three base "MoreTry TianMa X3" 3x3 listings found: "MORETRY TianMa X3 Double Magnetic
+  3x3x3 Speed Cube" (US$13.99), "MORETRY TianMa X3 Triple Magnetic 3x3x3 Speed Cube"
+  (US$17.99), "MORETRY TianMa X3 Super Magnetic 3x3x3 Speed Cube" (US$21.99) — none carrying
+  a "+" in the name, unlike the parallel "X3+ (Frosted)" Dual/Triple/Super-MagLev line found at
+  Cubelelo (cubelelo-moretry-tianma-x3-plus-frosted).
+preservation_note: "No archive.org capture exists for this exact Cubezz search URL as of this
+  pass; preserved as a live-fetch excerpt in the interim."
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 2, first-party retailer search/category listing. Used only for the
+  naming-pattern corroboration described above (X3 vs X3+ as two distinct retailer-recognised
+  lines), not for any specification claim — no dimensions or weight are given in the search
+  summary."
+status: sourced

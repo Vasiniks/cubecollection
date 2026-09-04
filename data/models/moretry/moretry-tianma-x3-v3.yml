@@ -1,0 +1,62 @@
+# model: moretry-tianma-x3-v3
+# Pass 3 final-seven lane, Agent A. A real, described mechanism addition over V1 — enlarged
+# corner base magnets and a repelling centre-magnet alignment system.
+id: moretry-tianma-x3-v3
+entity: model
+family_id: moretry-tianma-x3
+manufacturer_id: moretry
+name: "MoreTry TianMa X3 V3 (Snap)"
+generation:
+  label: "V3"
+  ordinal: 3
+  basis: community_convention
+scope_class: core
+specs:
+  size_mm: 55.5
+description: |-
+  TheCubicle's own product page (thecubicle-moretry-tianma-x3-v3-snap-2022, tier 2): "The
+  Moretry Tianma X3 V3 (Snap) is a 3x3 from the new company that features traditional
+  corner/edge magnetization along with corner base/edge magnets. This version includes
+  enlarged corner base magnets, allowing them to interact with a repelling magnet in the
+  centers to aid with alignment." Structured spec table: "Manufacturer: Moretry / Added:
+  2022-03-14 / Gross Weight: 294g / Dimensions: 55.5mm³ / Magnets: Magnetic / Item Weight:
+  79.0g." A described, specific hardware addition over V1's plain corner/edge magnetization —
+  the basis for treating V1 and V3 as a real design progression rather than a bare version
+  label, per DATA_MODEL §4.2's own guidance that a substantial hardware difference sold as an
+  option of one continuing product line is still evidence worth weighing even though, taken
+  alone, hardware differences are not sufficient for a model split; here it is corroborated by
+  the same shell dimension (55.5mm³) persisting across V1/V3/V4, i.e. a continuing generation
+  sequence on the same base shell with incremental magnet-system additions, matching the
+  numbered "V" convention this family already uses consistently. A "Limited Edition"
+  configuration of V3 was also found by URL (`moretry-tianma-x3-v3-3x3-limited-edition`) and is
+  read as a variant, not investigated further this pass.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+    note: "Same reasoning as moretry-tianma-x3-v1/generation/basis."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+  /description:
+    confidence: reported
+    sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Same 'Added: 2022-03-14' catalogue-artifact and S6-policy
+      reasoning as moretry-tianma-x3-v1. Left unset."
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+    note: "The V3 page's own description directly contrasts its added hardware ('This version
+      includes enlarged corner base magnets...') against the plain corner/edge magnetization
+      described identically on the V1 page — a real, described mechanism difference, stronger
+      evidence than the bare numbering alone."
+relationships:
+  - type: succeeds
+    target: moretry-tianma-x3-v1
+    target_entity: model
+    note: "V3's own description explicitly adds hardware ('enlarged corner base magnets...
+      repelling magnet in the centers') over V1's plain corner/edge magnetization; the
+      relationship to V2 specifically is not stated anywhere and is not asserted here."

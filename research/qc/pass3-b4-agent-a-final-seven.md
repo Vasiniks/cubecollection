@@ -154,4 +154,109 @@ created:** `thecubicle-haitun-waverider-v1-standard-2024`, `cubezz-haitun-waveri
 
 ---
 
-(sections 4-7 to follow)
+## 4. `lefun-3x3` — accepted, one model
+
+**Search performed.** Re-ran the `thecubicle.com/products/lefun*` prefix sweep (119 URLs,
+confirms the family record). Specifically targeted the two "V2"-suffixed print themes flagged
+by the family record as unresolved (Periodic Table 3x3 V2, and by pattern Christmas 3x3 V2) to
+test whether "V2" here means a mechanism generation or a print revision — fetched Periodic
+Table 3x3 V2 in full: "a standard, non-magnetic 3x3 with different elements on each face,"
+56.0mm³/79g, no mechanism claim of any kind. **Non-US retailer check:** Cubelelo ("lefun" — 74
+generic results, no LeFun-branded product) and Cubezz ("lefun" — "Total 0 records"), both
+negative, recorded.
+
+**Boundary call.** Confirms, rather than assumes, the frozen family record's own one-base-mould
+reading: four listings fetched in full this pass (Formula, Sudoku, Calendar, Periodic Table V2)
+all describe "a standard, non-magnetic 3x3" differing only in printed face content. **One
+model**, `lefun-3x3-standard`.
+
+**Accepted:** `lefun-3x3-standard` — "LeFun 3x3". Existence/description: `reported` (four tier
+2 sources agreeing on the generic base-mould framing). **Specs left unset**, and this is worth
+stating plainly rather than glossing over: the four listings actually checked do not agree on
+dimension (55.5mm³ on Formula vs 56.0mm³ on the other three) — read as ordinary retail
+rounding/tolerance noise on one mould, consistent with the family record's own reasoning, but
+not confidently a single shared value, so no `size_mm` default is recorded. Weight similarly
+varies by theme and is left unset. Generation and released both `unknown`.
+
+**§3.6a record.** Retailer prefix sweep: done (re-confirmed). Non-US/English retailer: Cubelelo
+and Cubezz, both checked, both negative — recorded above.
+
+**Sources used:** `thecubicle-lefun-formula-3x3`, `thecubicle-lefun-sudoku-3x3-2022`,
+`thecubicle-lefun-calendar-cube-3x3-2026` (existing, reused). **Source created:**
+`thecubicle-lefun-periodic-table-3x3-v2-2024`.
+
+---
+
+## 5. `moretry-tianma-x3` — accepted, five models. Genuine, disclosed uncertainty on two of them.
+
+**Search performed.** Re-ran the `thecubicle.com/products/moretry*` prefix sweep (26 URLs,
+confirms and extends the family record) and fetched, in full, every version-numbered page not
+already cleanly quoted in an existing source: V2 (Enhanced), V3 Plus, and a Triple-Track
+Magnetic Frosted "X3+" configuration page. **Non-US retailer check:** Cubezz ("moretry" — three
+base-line magnet-tier listings, no "+") and **Cubelelo** ("moretry" — found a **ZCube Edition**
+listing, a plain **"MoreTry Tianma X3 (Frosted)"**, and, independently, a **"MoreTry Tianma X3+
+(Frosted)"** at a separate URL/price) — both positive and directly useful for the model
+boundary below, recorded.
+
+**Boundary calls, the hard case in this lane.**
+
+1. **V1, V3 (Snap), V4 (MagLev) — confirmed, described mechanism progression**, already
+   established by the frozen family record and re-verified here: V1 (plain corner/edge
+   magnets) → V3 (adds enlarged corner base magnets + a repelling centre-magnet system) → V4
+   (replaces the spring entirely with a 6-ring MagLev system). All three share an identical
+   55.5mm³ shell dimension across every listing checked. Three models, chained by `succeeds`.
+
+2. **V2 (Enhanced) — admitted on existence alone, at deliberately weak confidence.** The only
+   capture found under its own URL is internally contaminated: the body text is verbatim the
+   V4 listing's copy, with "Moretry Tianma X3 V2 3x3 (Enhanced)" appearing only inside a
+   bundle-contents list. This is the exact templating/redirect artifact the frozen family
+   record already flagged and declined to use — re-confirmed, not newly discovered, this pass.
+   Per S6 §4 ("create the record with uncertain/reported confidence — do not inflate, and do
+   not discard"), V2 is admitted on the bundle-mention alone (S6 class 2), with everything else
+   — description, specs, date, even the strength of its `succeeds` link to V1 — left at
+   `uncertain`. This is the thinnest model admitted in this lane.
+
+3. **"TianMa X3+" — admitted as its own model on an explicit tooling claim, not on the "+"
+   naming.** TheCubicle's own copy: "The Moretry Tianma X3+ is a more refined version of the
+   original X3. This one has magnet capsules that are easier to install, **more precise molds**
+   that make turning quieter and more predictable." Per DATA_MODEL §4.2 ("if the internal
+   geometry differs, it is a different design regardless of marketing"), "more precise molds"
+   is direct tooling-level identity evidence — the clearest single sentence in this family for
+   a model split, stronger than the numbered-V hardware differences alone would have been.
+   Cubelelo independently sells "MoreTry Tianma X3+ (Frosted)" and a plain "MoreTry Tianma X3
+   (Frosted)" as two separate listings, corroborating that a second retailer also treats X3 and
+   X3+ as distinct products. A customer review on the X3+ page reports retaining V4's MagLev
+   centre system when modifying an X3+ unit — used, at `uncertain` confidence (informal
+   testimony, not retailer copy), as the sole basis for a `succeeds` link to V4 specifically
+   rather than V1 or V3. **Left genuinely open, not resolved by guesswork:** the X3+ page's own
+   title is "Moretry Tianma X3+ **V3** 3x3," raising the unanswered question of whether "+" is
+   its own versioned sub-line (with unfound +V1/+V2/+V4 siblings) rather than a single flat
+   model — stated as an open question in the model record itself.
+
+**Rejected as models (correctly treated as variants, not investigated further):** the "Limited
+Edition" configuration of V3; the Single/Double/Triple-Track Magnetic Frosted and UV-coated
+configurations of X3+; the "ZCube Edition"/"SAOCube SE"/"SAOCube Special Edition"
+collaborations on both the base line and X3+ — all are DATA_MODEL §4.1 configuration/
+collaboration-status differences (magnet architecture, coating, collaboration status), not
+tooling differences, and were confirmed by spot-checking their own thin/templated product
+copy to carry no mould or mechanism claim.
+
+**Dates.** All five models leave `released` `unknown`. Every "Added:" field found across this
+family (2022-03-14 on V1/V3/V4 identically regardless of version; 2024-09-09 on X3+) is
+categorically inadmissible under the S6 policy §3, and the V1/V3/V4 date's own cross-version
+identity is independently suspicious on its own terms (already flagged by the family record as
+a likely brand-onboarding artifact).
+
+**§3.6a record.** Retailer prefix sweep: done (re-confirmed, extended). Non-US/English
+retailer: Cubezz and Cubelelo, both checked, both positive and load-bearing on the model
+boundary — recorded above.
+
+**Sources used:** `thecubicle-moretry-tianma-x3-v1-2023`, `thecubicle-moretry-tianma-x3-v3-
+snap-2022`, `thecubicle-moretry-tianma-x3-v4-maglev-2022` (existing, reused). **Sources
+created:** `thecubicle-moretry-tianma-x3-v2-enhanced-2023` (contaminated capture, documented as
+such), `thecubicle-moretry-tianma-x3-plus-v3-2025`, `cubelelo-moretry-tianma-x3-plus-frosted`,
+`cubezz-moretry-tianma-x3-magnetic-variants`.
+
+---
+
+(sections 6-7 to follow)

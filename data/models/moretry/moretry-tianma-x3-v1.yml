@@ -1,0 +1,51 @@
+# model: moretry-tianma-x3-v1
+# Pass 3 final-seven lane, Agent A. MoreTry's baseline design generation of the "TianMa X3"
+# numbered lineage.
+id: moretry-tianma-x3-v1
+entity: model
+family_id: moretry-tianma-x3
+manufacturer_id: moretry
+name: "MoreTry TianMa X3 V1"
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: community_convention
+scope_class: core
+specs:
+  size_mm: 55.5
+description: |-
+  TheCubicle's own product page (thecubicle-moretry-tianma-x3-v1-2023, tier 2): "The Moretry
+  Tianma X3 V1 (Standard) is a 3x3 from the new company that features traditional corner/edge
+  magnetization." Structured spec table: "Manufacturer: Moretry / Type: 3x3 / Added:
+  2022-03-14 / Gross Weight: 210g / Dimensions: 55.5mm³ / Magnets: Magnetic / Item Weight:
+  75.0g." A non-US retailer, Cubezz.com, independently lists the same base line under
+  magnet-strength-tier names (Double/Triple/Super Magnetic) distinct from the "X3+" line's own
+  tier names (cubezz-moretry-tianma-x3-magnetic-variants) — corroborating V1's base
+  mechanism as this family's plain, non-refined-mould starting point.
+
+  Directly and explicitly succeeded by a described mechanism progression: V3 (Snap) adds
+  "enlarged corner base magnets" and a repelling centre-magnet system over this baseline (see
+  `moretry-tianma-x3-v3`).
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v1-2023]
+    note: "'V1' is the retailer's own numbering, embedded in the product's own name/URL
+      throughout this family, but no MoreTry-own-voice (tier 1) source was found this pass
+      confirming MoreTry itself originated the numbering rather than the retailer adopting a
+      Chinese-market convention secondhand. Recorded as `community_convention`, not blurred
+      into `manufacturer_declared`."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v1-2023]
+  /description:
+    confidence: reported
+    sources: [thecubicle-moretry-tianma-x3-v1-2023, cubezz-moretry-tianma-x3-magnetic-variants]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The source's own 'Added: 2022-03-14' field is, per this
+      pass's own finding (repeated identically across V1/V3/V4 listings regardless of version),
+      almost certainly a brand catalogue-onboarding artifact rather than a per-product release
+      date, and is in any case categorically inadmissible as release-date evidence under the
+      S6 policy §3. Left unset."

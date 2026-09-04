@@ -1,0 +1,64 @@
+# model: lefun-3x3-standard
+# Pass 3 final-seven lane, Agent A. LeFun's single base 3x3 mould, sold under dozens of
+# individually-marketed print-theme/gift editions. Print themes (including the "V2" print
+# revisions found on the Christmas and Periodic Table themes) are colourway/decoration
+# variants of this one model per DATA_MODEL §4.1, not separate models — confirmed this pass by
+# directly fetching one "V2" listing (Periodic Table 3x3 V2) and finding no mechanism claim
+# whatsoever, only a content/print change ("a standard, non-magnetic 3x3 with different
+# elements on each face"). Pass-4 territory, not enumerated further here.
+id: lefun-3x3-standard
+entity: model
+family_id: lefun-3x3
+manufacturer_id: lefun
+name: "LeFun 3x3"
+scope_class: core
+description: |-
+  Four LeFun 3x3-shaped product pages were fetched in full this pass (not only their existing
+  sources' own excerpts) specifically to test for a mechanism-level generation change: **Formula
+  3x3** (thecubicle-lefun-formula-3x3, "Dimensions: 55.5mm³ / Gross Weight: 77g / Item Weight:
+  65.3g"), **Sudoku 3x3** (thecubicle-lefun-sudoku-3x3-2022, "56.0mm³ / 78g gross / 66.3g
+  item"), **Calendar Cube** (thecubicle-lefun-calendar-cube-3x3-2026, "56.0mm³ / 79g gross /
+  70.0g item"), and **Periodic Table 3x3 V2** (fetched fresh this pass, no existing source
+  record; "The Lefun Periodic Table 3x3 V2 is a standard, non-magnetic 3x3 with different
+  elements on each face... 56.0mm³ / 79g gross / 70.0g item"). All four are described in
+  identical generic terms ("a standard, non-magnetic 3x3") with the only stated difference
+  being the printed face content — no core, mechanism, or tooling claim differs anywhere, and
+  the "V2" suffix on Periodic Table (and, by the same evident pattern, on the "Christmas 3x3
+  V2" theme) reads as a print-content revision of a decorated edition, not a manufacturer-
+  declared generation of the underlying cube. This confirms, rather than merely assumes, the
+  frozen family record's own one-base-mould reading.
+
+  A large further range of print-theme editions (Dollar Cube, Hundred-Dollar Cube, Number
+  Cube, Respect Cube, Gradient Cube, Halloween Cube, Blue Sudoku Cube, and the two "V2" themes)
+  was found via the same prefix sweep but not individually fetched this pass — treated as
+  further variants of this one model on the same evidentiary pattern, not tested individually.
+status: drafted
+attestations:
+  /description:
+    confidence: reported
+    sources: [thecubicle-lefun-formula-3x3, thecubicle-lefun-sudoku-3x3-2022, thecubicle-lefun-calendar-cube-3x3-2026, thecubicle-lefun-periodic-table-3x3-v2-2024]
+  /specs:
+    confidence: unknown
+    note: "Dimensions across the four listings actually fetched this pass are not identical:
+      55.5mm³ on Formula versus 56.0mm³ on the other three. This is read as ordinary retailer
+      rounding/tolerance noise on one generic mould (the same reasoning the frozen family
+      record already applied to conclude ONE family rather than one per theme), not as
+      evidence of two different moulds — but given the genuine, observed disagreement between
+      sampled listings, no single figure is confidently the model's own shared default. Left
+      unset rather than picking one theme's figure and calling it definitive; a future pass
+      with a larger, more systematic sample (or an archivist measurement) should resolve this
+      properly. Weight is likewise left unset — it visibly varies by theme (77-79g gross) in a
+      way plausibly tied to how much ink/print coverage each theme's stickers/tiles carry, not
+      a shared design constant."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. No source found this pass — including the two 'V2'-suffixed
+      print themes, directly checked for exactly this reason — makes any claim about a
+      mechanism-level generation change to the base mould. Field left unset rather than
+      invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. TheCubicle's own 'Added:' fields differ per listing
+      (2020-11-03 Formula, 2024-02-08 Periodic Table V2, etc.) and are, per the S6 policy §3,
+      categorically inadmissible as release-date evidence regardless of which specific date
+      string appears. Left unset."
