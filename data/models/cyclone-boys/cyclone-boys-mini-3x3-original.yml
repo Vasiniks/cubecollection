@@ -1,0 +1,102 @@
+# model: cyclone-boys-mini-3x3-original
+# Pass 3 (model enumeration), agent C. A compact 40mm format, tested seriously against the
+# model/variant boundary per DATA_MODEL §4.2: a 40mm cube cannot be produced from a standard
+# ~55-57mm Cyclone Boys shell by choosing different parts at assembly (see cyclone-boys-feiwu,
+# -feichi, -feijue, all independently measured 55-57mm this pass) — it requires distinct
+# tooling/mould, so this is treated as a genuine model, not a variant of another Cyclone Boys
+# line. `scope_class: core` is recorded provisionally, mirroring the precedent already set by
+# yj-zhilong-mini.yml (a 50mm cube) elsewhere in this archive: no source found this pass states
+# WCA competition regulations restrict a 40mm 3x3x3, so no non-WCA-legal framing was found
+# either, but this is flagged for human review given the unusually small size, and a `size_mm`
+# far outside 50-60 already triggers QC rule 18's non-blocking semantic warning regardless.
+id: cyclone-boys-mini-3x3-original
+entity: model
+family_id: cyclone-boys-mini-3x3
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys Mini 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2016-12"
+  precision: month
+  qualifier: circa
+  note: "Disputed — see /released attestation. The Speedsolving wiki states 'Released December
+    2016'; an independent tier 2 non-US retailer (cubezz-cyclone-boys-mini-3x3) shows a genuine
+    Wayback capture of a full, matching 40mm product page dated 2015-10-31, more than a year
+    earlier."
+specs:
+  size_mm: 40.0
+  weight_g: 29
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys Mini 3x3 —
+  Released December 2016. A 40 mm cube." Cubezz.com's independent product listing
+  (cubezz-cyclone-boys-mini-3x3, tier 2, non-US) gives "Size: 40*40*40mm / Weight: 29g" for a
+  stickerless configuration, agreeing exactly on size but carrying a genuine capture date over a
+  year earlier than the wiki's stated release month — recorded as a `disputed` release date
+  rather than silently preferring either source. No further generation or detail was found; this
+  is the family's sole model.
+status: drafted
+attestations:
+  /released:
+    confidence: disputed
+    disputed:
+      - value: "2016-12 (released, month precision)"
+        sources: [speedsolving-wiki-cyclone-boys-products]
+        confidence: reported
+        note: "Tier 3 override, permitted approximate-chronology claim type."
+      - value: "on sale by 2015-10-31 (existed-by bound, not a release date)"
+        sources: [cubezz-cyclone-boys-mini-3x3]
+        confidence: reported
+        note: "Genuine tier 2 Wayback crawl timestamp of a full, size-matching (40mm) product
+          listing, predating the wiki's stated release month by more than a year."
+    adjudication: "Not adjudicated. Recorded at the wiki's stated 2016-12 value only because it
+      is the sole source making an explicit release-date claim (cubezz is existence evidence,
+      not a competing date claim), but this is a substantially larger gap than the FeiChi case
+      (cyclone-boys-feichi-original), where the two sources agreed closely — this is a genuine,
+      unresolved discrepancy, not a close corroboration. A future pass should check whether the
+      wiki's 'December 2016' actually describes a distinct, later Mini 3x3 batch/colourway
+      rather than the same product cubezz already carried in 2015."
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-cyclone-boys-mini-3x3]
+    note: "Single tier 2 source (cubezz-cyclone-boys-mini-3x3), nothing contradicting — the
+      wiki's tier-3 override forbids citing it to establish a specification, so it is not
+      counted toward this attestation even though it states the same 40mm figure in prose; two
+      independent tier 1-2 sources would be required for `confirmed` per rule 9, and only one
+      is available here."
+  /specs/weight_g:
+    confidence: reported
+    sources: [cubezz-cyclone-boys-mini-3x3]
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Not described as magnetic by either source."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found for this single-generation family."
+  /scope_class:
+    confidence: uncertain
+    note: "No source states a WCA legality restriction for a 40mm 3x3x3 specifically; recorded
+      `core` provisionally per the yj-zhilong-mini.yml precedent (a 50mm cube treated the same
+      way). Flagged for human review given the smaller size than that precedent. Contrast
+      `maru-nano` (15mm), which is treated as `conditional` on the strength of a specific,
+      documented 'smallest mass-produced 3x3 in the world' significance claim that this product
+      has no equivalent of."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-mini-3x3]

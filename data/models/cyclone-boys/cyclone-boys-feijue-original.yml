@@ -1,0 +1,79 @@
+# model: cyclone-boys-feijue-original
+# Pass 3 (model enumeration), agent C. Cyclone Boys FeiJue's sole documented generation. The
+# family is named "Cyclone Boys FeiJue" without a magnet suffix, but both sources found this
+# pass only ever describe a magnetic configuration ("FeiJue M" per the wiki; "Magnetic" per
+# Cubezz.com's own title) — no non-magnetic base FeiJue was found anywhere this pass. This model
+# record uses the base "FeiJue" name (matching the family record), with the magnetic naming
+# recorded as an alias/lead rather than asserting a magnetic-vs-non-magnetic model split that no
+# source supports.
+id: cyclone-boys-feijue-original
+entity: model
+family_id: cyclone-boys-feijue
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys FeiJue"
+aliases:
+  - "Cyclone Boys FeiJue M"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.0
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys FeiJue M —
+  Decent budget magnetic option, widely regarded as inferior to the Kylin V2 M and the Yulong
+  V2 M." Cubezz.com's independent product listing (cubezz-cyclone-boys-feijue, tier 2, non-US),
+  captured 2018-01-30, states directly: "First magnetic 3x3 cube from Cyclone Boys brand,"
+  giving "Size: 56*56*56mm / Packing Weight: 205g" (a box/shipping weight, not recorded as
+  `weight_g` here — see that source's own reliability_note). No release date was found for this
+  product at any tier, and no further FeiJue generation or a non-magnetic base "FeiJue" (without
+  "M") was found anywhere this pass; this is the family's sole model. `magnet_architecture` is
+  left unset despite both sources confirming magnets are present, because neither states the
+  specific arrangement (single-layer, dual-layer, etc.) and this archive does not guess a
+  vocabulary value from a bare "magnetic" claim.
+status: drafted
+attestations:
+  /aliases:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-feijue]
+  /specs/size_mm:
+    confidence: reported
+    sources: [cubezz-cyclone-boys-feijue]
+    note: "Single tier 2 source. The wiki source may not be used for specifications per its own
+      tier-3 override terms."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Cubezz.com's own 'Packing Weight: 205g' is explicitly a box/shipping figure per that
+      source's reliability_note, not treated as the cube's own weight."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Both sources confirm magnets are PRESENT ('FeiJue M', 'Magnetic', 'First magnetic
+      3x3 cube from Cyclone Boys brand' — see description), but neither states the specific
+      arrangement (single-layer, dual-layer, etc.), so no vocabulary value is set here; a
+      structural QC rule requires `unknown` rather than a populated confidence when the field
+      itself is left absent. The fact of magnets being present, short of a configuration value,
+      is recorded in prose only."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found for this single-generation family."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Neither source states a release date; the cubezz capture
+      (2018-01-30) is an existed-by bound only, not recorded as `released`."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-feijue]

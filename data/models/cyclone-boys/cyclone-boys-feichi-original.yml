@@ -1,0 +1,83 @@
+# model: cyclone-boys-feichi-original
+# Pass 3 (model enumeration), agent C. Cyclone Boys FeiChi's sole documented generation, the
+# stated successor to cyclone-boys-feiwu-original. Model existence/naming rest on the
+# Speedsolving wiki's tier-3 override; specifications rest on an independent tier 2 non-US
+# retailer found this pass (cubezz-cyclone-boys-feichi), consistent with the wiki's dating.
+id: cyclone-boys-feichi-original
+entity: model
+family_id: cyclone-boys-feichi
+manufacturer_id: cyclone-boys
+name: "Cyclone Boys FeiChi"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2016-10"
+  precision: month
+  qualifier: circa
+specs:
+  size_mm: 57.0
+  weight_g: 90
+description: |-
+  Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys FeiChi —
+  Released: October 2016. An improved version of the FeiWu, with improved turning and better
+  colours." Cubezz.com's independent product listing (cubezz-cyclone-boys-feichi, tier 2,
+  non-US), captured 2016-10-06, gives "Size: 57*57*57mm / Weight: 90g" for a stickerless
+  configuration, and its own capture date closely corroborates (rather than contradicts) the
+  wiki's month-level dating. No further FeiChi generation was found; this is the family's sole
+  model.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-feichi]
+    note: "Upgraded from a single tier 3 source's `reported` to `probable` on the strength of
+      an independent tier 2 non-US retailer whose own genuine capture date (2016-10-06) is
+      consistent with (not contradicting) the wiki's stated month, per vocab/confidence.yml's
+      'one tier 2 source, nothing contradicting' bar for `probable`. Not `confirmed`: rule 9
+      needs a tier 1 source, or two independent tier 1-2 sources, and only one of the two
+      sources here is tier 2."
+  /specs/size_mm:
+    confidence: reported
+    sources: [cubezz-cyclone-boys-feichi]
+    note: "Single tier 2 source. The wiki source may not be used for specifications per its own
+      tier-3 override terms."
+  /specs/weight_g:
+    confidence: reported
+    sources: [cubezz-cyclone-boys-feichi]
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Not described as magnetic by either source."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found for this single-generation family."
+  /description:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-feichi]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-cyclone-boys-products]
+    note: "Direct statement ('An improved version of the FeiWu'), the same evidentiary basis
+      already used for the family-level successor_family_id on cyclone-boys-feiwu.yml and
+      cyclone-boys-feichi.yml."
+relationships:
+  - type: succeeds
+    target: cyclone-boys-feiwu-original
+    target_entity: model
+    note: "Speedsolving wiki: FeiChi is 'An improved version of the FeiWu, with improved
+      turning and better colours.'"

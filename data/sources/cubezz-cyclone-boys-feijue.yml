@@ -1,0 +1,36 @@
+# source: cubezz-cyclone-boys-feijue
+# Pass 3 (model enumeration), agent C, non-US retailer sweep (RESEARCH_SPEC §3.6a). Tier 2 spec
+# evidence, and the source of a specific, notable identity claim: this is described as Cyclone
+# Boys' first-ever magnetic 3x3.
+id: cubezz-cyclone-boys-feijue
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys FeiJue 3x3x3 Magnetic Stickerless Speed Cube – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-5579-Cyclone+Boys+FeiJue+3x3x3+Magnetic+Stickerless+Speed+Cube.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20180130203346id_/http://cubezz.com:80/Buy-5579-Cyclone+Boys+FeiJue+3x3x3+Magnetic+Stickerless+Speed+Cube.html"
+excerpt: |-
+  "Cyclone Boys FeiJue 3x3x3 Magnetic Stickerless Speed Cube... First magnetic 3x3 cube from
+  Cyclone Boys brand. Fast and smooth turning. Great corner cutting." Specifications: "Brand:
+  Cyclone Boys / Color: Stickerless / Size: 56*56*56mm / Packing Weight: 205g."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront).
+  Genuine Wayback crawl timestamp 2018-01-30, used only as an "existed by" upper bound — no
+  release date is claimed by this source and none is recorded on that strength.
+
+  Listed here as plain "FeiJue" (not "FeiJue M" as the Speedsolving wiki names it), but its own
+  copy states "Magnetic" and "First magnetic 3x3 cube from Cyclone Boys brand" directly — read
+  as confirming the product was sold magnetic-only under this retailer's naming, consistent with
+  the wiki's "M" suffix denoting the same underlying product rather than a separate
+  configuration this retailer omitted. "Packing Weight: 205g" is a box/shipping weight, not
+  necessarily the bare cube's weight, and is not used as a `weight_g` spec figure on that
+  account — left to a future pass if a bare-cube weight is found. Exact magnet architecture
+  (single-layer, dual-layer, etc.) is not stated and is not inferred.
+status: sourced

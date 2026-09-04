@@ -1,0 +1,33 @@
+# source: cubezz-cyclone-boys-feichi
+# Pass 3 (model enumeration), agent C, non-US retailer sweep (RESEARCH_SPEC §3.6a). Tier 2 spec
+# evidence, and a dated capture consistent with (not contradicting) the wiki's "Released:
+# October 2016" claim.
+id: cubezz-cyclone-boys-feichi
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys FeiChi 3x3x3 Stickerless Speed Cube – Cubezz.com"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-5063-Cyclone+Boys+FeiChi+3x3x3+Stickerless+Speed+Cube.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20161006190015id_/http://cubezz.com:80/Buy-5063-Cyclone+Boys+FeiChi+3x3x3+Stickerless+Speed+Cube.html"
+excerpt: |-
+  "Cyclone Boys FeiChi 3x3x3 Stickerless Speed Cube... Smooth turning. Great anti-pop function.
+  Great anti-twist function." Specifications: "Brand: Cyclone Boys / Color: Stickerless / Size:
+  57*57*57mm / Weight: 90g."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront).
+  Genuine Wayback crawl timestamp 2016-10-06, an "existed by" upper bound only, never used as a
+  release date — but notably consistent with (not contradicting) the Speedsolving wiki's
+  "Released: October 2016" statement for the same product, corroborating that dating at the
+  month level from an independent tier 2 source.
+
+  Specifications table is the first tier 1-2 (admissible) spec evidence found this pass for
+  this product; the wiki source's tier-3 override explicitly forbids using it to establish
+  specifications.
+status: sourced
