@@ -1,0 +1,51 @@
+# model: rubiks-connected-x
+# Pass 3 (model enumeration), Agent D. The current "Rubik's Connected X" smart-cube generation
+# — the only smart-cube product page found on rubiks.com this pass. See rubiks-connected-
+# original.yml and data/families/rubiks-connected.yml for the split reasoning.
+id: rubiks-connected-x
+entity: model
+family_id: rubiks-connected
+manufacturer_id: rubiks
+name: "Rubik's Connected X"
+aliases:
+  - "ConnectedX"
+scope_class: core
+generation:
+  label: "Connected X"
+  ordinal: 2
+  basis: manufacturer_declared
+description: |-
+  Rubik's own current product page (rubiks-com-connected-x-product-2025, tier 1): "Evolve your
+  solve with the ConnectedX Cube. Track your every twist and turn with ConnectedX's Bluetooth
+  integration that connects to your smartphone or tablet... download the Rubik's Connected App
+  to access solving resources, leaderboards, mini games, and more." Manufactured by Particula
+  per data/manufacturers/particula.yml and data/manufacturers/rubiks.yml (not re-attested here
+  to avoid duplicating that record's own provenance). No source states a physical/hardware
+  difference from the original "Rubik's Connected" beyond the name and app-ecosystem framing —
+  the succession below is recorded on the basis of the name change and the absence of any
+  surviving "Rubik's Connected" (no suffix) product page, not on a documented hardware redesign.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [rubiks-com-connected-x-product-2025]
+    note: "'Connected X' is Rubik's own current retail name; `ordinal: 2` is this record's own
+      inference (successor to the plain 'Connected' name), not a manufacturer-stated numbering
+      scheme."
+  /description:
+    confidence: probable
+    sources: [rubiks-com-connected-x-product-2025]
+  /relationships/0:
+    confidence: uncertain
+    sources: [rubiks-com-connected-x-product-2025, tech-eu-particula-series-a-2021]
+    note: "No source states a direct succession sentence between 'Rubik's Connected' and
+      'Rubik's Connected X.' Inferred from the shared 'Connected' name and rubiks.com's current
+      product prefix carrying only the 'X' page. Default new-model-with-succeeds treatment per
+      RESEARCH_SPEC section 4.2, since no source rules out a genuine hardware change between
+      the two, and none confirms one either."
+relationships:
+  - type: succeeds
+    target: rubiks-connected-original
+    target_entity: model
+    note: "Inferred from the shared 'Connected' product name and the disappearance of the
+      unsuffixed product page from rubiks.com's current catalogue; not a stated succession."

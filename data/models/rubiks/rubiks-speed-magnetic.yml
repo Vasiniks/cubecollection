@@ -1,0 +1,67 @@
+# model: rubiks-speed-magnetic
+# Pass 3 (model enumeration), Agent D. The current, magnetic Rubik's Speed Cube generation.
+# Split from `rubiks-speed-original` per the default-to-new-model rule (RESEARCH_SPEC section
+# 4.2) — DATA_MODEL section 4.2 treats magnets/core alone as the paradigm *variant*-level
+# difference when sold as simultaneous configuration options, but the sources here describe a
+# sequential replacement ("The New Rubik's Speed Cube") rather than two options sold side by
+# side, and the family record explicitly flagged this exact question as unresolved pending "a
+# source describing the actual mechanism change." No such source was found this pass, so this
+# is recorded as a `succeeds` split with `confidence: uncertain`, not confirmed as a genuine
+# new tooling generation. See data/families/rubiks-speed.yml.
+id: rubiks-speed-magnetic
+entity: model
+family_id: rubiks-speed
+manufacturer_id: rubiks
+name: "Rubik's Speed Cube (Magnetic)"
+scope_class: core
+generation:
+  label: "Magnetic"
+  basis: manufacturer_declared
+description: |-
+  Rubik's own site, 2022 homepage banner (rubiks-com-2022, tier 1): "EXCLUSIVE: The New Rubik's
+  Speed Cube – Engineered for Speed With Magnets." The dedicated current product page
+  (rubiks-com-speed-product-2024, tier 1): "The Rubik's Speed Cube is designed to help you
+  twist and turn faster than ever before. Constructed with magnets for added stability and
+  precision, and a stronger, more reliable core, the Rubik's Speed Cube is built for speed! ...
+  ENGINEERED FOR SPEED: The new magnetic Rubik's Speed Cube turns at an accelerated racing
+  pace... SMOOTHER PLAY: The magnetic Rubik's Speed Cube features a stronger core and has a
+  mechanism designed to make it faster, smoother & more reliable than ever... The Speed Cube
+  comes pre-lubricated." Magnets, a "stronger, more reliable core," and pre-lubrication are
+  tier 1 specification claims (distinguished from the comparative marketing copy around them,
+  per the tier-4-for-comparative-claims rule); no source states these are sold as an option
+  alongside a non-magnetic current-production version, which is why this is treated as a
+  generation succeeding `rubiks-speed-original` rather than a variant-level magnet
+  configuration of one persisting model.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [rubiks-com-2022, rubiks-com-speed-product-2024]
+    note: "'Magnetic' is this record's own label for what Rubik's own marketing calls 'The New
+      Rubik's Speed Cube' — a manufacturer-originated relaunch framing, but not a formal
+      version name or number, so recorded at reduced confidence per the same treatment applied
+      to moyu-weilong-gts's generation/basis elsewhere in this archive."
+  /description:
+    confidence: probable
+    sources: [rubiks-com-2022, rubiks-com-speed-product-2024]
+    note: "Tier 1, first-party, but the specific model/variant boundary question (sequential
+      generation vs. simultaneous configuration) is not addressed by either source, hence
+      `probable` rather than `confirmed` on the model-identity claim specifically, even though
+      the specification claims themselves (magnets, core, pre-lube) are tier 1 and would
+      otherwise support `confirmed`."
+  /relationships/0:
+    confidence: uncertain
+    sources: [rubiks-com-2017-speedcube-category, rubiks-com-2022]
+    note: "No source states a direct succession sentence; inferred from Rubik's own marketing
+      contrast between an unspecified earlier Speed Cube and 'The New... magnetic' one. Default
+      new-model-with-succeeds treatment per RESEARCH_SPEC section 4.2, chosen over silently
+      treating this as a `model.revisions` entry of `rubiks-speed-original`, because the
+      magnitude of the claimed change (magnets + core + pre-lubrication together) reads as more
+      than an undeclared running production tweak."
+relationships:
+  - type: succeeds
+    target: rubiks-speed-original
+    target_entity: model
+    note: "Rubik's own site frames the current magnetic cube as 'The New Rubik's Speed Cube,'
+      implying an earlier, unnamed non-magnetic generation under the same product name — no
+      source states this as an explicit succession sentence."
