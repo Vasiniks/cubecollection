@@ -1,0 +1,30 @@
+# source: thecubicle-lefun-periodic-table-3x3-v2-2024
+# TheCubicle product page for the "Lefun Periodic Table 3x3 V2," archived 2024-02-20. Fetched
+# this pass specifically to test whether a "V2"-suffixed LeFun print theme represents a
+# mechanism-level generation change or merely a print-content revision, for the
+# `lefun-3x3-standard` model record.
+id: thecubicle-lefun-periodic-table-3x3-v2-2024
+entity: source
+kind: retailer
+title: "Lefun Periodic Table 3x3 V2 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-periodic-table-3x3-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240220id_/https://www.thecubicle.com/products/lefun-periodic-table-3x3-v2"
+excerpt: |-
+  Product Description: "The Lefun Periodic Table 3x3 V2 is a standard, non-magnetic 3x3 with
+  different elements on each face. Each one has the name of the element, its symbol, atomic
+  weight, and atomic number. Learn to solve the 3x3 while learning some cool elements at the
+  same time!" Structured "Product Specifications": "Manufacturer: Lefun / Type: 3x3 / Added:
+  2024-02-08 / Gross Weight: 79g / Dimensions: 56.0mm³ / Item Weight: 70.0g."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 2, first-party retailer product page. Despite the 'V2' suffix in its
+  own name, the description makes no mechanism, core, or hardware claim of any kind — 'a
+  standard, non-magnetic 3x3' with 'different elements on each face', i.e. a print-content
+  revision only. Dimensions/weight (56.0mm³, 79g gross, 70.0g item) match
+  thecubicle-lefun-calendar-cube-3x3-2026 exactly, supporting the one-base-mould reading."
+status: sourced

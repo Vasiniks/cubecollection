@@ -1,0 +1,32 @@
+# source: speedsolving-forum-diansheng-questions-2008
+# Speedsolving.com forum thread, "Many diansheng cube questions," posted 2008-07-09. Tier 3
+# (forum). A third, independent forum mention discussing DianSheng "e"-designated 3x3x3 cubes.
+id: speedsolving-forum-diansheng-questions-2008
+entity: source
+kind: forum
+title: "Many diansheng cube questions - Speedsolving.com"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/threads/many-diansheng-cube-questions.5042/"
+preservation_method: excerpt
+excerpt: |-
+  Posted 2008-07-09. References "Diansheng White 3x3x3 Cube (NIB-e)" and "Diansheng White
+  3x3x3 Cube (e)" as two listed items (NIB meaning "New In Box"), and a respondent's hands-on
+  assessment: "the two Dianshengs I have are extremely good (this is with CRC silicone
+  applied. never forget lube!)... It's at least as good as a white Type D (they're pretty
+  similar all-round)."
+preservation_note: "No archive.org capture exists for this thread URL as of this pass;
+  preserved as a live-fetch excerpt."
+accessed: "2026-09-04"
+language: en
+published:
+  value: "2008-07-09"
+  precision: day
+  qualifier: exact
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 3 (forum), per vocab/source-kinds.yml. Third independent corroboration
+  of a real, owned, discussed '(e)'-designated DianSheng 3x3x3 cube within a month of
+  speedsolving-forum-diansheng-type-e-review-2008's own dated review — used only for existence
+  corroboration, no specification or release date."
+status: sourced

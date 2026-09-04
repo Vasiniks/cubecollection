@@ -1,0 +1,33 @@
+# source: cubezz-haitun-waverider-v2-standard
+# Cubezz.com (non-US/English retailer, per RESEARCH_SPEC §3.6a) product page for "HAITUN
+# Waverider V2 3x3x3 Speed Cube Standard Version," found this pass while sweeping Cubezz for
+# HaiTun. The only source found this pass giving a dimensions figure for the V2 generation
+# (TheCubicle's own V2 spec tables give weight and magnet fields but no dimensions on every V2
+# configuration checked this pass).
+id: cubezz-haitun-waverider-v2-standard
+entity: source
+kind: retailer
+title: "HAITUN Waverider V2 3x3x3 Speed Cube Standard Version - Cubezz.com"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-8599-HAITUN+Waverider+V2+3x3x3+Speed+Cube+Standard+Version.html"
+preservation_method: excerpt
+excerpt: |-
+  "HAITUN Waverider V2 3x3x3 Speed Cube Standard Version." Manufacturer: "HAITUN CUBE (also
+  referenced as Dolphin)". Specifications: "Dimensions: 56x56x56 millimeters / Weight: 71
+  grams." Stickerless, listed at US$17.99 (was US$23.38).
+preservation_note: "No archive.org capture exists for this exact Cubezz product URL as of this
+  pass (not checked via CDX this session); preserved as a live-fetch excerpt in the interim."
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 2, first-party retailer spec block, and a genuinely independent
+  retailer from TheCubicle (a non-US/English retailer per §3.6a) — used here specifically
+  because it is the only source found this pass giving a dimensions figure for the Waverider
+  V2 generation at all. Weight (71g, stickerless, no magnets mentioned) is notably lower than
+  and structured differently from TheCubicle's own V2 Gross Weight figures (280-282g, all
+  described as 'Magnetic') — likely a different, non-magnetic/base configuration not otherwise
+  documented in this register, or a translation/listing discrepancy; not reconciled this pass
+  and not used for any weight claim, only for the dimensions figure."
+status: sourced

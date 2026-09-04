@@ -1,0 +1,40 @@
+# source: speedsolving-forum-diansheng-stickerless-wtb-2014
+# Speedsolving.com forum thread "WTB's at BASC 4," posts dated 2014-10-17 through 2014-11-02.
+# Tier 3 (forum). PRIORITY 1 CASE evidence: the family's only existing source
+# (speedsolving-wiki-diansheng-products) is tier 4 and cannot establish a model alone (S6
+# policy, binding). This is the tier 3 source that actually clears the admission bar for
+# `diansheng-stickerless-3x3`.
+id: speedsolving-forum-diansheng-stickerless-wtb-2014
+entity: source
+kind: forum
+title: "WTB's at BASC 4 - Speedsolving.com"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/threads/wtbs-at-basc-4.49794/"
+preservation_method: excerpt
+excerpt: |-
+  2014-10-17, user AlGoreRhythm offers a "DianSheng Stickerless 3x3" for sale/trade at $6.00 as
+  part of a bundle, and separately owns "a DianSheng Stickerless 3x3, 4x4, and a DIY DianSheng
+  Stickerless 5x5." Negotiating the 3x3's trade value specifically: "The 3x3 is not the best,
+  so if you want, I will throw in a YongJun GuanLong as well" — an explicit statement that this
+  specific product was considered low quality, consistent with the family's own "very bad 3x3"
+  framing. By 2014-11-02 the DianSheng Stickerless 3x3 was included in a completed multi-item
+  trade (alongside a "DIY Diansheng Stickerless 5x5" and a "Shengshou stickerless
+  mastermorphinx") for an "Oskar's Treasure Chest" puzzle.
+preservation_note: "No archive.org capture exists for this thread URL as of this pass;
+  preserved as a live-fetch excerpt."
+accessed: "2026-09-04"
+language: en
+published:
+  value: "2014-10-17"
+  precision: day
+  qualifier: exact
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 3 (forum), per vocab/source-kinds.yml. A genuine for-sale/trade thread
+  naming this exact product ('DianSheng Stickerless 3x3') by name, with a real completed trade,
+  and independently corroborating the family's own 'very bad 3x3' characterisation ('The 3x3 is
+  not the best'). This is the tier 3 evidence this pass's model record actually rests on for
+  existence (S6 class 2) — the family's speedsolving-wiki-diansheng-products source (tier 4) is
+  retained only for the 'Will It Lube' descriptive detail, never as sole support for existence."
+status: sourced

@@ -1,0 +1,66 @@
+# model: moretry-tianma-x3-plus
+# Pass 3 final-seven lane, Agent A. A refined-mould sibling line to the numbered V1-V4
+# sequence, admitted as its own model on an explicit tooling claim (DATA_MODEL §4.2: "different
+# molds... is a different design regardless of marketing"), not on the "+" naming alone.
+id: moretry-tianma-x3-plus
+entity: model
+family_id: moretry-tianma-x3
+manufacturer_id: moretry
+name: "MoreTry TianMa X3+"
+aliases:
+  - "MoreTry TianMa X3 Plus"
+  - "Moretry Tianma X3+ V3"
+scope_class: core
+description: |-
+  TheCubicle's own product page (thecubicle-moretry-tianma-x3-plus-v3-2025, title "Moretry
+  Tianma X3+ V3 3x3"): "The Moretry Tianma X3+ is a more refined version of the original X3.
+  This one has magnet capsules that are easier to install, **more precise molds** that make
+  turning quieter and more predictable." "More precise molds" is a direct tooling claim, the
+  basis for treating this as its own model rather than a configuration of the numbered V-line —
+  per DATA_MODEL §4.2, a different mould is a different design "regardless of marketing," and
+  this is the only place in this family where a source states a tooling difference outright
+  rather than only a magnet-hardware difference.
+
+  A customer review on the same page independently reports retaining the numbered line's V4
+  MagLev centre system when modifying an X3+ unit ("I ended up installing core magnets in this
+  cube (tianma x3+) as well, then swapping the centers so I could keep the hefty maglev system
+  which I had grown to love in the X3 V4") — read as the basis for a `succeeds` relationship to
+  `moretry-tianma-x3-v4` specifically, at `uncertain` confidence given this is informal
+  customer testimony, not retailer or manufacturer copy.
+
+  **A genuinely unresolved naming question, left open rather than resolved by guesswork.** The
+  product's own title is "Moretry Tianma X3+ **V3** 3x3" — i.e. the "+" line may itself carry
+  its own internal version numbering parallel to (or continuing) the base line's V1-V4
+  sequence, rather than being a single flat model. No other "X3+ V-number" SKU (a "+V1/V2/V4")
+  was found anywhere this pass; the only other "+"-line SKUs found are configuration-named, not
+  version-named ("Triple-Track Magnetic Frosted," "Double-Track Magnetic Frosted,"
+  "Single-Track Magnetic Frosted," a UV-coated tier, and a "ZCube Edition" collaboration) — read
+  as variants of this one model, not further generations, on the balance of evidence, but this
+  is recorded as a real open question for a future pass, not a settled fact.
+status: drafted
+attestations:
+  /description:
+    confidence: reported
+    sources: [thecubicle-moretry-tianma-x3-plus-v3-2025, cubelelo-moretry-tianma-x3-plus-frosted]
+  /specs:
+    confidence: unknown
+    note: "No dimensions figure was found for this model in any source checked this pass
+      (TheCubicle's own X3+ V3 page gives only a Gross Weight of 310g; Cubelelo's X3+ Frosted
+      listing gives a Product Weight of 83g, a different figure under a different
+      methodology, for a different configuration). Neither is confidently the model's own
+      shared default. Left unset entirely."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-plus-v3-2025]
+    note: "Based on informal customer-review testimony on the retailer's own page, not
+      retailer or manufacturer copy — the weakest tier of evidence used for any relationship
+      in this family, recorded honestly as `uncertain` rather than upgraded."
+relationships:
+  - type: succeeds
+    target: moretry-tianma-x3-v4
+    target_entity: model
+    note: "A customer review reports the X3+ shell retains V4's MagLev centre system when
+      modified — the only evidence connecting X3+ to a specific numbered predecessor. The
+      page's own copy only says X3+ is 'a more refined version of the original X3' without
+      naming which numbered generation, so this specific link (to V4 rather than, say, V1 or
+      V3) rests on the review alone."

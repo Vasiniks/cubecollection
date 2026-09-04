@@ -1,0 +1,73 @@
+# model: guojia-type-a-chun2
+# Pass 3 final-seven lane, Agent A. The only GuoJia 3x3x3 with its own dedicated retailer
+# product page found across this pass's sweeps. Its own page's disclaimer directly names a
+# predecessor, "Type A Chun1" (see guojia-type-a-chun1), with a described hardware difference
+# (steel edge parts) — the basis for treating these as two design generations rather than one.
+id: guojia-type-a-chun2
+entity: model
+family_id: guojia-type-a-chun
+manufacturer_id: guojia
+name: "GuoJia Type A Chun2"
+generation:
+  label: "Chun2"
+  ordinal: 2
+  basis: community_convention
+scope_class: core
+description: |-
+  TheCubicle's own product page (thecubicle-guojia-type-a-chun2-2020, tier 2, archived capture
+  2020-09-20): "The Type A Chun2 is a 3x3 cube that features a unique internal mechanism and
+  steel parts for the edge pieces. It is currently only available in DIY Kit form. Disclaimer:
+  The steel parts provided are designed for the Type A Chun1 since the Chun2's steel parts are
+  no longer in production. The steel parts still fit, but glue may be required to hold all of
+  the steel pieces in place. The cube is usable without the steel parts, although the feel of
+  the cube is different without them." Structured spec table: "Manufacturer: GuoJia / Type: DIY
+  Kits / Added: 2018-11-07 / Gross Weight: 103g." Marked "Discontinued" on this and the only
+  other capture found.
+
+  Steel edge-piece hardware is described as a defining feature of this design ("unique internal
+  mechanism and steel parts"), and the disclaimer's own account of Chun1's steel parts not
+  perfectly interchanging with Chun2's ("still fit, but glue may be required") is read as
+  evidence of a real hardware/tooling difference between the two named generations, not merely
+  a sold configuration choice — the basis for admitting Chun1 and Chun2 as separate models
+  under DATA_MODEL §4.2, connected by a `succeeds` relationship, rather than folding them into
+  one model.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "The retailer names 'Type A Chun1' and 'Type A Chun2' as a numbered pair, but no
+      tier 1 GuoJia-own-voice source was found this pass confirming GuoJia itself uses this
+      numbering (as opposed to the retailer adopting GuoJia's Chinese-market naming secondhand).
+      Recorded as `community_convention` rather than `manufacturer_declared` on that basis —
+      the distinction matters and is not blurred."
+  /description:
+    confidence: reported
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+  /specs:
+    confidence: unknown
+    note: "The source's own spec table gives only a 'Gross Weight: 103g' for this DIY-kit
+      listing, with no companion 'Item Weight' to cross-check and no dimensions figure at all.
+      Per this pass's convention (see cubestyle-3x3-standard, kungfu-qinghong-3x3), a lone
+      Gross Weight figure on a kit product is not confidently the assembled cube's net weight
+      (it may include packaging/kit contents beyond the cube itself) and is left out of
+      `specs` rather than guessed."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The page's own 'Added: 2018-11-07' field is flagged in
+      the family record as a suspected (not proven) catalogue artifact and is not used as a
+      release date. No dated GuoJia-own-voice statement was found for either generation. Left
+      unset."
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "The Chun2 product page's own disclaimer names Chun1 as its direct predecessor by
+      the numbered name, describing a real hardware difference in the steel edge parts between
+      the two — the sole evidence for this relationship."
+relationships:
+  - type: succeeds
+    target: guojia-type-a-chun1
+    target_entity: model
+    note: "The Chun2 product page's own disclaimer names Chun1 as its direct predecessor by
+      the numbered name, describing a real hardware difference in the steel edge parts between
+      the two — the sole evidence for this relationship."

@@ -1,0 +1,34 @@
+# source: cubelelo-moretry-tianma-x3-plus-frosted
+# Cubelelo (non-US/English retailer, per RESEARCH_SPEC §3.6a) product page for "MoreTry Tianma
+# X3+ (Frosted)," found this pass while sweeping Cubelelo for MoreTry. Independent
+# corroboration that "X3+" is treated as its own distinct product line by a second retailer,
+# separate from the base "X3" (Cubelelo separately lists a plain "MoreTry Tianma X3 (Frosted)"
+# at a different URL/price) — used to support the moretry-tianma-x3-plus model boundary.
+id: cubelelo-moretry-tianma-x3-plus-frosted
+entity: source
+kind: retailer
+title: "MoreTry Tianma X3+ (Frosted) Speed Cube - Cubelelo"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/moretry-tianma-x3-frosted"
+preservation_method: excerpt
+excerpt: |-
+  "MoreTry Tianma X3+ (Frosted) Speed Cube." Description: a frosted matte-finish 3x3 offered in
+  three magnet variants: "Dual Magnetic" (balanced corner-edge magnets), "Triple Magnetic"
+  (added internal magnet layers), and "Super MagLev" (magnetic levitation instead of springs).
+  Specifications table: "Brand: MoreTry / Material: ABS Plastic / Product Weight: 83 grams /
+  Package Weight: 224 grams." A separate listing at the same retailer, "MoreTry Tianma X3
+  (Frosted)" (a different URL, /products/moretry-tianma-x3-frosted-2), sells the plain
+  (non-"+") base line at a distinct, lower price point.
+preservation_note: "No archive.org capture exists for this exact Cubelelo product URL as of
+  this pass; preserved as a live-fetch excerpt in the interim."
+accessed: "2026-09-04"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 2, first-party retailer spec table. Its own 'Manufacturer' field names
+  a domestic Indian distributor (Brainlytic Solutions Pvt Ltd), not MoreTry itself, and is
+  explicitly NOT used as a manufacturer-identity claim for MoreTry — this is a reseller
+  registration detail, not the cube's actual maker. Used only for the 'X3 vs X3+ sold as two
+  distinct product lines' corroboration and the 83g product-weight figure."
+status: sourced

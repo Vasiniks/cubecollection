@@ -1,0 +1,39 @@
+# source: thecubicle-moretry-tianma-x3-v2-enhanced-2023
+# TheCubicle's own product page under the URL for "Moretry Tianma X3 V2 3x3 (Enhanced)",
+# archived 2023-01-29. DATA QUALITY FLAG: the archived capture's own product title and body
+# description text describe the V4 (MagLev) product instead, listing "Moretry Tianma X3 V2 3x3
+# (Enhanced)" only as a bundle-included accessory item — the same templating/redirect artifact
+# already flagged in the frozen family record (`data/families/moretry-tianma-x3.yml`). Cited
+# ONLY for V2's bare existence as a named product, never for any description or spec claim.
+id: thecubicle-moretry-tianma-x3-v2-enhanced-2023
+entity: source
+kind: retailer
+title: "Moretry Tianma X3 V2 3x3 (Enhanced) – TheCubicle [contaminated capture]"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moretry-tianma-x3-v2-3x3-enhanced"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230129id_/https://www.thecubicle.com/products/moretry-tianma-x3-v2-3x3-enhanced"
+excerpt: |-
+  Page title/URL: "Moretry Tianma X3 V2 3x3 (Enhanced)". Body Product Description text
+  actually reads: "The Moretry Tianma X3 V4 (MagLev) is a 3x3 from the new company that
+  features traditional corner/edge magnetization along with corner base/edge magnets... Comes
+  with: Moretry Tianma X3 V2 3x3 (Enhanced), Screwdriver, Moretry microfiber cloth, Anti-fog
+  lens wipe." Structured spec table ("Manufacturer: Moretry / Type: 3x3 / Added: 2022-03-14 /
+  Gross Weight: 210g / Dimensions: 55.5mm³ / Magnets: Magnetic") is judged, on the same
+  reasoning, to belong to the V4 product actually described in the body text, not to V2 itself.
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 2 retailer capture, but internally contaminated: the product
+  description prose is verbatim the V4 (MagLev) listing's own copy, not a V2 description, with
+  'Moretry Tianma X3 V2 3x3 (Enhanced)' appearing only inside a bundle-contents list (a
+  retailer cross-sell/bundle templating artifact, consistent with the frozen family record's
+  own caution about this exact page: 'one fetch attempt returned content that appeared to
+  belong to a different version's page'). The bundle-contents mention is the ONLY thing used
+  from this source — it independently confirms 'Moretry Tianma X3 V2 3x3 (Enhanced)' is a real,
+  separately-named SKU (S6 class 2, existence), but nothing about its own mechanism, spec, or
+  description is admissible from this capture. The spec table figures (55.5mm³/210g) are NOT
+  attributed to V2 anywhere in this register — they most likely belong to V4."
+status: sourced

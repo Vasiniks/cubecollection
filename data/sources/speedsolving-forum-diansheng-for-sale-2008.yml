@@ -1,0 +1,35 @@
+# source: speedsolving-forum-diansheng-for-sale-2008
+# Speedsolving.com forum thread, "For Sale: Diansheng," posted 2008-12-23. Tier 3 (forum).
+# A second, independent forum mention of the Type E cube, corroborating its existence later in
+# the same year as the June 2008 review.
+id: speedsolving-forum-diansheng-for-sale-2008
+entity: source
+kind: forum
+title: "For Sale: Diansheng - Speedsolving.com"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/threads/for-sale-diansheng.8113/"
+preservation_method: excerpt
+excerpt: |-
+  Posted 2008-12-23. A for-sale listing for a white DianSheng "Type E" cube with "painted on"
+  stickers, described by the seller as "practically new," priced at $5.00 AUD plus shipping.
+  Thread later marked sold.
+preservation_note: "No archive.org capture exists for this thread URL as of this pass;
+  preserved as a live-fetch excerpt."
+accessed: "2026-09-04"
+language: en
+published:
+  value: "2008-12-23"
+  precision: day
+  qualifier: exact
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 3 (forum), per vocab/source-kinds.yml. A second, independent forum
+  mention (a genuine for-sale transaction, not a bare aside) naming the Type E product by name
+  and describing it as painted rather than stickered — read alongside
+  speedsolving-forum-diansheng-type-e-review-2008's own note that its particular batch had
+  'surprisingly... stickers, not paint,' as evidence that DianSheng Type E was sold across at
+  least two sticker-application batches over 2008. Treated as a sticker/colour-application
+  variant-level difference within one design (DATA_MODEL §4.1: 'colourway or sticker type'),
+  not a second model — not split further here."
+status: sourced

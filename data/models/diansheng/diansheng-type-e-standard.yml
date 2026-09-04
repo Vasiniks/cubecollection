@@ -1,0 +1,77 @@
+# model: diansheng-type-e-standard
+# Pass 3 final-seven lane, Agent A. PRIORITY 1 CASE — this family's only existing source
+# (speedsolving-wiki-diansheng-products) is tier 4 and cannot establish a model alone (S6
+# policy, binding). Three independent Speedsolving.com FORUM threads (tier 3, per
+# vocab/source-kinds.yml) from 2008 were located this pass and are what actually clears the
+# admission bar here — the wiki article is retained only as corroboration/description, never
+# as the sole support for any attestation. Id suffixed "-standard" (matching
+# cube4you-3x3-standard house convention) to avoid colliding with the frozen family id, the
+# bare "diansheng-type-e" string (validator rule 3 enforces global id uniqueness).
+id: diansheng-type-e-standard
+entity: model
+family_id: diansheng-type-e
+manufacturer_id: diansheng
+name: "DianSheng Type-E"
+scope_class: core
+generation:
+  label: "Type-E"
+  basis: community_convention
+released:
+  value: "2008"
+  precision: year
+  qualifier: before
+description: |-
+  Three independent 2008 Speedsolving.com forum threads establish this as a real, distinct,
+  actively-discussed 3x3x3 product, entirely independent of the family's tier 4 wiki source:
+  a dated hands-on review, 2008-06-25 (speedsolving-forum-diansheng-type-e-review-2008,
+  "Comes assembled with correct color scheme -- and surprisingly they have stickers, not
+  paint!"..."turns very well"..."equal to the white Type D"); a for-sale listing, 2008-12-23
+  (speedsolving-forum-diansheng-for-sale-2008, a white cube with painted-on colouring); and a
+  discussion thread, 2008-07-09 (speedsolving-forum-diansheng-questions-2008, "the two
+  Dianshengs I have are extremely good... at least as good as a white Type D"). All three name
+  or clearly describe the same "(e)"/"Type E" product, sold and discussed continuously across
+  at least mid-to-late 2008.
+
+  The Speedsolving wiki (speedsolving-wiki-diansheng-products, tier 4, corroboration only):
+  "3x3x3 Cube 'Type-E' (Released c. 2008)... Type E cubes are known as Diansheng (or DS) cubes.
+  Out of the box they were quite bad, but after lubing with silicone they became much better...
+  There are two types of DS cubes, no.222 and no.333. Rather than stickers, the Diansheng
+  no.333 has the colors painted onto the sides of the cube... Because of their very light
+  weight, and very loose, smooth turning; DS 3x3x3's were often used in One-Handed cubing." The
+  wiki's "painted vs. stickered" distinction is corroborated independently by the forum record
+  above (one 2008 batch had genuine stickers; a separate for-sale listing describes painted
+  colouring) and is treated as a sticker/colour-application variant difference within this one
+  design (DATA_MODEL §4.1), not a second model — "no.222"/"no.333" read as catalogue/product
+  numbers, not confirmed as separate designs by any source found this pass.
+
+  No dimension, weight, or exact release date was found at tier 1-2 anywhere this pass (the
+  forum threads, tier 3, do not give measurements; the wiki, tier 4, cannot establish a
+  specification). Both left unset per the S6 policy.
+status: drafted
+attestations:
+  /released:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-type-e-review-2008, speedsolving-forum-diansheng-questions-2008]
+    note: "Not a release-date statement — a dated review (2008-06-25) and a dated discussion
+      thread (2008-07-09) both bound the product as already circulating and already owned by
+      multiple posters by mid-2008, which is genuine circulation evidence per the S6 policy §3.
+      Recorded as `released: before 2008` at year precision. The wiki's own 'Released c. 2008'
+      is consistent with this but is not, alone, load-bearing here (tier 4)."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedsolving-wiki-diansheng-products]
+    note: "'Type-E' is a community-assigned category label for an early-2000s-cubing-era
+      lineage (the family record's own framing, paired with 'Type A/B/C/D' designations used
+      elsewhere in this era), not a DianSheng-own-voice product name found this pass —
+      `community_convention`, not blurred into `manufacturer_declared`."
+  /description:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-type-e-review-2008, speedsolving-forum-diansheng-for-sale-2008, speedsolving-forum-diansheng-questions-2008, speedsolving-wiki-diansheng-products]
+    note: "The load-bearing existence/identity claim rests on the three tier 3 forum sources;
+      the tier 4 wiki source is cited alongside them for descriptive colour/detail only, per
+      RESEARCH_SPEC §5.1 ('Tier 4... corroborates only')."
+  /specs:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2 (the only bar DATA_MODEL/S6 permits for a
+      specification). The wiki's own 'very light weight' is impressionistic prose from a tier
+      4 source, not a figure, and is not promoted into `specs`. Left unset entirely."

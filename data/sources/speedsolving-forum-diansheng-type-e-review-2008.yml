@@ -1,0 +1,48 @@
+# source: speedsolving-forum-diansheng-type-e-review-2008
+# Speedsolving.com forum thread, "Review of Diansheng (Type E) and Type F cubes," posted
+# 2008-06-25. Tier 3 (forum). The single most useful piece of evidence found this pass for
+# `diansheng-type-e`: an independent, tier 3 corroboration of a real, distinct product that the
+# family's only other source (speedsolving-wiki-diansheng-products, tier 4) cannot establish
+# alone.
+id: speedsolving-forum-diansheng-type-e-review-2008
+entity: source
+kind: forum
+title: "Review of Diansheng (Type E) and Type F cubes - Speedsolving.com"
+publisher: "Speedsolving.com"
+url: "https://www.speedsolving.com/threads/review-of-diansheng-type-e-and-type-f-cubes.4833/"
+preservation_method: excerpt
+excerpt: |-
+  Posted 2008-06-25. On the DianSheng Type E cube: "Comes assembled with correct color
+  scheme -- and surprisingly they have stickers, not paint!" The plastic is "quite hard,"
+  compared to a white "Type D" cube. "Unlubed, it sucks. Period." But after lubrication it
+  "turns very well -- and that's with the screws at max tightness," with "great turning speed
+  and very low POPiness." It "sounds most similar to a black Type D" and "feels pretty good
+  too. It's kind of like an offshout of the Type D family." One flaw noted: "the orange and red
+  stickers are similar in color tone, which can be off-putting." Priced at approximately $4
+  USD: "Good value for money too, at only half the price of the D cubes. Recommended,"
+  concluding it is "equal to the white Type D" with "main cube potential, or at least, a good
+  backup cube."
+preservation_note: "No archive.org capture exists for this thread URL (checked via both its
+  current XenForo-style URL and a guessed legacy vBulletin 'showthread.php?t=4833' form,
+  neither returned a capture) — preserved as a live-fetch excerpt. Flagged for whoever follows
+  up: this forum's pre-2015-ish content may have migrated URL schemes at least once, which
+  could explain the absent captures under either URL form tried this pass."
+accessed: "2026-09-04"
+language: en
+published:
+  value: "2008-06-25"
+  precision: day
+  qualifier: exact
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 3 (forum), per vocab/source-kinds.yml. A genuine hands-on review with
+  specific, corroborating physical detail (assembly, stickers vs. paint, sound, turning feel,
+  price) rather than a bare mention — the strongest single source found this pass for
+  DianSheng Type E's existence as a real, distinct, dateable product, independent of the tier 4
+  Speedsolving wiki article that is this family's only other source. Establishes S6 class 2
+  (model existence) at `reported` confidence. Does not establish any specification (no
+  dimension or weight is given) and is not a release-date statement (a review/for-sale post
+  date bounds when the product was already circulating, not when it launched) — used only with
+  `qualifier: before` on the family's `introduced` framing, never as an exact release date."
+status: sourced

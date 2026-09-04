@@ -1,0 +1,64 @@
+# model: moretry-tianma-x3-v2
+# Pass 3 final-seven lane, Agent A. Admitted on S6 class-2 existence evidence alone, at
+# deliberately weak confidence throughout: the only capture found under this product's own URL
+# is internally contaminated (see thecubicle-moretry-tianma-x3-v2-enhanced-2023) and describes
+# a different product (V4) in its body text, naming "Moretry Tianma X3 V2 3x3 (Enhanced)" only
+# as a bundle-included accessory item. No genuine description, mechanism detail, spec, or date
+# is available for V2 anywhere found this pass. Per the S6 policy §4 ("where corroboration is
+# unavailable but existence is genuinely established, create the record with uncertain/reported
+# confidence — do not inflate, and do not discard"), this is recorded rather than dropped.
+id: moretry-tianma-x3-v2
+entity: model
+family_id: moretry-tianma-x3
+manufacturer_id: moretry
+name: "MoreTry TianMa X3 V2 (Enhanced)"
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: community_convention
+scope_class: core
+description: |-
+  Known to exist only through a bundle-contents mention on a contaminated capture of its own
+  product URL: "Comes with: Moretry Tianma X3 V2 3x3 (Enhanced), Screwdriver, Moretry
+  microfiber cloth, Anti-fog lens wipe" — text that otherwise describes the V4 (MagLev)
+  product, not V2, and is judged a retailer templating/redirect artifact (see the frozen
+  family record's own caution about this same page, and
+  thecubicle-moretry-tianma-x3-v2-enhanced-2023's reliability_note). No dedicated V2
+  description, mechanism claim, dimension, weight, or date was located anywhere this pass.
+  Positioned between V1 (plain corner/edge magnetization) and V3 (adds enlarged corner base
+  magnets and a repelling centre system) in the retailer's own numbered sequence, but whether
+  V2 itself represents a real, distinct intermediate mechanism step or is simply a name that
+  was superseded before a clean description was ever published is not established by this
+  pass's evidence.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v2-enhanced-2023]
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v2-enhanced-2023]
+    note: "The only evidence for this model's existence and name is a single incidental
+      bundle-contents mention inside a differently-contaminated page, not a description
+      written about V2 itself — the weakest evidentiary basis of any model admitted this pass,
+      hence `uncertain` on both existence and identity, consistent with S6 §4's instruction to
+      record rather than discard a genuinely-thin-but-real case."
+  /specs:
+    confidence: unknown
+    note: "The contaminated capture's own spec table figures (55.5mm³/210g) most plausibly
+      belong to the V4 product actually described in that page's body text, not to V2 — not
+      used here. No other source gives any V2-specific figure. Left unset entirely."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Left unset."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v1-2023, thecubicle-moretry-tianma-x3-v2-enhanced-2023]
+    note: "Inferred purely from the shared 'Tianma X3' name and V1/V2 numbering; no explicit
+      succession statement was found for V2 specifically."
+relationships:
+  - type: succeeds
+    target: moretry-tianma-x3-v1
+    target_entity: model
+    note: "Numbered sequence inference only (V1 -> V2), not a direct sourced statement."
+

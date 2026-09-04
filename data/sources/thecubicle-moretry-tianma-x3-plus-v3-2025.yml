@@ -1,0 +1,36 @@
+# source: thecubicle-moretry-tianma-x3-plus-v3-2025
+# TheCubicle's own product page for "Moretry Tianma X3+ V3 3x3" (URL slug
+# moretry-tianma-x3-v3-plus-3x3), archived 2025-03-22. The key source for treating "TianMa
+# X3+" as its own model: explicitly describes a mould-level refinement over the base X3 line,
+# not merely a configuration choice.
+id: thecubicle-moretry-tianma-x3-plus-v3-2025
+entity: source
+kind: retailer
+title: "Moretry Tianma X3+ V3 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moretry-tianma-x3-v3-plus-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250322092153id_/https://www.thecubicle.com/products/moretry-tianma-x3-v3-plus-3x3"
+excerpt: |-
+  Product Description: "The Moretry Tianma X3+ is a more refined version of the original X3.
+  This one has magnet capsules that are easier to install, more precise molds that make
+  turning quieter and more predictable." Structured "Product Specifications": "Manufacturer:
+  Moretry / Type: 3x3 Speed Cubes / Added: 2024-09-09 / Gross Weight: 310g / Magnets:
+  Magnetic." Customer review (Torability): "I had installed core magnets [in the X3 V4] and it
+  performed like a wrm v9... I ended up installing core magnets in this cube (tianma x3+) as
+  well, then swapping the centers so I could keep the hefty maglev system which I had grown to
+  love in the X3 V4" — independent (if informal) confirmation that the X3+ line carries over
+  V4's MagLev centre system into a refined shell.
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: "Tier 2, first-party retailer product-description prose. 'More precise
+  molds' is a direct, specific tooling claim — per DATA_MODEL §4.2 ('Tooling differences ARE
+  sufficient... if the internal geometry differs, it is a different design regardless of
+  marketing'), this is model-identity-establishing evidence for treating TianMa X3+ as its own
+  model rather than a configuration of the numbered V1-V4 line. No dimensions figure is given
+  on this page. The customer review (tier 3 at best, corroboration only, not load-bearing on
+  its own) is cited only to support the succeeds-V4 relationship, not any specification."
+status: sourced

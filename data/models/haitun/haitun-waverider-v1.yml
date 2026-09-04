@@ -1,0 +1,69 @@
+# model: haitun-waverider-v1
+# Pass 3 final-seven lane, Agent A. HaiTun's first documented design generation. Configuration
+# tiers (Flagship, Standard, a Limited Edition, and a dedicated adjustment-tool accessory) are
+# variants of this one model, not separate models — pass 4 territory, not enumerated here.
+id: haitun-waverider-v1
+entity: model
+family_id: haitun-waverider
+manufacturer_id: haitun
+name: "HaiTun Waverider V1"
+generation:
+  label: "V1"
+  ordinal: 1
+  basis: manufacturer_declared
+scope_class: core
+specs:
+  size_mm: 56.0
+description: |-
+  TheCubicle's own product pages for the Flagship (thecubicle-haitun-waverider-v1-2024) and
+  Standard (thecubicle-haitun-waverider-v1-standard-2024) configurations both open: "The
+  Waverider V1 is a new 3x3 speedcube by the emerging brand Haitun Cube," and both give an
+  identical "Dimensions: 56.0mm³" in their own structured spec tables (Flagship: Gross Weight
+  219g / Item Weight 82.0g; Standard: Gross Weight 218g / Item Weight 81.0g) — the small weight
+  difference between tiers is consistent with a configuration-level hardware difference (the
+  Flagship's "little (but surprisingly strong) magnets embedded into the feet of each piece,"
+  per the Flagship page's own description, on top of the Standard's "traditional corner-edge
+  magnets"), while the shared dimension supports `size_mm: 56.0` as a genuine model-level
+  spec. A third configuration, a "Limited Edition," and a separate adjustment-tool accessory,
+  were found by URL only (`haitun-waverider-v1-3x3-limited-edition`,
+  `haitun-waverider-v1-adjustment-tool`) and not independently fetched this pass — left to
+  pass 4.
+
+  This is HaiTun's first named 3x3, directly and explicitly superseded by "the highly
+  anticipated second generation" (thecubicle-haitun-waverider-v2-standard-2026) — see
+  `haitun-waverider-v2`'s own `succeeds` relationship.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-standard-2026]
+    note: "The V2 page's own retailer copy calls V2 'the highly anticipated second generation
+      from boutique manufacturer HaiTun' — a direct claim about the manufacturer's own product
+      lineage (not a bare community numbering), read as manufacturer-declared even though the
+      voice quoted is the retailer's, since the V1/V2 designation is the product's own name
+      throughout (in the URL and title, not just body copy), consistent with a numbering
+      passed through from HaiTun itself rather than invented by the retailer or community."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-2024, thecubicle-haitun-waverider-v1-standard-2024]
+    note: "Two tier 2 listings at the same retailer (not independent sources per DATA_MODEL
+      §5.2, so `probable` rather than `confirmed`) agree exactly on 56.0mm³ across two
+      different configuration tiers of the same generation."
+  /description:
+    confidence: reported
+    sources: [thecubicle-haitun-waverider-v1-2024, thecubicle-haitun-waverider-v1-standard-2024]
+  /released:
+    confidence: unknown
+    note: "Researched and not found under the S6 policy's strict reading. TheCubicle's own
+      structured spec table gives 'Added: 2024-01-17' on both V1 configurations checked, and
+      the frozen family record (`haitun-waverider`, written before the S6 admission policy was
+      decided) treats this specific field as a genuine per-product date at `reported`
+      confidence, reasoning it is 'not the suspect 2018-09-11 migration-artefact date... a
+      distinct, plausible, and... genuinely recent per-product date.' The S6 policy (§3,
+      binding for this pass) is categorical: a retailer 'Added:' field is never acceptable as
+      a release date, full stop — the three named artifact strings are given as evidence for
+      why the field class is unreliable, not as an exhaustive exception list. Applying the
+      stricter, later, binding standard rather than the family record's own (pre-S6) reading,
+      `released` is left unset here. This divergence from the family record's treatment of the
+      same field is noted explicitly rather than silently carried forward or silently
+      corrected without comment."
