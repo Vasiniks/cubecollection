@@ -1,0 +1,99 @@
+# model: mf8-crazy-3x3-plus-planet-series
+# Pass 3 (model enumeration), Agent C / Batch 3. Sibling of mf8-crazy-3x3-planets.yml — read
+# that record's description first for the full boundary reasoning; this file states only what
+# is specific to the later "Plus" naming era.
+id: mf8-crazy-3x3-plus-planet-series
+entity: model
+family_id: mf8-crazy-3x3x3
+manufacturer_id: mf8
+name: "MF8 Crazy 3x3 Plus Planet Series"
+aliases:
+  - "Mf8 Crazy 3x3 Plus Planet Series"
+scope_class: conditional
+scope_justification: |-
+  Non-WCA-legal shape-mod 3x3 (SpeedCubeShop: "Type: Shape Mod"). Admitted on documented
+  historical and collector significance: the later-generation form of MF8's "Crazy" 3x3
+  mechanism line, in continuous retail circulation from at least 2023 (SpeedCubeShop
+  mf8-crazy-3x3-plus-planet-series-8-versions, 2023-09) through at least 2025 (per-planet SKUs
+  captured 2025-04 through 2025-06), inside the archive's research window. See the S6
+  admission-policy decision at research/qc/pass3-admission-policy.md §2.
+scope_decided_by: agent-c-b3
+scope_decided_on: "2026-09-04"
+generation:
+  label: "Plus Planet Series"
+  ordinal: 2
+  basis: community_convention
+specs:
+  size_mm: 57
+  magnet_architecture: none
+  shape: other
+description: |-
+  SpeedCubeShop's own product description and structured spec table
+  (speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024, capture 2024-09-18): "Mf8 Crazy
+  3x3 Plus Planet Series (Earth) is a 3x3 with crazy cuts that vary by each version adding to
+  the challenge. Collect the entire series!" Product Details: "Type: Shape Mod / Brand: Mf8 /
+  Size: 57 mm / Magnets: None." The listing's own "Version" selector (Earth, Jupiter, Mars,
+  Mercury, Neptune, Saturn, Uranus, Venus, Black) confirms the individual planets are
+  **colourway/pattern variants of one product listing, not separate models** — direct support
+  for treating "an individually-named planet product" as variant-level material, per this
+  batch's guidance. A wayback prefix sweep of speedcubeshop.com/products/mf8-crazy-3x3-plus-*
+  additionally found each planet also sold as its own standalone product slug (e.g.
+  `mf8-crazy-3x3-plus-planet-earth`, `-jupiter`, `-mars`, ..., captured 2024-12 through
+  2025-06) and a distinct 8-planet bundle SKU (`mf8-crazy-3x3-plus-planet-series-8-versions`,
+  2023-09) — all read as the same underlying design sold under different retailer SKU/bundle
+  structures, not new models, consistent with the materiality rule that bundle membership and
+  colourway are variant-level, not model-level, distinctions.
+
+  See mf8-crazy-3x3-planets.yml for the full reasoning on why this is treated as a *distinct,
+  but uncertainly-related* generation rather than the same model as the earlier (pre-2023,
+  non-"Plus") "Crazy 3x3 Planets" listings. No source states a mould or mechanism difference
+  between the two naming eras; the split rests on the naming change itself plus the release
+  gap, per RESEARCH_SPEC §4 worked decision G ("when the evidence is unclear, default to new
+  model... with confidence: uncertain").
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+    note: "A Tier 2 retailer source establishes this shape-mod 3x3 was in retail circulation
+      from at least 2023 through 2025 (per-planet SKU captures span 2023-09 through 2025-06),
+      satisfying rule 15's Tier 1-3 evidence requirement for `scope_class: conditional`."
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+  /scope_class:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+  /generation:
+    confidence: uncertain
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024, thecubicle-mf8-crazy-3x3-planets-assorted]
+    note: "Same uncertainty as mf8-crazy-3x3-planets.yml's /generation attestation — this
+      agent's own periodization by naming era, not a declared numbering."
+  /specs/size_mm:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+  /specs/shape:
+    confidence: uncertain
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+    note: "'shape' vocab has no 'shape mod' value; recorded 'other', with the source's own
+      classification ('Type: Shape Mod') carried in the description."
+  /description:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015, thecubicle-mf8-crazy-3x3-planets-assorted,
+      speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+    note: "No source states a direct succession; inferred from the naming-era gap
+      (unsuffixed 'Planets' 2015-2020 vs. 'Plus Planet Series' 2023-2025) and the shared
+      manufacturer, mechanism family, and 'Planet(s)' branding. Recorded uncertain per worked
+      decision G — this is the split the batch report flags for human review."
+relationships:
+  - type: succeeds
+    target: mf8-crazy-3x3-planets
+    target_entity: model
+    note: "See /relationships/0 attestation and this model's description for the full boundary
+      reasoning. THE central open question of this batch."

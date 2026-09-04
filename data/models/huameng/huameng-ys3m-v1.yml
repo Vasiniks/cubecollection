@@ -1,0 +1,74 @@
+# model: huameng-ys3m
+# Pass 3 (model enumeration), Agent C / Batch 3. Single model — a wayback prefix sweep of
+# thecubicle.com/products/huameng found only configuration-level slugs under this name:
+# huameng-ys3m-3x3 (standard, "piece-to-piece magnetization"), huameng-ys3m-3x3-maglev,
+# huameng-ys3m-3x3-ball-core-magnetic-core-maglev, huameng-ys3m-3x3-ball-core-uv-magnetic-
+# core-maglev (also captured under the alternate slug huameng-ys3-m-20-core-magnetic-maglev-
+# ball-core-uv). No "V2" or other version-numbered YS3M product was found — unlike huameng-tg,
+# no split is warranted here.
+id: huameng-ys3m-v1
+entity: model
+family_id: huameng-ys3m
+manufacturer_id: huameng
+name: "HuaMeng YS3M"
+aliases: []
+scope_class: core
+generation:
+  label: "YS3M"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.0
+  weight_g: 76.0
+  shape: standard
+description: |-
+  TheCubicle's own product description and structured spec table
+  (thecubicle-huameng-ys3m-3x3-2023, earliest capture 2023-03-21): "The MoYu HuaMeng YS3M is
+  the latest flagship 3x3 release from the famous cube company. This puzzle features amazing
+  corner cutting, adjustable tensions/compressions, a dragon scale pattern to reduce sticking,
+  and is designed/endorsed by the 3x3 world record single holder YuSheng Du. This is the
+  standard version that has only piece-to-piece magnetization. Get the Maglev version here.
+  Get the Ball-core version here." Structured table: "Manufacturer: HuaMeng / Type: 3x3 /
+  Gross Weight: 217g / Dimensions: 55.0mm³ / Magnets: Magnetic / Item Weight: 76.0g." The page
+  itself cross-links to Maglev and Ball-core versions as options of the same product, which is
+  why they are treated here as `config`-level variants (pass 4 material) rather than separate
+  models, consistent with RESEARCH_SPEC §4 worked decision A.
+
+  `weight_g` is recorded from the "Item Weight" field (76.0g) rather than "Gross Weight"
+  (217g, almost certainly inclusive of retail packaging) — the same gross-vs-net distinction
+  flagged for escube-air in this batch's report. `magnet_architecture` is left unset at model
+  level: "piece-to-piece magnetization" describes only this specific (standard) configuration,
+  and the Maglev/Ball-core siblings plainly use a different architecture, so this is
+  variant-level material, not a shared model default.
+
+  The description's opening words, "The MoYu HuaMeng YS3M...", are a pre-existing unresolved
+  lead about a possible MoYu/HuaMeng affiliation, already flagged at the family level
+  (huameng-ys3m.yml) and in research/notes/models/global-pass2-families.md. This pass does not
+  act on it — per the batch brief, a HuaMeng/MoYu pairing question is an escalation, not a
+  merge, and huameng remains an independent manufacturer record.
+status: drafted
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+  /generation:
+    confidence: uncertain
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+    note: "'YS3M' is the product's own name; ordinal 1 recorded because no second generation
+      was found this pass, not because a manufacturer statement confirms it is the first."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+    note: "Uses the source's own 'Item Weight' (76.0g), not 'Gross Weight' (217g, includes
+      packaging)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+  /description:
+    confidence: reported
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+    note: "The 'latest flagship' / endorsement language is comparative/promotional copy (Tier 4
+      per DATA_MODEL §5.2 rule 2); the structured spec fields are Tier 2."

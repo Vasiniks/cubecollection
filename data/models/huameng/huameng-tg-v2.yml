@@ -1,0 +1,80 @@
+# model: huameng-tg-v2
+# Pass 3 (model enumeration), Agent C / Batch 3. Found via a wayback prefix sweep of
+# thecubicle.com/products/huameng — a single capture (2026-05-06) of
+# "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV)", the manufacturer's own product name embedding
+# "V2". Per DATA_MODEL §4.2, "a manufacturer's version number is a strong signal about design
+# change and a weak one about configuration" — the sole basis for splitting this out from
+# huameng-tg rather than treating "V2" as one more configuration name alongside "Ball-Core",
+# "Ball-Core UV" etc. The page's own description is a placeholder ("more details coming
+# soon!"), so no mould/mechanism-difference language is available; this is a RESEARCH_SPEC §4
+# worked-decision-G split (genuinely unclear evidence -> new model, confidence: uncertain).
+id: huameng-tg-v2
+entity: model
+family_id: huameng-tg
+manufacturer_id: huameng
+name: "HuaMeng TG V2"
+aliases: []
+scope_class: core
+generation:
+  label: "TG V2"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  core_system: ball_core
+  shape: standard
+description: |-
+  TheCubicle (thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core, capture 2026-05-06): page
+  title / product name "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV)". Product Description (in
+  full): "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV) - more details coming soon!" Structured
+  "Product Specifications": "Manufacturer: HuaMeng / Type: 3x3 Speed Cubes / Gross Weight:
+  209g / Magnets: Magnetic."
+
+  This is a genuinely thin record: the only citable evidence is the product's own name and a
+  bare spec table. `core_system: ball_core` is read directly from the product name's
+  "Ball-Core" designation. `magnet_architecture` is left unset despite the name also saying
+  "20-Magnet" — the base huameng-tg model's own configurations already use "20-Magnet" as a
+  configuration-level label (e.g. `magnet strength adjustments`), so treating it as a fixed
+  model-level architecture here without a clearer structured field would risk conflating a
+  configuration detail with a design-level default. `weight_g` is likewise left unset at model
+  level (209g gross here vs. no comparable figure recorded for the base huameng-tg model to
+  compare against) — recorded only in this description for a future pass.
+
+  No relationship is recorded to any "Spirit Pearl Limited Edition" or other huameng-tg
+  configuration; nothing found this pass suggests those configurations were carried over to
+  "V2" specifically.
+status: drafted
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+  /generation:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "'V2' is the product's own name on a single Tier 2 source with a placeholder
+      description ('more details coming soon!') — no mould/mechanism-difference statement is
+      available. Model identity rests on the version number alone per DATA_MODEL §4.2, which
+      treats a manufacturer version number as strong-but-not-conclusive evidence. Recorded
+      uncertain and flagged for review, per worked decision G."
+  /specs/core_system:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "Read directly from the product name's 'Ball-Core' designation, not a structured
+      core_system field."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "No explicit statement; default reading for an ordinary WCA-format 3x3."
+  /description:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "No source states a direct succession statement; inferred entirely from the shared
+      'TG' name and the 'V2' numbering. See DATA_MODEL §4.2's default-to-split guidance."
+relationships:
+  - type: succeeds
+    target: huameng-tg-v1
+    target_entity: model
+    note: "Manufacturer-named 'V2' of the 'TG' line. See /relationships/0 attestation and this
+      model's description for the thinness of the underlying evidence."

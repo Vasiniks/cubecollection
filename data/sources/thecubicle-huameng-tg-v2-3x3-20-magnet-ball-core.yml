@@ -1,0 +1,36 @@
+# source: thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core
+# TheCubicle product page for "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV)", found via a
+# wayback prefix sweep of thecubicle.com/products/huameng during Pass 3 (Agent C, Batch 3).
+# The manufacturer's own product name embeds "V2" — the central evidence for treating this as
+# a distinct, manufacturer-declared design generation of HuaMeng TG rather than a configuration.
+id: thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core
+entity: source
+kind: retailer
+title: "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-tg-v2-3x3-20-magnet-ball-core"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260506235800id_/https://www.thecubicle.com/products/huameng-tg-v2-3x3-20-magnet-ball-core"
+excerpt: |-
+  Page title / product name: "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV)". Product
+  Description (in full): "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV) - more details coming
+  soon!" Structured "Product Specifications" table: "Manufacturer: HuaMeng / Type: 3x3 Speed
+  Cubes / Added: 2026-05-01 / Gross Weight: 209g / Magnets: Magnetic."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 retailer, structured spec table, but the product description itself is a placeholder
+  ("more details coming soon!") — no mechanism/mould-difference language is available from this
+  page beyond the "V2" naming and the "20-Magnet Ball-Core" configuration name. Per DATA_MODEL
+  §4.2, a manufacturer's own version number is treated as a strong (though not conclusive)
+  signal of a design-generation change; this is the sole basis for treating "TG V2" as a
+  candidate new model rather than a configuration of the base "HuaMeng TG" model this pass.
+
+  The in-page "Added: 2026-05-01" field is NOT used as an introduction date — it is a
+  TheCubicle catalogue "Added" field, the same class of artifact documented elsewhere in this
+  archive as unreliable for dating (see thecubicle-mf8-legend-v2's reliability_note); it is used
+  only as an upper bound on when this listing existed, consistent with the Wayback capture date.
+status: sourced
