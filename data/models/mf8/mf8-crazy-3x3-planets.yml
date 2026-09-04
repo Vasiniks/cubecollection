@@ -1,0 +1,116 @@
+# model: mf8-crazy-3x3-planets
+# Pass 3 (model enumeration), Agent C / Batch 3. THE CENTRAL BOUNDARY CALL of this batch — see
+# the sibling record mf8-crazy-3x3-plus-planet-series.yml and the Pass 3 report for full
+# reasoning. Two independent Tier 2 retailer sources, five years and two publishers apart,
+# describe the same unsuffixed "Crazy Planet(s) Assortment 3x3x3" product:
+# speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015 ("Mf8 Crazy Planet Assortment 3x3x3",
+# 2015-11) and thecubicle-mf8-crazy-3x3-planets-assorted ("mf8 Crazy 3x3 Planets (Assorted)",
+# Type: Cuboids, 145g, live again as of 2020-09 and re-verified live 2026-09-03). Two genuinely
+# independent Tier 2 publishers agreeing on a distinct-product naming and mechanism supports
+# `confidence: confirmed` on existence (DATA_MODEL rule 9).
+id: mf8-crazy-3x3-planets
+entity: model
+family_id: mf8-crazy-3x3x3
+manufacturer_id: mf8
+name: "MF8 Crazy 3x3 Planets"
+aliases:
+  - "Mf8 Crazy Planet Assortment 3x3x3"
+  - "mf8 Crazy 3x3 Planets (Assorted)"
+scope_class: conditional
+scope_justification: |-
+  Non-WCA-legal shape-mod 3x3 (TheCubicle: "Type: Cuboids"). Admitted on documented historical
+  and collector significance: this is the earliest Tier 1-3-evidenced generation of MF8's
+  "Crazy" 3x3 mechanism line, in retail circulation from at least 2015 (SpeedCubeShop) through
+  at least 2020 (TheCubicle, still live as of a 2026-09-03 re-check), and the line as a whole
+  (across this model and its successor, mf8-crazy-3x3-plus-planet-series) was in continuous
+  retail circulation from 2015 to 2025 — inside the archive's research window, per the S6
+  admission-policy decision at research/qc/pass3-admission-policy.md §2, which explicitly
+  rejected `reference_only` for this family on this evidence.
+scope_decided_by: agent-c-b3
+scope_decided_on: "2026-09-04"
+generation:
+  label: "Planets"
+  ordinal: 1
+  basis: community_convention
+specs:
+  weight_g: 145
+  shape: other
+description: |-
+  SpeedCubeShop's earliest found capture (speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015,
+  2015-11): "This 3x3x3 is much more of a challenge since it is the crazy version by mf8. The
+  rotation of this puzzle is clicky and the layers lock into place making this puzzle easier to
+  manipulate. You can complete your collection by collecting all of the planets!" TheCubicle's
+  independent capture (thecubicle-mf8-crazy-3x3-planets-assorted, live 2020-09, re-verified
+  live 2026-09-03): "Manufacturer: mf8 / Type: Cuboids / Gross Weight: 145g." No magnets field
+  is present in either source, so `specs.magnet_architecture` is left unset rather than assumed
+  non-magnetic (contrast the later "Plus" generation, which explicitly states no magnets).
+
+  A "MF8 Crazy 3x3x3 series" entry appears in the Speedsolving wiki's dated product list under
+  2010 (speedsolving-wiki-mf8-products, Tier 4). It is plausibly the earliest appearance of
+  this same design — nothing found this pass suggests two distinct 2010-vs-2015 mechanisms —
+  but the wiki does not by itself clear the Tier 1-3 bar for a separate model claim, so it is
+  treated as unconfirmed supporting background for this model's dating rather than as evidence
+  of a third, still-earlier generation. `introduced` is therefore left unset at the model level
+  (the family record already carries an `uncertain`-confidence `circa 2010` from this same
+  wiki entry).
+
+  **THE CENTRAL BOUNDARY QUESTION.** Is this the same design as `mf8-crazy-3x3-plus-planet-
+  series` (2023-2025 SpeedCubeShop captures, product name including "Plus")? Evidence
+  considered:
+  - The 2015/2020 captures never use "Plus" in the name; the 2023-2025 captures consistently
+    do ("Mf8 Crazy 3x3 Plus Planet Series").
+  - TheCubicle (2020) classifies this product "Type: Cuboids"; SpeedCubeShop (2024) classifies
+    the "Plus" product "Type: Shape Mod" — a different taxonomy field, though both plausibly
+    describe the same broad category of non-standard-cut 3x3.
+  - Both are non-magnetic shape-mod 3x3s of similar size class (this model's weight is
+    documented at 145g gross; the "Plus" generation gives 57mm with no weight figure) — no
+    source directly contradicts the other on a shared spec, but neither strongly confirms
+    identity either.
+  - MF8's 2x2 "Crazy...Plus" line (mf8-crazy-2x2-plus-type-000/001/011) is *always* sold under
+    the "Plus" name in every capture found — there is no unsuffixed "MF8 Crazy 2x2" in this
+    archive's evidence — which weakens (but does not eliminate) the reading that "Plus" marks
+    a genuine second design generation specifically for the 3x3 line, since it may simply be
+    MF8's standing brand name for this style of shape mod rather than a generational marker.
+
+  No source states a mould, mechanism, or internal-geometry difference between the two name
+  forms. Per DATA_MODEL §4.2 and RESEARCH_SPEC §4 worked decision G — "the evidence is
+  genuinely unclear whether the mechanism changed" — this model is **split** from
+  `mf8-crazy-3x3-plus-planet-series` rather than merged, with a `succeeds` relationship and
+  `confidence: uncertain` on the generation claim, in both directions. This is a decision to
+  flag for human review, not to re-litigate silently.
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015, thecubicle-mf8-crazy-3x3-planets-assorted]
+    note: "Two independent Tier 2 retailer sources establish this shape-mod 3x3 was in retail
+      circulation from 2015 through at least 2020 (live again as of a 2026-09-03 re-check),
+      satisfying rule 15's Tier 1-3 evidence requirement for `scope_class: conditional`."
+  /name:
+    confidence: confirmed
+    sources: [speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015, thecubicle-mf8-crazy-3x3-planets-assorted]
+    note: "Two independent Tier 2 publishers, five years apart, describing the same unsuffixed
+      'Crazy Planet(s) Assortment' product (DATA_MODEL rule 9)."
+  /scope_class:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015, thecubicle-mf8-crazy-3x3-planets-assorted]
+  /generation:
+    confidence: uncertain
+    sources: [speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015, thecubicle-mf8-crazy-3x3-planets-assorted,
+      speedcubeshop-mf8-crazy-3x3-plus-planet-series-earth-2024]
+    note: "Ordinal 1 and the two-generation split versus mf8-crazy-3x3-plus-planet-series is
+      this agent's own periodization by naming era (worked decision G), not a manufacturer- or
+      community-declared numbering. Recorded uncertain deliberately."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-mf8-crazy-3x3-planets-assorted]
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-mf8-crazy-3x3-planets-assorted]
+    note: "'shape' vocab has no 'shape mod' / 'cuboid' value; recorded 'other' with the source's
+      own classification ('Type: Cuboids') carried in the description rather than forced into
+      an ill-fitting enum reading."
+  /description:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015, thecubicle-mf8-crazy-3x3-planets-assorted,
+      speedsolving-wiki-mf8-products]
