@@ -1,0 +1,90 @@
+# model: pbcube-wr-standard
+# Pass 3 (model enumeration), agent D. PBCube's sole documented product and this family's only
+# model, still in pre-order status as of the only capture found. The "WR" name echo of MoYu's
+# own WeiLong WR line is noted, per the standing flag, as naming resemblance only — no source
+# states a shared mould, mechanism, or design lineage between the two, so no `succeeds` or
+# other relationship to any `moyu-weilong-*` model is recorded (DATA_MODEL §4.4/RESEARCH_SPEC
+# §2.3 require evidence of a supply/design relationship, not name resemblance; the DaYan/QiYi
+# "GuHong migration" hypothesis was withdrawn for exactly this error).
+id: pbcube-wr-standard
+entity: model
+family_id: pbcube-wr
+manufacturer_id: pbcube
+name: "PBCube WR"
+scope_class: core
+generation:
+  label: "WR"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  core_system: ball_core
+  maglev: ball_core_maglev
+description: |-
+  TheCubicle (thecubicle-pbcube-wr-3x3-maglev-uv), the only capture found this pass (crawled
+  2026-08-30, page still titled "[Pre-Order]"): "The PBCube WR 3x3 (20-Magnet Ball-Core + MagLev
+  + UV) is the flagship release from MoYu's specialized sub-brand, PBCube. Masterfully
+  engineered and endorsed by 3x3 World Champion Yiheng Wang, this puzzle delivers the
+  high-caliber performance and tuning setup used on the world stage." The product's own title
+  states a ball-core, MagLev, UV-coated design with a 20-magnet count — read onto
+  vocab:core-systems `ball_core`, vocab:maglev `ball_core_maglev`, and (given the family
+  record's own note that "WR" plausibly echoes MoYu's adjustable-tuning naming, though not
+  itself decisive) vocab:magnet-configurations `adjustable` at reduced confidence, since the
+  title's "20-Magnet" language alone does not by itself specify adjustability the way GuoGuan
+  YueXiao EDM's prose does.
+
+  The title's "20-Magnet" language states a magnet count but not an architecture (single-layer,
+  dual-layer, or adjustable) in terms this pass can map to a vocab:magnet-configurations value
+  with confidence; the family record's own note that "WR" echoes MoYu's own tunable WeiLong WR
+  naming is a naming resemblance, not a specification statement for PBCube, and is deliberately
+  **not** used here to infer `adjustable` — that would repeat exactly the naming-based-lineage
+  error this pass's standing flags warn against. `magnet_architecture` is left unset.
+
+  This product had not yet reached general retail circulation as of the only capture found
+  (still "[Pre-Order]"), so no `released` date is recorded — an announcement/pre-order state is
+  not a release. `announced` is likewise left unset: the capture date itself
+  (2026-08-30, a Wayback crawl timestamp) is not used as an announcement date per this pass's
+  standing instruction that crawl timestamps are never date evidence, and no dated announcement
+  statement was found in the excerpt.
+
+  A non-US retailer sweep (Cubelelo, a domain-wide term search; Cubezz, a domain-wide term
+  search) found zero "PBCube" mentions at either — consistent with this being a genuinely very
+  recent (2026) product not yet picked up outside TheCubicle, not evidence that no such
+  coverage exists.
+status: drafted
+attestations:
+  /generation/label:
+    confidence: probable
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "'WR' is PBCube's/MoYu's own retail product name for this product, per the source's
+      own title and byline. Single tier 2 source."
+  /released:
+    confidence: unknown
+    note: "No release date recorded — the only capture found this pass shows the product still
+      in '[Pre-Order]' status. Researched (TheCubicle, Cubelelo, Cubezz) and not found."
+  /specs/core_system:
+    confidence: uncertain
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Read from the product's own title ('20-Magnet Ball-Core + MagLev + UV'), a tier 2
+      spec-bearing statement, but the excerpt captured this pass does not repeat the term in
+      body prose or a structured spec table — `uncertain` rather than `probable` to reflect
+      that this rests on the title string alone."
+  /specs/maglev:
+    confidence: uncertain
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Same basis and same caveat as /specs/core_system — read from the product title."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "The title states '20-Magnet' but not an architecture. Deliberately not inferring
+      `adjustable` from the 'WR' naming echo of MoYu's own WeiLong WR line — that is a naming
+      resemblance, not a specification statement, and this pass's standing flags explicitly
+      warn against exactly this kind of naming-based inference. Researched and not found at
+      tier 1-2 with sufficient precision."
+  /specs/materials:
+    confidence: unknown
+    note: "The title states 'UV' (a coating), but coating is a variant-level fact (config.
+      coating) per the materiality test in RESEARCH_SPEC §4, not a model-level materials
+      default, and only one (UV) configuration has been seen — left unset here; pass 4
+      material."
+  /description:
+    confidence: reported
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
