@@ -298,3 +298,30 @@ Now **mandatory** before enumeration may be called complete, each leaving a writ
 2. Take the `S6` conditional-admission policy decision — it is a scope call, not an evidence gap.
 3. Apply `RESEARCH_SPEC.md` § 3.6a to every manufacturer enumerated.
 4. Begin Pass 3 model enumeration. **111 of 122 families have zero models.**
+
+---
+
+# PASS 3 STATUS (2026-09-04)
+
+**Pass 3 model enumeration is functionally complete.** See `research/qc/pass3-progress.md` for
+the authoritative record; this section is a pointer.
+
+- **253 models** across **119 of 122 families**. The 3 zero-model families are documented
+  conclusions, not gaps. **No family remains unresearched.**
+- Families frozen at **122** and variants frozen at **104** throughout — verified at every merge.
+- **Rule 40** added (`lint-semantic.mjs`, advisory, DATA_MODEL §7.9): a model may not predate its
+  own family. Closes a gap where that contradiction passed every check silently.
+
+**Two missing-family findings block a clean close**, both `probable` and both *completeness*
+rather than correctness issues:
+
+| id | Finding |
+|---|---|
+| **P3-T1** | FangShi **GuangYing** and **JieYun** — two independent retailers plus a stated mould difference; a 61-URL sweep bounds the gap at exactly two |
+| **P3-T4** | HaiTun **ZhanLang V1** — one retailer, `Manufacturer: HAITUN CUBE` |
+
+Two independent gaps surfacing in one session is a pattern rather than a coincidence. The open
+question for the adjudicator is whether to run a **targeted Pass 2.6 family-gap sweep** before
+freezing the model inventory — models cannot be enumerated for families that do not exist.
+
+**Pass 4 has not started.**

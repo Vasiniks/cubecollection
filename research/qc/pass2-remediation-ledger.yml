@@ -690,3 +690,29 @@ issues:
     downstream_impact: "None for Pass 3. Relevant to Pass 4 variant work on smart cubes."
     owner: main
     last_updated: "2026-09-04"
+
+  - id: P3-T4
+    severity: high
+    status: needs_human_decision
+    title: "HaiTun ZhanLang V1 is a real 3x3 line with no frozen family"
+    category: taxonomy-completeness
+    affected_records: "none yet - evidence at data/sources/cubezz-haitun-zhanlang-v1-standard.yml"
+    evidence: >-
+      Cubezz carries "ZhanLang V1" with a structured specification field reading
+      "Manufacturer: HAITUN CUBE". The archive holds one HaiTun family, haitun-waverider, which
+      does not cover it. Found incidentally while enumerating models for that family.
+    counterevidence: >-
+      Single retailer. No first-party HaiTun source located. Weaker than the FangShi finding,
+      which had two independent retailers plus a stated mould difference.
+    recommendation: >-
+      Corroborate at a second retailer or a first-party source before creating a family. This
+      is the SECOND missing-family finding of the session after P3-T1, which is the significant
+      part: two independent gaps in one session suggests Pass 2's family enumeration may have
+      missed others, and argues for a targeted family-gap sweep rather than case-by-case fixes.
+    confidence: probable
+    downstream_impact: >-
+      A completeness gap, not a correctness error. No existing record is invalidated. Models
+      cannot be enumerated for a family that does not exist, so this bounds Pass 3's
+      completeness rather than its accuracy.
+    owner: main
+    last_updated: "2026-09-04"
