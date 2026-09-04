@@ -1,0 +1,53 @@
+# model: diansheng-3x3-m-v1
+# Pass 3 (model enumeration). Only 3x3 M generation found this pass. Id suffixed "-v1" to avoid
+# colliding with the frozen family id `diansheng-3x3-m`; no second generation was found, so
+# there is currently nothing for a bare "v2" name to distinguish against, but the suffix is
+# kept for consistency and to leave room if one surfaces later.
+id: diansheng-3x3-m-v1
+entity: model
+family_id: diansheng-3x3-m
+manufacturer_id: diansheng
+name: "DianSheng 3x3 M"
+scope_class: core
+generation:
+  label: "3x3 M"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2021"
+  precision: year
+  qualifier: before
+description: |-
+  Per TheCubicle's own product page (thecubicle-diansheng-3x3-m-product): "The DianSheng 3x3 M
+  represents the company's first modern speed cube. This frosted plastic 3x3 has a very unique
+  look due to the new center cap design. Turning is smooth right out of the box and it has a
+  medium/strong magnetic feel." "Represents the company's first modern speed cube" is retailer
+  marketing framing, not itself evidence of a prior model to succeed within this family; no
+  earlier DianSheng 3x3 M generation was found, and none is asserted here.
+
+  A separate retail path, diansheng-3x3-m-uv-coated, lists a UV-coated configuration of this
+  same product. Per this archive's model/variant boundary rule, coating is a variant
+  difference, not a further model; no diansheng-3x3-m-uv-coated model record is created.
+
+  This tier 2 source is materially stronger than the family's own tier-4-only Speedsolving-wiki
+  sourcing and is what lets this family clear the model-admission bar
+  (research/qc/pass3-admission-policy.md S6).
+status: drafted
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-3x3-m-product]
+    note: "Derived bound, not a stated date: TheCubicle's own earliest resolving capture for
+      this product is 2022-03-23, though its in-page 'Added: 2021-01-29' field (not itself used
+      for dating, per this archive's standing rule on catalogue-migration artifacts) suggests
+      an earlier listing existed. Recorded as 'before 2021' at the coarsest honest precision,
+      `uncertain` confidence."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-3x3-m-product]
+    note: "'3x3 M' matches the family's own name; no first-party DianSheng source was found
+      this pass distinguishing this generation by a manufacturer-declared number or letter
+      beyond the family name itself."
+  /description:
+    confidence: probable
+    sources: [thecubicle-diansheng-3x3-m-product]

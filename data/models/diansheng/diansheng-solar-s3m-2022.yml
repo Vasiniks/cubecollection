@@ -1,0 +1,58 @@
+# model: diansheng-solar-s3m-2022
+# Pass 3 (model enumeration). Second of two DianSheng Solar S3M generations found this pass.
+# See diansheng-solar-s3m-plus.yml for the family-level context.
+id: diansheng-solar-s3m-2022
+entity: model
+family_id: diansheng-solar-s3m
+manufacturer_id: diansheng
+name: "DianSheng Solar S3M 2022"
+scope_class: core
+generation:
+  label: "2022"
+  ordinal: 2
+  basis: manufacturer_declared
+released:
+  value: "2022"
+  precision: year
+  qualifier: circa
+description: |-
+  Per TheCubicle's own product page (thecubicle-diansheng-solar-s3m-2022-product): "The
+  DianSheng Solar S3M 2022 3x3 is a great speed cube at a reasonable price. It comes with a
+  screwdriver to adjust tensions and has a compression adjustment mechanism that you can tune
+  by hand!" This tool-free hand-compression system differs from the earlier "Solar S3M Plus"
+  generation's described interchangeable-cap-and-spring system
+  (thecubicle-diansheng-solar-s3m-plus-product) -- the basis for treating this as a later,
+  distinct design generation.
+
+  A separate retail path, diansheng-solar-s3m-2022-3x3-maglev (earliest capture 2024-03-04),
+  lists a MagLev configuration of this same named product. Per this archive's model/variant
+  boundary rule, MagLev vs. spring is a variant difference, not a further model; no
+  diansheng-solar-s3m-2022-maglev model record is created.
+status: drafted
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-solar-s3m-2022-product]
+    note: "'2022' is the retailer's own product-name element, plausibly (but not explicitly
+      stated to be) the release year, following the naming convention already documented
+      elsewhere in this archive for annual budget-cube refreshes (e.g. RS3M 2020). TheCubicle's
+      own earliest resolving capture for this product is 2023-02-05, i.e. after the implied
+      year -- consistent with, but not proof of, the name's implied date. Recorded at `circa`
+      2022 rather than a 'before 2023' bound, since the product's own name is itself a form of
+      (weak) dated evidence distinct from a bare capture floor."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-solar-s3m-2022-product]
+  /description:
+    confidence: probable
+    sources: [thecubicle-diansheng-solar-s3m-2022-product]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-solar-s3m-plus-product, thecubicle-diansheng-solar-s3m-2022-product]
+    note: "No source states a direct succession sentence; inferred from the two products'
+      naming ('Plus' vs. '2022') and TheCubicle's own earliest-capture ordering (2021-11 before
+      2023-02), plus the differing adjustment-mechanism description noted above."
+relationships:
+  - type: succeeds
+    target: diansheng-solar-s3m-plus
+    target_entity: model

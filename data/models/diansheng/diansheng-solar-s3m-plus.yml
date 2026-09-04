@@ -1,0 +1,51 @@
+# model: diansheng-solar-s3m-plus
+# Pass 3 (model enumeration). First of two DianSheng Solar S3M generations found this pass at
+# TheCubicle -- the family record itself rests only on the tier-4 Speedsolving wiki, which
+# cannot alone establish a model (research/qc/pass3-admission-policy.md S6). This record and
+# diansheng-solar-s3m-2022 are what let the family clear that bar. See
+# research/qc/pass3-b2-agent-b-diansheng-mfjs.md.
+id: diansheng-solar-s3m-plus
+entity: model
+family_id: diansheng-solar-s3m
+manufacturer_id: diansheng
+name: "DianSheng Solar S3M Plus"
+scope_class: core
+generation:
+  label: "S3M Plus"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2021"
+  precision: year
+  qualifier: before
+description: |-
+  Per TheCubicle's own product page (thecubicle-diansheng-solar-s3m-plus-product): "The
+  DianSheng Solar S3M Plus 3x3 is a new magnetic 3x3 by long time manufacturer DianSheng. This
+  cube has an interchangeable center cap and spring system so you can personalize its look and
+  feel!" This is the earliest-named "Solar S3M" generation found this pass; a later, distinctly
+  named "Solar S3M 2022" (diansheng-solar-s3m-2022) describes a different adjustment mechanism
+  (tool-free hand compression rather than a swappable cap-and-spring system), the basis for
+  treating the two as separate design generations of the same family rather than one product
+  under two names. No bare, unsuffixed "DianSheng Solar S3M" retail SKU was found at TheCubicle;
+  the family's own wiki-sourced generic name ("DianSheng Solar S3M 3x3") most plausibly
+  describes one of these two dated, named products, but the wiki (tier 4, per the standing
+  evidence-tier-remediation-matrix ruling on this exact page) cannot itself establish which.
+status: drafted
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-solar-s3m-plus-product]
+    note: "Derived bound, not a stated date: TheCubicle's own earliest resolving capture for
+      this product is 2021-11-08. The product must have existed by then; the actual
+      manufacturer release date is unresearched. Recorded with qualifier 'before' so it is
+      never mistaken for a launch date, at `uncertain` confidence since a retailer capture
+      floor is a weak basis for dating (compare gan-flagship-13.yml's identical treatment)."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-solar-s3m-plus-product]
+    note: "'Plus' is the retailer's own product-name element, read as reflecting a manufacturer
+      naming choice; no first-party DianSheng source was found this pass to confirm this
+      directly."
+  /description:
+    confidence: probable
+    sources: [thecubicle-diansheng-solar-s3m-plus-product]
