@@ -1,0 +1,105 @@
+# model: fangshi-shuangren-v2
+# Pass 3 (model enumeration), historic-makers lane. Second and, per this pass's own dedicated
+# search, LAST documented ShuangRen generation - see fangshi-shuangren-original.yml's header
+# for the full sweep record establishing no "V3"/"III" exists. Model identity here rests on a
+# manufacturer-declared-style version number ("V2") independently corroborated by a second,
+# non-US retailer's own separate numbering convention ("II") for what is evidently the same
+# generation (same "improvement over the discontinued original" framing, same 57mm size, same
+# ~95g weight class) - two independent tier 2 sources agreeing a second generation exists
+# satisfies rule 9's `confirmed` bar for model existence, even though neither individually
+# proves the manufacturer's own official name is "V2" specifically rather than "II" or another
+# form. "V2" is used as this record's canonical label because it matches this archive's already-
+# frozen family description (fangshi-shuangren.yml, which lists "Fangshi ShuangRen V2 3x3" per
+# the Speedsolving wiki) and TheCubicle's own English-language product name; "ShuangRen II" is
+# recorded as an alias, not treated as a naming conflict.
+id: fangshi-shuangren-v2
+entity: model
+family_id: fangshi-shuangren
+manufacturer_id: fangshi
+name: "FangShi ShuangRen V2"
+aliases:
+  - "FangShi ShuangRen II"
+  - "Funs Puzzle ShuangRen II"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: community_convention
+specs:
+  size_mm: 57.0
+  weight_g: 95
+  shape: standard
+description: |-
+  TheCubicle's own product page (thecubicle-fangshi-shuangren-v2, tier 2, re-fetched this pass
+  for full page text): "The FangShi ShuangRen V2, 'frosted blade' in Chinese, is the latest
+  57mm 3x3 by the Funs Puzzle manufacturer. It features a few minor improvements in design over
+  the original FangShi ShuangRen, which has been discontinued. It is also available in Primary
+  plastic and Primary with Black Caps." Product Specifications: "Manufacturer: FangShi / Type:
+  3x3 / Gross Weight: 95g / Dimensions: 57.0mm."
+
+  Independently corroborated by cubezz.com (China, non-US, new this pass) under the "Funs
+  Puzzle ShuangRen II" name (cubezz-fangshi-shuangren-ii): "Brand new Funs Puzzle ShuangRen II
+  3x3 Magic Cube ... Size:57*57*57mm ... Weight:94.0g," sold in White, Original Color, and as a
+  DIY Kit - again, colourway and DIY-vs-assembled configuration differences left as pass-4
+  leads, not built into further models. The two retailers' figures (57.0mm/95g vs.
+  57mm/94.0g) agree closely enough to be the same generation, not a genuine disagreement.
+status: drafted
+attestations:
+  /generation:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2, cubezz-fangshi-shuangren-ii]
+    note: "Two independent tier 2 retailers, using two different numbering conventions ('V2'
+      vs. 'II'), each independently treat this as a distinct, later, named generation of the
+      same base product - satisfies rule 9 for the existence of a second generation. Held at
+      `probable` rather than `confirmed` on this specific pointer because neither source is a
+      direct manufacturer statement that 'V2' (as opposed to 'II' or another form) is
+      FangShi's own official designation."
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [thecubicle-fangshi-shuangren-v2, cubezz-fangshi-shuangren-ii]
+    note: "Two independent tier 2 sources agree exactly (57.0mm / 57mm), satisfying rule 9."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2, cubezz-fangshi-shuangren-ii]
+    note: "95g (TheCubicle Gross Weight) vs. 94.0g (Cubezz) - a 1g gap treated as ordinary
+      catalogue rounding variance, not a genuine disagreement, per the convention already
+      applied elsewhere in this archive (e.g. cyclone-boys-feiwu-original). TheCubicle's
+      Gross Weight figure used per this archive's established convention."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Inferred from the absence of any pillowed/shape-mod language; not a direct
+      statement."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. TheCubicle's own 'Added: 2018-09-11' field on this page is
+      one of the four documented catalogue-migration artifacts named in the pass-3 admission
+      policy §3 (29 occurrences across 22 sources and 13 unrelated brands) and is explicitly
+      excluded as release-date evidence. Left unset."
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "TheCubicle's own product copy states directly the original 'has been discontinued'
+      and this product replaces it - a direct succession statement, not an inference from
+      naming or wiki ordering alone."
+  /description:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2, cubezz-fangshi-shuangren-ii]
+relationships:
+  - type: succeeds
+    target: fangshi-shuangren-original
+    target_entity: model
+    note: "TheCubicle's own product copy: 'It features a few minor improvements in design over
+      the original FangShi ShuangRen, which has been discontinued.'"

@@ -1,0 +1,111 @@
+# model: mefferts-kokonotsu-standard
+# Pass 3 (model enumeration), historic-makers lane. Meffert's Kokonotsu Pillow 3x3, the
+# family's sole documented product.
+#
+# scope_class boundary call, decided explicitly: this is almost certainly NOT WCA-legal (a
+# 9-colour, one-colour-per-side constraint puzzle, per the family's own description, is not a
+# standard 6-colour 3x3x3). The launch brief flagged `conditional` as the class to weigh, but
+# rule 15's bar for `conditional` requires `scope_justification` prose stating DOCUMENTED
+# historical or collector significance, not merely that the mechanism is unusual or
+# distinctive ("it is interesting"/"it is unusual" are explicitly rejected as justifications
+# per the pass-3 admission policy §2). No tier 1-3 source found this pass states any
+# competitive history, documented puzzle-category status, or collector significance for this
+# specific product beyond its own retailer description of its mechanism - a mechanism
+# description is not a significance claim. `twistypuzzles.com`, the most likely place such a
+# category/significance claim would be documented, returned HTTP 403 to this pass's automated
+# fetch (both a direct WebFetch of a guessed wiki URL and a wayback.mjs prefix sweep of the
+# domain failed to retrieve anything) - recorded here for a future pass with different access
+# to check, rather than treated as absence. Given no qualifying evidence was found,
+# `scope_class: reference_only` is used instead of inventing a `conditional` justification the
+# evidence does not support, per the admission policy's own instruction to prefer
+# `reference_only` "rather than inventing significance for a product that is real but carries
+# no historical weight."
+#
+# THE MOLECUBE LEAD IS NOT ACTED ON. Customer reviews on the one retailer source describe this
+# puzzle as "the same as the molecube puzzle that is sold in many physical stores." This pass
+# checked, and did not resolve, two further angles without concluding either way:
+#   1. `molecube.com` - has Wayback captures back to 2001, but every capture checked near the
+#      Kokonotsu era (2018-08-04) shows a bare domain-parking page ("Buy this domain... The
+#      Sponsored Listings displayed above are served automatically by a third party"), and an
+#      earlier 2009-08-15 capture returned empty (non-HTML/unrenderable) content. No genuine
+#      product-bearing capture of this domain was retrieved this pass, so it neither confirms
+#      nor refutes what "Molecube" the reviewers meant, or whether it is a company, a product
+#      name, or a lapsed domain unrelated to whatever physical-store product reviewers saw.
+#   2. `twistypuzzles.com` (the community's own puzzle museum/wiki, the most likely place a
+#      genuine "Molecube" entry would exist) returned HTTP 403 to this pass's automated access
+#      (both a WebFetch of a guessed URL, https://www.twistypuzzles.com/cgi-bin/puzzlewiki.cgi?pg=Molecube,
+#      and a wayback.mjs prefix sweep of the bare domain). Flagged for manual follow-up, per
+#      instruction, rather than treated as evidence of absence.
+# No `rebrand_of` relationship is recorded. Per DATA_MODEL §4.4, "visual resemblance alone is a
+# lead, not a claim," and this evidence is weaker than visual resemblance (unattributed
+# customer-review testimony, no photograph or mould comparison). Meffert's own long documented
+# history of licensing/rebranding other designers' puzzles (per data/manufacturers/mefferts.yml)
+# means both readings - an original Meffert's mechanism, or a licensed/rebranded "Molecube"
+# design - remain equally plausible on the evidence available.
+id: mefferts-kokonotsu-standard
+entity: model
+family_id: mefferts-kokonotsu
+manufacturer_id: mefferts
+name: "Meffert's Kokonotsu Pillow 3x3"
+aliases:
+  - "Kokonotsu"
+scope_class: reference_only
+specs:
+  shape: pillowed
+  weight_g: 128
+description: |-
+  TheCubicle's own product page (thecubicle-mefferts-kokonotsu-pillow-3x3, tier 2): "The
+  Meffert's Kokonotsu Pillow 3x3 is a non-traditional 3x3 puzzle variant that uses
+  solid-colored blocks as colors instead of stickers. There are 9 colors in total, and the
+  blocks must be arranged such that each color only appears once on each side in order to
+  solve the puzzle." Product Specifications: "Manufacturer: Meffert's / Gross Weight: 128g."
+  The pillowed shape is named directly in the retailer's own product title ("Kokonotsu Pillow
+  3x3"). No generation naming, successor, or predecessor was found - this is the family's sole
+  model, recorded on existence alone (S6 admission class 2).
+status: drafted
+attestations:
+  /specs/shape:
+    confidence: probable
+    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
+    note: "Named directly in the product's own title ('Pillow 3x3'), not merely inferred."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No dimension figure was given on the one
+      source found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Given the described 9-colour, one-block-per-
+      face mechanism, this is very unlikely to share a conventional 3x3 core design at all,
+      but no source describes the mechanism at that level of detail - left unknown rather than
+      guessed either way."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The only date evidence is a 2020-09-27 Wayback crawl
+      timestamp, excluded as release-date evidence per the pass-3 admission policy §3. Left
+      unset (contrast mefferts-kokonotsu.yml's family-level `before 2020` reading, made under
+      pass 2's looser standard before this policy was written - not repeated here)."
+  /scope_class:
+    confidence: uncertain
+    note: "No tier 1-3 source states documented historical or collector significance for this
+      specific product, so `conditional` (which requires exactly that, per rule 15) was not
+      used. `reference_only` is the honest reading of a real, distinctively-mechanised, but
+      undocumented-for-significance product. See file header for the full reasoning, including
+      the blocked twistypuzzles.com check that could change this finding."
+  /description:
+    confidence: reported
+    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]

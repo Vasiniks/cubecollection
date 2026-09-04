@@ -1,0 +1,84 @@
+# model: cube4you-3x3-standard
+# Pass 3 (model enumeration), historic-makers lane. Cube4You's own house-brand "3x3x3 DIY Speed
+# Cube" - the family's sole product. Hard call resolved: DIY-kit vs assembled is treated as a
+# variant axis, not two models, per this lane's explicit instruction; no separate "assembled"
+# SKU was found on the manufacturer's own site anyway (only DIY, across 7 colourways, on the
+# one category page found), so this did not need to be tested against real conflicting
+# evidence this pass.
+#
+# §3.6a compliance: (1) TheCubicle `/products/cube4you*` prefix sweep (40 distinct URLs) and a
+# SpeedCubeShop `/products/cube4you*` prefix sweep (8 distinct URLs) both found Cube4You's
+# well-documented Clock-puzzle line and non-standard cuboid shape mods (3x3x4/5/6/7, Teraminx,
+# Roadblock) but ZERO standard 3x3x3 speed-cube listings - this generic house-brand product is
+# carried only on Cube4You's own storefront, at no third-party English retailer found this
+# pass. (2) Non-US retailer sweep: a Cubelelo (India) `/products/cube4you*` prefix sweep and a
+# cubezz.com (China) domain-wide CDX search for "cube4you" each returned no 3x3x3 product
+# (cubezz returned exactly one unrelated accessory, a "Cube4You Magic Cube Base Holder").
+# Recorded as a real, still very thinly evidenced product, not discarded.
+id: cube4you-3x3-standard
+entity: model
+family_id: cube4you-3x3
+manufacturer_id: cube4you
+name: "Cube4You 3x3x3 Speed Cube"
+aliases:
+  - "Cube4you 3x3x3 DIY Speed Cube"
+scope_class: core
+specs:
+  size_mm: 57
+  shape: standard
+  materials:
+    plastic: "ABS"
+description: |-
+  Cube4You's own storefront (cube4you-3x3x3-diy-speed-cube-2017, tier 1, manufacturer's own
+  site): "Cube4you 3x3x3 DIY Speed Cube - Black / this cube don't need sanding, after lube, it
+  will turn well. it's diy, you need assemble it yourself. Size:57*57*57mm Material:ABS," sold
+  across Black, Blue, Glow Blue, Green, Orange, Pink, Transparent, and White colourways at
+  $5.99-$6.99 - a colourway difference left as a pass-4 (variant enumeration) lead, not built
+  into separate models. No mechanism, core, or magnet detail is given anywhere; no generation
+  naming or successor was found (the manufacturer's later, 2019+ storefront shifted to
+  3D-printed novelty puzzles per data/manufacturers/cube4you.yml and data/families/cube4you-3x3.yml,
+  with no equivalent house-brand 3x3 category found in the time available). This is the only
+  named 3x3x3 product line found for this manufacturer across every source checked this pass.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [cube4you-3x3x3-diy-speed-cube-2017]
+    note: "Tier 1, manufacturer's own storefront, own house brand - per DATA_MODEL §5.1,
+      manufacturer material is tier 1 for its own specifications."
+  /specs/shape:
+    confidence: uncertain
+    sources: [cube4you-3x3x3-diy-speed-cube-2017]
+    note: "No source explicitly states 'standard shape'; inferred from the absence of any
+      pillowed/shape-mod language and the generic 'DIY Speed Cube' framing."
+  /specs/materials/plastic:
+    confidence: probable
+    sources: [cube4you-3x3x3-diy-speed-cube-2017]
+  /specs/weight_g:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. The source states size and material but no
+      weight figure."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No source describes a magnetic configuration."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. No manufacturer or community numbering, successor, or
+      predecessor generation was located. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No explicit dated statement exists anywhere this pass;
+      the earliest capture found (2017-04-22) is a Wayback crawl timestamp, excluded as
+      release-date evidence per the pass-3 admission policy §3. Left unset."
+  /description:
+    confidence: probable
+    sources: [cube4you-3x3x3-diy-speed-cube-2017]

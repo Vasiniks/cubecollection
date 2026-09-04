@@ -1,0 +1,84 @@
+# model: qj-candy-3x3-standard
+# Pass 3 (model enumeration), historic-makers lane. QJ Candy 3x3's sole documented product.
+# Hard call resolved: "Candy" is read as a colour/marketing name for a stickerless-only
+# standard-shape budget cube, NOT a shape treatment (contrast qj-pillowed-3x3, where "Pillowed"
+# is a genuine mould shape) - the retailer's own copy never mentions a pillowed or non-standard
+# shape, only "draws inspiration from other 3x3 cube mechanisms." One model for the family.
+#
+# §3.6a compliance: (1) TheCubicle `/products/qj*` prefix sweep (18 distinct URLs, reproducing
+# the same sweep already recorded in qj-candy-3x3.yml/qj-pillowed-3x3.yml at pass 2) confirms
+# these are the only two standard 3x3x3 products QJ has under this retailer; no further QJ
+# Candy generation or successor was found. (2) Non-US retailer sweep: a Cubelelo (India)
+# `/products/qj*` prefix sweep found only "qj-timer" (no 3x3); a cubezz.com (China) domain-wide
+# CDX search for "qj" (24 distinct 200-status URLs) found QJ Mini 3x3, Brain Teaser, Smart Cube,
+# SQ-1, Floppy Cube and Bread Cube products, but no "Candy" or any 57mm QJ 3x3 speed cube at
+# all - this remains a single-retailer (TheCubicle-only) product after two independent
+# non-US-retailer checks. Recorded honestly, not discarded, per the pass-3 admission policy §4.
+id: qj-candy-3x3-standard
+entity: model
+family_id: qj-candy-3x3
+manufacturer_id: qj
+name: "QJ Candy 3x3"
+scope_class: core
+specs:
+  size_mm: 57.0
+  weight_g: 95
+  shape: standard
+description: |-
+  TheCubicle's own product page (thecubicle-qj-candy-3x3-product-2019, tier 2): "The QJ Candy
+  3x3 draws inspiration from other 3x3 cube mechanisms, yet it strikes a good balance between
+  affordability and performance." Sold in a black-body ("Stickerless") and pink-body
+  ("Stickerless (Pink)") option - a colourway difference, left as a pass-4 (variant
+  enumeration) lead, not built into a second model. No mechanism, mould, or generation detail
+  beyond this general description was found anywhere this pass; no second retailer (US or
+  non-US) was found selling this exact product, so its evidence base has not grown since pass 2.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+    note: "Single tier 2 retailer spec-table figure ('Dimensions: 57.0mm'). No independent
+      second source found this pass despite a dedicated non-US retailer sweep (Cubelelo,
+      Cubezz.com) - see file header."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+    note: "Single tier 2 retailer spec-table figure ('Gross Weight: 95g')."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+    note: "Inferred from the absence of any pillowed/shape-mod language in the only source
+      found, contrasted directly against the sibling qj-pillowed-3x3 family whose retailer
+      copy explicitly names a 'distinct pillowed shape.' Not a direct 'standard shape'
+      statement from the source itself."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No source describes a magnetic configuration
+      for this product."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. No manufacturer or community numbering, successor, or
+      predecessor generation was located for this product name specifically (the qjcube.com
+      2012-2015 catalogue lead recorded in qj-candy-3x3.yml is an unconfirmed naming lead for
+      a differently-named '5.7cm QJ 3x3 Speed Cube,' not a stated predecessor of this product).
+      Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The only date evidence available anywhere for this
+      product is TheCubicle's own 'Added: 2018-09-11' field and the capture's 2019-08-24
+      Wayback crawl timestamp - both explicitly excluded as release-date evidence by the
+      pass-3 admission policy §3 (the 'Added:' field is one of the four documented
+      catalogue-migration artifacts). Left unset rather than backed into a qualifier:before
+      reading of a forbidden source."
+  /description:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019]

@@ -1,0 +1,76 @@
+# model: qj-pillowed-3x3-standard
+# Pass 3 (model enumeration), historic-makers lane. QJ Pillowed 3x3's sole documented product.
+# Hard call resolved the other way from qj-candy-3x3: "Pillowed" here names a genuine external
+# shape (`shape: pillowed`, a real vocab value distinct from `standard`), not merely a colour
+# scheme - the retailer's own copy states directly "features a distinct pillowed shape that is
+# intended to make it easier to hold and turn." A pillowed shape mould is a design-level
+# attribute belonging on this model's `specs`, not deferred to variant level; it does not by
+# itself make the cube non-WCA-legal (pillowed 3x3s are common and competition-legal), so
+# `scope_class: core` still applies.
+#
+# §3.6a compliance: identical sweep record to qj-candy-3x3-standard.yml (same TheCubicle
+# `/products/qj*` 18-URL prefix sweep; same Cubelelo `/products/qj*` sweep, found only
+# "qj-timer"; same cubezz.com domain-wide "qj" CDX search, 24 distinct 200-status URLs, none
+# matching this product). Single-retailer product, unchanged from pass 2's finding.
+id: qj-pillowed-3x3-standard
+entity: model
+family_id: qj-pillowed-3x3
+manufacturer_id: qj
+name: "QJ Pillowed 3x3"
+scope_class: core
+specs:
+  shape: pillowed
+  weight_g: 91
+description: |-
+  TheCubicle's own product page (thecubicle-qj-pillowed-3x3-product-2019, tier 2): "This QJ
+  3x3 features a distinct pillowed shape that is intended to make it easier to hold and turn."
+  Sold in Black or White body colour, a colourway difference left as a pass-4 lead rather than
+  built into a second model. A qjcube.com 2012-2015 catalogue capture (qjcube-com-catalogue-2012)
+  shows a URL slug for a "3x3x3 Pillow-Shaped Magic Cube" under QJ's own official site well
+  before this archive's scope window - establishing QJ's pillowed-3x3 shape as a long-running
+  product line rather than a one-off 2018 introduction, though no source states the 2012 site
+  listing and this 2018-2019 TheCubicle listing are the identical named product (only that both
+  are QJ pillowed-shape 3x3s) - not enough to establish a distinct predecessor model, so no
+  `succeeds`/`reissue_of` relationship is recorded and this is treated as one model without a
+  documented earlier generation.
+status: drafted
+attestations:
+  /specs/shape:
+    confidence: probable
+    sources: [thecubicle-qj-pillowed-3x3-product-2019]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qj-pillowed-3x3-product-2019]
+    note: "Single tier 2 retailer spec-table figure ('Gross Weight: 91g'). No `Dimensions`
+      field was present on this listing (unlike the sibling qj-candy-3x3 listing), so
+      `size_mm` is left unset rather than assumed equal to the Candy product's 57.0mm."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. TheCubicle's own spec table for this product
+      lists Gross Weight but no Dimensions field, unlike its qj-candy-3x3 listing. Not assumed
+      equal to a sibling product's figure."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. The qjcube.com 2012-2015 lead establishes a long-running
+      pillowed-shape product line at QJ, not a specifically-named predecessor generation of
+      this product. Left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Only 'Added: 2018-09-11' (a documented catalogue-migration
+      artifact, per the pass-3 admission policy §3) and a 2019-08-21 Wayback crawl timestamp
+      exist as date evidence; neither is an explicit dated statement. Left unset."
+  /description:
+    confidence: probable
+    sources: [thecubicle-qj-pillowed-3x3-product-2019, qjcube-com-catalogue-2012]

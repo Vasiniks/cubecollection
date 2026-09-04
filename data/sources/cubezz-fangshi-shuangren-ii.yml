@@ -1,0 +1,37 @@
+# source: cubezz-fangshi-shuangren-ii
+# Pass 3 (model enumeration), non-US retailer sweep (RESEARCH_SPEC §3.6a). A CDX domain-wide
+# search of cubezz.com for "shuangren"/"funs" (59/158 distinct captured URLs respectively)
+# surfaced this and many sibling "Funs Puzzle ShuangRen II" listings, independently confirming
+# a second ShuangRen generation exists — corroborating TheCubicle's separately-named "ShuangRen
+# V2" (thecubicle-fangshi-shuangren-v2) under a different numbering convention ("II" vs "V2").
+# Two independent tier 2 retailers agreeing that a second generation exists satisfies rule 9.
+id: cubezz-fangshi-shuangren-ii
+entity: source
+kind: retailer
+tier: 2
+title: "Funs Puzzle ShuangRen II 3x3 Magic Cube 57mm White – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-3756-Funs+Puzzle+ShuangRen+II+3x3+Magic+Cube+57mm+White.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150406155410id_/http://cubezz.com/Buy-3756-Funs+Puzzle+ShuangRen+II+3x3+Magic+Cube+57mm+White.html"
+excerpt: |-
+  "Funs Puzzle ShuangRen II 3x3 Magic Cube 57mm White ... Brand new Funs Puzzle ShuangRen II 3x3
+  Magic Cube ... Model:ShuangRen / Size:57*57*57mm / PackageDimensions: 60*60*60mm /
+  Weight:94.0g." The same storefront's "Related Products" rail on this page separately lists
+  "Funs Puzzle Mini ShuangRen 54.6mm 3x3 Magic Cube" (White/Black) and "Funs Puzzle ShuangRen
+  II 3x3 Magic Cube DIY Kit 57mm Original..." as sibling SKUs of this same generation.
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront),
+  independent of TheCubicle. Confirms size (57mm, matching TheCubicle's 57.0mm exactly) and
+  gives a close, non-identical weight figure (94.0g vs TheCubicle's 95g Gross Weight) — treated
+  as ordinary catalogue rounding variance, not a genuine disagreement, per the same convention
+  already applied to cyclone-boys-feiwu-original's 1mm size gap. The structured "Model:ShuangRen"
+  field (without "II") on an otherwise "ShuangRen II"-titled listing is read as a static
+  template field lagging the product name, a retailer templating quirk, not evidence the
+  retailer considers this the same generation as the original.
+status: sourced
