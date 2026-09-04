@@ -1,0 +1,59 @@
+# model: cubestyle-3x3-standard
+# Pass 3 final-seven lane, Agent A. Single model under `cubestyle-3x3`. A full
+# `thecubicle.com/products/cubestyle*` prefix sweep (repeated this pass; see family record and
+# research/qc/pass3-b4-agent-a-final-seven.md) locates exactly one plain, undecorated CubeStyle
+# 3x3 product URL (`cubestyle-3x3`) alongside a large range of Carbon Fiber / Hollow Sticker
+# decorated resticker products (excluded from this family — see family record) and non-3x3
+# shape mods. No V2, second generation, or successor naming of any kind was found for the plain
+# listing. Ordinary WCA-format budget 3x3, `scope_class: core`.
+id: cubestyle-3x3-standard
+entity: model
+family_id: cubestyle-3x3
+manufacturer_id: cubestyle
+name: "CubeStyle 3x3"
+scope_class: core
+description: |-
+  TheCubicle's own product page (thecubicle-cubestyle-3x3, tier 2, archived capture
+  2024-05-30): "The CubeStyle 3x3 is a FangGe sub-branded 3x3 that draws inspiration from other
+  modern 3x3 cube mechanisms, yet it strikes a good balance between affordability and
+  performance." The same archived page's own structured "Product Specifications" table (read
+  from the full archived capture, not only the source record's own excerpt): "Manufacturer:
+  CubeStyle / Type: 3x3 / Added: 2018-09-11 / Gross Weight: 82g / Dimensions: 56.0mm³ / Item
+  Weight: 73.6g." 18 customer reviews at capture time describe it as a budget (~$6) stickerless
+  3x3, comparing its feel to the Valk 3 and Warrior W — real customer-review volume confirming
+  a genuinely sold, standard product, not a listing artifact.
+
+  No generation number, version suffix, or successor/predecessor naming was found for this
+  plain listing anywhere this pass (unlike the Carbon Fiber and Hollow Sticker decorated
+  listings under the same brand name, which are excluded from this family entirely as
+  DATA_MODEL §4.3 aftermarket resticker products of QiYi Warrior W / YJ GuanLong — see the
+  family record). Treated as this family's sole model on existence evidence alone (S6 class 2).
+status: drafted
+specs:
+  size_mm: 56.0
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-cubestyle-3x3]
+    note: "Single tier 2 retailer spec table ('Dimensions: 56.0mm³', read as a 56.0mm edge
+      length, the retailer's own notation for a cube's linear dimension). Weight is left unset:
+      the same table gives both a 'Gross Weight' (82g) and an 'Item Weight' (73.6g) and this
+      pass could not confirm which, if either, is the naked cube's actual weight rather than a
+      packaged/shipping figure — following the precedent already set on
+      kungfu-qinghong-3x3/kungfu-longyuan-3x3 (Agent D, same ambiguity, same resolution)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-cubestyle-3x3]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. A full thecubicle.com/products/cubestyle* prefix sweep
+      (this pass) finds no V2/second-generation naming for the plain 'cubestyle-3x3' listing.
+      Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The page's own 'Added: 2018-09-11' field is the
+      documented recurring catalogue-migration artifact (29 occurrences / 22 sources / 13
+      unrelated brands across this register — see thecubicle-mojue-m3-2020's
+      reliability_note) and is explicitly NOT used as a release date per the S6 policy. Only
+      two Wayback captures of this exact URL exist (2024-05-30, 2025-03-16), both crawl
+      timestamps, also inadmissible as release-date evidence. Left unset."

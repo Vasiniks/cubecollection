@@ -1,0 +1,49 @@
+# model: guojia-type-a-chun1
+# Pass 3 final-seven lane, Agent A. Admitted on S6 class-2 existence evidence alone: no
+# dedicated product page for "Type A Chun1" was found anywhere this pass (a
+# `thecubicle.com/products/type-a-chun*` prefix sweep finds only the Chun2 URL); its existence
+# rests entirely on the Chun2 listing's own disclaimer naming it as a distinct predecessor
+# product with different steel edge-piece hardware. Genuinely thin — recorded honestly as such
+# rather than invented further or discarded. A non-US retailer sweep (Cubelelo, Cubezz) for
+# "guojia" found no GuoJia products at either, so no additional corroboration was available.
+id: guojia-type-a-chun1
+entity: model
+family_id: guojia-type-a-chun
+manufacturer_id: guojia
+name: "GuoJia Type A Chun1"
+generation:
+  label: "Chun1"
+  ordinal: 1
+  basis: community_convention
+scope_class: core
+description: |-
+  Known only through a single incidental mention on the Chun2 product page (thecubicle-guojia-
+  type-a-chun2-2020, tier 2): "The steel parts provided are designed for the Type A Chun1 since
+  the Chun2's steel parts are no longer in production. The steel parts still fit, but glue may
+  be required to hold all of the steel pieces in place." No dedicated "Type A Chun1" product
+  page, description, price, or date was found at TheCubicle or any other retailer checked this
+  pass (a `thecubicle.com/products/type-a-chun*` and `.../guojia*` prefix sweep finds only the
+  Chun2 DIY-kit URL and the unrelated GuoJia Square-1). Admitted as a model on existence
+  evidence alone (S6 class 2: one tier 2 source naming it as a distinct product) plus the same
+  source's implicit evidence of a hardware difference in the steel edge parts (S6 class 3:
+  model identity) — not on any description of its own. All specs, dates, and further detail
+  are left entirely unset.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "Same reasoning as guojia-type-a-chun2/generation/basis: a retailer-stated numbered
+      pair, no direct GuoJia-own-voice confirmation found this pass."
+  /description:
+    confidence: uncertain
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "The only evidence for this model's existence is a single incidental sentence on a
+      different product's (Chun2's) page — a single weak (tier 2, but indirect/incidental)
+      mention, hence `uncertain` rather than `reported` despite the source itself being tier 2:
+      the statement was not written to describe Chun1, only to explain a parts-compatibility
+      caveat about it."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No dated statement of any kind exists for this product in
+      any source located this pass. Left unset."
