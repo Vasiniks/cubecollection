@@ -1,0 +1,111 @@
+# model: eastsheen-3x3-standard
+# Pass 3 (model enumeration), historic-makers lane. THE STANDING CONTRADICTION FLAGGED FOR THIS
+# LANE IS NOT RESOLVED HERE - it is carried forward, unresolved, exactly as pass 2 left it.
+#
+# The boundary call: model EXISTENCE (S6 admission class 2) rests on a single tier 2 source,
+# TheCubicle's structured "Manufacturer: Eastsheen" spec field on its "Eastsheen 3x3x3 Cube
+# with Wall Stickers" listing, whose own prose calls the base object "a standard Eastsheen
+# 3x3" - continuously listed across captures 2021-2025, not a one-off. This is directly
+# contradicted by the Speedsolving wiki's dedicated Eastsheen page, which states flatly "East
+# Sheen does not produce 3x3 cubes." Per this archive's own source-tiering, that wiki page is
+# HELD AT TIER 4 (see its own reliability_note, issue E1: it self-flags as possibly outdated
+# and was not given the tier-3 override six sibling wiki pages received) - a tier 4 source
+# "corroborates only, never establishes" per RESEARCH_SPEC §5.1, so it cannot on its own defeat
+# a tier 2 structured retailer claim, but it is a real, credible, direct denial and is recorded
+# in full rather than quietly outweighed.
+#
+# A zero-model finding was seriously considered and rejected: rejecting the model here, with no
+# new decisive counter-evidence beyond what pass 2 already weighed when it decided to keep
+# eastsheen-3x3.yml as a real (if unusually thin) family, would silently overturn that pass-2
+# judgement without new grounds. One model is admitted at `reported` confidence - matching the
+# family's own confidence level exactly - rather than discarded or inflated.
+#
+# §3.6a compliance, done and its LIMITS recorded honestly: a Cubelelo (India)
+# `/products/eastsheen*` prefix sweep and a cubezz.com (China) domain-wide CDX search for
+# "eastsheen" BOTH returned zero captures of any kind. This is NOT strong 3x3-specific
+# counter-evidence, because it is non-diagnostic: neither retailer carries ANY Eastsheen
+# product at all (not even the brand's undisputed 2x2/4x4/5x5 lines), so this absence cannot
+# discriminate "no 3x3" from "no Eastsheen presence whatsoever" at these two storefronts. A
+# SpeedCubeShop `/products/eastsheen*` sweep (already run at pass 2, per eastsheen-3x3.yml)
+# DOES carry other Eastsheen product lines (2x2/4x4/5x5) but no 3x3 - that remains the single
+# most on-point piece of negative evidence, and it was already known before this pass.
+id: eastsheen-3x3-standard
+entity: model
+family_id: eastsheen-3x3
+manufacturer_id: eastsheen
+name: "Eastsheen 3x3"
+aliases:
+  - "Eastsheen 3x3x3 Cube"
+scope_class: core
+specs:
+  size_mm: 57.0
+  weight_g: 100
+  shape: standard
+description: |-
+  TheCubicle's own product page for the "Eastsheen 3x3x3 Cube with Wall Stickers"
+  (thecubicle-eastsheen-wall-stickers, tier 2): "The Eastsheen 3x3x3 Cube with Wall Stickers is
+  a standard Eastsheen 3x3 with stickers applied that have a marble texture look to them."
+  Product Specifications table (re-fetched this pass from the same archive_url capture already
+  cited on that source): "Manufacturer: Eastsheen / Type: 3x3 / Gross Weight: 100g / Dimensions:
+  57.0mm / Item Weight: 98.5g." This is TheCubicle's ONLY 3x3x3 listing under the Eastsheen
+  brand (confirmed by a dedicated `/products/eastsheen*` prefix sweep this pass, 11 distinct
+  URLs, otherwise all 2x2/4x4/5x5) - no separately-sold plain, undecorated SKU was ever found;
+  the "standard Eastsheen 3x3" phrase is the only evidence for a base design distinct from the
+  Wall Stickers decoration, and that decorative sticker treatment is left as a pass-4 (variant
+  enumeration) lead against this model, not folded into it as a second product.
+
+  **Directly and squarely contradicted** by the Speedsolving wiki's dedicated Eastsheen page
+  (speedsolving-wiki-eastsheen, held at tier 4 by this archive's own remediation record): "East
+  Sheen does not produce 3×3 cubes," with its own product listing covering only 2x2/4x4/5x5 and
+  Mini/Multi lines. Also worth recording, without concluding: no source found anywhere this
+  pass suggests this product is an OEM/rebrand of a different maker's cube sold under the
+  Eastsheen name at retail - the "standard Eastsheen 3x3" phrasing implies the retailer
+  understood it as Eastsheen's own manufacture, not a third-party product relabelled - but this
+  was not independently verified against any Eastsheen-manufacturer-side statement, since none
+  was found (Eastsheen's own domain has been parked since at least 2011).
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers]
+    note: "Single tier 2 source, re-fetched this pass for the full spec table. Held at
+      `reported` rather than `probable` because the product's very existence is disputed by a
+      tier 4 source, per this model's own file-header note."
+  /specs/weight_g:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers]
+    note: "Gross Weight 100g per this archive's established convention (a separate Item Weight
+      of 98.5g is recorded in prose only)."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-eastsheen-wall-stickers]
+    note: "Inferred from 'a standard Eastsheen 3x3' and the absence of any pillowed/shape-mod
+      language; not a direct 'standard shape' statement."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. No manufacturer or community numbering, successor, or
+      predecessor generation was located. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. TheCubicle's own 'Added: 2021-05-11' field is a
+      catalogue-add date, not a release-date statement, and is not used per the pass-3
+      admission policy §3. Left unset (contrast eastsheen-3x3.yml's family-level `before 2021`
+      reading, made under pass 2's looser standard before this policy was written - not
+      repeated here)."
+  /description:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers, speedsolving-wiki-eastsheen]
+    note: "Genuine, unresolved contradiction between a tier 2 retailer and a tier 4 wiki,
+      preserved rather than adjudicated, matching the family's own confidence level exactly."

@@ -1,0 +1,106 @@
+# model: fangshi-shuangren-original
+# Pass 3 (model enumeration), historic-makers lane. First of two documented ShuangRen
+# generations - verified rather than assumed, per this lane's explicit instruction to check
+# for real v1/v2/v3 generations rather than take "flagship, historically significant" at face
+# value. NO THIRD GENERATION ("V3"/"III") WAS FOUND ANYWHERE THIS PASS, despite a dedicated
+# TheCubicle `/products/fangshi-shuangren*` prefix sweep (5 distinct URLs: this product, its
+# DIY kit, "-v2", "-v2-diy-kit", and one tracked-parameter duplicate of this product's own URL)
+# and a cubezz.com domain-wide CDX search for "shuangren"/"funs" (59/158 distinct 200-status
+# URLs). Exactly two generations are evidenced: this one, and fangshi-shuangren-v2.
+#
+# §3.6a compliance: (1) TheCubicle prefix sweep, above. (2) Non-US retailer sweep: a Cubelelo
+# (India) `/products/fangshi*` prefix sweep found only FangShi limCube-branded shape mods (2x2
+# Ghost Cube, 3x3 Dreidel, Deformed 3x3 Centrosphere, Dual 3x3) - no ShuangRen of any
+# generation. cubezz.com (China), by contrast, carries this exact generation extensively under
+# the manufacturer's own "Funs Puzzle" branding (see below) - genuine independent, non-US
+# corroboration was found for the family, materially strengthening this lane's evidence over
+# what pass 2 recorded.
+#
+# A SIGNIFICANT NAMING GAP FOUND THIS PASS, NOT ACTED ON (families are frozen): the same
+# cubezz.com sweep surfaced "Funs Puzzle GuangYing 3x3x3 Speed Cube" and "Funs Puzzle JieYun
+# 3x3x3 Speed Cube" (57mm and a 546mm/54.6mm "Mini" size) as SEPARATELY NAMED FangShi/Funs 3x3
+# product lines, independent of ShuangRen entirely - and TheCubicle independently carries the
+# same two names under its own `/products/fangshi-guangying*` and `/products/fangshi-jieyun*`
+# URLs (found in this pass's own `/products/fangshi*` sweep, 40 distinct URLs, not reproduced
+# in full here). The fangshi-shuangren.yml family record already flagged "FangShi GuangYing"
+# and "FangShi JieYun" as open leads from the wiki's own contents list; this pass independently
+# confirms via TWO retailers that these are real, named, currently-sold 3x3x3 product lines,
+# not stub wiki headers. NO FROZEN FAMILY EXISTS FOR EITHER. This is recorded as a gap for
+# human review, per the escalation instruction ("record the evidence, stop that branch,
+# escalate. Do not mutate.") - no family was created, and no model was built for either name.
+id: fangshi-shuangren-original
+entity: model
+family_id: fangshi-shuangren
+manufacturer_id: fangshi
+name: "FangShi ShuangRen"
+scope_class: core
+specs:
+  size_mm: 57.0
+  weight_g: 95
+  shape: standard
+description: |-
+  TheCubicle's own product page (thecubicle-fangshi-shuangren-v2, re-fetched this pass at its
+  own archive_url for full page text): "The FangShi ShuangRen, 'frosted blade' in Chinese, is
+  a recent 3x3 designed by Funs Puzzle. It is 57mm and boasts incredibly liberal corner cutting
+  and easy, fluid movement." The same page: "Discontinued Product: This product is being
+  replaced by the FangShi ShuangRen V2, and it will no longer be available once it is sold
+  out." Product Specifications: "Manufacturer: FangShi / Type: 3x3 / Gross Weight: 95g /
+  Dimensions: 57.0mm."
+
+  Independently corroborated by cubezz.com (China, non-US, found this pass) under the
+  manufacturer's "Funs Puzzle" branding: multiple listings for "Funs Puzzle ShuangRen 3x3
+  Magic Cube" sold both as a DIY Kit (Black/White) and Assembled (White), plus a smaller "Funs
+  Puzzle Mini ShuangRen 54.6mm 3x3 Magic Cube" size line (various body/cap colour
+  combinations). DIY-kit-vs-assembled and the 54.6mm size line are read as sold configurations
+  of the same underlying design per DATA_MODEL §4.2 ("size-only differences within one mould"
+  and DIY-vs-assembled are both variant-level, not model-level) and left as pass-4 leads, not
+  built into separate models - consistent with the Speedsolving wiki's own framing that "The
+  ShuangRen has since been released in new sizes, and some cube retailers offer it in numerous
+  colour combinations" (speedsolving-wiki-fangshi), which itself characterises sizes and
+  colours as retailer-offered configurations rather than design generations.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Single tier 2 retailer figure for this generation specifically (the V2 product page,
+      re-fetched, contains the original's own discontinuation notice and spec table). No
+      independent second retailer was found selling the plain, non-Mini, non-'II' 57mm original
+      generation - cubezz.com's own 57mm ShuangRen listings found this pass are all labelled
+      'ShuangRen II' (the successor generation); its non-'II' 57mm listings could not be located,
+      only its 54.6mm 'Mini' line. Held below `confirmed` accordingly."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Same single-retailer limitation as /specs/size_mm."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Inferred from the absence of any pillowed/shape-mod language; not a direct
+      statement."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No source describes a magnetic configuration
+      for this generation."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /generation:
+    confidence: unknown
+    note: "No source calls this generation 'V1,' 'Original,' or gives it any numeral - it is
+      simply named 'FangShi ShuangRen' before the existence of a stated successor ('ShuangRen
+      V2'/'ShuangRen II'). Field left unset rather than inventing an 'Original'/1 label no
+      source uses."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No explicit dated statement exists anywhere this pass.
+      Left unset."
+  /description:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2, speedsolving-wiki-fangshi]
