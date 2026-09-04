@@ -542,3 +542,95 @@ issues:
       to the archive rather than invalidating existing records.
     owner: main
     last_updated: "2026-09-03"
+
+  # ---- Pass 3 discoveries about Pass 2 (2026-09-04) ----
+
+  - id: P3-T1
+    severity: high
+    status: needs_human_decision
+    title: "FangShi GuangYing and JieYun are real 3x3 lines with no frozen family"
+    category: taxonomy-completeness
+    affected_records: >-
+      none yet - two family records would need creating under manufacturer fangshi, which
+      currently holds only fangshi-shuangren. Evidence preserved as
+      data/sources/{thecubicle,cubezz}-fangshi-{guangying,jieyun}.yml
+    evidence: >-
+      TheCubicle's own product copy states JieYun "features an assembly similar to that of the
+      FangShi GuangYing, but with some major differences in the pieces" and "minor grooves on
+      the pieces where the stickers are placed" - a physical mould difference. Cubezz
+      independently brands each at specification level as its own Funs Puzzle line and calls
+      JieYun a "new design". The Speedsolving wiki lists both as peer headers alongside
+      ShuangRen. A complete non-truncated 61-URL sweep of TheCubicle's fangshi catalogue found
+      no third missing line, bounding the gap at exactly two families.
+    counterevidence: >-
+      No first-party FangShi/Funs manufacturer source has ever been located for this
+      manufacturer - a pre-existing structural gap, not specific to this finding. A
+      Chinese-language naming check was not completed. Retailer agreement is strong evidence of
+      commercial existence but is not a manufacturer's own catalogue structure.
+    recommendation: >-
+      Create fangshi-guangying and fangshi-jieyun as families in a deliberate Pass 2 action,
+      with successor_family_id chaining shuangren -> guangying -> jieyun if the succession holds.
+      Precedent: DaYan's flagship progression is enumerated as 8 separate families rather than
+      one family with 8 models, and successor_family_id is an established populated field.
+      The 54.6mm "Mini" products are NOT a third family - tested and rejected as within-line
+      size modifiers per the dayan-zhanchi 42mm precedent.
+    confidence: probable
+    downstream_impact: >-
+      Two families' worth of models are absent from the Pass 3 inventory. Does not invalidate
+      any existing record - it is a completeness gap, not a correctness error, so Pass 3 can
+      close with it documented rather than blocked.
+    owner: main
+    last_updated: "2026-09-04"
+
+  - id: P3-D1
+    severity: medium
+    status: resolved
+    title: "10 models predate their frozen family's introduced date, undetected by any rule"
+    category: validation-rule-gap
+    affected_records: [scripts/lint-semantic.mjs, scripts/selftest.mjs, DATA_MODEL.md]
+    evidence: >-
+      An archive-wide sweep found 10 models dated before their own family's introduced date.
+      Nothing detected them: no rule compared a model's released/announced to its family's
+      introduced, so the contradiction passed npm run check silently. Same shape as the earlier
+      rule-9 defect.
+    counterevidence: >-
+      Three of the ten are precision artifacts, not errors - a year-precision date always sorts
+      before a month-precision date in the same year.
+    recommendation: >-
+      RESOLVED. Rule 40 added to lint-semantic.mjs, advisory rather than blocking since both
+      readings of a conflict need a human. Compares the model date against the START of the
+      family's precision window, widened once when either date is circa, but only when the model
+      date is itself soft - an exact model date is a precise claim that a family's vagueness
+      must not swallow. Fires on 4 genuine conflicts and stays correctly silent on 6. Both
+      branches carry fixtures and the selftest asserts the allowance branch stays quiet.
+      Documented as DATA_MODEL 7.9. The 7 underlying date conflicts remain open under P3-D2.
+    confidence: high
+    downstream_impact: "Closed as a rule gap. The data conflicts it surfaced are tracked separately."
+    owner: main
+    last_updated: "2026-09-04"
+
+  - id: P3-D2
+    severity: medium
+    status: needs_human_decision
+    title: "7 frozen families understate their own introduced date"
+    category: taxonomy-evidence
+    affected_records: >-
+      mohuanshousu-chufeng, mojue-m3, senhuan-mars, qiyi-valk, yancheng-yan3,
+      newisland-lightning, guoguan-yuexiao
+    evidence: >-
+      Pass 3 model research found earlier, better-sourced dates than Pass 2 had. The clearest is
+      qiyi-valk-3, announced 2016-08 `exact`, inside a family recorded `circa 2018`. Full table
+      in research/qc/model-predates-family-finding.md; rule 40 now warns on 4 of the 7.
+    counterevidence: >-
+      Three of the seven sit within one year-window of a circa year date and are genuinely
+      ambiguous rather than wrong, which is why rule 40 stays silent on them.
+    recommendation: >-
+      Adjudicate as a Pass 2 action: move each family's introduced back to the earliest
+      well-evidenced model date and re-attest it. NOT done under Pass 3 - introduced is a
+      family-level field and families are frozen.
+    confidence: high
+    downstream_impact: >-
+      No model record is wrong; the models carry the better evidence. The families understate
+      their own history, which matters for a chronological exhibition.
+    owner: main
+    last_updated: "2026-09-04"
