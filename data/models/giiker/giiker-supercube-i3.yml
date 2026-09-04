@@ -1,0 +1,74 @@
+# model: giiker-supercube-i3
+# Pass 3 (model enumeration), Batch 3 Agent A. The original SUPERCUBE, named directly in
+# GiiKER's own founding timeline: "2018 January: Smart cube technology and applications
+# presented at Nuremberg toy fair; March: SUPERCUBE(R) i3 released - The world's 1st smart
+# cube" (giiker-about-us-2022, tier 1). No dedicated product page for the plain "i3" survives
+# at GiiKER's own site, TheCubicle, or SpeedCubeShop in any Wayback capture found this pass
+# (all three carriers' captured product catalogues show only the later i3S) — existence rests
+# on the manufacturer's own history page plus TheCubicle's independent reference to "the
+# previous Giiker Super Cube" on its i3S listing (thecubicle-giiker-super-cube-i3s-2019),
+# which corroborates that an earlier, distinct product existed without itself naming it "i3".
+# See research/qc/pass3-b3-agent-a-smartcubes.md for the full i3/i3S boundary reasoning.
+id: giiker-supercube-i3
+entity: model
+family_id: giiker-supercube
+manufacturer_id: giiker
+name: "GiiKER SUPERCUBE i3"
+aliases:
+  - "Giiker Super Cube"
+  - "SUPERCUBE i3"
+scope_class: core
+generation:
+  label: "i3"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2018-03"
+  precision: month
+  qualifier: exact
+description: |-
+  GiiKER's own "About Us" timeline states directly: "2018 January: Smart cube technology and
+  applications presented at Nuremberg toy fair; March: SUPERCUBE(R) i3 released - The world's
+  1st smart cube" (giiker-about-us-2022, tier 1, first-party). This is treated as the founding
+  model of the SUPERCUBE line and of the family.
+
+  No product page for the bare "i3" (as opposed to "i3S") was found at giiker.com, TheCubicle,
+  or SpeedCubeShop in any Wayback capture surveyed this pass — a `prefix` sweep of
+  giiker.com/products/ (55 URLs), thecubicle.com/products/giiker* (18 URLs), and
+  speedcubeshop.com/products/giiker* (2 URLs) turned up only the i3S generation, never a
+  standalone "i3" listing. Existence is nonetheless established at `confirmed` because a single
+  tier 1 source (the manufacturer's own history page) names it directly as a released product,
+  and TheCubicle's i3S copy independently corroborates that "the previous Giiker Super Cube"
+  existed before the i3S it is describing (thecubicle-giiker-super-cube-i3s-2019) — without
+  itself using the numeral "i3".
+
+  Specifications are left entirely unset: no tier 1-2 source with a spec table for this specific
+  generation was found (only i3S has a surviving retailer spec table).
+status: drafted
+attestations:
+  /released:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+    note: "Tier 1, first-party, explicit month-level dated statement ('March: SUPERCUBE(R) i3
+      released') — meets the S6 policy's strictest evidence class (an explicit dated statement,
+      not a crawl timestamp or catalogue field)."
+  /generation/basis:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+    note: "GiiKER's own history page names 'SUPERCUBE(R) i3' directly as the released product."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+    note: "'Giiker Super Cube' is TheCubicle's own retrospective name for this generation
+      ('the previous Giiker Super Cube'); it does not itself use the numeral 'i3'."
+  /description:
+    confidence: probable
+    sources: [giiker-about-us-2022, thecubicle-giiker-super-cube-i3s-2019]
+    note: "The succession to i3S is declared on the later model (giiker-supercube-i3s.yml,
+      type: succeeds) per this archive's convention of recording the relationship on the later
+      design pointing at its predecessor; see that file for the fuller boundary discussion of
+      whether this succession is a new model or a variant-level refresh."
+  /specs:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No surviving product page or retailer spec
+      table for the bare 'i3' generation was located in any capture checked this pass."

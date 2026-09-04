@@ -1,0 +1,33 @@
+# source: getgocube-com-2019-fullpack-bundle
+# GoCube's own official product page at getgocube.com/products/gocube-full-pack/, captured via
+# Wayback. Tier 1, first-party. Establishes directly that "GoCube [Edge] Full Pack" is a
+# packaging bundle of the GoCube Edge cube plus accessories, not a separate cube design —
+# the evidence backing the rejection of "Full Pack" as a candidate model.
+id: getgocube-com-2019-fullpack-bundle
+entity: source
+kind: manufacturer_official
+title: "GoCube Edge Full Pack - GoCube (getgocube.com product page)"
+publisher: "GoCube / Particula"
+url: "https://getgocube.com/products/gocube-full-pack/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190916171253id_/https://getgocube.com/products/gocube-full-pack/"
+excerpt: |-
+  "GoCube Edge Full Pack $99.95 $119.00 ... SKU: GC33A-SP / Category: cube. Enjoy the entire
+  GoCube options and features with the advanced Edge model! experience a whole new world of
+  cubing, including the full kit of accessories... Includes – GoCube EDGE, An awesome charging
+  stand to shine your space. It will also hold your cell phone while playing!; A customized USB
+  charger; And a beautiful Pouch for travels."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: "Tier 1, first-party, and dispositive on the model/variant boundary question
+  for 'Full Pack': the page's own copy states the box 'Includes – GoCube EDGE' plus a charging
+  stand, USB charger, and pouch — i.e. it is the GoCube Edge cube (SKU root GC33A, suffixed
+  '-SP' for the bundle SKU) sold together with accessories, not a differently designed cube.
+  Treated as packaging/bundle evidence only, per DATA_MODEL §4.1 ('packaging... only when it is
+  the sole distinguishing feature of a separately marketed edition' — even then this stays a
+  variant-level fact, never a model). No separate model record created for 'Full Pack' on this
+  evidence."
+status: sourced

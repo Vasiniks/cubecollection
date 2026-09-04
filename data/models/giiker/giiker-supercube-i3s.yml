@@ -1,0 +1,138 @@
+# model: giiker-supercube-i3s
+# Pass 3 (model enumeration), Batch 3 Agent A. HARD CALL, resolved by splitting rather than
+# collapsing — see research/qc/pass3-b3-agent-a-smartcubes.md for the full reasoning.
+#
+# TheCubicle's own product copy: "The Giiker Super Cube i3S is an updated version of the
+# previous Giiker Super Cube. This version comes with updated software, Bluetooth v. 4.0, and
+# bright vibrant stickers" (thecubicle-giiker-super-cube-i3s-2019, tier 2). Read in isolation,
+# that sentence describes exactly the kind of firmware/chipset/colourway refresh DATA_MODEL
+# S4.2 treats as variant-level ("a different core assembly... sold as options of one product"),
+# and this task brief names precisely this ambiguity (firmware/BT-chipset changes vs a genuine
+# hardware model) as the hard problem of this lane. No source describes a mould, shape, or
+# internal-geometry difference between i3 and i3S.
+#
+# Against that: GiiKER's own official site (giiker.com) carries "i3S" as its own standing,
+# separately-named, separately-SKU'd product page (giiker-com-supercube-i3s-product-2022) — not
+# a firmware push to existing i3 units, but a distinct manufacturer-declared generation you
+# bought as its own product, the same identity path S6 policy class 3 permits ("a
+# design/mould/mechanism difference, OR a manufacturer-declared generation"). DATA_MODEL S4.2
+# itself says a version suffix is "a strong signal about design change and a weak one about
+# configuration" — evidence, not proof, in either direction.
+# Resolution: split. Admitted as a separate model on the manufacturer-declared-generation path,
+# with the identity claim (not the existence claim) held at `uncertain` and a `succeeds`
+# relationship to i3, exactly the DATA_MODEL S4.2 default for unclear cases ("When the evidence
+# is unclear, default to new model... confidence: uncertain on the generation claim").
+id: giiker-supercube-i3s
+entity: model
+family_id: giiker-supercube
+manufacturer_id: giiker
+name: "GiiKER SUPERCUBE i3S"
+aliases:
+  - "Giiker Super Cube i3S"
+  - "Giiker Bluetooth Super Cube i3S"
+scope_class: core
+generation:
+  label: "i3S"
+  ordinal: 2
+  basis: manufacturer_declared
+released:
+  value: "2019"
+  precision: year
+  qualifier: before
+description: |-
+  GiiKER's own official product page names this "SUPERCUBE® i3S" (giiker-com-supercube-i3s-product-2022,
+  tier 1): "Smart and Connected: App connected smart cube with real-time tracking technology...
+  It's educational and innovative, endorsed by MoMA as the next generation cube for the 21st
+  century" (the MoMA/"next generation" language is marketing copy, not treated as a
+  specification fact). TheCubicle's own copy (thecubicle-giiker-super-cube-i3s-2019, tier 2)
+  independently states: "The Giiker Super Cube i3S is an updated version of the previous Giiker
+  Super Cube. This version comes with updated software, Bluetooth v. 4.0, and bright vibrant
+  stickers," and gives a spec table: "Gross Weight: 213g / Dimensions: 56.5mm 3 / Item Weight:
+  104.6g." SpeedCubeShop independently carried the identical product under the name "Giiker
+  Bluetooth Super Cube i3S" (captured 2020-11-11, not separately sourced here beyond the URL
+  itself, which corroborates the name and persistence of this generation at a second retailer).
+
+  **Model-identity boundary call, made explicitly.** The only documented difference from the
+  prior i3 generation is software, a Bluetooth radio revision, and sticker colour — on their own,
+  exactly the class of change DATA_MODEL S4.2 assigns to `variant`, not `model` ("a different
+  core assembly... sold as options of one product... are variants, however different they feel
+  in the hand"). No source describes a mould, shape, or internal-geometry change. Admitted here
+  as a separate model anyway because GiiKER's own site treats "i3S" as its own persisting,
+  separately-SKU'd product (not a firmware update applied in place to existing i3 units), which
+  is the S6-policy-permitted "manufacturer-declared generation" path to model identity
+  independent of a shown mould difference — and because DATA_MODEL's own default for genuinely
+  unclear cases is to split rather than collapse. The generation-identity attestation below is
+  held at `uncertain` to keep this reasoning visible rather than silently promoting a naming
+  convention into a settled hardware-design fact.
+
+  This generation's own product page persisted on GiiKER's own site from at least 2022 through
+  a 2026-08-19 capture (giiker-com-supercube-i3s-2026-soldout), by which point it is marked
+  "Sold out" and has dropped from the site's primary shop navigation — see
+  data/families/giiker-supercube.yml for the fuller decline discussion; no source states a
+  formal discontinuation, so `discontinued` is left unset here.
+status: drafted
+specs:
+  size_mm: 56.5
+  weight_g: 104.6
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+    note: "No explicit dated release statement was found for i3S specifically. The value
+      recorded is a Wayback crawl-timestamp lower bound (TheCubicle's own capture is dated
+      2019-05-12, hence 'before 2019' at year precision) — per S6 policy §3, this establishes
+      only that the product existed by that date, not when it launched. Not treated as, and
+      never to be read as, a release date."
+  /generation/basis:
+    confidence: uncertain
+    sources: [giiker-com-supercube-i3s-product-2022, thecubicle-giiker-super-cube-i3s-2019]
+    note: "GiiKER's own site does carry 'i3S' as a standing, separately-SKU'd product name
+      (satisfying the S6 'manufacturer-declared generation' identity path), but the only
+      substantive difference documented from the prior generation is software, a Bluetooth
+      chipset revision, and sticker colour — evidence that, read alone, points toward a
+      variant-level configuration refresh rather than a new mould or mechanism. Held at
+      `uncertain` deliberately; see this file's header comment for the full boundary reasoning."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+    note: "Tier 2 retailer spec table ('Dimensions: 56.5mm 3'), the S6-permitted minimum for a
+      specification claim."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+    note: "Recorded as the table's 'Item Weight' (104.6g) rather than 'Gross Weight' (213g,
+      which includes retail packaging)."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. TheCubicle's spec table for this product has no
+      'Magnets' row at all (unlike its Giiker M3 table, which explicitly states 'Magnets:
+      Magnetic'), so magnet presence itself is not established either way for i3S, not merely
+      the arrangement."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+  /description:
+    confidence: probable
+    sources: [giiker-com-supercube-i3s-product-2022, thecubicle-giiker-super-cube-i3s-2019,
+      giiker-com-supercube-i3s-2026-soldout]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-giiker-super-cube-i3s-2019, giiker-about-us-2022]
+    note: "TheCubicle's own words ('an updated version of the previous Giiker Super Cube') give
+      the succession direction; neither source states an i3-to-i3S succession in one sentence
+      naming both generations by number."
+relationships:
+  - type: succeeds
+    target: giiker-supercube-i3
+    target_entity: model
+    note: "thecubicle-giiker-super-cube-i3s-2019: 'The Giiker Super Cube i3S is an updated
+      version of the previous Giiker Super Cube.'"

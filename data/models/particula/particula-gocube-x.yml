@@ -1,0 +1,103 @@
+# model: particula-gocube-x
+# Pass 3 (model enumeration), Batch 3 Agent A. A budget-tier sibling first found in captures
+# from late 2021, distinguished from GoCube Edge by a coin-cell power system, classic (non-
+# pillowed) shape, non-magnetic configuration, and different stated dimensions/weight. No
+# succession relationship is recorded to either GoCube Basic or GoCube Edge — see this file's
+# description for why that was deliberately left unclaimed.
+id: particula-gocube-x
+entity: model
+family_id: particula-gocube
+manufacturer_id: particula
+name: "GoCube-X"
+aliases:
+  - "GoCube X"
+scope_class: core
+generation:
+  label: "X"
+  basis: manufacturer_declared
+released:
+  value: "2021"
+  precision: year
+  qualifier: before
+description: |-
+  GoCube's own official product page (getgocube-com-2021-gocube-x-product, tier 1): "THIS IS the
+  GoCube-X! A great starting point into the world of cubing! Now available in its classic shape
+  at a great price!" with "Low Power Battery Operated (Coin CR1225) Over 60 hours of play" and
+  "New Neon Colors." TheCubicle's own copy (thecubicle-gocube-x-3x3-2022, tier 2): "The GoCube-X
+  3x3 is a new, less expensive smart cube from the famous brand. This one is non-magnetic, but
+  still has all of the tracking of the original GoCube!" with a spec table: "Gross Weight: 134g /
+  Dimensions: 57.0mm 3 / Item Weight: 103.0g" (no "Magnets" row, consistent with "non-magnetic").
+
+  **Model-identity boundary call.** Three independent, stacking pieces of evidence support a
+  distinct model rather than a checkout-time colour/battery option of GoCube Edge: (1) a
+  different power architecture — a replaceable CR1225 coin cell, vs. Edge's built-in
+  rechargeable-via-MicroUSB cell (getgocube-com-2019-gocube-edge-product) — which is a
+  fundamentally different physical assembly (a battery compartment/door vs. a sealed rechargeable
+  cell), not merely a component swapped at assembly time; (2) a stated "classic shape" contrasted
+  against the flagship "GoCube"'s "Premium, stickerless" pillowed design in the manufacturer's own
+  three-way comparison table on the same page; (3) different stated dimensions and weight (57.0mm
+  / 103.0g vs. Edge's 60.0mm / 125.0g, per thecubicle-gocube-x-3x3-2022 and
+  thecubicle-gocube-edge-3x3-2020 respectively) — a real, sourced dimensional gap consistent with
+  different tooling, not just a config choice.
+
+  **No succession relationship recorded, deliberately.** TheCubicle's "still has all of the
+  tracking of the original GoCube" could plausibly refer to either GoCube Basic (the base 2019
+  tier this X most resembles on price and specs) or the "GoCube" nav item current as of the
+  X's own 2021 site captures (by then the former "Edge" line, consolidated under the plain
+  "GoCube" name) — the sources do not disambiguate which, and no source states GoCube-X replaces
+  or continues either specific prior SKU. Rather than assert an unsupported specific lineage,
+  this model is recorded as a third, later, budget-tier sibling within the family with no
+  `succeeds` relationship. A human reviewer with access to press coverage of GoCube-X's 2021
+  launch could resolve this.
+status: drafted
+specs:
+  size_mm: 57.0
+  weight_g: 103.0
+  magnet_architecture: none
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [getgocube-com-2021-gocube-x-product]
+    note: "No explicit dated release statement was found. 'FIRST BATCH... SOLD OUT... 2nd BATCH
+      AVAILABLE IN EARLY NOVEMBER' on the manufacturer's own page (captured 2021-10-27)
+      establishes the product had already sold an initial batch by that date, used here only as
+      a circulation `before` bound at year precision, not a launch date. TheCubicle's own
+      'Added: 2021-11-22' catalogue field is not used as evidence of any kind, consistent with
+      this pass's general treatment of retailer 'Added' fields."
+  /generation/basis:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product, thecubicle-gocube-x-3x3-2022]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-gocube-x-3x3-2022]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-gocube-x-3x3-2022]
+    note: "Recorded as the table's 'Item Weight' (103.0g) rather than 'Gross Weight' (134g)."
+  /specs/shape:
+    confidence: unknown
+    note: "The manufacturer's own page contrasts this product's 'classic shape' against the
+      flagship line's pillowed/'Premium' design, but never uses the word 'standard' or
+      'pillowed' for this product specifically — left unset rather than inferred from the
+      contrast alone."
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [thecubicle-gocube-x-3x3-2022]
+    note: "TheCubicle states directly 'This one is non-magnetic'; the spec table has no
+      'Magnets' row, consistent with the value `none` recorded in specs."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-gocube-x-3x3-2022, getgocube-com-2021-gocube-x-product]
+  /description:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product, thecubicle-gocube-x-3x3-2022,
+      getgocube-com-2019-gocube-edge-product]

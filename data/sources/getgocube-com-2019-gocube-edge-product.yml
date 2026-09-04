@@ -1,0 +1,34 @@
+# source: getgocube-com-2019-gocube-edge-product
+# GoCube's own official product page for "GoCube Edge" (SKU GC33E) at getgocube.com, captured
+# via Wayback. Tier 1, first-party. Carries the same "GoCube VS GoCube Edge" comparison table
+# as getgocube-com-2019-gocube-product, plus a customer review naming the "pillowed shape"
+# directly.
+id: getgocube-com-2019-gocube-edge-product
+entity: source
+kind: manufacturer_official
+title: "GoCube Edge - GoCube (getgocube.com product page)"
+publisher: "GoCube / Particula"
+url: "https://getgocube.com/products/gocube-edge/"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191216075613id_/https://getgocube.com/products/gocube-edge/"
+excerpt: |-
+  "GoCube Edge $69.95 $89.95 ... SKU: GC33E / Category: Uncategorised. Enjoy the entire GoCube
+  options and features with the advanced Edge model! ... Gocube Edge comes with: GoCube EDGE
+  Customized USB charger." Feature table "GoCube VS GoCube Edge": "Tracking accuracy 0.25 sec
+  [GoCube] / 0.001 sec [GoCube Edge]." Customer review (Shawn Boucké): "The quality of the
+  puzzle and app make this a great cube to get. It's approachable for those who are starting,
+  and aside from the pillowed shape actually performs amazing."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: "Tier 1, first-party for the product's own specification/feature claims. The
+  'pillowed shape' phrase is a customer review, not the manufacturer's own copy on this page —
+  recorded at tier 1 for the page's *hosting* but the pillowed-shape claim itself is treated as
+  corroboration alongside the independently-worded tier 2 statement in
+  thecubicle-gocube-edge-3x3-2020 ('a novel pillowed design'), not as a standalone tier 1
+  specification claim by itself. Used together with getgocube-com-2019-gocube-product as the
+  core identity evidence distinguishing GoCube Edge from GoCube (Basic) as separate models: a
+  stated 250x tracking-accuracy difference plus a pillowed (vs. standard) shape."
+status: sourced
