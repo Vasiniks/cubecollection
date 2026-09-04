@@ -1,0 +1,78 @@
+# model: yancheng-yan3
+# Pass 3 (model enumeration), agent D. YanCheng's sole documented product and this family's
+# only model. An independent non-US retailer found this pass (Cubelelo, India) shows the
+# product listed over three years before TheCubicle's own capture.
+id: yancheng-yan3-standard
+entity: model
+family_id: yancheng-yan3
+manufacturer_id: yancheng
+name: "YanCheng YAN3"
+aliases:
+  - "Yan3"
+  - "YAN 3"
+scope_class: core
+generation:
+  label: "YAN3"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2017-04"
+  precision: month
+  qualifier: before
+specs:
+  size_mm: 56.0
+  weight_g: 76.6
+description: |-
+  TheCubicle (thecubicle-yancheng-yan3-2020): "The YAN3 is the first cube released by the
+  YanCheng brand. It has a unique gliding feel that makes turning feel exceptionally
+  effortless. The puzzle is packaged inside a special drawer-style box." An independent non-US
+  retailer (Cubelelo, India) found this pass carries the identical listing text under its own
+  "New Arrivals" category as of 2017-04-06 (cubelelo-yancheng-yan3-2017) — over three years
+  before TheCubicle's earliest found capture. The description text is verbatim-identical
+  between the two retailers and is therefore not independent corroboration of its content
+  (RESEARCH_SPEC §3.2), only of the product's existence and this earlier date, moving the
+  plausible circulation date to early 2017 or before (materially earlier than the family
+  record's own "circa 2018" `introduced` reading, itself not altered here — out of this pass's
+  write lane).
+
+  Sold in multiple colourways (Black, White, Primary, Stickerless Bright per TheCubicle) —
+  pass 4 material, not enumerated here. No second YanCheng product, predecessor, or successor
+  was found this pass (`thecubicle.com/products/yancheng*` and a domain-wide non-US retailer
+  sweep both return exactly this one product). This is therefore both the family's founding
+  and only model.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [cubelelo-yancheng-yan3-2017]
+    note: "Genuine, specific product-page capture (2017-04-06), filed under the retailer's own
+      'New Arrivals' category at that date — consistent with a recent-ish launch. Used as an
+      'existed by' upper bound (`qualifier: before`). TheCubicle's own spec-table 'Added:
+      2018-09-11' field on this product is the documented catalogue-migration artefact and is
+      explicitly refused, not used at any precision."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-yancheng-yan3-2020]
+    note: "Single tier 2 spec-table reading ('Dimensions: 56.0mm³'). No comparable spec table
+      was found in the Cubelelo capture's excerpt this pass."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-yancheng-yan3-2020]
+    note: "Single tier 2 spec-table reading ('Item Weight: 76.6g')."
+  /specs/core_system:
+    confidence: unknown
+    note: "TheCubicle describes a 'unique gliding feel' in general marketing prose with no term
+      mapping to a vocab:core-systems value. Researched and not established at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Neither source describes a magnetic
+      configuration for this product."
+  /description:
+    confidence: reported
+    sources: [thecubicle-yancheng-yan3-2020, cubelelo-yancheng-yan3-2017]
+    note: "Cubelelo's description content is verbatim-identical to TheCubicle's and is not
+      independent of it (§3.2); its existence and date are the independent facts this pass
+      relies on it for."

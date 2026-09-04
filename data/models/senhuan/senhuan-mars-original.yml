@@ -1,0 +1,76 @@
+# model: senhuan-mars
+# Pass 3 (model enumeration), agent D. HARD CASE resolved: the family record already asks
+# whether Mars/Mars S are one model+variant or two models. Decided here as two models — see
+# senhuan-mars-s.yml for the reasoning (a "re-designed center piece" is a mould-level change
+# per DATA_MODEL §4.2's worked decision B, not an assembly-time configuration choice).
+id: senhuan-mars-original
+entity: model
+family_id: senhuan-mars
+manufacturer_id: senhuan
+name: "SenHuan Mars"
+scope_class: core
+generation:
+  label: "Mars"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2016-10"
+  precision: month
+  qualifier: before
+specs:
+  size_mm: 56.0
+  weight_g: 172.0
+description: |-
+  TheCubicle (thecubicle-senhuan-mars-3x3-2019): "The Mars 3x3 is the first cube produced by
+  the SenHuan brand. It uses a unique ultra-small inner circle design that is touted to
+  increase stability and reduce turning resistance. It also features high-precision molded
+  3-piece corners that allows for stickerless versions. The puzzle is packaged in a large
+  plastic case." An independent non-US retailer (Cubelelo, India) found this pass carries this
+  exact product in "Pre-Order" status as of 2016-10-31 (cubelelo-senhuan-mars-2016) — nearly
+  three years before TheCubicle's own earliest found capture, and consistent with this being
+  at or very near the product's actual introduction. Cubelelo's own description text
+  ("MARS is the first product of SenHuan brand, which uses [a] unique ultra-small inner circle
+  design...") is near-identical in substance to TheCubicle's and is treated as the same
+  underlying manufacturer copy, not independent corroboration of content (RESEARCH_SPEC §3.2)
+  — only of existence and this earlier date.
+
+  Marked discontinued on every capture found this pass, at both retailers.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [cubelelo-senhuan-mars-2016]
+    note: "Genuine, specific product-page capture (2016-10-31) with the product's own status
+      field reading 'Pre-Order' — a strong signal of proximity to actual introduction, though
+      not itself a dated announcement. Used as an 'existed by' upper bound (`qualifier:
+      before`). TheCubicle's own spec-table 'Added: 2018-09-11' field on this product is the
+      documented catalogue-migration artefact and is explicitly refused, not used at any
+      precision."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-senhuan-mars-3x3-2019]
+    note: "Single tier 2 spec-table reading ('Dimensions: 56.0mm³'). Cubelelo's own earlier
+      capture did not surface a comparable spec table within the excerpt found this pass."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-senhuan-mars-3x3-2019]
+    note: "Single tier 2 spec-table reading ('Gross Weight: 172g' — a packaged, not item,
+      weight per the source's own field label; recorded as the best available figure, no
+      item-weight figure was found for this product)."
+  /specs/core_system:
+    confidence: unknown
+    note: "TheCubicle describes an 'ultra-small inner circle design' in general prose with no
+      term mapping to a vocab:core-systems value. Researched and not established at tier 1-2
+      with sufficient precision."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Neither source describes a magnetic
+      configuration for this product."
+  /description:
+    confidence: reported
+    sources: [thecubicle-senhuan-mars-3x3-2019, cubelelo-senhuan-mars-2016]
+    note: "Cubelelo's description content is not independent of TheCubicle's (§3.2); its
+      existence and date are independent facts and are what this pass relies on it for."
