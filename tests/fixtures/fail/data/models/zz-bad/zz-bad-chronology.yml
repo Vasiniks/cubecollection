@@ -1,0 +1,12 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Trips rule 40: released four years BEFORE its own family was introduced.
+# The gap is deliberately far outside every precision/circa allowance, so this fixture
+# proves the rule fires on a real conflict rather than on arithmetic slack.
+id: zz-bad-chronology
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Chronology
+scope_class: core
+released: { value: "2016", precision: year, qualifier: exact }
+status: stub

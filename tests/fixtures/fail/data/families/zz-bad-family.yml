@@ -7,4 +7,5 @@ id: zz-bad-family
 entity: family
 manufacturer_id: zz-bad-brand
 name: ZZ Bad Family
+introduced: { value: "2020", precision: year, qualifier: exact }
 status: stub

@@ -114,6 +114,54 @@ for (const rec of [...models, ...variants]) {
   }
 }
 
+// 40 — a model may not predate the family that contains it
+//
+// Pass 3 kept finding better-sourced dates than Pass 2 had, which is healthy - but it left
+// models dated years before their own family's `introduced`, and nothing caught it. A model
+// dated 2016 inside a family introduced 2020 is either a family date that needs revising or a
+// model filed in the wrong place. Either way a human should look.
+//
+// The precision allowance is the whole design problem. `2016` and `2016-10` describe the same
+// approximate moment at different precisions, and dateStart() expands both to a floor
+// (2016-01-01 and 2016-10-01), so a naive comparison fires on every year-vs-month pair in the
+// same year. That would be three false positives out of ten in this archive - enough noise to
+// get the rule ignored. So the model date is compared against the START of the family's
+// precision window, and the warning only fires when the model predates that window entirely.
+const familyById = new Map((byEntity.get('family') ?? []).map((r) => [r.doc.id, r.doc]));
+const PRECISION_WINDOW = { year: 366, quarter: 92, month: 31, day: 1 };
+const daysBetween = (a, b) => (Date.parse(b) - Date.parse(a)) / 86400000;
+
+for (const rec of models) {
+  const family = familyById.get(rec.doc.family_id);
+  const famDate = family?.introduced;
+  const modelDate = rec.doc.released ?? rec.doc.announced;
+  if (!famDate || !modelDate) continue;                    // absent dates are not a conflict
+  const mStart = dateStart(modelDate), fStart = dateStart(famDate);
+  if (!mStart || !fStart || mStart >= fStart) continue;
+
+  // Allow the coarser of the two precisions: a year-precision family date could mean any day
+  // in that year, so a model dated earlier within that window is not a contradiction.
+  let slack = Math.max(
+    PRECISION_WINDOW[famDate.precision] ?? 1,
+    PRECISION_WINDOW[modelDate.precision] ?? 1,
+  );
+  // `circa` on either side widens the window by one further step of the coarser precision.
+  // The vocabulary defines circa as "approximate", so a circa-2016 family date genuinely
+  // admits late 2015. Without this, guoguan-yuexiao-original (365 days before a circa-year
+  // family date) would fire on a one-day margin - a false positive decided by arithmetic
+  // luck rather than by evidence, which is exactly how a rule earns being ignored.
+  // ...but only when the MODEL date is itself soft. An `exact` model date is a precise claim,
+  // and widening the window for it would let a family's vagueness swallow hard evidence -
+  // qiyi-valk-3 is announced 2016-08 `exact` against a family recorded circa 2018, which is a
+  // real conflict that must stay visible.
+  const modelIsSoft = modelDate.qualifier !== 'exact';
+  if (modelIsSoft && (famDate.qualifier === 'circa' || modelDate.qualifier === 'circa')) slack *= 2;
+  if (daysBetween(mStart, fStart) <= slack) continue;
+
+  const which = rec.doc.released ? 'released' : 'announced';
+  report.warn('40', rec.file, `${which} ${modelDate.value} (${modelDate.qualifier}) predates family "${family.id}" introduced ${famDate.value} (${famDate.qualifier}). Either the family date understates its own line, or this model belongs elsewhere.`);
+}
+
 // 25 — a designated edition implies siblings
 const variantsByModel = new Map();
 for (const v of variants) {

@@ -791,6 +791,34 @@ and `scripts/check-privacy.mjs`.
     marked `x-critical`: that annotation means "always applies", and most cubes were never
     serviced — demanding provenance for an inapplicable field is how a rule gets worked around.
 
+### 7.9 Chronological coherence — advisory
+
+40. **A model may not predate the family that contains it.** *(added 2026-09-04, Pass 3)*
+    A model whose `released`/`announced` date falls before its family's `introduced` date is
+    either a family date that understates its own line, or a model filed in the wrong family.
+    Both need a human, so the rule warns rather than blocks.
+
+    The rule exists because Pass 3 found ten such cases and **nothing detected them** — a model
+    dated years before its own family was schema-valid and passed every check silently. That is
+    the same shape as the earlier rule-9 defect, where the message claimed an independence test
+    the code never performed.
+
+    **The precision allowance is the substance of the rule, not a detail.** `2016` and `2016-10`
+    describe the same approximate moment at different precisions, and `dateStart()` expands both
+    to a floor, so a naive comparison fires on every year-vs-month pair in the same year — three
+    of the archive's ten cases. A rule that noisy gets ignored, which is worse than no rule. So
+    the model date is compared against the *start of the family's precision window*, widened
+    once more when either date is `circa`, since the vocabulary defines that as "approximate".
+
+    One deliberate asymmetry: the `circa` widening applies **only when the model date is itself
+    soft**. An `exact` model date is a precise claim, and letting a family's vagueness swallow it
+    would hide the archive's clearest conflict — `qiyi-valk-3`, announced `2016-08 exact`
+    against a family recorded `circa 2018`.
+
+    Both branches carry fixtures. `zz-bad-chronology` proves the conflict fires;
+    `zz-ok-chronology-precision` exists to be **ignored**, and the selftest asserts its absence
+    from the output. A branch no fixture exercises is not a guard.
+
 ### 7.6 Human gates
 
 - Family list reviewed before model enumeration opens

@@ -72,12 +72,20 @@ console.log('\n  fail fixture — records engineered to trip named rules');
 
   const l = run('lint-semantic.mjs', { dataRoot: FAIL });
   const lintFired = rulesIn(l.out);
-  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27];
+  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40];
   const lintMissing = lintExpected.filter((r) => !lintFired.has(r));
   lintMissing.length === 0
     ? ok('semantic warnings fire', `${lintExpected.join(', ')}`)
     : bad('semantic warnings fire', `never fired: ${lintMissing.join(', ')}`);
   l.code === 0 ? ok('lint never blocks') : bad('lint never blocks', `exit ${l.code}`);
+
+  // Rule 40's precision allowance is the part that can silently rot. Asserting that "40" fired
+  // proves only the conflict branch; a broken allowance would fire on every year-vs-month pair
+  // and still pass that check. zz-ok-chronology-precision exists to be IGNORED, so assert its
+  // absence too - the same lesson as rule 9, where a branch no fixture exercised was no guard.
+  !/zz-ok-chronology-precision[^\n]*\[40\]|\[40\][^\n]*zz-ok-chronology-precision/.test(l.out)
+    ? ok('rule 40 precision allowance holds', 'year-vs-month pair not flagged')
+    : bad('rule 40 precision allowance holds', 'fired on a model within its family precision window');
 }
 
 // ---------------------------------------------------------------- 2b. vocabulary injection

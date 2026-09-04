@@ -1,0 +1,13 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Must NOT trip rule 40. Dated 2020-06 against a family introduced "2020" at year precision:
+# the year window opens 2020-01-01, so this model is LATER, not earlier. Its sibling
+# zz-ok-chronology-slack covers the earlier-but-within-window case. Together they guard the
+# precision allowance that keeps the rule from firing on year-vs-month noise.
+id: zz-ok-chronology-precision
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ OK Chronology Precision
+scope_class: core
+released: { value: "2020-06", precision: month, qualifier: exact }
+status: stub
