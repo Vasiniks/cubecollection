@@ -1,0 +1,71 @@
+# model: mfjs-meilong-3x3
+# Pass 3 (model enumeration). Base MeiLong 3x3 generation. See
+# research/qc/pass3-b2-agent-b-diansheng-mfjs.md for the full Meilong succession reasoning,
+# including why "Meilong 3x3 M" is REJECTED as a model (variant of this one).
+id: mfjs-meilong-3x3
+entity: model
+family_id: mfjs-meilong
+manufacturer_id: mfjs
+name: "MFJS MeiLong 3x3"
+scope_class: core
+generation:
+  label: "MeiLong 3"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.5
+  weight_g: 62.4
+released:
+  value: "2019-04-09"
+  precision: day
+  qualifier: exact
+description: |-
+  Per SpeedCubeShop's own product page (speedcubeshop-mofang-jiaoshi-meilong-3x3-product): "The
+  MoFang JiaoShi MeiLong 3x3 is a fantastic option for someone looking for a lower priced
+  speedcube! The turning is smooth and the stable mechanism responds well to speedsolving!"
+  Spec line: "Size: 55.5mm | Weight 2.2oz | Released: 4/9/19". The same page lists both
+  "Magnetic" and "Non-Magnetic" purchase options for this one product -- read as a variant
+  difference, not a further model. The Speedsolving wiki's "Meilong 3x3 M -- An updated version
+  of the Meilong 3 with magnets" (speedsolving-wiki-mofang-jiaoshi, tier 4) describes the same
+  magnetic option in different words; no separate "Meilong 3x3 M" model is created.
+
+  `weight_g` is recorded from "2.2oz" (~62.4g) as the value on this product's own original
+  listing, but a later retailer source (speedcubeshop-moyu-meilong-3x3-v2-magnetic-product)
+  gives a conflicting 69g for what it calls "V1" of this same product -- see the disputed
+  attestation; the field is not treated as settled at either value.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product]
+  /specs/weight_g:
+    confidence: disputed
+    disputed:
+      - value: 62.4
+        sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product]
+        confidence: probable
+        note: "'Weight 2.2oz' on the product's own 2019 listing, converted (1 oz = 28.35g)."
+      - value: 69
+        sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+        confidence: probable
+        note: "Given as the 'V1' column of a 2025 version-comparison table on a different,
+          later product page. Possibly a different weighed configuration (e.g. magnetic vs.
+          non-magnetic), an undocumented production change over six years, or a retailer
+          inconsistency; not resolved this pass."
+    note: "`specs/weight_g` is set to 62.4 (the earlier, product-specific listing) so the field
+      is populated per rule 5, but confidence is `disputed` and both candidates are retained in
+      full rather than silently choosing one."
+  /released:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product]
+    note: "'Released: 4/9/19' is a distinct field from this archive's documented 'Added:'
+      catalogue-migration artifact and is treated as an admissible explicit dated statement."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product]
+    note: "'MeiLong 3' / 'MeiLong 3x3' is the manufacturer's own retail naming, per the
+      retailer's product title, but no first-party MFJS source confirms an explicit generation
+      number."
+  /description:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product, speedsolving-wiki-mofang-jiaoshi]

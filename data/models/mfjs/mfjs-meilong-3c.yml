@@ -1,0 +1,64 @@
+# model: mfjs-meilong-3c
+# Pass 3 (model enumeration). Second MeiLong 3x3 generation.
+id: mfjs-meilong-3c
+entity: model
+family_id: mfjs-meilong
+manufacturer_id: mfjs
+name: "MFJS MeiLong 3c"
+scope_class: core
+generation:
+  label: "3c"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.0
+  weight_g: 62.4
+released:
+  value: "2019-11-13"
+  precision: day
+  qualifier: exact
+description: |-
+  Per SpeedCubeShop's own product page (speedcubeshop-mofang-jiaoshi-meilong-3c-product): "The
+  MoFang JiaoShi MeiLong 3c 3x3 is a slightly updated version of the popular MeiLong 3x3. The 3c
+  offers a more stable design, smoother turning, and a slightly lighter feel." Spec line: "Size:
+  55mm | Weight: 2.2oz | Released: 11/13/19". "A more stable design" is read as a genuine
+  design-generation claim (not merely a resold configuration) under this archive's model/
+  variant boundary rule, at the retailer's own tier 2, hence admitted as a separate model
+  succeeding the base MeiLong 3x3 rather than folded into it.
+
+  `weight_g` (2.2oz, ~62.4g) is recorded here at `probable` without the disputed treatment
+  applied to the base MeiLong 3x3 record, since no conflicting figure for 3c specifically was
+  found this pass.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product]
+    note: "'Weight: 2.2oz', converted (1 oz = 28.35g)."
+  /released:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product]
+    note: "'Released: 11/13/19' is a distinct, product-specific date from this retailer's own
+      'Released: 4/9/19' for the base MeiLong 3x3 -- not a shared repeated value -- and is
+      treated as an admissible explicit dated statement rather than a catalogue artifact."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product]
+    note: "'3c' is the manufacturer's own retail naming per the retailer's product title; no
+      first-party MFJS source confirms an explicit generation number."
+  /description:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product]
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product, speedcubeshop-mofang-jiaoshi-meilong-3c-product]
+    note: "No source states a direct succession sentence; inferred from the retailer's own
+      'updated version of the popular MeiLong 3x3' framing and the two products' release-date
+      ordering (2019-04 before 2019-11)."
+relationships:
+  - type: succeeds
+    target: mfjs-meilong-3x3
+    target_entity: model

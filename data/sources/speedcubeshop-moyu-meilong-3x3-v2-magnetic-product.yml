@@ -1,0 +1,44 @@
+# source: speedcubeshop-moyu-meilong-3x3-v2-magnetic-product
+# SpeedCubeShop's own product page for the "MoYu MeiLong 3x3 V2 (Magnetic)", captured
+# 2025-05-21. Tier 2, first-party retailer copy, filed under this retailer's "MoYu" brand
+# grouping rather than "MoFang JiaoShi" -- the same attribution drift already documented at
+# mfjs-meilong.yml via speedcubeshop-mfjs-meilong-collections. Cited here only for the V2
+# design-generation claim and its own spec table, not for the brand-attribution question.
+id: speedcubeshop-moyu-meilong-3x3-v2-magnetic-product
+entity: source
+kind: retailer
+title: "MoYu MeiLong 3x3 V2 (Magnetic) - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250521153557id_/https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic"
+excerpt: |-
+  Product Description: "MoYu MeiLong 3x3 V2 (Magnetic) is a lightweight upgrade to one of the
+  most popular entry-level cubes ever." Key features: "Factory-installed magnets for more
+  control", "Reinforced core design", "Lightweight". A "Version comparison" table on the same
+  page gives: V1 weight 69g, frosted finish, accessories included; V2 (Lite) weight 65g,
+  frosted, no accessories; V2 (Standard) weight 65g, frosted, accessories included; V2 (UV
+  Coated) weight 66g, UV coated, accessories included -- all four sharing the stated "Dragon
+  scale" piece design and reinforced core listed under "Key features"/"Overview". Product
+  Details block (for the specific V2 Magnetic/Standard SKU this page sells): "Type: 3x3",
+  "Brand: MoYu", "Size: 55.5 mm", "Weight: 66 g", "Released: 2024-04-18".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentences, the version-comparison table, and
+  the Product Details block verbatim/condensed."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. 'Dragon
+  scale piece design' plus 'Reinforced core design', stated as differing from the V1 column in
+  the same comparison table, is direct tier 2 evidence of a distinct design generation, not
+  merely a sold configuration -- the basis for admitting V2 as a separate model under
+  mfjs-meilong. The V1 weight given here (69g) conflicts with the 2.2oz (~62g) given by the
+  original 2019 MeiLong 3x3 product page (speedcubeshop-mofang-jiaoshi-meilong-3x3-product);
+  recorded as a disputed spec on the model record rather than silently reconciled, since it is
+  unclear whether this reflects a genuine undocumented production change, a different weighed
+  configuration (magnetic vs. non-magnetic), or simple retailer inconsistency six years apart.
+  The 'Released: 2024-04-18' field is an explicit dated statement, distinct in form and value
+  from this archive's documented 'Added:' artifact pattern, and treated as admissible."
+status: sourced

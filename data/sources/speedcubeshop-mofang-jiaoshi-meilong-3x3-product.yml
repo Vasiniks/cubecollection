@@ -1,0 +1,32 @@
+# source: speedcubeshop-mofang-jiaoshi-meilong-3x3-product
+# SpeedCubeShop's own product page for the base MoFang JiaoShi MeiLong 3x3, captured
+# 2019-07-17. Tier 2, first-party retailer copy. Pass 3 (model enumeration) -- the source that
+# lets mfjs-meilong's base 3x3 generation clear the model-admission bar.
+id: speedcubeshop-mofang-jiaoshi-meilong-3x3-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MeiLong 3x3 - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/mofang-jiaoshi-meilong-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190717152254id_/https://speedcubeshop.com/products/mofang-jiaoshi-meilong-3x3"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MeiLong 3x3 is a fantastic option for someone
+  looking for a lower priced speedcube! The turning is smooth and the stable mechanism responds
+  well to speedsolving!" Spec line: "Size: 55.5mm | Weight 2.2oz | Released: 4/9/19". The
+  purchase options on this same page list both "Magnetic" and "Non-Magnetic" configurations of
+  this one product -- read as a variant-level difference (magnet configuration sold as an
+  option of one product), not a further model.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-line fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec line. The
+  'Released: 4/9/19' field is an explicit dated statement distinct from this archive's
+  documented 'Added:' catalogue-migration artifact pattern (a different field, different
+  wording, and not one of the three documented artifact dates), so it is treated as admissible
+  release-date evidence at `probable` confidence rather than discarded as an artifact."
+status: sourced
