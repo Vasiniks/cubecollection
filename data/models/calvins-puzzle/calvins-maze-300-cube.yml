@@ -1,0 +1,71 @@
+# model: calvins-maze-300-cube
+# Pass 3 (model enumeration), Agent D. Single model under `calvins-bandaged-3x3-maze-300`.
+# scope_class: conditional — see justification below. Note the pass-2 family record already
+# flagged this specific product as a candidate for DATA_MODEL section 4.3's aftermarket
+# modified_from/service framing rather than an independent design, since it is physically "a
+# standard 3x3 with 3D printed tiles attached" and the base cube's own manufacturer is unstated.
+# That framing is NOT applied here: no source identifies the specific base cube/variant this
+# was built from, which section 4.3 requires ("a `modified_from` relationship to the exact base
+# variant"). Recorded as its own model per the retailer's own distinct product naming and
+# attribution, with the open question preserved rather than silently resolved either way.
+id: calvins-maze-300-cube
+entity: model
+family_id: calvins-bandaged-3x3-maze-300
+manufacturer_id: calvins-puzzle
+name: "Calvin's Bandaged 3x3 (Maze-300 Cube)"
+aliases:
+  - "Maze-300 Cube"
+scope_class: conditional
+scope_justification: |-
+  "Bandaged" cubes are a recognised, named twisty-puzzle mechanism category with its own
+  documented permutation-group significance, not a marketing label invented for this product:
+  Wikipedia's general combination-puzzle reference (wikipedia-combination-puzzle, tier 4,
+  corroboration only) states "A bandaged cube is a cube where some of the pieces are stuck
+  together" and that puzzles built this way "are often called 'bandaged' cubes." TheCubicle's
+  own product description (thecubicle-calvins-bandaged-3x3-maze-300, tier 2) matches this
+  definition directly, not loosely: "a standard 3x3 with 3D printed tiles attached to the
+  pieces. These tiles bandage some of the pieces, restricting movement." This is a clean,
+  specific match between a documented category and this product's own described mechanism
+  (contrast calvins-full-function-crazy-3x3 and calvins-crazy-mirror-3x3x3, both left
+  `reference_only` this pass because the closest documented category found did not cleanly
+  match their described mechanisms). The product is also sold under its own distinct name
+  ("Maze-300 Cube") by a specialist puzzle manufacturer, continuously catalogued by at least
+  one major retailer since at least 2023. This clears the "documented... place in [puzzle]
+  history" bar in the pass-3 admission policy section 2, rather than resting on "it is
+  unusual."
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+description: |-
+  TheCubicle's own product page (thecubicle-calvins-bandaged-3x3-maze-300, tier 2): "The
+  Calvin's Bandaged 3x3 (Maze-300 Cube) is a standard 3x3 with 3D printed tiles attached to the
+  pieces. These tiles bandage some of the pieces, restricting movement. This cube is almost as
+  difficult to scramble as it is to solve!" Filed under the retailer's own "Shape Mods" type,
+  "Manufacturer: Calvin's Puzzle."
+
+  **Open modification/service question, preserved, not resolved.** The pass-2 family record
+  flagged that this is physically described as a base 3x3 with attached tiles, raising whether
+  DATA_MODEL section 4.3's `modified_from`/`service` framing fits better than an independent
+  model. That framing requires identifying "the exact base variant," which no source located
+  this pass does — the base cube's own manufacturer and identity are unstated. Recorded here as
+  its own model under Calvin's Puzzle per the retailer's own product naming and manufacturer
+  attribution; a future pass with a source identifying the specific base cube should revisit
+  this as a possible `modified_from` relationship instead.
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: reported
+    sources: [thecubicle-calvins-bandaged-3x3-maze-300, wikipedia-combination-puzzle]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-calvins-bandaged-3x3-maze-300]
+  /description:
+    confidence: reported
+    sources: [thecubicle-calvins-bandaged-3x3-maze-300]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found. Field left unset rather than invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The only capture located (2023-02-05) is a Wayback crawl
+      timestamp, not a release-date statement — not used as a date per the pass-3 admission
+      policy section 3. Left unset."
