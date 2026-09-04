@@ -1,0 +1,40 @@
+# source: particula-tech-com-allcubes-2024
+# Particula's own current (2024) "All Cubes" storefront collection page. Found during Agent C's
+# Pass-3-B4 identity investigation (Question 2: GoCube X vs Rubik's Connected X). Tier 1,
+# first-party. Establishes what Particula itself was directly selling under its own "GoCube"
+# shop category at this date: no "GoCube-X" and no "Rubik's Connected X" SKU appears anywhere
+# on this page — only "GoCube Edge Full Pack," "GoCube 2x2," "Rubik's Connected" (no suffix),
+# "GoCube Bundle Pack," and "Rubik's Connected BOGO DEAL."
+id: particula-tech-com-allcubes-2024
+entity: source
+kind: manufacturer_official
+title: "All Cubes – Particula"
+publisher: "Particula"
+url: "https://particula-tech.com/collections/all-cubes"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240616071135id_/https://particula-tech.com/collections/all-cubes"
+excerpt: |-
+  Site navigation and collection listing: "GoCube Edge Full Pack / GoCube 2×2 / Rubik's
+  Connected / GoCube Bundle Pack / Rubik's Connected BOGO DEAL / GoCube Accessories." Prices
+  shown: "GoCube Edge Full Pack: Sale price $64.95 Regular price $99.95 / GoCube 2×2: Sale
+  price $44.95 Regular price $59.95 / Rubik's Connected: Sale price $44.95 Regular price
+  $79.95 / GoCube Bundle Pack: Sale price $99.95 Regular price $159.95 / Rubik's Connected BOGO
+  DEAL: Sale price $89.95 Regular price $159.95." No "GoCube-X" and no "Rubik's Connected X" SKU
+  appears on this page.
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 1, first-party. Absence of "GoCube-X" from Particula's own direct storefront by mid-2024
+  is read as evidence that Particula itself had stopped selling this SKU directly by this date
+  (consistent with getgocube-com-2021-gocube-x-product's "FIRST BATCH... SOLD OUT" framing of
+  GoCube-X as a limited-run budget line, not a permanent flagship addition) — NOT read as
+  evidence the product never existed, and not read as evidence it was "replaced" by anything
+  named "X" on the Rubik's side, since "Rubik's Connected" (no suffix) is what remains listed
+  here. This absence is used only to establish that neither "GoCube-X" nor "Rubik's Connected
+  X" was part of Particula's own current catalogue at this date; both names continued to appear
+  only via Rubik's own site (for Connected X) and third-party retailers (for both) — see
+  research/qc/pass3-b4-agent-c-identity.md Question 2.
+status: sourced

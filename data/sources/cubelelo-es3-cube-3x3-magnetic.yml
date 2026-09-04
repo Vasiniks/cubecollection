@@ -1,0 +1,41 @@
+# source: cubelelo-es3-cube-3x3-magnetic
+# Cubelelo (India retailer) product page for "ES3 Cube 3x3 (Magnetic)". Found during Agent C's
+# Pass-3-B4 identity investigation (Question 1: ESCube naming) as the non-US/English-market
+# retailer check required by the task brief. A third, independent retailer's naming and brand
+# field, agreeing with SpeedCubeShop's "ES Cube" brand / "ES3" product-name convention rather
+# than TheCubicle's "ESCube"-prefixed titling.
+id: cubelelo-es3-cube-3x3-magnetic
+entity: source
+kind: retailer
+title: "Buy ES3 Cube 3x3 (Magnetic) Speed Cube Online | Cubelelo"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/es3-cube-3x3-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250708122951id_/https://www.cubelelo.com/products/es3-cube-3x3-magnetic"
+excerpt: |-
+  Page title: "Buy ES3 Cube 3x3 (Magnetic) Speed Cube Online | Cubelelo". Product name: "ES3
+  Cube 3x3 (Magnetic)", sold in "Standard" and "8-Core Magnets" variants. Description: "The ES3
+  Cube 3x3 offers a solid speedcubing experience with two performance-focused variants...
+  Factory-Installed Magnetic System (Varies by Variant)." "Variant Comparison" table (Standard /
+  8-Core Magnets / 20-Core Magnets): "Magnet Placement: Edge-Corner Magnets / Edge-Corner + 8
+  Core Magnets / Edge-Corner + 20 Core Magnets"; "Total Magnet Count: 48 / 56 / 68." Structured
+  product-detail block: "Brand: ES Cube / M.R.P.: ₹3999.00 / Generic Name of Product: Plastic
+  Puzzle / Material: ABS Plastic / Product Weight: 79 grams / Package Weight: 124 grams /
+  Imported & Marketed By: Brainlytic Solutions Pvt Ltd, Sunder Nagar, Raipur CG India."
+accessed: "2026-09-04"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 retailer, India market, structured "Brand: ES Cube" field (independent of and
+  consistent with SpeedCubeShop's "ES Cube" naming, not TheCubicle's "ESCube" spelling) and an
+  independent "Total Magnet Count" table with different absolute figures from SpeedCubeShop's
+  own version-comparison table for the same three named configurations (Cubelelo: 48/56/68;
+  SpeedCubeShop's escube-es3-v1.yml source gives 48/64/76) — a genuine unresolved cross-retailer
+  numeric discrepancy, not adjudicated here, flagged for the model/variant record. "Imported &
+  Marketed By: Brainlytic Solutions Pvt Ltd" names an India-specific importer, not a
+  manufacturing or brand-ownership claim — read as local distribution only. This is the
+  non-US/English retailer check required by the Question 1 task brief; no ESCube-branded "Air"
+  listing was found on Cubelelo (a gap, not evidence the line is absent from that market).
+status: sourced

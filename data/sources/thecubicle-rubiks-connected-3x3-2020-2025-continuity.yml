@@ -1,0 +1,50 @@
+# source: thecubicle-rubiks-connected-3x3-2020-2025-continuity
+# TheCubicle's own "Rubik's Connected 3x3 Smart Cube" listing, captured at two widely-separated
+# dates (2023-06-12 and 2025-06-14, spanning the period during which Rubik's own site
+# (rubiks.com) renamed its smart-cube marketing page from "Rubik's Connected" to "Rubik's
+# Connected X," see rubiks-com-connected-x-product-2025, captured 2025-02-25). Found during
+# Agent C's Pass-3-B4 identity investigation (Question 2). Decisive continuity evidence: this
+# single TheCubicle catalogue listing shows an unchanged title, unchanged "Added: 2020-09-01"
+# catalogue date, and identical spec-table figures (57.0mm / 173g gross / 112.0g item /
+# Magnetic) across both captures — TheCubicle never renamed this listing to "Connected X" and
+# never changed its recorded specs through the period of Rubik's own rebrand.
+id: thecubicle-rubiks-connected-3x3-2020-2025-continuity
+entity: source
+kind: retailer
+title: "Rubik's Connected 3x3 Smart Cube – TheCubicle (continuity capture)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/rubiks-connected-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250614175206id_/https://www.thecubicle.com/products/rubiks-connected-3x3"
+excerpt: |-
+  Page title (unchanged across the 2023-06-12 and 2025-06-14 captures checked): "Rubik's
+  Connected 3x3 Smart Cube". Product Description: "The Rubik's Connected Cube is the newest
+  smart cube on the market! Provided through an official partnership with Rubik's Brand Ltd.,
+  this puzzle and accompanying app tracks all sorts of useful statistics... The Rubik's
+  Connected Cube comes with a USB charger and a 1-year warranty by the manufacturer." Structured
+  "Product Specifications" table, identical in both captures: "Manufacturer: Rubik's / Type:
+  3x3 / Added: 2020-09-01 / Gross Weight: 173g / Dimensions: 57.0mm 3 / Magnets: Magnetic / Item
+  Weight: 112.0g." A customer review present in both captures (David T., United States, Tier 5,
+  not treated as a source claim): "I have both the GoCube and the Rubik's Connected Cube... I'm
+  glad there is a regular shaped cube that uses the same technology as the GoCube."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 retailer, structured spec table, unusually strong continuity evidence: the identical
+  "Added: 2020-09-01" catalogue date and identical Dimensions/Weight/Magnets fields recur
+  verbatim in a capture taken nearly four months AFTER Rubik's own site had already switched to
+  calling the current generation "Rubik's Connected X" (rubiks-com-connected-x-product-2025,
+  2025-02-25) — meaning TheCubicle continued selling and describing the same catalogue SKU
+  under the un-suffixed "Rubik's Connected" name, with a USB-charger/rechargeable power
+  description, throughout this period. This is read as evidence that TheCubicle's own inventory
+  is the original magnetic/rechargeable generation and either (a) TheCubicle had simply not
+  picked up the "ConnectedX" naming or a distinct ConnectedX SKU by this date (retailer lag), or
+  (b) the "Connected"/"Connected X" split found at SpeedCubeShop
+  (speedcubeshop-rubiks-connected-3x3-magnetic-2025 vs. speedcubeshop-rubiks-connectedx-3x3-2025)
+  reflects two genuinely different SKUs that TheCubicle chooses only to carry one of — this
+  source cannot itself distinguish between those two readings, and neither is asserted as
+  settled. See research/qc/pass3-b4-agent-c-identity.md Question 2.
+status: sourced

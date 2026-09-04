@@ -1,0 +1,44 @@
+# source: thecubicle-escube-es3-3x3-magnetic
+# TheCubicle's own product page for "ESCube ES3 3x3 (Magnetic)" (the standard/base configuration
+# of the ES3 line). Found during Agent C's Pass-3-B4 identity investigation (Question 1: ESCube
+# naming). Independently corroborates escube-es3-v1.yml's core_system attestation (previously
+# resting on SpeedCubeShop alone) with a second, independent Tier 2 retailer, and gives
+# TheCubicle's own "Manufacturer: ESCube" field and "Added: 2025-04-08" catalogue date for this
+# specific configuration.
+id: thecubicle-escube-es3-3x3-magnetic
+entity: source
+kind: retailer
+title: "ESCube ES3 3x3 (Magnetic) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/escube-es3-3x3-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250415112630id_/https://www.thecubicle.com/products/escube-es3-3x3-magnetic?pr_prod_strat=collection_fallback&pr_rec_id=3512a557e&pr_rec_pid=7578031390803&pr_ref_pid=7579874361427&pr_seq=uniform"
+excerpt: |-
+  Page title: "ESCube ES3 3x3 (Magnetic)". Product Description: "The ESCube ES3 3x3 (Magnetic)
+  is a high-speed 3x3 built for competitive cubers, featuring a Dual Adjustment System for
+  tool-free tuning of tension and spring compression. With track-shaped magnets and a 90° full
+  corner-cutting design (55° forward 35° reverse), turning is ultra-smooth and precise. The
+  ES3's Dual Adjustment System is specifically designed so that tension and spring compression
+  are completely independent... omnidirectional magnetic system ensures perfect alignment
+  between corners, edges, and core." Structured "Product Specifications" table: "Manufacturer:
+  ESCube / Type: 3x3 Speed Cubes / Added: 2025-04-08 / Gross Weight: 122g / Magnets: Magnetic."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 retailer, structured spec-table field ("Manufacturer: ESCube") plus independent
+  descriptive prose corroborating SpeedCubeShop's "dual-adjustment core for independent spring
+  compression & tension" claim for the same ES3 line (speedcubeshop-es3-debut-brand-2025) —
+  two independent Tier 2 publishers agreeing on the mechanism, per DATA_MODEL rule 9. Note this
+  page's title uses "ESCube ES3" (brand-word "ESCube" prefixed onto the product name "ES3"),
+  the same pattern TheCubicle uses on its "ESCube Air" listing — i.e. TheCubicle's own naming
+  convention treats "ESCube" as a brand/manufacturer tag applied uniformly to both of its
+  ES3 and Air product-line pages, not as a name asserting these are two unrelated brands. See
+  research/qc/pass3-b4-agent-c-identity.md Question 1 for the full naming-boundary analysis.
+  "Gross Weight: 122g" here is notably different from SpeedCubeShop's "77.6g" for what is
+  presented as the same base/Standard configuration — consistent with the same gross-vs-item
+  weight-convention gap already documented on escube-es3-v1.yml and escube-air-v1.yml; not
+  adjudicated here.
+status: sourced

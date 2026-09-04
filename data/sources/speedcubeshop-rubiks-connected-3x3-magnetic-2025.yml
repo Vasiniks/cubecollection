@@ -1,0 +1,46 @@
+# source: speedcubeshop-rubiks-connected-3x3-magnetic-2025
+# SpeedCubeShop's current (2025) product page for "Rubik's Connected 3x3 (Magnetic) - Bluetooth
+# Smart Cube" — the original, magnetic, rechargeable generation, sold concurrently with a
+# separate "Rubik's ConnectedX" listing (speedcubeshop-rubiks-connectedx-3x3-2025). Found
+# during Agent C's Pass-3-B4 identity investigation (Question 2: GoCube X vs Rubik's Connected
+# X). Key discriminating source: gives a structured "Magnets: Moderate" field and "Brand:
+# GoCube" field for this generation, contrasted directly against ConnectedX's "Magnets: None"
+# and "Brand: Spin Master" on the sibling listing.
+id: speedcubeshop-rubiks-connected-3x3-magnetic-2025
+entity: source
+kind: retailer
+title: "Rubik's Connected 3x3 (Magnetic) - Bluetooth Smart Cube - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/rubiks-connected-3x3-magnetic-bluetooth-smart-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250629030558id_/https://speedcubeshop.com/products/rubiks-connected-3x3-magnetic-bluetooth-smart-cube"
+excerpt: |-
+  Page title: "Rubik's Connected 3x3 (Magnetic) - Bluetooth Smart Cube". Description: "Rubik's
+  Connected 3x3 (Magnetic) - Bluetooth Smart Cube is the result of a partnership with the
+  official Rubik's Brand company and smartcube pioneer, GoCube. While the exterior may appear
+  to resemble an original Rubik's Cube, the mechanism features factory-installed magnets and
+  amazing turning... This product is covered by a 1-year manufacturer warranty through GoCube."
+  A "Version" selector on this listing offers two options: "Connected X" and "Connected" (this
+  page being the "Connected" option; the "Connected X" option links to a separate product page,
+  speedcubeshop-rubiks-connectedx-3x3-2025). Structured "Product Details" block: "Type: 3x3 /
+  Brand: GoCube / Magnets: Moderate / Size: 57 mm / Weight: 110 g / Released: 2020-09-01."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 retailer, structured spec fields. "Released: 2020-09-01" matches TheCubicle's
+  independently-recorded "Added: 2020-09-01" for its own long-running "Rubik's Connected 3x3"
+  listing (thecubicle-rubiks-connected-3x3-2020-2025-continuity) almost exactly — both
+  retailers' own catalogue-addition dates agree to the day, strong evidence this is the same
+  underlying product SKU rather than a coincidence. "Brand:
+  GoCube" (not "Rubik's" or "Spin Master") is SpeedCubeShop's own internal brand-taxonomy
+  assignment for this generation — contrasted directly against "Brand: Spin Master" on the
+  sibling "ConnectedX" listing found in the same session, a retailer-internal inconsistency
+  used as one (non-decisive) discriminator in the Question 2 analysis, not treated as a claim
+  about legal manufacturing. The "Version: Connected X / Connected" selector shared by both
+  listings is read as a Shopify-theme cross-linking convenience between two separately-priced,
+  separately-specified product pages, not as evidence the two are one variant-level SKU — see
+  research/qc/pass3-b4-agent-c-identity.md Question 2 for the full reasoning.
+status: sourced
