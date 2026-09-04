@@ -33,9 +33,9 @@ finding that CubeZZ carries none of MF8/HuaMeng/ESCube's products — per RESEAR
 pass with more budget should find CubeZZ's actual numeric-id product-page URL scheme (e.g. via
 its sitemap or category-listing pages) before concluding anything about its catalogue.
 
-## SpeedCubeShop "ES3 Air" vs TheCubicle "ESCube Air" — see the escalation in escube-air.yml
+## SpeedCubeShop "ES3 Air" vs TheCubicle "ESCube Air" — see the escalation in escube-air-v1.yml
 
-Recorded formally as an escalation in `data/models/escube/escube-air.yml`'s header comment and
+Recorded formally as an escalation in `data/models/escube/escube-air-v1.yml`'s header comment and
 description, not repeated in full here. Short version: SpeedCubeShop's product naming treats
 "Air" as an edition of the "ES3" line; TheCubicle's treats "Air" as its own ESCube-branded
 line. This is evidence in tension with the frozen `escube-air` / `escube-es3` family split.
@@ -66,7 +66,7 @@ all three brands per §3.6a's explicit instruction to record the outcome either 
 - `speedcubeshop.com/products/mf8*`, `/mf8-crazy-3x3*` — confirms per-planet and bundle SKUs
   for the "Plus Planet Series" generation (see mf8-crazy-3x3-plus-planet-series.yml).
 - `thecubicle.com/products/escube*`, `speedcubeshop.com/products/es3*`,
-  `speedcubeshop.com/products/escube*` — see escube-es3.yml / escube-air.yml.
+  `speedcubeshop.com/products/escube*` — see escube-es3.yml / escube-air-v1.yml.
 
 ## Wayback/CDX reliability this session
 
