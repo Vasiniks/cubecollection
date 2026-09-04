@@ -1,0 +1,90 @@
+# model: mojue-m3
+# Pass 3 (model enumeration), agent D. MoJue's sole documented product and this family's only
+# model — a zero-generation-split, single-model family (the family record's own reasoning:
+# only one MoJue-branded 3x3 slug found on TheCubicle). An independent non-US retailer found
+# this pass (Cubezz) shows the product in established retail circulation over three years
+# before TheCubicle's own capture, which the family record's "circa 2020" reading does not
+# reflect (out of this pass's write lane to correct at the family level).
+id: mojue-m3-standard
+entity: model
+family_id: mojue-m3
+manufacturer_id: mojue
+name: "MoJue M3"
+scope_class: core
+generation:
+  label: "M3"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2017-04"
+  precision: month
+  qualifier: before
+specs:
+  size_mm: 56.0
+  weight_g: 73.0
+description: |-
+  Cubezz.com (cubezz-mojue-m3-2017), captured 2017-04-02: "MoJue M3 Speed Cube is the first
+  product of MoJue brand, which has a great innovation. Unique round-square center combines
+  with arc surface on the bottom, brings a good stability and corner-cutting, decreasing the
+  frequency of corner-twist." The listing already carries a customer rating, an established
+  SKU (MJ620100), and bulk-order pricing tiers at this capture — evidence of real, established
+  retail circulation, not a pre-order.
+
+  TheCubicle's own, much later capture (thecubicle-mojue-m3-2020, crawled 2020-09-27) instead
+  frames the product as new: "an exciting new high-end MoYu sub-branded 3x3 that will soon hit
+  the market and is now available for pre-order." Read together, this most plausibly reflects
+  TheCubicle's own later pickup of an already-existing (2017) product — a restock or a first
+  listing at that specific retailer — rather than a genuine ~2020 introduction. This model's
+  `released` field follows the earlier, better-evidenced Cubezz date; the family record's own
+  "circa 2020" `introduced` reading rests on TheCubicle alone and is not altered here (families
+  are frozen for this pass).
+
+  No second MoJue-branded 3x3, predecessor, or successor was found this pass (product-slug
+  sweep of `thecubicle.com/products/mojue*` and a domain-wide term sweep of `cubezz.com`, both
+  returning exactly one MoJue 3x3). This is therefore both the family's founding and only
+  model.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [cubezz-mojue-m3-2017]
+    note: "Genuine, specific product-page capture (2017-04-02, not a bulk 'Added' field), used
+      as an 'existed by' upper bound (`qualifier: before`). TheCubicle's own spec-table 'Added:
+      2018-09-11' field on this product is the documented catalogue-migration artefact and is
+      explicitly refused, not used at any precision. TheCubicle's own prose ('will soon hit the
+      market... pre-order' as of its 2020-09-27 capture) is not read as a competing dated claim
+      — it names no date and is treated as this retailer's own later, less-informed framing,
+      not a genuine disagreement requiring a `disputed` block."
+  /generation/basis:
+    confidence: uncertain
+    note: "'M3' is MoJue's own retail product name (the only name either retailer uses), so
+      `manufacturer_declared` is used, though no source frames it explicitly as a generation
+      label rather than simply the product's name — this is this family's only model, so the
+      generation/ordinal distinction is not meaningfully tested."
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-mojue-m3-2017]
+    note: "Single tier 2 source ('Si z e: 56*56*56 mm')."
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubezz-mojue-m3-2017]
+    note: "Single tier 2 source, Primary Color configuration ('Weight: 73g'). TheCubicle's own
+      spec table (thecubicle-mojue-m3-2020) gives 'Gross Weight: 159g / Item Weight: 75.2g' for
+      its own (unstated) configuration — close to, not contradicting, Cubezz's 73g; 75.2g is
+      not separately recorded as a dispute given the likely different colourway/era."
+  /specs/core_system:
+    confidence: unknown
+    note: "Cubezz describes a 'round-square center' and 'high strength core' in general prose
+      with no term mapping to a vocab:core-systems value. Researched and not established at
+      tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Neither source describes a magnetic
+      configuration for this product at all."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No magnetized MoJue M3 SKU was found at either
+      retailer this pass."
+  /description:
+    confidence: reported
+    sources: [cubezz-mojue-m3-2017, thecubicle-mojue-m3-2020]

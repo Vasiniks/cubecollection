@@ -1,0 +1,108 @@
+# model: guoguan-yuexiao-edm
+# Pass 3 (model enumeration), agent D. Third GuoGuan YueXiao generation. TheCubicle states the
+# EDM introduces "the world's first adjustable (not interchangeable) magnetic system" — an
+# adjustable-in-place magnet mechanism built into the piece, a design/mould-level change from
+# the Pro generation's fixed magnet slots, not a sold configuration (DATA_MODEL §4.2). The
+# "world's first" framing is comparative/superlative marketing copy (RESEARCH_SPEC §3.3) and is
+# not treated as verified; the underlying "adjustable... magnetic system" spec claim is used at
+# tier 2 confidence.
+id: guoguan-yuexiao-edm
+entity: model
+family_id: guoguan-yuexiao
+manufacturer_id: guoguan
+name: "GuoGuan YueXiao EDM"
+scope_class: core
+generation:
+  label: "EDM"
+  ordinal: 3
+  basis: manufacturer_declared
+released:
+  value: "2019"
+  precision: year
+  qualifier: before
+specs:
+  size_mm: 56.0
+  magnet_architecture: adjustable
+description: |-
+  TheCubicle (thecubicle-guoguan-yuexiao-edm-2020): "The GuoGuan YueXiao EDM is the latest 3x3
+  released by GuoGuan. This puzzle features fantastic innovations like the world's first
+  adjustable (not interchangeable) magnetic system." The "adjustable (not interchangeable)"
+  language, and the vocab:magnet-configurations `adjustable` value it maps onto, describe a
+  magnet mechanism the user can tune without swapping parts — a mechanism-level difference from
+  the Pro generation's fixed, user-installable-or-not magnet slots, hence a new model rather
+  than a variant of Pro. The "world's first" superlative is marketing copy (RESEARCH_SPEC §3.3)
+  and is not independently verified this pass; only the underlying spec claim is used.
+
+  A companion "GuoGuan YueXiao E" listing is explicitly described on its own page as "the
+  unmagnetized version of the YueXiao EDM ... retains the magnetic capsules found in the EDM,
+  there are simply no magnets in them" (thecubicle-guoguan-yuexiao-edm-2020) — a variant-level
+  (magnetized/unmagnetized) distinction within this same model, not a separate generation
+  (pass 4 material).
+
+  Cubezz's own, independent capture of the magnetic configuration (cubezz-guoguan-yuexiao-
+  edm-2019, crawled 2019-08-20) predates TheCubicle's earliest found capture by roughly a year,
+  moving the plausible circulation date earlier, and corroborates the 56mm size spec.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [cubezz-guoguan-yuexiao-edm-2019]
+    note: "Genuine specific product-page capture (2019-08-20), used as an 'existed by' upper
+      bound (`qualifier: before`) at year precision. TheCubicle's own spec table for this
+      product reads 'Added: 2019-06-19' — not the documented 2018-09-11 catalogue-migration
+      artefact, but still a retailer 'Added' field, and per this pass's binding instruction no
+      retailer 'Added:' field is ever used as release-date evidence regardless of whether it
+      matches a known artefact pattern. TheCubicle's own genuine crawl timestamp
+      (2020-09-23) is a weaker (later) existence bound than Cubezz's and is not separately
+      recorded."
+  /generation/label:
+    confidence: reported
+    sources: [thecubicle-guoguan-yuexiao-edm-2020]
+    note: "Single tier 2 source names 'EDM' as GuoGuan's own product designation; not
+      independently corroborated by name in the Cubezz source, which titles its listing
+      'GuoGuan Yuexiao EDM Magnetic' — consistent, not independent."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-edm-2020, cubezz-guoguan-yuexiao-edm-2019]
+    note: "Both tier 2 sources agree: 55.5mm (TheCubicle 'Dimensions') vs. 56mm (Cubezz) — a
+      sub-millimetre rounding difference, not elevated to a dispute; 56.0 (Cubezz, the plainer
+      reading) used as the model default."
+  /specs/magnet_architecture:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-edm-2020]
+    note: "TheCubicle's own product-description prose, tier 2, directly describing the
+      mechanism as 'adjustable (not interchangeable)' — the specific spec claim, separable
+      from the surrounding 'world's first' superlative framing (RESEARCH_SPEC §3.3). Single
+      source, hence `probable` not `confirmed`, per S6 class 4's 'confirmed needs T1' rule."
+  /specs/weight_g:
+    confidence: unknown
+    note: "TheCubicle's 72.0g (item weight, black, magnetic) and Cubezz's 75g (black, magnetic)
+      are close but for slightly different described configurations (EDM vs. the plain 'EDM
+      Magnetic' listing) and not confidently the same measurement point; left unset at the
+      model level rather than picking one, consistent with weight belonging on the variant
+      when it may vary by configuration."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. The magnet mechanism described is a
+      positioning-magnet 'adjustable' architecture, not stated to replace springs entirely, so
+      `maglev: none` is not asserted either — left unknown rather than guessed."
+  /description:
+    confidence: reported
+    sources: [thecubicle-guoguan-yuexiao-edm-2020, cubezz-guoguan-yuexiao-edm-2019]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-edm-2020]
+    note: "No source states a direct 'EDM succeeds Pro' sentence; inferred from TheCubicle's
+      own framing as 'the latest 3x3 released by GuoGuan' as of that capture, combined with the
+      family's own chronological ordering (original -> Pro -> EDM, per
+      data/families/guoguan-yuexiao.yml)."
+relationships:
+  - type: succeeds
+    target: guoguan-yuexiao-pro
+    target_entity: model
+    note: "No explicit succession sentence found; inferred from TheCubicle's 'the latest 3x3
+      released by GuoGuan' framing and the family's own chronological ordering. See
+      /relationships/0 attestation."

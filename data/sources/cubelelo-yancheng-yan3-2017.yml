@@ -1,0 +1,34 @@
+# source: cubelelo-yancheng-yan3-2017
+# Pass 3 (model enumeration), agent D, non-US retailer sweep (RESEARCH_SPEC §3.6a). Cubelelo
+# (India) carries the YAN3 over three years before TheCubicle's own earliest found capture —
+# used only for dating, since its description text is verbatim-identical to TheCubicle's (see
+# reliability_note).
+id: cubelelo-yancheng-yan3-2017
+entity: source
+kind: retailer
+tier: 2
+title: "MoYu YanCheng Yan3 3x3 Black – Cubelelo"
+publisher: "Cubelelo"
+url: "http://www.cubelelo.com/new-arrivals/moyu-yancheng-yan3-3x3-black"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20170406120933id_/http://www.cubelelo.com:80/new-arrivals/moyu-yancheng-yan3-3x3-black"
+excerpt: |-
+  Listed under Cubelelo's own "New Arrivals" category. Description: "The YAN3 is the first
+  cube released by the YanCheng brand. It has a unique gliding feel that makes turning feel
+  exceptionally effortless. The puzzle is packaged inside a special drawer-style box."
+accessed: "2026-09-04"
+language: en
+region: IN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (India). Captured 2017-04-06, filed under
+  Cubelelo's own "New Arrivals" category at that date — consistent with a recent-ish launch —
+  over three years before TheCubicle's own only found capture (thecubicle-yancheng-yan3-2020,
+  crawled 2020-09-27). The description text is verbatim-identical to TheCubicle's own
+  ("The YAN3 is the first cube released by the YanCheng brand..."), both plainly derived from
+  the same manufacturer-supplied copy — per RESEARCH_SPEC §3.2 this is NOT independent
+  corroboration of the description's content, only of the product's existence and this earlier
+  date, used to move `released` earlier than the family record's "circa 2018" reading (itself
+  not altered here — out of this pass's write lane).
+status: sourced

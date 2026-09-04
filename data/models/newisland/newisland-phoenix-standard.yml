@@ -1,0 +1,58 @@
+# model: newisland-phoenix-standard
+# Pass 3 (model enumeration), agent D. Newisland's second, separately-named 3x3 line and this
+# family's only model — no V2/second generation of Phoenix was found this pass.
+id: newisland-phoenix-standard
+entity: model
+family_id: newisland-phoenix
+manufacturer_id: newisland
+name: "Newisland Phoenix"
+aliases:
+  - "Newisland Pheonix"
+scope_class: core
+generation:
+  label: "Phoenix"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2019-07"
+  precision: month
+  qualifier: before
+specs:
+  size_mm: 57.0
+description: |-
+  TheCubicle (thecubicle-newisland-phoenix-2019): "The Newisland Pheonix [sic] is a
+  high-quality 3x3 speedcube marketed by Newisland. It rotates very smoothly right out of the
+  box, and comes pre-lubricated from the factory. It also comes with a mesh cube bag inside the
+  box." Uses the weaker "marketed by" phrasing (not "created exclusively by," contrast
+  Newisland Lightning V2), matching the original Lightning's own framing.
+
+  A `thecubicle.com/products/newisland*` slug sweep performed this pass found exactly three
+  Newisland 3x3 lines (Lightning, Lightning V2, Phoenix) — no "Phoenix V2" or second Phoenix
+  generation. No source found this pass relates Phoenix to Lightning as a succession or shared
+  design; kept as its own family and model, matching the family record's own treatment.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [thecubicle-newisland-phoenix-2019]
+    note: "Genuine, specific product-page capture (2019-07-18), already marked discontinued at
+      that capture — used as an 'existed by' upper bound (`qualifier: before`). TheCubicle's
+      own spec-table 'Added: 2018-09-11' field on this product is the documented catalogue-
+      migration artefact and is explicitly refused."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-newisland-phoenix-2019]
+    note: "Single tier 2 spec-table reading ('Dimensions: 57.0mm³')."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Neither source describes a magnetic
+      configuration for this product."
+  /description:
+    confidence: reported
+    sources: [thecubicle-newisland-phoenix-2019]

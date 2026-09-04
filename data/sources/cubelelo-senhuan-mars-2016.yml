@@ -1,0 +1,36 @@
+# source: cubelelo-senhuan-mars-2016
+# Pass 3 (model enumeration), agent D, non-US retailer sweep (RESEARCH_SPEC §3.6a). Cubelelo
+# (India) carries the original SenHuan Mars, in "Pre-Order" status, nearly three years before
+# TheCubicle's own earliest found capture — used only for dating, since its description text
+# is not independent of TheCubicle's (see reliability_note).
+id: cubelelo-senhuan-mars-2016
+entity: source
+kind: retailer
+tier: 2
+title: "MoYu SenHuan Mars 3x3 Black – Cubelelo"
+publisher: "Cubelelo"
+url: "http://www.cubelelo.com/senhuan-mars-3x3-black"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20161031042157id_/http://www.cubelelo.com:80/senhuan-mars-3x3-black"
+excerpt: |-
+  Page title/heading "MoYu SenHuan Mars 3x3 Black", priced "Rs.829", status "Pre-Order".
+  Structured field "Brand: MoYu". Description: "MARS is the first product of SenHuan brand,
+  which uses unique ultra-small inner circle design, brings a more comfortable turning feel,
+  and a better corner cutting ability. The new design makes the cube more stable and smoother."
+accessed: "2026-09-04"
+language: en
+region: IN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (India). Captured 2016-10-31, with the
+  product's own status field reading "Pre-Order" — consistent with this being at or very near
+  this product's actual introduction, nearly three years before TheCubicle's own earliest
+  found capture (thecubicle-senhuan-mars-3x3-2019, crawled 2019-08-24). The description prose
+  ("MARS is the first product of SenHuan brand, which uses [a] unique ultra-small inner circle
+  design...") is near-identical in substance to TheCubicle's own description and most plausibly
+  both derive from the same manufacturer-supplied copy — per RESEARCH_SPEC §3.2, this is NOT
+  treated as independent corroboration of the description's content, only of the product's
+  existence and this earlier date. The page's own "Brand: MoYu" categorisation field is noted,
+  not acted on, per the same caveat recorded on cubelelo-mohuanshousu-chufeng-2016.
+status: sourced

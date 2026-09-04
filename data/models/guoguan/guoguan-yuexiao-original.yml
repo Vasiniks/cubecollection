@@ -1,0 +1,102 @@
+# model: guoguan-yuexiao
+# Pass 3 (model enumeration), agent D. The original GuoGuan YueXiao — the family's founding
+# generation. Existence and identity meet S6 class 2/3 on TheCubicle alone; an independent
+# non-US retailer (Cubezz) found this pass pushes the earliest evidenced circulation back to
+# 2016 and supplies the only explicit dated release-year statement found for this product
+# ("In 2015, GuoGuan released Yuexiao 3x3" — cubezz-guoguan-yuexiao-pro-2017, on the Pro page's
+# own history recap). TheCubicle's "Added: 2018-09-11" field on this product
+# (thecubicle-guoguan-yuexiao-2025) is the documented catalogue-migration artefact and is
+# explicitly refused here, per the standing instruction and RESEARCH_SPEC's own list of never-
+# acceptable release-date evidence.
+id: guoguan-yuexiao-original
+entity: model
+family_id: guoguan-yuexiao
+manufacturer_id: guoguan
+name: "GuoGuan YueXiao"
+aliases:
+  - "Yuexiao"
+  - "Yue Xiao"
+scope_class: core
+generation:
+  label: "YueXiao"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2015"
+  precision: year
+  qualifier: exact
+specs:
+  size_mm: 56.0
+  weight_g: 86.0
+description: |-
+  GuoGuan's founding 3x3, and the origin of the family name. TheCubicle (thecubicle-guoguan-
+  yuexiao-2025): "The YueXiao is the first cube from GuoGuan, a new and exciting brand by MoYu.
+  It features an appearance and design similar to that of the Cong's Design MeiYing, but with
+  an all-new core design and more rounded edges." Cubezz's own, differently-worded product copy
+  for the Pro generation (cubezz-guoguan-yuexiao-pro-2017) gives a direct history: "In 2015,
+  GuoGuan released Yuexiao 3x3, then Xinghen 2x2 was released in the following year" — the only
+  explicit release-year statement found this pass, preferred here over TheCubicle's vaguer "one
+  of the most iconic cubes of 2016" framing (a circulation/reputation claim, not itself a
+  release-date claim, and not read as contradicting 2015). Cubezz's own, independent, much
+  earlier capture of this exact product (cubezz-guoguan-yuexiao-2016, crawled 2016-02-27) is
+  consistent with a 2015 release and precedes TheCubicle's earliest found capture by roughly
+  nine years.
+
+  No mechanism/mould change is described relative to any earlier GuoGuan product (there is
+  none — this is the family's first release), so this is the family's ordinal-1 model by
+  definition, not by comparison.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [cubezz-guoguan-yuexiao-pro-2017]
+    note: "Single tier 2 source, but a direct, explicit year-level dated statement ('In 2015,
+      GuoGuan released Yuexiao 3x3'), the strict evidence class S6 requires for a release date.
+      TheCubicle's 'iconic cube of 2016' phrase (thecubicle-guoguan-yuexiao-pro-2018) is not
+      itself a dated release claim and is treated as compatible circulation framing, not a
+      competing date, so no `disputed` block is used here. The product's own 'Added:
+      2018-09-11' spec-table field (present on thecubicle-guoguan-yuexiao-2025) is a documented
+      catalogue-migration artefact and is explicitly refused, not used at any precision."
+  /specs/size_mm:
+    confidence: disputed
+    disputed:
+      - value: 56.0
+        sources: [thecubicle-guoguan-yuexiao-2025]
+        confidence: probable
+      - value: 55.0
+        sources: [cubezz-guoguan-yuexiao-2016]
+        confidence: probable
+    note: "Both are single tier 2 retailer spec-table readings, nine years apart (2016 vs.
+      2025 capture) for a nominally unchanged design. A 1mm gap this small is consistent with
+      ordinary retailer rounding/measurement-point variance for a '55-56mm' class cube, and no
+      source describes any dimensional revision — but per this pass's own instruction not to
+      quietly pick one, both are recorded rather than silently preferring the rounder or more
+      recent figure. Left unadjudicated; the main `specs.size_mm` value (56.0) is the more
+      recent and more fully-specified reading, not a resolved fact."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-2025]
+    note: "Single tier 2 spec-table reading ('Item Weight: 86.0g'). Cubezz's own much earlier
+      capture (cubezz-guoguan-yuexiao-2016) gives 80g for a different colourway (White) — left
+      unlisted at the model level as ordinary colourway/era weight variance, not elevated to a
+      second disputed candidate, since weight is explicitly the field DATA_MODEL's own schema
+      notes belongs on the variant 'when it varies by configuration'."
+  /specs/core_system:
+    confidence: unknown
+    note: "Both retailers describe an 'all-new core design' / high-strength-core prose in
+      general terms, with no term mapping to a vocab:core-systems value (not ball_core,
+      dual_adjustment, or tri_layer by name). Researched and not established at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. No source describes this original generation
+      as magnetic at all (contrast the later Pro M / EDM generations)."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2 for this specific generation."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention (`community_convention`, ordinal 1): no manufacturer
+      generation-numbering scheme names the original release distinctly from 'Pro'/'EDM'."
+  /description:
+    confidence: reported
+    sources: [thecubicle-guoguan-yuexiao-2025, cubezz-guoguan-yuexiao-pro-2017, cubezz-guoguan-yuexiao-2016]

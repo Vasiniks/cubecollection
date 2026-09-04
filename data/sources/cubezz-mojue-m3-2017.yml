@@ -1,0 +1,41 @@
+# source: cubezz-mojue-m3-2017
+# Pass 3 (model enumeration), agent D, non-US retailer sweep (RESEARCH_SPEC §3.6a). Establishes
+# MoJue M3 was a real, in-stock, reviewed retail product over three years before TheCubicle's
+# own capture describes it as a new pre-order item — materially revises the model's plausible
+# release date away from the family-level "circa 2020" reading.
+id: cubezz-mojue-m3-2017
+entity: source
+kind: retailer
+tier: 2
+title: "MoJue M3 3x3x3 Speed Cube 56mm Primary Color – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-5083-MoJue+M3+3x3x3+Speed+Cube+56mm+Primary+Color.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20170402115236id_/http://www.cubezz.com:80/Buy-5083-MoJue+M3+3x3x3+Speed+Cube+56mm+Primary+Color.html"
+excerpt: |-
+  "MoJue M3 Speed Cube is the first product of MoJue brand, which has a great innovation.
+  Unique round-square center combines with arc surface on the bottom, brings a good stability
+  and corner-cutting, decreasing the frequency of corner-twist. Anti-sticky concave and track
+  make the puzzle has a long working life." Rated "5 (Customer Reviews)", "Status: In Stock",
+  SKU "MJ620100", bulk-order discount pricing table present. Specifications: ".Brand: MoJue /
+  .Color: Primary Color / .Si z e: 56*56*56 mm / .Weight: 73g."
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US. Captured 2017-04-02 — over three years before
+  TheCubicle's own only found capture (thecubicle-mojue-m3-2020, crawled 2020-09-27), which
+  describes the product as "will soon hit the market... now available for pre-order." This
+  source shows the identical product (same "first product of MoJue brand" framing, same M3
+  name) already carrying a customer rating, an established SKU, and bulk-pricing tiers as of
+  April 2017 — evidence of real, established retail circulation, not a pre-order. Read together,
+  TheCubicle's 2020 "pre-order" framing most plausibly reflects that retailer's own later pickup
+  of an already-existing product (a restock or a first listing at that specific store), not the
+  product's actual introduction; this source's own 2017 date is preferred for the model's
+  `released` field over the family record's weaker "circa 2020" reading (which rested on
+  TheCubicle alone and is not altered here — out of this pass's write lane). No "MoYu
+  sub-branded" language appears in this earlier listing, unlike the 2020 TheCubicle copy —
+  noted, not acted on.
+status: sourced

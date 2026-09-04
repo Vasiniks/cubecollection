@@ -1,0 +1,32 @@
+# source: cubezz-guoguan-yuexiao-edm-2019
+# Pass 3 (model enumeration), agent D, non-US retailer sweep (RESEARCH_SPEC §3.6a). Independent
+# tier 2 corroboration of the YueXiao EDM generation, predating TheCubicle's own capture and
+# giving an independent spec reading.
+id: cubezz-guoguan-yuexiao-edm-2019
+entity: source
+kind: retailer
+tier: 2
+title: "GuoGuan Yuexiao EDM Magnetic 3x3x3 Speed Cube 56mm Black – Cubezz.com"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-6036-GuoGuan+Yuexiao+EDM+Magnetic+3x3x3+Speed+Cube+56mm+Black.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190820162924id_/https://cubezz.com/Buy-6036-GuoGuan+Yuexiao+EDM+Magnetic+3x3x3+Speed+Cube+56mm+Black.html"
+excerpt: |-
+  "GuoGuan Yuexiao EDM Magnetic 3x3x3 Speed Cube 56mm Black." Features: ".Brand new Black
+  GuoGuan Yuexiao EDM Magnetic 3x3x3 Speed Cube." Specifications: ".Brand: GuoGuan YueXiao EDM
+  / .Color: Black / .Size: 56*56*56 mm / .Weight: 75g." Cross-links to a companion "GuoGuan
+  Yuexiao E 3x3x3 Speed Cube 56mm Black" listing among "Related Top Sellers."
+accessed: "2026-09-04"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US. Captured 2019-08-20, roughly a year before
+  TheCubicle's own crawl of the equivalent page (thecubicle-guoguan-yuexiao-edm-2020, crawled
+  2020-09-23) — an earlier, genuine "existed by" bound for this generation, not a catalogue
+  "Added" field. No "world's first adjustable magnetic system" claim is repeated here; this
+  source is used only for existence/dating and spec corroboration (56mm / 75g for the black
+  magnetic configuration), not for the adjustable-magnet claim, which rests on
+  thecubicle-guoguan-yuexiao-edm-2020 alone.
+status: sourced

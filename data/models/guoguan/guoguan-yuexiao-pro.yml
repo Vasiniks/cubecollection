@@ -1,0 +1,107 @@
+# model: guoguan-yuexiao-pro
+# Pass 3 (model enumeration), agent D. HARD CASE resolved as a clear model boundary: TheCubicle
+# states directly that this generation "features a brand new mechanism with more internal
+# tracks to help reduce friction and a more rounded corner piece design" relative to the
+# original YueXiao — a design/mould difference per DATA_MODEL §4.2, independently corroborated
+# in different wording by a non-US retailer found this pass (cubezz-guoguan-yuexiao-pro-2017:
+# "Yuexiao Pro uses new mechanism... 3-segment section and 3-segment round corner").
+id: guoguan-yuexiao-pro
+entity: model
+family_id: guoguan-yuexiao
+manufacturer_id: guoguan
+name: "GuoGuan YueXiao Pro"
+scope_class: core
+generation:
+  label: "Pro"
+  ordinal: 2
+  basis: manufacturer_declared
+released:
+  value: "2017"
+  precision: year
+  qualifier: before
+specs:
+  size_mm: 56.0
+  weight_g: 82.0
+  magnet_architecture: single_layer
+description: |-
+  TheCubicle (thecubicle-guoguan-yuexiao-pro-2018): "The YueXiao Pro by GuoGuan is the
+  highly-anticipated update to the original YueXiao, one of the most iconic cubes of 2016. The
+  YueXiao Pro features a brand new mechanism with more internal tracks to help reduce friction
+  and a more rounded corner piece design that manages to preserve the anti-corner twisting
+  characteristics of the original YueXiao. The YueXiao Pro features slots for magnets to be
+  easily added, but this particular variant is not magnetized." Independently, Cubezz's own
+  (differently-worded) product copy (cubezz-guoguan-yuexiao-pro-2017): "Yuexiao Pro uses new
+  mechanism, the designer fully consider the structure and performance of this model in
+  designing. 3-segment section and 3-segment round corner, Polyline type anti-corner-twisting
+  design and anti-sticky concave, which bring the speed cube mechanism to a new level." Both
+  sources independently describe a genuine mechanism/mould change (DATA_MODEL §4.2), not a sold
+  configuration, supporting the model-level (not variant-level) split from `guoguan-yuexiao`.
+
+  Cubezz's own capture (2017-08-13) is over a year earlier than TheCubicle's earliest found
+  capture of this product, moving the plausible circulation date to 2017 or earlier. TheCubicle
+  also describes the design as accepting user-added magnets ("slots for magnets to be easily
+  added") without shipping magnetized by default — the magnetized configuration is sold
+  separately as "YueXiao Pro M," a variant of this same model (pass 4 material), not a separate
+  generation.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [cubezz-guoguan-yuexiao-pro-2017]
+    note: "Genuine, specific product-page capture dated 2017-08-13 (not a bulk 'Added' field),
+      used as an 'existed by' upper bound (`qualifier: before`) at year precision, per S6 §3.
+      TheCubicle's own spec table for this product carries the documented 'Added: 2018-09-11'
+      catalogue-migration artefact (thecubicle-guoguan-yuexiao-pro-2018's own reliability
+      framing) and is explicitly refused, not used at any precision."
+  /generation/label:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-2018, cubezz-guoguan-yuexiao-pro-2017]
+    note: "'Pro' is GuoGuan's own retail product name for this generation, used identically by
+      two independent tier 2 retailers."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-2018, cubezz-guoguan-yuexiao-pro-2017]
+    note: "Both tier 2 sources agree at 56mm (unlike the original generation's 55/56mm
+      variance) — not elevated to `confirmed` per S6 class 4's explicit 'confirmed needs T1'
+      rule for specifications, which this pass follows in preference to the general confidence
+      ladder's two-tier-2-sources allowance."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-2018, cubezz-guoguan-yuexiao-pro-2017]
+    note: "83.7g (TheCubicle item weight) vs. 82g (Cubezz, stickerless) — close enough to be
+      ordinary configuration/measurement variance, not a dispute; 82.0g (the plain, unqualified
+      reading) recorded as the model default."
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-pro-2018]
+    note: "TheCubicle states the design 'features slots for magnets to be easily added' — read
+      as a single-layer magnet-slot architecture built into the mould, present whether or not
+      a given sold configuration is actually magnetized (the magnetized/non-magnetized split is
+      a variant-level, not model-level, fact). Single tier 2 source; no vocab term precisely
+      matches 'slots... easily added', so `single_layer` is the closest documented value,
+      recorded at `uncertain` rather than `probable` to reflect that approximation."
+  /specs/core_system:
+    confidence: unknown
+    note: "Both sources describe 'new mechanism' / 'new internal tracks' prose with no term
+      mapping to a vocab:core-systems value. Researched and not established at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /description:
+    confidence: reported
+    sources: [thecubicle-guoguan-yuexiao-pro-2018, cubezz-guoguan-yuexiao-pro-2017]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-2018]
+    note: "TheCubicle directly calls this 'the highly-anticipated update to the original
+      YueXiao' and 'the enhanced version of YueXiao' (cubezz's own, independent phrasing) —
+      two independently-worded tier 2 sources agreeing on succession."
+relationships:
+  - type: succeeds
+    target: guoguan-yuexiao-original
+    target_entity: model
+    note: "TheCubicle: 'the highly-anticipated update to the original YueXiao'. Cubezz
+      (independently worded): 'The enhanced version of YueXiao'."

@@ -1,0 +1,82 @@
+# model: newisland-lightning-original
+# Pass 3 (model enumeration), agent D. HARD CASE, decided as a split under worked decision G
+# (RESEARCH_SPEC §4): the only documented difference between this and `newisland-lightning-v2`
+# is an accessory-bundle change plus a manufacturer-assigned version number, with no source
+# stating a mechanism change either way. The evidence is genuinely unclear, so this pass splits
+# into two models with a `succeeds` relationship and `confidence: uncertain` on the identity
+# claim, per RESEARCH_SPEC §4's own instruction that splitting is recoverable by merge while
+# collapsing loses the distinction silently.
+#
+# Standing rebrand suspicion, preserved and NOT resolved: `data/manufacturers/newisland.yml`
+# and `data/families/newisland-lightning.yml` both flag customer-review claims that this
+# mechanism is effectively a QiYi Thunderclap (`qiyi-thunderclap`, modeled separately under
+# `qiyi`). That evidence is tier-4-equivalent customer opinion, not a tier 1-2 manufacturer
+# statement or documented supply relationship, so no `rebrand_of` relationship is recorded here
+# per DATA_MODEL rule 17 and the standing instruction not to act on weak evidence. This model
+# is recorded independently, under its own brand, exactly as worked decision E prescribes for
+# an unresolved cross-brand identity suspicion.
+id: newisland-lightning-original
+entity: model
+family_id: newisland-lightning
+manufacturer_id: newisland
+name: "Newisland Lightning"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 56.5
+description: |-
+  TheCubicle (thecubicle-newisland-lightning): "The Newisland Lightning is a high-quality 3x3
+  speedcube marketed by Newisland. It rotates very smoothly right out of the box, and comes
+  pre-lubricated from the factory. It also comes with a mesh cube bag inside the sturdy box, as
+  well as a maintenance/solution manual, replacement edge/corner, and an extra set of factory
+  stickers." No dedicated generation label is used by the manufacturer for this original
+  release beyond the plain "Lightning" name (the "V2" suffix appears only on the successor);
+  `ordinal: 1` / `basis: community_convention` is this archive's own numbering, not a
+  manufacturer one.
+
+  **Rebrand suspicion, not resolved.** Several customer reviews on this same product page
+  describe the mechanism as effectively identical to the QiYi Thunderclap ("It's the same as
+  the thunderclap... Just with extra pieces and a set of poor quality stickers.") — a plausible
+  lead, but tier-4-equivalent customer opinion, not a manufacturer statement or documented
+  supply relationship (DATA_MODEL rule 17's bar for `rebrand_of`). No `rebrand_of` relationship
+  is recorded. This model is NOT a duplicate of any `qiyi-thunderclap-*` model in this archive;
+  both are recorded independently under their own brands per worked decision E, pending
+  decisive evidence either way.
+status: drafted
+attestations:
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer numbering scheme distinguishes this
+      release from 'V2' beyond the successor's own suffix."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning]
+    note: "Single tier 2 spec-table reading ('Dimensions 56.5mm')."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. This is the field a direct comparison against
+      `qiyi-thunderclap-v1`'s own recorded specs would need to settle the rebrand suspicion —
+      not attempted this pass; flagged as the concrete next step for whoever picks this up."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Neither source describes a magnetic
+      configuration for this product."
+  /released:
+    confidence: unknown
+    note: "No explicit dated statement was found for this generation specifically. TheCubicle's
+      own spec-table 'Added: 2018-09-11' field on this product is the documented catalogue-
+      migration artefact and is explicitly refused. The genuine capture found this pass
+      (2023-01-31, per thecubicle-newisland-lightning's own archive_url) postdates the V2
+      generation's own earliest found capture (2019-07-21), which is itself odd for a
+      claimed-original release — treated as incomplete crawl coverage of V1, not as evidence
+      V1 postdates V2 (the naming and the family record's own reasoning both support V1
+      preceding V2). Left unset rather than guessed."
+  /description:
+    confidence: reported
+    sources: [thecubicle-newisland-lightning]

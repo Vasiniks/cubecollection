@@ -1,0 +1,42 @@
+# source: cubelelo-mohuanshousu-chufeng-2016
+# Pass 3 (model enumeration), agent D, non-US retailer sweep (RESEARCH_SPEC §3.6a). Cubelelo
+# (India) — the retailer flagged in RESEARCH_SPEC §3.6a's own discovery-breadth audit —
+# independently carries this product four years before TheCubicle's earliest found capture,
+# and independently corroborates the ZhangHaiXu (Haixu Zhang) designer attribution.
+id: cubelelo-mohuanshousu-chufeng-2016
+entity: source
+kind: retailer
+tier: 2
+title: "MoYu MoHuanShouSu ChuFeng 3x3 White – Cubelelo"
+publisher: "Cubelelo"
+url: "http://www.cubelelo.com/moyu-mohuanshousu-chufeng-3x3-white"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20161030141527id_/http://www.cubelelo.com:80/moyu-mohuanshousu-chufeng-3x3-white"
+excerpt: |-
+  Page title "MoYu MoHuanShouSu ChuFeng 3x3 White | Moyu | Cubelelo". Structured field "Brand:
+  MoYu". Description: "MHSS ChuFeng 3x3x3 Speed Cube Black — The first speed cube from
+  MoHuanShouSu(MHSS) Brand, desined by ZhangHaiXu, try one now! Chufeng 3x3 is the first
+  product of brand MoHuanShouSu, which is designed by former world record holder: Haixu Zhang.
+  A conception, which is called ball-track, is applied in this cube..." Specifications:
+  ".Brand: MoHuanShouSu / .Color: Black / .Size: 56.5*56.5*56.5 mm / .Weight: 85g."
+accessed: "2026-09-04"
+language: en
+region: IN
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (India-based, English-language storefront;
+  Cubelelo is the retailer RESEARCH_SPEC §3.6a's own audit specifically flags as previously
+  unswept). Captured 2016-10-30, roughly four years before TheCubicle's own only found capture
+  of this product (thecubicle-mohuan-shousu-chufeng-2020, crawled 2020-09-18) — a materially
+  earlier "existed by" bound. Independently names the designer as "Haixu Zhang" / "ZhangHaiXu",
+  corroborating (in different wording, so treated as independent per RESEARCH_SPEC §3.2)
+  TheCubicle's own "designed by Zhang HaiXu" claim. Note: this page's own top-level navigation
+  field reads "Brand: MoYu" while its structured product Specifications table reads "Brand:
+  MoHuanShouSu" — the same two-tier categorisation pattern already seen for GuoGuan and PBCube
+  at other retailers. This is retailer categorisation, not a corporate-structure statement, and
+  is not used to change `data/manufacturers/mohuanshousu.yml`'s existing `confidence: uncertain`
+  reading — flagged here only, per this pass's standing instruction not to act on such leads.
+  The "ball-track" mechanism description is treated as descriptive prose, not mapped to a
+  vocab:core-systems value, since no source uses a matching term.
+status: sourced

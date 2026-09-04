@@ -1,0 +1,94 @@
+# model: newisland-lightning-v2
+# Pass 3 (model enumeration), agent D. See newisland-lightning-original.yml for the split
+# reasoning (worked decision G — genuinely unclear whether a mechanism change occurred,
+# split rather than collapsed, `confidence: uncertain` on the generation/identity claim).
+id: newisland-lightning-v2
+entity: model
+family_id: newisland-lightning
+manufacturer_id: newisland
+name: "Newisland Lightning V2"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+released:
+  value: "2019-07"
+  precision: month
+  qualifier: before
+specs:
+  size_mm: 56.5
+  weight_g: 85.6
+description: |-
+  TheCubicle (thecubicle-newisland-lightning-v2-2019): "The Newisland Lightning V2 is a
+  high-quality 3x3 speedcube marketed and created exclusively by Newisland. It rotates very
+  smoothly right out of the box, and comes pre-lubricated from the factory. It also comes with
+  a mesh cube bag inside the sturdy box, as well as a maintenance/solution manual and an extra
+  set of factory stickers." The wording is near-identical to the original Lightning's own
+  description but for the added "created exclusively" phrase and a slightly different
+  accessory bundle (no replacement edge/corner piece, per the family record's own comparison).
+
+  **No source states a mechanism change** between this and the original Lightning — the only
+  documented differences are the accessory bundle and the manufacturer's own "V2" version
+  number. Per DATA_MODEL, a version number is evidence of a design change but weak evidence
+  that a difference is "merely" a configuration; an accessory-bundle difference alone would
+  ordinarily be a variant-level fact (packaging), not a model split. Given genuine uncertainty
+  about whether "V2" reflects a real mould/mechanism revision or simply a repackaged bundle
+  sold under a new marketing name, this pass follows RESEARCH_SPEC §4 worked decision G and
+  splits into two models with a `succeeds` relationship, at `confidence: uncertain` on the
+  identity claim, rather than collapsing what may be a real generation into a variant of the
+  original — a human reviewer with time for a direct mechanical comparison should revisit this.
+
+  The "created **exclusively**" phrasing is also some retailer-level counter-evidence against
+  the same rebrand-of-QiYi-Thunderclap suspicion flagged on the original Lightning (see
+  newisland-lightning-original.yml), though itself promotional copy, not a documented
+  supply-chain fact — the suspicion is left exactly as open here as on the original.
+status: drafted
+attestations:
+  /generation/label:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning-v2-2019]
+    note: "'V2' is Newisland's own retail product name for this generation, single tier 2
+      source."
+  /released:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning-v2-2019]
+    note: "Genuine, specific product-page capture (2019-07-21), used as an 'existed by' upper
+      bound (`qualifier: before`). TheCubicle's own spec-table 'Added: 2018-09-11' field on
+      this product is the documented catalogue-migration artefact and is explicitly refused."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning-v2-2019]
+    note: "Single tier 2 spec-table reading ('Dimensions: 56.5mm³'), identical to the original
+      Lightning's own reading — consistent with (not proof of) an unchanged shell size."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning-v2-2019]
+    note: "Single tier 2 spec-table reading ('Item Weight: 85.6g'). Not copied to the original
+      Lightning's model record — no comparable weight figure was found there this pass."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /description:
+    confidence: reported
+    sources: [thecubicle-newisland-lightning-v2-2019]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-newisland-lightning-v2-2019]
+    note: "No source states a direct 'V2 succeeds original' sentence naming a mechanism change;
+      inferred from the shared 'Lightning' name, the 'V2' numbering, and the near-identical
+      description wording. This is the model-boundary question itself, not merely the
+      succession direction — see the model's own description for the full reasoning."
+relationships:
+  - type: succeeds
+    target: newisland-lightning-original
+    target_entity: model
+    note: "Shared 'Lightning' name plus manufacturer-assigned 'V2' numbering; no explicit
+      succession sentence or mechanism-change statement found. See /relationships/0
+      attestation and the model description for the full uncertainty."

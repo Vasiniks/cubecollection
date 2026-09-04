@@ -1,0 +1,93 @@
+# model: mohuanshousu-chufeng
+# Pass 3 (model enumeration), agent D. MoHuanShouSu's sole documented product and this family's
+# only model. An independent non-US retailer found this pass (Cubelelo, India) shows the
+# product in circulation roughly four years before TheCubicle's own capture, and independently
+# corroborates the designer attribution in different wording.
+id: mohuanshousu-chufeng-standard
+entity: model
+family_id: mohuanshousu-chufeng
+manufacturer_id: mohuanshousu
+name: "MoHuan ShouSu ChuFeng"
+aliases:
+  - "MoHuanShouSu ChuFeng"
+  - "Chu Feng"
+  - "MHSS ChuFeng"
+scope_class: core
+generation:
+  label: "ChuFeng"
+  ordinal: 1
+  basis: manufacturer_declared
+released:
+  value: "2016-10"
+  precision: month
+  qualifier: before
+specs:
+  size_mm: 56.5
+  weight_g: 85.0
+description: |-
+  Cubelelo (cubelelo-mohuanshousu-chufeng-2016), captured 2016-10-30: "The first speed cube
+  from MoHuanShouSu(MHSS) Brand, desined by ZhangHaiXu, try one now! Chufeng 3x3 is the first
+  product of brand MoHuanShouSu, which is designed by former world record holder: Haixu Zhang.
+  A conception, which is called ball-track, is applied in this cube, it makes every position of
+  the cube has supporting point when turning the cube." TheCubicle's own, later and differently
+  worded description (thecubicle-mohuan-shousu-chufeng-2020, crawled 2020-09-18): "The MoHuan
+  ShouSu ChuFeng is a new MoYu sub-branded 3x3 that was designed by Zhang HaiXu, the former 4x4
+  world record holder. The ChuFeng offers many premium design features at a mid-range price,
+  and it has a unique crunchy feel." The two sources independently agree on the designer
+  attribution (Zhang HaiXu / former [4x4] world-record holder), corroborating it across
+  genuinely different retailer copy (RESEARCH_SPEC §3.2).
+
+  Cubelelo's own capture (2016-10-30) is roughly four years earlier than TheCubicle's earliest
+  found capture, moving the plausible circulation date to late 2016 or earlier — materially
+  earlier than the family record's own "circa 2020" `introduced` reading (which rests on
+  TheCubicle alone and is not altered here; families are frozen for this pass).
+
+  **Designer lead, not actioned.** Both sources name the designer as Zhang HaiXu / ZhangHaiXu,
+  a former world-record holder (4x4, per TheCubicle) — independently corroborated across
+  genuinely different retailer copy. No `person` record for this individual exists in
+  `data/people/` at the time of this pass, and creating one is out of this pass's write lane
+  (models only); the `designer` field is left unset here rather than pointing at a
+  not-yet-created id, and this is flagged as a lead for whoever researches people/designers.
+
+  No second MoHuanShouSu-branded 3x3, predecessor, or successor was found this pass
+  (`thecubicle.com/products/mohuan*` returns exactly this 3x3 plus one unrelated 2x2, out of
+  scope). This is therefore both the family's founding and only model.
+status: drafted
+attestations:
+  /released:
+    confidence: probable
+    sources: [cubelelo-mohuanshousu-chufeng-2016]
+    note: "Genuine, specific product-page capture (2016-10-30), used as an 'existed by' upper
+      bound (`qualifier: before`). TheCubicle's own spec-table 'Added: 2018-09-11' field on
+      this product is the documented catalogue-migration artefact and is explicitly refused,
+      not used at any precision."
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubelelo-mohuanshousu-chufeng-2016]
+    note: "Single tier 2 source ('Size: 56.5*56.5*56.5 mm'). TheCubicle's own later spec table
+      (thecubicle-mohuan-shousu-chufeng-2020) reads 'Dimensions: 56.0mm³' — a sub-millimetre
+      rounding difference, not elevated to a dispute."
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubelelo-mohuanshousu-chufeng-2016]
+    note: "Single tier 2 source, Black configuration ('Weight: 85g'). TheCubicle's own spec
+      table gives 'Item Weight: 82.0g' — close, not contradicting; 85g (Cubelelo, the earlier
+      and more specific single-colour reading) used as the model default."
+  /specs/core_system:
+    confidence: unknown
+    note: "Cubelelo describes a 'ball-track' concept in general prose ('every position of the
+      cube has supporting point when turning') with no term mapping cleanly to a
+      vocab:core-systems value (not clearly `ball_core` as defined — that value describes a
+      spherical central component the centre pieces seat against, not a track geometry).
+      Researched and not established at tier 1-2 with sufficient precision to assign a vocab
+      value."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2. Neither source describes a magnetic
+      configuration for this product."
+  /description:
+    confidence: reported
+    sources: [cubelelo-mohuanshousu-chufeng-2016, thecubicle-mohuan-shousu-chufeng-2020]

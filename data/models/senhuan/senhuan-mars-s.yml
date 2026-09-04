@@ -1,0 +1,95 @@
+# model: senhuan-mars-s
+# Pass 3 (model enumeration), agent D. HARD CASE, decided as a new model rather than a variant
+# of `senhuan-mars`. TheCubicle's own description states Mars S includes "a re-designed center
+# piece" in addition to a spring-material change. A re-designed piece is a mould/geometry
+# difference under DATA_MODEL §4.2's worked decision B ("visibly different mouldings with
+# different internal geometry... not producible from one design") — the spring-material
+# swap alone would have been a variant-level (assembly-time material choice) fact, but the
+# piece redesign is not something the manufacturer could produce by choosing different parts
+# at assembly from the Mars mould. No independent (non-TheCubicle) source was found this pass
+# to corroborate the redesign claim itself — recorded at `reported`, single tier 2 source.
+id: senhuan-mars-s
+entity: model
+family_id: senhuan-mars
+manufacturer_id: senhuan
+name: "SenHuan Mars S"
+scope_class: core
+generation:
+  label: "Mars S"
+  ordinal: 2
+  basis: manufacturer_declared
+released:
+  value: "2019-07"
+  precision: month
+  qualifier: before
+specs:
+  size_mm: 56.5
+description: |-
+  TheCubicle (thecubicle-senhuan-mars-s-3x3-2019): "The SenHuan Mars S is the new and improved
+  version of the original SenHuan Mars. It features a variety of design improvements on top of
+  the unique small inner circle structure of the original SenHuan Mars, including more durable
+  and elastic SWP springs and a re-designed center piece." The "re-designed center piece"
+  language is read as a genuine mould/geometry change from the original Mars, not a sold
+  configuration choice (DATA_MODEL §4.2) — the springs-material change alone would not have
+  crossed that line, but the piece redesign does, and no source separates the two as
+  independently available options of one product. This is a single-source (tier 2) claim; no
+  independent retailer describing the redesign was found this pass, so both the model-boundary
+  call and its `released` date are recorded at reduced confidence, and the possibility that
+  this is in fact a variant of `senhuan-mars` (e.g. if "re-designed center piece" understates
+  to mean only a material/tolerance change at assembly) is noted as the live alternative should
+  better evidence surface — per RESEARCH_SPEC's own guidance, splitting here is the
+  recoverable-by-merge choice.
+
+  Marked discontinued on every capture found this pass. No source found this pass corroborates
+  Mars S at any second, non-TheCubicle retailer (Cubelelo, Cubezz, and the general non-US sweep
+  performed this pass all returned no "Mars S" — or "SenHuan," beyond the plain "Mars" —
+  matches; recorded as checked, not found, not as evidence of absence).
+status: drafted
+attestations:
+  /generation/label:
+    confidence: reported
+    sources: [thecubicle-senhuan-mars-s-3x3-2019]
+    note: "Single tier 2 source. 'Mars S' is SenHuan's own retail product name."
+  /released:
+    confidence: uncertain
+    sources: [thecubicle-senhuan-mars-s-3x3-2019]
+    note: "Only capture found this pass is 2019-07-21; TheCubicle's own spec-table 'Added:
+      2018-09-11' field on this product is the documented catalogue-migration artefact and is
+      explicitly refused. No independent second source was found to move this date earlier, so
+      the genuine crawl timestamp itself is used as a weak 'existed by' upper bound at
+      `uncertain` confidence, single tier 2 source."
+  /specs/size_mm:
+    confidence: reported
+    sources: [thecubicle-senhuan-mars-s-3x3-2019]
+    note: "Single tier 2 spec-table reading ('Dimensions: 56.5mm³'). Not elevated to `probable`
+      because this is the only source found for this product at all this pass (contrast the
+      original Mars, corroborated by a second, independent retailer)."
+  /specs/weight_g:
+    confidence: unknown
+    note: "TheCubicle's own spec table repeats the same 'Gross Weight: 172g' figure as the
+      original Mars — treated as possibly a copy-paste artefact across the two listings rather
+      than an independently confirmed Mars S weight, and left unset rather than asserted."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2 with sufficient precision to assign a
+      vocab:core-systems value; 'unique small inner circle structure' is inherited descriptive
+      language from the original Mars, not a Mars-S-specific mechanism term."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found at tier 1-2."
+  /description:
+    confidence: reported
+    sources: [thecubicle-senhuan-mars-s-3x3-2019]
+  /relationships/0:
+    confidence: reported
+    sources: [thecubicle-senhuan-mars-s-3x3-2019]
+    note: "Direct statement: 'the new and improved version of the original SenHuan Mars.'"
+relationships:
+  - type: succeeds
+    target: senhuan-mars-original
+    target_entity: model
+    note: "TheCubicle: 'The SenHuan Mars S is the new and improved version of the original
+      SenHuan Mars.'"
