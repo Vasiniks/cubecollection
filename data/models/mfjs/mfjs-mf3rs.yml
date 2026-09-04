@@ -1,0 +1,64 @@
+# model: mfjs-mf3rs
+# Pass 3 (model enumeration). Second generation of MFJS's MF3 succession.
+id: mfjs-mf3rs
+entity: model
+family_id: mfjs-mf3
+manufacturer_id: mfjs
+name: "MFJS MF3RS"
+scope_class: core
+generation:
+  label: "RS"
+  ordinal: 2
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+  weight_g: 84.6
+released:
+  value: "2016"
+  precision: year
+  qualifier: circa
+description: |-
+  Per TheCubicle's own product page (thecubicle-mofang-jiaoshi-mf3rs-product): "The MoFang
+  JiaoShi MF3RS is a new MoYu sub-branded 3x3 in the Cubing Classroom series. The MF3RS features
+  great performance and premium design features that push the boundaries of what a
+  budget-friendly cube can do." Dimensions 56.0mm, item weight 84.6g -- a heavier product than
+  the base MF3 (79.7g), consistent with (though not proof of) a distinct build.
+
+  The Speedsolving wiki (speedsolving-wiki-mofang-jiaoshi, tier 4, see mfjs-mf3-v1.yml for the
+  standing evidence-tier ruling) gives "The MF3RS was released 2016-12-22... It was considered
+  one of the better budget cubes, but was outshadowed by the YuXin Little Magic." Recorded here
+  at year precision, `circa`, `uncertain`, per that ruling's ban on precise day/month dates from
+  this source.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs-product]
+    note: "Item Weight (net), not Gross Weight (104g, includes packaging)."
+  /released:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+    note: "Tier 4 only, approximate chronology at uncertain confidence per
+      research/qc/evidence-tier-remediation-matrix.yml; wiki's own stated day (2016-12-22)
+      rounded to year."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-mofang-jiaoshi-mf3rs-product]
+    note: "No source states an explicit 'generation 2' number; the RS naming and the numbered
+      RS2/RS3 that follow it establish the succession by pattern."
+  /description:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs-product, speedsolving-wiki-mofang-jiaoshi]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-mofang-jiaoshi-mf3-prefix-2026, speedsolving-wiki-mofang-jiaoshi]
+    note: "No source states a direct succession sentence between MF3 and MF3RS; inferred from
+      the shared naming stem, the retailer's own product-catalogue structure, and the wiki's
+      own listing order (MF3, then MF3RS, then MF3RS2, then MF3RS3)."
+relationships:
+  - type: succeeds
+    target: mfjs-mf3-v1
+    target_entity: model

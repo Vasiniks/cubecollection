@@ -1,0 +1,31 @@
+# source: thecubicle-mofang-jiaoshi-mini-3x3-50mm-product
+# TheCubicle's own product page for the MoFang JiaoShi Mini 3x3 (5.0cm), captured 2019-07-18.
+# Tier 2, first-party retailer copy.
+id: thecubicle-mofang-jiaoshi-mini-3x3-50mm-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi Mini 3x3 (5.0cm) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mini-3x3-5-0cm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190718091033id_/https://www.thecubicle.com/products/mofang-jiaoshi-mini-3x3-5-0cm"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi Mini 3x3 is a new MoYu sub-branded mini 3x3 in the
+  Cubing Classroom series with a side-length of just 5.0cm, making it the size of most ordinary
+  2x2s. The Mini 3x3 features great performance and premium design features that push the
+  boundaries of what a mini budget cube can do." Spec block: "Manufacturer: MoFang JiaoShi",
+  "Type: 3x3", "Gross Weight: 73g" (packaged weight; no separate net Item Weight field was
+  rendered in this capture), "Added: 2018-09-11" (a documented catalogue-migration artifact
+  date, not treated as a release date), "Dimensions: 50.0mm^3".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. The
+  product's own retailer copy self-describes it as 'the size of most ordinary 2x2s', i.e. not
+  the size of a standard 3x3 speedcube -- read as supporting a novelty/compact-format
+  classification, though no source states a WCA legality determination either way."
+status: sourced

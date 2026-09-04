@@ -1,0 +1,56 @@
+# model: mfjs-mf3rs2
+# Pass 3 (model enumeration). Third generation of MFJS's MF3 succession.
+id: mfjs-mf3rs2
+entity: model
+family_id: mfjs-mf3
+manufacturer_id: mfjs
+name: "MFJS MF3RS2"
+scope_class: core
+generation:
+  label: "RS2"
+  ordinal: 3
+  basis: manufacturer_declared
+released:
+  value: "2017"
+  precision: year
+  qualifier: circa
+description: |-
+  Per TheCubicle's own product page (thecubicle-mofang-jiaoshi-mf3rs2-product): "The MoFang
+  JiaoShi MF3RS2 is a new MoYu sub-branded 3x3 in the Cubing Classroom series. Like the MF3RS,
+  the MF3RS2 features great performance and premium design features..." -- the retailer's own
+  phrase "like the MF3RS" places it as a follow-on product, though this capture's text scrape
+  did not carry a dimensions/weight spec block.
+
+  The Speedsolving wiki (speedsolving-wiki-mofang-jiaoshi, tier 4, see mfjs-mf3-v1.yml for the
+  standing evidence-tier ruling) gives "The MF3RS2 was released 2017-09-29. It is an improved
+  version of the MF3RS but is also more expensive... This cube received critical acclaim, as it
+  offered great value." "Improved version" is the clearest identity-adjacent language found
+  this pass for this specific generation, though it remains a tier 4 claim. Recorded at year
+  precision, `circa`, `uncertain`, per that ruling's ban on precise day/month dates.
+status: drafted
+attestations:
+  /released:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+    note: "Tier 4 only, approximate chronology at uncertain confidence per
+      research/qc/evidence-tier-remediation-matrix.yml; wiki's own stated day (2017-09-29)
+      rounded to year."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-mofang-jiaoshi-mf3rs2-product]
+    note: "No first-party source states an explicit generation number; RS2's own numbering and
+      the retailer's 'Like the MF3RS' framing establish the succession by naming pattern and
+      cross-reference."
+  /description:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3rs2-product, speedsolving-wiki-mofang-jiaoshi]
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-mofang-jiaoshi-mf3rs2-product, speedsolving-wiki-mofang-jiaoshi]
+    note: "Retailer's own 'Like the MF3RS' phrase plus the wiki's 'improved version of the
+      MF3RS' (tier 4) and its own listing order both point at MF3RS as the immediate
+      predecessor."
+relationships:
+  - type: succeeds
+    target: mfjs-mf3rs
+    target_entity: model

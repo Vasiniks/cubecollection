@@ -1,0 +1,31 @@
+# source: thecubicle-mofang-jiaoshi-mf3-product
+# TheCubicle's own product page for the base MoFang JiaoShi MF3, captured 2020-09-22, part of
+# the wider MF3 line CDX prefix already covered at thecubicle-mofang-jiaoshi-mf3-prefix-2026.
+# Tier 2, first-party retailer copy. Pass 3 (model enumeration) -- fetched to get the per-
+# product description text and spec table the prefix-sweep source's own excerpt does not carry.
+id: thecubicle-mofang-jiaoshi-mf3-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MF3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mf3-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200922073039id_/https://www.thecubicle.com/products/mofang-jiaoshi-mf3-3x3"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MF3 is a new MoYu sub-branded 3x3 in the Cubing
+  Classroom series. The Cubing Classroom series offers many premium design features at a low
+  price point, and it is most ideal for beginning cubers." Spec block: "Manufacturer: MoFang
+  JiaoShi", "Type: 3x3", "Added: 2018-09-11" (one of this archive's documented catalogue-
+  migration artifact dates, shared across 13 unrelated brands -- not treated as a release
+  date), "Gross Weight: 95g", "Dimensions: 56.0mm^3", "Item Weight: 79.7g".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. Establishes
+  MF3 as a distinct, named product with concrete dimensions and weight. Does not itself state a
+  release date; 'Added:' is a documented non-date artifact field, not used for dating."
+status: sourced

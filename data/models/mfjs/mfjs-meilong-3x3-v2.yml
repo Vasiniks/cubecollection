@@ -1,0 +1,78 @@
+# model: mfjs-meilong-3x3-v2
+# Pass 3 (model enumeration). Third MeiLong 3x3 generation, sold at least by 2025 under this
+# retailer's "MoYu" brand grouping rather than "MoFang JiaoShi" -- the same attribution drift
+# already documented at mfjs-meilong.yml. Kept under manufacturer_id `mfjs` and family
+# `mfjs-meilong` per that frozen family record; NOT re-parented to moyu, per this agent's
+# explicit brief.
+id: mfjs-meilong-3x3-v2
+entity: model
+family_id: mfjs-meilong
+manufacturer_id: mfjs
+name: "MFJS MeiLong 3x3 V2"
+aliases:
+  - "MoYu MeiLong 3x3 V2"
+scope_class: core
+generation:
+  label: "V2"
+  ordinal: 3
+  basis: manufacturer_declared
+specs:
+  size_mm: 55.5
+released:
+  value: "2024-04-18"
+  precision: day
+  qualifier: exact
+description: |-
+  Per SpeedCubeShop's own product page (speedcubeshop-moyu-meilong-3x3-v2-magnetic-product):
+  "MoYu MeiLong 3x3 V2 (Magnetic) is a lightweight upgrade to one of the most popular
+  entry-level cubes ever," with key features "Factory-installed magnets for more control",
+  "Reinforced core design", and a "Dragon scale" piece design named in the same page's own
+  version-comparison table as shared across all V2 sub-variants (Lite, Standard, UV Coated) and
+  distinct from the V1 column. "Dragon scale" piece design and "reinforced core" are read as a
+  genuine tooling/mechanism difference from the earlier MeiLong generations, not a sold
+  configuration -- the basis for admitting V2 as its own model. Lite/Standard/UV Coated are
+  variant-level sold configurations of this one V2 design (differing by accessories and
+  exterior coating), not further models.
+
+  Named "V2" without the source stating whether it succeeds MeiLong 3x3 or MeiLong 3c directly;
+  recorded here succeeding MeiLong 3c as the chronologically closer and most-recently-named
+  prior generation, at `uncertain` confidence on that specific edge.
+
+  `weight_g` is left unset in `specs`: the source's own Product Details block gives 66g for
+  the specific UV-coated SKU it sells, but the same page's version-comparison table gives 65g
+  for "V2 (Standard)" -- a real difference between two variants of this one model rather than
+  a single model-level default, so it is left for variant-level records rather than guessed
+  here.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+  /released:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+    note: "'Released: 2024-04-18' is an explicit dated statement in this retailer's own Product
+      Details block, distinct in form from the 'Added:' catalogue-migration artifact pattern."
+  /generation/basis:
+    confidence: uncertain
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+    note: "'V2' is the manufacturer's/retailer's own naming; no first-party MFJS or MoYu source
+      independently confirms the generation number this pass."
+  /description:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+  /aliases:
+    confidence: reported
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+    note: "This retailer's own product name for the identical SKU, reflecting the documented
+      MoYu/MFJS brand-attribution drift already recorded at mfjs-meilong.yml."
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product, speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+    note: "No source states which prior MeiLong 3x3 generation V2 directly succeeds. Recorded
+      against MeiLong 3c as the chronologically closer and most recently named prior model;
+      this could equally be read as succeeding the base MeiLong 3x3 instead."
+relationships:
+  - type: succeeds
+    target: mfjs-meilong-3c
+    target_entity: model

@@ -1,0 +1,31 @@
+# source: speedcubeshop-mofang-jiaoshi-meilong-3c-product
+# SpeedCubeShop's own product page for the MoFang JiaoShi MeiLong 3c 3x3, captured 2020-08-10.
+# Tier 2, first-party retailer copy.
+id: speedcubeshop-mofang-jiaoshi-meilong-3c-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MeiLong 3c 3x3 - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/mofang-jiaoshi-meilong-3c-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200810223815id_/https://speedcubeshop.com/products/mofang-jiaoshi-meilong-3c-3x3"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MeiLong 3c 3x3 is a slightly updated version of the
+  popular MeiLong 3x3. The 3c offers a more stable design, smoother turning, and a slightly
+  lighter feel. This is an amazing option if you are looking for a cheap, but reliable
+  speedcube!" Spec line: "Size: 55mm | Weight: 2.2oz | Released: 11/13/19".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-line fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. States a direct 'more
+  stable design' comparison to the base MeiLong 3x3 -- read as a design-generation claim, not
+  merely a sold configuration, per this archive's model/variant boundary rule. The 'Released:
+  11/13/19' field differs from this same retailer's 'Released: 4/9/19' for the base MeiLong 3x3
+  (speedcubeshop-mofang-jiaoshi-meilong-3x3-product) -- two distinct, product-specific dates,
+  not a shared repeated value -- and is treated as admissible release-date evidence rather than
+  a catalogue-migration artifact for the same reason given on that sibling source."
+status: sourced

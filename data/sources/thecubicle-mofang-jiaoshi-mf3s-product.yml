@@ -1,0 +1,33 @@
+# source: thecubicle-mofang-jiaoshi-mf3s-product
+# TheCubicle's own product page for the MoFang JiaoShi MF3S, captured 2020-09-18. Tier 2,
+# first-party retailer copy. Pass 3 (model enumeration) -- the source that lets MF3S be
+# correctly REJECTED as a model candidate (it is a sold configuration of MF3, not a distinct
+# design) rather than guessed at from its "-S" suffix alone.
+id: thecubicle-mofang-jiaoshi-mf3s-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MF3S Speed Cube - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mf3s"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918201950id_/https://www.thecubicle.com/products/mofang-jiaoshi-mf3s"
+excerpt: |-
+  Product Description: "The new MoFang JiaoShi MF3S is a budget-friendly, entry level 3x3 speed
+  cube in MoYu's Cubing Classroom series. While similar to the MF3 in design and price, the
+  MF3S is available in the stickerless bright colors, and it features a frosted coating on the
+  exterior that has a matte feeling to it. The frosted surface also reduces scratches and has
+  an anti-glare effect in bright conditions."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description, explicitly stating MF3S is
+  'similar to the MF3 in design' and differs only by sticker type (stickerless) and an exterior
+  coating (frosted) -- both variant-level differences per this archive's model/variant boundary
+  rule (DATA_MODEL.md 4.1: colorway/sticker type and coating are variant differences even when
+  they change substantial hardware feel). Used to reject MF3S as a model candidate under
+  mfjs-mf3."
+status: sourced

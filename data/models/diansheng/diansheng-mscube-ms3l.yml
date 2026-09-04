@@ -1,0 +1,64 @@
+# model: diansheng-mscube-ms3l
+# Pass 3 (model enumeration). The only 3x3 found under the diansheng-mscube family this pass.
+# Existence and identity rest on TheCubicle's own product page, tier 2 -- a materially stronger
+# basis than the family's own tier-4-only sourcing. See
+# research/qc/pass3-b2-agent-b-diansheng-mfjs.md.
+id: diansheng-mscube-ms3l
+entity: model
+family_id: diansheng-mscube
+manufacturer_id: diansheng
+name: "MsCube MS3L 3x3"
+scope_class: core
+generation:
+  label: "MS3L"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  core_system: dual_adjustment
+  adjustment_system: tension_compression
+  magnet_architecture: single_layer
+description: |-
+  Per TheCubicle's own product page (thecubicle-mscube-ms3l-3x3-standard-product): "The MsCube
+  MS3L 3x3 (Standard) features a spiderweb pattern on the contact surfaces, swappable
+  center/core pieces to adjust tension, a compression adjustment under each center cap, and a
+  traditional magnetic layout with magnets in the edges and corners." A CDX prefix sweep of
+  https://www.thecubicle.com/products/mscube confirms only two listings under this family --
+  mscube-ms3l-3x3-standard and mscube-ms3l-3x3-enhanced -- both first captured 2022-01-29, i.e.
+  Standard and Enhanced are sold configurations of one product (differing, per that source, in
+  plastic used for internals), not separate models. No second MsCube 3x3 model was found.
+
+  `core_system: dual_adjustment` and `adjustment_system: tension_compression` are read from
+  "swappable center/core pieces to adjust tension" plus "a compression adjustment under each
+  center cap" -- independent tension and compression adjustment, matching those vocabulary
+  values' own definitions. `magnet_architecture: single_layer` is read from "a traditional
+  magnetic layout with magnets in the edges and corners" -- the closest existing vocabulary
+  term to a conventional single set of positioning magnets at standard piece locations; no
+  vocabulary term names "edges and corners" specifically, so this mapping is recorded at
+  `uncertain` on its own attestation line rather than folded into the source's own `probable`
+  confidence for the other two spec fields.
+
+  `size_mm` and `weight_g` are left unset: neither source states them.
+status: drafted
+attestations:
+  /specs/core_system:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+  /specs/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+  /specs/magnet_architecture:
+    confidence: uncertain
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+    note: "Tier 2 source, but the vocabulary has no exact term for 'magnets in the edges and
+      corners'; `single_layer` is the closest fit, recorded at a lower confidence than the
+      source tier alone would otherwise support, to flag the mapping rather than the fact."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+    note: "'MS3L' is the retailer's own product-name element ('MsCube MS3L 3x3'), read as
+      reflecting the manufacturer's own model code; no first-party MsCube or DianSheng source
+      was found this pass to confirm the naming is the manufacturer's own rather than a
+      retailer-assigned SKU label."
+  /description:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]

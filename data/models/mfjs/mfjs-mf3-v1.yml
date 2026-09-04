@@ -1,0 +1,65 @@
+# model: mfjs-mf3-v1
+# Pass 3 (model enumeration). First (base, unsuffixed) generation of MFJS's MF3 succession.
+# Id suffixed "-v1" to avoid colliding with the frozen family id `mfjs-mf3`. See
+# research/qc/pass3-b2-agent-b-diansheng-mfjs.md for the full MF3 succession reasoning,
+# including why MF3S is REJECTED as a model (variant of this one).
+id: mfjs-mf3-v1
+entity: model
+family_id: mfjs-mf3
+manufacturer_id: mfjs
+name: "MFJS MF3"
+scope_class: core
+generation:
+  label: "MF3"
+  ordinal: 1
+  basis: manufacturer_declared
+specs:
+  size_mm: 56.0
+  weight_g: 79.7
+released:
+  value: "2016"
+  precision: year
+  qualifier: circa
+description: |-
+  Per TheCubicle's own product page (thecubicle-mofang-jiaoshi-mf3-product): "The MoFang JiaoShi
+  MF3 is a new MoYu sub-branded 3x3 in the Cubing Classroom series." Dimensions 56.0mm, item
+  weight 79.7g. The base, unnumbered entry in the MF3/MF3RS/MF3RS2/MF3RS3 succession
+  (thecubicle-mofang-jiaoshi-mf3-prefix-2026); the family's own frozen record already places
+  this as the first entry.
+
+  The Speedsolving wiki (speedsolving-wiki-mofang-jiaoshi, live-fetched 2026-09-03 and
+  reconfirmed to carry a "may be currently outdated" banner, hence still tier 4 with no
+  override) gives "The MF3 was released 2016-10-11, it is only available in black and white and
+  I would recommend against buying it." Per the standing evidence-tier-remediation-matrix
+  ruling on this exact source, only `existence_and_naming_at_uncertain_only` and
+  `approximate_chronology_at_uncertain_only` claim types are permitted from it, and precise
+  day/month dates are explicitly forbidden -- so the date below is recorded at year precision,
+  `circa`, `uncertain` confidence, not as the wiki's own stated day.
+
+  A separate, explicitly variant-level configuration, MF3S (stickerless, frosted-coated), is
+  documented at thecubicle-mofang-jiaoshi-mf3s-product as "similar to the MF3 in design" and is
+  correctly excluded here as a model candidate; see the family/model report.
+status: drafted
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3-product]
+    note: "Item Weight (net), not Gross Weight (95g, includes packaging)."
+  /released:
+    confidence: uncertain
+    sources: [speedsolving-wiki-mofang-jiaoshi]
+    note: "Tier 4 only, per research/qc/evidence-tier-remediation-matrix.yml's explicit ruling
+      on this source: existence/naming and approximate chronology only, at uncertain
+      confidence, precise day/month dates forbidden. The wiki's own stated day (2016-10-11) is
+      rounded to year here for that reason."
+  /generation/basis:
+    confidence: uncertain
+    sources: [thecubicle-mofang-jiaoshi-mf3-prefix-2026]
+    note: "MF3/RS/RS2/RS3 is a manufacturer-numbered succession by naming pattern; no single
+      source states 'this is generation 1 of N' explicitly."
+  /description:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3-product, speedsolving-wiki-mofang-jiaoshi, thecubicle-mofang-jiaoshi-mf3s-product]

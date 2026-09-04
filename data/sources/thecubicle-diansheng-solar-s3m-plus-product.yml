@@ -1,0 +1,35 @@
+# source: thecubicle-diansheng-solar-s3m-plus-product
+# TheCubicle's own product page for the DianSheng Solar S3M Plus 3x3, earliest capture
+# 2021-11-08, still resolving as of a 2021-12-03 capture. Tier 2, first-party retailer copy.
+# Pass 3 (model enumeration) — one of two tier 1-2 sources that let diansheng-solar-s3m clear
+# the model-admission bar, where the family itself otherwise rests only on the tier-4
+# Speedsolving wiki.
+id: thecubicle-diansheng-solar-s3m-plus-product
+entity: source
+kind: retailer
+title: "DianSheng Solar S3M Plus 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/diansheng-solar-s3m-plus-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20211203024250id_/https://www.thecubicle.com/products/diansheng-solar-s3m-plus-3x3"
+excerpt: |-
+  Product Description: "The DianSheng Solar S3M Plus 3x3 is a new magnetic 3x3 by long time
+  manufacturer DianSheng. This cube has an interchangeable center cap and spring system so you
+  can personalize its look and feel!" Spec block: "Added: 2021-11-02" (catalogue-migration-era
+  field, not treated as a release date), "Gross Weight: 221g" (packaged weight), magnetic. A
+  customer review on this same capture separately notes DianSheng "should really make a maglev
+  version of this cube" (2021), i.e. no maglev configuration existed for this generation at
+  that time — read as corroborating, not sourcing, since customer reviews are user-generated
+  and inadmissible as a source on their own.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description. Establishes 'Solar S3M
+  Plus' as a real, named, concretely described DianSheng product, distinct in name from the
+  later 'Solar S3M 2022' (thecubicle-diansheng-solar-s3m-2022-product) by its own retailer
+  product-page naming. Does not itself state a release date."
+status: sourced

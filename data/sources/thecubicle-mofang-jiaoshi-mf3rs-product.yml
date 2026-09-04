@@ -1,0 +1,31 @@
+# source: thecubicle-mofang-jiaoshi-mf3rs-product
+# TheCubicle's own product page for the MoFang JiaoShi MF3RS, captured 2019-07-16 and still
+# resolving as of a 2022-04-21 capture. Tier 2, first-party retailer copy.
+id: thecubicle-mofang-jiaoshi-mf3rs-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MF3RS - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mf3rs"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190716060015id_/https://www.thecubicle.com/products/mofang-jiaoshi-mf3rs"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MF3RS is a new MoYu sub-branded 3x3 in the Cubing
+  Classroom series. The MF3RS features great performance and premium design features that push
+  the boundaries of what a budget-friendly cube can do. With excellent performance and a low
+  price, the MF3RS is sure to be a top choice for both beginners and intermediate cubers." Spec
+  block: "Manufacturer: MoFang JiaoShi", "Type: 3x3", "Added: 2018-09-11" (one of this archive's
+  documented catalogue-migration artifact dates -- not treated as a release date), "Gross
+  Weight: 104g", "Dimensions: 56.0mm^3", "Item Weight: 84.6g".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. Establishes
+  MF3RS as a distinct, separately-named, separately-priced product with concrete dimensions and
+  weight differing from MF3's own. Does not itself state a release date; 'Added:' is a
+  documented non-date artifact field, not used for dating."
+status: sourced
