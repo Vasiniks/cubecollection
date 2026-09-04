@@ -1,0 +1,107 @@
+# model: maru-3x3-original
+# Pass 3 (model enumeration), agent C. Maru 3x3's sole documented generation, already
+# substantially researched at pass 1/2. A second, independent tier 2 non-US retailer
+# (cubezz-maru-3x3) found this pass corroborates the base product's existence and approximate
+# size, satisfying RESEARCH_SPEC §3.6a, but disagrees with TheCubicle on weight — recorded as
+# `disputed` rather than resolved.
+id: maru-3x3-original
+entity: model
+family_id: maru-3x3
+manufacturer_id: maru
+name: "Maru 3x3"
+aliases:
+  - "Maru Original 3x3"
+scope_class: core
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+released:
+  value: "2011"
+  precision: year
+  qualifier: circa
+specs:
+  size_mm: 57.0
+  weight_g: 141
+  shape: standard
+description: |-
+  TheCubicle's own product copy (thecubicle-maru-3x3, tier 2): "The original Maru 3x3 was one
+  of the first cubes ever released by Maru several years ago. While the puzzle has been
+  discontinued for quite some time, we recently came across a limited number of them, which we
+  are liquidating at a reduced price." A customer review on the same listing dates the original
+  product to approximately 2011 ("the weilong hadn't come out yet"). An independent, non-US
+  retailer (cubezz-maru-3x3, tier 2, China-based) sells a "Maru 56mm 3x3x3 Magic Cube" of
+  essentially the same dimension (56.7mm vs. TheCubicle's 57.0mm) — read as the same base
+  product, corroborating its existence from a second, independent source per RESEARCH_SPEC
+  §3.6a, though its own generic templated description does not repeat the "one of the first
+  cubes" historical framing.
+
+  A sticker-treatment variant ("Special Patterns" edition, thecubicle-maru-3x3-special-patterns)
+  is a decorative pass-4 lead on this model, not a separate model — its own copy states directly
+  "The original Maru 3x3 is available with a variety of special patterns on the stickers." No
+  further generation was found; this is the family's sole model.
+status: drafted
+attestations:
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-maru-3x3]
+    note: "Carried forward from the family record's own aliases; no source uses 'Maru Original
+      3x3' as a formal product name distinct from plain 'Maru 3x3'."
+  /released:
+    confidence: reported
+    sources: [thecubicle-maru-3x3]
+    note: "Single tier 2 source (a customer review, not the retailer's own structured field),
+      carried forward unchanged from the family record. Nothing independently corroborating an
+      exact year was found this pass, including at cubezz.com."
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [thecubicle-maru-3x3, cubezz-maru-3x3]
+    note: "Two independent tier 2 retailers give closely agreeing figures (57.0mm, 56.7mm) for
+      what is read as the same base product, satisfying rule 9's 'two independent Tier 2
+      sources' bar for `confirmed`. The small numeric gap is treated as ordinary measurement/
+      rounding variance between two independently-run retail catalogues, not a genuine
+      disagreement."
+  /specs/weight_g:
+    confidence: disputed
+    disputed:
+      - value: 141
+        sources: [thecubicle-maru-3x3]
+        confidence: reported
+        note: "TheCubicle's own structured 'Gross Weight' spec field for the plain edition."
+      - value: 84
+        sources: [cubezz-maru-3x3]
+        confidence: reported
+        note: "Cubezz.com's own 'Weight (including the packing)' field for what is read as the
+          same base product."
+    adjudication: "Not adjudicated. The two figures differ by nearly 60g on products otherwise
+      agreeing closely on size, which is too large a gap to confidently attribute to packaging
+      alone (thecubicle-maru-3x3-special-patterns' own 154g figure, for a sticker variant that
+      additionally bundles a stand and lube, is only 13g higher than the plain 141g figure,
+      suggesting TheCubicle's own packaging weight is a small fraction of its total). Recorded
+      as a genuine, unresolved discrepancy per DATA_MODEL rule 5 rather than a preferred value."
+  /specs/shape:
+    confidence: uncertain
+    sources: [thecubicle-maru-3x3]
+    note: "Neither source states 'standard' shape directly; inferred from both listings'
+      ordinary product photography and description with no mention of a non-standard geometry,
+      the same convention already applied to yj-zhilong-mini.yml."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. Neither source describes this generation as magnetic; a
+      circa-2011 flagship product predates the mainstream magnetic-cube era."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found for this single-generation family."
+  /description:
+    confidence: probable
+    sources: [thecubicle-maru-3x3, thecubicle-maru-3x3-special-patterns, cubezz-maru-3x3]

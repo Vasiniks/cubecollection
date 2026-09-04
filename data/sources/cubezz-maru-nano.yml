@@ -1,0 +1,39 @@
+# source: cubezz-maru-nano
+# Pass 3 (model enumeration), agent C, non-US retailer sweep (RESEARCH_SPEC §3.6a). A second,
+# fully independent tier 2 source for the Maru Nano Cube's central significance claim — found
+# via a `cubezz.com/Buy-` CDX prefix sweep, five colour-variant listings ("Red", "Yellow",
+# "Luminous", "Blue", "White", "Black") all under this exact product line, this one captured
+# earliest (2015-05-13), predating thecubicle-maru-nano-3x3's own 2020 capture by five years.
+id: cubezz-maru-nano
+entity: source
+kind: retailer
+tier: 2
+title: "Maru Luminous 15mm Nano Cube – Smallest 3x3x3 Magic Cube DIY Kit – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-4665-Maru+Luminous+15mm+Nano+Cube+-+Smallest+3x3x3+Magic+Cube+DIY+Kit.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150513081335id_/http://www.cubezz.com:80/Buy-4665-Maru+Luminous+15mm+Nano+Cube+-+Smallest+3x3x3+Magic+Cube+DIY+Kit.html"
+excerpt: |-
+  "Maru Luminous 15mm Nano Cube - Smallest 3x3x3 Magic Cube DIY Kit. This Maru Nano Cube is the
+  world's smallest cube (mass production), try and collect one! ... The world's smallest cube.
+  Very tiny cube and very cute. Great for collection." Specifications: "Brand: Maru / Color:
+  Luminous / Size: 15*15*15mm / Weight: 30g." Package note: "Package Without Lube."
+accessed: "2026-09-03"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront).
+  "The world's smallest cube (mass production)" independently and closely echoes TheCubicle's
+  own "the smallest mass-produced 3x3 cube in the world" claim (thecubicle-maru-nano-3x3) from
+  a fully separate company — two independent tier 2 sources making the same specific,
+  falsifiable production-first claim, which is treated as `confirmed` per rule 9 for the
+  existence/significance claim (not for the WCA-legality question, which neither source
+  addresses). Size (15mm) matches thecubicle-maru-nano-3x3 exactly; weight (30g here, for a
+  "Luminous" colourway, vs. 26g "Gross Weight" at TheCubicle for the plain edition) is close but
+  not identical — plausibly a colourway/finish difference rather than a contradiction, not
+  investigated further this pass. This capture (2015-05-13) is a genuine, much earlier
+  "existed by" bound than TheCubicle's own 2020 capture; still not used as a release date, per
+  the standing rule against treating crawl timestamps as such.
+status: sourced

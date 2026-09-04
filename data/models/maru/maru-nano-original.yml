@@ -1,0 +1,94 @@
+# model: maru-nano-original
+# Pass 3 (model enumeration), agent C. Maru Nano Cube's sole documented generation. Explicit
+# `scope_class: conditional` decision per the S6 admission policy: at 15mm this is almost
+# certainly outside any reasonable WCA competition size (WCA Regulation 3a+ permits "puzzles of
+# any reasonable size, at the discretion of the WCA Delegate" — no fixed minimum is specified,
+# but a 15mm cube is a far larger deviation from typical practice than any borderline case this
+# archive has otherwise admitted at `core`), and the significance justification rests on a
+# specific, documented, and now twice-independently-corroborated production-first claim, not
+# merely "it is small."
+id: maru-nano-original
+entity: model
+family_id: maru-nano
+manufacturer_id: maru
+name: "Maru Nano Cube"
+aliases:
+  - "Maru Nano 3x3"
+  - "Maru 15mm Nano Cube"
+scope_class: conditional
+scope_justification: |-
+  TheCubicle's own product copy states directly: "At just 15mm across, the Maru Nano Cube is
+  the smallest mass-produced 3x3 cube in the world!" (thecubicle-maru-nano-3x3, tier 2). An
+  entirely independent retailer found this pass (cubezz-maru-nano, tier 2, China-based)
+  separately and closely echoes the same specific claim: "This Maru Nano Cube is the world's
+  smallest cube (mass production)." Two independent tier 2 sources making the same specific,
+  falsifiable production-first claim is treated as a documented historical/collector
+  significance per RESEARCH_SPEC §2.2 ("a documented production first... is" sufficient
+  justification), not the bare "it is small" that the S6 policy explicitly rejects as
+  insufficient.
+scope_decided_by: model-researcher-agent-c
+scope_decided_on: "2026-09-03"
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+specs:
+  size_mm: 15.0
+  weight_g: 26
+description: |-
+  TheCubicle's own product copy (thecubicle-maru-nano-3x3, tier 2): "This one-of-a-kind cube
+  comes with a little cube pouch, set of stickers, and also the cardboard cutouts to make your
+  own nano cube box and nano cube stand... It also comes with a set of tweezers to help with
+  assembly, and to help pick up the cube... Please note that assembly is required for this
+  cube -- the kit includes all of the parts you need to assemble the cube by yourself." Sold as
+  a self-assembly DIY kit, not pre-assembled. Cubezz.com's independent, earlier listing
+  (cubezz-maru-nano, tier 2, non-US, captured 2015-05-13 — five years before TheCubicle's own
+  2020 capture) confirms multiple colourways ("Red," "Yellow," "Luminous," "Blue," "White,"
+  "Black") of the same 15mm product existed by that date. `piece_count` is left unset: this
+  archive does not assume the ordinary 8-corner/12-edge/6-centre 3x3 default for a 15mm DIY-kit
+  novelty product without a source stating it. No later generation was found; this is the family's sole model.
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: probable
+    sources: [thecubicle-maru-nano-3x3, cubezz-maru-nano]
+    note: "Two independent tier 2 sources state the same specific significance claim
+      independently, satisfying rule 15's tier 1-3 requirement well above its minimum."
+  /aliases:
+    confidence: reported
+    sources: [thecubicle-maru-nano-3x3, cubezz-maru-nano]
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [thecubicle-maru-nano-3x3, cubezz-maru-nano]
+    note: "Two independent tier 2 sources state the identical 15mm figure, satisfying rule 9."
+  /specs/weight_g:
+    confidence: reported
+    sources: [thecubicle-maru-nano-3x3]
+    note: "TheCubicle's 'Gross Weight: 26g' for the plain edition. Cubezz.com separately gives
+      30g for a 'Luminous' colourway of the same product — close but not identical, plausibly a
+      colourway/coating weight difference rather than a contradiction; not merged into one
+      figure or disputed, since the two sources describe different colourways."
+  /specs/shape:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Researched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Researched and not found. Neither source describes this product as magnetic; its
+      tiny scale, DIY-kit assembly, and 'tweezers' inclusion suggest a simple screw-and-spring
+      or similar mechanism, but this is not stated directly."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Researched and not found."
+  /generation/basis:
+    confidence: unknown
+    note: "This archive's own convention; no manufacturer or community numbering scheme was
+      found for this single-generation family."
+  /description:
+    confidence: probable
+    sources: [thecubicle-maru-nano-3x3, cubezz-maru-nano]
