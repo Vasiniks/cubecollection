@@ -1,0 +1,31 @@
+# source: thecubicle-mofang-jiaoshi-mini-3x3-keychain-30mm-product
+# TheCubicle's own product page for the MoFang JiaoShi Mini 3x3 Keychain cube (3.0cm), captured
+# 2020-09-23. Tier 2, first-party retailer copy. NEW DISCOVERY this pass: the prior pass's own
+# mfjs-mini-3x3.yml family record states this 30mm size "was not independently found at this
+# retailer" -- a higher-limit CDX prefix sweep this pass found it. See
+# research/qc/pass3-b2-agent-b-diansheng-mfjs.md.
+id: thecubicle-mofang-jiaoshi-mini-3x3-keychain-30mm-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi Mini 3x3 Keychain cube (3.0cm) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mofang-jiaoshi-mini-3x3-keychain-cube-3-0cm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200923191717id_/https://www.thecubicle.com/products/mofang-jiaoshi-mini-3x3-keychain-cube-3-0cm"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi Mini 3x3 Keychain cube measures just 3.0cm across,
+  making it about 1/2 the width of a typical 3x3 and a bit larger than the usual 3x3 keychain.
+  It is extremely lightweight, and this version features a keychain." Spec block: "Added:
+  2018-09-11" (a documented catalogue-migration artifact date, not treated as a release date),
+  "Gross Weight: 41g", "Dimensions: 30.0mm^3", "Item Weight: 24.9g".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-03; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-03"
+reliability_note: "Tier 2, first-party retailer product description and spec table. Completes,
+  at tier 2, the exact five-size set (50/45/40/35/30mm) the Speedsolving wiki (tier 4) had
+  already described in prose ('produced in sizes of 50mm, 45mm, 40mm, 35mm and 30mm')."
+status: sourced
