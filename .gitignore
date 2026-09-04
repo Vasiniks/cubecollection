@@ -4,3 +4,4 @@ tests/.tmp-dist/
 tests/.tmp-poison/
 .DS_Store
 *.log
+graphify-out/
