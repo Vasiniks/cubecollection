@@ -1,0 +1,45 @@
+# model: witeden-mixup-30-degree-turn
+# Pass 3 (model enumeration), Agent D. One of four models under the frozen `witeden-mixup-3x3`
+# family — see witeden-mixup-oskar.yml for the shared split reasoning.
+id: witeden-mixup-30-degree-turn
+entity: model
+family_id: witeden-mixup-3x3
+manufacturer_id: witeden
+name: "WitEden 3x3x3 Mixup (30-Degree Turn)"
+scope_class: conditional
+scope_justification: |-
+  Same lineage argument as witeden-mixup-oskar.yml: WitEden's continuing "3x3x3 Mixup" product
+  name, built on the Mixup Cube mechanism independently documented as Oskar van Deventer's
+  design mass-produced by WitEden (wikipedia-oskar-van-deventer, wikipedia-combination-puzzle,
+  tier 4, corroboration only). TheCubicle's own dedicated product page
+  (thecubicle-witeden-mixup-3x3-variants, tier 2) supplies the rule-15 tier 1-3 requirement and
+  describes a further distinct locking mechanism (a 30-degree turn required to unlock the inner
+  layers) layered on the base Mixup concept.
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+description: |-
+  TheCubicle's own product page (thecubicle-witeden-mixup-3x3-variants, tier 2): "The WitEden
+  3x3x3 Mixup (30-Degree Turn) turns like a standard 3x3 puzzle until you figure out how to
+  unlock the inner layers." A distinct unlock-geometry mechanism from the plain Mixup and from
+  the Edge-Split variant, treated as its own model under DATA_MODEL section 4.2 (a different
+  internal locking geometry, not a sold configuration of one design).
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: reported
+    sources: [thecubicle-witeden-mixup-3x3-variants, wikipedia-oskar-van-deventer,
+      wikipedia-combination-puzzle]
+  /description:
+    confidence: reported
+    sources: [thecubicle-witeden-mixup-3x3-variants]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found: one of four parallel named designs under the shared
+      family name, not a numbered/sequential generation. Field left unset rather than
+      invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No dedicated Wayback crawl timestamp specific to this
+      variant's own page was captured this pass, and a crawl timestamp would not be a
+      release-date statement in any case per the pass-3 admission policy section 3. Left
+      unset."

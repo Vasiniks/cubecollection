@@ -1,0 +1,48 @@
+# model: witeden-mixup-edge-split
+# Pass 3 (model enumeration), Agent D. One of four models under the frozen `witeden-mixup-3x3`
+# family — see witeden-mixup-oskar.yml for the shared split reasoning.
+id: witeden-mixup-edge-split
+entity: model
+family_id: witeden-mixup-3x3
+manufacturer_id: witeden
+name: "WitEden 3x3x3 Mixup (Edge-Split)"
+scope_class: conditional
+scope_justification: |-
+  Same lineage argument as witeden-mixup-oskar.yml: this is WitEden's own continuing "3x3x3
+  Mixup" product name, built on the Mixup Cube mechanism independently documented as Oskar van
+  Deventer's design mass-produced by WitEden (wikipedia-oskar-van-deventer,
+  wikipedia-combination-puzzle, both tier 4, corroboration only). This specific SKU adds a
+  further described mechanical feature (split edges) on top of that base mechanism, rather than
+  being an unrelated novelty — the retailer's own copy explicitly frames it as turning "like a
+  typical Mixup puzzle" first. TheCubicle's own dedicated product page
+  (thecubicle-witeden-mixup-3x3-variants, tier 2) supplies the rule-15 tier 1-3 requirement.
+scope_decided_by: model-researcher-agent-d
+scope_decided_on: "2026-09-03"
+description: |-
+  TheCubicle's own product page (thecubicle-witeden-mixup-3x3-variants, tier 2): "The WitEden
+  3x3x3 Mixup (Edge-Split) features split edges that can separate when all are correctly
+  aligned along the equator. It turns like a typical Mixup puzzle, but adds a new layer of
+  complexity through its hidden edge mechanics." The split-edge piece construction is treated
+  as a genuine internal-geometry difference from the plain Mixup mechanism per DATA_MODEL
+  section 4.2 (a different edge-piece mold), not a configuration choice — hence its own model
+  rather than a variant.
+status: drafted
+attestations:
+  /scope_justification:
+    confidence: reported
+    sources: [thecubicle-witeden-mixup-3x3-variants, wikipedia-oskar-van-deventer,
+      wikipedia-combination-puzzle]
+  /description:
+    confidence: reported
+    sources: [thecubicle-witeden-mixup-3x3-variants]
+  /generation:
+    confidence: unknown
+    note: "Researched and not found: one of four parallel named designs under the shared
+      family name, not a numbered/sequential generation. Field left unset rather than
+      invented."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. This pass located no dedicated Wayback crawl timestamp
+      specifically for this variant's own page distinct from the family's earliest bound
+      (2020-08-04, a different variant) — and a crawl timestamp is not a release-date statement
+      in any case per the pass-3 admission policy section 3. Left unset."
