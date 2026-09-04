@@ -1,0 +1,45 @@
+# source: speedcubeshop-rubiks-connectedx-3x3-2025
+# SpeedCubeShop's product page for "Rubik's ConnectedX 3x3 - Bluetooth Smart Cube", sold
+# concurrently and cross-linked with the original "Rubik's Connected 3x3 (Magnetic)" listing
+# (speedcubeshop-rubiks-connected-3x3-magnetic-2025). Found during Agent C's Pass-3-B4 identity
+# investigation (Question 2: GoCube X vs Rubik's Connected X). Earliest capture of this exact
+# URL found this pass is 2025-01-22 (query-string variant); this archive_url is the first
+# clean-URL capture.
+id: speedcubeshop-rubiks-connectedx-3x3-2025
+entity: source
+kind: retailer
+title: "Rubik's ConnectedX 3x3 - Bluetooth Smart Cube - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/rubiks-connectedx-3x3-bluetooth-smart-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250715155509id_/https://speedcubeshop.com/products/rubiks-connectedx-3x3-bluetooth-smart-cube"
+excerpt: |-
+  Page title: "Rubik's ConnectedX 3x3 - Bluetooth Smart Cube". Description: "Do you have what
+  it takes to connect and solve the world's favorite puzzle? Evolve your solve with the Rubik's
+  ConnectedX 3x3 Cube. Track your every twist and turn with ConnectedX's Bluetooth
+  integration... With tracking accuracy of 0.001 seconds... Start solving right from the box,
+  no charging required. Battery included." A "Version" selector offers "Connected X" (this
+  page) and "Connected" (linking to speedcubeshop-rubiks-connected-3x3-magnetic-2025).
+  Structured "Product Details" block: "Type: 3x3 / Brand: Spin Master / Magnets: None." Size,
+  Weight, and Released fields are present as labels but left blank/unpopulated on this listing
+  (checked again on a 2025-09-28 capture of the same URL — still blank). Price at this capture:
+  $66.95, vs. $59.95 for the "Connected" (Magnetic) sibling listing.
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 retailer. The structured "Magnets: None" field is the key discriminator against the
+  "Connected" (Magnetic) sibling's "Magnets: Moderate" — a real, structured, non-magnetic vs.
+  magnetic hardware split under the same retailer's own taxonomy, not a wording difference.
+  "No charging required. Battery included" mirrors GoCube-X's own manufacturer-stated CR1225
+  coin-battery, non-rechargeable power architecture (getgocube-com-2021-gocube-x-product) in
+  kind, though no source found this pass states the two use the identical battery part or
+  identical dimensions — Size and Weight are simply not given for this listing. "Brand: Spin
+  Master" (Rubik's/Spin Master's own corporate parent) rather than "Brand: GoCube" (used on the
+  sibling "Connected"/Magnetic listing by the same retailer) is read as a retailer-internal
+  taxonomy inconsistency and treated as weak, non-decisive evidence only — see
+  research/qc/pass3-b4-agent-c-identity.md Question 2 for the full reasoning, including why this
+  is NOT treated as sufficient to record a `rebrand_of` relationship to particula-gocube-x.
+status: sourced
