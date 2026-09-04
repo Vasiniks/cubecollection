@@ -634,3 +634,59 @@ issues:
       their own history, which matters for a chronological exhibition.
     owner: main
     last_updated: "2026-09-04"
+
+  - id: P3-T2
+    severity: low
+    status: needs_human_decision
+    title: "escube-es3 and escube-air may be one product line under two retailer names"
+    category: taxonomy-naming
+    affected_records: [data/families/escube-es3.yml, data/families/escube-air.yml]
+    evidence: >-
+      Three retailers were consulted to break a two-retailer tie. SpeedCubeShop and Cubelelo
+      independently use "ES Cube" as the brand with ES3/ES3 Air as a nested product lineage;
+      TheCubicle is the outlier at title level, but its own URL slugs (escube-es3-*,
+      escube-air-*) already agree with the majority structure. Verdict: retailer normalisation.
+    counterevidence: >-
+      The MODEL-level split is correct regardless, and this is the decisive point: ES3 uses a
+      Dual Adjustment System tuning tension and spring compression, while Air uses a ball-core -
+      a genuine mechanism difference backed by two independent tier-2 sources per side. Whatever
+      the families are called, these are two distinct products. No ESCube first-party site was
+      located.
+    recommendation: >-
+      No action under Pass 3. If adjudicated, the question is whether the two frozen families
+      should merge with Air becoming a line within ES3 - but DATA_MODEL defines no process for
+      merging two live families, which is itself worth resolving before any such merge.
+    confidence: medium
+    downstream_impact: >-
+      None for Pass 3. Both models stand on their own mechanism evidence; only the family
+      labelling is in question.
+    owner: main
+    last_updated: "2026-09-04"
+
+  - id: P3-T3
+    severity: low
+    status: open
+    title: "No relationship type for a shared manufacturing platform across brands"
+    category: schema-gap
+    affected_records: [vocab/relationship-types.yml]
+    evidence: >-
+      Particula manufactures Rubik's Connected, so particula-gocube-x and rubiks-connected-x
+      plausibly share a platform - but the evidence is not decisive for a rebrand, and
+      rebrand_of is the only vocabulary value in the vicinity. Investigation verdict: related
+      products sharing a platform but differing in hardware; the identical-hardware
+      sub-question is explicitly UNRESOLVED. SpeedCubeShop sells Connected and ConnectedX as
+      separately priced listings with a structured Magnets Moderate vs None split;
+      TheCubicle's Connected listing was unchanged through Rubik's own rename; Particula's 2024
+      storefront lists neither X SKU. No dimensions or weight for Connected X were found to
+      compare against GoCube X's 57.0mm/103.0g.
+    counterevidence: >-
+      A shared manufacturer and shared app do not establish shared hardware. The archive
+      correctly recorded no relationship rather than forcing rebrand_of.
+    recommendation: >-
+      Consider a manufactured_by or shared_platform_with relationship type in a later pass.
+      Until then, leave the relationship unrecorded rather than misusing rebrand_of - a wrong
+      typed edge is harder to retract than an absent one.
+    confidence: medium
+    downstream_impact: "None for Pass 3. Relevant to Pass 4 variant work on smart cubes."
+    owner: main
+    last_updated: "2026-09-04"
