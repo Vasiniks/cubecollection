@@ -1,0 +1,35 @@
+# source: thecubicle-cyclone-boys-feiwu
+# Pass 3 (model enumeration), agent C. Found via a `thecubicle.com/products/cyclone*` CDX
+# prefix sweep (53 URLs). Tier 2, first-party US retailer copy, a second independent tier 2
+# source for FeiWu's specifications alongside cubezz-cyclone-boys-feiwu.
+id: thecubicle-cyclone-boys-feiwu
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys 3x3 FeiWu (56mm) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cyclone-boys-3x3-feiwu-56mm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200919020839id_/https://www.thecubicle.com/products/cyclone-boys-3x3-feiwu-56mm"
+excerpt: |-
+  "The Cyclone Boys 3x3 FeiWu (56mm) borrows its design from other high-performing 3x3 cubes,
+  yet it strikes a good balance between affordability and performance." Product Specifications:
+  "Manufacturer: Cyclone Boys / Type: 3x3 / Gross Weight: 86g / Dimensions: 56.0mm3 / Item
+  Weight: 76.0g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party US retailer. Own product title and structured field both give 56.0mm,
+  slightly larger than cubezz-cyclone-boys-feiwu's "55*55*55mm" — a 1mm gap treated as ordinary
+  measurement/rounding variance between two independently-run retail catalogues, the same
+  treatment already applied to maru-3x3-original's closely-agreeing size figures, not a genuine
+  disagreement. Weight figures (86g gross / 76g item here vs. a single unqualified "95g" at
+  cubezz) are in the same general range and not treated as contradicting. "Borrows its design
+  from other high-performing 3x3 cubes" is generic budget-cube marketing framing, not a specific,
+  named derivation claim, and is not treated as rebrand or lineage evidence. This page's own
+  in-page "Added: 2018-09-11" field is the SAME recurring catalogue-migration artifact string
+  already flagged elsewhere in this project and is not used as dating evidence.
+status: sourced

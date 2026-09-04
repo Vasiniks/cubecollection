@@ -1,0 +1,46 @@
+# source: thecubicle-cyclone-boys-g3-feichi
+# Pass 3 (model enumeration), agent C. Found via a `thecubicle.com/products/cyclone*` CDX
+# prefix sweep (53 URLs). Tier 2, first-party US retailer copy, and the sole evidence for a
+# second FeiChi generation: this source states directly that the product is "the latest
+# generation 3x3 from Cyclone Boys" with "a refined internal mechanism design" compared to its
+# predecessor, which is model-identity evidence under DATA_MODEL §4.2, not merely a sold
+# configuration.
+id: thecubicle-cyclone-boys-g3-feichi
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys G3 FeiChi – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cyclone-boys-g3-feichi"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240530031446id_/https://www.thecubicle.com/products/cyclone-boys-g3-feichi"
+excerpt: |-
+  "The Cyclone Boys G3 FeiChi is the latest generation 3x3 from Cyclone Boys. It features an
+  improved design compared to its predecessor, including more rounded pieces and a refined
+  internal mechanism design." Product Specifications: "Manufacturer: Cyclone Boys / Type: 3x3 /
+  Gross Weight: 109g / Dimensions: 56.0mm3 / Item Weight: 91.1g." No "Magnets" field is present
+  in this table (contrast thecubicle-cyclone-boys-feijue, which has one), consistent with a
+  non-magnetic product; customer reviews separately mention "especially the stickerless one."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party US retailer. "G3" parallels Cyclone Boys' own "G4"/"G6"/"G7"/"G8" naming
+  found elsewhere in this pass's CDX sweep for its 4x4/6x6/7x7/8x8 lines — read as this
+  manufacturer's own size-coding prefix ("G" + cube order) rather than a sequential generation
+  count, so "G3" itself is NOT read as meaning "3rd generation." The generation claim instead
+  rests entirely on this source's own prose ("the latest generation... improved design compared
+  to its predecessor... a refined internal mechanism design"), a genuine, if single-source, tier
+  2 statement of a mechanism-level design change from the original FeiChi (cubezz-cyclone-boys-
+  feichi, thecubicle-cyclone-boys-feiwu's sibling era). This capture (2024-05-30) is the only
+  one this pass's CDX sweep found for this exact URL; no separate plain "feichi" product page
+  at this retailer was found in the same sweep, which is at least consistent with this being a
+  genuine relaunch/redesign rather than a permanently-parallel SKU, though that inference is not
+  independently confirmed. Customer reviews reference contemporaries (GTS2M, MF3RS, ThunderClap
+  V2), consistent with continued retail relevance into 2019-2024, not narrowing the redesign's
+  own date. This page's own in-page "Added: 2018-09-11" field is the SAME recurring catalogue-
+  migration artifact string already flagged elsewhere in this project and is not used as dating
+  evidence.
+status: sourced

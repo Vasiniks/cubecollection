@@ -1,0 +1,43 @@
+# source: thecubicle-cyclone-boys-metallic-3x3
+# Pass 3 (model enumeration), agent C. Found via a `thecubicle.com/products/cyclone*` CDX
+# prefix sweep (53 URLs). Tier 2, first-party retailer copy, and the decisive evidence for a
+# zero-model finding on the cyclone-boys-metallic-3x3 family: TheCubicle's own product
+# description states directly that this is "a normal 3x3" distinguished only by a surface
+# coating.
+id: thecubicle-cyclone-boys-metallic-3x3
+entity: source
+kind: retailer
+tier: 2
+title: "Cyclone Boys Metallic 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/cyclone-boys-metallic-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20211205201859id_/https://www.thecubicle.com/products/cyclone-boys-metallic-3x3"
+excerpt: |-
+  "The Cyclone Boys Metallic 3x3 is a normal 3x3, but rather than the traditional stickerless
+  shades, this one has glossy metallic (plastic) sides. This reflective 3x3 makes a fantastic
+  display piece and a great conversation starter!" Product Specifications: "Manufacturer:
+  Cyclone Boys / Type: 3x3 / Gross Weight: 180g / Dimensions: 57.0mm3 / Item Weight: 86.0g."
+accessed: "2026-09-03"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-03"
+reliability_note: |-
+  Tier 2, first-party retailer. "A normal 3x3, but... this one has glossy metallic (plastic)
+  sides" is direct, tier 2 confirmation that the ONLY documented distinguishing feature of this
+  product is a surface coating/finish, not a different mould or mechanism — the DATA_MODEL §4.2
+  materiality test's own example of a variant-level (not model-level) difference. This is the
+  basis for treating cyclone-boys-metallic-3x3 as a zero-model family this pass rather than
+  admitting a model on identity grounds that this source itself argues against. See
+  research/notes/models/cyclone-boys-metallic-3x3-zero-model.md.
+
+  This pass's own `thecubicle.com/products/cyclone*` CDX prefix sweep (53 URLs) additionally
+  found sibling SKUs "cyclone-boys-metallic-3x3-m" (magnetic), "...-m-gradient," and
+  "...-m-macaron" (colourway/finish variants) — none independently retrieved this pass, and none
+  built into records, since they would need a model to attach to and none was admitted. The
+  57.0mm dimension given here happens to match cyclone-boys-feichi-original's own 57.0mm figure
+  exactly (cubezz-cyclone-boys-feichi), which is not treated as evidence either way — a shared
+  ordinary speedcube dimension is expected regardless of which specific base design this coating
+  was actually applied to, and no source states that relationship directly.
+status: sourced

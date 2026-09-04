@@ -29,15 +29,18 @@ released:
     earlier."
 specs:
   size_mm: 40.0
-  weight_g: 29
+  weight_g: 36
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys Mini 3x3 —
-  Released December 2016. A 40 mm cube." Cubezz.com's independent product listing
-  (cubezz-cyclone-boys-mini-3x3, tier 2, non-US) gives "Size: 40*40*40mm / Weight: 29g" for a
+  Released December 2016. A 40 mm cube." Two independent tier 2 retailers agree closely: Cubezz.
+  com (cubezz-cyclone-boys-mini-3x3, non-US) gives "Size: 40*40*40mm / Weight: 29g" for a
   stickerless configuration, agreeing exactly on size but carrying a genuine capture date over a
   year earlier than the wiki's stated release month — recorded as a `disputed` release date
-  rather than silently preferring either source. No further generation or detail was found; this
-  is the family's sole model.
+  rather than silently preferring either source. TheCubicle (thecubicle-cyclone-boys-mini-3x3,
+  US) separately gives "Gross Weight: 36g / Dimensions: 40.0mm3 / Item Weight: 29.7g," calling
+  it "the latest miniature 3x3 to hit the market" (as of its own 2019-08-24 capture; not treated
+  as a release-date claim). No further generation or detail was found; this is the family's sole
+  model.
 status: drafted
 attestations:
   /released:
@@ -60,16 +63,17 @@ attestations:
       wiki's 'December 2016' actually describes a distinct, later Mini 3x3 batch/colourway
       rather than the same product cubezz already carried in 2015."
   /specs/size_mm:
-    confidence: probable
-    sources: [cubezz-cyclone-boys-mini-3x3]
-    note: "Single tier 2 source (cubezz-cyclone-boys-mini-3x3), nothing contradicting — the
-      wiki's tier-3 override forbids citing it to establish a specification, so it is not
-      counted toward this attestation even though it states the same 40mm figure in prose; two
-      independent tier 1-2 sources would be required for `confirmed` per rule 9, and only one
-      is available here."
+    confidence: confirmed
+    sources: [cubezz-cyclone-boys-mini-3x3, thecubicle-cyclone-boys-mini-3x3]
+    note: "Two independent tier 2 retailers state the identical 40mm figure, satisfying rule 9.
+      The wiki's tier-3 override forbids citing it to establish a specification, so it is not
+      counted toward this attestation even though it states the same 40mm figure in prose."
   /specs/weight_g:
-    confidence: reported
-    sources: [cubezz-cyclone-boys-mini-3x3]
+    confidence: probable
+    sources: [thecubicle-cyclone-boys-mini-3x3]
+    note: "TheCubicle's own 'Gross Weight: 36g' used per this archive's established convention;
+      its own 'Item Weight: 29.7g' is very close to Cubezz's unqualified '29g' figure, treated
+      as strong corroboration of the bare-cube weight specifically."
   /specs/shape:
     confidence: unknown
     note: "Researched and not found at tier 1-2."
@@ -98,5 +102,5 @@ attestations:
       documented 'smallest mass-produced 3x3 in the world' significance claim that this product
       has no equivalent of."
   /description:
-    confidence: reported
-    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-mini-3x3]
+    confidence: probable
+    sources: [speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-mini-3x3, thecubicle-cyclone-boys-mini-3x3]
