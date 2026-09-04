@@ -1,0 +1,39 @@
+# source: thecubicle-fangshi-jieyun
+# Pass 3/4 taxonomy investigation (Agent B, FangShi GuangYing/JieYun escalation). TheCubicle's
+# own product listing for "FangShi JieYun," found via a `thecubicle.com/products/fangshi-
+# jieyun` CDX prefix search. Preserved as decisive evidence toward the pass-2 taxonomy gap
+# recorded on data/families/fangshi-shuangren.yml and data/models/fangshi/fangshi-shuangren-
+# original.yml (both frozen, not edited by this investigation).
+id: thecubicle-fangshi-jieyun
+entity: source
+kind: retailer
+tier: 2
+title: "FangShi JieYun – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fangshi-jieyun"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200923001744id_/https://www.thecubicle.com/products/fangshi-jieyun"
+excerpt: |-
+  "The FangShi JieYun is now available! It features an assembly similar to that of the FangShi
+  GuangYing, but with some major differences in the pieces that are expected to make it perform
+  even better than the FangShi GuangYing. It also features minor grooves on the pieces where the
+  stickers are placed." Product Specifications: "Manufacturer / FangShi", "Type / 3x3". Listed as
+  discontinued at time of capture. Customer reviews repeatedly treat JieYun as distinct from and
+  successive to GuangYing and ShuangRen: "unlike the flimsier feeling GuangYing and ShuangRen,"
+  "much less sandy than previous FangshiCubes," "The cube feels much heavier than the fangshi
+  shuangren v2," "By far the best cube in the fangshi line, which is my favorite line of cubes...
+  I'm going to have to buy the primary color version as well as the mini version as well."
+accessed: "2026-09-04"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-04"
+reliability_note: |-
+  Tier 2 first-party retailer listing. Establishes JieYun as a named FangShi 3x3 product,
+  positioned by the retailer's own copy as a direct successor to GuangYing ("assembly similar
+  to that of the FangShi GuangYing, but with some major differences in the pieces"), with an
+  explicit physical mould difference named directly ("minor grooves on the pieces where the
+  stickers are placed") — a distinct internal geometry, not a sold configuration, per DATA_MODEL
+  §4.2. Independently corroborated by a second, non-US retailer whose own copy calls it a "new
+  design": see cubezz-fangshi-jieyun.
+status: sourced
