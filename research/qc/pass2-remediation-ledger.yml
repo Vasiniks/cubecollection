@@ -9,13 +9,13 @@
 # severity: critical | high | medium | low
 
 meta:
-  baseline_sha: "a987500"
+  baseline_sha: "becbf43"
   updated: "2026-09-08"
-  phase: "P26-5 adjudicated: 6 of 7 candidates are genuine missing families, awaiting authorised creation in two tranches; Pass 4 blocked on that plus P26-6"
+  phase: "P26-5 REMEDIATED: all 6 families created in two tranches (126 -> 132 families, 258 -> 269 models). Pass 4 gated on P26-6 leads and the open Tank/Gem mould question"
   counts:
     entities: 54
-    families: 126
-    models: 258
+    families: 132
+    models: 269
     variants: 104
     sources: 467
 
@@ -972,7 +972,7 @@ issues:
 
   - id: P26-10
     severity: high
-    status: needs_human_decision
+    status: resolved
     title: "Six adjudicated missing families await authorised creation, in two tranches"
     category: taxonomy-completeness
     affected_records: "none mutated - families remain at 126"
@@ -1022,5 +1022,89 @@ issues:
       without a source that actually resolves the relationship.
     confidence: uncertain
     downstream_impact: "Minimal. One unverified lead among eleven others."
+    owner: main
+    last_updated: "2026-09-08"
+
+  # ---- P26-5 remediation applied (2026-09-08) ---------------------------------
+
+  - id: P26-12
+    severity: medium
+    status: needs_human_decision
+    title: "ShengShou Tank vs Gem: the deciding mould comparison has never been performed"
+    category: taxonomy-boundary
+    affected_records:
+      - data/families/shengshou-tank.yml
+      - data/models/shengshou/shengshou-tank-standard.yml
+    evidence: >-
+      speedsolving-wiki-shengshou-products states "ShengShou Tank 3x3 - A 3x3 similar to the
+      Gem." Three separate lanes encountered that clause (two P26-5 adjudication lanes and the
+      pre-creation adversarial audit) and none could resolve it. Tank was admitted as its own
+      family per DATA_MODEL 4.2's split-under-uncertainty default, since a wrong split is
+      recoverable by merge and a wrong merge is not.
+    counterevidence: >-
+      The textual evidence leans AWAY from a merge: Tank is 56.0mm with a frosted exterior and
+      black internals, Gem has a 3-piece cap design and a shiny exterior, and the two names run
+      parallel across overlapping puzzle-size ranges rather than succeeding one another. But that
+      is finish language on both sides, which cannot settle a mould question either way.
+    recommendation: >-
+      Fetch and compare product photography for both lines - the same technique that resolved the
+      DaYan Bermuda sub-product question in this same batch, and which no lane applied here. If
+      they share a mould, shengshou-tank-standard moves under shengshou-gem and the tank family
+      is retired.
+    confidence: uncertain
+    downstream_impact: >-
+      One model would move between families. It cannot corrupt variant enumeration elsewhere, but
+      variants enumerated under the wrong parent would have to be re-parented.
+    owner: main
+    last_updated: "2026-09-08"
+
+  - id: P26-13
+    severity: medium
+    status: open
+    title: "legality is required for conditional admissions but exists on no model schema"
+    category: schema
+    affected_records: "all 15 conditional models archive-wide"
+    evidence: >-
+      RESEARCH_SPEC 2.2 requires every conditional record to set legality.wca_status with a
+      basis. The legality property is defined ONLY on variant.schema.json; model.schema.json and
+      family.schema.json have no such field. Found by the P26-5 pre-creation mapping review,
+      which flagged it rather than working around it. All nine pre-existing conditional models
+      lack legality, as do the six added by this remediation - so the requirement has never been
+      enforceable at model level.
+    counterevidence: >-
+      Rule 15 does enforce the other half of 2.2 (scope_justification prose plus a tier 1-3
+      attestation), so conditional admissions are not unevidenced - only their WCA status is
+      unrecorded in a structured field.
+    recommendation: >-
+      Either add legality to model.schema.json and backfill all 15 conditional models, or amend
+      RESEARCH_SPEC 2.2 to state that WCA status is carried in scope_justification prose at model
+      level. Do not silently leave the spec asserting a requirement the schema cannot express.
+    confidence: confirmed
+    downstream_impact: >-
+      No incorrect data - a missing structured field, not a wrong value. Bears on Pass 4, where
+      variants DO carry legality and may inherit nothing coherent from their models.
+    owner: main
+    last_updated: "2026-09-08"
+
+  - id: P26-14
+    severity: low
+    status: open
+    title: "Source ids cited in prose are unvalidated"
+    category: tooling
+    affected_records: "data/sources/thecubicle-shengshou-other-3x3-lines-2026.yml (fixed)"
+    evidence: >-
+      The P26-5 adversarial audit found a citation to `thecubicle-dayan-gem-cube-i-2019`, a
+      source id that has never existed. It sat inside an excerpt rather than an attestation
+      sources list, so validate.mjs - which checks only attestation source refs - structurally
+      cannot catch it. Fixed in place, but the class of defect remains undetectable.
+    counterevidence: >-
+      Attestation source refs, the ones that carry evidentiary weight, ARE validated and all
+      resolve. A prose citation misleads a reader but does not corrupt a claim's evidence chain.
+    recommendation: >-
+      Add an advisory lint rule scanning record prose for strings matching the source-id shape
+      that do not resolve to a source record. Advisory, not blocking - prose legitimately
+      mentions ids in passing.
+    confidence: confirmed
+    downstream_impact: "A reader chasing a citation finds nothing. No claim rests on it."
     owner: main
     last_updated: "2026-09-08"

@@ -30,5 +30,8 @@ reliability_note: "TheCubicle's own structured spec table and product-descriptio
   retailer under 'DIY Kits' rather than its own '3x3' category. No documented historical or
   collector significance was found beyond generic novelty description, so this does not clear
   RESEARCH_SPEC §2.2's conditional-admission bar either. Used to support the `cubetwist`
-  zero-family finding."
+  zero-family finding. NOTE 2026-09-08: that zero-family finding was
+  SUPERSEDED by P26-5 — CubeTwist's own site shows a dedicated 3x3x3 category and the family
+  `cubetwist-3x3` now exists. This source still correctly evidences that THIS product is a
+  novelty/shape-mod item outside that family; it no longer supports a zero-family conclusion."
 status: sourced

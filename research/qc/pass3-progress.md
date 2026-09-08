@@ -1,24 +1,24 @@
 # Pass 3 — model enumeration progress
 
-**Updated:** 2026-09-08 (P26-5 adjudicated) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
-**Status: 4 established families ADDED (122 -> 126). Pass 3 reconciled against them. Pass 4 STILL BLOCKED — see below.**
+**Updated:** 2026-09-08 (P26-5 remediated) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
+**Status: 10 families added in total (122 -> 132). Pass 3 reconciled against all of them. Pass 4 gated — see below.**
 
 ## Invariants (verified at this commit)
 
 | | Frozen at | Now | |
 |---|---|---|---|
 | entities | 54 | **54** | ✓ |
-| families | 122 (frozen) | **126** | +4 by authorised P26-1 remediation |
+| families | 122 (frozen) | **132** | +4 P26-1, +6 P26-5 — all authorised |
 | variants | **104 — Pass 4, must not change** | **104** | ✓ |
-| models | 48 at Pass 3 start | **258** | +205 Pass 3, +5 remediation |
+| models | 48 at Pass 3 start | **269** | +205 Pass 3, +5 P26-1, +11 P26-5 |
 | sources | 289 at Pass 3 start | **460** | +171 (+24 in Pass 2.6) |
 
-Verified programmatically across all 258 models: every `family_id` resolves, every model's
+Verified programmatically across all 269 models: every `family_id` resolves, every model's
 `manufacturer_id` matches its family's, every model carries `scope_class`, no duplicate ids.
 
-`scope_class`: **core 237 · reference_only 12 · conditional 9**
+`scope_class`: **core 241 · reference_only 13 · conditional 15**
 
-## Coverage — 123 of 126 families have models
+## Coverage — 129 of 132 families have models
 
 | Batch | Scope | Models |
 |---|---|---|
@@ -26,7 +26,8 @@ Verified programmatically across all 258 models: every `family_id` resolves, eve
 | **2** | YuXin · DianSheng+MFJS · CycloneBoys+Maru · Rubik's cluster | 51 |
 | **3** | Smart cubes · Historic makers · MF8/HuaMeng/ESCube · MoYu sub-brands+NewIsland | 33 |
 | **4** | Final seven families | 13 |
-| **R** | **Pass 2.6 remediation** — the 4 established missing families | **5** |
+| **R1** | **P26-1 remediation** — the 4 established missing families | **5** |
+| **R2** | **P26-5 remediation** — the 6 adjudicated candidate families | **11** |
 
 ## The 3 remaining zero-model families — all documented conclusions
 
@@ -111,9 +112,9 @@ the gap.**
 Model reconciliation for the new layer is **complete**: no model needed reassigning, because
 none existed for any of the four lines — the only prior references were escalation flag
 comments. All five models are new, none duplicated. Every family_id and manufacturer_id
-resolves; 123 of 126 families now have models; the same three zero-model families remain.
+resolves; 129 of 132 families now have models; the same three zero-model families remain.
 
-**Pass 3 is complete as reconciled against the current 126-family taxonomy.** It is not
+**Pass 3 is complete as reconciled against the current 132-family taxonomy.** It is not
 complete against a taxonomy that still has open candidates.
 
 **What still blocks Pass 4:**
@@ -121,7 +122,9 @@ complete against a taxonomy that still has open candidates.
 | Issue | Blocker |
 |---|---|
 | ~~`P26-5`~~ | **RESOLVED 2026-09-08.** All 7 adjudicated: 6 genuine missing families, 1 refused (Metal Cube). Superseded by `P26-10` |
-| `P26-10` | **6 adjudicated families await authorised creation** — tranche 1 `confirmed` (cubetwist-3x3, dayan-bermuda), tranche 2 `probable` (4 ShengShou lines) |
+| ~~`P26-10`~~ | **RESOLVED 2026-09-08.** All 6 created in two tranches: `cubetwist-3x3`, `dayan-bermuda`, `shengshou-rainbow`, `shengshou-gem`, `shengshou-tank`, `shengshou-crazy` |
+| `P26-12` | Tank/Gem mould comparison never performed — one model could move |
+| `P26-13` | `legality` required for conditional admissions but absent from `model.schema.json` |
 | `P26-6` | **11 unverified leads** — 6 Cyclone Boys, 4 Maru, Cubelelo Drift |
 | `P26-3` | §3.6a never applied retroactively to the family register |
 | `P26-2` / `P26-8` | Escalation roll-up still has no mechanism — it recurred twice more during the remediation itself |

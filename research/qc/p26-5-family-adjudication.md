@@ -4,6 +4,13 @@
 **Taxonomy mutated: NONE.** Families 126, models 258, variants 104, manufacturers 54 — unchanged.
 This is a **decision checkpoint**, not a mutation. Creation is deliberately deferred.
 
+> **UPDATE 2026-09-08 — the creation this document deferred has since been AUTHORISED and
+> APPLIED.** All six families were created in two tranches (`confirmed` and `probable` kept
+> separate): families 126 → **132**, models 258 → **269**. Issue `P26-10` is resolved. Everything
+> below describes the adjudication as it stood when made and is unchanged. Two new issues came
+> out of the creation: `P26-12` (the Tank/Gem mould comparison, still unperformed) and `P26-13`
+> (`legality` missing from `model.schema.json`).
+
 ---
 
 ## 1. The verdict

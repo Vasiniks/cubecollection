@@ -526,3 +526,70 @@ none — neither matching the dead-site profile behind every real miss.
 Then `P26-6`'s eleven leads (now twelve — `P26-11` adds ShengShou Metallic), then re-freeze.
 
 **Pass 4 remains NOT STARTED. Variants remain at 104.**
+
+---
+
+# P26-5 REMEDIATION APPLIED (2026-09-08) — ALL SIX FAMILIES CREATED
+
+**Records:** `research/qc/p26-5-family-adjudication.md` (the decision),
+`p26-5-final-mapping-review.md` and `p26-5-final-adversarial-audit.md` (the pre-creation
+reviews). Authorised by `P26-10`, now **resolved**. Created in **two separate tranches** so
+`confirmed` and `probable` evidence were never conflated in one mutation.
+
+## Final state
+
+| | Before P26-1 | After P26-1 | **After P26-5** |
+|---|---|---|---|
+| families | 122 | 126 | **132** |
+| models | 253 | 258 | **269** |
+| variants | 104 | 104 | **104 — unchanged** |
+| manufacturers | 54 | 54 | **54 — unchanged** |
+| sources | 460 | 460 | **467** |
+| families with models | 119/122 | 123/126 | **129/132** |
+| zero-model families | 3 | 3 | **3 — same three** |
+
+`scope_class`: **core 241 · conditional 15 · reference_only 13**
+
+## What was created
+
+**Tranche 1 — `confirmed`, on first-party evidence**
+- `cubetwist-3x3` — 1 model, `core`
+- `dayan-bermuda` — 5 models (Triangle, Column, House I, House II, Star), all `conditional`,
+  **no `generation` set** (parallel products, `witeden-mixup-3x3` precedent)
+
+**Tranche 2 — `probable`**
+- `shengshou-rainbow` · `shengshou-gem` · `shengshou-tank` — 1 model each, `core`
+- `shengshou-crazy` — 2 models with **differentiated scope**: `reference_only` for the first
+  generation (generic mechanism, no significance claim — the `calvins-full-function-crazy-3x3`
+  precedent), `conditional` for V2 (documented 8→9 ring-piece change + a 1400-unit LE)
+
+**Not created:** ShengShou Metal Cube, refused at `E`.
+
+## The pre-creation reviews changed what was written
+
+Both ran **before** any mutation, and both earned it:
+
+- The **adversarial audit** found that Bermuda's "four distinct moulds" claim rested on product
+  photography **never preserved as a citable source**. The family doesn't depend on it — DaYan's
+  own page names all five — so the geometry language is attested at `reported` with the gap
+  stated on each record, rather than written as fact. It also caught a dangling citation to a
+  source id that never existed (`P26-14`).
+- The **mapping review** supplied the `witeden-mixup` precedent for Bermuda's unset `generation`,
+  resolved Crazy's disputed scope against an exact precedent, and flagged that **`legality` is
+  absent from `model.schema.json`** despite §2.2 requiring it (`P26-13`, archive-wide).
+
+## Superseded, not deleted
+
+`data/manufacturers/cubetwist.yml`'s *"No standard WCA-legal 3x3 was found"* and its
+novelty-specialist framing are **marked SUPERSEDED in place**, with the original text preserved
+as the record of what that pass concluded. Two CubeTwist sources citing the zero-family finding
+carry the same marker. Historical research logs are untouched.
+
+## Is the taxonomy safe to freeze?
+
+**Yes, with two bounded caveats** — see the final report. `P26-12` (Tank/Gem mould question)
+could move **one model** between two families that both exist; it cannot corrupt anything else.
+`P26-6`/`P26-11` hold twelve unverified leads, none of which has evidence approaching the bar the
+six just admitted cleared.
+
+**Pass 4 remains NOT STARTED. Variants remain at 104.**

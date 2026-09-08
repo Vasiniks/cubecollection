@@ -63,11 +63,14 @@ reliability_note: |-
 
   PARTIALLY RESOLVED 2026-09-08 (Pass 2.6, ledger P26-1). The escalation above was correct and
   is preserved verbatim as the record of how the gap was found. YuFeng is now the family
-  `shengshou-yufeng`, with both generations enumerated as models. The rest of the escalation
-  remains OPEN: ShengShou Crazy 3x3 is ledger P26-5 (a shape-mod line with an unresolved
-  scope_class question), and the Rainbow, Gem, Tank and Metal Cube lines named in the excerpt
-  above are also P26-5 and still have no family. This record's own statement that only seven
-  ShengShou families existed was true when written; there are now eight.
+  `shengshou-yufeng`, with both generations enumerated as models. The rest of the escalation is now
+  also resolved (P26-5, 2026-09-08): Crazy, Rainbow, Gem and Tank are all families, Crazy's
+  scope_class question being settled as reference_only for its first generation and conditional
+  for V2. Metal Cube alone was REFUSED — no cross-range naming, a single publisher, and
+  marketing copy that fails RESEARCH_SPEC §2.2's documented-significance bar. This record's own statement that only seven
+  ShengShou families existed was true when written; after the P26-5 remediation of 2026-09-08
+  there are twelve — YuFeng, plus Rainbow, Gem, Tank and Crazy, all four of which were named in
+  the excerpt above and are now families.
 
   This source is also the archive's worked example of ledger P26-2: the escalation survived only
   because it was written into a canonical record's notes. The Pass 3 lane that found it was

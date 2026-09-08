@@ -22,5 +22,8 @@ link_status: dead
 last_checked: "2026-09-03"
 reliability_note: "TheCubicle's own structured spec table and product-description prose, tier
   2. Confirms 'Type: Shape Mods' — no base-model or rebrand claim is made, unlike CubeStyle's
-  equivalent decorated 3x3 listings. Used to support the `cubetwist` zero-family finding."
+  equivalent decorated 3x3 listings. Used to support the `cubetwist` zero-family finding. NOTE 2026-09-08: that zero-family finding was
+  SUPERSEDED by P26-5 — CubeTwist's own site shows a dedicated 3x3x3 category and the family
+  `cubetwist-3x3` now exists. This source still correctly evidences that THIS product is a
+  novelty/shape-mod item outside that family; it no longer supports a zero-family conclusion."
 status: sourced
