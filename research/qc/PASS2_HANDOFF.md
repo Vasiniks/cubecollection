@@ -593,3 +593,84 @@ could move **one model** between two families that both exist; it cannot corrupt
 six just admitted cleared.
 
 **Pass 4 remains NOT STARTED. Variants remain at 104.**
+
+---
+
+# PRE-PASS-4 FINAL QC (2026-09-08) — TAXONOMY FROZEN
+
+Both bounded issues from the P26-5 remediation are resolved. **The 132-family taxonomy is frozen.**
+
+## P26-12 — ShengShou Tank vs Gem: **DISTINCT** (`probable`)
+
+Three earlier lanes met the wiki's *"Tank — a 3x3 similar to the Gem"* and none resolved it,
+because none fetched product photography. This one did, and **preserved it properly** — archived
+Shopify CDN URLs with **sha256 hashes** of the retrieved files, the Tank asset cross-checked
+across two separate crawls. (That preservation is exactly what the DaYan Bermuda mould claim was
+faulted for lacking in the previous round.)
+
+**Decisive evidence — the packaging carries two unrelated native names:**
+Gem's box prints **"GEM" with 宝石** (gem, precious stone); Tank's prints **"TANK" with 坦克**
+(the armoured-vehicle word). Observed directly off the box art, explicitly *not* an assumed
+transliteration. A renamed product does not carry a different native name on its own packaging.
+
+Supporting: Gem's missing dimension is now **explained rather than absent** — TheCubicle's own
+catalogue JSON tags its dimension facet with the fallback `Dimensions_Other` against Tank's
+`Dimensions_56.0`, so the retailer never assigned Gem a size. And the ranges are independently
+managed — Gem's 4x4 SKU was added *three months after* Gem 3x3 was discontinued, which is not the
+shape of a hand-off.
+
+**Recorded against the finding:** the mould comparison itself was **inconclusive** — both show the
+same generic budget silhouette, no macro geometry shot exists in any crawled asset, and the
+forum/review search was cut short by budget. That is why this closes at `probable`, not
+`confirmed`, and why `P26-15` stays open. **No reassignment. Both families stand.**
+
+## P26-13 — conditional legality: **mechanically enforced**
+
+Not a missing field but an **unenforced policy claim**. §2.2 said *"Rule 15 blocks a conditional
+record without both"*; rule 15 blocked on one, because `legality` existed only on
+`variant.schema.json`. All 15 conditional models silently omitted it — the same shape as the
+rule 9 and rule 40 defects.
+
+**Placement decided from the data model, not copied.** WCA eligibility is a property of the
+**design**, so `legality` now sits on `model` via the *same shared `$ref`*, with variants
+overriding only where configuration changes the answer — and `validate.mjs` inherits
+`/legality/wca_status` variant-from-model exactly as `/config/*` inherits `/specs/*`. `family`
+deliberately gets nothing. Rule 15 now enforces all three parts: status present, status
+`not_legal` or `unknown`, and a stated `basis`.
+
+**No legality was invented.** 13 models are `not_legal` on mechanisms their own records already
+document, and every attestation states that no source addresses eligibility directly, so the
+inference chain is visible. **Two are `unknown` — `conditional` does not imply `not_legal`:**
+`maru-nano-original` and `qiyi-sail-big` are standard-mechanism 3x3s admitted on documented
+significance, which §2.2 anticipates. 8 `core` sourced models carry an **attested absence**.
+
+**Four fixtures, one per branch** — a valid conditional that must stay clean, plus three that each
+trip exactly one branch (missing legality, `legal` status, missing basis), each carrying a
+complete justification half so only its own branch can fail. Three targeted selftest assertions
+match each branch's message.
+
+## Final state
+
+| | |
+|---|---|
+| manufacturers | **54** |
+| families | **132 — FROZEN** |
+| models | **269** |
+| variants | **104** |
+| sources | **470** |
+| families with models | **129 / 132** |
+| zero-model families | **3** (documented) |
+| `scope_class` | core 241 · conditional 15 · reference_only 13 |
+| conditional models carrying legality | **15 / 15** |
+| rule 40 | **4 warnings — baseline held** |
+
+## Remaining open items — none can materially corrupt Pass 4
+
+`P26-15` Tank/Gem geometry unproven — both families exist either way ·
+`P26-6`/`P26-11` twelve unverified leads, none near the bar the six admitted cleared ·
+`P26-14` prose citations unvalidated · `P26-2`/`P26-8` roll-up mechanism ·
+`P26-3` §3.6a retroactive coverage (39/41 manufacturers, the two gaps off-profile) ·
+`P26-9` thin family dating.
+
+**Pass 3 is fully reconciled against the 132-family taxonomy. Pass 4 is NOT STARTED and remains
+awaiting explicit authorisation.**

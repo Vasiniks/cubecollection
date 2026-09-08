@@ -15,7 +15,12 @@ description: |-
   that could denote a genuine mould difference rather than a finish, but no source states which,
   and it is not treated as establishing anything beyond the description quoted.
 
-  No dimension is given by any source located, so `size_mm` is unset.
+  No dimension is given by any source located, so `size_mm` is unset — and the reason is now
+  documented: TheCubicle's own catalogue data tags Gem's dimension facet `Dimensions_Other`,
+  the retailer's fallback, so it never recorded a size for this product.
+
+  **Distinct from ShengShou Tank** (ledger P26-12, resolved 2026-09-08): the two lines carry
+  unrelated Chinese names on their packaging, 宝石 against 坦克.
 status: sourced
 
 attestations:
@@ -35,8 +40,11 @@ attestations:
       'Gross Weight 100g' is handled identically."
   /specs/size_mm:
     confidence: unknown
-    note: "Searched and not found. TheCubicle's spec table for this product gives a weight but no
-      dimension, and no other retailer carries the 3x3."
+    note: "Searched and not found, and now EXPLAINED rather than merely absent: TheCubicle's own
+      embedded catalogue JSON tags this product's dimension facet with the literal fallback
+      value `Dimensions_Other`, against `Dimensions_56.0` on the ShengShou Tank listing
+      (shengshou-gem-tank-catalog-facets-2026). The retailer never assigned Gem a numeric size,
+      so no source omitted it by oversight — none ever held it."
   /specs/core_system:
     confidence: unknown
     note: "Searched and not found. ShengShou's official domain is dead; the retailer channel is

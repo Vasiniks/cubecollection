@@ -1,7 +1,7 @@
 # Pass 3 — model enumeration progress
 
 **Updated:** 2026-09-08 (P26-5 remediated) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
-**Status: 10 families added in total (122 -> 132). Pass 3 reconciled against all of them. Pass 4 gated — see below.**
+**Status: TAXONOMY FROZEN at 132 families / 269 models. Pass 3 fully reconciled. Pass 4 awaiting authorisation.**
 
 ## Invariants (verified at this commit)
 
@@ -123,8 +123,9 @@ complete against a taxonomy that still has open candidates.
 |---|---|
 | ~~`P26-5`~~ | **RESOLVED 2026-09-08.** All 7 adjudicated: 6 genuine missing families, 1 refused (Metal Cube). Superseded by `P26-10` |
 | ~~`P26-10`~~ | **RESOLVED 2026-09-08.** All 6 created in two tranches: `cubetwist-3x3`, `dayan-bermuda`, `shengshou-rainbow`, `shengshou-gem`, `shengshou-tank`, `shengshou-crazy` |
-| `P26-12` | Tank/Gem mould comparison never performed — one model could move |
-| `P26-13` | `legality` required for conditional admissions but absent from `model.schema.json` |
+| ~~`P26-12`~~ | **RESOLVED 2026-09-08 — DISTINCT.** Packaging carries unrelated native names, 宝石 vs 坦克, on preserved photography. No reassignment |
+| ~~`P26-13`~~ | **RESOLVED 2026-09-08.** `legality` added to `model.schema.json` via the shared `$ref`; rule 15 now enforces all three parts; 15/15 conditional models carry it |
+| `P26-15` | Tank/Gem *geometry* still unproven — the finding rests on naming, not moulds. Cannot affect Pass 4 |
 | `P26-6` | **11 unverified leads** — 6 Cyclone Boys, 4 Maru, Cubelelo Drift |
 | `P26-3` | §3.6a never applied retroactively to the family register |
 | `P26-2` / `P26-8` | Escalation roll-up still has no mechanism — it recurred twice more during the remediation itself |

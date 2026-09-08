@@ -1,7 +1,7 @@
 # family: shengshou-tank
 # P26-5 remediation (ledger P26-10, tranche 2 / probable, authorised 2026-09-08).
-# THE WEAKEST OF THE SIX ADMISSIONS, and recorded as such — see /name below and the open
-# Tank-versus-Gem question in the description. Admitted because it meets the same evidentiary bar
+# The weakest of the six admissions on publisher breadth (one publisher), and recorded as such
+# on /name below. The Tank-versus-Gem identity question is RESOLVED — see the description. Admitted because it meets the same evidentiary bar
 # as the five pre-existing ShengShou families, not because the case is strong in absolute terms.
 id: shengshou-tank
 entity: family
@@ -29,10 +29,28 @@ description: |-
   against Gem's 104g *shiny* exterior and "3-piece cap design", and the two names run parallel
   across overlapping size ranges rather than succeeding one another.
 
-  **What would settle it is a mould-level comparison that nobody has performed.** No lane fetched
-  product photography for either line, despite that exact technique resolving the DaYan Bermuda
-  question in this same batch. This is the highest-value unresolved item left in the taxonomy and
-  is flagged for a pass before variant enumeration, since a merge would move this family's model.
+  **RESOLVED 2026-09-08 (ledger P26-12): DISTINCT, at `probable`.** The question above was
+  settled by preserved product photography — the technique three earlier lanes had not applied.
+  The decisive evidence is the packaging itself: **Gem's box prints "GEM" with the Chinese
+  characters 宝石** (gem, precious stone) while **Tank's prints "TANK" with 坦克** (the
+  armoured-vehicle word). Two unrelated native names, read directly off the box art and recorded
+  as directly observed rather than as an assumed transliteration
+  (shengshou-gem-3x3-product-photography-2026, shengshou-tank-3x3-product-photography-2026, both
+  preserved with sha256 hashes of the retrieved files). A renamed product does not carry a
+  different native name on its own packaging.
+
+  Two supporting findings. Gem's absent dimension is explained rather than merely missing:
+  TheCubicle's own catalogue JSON tags Gem's dimension facet with the literal fallback
+  `Dimensions_Other` against Tank's `Dimensions_56.0`, so the retailer never assigned Gem a size
+  (shengshou-gem-tank-catalog-facets-2026). And the two ranges are independently managed rather
+  than sequential — Gem's own 4x4 SKU was added three months *after* Gem 3x3 was marked
+  discontinued, which is not the shape of a rename or hand-off.
+
+  **What remains unproven, stated plainly:** the mould comparison itself was **inconclusive**.
+  Both photographs show the same generic rounded-corner budget stickerless silhouette common to
+  many unrelated cubes of that era, and no macro shot of edge or corner-cut geometry exists in
+  any crawled asset. The naming evidence is what carries this, not the geometry — which is why it
+  closes at `probable` rather than `confirmed`.
 status: sourced
 
 attestations:

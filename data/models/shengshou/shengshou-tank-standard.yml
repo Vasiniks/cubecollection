@@ -1,6 +1,6 @@
 # model: shengshou-tank-standard
 # P26-5 remediation (ledger P26-10, tranche 2). Created with its family; no prior record existed.
-# If the open Tank-versus-Gem question is ever resolved as a merge, THIS is the record that moves.
+# The Tank-versus-Gem question is resolved as DISTINCT (P26-12); this record stays where it is.
 id: shengshou-tank-standard
 entity: model
 family_id: shengshou-tank
@@ -14,12 +14,15 @@ description: |-
   (thecubicle-shengshou-other-3x3-lines-2026, capture 2020-09-18, Type "3x3", 56.0mm, Gross
   Weight 100g). A standard WCA-form 3x3x3 — `scope_class: core`.
 
-  **This model carries the family's open question.** The Speedsolving wiki calls Tank "a 3x3
-  similar to the Gem", and no mould-level comparison has ever been made. The textual evidence
-  distinguishes them — Tank is 100g/56.0mm and *frosted*, Gem is 104g and *shiny* with a
-  "3-piece cap design" — but that is finish language on both sides, which is exactly the kind of
-  evidence that cannot settle a mould question. Recorded separately per DATA_MODEL §4.2's
-  split-under-uncertainty default: a wrong split is recoverable by merge, a wrong merge is not.
+  **The Tank-versus-Gem question that this record used to carry is RESOLVED** (ledger P26-12,
+  2026-09-08): the two are **distinct**, at `probable`. Preserved product photography shows the
+  packaging carries two unrelated Chinese names — 坦克 on Tank's box, 宝石 on Gem's — observed
+  directly rather than transliterated. The split this record was created under therefore stands
+  on evidence rather than on DATA_MODEL §4.2's split-under-uncertainty default.
+
+  The mould comparison remains inconclusive — both cubes show the same generic budget silhouette
+  and no macro geometry shot exists — so the finding rests on naming and catalogue behaviour, not
+  on geometry.
 status: sourced
 
 attestations:

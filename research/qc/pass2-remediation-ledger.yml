@@ -9,15 +9,15 @@
 # severity: critical | high | medium | low
 
 meta:
-  baseline_sha: "becbf43"
+  baseline_sha: "28d45ad"
   updated: "2026-09-08"
-  phase: "P26-5 REMEDIATED: all 6 families created in two tranches (126 -> 132 families, 258 -> 269 models). Pass 4 gated on P26-6 leads and the open Tank/Gem mould question"
+  phase: "PRE-PASS-4 QC COMPLETE: P26-12 resolved DISTINCT on preserved photography, P26-13 enforced at model level. Taxonomy frozen at 132 families / 269 models. Pass 4 awaiting authorisation"
   counts:
     entities: 54
     families: 132
     models: 269
     variants: 104
-    sources: 467
+    sources: 470
 
 issues:
 
@@ -1029,7 +1029,7 @@ issues:
 
   - id: P26-12
     severity: medium
-    status: needs_human_decision
+    status: resolved
     title: "ShengShou Tank vs Gem: the deciding mould comparison has never been performed"
     category: taxonomy-boundary
     affected_records:
@@ -1060,7 +1060,7 @@ issues:
 
   - id: P26-13
     severity: medium
-    status: open
+    status: resolved
     title: "legality is required for conditional admissions but exists on no model schema"
     category: schema
     affected_records: "all 15 conditional models archive-wide"
@@ -1106,5 +1106,38 @@ issues:
       mentions ids in passing.
     confidence: confirmed
     downstream_impact: "A reader chasing a citation finds nothing. No claim rests on it."
+    owner: main
+    last_updated: "2026-09-08"
+
+  # ---- pre-Pass-4 QC complete (2026-09-08) ------------------------------------
+
+  - id: P26-15
+    severity: low
+    status: open
+    title: "Tank/Gem mould geometry remains unproven; the finding rests on naming"
+    category: taxonomy-boundary
+    affected_records:
+      - data/families/shengshou-tank.yml
+      - data/families/shengshou-gem.yml
+    evidence: >-
+      P26-12 resolved Tank and Gem as DISTINCT at probable, but on packaging names (坦克 against
+      宝石, observed directly off preserved photography) and on catalogue behaviour, NOT on
+      geometry. The photographic mould comparison was inconclusive: both cubes show the same
+      generic rounded-corner budget stickerless silhouette common to many unrelated cubes of the
+      era, and no macro shot of edge or corner-cut geometry exists in any crawled asset. A web
+      search for direct forum or review comparisons was cut short by budget and is recorded as
+      not searched to completion rather than as nothing found.
+    counterevidence: >-
+      Two unrelated native names on the manufacturer's own packaging is strong evidence against a
+      rename, and the parallel-range management (Gem's 4x4 added three months after Gem 3x3 was
+      discontinued) independently argues the same way. Nothing found supports a merge.
+    recommendation: >-
+      Leave both families standing. If a macro geometry shot or a direct comparison review
+      surfaces later, revisit; a shared mould would still not by itself merge two lines the
+      manufacturer names differently.
+    confidence: probable
+    downstream_impact: >-
+      None material for Pass 4. Both families exist and each holds one model; variants enumerate
+      under whichever parent they belong to regardless of whether the moulds turn out related.
     owner: main
     last_updated: "2026-09-08"
