@@ -425,7 +425,7 @@ candidate at `probable`, not an established family. It remains open as a separat
 
 ## Model reconciliation: complete
 
-Every `family_id` and `manufacturer_id` resolves. All 12 `successor_family_id` values resolve.
+Every `family_id` and `manufacturer_id` resolves. All 6 `successor_family_id` values resolve (13 files mention the field, only 6 set it).
 No duplicate ids, no dangling attestation sources. `npm run check` green: 0 errors, the same 5
 pre-existing advisories, **no new rule-40 firing**. Exactly 13 files changed.
 

@@ -120,8 +120,8 @@ CubeTwist confirmed absent from every one.
 `npm run check`: **0 errors, 5 advisory warnings** — the same five as the baseline, with **no new
 rule-40 firing**, confirming the new records are chronologically consistent with their families.
 
-Programmatic invariants, all passing: every `family_id` and `manufacturer_id` resolves · all 12
-`successor_family_id` values resolve · no duplicate ids across any entity type · no dangling
+Programmatic invariants, all passing: every `family_id` and `manufacturer_id` resolves · all 6 families that
+set `successor_family_id` resolve (13 files mention the field; only 6 carry a value) · no duplicate ids across any entity type · no dangling
 attestation source refs · every `relationships.target` resolves.
 
 **On apparent name collisions:** a family sharing its name with its single model is the
