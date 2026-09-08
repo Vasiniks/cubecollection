@@ -1,0 +1,56 @@
+# source: shengshou-tank-3x3-product-photography-2026
+# P26-12 (Tank vs Gem identity investigation). Product photography for the ShengShou Tank 3x3,
+# fetched directly from the Shopify CDN. Two asset versions were retrieved and compared frame-
+# for-frame to confirm they show the same photograph (an older crawl of the pre-Feb-2020 asset
+# version, and a newer crawl of the v=1581454432 version actually embedded in the product page
+# captured 2020-09-18 by thecubicle-shengshou-other-3x3-lines-2026); both are the same box/cube
+# photograph at different resolutions, confirming the image the 2020 page displayed.
+id: shengshou-tank-3x3-product-photography-2026
+entity: source
+kind: retailer
+title: "ShengShou Tank 3x3 — product photography (TheCubicle / Shopify CDN)"
+publisher: "TheCubicle"
+url: "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/shengshoutank3x3b1_d3907d91-55d0-4fbd-b59b-48f5689a6285_580x.jpg?v=1540918487"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190512094716id_/https://cdn.shopify.com/s/files/1/0035/5205/1273/products/shengshoutank3x3b1_d3907d91-55d0-4fbd-b59b-48f5689a6285_580x.jpg?v=1540918487"
+excerpt: |-
+  A single-scene product photograph (box beside an assembled cube), sha256 of the retrieved
+  580x387 file: dce48dd63e9ae187f6c80ba26c1d19de58070dc5638ad5269c7578f262457d12. Confirmed
+  identical in composition to the v=1581454432 asset actually embedded on the 2020-09-18
+  product-page snapshot, retrieved separately at
+  https://web.archive.org/web/20210831164402id_/https://cdn.shopify.com/s/files/1/0035/5205/1273/products/shengshoutank3x3b1_d3907d91-55d0-4fbd-b59b-48f5689a6285_250x@2x.jpg?v=1581454432
+  (sha256 of that file: 71ae33e58b31531c6039d617e422c6997101c26cb1ceb594667ec4698ad05eca) — same
+  photograph, later crawl, smaller/differently-cropped render.
+
+  The packaging box prints "TANK" with the Chinese characters "坦克" (the tank/armoured-vehicle
+  word; this is a directly observed fact from the box art, not an assumed transliteration) and
+  the English tag line "Stickerless Cube", "3X3X3". The cube shown is stickerless with
+  white/yellow/red/green/blue/orange faces, standard rounded-corner piece geometry with a small
+  dark bowtie/hourglass-shaped centre-cap mark on each visible face centre — the same style of
+  centre-cap mark observed on the Gem 3x3 photograph (see
+  shengshou-gem-3x3-product-photography-2026). Surface finish reads as slightly less glossy
+  than the Gem photograph's highlights, loosely consistent with the retailer's "frosted
+  exterior" description for Tank versus "shiny exterior" for Gem, but this distinction is not
+  strong at the JPEG compression and resolution available and is reported as a weak
+  observation, not a confirmed finish measurement. No exploded/internal shot of Tank was found
+  in any crawled asset version, so the "black internals" claim could not be visually confirmed
+  or compared against Gem's confirmed black interior the way Gem's own claim was.
+preservation_note: "Both files retrieved via 'curl -L' against the Wayback snapshot URLs above
+  (HTTP 200). Local scratch copies hashed but not committed to the repository, since no
+  asset-storage path exists in this agent's write lane. The archive_url is the durable citable
+  reference."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 2, first-party retailer product photography, directly retrieved and visually inspected
+  this session. The box art's Chinese characters ("坦克") are a directly read fact, not an
+  inferred transliteration. Sufficient to corroborate the finish description at `probable`, and
+  to support the general mould-silhouette comparison against Gem recorded in
+  research/qc/p26-12-tank-gem-identity.md — that comparison is NOT decisive: both cubes show
+  the generic rounded-corner stickerless silhouette common to numerous budget ShengShou-class
+  3x3s of this era, and no photograph obtained resolves fine mould detail (e.g. exact corner-cut
+  angle, screw/core architecture) at a level that could confirm or rule out a shared mould.
+status: sourced

@@ -1,0 +1,48 @@
+# source: shengshou-gem-3x3-product-photography-2026
+# P26-12 (Tank vs Gem identity investigation). Product photography for the ShengShou Gem 3x3,
+# fetched directly from the Shopify CDN file referenced by the product page captured in
+# thecubicle-shengshou-other-3x3-lines-2026 (same v=1581454423 asset version as embedded in
+# that page's 2020-09-18 snapshot; Wayback's crawler did not visit the image file itself until
+# December 2022, but the URL+version parameter uniquely identifies an immutable Shopify asset,
+# so the December 2022 image capture preserves the same file the page displayed in 2020).
+id: shengshou-gem-3x3-product-photography-2026
+entity: source
+kind: retailer
+title: "ShengShou Gem 3x3 — product photography (TheCubicle / Shopify CDN)"
+publisher: "TheCubicle"
+url: "https://cdn.shopify.com/s/files/1/0035/5205/1273/products/ssgempre1_5725d57e-29e6-4c73-a4a2-616273eed4d6_580x@2x.jpg?v=1581454423"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20221207054010id_/https://cdn.shopify.com/s/files/1/0035/5205/1273/products/ssgempre1_5725d57e-29e6-4c73-a4a2-616273eed4d6_580x@2x.jpg?v=1581454423"
+excerpt: |-
+  A four-panel composite product photograph, sha256 of the retrieved file:
+  b1f60d74ddbf7775af335f47d80e58aaa042fe9030285687ec54979bc63e2500. Panel 1 (top): the
+  packaging box, printed "GEM" with the Chinese characters "宝石" (the tagline "Every gem has
+  a legend" and "THREE-LAYER MAGIC CUBE" also print on the box), next to a cube shown with its
+  top layer lifted off in a standard layer-separation merchandising shot (orange/white/yellow
+  faces visible). Panel 2 (bottom-left): a stickerless cube, red/green/yellow faces, standard
+  rounded-corner piece geometry with a small dark bowtie/hourglass-shaped centre-cap mark on
+  each face centre; glossy surface with visible specular highlights consistent with the
+  retailer's "shiny exterior" description. Panel 3 (bottom-right): the same cube with its
+  middle slice twisted 45 degrees, exposing black internal plastic at the core and on the
+  hidden faces of the displaced pieces, directly confirming the retailer's "black plastic
+  interior" description. No panel resolves the retailer's "3-piece cap design" claim to a
+  visibly distinct centre-cap assembly beyond the ordinary bowtie logo-plate mark common to
+  many stickerless budget cubes of this era; the claim is neither confirmed nor contradicted by
+  this photograph at the resolution available (max asset height 767px, JPEG-compressed).
+preservation_note: "Retrieved via 'curl -L' against the Wayback snapshot URL above (HTTP 200,
+  117871 bytes); local scratch copy hashed but not committed to the repository, since no
+  asset-storage path exists in this agent's write lane. The archive_url is the durable
+  citable reference."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 2, first-party retailer product photography, directly retrieved and visually inspected
+  this session (not merely cited from a prior excerpt). Sufficient to corroborate the finish
+  and interior-colour claims already attested from thecubicle-shengshou-other-3x3-lines-2026's
+  text description at `probable`. Does NOT resolve the deeper mould-identity question against
+  ShengShou Tank — see shengshou-tank-3x3-product-photography-2026 and
+  research/qc/p26-12-tank-gem-identity.md for the comparison and its limits.
+status: sourced

@@ -1,0 +1,58 @@
+# source: shengshou-gem-tank-catalog-facets-2026
+# P26-12 (Tank vs Gem identity investigation). Structured Shopify catalogue data (price,
+# weight, dimension-bucket facet, availability status) embedded as JSON in the same two
+# product-page snapshots already quoted in prose by thecubicle-shengshou-other-3x3-lines-2026.
+# That source excerpts the retailer's descriptive copy; this source excerpts the page's own
+# machine-readable facet tags, which were not previously quoted and which bear directly on
+# price/concurrency and on why no dimension has ever been recorded for Gem.
+id: shengshou-gem-tank-catalog-facets-2026
+entity: source
+kind: retailer
+title: "ShengShou Gem 3x3 / Tank 3x3 — embedded Shopify catalogue facets (TheCubicle)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-gem-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918210436id_/https://www.thecubicle.com/products/shengshou-gem-3x3"
+excerpt: |-
+  **Gem 3x3** (snapshot above, captured 2020-09-18 21:04:36 UTC): embedded product JSON tags
+  read verbatim: "Availability_Discontinued", "Color_Stickerless (Bright)",
+  "Dimensions_Other", "Manufacturer_ShengShou", "Type_3x3". Price field: "price":399 (i.e.
+  $3.99). Weight field: "weight":104.
+
+  **Tank 3x3** (separate snapshot, https://web.archive.org/web/20200918210120id_/https://www.thecubicle.com/products/shengshou-tank-3x3,
+  captured 2020-09-18 21:01:20 UTC, six minutes apart from the Gem snapshot): embedded product
+  JSON tags read verbatim: "Availability_Available", "Color_Stickerless (Bright)",
+  "Dimensions_56.0", "Manufacturer_ShengShou", "Type_3x3". Price field: "price":399 (i.e.
+  $3.99, identical to Gem). Weight field: "weight":100.
+
+  **On the dimension question**: TheCubicle's own catalogue used a fixed facet vocabulary for
+  "Dimensions" (values like "56.0", "Other", etc., used across its whole 3x3 catalogue). Gem's
+  page carries the literal fallback value "Other", not a blank/missing field — i.e. the
+  retailer itself never assigned a specific millimetre bucket to this product, rather than the
+  figure simply not having been transcribed by a prior researcher. This is retailer-side
+  non-classification, not evidence that Gem's size is unusual or that it necessarily differs
+  from Tank's 56.0mm; it just means no numeric value exists at this source and none should be
+  guessed.
+
+  **On concurrency**: at the same six-minute-apart snapshot moment, Gem 3x3 was already tagged
+  "Discontinued" while Tank 3x3 was tagged "Available", both still priced identically at $3.99
+  and both still live product pages on the same retailer. Read together with the cross-range
+  capture dates already documented in shengshou-gem-tank-metal-cross-retailer-sweep-2026 (Gem's
+  own 4x4 SKU was captured 2020-12-03, three months AFTER this Gem 3x3 "Discontinued" snapshot,
+  meaning TheCubicle was still actively carrying/adding new Gem-line SKUs after the 3x3 unit
+  sold out), this reads as ordinary per-SKU stock exhaustion within a still-active parallel
+  line, not as a line-level rename or succession event.
+preservation_note: "Both snapshot pages retrieved via 'curl -L' directly against the Wayback
+  id_ URLs above (HTTP 200); JSON facet values extracted from the raw HTML with a plain-text
+  grep and quoted verbatim above."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 2, first-party retailer structured catalogue data, directly retrieved and read from the
+  raw page source this session (not inferred or estimated). Sufficient at `probable` for the
+  price/weight/availability/dimension-facet claims recorded here; does not itself establish or
+  rule out a shared mould between Gem and Tank.
+status: sourced
