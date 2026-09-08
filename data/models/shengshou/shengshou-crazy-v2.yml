@@ -1,0 +1,89 @@
+# model: shengshou-crazy-v2
+# P26-5 remediation (ledger P26-10, tranche 2). Second generation, separated from the first by a
+# documented mechanism change rather than a version label. scope_class conditional — unlike the
+# first generation, this one clears the §2.2 bar; see /scope_justification.
+id: shengshou-crazy-v2
+entity: model
+family_id: shengshou-crazy
+manufacturer_id: shengshou
+name: "ShengShou Crazy 3x3 V2"
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+scope_class: conditional
+scope_justification: |-
+  Admitted on a documented mechanism development within a named puzzle category, not on being
+  unusual. The retailer's own product copy states this generation "has more pieces (9 total) in
+  each ring, adding yet another layer of difficulty" — a specific, quantified change to the
+  locked-ring mechanism over the eight-piece first generation, which is a documented design
+  development rather than a marketing claim. It is accompanied by a documented collector-market
+  signal in the same line: a "Jelly LE" edition stated as "limited to 1400 units worldwide", a
+  quantified production figure of the kind §2.2 treats as evidence of a collector market. Neither
+  ground rests on the puzzle being interesting or unusual. The first generation, which has
+  neither, is held at reference_only rather than admitted alongside it.
+scope_decided_by: "P26-5 adjudication, main session"
+scope_decided_on: "2026-09-08"
+specs:
+  size_mm: 60.0
+relationships:
+  - type: succeeds
+    target: shengshou-crazy-original
+    target_entity: model
+    note: "The V2 designation is carried in the product's own name and URL, and its copy
+      describes its ring-piece count by contrast with the earlier generation."
+description: |-
+  The second generation. TheCubicle: "The V2 has more pieces (9 total) in each ring, adding yet
+  another layer of difficulty. If you've mastered the [base] 3x3, this is a great next step"
+  (thecubicle-shengshou-crazy-3x3-generations-2026, capture 2024-04-16, product id
+  7049644212307, 60.0mm, Gross Weight 124.0g).
+
+  The eight-to-nine ring-piece change is an internal-geometry difference and is what makes this a
+  separate model under DATA_MODEL §4.2 — the "V2" label alone would not be sufficient.
+
+  **A retailer inconsistency, noted not resolved:** TheCubicle types this generation "3x3" while
+  typing the first "Shape Mods", despite both sharing the same locked-ring mechanism. The
+  archive's `scope_class` is decided on §2.2's own test, not on a retailer's category field.
+status: sourced
+
+attestations:
+  /scope_justification:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: "Tier 2, and a single publisher — both the ring-piece-count statement and the
+      1400-unit limited-edition figure come from TheCubicle's own product pages. Sufficient for
+      §2.2's tier 1-3 requirement, but recorded at `probable` rather than higher because nothing
+      corroborates either claim independently."
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: "'V2' appears in the product's own name and URL slug, read as passed through from
+      ShengShou rather than retailer numbering — the same reasoning as haitun-waverider-v2."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched and not found as a product weight. The source gives 'Gross Weight 124.0g',
+      which normally includes packaging."
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture 2024-04-16 bounds circulation only."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /relationships:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]

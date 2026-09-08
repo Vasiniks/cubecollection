@@ -1,0 +1,55 @@
+# family: shengshou-gem
+# P26-5 remediation (ledger P26-10, tranche 2 / probable, authorised 2026-09-08).
+# NOT missed by Pass 2 — speedsolving-wiki-shengshou-products, the tier-4 source all five
+# pre-existing ShengShou families also rest on, already listed it; that record states such
+# entries were "recorded as leads" for lack of tier-2 evidence. P26-5 supplied it.
+id: shengshou-gem
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou Gem"
+positioning: budget
+description: |-
+  A budget stickerless line. TheCubicle: "The ShengShou Gem 3x3 is a new stickerless budget 3x3
+  that has just hit the market. The Gem 3x3 is unique due to its 3-piece cap design and black
+  plastic interior. It also features a shiny exterior" (thecubicle-shengshou-other-3x3-lines-2026,
+  capture 2020-09-18, Type "3x3", Gross Weight 104g).
+
+  **Line identity rests on cross-puzzle-range naming**, the same signal the archive's existing
+  Legend, Aurora, Wind and Mr. M families rest on. A CDX prefix sweep found seven distinct
+  TheCubicle URLs spanning six puzzle types — 2x2, **3x3**, 4x4, 5x5, Megaminx, Pyraminx — plus a
+  Gem gift-box bundle (shengshou-gem-tank-metal-cross-retailer-sweep-2026). Cubelelo
+  independently carries a Gem Pyraminx (2021-05-17), a second publisher for the line name though
+  not for the 3x3 specifically.
+
+  **A naming collision checked and cleared:** DaYan sells its own, differently-shaped "Gem Cube"
+  series (thecubicle-dayan-non-3x3-lines-2026). Two unrelated manufacturers using the same
+  generic English word for unrelated products — not a collision within one brand, and the two are
+  kept strictly apart.
+
+  The Speedsolving wiki adds a production-first claim — "One of the first 3x3s to have black
+  internals with capped pieces" — which is **tier 4 and corroborating only**. It is recorded here
+  because it bears on the line's interest, not relied upon: it cannot establish anything alone.
+status: sourced
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026, shengshou-gem-tank-metal-cross-retailer-sweep-2026]
+    note: "TheCubicle's product page plus a CDX sweep of its own catalogue are one publisher and
+      do not corroborate each other per DATA_MODEL §5.2. Cubelelo supplies a second publisher for
+      the line name (Gem Pyraminx) but not for the 3x3 product itself. `probable`, not
+      `confirmed` — deliberately below Rainbow, whose three publishers all carry the 3x3."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026]
+    note: "The retailer's own words: 'a new stickerless budget 3x3'."
+  /introduced:
+    confidence: unknown
+    note: "Researched and not found. No dated statement exists at any retailer, and no capture
+      predating TheCubicle's 2020-09-18 was located for the 3x3 specifically. A `before` bound
+      from that capture would say only that a product on sale in 2020 was on sale in 2020, so no
+      value is recorded rather than manufacturing false precision. The Cubelelo Gem Pyraminx
+      capture (2021-05-17) is later and concerns a different puzzle."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026, shengshou-gem-tank-metal-cross-retailer-sweep-2026]

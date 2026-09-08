@@ -1,0 +1,55 @@
+# model: shengshou-tank-standard
+# P26-5 remediation (ledger P26-10, tranche 2). Created with its family; no prior record existed.
+# If the open Tank-versus-Gem question is ever resolved as a merge, THIS is the record that moves.
+id: shengshou-tank-standard
+entity: model
+family_id: shengshou-tank
+manufacturer_id: shengshou
+name: "ShengShou Tank 3x3"
+scope_class: core
+specs:
+  size_mm: 56.0
+description: |-
+  An economy 3x3 with "a vibrant color scheme, frosted exterior, and black internals"
+  (thecubicle-shengshou-other-3x3-lines-2026, capture 2020-09-18, Type "3x3", 56.0mm, Gross
+  Weight 100g). A standard WCA-form 3x3x3 — `scope_class: core`.
+
+  **This model carries the family's open question.** The Speedsolving wiki calls Tank "a 3x3
+  similar to the Gem", and no mould-level comparison has ever been made. The textual evidence
+  distinguishes them — Tank is 100g/56.0mm and *frosted*, Gem is 104g and *shiny* with a
+  "3-piece cap design" — but that is finish language on both sides, which is exactly the kind of
+  evidence that cannot settle a mould question. Recorded separately per DATA_MODEL §4.2's
+  split-under-uncertainty default: a wrong split is recoverable by merge, a wrong merge is not.
+status: sourced
+
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026]
+    note: "One retailer's structured spec table; SpeedCubeShop and Cubelelo do not carry this
+      product at all, so no corroboration is available."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched and not found as a product weight. TheCubicle gives 'Gross Weight 100g',
+      which normally includes packaging; no source states a product weight, so none is recorded."
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. ShengShou's official domain is dead; no retailer describes the
+      core."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found; not inferred false from budget positioning."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No source describes this product as magnetic."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Only capture is 2020-09-18; not promoted into a release date."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026, speedsolving-wiki-shengshou-products]
+    note: "The retailer supplies the description; the wiki supplies only the unresolved
+      'similar to the Gem' clause, cited here because the record states that open question."

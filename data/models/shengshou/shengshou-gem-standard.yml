@@ -1,0 +1,51 @@
+# model: shengshou-gem-standard
+# P26-5 remediation (ledger P26-10, tranche 2). Created with its family; no prior record existed.
+id: shengshou-gem-standard
+entity: model
+family_id: shengshou-gem
+manufacturer_id: shengshou
+name: "ShengShou Gem 3x3"
+scope_class: core
+description: |-
+  A stickerless budget 3x3 with, per TheCubicle's own description, "a 3-piece cap design and
+  black plastic interior" and "a shiny exterior"
+  (thecubicle-shengshou-other-3x3-lines-2026, Gross Weight 104g, Type "3x3").
+
+  A standard WCA-form 3x3x3 — `scope_class: core`. The "3-piece cap design" is the one phrase
+  that could denote a genuine mould difference rather than a finish, but no source states which,
+  and it is not treated as establishing anything beyond the description quoted.
+
+  No dimension is given by any source located, so `size_mm` is unset.
+status: sourced
+
+attestations:
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched and not found as a product weight. TheCubicle gives 'Gross Weight 104g',
+      which normally includes packaging and is therefore not the same quantity; no source states
+      a product weight, so none is recorded. Same treatment as shengshou-tank-standard, whose
+      'Gross Weight 100g' is handled identically."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Searched and not found. TheCubicle's spec table for this product gives a weight but no
+      dimension, and no other retailer carries the 3x3."
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. ShengShou's official domain is dead; the retailer channel is
+      the evidentiary ceiling and describes no core."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found; not inferred false from budget positioning."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No source describes this product as magnetic."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No dated statement at any source; the only capture is
+      2020-09-18 and a Wayback timestamp is not promoted into a release date."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026]

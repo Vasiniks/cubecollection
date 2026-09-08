@@ -1,0 +1,79 @@
+# family: shengshou-rainbow
+# P26-5 remediation (ledger P26-10, tranche 2 / probable, authorised 2026-09-08).
+# See research/qc/p26-5-family-adjudication.md.
+#
+# NOT missed by Pass 2. speedsolving-wiki-shengshou-products - the tier-4 source that all five
+# pre-existing ShengShou families also rest on - already listed this line, and its own record
+# states these entries were "recorded as leads rather than silently dropped" for lack of tier-2
+# evidence. P26-5 supplied that evidence. Deferral, not blind spot.
+id: shengshou-rainbow
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou Rainbow"
+aliases:
+  - "ShengShou CaiHong"
+  - "ShengShou Rainbow 3x3x3"
+introduced:
+  value: "2016-01"
+  precision: month
+  qualifier: before
+positioning: budget
+description: |-
+  ShengShou's first stickerless 3x3 line. SpeedCubeShop's own copy states it directly:
+  "ShengShou Rainbow 3x3x3 is ShengShou's first stickerless cube. This item is a bargain for the
+  amount of performance that you get" (shengshou-rainbow-independent-multi-retailer-2026, capture
+  2016-01-08, listed at $5.95). TheCubicle carried it as Type "3x3", 56.2mm
+  (thecubicle-shengshou-other-3x3-lines-2026), and Cubelelo carried it in India from 2016-04.
+
+  **Why this is a family and not a stickerless variant of an existing line** — the obvious
+  competing reading, tested and rejected. DATA_MODEL §4.2 does list stickerless as a variant axis,
+  so the hypothesis deserved a real test. The discriminator is TheCubicle's own catalogue
+  convention: it marks a stickerless *variant* with an `-unstickered` suffix on the base product
+  slug, as in `shengshou-aurora-3x3-unstickered`. **Rainbow is never suffixed that way anywhere**
+  — it is always its own top-level product name, exactly like Aurora, Wind, Legend and Mr. M. A
+  Rainbow 2x2 sibling at Cubelelo (2017) confirms the name carries across sizes, which a
+  finish-option would not.
+
+  The Speedsolving wiki lists it as "ShengShou Rainbow (CaiHong)" in the same enumeration, at the
+  same level, as the five families this archive already accepts — with a native Chinese name in
+  the same style (speedsolving-wiki-shengshou-products, tier 4, corroborating only).
+
+  **An unresolved spec conflict, recorded not reconciled.** SpeedCubeShop's structured product
+  data gives a weight field of 119 (unit unstated on-page); TheCubicle's 2020 capture gives
+  "Gross Weight 100g" for the same nominal product. The two are left in conflict rather than
+  averaged or silently preferred, and no `weight_g` is recorded on the model.
+status: sourced
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [shengshou-rainbow-independent-multi-retailer-2026, thecubicle-shengshou-other-3x3-lines-2026]
+    note: "Three independent, non-mirroring tier 2 publishers carry this product under this name:
+      SpeedCubeShop (2016-01), TheCubicle (2020) and Cubelelo (2016-04, India). That meets
+      vocab/confidence.yml's `confirmed` clause for two independent tier 2 sources in agreement.
+      Recorded at the claim-class level: bare existence and naming are `confirmed`; the family
+      disposition overall remains `probable`, and specifications are weaker still. This follows
+      the same treatment already applied to fangshi-guangying, whose /name is `confirmed` on four
+      retailers while its other fields sit lower."
+  /introduced:
+    confidence: probable
+    sources: [shengshou-rainbow-independent-multi-retailer-2026]
+    note: "A CIRCULATION BOUND, NOT A RELEASE DATE. SpeedCubeShop's earliest capture is
+      2016-01-08, establishing only that the product was on sale by then. TheCubicle's listing
+      carries `Added: 2018-09-11`, one of this archive's four documented catalogue-migration
+      artifacts (29 occurrences / 22 sources / 13 unrelated brands) — it was seen and is
+      DISCARDED OUTRIGHT, not used even as a bound. A CDN cache-buster timestamp near September
+      2015 was likewise refused: an asset-upload signal is not a dated release statement."
+  /positioning:
+    confidence: probable
+    sources: [shengshou-rainbow-independent-multi-retailer-2026, thecubicle-shengshou-other-3x3-lines-2026]
+    note: "$5.95 at SpeedCubeShop and \"a very low price point\" at TheCubicle. Directly evidenced
+      rather than inferred."
+  /aliases:
+    confidence: uncertain
+    sources: [speedsolving-wiki-shengshou-products]
+    note: "\"CaiHong\" is the wiki's rendering. Tier 4, corroborating only — recorded as an alias
+      a researcher may encounter, not as an established native name."
+  /description:
+    confidence: probable
+    sources: [shengshou-rainbow-independent-multi-retailer-2026, thecubicle-shengshou-other-3x3-lines-2026, shengshou-gem-tank-metal-cross-retailer-sweep-2026]

@@ -1,0 +1,59 @@
+# family: shengshou-tank
+# P26-5 remediation (ledger P26-10, tranche 2 / probable, authorised 2026-09-08).
+# THE WEAKEST OF THE SIX ADMISSIONS, and recorded as such — see /name below and the open
+# Tank-versus-Gem question in the description. Admitted because it meets the same evidentiary bar
+# as the five pre-existing ShengShou families, not because the case is strong in absolute terms.
+id: shengshou-tank
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou Tank"
+positioning: budget
+description: |-
+  An economy line. TheCubicle: "The ShengShou Tank 3x3 is a new economy 3x3 speed cube that
+  features a vibrant color scheme, frosted exterior, and black internals"
+  (thecubicle-shengshou-other-3x3-lines-2026, capture 2020-09-18, Type "3x3", 56.0mm, Gross
+  Weight 100g).
+
+  **The broadest cross-range name found in this batch, and the thinnest publisher base.** A CDX
+  sweep returned eighteen distinct TheCubicle URLs spanning nine puzzle types — 2x2, **3x3**, 4x4,
+  5x5, 6x6, 7x7, 8x8, Megaminx, Pyraminx (shengshou-gem-tank-metal-cross-retailer-sweep-2026).
+  That is a stronger line-identity signal than any other candidate produced. But **SpeedCubeShop
+  and Cubelelo both returned clean negatives**: neither has ever stocked a ShengShou Tank under
+  that name as far as the CDX index shows. Everything here comes from one retailer.
+
+  **An open question deliberately left open.** The Speedsolving wiki says: "ShengShou Tank 3x3 — A
+  3x3 similar to the Gem." Two independent adjudication lanes flagged that sentence and both
+  declined to merge on it, and a third adversarial pass pushed on it specifically without
+  resolving it. It is a single dismissive tier-4 clause, far too thin to collapse a line on, and
+  the textual evidence leans away from a merge — Tank is 100g/56.0mm with a *frosted* exterior
+  against Gem's 104g *shiny* exterior and "3-piece cap design", and the two names run parallel
+  across overlapping size ranges rather than succeeding one another.
+
+  **What would settle it is a mould-level comparison that nobody has performed.** No lane fetched
+  product photography for either line, despite that exact technique resolving the DaYan Bermuda
+  question in this same batch. This is the highest-value unresolved item left in the taxonomy and
+  is flagged for a pass before variant enumeration, since a merge would move this family's model.
+status: sourced
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026, shengshou-gem-tank-metal-cross-retailer-sweep-2026]
+    note: "ONE PUBLISHER. Both sources are TheCubicle and do not corroborate each other per
+      DATA_MODEL §5.2; SpeedCubeShop and Cubelelo were checked and returned clean negatives.
+      `probable` is exactly right per vocab/confidence.yml — one tier 2 source, uncontradicted —
+      and it must not be read as equal to Rainbow's three-publisher `confirmed`. This is the
+      weakest of the six families admitted by the P26-5 remediation. It clears the bar because it
+      meets the same standard as the five pre-existing ShengShou families, all of which rest on
+      TheCubicle plus a tier-4 wiki."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026]
+    note: "The retailer's own words: 'a new economy 3x3 speed cube'."
+  /introduced:
+    confidence: unknown
+    note: "Researched and not found. No dated statement at any source, and the only capture is
+      TheCubicle's 2020-09-18. No value recorded."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026, shengshou-gem-tank-metal-cross-retailer-sweep-2026, speedsolving-wiki-shengshou-products]

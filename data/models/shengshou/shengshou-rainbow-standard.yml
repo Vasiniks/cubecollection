@@ -1,0 +1,54 @@
+# model: shengshou-rainbow-standard
+# P26-5 remediation (ledger P26-10, tranche 2). Created with its family; no prior record existed.
+id: shengshou-rainbow-standard
+entity: model
+family_id: shengshou-rainbow
+manufacturer_id: shengshou
+name: "ShengShou Rainbow 3x3"
+scope_class: core
+specs:
+  size_mm: 56.2
+description: |-
+  ShengShou's first stickerless 3x3, sold at $5.95 by SpeedCubeShop in 2016 and carried by
+  TheCubicle (56.2mm) and Cubelelo. A standard WCA-form 3x3x3 — `scope_class: core`.
+
+  **No weight is recorded, deliberately.** SpeedCubeShop's structured product data gives a weight
+  field of 119 with no unit stated on-page; TheCubicle's later capture gives "Gross Weight 100g".
+  The two figures conflict and no source resolves them, so the conflict is preserved rather than
+  one being silently chosen.
+status: sourced
+
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-other-3x3-lines-2026]
+    note: "One retailer's structured spec table."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched, found, and NOT recorded because the sources conflict. SpeedCubeShop's
+      structured product field reads 119 with no unit stated on-page; TheCubicle states 'Gross
+      Weight 100g'. Gross weight normally includes packaging and so may not be comparable to a
+      product weight, but neither source labels its figure unambiguously and nothing resolves
+      them. `disputed` is not available here: rules 5 and 11 reserve it for a recorded field
+      carrying two or more candidate values, and no value is set. Recorded as `unknown` — the
+      field was researched, and the honest outcome is that no single figure is supportable."
+  /description:
+    confidence: probable
+    sources: [shengshou-rainbow-independent-multi-retailer-2026, thecubicle-shengshou-other-3x3-lines-2026]
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. ShengShou's official domain is dead, so the retailer channel is
+      the evidentiary ceiling for this manufacturer, and no retailer describes the core."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found; not inferred false from the product's budget positioning."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No source describes this product as magnetic."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. No dated statement exists at any source; Wayback captures
+      bound circulation only and are not promoted into release dates."

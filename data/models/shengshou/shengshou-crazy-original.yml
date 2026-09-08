@@ -1,0 +1,72 @@
+# model: shengshou-crazy-original
+# P26-5 remediation (ledger P26-10, tranche 2). First generation. scope_class deliberately
+# reference_only, NOT conditional — see the note on /description below. This resolves the
+# scope question the adjudication lane explicitly left disputed.
+id: shengshou-crazy-original
+entity: model
+family_id: shengshou-crazy
+manufacturer_id: shengshou
+name: "ShengShou Crazy 3x3"
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+scope_class: reference_only
+specs:
+  size_mm: 60.5
+description: |-
+  The first generation: a pillowed 3x3 whose face rings do not turn with their faces, eight
+  pieces per ring. TheCubicle lists it at $15.99, 60.5mm, product id 6670615871571, typed "Shape
+  Mods" (thecubicle-shengshou-crazy-3x3-generations-2026, capture 2023-02-06).
+
+  **Why `reference_only` and not `conditional`.** RESEARCH_SPEC §2.2 admits a non-WCA-legal 3x3
+  only on **documented** significance — a production first, a documented influence on later
+  designs, a documented collector market, or a documented place in the manufacturer's history.
+  This generation has none of those. The locked-ring "Crazy" mechanism is generic and predates
+  ShengShou's version at two other manufacturers already in this archive; nothing found claims
+  ShengShou's is a first, an influence, or historically notable. That is materially weaker than
+  `mf8-crazy-3x3x3`, which rests on a decade of documented circulation.
+
+  The exact precedent is `calvins-full-function-crazy-3x3`, held at `reference_only` for the same
+  reason: a real product, on a generic mechanism, with no significance claim. **Significance is
+  not invented here to secure admission** — the record exists so a researcher can identify this
+  product and move on.
+
+  A "Jelly LE" (transparent stickerless, "limited to 1400 units worldwide") is a **pass 4
+  variant**, not a model. Which generation it belongs to is **not established** by any source and
+  is deliberately not assumed here.
+status: sourced
+
+attestations:
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: "This generation carries no version marker in its own name; 'Original' is applied
+      retroactively because a V2 exists. Community convention, explicitly not
+      manufacturer_declared — the same treatment as shengshou-yufeng-original."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched and not found as a product weight. The source reads 103.0-117g depending on
+      which field is taken, and no source disambiguates gross from product weight, so no value
+      is recorded."
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. The mechanism is described at the ring level, not the core."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No source describes this product as magnetic."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture 2023-02-06 bounds circulation only."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
