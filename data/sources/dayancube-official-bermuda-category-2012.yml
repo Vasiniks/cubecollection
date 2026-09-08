@@ -1,0 +1,70 @@
+# source: dayancube-official-bermuda-category-2012
+# P26-5 Agent B (Bermuda adjudication). DaYan's own official site (dayancube.com) carries a
+# DEDICATED product-category page for "Dayan Bermuda Cube" (distinct from the bare front-page
+# product-list mention already recorded in dayancube-official-2013), captured 2012-06-04 and
+# 2012-07-17 (page 2), plus an individual product page for one named sub-product
+# (2013-09-10). This is materially stronger tier-1 evidence than a name-in-a-list: it is
+# DaYan's own official site listing, by name, EVERY named sub-product of the Bermuda line —
+# independently corroborating and substantially extending the retailer-sourced picture in
+# thecubicle-dayan-bermuda-cube-2020 and cubelelo-dayan-products-prefix-2026.
+id: dayancube-official-bermuda-category-2012
+entity: source
+kind: manufacturer_official
+title: "Dayan Bermuda Cube — official category page, dayancube.com"
+publisher: "Dayan Cube"
+url: "http://www.dayancube.com/dayan-bermuda-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20120604000628id_/http://www.dayancube.com:80/dayan-bermuda-cube"
+excerpt: |-
+  Page 1 (2012-06-04, http://www.dayancube.com:80/dayan-bermuda-cube): main-nav "Products" list
+  includes "Dayan Crazy Cube / DaYan II GuHong / DaYan III LingYun / DaYan IV LunHui / DaYan V
+  ZhanChi / DaYan Gem Cube / Dayan Bermuda Cube" — "Dayan Bermuda Cube" is its own top-level
+  official product-category entry, sitting beside the numbered flagship line, not a sub-item of
+  it. Under that category page: "Dayan Bermuda Triangle Magic Cube Black (Earth)", "...White
+  (Earth)", and the same Black/White pairing for Jupiter, Mars, Mercury, Neptune, Saturn,
+  Uranus — eight planet names, each in both colors, all under the manufacturer's own
+  "Bermuda Triangle" name (not "Bermuda Cube [planet]," which is a later retailer
+  simplification — see thecubicle-dayan-bermuda-cube-2020).
+
+  Page 2 (2012-07-17, http://dayancube.com:80/dayan-bermuda-cube?page=1): continues with
+  "Dayan Bermuda Triangle Magic Cube White (Venus)", then four further officially-named
+  sub-products, each in Black and White: "Dayan Bermuda House I Magic Cube", "Dayan Bermuda
+  House II Magic Cube", "Dayan Bermuda Column Magic Cube", "Dayan Bermuda Star Magic Cube."
+
+  Individual product page (2013-09-10, http://dayancube.com/Dayan-Bermuda-Column-Magic-Cube-
+  Black): generic templated marketing copy shared across DaYan's whole catalog ("Brand new and
+  high quality magic cube... Made of quality ABS material..."), no mechanism-specific
+  (bandaging) description and no release date; "Price: $21.53"; cross-links to "Dayan Bermuda
+  Triangle Magic Cube White (Jupiter) ($21.53)" as a related product, confirming Column and
+  Triangle were concurrently on sale as siblings under the same official line.
+
+  Retailer product photography (fetched directly this session from TheCubicle's own 2020-2021
+  Shopify CDN image URLs, not reproduced in this excerpt) confirms these are not merely
+  colorway names: "Column" (TheCubicle's "Barrel") is an octagonal-cylinder exterior shape,
+  "House I" and "House II" are two distinct house/roofline exterior shapes, "Star"
+  (TheCubicle's "Sunflower") is a star/flower exterior shape, and "Triangle" (TheCubicle's
+  "Bermuda Cube [planet]") is a standard cube exterior shape with an irregular diagonal
+  bandage-cut pattern — four genuinely distinct exterior molds under one official line, not
+  colorway variants of a single mold.
+preservation_note: "archive_url is the id_ (raw) Wayback capture of the 2012-06-04 page 1
+  snapshot; the 2012-07-17 page 2 snapshot and the 2013-09-10 individual Column product page
+  are the same domain/session and are described in the excerpt but not separately archived as
+  their own source records, per the allowance for evidence spanning multiple pages of the same
+  site (RESEARCH_SPEC 3.5)."
+accessed: "2026-09-08"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 1, first-party manufacturer official site — stronger than dayancube-official-2013's
+  bare front-page product-list mention of "Dayan Bermuda Cube," because this is a dedicated
+  category page enumerating every named sub-product (Triangle/House I/House II/Column/Star) in
+  the manufacturer's own words, not a single line in a navigation list. Sufficient on its own
+  to confirm this is a genuine DaYan-official, multi-model product line (not a retailer
+  category or fan-coined grouping), and to establish an "existed by 2012-06" upper bound for
+  the line's introduction — earlier than any retailer capture found (TheCubicle's earliest
+  Bermuda capture is 2019-09-15). Does NOT supply a stated release date, a bandaging-mechanism
+  description in the manufacturer's own words, or WCA-legality language — those remain
+  retailer-sourced (thecubicle-dayan-bermuda-cube-2020) or absent.
+status: sourced
