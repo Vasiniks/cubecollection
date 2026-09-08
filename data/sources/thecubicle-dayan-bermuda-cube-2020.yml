@@ -1,0 +1,39 @@
+# source: thecubicle-dayan-bermuda-cube-2020
+# Pass 2.6 (Agent E, lost-lanes recovery). Chases "Dayan Bermuda Cube", named in DaYan's own
+# tier-1 official 2013 site (dayancube-official-2013) and never chased to a retailer
+# description in Pass 1/2/3. This is that description.
+id: thecubicle-dayan-bermuda-cube-2020
+entity: source
+kind: retailer
+title: "DaYan Bermuda Cube (Earth) — TheCubicle product page"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-bermuda-cube-earth"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200925id_/https://www.thecubicle.com/products/dayan-bermuda-cube-earth"
+excerpt: |-
+  Product Description: "The DaYan Bermuda series features a variety of common 3x3 puzzles and
+  shape-mods but with certain parts 'bandaged' to make each of them a unique challenge to
+  solve." TheCubicle's own prefix carries this series in at least ten named colourway/theme
+  variants (a "barrel", eight planet names Earth/Jupiter/Mars/Mercury/Neptune/Saturn/Uranus/
+  Venus, two "house" variants, and "sunflower") — read as decorative colourway naming across a
+  shared bandaged-3x3 design, the same pattern already used for the Bermuda themed
+  variants at Cubelelo (cubelelo-dayan-products-prefix-2026). Independently corroborated at
+  Cubelelo under its own retailer naming ("dayan-bermuda-black-earth" etc., 2020 captures) —
+  two independent retailers, no naming collision. This is a bandaged 3x3x3 puzzle series,
+  directly comparable in kind to the already-admitted calvins-bandaged-3x3-maze-300 family
+  precedent for how this archive treats bandaged-cube lines.
+preservation_note: "archive_url is the id_ (raw) Wayback capture, tags stripped via `npm run
+  wayback -- get`."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer product description. DaYan's own official 2013 site
+  (dayancube-official-2013, tier 1) already names "Dayan Bermuda Cube" as one of its own
+  products in a product list alongside GuHong/LingYun/LunHui/ZhanChi/Panshi — this source
+  supplies the mechanism description the tier-1 source itself does not give. No manufacturer-
+  declared release date is stated by either source; the retailer capture only bounds
+  "existed by 2020".
+status: sourced

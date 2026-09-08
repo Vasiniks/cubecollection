@@ -1,0 +1,35 @@
+# source: speedcubeshop-yj-appari-3x3-2024
+# Pass 2.6 (Agent E). Second-retailer corroboration for YJ Appari, companion to
+# thecubicle-yj-appari-3x3-2024. Independent publisher, independent wording for the same
+# mechanism.
+id: speedcubeshop-yj-appari-3x3-2024
+entity: source
+kind: retailer
+title: "YJ Appari 3x3 (Magnetic, Speed Micro Actuator) — SpeedCubeShop product URL"
+publisher: "SpeedCubeShop"
+url: "https://www.speedcubeshop.com/products/yj-appari-3x3-magnetic-speed-micro-actuator"
+preservation_method: excerpt
+excerpt: |-
+  CDX capture: https://speedcubeshop.com/products/yj-appari-3x3-magnetic-speed-micro-actuator,
+  first captured 2024-06-20, still resolving through a 2025-07-15 capture
+  (yj-appari-3x3-magnetic-core-magnets-speed-micro-actuator). SpeedCubeShop's own product-URL
+  naming independently uses "Speed Micro Actuator" for the mechanism TheCubicle's product page
+  names "Speed Micro Bearing" — different retailers, different wording, same underlying YJ
+  product, genuine independent corroboration rather than a copied listing (RESEARCH_SPEC 3.2).
+  Full page content was not fetched this pass (URL-level CDX enumeration only); the mechanism
+  description rests on thecubicle-yj-appari-3x3-2024's fuller product-page excerpt.
+preservation_note: "CDX enumeration output (reproducible via `npm run wayback -- prefix
+  https://www.speedcubeshop.com/products/yj-appari --limit 30`) is the primary evidence."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure. Corroborates existence and currency
+  (2024-2025) only; does not itself supply a spec table or description text (URL-level
+  enumeration, not a full page fetch). Sufficient to raise confidence on existence from a
+  single-retailer `probable` toward independent-source `confirmed`-eligible per the confidence
+  ladder, once combined with thecubicle-yj-appari-3x3-2024 and cubelelo-yj-products-
+  prefix-2026.
+status: sourced

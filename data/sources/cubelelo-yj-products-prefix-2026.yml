@@ -1,0 +1,43 @@
+# source: cubelelo-yj-products-prefix-2026
+# Pass 2.6 (Agent E). RESEARCH_SPEC 3.6a non-US/English retailer check for YJ, using Cubelelo
+# (India), the same retailer used for the equivalent ShengShou and DaYan checks. A CDX prefix
+# sweep of cubelelo.com/products/yj-* (101 distinct captured URLs, 2020-2025, NOT truncated).
+id: cubelelo-yj-products-prefix-2026
+entity: source
+kind: retailer
+title: "cubelelo.com/products/yj-* — product URL enumeration (non-US/English retailer check)"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/yj-appari-3x3"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.cubelelo.com/products/yj- (2020-2025 captures, 101
+  distinct URLs). 3x3-relevant paths matching an existing family (guanlong, meta, mgc,
+  yulong, zhilong) are consistent with TheCubicle's own findings and not itemised further.
+
+  3x3-relevant paths matching NO existing family: yj-appari-3x3 (single capture, 2024-06-20)
+  — independent third-retailer corroboration of the YJ Appari flagship 3x3 (see
+  thecubicle-yj-appari-3x3-2024), same generation, no second Appari generation found at this
+  retailer either.
+
+  yj-pocket-cube-3x3-mini-magnetic-50mm confirms TheCubicle's own "Pocket Cube" naming and
+  size (50mm) independently.
+
+  3x3-shaped shape mods/novelties found, none matching an existing family, not chased beyond
+  naming this pass: yj-3x3-mirror-cube-golden, yj-concave-3x3-stickerless,
+  yj-windmill-v2, yj-yileng-v2-fisher (a Fisher-cube shape mod), yj-pocket-mini-maple-cube-
+  magnetic. All are common, cross-manufacturer shape-mod or novelty categories rather than a
+  YJ-specific documented-significant line; recorded as weak leads only.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix https://www.cubelelo.com/products/yj- --limit 800`) is the primary evidence; the
+  excerpt reproduces the path list directly."
+accessed: "2026-09-07"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure. RESEARCH_SPEC 3.6a compliance record:
+  non-US/English retailer checked = Cubelelo (India). Outcome: confirms YJ Appari as a
+  genuinely multi-retailer, currently-sold line (third independent retailer, after TheCubicle
+  and SpeedCubeShop); no further new family surfaced.
+status: sourced

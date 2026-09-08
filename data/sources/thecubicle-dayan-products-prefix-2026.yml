@@ -1,0 +1,71 @@
+# source: thecubicle-dayan-products-prefix-2026
+# Pass 2.6 (Agent E). RESEARCH_SPEC 3.6a compliance record: the mandatory archived retailer
+# /products/ prefix sweep for DaYan, which had NO such source at all before this session
+# despite DaYan being explicitly named in 3.6a as a manufacturer whose official domain is dead
+# while its retailer catalogue is current. A full, non-truncated CDX prefix sweep of
+# thecubicle.com/products/dayan* (351 distinct captured URLs, 2018-2026), run to the same
+# standard as thecubicle-shengshou-products-prefix-2026.
+id: thecubicle-dayan-products-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/dayan* — full product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-zhanchi"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/dayan (2018-2026 captures, 351
+  distinct URLs, NOT truncated — well under the 2000 --limit used). Every path was checked
+  against the 8 frozen DaYan families (dayan-guhong, dayan-lingyun, dayan-lunhui, dayan-panshi,
+  dayan-taiyan, dayan-tengyun, dayan-xiangyun, dayan-zhanchi).
+
+  3x3-relevant paths matching an existing family (not itemised further here): all guhong-*,
+  lingyun-*, lunhui-*, panshi-*, tengyun-*, xiangyun-*, zhanchi-* product and DIY-kit paths.
+
+  3x3-relevant paths matching NO existing family:
+  - dayan-bermuda-cube-earth/jupiter/mars/mercury/neptune/saturn/uranus/venus, dayan-bermuda-
+    barrel, dayan-bermuda-house-i/ii, dayan-bermuda-sunflower — a bandaged-3x3 series (see
+    thecubicle-dayan-bermuda-cube-2020 for the product description). This is the only genuine
+    missing-family candidate this sweep surfaces.
+  - dayan-mf8-crazy-3x3-2-faces/4-faces, dayan-mf8-crazy-3x3-plus-earth/jupiter/mars/mercury/
+    neptune/saturn/uranus/venus/mod — a joint DaYan+mf8 "Crazy 3x3" listing, same mechanism as
+    the existing mf8-crazy-3x3x3 family (see thecubicle-dayan-non-3x3-lines-2026). Not a
+    missing family; a possible cross-brand attribution note for pass 4.
+
+  Non-3x3 or non-cube DaYan SKUs found and explicitly checked, none of them 3x3x3 puzzles (see
+  thecubicle-dayan-non-3x3-lines-2026 for the ones with a documented description): dayan-gem-
+  cube-i through -viii plus gem-9/gem-10 (multifaceted "gem stone" shape, "Type: Other"),
+  dayan-jewel-cube (same category), dayan-crazy-pentahedron-* [found at SpeedCubeShop, not
+  TheCubicle, under the "dayan-crazy" name — a pentahedron, not a cube], dayan-bagua-cube
+  (cube-shaped shape mod, weak lead only), dayan-tangram-cube(-extreme) (cube-shaped shape mod
+  derived from the pentahedron mechanism, weak lead only), dayan-hydrangea (spherical, not
+  cube-shaped), dayan-bi-yiniao-cube (12-axis jumbling mechanism, not a 3x3x3 layer-turn),
+  dayan-shuang-feiyan-cube (its sibling, not independently fetched this pass — same jumbling
+  category by the Bi YiNiao page's own comparison), dayan-octahedron, dayan-skewb(-v2),
+  dayan-master-skewb, dayan-dino-skewb, dayan-pyraminx(-v2/-v3), dayan-megaminx-* (multiple
+  generations, out of 3x3 scope), dayan-mf8-4x4-*, dayan-mf8-megaminx-core, dayan-nezha-5x5-m-*,
+  dayan-fto-magnetic-ball-core (face-turning octahedron), dayan-7x7-skewb,
+  dayan-30/16/12-axis-hexadecagon/puzzle-ball/wheels-of-wisdom, dayan-wheels-of-wisdom,
+  dayan-4-axis-4-rank (not found at TheCubicle; found at Cubelelo, see companion source) —
+  none of these is a 3x3x3.
+
+  Accessory/hardware SKUs (not products): dayan-42mm/50mm/57-55mm hardware sets and cores,
+  dayan-57mm-torpedo-set, dayan-50mm-2x2-sticker-set, dayan-tengyun-3x3-sticker-set,
+  dayan-bundle — out of scope for family/model enumeration.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix https://www.thecubicle.com/products/dayan --limit 2000`) is the primary evidence; the
+  excerpt reproduces the path list and grouping directly, per RESEARCH_SPEC 3.5's allowance
+  for evidence that does not reduce to one page's text."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure. RESEARCH_SPEC 3.6a compliance record for
+  DaYan: this is the required "archived retailer /products/ prefix sweep, even when the
+  official site is healthy" check (DaYan's official site is in fact dead, per
+  data/manufacturers/dayan.yml) — outcome: SWEPT, one genuine missing-family candidate found
+  (Bermuda), one cross-brand attribution note (mf8 Crazy 3x3 joint listing), and a long tail of
+  confirmed-out-of-scope novelty/shape-mod SKUs. Not "swept, nothing new found" — recorded
+  honestly as "swept, one thing found".
+status: sourced

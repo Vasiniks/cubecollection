@@ -1,0 +1,33 @@
+# source: thecubicle-shengshou-yufeng-v2-3x3-m-2023
+# Pass 2.6 (Agent E, lost-lanes recovery). Direct product-page capture of the second ShengShou
+# YuFeng 3x3 generation ("V2"), companion to thecubicle-shengshou-yufeng-3x3-m-2023.
+id: thecubicle-shengshou-yufeng-v2-3x3-m-2023
+entity: source
+kind: retailer
+title: "ShengShou YuFeng V2 3x3 M — TheCubicle product page"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-yufeng-v2-3x3-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230603082826id_/https://www.thecubicle.com/products/shengshou-yufeng-v2-3x3-m"
+excerpt: |-
+  Title: "ShengShou YuFeng V2 3x3 M". Price: "$22.99" (Stickerless Bright, the only option
+  offered). Product Description: "The ShengShou YuFeng V2 3x3 M is a magnetic puzzle with
+  vibrant stickerless bright shades, hand-adjustable compressions, and decent turning right out
+  of the box. Give it a try if you're looking for something different!" Product Specifications:
+  Manufacturer ShengShou; Type 3x3; Added 2023-05-19; Gross Weight 224g; Dimensions 56.0mm;
+  Magnets: Magnetic; Item Weight 80.0g. No reviews recorded at this capture.
+preservation_note: "archive_url is the id_ (raw) Wayback capture, tags stripped via `npm run
+  wayback -- get`."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer product page with a structured spec table. The "Added:
+  2023-05-19" field is a retailer catalogue date, not a release date (see companion source
+  thecubicle-shengshou-yufeng-3x3-m-2023 and pass3-admission-policy section 3). This is a
+  distinct product page/slug from the V1 generation, priced $3 higher and specified 1g heavier
+  item weight and slightly different gross weight — genuinely a second, separately-sold
+  product, not a re-listing.
+status: sourced

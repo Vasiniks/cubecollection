@@ -1,0 +1,45 @@
+# source: cubelelo-dayan-products-prefix-2026
+# Pass 2.6 (Agent E). RESEARCH_SPEC 3.6a non-US/English retailer check for DaYan, using
+# Cubelelo (India) — the same retailer already used for the equivalent ShengShou check
+# (cubelelo-shengshou-products-prefix-2026). A CDX prefix sweep of cubelelo.com/products/dayan*
+# (39 distinct captured URLs, 2020-2025, NOT truncated).
+id: cubelelo-dayan-products-prefix-2026
+entity: source
+kind: retailer
+title: "cubelelo.com/products/dayan* — product URL enumeration (non-US/English retailer check)"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/dayan-bermuda-cube"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.cubelelo.com/products/dayan (2020-2025 captures, 39
+  distinct URLs). 3x3-relevant paths matching the 8 frozen families: dayan-guhong-pro(-maglev)-
+  3x3-magnetic, dayan-guhong-v3-m(-stickerless)-3x3-magnetic, dayan-guhong-v4-m-3x3,
+  dayan-tengyun-m-3x3-*, dayan-tengyun-v2-m-3x3-magnetic, dayan-zhanchi-pro-m-3x3(-magnetic-
+  refurbished), dayan-zhanchi-v5-m-3x3-magnetic(-refurbished) — no new generation beyond what
+  TheCubicle's sweep already found.
+
+  3x3-relevant paths matching NO existing family: dayan-bermuda-black-earth/jupiter/mars/
+  uranus/venus, dayan-bermuda-sunflower-black, dayan-bermuda-cube (a 2025-08-14 capture,
+  showing this line still current at this retailer) — independent corroboration of the same
+  DaYan Bermuda bandaged-3x3 line TheCubicle carries (thecubicle-dayan-bermuda-cube-2020),
+  under this retailer's own colourway-first naming convention.
+
+  Non-3x3 DaYan SKUs found, none of them 3x3x3 puzzles: dayan-gem-cube-vi-black (the
+  multifaceted "gem" shape, see thecubicle-dayan-non-3x3-lines-2026), dayan-4-axis-4-rank-
+  stickerless, dayan-bagua-stickerless, dayan-tangram-stickerless, dayan-wheel-of-wisdom-
+  stickerless (megaminx-adjacent shape mod), dayan-megaminx-*, dayan-pyraminx-v3-magnetic,
+  dayan-skewb-v2-magnetic.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix https://www.cubelelo.com/products/dayan --limit 200`) is the primary evidence; the
+  excerpt reproduces the path list directly."
+accessed: "2026-09-07"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure. RESEARCH_SPEC 3.6a compliance record:
+  non-US/English retailer checked = Cubelelo (India). Outcome: no new DaYan 3x3 family or
+  model surfaced beyond what thecubicle-dayan-products-prefix-2026 already found; DaYan
+  Bermuda is corroborated as a second-retailer-confirmed, currently-sold line.
+status: sourced

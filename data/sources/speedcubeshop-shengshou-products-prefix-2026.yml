@@ -1,0 +1,62 @@
+# source: speedcubeshop-shengshou-products-prefix-2026
+# Pass 2.6 (Agent E, lost-lanes recovery). A second-retailer CDX prefix sweep of
+# speedcubeshop.com/products/shengshou*, run specifically to corroborate the ShengShou YuFeng
+# and ShengShou Crazy 3x3 lines that thecubicle-shengshou-products-prefix-2026 found with no
+# corresponding family record. SpeedCubeShop is independent of TheCubicle (different publisher,
+# different product copy, as quoted below) and of Cubelelo (the non-US/English retailer already
+# swept for ShengShou), so this is genuine third-channel corroboration, not a repeat listing.
+id: speedcubeshop-shengshou-products-prefix-2026
+entity: source
+kind: retailer
+title: "speedcubeshop.com/products/shengshou* — product URL enumeration"
+publisher: "SpeedCubeShop"
+url: "https://www.speedcubeshop.com/products/shengshou-yufeng-3x3-magnetic-magnetic-core"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.speedcubeshop.com/products/shengshou-yufeng (37 distinct
+  URLs) independently corroborates the YuFeng 3x3 line found at TheCubicle, under this
+  retailer's own slugging: shengshou-yufeng-3x3-magnetic-magnetic-core (first capture
+  2023-03-06), shengshou-yufeng-v2-3x3-magnetic-magnetic-core (first capture 2023-09-21), and
+  later re-slugged paths shengshou-yufeng-3x3-v1-magnetic-core-magnets (2025-04-22) and
+  shengshou-yufeng-3x3-v2-magnetic-core-magnets (2025-05-14) — the same two generations
+  (V1/V2) TheCubicle carries, still resolving as of 2025. Sibling cross-category YuFeng products
+  also found: shengshou-yufeng-4x4-magnetic, shengshou-yufeng-5x5-magnetic,
+  shengshou-yufeng-megaminx-magnetic(-ball-core), shengshou-yufeng-pyraminx-magnetic.
+
+  A separate CDX prefix enumeration of https://www.speedcubeshop.com/products/shengshou-crazy
+  (69 distinct URLs) independently corroborates the ShengShou Crazy 3x3 shape-mod line:
+  shengshou-crazy-3x3 (first capture 2022-08-07),
+  shengshou-crazy-3x3-v1 (2025-08-06), shengshou-crazy-3x3-v2 (2023-09-28) — again a two-
+  generation (v1/v2) structure paralleling YuFeng's. The same "Crazy" naming spans
+  ShengShou's 2x2, 4x4 (v1/v2/v3), 5x5 (v1-v4), Magic Tower, Megaminx (v1/v2), and Mirror
+  3x3/Pyraminx lines at this retailer — a persistent, currently-active cross-category ShengShou
+  product concept, not a one-off SKU.
+
+  A third, narrower enumeration of https://www.speedcubeshop.com/products/shengshou-rainbow
+  found only a single, much older pair of captures: shengshou-rainbow-3x3x3 (2016-01-08) and its
+  .oembed variant (2016-01-09) — no later capture at this retailer, consistent with an early,
+  possibly since-discontinued-at-this-retailer product (TheCubicle's own
+  thecubicle-shengshou-rainbow-3x3-2020 source is the stronger, more recent evidence for this
+  line's currency).
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix https://www.speedcubeshop.com/products/shengshou-yufeng --limit 200`,
+  `...shengshou-crazy --limit 200`, `...shengshou-rainbow --limit 100`) is the primary evidence;
+  the excerpt reproduces the path lists and dates directly, per RESEARCH_SPEC 3.5's allowance for
+  evidence that does not reduce to one page's text. Note: the full unscoped
+  speedcubeshop.com/products/shengshou prefix (hundreds of non-3x3 SKUs — big cubes, mirror
+  cubes, pyraminx, megaminx, mosheng NxN line) could not be enumerated in one pass at this
+  session's rate limit and was queried by narrower sub-prefix instead; this is recorded so a
+  future pass knows the full-prefix sweep is still outstanding for SpeedCubeShop specifically,
+  unlike TheCubicle and Cubelelo which were each swept unscoped."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure, independent publisher from both TheCubicle
+  and Cubelelo. Confirms YuFeng and Crazy 3x3 as genuinely currently-sold, multi-generation
+  ShengShou 3x3 lines beyond a single-retailer artifact. Does not by itself establish a release
+  date for either generation (see the dedicated TheCubicle product-page sources for that
+  discussion); corroborates existence and the V1/V2 generational split only.
+status: sourced

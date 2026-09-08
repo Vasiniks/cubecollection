@@ -1,0 +1,46 @@
+# source: thecubicle-shengshou-yufeng-3x3-m-2023
+# Pass 2.6 (Agent E, lost-lanes recovery). Direct product-page capture of the first ShengShou
+# YuFeng 3x3 generation, chasing the escalation left open in
+# thecubicle-shengshou-products-prefix-2026 (a bare path-list sweep that named this product but
+# did not fetch its page). This is the actual archived page content: name, price, description,
+# and spec table.
+id: thecubicle-shengshou-yufeng-3x3-m-2023
+entity: source
+kind: retailer
+title: "ShengShou YuFeng 3x3 M (Magnetic Core) — TheCubicle product page"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-yufeng-3x3-m-magnetic-core-magelev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230205080349id_/https://www.thecubicle.com/products/shengshou-yufeng-3x3-m-magnetic-core-magelev"
+excerpt: |-
+  Title: "ShengShou YuFeng 3x3 M (Magnetic Core) – TheCubicle". Price: "$19.99" (Stickerless
+  Bright, the only option offered). Product Description: "The ShengShou YuFeng M is a new
+  flagship 3x3 that features a magnetic core, piece feet magnets, and adjustable tension system.
+  Everything can be tuned by hand! If you're looking for something a bit out of the mainstream
+  but with all the features, look no further!" Product Specifications: Manufacturer ShengShou;
+  Type 3x3; Added 2023-01-05; Gross Weight 223g; Dimensions 56.0mm; Magnets: Magnetic; Item
+  Weight 76.2g.
+
+  A single customer review (Michael W., United States) adds first-hand detail not in the
+  manufacturer copy: "ShengSo is calling this a Maglev cube when it's nothin like what Moyu,
+  Gan, or Qiyi has given us. When I got this cube and shortly found out that this was not
+  Magleved I posted about it on Facebook and taged Phil. After he saw my post this cube's info
+  was changed on this site to remove the Maglev title." This corroborates the URL slug's
+  "-magelev" fragment as a discarded marketing claim, not an actual MagLev mechanism — the
+  product is magnetic-core, not MagLev, contrary to what its own retailer URL still implies.
+  The same review also names sibling "YuFeng 4x4 and 5x5" as existing cross-category products.
+preservation_note: "archive_url is the id_ (raw) Wayback capture, tags stripped via `npm run
+  wayback -- get`."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer product page with a structured spec table (Manufacturer/Type/
+  Gross Weight/Dimensions/Magnets) — sufficient for `probable` model-existence and
+  specification claims per the Pass 3 admission policy's claim-class ladder. The "Added:
+  2023-01-05" field is a retailer catalogue date, NOT treated as a release date per
+  RESEARCH_SPEC/pass3-admission-policy section 3 (retailer "Added:" fields are never
+  acceptable as release dates) — used only as an "existed by" upper bound.
+status: sourced
