@@ -325,3 +325,72 @@ question for the adjudicator is whether to run a **targeted Pass 2.6 family-gap 
 freezing the model inventory — models cannot be enumerated for families that do not exist.
 
 **Pass 4 has not started.**
+
+---
+
+# PASS 2.6 STATUS (2026-09-07) — TAXONOMY NOT SAFE TO FREEZE
+
+**Full adjudication: `research/qc/pass2.6-family-gap-sweep.md`.** Lane reports:
+`pass2.6-agent-a-fangshi.md` · `-b-haitun.md` · `-c-gap-detector.md` · `-d-adversarial.md` ·
+`-e-lost-lanes.md`.
+
+## The decision
+
+| | Question | Answer |
+|---|---|---|
+| A | 122-family taxonomy safe to freeze? | **NO** |
+| B | FangShi GuangYing / JieYun genuine? | **YES — `confirmed`** |
+| C | HaiTun ZhanLang genuine? | **NO — alias, rejected** |
+| D | Additional credible missing families? | **YES — 2 established, 7 credible, 11 unverified** |
+| E | Methodology materially flawed? | **TARGETED AMENDMENT** |
+| F | Pass 4 safe to begin? | **NO** |
+
+## Four established missing families
+
+**FangShi GuangYing** · **FangShi JieYun** (both `confirmed`, 4 and 5 independent tier-2
+retailers, four-generation lineage corroborated) · **ShengShou YuFeng** (`probable`, a
+two-generation magnetic-core flagship still selling 2025) · **YJ Appari** (`probable`, distinct
+Speed Micro Bearing mechanism, 3 retailers).
+
+Ready-to-execute proposals for all four exist in the lane reports. Creating them is a deliberate
+taxonomy action on a frozen layer and **requires explicit authorisation**.
+
+## The finding that matters most — `P26-2`
+
+**Escalation roll-up has no mechanism, and real findings went silent twice.**
+
+1. Pass 3 Batch 1 lanes **C (DaYan) and D (YJ+ShengShou) were killed by rate limits and their
+   reports were never written.** The recovery pattern rescued their records but not their
+   narrative — 24 families and 56 models with no roll-up. ShengShou YuFeng survived only
+   because that agent also wrote the escalation into a source record's notes.
+2. `pass3-b2-agent-c-cycloneboys-maru.md` **survived**, recorded six Cyclone Boys and four Maru
+   lines as having no frozen family, and still never reached the ledger.
+
+**The research was sound; the roll-up was not.** A killed lane should not count as recovered
+until its report exists or it is marked `report_lost: true`.
+
+## Why the taxonomy under-counted — three separable mechanisms (`P26-3`)
+
+1. **Retailer-channel narrowness** (US/English only) → FangShi, CubeTwist.
+2. **URL-pattern narrowness** (`/collections/` vs raw `/products/`, same retailer) → six
+   ShengShou lines.
+3. **Escalation roll-up failure** → Cyclone Boys ×6, Maru ×4.
+
+**RESEARCH_SPEC §3.6a already mandates checks 1 and 2.** It was added 2026-09-03, *after* Pass 2
+finished, and was never applied retroactively. The methodology is not broken — **the frozen
+taxonomy predates its own discovery standard.** The remedy is to apply the existing rule, not
+write a new one.
+
+## The gap is bounded — three probes came back empty
+
+Brand cross-check against the 54-entity register found **no unrepresented manufacturer** · six
+of seven zero-family findings **reinforced** under the broader check (only CubeTwist failed) ·
+the canonical-prose detector found the FangShi flag was **the only unresolved missing-family
+flag archive-wide**.
+
+## Next action
+
+Adjudicate P26-1 (create the 4 families + models), then P26-4/P26-5/P26-6, then apply §3.6a
+retroactively, close P26-2, re-freeze, and re-enter the Pass 4 gate.
+
+**Pass 4 remains NOT STARTED. Variants remain at 104.**

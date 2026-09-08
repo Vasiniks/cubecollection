@@ -9,15 +9,15 @@
 # severity: critical | high | medium | low
 
 meta:
-  baseline_sha: "9068899"
-  updated: "2026-09-03"
-  phase: "Pass 2.5 complete - held attestations closed, mf8 blocker resolved, methodology amended"
+  baseline_sha: "48cb686"
+  updated: "2026-09-07"
+  phase: "Pass 2.6 complete - family-gap sweep run; 122-family taxonomy NOT safe to freeze; Pass 4 blocked"
   counts:
     entities: 54
     families: 122
-    models: 48
+    models: 253
     variants: 104
-    sources: 289
+    sources: 460
 
 issues:
 
@@ -547,7 +547,7 @@ issues:
 
   - id: P3-T1
     severity: high
-    status: needs_human_decision
+    status: resolved
     title: "FangShi GuangYing and JieYun are real 3x3 lines with no frozen family"
     category: taxonomy-completeness
     affected_records: >-
@@ -580,7 +580,7 @@ issues:
       any existing record - it is a completeness gap, not a correctness error, so Pass 3 can
       close with it documented rather than blocked.
     owner: main
-    last_updated: "2026-09-04"
+    last_updated: "2026-09-07"
 
   - id: P3-D1
     severity: medium
@@ -693,7 +693,7 @@ issues:
 
   - id: P3-T4
     severity: high
-    status: needs_human_decision
+    status: resolved
     title: "HaiTun ZhanLang V1 is a real 3x3 line with no frozen family"
     category: taxonomy-completeness
     affected_records: "none yet - evidence at data/sources/cubezz-haitun-zhanlang-v1-standard.yml"
@@ -715,4 +715,193 @@ issues:
       cannot be enumerated for a family that does not exist, so this bounds Pass 3's
       completeness rather than its accuracy.
     owner: main
-    last_updated: "2026-09-04"
+    last_updated: "2026-09-07"
+
+  # ---- Pass 2.6 (2026-09-07): targeted family-gap sweep ----------------------
+  # P26 = Pass 2.6 family-gap sweep. Established gaps, the process defect that
+  # hid them, and the candidates still needing adjudication.
+
+  - id: P26-1
+    severity: critical
+    status: needs_human_decision
+    title: "Four missing families established; the 122-family taxonomy is not safe to freeze"
+    category: taxonomy-completeness
+    affected_records: "none mutated - families remain frozen at 122"
+    evidence: >-
+      FangShi GuangYing and FangShi JieYun are confirmed on four and five independent tier-2
+      retailers respectively, with a stated mould difference for JieYun and a corroborated
+      four-generation lineage ShuangRen -> ShuangRen V2 -> GuangYing -> JieYun. ShengShou YuFeng
+      is a two-generation magnetic-core flagship (2023-02, 2023-06) still selling in 2025,
+      corroborated at a second independent publisher. YJ Appari is a flagship with a distinct
+      Speed Micro Bearing/Actuator mechanism, corroborated across three independent retailers.
+      Ready-to-execute proposals exist in the lane reports for all four.
+    counterevidence: >-
+      No first-party manufacturer source exists for FangShi after five passes, and Chinese-
+      language search was blocked again. YuFeng and Appari second-retailer corroboration is
+      URL-level CDX only; both source records state this and scope their claim to existence.
+    recommendation: >-
+      Adjudicate and create all four families with their models before Pass 4. This is a
+      deliberate taxonomy action on a frozen layer and requires explicit authorisation.
+    confidence: confirmed
+    downstream_impact: >-
+      Blocks Pass 4. Variants attach to models, which attach to families; each missing family
+      is a variant subtree that cannot be enumerated. YuFeng's two generations and Appari's
+      mechanism both carry configuration tiers that are exactly Pass 4's subject matter.
+    owner: main
+    last_updated: "2026-09-07"
+
+  - id: P26-2
+    severity: critical
+    status: open
+    title: "Escalation roll-up has no mechanism; real findings went silent twice"
+    category: process
+    affected_records: "research/qc/pass3-progress.md, research/qc/pass2-remediation-ledger.yml"
+    evidence: >-
+      Two independent failures. (1) Pass 3 Batch 1 lanes C (DaYan) and D (YJ+ShengShou) were
+      killed by rate limits; the recovery pattern rescued their records but their reports were
+      never written, so 24 families and 56 models were enumerated with no escalation roll-up.
+      The ShengShou YuFeng escalation survived only because that agent also wrote it into
+      data/sources/thecubicle-shengshou-products-prefix-2026.yml notes, where it sat at
+      status sourced and unpropagated. (2) research/qc/pass3-b2-agent-c-cycloneboys-maru.md
+      SURVIVED and explicitly records six Cyclone Boys and four Maru lines as having no frozen
+      family - and still never reached the ledger. pass3-progress.md listed six open
+      escalations when the true number was materially higher.
+    counterevidence: >-
+      None. Both failures verified directly against the repository this pass.
+    recommendation: >-
+      Make roll-up checkable. In preference order: require every escalation to also be written
+      into a canonical record's notes (the practice that saved the ShengShou finding); add a
+      lint rule scanning record prose and reports for escalation language with no matching
+      ledger id; require a ledger entry before a lane counts as merged. Additionally, treat a
+      killed lane as unrecovered until its report exists or it is marked report_lost: true.
+    confidence: confirmed
+    downstream_impact: >-
+      The defective step is the roll-up, not the research. Every finding was made correctly and
+      written honestly; the archive had no mechanism guaranteeing it reached the ledger.
+    owner: main
+    last_updated: "2026-09-07"
+
+  - id: P26-3
+    severity: high
+    status: open
+    title: "RESEARCH_SPEC 3.6a was never applied retroactively to the frozen family taxonomy"
+    category: methodology
+    affected_records: "data/families/ (all 122), data/manufacturers/ (all 54)"
+    evidence: >-
+      Three separable discovery mechanisms failed. (1) Retailer-channel narrowness: only
+      US/English retailers checked - missed FangShi GuangYing/JieYun and CubeTwist. (2)
+      URL-pattern narrowness: a retailer /collections/ page instead of the raw /products/
+      prefix on the SAME retailer - missed six ShengShou lines. The archive's own source record
+      states this outright: the collections page "filters differently than the raw /products/
+      prefix and missed a live, dated 3x3 catalogue." RESEARCH_SPEC 3.6a already mandates BOTH
+      checks. It was added 2026-09-03, after Pass 2 family enumeration completed.
+    counterevidence: >-
+      Three independent probes came back genuinely empty and bound the gap: the brand cross-
+      check against the 54-entity register found no unrepresented manufacturer; six of seven
+      zero-family findings were reinforced under the broader check; and the canonical-prose
+      detector found the FangShi flag was the only unresolved missing-family flag archive-wide.
+    recommendation: >-
+      The current methodology is not materially flawed - the frozen taxonomy predates its own
+      discovery standard. Remedy is to apply the existing rule to the existing taxonomy, not to
+      write a new rule. Amend 3.6a to state that a discovery standard added after a pass
+      completed does not validate that pass.
+    confidence: confirmed
+    downstream_impact: >-
+      Bounded, not open-ended. The gap concentrates in discontinued lines from makers with dead
+      official sites, reachable only via non-US retailers or raw product-prefix sweeps.
+    owner: main
+    last_updated: "2026-09-07"
+
+  - id: P26-4
+    severity: high
+    status: needs_human_decision
+    title: "CubeTwist zero-family finding overturned by evidence"
+    category: taxonomy-completeness
+    affected_records: "data/manufacturers/cubetwist.yml"
+    evidence: >-
+      cubetwist.yml line 21 states "No standard WCA-legal 3x3 was found under the CubeTwist
+      name this pass" and classes the brand a novelty specialist alongside HelloCube,
+      VeryPuzzle and Calvin's. A standard 57mm/94g 3x3 has been sold continuously at Cubezz
+      from 2015 and Lightake from 2011 through at least 2026, filed under each retailer's own
+      dedicated 3x3x3 WCA category. The original check only ever reached TheCubicle and
+      Cubelelo, neither of which carries it.
+    counterevidence: >-
+      Lightake mirrors Cubezz SKU numbers, so per RESEARCH_SPEC 3.2 it corroborates existence
+      rather than independently confirming specs. Held at reported, not higher. No first-party
+      or explicitly dated source found; introduced would be "before 2011" at best.
+    recommendation: >-
+      Adjudicate the ready-to-execute cubetwist-3x3 proposal in the Agent D report. Keep all
+      other CubeTwist products (shape mods, bandaged kits, mirror blocks) out of the family.
+    confidence: probable
+    downstream_impact: >-
+      Demonstrates that zero-family findings established on a narrow retailer basis are not
+      reliable. Six of the seven others held under re-check; this one did not.
+    owner: main
+    last_updated: "2026-09-07"
+
+  - id: P26-5
+    severity: high
+    status: open
+    title: "Seven credible missing-family candidates await adjudication"
+    category: taxonomy-completeness
+    affected_records: "none - candidates only"
+    evidence: >-
+      CubeTwist 3x3x3 (reported, see P26-4); DaYan Bermuda (reported, bandaged-3x3 series);
+      ShengShou Crazy 3x3 (reported, shape-mod, two generations, scope_class question);
+      ShengShou Rainbow 3x3, Gem 3x3, Tank 3x3 (reported, standard mechanism); ShengShou Metal
+      Cube 3x3 (uncertain, WCA material-rules scope question). Five of the seven are ShengShou
+      lines sharing the one under-swept retailer channel identified in P26-3.
+    counterevidence: >-
+      All rest on retailer catalogue evidence at reported or uncertain confidence. None has
+      been researched to a decision; several may resolve as out of scope or as models under an
+      existing family.
+    recommendation: >-
+      Research to a decision before Pass 4. The five ShengShou lines can be handled as one lane
+      since they share a source channel.
+    confidence: probable
+    downstream_impact: "Each unresolved candidate is a potential variant subtree Pass 4 would miss."
+    owner: main
+    last_updated: "2026-09-07"
+
+  - id: P26-6
+    severity: medium
+    status: open
+    title: "Eleven family-gap leads recorded in surviving Pass 3 reports were never verified"
+    category: taxonomy-completeness
+    affected_records: "none - leads only"
+    evidence: >-
+      Cyclone Boys FeiHong, FeiXuan, XuanFeng, JisuZhiYun, JisuZhiFeng and FeiKu (6) and Maru
+      ShenLan Luminous, Maze, Mini 30mm and Mini Keychain (4) are recorded in
+      research/qc/pass3-b2-agent-c-cycloneboys-maru.md as "real per retailer evidence found
+      this pass, none has a frozen family". Cubelelo "Drift" house brand (1) is the existing
+      C-B1 entity-level issue. None was independently researched in Pass 2.6.
+    counterevidence: >-
+      These rest on a prior pass's report rather than on Pass 2.6's own evidence. The Cyclone
+      Boys names are described there as wiki-sourced "older models", which is tier 4 and
+      inadmissible alone.
+    recommendation: "Verify against retailer evidence before deciding; do not create on wiki naming."
+    confidence: reported
+    downstream_impact: "Would raise the missing-family count materially if they hold."
+    owner: main
+    last_updated: "2026-09-07"
+
+  - id: P26-7
+    severity: low
+    status: open
+    title: "HaiTun ZhanLang alias and Dolphin gloss are now sourced but not recorded"
+    category: record-completeness
+    affected_records:
+      - data/manufacturers/haitun.yml
+      - data/families/haitun-waverider.yml
+    evidence: >-
+      Cubezz's own brand field reads "HAITUN CUBE (Dolphin)", a sourced confirmation of the
+      dolphin gloss that haitun.yml correctly declined to assert unsourced. Separately,
+      "ZhanLang" is established as cubezz's own earlier name for the Waverider listing.
+    counterevidence: "None. Both are additive."
+    recommendation: >-
+      Add "ZhanLang" to haitun-waverider aliases and record the Dolphin gloss on haitun.yml
+      with its attestation. Purely additive; deferred here only because families are frozen.
+    confidence: probable
+    downstream_impact: "None. Improves discoverability of an already-correct record."
+    owner: main
+    last_updated: "2026-09-07"

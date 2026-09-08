@@ -1,7 +1,7 @@
 # Pass 3 — model enumeration progress
 
-**Updated:** 2026-09-04 · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
-**Status: enumeration COMPLETE — every frozen family has been researched.**
+**Updated:** 2026-09-07 (Pass 2.6) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
+**Status: enumeration COMPLETE. Closure BLOCKED — see Pass 2.6 below. Pass 4 NOT safe to begin.**
 
 ## Invariants (verified at this commit)
 
@@ -11,7 +11,7 @@
 | families | **122 — FROZEN** | **122** | ✓ |
 | variants | **104 — Pass 4, must not change** | **104** | ✓ |
 | models | 48 at Pass 3 start | **253** | +205 |
-| sources | 289 at Pass 3 start | **436** | +147 |
+| sources | 289 at Pass 3 start | **460** | +171 (+24 in Pass 2.6) |
 
 Verified programmatically across all 253 models: every `family_id` resolves, every model's
 `manufacturer_id` matches its family's, every model carries `scope_class`, no duplicate ids.
@@ -48,31 +48,62 @@ the model date is itself soft**, so an `exact` model date is never swallowed by 
 vagueness. Fires on 4 genuine conflicts, correctly silent on 6. Both branches carry fixtures and
 the selftest asserts the allowance branch stays quiet. Documented as DATA_MODEL §7.9.
 
-## Escalations open for human adjudication
+## Escalations — status after Pass 2.6 adjudication
 
 | id | Sev | Item |
 |---|---|---|
-| **P3-T1** | high | **FangShi GuangYing and JieYun are real 3×3 lines with no family** — `probable`, two independent retailers plus a mould difference; a 61-URL sweep bounds the gap at exactly two |
-| **P3-T4** | high | **HaiTun ZhanLang V1 is a real line with no family** — found on Cubezz, `Manufacturer: HAITUN CUBE` |
+| **P3-T1** | high | **RESOLVED — ESTABLISHED.** FangShi GuangYing and JieYun raised `probable` → `confirmed` on 4 and 5 independent tier-2 retailers |
+| **P3-T4** | high | **RESOLVED — REJECTED.** An alias: same Cubezz product ID 8598 / SKU HTO02C under both titles |
 | **P3-D2** | medium | 7 families understate their own `introduced` date |
 | **E-VALK-1** | medium | `qiyi-valk` description prose lists 2×2/4×4/5×5 as 3×3 generations |
 | **P3-T2** | low | `escube-es3` / `escube-air` may be one line under two retailer names — model split stands on mechanism evidence regardless |
 | **P3-T3** | low | No relationship type for a shared manufacturing platform across brands |
+| **P26-1** | crit | **4 missing families established** — FangShi ×2, ShengShou YuFeng, YJ Appari. Blocks Pass 4 |
+| **P26-2** | crit | **Escalation roll-up has no mechanism** — findings went silent twice |
+| **P26-3** | high | RESEARCH_SPEC §3.6a never applied retroactively to the frozen taxonomy |
+| **P26-4** | high | CubeTwist zero-family finding overturned by evidence |
+| **P26-5** | high | 7 credible missing-family candidates await adjudication |
+| **P26-6** | med | 11 leads recorded in surviving Pass 3 reports, never verified |
+| **P26-7** | low | HaiTun ZhanLang alias + Dolphin gloss now sourced, not yet recorded |
 
-## Is Pass 3 complete?
+## Is Pass 3 complete? — superseded by Pass 2.6
 
-**Enumeration: yes.** Every frozen family has been researched, and every outcome is either an
-admitted model or a documented zero.
+**Enumeration: yes.** Every frozen family was researched; every outcome is an admitted model or
+a documented zero.
 
-**Closure: not yet.** Two independent missing-family findings — **FangShi** (P3-T1) and **HaiTun
-ZhanLang** (P3-T4) — surfaced in this session alone. Both are *completeness* gaps rather than
-correctness errors: no existing record is invalidated. But two in one session is a pattern, not a
-coincidence, and it suggests Pass 2's family enumeration may have missed others that a
-family-focused sweep would find.
+**Closure: NO — and for a bigger reason than this document originally recorded.**
+See `research/qc/pass2.6-family-gap-sweep.md` (2026-09-07) for the adjudication.
 
-Neither blocks Pass 4 on correctness grounds. The judgement call for the adjudicator is whether to
-run a **targeted Pass 2.6 family-gap sweep** before freezing the model inventory, since models
-cannot be enumerated for families that do not exist.
+Pass 2.6 ran five lanes against the two missing-family findings recorded below. The results
+changed the picture in both directions:
+
+- **P3-T1 FangShi GuangYing / JieYun — ESTABLISHED**, raised `probable` → `confirmed` on four
+  and five independent tier-2 retailers.
+- **P3-T4 HaiTun ZhanLang — REJECTED.** Same Cubezz product ID and SKU under two titles three
+  months apart: a retailer rename, not a second line. A false positive.
+- **Two further families established that nobody predicted:** **ShengShou YuFeng** (a
+  two-generation magnetic-core flagship still selling in 2025) and **YJ Appari**.
+- **CubeTwist's zero-family finding overturned**, plus 7 credible and 11 unverified candidates.
+
+### The escalation table below was incomplete, and that is the real finding
+
+It listed six items. The true number was materially higher, because **escalation roll-up has no
+mechanism** (ledger `P26-2`). Two independent failures:
+
+1. Pass 3 Batch 1 lanes **C (DaYan) and D (YJ+ShengShou) were killed by rate limits and their
+   reports were never written** — 24 families and 56 models enumerated with no roll-up. The
+   ShengShou YuFeng escalation survived *only* because that agent also wrote it into a source
+   record's notes, where it sat at `status: sourced` and unpropagated.
+2. `pass3-b2-agent-c-cycloneboys-maru.md` **survived**, explicitly recorded six Cyclone Boys and
+   four Maru lines as having no frozen family — and still never reached the ledger.
+
+**The defective step is the roll-up, not the research.** Every finding was made correctly and
+written down honestly.
+
+### Pass 4 gate: **NOT SAFE TO BEGIN**
+
+Four established missing families are four variant subtrees Pass 4 cannot enumerate. This is a
+completeness blocker, not a correctness one — no existing record is invalidated.
 
 ## Review items carried forward
 
