@@ -1,0 +1,44 @@
+# source: speedcubeshop-cubetwist-brand-page-2014
+# P26-5 Agent A (CubeTwist 3x3x3 adjudication). Independent third-retailer brand recognition:
+# SpeedCubeShop (a major US/Western speedcubing retailer, unrelated to Cubezz/Lightake's
+# China-based dropship channel) carried a dedicated CubeTwist manufacturer/brand page and
+# brand logo from at least 2012 (accessory listing) through 2014 (dedicated /cubetwist brand
+# page), independent evidence that "CubeTwist" was a recognised brand name in the Western
+# speedcubing retail market too, not solely a China-market wholesale label. Weaker evidence
+# than the Cubezz/first-party findings for the specific standard-3x3x3 product, since the
+# captured brand-page snapshot itself lists no live products under the brand at that moment.
+id: speedcubeshop-cubetwist-brand-page-2014
+entity: source
+kind: retailer
+tier: 2
+title: "CubeTwist brand/manufacturer page -- SpeedCubeShop.com"
+publisher: "SpeedCubeShop.com"
+url: "http://speedcubeshop.com/cubetwist"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20140630024505id_/http://speedcubeshop.com/cubetwist"
+excerpt: |-
+  A dedicated manufacturer/brand landing page at path `/cubetwist` (OpenCart's standard
+  `route=product/manufacturer` brand-page pattern), with its own brand logo asset
+  (`image/cache/data/Brands/cubetwistLOGO-80x80.jpg`, first captured 2013-11-21) and its own
+  listing in the site's "Brand" filter alongside the site's other named puzzle manufacturers.
+  The product grid on this specific capture reads "There are no products to list." -- i.e. the
+  brand page existed and was actively maintained (logo, dedicated URL, brand-filter listing)
+  but this snapshot caught it with zero currently-stocked items. A separate, earlier listing at
+  this retailer, "CubeTwist Bag" (an accessory, first captured 2012-12-08 as
+  `Accessories/Accessories-CubeTwist-Bag`, later re-pathed to `accessories/cubetwist-bag` by
+  2013-08-24), confirms the brand was carried with at least one real SKU in 2012-2013.
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 2, first-party retailer structured data (a dedicated manufacturer/brand page is a
+  stronger signal of brand recognition than a product-title mention), non-China/Western
+  retailer -- genuinely independent of the Cubezz/Lightake shared-catalogue chain. Does **not**
+  independently corroborate the existence of CubeTwist's standard 3x3x3 product specifically:
+  this capture's product grid is empty, and no CDX search this session surfaced a CubeTwist
+  3x3x3-speedcube-specific URL at speedcubeshop.com (only the Bag accessory and the empty brand
+  page). Recorded as brand-identity corroboration only, not product-specific evidence -- do not
+  cite this source for the 57mm/94g specification or for the 3x3x3 line's existence on its own.
+status: sourced

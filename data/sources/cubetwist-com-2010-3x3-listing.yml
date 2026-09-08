@@ -1,0 +1,55 @@
+# source: cubetwist-com-2010-3x3-listing
+# P26-5 Agent A (CubeTwist 3x3x3 adjudication). Companion to cubetwist-com-2010-official-site:
+# the individual first-party product pages within the manufacturer's own "三阶梯色魔方"
+# (3x3x3 CubeTwist) category, confirming at least two colour/finish configurations of a
+# standard 3x3x3 ("三阶梯色魔方三阶原色" / "3x3x3 CubeTwist Magic Cube, original colour" and
+# "三阶黑面" / "3x3x3, black face") plus a companion DIY-kit configuration ("三阶DIY散件" /
+# "3x3x3 DIY loose parts", named in this page's own prev/next navigation, not independently
+# fetched this session), read as sold configurations of one base design per DATA_MODEL S4.2 --
+# the same precedent already applied to the Cubezz-side DIY-kit listing
+# (cubezz-cubetwist-3x3-diy-kit).
+id: cubetwist-com-2010-3x3-listing
+entity: source
+kind: manufacturer_official
+tier: 1
+title: "梯色魔方三阶原色 / 三阶黑面 -- CubeTwist official 3x3x3 product pages"
+publisher: "CubeTwist (梯色魔方)"
+url: "http://cubetwist.com/product/showproduct.php?id=49"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20101119010244id_/http://cubetwist.com/product/showproduct.php?id=49"
+excerpt: |-
+  id=49, "梯色魔方三阶原色" ("CubeTwist Magic Cube, 3rd-order, original colour"): breadcrumb
+  places it under the site's own 3x3x3 category; "上一条: 三阶DIY散件 / 下一条: 4.0cm三阶钥匙扣
+  黑色魔方" (previous item: 3x3x3 DIY loose-parts kit; next item: 4.0cm 3x3x3 keychain black
+  cube) -- confirming a DIY-kit configuration of the same 3x3x3 line and a separate, smaller
+  keychain-format item exist in the adjacent catalogue positions. "更新时间:2010-07-28" (page
+  last updated 2010-07-28). No price or dimension/weight field is populated on this
+  company-showcase style page (this site reads as a company/factory profile, not a
+  transactional storefront -- no visible "buy" mechanism, consistent with a B2B/wholesale
+  factory presence rather than direct-to-consumer retail).
+
+  id=19, "三阶黑面" ("3rd-order, black face"): same 3x3x3 category placement; "上一条: 三阶白面
+  / 下一条: 二阶黑面(50mm)" (previous: 3x3x3 white face; next: 2x2x2 black face, 50mm) --
+  confirming a third colourway ("三阶白面", white face) in the same line, referenced by name
+  though not independently fetched this session. "更新时间:2010-06-07".
+accessed: "2026-09-08"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 1, first-party manufacturer source, same site and session as
+  `cubetwist-com-2010-official-site` (see that record for the domain's live/dead history).
+  No dimensions, weight, or explicit competition-legality statement is present on either page
+  fetched -- this source establishes line identity, category placement, and the existence of
+  multiple colour/finish configurations (original colour, black face, white face) plus a
+  DIY-kit configuration, not physical specifications. Physical specs (57.0x57.0x57.0mm, 94.0g)
+  for what appears to be the same or a closely related SKU come only from the later Cubezz/
+  Lightake retailer listings (`cubezz-cubetwist-speed-3x3`, `lightake-cubetwist-speeding-3x3`);
+  this source does not itself confirm those two figures refer to the identical physical product
+  as "original colour"/"black face" -- recorded as a gap, not bridged by inference. The
+  "三阶DIY散件" and "三阶白面" sibling items named in navigation were not independently fetched
+  (their own showproduct.php?id= values were not captured by Wayback at the session's chosen
+  timestamp) -- their existence is attested only via this page's own prev/next links, which is
+  still first-party structured data, not a retailer's secondary claim.
+status: sourced
