@@ -1,6 +1,6 @@
 # Pass 3 — model enumeration progress
 
-**Updated:** 2026-09-08 (Pass 2.6 remediation applied) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
+**Updated:** 2026-09-08 (P26-5 adjudicated) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
 **Status: 4 established families ADDED (122 -> 126). Pass 3 reconciled against them. Pass 4 STILL BLOCKED — see below.**
 
 ## Invariants (verified at this commit)
@@ -120,7 +120,8 @@ complete against a taxonomy that still has open candidates.
 
 | Issue | Blocker |
 |---|---|
-| `P26-5` | **7 credible candidates** — CubeTwist (overturns a written zero-family finding) and six others, five of them ShengShou lines from one under-swept channel |
+| ~~`P26-5`~~ | **RESOLVED 2026-09-08.** All 7 adjudicated: 6 genuine missing families, 1 refused (Metal Cube). Superseded by `P26-10` |
+| `P26-10` | **6 adjudicated families await authorised creation** — tranche 1 `confirmed` (cubetwist-3x3, dayan-bermuda), tranche 2 `probable` (4 ShengShou lines) |
 | `P26-6` | **11 unverified leads** — 6 Cyclone Boys, 4 Maru, Cubelelo Drift |
 | `P26-3` | §3.6a never applied retroactively to the family register |
 | `P26-2` / `P26-8` | Escalation roll-up still has no mechanism — it recurred twice more during the remediation itself |

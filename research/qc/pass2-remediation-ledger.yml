@@ -9,15 +9,15 @@
 # severity: critical | high | medium | low
 
 meta:
-  baseline_sha: "c983063"
+  baseline_sha: "a987500"
   updated: "2026-09-08"
-  phase: "Pass 2.6 remediation applied - 4 established families added (122 -> 126); Pass 4 still blocked on P26-5/P26-6"
+  phase: "P26-5 adjudicated: 6 of 7 candidates are genuine missing families, awaiting authorised creation in two tranches; Pass 4 blocked on that plus P26-6"
   counts:
     entities: 54
     families: 126
     models: 258
     variants: 104
-    sources: 460
+    sources: 467
 
 issues:
 
@@ -814,7 +814,7 @@ issues:
 
   - id: P26-4
     severity: high
-    status: needs_human_decision
+    status: resolved
     title: "CubeTwist zero-family finding overturned by evidence"
     category: taxonomy-completeness
     affected_records: "data/manufacturers/cubetwist.yml"
@@ -837,11 +837,11 @@ issues:
       Demonstrates that zero-family findings established on a narrow retailer basis are not
       reliable. Six of the seven others held under re-check; this one did not.
     owner: main
-    last_updated: "2026-09-07"
+    last_updated: "2026-09-08"
 
   - id: P26-5
     severity: high
-    status: open
+    status: resolved
     title: "Seven credible missing-family candidates await adjudication"
     category: taxonomy-completeness
     affected_records: "none - candidates only"
@@ -861,7 +861,7 @@ issues:
     confidence: probable
     downstream_impact: "Each unresolved candidate is a potential variant subtree Pass 4 would miss."
     owner: main
-    last_updated: "2026-09-07"
+    last_updated: "2026-09-08"
 
   - id: P26-6
     severity: medium
@@ -965,5 +965,62 @@ issues:
     confidence: confirmed
     downstream_impact: >-
       Minimal for Pass 4: variants attach to models, not to family introduction dates.
+    owner: main
+    last_updated: "2026-09-08"
+
+  # ---- P26-5 adjudication outcome (2026-09-08) --------------------------------
+
+  - id: P26-10
+    severity: high
+    status: needs_human_decision
+    title: "Six adjudicated missing families await authorised creation, in two tranches"
+    category: taxonomy-completeness
+    affected_records: "none mutated - families remain at 126"
+    evidence: >-
+      P26-5's seven candidates were adjudicated by four Sonnet 5 lanes and verified by the main
+      session (research/qc/p26-5-family-adjudication.md). Six are genuine missing families; one
+      (ShengShou Metal Cube) is refused. TRANCHE 1, confirmed on first-party evidence:
+      cubetwist-3x3, established by CubeTwist's own site whose navigation carries a 3x3x3
+      category separate from its novelty category; and dayan-bermuda, established by DaYan's own
+      2012 category page naming five sub-products, of which House I, House II, Column and Star
+      are distinct exterior moulds rather than the colourways a prior pass had assumed.
+      TRANCHE 2, probable: shengshou-rainbow, shengshou-gem, shengshou-crazy, shengshou-tank.
+    counterevidence: >-
+      Tank is the weakest of the six: broadest cross-range signal at nine puzzle types but a
+      SINGLE publisher, with clean negatives at SpeedCubeShop and Cubelelo. A thin tier-4 wiki
+      line calling Tank "similar to the Gem" is far too weak to merge on but means a future
+      mould-level check could still collapse it into Gem. Crazy's model-level scope_class is
+      genuinely unresolved between conditional and reference_only.
+    recommendation: >-
+      Create in two separate tranches, never combined, so confirmed and probable evidence are not
+      conflated. Bermuda's models take scope_class conditional per the calvins-maze-300-cube
+      bandaged precedent, NOT core. Record Tank's single-publisher weakness and Crazy's open
+      scope question on the records themselves.
+    confidence: confirmed
+    downstream_impact: >-
+      Blocks Pass 4 until created: each is a variant subtree that cannot otherwise be enumerated.
+    owner: main
+    last_updated: "2026-09-08"
+
+  - id: P26-11
+    severity: low
+    status: open
+    title: "ShengShou Metallic is a new lead, distinct from the refused Metal Cube"
+    category: taxonomy-completeness
+    affected_records: "none"
+    evidence: >-
+      While refusing ShengShou Metal Cube, the lane found a structurally separate SpeedCubeShop
+      line, shengshou-metallic-*, spanning 2x2/3x3/4x4/5x5/Pyraminx in both magnetic and
+      non-magnetic form from 2023-09-28 - earlier than TheCubicle's 2025 Metal Cube capture and
+      with genuine cross-range naming, which Metal Cube lacks entirely.
+    counterevidence: >-
+      A direct page fetch returned only site chrome with no product text, so the relationship to
+      Metal Cube is unresolved in BOTH directions. "Metallic" reads as a finish-naming convention
+      rather than a metal-shelled novelty, but no source states either way.
+    recommendation: >-
+      Treat as a P26-6-class lead. Do not conflate with Metal Cube and do not create either
+      without a source that actually resolves the relationship.
+    confidence: uncertain
+    downstream_impact: "Minimal. One unverified lead among eleven others."
     owner: main
     last_updated: "2026-09-08"

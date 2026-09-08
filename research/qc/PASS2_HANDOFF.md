@@ -464,3 +464,65 @@ zero-family conclusion. Then `P26-6`, then apply §3.6a retroactively, close `P2
 and re-enter the Pass 4 gate.
 
 **Pass 4 remains NOT STARTED. Variants remain at 104.**
+
+---
+
+# P26-5 ADJUDICATED (2026-09-08) — 6 OF 7 ARE GENUINE MISSING FAMILIES
+
+**Record: `research/qc/p26-5-family-adjudication.md`.** Four Sonnet 5 lanes, findings verified by
+the main session. **Taxonomy NOT mutated** — this is a decision checkpoint. Families remain 126,
+models 258, variants 104, manufacturers 54. Sources 460 → 467.
+
+## Dispositions
+
+| Candidate | Disposition | Confidence |
+|---|---|---|
+| **CubeTwist 3x3** | **A** | **confirmed** — tier-1 manufacturer site |
+| **DaYan Bermuda** | **A** | **confirmed** — tier-1 official category page |
+| ShengShou Rainbow | A | probable |
+| ShengShou Gem | A | probable |
+| ShengShou Crazy | A | probable (scope_class open) |
+| ShengShou Tank | A | probable (**single publisher — weakest**) |
+| ShengShou Metal Cube | **E** | refused — fails §2.2 |
+
+**6 genuine · 0 belong-under-existing · 0 aliases/artifacts · 1 insufficient.**
+
+## Two findings that changed prior conclusions
+
+**CubeTwist's own site was found** — the first first-party CubeTwist source any pass has located.
+`cubetwist.com` (梯色魔方, Guangzhou) carries **三阶梯色魔方 (3x3x3) as a product category separate
+from 异形梯色魔方 (shaped/novelty)**. That overturns `cubetwist.yml`'s "novelty specialist / no
+standard WCA-legal 3x3 found" **from the manufacturer's own site**, not by retailer inference.
+`P26-4` resolved.
+
+**An agent corrected a previous agent on Bermuda.** Pass 2.6's Agent E read the themed items as
+decorative colourways; DaYan's own 2012 category page names five sub-products, and **House I,
+House II, Column and Star are distinct exterior moulds**. Only the eight planet names are
+colourways (of Triangle). Bermuda's models are **`conditional`**, not `core` — bandaged, per the
+`calvins-maze-300-cube` precedent.
+
+## The second-order answer: **BOUNDED — no broad sweep justified**
+
+Six of seven surviving looks alarming; it is not. Sorted by *why* each was missing:
+
+- **Seen and deliberately deferred** (Rainbow, Gem, Tank) — the Speedsolving wiki that all five
+  accepted ShengShou families rest on **already lists them**, and its record says they were
+  "recorded as leads" for lack of tier-2 evidence. P26-5 supplied it. **Methodology working
+  across passes, not failing.**
+- **Evidence already held, never followed through** (Bermuda, Crazy) — a `P26-2`/`P26-8`
+  roll-up problem.
+- **True discovery gap** (CubeTwist alone) — `P26-3`.
+
+**§3.6a coverage measured:** 35 of 41 manufacturers have prefix-sweep evidence in a source
+record, 4 more in reports, and only **2** (calvins-puzzle, particula = **4 of 126 families**) have
+none — neither matching the dead-site profile behind every real miss.
+
+## Next decision — two separate tranches, never combined (`P26-10`)
+
+**Tranche 1 (confirmed):** `cubetwist-3x3` · `dayan-bermuda`
+**Tranche 2 (probable):** `shengshou-rainbow` · `shengshou-gem` · `shengshou-crazy` · `shengshou-tank`
+**Not authorised:** ShengShou Metal Cube.
+
+Then `P26-6`'s eleven leads (now twelve — `P26-11` adds ShengShou Metallic), then re-freeze.
+
+**Pass 4 remains NOT STARTED. Variants remain at 104.**
