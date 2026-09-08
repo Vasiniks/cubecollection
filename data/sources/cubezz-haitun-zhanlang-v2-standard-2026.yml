@@ -1,0 +1,37 @@
+# source: cubezz-haitun-zhanlang-v2-standard-2026
+# DECISIVE EVIDENCE for P3-T4 adjudication (pass 2.6, Agent B). Archived Cubezz.com capture of
+# product ID 8599 dated 2026-02-08, titled "HAITUN ZhanLang V2 3x3x3 Speed Cube Standard
+# Version." The SAME product ID (8599), SKU pattern, "Brand: HAITUN CUBE (Dolphin)" field,
+# "56*56*56 mm" dimension, and "71 g" weight are all identical to the existing
+# `cubezz-haitun-waverider-v2-standard` source's live-fetched content (2026-09-04), which
+# carries the SAME product ID under the title "HAITUN Waverider V2 3x3x3 Speed Cube Standard
+# Version." This is a same-listing retailer rename captured at two points in time, not two
+# different products — see `research/qc/pass2.6-agent-b-haitun.md`.
+id: cubezz-haitun-zhanlang-v2-standard-2026
+entity: source
+kind: retailer
+title: "HAITUN ZhanLang V2 3x3x3 Speed Cube Standard Version - Cubezz.com (archived 2026-02-08)"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-8599-HAITUN+ZhanLang+V2+3x3x3+Speed+Cube+Standard+Version.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260208173620id_/https://cubezz.com/Buy-8599-HAITUN+ZhanLang+V2+3x3x3+Speed+Cube+Standard+Version.html"
+excerpt: |-
+  "HAITUN ZhanLang V2 3x3x3 Speed Cube Standard Version. 'ZhanLang' - cut through the waves."
+  SKU: HTO01C. Specifications: "Brand: HAITUN CUBE (Dolphin) / Color: Stickerless / Size:
+  56*56*56 mm / Weight: 71 g."
+preservation_note: "Live-checked 2026-09-07: this exact URL now 200s but serves the
+  renamed 'Waverider' title/content at the same product ID and SKU (Cubezz's URL routing
+  ignores the slug text) - hence `link_status: altered` rather than `dead`. Retrieved via
+  `scripts/wayback.mjs get` (CDX-verified capture at
+  20260208173620); archive_url preservation, not excerpt-only."
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: altered
+last_checked: "2026-09-07"
+reliability_note: "Tier 2, first-party retailer spec block. Load-bearing for the P3-T4
+  adjudication specifically because product ID 8599, the 56x56x56mm/71g figures, and the
+  'HAITUN CUBE (Dolphin)' brand field are byte-for-byte identical to the later
+  `cubezz-haitun-waverider-v2-standard` listing at the same product ID — proof of an in-place
+  retailer rename (ZhanLang V2 -> Waverider V2), not two distinct products."
+status: sourced

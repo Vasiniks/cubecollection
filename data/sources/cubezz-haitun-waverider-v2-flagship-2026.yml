@@ -1,0 +1,31 @@
+# source: cubezz-haitun-waverider-v2-flagship-2026
+# DECISIVE EVIDENCE for P3-T4 adjudication (pass 2.6, Agent B), paired with
+# `cubezz-haitun-zhanlang-v2-flagship-2026`. Archived Cubezz.com capture of product ID 8598,
+# SKU HTO02C, dated 2026-05-10, titled "HAITUN Waverider V2 3x3x3 Speed Cube Flagship Version" -
+# the SAME product ID and SAME SKU as the 2026-02-08 capture titled "HAITUN ZhanLang V2 3x3x3
+# Speed Cube Flagship Version," with an identical 56x56x56mm/72g spec block. Its own "Related
+# Top Sellers" rail additionally lists "HAITUN ZhanLang V1 3x3x3 Speed Cube Flagship Version" as
+# a related product on the same storefront. See `research/qc/pass2.6-agent-b-haitun.md`.
+id: cubezz-haitun-waverider-v2-flagship-2026
+entity: source
+kind: retailer
+title: "HAITUN Waverider V2 3x3x3 Speed Cube Flagship Version - Cubezz.com (archived 2026-05-10)"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-8598-HAITUN+Waverider+V2+3x3x3+Speed+Cube+Flagship+Version.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260510142955id_/https://cubezz.com/Buy-8598-HAITUN+Waverider+V2+3x3x3+Speed+Cube+Flagship+Version.html"
+excerpt: |-
+  "HAITUN Waverider V2 3x3x3 Speed Cube Flagship Version." SKU: HTO02C. Specifications: "Brand:
+  HAITUN CUBE (Dolphin) / Color: Stickerless / Size: 56*56*56 mm / Weight: 72 g." Related Top
+  Sellers rail includes "HAITUN ZhanLang V1 3x3x3 Speed Cube Flagship Version."
+preservation_note: "Retrieved via `scripts/wayback.mjs get` (CDX-verified capture at
+  20260510142955); archive_url preservation."
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: "Tier 2, first-party retailer spec block, same product ID/SKU as
+  `cubezz-haitun-zhanlang-v2-flagship-2026` three months earlier under a different title -
+  decisive same-listing-renamed evidence for the P3-T4 adjudication."
+status: sourced
