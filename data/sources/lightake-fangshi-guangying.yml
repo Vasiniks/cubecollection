@@ -1,0 +1,36 @@
+# source: lightake-fangshi-guangying
+# Pass 2.6 targeted family-gap sweep (Agent A, FangShi GuangYing/JieYun re-verification). A
+# THIRD independent retailer (LighTake, a China/Hong Kong-based English-language storefront,
+# independent of both TheCubicle and cubezz.com) carrying "FangShi GuangYing" as its own named
+# product, found via a CDX domain-wide search of lightake.com filtered for "guangying".
+id: lightake-fangshi-guangying
+entity: source
+kind: retailer
+tier: 2
+title: "FangShi GuangYing 3x3x3 Magic Cube Speed Puzzle 57MM – LighTake"
+publisher: "LighTake"
+url: "http://lightake.com/p/FangShi-GuangYing-3x3x3-Magic-Cube-Speed-Puzzle-57MM_M1597.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150220050946id_/http://lightake.com:80/p/FangShi-GuangYing-3x3x3-Magic-Cube-Speed-Puzzle-57MM_M1597.html"
+excerpt: |-
+  "FangShi GuangYing 3 x3x3 Magic Cube Speed Puzzle 57MM ... Specifications: .Brand:FangShi
+  GuangYing .Size:57*57*57mm .Weight:100g .Package Dimensions:60*60*60mm .Packing:Carton." The
+  page's "Related Products" rail lists "FangShi ShuangRen II 3x3x3 Puzzle Speed Cube 57mm" as a
+  separate sibling product, not a variant of this listing.
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer listing, independent of both TheCubicle (US) and cubezz.com
+  (China). The structured "Brand:FangShi GuangYing" field again treats GuangYing as its own
+  named line, matching the pattern already found at TheCubicle and cubezz.com
+  (thecubicle-fangshi-guangying, cubezz-fangshi-guangying). Weight is given as 100g here, a
+  third distinct figure alongside TheCubicle's 95g and cubezz's 86g — recorded as an unresolved
+  cross-retailer discrepancy (packaging vs net weight, or measurement variance), not
+  adjudicated by this investigation. This is the third of at least four independent tier 2
+  retailers (TheCubicle, cubezz.com, LighTake, SpeedCube.com.au) found to carry GuangYing as a
+  distinct named product, which raises the bare-existence claim to `confirmed` under DATA_MODEL
+  rule 9.
+status: sourced

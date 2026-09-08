@@ -1,0 +1,45 @@
+# source: speedcube-com-au-fangshi-guangying
+# Pass 2.6 targeted family-gap sweep (Agent A, FangShi GuangYing/JieYun re-verification). A
+# FOURTH independent retailer (SpeedCube.com.au, Australian, non-US/English satisfying
+# RESEARCH_SPEC 3.6a) carrying "FangShi GuangYing" as its own named product, with an explicit
+# retailer-stated release month.
+id: speedcube-com-au-fangshi-guangying
+entity: source
+kind: retailer
+tier: 2
+title: "FangShi 3X3X3 GuangYing (57mm) BLACK * New January 2015 release * – SPEEDCUBE"
+publisher: "SPEEDCUBE PTY LTD (speedcube.com.au)"
+url: "http://www.speedcube.com.au/collections/3x3-speed-cubes/products/fangshi-3x3x3-guangying-57mm-black"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150316071253id_/http://www.speedcube.com.au:80/collections/3x3-speed-cubes/products/fangshi-3x3x3-guangying-57mm-black"
+excerpt: |-
+  Page title: "FangShi 3X3X3 GuangYing (57mm) BLACK * New January 2015 release *". Body: "The
+  all new 2015 release Fangshi GuangYing is now in stock! The FangShi GyangYing is similar to
+  the popular FangShi ShuangRen and has some improvements to the core assembly which FangShi
+  (Funs) factory claims delivers greater performance and control." Priced "$16.50 AUD".
+accessed: "2026-09-07"
+language: en
+region: AU
+link_status: dead
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer listing, independent of TheCubicle (US), cubezz.com (China), and
+  LighTake (China). Australian retailer, satisfying RESEARCH_SPEC 3.6a's non-US/English
+  discovery requirement independently of cubezz.com. Fourth independent tier 2 retailer
+  confirming GuangYing as a distinct, separately-sold FangShi product.
+
+  Two things of note, recorded honestly rather than resolved unilaterally: (1) this retailer's
+  own copy frames the difference from ShuangRen as "improvements to the core assembly," a
+  narrower phrase than TheCubicle's "major differences in the pieces" (thecubicle-fangshi-
+  guangying) — both describe GuangYing as a distinct, separately-branded, separately-SKU'd
+  product rather than a configuration option of the ShuangRen listing, so the model/variant
+  boundary call (DATA_MODEL §4.2) is unaffected, but the precise physical scope of the
+  redesign (core only vs. full mould) is not pinned down by either source alone. (2) The page's
+  own title states "New January 2015 release" and the body repeats "The all new 2015 release" —
+  an explicit retailer-stated release month in prose, not a Wayback crawl timestamp or an
+  "Added:" database field. This is recorded as a *candidate* release-date claim at no higher
+  than `reported` confidence (a single tier 2 source, marketing-toned, uncorroborated by any
+  other source) — not adopted here, since this investigation does not create model records, but
+  flagged for whoever builds the fangshi-guangying family/model as the strongest release-date
+  lead currently available for either GuangYing or JieYun.
+status: sourced

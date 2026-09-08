@@ -1,0 +1,36 @@
+# source: lightake-fangshi-jieyun
+# Pass 2.6 targeted family-gap sweep (Agent A, FangShi GuangYing/JieYun re-verification). A
+# THIRD independent retailer (LighTake) carrying "FangShi JieYun" as its own named product,
+# found via a CDX domain-wide search of lightake.com filtered for "jieyun".
+id: lightake-fangshi-jieyun
+entity: source
+kind: retailer
+tier: 2
+title: "Fangshi Funs JieYun 3X3X3 Magic Cube 5.7cm - Black – LighTake"
+publisher: "LighTake"
+url: "http://www.lightake.com/p/Fangshi-Funs-JieYun-3X3X3-Magic-Cube-5-7cm-Black_m1677.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150822000524id_/http://www.lightake.com:80/p/Fangshi-Funs-JieYun-3X3X3-Magic-Cube-5-7cm-Black_m1677.html"
+excerpt: |-
+  "Fangshi Funs JieYun 3X3X3 Magic Cube 5.7cm - Black ... New arrival Fangshi Funs JieYun
+  3X3X3 Magic Cube Black ... Specifications: .Brand:Fangshi / Funs .Cube Size: 5.7X5.7X5.7 cm."
+  The page's "Related Products" rail lists "FangShi ShuangRen 3x3x3 Puzzle Speed Cube (54.6mm)"
+  as a separate sibling product, not a variant of this listing. Captured 2015-08-22, earlier
+  than TheCubicle's own JieYun listing capture.
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer listing, independent of TheCubicle, cubezz.com, and
+  SpeedCube.com.au. Corroborates JieYun as a real, separately named FangShi/Funs product at a
+  fourth independent channel. This listing's own "Brand" field reads "Fangshi / Funs" rather
+  than a JieYun-specific brand string (unlike this retailer's own GuangYing listing,
+  lightake-fangshi-guangying, which does use "Brand:FangShi GuangYing") — a labelling
+  inconsistency within this one retailer's own catalogue, not treated as evidence against
+  JieYun's status as a distinct product, since the product name itself, its own listing page,
+  and its own related-products context all still individuate it. This listing does not repeat
+  TheCubicle's "minor grooves" physical-difference claim; it is corroborating for bare
+  existence, not for the physical-mould detail.
+status: sourced

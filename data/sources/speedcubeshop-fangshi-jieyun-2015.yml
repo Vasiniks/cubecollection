@@ -1,0 +1,40 @@
+# source: speedcubeshop-fangshi-jieyun-2015
+# Pass 2.6 targeted family-gap sweep (Agent A, FangShi GuangYing/JieYun re-verification). A
+# FIFTH independent retailer channel (SpeedCubeShop, US, but a distinct catalogue/publisher
+# from TheCubicle) carrying "FangShi JieYun" as its own named product as early as 2015-11-07.
+# Distinct from the already-existing speedcubeshop-fangshi-collection-2021 source, which covers
+# a different (2021, LimCube-focused) capture of this same retailer.
+id: speedcubeshop-fangshi-jieyun-2015
+entity: source
+kind: retailer
+tier: 2
+title: "FangShi JieYun 3x3 – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "http://speedcubeshop.com/collections/3x3x3/products/fangshi-jieyun-3x3x3-1"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20151107020032id_/http://speedcubeshop.com:80/collections/3x3x3/products/fangshi-jieyun-3x3x3-1"
+excerpt: |-
+  "FangShi JieYun 3x3x3 ... The JieYun defies every characteristic of a FangShi cube except for
+  the vibrant sticker shades. This speedcube is nothing short of amazing even though the
+  traditional swishy feeling and light weight is not present here. The core is very well
+  reinforced and feels solid so any concerns of popping should go out the window. Layer
+  rotations are smooth and corner cutting is very good."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer listing, US-based but an independent publisher/catalogue from
+  TheCubicle. Its own descriptive copy explicitly frames JieYun as breaking from typical FangShi
+  characteristics ("defies every characteristic of a FangShi cube... traditional swishy feeling
+  and light weight is not present here... core is very well reinforced") — independent,
+  differently-worded corroboration that JieYun represents a substantive mechanical departure
+  from its FangShi predecessors, not merely a sold configuration, consistent with (but not
+  copied from) TheCubicle's "minor grooves on the pieces" and cubezz's "new design" language.
+  This retailer also lists a "fangshi-jieyun-mini-3x3" product URL as of a 2022-12-05 crawl,
+  but that capture resolves to a dead/redirected (HTTP 301) generic storefront page with no
+  recoverable product content — recorded here as a lead (a Mini JieYun product slug existed on
+  this retailer at some point) rather than cited as evidence of its content, since the claim
+  cannot stand on this capture alone.
+status: sourced
