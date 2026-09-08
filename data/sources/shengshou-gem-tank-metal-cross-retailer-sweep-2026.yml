@@ -1,0 +1,83 @@
+# source: shengshou-gem-tank-metal-cross-retailer-sweep-2026
+# P26-5 (Agent D, credible-candidate adjudication). Narrow wayback CDX `prefix` sweeps run
+# directly this session against TheCubicle, SpeedCubeShop and Cubelelo for the three
+# ShengShou Gem / Tank / Metal Cube 3x3 candidates, to test cross-puzzle-range naming (the
+# decisive family-vs-model signal already used for shengshou-legend/-aurora/-wind/-mr-m/
+# -yufeng) and cross-publisher corroboration independently of
+# thecubicle-shengshou-other-3x3-lines-2026 and thecubicle-shengshou-products-prefix-2026.
+id: shengshou-gem-tank-metal-cross-retailer-sweep-2026
+entity: source
+kind: retailer
+title: "ShengShou Gem / Tank / Metal Cube — cross-retailer CDX prefix sweep (TheCubicle, SpeedCubeShop, Cubelelo)"
+publisher: "TheCubicle / SpeedCubeShop / Cubelelo"
+url: "https://www.thecubicle.com/products/shengshou-tank-3x3"
+preservation_method: excerpt
+excerpt: |-
+  **TheCubicle, prefix `products/shengshou-gem`** (7 distinct URLs): shengshou-gem-2x2
+  (2019-07-21), shengshou-gem-3x3 (2020-09-18), shengshou-gem-4x4 (2020-12-03),
+  shengshou-gem-5x5 (2019-07-16), shengshou-gem-gift-box (2020-09-27), shengshou-gem-megaminx
+  (2020-09-27), shengshou-gem-pyraminx (2020-09-27). Cross-range naming CONFIRMED for Gem:
+  2x2/3x3/4x4/5x5/Megaminx/Pyraminx plus a gift-box bundle, matching the pattern already
+  documented for Legend/Aurora/Wind/Mr. M/YuFeng.
+
+  **TheCubicle, prefix `products/shengshou-tank`** (18 distinct URLs, tracking-parameter
+  duplicates collapsed): shengshou-tank-2x2 (2019-08-24), shengshou-tank-3x3 (2020-09-18),
+  shengshou-tank-4x4 (2020-09-22), shengshou-tank-5x5 (2020-08-09), shengshou-tank-6x6
+  (2019-08-18, still resolving 2026-05-26), shengshou-tank-7x7 (2020-09-21),
+  shengshou-tank-8x8 (2020-03-29), shengshou-tank-megaminx (2019-07-18),
+  shengshou-tank-pyraminx (2019-07-16). Cross-range naming CONFIRMED for Tank, independently
+  verified beyond the seven puzzle types already cited elsewhere: 2x2 through 8x8 plus
+  Megaminx and Pyraminx (9 puzzle types) — the single broadest cross-range name found in this
+  sweep for any of the three candidates.
+
+  **TheCubicle, prefix `products/shengshou-metal`** (6 distinct URLs, all tracking-parameter
+  or `.oembed` variants of one page): only shengshou-metal-cube-3x3 (first capture 2025-08-10).
+  No 2x2/4x4/5x5/other-puzzle-type sibling found under this prefix. Cross-range naming NOT
+  found for Metal Cube at TheCubicle — it presents as a single 3x3-only SKU.
+
+  **SpeedCubeShop, prefixes `products/shengshou-gem` and `products/shengshou-tank`**: no
+  captures at all under either prefix. Neither Gem nor Tank is stocked, or has ever been
+  stocked, at SpeedCubeShop under this name, as far as wayback's CDX index shows.
+
+  **SpeedCubeShop, prefix `products/shengshou-metal`**: no `shengshou-metal-cube` capture, but
+  a large, structurally distinct family of URLs under `shengshou-metallic-*`: 2x2, 3x3, 4x4,
+  5x5 and Pyraminx, each in both `-magnetic` and `-non-magnetic` variants (earliest capture
+  2023-09-28, well before TheCubicle's 2025-08-10 Metal Cube capture). One page
+  (shengshou-metallic-3x3-magnetic, captured 2023-09-28) was fetched directly; its rendered
+  text returned only site chrome (navigation, best-sellers, promo banners) with no product
+  description or spec table reaching the plain-text extraction in this capture — the page's
+  own product content did not resolve in this fetch. **This is NOT read as corroboration of
+  ShengShou Metal Cube.** "Metallic" spanning five puzzle types in both magnetic and
+  non-magnetic form reads as a stickerless/colourway naming convention (a shiny "metallic"
+  finish option, the same class of appearance language as Gem's "shiny exterior") rather than
+  the actual metal-shelled novelty TheCubicle describes as "the outside is metal ... a
+  matte-like finish." The two names are kept strictly apart pending a source that actually
+  states them to be the same product; this is recorded as an unresolved lead, not a merge and
+  not a rejection.
+
+  **Cubelelo, prefix `products/shengshou-gem`** (1 URL): shengshou-gem-pyraminx (2021-05-17).
+  Independently corroborates "Gem" as a genuine cross-category ShengShou name at a second,
+  non-US/English publisher, though not the 3x3 model specifically.
+
+  **Cubelelo, prefixes `products/shengshou-tank` and `products/shengshou-metal`**: no
+  captures under either prefix.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix <url-prefix> --limit 200` for each prefix named above) is the primary evidence for the
+  URL-list claims; the SpeedCubeShop Metallic page fetch (`npm run wayback -- get
+  https://speedcubeshop.com/products/shengshou-metallic-3x3-magnetic 20230928`) is quoted
+  honestly as inconclusive rather than treated as either confirming or refuting a relationship
+  to Metal Cube."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure (URL-level CDX enumeration; the one fetched
+  SpeedCubeShop page did not yield product-body text in this capture). Sufficient to establish
+  cross-puzzle-range naming for Gem and Tank at `probable`, and its ABSENCE for Metal Cube's own
+  name at the retailers checked. Does not establish a manufacturer-declared line identity — no
+  first-party ShengShou source exists (see data/manufacturers/shengshou.yml: official domain
+  dead) — nor a release date for any of the three (all dates here are circulation bounds only,
+  per the Pass 3 admission policy, not manufacturer-declared dates).
+status: sourced
