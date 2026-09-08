@@ -10,6 +10,7 @@ name: "FangShi ShuangRen"
 aliases:
   - "Fangshi Shuang Ren"
 positioning: flagship
+successor_family_id: fangshi-guangying
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-fangshi, created in pass 1): "Fangshi ShuangRen
   3x3 — Regarded as an excellent cube on its first release... The ShuangRen has since been
@@ -27,9 +28,25 @@ description: |-
 
   The wiki's own "Contents" list also names "FangShi GuangYing" and "FangShi JieYun" as headers
   with no body text under either — not chased further this pass, recorded as open leads.
+
+  **RESOLVED 2026-09-08 (Pass 2.6, ledger P26-1).** Those two open leads were real. Both are now
+  their own families, `fangshi-guangying` and `fangshi-jieyun`, established on four and five
+  independent tier 2 retailers respectively. ShuangRen is the first two generations of a
+  four-generation flagship lineage — ShuangRen → ShuangRen V2 → GuangYing → JieYun — and its
+  `successor_family_id` now records the next step. The paragraph above is left as written
+  because it accurately reports what Pass 2 knew at the time.
 status: drafted
 
 attestations:
+  /successor_family_id:
+    confidence: probable
+    sources: [thecubicle-fangshi-guangying, speedcube-com-au-fangshi-guangying]
+    note: "Added by the Pass 2.6 remediation (P26-1). TheCubicle's GuangYing page frames it as
+      a successor to ShuangRen specifically — 'an assembly similar to that of the FangShi
+      ShuangRen, but with some major differences in the pieces' — and speedcube.com.au's JieYun
+      copy names 'its predecessors (GuanYing and Shuangren)', placing both later lines after
+      ShuangRen. This records succession only; ShuangRen's own boundaries, generations and
+      records are unchanged."
   /positioning:
     confidence: uncertain
     sources: [speedsolving-wiki-fangshi]

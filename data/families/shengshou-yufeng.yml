@@ -1,0 +1,86 @@
+# family: shengshou-yufeng
+# Pass 2.6 family-gap remediation (ledger P26-1, authorised 2026-09-07). Established by Pass
+# 2.6; did NOT exist during Pass 2 or Pass 3. See research/qc/pass2.6-family-gap-sweep.md and
+# research/qc/pass2.6-agent-e-lost-lanes.md.
+#
+# This family is the archive's clearest case of a finding that was MADE and then LOST. A 474-URL
+# non-truncated CDX sweep committed on 2026-09-03 recorded, verbatim, that YuFeng "and ShengShou
+# Crazy 3x3 are both demonstrably real, currently-sold ShengShou 3x3 product lines with NO
+# corresponding family record in data/families/". That escalation sat unpropagated at
+# `status: sourced` because the Pass 3 lane that wrote it was killed by a rate limit before its
+# report existed. See ledger P26-2 — the roll-up defect, not the research, is what hid this.
+
+id: shengshou-yufeng
+entity: family
+manufacturer_id: shengshou
+name: "ShengShou YuFeng"
+aliases:
+  - "ShengShou YuFeng M"
+introduced:
+  value: "2023-02"
+  precision: month
+  qualifier: before
+positioning: mainline
+description: |-
+  A two-generation magnetic-core 3x3 line, and — unlike the other three families added by this
+  remediation — not a historical one: it was still selling through a 2025-11-29 capture.
+  TheCubicle carries both generations as its own product pages: the YuFeng 3x3 M (magnetic
+  core, 56mm, $19.99, thecubicle-shengshou-yufeng-3x3-m-2023) and the YuFeng V2 3x3 M
+  (56mm, $22.99, thecubicle-shengshou-yufeng-v2-3x3-m-2023). SpeedCubeShop carries the line
+  independently (speedcubeshop-shengshou-products-prefix-2026).
+
+  None of the seven pre-existing ShengShou families accommodates it: `shengshou-3x3`,
+  `shengshou-legend`, `shengshou-aurora`, `shengshou-fangyuan`, `shengshou-wind`,
+  `shengshou-pearl` and `shengshou-mr-m` are each their own separately named line, and YuFeng
+  is a wholly new name rather than a version suffix on any of them — the same naming behaviour
+  that keeps those seven apart from one another.
+
+  **A claim deliberately NOT recorded.** TheCubicle's URL slug for the first generation contains
+  "magelev", but a first-hand customer review on that same page disputes the MagLev claim, and
+  ShengShou's own marketing reportedly dropped it after it was contested. A URL slug is not a
+  specification, and a contested claim is not a confirmed one, so **no MagLev configuration is
+  recorded on this family or its models**. This is left as a pass-4 question with the conflict
+  documented rather than silently resolved in either direction.
+
+  **Why this family was missing.** ShengShou's official domain is dead, so its retail catalogue
+  is the whole evidentiary channel. Pass 2 read TheCubicle's `/collections/` page, which
+  "filters differently than the raw /products/ prefix and missed a live, dated 3x3 catalogue"
+  (thecubicle-shengshou-products-prefix-2026, in its own words). The `/products/` prefix sweep
+  that RESEARCH_SPEC §3.6a now makes mandatory finds it immediately. See ledger P26-3.
+status: sourced
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-3x3-m-2023, thecubicle-shengshou-yufeng-v2-3x3-m-2023, speedcubeshop-shengshou-products-prefix-2026]
+    note: "Two TheCubicle product pages are one publisher and do not corroborate each other per
+      DATA_MODEL §5.2. SpeedCubeShop supplies the second, independent publisher — but at
+      URL-level CDX enumeration only, not a fetched page, and that record says so explicitly.
+      `probable` rather than `confirmed` accordingly: existence and currency are corroborated
+      across publishers, the product detail rests on one."
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-3x3-m-2023]
+    note: "A CIRCULATION BOUND, NOT A RELEASE DATE. No explicit dated statement was found. The
+      earliest archived capture of the first generation is 2023-02-05, establishing only that
+      the product existed and was for sale by then. Recorded `qualifier: before` per the Pass 3
+      admission policy §3. TheCubicle's own 'Added:' field was available and is REFUSED — that
+      field class is categorically inadmissible as a release date in this archive, with four
+      documented catalogue-migration artifacts behind the rule."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-yufeng-3x3-m-2023]
+    note: "Retailer copy calls YuFeng a flagship 3x3, which would argue for `flagship`. But all
+      seven pre-existing ShengShou families are recorded `mainline` and none is designated
+      flagship, so promoting YuFeng alone would implicitly re-rank the other seven — a
+      collateral taxonomy change this authorised remediation does not permit. Recorded
+      `mainline` at `uncertain` with the conflict stated, rather than resolved by fiat. Whether
+      ShengShou has a designated flagship line at all is a question for a later pass."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-3x3-m-2023, thecubicle-shengshou-yufeng-v2-3x3-m-2023, thecubicle-shengshou-products-prefix-2026]
+  /aliases:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "The 'M' suffix appears in both generations' product names and is read as a magnetic
+      designation carried in the retailer's naming, not as a separate line."

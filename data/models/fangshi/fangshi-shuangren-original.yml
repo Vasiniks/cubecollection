@@ -28,6 +28,11 @@
 # not stub wiki headers. NO FROZEN FAMILY EXISTS FOR EITHER. This is recorded as a gap for
 # human review, per the escalation instruction ("record the evidence, stop that branch,
 # escalate. Do not mutate.") - no family was created, and no model was built for either name.
+#
+# RESOLVED 2026-09-08 (Pass 2.6, ledger P26-1). The escalation above was correct. Both lines are
+# now families - `fangshi-guangying` and `fangshi-jieyun` - each with its own model, established
+# on four and five independent tier 2 retailers. The comment above is preserved as the
+# historical record of how the gap was found; it is no longer the current state.
 id: fangshi-shuangren-original
 entity: model
 family_id: fangshi-shuangren

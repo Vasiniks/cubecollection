@@ -1,0 +1,80 @@
+# model: fangshi-guangying-original
+# Pass 2.6 family-gap remediation (ledger P26-1). Created together with its family, which did
+# not exist during Pass 3 — this is not a re-parented or previously-orphaned record, it is new.
+# No second GuangYing generation was found at any of five retailers across two investigations,
+# and no "Mini GuangYing" exists, so this line is a single model.
+id: fangshi-guangying-original
+entity: model
+family_id: fangshi-guangying
+manufacturer_id: fangshi
+name: "FangShi GuangYing"
+aliases:
+  - "Funs Puzzle GuangYing 3x3x3 Speed Cube"
+scope_class: core
+released:
+  value: "2015-01"
+  precision: month
+  qualifier: exact
+specs:
+  size_mm: 57.0
+  weight_g: 86.0
+description: |-
+  The only model in its family. TheCubicle sold it at $14.99 in seven colourways, with a
+  structured spec table giving "Manufacturer: FangShi, Type 3x3, Gross Weight 95g, Dimensions
+  57.0mm", discontinued as of capture (thecubicle-fangshi-guangying). Cubezz sold the same
+  product under SKU FUNSGY0B with its own spec block: "Size: 57*57*57mm... Weight: 86g"
+  (cubezz-fangshi-guangying).
+
+  The two weight figures are not in conflict: TheCubicle's 95g is labelled **Gross Weight** —
+  the shipped package — while Cubezz's 86g is the product weight, the same distinction visible
+  on HaiTun's records elsewhere in this archive, where gross and item weights are listed
+  separately on one page. `weight_g` records the product weight.
+
+  A customer review on TheCubicle's own page treats "the shuangren and the shuangren v2" and
+  "the guangying" as three distinct products in a single sentence — a buyer's-eye confirmation
+  of the family boundary this record sits inside.
+status: sourced
+
+attestations:
+  /released:
+    confidence: probable
+    sources: [speedcube-com-au-fangshi-guangying]
+    note: "Inherited from the family's own `introduced` reasoning: speedcube.com.au's page title
+      states 'New January 2015 release', an explicit dated statement of the class the Pass 3
+      admission policy §3 accepts, contemporaneous with a 2015-03-16 capture and consistent
+      with Cubezz's independent 2015-02-05 first capture. Not a crawl timestamp and not an
+      'Added:' field. The caveat stands: retailer marketing prose, single source, no first-party
+      FangShi source exists in any language."
+  /specs/size_mm:
+    confidence: confirmed
+    sources: [thecubicle-fangshi-guangying, cubezz-fangshi-guangying]
+    note: "Two independent tier 2 retailers state 57mm in their own structured spec tables."
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubezz-fangshi-guangying]
+    note: "Cubezz's own spec block gives 86g as the product weight. TheCubicle's 95g is
+      explicitly labelled Gross Weight (packaged) and is therefore not a competing figure for
+      the same quantity — recorded here rather than treated as a conflict."
+  /description:
+    confidence: probable
+    sources: [thecubicle-fangshi-guangying, cubezz-fangshi-guangying]
+  /aliases:
+    confidence: probable
+    sources: [cubezz-fangshi-guangying]
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. None of the four retailer listings describes the core or
+      tensioning system; no first-party FangShi source exists in any language."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found. A 2015 budget-era FangShi cube predates MagLev entirely, but
+      no source states its absence, so this is recorded as unsearched-for-evidence rather than
+      inferred false from the date."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No retailer listing mentions magnets. This line predates the
+      magnetic era and no factory-magnetic FangShi product was found, but no source says so."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found. TheCubicle's spec table covers manufacturer, type, weight and
+      dimensions only."

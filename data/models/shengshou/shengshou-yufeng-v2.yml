@@ -1,0 +1,73 @@
+# model: shengshou-yufeng-v2
+# Pass 2.6 family-gap remediation (ledger P26-1). Second generation, still resolving as of a
+# 2025-11-29 capture — the only one of the four families added by this remediation whose
+# products were still selling at the end of the archive's window.
+id: shengshou-yufeng-v2
+entity: model
+family_id: shengshou-yufeng
+manufacturer_id: shengshou
+name: "ShengShou YuFeng V2 3x3 M"
+generation:
+  label: "V2"
+  ordinal: 2
+  basis: manufacturer_declared
+scope_class: core
+specs:
+  size_mm: 56.0
+relationships:
+  - type: succeeds
+    target: shengshou-yufeng-original
+    target_entity: model
+    note: "The 'V2' designation is carried in the product's own name and URL slug, which
+      presupposes and directly follows the unversioned first generation sold from 2023-02."
+description: |-
+  TheCubicle's product page gives 56mm at $22.99, a $3 step up from the first generation
+  (thecubicle-shengshou-yufeng-v2-3x3-m-2023). Its page was still resolving in a 2025-11-29
+  capture, and the line appears in SpeedCubeShop's catalogue enumeration
+  (speedcubeshop-shengshou-products-prefix-2026).
+
+  What distinguishes V2 from the first generation mechanically is **not established** by
+  anything found. Both are 56mm and both are magnetic; no source fetched this pass states what
+  changed. The V2 designation itself is the evidence for a separate model — a
+  manufacturer-declared generation is decisive under DATA_MODEL §4.2 regardless of whether the
+  archive can yet say what was redesigned — but the nature of the change is left open rather
+  than inferred from the price difference.
+status: sourced
+
+attestations:
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-v2-3x3-m-2023]
+    note: "'V2' appears in the product's own name and its URL slug, not merely in body copy —
+      read as a designation passed through from ShengShou rather than retailer or community
+      numbering, the same reasoning applied to haitun-waverider-v2."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-v2-3x3-m-2023]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Earliest capture 2023-06-03 bounds circulation only. The
+      retailer 'Added:' field is refused per the Pass 3 admission policy §3."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-v2-3x3-m-2023]
+  /relationships:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-v2-3x3-m-2023, thecubicle-shengshou-products-prefix-2026]
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched and not found."
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. What changed mechanically between the first generation and V2
+      is not stated by any source located."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found. The disputed 'magelev' slug appears on the first generation's
+      URL, not this one; neither is treated as a specification."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."

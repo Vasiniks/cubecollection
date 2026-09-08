@@ -1,0 +1,71 @@
+# family: yj-appari
+# Pass 2.6 family-gap remediation (ledger P26-1, authorised 2026-09-07). Established by Pass
+# 2.6; did NOT exist during Pass 2 or Pass 3. See research/qc/pass2.6-family-gap-sweep.md and
+# research/qc/pass2.6-agent-e-lost-lanes.md.
+#
+# Predicted by no prior finding. It surfaced only because Pass 2.6 built the full YJ /products/
+# prefix sweep that had never existed — the archive previously held only a narrow, MGC-scoped
+# YJ sweep, so RESEARCH_SPEC §3.6a's mandatory check had never actually been satisfied for this
+# manufacturer. See ledger P26-3.
+
+id: yj-appari
+entity: family
+manufacturer_id: yj
+name: "YJ Appari"
+introduced:
+  value: "2024-05"
+  precision: month
+  qualifier: before
+positioning: mainline
+description: |-
+  A 3x3 line distinguished by its own named mechanism. TheCubicle's product page and URL name
+  it a "Speed Micro Bearing" (thecubicle-yj-appari-3x3-2024); SpeedCubeShop's independent
+  product URL names the same mechanism a "Speed Micro Actuator"
+  (speedcubeshop-yj-appari-3x3-2024). Two retailers reaching for different words for the same
+  named subsystem is corroboration rather than a copied listing, per RESEARCH_SPEC §3.2.
+  Cubelelo carries it as a third independent channel (cubelelo-yj-products-prefix-2026),
+  satisfying §3.6a's non-US/English retailer requirement.
+
+  A named, retailer-described mechanism is a design-level difference under DATA_MODEL §4.2, not
+  something produced from an existing YJ design by choosing different parts at assembly. None of
+  YJ's nine pre-existing families accommodates it: the YuLong / GuanLong / RuiLong / ChiLong /
+  SuLong budget lines, the MGC and Meta flagships, and the JinJiao / ZhiLong special lines are
+  each separately named, and Appari is a new name rather than a generation of any of them.
+
+  Still open, deliberately: no first-party YJ statement about Appari was located, so the
+  mechanism description rests entirely on retailer copy, and only TheCubicle's page was fetched
+  in full. Whether "Speed Micro Bearing" denotes a genuinely novel bearing design or is
+  marketing for a conventional one is NOT established by anything found.
+status: sourced
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024, speedcubeshop-yj-appari-3x3-2024, cubelelo-yj-products-prefix-2026]
+    note: "Three independent tier 2 publishers on two continents carry the name with YJ
+      attribution. Held at `probable` rather than `confirmed` because only TheCubicle's page
+      was fetched in full — the SpeedCubeShop and Cubelelo records are URL-level CDX
+      enumeration, and both say so explicitly. Existence is corroborated across three
+      publishers; the product detail rests on one."
+  /introduced:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024]
+    note: "A CIRCULATION BOUND, NOT A RELEASE DATE. No explicit dated statement was found at any
+      of the three retailers. The earliest archived capture is 2024-05-22, establishing only
+      that the product existed and was for sale by then; SpeedCubeShop's own first capture
+      (2024-06-20) is consistent and slightly later. Recorded `qualifier: before` per the Pass 3
+      admission policy §3."
+  /positioning:
+    confidence: uncertain
+    sources: [thecubicle-yj-appari-3x3-2024]
+    note: "Retailer copy calls it 'YJ's newest 3x3' and makes no tier claim. YJ's existing
+      families are recorded across `flagship` (MGC, Meta), `budget` (five lines) and `special`
+      (two), and nothing found places Appari in any of them. `mainline` is recorded as the
+      neutral value the evidence actually supports, at `uncertain`, rather than inferring a
+      tier from price or mechanism."
+  /description:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024, speedcubeshop-yj-appari-3x3-2024]
+    note: "The mechanism name is the load-bearing identity claim and is independently rendered
+      by both retailers ('Speed Micro Bearing' / 'Speed Micro Actuator'), which is why the two
+      wordings are quoted rather than harmonised into one."

@@ -1,0 +1,49 @@
+# model: yj-appari-original
+# Pass 2.6 family-gap remediation (ledger P26-1). Only generation found. Surfaced solely because
+# this pass built the full YJ /products/ prefix sweep that had never existed.
+id: yj-appari-original
+entity: model
+family_id: yj-appari
+manufacturer_id: yj
+name: "YJ Appari"
+aliases:
+  - "YJ Appari 3x3 (Speed Micro Bearing)"
+  - "YJ Appari 3x3 Magnetic (Speed Micro Actuator)"
+scope_class: core
+description: |-
+  The single documented model of the Appari line. TheCubicle's product page and URL name a
+  "Speed Micro Bearing" mechanism (thecubicle-yj-appari-3x3-2024); SpeedCubeShop's independent
+  product URL names a "Speed Micro Actuator" (speedcubeshop-yj-appari-3x3-2024). Cubelelo
+  carries it as a third channel (cubelelo-yj-products-prefix-2026). Both retailer renderings are
+  kept as aliases rather than harmonised, because which of the two is YJ's own term is not
+  established.
+
+  **No specifications are recorded.** No size, weight, or magnet configuration was obtained: only
+  TheCubicle's page was fetched in full, and the spec-bearing portion was not captured. Under the
+  Pass 3 admission policy, specifications require tier 1-2 evidence and are simply left unset
+  when unmet — an undated, unspecified model backed by three independent retailers is a
+  legitimate record; an invented one is not.
+
+  Whether "Speed Micro Bearing" denotes a genuinely novel subsystem or is marketing for a
+  conventional bearing is likewise NOT established, and is flagged for a later pass.
+status: drafted
+
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024, speedcubeshop-yj-appari-3x3-2024, cubelelo-yj-products-prefix-2026]
+    note: "Three independent tier 2 publishers. Held at probable rather than confirmed because
+      two of the three are URL-level CDX enumeration only and say so explicitly in their own
+      records — they corroborate existence and currency, not product detail."
+  /released:
+    confidence: unknown
+    note: "Researched and not found at any of the three retailers. Earliest capture 2024-05-22
+      bounds circulation only and is recorded at family level with `qualifier: before`."
+  /description:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024, speedcubeshop-yj-appari-3x3-2024]
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024, speedcubeshop-yj-appari-3x3-2024]
+    note: "The two mechanism renderings come from two different publishers; neither is known to
+      be YJ's own wording, so both are preserved."

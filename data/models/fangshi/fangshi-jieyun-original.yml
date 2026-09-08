@@ -1,0 +1,69 @@
+# model: fangshi-jieyun-original
+# Pass 2.6 family-gap remediation (ledger P26-1). Created together with its family. The 54.5-54.6mm
+# "Mini JieYun" sold alongside it is a within-family SIZE VARIANT and is pass-4 material, not a
+# second model here — per the archive's own dayan-zhanchi 42mm precedent.
+id: fangshi-jieyun-original
+entity: model
+family_id: fangshi-jieyun
+manufacturer_id: fangshi
+name: "FangShi JieYun"
+aliases:
+  - "Funs Puzzle JieYun 3x3x3 Speed Cube 57mm"
+scope_class: core
+specs:
+  size_mm: 57.0
+  weight_g: 91.0
+description: |-
+  The base 57mm model of the JieYun line. Cubezz's own spec block gives "Size: 57*57*57mm...
+  Weight: 91g" under SKU FUNSJY0B, and characterises the product as a "Funs Puzzle new design"
+  (cubezz-fangshi-jieyun). TheCubicle states the physical difference that defines the line:
+  "minor grooves on the pieces where the stickers are placed" (thecubicle-fangshi-jieyun).
+
+  Contemporary reviews on TheCubicle's page consistently describe it as heavier and better
+  finished than its predecessors — "The cube feels much heavier than the fangshi shuangren v2",
+  "much less sandy than previous FangshiCubes", "unlike the flimsier feeling GuangYing and
+  ShuangRen" — which is consistent with the 91g product weight against GuangYing's 86g.
+
+  **Not recorded: a release date.** No explicit dated statement was found at any of the five
+  retailers carrying this product. The family's `introduced` carries a `before 2015-09`
+  circulation bound from Cubezz's earliest capture; that bound belongs to the family record and
+  is deliberately not restated here as a model `released` value, because a circulation bound is
+  not a release date and repeating it at model level would give it false weight.
+status: sourced
+
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-fangshi-jieyun]
+    note: "Cubezz's own structured spec block. TheCubicle's JieYun page gives 'Type: 3x3' but no
+      dimension figure, so this rests on one retailer — `probable`, not `confirmed`."
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubezz-fangshi-jieyun]
+  /released:
+    confidence: unknown
+    note: "Researched and not found. Five independent retailers carry this product and none
+      states a release date. Cubezz's earliest capture (2015-09-25) bounds circulation only and
+      is recorded at family level with `qualifier: before`. Left unset here rather than
+      promoting a crawl timestamp into a release claim."
+  /description:
+    confidence: confirmed
+    sources: [thecubicle-fangshi-jieyun, cubezz-fangshi-jieyun]
+    note: "The grooved-piece mould difference and the independent 'new design' characterisation
+      are stated by two independent tier 2 publishers."
+  /aliases:
+    confidence: probable
+    sources: [cubezz-fangshi-jieyun]
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found across five retailer listings. The grooved-piece difference is
+      described at the piece level, not the core."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found. Not inferred false from the 2015 date."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No retailer listing mentions magnets."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."

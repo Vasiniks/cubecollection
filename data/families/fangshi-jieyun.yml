@@ -1,0 +1,76 @@
+# family: fangshi-jieyun
+# Pass 2.6 family-gap remediation (ledger P26-1, authorised 2026-09-07). Established by Pass
+# 2.6; did NOT exist during Pass 2 or Pass 3. See research/qc/pass2.6-family-gap-sweep.md and
+# research/qc/pass2.6-agent-a-fangshi.md. The best-evidenced of the two FangShi additions: five
+# independent tier 2 retailers, plus an explicitly stated physical mould difference.
+
+id: fangshi-jieyun
+entity: family
+manufacturer_id: fangshi
+name: "FangShi JieYun"
+aliases:
+  - "Funs Puzzle JieYun"
+introduced:
+  value: "2015-09"
+  precision: month
+  qualifier: before
+positioning: flagship
+description: |-
+  The fourth and last documented generation of FangShi's flagship 3x3 lineage, succeeding
+  GuangYing. TheCubicle's own page states a physical difference in the mould itself: "It
+  features an assembly similar to that of the FangShi GuangYing, but with some major
+  differences in the pieces that are expected to make it perform even better than the FangShi
+  GuangYing. **It also features minor grooves on the pieces where the stickers are placed**"
+  (thecubicle-fangshi-jieyun). Different mouldings are a new line under DATA_MODEL §4.2
+  "whatever the marketing says" — this is not a configuration choice made at assembly.
+
+  Cubezz.com corroborates the design claim from an unrelated catalogue, calling it a "Funs
+  Puzzle new design" under its own brand field "Brand: Funs Puzzle(JieYun)" and its own SKU
+  FUNSJY0B (cubezz-fangshi-jieyun). Five independent tier 2 retailers carry it: TheCubicle
+  (US), Cubezz (CN), LighTake (CN/HK), speedcube.com.au (AU) and SpeedCubeShop (US).
+
+  Contemporary reviews on TheCubicle's own page treat it as distinct from and better than its
+  predecessors — "unlike the flimsier feeling GuangYing and ShuangRen", "much less sandy than
+  previous FangshiCubes", "The cube feels much heavier than the fangshi shuangren v2", "By far
+  the best cube in the fangshi line".
+
+  A 54.5–54.6mm "Mini JieYun" was sold alongside the 57mm original. Following the archive's own
+  `dayan-zhanchi` 42mm precedent, a Mini is treated as a within-family size variant and is
+  **pass 4 material**, not a separate family. One open question is deliberately left for pass
+  4: whether Mini JieYun shares the grooved-piece mould that defines this line at a different
+  scale. No source found at any of the five retailers states either way, and the two pages that
+  would settle it are unrecoverable (see research/qc/pass2.6-agent-a-fangshi.md §7).
+status: sourced
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [thecubicle-fangshi-jieyun, cubezz-fangshi-jieyun, lightake-fangshi-jieyun, speedcube-com-au-fangshi-jieyun, speedcubeshop-fangshi-jieyun-2015]
+    note: "Five independent tier 2 retailers across four publishers and three continents, each
+      naming JieYun as its own product with its own SKU and price point, none framing it as an
+      alternate name for a GuangYing or ShuangRen listing."
+  /introduced:
+    confidence: probable
+    sources: [cubezz-fangshi-jieyun]
+    note: "A CIRCULATION BOUND, NOT A RELEASE DATE. No explicit dated statement was found for
+      JieYun at any of the five retailers, unlike GuangYing. Cubezz's earliest archived capture
+      of the product is 2015-09-25, which establishes only that it existed and was for sale by
+      then. Recorded with `qualifier: before` at month precision per the Pass 3 admission
+      policy §3, which sanctions exactly this treatment where circulation is known but launch
+      is not. The Wayback timestamp bounds when the page existed; it is not evidence of when
+      the product launched, and must not be read as one."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-fangshi-jieyun, speedcube-com-au-fangshi-jieyun]
+    note: "Both retailers place JieYun as the next step in the same flagship line, TheCubicle
+      naming GuangYing as its immediate predecessor and speedcube.com.au naming 'its
+      predecessors (GuanYing and Shuangren)'."
+  /description:
+    confidence: confirmed
+    sources: [thecubicle-fangshi-jieyun, cubezz-fangshi-jieyun]
+    note: "The mould difference is stated by TheCubicle ('minor grooves on the pieces where the
+      stickers are placed') and independently characterised as a 'new design' by Cubezz — two
+      independent tier 2 sources in agreement on the load-bearing identity claim."
+  /aliases:
+    confidence: probable
+    sources: [cubezz-fangshi-jieyun]

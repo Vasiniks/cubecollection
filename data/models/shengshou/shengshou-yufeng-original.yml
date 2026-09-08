@@ -1,0 +1,78 @@
+# model: shengshou-yufeng-original
+# Pass 2.6 family-gap remediation (ledger P26-1). First generation of the YuFeng line. Its own
+# product name carries NO version marker — "V2" appears only on the second generation, which is
+# what makes this one retroactively "the first". The generation label is therefore recorded as
+# community_convention, not manufacturer_declared.
+id: shengshou-yufeng-original
+entity: model
+family_id: shengshou-yufeng
+manufacturer_id: shengshou
+name: "ShengShou YuFeng 3x3 M"
+aliases:
+  - "ShengShou YuFeng M (Magnetic Core)"
+generation:
+  label: "Original"
+  ordinal: 1
+  basis: community_convention
+scope_class: core
+specs:
+  size_mm: 56.0
+description: |-
+  TheCubicle's product page gives a 56mm dimension at $19.99, describing a magnetic-core 3x3
+  (thecubicle-shengshou-yufeng-3x3-m-2023). SpeedCubeShop carries the line independently
+  (speedcubeshop-shengshou-products-prefix-2026).
+
+  **A claim deliberately refused.** TheCubicle's URL slug for this product contains "magelev",
+  which would ordinarily suggest a MagLev spring-replacement system. A first-hand customer
+  review on that same page disputes it, and ShengShou's own marketing reportedly dropped the
+  claim after it was contested. A URL slug is not a specification. `specs.maglev` is therefore
+  NOT set — neither to true on the slug's say-so, nor to false on a single review's. The
+  conflict is recorded here so a later pass can resolve it with better evidence rather than
+  rediscover it.
+status: sourced
+
+attestations:
+  /generation/basis:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-v2-3x3-m-2023]
+    note: "The second generation carries 'V2' in its own product name and URL, which establishes
+      an ordering. This first generation carries no marker of its own, so 'Original' is an
+      archive/community convention applied retroactively — explicitly NOT manufacturer_declared,
+      unlike haitun-waverider-v1 where the manufacturer's own naming carried the V1."
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-3x3-m-2023]
+    note: "One tier 2 retailer's structured spec table. SpeedCubeShop corroborates the product's
+      existence at URL level only and supplies no spec figures, so this cannot reach confirmed."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The earliest archived capture is 2023-02-05, which bounds
+      circulation and is recorded at family level with `qualifier: before`. TheCubicle's own
+      'Added:' field was available and is REFUSED as categorically inadmissible for a release
+      date under the Pass 3 admission policy §3."
+  /description:
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-3x3-m-2023]
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched and not found. TheCubicle's captured page gives a dimension but no weight."
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. The product is described as magnetic-core, but no named core
+      system is stated, and 'magnetic core' is a magnet-architecture claim rather than a
+      core-system designation."
+  /specs/maglev:
+    confidence: unknown
+    note: "DISPUTED AND DELIBERATELY UNSET. TheCubicle's URL slug contains 'magelev', which would
+      suggest a MagLev system, but a first-hand customer review on that same page disputes it and
+      ShengShou's own marketing reportedly dropped the claim after it was contested. A URL slug
+      is not a specification and a single review is not a disproof, so this is set neither true
+      nor false. Recorded as searched-and-unresolved so a later pass finds the conflict rather
+      than rediscovering it."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. Retailer copy describes a magnetic core without stating magnet
+      count, placement or strength."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."

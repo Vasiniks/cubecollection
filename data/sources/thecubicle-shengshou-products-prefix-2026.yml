@@ -60,4 +60,16 @@ reliability_note: |-
   exist, all assigned to this agent, none named YuFeng or Crazy). Family creation is frozen for
   Pass 3 per the taxonomy-freeze rule; this is recorded here and in this agent's report as a
   finding for pass-2 re-opening, not acted on.
+
+  PARTIALLY RESOLVED 2026-09-08 (Pass 2.6, ledger P26-1). The escalation above was correct and
+  is preserved verbatim as the record of how the gap was found. YuFeng is now the family
+  `shengshou-yufeng`, with both generations enumerated as models. The rest of the escalation
+  remains OPEN: ShengShou Crazy 3x3 is ledger P26-5 (a shape-mod line with an unresolved
+  scope_class question), and the Rainbow, Gem, Tank and Metal Cube lines named in the excerpt
+  above are also P26-5 and still have no family. This record's own statement that only seven
+  ShengShou families existed was true when written; there are now eight.
+
+  This source is also the archive's worked example of ledger P26-2: the escalation survived only
+  because it was written into a canonical record's notes. The Pass 3 lane that found it was
+  killed by a rate limit before its report existed, so nothing else carried the finding.
 status: sourced

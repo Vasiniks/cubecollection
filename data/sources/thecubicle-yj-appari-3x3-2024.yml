@@ -1,6 +1,8 @@
 # source: thecubicle-yj-appari-3x3-2024
 # Pass 2.6 (Agent E, lost-lanes recovery / new finding). Direct product-page capture of YJ
-# Appari, a flagship 3x3 line with no corresponding family among the 9 existing YJ families,
+# Appari, a 3x3 line which had no corresponding family among the 9 YJ families that existed
+# when this source was written (RESOLVED 2026-09-08: it is now the family `yj-appari`, created by
+# the Pass 2.6 remediation, ledger P26-1 — YJ now has 10 families),
 # found during the mandatory full-prefix sweep (thecubicle-yj-products-prefix-2026) and
 # corroborated at two further retailers (speedcubeshop-yj-appari-3x3-2024,
 # cubelelo-yj-products-prefix-2026).

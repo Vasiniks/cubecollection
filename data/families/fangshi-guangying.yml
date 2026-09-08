@@ -1,0 +1,91 @@
+# family: fangshi-guangying
+# Pass 2.6 family-gap remediation (ledger P26-1, authorised 2026-09-07). This family was
+# established by Pass 2.6 and did NOT exist during Pass 2 or Pass 3 — see
+# research/qc/pass2.6-family-gap-sweep.md and research/qc/pass2.6-agent-a-fangshi.md.
+# Missed because Pass 2's FangShi discovery reached only US/English retailers; GuangYing is
+# carried by four retailers across three continents, and was discontinued long before the
+# archive began.
+
+id: fangshi-guangying
+entity: family
+manufacturer_id: fangshi
+name: "FangShi GuangYing"
+aliases:
+  - "Funs Puzzle GuangYing"
+  - "FangShi GuanYing"
+introduced:
+  value: "2015-01"
+  precision: month
+  qualifier: exact
+positioning: flagship
+successor_family_id: fangshi-jieyun
+description: |-
+  The third generation of FangShi's flagship 3x3 lineage, between ShuangRen V2 and JieYun.
+  TheCubicle's own product page frames it against its predecessor directly: "The FangShi
+  GuangYing is now available! It features an assembly similar to that of the FangShi ShuangRen,
+  but with some major differences in the pieces that are widely expected to make it perform
+  even better than the FangShi ShuangRen" (thecubicle-fangshi-guangying). That "major
+  differences in the pieces" language is the mechanical, not-producible-from-one-design
+  difference DATA_MODEL §4.2 treats as decisive for a separate line rather than a
+  configuration of ShuangRen.
+
+  Cubezz.com draws the same boundary independently through its own structured catalogue field,
+  "Brand: Funs Puzzle(GuangYing)" — distinct from the plain "Brand: Funs Puzzle" carried by its
+  ShuangRen listings — and sells it under its own SKU, FUNSGY0B, unrelated to any ShuangRen SKU
+  (cubezz-fangshi-guangying). Four independent tier 2 retailers on three continents carry the
+  name with identical manufacturer attribution: TheCubicle (US), Cubezz (CN), LighTake (CN/HK)
+  and speedcube.com.au (AU).
+
+  57mm only. No "Mini GuangYing" was found at any of the four retailers, unlike ShuangRen and
+  JieYun, which both have a documented 54.6mm Mini sibling.
+
+  **Why this family was missing.** No FangShi- or Funs-branded official domain has ever been
+  located by any pass, so the evidentiary ceiling for this entire manufacturer is tier 2. Pass
+  2's FangShi enumeration did not reach a non-US retailer, which is where this line's clearest
+  attribution evidence lives. RESEARCH_SPEC §3.6a now makes that check mandatory; it was added
+  2026-09-03, after Pass 2 completed. See ledger P26-3.
+status: sourced
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [thecubicle-fangshi-guangying, cubezz-fangshi-guangying, lightake-fangshi-guangying, speedcube-com-au-fangshi-guangying]
+    note: "Four independent tier 2 retailers, three publishers on three continents, each using
+      the identical transliteration with the identical manufacturer attribution. A single
+      retailer inventing a product name would not reproduce identically across four separate
+      catalogues with their own translation pipelines and SKU conventions."
+  /introduced:
+    confidence: probable
+    sources: [speedcube-com-au-fangshi-guangying]
+    note: "speedcube.com.au's own page TITLE reads 'FangShi 3X3X3 GuangYing (57mm) BLACK * New
+      January 2015 release *', and its body repeats 'The all new 2015 release'. This is an
+      explicit dated statement giving a month and year — the class the Pass 3 admission policy
+      §3 accepts — and is NOT a Wayback crawl timestamp, a retailer 'Added:' field, or a
+      copyright year. The capture is contemporaneous (2015-03-16), and Cubezz's independent
+      first capture of the product on 2015-02-05 is consistent with a January 2015 release and
+      would contradict a later one. Recorded `probable` per the confidence vocabulary's rule
+      for one uncontradicted tier 2 source. The honest caveat: this is retailer marketing prose
+      rather than a manufacturer announcement, and no first-party FangShi source exists for any
+      product, in any language, after five passes of searching."
+  /positioning:
+    confidence: probable
+    sources: [thecubicle-fangshi-guangying, speedcube-com-au-fangshi-guangying]
+    note: "Both retailers frame GuangYing as the successor step in the same flagship line as
+      ShuangRen, which this archive already records at `positioning: flagship`."
+  /successor_family_id:
+    confidence: probable
+    sources: [thecubicle-fangshi-jieyun]
+    note: "TheCubicle's JieYun page names GuangYing specifically as JieYun's immediate
+      predecessor: 'It features an assembly similar to that of the FangShi GuangYing.' The
+      more precise of the two available succession statements — speedcube.com.au's JieYun copy
+      names the lineage as a whole ('its predecessors (GuanYing and Shuangren)') without
+      distinguishing an immediate parent."
+  /aliases:
+    confidence: probable
+    sources: [cubezz-fangshi-guangying, speedcube-com-au-fangshi-jieyun]
+    note: "'Funs Puzzle GuangYing' is cubezz's own brand-field rendering. 'FangShi GuanYing' is
+      speedcube.com.au's spelling in its JieYun copy — recorded as an alias because a
+      researcher may encounter it, not because it is a second product."
+  /description:
+    confidence: probable
+    sources: [thecubicle-fangshi-guangying, cubezz-fangshi-guangying, lightake-fangshi-guangying, speedcube-com-au-fangshi-guangying]
