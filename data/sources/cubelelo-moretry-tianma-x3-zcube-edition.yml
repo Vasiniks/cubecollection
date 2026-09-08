@@ -1,0 +1,39 @@
+# source: cubelelo-moretry-tianma-x3-zcube-edition
+# Pass 2.6 (adversarial family-gap sweep), agent D, non-US retailer sweep (RESEARCH_SPEC
+# §3.6a), Z-Cube lane. Found while urlkey-searching Cubelelo for "zcube". Not used to back
+# any family proposal — recorded as a cross-manufacturer lead for whoever next works
+# MoreTry's `moretry-tianma-x3` variant tree, and as a third corroborating instance of the
+# existing `zcube` zero-family finding's own characterisation of Z-Cube/ZCube as a
+# customisation/co-branding operation rather than an independent-design manufacturer (the
+# prior two instances, both already recorded and neither backing a zcube family, are
+# thecubicle-z-magnetic-3x3-2020 and thecubicle-z-carbon-fiber-3x3-2019).
+id: cubelelo-moretry-tianma-x3-zcube-edition
+entity: source
+kind: retailer
+tier: 2
+title: "MoreTry Tianma X3 + ZCUBE Edition 3x3 (Magnetic) – Cubelelo"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/moretry-tianma-x3-zcube-edition-3x3-magentic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250910213250id_/https://www.cubelelo.com/products/moretry-tianma-x3-zcube-edition-3x3-magentic"
+excerpt: |-
+  "MoreTry Tianma X3 + ZCUBE Edition 3x3 (Magnetic) — Premium Magnetic 3x3 Co-Engineered by
+  MORETRY and ZCUBE for Ultimate Speed and Style... The Moretry Tianma X3 ZCUBE Edition is a
+  premium magnetic 3x3 cube that brings together the advanced engineering of MORETRY and the
+  style of ZCUBE... Exclusive ZCUBE Edition – Limited Style + Packaging."
+accessed: "2026-09-07"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (India-based, English-language storefront).
+  Reads as a co-branded packaging/style edition of MoreTry's own Tianma X3 base cube
+  ("Co-Engineered by," "Limited Style + Packaging"), not a claim of a different mechanism or
+  mould — the same "sold configuration of an existing base design" pattern DATA_MODEL §4.2
+  and the archive's own prior Z-Cube zero-family finding already established for the Z
+  Magnetic 3x3 (MFJS MF3RS base) and Z Carbon Fiber 3x3 (QiYi Warrior W base). Not used to
+  back a `zcube` family proposal; flagged instead as a lead for MoreTry's own variant
+  enumeration (a `modified_from`/edition-level fact under `moretry-tianma-x3`, not a new
+  family or model for either MoreTry or Z-Cube).
+status: sourced

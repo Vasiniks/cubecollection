@@ -1,0 +1,52 @@
+# source: cubezz-cubetwist-speed-3x3
+# Pass 2.6 (adversarial family-gap sweep), agent D, non-US retailer sweep (RESEARCH_SPEC
+# §3.6a). This is the single most significant finding of this sweep: a genuine, standard,
+# WCA-shaped CubeTwist 3x3x3 speed cube, filed under Cubezz.com's own dedicated "3x3x3"
+# category (as distinct from its own "Shape Mods"/"Cube Components & DIY Kits" categories,
+# where every other CubeTwist product this archive has ever found is correctly filed) and in
+# continuous, unbroken retail listing at this one retailer from 2015 through at least 2026 —
+# contradicting the frozen `cubetwist` zero-family finding
+# (research/notes/models/global-pass2-families.md, "CubeTwist — 0 families (scope exclusion,
+# type (a))"), which checked only TheCubicle (US) and Cubelelo (India) and found no plain
+# standard 3x3 at either. Neither prior sweep reached Cubezz.com for this manufacturer.
+id: cubezz-cubetwist-speed-3x3
+entity: source
+kind: retailer
+tier: 2
+title: "CubeTwist Speed 3x3x3 Magic Cube Black – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://www.cubezz.com/Buy-3913-CubeTwist+Speed+3x3x3+Magic+Cube+Black.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150429124551id_/http://www.cubezz.com:80/Buy-3913-CubeTwist+Speed+3x3x3+Magic+Cube+Black.html"
+excerpt: |-
+  Breadcrumb: "Your Position: Home > 3x3x3 > CubeTwist Speed 3x3x3 Magic Cube Black" — filed
+  under the site's own dedicated "3x3x3" WCA-puzzle category, not "Shape Mods," "Void and
+  Bandaged Cube," or "Cube Components & DIY Kits" (the categories every other CubeTwist
+  product checked in this archive's prior sweeps falls under). Description: "CubeTwist Speed
+  3x3x3 Magic Cube Features / Brand new and high quality magic cube / Compact and portable
+  handheld design / PVC plastic color stickers..." Specifications: "Dimensions:
+  57.0*57.0*57.0mm / Weight: 94.0g." No shape-mod, gear, bandaged, or mirror-block language
+  anywhere on the page — a plain standard-mould 57mm 3x3x3.
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront) —
+  the exact retailer/language category RESEARCH_SPEC §3.6a requires and that neither of the
+  two prior CubeTwist sweeps (TheCubicle, Cubelelo — both recorded in
+  research/notes/models/global-pass2-families.md) reached. Verified via `npm run wayback --
+  list` that this exact URL (SKU 46588) has captures from 2015-04-29 through 2026-03-05 with
+  no gap long enough to suggest discontinuation, and a live re-fetch of the 2026-02-08 capture
+  (`wayback get ... 20260208`) shows the identical product, "Status: In Stock," same 57.0mm/
+  94.0g specification — i.e. this is not a stale/abandoned page but a genuinely
+  continuously-sold SKU spanning at least 11 years, including years well inside this
+  archive's window. The earliest capture is a Wayback crawl timestamp only and is not used as
+  a release date (RESEARCH_SPEC §3.6/admission policy §3) — recorded here only as an "existed
+  by 2015" bound. No second retailer was found carrying this specific product in this
+  session's sweeps (TheCubicle's own 40-URL `/products/cubetwist*` prefix and Cubelelo's own
+  `cubetwist-*` urlkey sweep, both already run in prior Pass 2 work, list no plain 3x3x3);
+  confidence for any downstream claim should therefore be `reported`, not `confirmed`, absent
+  further corroboration.
+status: sourced

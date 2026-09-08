@@ -1,0 +1,36 @@
+# source: cubezz-cubetwist-3x3-diy-kit
+# Pass 2.6 (adversarial family-gap sweep), agent D, non-US retailer sweep (RESEARCH_SPEC
+# §3.6a). Companion finding to cubezz-cubetwist-speed-3x3: the unassembled DIY-kit
+# configuration of the same standard CubeTwist 3x3x3 mould, also filed under Cubezz.com's own
+# "3x3x3" category. Read as a sold configuration (assembled vs. DIY) of one base design per
+# DATA_MODEL §4.2, not a second product line, on the same precedent already applied to
+# Cube4You's own "3x3x3 DIY Speed Cube" (cube4you-3x3x3-diy-speed-cube-2017).
+id: cubezz-cubetwist-3x3-diy-kit
+entity: source
+kind: retailer
+tier: 2
+title: "3x3x3 CubeTwist Magic Cube DIY Kit Original Color – Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-4134-3x3x3+CubeTwist+Magic+Cube+DIY+Kit+Original+Color.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20251215232100id_/https://cubezz.com/Buy-4134-3x3x3+CubeTwist+Magic+Cube+DIY+Kit+Original+Color.html"
+excerpt: |-
+  Breadcrumb: "Your Position: Home > 3x3x3 > 3x3x3 CubeTwist Magic Cube DIY Kit Original
+  Color" — again filed under the site's own dedicated "3x3x3" category. Description:
+  "CubeTwist 3x3x3 Magic Cube DIY Kit / 3x3x3 CubeTwist Magic Cube DIY Kit Features / Brand
+  New 3x3x3 CubeTwist Magic Cube DIY Kit / Magic intelligence test cube components / Hard
+  plastic + Central axis + Screw/Spring + Color Stickers / 3x3x3 is a hard challenge for
+  you..." SKU 30689, "Status: Out of stock" as of the capture used.
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US (China-based, English-language storefront).
+  Lower SKU number (30689) than the assembled Speed 3x3x3's SKU (46588) suggests this DIY-kit
+  listing predates the assembled one in Cubezz's own catalogue, consistent with reading it as
+  the base/original configuration and the assembled "Speed" version as a later, packaged
+  configuration of the same mould — not independently confirmed by any direct manufacturer
+  statement, recorded as a reading of the evidence, not a fact.
+status: sourced
