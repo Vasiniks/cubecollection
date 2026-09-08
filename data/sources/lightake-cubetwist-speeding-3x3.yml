@@ -1,0 +1,39 @@
+# source: lightake-cubetwist-speeding-3x3
+# Pass 2.6 (adversarial family-gap sweep), agent D, second non-US retailer sweep
+# (RESEARCH_SPEC §3.6a). A third retailer (Lightake, a Chinese wholesale/retail storefront)
+# independently carries the same CubeTwist standard 3x3x3 already found at cubezz.com
+# (cubezz-cubetwist-speed-3x3), under the same SKU number (46588) and near-identical name
+# ("Speeding" vs. "Speed"). Pushes the earliest found capture back four years, from 2015 to
+# 2011.
+id: lightake-cubetwist-speeding-3x3
+entity: source
+kind: retailer
+tier: 2
+title: "3x3x3 CubeTwist Speeding Magic Cube Black – Lightake"
+publisher: "Lightake"
+url: "http://lightake.com/detail.do/sku.3x3x3_CubeTwist_Speeding_Magic_Cube_Black-46588"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20111101192850id_/http://lightake.com:80/detail.do/sku.3x3x3_CubeTwist_Speeding_Magic_Cube_Black-46588"
+excerpt: |-
+  Product URL slug and page title: "3x3x3 CubeTwist Speeding Magic Cube Black," SKU -46588.
+  Found via a Lightake domain-wide term sweep for "cubetwist"; the same sweep also
+  independently surfaces "3x3x3 CubeTwist Magic Cube DIY Kit Original Color" under SKU -30689
+  — the identical SKU number cubezz.com uses for its own DIY-kit listing
+  (cubezz-cubetwist-3x3-diy-kit).
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, non-US retailer. **Not treated as fully independent corroboration of
+  cubezz-cubetwist-speed-3x3**, per RESEARCH_SPEC §3.2: the matching SKU numbers (46588 for
+  the assembled cube, 30689 for the DIY kit) across both cubezz.com and lightake.com strongly
+  suggest both storefronts are drawing the same listing from a shared wholesale/dropship
+  supplier catalogue rather than two independently-sourced facts — the naming even differs
+  only in "Speed" vs. "Speeding," consistent with a shared-then-lightly-reworded product feed.
+  Recorded as existence/dating evidence only (it independently pushes the earliest found
+  capture of this product back to 2011, four years earlier than cubezz's own earliest capture)
+  and as a structural observation about how this specific budget product circulated, not as a
+  second independent tier-2 source for confidence-upgrade purposes.
+status: sourced
