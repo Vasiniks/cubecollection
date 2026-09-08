@@ -35,6 +35,10 @@ description: |-
   is filed under the same family rather than its own (a pass-2 decision, unchanged here).
   Treated as its own model, not a variant of qiyi-sail-original, because the size difference
   (68mm vs 56.5mm) requires distinct tooling under DATA_MODEL section 4.2.
+legality:
+  wca_status: unknown
+  basis: >-
+    A standard 3x3x3 mechanism at 68mm. No source located addresses WCA eligibility either way; the record's own conditional admission rests on documented competitive feet-solving use, not on ineligibility.
 status: drafted
 attestations:
   /scope_justification:
@@ -49,3 +53,9 @@ attestations:
   /description:
     confidence: reported
     sources: [speedsolving-wiki-qiyi-products]
+  /legality/wca_status:
+    confidence: unknown
+    note: "Researched and not found. No source located states WCA eligibility for this product
+      either way, so the status is recorded as `unknown` rather than inferred from its unusual
+      size. RESEARCH_SPEC §2.2 admits a conditional record at `not_legal` OR `unknown`, and this
+      one is admitted on documented significance rather than on being outside WCA form."

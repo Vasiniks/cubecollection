@@ -59,6 +59,19 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   /share one publisher/.test(v.out)
     ? ok('rule 9 publisher independence fires', 'same-publisher sources rejected as corroboration')
     : bad('rule 9 publisher independence fires', 'no same-publisher [9] message in fail-fixture output');
+  // Rule 15 has three branches, and until 2026-09-08 two of them did not exist: RESEARCH_SPEC
+  // §2.2 claimed the rule blocked a conditional record "without both" a justification and a
+  // legality position, while the code checked only the justification. Firing "15" at all proves
+  // nothing about the legality half, so assert each branch's own message.
+  /requires legality\.wca_status/.test(v.out)
+    ? ok('rule 15 legality half fires', 'conditional model without legality is blocked')
+    : bad('rule 15 legality half fires', 'no missing-legality [15] message in fail-fixture output');
+  /admits conditional records at "not_legal" or "unknown"/.test(v.out)
+    ? ok('rule 15 legality value branch fires', 'conditional record claiming "legal" is blocked')
+    : bad('rule 15 legality value branch fires', 'no wca_status-value [15] message in fail-fixture output');
+  /requires legality\.basis/.test(v.out)
+    ? ok('rule 15 legality basis branch fires', 'status asserted without a stated basis is blocked')
+    : bad('rule 15 legality basis branch fires', 'no missing-basis [15] message in fail-fixture output');
   missing.length === 0
     ? ok('blocking rules fire', `${expected.join(', ')}`)
     : bad('blocking rules fire', `never fired: ${missing.join(', ')}`);

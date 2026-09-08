@@ -19,6 +19,14 @@ description: |-
 status: sourced
 
 attestations:
+  /legality/wca_status:
+    confidence: unknown
+    note: "Researched and not found. No source located states WCA eligibility for this product
+      either way. It presents as an ordinary WCA-form 3x3x3 and is recorded `scope_class: core`
+      on that basis, but `core` is a scope decision about what the archive covers — it is NOT a
+      legality finding, and no `legality` block is set here rather than asserting a status no
+      source supports. RESEARCH_SPEC §2.2 requires a legality position only for `conditional`
+      admissions; this record is `core`, so the honest state is an attested absence."
   /specs/weight_g:
     confidence: unknown
     note: "Searched and not found as a product weight. TheCubicle gives 'Gross Weight 104g',

@@ -23,6 +23,10 @@ description: |-
   unlock the inner layers." A distinct unlock-geometry mechanism from the plain Mixup and from
   the Edge-Split variant, treated as its own model under DATA_MODEL section 4.2 (a different
   internal locking geometry, not a sold configuration of one design).
+legality:
+  wca_status: not_legal
+  basis: >-
+    Mixup construction: edge and centre pieces can exchange positions, which a standard 3x3x3 does not permit.
 status: drafted
 attestations:
   /scope_justification:
@@ -43,3 +47,10 @@ attestations:
       variant's own page was captured this pass, and a crawl timestamp would not be a
       release-date statement in any case per the pass-3 admission policy section 3. Left
       unset."
+  /legality/wca_status:
+    confidence: probable
+    note: "NO SOURCE STATES WCA ELIGIBILITY DIRECTLY for this product. The status is derived
+      from the mechanism this record already documents from tier 1-2 evidence, together with
+      RESEARCH_SPEC §2.2's own framing of such puzzles as non-WCA-legal 3x3s. The inference chain
+      is stated rather than hidden: a source addressing eligibility directly would raise this
+      confidence or correct the value."

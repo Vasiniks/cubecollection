@@ -78,6 +78,10 @@ description: |-
   `mf8-crazy-3x3-plus-planet-series` rather than merged, with a `succeeds` relationship and
   `confidence: uncertain` on the generation claim, in both directions. This is a decision to
   flag for human review, not to re-litigate silently.
+legality:
+  wca_status: not_legal
+  basis: >-
+    Locked-ring construction: rings on each face do not turn with their faces.
 status: drafted
 attestations:
   /scope_justification:
@@ -114,3 +118,10 @@ attestations:
     confidence: probable
     sources: [speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015, thecubicle-mf8-crazy-3x3-planets-assorted,
       speedsolving-wiki-mf8-products]
+  /legality/wca_status:
+    confidence: probable
+    note: "NO SOURCE STATES WCA ELIGIBILITY DIRECTLY for this product. The status is derived
+      from the mechanism this record already documents from tier 1-2 evidence, together with
+      RESEARCH_SPEC §2.2's own framing of such puzzles as non-WCA-legal 3x3s. The inference chain
+      is stated rather than hidden: a source addressing eligibility directly would raise this
+      confidence or correct the value."

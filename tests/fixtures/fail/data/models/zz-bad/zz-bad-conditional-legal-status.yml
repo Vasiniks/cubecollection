@@ -1,0 +1,21 @@
+# SYNTHETIC FIXTURE — engineered to FAIL.
+# Rule 15, legality VALUE half. RESEARCH_SPEC §2.2 admits conditional records at "not_legal" or
+# "unknown" only: a WCA-legal puzzle is ordinary archive scope and belongs at "core". This record
+# has a justification, an attestation, a legality block and a basis — everything except a
+# permissible status — so only the enum branch can fail.
+
+id: zz-bad-conditional-legal-status
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Conditional Legal Status
+scope_class: conditional
+scope_justification: Fixture value. Deliberately complete, so only the legality value can fail.
+legality:
+  wca_status: legal
+  basis: Fixture value. Present, so the missing-basis branch cannot fire here.
+status: drafted
+attestations:
+  "/scope_justification":
+    confidence: probable
+    sources: [zz-samepub-a]

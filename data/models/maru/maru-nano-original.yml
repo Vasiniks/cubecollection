@@ -47,6 +47,10 @@ description: |-
   "Black") of the same 15mm product existed by that date. `piece_count` is left unset: this
   archive does not assume the ordinary 8-corner/12-edge/6-centre 3x3 default for a 15mm DIY-kit
   novelty product without a source stating it. No later generation was found; this is the family's sole model.
+legality:
+  wca_status: unknown
+  basis: >-
+    A standard 3x3x3 mechanism at 15mm. No source located addresses WCA eligibility either way, and this record's conditional admission rests on a documented production first (smallest mass-produced 3x3), not on being outside WCA form. Size alone is not treated as establishing ineligibility.
 status: drafted
 attestations:
   /scope_justification:
@@ -92,3 +96,9 @@ attestations:
   /description:
     confidence: probable
     sources: [thecubicle-maru-nano-3x3, cubezz-maru-nano]
+  /legality/wca_status:
+    confidence: unknown
+    note: "Researched and not found. No source located states WCA eligibility for this product
+      either way, so the status is recorded as `unknown` rather than inferred from its unusual
+      size. RESEARCH_SPEC §2.2 admits a conditional record at `not_legal` OR `unknown`, and this
+      one is admitted on documented significance rather than on being outside WCA form."

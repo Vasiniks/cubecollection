@@ -1,0 +1,26 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Guards the MODEL-level half of rule 15: a conditional model that carries BOTH a justification
+# and a legality position is valid and must not be flagged. Its counterpart
+# tests/fixtures/fail/data/models/zz-bad/zz-bad-conditional-no-legality.yml omits the legality
+# and must fail. Together they prove the rule fires and the allowance holds.
+
+id: zz-testbrand-tf-conditional
+entity: model
+family_id: zz-testbrand-tf
+manufacturer_id: zz-testbrand
+name: ZZ Testbrand TF Conditional
+scope_class: conditional
+scope_justification: Fixture value. A documented production first, standing in for real significance.
+scope_decided_by: fixture
+scope_decided_on: "2026-09-08"
+legality:
+  wca_status: not_legal
+  basis: Fixture value. Bandaged construction places it outside standard 3x3x3 form.
+status: drafted
+attestations:
+  "/scope_justification":
+    confidence: probable
+    sources: [zz-src-official]
+  "/legality/wca_status":
+    confidence: probable
+    sources: [zz-src-official]

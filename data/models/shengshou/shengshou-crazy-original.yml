@@ -35,6 +35,10 @@ description: |-
   A "Jelly LE" (transparent stickerless, "limited to 1400 units worldwide") is a **pass 4
   variant**, not a model. Which generation it belongs to is **not established** by any source and
   is deliberately not assumed here.
+legality:
+  wca_status: not_legal
+  basis: >-
+    Locked-ring construction, pillowed body: 'a pillowed 3x3 with rings on each face that do not turn with their respective faces', eight pieces per ring in this generation.
 status: sourced
 
 attestations:
@@ -70,3 +74,11 @@ attestations:
   /description:
     confidence: probable
     sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /legality/wca_status:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: "NO SOURCE STATES WCA ELIGIBILITY DIRECTLY for this product. The status is derived
+      from the mechanism this record already documents from tier 1-2 evidence, together with
+      RESEARCH_SPEC §2.2's own framing of such puzzles as non-WCA-legal 3x3s. The inference chain
+      is stated rather than hidden: a source addressing eligibility directly would raise this
+      confidence or correct the value."

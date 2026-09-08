@@ -50,6 +50,10 @@ description: |-
   its own model under Calvin's Puzzle per the retailer's own product naming and manufacturer
   attribution; a future pass with a source identifying the specific base cube should revisit
   this as a possible `modified_from` relationship instead.
+legality:
+  wca_status: not_legal
+  basis: >-
+    Bandaged construction: pieces are fused so that some turns are blocked, which is what the record's own scope_justification documents as the defining mechanism.
 status: drafted
 attestations:
   /scope_justification:
@@ -69,3 +73,10 @@ attestations:
     note: "Researched and not found. The only capture located (2023-02-05) is a Wayback crawl
       timestamp, not a release-date statement — not used as a date per the pass-3 admission
       policy section 3. Left unset."
+  /legality/wca_status:
+    confidence: probable
+    note: "NO SOURCE STATES WCA ELIGIBILITY DIRECTLY for this product. The status is derived
+      from the mechanism this record already documents from tier 1-2 evidence, together with
+      RESEARCH_SPEC §2.2's own framing of such puzzles as non-WCA-legal 3x3s. The inference chain
+      is stated rather than hidden: a source addressing eligibility directly would raise this
+      confidence or correct the value."

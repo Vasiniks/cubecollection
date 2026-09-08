@@ -1,0 +1,18 @@
+# SYNTHETIC FIXTURE — engineered to FAIL.
+# Rule 15, legality BASIS half. §2.2 requires a conditional record to state what makes it legal
+# or not, not merely to assert a status. Status is present and permissible; only basis is absent.
+
+id: zz-bad-conditional-no-basis
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Conditional No Basis
+scope_class: conditional
+scope_justification: Fixture value. Deliberately complete, so only the missing basis can fail.
+legality:
+  wca_status: not_legal
+status: drafted
+attestations:
+  "/scope_justification":
+    confidence: probable
+    sources: [zz-samepub-a]

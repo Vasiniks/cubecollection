@@ -55,3 +55,6 @@ attestations:
   "/specs/adjustment_system":
     confidence: confirmed
     sources: [zz-src-official]
+  "/legality/wca_status":
+    confidence: unknown
+    note: Fixture value. A core record asserts no legality status; the absence is attested.

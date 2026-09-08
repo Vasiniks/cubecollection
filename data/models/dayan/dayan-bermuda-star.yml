@@ -28,6 +28,10 @@ description: |-
   A star/flower-form member of the line, named 'Star' by the manufacturer and carried as 'Sunflower' by TheCubicle.
 
   The two retailer names for one manufacturer product are recorded as aliases rather than treated as separate items.
+legality:
+  wca_status: not_legal
+  basis: >-
+    Bandaged construction, and a non-cubic exterior form named by the manufacturer.
 status: sourced
 
 attestations:
@@ -76,3 +80,11 @@ attestations:
   /specs/adjustment_system:
     confidence: unknown
     note: "Searched and not found."
+  /legality/wca_status:
+    confidence: probable
+    sources: [thecubicle-dayan-bermuda-cube-2020]
+    note: "NO SOURCE STATES WCA ELIGIBILITY DIRECTLY for this product. The status is derived
+      from the mechanism this record already documents from tier 1-2 evidence, together with
+      RESEARCH_SPEC §2.2's own framing of such puzzles as non-WCA-legal 3x3s. The inference chain
+      is stated rather than hidden: a source addressing eligibility directly would raise this
+      confidence or correct the value."

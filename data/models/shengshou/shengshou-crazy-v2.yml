@@ -44,6 +44,10 @@ description: |-
   **A retailer inconsistency, noted not resolved:** TheCubicle types this generation "3x3" while
   typing the first "Shape Mods", despite both sharing the same locked-ring mechanism. The
   archive's `scope_class` is decided on §2.2's own test, not on a retailer's category field.
+legality:
+  wca_status: not_legal
+  basis: >-
+    Locked-ring construction, pillowed body: 'a pillowed 3x3 with rings on each face that do not turn with their respective faces', nine pieces per ring in this generation.
 status: sourced
 
 attestations:
@@ -87,3 +91,11 @@ attestations:
   /relationships:
     confidence: probable
     sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /legality/wca_status:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: "NO SOURCE STATES WCA ELIGIBILITY DIRECTLY for this product. The status is derived
+      from the mechanism this record already documents from tier 1-2 evidence, together with
+      RESEARCH_SPEC §2.2's own framing of such puzzles as non-WCA-legal 3x3s. The inference chain
+      is stated rather than hidden: a source addressing eligibility directly would raise this
+      confidence or correct the value."

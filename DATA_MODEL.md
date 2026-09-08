@@ -475,7 +475,7 @@ Three commitments here:
 2. `procedural` describes *whether a cube could be generated*, not an asset. `renderable` and `blockers` are derived from colorway completeness and profile availability, so the gap between "we have data" and "we can draw it" is visible without anyone maintaining it by hand.
 3. `geometry_profile` is declared and left unpopulated. **No 3D asset pipeline is built in this phase.** The field exists so that when it is built, models sharing a mechanism reference one shell description rather than each carrying a private copy.
 
-### 3.8 `variant.legality` *(new)*
+### 3.8 `legality` — on models, overridden by variants *(model-level added 2026-09-08)*
 
 ```yaml
 legality:
@@ -490,6 +490,26 @@ legality:
       source: source-id
       note: ?
 ```
+
+**Where this lives, and why it moved.** Legality was originally defined on `variant` only, on the
+reading that a *sold configuration* is what competes. That was half right. WCA eligibility is
+usually determined by the **design** — a bandaged cube, a mixup cube or a locked-ring cube is
+ineligible whatever colourway it ships in — so `legality` is defined on **`model`** and a variant
+overrides it only where the configuration genuinely changes the answer. This mirrors the existing
+`model.specs` → `variant.config` inheritance exactly, and `validate.mjs` treats
+`/legality/wca_status` as inherited in the same way, so a variant never restates its model's
+position.
+
+`family` deliberately has no `legality`. A family is a product line, not a physical puzzle;
+eligibility attaches to a design.
+
+This placement is what makes RESEARCH_SPEC §2.2 enforceable. §2.2 has always said a `conditional`
+admission carries both a justification and a legality position, and that "Rule 15 blocks a
+conditional record without both" — but until 2026-09-08 rule 15 checked only the justification,
+because `legality` did not exist on `model` at all. Every conditional model in the archive
+silently omitted it. Rule 15 now enforces all three parts: the status must be present, it must be
+`not_legal` or `unknown` (a legal puzzle belongs at `core`), and a `basis` must state what makes
+it so. See ledger `P26-13`.
 
 `wca_status` is the current assessment and carries `as_of`, because regulations change and today's status is not retroactive. `historical[]` records periods where the status differed or where the regulation itself changed; it is populated only when there is evidence, not filled speculatively.
 

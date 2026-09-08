@@ -28,6 +28,10 @@ description: |-
   The cube-shaped member of the line, and the one sold most widely. DaYan's own catalogue lists it under eight planet names, each in Black and White.
 
   Those sixteen listings are COLOURWAYS OF THIS ONE MODEL and are pass 4 variant material, not separate models — retailers simplify the manufacturer's 'Bermuda Triangle [planet]' to 'Bermuda Cube [planet]'.
+legality:
+  wca_status: not_legal
+  basis: >-
+    Bandaged construction. TheCubicle's description of the line: the Bermuda series takes 3x3 puzzles and shape-mods 'but with certain parts "bandaged" to make each of them a unique challenge to solve'.
 status: sourced
 
 attestations:
@@ -76,3 +80,11 @@ attestations:
   /specs/adjustment_system:
     confidence: unknown
     note: "Searched and not found."
+  /legality/wca_status:
+    confidence: probable
+    sources: [thecubicle-dayan-bermuda-cube-2020]
+    note: "NO SOURCE STATES WCA ELIGIBILITY DIRECTLY for this product. The status is derived
+      from the mechanism this record already documents from tier 1-2 evidence, together with
+      RESEARCH_SPEC §2.2's own framing of such puzzles as non-WCA-legal 3x3s. The inference chain
+      is stated rather than hidden: a source addressing eligibility directly would raise this
+      confidence or correct the value."
