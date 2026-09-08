@@ -1,0 +1,42 @@
+# source: thecubicle-yj-appari-3x3-2024
+# Pass 2.6 (Agent E, lost-lanes recovery / new finding). Direct product-page capture of YJ
+# Appari, a flagship 3x3 line with no corresponding family among the 9 existing YJ families,
+# found during the mandatory full-prefix sweep (thecubicle-yj-products-prefix-2026) and
+# corroborated at two further retailers (speedcubeshop-yj-appari-3x3-2024,
+# cubelelo-yj-products-prefix-2026).
+id: thecubicle-yj-appari-3x3-2024
+entity: source
+kind: retailer
+title: "YJ Appari (Speed Micro Bearing) — TheCubicle product page"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-appari-3x3-speed-micro-bearing"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240522id_/https://www.thecubicle.com/products/yj-appari-3x3-speed-micro-bearing"
+excerpt: |-
+  Product Description: "The YJ Appari (Speed Micro Bearing) is YJ's newest 3x3! This model is
+  very quick out of the box and features YJ's innovative washer that carries speed-enhancing
+  ball bearings. This model has core-corner magnets, classic corner-edge magnets, and 6 spring
+  compression settings." Product Specifications: Manufacturer YJ; Type 3x3; Added 2024-05-14;
+  Gross Weight 161g; Magnets: Magnetic. Two customer reviews, one critical of the ball-bearing
+  hardware quality ("The ball bearins are pretty bad and cheap cube overall"), the other
+  unrelated/spam.
+preservation_note: "archive_url is the id_ (raw) Wayback capture, tags stripped via `npm run
+  wayback -- get`."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer product page with a structured spec table, describing a named,
+  distinct mechanism ("speed-enhancing ball bearings" in an "innovative washer") not shared
+  with any of the 9 existing YJ 3x3 families (Chilong, Guanlong, JinJiao, Meta, MGC, Ruilong,
+  Sulong, Yulong, Zhilong). Sufficient for `probable` model-existence per the Pass 3 admission
+  policy; `confirmed` reachable once combined with the two further independent retailers (see
+  speedcubeshop-yj-appari-3x3-2024, cubelelo-yj-products-prefix-2026), which describe the same
+  mechanism in different wording ("Speed Micro Actuator" at SpeedCubeShop vs "Speed Micro
+  Bearing" here) — genuinely independent corroboration, not a copied listing. The "Added:
+  2024-05-14" field is a retailer catalogue date, not treated as a release date. Only one
+  generation was found across all three retailers swept; no "Appari V2" or successor exists in
+  the evidence gathered this pass.
+status: sourced

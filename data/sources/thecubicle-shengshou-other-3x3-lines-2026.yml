@@ -1,0 +1,79 @@
+# source: thecubicle-shengshou-other-3x3-lines-2026
+# Pass 2.6 (Agent E, lost-lanes recovery). Direct product-page captures for the remaining
+# ShengShou 3x3-relevant product paths named but not chased in
+# thecubicle-shengshou-products-prefix-2026: Crazy 3x3, Rainbow 3x3, Gem 3x3, Tank 3x3, and
+# Metal Cube 3x3. One source record covers all five to avoid five near-empty files; each
+# sub-excerpt is independently dated and URLed.
+id: thecubicle-shengshou-other-3x3-lines-2026
+entity: source
+kind: retailer
+title: "ShengShou Crazy 3x3 / Rainbow 3x3 / Gem 3x3 / Tank 3x3 / Metal Cube 3x3 — TheCubicle product pages"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-crazy-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220807id_/https://www.thecubicle.com/products/shengshou-crazy-3x3"
+excerpt: |-
+  **ShengShou Crazy 3x3** (https://www.thecubicle.com/products/shengshou-crazy-3x3, captured
+  2022-08-07): "The ShengShou Crazy 3x3 is a pillowed 3x3 with rings on each face that do not
+  turn with their respective faces. This leads to interesting situations that you would not
+  normally see on a 3x3. This crazy 3x3 is built for speed. While performance isn't as good as
+  standard 3x3s, it is well ahead of other 'crazy' puzzles." Spec table: Type "Shape Mods";
+  Added 2021-12-15; Gross Weight 117g; Dimensions 60.5mm. This is the same locked-ring "Crazy
+  cube" mechanism documented generically at wikipedia-combination-puzzle and already admitted
+  under mf8-crazy-3x3x3 and calvins-crazy-3x3 — TheCubicle's own "Type: Shape Mods"
+  classification matches those precedent records' own retailer-sourced positioning evidence.
+
+  **ShengShou Rainbow 3x3** (https://www.thecubicle.com/products/shengshou-rainbow-3x3,
+  captured 2020-09-21): "The ShengShou Rainbow 3x3 is ShengShou's first stickerless 3x3 cube.
+  It delivers solid cubing performance while coming at a very low price point." Spec table:
+  Type "3x3"; Added 2018-09-11 [this exact date is one of the archive's three documented
+  catalogue-migration artifacts (29 occurrences/22 sources/13 unrelated brands) and is
+  discarded outright, not merely treated as an upper bound]; Gross Weight 100g; Dimensions
+  56.2mm. Standard 3x3x3 mechanism, non-magnetic, `scope_class: core` candidate.
+
+  **ShengShou Gem 3x3** (https://www.thecubicle.com/products/shengshou-gem-3x3, captured
+  2020-09-18): "The ShengShou Gem 3x3 is a new stickerless budget 3x3 that has just hit the
+  market. The Gem 3x3 is unique due to its 3-piece cap design and black plastic interior. It
+  also features a shiny exterior, and the performance is fairly good right out of the box.
+  Great for beginners and intermediate cubers!" Spec table: Type "3x3"; Gross Weight 104g.
+  Standard 3x3x3 mechanism, non-magnetic, `scope_class: core` candidate. Note: this is a
+  distinct product from DaYan's own, differently-shaped "Gem Cube" series (see
+  thecubicle-dayan-gem-cube-i-2019) — same generic English word "Gem" used by two unrelated
+  manufacturers for two unrelated products, not a naming collision within one brand.
+
+  **ShengShou Tank 3x3** (https://www.thecubicle.com/products/shengshou-tank-3x3, captured
+  2020-09-18): "The ShengShou Tank 3x3 is a new economy 3x3 speed cube that features a vibrant
+  color scheme, frosted exterior, and black internals." Spec table: Type "3x3"; Gross Weight
+  100g; Dimensions 56.0mm. Standard 3x3x3 mechanism, non-magnetic, `scope_class: core`
+  candidate. "Tank" is also a cross-category ShengShou name (2x2/4x4/5x5/6x6/7x7/Megaminx/
+  Pyraminx all found under the same retailer prefix), consistent with the naming pattern
+  already documented for Legend/Mr. M/Wind/Aurora in the seven existing family records.
+
+  **ShengShou Metal Cube 3x3** (https://www.thecubicle.com/products/shengshou-metal-cube-3x3,
+  captured 2025-08-10): "The ShengShou Metal Cube is a heavy 3x3. This puzzle has plastic
+  internals, but the outside is metal with a very cool finish on it. The metal of this cube
+  has a matte-like finish that makes it very satisfying to touch and solve. The turning is good
+  as well! Especially for a non-magnetic, heavy-weight 3x3." Spec table: Type "3x3 Speed
+  Cubes"; Added 2024-11-21; Gross Weight 186g; Dimensions 56.0mm. Standard 3x3x3 shape and
+  mechanism but a metal exterior over plastic internals — `scope_class` (core vs conditional)
+  left an open question for whoever admits this record: WCA regulations restrict puzzle
+  materials on safety grounds, and this record does not itself determine whether an all-metal-
+  finish 56mm 3x3 clears that bar.
+preservation_note: "archive_url points at the Crazy 3x3 capture; the other four excerpts are
+  each independently timestamped and URLed within the excerpt text per RESEARCH_SPEC 3.5's
+  allowance for evidence not reducing to one page. Each was fetched directly via `npm run
+  wayback -- get <url> <YYYYMMDD>` this session and could be re-preserved as its own
+  archive_url source if a future pass wants one file per product."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer product pages with structured spec tables — sufficient for
+  `probable` model-existence and specification claims per the Pass 3 admission policy. None of
+  the five carries a manufacturer-declared release date; the one "Added:" date quoted (Rainbow,
+  2018-09-11) is explicitly flagged and discarded as a known catalogue-migration artifact
+  rather than used even as an upper bound, following the precedent set for that exact date
+  elsewhere in this archive.
+status: sourced

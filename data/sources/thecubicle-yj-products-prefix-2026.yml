@@ -1,0 +1,66 @@
+# source: thecubicle-yj-products-prefix-2026
+# Pass 2.6 (Agent E). RESEARCH_SPEC 3.6a compliance record: the mandatory archived retailer
+# /products/ prefix sweep for YJ, broadened beyond the existing narrow
+# thecubicle-yj-mgc-prefix-2026 (which covered only the "yj-mgc*" sub-path). A full CDX prefix
+# sweep of thecubicle.com/products/yj-* (489 distinct captured URLs, 2019-2026, NOT truncated
+# — well under the 2000 --limit used).
+id: thecubicle-yj-products-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/yj-* — full product URL enumeration"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-appari-3x3-speed-micro-bearing"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of https://www.thecubicle.com/products/yj- (2019-2026 captures, 489
+  distinct URLs, not truncated). Every path was checked against the 9 frozen YJ families
+  (yj-chilong, yj-guanlong, yj-jinjiao, yj-meta, yj-mgc, yj-ruilong, yj-sulong, yj-yulong,
+  yj-zhilong).
+
+  3x3-relevant paths matching an existing family, plus one gap worth flagging: the MGC family
+  now includes yj-mgc-sigma-3x3 (first capture 2026-02-16) — a generation named in
+  thecubicle-yj-mgc-prefix-2026's own excerpt but with NO corresponding model record in
+  data/models/yj/ (the family's models stop at yj-mgc3-beta). This is a missing MODEL under an
+  EXISTING family, not a missing family, and is out of this agent's write lane (model creation
+  is frozen for this pass) — flagged here for pass-3/4 reopening.
+
+  3x3-relevant paths matching NO existing family:
+  - yj-appari-3x3-speed-micro-bearing (first capture 2024-05-22) — a distinct flagship 3x3 with
+    its own named mechanism ("Speed Micro Bearing"), independently corroborated at two further
+    retailers (see thecubicle-yj-appari-3x3-2024 for the full description and corroboration).
+    This is the genuine missing-family candidate this sweep surfaces, parallel in kind to
+    ShengShou YuFeng.
+
+  3x3-shaped shape mods found, none matching an existing family, all weak leads only (no
+  documented significance beyond ordinary novelty found this pass): yj-diamond-3x3 ("a
+  shapemod of a traditional 3x3 that solves by shape alone"), yj-inequilateral-3x3 ("a 3x3
+  shape mod with unevenly-sized layers and a sticker mod in one cube"), yj-3x3-ball-cube (a
+  spherical-shelled 3x3), yj-blind-3x3 (an accessibility product: "different textures on each
+  face... allows people with vision impairments to solve the 3x3"), yj-windmill-v2 (a common,
+  cross-manufacturer shape-mod category, not YJ-specific), yj-concave-3x3-stickerless.
+
+  Small-format / novelty 3x3-labelled SKUs, checked and treated as out of scope
+  (RESEARCH_SPEC 2.4 — not materially identifiable as a distinct significant product beyond
+  ordinary novelty sizing): yj-pocket-cube-3x3 (TheCubicle's own copy: "not a flagship model...
+  a great choice for casual solves", 50mm), yj-mini-pillowed-3x3-4-5cm,
+  yj-mini-pillowed-3x3-keychain-cube-2-0cm, yj-mosaic-3x3-cube-set-* (bulk decorative sets),
+  yj-super-floppy-1x3x3(-v2) [a 1x3x3 floppy cube — a different puzzle entirely, not a 3x3x3].
+
+  Non-3x3 YJ product families found and not itemised further (Square-1, Skewb, Pyraminx,
+  Megaminx, 4x4-9x9 NxN lines, timers, storage) are out of this sweep's scope.
+preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback --
+  prefix https://www.thecubicle.com/products/yj- --limit 2000`) is the primary evidence; the
+  excerpt reproduces the path list and grouping directly, per RESEARCH_SPEC 3.5's allowance
+  for evidence that does not reduce to one page's text."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure. RESEARCH_SPEC 3.6a compliance record for
+  YJ, extending the prior narrower MGC-only sweep to the full product prefix. Outcome: SWEPT,
+  one genuine missing-family candidate found (Appari), one missing-model-under-existing-family
+  gap flagged (MGC Sigma), several weak shape-mod leads, and a long tail of confirmed-out-of-
+  scope novelty SKUs.
+status: sourced

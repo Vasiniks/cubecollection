@@ -1,0 +1,77 @@
+# source: thecubicle-dayan-non-3x3-lines-2026
+# Pass 2.6 (Agent E, lost-lanes recovery). Resolves the "Dayan Crazy Cube" and "Dayan Gem Cube"
+# names in DaYan's own tier-1 official 2013 site (dayancube-official-2013), which were flagged
+# by an earlier pass as never chased. Both turn out NOT to be 3x3x3 puzzles. Also documents
+# several further DaYan novelty-shape SKUs found in the full thecubicle-dayan-products-
+# prefix-2026 sweep and checked for 3x3x3-ness, all of which are likewise out of this
+# archive's scope.
+id: thecubicle-dayan-non-3x3-lines-2026
+entity: source
+kind: retailer
+title: "DaYan Gem Cube / Jewel Cube / Crazy Pentahedron / Bagua / Tangram / Hydrangea / Bi YiNiao — TheCubicle product pages"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-gem-cube-i"
+preservation_method: excerpt
+excerpt: |-
+  **DaYan Gem Cube** (https://www.thecubicle.com/products/dayan-gem-cube-i, captured
+  2020-09-20): "Gem Cube series consists of an assortment of bizarre, many-sided puzzles that
+  resemble multifaceted gem stones. The different gem cubes can be manipulated in a variety of
+  different ways that makes each of them a unique puzzle to solve." Ten SKUs found (Gem Cube
+  I through VIII, plus Gem 9 and Gem 10). NOT a 3x3x3 — a distinct multi-faceted puzzle shape,
+  filed by the retailer's own storefront category as "Other". Resolves the "Dayan Gem Cube"
+  name from dayancube-official-2013: out of this archive's scope (RESEARCH_SPEC 2.4).
+
+  **DaYan Crazy Cube / "Dayan Crazy" line**: no `dayan-crazy*` path was found at TheCubicle at
+  all. The DaYan-branded "Crazy" products that do exist at retail are all pentahedron-shaped
+  (speedcubeshop.com/products/dayan-crazy-5-layer-pentahedron and the
+  dayan-crazy-pentahedron-planet-series-* line, eight planet-themed colourways) — NOT a 3x3x3.
+  Separately, a joint "DaYan + mf8 Crazy 3x3" line does exist at TheCubicle
+  (dayan-mf8-crazy-3x3-2-faces, captured 2020-09-18: "The DaYan + mf8 Crazy 3x3s feature
+  circular cuts on multiple sides of the cubes. They are jointly produced by DaYan and mf8.")
+  — this is the SAME locked-ring "Crazy cube" mechanism already covered by the existing
+  mf8-crazy-3x3x3 family (filed under manufacturer_id: mf8); it does not need a new family,
+  only a possible pass-4 attribution note that TheCubicle sells at least one SKU of that line
+  under a joint DaYan+mf8 listing. Resolves the "Dayan Crazy Cube" name from
+  dayancube-official-2013: it names the pentahedron line, which is out of this archive's scope
+  (RESEARCH_SPEC 2.4), not the 3x3-shaped joint mf8 collaboration.
+
+  **DaYan Jewel Cube** (https://www.thecubicle.com/products/dayan-jewel-cube, captured
+  2019-08-24): "The DaYan Jewel Cube is a colorful, multifaceted puzzle that can turn in a
+  variety of interesting ways, similar to the more complicated DaYan Gem series puzzles."
+  Retailer's own "Type: Other". Not a 3x3x3; out of scope.
+
+  **DaYan Bagua Cube** (https://www.thecubicle.com/products/dayan-bagua-cube, captured
+  2020-09-20): "a very exquisite-looking shape-shifting 3x3 shape mod, with an octagon carved
+  out of the centers and additional cuts in the edges." A genuine cube-SHAPED shape mod with
+  extensive customer reviews describing 3x3-adjacent tensioning/lubing behaviour ("it is an
+  extremely difficult puzzle... it's really fun to have a puzzle that's unique but still has
+  3x3 roots"). Not chased to family-candidate depth this pass; recorded as a weak lead only —
+  no documented significance statement beyond ordinary shape-mod novelty was found.
+
+  **DaYan Tangram Cube** (https://www.thecubicle.com/products/dayan-tangram-cube, captured
+  2020-09-23): "a new and exotic-looking puzzle from DaYan... a repeating pattern of cuts
+  across the 6 faces." A customer review adds: "it is actually a cubic shape-mod of the
+  five-sided Pentahedron puzzle... it does not shape-shift (it stays cubic)." Cube-shaped,
+  non-standard mechanism. Weak lead only, same reasoning as Bagua.
+
+  **DaYan Hydrangea** (https://www.thecubicle.com/products/dayan-hydrangea, captured
+  2020-11-29): "a hollow 4-axis spherical puzzle." NOT cube-shaped at all; out of scope.
+
+  **DaYan Bi YiNiao Cube** (https://www.thecubicle.com/products/dayan-bi-yiniao-cube, captured
+  2020-08-07): "a 12 axis cubic puzzle that shape shifts and jumbles. It is similar to the
+  DaYan Shuang FeiYan Cube except it has 4 fewer axes of rotation." A 12-axis jumbling
+  mechanism, not a 3x3x3 layer-turning mechanism despite the cubic outer shape; out of scope
+  (RESEARCH_SPEC 2.4 — a fundamentally different puzzle class, not a 3x3x3 shape mod).
+preservation_note: "Multiple product pages, each independently dated and URLed in the excerpt
+  text, per RESEARCH_SPEC 3.5's allowance for evidence not reducing to one page. Each was
+  fetched via `npm run wayback -- get <url> <YYYYMMDD>` this session."
+accessed: "2026-09-07"
+language: en
+region: US
+link_status: unchecked
+last_checked: "2026-09-07"
+reliability_note: |-
+  Tier 2, first-party retailer product pages. Used here only to establish shape/mechanism
+  (in-scope vs out-of-scope), not specifications or dates. Sufficient for that narrow purpose
+  at `probable`.
+status: sourced
