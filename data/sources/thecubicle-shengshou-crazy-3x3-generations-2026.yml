@@ -1,0 +1,86 @@
+# source: thecubicle-shengshou-crazy-3x3-generations-2026
+# P26-5 Agent C (ShengShou Crazy/Rainbow adjudication). Direct captures of TheCubicle's three
+# distinct "ShengShou Crazy 3x3" product pages (base/V1, V2, and Jelly LE) plus a live CDX
+# prefix re-sweep of thecubicle.com/products/shengshou-crazy establishing the cross-puzzle-size
+# naming pattern. Chases the generation question left open by
+# thecubicle-shengshou-products-prefix-2026 and thecubicle-shengshou-other-3x3-lines-2026,
+# which named the three slugs but did not fetch or compare their page content.
+id: thecubicle-shengshou-crazy-3x3-generations-2026
+entity: source
+kind: retailer
+title: "ShengShou Crazy 3x3 / V2 / (Jelly LE) — TheCubicle product pages and cross-size CDX sweep"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-crazy-3x3-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240416134642id_/https://www.thecubicle.com/products/shengshou-crazy-3x3-v2"
+excerpt: |-
+  **Base/V1** (https://www.thecubicle.com/products/shengshou-crazy-3x3, capture
+  2023-02-06id_, product id 6670615871571, single "Stickerless" variant, $15.99): "ShengShou
+  Crazy 3x3 is a pillowed 3x3 with rings on each face that do not turn with their respective
+  faces. This leads to interesting situations that you would not normally see on a 3x3. This
+  crazy 3x3 is built for speed. While performance isn't as good as standard 3x3s, it is well
+  ahead of other 'crazy' puzzles." Spec table: Type "Shape Mods"; Dimensions 60.5mm; Weight
+  103.0-117g depending on field read.
+
+  **V2** (https://www.thecubicle.com/products/shengshou-crazy-3x3-v2, capture
+  2024-04-16id_, product id 7049644212307): "ShengShou Crazy 3x3 V2 is a pillowed 3x3 with
+  rings on each face that do not turn with their respective faces. This leads to interesting
+  situations that you would not normally see on a 3x3. **The V2 has more pieces (9 total) in
+  each ring, adding yet another layer of difficulty.** If you've mastered the [base] 3x3, this
+  is a g[reat next step]." Spec table: Type "3x3" (NOT "Shape Mods" — a retailer classification
+  inconsistency between the two generations, noted rather than resolved); Dimensions 60.0mm;
+  Gross Weight 124.0g. **This is a documented internal-geometry/mechanism difference between
+  generations** (ring piece count, 8 vs 9 per ring), not merely a stated version-number
+  increment — satisfying DATA_MODEL section 4.2's model-identity test independent of the "V2"
+  label itself.
+
+  **Jelly LE** (https://www.thecubicle.com/products/shengshou-crazy-3x3-jelly-le, capture
+  2026-07-18id_, product id 7986504597587, single variant "Transparent Stickerless", $13.99):
+  "ShengShou Crazy 3x3 (Jelly LE) - limited to 1400 units worldwide!" Retailer `type` field:
+  "3x3,Shape Mods". No ring-piece-count or other spec claim is stated for this SKU beyond the
+  unit-count claim; it reads as a colourway/material (transparent "jelly" plastic) limited
+  edition rather than a third design generation, but this pass could not determine from the
+  page alone which of the two mechanism generations (V1 8-piece or V2 9-piece ring) it is built
+  on — recorded as an open question, not resolved by assumption.
+
+  **Cross-size naming, re-verified independently this pass** via a live CDX prefix query of
+  `thecubicle.com/products/shengshou-crazy` (not a re-read of the existing prefix-sweep source,
+  a fresh query run this session): distinct "Crazy"-branded ShengShou product pages exist for
+  2x2 (2020-09-20), 3x3 (+V2, +Jelly LE), 4x4 (+V2, +V3), 5x5 (V1 through V4), Magic Tower
+  (+V2), and Megaminx (+V2). No Pyraminx or Mirror-cube "Crazy" product was found in this
+  retailer's own catalogue (contrast speedcubeshop-shengshou-products-prefix-2026, which
+  reports Pyraminx and Mirror 3x3/Pyraminx "Crazy" SKUs at that retailer — a genuine
+  retailer-to-retailer catalogue difference, not a contradiction, since different retailers
+  carry different subsets of a manufacturer's line). A separately-named "Full-Function Crazy"
+  2x2 (shengshou-full-function-crazy-2x2, first capture 2022-11-27) also exists at this
+  retailer — out of this pass's 3x3 scope, but recorded as a lead: it echoes Calvin's Puzzle's
+  own "Full-Function Crazy... (Center-Locking)" naming (see calvins-crazy-3x3), raising the
+  unresolved question of whether ShengShou's "Full-Function Crazy" and plain "Crazy" lines are
+  the same mechanism family or two distinct ShengShou shape-mod concepts. Not chased further —
+  no 3x3 "Full-Function Crazy" SKU was found in this retailer's catalogue.
+preservation_note: "Three product-page captures preserved via their own archive_url-equivalent
+  Wayback timestamps (quoted per-product above, each independently re-fetchable); the CDX
+  cross-size sweep is preserved as a reproducible query
+  (`https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/shengshou-crazy&matchType=prefix`)
+  per RESEARCH_SPEC 3.5's allowance for evidence not reducing to one page's text. archive_url
+  above points at the V2 capture as the single representative URL required by schema; the V1
+  and Jelly LE captures are independently dated and URLed in the excerpt text."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 2, first-party retailer product pages with structured spec tables — sufficient for
+  `probable` model-existence and specification claims per the Pass 3 admission policy. None of
+  the three pages states a manufacturer-declared release date; all "Added:"/crawl-timestamp
+  signals are treated as existed-by upper bounds only, never release dates. The V1/V2 ring
+  piece-count difference is the strongest evidence found this pass for treating the two as
+  distinct design generations (models) rather than a single model with a version-labelled
+  variant; the Jelly LE's 1400-unit-worldwide claim is treated as a quantifiable production-run
+  specification (not marketing superlative) per RESEARCH_SPEC 3.3, and is the only concrete
+  documented-collector-market signal found for this line — see
+  research/qc/p26-5-agent-c-shengshou-crazy-rainbow.md for how this weighs on the
+  scope_class(conditional vs reference_only) question, left as a recommendation for human
+  review rather than decided by this source record.
+status: sourced

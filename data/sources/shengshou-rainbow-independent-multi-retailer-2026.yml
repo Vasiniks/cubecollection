@@ -1,0 +1,95 @@
+# source: shengshou-rainbow-independent-multi-retailer-2026
+# P26-5 Agent C (ShengShou Crazy/Rainbow adjudication). Independence and cross-size-naming
+# corroboration for ShengShou Rainbow 3x3, run specifically because
+# thecubicle-shengshou-other-3x3-lines-2026 and the original Pass 2 finding
+# (research/notes/models/global-pass2-families.md) both rest Rainbow's evidence on a single
+# publisher (TheCubicle) plus one undated tier-4 wiki line. This source records three
+# independent CDX findings: SpeedCubeShop's own 2016 capture (with page text fetched), a
+# Cubelelo (India, non-US/English retailer per RESEARCH_SPEC 3.6a) capture pair from
+# 2016-2017, and TheCubicle's own "Rainbow 2x2" sibling product — none of which any existing
+# source record cites.
+id: shengshou-rainbow-independent-multi-retailer-2026
+entity: source
+kind: retailer
+title: "ShengShou Rainbow 3x3/2x2 — SpeedCubeShop, Cubelelo, and TheCubicle cross-retailer/cross-size corroboration"
+publisher: "SpeedCubeShop"
+url: "http://speedcubeshop.com/products/shengshou-rainbow-3x3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20160108025625/http://speedcubeshop.com/products/shengshou-rainbow-3x3x3"
+excerpt: |-
+  **SpeedCubeShop** (http://speedcubeshop.com/products/shengshou-rainbow-3x3x3, capture
+  2016-01-08, page text fetched directly this pass): "ShengShou Rainbow 3x3x3 is ShengShou's
+  first stickerless cube. This item is a bargain for the amount of performance that you get."
+  Listed price $5.95. Structured product JSON on the page gives a `weight` field of 119
+  (unit not stated on-page; TheCubicle's later, 2020 capture states "Gross Weight 100g" for
+  the same nominal product — the two figures are recorded here as a genuine, unresolved spec
+  discrepancy, not silently reconciled). Image asset carries a cache-buster timestamp
+  corresponding to approximately September 2015; this is a CDN asset-upload signal, not a
+  dated release statement, and is NOT used to set any date field per the Pass 3 admission
+  policy section 3 — recorded only as a lead that the product may have first circulated at
+  this retailer some months before the earliest crawled page.
+
+  **Cubelelo** (India; non-US/English retailer check per RESEARCH_SPEC 3.6a), found via a
+  fresh CDX query of cubelelo.com for "shengshou-rainbow" (not covered by
+  cubelelo-shengshou-products-prefix-2026's earlier unscoped sweep, whose excerpt does not
+  mention Rainbow at all): two distinct captures,
+  `cubelelo.com/classic-cubes/3x3/shengshou-rainbow-3x3-stickerless` (2016-04-08) and
+  `cubelelo.com/2x2/shengshou-rainbow-2x2-stickerless` (2017-08-23, also
+  `/new-arrivals/shengshou-rainbow-2x2-stickerless`, 2017-06-13). The 2016-04-08 3x3 page could
+  not be re-fetched this session (Wayback returned a connection failure on retry); its
+  existence, URL, and date rest on the CDX index record itself, which RESEARCH_SPEC 3.5
+  permits as evidence not reducing to page text. This is a third, independent, non-US/English
+  publisher corroborating the 3x3, and independently corroborates the 2x2 sibling product
+  TheCubicle also carries.
+
+  **TheCubicle "Rainbow 2x2"** (https://www.thecubicle.com/products/shengshou-rainbow-2x2,
+  capture 2019-07-16, page text fetched directly this pass): "ShengShou Rainbow 2x2 is
+  ShengShou's first stickerless 2x2 cube. It delivers solid cubing performance and a vibrant
+  stickerless color scheme while coming at a very low price point." Spec table: Manufacturer
+  ShengShou; Type "2x2"; Dimensions 50.0mm. This confirms "Rainbow" as a cross-puzzle-size
+  ShengShou naming convention (2x2 and 3x3, at minimum), the same naming pattern already
+  documented for Legend/Mr. M/Wind/Aurora across the archive's seven pre-existing ShengShou
+  families. A CDX prefix check of thecubicle.com/products/shengshou-rainbow found no 4x4/5x5/
+  Megaminx/Pyraminx Rainbow SKU; a separate "shengshou-rainbow-ball" product (first capture
+  2022-10-01) is a distinct, non-cube novelty item (a "Rainbow Ball" puzzle) sharing the brand
+  word, not a 3x3x3/2x2 cube sibling — noted for completeness, not treated as part of this
+  cube line.
+
+  **Structural naming check.** A full CDX enumeration of thecubicle.com/products/shengshou*
+  (288 distinct URLs, run fresh this pass) found no "-rainbow" suffix appended to any of the
+  seven other named ShengShou 3x3 family slugs (e.g. no "shengshou-aurora-3x3-rainbow" or
+  similar) — "Rainbow" only ever appears as its own top-level product name
+  (shengshou-rainbow-2x2/-3x3/-ball), structurally identical to how Aurora, Wind, Legend,
+  Mr. M, FangYuan and Pearl are each named, and structurally distinct from this retailer's own
+  variant-suffix convention (e.g. "shengshou-aurora-3x3-unstickered", "shengshou-legend-3x3-
+  unstickered", "shengshou-4x4-v5-unstickered") for marking a stickerless configuration of an
+  existing named line. This is used as evidence against reading "Rainbow" as a stickerless
+  *variant slug* of another ShengShou family, and for reading it as its own distinctly-named
+  product line.
+preservation_note: "SpeedCubeShop and TheCubicle Rainbow-2x2 pages were fetched directly this
+  session; archive_url above points at the SpeedCubeShop 3x3 capture as the single
+  schema-required representative URL. The Cubelelo capture and the two CDX enumerations
+  (thecubicle.com/products/shengshou-rainbow prefix; thecubicle.com/products/shengshou full
+  288-URL prefix) are preserved as reproducible CDX queries per RESEARCH_SPEC 3.5, with their
+  own timestamps quoted in the excerpt above."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue/product-page evidence from three genuinely
+  independent publishers (TheCubicle US, SpeedCubeShop US, Cubelelo India) across three
+  separate domains, SKUs, prices, and capture years (2016, 2016-2017, 2019-2020) —
+  satisfies DATA_MODEL rule 9's independent-tier-2-source bar for `confirmed` product
+  EXISTENCE. The "ShengShou's first stickerless cube" DESCRIPTIVE CLAIM itself is near-
+  identical in wording between SpeedCubeShop (2016) and TheCubicle (2020, per
+  thecubicle-shengshou-other-3x3-lines-2026) and again nearly identical when TheCubicle
+  restates it for the 2x2 sibling — consistent with a single underlying manufacturer/OEM
+  description translated and republished by multiple retailers (RESEARCH_SPEC 3.2: "two
+  listings with identical wording are one source"). Confidence on the SIGNIFICANCE claim
+  itself ("first stickerless cube") is therefore recorded no higher than `probable`, while
+  confidence on bare product EXISTENCE, across genuinely distinct listings, is `confirmed`.
+  The two weight figures (100g TheCubicle vs 119 SpeedCubeShop, units unstated on the latter)
+  are left as an unresolved discrepancy rather than reconciled by assumption.
+status: sourced
