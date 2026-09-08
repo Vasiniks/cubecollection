@@ -1,0 +1,57 @@
+# source: cubetwist-com-2010-official-site
+# P26-5 Agent A (CubeTwist 3x3x3 adjudication). Independent tier-1 discovery: cubetwist.com
+# was a real, operating first-party manufacturer website (Guangzhou, China) from at least
+# 2009 through late 2011, not merely a retailer-side product-title prefix. The site's own
+# top-level navigation names "三阶梯色魔方" ("3rd-order/3x3x3 CubeTwist Magic Cube") as a
+# first-class product category, structurally parallel to its "二阶" (2x2x2), "四阶" (4x4x4),
+# and "七阶" (7x7x7) categories, and separate from its own "异形梯色魔方" ("shaped/novelty
+# CubeTwist Magic Cube") category -- i.e. the manufacturer's own catalogue draws exactly the
+# line this archive draws between a standard 3x3x3 line and CubeTwist's novelty/shape-mod
+# catalogue. This resolves the family-vs-model / line-identity question at tier 1: the 3x3x3
+# line is the manufacturer's own declared category, not a retailer's incidental filing choice.
+id: cubetwist-com-2010-official-site
+entity: source
+kind: manufacturer_official
+tier: 1
+title: "cubetwist.com -- official CubeTwist ('梯色魔方') manufacturer site, product category navigation"
+publisher: "CubeTwist (梯色魔方)"
+url: "http://cubetwist.com/product/product.php?class1=7"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20101119010220id_/http://cubetwist.com/product/product.php?class1=7"
+excerpt: |-
+  Page title: "梯色魔方三阶原色--cubetwist梯色魔方|梯色魔方--梯色魔方--Powered by MetInfo" --
+  directly pairs the Latin brand name "cubetwist" with the Chinese brand name "梯色魔方" in
+  the site's own <title> tag. Top-level site navigation (product.php?class1=7): "二阶梯色魔方"
+  (2nd-order CubeTwist Magic Cube), "三阶梯色魔方" (3rd-order/3x3x3 CubeTwist Magic Cube),
+  "四阶梯色魔方" (4th-order), "七阶梯色魔方" (7th-order), "异形梯色魔方" (shaped/novelty
+  CubeTwist Magic Cube -- a separate category from the 3x3x3 line), "梯色魔板" (CubeTwist
+  puzzle board), "梯色贴纸" (CubeTwist stickers), "梯色魔方配件" (CubeTwist cube parts/
+  accessories), "梯色魔方教程" (CubeTwist cube tutorials). The "三阶梯色魔方" nav link resolves
+  to `product.php?class1=7&class2=28`. Footer: "梯色魔方 版权所有 2009-2010 / 地址：广州市越秀区
+  一德西路国际玩具城4009室 / 邮编：510220 / 电话：020-84432974 / QQ:1012322998 /
+  Email:cubebbs@gmail.com" (CubeTwist, all rights reserved 2009-2010; address: Room 4009,
+  International Toy City, Yide Road West, Yuexiu District, Guangzhou; phone, QQ, and email
+  contacts given).
+accessed: "2026-09-08"
+language: zh
+region: CN
+link_status: dead
+last_checked: "2026-09-08"
+reliability_note: |-
+  Tier 1, first-party manufacturer source. cubetwist.com's root domain was independently
+  confirmed live and content-bearing (not merely registered) across multiple Wayback captures
+  from 2010-06-26 through 2011-10-22 -- the 2011-10-22 capture (`archive.org/web/20111022221235/
+  http://www.cubetwist.com:80/`) still shows a live banner-ad storefront with contact details
+  (MSN cubetwist@hotmail.com, Skype cubetwist1, QQ 549900658). By 2012-01-04 the domain begins
+  returning HTTP 302s, and every capture from 2014 onward (checked through 2021) is a parked-
+  domain landing page ("cubetwist.com -- For search results please CLICK HERE / Inquire about
+  this domain"); as of this session's live check (2026-09-08) the domain redirects to a
+  domain-marketplace listing (atom.com), i.e. it has been squatted/resold and is not a current
+  first-party presence. Treated as `link_status: dead` accordingly -- the citation is to the
+  preserved 2010 capture, not the live domain. This is the only first-party CubeTwist source
+  found anywhere in this archive's CubeTwist research to date (the frozen `cubetwist.yml`
+  manufacturer record's own attestations record `/website: unknown, "No domain checked or
+  located this pass"` -- this source fills that gap). The 2010-07-28 "更新时间" (last-updated)
+  timestamp on the companion product page (see `cubetwist-com-2010-3x3-listing`) corroborates
+  the site was under active content maintenance at that date, not a dormant placeholder.
+status: sourced
