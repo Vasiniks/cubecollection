@@ -1,0 +1,36 @@
+# source: cubezz-haitun-zhanlang-v2-flagship-2026
+# DECISIVE EVIDENCE for P3-T4 adjudication (pass 2.6, Agent B), paired with
+# `cubezz-haitun-waverider-v2-flagship-2026`. Archived Cubezz.com capture of product ID 8598,
+# SKU HTO02C, dated 2026-02-08, titled "HAITUN ZhanLang V2 3x3x3 Speed Cube Flagship Version."
+# The later 2026-05-10 capture of the SAME product ID and SAME SKU is titled "HAITUN Waverider
+# V2 3x3x3 Speed Cube Flagship Version" with an identical 56x56x56mm/72g spec block — the
+# clearest single pair of captures proving ZhanLang and Waverider V2 are the same retailer
+# listing under two names over time, not two products. See
+# `research/qc/pass2.6-agent-b-haitun.md`.
+id: cubezz-haitun-zhanlang-v2-flagship-2026
+entity: source
+kind: retailer
+title: "HAITUN ZhanLang V2 3x3x3 Speed Cube Flagship Version - Cubezz.com (archived 2026-02-08)"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-8598-HAITUN+ZhanLang+V2+3x3x3+Speed+Cube+Flagship+Version.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260208173621id_/https://cubezz.com/Buy-8598-HAITUN+ZhanLang+V2+3x3x3+Speed+Cube+Flagship+Version.html"
+excerpt: |-
+  "HAITUN ZhanLang V2 3x3x3 Speed Cube Flagship Version. 'ZhanLang' - cut through the waves."
+  SKU: HTO02C. Specifications: "Brand: HAITUN CUBE (Dolphin) / Color: Stickerless / Size:
+  56*56*56 mm / Weight: 72 g."
+preservation_note: "Live-checked 2026-09-07: this exact URL now 200s but serves the
+  renamed 'Waverider' title/content at the same product ID and SKU (Cubezz's URL routing
+  ignores the slug text) - hence `link_status: altered` rather than `dead`. Retrieved via
+  `scripts/wayback.mjs get` (CDX-verified capture at
+  20260208173621); archive_url preservation."
+accessed: "2026-09-07"
+language: en
+region: CN
+link_status: altered
+last_checked: "2026-09-07"
+reliability_note: "Tier 2, first-party retailer spec block. SKU HTO02C and product ID 8598 are
+  identical to `cubezz-haitun-waverider-v2-flagship-2026`, captured three months later under a
+  different title with identical specs — proof of an in-place retailer rename, not two
+  products."
+status: sourced
