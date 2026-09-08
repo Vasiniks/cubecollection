@@ -3,6 +3,12 @@
 **Run:** 2026-09-07 · **Baseline:** `48cb686` · **Lanes:** 5 (all Sonnet 5, isolated worktrees)
 **Taxonomy mutated:** **NONE.** Families 122, models 253, variants 104, entities 54 — unchanged.
 
+> **UPDATE 2026-09-08 — the remediation this document recommended has since been AUTHORISED and
+> APPLIED.** Four families were added (122 → 126) with five models; see
+> `research/qc/pass2.6-remediation-record.md`. Issue `P26-1` is resolved. **Everything below
+> describes the sweep as it stood when run, and is left unchanged as the record of how the gap
+> was found.** Pass 4 remains blocked on `P26-5`, `P26-6`, `P26-3` and `P26-2`.
+
 ## Why this pass ran
 
 Pass 3 completed model enumeration across all 122 frozen families, and in doing so surfaced two

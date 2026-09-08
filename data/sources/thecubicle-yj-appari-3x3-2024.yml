@@ -32,8 +32,9 @@ last_checked: "2026-09-07"
 reliability_note: |-
   Tier 2, first-party retailer product page with a structured spec table, describing a named,
   distinct mechanism ("speed-enhancing ball bearings" in an "innovative washer") not shared
-  with any of the 9 existing YJ 3x3 families (Chilong, Guanlong, JinJiao, Meta, MGC, Ruilong,
-  Sulong, Yulong, Zhilong). Sufficient for `probable` model-existence per the Pass 3 admission
+  with any of the 9 YJ 3x3 families that existed when this was written (Chilong, Guanlong,
+  JinJiao, Meta, MGC, Ruilong, Sulong, Yulong, Zhilong) — which is why `yj-appari` was created
+  as a tenth by the Pass 2.6 remediation (ledger P26-1, 2026-09-08). Sufficient for `probable` model-existence per the Pass 3 admission
   policy; `confirmed` reachable once combined with the two further independent retailers (see
   speedcubeshop-yj-appari-3x3-2024, cubelelo-yj-products-prefix-2026), which describe the same
   mechanism in different wording ("Speed Micro Actuator" at SpeedCubeShop vs "Speed Micro

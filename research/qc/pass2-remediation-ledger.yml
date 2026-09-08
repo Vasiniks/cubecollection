@@ -9,13 +9,13 @@
 # severity: critical | high | medium | low
 
 meta:
-  baseline_sha: "48cb686"
-  updated: "2026-09-07"
-  phase: "Pass 2.6 complete - family-gap sweep run; 122-family taxonomy NOT safe to freeze; Pass 4 blocked"
+  baseline_sha: "c983063"
+  updated: "2026-09-08"
+  phase: "Pass 2.6 remediation applied - 4 established families added (122 -> 126); Pass 4 still blocked on P26-5/P26-6"
   counts:
     entities: 54
-    families: 122
-    models: 253
+    families: 126
+    models: 258
     variants: 104
     sources: 460
 
@@ -723,7 +723,7 @@ issues:
 
   - id: P26-1
     severity: critical
-    status: needs_human_decision
+    status: resolved
     title: "Four missing families established; the 122-family taxonomy is not safe to freeze"
     category: taxonomy-completeness
     affected_records: "none mutated - families remain frozen at 122"
@@ -748,7 +748,7 @@ issues:
       is a variant subtree that cannot be enumerated. YuFeng's two generations and Appari's
       mechanism both carry configuration tiers that are exactly Pass 4's subject matter.
     owner: main
-    last_updated: "2026-09-07"
+    last_updated: "2026-09-08"
 
   - id: P26-2
     severity: critical
@@ -905,3 +905,65 @@ issues:
     downstream_impact: "None. Improves discoverability of an already-correct record."
     owner: main
     last_updated: "2026-09-07"
+
+  # ---- Pass 2.6 remediation (2026-09-08): the authorised taxonomy mutation ----
+
+  - id: P26-8
+    severity: high
+    status: open
+    title: "P26-2 recurred twice more during the remediation itself"
+    category: process
+    affected_records: "none - process finding"
+    evidence: >-
+      Both independent review lanes dispatched to verify this remediation (an adversarial scope
+      review and a repository consistency audit) died to API errors before writing their
+      reports. Their worktrees were inspected under the established recovery pattern and
+      contained zero commits and zero uncommitted files - nothing was recoverable, exactly as
+      with the Pass 3 Batch 1 lanes C and D. Both audits were then completed directly by the
+      adjudicator instead. This is the third and fourth occurrence of the P26-2 failure mode in
+      two sessions, and the first observed on a lane whose only output was ever going to be a
+      report.
+    counterevidence: >-
+      No canonical data was lost in any of the four occurrences - only narrative. The records
+      themselves have always survived, because agents commit at logical boundaries.
+    recommendation: >-
+      Strengthens the P26-2 remediation case and narrows it: the fix must protect REPORTS
+      specifically, since records already survive. Require an agent to commit a report skeleton
+      with its findings-so-far at each checkpoint rather than writing the report last. A lane
+      whose entire deliverable is a document should never hold that document only in context.
+    confidence: confirmed
+    downstream_impact: >-
+      Directly cost this session two independent reviews. The checks were mechanical enough to
+      redo by hand; a research lane would not have been.
+    owner: main
+    last_updated: "2026-09-08"
+
+  - id: P26-9
+    severity: medium
+    status: open
+    title: "Four newly created families inherit the archive-wide thin-dating problem"
+    category: evidence-quality
+    affected_records:
+      - data/families/fangshi-jieyun.yml
+      - data/families/shengshou-yufeng.yml
+      - data/families/yj-appari.yml
+    evidence: >-
+      Only fangshi-guangying carries a real dated statement ("New January 2015 release", and
+      even that is contested between probable and reported - the disagreement is recorded in
+      the record itself). The other three carry `qualifier: before` circulation bounds derived
+      from earliest Wayback captures, which bound page existence only. This matches the
+      archive-wide measurement taken during Pass 2.6: 82 of 122 families rested on a single
+      source for `introduced`, 29 had no date at all, and only 5 were `confirmed`.
+    counterevidence: >-
+      Every bound is explicitly labelled a circulation bound in its own attestation note, and no
+      retailer "Added:" field was used anywhere. The records are honest about what they do not
+      know; the weakness is in the available evidence, not in its representation.
+    recommendation: >-
+      Do not treat as a blocker. Chase first-party or dated press evidence for all four when a
+      later pass has Chinese-language search available - the FangShi first-party source has now
+      eluded five consecutive passes.
+    confidence: confirmed
+    downstream_impact: >-
+      Minimal for Pass 4: variants attach to models, not to family introduction dates.
+    owner: main
+    last_updated: "2026-09-08"

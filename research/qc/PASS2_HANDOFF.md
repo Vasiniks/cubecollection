@@ -394,3 +394,73 @@ Adjudicate P26-1 (create the 4 families + models), then P26-4/P26-5/P26-6, then 
 retroactively, close P26-2, re-freeze, and re-enter the Pass 4 gate.
 
 **Pass 4 remains NOT STARTED. Variants remain at 104.**
+
+---
+
+# PASS 2.6 REMEDIATION APPLIED (2026-09-08)
+
+**Record: `research/qc/pass2.6-remediation-record.md`.** Authorised by ledger `P26-1`, which is
+now **resolved**. The 122-family freeze was lifted **once, for exactly four families**.
+
+## What changed
+
+| | Before | After |
+|---|---|---|
+| families | 122 | **126** |
+| models | 253 | **258** |
+| variants | 104 | **104 — unchanged** |
+| manufacturers | 54 | **54 — unchanged** |
+| sources | 460 | **460 — unchanged** |
+| families with models | 119 of 122 | **123 of 126** |
+| zero-model families | 3 | **3 — same three** |
+
+**Added:** `fangshi-guangying` · `fangshi-jieyun` · `shengshou-yufeng` · `yj-appari`, with models
+`fangshi-guangying-original`, `fangshi-jieyun-original`, `shengshou-yufeng-original`,
+`shengshou-yufeng-v2`, `yj-appari-original`.
+
+**CubeTwist was NOT added.** `P26-1` authorises four; CubeTwist is `P26-4`/`P26-5`, a credible
+candidate at `probable`, not an established family. It remains open as a separate decision.
+
+**No model was reassigned** — none existed for any of the four lines. Purely additive.
+
+## Model reconciliation: complete
+
+Every `family_id` and `manufacturer_id` resolves. All 12 `successor_family_id` values resolve.
+No duplicate ids, no dangling attestation sources. `npm run check` green: 0 errors, the same 5
+pre-existing advisories, **no new rule-40 firing**. Exactly 13 files changed.
+
+The FangShi lineage is now complete and machine-readable:
+**ShuangRen → ShuangRen V2 → GuangYing → JieYun.**
+
+## Pass 3 status
+
+**Complete as reconciled against the current 126-family taxonomy** — not against one that still
+has open candidates.
+
+## Pass 4: STILL BLOCKED
+
+Adding four families closed `P26-1`, not the gap. Remaining blockers:
+
+- **`P26-5`** — 7 credible candidates (CubeTwist, DaYan Bermuda, five ShengShou lines)
+- **`P26-6`** — 11 unverified leads (6 Cyclone Boys, 4 Maru, Cubelelo Drift)
+- **`P26-3`** — §3.6a never applied retroactively to the family register
+- **`P26-2`/`P26-8`** — escalation roll-up still unmechanised
+
+## `P26-8`: the roll-up defect recurred twice more, during this very remediation
+
+Both independent review lanes dispatched to verify this work **died to API errors before writing
+their reports**, leaving nothing recoverable — the third and fourth occurrence in two sessions.
+Both audits were completed directly instead.
+
+This **narrows** the `P26-2` fix usefully: canonical records already survive these kills, because
+agents commit at boundaries. It is **reports** that die. A lane whose entire deliverable is a
+document must commit a skeleton with findings-so-far at each checkpoint rather than writing it
+last.
+
+## Next decision
+
+**`P26-5`** — starting with CubeTwist, the strongest of the seven, since it overturns a written
+zero-family conclusion. Then `P26-6`, then apply §3.6a retroactively, close `P26-2`, re-freeze,
+and re-enter the Pass 4 gate.
+
+**Pass 4 remains NOT STARTED. Variants remain at 104.**

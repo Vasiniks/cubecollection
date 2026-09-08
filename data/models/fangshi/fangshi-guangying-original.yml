@@ -44,7 +44,10 @@ attestations:
       admission policy §3 accepts, contemporaneous with a 2015-03-16 capture and consistent
       with Cubezz's independent 2015-02-05 first capture. Not a crawl timestamp and not an
       'Added:' field. The caveat stands: retailer marketing prose, single source, no first-party
-      FangShi source exists in any language."
+      FangShi source exists in any language. The source record itself recommends
+      `reported` rather than `probable`; see the fuller note on the family record's /introduced
+      for why the tier-based vocabulary definition was followed instead, and why that
+      disagreement is recorded rather than resolved silently."
   /specs/size_mm:
     confidence: confirmed
     sources: [thecubicle-fangshi-guangying, cubezz-fangshi-guangying]

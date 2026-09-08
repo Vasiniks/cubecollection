@@ -1,24 +1,24 @@
 # Pass 3 — model enumeration progress
 
-**Updated:** 2026-09-07 (Pass 2.6) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
-**Status: enumeration COMPLETE. Closure BLOCKED — see Pass 2.6 below. Pass 4 NOT safe to begin.**
+**Updated:** 2026-09-08 (Pass 2.6 remediation applied) · **Policy:** `research/qc/pass3-admission-policy.md` (the S6 decision)
+**Status: 4 established families ADDED (122 -> 126). Pass 3 reconciled against them. Pass 4 STILL BLOCKED — see below.**
 
 ## Invariants (verified at this commit)
 
 | | Frozen at | Now | |
 |---|---|---|---|
 | entities | 54 | **54** | ✓ |
-| families | **122 — FROZEN** | **122** | ✓ |
+| families | 122 (frozen) | **126** | +4 by authorised P26-1 remediation |
 | variants | **104 — Pass 4, must not change** | **104** | ✓ |
-| models | 48 at Pass 3 start | **253** | +205 |
+| models | 48 at Pass 3 start | **258** | +205 Pass 3, +5 remediation |
 | sources | 289 at Pass 3 start | **460** | +171 (+24 in Pass 2.6) |
 
-Verified programmatically across all 253 models: every `family_id` resolves, every model's
+Verified programmatically across all 258 models: every `family_id` resolves, every model's
 `manufacturer_id` matches its family's, every model carries `scope_class`, no duplicate ids.
 
-`scope_class`: **core 232 · reference_only 12 · conditional 9**
+`scope_class`: **core 237 · reference_only 12 · conditional 9**
 
-## Coverage — 119 of 122 families have models
+## Coverage — 123 of 126 families have models
 
 | Batch | Scope | Models |
 |---|---|---|
@@ -26,6 +26,7 @@ Verified programmatically across all 253 models: every `family_id` resolves, eve
 | **2** | YuXin · DianSheng+MFJS · CycloneBoys+Maru · Rubik's cluster | 51 |
 | **3** | Smart cubes · Historic makers · MF8/HuaMeng/ESCube · MoYu sub-brands+NewIsland | 33 |
 | **4** | Final seven families | 13 |
+| **R** | **Pass 2.6 remediation** — the 4 established missing families | **5** |
 
 ## The 3 remaining zero-model families — all documented conclusions
 
@@ -100,10 +101,32 @@ mechanism** (ledger `P26-2`). Two independent failures:
 **The defective step is the roll-up, not the research.** Every finding was made correctly and
 written down honestly.
 
-### Pass 4 gate: **NOT SAFE TO BEGIN**
+### Pass 4 gate: **STILL NOT SAFE TO BEGIN**
 
-Four established missing families are four variant subtrees Pass 4 cannot enumerate. This is a
-completeness blocker, not a correctness one — no existing record is invalidated.
+**Update 2026-09-08 — the four established families have been added** under the authorised
+`P26-1` remediation (`research/qc/pass2.6-remediation-record.md`): `fangshi-guangying`,
+`fangshi-jieyun`, `shengshou-yufeng`, `yj-appari`, with five models. **That closed `P26-1`, not
+the gap.**
+
+Model reconciliation for the new layer is **complete**: no model needed reassigning, because
+none existed for any of the four lines — the only prior references were escalation flag
+comments. All five models are new, none duplicated. Every family_id and manufacturer_id
+resolves; 123 of 126 families now have models; the same three zero-model families remain.
+
+**Pass 3 is complete as reconciled against the current 126-family taxonomy.** It is not
+complete against a taxonomy that still has open candidates.
+
+**What still blocks Pass 4:**
+
+| Issue | Blocker |
+|---|---|
+| `P26-5` | **7 credible candidates** — CubeTwist (overturns a written zero-family finding) and six others, five of them ShengShou lines from one under-swept channel |
+| `P26-6` | **11 unverified leads** — 6 Cyclone Boys, 4 Maru, Cubelelo Drift |
+| `P26-3` | §3.6a never applied retroactively to the family register |
+| `P26-2` / `P26-8` | Escalation roll-up still has no mechanism — it recurred twice more during the remediation itself |
+
+Each unresolved candidate is a potential variant subtree Pass 4 would silently miss. Adding four
+families does not change that; it removes four instances of it.
 
 ## Review items carried forward
 

@@ -66,7 +66,16 @@ attestations:
       would contradict a later one. Recorded `probable` per the confidence vocabulary's rule
       for one uncontradicted tier 2 source. The honest caveat: this is retailer marketing prose
       rather than a manufacturer announcement, and no first-party FangShi source exists for any
-      product, in any language, after five passes of searching."
+      product, in any language, after five passes of searching.
+
+      A DISAGREEMENT RECORDED RATHER THAN BURIED: the source record's own reliability_note
+      recommends this date be held 'at no higher than `reported` confidence (a single tier 2
+      source, marketing-toned, uncorroborated by any other source)'. This record uses
+      `probable` instead, because vocab/confidence.yml defines the scale by SOURCE TIER and
+      corroboration, not by tone - `probable` is 'One Tier 2 source, uncontradicted', while
+      `reported` is defined as 'Tier 3 source'. Recording a tier 2 source's claim as `reported`
+      would misstate the tier. A reader who prefers the source author's more cautious reading
+      should treat this as `reported`; the disagreement is substantive and is left visible."
   /positioning:
     confidence: probable
     sources: [thecubicle-fangshi-guangying, speedcube-com-au-fangshi-guangying]
