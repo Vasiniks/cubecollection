@@ -1,0 +1,78 @@
+# model: dayan-bermuda-triangle
+# P26-5 remediation (ledger P26-10, tranche 1). One of five parallel sub-products named by DaYan's
+# own 2012 category page. No `generation` is set: these are concurrent products, not a sequence —
+# the witeden-mixup-3x3 precedent (four concurrent moulds, one family, generation unset).
+id: dayan-bermuda-triangle
+entity: model
+family_id: dayan-bermuda
+manufacturer_id: dayan
+name: "DaYan Bermuda Triangle"
+aliases:
+  - "DaYan Bermuda Cube (Earth/Jupiter/Mars/Mercury/Neptune/Saturn/Uranus/Venus)"
+scope_class: conditional
+scope_justification: |-
+  "Bandaged" cubes are a recognised, named twisty-puzzle mechanism category with documented
+  permutation-group significance, not a marketing label — the same basis on which this archive
+  already admits calvins-bandaged-3x3-maze-300. This line clears the RESEARCH_SPEC §2.2 bar on
+  two independent grounds. First, a documented place in the manufacturer's own history: DaYan gave
+  Bermuda its own top-level product category on its own site in 2012
+  (dayancube-official-bermuda-category-2012, tier 1), beside the GuHong/LingYun/LunHui/ZhanChi
+  flagship line — not a one-off SKU but a named line the maker itself promoted. Second, a
+  documented multi-year, multi-retailer collector market: TheCubicle carried the series from 2019
+  to 2026 and Cubelelo from 2020 to 2025+, independently, more than a decade after the
+  manufacturer's own captures. Significance here is documented, not asserted — this record does
+  not rest on the puzzle being unusual or interesting.
+scope_decided_by: "P26-5 adjudication, main session"
+scope_decided_on: "2026-09-08"
+description: |-
+  The cube-shaped member of the line, and the one sold most widely. DaYan's own catalogue lists it under eight planet names, each in Black and White.
+
+  Those sixteen listings are COLOURWAYS OF THIS ONE MODEL and are pass 4 variant material, not separate models — retailers simplify the manufacturer's 'Bermuda Triangle [planet]' to 'Bermuda Cube [planet]'.
+status: sourced
+
+attestations:
+  /scope_justification:
+    confidence: probable
+    sources: [dayancube-official-bermuda-category-2012, thecubicle-dayan-bermuda-cube-2020]
+    note: "Tier 1 for the manufacturer-history ground (DaYan's own top-level category), tier 2
+      for the bandaging mechanism description and the multi-year retail circulation. Either
+      ground is independently sufficient under §2.2."
+  /name:
+    confidence: confirmed
+    sources: [dayancube-official-bermuda-category-2012]
+    note: "Named directly by the manufacturer's own category page."
+  /description:
+    confidence: reported
+    sources: [thecubicle-dayan-bermuda-cube-2020]
+    note: "The shape description is held at `reported`, deliberately. It derives from product
+      photography viewed during adjudication but NEVER PRESERVED as a citable source — no
+      archive_url, no image excerpt. The manufacturer's own naming and TheCubicle's 'variety of
+      common 3x3 puzzles and shape-mods' phrasing support it, but no archived source states the
+      geometry directly. Not asserted as fact; flagged for a future pass to preserve or correct."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The manufacturer's earliest capture is 2012-06-04 and the
+      family carries that as a circulation bound; no release statement exists on any source, and
+      a Wayback timestamp is not promoted into one."
+  /specs/size_mm:
+    confidence: unknown
+    note: "Searched and not found. Neither DaYan's own 2012/2013 pages nor any retailer listing
+      located for this line gives a dimension. The manufacturer's product pages are a company
+      showcase carrying generic templated copy with no spec table."
+  /specs/weight_g:
+    confidence: unknown
+    note: "Searched and not found, same sources."
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. The bandaging is described at the piece level; no source
+      describes the core."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found. A 2012 bandaged puzzle long predates MagLev, but no source
+      states its absence and it is not inferred false from the date."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No source mentions magnets for any Bermuda product."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."

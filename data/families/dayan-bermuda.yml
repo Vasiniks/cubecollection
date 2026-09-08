@@ -1,0 +1,84 @@
+# family: dayan-bermuda
+# P26-5 remediation (ledger P26-10, tranche 1 / confirmed, authorised 2026-09-08).
+# See research/qc/p26-5-family-adjudication.md and research/qc/p26-5-agent-b-bermuda.md.
+#
+# DaYan's own 2012 site carries "Dayan Bermuda Cube" as a TOP-LEVEL product category beside the
+# numbered flagship line, with five officially-named sub-products under it. That is
+# manufacturer-declared line structure, and it is why this is a family rather than a product.
+
+id: dayan-bermuda
+entity: family
+manufacturer_id: dayan
+name: "DaYan Bermuda"
+aliases:
+  - "Dayan Bermuda Cube"
+  - "DaYan Bermuda Triangle"
+introduced:
+  value: "2012"
+  precision: year
+  qualifier: before
+positioning: special
+description: |-
+  A bandaged 3x3x3 line: ordinary and shape-modified 3x3 bodies with certain pieces fused so
+  each turns differently. TheCubicle's own description: "The DaYan Bermuda series features a
+  variety of common 3x3 puzzles and shape-mods but with certain parts 'bandaged' to make each of
+  them a unique challenge to solve" (thecubicle-dayan-bermuda-cube-2020).
+
+  DaYan's own 2012 category page (dayancube-official-bermuda-category-2012, tier 1) lists
+  "Dayan Bermuda Cube" in its main product navigation alongside "Dayan Crazy Cube / DaYan II
+  GuHong / DaYan III LingYun / DaYan IV LunHui / DaYan V ZhanChi / DaYan Gem Cube" — a top-level
+  category, not a sub-item of the flagship line. Under it, five officially-named sub-products:
+
+  - **Bermuda Triangle** — sold as eight planet names (Earth, Jupiter, Mars, Mercury, Neptune,
+    Saturn, Uranus, Venus), each in Black and White. Those sixteen listings are **colourways of
+    one product** and are pass 4 variant material, not models.
+  - **Bermuda House I** · **Bermuda House II** · **Bermuda Column** · **Bermuda Star** — four
+    further officially-named sub-products, each in Black and White.
+
+  A 2013 individual product page shows Column and Triangle cross-linked as concurrently-sold
+  siblings, so these are **parallel products, not a generation sequence**. No `generation` is set
+  on any of the five, following the archive's `witeden-mixup-3x3` precedent (four concurrent
+  moulds under one family, generation deliberately unset).
+
+  **What is NOT established, recorded honestly.** The five sub-products are manufacturer-named,
+  which is what this family rests on. The stronger claim — that House I, House II, Column and
+  Star are four *visually distinct exterior moulds* — was formed by a researcher viewing
+  TheCubicle product photography that **was never preserved as a citable source**. The names
+  themselves and TheCubicle's "variety of ... puzzles and shape-mods" phrasing support it, but no
+  archived image comparison backs it, so the geometry descriptions on the individual model
+  records are attested at `reported`, not asserted as fact. A future pass should preserve the
+  photography or find a source that states the shapes directly.
+
+  Retailer circulation runs well past the manufacturer's own captures: TheCubicle 2019–2026 and
+  Cubelelo 2020–2025+, independently, with distinct product ids per shape and different slug
+  conventions — checked for the retailer-rename failure mode that produced the HaiTun/ZhanLang
+  false positive, and clear of it.
+status: sourced
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [dayancube-official-bermuda-category-2012, dayancube-official-2013]
+    note: "Two tier 1 manufacturer_official captures. The 2012 category page names the line and
+      its five sub-products; the 2013 product list names 'Dayan Bermuda Cube' again alongside the
+      flagship line. `confirmed` per vocab/confidence.yml's tier 1 clause."
+  /introduced:
+    confidence: probable
+    sources: [dayancube-official-bermuda-category-2012]
+    note: "A BOUND, NOT A RELEASE DATE. The earliest manufacturer capture is 2012-06-04, which
+      establishes only that the line existed and was published by then. No release statement
+      appears on any source. `qualifier: before` per the Pass 3 admission policy §3."
+  /positioning:
+    confidence: probable
+    sources: [dayancube-official-bermuda-category-2012, thecubicle-dayan-bermuda-cube-2020]
+    note: "A bandaged puzzle line sitting outside DaYan's numbered speed lineage, given its own
+      top-level category by the manufacturer — `special`, matching how this archive positions
+      mf8-crazy-3x3x3 and calvins-crazy-3x3."
+  /aliases:
+    confidence: probable
+    sources: [dayancube-official-bermuda-category-2012, thecubicle-dayan-bermuda-cube-2020]
+    note: "Retailers simplify the manufacturer's own 'Bermuda Triangle [planet]' naming to
+      'Bermuda Cube [planet]'. Both forms recorded so either resolves."
+  /description:
+    confidence: probable
+    sources: [dayancube-official-bermuda-category-2012, thecubicle-dayan-bermuda-cube-2020, cubelelo-dayan-products-prefix-2026]

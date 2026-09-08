@@ -1,0 +1,63 @@
+# model: cubetwist-3x3-standard
+# P26-5 remediation (ledger P26-10, tranche 1). Created with its family; no prior record existed
+# for any CubeTwist 3x3. The line's colourways (原色 / 黑面 / 白面) and its DIY loose-parts kit are
+# PASS 4 VARIANT material per the cube4you-3x3 precedent, not separate models.
+id: cubetwist-3x3-standard
+entity: model
+family_id: cubetwist-3x3
+manufacturer_id: cubetwist
+name: "CubeTwist 3x3"
+aliases:
+  - "CubeTwist Speed 3x3x3 Magic Cube"
+scope_class: core
+specs:
+  size_mm: 57.0
+  weight_g: 94.0
+description: |-
+  The only model of the line. Cubezz's own spec block gives 57mm and 94g
+  (cubezz-cubetwist-speed-3x3), filed under that retailer's dedicated 3x3x3 WCA category, and
+  Lightake carried the same product from 2011 (lightake-cubetwist-speeding-3x3).
+
+  A standard-mould, plain-sticker 3x3 with no magnets and no adjustment system described by any
+  source. `scope_class: core` — the manufacturer's own site files it in its standard-cube
+  category, explicitly apart from its 异形 (shaped/novelty) line, and nothing found suggests it
+  is anything other than an ordinary WCA-form 3x3x3.
+
+  **No release date.** The manufacturer's page-update timestamps bound page revision only; the
+  family carries a `before 2010` bound and it is deliberately not restated here.
+status: sourced
+
+attestations:
+  /specs/size_mm:
+    confidence: probable
+    sources: [cubezz-cubetwist-speed-3x3]
+    note: "One retailer's structured spec block. Lightake mirrors Cubezz's SKUs and so is not
+      independent on specifications per RESEARCH_SPEC §3.2 — `probable`, not `confirmed`."
+  /specs/weight_g:
+    confidence: probable
+    sources: [cubezz-cubetwist-speed-3x3]
+  /specs/core_system:
+    confidence: unknown
+    note: "Searched and not found. Neither the manufacturer's own showcase pages nor any
+      retailer listing describes the core or tensioning system."
+  /specs/maglev:
+    confidence: unknown
+    note: "Searched and not found. A 2010-era budget cube long predates MagLev, but no source
+      states its absence and it is not inferred false from the date."
+  /specs/magnet_architecture:
+    confidence: unknown
+    note: "Searched and not found. No source mentions magnets for any CubeTwist 3x3."
+  /specs/adjustment_system:
+    confidence: unknown
+    note: "Searched and not found."
+  /released:
+    confidence: unknown
+    note: "Researched and not found. The manufacturer's own 更新时间 fields (2010-06-07,
+      2010-07-28) are page-revision timestamps, and Wayback captures bound circulation only.
+      No release statement exists in any language on any source located."
+  /description:
+    confidence: probable
+    sources: [cubezz-cubetwist-speed-3x3, cubetwist-com-2010-3x3-listing]
+  /aliases:
+    confidence: probable
+    sources: [cubezz-cubetwist-speed-3x3]

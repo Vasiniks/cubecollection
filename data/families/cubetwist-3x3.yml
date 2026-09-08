@@ -1,0 +1,84 @@
+# family: cubetwist-3x3
+# P26-5 remediation (ledger P26-10, tranche 1 / confirmed, authorised 2026-09-08).
+# Established by the P26-5 adjudication — see research/qc/p26-5-family-adjudication.md and
+# research/qc/p26-5-agent-a-cubetwist.md.
+#
+# This family OVERTURNS a frozen conclusion. data/manufacturers/cubetwist.yml states "No standard
+# WCA-legal 3x3 was found under the CubeTwist name this pass" and classes the brand a novelty
+# specialist. CubeTwist's OWN site disproves that: its product navigation carries 三阶梯色魔方
+# (3x3x3) as a category distinct from 异形梯色魔方 (shaped/novelty). The manufacturer itself draws
+# the line the frozen record said did not exist. Ledger P26-4.
+
+id: cubetwist-3x3
+entity: family
+manufacturer_id: cubetwist
+name: "CubeTwist 3x3"
+aliases:
+  - "梯色魔方三阶"
+  - "CubeTwist Speed 3x3x3"
+  - "CubeTwist Speeding Magic Cube"
+introduced:
+  value: "2010"
+  precision: year
+  qualifier: before
+positioning: budget
+description: |-
+  CubeTwist's standard 3x3x3 line, distinct from the shape-mod and novelty products that
+  dominate the brand's retailer presence and that led an earlier pass to class it a novelty
+  specialist.
+
+  The manufacturer's own site (cubetwist-com-2010-official-site, tier 1) pairs the Latin brand
+  name with the Chinese 梯色魔方 in its own page title, gives a Guangzhou address, and lists as
+  parallel top-level product categories: 二阶梯色魔方 (2x2), **三阶梯色魔方 (3x3x3)**, 四阶梯色魔方
+  (4x4), 七阶梯色魔方 (7x7), and — separately — 异形梯色魔方 (shaped/novelty). That separation is
+  manufacturer-declared, not retailer inference, and it is the evidence this family rests on.
+
+  Under the 3x3x3 category (cubetwist-com-2010-3x3-listing, tier 1): 三阶原色 (original colour),
+  三阶黑面 (black face), 三阶白面 (white face) and 三阶DIY散件 (a DIY loose-parts kit). Those are
+  colourways and an assembly-state choice — **pass 4 variant material**, not separate models, per
+  the archive's own `cube4you-3x3` precedent.
+
+  Commercially the line reaches well into the archive's window: Cubezz carried it from 2015
+  through at least 2026 (cubezz-cubetwist-speed-3x3, 57mm/94g), Lightake from 2011
+  (lightake-cubetwist-speeding-3x3), and SpeedCubeShop maintained a dedicated CubeTwist brand
+  page with its own logo asset from 2013 (speedcubeshop-cubetwist-brand-page-2014).
+
+  **A caveat recorded rather than smoothed over:** Lightake mirrors Cubezz's SKU numbers, so
+  under RESEARCH_SPEC §3.2 those two corroborate each other's *existence* claim without being
+  independent on specifications. The SpeedCubeShop brand page proves the brand was carried as a
+  recognised manufacturer, but its captured product grid reads "There are no products to list."
+  The family does not rest on that retailer trio — it rests on the two tier-1 pages.
+
+  A `4.0cm三阶钥匙扣` (40mm 3x3 keychain) sits in an adjacent catalogue position on the
+  manufacturer's own site. Whether it belongs to this line as a size sibling (the `dayan-zhanchi`
+  42mm precedent) is **not resolved** — the page was not fetched, and it is recorded as an open
+  lead rather than assumed either way.
+status: sourced
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [cubetwist-com-2010-official-site, cubetwist-com-2010-3x3-listing]
+    note: "Two tier 1 manufacturer_official pages. The brand identity (cubetwist / 梯色魔方) and
+      the existence of a dedicated 3x3x3 product category are both stated by the company's own
+      site. `confirmed` per vocab/confidence.yml's tier 1 clause — this does not rest on the
+      retailer evidence at all."
+  /introduced:
+    confidence: probable
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "A BOUND, NOT A RELEASE DATE. The 3x3 product pages carry 更新时间 (last-updated)
+      values of 2010-06-07 and 2010-07-28, which bound when the PAGE was revised — not when the
+      product launched. Recorded `qualifier: before` at year precision per the Pass 3 admission
+      policy §3. No release statement exists on any source found."
+  /positioning:
+    confidence: probable
+    sources: [cubezz-cubetwist-speed-3x3]
+    note: "A plain 57mm/94g stickered cube at a low retailer price point, with no flagship or
+      premium framing in any source. The manufacturer's own site is a company showcase with no
+      price fields, so positioning rests on the retailer."
+  /aliases:
+    confidence: probable
+    sources: [cubetwist-com-2010-official-site, cubezz-cubetwist-speed-3x3, lightake-cubetwist-speeding-3x3]
+  /description:
+    confidence: probable
+    sources: [cubetwist-com-2010-official-site, cubetwist-com-2010-3x3-listing, cubezz-cubetwist-speed-3x3, speedcubeshop-cubetwist-brand-page-2014]
