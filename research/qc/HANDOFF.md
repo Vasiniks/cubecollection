@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  ce9c650
+HEAD:  bd10a1c
 DATE:  2026-09-09
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -17,7 +17,8 @@ variants:      485
 sources:       531
 
 VALIDATION
-npm run check:         0 errors, 50 advisory  (13 r42 / 11 r41 / 11 r18 / 10 r49 / 4 r40 / 1 r25)
+npm run check:         0 errors, 40 advisory  (13 r42 / 11 r41 / 11 r18 / 4 r40 / 1 r25)
+                       rule 49 closed: all 8 exclusions signed and reasoned
                        now includes `npm run escalations`
 npm run audit:         advisory only, 9 sweeps
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched  (CLOSED)
@@ -55,14 +56,13 @@ AGENTS
   none running. worktrees: 1 (main only).
 
 NEXT ACTION
-  1. Rule 49's 8 unsigned reference_only exclusions. Each removed a record from the
-     PUBLIC bundle with no recorded reason. Check git history / lane reports for the
-     original reasoning before asking for a new judgement — recover, do not invent.
-  2. Ziina "who makes it" — blocks admission. Needs FIRST-PARTY or specialist evidence,
+  1. Ziina "who makes it" — blocks admission. Needs FIRST-PARTY or specialist evidence,
      not another retailer. SpeedCubeShop says "Ziina Star", TheCubicle says "Ziina"; all
      13 SpeedCubeShop listings are UV-printed, so the ONLY evidence of a base Ziina cube
      anywhere is one TheCubicle listing.
-  3. P4-12..P4-15 are newly filed and untouched — grouped boundary/schema/naming issues.
+  2. P4-5 — 11 GAN-pilot baselines assert nothing (11 of the 40 remaining warnings).
+     Needs real GAN smart-line research; do NOT backfill an unsubstantiated attestation.
+  3. P4-12..P4-16 newly filed and untouched — boundary / schema / naming / scope-class.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming
