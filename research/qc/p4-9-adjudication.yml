@@ -1,0 +1,2387 @@
+# P4-9 candidate adjudication — is the enumeration method systematically deficient?
+#
+# GENERATED, then adjudicated BY HAND. Regenerate the candidate list with:
+#     npm run catalogue-gap -- --fetch --json
+# Adjudications below are not regenerable and must be preserved across any regeneration.
+#
+# THE QUESTION THIS FILE EXISTS TO ANSWER is not "which models are missing". It is:
+#   Did the enumeration method systematically miss NEWER GENERATIONS of lines it already found?
+# So the field that matters most is `known_family`. A candidate inside a family the archive
+# already holds means enumeration found the line and stopped before its later generations —
+# a RECENCY failure. A candidate in no known family means the line was never found at all —
+# a BREADTH failure. The two have different fixes and the ratio between them is the finding.
+#
+# CLASSIFICATIONS (RESEARCH_SPEC-aligned, one per candidate):
+#   confirmed_missing  a real manufacturer product with no model in the frozen 269
+#   alternate_naming   the archive HAS this product under a different name
+#   service_listing    a retailer service tier / custom setup — belongs to the service manufacturer
+#   bundle             a multi-product SKU, not a product
+#   variant            a configuration of a model the archive already holds
+#   sub_brand          belongs to a manufacturer recorded under another id
+#   not_3x3            out of scope: non-3x3, shape mod, or novelty by the archive's own rules
+#   false_positive     a matcher artefact; not a product at all
+#   unadjudicated      not yet examined — the honest default, and never a silent skip
+#
+# NOTHING IN THIS FILE MUTATES THE TAXONOMY. It is research and evidence. Admission is a
+# separate, authorised step under the freeze.
+meta:
+  generated: "2026-09-09"
+  command: "npm run catalogue-gap -- --fetch --json"
+  retailers: ["TheCubicle", "SpeedCubeShop", "Cubelelo (IN)"]
+  catalogue_products: 578 + 265 + 69
+  raw_candidates: 273
+  after_collapsing_title_order_duplicates: 261
+  note: >-
+    "MoYu WeiLong V11 3x3" and "MoYu WeiLong 3x3 V11" are one product written two ways by two
+    retailers; collapsing on a normalised key merges them. That alone removed 12 phantom
+    candidates, and is why a raw diff count must never be quoted as a gap size.
+candidates:
+  - key: "moyuweilongv11"
+    titles: ["MoYu WeiLong V11 3x3", "MoYu WeiLong 3x3 V11", "MoYu WeiLong v11 3x3"]
+    skus: 13
+    vendors: ["MoYu"]
+    retailers: ["Cubelelo (IN)", "SpeedCubeShop", "TheCubicle"]
+    first_listed: "2025-06-06"
+    known_family: "moyu-weilong"
+    classification: unadjudicated
+    note: null
+  - key: "moyuweilongwrmv10"
+    titles: ["MoYu WeiLong WRM V10 3x3", "MoYu WeiLong WR M 3x3 V10", "MoYu WeiLong WR M v10"]
+    skus: 9
+    vendors: ["MoYu"]
+    retailers: ["Cubelelo (IN)", "SpeedCubeShop", "TheCubicle"]
+    first_listed: "2024-05-09"
+    known_family: "moyu-weilong"
+    classification: unadjudicated
+    note: null
+  - key: "moyuaolongv5"
+    titles: ["MoYu AoLong V5 3x3"]
+    skus: 8
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2026-06-18"
+    known_family: "moyu-aolong"
+    classification: unadjudicated
+    note: null
+  - key: "moyuweilongwrmv9"
+    titles: ["MoYu WeiLong WRM V9 3x3", "MoYu WeiLong WR M 3x3 V9"]
+    skus: 8
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2023-04-10"
+    known_family: "moyu-weilong"
+    classification: unadjudicated
+    note: null
+  - key: "xmantornadov5"
+    titles: ["X-Man Tornado V5 3x3"]
+    skus: 3
+    vendors: ["QiYi", "X-Man Design"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-25"
+    known_family: "x-man-tornado"
+    classification: unadjudicated
+    note: null
+  - key: "cycloneboysmetallicm"
+    titles: ["Cyclone Boys Metallic 3x3 M"]
+    skus: 3
+    vendors: ["Cyclone Boys"]
+    retailers: ["TheCubicle"]
+    first_listed: "2021-09-29"
+    known_family: "cyclone-boys-metallic-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "yjyulongv2"
+    titles: ["YJ YuLong 3x3 V2"]
+    skus: 3
+    vendors: ["YJ"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-06-29"
+    known_family: "yj-yulong"
+    classification: unadjudicated
+    note: null
+  - key: "moyuweilongferrocorev2"
+    titles: ["MoYu WeiLong Ferrocore V2 3x3", "MoYu WeiLong Ferrocore v2 3x3"]
+    skus: 3
+    vendors: ["MoYu"]
+    retailers: ["Cubelelo (IN)", "TheCubicle"]
+    first_listed: "2026-03-02"
+    known_family: "moyu-weilong"
+    classification: unadjudicated
+    note: null
+  - key: "mfjsmeilong3mv2"
+    titles: ["MFJS MeiLong 3M V2 3x3"]
+    skus: 2
+    vendors: ["MFJS"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-04-18"
+    known_family: "mfjs-meilong"
+    classification: unadjudicated
+    note: null
+  - key: "moyurs3m2021"
+    titles: ["MoYu RS3 M 2021 3x3"]
+    skus: 2
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2021-09-10"
+    known_family: "moyu-rs3m"
+    classification: unadjudicated
+    note: null
+  - key: "cycloneboysmetallic"
+    titles: ["Cyclone Boys Metallic 3x3"]
+    skus: 2
+    vendors: ["Cyclone Boys"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2021-09-29"
+    known_family: "cyclone-boys-metallic-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "yuxinlittlemagicv3"
+    titles: ["YuXin Little Magic 3x3 V3"]
+    skus: 2
+    vendors: ["YuXin"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-12-30"
+    known_family: "yuxin-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "moretrytianmax3v4"
+    titles: ["MoreTry Tianma X3+ V4 3x3"]
+    skus: 2
+    vendors: ["MoreTry"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-03"
+    known_family: "moretry-tianma-x3"
+    classification: unadjudicated
+    note: null
+  - key: "moyuweilongaiv11"
+    titles: ["MoYu WeiLong AI 3x3 V11"]
+    skus: 2
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-07-21"
+    known_family: "moyu-weilong"
+    classification: unadjudicated
+    note: null
+  - key: "yuxinlittlemagicv2"
+    titles: ["YuXin Little Magic 3x3 V2"]
+    skus: 2
+    vendors: ["YuXin"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2021-10-23"
+    known_family: "yuxin-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "moyuweilongaiv10"
+    titles: ["MoYu WeiLong AI 3x3 V10"]
+    skus: 2
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-06-17"
+    known_family: "moyu-weilong"
+    classification: unadjudicated
+    note: null
+  - key: "yuxintreasurebox"
+    titles: ["YuXin 3x3 Treasure Box", "YuXin Treasure Box"]
+    skus: 2
+    vendors: ["YuXin"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2018-09-01"
+    known_family: "yuxin-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "mfjsminikeychaincube"
+    titles: ["MFJS Mini 3x3 Keychain Cube"]
+    skus: 1
+    vendors: ["MFJS"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: "mfjs-mini-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "yuxinmagneticslidingtilecube"
+    titles: ["YuXin 3x3 Magnetic Sliding Tile Cube"]
+    skus: 1
+    vendors: ["YuXin"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-06-22"
+    known_family: "yuxin-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "yuxinsuperherocube"
+    titles: ["YuXin Super Hero Cube 3x3"]
+    skus: 1
+    vendors: ["YuXin"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-07-03"
+    known_family: "yuxin-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "yuxinsuperbig"
+    titles: ["YuXin Super Big 3x3"]
+    skus: 1
+    vendors: ["YuXin"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: "yuxin-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "lefunchristmasv2"
+    titles: ["Lefun Christmas 3x3 V2"]
+    skus: 1
+    vendors: ["Lefun"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-11-29"
+    known_family: "lefun-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "lefunperiodictablev2"
+    titles: ["Lefun Periodic Table 3x3 V2"]
+    skus: 1
+    vendors: ["Lefun"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-02-08"
+    known_family: "lefun-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "yuxinlustrouscube"
+    titles: ["YuXin Lustrous Cube 3x3"]
+    skus: 1
+    vendors: ["YuXin"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-01"
+    known_family: "yuxin-3x3"
+    classification: unadjudicated
+    note: null
+  - key: "speedcubebulkset"
+    titles: ["3x3 Speed Cube Bulk Set"]
+    skus: 1
+    vendors: ["No Discount"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-09-07"
+    known_family: "rubiks-speed"
+    classification: unadjudicated
+    note: null
+  - key: "gan356icarryev2"
+    titles: ["GAN 356 i Carry E 3x3 V2"]
+    skus: 1
+    vendors: ["GAN"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-04-25"
+    known_family: "gan-356"
+    classification: unadjudicated
+    note: null
+  - key: "gan356lite"
+    titles: ["GAN 356 3x3 Lite"]
+    skus: 1
+    vendors: ["GAN"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2021-04-18"
+    known_family: "gan-356"
+    classification: unadjudicated
+    note: null
+  - key: "qiyithunderclapv3"
+    titles: ["QiYi Thunderclap 3x3 V3"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2019-09-17"
+    known_family: "qiyi-thunderclap"
+    classification: unadjudicated
+    note: null
+  - key: "moyusuperweilongv2"
+    titles: ["MoYu Super WeiLong 3x3 V2"]
+    skus: 6
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2025-02-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "practicespecialcube"
+    titles: ["Practice Special Cube"]
+    skus: 6
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-08-31"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyusuperaolong"
+    titles: ["MoYu Super AoLong 3x3"]
+    skus: 6
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2025-11-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "cfoptrainercube"
+    titles: ["CFOP Trainer Cube"]
+    skus: 6
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-08-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengbigm"
+    titles: ["DianSheng Big 3x3 M"]
+    skus: 4
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-07-12"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "petkeychaincube"
+    titles: ["Pet 3x3 Keychain Cube"]
+    skus: 4
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinagradient"
+    titles: ["Ziina Gradient 3x3"]
+    skus: 4
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-06-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinaworldmap"
+    titles: ["Ziina World Map 3x3"]
+    skus: 4
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyusuperaolongai"
+    titles: ["MoYu Super AoLong AI 3x3"]
+    skus: 4
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2025-11-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyismartcube"
+    titles: ["QiYi Smart Cube 3x3"]
+    skus: 3
+    vendors: ["QiYi"]
+    retailers: ["Cubelelo (IN)", "TheCubicle"]
+    first_listed: "2024-04-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "worldmap"
+    titles: ["World Map 3x3"]
+    skus: 3
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2023-08-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshenggiant"
+    titles: ["DianSheng Giant 3x3"]
+    skus: 3
+    vendors: ["DianSheng"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2022-11-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksxmarvelcubers"
+    titles: ["Rubik's x Marvel Cubers 3x3"]
+    skus: 3
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-08-27"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinachristmascube"
+    titles: ["Ziina Christmas Cube 3x3"]
+    skus: 3
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinarainbowcube"
+    titles: ["Ziina Rainbow Cube 3x3"]
+    skus: 3
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-04-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucube"
+    titles: ["Sudoku Cube 3x3"]
+    skus: 3
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-08-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjmini"
+    titles: ["YJ 3x3 Mini"]
+    skus: 3
+    vendors: ["YJ"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2019-02-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "saocubev56"
+    titles: ["SAOCube V56 3x3"]
+    skus: 2
+    vendors: ["SAOCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-08-26"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "gan330keychaincube"
+    titles: ["GAN330 Keychain Cube 3x3"]
+    skus: 2
+    vendors: ["GAN"]
+    retailers: ["TheCubicle"]
+    first_listed: "2020-05-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyusuperrs3m2022"
+    titles: ["MoYu Super RS3 M 2022 3x3"]
+    skus: 2
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-10-12"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshenggalaxysquished"
+    titles: ["DianSheng Galaxy Squished 3x3"]
+    skus: 2
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-09-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyidnacube"
+    titles: ["QiYi DNA Cube 3x3"]
+    skus: 2
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2019-09-20"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yzelectroplatedmetalalloy"
+    titles: ["YZ Electroplated Metal Alloy 3x3"]
+    skus: 2
+    vendors: ["YZ"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2021-11-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksphantomcube"
+    titles: ["Rubik's Phantom Cube 3x3"]
+    skus: 2
+    vendors: ["Rubik's", "Spin Master"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2023-03-16"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyusuperweilong"
+    titles: ["MoYu Super WeiLong 3x3"]
+    skus: 2
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2023-11-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zcubegoldenmahjong"
+    titles: ["ZCube Golden Mahjong 3x3"]
+    skus: 2
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-05-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinahalloweencube"
+    titles: ["Ziina Halloween Cube 3x3"]
+    skus: 2
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-09-06"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "vkslopingframecube"
+    titles: ["VK 3x3 Sloping Frame Cube"]
+    skus: 2
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-04-12"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinamosaic"
+    titles: ["Ziina Mosaic 3x3"]
+    skus: 2
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-06-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zcubegoldenmogaocaves"
+    titles: ["ZCube Golden Mogao-Caves 3x3"]
+    skus: 2
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-05-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyufitnesscube"
+    titles: ["MoYu Fitness Cube 3x3"]
+    skus: 2
+    vendors: ["MoYu"]
+    retailers: ["Cubelelo (IN)", "TheCubicle"]
+    first_listed: "2025-06-13"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksxstarwarscubers"
+    titles: ["Rubik's x Star Wars Cubers 3x3"]
+    skus: 2
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-08-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksxdisneycubers"
+    titles: ["Rubik's x Disney Cubers 3x3"]
+    skus: 2
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-03-06"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "gan330mini"
+    titles: ["GAN 330 3x3 Mini"]
+    skus: 2
+    vendors: ["GAN"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2020-05-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyiai"
+    titles: ["QiYi AI 3x3"]
+    skus: 2
+    vendors: ["QiYi"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-04-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjpocketcubemini"
+    titles: ["YJ Pocket Cube 3x3 Mini"]
+    skus: 2
+    vendors: ["YJ"]
+    retailers: ["Cubelelo (IN)", "SpeedCubeShop"]
+    first_listed: "2025-04-19"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyumini"
+    titles: ["MoYu 3x3 Mini"]
+    skus: 2
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2017-09-15"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyimini"
+    titles: ["QiYi Mini 3x3", "QiYi 3x3 Mini"]
+    skus: 2
+    vendors: ["QiYi"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2018-06-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "calendarcubev1"
+    titles: ["Calendar Cube V1 3x3", "Calendar Cube 3x3 V1"]
+    skus: 2
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2022-04-14"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "blinddicecubev2"
+    titles: ["Blind Dice Cube 3x3 V2", "Blind Dice 3x3 Cube V2"]
+    skus: 2
+    vendors: ["Calvin's Puzzle", "Other"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksimpossible"
+    titles: ["Rubik's Impossible 3x3", "Rubik’s Impossible 3x3"]
+    skus: 2
+    vendors: ["Rubik's", "Spin Master"]
+    retailers: ["SpeedCubeShop", "TheCubicle"]
+    first_listed: "2020-10-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "christmascube"
+    titles: ["Christmas Cube 3x3", "3x3 Christmas Cube"]
+    skus: 2
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-12-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "theferyoocorev2uv"
+    titles: ["The FerYooCore V2 UV 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-05-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "theferyoocorev2"
+    titles: ["The FerYooCore V2 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-05-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "tingboycube"
+    titles: ["Tingboy Cube 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-07-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "minicube"
+    titles: ["Mini 3x3 Cube"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2020-08-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "theyoocubeecoii"
+    titles: ["The Yoo Cube Eco II 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-02-27"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksmagneticspeedcube"
+    titles: ["Rubik's Magnetic Speed Cube 3x3"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-08-27"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "cubelabmini"
+    titles: ["Cube Lab Mini 3x3"]
+    skus: 1
+    vendors: ["Cube Lab"]
+    retailers: ["TheCubicle"]
+    first_listed: "2021-01-06"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "theyoocubedeluxeii"
+    titles: ["The Yoo Cube Deluxe II 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-12-15"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "theyoocubeii"
+    titles: ["The Yoo Cube II"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-03-16"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjpocketcube"
+    titles: ["YJ Pocket Cube 3x3"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-04-18"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "theferyoocoreuv"
+    titles: ["The FerYooCore UV 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-08-20"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyibubble"
+    titles: ["QiYi Bubble 3x3"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-08-04"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjminipillowed"
+    titles: ["YJ Mini Pillowed 3x3"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyiminikeychaincube"
+    titles: ["QiYi Mini 3x3 Keychain Cube"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2020-11-16"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "tingmancube"
+    titles: ["Tingman Cube 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-07-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "gan328minikeychaincube"
+    titles: ["GAN328 Mini Keychain Cube 3x3"]
+    skus: 1
+    vendors: ["GAN"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-04-08"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshenggalaxycornerturning"
+    titles: ["DianSheng Galaxy Corner-Turning 3x3"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-12-13"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyiminipillowedkeychaincube"
+    titles: ["QiYi Mini Pillowed 3x3 Keychain Cube"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "mathcube"
+    titles: ["Math Cube 3x3"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2019-01-04"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjblind"
+    titles: ["YJ Blind 3x3"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2020-07-08"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyitoricube"
+    titles: ["QiYi Tori Cube 3x3"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-12-06"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zglowinthedark"
+    titles: ["Z Glow in the Dark 3x3"]
+    skus: 1
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-03-15"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "olorcube"
+    titles: ["Olor Cube 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-07-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinabigcalendar"
+    titles: ["Ziina Big Calendar 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-10-16"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "mfjswcacubicgiftbox"
+    titles: ["MFJS WCA Cubic Gift Box"]
+    skus: 1
+    vendors: ["MFJS"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-14"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinahamburger"
+    titles: ["Ziina Hamburger 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinachemistrycubea"
+    titles: ["Ziina Chemistry Cube A 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinachemistrycubeb"
+    titles: ["Ziina Chemistry Cube B 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinaemojicube"
+    titles: ["Ziina Emoji Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinasunflowergraffiti"
+    titles: ["Ziina Sunflower Graffiti 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "minikeychaincasepenrosecube"
+    titles: ["Mini Keychain Case Penrose Cube"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-24"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "minikeychaincasecube"
+    titles: ["Mini Keychain Case 3x3 Cube"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-24"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zcube"
+    titles: ["ZCube 3x3"]
+    skus: 1
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-05-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinapoker"
+    titles: ["Ziina Poker 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-07-25"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zepuzzlessquished"
+    titles: ["ZePuzzles Squished 3x3"]
+    skus: 1
+    vendors: ["ZePuzzles"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-09-06"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinacalendarcubev3"
+    titles: ["Ziina Calendar Cube 3x3 V3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-11-12"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinalitesuper"
+    titles: ["Ziina Lite-Super 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-12-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "vin3nova"
+    titles: ["VIN3 3x3 Nova"]
+    skus: 1
+    vendors: ["Vin Cube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-01-17"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshenggalaxydualoctahedron"
+    titles: ["DianSheng Galaxy Dual Octahedron"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-02-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinamaze"
+    titles: ["Ziina Maze 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshenghexagonaldipyramidv2"
+    titles: ["DianSheng 3x3 Hexagonal Dipyramid V2"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-06-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengufov2"
+    titles: ["DianSheng 3x3 UFO V2"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-06-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengdiamondv2"
+    titles: ["DianSheng 3x3 Diamond V2"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-06-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "heshusuperbig"
+    titles: ["HeShu Super Big 3x3"]
+    skus: 1
+    vendors: ["HeShu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "marumini"
+    titles: ["Maru Mini 3x3"]
+    skus: 1
+    vendors: ["Maru"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "maruminikeychaincube"
+    titles: ["Maru Mini 3x3 Keychain Cube"]
+    skus: 1
+    vendors: ["Maru"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyidimension"
+    titles: ["QiYi Dimension 3x3"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjballcube"
+    titles: ["YJ 3x3 Ball Cube"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjminipillowedkeychaincube"
+    titles: ["YJ Mini Pillowed 3x3 Keychain Cube"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zmaze"
+    titles: ["Z Maze 3x3"]
+    skus: 1
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zrainbow"
+    titles: ["Z Rainbow 3x3"]
+    skus: 1
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-09-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyi25giftbox"
+    titles: ["QiYi 2-5 Gift Box"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2018-10-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dollarcube"
+    titles: ["Dollar Cube 3x3"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2019-01-04"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "chemistrycube"
+    titles: ["Chemistry Cube 3x3"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2019-01-04"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "meffertshollowcube"
+    titles: ["Meffert's Hollow Cube 3x3"]
+    skus: 1
+    vendors: ["Meffert's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2019-06-17"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "giantmagiccube"
+    titles: ["Giant Magic Cube 3x3"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2021-04-29"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyicarbonfiber"
+    titles: ["QiYi Carbon Fiber 3x3"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2021-11-23"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "chmoyurs3m2021"
+    titles: ["CH MoYu RS3 M 2021 3x3"]
+    skus: 1
+    vendors: ["Cuber's Home"]
+    retailers: ["TheCubicle"]
+    first_listed: "2021-12-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yummycheeseburger"
+    titles: ["Yummy Cheeseburger 3x3"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-01-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yummyfrenchfrieskeychaincube"
+    titles: ["Yummy French Fries Keychain Cube 3x3"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-04-14"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yummycheeseburgerkeychaincube"
+    titles: ["Yummy Cheeseburger Keychain Cube 3x3"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-04-14"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "calendarcubev2"
+    titles: ["Calendar Cube V2 3x3"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-04-14"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengsupergiant"
+    titles: ["DianSheng Super Giant 3x3"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-11-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucubev1"
+    titles: ["Sudoku Cube 3x3 V1"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-12-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucubev2"
+    titles: ["Sudoku Cube 3x3 V2"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-12-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucubev3"
+    titles: ["Sudoku Cube 3x3 V3"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2022-12-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubikskeychaincube"
+    titles: ["Rubik's Keychain Cube 3x3"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-03-16"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksrecube"
+    titles: ["Rubik's Re-Cube 3x3"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-03-16"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "swift355s"
+    titles: ["Swift 355S 3x3"]
+    skus: 1
+    vendors: ["Swift Block"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-04-26"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucubev4"
+    titles: ["Sudoku Cube 3x3 V4"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-04-28"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "steelballrolling3dmaze"
+    titles: ["Steel Ball Rolling 3D Maze 3x3"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-11-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinakeychaincube"
+    titles: ["Ziina 3x3 Keychain Cube"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-11-24"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucubev6"
+    titles: ["Sudoku Cube 3x3 V6"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-12-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucubev5"
+    titles: ["Sudoku Cube 3x3 V5"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2023-12-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyucubemosaicartgallery"
+    titles: ["MoYu Cube Mosaic Art Gallery 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-01-19"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinaspacemagnetic"
+    titles: ["Ziina Space Magnetic 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-03-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinamagneticsudokucube"
+    titles: ["Ziina Magnetic Sudoku Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-04-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinamahjongcube"
+    titles: ["Ziina Mahjong Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-05-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyucubechair"
+    titles: ["MoYu Cube Chair 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-05-24"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubikscoachcube"
+    titles: ["Rubik's 3x3 Coach Cube"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-06-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinasudoku"
+    titles: ["Ziina Sudoku 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-06-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinamahjong"
+    titles: ["Ziina Mahjong 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-06-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "toktokcube"
+    titles: ["TokTok Cube 3x3"]
+    skus: 1
+    vendors: ["Smart Cube Labs"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-06-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "philyuxtingmanmusiccube"
+    titles: ["Phil Yu x Tingman Music Cube 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-07-15"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinacalendarcubev2"
+    titles: ["Ziina Calendar Cube 3x3 V2"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-07-29"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksxdccubers"
+    titles: ["Rubik's x DC Cubers 3x3"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-08-27"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "davidtrickycubev1"
+    titles: ["David 3x3 Tricky Cube V1"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-09-18"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinagraffiti"
+    titles: ["Ziina Graffiti 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-10-16"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "mfjswca27giftbox"
+    titles: ["MFJS WCA 2-7 Gift Box"]
+    skus: 1
+    vendors: ["MFJS"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-14"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinacake"
+    titles: ["Ziina Cake 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinacolorfulgraffiti"
+    titles: ["Ziina Colorful Graffiti 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "petcube"
+    titles: ["Pet Cube 3x3"]
+    skus: 1
+    vendors: ["Other"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjqianji"
+    titles: ["YJ QianJi 3x3"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-12-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksperplexusfusion"
+    titles: ["Rubik's Perplexus Fusion 3x3"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-12-13"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinadollarcube"
+    titles: ["Ziina Dollar Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinahundreddollarcube"
+    titles: ["Ziina Hundred-Dollar Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinamandala"
+    titles: ["Ziina Mandala 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyisandwichcube"
+    titles: ["QiYi Sandwich Cube 3x3"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinaaliengraffiti"
+    titles: ["Ziina Alien Graffiti 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-01-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinafrenchfries"
+    titles: ["Ziina French Fries 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-02-28"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zautographcube"
+    titles: ["Z Autograph Cube 3x3"]
+    skus: 1
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-03-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziina500euro"
+    titles: ["Ziina 500 Euro 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-04-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinasquaregridcube"
+    titles: ["Ziina Square Grid Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-05-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinaarrowscube"
+    titles: ["Ziina Arrows Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-05-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "thecaidencube"
+    titles: ["The Caiden Cube 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-05-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshenggoogol"
+    titles: ["DianSheng Googol 3x3"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-06-18"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinaalphanumeric"
+    titles: ["Ziina Alphanumeric 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-07-25"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinacloud"
+    titles: ["Ziina Cloud 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-08-19"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubikspulsecube"
+    titles: ["Rubik's Pulse Cube 3x3"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-08-19"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjbig"
+    titles: ["YJ Big 3x3"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-11-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "tingmanpicturecube"
+    titles: ["Tingman Picture Cube 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-11-24"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjmosaiccubesetof9"
+    titles: ["YJ Mosaic 3x3 Cube Set of 9"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-11-26"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinapokerv2"
+    titles: ["Ziina Poker 3x3 V2"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-11-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "limcubecrucismixupcube"
+    titles: ["LimCube Crucis Mixup Cube"]
+    skus: 1
+    vendors: ["FangShi"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-12-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "cubiclenewyearsresolutioncube"
+    titles: ["Cubicle New Year's Resolution Cube 3x3"]
+    skus: 1
+    vendors: ["TheCubicle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2025-12-26"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "thechegginscube"
+    titles: ["The Cheggins Cube 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-03-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "mfjsmagicbeadcube"
+    titles: ["MFJS 3x3 Magic Bead Cube"]
+    skus: 1
+    vendors: ["MFJS"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-03-28"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "vin3lite"
+    titles: ["VIN3 3x3 Lite"]
+    skus: 1
+    vendors: ["Vin Cube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "vin3racer"
+    titles: ["VIN3 3x3 Racer"]
+    skus: 1
+    vendors: ["Vin Cube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "stevensferrocorev2"
+    titles: ["Steven's Ferrocore V2 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-06"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinaflowercube"
+    titles: ["Ziina Flower Cube 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zcubemahjong"
+    titles: ["ZCube Mahjong 3x3"]
+    skus: 1
+    vendors: ["ZCube"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-29"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "witedenroadblocki"
+    titles: ["WitEden Roadblock I"]
+    skus: 1
+    vendors: ["WitEden"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-04-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksclassic"
+    titles: ["Rubik's Classic 3x3"]
+    skus: 1
+    vendors: ["Rubik's"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-06-24"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinalovehearts"
+    titles: ["Ziina Love Hearts 3x3"]
+    skus: 1
+    vendors: ["Ziina"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-07-31"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "sudokucubev7"
+    titles: ["Sudoku Cube 3x3 V7"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["TheCubicle"]
+    first_listed: "2026-08-20"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "tingmanfamilypack"
+    titles: ["Tingman Family Pack"]
+    skus: 1
+    vendors: ["Multiple"]
+    retailers: ["TheCubicle"]
+    first_listed: "2024-07-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyupbwr"
+    titles: ["MoYu PB WR 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-09-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "calendarcube"
+    titles: ["Calendar Cube 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-02-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "frozenglowcubev2"
+    titles: ["Frozen Glow Cube V2"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-10-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "spookycube"
+    titles: ["Spooky Cube"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-09-07"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "autographcube"
+    titles: ["Autograph Cube 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-11-24"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "america250puzzlecubelimitededition"
+    titles: ["America250™ Puzzle Cube — Limited Edition"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-05-02"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "souptimmymoyuwrmv10"
+    titles: ["Soup Timmy MoYu WR M 3x3 V10"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-07-13"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "jpermrs3m2020"
+    titles: ["JPerm RS3 M 2020 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2020-12-29"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "maxparkrs3mv5"
+    titles: ["Max Park RS3 M 3x3 V5"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-03-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "mini1cm"
+    titles: ["Mini 1cm 3x3"]
+    skus: 1
+    vendors: ["CubeLab"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2021-01-18"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "cycloneboyspastelmetallic"
+    titles: ["Cyclone Boys Pastel Metallic 3x3"]
+    skus: 1
+    vendors: ["Cyclone Boys"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-05-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "vincubenova"
+    titles: ["VIN Cube 3x3 Nova"]
+    skus: 1
+    vendors: ["VIN Cube"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-01-18"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "scsspeedcubepro"
+    titles: ["SCS Speed Cube Pro 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-10-29"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "colorbrickspeedcube"
+    titles: ["Color Brick Speed Cube"]
+    skus: 1
+    vendors: ["Fanxin"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2020-06-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "vincuberacer"
+    titles: ["VIN Cube 3x3 Racer"]
+    skus: 1
+    vendors: ["VIN Cube"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengbig10cm"
+    titles: ["DianSheng Big 3x3 - 10cm"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-08-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "candycane"
+    titles: ["Candy Cane 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-11-04"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "maxparktornadov4flagship"
+    titles: ["Max Park Tornado 3x3 V4 Flagship"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-11-04"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengbig7cm"
+    titles: ["DianSheng Big 3x3 - 7cm"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-08-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yjball"
+    titles: ["YJ Ball 3x3"]
+    skus: 1
+    vendors: ["YJ"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2018-10-26"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarcalendar"
+    titles: ["Ziina Star Calendar 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zmogaocaves"
+    titles: ["Z Mogao-Caves 3x3"]
+    skus: 1
+    vendors: ["Z-Cube"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-07-17"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastar100dollar"
+    titles: ["Ziina Star 100 Dollar 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "crystallizedmini"
+    titles: ["Crystallized 3x3 Mini"]
+    skus: 1
+    vendors: ["CRYSTALL!ZED by Bri"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-09-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengbig9cm"
+    titles: ["DianSheng Big 3x3 - 9cm"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-08-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyubig"
+    titles: ["MoYu Big 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-06-17"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarworldmapv3"
+    titles: ["Ziina Star World Map 3x3 V3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "gan328mini"
+    titles: ["GAN 328 3x3 Mini"]
+    skus: 1
+    vendors: ["GAN"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2022-07-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "marbleluxury"
+    titles: ["Marble Luxury 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "space"
+    titles: ["Space 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zcubedollar"
+    titles: ["Z-Cube Dollar 3x3"]
+    skus: 1
+    vendors: ["Z-Cube"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-11"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastardollar"
+    titles: ["Ziina Star Dollar 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastaraliengraffiti"
+    titles: ["Ziina Star Alien Graffiti 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarchemicalelements"
+    titles: ["Ziina Star Chemical Elements 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarloveheartgraffiti"
+    titles: ["Ziina Star Love Heart Graffiti 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarcheese"
+    titles: ["Ziina Star Cheese 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarmilk"
+    titles: ["Ziina Star Milk 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarworldmap3d"
+    titles: ["Ziina Star World Map 3x3 3D"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarworldmapv1"
+    titles: ["Ziina Star World Map 3x3 V1"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ziinastarcolorfulgraffiti"
+    titles: ["Ziina Star Colorful Graffiti 3x3"]
+    skus: 1
+    vendors: ["Ziina Star"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-07-09"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "circuit"
+    titles: ["Circuit 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-03"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyufunctionalcubechair"
+    titles: ["MoYu Functional Cube Chair 3x3"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-05-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "jpermweilongwrm2021"
+    titles: ["JPerm WeiLong WR M 2021 3x3"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2022-09-25"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "maxparktornadov3flagship"
+    titles: ["Max Park Tornado 3x3 V3 Flagship"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-11-04"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "dianshengbig8cm"
+    titles: ["DianSheng Big 3x3 - 8cm"]
+    skus: 1
+    vendors: ["DianSheng"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-08-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "yummypopcorn"
+    titles: ["Yummy Popcorn 3x3"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-12-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubikstetriscube"
+    titles: ["Rubik's Tetris 3x3 Cube"]
+    skus: 1
+    vendors: ["Spin Master"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-01-29"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "zmahjong"
+    titles: ["Z Mahjong 3x3"]
+    skus: 1
+    vendors: ["Z-Cube"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-07-17"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "vincubelite"
+    titles: ["VIN Cube 3x3 Lite"]
+    skus: 1
+    vendors: ["VIN Cube"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-10"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "gradientcube"
+    titles: ["3x3 Gradient Cube"]
+    skus: 1
+    vendors: ["Calvin's Puzzle"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2025-12-05"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "crystallizedspeedcube"
+    titles: ["Crystallized 3x3 Speed Cube"]
+    skus: 1
+    vendors: ["CRYSTALL!ZED by Bri"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2023-08-18"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "souptimmyhobbycube"
+    titles: ["Soup Timmy Hobby Cube"]
+    skus: 1
+    vendors: ["SpeedCubeShop"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2024-11-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksminniemousecuber"
+    titles: ["Rubik's Minnie Mouse Cuber"]
+    skus: 1
+    vendors: ["Spin Master"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubikscrystalcube"
+    titles: ["Rubik's Crystal Cube 3x3"]
+    skus: 1
+    vendors: ["Spin Master"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-20"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "rubiksmickeymousecuber"
+    titles: ["Rubik's Mickey Mouse Cuber"]
+    skus: 1
+    vendors: ["Spin Master"]
+    retailers: ["SpeedCubeShop"]
+    first_listed: "2026-04-22"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "qiyixmantornadov5"
+    titles: ["QiYi X-Man Tornado v5 3x3"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2026-04-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "saocube"
+    titles: ["SAOCube"]
+    skus: 1
+    vendors: ["QiYi"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2026-05-21"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "drift3mplusv2"
+    titles: ["Drift 3M PLUS v2 3x3"]
+    skus: 1
+    vendors: ["Cubelelo"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2025-01-28"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "drift3mv3"
+    titles: ["Drift 3M v3 3x3"]
+    skus: 1
+    vendors: ["Cubelelo"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2025-03-12"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyusuperaolongmaglev"
+    titles: ["MoYu Super AoLong 3x3 MagLev"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2025-11-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "moyusuperaolongaismartcube"
+    titles: ["MoYu Super AoLong 3x3 AI Smart Cube"]
+    skus: 1
+    vendors: ["MoYu"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2025-11-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "ganmonstergov3"
+    titles: ["GAN Monster Go v3 3x3"]
+    skus: 1
+    vendors: ["GAN"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2024-12-30"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "driftjellyedition"
+    titles: ["Drift 3x3 Jelly Edition"]
+    skus: 1
+    vendors: ["Cubelelo"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2022-03-01"
+    known_family: null
+    classification: unadjudicated
+    note: null
+  - key: "driftcarbonfiber"
+    titles: ["Drift Carbon Fiber 3x3"]
+    skus: 1
+    vendors: ["Cubelelo"]
+    retailers: ["Cubelelo (IN)"]
+    first_listed: "2019-11-06"
+    known_family: null
+    classification: unadjudicated
+    note: null

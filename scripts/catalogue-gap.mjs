@@ -25,6 +25,7 @@
 import { loadVocabularies, loadSchemas, loadRecords, Report } from './lib/archive.mjs';
 
 const FETCH = process.argv.includes('--fetch');
+const JSON_OUT = process.argv.includes('--json');
 
 // Shopify storefronts expose their own collection as JSON. Using the retailer's structured
 // `vendor` field rather than parsing the title is what keeps TheCubicle's own custom setups —
@@ -62,6 +63,25 @@ for (const rec of records) {
     if (k) { known.add(k); known.add(k.replace(/3x3/g, '')); }
   }
 }
+// FAMILY names are indexed SEPARATELY and never used for matching — using them for matching is
+// what swallowed every missing generation in the first version. They are used only to answer the
+// question that decides whether P4-9 is a coverage problem or a METHOD problem:
+//
+//   Does this missing line belong to a product family the archive ALREADY HOLDS?
+//
+// A miss inside a known family means the enumeration found the line and stopped before its later
+// generations — a systematic recency failure. A miss in an unknown family means the line was
+// never found at all — a breadth failure. They have different fixes, and the ratio between them
+// is the finding.
+const families = new Map();
+for (const rec of records) {
+  if (rec.entity !== 'family' || !rec.doc?.name) continue;
+  for (const n of [rec.doc.name, ...(rec.doc.aliases ?? [])]) {
+    const k = normalise(n).replace(/3x3/g, '');
+    if (k.length >= 5) families.set(k, rec.doc.id);
+  }
+}
+
 // A generation token makes a name a different product, not a longer spelling of the same one.
 // "weilongv11" must never match "weilong" — that is the swallow this script exists to prevent.
 const GENERATION = /(v\d+|mk\d+|\d{4})$/;
@@ -126,12 +146,23 @@ for (const [line, e] of lines) {
       if (a.includes(k) || k.includes(a)) { matched = true; break; }
     }
   }
-  if (!matched) missing.push([line, e]);
+  if (matched) continue;
+  // Which known family, if any, does this line sit inside?
+  let family = null;
+  for (const [fk, fid] of families) {
+    if (k.startsWith(fk) || fk.startsWith(k)) { family = fid; break; }
+  }
+  missing.push([line, { ...e, family, generation: gen ? gen[1] : null }]);
 }
 missing.sort((a, b) => b[1].skus - a[1].skus);
 
+const inKnownFamily = missing.filter(([, e]) => e.family);
 report.note('');
 report.note(`${missing.length} line(s) with no archive name match. Confirm each by hand:`);
+report.note(`  of those, inside a family the archive ALREADY HOLDS : ${inKnownFamily.length}`);
+report.note(`  in no known family                                  : ${missing.length - inKnownFamily.length}`);
+report.note('  The first number is a RECENCY failure — the line was found, its later generations');
+report.note('  were not. The second is a BREADTH failure — the line was never found at all.');
 for (const [line, e] of missing) {
   if (e.skus < 2) continue;                            // a single SKU is usually a one-off edition
   const where = [...e.seenAt].join(', ');
@@ -141,5 +172,18 @@ report.note('');
 report.note('A line listed at more than one retailer is the stronger signal; a single-SKU line is');
 report.note('suppressed above because it is usually a one-off edition of a model already held.');
 report.note('published_at is a LISTING date, never a release date — it belongs in no record.');
+if (JSON_OUT) {
+  // Machine-readable, so an adjudication file can be regenerated rather than retyped.
+  process.stdout.write(`${JSON.stringify(missing.map(([line, e]) => ({
+    line,
+    skus: e.skus,
+    vendors: [...e.vendors],
+    retailers: [...e.seenAt],
+    first_listed: e.first === '9999-99-99' ? null : e.first,
+    known_family: e.family,
+    generation: e.generation,
+  })), null, 2)}\n`);
+  process.exit(0);
+}
 report.print();
 process.exit(0);
