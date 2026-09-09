@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  544e5a1
+HEAD:  322c3f5
 DATE:  2026-09-09
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      488
-sources:       535
+sources:       536
 
 VALIDATION
 npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
@@ -23,7 +23,7 @@ npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is
                          11 r18  genuinely out-of-range models (minis, oversized) — correct
                           4 r40  model-predates-family conflicts — P3-D2, needs human decision
                           2 r41  gan-356-i, monster-go-352-m — deliberately NOT backfilled
-                       rules 25, 49 closed this session; rule 41 11 -> 2
+                       rules 25, 49 closed; rule 41 11 -> 2. Advisory total 27 -> 27.
                        now includes `npm run escalations`
 npm run audit:         advisory only, 9 sweeps
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched  (CLOSED)
@@ -59,6 +59,19 @@ OPEN ISSUES  (24 of 54 not resolved; ledger research/qc/pass2-remediation-ledger
 
 AGENTS
   none running. worktrees: 1 (main only).
+
+ALSO DONE THIS WINDOW
+  rule 49 CLOSED — 8 unsigned exclusions: reasoning RECOVERED from lane reports, not
+    invented. P4-16 filed: reference_only carries a second, undocumented meaning.
+  P4-5 — rule 41 11 -> 2 by real research. Unlocked by SLUG-FORM discovery (gan356- not
+    gan-356-, monstergo- not monster-go-, gan12-ui not gan-ui). Recorded under P26-3.
+    NOTE: the form must be checked PER BRAND — cyclone-boys is the hyphenated one.
+  rule 25 amended — was unsatisfiable; now accepts a recorded sibling search (+ fixtures).
+  3 more split-extraction source pairs merged; the 10 remaining r42 findings all explained.
+  P26-7 CLOSED — Dolphin gloss + HaiTun ZhanLang alias, both sourced.
+  P26-6 VERIFIED — 8 of 11 leads confirmed as real retailer paths; now a queued admission
+    decision rather than an unverified-leads issue.
+  scripts/ledger-append.mjs — written after three updates misfiled into counterevidence.
 
 NEXT ACTION
   1. Ziina "who makes it" — blocks admission. Needs FIRST-PARTY or specialist evidence,
