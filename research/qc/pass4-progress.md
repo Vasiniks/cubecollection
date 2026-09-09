@@ -188,6 +188,71 @@ their model already carries · **zero** variant→model→family chain breaks ac
 **zero** names or aliases shared across different manufacturers · **zero** stale count claims in
 canonical record prose.
 
+## Batch 2 — COMPLETE, all four lanes
+
+| Lane | Scope | Models | Variants |
+|---|---|---|---|
+| **E** | smart & modern (GiiKER, Particula, Rubik's, MoreTry) | 16 | **26** |
+| **F** | YuXin, Cyclone Boys, DianSheng | 19 | **31** |
+| **G** | shape-mod & historic (WitEden, MF8, Calvin's, Maru, +4) | 20 | **60** |
+| **H** | sub-brands & long tail (17 manufacturers) | 35 | **72** |
+
+> **269 of 269 models assessed. Zero unassessed.**
+> 132 families · 269 models · **485 variants** · 534 sources · 54 manufacturers.
+
+### The density estimates were wrong in an instructive direction
+
+Lane G was briefed as the **lowest**-density lane and returned the **highest** per model, because
+shape-mod makers sell one design in many named configurations — exactly what the variant layer
+is for. Lane H's long tail produced 72 variants from manufacturers expected to yield baselines,
+because two of them (HuaMeng, LeFun) had leads sitting unchased in their own frozen model
+records since Pass 3.
+
+### All four lanes died to session limits; all four were recovered, none restarted
+
+Every worktree was inspected, validated in place, its uncommitted work committed, and the lane
+resumed with context intact — **recovering roughly 50 variants and 19 sources** that would
+otherwise have been re-researched. Lane H died twice and still finished 35/35.
+
+### Splits verified rather than trusted
+
+Three large splits were checked against their sources before merge, and the answers differed:
+
+- **MF8's eight planets** — legitimate, and *stronger* than the precedent cited: the source says
+  *"crazy cuts that vary by each version"*, so the **mechanism** differs per planet.
+- **Maru's seven Special Patterns** — defensible, but **not for the reason given**. The lane
+  cited the Bermuda precedent (tier-1 manufacturer naming); this is a tier-2 retailer options
+  list. They clear the bar on different grounds: individually named, and some *"require
+  additional steps to be taken"*.
+- **LeFun's fourteen print themes** — legitimate. Each has its own product page, name and price;
+  not a dropdown, which is what the GAN356 Air precedent collapses.
+
+**The ZhanLang dedup test was run on HaiTun itself** — the manufacturer that produced this
+archive's reference false positive — and reached the *opposite* conclusion on different products:
+Waverider V2 Standard and Flagship carry genuinely distinct Cubezz product IDs. The check working
+in both directions is what makes it worth running.
+
+## Rules added during Pass 4
+
+| Rule | Catches | Found on real data |
+|---|---|---|
+| **41** | a lone `--standard` with no `/edition/types` attestation — a placeholder that still counts as coverage | 11, all GAN-pilot (`P4-5`) |
+| **42** | two source records of one page, and any attestation citing both as corroboration | 12 (`11` duplicate pairs + 1 citation) |
+| **43** | a confidence exceeding what its cited sources' tier supports | 6, now all fixed |
+
+Rule 43's origin is worth keeping: **four of its six findings were introduced by the P4-3
+baseline generator itself**, which cited each model's *first* source rather than its *best-tier*
+one. A generator can inject that defect in bulk, silently. All four were re-cited to a tier-2
+source already present on the record.
+
+## Archive-wide sweeps that came back clean
+
+Negative results, recorded because they are what licenses confidence in the layer:
+**zero** tier-5 sources exist and none is cited · **zero** variants redundantly repeat a spec
+their model already carries · **zero** variant→model→family chain breaks across all 313 variants ·
+**zero** names or aliases shared across different manufacturers · **zero** stale count claims in
+canonical record prose.
+
 ## Batch 2 — three of four lanes complete
 
 | Lane | Scope | Models | Variants |
@@ -242,7 +307,35 @@ propagate by citing itself.**
 
 ## Status
 
-**BATCH 2, LANE H IN PROGRESS.** 132 families · 269 models · **426 variants** · 512 sources ·
-54 manufacturers. **239 of 269 models assessed**; the 30 remaining are lane H's scope.
-`npm run check`: 0 errors, 47 advisory (18 rule-18 size/weight on genuinely mini and oversized
-products · 13 rule-42 duplicate pages · 11 rule-41 GAN-pilot debt · 4 rule-40 · 1 rule-25).
+**PASS 4 BATCHES 1 AND 2 COMPLETE. Every model assessed.**
+
+| | |
+|---|---|
+| manufacturers | 54 |
+| families | **132 — frozen, unchanged throughout** |
+| models | **269 — frozen, unchanged throughout** |
+| variants | **485** (104 at Pass 4 start) |
+| sources | 534 |
+| models assessed | **269 / 269** |
+| one configuration | 119 |
+| with config detail | 64 |
+| multiple configurations | 86 |
+
+`npm run check`: **0 errors, 40 advisory** — 13 rule-42 duplicate pages · 11 rule-41 GAN-pilot
+debt (`P4-5`) · 11 rule-18 out-of-range models, now reported once each at the model rather than
+per inheriting variant · 4 rule-40 · 1 rule-25. **Rules 43, 44, 45 and 46 all report zero on real
+data**, each having been added in response to defects they no longer find.
+
+All invariants verified across 485 variants: every `model_id` resolves, every id matches its path
+and model, no duplicate ids anywhere, no dangling attestation sources.
+
+## What remains
+
+Not completeness of research — **completeness of assessment** was the Pass 4 criterion and it is
+met. What is open is depth: 119 models rest on a single-configuration baseline, and a later pass
+with better evidence may find axes beneath them. That is the honest state, and the audit reports
+it every run rather than leaving it to be rediscovered.
+
+Open issues: `P4-2` and `P4-4` (six model-layer gaps found by variant work, escalated not acted
+on) · `P4-5` (11 GAN-pilot baselines asserting nothing) · `P4-6` (the E1 tier override reached 9
+of 30 Speedsolving sources) · `P26-12`/`P26-15` (Tank/Gem geometry unproven) · `P26-13` closed.
