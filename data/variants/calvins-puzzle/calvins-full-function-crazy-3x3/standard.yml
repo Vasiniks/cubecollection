@@ -1,0 +1,22 @@
+# variant: calvins-full-function-crazy-3x3--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-calvins-full-function-crazy-colors-2025)
+# offers a single purchasable colour (Black), no separate edition name.
+id: calvins-full-function-crazy-3x3--standard
+entity: variant
+model_id: calvins-full-function-crazy-3x3
+name: "Calvin's Full-Function Crazy 3x3 (Center-Locking)"
+# scope_class is reference_only, inherited from the calvins-full-function-crazy-3x3 model
+# record.
+scope_class: reference_only
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-calvins-full-function-crazy-colors-2025]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2025-04-30 Wayback capture) offers only Black as a purchasable colour. No other
+      colourway, edition, or configuration axis was found on this or any other source
+      consulted this pass."

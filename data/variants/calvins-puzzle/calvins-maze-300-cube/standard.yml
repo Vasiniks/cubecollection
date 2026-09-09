@@ -1,0 +1,25 @@
+# variant: calvins-maze-300-cube--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-calvins-maze-300-colors-2025) offers a
+# single purchasable colour (Black), no separate edition name.
+id: calvins-maze-300-cube--standard
+entity: variant
+model_id: calvins-maze-300-cube
+name: "Calvin's Bandaged 3x3 (Maze-300 Cube)"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from calvins-maze-300-cube's model record. Rule 15 resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-calvins-maze-300-colors-2025]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2025-02-19 Wayback capture) offers only Black as a purchasable colour. No other
+      colourway, edition, or configuration axis was found on this or any other source
+      consulted this pass. The model's own open question (whether this should instead be
+      framed as a `modified_from` aftermarket service on an unidentified base cube) is
+      unresolved and NOT acted on here — no source identifies the specific base variant
+      DATA_MODEL §4.3 would require."

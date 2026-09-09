@@ -118,11 +118,51 @@ direct standalone-slug capture for "Black" could raise it to `probable`.
 
 ---
 
+## Calvin's Puzzle (3 models) — DONE
+
+Method: reused pass-3 sources for mechanism/existence, then a fresh differentiation search on
+each model's live/archived TheCubicle page(s) for colour/edition options.
+
+**Axes identified.**
+- `calvins-crazy-mirror-3x3x3`: the model record itself already identifies circle count
+  (4 vs. 6) as the model's variant axis — TheCubicle sells this as two separate dedicated
+  product pages, "4 Circles" and "6 Circles", each at one colour ("Black (Silver)") and one
+  price ($48.99). Per DATA_MODEL §4.2 worked decision A, this is a configuration choice of one
+  underlying design, i.e. variant-level, matching the pass-3 model record's own framing.
+- `calvins-full-function-crazy-3x3`: single colour (Black), no other axis.
+- `calvins-maze-300-cube`: single colour (Black), no other axis.
+
+**Variants created:**
+- `calvins-crazy-mirror-3x3x3--4-circles` and `--6-circles` — `edition.designation` set to "4
+  Circles"/"6 Circles" respectively (the retailer's own bracketed configuration name) to
+  distinguish the two records after the build's fingerprint check (rule 28) correctly flagged
+  them as identical by config/colourway alone — resolved by attesting the one real
+  distinguishing fact rather than leaving a false-positive duplicate flag. `scope_class:
+  reference_only` (inherited).
+- `calvins-full-function-crazy-3x3--standard` — Black-only baseline. `reference_only`.
+- `calvins-maze-300-cube--standard` — Black-only baseline. `scope_class: conditional`
+  (inherited). The model's own open `modified_from`/aftermarket-service question (is this
+  really a decorated third-party base cube?) is explicitly NOT resolved here — no source
+  identifies the specific base variant DATA_MODEL §4.3 would require, so it stays an ordinary
+  model-level variant, per the model record's own instruction to leave this for a future pass.
+
+**Candidates rejected:** none beyond the two rejected model-level questions already flagged by
+pass 3 and re-noted above (not re-litigated this pass).
+
+**Sources added:** `thecubicle-calvins-crazy-mirror-configs-2025`,
+`thecubicle-calvins-full-function-crazy-colors-2025`, `thecubicle-calvins-maze-300-colors-2025`
+— all Tier 2, `archive_url` preservation.
+
+**Escalation:** none new. The pre-existing `modified_from` open question on
+`calvins-maze-300-cube` is carried forward, not resolved, exactly as pass 3 left it.
+
+---
+
 ## Status
 
 - [x] WitEden (6 models)
 - [x] MF8 (3 models)
-- [ ] Calvin's Puzzle (3 models)
+- [x] Calvin's Puzzle (3 models)
 - [ ] Maru (4 models)
 - [ ] Meffert's (1 model)
 - [ ] CubeTwist (1 model)

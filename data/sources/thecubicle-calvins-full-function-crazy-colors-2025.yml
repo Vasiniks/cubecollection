@@ -1,0 +1,21 @@
+# source: thecubicle-calvins-full-function-crazy-colors-2025
+# Pass 4 (variant enumeration), Agent G. Re-fetch of TheCubicle's Calvin's Full-Function Crazy
+# 3x3 (Center-Locking) page via Wayback to check for colourway/edition differentiation.
+id: thecubicle-calvins-full-function-crazy-colors-2025
+entity: source
+kind: retailer
+title: "Calvin's Full-Function Crazy 3x3 (Center-Locking) – TheCubicle (colour check)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/calvins-full-function-crazy-3x3-center-locking"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250430014044id_/https://www.thecubicle.com/products/calvins-full-function-crazy-3x3-center-locking"
+excerpt: |-
+  "Black - $21.99 USD" — a single purchasable colour option, no separate edition name.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Only one colour (Black) is offered; no differentiated
+  edition or second configuration was found."
+status: sourced
