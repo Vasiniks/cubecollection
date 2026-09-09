@@ -1,0 +1,35 @@
+# variant: maru-vx-3-original--core-m
+# Pass 4 (variant enumeration), Agent G. The "VX-3 Core M" configuration: traditional glued-in
+# magnets PLUS a corner/core magnet system, per TheCubicle's own dedicated product page.
+id: maru-vx-3-original--core-m
+entity: variant
+model_id: maru-vx-3-original
+name: "Maru VX-3 Core M"
+aliases:
+  - name: "Maru VX-3 Core M"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-vx-3-core-m
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: dual_layer
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3-core-m]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3-core-m]
+    note: "Differentiation search performed: 'Stickerless'/'Black' stock options at one price,
+      no separate edition name. Magnet configuration is the variant-defining axis."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-maru-vx-3-core-m]
+    note: "Source states directly: 'This version of the VX-3 has a corner/core magnet system
+      along side the traditional magnets glued into the pieces.' No single vocabulary value
+      names a combined traditional-plus-core-corner system; `dual_layer` ('Two sets of
+      positioning magnets') is the closest available reading, recorded at reduced confidence
+      because it is this record's own mapping of the source's prose onto the vocabulary, not a
+      term the source itself uses."

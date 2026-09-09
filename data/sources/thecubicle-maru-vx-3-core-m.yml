@@ -1,0 +1,28 @@
+# source: thecubicle-maru-vx-3-core-m
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the Maru VX-3 Core
+# M, a second magnetic configuration of the base VX-3 design, adding a core/corner magnet
+# system alongside the traditional glued-in magnets.
+id: thecubicle-maru-vx-3-core-m
+entity: source
+kind: retailer
+title: "Maru VX-3 Core M – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-vx-3-core-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240530043209id_/https://www.thecubicle.com/products/maru-vx-3-core-m"
+excerpt: |-
+  "The VX-3 Core M is a 3x3 from Maru. This version of the VX-3 has a corner/core magnet
+  system along side the traditional magnets glued into the pieces. None of these magnets are
+  adjustable." Purchase options: "Stickerless - $23.99 USD" / "Black - $23.99 USD".
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Directly describes a magnet configuration combining
+  traditional (edge/piece-glued) magnets with an added corner/core magnet system — read as
+  `dual_layer` (two distinct positioning-magnet systems) per this archive's magnet-
+  configurations vocabulary, since no single vocabulary value names a traditional+core-corner
+  combination directly; the source's own wording is quoted in full so a future pass can
+  reassess this mapping. 'Stickerless'/'Black' options collapse per the GAN356 Air precedent."
+status: sourced

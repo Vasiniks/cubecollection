@@ -1,0 +1,21 @@
+# variant: maru-3x3-original--standard
+# Pass 4 (variant enumeration), Agent G. The plain Maru 3x3, stock colours only. The "Special
+# Patterns" edition (seven distinct named sticker patterns) is enumerated as separate variants
+# below, per DATA_MODEL §3.6/§4.1.
+id: maru-3x3-original--standard
+entity: variant
+model_id: maru-3x3-original
+name: "Maru 3x3"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-colors-2024]
+    note: "Differentiation search performed: TheCubicle's own base product page (re-fetched via
+      Wayback) offers Black/White stock colours only, no pattern/edition name — collapsed into
+      one baseline per the GAN356 Air precedent. The separately-marketed 'Special Patterns'
+      edition (thecubicle-maru-3x3-special-patterns) is enumerated as its own set of variants,
+      not folded in here."

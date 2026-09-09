@@ -1,0 +1,38 @@
+# variant: cubetwist-3x3-standard--original
+# Pass 4 (variant enumeration), Agent G. CubeTwist's own official 2010 catalogue page (Tier 1,
+# manufacturer's own site) names "梯色魔方三阶原色" ("CubeTwist Magic Cube, 3rd-order, original
+# colour") as its own catalogue entry, distinct from "三阶黑面" (black face) and "三阶白面"
+# (white face) siblings named in the same page's own navigation
+# (cubetwist-com-2010-3x3-listing). Following the DaYan Bermuda Triangle precedent, each
+# manufacturer-named colourway is its own variant record.
+id: cubetwist-3x3-standard--original
+entity: variant
+model_id: cubetwist-3x3-standard
+name: "CubeTwist 3x3 (Original Colour)"
+aliases:
+  - name: "梯色魔方三阶原色"
+    source: cubetwist-com-2010-3x3-listing
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "原色 (Original Colour)"
+status: stub
+attestations:
+  /name:
+    confidence: reported
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "Tier 1, manufacturer's own official catalogue page, naming this as its own distinct
+      catalogue entry alongside black-face and white-face siblings."
+  /edition/types:
+    confidence: reported
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "Differentiation search performed: the manufacturer's own site names three colourway
+      catalogue entries (original, black face, white face) plus a DIY loose-parts sibling. No
+      price, magnet, core, or further sub-configuration was found for this specific colourway
+      on the manufacturer's own company-showcase-style page, which carries no visible 'buy'
+      mechanism."
+  /colorway/designation:
+    confidence: reported
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "'原色' (original colour) is the manufacturer's own verbatim catalogue name."

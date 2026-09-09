@@ -1,0 +1,34 @@
+# variant: maru-vx-3-original--m
+# Pass 4 (variant enumeration), Agent G. The "VX-3 M" magnetic configuration: glued-in,
+# non-adjustable magnets, per TheCubicle's own dedicated product page.
+id: maru-vx-3-original--m
+entity: variant
+model_id: maru-vx-3-original
+name: "Maru VX-3 M"
+aliases:
+  - name: "Maru VX-3 M"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-vx-3-m
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: single_layer
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3-m]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3-m]
+    note: "Differentiation search performed: 'Stickerless' and 'Black' are stock colour/
+      application options at one price, no separate edition name. Magnet configuration is the
+      variant-defining axis here, not colour."
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [thecubicle-maru-vx-3-m]
+    note: "'The magnets are glued into the pieces and are therefore not adjustable' — read as
+      `single_layer` (one set of positioning magnets between adjacent pieces), the closest
+      vocabulary match to a traditional glued-in edge-magnet system, contrasted against the
+      Core M sibling's additional corner/core system."

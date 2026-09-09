@@ -1,0 +1,44 @@
+# variant: cubetwist-3x3-standard--white-face
+# Pass 4 (variant enumeration), Agent G. CubeTwist's own official 2010 catalogue names "三阶白面"
+# ("3rd-order, white face") in the same navigation as its black-face sibling
+# (cubetwist-com-2010-3x3-listing), though its own dedicated page was not independently fetched
+# this pass (the source's own reliability_note records this gap).
+id: cubetwist-3x3-standard--white-face
+entity: variant
+model_id: cubetwist-3x3-standard
+name: "CubeTwist 3x3 (White Face)"
+aliases:
+  - name: "三阶白面"
+    source: cubetwist-com-2010-3x3-listing
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "白面 (White Face)"
+  body:
+    plastic_color_name: "White"
+status: stub
+attestations:
+  /name:
+    confidence: uncertain
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "Named only via the black-face page's own prev/next navigation link ('上一条: 三阶白面'),
+      not independently fetched from its own dedicated page this pass — still Tier 1 first-
+      party structured data (a manufacturer's own site navigation), but weaker than the
+      original-colour and black-face records, which have their own directly-fetched pages/
+      retail corroboration."
+  /edition/types:
+    confidence: uncertain
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "Differentiation search performed within the limits above: named as a distinct
+      catalogue entry, but no independent page, price, or spec detail was retrieved for it this
+      pass."
+  /colorway/designation:
+    confidence: uncertain
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "'白面' (white face) is the manufacturer's own verbatim navigation-link name."
+  /colorway/body/plastic_color_name:
+    confidence: uncertain
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "Inferred from the name '白面' (white face) itself; not independently confirmed on a
+      dedicated product page."

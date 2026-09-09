@@ -1,0 +1,37 @@
+# variant: calvins-crazy-mirror-3x3x3--4-circles
+# Pass 4 (variant enumeration), Agent G. The model record itself already identifies "4 Circles"
+# and "6 Circles" as the model's two variant-level configurations (circle count chosen at
+# assembly, per DATA_MODEL §4.2's worked decision A) — this is that enumeration. Sourced
+# directly from TheCubicle's own dedicated "4 Circles" product page.
+id: calvins-crazy-mirror-3x3x3--4-circles
+entity: variant
+model_id: calvins-crazy-mirror-3x3x3
+name: "Calvin's Crazy Mirror 3x3x3 (4 Circles)"
+# scope_class is reference_only, inherited from the calvins-crazy-mirror-3x3x3 model record.
+scope_class: reference_only
+edition:
+  types: [standard]
+  designation: "4 Circles"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-calvins-crazy-mirror-3x3x3]
+    note: "TheCubicle's own dedicated product page names this configuration directly: 'The
+      Calvin's Crazy Mirror 3x3x3 (4 Circles) is a crazy 3x3 with 3D printed extensions glued
+      onto it to make it into a mirror cube. The circles can rotate independently of the rest
+      of the puzzle.'"
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-calvins-crazy-mirror-configs-2025]
+    note: "Differentiation search performed: this configuration's own dedicated product page
+      (re-fetched via Wayback) offers a single purchasable colour ('Black (Silver)') and no
+      separate edition name beyond the circle-count distinction already captured at the
+      variant level (4 Circles vs. 6 Circles)."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-calvins-crazy-mirror-3x3x3]
+    note: "\"4 Circles\" is the retailer's own bracketed configuration name on this exact
+      product's own title, distinguishing it from its sibling circle-count configuration of
+      the same base design. Set to resolve a fingerprint collision (rule 28) between the two
+      otherwise-identical variant records honestly, rather than leaving it flagged."

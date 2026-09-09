@@ -1,0 +1,32 @@
+# variant: maru-nano-original--standard
+# Pass 4 (variant enumeration), Agent G. The Maru Nano Cube's sole sold configuration: a
+# self-assembly DIY kit (no assembled alternative was found at either retailer checked), sold
+# across many stock body colours. "Luminous"/"Glow In The Dark" was specifically considered as
+# a possible materials-distinction split (glow-in-the-dark plastic is a different material, not
+# just a different paint colour) but rejected: it is offered as one peer option among many
+# (Red, Yellow, Blue, White, Black, Transparent, Transparent Blue) at the SAME price across both
+# retailers checked, with no separate name, marketing, or price tier distinguishing it from the
+# other stock colours — the anti-explosion discipline is applied even though the material
+# itself differs, because nothing in the evidence treats it as a separately marketed edition.
+id: maru-nano-original--standard
+entity: variant
+model_id: maru-nano-original
+name: "Maru Nano Cube"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from maru-nano-original's model record (15mm, non-WCA-legal-size significance basis). Rule 15
+# resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-nano-colors-2023, cubezz-maru-nano]
+    note: "Differentiation search performed: TheCubicle (2023 Wayback capture, 8 colours) and
+      Cubezz.com (2015 capture, 6 colours across separate SKUs) both offer many stock body
+      colours at one shared price/SKU tier, none separately named as an edition. 'Luminous'/
+      'Glow In The Dark' was specifically considered as a materials-distinction split (see file
+      header) and rejected under the anti-explosion discipline: it is priced and marketed
+      identically to the plain colours at both retailers, in both eras. No assembled
+      alternative to the DIY-kit format was found at either retailer."

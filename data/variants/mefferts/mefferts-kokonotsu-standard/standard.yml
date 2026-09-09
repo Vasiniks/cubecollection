@@ -1,0 +1,22 @@
+# variant: mefferts-kokonotsu-standard--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-mefferts-kokonotsu-colors-2025) offers a
+# single SKU ("Default Title") with no colour, edition, or configuration options. No other
+# retailer listing or manufacturer-site catalogue entry was found this pass either.
+id: mefferts-kokonotsu-standard--standard
+entity: variant
+model_id: mefferts-kokonotsu-standard
+name: "Meffert's Kokonotsu Pillow 3x3"
+# scope_class is reference_only, inherited from the mefferts-kokonotsu-standard model record.
+scope_class: reference_only
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mefferts-kokonotsu-colors-2025]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2025-06-14 Wayback capture) offers a single 'Default Title' SKU with no colour, edition,
+      or configuration options. No manufacturer-site listing or second retailer was found this
+      pass to check for regional/other-edition variants."

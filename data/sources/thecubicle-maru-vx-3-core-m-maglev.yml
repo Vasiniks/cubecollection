@@ -1,0 +1,30 @@
+# source: thecubicle-maru-vx-3-core-m-maglev
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the Maru VX-3 Core M
+# MagLev, described directly as Maru's flagship 3x3, combining edge/corner and corner/core
+# magnetisation with MagLev.
+id: thecubicle-maru-vx-3-core-m-maglev
+entity: source
+kind: retailer
+title: "Maru VX-3 Core M MagLev – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-vx-3-core-m-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241113220029id_/https://www.thecubicle.com/products/maru-vx-3-core-m-maglev"
+excerpt: |-
+  "The VX-3 Core M MagLev is the new flagship 3x3 speedcube from Maru. This puzzle has
+  edge/corner as well as corner/core magnetization. There is no magnetic adjustment." Comes
+  with: "Maru VX-3 Core M MagLev / Maru Cube Stand." Purchase options: "Stickerless - $24.99
+  USD" / "Black - $24.99 USD" / "Stickerless [+Lube Service] - $29.99 USD" / "Black [+Lube
+  Service] - $29.99 USD".
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Explicitly names this Maru's flagship 3x3, combining
+  edge/corner and corner/core magnetisation with MagLev — `maglev: maglev` per this archive's
+  vocabulary. 'Stickerless'/'Black' collapse per the GAN356 Air precedent; the '+Lube Service'
+  add-on options are a checkout-time service add-on, not a separate marketed edition, and are
+  not built into a variant (DATA_MODEL §4.3's own distinction between a separately marketed
+  product and an optional service selected at checkout on a cube the buyer already chose)."
+status: sourced

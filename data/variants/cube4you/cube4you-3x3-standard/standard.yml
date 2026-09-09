@@ -1,0 +1,27 @@
+# variant: cube4you-3x3-standard--standard
+# Pass 4 (variant enumeration), Agent G. Cube4You's own storefront sells this DIY-kit-only
+# product across eight stock colours (Black, Blue, Glow Blue, Green, Orange, Pink, Transparent,
+# White) at $5.99-$6.99, none separately named as an edition — collapsed into one baseline per
+# the GAN356 Air precedent. No assembled alternative was found (per the model record's own
+# search); the DIY-kit format is this model's only sold configuration, not a second axis to
+# enumerate against (contrast Maru CX3 and CubeTwist, where a genuine assembled/DIY-kit pair
+# exists).
+id: cube4you-3x3-standard--standard
+entity: variant
+model_id: cube4you-3x3-standard
+name: "Cube4You 3x3x3 Speed Cube"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cube4you-3x3x3-diy-speed-cube-2017]
+    note: "Differentiation search performed: the manufacturer's own storefront (Tier 1, 2017
+      Wayback capture) lists eight stock colours at near-identical prices ($5.99-$6.99), none
+      separately named as an edition — collapsed per the GAN356 Air precedent. No third-party
+      retailer (TheCubicle, SpeedCubeShop, Cubelelo, Cubezz — all swept at model-enumeration
+      stage) was found carrying this product at all, so no further differentiation could be
+      checked beyond the manufacturer's own single category page. No assembled (non-DIY)
+      alternative was found anywhere."

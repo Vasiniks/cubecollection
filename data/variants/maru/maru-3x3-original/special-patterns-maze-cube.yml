@@ -1,0 +1,44 @@
+# variant: maru-3x3-original--special-patterns-maze-cube
+# Pass 4 (variant enumeration), Agent G. See special-patterns-4-color.yml for shared reasoning.
+# A customer review on the source listing describes this pattern's non-turning "florian cuts"
+# absence and functional differences from an ordinary 3x3 solve (Tier 5, not cited as evidence,
+# recorded only to explain why "Maze Cube" is treated as a functionally distinct pattern, not
+# merely a different sticker colour).
+id: maru-3x3-original--special-patterns-maze-cube
+entity: variant
+model_id: maru-3x3-original
+name: "Maru 3x3 (Special Patterns: Maze Cube)"
+aliases:
+  - name: "Black (Maze Cube)"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-3x3-special-patterns
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Special Patterns"
+colorway:
+  designation: "Maze Cube"
+  body:
+    plastic_color_name: "Black"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "Differentiation search performed: one of seven individually-named, fixed-body-colour
+      sticker patterns at one shared price ($13.99). The source's own description states some
+      patterns 'require additional steps... to ensure the patterns are returned to their
+      original state' — read as applying to this and the Yellow Maze Cube pattern."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "'Maze Cube' is the retailer's own bracketed pattern name."
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]

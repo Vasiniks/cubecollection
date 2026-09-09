@@ -1,0 +1,29 @@
+# source: thecubicle-maru-nano-colors-2023
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own Maru Nano Cube (DIY Kit) page,
+# re-fetched to check the full colour-option list for differentiation.
+id: thecubicle-maru-nano-colors-2023
+entity: source
+kind: retailer
+title: "Maru Nano Cube (DIY Kit) – TheCubicle (colour options)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-nano-3x3-15mm-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230325112208id_/https://www.thecubicle.com/products/maru-nano-3x3-15mm-diy-kit"
+excerpt: |-
+  Purchase options: "Black - $7.99 USD" / "White - $7.99 USD" / "Blue - $7.99 USD" / "Yellow -
+  $7.99 USD" / "Red - $7.99 USD" / "Glow In The Dark - $7.99 USD" / "Transparent - $7.99 USD" /
+  "Transparent Blue - $7.99 USD". "Please note that assembly is required for this cube -- the
+  kit includes all of the parts you need to assemble the cube by yourself." "The Maru Lube vial
+  pictured is not included on the Black and Glow in the Dark variants."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Eight stock colour options at one shared price, none
+  separately named as an edition — collapsed into one baseline per the GAN356 Air precedent.
+  Cross-checked against the independent non-US retailer capture (cubezz-maru-nano, 2015), which
+  separately confirms a similar stock-colour set (Red, Yellow, Luminous, Blue, White, Black) on
+  five years earlier, each as its own catalogue SKU — consistent with the same reading (stock
+  body colours, not named editions) across both retailers and both eras."
+status: sourced

@@ -1,0 +1,22 @@
+# source: thecubicle-maru-3x3-colors-2024
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own base Maru 3x3 page, re-fetched to
+# check colour-option differentiation, distinct from the Special Patterns edition.
+id: thecubicle-maru-3x3-colors-2024
+entity: source
+kind: retailer
+title: "Maru 3x3 – TheCubicle (colour options)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241110173532id_/https://www.thecubicle.com/products/maru-3x3"
+excerpt: |-
+  "Black - $6.99 USD" / "White - $6.99 USD" — two stock body colours, no special pattern or
+  edition name.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Two stock body colours only on the base (non-Special-
+  Patterns) listing — collapses into one baseline per the GAN356 Air precedent."
+status: sourced

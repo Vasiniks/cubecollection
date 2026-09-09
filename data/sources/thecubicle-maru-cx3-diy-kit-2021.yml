@@ -1,0 +1,28 @@
+# source: thecubicle-maru-cx3-diy-kit-2021
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own DIY-kit configuration of the Maru
+# CX3, sold as a separate product page from the Assembled version.
+id: thecubicle-maru-cx3-diy-kit-2021
+entity: source
+kind: retailer
+title: "Maru CX3 (DIY Kit) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-cx3-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210304210114id_/https://www.thecubicle.com/products/maru-cx3-diy-kit"
+excerpt: |-
+  Purchase options: "Black - $14.99 USD" / "White - $14.99 USD" / "Stickerless - $15.99 USD" /
+  "Purple - $15.99 USD" / "Blue - $15.99 USD" / "Transparent - $15.99 USD" / "Transparent Blue
+  - $15.99 USD" / "Glow In The Dark - $15.99 USD". Product Description: "The Glow In The Dark
+  and Transparent versions feature transparent stickers."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. A separate product page (not merely an option on the
+  Assembled page) selling the unassembled version of the same CX3 design — read as a variant-
+  level assembled/DIY-kit axis of one model per this lane's own instruction (assembly is a
+  sold-configuration choice, not a design difference). Same stock-colour collapse discipline
+  as the Assembled listing applies here; the 'transparent stickers' note describes the Glow In
+  The Dark/Transparent options' construction, not a separately named/marketed edition."
+status: sourced

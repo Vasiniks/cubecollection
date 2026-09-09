@@ -1,0 +1,38 @@
+# variant: maru-3x3-original--special-patterns-shepherds-cube
+# Pass 4 (variant enumeration), Agent G. See special-patterns-4-color.yml for shared reasoning.
+id: maru-3x3-original--special-patterns-shepherds-cube
+entity: variant
+model_id: maru-3x3-original
+name: "Maru 3x3 (Special Patterns: Shepherd's Cube)"
+aliases:
+  - name: "White (Shepherd's Cube)"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-3x3-special-patterns
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Special Patterns"
+colorway:
+  designation: "Shepherd's Cube"
+  body:
+    plastic_color_name: "White"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "Differentiation search performed: one of seven individually-named, fixed-body-colour
+      sticker patterns at one shared price ($13.99). No further sub-configuration found."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "'Shepherd's Cube' is the retailer's own bracketed pattern name."
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]

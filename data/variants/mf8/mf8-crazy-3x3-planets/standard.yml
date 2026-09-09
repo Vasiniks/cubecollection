@@ -1,0 +1,31 @@
+# variant: mf8-crazy-3x3-planets--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: this earlier
+# ("Assorted") generation of MF8's Crazy 3x3 Planets line is sold with a single purchasable
+# colour option ("Black") and no buyer-facing per-planet choice — contrast the later "Plus"
+# generation (mf8-crazy-3x3-plus-planet-series), which explicitly names and sells nine
+# individually-selectable planet/colourway "Versions". The individual planet a buyer of THIS
+# product receives is assigned randomly per its own "Assorted"/"collect them all" framing
+# (speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015), not chosen at purchase, so it does
+# not constitute a manufacturer-declared, separately-marketed colourway axis at this generation.
+# One baseline variant.
+id: mf8-crazy-3x3-planets--standard
+entity: variant
+model_id: mf8-crazy-3x3-planets
+name: "MF8 Crazy 3x3 Planets (Assorted)"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from mf8-crazy-3x3-planets's model record. Rule 15 resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mf8-crazy-3x3-planets-assorted-color-2020, speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015]
+    note: "Differentiation search performed: TheCubicle's own live listing (re-fetched 2020-09-25
+      Wayback capture) offers a single purchasable colour ('Black') with no per-planet Version
+      selector of the kind the later 'Plus' generation offers. Both this pass's own retailer
+      captures (2015 SpeedCubeShop, 2020 TheCubicle) describe the product as a randomised
+      'Assorted' planet, sold as one SKU, not as buyer-selectable named colourways. Read as the
+      model's one sold configuration; no coating, magnet, or core differentiation was found
+      (the model's own specs record no magnet_architecture value either way)."
