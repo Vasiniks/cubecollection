@@ -1,0 +1,29 @@
+# variant: qiyi-valk-3--m
+# Pass 4. The factory-magnetized configuration, per TheCubicle's own product page: "The Valk 3 M
+# is a factory magnetized version of one of the most revered 3x3s... This version features a
+# light magnetic feel." Already cited by the model record itself as a variant of this model
+# (DATA_MODEL section 4.2 worked decision A).
+id: qiyi-valk-3--m
+entity: variant
+model_id: qiyi-valk-3
+name: "Valk 3 M"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: single_layer
+  magnet_strength: "light magnetic feel"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-valk-3-m-product]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-valk-3-m-product]
+    note: "'a factory magnetized version... light magnetic feel' does not itself specify a
+      precise magnet arrangement; recorded at reduced confidence as the vocabulary's single
+      generic magnetized layer."
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-valk-3-m-product]

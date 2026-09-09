@@ -1,0 +1,19 @@
+# variant: qiyi-thunderclap-v3-m--standard
+# Pass 4. The sole configuration found for this model. Still current as of the 2024-2025
+# retailer collection capture, filed under a single "qiyi-thunderclap-v3-m" slug with no
+# sibling colourway/coating slug found in the same collection enumeration.
+id: qiyi-thunderclap-v3-m--standard
+entity: variant
+model_id: qiyi-thunderclap-v3-m
+name: "QiYi Thunderclap V3 M"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v3-m-product, thecubicle-qiyi-mofangge-collection-2025]
+    note: "TheCubicle's own product page describes a single configuration; the 2024-2025
+      collection enumeration lists only one 'qiyi-thunderclap-v3-m' slug for this line, with no
+      sibling colourway/coating slug."

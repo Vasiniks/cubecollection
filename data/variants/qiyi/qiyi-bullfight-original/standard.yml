@@ -1,0 +1,20 @@
+# variant: qiyi-bullfight-original--standard
+# Pass 4. The sole known sold configuration of the model. Existence rests on the same
+# tier-3(-overridden) wiki source as the model itself; no retailer page was located this pass
+# (or in pass 3) to corroborate any colourway, magnet, or coating axis, so this is a pure
+# identity stub with no config overrides.
+id: qiyi-bullfight-original--standard
+entity: variant
+model_id: qiyi-bullfight-original
+name: "QiYi Bullfight"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source establishes the product existed; no source
+      distinguishes any further configuration, so this is recorded as the model's one standard
+      sold configuration."

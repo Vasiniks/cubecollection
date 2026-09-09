@@ -1,0 +1,16 @@
+# variant: qiyi-valk-3-mini--standard
+# Pass 4. Sole configuration found; only one "valk-3-mini-4-74cm" slug exists in TheCubicle's
+# own 2019-2025 /products/valk-* prefix enumeration, no magnetic sibling found.
+id: qiyi-valk-3-mini--standard
+entity: variant
+model_id: qiyi-valk-3-mini
+name: "Valk 3 Mini"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-valk-3-mini-product, thecubicle-products-valk-prefix-2025]
+    note: "Single retailer slug found across a six-year prefix enumeration; no sibling SKU."

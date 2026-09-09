@@ -1,0 +1,29 @@
+# variant: qiyi-m-pro-v2--standard
+# Pass 4. Sole configuration found; the 2024-2025 collection enumeration lists only one
+# "qiyi-m-pro-v2-3x3-flagship" slug. TheCubicle's own copy calls this "the Flagship version
+# which has a matte finish" — "Flagship" is retained in the product name and this description
+# rather than as a structured `edition.designation`, deliberately: with no sibling V2 SKU found
+# to contrast it against, a bare designation on a lone variant would read as an unenumerated
+# sibling tier (lint rule 25) that in fact does not exist on the evidence found this pass. Coating
+# is still recorded structurally since it is independently attested. Flagged as an open question
+# whether a non-Flagship V2 tier exists elsewhere.
+id: qiyi-m-pro-v2--standard
+entity: variant
+model_id: qiyi-m-pro-v2
+name: "QiYi M Pro V2 3x3 (Flagship)"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  coating: matte
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-v2-3x3-flagship-product, thecubicle-qiyi-mofangge-collection-2025]
+    note: "Single collection slug found; no sibling non-Flagship V2 SKU was located this pass."
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-v2-3x3-flagship-product]
+    note: "'This is the Flagship version which has a matte finish' is TheCubicle's own direct
+      statement."

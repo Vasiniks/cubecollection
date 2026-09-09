@@ -1,0 +1,27 @@
+# variant: qiyi-valk-3-power--standard
+# Pass 4. The base (non-magnetic) configuration, per TheCubicle's own product page ("dual
+# vertical core, capped pieces, pure primary internals"). The 2018 QiYi storefront
+# (qiyicube-storefront-2018, tier 1) lists "Valk3 Power (Black/M Black/M Stickerless)" — "Black"
+# read as this standard variant's stock sticker colour (collapsed, not split); "M Black" as the
+# already-modelled magnetic sibling (see power-m.yml); "M Stickerless" as a further magnetic +
+# stickerless sibling (see power-m-stickerless.yml).
+id: qiyi-valk-3-power--standard
+entity: variant
+model_id: qiyi-valk-3-power
+name: "Valk 3 Power"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-valk-3-power-product]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-valk-3-power-product, thecubicle-valk-3-power-m-product]
+    note: "The base page does not itself state 'non-magnetic'; inferred by contrast with the
+      sibling 'Power M' page's own 'pre-magnetized by the factory' framing, which implies the
+      base is not."

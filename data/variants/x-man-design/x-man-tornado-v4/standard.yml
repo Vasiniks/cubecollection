@@ -1,0 +1,24 @@
+# variant: x-man-tornado-v4--standard
+# Pass 4. The base "Flagship" mechanical configuration, per TheCubicle's own product page (slug
+# "x-man-tornado-v4-m-3x3-flagship"). A UV-coated sibling ("Pioneer UV") and the electronic "V4
+# AI" sibling are recorded separately (see pioneer-uv.yml, v4-ai.yml), the latter per the
+# model's own explicit boundary call treating it as a variant of this model.
+id: x-man-tornado-v4--standard
+entity: variant
+model_id: x-man-tornado-v4
+name: "X-Man Tornado V4 M (Flagship)"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  core_system: ball_core
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-m-3x3-flagship-product]
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-m-3x3-flagship-product]
+    note: "'This one has a ball-core' is TheCubicle's own direct statement, per the model's own
+      description."

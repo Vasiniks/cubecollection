@@ -1,0 +1,31 @@
+# variant: x-man-xt3-v1--pioneer-maglev-uv
+# Pass 4. The "Pioneer MagLev + UV" configuration, named directly on the same product page as
+# the base Flagship (thecubicle-x-man-xt3-v1-3x3-flagship-product: "Versions offered on this
+# page: 'Flagship', 'Flagship + UV', 'Pioneer MagLev + UV'").
+id: x-man-xt3-v1--pioneer-maglev-uv
+entity: variant
+model_id: x-man-xt3-v1
+name: "X-Man XT3 V1 3x3 (Pioneer MagLev + UV)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Pioneer"
+config:
+  maglev: maglev
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+    note: "Named directly as a distinct purchase option on the same product page as the base
+      Flagship."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]

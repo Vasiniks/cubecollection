@@ -1,0 +1,31 @@
+# variant: qiyi-ms-original--stickered-black
+# Pass 4. A stickered application sibling per the model's own quote of the Speedsolving wiki:
+# "This puzzle comes in a stickered (black) version and a stickerless version." Rests on the
+# wiki alone (tier 3, overridden); no retailer page for a stickered SKU was found (TheCubicle's
+# current single "qiyi-ms-3x3" page does not offer one), so this may be a discontinued or
+# non-US-market configuration.
+id: qiyi-ms-original--stickered-black
+entity: variant
+model_id: qiyi-ms-original
+name: "QiYi MS 3x3 (Stickered, Black)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+  body:
+    plastic_color_name: "black"
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source; no retailer corroboration found this pass."
+  /colorway/application:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /colorway/body/plastic_color_name:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "'stickered (black) version' — the parenthetical names the body plastic colour, not a
+      sticker colour."

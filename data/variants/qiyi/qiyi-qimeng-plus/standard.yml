@@ -1,0 +1,18 @@
+# variant: qiyi-qimeng-plus--standard
+# Pass 4. Sole configuration found; only one "qiyi-qimeng-plus-3x3-m-9cm" slug in the collection
+# enumeration, already magnetic per the model's own retailer copy and its own "M" naming — no
+# non-magnetic sibling was located. Inherits scope_class: reference_only from the model.
+id: qiyi-qimeng-plus--standard
+entity: variant
+model_id: qiyi-qimeng-plus
+name: "QiYi QiMeng Plus 3x3 M (9cm)"
+scope_class: reference_only
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product]
+    note: "TheCubicle's product page describes a single (magnetic) configuration; no
+      non-magnetic sibling was located this pass, consistent with the model's own note."

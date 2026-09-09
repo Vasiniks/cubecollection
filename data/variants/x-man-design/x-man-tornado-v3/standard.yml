@@ -1,0 +1,28 @@
+# variant: x-man-tornado-v3--standard
+# Pass 4. The "Standard" configuration, per TheCubicle's own product page
+# (thecubicle-x-man-tornado-v3-m-standard-product, slug "x-man-tornado-v3-m-standard"): "X-man
+# has released 3 versions, introducing core magnets and maglev tech to the Tornado line" —
+# framing Standard as the baseline of three named configurations, the other two being
+# "Magnetic Core" and "Pioneer MagLev" (see magnetic-core.yml, pioneer-maglev.yml). A cosmetic
+# "blank center cap" sibling slug also exists in the 2025 collection enumeration
+# (thecubicle-x-man-designs-collection-2025: "x-man-tornado-v3-flagship-standard-blank-center-
+# cap") — treated as a logo/no-logo cosmetic option on this same SKU, not a separate variant
+# (candidate rejected — see report).
+id: x-man-tornado-v3--standard
+entity: variant
+model_id: x-man-tornado-v3
+name: "X-Man Tornado V3 M (Standard)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Standard"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+    note: "TheCubicle's own page/slug names this the 'Standard' configuration, one of '3
+      versions' alongside Magnetic Core and Pioneer MagLev."

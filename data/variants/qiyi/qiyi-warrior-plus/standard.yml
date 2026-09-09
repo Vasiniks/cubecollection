@@ -1,0 +1,28 @@
+# variant: qiyi-warrior-plus--standard
+# Pass 4. The base (non-magnetic) 188mm novelty configuration. TheCubicle's 2024-2025 collection
+# enumeration lists this as "qiyi-warrior-plus-3x3-18-8cm", distinct from a second,
+# separately-slugged magnetic sibling ("qiyi-warrior-plus-3x3-m-18-8cm") — see the sibling
+# "magnetic" variant record. Inherits scope_class: reference_only from the model.
+id: qiyi-warrior-plus--standard
+entity: variant
+model_id: qiyi-warrior-plus
+name: "QiYi Warrior Plus"
+scope_class: reference_only
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-qiyi-mofangge-collection-2025, thecubicle-qiyi-warrior-plus-3x3-product]
+    note: "The retailer's own product-page copy and slug ('qiyi-warrior-plus-3x3-18-8cm') do not
+      mention magnets; the 2024-2025 collection enumeration separately lists a magnetic sibling
+      under a distinct slug, treated as the axis distinguishing this variant from that one."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-warrior-plus-3x3-product]
+    note: "Inferred from the absence of any magnet claim in the base product's own copy/spec
+      table, and by contrast with the separately-slugged '...-3x3-m-18-8cm' magnetic sibling.
+      Not a direct 'non-magnetic' statement."

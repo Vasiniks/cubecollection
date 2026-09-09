@@ -1,0 +1,24 @@
+# variant: x-man-tornado-v2--standard
+# Pass 4. Sole configuration found; TheCubicle's own page describes one product ("125 total
+# setting combinations... adjust tension, spring elasticity, and magnet strength"), with no
+# separate colourway/coating sibling slug found (this product predates the collection-
+# enumeration window used for V3/V4).
+id: x-man-tornado-v2--standard
+entity: variant
+model_id: x-man-tornado-v2
+name: "X-Man Tornado V2"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: adjustable
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v2-3x3-product]
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v2-3x3-product]
+    note: "'Use the free included tool to adjust tension, spring elasticity, and magnet
+      strength' directly describes user-adjustable magnet strength."

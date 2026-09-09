@@ -1,0 +1,31 @@
+# variant: x-man-xt3-v1--flagship-uv
+# Pass 4. A UV-coated sibling of the Flagship tier, named directly on the same product page
+# (thecubicle-x-man-xt3-v1-3x3-flagship-product: "Versions offered on this page: 'Flagship',
+# 'Flagship + UV', 'Pioneer MagLev + UV'"), and independently corroborated by a distinct slug in
+# the 2025 collection enumeration ("x-man-xt-3-v1-3x3-flagship-uv").
+id: x-man-xt3-v1--flagship-uv
+entity: variant
+model_id: x-man-xt3-v1
+name: "X-Man XT3 V1 3x3 (Flagship + UV)"
+aliases:
+  - { name: "X-Man XT3 V1 3x3 Flagship UV", retailer: "TheCubicle", source: thecubicle-x-man-designs-collection-2025 }
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Flagship"
+config:
+  adjustment_system: tension_compression
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product, thecubicle-x-man-designs-collection-2025]
+    note: "Named directly as a distinct purchase option on the same product page as the base
+      Flagship, and independently corroborated by a distinct collection slug."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]

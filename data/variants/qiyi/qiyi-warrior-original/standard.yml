@@ -1,0 +1,17 @@
+# variant: qiyi-warrior-original--standard
+# Pass 4. Sole configuration found; TheCubicle's page (captured discontinued) gives only a bare
+# "Gross Weight: 100g" figure and no colourway/magnet/coating options.
+id: qiyi-warrior-original--standard
+entity: variant
+model_id: qiyi-warrior-original
+name: "QiYi Warrior"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-3x3-product]
+    note: "TheCubicle's product page describes a single configuration; no colourway, magnet, or
+      coating option was found."

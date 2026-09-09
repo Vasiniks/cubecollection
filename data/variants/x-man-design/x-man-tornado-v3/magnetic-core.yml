@@ -1,0 +1,33 @@
+# variant: x-man-tornado-v3--magnetic-core
+# Pass 4. The "Magnetic Core" configuration, per TheCubicle's own product page naming "3
+# versions... introducing core magnets" and the 2025 collection enumeration's own distinct
+# "x-man-tornado-v3-m-magnetic-core" slug. No separate descriptive product-page text for this
+# specific slug was fetched this pass; existence and naming rest on the standard page's own "3
+# versions" framing plus the collection slug.
+id: x-man-tornado-v3--magnetic-core
+entity: variant
+model_id: x-man-tornado-v3
+name: "X-Man Tornado V3 M (Magnetic Core)"
+aliases:
+  - { name: "X-Man Tornado V3 M Magnetic Core", retailer: "TheCubicle", source: thecubicle-x-man-designs-collection-2025 }
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Magnetic Core"
+config:
+  magnet_configuration: core_corner
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025, thecubicle-x-man-tornado-v3-m-standard-product]
+    note: "Named as one of '3 versions... introducing core magnets' on the Standard page; the
+      specific 'magnetic-core' slug itself was not individually fetched this pass."
+  /edition/designation:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+    note: "'introducing core magnets' read as magnets acting between the core and corner
+      pieces, the closest vocabulary match; not a precise specification."

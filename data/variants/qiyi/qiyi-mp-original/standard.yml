@@ -1,0 +1,17 @@
+# variant: qiyi-mp-original--standard
+# Pass 4. Sole configuration found; existence rests on the wiki alone (tier 3, overridden), same
+# as the model. No retailer page was located this or the prior pass under any tried slug.
+id: qiyi-mp-original--standard
+entity: variant
+model_id: qiyi-mp-original
+name: "QiYi MP"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source establishes the product existed; no further
+      configuration distinction was found."

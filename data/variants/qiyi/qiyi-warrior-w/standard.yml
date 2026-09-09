@@ -1,0 +1,16 @@
+# variant: qiyi-warrior-w--standard
+# Pass 4. Sole configuration found; no sibling slug in any collection enumeration examined.
+id: qiyi-warrior-w--standard
+entity: variant
+model_id: qiyi-warrior-w
+name: "QiYi Warrior W"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-w-3x3-product]
+    note: "TheCubicle's product page describes a single configuration; no colourway, magnet, or
+      coating option was found."

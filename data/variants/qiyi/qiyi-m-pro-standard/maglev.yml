@@ -1,0 +1,26 @@
+# variant: qiyi-m-pro-standard--maglev
+# Pass 4. The "MagLev" configuration, per TheCubicle's own separate product page
+# (thecubicle-qiyi-m-pro-3x3-maglev-product), already cited by the model record as a variant of
+# this model (not a separate model), consistent with the wiki's own "multiple versions" framing.
+id: qiyi-m-pro-standard--maglev
+entity: variant
+model_id: qiyi-m-pro-standard
+name: "QiYi M Pro 3x3 (MagLev)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "MagLev"
+config:
+  maglev: maglev
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-3x3-maglev-product]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-3x3-maglev-product]
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-3x3-maglev-product]
+    note: "'a maglev tension system' is TheCubicle's own direct description."

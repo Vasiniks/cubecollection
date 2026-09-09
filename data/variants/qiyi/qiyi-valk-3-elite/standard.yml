@@ -1,0 +1,32 @@
+# variant: qiyi-valk-3-elite--standard
+# Pass 4. Sole configuration found; only one "valk-3-elite" slug exists in TheCubicle's own
+# 2019-2025 /products/valk-* prefix enumeration (thecubicle-products-valk-prefix-2025). The
+# product page describes "three different levels of strength" (light/moderate/strong) — read as
+# a retailer-side magnet-strength selection on one SKU (per DATA_MODEL's config.magnet_strength
+# being a free-text description, not itself a variant-splitting axis) rather than three separate
+# sold configurations; not split into separate variants (candidate rejected — see report).
+id: qiyi-valk-3-elite--standard
+entity: variant
+model_id: qiyi-valk-3-elite
+name: "Valk 3 Elite M"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: dual_layer
+  magnet_strength: "three levels offered (light / moderate / strong); moderate and strong use a 'twin-magnetic' center-edge plus corner-edge scheme"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-valk-3-elite-m-product, thecubicle-products-valk-prefix-2025]
+    note: "Single retailer slug found across a six-year prefix enumeration; no sibling SKU."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-valk-3-elite-m-product]
+    note: "'a brand new magnetic system... twin-magnetic scheme and use center-edge plus
+      corner-edge magnetism for positioning' read as two positioning layers; not a precise
+      vocabulary match."
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-valk-3-elite-m-product]

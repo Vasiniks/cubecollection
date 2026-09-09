@@ -1,0 +1,23 @@
+# variant: qiyi-m-pro-standard--standard
+# Pass 4. The base configuration, per TheCubicle's own "qiyi-m-pro-3x3" product page. The wiki's
+# parenthetical "(48 magnets, stickered/stickerless)" for this tier is NOT split into separate
+# stickered/stickerless variants here: only one "qiyi-m-pro-3x3" slug exists in the 2024-2025
+# collection enumeration, with no separate stickered/stickerless URL, so this reads as a
+# retailer stock-option choice on one SKU rather than a separately marketed edition (candidate
+# rejected — see report). Two further configurations of this same model — MagLev and MagLev +
+# Ballcore — are recorded as sibling variants (see maglev.yml, maglev-ballcore.yml).
+id: qiyi-m-pro-standard--standard
+entity: variant
+model_id: qiyi-m-pro-standard
+name: "QiYi M Pro 3x3"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-3x3-product]
+    note: "TheCubicle's own product page ('a budget-friendly, magnetic puzzle... hand-adjustable
+      compression system') describes this as the base tier, distinct from the separately-slugged
+      MagLev sibling."

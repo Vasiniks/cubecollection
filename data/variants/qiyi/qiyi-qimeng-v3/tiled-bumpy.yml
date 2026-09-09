@@ -1,0 +1,32 @@
+# variant: qiyi-qimeng-v3--tiled-bumpy
+# Pass 4. A surface-texture sibling of the base "Tiled" configuration, named
+# "qiyi-qimeng-v3-3x3-tiled-bumpy" in TheCubicle's own 2024-2025 collection URL enumeration
+# (thecubicle-qiyi-mofangge-collection-2025) — a materials/finish axis (DATA_MODEL materiality
+# rule 10) distinct from the base "Tiled" surface, per the model's own note flagging this as a
+# pass-4 question. No individual product page was fetched for this slug this pass; existence
+# rests on the collection-listing source alone, so confidence is held at `reported`.
+id: qiyi-qimeng-v3--tiled-bumpy
+entity: variant
+model_id: qiyi-qimeng-v3
+name: "QiYi QiMeng V3 3x3 (Tiled Bumpy)"
+aliases:
+  - { name: "QiYi QiMeng V3 3x3 (Tiled Bumpy)", retailer: "TheCubicle", source: thecubicle-qiyi-mofangge-collection-2025 }
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Tiled Bumpy"
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-qiyi-mofangge-collection-2025]
+    note: "Existence rests on a retailer collection URL-prefix enumeration alone (a distinct
+      '...-tiled-bumpy' slug alongside the base '...-tiled' slug); no individual product page
+      was fetched this pass."
+  /colorway/designation:
+    confidence: reported
+    sources: [thecubicle-qiyi-mofangge-collection-2025]
+    note: "'Tiled Bumpy' is the retailer's own product-name qualifier, read as a distinct
+      surface texture from the base 'Tiled' finish. No descriptive text beyond the URL slug was
+      found this pass."

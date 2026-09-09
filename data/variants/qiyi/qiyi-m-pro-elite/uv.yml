@@ -1,0 +1,27 @@
+# variant: qiyi-m-pro-elite--uv
+# Pass 4. A UV-coated sibling of the base Elite configuration, per the wiki: "It also came in a
+# UV version and an Art version." Rests on the wiki alone; no retailer page found.
+id: qiyi-m-pro-elite--uv
+entity: variant
+model_id: qiyi-m-pro-elite
+name: "QiYi M Pro Elite (UV)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "UV"
+config:
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /config/coating:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki: '...also came in a UV version...'. No retailer page corroborates this
+      specifically for the mechanical 'Elite' product (contrast the Smart Cube's own retailer
+      page, which does not itself mention a UV option either)."

@@ -1,0 +1,39 @@
+# variant: qiyi-m-pro-elite--art-version
+# Pass 4. A named colourway sibling of the base Elite configuration, per the wiki: "It also came
+# in a UV version and an Art version." "Art Version" is independently corroborated as a real,
+# named QiYi colourway designation by TheCubicle's own Smart Cube page (thecubicle-qiyi-smart-
+# cube-3x3-product: "The black version is the 'Art Version' which has rounded corners and gives
+# you a very nostalgic, black plastic with stickers look") for the electronic sibling — used
+# here only to corroborate that "Art Version" is a genuine QiYi naming convention, not to claim
+# the mechanical Elite's own Art Version shares every physical detail of the Smart Cube's.
+id: qiyi-m-pro-elite--art-version
+entity: variant
+model_id: qiyi-m-pro-elite
+name: "QiYi M Pro Elite (Art Version)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Art Version"
+  application: stickered
+  body:
+    plastic_color_name: "black"
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Existence of an Elite 'Art version' rests on the wiki alone."
+  /colorway/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+    note: "The 'stickers look' / black-plastic description is corroborated only for the Smart
+      Cube's own Art Version, not stated directly for the mechanical Elite's Art Version;
+      carried over at reduced confidence as the same manufacturer naming convention."
+  /colorway/body/plastic_color_name:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+    note: "Same indirection as /colorway/application."

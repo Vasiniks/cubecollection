@@ -1,0 +1,26 @@
+# variant: qiyi-valk-3--stickerless
+# Pass 4. A stickerless application sibling, per the 2018 QiYi storefront's own catalogue
+# listing (qiyicube-storefront-2018, tier 1): "Valk 3 (Black/Stickerless/White)" — read as
+# Black and White being stock sticker colours of the stickered configuration (collapsed into
+# the `standard` variant) and "Stickerless" being a distinct, separately offered application.
+# No dedicated retailer product page was fetched for this SKU this pass; existence rests on the
+# tier-1 storefront listing alone.
+id: qiyi-valk-3--stickerless
+entity: variant
+model_id: qiyi-valk-3
+name: "Valk 3 (Stickerless)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [qiyicube-storefront-2018]
+    note: "Tier 1, first-party QiYi storefront listing names 'Stickerless' as a distinct
+      catalogue option alongside the stock 'Black'/'White' sticker colours."
+  /colorway/application:
+    confidence: probable
+    sources: [qiyicube-storefront-2018]

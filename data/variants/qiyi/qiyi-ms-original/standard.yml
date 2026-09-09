@@ -1,0 +1,25 @@
+# variant: qiyi-ms-original--standard
+# Pass 4. The stickerless configuration, matching TheCubicle's own single current-catalogue
+# product page (which does not mention stickers). The wiki additionally documents a stickered
+# black sibling, recorded separately (see stickered-black.yml).
+id: qiyi-ms-original--standard
+entity: variant
+model_id: qiyi-ms-original
+name: "QiYi MS 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-ms-3x3-product]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-ms-3x3-product]
+    note: "TheCubicle's own copy does not use the word 'stickerless' for this listing directly;
+      inferred as the base configuration by contrast with the wiki's explicit 'stickered
+      (black) version and a stickerless version' framing (speedsolving-wiki-qiyi-products),
+      and by this being the sole SKU on the current retailer page."
