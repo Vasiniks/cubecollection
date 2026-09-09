@@ -674,3 +674,24 @@ match each branch's message.
 
 **Pass 3 is fully reconciled against the 132-family taxonomy. Pass 4 is NOT STARTED and remains
 awaiting explicit authorisation.**
+
+---
+
+# PASS 4 IS ACTIVE (2026-09-09) — see `research/qc/pass4-progress.md`
+
+This handoff covers Passes 2, 2.5, 2.6 and 3. **Pass 4 (variant enumeration) is underway and its
+progress file is authoritative for current state.**
+
+At the time of writing: **132 families · 269 models · 313 variants · 481 sources · 54
+manufacturers.** Families and models remain frozen and unchanged; Pass 4 writes only the variant
+layer.
+
+**P4-3 settled what a variant means:** every *assessed* model carries at least one variant, and
+zero now means *not yet assessed* and nothing else. Decided on architecture — the variant is
+where pricing, media, rarity, packaging and specimen ownership live, and the public bundle is
+built from variants, so a model with none cannot be exhibited at all. Binding text is in
+DATA_MODEL §3.5, RESEARCH_SPEC §4.3 and `research/qc/p4-3-variant-semantics.md`.
+
+Three lint rules were added during Pass 4 — **41** (baseline records that assert nothing), **42**
+(two source records of one page, and false corroboration from citing both) and **43** (confidence
+exceeding its sources' tier).

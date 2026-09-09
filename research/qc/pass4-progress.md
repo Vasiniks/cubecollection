@@ -139,8 +139,61 @@ escalated, none acted on — a variant pass has no authority over the model laye
 ~90 models: YuXin 8, DianSheng 6, WitEden 6, Cyclone Boys 5, MoreTry 5, Rubik's 5, FangShi 4,
 Maru 4, and the long tail. **Blocked on the `P4-3` convention decision.**
 
+## P4-3 resolved — the convention question is settled
+
+**Decision: every ASSESSED model carries at least one variant. Zero means NOT ASSESSED.**
+Full reasoning in `research/qc/p4-3-variant-semantics.md`; the rule is now binding in
+DATA_MODEL §3.5 and RESEARCH_SPEC §4.3.
+
+It was decided on architecture, not preference. `pricing`, `availability`, `rarity`, `colorway`,
+`media`, `representation`, `packaging`, `releases` and `smart` are all defined on **variant** and
+none on model; a specimen references `variant_id`; and `build.mjs` assembles the public bundle
+from variants. **A model with zero variants cannot be priced, photographed, owned or exhibited —
+it does not appear in the product at all.**
+
+**56 baselines created**, for exactly the models batch 1 lanes C and D *assessed* and left at
+zero (DaYan 20, YJ 19, ShengShou 14, MFJS 3). **The 90 never-assessed models were deliberately
+left alone** — a baseline asserts assessment, and creating one for unresearched models would be
+a false claim that research happened. Nothing was deleted.
+
+### The four states are now interpretable
+
+| State | Count | Meaning |
+|---|---|---|
+| zero variants | **90** | **not yet assessed** — and this is exactly batch 2's scope |
+| one bare baseline | **99** | assessed, one configuration, nothing differentiated found |
+| one evidenced baseline | **27** | assessed, with configuration detail |
+| two or more | **53** | multiple documented configurations |
+
+**179 of 269 models assessed.**
+
+## Rules added during Pass 4
+
+| Rule | Catches | Found on real data |
+|---|---|---|
+| **41** | a lone `--standard` with no `/edition/types` attestation — a placeholder that still counts as coverage | 11, all GAN-pilot (`P4-5`) |
+| **42** | two source records of one page, and any attestation citing both as corroboration | 12 (`11` duplicate pairs + 1 citation) |
+| **43** | a confidence exceeding what its cited sources' tier supports | 6, now all fixed |
+
+Rule 43's origin is worth keeping: **four of its six findings were introduced by the P4-3
+baseline generator itself**, which cited each model's *first* source rather than its *best-tier*
+one. A generator can inject that defect in bulk, silently. All four were re-cited to a tier-2
+source already present on the record.
+
+## Archive-wide sweeps that came back clean
+
+Negative results, recorded because they are what licenses confidence in the layer:
+**zero** tier-5 sources exist and none is cited · **zero** variants redundantly repeat a spec
+their model already carries · **zero** variant→model→family chain breaks across all 313 variants ·
+**zero** names or aliases shared across different manufacturers · **zero** stale count claims in
+canonical record prose.
+
 ## Status
 
-**BATCH 1 COMPLETE.** 132 families · 269 models · **257 variants** · 481 sources ·
-54 manufacturers. All variant `model_id` references resolve, no duplicate ids, no dangling
-attestation sources.
+**BATCH 1 COMPLETE, P4-3 RESOLVED, BATCH 2 IN PROGRESS.**
+132 families · 269 models · **313 variants** · 481 sources · 54 manufacturers.
+`npm run check`: 0 errors, 35 advisory (5 baseline · 7 rule-18 size/weight · 11 rule-41 ·
+12 rule-42). All variant `model_id` references resolve, no duplicate ids, no dangling sources.
+
+**Batch 2 lanes running** over the 90 unassessed models: smart/modern (16) · YuXin+CycloneBoys+
+DianSheng (19) · shape-mod/historic (20) · sub-brands and long tail (35).
