@@ -1,0 +1,23 @@
+# variant: shengshou-legend-big--standard
+# Pass 4. The sole sold configuration of the ShengShou Big Legend 3x3 (7.0cm). TheCubicle's own
+# copy describes it only as "a bigger version of the ShengShou Legend 3x3" with "the same
+# internal mechanism as the original ShengShou Legend" — no colourway/edition axis was found.
+# Deliberately enumerated despite being a single-configuration model: this model's inherited
+# size_mm (70mm, model-level, well-evidenced) falls outside rule 18's 50-60mm plausibility
+# window, and the archive's coordinator has directed that a variant be enumerated here so that
+# check surfaces the (correct, expected) warning rather than staying invisible with zero
+# variants. See report Escalations for the rule 18 exposure note.
+id: shengshou-legend-big--standard
+entity: variant
+model_id: shengshou-legend-big
+name: "ShengShou Big Legend 3x3 (7.0cm)"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-shengshou-big-legend-3x3-product]
+    note: "TheCubicle's own copy describes only one sold configuration ('a bigger version of the
+      ShengShou Legend 3x3'); no colourway/edition option was found."
