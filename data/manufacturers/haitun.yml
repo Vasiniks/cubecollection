@@ -11,6 +11,7 @@ kind: manufacturer
 aliases:
   - "Haitun Cube"
   - "Haitun"
+  - "Dolphin"
 notes: |-
   **Identity.** TheCubicle's own product page for the "HaiTun Waverider V1 3x3 (Flagship)"
   states directly: "The Waverider V1 is a new 3x3 speedcube by the emerging brand Haitun Cube,"
@@ -39,7 +40,13 @@ attestations:
       rather than uncertain accordingly."
   /aliases:
     confidence: probable
-    sources: [thecubicle-haitun-waverider-v1-2024]
+    sources: [thecubicle-haitun-waverider-v1-2024, cubezz-haitun-waverider-v2-standard]
+    note: "'Dolphin' added 2026-09-09 closing ledger P26-7. Cubezz's own structured
+      Manufacturer field reads 'HAITUN CUBE (also referenced as Dolphin)' - a SOURCED
+      confirmation of a gloss this archive had correctly declined to assert while it was
+      unsourced. HaiTun means dolphin, so the gloss is a translation of the brand name
+      rather than a second brand, which is why it belongs here as an alias and not as a
+      separate manufacturer record."
   /notes:
     confidence: probable
     sources: [thecubicle-haitun-waverider-v1-2024]

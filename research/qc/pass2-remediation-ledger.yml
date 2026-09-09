@@ -993,7 +993,7 @@ issues:
 
   - id: P26-7
     severity: low
-    status: open
+    status: resolved
     title: "HaiTun ZhanLang alias and Dolphin gloss are now sourced but not recorded"
     category: record-completeness
     affected_records:
@@ -1003,6 +1003,22 @@ issues:
       Cubezz's own brand field reads "HAITUN CUBE (Dolphin)", a sourced confirmation of the
       dolphin gloss that haitun.yml correctly declined to assert unsourced. Separately,
       "ZhanLang" is established as cubezz's own earlier name for the Waverider listing.
+      CLOSED 2026-09-09. Both additions made, both attested, neither touching the freeze.
+      "Dolphin" added to haitun.yml aliases on cubezz-haitun-waverider-v2-standard, whose
+      structured Manufacturer field reads "HAITUN CUBE (also referenced as Dolphin)". HaiTun means
+      dolphin, so the gloss is a translation of the brand name rather than a second brand, which
+      is why it is an alias and not a manufacturer record.
+      "HaiTun ZhanLang" added to haitun-waverider.yml aliases on
+      cubezz-haitun-zhanlang-v1-standard. This is the OTHER HALF of the P3-T4 conclusion: that
+      candidate was REJECTED as a missing family because Cubezz used both names for one product -
+      the same product ID 8598 and SKU HTO02C, three months apart. If the two names are one
+      product, a collector searching the earlier one must still find the record, and until today
+      they would have found nothing.
+      ON THE FREEZE: this issue was deferred "only because families are frozen", and that reading
+      was over-cautious. An alias adds no family, changes no membership and changes no identity;
+      it makes an existing record findable under a name it was actually sold as. The freeze
+      protects counts, membership and identity, none of which moves here. Trivially revertible if
+      that judgement is disputed.
     counterevidence: "None. Both are additive."
     recommendation: >-
       Add "ZhanLang" to haitun-waverider aliases and record the Dolphin gloss on haitun.yml

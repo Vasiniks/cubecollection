@@ -10,6 +10,7 @@ manufacturer_id: haitun
 name: "HaiTun Waverider"
 aliases:
   - "Haitun Cube 3x3"
+  - "HaiTun ZhanLang"
 introduced:
   value: "2024-01"
   precision: month
@@ -37,6 +38,17 @@ description: |-
 status: drafted
 
 attestations:
+  /aliases:
+    confidence: probable
+    sources: [cubezz-haitun-zhanlang-v1-standard, cubezz-haitun-waverider-v2-standard]
+    note: "'HaiTun ZhanLang' added 2026-09-09 closing ledger P26-7. Cubezz listed this line as
+      'HAITUN ZhanLang V1 3x3x3 Speed Cube Standard Version' before renaming it Waverider - the
+      SAME Cubezz product ID 8598 and SKU HTO02C under both titles three months apart, which is
+      the finding that made P3-T4 a REJECTED missing-family candidate rather than an accepted
+      one. Recording it as an alias is the other half of that conclusion: if the two names are
+      one product, a collector searching the earlier name must still find the record. This adds
+      no family, changes no membership and changes no identity - it makes an existing record
+      findable under a name it was actually sold as."
   /introduced:
     confidence: reported
     sources: [thecubicle-haitun-waverider-v1-2024]
