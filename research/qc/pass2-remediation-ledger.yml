@@ -1378,3 +1378,44 @@ issues:
       recorded as unverified rather than assumed; none of them is undecided, so nothing is blocked.
     owner: main
     last_updated: "2026-09-09"
+
+  - id: P4-7
+    severity: low
+    status: needs_human_decision
+    title: "Is the 2018-09-11 catalogue artefact worthless as a date, or only as a RELEASE date?"
+    evidence: >-
+      The archive's standing rule on TheCubicle's 'Added: 2018-09-11' field - 29 occurrences
+      across 22 sources and 13 unrelated brands - is to discard it outright, "not even as a
+      bound". An archive-wide sweep on 2026-09-09 found 33 date fields naming an artefact date.
+      Thirty-one name it in order to refuse it, which is the discipline working. Two used it as
+      the basis of a value: qj-candy-3x3 and qj-pillowed-3x3, both `introduced: 2018-09 circa`,
+      both written before the artefact was identified. Both were withdrawn the same day and
+      replaced with a `before 2019-08` circulation bound taken from the earliest surviving
+      capture, with a full CDX sweep confirming no earlier one exists.
+      That leaves one record in genuine tension with the stated rule. gan-354-m keeps
+      `announced: 2018-09 before` and its note says so openly: "Retained as a weak upper bound
+      only." It sits at `uncertain` confidence, so nothing rests on it.
+      The tension is real and not merely wording. A migration stamp cannot date a release, but
+      it may still evidence CATALOGUE PRESENCE at migration time, which would make "existed by
+      2018-09" a legitimate - and tighter - bound than any capture provides. Two observations
+      pull in opposite directions: products added later (escube-air 2025-11-13, pbcube-wr
+      2026-08-25, haitun-waverider 2024-01-17) each carry their OWN distinct `Added:` value,
+      which is consistent with the stamp marking only what was present at migration; but no
+      product known to have launched after 2018-09-11 has been checked for the stamp, which is
+      the test that would actually settle it.
+    recommendation: >-
+      Do NOT resolve this by picking the reading that yields more data. The test is specific and
+      cheap: find a product whose launch is independently dated AFTER 2018-09-11 and check
+      whether its TheCubicle page carries 'Added: 2018-09-11'. One such product settles it
+      against the bound; a sweep finding none, across enough later products, settles it for.
+      Until then leave gan-354-m as it stands - it is honest about what it is doing and its
+      confidence is already `uncertain` - and leave the stated rule as the default, since the
+      strict reading can only lose information, never assert a wrong one.
+      The audit prints the refuse/use split on every run so a regression is visible.
+    confidence: confirmed
+    downstream_impact: >-
+      Nothing currently depends on the answer. The two records that used the artefact are fixed;
+      the one that retains it carries `uncertain`. The decision matters only if a future pass
+      wants tighter introduction bounds for the mid-2010s TheCubicle catalogue.
+    owner: main
+    last_updated: "2026-09-09"

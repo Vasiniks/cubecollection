@@ -14,19 +14,33 @@ entity: family
 manufacturer_id: qj
 name: "QJ Candy 3x3"
 introduced:
-  value: "2018-09"
+  value: "2019-08"
   precision: month
-  qualifier: circa
-  note: "TheCubicle's own product page records 'Added: 2018-09-11' — its own listing date, not
-    a stated manufacturer release date, hence circa at month precision rather than exact at
-    day precision."
+  qualifier: before
+  note: "ARTEFACT DATE WITHDRAWN 2026-09-09. This read `2018-09 circa`, derived entirely from
+    TheCubicle's 'Added: 2018-09-11' field. That value is the archive's documented
+    catalogue-migration artefact — 29 occurrences across 22 sources and 13 unrelated brands —
+    and the standing rule is to discard it outright, not even as a bound. This record predates
+    that finding and was one of only two date fields in the archive still resting on it; the
+    other 31 mentions all refuse it explicitly.
+    What survives is a circulation bound and nothing more: the earliest TheCubicle capture of
+    this product is 2019-08-24, so the line existed no later than 2019-08. A full CDX sweep of
+    thecubicle.com/products/qj-candy-3x3 returns no earlier capture. Note that `introduced` and
+    `discontinued` now carry the same bound from the same capture — that is not an error, it
+    is the whole of what is known: the product was already listed and already discontinued when
+    it was first seen. Confidence stays `uncertain`."
 discontinued:
   value: "2019-08"
   precision: month
-  qualifier: after
+  qualifier: before
   note: "The page itself states 'This product has been discontinued indefinitely,' captured
     2019-08-24. The exact discontinuation date is not stated; this records only that it was
-    already discontinued by the capture date."
+    already discontinued by the capture date. QUALIFIER CORRECTED 2026-09-09 from `after` to
+    `before`. vocab/date-qualifier.yml defines `after` as 'No earlier than' and `before` as 'No
+    later than'. A capture showing a state ALREADY TRUE bounds the event no later than the
+    capture — the note above said exactly that in words while the qualifier asserted its
+    inverse, which would have placed the discontinuation somewhere after August 2019 and made
+    the page's own past tense impossible."
 positioning: budget
 description: |-
   A budget stickerless 3x3, sold by TheCubicle at $5.99 in a black-body ('Stickerless') and a

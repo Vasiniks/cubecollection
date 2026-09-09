@@ -8,17 +8,29 @@ entity: family
 manufacturer_id: qj
 name: "QJ Pillowed 3x3"
 introduced:
-  value: "2018-09"
+  value: "2019-08"
   precision: month
-  qualifier: circa
-  note: "TheCubicle's own product page records 'Added: 2018-09-11' — its own listing date, not
-    a stated manufacturer release date."
+  qualifier: before
+  note: "ARTEFACT DATE WITHDRAWN 2026-09-09. This read `2018-09 circa`, derived entirely from
+    TheCubicle's 'Added: 2018-09-11' field. That value is the archive's documented
+    catalogue-migration artefact — 29 occurrences across 22 sources and 13 unrelated brands —
+    and the standing rule is to discard it outright, not even as a bound. This record predates
+    that finding and was one of only two date fields in the archive still resting on it; the
+    other 31 mentions all refuse it explicitly.
+    What survives is a circulation bound and nothing more: the earliest TheCubicle capture of
+    this product is 2019-08-21, so the line existed no later than 2019-08. A full CDX sweep of
+    thecubicle.com/products/qj-pillowed-3x3 returns no earlier capture. Note that `introduced` and
+    `discontinued` now carry the same bound from the same capture — that is not an error, it
+    is the whole of what is known: the product was already listed and already discontinued when
+    it was first seen. Confidence stays `uncertain`."
 discontinued:
   value: "2019-08"
   precision: month
-  qualifier: after
+  qualifier: before
   note: "The page itself states 'This product has been discontinued indefinitely,' captured
-    2019-08-21."
+    2019-08-21. QUALIFIER CORRECTED 2026-09-09 from `after` to `before`, with qj-candy-3x3 —
+    see that record for the full reasoning. `after` means 'No earlier than'; a capture observing
+    a completed state bounds it 'No later than'."
 positioning: budget
 description: |-
   A budget 3x3 sold by TheCubicle at $7.99 in Black or White body colours. The retailer's own

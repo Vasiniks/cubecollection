@@ -143,5 +143,43 @@ const dups = [...byLoc.values()].filter((v) => v.length > 1);
 line(`  pages recorded under more than one id : ${dups.length}   (rule 42 warns on each)`);
 dups.slice(0, 8).forEach((v) => line(`     ${v.join(' + ')}`));
 
+// ---- 6. dates resting on a documented catalogue artefact ---------------------------------
+//
+// Four retailer `Added:` values are documented artefacts rather than per-product dates, the
+// worst being TheCubicle's 2018-09-11: 29 occurrences across 22 sources and 13 unrelated
+// brands. The standing rule is to discard them outright, not even as a bound.
+//
+// This reports rather than judges, because the distinction that matters cannot be settled
+// mechanically. Most records that NAME an artefact date name it in order to refuse it, which is
+// the discipline working and must not be flagged. A lint rule would have to detect refusal from
+// prose and would false-positive on all 31 of them. So the split below is heuristic and is
+// printed for a human to read, not asserted.
+//
+// One genuinely open question sits underneath and is deliberately left open: whether
+// 2018-09-11 bounds CATALOGUE PRESENCE even though it cannot date a release. Products added
+// later carry their own distinct `Added:` values, which is consistent with the stamp marking
+// everything present at migration — but no product known to launch after 2018-09-11 has been
+// found carrying it, so the reading is unconfirmed either way. gan-354-m keeps the date as an
+// explicit "weak upper bound" at `uncertain` confidence on exactly that reasoning, which
+// contradicts the stated rule while harming nothing. Ledger P4-7.
+head('Dates naming a documented artefact date');
+const ARTEFACTS = ['2018-09-11', '2018-10-14', '2018-11-07', '2018-07-16'];
+const REFUSES = /not used|discard|refus|artefact|artifact|migration|suspect|not treated|excluded|rejected|not admissible|disregard|repeating/i;
+let refuses = 0; const uses = [];
+for (const r of [...fam, ...mod, ...va]) {
+  for (const field of ['introduced', 'released', 'announced', 'discontinued']) {
+    const o = r.doc[field];
+    if (!o || typeof o !== 'object') continue;
+    const text = JSON.stringify(o) + JSON.stringify((r.doc.attestations ?? {})[`/${field}`] ?? {});
+    if (!ARTEFACTS.some((a) => text.includes(a))) continue;
+    if (REFUSES.test(text)) refuses += 1;
+    else uses.push(`${r.doc.id} /${field} = ${o.value}`);
+  }
+}
+line(`  name an artefact date in order to REFUSE it : ${refuses}   <- the discipline working`);
+line(`  name one without any refusal language       : ${uses.length}`);
+uses.forEach((u) => line(`     ${u}`));
+if (!uses.length) line('     (none — every mention is a refusal)');
+
 line();
 line('audit complete — advisory only, nothing here blocks a build.');
