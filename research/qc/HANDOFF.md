@@ -5,7 +5,7 @@ whole project after a reset: read this, then `git log --oneline -12`, then conti
 
 ```
 CHECKPOINT
-HEAD:  7832096
+HEAD:  (see git log -1)
 DATE:  2026-09-09
 
 CANONICAL COUNTS (verify with: for d in manufacturers families models variants sources; do
@@ -59,12 +59,20 @@ OPEN ISSUES (ledger: research/qc/pass2-remediation-ledger.yml)
 AGENTS
   none running. worktrees: 1 (main only).
 
+IN PROGRESS — P4-9 adjudication
+  File: research/qc/p4-9-adjudication.yml  (261 candidates, skeleton committed first)
+  Regenerate candidates: npm run catalogue-gap -- --fetch --json
+  Adjudications are NOT regenerable — preserve them across any regeneration.
+  DONE : all 28 candidates inside a KNOWN family
+         8 confirmed_missing / 7 needs_research / 6 alternate_naming / 6 not_3x3 / 1 bundle
+  TODO : 233 candidates in no known family (the BREADTH set). Expect most to be
+         novelties, printed editions and non-3x3 puzzles. Classify in batches and
+         commit after each batch.
+
 NEXT ACTION
-  P4-9 methodology investigation. The question is NOT "which models are missing" but
-  "does the enumeration method systematically miss newer generations?" Build a
-  reproducible, CLASSIFIED comparison (confirmed-missing / alt-naming / service /
-  bundle / variant / sub-brand / non-3x3 / false-positive) rather than a raw diff.
-  Command to reproduce the raw signal: npm run catalogue-gap -- --fetch
+  Continue adjudicating p4-9-adjudication.yml, breadth set, highest SKU count first.
+  Then answer the METHODOLOGY question from the finished distribution:
+  recency failure (miss inside a known line) vs breadth failure (line never found).
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or
