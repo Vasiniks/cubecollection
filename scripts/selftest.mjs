@@ -92,7 +92,7 @@ console.log('\n  fail fixture — records engineered to trip named rules');
 
   const l = run('lint-semantic.mjs', { dataRoot: FAIL });
   const lintFired = rulesIn(l.out);
-  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43, 45];
+  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43, 45, 46];
   const lintMissing = lintExpected.filter((r) => !lintFired.has(r));
   lintMissing.length === 0
     ? ok('semantic warnings fire', `${lintExpected.join(', ')}`)
@@ -109,6 +109,12 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   /sits in directory .* but its model_id is/.test(v.out)
     ? ok('rule 44 misfiled-variant branch fires', 'variant in the wrong model directory is caught')
     : bad('rule 44 misfiled-variant branch fires', 'no misfiled-directory [44] message in validate output');
+
+  // Rule 46's failure mode is silence: a variant that reads as fully specified to a human while
+  // resolving its defining axis to nothing. Assert the message that says so.
+  /so this variant's size resolves to nothing/.test(l.out)
+    ? ok('rule 46 unresolvable-size branch fires', 'size named only in prose is caught')
+    : bad('rule 46 unresolvable-size branch fires', 'no unresolvable-size [46] message in lint output');
 
   // Rule 45's whole point is catching a wrong value that sits INSIDE rule 18's plausible range,
   // where a bounds check is blind. Assert the branch that names the available item weight.

@@ -16,8 +16,24 @@ scope_class: core
 edition:
   types: [standard]
   designation: "54mm MagLev"
+config:
+  size_mm: 54.0
+  maglev: maglev
 status: stub
 attestations:
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-dayan-collection-2025]
+    note: "The size is the DEFINING axis of this line - the model carries no size_mm at
+      all, because it is sold in three - so recording it only in the name and the edition
+      designation left it unqueryable and made every variant resolve size to undefined.
+      Added 2026-09-09 by an archive-wide sweep for axes named in prose but absent from
+      config. The retailer catalogue path names this exact size."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-dayan-collection-2025]
+    note: "Same sweep. MagLev is the second axis of this line and was likewise present
+      only in the slug and designation."
   /name:
     confidence: probable
     sources: [thecubicle-dayan-collection-2025, thecubicle-dayan-guhong-descriptions]

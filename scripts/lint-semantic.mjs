@@ -319,5 +319,34 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 46 — a size named in a variant's own designation must be expressed in config
+//
+// Twelve DaYan GuHong Pro variants were named "54mm MagLev", "55mm Standard" and so on, with the
+// size living only in the id and the free-text edition.designation. Their model carries no
+// size_mm at all — correctly, because the line is sold in three sizes and no single figure
+// belongs at model level — so resolveSpec returned UNDEFINED for every one of them. The archive
+// knew the sizes in prose and could not answer "what size is this variant?" for any of them.
+//
+// Deliberately narrow: SIZE only, and only when the designation or slug states an explicit
+// millimetre figure. Magnet and coating axes are named far more loosely ("M", "Pro", "Frosted")
+// and a rule built on those would be noise. A precise rule that fires rarely beats a broad one
+// that gets ignored.
+{
+  for (const rec of variants) {
+    const doc = rec.doc ?? {};
+    if (doc.config?.size_mm !== undefined) continue;
+    const text = `${doc.edition?.designation ?? ''} ${String(doc.id).split('--')[1] ?? ''}`;
+    const m = text.match(/(\d{2}(?:\.\d)?)\s*mm/i);
+    if (!m) continue;
+    const named = parseFloat(m[1]);
+    const model = byId.get(doc.model_id)?.doc;
+    const inherited = model?.specs?.size_mm;
+    if (inherited !== undefined && Math.abs(inherited - named) < 0.6) continue;   // agrees already
+    report.warn('46', rec.file, inherited === undefined
+      ? `names "${m[0]}" in its own designation but sets no config.size_mm, and its model sets none either — so this variant's size resolves to nothing. The size is the axis; record it.`
+      : `names "${m[0]}" in its own designation but inherits ${inherited}mm from its model. A variant that states a different size must override it in config.size_mm.`);
+  }
+}
+
 report.print();
 process.exit(0);

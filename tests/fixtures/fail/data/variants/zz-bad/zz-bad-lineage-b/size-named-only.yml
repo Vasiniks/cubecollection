@@ -1,0 +1,18 @@
+# SYNTHETIC FIXTURE — engineered to trip rule 46.
+# The designation names 54mm, the config sets no size, and the parent model sets none either —
+# so this variant's size resolves to NOTHING while reading as fully specified to a human. Twelve
+# real DaYan GuHong Pro variants were in exactly this state until 2026-09-09.
+
+id: zz-bad-lineage-b--54mm-maglev
+entity: variant
+model_id: zz-bad-lineage-b
+name: ZZ Size Named Only
+scope_class: core
+edition:
+  types: [standard]
+  designation: "54mm MagLev"
+status: stub
+attestations:
+  "/edition/types":
+    confidence: reported
+    sources: [zz-samepub-a]
