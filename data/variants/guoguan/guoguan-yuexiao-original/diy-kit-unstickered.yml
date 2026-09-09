@@ -1,0 +1,36 @@
+# variant: guoguan-yuexiao-original--diy-kit-unstickered
+# Pass 4. A DIY-kit configuration of the original YueXiao, per TheCubicle's own dedicated page:
+# "This DIY Kit actually comes assembled but without any stickers (stock stickers + logo are
+# included with the DIY Kit)... the cube is also not pre-lubricated from the factory to
+# facilitate putting the stickers on." Structured as its own "Type: DIY Kits" catalogue
+# category, distinct from the standard assembled/stickered baseline.
+id: guoguan-yuexiao-original--diy-kit-unstickered
+entity: variant
+model_id: guoguan-yuexiao-original
+name: "GuoGuan YueXiao - Unstickered (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "DIY Kit / Unstickered"
+colorway:
+  application: hybrid
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-unstickered-2024]
+    note: "Differentiation search performed (see guoguan-yuexiao-original--standard.yml's
+      header). TheCubicle's own 'Type: DIY Kits' structured field and explicit description of
+      shipping assembled-but-unstickered with stickers included separately are a materially
+      different sold configuration from the standard assembled/stickered baseline, not a
+      colourway or clearance re-listing. Eight stock body-colour options (Black, White,
+      Primary, Blue, Teal, Pink, Grey, Brown) are collapsed into this one variant per the
+      `gan-356-air--standard` precedent."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-unstickered-2024]
+    note: "Ships as an unstickered body with a separate stock sticker set included ('stock
+      stickers + logo are included with the DIY Kit') — read as `hybrid` (some faces
+      stickered/stickerable, some not, at the buyer's discretion), the same reading already
+      applied to `haitun-waverider-v1--limited-edition`'s own unstickered-plus-included-
+      stickers configuration."

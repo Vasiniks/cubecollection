@@ -1,0 +1,43 @@
+# variant: guoguan-yuexiao-edm--e
+# Pass 4. The unmagnetized configuration, per TheCubicle's own dedicated "GuoGuan YueXiao E"
+# page: "the unmagnetized version of the YueXiao EDM... retains the magnetic capsules found in
+# the EDM, there are simply no magnets in them." Already quoted directly on the frozen model
+# record's own description.
+id: guoguan-yuexiao-edm--e
+entity: variant
+model_id: guoguan-yuexiao-edm
+name: "GuoGuan YueXiao E"
+scope_class: core
+config:
+  magnet_configuration: none
+edition:
+  types: [standard]
+  designation: "E (Unmagnetized)"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-e-2019]
+    note: "Differentiation search performed (see guoguan-yuexiao-edm--standard.yml's header).
+      TheCubicle's own page directly and explicitly names this 'the unmagnetized version of the
+      YueXiao EDM' and states the shared-mould detail that it 'retains the magnetic capsules
+      found in the EDM, there are simply no magnets in them' — decisive first-party evidence
+      this is a configuration of the EDM model, not a separate mould/generation. Only one
+      colour ('Black') was found on this capture; no colourway edition or limited/commemorative
+      status found."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-e-2019]
+    note: "'E' is the retailer's own product name, verbatim."
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-e-2019]
+    note: "'There are simply no magnets in them' — the capsules are present but unfilled,
+      mapped to `none` (no positioning magnets fitted), distinct from the EDM baseline's own
+      `adjustable` magnet architecture."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-e-2019]
+    note: "Inferred from the absence of sticker language; not a direct statement."

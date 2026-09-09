@@ -1,0 +1,35 @@
+# variant: guoguan-yuexiao-edm--standard
+# Pass 4. The factory-magnetized baseline — the model's own defining spec
+# (magnet_architecture: adjustable). Distinguished from the unmagnetized "YueXiao E" sibling
+# already flagged as pass-4 material on the frozen model record and found this pass
+# (guoguan-yuexiao-edm--e).
+id: guoguan-yuexiao-edm--standard
+entity: variant
+model_id: guoguan-yuexiao-edm
+name: "GuoGuan YueXiao EDM"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Magnetic"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-edm-2020]
+    note: "Differentiation search performed: a `scripts/wayback.mjs prefix
+      thecubicle.com/products/guoguan` sweep found exactly one sibling configuration for this
+      model, the unmagnetized 'YueXiao E' (recorded separately). The model's own
+      `magnet_architecture: adjustable` spec is this configuration's own defining feature. No
+      colourway edition or limited/commemorative status found."
+  /edition/designation:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-edm-2020]
+    note: "'Magnetic' is this record's own distinguishing label, not a manufacturer/retailer
+      tier word — used only to disambiguate this variant from 'YueXiao E' for
+      fingerprint/identity purposes."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-edm-2020]
+    note: "Inferred from the absence of sticker language; not a direct statement."

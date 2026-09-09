@@ -1,0 +1,40 @@
+# source: thecubicle-guoguan-yuexiao-unstickered-2024
+# TheCubicle's own product page for "GuoGuan YueXiao - Unstickered," found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/guoguan` during Pass 4 (Agent H, Batch
+# 2). A DIY-kit configuration of the original YueXiao model, distinct from the fully-finished
+# assembled/stickered baseline already on file (thecubicle-guoguan-yuexiao-2025).
+id: thecubicle-guoguan-yuexiao-unstickered-2024
+entity: source
+kind: retailer
+title: "GuoGuan YueXiao - Unstickered - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/guoguan-yuexiao-unstickered"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240418164723id_/https://www.thecubicle.com/products/guoguan-yuexiao-unstickered"
+excerpt: |-
+  Product Description: "The YueXiao is the first cube from GuoGuan, a new and exciting brand
+  by MoYu. It features an appearance and design similar to that of the Cong's Design MeiYing,
+  but with an all-new core design and more rounded edges. The cube turns very well right out
+  of the box, and it has a slightly scratchy feeling to it. Note: This DIY Kit actually comes
+  assembled but without any stickers (stock stickers + logo are included with the DIY Kit).
+  This is ideal for someone who plans to resticker the cube anyway and doesn't want to take
+  time removing the stickers. Please note that the cube is also not pre-lubricated from the
+  factory to facilitate putting the stickers on." Structured "Product Specifications" table:
+  "Manufacturer: GuoGuan / Type: DIY Kits / Added: 2018-11-07 / Gross Weight: 105g /
+  Dimensions: 56.0mm3." Colour options offered: Black, White, Primary, Blue, Teal, Pink, Grey,
+  Brown (all at the same clearance price, $4.99, discounted from $15.99).
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Its own structured 'Type: DIY
+  Kits' category field, and description explicitly distinguishing this configuration from a
+  factory-stickered sale ('comes assembled but without any stickers... not pre-lubricated from
+  the factory to facilitate putting the stickers on'), are decisive that this is a materially
+  different sold configuration from the standard assembled/stickered baseline
+  (thecubicle-guoguan-yuexiao-2025), not merely a colourway or clearance re-listing of the same
+  SKU. The eight colour options are stock body-colour choices within this one DIY-kit
+  configuration and are not individually itemised, per the `gan-356-air--standard` precedent."
+status: sourced

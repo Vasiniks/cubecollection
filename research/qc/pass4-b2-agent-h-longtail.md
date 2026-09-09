@@ -276,6 +276,54 @@ and then fixed within this section).
 
 ---
 
+### GuoGuan (3 models — guoguan-yuexiao-original, guoguan-yuexiao-pro, guoguan-yuexiao-edm) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/guoguan` sweep (13 captured URLs across
+the whole YueXiao/XingHen line) resolved leads already flagged as pass-4 material directly on
+two of the three frozen model records (Pro's "sold separately as 'YueXiao Pro M'"; EDM's own
+"GuoGuan YueXiao E... unmagnetized version" already quoted in the model description) and
+surfaced one further, previously-unflagged DIY-kit configuration of the original.
+
+**guoguan-yuexiao-original** (2 variants):
+- `guoguan-yuexiao-original--standard` (assembled, factory-stickered baseline).
+- `guoguan-yuexiao-original--diy-kit-unstickered` — TheCubicle's own "Type: DIY Kits" category,
+  "comes assembled but without any stickers... not pre-lubricated from the factory," 8 stock
+  colours collapsed into one variant.
+- New source: `thecubicle-guoguan-yuexiao-unstickered-2024`.
+
+**guoguan-yuexiao-pro** (2 variants):
+- `guoguan-yuexiao-pro--standard` (non-magnetic; the model's own page states directly "this
+  particular variant is not magnetized").
+- `guoguan-yuexiao-pro--pro-m` — factory-magnetized, own display-box packaging, accessory
+  bundle (extra magnets, screwdriver, tensioning tools, cube stand, "a collectible MoYu card").
+- New source: `thecubicle-guoguan-yuexiao-pro-m-2019`.
+
+**guoguan-yuexiao-edm** (2 variants):
+- `guoguan-yuexiao-edm--standard` (magnetic, `adjustable` architecture — the model's own spec).
+- `guoguan-yuexiao-edm--e` — "retains the magnetic capsules found in the EDM, there are simply
+  no magnets in them" (`config.magnet_configuration: none`).
+- New source: `thecubicle-guoguan-yuexiao-e-2019`.
+
+**Materiality calls:** magnetized-vs-unmagnetized (Pro/Pro M, EDM/E) read as a
+`magnet_configuration` axis difference (rule 1). DIY-kit-vs-assembled (original) follows the
+same reasoning already applied to FangShi's ShuangRen/JieYun DIY kits earlier in this report.
+None of these six variants required a fingerprint-disambiguation fix beyond a plain
+`edition.designation` label, since the magnet-architecture and colourway-application overrides
+already differ per pair.
+
+**Rejected candidates:** none — every sibling URL found via the prefix sweep resolved into a
+real, sourced, materially distinct configuration.
+
+**Escalation (not actioned, out of lane).** TheCubicle's own "GuoGuan YueXiao Pro M"
+description independently mentions "a collectible MoYu card" included in the box —
+corroborating, not contradicting, the GuoGuan/MoYu manufacturer relationship already recorded
+in `data/manufacturers/guoguan.yml`; not a new finding requiring action.
+
+**Validation:** `npm run check` after this section — 0 errors, 38 warnings (merged-main
+baseline, no regressions).
+
+---
+
 ## Machine-readable summary (placeholder, to be replaced at end)
 ```yaml
 models_assessed: []

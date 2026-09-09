@@ -1,0 +1,32 @@
+# source: thecubicle-guoguan-yuexiao-e-2019
+# TheCubicle's own product page for "GuoGuan YueXiao E," found via `scripts/wayback.mjs prefix
+# thecubicle.com/products/guoguan` during Pass 4 (Agent H, Batch 2). Already quoted directly on
+# the frozen model record (guoguan-yuexiao-edm.yml's own description); this is the dedicated
+# page itself, fetched and actioned here as its own variant of the EDM model.
+id: thecubicle-guoguan-yuexiao-e-2019
+entity: source
+kind: retailer
+title: "GuoGuan YueXiao E - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/guoguan-yuexiao-e"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20191022id_/https://www.thecubicle.com/products/guoguan-yuexiao-e"
+excerpt: |-
+  Product Description: "The GuoGuan YueXiao E is the unmagnetized version of the YueXiao EDM.
+  This extremely light-weight puzzle comes in around 65g which would make it ideal for anyone
+  who prefers a light, airy, non-magnetic 3x3. This puzzle retains the magnetic capsules found
+  in the EDM, there are simply no magnets in them." Structured "Product Specifications" table:
+  "Manufacturer: GuoGuan / Type: 3x3 / Gross Weight: 189g / Added: 2019-06-19." Colour offered:
+  "Black - $17.99 USD" (only colour option found on this capture).
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, directly and explicitly naming
+  this 'the unmagnetized version of the YueXiao EDM' and describing the shared-mould detail
+  that it 'retains the magnetic capsules found in the EDM, there are simply no magnets in
+  them' — decisive first-party evidence this is a configuration of the EDM model, not a
+  separate mould/generation."
+status: sourced

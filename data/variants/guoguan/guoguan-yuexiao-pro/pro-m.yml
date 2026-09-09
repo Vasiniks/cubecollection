@@ -1,0 +1,58 @@
+# variant: guoguan-yuexiao-pro--pro-m
+# Pass 4. The factory-magnetized configuration, per TheCubicle's own dedicated "GuoGuan YueXiao
+# Pro M" page: "the factory-magnetized version of the YueXiao Pro. It features magnets placed
+# in special slots in the corners and edges... packaged inside a specially-marked display box,
+# and it includes extra magnets, a mini screwdriver, tensioning tools, a cube stand, and a
+# collectible MoYu card." Already flagged as a pass-4 lead on the frozen model record.
+id: guoguan-yuexiao-pro--pro-m
+entity: variant
+model_id: guoguan-yuexiao-pro
+name: "GuoGuan YueXiao Pro M"
+scope_class: core
+config:
+  magnet_configuration: single_layer
+  weight_g: 91.2
+edition:
+  types: [standard]
+  designation: "Pro M"
+packaging:
+  contents: ["extra magnets", "mini screwdriver", "tensioning tools", "cube stand", "collectible MoYu card"]
+  notable: "'Packaged inside a specially-marked display box' per the retailer's own description
+    — distinct packaging from the non-magnetic Standard configuration."
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-m-2019]
+    note: "Differentiation search performed (see guoguan-yuexiao-pro--standard.yml's header).
+      TheCubicle's own page directly and explicitly names this 'the factory-magnetized version
+      of the YueXiao Pro' with a distinct accessory bundle and display-box packaging — a
+      materially different sold configuration (magnet architecture + packaging), not a
+      colourway. 'Black' and 'Stickerless (Bright)' are stock colour options collapsed into
+      this one variant."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-m-2019]
+    note: "'Pro M' is the retailer's own product name, verbatim."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-pro-m-2019]
+    note: "'Magnets placed in special slots in the corners and edges' — read as a single-layer
+      piece-to-piece positioning system, consistent with the Standard configuration's own
+      mould-level 'slots for magnets to be easily added' description, now populated. An
+      interpretive mapping from marketing prose, not a labelled architecture field."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-m-2019]
+    note: "Item Weight 91.2g, the source's own structured spec field — heavier than the Pro
+      model's own non-magnetic baseline (83.7g), consistent with added magnets."
+  /packaging/contents:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-m-2019]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-pro-m-2019]
+    note: "Inferred from the absence of sticker language and the 'Stickerless (Bright)' colour
+      option name; not a direct statement covering the 'Black' option."
