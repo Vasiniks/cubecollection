@@ -1,0 +1,33 @@
+# variant: qiyi-valk-3--standard
+# Pass 4. The base (stickered, non-magnetic) configuration, per TheCubicle's own product page:
+# "high-quality vinyl stickers... QiYi Half-Bright Color scheme." A factory-magnetized sibling
+# ("Valk 3 M") is recorded separately (see m.yml), per the model's own note treating it as a
+# variant, not a separate model (textbook worked-decision-A case). The 2018 QiYi storefront
+# (qiyicube-storefront-2018, tier 1) additionally lists "Valk 3 (Black/Stickerless/White)" —
+# Black/White collapse into this one standard (stock colour) variant per the anti-explosion
+# rule; "Stickerless" is a genuine application axis and is recorded as its own sibling variant
+# (see stickerless.yml).
+id: qiyi-valk-3--standard
+entity: variant
+model_id: qiyi-valk-3
+name: "Valk 3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+  scheme: standard
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-valk-3-product]
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-valk-3-product]
+    note: "'high-quality vinyl stickers' describes the stickered application directly."
+  /colorway/scheme:
+    confidence: uncertain
+    sources: [thecubicle-valk-3-product]
+    note: "'QiYi Half-Bright Color scheme' is a named QiYi colour-scheme convention; recorded at
+      `scheme: standard` for lack of a more specific vocabulary match, not a literal quote."

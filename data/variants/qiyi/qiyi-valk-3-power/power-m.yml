@@ -1,0 +1,23 @@
+# variant: qiyi-valk-3-power--power-m
+# Pass 4. The factory-magnetized configuration, per TheCubicle's own product page: "This version
+# has been pre-magnetized by the factory for a smooth and tactile solving experience." Already
+# cited by the model record itself as a variant of this model (worked decision A).
+id: qiyi-valk-3-power--power-m
+entity: variant
+model_id: qiyi-valk-3-power
+name: "Valk 3 Power M"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: single_layer
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-valk-3-power-m-product]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-valk-3-power-m-product]
+    note: "'pre-magnetized by the factory' does not itself specify a precise arrangement;
+      recorded at reduced confidence as the vocabulary's single generic magnetized layer."

@@ -1,0 +1,33 @@
+# variant: qiyi-valk-3-power--power-m-stickerless
+# Pass 4. A magnetic + stickerless sibling, per the 2018 QiYi storefront's own catalogue listing
+# (qiyicube-storefront-2018, tier 1): "Valk3 Power (Black/M Black/M Stickerless)" — "M
+# Stickerless" read as the magnetic configuration in a stickerless application, distinct from
+# the stickered "M Black" (see power-m.yml). No dedicated retailer product page was fetched for
+# this SKU this pass; existence rests on the tier-1 storefront listing alone.
+id: qiyi-valk-3-power--power-m-stickerless
+entity: variant
+model_id: qiyi-valk-3-power
+name: "Valk 3 Power M (Stickerless)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+config:
+  magnet_configuration: single_layer
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [qiyicube-storefront-2018]
+    note: "Tier 1, first-party QiYi storefront listing names 'M Stickerless' as a distinct
+      catalogue item alongside 'Black' and 'M Black'."
+  /colorway/application:
+    confidence: probable
+    sources: [qiyicube-storefront-2018]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [qiyicube-storefront-2018]
+    note: "The 'M' naming convention is read as magnetic, consistent with 'M Black' (see
+      power-m.yml); no descriptive product text beyond the storefront's own catalogue label was
+      found."
