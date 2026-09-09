@@ -33,15 +33,35 @@ const cmpDate = (a, b) => {
   return x < y ? -1 : x > y ? 1 : 0;
 };
 
+const outOfRangeReported = new Set();
+
 for (const rec of variants) {
   const doc = rec.doc;
   const model = byId.get(doc.model_id)?.doc;
 
-  // 18 — physical plausibility, against the resolved value
+  // 18 — physical plausibility, reported where the value actually lives
+  //
+  // This resolves through inheritance, so a model with an out-of-range size used to produce one
+  // warning per variant beneath it: maru-3x3-original fired EIGHT times for a single fact, once
+  // per Special Patterns sticker variant, none of which asserts a size at all. That is noise
+  // that trains a reader to skim the rule.
+  //
+  // Now the warning goes to whoever asserted the value. A variant that OVERRIDES a spec owns its
+  // number and is warned directly; an inherited value is the MODEL's claim and is warned once on
+  // the model, no matter how many variants hang off it. Implements the fix recommended in
+  // ledger P4-1, which noted the signal was appearing everywhere except where the data was.
   for (const [field, min, max, unit] of [['size_mm', SIZE_MIN, SIZE_MAX, 'mm'], ['weight_g', WEIGHT_MIN, WEIGHT_MAX, 'g']]) {
-    const { value } = resolveSpec(doc, model, field);
-    if (typeof value === 'number' && (value < min || value > max)) {
-      report.warn('18', rec.file, `${field} is ${value}${unit}, outside the plausible ${min}-${max}${unit} range for a 3x3.`);
+    const { value, from } = resolveSpec(doc, model, field);
+    if (typeof value !== 'number' || (value >= min && value <= max)) continue;
+    if (from === 'variant') {
+      report.warn('18', rec.file, `${field} is ${value}${unit}, outside the plausible ${min}-${max}${unit} range for a 3x3. This variant sets the value itself.`);
+    } else if (model) {
+      const key = `18:${model.id}:${field}`;
+      if (!outOfRangeReported.has(key)) {
+        outOfRangeReported.add(key);
+        const modelFile = byId.get(model.id)?.file ?? rec.file;
+        report.warn('18', modelFile, `${field} is ${value}${unit}, outside the plausible ${min}-${max}${unit} range for a 3x3. Reported once here rather than on each of its variants, which inherit it.`);
+      }
     }
   }
 
