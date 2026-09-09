@@ -1252,7 +1252,11 @@ issues:
       exists for it. Separately, the MFJS Mini 3x3 series is documented as five sizes while only
       three exist as models, and two further undocumented SKUs were found at 30mm and 35mm
       keychain. Both found by Pass 4 Agent C and correctly escalated rather than acted on, since
-      a variant pass has no authority over the model layer.
+      a variant pass has no authority over the model layer. Evidence preserved at
+      thecubicle-yj-mgc-sigma-3x3-product, thecubicle-mofang-jiaoshi-mini-3x3-keychain-30mm-product
+      and thecubicle-mofang-jiaoshi-mini-3x3-keychain-35mm-product - named here because an
+      orphan sweep on 2026-09-09 found them cited by no record and no document, which would have
+      left this escalation's evidence unfindable.
     counterevidence: >-
       Retailer SKUs are not by themselves evidence of a distinct model - the archive has a
       documented false positive from exactly that reasoning. The mini sizes in particular may

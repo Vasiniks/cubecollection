@@ -7,6 +7,8 @@
 // Nothing here blocks. It exists so these checks stop depending on someone remembering to
 // write a throwaway script, which is how the tier/confidence defect survived until 2026-09-09.
 
+import { readdirSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { loadVocabularies, loadSchemas, loadRecords, indexRecords, sourceTier } from './lib/archive.mjs';
 
 const vocabs = loadVocabularies();
@@ -72,12 +74,38 @@ const scan = (o) => {
 };
 [...fam, ...mod, ...va, ...mf].forEach((r) => scan(r.doc));
 const orphans = src.filter((s) => !cited.has(s.doc.id));
+
+// An uncited source is not automatically a defect: the archive deliberately preserves evidence
+// for findings it REJECTED (the HaiTun ZhanLang sources are exactly that) and for escalations
+// no record can yet carry. What matters is whether the evidence is FINDABLE — so split the
+// orphans by whether anything at all documents them. Prose includes .md and .yml under
+// research/, which is where the ledger lives; an earlier version of this check scanned only .md
+// and wrongly reported three escalation sources as unreferenced.
+let prose = '';
+(function walk(dir) {
+  let entries = [];
+  try { entries = readdirSync(dir, { withFileTypes: true }); } catch { return; }
+  for (const e of entries) {
+    const p = join(dir, e.name);
+    if (e.isDirectory()) walk(p);
+    else if (/\.(md|yml)$/.test(e.name)) prose += readFileSync(p, 'utf8');
+  }
+})('research');
+for (const s of src) prose += JSON.stringify(s.doc);   // a source may cite a sibling in its note
+
+const documented = [], unreferenced = [];
+for (const s of orphans) {
+  const hits = prose.split(s.doc.id).length - 1;
+  (hits > 1 ? documented : unreferenced).push(s);
+}
 line(`  cited by a canonical record : ${cited.size}`);
 line(`  cited by nothing            : ${orphans.length}`);
-line('  (an uncited source is not automatically a defect — the archive deliberately preserves');
-line('   evidence for findings it REJECTED, so this is a list to read, not a list to delete)');
-orphans.slice(0, 12).forEach((s) => line(`     ${s.doc.id}`));
-if (orphans.length > 12) line(`     … and ${orphans.length - 12} more`);
+line(`     of those, documented in a report, the ledger, or another source's note : ${documented.length}`);
+line(`     of those, referenced NOWHERE at all                                    : ${unreferenced.length}`);
+line('  (the first group is preserved evidence and correct — evidence for a REJECTED finding has');
+line('   nowhere else to live. The second group is the one to read: a source no record and no');
+line('   document mentions is either redundant or an escalation whose evidence became unfindable.)');
+unreferenced.forEach((s) => line(`     ${s.doc.id}   (${s.doc.kind})`));
 
 // ---- 3. provenance completeness ----------------------------------------------------------
 head('Source provenance');
