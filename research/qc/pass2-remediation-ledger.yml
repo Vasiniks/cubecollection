@@ -981,6 +981,28 @@ issues:
       research/qc/pass3-b2-agent-c-cycloneboys-maru.md as "real per retailer evidence found
       this pass, none has a frozen family". Cubelelo "Drift" house brand (1) is the existing
       C-B1 entity-level issue. None was independently researched in Pass 2.6.
+      VERIFIED 2026-09-09 - the check this issue asked for has been run, and the leads survive it.
+      Evidence: data/sources/thecubicle-cycloneboys-maru-lead-verification-2026.yml.
+      ALL SIX CYCLONE BOYS LEADS ARE REAL, each with its own TheCubicle product path:
+      cyclone-boys-3x3-feihong-55mm, -feixuan-56mm, -xuanfeng-57mm, -jisuzhiyun-57mm,
+      -jisuzhifeng-57mm, and cyclone-boys-feiku-3x3-tiled. The recommendation said "verify against
+      retailer evidence before deciding; do not create on wiki naming" - these are retailer paths,
+      not wiki mentions, so that bar is met.
+      BOTH MARU MINI LEADS ARE REAL and are still sold TODAY at three retailers ("Maru Mini 3x3
+      (30mm)", "Maru Mini 3x3 Keychain Cube"), so they are not even a historical question.
+      TWO LEADS ARE NOT CONFIRMED BY THIS SWEEP AND ONE MAY BE OUT OF SCOPE ENTIRELY. TheCubicle
+      has no path for "Maru ShenLan Luminous" or "Maru Maze". The Pass 3 report cites cubezz ids
+      for both (Buy-3972/3981/3983 and Buy-4252/4261), so their evidence is a different retailer
+      and this sweep neither confirms nor contradicts them - a checked negative at one retailer,
+      nothing more. And the report itself describes Maru Maze as a STICKER product, which would
+      put it out of 3x3 scope regardless of which retailer sold it.
+      THE ELEVENTH, Cubelelo "Drift", is independently confirmed under P4-10 from retailer vendor
+      fields - a different method reaching the same conclusion as C-B1.
+      A METHOD NOTE WORTH KEEPING: the unhyphenated `cycloneboys` prefix returns one bare stub
+      here, the opposite of the GAN and Monster Go lines where the unhyphenated form was the only
+      one that worked. The slug form has to be checked per brand, never assumed.
+      STATUS: leads verified, family creation still blocked by the freeze. This is no longer an
+      unverified-leads issue; it is a queued admission decision.
     counterevidence: >-
       These rest on a prior pass's report rather than on Pass 2.6's own evidence. The Cyclone
       Boys names are described there as wiki-sourced "older models", which is tier 4 and

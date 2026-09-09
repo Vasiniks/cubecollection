@@ -1,0 +1,67 @@
+# source: thecubicle-cycloneboys-maru-lead-verification-2026
+# Created 2026-09-09 verifying ledger P26-6: eleven family-gap leads recorded in a surviving
+# Pass 3 report and never independently checked. This is the check. No family was created.
+id: thecubicle-cycloneboys-maru-lead-verification-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/cyclone-boys* and /maru* — product URL enumeration (P26-6 lead verification)"
+publisher: "TheCubicle"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/cyclone-boys&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=200"
+preservation_method: excerpt
+excerpt: |-
+  Two CDX prefix enumerations run 2026-09-09: thecubicle.com/products/cyclone-boys (37
+  distinct URLs) and thecubicle.com/products/maru (38 distinct URLs). Neither truncated.
+  Reproducible with `npm run wayback -- prefix thecubicle.com/products/cyclone-boys --limit 200`
+  and the same for maru. The unhyphenated form `cycloneboys` returns one bare stub, so the
+  hyphenated form is the right one for this brand - the opposite of the GAN and Monster Go lines,
+  which is why the form has to be checked per brand rather than assumed.
+
+  ALL SIX CYCLONE BOYS LEADS VERIFIED as real TheCubicle product paths:
+
+    cyclone-boys-3x3-feihong-55mm
+    cyclone-boys-3x3-feixuan-56mm
+    cyclone-boys-3x3-jisuzhifeng-57mm
+    cyclone-boys-3x3-jisuzhiyun-57mm
+    cyclone-boys-3x3-xuanfeng-57mm
+    cyclone-boys-feiku-3x3-tiled
+
+  BOTH MARU MINI LEADS VERIFIED, and these two are also live at three retailers today
+  ("Maru Mini 3x3 (30mm)", "Maru Mini 3x3 Keychain Cube"):
+
+    maru-mini-3x3-30mm
+    maru-mini-3x3-keychain-cube
+
+  NOT FOUND AT THIS RETAILER: no path for "Maru ShenLan Luminous" or "Maru Maze". The Pass 3
+  report cites cubezz product ids for both - Buy-3972/3981/3983 for ShenLan Luminous (2015
+  captures) and Buy-4252/4261 for Maze - so their evidence is a different retailer and this sweep
+  neither confirms nor contradicts them. It records a checked negative at ONE retailer, nothing
+  more. The report also describes Maru Maze as a STICKER product, which would put it out of 3x3
+  scope entirely; that is a scope question this record does not settle.
+
+  INCIDENTAL AND MATERIAL TO P4-9: the same sweep returns FOUR Cyclone Boys Metallic 3x3 paths -
+
+    cyclone-boys-metallic-3x3
+    cyclone-boys-metallic-3x3-m
+    cyclone-boys-metallic-3x3-m-gradient
+    cyclone-boys-metallic-3x3-m-macaron
+
+  - which reinforces the P4-9 adjudication of cyclone-boys-metallic-3x3, one of the archive's
+  three deliberate ZERO-MODEL families, concluded as "'Metallic' is a finish treatment, not a
+  model line". Four separately-pathed products is a harder fact for that conclusion than the two
+  the adjudication already had.
+preservation_note: "CDX prefix enumeration output is the primary evidence; the locator is the CDX
+  query that reproduces the first of the two sweeps, per this archive's convention for evidence
+  that does not reduce to one page's text (RESEARCH_SPEC 3.5). The maru sweep is reproducible by
+  the command quoted in the excerpt. Run 2026-09-09."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: that eight of the eleven P26-6 leads correspond to real, separately-pathed
+  products at this retailer, and that two of those are still sold today.
+  DOES NOT ESTABLISH: that any of them warrants a family, which is a frozen-taxonomy decision;
+  release dates; or anything about the two Maru leads whose evidence is at cubezz.
+status: sourced
