@@ -1,13 +1,13 @@
 # Pass 4 Batch 2 — Agent H — Longtail sub-brands (17 manufacturers, 35 models)
 
-Status: IN PROGRESS. Skeleton committed first per mandatory instruction.
+Status: COMPLETE. All 35 models across all 17 manufacturers in scope assessed. Skeleton committed first per mandatory instruction; survived one session-limit kill mid-HuaMeng (recovered from disk, commit ecd1713) and continued to completion.
 
 ## Scope
 fangshi (4) · huameng (3) · kungfu (3) · newisland (3) · fanxin (3) · guoguan (3) ·
 escube (2) · guojia (2) · haitun (2) · qj (2) · senhuan (2) · cubestyle (1) · lefun (1) ·
 mohuanshousu (1) · mojue (1) · pbcube (1) · yancheng (1)
 
-findings-so-far: in progress — see per-manufacturer log below.
+findings-so-far: COMPLETE — 72 variants created across 35 models. See per-manufacturer log below and the summary at the end.
 
 ## Per-manufacturer log
 
@@ -484,11 +484,170 @@ unchanged from the prior section, no regressions from the 14-variant LeFun expan
 
 ---
 
-## Machine-readable summary (placeholder, to be replaced at end)
+### MoJue (1 model — mojue-m3-standard) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/mojue` sweep found exactly one URL,
+reconfirming the model record's own prior finding (TheCubicle prefix sweep + Cubezz.com
+domain-wide term sweep, both exactly one MoJue 3x3). One bare `--standard` baseline created.
+No new sources needed.
+
+### PBCube (1 model — pbcube-wr-standard) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/pbcube` sweep found exactly one URL,
+still marked "[Pre-Order]" at its only capture — matching the model record's own finding that
+this product has not yet reached general retail circulation anywhere. One bare `--standard`
+baseline created, held at `uncertain` given the pre-order status (a genuine absence of a
+second configuration cannot be confirmed for a product that has not finished launching). No
+new sources needed.
+
+### YanCheng (1 model — yancheng-yan3-standard) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/yancheng` sweep found exactly one URL,
+reconfirming the model record's own prior finding. Four stock colour options (Black, White,
+Primary, Stickerless Bright), already flagged as a pass-4 lead on the frozen model record, are
+collapsed into one `--standard` baseline per the `gan-356-air--standard` precedent — none
+carries a separate tier/edition name. No new sources needed.
+
+**Validation:** `npm run check` after this final section — 0 errors, 39 warnings (unchanged
+from the prior section, no regressions). This completes all 35 models across all 17
+manufacturers in this lane's scope; none was left unassessed.
+
+---
+
+## Summary across the whole lane
+
+**All 35 models across all 17 manufacturers in scope were assessed.** None was left
+unassessed — the lane was not interrupted again after the recorded session-limit recovery
+partway through HuaMeng (commit `ecd1713`), and the remaining 30 models were completed in one
+continuous run afterward, committing after each manufacturer per the standing instruction.
+
+**Density was highly uneven, as anticipated, but not uniformly low.** HaiTun and FangShi (the
+two manufacturers the brief flagged as likely dense) were dense as expected. Two further
+manufacturers turned out denser than the brief's "one- or two-model, single-configuration"
+expectation once their own frozen model records' own already-flagged pass-4 leads were chased:
+HuaMeng (10 variants across 3 models, via two dedicated `wayback.mjs prefix` sweeps that
+surfaced 4-5 named configurations per model) and LeFun (14 variants under one single model —
+a catalogue of separately-named print-theme editions, not stock colours). GuoGuan and FanXin's
+HuDong line were moderately dense (6 and 3 variants respectively) once their own already-
+flagged magnetized/DIY-kit/tier leads were resolved. The remaining eleven manufacturers were
+genuinely low-density, exactly as the brief anticipated: one bare or lightly-evidenced
+`--standard` baseline per model, each carrying its own differentiation-search attestation.
+
+**The recurring method across this whole lane**, once a manufacturer's model records were
+read: run `scripts/wayback.mjs prefix thecubicle.com/products/<brand>` (and, where a lead
+named a non-TheCubicle retailer, a targeted domain-wide CDX substring search on that retailer,
+e.g. Cubezz.com for FangShi's "Mini" leads) to enumerate every surviving URL under that brand,
+then fetch and read each configuration page directly with `scripts/wayback.mjs get` rather than
+relying on the age of an existing source excerpt. Nearly every genuinely dense finding in this
+report was a lead **already named on a frozen model or family record** ("pass 4 material, not
+enumerated here") that this pass's job was specifically to resolve, not a cold discovery.
+
+**Materiality calls made explicitly, for a human to review:**
+- Manufacturer edition/tier NAME alone (rule 7) was treated as sufficient materiality basis
+  for HaiTun's V2 Standard/Pioneer/Flagship trio, despite near-identical marketing copy across
+  the three — flagged explicitly in that section as the kind of pattern the manufacturer's own
+  ZhanLang case warns about, not silently accepted.
+- DIY-kit-vs-assembled was treated as a variant-level materiality axis (packaging/mechanism of
+  sale) for FangShi ShuangRen/JieYun and GuoGuan YueXiao, consistent with each model's own
+  pre-existing framing.
+- LeFun's 14 print themes were treated as separately-marketed colourway/sticker-type editions
+  (rule 6) and NOT collapsed as stock colours, because each carries its own name, page, and
+  price — a materially different case from the stock-colour-collapse precedent used everywhere
+  else in this report (GAN356 Air Black/White/Primary; QJ Candy Black/Pink; YanCheng's four
+  named colours; etc.).
+- Magnetized-vs-unmagnetized (GuoGuan Pro/Pro M, EDM/E) was read as a `magnet_configuration`
+  axis difference (rule 1).
+
+**Candidates rejected (not built into variants), in full:**
+- HaiTun Waverider V1's dedicated adjustment-tool product — a separate accessory SKU, not a
+  cube configuration.
+- HaiTun's Cubezz-only "Supreme Edition" V2 tier — named only in passing on an existing source
+  note; not independently investigated this pass (a quick Cubezz CDX check under the same
+  product-ID range returned nothing), left as an unchased lead rather than built without
+  evidence.
+- Every individual colour-combination SKU within FangShi's Mini ShuangRen DIY-kit range
+  (roughly a dozen body/cap permutations) and every stock colour within GuoGuan's Unstickered
+  DIY kit (eight colours) — anti-explosion; the configuration category (DIY kit) is the
+  variant, not each colour.
+- LeFun's `mini-round-3x3-keychain` — a different size/shape product, not this base mould.
+- The large CubeStyle Carbon Fiber / Hollow Sticker resticker range and every non-3x3-shaped
+  LeFun/CubeStyle/FanXin/KungFu product (2x2s, 4x4s, pyraminx, gear cubes, axis cubes,
+  fisher cubes, etc.) found in the same prefix sweeps — correctly out of scope for these
+  models, not variants of them.
+
+**Escalations (recorded, not actioned — all require either a human decision or a different
+pass's write lane):**
+- HuaMeng TG: the model's own `specs.core_system: dual_adjustment` may not be the intended
+  reading given all four non-limited configurations are titled "...Ball-Core..." — a possible
+  model-spec gap for the model-researcher lane, not corrected here (models frozen).
+- HuaMeng YS3M: two new sources this pass independently corroborate (a supply-chain notice
+  naming MoYu directly, and MoYu's own "Magic Clothes" UV-coating branding applied to this
+  product) the already-open MoYu-affiliation lead at the family/model level. Not acted on
+  (manufacturer/family boundaries frozen); recorded for a manufacturer-boundary review.
+- HaiTun V2 Standard/Pioneer/Flagship's near-identical marketing copy (see materiality calls
+  above) — surfaced for human review of whether all three should stand as separate variants.
+- FangShi's still-unresolved Chinese-language sourcing gap (no first-party FangShi/Funs Puzzle
+  source exists in any language, across six passes now including this one) — not re-attempted
+  this pass; the underlying blocker (no working translation/search route found so far) is
+  unchanged.
+- The pre-existing HaiTun ZhanLang V1 escalation (a second, real HaiTun product line with no
+  family record) is unchanged by this pass — not actioned, since family enumeration is frozen
+  and this pass's own evidence (Cubezz product IDs 7600/7601, genuinely distinct from the
+  Waverider V2 product ID range) does not resolve whether it needs its own family.
+
+## Machine-readable summary
 ```yaml
-models_assessed: []
-variants_created: []
+models_assessed:
+  - escube-es3-v1
+  - escube-air-v1
+  - huameng-tg-v1
+  - huameng-tg-v2
+  - huameng-ys3m-v1
+  - haitun-waverider-v1
+  - haitun-waverider-v2
+  - fangshi-guangying-original
+  - fangshi-jieyun-original
+  - fangshi-shuangren-original
+  - fangshi-shuangren-v2
+  - guoguan-yuexiao-original
+  - guoguan-yuexiao-pro
+  - guoguan-yuexiao-edm
+  - kungfu-dot-cube-3x3
+  - kungfu-longyuan-3x3
+  - kungfu-qinghong-3x3
+  - newisland-lightning-original
+  - newisland-lightning-v2
+  - newisland-phoenix-standard
+  - fanxin-3x3-standard
+  - fanxin-hudong-3x3
+  - fanxin-magnetic-3x3-standard
+  - guojia-type-a-chun1
+  - guojia-type-a-chun2
+  - qj-candy-3x3-standard
+  - qj-pillowed-3x3-standard
+  - senhuan-mars-original
+  - senhuan-mars-s
+  - cubestyle-3x3-standard
+  - lefun-3x3-standard
+  - mohuanshousu-chufeng-standard
+  - mojue-m3-standard
+  - pbcube-wr-standard
+  - yancheng-yan3-standard
+variants_created: 72
 models_left_unassessed: []
-candidates_rejected: []
-escalations: []
+candidates_rejected:
+  - haitun-waverider-v1-adjustment-tool (accessory SKU, not a cube configuration)
+  - haitun cubezz "Supreme Edition" V2 tier (unchased lead, not evidenced)
+  - fangshi mini-shuangren-diy-kit individual body/cap colour SKUs (~12, anti-explosion)
+  - guoguan-yuexiao-original-diy-kit-unstickered individual stock colours (8, anti-explosion)
+  - lefun-mini-round-3x3-keychain (different product, not this base mould)
+  - cubestyle carbon-fiber/hollow-sticker resticker range (different, already-excluded family)
+  - non-3x3-shaped products surfaced in the same prefix sweeps across every manufacturer
+    (2x2/4x4/5x5/pyraminx/gear-cube/axis-cube/fisher-cube/etc.)
+escalations:
+  - huameng-tg-v1 core_system vs. "Ball-Core" naming — possible model-spec gap, not corrected (models frozen)
+  - huameng-ys3m-v1 MoYu-affiliation lead further corroborated by 2 new sources — not actioned (manufacturer/family frozen)
+  - haitun-waverider-v2 Standard/Pioneer/Flagship near-identical marketing copy — materiality call flagged for review
+  - fangshi Chinese-language sourcing gap — still unresolved across 6 passes, not re-attempted
+  - haitun ZhanLang V1 (pre-existing, unchanged) — real second HaiTun line, no family record, not actioned (families frozen)
 ```

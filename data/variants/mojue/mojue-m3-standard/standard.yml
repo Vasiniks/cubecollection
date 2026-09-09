@@ -1,0 +1,29 @@
+# variant: mojue-m3-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/mojue` sweep found exactly one URL, reconfirming the model
+# record's own prior finding (a product-slug sweep of TheCubicle and a domain-wide term sweep
+# of Cubezz.com both returned exactly one MoJue 3x3).
+id: mojue-m3-standard--standard
+entity: variant
+model_id: mojue-m3-standard
+name: "MoJue M3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-mojue-m3-2017, thecubicle-mojue-m3-2020]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/mojue found no sibling URL for this product beyond the single
+      already-on-file capture, and the model record's own Cubezz.com domain-wide sweep found
+      no second MoJue 3x3 either. No colourway edition, tier name, or limited/commemorative
+      status found. Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [cubezz-mojue-m3-2017]
+    note: "Cubezz's own listing names a 'Primary Color configuration'; no explicit
+      'stickerless' statement was found, held at `uncertain`."

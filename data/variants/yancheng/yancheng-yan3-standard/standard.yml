@@ -1,0 +1,34 @@
+# variant: yancheng-yan3-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/yancheng` sweep found exactly one URL, reconfirming the model
+# record's own prior finding (no second YanCheng product, predecessor, or successor found
+# across TheCubicle and a domain-wide non-US retailer sweep). Stock colour options (Black,
+# White, Primary, Stickerless Bright), already flagged as a pass-4 lead on the frozen model
+# record, are collapsed into this one variant per the `gan-356-air--standard` precedent — no
+# source treats any of them as a separately named/marketed edition.
+id: yancheng-yan3-standard--standard
+entity: variant
+model_id: yancheng-yan3-standard
+name: "YanCheng YAN3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yancheng-yan3-2020]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/yancheng found no sibling URL for this product beyond the single
+      already-on-file capture, and the model record's own domain-wide non-US retailer sweep
+      found no second YanCheng product either. Four stock colour options (Black, White,
+      Primary, Stickerless Bright) are named directly by the retailer with no further tier or
+      edition word attached to any of them; read as one standard configuration's stock colour
+      range, not four editions."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-yancheng-yan3-2020]
+    note: "One of the retailer's own named colour options is literally 'Stickerless Bright',
+      directly confirming a stickerless body for this line."
