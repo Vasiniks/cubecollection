@@ -4,12 +4,19 @@
 # collection-wide sweep) on 2026-09-03, to establish which named generations each family
 # actually has a retailer SKU for. Existence-level evidence only; no product descriptions are
 # quoted here (see the per-family *-descriptions.yml sources for those).
+# LOCATOR CORRECTED 2026-09-09. `url` pointed at one arbitrary MEMBER of this
+# enumeration, not at the enumeration itself — so a reader following it never reached the
+# evidence, and the record collided with that member's own source record, which rule 42 then
+# read as one page under two ids. The archive's /collections/ sweeps already did this right
+# by pointing at the catalogue page; a /products/<prefix>* sweep has no such page, so the
+# locator is now the CDX query that reproduces the enumeration. The superseded pointer was
+# https://www.thecubicle.com/products/dayan-lingyun-v2 — an arbitrary member, already listed in the excerpt below.
 id: thecubicle-dayan-per-family-product-urls-2026
 entity: source
 kind: retailer
 title: "thecubicle.com/products/dayan-{taiyan,xiangyun,lingyun,lunhui,panshi,zhanchi}* — product URL enumeration"
 publisher: "TheCubicle"
-url: "https://www.thecubicle.com/products/dayan-lingyun-v2"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/dayan-&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=300"
 preservation_method: excerpt
 excerpt: |-
   `npm run wayback -- prefix thecubicle.com/products/dayan-taiyan --limit 300` returns exactly

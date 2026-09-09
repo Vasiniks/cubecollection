@@ -1,0 +1,17 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 47, midnight branch. The timestamp is a date someone typed, not a capture Wayback
+# returned: it 302s to whatever snapshot is nearest, so the evidence under this record can move
+# while the record still claims preservation_method: archive_url. Ten real records looked like
+# this before 2026-09-09, and one of them hid a duplicate citation from rule 42.
+id: zz-unpinned-midnight
+entity: source
+kind: retailer
+title: ZZ unpinned capture, midnight timestamp
+publisher: ZZ Unpinned Co
+url: "https://zz-example.invalid/products/zz-unpinned-midnight"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240101000000id_/https://zz-example.invalid/products/zz-unpinned-midnight"
+excerpt: "Fixture excerpt for the midnight-timestamp record, long enough to satisfy minLength."
+accessed: "2024-01-01"
+reliability_note: Exercises rule 47's midnight branch. The timestamp is a request, not a capture.
+status: drafted

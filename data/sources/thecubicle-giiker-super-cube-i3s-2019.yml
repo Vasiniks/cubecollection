@@ -2,6 +2,11 @@
 # TheCubicle's own product page for the GiiKER Super Cube i3S, captured via Wayback. Tier 2,
 # first-party retailer copy with real specs (weight, dimensions) and an explicit succession
 # statement.
+# CAPTURE PINNED 2026-09-09. archive_url carried the midnight-exact timestamp
+# 20190512000000, which is a date-rounded REQUEST, not a capture id: Wayback 302s it to
+# whatever capture is nearest, so the evidence under this record could move. Resolved once
+# and pinned to the capture it was already serving. Same page, same day, same evidence —
+# now immutable. See rule 47.
 id: thecubicle-giiker-super-cube-i3s-2019
 entity: source
 kind: retailer
@@ -9,7 +14,7 @@ title: "Giiker Super Cube i3S – TheCubicle"
 publisher: "TheCubicle"
 url: "https://www.thecubicle.com/products/giiker-super-cube-i3s"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20190512000000id_/https://www.thecubicle.com/products/giiker-super-cube-i3s"
+archive_url: "https://web.archive.org/web/20190512100309id_/https://www.thecubicle.com/products/giiker-super-cube-i3s"
 excerpt: |-
   "The Giiker Super Cube i3S is an updated version of the previous Giiker Super Cube. This
   version comes with updated software, Bluetooth v. 4.0, and bright vibrant stickers.

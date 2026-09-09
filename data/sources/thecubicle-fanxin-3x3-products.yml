@@ -3,6 +3,11 @@
 # lines (2020-2025 captures). Tier 2, first-party retailer copy — the only source located this
 # pass for FanXin's 3x3 product history, since no Speedsolving wiki page exists for this
 # manufacturer (checked directly, both capitalisations return 404).
+# CAPTURE PINNED 2026-09-09. archive_url carried the midnight-exact timestamp
+# 20241009000000, which is a date-rounded REQUEST, not a capture id: Wayback 302s it to
+# whatever capture is nearest, so the evidence under this record could move. Resolved once
+# and pinned to the capture it was already serving. Same page, same day, same evidence —
+# now immutable. See rule 47.
 id: thecubicle-fanxin-3x3-products
 entity: source
 kind: retailer
@@ -10,7 +15,7 @@ title: "FanXin 3x3, Magnetic 3x3, and HuDong Light 3x3 — TheCubicle product pa
 publisher: "TheCubicle"
 url: "https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20241009000000id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+archive_url: "https://web.archive.org/web/20241009113827id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
 excerpt: |-
   "fanxin-3x3" (first captured 2020-09-27): Product Description: "The FanXin 3x3 draws
   inspiration from other 3x3 cube mechanisms, yet it strikes a good balance between

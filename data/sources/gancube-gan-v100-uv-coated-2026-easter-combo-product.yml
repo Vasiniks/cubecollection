@@ -4,6 +4,11 @@
 # this pass found GAN stating the base V100 Maglev's size and weight directly in its own words
 # (55mm / 64g) — the equivalent figures on GAN V100 Maglev's own single-product page
 # (gancube-gan-v100-maglev-product) were pure tagline copy with no numeric specification.
+# CAPTURE PINNED 2026-09-09. archive_url carried the midnight-exact timestamp
+# 20260330000000, which is a date-rounded REQUEST, not a capture id: Wayback 302s it to
+# whatever capture is nearest, so the evidence under this record could move. Resolved once
+# and pinned to the capture it was already serving. Same page, same day, same evidence —
+# now immutable. See rule 47.
 id: gancube-gan-v100-uv-coated-2026-easter-combo-product
 entity: source
 kind: manufacturer_official
@@ -11,7 +16,7 @@ title: "GAN V100 UV Coated 2026 Easter Combo | GANCUBE"
 publisher: "GANCUBE"
 url: "https://www.gancube.com/products/gan-v100-uv-coated-2026-easter-combo"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20260330000000/https://www.gancube.com/products/gan-v100-uv-coated-2026-easter-combo"
+archive_url: "https://web.archive.org/web/20260330232756/https://www.gancube.com/products/gan-v100-uv-coated-2026-easter-combo"
 excerpt: |-
   Variant selector: "Maglev_UV Coated_2026 Easter Combo". Body copy: "Choosing the GAN V100
   maglev speed cube means embracing a competition-ready puzzle designed for enthusiasts...

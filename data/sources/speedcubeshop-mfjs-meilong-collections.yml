@@ -5,6 +5,16 @@
 # (2025-11 through 2026-06, product slugs prefixed "moyu-meilong-*"). Tier 2, first-party
 # retailer catalogue structure. Cited for the Meilong family's manufacturer-attribution
 # ambiguity, not for any specification.
+# CAPTURE PINNED AND EXCERPT CORRECTED 2026-09-09. archive_url was
+# ".../web/20250103000000*/..." — the trailing "*" makes that a Wayback CALENDAR SEARCH url, not
+# a capture at all, so `preservation_method: archive_url` claimed a pinned snapshot this record
+# did not have. Pinned to the real 2025-01-03 capture (20250103205538), which was then re-fetched
+# and diffed against the excerpt. The excerpt overstated it in three ways: "8x8 through -13x13"
+# where the capture stops at 11x11; skewb "mixup" variants that do not appear on the page at all;
+# and "the entire Meilong catalogue", which a single retailer collection page cannot establish.
+# All three corrected against the capture, and the four slugs it does carry that went unlisted
+# (puzzle-box, magnetic-megaminx, pyraminx-magnetic, the 2x2-3x3 bundle) added. Nothing in the
+# archive relied on the overstated part: every slug involved is a non-3x3 puzzle. See rule 47.
 id: speedcubeshop-mfjs-meilong-collections
 entity: source
 kind: retailer
@@ -12,15 +22,19 @@ title: "SpeedCubeShop — \"MoFang JiaoShi\" and \"MoYu Meilong\"/\"MoYu Speed C
 publisher: "SpeedCubeShop"
 url: "https://speedcubeshop.com/collections/mofang-jiaoshi"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20250103000000*/https://speedcubeshop.com/collections/mofang-jiaoshi"
+archive_url: "https://web.archive.org/web/20250103205538/https://speedcubeshop.com/collections/mofang-jiaoshi"
 excerpt: |-
   2025-01-03 capture of https://speedcubeshop.com/collections/mofang-jiaoshi lists, among many
   other MFJS-branded products, "mofang-jiaoshi-meilong-2x2", "mofang-jiaoshi-meilong-3x3",
   "mofang-jiaoshi-meilong-4x4", "mofang-jiaoshi-meilong-5x5", "mofang-jiaoshi-meilong-8x8"
-  through "-13x13", "mofang-jiaoshi-meilong-pyraminx", "mofang-jiaoshi-meilong-skewb" and its
-  "mixup" variants, "mofang-jiaoshi-meilong-clover-3x3", "mofang-jiaoshi-meilong-gift-box", and
-  "mofang-jiaoshi-meilong-kilominx" — the entire Meilong catalogue filed under this retailer's
-  "MoFang JiaoShi" brand collection at that date.
+  through "-11x11", "mofang-jiaoshi-meilong-pyraminx", "mofang-jiaoshi-meilong-pyraminx-magnetic",
+  "mofang-jiaoshi-meilong-skewb", "mofang-jiaoshi-meilong-clover-3x3",
+  "mofang-jiaoshi-meilong-gift-box", "mofang-jiaoshi-meilong-puzzle-box",
+  "mofang-jiaoshi-meilong-magnetic-megaminx", "mofang-jiaoshi-meilong-2x2-3x3-bundle", and
+  "mofang-jiaoshi-meilong-kilominx" — the Meilong products filed under this retailer's
+  "MoFang JiaoShi" brand collection at that date. That is the complete set of distinct
+  "mofang-jiaoshi-meilong-*" slugs in the capture; whether it was MoYu's entire Meilong
+  catalogue at that date is not something one retailer collection page can establish.
 
   Separately, captures from 2025-11 through 2026-06 (e.g.
   https://speedcubeshop.com/collections/moyu-speed-cubes/products/moyu-meilong-3x3-v2-magnetic,

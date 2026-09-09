@@ -133,6 +133,15 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   // CITATION branches, and the rule is only correct if it tells them apart — reporting them
   // alike raised 5 false positives out of 8 on real data. Assert each message specifically,
   // and assert that the chronological pair is NOT accused of double-counting.
+  // Rule 47 has two branches and they fail differently: a midnight timestamp resolves to
+  // SOMETHING (just not stably), a calendar wildcard resolves to nothing at all. Assert both,
+  // because a rule that only caught the wildcard would have missed all ten real records.
+  /zz-unpinned-midnight[^\n]*\[47\]|\[47\][^\n]*zz-unpinned-midnight/.test(l.out)
+    ? ok('rule 47 midnight branch fires', 'a date-rounded capture request is caught')
+    : bad('rule 47 midnight branch fires', 'no midnight [47] message in lint output');
+  /zz-unpinned-wildcard[^\n]*\[47\]|\[47\][^\n]*zz-unpinned-wildcard/.test(l.out)
+    ? ok('rule 47 wildcard branch fires', 'a calendar-search url claiming to be a capture is caught')
+    : bad('rule 47 wildcard branch fires', 'no wildcard [47] message in lint output');
   /zz-dup-page-[ab][^\n]*one capture of one page under different ids|one capture of one page under different ids[^\n]*zz-dup-page/.test(l.out)
     ? ok('rule 42 false-corroboration branch fires', 'attestation citing one capture twice is caught')
     : bad('rule 42 false-corroboration branch fires', 'no same-capture citation [42] message in lint output');

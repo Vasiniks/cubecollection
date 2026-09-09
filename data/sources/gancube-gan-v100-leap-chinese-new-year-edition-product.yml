@@ -3,6 +3,11 @@
 # the Horse" (identical description text, identical specs). Cited to establish that the two
 # URLs/titles are the same underlying edition, and for a dated customer review corroborating
 # an approximate January 2026 launch.
+# CAPTURE PINNED 2026-09-09. archive_url carried the midnight-exact timestamp
+# 20260127000000, which is a date-rounded REQUEST, not a capture id: Wayback 302s it to
+# whatever capture is nearest, so the evidence under this record could move. Resolved once
+# and pinned to the capture it was already serving. Same page, same day, same evidence —
+# now immutable. See rule 47.
 id: gancube-gan-v100-leap-chinese-new-year-edition-product
 entity: source
 kind: manufacturer_official
@@ -10,7 +15,7 @@ title: "GAN V100 Leap Chinese New Year Edition | GANCUBE"
 publisher: "GANCUBE"
 url: "https://www.gancube.com/products/gan-v100-leap-chinese-new-year-edition"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20260127000000/https://www.gancube.com/products/gan-v100-leap-chinese-new-year-edition"
+archive_url: "https://web.archive.org/web/20260127002224/https://www.gancube.com/products/gan-v100-leap-chinese-new-year-edition"
 excerpt: |-
   "The GAN V100 Leap Chinese New Year Edition is a 55mm magnetic speed cube built for stable,
   controlled performance. It features a spring-based GES system (no maglev) for a more

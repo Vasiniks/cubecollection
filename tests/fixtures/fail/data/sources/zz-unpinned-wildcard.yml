@@ -1,0 +1,17 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 47, wildcard branch. A trailing "*" makes this a Wayback CALENDAR SEARCH url — a list of
+# captures, not a capture — so preservation_method: archive_url is asserting a pinned snapshot
+# that does not exist. Distinct from the midnight branch: that one resolves to something, this
+# one preserves nothing at all.
+id: zz-unpinned-wildcard
+entity: source
+kind: retailer
+title: ZZ unpinned capture, calendar wildcard
+publisher: ZZ Unpinned Co
+url: "https://zz-example.invalid/collections/zz-unpinned-wildcard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240101000000*/https://zz-example.invalid/collections/zz-unpinned-wildcard"
+excerpt: "Fixture excerpt for the calendar-wildcard record, long enough to satisfy minLength."
+accessed: "2024-01-01"
+reliability_note: Exercises rule 47's wildcard branch. A calendar search preserves nothing.
+status: drafted

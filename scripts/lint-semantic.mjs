@@ -426,5 +426,41 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 47 — an archive_url must name a capture, not ask for one
+//
+// Wayback treats `/web/<timestamp>/<url>` as a REQUEST: it 302s to whatever capture is nearest
+// to that timestamp. A timestamp written to the second names one immutable snapshot. A
+// midnight-exact one (HHMMSS = 000000) almost never does — it is a date typed by hand, and the
+// capture it resolves to can change as new captures are added. `preservation_method: archive_url`
+// is a promise that the evidence is pinned, and a rounded timestamp quietly breaks it.
+//
+// Found 2026-09-09 in 10 of 480 archive_urls. Chance would put 0.0056 there if capture times were
+// uniform across the day, so this is ~1800x chance and `000000` was the single most common
+// time-of-day in the archive, three times over the runner-up. Constructed, not observed.
+//
+// The reason this is a lint rule and not a note in the methodology is that it does REAL damage
+// beyond preservation. Rule 42 decides whether two records are the same observation by comparing
+// capture ids. `thecubicle-fanxin-3x3-products` (20241009000000) and `thecubicle-fanxin-hudong-2024`
+// (20241009113827) are the SAME capture — the first 302s to the second — but rule 42 could only
+// see two different strings, so it downgraded a genuine double-citation to the weak
+// change-over-time branch. A rounded timestamp does not merely weaken the evidence; it hides
+// duplicate evidence from the check built to find it. All 10 were resolved once and pinned.
+//
+// A wildcard is the same fault, further along: `/web/20250103000000*/` is a calendar SEARCH page,
+// not a capture, and preserves nothing at all.
+{
+  for (const rec of (byEntity.get('source') ?? []).filter((r) => r.doc?.id)) {
+    const a = rec.doc.archive_url;
+    if (!a) continue;
+    const m = /\/web\/(\d{14})(\*)?/.exec(a);
+    if (!m) continue;
+    if (m[2]) {
+      report.warn('47', rec.file, `archive_url ends its timestamp with "*", which is a Wayback calendar search, not a capture. preservation_method claims a pinned snapshot this record does not have.`);
+    } else if (m[1].slice(8) === '000000') {
+      report.warn('47', rec.file, `archive_url capture ${m[1]} is midnight-exact, so it is a date-rounded request rather than a capture id — Wayback resolves it to whatever is nearest and that can change. Resolve it once and pin the capture it returns.`);
+    }
+  }
+}
+
 report.print();
 process.exit(0);

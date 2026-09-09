@@ -3,6 +3,11 @@
 # first-party, pre-dating this archive's 2016-2026 scope window but establishing the naming
 # lineage of two products QJ continued to sell into the scope window (see
 # data/families/qj-candy-3x3.yml, data/families/qj-pillowed-3x3.yml).
+# CAPTURE PINNED 2026-09-09. archive_url carried the midnight-exact timestamp
+# 20121026000000, which is a date-rounded REQUEST, not a capture id: Wayback 302s it to
+# whatever capture is nearest, so the evidence under this record could move. Resolved once
+# and pinned to the capture it was already serving. Same page, same day, same evidence —
+# now immutable. See rule 47.
 id: qjcube-com-catalogue-2012
 entity: source
 kind: manufacturer_official
@@ -10,7 +15,7 @@ title: "QJ Cube — product category pages (qjcube.com, Joomla/VirtueMart storef
 publisher: "QJ Cube"
 url: "http://www.qjcube.com/categories/qj-magic-cube/qj-3x3-speed-cube-black-5-7cm-detail"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20121026000000id_/http://www.qjcube.com:80/categories/qj-magic-cube/qj-3x3-speed-cube-black-5-7cm-detail"
+archive_url: "https://web.archive.org/web/20121026171121id_/http://www.qjcube.com/categories/qj-magic-cube/qj-3x3-speed-cube-black-5-7cm-detail"
 excerpt: |-
   Category and product-detail URL slugs captured under qjcube.com/categories/qj-magic-cube
   and qjcube.com/categories/qj-profiled-cube (2012-2015), including: "qj-3x3-speed-cube-black-

@@ -5,12 +5,19 @@
 # while its retailer catalogue is current. A full, non-truncated CDX prefix sweep of
 # thecubicle.com/products/dayan* (351 distinct captured URLs, 2018-2026), run to the same
 # standard as thecubicle-shengshou-products-prefix-2026.
+# LOCATOR CORRECTED 2026-09-09. `url` pointed at one arbitrary MEMBER of this
+# enumeration, not at the enumeration itself — so a reader following it never reached the
+# evidence, and the record collided with that member's own source record, which rule 42 then
+# read as one page under two ids. The archive's /collections/ sweeps already did this right
+# by pointing at the catalogue page; a /products/<prefix>* sweep has no such page, so the
+# locator is now the CDX query that reproduces the enumeration. The superseded pointer was
+# https://www.thecubicle.com/products/dayan-zhanchi — an arbitrary member, already listed in the excerpt below.
 id: thecubicle-dayan-products-prefix-2026
 entity: source
 kind: retailer
 title: "thecubicle.com/products/dayan* — full product URL enumeration"
 publisher: "TheCubicle"
-url: "https://www.thecubicle.com/products/dayan-zhanchi"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/dayan&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=2000"
 preservation_method: excerpt
 excerpt: |-
   CDX prefix enumeration of https://www.thecubicle.com/products/dayan (2018-2026 captures, 351

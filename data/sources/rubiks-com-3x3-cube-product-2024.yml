@@ -1,6 +1,11 @@
 # source: rubiks-com-3x3-cube-product-2024
 # Rubik's own official site, "Rubik's 3x3 Cube" product page, captured via Wayback. Tier 1,
 # first-party.
+# CAPTURE PINNED 2026-09-09. archive_url carried the midnight-exact timestamp
+# 20240525000000, which is a date-rounded REQUEST, not a capture id: Wayback 302s it to
+# whatever capture is nearest, so the evidence under this record could move. Resolved once
+# and pinned to the capture it was already serving. Same page, same day, same evidence —
+# now immutable. See rule 47.
 id: rubiks-com-3x3-cube-product-2024
 entity: source
 kind: manufacturer_official
@@ -8,7 +13,7 @@ title: "Rubik's 3x3 Cube – The Official Rubik's Cube"
 publisher: "Rubik's / Spin Master"
 url: "https://www.rubiks.com/products/rubiks-3x3"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20240525000000id_/https://www.rubiks.com/products/rubiks-3x3"
+archive_url: "https://web.archive.org/web/20240525101137id_/https://www.rubiks.com/products/rubiks-3x3"
 excerpt: |-
   "Meet the puzzle that changed the world! The original 3x3 Rubik's Cube has captivated
   generations... Improved Play: The new and improved Rubik's Cube features a mechanism that

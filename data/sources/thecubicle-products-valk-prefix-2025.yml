@@ -3,12 +3,19 @@
 # `prefix` (2019-2025 captures). Tier 2, first-party retailer naming — establishes the Valk 3x3
 # succession (Valk2 M, Valk 3 family, Valk 4 M, Valk 5 M) as a persisting, continuously-sold
 # named line through at least November 2025.
+# LOCATOR CORRECTED 2026-09-09. `url` pointed at one arbitrary MEMBER of this
+# enumeration, not at the enumeration itself — so a reader following it never reached the
+# evidence, and the record collided with that member's own source record, which rule 42 then
+# read as one page under two ids. The archive's /collections/ sweeps already did this right
+# by pointing at the catalogue page; a /products/<prefix>* sweep has no such page, so the
+# locator is now the CDX query that reproduces the enumeration. The superseded pointer was
+# https://www.thecubicle.com/products/valk-5-m — an arbitrary member, already listed in the excerpt below.
 id: thecubicle-products-valk-prefix-2025
 entity: source
 kind: retailer
 title: "thecubicle.com/products/valk-* — product URL enumeration"
 publisher: "TheCubicle"
-url: "https://www.thecubicle.com/products/valk-5-m"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/valk-&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=300"
 preservation_method: excerpt
 excerpt: |-
   CDX prefix enumeration of https://www.thecubicle.com/products/valk returns captures spanning

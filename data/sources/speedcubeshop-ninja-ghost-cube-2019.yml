@@ -3,6 +3,11 @@
 # independent second retailer confirming Ninja's product range is limited to Ghost Cube shape
 # mods, corroborating TheCubicle's own manufacturer-filter finding already in
 # data/manufacturers/ninja.yml.
+# CAPTURE PINNED 2026-09-09. archive_url carried the midnight-exact timestamp
+# 20190821000000, which is a date-rounded REQUEST, not a capture id: Wayback 302s it to
+# whatever capture is nearest, so the evidence under this record could move. Resolved once
+# and pinned to the capture it was already serving. Same page, same day, same evidence —
+# now immutable. See rule 47.
 id: speedcubeshop-ninja-ghost-cube-2019
 entity: source
 kind: retailer
@@ -10,7 +15,7 @@ title: "Ninja Ghost Cube 3x3 - SpeedCubeShop"
 publisher: "SpeedCubeShop"
 url: "https://speedcubeshop.com/products/ninja-ghost-cube-3x3"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20190821000000/https://speedcubeshop.com/products/ninja-ghost-cube-3x3"
+archive_url: "https://web.archive.org/web/20190821082213/https://speedcubeshop.com/products/ninja-ghost-cube-3x3"
 excerpt: |-
   Product listing for "Ninja Ghost Cube 3x3", still live and re-captured through at least
   2025. Full prefix enumeration (`speedcubeshop.com/products/ninja*`) returns 16 URLs, every

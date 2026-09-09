@@ -3,12 +3,19 @@
 # Cubelelo (India) — the same retailer already used for the equivalent ShengShou check
 # (cubelelo-shengshou-products-prefix-2026). A CDX prefix sweep of cubelelo.com/products/dayan*
 # (39 distinct captured URLs, 2020-2025, NOT truncated).
+# LOCATOR CORRECTED 2026-09-09. `url` pointed at one arbitrary MEMBER of this
+# enumeration, not at the enumeration itself — so a reader following it never reached the
+# evidence, and the record collided with that member's own source record, which rule 42 then
+# read as one page under two ids. The archive's /collections/ sweeps already did this right
+# by pointing at the catalogue page; a /products/<prefix>* sweep has no such page, so the
+# locator is now the CDX query that reproduces the enumeration. The superseded pointer was
+# https://www.cubelelo.com/products/dayan-bermuda-cube — an arbitrary member, already listed in the excerpt below.
 id: cubelelo-dayan-products-prefix-2026
 entity: source
 kind: retailer
 title: "cubelelo.com/products/dayan* — product URL enumeration (non-US/English retailer check)"
 publisher: "Cubelelo"
-url: "https://www.cubelelo.com/products/dayan-bermuda-cube"
+url: "https://web.archive.org/cdx/search/cdx?url=cubelelo.com/products/dayan&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=200"
 preservation_method: excerpt
 excerpt: |-
   CDX prefix enumeration of https://www.cubelelo.com/products/dayan (2020-2025 captures, 39
