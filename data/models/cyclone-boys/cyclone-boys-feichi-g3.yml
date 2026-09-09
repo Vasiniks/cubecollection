@@ -20,7 +20,7 @@ generation:
   basis: community_convention
 specs:
   size_mm: 56.0
-  weight_g: 109
+  weight_g: 91.1
 description: |-
   TheCubicle's own product copy (thecubicle-cyclone-boys-g3-feichi, tier 2): "The Cyclone Boys
   G3 FeiChi is the latest generation 3x3 from Cyclone Boys. It features an improved design
@@ -54,6 +54,7 @@ attestations:
   /specs/weight_g:
     confidence: reported
     sources: [thecubicle-cyclone-boys-g3-feichi]
+    note: "CORRECTED 2026-09-09 by an archive-wide sweep: this field previously held the GROSS (packaged) weight, which includes the box and is not the product's weight. The same source states an item weight, and that figure is now recorded. A gross figure is refused as a product weight throughout this archive."
   /specs/shape:
     confidence: unknown
     note: "Researched and not found at tier 1-2."

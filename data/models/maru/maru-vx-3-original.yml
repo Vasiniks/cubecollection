@@ -19,7 +19,7 @@ generation:
   basis: community_convention
 specs:
   size_mm: 56.0
-  weight_g: 105
+  weight_g: 69
   shape: standard
 description: |-
   TheCubicle's own product copy (thecubicle-maru-vx-3, tier 2): "The VX-3 is an airy puzzle
@@ -52,7 +52,7 @@ attestations:
     sources: [thecubicle-maru-vx-3]
     note: "Same re-fetch as /specs/size_mm. 'Gross Weight: 105g' used per this archive's
       established convention; a separate 'Item Weight: 69.0g' figure from the same table is
-      not used here (see description)."
+      not used here (see description). CORRECTED 2026-09-09 by an archive-wide sweep: this field previously held the GROSS (packaged) weight, which includes the box and is not the product's weight. The same source states an item weight, and that figure is now recorded. A gross figure is refused as a product weight throughout this archive."
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-maru-vx-3]

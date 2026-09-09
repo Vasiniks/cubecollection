@@ -33,7 +33,6 @@ generation:
   ordinal: 1
   basis: community_convention
 specs:
-  weight_g: 145
   shape: other
 description: |-
   SpeedCubeShop's earliest found capture (speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015,
@@ -106,8 +105,8 @@ attestations:
       this agent's own periodization by naming era (worked decision G), not a manufacturer- or
       community-declared numbering. Recorded uncertain deliberately."
   /specs/weight_g:
-    confidence: probable
-    sources: [thecubicle-mf8-crazy-3x3-planets-assorted]
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 145g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-mf8-crazy-3x3-planets-assorted]

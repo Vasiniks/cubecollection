@@ -41,7 +41,6 @@ name: "FangShi ShuangRen"
 scope_class: core
 specs:
   size_mm: 57.0
-  weight_g: 95
   shape: standard
 description: |-
   TheCubicle's own product page (thecubicle-fangshi-shuangren-v2, re-fetched this pass at its
@@ -75,9 +74,8 @@ attestations:
       'ShuangRen II' (the successor generation); its non-'II' 57mm listings could not be located,
       only its 54.6mm 'Mini' line. Held below `confirmed` accordingly."
   /specs/weight_g:
-    confidence: probable
-    sources: [thecubicle-fangshi-shuangren-v2]
-    note: "Same single-retailer limitation as /specs/size_mm."
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 95g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-fangshi-shuangren-v2]

@@ -28,7 +28,6 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 56.0
-  weight_g: 100
   shape: standard
 description: |-
   TheCubicle's own product description (thecubicle-mf8-legend-v2): "The MF8 Legend V2 is the
@@ -65,8 +64,8 @@ attestations:
     confidence: probable
     sources: [thecubicle-mf8-legend-v2]
   /specs/weight_g:
-    confidence: probable
-    sources: [thecubicle-mf8-legend-v2]
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 100g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-mf8-legend-v2]

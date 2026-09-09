@@ -29,7 +29,7 @@ released:
     earlier."
 specs:
   size_mm: 40.0
-  weight_g: 36
+  weight_g: 29.7
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys Mini 3x3 —
   Released December 2016. A 40 mm cube." Two independent tier 2 retailers agree closely: Cubezz.
@@ -73,7 +73,7 @@ attestations:
     sources: [thecubicle-cyclone-boys-mini-3x3]
     note: "TheCubicle's own 'Gross Weight: 36g' used per this archive's established convention;
       its own 'Item Weight: 29.7g' is very close to Cubezz's unqualified '29g' figure, treated
-      as strong corroboration of the bare-cube weight specifically."
+      as strong corroboration of the bare-cube weight specifically. CORRECTED 2026-09-09 by an archive-wide sweep: this field previously held the GROSS (packaged) weight, which includes the box and is not the product's weight. The same source states an item weight, and that figure is now recorded. A gross figure is refused as a product weight throughout this archive."
   /specs/shape:
     confidence: unknown
     note: "Researched and not found at tier 1-2."

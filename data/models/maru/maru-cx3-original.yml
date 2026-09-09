@@ -15,7 +15,6 @@ generation:
   ordinal: 1
   basis: community_convention
 specs:
-  weight_g: 95
   shape: standard
 description: |-
   TheCubicle's own product copy (thecubicle-maru-cx3, tier 2): "The Maru CX3 is a hotly
@@ -35,14 +34,8 @@ description: |-
 status: drafted
 attestations:
   /specs/weight_g:
-    confidence: reported
-    sources: [thecubicle-maru-cx3]
-    note: "The existing thecubicle-maru-cx3 source's own excerpt quotes only 'Manufacturer:
-      Maru' from the spec table; this figure ('Gross Weight: 95g') was independently confirmed
-      this pass by re-fetching the SAME archive_url capture already recorded on that source
-      (20250118140957), which the earlier excerpt did not reproduce in full. No new source
-      record was created for this — citing the existing id rather than manufacturing a
-      near-duplicate source for the same page."
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 95g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-maru-cx3]

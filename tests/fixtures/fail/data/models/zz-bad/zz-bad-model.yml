@@ -12,6 +12,12 @@ scope_class: core
 geometry_profile_id: zz-reserved-profile
 specs:
   size_mm: 55.5
+  weight_g: 213
+description: |-
+  SYNTHETIC FIXTURE. The retailer states "Gross Weight: 213g / Item Weight: 89.9g" and this
+  record stores the GROSS figure, which includes the box. Rule 45 must catch it: the value sits
+  inside rule 18's plausible 50-130g range, so a range check cannot see it — only comparing the
+  recorded number against what the source calls it will.
 status: stub
 attestations:
   "/aliases":
@@ -23,3 +29,7 @@ attestations:
     sources: [zz-bad-src-social]
     note: Fixture value. Claims probable on a tier-5 source, which rule 43 must flag - the
       vocabulary puts probable at tier 2 or better.
+  "/specs/weight_g":
+    confidence: reported
+    sources: [zz-samepub-a]
+    note: Fixture value. Gross Weight 213g recorded where Item Weight 89.9g was available.

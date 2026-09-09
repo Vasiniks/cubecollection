@@ -20,7 +20,6 @@ name: "QJ Pillowed 3x3"
 scope_class: core
 specs:
   shape: pillowed
-  weight_g: 91
 description: |-
   TheCubicle's own product page (thecubicle-qj-pillowed-3x3-product-2019, tier 2): "This QJ
   3x3 features a distinct pillowed shape that is intended to make it easier to hold and turn."
@@ -39,11 +38,8 @@ attestations:
     confidence: probable
     sources: [thecubicle-qj-pillowed-3x3-product-2019]
   /specs/weight_g:
-    confidence: probable
-    sources: [thecubicle-qj-pillowed-3x3-product-2019]
-    note: "Single tier 2 retailer spec-table figure ('Gross Weight: 91g'). No `Dimensions`
-      field was present on this listing (unlike the sibling qj-candy-3x3 listing), so
-      `size_mm` is left unset rather than assumed equal to the Candy product's 57.0mm."
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 91g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/size_mm:
     confidence: unknown
     note: "Researched and not found at tier 1-2. TheCubicle's own spec table for this product

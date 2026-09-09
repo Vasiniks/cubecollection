@@ -52,7 +52,6 @@ aliases:
 scope_class: reference_only
 specs:
   shape: pillowed
-  weight_g: 128
 description: |-
   TheCubicle's own product page (thecubicle-mefferts-kokonotsu-pillow-3x3, tier 2): "The
   Meffert's Kokonotsu Pillow 3x3 is a non-traditional 3x3 puzzle variant that uses
@@ -69,8 +68,8 @@ attestations:
     sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
     note: "Named directly in the product's own title ('Pillow 3x3'), not merely inferred."
   /specs/weight_g:
-    confidence: probable
-    sources: [thecubicle-mefferts-kokonotsu-pillow-3x3]
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 128g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/size_mm:
     confidence: unknown
     note: "Researched and not found at tier 1-2. No dimension figure was given on the one

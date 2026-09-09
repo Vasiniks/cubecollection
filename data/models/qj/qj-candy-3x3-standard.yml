@@ -22,7 +22,6 @@ name: "QJ Candy 3x3"
 scope_class: core
 specs:
   size_mm: 57.0
-  weight_g: 95
   shape: standard
 description: |-
   TheCubicle's own product page (thecubicle-qj-candy-3x3-product-2019, tier 2): "The QJ Candy
@@ -41,9 +40,8 @@ attestations:
       second source found this pass despite a dedicated non-US retailer sweep (Cubelelo,
       Cubezz.com) - see file header."
   /specs/weight_g:
-    confidence: probable
-    sources: [thecubicle-qj-candy-3x3-product-2019]
-    note: "Single tier 2 retailer spec-table figure ('Gross Weight: 95g')."
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 95g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-qj-candy-3x3-product-2019]

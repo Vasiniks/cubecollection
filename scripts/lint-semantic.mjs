@@ -288,5 +288,36 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 45 — a gross/packaged weight is not a product weight
+//
+// Retailers publish both: "Gross Weight: 213g / Item Weight: 89.9g". The gross figure includes
+// the box and can exceed the puzzle by more than 100%. An archive-wide sweep on 2026-09-09
+// found 16 records storing the gross figure as weight_g, seven of them where the item weight
+// was stated in the very same source — and rule 18 caught only two, because the rest sit
+// comfortably inside the plausible range. A wrong value inside a plausible range is exactly the
+// defect a range check cannot see.
+//
+// Matching on the VALUE rather than on the presence of the phrase keeps this precise: it fires
+// only when the number actually recorded is a number the sources call gross.
+{
+  const grossOf = (text) => [...String(text).matchAll(/Gross Weight[:\s]*([\d.]+)\s*g/gi)].map((m) => parseFloat(m[1]));
+  const itemOf = (text) => [...String(text).matchAll(/Item Weight[:\s]*([\d.]+)\s*g/gi)].map((m) => parseFloat(m[1]));
+
+  for (const rec of records) {
+    if (!['model', 'variant'].includes(rec.entity)) continue;
+    const doc = rec.doc ?? {};
+    const w = doc.specs?.weight_g ?? doc.config?.weight_g;
+    if (typeof w !== 'number') continue;
+    const att = (doc.attestations ?? {})['/specs/weight_g'] ?? (doc.attestations ?? {})['/config/weight_g'];
+    const blob = [JSON.stringify(doc), ...(att?.sources ?? []).map((id) => JSON.stringify(sourceById.get(id) ?? {}))].join(' ');
+    const gross = grossOf(blob);
+    if (!gross.some((g) => Math.abs(g - w) < 0.5)) continue;
+    const item = itemOf(blob);
+    report.warn('45', rec.file, item.length
+      ? `weight_g is ${w}g, which its own sources give as a GROSS (packaged) weight — and those sources also state an item weight of ${item[0]}g. Record the item weight.`
+      : `weight_g is ${w}g, which its own sources give as a GROSS (packaged) weight, not the product's. No item weight is stated anywhere, so leave weight_g unset with an "unknown" attestation rather than asserting a boxed figure as a spec.`);
+  }
+}
+
 report.print();
 process.exit(0);

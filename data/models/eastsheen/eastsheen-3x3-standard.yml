@@ -39,7 +39,7 @@ aliases:
 scope_class: core
 specs:
   size_mm: 57.0
-  weight_g: 100
+  weight_g: 98.5
   shape: standard
 description: |-
   TheCubicle's own product page for the "Eastsheen 3x3x3 Cube with Wall Stickers"
@@ -75,7 +75,7 @@ attestations:
     confidence: reported
     sources: [thecubicle-eastsheen-wall-stickers]
     note: "Gross Weight 100g per this archive's established convention (a separate Item Weight
-      of 98.5g is recorded in prose only)."
+      of 98.5g is recorded in prose only). CORRECTED 2026-09-09 by an archive-wide sweep: this field previously held the GROSS (packaged) weight, which includes the box and is not the product's weight. The same source states an item weight, and that figure is now recorded. A gross figure is refused as a product weight throughout this archive."
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-eastsheen-wall-stickers]

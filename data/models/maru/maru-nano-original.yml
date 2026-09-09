@@ -34,7 +34,6 @@ generation:
   basis: community_convention
 specs:
   size_mm: 15.0
-  weight_g: 26
 description: |-
   TheCubicle's own product copy (thecubicle-maru-nano-3x3, tier 2): "This one-of-a-kind cube
   comes with a little cube pouch, set of stickers, and also the cardboard cutouts to make your
@@ -66,12 +65,8 @@ attestations:
     sources: [thecubicle-maru-nano-3x3, cubezz-maru-nano]
     note: "Two independent tier 2 sources state the identical 15mm figure, satisfying rule 9."
   /specs/weight_g:
-    confidence: reported
-    sources: [thecubicle-maru-nano-3x3]
-    note: "TheCubicle's 'Gross Weight: 26g' for the plain edition. Cubezz.com separately gives
-      30g for a 'Luminous' colourway of the same product — close but not identical, plausibly a
-      colourway/coating weight difference rather than a contradiction; not merged into one
-      figure or disputed, since the two sources describe different colourways."
+    confidence: unknown
+    note: "UNSET 2026-09-09 by an archive-wide sweep. This field previously held 26g, which the cited source states as a GROSS or packing weight - the boxed product, not the puzzle. No source located gives an item weight for this model, so no product weight is recorded rather than asserting a figure that is wrong by the mass of a box. The gross figure is preserved here because it still bounds the product from above."
   /specs/shape:
     confidence: unknown
     note: "Researched and not found."

@@ -92,7 +92,7 @@ console.log('\n  fail fixture — records engineered to trip named rules');
 
   const l = run('lint-semantic.mjs', { dataRoot: FAIL });
   const lintFired = rulesIn(l.out);
-  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43];
+  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43, 45];
   const lintMissing = lintExpected.filter((r) => !lintFired.has(r));
   lintMissing.length === 0
     ? ok('semantic warnings fire', `${lintExpected.join(', ')}`)
@@ -109,6 +109,12 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   /sits in directory .* but its model_id is/.test(v.out)
     ? ok('rule 44 misfiled-variant branch fires', 'variant in the wrong model directory is caught')
     : bad('rule 44 misfiled-variant branch fires', 'no misfiled-directory [44] message in validate output');
+
+  // Rule 45's whole point is catching a wrong value that sits INSIDE rule 18's plausible range,
+  // where a bounds check is blind. Assert the branch that names the available item weight.
+  /which its own sources give as a GROSS \(packaged\) weight/.test(l.out)
+    ? ok('rule 45 gross-weight branch fires', 'packaged weight stored as a product spec is caught')
+    : bad('rule 45 gross-weight branch fires', 'no gross-weight [45] message in lint output');
 
   // Rule 43 must police the whole confidence scale, not just one rung. The fail fixture happens
   // to exercise all three floors — confirmed, probable and reported — so assert the middle one

@@ -21,7 +21,7 @@ generation:
   basis: community_convention
 specs:
   size_mm: 56.0
-  weight_g: 213
+  weight_g: 89.9
   magnet_architecture: single_layer
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-cyclone-boys-products): "Cyclone Boys FeiJue M —
@@ -52,7 +52,7 @@ attestations:
     note: "TheCubicle's own 'Gross Weight: 213g' used per this archive's established
       convention. Cubezz.com's own 'Packing Weight: 205g' is explicitly a box/shipping figure
       per that source's reliability_note but is in the same general range, treated as roughly
-      corroborating rather than contradicting."
+      corroborating rather than contradicting. CORRECTED 2026-09-09 by an archive-wide sweep: this field previously held the GROSS (packaged) weight, which includes the box and is not the product's weight. The same source states an item weight, and that figure is now recorded. A gross figure is refused as a product weight throughout this archive."
   /specs/shape:
     confidence: unknown
     note: "Researched and not found at tier 1-2."
