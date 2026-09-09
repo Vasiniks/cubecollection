@@ -1,0 +1,61 @@
+# variant: dayan-bermuda-triangle--mercury
+# Pass 4. One of DaYan's own eight named planet colourways of the Bermuda Triangle bandaged
+# 3x3, per the manufacturer's own 2012 official category page, which lists this planet name in
+# both Black and White as separate catalogue lines. Following the GAN356 Air precedent (stock
+# black/white/primary options collapse into one variant absent a further named edition), Black
+# and White are NOT split into separate variants here: the planet name is the manufacturer's own
+# named sub-product (the edition), and Black/White is the stock body-colour choice within it.
+# This is a stub: identity and aliases only, per Pass 4 method. Colourway body/face detail
+# (which of Black/White, or both) is left for Pass 5 to fill from photographed/retailer sources.
+id: dayan-bermuda-triangle--mercury
+entity: variant
+model_id: dayan-bermuda-triangle
+name: "DaYan Bermuda Triangle (Mercury)"
+aliases:
+  - name: "DaYan Bermuda Cube (Mercury)"
+    retailer: "TheCubicle"
+    source: thecubicle-dayan-bermuda-cube-2020
+scope_class: conditional
+scope_justification: |-
+  Restated from the parent model per validate.mjs rule 15, which checks scope_class and legality
+  directly on the variant record rather than resolving model-level inheritance for this field.
+  Same grounds as the model: DaYan gave the Bermuda line its own official product category in
+  2012 (dayancube-official-bermuda-category-2012, tier 1), and the line has a documented
+  multi-year, multi-retailer collector market (thecubicle-dayan-bermuda-cube-2020, tier 2).
+scope_decided_by: "P4 variant pass, agent D"
+scope_decided_on: "2026-09-08"
+legality:
+  wca_status: not_legal
+  basis: >-
+    Bandaged construction, inherited from the model's own legality finding
+    (dayancube-official-bermuda-category-2012; thecubicle-dayan-bermuda-cube-2020).
+edition:
+  types: [standard]
+colorway:
+  designation: "Mercury"
+status: stub
+attestations:
+  /scope_justification:
+    confidence: probable
+    sources: [dayancube-official-bermuda-category-2012, thecubicle-dayan-bermuda-cube-2020]
+    note: "Restated from the model record to satisfy rule 15's direct (non-inherited) check on variant records; not a fresh claim distinct from the model's own justification."
+  /legality/wca_status:
+    confidence: probable
+    sources: [thecubicle-dayan-bermuda-cube-2020]
+    note: "Inherited in substance from the model's own legality finding; restated here only because rule 15 checks the variant record directly rather than resolving model-level inheritance for scope_class/legality fields."
+  /name:
+    confidence: confirmed
+    sources: [dayancube-official-bermuda-category-2012]
+    note: "DaYan's own 2012 official category page names \"Dayan Bermuda Triangle Magic Cube Black (Mercury)\" and \"...White (Mercury)\" as separate catalogue lines under its own Bermuda Triangle sub-product."
+  /aliases/0/name:
+    confidence: probable
+    sources: [thecubicle-dayan-bermuda-cube-2020]
+    note: "TheCubicle simplifies the manufacturer's \"Bermuda Triangle [Planet]\" naming to \"Bermuda Cube [Planet]\" on its own product page."
+  /edition/types:
+    confidence: probable
+    sources: [dayancube-official-bermuda-category-2012]
+    note: "No limited/commemorative/collaboration language found for this specific planet colourway; read as a standard catalogue configuration of the line."
+  /colorway/designation:
+    confidence: confirmed
+    sources: [dayancube-official-bermuda-category-2012]
+    note: "\"Mercury\" is DaYan's own name for this colourway, verbatim from the manufacturer's own 2012 category page. Whether Black, White, or both are separately trackable as this planet's body colour is NOT resolved here (stub scope); DaYan's own page lists this planet name in both Black and White as separate lines, collapsed here per the GAN356 Air stock-colour precedent pending Pass 5 review."
