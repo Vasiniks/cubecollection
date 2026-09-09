@@ -1,0 +1,28 @@
+# variant: yuxin-little-magic-original--standard
+# Pass 4 (variant enumeration), agent F. Manufacturer item 1513, the base of three separately
+# numbered 666toy.com Little Magic 3x3 items (1513, 1513M, 1513M-UV). This item's own page gives
+# no magnet mention, in contrast to 1513M's explicit "magnetic positioning" description -- see
+# 666toy-little-magic-3x3-products.
+id: yuxin-little-magic-original--standard
+entity: variant
+model_id: yuxin-little-magic-original
+name: "YuXin Little Magic 3x3"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-little-magic-3x3-products]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [666toy-little-magic-3x3-products]
+    note: "Item 1513's own page makes no magnet mention at all, in direct contrast to 1513M's
+      explicit magnet description on the same manufacturer's site -- read as 'none' rather than
+      left unknown, since (unlike the HuangLong 1523/1523M case) the base Little Magic page's
+      text does not itself repeat any magnet-related feature language. Confidence held at
+      `uncertain` rather than `probable` because this is an absence-of-mention inference, not a
+      direct statement."

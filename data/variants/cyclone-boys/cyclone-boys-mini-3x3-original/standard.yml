@@ -1,0 +1,29 @@
+# variant: cyclone-boys-mini-3x3-original--standard
+# Pass 4 (variant enumeration), agent F. Model assessed for configuration axes; exactly one
+# documented sold configuration was found. cubezz-cyclone-boys-mini-3x3's own spec table:
+# "Color: Stickerless." thecubicle-cyclone-boys-mini-3x3 independently sells it in a
+# "Stickerless (Bright)" colour option -- both sources agree on stickerless application; no
+# magnet, coating, or separately-named edition was found by any source this pass.
+id: cyclone-boys-mini-3x3-original--standard
+entity: variant
+model_id: cyclone-boys-mini-3x3-original
+name: "Cyclone Boys Mini 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-cyclone-boys-mini-3x3, thecubicle-cyclone-boys-mini-3x3]
+    note: "ASSESSMENT RECORD. Differentiation search performed against two independent tier 2
+      retailers (agreeing on 40mm/stickerless) and the tier 3/4 wiki. No magnet, coating, or
+      separately-named colourway/edition option was found. TheCubicle's own '(Bright)' qualifier
+      is read as a stock brightness/shade descriptor of the one stickerless colourway, not a
+      separately marketed edition."
+  /colorway/application:
+    confidence: confirmed
+    sources: [cubezz-cyclone-boys-mini-3x3, thecubicle-cyclone-boys-mini-3x3]
+    note: "Two independent tier 2 retailers agree on 'Stickerless' directly."

@@ -1,0 +1,39 @@
+# variant: diansheng-3x3-m-v1--uv-coated
+# Pass 4 (variant enumeration), agent F. TheCubicle's own separate product page
+# (thecubicle-diansheng-3x3-m-uv-coated-product, fetched and preserved this pass): "The DianSheng
+# 3x3 M (UV Coated) is a magnetic 3x3 with vibrant stickerless bright shades... the UV coating
+# means less slipping in the hands, and a beautiful glossy sheen." 55.5mm/72.0g item weight vs.
+# the base product's own page, which does not state a bare-cube item weight figure.
+id: diansheng-3x3-m-v1--uv-coated
+entity: variant
+model_id: diansheng-3x3-m-v1
+name: "DianSheng 3x3 M (UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "UV Coated"
+config:
+  coating: uv
+  weight_g: 72.0
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-diansheng-3x3-m-uv-coated-product]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-diansheng-3x3-m-uv-coated-product]
+    note: "'DianSheng 3x3 M (UV Coated)' is the retailer's own product title, distinguishing this
+      configuration from the base product."
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-diansheng-3x3-m-uv-coated-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-diansheng-3x3-m-uv-coated-product]
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-diansheng-3x3-m-uv-coated-product]
+    note: "'Vibrant stickerless bright shades' is the source's own direct description."

@@ -1,0 +1,26 @@
+# variant: yuxin-little-magic-v3--uv
+# Pass 4 (variant enumeration), agent F. cubezz-yuxin-3x3-collection-2026 lists "YuXin Little
+# Magic V3 MagLev 3x3x3 Cube ...UV Version," the sibling of the VT Version recorded as
+# yuxin-little-magic-v3--vt, both 55.5mm/68.2g.
+id: yuxin-little-magic-v3--uv
+entity: variant
+model_id: yuxin-little-magic-v3
+name: "YuXin Little Magic V3 MagLev (UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "UV"
+config:
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /edition/designation:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /config/coating:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "cubezz's own naming, 'UV Version,' for this item."

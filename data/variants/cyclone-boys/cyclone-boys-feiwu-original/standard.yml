@@ -1,0 +1,48 @@
+# variant: cyclone-boys-feiwu-original--standard
+# Pass 4 (variant enumeration), agent F. Model assessed for configuration axes. The only source
+# giving a genuine, specific product listing (cubezz-cyclone-boys-feiwu, tier 2) is titled
+# "Cyclone Boys FeiWu 3x3x3 Speedcube (Big Central Axis, Colored)" with spec-table field
+# "Color: Colored" -- a real sold configuration, not a lead. This directly CONTRADICTS the
+# Speedsolving wiki's own framing ("Only available as stickerless"), which names no specific
+# product/SKU of its own. Recorded as one baseline built on the actual documented (cubezz)
+# listing, with the wiki's conflicting claim held at `disputed` on the colourway/application
+# field rather than promoted to a second variant record with no product of its own to attach to.
+# thecubicle-cyclone-boys-feiwu's own listing states no colour at all and does not resolve the
+# conflict either way.
+id: cyclone-boys-feiwu-original--standard
+entity: variant
+model_id: cyclone-boys-feiwu-original
+name: "Cyclone Boys FeiWu"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: unknown
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [cubezz-cyclone-boys-feiwu, thecubicle-cyclone-boys-feiwu]
+    note: "ASSESSMENT RECORD. Differentiation search performed against cubezz-cyclone-boys-feiwu
+      (non-US tier 2), thecubicle-cyclone-boys-feiwu (US tier 2), and
+      speedsolving-wiki-cyclone-boys-products (tier 3/4). No magnet, coating, or separately-named
+      edition was found by any source; the colourway/sticker-application question itself is
+      disputed -- see /colorway/application."
+  /colorway/application:
+    confidence: disputed
+    disputed:
+      - value: "stickered/coloured body ('Colored')"
+        sources: [cubezz-cyclone-boys-feiwu]
+        confidence: reported
+        note: "cubezz's own product title and spec-table field 'Color: Colored,' the only tier
+          1-2 evidence found this pass naming a specific configuration."
+      - value: "stickerless"
+        sources: [speedsolving-wiki-cyclone-boys-products]
+        confidence: reported
+        note: "Wiki: 'Only available as stickerless.' Tier 3/4, names no specific product or SKU
+          and cannot itself establish a specification per RESEARCH_SPEC §3.1."
+    adjudication: "Not adjudicated. Recorded here because cubezz's own listing is the only source
+      this pass found describing an actual, specific, sold configuration (with real spec-table
+      data: 55x55x55mm, 95g); the wiki's 'stickerless only' claim is a bare, unattached
+      generalisation that a tier 2 retailer's own product page appears to contradict. A future
+      pass should look for a plain, unqualified stickerless FeiWu SKU before resolving this."

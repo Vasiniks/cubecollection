@@ -1,0 +1,35 @@
+# source: thecubicle-diansheng-3x3-m-uv-coated-product
+# Pass 4 (variant enumeration), agent F. TheCubicle's own product page for the DianSheng 3x3 M
+# (UV Coated), a separate retail path from the base DianSheng 3x3 M
+# (thecubicle-diansheng-3x3-m-product) already used at model level. Fetched via
+# `npm run wayback -- get` to confirm and detail the UV-coated configuration flagged as a lead
+# in diansheng-3x3-m-v1.yml's own description.
+id: thecubicle-diansheng-3x3-m-uv-coated-product
+entity: source
+kind: retailer
+title: "DianSheng 3x3 M (UV Coated) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/diansheng-3x3-m-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231205062801/https://www.thecubicle.com/products/diansheng-3x3-m-uv-coated"
+excerpt: |-
+  Product Description: "The DianSheng 3x3 M (UV Coated) is a magnetic 3x3 with vibrant
+  stickerless bright shades. At only $9.99, this is a great option for beginners. And the UV
+  coating means less slipping in the hands, and a beautiful glossy sheen." Product
+  Specifications: "Manufacturer: DianSheng / Type: 3x3 / Added: 2023-11-08 (catalogue-migration-
+  era field, not used for dating) / Gross Weight: 96g / Dimensions: 55.5mm3 / Magnets: Magnetic /
+  Item Weight: 72.0g."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-09; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, first-party retailer product description. A separately-priced,
+  separately-pathed retail configuration of the same DianSheng 3x3 M product
+  (thecubicle-diansheng-3x3-m-product), distinguished by a UV coating and 'vibrant stickerless
+  bright shades' colourway language not present on the base product's own page — the basis for
+  a coating-axis variant under diansheng-3x3-m-v1, not a separate model. Does not itself state a
+  release date."
+status: sourced

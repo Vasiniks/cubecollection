@@ -1,0 +1,32 @@
+# variant: yuxin-huanglong-v2--vt
+# Pass 4 (variant enumeration), agent F. cubezz-yuxin-3x3-collection-2026 lists "YuXin HuangLong
+# V2 MagLev 3x3x3 Speed Cube Texture VT Version" (item 7967) alongside a separate "...UV Version"
+# (item 7968); 666toy's own category page (666toy-huanglong-3x3-products) independently names
+# "Yuxin Huanglong 1524VT Maglev 3x3 magic Cube" as its own item number, distinct from 1524UV.
+# "VT" read as a textured-plastic surface option, contrasted with UV's coated finish; the
+# vocabulary has no dedicated "textured" coating value, so `config.coating` is left unset rather
+# than mapped to a poor-fitting vocabulary term (see the sibling ...--uv variant for the coated
+# option this record is contrasted against).
+id: yuxin-huanglong-v2--vt
+entity: variant
+model_id: yuxin-huanglong-v2
+name: "YuXin HuangLong V2 MagLev (VT / Textured)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "VT"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products, cubezz-yuxin-3x3-collection-2026]
+  /edition/designation:
+    confidence: confirmed
+    sources: [666toy-huanglong-3x3-products, cubezz-yuxin-3x3-collection-2026]
+    note: "Manufacturer's own item number '1524VT' and an independent tier 2 retailer's own
+      'Texture VT Version' naming agree on 'VT' as this configuration's designator."
+  /config/coating:
+    confidence: unknown
+    note: "Read as a textured/uncoated plastic option contrasted with the sibling UV-coated
+      configuration, but no source describes the surface treatment in vocab/coatings.yml terms;
+      left unset rather than mapped to a poor-fitting value."

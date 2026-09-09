@@ -1,0 +1,40 @@
+# variant: yuxin-kylin-v2--standard
+# Pass 4 (variant enumeration), agent F. The non-magnetic configuration of this V2 design.
+# 666toy's own product page (666toy-black-kirin-kylin-3x3-products, item 1543): "Available in
+# black and clear colors," no magnet mention. cubezz-yuxin-3x3-collection-2026 independently
+# lists "YuXin Kylin V2 3x3x3 Speed Cube Transparent/Black" (items 5998/5999, non-magnetic),
+# "Size: 55.5x55.5x55.5mm; Weight: 79g" -- distinct item numbers from the magnetic "V2 M"
+# configuration (see the sibling ...--magnetic variant).
+id: yuxin-kylin-v2--standard
+entity: variant
+model_id: yuxin-kylin-v2
+name: "YuXin Kylin V2"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+  weight_g: 79
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-black-kirin-kylin-3x3-products, cubezz-yuxin-3x3-collection-2026]
+    note: "'Black and clear' stock colours (per the manufacturer's own page and cubezz's own
+      'Transparent/Black' item split, items 5998/5999) are collapsed into this one baseline."
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [666toy-black-kirin-kylin-3x3-products, cubezz-yuxin-3x3-collection-2026]
+    note: "Neither source describes magnets for this item; cubezz's own separate 'V2 M' item
+      naming (items 5905/5906/5907) is the contrast this record's 'none' rests on."
+  /config/weight_g:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /colorway/application:
+    confidence: uncertain
+    sources: [666toy-black-kirin-kylin-3x3-products]
+    note: "'Available in black and clear colors' with 'anti-stick grooves' language read as
+      consistent with a stickerless (body-colour) product; no source uses the word 'stickerless'
+      directly for this item."

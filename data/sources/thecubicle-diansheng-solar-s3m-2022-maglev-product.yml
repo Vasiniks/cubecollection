@@ -1,0 +1,35 @@
+# source: thecubicle-diansheng-solar-s3m-2022-maglev-product
+# Pass 4 (variant enumeration), agent F. TheCubicle's own product page for the DianSheng Solar
+# S3M 2022 MagLev, a separate retail path named but not quoted at model level
+# (diansheng-solar-s3m-2022.yml's own description). Fetched via `npm run wayback -- get` to
+# confirm and detail the MagLev configuration.
+id: thecubicle-diansheng-solar-s3m-2022-maglev-product
+entity: source
+kind: retailer
+title: "DianSheng Solar S3M 2022 MagLev - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/diansheng-solar-s3m-2022-3x3-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240304072028/https://www.thecubicle.com/products/diansheng-solar-s3m-2022-3x3-maglev"
+excerpt: |-
+  Product Description: "The DianSheng Solar S3M 2022 MagLev has the same great hand-adjustment
+  mechanism, but now with MagLev technology! The S3M uses groups of opposing magnets to imitate a
+  spring, giving the puzzle faster and cleaner turning. This is a new expression of MagLev
+  technology and we're happy to see the innovation!" Product Specifications: "Manufacturer:
+  DianSheng / Type: 3x3 / Added: 2023-04-03 (catalogue-migration-era field, not used for dating)
+  / Gross Weight: 192g / Dimensions: 55.5mm3 / Magnets: Magnetic / Item Weight: 78.0g."
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-09; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, first-party retailer product description. States directly the same
+  hand-adjustment (spring) mechanism 'but now with MagLev technology,' confirming this is a
+  maglev-core sold configuration of the same 2022 design named at model level
+  (thecubicle-diansheng-solar-s3m-2022-product), not a further design generation — DATA_MODEL
+  §4.1's maglev-configuration materiality trigger, treated as a variant per the model/variant
+  boundary rule since the manufacturer's own description frames MagLev here as a technology
+  substituted into an otherwise-unchanged hand-adjustment design."
+status: sourced

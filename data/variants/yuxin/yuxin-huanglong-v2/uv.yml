@@ -1,0 +1,33 @@
+# variant: yuxin-huanglong-v2--uv
+# Pass 4 (variant enumeration), agent F. cubezz-yuxin-3x3-collection-2026 lists "YuXin HuangLong
+# V2 MagLev 3x3x3 Speed Cube Texture...UV Version" (item 7968); 666toy's own category page
+# (666toy-huanglong-3x3-products) independently names "Yuxin Huanglong 1524UV Maglev 3x3 magic
+# Cube" as its own item number, distinct from 1524VT.
+id: yuxin-huanglong-v2--uv
+entity: variant
+model_id: yuxin-huanglong-v2
+name: "YuXin HuangLong V2 MagLev (UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "UV"
+config:
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products, cubezz-yuxin-3x3-collection-2026]
+  /edition/designation:
+    confidence: confirmed
+    sources: [666toy-huanglong-3x3-products, cubezz-yuxin-3x3-collection-2026]
+    note: "Manufacturer's own item number '1524UV' and an independent tier 2 retailer's own
+      '...UV Version' naming agree on 'UV' as this configuration's designator; also independently
+      corroborated by thecubicle-yuxin-collection-2025's own 'yuxin-huanglong-3x3-v2-m-uv-coated'
+      retail path."
+  /config/coating:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026, thecubicle-yuxin-collection-2025]
+    note: "666toy's own item-number naming ('1524UV') does not itself use the word 'coating,' but
+      two independent tier 2 retailers' own naming ('UV Version' / '-uv-coated') agree on a UV
+      surface treatment."

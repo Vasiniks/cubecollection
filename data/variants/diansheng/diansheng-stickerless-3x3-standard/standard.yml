@@ -1,0 +1,30 @@
+# variant: diansheng-stickerless-3x3-standard--standard
+# Pass 4 (variant enumeration), agent F. Model assessed for configuration axes; exactly one
+# documented sold configuration was found, and evidence for even this base configuration is thin
+# (a 2014 forum for-sale/trade thread naming the product, plus a tier 4 wiki entry). No
+# specification, colourway detail, or second configuration was found at any tier.
+id: diansheng-stickerless-3x3-standard--standard
+entity: variant
+model_id: diansheng-stickerless-3x3-standard
+name: "DianSheng Stickerless 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-stickerless-wtb-2014]
+    note: "ASSESSMENT RECORD. Differentiation search performed: the model's own two sources
+      (a 2014 Speedsolving forum for-sale/trade thread and the tier 4 Speedsolving wiki) were the
+      only evidence found at model-enumeration time and remain the only evidence found this
+      pass; no second configuration, no magnet/coating axis, and no named edition was found for
+      this product by any source at any tier. The product's own name already states its sticker
+      application ('Stickerless')."
+  /colorway/application:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-stickerless-wtb-2014]
+    note: "The product's own name, corroborated by both the forum thread and the wiki, states
+      'Stickerless' directly."

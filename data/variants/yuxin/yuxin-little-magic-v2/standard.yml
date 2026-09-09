@@ -1,0 +1,24 @@
+# variant: yuxin-little-magic-v2--standard
+# Pass 4 (variant enumeration), agent F. cubezz-yuxin-3x3-collection-2026 lists "YuXin Little
+# Magic M V2 3x3x3... Stickerless" (item 6754), alongside a separate "...UV Version" (item 7907)
+# -- see the sibling ...--uv-coated variant. Magnetic status is baked into this model's own
+# identity/name ("YuXin Little Magic M V2") per yuxin-little-magic-v2.yml itself, not a further
+# variant axis within this model.
+id: yuxin-little-magic-v2--standard
+entity: variant
+model_id: yuxin-little-magic-v2
+name: "YuXin Little Magic M V2"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /colorway/application:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "cubezz's own item 6754 names the option 'Stickerless' directly."

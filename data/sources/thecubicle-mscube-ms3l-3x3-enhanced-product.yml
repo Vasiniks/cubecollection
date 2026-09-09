@@ -1,0 +1,44 @@
+# source: thecubicle-mscube-ms3l-3x3-enhanced-product
+# Pass 4 (variant enumeration), agent F. TheCubicle's own product page for the MsCube MS3L 3x3
+# (Enhanced), the sibling configuration to mscube-ms3l-3x3-standard already used at model level
+# (thecubicle-mscube-ms3l-3x3-standard-product, which itself named this sibling path without
+# quoting its content). Fetched via `npm run wayback -- get` to confirm the material/magnet
+# differences between Standard and Enhanced.
+id: thecubicle-mscube-ms3l-3x3-enhanced-product
+entity: source
+kind: retailer
+title: "MsCube MS3L 3x3 (Enhanced) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mscube-ms3l-3x3-enhanced"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230206153514/https://www.thecubicle.com/products/mscube-ms3l-3x3-enhanced"
+excerpt: |-
+  Product Description: "The MsCube MS3L 3x3 (Enhanced) is a novel new 3x3 design by MsCube. This
+  puzzle features a spiderweb pattern on the contact surfaces, swappable center/core pieces to
+  adjust tension, a compression adjustment under each center cap, and the enhanced versions has a
+  brand new magnetic layout that has magnets in the feet of the corners and edges. This version
+  also has transparent blue corner stalks and torpedoes." Product Specifications: "Manufacturer:
+  MsCube / Type: 3x3 / Added: 2021-09-07 (catalogue-migration-era field, not used for dating) /
+  Gross Weight: 150g / Dimensions: 56.0mm3 / Magnets: Magnetic / Item Weight: 76.0g." A customer
+  review dated to this capture window states directly: "Liked the V1 better ... bought this
+  because I thought it'd be a lot of the same feel with colored internals ... The magnets are
+  weaker" — read as corroboration (not sourcing, per this archive's standing rule on
+  user-generated content) that Standard and Enhanced are perceived by buyers as differing
+  configurations of the same design, not a "V1"/"V2" model generation (no source anywhere this
+  pass calls Standard "V1" in its own official naming).
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-09; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields verbatim."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, first-party retailer product description. Differs from
+  thecubicle-mscube-ms3l-3x3-standard-product ('a traditional magnetic layout with magnets in
+  the edges and corners... primary plastic internals') by a stated different magnet layout
+  ('magnets in the feet of the corners and edges') and stated different materials ('transparent
+  blue corner stalks and torpedoes') — both DATA_MODEL §4.1 materiality triggers (magnet
+  configuration; materials the manufacturer distinguishes), read as a variant-level difference
+  within one design per the CDX prefix sweep already recorded on the standard product's own
+  source record (both first captured in the same 2022-01-29/2023-02-06 window)."
+status: sourced
