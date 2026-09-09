@@ -1,0 +1,27 @@
+# variant: moyu-weilong-gts3--lm
+# Pass 4. The "light magnets" ("LM") configuration. Named directly in TheCubicle's 2021
+# catalogue ("MoYu WeiLong GTS3 LM 3x3"), one of three parallel listings for this model. Later
+# referenced by the wiki's own WeiLong WR entry as the magnet-strength benchmark WR M was
+# compared to ("the magnets were weaker, the same as the GTS3 LM").
+id: moyu-weilong-gts3--lm
+entity: variant
+model_id: moyu-weilong-gts3
+name: "MoYu WeiLong GTS3 LM"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "LM"
+config:
+  magnet_strength: "Light magnets (\"LM\"), weaker than the full-strength 'M' configuration per the wiki's three-way split for this line."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "Retailer's own product-title suffix, taken verbatim."
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
