@@ -1,0 +1,38 @@
+# variant: gan-356-i-carry-2--uv-coated
+# Pass 4 depth, created 2026-09-09 closing ledger P4-5. The coating is the axis: TheCubicle sells
+# this under its own product handle and its copy contrasts it with "the standard GAN i Carry 2"
+# while claiming the same battery life — one puzzle offered coated and uncoated.
+id: gan-356-i-carry-2--uv-coated
+entity: variant
+model_id: gan-356-i-carry-2
+name: "GAN356 i Carry 2 (UV Coated)"
+scope_class: core
+config:
+  coating: uv
+  size_mm: 56.0
+  weight_g: 88.0
+edition:
+  types: [standard, smart]
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2-uv-coated-2025]
+    note: "The retailer's own product name states the coating, and the description contrasts this
+      cube with 'the standard GAN i Carry 2', which is what makes the coating a configuration of
+      one model rather than a second product."
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2-uv-coated-2025]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2-uv-coated-2025]
+    note: "Item Weight 88.0g from the source's own structured spec field. The same table gives a
+      Gross Weight of 240g, which is the packaged figure and is deliberately not recorded here."
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2-uv-coated-2025]
+    note: "A standard smart cube in a coated configuration, not a named or limited edition. The
+      10th Anniversary Edition is the sibling variant that IS one."

@@ -1,0 +1,41 @@
+# source: thecubicle-gan-356-i-carry-2-10th-anniversary-2026
+# Created 2026-09-09 closing ledger P4-5. Evidence for a named commemorative edition of the
+# GAN 356 i Carry 2, sold under its own product handle.
+id: thecubicle-gan-356-i-carry-2-10th-anniversary-2026
+entity: source
+kind: retailer
+title: "GAN356 i Carry 2 UV 3x3 (10th Anniversary Edition) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-i-carry-2-uv-3x3-10th-anniversary-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260619215225id_/https://www.thecubicle.com/products/gan356-i-carry-2-uv-3x3-10th-anniversary-edition"
+excerpt: |-
+  Product Description: "The GAN356 i Carry 2 UV 3x3 (10th Anniversary Edition) is a version of
+  the puzzle that celebrates GAN's 10th anniversary. This puzzle comes with a special edition
+  sticker set (one side) and cube bag. The GAN 356 i Carry 2 offers over 2x the batter[y life...]"
+
+  Product Specifications table: "Manufacturer: GAN", "Gross Weight: 245g". No item weight or
+  dimension is given on this page; the base product's figures are on
+  thecubicle-gan-356-i-carry-2-uv-coated-2025 and are NOT restated here as though this page
+  carried them.
+
+  WHY THIS IS AN EDITION AND NOT A MODEL. The page calls it "a version of the puzzle" in its own
+  words, and what differs is packaging and a sticker set — a special edition sticker set (one
+  side) and a cube bag — not a mechanism. It is sold under its own product handle, distinct from
+  both the base and the UV-coated handles, so it passes the dedup test as a separate offering
+  while remaining the same underlying design.
+preservation_note: "Archived capture fetched 2026-09-09 and checked to carry the quoted
+  description and the specification fields recorded above."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a named 10th Anniversary Edition of the GAN 356 i Carry 2 was sold, on a UV
+  base, with a special-edition sticker set and cube bag.
+  DOES NOT ESTABLISH: a release date, a production run size, or that the edition was limited in
+  number. "Anniversary" is the retailer's framing of the occasion, not a statement of scarcity,
+  and `edition.limited` is deliberately left unset rather than inferred.
+status: sourced

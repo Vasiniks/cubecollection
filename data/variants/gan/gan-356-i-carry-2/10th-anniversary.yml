@@ -1,0 +1,32 @@
+# variant: gan-356-i-carry-2--10th-anniversary
+# Pass 4 depth, created 2026-09-09 closing ledger P4-5. A separately named, separately marketed
+# edition sold under its own product handle — the bar this archive requires before an edition
+# earns its own record rather than collapsing into the baseline.
+id: gan-356-i-carry-2--10th-anniversary
+entity: variant
+model_id: gan-356-i-carry-2
+name: "GAN356 i Carry 2 UV (10th Anniversary Edition)"
+scope_class: core
+config:
+  coating: uv
+edition:
+  types: [anniversary, commemorative, smart]
+  name: "10th Anniversary Edition"
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2-10th-anniversary-2026]
+    note: "The page calls it 'a version of the puzzle that celebrates GAN's 10th anniversary',
+      which is both the anniversary and the commemorative claim in the retailer's own words."
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2-10th-anniversary-2026]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2-10th-anniversary-2026]
+    note: "'UV' appears in the product's own name. The base figures are NOT copied here: that
+      page gives no item weight or dimension, and restating the UV-coated sibling's numbers as if
+      this source carried them is exactly what rule 48 exists to catch."

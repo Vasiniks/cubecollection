@@ -1,0 +1,44 @@
+# source: thecubicle-gan-356-i-carry-2-uv-coated-2025
+# Created 2026-09-09 closing ledger P4-5. The i Carry 2's lone baseline variant asserted nothing
+# (rule 41); this page is the evidence that the model HAS a configuration axis, so the baseline
+# could be given a real assessment claim instead of a backfilled one.
+id: thecubicle-gan-356-i-carry-2-uv-coated-2025
+entity: source
+kind: retailer
+title: "GAN356 i Carry 2 (UV Coated) 3x3 — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan-356-i-carry-2-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250317151408id_/https://www.thecubicle.com/products/gan-356-i-carry-2-uv-coated"
+excerpt: |-
+  Product Description: "The GAN 356 i Carry 2 (UV Coated) has the same long battery life as the
+  standard GAN i Carry 2! Race your friends on the free app 'CubeStation', or refresh some of
+  your algorithms and improve your solving. You can do it all with this slick smart cube."
+
+  Product Specifications table, transcribed verbatim: "Manufacturer: GAN", "Dimensions: 56.0mm³",
+  "Item Weight: 88.0g", "Gross Weight: 240g". The gross figure is recorded only so a reader can
+  see which number was NOT taken as the product weight.
+
+  WHY THIS ESTABLISHES A CONFIGURATION AXIS RATHER THAN A SEPARATE PRODUCT. The copy contrasts
+  this cube with "the standard GAN i Carry 2" in its own first sentence and claims the same
+  battery life — the retailer is describing one puzzle offered coated and uncoated, not two
+  puzzles. It is sold under its own product handle (gan-356-i-carry-2-uv-coated) distinct from
+  the base handle (gan-356-i-carry-2), so this is not one listing with a dropdown, which is the
+  dedup test this archive applies before admitting any variant.
+preservation_note: "Archived capture fetched 2026-09-09 and checked to carry the quoted
+  description and all four specification fields. The live page was fetched the same day and
+  agrees."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured specification
+  table.
+  ESTABLISHES: that a UV-coated configuration of the GAN 356 i Carry 2 was sold as its own
+  product, and its dimensions and item weight.
+  DOES NOT ESTABLISH: a release date, or whether GAN treats the coating as a configuration or a
+  separate SKU line internally. The description's own contrast with "the standard" is the basis
+  for reading it as a configuration.
+status: sourced

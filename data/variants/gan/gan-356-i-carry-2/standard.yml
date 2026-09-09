@@ -13,6 +13,19 @@ smart:
   battery: "Over 2x the battery life of the previous i Carry versions, per TheCubicle."
 status: stub
 attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-2, thecubicle-gan-356-i-carry-2-uv-coated-2025]
+    note: "ASSESSMENT CLAIM, added 2026-09-09 closing ledger P4-5. This baseline previously
+      carried no /edition/types attestation and so asserted nothing while still counting as
+      coverage (rule 41). WHAT WAS SEARCHED: the live 3x3 catalogues of TheCubicle, SpeedCubeShop
+      and Cubelelo were enumerated on 2026-09-09 and every SKU matching this model was collected.
+      WHAT WAS FOUND: four SKUs resolving to THREE configurations - this uncoated base, a
+      UV-coated version sold under its own product handle, and a named 10th Anniversary Edition
+      on a UV base. Both of the others now have their own variant records, so this one is the
+      uncoated base of a three-way split rather than a lone standard. The differentiation search
+      that rule 41 asks for was performed and it found something, which is why this attestation
+      records a result rather than an absence."
   /smart/battery:
     confidence: probable
     sources: [thecubicle-gan-356-i-carry-2]
