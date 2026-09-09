@@ -813,6 +813,22 @@ issues:
       states this outright: the collections page "filters differently than the raw /products/
       prefix and missed a live, dated 3x3 catalogue." RESEARCH_SPEC 3.6a already mandates BOTH
       checks. It was added 2026-09-03, after Pass 2 family enumeration completed.
+      MEASURED 2026-09-09, turning this issue from a narrative into a coverage table now printed
+      by `npm run audit`. Of 42 manufacturers with cited sources, only 23 have a 3.6a-style
+      prefix or collection sweep and only 22 have a single non-US source. TWELVE FAIL BOTH.
+      The entry that matters is MoYu: 109 citations, the archive's most heavily cited
+      manufacturer, and it fails both checks. It also accounts for EIGHT of the fourteen product
+      lines that escalation P4-9 found missing from the frozen inventory. Next heaviest without
+      a sweep: rubiks 31, particula 28, mf8 26, giiker 17, guoguan 16.
+      THE CORRELATION IS REAL BUT NOT TOTAL, and the exception is the more useful half. Four of
+      P4-9's fourteen lines belong to manufacturers that DO satisfy 3.6a (qiyi, gan, shengshou,
+      saocube), so retroactive compliance would NOT by itself have prevented P4-9. The reason is
+      a limit in 3.6a itself rather than in its application: it mandates ARCHIVED retailer
+      sweeps, which look backwards by construction, and nothing in it requires checking a
+      CURRENT catalogue. A perfectly compliant archived sweep run against 2023 captures cannot
+      surface a product listed in 2025.
+      That gap is now covered by a separate command, `npm run catalogue-gap`, which is why it
+      could not simply be folded into 3.6a compliance.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven

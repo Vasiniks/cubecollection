@@ -243,6 +243,30 @@ findings that never acquire an id at all. That confirms P26-8's narrowing — th
 
 `npm run audit` now prints these numbers every run.
 
+## 10. P26-3 measured — and it explains most, but not all, of P4-9
+
+RESEARCH_SPEC §3.6a mandates two things a narrower search misses: an archived retailer
+`/products/` **prefix** sweep (not a `/collections/` page, which filters differently and missed
+six live ShengShou lines), and at least one **non-US/English** retailer. It was added
+2026-09-03, *after* Pass 2 completed, and never applied retroactively. P26-3 has been a narrative
+since. It is now a coverage table.
+
+Of 42 manufacturers with cited sources, only **23** have a §3.6a-style sweep and only **22** have
+a single non-US source. **Twelve fail both.**
+
+The entry that matters is **MoYu: 109 citations — the archive's most heavily cited manufacturer —
+failing both checks**, and accounting for **eight of the fourteen** lines P4-9 found missing.
+
+**The correlation is real but not total, and the exception is the more useful half.** Four of
+P4-9's fourteen lines belong to manufacturers that *do* satisfy §3.6a. So retroactive compliance
+would **not** by itself have prevented P4-9 — and the reason is a limit in §3.6a itself, not in
+its application. §3.6a mandates *archived* sweeps, which look backwards by construction. Nothing
+in it requires checking a **current** catalogue, and a perfectly compliant sweep run against 2023
+captures cannot surface a product listed in 2025.
+
+That is precisely the hole `npm run catalogue-gap` fills, and why it could not be folded into
+§3.6a compliance.
+
 ## Rules added, each from a real defect
 
 | Rule | Catches | On real data |

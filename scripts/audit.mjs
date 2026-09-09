@@ -299,5 +299,51 @@ if (!entriesLinked && entriesLoose) {
 rollupOrphans.slice(0, 6).forEach((f) => line(`     ${f}`));
 if (rollupOrphans.length > 6) line(`     ... and ${rollupOrphans.length - 6} more`);
 
+// ---- 9. RESEARCH_SPEC 3.6a discovery breadth, per manufacturer ---------------------------
+//
+// Ledger P26-3 (high): 3.6a was added 2026-09-03, AFTER Pass 2 family enumeration completed, and
+// was never applied retroactively. It mandates two things a narrower search misses: an archived
+// retailer /products/ PREFIX sweep (not a /collections/ page, which filters differently and
+// missed six live ShengShou lines), and at least one NON-US/English retailer.
+//
+// The issue was a narrative until 2026-09-09. This makes it a coverage table.
+head('Discovery breadth per manufacturer (RESEARCH_SPEC 3.6a, ledger P26-3)');
+const SWEEP_EVIDENCE = /prefix|enumerat|\/collections\/|catalogue structure|CDX/i;
+const breadth = new Map();
+for (const r of [...fam, ...mod, ...va]) {
+  const doc = r.doc;
+  const mfr = doc.manufacturer_id ?? byId.get(doc.model_id)?.doc?.manufacturer_id;
+  if (!mfr) continue;
+  if (!breadth.has(mfr)) breadth.set(mfr, { cites: 0, sweep: false, nonUS: false });
+  const b = breadth.get(mfr);
+  const cited = new Set();
+  for (const att of Object.values(doc.attestations ?? {})) for (const s of att?.sources ?? []) cited.add(s);
+  for (const id of cited) {
+    const s = srcById.get(id);
+    if (!s) continue;
+    b.cites += 1;
+    if (SWEEP_EVIDENCE.test(`${s.title ?? ''}${s.preservation_note ?? ''}${s.reliability_note ?? ''}`)) b.sweep = true;
+    if (s.region && s.region !== 'US') b.nonUS = true;
+  }
+}
+const active = [...breadth.entries()].filter(([, b]) => b.cites > 0);
+const noSweep = active.filter(([, b]) => !b.sweep).sort((a, b) => b[1].cites - a[1].cites);
+const noNonUS = active.filter(([, b]) => !b.nonUS).sort((a, b) => b[1].cites - a[1].cites);
+line(`  manufacturers with cited sources        : ${active.length} of ${mf.length}`);
+line(`  with a 3.6a-style prefix/collection sweep: ${active.length - noSweep.length}`);
+line(`  with at least one non-US source          : ${active.length - noNonUS.length}`);
+line(`  failing BOTH                             : ${active.filter(([, b]) => !b.sweep && !b.nonUS).length}`);
+line('');
+line(`  no sweep source (${noSweep.length}), heaviest first:`);
+noSweep.slice(0, 8).forEach(([m, b]) => line(`     ${m.padEnd(18)}${String(b.cites).padStart(4)} cites${b.nonUS ? '' : '   (also no non-US source)'}`));
+if (noSweep.length > 8) line(`     ... and ${noSweep.length - 8} more`);
+line('');
+line('  MoYu is the entry to read: it is the archive\'s most heavily cited manufacturer and it');
+line('  fails BOTH checks — and it accounts for 8 of the 14 lines P4-9 found missing from the');
+line('  inventory. The correlation is real but NOT total: 4 of those 14 belong to manufacturers');
+line('  that DO satisfy 3.6a, so compliance would not by itself have prevented P4-9. 3.6a asks');
+line('  for ARCHIVED sweeps, which look backwards; nothing in it requires a CURRENT catalogue.');
+line('  That is what `npm run catalogue-gap` covers, and why it had to be a separate check.');
+
 line();
 line('audit complete — advisory only, nothing here blocks a build.');
