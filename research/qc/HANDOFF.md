@@ -80,12 +80,25 @@ DONE SINCE  P4-11 RESOLVED — raised on a misreading. RESEARCH_SPEC 2.4 states 
             13 such exclusions were unsigned. Rule 15 makes ADMISSION cost an argument;
             exclusion cost nothing. Advisory. 10 warnings, 8 files, no false positives.
 
+ALSO DONE
+  WRM CRUX SETTLED — "WeiLong WRM V9" IS the archive's moyu-weilong-v9 under its full
+    retail name (no plain V9 exists at retail; configs and spring-2023 date both match).
+    MoYu used YEAR names through WR M 2021, then VERSION numbers from V9 (2023), so
+    wr-m-2020/-2021 are correct as they stand. WRM V10 confirmed missing.
+  P4-10 ZIINA — decorator-vs-manufacturer ANSWERED: "Ziina Space Magnetic 3x3" is a base
+    budget speedcube (56.0mm, 68.0g, "Manufacturer: Ziina", no print). Brand corroborated
+    by a second retailer (SpeedCubeShop, 13 products). Evidence:
+    data/sources/thecubicle-ziina-space-magnetic-3x3-2025.yml
+
 NEXT ACTION
-  1. The WRM V9/V10 naming crux — settles whether P4-9's model gap is 20 or 19.
-     Archive has moyu-weilong-wr-m-2020 / -2021; retailers number the line WRM V9 / V10.
-     Needs a statement tying a WRM version number to a year.
-  2. P4-10 Ziina: establish decorator-vs-manufacturer from first-party evidence BEFORE
-     any entity record. Do NOT create records from a retailer vendor field.
+  1. P26-2 MECHANISM DESIGN. It is measured (0 of 25 declared escalations cite a ledger
+     id) but no linkage exists yet. Design report -> machine-readable escalation ->
+     ledger id -> status, minimising false positives. This is infrastructure, buildable
+     now, and explicitly the remaining half of that issue.
+  2. Ziina "who makes it" — still blocks admission. Needs first-party or specialist
+     evidence, NOT another retailer. Note SpeedCubeShop says "Ziina Star", TheCubicle
+     says "Ziina"; all 13 SpeedCubeShop listings are UV-printed, so the ONLY evidence of
+     a base Ziina cube anywhere is the single TheCubicle listing.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or
