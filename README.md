@@ -3,13 +3,19 @@
 A collector-grade historical archive of 3×3 speedcubes, approximately 2016–2026, built to
 become an interactive digital exhibition.
 
-**Phase A — data architecture — is implemented. No cube data has been collected.** `data/` is
-empty by design. Research begins with the GAN pilot.
+**Status: Pass 4 (variant enumeration) in progress.** The archive currently holds
+**54 manufacturers · 132 families · 269 models · 426 variants · 512 sources**. The manufacturer,
+family and model layers are frozen; Pass 4 is populating the variant layer beneath them.
+
+Coverage is tracked honestly rather than optimistically: `npm run audit` reports how many models
+have actually been **assessed** for configuration axes, and a model at zero variants means *not
+yet researched* — never *researched and empty*. That distinction is the subject of
+`research/qc/p4-3-variant-semantics.md`.
 
 ## Read in this order
 
 1. **[PRODUCT.md](PRODUCT.md)** — what this is, who it is for, what is in scope
-2. **[DATA_MODEL.md](DATA_MODEL.md)** — the schema and the 38 quality-control rules
+2. **[DATA_MODEL.md](DATA_MODEL.md)** — the schema and the quality-control rules (46 and counting; each was added because a defect got past the previous 45)
 3. **[RESEARCH_SPEC.md](RESEARCH_SPEC.md)** — how research is done and what counts as evidence
 4. [docs/research-agents.md](docs/research-agents.md) — the agent team and what runs in parallel
 5. [docs/implementation-manifest.md](docs/implementation-manifest.md) — every file and why
@@ -17,7 +23,11 @@ empty by design. Research begins with the GAN pilot.
 ## The three ideas everything rests on
 
 1. **The atomic record is the variant, not the model.** A model is a design; the objects are
-   the configurations that were sold. Materially different variants are never collapsed.
+   the configurations that were sold. Materially different variants are never collapsed — and
+   equally, a retailer's dropdown of stock colours is one variant, not six. Pass 4 re-derived
+   this principle from the schema and reached the same answer the project started with: the
+   variant carries pricing, media, rarity and specimen ownership, and the public bundle is built
+   from variants, so **a model with no variant cannot be exhibited at all.**
 2. **Provenance attaches to individual facts**, as a sidecar keyed by JSON Pointer, so records
    stay readable and every material claim carries its source and confidence.
 3. **A source is preserved before it is cited.** The pages this archive depends on are being
@@ -40,6 +50,7 @@ npm run check       # everything
 npm run validate    # blocking checks
 npm run selftest    # proves the checks themselves still fire
 npm run coverage    # the honest measure of what is missing
+npm run audit       # archive-wide sweeps: assessment coverage, orphaned sources, provenance
 ```
 
 `npm run build` emits two bundles: `dist/private/` (everything, never deployed) and
