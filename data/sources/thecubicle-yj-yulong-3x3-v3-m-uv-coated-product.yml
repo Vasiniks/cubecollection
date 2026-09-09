@@ -1,0 +1,35 @@
+# source: thecubicle-yj-yulong-3x3-v3-m-uv-coated-product
+# Pass 4 (Agent C, YJ+MFJS variants). TheCubicle's own product page for the "YJ YuLong 3x3 V3 M
+# (UV Coated)" configuration, fetched directly via `npm run wayback -- get`. Named as a variant
+# by yj-yulong-v3-m.yml's own model-level description.
+id: thecubicle-yj-yulong-3x3-v3-m-uv-coated-product
+entity: source
+kind: retailer
+title: "YJ YuLong 3x3 V3 M (UV Coated) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-yulong-3x3-v3-m-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250622id_/https://www.thecubicle.com/products/yj-yulong-3x3-v3-m-uv-coated"
+excerpt: |-
+  Product Description: "The YJ YuLong 3x3 V3 M (UV Coated) is a budget magnetic speed cube that
+  offers smooth turning, reliable stability, and a premium feel at an affordable price. It
+  features factory-installed magnets for improved layer alignment and control, making it great
+  for both beginners and intermediate solvers. The UV-coated surface adds a glossy finish that
+  enhances grip and durability, giving the cube a sleek look and solid performance out of the
+  box." The page's own "Versions" selector: "V2 (Magnetic)" ($8.99), "V3 (Magnetic)" ($5.99),
+  "V3 (Magnetic + UV)" ($7.99, this page's own default), "V3 (Magnetic + UV + Clicky)" ($7.99).
+  Product Specifications: Manufacturer YJ; Type 3x3 Speed Cubes; Added 2025-04-24
+  (catalogue-migration field, not a release date); Gross Weight 79g; Dimensions 56.0mm^3;
+  Magnets: Magnetic; Item Weight 67.0g.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence, the shared Versions selector, and
+  the spec-block fields verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description. 'The UV-coated surface
+  adds a glossy finish' is direct evidence of a coating-axis distinction (DATA_MODEL 4.1 axis
+  5) from the base V3 M configuration."
+status: sourced

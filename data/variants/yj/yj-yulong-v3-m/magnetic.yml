@@ -1,0 +1,21 @@
+# variant: yj-yulong-v3-m--magnetic
+# Pass 4 (Agent C). The base "V3 (Magnetic)" sold configuration ($5.99) -- the exact
+# configuration thecubicle-yj-yulong-3x3-v3-m-product describes, and the one the model record's
+# own specs are drawn from. No config overrides.
+id: yj-yulong-v3-m--magnetic
+entity: variant
+model_id: yj-yulong-v3-m
+name: "YJ YuLong 3x3 V3 M"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-product]
+    note: "The lowest-priced ($5.99) of three sold V3 configurations, per the shared Versions
+      selector found on the UV and UV+Clicky pages."

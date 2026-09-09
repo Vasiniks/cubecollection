@@ -1,0 +1,32 @@
+# variant: yj-yulong-v3-m--uv-coated
+# Pass 4 (Agent C). The "V3 (Magnetic + UV)" sold configuration ($7.99), named as a variant by
+# yj-yulong-v3-m.yml's own model-level description.
+id: yj-yulong-v3-m--uv-coated
+entity: variant
+model_id: yj-yulong-v3-m
+name: "YJ YuLong 3x3 V3 M (UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "UV Coated"
+config:
+  coating: uv
+  weight_g: 67.0
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-product]
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-product]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-product]
+    note: "Item Weight (67.0g), not Gross Weight (79g, includes packaging)."

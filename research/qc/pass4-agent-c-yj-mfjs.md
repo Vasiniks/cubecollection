@@ -181,3 +181,32 @@ record, kind: service) — no such manufacturer record currently exists in the a
 for a future pass rather than acted on without direct confirmation.
 Sources added: none (reused existing model-level sources for all three).
 Candidates rejected: "[CPS Serviced]" sidebar listing (insufficient direct evidence this pass).
+
+## yj-yulong-v3-m — DONE
+Axis identified: coating (base vs. UV Coated) plus a further "+ Clicky" turning-feel
+configuration, named as pass-4 material in the model's own description. CDX prefix sweep
+confirmed the retailer's own shared "Versions" selector spans BOTH yj-yulong-v2-m (a separate,
+correctly frozen model) and three yj-yulong-v3-m configurations — corroborating the existing
+two-model split rather than contradicting it.
+Variants created:
+- yj-yulong-v3-m--magnetic (base, $5.99, no overrides)
+- yj-yulong-v3-m--uv-coated (config.coating: uv, config.weight_g: 67.0)
+- yj-yulong-v3-m--uv-coated-clicky (same coating/weight; "clicky" turning-feel trait recorded
+  only as `significance` prose — no vocabulary field exists for it)
+Sources added: thecubicle-yj-yulong-3x3-v3-m-uv-coated-product,
+thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product (reused the existing Pass 3 source
+thecubicle-yj-yulong-3x3-v3-m-product for the base tier rather than duplicating it).
+Candidates rejected: none additional. yj-yulong-pyraminx / yj-yulong-square-1 seen in the same
+CDX sweep are different puzzle types, out of this archive's 3x3 scope.
+
+## yj-zhilong-mini and yj-guanlong-original — leads checked, zero NEW variants
+- "yj-zhilong-m-3x3" (a differently-slugged TheCubicle URL found via CDX sweep) fetched and
+  confirmed to be the IDENTICAL product already covered by the model's own source (same title
+  "YJ ZhiLong Mini 3x3 M Magnetic Speed Cube", same description, same 50mm/magnetic facts) --
+  a URL-naming duplicate, not a second SKU. Dedup test passed; no variant created.
+- "yj-guanlong-unstickered" (a differently-slugged TheCubicle URL for the original GuanLong)
+  fetched and found to carry the IDENTICAL product description and spec block (56mm, ~82-83g)
+  as the standard GuanLong page already used by the model record -- a stickerless colour option
+  of the same base product, not a separately named/marketed edition. Collapses per the
+  stock-colourway rule; no variant record created (zero-variant assessment for
+  yj-guanlong-original stands).
