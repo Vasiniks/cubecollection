@@ -92,7 +92,7 @@ console.log('\n  fail fixture — records engineered to trip named rules');
 
   const l = run('lint-semantic.mjs', { dataRoot: FAIL });
   const lintFired = rulesIn(l.out);
-  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43, 45, 46, 47, 48];
+  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43, 45, 46, 47, 48, 49];
   const lintMissing = lintExpected.filter((r) => !lintFired.has(r));
   lintMissing.length === 0
     ? ok('semantic warnings fire', `${lintExpected.join(', ')}`)
@@ -133,6 +133,15 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   // CITATION branches, and the rule is only correct if it tells them apart — reporting them
   // alike raised 5 false positives out of 8 on real data. Assert each message specifically,
   // and assert that the chronological pair is NOT accused of double-counting.
+  // Rule 49 removes a record from the PUBLIC bundle, so its allowance matters as much as its
+  // fail branch: without zz-ok-signed-exclusion the rule would be indistinguishable from one
+  // forbidding reference_only outright, and the archive uses that class legitimately.
+  /zz-bad-unsigned-exclusion[^\n]*\[49\]|\[49\][^\n]*zz-bad-unsigned-exclusion/.test(l.out)
+    ? ok('rule 49 unsigned-exclusion branch fires', 'an unexplained removal from the public archive is caught')
+    : bad('rule 49 unsigned-exclusion branch fires', 'no [49] message in lint output');
+  /zz-ok-signed-exclusion[^\n]*\[49\]|\[49\][^\n]*zz-ok-signed-exclusion/.test(l.out)
+    ? bad('rule 49 spares a signed exclusion', 'fired on a reference_only record that is signed and reasoned')
+    : ok('rule 49 spares a signed exclusion', 'a properly recorded lineage exclusion is not flagged');
   // Rule 48's allowance is the half that can silently rot. The fail branch is obvious; what
   // must be proved is that a value DERIVED from a source stating only ounces is not accused of
   // being unevidenced, or the rule degenerates into a ban on unit conversion.

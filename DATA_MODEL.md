@@ -915,6 +915,35 @@ check cannot see because nothing about the record looks unusual.
     `zz-ok-derived-conversion` the rule would be indistinguishable from a ban on unit conversion.
 
 
+49. **An exclusion from the public archive is a decision, and decisions are signed.**
+    *(added 2026-09-09)* §2.5 says `scope_class` "is a curation decision, not a fact about the
+    object. It records `scope_decided_by` and `scope_decided_on`." RESEARCH_SPEC §2.4 says
+    `reference_only` records "never enter the public bundle" — and `build.mjs` enforces exactly
+    that, since `PUBLIC_SCOPE` is `{core, conditional}`. Marking a record `reference_only`
+    therefore **removes it from the published archive**.
+
+    Rule 15 already makes the opposite decision expensive: a `conditional` *admission* needs a
+    justification, an attestation on it, and a legality basis, and all 15 conditional models
+    carry them. **Nothing asked anything of an exclusion.** Of 13 `reference_only` models, eight
+    carried no signature and two stated no reason anywhere.
+
+    *Admission cost an argument; exclusion was free.* A record could vanish from the public
+    archive because someone found no evidence one afternoon, with nothing recorded about who
+    decided or why — and every check stayed green, because an absent record breaks no invariant.
+
+    **Scoped to where the decision is actually made.** The first version flagged all 28
+    `reference_only` records and 30 of its 40 warnings were noise: every one of the 15
+    `reference_only` *variants* inherits the class from its model, because a variant's
+    `scope_class` must match its parent's. A variant restating its model's decision is not a
+    second decision, and demanding a second signature would train people to rubber-stamp. A
+    variant is flagged only if it went `reference_only` while its model did not.
+
+    Advisory, deliberately. The eight existing records need a **human** to say why they were
+    excluded, and a blocking rule would only invite a rubber-stamp signature — the same reasoning
+    that introduced rule 40 as advisory. `zz-ok-signed-exclusion` exists to be **ignored**, and
+    the selftest asserts its absence: without it the rule would be indistinguishable from one
+    forbidding `reference_only` outright, which the archive uses legitimately for lineage records.
+
 ### 7.6 Human gates
 
 - Family list reviewed before model enumeration opens

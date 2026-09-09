@@ -1,0 +1,18 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Must NOT trip rule 49. The same exclusion, made properly: signed under DATA_MODEL 2.5 and with
+# the reason stated in the record's own prose. Without this fixture rule 49 would be
+# indistinguishable from a rule that forbids reference_only altogether, and the archive uses that
+# class legitimately for lineage records.
+id: zz-ok-signed-exclusion
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ OK Signed Exclusion
+scope_class: reference_only
+scope_decided_by: zz-fixture-curator
+scope_decided_on: "2026-09-09"
+description: |-
+  SYNTHETIC FIXTURE. `scope_class: reference_only` because this product predates the archive's
+  2016-2026 window and exists only so a lineage naming it can be read without re-litigating what
+  it was. Identity and aliases only, per RESEARCH_SPEC 2.4.
+status: stub

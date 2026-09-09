@@ -515,5 +515,49 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 49 — an exclusion from the public archive is a decision, and decisions are signed
+//
+// DATA_MODEL 2.5: "`scope_class` is a curation decision, not a fact about the object. It records
+// `scope_decided_by` and `scope_decided_on`." RESEARCH_SPEC 2.4: reference_only records "never
+// enter the public bundle" — and build.mjs enforces exactly that, since PUBLIC_SCOPE is
+// {core, conditional}. So marking a record reference_only REMOVES IT FROM THE PUBLISHED ARCHIVE.
+//
+// Rule 15 already makes the opposite decision expensive: a `conditional` ADMISSION needs a
+// justification, an attestation on it, and a legality basis, and all 15 conditional models carry
+// them. Nothing asked anything of an EXCLUSION. Found 2026-09-09: of 13 reference_only models,
+// EIGHT carry no scope_decided_by/on and NINE state no reason anywhere.
+//
+// The asymmetry is the defect. Admission costs an argument; exclusion was free. A record can
+// disappear from the public archive because someone could not find evidence for it that
+// afternoon, with nothing recorded about who decided or why — and every check stays green,
+// because an absent record breaks no invariant.
+//
+// Advisory, not blocking, and deliberately so: the eight existing records need a HUMAN to say
+// why they were excluded, and a blocking rule would only invite a rubber-stamp signature. The
+// same reasoning that introduced rule 40 as advisory.
+//
+// SCOPED TO WHERE THE DECISION IS MADE. The first version flagged all 28 reference_only records
+// and 30 of its 40 warnings were noise: every one of the 15 reference_only VARIANTS inherits the
+// class from a reference_only model, because a variant's scope_class must match its parent's. A
+// variant restating its model's decision is not a second decision, and demanding a second
+// signature for it would train people to rubber-stamp. A variant is flagged only if it went
+// reference_only while its model did NOT — which would be a decision of its own, and there are
+// currently none.
+{
+  const scopeOfModel = new Map(records.filter((r) => r.entity === 'model' && r.doc?.id).map((r) => [r.doc.id, r.doc.scope_class]));
+  for (const rec of records) {
+    const doc = rec.doc ?? {};
+    if (doc.scope_class !== 'reference_only') continue;
+    if (rec.entity === 'variant' && scopeOfModel.get(doc.model_id) === 'reference_only') continue;
+    if (!doc.scope_decided_by || !doc.scope_decided_on) {
+      report.warn('49', rec.file, `is reference_only, which removes it from the public bundle, but records no scope_decided_by/scope_decided_on. DATA_MODEL 2.5 says a scope decision is signed; rule 15 already requires an argument to ADMIT a conditional record, and nothing required one to exclude this.`);
+    }
+    const prose = `${doc.description ?? ''} ${doc.scope_justification ?? ''}`;
+    if (!prose.includes('reference_only')) {
+      report.warn('49', rec.file, `is reference_only and states no reason for it anywhere in its own prose. The exclusion is the most consequential thing this record says about itself and it is unexplained.`);
+    }
+  }
+}
+
 report.print();
 process.exit(0);

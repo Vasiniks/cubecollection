@@ -25,7 +25,7 @@ models assessed" is a statement about the inventory, not a claim that the invent
 ## Read in this order
 
 1. **[PRODUCT.md](PRODUCT.md)** — what this is, who it is for, what is in scope
-2. **[DATA_MODEL.md](DATA_MODEL.md)** — the schema and the quality-control rules (48 and counting; each was added because a defect got past the previous 47)
+2. **[DATA_MODEL.md](DATA_MODEL.md)** — the schema and the quality-control rules (49 and counting; each was added because a defect got past the previous 48)
 3. **[RESEARCH_SPEC.md](RESEARCH_SPEC.md)** — how research is done and what counts as evidence
 4. [docs/research-agents.md](docs/research-agents.md) — the agent team and what runs in parallel
 5. [docs/implementation-manifest.md](docs/implementation-manifest.md) — every file and why

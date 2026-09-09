@@ -1,0 +1,18 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 49, both branches. reference_only removes a record from the PUBLIC bundle (build.mjs sets
+# PUBLIC_SCOPE to {core, conditional}), so it is the most consequential thing this record says
+# about itself — and it is asserted here with no scope_decided_by, no scope_decided_on, and no
+# reason anywhere in its prose. Rule 15 makes the opposite decision expensive: a conditional
+# ADMISSION needs a justification, an attestation and a legality basis. Nothing asked anything of
+# an exclusion, which is the asymmetry rule 49 exists to close.
+id: zz-bad-unsigned-exclusion
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Unsigned Exclusion
+scope_class: reference_only
+description: |-
+  SYNTHETIC FIXTURE. Deliberately says nothing about why this record is excluded from the public
+  archive. A reader cannot tell whether it was a considered curation decision or the residue of
+  an afternoon when no evidence turned up.
+status: stub
