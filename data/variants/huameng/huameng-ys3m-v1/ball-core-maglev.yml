@@ -1,0 +1,44 @@
+# variant: huameng-ys3m-v1--ball-core-maglev
+# Pass 4. Ball-Core + MagLev sibling of the Standard configuration, per TheCubicle's own
+# dedicated product page: "the ball core + maglev version that has corner/core magnetization,
+# 25 degrees of magnetic turn correction (auto-homing ability)".
+id: huameng-ys3m-v1--ball-core-maglev
+entity: variant
+model_id: huameng-ys3m-v1
+name: "HuaMeng YS3M 3x3 (Ball-Core + MagLev)"
+scope_class: core
+config:
+  maglev: ball_core_maglev
+  core_system: ball_core
+  weight_g: 83.0
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev]
+    note: "Differentiation search performed (see huameng-ys3m-v1--standard.yml's header). This
+      product's own page names itself the 'ball core + maglev version' with corner/core
+      magnetization, distinct from the plain MagLev sibling; no further edition/tier name
+      found. The same page's own supply-chain notice naming MoYu as the source of a broken
+      mould is a separate, unresolved manufacturer-affiliation lead, not acted on here."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev]
+    note: "Maps to `ball_core_maglev` — magnetic repulsion combined with a ball core, exactly
+      this vocabulary value's own description."
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev]
+    note: "Item Weight 83.0g, the source's own structured spec field (same convention as the
+      Standard and MagLev configurations)."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev]
+    note: "Inferred from the absence of sticker language; not a direct statement."

@@ -54,6 +54,75 @@ via the model). No new source files created.
 
 ---
 
+### HuaMeng (3 models — huameng-tg-v1, huameng-tg-v2, huameng-ys3m-v1) — DONE
+
+Session was interrupted mid-write here by a session-limit kill; recovered from disk (commit
+`ecd1713`) with 0 errors, then completed the two YS3M variants that had not yet been written
+when the kill happened (`ball-core-maglev`, `ball-core-uv-maglev`).
+
+**huameng-tg-v1** (5 variants — a `scripts/wayback.mjs prefix thecubicle.com/products/huameng-tg`
+sweep found 17 captured URLs collapsing to 5 distinct configurations; TheCubicle's own
+"Added: 2024-10-23" date is shared by all 4 non-limited configurations, consistent with one
+generation catalogued together):
+- `huameng-tg-v1--standard` (Ball-Core, baseline).
+- `huameng-tg-v1--ball-core-uv` (+ UV coating).
+- `huameng-tg-v1--maglev-ball-core` (+ MagLev, `maglev: ball_core_maglev`).
+- `huameng-tg-v1--maglev-ball-core-uv` (both).
+- `huameng-tg-v1--spirit-pearl-limited-edition` — limited to 999 worldwide (retailer's own
+  figure), gold/red/transparent colourway, ships **stickered** (custom-cut stickers) unlike the
+  line's stickerless baseline, custom box/inserts/adjustment tool. First flagged as a lead via
+  a site-wide promo banner on the already-on-file `thecubicle-huameng-tg-3x3-ball-core` source;
+  actioned this pass by fetching its own dedicated page.
+- New sources created: `thecubicle-huameng-tg-3x3-ball-core-uv`,
+  `thecubicle-huameng-tg-3x3-maglev-ball-core`, `thecubicle-huameng-tg-3x3-maglev-ball-core-uv`,
+  `thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition`.
+
+**huameng-tg-v2** (1 baseline — `huameng-tg-v2--standard`): dedicated prefix sweep found only
+the one already-on-file URL; the source's own product description is a placeholder ("more
+details coming soon!"), so the baseline is held at `uncertain` rather than `probable`. No new
+source needed.
+
+**huameng-ys3m-v1** (4 variants — the model's own page cross-links by name to exactly two
+siblings ["Get the Standard version here. Get the Maglev version here." / "...Ball-core version
+here."], and a further UV-coated top tier was found via prefix sweep):
+- `huameng-ys3m-v1--standard` (piece-to-piece magnetization, baseline).
+- `huameng-ys3m-v1--maglev` (`maglev: maglev`, no ball-core language).
+- `huameng-ys3m-v1--ball-core-maglev` (`maglev: ball_core_maglev`, `core_system: ball_core`).
+- `huameng-ys3m-v1--ball-core-uv-maglev` (adds `coating: uv`).
+- New sources created: `thecubicle-huameng-ys3m-3x3-maglev`,
+  `thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev`,
+  `thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev`.
+
+**Escalation (not actioned, manufacturer/model boundaries frozen).** Two of the new YS3M
+sources are direct first-party retailer statements naming MoYu, not HuaMeng, as the
+manufacturing party: TheCubicle's own supply-chain notice reads "we were informed by Moyu that
+the mold is broken," and a separate page attributes HuaMeng's UV coating to MoYu's own branded
+term ("Magic Clothes... as MoYu puts it"). This corroborates, with two additional independent
+statements, the open MoYu-affiliation lead already flagged at the `huameng-ys3m` family/model
+level (itself never resolved into a merge or rebrand finding). Recorded here for a future
+manufacturer-boundary review; `huameng` remains an independent manufacturer record and no
+`rebrand_of` relationship was created — rule 17's tier 1-2 bar for a rebrand claim is not
+obviously met by retailer supply-chain trivia naming a subcontractor/mould source, and this is
+exactly the kind of judgement call that belongs to a dedicated manufacturer-boundary pass, not
+a variant enumeration.
+
+**Model-spec observation (not actioned, models frozen).** All four non-limited `huameng-tg-v1`
+configurations are titled "...Ball-Core..." by TheCubicle, but the model record itself sets
+`specs.core_system: dual_adjustment` (its own reading of the tension/compression mechanism) —
+the two vocabulary values cannot coexist in one enum field. Variant records here deliberately
+do **not** set `config.core_system: ball_core` to avoid contradicting the model; flagged for
+the model-researcher lane to reconcile whether `core_system` should record the magnetic/ball
+mechanism or the tension/compression mechanism for this line.
+
+**Rejected:** no candidates rejected this pass for HuaMeng — every configuration slug found
+via prefix sweep corresponded to a real, materially distinct sold configuration (magnet
+architecture, coating, or a named limited edition).
+
+**Validation:** `npm run check` after this section — 0 errors (warning count reflects the
+merged main state from parallel lanes, not a regression from this section).
+
+---
+
 ## Machine-readable summary (placeholder, to be replaced at end)
 ```yaml
 models_assessed: []
