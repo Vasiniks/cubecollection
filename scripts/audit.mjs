@@ -14,10 +14,11 @@ import { loadVocabularies, loadSchemas, loadRecords, indexRecords, sourceTier } 
 const vocabs = loadVocabularies();
 loadSchemas(vocabs);
 const records = loadRecords();
-const { byEntity } = indexRecords(records);
+const { byEntity, byId } = indexRecords(records);
 
 const of = (e) => (byEntity.get(e) ?? []).filter((r) => r.doc?.id);
 const fam = of('family'), mod = of('model'), va = of('variant'), mf = of('manufacturer'), src = of('source');
+const srcById = new Map(src.map((r) => [r.doc.id, r.doc]));
 const tierOf = (id) => {
   const s = src.find((x) => x.doc.id === id);
   return s ? sourceTier(s.doc, vocabs) : null;
@@ -180,6 +181,59 @@ line(`  name an artefact date in order to REFUSE it : ${refuses}   <- the discip
 line(`  name one without any refusal language       : ${uses.length}`);
 uses.forEach((u) => line(`     ${u}`));
 if (!uses.length) line('     (none — every mention is a refusal)');
+
+// ---- 7. source-class dependence per manufacturer -----------------------------------------
+//
+// RESEARCH_SPEC 3.6a requires discovery breadth including at least one non-US/English retailer.
+// Ledger D-F4 recorded single-publisher dependence at the FAMILY layer; this measures it where
+// it actually bites, across every family, model and variant attributed to a manufacturer.
+//
+// The distinction that makes the number meaningful: a manufacturer resting entirely on its OWN
+// official site is well sourced, not narrowly sourced, and a sub-brand resting on its PARENT's
+// site is too — Monster Go and Swift Block cite gancube.com because GAN owns them, which is the
+// strongest evidence available, not a misattribution. First-party citations are resolved up the
+// parent_id chain and excluded before the concentration is computed. Without that step this
+// sweep reports 12 manufacturers at "100% one publisher" and three of them are false.
+head('Source-class dependence per manufacturer');
+const mfById = new Map(mf.map((r) => [r.doc.id, r.doc]));
+const hostOf = (u) => ((/https?:\/\/([^/]+)/.exec(u ?? '') ?? [])[1] ?? '').toLowerCase().replace(/^www\./, '');
+const isFirstParty = (s, mfr) => {
+  if (s.kind !== 'manufacturer_official') return false;
+  let cur = mfr;
+  for (let hops = 0; cur && hops < 4; hops += 1) {
+    const m = mfById.get(cur);
+    if (!m) break;
+    const own = hostOf(m.website ?? m.url);
+    if (own && hostOf(s.url ?? s.archive_url) === own) return true;
+    cur = m.parent_id;
+  }
+  return false;
+};
+const per = new Map();
+for (const r of [...fam, ...mod, ...va]) {
+  const doc = r.doc;
+  const mfr = doc.manufacturer_id ?? byId.get(doc.model_id)?.doc?.manufacturer_id;
+  if (!mfr) continue;
+  if (!per.has(mfr)) per.set(mfr, { firstParty: 0, third: new Map(), langs: new Set() });
+  const bucket = per.get(mfr);
+  const cited = new Set();
+  for (const att of Object.values(doc.attestations ?? {})) for (const s of att?.sources ?? []) cited.add(s);
+  for (const id of cited) {
+    const s = srcById.get(id);
+    if (!s) continue;
+    if (s.language) bucket.langs.add(s.language);
+    if (isFirstParty(s, mfr)) bucket.firstParty += 1;
+    else bucket.third.set(s.publisher ?? '?', (bucket.third.get(s.publisher ?? '?') ?? 0) + 1);
+  }
+}
+const solo = [...per.entries()]
+  .filter(([, b]) => b.firstParty === 0 && b.third.size === 1)
+  .map(([m, b]) => [m, [...b.third.entries()][0], [...b.langs].join('/') || '-'])
+  .sort((a, b) => b[1][1] - a[1][1]);
+line(`  manufacturers resting on ONE third-party publisher with NO first-party source : ${solo.length}`);
+for (const [m, [pub, n], langs] of solo) line(`     ${m.padEnd(18)}${String(n).padStart(3)} cites   ${pub}   [${langs}]`);
+line('  (a manufacturer resting wholly on its own or its parent\'s official site is NOT listed —');
+line('   that is first-party evidence, the strongest there is, not narrow sourcing.)');
 
 line();
 line('audit complete — advisory only, nothing here blocks a build.');

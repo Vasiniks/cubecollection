@@ -1419,3 +1419,42 @@ issues:
       wants tighter introduction bounds for the mid-2010s TheCubicle catalogue.
     owner: main
     last_updated: "2026-09-09"
+
+  - id: P4-8
+    severity: medium
+    status: open
+    title: "Nine manufacturers rest entirely on one US English-language retailer"
+    evidence: >-
+      A source-class dependence sweep on 2026-09-09, across every family, model and variant
+      attributed to each manufacturer, found NINE whose entire evidence base is TheCubicle and
+      which carry no first-party source at all: lefun (34 citations), x-man-design (27),
+      huameng (16), fanxin (13), newisland (9), cubestyle (5), guojia (5), mefferts (3),
+      pbcube (3). 115 citations, one publisher, one language, one region.
+      RESEARCH_SPEC 3.6a requires discovery breadth including at least one non-US/English
+      retailer. These nine have none. Four more are dominant-but-not-sole on the same publisher
+      (maru 89%, kungfu 90%, calvins-puzzle 86%, haitun 83%).
+      The measurement only means anything because first-party citations are resolved UP THE
+      parent_id CHAIN and excluded first. Without that step the sweep reports twelve
+      manufacturers at 100% and three are false: monster-go and swift-block cite gancube.com
+      because GAN owns them, and cube4you cites its own site. That is the strongest evidence
+      available, not narrow sourcing. This was verified - both sub-brands carry parent_id gan.
+      x-man-design is the sharpest case and the most tractable: 27 citations resting on one US
+      retailer while its parent QiYi has a live official site that is already cited elsewhere in
+      this archive for other QiYi lines.
+    recommendation: >-
+      Do NOT bulk-add sources to reduce the number. The requirement is INDEPENDENT corroboration,
+      and adding a second US retailer that mirrors TheCubicle's own copy would satisfy the count
+      while satisfying nothing else - the archive already documents retailer spec tables copied
+      verbatim between vendors. Work the list in citation order, and for each manufacturer seek,
+      in this order: a first-party page (x-man-design via qiyi first), then a non-US/non-English
+      retailer, then a specialist reference. Record every sweep outcome including the empty ones;
+      an unrecorded sweep is indistinguishable from one never run.
+    confidence: confirmed
+    downstream_impact: >-
+      No claim is known to be WRONG because of this. Rule 9 already prevents a `confirmed` from
+      resting on one publisher, so the effect is a ceiling on confidence rather than an error:
+      these manufacturers cannot rise above `probable` on their current evidence, and a single
+      retailer's error or omission propagates unchecked through everything attributed to them.
+      The audit prints the list every run, so the number moves visibly in either direction.
+    owner: main
+    last_updated: "2026-09-09"
