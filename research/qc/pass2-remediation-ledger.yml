@@ -1141,3 +1141,64 @@ issues:
       under whichever parent they belong to regardless of whether the moulds turn out related.
     owner: main
     last_updated: "2026-09-08"
+
+  # ---- Pass 4 findings (2026-09-08) -------------------------------------------
+
+  - id: P4-1
+    severity: low
+    status: open
+    title: "Rule 18 checks variants only, so out-of-range model sizes surface late and as false positives"
+    category: tooling
+    affected_records: "8 models; warnings appear on their variants, not on the models themselves"
+    evidence: >-
+      lint-semantic rule 18 warns when size_mm falls outside a plausible 50-60mm range. It
+      iterates VARIANTS and resolves the value from the parent model, so a model whose own size
+      is out of range is invisible to the rule until a variant is enumerated beneath it - at
+      which point the warning lands on the variant even though the variant inherits the value
+      and asserts nothing itself. Surfaced by Pass 4 Agent B on qiyi-valk-3-mini (47.4mm), which
+      correctly flagged it rather than working around it. Eight models sit outside the window,
+      all for good reasons: maru-nano-original 15mm, cyclone-boys-mini-3x3-original 40mm,
+      mfjs-mini-3x3-keychain-40mm 40mm, dayan-zhanchi-42mm 42mm, mfjs-mini-3x3-45mm 45mm,
+      qiyi-valk-3-mini 47.4mm, shengshou-crazy-original 60.5mm, shengshou-legend-big 70mm.
+    counterevidence: >-
+      The rule is doing its job for standard speedcubes and has caught real errors before. These
+      are genuine mini and oversized products, so the range is simply not calibrated for them.
+      No data is wrong; the warnings are advisory and block nothing.
+    recommendation: >-
+      Do NOT denormalise a size onto a variant to dodge the warning, and do not alter frozen
+      model specs. Options for later: widen the range, exempt a variant whose size is inherited
+      rather than overridden, or check the model directly so the signal appears where the value
+      actually lives. Until then, expect up to 8 such warnings as Pass 4 proceeds and record
+      which lane introduced each.
+    confidence: confirmed
+    downstream_impact: >-
+      Cosmetic. The practical risk is a researcher suppressing a legitimate variant to keep a
+      warning count at a stale baseline, which is why the running lanes were warned explicitly.
+    owner: main
+    last_updated: "2026-09-08"
+
+  - id: P4-2
+    severity: medium
+    status: needs_human_decision
+    title: "Four QiYi retailer slugs have no corresponding frozen model"
+    category: taxonomy-completeness
+    affected_records: "none - escalation only"
+    evidence: >-
+      Pass 4 Agent B found qiyi-dimension-3x3, qiyi-fluffy-3x3, qiyi-mini-3x3-3-0cm and
+      qiyi-void-cube-3x3-magnetic in TheCubicle's own QiYi collection listing, none of which maps
+      to any of the 24 frozen QiYi models. Recorded as an escalation and not acted on, correctly:
+      a variant pass has no authority over the model layer.
+    counterevidence: >-
+      Several are plausibly out of scope rather than missing. A void cube and a "fluffy" cube may
+      not be standard 3x3x3 products at all, and a 3.0cm mini may fall under RESEARCH_SPEC 2.4.
+      Retailer slugs are also not evidence of a distinct product line on their own - the archive
+      has a documented false positive from exactly that reasoning.
+    recommendation: >-
+      Assess each against RESEARCH_SPEC 2.1 and 2.4 before treating any as a model gap. Do NOT
+      reopen broad model enumeration for four retailer slugs.
+    confidence: reported
+    downstream_impact: >-
+      If any is a genuine missing model, its variants cannot be enumerated. Bounded at four
+      candidates in one manufacturer.
+    owner: main
+    last_updated: "2026-09-08"
