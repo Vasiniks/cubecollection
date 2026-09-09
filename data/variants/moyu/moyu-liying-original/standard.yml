@@ -1,0 +1,18 @@
+# variant: moyu-liying-original--standard
+# Pass 4. The single sold configuration found for MoYu LiYing. TheCubicle's own 2014-03-05
+# product page gives only a bare name and price ($15.00, category "3x3") with no further
+# description; the Speedsolving wiki carries an empty section heading for this product. No
+# coating/magnet/core/colourway axis is documented by either source.
+id: moyu-liying-original--standard
+entity: variant
+model_id: moyu-liying-original
+name: "MoYu LiYing"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "TheCubicle's own 2014-03-05 product page sells this as one undifferentiated product; the Speedsolving wiki carries only a bare, empty section heading and adds nothing further."

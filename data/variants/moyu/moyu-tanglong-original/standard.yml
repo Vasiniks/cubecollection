@@ -1,0 +1,25 @@
+# variant: moyu-tanglong-original--standard
+# Pass 4. The single sold configuration found for MoYu TangLong, recorded as one "standard"
+# variant per the anti-explosion rule on stock colourways. The wiki states this puzzle "came in
+# colors like blue, cyan, and pink, unlike former puzzles" — stock body-colour options, not
+# separately named/marketed editions (no colourway designation is given for any of the three),
+# matching the GAN356 Air Black/White/Primary precedent. TheCubicle's own sticker-page listing
+# ("3x3 Red 56mm - TangLong") uses this retailer's generic per-SKU naming convention.
+id: moyu-tanglong-original--standard
+entity: variant
+model_id: moyu-tanglong-original
+name: "MoYu TangLong"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  scheme: standard
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+  /colorway/scheme:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'This puzzle came in colors like blue, cyan, and pink, unlike former puzzles.' Read as stock body-colour options rather than named editions, since no colourway designation is given for any of the three; collapsed into one standard variant per the anti-explosion rule rather than exploded into per-colour records."

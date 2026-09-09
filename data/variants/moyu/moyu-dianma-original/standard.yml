@@ -1,0 +1,19 @@
+# variant: moyu-dianma-original--standard
+# Pass 4. The single sold configuration found for MoYu DianMa. TheCubicle's own sticker-page
+# listing names it "3x3 Red 57mm - DianMa" (a generic per-SKU sticker-listing naming pattern
+# shared with several other early MoYu products at this same retailer, not a distinct
+# manufacturer-named colourway or edition). The wiki describes plastic-moulding/popping
+# problems as a general reception note, not a second configuration.
+id: moyu-dianma-original--standard
+entity: variant
+model_id: moyu-dianma-original
+name: "MoYu DianMa"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "TheCubicle's own sticker-page listing sells this as one undifferentiated product. 'Red' in the listing title is this retailer's generic sticker-page naming convention (compare the identically-formatted TangLong and HuaLong listings at the same domain), not a manufacturer-named colourway."
