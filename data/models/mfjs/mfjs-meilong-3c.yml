@@ -12,7 +12,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 55.0
-  weight_g: 62.4
+  weight_g: 62
 released:
   value: "2019-11-13"
   precision: day
@@ -37,7 +37,13 @@ attestations:
   /specs/weight_g:
     confidence: probable
     sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product]
-    note: "'Weight: 2.2oz', converted (1 oz = 28.35g)."
+    note: "The source states 'Weight: 2.2oz' and nothing more precise. This was recorded as
+      62.4g until 2026-09-09 — a straight 2.2 x 28.3495 — which asserts a tenth of a gram from a
+      figure carrying two significant digits. 2.2oz means the interval 2.15-2.25oz, i.e.
+      60.9-63.8g, so the honest value is 62g and the real uncertainty is about +/-1.4g, not
+      +/-0.05g. A manufacturer figure in grams would replace this outright. Found by the sweep
+      for spec values absent from their own sources' preserved text: a converted value is
+      absent by construction, which is what made the over-conversion visible."
   /released:
     confidence: probable
     sources: [speedcubeshop-mofang-jiaoshi-meilong-3c-product]

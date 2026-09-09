@@ -15,6 +15,10 @@ local_capture:
   checksum: "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
   format: pdf
   captured: "2026-08-30"
+excerpt: |-
+  Fixture excerpt. Carries the figure the Flagship UV variant claims as an override:
+  "Item Weight: 61 g" (against the 62 g base). Rule 48 requires the number a record relies on to
+  be preserved where the record can see it, not only inside a capture that may not resolve.
 accessed: "2026-08-30"
 link_status: live
 last_checked: "2026-08-30"

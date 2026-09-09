@@ -12,6 +12,14 @@ preservation_method: archive_url
 archive_url: "https://web.archive.org/web/20230129081452/https://www.thecubicle.com/products/lefun-formula-3x3"
 excerpt: |-
   Product Specifications table: "Manufacturer / Lefun", "Type / 3x3".
+
+
+  SPEC TABLE PRESERVED 2026-09-09. The figures this archive relies on from this page were read
+  off it and never written down here, so the excerpt did not carry the claim without the page —
+  the one thing an excerpt exists to do. Re-fetched from the archive_url already on this record
+  and transcribed verbatim: "Dimensions: 55.5mm" (TheCubicle renders it "55.5mm³", its own notation for
+  a cube's edge length), "Item Weight: 65.3g", "Gross Weight: 77g". The gross figure is recorded
+  here only so a future reader can see which number was NOT taken as the product weight.
 accessed: "2026-09-02"
 language: en
 region: US

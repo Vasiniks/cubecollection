@@ -466,5 +466,54 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 48 — an excerpt that does not carry the number is not evidence for it
+//
+// schema/source.schema.json says an excerpt "must carry the claim without the page. The
+// sentence, not a fragment." Rule 6 checks that a spec HAS an attestation; nothing checked that
+// the attested source actually contains the value.
+//
+// An archive-wide sweep on 2026-09-09 found 13 spec values that appear in NONE of the sources
+// their attestation cites. Every one was correct — re-fetching the captures already on those
+// records confirmed all thirteen figures to the decimal. That is the point: the values were read
+// off the page and never written down, so the archive held the claim and the pointer but not the
+// evidence, and the moment a capture became unreachable the claim would be unverifiable. Several
+// attestation notes admitted it outright ("the source record's own excerpt does not quote the
+// spec table; this pass directly re-fetched"). All 13 are now preserved verbatim.
+//
+// The sweep earns its keep twice over: a value ABSENT from its sources is also how a silent
+// over-conversion shows itself. mfjs-meilong-3c recorded 62.4g from a source stating "2.2oz" —
+// a tenth of a gram claimed from two significant digits, where the honest interval is 60.9-63.8g.
+//
+// A DERIVED value is absent from its source by construction, so the rule accepts one whose note
+// documents the derivation AND whose basis figure is present in the cited source. That is the
+// difference between "converted, basis preserved" and "asserted, evidence missing".
+{
+  // Every way a page might legitimately write the number: as-is, trailing .0, cm, decimal comma.
+  const forms = (v) => {
+    const s = [String(v), String(v / 10)];
+    if (Number.isInteger(v)) s.push(`${v}.0`);
+    return [...new Set(s.flatMap((x) => [x, x.replace('.', ',')]))];
+  };
+  for (const rec of records) {
+    if (!['model', 'variant'].includes(rec.entity)) continue;
+    const doc = rec.doc ?? {};
+    for (const [group, obj] of [['specs', doc.specs], ['config', doc.config]]) {
+      for (const [field, value] of Object.entries(obj ?? {})) {
+        if (typeof value !== 'number') continue;
+        const att = (doc.attestations ?? {})[`/${group}/${field}`];
+        if (!att?.sources?.length) continue;
+        const text = att.sources.map((id) => JSON.stringify(sourceById.get(id) ?? {})).join(' ');
+        if (forms(value).some((f) => text.includes(f))) continue;
+        // Derived, with its basis preserved in the source? Then absence is expected.
+        const note = String(att.note ?? '');
+        const derived = /convert|\boz\b|\binch|\blb\b|significant digit|interval/i.test(note)
+          && (note.match(/\d+(?:\.\d+)?/g) ?? []).some((n) => n !== String(value) && text.includes(n));
+        if (derived) continue;
+        report.warn('48', rec.file, `/${group}/${field} is ${value}, and that number appears in none of the sources this attestation cites (${att.sources.join(', ')}). Whatever the capture may hold, THIS ARCHIVE does not hold it: the figure cannot be checked without a network round trip to a page that may not resolve. Re-fetch the capture already on the source and transcribe the figure into its excerpt.`);
+      }
+    }
+  }
+}
+
 report.print();
 process.exit(0);

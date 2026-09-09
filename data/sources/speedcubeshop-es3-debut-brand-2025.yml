@@ -14,6 +14,23 @@ archive_url: "https://web.archive.org/web/20250617074543/https://speedcubeshop.c
 excerpt: |-
   "ES3 3x3 (Magnetic) is the debut release for the new brand, ES Cube! This speed cube focuses
   on easy-to-use adjustments and a simple yet effective design."
+
+  "VERSION COMPARISON" TABLE PRESERVED 2026-09-09. Three variant records rest on the weights in
+  this table and the excerpt did not carry a single one of them, so the claim did not survive
+  without the page. Re-fetched from the archive_url already on this record and transcribed
+  verbatim, columns in the page's own order:
+
+    Version comparison  |  Standard  |  8-Core Magnets  |  20-Core Magnets
+    Internal plastic color  |  Primary  |  Primary  |  Blue
+    Magnets                 |  48       |  64       |  76
+    Core magnets            |  -        |  Yes      |  Yes
+    Exterior finish         |  Frosted  |  Frosted  |  UV
+    Weight                  |  77.6     |  79.1     |  79.8
+
+  The page also carries a separate "Product Details" block reading "Weight 77.6 g" for the
+  default selection, which is the Standard column. Note what this table settles beyond the
+  weights: the three columns are the RETAILER'S OWN version names, matching the three variant
+  records slug for slug, so that split is declared rather than inferred.
 accessed: "2026-09-02"
 language: en
 region: US

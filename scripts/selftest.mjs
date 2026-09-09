@@ -92,7 +92,7 @@ console.log('\n  fail fixture — records engineered to trip named rules');
 
   const l = run('lint-semantic.mjs', { dataRoot: FAIL });
   const lintFired = rulesIn(l.out);
-  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43, 45, 46];
+  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43, 45, 46, 47, 48];
   const lintMissing = lintExpected.filter((r) => !lintFired.has(r));
   lintMissing.length === 0
     ? ok('semantic warnings fire', `${lintExpected.join(', ')}`)
@@ -133,6 +133,15 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   // CITATION branches, and the rule is only correct if it tells them apart — reporting them
   // alike raised 5 false positives out of 8 on real data. Assert each message specifically,
   // and assert that the chronological pair is NOT accused of double-counting.
+  // Rule 48's allowance is the half that can silently rot. The fail branch is obvious; what
+  // must be proved is that a value DERIVED from a source stating only ounces is not accused of
+  // being unevidenced, or the rule degenerates into a ban on unit conversion.
+  /zz-ok-derived-conversion[^\n]*\[48\]|\[48\][^\n]*zz-ok-derived-conversion/.test(l.out)
+    ? bad('rule 48 derived-value allowance holds', 'fired on a documented conversion whose basis is preserved')
+    : ok('rule 48 derived-value allowance holds', 'a gram value converted from ounces is not called unevidenced');
+  /zz-bad-model[^\n]*\[48\]|\[48\][^\n]*zz-bad-model/.test(l.out)
+    ? ok('rule 48 missing-evidence branch fires', 'a spec absent from every cited source is caught')
+    : bad('rule 48 missing-evidence branch fires', 'no [48] message in lint output');
   // Rule 47 has two branches and they fail differently: a midnight timestamp resolves to
   // SOMETHING (just not stably), a calendar wildcard resolves to nothing at all. Assert both,
   // because a rule that only caught the wildcard would have missed all ten real records.

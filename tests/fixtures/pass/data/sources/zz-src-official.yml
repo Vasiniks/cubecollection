@@ -11,6 +11,11 @@ publisher: ZZ Testbrand
 url: https://example.invalid/zz/tf-v1
 preservation_method: archive_url
 archive_url: https://web.archive.invalid/zz/tf-v1
+excerpt: |-
+  Fixture excerpt. Carries the figures the TF V1 record actually claims, which is the whole
+  point of rule 48: "Specifications — Size: 55.5 mm. Weight: 62 g." A pass fixture has to model
+  the discipline, not merely avoid tripping the checks. Before 2026-09-09 this record had no
+  excerpt at all, so the values it supports could not be verified without re-fetching.
 accessed: "2026-08-30"
 link_status: live
 last_checked: "2026-08-30"

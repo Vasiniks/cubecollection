@@ -1,0 +1,14 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Pairs with zz-ok-derived-conversion: a page that states a weight in OUNCES only. A gram value
+# derived from it is absent from this excerpt by construction, and rule 48 must not mistake that
+# for missing evidence — the basis IS preserved here, which is the whole distinction.
+id: zz-src-ounces
+entity: source
+kind: retailer
+title: ZZ Test Retail listing, weight given in ounces
+publisher: ZZ Ounce Co
+url: "https://zz-example.invalid/products/zz-ounce-listing"
+preservation_method: excerpt
+excerpt: 'Spec line as captured: "Size: 55mm | Weight: 2.2oz". No gram figure appears anywhere.'
+reliability_note: Exercises rule 48's derived-value allowance. The basis figure is preserved.
+status: drafted

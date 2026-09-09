@@ -1,0 +1,26 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Must NOT trip rule 48. weight_g is DERIVED from a source that states only "2.2oz", so the gram
+# figure cannot appear in the excerpt however diligent the researcher was. The allowance requires
+# both halves: a note that documents the derivation, and a basis figure ("2.2") actually present
+# in the cited source. Without this fixture the rule would be indistinguishable from one that
+# simply forbids unit conversion.
+#
+# The value is 62, not 62.4. That is the second half of the lesson: 2.2oz carries two significant
+# digits, so it supports 60.9-63.8g. mfjs-meilong-3c recorded 62.4g until 2026-09-09, and this
+# sweep is what exposed it — a converted value is absent from its source by construction, which
+# is exactly the condition that made the over-conversion visible.
+id: zz-ok-derived-conversion
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ OK Derived Conversion
+scope_class: core
+specs:
+  weight_g: 62
+status: stub
+attestations:
+  "/specs/weight_g":
+    confidence: probable
+    sources: [zz-src-ounces]
+    note: "Fixture value. The source states 'Weight: 2.2oz' and nothing in grams; converted at
+      1 oz = 28.3495 g and rounded to the two significant digits the source actually carries."
