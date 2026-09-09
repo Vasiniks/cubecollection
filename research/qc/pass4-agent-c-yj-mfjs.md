@@ -93,3 +93,23 @@ Sources added: thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-pr
 Lead noted (not acted on): this source's own "Similar Products" panel lists "YJ MGC Sigma 3x3"
 ($29.99) as a separate product — see model-boundary escalation below.
 Candidates rejected: none additional.
+
+## mfjs-meilong-3x3-v2 — DONE
+Axes identified: coating (Frosted vs UV Coated) and packaging (accessories included vs not),
+independently confirmed as three standalone SpeedCubeShop SKUs via
+`npm run wayback -- prefix .../moyu-meilong-3x3-v2` (not just a purchase-option toggle).
+Variants created:
+- mfjs-meilong-3x3-v2--standard (config.weight_g: 65, config.coating: frosted)
+- mfjs-meilong-3x3-v2--lite (same weight/finish as standard; differs ONLY by omitted
+  accessories — DATA_MODEL 4.1 axis 11, packaging as sole distinguishing feature)
+- mfjs-meilong-3x3-v2--uv-coated (config.weight_g: 66, config.coating: uv)
+Data quality note: each SKU's own "Product Details" auto-block gives 66g regardless of tier
+(appears identically on both the Lite and UV Coated pages), while the page's own
+tier-differentiated "Version comparison" table gives 65/65/66 — read as a retailer-template
+artifact and NOT preferred; the comparison table values are used instead, at `probable` rather
+than `confirmed`, with the conflict documented in each variant's own note (not escalated to a
+full `disputed` block since it is one source's internal inconsistency, not two independent
+sources disagreeing).
+Sources added: speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product,
+speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product
+Candidates rejected: none additional (no fourth SKU found).

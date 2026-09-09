@@ -1,0 +1,42 @@
+# variant: mfjs-meilong-3x3-v2--standard
+# Pass 4 (Agent C). The base "V2 (Standard)" sold configuration -- accessories included, frosted
+# finish, per the shared version-comparison table found on every V2 SKU's own page at
+# SpeedCubeShop. The exact SKU speedcubeshop-moyu-meilong-3x3-v2-magnetic-product describes
+# directly, and the one the model record's own specs are drawn from.
+id: mfjs-meilong-3x3-v2--standard
+entity: variant
+model_id: mfjs-meilong-3x3-v2
+name: "MFJS MeiLong 3x3 V2 (Magnetic)"
+aliases:
+  - { name: "MoYu MeiLong 3x3 V2 (Magnetic)", source: speedcubeshop-moyu-meilong-3x3-v2-magnetic-product }
+scope_class: core
+edition:
+  types: [standard]
+config:
+  weight_g: 65
+  coating: frosted
+packaging:
+  notable: "Accessories included, per the shared version-comparison table ('Accessories: Yes'); specific contents not itemised for this SKU in the source fetched."
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+    note: "Version-comparison table's own 'V2 (Standard)' row (65g), not this SKU's own Product
+      Details block (66g, per that source's own reliability_note) -- the comparison table
+      differentiates by tier and is read as the more reliable figure for this specific
+      question."
+  /config/coating:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
+    note: "Comparison table: 'V2 (Standard)' exterior finish 'Frosted', distinct from the UV
+      Coated SKU."
+  /packaging/notable:
+    confidence: uncertain
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]

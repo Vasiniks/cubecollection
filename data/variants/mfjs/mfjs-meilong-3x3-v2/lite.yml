@@ -1,0 +1,46 @@
+# variant: mfjs-meilong-3x3-v2--lite
+# Pass 4 (Agent C). The "V2 (Lite)" sold configuration, a standalone SpeedCubeShop SKU
+# distinguished from Standard solely by omitted accessories ("Accessories: None" vs "Yes" in
+# the shared comparison table) -- packaging as the sole distinguishing feature of a separately
+# marketed edition, DATA_MODEL 4.1 axis 11.
+id: mfjs-meilong-3x3-v2--lite
+entity: variant
+model_id: mfjs-meilong-3x3-v2
+name: "MFJS MeiLong 3x3 V2 (Magnetic) - Lite"
+scope_class: core
+edition:
+  types: [standard]
+  name: "Lite"
+config:
+  weight_g: 65
+  coating: frosted
+packaging:
+  notable: "No accessories included, unlike the Standard and UV Coated SKUs of the same design ('Accessories: None' in the shared comparison table)."
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product]
+    note: "An ongoing sold configuration, not limited/commemorative/collaboration."
+  /edition/name:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product]
+    note: "Comparison table's own 'V2 (Lite)' row (65g); this SKU's own Product Details block
+      gives a conflicting 66g, which also appears verbatim on the separate UV Coated SKU's own
+      Product Details block -- read as a generic/non-differentiated retailer-template field
+      rather than a genuine per-SKU measurement, and not preferred over the tier-differentiated
+      comparison table."
+  /config/coating:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product]
+  /packaging/notable:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product]
+    note: "The load-bearing distinguishing feature between this SKU and Standard: identical
+      weight and finish, differing only by accessory contents."
