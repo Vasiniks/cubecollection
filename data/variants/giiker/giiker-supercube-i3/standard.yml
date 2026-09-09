@@ -1,0 +1,34 @@
+# variant: giiker-supercube-i3--standard
+# Pass 4 batch 2, Agent E. Assessment performed: no product page for the bare "i3" survives at
+# giiker.com, TheCubicle, or SpeedCubeShop in any capture found by the pass-3 model record's own
+# discovery sweep; the only evidence for this generation is GiiKER's own history page (naming
+# the release) and TheCubicle's i3S copy referring back to it. No colourway, tier, or
+# configuration differentiation could be checked because no product page exists to check against
+# — a genuine evidentiary ceiling, not an unperformed search. One baseline is recorded, carrying
+# only what the model record itself already establishes (existence and smart capability).
+id: giiker-supercube-i3--standard
+entity: variant
+model_id: giiker-supercube-i3
+name: "GiiKER SUPERCUBE i3"
+scope_class: core
+edition:
+  types: [standard]
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [giiker-about-us-2022]
+    note: "Differentiation search performed: no product page for the bare 'i3' generation
+      survives at giiker.com, TheCubicle, or SpeedCubeShop in any capture found this pass or at
+      pass 3 (see the model record's own discovery sweep of 55+18+2 URLs). Existence rests on
+      GiiKER's own history page alone, which does not describe a second configuration; no
+      colourway or tier differentiation could be checked for lack of a surviving product page.
+      Recorded as the model's one assessed configuration at reduced confidence, reflecting the
+      thinness of the underlying model-identity evidence itself (see
+      giiker-supercube-i3.yml)."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [giiker-about-us-2022]
+    note: "GiiKER's own history page: 'SUPERCUBE(R) i3 released - The world's 1st smart cube.'"

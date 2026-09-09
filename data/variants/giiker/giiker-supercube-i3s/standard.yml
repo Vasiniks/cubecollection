@@ -1,0 +1,49 @@
+# variant: giiker-supercube-i3s--standard
+# Pass 4 batch 2, Agent E. Assessment performed: checked GiiKER's own product page (both the
+# 2022 and 2026 captures) and TheCubicle's own listing for a second colourway, tier, or bundle
+# option — none was found; both captures describe one persisting configuration from launch
+# through its 2026 "Sold out" state. One baseline is recorded.
+id: giiker-supercube-i3s--standard
+entity: variant
+model_id: giiker-supercube-i3s
+name: "GiiKER SUPERCUBE i3S"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+  scheme: bright
+smart:
+  is_smart: true
+  connectivity: "Bluetooth v. 4.0"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [giiker-com-supercube-i3s-product-2022, giiker-com-supercube-i3s-2026-soldout, thecubicle-giiker-super-cube-i3s-2019]
+    note: "Differentiation search performed: GiiKER's own product page (2022 and 2026 captures)
+      and TheCubicle's listing describe one configuration each, with no colour/tier selector
+      found in either. No second i3S SKU was located at TheCubicle, SpeedCubeShop, or
+      giiker.com in captures reviewed this pass. Recorded as the model's one assessed, sold
+      configuration."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+    note: "TheCubicle: 'This version comes with updated software, Bluetooth v. 4.0, and bright
+      vibrant stickers' — the stated difference from the prior i3 generation and the basis for
+      the model-level split; recorded here as this variant's own stock colourway description,
+      not split into a further sub-variant since no separate colour name is given."
+  /colorway/scheme:
+    confidence: probable
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+    note: "'Bright vibrant stickers' read as the `bright` scheme value."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [giiker-com-supercube-i3s-product-2022]
+    note: "GiiKER's own product page: 'App connected smart cube with real-time tracking
+      technology.'"
+  /smart/connectivity:
+    confidence: probable
+    sources: [thecubicle-giiker-super-cube-i3s-2019]
+    note: "TheCubicle states 'Bluetooth v. 4.0' directly; GiiKER's own page does not itself
+      state a Bluetooth version."
