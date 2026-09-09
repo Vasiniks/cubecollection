@@ -152,3 +152,32 @@ Sources added: none (reused thecubicle-mofang-jiaoshi-mf3s-product, already on f
 Candidates rejected: "MF3RS2 3x3 Starter Kit" (SpeedCubeShop) — a bundle/kit, not a cube
 configuration; not created. MF3 base itself gets no separate "standard" stub (single sold
 configuration, MF3S already differentiates as its own record).
+
+## mfjs-mini-3x3-45mm, mfjs-mini-3x3-50mm, mfjs-mini-3x3-keychain-40mm — DONE
+Per coordinator correction: enumerated a `standard` variant under each of these three models
+even though each has only one sold configuration, specifically so the archive records the
+size/colourway facts at variant level rather than leaving these three reference_only models
+with zero variants. Each is a single stock-colourway sold configuration (45mm and keychain-40mm
+sell only "Stickerless (Bright)"; 50mm sells Black/White/Stickerless(Bright), collapsed into
+one variant per the stock-colourway rule).
+
+**Expected rule-18 (advisory) exposure, not a defect:** creating these three variants raises
+`npm run check` from the previously-reported baseline of 5 warnings to 8:
+- [18] mfjs-mini-3x3-45mm/standard.yml: size_mm 45mm outside the 50-60mm plausibility range
+- [18] mfjs-mini-3x3-keychain-40mm/standard.yml: size_mm 40mm outside the 50-60mm range
+- [18] mfjs-mini-3x3-keychain-40mm/standard.yml: weight_g 41.3g outside the 50-130g range
+All three values are inherited from the frozen, correctly-sourced parent model specs (these are
+mini cubes by design) and are NOT overridden or altered on the variant. Per the coordinator's
+explicit correction, this is a known rule-18 exposure (rule 18 only evaluates variants,
+resolving size/weight from the parent model, so it stays invisible until a variant exists) and
+is not to be worked around by omitting the variant or by editing the frozen model.
+
+Lead noted, not chased: both the 45mm and 50mm pages' "Related Products" sidebar widgets show a
+"[CPS Serviced]" purchase option (Black/White/Stickerless (Bright)) — this is a DIFFERENT
+product listing surfaced by the sidebar widget, not a purchase option on either of these two
+SKUs' own pages, and was not independently fetched/confirmed this pass. If real, it would be an
+aftermarket-serviced variant of the base model (service: serviced_by a "CPS" manufacturer
+record, kind: service) — no such manufacturer record currently exists in the archive. Flagged
+for a future pass rather than acted on without direct confirmation.
+Sources added: none (reused existing model-level sources for all three).
+Candidates rejected: "[CPS Serviced]" sidebar listing (insufficient direct evidence this pass).

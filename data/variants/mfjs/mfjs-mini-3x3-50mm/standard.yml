@@ -1,0 +1,25 @@
+# variant: mfjs-mini-3x3-50mm--standard
+# Pass 4 (Agent C). The base sold configuration of the MoFang JiaoShi Mini 3x3 (50mm), sold in
+# three stock colour options (Black, White, Stickerless (Bright)) per TheCubicle's own purchase
+# selector -- collapsed into one variant per the stock-colourway rule. A "[CPS Serviced]"
+# option seen in this same page's "Related Products" sidebar widget is a DIFFERENT product
+# listing, not a purchase option of this SKU, and is not treated as a variant of this model
+# this pass (lead only).
+id: mfjs-mini-3x3-50mm--standard
+entity: variant
+model_id: mfjs-mini-3x3-50mm
+name: "MoFang JiaoShi Mini 3x3 (50mm)"
+scope_class: reference_only
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mini-3x3-50mm-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mini-3x3-50mm-product]
+    note: "Three stock colour purchase options (Black/White/Stickerless (Bright)) at one price,
+      no separately named/marketed edition -- collapsed into one variant per this archive's
+      stock-colourway rule."
