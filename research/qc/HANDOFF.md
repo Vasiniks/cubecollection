@@ -73,13 +73,19 @@ P4-9 ADJUDICATION — COMPLETE
                     Escalated separately as P4-10.
   48% of candidates were correctly NOT gaps. The tool over-reports by design.
 
+DONE SINCE  P4-11 RESOLVED — raised on a misreading. RESEARCH_SPEC 2.4 states NO size
+            criterion; the archive already admits 40/42/47.4/70mm 3x3s as core. Minis are
+            ordinary enumeration candidates, not a policy question.
+            RULE 49 added — reference_only removes a record from the PUBLIC bundle, yet 8 of
+            13 such exclusions were unsigned. Rule 15 makes ADMISSION cost an argument;
+            exclusion cost nothing. Advisory. 10 warnings, 8 files, no false positives.
+
 NEXT ACTION
-  Highest-value unresolved consequence of the above, in order:
-  1. P4-11 scope policy (mini/keychain + oversized). Decidable from the archive's OWN
-     records with NO new research, and it unblocks ~15 of the 44 needs_research.
-  2. P4-10 Ziina: establish decorator-vs-manufacturer from first-party evidence
-     BEFORE any entity record. Do not create records from a retailer vendor field.
-  3. The WRM V9/V10 naming crux — settles whether P4-9's gap is 20 or 19.
+  1. The WRM V9/V10 naming crux — settles whether P4-9's model gap is 20 or 19.
+     Archive has moyu-weilong-wr-m-2020 / -2021; retailers number the line WRM V9 / V10.
+     Needs a statement tying a WRM version number to a year.
+  2. P4-10 Ziina: establish decorator-vs-manufacturer from first-party evidence BEFORE
+     any entity record. Do NOT create records from a retailer vendor field.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or

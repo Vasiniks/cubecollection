@@ -95,6 +95,22 @@ meta:
     Mini, YJ Mini or Maru Mini. That inconsistency has to be decided once as a class. The
     oversized formats (DianSheng Big/Giant, YuXin Super Big, MoYu Big, YJ Big, HeShu Super Big)
     are the same shape of question against shengshou-legend-big at 70mm.
+  wrm_naming_crux_resolved: >-
+    THE CRUX IS SETTLED, AND IT WENT AGAINST THE LARGER-GAP READING. The open question was
+    whether the retailers' 'WeiLong WRM V9' is the archive's moyu-weilong-wr-m-2021 under
+    another naming scheme, which would have shrunk the gap. It is neither that nor a missing
+    model: it is the archive's moyu-weilong-V9 under its full retail name.
+    Three independent corroborations. No plain 'MoYu WeiLong V9' product exists at any of the
+    three retailers, so the archive's short name has no rival referent. The configurations match
+    exactly - the archive's V9 record describes Standard and MagLev versions, and the WRM V9
+    SKUs are 'WRM V9', '(MagLev)' and '(Ball-Core + MagLev + UV)'. The dates match - the archive
+    records V9 as released spring 2023, and WRM V9 was first listed 2023-04-10.
+    It also settles the naming scheme itself: MoYu used YEAR names through WR M 2021 (listed
+    2021-09-30) and switched to VERSION numbers from V9 in 2023. Two years apart, so WR M 2021
+    and WRM V9 cannot be the same product, and the archive's wr-m-2020 and wr-m-2021 are correct
+    as they stand. WRM V10 is therefore a genuine miss, reclassified from needs_research to
+    confirmed_missing on the same analysis. Net effect on the count: unchanged at 20, but one
+    entry moved out and another moved in, which is only visible because both were adjudicated.
 candidates:
   - key: "moyuweilongv11"
     titles: ["MoYu WeiLong V11 3x3", "MoYu WeiLong 3x3 V11", "MoYu WeiLong v11 3x3"]
@@ -113,7 +129,7 @@ candidates:
     first_listed: "2024-05-09"
     known_family: "moyu-weilong"
     classification: confirmed_missing
-    note: "9 SKUs, first listed 2024-05-09. The archive records moyu-weilong-wr-m-2020 and -2021 while the retailers number the same line WRM V9 and V10. Whether those are the same products under two naming schemes is UNRESOLVED and must be settled before any admission — see the sibling entry moyuweilongwrmv9."
+    note: "CONFIRMED 2026-09-09 by the same naming-scheme analysis that reclassified WRM V9. MoYu used year names through WR M 2021 and switched to version numbers from V9 (2023), so V10 - first listed 2024-05-09 across 9 SKUs at two retailers - is a distinct later product, not the archive's wr-m-2021 under another scheme. The archive holds V9; V10 and V11 are missing."
   - key: "moyuaolongv5"
     titles: ["MoYu AoLong V5 3x3"]
     skus: 8
@@ -130,8 +146,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2023-04-10"
     known_family: "moyu-weilong"
-    classification: needs_research
-    note: "8 SKUs from 2023-04-10. This is the crux of the WRM naming question: if WRM V9 is what the archive already holds as moyu-weilong-wr-m-2021, this is alternate_naming and NOT a gap; if it is a later product, both V9 and V10 are missing. Resolving it needs a manufacturer or dated retailer statement tying a WRM version number to a year, which this pass did not find. Do not guess: the answer changes the size of P4-9."
+    classification: alternate_naming
+    note: "RESOLVED 2026-09-09 - this is the archive's moyu-weilong-v9 under its full retail name, and the resolution goes AGAINST the larger-gap reading. Three independent corroborations. (1) NO plain 'MoYu WeiLong V9' product exists at any of the three retailers; the only V9 sold is 'WeiLong WRM V9', so the archive's short name and the retailer's full name have no rival referents. (2) Configurations match exactly: the archive's V9 record describes a Standard and a MagLev version, and the WRM V9 SKUs are 'WRM V9', 'WRM V9 (MagLev)' and 'WRM V9 (Ball-Core + MagLev + UV)'. (3) Dates match: the archive records V9 as released spring 2023 from the Speedsolving wiki, and WRM V9 was first listed 2023-04-10. This also settles the naming-scheme question the candidate raised: MoYu used YEAR names through WR M 2021 (listed 2021-09-30) and switched to VERSION numbers from V9 in 2023, so WR M 2021 and WRM V9 are two years apart and cannot be the same product. The archive's wr-m-2020 and wr-m-2021 are correct as they stand."
   - key: "xmantornadov5"
     titles: ["X-Man Tornado V5 3x3"]
     skus: 3
