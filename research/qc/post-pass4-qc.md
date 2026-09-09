@@ -133,6 +133,48 @@ It also closed E1's three "held for human decision" pages — and found that two
 status recorded in the ledger but **never in their own source files**. Another instance of
 P26-2's roll-up gap, found by reading the records instead of the ledger.
 
+## 8. The largest finding: the frozen inventory is missing current flagships — *escalated, not acted on*
+
+Attacking P4-8's single-retailer dependence led somewhere I did not expect. Checking whether a
+non-US retailer carried X-Man products surfaced a **QiYi X-Man Tornado V5** — live, in stock, three
+SKUs, its own version-comparison table — against an archive whose newest Tornado is V4.
+
+A complete enumeration of TheCubicle's live 3x3 collection (578 products, via the storefront's own
+`products.json`) then found **nine manufacturer-branded lines with no model in the frozen 269**,
+including **MoYu WeiLong V11 — MoYu's current flagship, 14 SKUs** — against an archive whose newest
+WeiLong is V9.
+
+**It is not a recency horizon.** The listing dates place WRM V10 on sale from 2024-05-09 and
+WeiLong V11 from 2025-06-06 — both more than a year before Pass 3's MoYu lane ran on 2026-09-03
+and recorded a *"full WeiLong succession"* ending at V9. The products were on sale, at a retailer
+this archive cites 115 times, while the enumeration was running.
+
+**It is not caused by P4-8 either**, and saying so matters more than the tidier story. TheCubicle
+stocks every missing line, so retailer *breadth* would not have helped. The indicated mechanism is
+source-class **recency**: `moyu-weilong-v9`'s succession evidence is `speedsolving-wiki-moyu`,
+whose stored excerpt mentions no year later than 2019. A wiki-led enumeration that never checked
+the current catalogue produces exactly this gap.
+
+**The control matters as much as the finding.** The same enumeration confirms MoYu RS3 M V5, QiYi
+M Pro V2, YuXin Kylin V2, YuXin HuangLong V2 and YuXin Little Magic V3 are all present. The gap is
+specific, not a wholesale coverage failure — and two entries on my first candidate list were
+name-matcher false positives, removed after checking the files directly.
+
+Attribution is read from the retailer's own structured `vendor` field, not parsed from titles.
+That is what keeps *"Griesser's WeiLong V11"* and *"Tommy Cherry's WeiLong WRM V10"* out of the
+count — they are TheCubicle's own custom setups, belonging to the `thecubicle` service
+manufacturer.
+
+**No model or family was created.** The taxonomy is frozen and this overturns it, so the evidence
+is preserved (`thecubicle-3x3-collection-enumeration-2026-09`) and escalated as **P4-9
+(critical, needs human decision)**. The ledger records why nine hand-added records would be the
+wrong response — WeiLong V11's 14 SKUs are plainly variants of one model — and names the question
+this raises about the other 268: the same wiki-led method was used across Pass 3, and this
+enumeration covers *one* retailer's collection.
+
+Pass 4's "269 of 269 models assessed" remains true exactly as stated. The inventory it assessed is
+what is incomplete.
+
 ## Rules added, each from a real defect
 
 | Rule | Catches | On real data |

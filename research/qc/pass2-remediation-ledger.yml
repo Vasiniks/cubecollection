@@ -1458,3 +1458,61 @@ issues:
       The audit prints the list every run, so the number moves visibly in either direction.
     owner: main
     last_updated: "2026-09-09"
+
+  - id: P4-9
+    severity: critical
+    status: needs_human_decision
+    title: "The frozen 269-model inventory is missing current-generation flagships, including MoYu's and X-Man's"
+    evidence: >-
+      A complete enumeration of TheCubicle's live 3x3 collection on 2026-09-09 (578 products,
+      preserved as thecubicle-3x3-collection-enumeration-2026-09) found NINE manufacturer-branded
+      product lines with no corresponding model in the frozen 269. Attribution is read from the
+      retailer's OWN structured `vendor` field, not parsed from titles, and TheCubicle's service
+      and collaboration listings (Cubicle Pro Shop, Griesser's, Tommy Cherry's, PiCube SE,
+      SAOCube SE) are excluded, since those belong to the `thecubicle` service manufacturer.
+      MoYu WeiLong V11 (14 SKUs, first listed 2025-06-06) - MoYu's CURRENT FLAGSHIP; the archive's
+      newest WeiLong is V9. MoYu WeiLong WRM V10 (6 SKUs, 2024-05-09). MoYu WeiLong V10 AI
+      (2024-08-15). MoYu Super WeiLong V2 (3 SKUs, 2025-02-11). MoYu AoLong V5 (4 SKUs,
+      2026-06-18). X-Man Tornado V5 (4 SKUs) - X-Man's CURRENT FLAGSHIP, independently confirmed
+      in stock at Cubelelo with three distinct SKUs and its own version-comparison table; the
+      archive's newest Tornado is V4. MFJS MeiLong 3M V2 (3 SKUs). MoYu FerYooCore and FerYooCore
+      V2 (3 SKUs). SAOCube V56 (2 SKUs) - under a manufacturer the archive already records.
+      THIS IS NOT A RECENCY HORIZON. The `published_at` listing dates place WRM V10 on sale from
+      2024-05-09 and WeiLong V11 from 2025-06-06 - both more than a year before Pass 3's MoYu
+      lane ran on 2026-09-03 and recorded a "full WeiLong succession" ending at V9. The products
+      were on sale, at a retailer this archive cites 115 times, while the enumeration was
+      running.
+      MECHANISM, indicated but not proven: moyu-weilong-v9's succession evidence is
+      speedsolving-wiki-moyu, whose stored excerpt mentions no year later than 2019 and whose
+      capture is 2025-08. A wiki-led enumeration that never checked the retailer's current
+      catalogue would produce exactly this gap. That is consistent with P4-8's finding about
+      source-class dependence, though NOT its cause here - TheCubicle stocks every missing line,
+      so breadth of retailer would not have helped. RECENCY of the source class would have.
+      CONTROL, so the finding is not overstated. The same enumeration confirms MoYu RS3 M V5,
+      QiYi M Pro V2, YuXin Kylin V2, YuXin HuangLong V2 and YuXin Little Magic V3 are all present
+      in the frozen inventory. The gap is specific, not a wholesale coverage failure. Two entries
+      on the first candidate list (Little Magic V3, HuangLong V2) were name-matcher false
+      positives and were removed after checking the files directly.
+    recommendation: >-
+      This overturns a frozen inventory and is NOT this phase's call to make. No model or family
+      was created; the evidence is preserved instead, which is what the freeze requires.
+      When authorised, the correct response is an enumeration pass, not nine hand-added records:
+      each line needs the model-vs-variant boundary applied (WeiLong V11's 14 SKUs are plainly
+      variants of one model, not 14 models), a release date from an explicit dated statement
+      rather than the `published_at` field used here, and the WRM naming reconciled - the archive
+      records wr-m-2020 and wr-m-2021 while the retailer numbers the same line WRM V9 and V10,
+      and whether those are the same products under two schemes is unresolved.
+      Before that pass, answer the question this raises about the other 268: the same wiki-led
+      method was used across Pass 3. This enumeration covers ONE retailer's 3x3 collection. The
+      equivalent sweep has not been run for any other current catalogue.
+    confidence: confirmed
+    downstream_impact: >-
+      Nothing in the archive is WRONG because of this; the 269 records that exist are unaffected
+      and the control above shows coverage is broadly sound. What is wrong is a completeness
+      claim: Pass 3 is recorded as having enumerated the full WeiLong succession and the full
+      X-Man Tornado line, and it did not. Pass 4's "269 of 269 models assessed" remains true as
+      stated - every model in the inventory was assessed - but the inventory itself is not
+      complete for the current generation, and the exhibition would be missing the flagship
+      3x3 of the archive's single most heavily-represented manufacturer.
+    owner: main
+    last_updated: "2026-09-09"
