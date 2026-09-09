@@ -1,0 +1,23 @@
+# variant: moyu-weilong-v9--maglev
+# Pass 4. Wiki: "Maglev features maglev springs and purple corner/edge stalks."
+id: moyu-weilong-v9--maglev
+entity: variant
+model_id: moyu-weilong-v9
+name: "MoYu WeiLong V9 Maglev"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Maglev"
+config:
+  maglev: maglev
+  materials:
+    plastic: "Purple corner/edge stalks, per the wiki, distinguishing this configuration from Standard."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'Maglev features maglev springs and purple corner/edge stalks.'"
