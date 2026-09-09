@@ -1170,8 +1170,16 @@ issues:
       surfaced a 41.3g weight warning against a 50-130g range, so the exposure is not limited to
       size. Options for later: widen the range, exempt a variant whose size is inherited
       rather than overridden, or check the model directly so the signal appears where the value
-      actually lives. Until then, expect up to 8 such warnings as Pass 4 proceeds and record
-      which lane introduced each.
+      actually lives.
+
+      PARTIALLY IMPLEMENTED 2026-09-09: the third option is done. Rule 18 now reports an inherited
+      out-of-range value ONCE on the model that asserts it, and warns on a variant only when the
+      variant overrides the spec itself. maru-3x3-original had been firing eight times for one
+      fact, once per Special Patterns sticker variant, none of which asserts a size at all. Total
+      rule-18 warnings fell from 18 to 11 and every one now points at the file a fix would edit.
+      The RANGE is deliberately unchanged: it still flags maru-nano at 15mm and
+      shengshou-legend-big at 70mm, which are true statements about unusual products, and
+      widening it to silence them would blind the rule to the case it exists for.
     confidence: confirmed
     downstream_impact: >-
       Cosmetic. The practical risk is a researcher suppressing a legitimate variant to keep a
