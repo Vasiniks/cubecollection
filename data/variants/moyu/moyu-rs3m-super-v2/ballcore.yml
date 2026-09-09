@@ -1,0 +1,36 @@
+# variant: moyu-rs3m-super-v2--ballcore
+# Pass 4. Wiki: "an updated external piece design featuring UV coating and repelling edge
+# magnets (Ballcore only)" — the Ballcore configuration specifically gets repelling edge
+# magnets in addition to the line-wide UV coating.
+id: moyu-rs3m-super-v2--ballcore
+entity: variant
+model_id: moyu-rs3m-super-v2
+name: "MoYu Super RS3M V2 Ballcore"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Ballcore"
+config:
+  coating: uv
+  maglev: maglev
+  core_system: ball_core
+  magnet_configuration: core_corner
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+  /config/coating:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/core_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'repelling edge magnets (Ballcore only)', naming this configuration specifically."
+  /config/maglev:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Not restated for Ballcore specifically in the body text; inferred from the section-heading name and this line's established Standard/Maglev/Ballcore pattern (the immediately preceding Super RS3M's own Ball Core configuration is directly stated to have MagLev)."
