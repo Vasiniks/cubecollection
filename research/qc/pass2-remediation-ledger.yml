@@ -871,11 +871,6 @@ issues:
       surface a product listed in 2025.
       That gap is now covered by a separate command, `npm run catalogue-gap`, which is why it
       could not simply be folded into 3.6a compliance.
-    counterevidence: >-
-      Three independent probes came back genuinely empty and bound the gap: the brand cross-
-      check against the 54-entity register found no unrepresented manufacturer; six of seven
-      zero-family findings were reinforced under the broader check; and the canonical-prose
-      detector found the FangShi flag was the only unresolved missing-family flag archive-wide.
       A THIRD DISCOVERY-BREADTH FAILURE MODE FOUND 2026-09-09, and it is the same shape as the
       two this issue already records. 3.6a names retailer-channel narrowness and /collections/
       versus /products/ narrowness. Add SLUG-FORM narrowness.
@@ -894,6 +889,11 @@ issues:
       slug form. It also carried a trap - its slug reads "i-carry-2" while its title, its
       description and its 79.0g item weight (against the i Carry 2's 88.0g) all say i Carry.
       Three signals against one, and the slug is the one that lies.
+    counterevidence: >-
+      Three independent probes came back genuinely empty and bound the gap: the brand cross-
+      check against the 54-entity register found no unrepresented manufacturer; six of seven
+      zero-family findings were reinforced under the broader check; and the canonical-prose
+      detector found the FangShi flag was the only unresolved missing-family flag archive-wide.
     recommendation: >-
       The current methodology is not materially flawed - the frozen taxonomy predates its own
       discovery standard. Remedy is to apply the existing rule to the existing taxonomy, not to
