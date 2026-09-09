@@ -343,11 +343,11 @@ escalations:
     finding: "SpeedCubeShop names the escube-air-v1 product 'ES3 Air' (an ES3 edition);
       TheCubicle names it 'ESCube Air' (its own line). Evidence in tension with the frozen
       two-family split. Not acted on; recorded for human review."
-  - [UNFILED] subject: "MF8 Crazy 3x3 generation boundary"
+  - [P4-12] subject: "MF8 Crazy 3x3 generation boundary"
     finding: "Split into two models (mf8-crazy-3x3-planets, mf8-crazy-3x3-plus-planet-series)
       under genuine, irreducible uncertainty about whether a mould/mechanism change occurred.
       Flagged as the central call of this batch for human review; see full reasoning above."
-  - [UNFILED] subject: "huameng-tg-v2 evidence thinness"
+  - [P4-14] subject: "huameng-tg-v2 evidence thinness"
     finding: "Admitted solely on a manufacturer-named 'V2' product slug with a placeholder
       description. Worth revisiting once TheCubicle fills in the real product description."
 ```

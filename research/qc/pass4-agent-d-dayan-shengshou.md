@@ -451,7 +451,7 @@ candidates_rejected:
       required and non-optional; left unrecorded rather than guessed, per explicit coordinator
       instruction."
 escalations:
-  - [UNFILED] rule: 15
+  - [P26-13] rule: 15
     finding: "validate.mjs checks scope_class/scope_justification/legality directly on the
       variant record with no model-to-variant inheritance resolution (unlike /config/* via
       INHERITED_CRITICAL), forcing every conditional Bermuda variant to restate its model's
@@ -461,7 +461,7 @@ escalations:
       (60.5mm) and shengshou-legend-big (70mm) specifically to surface genuinely correct,
       out-of-range sizes as visible rule-18 warnings rather than leaving them invisible at zero
       variants. Raises the archive-wide npm run check warning count from 5 to 7 by design."
-  - [UNFILED] schema_gap: "ShengShou Crazy 'Jelly LE' cannot be recorded because model_id is required and
+  - [P4-13] schema_gap: "ShengShou Crazy 'Jelly LE' cannot be recorded because model_id is required and
       its parent generation is genuinely undetermined by any source; no 'candidate parent' or
       'model_id: unknown' affordance exists in the current schema."
 ```

@@ -33,6 +33,11 @@
 //   the nine reports that already had free-prose blocks WITHOUT rewriting a word of their text.
 //   A convention that forces existing findings to be re-typed is a convention that gets skipped.
 //
+//   NOTFINDING is for the other honest case: a lane recording something true about its own RUN
+//   rather than about the archive — "WebSearch reported its budget exhausted", "wayback prefix
+//   failed on every attempt". Those belong in a report and belong in no ledger, and without a
+//   marker for them the only options were to file noise or to leave them looking unfiled.
+//
 //   UNFILED is a legitimate and useful state — "this finding is real and has no ledger entry
 //   yet". It is loud rather than fatal, because the point is that a finding cannot go QUIET, not
 //   that an agent must stop to file paperwork mid-lane. A dangling id IS an error: it means the
@@ -66,7 +71,7 @@ if (existsSync(LEDGER)) {
 report.note(`${ledgerIds.size} ledger issue(s) on file.`);
 
 const reports = DIRS.flatMap((d) => walk(d));
-let declared = 0, linked = 0, unfiled = 0, loose = 0, silent = 0;
+let declared = 0, linked = 0, unfiled = 0, loose = 0, silent = 0, notfinding = 0;
 const dangling = [];
 
 for (const file of reports) {
@@ -79,6 +84,7 @@ for (const file of reports) {
   for (const raw of block[1].split('\n')) {
     if (!raw.trim().startsWith('-')) continue;
     declared += 1;
+    if (/\bNOTFINDING\b/.test(raw)) { notfinding += 1; continue; }
     if (/\bUNFILED\b/.test(raw)) { unfiled += 1; continue; }
     const m = ID.exec(raw);
     if (!m) { loose += 1; continue; }
@@ -90,6 +96,7 @@ for (const file of reports) {
 report.note(`${reports.length} report(s) scanned, ${declared} declared escalation entr(ies).`);
 report.note(`  linked to a ledger issue : ${linked}`);
 report.note(`  marked UNFILED           : ${unfiled}   <- loud on purpose, not an error`);
+report.note(`  marked NOTFINDING        : ${notfinding}   <- a run condition, not an archive defect`);
 report.note(`  free prose, no id at all : ${loose}   <- cannot be matched to anything`);
 report.note(`  reports with escalation language and no block : ${silent}`);
 

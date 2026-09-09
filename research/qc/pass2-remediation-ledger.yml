@@ -812,6 +812,22 @@ issues:
       Format chosen for retrofittability: "- [P4-9] text" rather than a nested id/summary
       mapping, so all nine existing free-prose blocks were tagged WITHOUT rewriting a word. A
       convention that forces existing findings to be re-typed is one that gets skipped.
+      RETROFIT COMPLETED 2026-09-09. All 25 declared escalations are now traceable: 23 linked to
+      a ledger issue, 2 marked NOTFINDING, 0 unfiled, 0 unmatched. Closing the 18 required
+      filing four new grouped issues rather than eighteen singletons - P4-12 (six model/variant
+      boundary questions deferred by the freeze), P4-13 (two records the schema cannot express),
+      P4-14 (three self-reported evidence weaknesses), P4-15 (two YuXin naming questions) - plus
+      linking three to issues that already existed (P3-T3, P3-T4, P26-3).
+      ONE OF THE EIGHTEEN WAS ALREADY FIXED AND NOBODY KNEW. A Pass 4 lane reported that rule 15
+      checked scope_class/legality directly on the variant with no model-to-variant inheritance,
+      forcing conditional Bermuda variants to restate their model verbatim. That was fixed
+      during the P26-13 work for an unrelated reason, and validate.mjs now resolves both through
+      the parent. The report still said "unresolved" until today. That is this issue in one
+      example: the finding was declared, independently fixed, and the loop never closed.
+      NOTFINDING was added to the vocabulary for the two entries that record a RUN condition
+      rather than an archive defect ("WebSearch budget exhausted", "wayback prefix failed on
+      every attempt"). Without it the only options were to file noise into the ledger or to
+      leave honest run-notes looking like unfiled findings.
     recommendation: >-
       Make roll-up checkable. In preference order: require every escalation to also be written
       into a canonical record's notes (the practice that saved the ShengShou finding); add a
@@ -1772,6 +1788,120 @@ issues:
       No existing record is wrong either way. What is at stake is whether roughly 15 further
       products belong in the inventory, and whether the archive can state its own scope when
       asked.
+    owner: main
+    last_updated: "2026-09-09"
+
+  - id: P4-12
+    severity: medium
+    status: needs_human_decision
+    title: "Six model/variant boundary questions were raised by lanes and deferred by the freeze"
+    evidence: >-
+      Surfaced by the P26-2 retrofit on 2026-09-09, which tagged all 25 declared escalations and
+      found 18 that had never reached the ledger. Six of them are the same KIND of finding: a
+      lane hit a genuine model-or-variant boundary question, correctly refused to act because the
+      taxonomy is frozen, wrote it down, and nothing collected it.
+      (1) MF8 Crazy 3x3 generation boundary - whether mf8-crazy-3x3-planets and
+      mf8-crazy-3x3-plus-planet-series are one line or two; the model record itself calls this
+      "THE central open question of this batch" and holds /relationships/0 at `uncertain`.
+      (2) rubiks-classic-cube--impossible and possibly --phantom - the family record raises a
+      WCA-legality question that cannot be resolved at variant level.
+      (3) moretry-tianma-x3-plus--zcube-edition - model attachment held at `uncertain` because
+      the source's own URL and title do not confirm it is a "+"-line product.
+      (4) WitEden "plain 3x3x3 Mixup" on TheCubicle's own Versions selector - may indicate a
+      missed fifth Mixup product.
+      (5) huameng-tg-v1 core_system versus its "Ball-Core" retail naming - a possible model-spec
+      mismatch, not corrected because models are frozen.
+      (6) haitun-waverider-v2 Standard/Pioneer/Flagship - near-identical marketing copy across
+      three tiers, so the materiality of the split is unverified.
+      Every one is correctly reasoned and correctly NOT acted on. The defect is that six
+      independent lanes each did the right thing and the findings still went nowhere.
+    recommendation: >-
+      Adjudicate as a batch when the taxonomy next opens, not individually and not now. They
+      share one question - what evidence promotes a variant to a model, or splits a model - and
+      answering it six times separately is how inconsistency enters. Note that (2) and (6) may
+      resolve to "no change", which is a result and should be recorded as one.
+    confidence: confirmed
+    downstream_impact: >-
+      Nothing recorded is wrong; each record holds the uncertainty honestly at `uncertain`. What
+      is at stake is whether up to six boundaries are drawn in the right place.
+    owner: main
+    last_updated: "2026-09-09"
+
+  - id: P4-13
+    severity: low
+    status: open
+    title: "Two records cannot be expressed because the schema has no place for them"
+    evidence: >-
+      Two of the 18 unfiled escalations are not research gaps but SCHEMA gaps - a lane found a
+      real thing and the data model could not hold it.
+      (1) ShengShou Crazy "Jelly LE" cannot be recorded: `model_id` is required on a variant and
+      no model exists for it, so a real limited edition has nowhere to live short of creating a
+      model, which the freeze forbids.
+      (2) rubiks-classic-cube--retro cannot populate `edition.commemorates`: the field expects an
+      event record and `data/events/` holds none for Rubik's 50th anniversary, which was also
+      outside that pass's write lane.
+      Both are the same shape: the archive knows something it cannot say.
+    recommendation: >-
+      Do not widen the schema to admit one record each. Decide first whether `data/events/`
+      should exist as an entity at all - if it should, (2) resolves as ordinary data entry; if it
+      should not, `edition.commemorates` needs a different type or should be dropped. (1) is
+      really a P4-9-shaped question about whether the Jelly LE is a model.
+    confidence: confirmed
+    downstream_impact: >-
+      Two known real editions are absent from the archive, and nothing in it records that they
+      are absent for a structural rather than an evidentiary reason.
+    owner: main
+    last_updated: "2026-09-09"
+
+  - id: P4-14
+    severity: low
+    status: open
+    title: "Three claims rest on the archive's own interpretation or on an unfetched page, and say so"
+    evidence: >-
+      Three of the 18 unfiled escalations are self-reported evidence weaknesses - the honest kind,
+      where a lane recorded a value and immediately flagged what was wrong with it.
+      (1) huameng-tg-v2: evidence thinness flagged at Pass 3 and never revisited.
+      (2) Maru VX-3 Core M / Core M MagLev: the `magnet_configuration: dual_layer` mapping is
+      "this record's own interpretive reading" of a combined traditional-plus-corner/core magnet
+      system, not a manufacturer statement. An archive value derived from an archivist's reading
+      of prose is exactly what the tier system exists to keep visible.
+      (3) CubeTwist white-face colourway: named only via a sibling page's navigation link, its own
+      page never independently fetched, confidence correctly held at `uncertain`.
+      Each is already recorded at an honest confidence. Filing them is about making sure the flag
+      is findable by someone other than whoever reads that one report.
+    recommendation: >-
+      Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
+      effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
+      system, or the note should be promoted into the record's own prose so the interpretive step
+      is visible where the value is, not only in a lane report.
+    confidence: confirmed
+    downstream_impact: >-
+      No claim is overstated - all three carry `uncertain` or an explicit caveat. The risk is
+      that a later pass reads the value without the caveat.
+    owner: main
+    last_updated: "2026-09-09"
+
+  - id: P4-15
+    severity: low
+    status: open
+    title: "Two YuXin naming questions were raised at Pass 3 and never filed"
+    evidence: >-
+      (1) yuxin-black-kirin versus yuxin-black-kylin - a TRANSLITERATION variance in the archive's
+      own ids. Note the archive-wide taxonomy sweep on 2026-09-09 found no family-name or
+      model-name collisions, so whichever spelling is in use is used consistently; the question is
+      whether the alternative is recorded as an alias for someone searching the other spelling.
+      (2) yuxin-little-magic-v3 naming - carried in pass3-progress.md's "Review items carried
+      forward" list, which is prose and not a tracked issue, which is why it survived six passes
+      without resolution.
+      Both are cheap. Both have been open since Pass 3 because a "review items" paragraph is not
+      a mechanism, which is the same lesson as P26-2.
+    recommendation: >-
+      Check each against the manufacturer's own Chinese-language naming and record the loser as an
+      alias rather than renaming anything. Aliases cost nothing and renaming an id is expensive.
+    confidence: confirmed
+    downstream_impact: >-
+      A collector searching the other transliteration finds nothing. That is the whole impact, and
+      it is the kind an archive exists to prevent.
     owner: main
     last_updated: "2026-09-09"
 

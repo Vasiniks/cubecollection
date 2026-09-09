@@ -221,7 +221,7 @@ escalations:
     no evidenced base-model relationship to any of the 5 Cyclone Boys models in scope. Not
     created as a variant anywhere. May warrant its own model once a source names the base
     design."
-  - [UNFILED] "npm run wayback -- prefix failed on every attempt this session (multiple hosts, multiple
+  - [NOTFINDING] "npm run wayback -- prefix failed on every attempt this session (multiple hosts, multiple
     retries) while get/list worked normally; blocked a planned DianSheng retailer prefix sweep.
     Tooling issue, not evidence of absence, flagged for whoever owns scripts/wayback.mjs."
 ```

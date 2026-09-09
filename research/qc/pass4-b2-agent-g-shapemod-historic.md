@@ -436,8 +436,8 @@ candidates_rejected:
   - "Eastsheen: a separate 'plain' undecorated variant — no source documents one was ever sold"
   - "Cube4You: Glow Blue/Transparent as materials-distinction variants — ordinary peer stock colours"
 escalations:
-  - [UNFILED] "WitEden: unresolved 'plain 3x3x3 Mixup' naming question on TheCubicle's own Versions selector — see research/notes/variants/witeden-shapemod.md; may indicate a missed 5th model, not created (model enumeration frozen for this lane)"
-  - [UNFILED] "Maru: magnet_configuration mapping 'dual_layer' for VX-3 Core M / Core M MagLev's combined traditional-plus-corner/core magnet system is this record's own interpretive reading, not a vocabulary term the source itself uses — flagged at uncertain confidence in its own attestation, not escalated further"
-  - [UNFILED] "CubeTwist: white-face colourway's own dedicated page was never independently fetched, named only via a sibling page's navigation link — confidence held at uncertain pending a future direct fetch"
+  - [P4-12] "WitEden: unresolved 'plain 3x3x3 Mixup' naming question on TheCubicle's own Versions selector — see research/notes/variants/witeden-shapemod.md; may indicate a missed 5th model, not created (model enumeration frozen for this lane)"
+  - [P4-14] "Maru: magnet_configuration mapping 'dual_layer' for VX-3 Core M / Core M MagLev's combined traditional-plus-corner/core magnet system is this record's own interpretive reading, not a vocabulary term the source itself uses — flagged at uncertain confidence in its own attestation, not escalated further"
+  - [P4-14] "CubeTwist: white-face colourway's own dedicated page was never independently fetched, named only via a sibling page's navigation link — confidence held at uncertain pending a future direct fetch"
 ```
 

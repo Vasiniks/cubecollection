@@ -645,9 +645,9 @@ candidates_rejected:
   - non-3x3-shaped products surfaced in the same prefix sweeps across every manufacturer
     (2x2/4x4/5x5/pyraminx/gear-cube/axis-cube/fisher-cube/etc.)
 escalations:
-  - [UNFILED] huameng-tg-v1 core_system vs. "Ball-Core" naming — possible model-spec gap, not corrected (models frozen)
-  - [UNFILED] huameng-ys3m-v1 MoYu-affiliation lead further corroborated by 2 new sources — not actioned (manufacturer/family frozen)
-  - [UNFILED] haitun-waverider-v2 Standard/Pioneer/Flagship near-identical marketing copy — materiality call flagged for review
-  - [UNFILED] fangshi Chinese-language sourcing gap — still unresolved across 6 passes, not re-attempted
+  - [P4-12] huameng-tg-v1 core_system vs. "Ball-Core" naming — possible model-spec gap, not corrected (models frozen)
+  - [P3-T3] huameng-ys3m-v1 MoYu-affiliation lead further corroborated by 2 new sources — not actioned (manufacturer/family frozen)
+  - [P4-12] haitun-waverider-v2 Standard/Pioneer/Flagship near-identical marketing copy — materiality call flagged for review
+  - [P26-3] fangshi Chinese-language sourcing gap — still unresolved across 6 passes, not re-attempted
   - [P3-T4] haitun ZhanLang V1 (pre-existing, unchanged) — real second HaiTun line, no family record, not actioned (families frozen)
 ```
