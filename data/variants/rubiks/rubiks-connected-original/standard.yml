@@ -1,0 +1,55 @@
+# variant: rubiks-connected-original--standard
+# Pass 4 batch 2, Agent E. The original, magnetic, rechargeable "Rubik's Connected" generation.
+# SpeedCubeShop's own "Connected (Magnetic)" listing and TheCubicle's long-running "Rubik's
+# Connected 3x3" listing (unrenamed across the 2023-2025 period during which rubiks.com's own
+# site switched its marketing page to "Connected X") are read together as describing this same
+# generation — see thecubicle-rubiks-connected-3x3-2020-2025-continuity and
+# speedcubeshop-rubiks-connected-3x3-magnetic-2025, both already gathered at pass 3.
+id: rubiks-connected-original--standard
+entity: variant
+model_id: rubiks-connected-original
+name: "Rubik's Connected"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_strength: "Moderate"
+  size_mm: 57.0
+  weight_g: 112.0
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-rubiks-connected-3x3-magnetic-2025, thecubicle-rubiks-connected-3x3-2020-2025-continuity]
+    note: "Differentiation search performed: both retailer listings for this generation
+      describe one configuration each, with no colour or tier selector found beyond the
+      shared 'Version: Connected / Connected X' cross-link to the separate ConnectedX product
+      (recorded as its own model, rubiks-connected-x, per the frozen model split). No rubiks.com
+      first-party product page for the un-suffixed 'Connected' survives in this pass's
+      discovery. Recorded as this generation's one assessed configuration."
+  /config/magnet_strength:
+    confidence: probable
+    sources: [speedcubeshop-rubiks-connected-3x3-magnetic-2025]
+    note: "SpeedCubeShop's own structured 'Product Details' field: 'Magnets: Moderate' — a
+      qualitative strength descriptor, not an arrangement, so recorded as free-text
+      `magnet_strength` rather than the `magnet_configuration` enum."
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-rubiks-connected-3x3-2020-2025-continuity, speedcubeshop-rubiks-connected-3x3-magnetic-2025]
+    note: "TheCubicle's 'Dimensions: 57.0mm 3' and SpeedCubeShop's 'Size: 57 mm' agree."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-rubiks-connected-3x3-2020-2025-continuity]
+    note: "Recorded as TheCubicle's 'Item Weight: 112.0g' (the archive's established
+      convention of preferring item weight over gross/packaged weight). SpeedCubeShop's own
+      figure ('Weight: 110 g') is close but not identical — treated as ordinary cross-retailer
+      rounding variance, not a material dispute, consistent with how gross-vs-item weight
+      differences are handled elsewhere in this family's model records."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [tech-eu-particula-series-a-2021, speedcubeshop-rubiks-connected-3x3-magnetic-2025]
+    note: "'Rubik's Connected... in partnership with Rubiks' (Particula's own funding-round
+      press coverage); SpeedCubeShop: 'Bluetooth Smart Cube... factory-installed magnets and
+      amazing turning.'"

@@ -1,0 +1,60 @@
+# variant: particula-gocube-x--standard
+# Pass 4 batch 2, Agent E. Assessment performed: checked GoCube's own product page for this SKU
+# for a second colourway or configuration — "New Neon Colors" is the product's own stock
+# colourway description, not a separately named/marketed edition (no second colour name or
+# option was found), so it collapses into this one baseline per the GAN356 Air stock-colour
+# precedent rather than being split out.
+id: particula-gocube-x--standard
+entity: variant
+model_id: particula-gocube-x
+name: "GoCube-X"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+  scheme: bright
+config:
+  magnet_configuration: none
+smart:
+  is_smart: true
+  connectivity: "Bluetooth 5.0"
+  battery: "CR1225 coin cell, non-rechargeable, over 60 hours of play"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product, thecubicle-gocube-x-3x3-2022]
+    note: "Differentiation search performed: GoCube's own product page and TheCubicle's listing
+      each describe one configuration ('New Neon Colors' as the stock look, not a named
+      edition); no second GoCube-X SKU, colour name, or tier was found. Recorded as the model's
+      one assessed, sold configuration."
+  /colorway/application:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product]
+    note: "GoCube's own comparison table: 'Look & Feel: Classic shape, Neon stickers
+      [GoCube-X]' — contrasted against the stickerless flagship, consistent with a stickered
+      application."
+  /colorway/scheme:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product]
+    note: "'New Neon Colors' / 'Neon stickers' read as the `bright` scheme value; not a named,
+      separately marketed colourway distinct from the product's stock appearance."
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-gocube-x-3x3-2022]
+    note: "TheCubicle states directly 'This one is non-magnetic'; matches the model's own
+      /specs/magnet_architecture: none."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [getgocube-com-2021-gocube-x-product]
+  /smart/connectivity:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product]
+    note: "GoCube's own page: 'Bluetooth 5.0 Quality wireless connection.'"
+  /smart/battery:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product]
+    note: "GoCube's own page: 'Low Power Battery Operated (Coin CR1225) Over 60 hours of
+      play' — a stated hardware difference from Edge/Basic's rechargeable-via-MicroUSB power
+      system, already treated as model-identity evidence on the model record."

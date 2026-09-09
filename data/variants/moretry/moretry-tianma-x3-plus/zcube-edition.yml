@@ -1,0 +1,70 @@
+# variant: moretry-tianma-x3-plus--zcube-edition
+# Pass 4 batch 2, Agent E. Assessed as a genuine, separately-marketed co-branded edition, not a
+# retailer SKU or a bare packaging bundle: Cubelelo's own page (cubelelo-moretry-tianma-x3-
+# zcube-edition) names it "MoreTry Tianma X3 + ZCUBE Edition 3x3 (Magnetic)," describes it as
+# "Co-Engineered by MORETRY and ZCUBE for Ultimate Speed and Style," and states "Exclusive
+# ZCUBE Edition – Limited Style + Packaging." That is a real edition designation, a real
+# collaboration framing ("Co-Engineered"), and a distinct style/packaging treatment together —
+# well past the anti-explosion bar of a bare retailer SKU or naming variant (the source is a
+# single Cubelelo product ID under one name, not two names for the same listing months apart,
+# unlike the HaiTun ZhanLang reference false positive). `zcube` is an existing manufacturer
+# record in this archive (data/manufacturers/zcube.yml), used here for `collaboration_with`.
+#
+# MODEL-ATTACHMENT CALL, held at `uncertain`: the source's own product title and URL do not use
+# the literal string "X3+"/"plus" (URL slug: moretry-tianma-x3-zcube-edition-3x3-magentic), so
+# strictly the source alone does not establish which base generation (V1/V2/V3/V4/the "+" line)
+# it is built on. Filed here under `moretry-tianma-x3-plus` because the pass-3 model record for
+# that model already lists "a 'ZCube Edition' collaboration" among the '+'-line SKUs it found
+# during its own discovery sweep (which likely saw more of the live page than this excerpt
+# preserves) — this record follows that prior classification rather than overriding it on a
+# weaker read of a shorter excerpt, but flags the ambiguity explicitly rather than silently
+# inheriting it. See the pass report for this call as a materiality/attachment escalation.
+id: moretry-tianma-x3-plus--zcube-edition
+entity: variant
+model_id: moretry-tianma-x3-plus
+name: "MoreTry TianMa X3 ZCUBE Edition"
+scope_class: core
+edition:
+  types: [collaboration, limited]
+  designation: "ZCUBE Edition"
+  collaboration_with: [zcube]
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  magnet_configuration: unknown
+colorway:
+  designation: "ZCUBE Edition"
+status: stub
+attestations:
+  /model_id:
+    confidence: uncertain
+    sources: [cubelelo-moretry-tianma-x3-zcube-edition]
+    note: "See this file's header comment. The source's own URL/title do not use 'X3+'/'plus';
+      attached to `moretry-tianma-x3-plus` on the strength of the pass-3 model record's own
+      prior classification of this exact source as a '+'-line SKU, not on independent
+      confirmation from this excerpt. If a future pass finds the base generation is actually
+      V1-V4 or genuinely unclear, this record should be re-homed rather than treated as
+      settled."
+  /edition/types:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-zcube-edition]
+    note: "'Co-Engineered by MORETRY and ZCUBE' supports `collaboration`; 'Exclusive ZCUBE
+      Edition – Limited Style + Packaging' supports `limited`, though no run size or numbering
+      is stated (`run_size: null`, never estimated)."
+  /edition/designation:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-zcube-edition]
+    note: "Single tier 2 source; recorded `probable`, not `confirmed`, per rule 9."
+  /edition/collaboration_with:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-zcube-edition]
+    note: "'Co-Engineered by MORETRY and ZCUBE' — read as a design collaboration, not merely a
+      retailer applying a third-party sticker set after the fact, though the same source's own
+      reliability_note (on the source record itself) reads this as closer to a
+      customisation/co-branding operation than an independent-design partnership; recorded at
+      `probable`, not `confirmed`, reflecting that reading."
+  /config/magnet_configuration:
+    confidence: unknown
+    note: "Cubelelo's own page states 'Magnetic' generically ('(Magnetic)' in the title) but
+      gives no arrangement detail; researched and not found beyond bare magnet presence."

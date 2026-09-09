@@ -1,0 +1,25 @@
+# variant: rubiks-speed-original--standard
+# Pass 4 batch 2, Agent E. Assessment performed: the model's only evidence is a bare
+# category-navigation label on Rubik's own January 2017 site capture (no product detail page
+# survives in any capture found by pass 3 or this pass), so no colourway, tier, or
+# configuration differentiation could be checked — a genuine evidentiary ceiling. One baseline
+# is recorded, carrying no config or colourway beyond what the model record itself already
+# establishes.
+id: rubiks-speed-original--standard
+entity: variant
+model_id: rubiks-speed-original
+name: "Rubik's Speed Cube"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [rubiks-com-2017-speedcube-category]
+    note: "Differentiation search performed: no product detail page for this generation was
+      found in any capture reviewed this pass or at pass 3; the sole surviving evidence is a
+      bare 'Speed Cube' entry in Rubik's own January 2017 store navigation. No second SKU,
+      colour, or tier could be identified for lack of a product page to check against.
+      Recorded as the model's one assessed configuration at reduced confidence, matching the
+      model record's own `reported`-level description confidence."

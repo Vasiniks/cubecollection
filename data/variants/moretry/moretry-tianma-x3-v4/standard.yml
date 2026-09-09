@@ -1,0 +1,29 @@
+# variant: moretry-tianma-x3-v4--standard
+# Pass 4 batch 2, Agent E. The V4 (MagLev) generation: V3's magnet layout plus a spring
+# replaced entirely by a 6-magnetic-ring levitation system. Assessment performed: checked
+# TheCubicle's own product page for a second colourway or tier — none was found.
+id: moretry-tianma-x3-v4--standard
+entity: variant
+model_id: moretry-tianma-x3-v4
+name: "MoreTry TianMa X3 V4 (MagLev)"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  maglev: maglev
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v4-maglev-2022]
+    note: "Differentiation search performed: TheCubicle's own product page for this generation
+      describes one configuration; no colour or tier selector was found on the page. Recorded
+      as this generation's one assessed configuration."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v4-maglev-2022]
+    note: "TheCubicle: 'The MagLev version replaces the traditional spring with a magnetic
+      levitation system that has 6 magnetic rings instead of 2 for a more linear tensions' —
+      a direct, specific mechanism description matching the vocab's `maglev` definition
+      ('Magnetic repulsion in place of springs'). Single tier 2 source; recorded `probable`,
+      not `confirmed`, per rule 9."

@@ -1,0 +1,56 @@
+# variant: rubiks-connected-x--standard
+# Pass 4 batch 2, Agent E. The current "Rubik's Connected X" / "ConnectedX" generation.
+# SpeedCubeShop's own structured field states "Magnets: None" for this generation, contrasted
+# directly against "Connected (Magnetic)"'s "Magnets: Moderate" on the sibling listing — the
+# same source pass 3 already used to keep these as two separate models. Per this batch's
+# instructions, this record does NOT merge with, or assert identity toward, particula-gocube-x
+# (GoCube X) — the two are recorded elsewhere as related-but-unproven-identical, with no
+# `rebrand_of`, and nothing found this pass changes that.
+id: rubiks-connected-x--standard
+entity: variant
+model_id: rubiks-connected-x
+name: "Rubik's Connected X"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+smart:
+  is_smart: true
+  connectivity: "Bluetooth"
+  companion_app: "Rubik's Connected App"
+  battery: "No charging required; battery included (per SpeedCubeShop's own listing)"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-connected-x-product-2025, speedcubeshop-rubiks-connectedx-3x3-2025]
+    note: "Differentiation search performed: Rubik's own product page and SpeedCubeShop's
+      listing each describe one configuration; no colour or tier selector was found. Recorded
+      as this generation's one assessed configuration."
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [speedcubeshop-rubiks-connectedx-3x3-2025]
+    note: "SpeedCubeShop's own structured 'Product Details' field: 'Magnets: None' — directly
+      contrasted against the sibling 'Connected (Magnetic)' listing's 'Magnets: Moderate.' No
+      rubiks.com first-party source independently confirms magnet presence/absence for this
+      generation; recorded at `probable` on the single tier-2 retailer field."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [rubiks-com-connected-x-product-2025]
+  /smart/connectivity:
+    confidence: probable
+    sources: [rubiks-com-connected-x-product-2025]
+    note: "Rubik's own page: 'ConnectedX's Bluetooth integration that connects to your
+      smartphone or tablet' — no specific Bluetooth version number stated."
+  /smart/companion_app:
+    confidence: confirmed
+    sources: [rubiks-com-connected-x-product-2025]
+    note: "Rubik's own page: 'download the Rubik's Connected App to access solving resources,
+      leaderboards, mini games, and more.'"
+  /smart/battery:
+    confidence: probable
+    sources: [speedcubeshop-rubiks-connectedx-3x3-2025]
+    note: "SpeedCubeShop's own page: 'Start solving right from the box, no charging required.
+      Battery included.' No specific battery type/model is named, unlike GoCube-X's stated
+      CR1225 coin cell — not assumed to be the same part."

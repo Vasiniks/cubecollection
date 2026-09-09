@@ -1,0 +1,25 @@
+# variant: moretry-tianma-x3-v2--standard
+# Pass 4 batch 2, Agent E. Assessment performed: the model's only evidence is a single
+# incidental bundle-contents mention inside a differently-contaminated retailer capture (see
+# the model record's own description); no dedicated V2 product page, description, spec, or
+# colourway claim was found anywhere in this pass or at pass 3. No differentiation could be
+# checked for lack of a real product page — a genuine evidentiary ceiling. One baseline is
+# recorded, carrying identity only.
+id: moretry-tianma-x3-v2--standard
+entity: variant
+model_id: moretry-tianma-x3-v2
+name: "MoreTry TianMa X3 V2 (Enhanced)"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v2-enhanced-2023]
+    note: "Differentiation search performed and found nothing to differentiate against: the
+      only surviving evidence for this generation is a bundle-contents mention on a
+      contaminated capture describing a different product (V4) in its body text. No V2-specific
+      description, spec, or colourway is admissible from this or any other source found.
+      Recorded as this generation's one assessed configuration at reduced confidence, matching
+      the model record's own `uncertain` existence/identity confidence."

@@ -1,0 +1,31 @@
+# variant: moretry-tianma-x3-plus--standard
+# Pass 4 batch 2, Agent E. TheCubicle's own "Moretry Tianma X3+ V3" listing: the refined-mould
+# generation itself, described generically ("more precise molds," "magnet capsules that are
+# easier to install") without naming a specific magnet-tier selection. Recorded as a separate
+# baseline from the three magnet-tier variants sourced from Cubelelo (dual-magnetic-frosted,
+# triple-magnetic-frosted, super-maglev-frosted) because it is not established whether
+# TheCubicle's description covers all three tiers generically or describes one specific,
+# unidentified tier — an open overlap question flagged in the pass report, not resolved by
+# guesswork.
+id: moretry-tianma-x3-plus--standard
+entity: variant
+model_id: moretry-tianma-x3-plus
+name: "MoreTry TianMa X3+"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-plus-v3-2025]
+    note: "Differentiation search performed: TheCubicle's own X3+ V3 page describes the
+      refined-mould generation generically, without naming a magnet tier or colourway. Cubelelo
+      independently documents this same '+' line sold in three named magnet-tier
+      configurations under a 'Frosted' finish (see the sibling dual-magnetic-frosted,
+      triple-magnetic-frosted, and super-maglev-frosted variants). Whether TheCubicle's
+      undifferentiated description IS one of those three tiers (most likely the base 'Dual
+      Magnetic' tier, by process of elimination against V3/V4's own progression) or is a
+      genuinely separate, non-frosted configuration is not established by any source found
+      this pass. Recorded at reduced confidence reflecting that overlap risk, not because the
+      product's own existence is in doubt."

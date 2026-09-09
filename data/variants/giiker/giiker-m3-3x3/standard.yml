@@ -1,0 +1,43 @@
+# variant: giiker-m3-3x3--standard
+# Pass 4 batch 2, Agent E. Assessment performed: checked TheCubicle's own product page (the
+# only surviving source for this model, per the frozen model record) for any second colourway,
+# tier, or configuration option beyond the single listing found — none was found. GiiKER's own
+# site carries no page for this product at all (per the model record's own discovery sweep), so
+# no first-party corroboration or differentiation was available to check either. One
+# configuration is recorded here as the baseline.
+id: giiker-m3-3x3--standard
+entity: variant
+model_id: giiker-m3-3x3
+name: "GiiKER M3 3x3"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_strength: "strong (arrangement not specified)"
+colorway:
+  body:
+    plastic_color_name: "black"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
+    note: "Differentiation search performed: TheCubicle's own product page (the only surviving
+      spec-bearing source found for this model at pass 3) offers no colourway, tier, or edition
+      selector beyond the single listing described. No second GiiKER-M3 SKU was found at
+      TheCubicle, SpeedCubeShop, or giiker.com in the captures reviewed this pass. Recorded as
+      the model's one assessed, sold configuration."
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
+    note: "TheCubicle: 'It features strong magnets' — magnet presence and a qualitative
+      strength descriptor, but no arrangement (single/dual layer, core-corner, etc.) is given,
+      consistent with the model record's own /specs/magnet_architecture being left unknown.
+      Recorded as free-text `magnet_strength`, not the `magnet_configuration` enum, since no
+      arrangement is stated."
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [thecubicle-giiker-m3-3x3-2020]
+    note: "TheCubicle: 'a classic color scheme on black plastic' — a stock body colour
+      descriptor, not a named/marketed colourway; recorded on the baseline rather than split
+      out, consistent with the GAN356 Air stock-colour precedent."

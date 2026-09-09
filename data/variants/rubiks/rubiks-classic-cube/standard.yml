@@ -1,0 +1,40 @@
+# variant: rubiks-classic-cube--standard
+# Pass 4 batch 2, Agent E. The plain, current classic 3x3, as described directly on Rubik's own
+# product page: stickerless (plastic tiles), the "Improved Play" mechanism already recorded as
+# an undated model.revisions entry. Six further named special/material/commemorative editions
+# of this same model (Phantom, Crystal, Retro, Re-Cube, Coach Cube, Impossible) are recorded as
+# their own sibling variants in this directory — see those files. A further set of names
+# mentioned only in the family record's own prose (Disney 3x3, the licensed "Cuber" character
+# collaborations, the Mercedes-AMG Petronas F1 Team Cube, and a "Wednesday Cube") could not be
+# turned into variant records this pass: no source file with a URL, excerpt, or archive capture
+# for any of them was found among the sources already gathered, and this session's web-research
+# tools returned no results (search budget exhausted, archive.org fetch blocked). Flagged as
+# leads not chased in the pass report rather than invented.
+id: rubiks-classic-cube--standard
+entity: variant
+model_id: rubiks-classic-cube
+name: "Rubik's 3x3 Cube"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-3x3-cube-product-2024]
+    note: "Differentiation search performed: Rubik's own current product page for this exact
+      SKU describes one configuration (stickerless tiles, 'Improved Play' mechanism); no colour
+      or tier selector was found on this page. The family's own named special editions
+      (Phantom, Crystal, etc.) are separately-URLed products, recorded as sibling variants
+      rather than options of this listing. Recorded as the model's one assessed base
+      configuration."
+  /colorway/application:
+    confidence: probable
+    sources: [rubiks-com-3x3-cube-product-2024]
+    note: "Rubik's own page: 'Stickerless: The traditional stickers have been replaced with
+      plastic tiles which means no fading, peeling or cheating!' No concurrently-sold
+      traditional-sticker version of this exact current SKU was found on rubiks.com in the
+      captures reviewed this pass, so a separate stickered baseline is not recorded — if one is
+      found later, it becomes a sibling variant rather than a rewrite of this one."

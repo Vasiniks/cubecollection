@@ -1,0 +1,54 @@
+# variant: particula-gocube-edge--standard
+# Pass 4 batch 2, Agent E. Assessment performed: checked GoCube's own product page (2019),
+# TheCubicle's listing (2020), the GoCube-X comparison table (2021), and Particula's current
+# (2026) page for a second colourway or configuration of this SKU (GC33E) — none was found
+# beyond the "Full Pack" / "Fam Pack" packaging bundles, which DATA_MODEL §4.1 excludes from
+# variant status (bundle membership, not a configuration difference) and which are carried here
+# as aliases only.
+id: particula-gocube-edge--standard
+entity: variant
+model_id: particula-gocube-edge
+name: "GoCube Edge"
+aliases:
+  - { name: "GoCube Edge Full Pack", source: getgocube-com-2019-fullpack-bundle }
+  - { name: "GoCube Edge Fam Pack", source: getgocube-com-2019-basic-edge-skus }
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+smart:
+  is_smart: true
+  connectivity: "Bluetooth 5.0"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [getgocube-com-2019-gocube-edge-product, thecubicle-gocube-edge-3x3-2020, particula-tech-com-gocube-2026]
+    note: "Differentiation search performed: GoCube's own product page, TheCubicle's listing,
+      and Particula's current (2026) page each describe one cube configuration; the only named
+      variation found is packaging ('Full Pack' includes a charging stand, USB charger, and
+      pouch; 'Fam Pack' a multi-unit bundle), excluded from variant status per DATA_MODEL §4.1
+      and recorded as aliases instead. No separate colourway or hardware tier was found."
+  /aliases/0/name:
+    confidence: confirmed
+    sources: [getgocube-com-2019-fullpack-bundle]
+    note: "GoCube's own page states the box 'Includes – GoCube EDGE' plus accessories — a
+      packaging bundle of this same cube, not a separate design."
+  /aliases/1/name:
+    confidence: probable
+    sources: [getgocube-com-2019-basic-edge-skus]
+  /colorway/application:
+    confidence: probable
+    sources: [getgocube-com-2021-gocube-x-product]
+    note: "GoCube's own 2021 'Compare cubes' table describes the then-current flagship 'GoCube'
+      column (the Edge lineage, per particula-gocube-edge.yml's own description of Edge
+      becoming the plain 'GoCube' flagship SKU after Basic dropped out) as 'Premium,
+      stickerless' — read as this variant's own colourway application."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [getgocube-com-2019-gocube-edge-product]
+  /smart/connectivity:
+    confidence: probable
+    sources: [thecubicle-gocube-edge-3x3-2020]
+    note: "TheCubicle: 'a magnetic 3x3 equipped with Bluetooth 5.0.'"

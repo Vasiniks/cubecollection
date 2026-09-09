@@ -1,0 +1,32 @@
+# variant: particula-gocube-basic--standard
+# Pass 4 batch 2, Agent E. Assessment performed: checked GoCube's own product page and the
+# manufacturer's own "GoCube VS GoCube Edge" comparison table for a second colourway or tier of
+# the base SKU (GC33A) — none was found; no TheCubicle or SpeedCubeShop listing for a standalone
+# "GoCube Basic" was found either (per the model record's own discovery). No dimensions, weight,
+# or colourway are attested for this SKU by any source found this pass — recorded honestly as
+# unknown rather than borrowed from the Edge or X siblings.
+id: particula-gocube-basic--standard
+entity: variant
+model_id: particula-gocube-basic
+name: "GoCube"
+scope_class: core
+edition:
+  types: [standard]
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [getgocube-com-2019-gocube-product, getgocube-com-2019-basic-edge-skus]
+    note: "Differentiation search performed: GoCube's own product page for this SKU (GC33A)
+      shows no colour or tier selector; the manufacturer's own comparison table contrasts this
+      SKU only against 'GoCube Edge' (a separate model in this archive), not against a second
+      configuration of itself. No standalone 'GoCube Basic' listing was found at TheCubicle or
+      SpeedCubeShop in this pass's discovery. Recorded as the model's one assessed, sold
+      configuration."
+  /smart/is_smart:
+    confidence: confirmed
+    sources: [getgocube-com-2019-gocube-product]
+    note: "GoCube's own page: 'GoCube is a smart Rubik's cube that connects to your
+      phone/tablet and tracks your moves in real time.'"

@@ -1,0 +1,36 @@
+# variant: rubiks-classic-cube--crystal
+# Pass 4 batch 2, Agent E. "Rubik's Crystal" — a transparent-plastic treatment of the classic
+# mechanism, per the family record's own pass-2 boundary call. Admitted as a variant, not a
+# separate model, per DATA_MODEL §4.2.
+id: rubiks-classic-cube--crystal
+entity: variant
+model_id: rubiks-classic-cube
+name: "Rubik's Crystal"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Crystal"
+colorway:
+  designation: "Crystal"
+  scheme: custom
+  body:
+    translucency: transparent
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Sold as an ongoing named catalogue product; no bounded-run or availability-window
+      language was found. Recorded `standard`, not `limited`."
+  /edition/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own product page name: 'Rubik's Crystal.'"
+  /colorway/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+  /colorway/body/translucency:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own page: 'This transparent 3×3 Cube takes you behind the curtain to see how
+      the Cube works as you twist and turn.'"

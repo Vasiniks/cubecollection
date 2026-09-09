@@ -1,0 +1,40 @@
+# variant: moretry-tianma-x3-v3--standard
+# Pass 4 batch 2, Agent E. The V3 (Snap) generation: enlarged corner base magnets interacting
+# with a repelling centre magnet. Assessment performed: checked TheCubicle's own product page
+# for a second colourway or tier — none was found in the page content itself.
+#
+# The pass-3 model record separately notes "a 'Limited Edition' configuration of V3 was also
+# found by URL (`moretry-tianma-x3-v3-3x3-limited-edition`) and is read as a variant, not
+# investigated further this pass." No source record (excerpt, archive capture, or URL-only
+# stub) for that specific listing exists anywhere in data/sources/, and this session's live web
+# research tools returned no results (WebSearch budget exhausted; archive.org fetch blocked).
+# NOT created here for lack of any citable evidence beyond a bare mention of a URL slug in
+# another record's prose — flagged as a lead not chased in the pass report.
+id: moretry-tianma-x3-v3--standard
+entity: variant
+model_id: moretry-tianma-x3-v3
+name: "MoreTry TianMa X3 V3 (Snap)"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: dual_layer
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+    note: "Differentiation search performed: TheCubicle's own product page for this generation
+      describes one configuration; no colour or tier selector was found on the page itself. A
+      'Limited Edition' V3 SKU is known to exist only by URL slug (see this file's header
+      comment) and could not be turned into a variant this pass for lack of any source content.
+      Recorded as this generation's one assessed, sourced configuration."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+    note: "TheCubicle: 'traditional corner/edge magnetization along with corner base/edge
+      magnets... enlarged corner base magnets, allowing them to interact with a repelling
+      magnet in the centers.' A richer arrangement than V1's plain corner/edge; recorded as
+      `dual_layer` for lack of a closer enum fit (no vocabulary value distinguishes a
+      corner-base+repelling-centre system specifically) — an approximation, not a literal
+      match, held at `uncertain`."
