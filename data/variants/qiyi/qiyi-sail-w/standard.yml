@@ -1,0 +1,17 @@
+# variant: qiyi-sail-w--standard
+# Pass 4. Sole configuration found; the 2024-2025 collection enumeration lists only one
+# "qiyi-sail-w-3x3" slug for this model.
+id: qiyi-sail-w--standard
+entity: variant
+model_id: qiyi-sail-w
+name: "QiYi Sail W"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-sail-w-3x3-product, thecubicle-qiyi-mofangge-collection-2025]
+    note: "TheCubicle's own product page describes a single configuration; the 2024-2025
+      collection enumeration lists only one slug for this model."

@@ -1,0 +1,23 @@
+# variant: qiyi-qimeng-v3--standard
+# Pass 4. The base "Tiled" configuration TheCubicle's own product page describes directly. A
+# distinct "Tiled Bumpy" texture sibling is recorded separately (see tiled-bumpy.yml) per the
+# model's own note flagging it as a pass-4 question.
+id: qiyi-qimeng-v3--standard
+entity: variant
+model_id: qiyi-qimeng-v3
+name: "QiYi QiMeng V3 3x3 (Tiled)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Tiled"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product]
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product]
+    note: "'Tiled' is the retailer's own product-name qualifier, contrasted with the separately
+      listed 'Tiled Bumpy' sibling."

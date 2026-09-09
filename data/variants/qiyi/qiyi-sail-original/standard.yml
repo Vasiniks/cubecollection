@@ -1,0 +1,18 @@
+# variant: qiyi-sail-original--standard
+# Pass 4. Sole configuration found; not present in the current (2024-2025) retailer collection
+# at all (already discontinued/superseded by Sail W), so no sibling slug enumeration exists to
+# check against.
+id: qiyi-sail-original--standard
+entity: variant
+model_id: qiyi-sail-original
+name: "QiYi Sail"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-sail-3x3-product]
+    note: "TheCubicle's product page describes a single configuration; no colourway, magnet, or
+      coating option was found."

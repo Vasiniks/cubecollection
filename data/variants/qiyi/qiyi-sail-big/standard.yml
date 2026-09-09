@@ -1,0 +1,38 @@
+# variant: qiyi-sail-big--standard
+# Pass 4. Sole configuration found; existence rests on the wiki alone (tier 3, overridden), same
+# as the model. scope_class: conditional is inherited in substance from the model, but rule 15
+# requires scope_justification and legality.wca_status to be populated on the variant record
+# itself (a conditional variant's own admission requirement, not merely the model's) — restated
+# here rather than left unset, citing the same source the model's own justification rests on.
+id: qiyi-sail-big--standard
+entity: variant
+model_id: qiyi-sail-big
+name: "QiYi Big Sail"
+scope_class: conditional
+scope_justification: |-
+  Documented as used for competitive feet-solving, per the Speedsolving wiki: "QiYi Big Sail...
+  a 6.8 cm 3x3 version of their budget 3x3, the Sail... often used for feet solving." Restated
+  from the model's own justification (qiyi-sail-big.yml); this variant is the model's sole known
+  sold configuration, so the justification for the model's conditional admission applies
+  identically to it.
+edition:
+  types: [standard]
+legality:
+  wca_status: unknown
+  basis: >-
+    A standard 3x3x3 mechanism at 68mm. No source located addresses WCA eligibility either way;
+    restated from the model's own legality record for the same reason as scope_justification
+    above.
+status: stub
+attestations:
+  /scope_justification:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /legality/wca_status:
+    confidence: unknown
+    note: "Researched and not found, same basis as the model record (qiyi-sail-big.yml)."
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source establishes the product existed as a 6.8cm Sail
+      configuration; no further colourway/magnet/coating distinction was found."
