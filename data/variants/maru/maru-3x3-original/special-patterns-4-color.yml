@@ -1,0 +1,48 @@
+# variant: maru-3x3-original--special-patterns-4-color
+# Pass 4 (variant enumeration), Agent G. One of seven named sticker-pattern configurations sold
+# under Maru's "Special Patterns" edition of the base Maru 3x3, per TheCubicle's own purchase-
+# options list (thecubicle-maru-3x3-special-patterns). Each pattern is tied to one
+# fixed body colour (White); no cross-combination was offered. Following the DaYan Bermuda
+# Triangle precedent, each named pattern is its own variant record.
+id: maru-3x3-original--special-patterns-4-color
+entity: variant
+model_id: maru-3x3-original
+name: "Maru 3x3 (Special Patterns: 4-Color)"
+aliases:
+  - name: "White (4-Color)"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-3x3-special-patterns
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Special Patterns"
+colorway:
+  designation: "4-Color"
+  body:
+    plastic_color_name: "White"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "TheCubicle's own product title and description name this line 'Special Patterns'
+      directly: 'The original Maru 3x3 is available with a variety of special patterns on the
+      stickers.'"
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "Differentiation search performed: this is one of seven individually-named, fixed-
+      body-colour sticker patterns on one retailer listing, at one shared price ($13.99). No
+      further sub-configuration (coating, magnet, core) was found for this specific pattern."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "'4-Color' is the retailer's own bracketed pattern name."
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "Body colour is fixed per named pattern on this listing ('White (4-Color)'), not a
+      buyer-selectable option independent of the pattern."

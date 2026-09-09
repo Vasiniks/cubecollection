@@ -158,12 +158,81 @@ pass 3 and re-noted above (not re-litigated this pass).
 
 ---
 
+## Maru (4 models) — DONE
+
+Method: CDX prefix sweep of `thecubicle.com/products/maru*` (67 URLs, already run at pass 3)
+supplied the sibling-page candidates; this pass re-fetched each candidate page via Wayback for
+mechanism/colour detail and differentiation.
+
+**Axes identified.**
+- `maru-vx-3-original`: a genuine four-way magnet/core/maglev axis — base (no magnets), "M"
+  (glued-in magnets), "Core M" (adds a corner/core system), "Core M MagLev" (adds MagLev,
+  described as Maru's flagship 3x3). Stock "Stickerless"/"Black" colour options on each
+  collapse into that configuration's own baseline (not split further).
+- `maru-cx3-original`: Assembled vs. DIY-kit (an assembly-time choice per this lane's guidance,
+  hence two variants of one model, not two models). A very large stock-colour set (12 on
+  Assembled, 8 on DIY) including "Glow In The Dark" and "Transparent" collapses into each
+  configuration's baseline — all peer options at one shared price with no separate names.
+- `maru-3x3-original`: the plain base cube (Black/White stock colours, collapses) PLUS a
+  genuinely distinct "Special Patterns" edition sold as **seven individually named sticker
+  patterns** (4-Color, Grey Scale, Music Cube, Shepherd's Cube, Maze Cube, Yellow Maze Cube,
+  Color-Blind Cube), each tied to one fixed body colour, at one shared price. Several patterns
+  are described as functionally distinct (requiring different solving steps), not merely a
+  different sticker colour — the direct DaYan Bermuda Triangle precedent.
+- `maru-nano-original`: one DIY-kit configuration only (no assembled alternative found at
+  either retailer), sold across many stock body colours (Red, Yellow, Blue, White, Black,
+  Transparent, Transparent Blue) plus a "Luminous"/"Glow In The Dark" option. The
+  glow-in-the-dark option was specifically weighed as a materials-distinction split candidate
+  (DATA_MODEL rule 10) and rejected: it is priced and catalogued identically to the plain
+  colours at both retailers checked, five years apart, with no separate marketing.
+
+**Variants created (16 total):**
+- `maru-vx-3-original--standard` (no magnets), `--m`, `--core-m`, `--core-m-maglev` (4).
+- `maru-cx3-original--standard` (Assembled), `--diy-kit` (2).
+- `maru-3x3-original--standard`, plus 7 Special Patterns variants:
+  `--special-patterns-4-color`, `-grey-scale`, `-music-cube`, `-shepherds-cube`, `-maze-cube`,
+  `-yellow-maze-cube`, `-color-blind-cube` (8).
+- `maru-nano-original--standard` (1). `scope_class: conditional` (inherited).
+
+All `scope_class: core` except the inherited-conditional Nano Cube.
+
+**Candidates rejected:**
+- **Splitting Stickerless/Black on each VX-3 magnet configuration** — rejected, stock
+  application options at one price, no edition name (anti-explosion).
+- **Splitting the 12/8-colour Assembled/DIY-kit CX3 sets, including Glow In The Dark and
+  Transparent** — rejected on the same grounds; these are ordinary peer options in an
+  undifferentiated colour list, unlike Maru's own genuinely distinct Special Patterns line.
+- **Splitting "Luminous"/"Glow In The Dark" out of the Nano Cube's colour set** — rejected
+  despite being a real materials difference (glow-in-the-dark plastic), because no source
+  treats it as a separately named or separately priced product; recorded as a considered-and-
+  rejected call in the variant's own header, not silently collapsed.
+- **A "VX-3 Core M MagLev + Lube Service" tier** — rejected as a checkout-time service add-on
+  (DATA_MODEL §4.3's own distinction), not a separately marketed edition.
+
+**Sources added:** `thecubicle-maru-vx-3-m`, `thecubicle-maru-vx-3-core-m`,
+`thecubicle-maru-vx-3-core-m-maglev`, `thecubicle-maru-cx3-diy-kit-2021`,
+`thecubicle-maru-3x3-colors-2024`, `thecubicle-maru-nano-colors-2023` — all Tier 2,
+`archive_url` preservation. (Two initially-created sources,
+`thecubicle-maru-cx3-colors-2025` and `thecubicle-maru-3x3-special-patterns-list-2020`, were
+found on validation to share their exact locator/capture with pre-existing sources
+`thecubicle-maru-cx3` and `thecubicle-maru-3x3-special-patterns` respectively — rule 42 caught
+this. Both were deleted and their citations consolidated onto the existing source ids, with the
+additional detail folded into each variant's own attestation note instead of a duplicate source
+file.)
+
+**Escalation:** none. The `magnet_configuration: dual_layer` mapping for "Core M"/"Core M
+MagLev" (a combined traditional-plus-corner/core magnet system) is recorded at `uncertain`
+confidence in its own attestation as an interpretive mapping onto the vocabulary, since no
+single vocabulary value names that exact combination — flagged there, not escalated further.
+
+---
+
 ## Status
 
 - [x] WitEden (6 models)
 - [x] MF8 (3 models)
 - [x] Calvin's Puzzle (3 models)
-- [ ] Maru (4 models)
+- [x] Maru (4 models)
 - [ ] Meffert's (1 model)
 - [ ] CubeTwist (1 model)
 - [ ] Eastsheen (1 model)

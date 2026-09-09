@@ -1,0 +1,27 @@
+# variant: maru-cx3-original--diy-kit
+# Pass 4 (variant enumeration), Agent G. The unassembled DIY-kit configuration of the Maru CX3,
+# sold as its own dedicated TheCubicle product page distinct from the Assembled version.
+id: maru-cx3-original--diy-kit
+entity: variant
+model_id: maru-cx3-original
+name: "Maru CX3 (DIY Kit)"
+aliases:
+  - name: "Maru CX3 DIY Kit"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-cx3-diy-kit-2021
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-cx3-diy-kit-2021]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-cx3-diy-kit-2021]
+    note: "Differentiation search performed: this DIY-kit page (re-fetched via Wayback) offers
+      eight stock colour/application options at near-identical prices, none separately named as
+      an edition — collapsed into this one baseline per the GAN356 Air precedent. The DIY-kit
+      assembly format itself (versus the sibling Assembled variant) is the variant-defining
+      axis, per this lane's guidance that assembled-vs-unassembled is an assembly-time choice."

@@ -1,0 +1,27 @@
+# variant: maru-cx3-original--standard
+# Pass 4 (variant enumeration), Agent G. The Assembled configuration of the Maru CX3 (the model
+# record's own default/sourced configuration). A DIY-kit configuration is a separate variant
+# below, per this lane's guidance that assembled-vs-unassembled is an assembly-time choice, not
+# a new model.
+id: maru-cx3-original--standard
+entity: variant
+model_id: maru-cx3-original
+name: "Maru CX3"
+aliases:
+  - name: "Maru CX3 (Assembled)"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-cx3
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-cx3]
+    note: "Differentiation search performed: TheCubicle's own Assembled product page (re-fetched
+      via Wayback) offers twelve stock colour/application options (Stickerless (Dark), Black,
+      White, Transparent Blue, Glow In The Dark, Yellow, Orange, Red, Blue, Green, Purple,
+      Transparent) at near-identical prices, none separately named as an edition — collapsed
+      into this one baseline per the GAN356 Air precedent. The Assembled-vs-DIY-kit choice is
+      the variant-defining axis for this model, per the DIY-kit sibling record."

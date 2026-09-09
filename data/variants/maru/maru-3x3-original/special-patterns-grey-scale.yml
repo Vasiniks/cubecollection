@@ -1,0 +1,41 @@
+# variant: maru-3x3-original--special-patterns-grey-scale
+# Pass 4 (variant enumeration), Agent G. See special-patterns-4-color.yml for shared reasoning.
+id: maru-3x3-original--special-patterns-grey-scale
+entity: variant
+model_id: maru-3x3-original
+name: "Maru 3x3 (Special Patterns: Grey Scale)"
+aliases:
+  - name: "White (Grey Scale)"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-3x3-special-patterns
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Special Patterns"
+colorway:
+  designation: "Grey Scale"
+  body:
+    plastic_color_name: "White"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "Differentiation search performed: one of seven individually-named, fixed-body-colour
+      sticker patterns at one shared price ($13.99). No further sub-configuration found."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "'Grey Scale' is the retailer's own bracketed pattern name. A customer review on this
+      same listing describes it as comparable to a Rubik's-brand cube out of the box, i.e. a
+      cosmetic/sticker pattern rather than a mechanism change (Tier 5, not cited as evidence,
+      recorded only to explain this record's own reading)."
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]

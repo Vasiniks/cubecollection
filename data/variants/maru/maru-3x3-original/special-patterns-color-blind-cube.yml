@@ -1,0 +1,41 @@
+# variant: maru-3x3-original--special-patterns-color-blind-cube
+# Pass 4 (variant enumeration), Agent G. See special-patterns-4-color.yml for shared reasoning.
+# A customer review on the source listing states this specific pattern "has no florian cuts,
+# so corner cutting is pretty much non-existent" (Tier 5, not cited as evidence, recorded only
+# to explain why this pattern is read as functionally distinct, not merely a colour choice).
+id: maru-3x3-original--special-patterns-color-blind-cube
+entity: variant
+model_id: maru-3x3-original
+name: "Maru 3x3 (Special Patterns: Color-Blind Cube)"
+aliases:
+  - name: "Black (Color-Blind Cube)"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-3x3-special-patterns
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Special Patterns"
+colorway:
+  designation: "Color-Blind Cube"
+  body:
+    plastic_color_name: "Black"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "Differentiation search performed: one of seven individually-named, fixed-body-colour
+      sticker patterns at one shared price ($13.99). No further sub-configuration found."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]
+    note: "'Color-Blind Cube' is the retailer's own bracketed pattern name."
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [thecubicle-maru-3x3-special-patterns]

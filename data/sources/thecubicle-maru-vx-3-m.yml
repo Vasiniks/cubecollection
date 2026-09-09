@@ -1,0 +1,27 @@
+# source: thecubicle-maru-vx-3-m
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the Maru VX-3 M, a
+# magnetic configuration of the base VX-3 design.
+id: thecubicle-maru-vx-3-m
+entity: source
+kind: retailer
+title: "Maru VX-3 M – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-vx-3-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250219121158id_/https://www.thecubicle.com/products/maru-vx-3-m"
+excerpt: |-
+  "The VX-3 M is a magnetic 3x3 from the famous brand Maru. This cube has cutouts in the
+  corners, giving it an airy feeling. The magnets are glued into the pieces and are therefore
+  not adjustable." Purchase options: "Stickerless - $19.99 USD" / "Black - $19.99 USD".
+  Product Specifications: "Manufacturer / Maru", "Gross Weight / 111g", "Dimensions / 56.0mm".
+  Page notes "This product has been discontinued indefinitely."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer, structured spec table. 'Stickerless' and 'Black' are two
+  application/stock-colour options at the same price, with no separate edition name —
+  collapsed into one baseline per the GAN356 Air precedent, this variant's own axis being the
+  magnet configuration (glued-in, non-adjustable magnets), not colour."
+status: sourced

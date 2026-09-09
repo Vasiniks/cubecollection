@@ -1,0 +1,42 @@
+# variant: maru-vx-3-original--core-m-maglev
+# Pass 4 (variant enumeration), Agent G. The "VX-3 Core M MagLev" configuration, described
+# directly as Maru's flagship 3x3: edge/corner plus corner/core magnetisation, with MagLev.
+id: maru-vx-3-original--core-m-maglev
+entity: variant
+model_id: maru-vx-3-original
+name: "Maru VX-3 Core M MagLev"
+aliases:
+  - name: "Maru VX-3 Core M MagLev"
+    retailer: "TheCubicle"
+    source: thecubicle-maru-vx-3-core-m-maglev
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: dual_layer
+  maglev: maglev
+packaging:
+  contents: ["Maru VX-3 Core M MagLev", "Maru Cube Stand"]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3-core-m-maglev]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3-core-m-maglev]
+    note: "Differentiation search performed: 'Stickerless'/'Black' stock colour options at one
+      price, no separate edition name; a checkout-time '+Lube Service' add-on exists at a
+      higher price but is a service selected at checkout, not a separately marketed edition
+      (DATA_MODEL §4.3), and is not built into a variant here."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-maru-vx-3-core-m-maglev]
+    note: "Source states 'edge/corner as well as corner/core magnetization' — read as
+      `dual_layer`, the same mapping and same caveat as maru-vx-3-original--core-m."
+  /config/maglev:
+    confidence: reported
+    sources: [thecubicle-maru-vx-3-core-m-maglev]
+    note: "Named directly in the product's own title ('MagLev') and described as flagship-tier;
+      no further detail (e.g. ball-core combination) was given distinguishing it from the
+      simple `maglev` vocabulary value."

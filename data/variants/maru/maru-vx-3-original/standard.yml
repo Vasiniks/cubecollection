@@ -1,0 +1,30 @@
+# variant: maru-vx-3-original--standard
+# Pass 4 (variant enumeration), Agent G. The base, non-magnetic VX-3 configuration already
+# sourced at model level (thecubicle-maru-vx-3). Magnetic configurations (M, Core M, Core M
+# MagLev) are separate variants below, per the pass-3 model record's own leads.
+id: maru-vx-3-original--standard
+entity: variant
+model_id: maru-vx-3-original
+name: "Maru VX-3"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-maru-vx-3]
+    note: "Differentiation search performed this pass via a `thecubicle.com/products/maru*` CDX
+      prefix sweep, which found three further magnetic-configuration product pages (VX-3 M,
+      VX-3 Core M, VX-3 Core M MagLev) — recorded as separate sibling variants below, per
+      DATA_MODEL §4.2 (magnet/core configuration sold as an option of one base design). This
+      base page itself states no magnet configuration and offers no other named edition."
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [thecubicle-maru-vx-3]
+    note: "The base VX-3's own product copy ('no frills or fancy features, just a plain 3x3')
+      and structured spec table give no magnet field, contrasted directly against the 'VX-3 M'
+      sibling's own magnetic description — read as `none` by contrast rather than a direct
+      'no magnets' statement on this exact page."
