@@ -52,7 +52,7 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   const v = run('validate.mjs', { dataRoot: FAIL });
   v.code === 1 ? ok('validate exits non-zero') : bad('validate exits non-zero', `exit ${v.code}`);
   const fired = rulesIn(v.out);
-  const expected = [2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 37, 38, 39];
+  const expected = [2, 3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 37, 38, 39, 44];
   const missing = expected.filter((r) => !fired.has(r));
   // Rule 9 has two distinct branches. Firing "9" at all does not prove the
   // publisher-independence branch works, so assert its message specifically.
@@ -103,6 +103,13 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   // proves only the conflict branch; a broken allowance would fire on every year-vs-month pair
   // and still pass that check. zz-ok-chronology-precision exists to be IGNORED, so assert its
   // absence too - the same lesson as rule 9, where a branch no fixture exercised was no guard.
+  // Rule 44 is a path/id invariant, and its most dangerous branch is the quiet one: a record
+  // whose model_id resolves perfectly while sitting in another model's directory. Nothing else
+  // catches that, so assert the directory message rather than the rule number.
+  /sits in directory .* but its model_id is/.test(v.out)
+    ? ok('rule 44 misfiled-variant branch fires', 'variant in the wrong model directory is caught')
+    : bad('rule 44 misfiled-variant branch fires', 'no misfiled-directory [44] message in validate output');
+
   // Rule 43 must police the whole confidence scale, not just one rung. The fail fixture happens
   // to exercise all three floors — confirmed, probable and reported — so assert the middle one
   // explicitly rather than trusting that firing 43 at all covers them.

@@ -321,6 +321,43 @@ for (const rec of records) {
       : `${p} is a numeric rarity score. Rarity stays qualitative; the exhibition derives any indicator at render time.`);
   }
 
+  // 44 — a variant's id, its file path and its model_id must agree
+  //
+  // The convention is `data/variants/<manufacturer>/<model-id>/<slug>.yml` holding
+  // `id: <model-id>--<slug>`. All 313 variants satisfied it when this was added, so it is a real
+  // invariant rather than an aspiration — but four parallel agents were about to write ~90 more,
+  // and a lane that quietly puts a record in the wrong directory produces a variant that
+  // resolves fine and is filed under the wrong product. Blocking, because a mismatch is always a
+  // mistake and never a judgement call.
+  // NOTE: the guard below is an `if`, not an early `return`. An earlier draft used `return`,
+  // which exits the whole per-record body and silently skipped every check after this point —
+  // selftest caught it immediately by failing rules 9 and 15.
+  if (rec.entity === 'variant' && doc.id && doc.model_id && rec.file.split('/').length === 5) {
+    // Only records stored in the nested convention claim a model directory; a flat path
+    // asserts nothing about its model, so there is nothing to contradict.
+    const parts = rec.file.split('/');            // data/variants/<mfr>/<model>/<slug>.yml
+    const dir = parts[3];
+    const slug = parts[4]?.replace(/\.yml$/, '');
+    if (dir && dir !== doc.model_id) {
+      report.error('44', rec.file, `sits in directory "${dir}" but its model_id is "${doc.model_id}". The path must name the model the variant belongs to.`);
+    }
+    // A SERVICE-modified variant derives from another variant, not from the model, so its id
+    // carries the base variant it was made from: <model>--<base>--<service>. Its filename names
+    // the service, not the id, and that is correct. Rule 44 learned this from the fixtures the
+    // first time it ran — check only the model prefix for those.
+    if (doc.service) {
+      if (!doc.id.startsWith(`${doc.model_id}--`)) {
+        report.error('44', rec.file, `has id "${doc.id}", which does not begin with its model id "${doc.model_id}--". A service variant is still identified by the model it modifies.`);
+      }
+    } else if (slug && doc.id !== `${doc.model_id}--${slug}`) {
+      report.error('44', rec.file, `has id "${doc.id}" but its path implies "${doc.model_id}--${slug}". A variant id is its model id, two hyphens, then its filename.`);
+    }
+    const parentMfr = byId.get(doc.model_id)?.doc?.manufacturer_id;
+    if (parentMfr && parts[2] && parts[2] !== parentMfr) {
+      report.error('44', rec.file, `is filed under manufacturer "${parts[2]}" but its model belongs to "${parentMfr}".`);
+    }
+  }
+
   // 15 — conditional admissions are argued, not asserted
   if (doc.scope_class === 'conditional') {
     // A variant is a configuration of its model, so a model that has already argued its

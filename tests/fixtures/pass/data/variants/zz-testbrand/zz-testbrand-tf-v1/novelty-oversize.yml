@@ -1,3 +1,6 @@
+# SYNTHETIC FIXTURE — renamed 2026-09-09 from novelty-conditional.yml so the filename
+# matches the id, per rule 44. The file was named for what it tests (conditional scope) rather
+# than for the variant it holds, which is exactly the drift rule 44 exists to catch.
 # SYNTHETIC FIXTURE — not archive data.
 # Every id here is prefixed zz- and every value is invented to exercise a rule.
 # Nothing in tests/fixtures is ever loaded into data/ or published.

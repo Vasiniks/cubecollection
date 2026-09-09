@@ -1,0 +1,18 @@
+# SYNTHETIC FIXTURE — engineered to FAIL rule 44.
+# Its id names a DIFFERENT model from the directory it sits in. Such a record resolves fine —
+# model_id points at a real model — so nothing else catches it, and the result is a variant that
+# validates while being filed under the wrong product. That is precisely the drift four parallel
+# agents writing variant records could introduce without anyone noticing.
+
+id: zz-bad-model--misfiled
+entity: variant
+model_id: zz-bad-model
+name: ZZ Misfiled Variant
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  "/edition/types":
+    confidence: reported
+    sources: [zz-samepub-a]
