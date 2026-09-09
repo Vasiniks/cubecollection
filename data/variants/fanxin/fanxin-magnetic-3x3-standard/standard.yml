@@ -1,0 +1,28 @@
+# variant: fanxin-magnetic-3x3-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/fanxin` sweep found exactly one URL for "FanXin Magnetic 3x3"
+# (fanxin-magnetic-3x3), with no sibling configuration, colourway edition, or tier name.
+id: fanxin-magnetic-3x3-standard--standard
+entity: variant
+model_id: fanxin-magnetic-3x3-standard
+name: "FanXin Magnetic 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-fanxin-3x3-products]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/fanxin found no sibling URL for this product beyond the single
+      already-on-file capture. No colourway edition, tier name, or limited/commemorative
+      status found. Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-3x3-products]
+    note: "The source's own description calls this 'a classic design with a papery/scratchy
+      feel', consistent with (but not a direct statement of) a stickerless body; held at
+      `uncertain`."

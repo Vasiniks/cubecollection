@@ -1,0 +1,28 @@
+# variant: kungfu-qinghong-3x3--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/kungfu` sweep found 9 captured URLs across the whole KungFu
+# product line; exactly one URL corresponds to this model, with no sibling configuration found.
+id: kungfu-qinghong-3x3--standard
+entity: variant
+model_id: kungfu-qinghong-3x3
+name: "KungFu QingHong 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-kungfu-qinghong-3x3-2021]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/kungfu found no sibling URL for this product beyond the single
+      already-on-file capture, and the pass-1 Speedsolving wiki mention names it without
+      further configuration detail. No colourway edition, tier name, or limited/commemorative
+      status found. Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-kungfu-qinghong-3x3-2021]
+    note: "Inferred from the absence of sticker language; not a direct 'stickerless'
+      statement."

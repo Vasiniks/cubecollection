@@ -324,6 +324,61 @@ baseline, no regressions).
 
 ---
 
+### KungFu (3 models — kungfu-dot-cube-3x3, kungfu-longyuan-3x3, kungfu-qinghong-3x3) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/kungfu` sweep found 9 captured URLs
+across the whole KungFu line (including a gear cube, two 4x4s, and a 2x2 outside this lane's
+scope); exactly one URL per model in scope, no sibling configurations for any of the three.
+Three bare `--standard` baselines created, each with a differentiation-search attestation.
+`kungfu-dot-cube-3x3--standard` inherits the model's own `scope_class: reference_only`; its
+colourway is read as `inlaid` (removable recessed colour tiles), the closest available
+vocabulary value for its own "plastic circular tiles... a tool to remove these tiles" design.
+No new sources needed.
+
+### NewIsland (3 models — newisland-lightning-original, newisland-lightning-v2,
+newisland-phoenix-standard) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/newisland` sweep found 5 captured URLs,
+confirming the model records' own prior finding (exactly three Newisland 3x3 lines exist,
+no further generations). Three bare `--standard` baselines created. No new sources needed. The
+standing rebrand suspicion against `qiyi-thunderclap` (customer-review opinion only, tier
+4-equivalent) already flagged and left unresolved on `newisland-lightning-original` is
+unchanged by this pass — not re-investigated, since it requires a direct mechanism comparison,
+not a variant-enumeration sweep.
+
+### FanXin (3 models — fanxin-3x3-standard, fanxin-hudong-3x3, fanxin-magnetic-3x3-standard) — DONE
+
+**fanxin-hudong-3x3** (3 variants — already explicitly flagged as "Pass 4's work to enumerate"
+on the frozen model record itself, which names "Standard," "Flagship UV," and "Ultra Maglev UV"
+configurations): a `scripts/wayback.mjs prefix thecubicle.com/products/fanxin` sweep (60+ URLs,
+truncated at tool limit, but the three HuDong tiers were all found before truncation) located
+each tier's own dedicated page:
+- `fanxin-hudong-3x3--standard` — blue adjustment system, matte finish, 79.0g.
+- `fanxin-hudong-3x3--flagship-uv` — green adjustment system, UV coating, 80.0g.
+- `fanxin-hudong-3x3--ultra-maglev-uv` — red adjustment system, MagLev (`ball_core_maglev`),
+  UV coating, 85.0g — the line's top tier.
+- New sources: `thecubicle-fanxin-hudong-light-3x3-standard-2024`,
+  `thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024`,
+  `thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024`.
+
+**fanxin-3x3-standard** and **fanxin-magnetic-3x3-standard** (1 baseline each): the same
+prefix sweep found exactly one URL per model, no sibling configuration found for either. No
+new sources needed.
+
+**Materiality calls:** the HuDong tiers' adjustment-system colour-coding (blue/green/red) is
+recorded only in each variant's own note, not as a modelled field — the schema has no
+dedicated hardware-colour field for this and it is secondary to the coating/MagLev
+differentiators that are the load-bearing materiality basis (rules 1 and 5).
+
+**Rejected candidates:** none for this trio — every HuDong tier URL found resolved into a
+real, sourced, materially distinct configuration; no further sibling was found for either
+single-model FanXin line.
+
+**Validation:** `npm run check` after this section — 0 errors, 38 warnings (merged-main
+baseline, no regressions).
+
+---
+
 ## Machine-readable summary (placeholder, to be replaced at end)
 ```yaml
 models_assessed: []

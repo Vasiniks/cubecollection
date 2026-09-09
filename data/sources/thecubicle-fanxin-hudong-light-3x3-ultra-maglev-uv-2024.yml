@@ -1,0 +1,32 @@
+# source: thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024
+# TheCubicle's own product page for "FanXin HuDong Light 3x3 (Ultra Maglev UV)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/fanxin` during Pass 4 (Agent H, Batch 2).
+id: thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024
+entity: source
+kind: retailer
+title: "FanXin HuDong Light 3x3 (Ultra Maglev UV) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fanxin-hudong-light-3x3-ultra-maglev-uv"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241008id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-ultra-maglev-uv"
+excerpt: |-
+  Product Description: "The FanXin HuDong is a huge step for FanXin hardware. This is an
+  extremely modern and competitive flagship 3x3... This cube has piece-to-piece magnetization,
+  an 8-magnet ball core with repelling edge magnets, and corner foot to edge foot magnets. This
+  is the Ultra Version which has a red adjustment system and a MagLev tensioning system that
+  uses opposing magnets instead of a spring. It also has a UV coating that adds a glossy outer
+  finish that can aid with grip." Structured "Product Specifications" table: "Manufacturer:
+  HuDong / Type: 3x3 / Added: 2024-10-04 / Gross Weight: 302g / Dimensions: 55.0mm3 / Magnets:
+  Magnetic / Item Weight: 85.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, structured spec table naming this
+  the 'Ultra Version' with an explicit colour-coded ('red') adjustment system, a MagLev
+  tensioning system ('opposing magnets instead of a spring'), and a UV coating — the line's
+  top tier by feature count, swapping the ball-core's spring for MagLev on top of the Flagship
+  UV's own coating."
+status: sourced

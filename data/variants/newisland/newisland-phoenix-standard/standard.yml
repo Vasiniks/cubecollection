@@ -1,0 +1,30 @@
+# variant: newisland-phoenix-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: see
+# newisland-lightning-original--standard.yml's header for the prefix sweep; exactly one URL
+# corresponds to this model, with no sibling configuration or "Phoenix V2" found (confirming
+# the model record's own prior finding).
+id: newisland-phoenix-standard--standard
+entity: variant
+model_id: newisland-phoenix-standard
+name: "Newisland Phoenix"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-newisland-phoenix-2019]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/newisland found no sibling URL for this product beyond the
+      single already-on-file capture, and no 'Phoenix V2' or second generation. No colourway
+      edition, tier name, or limited/commemorative status found. Read as the model's sole sold
+      configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-newisland-phoenix-2019]
+    note: "Inferred from the absence of sticker language (unlike the Lightning line's own
+      explicit 'extra set of factory stickers' mention); not a direct 'stickerless'
+      statement."

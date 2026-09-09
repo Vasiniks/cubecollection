@@ -1,0 +1,44 @@
+# variant: fanxin-hudong-3x3--standard
+# Pass 4. The Standard tier — matches the model's own default `core_system`/
+# `magnet_architecture` specs exactly. Per TheCubicle's own dedicated page: "the standard
+# version which has a blue adjustment system and a matte finish." Already flagged as pass-4
+# material directly on the frozen model record.
+id: fanxin-hudong-3x3--standard
+entity: variant
+model_id: fanxin-hudong-3x3
+name: "FanXin HuDong Light 3x3 (Standard)"
+scope_class: core
+config:
+  coating: matte
+  weight_g: 79.0
+edition:
+  types: [standard]
+  designation: "Standard"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-standard-2024]
+    note: "Differentiation search performed: a `scripts/wayback.mjs prefix
+      thecubicle.com/products/fanxin` sweep found the three tiers already named on the frozen
+      model record (Standard, Flagship UV, Ultra Maglev UV), each with its own dedicated URL.
+      No further edition or limited/commemorative status found for the Standard tier
+      specifically."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-standard-2024]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-standard-2024]
+    note: "'A blue adjustment system and a matte finish' — the matte finish maps to the
+      `matte` vocabulary value."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-standard-2024]
+    note: "Item Weight 79.0g, the source's own structured spec field."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-hudong-light-3x3-standard-2024]
+    note: "Inferred from the absence of sticker language; not a direct statement."
