@@ -14,6 +14,19 @@ smart:
   battery: "Two replaceable LR43 button batteries; ~150 hours playtime. Tracks moves but not orientation (no gyroscope)."
 status: stub
 attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-slug-prefix-2026]
+    note: "ASSESSMENT CLAIM, added 2026-09-09 closing part of ledger P4-5. This baseline carried
+      no /edition/types attestation and so asserted nothing while counting as coverage (rule 41).
+      WHAT WAS SEARCHED: the live 3x3 catalogues of TheCubicle, SpeedCubeShop and Cubelelo
+      (2026-09-09, zero SKUs - this model is discontinued and a live check is the wrong evidence
+      for it), then BOTH of TheCubicle's slug forms by CDX prefix, `gan-356-` and `gan356-`.
+      WHAT WAS FOUND: exactly one product path, `gan356-i-carry-e-3x3`, with no coated, edition or
+      configuration sibling under either form. The same enumeration DOES surface siblings where
+      they exist - three for the i Carry 2, four for the i Carry 4 - so a single path is a result
+      rather than a gap in the search. Bounds THIS retailer only; a configuration GAN sold that
+      TheCubicle never stocked would not appear."
   /smart/battery:
     confidence: probable
     sources: [thecubicle-gan356-i-carry-e]

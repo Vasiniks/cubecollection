@@ -1,0 +1,84 @@
+# source: thecubicle-gan356-slug-prefix-2026
+# Created 2026-09-09. The COMPANION sweep that the archive's GAN coverage never had: TheCubicle
+# files part of the GAN 356 line under `gan-356-` and the rest under `gan356-` with no hyphen,
+# and every prior sweep used only the first form. See ledger P26-3 for the failure mode.
+id: thecubicle-gan356-slug-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/gan356* — product URL enumeration (alternate slug form)"
+publisher: "TheCubicle"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/gan356&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=300"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of thecubicle.com/products/gan356 (captures through 2026), 33 distinct
+  product URLs, NOT truncated - well under the 300 limit used. Reproducible with
+  `npm run wayback -- prefix thecubicle.com/products/gan356 --limit 300`.
+
+  WHY THIS SWEEP EXISTS. The obvious prefix, thecubicle.com/products/gan-356-i, returns 27 URLs
+  of which all but two are the same two products repeated with tracking parameters. The hyphen
+  is the whole difference, and a sweep on one form reports "swept, nothing found" while missing
+  most of the line.
+
+  The 33 distinct product paths, verbatim:
+
+    gan356
+    gan356-air-m
+    gan356-i-carry-2-brainstorm-voyage-edition
+    gan356-i-carry-2-uv-3x3-10th-anniversary-edition
+    gan356-i-carry-4-3x3-frosted
+    gan356-i-carry-4-3x3-frosted-2026-year-of-the-horse-edition
+    gan356-i-carry-4-3x3-minions-edition
+    gan356-i-carry-4-3x3-ssl-le
+    gan356-i-carry-e-3x3
+    gan356-i-carry-s-3x3
+    gan356-i-charging-station
+    gan356-i-play
+    gan356-i2
+    gan356-i3-v2-3x3
+    gan356-m
+    gan356-m-3x3-uv-coated
+    gan356-m-lite
+    gan356-maglev-3x3
+    gan356-maglev-uv-3x3
+    gan356-me-3x3-2025-lunar-new-year-edition
+    gan356-me-3x3-uv-coated
+    gan356-me-brainstorm-voyage-edition
+    gan356-me-christmas-edition
+    gan356-me-uv-3x3-10th-anniversary-edition
+    gan356-me-v2-3x3
+    gan356-me-v2-3x3-uv-coated
+    gan356-r
+    gan356-rs
+    gan356-rs2-3x3
+    gan356-x
+    gan356-x-ipg-v5
+    gan356-xs
+    gan356-xs-project-
+
+  WHAT THIS ESTABLISHES FOR THE SMART LINE. Exactly ONE product path exists for each of
+  gan356-i-carry-e-3x3, gan356-i-carry-s-3x3, gan356-i2 and gan356-i3-v2-3x3 - no coated,
+  edition or configuration sibling under either slug form. By contrast the i Carry 2 has three
+  (base, UV coated, 10th Anniversary) and the i Carry 4 has four (frosted, Year of the Horse,
+  Minions, SSL LE), so the enumeration DOES surface siblings where they exist. A single path is
+  therefore a result, not a gap in the search.
+
+  NOT IN THE ARCHIVE AND NOT ACTIONED HERE: gan356-i-play, gan356-m-lite, gan356-x-ipg-v5, and
+  six named gan356-me editions (Christmas, 2025 Lunar New Year, Brainstorm Voyage, 10th
+  Anniversary, UV Coated, plus the me-v2 UV). Recorded so they are findable; acting on them is
+  model-layer work under P4-9, not this record's business. gan356-i-charging-station is an
+  accessory, not a puzzle.
+preservation_note: "CDX prefix enumeration output is the primary evidence and the locator is the
+  CDX query that reproduces it, per this archive's convention for sweeps that do not reduce to
+  one page's text (RESEARCH_SPEC 3.5). Run 2026-09-09."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: which product paths TheCubicle has ever published under this prefix, and
+  therefore that a model with exactly one path was not sold there in a second configuration.
+  DOES NOT ESTABLISH: anything about other retailers, or about configurations GAN sold that this
+  retailer never stocked. A single-path result bounds THIS retailer's catalogue, nothing wider.
+status: sourced
