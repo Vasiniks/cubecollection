@@ -1,0 +1,59 @@
+# variant: qiyi-m-pro-elite--smart-cube
+# Pass 4. The electronic sibling of the base Elite configuration, sold under the distinct
+# product name "QiYi Smart Cube 3x3" per TheCubicle's own rich product page (tier 2, first-party
+# — the strongest source found for this model). Per the model's own instruction, "Smart Cube
+# 3x3" is recorded as a sibling variant of this model, not folded into aliases (a genuinely
+# different sold product name) and not a separate model (DATA_MODEL section 4.1: smart/
+# electronic capability is a variant-level trigger). Represents the stickerless configuration;
+# the "Art Version" (black, rounded corners) is recorded separately (see
+# smart-cube-art-version.yml).
+id: qiyi-m-pro-elite--smart-cube
+entity: variant
+model_id: qiyi-m-pro-elite
+name: "QiYi Smart Cube 3x3"
+scope_class: core
+edition:
+  types: [standard, smart]
+colorway:
+  application: stickerless
+config:
+  magnet_configuration: dual_layer
+smart:
+  is_smart: true
+  connectivity: bluetooth
+  companion_app: "Smart Player"
+  note: "Per TheCubicle: three modes (individual exercise, global 1v1, room competition), over
+    800 hours of battery life, hand-adjustable tensions with a spare set of springs."
+relationships:
+  - type: smart_version_of
+    target: qiyi-m-pro-elite--standard
+    target_entity: variant
+    note: "The wiki's own cross-reference framing ('the non smart version of the Qiyi
+      Smartcube... the same adjustment system') is the sole basis for linking these two variants
+      of the same model; TheCubicle's own Smart Cube page does not itself name 'Elite'."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+    note: "'The stickerless version is built for speed and has squared-off corners for more
+      control.'"
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+    note: "'comes with 48 magnets in the corners and edges' — read as two positioning layers
+      (corner and edge); not a precise vocabulary match, recorded at reduced confidence."
+  /smart/is_smart:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+  /smart/companion_app:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source states the cross-reference; TheCubicle's own Smart
+      Cube page never names 'Elite'. See the model's own boundary-call note."

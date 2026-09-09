@@ -1,0 +1,58 @@
+# variant: qiyi-m-pro-elite--smart-cube-art-version
+# Pass 4. The "Art Version" colourway of the Smart Cube 3x3, per TheCubicle's own product page:
+# "The black version is the 'Art Version' which has rounded corners and gives you a very
+# nostalgic, black plastic with stickers look." A named, retailer/manufacturer-declared
+# colourway with a described physical difference (rounded vs. squared-off corners) from the
+# stickerless base, not a stock colour pick.
+id: qiyi-m-pro-elite--smart-cube-art-version
+entity: variant
+model_id: qiyi-m-pro-elite
+name: "QiYi Smart Cube 3x3 (Art Version)"
+scope_class: core
+edition:
+  types: [standard, smart]
+colorway:
+  designation: "Art Version"
+  application: stickered
+  body:
+    plastic_color_name: "black"
+config:
+  magnet_configuration: dual_layer
+smart:
+  is_smart: true
+  connectivity: bluetooth
+  companion_app: "Smart Player"
+relationships:
+  - type: smart_version_of
+    target: qiyi-m-pro-elite--art-version
+    target_entity: variant
+    note: "Both named 'Art Version' by their respective retailer/wiki sources; linked as the
+      electronic sibling of the mechanical Elite's own Art Version colourway."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+    note: "'a very nostalgic, black plastic with stickers look.'"
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+    note: "Same shared-shell inference as smart-cube.yml."
+  /smart/is_smart:
+    confidence: probable
+    sources: [thecubicle-qiyi-smart-cube-3x3-product]
+  /relationships/0:
+    confidence: uncertain
+    sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-smart-cube-3x3-product]
+    note: "Neither source directly links this specific colourway pairing; inferred from both
+      being independently named 'Art Version' for the mechanical and electronic siblings
+      respectively."

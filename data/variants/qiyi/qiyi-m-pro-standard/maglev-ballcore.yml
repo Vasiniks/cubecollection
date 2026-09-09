@@ -1,0 +1,34 @@
+# variant: qiyi-m-pro-standard--maglev-ballcore
+# Pass 4. A third configuration named only by the Speedsolving wiki's "multiple versions"
+# framing (Standard / Maglev / Maglev with Ballcore) — see the model's own description. No
+# retailer product page or collection slug for a "ballcore" M Pro variant was found this pass
+# (the 2024-2025 "qiyi-mofangge" collection enumeration lists only "qiyi-m-pro-3x3" and
+# "qiyi-m-pro-3x3-maglev", not a third slug), so this may have been discontinued, folded into
+# "M Pro V2" (a separate model), or renamed by the time of that capture. Existence rests on the
+# wiki alone, `reported`.
+id: qiyi-m-pro-standard--maglev-ballcore
+entity: variant
+model_id: qiyi-m-pro-standard
+name: "QiYi M Pro 3x3 (MagLev + Ballcore)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Maglev with Ballcore"
+config:
+  maglev: ball_core_maglev
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source; no retailer page or collection slug found this
+      pass to corroborate independently. Not present in the 2024-2025 collection enumeration —
+      possibly discontinued by then."
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Wiki names this tier 'Maglev with Ballcore' directly; read as the maglev+ball-core
+      combination vocabulary value."

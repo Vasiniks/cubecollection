@@ -1,0 +1,23 @@
+# variant: qiyi-m-pro-elite--standard
+# Pass 4. The base mechanical "M Pro Elite" configuration. This model itself is a frozen pass-3
+# boundary call folding "M Pro Elite" (mechanical) and "Smart Cube 3x3" (electronic) into one
+# model on a single tier-3(-overridden) wiki source — NOT relitigated here. No retailer page for
+# "Elite" by name was found in pass 3 or this pass under any tried slug; all detail rests on the
+# wiki alone. Per the wiki, this line "also came in a UV version and an Art version" — recorded
+# as sibling variants (uv.yml, art-version.yml). The electronic sibling is recorded separately
+# (see smart-cube.yml, smart-cube-art-version.yml), per the model's own instruction to leave
+# "Smart Cube 3x3" as a sibling variant name for this pass.
+id: qiyi-m-pro-elite--standard
+entity: variant
+model_id: qiyi-m-pro-elite
+name: "QiYi M Pro Elite"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-qiyi-products]
+    note: "Single tier-3(-overridden) source; no retailer corroboration of 'Elite' by name was
+      found in pass 3 or this pass."
