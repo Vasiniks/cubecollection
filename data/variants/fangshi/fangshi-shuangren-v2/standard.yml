@@ -1,0 +1,40 @@
+# variant: fangshi-shuangren-v2--standard
+# Pass 4. The 57mm assembled configuration — the model's own defining spec (size_mm 57.0,
+# weight_g 95). Corroborated independently by Cubezz (cubezz-fangshi-shuangren-ii, 57mm/94.0g,
+# already on file). Stock colours (White/Black/"Orignal Color") found across the assembled
+# 57mm listings (products 3722, 3756, 4378, 4379) are collapsed into this one variant per the
+# `gan-356-air--standard` precedent. A separately marketed DIY Kit configuration is recorded
+# as its own sibling (fangshi-shuangren-v2--diy-kit); no Mini/54.6mm size line was found for
+# this generation (Cubezz's own related-products rail for this generation lists the Mini as
+# belonging to the ORIGINAL, non-'II' generation instead — see fangshi-shuangren-original's own
+# Mini variants).
+id: fangshi-shuangren-v2--standard
+entity: variant
+model_id: fangshi-shuangren-v2
+name: "FangShi ShuangRen V2 (Assembled)"
+aliases:
+  - name: "Funs Puzzle ShuangRen II 3x3 Magic Cube (Assembled)"
+    retailer: "Cubezz.com"
+    source: cubezz-fangshi-shuangren-ii
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-fangshi-shuangren-v2, cubezz-fangshi-shuangren-ii]
+    note: "Differentiation search performed: a domain-wide Cubezz CDX substring search for
+      'shuangren' (80 rows) found this assembled 57mm configuration under three stock colour
+      names (White, Black, 'Orignal Color') plus a separately-packaged DIY Kit configuration
+      (see fangshi-shuangren-v2--diy-kit.yml). No Mini/54.6mm size line was found for the 'II'
+      generation specifically — Cubezz's own related-products rail for this generation points
+      to the Mini ShuangRen as belonging to the original (non-'II') generation instead. No
+      further limited/commemorative edition found."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Inferred from the absence of sticker language on the assembled configuration; not a
+      direct 'stickerless' statement."

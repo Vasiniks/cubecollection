@@ -1,0 +1,40 @@
+# variant: fangshi-jieyun-original--standard
+# Pass 4. The 57mm base configuration — the model's own defining spec (size_mm 57.0). A
+# 54.6mm "Mini JieYun" sibling, flagged as a within-family size-variant lead at family level
+# and previously unrecoverable at Pass 2.6, was resolved this pass via a Cubezz.com capture
+# (cubezz-fangshi-mini-jieyun) and is recorded as its own sibling variant
+# (fangshi-jieyun-original--mini).
+id: fangshi-jieyun-original--standard
+entity: variant
+model_id: fangshi-jieyun-original
+name: "FangShi JieYun (57mm)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "57mm"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-fangshi-jieyun, cubezz-fangshi-jieyun]
+    note: "Differentiation search performed: the size axis (57mm vs. the 54.6mm Mini) is the
+      only documented within-line configuration difference found across five retailers
+      (TheCubicle, Cubezz, LighTake, speedcube.com.au, SpeedCubeShop, per the frozen family
+      record's own sweep) plus this pass's own additional Cubezz domain-wide CDX search. No
+      colourway, edition, or coating differentiation was found for the 57mm size beyond stock
+      colour options; TheCubicle's own reviews describe the product generically, not by
+      colour variant."
+  /edition/designation:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-jieyun]
+    note: "'57mm' is this record's own distinguishing label (not a manufacturer-used
+      tier word) used to disambiguate this variant from its Mini sibling for fingerprint/
+      identity purposes; the product itself is simply named 'FangShi JieYun' with no size
+      suffix in any retailer title."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-jieyun]
+    note: "Inferred from the absence of sticker language on the 57mm product's own retailer
+      pages; not a direct 'stickerless' statement."

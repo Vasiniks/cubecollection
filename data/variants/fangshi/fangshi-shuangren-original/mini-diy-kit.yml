@@ -1,0 +1,59 @@
+# variant: fangshi-shuangren-original--mini-diy-kit
+# Pass 4. The 54.6mm "Mini ShuangRen" sold as an unassembled DIY Kit, per Cubezz.com
+# (cubezz-fangshi-mini-shuangren, products 3730/3734/3742 and a later 4480-4494 colour-combo
+# SKU batch). A DIY kit is packaged and sold as its own distinct SKU/price point (flat-pack
+# parts in an OPP bag, vs. the assembled configuration's cube-box carton) — a separately
+# marketed configuration per DATA_MODEL §4.2, not a bundle. The many body/cap colour
+# permutations found in the 4480-4494 SKU range (White/Transparent, Black/Transparent,
+# Pink/Blue, etc.) are collapsed into this one variant record — anti-explosion: no source
+# treats any specific colour combination as a separately named or marketed edition.
+id: fangshi-shuangren-original--mini-diy-kit
+entity: variant
+model_id: fangshi-shuangren-original
+name: "FangShi Mini ShuangRen (54.6mm, DIY Kit)"
+aliases:
+  - name: "Funs Puzzle ShuangRen 54.6mm 3x3 Magic Cube DIY Kit"
+    retailer: "Cubezz.com"
+    source: cubezz-fangshi-mini-shuangren
+  - name: "DIY Mini Funs Puzzle ShuangRen 54.6mm Speed Cube"
+    retailer: "Cubezz.com"
+    source: cubezz-fangshi-mini-shuangren
+scope_class: core
+config:
+  size_mm: 54.6
+edition:
+  types: [standard]
+  designation: "Mini DIY Kit (54.6mm)"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "Differentiation search performed (see fangshi-shuangren-original--standard.yml's
+      header). DIY kits are their own catalogue category on Cubezz with their own SKU
+      prefixes ('FSDIY...') and packaging language ('Packing: OPP Bag' / flat-pack 'Package
+      Size'), distinct from the assembled configuration's carton packaging — read as a
+      separately marketed configuration (unassembled parts sold as a kit), not a bundle or
+      accessory. No limited/commemorative language found for any colour permutation."
+  /config/size_mm:
+    confidence: probable
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "54.6mm, per the shared naming across every listing in this group ('...ShuangRen
+      546mm...') and the one representative colour-combo listing (product 4480) that states a
+      cube-size figure directly ('Size: 54.6*54.6*54.6mm')."
+  /edition/designation:
+    confidence: uncertain
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "'Mini DIY Kit (54.6mm)' is this record's own distinguishing label, matching
+      the 'DIY Kit' wording used across every listing in this group."
+  /colorway/application:
+    confidence: uncertain
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "Inferred from the absence of sticker language and the product category (a DIY body/
+      cap kit is plastic-colour-based, i.e. stickerless by construction); not independently
+      confirmed by an explicit 'stickerless' statement. `weight_g` deliberately left unset:
+      the group's own listings give three incompatible figures for what a DIY kit 'weighs'
+      (106g for one SKU batch's boxed-parts weight, 72g for a later batch's per-piece-set
+      weight) that are not the same measured quantity and are not reconciled here."

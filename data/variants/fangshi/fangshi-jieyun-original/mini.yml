@@ -1,0 +1,58 @@
+# variant: fangshi-jieyun-original--mini
+# Pass 4. A 54.6mm "Mini JieYun" size configuration, sold alongside the 57mm original per
+# Cubezz.com (cubezz-fangshi-mini-jieyun, Black SKU FunsJY2B and White SKU FunsJY2W, both
+# giving identical 54.6mm/80g specs). Read as a WITHIN-FAMILY SIZE VARIANT of this model, per
+# the archive's own `dayan-zhanchi` 42mm precedent already invoked by the frozen family record
+# (fangshi-jieyun.yml) — not a separate model. Black and White are collapsed into this one
+# variant record as stock colour options, following the `gan-356-air--standard` precedent (no
+# source treats them as separately named/marketed editions).
+id: fangshi-jieyun-original--mini
+entity: variant
+model_id: fangshi-jieyun-original
+name: "FangShi Mini JieYun (54.6mm)"
+aliases:
+  - name: "Funs Puzzle Mini JieYun 3x3x3 Speed Cube 54.6mm"
+    retailer: "Cubezz.com"
+    source: cubezz-fangshi-mini-jieyun
+scope_class: core
+config:
+  size_mm: 54.6
+  weight_g: 80
+edition:
+  types: [standard]
+  designation: "Mini (54.6mm)"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-fangshi-mini-jieyun]
+    note: "Differentiation search performed (see fangshi-jieyun-original--standard.yml's
+      header). Cubezz's own catalogue 'Brand: Funs Puzzle(JieYun)' field is identical to the
+      57mm original's own brand field, and its own related-products rail lists the 57mm
+      original as a direct sibling — read as a size configuration of the same design line, not
+      a design generation or separately marketed edition. No limited/commemorative language
+      found."
+  /edition/designation:
+    confidence: uncertain
+    sources: [cubezz-fangshi-mini-jieyun]
+    note: "'Mini (54.6mm)' is this record's own distinguishing label; Cubezz's own
+      product name uses 'Mini' plus the size figure directly ('Funs Puzzle Mini JieYun
+      3x3x3 Speed Cube 54.6mm')."
+  /config/size_mm:
+    confidence: probable
+    sources: [cubezz-fangshi-mini-jieyun]
+    note: "'Size: 54.6*54.6*54.6mm', corroborated identically across two independently
+      captured colourway listings (Black 2015-09-25, White 2016-02-26) of the same product."
+  /config/weight_g:
+    confidence: probable
+    sources: [cubezz-fangshi-mini-jieyun]
+    note: "'Weight: 80g', identical across both colourway captures."
+  /colorway/application:
+    confidence: uncertain
+    sources: [cubezz-fangshi-mini-jieyun]
+    note: "Inferred from the absence of sticker language; not a direct statement. Whether the
+      Mini shares the 57mm original's grooved-piece mould specifically is NOT resolved by this
+      source (no source describes the Mini's piece geometry at that level of detail) — left as
+      an open question for Pass 5, consistent with the frozen family record's own framing."

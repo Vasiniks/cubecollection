@@ -1,0 +1,34 @@
+# variant: fangshi-guangying-original--standard
+# Pass 4. Single-configuration baseline. Differentiation search: the frozen family record
+# (fangshi-guangying.yml) documents an explicit, repeated finding that "No 'Mini GuangYing' was
+# found at any of the four retailers" (TheCubicle, Cubezz, LighTake, speedcube.com.au) across
+# two dedicated investigations (Pass 3 Agent B, Pass 2.6 Agent A) — unlike ShuangRen and
+# JieYun, which both have a documented Mini sibling. This pass ran a further Cubezz domain-wide
+# CDX substring search for "mini"+"guangying" (per the technique already used successfully to
+# resolve Mini JieYun this pass) and found zero matches, extending the existing four-retailer
+# absence finding with an independent fifth check using a different search method.
+id: fangshi-guangying-original--standard
+entity: variant
+model_id: fangshi-guangying-original
+name: "FangShi GuangYing"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-fangshi-guangying, cubezz-fangshi-guangying, lightake-fangshi-guangying, speedcube-com-au-fangshi-guangying]
+    note: "Differentiation search performed: no second size, coating, colourway edition, or
+      limited/commemorative status was found for GuangYing at any of the four independent
+      retailers already on file for this model, nor at Cubezz via a fresh domain-wide CDX
+      substring search this pass ('mini'+'guangying', zero matches, extending the existing
+      finding recorded at family level). GuangYing is documented as 57mm-only; read as this
+      model's sole sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-guangying]
+    note: "Inferred from the absence of sticker language across all four retailer sources; not
+      a direct 'stickerless' statement for this specific product."

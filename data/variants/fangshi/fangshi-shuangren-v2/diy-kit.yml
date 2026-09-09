@@ -1,0 +1,46 @@
+# variant: fangshi-shuangren-v2--diy-kit
+# Pass 4. The 57mm DIY Kit configuration of ShuangRen V2/II, per Cubezz.com
+# (cubezz-fangshi-shuangren-ii-diy-kit): unassembled parts in an OPP bag with 6 loose stickers
+# included, distinct from the assembled configuration's stickerless factory body. Stock colour
+# SKUs (Original Color, White, Black — products 3725/3754/4380/4381) are collapsed into this
+# one variant.
+id: fangshi-shuangren-v2--diy-kit
+entity: variant
+model_id: fangshi-shuangren-v2
+name: "FangShi ShuangRen V2 (DIY Kit)"
+aliases:
+  - name: "Funs Puzzle ShuangRen II 3x3 Magic Cube DIY Kit"
+    retailer: "Cubezz.com"
+    source: cubezz-fangshi-shuangren-ii-diy-kit
+scope_class: core
+config:
+  weight_g: 114.0
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-fangshi-shuangren-ii-diy-kit]
+    note: "Differentiation search performed (see fangshi-shuangren-v2--standard.yml's header).
+      Cubezz's own DIY-kit listing is its own catalogue category (SKU 40235, distinct from the
+      assembled configuration's own SKU numbering) with its own packaging ('OPP bag') and
+      included-contents field ('6 x Stickers'), read as a separately marketed configuration,
+      not a bundle. No limited/commemorative language found for any colour permutation."
+  /config/weight_g:
+    confidence: probable
+    sources: [cubezz-fangshi-shuangren-ii-diy-kit]
+    note: "114.0g, the kit's own structured weight field — notably heavier than the assembled
+      configuration's 94-95g, consistent with a DIY kit's flat-pack parts-plus-packaging
+      weight convention rather than a comparable net cube weight; recorded as-is, not
+      reconciled against the assembled figure."
+  /colorway/application:
+    confidence: probable
+    sources: [cubezz-fangshi-shuangren-ii-diy-kit]
+    note: "The kit's own 'Package Content' field lists '6 x Stickers' as a separate included
+      item — this configuration ships as an unstickered body with a loose sticker set for the
+      buyer to apply, read as `stickered` (colour applied via stickers, not factory plastic
+      colour) per the vocabulary's own definition, distinct from the assembled configuration's
+      stickerless body."

@@ -192,6 +192,90 @@ within this section).
 
 ---
 
+### FangShi (4 models — fangshi-guangying-original, fangshi-jieyun-original,
+fangshi-shuangren-original, fangshi-shuangren-v2) — DONE
+
+Chased the "Mini JieYun" lead explicitly flagged as pass-4 material by the family record, and
+found it via a domain-wide Cubezz CDX substring search (`urlkey:.*mini.*jieyun.*`) — the same
+Cubezz page that Pass 2.6 recorded as "unrecoverable" via other retailers (speedcube.com.au,
+SpeedCubeShop, both dead/fetch-failed) turned out to be readable directly. The same technique,
+applied to "shuangren", surfaced Mini ShuangRen (original generation) and a DIY-kit
+configuration of ShuangRen V2/II, both already flagged as open pass-4 leads on the model
+records themselves.
+
+**fangshi-jieyun-original** (2 variants):
+- `fangshi-jieyun-original--standard` (57mm).
+- `fangshi-jieyun-original--mini` (54.6mm) — Cubezz's own 'Brand: Funs Puzzle(JieYun)' field
+  is identical to the 57mm original's, and its related-products rail lists the 57mm original
+  as a direct sibling, resolving the family record's own open question about whether the Mini
+  belongs to this design line (yes, on brand-field/catalogue grounds; the finer question of
+  whether it shares the specific grooved-piece mould remains unresolved and is left for Pass
+  5). Black/White stock colours collapsed into one variant.
+- New source: `cubezz-fangshi-mini-jieyun`.
+
+**fangshi-guangying-original** (1 baseline): `fangshi-guangying-original--standard`. Re-ran
+the "no Mini GuangYing" absence check via the same CDX technique (`urlkey:.*mini.*guangying.*`
+on cubezz.com) — zero matches, extending the family record's existing four-retailer absence
+finding with a fifth, independently-methoded check.
+
+**fangshi-shuangren-original** (3 variants — a domain-wide CDX sweep for "shuangren" (80
+distinct URLs) resolved the model's own already-flagged DIY-kit/Mini leads):
+- `fangshi-shuangren-original--standard` (57mm) — `uncertain`, single-source dependency
+  (TheCubicle alone; Cubezz's own 57mm listings are all explicitly "ShuangRen II").
+- `fangshi-shuangren-original--mini-assembled` (54.6mm, carton-packed).
+- `fangshi-shuangren-original--mini-diy-kit` (54.6mm, OPP-bag flat-pack) — a dozen+ body/cap
+  stock colour-combination SKUs (products 4480-4494) collapsed into this one variant;
+  confirmed to exist via CDX listing only, not individually fetched, per the anti-explosion
+  discipline once the colour-permutation pattern was established from one representative
+  fetch.
+- New source: `cubezz-fangshi-mini-shuangren`.
+
+**fangshi-shuangren-v2** (2 variants):
+- `fangshi-shuangren-v2--standard` (Assembled, 57mm) — corroborates the already-on-file
+  `cubezz-fangshi-shuangren-ii` source.
+- `fangshi-shuangren-v2--diy-kit` (57mm, OPP-bag, ships with 6 loose stickers included —
+  `colorway.application: stickered`, a materially different colourway application from the
+  assembled configuration's stickerless body).
+- New source: `cubezz-fangshi-shuangren-ii-diy-kit`.
+
+**Materiality calls:** DIY-kit-vs-assembled treated as a variant-level materiality axis per
+each model's own pre-existing description, which already cites DATA_MODEL §4.2 for this
+reading — not re-litigated here. Size (57mm vs. 54.6mm Mini) treated as a within-family/
+within-model size variant per the archive's own `dayan-zhanchi` 42mm precedent, already invoked
+by the frozen `fangshi-jieyun` family record. Every stock-colour SKU proliferation (Mini
+JieYun Black/White; Mini ShuangRen's dozen+ body/cap combinations; ShuangRen V2's White/Black/
+Original Color) was collapsed to one variant per configuration, per the `gan-356-air--standard`
+precedent — none is individually itemised as its own variant.
+
+**Fingerprint-collision fix:** the five FangShi "size/kit-only" variants (no coating/magnet/
+maglev/colourway-designation differentiator, since the distinguishing fact in every case is
+`config.size_mm` or packaging form, neither of which the archive's fingerprint function reads)
+initially collided pairwise on `check-duplicates`. Fixed by adding an `edition.designation`
+free-text label (e.g. "57mm", "Mini (54.6mm)", "Mini DIY Kit (54.6mm)") to each — explicitly
+attested as this record's own distinguishing label, not a manufacturer-used tier word, since
+none of these products carries an official tier name for its size/kit variant.
+
+**Rejected candidates:** none outright rejected — every lead chased this pass (Mini JieYun,
+Mini ShuangRen, ShuangRen V2 DIY Kit) resolved into a real, sourced variant. The individual
+body/cap colour-combination SKUs within the Mini ShuangRen DIY-kit group were the only
+candidates NOT built into their own variants (anti-explosion).
+
+**Leads not chased (recorded, not resolved):** (1) the Chinese-language lead for a first-party
+FangShi/Funs Puzzle source — Pass 2.6 already recorded this as exhausted for lack of a working
+WebSearch budget; not re-attempted this pass (this lane's WebSearch tool was not used, but the
+underlying blocker — no first-party FangShi domain in any language across six passes now — is
+unchanged). (2) SpeedCube.com.au's and SpeedCubeShop's own "Mini JieYun"/"Mini" slugs
+(`fangshi-jieyun-3x3x3-54-5mm-black-speed-cube`, `fangshi-jieyun-mini-3x3`) remain unfetched —
+the Cubezz capture found this pass was sufficient to build the variant, so these were not
+independently pursued to corroborate the 54.5mm-vs-54.6mm figure discrepancy Pass 2.6 flagged;
+recorded here as an open corroboration gap, not a contradiction.
+
+**Validation:** `npm run check` after this section — 0 errors, 38 warnings (merged-main
+baseline, no regressions; two transient fingerprint-collision duplicate warnings were caused
+and then fixed within this section).
+
+---
+
 ## Machine-readable summary (placeholder, to be replaced at end)
 ```yaml
 models_assessed: []
