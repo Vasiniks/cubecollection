@@ -854,6 +854,67 @@ and `scripts/check-privacy.mjs`.
     `zz-ok-chronology-precision` exists to be **ignored**, and the selftest asserts its absence
     from the output. A branch no fixture exercises is not a guard.
 
+### 7.10 Provenance and assertion integrity — advisory
+
+Rules 41–48 were added between 2026-09-08 and 2026-09-09. They share a shape: each catches
+something that is **schema-valid, plausible on its face, and wrong** — the class an ordinary
+check cannot see because nothing about the record looks unusual.
+
+41. **A model's sole variant is a bare `--standard` with no `/edition/types` attestation.**
+    Such a record counts as coverage while asserting nothing. A baseline claims *"assessed, one
+    configuration, nothing differentiated found"*; without the attestation recording what was
+    searched, it claims only that a file exists.
+
+42. **Records of one page are not independent sources.** Two records sharing a canonical page
+    *and* a capture are one observation under two ids, and an attestation citing both reads as
+    corroboration when it is a page agreeing with itself.
+
+    The **distinction inside this rule is the substance of it.** Two captures of one page are
+    *not* the same fault: `giiker-com-supercube-i3s-product-2022` (on sale) and `-2026-soldout`
+    (withdrawn) are how a discontinuation is evidenced at all, and no single capture carries that
+    claim. They remain one publisher and one page, so they can never *corroborate* — but they are
+    reported in weaker terms, for a human to confirm the claim is chronological. Reporting both
+    branches alike raised five false positives out of eight on real data.
+
+43. **A confidence its source tier cannot support.**
+
+44. **A variant's id, its file path and its `model_id` must agree.**
+
+45. **A gross or packaged weight is not a product weight.** Retailers publish both; the gross
+    figure includes the box and can exceed the puzzle by more than 100%. Sixteen records stored
+    the gross figure, and rule 18 caught two — **the rest sat comfortably inside its plausible
+    range.** A wrong value inside a plausible range is exactly what a range check cannot see, so
+    this rule matches on the *value* being one the sources call gross, not on a phrase appearing.
+
+46. **A size named in a variant's own designation must be expressed in `config`.** Twelve GuHong
+    variants were named "54mm"/"55mm"/"56mm" with the size present only in free text, so the
+    axis that distinguished them resolved to `undefined` while the records read as fully
+    specified.
+
+47. **An `archive_url` must name a capture, not ask for one.** *(added 2026-09-09)*
+    Wayback treats `/web/<timestamp>/<url>` as a *request* and 302s it to whatever capture is
+    nearest. A midnight-exact timestamp is a date typed by hand, so the evidence under the record
+    can move; a trailing `*` is a calendar search and preserves nothing at all. Ten of 480
+    archive URLs were midnight-exact — chance would put 0.0056 there.
+
+    **The damage was not only to preservation.** Rule 42 tells same-observation from
+    same-page-over-time by comparing capture ids, so a rounded timestamp *hides duplicate
+    evidence from the check built to find it*. Two Fanxin records proved to be one capture — the
+    first 302s to the second — and rule 42 could only see two different strings.
+
+48. **A spec value must appear in the sources its attestation cites.** *(added 2026-09-09)*
+    `schema/source.schema.json` requires an excerpt to "carry the claim without the page". Rule 6
+    checks a spec *has* an attestation; nothing checked the attested source *contains the value*.
+    Thirteen did not — and **all thirteen were correct**, confirmed by re-fetching. That is the
+    point: the values had been read off the page and never written down, so the archive held the
+    claim and a pointer but not the evidence.
+
+    The **allowance is fixtured separately and asserted to stay silent**: a value derived from a
+    source stating only ounces is absent by construction, so the rule accepts one whose note
+    documents the derivation *and* whose basis figure is preserved. Without
+    `zz-ok-derived-conversion` the rule would be indistinguishable from a ban on unit conversion.
+
+
 ### 7.6 Human gates
 
 - Family list reviewed before model enumeration opens

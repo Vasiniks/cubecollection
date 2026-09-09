@@ -3,20 +3,29 @@
 A collector-grade historical archive of 3×3 speedcubes, approximately 2016–2026, built to
 become an interactive digital exhibition.
 
-**Status: Pass 4 (variant enumeration) — every model assessed.** The archive holds
-**54 manufacturers · 132 families · 269 models · 485 variants · 534 sources**. The manufacturer,
-family and model layers are frozen; the variant layer beneath them has been populated for all
-269 models.
+**Status: Pass 4 complete — every model in the inventory assessed. The inventory itself is
+known to be incomplete.** The archive holds **54 manufacturers · 132 families · 269 models ·
+485 variants · 530 sources**. The manufacturer, family and model layers are frozen; the variant
+layer beneath them has been populated for all 269 models.
+
+**The known gap, stated up front rather than buried.** A live-catalogue enumeration of three
+retailers on 2026-09-09 found at least twelve manufacturer-branded 3×3 lines with no model in the
+frozen 269 — including **MoYu WeiLong V11 and X-Man Tornado V5, the current flagships of two
+major manufacturers**, and no QiYi smart cube at all. These were on sale for one to six years
+before the model enumeration ran. The evidence is preserved and the issue escalated as `P4-9`;
+nothing was added to the frozen taxonomy in response. See
+[`research/qc/post-pass4-qc.md`](research/qc/post-pass4-qc.md).
 
 Coverage is tracked honestly rather than optimistically: `npm run audit` reports how many models
 have actually been **assessed** for configuration axes, and a model at zero variants means *not
 yet researched* — never *researched and empty*. That distinction is the subject of
-`research/qc/p4-3-variant-semantics.md`.
+`research/qc/p4-3-variant-semantics.md`. The same principle applies one level up: "269 of 269
+models assessed" is a statement about the inventory, not a claim that the inventory is complete.
 
 ## Read in this order
 
 1. **[PRODUCT.md](PRODUCT.md)** — what this is, who it is for, what is in scope
-2. **[DATA_MODEL.md](DATA_MODEL.md)** — the schema and the quality-control rules (46 and counting; each was added because a defect got past the previous 45)
+2. **[DATA_MODEL.md](DATA_MODEL.md)** — the schema and the quality-control rules (48 and counting; each was added because a defect got past the previous 47)
 3. **[RESEARCH_SPEC.md](RESEARCH_SPEC.md)** — how research is done and what counts as evidence
 4. [docs/research-agents.md](docs/research-agents.md) — the agent team and what runs in parallel
 5. [docs/implementation-manifest.md](docs/implementation-manifest.md) — every file and why

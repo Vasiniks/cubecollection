@@ -172,8 +172,21 @@ wrong response — WeiLong V11's 14 SKUs are plainly variants of one model — a
 this raises about the other 268: the same wiki-led method was used across Pass 3, and this
 enumeration covers *one* retailer's collection.
 
+**Corroborated across two further retailers** the same day — SpeedCubeShop (265 products) and
+Cubelelo, India (69) — which widens the gap beyond MoYu and X-Man: **QiYi AI 3x3** (2 SKUs from
+2024-04-07, against 24 QiYi models of which **not one is a smart cube**, while the archive carries
+the smart lines of GAN, Giiker, Particula, Rubik's and MoreTry); **GAN 330 3x3 Mini**, listed
+2020-05-05 — **over six years** before Pass 3, against 132 GAN-attributed records; and
+**ShengShou Lustrous Light-Up 3x3**. Cubelelo is the non-US retailer §3.6a asks for, so this is
+corroboration rather than a repeat of one US catalogue.
+
+Lower-confidence candidates are recorded but deliberately **not counted**, because their scope is
+genuinely unsettled rather than because they are weak: DianSheng Big and Giant 3x3, MoYu and YJ
+3x3 Minis, Calvin's Puzzle printed and novelty lines.
+
 Pass 4's "269 of 269 models assessed" remains true exactly as stated. The inventory it assessed is
-what is incomplete.
+what is incomplete — and the README now says so in its opening paragraphs rather than leaving it
+to a ledger entry.
 
 ## Rules added, each from a real defect
 
