@@ -1,0 +1,32 @@
+# variant: moyu-rs3m-2020--uv
+# Pass 4. "MoYu RS3M 2020 UV" — a variant lead flagged directly on the model record. Wiki: "A
+# slight update to the RS3M 2020 adding UV coating and slightly stronger magnets... It is
+# currently the cheapest mass-produced UV-coated puzzle at 17.99 USD." No retailer or
+# manufacturer corroboration found this pass; single tier 3 source.
+id: moyu-rs3m-2020--uv
+entity: variant
+model_id: moyu-rs3m-2020
+name: "MoYu RS3M 2020 UV"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "UV"
+config:
+  coating: uv
+  adjustment_system: tension_compression
+  magnet_strength: "Slightly stronger than the base RS3M 2020, per the wiki, which describes the base version's magnets as notably weak."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/coating:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_strength:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/adjustment_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Described as an update to the base RS3M 2020, which carries this adjustment system; not independently restated for the UV configuration by the source."

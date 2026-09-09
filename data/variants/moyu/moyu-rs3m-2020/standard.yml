@@ -1,0 +1,33 @@
+# variant: moyu-rs3m-2020--standard
+# Pass 4. The base sold configuration. Wiki: "features magnets, a dual adjustment system in
+# which you could change the spring compression and a cheap price point of only $9... the
+# puzzle has very weak magnets." TheCubicle's own catalogue (thecubicle-com-moyu-3x3-collection-
+# 2021) independently confirms "MoYu RS3 M 2020 3x3" as a real, currently-sold listing.
+#
+# NOT created as a variant here: TheCubicle's own in-house tuning tiers of this SKU ("Angstrom
+# RS3 M 2020+ 3x3", "Mystic RS3 M 2020+ 3x3", "Pro Shop RS3 M 2020+ 3x3", "Celeritas RS3 M
+# 2020+ 3x3", "MAX RS3 M 2020+ 3x3", all named in the same catalogue capture). "Angstrom",
+# "Mystic", "Pro Shop", "Celeritas", and "MAX" are all recorded aliases of the `thecubicle`
+# manufacturer record (kind: service) — its own in-house setup/tuning programme names, not
+# separate manufacturer products — and no source located this pass describes any material
+# configuration difference (coating, magnet, core, or adjustment-system change) for these
+# tiers, only tuning/setup. Rejected per the anti-explosion rule against retailer SKUs and
+# factory lubrication/tuning tiers absent a documented material difference. See report.
+id: moyu-rs3m-2020--standard
+entity: variant
+model_id: moyu-rs3m-2020
+name: "MoYu RS3M 2020"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+  /config/adjustment_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'a dual adjustment system in which you could change the spring compression.'"
