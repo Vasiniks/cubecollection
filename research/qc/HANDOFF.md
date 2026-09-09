@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  bd10a1c
+HEAD:  8ccd38b
 DATE:  2026-09-09
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,12 +13,12 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      485
-sources:       531
+variants:      488
+sources:       538
 
 VALIDATION
-npm run check:         0 errors, 40 advisory  (13 r42 / 11 r41 / 11 r18 / 4 r40 / 1 r25)
-                       rule 49 closed: all 8 exclusions signed and reasoned
+npm run check:         0 errors, 31 advisory  (13 r42 / 11 r18 / 4 r40 / 2 r41 / 1 r25)
+                       rule 49 CLOSED (8 exclusions signed); rule 41 11 -> 2
                        now includes `npm run escalations`
 npm run audit:         advisory only, 9 sweeps
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched  (CLOSED)
@@ -60,8 +60,8 @@ NEXT ACTION
      not another retailer. SpeedCubeShop says "Ziina Star", TheCubicle says "Ziina"; all
      13 SpeedCubeShop listings are UV-printed, so the ONLY evidence of a base Ziina cube
      anywhere is one TheCubicle listing.
-  2. P4-5 — 11 GAN-pilot baselines assert nothing (11 of the 40 remaining warnings).
-     Needs real GAN smart-line research; do NOT backfill an unsubstantiated attestation.
+  2. P4-5 remainder: gan-356-i and monster-go-352-m. The latter needs GAN's OWN site —
+     TheCubicle never stocked a monstergo-352 path. Do NOT backfill either.
   3. P4-12..P4-16 newly filed and untouched — boundary / schema / naming / scope-class.
 
 RECOVERY NOTES

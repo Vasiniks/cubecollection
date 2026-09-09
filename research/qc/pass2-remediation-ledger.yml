@@ -1407,6 +1407,30 @@ issues:
       with an attestation and gan-356-air carries its colourway plus the note that established
       the archive's whole anti-explosion precedent. This is a gap in 11 specific records, not a
       fault in the pilot's method.
+      LARGELY CLOSED 2026-09-09, and closed the way this issue asked - by assessing, never by
+      backfilling. Rule 41: 11 -> 2.
+      The unlock was a METHOD finding, not effort: these are discontinued smart cubes with zero
+      SKUs in any live catalogue, so a live check is the wrong evidence for them. The archived
+      route only worked once the alternate SLUG FORM was found - `gan356-` not `gan-356-`,
+      `monstergo-` not `monster-go-`, `gan12-ui` not `gan-ui`. Every prior sweep used the
+      hyphenated form and returned almost nothing. Recorded under P26-3.
+      NINE ASSESSED. gan-356-i-carry-2 turned out to have THREE configurations (base, UV coated,
+      10th Anniversary Edition), all now recorded as variants. i-carry-e, i-carry-s, i2, i3-v2,
+      monster-go-3ai and swift-block-355-maglev each have exactly one product path and now say
+      so with the search recorded. gan-ui-12-freeplay has two paths and the second is a BUNDLE -
+      the with-PowerPod page describes the same cube and differs only in box contents.
+      ONE ASSESSMENT IS DELIBERATELY WEAKER THAN THE OTHERS. gan-ui-mini-freeplay has no path in
+      the enumeration at all, so its attestation records that one retailer did not stock it, NOT
+      that the model has one configuration. The stronger sentence would have been the exact
+      fabrication this issue warns against.
+      TWO REMAIN FLAGGED AND ARE NOT BACKFILLED: gan-356-i, and monster-go-352-m, whose evidence
+      is GAN's own site - the Monster Go sweep found no `monstergo-352` path of any form and
+      therefore cannot speak to it.
+      A note on what makes these claims evidence rather than failed searches, which each
+      attestation states: the same enumeration surfaces siblings where they exist - three paths
+      for the i Carry 2, four for the i Carry 4, six across the Monster Go line, two for the
+      Swift Block Super MagLev. A method that finds siblings when they are there and none when
+      they are not is evidence.
     recommendation: >-
       Do NOT backfill an attestation that cannot be substantiated - writing "assessed, nothing
       found" without having assessed would fabricate the exact claim rule 41 exists to protect.
