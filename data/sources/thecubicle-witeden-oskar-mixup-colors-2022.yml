@@ -1,0 +1,28 @@
+# source: thecubicle-witeden-oskar-mixup-colors-2022
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the WitEden & Oskar
+# 3x3x3 Mixup, re-fetched via Wayback to check for colourway/edition differentiation.
+id: thecubicle-witeden-oskar-mixup-colors-2022
+entity: source
+kind: retailer
+title: "WitEden & Oskar 3x3x3 Mixup – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-oskar-3x3x3-mixup"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220124034700id_/https://www.thecubicle.com/products/witeden-oskar-3x3x3-mixup"
+excerpt: |-
+  "Black - $34.99 USD" / "White - $34.99 USD" / "SELECTED: Black". A customer review on this
+  same page ("Kyle C.", "Stickers Wrong Colors") states: "the picture shows a regular
+  Orange/Red Blue/Green White/Yellow color scheme where as the one I got was Purple/Pink
+  Blue/Green Grey/Bone" — a single customer's account of a manufacturing/QC sticker-colour
+  discrepancy, not a marketed edition; tier 5, not used as evidence of a distinct colourway.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Only two stock body colours (Black, White) offered, no
+  separate edition/tier name — collapses into one baseline variant per the GAN356 Air
+  precedent. The one customer-review complaint about receiving an off-scheme sticker set is
+  Tier 5 (a customer review) per DATA_MODEL §5.1/rule 12 and is recorded here only to explain
+  why it is NOT treated as evidence of a marketed alternate colourway."
+status: sourced

@@ -1,0 +1,24 @@
+# source: thecubicle-witeden-super-3x3x3-colors-2022
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the WitEden Super
+# 3x3x3, re-fetched via Wayback to check for colourway/edition differentiation.
+id: thecubicle-witeden-super-3x3x3-colors-2022
+entity: source
+kind: retailer
+title: "WitEden Super 3x3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-super-3x3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20220124044125id_/https://www.thecubicle.com/products/witeden-super-3x3x3"
+excerpt: |-
+  "Black - $14.99 USD" / "White - $14.99 USD" / "SELECTED: Black". Product Description: "The
+  WitEden Super 3x3x3 features a circular structure on the white and yellow faces which can
+  only be turned by the middle layer. This allows it to be manipulated in more ways than a
+  conventional 3x3 cube can."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Two stock body colours only, no named edition — collapses
+  into one baseline variant per the GAN356 Air precedent."
+status: sourced

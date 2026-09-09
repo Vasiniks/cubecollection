@@ -1,0 +1,23 @@
+# variant: witeden-mixup-edge-split--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-witeden-mixup-edge-split-colors-2025) offers
+# only one purchasable colour (Black), unlike its Plus/Oskar/Camouflage/Super siblings which
+# offer Black and White. No edition name, coating, or further configuration axis found.
+id: witeden-mixup-edge-split--standard
+entity: variant
+model_id: witeden-mixup-edge-split
+name: "WitEden 3x3x3 Mixup (Edge-Split)"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from witeden-mixup-edge-split's model record. Rule 15 resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-witeden-mixup-edge-split-colors-2025]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2025-08-02 Wayback capture) offers only Black as a purchasable colour, with no alternate
+      colour, edition name, or other configuration axis found on this or any other source
+      consulted this pass."

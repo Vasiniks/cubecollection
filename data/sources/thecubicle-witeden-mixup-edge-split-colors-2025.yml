@@ -1,0 +1,23 @@
+# source: thecubicle-witeden-mixup-edge-split-colors-2025
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the WitEden 3x3x3
+# Mixup (Edge-Split), re-fetched via Wayback to check for colourway/edition differentiation.
+id: thecubicle-witeden-mixup-edge-split-colors-2025
+entity: source
+kind: retailer
+title: "WitEden 3x3x3 Mixup (Edge-Split) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-3x3x3-mixup-edge-split"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250802005751id_/https://www.thecubicle.com/products/witeden-3x3x3-mixup-edge-split"
+excerpt: |-
+  "$39.99 USD" / "Black - $39.99 USD" — a single colour option only, no alternate colour or
+  named edition offered.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Only one purchasable colour (Black) is offered for this
+  product, unlike its Plus/Oskar/Camouflage/Super siblings which offer Black and White — the
+  single stock colour is the baseline; no differentiated edition was found."
+status: sourced

@@ -1,0 +1,23 @@
+# source: thecubicle-witeden-mixup-30-degree-turn-colors-2025
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the WitEden 3x3x3
+# Mixup (30-Degree Turn), re-fetched via Wayback to check for colourway/edition differentiation.
+id: thecubicle-witeden-mixup-30-degree-turn-colors-2025
+entity: source
+kind: retailer
+title: "WitEden 3x3x3 Mixup (30-Degree Turn) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-3x3x3-mixup-30-degree-turn"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250801151223id_/https://www.thecubicle.com/products/witeden-3x3x3-mixup-30-degree-turn"
+excerpt: |-
+  "Black - $34.99 USD" — a single colour option only. Product Description: "The WitEden 3x3x3
+  Mixup (30-Degree Turn) turns like a standard 3x3 puzzle until you figure out how to unlock
+  the inner layers. (Hint is in the name)"
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Only one purchasable colour (Black) is offered; no
+  differentiated edition or second colourway was found."
+status: sourced

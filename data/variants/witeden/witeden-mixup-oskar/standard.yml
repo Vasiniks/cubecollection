@@ -1,0 +1,33 @@
+# variant: witeden-mixup-oskar--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-witeden-oskar-mixup-colors-2022) was checked
+# for colour options, an edition/tier name, and any second configuration. It offers two stock
+# body colours (Black, White) at one price with no separate edition name, and no other
+# colourway, coating, core, or magnet configuration was found on any source consulted this pass
+# (manufacturer site, retailer listing, no community release thread located). Per the GAN356
+# Air precedent (data/variants/gan/gan-356-air/standard.yml), the two stock colours collapse
+# into one baseline rather than exploding into two variants. A single Tier 5 customer review
+# describing a mis-sorted sticker set received in error is NOT treated as a colourway (see the
+# cited source's own note).
+id: witeden-mixup-oskar--standard
+entity: variant
+model_id: witeden-mixup-oskar
+name: "WitEden & Oskar 3x3x3 Mixup"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from witeden-mixup-oskar's model record. Rule 15 resolves through the parent; a variant does
+# not restate its model's argument (DATA_MODEL §3.8).
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-witeden-oskar-mixup-colors-2022]
+    note: "Differentiation search performed: TheCubicle's own live product page (2022 Wayback
+      capture) offers Black and White as stock body colours at one price, no separate edition/
+      tier name. No other colourway, coating, or configuration axis was found for this product
+      across the manufacturer site, retailer listings, or a general web check this pass. Read
+      as the model's regular/only sold configuration. Colourway body/face detail is left unset
+      per pass-4 stub scope (identity and aliases only); a lone customer review mentioning
+      'stickers' is Tier 5 and not used to assert application here."

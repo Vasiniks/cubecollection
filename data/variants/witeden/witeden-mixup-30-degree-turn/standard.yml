@@ -1,0 +1,23 @@
+# variant: witeden-mixup-30-degree-turn--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-witeden-mixup-30-degree-turn-colors-2025)
+# offers only one purchasable colour (Black). No edition name or further configuration axis
+# found.
+id: witeden-mixup-30-degree-turn--standard
+entity: variant
+model_id: witeden-mixup-30-degree-turn
+name: "WitEden 3x3x3 Mixup (30-Degree Turn)"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from witeden-mixup-30-degree-turn's model record. Rule 15 resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-witeden-mixup-30-degree-turn-colors-2025]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2025-08-01 Wayback capture) offers only Black as a purchasable colour, with no alternate
+      colour, edition name, or other configuration axis found on this or any other source
+      consulted this pass."

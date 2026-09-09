@@ -1,0 +1,31 @@
+# source: thecubicle-mf8-crazy-3x3-planets-assorted-color-2020
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the earlier
+# (pre-"Plus") mf8-crazy-3x3-planets model, re-fetched via Wayback to check for a per-planet
+# choice or colourway differentiation, unlike its later "Plus" generation sibling.
+id: thecubicle-mf8-crazy-3x3-planets-assorted-color-2020
+entity: source
+kind: retailer
+title: "mf8 Crazy 3x3 Planets (Assorted) – TheCubicle (colour options)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mf8-crazy-3x3-planets-assorted"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200925205947id_/https://www.thecubicle.com/products/mf8-crazy-3x3-planets-assorted"
+excerpt: |-
+  "Black - $18.99 USD" / "Color -->" / "Black" / "SELECTED: Black" — a single purchasable
+  colour option, with no per-planet selector of the kind later offered on the "Plus" generation
+  (contrast speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025's nine-way Version selector).
+  Product is sold as a randomised "Assorted" planet, per its own product name and description
+  ("You can complete your collection by collecting all of the planets!" —
+  speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015), not as a buyer-selectable named planet.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. This earlier generation offers no buyer-facing named-planet
+  or colourway choice — 'Black' is the only listed purchase option, and the individual planet
+  received is evidently assigned at random per the product's own 'Assorted' framing and
+  'collect them all' marketing. This is read as ONE sold configuration for variant purposes,
+  unlike the later 'Plus' generation's nine explicitly named, individually selectable
+  Version options."
+status: sourced

@@ -1,0 +1,37 @@
+# source: speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025
+# Pass 4 (variant enumeration), Agent G. SpeedCubeShop's own "Version" selector on the Mf8
+# Crazy 3x3 Plus Planet (Earth) product page, confirming the full nine-way named colourway
+# axis directly (the pass-3 model record's own description already summarised this selector;
+# this source re-fetches and quotes it verbatim to attest it properly at pass 4). A dedicated
+# `speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-*` CDX prefix sweep this pass
+# independently confirms eight of the nine (Earth, Jupiter, Mars, Mercury, Neptune, Saturn,
+# Uranus, Venus) each also exist as their own standalone product slug; "Black" was not found as
+# a separate standalone slug, only as a "Version" option on the individually-named pages and
+# as the shared body colour of all eight planets in the 8-piece bundle SKU (see
+# speedcubeshop-mf8-crazy-3x3-plus-planet-series-8-versions-2024).
+id: speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025
+entity: source
+kind: retailer
+title: "Mf8 Crazy 3x3 Plus Planet Earth – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-earth"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250104145237id_/https://speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-earth"
+excerpt: |-
+  "Mf8 Crazy 3x3 Plus Planet Earth ... $22.95 ... Version / Earth / Jupiter / Mars / Mercury /
+  Neptune / Saturn / Uranus / Venus / Black". Description: "Mf8 Crazy 3x3 Plus Planet Earth is
+  a 3x3 with crazy cuts that vary by each version adding to the challenge. Collect the entire
+  series!" Product Details: "Type / Shape Mod", "Brand / Mf8", "Magnets None", "Size / 57 mm".
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer, structured Version selector directly naming nine distinct
+  configurations of one product listing. Each name (the eight planets plus 'Black') is read as
+  a manufacturer-facing named colourway/pattern per DATA_MODEL §3.6 and the materiality rule
+  ('colourway or sticker type' differs -> new variant), on the same precedent already applied
+  in this archive to DaYan's Bermuda Triangle planet colourways
+  (data/variants/dayan/dayan-bermuda-triangle/earth.yml). All nine share one price ($22.95) and
+  one spec table; only the pattern/colourway differs, not the mechanism, core, or magnets."
+status: sourced
