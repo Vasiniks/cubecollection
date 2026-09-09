@@ -1646,6 +1646,27 @@ issues:
       Master" is Rubik's parent company, a corporate label rather than a brand, and the six lines
       under it are licensed prints the archive already handles correctly as variants of
       rubiks-classic-cube.
+      DECORATOR-VS-MANUFACTURER QUESTION ANSWERED 2026-09-09, and it was the first thing this
+      issue said had to be settled. Evidence preserved as
+      data/sources/thecubicle-ziina-space-magnetic-3x3-2025.yml.
+      "Ziina Space Magnetic 3x3" is described by the retailer as "a budget-friendly 3x3 with
+      great turning right out of the box... as with most budget puzzles, a little set-up goes a
+      long way", with a full specification table reading "Manufacturer: Ziina", "Dimensions:
+      56.0mm3", "Item Weight: 68.0g". No reference to printing, decoration or artwork anywhere
+      on the page. That is a BASE SPEEDCUBE sold under the Ziina name, not a decorated cube made
+      by someone else. A second Ziina line, "Lite-Super", IS a printed edition ("premium
+      UV-printed surface"), so Ziina sells both - which is exactly what LeFun does, and this
+      archive already models LeFun as a manufacturer with variant-level print themes.
+      So Ziina is not merely a decorator, and RESEARCH_SPEC 2.3 is satisfied on materiality: the
+      product has a name, a manufacturer and specifications a record can hold.
+      WHAT IS STILL NOT ESTABLISHED, and blocks admission rather than merely qualifying it: WHO
+      MAKES IT. A retailer "Manufacturer" field records who the brand is sold as, not who
+      produced it, and the archive has OEM and rebrand rules (2.3, rule 17) precisely because
+      those differ. Ziina could be an independent maker, a house brand of an existing
+      manufacturer, or an OEM rebrand - and the third case would make it a variant layer under
+      someone else rather than a 55th manufacturer. Both corroborating structures (the spec
+      table and the products.json vendor field) come from ONE retailer, so they confirm the
+      attribution and not the brand.
     counterevidence: >-
       Ziina's catalogue is dominated by printed novelty themes, and the archive's scope rules
       exclude novelties while admitting printed EDITIONS of real cubes - the LeFun precedent

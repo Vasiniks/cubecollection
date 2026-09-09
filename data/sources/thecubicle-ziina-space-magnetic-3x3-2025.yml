@@ -1,0 +1,50 @@
+# source: thecubicle-ziina-space-magnetic-3x3-2025
+# Created 2026-09-09 by the post-Pass-4 QC phase to settle ONE question in escalation P4-10:
+# is Ziina a MANUFACTURER, or a decorator that prints other people's cubes? The distinction
+# decides whether Ziina belongs in the entity register at all, and it had to be answered before
+# any record was created. No manufacturer, family or model was created from this source.
+id: thecubicle-ziina-space-magnetic-3x3-2025
+entity: source
+kind: retailer
+title: "Ziina Space Magnetic 3x3 — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/ziina-space-magnetic-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250525061502id_/https://www.thecubicle.com/products/ziina-space-magnetic-3x3"
+excerpt: |-
+  Product Description: "The Ziina Space Magnetic 3x3 is a budget-friendly 3x3 with great turning
+  right out of the box. But as with most budget puzzles, a little set-up goes a long way. Give
+  this one a try and see what all of the buzz is about!"
+
+  Product Specifications table, transcribed verbatim from the capture: "Manufacturer: Ziina",
+  "Dimensions: 56.0mm³", "Item Weight: 68.0g", "Gross Weight: 123g". The gross figure is recorded
+  only so a future reader can see which number was NOT taken as a product weight.
+
+  WHAT THIS SETTLES. The description contains no reference to printing, decoration or artwork,
+  and the page carries a full specification table for the puzzle itself. This is a base
+  speedcube sold under the Ziina name, not a decorated cube made by someone else — which is the
+  question P4-10 could not answer from vendor strings alone. Ziina's other ~50 listings at this
+  retailer ARE printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong), and
+  a brand that sells both a base cube and printed editions of it is doing what LeFun does, which
+  this archive already models as a manufacturer with variant-level print themes.
+preservation_note: "Both the live page (fetched 2026-09-09) and the archived 2025-05-25 capture
+  were fetched and checked to carry the same description and the same four specification fields.
+  The archived capture is recorded as the locator because it is pinned."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer product page, and specifically the retailer's OWN structured
+  "Manufacturer" field rather than a brand inferred from the product title. The vendor field in
+  the same storefront's products.json independently reads "Ziina", so two separate structures on
+  one retailer agree — which is corroboration of the ATTRIBUTION but NOT independent evidence of
+  the brand, since both come from TheCubicle.
+  ESTABLISHES: that a base 3x3 speedcube is sold under the Ziina name with those specifications,
+  and therefore that Ziina is not merely a decorator.
+  DOES NOT ESTABLISH: who manufactures it, whether Ziina is a house brand of an existing
+  manufacturer, a release date, or whether Ziina warrants its own entity record. A retailer's
+  "Manufacturer" field records who the brand is sold as, not who made it — the archive's own
+  rebrand and OEM rules (RESEARCH_SPEC 2.3) exist precisely because those differ.
+status: sourced
