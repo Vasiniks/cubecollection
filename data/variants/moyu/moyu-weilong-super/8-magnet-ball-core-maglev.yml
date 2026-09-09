@@ -1,0 +1,33 @@
+# variant: moyu-weilong-super--8-magnet-ball-core-maglev
+# Pass 4. One of three configurations named directly by the wiki: "8-magnet ball-core with
+# maglev."
+id: moyu-weilong-super--8-magnet-ball-core-maglev
+entity: variant
+model_id: moyu-weilong-super
+name: "MoYu WeiLong Super (8-Magnet Ball-Core, MagLev)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "8-Magnet Ball-Core MagLev"
+config:
+  core_system: ball_core
+  maglev: maglev
+  magnet_strength: "8-magnet ball-core, per the wiki's three-way split for this model."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki names this configuration verbatim within its three-way split for this model."
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/core_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_strength:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
