@@ -1,0 +1,40 @@
+# variant: pbcube-wr-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/pbcube` sweep found exactly one URL, matching the model
+# record's own finding (only one capture exists at all, and the product was still
+# "[Pre-Order]" at that capture). The product's own title states the full configuration this
+# baseline records: "PBCube WR 3x3 (20-Magnet Ball-Core + MagLev + UV)".
+id: pbcube-wr-standard--standard
+entity: variant
+model_id: pbcube-wr-standard
+name: "PBCube WR 3x3 (20-Magnet Ball-Core + MagLev + UV)"
+scope_class: core
+config:
+  coating: uv
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/pbcube found only this one capture, itself still marked
+      '[Pre-Order]' — the product had not reached general retail circulation as of the only
+      evidence found anywhere this pass (TheCubicle, Cubelelo, Cubezz all checked, per the
+      model record's own sweep). No sibling configuration was found, but given the pre-order
+      status this cannot be read as confirming no further configuration will ever exist —
+      held at `uncertain` rather than `probable` for that reason. No colourway edition or
+      limited/commemorative status found beyond the model's own single named configuration."
+  /config/coating:
+    confidence: uncertain
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Read from the product's own title ('...+ UV'), not a structured coating field or
+      descriptive sentence in the excerpt captured this pass — the same title-only basis
+      already used for this model's own `core_system`/`maglev` specs."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-pbcube-wr-3x3-maglev-uv]
+    note: "Inferred from the absence of sticker language; not a direct statement."

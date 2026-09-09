@@ -1,0 +1,27 @@
+# variant: newisland-lightning-v2--standard
+# Pass 4. Single-configuration baseline. Differentiation search: see
+# newisland-lightning-original--standard.yml's header for the prefix sweep; exactly one URL
+# corresponds to this model, with no sibling configuration found.
+id: newisland-lightning-v2--standard
+entity: variant
+model_id: newisland-lightning-v2
+name: "Newisland Lightning V2"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning-v2-2019]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/newisland found no sibling URL for this product beyond the
+      single already-on-file capture. No colourway edition, tier name, or
+      limited/commemorative status found. Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-newisland-lightning-v2-2019]
+    note: "The source's own description states the box includes 'an extra set of factory
+      stickers', consistent with a factory-stickered (not stickerless) sold product."

@@ -1,0 +1,29 @@
+# variant: mohuanshousu-chufeng-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/mohuan` sweep found exactly one 3x3 URL
+# (mohuan-shousu-chufeng-3x3) alongside one unrelated 2x2 (ChuWen), reconfirming the model
+# record's own prior finding of no second MoHuanShouSu-branded 3x3.
+id: mohuanshousu-chufeng-standard--standard
+entity: variant
+model_id: mohuanshousu-chufeng-standard
+name: "MoHuan ShouSu ChuFeng"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mohuan-shousu-chufeng-2020, cubelelo-mohuanshousu-chufeng-2016]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/mohuan found no sibling URL for this product beyond the single
+      already-on-file capture. The independent Cubelelo (India) capture corroborates
+      existence but no additional configuration. No colourway edition, tier name, or
+      limited/commemorative status found. Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-mohuan-shousu-chufeng-2020]
+    note: "Inferred from the absence of sticker language; not a direct 'stickerless'
+      statement."

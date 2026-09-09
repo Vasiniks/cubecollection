@@ -1,0 +1,54 @@
+# source: cubezz-fangshi-mini-shuangren
+# Cubezz.com product pages for "Funs Puzzle Mini ShuangRen 54.6mm" (the original, non-"II"
+# generation), found via a domain-wide CDX substring search (`urlkey:.*shuangren.*` on
+# cubezz.com) during Pass 4 (Agent H, Batch 2). Resolves the "Mini ShuangRen" and "DIY Kit"
+# leads already flagged as pass-4 material on the frozen model record
+# (fangshi-shuangren-original.yml: "a smaller 'Funs Puzzle Mini ShuangRen 54.6mm 3x3 Magic
+# Cube' size line... sold both as a DIY Kit... and Assembled").
+id: cubezz-fangshi-mini-shuangren
+entity: source
+kind: retailer
+title: "Funs Puzzle Mini ShuangRen 54.6mm 3x3 Magic Cube (Assembled and DIY Kit) - Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-3743-Funs+Puzzle+ShuangRen+546mm+3x3+Magic+Cube+Assembled+White.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20141227190122id_/http://cubezz.com:80/Buy-3743-Funs+Puzzle+ShuangRen+546mm+3x3+Magic+Cube+Assembled+White.html"
+excerpt: |-
+  ASSEMBLED (product 3743, "...Assembled White", capture 2014-12-27, SKU 43547):
+  "Specifications: Color: White / Brand: FS Puzzle / Weight: 82.0g / Cube Size: 54.6 x 54.6 x
+  54.6mm / Packing Size: 56.0 x 56.0 x 56.0mm / Packing: Graphic carton." An earlier,
+  plainer-named sibling listing (product 3724, "Funs Puzzle Mini ShuangRen 546mm 3x3 Magic
+  Cube White", capture 2014-01-10, SKU 66079) gives: "Brand: FS / Type: 3x3x3 / Model:
+  ShuangRen / Package Dimensions: 60*60*60mm / Weight: 84g" — same size class, no DIY/kit
+  language, read as the same assembled configuration under an earlier SKU/listing.
+
+  DIY KIT (product 3730, "...DIY Kit White", capture 2014-01-10, SKU 39632): "Specifications:
+  Brand: FS / Type: 3x3x3 / Model: ShuangRen / Package Size: 190*130*40mm / Weight: 106g /
+  Packing: OPP Bag" — a flat-pack parts weight and bag packaging, distinct from the assembled
+  configuration's carton/cube-box packing. A later, differently-numbered DIY-kit SKU batch
+  (products 4480-4494, "DIY Mini Funs Puzzle ShuangRen 546mm Speed Cube [body colour] Body
+  [cap colour] Caps", captures 2015-02 to 2015-04) offers roughly a dozen body/cap colour
+  permutations (White/Transparent, Black/Transparent, Pink/White, Pink/Blue, Blue/Black,
+  Black/Blue, Blue/Pink, Pink/Transparent, Transparent/Pink, Blue/Transparent,
+  Transparent/Blue, plus solid Blue/Transparent/Pink single-colour listings) at 54.6mm each
+  (representative capture, product 4480: "Brand: Funs Puzzle (FangShi) / Color: White Body
+  Transparent Caps / Size: 54.6*54.6*54.6mm / Weight: 72g", SKU FSDIYWT) — read as stock body/
+  cap colour options of one DIY-kit product line, not separate products (anti-explosion; no
+  source treats any specific colour combination as a separately named or marketed edition).
+preservation_note: "Retrieved via `scripts/wayback.mjs get` for the representative captures
+  quoted above (products 3743, 3724, 3730, 4480); the remaining colour-combination SKUs in the
+  4481-4494 range were confirmed to exist via CDX listing only, not individually fetched, per
+  the anti-explosion discipline (colour-only SKU proliferation is not chased into content for
+  every permutation once the pattern is established)."
+accessed: "2026-09-09"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer, non-US/English retailer per RESEARCH_SPEC
+  3.6a. All quoted listings share the manufacturer attribution already established for
+  fangshi-shuangren-original ('Brand: FS' / 'FS Puzzle' / 'Funs Puzzle (FangShi)', 'Model:
+  ShuangRen', with no 'II' suffix anywhere), and the DIY-kit vs. assembled distinction is
+  stated structurally (different packaging language, different weight conventions, different
+  SKU prefixes: numeric assembled SKUs vs. 'FSDIY'-prefixed kit SKUs) rather than inferred."
+status: sourced

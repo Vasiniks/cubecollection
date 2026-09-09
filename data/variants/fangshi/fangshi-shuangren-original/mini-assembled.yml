@@ -1,0 +1,56 @@
+# variant: fangshi-shuangren-original--mini-assembled
+# Pass 4. A 54.6mm "Mini ShuangRen" size configuration, sold pre-assembled, per Cubezz.com
+# (cubezz-fangshi-mini-shuangren, products 3743/3724, SKUs 43547/66079). Read as a
+# WITHIN-FAMILY SIZE VARIANT of this model, following the same `dayan-zhanchi`-precedent
+# reasoning already applied to fangshi-jieyun-original's own Mini sibling. Stock body colours
+# (White/Black) are collapsed into this one variant per the `gan-356-air--standard` precedent.
+id: fangshi-shuangren-original--mini-assembled
+entity: variant
+model_id: fangshi-shuangren-original
+name: "FangShi Mini ShuangRen (54.6mm, Assembled)"
+aliases:
+  - name: "Funs Puzzle ShuangRen 54.6mm 3x3 Magic Cube Assembled"
+    retailer: "Cubezz.com"
+    source: cubezz-fangshi-mini-shuangren
+scope_class: core
+config:
+  size_mm: 54.6
+  weight_g: 82.0
+edition:
+  types: [standard]
+  designation: "Mini Assembled (54.6mm)"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "Differentiation search performed (see fangshi-shuangren-original--standard.yml's
+      header). Cubezz's own catalogue field ('Brand: FS' / 'FS Puzzle', 'Model: ShuangRen', no
+      'II' suffix) matches the original (non-V2) generation. Packaging language ('Packing:
+      Graphic carton') and weight class (82-84g) distinguish this from the DIY Kit
+      configuration's flat-pack packaging and different weight convention (106g, boxed parts).
+      No limited/commemorative language found."
+  /config/size_mm:
+    confidence: probable
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "'Cube Size: 54.6 x 54.6 x 54.6mm', product 3743's own structured field."
+  /config/weight_g:
+    confidence: uncertain
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "82.0g per product 3743; a sibling listing (3724) gives 84g for the same
+      configuration under a different, earlier SKU — the same ordinary catalogue rounding
+      variance already documented elsewhere in this archive for FangShi products (e.g.
+      fangshi-shuangren-v2's own 95g/94g gap). 82.0g (the more specific, decimal figure) is
+      recorded; held at `uncertain` given the two-listing spread."
+  /edition/designation:
+    confidence: uncertain
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "'Mini Assembled (54.6mm)' is this record's own distinguishing label; Cubezz's
+      own listings use 'Mini ShuangRen 546mm' or plain 'ShuangRen 546mm... Assembled'
+      naming, with no single consistent tier word across the two listing generations."
+  /colorway/application:
+    confidence: uncertain
+    sources: [cubezz-fangshi-mini-shuangren]
+    note: "Inferred from the absence of sticker language; not a direct statement."

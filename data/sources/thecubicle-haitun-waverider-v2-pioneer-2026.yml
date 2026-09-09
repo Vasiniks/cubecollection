@@ -1,0 +1,36 @@
+# source: thecubicle-haitun-waverider-v2-pioneer-2026
+# TheCubicle's own product page for "HaiTun Waverider V2 3x3 (Pioneer)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/haitun` during Pass 4 (Agent H, Batch
+# 2). The family record (haitun-waverider.yml) already names a Pioneer tier within V2; this is
+# the dedicated page for it.
+id: thecubicle-haitun-waverider-v2-pioneer-2026
+entity: source
+kind: retailer
+title: "HaiTun Waverider V2 3x3 (Pioneer) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-pioneer"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260207124243id_/https://www.thecubicle.com/products/haitun-waverider-3x3-v2-pioneer"
+excerpt: |-
+  Product Description: "Introducing the HaiTun Waverider V2 3x3 (Pioneer) – the cutting-edge
+  second-generation 3x3 speedcube from boutique manufacturer HaiTun. The Pioneer edition is
+  engineered to deliver an elite cubing experience... 3D Accelerated Magnetic Positioning:
+  Features a unique 26-point core with up to 94 magnet positions... Fully Customizable Feel:
+  Enjoy 8 levels of spring compression and 8 levels of center tension for 64 fine-tunable
+  tactile combinations... Complete Accessory Kit: Includes a 2x2/3x3 carry case, cube stand,
+  adjustment tool, wipe cloth, detailed tutorial, instructions, and collector's ID card – all
+  presented in a premium gift box." Structured "Product Specifications" table: "Manufacturer:
+  HaiTun / Type: 3x3 Speed Cubes / Added: 2026-02-03 / Gross Weight: 280g / Magnets: Magnetic."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Its own copy ('94 magnet
+  positions', '64 fine-tunable tactile combinations', the same accessory kit, same 280g gross
+  weight, same 2026-02-03 Added date) is close to indistinguishable from the Flagship tier's
+  own page — the tier NAME itself (DATA_MODEL variant-materiality rule 7, the manufacturer's
+  own edition/tier word) is the load-bearing differentiator here, not a documented hardware
+  difference. Recorded as-is rather than adjudicated; see this model's Pioneer variant record."
+status: sourced

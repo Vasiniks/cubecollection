@@ -1,0 +1,36 @@
+# variant: guoguan-yuexiao-pro--standard
+# Pass 4. The non-magnetized baseline — the model's own page states directly "this particular
+# variant is not magnetized" while noting "slots for magnets to be easily added." Distinguished
+# from the factory-magnetized "Pro M" sibling found this pass
+# (guoguan-yuexiao-pro--m).
+id: guoguan-yuexiao-pro--standard
+entity: variant
+model_id: guoguan-yuexiao-pro
+name: "GuoGuan YueXiao Pro"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Non-Magnetic"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-pro-2018]
+    note: "Differentiation search performed: a `scripts/wayback.mjs prefix
+      thecubicle.com/products/guoguan` sweep found exactly one sibling configuration for this
+      model, the factory-magnetized 'Pro M' (recorded separately). TheCubicle's own page
+      states directly 'this particular variant is not magnetized' — explicit first-party
+      confirmation this is the non-magnetic configuration specifically, not merely the absence
+      of a magnet claim. No colourway edition or limited/commemorative status found."
+  /edition/designation:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-pro-2018]
+    note: "'Non-Magnetic' is this record's own distinguishing label, not a manufacturer/
+      retailer tier word — used only to disambiguate this variant from 'Pro M' for
+      fingerprint/identity purposes."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-pro-2018]
+    note: "Inferred from the absence of sticker language; not a direct statement."

@@ -1,0 +1,27 @@
+# source: thecubicle-lefun-halloween-cube-3x3-2022
+# TheCubicle's own product page for "Lefun Halloween Cube 3x3", found via `scripts/wayback.mjs prefix
+# thecubicle.com/products/lefun` during Pass 4 (Agent H, Batch 2). One of the many named
+# print-theme editions of the base LeFun 3x3 mould, per the frozen model record's own
+# established pattern (four other themes tested in Pass 3 found only print-content
+# differences, no mechanism/tooling claim).
+id: thecubicle-lefun-halloween-cube-3x3-2022
+entity: source
+kind: retailer
+title: "Lefun Halloween Cube 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-halloween-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230129id_/https://www.thecubicle.com/products/lefun-halloween-cube-3x3"
+excerpt: |-
+  Product Description: "The Lefun Halloween Cube is a 3x3 with printed faces rather than stickers. Each side displays a unique Halloween design from ghosts, jack-o-lanterns, haunted houses, to one side that even says \"Happy Halloween!\" Get it, display it, solve it, you won't be disappointed!" Structured "Product Specifications" table: "Manufacturer: Lefun / Type: 3x3 / Added: 2022-10-19 / Gross Weight: 69g / Dimensions: 56.5mm3 / Item Weight: 57.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Describes only a print/graphic
+  content difference from the base LeFun 3x3 mould ('standard, non-magnetic 3x3' language
+  where present), consistent with the pattern the frozen model record already established for
+  this line — no core, mechanism, or tooling claim differs."
+status: sourced

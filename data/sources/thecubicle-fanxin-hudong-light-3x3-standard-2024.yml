@@ -1,0 +1,34 @@
+# source: thecubicle-fanxin-hudong-light-3x3-standard-2024
+# TheCubicle's own product page for "FanXin HuDong Light 3x3 (Standard)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/fanxin` during Pass 4 (Agent H, Batch 2).
+# One of three configuration tiers already named on the frozen model record
+# (fanxin-hudong-3x3.yml: "Sold in 'Standard,' 'Flagship UV,' and 'Ultra Maglev UV'
+# configurations").
+id: thecubicle-fanxin-hudong-light-3x3-standard-2024
+entity: source
+kind: retailer
+title: "FanXin HuDong Light 3x3 (Standard) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241009id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+excerpt: |-
+  Product Description: "The FanXin HuDong is a huge step for FanXin hardware. This is an
+  extremely modern and competitive flagship 3x3. Every version has tension and compression
+  adjustments. We have tested all versions and they all have amazing performance. This cube
+  has piece-to-piece magnetization, an 8 magnet ball-core with repelling edge magnets, and
+  corner foot-to-edge foot magnets. This is the standard version which has a blue adjustment
+  system and a matte finish." Structured "Product Specifications" table: "Manufacturer: HuDong
+  / Type: 3x3 / Added: 2024-10-04 / Gross Weight: 293g / Dimensions: 55.0mm3 / Magnets:
+  Magnetic / Item Weight: 79.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, structured spec table naming this
+  the 'standard version' with an explicit colour-coded ('blue') adjustment system and a matte
+  finish, distinguishing it from the Flagship UV and Ultra Maglev UV siblings by adjustment-
+  system colour and coating."
+status: sourced

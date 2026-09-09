@@ -1,0 +1,32 @@
+# variant: cubestyle-3x3-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/cubestyle` sweep (30+ URLs, truncated at tool limit) found
+# exactly one plain, undecorated CubeStyle 3x3 URL (cubestyle-3x3); the Carbon Fiber and Hollow
+# Sticker decorated resticker products under the same brand name are excluded from this family
+# entirely (DATA_MODEL §4.3 aftermarket resticker products of other manufacturers' cubes, per
+# the frozen family record), not sibling configurations of this model.
+id: cubestyle-3x3-standard--standard
+entity: variant
+model_id: cubestyle-3x3-standard
+name: "CubeStyle 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-cubestyle-3x3]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/cubestyle found no sibling URL for the plain (non-resticker)
+      product beyond the single already-on-file capture, reconfirming the model record's own
+      prior finding. No colourway edition, tier name, or limited/commemorative status found.
+      Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-cubestyle-3x3]
+    note: "Customer reviews on the source page describe it as a stickerless budget 3x3
+      comparable to the Valk 3 and Warrior W; not a direct 'stickerless' statement from the
+      retailer's own structured fields."

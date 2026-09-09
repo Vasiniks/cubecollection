@@ -1,0 +1,36 @@
+# source: thecubicle-guoguan-yuexiao-pro-m-2019
+# TheCubicle's own product page for "GuoGuan YueXiao Pro M," found via `scripts/wayback.mjs
+# prefix thecubicle.com/products/guoguan` during Pass 4 (Agent H, Batch 2). Already named as
+# a lead on the frozen model record (guoguan-yuexiao-pro.yml: "the magnetized configuration is
+# sold separately as 'YueXiao Pro M,' a variant of this same model"); fetched and actioned here.
+id: thecubicle-guoguan-yuexiao-pro-m-2019
+entity: source
+kind: retailer
+title: "GuoGuan YueXiao Pro M - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/guoguan-yuexiao-pro-m"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190824id_/https://www.thecubicle.com/products/guoguan-yuexiao-pro-m"
+excerpt: |-
+  Product Description: "The GuoGuan YueXiao Pro M is the factory-magnetized version of the
+  YueXiao Pro. It features magnets placed in special slots in the corners and edges to
+  provide a more tactile and comfortable cubing experience. The YueXiao Pro M is packaged
+  inside a specially-marked display box, and it includes extra magnets, a mini screwdriver,
+  tensioning tools, a cube stand, and a collectible MoYu card. Available in Black and
+  Stickerless Bright plastic." Structured "Product Specifications" table: "Manufacturer:
+  GuoGuan / Type: 3x3 / Gross Weight: 177g / Added: 2018-09-11 / Dimensions: 55.5mm3 / Item
+  Weight: 91.2g." Colour options offered: "Black - $26.99 USD" / "Stickerless (Bright) -
+  $26.99 USD".
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, explicitly and directly naming
+  this 'the factory-magnetized version of the YueXiao Pro' — the sibling configuration the
+  Pro model's own page describes only by exclusion ('this particular variant is not
+  magnetized'). Also independently mentions 'a collectible MoYu card' in the included
+  accessories, consistent with the GuoGuan/MoYu relationship already recorded elsewhere in
+  this archive."
+status: sourced

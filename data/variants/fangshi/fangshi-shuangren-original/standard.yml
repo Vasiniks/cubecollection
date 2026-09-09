@@ -1,0 +1,39 @@
+# variant: fangshi-shuangren-original--standard
+# Pass 4. The 57mm base configuration — the model's own defining spec. Per the model record's
+# own sweep, no independent second retailer was found selling the plain, non-Mini, non-'II'
+# 57mm generation; existence rests on TheCubicle's own discontinuation-notice page alone
+# (thecubicle-fangshi-shuangren-v2, which preserves the original's own spec table). A
+# 54.6mm "Mini ShuangRen" sibling, sold both Assembled and as a DIY Kit, is recorded separately
+# (fangshi-shuangren-original--mini-assembled, fangshi-shuangren-original--mini-diy-kit).
+id: fangshi-shuangren-original--standard
+entity: variant
+model_id: fangshi-shuangren-original
+name: "FangShi ShuangRen (57mm)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "57mm"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Differentiation search performed: this pass ran a domain-wide Cubezz CDX substring
+      search for 'shuangren' (80 rows) and found no plain 57mm, non-'II' listing — every
+      57mm Cubezz result is explicitly 'ShuangRen II' (fangshi-shuangren-v2's own line); the
+      only 57mm-original evidence remains TheCubicle's single discontinuation-notice page,
+      already the sole source for this model's own existence. No colourway or coating
+      differentiation was found for the 57mm size beyond generic descriptions. Held at
+      `uncertain` given the single-source dependency for the entire 57mm configuration."
+  /edition/designation:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "'57mm' is this record's own distinguishing label (not a manufacturer-used
+      tier word), used to disambiguate this variant from its Mini siblings for
+      fingerprint/identity purposes."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fangshi-shuangren-v2]
+    note: "Inferred from the absence of sticker language; not a direct statement."

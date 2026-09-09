@@ -1,0 +1,33 @@
+# variant: guojia-type-a-chun2--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/type-a-chun` and `.../guojia*` sweep found only this one DIY
+# kit URL for the whole GuoJia Type A Chun line at generation 2, no sibling configuration.
+id: guojia-type-a-chun2--standard
+entity: variant
+model_id: guojia-type-a-chun2
+name: "GuoJia Type A Chun2 (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: hybrid
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/type-a-chun and .../guojia found no sibling URL for this product
+      beyond the single already-on-file capture. The model's own page states directly 'It is
+      currently only available in DIY Kit form' — a direct first-party statement that no
+      assembled/alternate configuration exists. No colourway edition or limited/commemorative
+      status found."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "'Only available in DIY Kit form' — a DIY kit of this era is conventionally sold as
+      an unstickered body with stickers included for the buyer to apply, though the source
+      does not itself describe the sticker/colour arrangement explicitly; read as `hybrid`
+      per the same DIY-kit convention already documented elsewhere in this report (FangShi,
+      GuoGuan), held at `probable` rather than `confirmed` since this specific page does not
+      itemise stickers the way those other DIY-kit pages did."

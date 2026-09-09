@@ -1,0 +1,47 @@
+# variant: fanxin-hudong-3x3--ultra-maglev-uv
+# Pass 4. The Ultra Maglev UV top tier. Per TheCubicle's own dedicated page: "the Ultra Version
+# which has a red adjustment system and a MagLev tensioning system that uses opposing magnets
+# instead of a spring. It also has a UV coating." Swaps the ball-core's spring for MagLev on
+# top of the Flagship UV's own coating.
+id: fanxin-hudong-3x3--ultra-maglev-uv
+entity: variant
+model_id: fanxin-hudong-3x3
+name: "FanXin HuDong Light 3x3 (Ultra Maglev UV)"
+scope_class: core
+config:
+  maglev: ball_core_maglev
+  coating: uv
+  weight_g: 85.0
+edition:
+  types: [standard]
+  designation: "Ultra"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024]
+    note: "Differentiation search performed (see fanxin-hudong-3x3--standard.yml's header).
+      No limited/commemorative language found; this is the line's top tier by feature count."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024]
+    note: "The retailer's own page names this 'the Ultra Version'; the URL/title-level 'Ultra
+      Maglev UV' combines the tier word with its two feature differentiators."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024]
+    note: "'A MagLev tensioning system that uses opposing magnets instead of a spring',
+      combined with the model's own shared 8-magnet ball-core default, maps to
+      `ball_core_maglev`."
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-hudong-light-3x3-ultra-maglev-uv-2024]
+    note: "Inferred from the absence of sticker language; not a direct statement."

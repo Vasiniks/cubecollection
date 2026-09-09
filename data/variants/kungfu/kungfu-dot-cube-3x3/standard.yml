@@ -1,0 +1,31 @@
+# variant: kungfu-dot-cube-3x3--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/kungfu` sweep found 9 captured URLs across the whole KungFu
+# product line; exactly one URL corresponds to this model (kungfu-dot-cube-3x3), with no
+# sibling configuration, colourway edition, or tier name found.
+id: kungfu-dot-cube-3x3--standard
+entity: variant
+model_id: kungfu-dot-cube-3x3
+name: "KungFu Dot Cube 3x3"
+scope_class: reference_only
+edition:
+  types: [standard]
+colorway:
+  application: inlaid
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-kungfu-dot-cube-3x3-2020]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/kungfu found no sibling URL for this product beyond the single
+      already-on-file capture. No colourway edition, tier name, or limited/commemorative
+      status found. Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-kungfu-dot-cube-3x3-2020]
+    note: "The model's own defining feature is 'plastic circular tiles on each face' with 'a
+      tool to remove these tiles... allowing for a changeable color scheme' — read as
+      `inlaid` (colour applied via a removable recessed tile insert) as the closest available
+      vocabulary reading of a tile-based face treatment; not a direct 'inlaid' statement from
+      the source."

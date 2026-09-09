@@ -1,0 +1,36 @@
+# variant: guoguan-yuexiao-original--standard
+# Pass 4. The assembled, factory-stickered baseline configuration — the model's own defining
+# spec (thecubicle-guoguan-yuexiao-2025: Item Weight 86.0g, Dimensions 56.0mm). Distinguished
+# from a DIY-kit configuration found this pass (guoguan-yuexiao-original--diy-kit-unstickered).
+id: guoguan-yuexiao-original--standard
+entity: variant
+model_id: guoguan-yuexiao-original
+name: "GuoGuan YueXiao"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Assembled"
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-guoguan-yuexiao-2025]
+    note: "Differentiation search performed: a `scripts/wayback.mjs prefix
+      thecubicle.com/products/guoguan` sweep found 13 captured URLs across the whole GuoGuan
+      YueXiao/XingHen line; for this specific model, exactly one sibling configuration was
+      found (a DIY-kit, unstickered, unlubricated sale — recorded separately) alongside this
+      standard assembled configuration. No colourway edition or limited/commemorative status
+      found for the standard configuration."
+  /edition/designation:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-2025]
+    note: "'Assembled' is this record's own distinguishing label, not a manufacturer/retailer
+      tier word — used only to disambiguate this variant from the DIY-kit sibling for
+      fingerprint/identity purposes."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-guoguan-yuexiao-2025]
+    note: "Inferred by contrast with the DIY-kit sibling's own explicit 'comes... without any
+      stickers' language; not a direct 'stickered' statement for this specific configuration."

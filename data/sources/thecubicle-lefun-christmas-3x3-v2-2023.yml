@@ -1,0 +1,27 @@
+# source: thecubicle-lefun-christmas-3x3-v2-2023
+# TheCubicle's own product page for "Lefun Christmas 3x3 V2", found via `scripts/wayback.mjs prefix
+# thecubicle.com/products/lefun` during Pass 4 (Agent H, Batch 2). One of the many named
+# print-theme editions of the base LeFun 3x3 mould, per the frozen model record's own
+# established pattern (four other themes tested in Pass 3 found only print-content
+# differences, no mechanism/tooling claim).
+id: thecubicle-lefun-christmas-3x3-v2-2023
+entity: source
+kind: retailer
+title: "Lefun Christmas 3x3 V2 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-christmas-3x3-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230131id_/https://www.thecubicle.com/products/lefun-christmas-3x3-v2"
+excerpt: |-
+  Product Description: "The Lefun Christmas 3x3 V2 is a standard, non-magnetic 3x3 with festive holiday images on every side! Celebrate Christmas in cuber style with this beautiful 3x3 from Lefun." Structured "Product Specifications" table: "Manufacturer: Lefun / Type: 3x3 / Added: 2022-11-29 / Gross Weight: 70g / Dimensions: 57.0mm3 / Item Weight: 62.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Describes only a print/graphic
+  content difference from the base LeFun 3x3 mould ('standard, non-magnetic 3x3' language
+  where present), consistent with the pattern the frozen model record already established for
+  this line — no core, mechanism, or tooling claim differs."
+status: sourced

@@ -1,0 +1,37 @@
+# variant: fanxin-hudong-3x3--flagship-uv
+# Pass 4. The Flagship UV tier. Per TheCubicle's own dedicated page: "the Flagship version
+# which has a green adjustment system and UV Coating, a glossy outer coating that can aid with
+# grip."
+id: fanxin-hudong-3x3--flagship-uv
+entity: variant
+model_id: fanxin-hudong-3x3
+name: "FanXin HuDong Light 3x3 (Flagship UV)"
+scope_class: core
+config:
+  coating: uv
+  weight_g: 80.0
+edition:
+  types: [standard]
+  designation: "Flagship UV"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024]
+    note: "Differentiation search performed (see fanxin-hudong-3x3--standard.yml's header).
+      No limited/commemorative language found beyond the tier name and coating."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024]
+    note: "Inferred from the absence of sticker language; not a direct statement."

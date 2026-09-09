@@ -1,0 +1,51 @@
+# variant: huameng-ys3m-v1--ball-core-uv-maglev
+# Pass 4. The fourth and top documented YS3M configuration, combining the ball-core+MagLev
+# mechanism with a UV coating, per TheCubicle's own dedicated product page: "the Ball-Core UV
+# (Magnetic Core + MagLev) version... This one also has a UV coating or 'Magic Clothes' as MoYu
+# puts it."
+id: huameng-ys3m-v1--ball-core-uv-maglev
+entity: variant
+model_id: huameng-ys3m-v1
+name: "HuaMeng YS3M 3x3 (Ball-Core UV + MagLev)"
+scope_class: core
+config:
+  maglev: ball_core_maglev
+  core_system: ball_core
+  coating: uv
+  weight_g: 83.0
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev]
+    note: "Differentiation search performed (see huameng-ys3m-v1--standard.yml's header, plus
+      a dedicated wayback prefix sweep of thecubicle.com/products/huameng-ys3m and the
+      alternate slug prefix huameng-ys3-m, both checked this pass). This is the fourth and last
+      documented YS3M configuration; no further sibling, colourway, or limited-edition name was
+      found for this generation."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev]
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev]
+    note: "Retailer's own description directly attributes MoYu's own branded term for this UV
+      coating ('Magic Clothes... as MoYu puts it') to this specific product — further,
+      unresolved corroboration of the open MoYu-affiliation lead already flagged at the
+      family/model level; not acted on here (manufacturer boundaries frozen for this pass)."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev]
+    note: "Item Weight 83.0g, the source's own structured spec field, identical to the
+      non-UV Ball-Core + MagLev sibling."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev]
+    note: "Inferred from the absence of sticker language; not a direct statement."

@@ -1,0 +1,32 @@
+# source: thecubicle-haitun-waverider-v1-limited-edition-2024
+# TheCubicle's own product page for "HaiTun Waverider V1 3x3 (Limited Edition)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/haitun` during Pass 4 (Agent H, Batch
+# 2). Already named by URL only on the model record (haitun-waverider-v1.yml, "found by URL
+# only... not independently fetched this pass"); fetched and actioned here.
+id: thecubicle-haitun-waverider-v1-limited-edition-2024
+entity: source
+kind: retailer
+title: "HaiTun Waverider V1 3x3 (Limited Edition) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/haitun-waverider-v1-3x3-limited-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240520001456id_/https://www.thecubicle.com/products/haitun-waverider-v1-3x3-limited-edition"
+excerpt: |-
+  Product Description: "This is the same HaiTun Waverider V1 Flagship 3x3 that we all know and
+  love, but this one is a limited edition. Only 200 have been produced worldwide! It comes
+  unstickered, with a set of stickers. Get yours today before they're gone!" Structured
+  "Product Specifications" table: "Manufacturer: HaiTun / Type: 3x3 / Added: 2024-05-02 / Gross
+  Weight: 216g / Dimensions: 56.0mm3 / Magnets: Magnetic / Item Weight: 82.0g." A single
+  customer review mentions buying it "bc it's blue" (Tier 5, not used as a colourway source).
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, explicit run-size statement ('Only
+  200 have been produced worldwide') and an explicit basis for this being a configuration of
+  the Flagship tier specifically ('the same HaiTun Waverider V1 Flagship 3x3... but this one is
+  a limited edition'), not a separate mechanism. Single source for the run size; no second
+  retailer or first-party HaiTun statement was found this pass."
+status: sourced

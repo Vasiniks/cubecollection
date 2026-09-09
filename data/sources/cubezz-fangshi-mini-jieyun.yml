@@ -1,0 +1,47 @@
+# source: cubezz-fangshi-mini-jieyun
+# Cubezz.com product pages for "Funs Puzzle Mini JieYun 3x3x3 Speed Cube 54.6mm" (Black and
+# White), found via a domain-wide CDX substring search (`urlkey:.*mini.*jieyun.*` on
+# cubezz.com) during Pass 4 (Agent H, Batch 2). Resolves the "Mini JieYun" lead flagged as
+# unrecoverable at Pass 2.6 (research/qc/pass2.6-agent-a-fangshi.md §2.2-2.3, where the
+# SpeedCube.com.au and SpeedCubeShop captures of this same product both failed to fetch/
+# resolved dead) — this Cubezz capture succeeded and gives the first readable content for this
+# product.
+id: cubezz-fangshi-mini-jieyun
+entity: source
+kind: retailer
+title: "Funs Puzzle Mini JieYun 3x3x3 Speed Cube 54.6mm (Black/White) - Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-4720-Funs+Puzzle+Mini+JieYun+3x3x3+Speed+Cube+546mm+Black.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20150925020027id_/http://cubezz.com:80/Buy-4720-Funs+Puzzle+Mini+JieYun+3x3x3+Speed+Cube+546mm+Black.html"
+excerpt: |-
+  Black (SKU FunsJY2B, capture 2015-09-25): "Funs Puzzle Mini JieYun 3x3x3 Speed Cube 54.6mm
+  Black. Features: Brand new 54.6mm Funs Puzzle JieYun 3x3x3 Speed Cube. Funs Puzzle new
+  design... Specifications: Brand: Funs Puzzle(JieYun) / Color: Black / Size:
+  54.6*54.6*54.6mm / Weight: 80g." Its own "Related Top Sellers" rail lists "Funs Puzzle JieYun
+  3x3x3 Speed Cube 57mm Black" (the 57mm original) as a sibling product, alongside "Funs
+  Puzzle Mini ShuangRen 54.6mm 3x3 Magic Cube Black", "Funs Puzzle ShuangRen 54.6mm 3x3 Magic
+  Cube Assembled White", and "57mm Funs Puzzle ShuangRen II Magic Cube Black".
+
+  A second, independently-captured White colourway (SKU FunsJY2W, archive_url
+  https://web.archive.org/web/20160226084010id_/http://cubezz.com:80/Buy-4759-Funs+Puzzle+Mini+JieYun+3x3x3+Speed+Cube+546mm+White.html,
+  captured 2016-02-26) gives identical specifications ("Brand: Funs Puzzle(JieYun) / Color:
+  White / Size: 54.6*54.6*54.6mm / Weight: 80g") — the same size/weight/brand field under a
+  different SKU and colour only, consistent with Black and White being stock colour options of
+  one Mini JieYun product line, not separate products.
+preservation_note: "Retrieved via `scripts/wayback.mjs get`; both captures confirmed at their
+  exact CDX timestamps."
+accessed: "2026-09-09"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer, non-US/English retailer per RESEARCH_SPEC
+  3.6a. Decisive for the model-boundary question left open at Pass 2.6: this product's own
+  catalogue 'Brand' field reads 'Funs Puzzle(JieYun)' — byte-identical to the 57mm original's
+  own brand field on `cubezz-fangshi-jieyun` — and its own related-products rail lists the
+  57mm original as a direct sibling. This is read as confirming Mini JieYun is a size variant
+  of the fangshi-jieyun-original model (same brand/design-family catalogue field), not
+  evidence either way on whether it shares the grooved-piece mould specifically (no source
+  describes the Mini's piece geometry at that level of detail)."
+status: sourced

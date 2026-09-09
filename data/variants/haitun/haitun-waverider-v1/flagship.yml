@@ -1,0 +1,49 @@
+# variant: haitun-waverider-v1--flagship
+# Pass 4. HaiTun Waverider V1's Flagship configuration tier, per TheCubicle's own dedicated
+# product page: "This Flagship version features traditional corner-edge magnets as well as
+# little (but surprisingly strong) magnets embedded into the feet of each piece, creating a
+# dynamic magnet positioning system." The base for a further Limited Edition of this same tier
+# (haitun-waverider-v1--limited-edition.yml).
+id: haitun-waverider-v1--flagship
+entity: variant
+model_id: haitun-waverider-v1
+name: "HaiTun Waverider V1 3x3 (Flagship)"
+scope_class: core
+config:
+  magnet_configuration: dual_layer
+  weight_g: 82.0
+edition:
+  types: [standard]
+  designation: "Flagship"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-2024]
+    note: "Differentiation search performed (see haitun-waverider-v1--standard.yml's header for
+      the full prefix sweep). No limited/commemorative language on this tier's own page; the
+      Limited Edition status is recorded separately on its own sibling variant, which this
+      page's own description is explicitly reused by."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-2024]
+    note: "'Flagship' is the retailer's own bracketed tier name in the product title, and the
+      family record independently attests both generations carry an explicit Flagship tier."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-haitun-waverider-v1-2024]
+    note: "'Traditional corner-edge magnets as well as... magnets embedded into the feet of
+      each piece, creating a dynamic magnet positioning system' — two simultaneous magnet
+      layers, read as `dual_layer` — an interpretive mapping from marketing prose, not a
+      labelled architecture field."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-2024]
+    note: "Item Weight 82.0g, the source's own structured spec field — 1g heavier than the
+      Standard tier's 81.0g, consistent with the added foot magnets."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-haitun-waverider-v1-2024]
+    note: "Inferred from the absence of sticker language; not a direct statement."

@@ -1,0 +1,29 @@
+# variant: senhuan-mars-original--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/senhuan` sweep found 9 captured URLs across the whole SenHuan
+# line (including the unrelated ZhanLang 2x2 series); exactly one URL for this model, no
+# sibling configuration.
+id: senhuan-mars-original--standard
+entity: variant
+model_id: senhuan-mars-original
+name: "SenHuan Mars"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-senhuan-mars-3x3-2019, cubelelo-senhuan-mars-2016]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/senhuan found no sibling URL for this product beyond the single
+      already-on-file capture. The independent Cubelelo (India) capture corroborates existence
+      but no additional configuration. No colourway edition, tier name, or
+      limited/commemorative status found. Read as the model's sole sold configuration."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-senhuan-mars-3x3-2019]
+    note: "The source's own description states directly 'high-precision molded 3-piece
+      corners that allows for stickerless versions'."

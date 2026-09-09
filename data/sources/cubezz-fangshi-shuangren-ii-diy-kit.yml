@@ -1,0 +1,33 @@
+# source: cubezz-fangshi-shuangren-ii-diy-kit
+# Cubezz.com product page for "Funs Puzzle ShuangRen II 3x3 Magic Cube DIY Kit 57mm Original
+# Color", found via a domain-wide CDX substring search (`urlkey:.*shuangren.*` on cubezz.com)
+# during Pass 4 (Agent H, Batch 2). Already named as a sibling SKU on the on-file
+# `cubezz-fangshi-shuangren-ii` source's own "Related Products" rail; fetched and actioned here
+# as its own configuration variant of fangshi-shuangren-v2.
+id: cubezz-fangshi-shuangren-ii-diy-kit
+entity: source
+kind: retailer
+title: "Funs Puzzle ShuangRen II 3x3 Magic Cube DIY Kit 57mm (Original Color) - Cubezz.com"
+publisher: "Cubezz.com"
+url: "http://cubezz.com/Buy-3725-Funs+Puzzle+ShuangRen+II+3x3+Magic+Cube+DIY+Kit+57mm+Original+Color.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20140110004709id_/http://cubezz.com:80/Buy-3725-Funs+Puzzle+ShuangRen+II+3x3+Magic+Cube+DIY+Kit+57mm+Original+Color.html"
+excerpt: |-
+  "Funs Puzzle ShuangRen II 3x3 Magic Cube DIY Kit 57mm Original Color." Specifications:
+  "Color: Original Color / Weight: 114.0g / Cube Size: 57.0mm x 57.0mm x 57.0mm / Packing: OPP
+  bag." Package Content: "1 x Funs Puzzle ShuangRen II 3x3 Magic Cube DIY Kit / 6 x Stickers."
+  SKU: 40235. Further colour-variant SKUs of the same DIY kit were found via CDX at the same
+  prefix (products 3754, 4380, 4381 - White/Black), not individually fetched (anti-explosion;
+  stock colour SKU proliferation, same pattern as the Mini ShuangRen DIY kit group).
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer, non-US/English retailer. Its own structured
+  'Package Content' field ('6 x Stickers') is decisive: this DIY kit ships unstickered
+  (stickers included separately for the buyer to apply), a materially different colourway
+  application from the assembled 57mm configuration's own stickerless-body sale, distinct from
+  a packaging-only difference."
+status: sourced

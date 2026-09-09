@@ -1,0 +1,51 @@
+# variant: haitun-waverider-v2--standard
+# Pass 4. HaiTun Waverider V2's Standard tier. TheCubicle's own dedicated product page
+# (thecubicle-haitun-waverider-v2-standard-2026) and Cubezz's own independent, non-US listing
+# (cubezz-haitun-waverider-v2-standard, product ID 8599) both carry this tier under its own
+# distinct SKU — the dedup test (rule per the batch brief's HaiTun ZhanLang reference case) is
+# satisfied by Cubezz's product ID 8599 being genuinely different from Flagship's 8598, not a
+# renamed duplicate of the same listing.
+#
+# NOTE ON MARKETING-COPY DUPLICATION (not a boundary contradiction, flagged for awareness):
+# TheCubicle's own description text for Standard, Flagship, and Pioneer is close to
+# word-for-word identical ("Advanced 26-Point Core... up to 26 core magnets and a total of 94
+# configurable magnets", "64 unique tactile combinations... 8 levels of spring compression and
+# 8 levels of center tension", same 280g Gross Weight, same 2026-02-03 Added date). The tier
+# NAME itself (DATA_MODEL variant-materiality rule 7) and the distinct Cubezz product IDs are
+# the load-bearing materiality basis for treating these as separate variants, not a documented
+# hardware difference between Standard/Flagship/Pioneer specifically (Ultimate's own page does
+# describe a different magnet layout — see haitun-waverider-v2--ultimate.yml).
+id: haitun-waverider-v2--standard
+entity: variant
+model_id: haitun-waverider-v2
+name: "HaiTun Waverider V2 3x3 (Standard)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Standard"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-standard-2026, cubezz-haitun-waverider-v2-standard]
+    note: "Differentiation search performed: a `scripts/wayback.mjs prefix
+      thecubicle.com/products/haitun` sweep found 4 distinct V2 tier URLs (Standard, Pioneer,
+      Flagship, Ultimate). The ZhanLang dedup test was run per the batch brief's specific
+      warning about this manufacturer: Cubezz's Standard listing is product ID 8599, distinct
+      from Flagship's 8598 (itself independently proven to be a renamed former 'ZhanLang V2
+      Flagship' listing, per cubezz-haitun-zhanlang-v2-flagship-2026's own note — a case
+      already resolved elsewhere in this archive, not re-litigated here). No
+      limited/commemorative language found for Standard specifically."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-standard-2026]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-haitun-waverider-v2-standard-2026, cubezz-haitun-waverider-v2-standard]
+    note: "Cubezz's own listing states 'Stickerless' directly for this configuration, but that
+      listing's own 71g weight figure is flagged elsewhere (haitun-waverider-v2.yml) as
+      possibly a different/unreconciled underlying configuration from TheCubicle's ~280g
+      Magnetic figures — held at `uncertain` rather than `probable` given that unresolved
+      tension."

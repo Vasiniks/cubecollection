@@ -1,0 +1,42 @@
+# variant: haitun-waverider-v2--ultimate
+# Pass 4. HaiTun Waverider V2's top tier. Unlike Standard/Flagship/Pioneer's shared "26-Point
+# Core... 94 configurable magnets" copy, Ultimate's own page describes a genuinely distinct
+# magnet layout: "a revolutionary magnet system with 94 magnets in total, including a 20-magnet
+# core and six integrated magnetic rings" — a different core-magnet count (20 vs. 26) and an
+# added magnetic-ring element not mentioned for the other three tiers, giving this tier its own
+# documented hardware difference on top of the tier-name/designation basis shared by its
+# siblings.
+id: haitun-waverider-v2--ultimate
+entity: variant
+model_id: haitun-waverider-v2
+name: "HaiTun Waverider V2 3x3 (Ultimate)"
+scope_class: core
+config:
+  magnet_strength: "94 magnets in total, including a 20-magnet core and six integrated magnetic
+    rings, per TheCubicle's own description; not a normalised vocabulary value."
+edition:
+  types: [standard]
+  designation: "Ultimate"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-ultimate-2026]
+    note: "Differentiation search performed (see haitun-waverider-v2--standard.yml's header for
+      the full prefix sweep). TheCubicle's own copy calls this 'the crown jewel of the
+      Waverider V2 series' and describes a magnet layout genuinely distinct from its three
+      siblings (20-magnet core + six magnetic rings, vs. the shared 26-point-core description
+      elsewhere) — the strongest documented hardware differentiator found for any V2 tier. No
+      independent second retailer was found for Ultimate specifically this pass."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-ultimate-2026]
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-ultimate-2026]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-haitun-waverider-v2-ultimate-2026]
+    note: "Inferred from the absence of sticker language; not a direct statement."

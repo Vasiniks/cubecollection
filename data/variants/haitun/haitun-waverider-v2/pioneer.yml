@@ -1,0 +1,34 @@
+# variant: haitun-waverider-v2--pioneer
+# Pass 4. HaiTun Waverider V2's Pioneer tier, already named at family level
+# (haitun-waverider.yml: "sold across at least Standard, Pioneer, Flagship, and an 'Ultimate'
+# top tier"). See haitun-waverider-v2--standard.yml's header for the marketing-copy-duplication
+# note. No Cubezz (or other non-US retailer) listing was found for this specific tier this
+# pass — existence rests on TheCubicle's own dedicated product URL alone.
+id: haitun-waverider-v2--pioneer
+entity: variant
+model_id: haitun-waverider-v2
+name: "HaiTun Waverider V2 3x3 (Pioneer)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Pioneer"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-haitun-waverider-v2-pioneer-2026]
+    note: "Differentiation search performed (see haitun-waverider-v2--standard.yml's header for
+      the full prefix sweep). Existence rests on a single Tier 2 source (one retailer, one
+      dedicated product URL); no independent second retailer was found for Pioneer specifically
+      this pass, unlike Standard and Flagship, which are both independently corroborated by
+      Cubezz. Held at `uncertain` rather than `probable` for that reason. No
+      limited/commemorative language found."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-pioneer-2026]
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-haitun-waverider-v2-pioneer-2026]
+    note: "Inferred from the absence of sticker language; not a direct statement."

@@ -1,0 +1,29 @@
+# source: thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024
+# TheCubicle's own product page for "FanXin HuDong Light 3x3 (Flagship UV)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/fanxin` during Pass 4 (Agent H, Batch 2).
+id: thecubicle-fanxin-hudong-light-3x3-flagship-uv-2024
+entity: source
+kind: retailer
+title: "FanXin HuDong Light 3x3 (Flagship UV) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/fanxin-hudong-light-3x3-flagship-uv"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241010id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-flagship-uv"
+excerpt: |-
+  Product Description: "The FanXin HuDong is a huge step for FanXin hardware. This is an
+  extremely modern and competitive flagship 3x3... This is the Flagship version which has a
+  green adjustment system and UV Coating, a glossy outer coating that can aid with grip. We
+  also think it looks nice!" Structured "Product Specifications" table: "Manufacturer: HuDong
+  / Type: 3x3 / Added: 2024-10-04 / Gross Weight: 296g / Dimensions: 55.0mm3 / Magnets:
+  Magnetic / Item Weight: 80.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, structured spec table naming this
+  the 'Flagship version' with an explicit colour-coded ('green') adjustment system and a UV
+  coating, distinguishing it from the Standard (matte, blue) and Ultra Maglev UV (MagLev, red)
+  siblings."
+status: sourced

@@ -1,0 +1,58 @@
+# variant: haitun-waverider-v1--limited-edition
+# Pass 4. A limited run of the Flagship tier, per TheCubicle's own dedicated product page:
+# "This is the same HaiTun Waverider V1 Flagship 3x3 that we all know and love, but this one is
+# a limited edition. Only 200 have been produced worldwide! It comes unstickered, with a set of
+# stickers." Recorded as a `modified_from`-free sibling of `haitun-waverider-v1--flagship` (the
+# retailer's own words: "the same... Flagship 3x3... but... limited") rather than a fresh
+# mechanism, per DATA_MODEL's edition-status materiality rule (rule 8).
+id: haitun-waverider-v1--limited-edition
+entity: variant
+model_id: haitun-waverider-v1
+name: "HaiTun Waverider V1 3x3 (Limited Edition)"
+scope_class: core
+config:
+  magnet_configuration: dual_layer
+  weight_g: 82.0
+edition:
+  types: [limited]
+  designation: "Limited Edition"
+  limited:
+    is_limited: true
+    run_size: 200
+colorway:
+  application: hybrid
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-limited-edition-2024]
+    note: "Differentiation search performed (see haitun-waverider-v1--standard.yml's header for
+      the full prefix sweep). Retailer's own statement is explicit and direct: 'this one is a
+      limited edition. Only 200 have been produced worldwide!'"
+  /edition/limited/run_size:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-limited-edition-2024]
+    note: "Single Tier 2 retailer figure ('Only 200 have been produced worldwide'), stated
+      directly, not estimated. No second retailer or first-party HaiTun statement found."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-haitun-waverider-v1-limited-edition-2024]
+    note: "Retailer's own words state this is 'the same HaiTun Waverider V1 Flagship 3x3...
+      but... a limited edition' — inherited from the Flagship tier's own dual-layer magnet
+      reading, not independently re-described on this page."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-limited-edition-2024]
+    note: "Item Weight 82.0g, the source's own structured spec field — matching the Flagship
+      tier's own figure exactly, consistent with the retailer's 'same... Flagship' framing."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v1-limited-edition-2024]
+    note: "Retailer's own description: 'It comes unstickered, with a set of stickers' — i.e.
+      sold as a stickerless body with a separate, included sticker set rather than either pure
+      stickerless or factory-applied stickered, read as `hybrid` per the vocabulary's own
+      'some faces stickered, some not' framing being the closest available reading of a
+      buyer-applied sticker set shipped in the box. A single Tier 5 customer review mentions
+      buying this specific listing 'bc it's blue,' which is NOT used as colourway evidence
+      (Tier 5 is inadmissible per DATA_MODEL rule 12) but is left as an unchased lead for a
+      Pass 5 colourway-filling pass."
