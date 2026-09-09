@@ -1,111 +1,78 @@
 # HANDOFF — read this first after any reset
 
-**This is the recovery entry point.** It is kept short and current on purpose. Do not re-read the
-whole project after a reset: read this, then `git log --oneline -12`, then continue.
+**This is the recovery entry point.** Kept short and current on purpose. Do not re-read the whole
+project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  (see git log -1)
+HEAD:  011cade
 DATE:  2026-09-09
 
-CANONICAL COUNTS (verify with: for d in manufacturers families models variants sources; do
+CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
                    find data/$d -name '*.yml' | wc -l; done)
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      485
-sources:       530
+sources:       531
 
 VALIDATION
-npm run check:         0 errors, 40 advisory
+npm run check:         0 errors, 50 advisory  (13 r42 / 11 r41 / 11 r18 / 10 r49 / 4 r40 / 1 r25)
+                       now includes `npm run escalations`
 npm run audit:         advisory only, 9 sweeps
+npm run escalations:   7 linked / 18 UNFILED / 0 unmatched
 npm run catalogue-gap: offline by default; --fetch to query three retailers
 npm run selftest:      every check behaved as specified
 
-COMPLETED (post-Pass-4 QC phase — full detail in research/qc/post-pass4-qc.md)
-- rule 42 rewritten: page vs capture identity, two citation branches
-- rules 47, 48 added, with pass AND fail fixtures for every branch
-- 15 CDX sweep locators repointed; 2 multi-page records repointed
-- 10 unpinned Wayback captures pinned; 1 calendar-wildcard replaced
-- 6 duplicate GAN source pairs merged (534 -> 528 sources)
-- 13 spec values preserved into their sources' excerpts
-- 1 false-precision conversion corrected (mfjs-meilong-3c)
-- 2 inverted date qualifiers corrected; 2 artefact-derived dates withdrawn
-- P4-6 CLOSED: all 30 Speedsolving wiki sources assessed
-- P26-2, P26-3 measured (were narrative, now coverage tables in npm run audit)
-- npm run catalogue-gap built
+COMPLETED THIS PHASE  (full detail: research/qc/post-pass4-qc.md)
+- rule 42 rewritten (page vs capture identity); rules 47, 48, 49 added, fixtures both ways
+- 15 CDX sweep locators repointed; 10 unpinned captures pinned; 6 duplicate sources merged
+- 13 spec values preserved into their sources; 1 false-precision conversion corrected
+- 2 inverted date qualifiers; 2 artefact-derived dates withdrawn
+- P4-6 CLOSED (all 30 Speedsolving sources assessed); P4-11 RESOLVED (raised on a misreading)
+- P26-2 / P26-3 measured, then P26-2's MECHANISM BUILT (npm run escalations, in check)
+- P4-9 FULLY ADJUDICATED: research/qc/p4-9-adjudication.yml, 261 of 261 classified
 
-NEW FINDINGS
-- P4-9 (CRITICAL, needs_human_decision): 14 current product lines absent from the
-  frozen 269, incl. MoYu WeiLong V11 and X-Man Tornado V5 — the current flagships of
-  two major manufacturers. Listed 1-6 years BEFORE Pass 3 ran. Evidence preserved in
-  data/sources/thecubicle-3x3-collection-enumeration-2026-09.yml and
-  data/sources/cross-retailer-3x3-enumeration-2026-09.yml
-- P4-7 (open question): does the 2018-09-11 artefact bound catalogue PRESENCE?
-- P4-8: 9 manufacturers rest on one US retailer with no first-party source
+P4-9 ANSWER — "both, at two layers, with different fixes"
+  MODEL LAYER  12 of 20 confirmed-missing are later generations of held lines; 8 are MoYu.
+               RECENCY failure. `npm run catalogue-gap` covers it.
+  MANUFACTURER 7 vendors absent from the 54 (Ziina 51 lines). BREADTH failure. Nothing in
+               the archive could ever surface these. Pass 1 work. Escalated as P4-10.
+  48% of candidates were correctly NOT gaps. The tool over-reports by design.
+  WRM crux settled: "WRM V9" IS the archive's moyu-weilong-v9 under its full retail name.
 
-OPEN ISSUES (ledger: research/qc/pass2-remediation-ledger.yml)
-  P4-9   crit  needs_human_decision  taxonomy admission is the user's call
-  P26-2  crit  open                  roll-up linkage measured as ABSENT (0 of 25)
-  P26-8  high  open                  same, narrowed to the report layer
-  P26-3  high  open                  3.6a coverage table; 12 manufacturers fail both
-  P4-8   med   open                  source concentration
-  P4-2/4 med   needs_human_decision  model-layer gaps, frozen boundary
-  P4-5   low   open                  11 GAN baselines assert nothing
-  P4-7   low   needs_human_decision  artefact-as-bound question
-  P26-14 low   open                  detector built and DISCARDED (90% FP)
-  P26-15 low   open                  Tank/Gem mould geometry unproven
+OPEN ISSUES  (24 of 54 not resolved; ledger research/qc/pass2-remediation-ledger.yml)
+  P4-9   crit  adjudicated; taxonomy admission is the user's call
+  P4-10  crit  Ziina IS a manufacturer not a decorator (settled); WHO MAKES IT is not
+  P26-2  crit  mechanism now built; 18 UNFILED escalations are the remaining work
+  P26-3  high  3.6a coverage table in audit; 12 manufacturers fail both checks
+  P26-8  high  narrowing confirmed; addressed by the same mechanism
+  P4-8   med   9 manufacturers on one US retailer
+  plus P4-2/P4-4, P4-5, P4-7, P26-6/7/9/11/14/15, E2, D-F4, D-F5, C-B1, P3-D2/T2/T3
 
 AGENTS
   none running. worktrees: 1 (main only).
 
-P4-9 ADJUDICATION — COMPLETE
-  File: research/qc/p4-9-adjudication.yml  — all 261 classified, 0 unadjudicated.
-  Regenerate candidates: npm run catalogue-gap -- --fetch --json
-  Adjudications are NOT regenerable. Preserve them across any regeneration.
-  RESULT: missing_manufacturer 71 / not_3x3 60 / needs_research 44 / service_listing 32
-          confirmed_missing 20 / alternate_naming 14 / variant 12 / bundle 6 / other 2
-  ANSWER: BOTH, at two layers with different fixes.
-    MODEL LAYER   — 12 of 20 confirmed-missing are later generations of held lines,
-                    8 of those 12 are MoYu. A RECENCY failure. catalogue-gap covers it.
-    MANUFACTURER  — 7 vendors absent from the 54 (Ziina 51 lines). A BREADTH failure.
-                    Nothing in the archive could ever surface these. Pass 1 work.
-                    Escalated separately as P4-10.
-  48% of candidates were correctly NOT gaps. The tool over-reports by design.
-
-DONE SINCE  P4-11 RESOLVED — raised on a misreading. RESEARCH_SPEC 2.4 states NO size
-            criterion; the archive already admits 40/42/47.4/70mm 3x3s as core. Minis are
-            ordinary enumeration candidates, not a policy question.
-            RULE 49 added — reference_only removes a record from the PUBLIC bundle, yet 8 of
-            13 such exclusions were unsigned. Rule 15 makes ADMISSION cost an argument;
-            exclusion cost nothing. Advisory. 10 warnings, 8 files, no false positives.
-
-ALSO DONE
-  WRM CRUX SETTLED — "WeiLong WRM V9" IS the archive's moyu-weilong-v9 under its full
-    retail name (no plain V9 exists at retail; configs and spring-2023 date both match).
-    MoYu used YEAR names through WR M 2021, then VERSION numbers from V9 (2023), so
-    wr-m-2020/-2021 are correct as they stand. WRM V10 confirmed missing.
-  P4-10 ZIINA — decorator-vs-manufacturer ANSWERED: "Ziina Space Magnetic 3x3" is a base
-    budget speedcube (56.0mm, 68.0g, "Manufacturer: Ziina", no print). Brand corroborated
-    by a second retailer (SpeedCubeShop, 13 products). Evidence:
-    data/sources/thecubicle-ziina-space-magnetic-3x3-2025.yml
-
 NEXT ACTION
-  1. P26-2 MECHANISM DESIGN. It is measured (0 of 25 declared escalations cite a ledger
-     id) but no linkage exists yet. Design report -> machine-readable escalation ->
-     ledger id -> status, minimising false positives. This is infrastructure, buildable
-     now, and explicitly the remaining half of that issue.
-  2. Ziina "who makes it" — still blocks admission. Needs first-party or specialist
-     evidence, NOT another retailer. Note SpeedCubeShop says "Ziina Star", TheCubicle
-     says "Ziina"; all 13 SpeedCubeShop listings are UV-printed, so the ONLY evidence of
-     a base Ziina cube anywhere is the single TheCubicle listing.
+  1. TRIAGE THE 18 UNFILED ESCALATIONS. `npm run escalations` names them; they are real
+     findings that agents declared and nothing ever filed. Decide file-or-close for each.
+  2. Ziina "who makes it" — blocks admission. Needs FIRST-PARTY or specialist evidence,
+     not another retailer. SpeedCubeShop says "Ziina Star", TheCubicle says "Ziina"; all
+     13 SpeedCubeShop listings are UV-printed, so the ONLY evidence of a base Ziina cube
+     anywhere is one TheCubicle listing.
+  3. Rule 49's 8 unsigned reference_only exclusions need a HUMAN reason each.
 
 RECOVERY NOTES
-- TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or
-  renaming a family/model is NOT, however strong the evidence. Escalate instead.
-- Wayback rate-limits after ~20 sequential fetches. A failed fetch is NEVER evidence
-  of absence — record it as unverified and move on.
-- catalogue-gap is INFRASTRUCTURE, not truth. It over-reports by design. Every line
-  it prints needs human confirmation; its silence confirms nothing.
-- Retailer `vendor` fields are trustworthy for manufacturer attribution; titles are
-  NOT (splitting "QiYi X-Man" on the hyphen invented an 8-SKU product line).
+- TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming
+  a family/model/manufacturer is NOT, however strong the evidence. Escalate instead.
+- research/qc/p4-9-adjudication.yml: candidates are regenerable
+  (`npm run catalogue-gap -- --fetch --json`), ADJUDICATIONS ARE NOT. Preserve them.
+- EDIT THAT FILE LINE-BASED. Two multiline-regex edits with re.S silently rewrote the LAST
+  record instead of the target. Both were caught by diffing before commit.
+- Wayback rate-limits after ~20 sequential fetches. A failed fetch is NEVER evidence of
+  absence — record it as unverified and move on.
+- catalogue-gap is INFRASTRUCTURE, not truth. Every line it prints needs confirmation; its
+  silence confirms nothing.
+- Retailer `vendor` fields are good for attribution; TITLES ARE NOT (splitting "QiYi X-Man"
+  on the hyphen invented an 8-SKU product line).
+```
