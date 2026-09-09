@@ -1402,11 +1402,6 @@ issues:
       exist, all predating Pass 4 and all from the GAN pilot; none of the 56 baselines created by
       the P4-3 normalisation fired, because each carries its assessment attestation. Mostly GAN's
       smart-cube line.
-    counterevidence: >-
-      The GAN pilot's other 12 lone baselines are NOT bare - gan-354-m carries config.size_mm
-      with an attestation and gan-356-air carries its colourway plus the note that established
-      the archive's whole anti-explosion precedent. This is a gap in 11 specific records, not a
-      fault in the pilot's method.
       LARGELY CLOSED 2026-09-09, and closed the way this issue asked - by assessing, never by
       backfilling. Rule 41: 11 -> 2.
       The unlock was a METHOD finding, not effort: these are discontinued smart cubes with zero
@@ -1431,6 +1426,11 @@ issues:
       for the i Carry 2, four for the i Carry 4, six across the Monster Go line, two for the
       Swift Block Super MagLev. A method that finds siblings when they are there and none when
       they are not is evidence.
+    counterevidence: >-
+      The GAN pilot's other 12 lone baselines are NOT bare - gan-354-m carries config.size_mm
+      with an attestation and gan-356-air carries its colourway plus the note that established
+      the archive's whole anti-explosion precedent. This is a gap in 11 specific records, not a
+      fault in the pilot's method.
     recommendation: >-
       Do NOT backfill an attestation that cannot be substantiated - writing "assessed, nothing
       found" without having assessed would fabricate the exact claim rule 41 exists to protect.
