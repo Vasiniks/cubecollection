@@ -1,0 +1,33 @@
+# variant: diansheng-solar-s3m-plus--standard
+# Pass 4 (variant enumeration), agent F. Model assessed for configuration axes; exactly one
+# documented sold configuration was found. TheCubicle's own product page
+# (thecubicle-diansheng-solar-s3m-plus-product): "an interchangeable center cap and spring system
+# so you can personalize its look and feel." A customer review on the same capture states
+# DianSheng "should really make a maglev version of this cube," corroborating (not sourcing) that
+# no MagLev configuration of this earlier generation existed. No further configuration was found
+# by any source this pass.
+id: diansheng-solar-s3m-plus--standard
+entity: variant
+model_id: diansheng-solar-s3m-plus
+name: "DianSheng Solar S3M Plus"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  maglev: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-diansheng-solar-s3m-plus-product]
+    note: "ASSESSMENT RECORD. Differentiation search performed against
+      thecubicle-diansheng-solar-s3m-plus-product, the only tier 1-3 source found this pass for
+      this generation; no sibling retail path (unlike the later 2022 generation, which has a
+      documented MagLev sibling), no magnet-configuration split, and no named edition was found."
+  /config/maglev:
+    confidence: uncertain
+    sources: [thecubicle-diansheng-solar-s3m-plus-product]
+    note: "No MagLev language on the product page itself (a conventional spring/cap system is
+      described); a contemporaneous customer review wishing for 'a maglev version of this cube'
+      is user-generated and inadmissible as a source on its own, but is read as loosely
+      corroborating the absence of one at the time."

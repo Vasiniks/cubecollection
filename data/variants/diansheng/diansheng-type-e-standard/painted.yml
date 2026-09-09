@@ -1,0 +1,38 @@
+# variant: diansheng-type-e-standard--painted
+# Pass 4 (variant enumeration), agent F. A 2008-12-23 Speedsolving forum for-sale listing
+# (speedsolving-forum-diansheng-for-sale-2008): a white DianSheng "Type E" cube with "painted on"
+# stickers (i.e. colour applied by paint, not vinyl). Corroborated by the tier 4 wiki's own
+# framing ("the Diansheng no.333 has the colors painted onto the sides of the cube"), though the
+# wiki cannot independently establish which specific item number this forum-documented unit was.
+# Mapped to the closest available vocabulary value, `printed` (vocab/colorway-application.yml has
+# no dedicated "painted" term); flagged at reduced confidence for the mapping itself, not the
+# underlying fact.
+id: diansheng-type-e-standard--painted
+entity: variant
+model_id: diansheng-type-e-standard
+name: "DianSheng Type-E (Painted)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: printed
+  body:
+    plastic_color_name: "white"
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-for-sale-2008]
+  /colorway/application:
+    confidence: uncertain
+    sources: [speedsolving-forum-diansheng-for-sale-2008, speedsolving-wiki-diansheng-products]
+    note: "The forum source's own wording is 'painted on' stickers/colouring, a direct, dated,
+      first-hand description; the wiki independently corroborates a painted DianSheng batch
+      ('no.333 has the colors painted onto the sides'). Mapped to `printed`, the closest
+      vocabulary value to 'painted,' since vocab/colorway-application.yml has no dedicated
+      'painted' term -- the mapping itself, not the underlying paint-vs-sticker fact, is what
+      keeps this at `uncertain`."
+  /colorway/body/plastic_color_name:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-for-sale-2008]
+    note: "The for-sale listing describes 'a white DianSheng Type E cube' directly."

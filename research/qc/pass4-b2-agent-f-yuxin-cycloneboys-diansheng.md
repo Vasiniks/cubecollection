@@ -1,11 +1,11 @@
 # Pass 4, Batch 2, Agent F — YuXin, Cyclone Boys, DianSheng
 
-Status: IN PROGRESS (skeleton committed first per lane protocol)
+Status: COMPLETE — all 19 models assessed, 31 variants created, `npm run check` passes at
+0 errors / 26 warnings (baseline 23; +3 legitimate, from cyclone-boys-feijue-original's 213g and
+cyclone-boys-mini-3x3-original's 40mm/36g, both inherited from already-frozen model specs).
 
 Scope: 19 models —
 `data/models/yuxin/` (8), `data/models/cyclone-boys/` (5), `data/models/diansheng/` (6).
-
-findings-so-far: YuXin and Cyclone Boys complete (21 variants across 13 models). DianSheng in progress.
 
 ## Per-model log
 
@@ -89,7 +89,142 @@ Also rejected: no tier 1-3 evidence ties `cyclone-boys-feijue-original` (the one
 in scope) to the Metallic-M line specifically — considered and rejected on the same
 no-stated-relationship grounds.
 
-### DianSheng
+### DianSheng (6 models, 10 variants)
+
+All 6 models assessed. Three new sources created this pass (existing model-level sources named
+these retail paths but had not fetched/quoted them): `thecubicle-diansheng-3x3-m-uv-coated-product`,
+`thecubicle-mscube-ms3l-3x3-enhanced-product`, `thecubicle-diansheng-solar-s3m-2022-maglev-product`
+— all fetched live via `npm run wayback -- get` and preserved as `archive_url` sources.
+
+- **diansheng-3x3-m-v1** — axis: coating. Base page describes "frosted plastic"; a separate,
+  fetched retail path sells a UV-coated, stickerless-bright-shades configuration → 2 variants:
+  `--standard`, `--uv-coated`.
+- **diansheng-mscube-ms3l** — axis: magnet layout + materials. Fetched the "Enhanced" page
+  directly: it states a *different* magnet layout ("magnets in the feet of the corners and
+  edges" vs. Standard's "edges and corners") AND different internals materials ("transparent
+  blue corner stalks and torpedoes" vs. Standard's "primary plastic internals") — two independent
+  materiality triggers on one product → 2 variants: `--standard`, `--enhanced`.
+- **diansheng-solar-s3m-2022** — axis: maglev. Fetched the MagLev sibling page directly: "the
+  same great hand-adjustment mechanism, but now with MagLev technology" → 2 variants:
+  `--standard` (spring), `--maglev`.
+- **diansheng-solar-s3m-plus** — axis search: no sibling retail path found (unlike the 2022
+  generation) → 1 variant: `--standard`.
+- **diansheng-stickerless-3x3-standard** — thin evidence (one 2014 forum thread + tier 4 wiki);
+  no configuration axis found → 1 variant: `--standard`.
+- **diansheng-type-e-standard** — axis: sticker application, genuinely documented across two
+  independent, dated 2008 forum sources: a 2008-06-25 review states the reviewed unit
+  "surprisingly...have stickers, not paint," while a 2008-12-23 for-sale listing describes a
+  white unit with colour "painted on." The wiki's own "no.222 / no.333" catalogue-number framing
+  is NOT used to assign either forum batch to a specific item number (no source ties them) →
+  2 variants: `--stickered`, `--painted` (painted mapped to vocab value `printed`, the closest
+  fit, flagged at `uncertain` for the mapping itself).
+
+**Rejected/collapsed candidates:** None distinct beyond the above — this manufacturer's models
+were each thin enough that every documented detail became either the baseline or a genuine
+second axis; no stock-colourway explosion candidates were found (DianSheng's own retail pages
+in this set describe function/material differences, not colour options, wherever a second
+configuration existed at all).
+
+## Escalations (cross-manufacturer)
+
+1. **Cyclone Boys "Metallic 3x3" / "Metallic 3x3 M"** — real, sold, TheCubicle-documented
+   products (plus CDX-sweep-only siblings `-m-gradient`, `-m-macaron`) with NO tier 1-3 source
+   naming which of FeiWu/FeiChi/FeiChi G3/FeiJue/Mini they are built on. Not created as a variant
+   of any model in this lane's scope. See the Cyclone Boys section above for the full reasoning,
+   including the newly-fetched Metallic 3x3 M page. This may belong as its own model once a
+   source (packaging, a manufacturer statement, or a retailer explicitly naming the base design)
+   is found — flagged for a future pass, not resolved here.
+2. **`prefix` wayback subcommand failures.** `npm run wayback -- prefix` failed ("fetch failed")
+   on every attempt this pass (tried against both thecubicle.com/products/diansheng and
+   cubezz.com/Buy-4750, on separate occasions, several retries each) while `get` and `list`
+   against the same hosts worked normally in the same session. This blocked a planned
+   `/products/diansheng*` prefix sweep that might have surfaced further DianSheng retail paths
+   (e.g. a possible stickerless/coloured split on diansheng-solar-s3m-plus, or further MsCube
+   models). Recorded as a failed fetch, per instruction NEVER treated as evidence of absence.
+   Worth flagging to whoever owns `scripts/wayback.mjs` — this is a tooling issue, not
+   something I can fix from a research lane.
+
+## Machine-readable summary
+
+```yaml
+models_assessed:
+  - yuxin-black-kirin-original
+  - yuxin-fire-original
+  - yuxin-huanglong-original
+  - yuxin-huanglong-v2
+  - yuxin-kylin-v2
+  - yuxin-little-magic-original
+  - yuxin-little-magic-v2
+  - yuxin-little-magic-v3
+  - cyclone-boys-feiwu-original
+  - cyclone-boys-feichi-original
+  - cyclone-boys-feichi-g3
+  - cyclone-boys-feijue-original
+  - cyclone-boys-mini-3x3-original
+  - diansheng-3x3-m-v1
+  - diansheng-mscube-ms3l
+  - diansheng-solar-s3m-2022
+  - diansheng-solar-s3m-plus
+  - diansheng-stickerless-3x3-standard
+  - diansheng-type-e-standard
+variants_created:
+  - yuxin-black-kirin-original--standard
+  - yuxin-fire-original--stickered
+  - yuxin-fire-original--stickerless
+  - yuxin-huanglong-original--standard
+  - yuxin-huanglong-original--magnetic
+  - yuxin-huanglong-v2--vt
+  - yuxin-huanglong-v2--uv
+  - yuxin-kylin-v2--standard
+  - yuxin-kylin-v2--magnetic
+  - yuxin-little-magic-original--standard
+  - yuxin-little-magic-original--magnetic
+  - yuxin-little-magic-original--magnetic-uv-coated
+  - yuxin-little-magic-v2--standard
+  - yuxin-little-magic-v2--uv-coated
+  - yuxin-little-magic-v3--vt
+  - yuxin-little-magic-v3--uv
+  - cyclone-boys-feiwu-original--standard
+  - cyclone-boys-feichi-original--standard
+  - cyclone-boys-feichi-g3--standard
+  - cyclone-boys-feijue-original--standard
+  - cyclone-boys-mini-3x3-original--standard
+  - diansheng-3x3-m-v1--standard
+  - diansheng-3x3-m-v1--uv-coated
+  - diansheng-mscube-ms3l--standard
+  - diansheng-mscube-ms3l--enhanced
+  - diansheng-solar-s3m-2022--standard
+  - diansheng-solar-s3m-2022--maglev
+  - diansheng-solar-s3m-plus--standard
+  - diansheng-stickerless-3x3-standard--standard
+  - diansheng-type-e-standard--stickered
+  - diansheng-type-e-standard--painted
+models_left_unassessed: []
+candidates_rejected:
+  - candidate: "YuXin Black Kirin 3x3 V2 (tiled)"
+    reason: "Not admitted as a model (no tier 1-3 source); therefore not a variant either."
+  - candidate: "Cyclone Boys FeiWu 'stickerless' as a second variant separate from 'Colored'"
+    reason: "Only the wiki (tier 3/4) names a stickerless configuration, with no specific
+      product/SKU; cubezz's own real listing is titled 'Colored'. Recorded as a disputed
+      colourway-application attestation on one baseline variant rather than fabricating a second
+      variant record with no product of its own."
+  - candidate: "Cyclone Boys Metallic 3x3 / Metallic 3x3 M as a variant of FeiChi or FeiJue"
+    reason: "No tier 1-3 source states which base design the metallic finish was applied to;
+      dimension match to FeiChi (57.0mm) explicitly treated as non-evidentiary by the prior
+      researcher's own reliability_note, a judgement this pass preserves. See escalation 1."
+  - candidate: "DianSheng Type-E 'no.222' vs 'no.333' as two variants matching stickered/painted"
+    reason: "Only the tier 4 wiki makes this catalogue-number distinction; no source ties either
+      forum-documented batch to a specific item number. Split by documented application
+      (stickered/painted) instead, without asserting the catalogue-number mapping."
+escalations:
+  - "Cyclone Boys Metallic 3x3 / Metallic 3x3 M / -m-gradient / -m-macaron: real sold products,
+    no evidenced base-model relationship to any of the 5 Cyclone Boys models in scope. Not
+    created as a variant anywhere. May warrant its own model once a source names the base
+    design."
+  - "npm run wayback -- prefix failed on every attempt this session (multiple hosts, multiple
+    retries) while get/list worked normally; blocked a planned DianSheng retailer prefix sweep.
+    Tooling issue, not evidence of absence, flagged for whoever owns scripts/wayback.mjs."
+```
 
 ## Machine-readable summary (placeholder, updated at completion)
 

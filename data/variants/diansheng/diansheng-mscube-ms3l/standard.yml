@@ -1,0 +1,37 @@
+# variant: diansheng-mscube-ms3l--standard
+# Pass 4 (variant enumeration), agent F. TheCubicle's own product page for the MsCube MS3L 3x3
+# (Standard): "a traditional magnetic layout with magnets in the edges and corners. This version
+# has primary plastic internals." Contrasted with the sibling Enhanced configuration (see
+# ...--enhanced), which the retailer describes with a different magnet layout and different
+# internals material.
+id: diansheng-mscube-ms3l--standard
+entity: variant
+model_id: diansheng-mscube-ms3l
+name: "MsCube MS3L 3x3 (Standard)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Standard"
+config:
+  materials:
+    plastic: "primary plastic internals"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+    note: "ASSESSMENT RECORD. Differentiation search performed: TheCubicle's own two-item CDX
+      prefix sweep of /products/mscube found only these two listings (Standard, Enhanced), both
+      first captured 2022-01-29/2023-02-06. No third configuration or named limited edition was
+      found."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+    note: "'MsCube MS3L 3x3 (Standard)' is the retailer's own product title."
+  /config/materials:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-standard-product]
+    note: "'This version has primary plastic internals' -- the source's own contrast term against
+      the Enhanced configuration's 'transparent blue corner stalks and torpedoes.' Recorded only
+      as a descriptive note here; no structured vocabulary distinguishes internals plastics
+      further at this pass."

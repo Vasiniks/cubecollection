@@ -1,0 +1,32 @@
+# variant: diansheng-solar-s3m-2022--standard
+# Pass 4 (variant enumeration), agent F. TheCubicle's own base product page
+# (thecubicle-diansheng-solar-s3m-2022-product): "comes with a screwdriver to adjust tensions and
+# has a compression adjustment mechanism that you can tune by hand" -- a spring-based adjustment
+# system, contrasted with the sibling MagLev configuration (see ...--maglev, fetched this pass),
+# whose own page states directly it has "the same great hand-adjustment mechanism, but now with
+# MagLev technology."
+id: diansheng-solar-s3m-2022--standard
+entity: variant
+model_id: diansheng-solar-s3m-2022
+name: "DianSheng Solar S3M 2022"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  maglev: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-diansheng-solar-s3m-2022-product]
+    note: "ASSESSMENT RECORD. Differentiation search performed: the base product page and its
+      sibling MagLev path (thecubicle-diansheng-solar-s3m-2022-maglev-product, fetched and made
+      its own source this pass) were both checked; no other configuration or named edition was
+      found."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-diansheng-solar-s3m-2022-product, thecubicle-diansheng-solar-s3m-2022-maglev-product]
+    note: "The base page describes a screwdriver/hand-compression spring mechanism with no
+      MagLev language; the sibling MagLev page's own contrast ('the same great hand-adjustment
+      mechanism, but now with MagLev technology') is direct evidence this base configuration
+      itself has no MagLev."

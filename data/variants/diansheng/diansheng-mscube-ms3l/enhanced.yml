@@ -1,0 +1,41 @@
+# variant: diansheng-mscube-ms3l--enhanced
+# Pass 4 (variant enumeration), agent F. TheCubicle's own separate product page
+# (thecubicle-mscube-ms3l-3x3-enhanced-product, fetched and preserved this pass): "a novel new
+# 3x3 design by MsCube... the enhanced versions has a brand new magnetic layout that has magnets
+# in the feet of the corners and edges. This version also has transparent blue corner stalks and
+# torpedoes" -- a stated different magnet layout AND different internals materials from the
+# Standard configuration (DATA_MODEL §4.1: magnet configuration; materials the manufacturer
+# distinguishes).
+id: diansheng-mscube-ms3l--enhanced
+entity: variant
+model_id: diansheng-mscube-ms3l
+name: "MsCube MS3L 3x3 (Enhanced)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Enhanced"
+config:
+  magnet_configuration: unknown
+  materials:
+    plastic: "transparent blue corner stalks and torpedoes"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-enhanced-product]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-enhanced-product]
+    note: "'MsCube MS3L 3x3 (Enhanced)' is the retailer's own product title."
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [thecubicle-mscube-ms3l-3x3-enhanced-product]
+    note: "'A brand new magnetic layout that has magnets in the feet of the corners and edges' --
+      described as different from the Standard configuration's own 'edges and corners' layout,
+      but no vocabulary-mapped arrangement (single_layer, dual_layer, etc.) is stated explicitly
+      for either configuration, so this is recorded `unknown` rather than guessed, deliberately
+      NOT inheriting the model's own `single_layer` (which itself is `uncertain`-confidence and
+      reads the Standard configuration's language, not this one)."
+  /config/materials:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-enhanced-product]

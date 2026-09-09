@@ -1,0 +1,34 @@
+# variant: diansheng-type-e-standard--stickered
+# Pass 4 (variant enumeration), agent F. A 2008-06-25 Speedsolving forum review
+# (speedsolving-forum-diansheng-type-e-review-2008): "Comes assembled with correct color
+# scheme -- and surprisingly they have stickers, not paint!" -- an explicit, dated, hands-on
+# statement that this batch was genuinely stickered, contrasted with a later, independent
+# for-sale thread describing a painted example (see the sibling ...--painted variant). Per the
+# model record's own reasoning, this is treated as a sticker/colour-application variant
+# difference within one design (DATA_MODEL §4.1), not a second model.
+id: diansheng-type-e-standard--stickered
+entity: variant
+model_id: diansheng-type-e-standard
+name: "DianSheng Type-E (Stickered)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-type-e-review-2008]
+    note: "ASSESSMENT RECORD. Differentiation search performed: three 2008 Speedsolving forum
+      threads (a review, a for-sale listing, a discussion) were checked, plus the tier 4 wiki.
+      The sticker-vs-paint distinction below is the only documented configuration axis found; no
+      dimension, weight, or further named edition was found at any tier."
+  /colorway/application:
+    confidence: reported
+    sources: [speedsolving-forum-diansheng-type-e-review-2008]
+    note: "'Surprisingly they have stickers, not paint!' is a direct, dated, hands-on statement,
+      distinguishing this specific reviewed unit from the separately-documented painted batch
+      (diansheng-type-e-standard--painted). The wiki's own 'no.222 and no.333' catalogue-number
+      framing is NOT used to assign either forum-documented batch to a specific item number --
+      no source found this pass makes that link, and it is recorded only as an unchased lead."
