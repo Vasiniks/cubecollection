@@ -123,6 +123,75 @@ merged main state from parallel lanes, not a regression from this section).
 
 ---
 
+### HaiTun (2 models — haitun-waverider-v1, haitun-waverider-v2) — DONE
+
+Densest remaining target per the coordinator's brief. Both models' descriptions already named
+configuration tiers by URL, not independently fetched during Pass 3; fetched and actioned here.
+**Ran the ZhanLang dedup test explicitly, per the coordinator's specific warning about this
+manufacturer.**
+
+**haitun-waverider-v1** (3 variants — a `scripts/wayback.mjs prefix
+thecubicle.com/products/haitun` sweep found 9 captured URLs collapsing to 3 cube configurations
+plus a separate adjustment-tool accessory product, rejected as a variant candidate — a
+tool SKU, not a sold cube configuration):
+- `haitun-waverider-v1--standard` (traditional corner-edge magnets, `tri_adjust`).
+- `haitun-waverider-v1--flagship` (adds foot magnets, `dual_layer` reading).
+- `haitun-waverider-v1--limited-edition` — 200 worldwide (retailer's own figure), "the same...
+  Flagship 3x3... but... limited," ships unstickered with an included sticker set
+  (`colorway.application: hybrid`). A Tier 5 review mentioning "it's blue" is recorded as an
+  unchased colourway lead, not used as evidence.
+- New source: `thecubicle-haitun-waverider-v1-limited-edition-2024`.
+
+**haitun-waverider-v2** (4 variants — Standard, Pioneer, Flagship, Ultimate, all named at
+family level already):
+- `haitun-waverider-v2--standard` (Cubezz product ID 8599).
+- `haitun-waverider-v2--flagship` (Cubezz product ID 8598).
+- `haitun-waverider-v2--pioneer` (TheCubicle only, `uncertain` — no independent second
+  retailer found for this tier specifically).
+- `haitun-waverider-v2--ultimate` — the one tier with a genuinely distinct documented magnet
+  layout (20-magnet core + 6 magnetic rings, vs. the "26-Point Core" shared by the other three).
+- New sources: `thecubicle-haitun-waverider-v2-flagship-2026`,
+  `thecubicle-haitun-waverider-v2-pioneer-2026`.
+
+**THE ZHANLANG DEDUP TEST, RUN EXPLICITLY.** Cubezz's Flagship listing (product ID 8598, SKU
+HTO02C) is the SAME product ID/SKU that, three months earlier, was titled "HAITUN ZhanLang V2
+3x3x3 Speed Cube Flagship Version" — already adjudicated and resolved elsewhere in this archive
+(Pass 2.6, `cubezz-haitun-zhanlang-v2-flagship-2026`/`cubezz-haitun-waverider-v2-flagship-2026`)
+as one retailer listing renamed in place, not two products. This pass does **not** re-litigate
+that adjudication or create any ZhanLang model/variant. Separately, Standard (Cubezz ID 8599)
+and Flagship (Cubezz ID 8598) are **different** product IDs from each other — a genuine SKU
+distinction, not a second instance of the ZhanLang pattern — which is why both are kept as
+separate variants here.
+
+**Materiality judgement call, flagged explicitly.** TheCubicle's own marketing copy for V2
+Standard, Flagship, and Pioneer is close to word-for-word identical (same "26-Point Core...94
+configurable magnets" paragraph, same 64-combination adjustment claim, same 280g Gross Weight,
+same 2026-02-03 Added date). These three variants rest on the manufacturer's own tier NAME
+(DATA_MODEL variant-materiality rule 7) and, for Standard/Flagship, independently distinct
+Cubezz product IDs — not a documented hardware difference between those three specifically.
+Recorded as three variants rather than collapsed to one, but the near-duplicate marketing
+copy is exactly the pattern this manufacturer's ZhanLang case illustrates, so this call is
+surfaced for human review rather than made silently.
+
+**Rejected candidates:** the V1 adjustment-tool accessory (a separate tool SKU, not a cube
+configuration). A Cubezz "Supreme Edition" tier of V2 (named only in
+`cubezz-haitun-waverider-v2-standard`'s own note as "possibly a rename or regional equivalent
+of the 'Ultimate' tier, not resolved") was NOT independently investigated this pass (a quick
+wayback prefix check on cubezz.com/Buy-85* returned no HaiTun results) — left as an unchased
+lead, not built into a variant, since no dedicated page or spec content was found for it.
+
+**Weight-field discipline:** `weight_g` deliberately left unset on `haitun-waverider-v2--ultimate`
+despite an on-file "Gross Weight: 282g" figure — TheCubicle's V2 spec tables carry no separate
+Item Weight field at all (unlike V1's), so the only available number is packaging-inclusive and
+setting it produced a spurious lint rule-18 implausible-weight warning for no evidentiary gain;
+removed before committing.
+
+**Validation:** `npm run check` after this section — 0 errors, 38 warnings (merged-main
+baseline, no regressions; the transient 282g lint warning above was introduced and then fixed
+within this section).
+
+---
+
 ## Machine-readable summary (placeholder, to be replaced at end)
 ```yaml
 models_assessed: []

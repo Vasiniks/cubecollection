@@ -1,0 +1,37 @@
+# variant: haitun-waverider-v2--flagship
+# Pass 4. HaiTun Waverider V2's Flagship tier. See haitun-waverider-v2--standard.yml's header
+# for the marketing-copy-duplication note and the ZhanLang dedup test (Cubezz product ID 8598,
+# corroborated as a genuine, distinct SKU from Standard's 8599, and independently proven
+# elsewhere in this archive to be a renamed continuation of "ZhanLang V2 Flagship" at the same
+# product ID/SKU — not a new or different product from that rename, already resolved).
+id: haitun-waverider-v2--flagship
+entity: variant
+model_id: haitun-waverider-v2
+name: "HaiTun Waverider V2 3x3 (Flagship)"
+scope_class: core
+config:
+  magnet_strength: "Up to 26 core magnets, 70 total magnets, up to 94 configurable magnet
+    positions, per TheCubicle's own description; not a normalised vocabulary value."
+edition:
+  types: [standard]
+  designation: "Flagship"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-flagship-2026, cubezz-haitun-waverider-v2-flagship-2026]
+    note: "Differentiation search performed (see haitun-waverider-v2--standard.yml's header).
+      Both TheCubicle and Cubezz independently carry this as its own product/SKU (Cubezz
+      product ID 8598). No limited/commemorative language found beyond the tier name itself."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-flagship-2026]
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-haitun-waverider-v2-flagship-2026]
+  /colorway/application:
+    confidence: probable
+    sources: [cubezz-haitun-waverider-v2-flagship-2026]
+    note: "Cubezz's own structured field: 'Color: Stickerless'."

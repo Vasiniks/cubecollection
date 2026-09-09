@@ -1,0 +1,37 @@
+# source: thecubicle-haitun-waverider-v2-flagship-2026
+# TheCubicle's own product page for "HaiTun Waverider V2 3x3 (Flagship)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/haitun` during Pass 4 (Agent H, Batch
+# 2). The family record (haitun-waverider.yml) already asserts a Flagship tier exists within
+# V2 ("sold across at least Standard, Pioneer, Flagship, and an 'Ultimate' top tier"); this is
+# the dedicated page for that tier, fetched and actioned here.
+id: thecubicle-haitun-waverider-v2-flagship-2026
+entity: source
+kind: retailer
+title: "HaiTun Waverider V2 3x3 (Flagship) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/haitun-waverider-3x3-v2-flagship"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260210140711id_/https://www.thecubicle.com/products/haitun-waverider-3x3-v2-flagship"
+excerpt: |-
+  Product Description: "Introducing the HaiTun Waverider V2 3x3 (Flagship) – the next
+  evolution of premium speedcubes brought to you by boutique manufacturer HaiTun... 64 tuning
+  combinations: Enjoy 8 levels of spring compression and 8 levels of center tension... 3D
+  Accelerated Magnetic Positioning: Features up to 26 core magnets (70 total magnets) and up to
+  94 magnets configurable throughout the cube... Flagship quality & presentation: Comes in a
+  premium gift box with a full set of accessories: cube carry case, stand, adjustment tool,
+  wipe cloth, ID card, and detailed instructions. With its meticulously designed 56mm build..."
+  Structured "Product Specifications" table: "Manufacturer: HaiTun / Type: 3x3 Speed Cubes /
+  Added: 2026-02-03 / Gross Weight: 280g / Magnets: Magnetic."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Same product ID/SKU as
+  `cubezz-haitun-waverider-v2-flagship-2026` (Cubezz product 8598, SKU HTO02C — see that
+  source's own P3-T4 adjudication note), an independent non-US retailer corroborating this as
+  the Flagship tier of V2. Weight and accessory-kit language track the Ultimate tier's own page
+  closely (same 280g gross weight, same accessory list), which is noted rather than resolved —
+  see this model's Flagship variant record for the materiality discussion."
+status: sourced
