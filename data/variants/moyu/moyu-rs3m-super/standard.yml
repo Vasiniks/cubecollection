@@ -1,0 +1,30 @@
+# variant: moyu-rs3m-super--standard
+# Pass 4. Named directly by the wiki: "MoYu Super RS3M Standard: The first version of the
+# Super RS3M that has a dragon scale design on the pieces and comes with the standard DAS of
+# the RS3M." Sold stickerless only, per the wiki's own line-level statement ("This puzzle comes
+# in stickerless only and comes in 3 versions").
+id: moyu-rs3m-super--standard
+entity: variant
+model_id: moyu-rs3m-super
+name: "MoYu Super RS3M Standard"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Standard"
+config:
+  adjustment_system: tension_compression
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/adjustment_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'comes with the standard DAS of the RS3M.'"
+  /colorway/application:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki, at the model/line level: 'This puzzle comes in stickerless only and comes in 3 versions.'"
