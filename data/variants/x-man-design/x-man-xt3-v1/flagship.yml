@@ -1,0 +1,28 @@
+# variant: x-man-xt3-v1--flagship
+# Pass 4. The base "Flagship" configuration, per TheCubicle's own product page, which names
+# three versions directly on the same listing: "Flagship", "Flagship + UV", "Pioneer MagLev +
+# UV" (see flagship-uv.yml, pioneer-maglev-uv.yml).
+id: x-man-xt3-v1--flagship
+entity: variant
+model_id: x-man-xt3-v1
+name: "X-Man XT3 V1 3x3 (Flagship)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Flagship"
+config:
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+    note: "'This is the Flagship version that has springs and a matte outer finish', one of
+      three named versions offered on the same page."
+  /config/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+    note: "'Adjust the tension and compression' is TheCubicle's own direct statement."

@@ -1,0 +1,46 @@
+# variant: x-man-tornado-v4--v4-ai
+# Pass 4. The electronic sibling, per the model's own explicit boundary call treating "Tornado
+# V4 AI" as a variant of this model, not a separate model (DATA_MODEL section 4.1). TheCubicle's
+# own rich product page (thecubicle-x-man-tornado-v4-ai-3x3-uv-product) describes it directly:
+# "the smart upgrade of the world-renowned Tornado V4... Sleek UV coating... high-precision
+# gyroscope, magnetic foot positioning system, and a companion Smart Player Pro APP."
+id: x-man-tornado-v4--v4-ai
+entity: variant
+model_id: x-man-tornado-v4
+name: "X-Man Tornado V4 AI 3x3 UV"
+scope_class: core
+edition:
+  types: [standard, smart]
+config:
+  coating: uv
+smart:
+  is_smart: true
+  companion_app: "Smart Player Pro"
+  note: "Per TheCubicle: high-precision gyroscope, 'magnetic foot positioning system', sold with
+    a charging base."
+relationships:
+  - type: smart_version_of
+    target: x-man-tornado-v4--standard
+    target_entity: variant
+    note: "TheCubicle: 'the smart upgrade of the world-renowned Tornado V4' — the retailer's own
+      direct statement that this shares the V4 mechanical platform with electronics added."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-ai-3x3-uv-product]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-ai-3x3-uv-product]
+    note: "'Sleek UV coating' is TheCubicle's own direct statement."
+  /smart/is_smart:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-ai-3x3-uv-product]
+  /smart/companion_app:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-ai-3x3-uv-product]
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v4-ai-3x3-uv-product]
+    note: "Direct, explicit tier-2 statement of shared platform, stronger than the wiki-only
+      cross-reference used for the M Pro Elite/Smart Cube pairing."

@@ -1,0 +1,30 @@
+# variant: x-man-tornado-v4--pioneer-uv
+# Pass 4. A UV-coated sibling, named "x-man-tornado-v4-m-3x3-pioneer-uv" in the 2025 collection
+# enumeration (thecubicle-x-man-designs-collection-2025). No individual product page was fetched
+# for this slug this pass; existence rests on the collection-listing source alone.
+id: x-man-tornado-v4--pioneer-uv
+entity: variant
+model_id: x-man-tornado-v4
+name: "X-Man Tornado V4 M Pioneer UV"
+aliases:
+  - { name: "X-Man Tornado V4 M 3x3 Pioneer UV", retailer: "TheCubicle", source: thecubicle-x-man-designs-collection-2025 }
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Pioneer"
+config:
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "Existence rests on a retailer collection URL-prefix enumeration alone; no individual
+      product page was fetched this pass."
+  /edition/designation:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+  /config/coating:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "'UV' appears directly in the retailer's own slug/title."
