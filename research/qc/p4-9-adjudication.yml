@@ -20,6 +20,7 @@
 #   sub_brand          belongs to a manufacturer recorded under another id
 #   not_3x3            out of scope: non-3x3, shape mod, or novelty by the archive's own rules
 #   false_positive     a matcher artefact; not a product at all
+#   needs_research     examined and genuinely unresolved — say so rather than guess a class
 #   unadjudicated      not yet examined — the honest default, and never a silent skip
 #
 # NOTHING IN THIS FILE MUTATES THE TAXONOMY. It is research and evidence. Admission is a
@@ -43,8 +44,8 @@ candidates:
     retailers: ["Cubelelo (IN)", "SpeedCubeShop", "TheCubicle"]
     first_listed: "2025-06-06"
     known_family: "moyu-weilong"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "MoYu's CURRENT FLAGSHIP. 13 SKUs across all three retailers, first listed 2025-06-06 — over a year before Pass 3 ran on 2026-09-03 and recorded a 'full WeiLong succession' ending at V9. The single most consequential entry in this file."
   - key: "moyuweilongwrmv10"
     titles: ["MoYu WeiLong WRM V10 3x3", "MoYu WeiLong WR M 3x3 V10", "MoYu WeiLong WR M v10"]
     skus: 9
@@ -52,8 +53,8 @@ candidates:
     retailers: ["Cubelelo (IN)", "SpeedCubeShop", "TheCubicle"]
     first_listed: "2024-05-09"
     known_family: "moyu-weilong"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "9 SKUs, first listed 2024-05-09. The archive records moyu-weilong-wr-m-2020 and -2021 while the retailers number the same line WRM V9 and V10. Whether those are the same products under two naming schemes is UNRESOLVED and must be settled before any admission — see the sibling entry moyuweilongwrmv9."
   - key: "moyuaolongv5"
     titles: ["MoYu AoLong V5 3x3"]
     skus: 8
@@ -61,8 +62,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2026-06-18"
     known_family: "moyu-aolong"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "8 SKUs at two retailers from 2026-06-18. The archive's AoLong line stops at moyu-aolong-v2 and -gt."
   - key: "moyuweilongwrmv9"
     titles: ["MoYu WeiLong WRM V9 3x3", "MoYu WeiLong WR M 3x3 V9"]
     skus: 8
@@ -70,8 +71,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2023-04-10"
     known_family: "moyu-weilong"
-    classification: unadjudicated
-    note: null
+    classification: needs_research
+    note: "8 SKUs from 2023-04-10. This is the crux of the WRM naming question: if WRM V9 is what the archive already holds as moyu-weilong-wr-m-2021, this is alternate_naming and NOT a gap; if it is a later product, both V9 and V10 are missing. Resolving it needs a manufacturer or dated retailer statement tying a WRM version number to a year, which this pass did not find. Do not guess: the answer changes the size of P4-9."
   - key: "xmantornadov5"
     titles: ["X-Man Tornado V5 3x3"]
     skus: 3
@@ -79,8 +80,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-04-25"
     known_family: "x-man-tornado"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "X-Man's CURRENT FLAGSHIP. Verified independently at Cubelelo with three distinct SKUs and its own on-page version-comparison table (Flagship UV / Pioneer UV). The archive's newest Tornado is V4."
   - key: "cycloneboysmetallicm"
     titles: ["Cyclone Boys Metallic 3x3 M"]
     skus: 3
@@ -88,8 +89,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2021-09-29"
     known_family: "cyclone-boys-metallic-3x3"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "'Cyclone Boys Metallic 3x3 M', the magnetic configuration of the above. Same family, same overturned conclusion; whether M and non-M are two models or one model in two configurations is a Pass-4 question that only arises once the family has any model at all."
   - key: "yjyulongv2"
     titles: ["YJ YuLong 3x3 V2"]
     skus: 3
@@ -97,8 +98,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-06-29"
     known_family: "yj-yulong"
-    classification: unadjudicated
-    note: null
+    classification: alternate_naming
+    note: "The archive holds yj-yulong-v2-m ('YJ YuLong V2 M'). The catalogue carries 'YJ YuLong 3x3 V2 M' alongside 'V2 (Magnetic) - 2025 Edition', so this key groups the line the archive already has. The 2025 Edition beneath it is variant-level material, not a missing model."
   - key: "moyuweilongferrocorev2"
     titles: ["MoYu WeiLong Ferrocore V2 3x3", "MoYu WeiLong Ferrocore v2 3x3"]
     skus: 3
@@ -106,8 +107,8 @@ candidates:
     retailers: ["Cubelelo (IN)", "TheCubicle"]
     first_listed: "2026-03-02"
     known_family: "moyu-weilong"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "3 SKUs at two retailers from 2026-03-02. A named WeiLong sub-line ('Ferrocore') absent from the archive entirely, not merely a later generation."
   - key: "mfjsmeilong3mv2"
     titles: ["MFJS MeiLong 3M V2 3x3"]
     skus: 2
@@ -115,8 +116,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-04-18"
     known_family: "mfjs-meilong"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "2 SKUs from 2024-04-18, vendor MFJS. The archive holds mfjs-meilong-3c and others but no 3M V2."
   - key: "moyurs3m2021"
     titles: ["MoYu RS3 M 2021 3x3"]
     skus: 2
@@ -124,8 +125,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2021-09-10"
     known_family: "moyu-rs3m"
-    classification: unadjudicated
-    note: null
+    classification: needs_research
+    note: "'MoYu RS3 M 2021'. The archive holds moyu-rs3m-2020, -super, -super-v2 and -v5. Whether a distinct 2021 revision exists or the retailer is labelling the 2020 mould by its selling year is exactly the ambiguity the archive's own RS3 M records already flag. Needs a dated manufacturer statement."
   - key: "cycloneboysmetallic"
     titles: ["Cyclone Boys Metallic 3x3"]
     skus: 2
@@ -133,8 +134,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2021-09-29"
     known_family: "cyclone-boys-metallic-3x3"
-    classification: unadjudicated
-    note: null
+    classification: confirmed_missing
+    note: "OVERTURNS A DOCUMENTED PASS 3 CONCLUSION. cyclone-boys-metallic-3x3 is one of the archive's three deliberate ZERO-MODEL families, concluded as \"'Metallic' is a finish treatment — a Pass 4 variant axis, not a model line\". But it is sold as a named product at TWO retailers with its own SKUs from 2021-09-29. The conclusion may still be defensible — a retailer selling a named finish does not make it a model — but it was reached WITHOUT this evidence and cannot be left standing by default."
   - key: "yuxinlittlemagicv3"
     titles: ["YuXin Little Magic 3x3 V3"]
     skus: 2
@@ -142,8 +143,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-12-30"
     known_family: "yuxin-3x3"
-    classification: unadjudicated
-    note: null
+    classification: alternate_naming
+    note: "The archive holds yuxin-little-magic-v3. Note the known_family field says yuxin-3x3, which is a ZERO-MODEL family — the family attribution here is itself a matcher artefact and should not be read as evidence."
   - key: "moretrytianmax3v4"
     titles: ["MoreTry Tianma X3+ V4 3x3"]
     skus: 2
@@ -151,8 +152,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-01-03"
     known_family: "moretry-tianma-x3"
-    classification: unadjudicated
-    note: null
+    classification: alternate_naming
+    note: "The archive HOLDS moretry-tianma-x3-v4. The matcher missed it because the retailer writes 'Tianma X3+ V4' and the archive 'Tianma X3 V4'. A '+' is the whole difference."
   - key: "moyuweilongaiv11"
     titles: ["MoYu WeiLong AI 3x3 V11"]
     skus: 2
@@ -160,8 +161,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-07-21"
     known_family: "moyu-weilong"
-    classification: unadjudicated
-    note: null
+    classification: needs_research
+    note: "'MoYu WeiLong V11 AI'. Almost certainly a smart-cube sibling of the V11 rather than a separate model line, but the archive's own treatment of smart variants is inconsistent (GAN's i-series are models; MoYu AI is not clearly resolved). Adjudicate together with moyuweilongv11, not before it."
   - key: "yuxinlittlemagicv2"
     titles: ["YuXin Little Magic 3x3 V2"]
     skus: 2
@@ -169,8 +170,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2021-10-23"
     known_family: "yuxin-3x3"
-    classification: unadjudicated
-    note: null
+    classification: alternate_naming
+    note: "The archive holds yuxin-little-magic-v2. Same misleading yuxin-3x3 family attribution as above."
   - key: "moyuweilongaiv10"
     titles: ["MoYu WeiLong AI 3x3 V10"]
     skus: 2
@@ -178,8 +179,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2024-06-17"
     known_family: "moyu-weilong"
-    classification: unadjudicated
-    note: null
+    classification: needs_research
+    note: "'MoYu WeiLong V10 AI'. Same question as moyuweilongaiv11, and additionally the only evidence this pass found for a WeiLong V10 at all."
   - key: "yuxintreasurebox"
     titles: ["YuXin 3x3 Treasure Box", "YuXin Treasure Box"]
     skus: 2
@@ -187,8 +188,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2018-09-01"
     known_family: "yuxin-3x3"
-    classification: unadjudicated
-    note: null
+    classification: not_3x3
+    note: "'YuXin Treasure Box' — a puzzle box, not a 3x3x3 layer-turning cube."
   - key: "mfjsminikeychaincube"
     titles: ["MFJS Mini 3x3 Keychain Cube"]
     skus: 1
@@ -196,8 +197,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2018-09-11"
     known_family: "mfjs-mini-3x3"
-    classification: unadjudicated
-    note: null
+    classification: alternate_naming
+    note: "The archive holds mfjs-mini-3x3-keychain-40mm."
   - key: "yuxinmagneticslidingtilecube"
     titles: ["YuXin 3x3 Magnetic Sliding Tile Cube"]
     skus: 1
@@ -205,8 +206,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2023-06-22"
     known_family: "yuxin-3x3"
-    classification: unadjudicated
-    note: null
+    classification: not_3x3
+    note: "A sliding-tile puzzle. Not a 3x3x3 twisty puzzle."
   - key: "yuxinsuperherocube"
     titles: ["YuXin Super Hero Cube 3x3"]
     skus: 1
@@ -214,8 +215,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-07-03"
     known_family: "yuxin-3x3"
-    classification: unadjudicated
-    note: null
+    classification: not_3x3
+    note: "A printed novelty; out of scope by the archive's own printed/novelty treatment."
   - key: "yuxinsuperbig"
     titles: ["YuXin Super Big 3x3"]
     skus: 1
@@ -223,8 +224,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2018-09-11"
     known_family: "yuxin-3x3"
-    classification: unadjudicated
-    note: null
+    classification: needs_research
+    note: "'YuXin Super Big 3x3' — an oversized 3x3, which IS a 3x3x3 mechanism. Scope, not identity, is the question: the archive admits shengshou-legend-big at 70mm, so oversized formats are not excluded in principle. first_listed is 2018-09-11, the documented catalogue artefact date, so that field carries NO dating weight here."
   - key: "lefunchristmasv2"
     titles: ["Lefun Christmas 3x3 V2"]
     skus: 1
@@ -232,8 +233,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2022-11-29"
     known_family: "lefun-3x3"
-    classification: unadjudicated
-    note: null
+    classification: not_3x3
+    note: "A printed Christmas-themed novelty. The archive already treats LeFun's print themes as variant-level under lefun-3x3, which is the correct level for this."
   - key: "lefunperiodictablev2"
     titles: ["Lefun Periodic Table 3x3 V2"]
     skus: 1
@@ -241,8 +242,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-02-08"
     known_family: "lefun-3x3"
-    classification: unadjudicated
-    note: null
+    classification: not_3x3
+    note: "A printed periodic-table novelty; same treatment as the Christmas theme."
   - key: "yuxinlustrouscube"
     titles: ["YuXin Lustrous Cube 3x3"]
     skus: 1
@@ -250,8 +251,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-01"
     known_family: "yuxin-3x3"
-    classification: unadjudicated
-    note: null
+    classification: not_3x3
+    note: "A light-up novelty. Compare the separately-listed ShengShou Lustrous Light-Up, which is a standard 3x3 and IS recorded as a P4-9 candidate."
   - key: "speedcubebulkset"
     titles: ["3x3 Speed Cube Bulk Set"]
     skus: 1
@@ -259,8 +260,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2023-09-07"
     known_family: "rubiks-speed"
-    classification: unadjudicated
-    note: null
+    classification: bundle
+    note: "'3x3 Speed Cube Bulk Set' — a multi-product SKU, not a product. The known_family attribution to rubiks-speed is a matcher artefact from the word 'Speed'."
   - key: "gan356icarryev2"
     titles: ["GAN 356 i Carry E 3x3 V2"]
     skus: 1
@@ -268,8 +269,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-04-25"
     known_family: "gan-356"
-    classification: unadjudicated
-    note: null
+    classification: needs_research
+    note: "'GAN 356 i Carry E 3x3 V2', one SKU at one retailer. The archive holds gan-356-i-carry-e. A V2 of a smart cube is plausible but one SKU at one retailer is thin, and GAN's i-series naming is dense enough that a retailer suffix is not proof of a distinct product."
   - key: "gan356lite"
     titles: ["GAN 356 3x3 Lite"]
     skus: 1
@@ -277,8 +278,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2021-04-18"
     known_family: "gan-356"
-    classification: unadjudicated
-    note: null
+    classification: needs_research
+    note: "'GAN 356 3x3 Lite (Magnetic)', one SKU. GAN uses 'Lite' for reduced-specification editions elsewhere, which would make this variant-level, but the archive has no GAN 356 Lite at either level. Needs a first-party page."
   - key: "qiyithunderclapv3"
     titles: ["QiYi Thunderclap 3x3 V3"]
     skus: 1
@@ -286,8 +287,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2019-09-17"
     known_family: "qiyi-thunderclap"
-    classification: unadjudicated
-    note: null
+    classification: alternate_naming
+    note: "The archive holds qiyi-thunderclap-v3-m. The catalogue title omits the 'M'."
   - key: "moyusuperweilongv2"
     titles: ["MoYu Super WeiLong 3x3 V2"]
     skus: 6
