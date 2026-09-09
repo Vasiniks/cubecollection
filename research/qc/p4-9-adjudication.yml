@@ -18,6 +18,8 @@
 #   bundle             a multi-product SKU, not a product
 #   variant            a configuration of a model the archive already holds
 #   sub_brand          belongs to a manufacturer recorded under another id
+#   missing_manufacturer  the VENDOR itself is absent from the 54 — a manufacturer-layer gap,
+#                      which is a larger finding in kind than a missing model
 #   not_3x3            out of scope: non-3x3, shape mod, or novelty by the archive's own rules
 #   false_positive     a matcher artefact; not a product at all
 #   needs_research     examined and genuinely unresolved — say so rather than guess a class
@@ -360,8 +362,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-06-11"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinaworldmap"
     titles: ["Ziina World Map 3x3"]
     skus: 4
@@ -369,8 +371,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-21"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "moyusuperaolongai"
     titles: ["MoYu Super AoLong AI 3x3"]
     skus: 4
@@ -423,8 +425,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-21"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinarainbowcube"
     titles: ["Ziina Rainbow Cube 3x3"]
     skus: 3
@@ -432,8 +434,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-04-10"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "sudokucube"
     titles: ["Sudoku Cube 3x3"]
     skus: 3
@@ -504,8 +506,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2021-11-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Vendor absent from the 54, single line each. Weak individually; recorded because the manufacturer-layer question is the same one Ziina raises at scale."
   - key: "rubiksphantomcube"
     titles: ["Rubik's Phantom Cube 3x3"]
     skus: 2
@@ -513,8 +515,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2023-03-16"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: variant
+    note: "Vendor 'Spin Master' is Rubik's PARENT COMPANY, not a missing manufacturer - a label, not a brand. And the archive is already right here: rubiks-classic-cube carries phantom, crystal, impossible, retro, re-cube and coach-cube AS VARIANTS. The remaining licensed prints (Tetris, Mickey/Minnie Cubers) are the same variant-level material, not missing models. A good check on the tool: the largest vendor group after Ziina is almost entirely already correct."
   - key: "moyusuperweilong"
     titles: ["MoYu Super WeiLong 3x3"]
     skus: 2
@@ -540,8 +542,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-09-06"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "vkslopingframecube"
     titles: ["VK 3x3 Sloping Frame Cube"]
     skus: 2
@@ -558,8 +560,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-06-11"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "zcubegoldenmogaocaves"
     titles: ["ZCube Golden Mogao-Caves 3x3"]
     skus: 2
@@ -666,8 +668,8 @@ candidates:
     retailers: ["SpeedCubeShop", "TheCubicle"]
     first_listed: "2020-10-02"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: variant
+    note: "Vendor 'Spin Master' is Rubik's PARENT COMPANY, not a missing manufacturer - a label, not a brand. And the archive is already right here: rubiks-classic-cube carries phantom, crystal, impossible, retro, re-cube and coach-cube AS VARIANTS. The remaining licensed prints (Tetris, Mickey/Minnie Cubers) are the same variant-level material, not missing models. A good check on the tool: the largest vendor group after Ziina is almost entirely already correct."
   - key: "christmascube"
     titles: ["Christmas Cube 3x3", "3x3 Christmas Cube"]
     skus: 2
@@ -702,8 +704,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-07-05"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "minicube"
     titles: ["Mini 3x3 Cube"]
     skus: 1
@@ -720,8 +722,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2023-02-27"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "rubiksmagneticspeedcube"
     titles: ["Rubik's Magnetic Speed Cube 3x3"]
     skus: 1
@@ -738,8 +740,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2021-01-06"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Vendor absent from the 54, single line each. Weak individually; recorded because the manufacturer-layer question is the same one Ziina raises at scale."
   - key: "theyoocubedeluxeii"
     titles: ["The Yoo Cube Deluxe II 3x3"]
     skus: 1
@@ -747,8 +749,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2022-12-15"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "theyoocubeii"
     titles: ["The Yoo Cube II"]
     skus: 1
@@ -756,8 +758,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-03-16"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "yjpocketcube"
     titles: ["YJ Pocket Cube 3x3"]
     skus: 1
@@ -810,8 +812,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-07-05"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "gan328minikeychaincube"
     titles: ["GAN328 Mini Keychain Cube 3x3"]
     skus: 1
@@ -882,8 +884,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-07-05"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "ziinabigcalendar"
     titles: ["Ziina Big Calendar 3x3"]
     skus: 1
@@ -891,8 +893,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-10-16"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "mfjswcacubicgiftbox"
     titles: ["MFJS WCA Cubic Gift Box"]
     skus: 1
@@ -909,8 +911,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-21"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinachemistrycubea"
     titles: ["Ziina Chemistry Cube A 3x3"]
     skus: 1
@@ -918,8 +920,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-21"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinachemistrycubeb"
     titles: ["Ziina Chemistry Cube B 3x3"]
     skus: 1
@@ -927,8 +929,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-21"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinaemojicube"
     titles: ["Ziina Emoji Cube 3x3"]
     skus: 1
@@ -936,8 +938,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-01-07"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinasunflowergraffiti"
     titles: ["Ziina Sunflower Graffiti 3x3"]
     skus: 1
@@ -945,8 +947,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-01-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "minikeychaincasepenrosecube"
     titles: ["Mini Keychain Case Penrose Cube"]
     skus: 1
@@ -981,8 +983,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-07-25"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "zepuzzlessquished"
     titles: ["ZePuzzles Squished 3x3"]
     skus: 1
@@ -990,8 +992,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-09-06"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Vendor absent from the 54, single line each. Weak individually; recorded because the manufacturer-layer question is the same one Ziina raises at scale."
   - key: "ziinacalendarcubev3"
     titles: ["Ziina Calendar Cube 3x3 V3"]
     skus: 1
@@ -999,8 +1001,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-11-12"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinalitesuper"
     titles: ["Ziina Lite-Super 3x3"]
     skus: 1
@@ -1008,8 +1010,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-12-30"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "vin3nova"
     titles: ["VIN3 3x3 Nova"]
     skus: 1
@@ -1017,8 +1019,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-01-17"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "dianshenggalaxydualoctahedron"
     titles: ["DianSheng Galaxy Dual Octahedron"]
     skus: 1
@@ -1026,8 +1028,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-02-03"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "ziinamaze"
     titles: ["Ziina Maze 3x3"]
     skus: 1
@@ -1035,8 +1037,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-04-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "dianshenghexagonaldipyramidv2"
     titles: ["DianSheng 3x3 Hexagonal Dipyramid V2"]
     skus: 1
@@ -1323,8 +1325,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2023-11-24"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "sudokucubev6"
     titles: ["Sudoku Cube 3x3 V6"]
     skus: 1
@@ -1359,8 +1361,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-03-11"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinamagneticsudokucube"
     titles: ["Ziina Magnetic Sudoku Cube 3x3"]
     skus: 1
@@ -1368,8 +1370,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-04-05"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinamahjongcube"
     titles: ["Ziina Mahjong Cube 3x3"]
     skus: 1
@@ -1377,8 +1379,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-05-10"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "moyucubechair"
     titles: ["MoYu Cube Chair 3x3"]
     skus: 1
@@ -1404,8 +1406,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-06-11"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinamahjong"
     titles: ["Ziina Mahjong 3x3"]
     skus: 1
@@ -1413,8 +1415,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-06-11"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "toktokcube"
     titles: ["TokTok Cube 3x3"]
     skus: 1
@@ -1422,8 +1424,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-06-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Vendor absent from the 54, single line each. Weak individually; recorded because the manufacturer-layer question is the same one Ziina raises at scale."
   - key: "philyuxtingmanmusiccube"
     titles: ["Phil Yu x Tingman Music Cube 3x3"]
     skus: 1
@@ -1431,8 +1433,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-07-15"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "ziinacalendarcubev2"
     titles: ["Ziina Calendar Cube 3x3 V2"]
     skus: 1
@@ -1440,8 +1442,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-07-29"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "rubiksxdccubers"
     titles: ["Rubik's x DC Cubers 3x3"]
     skus: 1
@@ -1467,8 +1469,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-10-16"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "mfjswca27giftbox"
     titles: ["MFJS WCA 2-7 Gift Box"]
     skus: 1
@@ -1485,8 +1487,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-21"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinacolorfulgraffiti"
     titles: ["Ziina Colorful Graffiti 3x3"]
     skus: 1
@@ -1494,8 +1496,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2024-11-21"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "petcube"
     titles: ["Pet Cube 3x3"]
     skus: 1
@@ -1530,8 +1532,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-01-03"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinahundreddollarcube"
     titles: ["Ziina Hundred-Dollar Cube 3x3"]
     skus: 1
@@ -1539,8 +1541,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-01-07"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinamandala"
     titles: ["Ziina Mandala 3x3"]
     skus: 1
@@ -1548,8 +1550,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-01-07"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "qiyisandwichcube"
     titles: ["QiYi Sandwich Cube 3x3"]
     skus: 1
@@ -1566,8 +1568,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-01-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinafrenchfries"
     titles: ["Ziina French Fries 3x3"]
     skus: 1
@@ -1575,8 +1577,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-02-28"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "zautographcube"
     titles: ["Z Autograph Cube 3x3"]
     skus: 1
@@ -1593,8 +1595,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-04-10"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinasquaregridcube"
     titles: ["Ziina Square Grid Cube 3x3"]
     skus: 1
@@ -1602,8 +1604,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-05-02"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinaarrowscube"
     titles: ["Ziina Arrows Cube 3x3"]
     skus: 1
@@ -1611,8 +1613,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-05-02"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "thecaidencube"
     titles: ["The Caiden Cube 3x3"]
     skus: 1
@@ -1638,8 +1640,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-07-25"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinacloud"
     titles: ["Ziina Cloud 3x3"]
     skus: 1
@@ -1647,8 +1649,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-08-19"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "rubikspulsecube"
     titles: ["Rubik's Pulse Cube 3x3"]
     skus: 1
@@ -1674,8 +1676,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-11-24"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "yjmosaiccubesetof9"
     titles: ["YJ Mosaic 3x3 Cube Set of 9"]
     skus: 1
@@ -1692,8 +1694,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-11-30"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "limcubecrucismixupcube"
     titles: ["LimCube Crucis Mixup Cube"]
     skus: 1
@@ -1710,8 +1712,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2025-12-26"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "TheCubicle's own house and signature cubes (The Yoo Cube II and its Eco/Deluxe tiers, Tingboy, Tingman, Olor). Belongs to the `thecubicle` service manufacturer, not to any puzzle manufacturer. The archive already models this layer as cubicle-labs."
   - key: "thechegginscube"
     titles: ["The Cheggins Cube 3x3"]
     skus: 1
@@ -1737,8 +1739,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-04-03"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "vin3racer"
     titles: ["VIN3 3x3 Racer"]
     skus: 1
@@ -1746,8 +1748,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-04-03"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "stevensferrocorev2"
     titles: ["Steven's Ferrocore V2 3x3"]
     skus: 1
@@ -1764,8 +1766,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-04-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "zcubemahjong"
     titles: ["ZCube Mahjong 3x3"]
     skus: 1
@@ -1773,8 +1775,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-04-29"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "witedenroadblocki"
     titles: ["WitEden Roadblock I"]
     skus: 1
@@ -1782,8 +1784,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-04-30"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "rubiksclassic"
     titles: ["Rubik's Classic 3x3"]
     skus: 1
@@ -1800,8 +1802,8 @@ candidates:
     retailers: ["TheCubicle"]
     first_listed: "2026-07-31"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "sudokucubev7"
     titles: ["Sudoku Cube 3x3 V7"]
     skus: 1
@@ -1836,8 +1838,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2024-02-11"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "frozenglowcubev2"
     titles: ["Frozen Glow Cube V2"]
     skus: 1
@@ -1845,8 +1847,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-10-02"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "spookycube"
     titles: ["Spooky Cube"]
     skus: 1
@@ -1854,8 +1856,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-09-07"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "autographcube"
     titles: ["Autograph Cube 3x3"]
     skus: 1
@@ -1863,8 +1865,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2024-11-24"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "america250puzzlecubelimitededition"
     titles: ["America250™ Puzzle Cube — Limited Edition"]
     skus: 1
@@ -1872,8 +1874,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-05-02"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "souptimmymoyuwrmv10"
     titles: ["Soup Timmy MoYu WR M 3x3 V10"]
     skus: 1
@@ -1881,8 +1883,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2024-07-13"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "jpermrs3m2020"
     titles: ["JPerm RS3 M 2020 3x3"]
     skus: 1
@@ -1890,8 +1892,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2020-12-29"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "maxparkrs3mv5"
     titles: ["Max Park RS3 M 3x3 V5"]
     skus: 1
@@ -1899,8 +1901,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-03-01"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "mini1cm"
     titles: ["Mini 1cm 3x3"]
     skus: 1
@@ -1926,8 +1928,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-01-18"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "scsspeedcubepro"
     titles: ["SCS Speed Cube Pro 3x3"]
     skus: 1
@@ -1935,8 +1937,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2023-10-29"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "colorbrickspeedcube"
     titles: ["Color Brick Speed Cube"]
     skus: 1
@@ -1944,8 +1946,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2020-06-05"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "vincuberacer"
     titles: ["VIN Cube 3x3 Racer"]
     skus: 1
@@ -1953,8 +1955,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-10"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "dianshengbig10cm"
     titles: ["DianSheng Big 3x3 - 10cm"]
     skus: 1
@@ -1962,8 +1964,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2023-08-01"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "candycane"
     titles: ["Candy Cane 3x3"]
     skus: 1
@@ -1971,8 +1973,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-11-04"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "maxparktornadov4flagship"
     titles: ["Max Park Tornado 3x3 V4 Flagship"]
     skus: 1
@@ -1980,8 +1982,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2024-11-04"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "dianshengbig7cm"
     titles: ["DianSheng Big 3x3 - 7cm"]
     skus: 1
@@ -2007,8 +2009,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "zmogaocaves"
     titles: ["Z Mogao-Caves 3x3"]
     skus: 1
@@ -2025,8 +2027,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "crystallizedmini"
     titles: ["Crystallized 3x3 Mini"]
     skus: 1
@@ -2034,8 +2036,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2023-09-10"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "'CRYSTALL!ZED by Bri' - a named artist's custom finish sold through TheCubicle. A decorated cube is the retailer's service applied to someone else's product, which is exactly what the `thecubicle` service manufacturer exists to hold."
   - key: "dianshengbig9cm"
     titles: ["DianSheng Big 3x3 - 9cm"]
     skus: 1
@@ -2061,8 +2063,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "gan328mini"
     titles: ["GAN 328 3x3 Mini"]
     skus: 1
@@ -2079,8 +2081,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-03"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "space"
     titles: ["Space 3x3"]
     skus: 1
@@ -2088,8 +2090,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-03"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "zcubedollar"
     titles: ["Z-Cube Dollar 3x3"]
     skus: 1
@@ -2106,8 +2108,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastaraliengraffiti"
     titles: ["Ziina Star Alien Graffiti 3x3"]
     skus: 1
@@ -2115,8 +2117,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastarchemicalelements"
     titles: ["Ziina Star Chemical Elements 3x3"]
     skus: 1
@@ -2124,8 +2126,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastarloveheartgraffiti"
     titles: ["Ziina Star Love Heart Graffiti 3x3"]
     skus: 1
@@ -2133,8 +2135,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastarcheese"
     titles: ["Ziina Star Cheese 3x3"]
     skus: 1
@@ -2142,8 +2144,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastarmilk"
     titles: ["Ziina Star Milk 3x3"]
     skus: 1
@@ -2151,8 +2153,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastarworldmap3d"
     titles: ["Ziina Star World Map 3x3 3D"]
     skus: 1
@@ -2160,8 +2162,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastarworldmapv1"
     titles: ["Ziina Star World Map 3x3 V1"]
     skus: 1
@@ -2169,8 +2171,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "ziinastarcolorfulgraffiti"
     titles: ["Ziina Star Colorful Graffiti 3x3"]
     skus: 1
@@ -2178,8 +2180,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-07-09"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. Ziina and 'Ziina Star' account for 51 candidate lines at TheCubicle from 2023-11 onward, and no Ziina manufacturer record exists. This is a MANUFACTURER-layer gap, larger in kind than P4-9's model-layer one. Most Ziina lines are printed themes (World Map, Christmas, Halloween, Emoji, Chemistry, Mahjong, Poker), and the archive treats printed themes as VARIANT-level - it holds fourteen LeFun print editions on exactly that basis - so these are in-scope variant material that cannot exist until a Ziina manufacturer, family and model do. A few ('Ziina Space Magnetic', 'Ziina Lite-Super') look like base speedcubes rather than print themes and would be the model layer."
   - key: "circuit"
     titles: ["Circuit 3x3"]
     skus: 1
@@ -2187,8 +2189,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-03"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "moyufunctionalcubechair"
     titles: ["MoYu Functional Cube Chair 3x3"]
     skus: 1
@@ -2205,8 +2207,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2022-09-25"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "maxparktornadov3flagship"
     titles: ["Max Park Tornado 3x3 V3 Flagship"]
     skus: 1
@@ -2214,8 +2216,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2024-11-04"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "dianshengbig8cm"
     titles: ["DianSheng Big 3x3 - 8cm"]
     skus: 1
@@ -2241,8 +2243,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-01-29"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: variant
+    note: "Vendor 'Spin Master' is Rubik's PARENT COMPANY, not a missing manufacturer - a label, not a brand. And the archive is already right here: rubiks-classic-cube carries phantom, crystal, impossible, retro, re-cube and coach-cube AS VARIANTS. The remaining licensed prints (Tetris, Mickey/Minnie Cubers) are the same variant-level material, not missing models. A good check on the tool: the largest vendor group after Ziina is almost entirely already correct."
   - key: "zmahjong"
     titles: ["Z Mahjong 3x3"]
     skus: 1
@@ -2259,8 +2261,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-10"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "gradientcube"
     titles: ["3x3 Gradient Cube"]
     skus: 1
@@ -2268,8 +2270,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2025-12-05"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "VENDOR ABSENT FROM THE 54. 'VIN Cube' / 'VIN3' with three named products (Nova, Lite, Racer), a naming pattern that reads as one line in three configurations rather than three lines."
   - key: "crystallizedspeedcube"
     titles: ["Crystallized 3x3 Speed Cube"]
     skus: 1
@@ -2277,8 +2279,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2023-08-18"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "'CRYSTALL!ZED by Bri' - a named artist's custom finish sold through TheCubicle. A decorated cube is the retailer's service applied to someone else's product, which is exactly what the `thecubicle` service manufacturer exists to hold."
   - key: "souptimmyhobbycube"
     titles: ["Soup Timmy Hobby Cube"]
     skus: 1
@@ -2286,8 +2288,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2024-11-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: service_listing
+    note: "SpeedCubeShop house, seasonal and signature listings (Calendar Cube, Frozen Glow, Spooky Cube, Autograph Cube, America250 LE, 'Soup Timmy MoYu WR M V10'). The last is explicitly a signature setup of a MoYu product and is the clearest case: the manufacturer product underneath it is candidate moyuweilongwrmv10."
   - key: "rubiksminniemousecuber"
     titles: ["Rubik's Minnie Mouse Cuber"]
     skus: 1
@@ -2295,8 +2297,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: variant
+    note: "Vendor 'Spin Master' is Rubik's PARENT COMPANY, not a missing manufacturer - a label, not a brand. And the archive is already right here: rubiks-classic-cube carries phantom, crystal, impossible, retro, re-cube and coach-cube AS VARIANTS. The remaining licensed prints (Tetris, Mickey/Minnie Cubers) are the same variant-level material, not missing models. A good check on the tool: the largest vendor group after Ziina is almost entirely already correct."
   - key: "rubikscrystalcube"
     titles: ["Rubik's Crystal Cube 3x3"]
     skus: 1
@@ -2304,8 +2306,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-20"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: variant
+    note: "Vendor 'Spin Master' is Rubik's PARENT COMPANY, not a missing manufacturer - a label, not a brand. And the archive is already right here: rubiks-classic-cube carries phantom, crystal, impossible, retro, re-cube and coach-cube AS VARIANTS. The remaining licensed prints (Tetris, Mickey/Minnie Cubers) are the same variant-level material, not missing models. A good check on the tool: the largest vendor group after Ziina is almost entirely already correct."
   - key: "rubiksmickeymousecuber"
     titles: ["Rubik's Mickey Mouse Cuber"]
     skus: 1
@@ -2313,8 +2315,8 @@ candidates:
     retailers: ["SpeedCubeShop"]
     first_listed: "2026-04-22"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: variant
+    note: "Vendor 'Spin Master' is Rubik's PARENT COMPANY, not a missing manufacturer - a label, not a brand. And the archive is already right here: rubiks-classic-cube carries phantom, crystal, impossible, retro, re-cube and coach-cube AS VARIANTS. The remaining licensed prints (Tetris, Mickey/Minnie Cubers) are the same variant-level material, not missing models. A good check on the tool: the largest vendor group after Ziina is almost entirely already correct."
   - key: "qiyixmantornadov5"
     titles: ["QiYi X-Man Tornado v5 3x3"]
     skus: 1
@@ -2340,8 +2342,8 @@ candidates:
     retailers: ["Cubelelo (IN)"]
     first_listed: "2025-01-28"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Cubelelo's own 'Drift' house brand (Drift 3M PLUS v2, Drift 3M v3, Drift Jelly Edition, Drift Carbon Fiber). ALREADY AN OPEN LEDGER ISSUE - C-B1, \\\"Cubelelo 'Drift' house brand absent from the entity register\\\" - so this is independent confirmation of a known gap from a completely different method, not a new finding. Note the archive already models retailer house brands (cubicle-labs under thecubicle), so the pattern has a precedent to follow."
   - key: "drift3mv3"
     titles: ["Drift 3M v3 3x3"]
     skus: 1
@@ -2349,8 +2351,8 @@ candidates:
     retailers: ["Cubelelo (IN)"]
     first_listed: "2025-03-12"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Cubelelo's own 'Drift' house brand (Drift 3M PLUS v2, Drift 3M v3, Drift Jelly Edition, Drift Carbon Fiber). ALREADY AN OPEN LEDGER ISSUE - C-B1, \\\"Cubelelo 'Drift' house brand absent from the entity register\\\" - so this is independent confirmation of a known gap from a completely different method, not a new finding. Note the archive already models retailer house brands (cubicle-labs under thecubicle), so the pattern has a precedent to follow."
   - key: "moyusuperaolongmaglev"
     titles: ["MoYu Super AoLong 3x3 MagLev"]
     skus: 1
@@ -2385,8 +2387,8 @@ candidates:
     retailers: ["Cubelelo (IN)"]
     first_listed: "2022-03-01"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Cubelelo's own 'Drift' house brand (Drift 3M PLUS v2, Drift 3M v3, Drift Jelly Edition, Drift Carbon Fiber). ALREADY AN OPEN LEDGER ISSUE - C-B1, \\\"Cubelelo 'Drift' house brand absent from the entity register\\\" - so this is independent confirmation of a known gap from a completely different method, not a new finding. Note the archive already models retailer house brands (cubicle-labs under thecubicle), so the pattern has a precedent to follow."
   - key: "driftcarbonfiber"
     titles: ["Drift Carbon Fiber 3x3"]
     skus: 1
@@ -2394,5 +2396,5 @@ candidates:
     retailers: ["Cubelelo (IN)"]
     first_listed: "2019-11-06"
     known_family: null
-    classification: unadjudicated
-    note: null
+    classification: missing_manufacturer
+    note: "Cubelelo's own 'Drift' house brand (Drift 3M PLUS v2, Drift 3M v3, Drift Jelly Edition, Drift Carbon Fiber). ALREADY AN OPEN LEDGER ISSUE - C-B1, \\\"Cubelelo 'Drift' house brand absent from the entity register\\\" - so this is independent confirmation of a known gap from a completely different method, not a new finding. Note the archive already models retailer house brands (cubicle-labs under thecubicle), so the pattern has a precedent to follow."
