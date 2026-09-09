@@ -225,13 +225,3 @@ escalations:
     retries) while get/list worked normally; blocked a planned DianSheng retailer prefix sweep.
     Tooling issue, not evidence of absence, flagged for whoever owns scripts/wayback.mjs."
 ```
-
-## Machine-readable summary (placeholder, updated at completion)
-
-```yaml
-models_assessed: []
-variants_created: []
-models_left_unassessed: []
-candidates_rejected: []
-escalations: []
-```
