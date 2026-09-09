@@ -1,8 +1,10 @@
 # Pass 4 — Agent C — YJ + MFJS variant enumeration
 
-Status: IN PROGRESS (skeleton committed first per instructions)
+Status: COMPLETE
 
-findings-so-far: none yet
+findings-so-far: all 33 models in scope (23 YJ + 10 MFJS) assessed; 23 variant records created
+across 11 models; 22 models correctly left at zero variants; 1 model-boundary escalation
+(YJ MGC Sigma); 1 Pass-3 model-enumeration gap reported (MFJS Mini 3x3 30mm/35mm missing).
 
 ## Scope
 - YJ: 23 models in data/models/yj/
@@ -24,11 +26,98 @@ retailer listings, community threads. Zero-variant is an accepted outcome.
 
 ## Machine-readable summary
 ```yaml
-models_assessed: []
-variants_created: []
-models_at_zero: []
-candidates_rejected: []
-escalations: []
+models_assessed:
+  - yj-appari-original
+  - yj-chilong-original
+  - yj-guanlong-original
+  - yj-guanlong-plus
+  - yj-guanlong-v3
+  - yj-guanlong-v4
+  - yj-jinjiao-original
+  - yj-meta3
+  - yj-mgc-elite
+  - yj-mgc-elite-v2
+  - yj-mgc-est
+  - yj-mgc-evo
+  - yj-mgc-evo-ii
+  - yj-mgc-original
+  - yj-mgc-repulsion
+  - yj-mgc-v2
+  - yj-mgc3-beta
+  - yj-ruilong-original
+  - yj-sulong-original
+  - yj-yulong-original
+  - yj-yulong-v2-m
+  - yj-yulong-v3-m
+  - yj-zhilong-mini
+  - mfjs-meilong-3c
+  - mfjs-meilong-3x3
+  - mfjs-meilong-3x3-v2
+  - mfjs-mf3-v1
+  - mfjs-mf3rs
+  - mfjs-mf3rs2
+  - mfjs-mf3rs3
+  - mfjs-mini-3x3-45mm
+  - mfjs-mini-3x3-50mm
+  - mfjs-mini-3x3-keychain-40mm
+variants_created:
+  - yj-meta3--magnetic
+  - yj-meta3--8-magnet-ball-core-uv
+  - yj-meta3--wing-magnetic-8-magnet-ball-core-uv
+  - yj-mgc3-beta--magnetic
+  - yj-mgc3-beta--8-magnet-ball-core-uv-coated
+  - yj-mgc3-beta--8-magnet-ball-core-uv-coated-maglev
+  - yj-mgc3-beta--limited-edition
+  - yj-mgc-evo-ii--standard
+  - yj-mgc-evo-ii--enhanced-core-positioning-edition
+  - yj-yulong-v3-m--magnetic
+  - yj-yulong-v3-m--uv-coated
+  - yj-yulong-v3-m--uv-coated-clicky
+  - mfjs-meilong-3x3--magnetic
+  - mfjs-meilong-3x3--non-magnetic
+  - mfjs-meilong-3x3-v2--standard
+  - mfjs-meilong-3x3-v2--lite
+  - mfjs-meilong-3x3-v2--uv-coated
+  - mfjs-mf3rs3--non-magnetic
+  - mfjs-mf3rs3--magnetic
+  - mfjs-mf3-v1--mf3s
+  - mfjs-mini-3x3-45mm--standard
+  - mfjs-mini-3x3-50mm--standard
+  - mfjs-mini-3x3-keychain-40mm--standard
+models_at_zero:
+  - yj-appari-original
+  - yj-chilong-original
+  - yj-guanlong-original
+  - yj-guanlong-plus
+  - yj-guanlong-v3
+  - yj-guanlong-v4
+  - yj-jinjiao-original
+  - yj-mgc-original
+  - yj-mgc-v2
+  - yj-mgc-elite
+  - yj-mgc-elite-v2
+  - yj-mgc-evo
+  - yj-mgc-est
+  - yj-mgc-repulsion
+  - yj-ruilong-original
+  - yj-sulong-original
+  - yj-yulong-original
+  - yj-yulong-v2-m
+  - yj-zhilong-mini
+  - mfjs-meilong-3c
+  - mfjs-mf3rs
+  - mfjs-mf3rs2
+candidates_rejected:
+  - { candidate: "yj-guanlong-unstickered (TheCubicle URL)", reason: "identical description/specs to standard GuanLong page; stock colour option, not a separately named edition" }
+  - { candidate: "yj-zhilong-m-3x3 (TheCubicle URL)", reason: "identical title/description/specs to the already-modelled ZhiLong Mini 3x3 M; URL-naming duplicate of the same SKU" }
+  - { candidate: "YJ MGC EST 3x3 Customization Kit", reason: "spare-parts mod kit (centerpieces, magnets, hardware), an accessory bundle, not a cube configuration" }
+  - { candidate: "MF3RS2 3x3 Starter Kit (SpeedCubeShop)", reason: "accessory bundle, not a cube configuration" }
+  - { candidate: "MF3RS3 sticker set / MGC 3x3 sticker set", reason: "accessory bundle, not a cube configuration" }
+  - { candidate: "\"[CPS Serviced]\" purchase option seen in MFJS Mini 3x3 45mm/50mm 'Related Products' sidebars", reason: "sidebar widget shows a different product listing, not a purchase option of either page's own SKU; not independently fetched/confirmed this pass" }
+  - { candidate: "YJ Appari two retailer mechanism names (Speed Micro Bearing / Speed Micro Actuator)", reason: "same single magnetic SKU under two retailers' independent wording, not a magnetic/non-magnetic split" }
+escalations:
+  - { model_boundary: "YJ MGC Sigma", reason: "TheCubicle sells 'YJ MGC Sigma 3x3' as a standalone product with an explicit first-party mechanism-change statement (magnet architecture, corner caps, finish) matching the pattern already used to admit every other MGC generation as its own model; no model exists for it in the frozen 269-model set. Not created; reported for the model-enumeration owner." }
+  - { pass3_gap: "MFJS Mini 3x3 series", reason: "the frozen family reasoning (mfjs-mini-3x3-50mm.yml) states there are five sizes in the series, but only three (45mm/50mm/keychain-40mm) exist as models; this pass's own CDX sweep independently confirms two further TheCubicle SKUs (30mm and 35mm keychain sizes) exist and are undocumented. Not created; reported for the model-enumeration owner." }
 ```
 
 ## yj-meta3 — DONE
@@ -210,3 +299,76 @@ CDX sweep are different puzzle types, out of this archive's 3x3 scope.
   of the same base product, not a separately named/marketed edition. Collapses per the
   stock-colourway rule; no variant record created (zero-variant assessment for
   yj-guanlong-original stands).
+
+## Zero-variant assessments (checked, correct result, no variant records)
+
+YJ:
+- yj-appari-original — two retailer naming conventions ("Speed Micro Bearing" TheCubicle,
+  "Speed Micro Actuator" SpeedCubeShop) for the SAME single magnetic SKU, not a
+  magnetic/non-magnetic split. No specs recorded per the brief's own instruction not to
+  manufacture them. Zero variants.
+- yj-chilong-original — CDX prefix: 1 URL only.
+- yj-guanlong-original — CDX prefix found a second "yj-guanlong-unstickered" URL; fetched and
+  confirmed identical description/specs to the standard page (a stock colour option, not a
+  named edition). Zero variants.
+- yj-guanlong-plus — CDX prefix: 1 URL only.
+- yj-guanlong-v3 — CDX prefix: 1 URL only (plus a query-string duplicate of the same page).
+- yj-guanlong-v4 — CDX prefix: 1 URL only.
+- yj-jinjiao-original — CDX prefix: 1 URL (plus tracking-query duplicates of the same page).
+- yj-mgc-original — CDX prefix on the correct base URL ("yj-mgc", no suffix) plus a checked
+  "yj-mgc-3x3" prefix found only a sticker-set accessory (bundle, rejected). Zero variants.
+- yj-mgc-v2 — CDX prefix (as "yj-mgc3-ii"): 1 URL only.
+- yj-mgc-elite — CDX prefix (as "yj-mgc3-elite"): 1 URL only.
+- yj-mgc-elite-v2 — CDX prefix: 1 URL only.
+- yj-mgc-evo — CDX prefix: 1 URL only (plus tracking-query duplicates).
+- yj-mgc-est — CDX prefix: base URL plus "yj-mgc-est-3x3-customization-kit", fetched and
+  confirmed a spare-parts mod kit ("extra centerpieces, extra magnets, extra hardware"), an
+  accessory bundle rather than a cube configuration — REJECTED as a variant, matching the
+  model's own description. Zero variants.
+- yj-mgc-repulsion — CDX prefix: 1 URL only.
+- yj-ruilong-original — CDX prefix: 1 URL (pyraminx/skewb siblings are different puzzle types,
+  out of scope).
+- yj-sulong-original — CDX prefix: 1 URL only.
+- yj-yulong-original — CDX prefix: 1 URL only (v2-m/v3-m/pyraminx/square-1 all excluded as
+  separate models or different puzzle types).
+- yj-yulong-v2-m — CDX prefix: 1 URL only.
+- yj-zhilong-mini — CDX prefix found a second "yj-zhilong-m-3x3" URL; fetched and confirmed
+  IDENTICAL title/description/specs to the model's own source (a URL-naming duplicate of the
+  same SKU, not a second product). Zero variants.
+
+MFJS:
+- mfjs-meilong-3c — CDX prefix: 1 URL only.
+- mfjs-mf3rs — CDX prefix: 1 URL only.
+- mfjs-mf3rs2 — CDX prefix found "mofang-jiaoshi-mf3rs2-3x3-starter-kit"; a starter/accessory
+  kit, not a cube configuration — REJECTED as a variant. Zero variants.
+
+## Model-boundary escalation
+
+**YJ MGC Sigma.** TheCubicle sells "YJ MGC Sigma 3x3" ($29.99, sole capture 2026-02-16) as a
+standalone product, found via this pass's own CDX prefix sweep of the "mgc" line and confirmed
+by direct fetch. Its own product description: "The YJ MGC Sigma is what the Beta was trying to
+be. Larger core magnets lock the cube into place with smoother alignment. Lighter corner-edge
+magnets create balance without hesitation. Sharper corner caps reduce unwanted twists at the
+source. Finished with red accents and a new insignia." This states an explicit mechanism
+difference from MGC3 Beta (different magnet architecture, new corner-cap geometry, new
+finish/insignia) — the same kind of first-party mechanism-change statement this archive used to
+admit every other MGC generation (Elite, Evo, Evo II, Est, Beta) as its own model. No model
+currently exists for it in the frozen 269-model set. **Not created** per the frozen boundary —
+reported here as a Pass 3 gap for the model-enumeration owner. Source evidence:
+`npm run wayback -- prefix https://www.thecubicle.com/products/yj-mgc-sigma` (1 capture) and a
+direct fetch of that page (not written to a source file, since no variant/model record cites
+it this pass — the finding is reported in prose only, per the instruction not to act on it).
+
+## Other findings for the record
+
+- **MoFang JiaoShi Mini 3x3 series is incomplete at 3 of 5 documented sizes.** The frozen
+  family reasoning at mfjs-mini-3x3-50mm.yml itself states "One of five sizes in the MoFang
+  JiaoShi Mini 3x3 Series" and gives a shared five-size rationale, but only three models exist
+  in data/models/mfjs/ (45mm, 50mm, keychain-40mm). This pass's own CDX sweep of
+  "thecubicle.com/products/mofang-jiaoshi-mini-3x3" independently confirms TWO further sizes
+  exist at TheCubicle: "mofang-jiaoshi-mini-3x3-keychain-cube-3-0cm" (30mm, capture 2020-09-23)
+  and "mofang-jiaoshi-mini-3x3-keychain-cube-3-5cm" (35mm, capture 2019-08-18). This is a Pass 3
+  model-enumeration gap (missing models), not a Pass 4 variant question — reported, not acted
+  on, since creating models is outside this pass's write lane.
+- **"[CPS Serviced]" sidebar lead** on the MFJS Mini 3x3 45mm/50mm pages — see that section
+  above. Not chased to a direct source this pass.
