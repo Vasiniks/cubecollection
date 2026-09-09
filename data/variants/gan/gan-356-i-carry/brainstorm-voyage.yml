@@ -1,0 +1,40 @@
+# variant: gan-356-i-carry--brainstorm-voyage
+# Pass 4 depth, 2026-09-09. A separately named, separately marketed edition with its own product
+# page. What differs is packaging and contents, not the mechanism — which is precisely why it is
+# a variant and not a model.
+id: gan-356-i-carry--brainstorm-voyage
+entity: variant
+model_id: gan-356-i-carry
+name: "GAN356 i Carry (Brainstorm Voyage Edition)"
+scope_class: core
+config:
+  size_mm: 56.0
+  weight_g: 79.0
+edition:
+  types: [promotional, smart]
+  name: "Brainstorm Voyage Edition"
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-brainstorm-voyage-2025]
+    note: "The source calls it 'a standard i Carry that comes in special edition packaging with
+      some cool extras... a special edition cube bag, a set of stickers... and really slick
+      packaging'. Recorded as `promotional` rather than `limited` or `commemorative`: nothing
+      states a run size, and 'Brainstorm Voyage' names no anniversary or event the archive can
+      point to. `edition.limited` is deliberately unset."
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-brainstorm-voyage-2025]
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-brainstorm-voyage-2025]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-gan-356-i-carry-brainstorm-voyage-2025]
+    note: "Item Weight 79.0g. The same table gives a Gross Weight of 401g — five times the item
+      weight, because the edition IS packaging — and that figure is deliberately not recorded as
+      a product spec. It is also what distinguishes this from the i Carry 2 (88.0g), whose slug
+      the retailer wrongly used for this page."

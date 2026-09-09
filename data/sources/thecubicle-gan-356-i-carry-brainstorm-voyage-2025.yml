@@ -1,0 +1,48 @@
+# source: thecubicle-gan-356-i-carry-brainstorm-voyage-2025
+# Created 2026-09-09. Found by a CDX prefix sweep on the `gan356-` slug form after the
+# `gan-356-` form returned almost nothing — see the ledger note on slug-form blindness.
+#
+# READ THE PRESERVATION NOTE BEFORE CITING THIS. The product's own SLUG says "i-carry-2" and the
+# product is NOT an i Carry 2.
+id: thecubicle-gan-356-i-carry-brainstorm-voyage-2025
+entity: source
+kind: retailer
+title: "GAN356 i Carry 3x3 (Brainstorm Voyage Edition) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-i-carry-2-brainstorm-voyage-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250425162605id_/https://www.thecubicle.com/products/gan356-i-carry-2-brainstorm-voyage-edition"
+excerpt: |-
+  Page title as captured: "GAN356 i Carry 3x3 (Brainstorm Voyage Edition) – TheCubicle".
+
+  Product Description: "The GAN356 i Carry (Brainstorm Voyage Edition) is a standard i Carry that
+  comes in special edition packaging with some cool extras. It also comes with a special edition
+  cube bag, a set of stickers for you to place on one side of the cube, and really slick
+  packaging."
+
+  Product Specifications table, transcribed verbatim: "Manufacturer: GAN", "Dimensions: 56.0mm³",
+  "Item Weight: 79.0g", "Gross Weight: 401g".
+
+  THE GROSS WEIGHT IS THE POINT OF THE EDITION AND MUST NOT BE MISTAKEN FOR THE CUBE. 401g gross
+  against 79.0g item is a five-fold difference, because what is being sold is packaging — a cube
+  bag, a sticker set and a presentation box. Only the 79.0g item weight describes the puzzle.
+preservation_note: "SLUG/TITLE MISMATCH, recorded so nobody repeats the error this record almost
+  contained. The URL slug reads `gan356-i-carry-2-brainstorm-voyage-edition`, but the page title
+  says 'GAN356 i Carry', the description says 'a standard i Carry', and the item weight is 79.0g
+  against the i Carry 2's 88.0g. Three independent signals say i Carry; only the slug says i Carry
+  2. The title and the description are authoritative and the slug is retailer bookkeeping. This
+  source therefore attaches to gan-356-i-carry, NOT gan-356-i-carry-2."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured specification
+  table.
+  ESTABLISHES: that a named "Brainstorm Voyage Edition" of the GAN356 i Carry was sold, what it
+  contained, and the base puzzle's dimensions and item weight.
+  DOES NOT ESTABLISH: a release date, a production run size, or that the edition was limited in
+  number. "Special edition" describes the packaging, not the scarcity, and `edition.limited` is
+  left unset rather than inferred from the phrase.
+status: sourced

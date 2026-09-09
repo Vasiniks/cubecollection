@@ -876,6 +876,24 @@ issues:
       check against the 54-entity register found no unrepresented manufacturer; six of seven
       zero-family findings were reinforced under the broader check; and the canonical-prose
       detector found the FangShi flag was the only unresolved missing-family flag archive-wide.
+      A THIRD DISCOVERY-BREADTH FAILURE MODE FOUND 2026-09-09, and it is the same shape as the
+      two this issue already records. 3.6a names retailer-channel narrowness and /collections/
+      versus /products/ narrowness. Add SLUG-FORM narrowness.
+      A CDX prefix sweep of thecubicle.com/products/gan-356-i returns essentially nothing usable:
+      27 URLs, of which all but two are the same two products repeated with tracking parameters.
+      The SAME retailer files the rest of the line under `gan356-` with no hyphen, and a sweep of
+      thecubicle.com/products/gan356 returns 33 distinct products including gan356-i-carry-e-3x3,
+      gan356-i-carry-s-3x3, gan356-i2, gan356-i3-v2-3x3, gan356-i-play, gan356-m-lite,
+      gan356-m-3x3-uv-coated, gan356-me-v2-3x3-uv-coated and six named gan356-me editions
+      (Christmas, 2025 Lunar New Year, Brainstorm Voyage, 10th Anniversary).
+      A sweep on one slug form is therefore not a sweep of the line. It reports "swept, nothing
+      found" while missing most of what exists - the same false confidence as checking a
+      /collections/ page instead of the /products/ prefix.
+      IT IMMEDIATELY YIELDED A REAL RECORD: gan-356-i-carry--brainstorm-voyage, a named edition
+      absent from every live catalogue because it is discontinued, found only on the alternate
+      slug form. It also carried a trap - its slug reads "i-carry-2" while its title, its
+      description and its 79.0g item weight (against the i Carry 2's 88.0g) all say i Carry.
+      Three signals against one, and the slug is the one that lies.
     recommendation: >-
       The current methodology is not materially flawed - the frozen taxonomy predates its own
       discovery standard. Remedy is to apply the existing rule to the existing taxonomy, not to
