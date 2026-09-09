@@ -1,0 +1,22 @@
+# variant: witeden-super-cube-3x3x3--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-witeden-super-3x3x3-colors-2022) offers two
+# stock body colours (Black, White) at one price, no separate edition name. Per the GAN356 Air
+# precedent, the two stock colours collapse into one baseline.
+id: witeden-super-cube-3x3x3--standard
+entity: variant
+model_id: witeden-super-cube-3x3x3
+name: "WitEden Super 3x3x3"
+# scope_class is reference_only, inherited from the witeden-super-cube-3x3x3 model record.
+scope_class: reference_only
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-witeden-super-3x3x3-colors-2022]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2022-01-24 Wayback capture) offers Black and White as stock body colours at one price, no
+      separate edition/tier name. No other colourway, coating, or configuration axis was found
+      across the manufacturer site or any retailer listing consulted this pass."

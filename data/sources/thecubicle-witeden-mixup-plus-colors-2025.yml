@@ -1,0 +1,38 @@
+# source: thecubicle-witeden-mixup-plus-colors-2025
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own live product page for the WitEden
+# 3x3x3 Mixup Plus, re-fetched via Wayback to check for colourway/edition differentiation
+# (RESEARCH_SPEC §5, pass 4 consult order). Confirms two stock body colours and no separately
+# named edition, and supplies a mechanism-description sentence not present in the existing
+# thecubicle-witeden-mixup-3x3-variants source.
+id: thecubicle-witeden-mixup-plus-colors-2025
+entity: source
+kind: retailer
+title: "WitEden 3x3x3 Mixup Plus – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250801151219id_/https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+excerpt: |-
+  "WitEden 3x3x3 Mixup Plus ... WitEden ... Black - $38.99 USD ... White - $38.99 USD"
+  Product Description: "The WitEden 3x3x3 Mixup Plus has middle layers of a 5x5x5 but outer
+  layers of a 3x3x3." "Versions" section lists sibling products by name and price: "3x3x3
+  Mixup / $34.99", "3x3x3 Mixup Plus / $38.99", "3x3x3 Mixup (Edge-Split) / $39.99", "3x3x3
+  Mixup (30-Degree Turn) / $34.99", plus several 4x4-based Mixup products. Product
+  Specifications: "Manufacturer / WitEden", "Type / Other".
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Only two stock body colours (Black, White) are offered as
+  purchase options, with no separate edition/tier name attached to either — read as a stock
+  colourway choice that collapses into one baseline variant per the GAN356 Air precedent
+  (data/variants/gan/gan-356-air/standard.yml), not exploded into per-colour variants. The
+  'Versions' selector's own listing of a plain '3x3x3 Mixup' at the same $34.99 price point as
+  the current page when viewed from the Oskar-credited product (see
+  thecubicle-witeden-oskar-mixup-colors-2022) is read as this retailer's own selector including
+  the current/base product under its short name, not evidence of a fifth, undocumented WitEden
+  Mixup model — this was not independently resolved to a separate live product page distinct
+  from the four already-modelled variants, and is flagged as an open naming question in
+  research/notes/variants/witeden-shapemod.md rather than acted on."
+status: sourced

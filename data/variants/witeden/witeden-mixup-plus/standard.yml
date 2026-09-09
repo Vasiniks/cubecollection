@@ -1,0 +1,27 @@
+# variant: witeden-mixup-plus--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-witeden-mixup-plus-colors-2025) offers two
+# stock body colours (Black, White) at one price with no separate edition name. Per the GAN356
+# Air precedent, the two stock colours collapse into one baseline rather than exploding into
+# two variants. No other configuration axis (coating, core, magnet) was found.
+id: witeden-mixup-plus--standard
+entity: variant
+model_id: witeden-mixup-plus
+name: "WitEden 3x3x3 Mixup Plus"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from witeden-mixup-plus's model record. Rule 15 resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-witeden-mixup-plus-colors-2025]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2025-08-01 Wayback capture) offers Black and White as stock body colours at one price, no
+      separate edition/tier name. The page's own 'Versions' selector separately lists a plain
+      '3x3x3 Mixup' at the same $34.99 price as when viewed from the Oskar-credited page; this
+      was NOT resolved to a distinct fifth live product this pass (see
+      research/notes/variants/witeden-shapemod.md) and no additional variant/model is created
+      on that basis. No other colourway, coating, or configuration axis was found."

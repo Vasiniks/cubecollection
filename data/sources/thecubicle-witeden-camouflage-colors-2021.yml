@@ -1,0 +1,22 @@
+# source: thecubicle-witeden-camouflage-colors-2021
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the WitEden
+# Camouflage 3x3x3, re-fetched via Wayback to check for colourway/edition differentiation.
+id: thecubicle-witeden-camouflage-colors-2021
+entity: source
+kind: retailer
+title: "WitEden Camouflage 3x3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/witeden-camouflage-3x3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210615103825id_/https://www.thecubicle.com/products/witeden-camouflage-3x3x3"
+excerpt: |-
+  "Black - $21.99 USD" / "White - $21.99 USD" / "SELECTED: Black" — two stock body colours, no
+  separate edition name.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Two stock body colours only, no named edition — collapses
+  into one baseline variant per the GAN356 Air precedent."
+status: sourced
