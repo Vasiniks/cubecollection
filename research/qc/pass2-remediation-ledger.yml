@@ -535,6 +535,12 @@ issues:
     counterevidence: >-
       Not yet verified whether Drift products are 3x3s in scope, or whether Cubelelo
       manufactures versus rebadges. Reported as a lead only; no record created.
+      CONFIRMED INDEPENDENTLY 2026-09-09 by a different method. The P4-9 live-catalogue
+      adjudication surfaced four "Drift" product lines (Drift 3M PLUS v2, Drift 3M v3, Drift
+      Jelly Edition, Drift Carbon Fiber) under the vendor "Cubelelo" with no entity record —
+      reached from retailer vendor fields rather than from the brand-page reasoning that
+      produced this issue. Two independent methods agreeing is worth more than either alone.
+      Recorded also under P4-10, which covers the manufacturer-layer gap as a class.
     recommendation: >-
       Research before or early in Pass 3. Do NOT create an entity on retailer categorisation
       alone - the same caution that governed the MoJue/MoHuanShouSu sub-brand claims.
@@ -1588,3 +1594,85 @@ issues:
       3x3 of the archive's single most heavily-represented manufacturer.
     owner: main
     last_updated: "2026-09-09"
+
+  - id: P4-10
+    severity: critical
+    status: needs_human_decision
+    title: "Seven manufacturers are absent from the 54 entirely, one of them substantial"
+    evidence: >-
+      Found while adjudicating P4-9 (research/qc/p4-9-adjudication.yml, all 261 candidates
+      classified). P4-9 asked which MODELS were missing. Classifying every candidate by its
+      retailer-declared `vendor` field surfaced a larger question the escalation had not asked:
+      seven vendors selling 3x3s at these retailers have no manufacturer record at all.
+      ZIINA is the substantial one - 51 candidate lines at TheCubicle from 2023-11 onward, under
+      the vendor names "Ziina" and "Ziina Star". Most are printed themes (World Map, Christmas,
+      Halloween, Emoji, Chemistry, Mahjong, Poker, Mosaic), and this archive treats printed
+      themes as VARIANT-level: it holds fourteen LeFun print editions on exactly that basis. So
+      these are in-scope variant material that cannot exist until a Ziina manufacturer, family
+      and model do. Two lines ("Ziina Space Magnetic", "Ziina Lite-Super") read as base
+      speedcubes rather than prints.
+      The others: VIN Cube / VIN3 (6 lines - Nova, Lite, Racer, a naming pattern that reads as
+      one line in three configurations), Cubelelo's own "Drift" house brand (4), and single
+      lines from YZ, Cube Lab, ZePuzzles and Smart Cube Labs.
+      A MISSING MANUFACTURER IS A LARGER GAP IN KIND THAN A MISSING MODEL, because every family,
+      model and variant beneath it is missing too and nothing in the archive can point at the
+      hole. P4-9's twelve missed generations are recoverable by re-checking lines the archive
+      already knows; nothing in the archive could ever surface Ziina.
+      NOT EVERY UNKNOWN VENDOR IS A MISSING MANUFACTURER, and checking that mattered: "Spin
+      Master" is Rubik's parent company, a corporate label rather than a brand, and the six lines
+      under it are licensed prints the archive already handles correctly as variants of
+      rubiks-classic-cube.
+    counterevidence: >-
+      Ziina's catalogue is dominated by printed novelty themes, and the archive's scope rules
+      exclude novelties while admitting printed EDITIONS of real cubes - the LeFun precedent
+      cuts both ways depending on whether Ziina sells a base speedcube at all. If it does not,
+      Ziina may be a decorator rather than a manufacturer, which is a different entity class.
+      That is the first thing to establish and it is not established here.
+    recommendation: >-
+      Do NOT create seven manufacturer records from a retailer `vendor` field. Vendor strings are
+      retailer bookkeeping: they carry "Spin Master" for Rubik's and "QiYi" for X-Man Design.
+      Establish each brand from first-party or specialist evidence the way Pass 1 did, starting
+      with Ziina, and answer the decorator-versus-manufacturer question before anything else.
+      Cubelelo/Drift needs no new research - it is already open as C-B1 and this is independent
+      confirmation of it by a different method.
+    confidence: confirmed
+    downstream_impact: >-
+      Nothing recorded is wrong. The archive's completeness claim is what changes: "54
+      manufacturers" is a count of what was found, not of what exists, and one absent brand has
+      more listed 3x3 products than several manufacturers the archive does hold.
+    owner: main
+    last_updated: "2026-09-09"
+
+  - id: P4-11
+    severity: medium
+    status: needs_human_decision
+    title: "Mini/keychain and oversized formats are admitted inconsistently, and it is a policy gap not a research gap"
+    evidence: >-
+      The largest unresolved class in the P4-9 adjudication is 44 candidates marked
+      needs_research, and most of them turn on one unanswered scope question rather than on
+      missing evidence.
+      MINI/KEYCHAIN: the archive ADMITS mfjs-mini-3x3-keychain-40mm and
+      cyclone-boys-mini-3x3-original at 40mm, and qiyi-valk-3-mini at 47.4mm, while holding no
+      GAN 330 (33mm, listed since 2020-05-05), GAN 328, QiYi Mini, QiYi Mini Keychain, MoYu Mini
+      (listed since 2017-09-15), YJ Mini, YJ Pocket Cube or Maru Mini. Nothing states a size
+      floor; the difference appears to be which sweep happened to find which product.
+      OVERSIZED: the archive admits shengshou-legend-big at 70mm and dayan-zhanchi-42mm at the
+      other end, while holding no DianSheng Big or Giant, YuXin Super Big, MoYu Big, YJ Big or
+      HeShu Super Big.
+      Both are decidable from the archive's own existing records without any new research. Until
+      they are decided, every individual mini or oversized candidate is unadjudicable, and
+      adjudicating them one at a time would produce exactly the inconsistency that created this.
+    recommendation: >-
+      Decide the CLASS, once, and write it into RESEARCH_SPEC's scope section rather than
+      settling each product. Either a stated size range with the existing admissions justified
+      against it, or an explicit statement that format is not a scope criterion and the minis
+      belong. Then re-adjudicate the 44 in one pass. Do NOT admit or refuse individual minis
+      before the rule exists - that is how the current inconsistency arose.
+    confidence: confirmed
+    downstream_impact: >-
+      No existing record is wrong either way. What is at stake is whether roughly 15 further
+      products belong in the inventory, and whether the archive can state its own scope when
+      asked.
+    owner: main
+    last_updated: "2026-09-09"
+
