@@ -1,0 +1,44 @@
+# variant: cubetwist-3x3-standard--black-face
+# Pass 4 (variant enumeration), Agent G. CubeTwist's own official 2010 catalogue names "三阶黑面"
+# ("3rd-order, black face") as its own catalogue entry (cubetwist-com-2010-3x3-listing). This
+# is read as the same physical colourway later carried at retail as "CubeTwist Speed 3x3x3
+# Magic Cube Black" (cubezz-cubetwist-speed-3x3, 57.0mm/94.0g — the figures already used at
+# model level), since Cubezz's own retail black SKU is the only fully-specified CubeTwist 3x3
+# configuration found across this archive's sources, and no source suggests a second,
+# differently-specified "black" configuration exists.
+id: cubetwist-3x3-standard--black-face
+entity: variant
+model_id: cubetwist-3x3-standard
+name: "CubeTwist 3x3 (Black Face)"
+aliases:
+  - name: "三阶黑面"
+    source: cubetwist-com-2010-3x3-listing
+  - name: "CubeTwist Speed 3x3x3 Magic Cube Black"
+    retailer: "Cubezz.com"
+    source: cubezz-cubetwist-speed-3x3
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "黑面 (Black Face)"
+  body:
+    plastic_color_name: "Black"
+status: stub
+attestations:
+  /name:
+    confidence: reported
+    sources: [cubetwist-com-2010-3x3-listing]
+  /edition/types:
+    confidence: reported
+    sources: [cubetwist-com-2010-3x3-listing, cubezz-cubetwist-speed-3x3]
+    note: "Differentiation search performed: manufacturer's own site names this as a distinct
+      catalogue entry from the original-colour and white-face siblings; the retail-side Cubezz
+      listing for a black CubeTwist 3x3x3 (continuously sold from at least 2015) is read as the
+      same colourway at retail, not a further sub-configuration."
+  /colorway/designation:
+    confidence: reported
+    sources: [cubetwist-com-2010-3x3-listing]
+    note: "'黑面' (black face) is the manufacturer's own verbatim catalogue name."
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [cubezz-cubetwist-speed-3x3]

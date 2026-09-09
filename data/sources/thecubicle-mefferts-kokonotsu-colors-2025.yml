@@ -1,0 +1,22 @@
+# source: thecubicle-mefferts-kokonotsu-colors-2025
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own Meffert's Kokonotsu Pillow 3x3 page,
+# re-fetched to check for colourway/edition differentiation.
+id: thecubicle-mefferts-kokonotsu-colors-2025
+entity: source
+kind: retailer
+title: "Meffert's Kokonotsu Pillow 3x3 – TheCubicle (colour check)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mefferts-kokonotsu-pillow-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250614175140id_/https://www.thecubicle.com/products/mefferts-kokonotsu-pillow-3x3"
+excerpt: |-
+  "Default Title - $22.99 USD" — a single SKU, no colour or edition options offered.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Only one purchase option ('Default Title') is offered — no
+  colourway, edition, or configuration differentiation exists for this product at this
+  retailer."
+status: sourced

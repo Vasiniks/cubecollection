@@ -1,0 +1,49 @@
+# variant: eastsheen-3x3-standard--standard
+# Pass 4 (variant enumeration), Agent G. This model's ONLY evidenced sold configuration is the
+# "Wall Stickers" decorated cube (marble-texture stickers) — no separately-sold plain/
+# undecorated Eastsheen 3x3 SKU was found at TheCubicle (this model's sole source, confirmed by
+# its own dedicated `/products/eastsheen*` prefix sweep) or any other retailer checked this
+# pass. Rather than inventing a "plain" baseline the evidence does not show was ever sold
+# separately, this single `--standard` variant records the one configuration that IS
+# documented: the decorated Wall Stickers cube, in its single offered colour (Black).
+id: eastsheen-3x3-standard--standard
+entity: variant
+model_id: eastsheen-3x3-standard
+name: "Eastsheen 3x3x3 Cube with Wall Stickers"
+aliases:
+  - name: "Eastsheen 3x3x3 Cube with Wall Stickers"
+    retailer: "TheCubicle"
+    source: thecubicle-eastsheen-wall-stickers
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  pattern:
+    kind: printed_graphic
+    description: "Marble-texture stickers, per the retailer's own description: \"stickers applied that have a marble texture look to them.\""
+  body:
+    plastic_color_name: "Black"
+status: stub
+attestations:
+  /name:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers]
+    note: "This is the only Eastsheen 3x3x3 product name found by any source this or the prior
+      pass; the model's own generic 'Eastsheen 3x3' name is this archive's own convention, not
+      a second, separately-sold plain product this pass could confirm."
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers-colors-2023]
+    note: "Differentiation search performed: TheCubicle's own page (re-fetched via Wayback, and
+      confirmed as this brand's ONLY 3x3x3 listing by its own dedicated prefix sweep) offers a
+      single colour (Black) and no separate edition name. No plain/undecorated SKU was found to
+      split this into two variants against."
+  /colorway/pattern/kind:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers]
+    note: "Retailer's own description: a marble-texture sticker treatment, read as
+      `printed_graphic` (the closest vocabulary value to a textured graphic sticker pattern,
+      as opposed to a plain single colour per face)."
+  /colorway/body/plastic_color_name:
+    confidence: reported
+    sources: [thecubicle-eastsheen-wall-stickers-colors-2023]

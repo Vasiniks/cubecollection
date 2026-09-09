@@ -1,0 +1,34 @@
+# variant: cubetwist-3x3-standard--diy-kit
+# Pass 4 (variant enumeration), Agent G. The unassembled DIY loose-parts configuration of the
+# CubeTwist 3x3, named on the manufacturer's own site navigation ("三阶DIY散件", "3x3x3 DIY
+# loose parts" — cubetwist-com-2010-3x3-listing) and independently corroborated at retail by
+# Cubezz's own "3x3x3 CubeTwist Magic Cube DIY Kit Original Color" listing
+# (cubezz-cubetwist-3x3-diy-kit). Per this lane's guidance, assembled-vs-unassembled is an
+# assembly-time choice, i.e. a variant of this model, not a separate model.
+id: cubetwist-3x3-standard--diy-kit
+entity: variant
+model_id: cubetwist-3x3-standard
+name: "CubeTwist 3x3 (DIY Kit)"
+aliases:
+  - name: "三阶DIY散件"
+    source: cubetwist-com-2010-3x3-listing
+  - name: "3x3x3 CubeTwist Magic Cube DIY Kit Original Color"
+    retailer: "Cubezz.com"
+    source: cubezz-cubetwist-3x3-diy-kit
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: reported
+    sources: [cubetwist-com-2010-3x3-listing, cubezz-cubetwist-3x3-diy-kit]
+    note: "Named on the manufacturer's own site navigation and independently corroborated by a
+      retail DIY-kit listing of the same base design."
+  /edition/types:
+    confidence: reported
+    sources: [cubezz-cubetwist-3x3-diy-kit]
+    note: "Differentiation search performed: the retail DIY-kit listing (Cubezz.com, 'Original
+      Color') is filed as its own SKU, lower-numbered than the assembled 'Speed' SKU at the
+      same retailer, suggesting it is the catalogue's earlier/base listing. No further colour
+      option was found on this specific DIY-kit SKU beyond 'Original Color'."

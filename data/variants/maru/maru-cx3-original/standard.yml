@@ -14,6 +14,7 @@ aliases:
 scope_class: core
 edition:
   types: [standard]
+  designation: "Assembled"
 status: stub
 attestations:
   /edition/types:
@@ -25,3 +26,9 @@ attestations:
       Transparent) at near-identical prices, none separately named as an edition — collapsed
       into this one baseline per the GAN356 Air precedent. The Assembled-vs-DIY-kit choice is
       the variant-defining axis for this model, per the DIY-kit sibling record."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-maru-cx3]
+    note: "TheCubicle's own product page names this 'the Assembled version of this product',
+      distinguishing it directly from the DIY-kit sibling. Set to resolve a fingerprint
+      collision (rule 28) between the two otherwise-identical variant records honestly."

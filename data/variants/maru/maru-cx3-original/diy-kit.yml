@@ -12,6 +12,7 @@ aliases:
 scope_class: core
 edition:
   types: [standard]
+  designation: "DIY Kit"
 status: stub
 attestations:
   /name:
@@ -25,3 +26,9 @@ attestations:
       an edition — collapsed into this one baseline per the GAN356 Air precedent. The DIY-kit
       assembly format itself (versus the sibling Assembled variant) is the variant-defining
       axis, per this lane's guidance that assembled-vs-unassembled is an assembly-time choice."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-maru-cx3-diy-kit-2021]
+    note: "Retailer's own product title names this the 'DIY Kit', distinguishing it directly
+      from the Assembled sibling. Set to resolve a fingerprint collision (rule 28) between the
+      two otherwise-identical variant records honestly."

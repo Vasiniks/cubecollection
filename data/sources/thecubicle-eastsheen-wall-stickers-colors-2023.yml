@@ -1,0 +1,25 @@
+# source: thecubicle-eastsheen-wall-stickers-colors-2023
+# Pass 4 (variant enumeration), Agent G. Re-fetch of TheCubicle's Eastsheen 3x3x3 Cube with
+# Wall Stickers page to check for colour/edition differentiation, and to check for any
+# separately-sold plain (undecorated) SKU.
+id: thecubicle-eastsheen-wall-stickers-colors-2023
+entity: source
+kind: retailer
+title: "Eastsheen 3x3x3 Cube with Wall Stickers – TheCubicle (colour check)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/eastsheen-3x3x3-cube-with-wall-stickers"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230129085914id_/https://www.thecubicle.com/products/eastsheen-3x3x3-cube-with-wall-stickers"
+excerpt: |-
+  "Black - $14.99 USD" — a single purchasable colour option.
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Only one colour (Black) is offered. This remains
+  TheCubicle's only Eastsheen 3x3x3 listing (per the model record's own dedicated
+  `/products/eastsheen*` prefix sweep, 11 URLs, otherwise all 2x2/4x4/5x5); no separately-sold
+  plain/undecorated Eastsheen 3x3 SKU was found at this or any other retailer checked this
+  pass, so the Wall Stickers decoration is this model's only evidenced sold configuration."
+status: sourced
