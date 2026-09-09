@@ -1,0 +1,51 @@
+# variant: lefun-3x3-standard--blue-sudoku-cube
+# Pass 4. One of many separately named, separately marketed print-theme editions of the base
+# LeFun 3x3 mould (DATA_MODEL variant-materiality rule 6, colourway/sticker type) — each with
+# its own dedicated TheCubicle product page, name, and price, not a stock colour choice. Found
+# via a `scripts/wayback.mjs prefix thecubicle.com/products/lefun` sweep during Pass 4 (Agent
+# H, Batch 2), continuing the frozen model record's own established pattern (four themes
+# already tested by the Pass 3 model researcher, finding print-content-only differences).
+id: lefun-3x3-standard--blue-sudoku-cube
+entity: variant
+model_id: lefun-3x3-standard
+name: "LeFun Blue Sudoku Cube 3x3"
+scope_class: core
+config:
+  size_mm: 56.0
+  weight_g: 71.0
+edition:
+  types: [standard]
+colorway:
+  designation: "Blue Sudoku Cube"
+  application: printed
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-lefun-blue-sudoku-cube-3x3-2024]
+    note: "Differentiation search performed: this is its own dedicated, separately-named
+      TheCubicle product page (not a colour option of another listing), part of a wayback
+      prefix sweep of thecubicle.com/products/lefun that found 14 named 3x3-shaped print-theme
+      editions in total (see lefun-3x3-standard--formula.yml for the family-wide list). No
+      mechanism, core, or tooling difference from the base LeFun 3x3 mould is described;
+      recorded as a regular retail configuration (a themed decoration), not a limited or
+      otherwise-marked special edition."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-lefun-blue-sudoku-cube-3x3-2024]
+    note: "'a puzzle with the numbers 1-9 on each face. The goal is to get them all lined up in order!' Dimensions 56.0mm3, Item Weight 71.0g."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-lefun-halloween-cube-3x3-2022]
+    note: "Read as `printed` across this whole line on the strength of the Halloween Cube
+      listing's own direct statement ('printed faces rather than stickers') — the closest
+      available vocabulary value for a graphic/photographic face treatment of this kind;
+      this specific listing's own page does not independently repeat that exact phrase, hence
+      `uncertain` rather than `probable`."
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-lefun-blue-sudoku-cube-3x3-2024]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-lefun-blue-sudoku-cube-3x3-2024]
+    note: "Item Weight, the source's own structured spec field."

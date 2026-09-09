@@ -422,6 +422,68 @@ baseline + 1 new, legitimate, pre-existing-model-spec-surfaced warning on
 
 ---
 
+### CubeStyle (1 model — cubestyle-3x3-standard) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/cubestyle` sweep (30+ URLs, truncated at
+tool limit but the plain-3x3 slug space was fully covered before truncation) reconfirmed the
+model record's own prior finding: exactly one plain, undecorated CubeStyle 3x3 URL, with the
+large Carbon Fiber / Hollow Sticker resticker range already excluded from this family by the
+frozen family record. One bare `--standard` baseline created. No new sources needed.
+
+### LeFun (1 model — lefun-3x3-standard) — DONE, densest single-model target in this lane
+
+The frozen model record explicitly flags this as "pass-4 territory, not enumerated further
+here" after testing four print-theme listings in Pass 3 and finding only print-content
+differences (no core/mechanism/tooling claim ever differs). A `scripts/wayback.mjs prefix
+thecubicle.com/products/lefun` sweep (250-URL pass, filtered to 3x3-shaped, non-shape-mod,
+non-accessory listings) found **14 separately named, separately marketed print-theme
+editions** of the one base mould — read as 14 variants under DATA_MODEL's colourway/sticker-
+type materiality rule (rule 6), NOT collapsed as stock colours, because each is its own named
+product with its own dedicated page and price (contrast the `gan-356-air--standard`
+stock-colour precedent, which applies to unnamed colour options of one listing, not to a
+catalogue of distinctly-branded themes):
+
+`lefun-3x3-standard--formula`, `--sudoku`, `--calendar-cube`, `--periodic-table`,
+`--periodic-table-v2`, `--christmas`, `--christmas-v2`, `--blue-sudoku-cube`, `--dollar-cube`,
+`--hundred-dollar-cube`, `--number-cube`, `--respect-cube`, `--gradient-cube`,
+`--halloween-cube`.
+
+Four of these (`formula`, `sudoku`, `calendar-cube`, `periodic-table-v2`) reuse sources already
+on file from the Pass 3 model researcher's own direct-fetch test. Ten new sources were created
+this pass by fetching each remaining theme's own dedicated page directly:
+`thecubicle-lefun-periodic-table-3x3-2022`, `thecubicle-lefun-christmas-3x3-2025`,
+`thecubicle-lefun-christmas-3x3-v2-2023`, `thecubicle-lefun-blue-sudoku-cube-3x3-2024`,
+`thecubicle-lefun-dollar-cube-3x3-2025`, `thecubicle-lefun-hundred-dollar-cube-3x3-2025`,
+`thecubicle-lefun-number-cube-3x3-2024`, `thecubicle-lefun-respect-cube-3x3-2024`,
+`thecubicle-lefun-gradient-cube-3x3-2024`, `thecubicle-lefun-halloween-cube-3x3-2022`.
+
+**Materiality call, made explicitly.** `colorway.application: printed` is used across the
+whole line on the strength of one listing's own direct statement (Halloween Cube: "a 3x3 with
+printed faces rather than stickers") — held at `uncertain` on every sibling variant that does
+not independently repeat that exact phrase, rather than silently promoted to `probable`
+line-wide. Every variant's `config.size_mm`/`weight_g` is populated from its own page's own
+structured spec table (56.0mm/56.5mm/57.0mm and 57-78g item weight, genuinely varying by theme
+— consistent with the model's own observation that these figures are not a stable shared
+constant, which is why the model itself leaves `specs` unset).
+
+**Rejected candidates:** `lefun-mini-round-3x3-keychain` (a different size/shape product, not
+this base mould — excluded, not a configuration of this model) and the large non-3x3-shaped
+CubeStyle/LeFun range (2x2/4x4/5x5/pyraminx/gear-cube/axis-cube/fisher-cube/etc., all separate
+families or out of scope entirely) were identified via the same prefix sweeps but correctly
+excluded as different products, not variants of these two models.
+
+### MoHuanShouSu (1 model — mohuanshousu-chufeng-standard) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/mohuan` sweep found exactly one 3x3 URL
+(plus one unrelated 2x2, ChuWen), reconfirming the model record's own prior finding of no
+second MoHuanShouSu-branded 3x3. One bare `--standard` baseline created. No new sources
+needed.
+
+**Validation:** `npm run check` after this section — 0 errors, 39 warnings (baseline
+unchanged from the prior section, no regressions from the 14-variant LeFun expansion).
+
+---
+
 ## Machine-readable summary (placeholder, to be replaced at end)
 ```yaml
 models_assessed: []

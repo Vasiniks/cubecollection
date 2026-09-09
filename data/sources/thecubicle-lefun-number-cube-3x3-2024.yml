@@ -1,0 +1,27 @@
+# source: thecubicle-lefun-number-cube-3x3-2024
+# TheCubicle's own product page for "Lefun Number Cube 3x3", found via `scripts/wayback.mjs prefix
+# thecubicle.com/products/lefun` during Pass 4 (Agent H, Batch 2). One of the many named
+# print-theme editions of the base LeFun 3x3 mould, per the frozen model record's own
+# established pattern (four other themes tested in Pass 3 found only print-content
+# differences, no mechanism/tooling claim).
+id: thecubicle-lefun-number-cube-3x3-2024
+entity: source
+kind: retailer
+title: "Lefun Number Cube 3x3 - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/lefun-number-cube-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240222id_/https://www.thecubicle.com/products/lefun-number-cube-3x3"
+excerpt: |-
+  Product Description: "The Lefun Number Cube 3x3 is a standard, non-magnetic 3x3 with 1-9 listed on each face. But the faces are different colors and have different versions of the numbers. One side has standard Arabic numerals, another has Roman numerals, spelled-out numbers, and Chinese numbers. This is a great learning tool for youngsters." Structured "Product Specifications" table: "Manufacturer: Lefun / Type: 3x3 / Added: 2024-02-08 / Gross Weight: 79g / Dimensions: 56.0mm3 / Item Weight: 70.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Describes only a print/graphic
+  content difference from the base LeFun 3x3 mould ('standard, non-magnetic 3x3' language
+  where present), consistent with the pattern the frozen model record already established for
+  this line — no core, mechanism, or tooling claim differs."
+status: sourced
