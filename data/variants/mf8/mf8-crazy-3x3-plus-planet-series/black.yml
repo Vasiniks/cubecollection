@@ -1,0 +1,43 @@
+# variant: mf8-crazy-3x3-plus-planet-series--black
+# Pass 4 (variant enumeration), Agent G. The ninth named "Version" option on MF8's Crazy 3x3
+# Plus Planet Series listing — a plain "Black" colourway sold as a peer option alongside the
+# eight named planets, per SpeedCubeShop's own Version selector
+# (speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025). Distinguished from the eight-planet
+# bundle SKU (speedcubeshop-mf8-crazy-3x3-plus-planet-series-8-versions-2024), where "Black" is
+# each planet's shared BODY colour rather than a standalone ninth pattern — this record is the
+# individually-selectable, no-planet-graphic "Black" option on the single-unit listing.
+id: mf8-crazy-3x3-plus-planet-series--black
+entity: variant
+model_id: mf8-crazy-3x3-plus-planet-series
+name: "MF8 Crazy 3x3 Plus Planet Series (Black)"
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from mf8-crazy-3x3-plus-planet-series's model record. Rule 15 resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+colorway:
+  designation: "Black"
+status: stub
+attestations:
+  /name:
+    confidence: uncertain
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025]
+    note: "Named as a 'Version' option on the Earth product listing's own selector; this pass
+      did NOT find an independent standalone product slug for 'Black' the way it did for the
+      eight planets (its own CDX prefix sweep found only the eight planet-named slugs), so its
+      existence as a separately purchasable single-unit SKU (versus only appearing inside the
+      8-piece planet bundle, where 'Black' denotes body colour rather than pattern) is recorded
+      at reduced confidence."
+  /edition/types:
+    confidence: uncertain
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025]
+    note: "Differentiation search performed: this is the ninth option on the same Version
+      selector documenting the other eight (planet-named) variants, read as a genuine
+      no-planet-graphic colourway peer to those, at the same price. Not independently confirmed
+      as a distinct standalone product page separate from the bundle context — see /name."
+  /colorway/designation:
+    confidence: uncertain
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025]
+    note: "'Black' as a Version-selector option name, distinguished in this record's own header
+      note from the same word's separate use as the shared body colour of all eight planets in
+      the bundle SKU."

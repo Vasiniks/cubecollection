@@ -1,0 +1,25 @@
+# source: thecubicle-mf8-legend-v2-colors-2024
+# Pass 4 (variant enumeration), Agent G. TheCubicle's own product page for the MF8 Legend V2,
+# re-fetched via Wayback to check for colourway/edition differentiation.
+id: thecubicle-mf8-legend-v2-colors-2024
+entity: source
+kind: retailer
+title: "MF8 Legend V2 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/mf8-legend-v2"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241113114328id_/https://www.thecubicle.com/products/mf8-legend-v2"
+excerpt: |-
+  "Black - $13.99 USD" / "White - $13.99 USD" — two stock body colours, no separate edition
+  name. Product Description (repeated from thecubicle-mf8-legend-v2): "The MF8 Legend V2 is
+  the latest 3x3 speedcube by MF8. It measures 56mm across, and it feels smooth right out of
+  the box."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. Two stock body colours only, no named edition, no magnet/
+  core/coating differentiation found on this or any other source consulted this pass —
+  collapses into one baseline variant per the GAN356 Air precedent."
+status: sourced

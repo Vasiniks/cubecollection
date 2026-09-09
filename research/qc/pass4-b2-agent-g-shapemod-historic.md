@@ -60,10 +60,68 @@ pass, and creating models is outside this lane's write scope regardless.
 
 ---
 
+## MF8 (3 models) — DONE
+
+Method: reused the pass-3 sources already documenting existence/mechanism, then performed a
+fresh differentiation search on each model's own live/archived retailer product page(s)
+specifically for colour options, edition names, and (for the two "Crazy" models) per-planet
+naming, via `npm run wayback -- get` and a `speedcubeshop.com/products/mf8-crazy-3x3-plus-
+planet-series-*` CDX prefix sweep.
+
+**Axes identified.**
+- `mf8-legend-v2`: stock body colour only (Black/White). No coating/magnet/core axis found.
+- `mf8-crazy-3x3-planets` (the earlier, pre-"Plus" generation): a single purchasable colour
+  ("Black"), with the individual planet received assigned at random per the product's own
+  "Assorted"/"collect them all" framing — NOT a buyer-selectable colourway axis at this
+  generation.
+- `mf8-crazy-3x3-plus-planet-series` (the later generation): a genuine nine-way named
+  "Version" colourway/pattern axis — Earth, Jupiter, Mars, Mercury, Neptune, Saturn, Uranus,
+  Venus, and a plain "Black" — confirmed via SpeedCubeShop's own Version selector, with eight
+  of the nine independently confirmed as standalone product slugs by a CDX prefix sweep. This
+  is the direct DaYan Bermuda Triangle precedent: manufacturer-named colourways sold as
+  configurations of one product line, not stock-colour noise.
+
+**Variants created:**
+- `mf8-legend-v2--standard` — Black/White stock colours collapsed. `scope_class: core`.
+- `mf8-crazy-3x3-planets--standard` — one baseline; "Assorted"/randomised, not a selectable
+  axis. `scope_class: conditional` (inherited).
+- `mf8-crazy-3x3-plus-planet-series--earth/jupiter/mars/mercury/neptune/saturn/uranus/venus`
+  (8 variants) — each a named, individually-priced, individually-slugged Version.
+  `scope_class: conditional` (inherited) on each.
+- `mf8-crazy-3x3-plus-planet-series--black` — the ninth Version option (plain, no-planet
+  colourway), recorded at `uncertain` confidence throughout since this pass could not confirm
+  it as an independent standalone product slug distinct from its appearance as the shared body
+  colour of all eight planets inside the 8-piece bundle SKU — flagged in the record's own
+  attestations, not silently upgraded.
+
+**Candidates rejected:**
+- **Per-planet variants for `mf8-crazy-3x3-planets` (the earlier generation)** — rejected. This
+  generation's own retailer listing offers no buyer-facing planet choice; the planet is
+  assigned randomly to a single "Assorted"/"Black" SKU. Treating a random-assortment product as
+  nine potential variants would invent a choice the product never actually offered — same
+  discipline as not inventing a run size.
+- **A tenth "8-piece bundle" as its own variant** — rejected as `bundled_with`/packaging
+  membership of the eight already-created planet variants (DATA_MODEL §4.1: bundle membership
+  is not itself a variant-creating distinction), not a new product.
+- **Splitting Black/White stock colours on `mf8-legend-v2`** — rejected under the anti-explosion
+  rule, same reasoning as WitEden above.
+
+**Sources added:** `thecubicle-mf8-legend-v2-colors-2024`,
+`thecubicle-mf8-crazy-3x3-planets-assorted-color-2020`,
+`speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025`,
+`speedcubeshop-mf8-crazy-3x3-plus-planet-series-8-versions-2024` — all Tier 2, `archive_url`
+preservation.
+
+**Escalation:** none for MF8 beyond the `black` variant's own recorded uncertainty (see above),
+which is carried in its attestations rather than escalated further — a future pass with a
+direct standalone-slug capture for "Black" could raise it to `probable`.
+
+---
+
 ## Status
 
 - [x] WitEden (6 models)
-- [ ] MF8 (3 models)
+- [x] MF8 (3 models)
 - [ ] Calvin's Puzzle (3 models)
 - [ ] Maru (4 models)
 - [ ] Meffert's (1 model)

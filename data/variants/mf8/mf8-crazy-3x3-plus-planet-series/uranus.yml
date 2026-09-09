@@ -1,0 +1,48 @@
+# variant: mf8-crazy-3x3-plus-planet-series--uranus
+# Pass 4 (variant enumeration), Agent G. One of nine named "Version" colourways of MF8's Crazy
+# 3x3 Plus Planet Series, per SpeedCubeShop's own Version selector on its individual product
+# listing (speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025), and independently confirmed
+# to exist as its own standalone product slug by this pass's own
+# `speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-*` CDX prefix sweep. Following
+# the DaYan Bermuda Triangle precedent (data/variants/dayan/dayan-bermuda-triangle/earth.yml),
+# each named planet is its own variant record under the shared model; all nine share one price
+# ($22.95) and one spec table (Type: Shape Mod, 57mm, no magnets), differing only in colourway/
+# pattern.
+id: mf8-crazy-3x3-plus-planet-series--uranus
+entity: variant
+model_id: mf8-crazy-3x3-plus-planet-series
+name: "MF8 Crazy 3x3 Plus Planet Series (Uranus)"
+aliases:
+  - name: "Mf8 Crazy 3x3 Plus Planet Uranus"
+    retailer: "SpeedCubeShop"
+    source: speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025
+# scope_class is conditional and its justification, legality and decision record are INHERITED
+# from mf8-crazy-3x3-plus-planet-series's model record. Rule 15 resolves through the parent.
+scope_class: conditional
+edition:
+  types: [standard]
+colorway:
+  designation: "Uranus"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025]
+    note: "SpeedCubeShop's own 'Version' selector names this planet directly, and this pass's
+      own CDX prefix sweep independently confirms a standalone
+      'mf8-crazy-3x3-plus-planet-series-uranus' product slug exists at the same retailer."
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025]
+    note: "Differentiation search performed: this is one of nine explicit, individually
+      selectable 'Version' options on the manufacturer's product line (the other eight being
+      the remaining planets and a plain 'Black' colourway), each sold as its own configuration
+      at one shared price. No further sub-configuration (coating, magnet, core) was found for
+      this specific planet colourway."
+  /colorway/designation:
+    confidence: probable
+    sources: [speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025]
+    note: "'Uranus' is the retailer's own Version-selector name, read as reflecting the
+      manufacturer's own naming for this line's colourway/pattern axis (no direct manufacturer-
+      site listing was found this pass to confirm the name verbatim at first hand, hence
+      `probable` rather than `confirmed`)."

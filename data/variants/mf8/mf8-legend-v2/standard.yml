@@ -1,0 +1,22 @@
+# variant: mf8-legend-v2--standard
+# Pass 4 (variant enumeration), Agent G. Differentiation search performed: TheCubicle's live
+# product page (re-fetched via Wayback, thecubicle-mf8-legend-v2-colors-2024) offers two stock
+# body colours (Black, White) at one price, no separate edition name, no magnet/core/coating
+# axis found anywhere. An ordinary WCA-form 3x3, core scope_class.
+id: mf8-legend-v2--standard
+entity: variant
+model_id: mf8-legend-v2
+name: "MF8 Legend V2"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mf8-legend-v2-colors-2024]
+    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2024-11-13 Wayback capture) offers Black and White as stock body colours at one price, no
+      separate edition/tier name. No magnet, core, maglev, or coating differentiation was found
+      on this or any other source consulted this pass (manufacturer site not found live; no
+      community release thread located)."
