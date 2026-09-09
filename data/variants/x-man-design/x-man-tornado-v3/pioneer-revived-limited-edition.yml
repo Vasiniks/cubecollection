@@ -1,0 +1,54 @@
+# variant: x-man-tornado-v3--pioneer-revived-limited-edition
+# Pass 4. A named limited-edition reissue of the Pioneer tier, per the 2025 collection
+# enumeration's own slug "x-man-tornado-v3-m-pioneer-3x3-revived-limited-edition" — the name
+# itself states "Limited Edition" directly, satisfying DATA_MODEL materiality rule 8. Flagged by
+# the model's own pass-3 note as a pass-4 variant question. No individual product page was
+# fetched this pass; existence and naming rest on the collection-listing source alone, so
+# `edition.limited.run_size` is left null per standing policy (never estimated).
+id: x-man-tornado-v3--pioneer-revived-limited-edition
+entity: variant
+model_id: x-man-tornado-v3
+name: "X-Man Tornado V3 M Pioneer 3x3 Revived Limited Edition"
+aliases:
+  - { name: "Tornado V3 Pioneer Revived Limited Edition", retailer: "TheCubicle", source: thecubicle-x-man-designs-collection-2025 }
+scope_class: core
+edition:
+  types: [limited]
+  name: "Revived Limited Edition"
+  designation: "Pioneer"
+  limited:
+    is_limited: true
+    run_size: null
+config:
+  maglev: maglev
+relationships:
+  - type: reissue_of
+    target: x-man-tornado-v3--pioneer-maglev
+    target_entity: variant
+    note: "'Revived' in the product name reads as a later reissue of the Pioneer MagLev tier;
+      inferred from naming alone, no explicit reissue statement was found this pass."
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "'Limited Edition' appears directly in the retailer's own product slug/title;
+      existence rests on the collection-listing source alone, no individual product page
+      fetched this pass."
+  /edition/name:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+  /edition/limited/is_limited:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "No production quantity was found. Left null; never estimated."
+  /config/maglev:
+    confidence: uncertain
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "Inferred from the 'Pioneer' naming shared with pioneer-maglev.yml."
+  /relationships/0:
+    confidence: uncertain
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "Inferred from the word 'Revived' in the product name alone."

@@ -1,0 +1,37 @@
+# variant: x-man-tornado-v3--pioneer-uv
+# Pass 4. A UV-coated sibling of the Pioneer MagLev tier, named
+# "x-man-tornado-v3-m-pioneer-uv-3x3" in the 2025 collection enumeration
+# (thecubicle-x-man-designs-collection-2025). No individual product page was fetched this pass;
+# existence rests on the collection-listing source alone.
+id: x-man-tornado-v3--pioneer-uv
+entity: variant
+model_id: x-man-tornado-v3
+name: "X-Man Tornado V3 M Pioneer UV"
+aliases:
+  - { name: "X-Man Tornado V3 M Pioneer UV 3x3", retailer: "TheCubicle", source: thecubicle-x-man-designs-collection-2025 }
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Pioneer"
+config:
+  maglev: maglev
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "Existence rests on a retailer collection URL-prefix enumeration alone; no individual
+      product page was fetched this pass."
+  /edition/designation:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+  /config/maglev:
+    confidence: uncertain
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "Slug carries the 'Pioneer' name shared with pioneer-maglev.yml; maglev inferred from
+      that naming convention, not this specific page's own text."
+  /config/coating:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+    note: "'UV' appears directly in the retailer's own slug/title."

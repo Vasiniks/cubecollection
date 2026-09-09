@@ -1,0 +1,34 @@
+# variant: x-man-tornado-v3--pioneer-maglev
+# Pass 4. The "Pioneer MagLev" configuration, per TheCubicle's own product page naming "3
+# versions... introducing... maglev tech" and the 2025 collection enumeration's own distinct
+# "x-man-tornado-v3-pioneer-blank-center-cap" slug (a cosmetic center-cap option on this same
+# Pioneer tier, not split further — same reasoning as the Standard variant's blank-center-cap
+# note). A further UV-coated sibling of this same tier is recorded separately (see
+# pioneer-uv.yml).
+id: x-man-tornado-v3--pioneer-maglev
+entity: variant
+model_id: x-man-tornado-v3
+name: "X-Man Tornado V3 Pioneer (MagLev)"
+aliases:
+  - { name: "X-Man Tornado V3 Pioneer Blank Center Cap", retailer: "TheCubicle", source: thecubicle-x-man-designs-collection-2025 }
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Pioneer"
+config:
+  maglev: maglev
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025, thecubicle-x-man-tornado-v3-m-standard-product]
+    note: "Named as one of '3 versions... introducing... maglev tech' on the Standard page; the
+      specific 'pioneer' slug itself was not individually fetched this pass."
+  /edition/designation:
+    confidence: reported
+    sources: [thecubicle-x-man-designs-collection-2025]
+  /config/maglev:
+    confidence: uncertain
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+    note: "'introducing... maglev tech to the Tornado line' names the axis; not a page-specific
+      confirmation for this exact SKU."

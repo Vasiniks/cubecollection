@@ -1,0 +1,23 @@
+# variant: x-man-tornado-v1--standard
+# Pass 4. Sole configuration found; TheCubicle's 2019 capture (already discontinued) describes
+# one non-magnetic product with no colourway/coating option.
+id: x-man-tornado-v1--standard
+entity: variant
+model_id: x-man-tornado-v1
+name: "X-Man Tornado"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-product]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-x-man-tornado-product]
+    note: "No magnet claim appears in the retailer's own description or spec table; read as
+      non-magnetic by absence, consistent with this being X-Man's first, pre-magnet-era
+      product. Not a direct 'non-magnetic' statement."
