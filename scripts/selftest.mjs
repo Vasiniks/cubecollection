@@ -72,6 +72,13 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   /requires legality\.basis/.test(v.out)
     ? ok('rule 15 legality basis branch fires', 'status asserted without a stated basis is blocked')
     : bad('rule 15 legality basis branch fires', 'no missing-basis [15] message in fail-fixture output');
+  // Rule 15 resolves a conditional VARIANT's justification and legality through its parent
+  // model, so a variant never restates its model's argument. The pass fixture proves the
+  // allowance (a variant supplying nothing validates clean); this proves inheritance does not
+  // become an excuse when the parent supplies nothing either.
+  /zz-bad-conditional-orphan[^\n]*requires scope_justification, here or on its model/.test(v.out)
+    ? ok('rule 15 inheritance still blocks an orphan', 'conditional variant with an empty parent is caught')
+    : bad('rule 15 inheritance still blocks an orphan', 'no orphan-variant [15] message in fail-fixture output');
   missing.length === 0
     ? ok('blocking rules fire', `${expected.join(', ')}`)
     : bad('blocking rules fire', `never fired: ${missing.join(', ')}`);

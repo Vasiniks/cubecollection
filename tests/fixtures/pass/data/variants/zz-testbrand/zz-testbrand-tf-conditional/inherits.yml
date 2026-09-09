@@ -1,0 +1,22 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Guards rule 15's model→variant INHERITANCE branch, added 2026-09-08. This variant is
+# `conditional` and deliberately carries NO scope_justification, no scope_decided_by/on and no
+# legality of its own: all four are resolved from zz-testbrand-tf-conditional, its parent model.
+# It must validate clean. Before the fix, rule 15 read those fields directly off the variant and
+# forced every conditional variant to restate its model's argument — twelve DaYan Bermuda
+# variants did exactly that, each with a note explaining the validator required it.
+# Its counterpart tests/fixtures/fail/data/variants/zz-bad/zz-bad-conditional-orphan.yml has a
+# parent that supplies nothing, and must still fail.
+
+id: zz-testbrand-tf-conditional--inherits
+entity: variant
+model_id: zz-testbrand-tf-conditional
+name: ZZ Testbrand TF Conditional Inherited
+scope_class: conditional
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [zz-src-official]

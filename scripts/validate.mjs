@@ -323,13 +323,24 @@ for (const rec of records) {
 
   // 15 — conditional admissions are argued, not asserted
   if (doc.scope_class === 'conditional') {
-    if (!doc.scope_justification) {
-      report.error('15', rec.file, 'scope_class "conditional" requires scope_justification.');
+    // A variant is a configuration of its model, so a model that has already argued its
+    // conditional admission has argued it for every configuration sold under it. Requiring the
+    // variant to restate the justification and the legality position is denormalisation — the
+    // exact thing DATA_MODEL §3.8 and §7.2 rule 6 avoid elsewhere — and Pass 4 hit it
+    // immediately: twelve DaYan Bermuda variants each carried a copy of their model's argument
+    // with a note explaining that the validator forced it. Resolve through the parent instead.
+    const parent = rec.entity === 'variant' ? byId.get(doc.model_id)?.doc : null;
+    const justification = doc.scope_justification ?? parent?.scope_justification;
+    const justificationAtts = doc.scope_justification
+      ? atts['/scope_justification']
+      : (atts['/scope_justification'] ?? (parent?.attestations ?? {})['/scope_justification']);
+
+    if (!justification) {
+      report.error('15', rec.file, 'scope_class "conditional" requires scope_justification, here or on its model.');
     }
-    const att = atts['/scope_justification'];
-    const tiers = (att?.sources ?? []).map(tierOf).filter((t) => t !== null);
+    const tiers = (justificationAtts?.sources ?? []).map(tierOf).filter((t) => t !== null);
     if (!tiers.some((t) => t <= 3)) {
-      report.error('15', rec.file, 'scope_class "conditional" requires an attestation on /scope_justification citing at least one tier 1-3 source.');
+      report.error('15', rec.file, 'scope_class "conditional" requires an attestation on /scope_justification citing at least one tier 1-3 source, here or on its model.');
     }
 
     // RESEARCH_SPEC §2.2 states a conditional admission carries BOTH a justification and a
@@ -337,9 +348,9 @@ for (const rec of records) {
     // 2026-09-08 it blocked on one: `legality` was defined only on variant.schema.json, so the
     // second half was unenforceable on models and every conditional model silently omitted it.
     // A rule that cannot fail is not a check — the same defect previously found in rules 9 and 40.
-    const legal = doc.legality;
+    const legal = doc.legality ?? (rec.entity === 'variant' ? byId.get(doc.model_id)?.doc?.legality : null);
     if (!legal?.wca_status) {
-      report.error('15', rec.file, 'scope_class "conditional" requires legality.wca_status. A non-WCA-legal puzzle is admitted on an argument about what it is; the archive has to record what it is.');
+      report.error('15', rec.file, 'scope_class "conditional" requires legality.wca_status, here or on its model. A non-WCA-legal puzzle is admitted on an argument about what it is; the archive has to record what it is.');
     } else if (!['not_legal', 'unknown'].includes(legal.wca_status)) {
       report.error('15', rec.file, `legality.wca_status is "${legal.wca_status}" on a "conditional" record. RESEARCH_SPEC §2.2 admits conditional records at "not_legal" or "unknown" — a legal puzzle belongs at scope_class "core".`);
     }

@@ -15,34 +15,16 @@ aliases:
   - name: "DaYan Bermuda Cube (Jupiter)"
     retailer: "TheCubicle"
     source: thecubicle-dayan-bermuda-cube-2020
+# scope_class is conditional and its justification, legality and decision record are
+# INHERITED from dayan-bermuda-triangle's model record. rule 15 resolves through the parent, so
+# a variant does not restate its model's argument (DATA_MODEL 3.8).
 scope_class: conditional
-scope_justification: |-
-  Restated from the parent model per validate.mjs rule 15, which checks scope_class and legality
-  directly on the variant record rather than resolving model-level inheritance for this field.
-  Same grounds as the model: DaYan gave the Bermuda line its own official product category in
-  2012 (dayancube-official-bermuda-category-2012, tier 1), and the line has a documented
-  multi-year, multi-retailer collector market (thecubicle-dayan-bermuda-cube-2020, tier 2).
-scope_decided_by: "P4 variant pass, agent D"
-scope_decided_on: "2026-09-08"
-legality:
-  wca_status: not_legal
-  basis: >-
-    Bandaged construction, inherited from the model's own legality finding
-    (dayancube-official-bermuda-category-2012; thecubicle-dayan-bermuda-cube-2020).
 edition:
   types: [standard]
 colorway:
   designation: "Jupiter"
 status: stub
 attestations:
-  /scope_justification:
-    confidence: probable
-    sources: [dayancube-official-bermuda-category-2012, thecubicle-dayan-bermuda-cube-2020]
-    note: "Restated from the model record to satisfy rule 15's direct (non-inherited) check on variant records; not a fresh claim distinct from the model's own justification."
-  /legality/wca_status:
-    confidence: probable
-    sources: [thecubicle-dayan-bermuda-cube-2020]
-    note: "Inherited in substance from the model's own legality finding; restated here only because rule 15 checks the variant record directly rather than resolving model-level inheritance for scope_class/legality fields."
   /name:
     confidence: confirmed
     sources: [dayancube-official-bermuda-category-2012]

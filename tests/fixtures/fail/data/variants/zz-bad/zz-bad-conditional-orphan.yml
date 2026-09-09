@@ -1,0 +1,12 @@
+# SYNTHETIC FIXTURE — engineered to FAIL.
+# Rule 15 inheritance branch, negative case. This variant is `conditional` and supplies nothing
+# itself, and its parent model zz-bad-model supplies nothing either — so there is no argument
+# and no legality position anywhere in the chain. Inheritance must resolve a real parent value,
+# not excuse its absence.
+
+id: zz-bad-conditional-orphan
+entity: variant
+model_id: zz-bad-model
+name: ZZ Bad Conditional Orphan
+scope_class: conditional
+status: drafted
