@@ -1,0 +1,53 @@
+# variant: yj-meta3--wing-magnetic-8-magnet-ball-core-uv
+# Pass 4 (Agent C). The top-tier sold configuration named "Wing-Magnetic + 8-Magnet Ball-Core +
+# UV" on TheCubicle's own three-way Versions selector for YJ Meta3 3x3, described by the
+# retailer as "the flagship version of the Meta3." Flagged as pass-4 material by yj-meta3.yml.
+id: yj-meta3--wing-magnetic-8-magnet-ball-core-uv
+entity: variant
+model_id: yj-meta3
+name: "YJ Meta3 3x3 (Wing-Magnetic + 8-Magnet Ball-Core + UV)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "Wing-Magnetic + 8-Magnet Ball-Core + UV"
+config:
+  core_system: ball_core
+  coating: uv
+  magnet_strength: "wing-magnetic + 8-magnet ball-core"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product]
+    note: "The highest-priced ($32.99) sold configuration in the same product line; not
+      marketed as limited/commemorative/collaboration, so recorded as 'standard' (an ongoing
+      sold configuration) despite the retailer's own 'flagship version' language, which speaks
+      to tier/positioning rather than to edition-types vocabulary."
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product]
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product]
+    note: "'An 8-magnet ball-core for extra stability, control, and tactility.'"
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product]
+    note: "'The UV coating adds a premium glossy finish.'"
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product]
+    note: "Free-text per schema: 'center-to-edge foot magnets' (wing-magnetic) combined with an
+      8-magnet ball-core, as described by the source. Not attempted to map to a single
+      magnet_configuration vocabulary value, since none of the listed values ('core_corner',
+      'dual_layer' etc.) cleanly describes a combined wing + ball-core arrangement."
+  /significance:
+    confidence: uncertain
+    sources: [thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product]
+    note: "Retailer's own 'flagship version of the Meta3' language, not a manufacturer-declared
+      tier word (DATA_MODEL 4.1 axis 7 requires the manufacturer's own designation); recorded
+      only as descriptive significance prose, not as edition.designation."
+significance: "Described by TheCubicle as \"the flagship version of the Meta3,\" the top of its three-way sold configuration line-up."

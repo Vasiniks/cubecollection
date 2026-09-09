@@ -1,0 +1,41 @@
+# variant: yj-meta3--8-magnet-ball-core-uv
+# Pass 4 (Agent C). The middle-tier sold configuration named "8-Magnet Ball-Core + UV" on
+# TheCubicle's own three-way Versions selector for YJ Meta3 3x3. Flagged as pass-4 material by
+# yj-meta3.yml itself ("magnet count/ball-core/UV coating/wing-magnets" as the variant axis).
+id: yj-meta3--8-magnet-ball-core-uv
+entity: variant
+model_id: yj-meta3
+name: "YJ Meta3 3x3 (8-Magnet Ball-Core + UV)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "8-Magnet Ball-Core + UV"
+config:
+  core_system: ball_core
+  coating: uv
+  magnet_strength: "8-magnet ball-core"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product]
+    note: "A mid-priced ($29.99) sold configuration of the same product line, not marketed as a
+      limited/commemorative/collaboration edition -- 'standard' recorded to mean 'an ordinary,
+      ongoing sold option', consistent with this archive's use of the term for gan-356-air."
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product]
+    note: "'An 8-magnet ball-core for a consistent magnetic feel' -- direct tier 2 first-party
+      statement, an override of the model's own unknown core_system."
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product]
+    note: "'A UV-coated surface for durability and grip.'"
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product]
+    note: "Free-text per schema (not a normalised magnet_configuration vocabulary value): '8
+      magnets' arranged in a ball-core, as described by the source."
