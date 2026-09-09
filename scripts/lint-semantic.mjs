@@ -235,32 +235,86 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
-// 42 — two source records of the same page are one source
+// 42 — records of one page are not independent sources
 //
-// Found by an archive-wide sweep on 2026-09-09: 11 pairs share an archive_url, most of them a
-// manufacturer page split into a "-product" record and a "-specifications" record. Splitting one
-// page across two records by excerpt is a defensible modelling choice, but it makes the archive
-// look better-sourced than it is, and an attestation citing both halves reads as corroboration
-// when it is a single page agreeing with itself.
+// Found by an archive-wide sweep on 2026-09-09: pairs of source records pointing at the same
+// page, most of them a manufacturer page split into a "-product" record and a
+// "-specifications" record. Splitting one page across two records by excerpt is a defensible
+// modelling choice, but it makes the archive look better-sourced than it is, and an
+// attestation citing both halves reads as corroboration when it is a single page agreeing
+// with itself.
+//
+// AMENDED 2026-09-09 (same day, after the first version under-reported). Two faults:
+//
+//   1. It grouped on the raw `archive_url`, which embeds the Wayback capture timestamp, so two
+//      records of the SAME page never grouped if captured on different dates, and a record
+//      holding only `url` never matched one holding `archive_url` for the same page.
+//   2. It missed same-capture duplicates that differed only by Wayback's `id_` replay flag —
+//      the WiteDen Mixup Plus pair share timestamp 20220517171802 exactly and were invisible.
+//
+// The amendment also forced a DISTINCTION the first version collapsed. Two captures of one
+// page are not the same thing as two records of one capture:
+//
+//   - SAME PAGE, SAME CAPTURE — genuinely redundant records of one observation. Citing both is
+//     never anything but double-counting.
+//   - SAME PAGE, DIFFERENT CAPTURES — two observations of one publisher's page over time. That
+//     is legitimate and sometimes necessary evidence: `giiker-com-supercube-i3s-product-2022`
+//     (on sale) and `...-2026-soldout` (withdrawn) are exactly how a discontinuation is shown,
+//     and no single capture could carry that claim. They still cannot CORROBORATE each other —
+//     one publisher, one page — so the citation is reported, in weaker terms, for a human to
+//     confirm the claim is chronological rather than corroborative.
+//
+// Reporting both branches identically would have raised 5 false positives out of 8.
 //
 // Rule 9 already blocks the dangerous case (`confirmed` on tier 2-only evidence requires two
-// distinct PUBLISHERS, and two records of one page share one). This rule covers what rule 9
-// cannot see: the duplication itself, and any attestation resting on both halves.
+// distinct PUBLISHERS, and records of one page share one). This rule covers what rule 9 cannot
+// see: the duplication itself, and any attestation resting on more than one record of a page.
 {
   const sources = (byEntity.get('source') ?? []).filter((r) => r.doc?.id);
-  const byLocator = new Map();
+  const WAYBACK = /^https?:\/\/web\.archive\.org\/web\/(\d+)(?:id_|im_|if_|js_|cs_)?\//i;
+  // The page a locator points at, independent of how it was preserved or when it was captured.
+  const canonicalPage = (raw) => {
+    if (!raw) return null;
+    const u = String(raw).replace(WAYBACK, '');
+    const m = /^https?:\/\/([^/]+)(.*)$/i.exec(u);
+    return m ? `${m[1].toLowerCase().replace(/^www\./, '')}${m[2].replace(/\/$/, '')}` : u;
+  };
+  // Which observation of that page: the capture timestamp, with Wayback's replay flags stripped
+  // so `...171802id_/` and `...171802/` are recognised as the one capture they are.
+  const captureOf = (doc) => {
+    const m = WAYBACK.exec(doc.archive_url ?? '');
+    return m ? m[1] : `live:${doc.accessed ?? ''}`;
+  };
+
+  const byPage = new Map();
   for (const rec of sources) {
-    const loc = rec.doc.archive_url || rec.doc.url;
-    if (!loc) continue;
-    if (!byLocator.has(loc)) byLocator.set(loc, []);
-    byLocator.get(loc).push(rec);
+    const page = canonicalPage(rec.doc.archive_url || rec.doc.url);
+    if (!page) continue;
+    if (!byPage.has(page)) byPage.set(page, []);
+    byPage.get(page).push(rec);
   }
-  const samePage = new Map();               // source id -> the group it belongs to
-  for (const [loc, recs] of byLocator) {
+
+  const pageOf = new Map();                 // source id -> ids of every record of that page
+  const captureById = new Map();            // source id -> capture identity
+  for (const [page, recs] of byPage) {
+    for (const r of recs) captureById.set(r.doc.id, captureOf(r.doc));
     if (recs.length < 2) continue;
     const ids = recs.map((r) => r.doc.id).sort();
-    for (const id of ids) samePage.set(id, ids);
-    report.warn('42', recs[0].file, `shares its locator with ${ids.filter((i) => i !== recs[0].doc.id).join(', ')} — these are ${ids.length} records of ONE page (${loc.slice(0, 90)}). Citing more than one of them is not corroboration.`);
+    for (const id of ids) pageOf.set(id, ids);
+
+    // Only redundant records of ONE capture are reported as duplicate records. Separate
+    // records for separate captures are a legitimate way to hold a page's history.
+    const byCapture = new Map();
+    for (const r of recs) {
+      const c = captureOf(r.doc);
+      if (!byCapture.has(c)) byCapture.set(c, []);
+      byCapture.get(c).push(r);
+    }
+    for (const [, dupes] of byCapture) {
+      if (dupes.length < 2) continue;
+      const dids = dupes.map((r) => r.doc.id).sort();
+      report.warn('42', dupes[0].file, `shares its locator AND its capture with ${dids.filter((i) => i !== dupes[0].doc.id).join(', ')} — these are ${dids.length} records of ONE observation of ONE page (${page.slice(0, 90)}). Citing more than one of them is not corroboration.`);
+    }
   }
 
   for (const rec of records) {
@@ -268,13 +322,17 @@ for (const [modelId, list] of variantsByModel) {
       const cited = att?.sources ?? [];
       if (cited.length < 2) continue;
       for (const id of cited) {
-        const group = samePage.get(id);
+        const group = pageOf.get(id);
         if (!group) continue;
         const overlap = cited.filter((c) => group.includes(c));
-        if (overlap.length > 1) {
-          report.warn('42', rec.file, `${ptr} cites ${overlap.join(' and ')}, which are the same page under different ids. That is one source, not ${overlap.length}.`);
-          break;
+        if (overlap.length < 2) continue;
+        const captures = new Set(overlap.map((c) => captureById.get(c)));
+        if (captures.size === 1) {
+          report.warn('42', rec.file, `${ptr} cites ${overlap.join(' and ')}, which are one capture of one page under different ids. That is one source, not ${overlap.length}.`);
+        } else {
+          report.warn('42', rec.file, `${ptr} cites ${overlap.join(' and ')} — different captures of ONE page by ONE publisher. Legitimate if the claim is about change over time; they cannot corroborate each other.`);
         }
+        break;
       }
     }
   }

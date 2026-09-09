@@ -129,12 +129,19 @@ console.log('\n  fail fixture — records engineered to trip named rules');
     ? ok('rule 43 confidence floor fires', 'probable on a tier-5 source is caught')
     : bad('rule 43 confidence floor fires', 'no probable-vs-tier [43] message in lint output');
 
-  // Rule 42 has two branches and only the duplicate-RECORD one is obvious. The branch that
-  // matters is the second: an attestation resting on both halves of one page, which reads as
-  // corroboration and is not. Assert its message specifically.
-  /which are the same page under different ids/.test(l.out)
-    ? ok('rule 42 false-corroboration branch fires', 'attestation citing one page twice is caught')
-    : bad('rule 42 false-corroboration branch fires', 'no same-page citation [42] message in lint output');
+  // Rule 42's duplicate-RECORD branch is the obvious one. The branches that matter are the two
+  // CITATION branches, and the rule is only correct if it tells them apart — reporting them
+  // alike raised 5 false positives out of 8 on real data. Assert each message specifically,
+  // and assert that the chronological pair is NOT accused of double-counting.
+  /zz-dup-page-[ab][^\n]*one capture of one page under different ids|one capture of one page under different ids[^\n]*zz-dup-page/.test(l.out)
+    ? ok('rule 42 false-corroboration branch fires', 'attestation citing one capture twice is caught')
+    : bad('rule 42 false-corroboration branch fires', 'no same-capture citation [42] message in lint output');
+  /zz-capture-20(20|25)[^\n]*different captures of ONE page/.test(l.out)
+    ? ok('rule 42 chronology branch fires', 'two captures of one page reported, in weaker terms')
+    : bad('rule 42 chronology branch fires', 'no different-captures [42] message in lint output');
+  !/zz-capture-20(20|25)[^\n]*That is one source, not/.test(l.out)
+    ? ok('rule 42 spares an honest chronology', 'two captures are not called double-counting')
+    : bad('rule 42 spares an honest chronology', 'chronological pair wrongly reported as one source');
   !/zz-ok-chronology-precision[^\n]*\[40\]|\[40\][^\n]*zz-ok-chronology-precision/.test(l.out)
     ? ok('rule 40 precision allowance holds', 'year-vs-month pair not flagged')
     : bad('rule 40 precision allowance holds', 'fired on a model within its family precision window');

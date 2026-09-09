@@ -1,0 +1,20 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Pairs with zz-capture-2020: the SAME page at a DIFFERENT capture date.
+# This is rule 42's second branch, and it is deliberately NOT the same defect as the
+# zz-dup-page pair. Two captures of one page are two legitimate observations — they are how a
+# discontinuation is evidenced at all (on sale in 2020, withdrawn by 2025) — but they remain ONE
+# publisher and ONE page, so they can never corroborate each other. Rule 42 must say so in
+# weaker terms than it uses for a same-capture duplicate, or it raises a false positive on
+# every honest chronology in the archive.
+id: zz-capture-2025
+entity: source
+kind: retailer
+title: ZZ page over time, 2025 capture
+publisher: ZZ Chronology Co
+url: "https://zz-example.invalid/products/zz-page-over-time"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250413101500id_/https://zz-example.invalid/products/zz-page-over-time"
+excerpt: "Fixture excerpt for the 2025 capture of the over-time page, long enough for minLength."
+accessed: "2025-04-13"
+reliability_note: Exercises rule 42's different-captures branch. One page, observed twice.
+status: drafted
