@@ -1,0 +1,24 @@
+# variant: senhuan-mars-s--standard
+# Pass 4. Single-configuration baseline. Differentiation search: see
+# senhuan-mars-original--standard.yml's header for the prefix sweep; exactly one URL for this
+# model, no sibling configuration. No independent second retailer was found for this product
+# at all (matching the model record's own finding).
+id: senhuan-mars-s--standard
+entity: variant
+model_id: senhuan-mars-s
+name: "SenHuan Mars S"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-senhuan-mars-s-3x3-2019]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of thecubicle.com/products/senhuan found no sibling URL for this product beyond the single already-on-file capture, and no second retailer was found for this product at all (matching the model record's own finding: Cubelelo, Cubezz, and a general non-US sweep all returned no match). No colourway edition or limited/commemorative status found. Held at uncertain given the single-source dependency for the entire model."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-senhuan-mars-s-3x3-2019]
+    note: "Inherited reading from the original Mars's own stickerless-capable design language ('the unique small inner circle structure of the original SenHuan Mars'); not an independent statement for this specific generation."

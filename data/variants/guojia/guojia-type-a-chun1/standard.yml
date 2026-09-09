@@ -1,0 +1,28 @@
+# variant: guojia-type-a-chun1--standard
+# Pass 4. Single-configuration baseline for a model admitted on existence evidence alone (no
+# dedicated product page for this generation was ever found). Differentiation search: a
+# `scripts/wayback.mjs prefix thecubicle.com/products/type-a-chun` sweep this pass found only
+# the Chun2 DIY-kit URL; no Chun1-specific page exists at any retailer checked across this
+# archive's passes. Nothing beyond the incidental parts-compatibility mention on Chun2's own
+# page is known about this product at all, so no configuration differentiation is possible to
+# search for beyond confirming no dedicated page exists.
+id: guojia-type-a-chun1--standard
+entity: variant
+model_id: guojia-type-a-chun1
+name: "GuoJia Type A Chun1"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-guojia-type-a-chun2-2020]
+    note: "Differentiation search performed: no dedicated product page, description, price, or
+      spec table for 'Type A Chun1' exists at TheCubicle or any other retailer checked across
+      this archive's passes (a `type-a-chun*` and `guojia*` prefix sweep finds only the Chun2
+      DIY-kit URL and the unrelated GuoJia Square-1) — this pass's own sweep reconfirms that
+      absence. This model's entire evidentiary basis is a single incidental sentence on the
+      Chun2 product page describing steel-parts compatibility; no second configuration can be
+      searched for or ruled out with any confidence given how thin the record is. Recorded as
+      the only known (by necessity, not by positive confirmation) sold configuration."

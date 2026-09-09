@@ -1,0 +1,33 @@
+# variant: qj-candy-3x3-standard--standard
+# Pass 4. Single-configuration baseline. Differentiation search: a `scripts/wayback.mjs
+# prefix thecubicle.com/products/qj` sweep this pass (18 captured URLs) reconfirms the model
+# record's own exhaustive pass-3 sweep — exactly one URL for QJ Candy 3x3, no sibling
+# configuration. Stock colour options (Black "Stickerless", Pink "Stickerless (Pink)") already
+# flagged as a pass-4 lead on the frozen model record are collapsed into this one variant per
+# the `gan-356-air--standard` precedent — no source treats them as separately named/marketed
+# editions.
+id: qj-candy-3x3-standard--standard
+entity: variant
+model_id: qj-candy-3x3-standard
+name: "QJ Candy 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+    note: "Differentiation search performed: the model record's own pass-3 sweep checked
+      TheCubicle (18-URL prefix sweep), Cubelelo (India), and Cubezz.com (China, 24-URL
+      domain-wide CDX search) and found no second retailer selling this product and no
+      sibling configuration beyond the Black/Pink stock colour options. This pass's own
+      repeat of the TheCubicle sweep reconfirms the same result. Read as the model's sole
+      sold configuration."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-qj-candy-3x3-product-2019]
+    note: "Both stock colour options are named 'Stickerless' / 'Stickerless (Pink)' directly
+      by the retailer."

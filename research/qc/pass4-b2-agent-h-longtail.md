@@ -379,6 +379,49 @@ baseline, no regressions).
 
 ---
 
+### GuoJia (2 models — guojia-type-a-chun1, guojia-type-a-chun2) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/type-a-chun` and `.../guojia*` sweep
+reconfirmed the model records' own exhaustive pass-3 finding: no dedicated Chun1 page exists
+anywhere, and Chun2's DIY-kit page is the only GuoJia 3x3 page found. Two bare `--standard`
+baselines created. `guojia-type-a-chun1--standard` is held at `uncertain` and its note is
+explicit that essentially nothing beyond a single incidental sentence establishes this
+product at all — this is the thinnest baseline in this report, and is recorded as such rather
+than dressed up. No new sources needed.
+
+### QJ (2 models — qj-candy-3x3-standard, qj-pillowed-3x3-standard) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/qj` sweep (18 captured URLs) reconfirmed
+the model records' own already-exhaustive pass-3 sweep (TheCubicle, Cubelelo India, Cubezz.com
+domain-wide CDX) — no sibling configuration for either product beyond the stock colour options
+already flagged as pass-4 leads on both frozen model records (Candy: Black/Pink; Pillowed:
+Black/White). Two bare `--standard` baselines created, both collapsing their stock colours per
+the `gan-356-air--standard` precedent. No new sources needed.
+
+### SenHuan (2 models — senhuan-mars-original, senhuan-mars-s) — DONE
+
+A `scripts/wayback.mjs prefix thecubicle.com/products/senhuan` sweep (9 captured URLs,
+including the unrelated ZhanLang 2x2 series) found exactly one URL per 3x3 model, no sibling
+configuration for either. Two bare `--standard` baselines created. `senhuan-mars-s--standard`
+held at `uncertain` (single-source dependency, matching the model record's own finding that no
+second retailer carries this generation at all). `senhuan-mars-original--standard` inherits
+the model's own `weight_g: 172.0` (an explicitly Gross/packaged figure per the model's own
+attestation) — this newly surfaces as a lint rule-18 implausible-weight warning once a variant
+exists to resolve the spec through; **not fixed by denormalising or overriding**, per the
+batch brief's own instruction, since the model record is frozen and the figure is honestly
+labelled at that level already. No new sources needed.
+
+**Materiality calls across all three manufacturers this section:** none of these seven models
+had any sibling configuration, colourway edition, or tier name beyond stock colour options
+already flagged and dismissed as pass-4 leads on their own frozen model records — genuinely
+low-density territory, matching the batch brief's own expectation for this lane.
+
+**Validation:** `npm run check` after this section — 0 errors, 39 warnings (38 merged-main
+baseline + 1 new, legitimate, pre-existing-model-spec-surfaced warning on
+`senhuan-mars-original--standard`, explained above; not a defect).
+
+---
+
 ## Machine-readable summary (placeholder, to be replaced at end)
 ```yaml
 models_assessed: []
