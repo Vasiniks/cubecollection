@@ -1,0 +1,23 @@
+# variant: moyu-weilong-gts--standard
+# Pass 4. The single sold configuration found for WeiLong GTS (2016). The wiki states this
+# design's capped, non-split pieces mean "a stickerless version would not be possible" —
+# recorded here as a stickered-only application, since the design permits no alternative, not
+# as a choice between two marketed configurations.
+id: moyu-weilong-gts--standard
+entity: variant
+model_id: moyu-weilong-gts
+name: "MoYu WeiLong GTS"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /colorway/application:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: capped, non-split piece construction means 'a stickerless version would not be possible' — inferred stickered-only, since the source states the design forecloses the alternative rather than naming a stickered SKU directly."
