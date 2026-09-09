@@ -1,0 +1,43 @@
+# variant: rubiks-classic-cube--phantom
+# Pass 4 batch 2, Agent E. "Rubik's Phantom" — a thermochromic-tile treatment of the classic
+# mechanism, per the family record's own pass-2 boundary call (rubiks-com-classic-special-
+# editions-2024: "just like the classic Rubik's Cube" with a stated surface/material
+# difference only, no distinct mechanism claimed). Admitted as a variant of this model, not a
+# separate model, per DATA_MODEL §4.2.
+id: rubiks-classic-cube--phantom
+entity: variant
+model_id: rubiks-classic-cube
+name: "Rubik's Phantom"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Phantom"
+colorway:
+  designation: "Phantom"
+  scheme: custom
+  pattern:
+    kind: other
+    description: "Thermochromic tiles: colour is hidden until revealed by the heat of touch."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Sold as an ongoing named catalogue product, not stated as a bounded/numbered run —
+      recorded `standard` (a regular retail configuration of the classic mechanism), not
+      `limited`; no run-size or availability-window language was found."
+  /edition/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own product page name: 'Rubik's Phantom.'"
+  /colorway/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+  /colorway/pattern/kind:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own page: 'Thermochromic technology reveals the hidden fun in this
+      innovative Cube. Touch the tiles to reveal the Phantom's colors with the heat of your
+      touch!' No `thermochromic` value exists in vocab/colorway-pattern.yml; recorded as
+      `other` with the mechanism described in `description` rather than forcing an imprecise
+      enum fit (e.g. `glow`, which is a different phenomenon)."

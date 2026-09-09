@@ -1,0 +1,37 @@
+# variant: rubiks-classic-cube--re-cube
+# Pass 4 batch 2, Agent E. "Rubik's Re-Cube" — a 100%-recycled-plastic material treatment of the
+# classic mechanism, per the family record's own pass-2 boundary call. Admitted as a variant of
+# materials the manufacturer itself distinguishes (DATA_MODEL §4.1), not a separate model.
+id: rubiks-classic-cube--re-cube
+entity: variant
+model_id: rubiks-classic-cube
+name: "Rubik's Re-Cube"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Re-Cube"
+config:
+  materials:
+    plastic: "100% recycled plastic"
+colorway:
+  designation: "Re-Cube"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Sold as an ongoing named catalogue product; no bounded-run language found. Recorded
+      `standard`, not `limited`."
+  /edition/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own product page name: 'Rubik's Re-Cube.'"
+  /config/materials:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own page: 'The Rubik's Re-Cube is the world-famous puzzle made with 100%
+      recycled plastic... created with sustainability as top of mind.' A manufacturer-
+      distinguished material difference (DATA_MODEL §4.1 rule 10)."
+  /colorway/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]

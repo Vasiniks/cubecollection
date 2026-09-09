@@ -1,0 +1,50 @@
+# variant: rubiks-classic-cube--impossible
+# Pass 4 batch 2, Agent E. "Rubik's Impossible" — an angle-dependent iridescent-tile treatment
+# of the classic mechanism, per the family record's own pass-2 boundary call. Admitted as a
+# variant, not a separate model, per DATA_MODEL §4.2. The family record itself flags a possible
+# WCA-legality question for this colourway (colour depends on viewing angle, which could affect
+# a scrambled-state check) but leaves it unresolved for pass 4/5; this record inherits the
+# model's `core` scope_class per this batch's instructions (variant scope_class must match its
+# model's) and does NOT independently reclassify it `conditional` — flagged as an escalation in
+# the pass report instead of decided here.
+id: rubiks-classic-cube--impossible
+entity: variant
+model_id: rubiks-classic-cube
+name: "Rubik's Impossible"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Impossible"
+colorway:
+  designation: "Impossible"
+  scheme: custom
+  pattern:
+    kind: other
+    description: "Iridescent tiles that change colour depending on the viewing angle."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Sold as an ongoing named catalogue product; no bounded-run language found. Recorded
+      `standard`, not `limited`."
+  /edition/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own product page name: 'Rubik's Impossible.'"
+  /colorway/pattern/kind:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own page: 'It's just like the classic Rubik's Cube, but it changes colors
+      depending on the angle. The iridescent tiles change color when viewed from different
+      angles.' No `iridescent` value exists in vocab/colorway-pattern.yml; recorded as `other`
+      with the effect described in `description`."
+  /scope_class:
+    confidence: uncertain
+    note: "The family record (data/families/rubiks-classic.yml) flags a possible WCA-legality
+      question for this colourway ('may raise legality.wca_status questions at the variant
+      level') because the tiles' apparent colour depends on viewing angle. Not resolved here:
+      this pass's instructions require a variant's scope_class to match its model's (`core`),
+      so no independent reclassification is made. Escalated in the pass 4 report for a human
+      or a future pass with authority over the model record to decide whether this colourway
+      belongs at `conditional` instead."

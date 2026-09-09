@@ -1,0 +1,28 @@
+# variant: rubiks-speed-magnetic--standard
+# Pass 4 batch 2, Agent E. The current magnetic Rubik's Speed Cube. Assessment performed:
+# checked Rubik's own dedicated product page and 2022 homepage banner for a second colourway or
+# tier — none was found beyond the single magnetic configuration described.
+id: rubiks-speed-magnetic--standard
+entity: variant
+model_id: rubiks-speed-magnetic
+name: "Rubik's Speed Cube (Magnetic)"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  lubrication: "Comes pre-lubricated from the factory."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-speed-product-2024]
+    note: "Differentiation search performed: Rubik's own dedicated product page describes one
+      configuration (magnetic, pre-lubricated); no colour or tier selector was found on this
+      page. Recorded as the model's one assessed, sold configuration."
+  /config/lubrication:
+    confidence: confirmed
+    sources: [rubiks-com-speed-product-2024]
+    note: "Rubik's own page: 'The Speed Cube comes pre-lubricated.' Recorded as a factual
+      description of the base product's factory state, not as grounds for a separate variant
+      (DATA_MODEL §4.1 excludes factory lubrication from variant status unless marketed as a
+      distinct edition, which this is not)."

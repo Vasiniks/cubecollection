@@ -1,0 +1,42 @@
+# variant: rubiks-classic-cube--coach-cube
+# Pass 4 batch 2, Agent E. "Rubik's Coach Cube" — a peel-away numbered-sticker teaching system
+# applied over the classic mechanism, per the family record's own pass-2 boundary call. Admitted
+# as a variant of sticker type (DATA_MODEL §4.1 rule 6), not a separate model: the product's own
+# page states it becomes "a regular 3x3 Cube" once solved, i.e. the same underlying mechanism as
+# the base model.
+id: rubiks-classic-cube--coach-cube
+entity: variant
+model_id: rubiks-classic-cube
+name: "Rubik's Coach Cube"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Coach Cube"
+colorway:
+  designation: "Coach Cube"
+  application: stickered
+  pattern:
+    kind: printed_graphic
+    description: "Numbered, peel-away stickers guiding a first-time solve; the cube underneath
+      resolves to a standard classic colour scheme once the numbered stickers are removed."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Sold as an ongoing named catalogue teaching product; no bounded-run language found.
+      Recorded `standard`, not `limited`."
+  /edition/designation:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own product page name: 'Rubik's Coach Cube.'"
+  /colorway/application:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+  /colorway/pattern/kind:
+    confidence: probable
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Rubik's own page: 'Your Coach Cube starts covered by black, numbered stickers.
+      Follow along to remove the stickers and solve! Once you've solved you now have a regular
+      3×3 Cube to use!' — the same underlying mechanism as the base model, confirming variant
+      rather than model status."
