@@ -1,0 +1,33 @@
+# variant: huameng-tg-v1--ball-core-uv
+# Pass 4. UV-coated sibling of the Ball-Core baseline, per TheCubicle's own dedicated product
+# page. See huameng-tg-v1--standard.yml's header for the full sweep listing all 5 TG
+# configurations.
+id: huameng-tg-v1--ball-core-uv
+entity: variant
+model_id: huameng-tg-v1
+name: "HuaMeng TG 3x3 (Ball-Core UV)"
+scope_class: core
+config:
+  coating: uv
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-ball-core-uv]
+    note: "Differentiation search performed (see huameng-tg-v1--standard.yml's header for the
+      full prefix sweep). This product's own page differs from the baseline only by a stated
+      UV coating; no further edition/tier name found. Read as a regular retail configuration
+      option, not a marked special edition."
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-ball-core-uv]
+    note: "TheCubicle's own description: 'a UV coating that adds a glossy finish that can aid
+      with grip'."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core-uv]
+    note: "Inferred from the absence of sticker language; not a direct statement."

@@ -1,0 +1,32 @@
+# variant: huameng-ys3m-v1--standard
+# Pass 4. YS3M's base "piece-to-piece magnetization" configuration — the model's own page
+# (thecubicle-huameng-ys3m-3x3-2023) states directly: "This is the standard version that has
+# only piece-to-piece magnetization. Get the Maglev version here. Get the Ball-core version
+# here." A `scripts/wayback.mjs prefix thecubicle.com/products/huameng-ys3m` sweep this pass
+# found exactly those two named siblings plus a UV-coated top tier (recorded as their own
+# variants: huameng-ys3m-v1--maglev, huameng-ys3m-v1--ball-core-maglev,
+# huameng-ys3m-v1--ball-core-uv-maglev). No other configuration was found.
+id: huameng-ys3m-v1--standard
+entity: variant
+model_id: huameng-ys3m-v1
+name: "HuaMeng YS3M 3x3 (Standard)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+    note: "Differentiation search performed: the model's own page explicitly names itself 'the
+      standard version' and cross-links to exactly two sibling configurations by name (Maglev,
+      Ball-core); a prefix sweep this pass found those two plus one further UV-coated
+      combination, all direct configuration siblings, no separate limited/commemorative
+      edition found for the base line."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-ys3m-3x3-2023]
+    note: "Inferred from 'piece-to-piece magnetization' language and the absence of sticker
+      language; not a direct 'stickerless' statement."

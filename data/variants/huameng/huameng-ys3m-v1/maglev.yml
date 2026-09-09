@@ -1,0 +1,41 @@
+# variant: huameng-ys3m-v1--maglev
+# Pass 4. MagLev sibling of the Standard configuration, per TheCubicle's own dedicated product
+# page: "This is the maglev version that replaces the springs with opposing magnets."
+id: huameng-ys3m-v1--maglev
+entity: variant
+model_id: huameng-ys3m-v1
+name: "HuaMeng YS3M 3x3 (MagLev)"
+scope_class: core
+config:
+  maglev: maglev
+  weight_g: 80.0
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-maglev]
+    note: "Differentiation search performed (see huameng-ys3m-v1--standard.yml's header). This
+      product's own page differs from the standard configuration only by the stated MagLev
+      mechanism (no core-magnet/ball-core language here, unlike the ball-core sibling); no
+      further edition/tier name found."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-maglev]
+    note: "'Replaces the springs with opposing magnets' with no ball-core language present on
+      this specific page, distinguishing it from the ball-core+maglev sibling — mapped to the
+      plain `maglev` vocabulary value, not `ball_core_maglev`."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-huameng-ys3m-3x3-maglev]
+    note: "Item Weight 80.0g, per the source's own structured spec table — the same field the
+      model uses (76.0g) for the Standard configuration; both figures use the retailer's own
+      'Item Weight' convention, so this is a genuine within-line weight comparison, not a
+      gross/item mismatch."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-ys3m-3x3-maglev]
+    note: "Inferred from the absence of sticker language; not a direct statement."

@@ -1,0 +1,39 @@
+# variant: escube-air-v1--8-magnet-ball-core
+# Pass 4. The second of two configurations offered by a "Version: 20-Magnet Ball-Core /
+# 8-Magnet Ball-Core" selector on SpeedCubeShop's own ESCube Air listing
+# (speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core) — no dedicated page fetched
+# separately this pass (the selector sits on one listing); recorded as its own variant per the
+# model's own configuration structure. No independent second source (e.g. TheCubicle) was
+# found for this specific 8-magnet option; TheCubicle's own capture describes only the 20-magnet
+# version this pass.
+id: escube-air-v1--8-magnet-ball-core
+entity: variant
+model_id: escube-air-v1
+name: "ESCube Air 3x3 (8-Magnet Ball-Core)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "8-Magnet Ball-Core"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
+    note: "Differentiation search performed: named only as the second option of a two-way
+      'Version' selector on SpeedCubeShop's ESCube Air listing (the other option, 20-Magnet
+      Ball-Core, is this model's baseline/standard configuration and is independently
+      corroborated by TheCubicle). No dedicated product page or second retailer was found for
+      the 8-Magnet option specifically this pass, and no spec figures (weight, price) were
+      captured for it separately from the 20-magnet listing's own numbers — held at `uncertain`
+      rather than `probable` for that reason. No limited/commemorative language found."
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
+    note: "The selector's own second option label, verbatim."
+  /colorway/application:
+    confidence: uncertain
+    sources: [speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
+    note: "Inferred from the sibling 20-magnet configuration's stickerless presentation on the
+      same page; not independently confirmed for this specific option."

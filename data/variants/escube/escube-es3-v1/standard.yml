@@ -1,0 +1,52 @@
+# variant: escube-es3-v1--standard
+# Pass 4. One of three sold configurations of ESCube's ES3 line, per SpeedCubeShop's own
+# "Version comparison" table on its single ES3 product page (speedcubeshop-es3-debut-brand-2025,
+# capture 2025-06-17, table checked directly against the archive by the Pass 3 model-researcher
+# on 2026-09-04): "Standard" (48 magnets, no core magnets, frosted, 77.6g), "8-Core Magnets"
+# (64 magnets, 79.1g), "20-Core Magnets" (76 magnets, UV exterior, 79.8g). This is the Standard
+# row — the base configuration with no additional core magnets and a frosted (non-UV) finish,
+# matching the model's own default `dual_adjustment`/`tension_compression` core spec. Two other
+# configurations are recorded as sibling stubs (escube-es3-v1--8-core-magnets,
+# escube-es3-v1--20-core-magnets-uv).
+id: escube-es3-v1--standard
+entity: variant
+model_id: escube-es3-v1
+name: "ESCube ES3 3x3 (Standard)"
+scope_class: core
+config:
+  coating: frosted
+  weight_g: 77.6
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "Differentiation search performed: this record rests on SpeedCubeShop's own
+      'Version comparison' table on the ES3 product page, which lists 'Standard' as one of
+      three named rows (alongside '8-Core Magnets' and '20-Core Magnets') distinguished by
+      magnet count and exterior finish. No further tier/edition name (limited, commemorative,
+      collaboration) was found for this row at either retailer source already on file for this
+      model (speedcubeshop-es3-debut-brand-2025, thecubicle-escube-es3-3x3-magnetic); read as
+      the regular retail configuration."
+  /config/coating:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "The version-comparison table's own 'frosted' finish for the Standard row, as
+      recorded in the model's own description (speedcubeshop's excerpt on file quotes only the
+      debut-brand sentence, not this table; the table content is carried forward from the Pass
+      3 model researcher's own direct check of the archived page, per escube-es3-v1.yml's
+      description)."
+  /config/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "77.6g, matching the same source's separate 'Product Details' block ('Weight: 77.6 g')
+      for the default/Standard selection, and consistent with the version-comparison row."
+  /colorway/application:
+    confidence: uncertain
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "Inferred from the absence of any sticker/stickered language across both sources for
+      this model; not a direct 'stickerless' statement for this specific configuration."

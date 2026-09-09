@@ -1,0 +1,39 @@
+# source: thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition
+# TheCubicle's own product page for "HuaMeng TG 3x3 Spirit Pearl (Limited Edition)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/huameng-tg` during Pass 4 (Agent H,
+# Batch 2). Already flagged as a lead (site-wide promo banner) on
+# `thecubicle-huameng-tg-3x3-ball-core`, "Limited to 999 worldwide!" — this is the dedicated
+# product page itself, fetched and actioned this pass.
+id: thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition
+entity: source
+kind: retailer
+title: "HuaMeng TG 3x3 Spirit Pearl (Limited Edition) [Pre-Order] - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-tg-3x3-spirit-pearl-limited-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250723212202id_/https://www.thecubicle.com/products/huameng-tg-3x3-spirit-pearl-limited-edition"
+excerpt: |-
+  Page title: "HuaMeng TG 3x3 Spirit Pearl (Limited Edition) [Pre-Order]". Product Description:
+  "The HuaMeng TG 3x3 Spirit Pearl (Limited Edition) is a limited edition version of the
+  recent HuaMeng TG flagship 3x3. This puzzle has a beautiful gold, red, and transparent theme
+  that looks like fire directly from a dragon's mouth. The Spirit Pearl has stunning packaging
+  and includes a custom cube box, custom inserts, an adjustment tool, and custom-cut stickers
+  for all of you who enjoy solving your collector's puzzles. With only 999 being produced
+  worldwide, this is something that will not be around for long." Structured "Product
+  Specifications" table: "Manufacturer: HuaMeng / Type: 3x3 Speed Cubes / Added: 2025-07-22 /
+  Gross Weight: 687g / Dimensions: 55.5mm3 / Magnets: Magnetic / Item Weight: 85.0g." (The 687g
+  Gross Weight figure is anomalously high relative to every other TG configuration's ~218-226g
+  and is almost certainly inclusive of the "stunning packaging" — custom cube box and inserts —
+  described in the same paragraph, not a comparable product weight.)
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, explicit limited-run figure ('999
+  being produced worldwide') and a described colourway ('gold, red, and transparent') plus a
+  packaging description (custom box, custom inserts, adjustment tool, custom-cut stickers).
+  Single-source for the run size; no second retailer or first-party HuaMeng statement was
+  found this pass."
+status: sourced

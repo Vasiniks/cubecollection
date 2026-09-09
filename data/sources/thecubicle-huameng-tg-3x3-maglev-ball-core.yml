@@ -1,0 +1,34 @@
+# source: thecubicle-huameng-tg-3x3-maglev-ball-core
+# TheCubicle's own product page for "HuaMeng TG 3x3 (MagLev + Ball-Core)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/huameng-tg` during Pass 4 (Agent H,
+# Batch 2). Supports a HuaMeng TG configuration variant replacing the springs with opposing
+# magnets (MagLev), on top of the Ball-Core mechanism.
+id: thecubicle-huameng-tg-3x3-maglev-ball-core
+entity: source
+kind: retailer
+title: "HuaMeng TG 3x3 (MagLev + Ball-Core) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-tg-3x3-maglev-ball-core"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241223002020id_/https://www.thecubicle.com/products/huameng-tg-3x3-maglev-ball-core"
+excerpt: |-
+  Product Description: "The HuaMeng TG is the most feature-rich 3x3 we've seen so far! With
+  1620 different adjustment combinations you can find one that fits your turning style. It has
+  hand-adjustable compression settings and a tool to adjust tensions and magnet strength. It
+  has 6 tension settings, 9 compression settings, 5 edge magnet adjustments, and 6 corner/core
+  magnet adjustments. This is the MagLev + Ball-Core version. It uses opposing springs instead
+  of a traditional spring, a ball-core for a stronger magnetic feel and auto-alignment."
+  Structured "Product Specifications" table: "Manufacturer: HuaMeng / Type: 3x3 / Added:
+  2024-10-23 / Gross Weight: 224g / Dimensions: 55.5mm3 / Magnets: Magnetic / Item Weight:
+  84.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page with a structured spec table,
+  naming this a MagLev configuration of the huameng-tg-v1 model. Same 'Added: 2024-10-23' date
+  as the Ball-Core and Ball-Core UV siblings, consistent with all base-generation
+  configurations being catalogued at the same time."
+status: sourced

@@ -1,0 +1,34 @@
+# source: thecubicle-huameng-tg-3x3-maglev-ball-core-uv
+# TheCubicle's own product page for "HuaMeng TG 3x3 (MagLev + Ball-Core + UV)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/huameng-tg` during Pass 4 (Agent H,
+# Batch 2). The fourth of the base generation's four documented magnet/coating configurations.
+id: thecubicle-huameng-tg-3x3-maglev-ball-core-uv
+entity: source
+kind: retailer
+title: "HuaMeng TG 3x3 (MagLev + Ball-Core + UV) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-tg-3x3-maglev-ball-core-uv"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250123201814id_/https://www.thecubicle.com/products/huameng-tg-3x3-maglev-ball-core-uv"
+excerpt: |-
+  Product Description: "The HuaMeng TG is the most feature-rich 3x3 we've seen so far! With
+  1620 different adjustment combinations you can find one that fits your turning style. It has
+  hand-adjustable compression settings and a tool to adjust tensions and magnet strength. It
+  has 6 tension settings, 9 compression settings, 5 edge magnet adjustments, and 6 corner/core
+  magnet adjustments. This is the MagLev + Ball-Core + UV version. It uses opposing magnets
+  instead of a traditional spring, a ball-core for a stronger magnetic feel and auto-alignment,
+  and a UV coating that adds a glossy finish that can aid with grip." Structured "Product
+  Specifications" table: "Manufacturer: HuaMeng / Type: 3x3 Speed Cubes / Added: 2024-10-23 /
+  Gross Weight: 226g / Dimensions: 55.5mm3 / Magnets: Magnetic / Item Weight: 85.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page with a structured spec table,
+  naming this the combined MagLev+Ball-Core+UV configuration — the union of the two other
+  differentiators (thecubicle-huameng-tg-3x3-maglev-ball-core,
+  thecubicle-huameng-tg-3x3-ball-core-uv). Same 'Added: 2024-10-23' date as all base-generation
+  siblings."
+status: sourced

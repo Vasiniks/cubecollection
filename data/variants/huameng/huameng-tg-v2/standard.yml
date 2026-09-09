@@ -1,0 +1,37 @@
+# variant: huameng-tg-v2--standard
+# Pass 4. huameng-tg-v2 baseline. Differentiation search: a `scripts/wayback.mjs prefix
+# thecubicle.com/products/huameng-tg-v2` sweep found exactly one distinct captured URL
+# ("HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV)"), matching the model's own single-source,
+# placeholder-description record. No sibling configuration, colourway, or edition name was
+# found for this generation this pass.
+id: huameng-tg-v2--standard
+entity: variant
+model_id: huameng-tg-v2
+name: "HuaMeng TG V2 3x3 (20-Magnet Ball-Core + UV)"
+scope_class: core
+config:
+  coating: uv
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "Differentiation search performed: a dedicated wayback prefix sweep of
+      thecubicle.com/products/huameng-tg-v2 found only this one captured URL. The source
+      itself is a genuinely thin record — the product's own description is a placeholder
+      ('more details coming soon!') per the model record's own note — so this is the only
+      configuration found, not affirmatively confirmed to be the only one that ever existed.
+      Held at `uncertain` rather than `probable` given the placeholder description."
+  /config/coating:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "Read from the product's own bracketed name ('... + UV'), not a structured coating
+      field or descriptive sentence (the page's description is a placeholder)."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: "Inferred from the absence of sticker language; not a direct statement."
