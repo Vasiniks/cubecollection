@@ -1,0 +1,36 @@
+# source: thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev
+# TheCubicle's own product page for "HuaMeng YS3M 3x3 (Ball-Core + MagLev)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/huameng-ys3m` during Pass 4 (Agent H,
+# Batch 2). The model's own page cross-links to this as the "Ball-core version".
+id: thecubicle-huameng-ys3m-3x3-ball-core-magnetic-core-maglev
+entity: source
+kind: retailer
+title: "HuaMeng YS3M 3x3 (Ball-Core + MagLev) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-ys3m-3x3-ball-core-magnetic-core-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230326115948id_/https://www.thecubicle.com/products/huameng-ys3m-3x3-ball-core-magnetic-core-maglev"
+excerpt: |-
+  Product Description: "As of March 10th, 2023 we were informed by Moyu that the mold is
+  broken, which will delay the fulfillment of this item... The MoYu HuaMeng YS3M is the latest
+  flagship 3x3 release from the famous cube company. This puzzle features amazing corner
+  cutting, adjustable tensions/compressions, a dragon scale pattern to reduce sticking, and is
+  designed/endorsed by the 3x3 world record single holder YuSheng Du. This is the ball core +
+  maglev version that has corner/core magnetization, 25 degrees of magnetic turn correction
+  (auto-homing ability), and represents the pinnacle of MoYu 3x3 design. Get the Standard
+  version here. Get the Maglev version here." Structured "Product Specifications" table:
+  "Manufacturer: HuaMeng / Type: 3x3 / Added: 2023-02-17 / Gross Weight: 225g / Dimensions:
+  55.0mm3 / Magnets: Magnetic / Item Weight: 83.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Its own supply-chain notice
+  ('we were informed by Moyu that the mold is broken') is a direct first-party retailer
+  statement naming MoYu as the manufacturing party behind this specific product — material,
+  uncomfortable corroboration of the open MoYu-affiliation lead already flagged at the
+  family/model level for huameng-ys3m; not acted on here (manufacturer boundaries are frozen
+  for this pass), recorded for a future manufacturer-boundary review."
+status: sourced

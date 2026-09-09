@@ -1,0 +1,38 @@
+# variant: huameng-tg-v1--standard
+# Pass 4. HuaMeng TG's base "Ball-Core" configuration — the model's own eponymous product page
+# (thecubicle-huameng-tg-3x3-ball-core) describes no coating and no MagLev, distinguishing it
+# from three sibling configurations found via a `scripts/wayback.mjs prefix
+# thecubicle.com/products/huameng-tg` sweep this pass: Ball-Core UV (coating), MagLev +
+# Ball-Core (maglev), MagLev + Ball-Core + UV (both), plus a "Spirit Pearl (Limited Edition)"
+# fifth configuration recorded separately (huameng-tg-v1--spirit-pearl-limited-edition).
+#
+# NOTE FOR THE MODEL RECORD (not actioned here — models are frozen): all four non-limited
+# configurations found this pass are named "...Ball-Core..." by TheCubicle, suggesting the
+# ball-core mechanism may be a shared model-level default rather than a variant differentiator;
+# this record therefore does NOT set `config.core_system: ball_core`, since the model already
+# sets `specs.core_system: dual_adjustment` (its own reading of the tension/compression
+# mechanism) and the two vocabulary values cannot both hold in one enum field. Reported to the
+# batch owner as a possible model-spec gap for the model-researcher lane to reconcile.
+id: huameng-tg-v1--standard
+entity: variant
+model_id: huameng-tg-v1
+name: "HuaMeng TG 3x3 (Ball-Core)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "Differentiation search performed: a wayback prefix sweep of
+      thecubicle.com/products/huameng-tg found 17 captured URLs collapsing to 5 distinct
+      product configurations (this baseline plus 4 siblings, see header). This product's own
+      page carries no coating or MagLev language and no edition/tier name beyond the bracketed
+      mechanism description ('Ball-Core'); read as the line's base retail configuration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-ball-core]
+    note: "Inferred from the absence of sticker language; not a direct statement."

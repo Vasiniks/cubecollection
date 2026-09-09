@@ -1,0 +1,35 @@
+# source: thecubicle-huameng-ys3m-3x3-maglev
+# TheCubicle's own product page for "HuaMeng YS3M 3x3 (MagLev)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/huameng-ys3m` during Pass 4 (Agent H,
+# Batch 2). The model's own page (thecubicle-huameng-ys3m-3x3-2023) cross-links to this as the
+# "Maglev version"; fetched and actioned here as its own configuration variant.
+id: thecubicle-huameng-ys3m-3x3-maglev
+entity: source
+kind: retailer
+title: "HuaMeng YS3M 3x3 (MagLev) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-ys3m-3x3-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230806173250id_/https://www.thecubicle.com/products/huameng-ys3m-3x3-maglev"
+excerpt: |-
+  Product Description: "The MoYu HuaMeng YS3M is the latest flagship 3x3 release from the
+  famous cube company. This puzzle features amazing corner cutting, adjustable
+  tensions/compressions, a dragon scale pattern to reduce sticking, and is designed/endorsed
+  by the 3x3 world record single holder YuSheng Du. This is the maglev version that replaces
+  the springs with opposing magnets. This will add a bit of weight, and a lot of speed! Get
+  the Standard version here. Get the Ball-core version here." Structured "Product
+  Specifications" table: "Manufacturer: HuaMeng / Type: 3x3 / Added: 2023-02-17 / Gross Weight:
+  221g / Dimensions: 55.0mm3 / Magnets: Magnetic / Item Weight: 80.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page, cross-linking explicitly to the
+  Standard and Ball-core configurations of the same product as siblings ('Get the Standard
+  version here. Get the Ball-core version here.') — direct retailer confirmation these are
+  configurations of one product line, not separate models. Repeats the 'MoYu HuaMeng YS3M'
+  attribution language already flagged as an open MoYu-affiliation lead at the family/model
+  level; not acted on here."
+status: sourced

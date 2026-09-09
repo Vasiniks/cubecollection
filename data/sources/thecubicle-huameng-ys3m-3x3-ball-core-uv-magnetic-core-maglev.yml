@@ -1,0 +1,38 @@
+# source: thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev
+# TheCubicle's own product page for "HuaMeng YS3M 3x3 (Ball-Core UV + MagLev)", found via
+# `scripts/wayback.mjs prefix thecubicle.com/products/huameng-ys3m` during Pass 4 (Agent H,
+# Batch 2). The fourth of four documented YS3M configurations (Standard, MagLev, Ball-Core +
+# MagLev, and this UV-coated Ball-Core + MagLev top tier).
+id: thecubicle-huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev
+entity: source
+kind: retailer
+title: "HuaMeng YS3M 3x3 (Ball-Core UV + MagLev) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240419131227id_/https://www.thecubicle.com/products/huameng-ys3m-3x3-ball-core-uv-magnetic-core-maglev"
+excerpt: |-
+  Product Description: "The MoYu HuaMeng YS3M is the latest flagship 3x3 release from the
+  famous cube company. This puzzle features fantastic corner cutting, adjustable
+  tensions/compressions, and a dragon scale pattern to reduce sticking, and is
+  designed/endorsed by the 3x3 world record single holder YuSheng Du. This is the Ball-Core UV
+  (Magnetic Core + MagLev) version with corner/core magnetization, 25 degrees of magnetic turn
+  correction (auto-homing ability), and represents the pinnacle of MoYu 3x3 design. This one
+  also has a UV coating or 'Magic Clothes' as MoYu puts it. This gives the outer layer of the
+  puzzle a glossy finish which helps with grip and can aid in recognition." Structured
+  "Product Specifications" table: "Manufacturer: HuaMeng / Type: 3x3 / Added: 2023-03-13 /
+  Gross Weight: 225g / Dimensions: 55.0mm3 / Magnets: Magnetic / Item Weight: 83.0g."
+preservation_note: "Retrieved via `scripts/wayback.mjs get`. Also captured under the alternate
+  slug `huameng-ys3-m-20-core-magnetic-maglev-ball-core-uv` (2024-04-15, per
+  `scripts/wayback.mjs prefix thecubicle.com/products/huameng-ys3-m`) — same product, not
+  fetched separately."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: "Tier 2 first-party retailer product page. Quotes MoYu's own branded term
+  for its UV coating ('Magic Clothes... as MoYu puts it') applied directly to this HuaMeng
+  product — further, specific corroboration of the open MoYu-affiliation lead already flagged
+  at the family/model level; not acted on here (manufacturer boundaries frozen for this pass)."
+status: sourced

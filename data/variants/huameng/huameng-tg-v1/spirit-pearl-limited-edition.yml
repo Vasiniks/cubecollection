@@ -1,0 +1,61 @@
+# variant: huameng-tg-v1--spirit-pearl-limited-edition
+# Pass 4. A limited, named colourway edition of the HuaMeng TG line, first flagged as a
+# site-wide promo-banner lead on `thecubicle-huameng-tg-3x3-ball-core` ("HuaMeng Spirit Pearl
+# Limited Edition 3x3 / Limited to 999 worldwide!") and actioned this pass via its own
+# dedicated product page.
+id: huameng-tg-v1--spirit-pearl-limited-edition
+entity: variant
+model_id: huameng-tg-v1
+name: "HuaMeng TG 3x3 Spirit Pearl (Limited Edition)"
+scope_class: core
+edition:
+  types: [limited]
+  designation: "Spirit Pearl"
+  limited:
+    is_limited: true
+    run_size: 999
+colorway:
+  designation: "Spirit Pearl"
+  scheme: custom
+  application: stickered
+packaging:
+  contents: ["custom cube box", "custom inserts", "adjustment tool", "custom-cut stickers"]
+  notable: "Retailer's own description: 'stunning packaging' with a custom box and custom
+    inserts, distinct from the line's other (unstickered) configurations."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
+    note: "Differentiation search performed (see huameng-tg-v1--standard.yml's header for the
+      full prefix sweep of thecubicle.com/products/huameng-tg). TheCubicle's own page states
+      directly: 'a limited edition version of the recent HuaMeng TG flagship 3x3... With only
+      999 being produced worldwide'."
+  /edition/limited/run_size:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
+    note: "Single Tier 2 retailer figure ('999 being produced worldwide'); no independent
+      second source or first-party HuaMeng statement was found this pass. Not estimated or
+      inferred — the source states the number directly."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
+    note: "'Spirit Pearl' is the product's own name, verbatim, for this colourway/edition."
+  /colorway/scheme:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
+    note: "The retailer's own 'gold, red, and transparent theme' is a colour description
+      specific to this one product, not a named scheme category from vocab/colorway-scheme.yml;
+      `custom` is the least-overclaiming vocabulary value for a one-off themed release."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
+    note: "The retailer's own description states the package 'includes... custom-cut stickers'
+      — unlike the line's other configurations (recorded stickerless, uncertain confidence),
+      this specific edition ships with stickers, a materially different colourway application
+      per DATA_MODEL's variant-materiality rule 6."
+  /packaging/contents:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
+    note: "Retailer's own itemised list: 'a custom cube box, custom inserts, an adjustment
+      tool, and custom-cut stickers'."

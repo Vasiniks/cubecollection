@@ -1,0 +1,34 @@
+# variant: huameng-tg-v1--maglev-ball-core
+# Pass 4. MagLev sibling of the Ball-Core baseline, replacing the spring with opposing magnets
+# per TheCubicle's own dedicated product page. See huameng-tg-v1--standard.yml's header for the
+# full sweep listing all 5 TG configurations.
+id: huameng-tg-v1--maglev-ball-core
+entity: variant
+model_id: huameng-tg-v1
+name: "HuaMeng TG 3x3 (MagLev + Ball-Core)"
+scope_class: core
+config:
+  maglev: ball_core_maglev
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-maglev-ball-core]
+    note: "Differentiation search performed (see huameng-tg-v1--standard.yml's header for the
+      full prefix sweep). This product's own page differs from the baseline by a stated MagLev
+      mechanism ('uses opposing springs instead of a traditional spring... a ball-core for a
+      stronger magnetic feel and auto-alignment'); no further edition/tier name found. Read as
+      a regular retail configuration option."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-maglev-ball-core]
+    note: "Magnetic repulsion replacing the spring, combined with the line's ball-core
+      mechanism, maps to the `ball_core_maglev` vocabulary value."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-huameng-tg-3x3-maglev-ball-core]
+    note: "Inferred from the absence of sticker language; not a direct statement."
