@@ -61,4 +61,12 @@ reliability_note: |-
 
   The page also carries a live 'This page may be currently outdated' banner, so it stays tier 4
   and is ineligible for the source-specific tier-3 override.
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: the page carries "Perhaps Outdated pages" in its own MediaWiki maintenance categories. Substantial at 1,098 words, but a staleness flag disqualifies regardless of length. This also settles E1's "held for human decision" status for this page — the machine-readable flag decides it.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

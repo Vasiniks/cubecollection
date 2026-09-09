@@ -20,12 +20,21 @@ language: en
 region: US
 link_status: dead
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited wiki, self-marked as an incomplete stub. Only
-  capture of this specific page found in CDX. Sufficient to establish existence, an approximate
-  founding year, and country, not to confirm precise legal identity. Corroborated by the
-  cube4you.com domain itself having captures from 2007 through at least 2022 (general wayback
-  browsing this pass), consistent with continuous operation across the archive's window,
-  though its later (2019-2022) product range shifted toward 3D-printed novelty puzzles
-  (chromium-finish cuboids, braille-tile 3x3s) rather than mainstream WCA-legal speedcubes —
-  not independently cited as a fact here beyond /notes."
+reliability_note: |-
+  Tier 4, community-edited wiki, self-marked as an incomplete stub. Only capture of this specific
+  page found in CDX. Sufficient to establish existence, an approximate founding year, and country,
+  not to confirm precise legal identity. Corroborated by the cube4you.com domain itself having
+  captures from 2007 through at least 2022 (general wayback browsing this pass), consistent with
+  continuous operation across the archive's window, though its later (2019-2022) product range
+  shifted toward 3D-printed novelty puzzles (chromium-finish cuboids, braille-tile 3x3s) rather
+  than mainstream WCA-legal speedcubes — not independently cited as a fact here beyond /notes.
+
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: unflagged, but 171 words of article prose, below the 390-word floor. This is a 2010 capture on an older wiki skin; the measurement used an id="bodyContent" fallback.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

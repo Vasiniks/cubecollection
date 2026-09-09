@@ -20,9 +20,18 @@ accessed: "2026-09-03"
 language: en
 link_status: dead
 last_checked: "2026-09-03"
-reliability_note: "The page's product list names entries generically by puzzle type (e.g.
-  'QJ 3x3x3') rather than by any manufacturer-given model or family name, unlike this wiki's
-  more detailed manufacturer pages (e.g. ShengShou, DianSheng, Cyclone Boys) used elsewhere in
-  this pass. Corroborates that QJ is a real, long-running Guangdong manufacturer but supplies
-  no 3x3-specific family names."
+reliability_note: |-
+  The page's product list names entries generically by puzzle type (e.g. 'QJ 3x3x3') rather than
+  by any manufacturer-given model or family name, unlike this wiki's more detailed manufacturer
+  pages (e.g. ShengShou, DianSheng, Cyclone Boys) used elsewhere in this pass. Corroborates that
+  QJ is a real, long-running Guangdong manufacturer but supplies no 3x3-specific family names.
+
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: unflagged, but 91 words of article prose, far below the 390-word floor.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

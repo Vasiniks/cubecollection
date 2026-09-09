@@ -37,4 +37,12 @@ reliability_note: |-
 
   To restore a higher confidence, add a tier 1-2 source rather than re-tiering this page. See
   research/qc/evidence-tier-remediation-matrix.yml.
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: unflagged, but 147 words of article prose, below the 390-word floor. No claim depends on it regardless: the FangShi GuangYing and JieYun families were raised to `confirmed` on four and five independent tier-2 retailers under P3-T1.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

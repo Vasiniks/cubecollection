@@ -18,8 +18,17 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, no citation trail; gives founding as unknown, in
-  contrast with shengshoutoys-about-us-2018's explicit 2000 (parent company) / 2009 (brand)
-  dates. Used only for the native-name gloss, which the tier 1 source does not itself state in
-  Chinese characters."
+reliability_note: |-
+  Tier 4, community-edited, no citation trail; gives founding as unknown, in contrast with
+  shengshoutoys-about-us-2018's explicit 2000 (parent company) / 2009 (brand) dates. Used only for
+  the native-name gloss, which the tier 1 source does not itself state in Chinese characters.
+
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: the page carries "Perhaps Outdated pages" in its own MediaWiki maintenance categories. Substantial at 1,177 words, but E1 treats a staleness flag as disqualifying regardless of length, and that is the correct reading: length does not cure staleness.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

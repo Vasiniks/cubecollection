@@ -27,7 +27,17 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, no citation trail for any date, though the list is
-  framed as ordered by year of release rather than as prose commentary. Last edited 16 July
-  2020 per the page's own footer."
+reliability_note: |-
+  Tier 4, community-edited, no citation trail for any date, though the list is framed as ordered
+  by year of release rather than as prose commentary. Last edited 16 July 2020 per the page's own
+  footer.
+
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: unflagged, but 179 words of article prose — the same page as speedsolving-wiki-mf8 and equally below the 390-word floor. Also settles E1's "held" status for this page.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

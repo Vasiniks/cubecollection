@@ -4,6 +4,7 @@
 id: speedsolving-wiki-cubicle-labs
 entity: source
 kind: wiki
+tier: 3
 title: "Cubicle Labs - Speedsolving.com Wiki"
 publisher: "Speedsolving.com"
 url: "https://www.speedsolving.com/wiki/index.php/Cubicle_Labs"
@@ -15,5 +16,32 @@ accessed: "2026-09-01"
 language: en
 link_status: live
 last_checked: "2026-09-01"
-reliability_note: "Community-edited and unattributed at the level of the individual sentence. Tier 4: it corroborates and cannot establish. No first-party statement by TheCubicle confirming that Cubicle Labs is its division was located in pass 1."
+reliability_note: |-
+  Community-edited and unattributed at the level of the individual sentence. Tier 4: it
+  corroborates and cannot establish. No first-party statement by TheCubicle confirming that
+  Cubicle Labs is its division was located in pass 1.
+
+
+  TIER OVERRIDE TO 3, applied 2026-09-09 (issue P4-6). E1 established that a Speedsolving wiki
+  page is tier 3 rather than the tier 4 its `kind: wiki` defaults to when it is revision-tracked,
+  substantial and not flagged stale, but the override reached only 9 of 30 such sources. This is
+  one of the remaining pages, assessed individually rather than normalised in bulk.
+
+  E1 read the staleness banner by eye. This assessment used the page's own machine-readable
+  MediaWiki maintenance category instead: a stale page carries "Perhaps Outdated pages" in
+  wgCategories. That is reproducible, and it VERIFIED E1's earlier judgements rather than
+  replacing them — every previously overridden page that could be re-fetched is unflagged, and
+  every page E1 downgraded is flagged. This page is NOT flagged, and its article prose is 1,405
+  words against the 390-word floor set by the smallest page E1 itself accepted at tier 3
+  (speedsolving-wiki-cyclone-boys, 390).
+
+  This override STRENGTHENS NOTHING that currently stands. Every attestation citing this record
+  already carries a tier 1-2 co-citation, so the wiki corroborates rather than establishes and
+  rule 43 was correctly silent before this change. The override records an assessment and permits
+  a future `reported` claim; it does not upgrade an existing one.
+
+  This override is SOURCE-SPECIFIC. `kind: wiki` remains tier 4 archive-wide.
+
+  PERMITTED claim types: product existence, naming, line membership, approximate chronology.
+  FORBIDDEN: specifications, corporate ownership or sub-brand relationships, day-precision dates.
 status: sourced

@@ -19,10 +19,19 @@ accessed: "2026-09-02"
 language: en
 link_status: live
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited, no citation trail for the sub-brand claim. Used
-  only as corroboration alongside moyucube-official-home-2022 (tier 1, MoYu's own site naming
-  '魔方教室' among its own house names) and retailer/marketplace brand-hierarchy usage
-  (cuboss-mfjs-brand-page). Also the source for treating Meilong as a product line rather than
-  a separate sub-brand — see data/manufacturers/mfjs.yml notes and the
-  global-pass0-candidates.yml annotation."
+reliability_note: |-
+  Tier 4, community-edited, no citation trail for the sub-brand claim. Used only as corroboration
+  alongside moyucube-official-home-2022 (tier 1, MoYu's own site naming '魔方教室' among its own house
+  names) and retailer/marketplace brand-hierarchy usage (cuboss-mfjs-brand-page). Also the source
+  for treating Meilong as a product line rather than a separate sub-brand — see
+  data/manufacturers/mfjs.yml notes and the global-pass0-candidates.yml annotation.
+
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: the page carries "Perhaps Outdated pages" in its own MediaWiki maintenance categories, at 1,098 words — the same underlying page as speedsolving-wiki-mfjs-products. A staleness flag disqualifies regardless of length. Also settles E1's "held" status for this page.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

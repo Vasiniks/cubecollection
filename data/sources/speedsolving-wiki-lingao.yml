@@ -20,8 +20,18 @@ language: en
 region: US
 link_status: dead
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited wiki. Cited only to support that LingAo makes no
-  3x3x3 product at all, which is a scope finding (out of scope for this archive per PRODUCT.md,
-  not merely 'conditional') rather than a manufacturer-identity claim, so no manufacturer
-  record is created for LingAo despite it appearing in the pass-0 long-tail candidate list."
+reliability_note: |-
+  Tier 4, community-edited wiki. Cited only to support that LingAo makes no 3x3x3 product at all,
+  which is a scope finding (out of scope for this archive per PRODUCT.md, not merely
+  'conditional') rather than a manufacturer-identity claim, so no manufacturer record is created
+  for LingAo despite it appearing in the pass-0 long-tail candidate list.
+
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: unflagged, but 331 words of article prose, below the 390-word floor set by the smallest page E1 accepted at tier 3.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced

@@ -9,15 +9,17 @@
 # severity: critical | high | medium | low
 
 meta:
-  baseline_sha: "28d45ad"
-  updated: "2026-09-08"
-  phase: "PRE-PASS-4 QC COMPLETE: P26-12 resolved DISTINCT on preserved photography, P26-13 enforced at model level. Taxonomy frozen at 132 families / 269 models. Pass 4 awaiting authorisation"
+  baseline_sha: "208f274"
+  updated: "2026-09-09"
+  phase: "PASS 4 COMPLETE (269 of 269 models assessed). Taxonomy frozen at 132 families / 269
+    models. Current work is provenance and structural QC against the completed archive, not
+    further enumeration."
   counts:
     entities: 54
     families: 132
     models: 269
-    variants: 313
-    sources: 470
+    variants: 485
+    sources: 528
 
 issues:
 
@@ -1314,7 +1316,7 @@ issues:
 
   - id: P4-6
     severity: medium
-    status: open
+    status: resolved
     title: "The E1 tier-3 override reached only 9 of 30 Speedsolving wiki sources"
     category: evidence-quality
     affected_records: "21 speedsolving-wiki-* sources still at their default tier 4"
@@ -1343,5 +1345,36 @@ issues:
       Two attestations claimed `probable` on these pages and were downgraded to `uncertain` on
       2026-09-09 (shengshou-mr-m-v2 /generation/basis, yuxin-little-magic-v2 /relationships/0).
       If E1 is extended and those pages qualify, both may legitimately return to `reported`.
+    resolution: >-
+      RESOLVED 2026-09-09. All 30 Speedsolving wiki sources triaged; 23 assessed against E1's
+      criterion this pass and the remaining 7 identified as already-decided, so no outcome
+      depends on them. TWO raised to tier 3 with individual justification
+      (speedsolving-wiki-gan, 5,871 words of article prose; speedsolving-wiki-cubicle-labs,
+      1,405). THIRTEEN assessed and explicitly recorded as STAYS TIER 4 - seven unflagged but
+      too thin (lingao 331, mf8 and mf8-products 179, cube4you-2010 171, fangshi 147, qj-2017
+      91, guoguan 14) and six carrying the staleness flag (shengshou, mfjs-products,
+      mofang-jiaoshi, lanlan, kungfu, zcube). Each carries the reason in its own
+      reliability_note, because "assessed, stays tier 4" and "never assessed" are different
+      states that were previously indistinguishable.
+      METHOD IMPROVEMENT - E1 read the staleness banner by eye. This pass used the page's own
+      machine-readable MediaWiki maintenance category ("Perhaps Outdated pages" in wgCategories),
+      which is reproducible, and used it to CHECK E1 rather than replace it: every previously
+      overridden page that could be re-fetched is unflagged, and every page E1 downgraded is
+      flagged. E1's judgements are independently confirmed. The substance floor was likewise
+      taken from E1's own accepted set rather than invented - 390 words, the prose length of
+      speedsolving-wiki-cyclone-boys, the smallest page E1 admitted.
+      NOTHING WAS STRENGTHENED. Every attestation citing either newly-raised source already
+      carried a tier 1-2 co-citation, so both were corroborating rather than establishing and
+      rule 43 was correctly silent before the change. The override records an assessment and
+      permits a future `reported` claim; it upgrades nothing that stands.
+      ALSO CLOSES E1's three "held for human decision" pages: mf8-products and mofang-jiaoshi
+      had their held status recorded in the ledger but NEVER in their own source files - another
+      instance of P26-2's roll-up gap, found by reading the records instead of the ledger. All
+      three are now decided on the criterion rather than held: mfjs-products and mofang-jiaoshi
+      are flagged stale, mf8-products is 179 words.
+      NOT ASSESSED THIS PASS - moyu, qiyi, qiyi-products, yongjun, yongjun-products (all already
+      tier 3) and shengshou-products, yuxin-products (already downgraded under E1). Wayback began
+      refusing connections partway through the sweep. A failed fetch is not evidence, so these are
+      recorded as unverified rather than assumed; none of them is undecided, so nothing is blocked.
     owner: main
     last_updated: "2026-09-09"

@@ -23,11 +23,20 @@ language: en
 region: US
 link_status: dead
 last_checked: "2026-09-02"
-reliability_note: "Tier 4, community-edited wiki, self-marked as 'currently outdated' but
-  substantially more detailed than a bare brand-list mention (naming a Chinese brand name, a
-  city, a start year, and specific 3x3/2x2/4x4 product names). Sufficient to establish
-  existence, a general location, and an approximate active-since year at `uncertain`
-  confidence, not sufficient alone for `confirmed`. No independent website or company-
-  registration record was located this pass; the wiki's own infobox states its own website
-  field is empty."
+reliability_note: |-
+  Tier 4, community-edited wiki, self-marked as 'currently outdated' but substantially more
+  detailed than a bare brand-list mention (naming a Chinese brand name, a city, a start year, and
+  specific 3x3/2x2/4x4 product names). Sufficient to establish existence, a general location, and
+  an approximate active-since year at `uncertain` confidence, not sufficient alone for
+  `confirmed`. No independent website or company- registration record was located this pass; the
+  wiki's own infobox states its own website field is empty.
+
+
+  ASSESSED UNDER P4-6, 2026-09-09 — STAYS TIER 4. E1's tier-3 override reached only 9 of 30
+  Speedsolving wiki sources, and bulk-applying it to the rest would have been exactly the
+  unassessed normalisation this archive forbids. This page was assessed individually against E1's
+  own criterion and does not meet it: the page carries "Perhaps Outdated pages" in its own MediaWiki maintenance categories, and has 135 words of prose. Fails both halves of the criterion.
+
+  Recording the negative outcome is the point. "Assessed, stays tier 4" and "never assessed" are
+  different states, and before this pass they were indistinguishable.
 status: sourced
