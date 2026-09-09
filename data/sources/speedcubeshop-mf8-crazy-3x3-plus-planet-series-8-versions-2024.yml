@@ -1,0 +1,30 @@
+# source: speedcubeshop-mf8-crazy-3x3-plus-planet-series-8-versions-2024
+# Pass 4 (variant enumeration), Agent G. SpeedCubeShop's own bundle SKU offering all eight
+# planet colourways of the Mf8 Crazy 3x3 Plus Planet Series together, each on a black body.
+id: speedcubeshop-mf8-crazy-3x3-plus-planet-series-8-versions-2024
+entity: source
+kind: retailer
+title: "Mf8 Crazy 3x3 Plus Planet Series (8 Versions) – SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-8-versions"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240412153240id_/https://speedcubeshop.com/products/mf8-crazy-3x3-plus-planet-series-8-versions"
+excerpt: |-
+  "Mf8 Crazy 3x3 Plus Planet Series (8 Versions)" — variant list: "Earth / Black", "Jupiter /
+  Black", "Mars / Black", "Mercury / Black", "Neptune / Black", "Saturn / Black", "Uranus /
+  Black", "Venus / Black". Description: "Mf8 Crazy 3x3 Plus Planet Series (8 Versions) is a 3x3
+  with crazy cuts that vary by each version adding to the challenge. Collect the entire
+  series!"
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-09"
+reliability_note: "Tier 2, retailer. A bundle SKU containing the same eight planet colourways
+  already individually attested in speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025, each
+  on a black body — read as bundle membership (DATA_MODEL §4.1, not itself a variant-creating
+  distinction) of the eight already-created planet variants, not a ninth product. The
+  standalone 'Black' (no-planet) Version option seen on the individual planet pages is NOT part
+  of this 8-piece bundle, consistent with 'Black' being a peer colourway rather than a ninth
+  planet."
+status: sourced
