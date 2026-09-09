@@ -59,20 +59,27 @@ OPEN ISSUES (ledger: research/qc/pass2-remediation-ledger.yml)
 AGENTS
   none running. worktrees: 1 (main only).
 
-IN PROGRESS — P4-9 adjudication
-  File: research/qc/p4-9-adjudication.yml  (261 candidates, skeleton committed first)
+P4-9 ADJUDICATION — COMPLETE
+  File: research/qc/p4-9-adjudication.yml  — all 261 classified, 0 unadjudicated.
   Regenerate candidates: npm run catalogue-gap -- --fetch --json
-  Adjudications are NOT regenerable — preserve them across any regeneration.
-  DONE : all 28 candidates inside a KNOWN family
-         8 confirmed_missing / 7 needs_research / 6 alternate_naming / 6 not_3x3 / 1 bundle
-  TODO : 233 candidates in no known family (the BREADTH set). Expect most to be
-         novelties, printed editions and non-3x3 puzzles. Classify in batches and
-         commit after each batch.
+  Adjudications are NOT regenerable. Preserve them across any regeneration.
+  RESULT: missing_manufacturer 71 / not_3x3 60 / needs_research 44 / service_listing 32
+          confirmed_missing 20 / alternate_naming 14 / variant 12 / bundle 6 / other 2
+  ANSWER: BOTH, at two layers with different fixes.
+    MODEL LAYER   — 12 of 20 confirmed-missing are later generations of held lines,
+                    8 of those 12 are MoYu. A RECENCY failure. catalogue-gap covers it.
+    MANUFACTURER  — 7 vendors absent from the 54 (Ziina 51 lines). A BREADTH failure.
+                    Nothing in the archive could ever surface these. Pass 1 work.
+                    Escalated separately as P4-10.
+  48% of candidates were correctly NOT gaps. The tool over-reports by design.
 
 NEXT ACTION
-  Continue adjudicating p4-9-adjudication.yml, breadth set, highest SKU count first.
-  Then answer the METHODOLOGY question from the finished distribution:
-  recency failure (miss inside a known line) vs breadth failure (line never found).
+  Highest-value unresolved consequence of the above, in order:
+  1. P4-11 scope policy (mini/keychain + oversized). Decidable from the archive's OWN
+     records with NO new research, and it unblocks ~15 of the 44 needs_research.
+  2. P4-10 Ziina: establish decorator-vs-manufacturer from first-party evidence
+     BEFORE any entity record. Do not create records from a retailer vendor field.
+  3. The WRM V9/V10 naming crux — settles whether P4-9's gap is 20 or 19.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or

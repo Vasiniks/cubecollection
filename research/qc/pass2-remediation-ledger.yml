@@ -1571,6 +1571,30 @@ issues:
       over-reports: several are naming variations of models the archive holds ("MoYu Super
       WeiLong 3x3" against moyu-weilong-super). Every line it prints needs human confirmation,
       and its silence confirms nothing. Only the twelve verified by hand are claimed above.
+      ADJUDICATED IN FULL 2026-09-09 — research/qc/p4-9-adjudication.yml, all 261 candidates
+      classified, none left unadjudicated. The distribution answers the question this issue
+      was raised to ask, and the answer is "both, at two different layers".
+      MODEL LAYER: 20 confirmed_missing, of which TWELVE are later generations of lines the
+      archive already holds and EIGHT of those twelve are MoYu. The method does systematically
+      miss newer generations; it is one manufacturer's entire recent output, not oversight.
+      MANUFACTURER LAYER: 71 lines from SEVEN vendors absent from the 54 — escalated separately
+      as P4-10, because it is a larger gap in kind and has a different fix.
+      THE TWO FIXES DIFFER, which is why separating them mattered. Missed generations are a
+      RECENCY failure — the line was found and enumeration stopped before its later products —
+      and `npm run catalogue-gap` now covers it. Missing manufacturers are a BREADTH failure:
+      no amount of re-checking known lines would ever surface them. That is Pass 1 work.
+      HALF THE CANDIDATES WERE CORRECTLY NOT GAPS: 126 of 261 (48%) are out-of-scope novelties,
+      retailer service listings, bundles, licensed prints belonging at variant level, or
+      products the archive already holds under another name. Fourteen were the latter, including
+      moretry-tianma-x3-v4 where a "+" in the retailer title was the whole difference. That is
+      the tool behaving as documented, and why adjudication was required rather than counting.
+      44 REMAIN UNRESOLVED, and the largest group of them is a POLICY question, not a research
+      one — the mini/keychain and oversized scope inconsistency, escalated as P4-11.
+      ONE ADJUDICATION IS THE CRUX AND IS DELIBERATELY UNRESOLVED: the archive records
+      moyu-weilong-wr-m-2020 and -2021 while retailers number the same line WRM V9 and V10. If
+      WRM V9 is wr-m-2021 under another scheme, that candidate is alternate_naming and the gap
+      is smaller; if not, both V9 and V10 are missing. Settling it needs a statement tying a WRM
+      version number to a year, which this pass did not find.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.
