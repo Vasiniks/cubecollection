@@ -1,0 +1,41 @@
+# variant: yj-mgc-evo-ii--enhanced-core-positioning-edition
+# Pass 4 (Agent C). The "Enhanced Core Positioning Edition" sold configuration named in
+# yj-mgc-evo-ii.yml's own model-level description, adding corner/core magnets over the base
+# configuration's screwdriver-adjustable magnets, per TheCubicle's own product description.
+id: yj-mgc-evo-ii--enhanced-core-positioning-edition
+entity: variant
+model_id: yj-mgc-evo-ii
+name: "YJ MGC Evo II 3x3 (Enhanced Core Positioning Edition)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "Enhanced Core Positioning Edition"
+config:
+  magnet_configuration: core_corner
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
+    note: "Not marketed as limited/commemorative/collaboration; 'Edition' here names a sold
+      hardware configuration, not a bounded-run collector release -- recorded as an ongoing
+      sold ('standard') configuration despite the word 'Edition' in its own name."
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
+    note: "'This version has corner/core magnets to add stability to the puzzle' maps to the
+      'core_corner' vocabulary value, distinct from the base configuration's plain
+      screwdriver-adjustable magnets (no core-magnet claim made for that configuration)."
+  /availability/production_status:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
+    note: "TheCubicle's own page carries 'This product has been discontinued indefinitely or we
+      aren't sure when it will be back in stock' as of the 2024-04-18 capture."
+availability:
+  production_status: discontinued

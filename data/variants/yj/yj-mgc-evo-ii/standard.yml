@@ -1,0 +1,21 @@
+# variant: yj-mgc-evo-ii--standard
+# Pass 4 (Agent C). The base sold configuration of YJ MGC Evo II 3x3, the exact configuration
+# thecubicle-yj-mgc-evo-ii-3x3-product describes and the model record's own specs are drawn
+# from. No config overrides: this variant IS the model's own default description.
+id: yj-mgc-evo-ii--standard
+entity: variant
+model_id: yj-mgc-evo-ii
+name: "YJ MGC Evo II 3x3"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-product, thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
+    note: "The plain, unsuffixed product listing relative to the separately-named 'Enhanced
+      Core Positioning Edition' configuration."

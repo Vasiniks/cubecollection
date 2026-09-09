@@ -78,3 +78,18 @@ Candidates rejected: none additional. No fifth configuration found in the CDX sw
 Note: `npm run check` returned 8 warnings after first draft (rule 23, redundant core_system
 overrides on 3 variants) — corrected by removing the restated field per the anti-denormalisation
 rule; back to baseline 5 warnings / 0 errors before commit.
+
+## yj-mgc-evo-ii — DONE
+Axes identified: magnet architecture (screwdriver-adjustable-only vs. added corner/core
+magnets), matching the model record's own flagged pass-4 note about the "Enhanced Core
+Positioning Edition."
+CDX prefix sweep (`npm run wayback -- prefix .../yj-mgc-evo-ii`) found exactly 2 URLs — no
+further configurations.
+Variants created:
+- yj-mgc-evo-ii--standard (base, no overrides)
+- yj-mgc-evo-ii--enhanced-core-positioning-edition (config.magnet_configuration: core_corner;
+  availability.production_status: discontinued per the retailer's own page note)
+Sources added: thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product
+Lead noted (not acted on): this source's own "Similar Products" panel lists "YJ MGC Sigma 3x3"
+($29.99) as a separate product — see model-boundary escalation below.
+Candidates rejected: none additional.
