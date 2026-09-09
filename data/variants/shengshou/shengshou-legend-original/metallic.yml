@@ -1,0 +1,31 @@
+# variant: shengshou-legend-original--metallic
+# Pass 4. AXIS: coating/finish. A distinct catalogue SKU, "shengshou-legend-3x3-metallic"
+# (thecubicle-shengshou-products-prefix-2026, earliest capture 2024-02-20). The model record
+# itself names this and the m-metallic SKU as "a coating/finish plus a magnet-configuration
+# option" to be enumerated at pass 4 — this is that enumeration. No descriptive paragraph for
+# this specific SKU was independently fetched this session; identity/existence only.
+id: shengshou-legend-original--metallic
+entity: variant
+model_id: shengshou-legend-original
+name: "ShengShou Legend 3x3 Metallic"
+aliases:
+  - name: "ShengShou Legend 3x3 Metallic"
+    retailer: "TheCubicle"
+    source: thecubicle-shengshou-products-prefix-2026
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Metallic"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "TheCubicle's own catalogue path 'shengshou-legend-3x3-metallic' names this exact SKU.
+      No product-description paragraph was independently fetched this session; the specific
+      coating (e.g. a metallic-look plastic vs. an applied metallic coating) is left unresolved
+      for Pass 5, per DATA_MODEL's caution against inferring a coating from naming/photography
+      alone."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-shengshou-products-prefix-2026]

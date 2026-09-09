@@ -1,0 +1,28 @@
+# variant: shengshou-crazy-original--standard
+# Pass 4. The sole sold configuration of the first ShengShou Crazy 3x3 generation. TheCubicle's
+# own product page lists a single "Stickerless" variant option (product id 6670615871571,
+# thecubicle-shengshou-crazy-3x3-generations-2026) — no colourway/edition axis found.
+# Deliberately enumerated despite being a single-configuration model: this model's inherited
+# size_mm (60.5mm, model-level, well-evidenced) falls outside rule 18's 50-60mm plausibility
+# window, and the archive's coordinator has directed that a variant be enumerated here so that
+# check surfaces the (correct, expected) warning rather than staying invisible with zero
+# variants. See report Escalations for the rule 18 exposure note.
+id: shengshou-crazy-original--standard
+entity: variant
+model_id: shengshou-crazy-original
+name: "ShengShou Crazy 3x3"
+scope_class: reference_only
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: "TheCubicle's own product page lists a single 'Stickerless' variant option for this
+      generation; no further named edition or colourway was found."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]

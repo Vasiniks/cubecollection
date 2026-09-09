@@ -1,0 +1,30 @@
+# variant: shengshou-legend-original--standard
+# Pass 4. The base ShengShou Legend 3x3 configuration: TheCubicle's own catalogue carries this
+# product at the bare "shengshou-legend-3x3" path alongside three sibling SKUs this pass
+# enumerates separately (unstickered, metallic, m-metallic) — see
+# thecubicle-shengshou-products-prefix-2026. Recorded as "standard"/stickered because the
+# sibling SKU is explicitly named "unstickered" by contrast; no direct source states the base
+# SKU's application in its own words.
+id: shengshou-legend-original--standard
+entity: variant
+model_id: shengshou-legend-original
+name: "ShengShou Legend 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-shengshou-legend-3x3-product, thecubicle-shengshou-products-prefix-2026]
+    note: "The base, unsuffixed catalogue SKU; three sibling SKUs (unstickered, metallic,
+      m-metallic) are enumerated as separate variants of this same model."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "Inferred only by contrast with the sibling 'shengshou-legend-3x3-unstickered' SKU
+      (2021-09-21 capture); no source directly states this base SKU is stickered in its own
+      words. TheCubicle's own descriptive paragraph for the base SKU (thecubicle-shengshou-
+      legend-3x3-product) does not mention stickers or plastic colour at all."

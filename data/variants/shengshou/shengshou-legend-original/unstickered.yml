@@ -1,0 +1,33 @@
+# variant: shengshou-legend-original--unstickered
+# Pass 4. AXIS: sticker application. A distinct catalogue SKU, "shengshou-legend-3x3-
+# unstickered" (thecubicle-shengshou-products-prefix-2026, earliest capture 2021-09-21), sold
+# alongside the base "shengshou-legend-3x3" listing at the same retailer — a genuine
+# stickered/unstickered application axis, not a stock colour choice, per DATA_MODEL's
+# colourway-or-sticker-type materiality rule.
+id: shengshou-legend-original--unstickered
+entity: variant
+model_id: shengshou-legend-original
+name: "ShengShou Legend 3x3 (Unstickered)"
+aliases:
+  - name: "ShengShou Legend 3x3 Unstickered"
+    retailer: "TheCubicle"
+    source: thecubicle-shengshou-products-prefix-2026
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "TheCubicle's own catalogue path 'shengshou-legend-3x3-unstickered' names this exact
+      SKU; no descriptive paragraph for this specific page was independently fetched this
+      session, only the URL/catalogue enumeration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "The retailer's own term is 'unstickered'; mapped to the closest available vocabulary
+      value 'stickerless' (colour in the plastic, no applied stickers). Not independently
+      confirmed by a fetched product description this session."
