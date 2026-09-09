@@ -319,6 +319,41 @@ than assumed — and every one of them is already decided, so nothing is blocked
 
 ## State at last checkpoint
 
-54 manufacturers · 132 families · 269 models · 485 variants · **528 sources** (534 − 6 merged
-duplicates). `npm run check`: **0 errors, 40 advisory**. Selftest: every check behaved as
-specified.
+54 manufacturers · 132 families · 269 models · 485 variants · **530 sources**
+(534 − 6 merged duplicates + 2 enumeration records). **The frozen taxonomy is untouched**: no
+family, model or variant was created, renamed, merged, split or re-parented in this phase.
+
+`npm run check`: **0 errors, 40 advisory.** Selftest: every check behaved as specified.
+
+### What this phase added to the tooling
+
+| | |
+|---|---|
+| **rule 47** | an `archive_url` that names a request, not a capture |
+| **rule 48** | a spec value absent from every source its attestation cites |
+| `npm run audit` **× 4 new sweeps** | artefact-derived dates · source-class dependence · escalation roll-up · §3.6a discovery breadth |
+| `npm run catalogue-gap` | the only check that asks what the archive **omits** |
+
+### Open issues, and why each is open
+
+| id | Sev | Why it is still open |
+|---|---|---|
+| **P4-9** | crit | Overturns a frozen inventory. Evidence preserved, decision is the user's. |
+| **P26-2 / P26-8** | crit/high | Now *measured* rather than asserted — the linkage is absent, not weak. The mechanism itself is a process change, not a code change. |
+| **P26-3** | high | Now a coverage table. Remedy is to apply the standard retroactively, which is an enumeration pass. |
+| **P4-8** | med | 9 manufacturers on one US retailer. Fixing it means research, and the ledger warns against bulk-adding mirrored sources to move the number. |
+| **P4-7** | low | A structural question the evidence does not settle. The cheap test that would settle it is named. |
+| **P4-5** | low | 11 GAN baselines assert nothing. Backfilling without assessing would fabricate the exact claim rule 41 protects. |
+| **P26-14** | low | A detector was built and **discarded**: ~90% false positives. Better open than closed by a check that cries wolf. |
+
+### The through-line
+
+Every finding in this phase came from asking what a passing check cannot see. Rule 42 could not
+see a page captured twice. Rule 18 could not see a boxed weight inside its plausible range. The
+audit could not see a source whose locator pointed at the wrong page. Nothing at all could see a
+product that is on sale and simply absent — because every other check in the repository validates
+what the archive **contains**.
+
+Three times the honest answer was *not* to add a rule: the artefact-date distinction cannot be
+read from prose, the `url`/`archive_url` sweep was 90% false positives, and the P26-14 detector
+was discarded outright. A check that cries wolf is worse than the gap it covers.
