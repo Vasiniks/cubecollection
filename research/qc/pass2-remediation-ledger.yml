@@ -1507,6 +1507,26 @@ issues:
       and Giant 3x3, MoYu and YJ 3x3 Minis, and several Calvin's Puzzle printed/novelty lines.
       A "QiYi X" candidate with 8 SKUs was a title-parsing artefact ("QiYi X-Man" cut at the
       first token) and is recorded as a false positive so it is not rediscovered.
+      MADE REPEATABLE. The sweep is now `npm run catalogue-gap` (scripts/catalogue-gap.mjs),
+      offline by default like check-links, `--fetch` to query. Building it caught a flaw in the
+      manual sweep that had made the finding LOOK smaller: matching catalogue lines against
+      FAMILY names as well as model names silently swallowed every missing generation, because
+      "MoYu WeiLong V11" contains the family name "MoYu WeiLong". A check that hides the thing it
+      was written to find is worse than none. Matching model names only, with a generation-token
+      rule so a versioned line can never match an unversioned name, the script surfaces the
+      flagships AND two lines the manual sweep missed entirely: MoYu Super AoLong (6 SKUs,
+      2025-11-01, two retailers) and MoYu Super AoLong AI (4 SKUs). It also drops the "QiYi X"
+      artefact, which came from splitting titles on any hyphen and cutting "QiYi X-Man".
+      ONE RESULT BEARS ON A DOCUMENTED PASS 3 CONCLUSION. "Cyclone Boys Metallic 3x3" is listed
+      at TWO retailers with its own SKUs from 2021-09-29, while cyclone-boys-metallic-3x3 is one
+      of the archive's three deliberate ZERO-MODEL families, concluded as "\'Metallic\' is a
+      finish treatment - a Pass 4 variant axis, not a model line". That conclusion may still be
+      right, since a retailer selling a named finish does not make it a model. But it was reached
+      without this evidence and should be re-examined with it, not left standing by default.
+      The script reports 56 lines at two or more SKUs. It is tuned to under-report and still
+      over-reports: several are naming variations of models the archive holds ("MoYu Super
+      WeiLong 3x3" against moyu-weilong-super). Every line it prints needs human confirmation,
+      and its silence confirms nothing. Only the twelve verified by hand are claimed above.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

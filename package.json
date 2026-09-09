@@ -14,6 +14,7 @@
     "audit": "node scripts/audit.mjs",
     "duplicates": "node scripts/check-duplicates.mjs",
     "links": "node scripts/check-links.mjs",
+    "catalogue-gap": "node scripts/catalogue-gap.mjs",
     "coverage": "node scripts/report-coverage.mjs",
     "build": "node scripts/build.mjs",
     "privacy": "node scripts/check-privacy.mjs",

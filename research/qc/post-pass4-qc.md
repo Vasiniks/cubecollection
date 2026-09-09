@@ -184,6 +184,37 @@ Lower-confidence candidates are recorded but deliberately **not counted**, becau
 genuinely unsettled rather than because they are weak: DianSheng Big and Giant 3x3, MoYu and YJ
 3x3 Minis, Calvin's Puzzle printed and novelty lines.
 
+### Made repeatable — `npm run catalogue-gap`
+
+This gap was found **by accident**, chasing an unrelated source-diversity issue. A defect class
+discovered by luck should not depend on luck to be found again, so the sweep is now a command:
+offline by default like `check-links`, `--fetch` to query, and deliberately **not** part of
+`npm run check` — a build must not depend on three storefronts being up.
+
+Every other check in this repository validates what the archive **contains**. This is the only
+one that asks what it **omits**.
+
+Writing it caught a flaw that had made the finding look *smaller*. Matching catalogue lines
+against family names as well as model names **silently swallowed every missing generation** —
+"MoYu WeiLong V11" contains the family name "MoYu WeiLong". A check that hides the thing it was
+written to find is worse than no check, because it reports a clean result. Matching model names
+only, with a generation-token rule so a versioned line can never match an unversioned one, the
+script surfaces the flagships **and two lines the manual sweep missed entirely**: MoYu Super
+AoLong (6 SKUs, two retailers) and MoYu Super AoLong AI. It also drops the "QiYi X" artefact,
+which came from splitting titles on any hyphen and cutting "QiYi X-Man" in half.
+
+**One result bears on a documented Pass 3 conclusion.** "Cyclone Boys Metallic 3x3" is listed at
+two retailers with its own SKUs from 2021-09-29, while `cyclone-boys-metallic-3x3` is one of the
+archive's three deliberate **zero-model families**, concluded as *"'Metallic' is a finish
+treatment — a Pass 4 variant axis, not a model line"*. That may still be right; a retailer
+selling a named finish does not make it a model. But the conclusion was reached without this
+evidence and should be re-examined with it, rather than left standing by default.
+
+The script reports 56 lines at two or more SKUs. It is tuned to under-report and **still
+over-reports** — several are naming variations of models the archive holds. Everything it prints
+needs human confirmation, and its silence confirms nothing. Only the twelve verified by hand are
+claimed in P4-9.
+
 Pass 4's "269 of 269 models assessed" remains true exactly as stated. The inventory it assessed is
 what is incomplete — and the README now says so in its opening paragraphs rather than leaving it
 to a ledger entry.
