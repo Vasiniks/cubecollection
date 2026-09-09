@@ -1,0 +1,53 @@
+# variant: moretry-tianma-x3-plus--super-maglev-frosted
+# Pass 4 batch 2, Agent E. One of three named magnet-tier configurations of the frosted X3+
+# line documented directly on Cubelelo's own product page (cubelelo-moretry-tianma-x3-plus-
+# frosted): "Super MagLev (magnetic levitation instead of springs)." A customer review on
+# TheCubicle's own X3+ V3 page independently corroborates a MagLev configuration carried
+# forward into the "+" line from the numbered V4 generation (thecubicle-moretry-tianma-x3-
+# plus-v3-2025), consistent with this variant's existence, though that review does not itself
+# use the name "Super MagLev" or mention a "Frosted" finish.
+id: moretry-tianma-x3-plus--super-maglev-frosted
+entity: variant
+model_id: moretry-tianma-x3-plus
+name: "MoreTry TianMa X3+ (Frosted) — Super MagLev"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Super MagLev"
+config:
+  maglev: maglev
+  coating: frosted
+  materials:
+    plastic: "ABS Plastic"
+  weight_g: 83
+colorway:
+  designation: "Frosted"
+  body:
+    finish: frosted
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+  /config/maglev:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+    note: "Cubelelo: 'Super MagLev (magnetic levitation instead of springs)' — matches the
+      vocab's `maglev` definition directly. Loosely corroborated (not independently confirmed
+      by name) by a customer review on TheCubicle's X3+ V3 page describing carrying V4's MagLev
+      system into a '+' shell (thecubicle-moretry-tianma-x3-plus-v3-2025)."
+  /config/coating:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+    note: "Single tier 2 source; recorded `probable`, not `confirmed`, per rule 9."
+  /config/materials:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+  /config/weight_g:
+    confidence: uncertain
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+    note: "One listing-wide 'Product Weight: 83 grams' figure, not broken out per magnet tier;
+      applied identically across all three tier variants."
+  /colorway/body/finish:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]

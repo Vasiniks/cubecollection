@@ -1,0 +1,49 @@
+# variant: moretry-tianma-x3-plus--triple-magnetic-frosted
+# Pass 4 batch 2, Agent E. One of three named magnet-tier configurations of the frosted X3+
+# line documented directly on Cubelelo's own product page (cubelelo-moretry-tianma-x3-plus-
+# frosted): "Triple Magnetic (added internal magnet layers)."
+id: moretry-tianma-x3-plus--triple-magnetic-frosted
+entity: variant
+model_id: moretry-tianma-x3-plus
+name: "MoreTry TianMa X3+ (Frosted) — Triple Magnetic"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Triple Magnetic"
+config:
+  magnet_configuration: other
+  magnet_strength: "Triple Magnetic — added internal magnet layers over the Dual Magnetic tier"
+  coating: frosted
+  materials:
+    plastic: "ABS Plastic"
+  weight_g: 83
+colorway:
+  designation: "Frosted"
+  body:
+    finish: frosted
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+    note: "'Added internal magnet layers' over the Dual tier — no vocabulary value describes a
+      three-or-more-layer arrangement precisely; recorded as `other` with the source's own
+      wording preserved verbatim in `magnet_strength`."
+  /config/coating:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+    note: "Single tier 2 source; recorded `probable`, not `confirmed`, per rule 9."
+  /config/materials:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+  /config/weight_g:
+    confidence: uncertain
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]
+    note: "One listing-wide 'Product Weight: 83 grams' figure, not broken out per magnet tier;
+      applied identically across all three tier variants."
+  /colorway/body/finish:
+    confidence: probable
+    sources: [cubelelo-moretry-tianma-x3-plus-frosted]

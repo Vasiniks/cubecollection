@@ -1,0 +1,36 @@
+# variant: moretry-tianma-x3-v1--standard
+# Pass 4 batch 2, Agent E. Assessment performed: checked TheCubicle's own product page for this
+# generation and Cubezz.com's own search listing for a second colourway or tier of V1
+# specifically — none confirmed. Cubezz.com independently sells the base (non-"+") "TianMa X3"
+# line under three magnet-strength-tier names ("Double Magnetic," "Triple Magnetic," "Super
+# Magnetic," cubezz-moretry-tianma-x3-magnetic-variants) that COULD correspond to the V1/V3/V4
+# numbered progression already documented (V1's plain corner/edge magnetization = "Double";
+# V3's added corner-base magnets = "Triple"; V4's MagLev = "Super"), but no source states this
+# correspondence directly, and Cubezz's own listing is a bare search-result snippet with no
+# dimensions or weight to cross-check against V1/V3/V4's own figures. NOT used to create a
+# separate variant or an alias here — recorded as a lead in the pass report, not resolved by
+# guesswork.
+id: moretry-tianma-x3-v1--standard
+entity: variant
+model_id: moretry-tianma-x3-v1
+name: "MoreTry TianMa X3 V1 (Standard)"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: dual_layer
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v1-2023]
+    note: "Differentiation search performed: TheCubicle's own product page for this exact V1
+      generation carries the parenthetical '(Standard)' in its own title and describes one
+      configuration. No second V1-specific colourway or tier was found at TheCubicle,
+      Cubelelo, or Cubezz. Recorded as this generation's one assessed configuration."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-moretry-tianma-x3-v1-2023]
+    note: "TheCubicle: 'features traditional corner/edge magnetization' — two magnet
+      positions (corner, edge), read as `dual_layer`. Not a manufacturer-stated arrangement
+      name; a reasonable but not literal fit to the vocabulary term."
