@@ -1,0 +1,30 @@
+# variant: moyu-weilong-gts2--m-le
+# Pass 4. "MoYu WeiLong GTS2 M 3x3 (LE)" — a limited edition of the GTS2 M, named as its own
+# distinct product listing (separate page/title from the base "MoYu WeiLong GTS2 M 3x3") in
+# TheCubicle's 2021 catalogue capture. Dedup test applied: distinct product title carrying its
+# own "(LE)" qualifier, listed alongside (not instead of) the base M listing — not a duplicate
+# SKU or renamed retailer listing of the same product.
+id: moyu-weilong-gts2--m-le
+entity: variant
+model_id: moyu-weilong-gts2
+name: "MoYu WeiLong GTS2 M (LE)"
+scope_class: core
+edition:
+  types: [limited]
+  designation: "LE"
+  limited:
+    is_limited: true
+    run_size: null
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "Named as its own distinct product listing, 'MoYu WeiLong GTS2 M 3x3 (LE)', separate from the base 'MoYu WeiLong GTS2 M 3x3' listing, in the same catalogue capture. No further detail (colourway, run size, or what specifically distinguishes it) was found this pass."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "Retailer's own bracketed qualifier, '(LE)', taken verbatim as the designation."
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Researched and not found; never estimated."
