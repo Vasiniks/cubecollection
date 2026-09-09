@@ -1493,6 +1493,20 @@ issues:
       in the frozen inventory. The gap is specific, not a wholesale coverage failure. Two entries
       on the first candidate list (Little Magic V3, HuangLong V2) were name-matcher false
       positives and were removed after checking the files directly.
+      CORROBORATED ACROSS TWO FURTHER RETAILERS on the same day (source
+      cross-retailer-3x3-enumeration-2026-09): SpeedCubeShop (265 products) and Cubelelo, India
+      (69). Three further lines with no model in the frozen 269, and they widen the gap beyond
+      MoYu and X-Man. QiYi AI 3x3 Bluetooth Smart Cube, 2 SKUs from 2024-04-07 - the archive
+      holds 24 QiYi models and NOT ONE is a smart cube, while it does carry the smart lines of
+      GAN, Giiker, Particula, Rubik's and MoreTry. GAN 330 3x3 Mini, keychain format, listed
+      2020-05-05 - over SIX YEARS before Pass 3, against 132 GAN-attributed records. ShengShou
+      Lustrous Light-Up 3x3 (Magnetic), 2024-06-13.
+      So the gap spans at least four manufacturers, is corroborated by three independent
+      retailers including a non-US one, and in the GAN case predates the enumeration by six
+      years. Recorded but NOT counted, because their scope is genuinely unsettled: DianSheng Big
+      and Giant 3x3, MoYu and YJ 3x3 Minis, and several Calvin's Puzzle printed/novelty lines.
+      A "QiYi X" candidate with 8 SKUs was a title-parsing artefact ("QiYi X-Man" cut at the
+      first token) and is recorded as a false positive so it is not rediscovered.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

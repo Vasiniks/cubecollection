@@ -1,0 +1,69 @@
+# source: cross-retailer-3x3-enumeration-2026-09
+# Created 2026-09-09 by the post-Pass-4 QC phase. Companion to
+# thecubicle-3x3-collection-enumeration-2026-09: the same live-catalogue enumeration run against
+# TWO FURTHER retailers, so escalation P4-9 does not rest on one storefront. No model or family
+# was created from this record.
+id: cross-retailer-3x3-enumeration-2026-09
+entity: source
+kind: retailer
+title: "SpeedCubeShop and Cubelelo 3x3 collections — current product enumeration (334 products)"
+publisher: "SpeedCubeShop; Cubelelo"
+url: "https://speedcubeshop.com/collections/3x3-speed-cubes/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Live-catalogue enumeration fetched 2026-09-09 from each storefront's own products.json
+  endpoint: speedcubeshop.com/collections/3x3-speed-cubes (265 products across two pages) and
+  www.cubelelo.com/collections/3x3-speed-cubes (69 products). Vendor and published_at fields are
+  the retailers' own, quoted verbatim.
+
+  FURTHER MANUFACTURER-BRANDED LINES WITH NO MODEL IN THE FROZEN 269, beyond the nine already
+  recorded on the TheCubicle companion record:
+
+    QiYi AI 3x3 — vendor "QiYi", 2 SKUs:
+      qiyi-ai-3x3-magnetic-bluetooth-smart-cube            [published 2024-04-07]
+      qiyi-ai-3x3-magnetic-uv-coated-bluetooth-smart-cube  [published 2024-10-28]
+      Titles: "QiYi AI 3x3 (Magnetic) - Bluetooth Smart Cube" and "... (Magnetic, UV Coated)".
+      The archive holds 24 QiYi models and NOT ONE of them is a smart or connected cube, while
+      it does carry the smart lines of GAN, Giiker, Particula, Rubik's and MoreTry.
+
+    GAN 330 3x3 Mini — vendor "GAN", 2 SKUs:
+      gan-330-3x3-mini-3-3cm-keychain                      [published 2020-05-05]
+      gan-330-3x3-mini-3-3cm-keychain-10th-anniversary-ed  [published 2025-04-25]
+      Titles: "GAN 330 3x3 Mini - 3.3cm, Keychain" and a 10th Anniversary Edition. Listed for
+      OVER SIX YEARS before Pass 3 ran. The archive holds 132 GAN-attributed records. Scope note:
+      33mm is small, but the archive already admits mfjs-mini-3x3-keychain-40mm and
+      cyclone-boys-mini-3x3-original at 40mm, so precedent does not exclude it — that is a scope
+      judgement for the enumeration pass, not a reason to leave it unrecorded.
+
+    ShengShou Lustrous Light-Up 3x3 (Magnetic) — vendor "ShengShou", 2 SKUs:
+      shengshou-lustrous-light-up-3x3-magnetic             [published 2024-06-13]
+      ... plus a "Jelly Edition"                           [published 2026-06-04]
+
+  LOWER-CONFIDENCE CANDIDATES, recorded but NOT counted, because scope is genuinely unsettled and
+  this record is not the place to settle it: DianSheng Big 3x3 and Giant 3x3 (oversized formats),
+  MoYu 3x3 Mini, YJ 3x3 Mini, and several Calvin's Puzzle novelty lines (CFOP Trainer, Sudoku
+  Cube, World Map) which are printed or shape-modified rather than standard 3x3s.
+
+  ONE FALSE POSITIVE, recorded so it is not rediscovered: Cubelelo's listing set produced a
+  candidate line "QiYi X" with 8 SKUs. That is a title-parsing artefact — "QiYi X-Man ..." cut at
+  the first token boundary — not a product. It is why manufacturer attribution in these records
+  is taken from the `vendor` field rather than from titles.
+preservation_note: "Reproducible by re-fetching each endpoint with limit=250 (SpeedCubeShop needs
+  page=1 and page=2; Cubelelo fits in one page). The excerpt reproduces vendor, handle and
+  published_at directly, per RESEARCH_SPEC 3.5's allowance for evidence that does not reduce to
+  one page's text. Counts are as returned on 2026-09-09."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, two independent first-party retailer catalogues, one of them non-US (Cubelelo, India) —
+  which is what makes this a corroboration of the TheCubicle enumeration rather than a repetition
+  of it. `region: US` records the primary locator (SpeedCubeShop) because the field takes one ISO
+  code; the Cubelelo half of this record is IN, and that half is the reason the record exists —
+  RESEARCH_SPEC 3.6a's non-US retailer requirement is met by it, not by the US half.
+  ESTABLISHES: that a named product line was on sale at these retailers, and from when it was
+  listed. DOES NOT ESTABLISH: release dates, specifications, model-vs-variant boundaries, or
+  whether any line here warrants its own model record.
+status: sourced
