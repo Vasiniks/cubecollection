@@ -7,7 +7,7 @@
 // Nothing here blocks. It exists so these checks stop depending on someone remembering to
 // write a throwaway script, which is how the tier/confidence defect survived until 2026-09-09.
 
-import { readdirSync, readFileSync } from 'node:fs';
+import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { loadVocabularies, loadSchemas, loadRecords, indexRecords, sourceTier } from './lib/archive.mjs';
 
@@ -234,6 +234,70 @@ line(`  manufacturers resting on ONE third-party publisher with NO first-party s
 for (const [m, [pub, n], langs] of solo) line(`     ${m.padEnd(18)}${String(n).padStart(3)} cites   ${pub}   [${langs}]`);
 line('  (a manufacturer resting wholly on its own or its parent\'s official site is NOT listed —');
 line('   that is first-party evidence, the strongest there is, not narrow sourcing.)');
+
+// ---- 8. escalation roll-up ---------------------------------------------------------------
+//
+// Ledger P26-2 (critical) and P26-8 (high): "escalation roll-up has no mechanism; real findings
+// went silent twice." Pass 3 Batch 1 lanes C and D were killed by rate limits, their reports
+// were never written, and 24 families and 56 models were enumerated with no roll-up. The
+// ShengShou YuFeng finding survived ONLY because its agent also wrote it into a source record's
+// notes. A surviving report (Cyclone Boys/Maru) recorded ten missing family lines and still
+// never reached the ledger.
+//
+// P26-2's own recommendation asks for the gap to be made CHECKABLE. This measures it. It cannot
+// tell which findings were lost — nothing can, that is what "went silent" means — but it can
+// count reports that talk about escalations without declaring any in a form anything can read.
+//
+// It also found, on 2026-09-09, that the linkage is not weak but absent: of the escalation
+// entries that ARE declared in machine-readable blocks, ZERO reference a ledger id. The blocks
+// exist and are free prose, so a ledger entry and a report escalation cannot be matched even
+// when both were written.
+head('Escalation roll-up (P26-2 / P26-8)');
+const REPORT_DIRS = ['research/qc', 'research/notes'];
+const walkMd = (dir, acc = []) => {
+  if (!existsSync(dir)) return acc;
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    const p = join(dir, e.name);
+    if (e.isDirectory()) walkMd(p, acc);
+    else if (e.name.endsWith('.md')) acc.push(p);
+  }
+  return acc;
+};
+const reports = REPORT_DIRS.flatMap((d) => walkMd(d));
+let ledgerIds = new Set();
+const LEDGER = 'research/qc/pass2-remediation-ledger.yml';
+if (existsSync(LEDGER)) {
+  for (const m of readFileSync(LEDGER, 'utf8').matchAll(/^\s*-\s*id:\s*(\S+)/gm)) ledgerIds.add(m[1]);
+}
+const ID_IN_PROSE = /\b(P26-\d+|P4-\d+|P3-[A-Z]\d+|E\d+|D-[A-Z]\d+|C-[A-Z]\d+)\b/;
+const LANGUAGE = /\bescalat|\bflagged for\b|\bfor human (review|decision)\b/i;
+let withBlock = 0, languageOnly = 0, neither = 0, entriesLinked = 0, entriesLoose = 0;
+const rollupOrphans = [];
+for (const f of reports) {
+  const text = readFileSync(f, 'utf8');
+  const block = /^escalations:\s*\n((?:[ \t]+.*\n)*)/m.exec(text);
+  if (block) {
+    withBlock += 1;
+    for (const raw of block[1].split('\n')) {
+      if (!raw.trim().startsWith('-')) continue;
+      if (ID_IN_PROSE.test(raw)) entriesLinked += 1; else entriesLoose += 1;
+    }
+  } else if (LANGUAGE.test(text)) { languageOnly += 1; rollupOrphans.push(f); }
+  else neither += 1;
+}
+line(`  reports scanned                                 : ${reports.length}`);
+line(`  declaring escalations in a machine-readable block: ${withBlock}`);
+line(`  using escalation LANGUAGE with no such block     : ${languageOnly}   <- the roll-up gap`);
+line(`  mentioning neither                               : ${neither}`);
+line(`  block entries that cite a ledger id              : ${entriesLinked}`);
+line(`  block entries that are free prose only           : ${entriesLoose}`);
+line(`  ledger issues on file                            : ${ledgerIds.size}`);
+if (!entriesLinked && entriesLoose) {
+  line('  NOTE: no declared escalation cites a ledger id, so a report escalation and a ledger');
+  line('  entry cannot be matched even when both exist. That is the mechanism P26-2 asks for.');
+}
+rollupOrphans.slice(0, 6).forEach((f) => line(`     ${f}`));
+if (rollupOrphans.length > 6) line(`     ... and ${rollupOrphans.length - 6} more`);
 
 line();
 line('audit complete — advisory only, nothing here blocks a build.');

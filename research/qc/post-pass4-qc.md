@@ -219,6 +219,30 @@ Pass 4's "269 of 269 models assessed" remains true exactly as stated. The invent
 what is incomplete — and the README now says so in its opening paragraphs rather than leaving it
 to a ledger entry.
 
+## 9. P26-2 measured — the roll-up linkage is absent, not weak
+
+P26-2 (critical) has said since 2026-09-07 that "escalation roll-up has no mechanism", on the
+evidence of two Pass 3 lane deaths whose findings went silent. Its own recommendation asks for
+the gap to be made **checkable**. It now is, and the measurement is worse than the issue assumed.
+
+Across **74 reports**: nine declare escalations in a machine-readable block, **thirty-seven use
+escalation language with no such block**, and 28 mention neither. Of the 25 escalation entries
+that *are* declared in blocks, **zero cite a ledger id** — all 25 are free prose.
+
+So the linkage is not weak, it is **absent**: a report escalation and a ledger entry cannot be
+matched by any means, even when both were written correctly. That is why the two lane deaths
+went silent, why the issue recurred during the remediation, and why it recurred *again* today —
+E1 recorded two pages as "held for human decision" in the ledger and in neither source file,
+found only because P4-6 read the records instead of the ledger.
+
+**One direction is clean, and saying so is part of the finding.** Every ledger-issue id
+referenced anywhere in prose resolves to a real entry — zero dangling, archive-wide. Records and
+the ledger are consistent *with each other*. The failure is entirely in the other direction:
+findings that never acquire an id at all. That confirms P26-8's narrowing — the fix must protect
+**reports**, because records already survive.
+
+`npm run audit` now prints these numbers every run.
+
 ## Rules added, each from a real defect
 
 | Rule | Catches | On real data |

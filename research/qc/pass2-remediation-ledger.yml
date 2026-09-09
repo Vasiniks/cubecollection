@@ -768,6 +768,22 @@ issues:
       SURVIVED and explicitly records six Cyclone Boys and four Maru lines as having no frozen
       family - and still never reached the ledger. pass3-progress.md listed six open
       escalations when the true number was materially higher.
+      MEASURED 2026-09-09, and the measurement is worse than the issue assumed. Across 74 reports
+      in research/qc and research/notes: only NINE declare escalations in a machine-readable
+      block, THIRTY-SEVEN use escalation language with no such block, and 28 mention neither.
+      Of the 25 escalation entries that ARE declared in blocks, ZERO cite a ledger id - all 25
+      are free prose. So the linkage is not weak, it is absent: a report escalation and a ledger
+      entry cannot be matched by any means even when both were written correctly.
+      That is precisely why the two Pass 3 lane deaths went silent, and why this issue recurred
+      during the remediation, and why it recurred AGAIN on 2026-09-09 - E1 recorded mf8-products
+      and mofang-jiaoshi as "held for human decision" in this ledger and in neither source file.
+      Found while closing P4-6, by reading the records rather than the ledger.
+      A partial guard already holds and is worth stating so a regression is visible: every
+      ledger-issue id referenced anywhere in prose DOES resolve to a real ledger entry (checked
+      archive-wide, zero dangling). The failure is entirely in the other direction - findings
+      that never acquire an id at all.
+      Now measured on every `npm run audit` run, so the numbers move visibly instead of being
+      rediscovered by the next person who reads a lane report.
     counterevidence: >-
       None. Both failures verified directly against the repository this pass.
     recommendation: >-
@@ -925,6 +941,12 @@ issues:
       adjudicator instead. This is the third and fourth occurrence of the P26-2 failure mode in
       two sessions, and the first observed on a lane whose only output was ever going to be a
       report.
+      QUANTIFIED 2026-09-09 alongside P26-2: 9 of 74 reports declare escalations in a
+      machine-readable block, and none of the 25 declared entries cites a ledger id. P26-8's
+      narrowing - that the fix must protect REPORTS specifically, since records already survive -
+      is confirmed by the same sweep: the ledger-id references that DO exist all resolve, so
+      records and the ledger are consistent with each other. It is the report layer that carries
+      findings nothing else can see.
     counterevidence: >-
       No canonical data was lost in any of the four occurrences - only narrative. The records
       themselves have always survived, because agents commit at logical boundaries.
