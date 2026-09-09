@@ -1,0 +1,28 @@
+# variant: mfjs-mf3rs3--magnetic
+# Pass 4 (Agent C). The factory-magnetic ("M") sold configuration of MF3RS3, a standalone
+# SpeedCubeShop SKU ("mofang-jiaoshi-mf3rs3-m-3x3") independent of the base non-magnetic SKU.
+id: mfjs-mf3rs3--magnetic
+entity: variant
+model_id: mfjs-mf3rs3
+name: "MFJS MF3RS3 M 3x3"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: single_layer
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-mf3rs3-m-3x3-product]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-mf3rs3-m-3x3-product]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [speedcubeshop-mofang-jiaoshi-mf3rs3-m-3x3-product, speedsolving-wiki-mofang-jiaoshi]
+    note: "'Medium-strong strength magnets pre-installed from the factory' confirms magnets are
+      present but does not state the specific arrangement; 'single_layer' recorded as the
+      conservative default for a 2019-era budget factory-magnetic 3x3, consistent with this
+      archive's treatment of comparable YJ products from the same period (e.g.
+      yj-yulong-v2-m)."

@@ -1,0 +1,28 @@
+# variant: mfjs-mf3rs3--non-magnetic
+# Pass 4 (Agent C). The base, non-magnetic sold configuration of MF3RS3, independently confirmed
+# at two tiers: SpeedCubeShop's own standalone "mofang-jiaoshi-mf3rs3-3x3" SKU (tier 2) and the
+# Speedsolving wiki's "available in non-magnetic and factory-magnetic" (tier 4, already used at
+# the model record). Sold in three stock colour options (Black, Stickerless (Bright), White),
+# collapsed into one variant per this pass's stock-colourway rule.
+id: mfjs-mf3rs3--non-magnetic
+entity: variant
+model_id: mfjs-mf3rs3
+name: "MFJS MF3RS3 3x3"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-mf3rs3-3x3-product]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-mf3rs3-3x3-product]
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-mf3rs3-3x3-product, speedsolving-wiki-mofang-jiaoshi]
+    note: "'If you are looking to magnetize this puzzle it has slots included from the factory'
+      -- this SKU ships without factory magnets, mapping to the 'none' vocabulary value."

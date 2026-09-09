@@ -113,3 +113,42 @@ sources disagreeing).
 Sources added: speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product,
 speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product
 Candidates rejected: none additional (no fourth SKU found).
+
+## mfjs-meilong-3x3 — DONE
+Axis: magnet configuration (Magnetic / Non-Magnetic purchase options on one SpeedCubeShop
+product page, already documented in the model's own source).
+Variants created:
+- mfjs-meilong-3x3--magnetic (magnet_configuration left unset/unknown — option name only, no
+  architecture detail)
+- mfjs-meilong-3x3--non-magnetic (config.magnet_configuration: none)
+Sources added: none (reused speedcubeshop-mofang-jiaoshi-meilong-3x3-product).
+Candidates rejected: none.
+
+## mfjs-mf3rs3 — DONE
+Axis: magnet configuration (non-magnetic base vs. factory-magnetic "M"), already flagged at
+tier 4 (Speedsolving wiki) in the model record. This pass independently upgraded the evidence
+to tier 2 by finding SpeedCubeShop's own TWO STANDALONE SKUs
+("mofang-jiaoshi-mf3rs3-3x3" and "mofang-jiaoshi-mf3rs3-m-3x3") via CDX prefix sweep and
+fetching both directly.
+Variants created:
+- mfjs-mf3rs3--non-magnetic (config.magnet_configuration: none; three stock colours — Black,
+  Stickerless (Bright), White — collapsed into one variant per the stock-colourway rule)
+- mfjs-mf3rs3--magnetic (config.magnet_configuration: single_layer, uncertain — conservative
+  default, no architecture detail stated)
+Data-quality note: both SpeedCubeShop pages carry a "trailing spec line" that cross-references
+the SIBLING SKU's weight/release date rather than the page's own product (a retailer
+comparison-snippet template artifact) — flagged in both new source records and NOT used as an
+attestable weight/date claim for either variant.
+Sources added: speedcubeshop-mofang-jiaoshi-mf3rs3-3x3-product,
+speedcubeshop-mofang-jiaoshi-mf3rs3-m-3x3-product
+Candidates rejected: none additional.
+
+## mfjs-mf3-v1 — DONE
+Axis: coating + colourway application. "MF3S" was already named and rejected as a MODEL
+candidate at mfjs-mf3-v1.yml itself, explicitly as a variant of MF3 — enumerated here as that
+variant.
+Variants created: mfjs-mf3-v1--mf3s (colorway.application: stickerless, config.coating: frosted)
+Sources added: none (reused thecubicle-mofang-jiaoshi-mf3s-product, already on file).
+Candidates rejected: "MF3RS2 3x3 Starter Kit" (SpeedCubeShop) — a bundle/kit, not a cube
+configuration; not created. MF3 base itself gets no separate "standard" stub (single sold
+configuration, MF3S already differentiates as its own record).

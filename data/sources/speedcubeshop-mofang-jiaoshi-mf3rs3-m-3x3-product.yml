@@ -1,0 +1,38 @@
+# source: speedcubeshop-mofang-jiaoshi-mf3rs3-m-3x3-product
+# Pass 4 (Agent C, YJ+MFJS variants). SpeedCubeShop's own product page for the "MoFang JiaoShi
+# MF3RS3 M 3x3" (magnetic) SKU, a standalone product URL distinct from the base
+# "mofang-jiaoshi-mf3rs3-3x3" SKU, fetched directly via `npm run wayback -- get`.
+id: speedcubeshop-mofang-jiaoshi-mf3rs3-m-3x3-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MF3RS3 M 3x3 - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/mofang-jiaoshi-mf3rs3-m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200424id_/https://speedcubeshop.com/products/mofang-jiaoshi-mf3rs3-m-3x3"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MF3RS3 M 3x3 is a new version of the insanely
+  popular MF3 budget cubes. The RS3 takes the budget performance to the next level and features
+  a solid design with smooth turning. The magnetic version includes medium-strong strength
+  magnets pre-installed from the factory." Price $14.95; "Sold out" at the time of this
+  capture. A trailing spec-line on the same page cross-references the sibling non-magnetic SKU
+  ("Non-Magnetic Version | Custom stickers | Size: 56mm | Weight 3.3oz | Released: 1/24/19 |
+  Accessories: cube stand, screwdriver, tensioning tools") rather than describing this page's
+  own product -- the same retailer comparison-snippet artifact documented at the base SKU's own
+  source record.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence, price/availability, and the
+  cross-reference spec line verbatim, flagged as such."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description. 'The magnetic version
+  includes medium-strong strength magnets pre-installed from the factory' is direct,
+  first-party evidence for a genuine magnet-configuration distinction from the base
+  non-magnetic SKU, independently confirming (in different wording, via a second retailer) the
+  Speedsolving wiki's tier 4 'available in non-magnetic and factory-magnetic' claim already
+  used at mfjs-mf3rs3.yml. The trailing spec line describes the SIBLING non-magnetic SKU, not
+  this page's own product -- not used as an attestable weight/date claim for this SKU."
+status: sourced

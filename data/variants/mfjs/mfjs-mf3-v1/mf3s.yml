@@ -1,0 +1,36 @@
+# variant: mfjs-mf3-v1--mf3s
+# Pass 4 (Agent C). "MF3S" -- named and rejected as a MODEL candidate at mfjs-mf3-v1.yml itself
+# ("similar to the MF3 in design... correctly excluded here as a model candidate"), and enumerated
+# here as the variant of MF3 that record already pointed to: stickerless colour options plus a
+# frosted exterior coating, per TheCubicle's own product description.
+id: mfjs-mf3-v1--mf3s
+entity: variant
+model_id: mfjs-mf3-v1
+name: "MFJS MF3S"
+scope_class: core
+edition:
+  types: [standard]
+  name: "MF3S"
+colorway:
+  application: stickerless
+config:
+  coating: frosted
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3s-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3s-product]
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3s-product]
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3s-product]
+    note: "'Available in the stickerless bright colors.'"
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mf3s-product]
+    note: "'Features a frosted coating on the exterior that has a matte feeling to it.'"

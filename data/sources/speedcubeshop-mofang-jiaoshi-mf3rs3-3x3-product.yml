@@ -1,0 +1,41 @@
+# source: speedcubeshop-mofang-jiaoshi-mf3rs3-3x3-product
+# Pass 4 (Agent C, YJ+MFJS variants). SpeedCubeShop's own product page for the base
+# (non-magnetic) "MoFang JiaoShi MF3RS3 3x3" SKU, fetched directly via `npm run wayback -- get`.
+# A second, independent tier 2 retailer confirming the magnetic/non-magnetic split already
+# reported at tier 4 by the Speedsolving wiki and used in mfjs-mf3rs3.yml's own description.
+id: speedcubeshop-mofang-jiaoshi-mf3rs3-3x3-product
+entity: source
+kind: retailer
+title: "MoFang JiaoShi MF3RS3 3x3 - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/mofang-jiaoshi-mf3rs3-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190917id_/https://speedcubeshop.com/products/mofang-jiaoshi-mf3rs3-3x3"
+excerpt: |-
+  Product Description: "The MoFang JiaoShi MF3RS3 3x3 is a new version of the insanely popular
+  MF3 budget cubes. The RS3 takes the budget performance to the next level and features a solid
+  design with smooth turning. If you are looking to magnetize this puzzle it has slots included
+  from the factory that you can use to make the job easier!" -- i.e. this specific SKU does NOT
+  ship with factory magnets. Purchase options: "Black - $7.57", "Stickerless (Bright) - $7.57",
+  "White - $7.57" (list price $9.95). A trailing spec-line on the same page cross-references the
+  sibling magnetic SKU ("Magnetic Version | Custom stickers | Size: 56mm | Weight 3oz |
+  Released: 12/26/18 | Accessories: cube stand, screwdriver, tensioning tools") rather than
+  describing this page's own product -- a retailer comparison-snippet artifact, not used as
+  this SKU's own spec.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence, purchase options, and the
+  cross-reference spec line verbatim, flagged as such."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description. 'If you are looking to
+  magnetize this puzzle it has slots included from the factory' is direct evidence this SKU
+  ships non-magnetic, corroborating (independently, in different wording) the Speedsolving
+  wiki's tier 4 claim that MF3RS3 is 'available in non-magnetic and factory-magnetic'. The
+  trailing spec line on this page describes the SIBLING magnetic SKU (compare
+  speedcubeshop-mofang-jiaoshi-mf3rs3-m-3x3-product's own page, which reciprocally shows a
+  cross-reference line for this non-magnetic SKU) -- a retailer template quirk, not this page's
+  own measured spec; not used as an attestable weight/date claim for this SKU."
+status: sourced
