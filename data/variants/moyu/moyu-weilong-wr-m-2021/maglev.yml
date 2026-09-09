@@ -1,0 +1,29 @@
+# variant: moyu-weilong-wr-m-2021--maglev
+# Pass 4. "MoYu WeiLong WR M 2021 MagLev" — named directly in the wiki's own section heading
+# ("MoYu WeiLong WR M 2021/2021 MagLev") as a parallel configuration to the base spring version.
+# Wiki: "the Maglev version sports magnetic levitation as well as purple internals."
+id: moyu-weilong-wr-m-2021--maglev
+entity: variant
+model_id: moyu-weilong-wr-m-2021
+name: "MoYu WeiLong WR M 2021 MagLev"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "MagLev"
+config:
+  maglev: maglev
+  materials:
+    plastic: "Purple internals, per the wiki, distinguishing this configuration from the base spring version."
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki's own section heading names this 'MoYu WeiLong WR M 2021/2021 MagLev', treating MagLev as the named alternate configuration."
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'the Maglev version sports magnetic levitation as well as purple internals.'"

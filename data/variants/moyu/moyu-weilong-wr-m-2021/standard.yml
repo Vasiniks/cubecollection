@@ -1,0 +1,21 @@
+# variant: moyu-weilong-wr-m-2021--standard
+# Pass 4. The base spring configuration. Wiki: "featured adjustable magnets across 5 settings."
+id: moyu-weilong-wr-m-2021--standard
+entity: variant
+model_id: moyu-weilong-wr-m-2021
+name: "MoYu WeiLong WR M 2021"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  maglev: none
+  magnet_configuration: adjustable
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'featured adjustable magnets across 5 settings.'"
