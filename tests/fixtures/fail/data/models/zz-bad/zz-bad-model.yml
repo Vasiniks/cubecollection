@@ -13,3 +13,8 @@ geometry_profile_id: zz-reserved-profile
 specs:
   size_mm: 55.5
 status: stub
+attestations:
+  "/aliases":
+    confidence: probable
+    sources: [zz-dup-page-a, zz-dup-page-b]
+    note: Fixture value. Cites both halves of one page, which rule 42 must flag as one source.

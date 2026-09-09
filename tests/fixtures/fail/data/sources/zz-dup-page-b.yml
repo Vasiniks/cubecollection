@@ -1,0 +1,15 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Pairs with zz-dup-page-a: the SAME page recorded under two ids,
+# which is how rule 42's duplicate-record branch is exercised. Distinct from the zz-samepub pair,
+# which is two DIFFERENT pages from one publisher (rule 9). One page under two ids is not two
+# sources; two pages from one publisher is not two evidence chains. Different defects.
+id: zz-dup-page-b
+entity: source
+kind: retailer
+title: ZZ duplicated page, record b
+publisher: ZZ Duplicate Co
+url: "https://zz-example.invalid/products/zz-duplicated-page"
+preservation_method: excerpt
+excerpt: "Fixture excerpt for the duplicated-page pair, long enough to satisfy minLength."
+reliability_note: Exercises rule 42. Both records point at one URL by design.
+status: drafted

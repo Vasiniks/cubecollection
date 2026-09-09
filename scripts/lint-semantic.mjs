@@ -210,5 +210,50 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 42 — two source records of the same page are one source
+//
+// Found by an archive-wide sweep on 2026-09-09: 11 pairs share an archive_url, most of them a
+// manufacturer page split into a "-product" record and a "-specifications" record. Splitting one
+// page across two records by excerpt is a defensible modelling choice, but it makes the archive
+// look better-sourced than it is, and an attestation citing both halves reads as corroboration
+// when it is a single page agreeing with itself.
+//
+// Rule 9 already blocks the dangerous case (`confirmed` on tier 2-only evidence requires two
+// distinct PUBLISHERS, and two records of one page share one). This rule covers what rule 9
+// cannot see: the duplication itself, and any attestation resting on both halves.
+{
+  const sources = (byEntity.get('source') ?? []).filter((r) => r.doc?.id);
+  const byLocator = new Map();
+  for (const rec of sources) {
+    const loc = rec.doc.archive_url || rec.doc.url;
+    if (!loc) continue;
+    if (!byLocator.has(loc)) byLocator.set(loc, []);
+    byLocator.get(loc).push(rec);
+  }
+  const samePage = new Map();               // source id -> the group it belongs to
+  for (const [loc, recs] of byLocator) {
+    if (recs.length < 2) continue;
+    const ids = recs.map((r) => r.doc.id).sort();
+    for (const id of ids) samePage.set(id, ids);
+    report.warn('42', recs[0].file, `shares its locator with ${ids.filter((i) => i !== recs[0].doc.id).join(', ')} — these are ${ids.length} records of ONE page (${loc.slice(0, 90)}). Citing more than one of them is not corroboration.`);
+  }
+
+  for (const rec of records) {
+    for (const [ptr, att] of Object.entries(rec.doc?.attestations ?? {})) {
+      const cited = att?.sources ?? [];
+      if (cited.length < 2) continue;
+      for (const id of cited) {
+        const group = samePage.get(id);
+        if (!group) continue;
+        const overlap = cited.filter((c) => group.includes(c));
+        if (overlap.length > 1) {
+          report.warn('42', rec.file, `${ptr} cites ${overlap.join(' and ')}, which are the same page under different ids. That is one source, not ${overlap.length}.`);
+          break;
+        }
+      }
+    }
+  }
+}
+
 report.print();
 process.exit(0);

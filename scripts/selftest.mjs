@@ -92,7 +92,7 @@ console.log('\n  fail fixture — records engineered to trip named rules');
 
   const l = run('lint-semantic.mjs', { dataRoot: FAIL });
   const lintFired = rulesIn(l.out);
-  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41];
+  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42];
   const lintMissing = lintExpected.filter((r) => !lintFired.has(r));
   lintMissing.length === 0
     ? ok('semantic warnings fire', `${lintExpected.join(', ')}`)
@@ -103,6 +103,12 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   // proves only the conflict branch; a broken allowance would fire on every year-vs-month pair
   // and still pass that check. zz-ok-chronology-precision exists to be IGNORED, so assert its
   // absence too - the same lesson as rule 9, where a branch no fixture exercised was no guard.
+  // Rule 42 has two branches and only the duplicate-RECORD one is obvious. The branch that
+  // matters is the second: an attestation resting on both halves of one page, which reads as
+  // corroboration and is not. Assert its message specifically.
+  /which are the same page under different ids/.test(l.out)
+    ? ok('rule 42 false-corroboration branch fires', 'attestation citing one page twice is caught')
+    : bad('rule 42 false-corroboration branch fires', 'no same-page citation [42] message in lint output');
   !/zz-ok-chronology-precision[^\n]*\[40\]|\[40\][^\n]*zz-ok-chronology-precision/.test(l.out)
     ? ok('rule 40 precision allowance holds', 'year-vs-month pair not flagged')
     : bad('rule 40 precision allowance holds', 'fired on a model within its family precision window');
