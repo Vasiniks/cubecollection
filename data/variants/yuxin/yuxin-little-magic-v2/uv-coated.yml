@@ -1,0 +1,23 @@
+# variant: yuxin-little-magic-v2--uv-coated
+# Pass 4 (variant enumeration), agent F. cubezz-yuxin-3x3-collection-2026 lists a separate
+# "...UV Version" (item 7907) of the same "YuXin Little Magic M V2" line whose stickerless
+# option (item 6754) is recorded as the sibling ...--standard variant.
+id: yuxin-little-magic-v2--uv-coated
+entity: variant
+model_id: yuxin-little-magic-v2
+name: "YuXin Little Magic M V2 (UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "UV"
+config:
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /config/coating:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "cubezz's own item 7907 names the option 'UV Version' directly."

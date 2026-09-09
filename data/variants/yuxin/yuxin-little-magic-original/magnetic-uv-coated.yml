@@ -1,0 +1,38 @@
+# variant: yuxin-little-magic-original--magnetic-uv-coated
+# Pass 4 (variant enumeration), agent F. A further "1513M UV" 666toy.com product page repeats the
+# 1513M text verbatim plus "The new and upgraded UV version of the Little Magic 3x3 Series is
+# worth owning!" -- a third, separately-numbered item on this design (666toy-little-magic-3x3-
+# products), magnetic per its shared 1513M text plus a UV coating.
+id: yuxin-little-magic-original--magnetic-uv-coated
+entity: variant
+model_id: yuxin-little-magic-original
+name: "YuXin Little Magic 3x3 M (UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "M UV"
+config:
+  magnet_configuration: single_layer
+  coating: uv
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [666toy-little-magic-3x3-products]
+  /edition/designation:
+    confidence: probable
+    sources: [666toy-little-magic-3x3-products]
+    note: "666toy's own '1513M UV' item page repeats the 1513M product text verbatim plus one
+      added UV-coating sentence; no independent second-source corroboration for this specific
+      third item number was found this pass (contrast the base 1513/1513M split, corroborated by
+      the wiki)."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [666toy-little-magic-3x3-products]
+    note: "Inherits the 1513M page's own magnet description verbatim; same reasoning as the
+      sibling ...--magnetic variant."
+  /config/coating:
+    confidence: probable
+    sources: [666toy-little-magic-3x3-products]
+    note: "'The new and upgraded UV version of the Little Magic 3x3 Series' is the manufacturer's
+      own direct statement of a UV coating on this item."

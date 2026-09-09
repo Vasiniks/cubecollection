@@ -1,0 +1,39 @@
+# variant: cyclone-boys-feijue-original--standard
+# Pass 4 (variant enumeration), agent F. Model assessed for configuration axes; exactly one
+# documented sold configuration was found. All three sources this pass's model record rests on
+# (speedsolving-wiki-cyclone-boys-products, cubezz-cyclone-boys-feijue,
+# thecubicle-cyclone-boys-feijue) describe the product as magnetic and stickerless with no further
+# split -- the "M"/magnetic status is already baked into this model's own identity (per
+# cyclone-boys-feijue-original.yml's own note that no non-magnetic base 'FeiJue' was found
+# anywhere this pass), so it is not a further variant axis within this model. No separately-named
+# colourway, coating, or edition option was found.
+id: cyclone-boys-feijue-original--standard
+entity: variant
+model_id: cyclone-boys-feijue-original
+name: "Cyclone Boys FeiJue"
+aliases:
+  - name: "Cyclone Boys FeiJue M"
+    source: speedsolving-wiki-cyclone-boys-products
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-cyclone-boys-feijue, thecubicle-cyclone-boys-feijue, speedsolving-wiki-cyclone-boys-products]
+    note: "ASSESSMENT RECORD. Differentiation search performed against two independent tier 2
+      retailers and the tier 3/4 wiki; no non-magnetic base, no separately-named colourway, and
+      no coating option was found. This model's TheCubicle-sourced Metallic-3x3 sibling family
+      (cyclone-boys-metallic-3x3, a documented zero-model family) is NOT attached here as a
+      variant: no tier 1-3 source states that the metallic finish was applied to this specific
+      FeiJue design rather than another Cyclone Boys 3x3 -- see this pass's report for the
+      escalation."
+  /colorway/application:
+    confidence: probable
+    sources: [cubezz-cyclone-boys-feijue, thecubicle-cyclone-boys-feijue]
+    note: "Both retailers' own product titles name 'Stickerless' directly. `config.magnet_
+      configuration` is not restated here: the model already carries `specs.magnet_architecture:
+      single_layer` with its own attestation, and this variant does not override it."

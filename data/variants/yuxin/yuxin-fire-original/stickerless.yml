@@ -1,0 +1,35 @@
+# variant: yuxin-fire-original--stickerless
+# Pass 4 (variant enumeration), agent F. Item 4750 on cubezz-yuxin-3x3-collection-2026's own
+# "Fire Kylin" line, named "Stickerless" directly, matching the wiki's independently-named "Fire
+# S 3x3 -- An updated version of the YuXin Fire coming in only stickerless plastic." Per the model
+# record's own reasoning, "Fire S" is treated as this stickerless configuration of the one Fire
+# Kylin model (same item-number line, per cubezz), not a separate model generation.
+id: yuxin-fire-original--stickerless
+entity: variant
+model_id: yuxin-fire-original
+name: "YuXin Fire Kylin 3x3 (Stickerless)"
+aliases:
+  - name: "YuXin Fire S 3x3"
+    source: speedsolving-wiki-yuxin-products
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [cubezz-yuxin-3x3-collection-2026, speedsolving-wiki-yuxin-products]
+  /colorway/application:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "cubezz's own item 4750 names the colour/material option 'Stickerless' directly."
+  /aliases/0/name:
+    confidence: uncertain
+    sources: [speedsolving-wiki-yuxin-products]
+    note: "The wiki independently frames a stickerless-only 'Fire S' as 'An updated version of
+      the YuXin Fire,' language that could instead imply a later, distinct generation; read here
+      as this stickerless configuration of the one cubezz item-number line rather than a
+      separate model, per the model record's own reasoning (no separate 'Fire S' item number was
+      found by any source this pass)."

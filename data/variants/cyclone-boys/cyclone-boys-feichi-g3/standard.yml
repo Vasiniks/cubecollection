@@ -1,0 +1,30 @@
+# variant: cyclone-boys-feichi-g3--standard
+# Pass 4 (variant enumeration), agent F. Model assessed for configuration axes; exactly one
+# documented sold configuration was found. thecubicle-cyclone-boys-g3-feichi's own spec table
+# carries no "Magnets" field (contrast thecubicle-cyclone-boys-feijue, which has one), consistent
+# with a non-magnetic product; customer reviews on the same page separately mention "especially
+# the stickerless one," the only colourway detail found. No separately-named edition, magnet
+# configuration, or coating was found by any source.
+id: cyclone-boys-feichi-g3--standard
+entity: variant
+model_id: cyclone-boys-feichi-g3
+name: "Cyclone Boys G3 FeiChi"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-cyclone-boys-g3-feichi]
+    note: "ASSESSMENT RECORD. Differentiation search performed: only one tier 1-3 source
+      (thecubicle-cyclone-boys-g3-feichi) documents this generation at all; its own spec table
+      carries no Magnets field and no structured colour field. Customer reviews (inadmissible as
+      a source on their own) mention 'especially the stickerless one,' consistent with a
+      stickerless product but not itself establishing a separate named colourway/edition to
+      record as its own variant."
+  /config/magnet_configuration:
+    confidence: unknown
+    note: "No 'Magnets' spec field on the only source found; absence read as suggestive of
+      non-magnetic (matching the original cyclone-boys-feichi-original) but not stated directly,
+      so left `unknown` rather than set to 'none'."

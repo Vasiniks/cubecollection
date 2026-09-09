@@ -1,0 +1,30 @@
+# variant: yuxin-little-magic-original--magnetic
+# Pass 4 (variant enumeration), agent F. Manufacturer item 1513M: "The magic Cube has magnetic
+# positioning, and the edges and corners have magnet slots" (666toy-little-magic-3x3-products).
+# The Speedsolving wiki independently: "YuXin Little Magic M -- A factory magnetized version of
+# the Little Magic."
+id: yuxin-little-magic-original--magnetic
+entity: variant
+model_id: yuxin-little-magic-original
+name: "YuXin Little Magic 3x3 M"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "M"
+config:
+  magnet_configuration: single_layer
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-little-magic-3x3-products, speedsolving-wiki-yuxin-products]
+  /edition/designation:
+    confidence: confirmed
+    sources: [666toy-little-magic-3x3-products, speedsolving-wiki-yuxin-products, thecubicle-yuxin-collection-2025]
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [666toy-little-magic-3x3-products]
+    note: "'The edges and corners have magnet slots' read as consistent with
+      vocab/magnet-configurations.yml's `single_layer` definition ('one set of magnets between
+      adjacent pieces'), though the source does not itself use that term -- the same inference
+      already applied to cyclone-boys-feijue-original at model level."

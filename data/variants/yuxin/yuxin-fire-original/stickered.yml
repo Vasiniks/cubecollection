@@ -1,0 +1,33 @@
+# variant: yuxin-fire-original--stickered
+# Pass 4 (variant enumeration), agent F. cubezz-yuxin-3x3-collection-2026 lists three
+# colour/material options of one item-number line: "White" (4748), "Black" (4749), and
+# "Stickerless" (4750). The wiki independently frames the same line as "coming in Black, White,
+# and stickerless options." Naming the third option "Stickerless" by contrast is read as implying
+# the White/Black options are the applied-sticker configuration of this design (DATA_MODEL §4.1:
+# "colourway or sticker type"); White and Black themselves are stock body colours of that one
+# sticker application and are collapsed into this single baseline record per the anti-explosion
+# rule (gan-356-air precedent), not split further.
+id: yuxin-fire-original--stickered
+entity: variant
+model_id: yuxin-fire-original
+name: "YuXin Fire Kylin 3x3 (Stickered)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [cubezz-yuxin-3x3-collection-2026, speedsolving-wiki-yuxin-products]
+    note: "The regular retail configuration of this line, per cubezz's item 4748 (White) and
+      4749 (Black) listings, collapsing the two stock body colours into one record."
+  /colorway/application:
+    confidence: uncertain
+    sources: [cubezz-yuxin-3x3-collection-2026, speedsolving-wiki-yuxin-products]
+    note: "Neither source uses the word 'stickered' directly for items 4748/4749; this is
+      inferred from the contrast with item 4750's own explicit 'Stickerless' naming on the same
+      item-number line (and the wiki's parallel 'Black, White, and stickerless options'
+      phrasing). No source describes the actual sticker material (vinyl vs. other) for this
+      specific product."

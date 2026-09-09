@@ -1,0 +1,30 @@
+# variant: yuxin-little-magic-v3--vt
+# Pass 4 (variant enumeration), agent F. cubezz-yuxin-3x3-collection-2026 lists "YuXin Little
+# Magic V3 MagLev 3x3x3 Cube VT Version" alongside a separate "...UV Version," both 55.5mm/68.2g
+# -- the same VT/UV surface-option split already found on yuxin-huanglong-v2, paralleling that
+# model's naming pattern.
+id: yuxin-little-magic-v3--vt
+entity: variant
+model_id: yuxin-little-magic-v3
+name: "YuXin Little Magic V3 MagLev (VT / Textured)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "VT"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+  /edition/designation:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
+    note: "Only cubezz names this split for this specific model ('VT Version' / 'UV Version');
+      no 666toy manufacturer page independently corroborates a 'VT' item number for THIS item
+      (contrast yuxin-huanglong-v2, where 666toy's own '1524VT' item number corroborates it
+      directly)."
+  /config/coating:
+    confidence: unknown
+    note: "As with yuxin-huanglong-v2--vt, read as a textured/uncoated plastic option contrasted
+      with the sibling UV-coated configuration, but the vocabulary has no dedicated 'textured'
+      value and no source describes the surface treatment further; left unset."

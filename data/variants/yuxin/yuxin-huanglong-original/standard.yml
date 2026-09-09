@@ -1,0 +1,34 @@
+# variant: yuxin-huanglong-original--standard
+# Pass 4 (variant enumeration), agent F. Manufacturer item 1523, the base of two separately
+# numbered 666toy.com HuangLong 3x3 items sharing otherwise identical spec/feature text (see
+# 666toy-huanglong-3x3-products). The model record itself flags a genuine ambiguity: the shared
+# "4 major upgrades" copy on BOTH the 1523 and 1523M pages names "magnetic positioning design" as
+# a feature, so it is unclear from this evidence whether 1523 ships with positioning magnets
+# absent, unpopulated, or present but undifferentiated from 1523M -- `config/magnet_configuration`
+# is recorded `unknown` rather than `none`, deliberately not resolving that ambiguity here.
+id: yuxin-huanglong-original--standard
+entity: variant
+model_id: yuxin-huanglong-original
+name: "YuXin HuangLong 3x3"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: unknown
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products]
+    note: "Item 1523, the manufacturer's own base (non-'M') HuangLong 3x3 item number, sold
+      alongside the separately-numbered 1523M -- see yuxin-huanglong-original--magnetic.
+      Available in 'fluorescent six colors and black' per the manufacturer's own page; these
+      stock colour options are collapsed into this one baseline record."
+  /config/magnet_configuration:
+    confidence: unknown
+    note: "Researched and not resolved. 666toy's own product-page text for BOTH item 1523 and
+      1523M lists 'magnetic positioning design' among a shared '4 major upgrades' passage, so
+      the base (non-M) item's own page does not unambiguously state the absence of positioning
+      magnets despite 'M' being the manufacturer's own differentiator between the two items.
+      Recorded `unknown` rather than `none` to avoid resolving an ambiguity the source itself
+      does not resolve."

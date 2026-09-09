@@ -1,0 +1,34 @@
+# variant: yuxin-black-kirin-original--standard
+# Pass 4 (variant enumeration), agent F. Model assessed for configuration axes; exactly one
+# documented sold configuration was found. Item numbers 1740 ("Black K irin"), 1553 ("Black
+# Kylin"), and 1541 ("Black Kylin Rubik's Cube") all carry identical description text per
+# 666toy-black-kirin-kylin-3x3-products (three item numbers/spelling variants of one design, not
+# three configurations); no magnet, coating, or named-colourway option was found for this line
+# specifically (contrast yuxin-kylin-v2 and yuxin-huanglong-original, both of which DO document a
+# separate "M" magnetic SKU). This is the model's single regular retail configuration.
+id: yuxin-black-kirin-original--standard
+entity: variant
+model_id: yuxin-black-kirin-original
+name: "YuXin Black Kirin 3x3"
+aliases:
+  - name: "YuXin Black Kylin 3x3"
+    source: 666toy-black-kirin-kylin-3x3-products
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-black-kirin-kylin-3x3-products, thecubicle-yuxin-collection-2025]
+    note: "ASSESSMENT RECORD. Differentiation search performed: crawled 666toy.com's own
+      Black Kirin Series category across three category pages (55 product URLs total; items
+      1740/1553/1541 all identical spec/description text, no magnet or coating variant
+      mentioned); cross-checked thecubicle-yuxin-collection-2025's own CDX prefix enumeration,
+      which records no standalone 'yuxin-black-kirin-3x3' retail path at all (only 4x4,
+      mirror-cube, and skewb Black-Kirin-named products); and cross-checked
+      cubezz-yuxin-3x3-collection-2026's full-domain sweep, which surfaces no Black Kirin 3x3
+      listing either. No magnetic, UV-coated, or separately-named colourway configuration was
+      found for this specific line by any source at any tier. The wiki's separate 'Black Kirin
+      3x3 V2 (tiled)' generation is not corroborated at tier 1-3 (per the model's own note) and
+      is therefore not a configuration of this model either."

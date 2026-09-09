@@ -1,0 +1,33 @@
+# variant: yuxin-huanglong-original--magnetic
+# Pass 4 (variant enumeration), agent F. Manufacturer item 1523M, whose own product-page opening
+# line reads "Yuxin Huanglong Magnetic Rubik's Cube" (vs. plain "Yuxin Huanglong Rubik's Cube" on
+# item 1523) -- the one stated textual difference from the base item per
+# 666toy-huanglong-3x3-products. The Speedsolving wiki independently corroborates: "YuXin
+# HuangLong 3x3 M -- A Factory Magnetized version of the YuXin Huanglong 3x3."
+id: yuxin-huanglong-original--magnetic
+entity: variant
+model_id: yuxin-huanglong-original
+name: "YuXin HuangLong 3x3 M"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "M"
+config:
+  magnet_configuration: unknown
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [666toy-huanglong-3x3-products, speedsolving-wiki-yuxin-products]
+  /edition/designation:
+    confidence: confirmed
+    sources: [666toy-huanglong-3x3-products]
+    note: "Item number 1523M, and the manufacturer's own product-page text inserts the word
+      'Magnetic' into the otherwise-identical opening line shared with item 1523."
+  /config/magnet_configuration:
+    confidence: unknown
+    note: "The manufacturer names this item 'Magnetic' directly, but no page found this pass
+      states a specific magnet arrangement (single-layer, dual-layer, etc.) in vocabulary terms.
+      Recorded `unknown` rather than guessed at an architecture; see the sibling
+      yuxin-huanglong-original--standard record for the base item's own unresolved ambiguity on
+      this same field."

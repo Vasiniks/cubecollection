@@ -1,0 +1,36 @@
+# variant: yuxin-kylin-v2--magnetic
+# Pass 4 (variant enumeration), agent F. The magnetized configuration of this V2 design.
+# cubezz-yuxin-3x3-collection-2026 lists "YuXin Kylin V2 M 3x3x3 Magnetic Speed Cube" (items
+# 5905/5906/5907, three colourways), "Size: 55.5x55.5x55.5mm; Weight: 84g." The Speedsolving wiki
+# independently: "YuXin Kylin V2 M -- Another tiled 3x3 from YuXin, with this one being
+# magnetized." thecubicle-yuxin-collection-2025 records "yuxin-kylin-3x3-v2-m" as a retail SKU,
+# a second independent tier 2 source for the 'M' designation.
+id: yuxin-kylin-v2--magnetic
+entity: variant
+model_id: yuxin-kylin-v2
+name: "YuXin Kylin V2 M"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "M"
+config:
+  magnet_configuration: unknown
+  weight_g: 84
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026, thecubicle-yuxin-collection-2025]
+    note: "Three colourway options on cubezz's own 5905/5906/5907 item split are collapsed into
+      this one baseline; no named/limited colourway distinguishes them further per any source
+      found this pass."
+  /edition/designation:
+    confidence: confirmed
+    sources: [cubezz-yuxin-3x3-collection-2026, thecubicle-yuxin-collection-2025, speedsolving-wiki-yuxin-products]
+  /config/magnet_configuration:
+    confidence: unknown
+    note: "Named 'Magnetic'/'M' directly by three independent sources, but no source states a
+      specific magnet arrangement in vocabulary terms."
+  /config/weight_g:
+    confidence: probable
+    sources: [cubezz-yuxin-3x3-collection-2026]
