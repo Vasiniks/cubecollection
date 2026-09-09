@@ -48,6 +48,20 @@ meta:
     A second artefact runs the other way: three YuXin candidates were attributed to the family
     yuxin-3x3, which is one of the archive's ZERO-MODEL families. A family with no models cannot
     evidence a recency failure, so those attributions mean nothing at all.
+  scope_question_resolved: >-
+    THE MINI/KEYCHAIN AND OVERSIZED SCOPE QUESTION IS SETTLED, and every needs_research note
+    below that defers to it should be read with this. It was escalated as ledger P4-11 on the
+    assumption that the archive had no size policy and admitted formats inconsistently. Reading
+    RESEARCH_SPEC 2.4 settled it the same day: it puts out of scope "puzzles other than 3x3x3"
+    and states NO size criterion at all. A 33mm keychain 3x3 is a 3x3x3.
+    The archive's practice already matched its policy - cyclone-boys-mini-3x3-original (40mm),
+    dayan-zhanchi-42mm, qiyi-valk-3-mini (47.4mm) and shengshou-legend-big (70mm) are all
+    scope_class core, and the one conditional out-of-range record, maru-nano-original at 15mm,
+    is admitted on significance exactly as 2.2 provides for.
+    So size is NOT a scope criterion and these candidates are not blocked on a policy decision.
+    They remain needs_research for the ordinary reason - whether each specific product is
+    materially identifiable per 2.3 and worth a record - not because the archive cannot state
+    its own scope. P4-11 is resolved as raised-on-a-misreading.
   findings: >-
     ALL 261 ADJUDICATED. Distribution: missing_manufacturer 71 (27%), not_3x3 60 (23%),
     needs_research 44 (17%), service_listing 32 (12%), confirmed_missing 20 (8%),

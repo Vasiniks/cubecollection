@@ -1669,7 +1669,7 @@ issues:
 
   - id: P4-11
     severity: medium
-    status: needs_human_decision
+    status: resolved
     title: "Mini/keychain and oversized formats are admitted inconsistently, and it is a policy gap not a research gap"
     evidence: >-
       The largest unresolved class in the P4-9 adjudication is 44 candidates marked
@@ -1686,6 +1686,26 @@ issues:
       Both are decidable from the archive's own existing records without any new research. Until
       they are decided, every individual mini or oversized candidate is unadjudicable, and
       adjudicating them one at a time would produce exactly the inconsistency that created this.
+      CORRECTED AND RESOLVED 2026-09-09, the same day it was raised. THIS WAS NOT A POLICY GAP
+      and the escalation was wrong to call it one. RESEARCH_SPEC 2.4 puts out of scope "puzzles
+      other than 3x3x3" and states NO size criterion anywhere; a 33mm keychain 3x3 is a 3x3x3.
+      The archive's practice already matches its policy: cyclone-boys-mini-3x3-original (40mm),
+      dayan-zhanchi-42mm, qiyi-valk-3-mini (47.4mm) and shengshou-legend-big (70mm) are ALL
+      scope_class core. The single conditional out-of-range record is maru-nano-original at
+      15mm, admitted on significance exactly as 2.2 provides for. There is no inconsistency to
+      resolve and no rule to write.
+      The missing minis are therefore NOT blocked on a scope decision. They are ordinary P4-9
+      enumeration candidates and should be adjudicated as such, which removes the largest
+      supposed blocker from that issue's 44 needs_research entries.
+      WHAT THE INVESTIGATION DID FIND is a different and sharper defect, escalated as rule 49
+      rather than left here: the three MFJS minis are scope_class reference_only for a reason
+      2.4 does not cover - "no WCA legality evidence and no documented significance beyond size
+      alone" - while an identically-sized Cyclone Boys mini is core. reference_only is defined
+      for OUT-OF-WINDOW lineage records, and build.mjs removes those records from the public
+      bundle. That made the real question visible: an exclusion from the published archive was
+      costing nothing, while rule 15 made an admission cost an argument. Rule 49 now reports it.
+      Recording the correction rather than quietly reclassifying: this issue was raised on a
+      misreading of the archive's own scope policy, and reading the policy settled it.
     recommendation: >-
       Decide the CLASS, once, and write it into RESEARCH_SPEC's scope section rather than
       settling each product. Either a stated size range with the existing admissions justified
