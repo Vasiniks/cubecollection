@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  8ccd38b
+HEAD:  544e5a1
 DATE:  2026-09-09
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,11 +14,16 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      488
-sources:       538
+sources:       535
 
 VALIDATION
-npm run check:         0 errors, 31 advisory  (13 r42 / 11 r18 / 4 r40 / 2 r41 / 1 r25)
-                       rule 49 CLOSED (8 exclusions signed); rule 41 11 -> 2
+npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
+                         10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
+                                 citations where two captures ARE the claim
+                         11 r18  genuinely out-of-range models (minis, oversized) — correct
+                          4 r40  model-predates-family conflicts — P3-D2, needs human decision
+                          2 r41  gan-356-i, monster-go-352-m — deliberately NOT backfilled
+                       rules 25, 49 closed this session; rule 41 11 -> 2
                        now includes `npm run escalations`
 npm run audit:         advisory only, 9 sweeps
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched  (CLOSED)

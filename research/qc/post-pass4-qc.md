@@ -317,6 +317,39 @@ Seven Speedsolving pages could not be re-fetched: Wayback began refusing connect
 through the sweep. **A failed fetch is not evidence**, so they are recorded as unverified rather
 than assumed — and every one of them is already decided, so nothing is blocked.
 
+## 11. Second window — P4-9 adjudicated, and the advisory list emptied of unexplained entries
+
+**P4-9 fully adjudicated**: all 261 candidates classified in `p4-9-adjudication.yml`. The answer
+is **both, at two layers with different fixes** — 12 of 20 confirmed-missing models are later
+generations of lines the archive already holds (8 of them MoYu), a **recency** failure; and seven
+vendors are absent from the 54 entirely, a **breadth** failure escalated as P4-10. **48% of what
+the tool reported was correctly not a gap**, which is why every line was adjudicated rather than
+counted.
+
+**The WRM crux resolved against the larger-gap reading.** "WeiLong WRM V9" is the archive's
+`moyu-weilong-v9` under its full retail name — no plain V9 exists at retail, the configurations
+match, and the spring-2023 dates match. MoYu used year names through WR M 2021 then version
+numbers from V9, so `wr-m-2020` and `wr-m-2021` are correct as they stand.
+
+**P26-2 closed the loop it was raised about.** `npm run escalations` now enforces
+report → escalation → ledger id → status, inside `npm run check`. Retrofitting all 25 declared
+escalations found **18 that had never been filed** — agents did everything right and nothing
+collected it. One had already been *fixed* independently and the report still said "unresolved".
+
+**A third discovery-breadth failure mode**: slug-form blindness. `thecubicle.com/products/gan-356-i`
+returns almost nothing; the same retailer files the line under `gan356-`. Same for `monster-go`
+vs `monstergo` and `gan-ui` vs `gan12-ui`. That unlocked P4-5 — **rule 41 went 11 → 2**, every
+closure an actual search rather than a backfill, and one assessment deliberately states a *weaker*
+claim than its siblings because the retailer never stocked the product.
+
+**Two rules were made satisfiable.** Rule 25 fired on structure with no escape, so a correctly
+researched record could never clear it; it now accepts a recorded sibling search, exactly as rule
+41 does. Rule 49 was added and closed in the same session — its eight unsigned exclusions turned
+out to have **reasoning that already existed in lane reports**, never carried into the records.
+
+**Every remaining advisory is explained.** 27 warnings, and the ledger accounts for all four
+classes. That is the point of the number, not its size.
+
 ## State at last checkpoint
 
 54 manufacturers · 132 families · 269 models · 485 variants · **530 sources**
