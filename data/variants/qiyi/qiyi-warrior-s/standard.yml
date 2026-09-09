@@ -1,0 +1,17 @@
+# variant: qiyi-warrior-s--standard
+# Pass 4. Sole configuration found; no sibling slug in the 2024-2025 collection enumeration
+# beyond the single "qiyi-warrior-s-3x3" entry.
+id: qiyi-warrior-s--standard
+entity: variant
+model_id: qiyi-warrior-s
+name: "QiYi Warrior S"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-s-3x3-product, thecubicle-qiyi-mofangge-collection-2025]
+    note: "TheCubicle's own product page describes a single configuration; the 2024-2025
+      collection enumeration lists only one 'qiyi-warrior-s-3x3' slug."

@@ -1,0 +1,18 @@
+# variant: qiyi-thunderclap-v1--standard
+# Pass 4. The sole configuration found for this model. TheCubicle's own page describes one
+# product with no colourway/magnet/coating options; no collection listing sub-slug was found
+# (the product was already discontinued by the time it was captured).
+id: qiyi-thunderclap-v1--standard
+entity: variant
+model_id: qiyi-thunderclap-v1
+name: "QiYi Thunderclap"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-3x3-product]
+    note: "TheCubicle's product page describes a single configuration; no colourway, magnet, or
+      coating option was found."

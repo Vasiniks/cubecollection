@@ -1,0 +1,18 @@
+# variant: qiyi-warrior-m-pro--standard
+# Pass 4. Sole configuration found for this model (itself a frozen pass-3 boundary call — see
+# qiyi-warrior-m-pro.yml; not relitigated here). No sibling slug found in the collection
+# enumeration beyond the single "qiyi-warrior-m-pro-3x3" entry.
+id: qiyi-warrior-m-pro--standard
+entity: variant
+model_id: qiyi-warrior-m-pro
+name: "QiYi Warrior M Pro"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-m-pro-3x3-product, thecubicle-qiyi-mofangge-collection-2025]
+    note: "TheCubicle's own product page describes a single configuration; the 2024-2025
+      collection enumeration lists only one slug for this model."

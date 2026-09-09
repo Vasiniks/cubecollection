@@ -1,0 +1,25 @@
+# variant: qiyi-warrior-m--standard
+# Pass 4. Sole configuration found for this model (itself a frozen pass-3 boundary call — see
+# qiyi-warrior-m.yml; not relitigated here). TheCubicle describes "a durable, stickerless
+# design"; the 2024-2025 collection enumeration lists only one
+# "qiyi-warrior-m-3x3-magnetic" slug, no sibling stickered/colourway slug.
+id: qiyi-warrior-m--standard
+entity: variant
+model_id: qiyi-warrior-m
+name: "QiYi Warrior M"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-m-3x3-magnetic-product, thecubicle-qiyi-mofangge-collection-2025]
+    note: "TheCubicle's own product page describes a single configuration; the 2024-2025
+      collection enumeration lists only one slug for this model."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-m-3x3-magnetic-product]
+    note: "TheCubicle's own copy states directly: 'a durable, stickerless design.'"

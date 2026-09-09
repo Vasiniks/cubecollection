@@ -1,0 +1,34 @@
+# variant: qiyi-warrior-plus--magnetic
+# Pass 4. A magnetic sibling of the base 188mm Warrior Plus, named "qiyi-warrior-plus-3x3-m-18-8cm"
+# in TheCubicle's own 2024-2025 collection URL enumeration (thecubicle-qiyi-mofangge-collection-2025)
+# — a genuine magnet-configuration axis (DATA_MODEL materiality rule 1) at the same size/mould,
+# per the model's own note explicitly flagging this as a pass-4 question. No individual product
+# page was fetched for this slug this pass; existence rests on the collection-listing source
+# alone (tier 2, existence-only), so confidence is held at `reported` throughout and no specific
+# magnet_configuration vocabulary value is claimed.
+id: qiyi-warrior-plus--magnetic
+entity: variant
+model_id: qiyi-warrior-plus
+name: "QiYi Warrior Plus 3x3 M"
+aliases:
+  - { name: "QiYi Warrior Plus 3x3 M (18.8cm)", retailer: "TheCubicle", source: thecubicle-qiyi-mofangge-collection-2025 }
+scope_class: reference_only
+edition:
+  types: [standard]
+config:
+  magnet_configuration: other
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [thecubicle-qiyi-mofangge-collection-2025]
+    note: "Existence rests on a retailer collection URL-prefix enumeration alone (a distinct
+      '...-m-18-8cm' slug alongside the base '...-18-8cm' slug); no individual product page was
+      fetched this pass. Tier 2, existence-only evidence."
+  /config/magnet_configuration:
+    confidence: uncertain
+    sources: [thecubicle-qiyi-mofangge-collection-2025]
+    note: "The 'M' slug convention is used consistently across QiYi's own naming (Warrior M,
+      Valk M, MS, M Pro) to mean 'magnetic'; recorded as `other` rather than a specific
+      arrangement since no descriptive product text was found this pass to select a precise
+      vocabulary value."

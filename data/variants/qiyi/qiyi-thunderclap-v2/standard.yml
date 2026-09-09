@@ -1,0 +1,21 @@
+# variant: qiyi-thunderclap-v2--standard
+# Pass 4. The sole configuration found for this model. TheCubicle's page notes a packaging
+# change (clear plastic box vs. the cube bag used for V1) but per DATA_MODEL section on
+# materiality, packaging alone is not a variant trigger unless it is the sole distinguishing
+# feature of a separately marketed edition, which this is not (same product, one SKU) — noted
+# and rejected as a variant-splitting candidate, not created.
+id: qiyi-thunderclap-v2--standard
+entity: variant
+model_id: qiyi-thunderclap-v2
+name: "QiYi Thunderclap V2"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v2-product]
+    note: "TheCubicle's product page describes a single configuration. A packaging change
+      (clear plastic box) from V1 is mentioned but is not a separately marketed edition per
+      DATA_MODEL's variant materiality rules, so it is not split into a separate variant."
