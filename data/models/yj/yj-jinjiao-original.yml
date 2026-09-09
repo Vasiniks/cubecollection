@@ -11,6 +11,8 @@ family_id: yj-jinjiao
 manufacturer_id: yj
 name: "YJ JinJiao"
 scope_class: reference_only
+scope_decided_by: agent-d-yj
+scope_decided_on: "2026-09-03"
 generation:
   label: "Original"
   ordinal: 1
@@ -24,6 +26,14 @@ description: |-
   "Although it is not WCA legal, it turns well out of the box and is a fun, different feeling
   puzzle to solve!" No successor carrying the "JinJiao" name was found (per yj-jinjiao.yml);
   this is the family's sole model.
+
+  SCOPE REASONING RECOVERED 2026-09-09 (rule 49). No lane report stated it, so it is reconstructed
+  from this record's OWN evidence rather than from a report, and that difference is recorded here
+  deliberately: the Speedsolving wiki calls the JinJiao "an interesting, non-comp-legal 3x3 which
+  has a strange concaveness", which fails `core` (not WCA-legal) while no source makes the
+  documented-significance claim rule 15 requires for `conditional`. That leaves reference_only,
+  which is the same rule the other seven exclusions applied. Signature reconstructed from the lane
+  and creation commit.
 status: drafted
 attestations:
   /specs/size_mm:

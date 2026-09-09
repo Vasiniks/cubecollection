@@ -8,6 +8,8 @@ family_id: qiyi-qimeng
 manufacturer_id: qiyi
 name: "QiYi QiMeng Plus"
 scope_class: reference_only
+scope_decided_by: agent-b-qiyi
+scope_decided_on: "2026-09-03"
 generation:
   label: "QiMeng Plus"
   basis: manufacturer_declared
@@ -23,6 +25,11 @@ description: |-
   was located this pass; the "M" (magnetic) in the retailer's own naming is left as the model's
   own configuration rather than split to a variant, since no non-magnetic Plus counterpart was
   found to distinguish it from.
+
+  SCOPE REASONING RECOVERED 2026-09-09 (rule 49) from research/qc/pass3-agent-b-qiyi.md: "90mm
+  oversized, same reasoning as Warrior Plus" - not WCA-legal at that size and no documented
+  significance meeting rule 15's bar for conditional. Signature reconstructed from the lane and
+  creation commit.
 status: drafted
 attestations:
   /generation/basis:

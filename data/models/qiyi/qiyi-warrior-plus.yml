@@ -11,6 +11,8 @@ family_id: qiyi-warrior
 manufacturer_id: qiyi
 name: "QiYi Warrior Plus"
 scope_class: reference_only
+scope_decided_by: agent-b-qiyi
+scope_decided_on: "2026-09-03"
 generation:
   label: "Warrior Plus"
   basis: manufacturer_declared
@@ -27,6 +29,11 @@ description: |-
   (thecubicle-qiyi-mofangge-collection-2025) also lists a magnetic sibling
   ("qiyi-warrior-plus-3x3-m-18-8cm"), not modelled separately here (a magnet-configuration
   difference at the same size would be variant-level per DATA_MODEL section 4.1 in any case).
+
+  SCOPE REASONING RECOVERED 2026-09-09 (rule 49) from research/qc/pass3-agent-b-qiyi.md: "188mm
+  novelty ('use it as furniture' - retailer's own words), no documented significance found." Not
+  WCA-legal at that size and failing rule 15's documented-significance bar for conditional, so
+  reference_only. Signature reconstructed from the lane and creation commit.
 status: drafted
 attestations:
   /generation/basis:

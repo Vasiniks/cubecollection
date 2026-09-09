@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  011cade
+HEAD:  ce9c650
 DATE:  2026-09-09
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -20,7 +20,7 @@ VALIDATION
 npm run check:         0 errors, 50 advisory  (13 r42 / 11 r41 / 11 r18 / 10 r49 / 4 r40 / 1 r25)
                        now includes `npm run escalations`
 npm run audit:         advisory only, 9 sweeps
-npm run escalations:   7 linked / 18 UNFILED / 0 unmatched
+npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched  (CLOSED)
 npm run catalogue-gap: offline by default; --fetch to query three retailers
 npm run selftest:      every check behaved as specified
 
@@ -30,7 +30,8 @@ COMPLETED THIS PHASE  (full detail: research/qc/post-pass4-qc.md)
 - 13 spec values preserved into their sources; 1 false-precision conversion corrected
 - 2 inverted date qualifiers; 2 artefact-derived dates withdrawn
 - P4-6 CLOSED (all 30 Speedsolving sources assessed); P4-11 RESOLVED (raised on a misreading)
-- P26-2 / P26-3 measured, then P26-2's MECHANISM BUILT (npm run escalations, in check)
+- P26-2 / P26-3 measured; P26-2 MECHANISM BUILT (npm run escalations, in check) and all 25
+  declared escalations retrofitted — 18 had never been filed; closed via P4-12..P4-15
 - P4-9 FULLY ADJUDICATED: research/qc/p4-9-adjudication.yml, 261 of 261 classified
 
 P4-9 ANSWER — "both, at two layers, with different fixes"
@@ -54,13 +55,14 @@ AGENTS
   none running. worktrees: 1 (main only).
 
 NEXT ACTION
-  1. TRIAGE THE 18 UNFILED ESCALATIONS. `npm run escalations` names them; they are real
-     findings that agents declared and nothing ever filed. Decide file-or-close for each.
+  1. Rule 49's 8 unsigned reference_only exclusions. Each removed a record from the
+     PUBLIC bundle with no recorded reason. Check git history / lane reports for the
+     original reasoning before asking for a new judgement — recover, do not invent.
   2. Ziina "who makes it" — blocks admission. Needs FIRST-PARTY or specialist evidence,
      not another retailer. SpeedCubeShop says "Ziina Star", TheCubicle says "Ziina"; all
      13 SpeedCubeShop listings are UV-printed, so the ONLY evidence of a base Ziina cube
      anywhere is one TheCubicle listing.
-  3. Rule 49's 8 unsigned reference_only exclusions need a HUMAN reason each.
+  3. P4-12..P4-15 are newly filed and untouched — grouped boundary/schema/naming issues.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming

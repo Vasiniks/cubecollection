@@ -50,6 +50,8 @@ name: "Meffert's Kokonotsu Pillow 3x3"
 aliases:
   - "Kokonotsu"
 scope_class: reference_only
+scope_decided_by: agent-b-b3-historic
+scope_decided_on: "2026-09-04"
 specs:
   shape: pillowed
 description: |-
@@ -61,6 +63,15 @@ description: |-
   The pillowed shape is named directly in the retailer's own product title ("Kokonotsu Pillow
   3x3"). No generation naming, successor, or predecessor was found - this is the family's sole
   model, recorded on existence alone (S6 admission class 2).
+
+  SCOPE REASONING RECOVERED 2026-09-09 (rule 49). The decision WAS argued, in
+  research/qc/pass3-b3-agent-b-historic.md, and never reached this record: "scope_class decided
+  explicitly: reference_only, not conditional. The launch brief flagged this as 'almost certainly
+  not WCA-legal', correctly. Rule 15's bar for conditional requires a tier 1-3 source stating
+  documented historical or collector significance - 'it is unusual' is explicitly rejected. The
+  only source found (TheCubicle) describes the mechanism (9 colours, one-per-side constraint) but
+  makes no significance claim." Signature reconstructed from the lane and the record's creation
+  commit, not newly decided.
 status: drafted
 attestations:
   /specs/shape:

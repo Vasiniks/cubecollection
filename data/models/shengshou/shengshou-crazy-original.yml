@@ -12,6 +12,8 @@ generation:
   ordinal: 1
   basis: community_convention
 scope_class: reference_only
+scope_decided_by: main
+scope_decided_on: "2026-09-08"
 specs:
   size_mm: 60.5
 description: |-
@@ -35,6 +37,12 @@ description: |-
   A "Jelly LE" (transparent stickerless, "limited to 1400 units worldwide") is a **pass 4
   variant**, not a model. Which generation it belongs to is **not established** by any source and
   is deliberately not assumed here.
+
+  SCOPE REASONING RECOVERED 2026-09-09 (rule 49). Reconstructed from this record's own evidence,
+  no lane report having stated it: a pillowed 3x3 whose face rings do not turn with their faces,
+  typed "Shape Mods" by TheCubicle. Not WCA-legal, and no source found makes the
+  documented-significance claim rule 15 requires for `conditional`. Signature reconstructed from
+  the creating commit.
 legality:
   wca_status: not_legal
   basis: >-
