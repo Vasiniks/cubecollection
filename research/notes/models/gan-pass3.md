@@ -297,7 +297,7 @@ run relied entirely on GAN's own first-party product pages for these two sub-bra
 preserved via `archive_url`, fetched and verified directly via `npm run wayback -- get` on
 2026-09-02. Several are deliberately new ids citing the *same* archived page as a source created
 in an earlier, interrupted run of this pass (`gancube-monster-go-352-m-specifications` alongside
-the pre-existing `gancube-monster-go-352-m-product`, etc.) — per the shared-source-lane rule, a
+the pre-existing `gancube-monster-go-352-m-specifications`, etc.) — per the shared-source-lane rule, a
 source file not created in this session is never overwritten, so a fuller excerpt from the same
 page is recorded as an additional, separate source rather than editing the original.
 

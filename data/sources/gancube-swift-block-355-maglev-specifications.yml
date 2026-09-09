@@ -1,7 +1,13 @@
 # source: gancube-swift-block-355-maglev-specifications
-# The same GAN product page as gancube-swift-block-355-maglev-product (created in a prior
+# The same GAN product page as gancube-swift-block-355-maglev-specifications (created in a prior
 # session; not overwritten here), re-cited under a new id for its own "Specifications" table:
 # size, material, and weight for the Swift Block 355 Maglev.
+# MERGED 2026-09-09. Absorbed `gancube-swift-block-355-maglev-specifications`, which recorded the SAME gancube.com page at
+# the SAME capture. The two existed only because a later research lane found the earlier
+# lane's record already present and, per the shared-source rule, wrote a second record
+# rather than overwriting it — its own comment said so. One page under two ids inflates
+# the source count and lets an attestation cite a page twice as if it were corroborating
+# itself (rule 42). Both excerpts are preserved here; nothing observed was lost.
 id: gancube-swift-block-355-maglev-specifications
 entity: source
 kind: manufacturer_official
@@ -16,6 +22,9 @@ excerpt: |-
   this page for the mechanism itself; the "Maglev" designation in the product's own name and
   in GAN's own nav grouping (alongside the non-maglev "Swift Block 355S") is the primary
   evidence this pass relies on for treating it as a MagLev (magnetic-repulsion) mechanism.
+
+  Also on this page, previously held as the separate record `gancube-swift-block-355-maglev-specifications` and merged in on
+  2026-09-09: Page title as captured 2024-11-17: "Swift Block 355 M Magnetic 3x3 Speed Cube | GANCUBE Official Website". The same page's own site navigation, captured in full, lists this product under "Cubes" as "Swift Block 355 Maglev", alongside a sibling "Swift Block 355S Magnetic Cube" listed separately — two distinct named products in Swift Block's own 3x3 nav grouping.
 preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the 'Specifications' table (Size/Material/Weight) verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
 accessed: "2026-09-02"
 language: en

@@ -1,7 +1,13 @@
 # source: gancube-monster-go-magnetic-3x3-specifications
-# The same GAN product page as gancube-monster-go-magnetic-3x3-product (created in a prior
+# The same GAN product page as gancube-monster-go-magnetic-3x3-specifications (created in a prior
 # session; not overwritten here), re-cited under a new id for its own body marketing copy,
 # which states the magnet count directly: 48 magnets.
+# MERGED 2026-09-09. Absorbed `gancube-monster-go-magnetic-3x3-specifications`, which recorded the SAME gancube.com page at
+# the SAME capture. The two existed only because a later research lane found the earlier
+# lane's record already present and, per the shared-source rule, wrote a second record
+# rather than overwriting it — its own comment said so. One page under two ids inflates
+# the source count and lets an attestation cite a page twice as if it were corroborating
+# itself (rule 42). Both excerpts are preserved here; nothing observed was lost.
 id: gancube-monster-go-magnetic-3x3-specifications
 entity: source
 kind: manufacturer_official
@@ -16,6 +22,9 @@ excerpt: |-
   other affordable cubes, it boasts a unique mechanism typically found in speed cubes priced
   over $20." No numeric size or weight specification was found on this page (no
   "Specifications" table, unlike the sibling Monster Go 352 M page).
+
+  Also on this page, previously held as the separate record `gancube-monster-go-magnetic-3x3-specifications` and merged in on
+  2026-09-09: Page title as captured 2024-11-12: "Monster Go Magnetic 3x3 Stickerless Speed Cube | GANCUBE Official Website".
 preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the '48 magnets' description verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
 accessed: "2026-09-02"
 language: en

@@ -1,8 +1,14 @@
 # source: gancube-swift-block-super-maglev-specifications
-# The same GAN product page as gancube-swift-block-super-maglev-product (created in a prior
+# The same GAN product page as gancube-swift-block-super-maglev-specifications (created in a prior
 # session; not overwritten here), re-cited under a new id for its own detailed marketing copy,
 # which states a mechanism ("dual magnetic rings"), weight, and size distinctly different from
 # the earlier "Swift Block 355 Maglev" — primary evidence this is a separate, later model.
+# MERGED 2026-09-09. Absorbed `gancube-swift-block-super-maglev-specifications`, which recorded the SAME gancube.com page at
+# the SAME capture. The two existed only because a later research lane found the earlier
+# lane's record already present and, per the shared-source rule, wrote a second record
+# rather than overwriting it — its own comment said so. One page under two ids inflates
+# the source count and lets an attestation cite a page twice as if it were corroborating
+# itself (rule 42). Both excerpts are preserved here; nothing observed was lost.
 id: gancube-swift-block-super-maglev-specifications
 entity: source
 kind: manufacturer_official
@@ -19,6 +25,9 @@ excerpt: |-
   GES Tension System with 8 Adjustable Settings — The Swift 3X3 Super includes a built-in GES
   tension system. It offers 8 adjustable tension settings..." A "Swift 3X3 Super Maglev UV"
   variant is also described ("durable UV coating").
+
+  Also on this page, previously held as the separate record `gancube-swift-block-super-maglev-specifications` and merged in on
+  2026-09-09: Page title: "Swift Block 3x3 Super Maglev". Description: "Swift Block 3x3 Super Maglev Speed Cubing Cube — The Swift 3X3 Super Maglev speed cubing cube is designed for both beginners and advanced speed cubers. This speed cubing cube features state-of-the-art magnetic technology that guarantees smooth and silent rotation... The magnets are carefully positioned to enhance the feel of each rotation... Why the Swift 3X3 Super Maglev UV Is Your Ultimate Speed Cubing Cube — ...combines advanced technology and user-friendly design... The dual magnetic rings and full hollow structure reduce friction and increase control." Site navigation, "Flagship Series" dropdown on this capture (verbatim, in order): "GAN16 Maglev", "GAN15", "GAN14", "GAN13 Maglev", "GAN12", "GAN11 Series, GAN11 M Pro, GAN11 M, GAN 11 Air, GAN11 M Duo", "GAN562 M".
 preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain all quoted specification copy verbatim."
 accessed: "2026-09-02"
 language: en

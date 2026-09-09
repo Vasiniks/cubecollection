@@ -8,14 +8,25 @@
 # whatever capture is nearest, so the evidence under this record could move. Resolved once
 # and pinned to the capture it was already serving. Same page, same day, same evidence —
 # now immutable. See rule 47.
+# LOCATOR CORRECTED 2026-09-09, after the capture-pinning above made the real problem visible.
+# This record covers three FanXin product pages; its archive_url named only the HuDong Light one,
+# and once pinned that turned out to be the very capture thecubicle-fanxin-hudong-2024 already
+# holds — one capture under two ids, which let fanxin-hudong-3x3's /description cite the same
+# observation twice as if corroborated. Repointed to the 2020-09-27 capture of `fanxin-3x3`, the
+# record's ONLY genuinely unique evidence: of the three pages this record covers, `fanxin-3x3`
+# is already thecubicle-fanxin-3x3's record and the HuDong Light page is
+# thecubicle-fanxin-hudong-2024's, so pointing at either would only have moved the collision.
+# Re-fetched to confirm the capture carries the quoted lines ("FanXin's first attempt at a
+# modern, magnetic puzzle", "papery/scratchy feel") verbatim. Neither other capture is lost;
+# each is its own record.
 id: thecubicle-fanxin-3x3-products
 entity: source
 kind: retailer
 title: "FanXin 3x3, Magnetic 3x3, and HuDong Light 3x3 — TheCubicle product pages"
 publisher: "TheCubicle"
-url: "https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+url: "https://www.thecubicle.com/products/fanxin-magnetic-3x3"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20241009113827id_/https://www.thecubicle.com/products/fanxin-hudong-light-3x3-standard"
+archive_url: "https://web.archive.org/web/20200804204901id_/https://www.thecubicle.com/products/fanxin-magnetic-3x3"
 excerpt: |-
   "fanxin-3x3" (first captured 2020-09-27): Product Description: "The FanXin 3x3 draws
   inspiration from other 3x3 cube mechanisms, yet it strikes a good balance between

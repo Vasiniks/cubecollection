@@ -61,4 +61,4 @@ attestations:
     note: "No manufacturer generation-ordinal statement was found; '352 M' is this archive's own use of GAN's own product-name numeral, not a stated generation count. No evidence was found this pass of a second Monster Go 352-series generation."
   /description:
     confidence: confirmed
-    sources: [gancube-monster-go-352-m-product, gancube-monster-go-352-m-specifications]
+    sources: [gancube-monster-go-352-m-specifications]

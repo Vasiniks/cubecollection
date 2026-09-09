@@ -1,7 +1,13 @@
 # source: gancube-monster-go-cloud-rainbow-ut-versions
-# The same GAN product page as gancube-monster-go-cloud-rainbow-ut-product (created in a prior
+# The same GAN product page as gancube-monster-go-cloud-rainbow-ut-versions (created in a prior
 # session; not overwritten here), re-cited under a new id for its own variant selector, which
 # the earlier source record did not extract: four colourway options sold from one listing.
+# MERGED 2026-09-09. Absorbed `gancube-monster-go-cloud-rainbow-ut-versions`, which recorded the SAME gancube.com page at
+# the SAME capture. The two existed only because a later research lane found the earlier
+# lane's record already present and, per the shared-source rule, wrote a second record
+# rather than overwriting it — its own comment said so. One page under two ids inflates
+# the source count and lets an attestation cite a page twice as if it were corroborating
+# itself (rule 42). Both excerpts are preserved here; nothing observed was lost.
 id: gancube-monster-go-cloud-rainbow-ut-versions
 entity: source
 kind: manufacturer_official
@@ -14,6 +20,9 @@ excerpt: |-
   Variant selector, one product listing, 8 options: "Cloud - blue", "Cloud - pink", "Rainbow",
   "UT", and the same four again suffixed "(premium package)". No numeric size, weight, or
   magnet-count specification was found on this page. URL slug contains "magnetic-speed-cube".
+
+  Also on this page, previously held as the separate record `gancube-monster-go-cloud-rainbow-ut-versions` and merged in on
+  2026-09-09: Page title as captured 2024-11-12: "Monster Go Cloud & Rainbow & UT 3×3 Cube | GANCUBE Official Website". URL slug contains 'magnetic-speed-cube', the same phrase used in the standard Monster Go Magnetic 3x3 Cube's own URL.
 preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain all 8 variant-selector labels verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
 accessed: "2026-09-02"
 language: en

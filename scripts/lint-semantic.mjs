@@ -277,7 +277,11 @@ for (const [modelId, list] of variantsByModel) {
     if (!raw) return null;
     const u = String(raw).replace(WAYBACK, '');
     const m = /^https?:\/\/([^/]+)(.*)$/i.exec(u);
-    return m ? `${m[1].toLowerCase().replace(/^www\./, '')}${m[2].replace(/\/$/, '')}` : u;
+    // Strip the default port too: Wayback preserves the original request, so a 2012 capture is
+    // often recorded as `example.com:80/x` while a later one of the SAME page is `example.com/x`.
+    // No pair in the archive is currently hidden by this (checked), but the rule should not be
+    // one explicit port away from missing one.
+    return m ? `${m[1].toLowerCase().replace(/^www\./, '').replace(/:(80|443)$/, '')}${m[2].replace(/\/$/, '')}` : u;
   };
   // Which observation of that page: the capture timestamp, with Wayback's replay flags stripped
   // so `...171802id_/` and `...171802/` are recognised as the one capture they are.

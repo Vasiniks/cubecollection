@@ -2,14 +2,22 @@
 # TheCubicle's own product pages for four "WitEden 3x3x3 Mixup" variants (Plus, Edge-Split,
 # 30-Degree Turn, and an Oskar van Deventer-credited design), captured via Wayback. Tier 2,
 # first-party retailer copy.
+# LOCATOR CORRECTED 2026-09-09. This record quotes four TheCubicle product pages, and its
+# archive_url pointed at none of them: it named the 2022 capture of the MIXUP PLUS page, which
+# this record's excerpt never quotes, while the evidence it does quote is three 2025 captures
+# (Oskar, Edge-Split, 30-Degree Turn) held inline below. Wrong page and wrong capture epoch, and
+# it collided with thecubicle-witeden-mixup-plus, which IS that 2022 capture — so rule 42 read
+# one page under two ids and called a genuine two-page citation double-counting. Repointed to
+# the Oskar capture, the first page the excerpt quotes and one it demonstrably rests on. The
+# 2022 Plus capture is not lost; it is thecubicle-witeden-mixup-plus's own record.
 id: thecubicle-witeden-mixup-3x3-variants
 entity: source
 kind: retailer
 title: "WitEden 3x3x3 Mixup (Plus / Edge-Split / 30-Degree Turn / Oskar) – TheCubicle"
 publisher: "TheCubicle"
-url: "https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+url: "https://www.thecubicle.com/products/witeden-oskar-3x3x3-mixup"
 preservation_method: archive_url
-archive_url: "https://web.archive.org/web/20220517171802id_/https://www.thecubicle.com/products/witeden-3x3x3-mixup-plus"
+archive_url: "https://web.archive.org/web/20250801151456id_/https://www.thecubicle.com/products/witeden-oskar-3x3x3-mixup"
 excerpt: |-
   Oskar variant (https://web.archive.org/web/20250801151456id_/https://www.thecubicle.com/products/witeden-oskar-3x3x3-mixup):
   "The WitEden & Oskar 3x3x3 Mixup looks on the outside just like any 3x3x3 puzzle with bigger

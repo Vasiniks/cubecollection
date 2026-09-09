@@ -3,7 +3,7 @@
 # on its own product page (contrast GAN12), but fits the same manufacturer-declared numbered
 # succession by naming pattern and dated evidence. Also the family's flagged "disappearance"
 # case: present in GAN's own "Flagship Series" nav dropdown as late as 2026-08-11
-# (gancube-swift-block-super-maglev-product) but absent from the equivalent, apparently
+# (gancube-swift-block-super-maglev-specifications) but absent from the equivalent, apparently
 # complete dropdown captured just eight days later, 2026-08-19
 # (gancube-gan17-magdrive-product). See research/notes/models/gan-pass3.md for the full
 # reasoning on why this is recorded as a narrowly-dated navigation change, not a discontinuation.
@@ -63,7 +63,7 @@ attestations:
     note: "Inferred from GAN's sequential numbering; no explicit succession sentence found."
   /description:
     confidence: reported
-    sources: [gancube-swift-block-super-maglev-product, gancube-gan17-magdrive-product]
+    sources: [gancube-swift-block-super-maglev-specifications, gancube-gan17-magdrive-product]
     note: "The disappearance-window claim rests on comparing two GAN-authored navigation captures eight days apart, both already canonical sources; this pass did not independently preserve the 2026-02-28 capture referenced in the description as a third data point, so that specific date is recorded as discovery-session colour, not an attested fact."
 relationships:
   - type: succeeds

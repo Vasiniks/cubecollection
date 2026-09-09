@@ -1,7 +1,13 @@
 # source: gancube-swift-block-355s-specifications
-# The same GAN product page as gancube-swift-block-355s-product (created in a prior session;
+# The same GAN product page as gancube-swift-block-355s-specifications (created in a prior session;
 # not overwritten here), re-cited under a new id for its own marketing/spec copy: magnet count,
 # tension-adjustment mechanism, and weight for the Swift Block 355S.
+# MERGED 2026-09-09. Absorbed `gancube-swift-block-355s-specifications`, which recorded the SAME gancube.com page at
+# the SAME capture. The two existed only because a later research lane found the earlier
+# lane's record already present and, per the shared-source rule, wrote a second record
+# rather than overwriting it — its own comment said so. One page under two ids inflates
+# the source count and lets an attestation cite a page twice as if it were corroborating
+# itself (rule 42). Both excerpts are preserved here; nothing observed was lost.
 id: gancube-swift-block-355s-specifications
 entity: source
 kind: manufacturer_official
@@ -18,6 +24,9 @@ excerpt: |-
   adjustable settings... Lightweight and Perfectly Sized - Weighing just 85 grams..." No
   "Specifications" table (size/material) was found on this page, unlike the sibling "Swift
   Block 355 Maglev" product.
+
+  Also on this page, previously held as the separate record `gancube-swift-block-355s-specifications` and merged in on
+  2026-09-09: Page title as captured 2024-11-19: "Swift Block 355S Smooth 3x3 Puzzle Cube | GANCUBE Official Website". The same page's own site navigation lists this product as "Swift Block 355S Magnetic Cube" alongside a separate sibling entry "Swift Block 355 Maglev".
 preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-02 and confirmed to contain the description bullets verbatim. This capture falls inside gancube.com's November 2024 archival event and is not treated as a launch-date floor."
 accessed: "2026-09-02"
 language: en
