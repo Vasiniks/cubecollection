@@ -3,9 +3,10 @@
 A collector-grade historical archive of 3×3 speedcubes, approximately 2016–2026, built to
 become an interactive digital exhibition.
 
-**Status: Pass 4 (variant enumeration) in progress.** The archive currently holds
-**54 manufacturers · 132 families · 269 models · 426 variants · 512 sources**. The manufacturer,
-family and model layers are frozen; Pass 4 is populating the variant layer beneath them.
+**Status: Pass 4 (variant enumeration) — every model assessed.** The archive holds
+**54 manufacturers · 132 families · 269 models · 485 variants · 534 sources**. The manufacturer,
+family and model layers are frozen; the variant layer beneath them has been populated for all
+269 models.
 
 Coverage is tracked honestly rather than optimistically: `npm run audit` reports how many models
 have actually been **assessed** for configuration axes, and a model at zero variants means *not
