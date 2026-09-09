@@ -1299,3 +1299,37 @@ issues:
       behind them. Bounded and visible.
     owner: main
     last_updated: "2026-09-09"
+
+  - id: P4-6
+    severity: medium
+    status: open
+    title: "The E1 tier-3 override reached only 9 of 30 Speedsolving wiki sources"
+    category: evidence-quality
+    affected_records: "21 speedsolving-wiki-* sources still at their default tier 4"
+    evidence: >-
+      Issue E1 established that a Speedsolving wiki page is tier 3 rather than the tier 4 its
+      `kind: wiki` defaults to, on the reasoning that tier 4 targets "unattributed wikis" while
+      these pages are edit-protected, revision-tracked and substantial - RESEARCH_SPEC's tier-3
+      definition of "long-form community documentation". An archive-wide sweep on 2026-09-09
+      found the override applied to only nine sources (cyclone-boys x2, dayan x2, moyu, qiyi x2,
+      yongjun x2). Twenty-one comparable pages, including speedsolving-wiki-shengshou-products
+      and speedsolving-wiki-yuxin-products, carry no override and no record of having been
+      assessed under E1's criterion.
+    counterevidence: >-
+      E1's own wording is per-page - "This specific page does not match that description" - so
+      the override is meant to be applied after inspection, not by blanket rule. Some of the 21
+      may be genuine stubs that do NOT clear the "substantial, long-form" bar, in which case
+      tier 4 is correct for them. The gap is an unfinished assessment, not a known error.
+    recommendation: >-
+      Do NOT bulk-apply tier 3 to the remaining 21 - that would be exactly the unassessed
+      normalisation the archive's discipline forbids, and it would silently strengthen every
+      claim resting on them. Assess each page against E1's stated criterion (edit-protection,
+      revision history, substance) and record the outcome either way, including "assessed,
+      stays tier 4".
+    confidence: confirmed
+    downstream_impact: >-
+      Two attestations claimed `probable` on these pages and were downgraded to `uncertain` on
+      2026-09-09 (shengshou-mr-m-v2 /generation/basis, yuxin-little-magic-v2 /relationships/0).
+      If E1 is extended and those pages qualify, both may legitimately return to `reported`.
+    owner: main
+    last_updated: "2026-09-09"

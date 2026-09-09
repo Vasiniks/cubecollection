@@ -63,9 +63,15 @@ attestations:
     sources: [666toy-little-magic-3x3-products, speedsolving-wiki-yuxin-products,
       thecubicle-yuxin-collection-2025, cubezz-yuxin-3x3-collection-2026]
   /relationships/0:
-    confidence: probable
+    confidence: uncertain
     sources: [speedsolving-wiki-yuxin-products]
-    note: "Wiki: 'An updated version of the YuXin Little Magic M' is direct succession language."
+    note: "Wiki: 'An updated version of the YuXin Little Magic M' is direct succession language.
+      DOWNGRADED from `probable` to `uncertain` on 2026-09-09 by an archive-wide tier/confidence
+      sweep: the only cited source is a Speedsolving wiki page at tier 4, and vocab/confidence.yml
+      defines `probable` as one TIER 2 source uncontradicted. Nine of the thirty Speedsolving
+      pages carry an explicit tier-3 override under issue E1; this page was never assessed under
+      that criterion (see P4-6), so it is treated at its default tier. If E1 is extended to it and
+      it qualifies, this may return to `reported`."
 relationships:
   - type: succeeds
     target: yuxin-little-magic-original

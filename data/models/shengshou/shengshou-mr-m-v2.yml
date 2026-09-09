@@ -54,8 +54,14 @@ attestations:
     confidence: unknown
     note: "Researched and not found."
   /generation/basis:
-    confidence: probable
+    confidence: uncertain
     sources: [speedsolving-wiki-shengshou-products]
+    note: "Downgraded from `probable` to `uncertain` on 2026-09-09 by an archive-wide
+      tier/confidence sweep. The only cited source is a Speedsolving wiki page at tier 4, and
+      vocab/confidence.yml defines `probable` as one TIER 2 source uncontradicted. Nine of the
+      thirty Speedsolving pages carry an explicit tier-3 override under issue E1; this page was
+      never assessed under that criterion (see P4-6), so it is treated at its default tier. If
+      E1 is extended to it and it qualifies, this may return to `reported`."
   /relationships/0:
     confidence: reported
     sources: [thecubicle-shengshou-mr-m-v2-3x3-product]

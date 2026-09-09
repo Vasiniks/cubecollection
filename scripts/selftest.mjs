@@ -92,7 +92,7 @@ console.log('\n  fail fixture — records engineered to trip named rules');
 
   const l = run('lint-semantic.mjs', { dataRoot: FAIL });
   const lintFired = rulesIn(l.out);
-  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42];
+  const lintExpected = [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 40, 41, 42, 43];
   const lintMissing = lintExpected.filter((r) => !lintFired.has(r));
   lintMissing.length === 0
     ? ok('semantic warnings fire', `${lintExpected.join(', ')}`)
@@ -103,6 +103,13 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   // proves only the conflict branch; a broken allowance would fire on every year-vs-month pair
   // and still pass that check. zz-ok-chronology-precision exists to be IGNORED, so assert its
   // absence too - the same lesson as rule 9, where a branch no fixture exercised was no guard.
+  // Rule 43 must police the whole confidence scale, not just one rung. The fail fixture happens
+  // to exercise all three floors — confirmed, probable and reported — so assert the middle one
+  // explicitly rather than trusting that firing 43 at all covers them.
+  /is "probable" but its best cited source is tier/.test(l.out)
+    ? ok('rule 43 confidence floor fires', 'probable on a tier-5 source is caught')
+    : bad('rule 43 confidence floor fires', 'no probable-vs-tier [43] message in lint output');
+
   // Rule 42 has two branches and only the duplicate-RECORD one is obvious. The branch that
   // matters is the second: an attestation resting on both halves of one page, which reads as
   // corroboration and is not. Assert its message specifically.

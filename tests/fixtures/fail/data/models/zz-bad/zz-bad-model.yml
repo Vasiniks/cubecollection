@@ -18,3 +18,8 @@ attestations:
     confidence: probable
     sources: [zz-dup-page-a, zz-dup-page-b]
     note: Fixture value. Cites both halves of one page, which rule 42 must flag as one source.
+  "/description":
+    confidence: probable
+    sources: [zz-bad-src-social]
+    note: Fixture value. Claims probable on a tier-5 source, which rule 43 must flag - the
+      vocabulary puts probable at tier 2 or better.
