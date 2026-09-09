@@ -1,6 +1,12 @@
 # source: thecubicle-calvins-crazy-mirror-3x3x3
 # TheCubicle's own product pages for the Calvin's Crazy Mirror 3x3x3, in both its "4 Circles"
 # and "6 Circles" configurations, captured via Wayback. Tier 2, first-party retailer copy.
+# MERGED 2026-09-09. Absorbed `thecubicle-calvins-crazy-mirror-3x3x3`, which recorded the SAME
+# page at the SAME capture. The second id existed because a Pass 4 lane re-fetched this
+# page to check for colour or configuration differentiation and filed the result rather
+# than extending the record already there. Same lane-coordination artefact as the six
+# gancube.com pairs merged earlier today. Both excerpts are preserved; nothing observed
+# was lost, and the archive stops counting one page as two sources.
 id: thecubicle-calvins-crazy-mirror-3x3x3
 entity: source
 kind: retailer
@@ -18,6 +24,11 @@ excerpt: |-
   onto it to make it into a mirror cube. The 6 circles can rotate independently of the rest of
   the puzzle, leading to some seriously confusing scrambles." Product Specifications (both):
   "Manufacturer: Calvin's Puzzle / Type: Shape Mods."
+
+
+  MERGED IN 2026-09-09 from the separate record `thecubicle-calvins-crazy-mirror-3x3x3`, which was a
+  Pass 4 re-fetch of THIS page at THIS capture, filed under a second id. Its observation,
+  verbatim: 4 Circles (this capture): "Black (Silver) - $48.99 USD" — a single purchasable colour option. 6 Circles (separately captured at https://web.archive.org/web/20260307054319id_/https://www.thecubicle.com/products/calvins-crazy-mirror-3x3x3-6-circles): "Black (Silver) - $48.99 USD" — also a single purchasable colour option, same price.
 accessed: "2026-09-03"
 language: en
 region: US

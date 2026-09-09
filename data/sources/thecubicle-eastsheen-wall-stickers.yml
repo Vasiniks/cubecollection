@@ -3,6 +3,12 @@
 # Wall Stickers", confirming Eastsheen as a real, currently-sold-through cube manufacturer
 # within the archive window (captures 2021-2025).
 
+# MERGED 2026-09-09. Absorbed `thecubicle-eastsheen-wall-stickers`, which recorded the SAME
+# page at the SAME capture. The second id existed because a Pass 4 lane re-fetched this
+# page to check for colour or configuration differentiation and filed the result rather
+# than extending the record already there. Same lane-coordination artefact as the six
+# gancube.com pairs merged earlier today. Both excerpts are preserved; nothing observed
+# was lost, and the archive stops counting one page as two sources.
 id: thecubicle-eastsheen-wall-stickers
 entity: source
 kind: retailer
@@ -23,6 +29,11 @@ excerpt: |-
   and transcribed verbatim: "Dimensions: 57.0mm" (TheCubicle renders it "57.0mm³", its own notation for
   a cube's edge length), "Item Weight: 98.5g", "Gross Weight: 100g". The gross figure is recorded
   here only so a future reader can see which number was NOT taken as the product weight.
+
+
+  MERGED IN 2026-09-09 from the separate record `thecubicle-eastsheen-wall-stickers`, which was a
+  Pass 4 re-fetch of THIS page at THIS capture, filed under a second id. Its observation,
+  verbatim: "Black - $14.99 USD" — a single purchasable colour option.
 accessed: "2026-09-02"
 language: en
 region: US

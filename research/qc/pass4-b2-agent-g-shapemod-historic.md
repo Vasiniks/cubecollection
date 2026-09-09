@@ -107,7 +107,7 @@ planet-series-*` CDX prefix sweep.
   rule, same reasoning as WitEden above.
 
 **Sources added:** `thecubicle-mf8-legend-v2-colors-2024`,
-`thecubicle-mf8-crazy-3x3-planets-assorted-color-2020`,
+`thecubicle-mf8-crazy-3x3-planets-assorted`,
 `speedcubeshop-mf8-crazy-3x3-plus-planet-versions-2025`,
 `speedcubeshop-mf8-crazy-3x3-plus-planet-series-8-versions-2024` — all Tier 2, `archive_url`
 preservation.
@@ -149,7 +149,7 @@ each model's live/archived TheCubicle page(s) for colour/edition options.
 **Candidates rejected:** none beyond the two rejected model-level questions already flagged by
 pass 3 and re-noted above (not re-litigated this pass).
 
-**Sources added:** `thecubicle-calvins-crazy-mirror-configs-2025`,
+**Sources added:** `thecubicle-calvins-crazy-mirror-3x3x3`,
 `thecubicle-calvins-full-function-crazy-colors-2025`, `thecubicle-calvins-maze-300-colors-2025`
 — all Tier 2, `archive_url` preservation.
 
@@ -294,7 +294,7 @@ pass or pass 3) documents a plain/undecorated SKU actually being sold, only the 
 generic archive-convention name implying one might exist. Inventing a second variant for an
 unevidenced base product would be exactly the fabrication this archive is built to avoid.
 
-**Sources added:** `thecubicle-eastsheen-wall-stickers-colors-2023` (Tier 2, `archive_url`).
+**Sources added:** `thecubicle-eastsheen-wall-stickers` (Tier 2, `archive_url`).
 
 ---
 

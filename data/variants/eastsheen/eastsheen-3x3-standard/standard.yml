@@ -33,7 +33,7 @@ attestations:
       a second, separately-sold plain product this pass could confirm."
   /edition/types:
     confidence: reported
-    sources: [thecubicle-eastsheen-wall-stickers-colors-2023]
+    sources: [thecubicle-eastsheen-wall-stickers]
     note: "Differentiation search performed: TheCubicle's own page (re-fetched via Wayback, and
       confirmed as this brand's ONLY 3x3x3 listing by its own dedicated prefix sweep) offers a
       single colour (Black) and no separate edition name. No plain/undecorated SKU was found to
@@ -46,4 +46,4 @@ attestations:
       as opposed to a plain single colour per face)."
   /colorway/body/plastic_color_name:
     confidence: reported
-    sources: [thecubicle-eastsheen-wall-stickers-colors-2023]
+    sources: [thecubicle-eastsheen-wall-stickers]

@@ -21,7 +21,7 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-mf8-crazy-3x3-planets-assorted-color-2020, speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015]
+    sources: [thecubicle-mf8-crazy-3x3-planets-assorted, speedcubeshop-mf8-crazy-planet-assortment-3x3x3-2015]
     note: "Differentiation search performed: TheCubicle's own live listing (re-fetched 2020-09-25
       Wayback capture) offers a single purchasable colour ('Black') with no per-planet Version
       selector of the kind the later 'Plus' generation offers. Both this pass's own retailer

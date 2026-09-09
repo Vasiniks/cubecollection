@@ -427,6 +427,18 @@ issues:
       The MFJS pair resolve to one page - path URL redirects to query URL, and two captures 8
       months apart are byte-identical. Separately, three pairs shared an identical URL while
       holding different tiers: tier 3 under one id, derived tier 4 under the sibling.
+      RESIDUE EXPLAINED 2026-09-09, so the remaining count is not mistaken for unattended work.
+      Rule 42 reports 10 findings and ALL TEN are expected. Five are the Speedsolving wiki pairs
+      (cyclone-boys, dayan, mf8, qiyi, yongjun), which are DELIBERATELY kept as two records each
+      under the D-M1 decision - each record states in its own reliability_note that it and its
+      sibling "should be considered ONE evidence chain", which is precisely what the rule reports.
+      Merging them would overturn a resolved issue. The other five are the chronological branch,
+      where citing two captures IS the claim (giiker i3S on-sale versus sold-out, and two Rubiks
+      site captures five years apart).
+      Three further pairs WERE merged the same day - eastsheen-wall-stickers, calvins-crazy-mirror
+      and mf8-crazy-3x3-planets-assorted - because each second id was a Pass 4 re-fetch of the
+      same page at the same capture, filed rather than folded into the record already there. The
+      same lane-coordination artefact as the six gancube.com pairs.
     counterevidence: "Different capture dates could in principle preserve different page states; diffed and they do not."
     recommendation: >-
       RESOLVED. MFJS pair merged, citations repointed, loser retained as a redirect marker cited
