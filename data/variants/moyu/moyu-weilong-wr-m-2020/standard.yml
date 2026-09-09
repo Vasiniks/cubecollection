@@ -1,0 +1,22 @@
+# variant: moyu-weilong-wr-m-2020--standard
+# Pass 4. The base sold configuration of WeiLong WR M 2020, the only SKU named in TheCubicle's
+# 2021 catalogue capture ("MoYu WeiLong WR M 2020 3x3"). Wiki: "a new color scheme and frosted
+# plastic, along with the MoYu spring adjustment feature."
+id: moyu-weilong-wr-m-2020--standard
+entity: variant
+model_id: moyu-weilong-wr-m-2020
+name: "MoYu WeiLong WR M 2020"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  coating: frosted
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+  /config/coating:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'a new color scheme and frosted plastic'. Single tier 3 source."
