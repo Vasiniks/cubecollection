@@ -12,8 +12,14 @@ relationships:
   - type: rebrand_of
     target: zz-testbrand-tf-v1--standard-stickerless
     target_entity: variant
+edition:
+  types: [standard]
 status: drafted
 attestations:
   "/relationships/0":
     confidence: probable
     sources: [zz-src-official]
+  "/edition/types":
+    confidence: reported
+    sources: [zz-src-retailer]
+    note: Fixture value. A baseline records that the model was assessed and nothing differentiated found.

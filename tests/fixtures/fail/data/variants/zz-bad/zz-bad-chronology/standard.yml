@@ -1,0 +1,19 @@
+# SYNTHETIC FIXTURE — engineered to trip rule 41 (advisory).
+# A LONE `--standard` variant carrying no /edition/types attestation, no config, no colorway and
+# no edition name or designation. Under P4-3 a baseline record asserts "this model was assessed
+# and no differentiated configuration was established" — an assertion that lives in that
+# attestation. Without it the record asserts nothing while still counting as coverage, which is
+# the one failure mode P4-3 exists to prevent: a placeholder that makes the metric read well.
+# Its counterpart in the pass fixture carries the attestation and must stay quiet.
+#
+# Parented to zz-bad-chronology because rule 41 only inspects a model's SOLE variant, and
+# zz-bad-model already carries zz-bad-conditional-orphan.
+
+id: zz-bad-chronology--standard
+entity: variant
+model_id: zz-bad-chronology
+name: ZZ Bad Chronology Bare Baseline
+scope_class: core
+edition:
+  types: [standard]
+status: stub

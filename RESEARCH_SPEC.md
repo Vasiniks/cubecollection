@@ -301,6 +301,21 @@ membership, undeclared batch changes, or factory lubrication differences.
 
 ---
 
+### 4.3 Variant coverage — what zero means (P4-3)
+
+Binding from 2026-09-09. **Assess every model in scope; never leave an assessed model at zero,
+and never create a baseline for a model you did not assess.**
+
+- Two or more documented configurations → one variant per axis position.
+- Exactly one configuration → one `--standard` baseline, carrying an `/edition/types`
+  attestation whose note states **what differentiation search was performed**. That attestation
+  is the assessment claim; without it the record is a placeholder (lint rule 41).
+- Not yet researched → **zero variants**. Zero is reserved for this and means nothing else.
+
+Stock colourways collapse into the baseline. Only a separately named, separately marketed edition
+earns its own record — the `gan-356-air--standard` precedent, whose own note documents Black,
+White and Primary collapsing into one variant rather than exploding into three.
+
 ## 5. The nine passes
 
 Depth-first per manufacturer, breadth-first within one. Enumerate before filling, so the

@@ -16,7 +16,7 @@ meta:
     entities: 54
     families: 132
     models: 269
-    variants: 104
+    variants: 313
     sources: 470
 
 issues:
@@ -1207,7 +1207,7 @@ issues:
 
   - id: P4-3
     severity: medium
-    status: needs_human_decision
+    status: resolved
     title: "Lanes split on whether a single-configuration model earns a lone standard variant"
     category: methodology
     affected_records: "69 lone --standard variants exist; ~146 models sit at zero"
@@ -1238,7 +1238,7 @@ issues:
       "Models at zero" is currently not comparable across manufacturers, so any coverage metric
       computed from it is misleading until the convention is settled.
     owner: main
-    last_updated: "2026-09-08"
+    last_updated: "2026-09-09"
 
   - id: P4-4
     severity: medium
@@ -1267,3 +1267,35 @@ issues:
       across three manufacturers.
     owner: main
     last_updated: "2026-09-08"
+
+  - id: P4-5
+    severity: low
+    status: open
+    title: "Eleven GAN-pilot lone baselines assert nothing and are flagged by rule 41"
+    category: evidence-quality
+    affected_records: >-
+      8 GAN (356 i, i2, i3 V2, i-Carry 2/E/S, UI 12 FreePlay, UI Mini FreePlay), 2 Monster Go
+      (352 M, 3Ai), 1 Swift Block (355 MagLev)
+    evidence: >-
+      Rule 41, added with the P4-3 decision, flags a model's SOLE variant when it is a bare
+      --standard carrying no /edition/types attestation, no config, no colorway and no edition
+      name. Such a record asserts nothing while still counting as coverage. Eleven such records
+      exist, all predating Pass 4 and all from the GAN pilot; none of the 56 baselines created by
+      the P4-3 normalisation fired, because each carries its assessment attestation. Mostly GAN's
+      smart-cube line.
+    counterevidence: >-
+      The GAN pilot's other 12 lone baselines are NOT bare - gan-354-m carries config.size_mm
+      with an attestation and gan-356-air carries its colourway plus the note that established
+      the archive's whole anti-explosion precedent. This is a gap in 11 specific records, not a
+      fault in the pilot's method.
+    recommendation: >-
+      Do NOT backfill an attestation that cannot be substantiated - writing "assessed, nothing
+      found" without having assessed would fabricate the exact claim rule 41 exists to protect.
+      Close these when a pass revisits GAN with evidence in hand, either by recording what was
+      searched or by adding the configurations that were found. Advisory only; blocks nothing.
+    confidence: confirmed
+    downstream_impact: >-
+      Eleven models are counted as assessed on the coverage metric without an assessment record
+      behind them. Bounded and visible.
+    owner: main
+    last_updated: "2026-09-09"

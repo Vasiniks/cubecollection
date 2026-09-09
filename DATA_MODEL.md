@@ -286,6 +286,21 @@ A revision is not a separate file layer. A variant may pin `revision_ref`; most 
 
 ### 3.5 `variant` — the atomic record
 
+**Every assessed model carries at least one variant (P4-3, 2026-09-09).** The variant is where
+`pricing`, `availability`, `rarity`, `colorway`, `media`, `representation`, `packaging`,
+`releases` and `smart` live; `model` carries none of them, a specimen references `variant_id`,
+and `build.mjs` assembles the public bundle from variants. **A model with no variant cannot be
+priced, photographed, owned or exhibited — it does not appear in the product at all.**
+
+So a model sold in one configuration takes one `--standard` baseline. That record asserts *"this
+model was assessed and no differentiated configuration was established"* — **not** that a product
+named "Standard" was sold. The assertion lives in its `/edition/types` attestation, and lint rule
+41 flags a lone baseline that carries none, because a record asserting nothing still counts as
+coverage and makes the metric read well without earning it.
+
+**Zero variants means NOT YET ASSESSED, and nothing else.** See
+`research/qc/p4-3-variant-semantics.md`.
+
 | Field | Type | Notes |
 |---|---|---|
 | `id` | slug | §8.4 |

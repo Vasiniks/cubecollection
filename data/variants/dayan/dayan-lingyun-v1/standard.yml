@@ -1,0 +1,29 @@
+# variant: dayan-lingyun-v1--standard
+# Pass 4 BASELINE, created by the P4-3 normalisation (research/qc/p4-3-variant-semantics.md).
+# This model was ASSESSED for configuration axes by pass4-agent-d-dayan-shengshou and exactly one
+# configuration was found. This record is that configuration - the model's regular retail
+# form - and it exists because pricing, colorway, media, packaging, rarity, specimen
+# ownership and the public bundle all attach to the variant layer, never to the model.
+# A model with no variant cannot be exhibited at all.
+#
+# It does NOT assert that a product marketed as "Standard" was sold. It asserts that the
+# model was researched and no differentiated configuration was established.
+id: dayan-lingyun-v1--standard
+entity: variant
+model_id: dayan-lingyun-v1
+name: "DaYan LingYun"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-dayan-products]
+    note: "ASSESSMENT RECORD, not a product claim. This model was assessed for
+      configuration axes during Pass 4 batch 1 (pass4-agent-d-dayan-shengshou); no magnetic,
+      coating, size, stickered/stickerless or named-edition axis was documented by any
+      source located, so the model's single regular retail configuration is recorded
+      here. The cited source establishes the product itself; no source was found
+      differentiating configurations of it. A later pass finding an axis should add
+      variants alongside this one rather than replacing it."

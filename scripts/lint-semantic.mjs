@@ -175,5 +175,40 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 41 — a baseline variant must say it was assessed, not merely exist
+//
+// P4-3 makes every assessed model carry at least one variant, so a model sold in one
+// configuration gets a bare `--standard`. That record asserts something specific: "this model
+// was researched and no differentiated configuration was established." The assertion lives in
+// the /edition/types attestation and its note. Without one, the record asserts nothing and is a
+// placeholder wearing an assessment's clothes — which is exactly the state P4-3 exists to
+// prevent, because it makes the coverage metric lie in the flattering direction.
+//
+// Advisory, not blocking: a bare baseline is still better than a missing model, and the fix is
+// to record what was searched rather than to delete the record.
+{
+  const variantsByModel = new Map();
+  for (const rec of byEntity.get('variant') ?? []) {
+    const mid = rec.doc.model_id;
+    if (!variantsByModel.has(mid)) variantsByModel.set(mid, []);
+    variantsByModel.get(mid).push(rec);
+  }
+  for (const [, recs] of variantsByModel) {
+    if (recs.length !== 1) continue;                      // only a LONE variant is a baseline
+    const rec = recs[0];
+    const doc = rec.doc;
+    if (!/--standard$/.test(doc.id ?? '')) continue;       // only the bare-standard shape
+    const ed = doc.edition ?? {};
+    const detailed = ed.name || ed.designation
+      || Object.keys(doc.config ?? {}).length
+      || Object.keys(doc.colorway ?? {}).length;
+    if (detailed) continue;                                // carries its own evidence; not bare
+    const att = (doc.attestations ?? {})['/edition/types'];
+    if (!att) {
+      report.warn('41', rec.file, `is the only variant of "${doc.model_id}" and carries no /edition/types attestation. A baseline record claims the model was assessed and nothing differentiated was found; without an attestation it claims nothing. Record what was searched, or add the variants that were.`);
+    }
+  }
+}
+
 report.print();
 process.exit(0);
