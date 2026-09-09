@@ -188,12 +188,61 @@ their model already carries · **zero** variant→model→family chain breaks ac
 **zero** names or aliases shared across different manufacturers · **zero** stale count claims in
 canonical record prose.
 
+## Batch 2 — three of four lanes complete
+
+| Lane | Scope | Models | Variants |
+|---|---|---|---|
+| **E** | smart & modern (GiiKER, Particula, Rubik's, MoreTry) | 16 | **26** |
+| **F** | YuXin, Cyclone Boys, DianSheng | 19 | **31** |
+| **G** | shape-mod & historic (WitEden, MF8, Calvin's, Maru, +4) | 20 | **60** |
+| **H** | sub-brands & long tail | 30 | *running* |
+
+**Lane G inverted its own brief.** Briefed as the lowest-density lane, it returned the highest —
+because shape-mod makers sell one design in many named configurations, which is exactly what the
+variant layer is for. MF8's Crazy Plus Planet Series splits into eight versions on the source's
+own words: *"crazy cuts that vary by each version"* — the **mechanism** differs per planet, a
+stronger case than the DaYan Bermuda precedent it cited.
+
+Lane E closed a deferral Passes 2 and 3 had explicitly left open: **seven Rubik's classic
+configurations** (Phantom, Crystal, Retro, Re-Cube, Coach Cube, Impossible, standard).
+
+### All three lanes died to a session limit and all three were recovered, not restarted
+
+Each had committed work plus uncommitted findings on disk. Every worktree was validated in place
+(green at 0 errors), the in-progress work committed, and the lanes resumed with context intact —
+**recovering ~50 variants and 19 sources that would otherwise have been re-researched.**
+
+## Rules added during Pass 4 — each from a defect actually found
+
+| Rule | Catches | Found |
+|---|---|---|
+| **41** | a lone `--standard` asserting nothing | 11, all GAN-pilot (`P4-5`) |
+| **42** | one page recorded twice; citing both as corroboration | 12, then caught a 13th **in new lane output** |
+| **43** | confidence exceeding its sources' tier | 6 — **4 written by my own generator** |
+| **44** | variant id/path/model_id drift | 0, added pre-emptively before ~90 records landed |
+| **45** | a packaged weight stored as a product spec | **16 across 7 manufacturers** |
+| **46** | a size named only in prose, resolving to nothing | **12 GuHong variants** |
+
+**Rules 45 and 46 are the ones worth remembering**, because both describe defects that are
+invisible to a human reading the record:
+
+- **45** — `cyclone-boys-feijue` stored 213g, quoting its own source as *"Gross Weight: 213g /
+  Item Weight: 89.9g"*. It kept the box and discarded the cube. **Rule 18 caught only 2 of the
+  16**, because the rest sit comfortably inside its plausible range: *a wrong value inside a
+  plausible range is exactly what a bounds check cannot see.* Seven were corrected to the item
+  weight their source already stated (senhuan 172→90, feijue 213→89.9 — both nearly double the
+  truth); nine had only a gross figure and are now unset with the figure preserved in prose.
+- **46** — twelve GuHong Pro variants named "54mm", "55mm", "56mm" with the size living only in
+  the id and a free-text designation. Their model correctly sets no size (the line is sold in
+  three), so every variant resolved size to **`undefined`** while reading as fully specified.
+
+One attestation had justified its gross weight as *"this archive's established convention."* It
+was the opposite of the convention — and that is the more useful finding: **a wrong practice can
+propagate by citing itself.**
+
 ## Status
 
-**BATCH 1 COMPLETE, P4-3 RESOLVED, BATCH 2 IN PROGRESS.**
-132 families · 269 models · **313 variants** · 481 sources · 54 manufacturers.
-`npm run check`: 0 errors, 35 advisory (5 baseline · 7 rule-18 size/weight · 11 rule-41 ·
-12 rule-42). All variant `model_id` references resolve, no duplicate ids, no dangling sources.
-
-**Batch 2 lanes running** over the 90 unassessed models: smart/modern (16) · YuXin+CycloneBoys+
-DianSheng (19) · shape-mod/historic (20) · sub-brands and long tail (35).
+**BATCH 2, LANE H IN PROGRESS.** 132 families · 269 models · **426 variants** · 512 sources ·
+54 manufacturers. **239 of 269 models assessed**; the 30 remaining are lane H's scope.
+`npm run check`: 0 errors, 47 advisory (18 rule-18 size/weight on genuinely mini and oversized
+products · 13 rule-42 duplicate pages · 11 rule-41 GAN-pilot debt · 4 rule-40 · 1 rule-25).
