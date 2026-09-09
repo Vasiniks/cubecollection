@@ -1,0 +1,30 @@
+# variant: moyu-rs3m-2020--maglev
+# Pass 4. "MoYu RS3M MagLev" — a variant lead flagged directly on the model record. Wiki: "An
+# updated version of the MoYu RS3M 2020. This puzzle uses MagLev technology, having 2 repelling
+# magnets that replicate springs. The DAS works the same way, but instead of compressing the
+# springs, the magnets come closer together... This puzzle is also very fast." The task's own
+# explicit "MagLev vs. spring" variant example. No retailer or manufacturer corroboration found
+# this pass; single tier 3 source.
+id: moyu-rs3m-2020--maglev
+entity: variant
+model_id: moyu-rs3m-2020
+name: "MoYu RS3M MagLev"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "MagLev"
+config:
+  maglev: maglev
+  adjustment_system: tension_compression
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/adjustment_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'The DAS works the same way, but instead of compressing the springs, the magnets come closer together.'"

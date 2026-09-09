@@ -1,0 +1,20 @@
+# variant: moyu-aolong-v2--standard
+# Pass 4. The single sold configuration found for AoLong V2. The wiki's documented plastic
+# change (a poor first-batch plastic corrected to "the proper plastic" on "all new V2s") is an
+# undeclared, unmarketed running production change per the model.revisions[] test, not a
+# separately named/marketed edition — it is not represented as a variant here (out of this
+# pass's write lane; flagged as a lead for whoever owns model.revisions[] on this record).
+# TheCubicle's own full product page (thecubicle-us-moyu-early-3x3-lines, "Cubicle AoLong V2",
+# captured 2015-09-18) sells this as one undifferentiated 57.0mm product.
+id: moyu-aolong-v2--standard
+entity: variant
+model_id: moyu-aolong-v2
+name: "MoYu AoLong V2"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]

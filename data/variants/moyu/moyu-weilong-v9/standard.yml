@@ -1,0 +1,25 @@
+# variant: moyu-weilong-v9--standard
+# Pass 4. Named directly in the wiki's own section heading ("MoYu WeiLong V9
+# Standard/Maglev/Ballcore") as one of three parallel configurations. Wiki: "the Standard
+# version is the cheapest of the Weilong series from the past few years, but it loses
+# adjustable magnet strength."
+id: moyu-weilong-v9--standard
+entity: variant
+model_id: moyu-weilong-v9
+name: "MoYu WeiLong V9 Standard"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Standard"
+config:
+  maglev: none
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki's own section heading names this line 'MoYu WeiLong V9 Standard/Maglev/Ballcore', treating Standard as one of three named configurations."
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: the Standard version 'loses adjustable magnet strength', implied non-maglev by contrast with the named Maglev configuration."

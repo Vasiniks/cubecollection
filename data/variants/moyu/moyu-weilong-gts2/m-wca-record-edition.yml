@@ -1,0 +1,24 @@
+# variant: moyu-weilong-gts2--m-wca-record-edition
+# Pass 4. "MoYu WeiLong GTS2 M 3x3 (WCA Record Edition)" — named as its own distinct product
+# listing in TheCubicle's 2021 catalogue capture, separate from both the base "M" listing and
+# the "(LE)" listing. Recorded as `commemorative` (marking an unspecified WCA record) rather
+# than `limited`, since no source states this was a bounded production run — only that it
+# commemorates a record. Which record it commemorates is not stated by the source and is not
+# guessed here.
+id: moyu-weilong-gts2--m-wca-record-edition
+entity: variant
+model_id: moyu-weilong-gts2
+name: "MoYu WeiLong GTS2 M (WCA Record Edition)"
+scope_class: core
+edition:
+  types: [commemorative]
+  designation: "WCA Record Edition"
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "Named as its own distinct product listing, 'MoYu WeiLong GTS2 M 3x3 (WCA Record Edition)', separate from the other two GTS2 listings in the same catalogue capture. The listing's own naming implies a commemorative link to a WCA speed record, but the source does not name which record, holder, or date, and no corroborating source was found this pass — recorded at reduced confidence."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]

@@ -1,0 +1,30 @@
+# variant: moyu-rs3m-super-v2--standard
+# Pass 4. The wiki's own section heading names this line "MoYu Super RS3M V2
+# Standard/Maglev/Ballcore" — three parallel configurations, matching the pattern of the
+# immediately preceding Super RS3M model. Body text: "an updated external piece design
+# featuring UV coating and repelling edge magnets (Ballcore only)" — read as UV coating
+# applying across the whole updated piece design (all three configurations), with repelling
+# edge magnets restricted to Ballcore specifically. Standard is the configuration without
+# MagLev or a ball-core; no source states its adjustment system independently of the base RS3M
+# line's DAS, so it is left unset here rather than assumed carried over.
+id: moyu-rs3m-super-v2--standard
+entity: variant
+model_id: moyu-rs3m-super-v2
+name: "MoYu Super RS3M V2 Standard"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Standard"
+config:
+  coating: uv
+  maglev: none
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "The wiki's own section heading names 'MoYu Super RS3M V2 Standard/Maglev/Ballcore' as a three-way split, mirroring the immediately preceding Super RS3M model, but the body text does not restate each name individually the way Super RS3M's own entry does. The wiki itself hedges on this generation's ordinal count ('the second version (or fourth, fifth, and sixth?)')."
+  /config/coating:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'an updated external piece design featuring UV coating and repelling edge magnets (Ballcore only)' — read as UV coating applying to the whole line, since only the edge-magnet clause carries the '(Ballcore only)' qualifier."

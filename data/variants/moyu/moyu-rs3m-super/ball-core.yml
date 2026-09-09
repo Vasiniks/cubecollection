@@ -1,0 +1,42 @@
+# variant: moyu-rs3m-super--ball-core
+# Pass 4. Named directly by the wiki: "MoYu Super RS3M Ball Core: The third version of the
+# Super RS3M has MagLev and a ball-core that has corner-core magnets... Currently the second
+# cheapest mass-produced puzzle with corner-core magnets... and tied for the cheapest puzzle
+# with both corner-core magnets and maglev tensioning." A documented early-batch plastic defect
+# ("original batches were faulty due to the gold plastic used being very brittle and cracking")
+# is an undeclared, unmarketed production-batch issue per the model.revisions[] test, not a
+# separately marketed edition — not represented as a variant here; flagged as a lead for
+# whoever owns model.revisions[] on this record (out of this pass's write lane).
+id: moyu-rs3m-super--ball-core
+entity: variant
+model_id: moyu-rs3m-super
+name: "MoYu Super RS3M Ball Core"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Ball Core"
+config:
+  core_system: ball_core
+  maglev: maglev
+  magnet_configuration: core_corner
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/core_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'a ball-core that has corner-core magnets.'"
+  /colorway/application:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki, at the model/line level: 'This puzzle comes in stickerless only.'"

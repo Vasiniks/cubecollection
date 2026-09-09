@@ -1,0 +1,26 @@
+# variant: moyu-rs3m-v5--das
+# Pass 4. See standard.yml for the section-heading evidence and the price/tier-count mismatch
+# note. "DAS" (Dual Adjustment System) is the RS3M line's own established name for its
+# spring-compression adjustment mechanism (per moyu-rs3m-2020's wiki entry); read here as the
+# spring-and-ratchet tier without maglev, per the wiki's "a spring-and-ratchet system with
+# either a spring or maglev."
+id: moyu-rs3m-v5--das
+entity: variant
+model_id: moyu-rs3m-v5
+name: "MoYu RS3M V5 DAS"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "DAS"
+config:
+  adjustment_system: tension_compression
+  maglev: none
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+  /config/adjustment_system:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'a spring-and-ratchet system with either a spring or maglev', read as this tier being the spring option of that ratchet system."

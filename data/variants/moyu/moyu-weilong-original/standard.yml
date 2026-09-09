@@ -1,0 +1,16 @@
+# variant: moyu-weilong-original--standard
+# Pass 4. The single sold configuration found for the original MoYu WeiLong. The wiki's
+# mechanism description (torpedo/corner-stalk geometry, "hard and thick matte plastic") is a
+# design description, not a purchase-option axis; no second configuration was located.
+id: moyu-weilong-original--standard
+entity: variant
+model_id: moyu-weilong-original
+name: "MoYu WeiLong"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]

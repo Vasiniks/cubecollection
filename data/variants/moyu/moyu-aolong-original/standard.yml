@@ -1,0 +1,18 @@
+# variant: moyu-aolong-original--standard
+# Pass 4. The single sold configuration found for the original MoYu AoLong. No coating/magnet/
+# core/colourway axis is documented; the wiki's mechanism description ("takes the mechanism of
+# the MoYu AoSu") and TheCubicle's image-filename evidence (moyuaolongb*.jpg) both describe one
+# undifferentiated product, discontinued and superseded outright by AoLong V2 rather than sold
+# alongside it.
+id: moyu-aolong-original--standard
+entity: variant
+model_id: moyu-aolong-original
+name: "MoYu AoLong"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]

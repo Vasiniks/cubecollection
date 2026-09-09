@@ -1,0 +1,33 @@
+# variant: moyu-weilong-super--8-magnet-ball-core-spring
+# Pass 4. One of three configurations named directly by the wiki: "it featured an 8-magnet
+# ball-core with spring, 8-magnet ball-core with maglev, and 20-magnet ball-core with maglev."
+id: moyu-weilong-super--8-magnet-ball-core-spring
+entity: variant
+model_id: moyu-weilong-super
+name: "MoYu WeiLong Super (8-Magnet Ball-Core, Spring)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "8-Magnet Ball-Core Spring"
+config:
+  core_system: ball_core
+  maglev: none
+  magnet_strength: "8-magnet ball-core, per the wiki's three-way split for this model."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki names this configuration verbatim within its three-way split for this model."
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/core_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_strength:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]

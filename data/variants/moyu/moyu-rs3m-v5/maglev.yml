@@ -1,0 +1,26 @@
+# variant: moyu-rs3m-v5--maglev
+# Pass 4. See standard.yml for the section-heading evidence. Wiki: "a spring-and-ratchet system
+# with either a spring or maglev" — this tier is the maglev option of that ratchet system.
+id: moyu-rs3m-v5--maglev
+entity: variant
+model_id: moyu-rs3m-v5
+name: "MoYu RS3M V5 MagLev"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "MagLev"
+config:
+  adjustment_system: tension_compression
+  maglev: maglev
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+  /config/adjustment_system:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: '...with either a spring or maglev.'"

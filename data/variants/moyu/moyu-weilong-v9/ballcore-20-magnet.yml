@@ -1,0 +1,45 @@
+# variant: moyu-weilong-v9--ballcore-20-magnet
+# Pass 4. A January 2024 update to the Ballcore configuration, per the wiki: "A 20-magnet
+# Ballcore version was released in January 2024, adding 12 more core magnets to attract to the
+# edge-repelling magnets." Recorded as a further, separately-sold magnet-architecture
+# configuration of this model per the pass-3 lead recorded on the model record itself, not a
+# new design generation or an undeclared revision (it is described as a released version with
+# its own name and price, not a silent running change).
+id: moyu-weilong-v9--ballcore-20-magnet
+entity: variant
+model_id: moyu-weilong-v9
+name: "MoYu WeiLong V9 Ballcore (20-Magnet)"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "20-Magnet Ballcore"
+config:
+  core_system: ball_core
+  magnet_configuration: core_corner
+  maglev: maglev
+  magnet_strength: "20 core magnets, per the wiki, twelve more than the original Ballcore configuration."
+releases:
+  - region: INTL
+    date:
+      value: "2024-01"
+      precision: month
+      qualifier: exact
+    channel: unknown
+    note: "Wiki: 'A 20-magnet Ballcore version was released in January 2024.' Single tier 3 source, direct month-level statement."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/core_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_strength:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /releases/0/date:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]

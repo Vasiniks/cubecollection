@@ -1,0 +1,24 @@
+# variant: moyu-weilong-gts2--m
+# Pass 4. The base magnetic ("M") configuration of WeiLong GTS2, the only configuration of
+# this model named in TheCubicle's own 2021 catalogue capture ("MoYu WeiLong GTS2 M 3x3", no
+# accompanying bare/non-M listing found in that source's excerpt). Treated as the model's
+# standard sold configuration.
+#
+# NOT created: a non-magnetic "GTS2" listing analogous to GTS3's bare/M/LM three-way split, or
+# a distinct stickerless SKU. The wiki states the "3-piece corner design... allows for
+# stickerless versions" as a capability of the mould, not a stated purchase option, and no
+# retailer listing names either a non-magnetic or a stickerless GTS2 SKU. Recorded as a lead,
+# not fabricated.
+id: moyu-weilong-gts2--m
+entity: variant
+model_id: moyu-weilong-gts2
+name: "MoYu WeiLong GTS2 M"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+    note: "TheCubicle's 2021 catalogue lists 'MoYu WeiLong GTS2 M 3x3' as a real, current retail SKU; the 'M' magnetic naming is corroborated by the wiki's own description of this era's magnet options across the WeiLong line."

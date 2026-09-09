@@ -1,0 +1,20 @@
+# variant: moyu-rs3m-v5--das-with-robot
+# Pass 4. Named verbatim in the wiki's own section heading ("DAS with Robot") as a distinct
+# tier from plain "DAS". No further description of this specific tier's mechanism was found in
+# the body text, which describes the line's options generically rather than by name; "Robot" is
+# preserved verbatim from the source rather than corrected or reinterpreted (e.g. as a possible
+# transcription of "Ratchet") since no direct evidence supports a substitution.
+id: moyu-rs3m-v5--das-with-robot
+entity: variant
+model_id: moyu-rs3m-v5
+name: "MoYu RS3M V5 DAS with Robot"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "DAS with Robot"
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Named verbatim in the wiki's own section heading. No body-text description specific to this tier was found; the name itself is not corrected or reinterpreted."

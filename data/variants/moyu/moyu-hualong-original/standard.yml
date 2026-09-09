@@ -1,0 +1,18 @@
+# variant: moyu-hualong-original--standard
+# Pass 4. The single sold configuration found for MoYu HuaLong. TheCubicle's own sticker-page
+# listing names it "3x3 Red 57mm - HuaLong" (the same generic per-SKU naming pattern used
+# across this retailer's early MoYu sticker pages). The wiki's "scratchy... similar internal
+# mechanism patterns" to AoLong is a mechanism description, not a second sold configuration.
+id: moyu-hualong-original--standard
+entity: variant
+model_id: moyu-hualong-original
+name: "MoYu HuaLong"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "TheCubicle's own sticker-page listing sells this as one undifferentiated product. 'Red' is this retailer's generic sticker-page naming convention, not a manufacturer-named colourway."

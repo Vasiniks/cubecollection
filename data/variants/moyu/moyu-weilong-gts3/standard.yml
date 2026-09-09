@@ -1,0 +1,24 @@
+# variant: moyu-weilong-gts3--standard
+# Pass 4. The non-magnetic "GTS3" configuration. The wiki states this line "came magnetic,
+# nonmagnetic, or with light magnets" and TheCubicle's 2021 catalogue independently lists
+# "MoYu WeiLong GTS3 3x3" (bare, no "M"/"LM" suffix) as its own distinct product alongside
+# "MoYu WeiLong GTS3 M 3x3" and "MoYu WeiLong GTS3 LM 3x3" — three parallel, contemporaneous
+# retail listings, satisfying the dedup test (distinct titles, not renamed repeats of one SKU).
+id: moyu-weilong-gts3--standard
+entity: variant
+model_id: moyu-weilong-gts3
+name: "MoYu WeiLong GTS3"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+    note: "TheCubicle lists a bare 'MoYu WeiLong GTS3 3x3' with no magnet suffix, alongside the wiki's direct statement that this line 'came magnetic, nonmagnetic, or with light magnets.'"

@@ -1,0 +1,18 @@
+# variant: moyu-weilong-v2--standard
+# Pass 4. The single sold configuration found for WeiLong V2. The wiki's only stated
+# difference from the original WeiLong ("how the pieces are put together... mechanism remains
+# largely unchanged") is the model-level boundary question already recorded, at uncertain
+# confidence, on the model record itself; no further purchase-option axis is documented.
+id: moyu-weilong-v2--standard
+entity: variant
+model_id: moyu-weilong-v2
+name: "MoYu WeiLong V2"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Single tier 3 source; the model's own existence/dating is already recorded at uncertain confidence per its own boundary-call header."

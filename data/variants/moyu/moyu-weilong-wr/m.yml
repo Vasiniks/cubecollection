@@ -1,0 +1,27 @@
+# variant: moyu-weilong-wr--m
+# Pass 4. The magnetic "WR M" configuration. Named directly in TheCubicle's 2021 catalogue
+# ("MoYu WeiLong WR M 3x3"). The wiki states this configuration's magnets were "weaker, the
+# same as the GTS3 LM," and that "many cubers complained that the magnets were just a tad too
+# weak" — recorded as a magnet-strength note, not adopted as a comparative-performance claim.
+id: moyu-weilong-wr--m
+entity: variant
+model_id: moyu-weilong-wr
+name: "MoYu WeiLong WR M"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "M"
+config:
+  magnet_strength: "Reported by the wiki as the same strength as GTS3 LM (light magnets) — weaker than a typical 'M' configuration elsewhere in the line, and a point of community complaint."
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+  /config/magnet_strength:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'The magnets were weaker, the same as the GTS3 LM.' Single tier 3 source."

@@ -1,0 +1,22 @@
+# variant: moyu-weilong-wr--standard
+# Pass 4. The non-magnetic "WR" configuration. TheCubicle's 2021 catalogue lists "MoYu WeiLong
+# WR 3x3" (bare, no "M" suffix) as its own distinct product alongside "MoYu WeiLong WR M 3x3" —
+# two parallel, contemporaneous listings, satisfying the dedup test.
+id: moyu-weilong-wr--standard
+entity: variant
+model_id: moyu-weilong-wr
+name: "MoYu WeiLong WR"
+scope_class: core
+edition:
+  types: [standard]
+config:
+  magnet_configuration: none
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "TheCubicle lists a bare 'MoYu WeiLong WR 3x3' with no magnet suffix, parallel to its own 'MoYu WeiLong WR M 3x3' listing."

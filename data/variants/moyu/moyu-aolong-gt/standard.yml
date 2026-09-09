@@ -1,0 +1,16 @@
+# variant: moyu-aolong-gt--standard
+# Pass 4. The single sold configuration found for AoLong GT. The wiki notes "unusual sticker
+# shades which MoYu claimed was for the square corners" as a stock/inherent characteristic of
+# this design, not a separate named colourway or edition offered alongside another option.
+id: moyu-aolong-gt--standard
+entity: variant
+model_id: moyu-aolong-gt
+name: "MoYu AoLong GT"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]

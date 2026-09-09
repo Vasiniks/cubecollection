@@ -1,0 +1,27 @@
+# variant: moyu-rs3m-super-v2--maglev
+# Pass 4. See standard.yml for the section-heading evidence for this three-way split.
+id: moyu-rs3m-super-v2--maglev
+entity: variant
+model_id: moyu-rs3m-super-v2
+name: "MoYu Super RS3M V2 Maglev"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Maglev"
+config:
+  coating: uv
+  maglev: maglev
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Named in the wiki's own section heading ('Standard/Maglev/Ballcore'); the body text does not separately restate this configuration's own features."
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "From the section-heading name. A name is weaker evidence than a specification table."
+  /config/coating:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'an updated external piece design featuring UV coating', read as line-wide."

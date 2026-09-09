@@ -1,0 +1,30 @@
+# variant: moyu-rs3m-super--maglev
+# Pass 4. Named directly by the wiki: "MoYu Super RS3M Maglev: The second version of the Super
+# RS3M that has MagLev instead of springs. The internals of this puzzle are purple, much like
+# the other MagLev puzzles from MoYu."
+id: moyu-rs3m-super--maglev
+entity: variant
+model_id: moyu-rs3m-super
+name: "MoYu Super RS3M Maglev"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Maglev"
+config:
+  maglev: maglev
+  materials:
+    plastic: "Purple internals, per the wiki, matching MoYu's other MagLev puzzles."
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/designation:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/maglev:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /colorway/application:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki, at the model/line level: 'This puzzle comes in stickerless only.'"

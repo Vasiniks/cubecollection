@@ -1,0 +1,34 @@
+# variant: moyu-weilong-wr-m-2020--ai-smartcube
+# Pass 4. "MoYu WeiLong AI" — MoYu's first smartcube, per the wiki, which "shar[es] pieces with
+# the WRM 2020" — a `smart_version_of` electronic sibling of the WR M 2020 base variant, per
+# DATA_MODEL §2, not a separate model or family. Not to be confused with "MoYu AI" (moyu-ai
+# family), a later, separate product the wiki itself distinguishes by name. Flagged as a lead
+# for this pass on the moyu-weilong-wr-m-2020 model record itself; no date is stated by the
+# wiki for WeiLong AI specifically (the full wiki page, re-fetched this pass, gives no date for
+# it at all — only that it preceded MoYu AI, "Not to be confused with the WeiLong AI").
+id: moyu-weilong-wr-m-2020--ai-smartcube
+entity: variant
+model_id: moyu-weilong-wr-m-2020
+name: "MoYu WeiLong AI"
+scope_class: core
+edition:
+  types: [smart]
+smart:
+  is_smart: true
+relationships:
+  - type: smart_version_of
+    target: moyu-weilong-wr-m-2020--standard
+    target_entity: variant
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'MoYu's first smartcube. It had a rechargeable core, a gyroscope, and a proprietary app.'"
+  /smart/is_smart:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /relationships/0:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'regarded at the time of release as the best-turning smartcube due to sharing pieces with the WRM 2020.' Single tier 3 source; no manufacturer or retailer corroboration found this pass."

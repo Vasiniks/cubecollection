@@ -1,0 +1,21 @@
+# variant: moyu-huanying-original--standard
+# Pass 4. The single sold configuration found for MoYu HuanYing. No coating, magnet, core,
+# maglev, adjustment-system, or named-colourway axis is documented by either source consulted
+# (thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu); TheCubicle's 2013 product page
+# describes design features (corner cutting, flexibility) but no purchase-option axis, and the
+# wiki gives only a mechanism description with no second version. Recorded as the model's one
+# atomic sold configuration, not as a "zero variants" outcome — a real product was sold and
+# this is it.
+id: moyu-huanying-original--standard
+entity: variant
+model_id: moyu-huanying-original
+name: "MoYu HuanYing"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-us-moyu-early-3x3-lines]
+    note: "TheCubicle's own 2013-06-22 product page sells this as one undifferentiated product with no separate tier or edition name found."

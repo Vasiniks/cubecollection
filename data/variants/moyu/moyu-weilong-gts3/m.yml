@@ -1,0 +1,25 @@
+# variant: moyu-weilong-gts3--m
+# Pass 4. The full-magnet "GTS3 M" configuration. Named directly in TheCubicle's 2021 catalogue
+# ("MoYu WeiLong GTS3 M 3x3"), one of three parallel listings for this model.
+id: moyu-weilong-gts3--m
+entity: variant
+model_id: moyu-weilong-gts3
+name: "MoYu WeiLong GTS3 M"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "M"
+config:
+  magnet_strength: "Full-strength magnets (\"M\"), per the wiki's three-way magnetic/nonmagnetic/light-magnet split for this line."
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021]
+    note: "Retailer's own product-title suffix, taken verbatim."
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]

@@ -1,0 +1,34 @@
+# variant: moyu-ai-original--standard
+# Pass 4. The MoYu AI smartcube's non-magnetic configuration, the only one directly evidenced.
+# The wiki's phrase "the non-magnetic version is currently... the only non-magnetic smartcube"
+# (a comparative claim against the whole smartcube market, not a MoYu-AI-internal comparison)
+# implies a magnetic counterpart may also be sold, but no source names, dates, or otherwise
+# evidences a "MoYu AI (Magnetic)" product directly — not created here on that implication
+# alone; recorded as a lead in research/notes/variants/moyu-pass4.md. Full wiki text (fetched
+# this pass via `npm run wayback -- get` against the archive_url already on record for
+# speedsolving-wiki-moyu) adds no further detail on this product beyond what pass 3 already
+# quoted.
+id: moyu-ai-original--standard
+entity: variant
+model_id: moyu-ai-original
+name: "MoYu AI"
+scope_class: core
+edition:
+  types: [standard, smart]
+config:
+  magnet_configuration: none
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /edition/types:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+  /config/magnet_configuration:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'the non-magnetic version is currently both the cheapest smartcube and the only non-magnetic smartcube.' Single tier 3 source, direct statement."
+  /smart/is_smart:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki describes this as a smartcube with its own companion app throughout its entry."
