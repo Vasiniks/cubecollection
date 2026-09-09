@@ -1,0 +1,36 @@
+# variant: yj-mgc3-beta--8-magnet-ball-core-uv-coated-maglev
+# Pass 4 (Agent C). The "8-Magnet Ball-Core + UV + MagLev" sold configuration ($24.99), a fourth
+# MGC3 Beta configuration found via this pass's own CDX prefix sweep and NOT named in
+# yj-mgc3-beta.yml's own model-level description (which names only three configurations) --
+# reported as a finding, not acted on by editing the model.
+id: yj-mgc3-beta--8-magnet-ball-core-uv-coated-maglev
+entity: variant
+model_id: yj-mgc3-beta
+name: "YJ MGC3 Beta 3x3 (8-Magnet Ball-Core + UV Coated + MagLev)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "8-Magnet Ball-Core + UV Coated + MagLev"
+config:
+  coating: uv
+  maglev: ball_core_maglev
+  magnet_strength: "8-magnet ball-core"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+    note: "'MagLev for extra speed, and an 8-magnet ball core' -- combined ball-core + magnetic
+      repulsion maps to the 'ball_core_maglev' vocabulary value rather than plain 'maglev'."
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]

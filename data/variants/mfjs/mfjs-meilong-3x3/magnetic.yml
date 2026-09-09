@@ -1,0 +1,25 @@
+# variant: mfjs-meilong-3x3--magnetic
+# Pass 4 (Agent C). The "Magnetic" purchase option on SpeedCubeShop's own MeiLong 3x3 product
+# page, one of two magnet-configuration options sold under this one model (the other being
+# Non-Magnetic). Corroborated in different wording by the Speedsolving wiki's "Meilong 3x3 M --
+# An updated version of the Meilong 3 with magnets" (tier 4, not independently confirming this
+# specific retailer's naming).
+id: mfjs-meilong-3x3--magnetic
+entity: variant
+model_id: mfjs-meilong-3x3
+name: "MFJS MeiLong 3x3 (Magnetic)"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product]
+  /config/magnet_configuration:
+    confidence: unknown
+    note: "The source names the purchase option 'Magnetic' but does not describe the specific
+      magnet arrangement in vocabulary terms; left unset rather than guessed."

@@ -1,0 +1,39 @@
+# source: thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product
+# Pass 4 (Agent C, YJ+MFJS variants). TheCubicle's own product page for the "8-Magnet Ball-Core
+# + UV" sold configuration of the YJ Meta3 3x3, fetched directly via `npm run wayback -- get`.
+# One of the three configurations named at yj-meta3.yml's own model-level description as
+# pass-4 material; independently re-fetched here rather than relying on the model record's own
+# prose as a citation.
+id: thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product
+entity: source
+kind: retailer
+title: "YJ META3 3x3 (8-Magnet Ball-Core + UV) [Pre-Order] - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-meta3-3x3-8-magnet-ball-core-uv"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250829100429id_/https://www.thecubicle.com/products/yj-meta3-3x3-8-magnet-ball-core-uv"
+excerpt: |-
+  Product Description: "The YJ META3 3x3 (8-Magnet Ball-Core + UV) balances performance and
+  design with an 8-magnet ball-core for a consistent magnetic feel and a UV-coated surface for
+  durability and grip. Like the other Meta3 models, it features center skirts with edge
+  cut-outs and sharper corner cap tips, giving you a puzzle that's both precise and reliable."
+  The same page's own "Versions" selector lists three sold configurations of this product with
+  distinct prices: "Magnetic" ($22.99), "8-Magnet Ball-Core + UV" ($29.99, this page's own
+  default selection), and "Wing-Magnetic + 8-Magnet Ball-Core + UV" ($32.99). Product
+  Specifications: Manufacturer YJ; Type 3x3 Speed Cubes; Added 2025-08-22 (catalogue-migration
+  field, not a release date); Gross Weight 160g; Magnets: Magnetic.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence, the Versions selector's three
+  options and prices, and the spec-block fields verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description and version selector. The
+  page's own three-option 'Versions' selector (Magnetic / 8-Magnet Ball-Core + UV /
+  Wing-Magnetic + 8-Magnet Ball-Core + UV) is direct tier 2 evidence that all three are sold
+  configurations of one product line under this retailer's own presentation, corroborating
+  yj-meta3.yml's model-level description of the same three configurations. Gross Weight (160g)
+  includes retail packaging and is not treated as an item-weight spec."
+status: sourced

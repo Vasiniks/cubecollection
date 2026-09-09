@@ -1,0 +1,30 @@
+# variant: yj-mgc3-beta--8-magnet-ball-core-uv-coated
+# Pass 4 (Agent C). The "8-Magnet Ball-Core + UV Coated" sold configuration ($21.99) -- the
+# exact configuration thecubicle-yj-mgc3-beta-product describes in full, and the one the model
+# record's own core_system/description are drawn from.
+id: yj-mgc3-beta--8-magnet-ball-core-uv-coated
+entity: variant
+model_id: yj-mgc3-beta
+name: "YJ MGC3 Beta 3x3 (8-Magnet Ball-Core + UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "8-Magnet Ball-Core + UV Coated"
+config:
+  coating: uv
+  magnet_strength: "8-magnet ball-core"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-product]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-product]
+    note: "'This version of the Beta has UV coating.'"
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-product]

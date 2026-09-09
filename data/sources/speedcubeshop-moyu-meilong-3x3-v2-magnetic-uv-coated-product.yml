@@ -1,0 +1,37 @@
+# source: speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product
+# Pass 4 (Agent C, YJ+MFJS variants). SpeedCubeShop's own product page for the "MoYu MeiLong
+# 3x3 V2 (Magnetic, UV Coated)" SKU, a standalone product URL distinct from the "Standard" and
+# "Lite" V2 SKUs, fetched directly via `npm run wayback -- get`.
+id: speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product
+entity: source
+kind: retailer
+title: "MoYu MeiLong 3x3 V2 (Magnetic, UV Coated) - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250422id_/https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic-uv-coated"
+excerpt: |-
+  Product Description: "MoYu MeiLong 3x3 V2 (Magnetic, UV Coated) is a lightweight upgrade to
+  one of the most popular entry-level cubes ever." Version comparison table (shared across all
+  V2 SKUs on this retailer): V1 69g/Frosted/Accessories Yes; V2 (Lite) 65g/Frosted/Accessories
+  None; V2 (Standard) 65g/Frosted/Accessories Yes; V2 (UV Coated) 66g/UV Coated/Accessories
+  Yes. "UV Coating: Super glossy plastic, high grip." "Accessories included: Display stand,
+  Screwdriver." Product Details block (for this specific SKU): Type 3x3; Brand MoYu; Magnets:
+  Light (a generic magnet-strength tag, also present on the Lite SKU's own Product Details
+  page, not exclusive to either tier); Size 55.5mm; Weight 66g; Released 2024-04-18.
+preservation_note: "Fetched directly via `npm run wayback -- get` (explicit timestamp
+  20250422) on 2026-09-08; excerpt reproduces the load-bearing product-description sentence,
+  the version-comparison table, the UV Coating and Accessories-included blocks, and the Product
+  Details block verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description and spec table. Standalone
+  product URL, independently confirmed via `npm run wayback -- prefix .../moyu-meilong-3x3-v2`
+  alongside '-magnetic-lite' and the base '-magnetic' (Standard) URLs. 'UV Coating: Super glossy
+  plastic, high grip' plus the exterior-finish comparison-table row ('UV Coated' vs 'Frosted'
+  for the other three) and the 1g weight difference (66g vs 65g) are direct tier 2 evidence of a
+  genuine coating-axis distinction (DATA_MODEL 4.1 axis 5) between this SKU and Standard/Lite."
+status: sourced

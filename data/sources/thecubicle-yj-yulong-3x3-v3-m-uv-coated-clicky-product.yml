@@ -1,0 +1,37 @@
+# source: thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product
+# Pass 4 (Agent C, YJ+MFJS variants). TheCubicle's own product page for the "YJ YuLong 3x3 V3 M
+# (UV Coated + Clicky)" configuration, fetched directly via `npm run wayback -- get`. Named as a
+# variant by yj-yulong-v3-m.yml's own model-level description.
+id: thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product
+entity: source
+kind: retailer
+title: "YJ YuLong 3x3 V3 M (UV Coated + Clicky) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-yulong-3x3-v3-m-uv-coated-clicky"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250618123033id_/https://www.thecubicle.com/products/yj-yulong-3x3-v3-m-uv-coated-clicky"
+excerpt: |-
+  Product Description: "The YJ YuLong 3x3 V3 M (UV Coated + Clicky) is a budget-friendly
+  magnetic speedcube with a glossy UV finish for improved grip and durability. Each turn
+  produces a distinct click, giving the cube a tactile and audible feel that's satisfying and
+  unique. Its strong factory-installed magnets help with layer alignment and control, making it
+  a great choice for casual solvers or collectors." The page's own "Versions" selector: "V2
+  (Magnetic)" ($8.99), "V3 (Magnetic)" ($5.99), "V3 (Magnetic + UV)" ($7.99), "V3 (Magnetic +
+  UV + Clicky)" ($7.99, this page's own default). Product Specifications: Manufacturer YJ;
+  Type 3x3 Speed Cubes; Added 2025-04-30 (catalogue-migration field, not a release date); Gross
+  Weight 81g; Dimensions 56.0mm^3; Magnets: Magnetic; Item Weight 67.0g.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence, the shared Versions selector, and
+  the spec-block fields verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description. 'Each turn produces a
+  distinct click' is a mechanism-feel claim describing an audible/tactile trait not stated for
+  either the base or UV-only configurations; combined with the UV coating this is treated as an
+  additional distinguishing feature of one further sold configuration under the same V3 M
+  model, per this pass's own boundary (not a further generation: no source names it as a new
+  version)."
+status: sourced

@@ -1,0 +1,42 @@
+# source: speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product
+# Pass 4 (Agent C, YJ+MFJS variants). SpeedCubeShop's own product page for the "MoYu MeiLong
+# 3x3 V2 (Magnetic) - Lite" SKU, a standalone product URL distinct from the "Standard" and "UV
+# Coated" V2 SKUs, fetched directly via `npm run wayback -- get`.
+id: speedcubeshop-moyu-meilong-3x3-v2-magnetic-lite-product
+entity: source
+kind: retailer
+title: "MoYu MeiLong 3x3 V2 (Magnetic) - Lite - SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic-lite"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250524122948id_/https://speedcubeshop.com/products/moyu-meilong-3x3-v2-magnetic-lite"
+excerpt: |-
+  Product Description: "MoYu MeiLong 3x3 V2 (Magnetic) - Lite is a lightweight upgrade to one
+  of the most popular entry-level cubes ever." Version comparison table (shared across all V2
+  SKUs on this retailer): V1 69g/Frosted/Accessories Yes; V2 (Lite) 65g/Frosted/Accessories
+  None; V2 (Standard) 65g/Frosted/Accessories Yes; V2 (UV Coated) 66g/UV Coated/Accessories
+  Yes. A customer review corroborates: "It's magnets are barely on the stronger side which may
+  be the product of this being the 'lite' version... the lite version is noticeably lighter
+  than the average 3x3." Product Details block (for this specific SKU): Type 3x3; Brand MoYu;
+  Magnets: Light (a generic magnet-strength tag also present on the UV Coated SKU's own Product
+  Details, not Lite-specific); Size 55.5mm; Weight 66g (conflicts with the same page's own
+  comparison-table figure of 65g for 'V2 (Lite)' -- not resolved this pass); Released
+  2024-04-18.
+preservation_note: "Fetched directly via `npm run wayback -- get` (explicit timestamp
+  20250524) on 2026-09-08; excerpt reproduces the load-bearing product-description sentence,
+  the version-comparison table, a corroborating customer review, and the Product Details block
+  verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description and spec table. This is a
+  standalone product URL (not merely a purchase-option toggle on the Standard SKU's page),
+  independently confirmed via `npm run wayback -- prefix .../moyu-meilong-3x3-v2` alongside
+  '-uv-coated' and the base '-magnetic' (Standard) URLs -- three genuinely distinct SKUs. The
+  comparison table's own 'Accessories: None' (vs 'Yes' for Standard and UV Coated) is the
+  load-bearing distinguishing feature: the same weight and finish as Standard, differing only
+  by packaging/accessory contents -- DATA_MODEL 4.1 axis 11 (packaging as the sole
+  distinguishing feature of a separately marketed edition)."
+status: sourced

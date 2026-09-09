@@ -1,0 +1,26 @@
+# variant: yj-meta3--magnetic
+# Pass 4 (Agent C). The base/standard sold configuration of YJ Meta3 3x3, named "Magnetic" on
+# TheCubicle's own three-way "Versions" selector (Magnetic / 8-Magnet Ball-Core + UV /
+# Wing-Magnetic + 8-Magnet Ball-Core + UV), and the configuration the model record's own
+# description and specs are drawn from. Recorded as a stub with no config overrides: this
+# variant IS the model's own default description ("a piece-to-piece magnetic system"), so
+# nothing here restates the model.
+id: yj-meta3--magnetic
+entity: variant
+model_id: yj-meta3
+name: "YJ Meta3 3x3 (Magnetic)"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-meta3-3x3-magnetic-product, thecubicle-yj-meta3-3x3-8-magnet-ball-core-uv-product]
+    note: "The lowest-priced ($22.99 per the 8-magnet-ball-core-uv page's own Versions
+      selector) of three sold configurations, described as 'the standard version of the Meta'
+      by TheCubicle's own copy on this page -- read as the base/standard sold configuration
+      relative to the other two, higher-priced, named configurations."

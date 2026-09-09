@@ -1,0 +1,29 @@
+# variant: mfjs-mini-3x3-keychain-40mm--standard
+# Pass 4 (Agent C). The sole sold configuration of the MoFang JiaoShi Mini 3x3 Keychain (40mm):
+# a single "Stickerless (Bright)" purchase option per TheCubicle's own page.
+#
+# NOTE (rule 18 exposure, expected): this model's own specs.size_mm is 40.0mm, below the
+# 50-60mm range rule 18 checks. Rule 18 resolves size from the parent model and only fires once
+# a variant exists, so this stub is expected to surface that advisory warning; the size is
+# correct and sourced (an explicitly marketed keychain accessory cube), not a data defect.
+id: mfjs-mini-3x3-keychain-40mm--standard
+entity: variant
+model_id: mfjs-mini-3x3-keychain-40mm
+name: "MoFang JiaoShi Mini 3x3 Keychain (40mm)"
+scope_class: reference_only
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mini-3x3-keychain-40mm-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mini-3x3-keychain-40mm-product]
+    note: "Only one purchase option ('Stickerless (Bright)') is offered on this page."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-mofang-jiaoshi-mini-3x3-keychain-40mm-product]

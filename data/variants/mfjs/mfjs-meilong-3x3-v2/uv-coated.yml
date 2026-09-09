@@ -1,0 +1,42 @@
+# variant: mfjs-meilong-3x3-v2--uv-coated
+# Pass 4 (Agent C). The "V2 (UV Coated)" sold configuration, a standalone SpeedCubeShop SKU
+# distinguished by exterior finish (UV Coated vs Frosted) and a 1g weight difference from
+# Standard/Lite.
+id: mfjs-meilong-3x3-v2--uv-coated
+entity: variant
+model_id: mfjs-meilong-3x3-v2
+name: "MFJS MeiLong 3x3 V2 (Magnetic, UV Coated)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "UV Coated"
+config:
+  weight_g: 66
+  coating: uv
+packaging:
+  notable: "Accessories included: display stand, screwdriver."
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product]
+  /edition/name:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product]
+    note: "Comparison table and this SKU's own Product Details block agree at 66g (unlike the
+      Lite SKU's internal 65g/66g conflict)."
+  /config/coating:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product]
+    note: "'UV Coating: Super glossy plastic, high grip'; comparison table exterior finish 'UV
+      Coated', distinct from 'Frosted' for Standard and Lite."
+  /packaging/notable:
+    confidence: probable
+    sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-uv-coated-product]
+    note: "'Accessories included: Display stand, Screwdriver.'"

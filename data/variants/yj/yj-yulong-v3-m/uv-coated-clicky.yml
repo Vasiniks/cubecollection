@@ -1,0 +1,42 @@
+# variant: yj-yulong-v3-m--uv-coated-clicky
+# Pass 4 (Agent C). The "V3 (Magnetic + UV + Clicky)" sold configuration ($7.99), named as a
+# variant by yj-yulong-v3-m.yml's own model-level description. Adds an audible/tactile "click"
+# feel over the plain UV-coated configuration, per TheCubicle's own product description.
+id: yj-yulong-v3-m--uv-coated-clicky
+entity: variant
+model_id: yj-yulong-v3-m
+name: "YJ YuLong 3x3 V3 M (UV Coated + Clicky)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "UV Coated + Clicky"
+config:
+  coating: uv
+  weight_g: 67.0
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product]
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product]
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product]
+    note: "Item Weight (67.0g), not Gross Weight (81g, includes packaging). Identical to the
+      plain UV-coated configuration's own Item Weight figure; the 'clicky' feel is described as
+      a turning-feel trait, not a stated mass difference."
+  /significance:
+    confidence: uncertain
+    sources: [thecubicle-yj-yulong-3x3-v3-m-uv-coated-clicky-product]
+    note: "'Each turn produces a distinct click' is a mechanism-feel claim; not mapped to any
+      vocabulary field (no 'clicky' value exists in adjustment-systems or elsewhere), recorded
+      only as descriptive significance prose."
+significance: "Described by TheCubicle as producing \"a distinct click\" on each turn, a tactile/audible trait not claimed for the plain UV-coated or base configurations."

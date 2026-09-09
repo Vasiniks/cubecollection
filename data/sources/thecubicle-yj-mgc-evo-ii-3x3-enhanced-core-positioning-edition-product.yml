@@ -1,0 +1,43 @@
+# source: thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product
+# Pass 4 (Agent C, YJ+MFJS variants). TheCubicle's own product page for the "Enhanced Core
+# Positioning Edition" of the YJ MGC Evo II 3x3, fetched directly via `npm run wayback -- get`.
+# Named as a variant/edition by yj-mgc-evo-ii.yml's own model-level description.
+id: thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product
+entity: source
+kind: retailer
+title: "YJ MGC Evo II 3x3 (Enhanced Core Positioning Edition) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240418id_/https://www.thecubicle.com/products/yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition"
+excerpt: |-
+  Product Description: "The YJ MGC Evo II is YJ's new and improved version of their flagship
+  3x3. This updated puzzle has hand-adjustable settings and screwdriver-adjustable magnets.
+  Performance-wise, this new addition from YJ has a fast and stable turn that is sure to
+  impress speedcubers of any skill level. This version has corner/core magnets to add stability
+  to the puzzle. Please note: the center caps of this puzzle only fit in two directions." Only a
+  single "Stickerless" purchase option is shown (no multi-version selector on this page,
+  distinguishing this from the Meta3/MGC3 Beta pages' shared-listing pattern); at the time of
+  this capture the page carries "This product has been discontinued indefinitely or we aren't
+  sure when it will be back in stock." Product Specifications: Manufacturer YJ; Type 3x3 Speed
+  Cubes; Added 2023-06-09 (catalogue-migration field, not a release date); Gross Weight 250g;
+  Dimensions 55.0mm^3; Item Weight 74.0g; Magnets: Magnetic. The page's own "Similar Products"
+  panel lists "YJ MGC Sigma 3x3" ($29.99) as a separate product.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence and spec-block fields
+  verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description. 'This version has
+  corner/core magnets to add stability to the puzzle' is the load-bearing sentence
+  distinguishing this configuration's magnet architecture from the base MGC Evo II's own
+  description (which states only 'hand-adjustable settings and screwdriver-adjustable
+  magnets', no core-magnet claim). Standalone product page with a single purchase option, not a
+  multi-version selector -- consistent with treating this as a separately-listed sold
+  configuration of the same model rather than a further generation, per yj-mgc-evo-ii.yml's own
+  boundary call. Also incidentally corroborates the existence of a separate 'YJ MGC Sigma 3x3'
+  product not currently modelled in this family (see this pass's report for the escalation)."
+status: sourced
