@@ -1,0 +1,33 @@
+# variant: yj-mgc3-beta--magnetic
+# Pass 4 (Agent C). The base/lowest-priced ("Magnetic", $15.99) sold configuration in
+# TheCubicle's own four-way Versions selector for YJ MGC3 Beta 3x3. No dedicated full product
+# page/description was found for this specific tier this pass (only its price and name appear
+# on the Versions selector of the other three configurations' own pages); existence is
+# corroborated across two independent captures of those other pages.
+id: yj-mgc3-beta--magnetic
+entity: variant
+model_id: yj-mgc3-beta
+name: "YJ MGC3 Beta 3x3 (Magnetic)"
+scope_class: core
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-product, thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+    note: "Named and priced ($15.99) on the shared Versions selector of two independently
+      captured product pages for other MGC3 Beta configurations; no dedicated page for this
+      specific tier's own description text was found this pass."
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-product, thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+    note: "The lowest-priced of four sold configurations, not marketed as limited/
+      commemorative/collaboration; read as the ordinary ongoing sold option."
+  /config/core_system:
+    confidence: unknown
+    note: "The model record's own core_system: ball_core is drawn from the higher-priced
+      '8-Magnet Ball-Core' configurations' own description text; whether this base 'Magnetic'
+      tier shares a ball-core or a conventional core was not independently described in any
+      source found this pass. Left unset rather than inheriting the model's value uncritically,
+      per yj-mgc3-beta.yml's own flagged uncertainty on this exact question."

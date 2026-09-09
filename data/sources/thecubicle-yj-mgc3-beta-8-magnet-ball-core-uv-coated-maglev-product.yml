@@ -1,0 +1,41 @@
+# source: thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product
+# Pass 4 (Agent C, YJ+MFJS variants). TheCubicle's own product page for the "8-Magnet Ball-Core
+# + UV + MagLev" sold configuration of the YJ MGC3 Beta 3x3, fetched directly via
+# `npm run wayback -- get`. Found via `npm run wayback -- prefix .../yj-mgc3-beta`, a
+# fourth-configuration URL not named in yj-mgc3-beta.yml's own model-level description (which
+# names only "a plain path", "8-Magnet Ball-Core + UV", and "Limited Edition").
+id: thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product
+entity: source
+kind: retailer
+title: "YJ MGC3 Beta 3x3 (8-Magnet Ball-Core + UV Coated + MagLev) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260312071114id_/https://www.thecubicle.com/products/yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev"
+excerpt: |-
+  Product Description: "The YJ MGC3 Beta is the latest 3x3 speedcube from YJ, featuring a brand
+  new mechanism and philosophy. Designed by the same mind behind the legendary Alpha Cube, the
+  Beta boasts a balanced magnetic feel, great corner cutting, and a wonderfully comfortable
+  hand-feel. This version of the Beta has UV coating, maglev for extra speed, and an 8-magnet
+  ball core for extra stability." The page's own "Versions" selector lists four sold
+  configurations with distinct prices: "Magnetic" ($15.99), "8-Magnet Ball-Core + UV Coated"
+  ($21.99), "8-Magnet Ball-Core + UV + MagLev" ($24.99, this page's own default selection), and
+  "8-Magnet Ball-Core + MagLev (Limited Edition)" ($29.99). Product Specifications:
+  Manufacturer YJ; Type 3x3 Speed Cubes; Added 2025-03-07 (catalogue-migration field, not a
+  release date); Gross Weight 145g; Dimensions 55.5mm^3; Item Weight 78.0g; Magnets: Magnetic.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence, the four-option Versions selector
+  with prices, and the spec-block fields verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description and version selector. The
+  page's own four-option 'Versions' selector is direct tier 2 evidence that MGC3 Beta is sold
+  in (at least) four configurations, one more than yj-mgc3-beta.yml's own model-level
+  description names -- a finding reported for the model record, not acted on by editing it.
+  'This version of the Beta has UV coating, maglev... and an 8-magnet ball core' directly
+  attributes maglev to this specific configuration, distinct from the non-maglev
+  '8-Magnet Ball-Core + UV Coated' configuration at thecubicle-yj-mgc3-beta-product."
+status: sourced

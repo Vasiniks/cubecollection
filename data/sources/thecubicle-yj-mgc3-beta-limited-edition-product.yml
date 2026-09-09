@@ -1,0 +1,43 @@
+# source: thecubicle-yj-mgc3-beta-limited-edition-product
+# Pass 4 (Agent C, YJ+MFJS variants). TheCubicle's own product page for the "8-Magnet Ball-Core
+# + MagLev (Limited Edition)" sold configuration of the YJ MGC3 Beta 3x3, fetched directly via
+# `npm run wayback -- get`. Named as a variant/configuration by yj-mgc3-beta.yml's own
+# model-level description.
+id: thecubicle-yj-mgc3-beta-limited-edition-product
+entity: source
+kind: retailer
+title: "YJ MGC3 Beta 3x3 (Limited Edition) - TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc3-beta-limited-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260308170802id_/https://www.thecubicle.com/products/yj-mgc3-beta-limited-edition"
+excerpt: |-
+  Product Description: "The YJ MGC Beta 3x3 (Limited Edition) is a collector's release of the
+  popular MGC Beta 3x3, available in two stunning transparent colors: green and pink. It
+  features the signature MGC Beta design and feel, but is simply a cool collector's item
+  without stickers. We recommend applying this sticker set to improve color contrast and make
+  the cube suitable for actual solving. This limited edition release is perfect for collectors
+  looking to own a unique, visually striking version of a fan-favorite puzzle." Purchase
+  options: "Transparent Green - $29.99 USD", "Transparent Pink - $29.99 USD". The page's own
+  "Versions" selector lists this as one of four sold MGC3 Beta configurations: "Magnetic"
+  ($15.99), "8-Magnet Ball-Core + UV Coated" ($21.99), "8-Magnet Ball-Core + UV + MagLev"
+  ($24.99), "8-Magnet Ball-Core + MagLev (Limited Edition)" ($29.99, this page's own
+  configuration -- named without "+ UV" unlike the non-LE MagLev option). Product
+  Specifications: Manufacturer YJ; Type 3x3 Speed Cubes; Added 2025-04-24 (catalogue-migration
+  field, not a release date); Gross Weight 147g; Dimensions 55.5mm^3; Item Weight 82.0g;
+  Magnets: Magnetic.
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-08; excerpt
+  reproduces the load-bearing product-description sentence, purchase options, the Versions
+  selector, and spec-block fields verbatim/condensed."
+accessed: "2026-09-08"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-08"
+reliability_note: "Tier 2, first-party retailer product description, explicitly naming this a
+  'collector's release' / 'limited edition release' -- direct evidence for edition.types:
+  [limited]. States no production quantity; run_size left null per this archive's standing
+  rule (never estimated). The configuration's own Versions-selector label omits '+ UV', unlike
+  the parallel non-LE '8-Magnet Ball-Core + UV + MagLev' option -- read as evidence this
+  specific SKU is not UV-coated, though no sentence states this negatively in so many words."
+status: sourced

@@ -1,0 +1,75 @@
+# variant: yj-mgc3-beta--limited-edition
+# Pass 4 (Agent C). The "8-Magnet Ball-Core + MagLev (Limited Edition)" sold configuration
+# ($29.99), named in yj-mgc3-beta.yml's own model-level description as a variant. Sold in two
+# transparent colours (green, pink) -- collapsed into one variant record per this pass's
+# stock-colourway rule, since both are the same named edition sold in two colour options, not
+# two separately named/marketed editions.
+id: yj-mgc3-beta--limited-edition
+entity: variant
+model_id: yj-mgc3-beta
+name: "YJ MGC3 Beta 3x3 (Limited Edition)"
+scope_class: core
+edition:
+  types: [limited]
+  name: "Limited Edition"
+  limited:
+    is_limited: true
+    run_size: null
+colorway:
+  designation: "Transparent Green / Transparent Pink"
+  application: stickerless
+  body:
+    translucency: transparent
+config:
+  maglev: ball_core_maglev
+  coating: none
+  magnet_strength: "8-magnet ball-core"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+    note: "TheCubicle's own copy: 'a collector's release'; 'this limited edition release'."
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+  /edition/limited/is_limited:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "No production quantity is stated. Left null; never estimated."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+    note: "'Available in two stunning transparent colors: green and pink' -- both purchase
+      options ('Transparent Green', 'Transparent Pink') of this one named edition, collapsed
+      into a single variant per this pass's stock-colourway rule rather than exploded into two
+      records."
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+    note: "'A cool collector's item without stickers... we recommend applying this sticker set.'"
+  /colorway/body/translucency:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+  /config/maglev:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+    note: "From the Versions-selector label naming 'MagLev' for this configuration; the
+      description prose itself does not use the word. Recorded as ball_core_maglev to match
+      the paired non-LE MagLev configuration's own mechanism."
+  /config/coating:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+    note: "This configuration's own Versions-selector label, '8-Magnet Ball-Core + MagLev
+      (Limited Edition)', omits '+ UV' where the parallel non-LE MagLev option is labelled
+      '8-Magnet Ball-Core + UV + MagLev' -- read as evidence this SKU is not UV-coated, though
+      no source states this negatively in so many words; held at uncertain rather than probable
+      for that reason."
+  /config/magnet_strength:
+    confidence: uncertain
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]

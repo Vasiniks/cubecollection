@@ -50,3 +50,31 @@ Sources added:
 - thecubicle-yj-meta3-3x3-wing-magnetic-8-magnet-ball-core-uv-product
 Candidates rejected: none (all three sold configurations correspond to genuine documented
 axes; no fourth SKU found in the CDX sweep).
+
+## yj-mgc3-beta — DONE
+Axes identified: sold configuration tier (magnet/core/coating/maglev) plus a genuine Limited
+Edition (transparent colourway, no stickers). The model record itself named three
+configurations as pass-4 material; this pass's own CDX prefix sweep
+(`npm run wayback -- prefix .../yj-mgc3-beta`, 15 captures) found a FOURTH: "8-Magnet Ball-Core
++ UV + MagLev" ($24.99), not named in the model record — reported as a finding, not acted on.
+Variants created:
+- yj-mgc3-beta--magnetic (base, $15.99; no dedicated description page found this pass — existence
+  and price corroborated across two independent captures' shared Versions selector;
+  config.core_system deliberately left unset/unknown rather than inheriting the model's own
+  hedged ball_core value, since the model's own attestation says this is exactly the open
+  question)
+- yj-mgc3-beta--8-magnet-ball-core-uv-coated ($21.99; coating: uv override only — core_system
+  matches the model's own value so is NOT restated, per rule 23)
+- yj-mgc3-beta--8-magnet-ball-core-uv-coated-maglev ($24.99; NEW finding this pass; coating: uv,
+  maglev: ball_core_maglev)
+- yj-mgc3-beta--limited-edition ($29.99; edition.types:[limited]; colorway collapses the two
+  sold colours "Transparent Green"/"Transparent Pink" into one record per the stock-colourway
+  rule; config.coating: none inferred only from the Versions-selector label omitting "+UV",
+  held at uncertain)
+Sources added:
+- thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product
+- thecubicle-yj-mgc3-beta-limited-edition-product
+Candidates rejected: none additional. No fifth configuration found in the CDX sweep.
+Note: `npm run check` returned 8 warnings after first draft (rule 23, redundant core_system
+overrides on 3 variants) — corrected by removing the restated field per the anti-denormalisation
+rule; back to baseline 5 warnings / 0 errors before commit.
