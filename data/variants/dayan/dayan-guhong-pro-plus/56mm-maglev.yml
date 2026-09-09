@@ -1,0 +1,32 @@
+# variant: dayan-guhong-pro-plus--56mm-maglev
+# Pass 4. AXIS: size (54/55/56mm) x magnet system (Standard Magnetic, 64 magnets / MagLev, 94
+# magnets), per TheCubicle's own descriptive copy: "Choose from two magnetic systems: Standard
+# Magnetic (64 magnets) for reliable stability, or MagLev (94 magnets) ... Available in three
+# sizes -- 54mm, 55mm, and 56mm" (thecubicle-dayan-guhong-pro-plus-2026). SpeedCubeShop
+# independently corroborates the same size x system product structure under its own "Core
+# Magnets" / "MagLev Core Magnets" naming (speedcubeshop-dayan-guhong-pro-plus).
+id: dayan-guhong-pro-plus--56mm-maglev
+entity: variant
+model_id: dayan-guhong-pro-plus
+name: "DaYan GuHong Pro+ 3x3 56mm (MagLev)"
+aliases:
+  - name: "DaYan GuHong Pro+ 3x3 (Magnetic, MagLev, Core Magnets) - 56mm"
+    retailer: "SpeedCubeShop"
+    source: speedcubeshop-dayan-guhong-pro-plus
+scope_class: core
+edition:
+  types: [standard]
+  designation: "56mm MagLev"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-pro-plus-2026]
+    note: "TheCubicle's own product copy states directly: \"Choose from two magnetic systems: Standard Magnetic (64 magnets)... or MagLev (94 magnets)... Available in three sizes -- 54mm, 55mm, and 56mm.\" This combination (56mm / MagLev) is one of the six the copy describes; only the 54mm MagLev SKU's own page was directly fetched (thecubicle-dayan-guhong-pro-plus-2026), so the other five are generalised from this same-page enumeration, not independently fetched product pages."
+  /aliases/0/name:
+    confidence: probable
+    sources: [speedcubeshop-dayan-guhong-pro-plus]
+    note: "SpeedCubeShop's own listing for the 54mm Standard/Core-Magnets SKU states sibling URLs exist for 55mm and 56mm, and a 'maglev-core-magnets' series for all three sizes; only the 54mm Standard page's exact title was directly quoted in the source, so this alias is generalised across sizes/systems by the same pattern."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-pro-plus-2026]

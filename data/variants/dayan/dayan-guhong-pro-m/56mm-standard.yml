@@ -1,0 +1,28 @@
+# variant: dayan-guhong-pro-m--56mm-standard
+# Pass 4. AXIS: size (54/55/56mm) x magnet system (Standard magnetic / MagLev), per the model
+# record's own finding that these are sold as parallel product pages/configuration choices of
+# one design at both TheCubicle and SpeedCubeShop, not separate models (DATA_MODEL §4.2
+# separability-at-assembly test). TheCubicle's own URL structure enumerates all six
+# size x system combinations as distinct SKUs (thecubicle-dayan-collection-2025).
+id: dayan-guhong-pro-m--56mm-standard
+entity: variant
+model_id: dayan-guhong-pro-m
+name: "DaYan GuHong Pro M 3x3 (56mm, Standard)"
+aliases:
+  - name: "DaYan GuHong Pro M 3x3 56mm Standard"
+    retailer: "TheCubicle"
+    source: thecubicle-dayan-collection-2025
+scope_class: core
+edition:
+  types: [standard]
+  designation: "56mm Standard"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-dayan-collection-2025, thecubicle-dayan-guhong-descriptions]
+    note: "TheCubicle's own URL/catalogue path 'dayan-guhong-pro-m-3x3-56mm-standard' names this exact size/system combination (thecubicle-dayan-collection-2025); the '(54mm, Standard)' naming form is drawn from thecubicle-dayan-guhong-descriptions' capture of the 54mm/Standard SKU specifically and generalised to the other five combinations by the same catalogue's own URL pattern."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-dayan-collection-2025]
+    note: "\"Standard\" is the retailer's own configuration-tier word distinguishing this SKU from its sibling magnet system, per the URL path structure. Not yet corroborated by a second independent retailer for this specific size/system combination."
