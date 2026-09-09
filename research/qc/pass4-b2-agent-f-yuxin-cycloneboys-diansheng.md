@@ -217,11 +217,11 @@ candidates_rejected:
       forum-documented batch to a specific item number. Split by documented application
       (stickered/painted) instead, without asserting the catalogue-number mapping."
 escalations:
-  - "Cyclone Boys Metallic 3x3 / Metallic 3x3 M / -m-gradient / -m-macaron: real sold products,
+  - [P4-9] "Cyclone Boys Metallic 3x3 / Metallic 3x3 M / -m-gradient / -m-macaron: real sold products,
     no evidenced base-model relationship to any of the 5 Cyclone Boys models in scope. Not
     created as a variant anywhere. May warrant its own model once a source names the base
     design."
-  - "npm run wayback -- prefix failed on every attempt this session (multiple hosts, multiple
+  - [UNFILED] "npm run wayback -- prefix failed on every attempt this session (multiple hosts, multiple
     retries) while get/list worked normally; blocked a planned DianSheng retailer prefix sweep.
     Tooling issue, not evidence of absence, flagged for whoever owns scripts/wayback.mjs."
 ```

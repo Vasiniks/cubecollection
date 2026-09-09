@@ -277,11 +277,11 @@ zero_model_families:
       channels checked and negative."
 
 escalations:
-  - topic: "yuxin-black-kirin / yuxin-black-kylin spelling"
+  - [UNFILED] topic: "yuxin-black-kirin / yuxin-black-kylin spelling"
     kind: within-family, not a taxonomy violation
     detail: "Manufacturer's own site uses both spellings with identical product text for
       the same item; recorded as an alias, families left untouched."
-  - topic: "yuxin-little-magic-v3 naming"
+  - [UNFILED] topic: "yuxin-little-magic-v3 naming"
     kind: uncertain-name-attestation, not resolved
     detail: "Manufacturer's own product-page title reads 'Small Magic'; filed under
       yuxin-little-magic on category-placement + retailer-naming grounds; /name attestation

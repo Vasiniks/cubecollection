@@ -301,8 +301,8 @@ candidates_rejected:
     reason: "named only in frozen model-record prose; no source file exists; plausibly duplicates the Cubelelo-sourced Dual/Triple/Super-MagLev tiers under different naming, not merged without evidence"
 
 escalations:
-  - "rubiks-classic-cube--impossible (and possibly --phantom): family record raises a WCA-legality question not resolved at variant level per this batch's scope_class-must-match-model instruction; needs a model-level or human decision."
-  - "rubiks-classic-cube--retro: edition.commemorates cannot be populated; no event record exists for Rubik's 50th anniversary and data/events/ is outside this pass's write lane."
-  - "moretry-tianma-x3-plus--zcube-edition: model attachment held at uncertain; source's own URL/title do not confirm it is a '+'-line product; followed the frozen model record's prior classification rather than guessing independently."
-  - "This session's WebSearch tool reported its search budget exhausted on the first query, and WebFetch could not reach web.archive.org at all. All work here is therefore built entirely from the existing data/sources/ corpus; several real, named leads (listed under candidates_rejected) could not be converted into sourced variants purely for lack of working web-research tools this session, not for lack of materiality."
+  - [UNFILED] "rubiks-classic-cube--impossible (and possibly --phantom): family record raises a WCA-legality question not resolved at variant level per this batch's scope_class-must-match-model instruction; needs a model-level or human decision."
+  - [UNFILED] "rubiks-classic-cube--retro: edition.commemorates cannot be populated; no event record exists for Rubik's 50th anniversary and data/events/ is outside this pass's write lane."
+  - [UNFILED] "moretry-tianma-x3-plus--zcube-edition: model attachment held at uncertain; source's own URL/title do not confirm it is a '+'-line product; followed the frozen model record's prior classification rather than guessing independently."
+  - [UNFILED] "This session's WebSearch tool reported its search budget exhausted on the first query, and WebFetch could not reach web.archive.org at all. All work here is therefore built entirely from the existing data/sources/ corpus; several real, named leads (listed under candidates_rejected) could not be converted into sourced variants purely for lack of working web-research tools this session, not for lack of materiality."
 ```

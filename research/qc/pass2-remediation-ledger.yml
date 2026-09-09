@@ -792,6 +792,26 @@ issues:
       rediscovered by the next person who reads a lane report.
     counterevidence: >-
       None. Both failures verified directly against the repository this pass.
+      MECHANISM BUILT 2026-09-09 — `npm run escalations` (scripts/check-escalations.mjs), now
+      part of `npm run check`. It enforces the linkage this issue said did not exist:
+      research report -> machine-readable escalations: block -> ledger issue id -> status.
+      Each arrow is checkable and each was previously absent.
+      THE RETROFIT IS THE FINDING. All 25 declared escalation entries across 9 reports were
+      tagged with a ledger id or UNFILED. Result: SEVEN map to a filed issue (P3-T2, P3-T4,
+      P4-1, P4-2, P4-4 x2, P4-9) and EIGHTEEN WERE NEVER FILED AT ALL. That is this issue
+      measured at the entry level: agents declared findings correctly, in the right place, in a
+      machine-readable block - and 72% of them still went nowhere.
+      The 18 are now loud rather than silent. UNFILED is deliberately NOT an error: the point is
+      that a finding cannot go quiet, not that a lane must stop to file paperwork mid-run. A
+      DANGLING id IS an error, because it means a report cites an issue that does not exist.
+      WHY IT DOES NOT SCAN PROSE. 38 reports use escalation language with no block, and most
+      discuss the concept rather than raise a finding. Treating every mention as an escalation
+      would flag all 38, and a check that cries wolf gets ignored - which is how the archive
+      lost findings in the first place. The contract is narrow: DECLARE an escalation and it
+      must carry an id or UNFILED. The 38 are counted and reported softly, never failed.
+      Format chosen for retrofittability: "- [P4-9] text" rather than a nested id/summary
+      mapping, so all nine existing free-prose blocks were tagged WITHOUT rewriting a word. A
+      convention that forces existing findings to be re-typed is one that gets skipped.
     recommendation: >-
       Make roll-up checkable. In preference order: require every escalation to also be written
       into a canonical record's notes (the practice that saved the ShengShou finding); add a
@@ -972,6 +992,13 @@ issues:
     counterevidence: >-
       No canonical data was lost in any of the four occurrences - only narrative. The records
       themselves have always survived, because agents commit at logical boundaries.
+      CONFIRMED AND ADDRESSED 2026-09-09. P26-8 narrowed the fix to the REPORT layer on the
+      grounds that records already survive, and the retrofit proves the narrowing right: of 25
+      declared escalations, 18 were never filed, while every ledger id referenced anywhere in
+      prose resolves to a real entry. Records and the ledger were consistent with each other
+      all along; the report layer was where findings evaporated.
+      `npm run escalations` now runs inside `npm run check`, so a lane that declares a finding
+      and never files it is visible on the next build rather than on the next audit.
     recommendation: >-
       Strengthens the P26-2 remediation case and narrows it: the fix must protect REPORTS
       specifically, since records already survive. Require an agent to commit a report skeleton

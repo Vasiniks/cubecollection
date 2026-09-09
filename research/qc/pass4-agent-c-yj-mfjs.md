@@ -116,8 +116,8 @@ candidates_rejected:
   - { candidate: "\"[CPS Serviced]\" purchase option seen in MFJS Mini 3x3 45mm/50mm 'Related Products' sidebars", reason: "sidebar widget shows a different product listing, not a purchase option of either page's own SKU; not independently fetched/confirmed this pass" }
   - { candidate: "YJ Appari two retailer mechanism names (Speed Micro Bearing / Speed Micro Actuator)", reason: "same single magnetic SKU under two retailers' independent wording, not a magnetic/non-magnetic split" }
 escalations:
-  - { model_boundary: "YJ MGC Sigma", reason: "TheCubicle sells 'YJ MGC Sigma 3x3' as a standalone product with an explicit first-party mechanism-change statement (magnet architecture, corner caps, finish) matching the pattern already used to admit every other MGC generation as its own model; no model exists for it in the frozen 269-model set. Not created; reported for the model-enumeration owner." }
-  - { pass3_gap: "MFJS Mini 3x3 series", reason: "the frozen family reasoning (mfjs-mini-3x3-50mm.yml) states there are five sizes in the series, but only three (45mm/50mm/keychain-40mm) exist as models; this pass's own CDX sweep independently confirms two further TheCubicle SKUs (30mm and 35mm keychain sizes) exist and are undocumented. Not created; reported for the model-enumeration owner." }
+  - [P4-4] { model_boundary: "YJ MGC Sigma", reason: "TheCubicle sells 'YJ MGC Sigma 3x3' as a standalone product with an explicit first-party mechanism-change statement (magnet architecture, corner caps, finish) matching the pattern already used to admit every other MGC generation as its own model; no model exists for it in the frozen 269-model set. Not created; reported for the model-enumeration owner." }
+  - [P4-4] { pass3_gap: "MFJS Mini 3x3 series", reason: "the frozen family reasoning (mfjs-mini-3x3-50mm.yml) states there are five sizes in the series, but only three (45mm/50mm/keychain-40mm) exist as models; this pass's own CDX sweep independently confirms two further TheCubicle SKUs (30mm and 35mm keychain sizes) exist and are undocumented. Not created; reported for the model-enumeration owner." }
 ```
 
 ## yj-meta3 — DONE

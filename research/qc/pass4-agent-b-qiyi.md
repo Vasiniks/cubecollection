@@ -187,7 +187,7 @@ models_at_zero: []
 candidates_rejected:
   - { candidate: "packaging change (clear box)", model: qiyi-thunderclap-v2, reason: "not a separately marketed edition" }
 escalations:
-  - { finding: "unmodeled QiYi retailer slugs (Dimension, Fluffy, Mini 3.0cm, Void Cube)", action: "flagged for model-researcher, not acted on" }
+  - [P4-2] { finding: "unmodeled QiYi retailer slugs (Dimension, Fluffy, Mini 3.0cm, Void Cube)", action: "flagged for model-researcher, not acted on" }
 ```
 
 (Continuing with M Pro, Valk, and X-Man Design families next.)
