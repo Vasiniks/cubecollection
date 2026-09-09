@@ -1166,7 +1166,9 @@ issues:
       No data is wrong; the warnings are advisory and block nothing.
     recommendation: >-
       Do NOT denormalise a size onto a variant to dodge the warning, and do not alter frozen
-      model specs. Options for later: widen the range, exempt a variant whose size is inherited
+      model specs. Note rule 18 checks weight_g on the same pattern: mfjs-mini-3x3-keychain-40mm
+      surfaced a 41.3g weight warning against a 50-130g range, so the exposure is not limited to
+      size. Options for later: widen the range, exempt a variant whose size is inherited
       rather than overridden, or check the model directly so the signal appears where the value
       actually lives. Until then, expect up to 8 such warnings as Pass 4 proceeds and record
       which lane introduced each.
@@ -1200,5 +1202,68 @@ issues:
     downstream_impact: >-
       If any is a genuine missing model, its variants cannot be enumerated. Bounded at four
       candidates in one manufacturer.
+    owner: main
+    last_updated: "2026-09-08"
+
+  - id: P4-3
+    severity: medium
+    status: needs_human_decision
+    title: "Lanes split on whether a single-configuration model earns a lone standard variant"
+    category: methodology
+    affected_records: "69 lone --standard variants exist; ~146 models sit at zero"
+    evidence: >-
+      Batch 1 produced two incompatible readings of the same brief. Lanes A and B gave EVERY
+      model in scope at least one variant, so a model sold in one configuration carries a bare
+      --standard record: moyu 23/23, qiyi 24/24, x-man 5/5. Lanes C and D left most models at
+      zero: yj 4/23, dayan 8/28, shengshou 4/18. Both readings are defensible. The GAN pilot
+      supports lanes A and B - all 40 GAN models carry at least one variant and gan-354-m's lone
+      standard is exactly that shape. The Pass 4 brief supports lanes C and D, since it states
+      that a model with zero variants is a complete correct result and that variants must not be
+      manufactured to raise a count. 69 lone --standard records now exist archive-wide, 23 of
+      them pre-dating Pass 4 from the GAN pilot.
+    counterevidence: >-
+      A lone --standard record is not empty: it carries an attestation and typically a note
+      stating that no colourway, magnet or coating option was found. It asserts "this model was
+      sold in one configuration", which is a real finding rather than a placeholder. That is why
+      neither reading is wrong, only inconsistent.
+    recommendation: >-
+      Decide the convention BEFORE batch 2, so the remaining ~90 models are enumerated one way.
+      Whichever is chosen, the other half should be reconciled: either add ~146 lone standards,
+      or remove the 69 that exist and record single-configuration findings in the model record
+      instead. Do NOT normalise 146 records silently either way - it is a large mutation and a
+      genuine curatorial choice about whether the variant layer represents configurations or
+      configuration DIFFERENCES.
+    confidence: confirmed
+    downstream_impact: >-
+      "Models at zero" is currently not comparable across manufacturers, so any coverage metric
+      computed from it is misleading until the convention is settled.
+    owner: main
+    last_updated: "2026-09-08"
+
+  - id: P4-4
+    severity: medium
+    status: needs_human_decision
+    title: "Variant work surfaced two Pass 3 model-layer gaps"
+    category: taxonomy-completeness
+    affected_records: "none - escalations only"
+    evidence: >-
+      YJ MGC Sigma is a standalone TheCubicle product carrying an explicit mechanism-change
+      statement of the same kind that justified every other admitted MGC generation, but no model
+      exists for it. Separately, the MFJS Mini 3x3 series is documented as five sizes while only
+      three exist as models, and two further undocumented SKUs were found at 30mm and 35mm
+      keychain. Both found by Pass 4 Agent C and correctly escalated rather than acted on, since
+      a variant pass has no authority over the model layer.
+    counterevidence: >-
+      Retailer SKUs are not by themselves evidence of a distinct model - the archive has a
+      documented false positive from exactly that reasoning. The mini sizes in particular may
+      fall outside RESEARCH_SPEC 2.4, and a keychain may not be a 3x3x3 speedcube at all.
+    recommendation: >-
+      Assess against RESEARCH_SPEC 2.1 and 2.4 alongside P4-2's four QiYi slugs. Three
+      independent model-layer gaps surfaced by variant work in one batch is worth treating as one
+      question rather than three, but it is NOT grounds to reopen broad model enumeration.
+    confidence: probable
+    downstream_impact: >-
+      Variants cannot be enumerated for models that do not exist. Bounded at six candidates
+      across three manufacturers.
     owner: main
     last_updated: "2026-09-08"

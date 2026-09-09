@@ -67,7 +67,80 @@ respawned, and the two that had not committed a skeleton were instructed to do s
 This is the eighth lane death in the project. It is the reason `P26-8`'s skeleton-first rule
 exists, and the two lanes that had followed it were the two that left something behind.
 
+## Batch 1 results — all four lanes merged
+
+**Variants 104 → 257.** Families **132** and models **269** unchanged throughout; **no lane
+touched a canonical taxonomy file.** Sources 470 → 481.
+
+| Lane | Scope | Models | Variants | Models with variants |
+|---|---|---|---|---|
+| **A** | MoYu | 23 | **42** | 23 / 23 |
+| **B** | QiYi + X-Man | 29 | **50** | 29 / 29 |
+| **C** | YJ + MFJS | 33 | **23** | 11 / 33 |
+| **D** | DaYan + ShengShou | 46 | **35** | 12 / 46 |
+| | **total** | **131** | **150** | |
+
+Archive-wide: **123 of 269 models carry variants**, 146 at zero. `npm run check`: **0 errors,
+11 advisory warnings** — the 5-warning baseline plus 6 rule-18 size/weight false positives
+(`P4-1`).
+
+## What the lanes refused
+
+The rejections matter as much as the records. Lane A refused TheCubicle's in-house RS3M tuning
+tiers (Angstrom, Mystic, Pro Shop, Celeritas, MAX) as aliases of the **`thecubicle` service
+manufacturer** rather than MoYu configurations, and refused undeclared batch defects as
+`model.revisions[]` territory. Lane B refused a packaging change, a stickered/stickerless split
+nobody marketed separately, three magnet-strength tiers, and cosmetic centre-cap slugs. Lane D
+refused a stock colour, two gift-box SKUs, a spare-parts SKU, and a stickerless-naming lead
+carrying HaiTun/ZhanLang false-positive risk.
+
+Lane D also refused the **ShengShou Crazy "Jelly LE"** — a genuine 1400-unit limited edition —
+because which generation it belongs to is unestablished, and left it unrecorded rather than
+guessing a parent. That is the correct call, and it exposed a schema gap: there is no affordance
+for a variant whose parent is honestly undetermined.
+
+## Two defects this batch found
+
+**Rule 15 forced denormalisation** (fixed, `a7ffb12`). A consequence of the P26-13 change: rule
+15 read `scope_justification` and `legality` directly off the record, so all twelve DaYan Bermuda
+variants restated their model's entire argument, each with a note saying the validator required
+it. Rule 15 now resolves through the parent model, the twelve are stripped back, and fixtures
+guard both directions — inheritance must not become an excuse for absence.
+
+**Rule 18 fires late and wide** (`P4-1`). It checks variants only, resolving size and weight from
+the parent, so an out-of-range model is invisible until a variant exists beneath it. Eight models
+sit outside the window legitimately, from a 15mm `maru-nano` to a 70mm `shengshou-legend-big`.
+Both affected lanes were warned mid-flight **not** to dodge it by denormalising a size onto a
+variant, and neither did.
+
+## The open convention question — `P4-3`, blocking batch 2
+
+The lanes split on the same brief. **A and B gave every model at least one variant**, so a
+single-configuration model carries a bare `--standard`. **C and D left most models at zero.**
+Both are defensible: the GAN pilot supports A/B (all 40 GAN models carry one, and
+`gan-354-m--standard` is that exact shape), while the Pass 4 brief supports C/D ("a model with
+zero variants is a complete correct result").
+
+69 lone `--standard` records now exist, 23 of them predating Pass 4. **"Models at zero" is
+therefore not comparable across manufacturers**, and any coverage metric built on it misleads
+until this is settled. It should be decided before batch 2, and reconciled either way — not
+normalised silently, because it is a real curatorial choice about whether the variant layer
+represents *configurations* or *configuration differences*.
+
+## Escalations to the model layer — `P4-2`, `P4-4`
+
+Three model-layer gaps surfaced from variant work in one batch: four QiYi retailer slugs with no
+frozen model, **YJ MGC Sigma** (an explicit mechanism-change statement, no model), and the
+**MFJS Mini series** (documented as five sizes, three exist, two further SKUs found). All were
+escalated, none acted on — a variant pass has no authority over the model layer.
+
+## Remaining — batch 2
+
+~90 models: YuXin 8, DianSheng 6, WitEden 6, Cyclone Boys 5, MoreTry 5, Rubik's 5, FangShi 4,
+Maru 4, and the long tail. **Blocked on the `P4-3` convention decision.**
+
 ## Status
 
-**IN PROGRESS.** Counts at last verification: 132 families · 269 models · **104 variants** ·
-470 sources. `npm run check` green (0 errors, 5 advisory).
+**BATCH 1 COMPLETE.** 132 families · 269 models · **257 variants** · 481 sources ·
+54 manufacturers. All variant `model_id` references resolve, no duplicate ids, no dangling
+attestation sources.
