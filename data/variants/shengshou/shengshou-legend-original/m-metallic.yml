@@ -1,0 +1,32 @@
+# variant: shengshou-legend-original--m-metallic
+# Pass 4. AXIS: coating/finish combined with magnet configuration. A distinct catalogue SKU,
+# "shengshou-legend-3x3-m-metallic" (thecubicle-shengshou-products-prefix-2026, earliest
+# capture 2024-04-19) — the "M" prefix follows this archive's general ShengShou naming
+# convention for a magnetic configuration (cf. shengshou-mr-m, shengshou-fangyuan-v2-m,
+# shengshou-yufeng "3x3 M"), combined with the same "Metallic" finish as the coating-only
+# sibling SKU. No descriptive paragraph for this specific SKU was independently fetched this
+# session; identity/existence only.
+id: shengshou-legend-original--m-metallic
+entity: variant
+model_id: shengshou-legend-original
+name: "ShengShou Legend 3x3 M Metallic"
+aliases:
+  - name: "ShengShou Legend 3x3 M Metallic"
+    retailer: "TheCubicle"
+    source: thecubicle-shengshou-products-prefix-2026
+scope_class: core
+edition:
+  types: [standard]
+  designation: "M Metallic"
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "TheCubicle's own catalogue path 'shengshou-legend-3x3-m-metallic' names this exact
+      SKU. The 'M' is read as this line's magnetic-configuration marker by analogy with this
+      manufacturer's other 'M'-suffixed products, not from a fetched description of this
+      specific page; no magnet_configuration/coating detail is set in config for that reason."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-shengshou-products-prefix-2026]

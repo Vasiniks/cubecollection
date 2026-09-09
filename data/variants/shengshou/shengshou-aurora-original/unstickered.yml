@@ -1,0 +1,31 @@
+# variant: shengshou-aurora-original--unstickered
+# Pass 4. AXIS: sticker application. A distinct catalogue SKU, "shengshou-aurora-3x3-
+# unstickered" (thecubicle-shengshou-products-prefix-2026, earliest capture 2020-09-20), sold
+# alongside the base "shengshou-aurora-3x3" listing at the same retailer.
+id: shengshou-aurora-original--unstickered
+entity: variant
+model_id: shengshou-aurora-original
+name: "ShengShou Aurora 3x3 (Unstickered)"
+aliases:
+  - name: "ShengShou Aurora 3x3 Unstickered"
+    retailer: "TheCubicle"
+    source: thecubicle-shengshou-products-prefix-2026
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /name:
+    confidence: probable
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "TheCubicle's own catalogue path 'shengshou-aurora-3x3-unstickered' names this exact
+      SKU; no descriptive paragraph for this specific page was independently fetched this
+      session, only the URL/catalogue enumeration."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "The retailer's own term is 'unstickered'; mapped to the closest available vocabulary
+      value 'stickerless'. Not independently confirmed by a fetched product description this
+      session."

@@ -1,0 +1,26 @@
+# variant: shengshou-aurora-original--standard
+# Pass 4. The base ShengShou Aurora 3x3 configuration, sold at "shengshou-aurora-3x3"
+# (thecubicle-shengshou-aurora-3x3-product), alongside a sibling "unstickered" SKU this pass
+# enumerates separately.
+id: shengshou-aurora-original--standard
+entity: variant
+model_id: shengshou-aurora-original
+name: "ShengShou Aurora 3x3"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  application: stickered
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-shengshou-aurora-3x3-product, thecubicle-shengshou-products-prefix-2026]
+    note: "The base, unsuffixed catalogue SKU; a sibling 'unstickered' SKU is enumerated as a
+      separate variant of this same model."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-shengshou-products-prefix-2026]
+    note: "Inferred only by contrast with the sibling 'shengshou-aurora-3x3-unstickered' SKU
+      (2020-09-20 capture); no source directly states this base SKU is stickered in its own
+      words."
