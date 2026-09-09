@@ -13,6 +13,18 @@ smart:
   is_smart: true
 status: stub
 attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-slug-prefix-2026, gancube-gan12-ui-sp-product]
+    note: "SIBLING SEARCH RECORDED 2026-09-09, answering rule 25's warning that a designation
+      usually means siblings exist. WHAT WAS SEARCHED: TheCubicle by CDX prefix on three slug
+      forms - only `gan12-ui` returns the line - plus the three live 3x3 catalogues. WHAT WAS
+      FOUND: exactly two SP paths, `gan12-ui-sp-3x3-with-basic-powerpod` and
+      `-with-standard-powerpod`. They are NOT configuration siblings: the PowerPod is GAN's
+      wireless charging dock and the two paths differ in which dock tier is in the box, which
+      this archive's rules classify as a bundle. So the designation's siblings at this retailer
+      are bundle-level, and the model remains one configuration. What 'SP' abbreviates is still
+      not stated by any source found, and this attestation does not pretend otherwise."
   /smart/is_smart:
     confidence: confirmed
     sources: [gancube-gan12-ui-sp-product]

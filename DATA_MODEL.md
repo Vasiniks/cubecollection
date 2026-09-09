@@ -787,7 +787,14 @@ Record statuses and their meanings are in §3.1.
 22. `maglev` set while `core_system` is incompatible
 23. A variant overriding a model spec with no attestation on the override
 24. A price observation more than 10× the MSRP without `kind: auction_sold`
-25. A model with exactly one variant *and* an edition designation set — usually a missed variant
+25. A model with exactly one variant *and* an edition designation set — usually a missed variant.
+    *(amended 2026-09-09)* Satisfied by an attestation on `/edition/designation` recording the
+    sibling search and its result. The message is a **prompt**, and once someone has looked, the
+    prompt has done its job; left unsatisfiable it becomes a permanent warning a correct record
+    cannot clear, which is how a warning list stops being read. Same escape rule 41 uses, and it
+    demands the same thing — a real attestation with at least one source, not an empty key.
+    `zz-ok-designated--standard` exists to be **ignored** and the selftest asserts both that the
+    allowance holds and that the fail branch still fires beside it.
 26. **`colorway.application: stickerless` with populated `faces[].material: vinyl_sticker`** *(new)*
 27. **A variant with `legality.wca_status: not_legal` and `scope_class: core`** *(new)*
 

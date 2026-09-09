@@ -1,0 +1,23 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Must NOT trip rule 25. One variant, carrying a designation — the exact shape the rule fires on —
+# but with an /edition/designation attestation recording that the sibling search was performed
+# and what it returned. Rule 25's message is a PROMPT, and once someone has looked, the prompt has
+# done its job.
+#
+# Without this fixture the escape added on 2026-09-09 is untested, and an untested escape is how a
+# rule quietly stops firing on everything.
+id: zz-ok-designated--standard
+entity: variant
+model_id: zz-ok-designated
+name: ZZ OK Designated Standard
+scope_class: core
+edition:
+  designation: "SP"
+  types: [standard]
+status: stub
+attestations:
+  "/edition/designation":
+    confidence: probable
+    sources: [zz-samepub-a]
+    note: Fixture value. Stands for the recorded sibling search. The escape requires a real
+      attestation WITH at least one source, so an empty key must not satisfy it.

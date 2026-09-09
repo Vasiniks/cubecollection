@@ -187,7 +187,22 @@ for (const rec of models) {
   report.warn('40', rec.file, `${which} ${modelDate.value} (${modelDate.qualifier}) predates family "${family.id}" introduced ${famDate.value} (${famDate.qualifier}). Either the family date understates its own line, or this model belongs elsewhere.`);
 }
 
-// 25 — a designated edition implies siblings
+// 25 — a designated edition implies siblings, until someone has looked
+//
+// AMENDED 2026-09-09. The rule fired purely on structure — one variant carrying a designation —
+// with no way to satisfy it except by adding siblings. But its message is a PROMPT ("siblings
+// usually exist that have not been enumerated"), and once someone has enumerated and recorded
+// what they found, the prompt has done its job. Left as-is it becomes a permanent warning that a
+// correct record cannot clear, which is how a warning list stops being read.
+//
+// Rule 41 already solved this shape: a baseline satisfies it by carrying an /edition/types
+// attestation that records the differentiation search. Rule 25 now takes the same escape via an
+// attestation on /edition/designation, and demands the same thing of it — a real attestation
+// with at least one source, not an empty key.
+//
+// gan-ui-12-sp is the case that prompted it: a CDX sweep found two SP paths, both PowerPod
+// bundle tiers rather than configurations, so the model genuinely has one configuration and the
+// record now says so with the search attached.
 const variantsByModel = new Map();
 for (const v of variants) {
   if (!variantsByModel.has(v.doc.model_id)) variantsByModel.set(v.doc.model_id, []);
@@ -195,7 +210,8 @@ for (const v of variants) {
 }
 for (const [modelId, list] of variantsByModel) {
   if (list.length !== 1) continue;
-  if (list[0].doc.edition?.designation) {
+  const searched = (list[0].doc.attestations ?? {})['/edition/designation'];
+  if (list[0].doc.edition?.designation && !(searched?.sources ?? []).length) {
     report.warn('25', list[0].file, `${modelId} has one variant, and it carries the edition designation "${list[0].doc.edition.designation}". A designation usually means siblings exist that have not been enumerated.`);
   }
 }

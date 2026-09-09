@@ -1,0 +1,10 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Parent for zz-ok-designation-searched. Exists so rule 25's ESCAPE can be exercised on a model
+# with exactly one variant, which is the only shape the rule looks at.
+id: zz-ok-designated
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ OK Designated
+scope_class: core
+status: stub

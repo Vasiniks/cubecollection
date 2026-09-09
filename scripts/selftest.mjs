@@ -133,6 +133,15 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   // CITATION branches, and the rule is only correct if it tells them apart — reporting them
   // alike raised 5 false positives out of 8 on real data. Assert each message specifically,
   // and assert that the chronological pair is NOT accused of double-counting.
+  // Rule 25 gained an escape on 2026-09-09 — a recorded sibling search satisfies it. An untested
+  // escape is how a rule quietly stops firing on everything, so assert the allowance holds AND
+  // that the fail branch still fires beside it.
+  /zz-ok-designated[^\n]*\[25\]|\[25\][^\n]*zz-ok-designated/.test(l.out)
+    ? bad('rule 25 spares a recorded sibling search', 'fired on a designation whose search is attested')
+    : ok('rule 25 spares a recorded sibling search', 'an attested /edition/designation satisfies the prompt');
+  /zz-bad-solo[^\n]*\[25\]|\[25\][^\n]*zz-bad-solo/.test(l.out)
+    ? ok('rule 25 still fires unsearched', 'a lone designated variant with no attestation is caught')
+    : bad('rule 25 still fires unsearched', 'the escape swallowed the fail branch');
   // Rule 49 removes a record from the PUBLIC bundle, so its allowance matters as much as its
   // fail branch: without zz-ok-signed-exclusion the rule would be indistinguishable from one
   // forbidding reference_only outright, and the archive uses that class legitimately.
