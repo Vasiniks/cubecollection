@@ -12,6 +12,17 @@ smart:
   is_smart: true
 status: stub
 attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-slug-prefix-2026]
+    note: "ASSESSMENT CLAIM, added 2026-09-09 closing part of ledger P4-5. WHAT WAS SEARCHED: three
+      live 3x3 catalogues (zero SKUs - discontinued), then TheCubicle by CDX prefix on `gan-ui`,
+      `gan-12-ui` and `gan12-ui`. WHAT WAS FOUND: the eight-path `gan12-ui` enumeration contains
+      NO mini path at all, so TheCubicle appears never to have stocked this model and its
+      catalogue cannot speak to the model's configurations either way. THIS IS A WEAKER CLAIM
+      THAN ITS SIBLINGS AND SAYS SO: it records that one retailer's catalogue was searched and
+      did not hold the product, NOT that the model has one configuration. GAN's own site is the
+      evidence that would settle it and was not reachable this pass."
   /smart/is_smart:
     confidence: probable
     sources: [thecubicle-gan-mini-ui-free-play]

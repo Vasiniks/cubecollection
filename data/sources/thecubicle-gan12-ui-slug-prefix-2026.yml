@@ -1,0 +1,58 @@
+# source: thecubicle-gan12-ui-slug-prefix-2026
+# Created 2026-09-09. Companion to thecubicle-gan356-slug-prefix-2026: the GAN ui line is filed
+# under `gan12-ui`, not `gan-ui` or `gan-12-ui`, and a sweep on either of those returns nothing.
+# Same slug-form failure mode as the 356 line - see ledger P26-3.
+id: thecubicle-gan12-ui-slug-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/gan12-ui* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/gan12-ui&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=60"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of thecubicle.com/products/gan12-ui, 8 distinct product URLs, not
+  truncated. Reproducible with `npm run wayback -- prefix thecubicle.com/products/gan12-ui
+  --limit 60`. Sweeps of `gan-ui` and `gan-12-ui` return only bare stubs and one blank centre-cap
+  accessory, which is why this form had to be found before the line could be assessed at all.
+
+  The 8 distinct product paths, verbatim:
+
+    gan12-ui
+    gan12-ui-free-play
+    gan12-ui-free-play-with-powerpod
+    gan12-ui-maglev-3x3-10th-anniversary-edition
+    gan12-ui-maglev-3x3-powerpod-2026-edition
+    gan12-ui-maglev-with-powerpod
+    gan12-ui-sp-3x3-with-basic-powerpod
+    gan12-ui-sp-3x3-with-standard-powerpod
+
+  WHAT THE POWERPOD PATHS ARE, AND WHY THEY ARE NOT CONFIGURATIONS. The PowerPod is GAN's
+  wireless charging dock. The page for gan12-ui-free-play-with-powerpod, fetched 2026-09-09,
+  titles itself "GAN12 ui Free Play (with PowerPod)" and its description describes the CUBE -
+  "the modern GAN tension system, adjustable magnets, corner/core magnetization, and UV coating"
+  - with no claim that the cube itself differs from the version sold without the dock. The
+  difference is what is in the box.
+  This archive's variant rules exclude a bundle explicitly, and a cube packaged with an
+  accessory is a bundle however the retailer titles it. The same reading applies to
+  gan12-ui-sp-3x3-with-basic-powerpod versus -with-standard-powerpod: two accessory tiers, one
+  cube.
+
+  NOT ACTIONED HERE: gan12-ui-maglev-3x3-10th-anniversary-edition and
+  gan12-ui-maglev-3x3-powerpod-2026-edition are NAMED editions and are genuine variant material
+  for gan-ui-12-maglev if the archive holds that model. Recorded so they are findable.
+preservation_note: "CDX prefix enumeration output is the primary evidence; the locator is the CDX
+  query that reproduces it, per this archive's convention for sweeps that do not reduce to one
+  page's text (RESEARCH_SPEC 3.5). Run 2026-09-09."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure, plus one product page fetched directly to
+  establish how the PowerPod paths differ from their base.
+  ESTABLISHES: which paths TheCubicle published under this prefix, and that the PowerPod paths
+  differ from their base by package contents rather than by any stated difference in the cube.
+  DOES NOT ESTABLISH: that GAN sells no other configuration of these models elsewhere. A
+  single-retailer enumeration bounds one catalogue.
+status: sourced

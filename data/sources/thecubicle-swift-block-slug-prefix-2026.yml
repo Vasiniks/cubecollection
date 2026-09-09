@@ -1,0 +1,46 @@
+# source: thecubicle-swift-block-slug-prefix-2026
+# Created 2026-09-09. Part of the slug-form sweep family opened by
+# thecubicle-gan356-slug-prefix-2026 — see ledger P26-3 for why one slug form is not the line.
+id: thecubicle-swift-block-slug-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/swift-block* — product URL enumeration"
+publisher: "TheCubicle"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/swift-block&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=80"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of thecubicle.com/products/swift-block, 8 distinct product URLs,
+  not truncated. Reproducible with `npm run wayback -- prefix thecubicle.com/products/swift-block
+  --limit 80`.
+
+  The distinct product paths, verbatim:
+
+    swift-block
+    swift-block-355s-3x3
+    swift-block-3x3-maglev
+    swift-block-super-maglev-frosted-3x3
+    swift-block-super-maglev-uv-3x3
+    swift-block-wislide-klotski-number-pieces-set
+    swift-block-wislide-smart-klotski-puzzle
+    swift-block-wislide-smart-klotski-puzzle-uv-coated
+
+  WHAT IT ESTABLISHES. `swift-block-3x3-maglev` stands alone with no coated or edition sibling,
+  while `swift-block-super-maglev-frosted-3x3` and `swift-block-super-maglev-uv-3x3` are TWO
+  configurations of the Super MagLev. The method therefore distinguishes one from many within
+  the same sweep, which is what makes a single-path result evidence rather than a failed search.
+  Out of 3x3 scope: the three wislide klotski paths are sliding puzzles, not twisty puzzles.
+preservation_note: "CDX prefix enumeration output is the primary evidence; the locator is the CDX
+  query that reproduces it, per this archive's convention for sweeps that do not reduce to one
+  page's text (RESEARCH_SPEC 3.5). Run 2026-09-09."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: which product paths TheCubicle has published under this prefix, and therefore
+  which models it sold in more than one configuration and which in only one.
+  DOES NOT ESTABLISH: anything about other retailers, or configurations the manufacturer sold
+  that this retailer never stocked. A single-retailer enumeration bounds one catalogue.
+status: sourced

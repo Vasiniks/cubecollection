@@ -12,6 +12,20 @@ smart:
   is_smart: true
 status: stub
 attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-slug-prefix-2026]
+    note: "ASSESSMENT CLAIM, added 2026-09-09 closing part of ledger P4-5. WHAT WAS SEARCHED: three
+      live 3x3 catalogues (2026-09-09, zero SKUs - discontinued), then TheCubicle by CDX prefix
+      on THREE slug forms, `gan-ui`, `gan-12-ui` and `gan12-ui`; only the last returns the line
+      at all. WHAT WAS FOUND: two paths, `gan12-ui-free-play` and
+      `gan12-ui-free-play-with-powerpod`. The second is NOT a second configuration. The PowerPod
+      is GAN's wireless charging dock; the with-PowerPod page describes the same cube (same
+      tension system, magnets, UV coating) and claims no difference in the puzzle, so what
+      differs is what is in the box. This archive's variant rules exclude a bundle explicitly,
+      and a cube packaged with an accessory is a bundle however the retailer titles it. One
+      configuration, and the search that found the second path is what makes that a result
+      rather than an assumption."
   /smart/is_smart:
     confidence: confirmed
     sources: [gancube-gan12-ui-freeplay-product]

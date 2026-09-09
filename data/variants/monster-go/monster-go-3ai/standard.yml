@@ -15,6 +15,17 @@ smart:
   battery: "User-replaceable battery; up to 280 hours playtime, per GAN's own copy."
 status: stub
 attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-monstergo-slug-prefix-2026]
+    note: "ASSESSMENT CLAIM, added 2026-09-09 closing part of ledger P4-5. WHAT WAS SEARCHED: three
+      live 3x3 catalogues (zero SKUs), then TheCubicle by CDX prefix on BOTH slug forms -
+      `monster-go` returns one bare stub, `monstergo` returns 18 distinct products. WHAT WAS
+      FOUND: exactly one path for this model, `monstergo-ai-3x3`, with no edition or
+      configuration sibling. The same enumeration surfaces siblings where they exist elsewhere
+      in the Monster Go line (cloud, rainbow, ut, traditional, magnetic, m-edu are all separate
+      paths), so a single path here is a result rather than a gap in the search. Bounds this
+      retailer only."
   /smart/is_smart:
     confidence: confirmed
     sources: [gancube-monster-go-3ai-smart-cube-product]

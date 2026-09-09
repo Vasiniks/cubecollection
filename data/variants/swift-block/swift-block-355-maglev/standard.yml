@@ -10,3 +10,14 @@ scope_class: core
 edition:
   types: [standard]
 status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-swift-block-slug-prefix-2026]
+    note: "ASSESSMENT CLAIM, added 2026-09-09 closing part of ledger P4-5. WHAT WAS SEARCHED: three
+      live 3x3 catalogues (zero SKUs), then TheCubicle by CDX prefix on `swift-block`, which
+      returns 8 distinct paths. WHAT WAS FOUND: one path for this model,
+      `swift-block-3x3-maglev`, with no coated or edition sibling. The same enumeration DOES
+      surface siblings for the line's other model - `swift-block-super-maglev-frosted-3x3` and
+      `-uv-3x3` are two configurations of the Super MagLev - so the method distinguishes one
+      from many, which is what makes a single path evidence. Bounds this retailer only."

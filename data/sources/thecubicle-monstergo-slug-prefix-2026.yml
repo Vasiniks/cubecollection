@@ -1,0 +1,62 @@
+# source: thecubicle-monstergo-slug-prefix-2026
+# Created 2026-09-09. Part of the slug-form sweep family opened by
+# thecubicle-gan356-slug-prefix-2026 — see ledger P26-3 for why one slug form is not the line.
+id: thecubicle-monstergo-slug-prefix-2026
+entity: source
+kind: retailer
+title: "thecubicle.com/products/monstergo* — product URL enumeration (alternate slug form)"
+publisher: "TheCubicle"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/monstergo&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=200"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of thecubicle.com/products/monstergo, 18 distinct product URLs,
+  not truncated. Reproducible with `npm run wayback -- prefix thecubicle.com/products/monstergo
+  --limit 200`.
+
+  The distinct product paths, verbatim:
+
+    monstergo
+    monstergo-2x2
+    monstergo-3x3-cloud
+    monstergo-3x3-m-edu
+    monstergo-3x3-magnetic
+    monstergo-3x3-rainbow
+    monstergo-3x3-traditional
+    monstergo-3x3-ut
+    monstergo-ai-3x3
+    monstergo-cube-mat
+    monstergo-flower-snake
+    monstergo-mirror-cube
+    monstergo-pyraminx
+    monstergo-skewb
+    monstergo-snake
+    monstergo-snake-v2
+    monstergo-spelling-mosaic-cubes-3x3-pack-of-9
+    monstergo-spelling-mosaic-cubes-4x4-pack-of-16
+
+  WHY THIS FORM. A sweep of thecubicle.com/products/monster-go — the hyphenated spelling the
+  archive uses for the manufacturer id — returns ONE bare stub. The retailer files the entire
+  line under `monstergo`. Same failure mode as the GAN 356 line (ledger P26-3).
+
+  WHAT IT ESTABLISHES FOR THE 3x3 MODELS. The line is sold as separate paths per product —
+  cloud, rainbow, ut, traditional, magnetic, m-edu and ai are each their own path — so the
+  enumeration distinguishes siblings from singletons. `monstergo-ai-3x3` has no sibling.
+  NOT FOUND: no `monstergo-352` path of any form, so TheCubicle appears never to have stocked
+  the Monster Go 352 M, whose evidence in this archive is GAN's own site.
+  Out of 3x3 scope and listed only so the sweep is reproducible: 2x2, pyraminx, skewb, mirror
+  cube, flower snake, snake, snake-v2, the cube mat, and the spelling-mosaic multipacks.
+preservation_note: "CDX prefix enumeration output is the primary evidence; the locator is the CDX
+  query that reproduces it, per this archive's convention for sweeps that do not reduce to one
+  page's text (RESEARCH_SPEC 3.5). Run 2026-09-09."
+accessed: "2026-09-09"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-09"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: which product paths TheCubicle has published under this prefix, and therefore
+  which models it sold in more than one configuration and which in only one.
+  DOES NOT ESTABLISH: anything about other retailers, or configurations the manufacturer sold
+  that this retailer never stocked. A single-retailer enumeration bounds one catalogue.
+status: sourced
