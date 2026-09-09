@@ -1,0 +1,27 @@
+# variant: moyu-rs3m-v5--ballcore-uv
+# Pass 4. See standard.yml for the section-heading evidence. Wiki: "and in the UV version, a
+# core-magnetic system" — the top tier, combining UV coating with a ball/core-magnet mechanism.
+id: moyu-rs3m-v5--ballcore-uv
+entity: variant
+model_id: moyu-rs3m-v5
+name: "MoYu RS3M V5 Ballcore UV"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Ballcore UV"
+config:
+  coating: uv
+  core_system: ball_core
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+  /config/coating:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'in the UV version, a core-magnetic system.'"
+  /config/core_system:
+    confidence: reported
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki's 'core-magnetic system' read as this line's ball-core mechanism, consistent with the Ballcore-named tiers elsewhere in the RS3M/WeiLong families."

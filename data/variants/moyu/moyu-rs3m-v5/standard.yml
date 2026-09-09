@@ -1,0 +1,31 @@
+# variant: moyu-rs3m-v5--standard
+# Pass 4. Named in the model's own alias ("MoYu RS3M V5 Standard/DAS/DAS with Robot/MagLev/
+# Ballcore UV", from the wiki's own section heading) as one of five parallel configurations.
+# Wiki body text: "It comes with either a spring, a spring-and-ratchet system with either a
+# spring or maglev, and in the UV version, a core-magnetic system." Read as: Standard = basic
+# spring, no ratchet/DAS mechanism.
+#
+# NOTE: the wiki states six retail prices ("8.99, 9.99, 12.99, 15.99, 17.99, and 24.99 for
+# each respective version") against five named tiers. This mismatch is not resolved here — no
+# sixth tier name is fabricated to reconcile the count. See report.
+id: moyu-rs3m-v5--standard
+entity: variant
+model_id: moyu-rs3m-v5
+name: "MoYu RS3M V5 Standard"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Standard"
+config:
+  adjustment_system: screw
+  maglev: none
+status: stub
+attestations:
+  /edition/designation:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Named in the wiki's own section heading listing five configurations; body text describes the tiers generically rather than naming each one against its own feature set."
+  /config/adjustment_system:
+    confidence: uncertain
+    sources: [speedsolving-wiki-moyu]
+    note: "Wiki: 'It comes with either a spring...' read as the basic, non-ratcheted tier being Standard, by elimination against the other four named tiers."
