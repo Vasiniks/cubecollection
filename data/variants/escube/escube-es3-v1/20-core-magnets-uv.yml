@@ -1,0 +1,44 @@
+# variant: escube-es3-v1--20-core-magnets-uv
+# Pass 4. The top of three sold ES3 configurations per SpeedCubeShop's own 'Version comparison'
+# table (speedcubeshop-es3-debut-brand-2025) — see escube-es3-v1--standard.yml's header for the
+# full table. "20-Core Magnets" adds a UV exterior over the Standard row's frosted finish, at
+# 76 total magnets.
+id: escube-es3-v1--20-core-magnets-uv
+entity: variant
+model_id: escube-es3-v1
+name: "ESCube ES3 3x3 (20-Core Magnets, UV)"
+scope_class: core
+config:
+  coating: uv
+  magnet_strength: "76 magnets total (48 factory piece magnets + 20 core magnets), per
+    SpeedCubeShop's own version-comparison table; not a normalised count vocabulary value."
+  weight_g: 79.8
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "Differentiation search performed: named as its own row ('20-Core Magnets') in
+      SpeedCubeShop's own version-comparison table, distinguished from Standard by both magnet
+      count and a UV exterior finish. No further limited/commemorative/collaboration language
+      found; read as a regular retail configuration option, not a marked special edition,
+      despite the coating upgrade."
+  /config/coating:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "'UV exterior' per the version-comparison table, as recorded in the model's own
+      description."
+  /config/magnet_strength:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+  /config/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+  /colorway/application:
+    confidence: uncertain
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "Inferred from the absence of sticker language; not a direct statement for this row."

@@ -1,0 +1,40 @@
+# variant: escube-es3-v1--8-core-magnets
+# Pass 4. The middle of three sold ES3 configurations per SpeedCubeShop's own 'Version
+# comparison' table (speedcubeshop-es3-debut-brand-2025) — see escube-es3-v1--standard.yml's
+# header for the full table. "8-Core Magnets" adds 16 magnets over the Standard row's 48
+# (64 total) with no stated exterior-finish change.
+id: escube-es3-v1--8-core-magnets
+entity: variant
+model_id: escube-es3-v1
+name: "ESCube ES3 3x3 (8-Core Magnets)"
+scope_class: core
+config:
+  magnet_strength: "64 magnets total (48 factory piece magnets + 8 core magnets), per
+    SpeedCubeShop's own version-comparison table; not a normalised count vocabulary value."
+  weight_g: 79.1
+edition:
+  types: [standard]
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "Differentiation search performed: named as its own row ('8-Core Magnets') in
+      SpeedCubeShop's own version-comparison table on the single ES3 product page, distinct
+      from 'Standard' and '20-Core Magnets' by magnet count alone (no coating/edition-name
+      difference stated for this specific row). Read as one of the line's regular retail
+      configurations, not a limited or otherwise-marked edition."
+  /config/magnet_strength:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "64 total magnets, per the model's own recorded reading of the version-comparison
+      table (see escube-es3-v1--standard.yml's header note on how this table was checked)."
+  /config/weight_g:
+    confidence: probable
+    sources: [speedcubeshop-es3-debut-brand-2025]
+  /colorway/application:
+    confidence: uncertain
+    sources: [speedcubeshop-es3-debut-brand-2025]
+    note: "Inferred from the absence of sticker language; not a direct statement for this row."

@@ -1,0 +1,47 @@
+# variant: escube-air-v1--standard
+# Pass 4. The 20-magnet ball-core configuration is ESCube Air's own primary/eponymous
+# configuration — TheCubicle's own model-defining product name and description
+# (thecubicle-escube-air-3x3-20-magnet-ball-core) describe exactly this configuration ("This is
+# the 20 magnet version..."), and SpeedCubeShop's independent listing for the same product
+# (speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core) carries a "Version: 20-Magnet
+# Ball-Core / 8-Magnet Ball-Core" selector on the SAME page, confirming 20-Magnet Ball-Core as
+# the default/first-listed option. Recorded as this model's baseline; the 8-Magnet option is
+# its own sibling stub (escube-air-v1--8-magnet-ball-core).
+id: escube-air-v1--standard
+entity: variant
+model_id: escube-air-v1
+name: "ESCube Air 3x3 (20-Magnet Ball-Core)"
+aliases:
+  - name: "ES3 Air 3x3 (Magnetic, 20-Magnet Ball-Core)"
+    retailer: "SpeedCubeShop"
+    source: speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core
+scope_class: core
+edition:
+  types: [standard]
+  designation: "20-Magnet Ball-Core"
+colorway:
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
+    note: "Differentiation search performed: two independent Tier 2 retailers describe this
+      exact 20-magnet ball-core configuration as the model's own defining/default product, one
+      of them (SpeedCubeShop) on a page carrying an explicit two-way version selector against
+      the 8-Magnet Ball-Core alternative. No limited/commemorative/collaboration language found
+      for this configuration at either retailer; read as the regular retail configuration."
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
+    note: "Both retailers' own product titles bracket this configuration name directly onto
+      the model name ('ESCube Air 3x3 (20-Magnet Ball-Core)'; SpeedCubeShop's version selector
+      names the same string). `weight_g` is deliberately left unset here: TheCubicle's own
+      'Gross Weight: 132g' (packaged) and SpeedCubeShop's '~78g' for the same configuration use
+      different, unreconciled weight conventions (documented on the model record,
+      escube-air-v1.yml); recording either without resolving the gap would misstate a settled
+      fact, so the ambiguity is carried forward at variant level rather than picked arbitrarily."
+  /colorway/application:
+    confidence: uncertain
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core]
+    note: "Inferred from the absence of sticker language; not a direct 'stickerless' statement."
