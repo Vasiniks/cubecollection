@@ -1,0 +1,63 @@
+# source: thecubicle-dayan-guhong-v2-diy-kit-2020
+# Lane E depth research 2026-09-12, DaYan variant-depth pass. Found via a fresh
+# `npm run wayback -- prefix thecubicle.com/products/dayan-guhong --limit 300` sweep run this
+# session (the existing thecubicle-dayan-guhong-product-urls source's own excerpt names
+# "dayan-guhong-diy-kit" but does not call out this second, V2-specific DIY path, which the
+# 2026-09-11 depth pass that added dayan-guhong-v1--diy-kit did not chase).
+id: thecubicle-dayan-guhong-v2-diy-kit-2020
+entity: source
+kind: retailer
+title: "DaYan GuHong V2 - DIY Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-guhong-v2-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200921093233id_/https://www.thecubicle.com/products/dayan-guhong-v2-diy-kit"
+excerpt: |-
+  Page title as captured: "DaYan GuHong V2 - DIY Kit – TheCubicle".
+
+  Meta/OG description, verbatim: "This is the Do-It-Yourself (DIY) version of this product. To
+  see the Assembled version of this product, please click here. The GuHong returns with
+  torpedoes! This more recent version of the DaYan GuHong feels smoother than its predecessor
+  and does not pop."
+
+  THE RETAILER PAIRS THE TWO ITSELF, identically to the V1 DIY kit: this is explicitly named
+  as the unassembled form of "this product", with a link back to the assembled version. The
+  "torpedoes... does not pop" line is the same identity-establishing copy used on the assembled
+  dayan-guhong-v2 page (thecubicle-dayan-guhong-descriptions), confirming this is the V2 DIY
+  kit and not a re-listing of the V1 DIY kit under a new handle.
+
+  Embedded product JSON: id 1820730228809, handle "dayan-guhong-v2-diy-kit", vendor "DaYan",
+  type "DIY Kits", price $12.99, tags include "Availability_Discontinued", "Dimensions_57.0",
+  "DIY Kit Type_3x3". Three colour variants only (Black sku 154_1_1, White sku 154_1_2, Purple
+  sku 154_1_76) — a stock-colourway spread, not a further configuration axis. No item weight
+  tag is present (only "Weight Range_Other"/"Weight_Other"), so none is recorded.
+preservation_note: >-
+  `curl -sL --compressed` against the id_ raw Wayback capture. This record was collected by a
+  DaYan depth lane on 2026-09-12 and DELIBERATELY HELD OUT of the archive: the Internet Archive
+  was returning 503 for that whole session, so the capture the record cited could not be read
+  back and the lane refused to admit a source it had not verified.
+  VERIFIED AND ADMITTED 2026-09-12, after CDX recovered. The capture 20200921093233 is real and
+  is one of eight 200-status captures of this URL. It was fetched in full (205,118 bytes) and
+  every string this record relies on is present in it: the page title, the "Do-It-Yourself (DIY)
+  version of this product" pairing sentence, the "returns with torpedoes"/"does not pop" identity
+  copy, and the tags Availability_Discontinued, Dimensions_57.0 and Weight_Other.
+  IDENTITY WAS READ FROM THE HANDLE-BOUND BLOCK, not by searching the page, because a TheCubicle
+  page carries recommended products whose ids a page-wide search would return. Exactly one JSON
+  block declares handle "dayan-guhong-v2-diy-kit", the page's canonical URL matches it, and that
+  block gives id 1820730228809, vendor "DaYan", type "DIY Kits", a single price 1299 ($12.99) and
+  exactly three SKUs (154_1_1, 154_1_2, 154_1_76) — the three colourways quoted above and no
+  fourth configuration.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured product JSON.
+  ESTABLISHES: that GuHong V2, like V1, was sold in a DIY (unassembled) configuration alongside
+  the assembled one, that the retailer treats them as two forms of one product, the 57.0mm
+  dimension tag, and that colour is the only further axis (collapsed per the archive's stock-
+  colourway rule). DOES NOT ESTABLISH: a release date, an item weight, or DaYan's own name for
+  the configuration — "DIY Kit" is the retailer's product title, as with every other DIY-kit
+  source in this archive.
+status: sourced

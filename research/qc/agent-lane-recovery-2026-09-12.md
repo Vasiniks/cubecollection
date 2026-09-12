@@ -119,3 +119,34 @@ status: sourced
 A, B and D produced skeletons only. Their scopes are unchanged and fully described in their
 prompts and in `research/qc/HANDOFF.md`. Relaunching them is a fresh start, not a resume — there
 is nothing partial to preserve.
+
+
+## 2026-09-12, later — the held-out GuHong V2 DIY kit is verified and admitted
+
+The one piece of recovered lane work this report was still holding out of the archive is now in
+it. The DaYan depth lane collected `thecubicle-dayan-guhong-v2-diy-kit-2020` while the Internet
+Archive was returning 503 for the entire session, so it could not read back the capture its own
+record cited, and correctly refused to admit a source it had not verified.
+
+CDX recovered later the same day. The cited capture `20200921093233` is real — one of eight
+200-status captures of that URL — and was fetched in full (205,118 bytes). Every string the
+record relies on is present: the title, the "Do-It-Yourself (DIY) version of this product"
+pairing sentence, the "returns with torpedoes"/"does not pop" identity copy, and the
+`Availability_Discontinued`, `Dimensions_57.0` and `Weight_Other` tags.
+
+Identity was read from the **handle-bound** JSON block rather than by searching the page, since a
+TheCubicle page carries recommended products whose ids a page-wide search returns. Exactly one
+block declares the handle, the canonical URL matches, and it gives id 1820730228809, vendor
+DaYan, type "DIY Kits", one price (1299) and exactly three SKUs — the three colourways, and no
+fourth configuration.
+
+Admitted, and `dayan-guhong-v2--diy-kit` created on it. The axis is assembly state, the same one
+already carried by `dayan-guhong-v1--diy-kit`, `dayan-zhanchi-v1`, `dayan-zhanchi-42mm`,
+`dayan-zhanchi-50mm`, `dayan-panshi-v1` and `dayan-lingyun-v2`; V2 was the gap in a family whose
+own V1 already had one.
+
+Worth stating because it cuts the other way from the usual caution: the variant does **not** rest
+on TheCubicle's `Type: DIY Kits` tag, which this project has documented as unreliable — at least
+two pages carrying that type say "This DIY Kit actually comes assembled but without any
+stickers". It rests on this page's own prose contrasting itself with a separate Assembled
+version. The attestation says so, so a later reader does not have to rediscover the distinction.

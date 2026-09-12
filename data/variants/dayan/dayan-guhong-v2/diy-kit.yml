@@ -1,0 +1,47 @@
+# variant: dayan-guhong-v2--diy-kit
+# Depth research 2026-09-12. Same axis and same evidence shape as dayan-guhong-v1--diy-kit:
+# assembly state, with the retailer stating the pairing itself. The source for this one was
+# collected during the Internet Archive outage, held out unverified, and admitted only after
+# the capture could actually be read back — see the source's preservation_note.
+id: dayan-guhong-v2--diy-kit
+entity: variant
+model_id: dayan-guhong-v2
+name: "DaYan GuHong V2 (DIY Kit)"
+scope_class: core
+config:
+  size_mm: 57.0
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-v2-diy-kit-2020]
+    note: >-
+      "DIY Kit" is the retailer's product title; no DaYan first-party source for the name was
+      found. Recorded as the retailer's naming rather than the manufacturer's.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-v2-diy-kit-2020]
+    note: >-
+      An unassembled configuration of the same design, not a limited or commemorative edition.
+      The retailer pairs the two explicitly — "This is the Do-It-Yourself (DIY) version of this
+      product. To see the Assembled version of this product, please click here" — so the boundary
+      is stated by the seller rather than inferred by this archive from similar naming.
+      THIS PAGE IS NOT AN INSTANCE OF THE KNOWN "DIY Kits" TRAP. TheCubicle's `Type: DIY Kits`
+      does not by itself mean unassembled: at least two pages carrying that type say "This DIY
+      Kit actually comes assembled but without any stickers". This page says the opposite in its
+      own prose, contrasting itself with a separate Assembled version, so the assembly claim rests
+      on the sentence and not on the type tag.
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-v2-diy-kit-2020]
+    note: >-
+      57.0mm, from the page's own Dimensions_57.0 tag, which also corroborates the model
+      attachment: dayan-guhong-v3-m is recorded at 54mm, so this is a GuHong of the original
+      size and not a later generation. Distinguished from the V1 DIY kit — a different Shopify
+      product id and handle — by the "returns with torpedoes" identity copy, which is the same
+      text the assembled dayan-guhong-v2 page carries.
+      NO WEIGHT IS RECORDED: the page's only weight tags are "Weight Range_Other" and
+      "Weight_Other", which state nothing.
