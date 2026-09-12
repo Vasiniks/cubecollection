@@ -464,6 +464,16 @@ if (dated === 0 && inWindow.length === refOnly.length) {
 // the archive holds under another name. Every number here needs a human.
 head('Unchased leads in our own sweep sources');
 const AXIS = /\b(diy|uv|maglev|coated|frosted|lite|matte|magnetic|ballcore|ball-core)\b/;
+// Paths this archive has already adjudicated and REJECTED, read from the sources that record
+// those rejections. Without this the counter re-reports them every run and the reader learns to
+// ignore it — the ShengShou YuFeng renames were rejected on 2026-09-11 and would otherwise
+// reappear forever.
+const rejectedPaths = new Set();
+for (const s of src) {
+  const text = `${s.doc.excerpt ?? ''}`;
+  if (!/REJECTED|rename|not a configuration/i.test(text)) continue;
+  for (const m of text.matchAll(/\b([a-z0-9]+(?:-[a-z0-9]+){2,})\b/g)) rejectedPaths.add(m[1]);
+}
 // Out of 3x3 scope by this archive's own rules. Without this the counter reports pyraminx,
 // megaminx and 4x4 paths as "unchased leads", which wastes the reader's attention on products
 // the archive correctly excludes — and a lead list nobody trusts is a lead list nobody reads.
@@ -480,8 +490,12 @@ for (const s of src) {
   // archive already held.
   const tokens = (s) => new Set(s.split(/[-_]/).filter((x) => x.length > 1 && !/^(3x3|cube|the|for|and|speed|puzzle|magic)$/.test(x)));
   const variantTokens = va.map((r) => tokens(r.doc.id));
+  // A path ADJUDICATED AND REJECTED stays in the sweep source forever — that is the point of
+  // preserving a rejection — so the counter must not keep re-reporting it. Any path named in
+  // another source's excerpt alongside rejection language is treated as chased.
   const leads = paths.filter((p) => {
     if (!AXIS.test(p) || NOT_3X3.test(p)) return false;
+    if (rejectedPaths.has(p)) return false;
     const pt = tokens(p);
     if (pt.size < 2) return false;
     // held if some variant shares at least 70% of this path's tokens
