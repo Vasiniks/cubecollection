@@ -1,46 +1,65 @@
 # source: thecubicle-yj-mgc-prefix-2026
-# TheCubicle's own product-URL structure under /products/yj-mgc*, enumerated via wayback CDX
-# `prefix` (2019-2026 captures). Tier 2, first-party retailer naming — establishes the MGC 3x3
-# generational succession from the original MGC (2019 sticker-set capture, implying the base
-# product predates it) through MGC3 Elite, MGC3 Elite V2, MGC Evo, MGC Evo II, MGC Est, MGC3
-# Beta, and MGC Sigma, continuously through a February 2026 capture — the longest and most
-# recently active YJ 3x3 lineage found this pass.
-# LOCATOR CORRECTED 2026-09-09. `url` pointed at one arbitrary MEMBER of this
-# enumeration, not at the enumeration itself — so a reader following it never reached the
-# evidence, and the record collided with that member's own source record, which rule 42 then
-# read as one page under two ids. The archive's /collections/ sweeps already did this right
-# by pointing at the catalogue page; a /products/<prefix>* sweep has no such page, so the
-# locator is now the CDX query that reproduces the enumeration. The superseded pointer was
-# https://www.thecubicle.com/products/yj-mgc-sigma-3x3 — an arbitrary member, already listed in the excerpt below.
+# Created 2026-09-12. A RESEARCH_SPEC 3.6a prefix sweep for the YJ MGC line, which had none —
+# the archive's nine MGC models were enumerated without one. Recorded whether or not it changes
+# anything, because an unrecorded sweep is indistinguishable from no sweep.
 id: thecubicle-yj-mgc-prefix-2026
 entity: source
 kind: retailer
-title: "thecubicle.com/products/yj-mgc* — product URL enumeration"
+title: "TheCubicle /products/yj-mgc prefix enumeration (CDX, 2026-09)"
 publisher: "TheCubicle"
-url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/yj-mgc&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=400"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/yj-mgc&matchType=prefix&fl=original&collapse=urlkey&filter=statuscode:200&limit=400"
 preservation_method: excerpt
 excerpt: |-
-  CDX prefix enumeration of https://www.thecubicle.com/products/yj-mgc returns 3x3-relevant
-  captures spanning 2019-09-13 (yj-mgc-3x3-sticker-set) through 2026-02-16
-  (yj-mgc-sigma-3x3), including: yj-mgc3-elite (2019-12-15), yj-mgc-repulsion-3x3 (2021-10-08),
-  yj-mgc-evo-3x3 (2022-05-22), yj-mgc3-elite-v2-3x3 (2022-10-19), yj-mgc-evo-ii-3x3 (2024-01-13),
-  yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition (2024-04-18), yj-mgc-est-3x3 (2024-09-10),
-  yj-mgc-est-3x3-customization-kit (2025-08-01), yj-mgc3-beta-8-magnet-ball-core-uv-coated
-  (multiple variant paths, first seen 2025-06-04, still resolving through a 2025-12-01 "yj-mgc3-
-  beta?f=versions" capture), yj-mgc3-beta-limited-edition (2025-06-24), yj-mgc-sigma-3x3
-  (2026-02-16) — a continuous, differently-suffixed succession under the shared "mgc" root
-  spanning more than six years of captures.
-preservation_note: "CDX prefix enumeration output (reproducible via `npm run wayback -- prefix
-  https://www.thecubicle.com/products/yj-mgc --limit 400`) is the primary evidence; the excerpt
-  reproduces the path list and dates directly, per D3/RESEARCH_SPEC 3.5's allowance for evidence
-  that does not reduce to one page's text."
-accessed: "2026-09-02"
+  CDX prefix enumeration of thecubicle.com/products/yj-mgc, run 2026-09-12, collapsed on urlkey
+  and filtered to status 200. Reproducible with
+  `npm run wayback -- prefix thecubicle.com/products/yj-mgc --limit 400`.
+
+  Distinct product paths after discarding query-string and .js/.oembed duplicates, and after
+  removing paths for puzzles other than 3x3 (2x2, 4x4, 5x5, Pyraminx, Square-1), verbatim:
+
+    yj-mgc
+    yj-mgc-3x3-sticker-set
+    yj-mgc-est-3x3
+    yj-mgc-est-3x3-customization-kit
+    yj-mgc-evo-3x3
+    yj-mgc-evo-ii-3x3
+    yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition
+    yj-mgc-repulsion-3x3
+    yj-mgc-sigma-3x3
+    yj-mgc3-beta-8-magnet-ball-core-uv-coated
+    yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev
+    yj-mgc3-beta-limited-edition
+    yj-mgc3-elite
+    yj-mgc3-elite-v2-3x3
+    yj-mgc3-ii
+
+  WHAT THIS SWEEP FOUND THAT THE ARCHIVE DOES NOT HOLD. `yj-mgc-sigma-3x3` names a product with
+  no counterpart among the archive's nine MGC models; it is preserved separately as
+  thecubicle-yj-mgc-sigma-2026 and escalated under ledger P4-9. `yj-mgc3-ii` is an open question:
+  it may be this retailer's earlier path for the model the archive holds as yj-mgc-v2, for which
+  no path appears in this sweep, and nothing here settles it.
+
+  WHAT IT DID NOT FIND, which is equally the point of recording a sweep. No path in this
+  enumeration corresponds to a coating, MagLev, size or edition configuration of the MGC
+  original, EST, Evo, Repulsion, Elite or Elite V2 — six of the archive's nine MGC models that
+  carry exactly one configuration each. Their single-configuration state is therefore SEARCHED
+  at this retailer, not merely unexamined.
+preservation_note: >-
+  CDX output, not a page capture; the enumeration is the evidence and is reproducible from the
+  URL above. Individual product pages named here were fetched separately where they were acted
+  on. Query-string variants were discarded as duplicates of their base path — this retailer's
+  CDX is dominated by `?pr_rec_id=` recommendation-tracking URLs, which are the same page.
+accessed: "2026-09-12"
 language: en
 region: US
 link_status: live
-last_checked: "2026-09-02"
-reliability_note: "Tier 2, first-party retailer catalogue structure, consistent across six years
-  of captures. Establishes the MGC succession's breadth and currency; does not by itself state
-  which sub-name (Elite/Evo/Est/Beta/Sigma) the manufacturer itself considers a numbered
-  generation versus a sold configuration — a pass-3 question."
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: the set of MGC-prefixed product paths this retailer has carried, and therefore a
+  recorded 3.6a discovery sweep for the line.
+  DOES NOT ESTABLISH: that the line is complete. This is ONE retailer in ONE market, and a
+  product sold only in China or only under a different slug form would not appear. Ledger P26-3
+  records that slug form differs per brand and that a sweep of one form is not a sweep of the
+  line.
 status: sourced

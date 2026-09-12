@@ -19,11 +19,19 @@ status: stub
 attestations:
   /edition/types:
     confidence: reported
-    sources: [thecubicle-yj-mgc-repulsion-3x3-product]
+    sources: [thecubicle-yj-mgc-repulsion-3x3-product, thecubicle-yj-mgc-prefix-2026]
     note: "ASSESSMENT RECORD, not a product claim. This model was assessed for
       configuration axes during Pass 4 batch 1 (pass4-agent-c-yj-mfjs); no magnetic,
       coating, size, stickered/stickerless or named-edition axis was documented by any
       source located, so the model's single regular retail configuration is recorded
       here. The cited source establishes the product itself; no source was found
       differentiating configurations of it. A later pass finding an axis should add
-      variants alongside this one rather than replacing it."
+      variants alongside this one rather than replacing it.
+      SEARCH RECORDED 2026-09-12, which is what changed here rather than the value. A
+      RESEARCH_SPEC 3.6a prefix sweep of this retailer's /products/yj-mgc paths
+      (thecubicle-yj-mgc-prefix-2026) was run and enumerated fifteen 3x3 paths across the MGC
+      line. None names a coating, MagLev, size or edition configuration of THIS model. The
+      single-configuration state is therefore SEARCHED at this retailer and recorded as such,
+      not merely unexamined - the distinction 3.6a asks for when it says to record the outcome
+      either way. A sweep of one retailer in one market is not a sweep of the line; ledger P26-3
+      records that slug form differs per brand."

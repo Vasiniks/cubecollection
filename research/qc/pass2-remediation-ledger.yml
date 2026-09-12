@@ -1891,6 +1891,30 @@ issues:
       capture still resolves; the admission decision is the taxonomy owner's.
 
       It also fits the recency finding exactly: first observed 2025, MoYu, model layer.
+
+      2026-09-12 — A SECOND CANDIDATE OF THIS ISSUE'S CLASS, found by running the sweep the line
+      never had. The archive holds nine YJ MGC models and had NO RESEARCH_SPEC 3.6a prefix sweep
+      for the line; one was run against TheCubicle's /products/yj-mgc paths and recorded as
+      thecubicle-yj-mgc-prefix-2026. It enumerated fifteen 3x3 paths, and one of them —
+      `yj-mgc-sigma-3x3`, "YJ MGC Sigma 3x3", 29.99 USD, stickerless, first captured 2026-02-16 —
+      has no counterpart among the nine. Preserved as thecubicle-yj-mgc-sigma-2026; nothing
+      created. The capture is JavaScript-rendered and carries no description and no specification
+      beyond "Manufacturer: YJ", so a single retailer title is the whole of the evidence.
+
+      It fits the recency finding exactly: first observed 2026, a current generation of a line the
+      archive already holds, missed by a method that looks backwards. That is now three P4-9
+      candidates found in one day by chasing current catalogues rather than archives — this, the
+      MoYu WeiLong V10 AI WCU Edition, and the pre-existing WRM V10.
+
+      ONE OPEN IDENTITY QUESTION recorded and not guessed: the sweep returns `yj-mgc3-ii` and NO
+      path for the model the archive holds as `yj-mgc-v2`. It may be this retailer's earlier path
+      for that model, or a different product. Nothing in the sweep settles it.
+
+      THE SWEEP'S NEGATIVE RESULT WAS ALSO RECORDED, on six baselines. No enumerated path names a
+      coating, MagLev, size or edition configuration of the MGC original, EST, Evo, Repulsion,
+      Elite or Elite V2. Their single-configuration state is now SEARCHED at this retailer and
+      says so in the record, rather than being merely unexamined — which is the distinction 3.6a
+      asks for and the one P4-3 draws between an assessed model and an unassessed one.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

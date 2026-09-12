@@ -1,0 +1,40 @@
+# source: thecubicle-yj-mgc-est-customization-kit-2025
+# Created 2026-09-12. An adjudication record for one path from thecubicle-yj-mgc-prefix-2026.
+id: thecubicle-yj-mgc-est-customization-kit-2025
+entity: source
+kind: retailer
+title: "YJ MGC EST 3x3 Customization Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/yj-mgc-est-3x3-customization-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250801151339id_/https://www.thecubicle.com/products/yj-mgc-est-3x3-customization-kit"
+excerpt: |-
+  Page title as captured: "YJ MGC EST 3x3 Customization Kit – TheCubicle". Shopify product id
+  7451598028883. Price 2.99 USD. Purchase option: "Default Title", shown as "Back-order".
+
+  Specifications table, verbatim: "Manufacturer: YJ", "Type: Accessories, Puzzle Mods".
+
+  ADJUDICATION: the path yj-mgc-est-3x3-customization-kit is REJECTED as a configuration of
+  yj-mgc-est. The retailer's own Type field decides it — "Accessories, Puzzle Mods" — and the
+  2.99 USD price confirms it: this is a bag of parts sold to modify a cube, not a cube. A
+  variant of a model is a form of the puzzle that was sold; an accessory bought alongside it is
+  not, however specific to that model it is.
+preservation_note: >-
+  Capture 20250801151339 fetched 2026-09-12 and read in full. No product description is preserved
+  in this capture beyond the purchase controls; the Type field and the price are the evidence.
+  NOTE THE CONTRAST WITH A DIY KIT, since both carry the word "kit" and this archive admits one
+  and not the other. The DaYan and MoYu DIY kits admitted this session are the SAME PUZZLE sold
+  unassembled, and each of their pages says so — "the DIY version of this product... to see the
+  Assembled version, click here". This page makes no such pairing and its retailer files it
+  under Accessories. The word is not the test; what the box contains is.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that TheCubicle sold a 2.99 USD accessory kit specific to the YJ MGC EST, filed
+  under Accessories and Puzzle Mods.
+  DOES NOT ESTABLISH: what the kit contains, or any property of the MGC EST puzzle itself.
+status: sourced
