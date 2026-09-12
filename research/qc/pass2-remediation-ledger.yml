@@ -1677,6 +1677,29 @@ issues:
       tengyun-plus-m-2x2 paths (not a 3x3).
       This is the counter working as designed: it surfaces paths, a human decides, and the
       decision is written down. Not every lead is a variant, and most of this source's are not.
+      PARTIAL PROGRESS 2026-09-11, with one manufacturer resolved and the rest checked and found
+      genuinely hard — which is itself worth recording, because "nobody tried" and "tried and the
+      product is not stocked outside the US" are different states.
+      HUAMENG IS RESOLVED. Cubelelo (India) stocks the TG V2 and its listing corroborated the
+      ball-core and UV claims, revealed a two-configuration axis, and corrected the archive's own
+      record shape. See cubelelo-moyu-huameng-tg-v2-2026 and the P4-14 closure.
+      THE OTHER EIGHT WERE CHECKED AND ARE NOT SIMPLY UNSEARCHED. Cubelelo returns NO product
+      paths for lefun, fanxin, newisland, cubestyle, guojia, pbcube or mefferts. A second non-US
+      retailer, Kewbz (UK), does stock LeFun — 67 distinct product paths, verified against a
+      CONTROL query for a nonsense brand which returns 0, so the search is real and not echoing
+      the query. But of those 67, only three contain "3x3" and all three are SHAPE MODS
+      (lefun-3x3-gear-black-tiled, lefun-gear-3x3-..., lefun-twisted-3x3). Kewbz does not
+      corroborate LeFun's standard 3x3 line, which is what this archive records.
+      SO THE DEPENDENCE IS PARTLY A PROPERTY OF THE PRODUCTS, not only of the research. These are
+      budget and novelty brands with thin international distribution; TheCubicle is not merely
+      the retailer that was searched first, it is in several cases the retailer that carries them.
+      That does not make the single-source dependence safe - it still caps confidence, and rule 9
+      still prevents a `confirmed` resting on one publisher - but it does mean the remedy is
+      first-party or specialist evidence rather than more retailers.
+      A METHOD NOTE: the raw search-page keyword count is worthless here. speedcube.com.au
+      returned exactly 70 matches for all three brands tried, including ones it does not stock -
+      the page was echoing the query. Only counting PRODUCT PATHS, with a nonsense-brand control,
+      gives a usable answer.
     recommendation: >-
       Do NOT bulk-add sources to reduce the number. The requirement is INDEPENDENT corroboration,
       and adding a second US retailer that mirrors TheCubicle's own copy would satisfy the count
