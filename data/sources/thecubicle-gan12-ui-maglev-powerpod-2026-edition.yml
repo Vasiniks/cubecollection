@@ -1,0 +1,75 @@
+# source: thecubicle-gan12-ui-maglev-powerpod-2026-edition
+# Created 2026-09-12, lane F. Resolves the lead deliberately left open in
+# thecubicle-gan12-ui-maglev-powerpod-2025's reliability_note: does
+# gan12-ui-maglev-3x3-powerpod-2026-edition (Shopify product id 7995691008083) denote a GAN-
+# declared edition, or just that year's restocked bundle under a new handle?
+#
+# WAYBACK STATUS: web.archive.org returned HTTP 503/504 on every attempt this session (CDX
+# search, the wayback/available API, and a direct /web/2026/ replay), retried across several
+# minutes. Per RESEARCH_SPEC, a failed archive fetch is never evidence of absence, so this
+# record uses the LIVE Shopify product JSON instead, with preservation_method: excerpt and no
+# archive_url, and is flagged below for re-verification once the archive is reachable again.
+id: thecubicle-gan12-ui-maglev-powerpod-2026-edition
+entity: source
+kind: retailer
+title: "GAN12 ui MagLev 3x3 (PowerPod, 2026 Edition) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition"
+preservation_method: excerpt
+excerpt: |-
+  Live Shopify product JSON fetched 2026-09-12 from
+  https://www.thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition.json (the page
+  itself is JavaScript-rendered and does not serve its content to a plain fetch; the .json
+  endpoint is the same underlying product record Shopify renders from).
+
+  "id":7995691008083, "title":"GAN12 ui MagLev 3x3 (PowerPod, 2026 Edition)",
+  "handle":"gan12-ui-maglev-3x3-powerpod-2026-edition", "vendor":"GAN", "product_type":"3x3",
+  "created_at":"2026-06-11T23:22:50-04:00". One variant: SKU "3RBM_1_153", price 109.99 USD.
+
+  body_html, verbatim (opening): "The GAN 12 UI MagLev is everything you love about the GAN 12
+  UI Free Play, but with a MagLev tensioning system! This is the world's first MagLev smart
+  cube, and it is built like a GAN 12, which means performance is top-tier! It comes with a GAN
+  PowerPod for easy charging and storage." Followed by Bluetooth/CubeStation app description and
+  a "Comes with:" list: "GAN 12 UI MagLev", "GAN PowerPod", "User manual", "GAN power station",
+  "USB type-C cable", "Adjustment tool", "Swappable magnets", "GAN cube bag".
+
+  DIRECT COMPARISON TO THE ALREADY-ADJUDICATED SIBLING. The body_html of
+  gan12-ui-maglev-with-powerpod (Shopify id 7419366375507, SKU "13337_1_153", created
+  2024-08-01, price 105.99 USD at capture) opens with the IDENTICAL sentence, word for word:
+  "The GAN 12 UI MagLev is everything you love about the GAN 12 UI Free Play, but with a MagLev
+  tensioning system! This is the world's first MagLev smart cube, and it is built like a GAN 12,
+  which means performance is top-tier! It comes with a GAN PowerPod for easy charging and
+  storage." Both list the same box contents (cube, PowerPod, manual, power station, USB-C cable,
+  adjustment tool, swappable magnets, cube bag). Neither page states any material, mechanical,
+  or colourway difference between the two listings' cubes.
+
+  ADJUDICATION: REJECTED as a configuration of gan-ui-12-maglev, for the same reason the sibling
+  path was rejected. "2026 Edition" in the title denotes a restocked SKU under a new product
+  handle and new Shopify id, not a GAN-declared edition — the copy is a duplicate of the 2024
+  bundle's own description, describing the identical cube-plus-PowerPod box contents. Under this
+  archive's anti-explosion rule a bundle is not a variant, and a new SKU/price/year for the same
+  bundle is not a second bundle. The dedup test (identical product id and SKU) does not strictly
+  apply here since both id and SKU differ — this is a genuinely separate Shopify listing — but
+  separateness of listing is not the test for a variant; the test is a stated difference in the
+  object, and none exists. This closes the lead the sibling source left open.
+preservation_note: >-
+  FLAG FOR RE-VERIFICATION: fetched from the live Shopify .json endpoint, not an archived
+  capture. web.archive.org returned 503/504 on every attempt during this session (CDX search,
+  wayback/available, and a direct timestamped replay), retried at intervals. When the archive is
+  reachable again, capture this page and this record's sibling
+  (thecubicle-gan12-ui-maglev-powerpod-2025) properly and add archive_url to both.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page (fetched live, JSON form, no archive capture yet
+  obtainable — see preservation_note).
+  ESTABLISHES: that this listing bundles the same GAN12 ui MagLev cube with a GAN PowerPod and
+  accessories, using body copy identical to the already-rejected with-PowerPod listing, and that
+  "2026 Edition" is this SKU's own name rather than a GAN-declared edition designation.
+  DOES NOT ESTABLISH: any specification of the puzzle itself, a release date, or that GAN itself
+  uses "2026 Edition" anywhere in its own materials — the phrase is TheCubicle's product title
+  only.
+status: sourced

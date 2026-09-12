@@ -19,6 +19,7 @@ edition:
 config:
   coating: uv
   core_system: ball_core
+  maglev: maglev
 service:
   serviced_by: picube
   program: "PiCube 20-Magnet Ball-Core Mod"
@@ -65,7 +66,16 @@ attestations:
     confidence: unknown
     note: "The name states twenty magnets but not their arrangement, and the vocabulary describes architecture rather than count."
   /config/maglev:
-    confidence: unknown
+    confidence: probable
+    sources: [thecubicle-gan-v100-maglev-uv-picube-mod]
+    note: >-
+      CORRECTION, lane F depth pass. This record's own name says "MagLev" ("GAN V100 MagLev UV
+      3x3 (PiCube 20-Magnet Ball-Core Mod)") but the config block omitted the axis — inheritance
+      runs MODEL -> VARIANT, never variant -> sibling, and the base variant this is modified_from,
+      `gan-v100-maglev--standard-uv-coated`, cannot supply it by proximity alone. The already-
+      cited source states it directly: it IS the product's own page ("Product title as listed by
+      TheCubicle... 'GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)'"), not an inference
+      from the sibling.
   /config/adjustment_system:
     confidence: unknown
   /config/size_mm:
