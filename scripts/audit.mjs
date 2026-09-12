@@ -329,6 +329,16 @@ if (rollupOrphans.length > 6) line(`     ... and ${rollupOrphans.length - 6} mor
 // The issue was a narrative until 2026-09-09. This makes it a coverage table.
 head('Discovery breadth per manufacturer (RESEARCH_SPEC 3.6a, ledger P26-3)');
 const SWEEP_EVIDENCE = /prefix|enumerat|\/collections\/|catalogue structure|CDX/i;
+// PRODUCT RECORDS ONLY, AND DELIBERATELY SO. Sweep #7 above was fixed on 2026-09-12 to read
+// manufacturer records, and the same change was TRIED here and REVERTED the same day. It moved
+// "with a sweep" from 25 to 37 and almost all of the gain was false: SWEEP_EVIDENCE matches the
+// word "CDX" or "enumerat", and manufacturer preservation notes mention CDX constantly as a
+// research METHOD rather than as a sweep — "Only capture of this specific page found in CDX",
+// "CDX returned a server error on this pass's query". Those are not discovery sweeps.
+// #7 could safely read manufacturer records because it matches on HOST, which is precise. This
+// sweep matches on PROSE, which is not. The question it asks is also about products: has anyone
+// enumerated this brand's CATALOGUE. A corporate about-page cited on a manufacturer record is
+// not an answer to that, however recent.
 const breadth = new Map();
 for (const r of [...fam, ...mod, ...va]) {
   const doc = r.doc;
@@ -642,6 +652,11 @@ const obsYear = (sdoc) => {
   const a = Number(String(sdoc?.accessed ?? '').slice(0, 4));
   return Number.isInteger(a) && a > 1990 ? a : null;
 };
+// PRODUCT RECORDS ONLY, for the same reason as the breadth sweep above and stated here too so
+// nobody "fixes" it. This measures whether anyone has looked at a brand's PRODUCTS recently,
+// which is 3.6b's current-completeness dimension. A manufacturer record citing a 2026 corporate
+// about-page would make a brand look freshly observed while nothing about its catalogue had been
+// checked in years. Including manufacturer records was tried on 2026-09-12 and reverted.
 const recency = new Map();
 for (const r of [...fam, ...mod, ...va]) {
   const doc = r.doc;

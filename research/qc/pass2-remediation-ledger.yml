@@ -2986,6 +2986,34 @@ issues:
       10, cubestyle 7, pbcube 4, all on TheCubicle alone with no first-party source anywhere.
       That is the genuine concentration risk this sweep was built to surface, and it is now the
       whole of what it surfaces.
+
+      2026-09-12 — THE SAME FIX WAS TRIED ON TWO MORE SWEEPS AND REVERTED, and the revert is the
+      part worth recording. After sweep #7 was corrected to read manufacturer records, the
+      obvious follow-through was to ask which other sweeps skip them. Three do. Two of those
+      skips turn out to be CORRECT and now say so in the code.
+
+      THE BREADTH SWEEP was changed and reverted within the hour. Including manufacturer records
+      moved "with a 3.6a-style sweep" from 25 to 37, and almost the whole gain was FALSE.
+      SWEEP_EVIDENCE matches the words "CDX" and "enumerat", and manufacturer preservation notes
+      mention CDX constantly as a research METHOD rather than as a sweep — spot-checking the new
+      matches found "Only capture of this specific page found in CDX", "CDX returned a server
+      error on this pass's query", and a "title-tag/meta enumeration" that is a list of product
+      names in a page title. None is a discovery sweep. Exactly one of the six inspected, DaYan's
+      "product URL enumeration", was real.
+
+      WHY #7 COULD SAFELY READ THEM AND THESE CANNOT. #7 matches on HOST, through `isFirstParty`,
+      which is exact. The breadth sweep matches on PROSE, which is not. The recency sweep has a
+      different problem: it asks whether anyone has looked at a brand's PRODUCTS recently, and a
+      manufacturer record citing a 2026 corporate about-page would make a brand look freshly
+      observed while its catalogue had gone unchecked for years.
+
+      Both now carry a comment saying the exclusion is deliberate and that the change was tried
+      and reverted, so the next person does not spend the same hour discovering it twice.
+
+      I ALMOST SHIPPED THE BAD NUMBER. The jump from 25 to 37 looked like a fix landing, and it
+      was only caught by inspecting what the new matches actually matched — the discipline this
+      archive keeps having to relearn. A probe's hit count is worthless until you read its hits,
+      and that applies just as hard when the count moves in the direction you wanted.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
