@@ -1461,6 +1461,38 @@ issues:
       that a model with zero variants is a complete correct result and that variants must not be
       manufactured to raise a count. 69 lone --standard records now exist archive-wide, 23 of
       them pre-dating Pass 4 from the GAN pilot.
+
+      2026-09-12 — TWO BOUNDARY REJECTIONS RECORDED, named here so their evidence stays findable.
+      The orphan sweep in `npm run audit` counts a source that no record and no document mentions
+      as a failure, because evidence for a REJECTED finding has nowhere else to live; both of
+      these were orphans until this entry.
+
+      `thecubicle-gan12-ui-maglev-powerpod-2025` — the path gan12-ui-maglev-with-powerpod is not
+      a configuration of gan-ui-12-maglev. The retailer's own sentence decides it: "the new
+      PowerPod INCLUDED WITH the GAN12 ui Maglev". The charging pod is what the product ships
+      with, so the title's "(with PowerPod)" describes the standard product's contents rather
+      than distinguishing one form of it from another.
+
+      `thecubicle-yj-mgc-est-customization-kit-2025` — the path
+      yj-mgc-est-3x3-customization-kit is not a configuration of yj-mgc-est. The retailer files
+      it under "Type: Accessories, Puzzle Mods" at 2.99 USD: a bag of parts for modifying a cube,
+      not a cube.
+
+      THE SECOND ONE NEEDED A DISTINCTION THE ARCHIVE NOW HAS IN WRITING, because this session
+      also ADMITTED six products whose titles contain the word "kit". A DIY kit is the same
+      puzzle sold unassembled, and each admitted page says so by pairing itself with its
+      assembled counterpart — "the DIY version of this product... to see the Assembled version,
+      click here". The MGC EST kit makes no such pairing and is categorised as an accessory. The
+      word is not the test; what the box contains is, and whether the seller pairs it with the
+      puzzle.
+
+      ONE RELATED PATH IS DELIBERATELY LEFT OPEN and is NOT rejected:
+      gan12-ui-maglev-3x3-powerpod-2026-edition carries a different Shopify product id and a
+      JavaScript-rendered capture with no description, so whether "2026 Edition" names an edition
+      GAN declares or simply that year's stock is unsettled. It is described in that source's
+      reliability_note rather than its excerpt, specifically so the lead counter keeps reporting
+      it — verified: that sweep source's leads went 3 to 2, dropping the rejected path and
+      keeping the open one.
     counterevidence: >-
       A lone --standard record is not empty: it carries an attestation and typically a note
       stating that no colourway, magnet or coating option was found. It asserts "this model was
