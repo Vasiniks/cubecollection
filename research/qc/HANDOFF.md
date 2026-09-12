@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  ba87dae
+HEAD:  92a518e
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      517
-sources:       578
+variants:      521
+sources:       582
 events:        4
 
 VALIDATION
@@ -98,6 +98,11 @@ SESSION 2026-09-12 — 39 commits from 6249aac
    - ALL ESCALATED UNDER P4-9, NOTHING ADMITTED. These are LIVE queries that preserve nothing.
    - P4-9 SHOULD NOW BE READ AS TWO MECHANISMS, not one: recency (15 of 20 first listed
      2024-2026) AND discoverability (a product invisible to the method, at any date).
+   - THE SAME CATALOGUES GAVE 4 NEW QIYI VARIANTS (warrior-m UV, warrior-w Jelly, qimeng-plus
+     magnetic, qimeng-v3 Icy Amber). And a useful NEGATIVE: dayan-guhong-pro-plus is complete
+     SIX-FOR-SIX against the retailer (3 sizes x maglev/standard), and YuXin Little Magic is
+     complete too. Where a line was researched properly it IS complete; the gaps are lines the
+     discovery method never reached.
 
   D. MY OWN ERRORS, both caught by the archive's checks
    - Created a DUPLICATE Ziina Sigma source and claimed it as a new P4-9 find; Pass 4 Agent C

@@ -1544,6 +1544,31 @@ issues:
       reliability_note rather than its excerpt, specifically so the lead counter keeps reporting
       it — verified: that sweep source's leads went 3 to 2, dropping the rejected path and
       keeping the open one.
+
+      2026-09-12 — THE BRAND-FACET CHECK RUN FOR VARIANT DEPTH, and most of what it found the
+      archive already had. Recorded because "checked, nothing new" is a result and because it
+      says where this archive's variant coverage is genuinely good.
+
+      ALREADY COMPLETE, verified against SpeedCubeShop's brand collections:
+        dayan-guhong-pro-plus — the retailer lists six configurations, three sizes (54/55/56mm)
+          crossed with MagLev and non-MagLev core magnets. The archive holds all six, with
+          matching ids. Nothing to add.
+        yuxin-little-magic-original and -v2 — the retailer's four listings (plain, magnetic,
+          V2 magnetic, V2 magnetic UV) map onto variants the archive already holds.
+        dayan-tengyun-m — the retailer's "DaYan TengYun 3x3 (Magnetic)" is the MODEL, whose own
+          name carries the M. Not a second configuration.
+
+      FOUR WERE GENUINELY NEW AND WERE ADDED, all QiYi: warrior-m UV coated, warrior-w Jelly
+      Edition, qimeng-plus magnetic, qimeng-v3 tiled Icy Amber.
+
+      THREE ARE MODEL-LAYER AND STAY WITH P4-9: ShengShou Lustrous Light-Up (and its Jelly
+      Edition), ShengShou Metal Alloy, and the Cyclone Boys Metallic pair — the last of which
+      P4-9 already classifies confirmed_missing.
+
+      THE SHAPE OF THE RESULT IS WORTH KEEPING. Where the archive has researched a line properly
+      it is complete to the retailer's own catalogue, six-for-six on the GuHong Pro+. The gaps
+      are not thinness in researched lines; they are lines and brands the discovery method never
+      reached, which is P4-9's subject and not this issue's.
     counterevidence: >-
       A lone --standard record is not empty: it carries an attestation and typically a note
       stating that no colourway, magnet or coating option was found. It asserts "this model was
