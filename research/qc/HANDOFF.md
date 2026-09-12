@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  92a518e
+HEAD:  (see git log — 46 commits from 6249aac)
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      521
-sources:       582
+sources:       583
 events:        4
 
 VALIDATION
@@ -99,7 +99,14 @@ SESSION 2026-09-12 — 39 commits from 6249aac
      cubes. SAME PRODUCTS ARE NAMED DIFFERENTLY AT THE TWO RETAILERS (CFOP Trainer = Practice
      Special) — adding the catalogues would double-count. TheCubicle's version numbers
      reconcile SCS's five Sudoku names as V2-V6, plus a V1 only TheCubicle has.
-   - fanxin 1 hidden (color-brick-speed-cube), qiyi 1 hidden (bubble-3x3).
+   - fanxin 1 hidden (color-brick-speed-cube), qiyi 1 hidden (bubble-3x3, a QiYi 3x3 the
+     archive does not hold — rounded ball-shaped pieces, typed 3x3 by the retailer).
+   - mf8 CLOSED ON A NEGATIVE: its whole 101-product collection has ZERO typed 3x3 (60 shape
+     mods, 29 minx). The archive's 3 mf8 models are NOT a thin sample of a big 3x3 range —
+     there isn't one. Its 9 Crazy 3x3 Plus planet variants match the retailer one-for-one.
+     Two "Son-Mum 3x3" shape mods are a SCOPE question for the taxonomy owner, not a gap.
+     Sweeps 24->25, failing both 12->11. Remaining no-sweep: particula 28, giiker 17,
+     guoguan 16, calvins-puzzle 12.
    - ALL ESCALATED UNDER P4-9, NOTHING ADMITTED. These are LIVE queries that preserve nothing.
    - P4-9 SHOULD NOW BE READ AS TWO MECHANISMS, not one: recency (15 of 20 first listed
      2024-2026) AND discoverability (a product invisible to the method, at any date).
