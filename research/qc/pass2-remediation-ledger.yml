@@ -2490,6 +2490,29 @@ issues:
 
       Queue after this batch: weightless models 193 -> 169, sources-with-a-gross-weight 78 -> 55,
       actionable item weights 40 -> 16.
+
+      2026-09-12 — THE DIMENSION CROSS-CHECK WAS BUILT INTO SWEEP #14, AND THEN IMMEDIATELY
+      PRODUCED ITS OWN FALSE POSITIVE, which is recorded beside it rather than quietly fixed.
+      `thecubicle-dayan-guhong-descriptions` describes six GuHong generations and carries one
+      spec table, at 54.0mm. `dayan-guhong-v3-m` is also 54mm, so the new check corroborated it.
+      Wrongly: the excerpt says outright which page the table came from —
+      dayan-guhong-pro-m-3x3-54mm-standard, "This is the 54mm standard version". Two models of
+      one line sharing a size is ordinary, so a dimension match says which SIBLING is plausible,
+      never which one a page is about. The sweep now says so in its own comment.
+
+      RULE 23 THEN CAUGHT A SECOND, WORSE MISTAKE THAT NO SWEEP WOULD HAVE. The figures were
+      first written to the MODEL, and rule 23 immediately reported that two GuHong Pro M
+      variants now restated `config.size_mm` redundantly. Reading why showed the real problem:
+      the GuHong Pro M is sold in THREE sizes, 54mm, 55mm and 56mm, each with a standard and a
+      MagLev variant. Size is a variant axis on this model, so "the model is 54mm" was false,
+      and a mass is a property of a size. The model record was reverted and 67.0g recorded on
+      `dayan-guhong-pro-m--54mm-standard`, which is the configuration the cited page actually
+      sells. The other five GuHong generations still carry no weight and must not inherit this
+      one.
+
+      Worth keeping as a pattern: the sweep ranked the candidate, the dimension guard narrowed
+      it, and an unrelated lint rule caught the placement. No single check would have got this
+      right on its own.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

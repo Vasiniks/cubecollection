@@ -18,6 +18,7 @@ edition:
   designation: "54mm Standard"
 config:
   size_mm: 54.0
+  weight_g: 67.0
 status: stub
 attestations:
   /config/size_mm:
@@ -36,3 +37,18 @@ attestations:
     confidence: probable
     sources: [thecubicle-dayan-collection-2025]
     note: "\"Standard\" is the retailer's own configuration-tier word distinguishing this SKU from its sibling magnet system, per the URL path structure. Not yet corroborated by a second independent retailer for this specific size/system combination."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-descriptions]
+    note: >-
+      Single tier 2 retailer spec table: Item Weight "67.0g", beside a Gross Weight of "151g" that
+      is refused under the rule-45 class. RECORDED ON THIS VARIANT AND NOT ON THE MODEL, which is
+      the whole point of the record. The GuHong Pro M is sold in three sizes - 54mm, 55mm and 56mm
+      - so size is a variant axis here, and a mass is a property of a size. The excerpt ties the
+      table to the product page dayan-guhong-pro-m-3x3-54mm-standard, whose description reads
+      "This is the 54mm standard version", so it is THIS configuration's weight and not the
+      line's. The source describes six GuHong generations and carries only ONE spec table; the
+      other five generations remain without a weight and must not inherit this one. This was very
+      nearly filed on the model instead: audit sweep #14's dimension cross-check corroborated
+      dayan-guhong-v3-m, which is also 54mm, and rule 23 is what caught the mistake by flagging
+      the redundant overrides it created. Recorded 2026-09-12.

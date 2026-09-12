@@ -682,6 +682,7 @@ line('  signal - an actively researched manufacturer nobody has looked at lately
 head('Weights refused and not replaced (rule 45 follow-up)');
 const ITEM_W = /item weight[^0-9]{0,12}([0-9]+(?:\.[0-9]+)?)\s*(?:g|grams)\b/i;
 const GROSS_W = /gross weight|weight \(including|packing|packaged weight|shipping weight/i;
+const DIM_W = /dimensions?[^0-9]{0,12}([0-9]+(?:\.[0-9]+)?)\s*mm/i;
 const variantsOf = new Map();
 for (const v of va) {
   if (!variantsOf.has(v.doc.model_id)) variantsOf.set(v.doc.model_id, []);
@@ -697,28 +698,54 @@ for (const r of mod) {
   for (const doc of [m, ...kids]) {
     for (const att of Object.values(doc.attestations ?? {})) for (const id of citedSourceIds(att)) ids.add(id);
   }
-  let gross = false; let item = null;
+  let gross = false; let item = null; let corroborated = null;
   for (const id of ids) {
     const ex = String(srcById.get(id)?.excerpt ?? '');
     if (GROSS_W.test(ex)) gross = true;
     const hit = ITEM_W.exec(ex);
-    if (hit && item == null) item = [id, hit[1]];
+    if (!hit) continue;
+    if (item == null) item = [id, hit[1]];
+    // THE GUARD THAT ACTUALLY WORKS, added 2026-09-12 after it resolved the Valk trap.
+    // Compare the source's OWN "Dimensions" against the size this model already records. It is
+    // an INDEPENDENT discriminator: it does not tokenise anything, so the short-token failure
+    // that defeats every title matcher here cannot touch it. `qiyi-valk-3` cites seven sources
+    // carrying an item weight, including a 4x4 at 60.0mm and a 5x5 at 62.0mm; only one reads
+    // 55.5mm, and that is the one.
+    //
+    // IT NARROWS, IT DOES NOT DECIDE, and it has a documented false positive of its own.
+    // `thecubicle-dayan-guhong-descriptions` describes six GuHong generations and carries one
+    // spec table, at 54.0mm. `dayan-guhong-v3-m` is also recorded at 54mm, so this check
+    // corroborates it — wrongly. The table belongs to the GuHong Pro M, which the excerpt says
+    // outright by naming the product page it was read from. Two models of one line sharing a
+    // size is ordinary, so a dimension match is evidence about WHICH SIBLING is plausible, never
+    // proof of which one the page is about. Read the excerpt.
+    const dm = DIM_W.exec(ex);
+    if (dm && m.specs?.size_mm != null && Math.abs(Number(dm[1]) - Number(m.specs.size_mm)) < 0.05) {
+      if (corroborated == null) corroborated = [id, hit[1]];
+    }
   }
   if (gross) withGross.push(m.id);
-  if (item) withItem.push([m.id, m.manufacturer_id, item[1], item[0]]);
+  if (item) withItem.push([m.id, m.manufacturer_id, item[1], item[0], corroborated != null]);
 }
 line(`  models carrying no weight at all                    : ${noWeight} of ${mod.length}`);
 line(`  of those, whose own sources show a GROSS weight     : ${withGross.length}   <- refused, never replaced`);
 line(`  of those, whose own sources ALSO preserve an ITEM weight : ${withItem.length}   <- evidence already held`);
-line('  the second list, by manufacturer:');
+const dimOk = withItem.filter((r) => r[4]);
+line(`       of THOSE, whose source's own Dimensions match this model's size_mm : ${dimOk.length}   <- start here`);
+line('  the queue by manufacturer (dimension-corroborated / total):');
 const perMfr = new Map();
-for (const [, mfr] of withItem) perMfr.set(mfr, (perMfr.get(mfr) ?? 0) + 1);
-for (const [mfr, n] of [...perMfr.entries()].sort((a, b) => b[1] - a[1])) {
-  line(`     ${String(n).padStart(3)}  ${mfr}`);
+for (const [, mfr, , , ok] of withItem) {
+  if (!perMfr.has(mfr)) perMfr.set(mfr, [0, 0]);
+  const e = perMfr.get(mfr); e[1] += 1; if (ok) e[0] += 1;
 }
-line('  EVERY ROW NEEDS A HUMAN. A shared source, a sibling-puzzle source, or a generation number');
-line('  too short to survive tokenisation will each put a real figure against the wrong model.');
-line('  Read the excerpt and check it names THIS model before recording anything.');
+for (const [mfr, [ok, n]] of [...perMfr.entries()].sort((a, b) => b[1][1] - a[1][1])) {
+  line(`     ${String(ok).padStart(3)} / ${String(n).padStart(3)}  ${mfr}`);
+}
+line('  EVERY ROW STILL NEEDS A HUMAN, and the corroborated ones are a starting order, not a');
+line('  licence. A shared source, a sibling-puzzle source, or a generation number too short to');
+line('  survive tokenisation will each put a real figure against the wrong model. Read the');
+line('  excerpt and check it names THIS model. A model with no size_mm cannot be corroborated');
+line('  this way at all, so a 0 in the left column means unranked, never wrong.');
 
 line();
 line('audit complete — advisory only, nothing here blocks a build.');
