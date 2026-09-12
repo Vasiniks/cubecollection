@@ -1,0 +1,14 @@
+# SYNTHETIC FIXTURE — not archive data.
+# A source explicitly pinned to tier 5. No `kind` in vocab/source-kinds.yml maps to tier 5, so an
+# explicit `tier` is the only way the archive can hold one, and rule 12 calls it inadmissible.
+id: zz-tier5
+entity: source
+kind: forum
+tier: 5
+title: ZZ Inadmissible Tier 5 Source
+publisher: ZZ Hearsay
+url: https://zz-example.invalid/threads/zz-hearsay
+preservation_method: excerpt
+excerpt: "Fixture text. Someone on a forum said the size is 56mm."
+accessed: "2026-01-01"
+status: sourced

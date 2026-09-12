@@ -5,8 +5,7 @@
 import {
   loadVocabularies, loadSchemas, loadRecords, indexRecords,
   pointerExists, pointerGet, collectAnnotated, schemaForEntity,
-  sourceTier, isAtLeastSourced, Report,
-} from './lib/archive.mjs';
+  sourceTier, isAtLeastSourced, Report, citedSourceIds } from './lib/archive.mjs';
 
 const report = new Report('validate — structural, provenance, and integrity (rules 1-17, 37-38)');
 const vocabs = loadVocabularies();
@@ -226,7 +225,9 @@ for (const rec of records) {
       if (att.confidence !== 'unknown' && !(att.sources?.length || att.disputed?.length)) {
         report.error('6', rec.file, `critical field ${ptr} is attested "${att.confidence}" with no sources.`);
       }
-      for (const sid of att.sources ?? []) {
+      // Disputed sources count here. A dispute the archive cannot re-read is not a dispute it
+      // can ever settle, so an unpreserved source is as fatal inside `disputed[]` as outside it.
+      for (const sid of citedSourceIds(att)) {
         const src = sourceRecords.get(sid);
         if (!src) continue;
         if (!src.preservation_method || src.preservation_method === 'none') {
@@ -251,10 +252,15 @@ for (const rec of records) {
 
   // 9, 12, 16 — confidence rules
   for (const [ptr, att] of Object.entries(atts)) {
+    // Rule 9's tier arithmetic below deliberately reads att.sources only: a `disputed`
+    // attestation never reaches the `confirmed` branch, and pooling the tiers of two opposing
+    // positions would describe neither of them.
     const tiers = (att.sources ?? []).map(tierOf).filter((t) => t !== null);
-    for (const [i, sid] of (att.sources ?? []).entries()) {
+    // Rule 12 is different in kind. Tier 5 is INADMISSIBLE, not merely weak, so it holds
+    // wherever a source is cited — including inside a `disputed` block, where a value looks
+    // handled and an inadmissible citation could otherwise sit unchallenged.
+    for (const sid of citedSourceIds(att)) {
       if (tierOf(sid) === 5) report.error('12', rec.file, `${ptr} cites tier 5 source "${sid}". Tier 5 is inadmissible; record it as a lead in notes instead.`);
-      void i;
     }
     if (att.confidence === 'confirmed') {
       const hasTier1 = tiers.includes(1);

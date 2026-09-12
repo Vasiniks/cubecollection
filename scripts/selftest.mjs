@@ -148,6 +148,21 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   /zz-bad-disputed-gross[^\n]*\[45\]|\[45\][^\n]*zz-bad-disputed-gross/.test(l.out)
     ? ok('rule 45 sees into disputed blocks', 'a gross weight cited only in disputed[] is caught')
     : bad('rule 45 sees into disputed blocks', 'no [45] message for the disputed fixture');
+  // The same blind spot, swept archive-wide on 2026-09-12 after it turned up a THIRD time in
+  // audit sweep #10. Rules 8, 12 and 42 all read `att.sources` alone and so skipped every
+  // disputed position. Each was confirmed to leak against its fixture BEFORE the fix, which is
+  // the only way to know a passing test is testing anything. Rule 43 is deliberately NOT here:
+  // it has no floor for `disputed` confidence, so pooling two opposing positions' tiers would
+  // describe neither. Nor is rule 9, which only reaches its branch on `confirmed`.
+  /zz-bad-disputed-unpreserved[^\n]*\[8\]|\[8\][^\n]*zz-bad-disputed-unpreserved/.test(v.out)
+    ? ok('rule 8 sees into disputed blocks', 'a critical field whose disputed source preserves nothing is caught')
+    : bad('rule 8 sees into disputed blocks', 'no [8] message for the unpreserved disputed fixture');
+  /zz-bad-disputed-tier5[^\n]*\[12\]|\[12\][^\n]*zz-bad-disputed-tier5/.test(v.out)
+    ? ok('rule 12 sees into disputed blocks', 'an inadmissible tier-5 citation inside disputed[] is caught')
+    : bad('rule 12 sees into disputed blocks', 'no [12] message for the tier-5 disputed fixture');
+  /zz-bad-disputed-samepage[^\n]*\[42\]|\[42\][^\n]*zz-bad-disputed-samepage/.test(l.out)
+    ? ok('rule 42 sees into disputed blocks', 'false corroboration inside one disputed position is caught')
+    : bad('rule 42 sees into disputed blocks', 'no [42] message for the same-page disputed fixture');
   // Rule 49 removes a record from the PUBLIC bundle, so its allowance matters as much as its
   // fail branch: without zz-ok-signed-exclusion the rule would be indistinguishable from one
   // forbidding reference_only outright, and the archive uses that class legitimately.

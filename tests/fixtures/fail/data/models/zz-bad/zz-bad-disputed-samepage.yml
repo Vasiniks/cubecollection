@@ -1,0 +1,28 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 42, the DISPUTED path. zz-dup-page-a and zz-dup-page-b are one page under two ids with one
+# capture between them. Citing both as though they were two sources is false corroboration, and
+# putting them inside one side of a `disputed` block makes that side look twice as well evidenced
+# as it is — which is precisely how a dispute gets adjudicated the wrong way.
+id: zz-bad-disputed-samepage
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Disputed Samepage
+scope_class: core
+specs:
+  core_system: ball_core
+status: stub
+attestations:
+  "/specs/core_system":
+    confidence: disputed
+    disputed:
+      - value: ball_core
+        sources: [zz-dup-page-a, zz-dup-page-b]
+        confidence: reported
+        note: Fixture value. Two ids, one page, one capture — not two sources.
+      - value: standard
+        sources: [zz-capture-2020]
+        confidence: reported
+        note: Fixture value. The opposing figure, honestly single-sourced.
+    adjudication: >-
+      Fixture text. Unadjudicated on purpose.

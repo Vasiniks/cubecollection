@@ -1,0 +1,28 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 12, the DISPUTED path. Tier 5 is inadmissible outright, not merely weak, so the rule must
+# hold wherever a source is cited. Reading only `att.sources` let a tier-5 citation through by the
+# simple move of placing it inside a `disputed` block — where a value LOOKS handled.
+id: zz-bad-disputed-tier5
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Disputed Tier5
+scope_class: core
+specs:
+  size_mm: 56.0
+status: stub
+attestations:
+  "/specs/size_mm":
+    confidence: disputed
+    disputed:
+      - value: 56.0
+        sources: [zz-tier5]
+        confidence: reported
+        note: Fixture value. Cited from an inadmissible tier-5 source.
+      - value: 55.0
+        sources: [zz-dup-page-a]
+        confidence: reported
+        note: Fixture value. The opposing figure, from an admissible source.
+    adjudication: >-
+      Fixture text. Unadjudicated on purpose: the point is that one side rests on a tier the
+      archive does not admit at all, and that placing it in a disputed block used to hide it.

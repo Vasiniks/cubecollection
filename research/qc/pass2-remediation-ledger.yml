@@ -2301,6 +2301,35 @@ issues:
       qualify, the distribution runs 13% down to 0%, and nothing exceeds the 25% threshold. A
       sweep reporting zero because it is broken and a sweep reporting zero because the archive is
       clean look identical, so the distribution was inspected rather than the count.
+
+      2026-09-12 — the `disputed` blind spot turned out to be a CLASS, not three incidents, and
+      was swept archive-wide. Every reader of `att.sources` in validate.mjs, lint-semantic.mjs
+      and audit.mjs was classified. Three more genuine leaks were found, and each was PROVED to
+      leak against a fixture before anything was changed — a rule that passes a test it never
+      failed is testing nothing.
+
+      RULE 8 (a critical field may not rest on a source that preserves nothing) skipped disputed
+      positions entirely. A dispute the archive cannot re-read is not a dispute it can ever
+      settle. RULE 12 (tier 5 is inadmissible) skipped them too, so an inadmissible citation
+      could be laundered simply by placing it inside a disputed block, where a value looks
+      handled. RULE 42 (false corroboration) skipped them, which is the worst place to miss it:
+      a side of a dispute citing one page under two ids looks twice as well evidenced as it is,
+      and that is exactly how a dispute gets adjudicated the wrong way round. Rule 42 is now
+      evaluated PER POSITION — `att.sources` is one position and each `disputed[]` entry is
+      another — because pooling opposing positions would invent overlaps between sources that
+      were never offered as corroborating each other.
+
+      TWO RULES WERE DELIBERATELY LEFT ALONE, and the reasons are in the code. Rule 43 has no
+      confidence floor for `disputed`, so pooling two opposing positions' tiers would describe
+      neither. Rule 9 only reaches its tier arithmetic on `confirmed`, which a disputed
+      attestation never is.
+
+      The root cause was that each reader open-coded the same two-place lookup. There is now one
+      `citedSourceIds(att)` in scripts/lib/archive.mjs and every non-deliberate reader goes
+      through it, so the next person writing a sweep gets the disputed path for free instead of
+      having to remember it. Four selftest assertions guard the four fixed rules. Archive impact:
+      none — warnings are unchanged at 10 r42 / 10 r18 / 4 r40 / 2 r27, which matches the
+      measurement that no source is cited only from a disputed block today.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

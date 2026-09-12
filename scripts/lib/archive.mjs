@@ -223,6 +223,28 @@ export function derefSchema(node, raw) {
 
 // ---------------------------------------------------------------- sources
 
+// Every source id an attestation cites, from BOTH places they can live.
+//
+// An attestation's sources normally sit in `att.sources`. A DISPUTED attestation puts them
+// somewhere else: each entry of `att.disputed[]` carries its own `sources` list, and
+// `att.sources` is then typically absent. Anything that reads only `att.sources` is therefore
+// blind to exactly the records where the archive disagrees with itself.
+//
+// That blind spot has now been written three separate times: rule 45 and rule 48 carried it
+// until 2026-09-11 (a gross weight hid inside a disputed block for months because a disputed
+// value LOOKS handled), and audit sweep #10 carried it until 2026-09-12 despite being written
+// the same week the other two were fixed. Measured on 2026-09-12: 9 attestations hold disputed
+// blocks, citing 21 sources, and ZERO of those sources are cited only from a disputed block --
+// so no number moved when the sweeps were fixed. The point is the next one, not this one.
+//
+// Callers that deliberately want only the undisputed sources -- rule 43's confidence-versus-tier
+// test, for instance, where a `disputed` attestation's tier arithmetic is a different question
+// -- should keep reading `att.sources` directly and say why.
+export function citedSourceIds(att) {
+  if (!att || typeof att !== 'object') return [];
+  return [...(att.sources ?? []), ...((att.disputed ?? []).flatMap((d) => d?.sources ?? []))];
+}
+
 export function sourceTier(sourceDoc, vocabs) {
   if (Number.isInteger(sourceDoc?.tier)) return sourceDoc.tier;
   const entry = vocabs.get('source-kinds')?.byValue.get(sourceDoc?.kind);

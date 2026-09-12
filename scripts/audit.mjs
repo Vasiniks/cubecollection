@@ -9,7 +9,7 @@
 
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { loadVocabularies, loadSchemas, loadRecords, indexRecords, sourceTier } from './lib/archive.mjs';
+import { loadVocabularies, loadSchemas, loadRecords, indexRecords, sourceTier, citedSourceIds } from './lib/archive.mjs';
 
 const vocabs = loadVocabularies();
 loadSchemas(vocabs);
@@ -217,7 +217,7 @@ for (const r of [...fam, ...mod, ...va]) {
   if (!per.has(mfr)) per.set(mfr, { firstParty: 0, third: new Map(), langs: new Set() });
   const bucket = per.get(mfr);
   const cited = new Set();
-  for (const att of Object.values(doc.attestations ?? {})) for (const s of att?.sources ?? []) cited.add(s);
+  for (const att of Object.values(doc.attestations ?? {})) for (const s of citedSourceIds(att)) cited.add(s);
   for (const id of cited) {
     const s = srcById.get(id);
     if (!s) continue;
@@ -317,7 +317,7 @@ for (const r of [...fam, ...mod, ...va]) {
   if (!breadth.has(mfr)) breadth.set(mfr, { cites: 0, sweep: false, nonUS: false });
   const b = breadth.get(mfr);
   const cited = new Set();
-  for (const att of Object.values(doc.attestations ?? {})) for (const s of att?.sources ?? []) cited.add(s);
+  for (const att of Object.values(doc.attestations ?? {})) for (const s of citedSourceIds(att)) cited.add(s);
   for (const id of cited) {
     const s = srcById.get(id);
     if (!s) continue;
@@ -398,7 +398,7 @@ for (const rec of records) {
     // Disputed attestations cite sources too. Rules 45 and 48 were both blind to
     // `disputed[].sources` until 2026-09-11; this sweep carried the same blind spot until
     // 2026-09-12. A source cited ONLY from disputed blocks was invisible here.
-    const citedIds = [...(att?.sources ?? []), ...((att?.disputed ?? []).flatMap((d) => d.sources ?? []))];
+    const citedIds = citedSourceIds(att);
     for (const id of citedIds) {
       const s = srcById.get(id);
       if (!s) continue;
@@ -463,7 +463,7 @@ for (const r of refOnly) {
   if (!hasVariant && !r.doc.specs) stubs += 1;
   // circulation evidence: the years its own sources were captured
   const ids = new Set();
-  for (const att of Object.values(r.doc.attestations ?? {})) for (const s of att?.sources ?? []) ids.add(s);
+  for (const att of Object.values(r.doc.attestations ?? {})) for (const s of citedSourceIds(att)) ids.add(s);
   const years = [...ids].map((id) => {
     const s = srcById.get(id) ?? {};
     const m = /\/web\/(\d{4})/.exec(s.archive_url ?? '');

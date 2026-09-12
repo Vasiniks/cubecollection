@@ -1,0 +1,39 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 8, the DISPUTED path. A critical field may not rest on a source that preserves nothing:
+# the moment the live page changes, the claim becomes unverifiable. That is as true of a disputed
+# value as an undisputed one — a dispute the archive cannot re-read is not a dispute it can ever
+# settle. Rule 8 read only `att.sources` until 2026-09-12 and so skipped exactly those records.
+#
+# `status: sourced` is load-bearing: rule 8 runs only on sourced records, so a `stub` fixture
+# proves nothing. The five untouched critical specs are attested `unknown` (searched, not found),
+# which is what rule 6 asks for and needs no sources.
+id: zz-bad-disputed-unpreserved
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Disputed Unpreserved
+scope_class: core
+specs:
+  weight_g: 77
+status: sourced
+attestations:
+  "/specs/weight_g":
+    confidence: disputed
+    disputed:
+      - value: 77
+        confidence: reported
+        sources: [zz-bad-src-unpreserved]
+        note: Fixture value. The citing source preserves nothing at all.
+      - value: 74
+        confidence: reported
+        sources: [zz-dup-page-a]
+        note: Fixture value. The opposing figure.
+    adjudication: >-
+      Fixture text. Unadjudicated on purpose: the record LOOKS handled while one side of it
+      rests on a page the archive has not preserved and cannot re-read.
+  "/specs/size_mm":             { confidence: unknown }
+  "/specs/core_system":         { confidence: unknown }
+  "/specs/maglev":              { confidence: unknown }
+  "/specs/magnet_architecture": { confidence: unknown }
+  "/specs/adjustment_system":   { confidence: unknown }
+  "/legality/wca_status":       { confidence: unknown }

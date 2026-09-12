@@ -4,8 +4,7 @@
 // worth a human look. Nothing here blocks a build.
 
 import {
-  loadVocabularies, loadSchemas, loadRecords, indexRecords, resolveSpec, dateStart, sourceTier, Report,
-} from './lib/archive.mjs';
+  loadVocabularies, loadSchemas, loadRecords, indexRecords, resolveSpec, dateStart, sourceTier, Report, citedSourceIds } from './lib/archive.mjs';
 
 const report = new Report('lint — semantic plausibility (rules 18-27, advisory)');
 const vocabs = loadVocabularies();
@@ -337,22 +336,36 @@ for (const [modelId, list] of variantsByModel) {
     }
   }
 
+  // Evaluated PER POSITION, not per attestation. An undisputed attestation has one position,
+  // `att.sources`. A disputed one has a position per `disputed[]` entry, and each entry is a
+  // separate claim about the world that stands or falls on its own citations — so pooling them
+  // would invent overlaps between sources that were never offered as corroborating each other.
+  //
+  // Reading `att.sources` alone, which is what this rule did until 2026-09-12, skipped the
+  // disputed positions entirely. That is the worse place to miss it: a side of a dispute citing
+  // one page under two ids looks twice as well evidenced as it is, which is exactly how a
+  // dispute gets adjudicated the wrong way round.
   for (const rec of records) {
     for (const [ptr, att] of Object.entries(rec.doc?.attestations ?? {})) {
-      const cited = att?.sources ?? [];
-      if (cited.length < 2) continue;
-      for (const id of cited) {
-        const group = pageOf.get(id);
-        if (!group) continue;
-        const overlap = cited.filter((c) => group.includes(c));
-        if (overlap.length < 2) continue;
-        const captures = new Set(overlap.map((c) => captureById.get(c)));
-        if (captures.size === 1) {
-          report.warn('42', rec.file, `${ptr} cites ${overlap.join(' and ')}, which are one capture of one page under different ids. That is one source, not ${overlap.length}.`);
-        } else {
-          report.warn('42', rec.file, `${ptr} cites ${overlap.join(' and ')} — different captures of ONE page by ONE publisher. Legitimate if the claim is about change over time; they cannot corroborate each other.`);
+      const positions = [
+        { cited: att?.sources ?? [], where: '' },
+        ...((att?.disputed ?? []).map((d, i) => ({ cited: d?.sources ?? [], where: ` (disputed position ${i})` }))),
+      ];
+      for (const { cited, where } of positions) {
+        if (cited.length < 2) continue;
+        for (const id of cited) {
+          const group = pageOf.get(id);
+          if (!group) continue;
+          const overlap = cited.filter((c) => group.includes(c));
+          if (overlap.length < 2) continue;
+          const captures = new Set(overlap.map((c) => captureById.get(c)));
+          if (captures.size === 1) {
+            report.warn('42', rec.file, `${ptr}${where} cites ${overlap.join(' and ')}, which are one capture of one page under different ids. That is one source, not ${overlap.length}.`);
+          } else {
+            report.warn('42', rec.file, `${ptr}${where} cites ${overlap.join(' and ')} — different captures of ONE page by ONE publisher. Legitimate if the claim is about change over time; they cannot corroborate each other.`);
+          }
+          break;
         }
-        break;
       }
     }
   }
@@ -414,7 +427,7 @@ for (const [modelId, list] of variantsByModel) {
     // was asserting one as a product spec, and neither the range check nor this rule could see
     // it, because a disputed value LOOKS handled. Found 2026-09-11; the fix is to read every
     // source an attestation cites, however it cites them.
-    const citedIds = [...(att?.sources ?? []), ...((att?.disputed ?? []).flatMap((d) => d.sources ?? []))];
+    const citedIds = citedSourceIds(att);
     const blob = [JSON.stringify(doc), ...citedIds.map((id) => JSON.stringify(sourceById.get(id) ?? {}))].join(' ');
     const gross = grossOf(blob);
     if (!gross.some((g) => Math.abs(g - w) < 0.5)) continue;
@@ -529,7 +542,7 @@ for (const [modelId, list] of variantsByModel) {
         // disputed[].sources, so reading only att.sources skips exactly the records with
         // contested evidence. Found while fixing rule 45 on 2026-09-11 — the two rules shared
         // the bug and only one of them had been noticed.
-        const cited = [...(att?.sources ?? []), ...((att?.disputed ?? []).flatMap((x) => x.sources ?? []))];
+        const cited = citedSourceIds(att);
         if (!cited.length) continue;
         const text = cited.map((id) => JSON.stringify(sourceById.get(id) ?? {})).join(' ');
         if (forms(value).some((f) => text.includes(f))) continue;
