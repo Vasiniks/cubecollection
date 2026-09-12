@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      521
-sources:       583
+sources:       584
 events:        4
 
 VALIDATION
@@ -203,8 +203,15 @@ MAIN-SESSION WORK SINCE THE RELAUNCH
   and a sub-brand appearing under its parent's prefix. THE FIX WENT IN THE RECORDS, NOT THE
   REGEX: each source now states plainly that it contains an enumeration. Precise, true, one
   note each.
-  Two candidates were INSPECTED AND REJECTED (a single product's category membership, and a
-  single product page), which is what makes the four trustworthy.
+  Later: GuoGuan closed (the Cubelelo MoYu sweep enumerates it UNDER the parent's prefix) and
+  Calvin's Puzzle closed (both of today's facet enumerations list real products; the brand
+  NEEDED the facet method since no product carries the brand in its handle).
+  FIVE CANDIDATES WERE INSPECTED AND REJECTED, which is what makes the six closures
+  trustworthy: a single product's category membership (yancheng); a single product page
+  (newisland); ESCube, whose match was the word "prefix" inside "brand-word PREFIXED onto the
+  product name"; and KungFu, which my own sweep source says returned zero products because the
+  SLUG was wrong, not because the brand is unstocked. Citing either would have been false.
+  REMAINING NO-SWEEP (11): escube 11, kungfu 10, newisland 9, + 8 more.
 
 OPEN CRITICALS
   P4-9   adjudicated in full; taxonomy admission is the user's call
