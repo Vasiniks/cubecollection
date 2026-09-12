@@ -2102,6 +2102,31 @@ issues:
       LIVE catalogue queries, which preserve nothing; the source makes no specification, date or
       identity claim about any product listed, and each page needs capturing before any of it is
       load-bearing. What is established is the SHAPE of the gap, not its contents.
+
+      2026-09-12 — THE CALVIN'S PUZZLE GAP IS INVISIBLE AT BOTH PRINCIPAL RETAILERS, which
+      settles that it is a method failure and not an artefact of one storefront. TheCubicle
+      attributes at least 24 typed-3x3 products to vendor "Calvin's Puzzle" and ALL 24 have no
+      brand token in the handle, exactly as SpeedCubeShop's 23 do not. Preserved as
+      thecubicle-calvins-puzzle-vendor-facet-2026.
+
+      TWO RECONCILIATIONS CAME OUT OF READING THE TWO CATALOGUES TOGETHER, and an admission pass
+      will need both.
+
+      THE SAME PRODUCTS CARRY DIFFERENT RETAILER NAMES. TheCubicle's "Practice Special Cube
+      (F2L-3)" is SpeedCubeShop's "CFOP Trainer Cube (F2L-3)", and likewise across Cross, F2L-1,
+      F2L-2, OLL and PLL. Adding the two catalogues together would double-count those six — the
+      same trap the raw catalogue-gap diff hit in this issue's own methodology note, where
+      collapsing title-order duplicates removed 12 phantom candidates.
+
+      THE SUDOKU RANGE IS A SIX-GENERATION LINE, NOT FIVE UNRELATED PRODUCTS. TheCubicle version-
+      numbers them and SpeedCubeShop does not; read together they give V1 Challenge, V2 Wisdom,
+      V3 Master, V4 Elite, V5 Pro, V6 Ultra, with SpeedCubeShop's five named cubes being V2-V6
+      and TheCubicle alone carrying the V1. That mapping is THIS ARCHIVE'S SYNTHESIS from two
+      catalogues — neither retailer states it — and is flagged as such in the source.
+
+      STILL NOTHING ADMITTED. Both enumerations are live queries that preserve nothing, the
+      250-product response was the requested limit rather than a catalogue size, so 24 is a floor,
+      and no Calvin's Puzzle first-party source has been consulted at all.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

@@ -1,0 +1,71 @@
+# source: thecubicle-calvins-puzzle-vendor-facet-2026
+# Created 2026-09-12. The second retailer for the Calvin's Puzzle gap, and the one that makes the
+# gap unambiguous: the products are invisible to slug sweeps at BOTH retailers, and this one
+# supplies the version numbering that reconciles the other's product names.
+id: thecubicle-calvins-puzzle-vendor-facet-2026
+entity: source
+kind: retailer
+title: "TheCubicle Calvin's Puzzle brand-collection enumeration (vendor facet, 2026-09)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/calvins-puzzle/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Brand-collection enumeration via the retailer's own product JSON, fetched 2026-09-12. The
+  response is capped at the 250-product limit requested; 24 of those are typed "3x3" and every
+  one carries `"vendor": "Calvin's Puzzle"`.
+
+  ALL 24 HAVE NO BRAND TOKEN IN THE HANDLE, exactly as at SpeedCubeShop. The Calvin's Puzzle
+  range is invisible to slug-based discovery at BOTH of the archive's principal retailers, which
+  is why three models is all the archive has.
+
+  The 24, verbatim as handle and title:
+    practice-special-cube-cross / -f2l-1 / -f2l-2 / -f2l-3 / -oll / -pll
+                                              "Practice Special Cube (Cross)" ... "(PLL)"
+    sudoku-challenge-cube-3x3-v1              "Sudoku Cube 3x3 V1 (Challenge)"
+    sudoku-challenge-cube-3x3-v2              "Sudoku Cube 3x3 V2 (Wisdom)"
+    sudoku-challenge-cube-3x3-v3              "Sudoku Cube 3x3 V3 (Master)"
+    sudoku-challenge-cube-elite-3x3-v4        "Sudoku Cube 3x3 V4 (Elite)"
+    sudoku-cube-3x3-v5-pro                    "Sudoku Cube 3x3 V5 (Pro)"
+    sudoku-cube-3x3-v6-ultra                  "Sudoku Cube 3x3 V6 (Ultra)"
+    calendar-cube-v1-3x3, calendar-cube-v2-3x3   "Calendar Cube V1 3x3", "... V2 3x3"
+    world-map-3x3-flag                        "World Map 3x3 (Flag)"
+    yummy-hamburger-3x3x3, yummy-cheeseburger-3x3x3,
+    yummy-french-fries-keychain-cube-3x3, yummy-cheeseburger-keychain-cube-3x3
+    christmas-cube-3x3
+    (and further entries beyond the ones transcribed here)
+
+  TWO RECONCILIATIONS THIS SOURCE MAKES POSSIBLE, both of which a later admission pass needs and
+  neither of which either retailer states.
+
+  ONE: THE SAME PRODUCTS ARE NAMED DIFFERENTLY AT THE TWO RETAILERS. TheCubicle's "Practice
+  Special Cube (F2L-3)" at `practice-special-cube-f2l-3` is SpeedCubeShop's "CFOP Trainer Cube
+  (F2L-3)" at `cfop-trainer-cube-f2l-3`, and the same holds across Cross, F2L-1, F2L-2, OLL and
+  PLL. A count that added the two catalogues together would double these six.
+
+  TWO: THECUBICLE VERSION-NUMBERS THE SUDOKU RANGE AND SPEEDCUBESHOP DOES NOT. Reading the two
+  together gives V1 Challenge, V2 Wisdom, V3 Master, V4 Elite, V5 Pro, V6 Ultra — and
+  SpeedCubeShop's five named Sudoku cubes (Master, Ultra, Pro, Wisdom, Elite) are V2 through V6.
+  TheCubicle carries a V1 Challenge that SpeedCubeShop does not. That is a six-generation line,
+  not five unrelated products.
+preservation_note: >-
+  Live catalogue query, not an archive capture; a vendor facet has no Wayback equivalent. The
+  enumeration preserves nothing on its own, so this record makes no specification, date or
+  identity claim about any product listed. Each page needs capturing before anything is
+  load-bearing.
+  THE 250 FIGURE IS THE REQUESTED LIMIT, NOT A CATALOGUE SIZE. Calvin's Puzzle products beyond
+  that cap were not returned, so the 24 typed-3x3 count is a floor and not a total.
+  THE VERSION RECONCILIATION ABOVE IS THIS ARCHIVE'S OWN SYNTHESIS from two retailers' naming,
+  flagged as such. Neither retailer maps its names onto the other's, and no Calvin's Puzzle
+  first-party source was consulted this pass.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: that TheCubicle attributes at least 24 typed-3x3 products to "Calvin's Puzzle";
+  that none of them is reachable by slug; and the version labels it assigns to the Sudoku range.
+  DOES NOT ESTABLISH: that any is a distinct model, who manufactures them, or that the
+  cross-retailer name mapping above is anything but this archive's reading of two catalogues.
+status: sourced
