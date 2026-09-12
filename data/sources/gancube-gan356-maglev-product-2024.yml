@@ -1,0 +1,70 @@
+# source: gancube-gan356-maglev-product-2024
+# Created 2026-09-12 from an unchased lead in gancube-gan356-i-prefix-2026 — a CDX enumeration of
+# GAN'S OWN storefront that had been run but never read. THE POINT OF THIS RECORD IS PROVENANCE,
+# not count: before it, gan-356-maglev rested entirely on TheCubicle, two records from one
+# publisher, which is the concentration risk RESEARCH_SPEC 3.6a and audit sweep #7 are about.
+# This is the manufacturer's own product page for the same puzzle.
+id: gancube-gan356-maglev-product-2024
+entity: source
+kind: manufacturer_official
+title: "GAN356 Maglev 3x3 Advanced Magnetic Speed Cube — GANCUBE Official Website"
+publisher: "GANCUBE (gancube.com)"
+url: "https://www.gancube.com/products/gan356-maglev-3x3-magnetic-speed-cube"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241117034203id_/https://www.gancube.com/products/gan356-maglev-3x3-magnetic-speed-cube"
+excerpt: |-
+  Page title as captured: "GAN356 Maglev 3x3 Advanced Magnetic Speed Cube | GANCUBE Official
+  Website". Canonical URL declared by the page:
+  https://www.gancube.com/products/gan356-maglev-3x3-magnetic-speed-cube.
+
+  Product description, verbatim, in GAN's own words:
+
+  "Unleash Peak Performance with the GAN Magnetic Speed Cube — Step into a new era of cubing with
+  the GAN Magnetic Levitation Cube. This isn't just a puzzle — it's a fusion of magnetic power and
+  precision engineering. Harness the dynamic push and pull of magnetic attraction and repulsion
+  to boost your solving speeds."
+
+  "30°+ Auto-Alignment Precision — Leave misalignments in the past. The GAN 356 Maglev's magnetic
+  force distribution grants over 30° of automatic alignment, ensuring each twist locks into place
+  with accuracy and ease."
+
+  "36 Customization Options — Make it yours. With 6 elasticity levels and 6 center travel
+  settings, the GAN 356 Maglev offers 36 different configurations."
+
+  "76 Magnetic Points of Control — Dive into an advanced 3D magnetic environment, where 76
+  magnetic forces come together across the cube's axes, edges, and corners. Each turn transforms
+  into a controlled, floating motion."
+
+  "Lightweight Smoothness, Unmatched Agility — The GAN 356 Maglev is crafted to flow with your
+  moves. With a honeycomb design that extends lubricant life and WEIGHS ONLY 81.2 GRAMS, this
+  cube is engineered for smooth, feather-light handling." (Emphasis added to mark the figure this
+  record is cited for; the wording is GAN's.)
+preservation_note: >-
+  Capture 20241117034203 fetched 2026-09-12 with content-encoding negotiation and read in full.
+  THIS SOURCE SETTLES A WEIGHT THE ARCHIVE COULD NOT OTHERWISE HAVE RECORDED. TheCubicle's page
+  for the same puzzle gives "Gross Weight: 250g", a packaged figure this archive refuses under
+  the rule-45 class — and refusing it left the archive with no weight at all. GAN states 81.2
+  grams for the puzzle itself, which is both admissible and tier 1. This is a worked example of
+  why refusing a gross weight is not the end of the question: the right figure usually exists
+  somewhere else.
+  THE 30° CLAIM MATCHES THE ARCHIVE'S OTHER FIRST-PARTY GAN SOURCE. gancube-cn-core-technology-
+  history describes Magnetic Core 2.0 as achieving "30°自动漂移归位" — 30-degree automatic drift
+  realignment. The same manufacturer saying the same thing in two languages on two pages is one
+  evidence chain, not two, and this page is NOT cited as corroboration of that one.
+accessed: "2026-09-12"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 1, the manufacturer's own product page.
+  ESTABLISHES: a product weight of 81.2 g; a magnetic-levitation mechanism using attraction and
+  repulsion in place of a spring; 6 elasticity levels and 6 centre-travel settings; and 76
+  magnets distributed across the cube's axes, edges and corners.
+  DOES NOT ESTABLISH: a release date, a size, or a coating. Note also that this page describes
+  the GAN356 MagLev generally and says nothing about the UV-coated configuration, which is
+  evidenced separately by thecubicle-gan356-maglev-uv-2023.
+  MARKETING REGISTER, READ PER RESEARCH_SPEC 3.3. "Unleash Peak Performance" and "feather-light
+  handling" are advertising and are not treated as specification; "81.2 grams", "76", "6 and 6"
+  and "over 30°" are numeric claims about the product and are.
+status: sourced

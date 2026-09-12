@@ -1,0 +1,51 @@
+# source: thecubicle-gan12-ui-maglev-powerpod-2025
+# Created 2026-09-12. An adjudication record: one unchased lead from thecubicle-gan12-ui-slug-
+# prefix-2026 resolved, and one deliberately left open. Read the reliability_note for the second.
+id: thecubicle-gan12-ui-maglev-powerpod-2025
+entity: source
+kind: retailer
+title: "GAN12 ui MagLev (with PowerPod) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan12-ui-maglev-with-powerpod"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250908094755id_/https://www.thecubicle.com/products/gan12-ui-maglev-with-powerpod"
+excerpt: |-
+  Page title as captured: "GAN12 ui MagLev (with PowerPod) – TheCubicle". Shopify product id
+  7419366375507. Price 129.99 USD.
+
+  Product description, verbatim: "...smaller compared to the GAN12 ui Free Play box. This is
+  because the new PowerPod included with the GAN12 ui Maglev is slightly smaller in length and in
+  depth, but retains the same height as the Freeplay PowerPod. This new PowerPod has the same
+  plastic texture and material as Apple AirPods cases, and even the indicator light and the..."
+
+  ADJUDICATION: the path gan12-ui-maglev-with-powerpod is REJECTED as a configuration of
+  gan-ui-12-maglev. The retailer's
+  own sentence is what decides it — "the new PowerPod INCLUDED WITH the GAN12 ui Maglev" — so the
+  charging pod is what the product ships with, not an option distinguishing one form of it from
+  another. The title's "(with PowerPod)" describes the standard product's contents. Under this
+  archive's anti-explosion rule a bundle is not a variant, and this is not even a bundle of two
+  products: it is one product described with its own accessory.
+preservation_note: >-
+  Capture 20250908094755 fetched 2026-09-12 with content-encoding negotiation and read in full.
+  No specification table is preserved and none is attested from this page.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the GAN12 ui MagLev ships with a PowerPod charging case, and that the case
+  differs in length and depth from the GAN12 ui FreePlay's while matching its height.
+  DOES NOT ESTABLISH: any specification of the puzzle itself, or a release date.
+
+  A SECOND PATH FROM THE SAME SWEEP IS LEFT OPEN, ON PURPOSE, AND IS NOT ADJUDICATED ABOVE.
+  thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition (first capture 2026-06-16)
+  is titled "GAN12 ui MagLev 3x3 (PowerPod, 2026 Edition)" and carries a different Shopify
+  product id, 7995691008083, at 119.99 USD. Two distinct product ids means two listings — but
+  TheCubicle's 2026 storefront is JavaScript-rendered and that capture preserves no description,
+  so whether "2026 Edition" denotes an edition GAN itself declares or simply that year's stock
+  of the same product is an open question. It stays a lead until a source settles it, and it is
+  described here in wording chosen so that the lead counter continues to report it rather than
+  treating this record as having disposed of it.
+status: sourced

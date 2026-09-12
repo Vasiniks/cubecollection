@@ -11,6 +11,8 @@ edition:
 config:
   maglev: maglev
   adjustment_system: tension_compression
+  magnet_configuration: core_corner_plus_piece
+  weight_g: 81.2
 status: stub
 attestations:
   /config/maglev:
@@ -21,3 +23,24 @@ attestations:
     confidence: probable
     sources: [thecubicle-gan356-maglev]
     note: "'6 tension adjustments, 6 center travel adjustments.'"
+  /config/weight_g:
+    confidence: confirmed
+    sources: [gancube-gan356-maglev-product-2024]
+    note: >-
+      GAN's own product page: "a honeycomb design that extends lubricant life and weighs only
+      81.2 grams". Tier 1, so `confirmed` needs no second source under rule 9.
+      THE ARCHIVE HAD NO WEIGHT FOR THIS PUZZLE UNTIL NOW, and the reason is worth keeping.
+      TheCubicle's page gives "Gross Weight: 250g", a packaged figure refused under the rule-45
+      class — and refusing it correctly left nothing behind. Going to the manufacturer produced
+      the admissible figure. Refusing a gross weight is not the end of the question.
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [gancube-gan356-maglev-product-2024, thecubicle-gan356-maglev-uv-2023]
+    note: >-
+      GAN: "76 magnetic forces come together across the cube's AXES, EDGES, AND CORNERS" — core
+      magnets on the axes plus magnets in the pieces, which is `core_corner_plus_piece`.
+      TheCubicle independently describes "corner/core magnetization", corroborating the
+      core-corner half but not naming edge magnets, so the `plus_piece` half rests on GAN alone.
+      Recorded at `probable` rather than `confirmed` for a second reason as well: "76 magnetic
+      forces" is a count of forces across three locations and GAN does not break it down, so the
+      distribution is read from the sentence rather than stated as a configuration.
