@@ -60,13 +60,22 @@ attestations:
     note: "'V3' is not present in 666toy's own product-page title/copy for this item (which
       instead reads 'Small Magic'), only in one tier 2 retailer's naming."
   /name:
-    confidence: uncertain
+    confidence: probable
     sources: [666toy-little-magic-3x3-products, cubezz-yuxin-3x3-collection-2026]
-    note: "The manufacturer's own page title for this item reads 'Small Magic,' not 'Little
-      Magic'; family placement (yuxin-little-magic) rests on the manufacturer's own category
-      filing plus the retailer's independent 'Little Magic V3' naming, not on the product
-      page's own title. Flagged for review — see the header note and
-      research/qc/pass3-b2-agent-a-yuxin.md."
+    note: "REVIEWED 2026-09-11, closing ledger P4-15; raised from `uncertain`. The review did
+      not need new evidence - it needed reading the source already cited. The flag said the
+      manufacturer's page title reads 'Small Magic' rather than 'Little Magic', which is true
+      of the HEADING only. The same 666toy page's BODY copy reads \"Yuxin Little Magic
+      Magnetically Suspended Third Order Magic Cube\", and the manufacturer files the item
+      (number 1722) under its own \"little-magic-series\" category. So the manufacturer uses
+      both names on one page and calls the line Little Magic in the two places that carry more
+      weight than a heading: its own prose and its own taxonomy. Cubezz independently titles it
+      \"YuXin Little Magic V3 MagLev\".
+      HELD AT `probable`, NOT `confirmed`: the heading genuinely does say Small Magic, and that
+      is a real inconsistency in the manufacturer's own material rather than a misreading. The
+      alias preserves it so a collector searching 'Small Magic' still finds this record. Same
+      shape as the Kirin/Kylin romanisation question closed under the same issue - record the
+      other name, do not assert it away."
   /description:
     confidence: reported
     sources: [666toy-little-magic-3x3-products, cubezz-yuxin-3x3-collection-2026]

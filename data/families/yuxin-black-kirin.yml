@@ -6,7 +6,8 @@ id: yuxin-black-kirin
 entity: family
 manufacturer_id: yuxin
 name: "YuXin Black Kirin"
-aliases: []
+aliases:
+  - "YuXin Black Kylin"
 positioning: budget
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-yuxin-products): "YuXin Black Kirin 3x3 — The
@@ -22,6 +23,20 @@ description: |-
 status: drafted
 
 attestations:
+  /aliases:
+    confidence: probable
+    sources: [thecubicle-yuxin-collection-2025, speedsolving-wiki-yuxin-products]
+    note: "TRANSLITERATION VARIANT recorded 2026-09-11 closing ledger P4-15. Kirin and Kylin are
+      two romanisations of the same Chinese creature (麒麟), so a collector may search either.
+      RECORDED AS AN ALIAS, NOT MERGED - and the distinction matters. This archive holds a
+      SEPARATE family yuxin-kylin, and the evidence says that is correct rather than a
+      duplicate: TWO independent retailers carry BOTH spellings as distinct product paths
+      (TheCubicle: yuxin-black-kirin-3x3 and yuxin-black-kirin-3x3-v2 alongside
+      yuxin-kylin-3x3-v2-m; SpeedCubeShop: yuxin-black-kirin-3x3 and -v2-3x3 alongside
+      yuxin-kylin-v2-m-3x3). The Speedsolving wiki names both in one sentence - \"It and the
+      YuXin Black Kirin V2 can be bought with transparent plastic\" - which only makes sense if
+      they are different products. Two distinct lines whose names share a romanisation root, so
+      the alias serves search without asserting identity."
   /positioning:
     confidence: uncertain
     sources: [speedsolving-wiki-yuxin-products]

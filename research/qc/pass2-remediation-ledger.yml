@@ -2097,7 +2097,7 @@ issues:
 
   - id: P4-15
     severity: low
-    status: open
+    status: resolved
     title: "Two YuXin naming questions were raised at Pass 3 and never filed"
     evidence: >-
       (1) yuxin-black-kirin versus yuxin-black-kylin - a TRANSLITERATION variance in the archive's
@@ -2109,6 +2109,33 @@ issues:
       without resolution.
       Both are cheap. Both have been open since Pass 3 because a "review items" paragraph is not
       a mechanism, which is the same lesson as P26-2.
+      BOTH QUESTIONS CLOSED 2026-09-11, and NEITHER needed new research - both needed reading
+      evidence the archive already held. That is the finding, because it is why they survived six
+      passes: a "review items carried forward" paragraph is not a mechanism, and nobody re-reads
+      the sources behind a prose note.
+      (1) KIRIN / KYLIN IS NOT A TRANSLITERATION COLLISION - and the answer is the opposite of
+      what the issue assumed. This archive holds TWO families, yuxin-black-kirin and yuxin-kylin,
+      and that is CORRECT rather than a duplicate. Two independent retailers carry both spellings
+      as distinct product paths (TheCubicle: yuxin-black-kirin-3x3 and -3x3-v2 alongside
+      yuxin-kylin-3x3-v2-m; SpeedCubeShop: yuxin-black-kirin-3x3 and -v2-3x3 alongside
+      yuxin-kylin-v2-m-3x3). The Speedsolving wiki names both in ONE SENTENCE - "It and the YuXin
+      Black Kirin V2 can be bought with transparent plastic" - which only parses if they are
+      different products. Recorded "YuXin Black Kylin" as an ALIAS on yuxin-black-kirin so a
+      collector searching the other romanisation finds it, WITHOUT asserting identity. Had the
+      issue been resolved by merging on the spelling, it would have destroyed a real distinction.
+      (2) LITTLE MAGIC V3 / "SMALL MAGIC" - raised from `uncertain` to `probable`. The flag said
+      the manufacturer's page title reads "Small Magic", which is true of the HEADING only. The
+      same 666toy page's BODY reads "Yuxin Little Magic Magnetically Suspended Third Order Magic
+      Cube", and the manufacturer files item 1722 under its own "little-magic-series" category.
+      The manufacturer uses both names on one page and calls the line Little Magic in the two
+      places that outweigh a heading: its own prose and its own taxonomy. Cubezz independently
+      titles it "YuXin Little Magic V3 MagLev".
+      HELD AT `probable`, NOT `confirmed`, because the heading genuinely does say Small Magic -
+      a real inconsistency in the manufacturer's own material, not a misreading. The existing
+      alias preserves it for search.
+      Both resolutions take the same shape and it is worth stating as a pattern: record the other
+      name, do not assert it away. An alias costs nothing; a merge or a rename destroys
+      information and is expensive to reverse.
     recommendation: >-
       Check each against the manufacturer's own Chinese-language naming and record the loser as an
       alias rather than renaming anything. Aliases cost nothing and renaming an id is expensive.
