@@ -1,0 +1,37 @@
+# source: thecubicle-dayan-zhanchi-diy-kit-2020
+# Created 2026-09-11, depth research on DaYan. Found in thecubicle-dayan-products-prefix-2026,
+# an existing sweep source whose enumeration listed this path without it ever being chased.
+id: thecubicle-dayan-zhanchi-diy-kit-2020
+entity: source
+kind: retailer
+title: "DaYan ZhanChi - DIY Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-zhanchi-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200923200158id_/https://www.thecubicle.com/products/dayan-zhanchi-diy-kit"
+excerpt: |-
+  Page title as captured: "DaYan ZhanChi - DIY Kit – TheCubicle".
+
+  Product Description, verbatim: "This is the Do-It-Yourself (DIY) version of this product. To see
+  the Assembled version of this product, please click here. The DaYan ZhanChi is the fifth cube of the DaYan series and is quickly becoming one of the most popular in the market."
+
+  Product Specifications table: "Manufacturer: DaYan", "Dimensions: 57.0mm3".
+
+  THE RETAILER PAIRS THE TWO ITSELF. "This is the Do-It-Yourself (DIY) version of this product. To
+  see the Assembled version of this product, please click here" is the seller explicitly naming
+  this as one of two forms of ONE product, rather than this archive inferring a configuration
+  boundary from similar naming.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted title and
+  description. The live product page no longer returns JSON — the product is discontinued."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the ZhanChi was sold in a DIY (unassembled) configuration alongside an
+  assembled one, and that the retailer treats them as two forms of one product.
+  DOES NOT ESTABLISH: a release date, or what DaYan itself called the configuration — "DIY Kit"
+  is the retailer's product title.
+status: sourced

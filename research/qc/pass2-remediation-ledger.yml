@@ -1003,6 +1003,28 @@ issues:
       one that worked. The slug form has to be checked per brand, never assumed.
       STATUS: leads verified, family creation still blocked by the freeze. This is no longer an
       unverified-leads issue; it is a queued admission decision.
+      A DEPTH-RESEARCH PATTERN WORTH RECORDING, found 2026-09-11 while working the
+      one-configuration models. The archive's OWN existing sweep sources list product paths that
+      were enumerated and never chased. thecubicle-dayan-guhong-product-urls and
+      thecubicle-dayan-products-prefix-2026 between them name five DaYan DIY-kit paths -
+      dayan-guhong-diy-kit, -lingyun-v2-diy-kit, -lunhui-diy-kit, -panshi-diy-kit,
+      -zhanchi-diy-kit - none of which had a variant record.
+      Three are now recorded (GuHong, PanShi, ZhanChi). Two returned NO Wayback capture at all
+      (LingYun V2, LunHui) and are recorded here as unverified rather than assumed: a failed fetch
+      is not evidence of absence, and the paths remain in the sweep sources for a later attempt.
+      WHY THESE ARE SOUND VARIANTS. The retailer states the pairing itself on every one: "This is
+      the Do-It-Yourself (DIY) version of this product. To see the Assembled version of this
+      product, please click here." That is the seller naming two forms of ONE product, which is
+      stronger than this archive inferring a configuration boundary from similar naming - the
+      inference that produces false variants.
+      THE GENERAL LESSON, which is bigger than DaYan: a sweep source records what was FOUND, and
+      the pass that created it acted only on what it was looking for at the time. Those excerpts
+      are a queue of unchased leads, and reading them is cheaper than new discovery. The DIY axis
+      alone existed in only 5 variants archive-wide before today despite being enumerated years
+      of captures ago.
+      Model attachment was checked rather than assumed: the GuHong DIY kit carries no version
+      suffix, describes itself as "the cube that launched DaYan's presence into the market", and
+      states 57.0mm against dayan-guhong-v3-m's recorded 54mm.
     counterevidence: >-
       These rest on a prior pass's report rather than on Pass 2.6's own evidence. The Cyclone
       Boys names are described there as wiki-sourced "older models", which is tier 4 and

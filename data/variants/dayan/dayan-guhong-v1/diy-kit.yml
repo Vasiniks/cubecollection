@@ -1,0 +1,38 @@
+# variant: dayan-guhong-v1--diy-kit
+# Depth research 2026-09-11. Assembly state is the axis, and the retailer states the pairing
+# itself: "This is the Do-It-Yourself (DIY) version of this product. To see the Assembled version
+# of this product, please click here."
+id: dayan-guhong-v1--diy-kit
+entity: variant
+model_id: dayan-guhong-v1
+name: "DaYan GuHong (DIY Kit)"
+scope_class: core
+config:
+  size_mm: 57.0
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-diy-kit-2020]
+    note: >-
+      "DIY Kit" is the retailer's product title; no DaYan first-party source for the name was
+      found this pass. Recorded as the retailer's naming rather than the manufacturer's.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-diy-kit-2020]
+    note: >-
+      An unassembled configuration of the same design, not a limited or commemorative edition.
+      What makes this a CONFIGURATION rather than a separate product is that the retailer pairs
+      them explicitly — "the DIY version of this product... to see the Assembled version, click
+      here" — so the boundary is stated by the seller rather than inferred by this archive from
+      similar naming.
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-dayan-guhong-diy-kit-2020]
+    note: >-
+      57.0mm, which also corroborates the model attachment: dayan-guhong-v3-m is recorded at 54mm,
+      so this is the original GuHong and not a later generation. NO WEIGHT is recorded — the page
+      states none.

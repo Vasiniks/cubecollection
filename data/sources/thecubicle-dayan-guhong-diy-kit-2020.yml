@@ -1,0 +1,50 @@
+# source: thecubicle-dayan-guhong-diy-kit-2020
+# Created 2026-09-11, depth research on DaYan — the largest one-configuration gap in the archive
+# (24 models) and one of its most historically significant manufacturers. Found via
+# thecubicle-dayan-guhong-product-urls, an existing sweep source whose enumeration listed this
+# path without it ever being chased.
+id: thecubicle-dayan-guhong-diy-kit-2020
+entity: source
+kind: retailer
+title: "DaYan GuHong - DIY Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-guhong-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920102930id_/https://www.thecubicle.com/products/dayan-guhong-diy-kit"
+excerpt: |-
+  Page title as captured: "DaYan GuHong - DIY Kit – TheCubicle".
+
+  Product Description, verbatim: "This is the Do-It-Yourself (DIY) version of this product. To see
+  the Assembled version of this product, please click here. This is the cube that launched DaYan's
+  presence into the market. Despite the introduction of many additional cubes in the DaYan line,
+  the GuHong remains a top choice..."
+
+  Product Specifications table: "Manufacturer: DaYan", "Dimensions: 57.0mm3".
+
+  THE RETAILER PAIRS THE TWO ITSELF. "This is the Do-It-Yourself (DIY) version of this product. To
+  see the Assembled version of this product, please click here" is the strongest kind of evidence
+  for a configuration boundary: the seller explicitly naming this as one of two forms of ONE
+  product, rather than the archive inferring it from similar names.
+
+  WHICH GUHONG. The title carries no version suffix and the description calls it "the cube that
+  launched DaYan's presence into the market", which is the original. The 57.0mm dimension
+  corroborates it against dayan-guhong-v3-m, which this archive records at 54mm. The page's
+  mentions of V3, V4 and Pro appear in recommendation panels, not in its own copy.
+
+  NO ITEM WEIGHT is stated, only the dimension. Recorded as absent rather than filled from a
+  sibling page.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted
+  description, the title, and both specification fields. The live product page no longer returns
+  JSON — the product is discontinued."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured spec table.
+  ESTABLISHES: that the GuHong was sold in a DIY (unassembled) configuration alongside an
+  assembled one, that the retailer treats them as two forms of one product, and the dimension.
+  DOES NOT ESTABLISH: a release date, an item weight, or what DaYan itself called the
+  configuration — "DIY Kit" is the retailer's product title.
+status: sourced
