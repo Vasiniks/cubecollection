@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  66e3f9b
+HEAD:  0b9b47f
 DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      491
-sources:       543
+variants:      496
+sources:       549
 
 VALIDATION
 npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
@@ -109,17 +109,23 @@ THIRD WINDOW (2026-09-11)
   defects, four broken probes. No rule added: none describes an invariant the archive
   violates. Traps documented so the next sweep does not rediscover them.
 
-DEPTH RESEARCH IN PROGRESS (one-config models 118 -> 117)
-  Method that works: the alternate-slug CDX sweep (gan356-* not gan-356-*) surfaces named
-  editions the original passes could not see. GAN 356 line is the densest target.
-  Done: gan-356-me-v2--uv-coated, gan-356-m-e--brainstorm-voyage,
-        gan-356-m-e--lunar-new-year-2025.
-  Still listed in thecubicle-gan356-slug-prefix-2026 and NOT yet chased:
-        gan356-m-lite, gan356-m-3x3-uv-coated, gan356-me-uv-3x3-10th-anniversary-edition
-        (no capture found), gan356-i-play, gan356-x-ipg-v5.
+DEPTH RESEARCH (one-config models 118 -> 113; variants 488 -> 496)
+  TWO METHODS THAT WORK, both now automated:
+   (a) alternate-slug CDX sweep — gan356-* not gan-356-*, monstergo- not monster-go-.
+       Form must be checked PER BRAND (cyclone-boys is the hyphenated one).
+   (b) `npm run audit` sweep #12 — counts paths enumerated in our OWN sweep sources that
+       were never chased. The DaYan DIY-kit axis had sat in those excerpts for years.
+  Added: gan-356-me-v2--uv-coated, gan-356-m--lite, gan-356-m--uv-coated,
+         gan-356-m-e--brainstorm-voyage, gan-356-m-e--lunar-new-year-2025,
+         dayan-{guhong-v1,panshi-v1,zhanchi-v1}--diy-kit.
+  NEGATIVE RESULTS, both recorded as sources so they are not re-derived:
+   - GAN flagships 12-15 are ALREADY complete; every named LE was held.
+   - ShengShou YuFeng's 4 retailer paths are 2 products (identical SKUs) — a rename.
+  Unchased and capture-less: dayan-lingyun-v2-diy-kit, dayan-lunhui-diy-kit.
 
 NEXT ACTION
-  1. Continue depth on the GAN 356 line from the slug sweep's unchased list above.
+  1. Continue depth. Largest remaining one-config gaps: dayan (21), yj (19), qiyi (17),
+     shengshou (16). Run `npm run audit` sweep #12 first — it names the leads.
   2. P4-14 remainder: huameng-tg-v2 needs a second independent source.
   3. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens.
 
