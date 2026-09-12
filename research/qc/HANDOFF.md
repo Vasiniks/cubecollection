@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  8140d78
+HEAD:  e6b9637
 DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,10 +14,10 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      488
-sources:       539
+sources:       541
 
 VALIDATION
-npm run check:         0 errors, 25 advisory — EVERY ONE IS EXPLAINED, none is unattended:
+npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
                          10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
                                  citations where two captures ARE the claim
                          11 r18  genuinely out-of-range models (minis, oversized) — correct
@@ -92,14 +92,23 @@ THIRD WINDOW (2026-09-11)
          PRODUCT claims. Every claim was CORRECT; only preservation was truncated.
          Excerpt 839 -> 10,380; measure 95% -> 2%. Same repair on -mofang-jiaoshi.
          New audit sweep #10. CubeTwist white-face corroborated from sibling nav.
+  P4-16  MEASURED. TOTAL divergence: 0 of 13 reference_only models carry a date, so 2.4's
+         criterion is UNTESTABLE against all of them; all 13 are evidenced in circulation
+         2019-2026 and none is an identity stub. Audit sweep #11. Policy call = user's.
+  P4-12  Item (2) ANSWERED. The archive had NO WCA source at all — 16 legality claims
+         all inferred from mechanism. Added wca-regulations-2026-04 (tier 1, the
+         governing document). Reg 3d2 makes Phantom/Impossible not_legal. Rule 27 then
+         correctly fired on `core` + `not_legal`; reclassification is a frozen-taxonomy
+         call, escalated not acted on, and BOTH records explain the warning.
+         New `standards_body` source kind so the WCA is not filed as a manufacturer.
   P4-15  CLOSED. Kirin/Kylin are DISTINCT lines (both spellings are separate paths at
          two retailers) — merging would have destroyed a real distinction. Little Magic
          V3 raised uncertain -> probable.
 
 NEXT ACTION
-  1. P4-16 (reference_only's second undocumented meaning) and P4-12 (six model/variant
-     boundary questions) — the last two of the P4-12..P4-16 batch still untouched.
-  2. Then archive-wide adversarial QC per the phase plan.
+  1. Archive-wide adversarial QC per the phase plan (provenance / specs / variant
+     semantics / chronology / taxonomy sweeps).
+  2. Then depth research on high-value baseline-only models.
 
   P4-14 nearly closed: only huameng-tg-v2 thinness remains (6 attestations on ONE
   TheCubicle source, 4 at `uncertain`; needs a second independent source).
