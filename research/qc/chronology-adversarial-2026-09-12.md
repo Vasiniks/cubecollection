@@ -251,3 +251,42 @@ a defect would take if the Internet Archive's outage were permanent rather than 
 
 Re-verifying every record created during the outage against a real `archive_url` is listed in
 HANDOFF as a follow-up. Three are affected.
+
+---
+
+# Source-identity duplication — the gap is real, the problem is not — 2026-09-12 (sixth sweep)
+
+```
+SCOPE: does the archive hold the same source content under two different ids?
+ORIGIN: left open by the provenance adversarial lane, which observed that
+        check-duplicates.mjs fingerprints VARIANTS and never sources.
+RESULT: the gap in the tooling is real. The defect it would catch is not present.
+```
+
+## The gap is confirmed
+
+`scripts/check-duplicates.mjs` loads `byEntity.get('variant')` and fingerprints those alone. No
+entity other than variant is fingerprinted, so two source records holding the same content under
+different ids would collide with nothing. Rule 42 catches duplication by LOCATOR — same page,
+same capture — but not duplication carried in prose under two different URLs.
+
+## Measured: 1 pair out of 476 sources, and it is not a duplicate
+
+Every source with a 300+ character excerpt was reduced to 8-word shingles and compared pairwise —
+roughly 113,000 pairs. **Exactly one pair exceeds 50% overlap**, at 0.56:
+`thecubicle-huameng-tg-3x3-maglev-ball-core` and `thecubicle-huameng-tg-3x3-ball-core-uv`.
+
+They are two different products. Different URLs, different captures, and the archive already
+distinguishes them on evidence: the first records an 84.0 g item weight and `maglev:
+ball_core_maglev`, the second records 81.0 g and `coating: uv`. What overlaps is the retailer's
+shared product copy, which a retailer reuses across configurations of one product by design.
+
+## Why no check is being built
+
+A source-fingerprint check would have exactly one thing to say about this archive today, and that
+one thing would be wrong. Shared retailer boilerplate across sibling configurations is the normal
+case, not the defect — the same reasoning that stopped the rule-42 `speedsolving-wiki-*-products`
+pairs being "fixed", since those are deliberate.
+
+Recorded so the next person does not have to re-derive it. The threshold worth revisiting is
+near-identity (0.9+) rather than similarity, and at that threshold today's archive has zero pairs.

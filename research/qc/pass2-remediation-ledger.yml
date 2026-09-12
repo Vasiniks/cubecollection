@@ -3451,6 +3451,27 @@ issues:
       LEFT OPEN BY THE LANE: `check-duplicates.mjs` fingerprints variants only and never sources,
       so no general check exists for source-identity duplication carried in prose rather than in
       URLs.
+
+      2026-09-12 — THE SOURCE-DUPLICATION GAP THE PROVENANCE LANE LEFT OPEN: measured and
+      deliberately not built. `check-duplicates.mjs` does fingerprint VARIANTS only — confirmed,
+      it loads `byEntity.get('variant')` and no other entity — so two source records holding the
+      same content under different ids collide with nothing. Rule 42 catches duplication by
+      LOCATOR, not duplication carried in prose under two URLs.
+
+      THE DEFECT IS NOT PRESENT. All 476 sources with a 300+ character excerpt were reduced to
+      8-word shingles and compared pairwise, about 113,000 pairs. EXACTLY ONE exceeds 50%
+      overlap, at 0.56: thecubicle-huameng-tg-3x3-maglev-ball-core against
+      thecubicle-huameng-tg-3x3-ball-core-uv. They are two different products — different URLs,
+      different captures — and the archive already separates them on evidence, recording 84.0g
+      with `maglev: ball_core_maglev` for one and 81.0g with `coating: uv` for the other. What
+      overlaps is the retailer's shared product copy, which retailers reuse across configurations
+      of one product by design.
+
+      NO CHECK SHIPPED. A source-fingerprint rule would have exactly one thing to say about this
+      archive and that one thing would be wrong — the same reasoning that keeps the five
+      deliberate rule-42 `speedsolving-wiki-*-products` pairs from being "fixed". The threshold
+      worth revisiting is NEAR-IDENTITY (0.9+) rather than similarity, and at that threshold the
+      archive has zero pairs today.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
