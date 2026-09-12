@@ -2224,6 +2224,33 @@ issues:
       out-of-window stubs carrying "identity and aliases and nothing more". These eight are fully
       researched, in-window 3x3s with descriptions, specs and sources - and they are excluded by
       the same switch, for a different reason, with no separate affordance.
+      MEASURED 2026-09-11, and the measurement settles the factual half of this question even
+      though the POLICY half remains the user's to decide.
+      THE DECISIVE FACT: not one of the 13 reference_only models has a release or announcement
+      date at all. So RESEARCH_SPEC 2.4's stated criterion - "products outside roughly 2016-2026"
+      - is not merely unmet by these records, it is UNTESTABLE against every single one of them
+      from the fields 2.4 relies on.
+      Testing it another way settles it anyway. Every one of the 13 is evidenced by sources whose
+      captures fall between 2019 and 2026: calvins-crazy-mirror (2025), calvins-full-function
+      (2023, 2025), kungfu-dot-cube (2020), mefferts-kokonotsu (2020), the three MFJS minis (2019,
+      2019, 2020), qiyi-qimeng-plus (2025), qiyi-warrior-plus (2025, 2026), shengshou-crazy
+      (2024), witeden-camouflage (2025), witeden-super-cube (2025, 2026), yj-jinjiao (2020, 2026).
+      A capture bounds circulation, not release - but 13 of 13 in circulation inside the window is
+      not consistent with 2.4's out-of-window reading under any interpretation.
+      NOR ARE THEY IDENTITY STUBS, which is 2.4's other half ("identity and aliases and nothing
+      more"). All 13 carry variants (16 between them), 6 carry specs, 4 carry two or more sources,
+      and one is at `status: sourced`. These are researched records.
+      SO THE SECOND, UNDOCUMENTED MEANING IS DOING ALL THE WORK: reference_only is in practice
+      "in-window product that meets neither the core nor the conditional bar", and 2.4 describes
+      a use that NO CURRENT RECORD makes. The divergence is total, not partial.
+      WHAT IS STILL THE USER'S CALL, and why this issue stays open: which way to close it. Naming
+      the second meaning in 2.4 legitimises hiding 13 researched in-window products from the
+      public bundle. Rejecting it means either arguing significance for each under `conditional`
+      or dropping them. Both are curation decisions that change what the archive SHOWS, and
+      neither follows from the evidence above.
+      The recommendation's instruction not to reclassify the 13 before the rule is decided stands,
+      and is now better founded: they are consistent with each other, and the inconsistency is
+      between practice and the WRITTEN RULE, not among the records.
     recommendation: >-
       Decide which of two readings is intended, and write it into 2.4 either way.
       EITHER the second meaning is legitimate, in which case name it in 2.4 - something like

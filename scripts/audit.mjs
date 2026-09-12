@@ -398,5 +398,52 @@ for (const [id, n, pct] of over) line(`     ${String(pct).padStart(3)}%  ${Strin
 line('  Confirm each by hand before acting: token matching does not know this archive\'s');
 line('  abbreviations, so an `mfjs-*` record cited to a "MoFang JiaoShi" page scores as a miss.');
 
+// ---- 11. reference_only against its own written criterion ---------------------------------
+//
+// RESEARCH_SPEC 2.4 defines reference_only for ONE purpose: "Products outside roughly 2016-2026,
+// except where a predecessor or successor must be named to make a lineage intelligible - those
+// get scope_class: reference_only, identity and aliases and nothing more." build.mjs enforces the
+// consequence: PUBLIC_SCOPE is {core, conditional}, so these records never reach the public
+// bundle.
+//
+// Measured 2026-09-11 (ledger P4-16) with a total divergence. NOT ONE reference_only model has a
+// release or announcement date, so 2.4's own criterion is untestable against every record using
+// the class. Checked another way - source capture years - all 13 were in circulation between 2019
+// and 2026, inside the window. Nor are they the identity stubs 2.4 describes: they carry variants,
+// specs and in several cases multiple sources.
+//
+// So a SECOND, UNDOCUMENTED meaning is doing all the work: "in-window product that meets neither
+// the core nor the conditional bar". This reports the divergence rather than judging it, because
+// closing it either legitimises hiding researched in-window products or forces 13 records to
+// argue significance - both curation decisions, not data defects.
+head('reference_only vs RESEARCH_SPEC 2.4');
+const refOnly = mod.filter((r) => r.doc.scope_class === 'reference_only');
+let dated = 0, stubs = 0;
+const inWindow = [];
+for (const r of refOnly) {
+  const d = r.doc.released ?? r.doc.announced;
+  const year = typeof d === 'object' ? String(d?.value ?? '').slice(0, 4) : String(d ?? '').slice(0, 4);
+  if (/^\d{4}$/.test(year)) dated += 1;
+  const hasVariant = va.some((v) => v.doc.model_id === r.doc.id);
+  if (!hasVariant && !r.doc.specs) stubs += 1;
+  // circulation evidence: the years its own sources were captured
+  const ids = new Set();
+  for (const att of Object.values(r.doc.attestations ?? {})) for (const s of att?.sources ?? []) ids.add(s);
+  const years = [...ids].map((id) => {
+    const s = srcById.get(id) ?? {};
+    const m = /\/web\/(\d{4})/.exec(s.archive_url ?? '');
+    return m ? Number(m[1]) : Number(String(s.accessed ?? '').slice(0, 4)) || null;
+  }).filter(Boolean);
+  if (years.some((y) => y >= 2016 && y <= 2026)) inWindow.push(r.doc.id);
+}
+line(`  reference_only models                                  : ${refOnly.length}`);
+line(`  carrying a release or announcement date                : ${dated}   <- 2.4's criterion needs one`);
+line(`  that are identity stubs (no variants, no specs)         : ${stubs}   <- 2.4 says "nothing more"`);
+line(`  evidenced in circulation INSIDE the 2016-2026 window    : ${inWindow.length}`);
+if (dated === 0 && inWindow.length === refOnly.length) {
+  line('  TOTAL DIVERGENCE: 2.4 describes a use no current record makes. See ledger P4-16 —');
+  line('  the policy question is the user\'s to decide, not a data defect to fix.');
+}
+
 line();
 line('audit complete — advisory only, nothing here blocks a build.');
