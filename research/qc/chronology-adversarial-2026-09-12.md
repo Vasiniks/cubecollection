@@ -145,3 +145,57 @@ They are two products. QiYi MP is an **October 2021 flagship at 56mm**, describe
 bearing "a striking resemblance to the X-Man Tornado V2". QiYi M Pro is a **mid-2023 budget
 magnetic 3x3 at 55mm**. Different year, different positioning, different size, different family,
 and the same source distinguishes them in its own text. Correctly separate.
+
+---
+
+# Variant semantics — configuration axes named but not recorded — 2026-09-12 (fourth sweep)
+
+```
+SCOPE: axes asserted in a record's own name/designation but absent from its machine-readable config
+RESULT: one defect corrected (my own, made earlier the same day); a 109-gap pattern documented
+        and deliberately NOT bulk-edited.
+```
+
+## The probe discriminates, which is why its hits are worth reading
+
+Across all variants, for each axis named in a record's `name`, `edition.name` or
+`edition.designation`: **UV named in 55 records, missing from config in 0. Frosted named in 9,
+missing in 0.** Those zeros are what make the rest meaningful — the probe is not simply firing
+everywhere. Against that: **MagLev named in 78, missing in 6.**
+
+## The defect, and it was mine
+
+`gan-356-maglev--uv-coated`, written earlier today, carried only `coating: uv`. The record's own
+comment justified that: the maglev value "sits on the baseline variant and is inherited".
+
+**That reasoning is wrong. Inheritance runs MODEL -> VARIANT, never variant -> sibling variant**,
+and `gan-356-maglev` carries `specs: None`. So a record whose own name says "MagLev" did not say
+anywhere that the cube was MagLev. Rule 23 forbids restating the MODEL's value and has nothing to
+say about a sibling's; I applied it one level too far. Corrected, with the mistake left visible
+in the record rather than quietly overwritten.
+
+Five others share the shape and are left for a pass that can source them properly:
+`gan-ui-12-maglev--10th-anniversary` (config entirely absent), and four PiCube service-mod
+variants on `gan-flagship-16`, `gan-flagship-12` and `gan-v100-maglev` whose names all begin
+"GAN… MagLev".
+
+## The wider pattern — 109 gaps, 31 models, NOT bulk-edited
+
+The sharper form of the question is not "is the axis in the name" but **"do two or more siblings
+record this axis while another omits it, with no model-level value to inherit?"** That returns
+109 variant-field gaps across 31 models.
+
+Most are NOT errors. `dayan-guhong-pro-m--54mm-standard` omits `maglev` because it is the
+non-MagLev version; `moyu-weilong-v9--standard` omits `core_system` because it has no ball core.
+But the archive is inconsistent about how it says that: some records state `maglev: none`
+explicitly (`gan-flagship-12--m-leap`, the Super WeiLong Lite spring-tension variants) and others
+simply omit the key.
+
+**This is the same distinction the archive already draws carefully one layer up.** In attestations,
+`unknown` means searched-and-not-found while absence means not-searched — a distinction the
+project treats as load-bearing. At the config layer it is not applied consistently: `none` and
+absent are used interchangeably.
+
+Recording `maglev: none` on 109 fields would be asserting 109 claims, each needing a source.
+That is a decision about convention, not a cleanup, and it belongs to whoever owns DATA_MODEL
+rather than to an adversarial sweep. Documented here as a finding.

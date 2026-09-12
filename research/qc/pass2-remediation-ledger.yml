@@ -1613,6 +1613,36 @@ issues:
       it is complete to the retailer's own catalogue, six-for-six on the GuHong Pro+. The gaps
       are not thinness in researched lines; they are lines and brands the discovery method never
       reached, which is P4-9's subject and not this issue's.
+
+      2026-09-12 — AN AXIS CAN BE NAMED IN A RECORD AND ABSENT FROM ITS CONFIG, and I made one
+      of these myself earlier the same day. A sweep over every variant compared axes asserted in
+      `name`/`edition.name`/`edition.designation` against the machine-readable config. It
+      discriminates: UV is named in 55 records and missing from 0, Frosted named in 9 and missing
+      from 0. MagLev is named in 78 and missing from 6.
+
+      THE DEFECT. `gan-356-maglev--uv-coated` carried only `coating: uv`, and its own comment
+      justified this by saying the maglev value "sits on the baseline variant and is inherited".
+      That is wrong: INHERITANCE RUNS MODEL -> VARIANT, NEVER VARIANT -> SIBLING VARIANT, and
+      `gan-356-maglev` carries `specs: None`. A record whose own name says MagLev did not state
+      anywhere that the cube was MagLev. Rule 23 forbids restating the MODEL's value and says
+      nothing about a sibling's; I applied it one level too far. Corrected, with the error left
+      visible in the record. Five others share the shape and are named in the report for a pass
+      that can source them.
+
+      THE WIDER PATTERN, 109 GAPS ACROSS 31 MODELS, DELIBERATELY NOT BULK-EDITED. Asking instead
+      "do two or more siblings record this axis while another omits it, with no model value to
+      inherit" returns 109 variant-field gaps. MOST ARE NOT ERRORS —
+      `dayan-guhong-pro-m--54mm-standard` omits `maglev` because it is the non-MagLev version.
+      But the archive is inconsistent about how it says so: some records state `maglev: none`
+      explicitly (gan-flagship-12--m-leap, the Super WeiLong Lite spring variants) and others
+      simply omit the key.
+
+      THAT IS THE SAME DISTINCTION THE ARCHIVE ALREADY DRAWS ONE LAYER UP. In attestations,
+      `unknown` means searched-and-not-found and absence means not-searched, and this project
+      treats that as load-bearing. At the config layer, `none` and absent are used
+      interchangeably. Writing `none` onto 109 fields would be asserting 109 claims, each needing
+      a source — a convention decision for whoever owns DATA_MODEL, not a cleanup for an
+      adversarial sweep.
     counterevidence: >-
       A lone --standard record is not empty: it carries an attestation and typically a note
       stating that no colourway, magnet or coating option was found. It asserts "this model was

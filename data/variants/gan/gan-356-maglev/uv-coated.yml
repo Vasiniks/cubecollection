@@ -1,7 +1,11 @@
 # variant: gan-356-maglev--uv-coated
 # Depth research 2026-09-12, from an unchased lead in thecubicle-gan356-slug-prefix-2026.
-# Carries ONLY the axis that distinguishes it. The maglev and tension_compression values sit on
-# the baseline variant and are inherited; restating them here is what rule 23 catches.
+# CORRECTED the same day: this originally carried only `coating`, on the reasoning that the
+# maglev value "sits on the baseline variant and is inherited". THAT REASONING WAS WRONG.
+# Inheritance runs MODEL -> VARIANT, never variant -> sibling variant, and `gan-356-maglev` the
+# model carries no specs at all. So this record — whose own name says "MagLev" — did not say the
+# cube was MagLev anywhere. Rule 23 forbids restating the MODEL's value; it has nothing to say
+# about a sibling's.
 id: gan-356-maglev--uv-coated
 entity: variant
 model_id: gan-356-maglev
@@ -9,6 +13,7 @@ name: "GAN356 MagLev (UV Coated)"
 scope_class: core
 config:
   coating: uv
+  maglev: maglev
 edition:
   types: [standard]
   name: "UV"
@@ -36,3 +41,14 @@ attestations:
       A regular retail configuration distinguished by a surface coating, not a limited or
       commemorative edition. The page carries no run size, no anniversary or festival naming and
       no collaboration.
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-gan356-maglev-uv-2023]
+    note: >-
+      "This one has repelling magnets in place of a spring", from the same page this variant is
+      built on, and the model is named GAN356 MagLev.
+      ADDED AS A CORRECTION 2026-09-12. This record was first written without it, on the mistaken
+      reasoning that the value was inherited from the baseline variant. Inheritance runs from the
+      MODEL, and this model carries no specs, so nothing was inherited — the record asserted a UV
+      coating on a cube whose tension system it never stated. Found by a sweep for axes named in a
+      record and absent from its machine-readable config.
