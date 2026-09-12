@@ -2187,6 +2187,17 @@ issues:
       HUAMENG-TG-V2 THINNESS IS UNCHANGED and remains the one open item under this issue: all six
       of its attestations rest on a single TheCubicle source and four sit at `uncertain`. It needs
       a second independent source, which this pass did not attempt.
+      REPAIR VERIFIED 2026-09-11, after the fact rather than assumed. Every quotation in a MoYu
+      record that is EXPLICITLY ATTRIBUTED to speedsolving-wiki-moyu was extracted and checked
+      against that source's repaired excerpt: ZERO are absent. Before the repair the same check
+      could not have passed for any of them, because the excerpt held only brand history.
+      A measurement subtlety worth recording, because it nearly produced a false alarm. A naive
+      extraction - "take the first quoted span in each note" - reports 30 absent quotes. Almost
+      all are prose ABOUT OTHER SOURCES ("TheCubicle's own catalogue (thecubicle-com-moyu-3x3-
+      collection-2021)..."), not quotations from the wiki. Restricting the match to spans that
+      follow an explicit attribution to this source gives the real answer, which is zero.
+      That is the same lesson as the adversarial sweep the same day: a probe's hit count is
+      worthless until you have checked what it is actually matching.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
