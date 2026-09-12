@@ -13,6 +13,13 @@ manufacturer_id: moyu
 name: "MoYu WeiLong V9"
 aliases:
   - "MoYu WeiLong V9 Standard/Maglev/Ballcore"
+  # Retailer spellings. Both are what TheCubicle and SpeedCubeShop actually call this model;
+  # the archive's own name carries no "WR M" token, so a current-catalogue sweep matching on
+  # names reported this model as MISSING. The evidence is already inside the archive: the
+  # variant ballcore-uv-special-edition cites thecubicle-moyu-weilong-wrm-v9-ballcore-uv-se-2023,
+  # whose title is "MoYu WeiLong WRM V9 3x3 (Ball-Core UV Special Edition)". See P4-9.
+  - "MoYu WeiLong WRM V9"
+  - "MoYu WeiLong WR M V9"
 scope_class: core
 generation:
   label: "V9"

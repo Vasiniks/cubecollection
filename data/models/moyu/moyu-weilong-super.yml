@@ -9,6 +9,14 @@ entity: model
 family_id: moyu-weilong
 manufacturer_id: moyu
 name: "MoYu WeiLong Super"
+aliases:
+  # Pure word-order difference: both retailers and MoYu's own listings say "Super WeiLong",
+  # the archive says "WeiLong Super". Identical token multiset, no added or dropped term, so
+  # this is a spelling of one model and not a second product. Already evidenced inside the
+  # archive: this model's variants cite thecubicle-moyu-super-weilong-lite-2024, titled
+  # "MoYu Super WeiLong 3x3 Lite". Without the alias a name-matching catalogue sweep reports
+  # this model as missing. See P4-9.
+  - "MoYu Super WeiLong"
 scope_class: core
 generation:
   label: "Super"
