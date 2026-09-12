@@ -5,3 +5,6 @@ tests/.tmp-poison/
 .DS_Store
 *.log
 graphify-out/
+
+# Agent worktrees — transient, never part of the archive
+.claude/worktrees/
