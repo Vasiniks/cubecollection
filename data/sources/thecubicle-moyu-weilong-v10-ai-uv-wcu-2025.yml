@@ -1,0 +1,50 @@
+# source: thecubicle-moyu-weilong-v10-ai-uv-wcu-2025
+# Created 2026-09-12. PRESERVED AS EVIDENCE FOR A FROZEN-TAXONOMY QUESTION, not used to admit
+# anything. The path came off the handoff's re-tested lead list and names a MODEL the archive does
+# not hold: MoYu WeiLong V10 AI. The inventory stops at moyu-weilong-v9. Escalated under P4-9.
+id: thecubicle-moyu-weilong-v10-ai-uv-wcu-2025
+entity: source
+kind: retailer
+title: "MoYu WeiLong V10 AI 3x3 (UV) - WCU Edition — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-weilong-ai-3x3-uv-wcu-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250425092650id_/https://www.thecubicle.com/products/moyu-weilong-ai-3x3-uv-wcu-edition"
+excerpt: |-
+  Page title as captured: "MoYu WeiLong V10 AI 3x3 (UV) - WCU Edition – TheCubicle".
+
+  Purchase option offered, verbatim: "MoYu WeiLong V10 AI 3x3 (UV) - WCU Edition - Stickerless".
+
+  Specifications table, verbatim: "Manufacturer: MoYu", "Type: 3x3 Speed Cubes, Smart Cubes and
+  Bluetooth", "Added: 2024-10-18", "Gross Weight: 317g".
+
+  NOTE WHAT THE TITLE CARRIES: a generation the archive does not hold ("V10"), a smart-cube line
+  ("AI"), a coating ("UV") and a named edition ("WCU Edition") — four claims in one string, none
+  of which this record admits.
+preservation_note: >-
+  Capture 20250425092650 fetched 2026-09-12. The first fetch returned an undecoded body; the page
+  was re-fetched with content-encoding negotiation before being read, which is why the title and
+  specification table above could be quoted.
+  "Gross Weight: 317g" IS NOT A PRODUCT WEIGHT — it is a packaged figure for a smart cube sold
+  with a charging cable and box, and it is not attested anywhere. "Added: 2024-10-18" is a
+  catalogue-ingestion stamp of the kind documented across this retailer and is not a release date.
+  THIS RECORD DELIBERATELY ADMITS NOTHING. The archive's MoYu WeiLong line ends at
+  moyu-weilong-v9; there is no V10, no WeiLong AI model, and therefore nothing for a "WCU Edition"
+  variant to attach to. Creating any of them would be a model-layer change to a FROZEN inventory
+  on the strength of one retailer title. This is exactly the class P4-9 adjudicated — it belongs
+  with "MoYu WeiLong WRM V10", already classified confirmed_missing there — so the page is
+  preserved now, while the capture resolves, and the decision is left to the taxonomy owner.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that TheCubicle listed a product titled "MoYu WeiLong V10 AI 3x3 (UV) - WCU
+  Edition" in a stickerless body, catalogued as both a 3x3 speed cube and a smart/Bluetooth cube,
+  and observable in April 2025.
+  DOES NOT ESTABLISH: that "V10" is MoYu's own generation label rather than the retailer's; what
+  "WCU" stands for; a release date; any specification; or any relationship to moyu-weilong-v9.
+  A single retailer title is a lead, not a taxonomy.
+status: sourced

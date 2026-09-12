@@ -1879,6 +1879,18 @@ issues:
       NO TAXONOMY CHANGE. 3.6b states in its own text that a current-catalogue check produces
       candidates and nothing more, and cites this issue as the worked example: 261 candidates
       adjudicated, 48% correctly not gaps.
+
+      2026-09-12 — A NEW CANDIDATE OF THIS ISSUE'S EXACT CLASS, preserved and not admitted.
+      TheCubicle listed "MoYu WeiLong V10 AI 3x3 (UV) - WCU Edition", observable April 2025,
+      catalogued as both a 3x3 speed cube and a smart/Bluetooth cube, sold stickerless. The
+      archive's WeiLong line ends at moyu-weilong-v9: there is no V10, no WeiLong AI model, and
+      so nothing for a "WCU Edition" variant to attach to. The title carries FOUR claims in one
+      string — a generation, a smart line, a coating and a named edition — and a single retailer
+      title establishes none of them. It sits beside "MoYu WeiLong WRM V10", already classified
+      confirmed_missing here. Preserved as thecubicle-moyu-weilong-v10-ai-uv-wcu-2025 while the
+      capture still resolves; the admission decision is the taxonomy owner's.
+
+      It also fits the recency finding exactly: first observed 2025, MoYu, model layer.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

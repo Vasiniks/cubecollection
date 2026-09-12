@@ -1,0 +1,52 @@
+# variant: moyu-weilong-gts--unstickered
+# Depth research 2026-09-12. NOT an assembly-state variant despite the retailer filing it under
+# "Type: DIY Kits" — the page says in its own words that it "actually comes assembled". The axis
+# is factory surface preparation: stickers supplied but not applied, and no factory lubricant.
+id: moyu-weilong-gts--unstickered
+entity: variant
+model_id: moyu-weilong-gts
+name: "MoYu WeiLong GTS (Unstickered)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "Unstickered"
+config:
+  size_mm: 56.5
+  weight_g: 79.5
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-unstickered-2020]
+    note: >-
+      "Unstickered" is the retailer's product title. No MoYu first-party source for the name was
+      found this pass.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-unstickered-2020]
+    note: >-
+      A factory surface configuration of the same design, not a limited or commemorative edition.
+      THE RETAILER'S CATEGORY IS NOT THE EVIDENCE HERE. It files this under "Type: DIY Kits", but
+      the page states "This DIY Kit actually comes assembled but without any stickers (stock
+      stickers + logo are included with the DIY Kit)... the cube is also not pre-lubricated from
+      the factory". So the product is assembled and the axis is surface preparation, not assembly
+      state — which is also why a "Type: DIY Kits" value on a sibling page cannot by itself be
+      read as evidence of an unassembled product.
+      The five body colours offered are STOCK COLOURWAYS and collapse into this one variant.
+      `/colorway/application` is deliberately unset: the cube is sold with stickers supplied and
+      unapplied, so neither `stickered` nor `stickerless` describes it as shipped.
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-unstickered-2020]
+    note: >-
+      The retailer's own "Dimensions: 56.5mm" field. Recorded on the variant rather than the
+      model because this page is the archive's only preserved source for the figure.
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-unstickered-2020]
+    note: >-
+      THE SOURCE DISTINGUISHES ITS OWN TWO WEIGHTS and this is the usable one. The page lists
+      "Gross Weight: 173g" and, separately, "Item Weight: 79.5g"; 173g on a 56.5mm puzzle is the
+      packaged figure and is refused under the rule-45 class. Recorded on the VARIANT and not the
+      model deliberately: an unstickered cube carries no sticker mass, so this figure describes
+      this configuration and should not be inherited by the stickered baseline.

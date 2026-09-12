@@ -1,0 +1,31 @@
+# variant: moyu-weilong-original--diy-kit
+# Depth research 2026-09-12. Assembly state is the axis and the retailer states the pairing.
+id: moyu-weilong-original--diy-kit
+entity: variant
+model_id: moyu-weilong-original
+name: "MoYu WeiLong (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-diy-kit-2020]
+    note: >-
+      "DIY Kit" is the retailer's product title and its own category value. No MoYu first-party
+      source for the name was found this pass.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-diy-kit-2020]
+    note: >-
+      An unassembled configuration of the same design, not a limited or commemorative edition.
+      The retailer pairs them explicitly — "the DIY version of this product... to see the
+      Assembled version, click here" — so the boundary is stated by the seller.
+      ONE CAVEAT IS PRESERVED RATHER THAN ACTED ON. The same page carries "Note: As of December
+      12, 2013, the Black WeiLong DIY Kit now comes assembled but with the stickers on the side",
+      which describes the BLACK option only while the page continues to sell and file the product
+      as a DIY Kit. Splitting on it would assert a boundary the retailer does not draw. It is
+      quoted in the source so a later researcher can reopen the question.
+      Black and white are STOCK COLOURWAYS and collapse into this one variant.

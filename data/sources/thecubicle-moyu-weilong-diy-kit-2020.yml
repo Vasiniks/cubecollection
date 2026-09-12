@@ -1,0 +1,56 @@
+# source: thecubicle-moyu-weilong-diy-kit-2020
+# Created 2026-09-12. Another path from the handoff's "unverified leads (no Wayback capture)"
+# list that in fact has seven 200-captures. The whole of that list turned out to be a
+# rate-limit artefact.
+id: thecubicle-moyu-weilong-diy-kit-2020
+entity: source
+kind: retailer
+title: "MoYu WeiLong - DIY Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-weilong-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927015049id_/https://www.thecubicle.com/products/moyu-weilong-diy-kit"
+excerpt: |-
+  Page title as captured: "MoYu WeiLong - DIY Kit – TheCubicle".
+
+  Product Description, verbatim: "This is the Do-It-Yourself (DIY) version of this product. To
+  see the Assembled version of this product, please click here. The MoYu WeiLong features a
+  different internal design that makes it smoother and less clicky than the MoYu HuanYing."
+
+  A DATED REVISION NOTE ON THE SAME PAGE, verbatim: "Note: As of December 12, 2013, the Black
+  WeiLong DIY Kit now comes assembled but with the stickers on the side."
+
+  Purchase options offered, verbatim: "MoYu WeiLong - DIY Kit - Black" and "MoYu WeiLong - DIY
+  Kit - White".
+
+  Specifications table, verbatim and complete: "Manufacturer: MoYu", "Type: DIY Kits",
+  "Added: 2018-11-07", "Gross Weight: 114g". No dimension is given anywhere on the page.
+
+  THE RETAILER PAIRS THE TWO ITSELF: "This is the Do-It-Yourself (DIY) version of this product.
+  To see the Assembled version of this product, please click here" is the seller naming two
+  forms of ONE product.
+preservation_note: >-
+  Capture 20200927015049 fetched 2026-09-12 and read in full. NEITHER "Added: 2018-11-07" NOR
+  "Gross Weight: 114g" IS RECORDED AS A PRODUCT FACT, and this page is part of what proves both
+  refusals rather than merely asserting them. The same "Added" day appears on four separate
+  TheCubicle products read this session — this one, the DaYan LingYun V2 DIY kit, the DaYan
+  LunHui DIY kit and the MoYu WeiLong GTS Unstickered — covering products released between 2011
+  and 2016, so it is a catalogue-ingestion stamp. The same 114g gross weight appears on this page
+  and on the DaYan LingYun V2 DIY kit, two different puzzles, which is the behaviour of a
+  packaging figure and not of a measurement.
+  THE 2013 REVISION NOTE IS PRESERVED BUT NOT ACTED ON. "As of December 12, 2013, the Black
+  WeiLong DIY Kit now comes assembled but with the stickers on the side" describes the BLACK
+  option only, and the page still sells the kit as a DIY Kit and still files it under "Type: DIY
+  Kits". Splitting the variant on it would assert a boundary the retailer does not draw.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the original MoYu WeiLong was sold in a DIY (unassembled) configuration
+  alongside an assembled one, and that the retailer treats them as two forms of one product.
+  DOES NOT ESTABLISH: a release date, the puzzle's mass or dimensions, or what MoYu itself
+  called the configuration — "DIY Kit" is the retailer's product title and category value.
+status: sourced

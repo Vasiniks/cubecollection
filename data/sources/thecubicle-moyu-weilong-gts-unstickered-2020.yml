@@ -1,0 +1,54 @@
+# source: thecubicle-moyu-weilong-gts-unstickered-2020
+# Created 2026-09-12 from the same re-tested lead list. Nine 200-captures exist for this path.
+# The most informative of the four DIY-kit-family pages read this session: it is the one where
+# the retailer explains that its "DIY Kit" category does NOT mean unassembled.
+id: thecubicle-moyu-weilong-gts-unstickered-2020
+entity: source
+kind: retailer
+title: "MoYu WeiLong GTS - Unstickered — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-weilong-gts-unstickered"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200920073612id_/https://www.thecubicle.com/products/moyu-weilong-gts-unstickered"
+excerpt: |-
+  Page title as captured: "MoYu WeiLong GTS - Unstickered – TheCubicle".
+
+  Product Description, verbatim: "The MoYu WeiLong GTS is a modern remake of the popular WeiLong.
+  The GTS is outfitted with many of MoYu's new cubing technologies and advancements. This version
+  of the WeiLong is fast, stable, and crispy right out of the box. Note: This DIY Kit actually
+  comes assembled but without any stickers (stock stickers + logo are included with the DIY Kit).
+  This is ideal for someone who plans to resticker the cube anyway and doesn't want to take time
+  removing the stickers. Please note that the cube is also not pre-lubricated from the factory to
+  facilitate putting the stickers on."
+
+  Purchase options offered, verbatim: "MoYu WeiLong GTS - Unstickered" in "Black", "White",
+  "Teal", "Primary", and "Primary With Black Caps".
+
+  Specifications table, verbatim and complete: "Manufacturer: MoYu", "Type: DIY Kits",
+  "Added: 2018-11-07", "Gross Weight: 173g", "Dimensions: 56.5mm3", "Item Weight: 79.5g".
+preservation_note: >-
+  Capture 20200920073612 fetched 2026-09-12 and read in full.
+  THIS PAGE DISTINGUISHES ITS OWN TWO WEIGHTS, which is why one of them is usable. "Gross Weight:
+  173g" is the packaged figure and is NOT recorded. "Item Weight: 79.5g" is the retailer's own
+  separate field for the article itself and is the figure attested. This is the rule-45
+  distinction stated by the source rather than inferred by the archive, and it is the reason a
+  173g figure on a 56.5mm puzzle never reaches a spec field.
+  "Added: 2018-11-07" is NOT recorded. The same day appears on four TheCubicle products read this
+  session, spanning 2011 to 2016 releases; it is a catalogue-ingestion stamp.
+  "Type: DIY Kits" IS NOT EVIDENCE OF AN UNASSEMBLED PRODUCT HERE, and the page says so in its own
+  words: "This DIY Kit actually comes assembled but without any stickers." The retailer's category
+  is broader than its name. Recorded because it bears on how the sibling DIY-kit records should
+  be read — a "Type: DIY Kits" value alone does not establish assembly state.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the WeiLong GTS was sold in an UNSTICKERED factory configuration — assembled,
+  supplied with stock stickers and logo not applied, and not pre-lubricated; that it was offered
+  in five body colours; and an item weight of 79.5g and a 56.5mm dimension for the GTS.
+  DOES NOT ESTABLISH: a release date for the configuration, or MoYu's own name for it —
+  "Unstickered" is the retailer's product title.
+status: sourced
