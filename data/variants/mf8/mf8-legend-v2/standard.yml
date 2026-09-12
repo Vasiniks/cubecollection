@@ -14,9 +14,17 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-mf8-legend-v2-colors-2024]
-    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
+    sources: [thecubicle-mf8-legend-v2-colors-2024, thecubicle-mf8-vendor-facet-2026]
+    note: >-
+      Differentiation search performed: TheCubicle's own live product page (re-fetched
       2024-11-13 Wayback capture) offers Black and White as stock body colours at one price, no
       separate edition/tier name. No magnet, core, maglev, or coating differentiation was found
       on this or any other source consulted this pass (manufacturer site not found live; no
-      community release thread located)."
+      community release thread located). BRAND-FACET SWEEP RECORDED 2026-09-12 (RESEARCH_SPEC
+      3.6a, third check). thecubicle-mf8-vendor-facet-2026 enumerated this retailer's entire mf8
+      collection through its vendor field - 101 products, the archive's first 3.6a sweep for mf8
+      - and NOT ONE is typed "3x3": the range is 60 shape mods, 29 minx, 3 cuboids, a skewb and
+      some combinations. No configuration of THIS model appears anywhere in it. The
+      single-configuration state is therefore searched against the whole of one retailer's mf8
+      catalogue and not merely against this product's own page. One retailer is not the brand,
+      and mf8 is a Chinese designer-house whose catalogue elsewhere may differ.

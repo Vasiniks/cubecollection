@@ -1005,6 +1005,31 @@ issues:
       SpeedCubeShop fronts "Ziina Star (34)". 3.6a now requires checking the vendor field of at
       least one known product and enumerating the brand collection before a brand is called
       enumerated. A prefix sweep that returns nothing is evidence about slugs, not about stock.
+
+      2026-09-12 — mf8 IS OFF THE "no sweep source" LIST, the audit's third-heaviest entry at 26
+      citations. Manufacturers with a sweep 24 -> 25; failing both checks 12 -> 11. It was closed
+      with the brand-facet method rather than a prefix sweep, and the result is almost entirely a
+      NEGATIVE, which is the useful part.
+
+      TheCubicle's whole mf8 collection is 101 products and NOT ONE IS TYPED "3x3": 60 shape
+      mods, 29 minx, 3 cuboids, a skewb and some combinations. The archive's three mf8 models are
+      therefore not a thin sample of a large 3x3 range — there is no large 3x3 range at this
+      retailer. That is a materially different reading of the same three records, and nothing
+      short of enumerating the catalogue could have produced it.
+
+      NINE OF THE TWELVE PRODUCTS MENTIONING 3x3 ARE ALREADY FULLY HELD. The archive's
+      mf8-crazy-3x3-plus-planet-series carries nine variants that match the retailer's range one
+      for one — including the retailer's "Standard", which the archive records as `black`.
+
+      TWO ARE NOT HELD AND ARE A SCOPE QUESTION rather than an oversight: "mf8 Son-Mum 3x3 V1"
+      and "V2", cube-within-a-cube shape mods typed "Shape Mods". Whether they fall inside
+      RESEARCH_SPEC 2.4 is the same judgement the archive already made when it admitted its two
+      Crazy 3x3 models at `scope_class: conditional` rather than `core`, and it is left to the
+      taxonomy owner. The third, an explicit 4x4+3x3 hybrid, is out of scope on its face.
+
+      THE SWEEP IS CITED ON mf8-legend-v2--standard, so the breadth check can see it and so that
+      record now says its single-configuration state was searched against a whole catalogue
+      rather than against its own product page.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven

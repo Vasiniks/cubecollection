@@ -1,0 +1,59 @@
+# source: thecubicle-mf8-vendor-facet-2026
+# Created 2026-09-12. A RESEARCH_SPEC 3.6a sweep for mf8, which had none — the audit has listed
+# it third on "no sweep source" at 26 citations. The result is almost entirely a NEGATIVE, and
+# that is the useful part: it says the archive's three mf8 models are not a thin sample of a
+# large 3x3 catalogue, because there is no large 3x3 catalogue.
+id: thecubicle-mf8-vendor-facet-2026
+entity: source
+kind: retailer
+title: "TheCubicle mf8 brand-collection enumeration (vendor facet, 2026-09)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/mf8/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Brand-collection enumeration via the retailer's own product JSON, fetched 2026-09-12. 101
+  products, every one carrying `"vendor": "mf8"`. Reproducible from the URL above.
+
+  PRODUCT TYPE DISTRIBUTION, verbatim from the retailer's own `product_type` field:
+    Shape Mods 60 · Minx+ 29 · Cuboids 3 · "2x2,Shape Mods" 3 · "Megaminx,Shape Mods" 3 ·
+    "4x4,Shape Mods" 2 · Skewb 1
+
+  NOT ONE PRODUCT IS TYPED "3x3". mf8 is a shape-mod and minx house at this retailer, and the
+  archive's three mf8 models are therefore not a thin sample of a large 3x3 range.
+
+  The twelve whose handle or title mentions 3x3, all typed "Shape Mods", verbatim:
+    dayan-mf8-crazy-3x3-plus-{mercury,venus,earth,mars,jupiter,saturn,uranus,neptune,mod}
+      "DaYan + mf8 Crazy 3x3 Plus - Mercury" ... "- Standard"
+    mf8-son-mum-cube              "mf8 Son-Mum 3x3 V1"
+    mf8-son-mum-cube-ii           "mf8 Son-Mum 3x3 V2"
+    mf8-son-mum-hybrid-4x4-3x3    "mf8 Son-Mum Hybrid 4x4+3x3"
+
+  NINE OF THE TWELVE ARE ALREADY FULLY HELD. The archive's mf8-crazy-3x3-plus-planet-series
+  carries nine variants — black, earth, jupiter, mars, mercury, neptune, saturn, uranus, venus —
+  matching this enumeration one for one, including the "Standard" that the archive records as
+  `black`.
+
+  THE SON-MUM CUBES ARE NOT HELD AND ARE A SCOPE QUESTION, not an oversight. "mf8 Son-Mum 3x3
+  V1" and "V2" are cube-within-a-cube shape mods typed "Shape Mods" by this retailer. The
+  hybrid is explicitly 4x4+3x3 and is out of scope under RESEARCH_SPEC 2.4 on its face. Whether
+  the two Son-Mum 3x3s fall inside 2.4 is the same judgement the archive already made when it
+  admitted its two Crazy 3x3 models at `scope_class: conditional` rather than `core`, and it is
+  left to the taxonomy owner rather than decided here.
+preservation_note: >-
+  Live catalogue query, not an archive capture; a vendor facet has no Wayback equivalent, and the
+  enumeration preserves nothing on its own. No specification, date or identity claim is made here
+  about any product listed. The 101 figure is under the 250 requested, so it is the whole
+  collection rather than a truncation.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: that this retailer carries 101 mf8 products, none typed 3x3; that the archive's
+  nine Crazy 3x3 Plus planet variants match the retailer's range exactly; and that two Son-Mum
+  3x3 shape mods exist that the archive does not hold.
+  DOES NOT ESTABLISH: that mf8 makes no 3x3 — this is ONE retailer, and mf8 is a Chinese
+  designer-house whose catalogue elsewhere may differ. It is evidence about this catalogue.
+status: sourced
