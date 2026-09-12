@@ -20,14 +20,22 @@ status: stub
 attestations:
   /edition/types:
     confidence: uncertain
-    sources: [speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
-    note: "Differentiation search performed: named only as the second option of a two-way
-      'Version' selector on SpeedCubeShop's ESCube Air listing (the other option, 20-Magnet
-      Ball-Core, is this model's baseline/standard configuration and is independently
-      corroborated by TheCubicle). No dedicated product page or second retailer was found for
-      the 8-Magnet option specifically this pass, and no spec figures (weight, price) were
-      captured for it separately from the 20-magnet listing's own numbers — held at `uncertain`
-      rather than `probable` for that reason. No limited/commemorative language found."
+    sources: [speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core, thecubicle-escube-vendor-facet-2026]
+    note: >-
+      Differentiation search performed: named only as the second option of a two-way 'Version'
+      selector on SpeedCubeShop's ESCube Air listing (the other option, 20-Magnet Ball-Core, is
+      this model's baseline/standard configuration and is independently corroborated by
+      TheCubicle). No dedicated product page or second retailer was found for the 8-Magnet
+      option specifically this pass, and no spec figures (weight, price) were captured for it
+      separately from the 20-magnet listing's own numbers — held at `uncertain` rather than
+      `probable` for that reason. No limited/commemorative language found. SWEEP RECORDED
+      2026-09-12 (RESEARCH_SPEC 3.6a, third check). thecubicle-escube-vendor-facet-2026
+      enumerates this retailer's whole ESCube collection through its vendor field — NINE
+      products, five typed 3x3 and four ESTAR Clocks — the archive's first 3.6a sweep for
+      ESCube. Four of the five 3x3 products are configurations the archive already holds; the
+      fifth is a Transparent Core Edition, now recorded. No FURTHER configuration of this model
+      appears. One retailer is not the brand: ESCube's own site was not reached this pass, and
+      the four Clock products show the brand makes non-3x3 puzzles too.
   /edition/designation:
     confidence: uncertain
     sources: [speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]

@@ -24,14 +24,22 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [speedcubeshop-es3-debut-brand-2025]
-    note: "Differentiation search performed: this record rests on SpeedCubeShop's own
-      'Version comparison' table on the ES3 product page, which lists 'Standard' as one of
-      three named rows (alongside '8-Core Magnets' and '20-Core Magnets') distinguished by
-      magnet count and exterior finish. No further tier/edition name (limited, commemorative,
-      collaboration) was found for this row at either retailer source already on file for this
-      model (speedcubeshop-es3-debut-brand-2025, thecubicle-escube-es3-3x3-magnetic); read as
-      the regular retail configuration."
+    sources: [speedcubeshop-es3-debut-brand-2025, thecubicle-escube-vendor-facet-2026]
+    note: >-
+      Differentiation search performed: this record rests on SpeedCubeShop's own 'Version
+      comparison' table on the ES3 product page, which lists 'Standard' as one of three named
+      rows (alongside '8-Core Magnets' and '20-Core Magnets') distinguished by magnet count and
+      exterior finish. No further tier/edition name (limited, commemorative, collaboration) was
+      found for this row at either retailer source already on file for this model
+      (speedcubeshop-es3-debut-brand-2025, thecubicle-escube-es3-3x3-magnetic); read as the
+      regular retail configuration. SWEEP RECORDED 2026-09-12 (RESEARCH_SPEC 3.6a, third check).
+      thecubicle-escube-vendor-facet-2026 enumerates this retailer's whole ESCube collection
+      through its vendor field — NINE products, five typed 3x3 and four ESTAR Clocks — the
+      archive's first 3.6a sweep for ESCube. Four of the five 3x3 products are configurations
+      the archive already holds; the fifth is a Transparent Core Edition, now recorded. No
+      FURTHER configuration of this model appears. One retailer is not the brand: ESCube's own
+      site was not reached this pass, and the four Clock products show the brand makes non-3x3
+      puzzles too.
   /config/coating:
     confidence: probable
     sources: [speedcubeshop-es3-debut-brand-2025]

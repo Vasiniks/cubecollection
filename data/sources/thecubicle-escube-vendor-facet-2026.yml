@@ -1,0 +1,77 @@
+# source: thecubicle-escube-vendor-facet-2026
+# Created 2026-09-12. A RESEARCH_SPEC 3.6a sweep for ESCube, which had none — the audit listed it
+# top of "no sweep source" at 11 citations. Run with 3.6a's THIRD check (the brand facet). It both
+# enumerates the brand and carries one product the archive does not hold, so both are recorded
+# here rather than split across two records of the same fetch.
+id: thecubicle-escube-vendor-facet-2026
+entity: source
+kind: retailer
+title: "TheCubicle ESCube brand-collection enumeration, with the Transparent Core Edition (2026-09)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/escube/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Brand-collection enumeration via the retailer's own product JSON, fetched 2026-09-12. NINE
+  products, every one carrying `"vendor": "ESCube"`. Reproducible from the URL above.
+
+  THE FIVE TYPED "3x3", verbatim as handle and title:
+    escube-es3-3x3-magnetic-8-magnet-ball-core
+      "ESCube ES3 3x3 (Magnetic + 8-Magnet Ball-Core)"
+    escube-es3-3x3-magnetic-20-magnet-ball-core-uv-coated
+      "ESCube ES3 3x3 (Magnetic + 20-Magnet Ball-Core + UV Coated)"
+    escube-air-3x3-8-magnet-ball-core
+      "ESCube Air 3x3 (8-Magnet Ball-Core)"
+    escube-air-3x3-20-magnet-ball-core
+      "ESCube Air 3x3 (20-Magnet Ball-Core)"
+    escube-air-3x3-20-magnet-ball-core-transparent-core-edition
+      "ESCube Air 3x3 (20-Magnet Ball-Core + Transparent Core Edition)"
+
+  The other four are ESTAR Clocks — "ESTAR Clock (Magnetic)", "(Magnetic + Bearings)",
+  "(Magnetic + Bearings, LE)", "(Dubhe Red PiCube SE)" — typed "Clock" by the retailer and
+  outside RESEARCH_SPEC 2.4's scope. Listed so the enumeration is complete.
+
+  FOUR OF THE FIVE ARE CONFIGURATIONS THE ARCHIVE ALREADY HOLDS, across its two ESCube models.
+  The fifth is not:
+
+  THE TRANSPARENT CORE EDITION, in full. Product id 7770868940883, handle
+  escube-air-3x3-20-magnet-ball-core-transparent-core-edition, vendor "ESCube", product_type
+  "3x3", created 2025-12-03. One purchase option: "Stickerless", SKU 3KR2_1_153, 22.99 USD.
+  Tags: "Availability_Available", "Color_Stickerless", "Manufacturer_ESCube".
+
+  Description, verbatim: "The ESCube Air 3x3 (20-Magnet Ball-Core + Transparent Core Edition) is
+  an innovative 3x3 designed for speedcubers seeking next-level performance and visual
+  excitement. THIS SPECIAL EDITION FEATURES A STUNNING TRANSPARENT CORE WITH VISIBLE INTERNALS —
+  highlighting its advanced engineering while adding a unique aesthetic appeal to your
+  collection. Engineered with a robust 20-magnet ball-core system and double-layer magnetic
+  force, the ESCube Air delivers ultra-smooth and stable turning, precise alignment, and
+  effortless corner cutting. Adjustable tension and compression settings allow for fully
+  customized feel..." (Emphasis marks the clause this record is cited for; the wording is the
+  retailer's.)
+preservation_note: >-
+  LIVE SHOPIFY STOREFRONT JSON, NOT AN ARCHIVE CAPTURE. web.archive.org was returning
+  "Internet Archive: Temporarily Offline" (HTTP 503) throughout 2026-09-12 — confirmed
+  independently by the main session and by the DaYan depth lane across three attempts plus the
+  CDX API — so no archive_url could be obtained for any of these paths. `preservation_method` is
+  `excerpt` and the excerpt reproduces the enumeration and the one new product's JSON in full
+  rather than partially. THIS RECORD SHOULD BE RE-VERIFIED AGAINST AN archive_url ONCE WAYBACK
+  RECOVERS; until then it rests on a live fetch alone.
+  THE PER-VARIANT `grams` VALUE (113) IS NOT A PRODUCT WEIGHT and is deliberately not quoted
+  above as one. Shopify's `grams` is a shipping weight the merchant sets for postage — the
+  rule-45 class — and no weight is attested from this source.
+  The "created_at" of 2025-12-03 is when the RETAILER created the listing, not a release date,
+  and is likewise not attested.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure plus one product's own JSON.
+  ESTABLISHES: that TheCubicle attributes nine products to ESCube, five of them 3x3; that four of
+  those five are configurations the archive already records; and that a fifth exists — an ESCube
+  Air with a TRANSPARENT CORE, sold stickerless, alongside the 20-magnet ball core.
+  DOES NOT ESTABLISH: a release date, any weight, any dimension, or that this is ESCube's whole
+  range — it is ONE retailer, and ESCube's own site was not reached this pass. The four ESTAR
+  Clock products confirm ESCube makes non-3x3 puzzles, which bears on how complete a 3x3-only
+  reading of this brand can be.
+status: sourced

@@ -1145,6 +1145,36 @@ issues:
       THREE CHECKED, TWO REJECTED. That ratio is why the four closures earlier today are
       trustworthy — the detector's vocabulary matching is wrong in both directions, so every
       candidate has to be read rather than counted.
+
+      2026-09-12 — ESCUBE CLOSED WITH A GENUINELY NEW SWEEP, and it found a configuration too.
+      Sweeps 31 -> 32; no-sweep list 11 -> 10. This one is NOT the "already in the archive" kind:
+      ESCube's earlier apparent match was rejected the same day as a false positive (the word
+      "prefix" inside "brand-word PREFIXED onto the product name"), so a real enumeration had to
+      be run.
+
+      thecubicle-escube-vendor-facet-2026 enumerates the retailer's whole ESCube collection
+      through its vendor field: NINE products, five typed 3x3 and four ESTAR Clocks. Four of the
+      five 3x3 products are configurations the archive already holds across its two ESCube
+      models. THE FIFTH WAS NOT HELD: "ESCube Air 3x3 (20-Magnet Ball-Core + Transparent Core
+      Edition)", whose description says "This special edition features a stunning transparent
+      core with visible internals". Recorded as
+      `escube-air-v1--20-magnet-ball-core-transparent-core`.
+
+      TWO JUDGEMENTS IN THAT RECORD ARE WORTH KEEPING. It is `standard` and NOT `limited` despite
+      the retailer calling it a "special edition" — nothing states a bounded run and the listing
+      is tagged Availability_Available. And the transparent core is recorded as free text under
+      `config/materials/plastic` rather than as `colorway.body.translucency`, because the archive's
+      translucency vocabulary describes the BODY and this claim is about the CORE: the pieces are
+      not described as transparent, only the component inside them. Forcing it into the existing
+      field would have said the wrong thing.
+
+      THE FOUR ESTAR CLOCKS ARE RECORDED TOO, out of scope but relevant: they show ESCube makes
+      non-3x3 puzzles, which bounds how complete any 3x3-only reading of this brand can be.
+
+      PRESERVATION CAVEAT CARRIED EXPLICITLY. Wayback was returning HTTP 503 all day, so this
+      rests on a live Shopify fetch with `preservation_method: excerpt` and a note saying it must
+      be re-verified against an archive_url once the Internet Archive recovers. The per-variant
+      Shopify `grams` (113) is a SHIPPING weight and no weight is attested from it.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven

@@ -1,0 +1,54 @@
+# variant: escube-air-v1--20-magnet-ball-core-transparent-core
+# Depth research 2026-09-12, found by the RESEARCH_SPEC 3.6a brand-facet check at TheCubicle.
+# A third ESCube Air configuration: the 20-magnet ball core the archive already records, plus a
+# TRANSPARENT CORE. The archive's `escube-air-v1--standard` is the opaque 20-magnet version.
+id: escube-air-v1--20-magnet-ball-core-transparent-core
+entity: variant
+model_id: escube-air-v1
+name: "ESCube Air 3x3 (20-Magnet Ball-Core + Transparent Core Edition)"
+scope_class: core
+config:
+  materials:
+    plastic: "Transparent core with visible internals, per the retailer's own description; the surrounding pieces are not described as transparent."
+colorway:
+  application: stickerless
+edition:
+  types: [standard]
+  designation: "20-Magnet Ball-Core + Transparent Core Edition"
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-escube-vendor-facet-2026]
+    note: >-
+      The retailer's own product title. It names the same "20-Magnet Ball-Core" configuration the
+      archive already records on `escube-air-v1--standard` and adds "Transparent Core Edition",
+      which is what distinguishes this listing from that one.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-escube-vendor-facet-2026]
+    note: >-
+      `standard` AND NOT `limited`, although the retailer calls it a "special edition" and a
+      "Transparent Core Edition". Nothing on the listing states a bounded run, a numbering, or a
+      sold-out state — it is tagged "Availability_Available" — and this archive already draws
+      that line explicitly elsewhere: the word "Edition" in a product name is not by itself
+      evidence of a limited release.
+      WHAT MAKES IT A SEPARATE VARIANT rather than a colourway of the existing 20-magnet record
+      is that the distinguishing feature is the CORE — a component — not the body colour. The
+      anti-explosion rule collapses stock colour CHOICES within one product; this is a different
+      part.
+  /config/materials/plastic:
+    confidence: probable
+    sources: [thecubicle-escube-vendor-facet-2026]
+    note: >-
+      "This special edition features a stunning transparent core with visible internals." Recorded
+      as free text rather than a vocabulary value because vocab/colorway-translucency describes
+      the BODY's translucency and this claim is about the CORE — the archive has no field for a
+      transparent internal component, and forcing it into `colorway.body.translucency` would say
+      the wrong thing: the pieces are not described as transparent, only the core.
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-escube-vendor-facet-2026]
+    note: >-
+      The listing's single purchase option is "Stickerless", and its Color tag reads
+      "Color_Stickerless".

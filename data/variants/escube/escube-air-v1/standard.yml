@@ -25,12 +25,20 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]
-    note: "Differentiation search performed: two independent Tier 2 retailers describe this
-      exact 20-magnet ball-core configuration as the model's own defining/default product, one
-      of them (SpeedCubeShop) on a page carrying an explicit two-way version selector against
-      the 8-Magnet Ball-Core alternative. No limited/commemorative/collaboration language found
-      for this configuration at either retailer; read as the regular retail configuration."
+    sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core, thecubicle-escube-vendor-facet-2026]
+    note: >-
+      Differentiation search performed: two independent Tier 2 retailers describe this exact
+      20-magnet ball-core configuration as the model's own defining/default product, one of them
+      (SpeedCubeShop) on a page carrying an explicit two-way version selector against the
+      8-Magnet Ball-Core alternative. No limited/commemorative/collaboration language found for
+      this configuration at either retailer; read as the regular retail configuration. SWEEP
+      RECORDED 2026-09-12 (RESEARCH_SPEC 3.6a, third check). thecubicle-escube-vendor-facet-2026
+      enumerates this retailer's whole ESCube collection through its vendor field — NINE
+      products, five typed 3x3 and four ESTAR Clocks — the archive's first 3.6a sweep for
+      ESCube. Four of the five 3x3 products are configurations the archive already holds; the
+      fifth is a Transparent Core Edition, now recorded. No FURTHER configuration of this model
+      appears. One retailer is not the brand: ESCube's own site was not reached this pass, and
+      the four Clock products show the brand makes non-3x3 puzzles too.
   /edition/designation:
     confidence: probable
     sources: [thecubicle-escube-air-3x3-20-magnet-ball-core, speedcubeshop-es3-air-3x3-magnetic-20-magnet-ball-core]

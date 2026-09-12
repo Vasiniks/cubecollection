@@ -21,12 +21,20 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [speedcubeshop-es3-debut-brand-2025]
-    note: "Differentiation search performed: named as its own row ('20-Core Magnets') in
+    sources: [speedcubeshop-es3-debut-brand-2025, thecubicle-escube-vendor-facet-2026]
+    note: >-
+      Differentiation search performed: named as its own row ('20-Core Magnets') in
       SpeedCubeShop's own version-comparison table, distinguished from Standard by both magnet
       count and a UV exterior finish. No further limited/commemorative/collaboration language
       found; read as a regular retail configuration option, not a marked special edition,
-      despite the coating upgrade."
+      despite the coating upgrade. SWEEP RECORDED 2026-09-12 (RESEARCH_SPEC 3.6a, third check).
+      thecubicle-escube-vendor-facet-2026 enumerates this retailer's whole ESCube collection
+      through its vendor field — NINE products, five typed 3x3 and four ESTAR Clocks — the
+      archive's first 3.6a sweep for ESCube. Four of the five 3x3 products are configurations
+      the archive already holds; the fifth is a Transparent Core Edition, now recorded. No
+      FURTHER configuration of this model appears. One retailer is not the brand: ESCube's own
+      site was not reached this pass, and the four Clock products show the brand makes non-3x3
+      puzzles too.
   /config/coating:
     confidence: probable
     sources: [speedcubeshop-es3-debut-brand-2025]
