@@ -156,6 +156,31 @@ PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
   THAT MADE 3.6a's THIRD REQUIRED CHECK: sweep the retailer's BRAND FACET (Shopify `vendor`
   in /products/<handle>.json + the brand collection page), not only URL slugs.
 
+ACTIVE AGENT LANES (launched 2026-09-12 from base 78d0097, all Sonnet 5, isolated worktrees)
+  LANE A  P4-10 Ziina manufacturer/OEM identity — untried avenues: packaging photography,
+          Chinese-language, 1688/Taobao, specialist DBs. Owns research/qc/p4-10-ziina-lane-a.md
+          + NEW data/sources/ziina-*. MAY NOT create a manufacturer.
+  LANE B  P4-9 enumeration METHODOLOGY — compares slug-prefix vs vendor-facet vs category
+          enumeration head-to-head and measures overlap/misses. Owns
+          research/qc/p4-9-enumeration-methods-lane-b.md + sources ending -lane-b-2026.
+  LANE C  P26-2 escalation linkage — measures the chain BOTH directions, ships a check with
+          fixtures + selftest OR a reasoned negative. Owns check-escalations.mjs, an APPENDED
+          audit sweep, selftest assertions, new tests/fixtures/.
+  LANE D  Provenance adversarial audit — READ-ONLY over data, report only. Hunting another
+          speedsolving-wiki-moyu (excerpt too narrow for the attestations it backs).
+          Owns research/qc/provenance-adversarial-lane-d.md.
+  LANE E  DaYan variant depth (21 of 28 models bare). Owns research/qc/dayan-depth-lane-e.md
+          + data/variants/dayan/** + new sources.
+  MAIN    Chronology/date adversarial QC — deliberately NOT in any agent's scope.
+
+  COORDINATION RULE IN FORCE: no agent may touch research/qc/pass2-remediation-ledger.yml or
+  research/qc/HANDOFF.md. MAIN owns both. Agents put ledger-bound text in their own reports and
+  main transcribes it at merge. This is what stops five lanes conflicting on one file.
+
+  IF THIS SESSION RESET: `git worktree list`, then for each lane worktree run `git status`,
+  `git log --oneline -10`, `git diff`. Recover committed AND uncommitted work and the report
+  skeleton before relaunching anything. Resume only the unfinished portion.
+
 OPEN CRITICALS
   P4-9   adjudicated in full; taxonomy admission is the user's call
   P4-10  Ziina IS a manufacturer not a decorator; WHO MAKES IT is unestablished.
