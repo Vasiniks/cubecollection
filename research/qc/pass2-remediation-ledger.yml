@@ -932,6 +932,28 @@ issues:
       `shengshou-yufeng-v2-3x3-magnetic-magnetic-core` (rejected in a source excerpt) is
       excluded; `moyu-weilong-v11-...-uv-picube-se` (P4-9, open) is still reported. A date like
       "2024-05-09" also used to match the path pattern, which the pattern now rejects.
+
+      2026-09-12 — MOYU IS OFF THE "no sweep source" LIST, the entry the audit has printed at the
+      top of that block for weeks: 118 citations, the archive's most heavily cited manufacturer,
+      and no RESEARCH_SPEC 3.6a prefix sweep. One was run against TheCubicle's /products/moyu
+      paths, returned 303 distinct paths, and is recorded as thecubicle-moyu-prefix-2026.
+      Manufacturers with a sweep 23 -> 24; failing both checks 13 -> 12.
+
+      RECORDING IT WAS NOT ENOUGH TO MAKE IT COUNT, which is worth knowing before the next sweep
+      is run. The breadth check reads the sources CITED BY a manufacturer's records, not the
+      source directory, so a sweep source that no record cites is invisible to it — correctly,
+      since an uncited sweep has justified nothing. The sweep is therefore cited where it bears:
+      on the seven older MoYu baselines whose single-configuration state it actually searched
+      (AoLong, AoLong GT, DianMa, HuaLong, HuanYing, LiYing, TangLong), each of which appears in
+      the enumeration as a single bare path while several MoYu siblings carry three or more
+      configuration paths. Those seven now record a SEARCH, not merely an absence.
+
+      The same was done for the YJ MGC line's sweep on six MGC baselines earlier today.
+
+      WHAT IT DOES NOT FIX, said plainly because the number moving invites the wrong reading.
+      MoYu still has NO non-US source; the audit counts that separately and still counts it
+      against MoYu. And ledger P26-3's own finding stands: the sweep covers the `moyu-` slug form
+      at one retailer in one market, and slug form differs per brand.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven

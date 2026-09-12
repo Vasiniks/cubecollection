@@ -1,0 +1,57 @@
+# source: thecubicle-moyu-weilong-v2-unstickered-2020
+# Created 2026-09-12 from thecubicle-moyu-prefix-2026. The second Unstickered listing found this
+# session, and it settles the reading of the first: TheCubicle's "Type: DIY Kits" category
+# genuinely does not mean unassembled, and the retailer says so twice in two different product
+# families.
+id: thecubicle-moyu-weilong-v2-unstickered-2020
+entity: source
+kind: retailer
+title: "MoYu WeiLong V2 - Unstickered — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-weilong-v2-unstickered"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200925203836id_/https://www.thecubicle.com/products/moyu-weilong-v2-unstickered"
+excerpt: |-
+  Page title as captured: "MoYu WeiLong V2 - Unstickered – TheCubicle". Shopify product id
+  1820734685257.
+
+  Product description, verbatim: "This is the Unstickered version of this product. To see the
+  Assembled and stickered version of this product, please click here. The MoYu WeiLong V2 is the
+  second revision of the tremendously popular MoYu WeiLong. The most notable change is the way in
+  which the pieces are put together, WHICH ALLOWS STICKERLESS VARIANTS TO BE PRODUCED. Other than
+  this, the mechanism remains largely unchanged. Note: This DIY Kit actually comes assembled but
+  without any stickers (stock stickers + logo are included with the DIY Kit). This is ideal for
+  someone who plans to resticker the cube anyway and doesn't want to take time removing the
+  stickers." (Emphasis added on the lineage clause; the wording is the retailer's.)
+
+  Purchase options offered: "Black" and "White".
+
+  Specifications table, verbatim and complete: "Manufacturer: MoYu", "Type: DIY Kits",
+  "Added: 2018-11-07", "Gross Weight: 110g", "Dimensions: 57.0mm3".
+preservation_note: >-
+  Capture 20200925203836 fetched 2026-09-12 and read in full.
+  "Added: 2018-11-07" IS NOT RECORDED, and this page takes that artefact from documented to
+  overwhelming: it is now the FIFTH product read this session carrying that identical day,
+  alongside the DaYan LingYun V2 and LunHui DIY kits, the MoYu WeiLong DIY kit and the WeiLong
+  GTS Unstickered — products released between 2011 and 2016. "Gross Weight: 110g" is a packaged
+  figure refused under the rule-45 class; this page gives no item weight.
+  "Type: DIY Kits" AGAIN DOES NOT MEAN UNASSEMBLED, and this is the second independent instance.
+  The page says "This DIY Kit actually comes assembled but without any stickers", exactly as the
+  WeiLong GTS Unstickered page does. One such sentence could be a copy-paste slip in one listing;
+  two, in different product families, establish that the retailer's category is simply broader
+  than its name. No record in this archive should read a "Type: DIY Kits" value as evidence of
+  assembly state.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the WeiLong V2 was sold in an UNSTICKERED factory configuration — assembled,
+  supplied with stock stickers and logo not applied — in black and white bodies; a 57.0mm
+  dimension; and, as a lineage claim, that the V2's piece assembly was changed in a way that
+  "allows stickerless variants to be produced".
+  DOES NOT ESTABLISH: a release date, the puzzle's mass, or MoYu's own name for the
+  configuration. "Unstickered" is the retailer's product title.
+status: sourced

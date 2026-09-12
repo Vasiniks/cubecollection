@@ -1,0 +1,42 @@
+# variant: moyu-weilong-v2--unstickered
+# Depth research 2026-09-12, from thecubicle-moyu-prefix-2026. Same axis and same evidence shape
+# as moyu-weilong-gts--unstickered recorded earlier today.
+id: moyu-weilong-v2--unstickered
+entity: variant
+model_id: moyu-weilong-v2
+name: "MoYu WeiLong V2 (Unstickered)"
+scope_class: core
+config:
+  size_mm: 57.0
+edition:
+  types: [standard]
+  name: "Unstickered"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-v2-unstickered-2020]
+    note: >-
+      "Unstickered" is the retailer's product title. No MoYu first-party source naming the
+      configuration was located this pass.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-v2-unstickered-2020]
+    note: >-
+      A factory surface configuration of the same design, not a limited or commemorative edition.
+      The retailer pairs it with its counterpart explicitly — "This is the Unstickered version of
+      this product. To see the Assembled and stickered version of this product, please click
+      here" — so the boundary is stated by the seller.
+      ITS "Type: DIY Kits" VALUE IS NOT EVIDENCE OF AN UNASSEMBLED PRODUCT, and the page says so:
+      "This DIY Kit actually comes assembled but without any stickers." That is the second
+      independent instance of the sentence in this archive, after the WeiLong GTS Unstickered, so
+      the retailer's category is broader than its name rather than one listing being miswritten.
+      Black and white are STOCK COLOURWAYS and collapse into this one variant.
+      `/colorway/application` is deliberately unset: the cube ships with stickers supplied and
+      unapplied, so neither `stickered` nor `stickerless` describes it as sold.
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-v2-unstickered-2020]
+    note: >-
+      The retailer's own "Dimensions: 57.0mm" field. Recorded on the variant because this page is
+      the archive's only preserved source for the figure; the model carries no size.
