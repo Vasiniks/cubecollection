@@ -1,0 +1,72 @@
+# source: speedcubeshop-vendor-facet-sweep-2026-09
+# Created 2026-09-12. RESEARCH_SPEC 3.6a's third check applied to EVERY manufacturer the archive
+# holds models for, at one retailer. This is the systematic version of the FanXin spot-check.
+id: speedcubeshop-vendor-facet-sweep-2026-09
+entity: source
+kind: retailer
+title: "SpeedCubeShop brand-collection sweep across all 42 archive manufacturers (vendor facet, 2026-09)"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/collections/calvins-puzzle/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Each of the 42 manufacturers the archive holds models for was looked up as a SpeedCubeShop
+  brand collection via that retailer's product JSON, 2026-09-12. Reproducible per brand with
+  `https://speedcubeshop.com/collections/<brand>/products.json?limit=250`.
+
+  MOST BRANDS RETURNED NOTHING, which is a fact about this retailer's collection slugs and not
+  about the brands: GAN, MoYu, MFJS, Monster Go, X-Man Design, Rubik's, Maru, Moretry, Swift
+  Block, GuoGuan, GiiKER, HuaMeng, KungFu, LeFun, Particula and others all returned zero
+  products under their archive id. They are stocked; the collection is named differently.
+
+  THREE BRANDS RETURNED 3x3 PRODUCTS WHOSE HANDLES DO NOT CONTAIN THE BRAND — the case 3.6a's
+  third check exists for, since no prefix or keyword sweep can reach them:
+
+    calvins-puzzle   23 of 23 typed-3x3 products, NONE containing the brand in the handle
+    fanxin            1 of 4   (color-brick-speed-cube)
+    qiyi              1 of 21  (bubble-3x3)
+
+  THE CALVIN'S PUZZLE RESULT AGAINST THE ARCHIVE'S THREE MODELS, verbatim handles and titles,
+  all carrying `"vendor": "Calvin's Puzzle"`:
+    cfop-trainer-cube-cross / -f2l-1 / -f2l-2 / -f2l-3 / -oll / -pll  "CFOP Trainer Cube (...)"
+    sudoku-cube-3x3-master / -ultra / -wisdom / -elite,
+      3x3x3-sudoku-cube-pro-stickerless-version-5                    "Sudoku Cube 3x3 (...)"
+    world-map-3x3, world-map-3x3-flag                                "World Map 3x3 (...)"
+    calendar-cube-3x3-v1                                             "Calendar Cube 3x3 V1"
+    blind-dice-3x3-cube-v2                                           "Blind Dice 3x3 Cube V2"
+    christmas-cube-3x3, 3x3-gradient-cube                            "Christmas Cube 3x3" etc.
+    yummy-cheeseburger-3x3-cube, yummy-french-fries-3x3-cube,
+      yummy-popcorn-3x3, yummy-hamburger-3x3, yummy-truffle-3x3,
+      yummy-waffle-3x3                                               "Yummy ... 3x3"
+
+  AND THE SAME RETAILER'S "Ziina Star" COLLECTION, 14 typed 3x3, all "UV Printed": Calendar,
+  World Map (V1, V3, 3D), Chemical Elements (types A and B), Dollar, 100 Dollar, Alien Graffiti,
+  Love Heart Graffiti, Colorful Graffiti, Cheese, Milk, Clock & Calendar.
+
+  THE TWO RANGES OVERLAP IN THEME AND DIFFER IN EXTENT. Both carry a World Map and a Calendar;
+  both carry food themes (Ziina Star: Cheese, Milk — Calvin's: Cheeseburger, French Fries,
+  Popcorn, Hamburger, Truffle, Waffle). Calvin's carries CFOP trainers and five Sudoku cubes,
+  which Ziina Star does not. This is RECORDED AS AN OBSERVATION, NOT A CONCLUSION: two vendors
+  selling world-map cubes is not evidence that one makes the other's, and the archive has a
+  documented false positive from reading retailer taxonomy as lineage.
+preservation_note: >-
+  Live catalogue queries, not archive captures — a vendor facet has no Wayback equivalent. THE
+  ENUMERATION PRESERVES NOTHING ON ITS OWN and this record therefore makes no specification,
+  date or identity claim about any product listed. Each page needs capturing before anything is
+  load-bearing.
+  A NEGATIVE HERE IS WEAK. "Zero products" means the archive's manufacturer id is not this
+  retailer's collection slug; it does not mean the brand is unstocked. The sweep was run on
+  archive ids precisely because that is reproducible, and its misses are a property of that
+  choice.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: that this retailer attributes 23 3x3 products to "Calvin's Puzzle" and 14 to
+  "Ziina Star", and that 25 of those 37 are undiscoverable by any slug-based method.
+  DOES NOT ESTABLISH: that any is a distinct model, who manufactures any of them, or that the
+  thematic overlap between the two ranges means anything. A vendor string is retailer
+  bookkeeping — P4-10 records that the same field reads "Spin Master" for Rubik's.
+status: sourced

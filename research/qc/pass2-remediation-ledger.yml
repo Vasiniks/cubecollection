@@ -2073,6 +2073,35 @@ issues:
       2024-2026. This adds a second, independent mechanism that has nothing to do with recency —
       a product can be missing because the discovery method cannot see it, at any date. FanXin is
       not a 2026 brand.
+
+      2026-09-12 — THE BRAND-FACET CHECK RUN SYSTEMATICALLY, all 42 manufacturers the archive
+      holds models for, at SpeedCubeShop. Preserved as speedcubeshop-vendor-facet-sweep-2026-09.
+      Three brands return 3x3 products whose handles do not contain the brand, and one of them is
+      large: Calvin's Puzzle, 23 of 23, against THREE Calvin's Puzzle models in the archive.
+
+      They are novelty and training 3x3s: six CFOP Trainer Cubes (Cross, F2L-1/2/3, OLL, PLL),
+      five Sudoku Cubes (Master, Ultra, Pro, Wisdom, Elite), two World Maps, a Calendar Cube, a
+      Blind Dice V2, a Christmas Cube, a Gradient Cube and six "Yummy" food cubes. Not one is
+      reachable by a prefix or keyword sweep of that retailer.
+
+      THIS IS THE SAME CLASS AS THE ZIINA LINES THIS ISSUE ALREADY HOLDS, and the scope question
+      is already settled the same way: the P4-9 adjudication classified ~51 Ziina printed-cube
+      lines as `missing_manufacturer` candidates rather than out of scope, and RESEARCH_SPEC 2.4
+      sets no criterion these would fail — they are 3x3x3 puzzles.
+
+      AN OBSERVATION ABOUT THE TWO RANGES, recorded and not concluded from. The same retailer's
+      "Ziina Star" collection holds 14 typed 3x3s, all UV-printed, and the two ranges overlap in
+      theme: both carry a World Map and a Calendar, and both carry food themes. They also differ
+      — Calvin's has the CFOP trainers and the Sudoku range, Ziina Star does not. Two vendors
+      selling world-map cubes is not evidence that one makes the other's, and this archive has a
+      documented false positive from reading retailer taxonomy as lineage. It is noted because
+      P4-10 turns on how much a vendor string is worth, and this is another reason the answer is
+      "less than it looks".
+
+      NOTHING ADMITTED, AND THE EVIDENCE IS DELIBERATELY THIN BY CONSTRUCTION. These came from
+      LIVE catalogue queries, which preserve nothing; the source makes no specification, date or
+      identity claim about any product listed, and each page needs capturing before any of it is
+      load-bearing. What is established is the SHAPE of the gap, not its contents.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.
