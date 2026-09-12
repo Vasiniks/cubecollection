@@ -1,0 +1,61 @@
+# source: speedcubeshop-fanxin-vendor-facet-2026
+# Created 2026-09-12. THE FIRST APPLICATION OF RESEARCH_SPEC 3.6a's NEW THIRD CHECK, added the
+# same day after the Ziina sweep showed that a brand's slugs may not carry its name. It found
+# inventory on the first brand tried.
+id: speedcubeshop-fanxin-vendor-facet-2026
+entity: source
+kind: retailer
+title: "SpeedCubeShop FanXin brand-collection enumeration (vendor facet, 2026-09)"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/collections/fanxin/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Brand-collection enumeration via the retailer's own product JSON, fetched 2026-09-12. 21
+  products, every one carrying `"vendor": "Fanxin"`. Reproducible by fetching the URL above.
+
+  The four the retailer types as "3x3", verbatim as handle and title:
+
+    fanxin-big-3x3-18-8cm                                        "Fanxin Big 3x3 - 18.8cm"
+    color-brick-speed-cube                                       "Color Brick Speed Cube"
+    fanxin-hollow-3x3-concave                                    "Fanxin Hollow 3x3 - Concave"
+    fanxin-light-3x3-ultra-magnetic-ball-core-maglev-uv-coated   "Fanxin Light 3x3 Ultra
+                                                                  (Magnetic, Ball-Core, MagLev,
+                                                                  UV Coated)"
+
+  The remaining 17 are shape mods (Banana, Apple, Pear, Peach, Lemon, Orange, UFO, Octahedron,
+  Hexagonal Prism, Barrel Redi, Twisty Skewb, 4x4 Axis, Case Cube), a cuboid (3x3x4), and three
+  bundles. Those are outside RESEARCH_SPEC 2.4's scope and are listed only so this enumeration is
+  complete and a later reader does not re-fetch it.
+
+  WHY THIS SOURCE EXISTS AT ALL. `color-brick-speed-cube` carries the brand in NEITHER its slug
+  NOR its title. No prefix sweep, and no keyword search for "fanxin", can return it from this
+  retailer — only the vendor field says who makes it. That is the failure mode 3.6a's third check
+  was written for, found on the first brand it was applied to.
+
+  AGAINST THE ARCHIVE'S THREE FANXIN MODELS — fanxin-3x3-standard, fanxin-hudong-3x3 and
+  fanxin-magnetic-3x3-standard — none of these four has an obvious counterpart. They are recorded
+  as P4-9 candidates and nothing is admitted here.
+preservation_note: >-
+  Retailer product JSON, fetched directly rather than through an archive capture, because the
+  vendor facet is a live-catalogue query and has no Wayback equivalent. The enumeration is
+  reproducible from the URL, and individual product pages should be captured before anything is
+  admitted from them — a live fetch preserves nothing on its own, which is why this record makes
+  no specification claims.
+  NOTE ON "Fanxin Big 3x3 - 18.8cm": the archive already holds an 18.8cm QiYi Warrior Plus at 981g,
+  so an oversized 3x3 is a shape this archive admits and this is not out of scope on size.
+  RESEARCH_SPEC 2.4 sets no size criterion, as ledger P4-11 established.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: that SpeedCubeShop attributes 21 products to vendor "Fanxin", four of them typed
+  3x3, and that one of those four is discoverable only through the vendor field.
+  DOES NOT ESTABLISH: that any of the four is a distinct MODEL rather than a configuration or a
+  rebrand of something the archive already holds, nor any specification, date or identity. A
+  vendor string is retailer bookkeeping — ledger P4-10 records that it carries "Spin Master" for
+  Rubik's and "QiYi" for X-Man Design — so it establishes the retailer's attribution and nothing
+  about manufacture.
+status: sourced

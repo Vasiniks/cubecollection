@@ -2046,6 +2046,33 @@ issues:
       GREP FOR AN EXISTING SOURCE BEFORE WRITING A NEW ONE. The archive is large enough that
       "this is new" is a claim needing a check, and the same mistake was made on 2026-09-11 with
       a HuaMeng variant that already existed.
+
+      2026-09-12 — RESEARCH_SPEC 3.6a's NEW THIRD CHECK FOUND INVENTORY ON THE FIRST BRAND IT WAS
+      APPLIED TO, which is the strongest argument for the check that could be made. Preserved as
+      speedcubeshop-fanxin-vendor-facet-2026.
+
+      SpeedCubeShop attributes 21 products to vendor "Fanxin". Four are typed 3x3:
+      `fanxin-big-3x3-18-8cm` ("Fanxin Big 3x3 - 18.8cm"), `color-brick-speed-cube` ("Color Brick
+      Speed Cube"), `fanxin-hollow-3x3-concave` ("Fanxin Hollow 3x3 - Concave") and
+      `fanxin-light-3x3-ultra-magnetic-ball-core-maglev-uv-coated`. The archive holds three FanXin
+      models — fanxin-3x3-standard, fanxin-hudong-3x3, fanxin-magnetic-3x3-standard — and none of
+      the four has an obvious counterpart among them.
+
+      ONE OF THE FOUR IS THE WHOLE POINT. `color-brick-speed-cube` carries the brand in NEITHER
+      its slug NOR its title. No prefix sweep and no keyword search for "fanxin" can return it
+      from this retailer; only the vendor field identifies it. The archive would have gone on not
+      knowing it existed, and would have had no way to discover that it did not know.
+
+      NOTHING IS ADMITTED. A vendor string is retailer bookkeeping — this issue's sibling P4-10
+      records that the same field reads "Spin Master" for Rubik's and "QiYi" for X-Man Design — so
+      these are candidates and no more. They were also read from a LIVE catalogue query, which
+      preserves nothing; each product page needs capturing before any of it is load-bearing.
+
+      THE GENERAL POINT FOR THIS ISSUE. P4-9 has been read as a RECENCY failure, and the
+      measurement supports that: 15 of 20 confirmed-missing candidates were first listed
+      2024-2026. This adds a second, independent mechanism that has nothing to do with recency —
+      a product can be missing because the discovery method cannot see it, at any date. FanXin is
+      not a 2026 brand.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.
