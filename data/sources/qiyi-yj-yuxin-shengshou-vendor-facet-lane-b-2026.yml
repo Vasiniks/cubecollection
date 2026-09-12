@@ -1,0 +1,80 @@
+# source: qiyi-yj-yuxin-shengshou-vendor-facet-lane-b-2026
+# Created 2026-09-12, P4-9 Lane B (methodology). METHOD 2 of the three-method head-to-head:
+# vendor/brand facet, `/collections/<brand>/products.json?limit=250`, keyed on the retailer's
+# structured `vendor` field on each returned product, not on the URL. Run against the same four
+# manufacturers and two hosts as the companion category-enumeration and (attempted) archived
+# prefix-sweep sources so the three methods' outputs are directly comparable.
+id: qiyi-yj-yuxin-shengshou-vendor-facet-lane-b-2026
+entity: source
+kind: retailer
+title: "TheCubicle + SpeedCubeShop brand-collection sweep, qiyi/yj/yuxin/shengshou (vendor facet, 2026-09-12)"
+publisher: "TheCubicle / SpeedCubeShop"
+url: "https://www.thecubicle.com/collections/qiyi-mofangge/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Queried 2026-09-12: `/collections/<brand>/products.json?limit=250` at both hosts for qiyi, yj,
+  yuxin, shengshou. Reproducible with the URL above per brand/host (TheCubicle's QiYi collection
+  slug is `qiyi-mofangge`, not `qiyi` — see finding below; the other three brands use their
+  archive id as the slug at both hosts: `yj`, `yuxin`, `shengshou`).
+
+  RAW COLLECTION SIZES (all products, any category) vs. products TYPED `3x3` in Shopify's own
+  `product_type` field (the field this method reads, not title parsing):
+    TheCubicle    qiyi-mofangge  247 total, 39 typed 3x3   |  yj  105 total, 25 typed 3x3
+                  yuxin          101 total, 18 typed 3x3   |  shengshou 182 total, 15 typed 3x3
+    SpeedCubeShop qiyi           147 total, 21 typed 3x3   |  yj   63 total, 13 typed 3x3
+                  yuxin           45 total,  6 typed 3x3   |  shengshou 80 total,  3 typed 3x3
+
+  FINDING 1 — THE BRAND-COLLECTION SLUG IS NOT THE MANUFACTURER ID, AND THE FAILURE IS SILENT.
+  `thecubicle.com/collections/qiyi/products.json` returns `{"products":[]}` — HTTP 200, zero
+  products, no error — while QiYi is TheCubicle's largest-volume brand in this sweep at 247
+  products. The real slug, found via `/collections.json`, is `qiyi-mofangge`. A vendor-facet
+  sweep that assumes collection-slug == archive-id would have recorded "QiYi: 0" here exactly as
+  wrongly as a prefix sweep can, and for the same reason 3.6a check 3 exists: the retailer's own
+  naming, not the manufacturer's, decides what a slug-based method returns. yj/yuxin/shengshou
+  slugs did match their archive ids at both hosts; qiyi did not at one of two.
+
+  FINDING 2 — a distinct QiYi product line is visible ONLY through the brand facet, not the
+  category listing, at SpeedCubeShop: `qiyi-m-pro-v3-flagship` ("QiYi M Pro 3x3 V3 Flagship
+  (Magnetic)"), tagged "Backordered", published_at 2026-09-01. It is absent from
+  `speedcubeshop.com/collections/3x3-speed-cubes/products.json` (both pages, checked directly by
+  handle) despite being typed `3x3` and carrying `vendor: "QiYi"`. THE SAME LINE IS NOT
+  SUPPRESSED AT THECUBICLE: `qiyi-m-pro-3x3-v3-flagship` and `qiyi-m-pro-3x3-v3-pioneer-uv`
+  (published_at 2026-09-11, i.e. the day before this sweep) appear in BOTH TheCubicle's brand
+  facet and its `/collections/3x3-speed-cubes` category pages. Same manufacturer, same product
+  line, same method (category enumeration) — reliable at one host, silently incomplete at the
+  other, for a product that is one day to two weeks old. Cross-referenced against
+  `research/qc/p4-9-adjudication.yml`: no candidate for "M Pro V3" or "M Pro Flagship" exists in
+  the 261 already adjudicated there. This is a new candidate, not a re-derivation.
+
+  FINDING 3 — a second brand-facet-only miss, weaker: `yuxin-digital-puzzle-cube-3x3` ("YuXin
+  Digital Puzzle Cube 3x3", tagged "15 puzzle") appears in SpeedCubeShop's YuXin brand facet but
+  not in its 3x3-speed-cubes category pages. Unlike Finding 2 this one is almost certainly
+  correctly excluded — see CHANGES/classification in the Lane B report; it is recorded here as a
+  second data point on the same category-vs-facet discrepancy, not as a second confirmed_missing
+  lead.
+
+  FULL LINE-LEVEL VENN AGAINST METHOD 3 (category enumeration) IS IN THE COMPANION SOURCE
+  `qiyi-yj-yuxin-shengshou-category-enum-lane-b-2026` and in
+  `research/qc/p4-9-enumeration-methods-lane-b.md`; this record is the Method 2 raw evidence only.
+preservation_note: >-
+  Live catalogue queries, not archive captures — a vendor facet has no Wayback equivalent. THIS
+  RECORD PRESERVES NOTHING ON ITS OWN and makes no specification, date, or identity claim about
+  any product beyond what Shopify's own JSON fields state (title, vendor, product_type,
+  published_at, tags). Each product page needs its own capture before anything here is
+  load-bearing for a model or variant record. published_at is a LISTING date, never a release
+  date.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: what each retailer's own vendor-collection JSON returned for these four brands on
+  2026-09-12, including one collection-slug mismatch (QiYi at TheCubicle) and one product visible
+  by this method but not by category enumeration at the same retailer (QiYi M Pro V3 at
+  SpeedCubeShop).
+  DOES NOT ESTABLISH: that QiYi M Pro V3 is a distinct model rather than a variant of M Pro V2,
+  who first released it, or its specification. A retailer SKU is not evidence of a distinct
+  model — see the Lane B report for the classification this record's evidence supports.
+status: sourced

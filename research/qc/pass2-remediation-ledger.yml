@@ -2415,6 +2415,47 @@ issues:
       The GuHong V2 DIY kit recovered from the first wave REMAINS UNVERIFIED. Wayback was down
       for the whole lane — three replay attempts plus the CDX and availability APIs, all HTTP 503
       — so it is still held out of the archive in the recovery report. Top item for the next pass.
+
+      2026-09-12 — THE ENUMERATION-METHOD COMPARISON, and it caught a candidate ONE DAY OLD.
+      Lane B ran vendor-facet (M2) against category enumeration (M3) head-to-head over
+      qiyi/yj/yuxin/shengshou at two retailers. Report:
+      research/qc/p4-9-enumeration-methods-lane-b.md. Method 1, the Wayback CDX prefix sweep, was
+      BLOCKED by the Internet Archive's day-long HTTP 503 outage and is recorded as blocked
+      rather than as a null result — which is itself an argument about method 1.
+
+      MEASURED VENN across 8 host-by-manufacturer cells: 99 M2 lines, 96 M3 lines, 96 overlap, 3
+      M2-only, 0 M3-ONLY. The vendor facet never found fewer lines than category enumeration in
+      any cell. At TheCubicle the two returned identical sets; at SpeedCubeShop M3 undercounted
+      M2 for QiYi (14 vs 16) and YuXin (3 vs 4), always in the same direction.
+
+      THE MECHANISM WAS ISOLATED, not just observed: SpeedCubeShop suppresses at least one
+      "Backordered"-tagged listing from its live category collection while still serving it
+      through the vendor facet. TheCubicle does not suppress the equivalent listing. That is a
+      STOCK-driven, retailer-specific failure — a third mechanism, distinct from both recency and
+      discoverability, and one that a category-based detector cannot see by construction.
+
+      THE CANDIDATE: "QiYi M Pro 3x3 V3" in Flagship and Pioneer UV configurations, PUBLISHED
+      2026-09-11 — the day before this sweep. The archive holds M Pro standard, V2 and Elite and
+      no V3. Verified independently by the main session at TheCubicle: two listings,
+      qiyi-m-pro-3x3-v3-flagship and qiyi-m-pro-3x3-v3-pioneer-uv, both published 2026-09-11, and
+      absent from all 261 entries of p4-9-adjudication.yml. This is the recency mechanism caught
+      in the act, three days after the original P4-9 sweep ran. Nothing admitted.
+
+      A SLUG FINDING THAT CORRECTS MY OWN WORK THIS MORNING. TheCubicle's QiYi collection is
+      `qiyi-mofangge`, not `qiyi`. Verified: /collections/qiyi returns ZERO products while
+      /collections/qiyi-mofangge returns 247, of which 57 are typed 3x3. My
+      speedcubeshop-vendor-facet-sweep-2026-09 ran on archive manufacturer ids and its "MOST
+      BRANDS RETURNED NOTHING" line was caveated correctly in principle — but this is what the
+      caveat costs in practice, at the archive's most-used retailer and one of its largest
+      manufacturers. That source now carries the quantified correction and says the zero-list must
+      NEVER be read as "this retailer does not stock that brand".
+
+      VERDICT, and it is narrower than "systematic": the failure is PARTIALLY systematic —
+      retailer-specific and stock-driven rather than a general defect in category enumeration.
+      Method 2 should be MANDATORY for current-completeness because it never found fewer lines in
+      any cell and catches both discoverability and stock suppression. Method 1 stays valuable for
+      HISTORICAL completeness but its live-service dependency, demonstrated down all day,
+      disqualifies it as a sole mandatory check. Method 3 remains a cheap secondary.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

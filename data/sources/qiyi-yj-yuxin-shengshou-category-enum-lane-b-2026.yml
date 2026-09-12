@@ -1,0 +1,65 @@
+# source: qiyi-yj-yuxin-shengshou-category-enum-lane-b-2026
+# Created 2026-09-12, P4-9 Lane B (methodology). METHOD 3 of the three-method head-to-head:
+# retailer category enumeration, `/collections/3x3-speed-cubes/products.json`, the same
+# collection `scripts/catalogue-gap.mjs` already queries, here filtered post hoc to each of the
+# four target manufacturers by the product's own `vendor` field so it is comparable line-for-line
+# against Method 2 (vendor facet) on the companion source
+# `qiyi-yj-yuxin-shengshou-vendor-facet-lane-b-2026`.
+id: qiyi-yj-yuxin-shengshou-category-enum-lane-b-2026
+entity: source
+kind: retailer
+title: "TheCubicle + SpeedCubeShop 3x3-speed-cubes category enumeration, filtered to qiyi/yj/yuxin/shengshou (2026-09-12)"
+publisher: "TheCubicle / SpeedCubeShop"
+url: "https://www.thecubicle.com/collections/3x3-speed-cubes/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Queried 2026-09-12: `/collections/3x3-speed-cubes/products.json?limit=250&page=N` at both
+  hosts (TheCubicle: 3 pages, 581 products; SpeedCubeShop: 2 pages, 265 products — the same page
+  counts `scripts/catalogue-gap.mjs` uses), then filtered to `vendor` in {QiYi, YJ, YuXin,
+  ShengShou} and `product_type == "3x3"`.
+
+  LINE COUNTS AGAINST METHOD 2 (VENDOR FACET), same manufacturer, same host, same day:
+    TheCubicle     qiyi 27/27  yj 18/18  yuxin 16/16  shengshou 10/10   (M3/M2, exact match)
+    SpeedCubeShop  qiyi 14/16  yj  6/6   yuxin  3/4   shengshou  2/2
+
+  AT THECUBICLE THE TWO METHODS RETURNED THE IDENTICAL LINE SET FOR ALL FOUR MANUFACTURERS —
+  zero lines found by one and not the other, in either direction, checked by normalised-name set
+  difference, not just by count. At SpeedCubeShop, Method 3 (this source) undercounts Method 2 by
+  2 lines for QiYi and 1 for YuXin; Method 2 never undercounts Method 3 at either host for any of
+  the four. See the companion vendor-facet source for what those lines are (QiYi M Pro V3
+  Flagship, QiYi Bubble, YuXin Digital Puzzle Cube) and their classification in
+  `research/qc/p4-9-enumeration-methods-lane-b.md`.
+
+  This asymmetry is consistent with SpeedCubeShop suppressing at least one tag/stock state
+  (observed: "Backordered") from its live category collection while still serving it through the
+  brand collection — a retailer-specific behaviour, not a general property of category
+  enumeration, since TheCubicle's own category page did NOT suppress its equivalent new listing
+  (qiyi-m-pro-3x3-v3-flagship, published_at 2026-09-11, present in both TheCubicle collections
+  checked here).
+
+  Full per-manufacturer per-host line lists (used to compute the above) are retained in this
+  agent's working notes and reproducible from the URL pattern above; they are not transcribed
+  here in full to keep this record legible — the counts and the named exceptions are the load-
+  bearing content.
+preservation_note: >-
+  Live catalogue queries, not archive captures — matches `scripts/catalogue-gap.mjs`'s own
+  category endpoint but is NOT a run of that script (this predates any code change and used a
+  narrower, four-manufacturer, two-host scope for a controlled comparison). THIS RECORD
+  PRESERVES NOTHING ON ITS OWN. published_at is a LISTING date, never a release date, and no
+  specification or identity claim is made about any product named here beyond its title, vendor,
+  and product_type as Shopify returned them on 2026-09-12.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: that on 2026-09-12, TheCubicle's category and vendor-facet views of these four
+  manufacturers were identical, while SpeedCubeShop's were not — a measured, retailer-specific
+  gap between two of the archive's three candidate discovery methods, not a difference between
+  the manufacturers themselves.
+  DOES NOT ESTABLISH: that the category-enumeration method is unreliable in general, that the
+  missed lines are distinct models, or that the same asymmetry holds for any manufacturer or
+  host outside this four-by-two sample.
+status: sourced

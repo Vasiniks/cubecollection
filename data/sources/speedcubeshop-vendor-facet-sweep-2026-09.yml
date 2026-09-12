@@ -57,6 +57,15 @@ preservation_note: >-
   retailer's collection slug; it does not mean the brand is unstocked. The sweep was run on
   archive ids precisely because that is reproducible, and its misses are a property of that
   choice.
+  QUANTIFIED 2026-09-12, AND THE COST IS LARGE. The P4-9 enumeration lane found that
+  TheCubicle's QiYi collection slug is `qiyi-mofangge`, not `qiyi`. Verified: /collections/qiyi
+  returns ZERO products at that retailer while /collections/qiyi-mofangge returns 247, of which
+  57 are typed 3x3. So for the archive's single most-used retailer and one of its largest
+  manufacturers, a sweep keyed on the archive's manufacturer id silently returns nothing at all.
+  The caveat above was right in principle; this is what it costs in practice, and it means the
+  "returned zero" list in this record must NEVER be read as "this retailer does not stock that
+  brand". Any brand on it needs its real collection slug found before the negative means
+  anything.
 accessed: "2026-09-12"
 language: en
 region: US
