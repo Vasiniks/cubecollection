@@ -345,5 +345,58 @@ line('  that DO satisfy 3.6a, so compliance would not by itself have prevented P
 line('  for ARCHIVED sweeps, which look backwards; nothing in it requires a CURRENT catalogue.');
 line('  That is what `npm run catalogue-gap` covers, and why it had to be a separate check.');
 
+// ---- 10. sources cited far beyond what they preserve ------------------------------------
+//
+// The rule-48 defect one level up. Rule 48 asks whether a SPEC VALUE appears in its source's
+// preserved text. This asks the broader question: does the source's preserved text mention the
+// SUBJECT of the record citing it at all?
+//
+// Found 2026-09-11 (ledger P4-14) with a striking result. speedsolving-wiki-moyu backed 172
+// attestations and its excerpt preserved only the page's BRAND HISTORY - founding, naming,
+// sub-brands, 839 characters - while 169 of those attestations made PRODUCT-level claims:
+// coatings, magnet configurations, MagLev, release dates, edition designations.
+//
+// THE CONTROL IS WHAT MADE IT TRUSTWORTHY. The sibling wiki sources scored ZERO on the same
+// measure: speedsolving-wiki-dayan-products (88 citations), -qiyi-products (88),
+// -yongjun-products (64), -shengshou-products (36), -yuxin-products (32). They preserve
+// 2,100-2,500 characters of PRODUCT text. Only the MoYu record captured the wrong section of the
+// right page. A measure that fired everywhere would have meant nothing.
+//
+// The claims were all correct - re-fetching the page confirmed every disputed quote verbatim.
+// What was missing was the preservation, so the archive held the claim and a pointer but not the
+// evidence, and the moment that capture stopped resolving the claims became unverifiable. Both
+// affected sources were repaired by transcribing the product sections they were already citing.
+//
+// KNOWN LIMITATION, stated because it bounds how this number may be read. Subject matching is
+// token-based and does not know the archive's own abbreviations: `mfjs-meilong-3c` cited to a
+// page titled "MoFang JiaoShi MeiLong 3c" scores as a miss, because `mfjs` and `mofang jiaoshi`
+// share no tokens. That is why this is a REPORTED SWEEP and not a rule - it cannot be made
+// precise enough to block, and a check that cries wolf gets ignored. Read the share, not the row.
+head('Sources cited beyond what they preserve');
+const subjHits = new Map();
+for (const rec of records) {
+  for (const att of Object.values(rec.doc?.attestations ?? {})) {
+    for (const id of att?.sources ?? []) {
+      const s = srcById.get(id);
+      if (!s) continue;
+      if (!subjHits.has(id)) subjHits.set(id, { n: 0, miss: 0, blob: JSON.stringify(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ') });
+      const e = subjHits.get(id);
+      e.n += 1;
+      const toks = String(rec.doc.name ?? rec.doc.id).toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter((x) => x.length > 2);
+      const share = toks.length ? toks.filter((x) => e.blob.includes(x)).length / toks.length : 1;
+      if (share < 0.6) e.miss += 1;
+    }
+  }
+}
+const over = [...subjHits.entries()]
+  .filter(([, e]) => e.n >= 8 && e.miss / e.n >= 0.25)
+  .map(([id, e]) => [id, e.n, Math.round((100 * e.miss) / e.n)])
+  .sort((a, b) => b[2] - a[2]);
+line(`  sources cited >=8 times whose preserved text names the citing record's subject in`);
+line(`  under 75% of cases : ${over.length}`);
+for (const [id, n, pct] of over) line(`     ${String(pct).padStart(3)}%  ${String(n).padStart(4)} cites  ${id}`);
+line('  Confirm each by hand before acting: token matching does not know this archive\'s');
+line('  abbreviations, so an `mfjs-*` record cited to a "MoFang JiaoShi" page scores as a miss.');
+
 line();
 line('audit complete — advisory only, nothing here blocks a build.');

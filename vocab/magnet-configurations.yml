@@ -17,6 +17,14 @@ values:
   - value: core_corner
     label: "Core-corner"
     description: "Magnets acting between the core and the corner pieces."
+  - value: core_corner_plus_piece
+    label: "Core-corner plus piece magnets"
+    description: "A core-to-corner system AND a conventional piece-to-piece system in the same
+      cube. Added 2026-09-11 (ledger P4-14) because sources describe this combination directly
+      and no existing value named it, so it was being split inconsistently: moyu-weilong-v9
+      ballcore recorded `core_corner` and maru-vx-3 Core M recorded `dual_layer` for the same
+      described arrangement. `dual_layer` means two sets of POSITIONING magnets between pieces;
+      it does not imply a core. Use this value only when a source states BOTH systems."
   - value: adjustable
     label: "Adjustable"
     description: "Magnet strength adjustable by the user without disassembly."

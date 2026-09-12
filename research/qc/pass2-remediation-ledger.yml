@@ -2083,6 +2083,43 @@ issues:
       page never independently fetched, confidence correctly held at `uncertain`.
       Each is already recorded at an honest confidence. Filing them is about making sure the flag
       is findable by someone other than whoever reads that one report.
+      RESOLVED 2026-09-11, and the investigation found something far larger than the three
+      weaknesses this issue listed.
+      THE MARU DUAL_LAYER READING WAS A VOCABULARY GAP, NOT A RESEARCH WEAKNESS. The note said
+      "No single vocabulary value names a combined traditional-plus-core-corner system" and took
+      `dual_layer` as the closest reading at reduced confidence. Sweeping the class showed the
+      archive was SPLITTING that arrangement INCONSISTENTLY: moyu-weilong-v9--ballcore recorded
+      `core_corner` and maru-vx-3-original--core-m recorded `dual_layer` for the same described
+      system, so a consumer of the field would have read them as different mechanisms. Added
+      vocab value `core_corner_plus_piece` and reconciled all three records. The two Maru
+      readings rose from `uncertain` to `probable`: the uncertainty was in the VOCABULARY, not
+      in the evidence, and the sources state the arrangement directly.
+      21 magnet_configuration values archive-wide are recorded as interpretive readings, and
+      every one already carries the caveat in its own note. That part of the archive is healthy;
+      the defect was that one reading had nowhere correct to land.
+      THEN THE REAL FINDING. Checking whether a note quoted text the archive actually held
+      exposed that speedsolving-wiki-moyu backed 172 attestations on an 839-character excerpt
+      preserving only the page's BRAND HISTORY - founding, naming, sub-brands - while 169 of
+      those attestations made PRODUCT-level claims: coatings, magnet configurations, MagLev,
+      release dates, designations. The rule-48 defect one level up.
+      THE CONTROL IS WHAT MADE IT A FINDING. Sibling wiki sources scored ZERO on the same measure
+      - dayan-products (88 citations), qiyi-products (88), yongjun-products (64),
+      shengshou-products (36), yuxin-products (32) - because they preserve 2,100-2,500 characters
+      of PRODUCT text. Only the MoYu record captured the wrong section of the right page.
+      EVERY CLAIM WAS CORRECT. Re-fetching the capture already on the record confirmed each
+      disputed quote verbatim, including "corner-core magnets as well as repelling edge magnets",
+      which the excerpt did not contain. The research was sound; the preservation was truncated,
+      so the archive held the claim and a pointer but not the evidence. Repaired by transcribing
+      the 3x3 product section: excerpt 839 -> 10,380 chars, and the measure fell 95% -> 2%.
+      speedsolving-wiki-mofang-jiaoshi had the same defect at smaller scale (44% of 32 citations,
+      excerpt 475 -> 3,367 chars) and is repaired the same way. Its four /released attestations
+      were already `uncertain`, correctly - the evidence for them simply lived only on the page.
+      THE HUAMENG AND CUBETWIST WEAKNESSES ARE UNCHANGED and remain open under this issue: both
+      need a fetch this pass did not make.
+      Promoted to `npm run audit` as a REPORTED SWEEP, not a rule. Subject matching is
+      token-based and cannot resolve this archive's own abbreviations - `mfjs-meilong-3c` cited
+      to a "MoFang JiaoShi MeiLong 3c" page scores as a miss - so it cannot be made precise
+      enough to block. Both remaining flagged sources are exactly that artefact.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

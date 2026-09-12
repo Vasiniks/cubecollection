@@ -13,7 +13,7 @@ scope_class: core
 edition:
   types: [standard]
 config:
-  magnet_configuration: dual_layer
+  magnet_configuration: core_corner_plus_piece
   maglev: maglev
 packaging:
   contents: ["Maru VX-3 Core M MagLev", "Maru Cube Stand"]
@@ -30,10 +30,12 @@ attestations:
       higher price but is a service selected at checkout, not a separately marketed edition
       (DATA_MODEL §4.3), and is not built into a variant here."
   /config/magnet_configuration:
-    confidence: uncertain
+    confidence: probable
     sources: [thecubicle-maru-vx-3-core-m-maglev]
-    note: "Source states 'edge/corner as well as corner/core magnetization' — read as
-      `dual_layer`, the same mapping and same caveat as maru-vx-3-original--core-m."
+    note: "RECLASSIFIED 2026-09-11 from `dual_layer` to `core_corner_plus_piece` and raised from
+      `uncertain` to `probable`, same reasoning as the maru-vx-3-original--core-m sibling. The
+      source states 'edge/corner as well as corner/core magnetization' - both systems, directly.
+      The uncertainty was in the vocabulary, not in the evidence."
   /config/maglev:
     confidence: reported
     sources: [thecubicle-maru-vx-3-core-m-maglev]

@@ -13,7 +13,7 @@ scope_class: core
 edition:
   types: [standard]
 config:
-  magnet_configuration: dual_layer
+  magnet_configuration: core_corner_plus_piece
 status: stub
 attestations:
   /name:
@@ -25,11 +25,12 @@ attestations:
     note: "Differentiation search performed: 'Stickerless'/'Black' stock options at one price,
       no separate edition name. Magnet configuration is the variant-defining axis."
   /config/magnet_configuration:
-    confidence: uncertain
+    confidence: probable
     sources: [thecubicle-maru-vx-3-core-m]
-    note: "Source states directly: 'This version of the VX-3 has a corner/core magnet system
-      along side the traditional magnets glued into the pieces.' No single vocabulary value
-      names a combined traditional-plus-core-corner system; `dual_layer` ('Two sets of
-      positioning magnets') is the closest available reading, recorded at reduced confidence
-      because it is this record's own mapping of the source's prose onto the vocabulary, not a
-      term the source itself uses."
+    note: "RECLASSIFIED 2026-09-11 from `dual_layer` to `core_corner_plus_piece` (ledger P4-14), and
+      RAISED from `uncertain` to `probable`. This note previously said 'No single vocabulary
+      value names a combined traditional-plus-core-corner system' and took `dual_layer` as the
+      closest available reading at reduced confidence. That value now exists, so the reduced
+      confidence no longer applies: the source states the arrangement DIRECTLY - 'a corner/core
+      magnet system along side the traditional magnets glued into the pieces' - and the record
+      can now say exactly that. The uncertainty was in the vocabulary, not in the evidence."

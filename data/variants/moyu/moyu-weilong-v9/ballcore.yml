@@ -13,7 +13,7 @@ edition:
   designation: "Ballcore"
 config:
   core_system: ball_core
-  magnet_configuration: core_corner
+  magnet_configuration: core_corner_plus_piece
   maglev: maglev
 status: stub
 attestations:
@@ -26,7 +26,14 @@ attestations:
   /config/magnet_configuration:
     confidence: reported
     sources: [speedsolving-wiki-moyu]
-    note: "Wiki: 'corner-core magnets as well as repelling edge magnets similar to that of the GAN 13.'"
+    note: "RECLASSIFIED 2026-09-11 from `core_corner` to `core_corner_plus_piece` (ledger P4-14). The
+      source describes BOTH systems - 'corner-core magnets as well as repelling edge magnets' -
+      and `core_corner` names only the first, so the record was silently dropping half of what
+      its own source says. The new value exists because this combination was being split
+      inconsistently across the archive: this record said `core_corner` while
+      maru-vx-3-original--core-m said `dual_layer` for the same described arrangement, so a
+      consumer of this field would have read them as different systems. Confidence unchanged at
+      `reported`: the evidence did not change, only the vocabulary's ability to express it."
   /config/maglev:
     confidence: uncertain
     sources: [speedsolving-wiki-moyu]
