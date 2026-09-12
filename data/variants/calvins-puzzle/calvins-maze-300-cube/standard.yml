@@ -15,11 +15,21 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-calvins-maze-300-colors-2025]
-    note: "Differentiation search performed: TheCubicle's own live product page (re-fetched
-      2025-02-19 Wayback capture) offers only Black as a purchasable colour. No other
-      colourway, edition, or configuration axis was found on this or any other source
-      consulted this pass. The model's own open question (whether this should instead be
-      framed as a `modified_from` aftermarket service on an unidentified base cube) is
-      unresolved and NOT acted on here — no source identifies the specific base variant
-      DATA_MODEL §4.3 would require."
+    sources: [thecubicle-calvins-maze-300-colors-2025, thecubicle-calvins-puzzle-vendor-facet-2026, speedcubeshop-vendor-facet-sweep-2026-09]
+    note: >-
+      Differentiation search performed: TheCubicle's own live product page (re-fetched
+      2025-02-19 Wayback capture) offers only Black as a purchasable colour. No other colourway,
+      edition, or configuration axis was found on this or any other source consulted this pass.
+      The model's own open question (whether this should instead be framed as a `modified_from`
+      aftermarket service on an unidentified base cube) is unresolved and NOT acted on here — no
+      source identifies the specific base variant DATA_MODEL §4.3 would require. SWEEP RECORDED
+      2026-09-12 (RESEARCH_SPEC 3.6a, third check). Calvin's Puzzle was enumerated by BRAND
+      FACET at both principal retailers — thecubicle-calvins-puzzle-vendor-facet-2026 (24
+      typed-3x3 products) and speedcubeshop-vendor-facet-sweep-2026-09 (23) — because NONE of
+      its products carries the brand in its URL handle and no slug-based sweep can reach them.
+      No configuration of THIS model appears in either enumeration. THE ENUMERATIONS ALSO FOUND
+      23-24 CALVIN'S 3x3 PRODUCTS THE ARCHIVE DOES NOT HOLD — CFOP/Practice trainers, a
+      six-generation Sudoku line, World Maps, Calendars and 'Yummy' food cubes. Those are
+      MODEL-layer candidates escalated under P4-9 and nothing is admitted from them here; this
+      attestation records only that THIS model's single-configuration state has now been
+      searched against both catalogues.

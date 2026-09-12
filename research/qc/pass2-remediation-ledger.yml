@@ -1117,6 +1117,34 @@ issues:
       a non-US source before this, which is why the audit never flagged it with "(also no non-US
       source)". Checked rather than assumed — `s.region && s.region !== 'US'` would have counted
       the Cubelelo source had it been the first.
+
+      2026-09-12 — CALVIN'S PUZZLE CLOSED; ESCUBE AND KUNGFU DELIBERATELY LEFT OPEN AFTER
+      CHECKING. Sweeps 30 -> 31; failing both 8 -> 7; no-sweep list 12 -> 11. Three candidates
+      were examined and only one survived, which is the part worth recording.
+
+      CALVIN'S PUZZLE IS GENUINE. Both of today's brand-facet enumerations —
+      thecubicle-calvins-puzzle-vendor-facet-2026 (24 typed-3x3) and
+      speedcubeshop-vendor-facet-sweep-2026-09 (23) — list real Calvin's products, and the brand
+      NEEDED the facet method because none of its products carries the brand in its URL handle.
+      Cited on its baselines. The 23-24 products the archive does NOT hold stay P4-9 candidates;
+      the attestation records only that these models' single-configuration state has been
+      searched against both catalogues.
+
+      ESCUBE IS A FALSE POSITIVE AND WAS NOT CITED. `thecubicle-escube-es3-3x3-magnetic` matched
+      SWEEP_EVIDENCE on the word "prefix" — inside the sentence "brand-word 'ESCube' PREFIXED
+      onto the product name 'ES3'", which is about naming convention and has nothing to do with a
+      prefix sweep. It is a single product page. ESCube stays on the no-sweep list, correctly.
+
+      KUNGFU WAS NOT CITED EITHER, ON MY OWN SOURCE'S OWN WORDS.
+      speedcubeshop-vendor-facet-sweep-2026-09 names KungFu among the brands that "returned zero
+      products under their archive id", and that source's preservation_note says plainly: "A
+      NEGATIVE HERE IS WEAK. 'Zero products' means the archive's manufacturer id is not this
+      retailer's collection slug; it does not mean the brand is unstocked." Citing it as a
+      completed sweep would contradict the record I wrote this morning.
+
+      THREE CHECKED, TWO REJECTED. That ratio is why the four closures earlier today are
+      trustworthy — the detector's vocabulary matching is wrong in both directions, so every
+      candidate has to be read rather than counted.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven
