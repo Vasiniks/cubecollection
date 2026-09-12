@@ -1,0 +1,31 @@
+# variant: gan-356-me-v2--uv-coated
+# Depth research 2026-09-11. The coating is the axis: TheCubicle sells this under its own product
+# handle, repeating the base model's own "4 elasticity / 3 center travel" feature language and
+# claiming the coating as the only difference.
+id: gan-356-me-v2--uv-coated
+entity: variant
+model_id: gan-356-me-v2
+name: "GAN356 ME V2 (UV Coated)"
+scope_class: core
+config:
+  coating: uv
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan356-me-v2-uv-coated-2026]
+    note: >-
+      The product's own name states the coating and the description calls it a surface treatment
+      giving "enhanced grip and a sleek appearance". What makes it a CONFIGURATION rather than a
+      second product is that the same description repeats the base model's feature language
+      verbatim — "4 elasticity settings and 3 center travel adjustments" — and claims no other
+      difference.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-me-v2-uv-coated-2026]
+    note: >-
+      A standard configuration in a coated finish, not a named or limited edition. Recorded
+      during depth research on one-configuration models; the base gan-356-me-v2--standard is the
+      uncoated sibling.

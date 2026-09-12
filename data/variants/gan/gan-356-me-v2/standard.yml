@@ -14,4 +14,11 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-gan356-me-v2]
+    sources: [thecubicle-gan356-me-v2, thecubicle-gan356-me-v2-uv-coated-2026]
+    note: >-
+      ASSESSMENT UPDATED 2026-09-11 during depth research. This was a lone baseline; a sweep of
+      TheCubicle on BOTH slug forms found a second configuration, gan356-me-v2-3x3-uv-coated,
+      now recorded as the sibling gan-356-me-v2--uv-coated. This record is therefore the
+      UNCOATED configuration of a two-way split rather than a single-configuration baseline.
+      The hyphenated `gan-356-` prefix does not return the UV product at all — only `gan356-`
+      does, which is why the original pass did not find it (ledger P26-3, slug-form blindness).

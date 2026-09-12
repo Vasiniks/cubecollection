@@ -1,0 +1,52 @@
+# source: thecubicle-gan356-me-v2-uv-coated-2026
+# Created 2026-09-11 during depth research on one-configuration models. Found via
+# thecubicle-gan356-slug-prefix-2026, the alternate-slug-form sweep — the hyphenated
+# `gan-356-` prefix does not return this product (ledger P26-3).
+id: thecubicle-gan356-me-v2-uv-coated-2026
+entity: source
+kind: retailer
+title: "GAN356 ME V2 3x3 (UV Coated) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-me-v2-3x3-uv-coated"
+preservation_method: excerpt
+excerpt: |-
+  Fetched live 2026-09-11 from the storefront's own product JSON endpoint.
+
+  Product Description, verbatim: "The GAN356 ME V2 3x3 (UV Coated) offers unmatched performance
+  and value, making it the perfect choice for speedcubers seeking a quality GAN experience
+  without breaking the bank. Featuring a factory-installed magnetic system for superior turning
+  feel, this 3x3 boasts 4 elasticity settings and 3 center travel adjustments for a customized
+  cubing experience. The UV coated outer surface provides enhanced grip and a sleek appearance,
+  ensuring your solves look and feel as smooth as possible."
+
+  Structured fields: vendor "GAN"; tags include "Manufacturer_GAN", "Magnets_Magnetic",
+  "Color_Stickerless", "Type_3x3". One purchase option, "Stickerless".
+
+  WHY THIS IS A CONFIGURATION OF THE ME V2 AND NOT A SEPARATE PRODUCT. The description repeats
+  the base model's own feature language verbatim — "4 elasticity settings and 3 center travel
+  adjustments" is what thecubicle-gan356-me-v2 says of the uncoated version — and the only
+  difference it claims is the coating, described as a surface treatment giving "enhanced grip and
+  a sleek appearance". Same design, different finish. It is sold under its own product handle
+  (gan356-me-v2-3x3-uv-coated) distinct from the base handle (gan356-me-v2-3x3), so this is not
+  one listing with a dropdown — the dedup test this archive applies before admitting any variant.
+
+  NO WEIGHT OR DIMENSION IS RECORDED HERE. The listing's only numeric field is a 202 g shipping
+  weight, which is a Shopify `grams` value covering the packaged product and is NOT a product
+  weight. This archive has a documented defect class from exactly that confusion (rule 45), so
+  the figure is named and refused rather than transcribed as a spec.
+preservation_note: "Fetched live 2026-09-11 via the storefront's products.json endpoint and
+  transcribed verbatim. An archived capture was sought and NOT obtained: Wayback's CDX endpoint
+  returned HTTP 503 for this URL during this session. A failed fetch is not evidence of absence —
+  a capture should be pinned to this record when Wayback is reachable."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured vendor and tag
+  fields.
+  ESTABLISHES: that a UV-coated configuration of the GAN356 ME V2 was sold as its own product,
+  and that the retailer describes it as the same design with a surface treatment.
+  DOES NOT ESTABLISH: a release date, a product weight, or dimensions. None appears on the page.
+status: sourced
