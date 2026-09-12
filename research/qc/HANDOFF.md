@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  5ab0b62
+HEAD:  4f85754
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      517
-sources:       572
+sources:       574
 events:        4
 
 VALIDATION
@@ -105,6 +105,15 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   A false `unknown` ("searched and not found" while the value sat in a cited source) turned
   up twice; measured the class = 3 candidates, all now correctly handled. NOT shipped as a
   sweep: post-fix its false-positive rate is 100%, from shared multi-product sources.
+  MOYU'S BREADTH GAP IS FULLY CLOSED — both the prefix sweep AND a non-US source
+  (cubelelo-moyu-products-prefix-2026, 132 paths, IN). Non-US 23 -> 24. The non-US catalogue
+  EARNED it: Cubelelo sells GuoGuan and HuaMeng UNDER the MoYu prefix (independent
+  sub-brand attribution) and carries every P4-9 candidate generation — so those are NOT a
+  US-market artefact. Both sweeps cited on the 7 older MoYu baselines = two markets searched.
+  INDEPENDENCE CASE STUDY: Cubelelo's AoLong V2 LE prose is WORD-FOR-WORD TheCubicle's
+  (= one chain, not corroboration) but its STRUCTURED table is its own and independent —
+  product weight 93g vs package 146g, and a Color Scheme field that RESOLVED whether the
+  CUBE or the STAND is transparent green. Cite the two halves of such a page differently.
   DISCOVERY SWEEPS RUN (3.6a): YJ MGC line, and MOYU — the archive's most-cited
   manufacturer, top of the audit's "no sweep source" list for weeks. 23 -> 24 with a sweep;
   failing both 13 -> 12. CITING IT IS WHAT COUNTED: the breadth check reads sources CITED
