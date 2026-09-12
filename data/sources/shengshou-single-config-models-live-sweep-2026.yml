@@ -1,0 +1,118 @@
+# source: shengshou-single-config-models-live-sweep-2026
+# ShengShou depth lane I (2026-09-12). Live Shopify `/products/<slug>.json` fetches at TheCubicle
+# for the 13 non-Crazy single-configuration ShengShou 3x3 models in this lane's brief, run
+# alongside fresh, full, UNSCOPED wayback CDX `prefix` sweeps of thecubicle.com/products/shengshou*
+# (474 URLs, re-confirming thecubicle-shengshou-products-prefix-2026's own enumeration),
+# speedcubeshop.com/products/shengshou* (774 URLs — this CLOSES the gap
+# speedcubeshop-shengshou-products-prefix-2026 explicitly left open: "the full unscoped
+# ...prefix...could not be enumerated in one pass at this session's rate limit"), and
+# cubelelo.com/products/shengshou* (47 URLs, re-confirming cubelelo-shengshou-products-prefix-2026
+# against the raw list rather than its summary). Together these are this lane's RESEARCH_SPEC
+# 3.6a compliance record (archived retailer prefix sweep + non-US retailer + live brand-facet
+# check) for all 13 targets at once, to avoid 13 near-empty source files.
+id: shengshou-single-config-models-live-sweep-2026
+entity: source
+kind: retailer
+title: "ShengShou single-configuration 3x3 models — live Shopify JSON + full unscoped CDX prefix sweep (TheCubicle, SpeedCubeShop, Cubelelo)"
+publisher: "TheCubicle / SpeedCubeShop / Cubelelo"
+url: "https://www.thecubicle.com/products/shengshou-3x3.json"
+preservation_method: excerpt
+excerpt: |-
+  **Live TheCubicle Shopify JSON, fetched 2026-09-12, one per target model:**
+  - shengshou-3x3 ("ShengShou 3x3"): options=[Color: Black, White]; two variants, same price
+    ($4.99), same grams (104). COLOUR-ONLY split, no description differentiates them.
+  - shengshou-big-legend-3x3-7-0cm ("ShengShou Big Legend 3x3 (7.0cm)"): options=[Color: Black,
+    White]; two variants, same price ($7.99), same grams (141). COLOUR-ONLY.
+  - shengshou-pearl-3x3 ("ShengShou Pearl 3x3"): options=[Color: Black, White]; two variants,
+    same price ($13.99), same grams (100). COLOUR-ONLY.
+  - shengshou-wind-3x3 ("ShengShou Wind 3x3"): options=[Color: Black, White]; two variants, same
+    price ($6.99), grams 95/100 (shipping-weight noise, not a spec difference). COLOUR-ONLY.
+  - shengshou-rainbow-3x3 ("ShengShou Rainbow 3x3"): options=[Color: "Stickerless (Dark)",
+    "Stickerless"]; two variants, same price ($5.99), same grams (100). `body_html` reads only
+    "The ShengShou Rainbow 3x3 is ShengShou's first stickerless 3x3 cube. It delivers solid
+    cubing performance while coming at a very low price point" — no text distinguishes the two
+    beyond the option label itself. COLOUR-ONLY (a darker vs. brighter stickerless plastic tone).
+  - shengshou-fangyuan-v2-m ("ShengShou FangYuan V2 M 3x3"): options=[Color: Black] — a SINGLE
+    value, not even a colour split. One sold configuration.
+  - shengshou-gem-3x3, shengshou-mr-m-3x3, shengshou-mr-m-s-3x3, shengshou-tank-3x3,
+    shengshou-yufeng-3x3-m-magnetic-core-magelev, shengshou-yufeng-v2-3x3-m: each options=[Color:
+    Stickerless] — a single value. One sold configuration each.
+  - shengshou-mr-m-v2-3x3 ("ShengShou Mr. M V2 3x3"): options=[Color: Black] — a single value.
+    One sold configuration.
+
+  Per DATA_MODEL §4.1/hard-constraint policy, a body-colour-only split (Black/White, or
+  Stickerless "Dark"/plain) with no other stated distinction is NOT a variant-worthy axis
+  ("Do not treat retailer SKUs as automatic variants" and the explicit colourway-only exclusion)
+  — the precedent already applied archive-wide to e.g. DaYan Bermuda's Black/White collapse. All
+  five colour-split findings above are REJECTED as configuration axes on this basis; the other
+  eight targets show no split of any kind, colour or otherwise.
+
+  **Full unscoped CDX prefix sweep, thecubicle.com/products/shengshou* (474 distinct URLs,
+  2019-2026, re-run fresh this session as `npm run wayback -- prefix
+  https://www.thecubicle.com/products/shengshou --limit 2000`):** grepped for every target
+  model's slug family. Confirms exactly ONE 3x3 product path each for shengshou-3x3,
+  shengshou-fangyuan-v2-m, shengshou-gem-3x3, shengshou-big-legend-3x3-7-0cm, shengshou-mr-m-3x3,
+  shengshou-mr-m-s-3x3, shengshou-mr-m-v2-3x3, shengshou-pearl-3x3, shengshou-rainbow-3x3,
+  shengshou-tank-3x3, shengshou-wind-3x3, shengshou-yufeng-3x3-m-magnetic-core-magelev,
+  shengshou-yufeng-v2-3x3-m. No DIY, unstickered, size, magnet, UV, frosted, MagLev, ball-core
+  or anniversary-named sibling slug exists for any of these 13 (a targeted grep for
+  "diy|lite|uv|frosted|maglev|ball.?core|anniversary" across the full 474-URL list returns only
+  unrelated products: shengshou-elite-kilominx(-v2) and shengshou-metal-cube-3x3, neither a 3x3
+  sibling of any target). shengshou-mr-m's numerous other-puzzle-type siblings
+  (2x2/4x4/5x5/6x6/7x7/megaminx/pyraminx/square-0/1/2) are cross-category products, not 3x3
+  configurations. shengshou-fangyuan's own gift-box sibling (shengshou-fangyuan-3x3-gift-box)
+  belongs to shengshou-fangyuan-original (already a separate, multi-variant model, out of this
+  lane's scope) — no equivalent gift-box slug exists for shengshou-fangyuan-v2-m specifically.
+
+  **Full unscoped CDX prefix sweep, speedcubeshop.com/products/shengshou* (774 distinct URLs,
+  run fresh this session — the first full unscoped run of this prefix at this retailer; the
+  existing speedcubeshop-shengshou-products-prefix-2026 explicitly recorded that this could not
+  be completed at that session's rate limit and used narrower sub-prefixes instead):** grepped
+  for the same 13 target slug families plus "shengshou-legend" broadly. Findings:
+  shengshou-fangyuan-v2-m-3x3 (single capture, 2019-08-25, corroborates existence only, no new
+  axis); shengshou-pearl-3x3 (single capture, 2019-10-15, corroborates existence only);
+  shengshou-wind-3x3x3 and shengshou-wind-5x5x5 (2015-2016 only, pre-dating this retailer's
+  modern catalogue, no new axis); shengshou-legend-plus-big-3x3-18cm (2025-07-12) — a THIRD,
+  much larger (180mm/920g) ShengShou Legend-line product with no connection stated to either
+  existing Legend model; preserved separately as
+  speedcubeshop-shengshou-legend-plus-big-18cm-2025 and reported as a model-layer escalation
+  candidate, NOT a variant of shengshou-legend-big (see research/qc/shengshou-depth-lane-i.md).
+  No shengshou-gem, shengshou-tank, shengshou-big-legend (the archive's 7.0cm model specifically —
+  distinct from the newly-found 18cm product above), shengshou-3x3 (bare/original), or
+  shengshou-mr-m-3x3/mr-m-s-3x3/mr-m-v2-3x3 capture exists at this retailer at all — a genuine
+  catalogue absence (SpeedCubeShop never stocked these specific budget SKUs under this brand
+  prefix), not evidence of a missed configuration for products it does carry.
+
+  **Full CDX prefix sweep, cubelelo.com/products/shengshou* (47 distinct URLs, re-run fresh this
+  session against the RAW url list rather than cubelelo-shengshou-products-prefix-2026's prose
+  summary):** no capture at all for any of the 13 target slugs (fangyuan, gem, tank, wind, pearl,
+  big-legend, bare 3x3, mr-m-3x3/s/v2, yufeng-3x3-m, crazy-3x3) or their generation siblings.
+  Cubelelo's ShengShou catalogue at this prefix is limited to base Legend (2x2/3x3/4x4/5x5,
+  "-stickerless" suffix, already the shengshou-legend-original model, out of this lane's scope),
+  cross-category Mr. M (6x6/7x7 only, not 3x3), Gem Pyraminx (not 3x3), and various shape mods /
+  big cubes / twisty puzzles unrelated to any of the 13 targets. Genuine catalogue absence, not a
+  missed-configuration signal.
+preservation_note: "Live Shopify JSON responses saved locally this session (not committed —
+  no asset-storage path in this lane's write scope); each is independently re-fetchable via the
+  exact URL pattern https://www.thecubicle.com/products/<slug>.json. CDX prefix outputs are
+  reproducible via `npm run wayback -- prefix <url> --limit 2000` (TheCubicle, 474 URLs),
+  `--limit 2000` (SpeedCubeShop, 774 URLs) and `--limit 500` (Cubelelo, 47 URLs) exactly as run
+  this session."
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure (live Shopify product JSON + CDX historical
+  enumeration), independently re-run this session across all three of this manufacturer's
+  established retailer channels. Sufficient to establish, at `probable`, that none of the 13
+  target models carries an undocumented magnet, coating, size, stickered/DIY, or named-edition
+  configuration beyond what the archive already records, and that five of the 13 carry only a
+  colour-only split correctly excluded under the archive's colourway-only policy. Does NOT
+  establish a release date for anything (all "Added:"/crawl-timestamp signals are circulation
+  bounds only). Does NOT rule out a configuration sold through a channel outside these three
+  retailers (e.g. AliExpress, 1688/Taobao, or a now-dead ShengShou first-party storefront) —
+  absence at these three retailers is the strongest evidence this lane could obtain given
+  ShengShou's dead official domain, not proof of absence everywhere.
+status: sourced
