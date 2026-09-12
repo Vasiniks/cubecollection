@@ -3052,6 +3052,26 @@ issues:
       was only caught by inspecting what the new matches actually matched — the discipline this
       archive keeps having to relearn. A probe's hit count is worthless until you read its hits,
       and that applies just as hard when the count moves in the direction you wanted.
+
+      2026-09-12 — TAXONOMY STRESS TEST, clean. Three probes returned real zeros: no two of the
+      269 models reduce to the same normalised name (so transliteration collisions, the risk with
+      Chinese brand names in Latin script, do not occur); no model's NAME contains a different
+      manufacturer's name or alias, which is how sub-brand confusion surfaces; and no model sits
+      in a family belonging to another manufacturer.
+
+      A FOURTH PROBE WAS DISCARDED AT 160 OF 160 FALSE. "Two model names within one manufacturer
+      differing by two characters or fewer" describes this domain's naming convention rather than
+      a collision — GAN12/GAN13/GAN14, Tornado V1/V2/V3, MF3RS/MF3RS2/MF3RS3, Warrior S/W/M. Same
+      lesson as the specification sweep an hour earlier: a DIFFERENCE is not a DEFECT, and a
+      useful probe has to look for an impossible relationship rather than a small one.
+
+      ONE PAIR INSIDE THAT NOISE DESERVED CHECKING AND WAS CHECKED. `qiyi-mp-original` against
+      `qiyi-m-pro-standard` has the shape of a genuine duplicate, since MP is a plausible
+      abbreviation of M Pro and a duplicate inside a frozen 269-model inventory would be serious.
+      They are two products: QiYi MP is an October 2021 flagship at 56mm that the wiki says
+      resembles the X-Man Tornado V2; QiYi M Pro is a mid-2023 BUDGET magnetic 3x3 at 55mm.
+      Different year, positioning, size and family, and the same source distinguishes them in its
+      own text.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

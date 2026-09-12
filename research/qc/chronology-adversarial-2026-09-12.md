@@ -104,3 +104,44 @@ least one of its own variants.
 Both discarded probes failed in the same direction: they treated a DIFFERENCE as a DEFECT. In a
 model/variant archive the difference is usually the point. A coherence check has to ask what
 combination is IMPOSSIBLE, not what combination is unequal.
+
+---
+
+# Taxonomy stress test — 2026-09-12 (same lane, third sweep)
+
+```
+SCOPE: duplicate models, naming and transliteration collisions, manufacturer/sub-brand confusion
+RESULT: no defects. Three probes clean; a fourth discarded as meaningless in this domain.
+```
+
+## Clean, and worth stating as numbers
+
+- **Normalised model-name collisions: 0.** No two of the 269 models reduce to the same
+  alphanumeric string. Transliteration collisions — the risk with Chinese brand names rendered
+  into Latin script — do not occur.
+- **Models whose NAME names a different manufacturer: 0.** The probe expanded every
+  manufacturer's name and aliases and looked for one brand's name inside another brand's model
+  name, which is how sub-brand confusion shows up. Nothing, related or unrelated.
+- **Model/family manufacturer mismatch: 0.** No model sits in a family belonging to a different
+  manufacturer.
+
+## The discarded probe, and why its 160 hits mean nothing
+
+"Two model names within one manufacturer differing by two characters or fewer" returned 160
+pairs. Every one is a false positive BY CONSTRUCTION, because that is exactly how this domain
+names things: GAN12/GAN13/GAN14, Tornado V1/V2/V3, GuHong V2/V3, MF3RS/MF3RS2/MF3RS3, Warrior
+S/W/M. A near-identical name inside one line is the naming convention, not a collision.
+
+The lesson is the same one the specification sweep learned an hour earlier: a difference is not
+a defect. A useful taxonomy probe has to look for an IMPOSSIBLE relationship, not a small one.
+
+## The one pair that deserved checking, and its answer
+
+`qiyi-mp-original` ("QiYi MP") against `qiyi-m-pro-standard` ("QiYi M Pro") is the shape of a
+real duplicate: MP is a plausible abbreviation of M Pro, and a duplicate model inside a frozen
+269-model inventory would be a serious finding.
+
+They are two products. QiYi MP is an **October 2021 flagship at 56mm**, described by the wiki as
+bearing "a striking resemblance to the X-Man Tornado V2". QiYi M Pro is a **mid-2023 budget
+magnetic 3x3 at 55mm**. Different year, different positioning, different size, different family,
+and the same source distinguishes them in its own text. Correctly separate.
