@@ -5,8 +5,8 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  322c3f5
-DATE:  2026-09-09
+HEAD:  ad0766c
+DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
                    find data/$d -name '*.yml' | wc -l; done)
@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      488
-sources:       536
+sources:       539
 
 VALIDATION
 npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
@@ -22,7 +22,7 @@ npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is
                                  citations where two captures ARE the claim
                          11 r18  genuinely out-of-range models (minis, oversized) — correct
                           4 r40  model-predates-family conflicts — P3-D2, needs human decision
-                          2 r41  gan-356-i, monster-go-352-m — deliberately NOT backfilled
+                          0 r41  P4-5 CLOSED — all 11 baselines searched, none backfilled
                        rules 25, 49 closed; rule 41 11 -> 2. Advisory total 27 -> 27.
                        now includes `npm run escalations`
 npm run audit:         advisory only, 9 sweeps
@@ -73,14 +73,27 @@ ALSO DONE THIS WINDOW
     decision rather than an unverified-leads issue.
   scripts/ledger-append.mjs — written after three updates misfiled into counterevidence.
 
+THIRD WINDOW (2026-09-11)
+  P4-10  Ziina first-party sweep RUN and EMPTY -> admission NOT justified (outcomes 4+5).
+         Alibaba subdomains return 200 for ANY name (control-tested) — not evidence.
+         `Supplier_REX` is who the RETAILER BUYS FROM, not who makes it (LeFun proves it:
+         established manufacturer, Supplier_Wells). Untried: packaging photography,
+         Chinese-language search, trademark registries, 1688/Taobao.
+  P4-5   CLOSED. rule 41 = 0. Last two closed on GAN FIRST-PARTY storefront sweeps.
+         Lesson recorded: model EXISTENCE and model SPECS have different evidence bars —
+         monster-go-352-m's specs were already `confirmed`; only the VARIANT-layer
+         assessment was missing.
+  P4-13  Not a schema gap. data/events/ already existed + rule 2 already enforces the
+         link as a BLOCKING error. Created the missing event row; all 3 commemorates
+         links resolve. Jelly LE half reclassified Type E (which of 2 generations).
+  P4-15  CLOSED. Kirin/Kylin are DISTINCT lines (both spellings are separate paths at
+         two retailers) — merging would have destroyed a real distinction. Little Magic
+         V3 raised uncertain -> probable.
+
 NEXT ACTION
-  1. Ziina "who makes it" — blocks admission. Needs FIRST-PARTY or specialist evidence,
-     not another retailer. SpeedCubeShop says "Ziina Star", TheCubicle says "Ziina"; all
-     13 SpeedCubeShop listings are UV-printed, so the ONLY evidence of a base Ziina cube
-     anywhere is one TheCubicle listing.
-  2. P4-5 remainder: gan-356-i and monster-go-352-m. The latter needs GAN's OWN site —
-     TheCubicle never stocked a monstergo-352 path. Do NOT backfill either.
-  3. P4-12..P4-16 newly filed and untouched — boundary / schema / naming / scope-class.
+  1. P4-12 (six model/variant boundary questions), P4-14 (three evidence weaknesses),
+     P4-16 (reference_only's second undocumented meaning) — all untouched.
+  2. Then archive-wide adversarial QC per the phase plan.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming
