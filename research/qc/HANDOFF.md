@@ -18,11 +18,14 @@ sources:       576
 events:        4
 
 VALIDATION
-npm run check:         0 errors, 26 advisory — EVERY ONE EXPLAINED:
+npm run check:         0 errors, 28 advisory — EVERY ONE EXPLAINED:
+                        14 r18  genuine minis and oversized cubes. 12 were pre-existing; TWO ARE
+                                NEW AND CORRECT — qiyi-qimeng-plus 262g (a 9cm cube) and
+                                qiyi-warrior-plus 981g (18.8cm, "use it as furniture"). Both
+                                sizes recorded from the same verified table so a reader meeting
+                                the mass sees the dimension beside it.
                         10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
                                 citations where two captures ARE the claim
-                        10 r18  genuine minis and oversized cubes — the 11th was a real defect
-                                and was fixed (see below)
                          4 r40  model-predates-family — P3-D2, needs human decision
                          2 r27  Rubik's Phantom/Impossible `core` + `not_legal`; reclassifying
                                 is a frozen-taxonomy call, escalated under P4-12
