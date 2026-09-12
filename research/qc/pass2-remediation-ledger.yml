@@ -2148,6 +2148,49 @@ issues:
       (Chinese manufacturers commonly print the maker on the box), Chinese-language search for a
       native brand name, trademark registries, and 1688/Taobao supplier listings. This sweep was
       English-language and Western-retailer-centric, which is itself the P4-8 bias pattern.
+
+      2026-09-12 — SECOND SWEEP, RUN ON THE AVENUES THE FIRST ONE LISTED AS UNTRIED. The
+      admission question is UNCHANGED and still unresolved, but three things are now known that
+      were not, and the reason the first sweep failed is now understood rather than assumed.
+      Preserved as ziina-star-brand-form-sweep-2026-09.
+
+      (1) THE ARCHIVE HAD THE WRONG BRAND STRING. SpeedCubeShop's Shopify JSON gives
+      `"vendor": "Ziina Star"`, two words, and fronts a brand collection headed "Ziina Star (34)".
+      A Chinese-domain retailer, cubein.cn, carries a 13-product "Ziina Star" collection. The
+      first sweep searched for "Ziina".
+
+      (2) AND THE SLUGS DO NOT CARRY THE BRAND AT ALL. SpeedCubeShop's Ziina Star paths are
+      `cheese-3x3-uv-printed`, `calendar-3x3-v3-uv-printed`, `world-map-3x3-3d-uv-printed`,
+      `1x1x2`. A keyword or prefix sweep for "ziina" at that retailer returns none of them. This
+      is ledger P26-3's slug-form blindness on a third brand, and it explains the first sweep's
+      empty Western-retailer pass without appealing to absence.
+
+      (3) TWO COMMUNITY ORIGIN CLAIMS EXIST AND THEY CONTRADICT EACH OTHER, which is why this is
+      progress and not an answer. SpeedSolving thread 94339: one user reports opening both the
+      SCS Pro and the Ziina Star 3x3 and finding them "the exact same"; another calls the Ziina
+      Star 3x3 "a blatant knockoff of the Meilong 3M MADE BY A SEPARATE COMPANY". The first
+      implies an OEM rebrand, which puts Ziina at the VARIANT layer under MoYu. The second
+      implies a separate maker copying a MoYu design, which makes Ziina a manufacturer. Those are
+      exactly the two hypotheses this issue is stuck between, and the thread supports both.
+
+      ONE SOLID FIRST-PARTY STATEMENT CAME OUT OF IT, about a different product, and it is worth
+      keeping for the house-brand work: SpeedCubeShop staff state "We work with MoYu and use
+      their MeiLong cube... we receive the cube in pieces, assemble them in the USA and
+      pre-lubricate them." That establishes the SCS Pro's origin. It says nothing about Ziina.
+
+      A WEAK DIMENSIONAL SIGNAL, recorded as a lead only: TheCubicle's Ziina Space Magnetic gives
+      56.0mm/68.0g while this archive records the MFJS MeiLong at 55.5mm/62g — no match — yet
+      SpeedCubeShop's Ziina Star Cheese gives 55.5mm, which matches. If that holds it would mean
+      "Ziina" and "Ziina Star" are not one mould. Two rounded retailer figures are not a mould
+      comparison and nothing is concluded from it.
+
+      STILL UNRESOLVED, AND MOVING ON per the run's own instruction not to let one manufacturer
+      identity consume a session. THE STRONGEST REMAINING AVENUE IS NARROWER THAN BEFORE:
+      packaging photography. SpeedCubeShop's product images show a box; Chinese manufacturers
+      commonly print the maker on it. That needs the image itself read, which this pass could not
+      do. Trademark registries returned nothing for "Ziina Star"; cubein.cn carries no ICP filing,
+      no Chinese-character brand name and no company information, so it adds a market and not an
+      identity. 1688/Taobao remain untried.
     counterevidence: >-
       Ziina's catalogue is dominated by printed novelty themes, and the archive's scope rules
       exclude novelties while admitting printed EDITIONS of real cubes - the LeFun precedent

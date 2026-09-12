@@ -1,0 +1,83 @@
+# source: ziina-star-brand-form-sweep-2026-09
+# Created 2026-09-12. A SECOND Ziina sweep, deliberately run on the avenues the first one listed
+# as untried. It does NOT resolve who manufactures Ziina. It finds a brand form the archive did
+# not know, explains why the first sweep could not have found it, and narrows what would settle
+# the question.
+id: ziina-star-brand-form-sweep-2026-09
+entity: source
+kind: retailer
+title: "Ziina Star — brand-form sweep and origin claims (partial negative result)"
+publisher: "SpeedCubeShop, CubeIn, SpeedSolving"
+url: "https://speedcubeshop.com/products/cheese-3x3-uv-printed.json"
+preservation_method: excerpt
+excerpt: |-
+  THE ARCHIVE HAD THE WRONG BRAND STRING. `ziina-first-party-sweep-2026-09` searched for
+  "Ziina". SpeedCubeShop's Shopify product JSON for its Ziina products carries
+  `"vendor": "Ziina Star"` — a two-word brand — and the storefront presents a dedicated brand
+  collection headed "Ziina Star (34)". A second retailer on a Chinese domain,
+  cubein.cn/collections/ziina-star, carries a "Ziina Star" collection of 13 products.
+
+  AND THE SLUGS DO NOT CONTAIN THE BRAND AT ALL. SpeedCubeShop's Ziina Star product paths are
+  `cheese-3x3-uv-printed`, `calendar-3x3-v3-uv-printed`, `world-map-3x3-v3-uv-printed`,
+  `world-map-3x3-3d-uv-printed`, `1x1x2`, `1x1x4`. A prefix or keyword sweep for "ziina" at this
+  retailer returns none of them. This is ledger P26-3's slug-form blindness, now demonstrated on
+  a third brand, and it is why the first sweep's Western-retailer pass came back empty here.
+
+  Verbatim from SpeedCubeShop's product JSON for cheese-3x3-uv-printed, fetched 2026-09-12:
+  "title": "Ziina Star Cheese 3x3 (UV Printed)", "vendor": "Ziina Star", "product_type": "3x3".
+  Its page gives "Overall size: 55.5 mm / 2.16 in per side" and a stickerless plastic.
+
+  TWO COMMUNITY ORIGIN CLAIMS EXIST AND THEY CONTRADICT EACH OTHER. SpeedSolving thread 94339,
+  "SCS Pro speed cube the same as zinna star 3x3???", February 2025:
+    - Chicken-Cuber, 2025-02-25: "When I was playing around with my cubes I noticed that these to
+      cube feel and look identical and then I opened it up and sure enough they where the exact
+      same" — asserting the Ziina Star 3x3 and the SCS Pro are one product.
+    - Bingus Ringus McDingus, 2025-02-25: "The Ziina Star 3x3 is a blatant knockoff of the Meilong
+      3M MADE BY A SEPARATE COMPANY" — asserting the opposite origin.
+  The first implies Ziina is an OEM REBRAND of a MoYu product and therefore belongs at the
+  variant layer under MoYu. The second implies Ziina is a SEPARATE MAKER copying a MoYu design,
+  and therefore a manufacturer in its own right. These are the two live hypotheses in ledger
+  P4-10, and this thread supports both and settles neither.
+
+  ONE FIRST-PARTY STATEMENT IN THE SAME THREAD IS SOLID AND IS ABOUT A DIFFERENT PRODUCT.
+  camcuber, 2025-03-04, posting as SpeedCubeShop: "We work with MoYu and use their MeiLong cube.
+  The primary difference is that we receive the cube in pieces, assemble them in the USA and
+  pre-lubricate them which helps maintain a better quality control." That establishes the SCS Pro
+  as a MoYu MeiLong assembled by the retailer. It says nothing about Ziina.
+
+  A WEAK DIMENSIONAL SIGNAL, recorded as a lead and not as evidence. TheCubicle's Ziina Space
+  Magnetic 3x3 gives 56.0mm and a 68.0g item weight; this archive records the MFJS MeiLong 3x3
+  and V2 at 55.5mm and 62g. Those do not match. SpeedCubeShop's Ziina Star Cheese gives 55.5mm,
+  which does. If that holds up it would mean "Ziina" and "Ziina Star" are not one mould, which
+  would matter — but retailer dimension fields are rounded and self-reported, and two figures are
+  not a mould comparison.
+preservation_note: >-
+  Fetched 2026-09-12: SpeedCubeShop's product JSON directly, and the SpeedSolving thread and
+  cubein.cn collection page via retrieval. The JSON `vendor` field is the load-bearing item and
+  was read from the raw response, not from rendered page text.
+  WHAT WAS CHECKED AND STILL CAME BACK EMPTY: cubein.cn shows no ICP filing, no Chinese-character
+  brand name and no company information in its footer, so the Chinese-domain retailer adds a
+  market but not an identity. No trademark record for "Ziina Star" surfaced. Packaging
+  photography was NOT attempted — the SpeedCubeShop page shows a box in one product image, and
+  reading a maker's name off it would need the image itself, which is the strongest remaining
+  avenue and is left for a pass that can do it.
+  ziina.com REMAINS A UAE PAYMENTS COMPANY and is not cited here, as the first sweep records.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  MIXED TIERS BY DESIGN; read each claim against its own source.
+  Tier 2 (retailer, first-party for its own catalogue): the "Ziina Star" vendor string, the
+  34-product and 13-product collections, the slug forms, and the stated sizes.
+  Tier 3 (forum): both origin claims, which conflict, and neither of which offers evidence beyond
+  one user's disassembly.
+  Tier 3 but first-party for its subject: camcuber's statement about the SCS Pro, which is a
+  retailer describing its own product and is good evidence FOR THE SCS PRO ONLY.
+  ESTABLISHES: that the brand is presented as "Ziina Star" by at least two retailers; that the
+  archive's earlier keyword sweep could not have found those listings; and that the community
+  holds two incompatible beliefs about the brand's origin.
+  DOES NOT ESTABLISH: who manufactures Ziina or Ziina Star; whether "Ziina" and "Ziina Star" are
+  one brand; or whether either is an OEM rebrand. P4-10's admission question is UNCHANGED.
+status: sourced
