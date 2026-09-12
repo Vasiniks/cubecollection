@@ -1,0 +1,73 @@
+# source: ziina-secondary-avenues-sweep-2026-09
+# Created 2026-09-12 for P4-10, Lane A (second attempt). Records the remaining untried avenues
+# from the task brief (Chinese-language native-name search, 1688/Taobao, specialist databases)
+# after packaging photography was worked. A negative and partial result, preserved so the next
+# pass does not repeat it. No manufacturer, family or model was created from this record.
+id: ziina-secondary-avenues-sweep-2026-09
+entity: source
+kind: review
+tier: 4
+title: "Ziina / Ziina Star — Chinese-language, 1688, and specialist-database sweep (negative/blocked)"
+publisher: "cubecollection archive"
+url: "https://www.twistypuzzles.com/"
+preservation_method: excerpt
+excerpt: |-
+  SWEEP RUN 2026-09-12 for P4-10, covering the task brief's avenues 2-4 after avenue 1
+  (packaging photography) was worked separately (see ziina-star-packaging-photography-2026-09
+  and ziina-cubein-calendar-cube-packaging-2026-09).
+
+  CHINESE-LANGUAGE SEARCH. Queries "Ziina Star 魔方 厂家" (manufacturer) and "Ziina 魔方 1688"
+  surfaced only the same English-language retailer listings this archive already knows
+  (SpeedCubeShop, cubein.cn) plus unrelated 1688/Alibaba category pages for "魔方" in general and
+  the UAE payments company's Wikipedia entry. No native Chinese brand or company name for
+  Ziina/Ziina Star was found by search. This is a search-engine-coverage result, not proof no
+  such name exists.
+
+  TWISTYPUZZLES.COM. A direct fetch of the museum search CGI endpoint returned HTTP 403
+  (blocked, not 404 - recorded as blocked/unverified per the failed-fetch discipline). A
+  site-restricted web search ("site:twistypuzzles.com Ziina") returned only unrelated forum and
+  museum pages (Atlasminx, Zettaminx, Void Dino Cube, YiSen Mixup, etc.) with no Ziina content of
+  any kind - no museum entry, no forum thread. Combined with the earlier sweep's Speedsolving
+  wiki 404s (ziina-first-party-sweep-2026-09) and a fresh site-restricted search here
+  ("site:speedsolving.com wiki Ziina", surfacing only unrelated method/wiki pages and the
+  already-known SpeedSolving forum thread), NEITHER of the two named specialist databases has any
+  Ziina entry reachable by search.
+
+  1688.COM RETRY, STILL BLOCKED. An offer id (2207525125403) present in this scratchpad from
+  earlier in this session was retried twice - once by direct curl, once by WebFetch - and BOTH
+  attempts hit 1688's anti-bot interstitial (a captcha/"punish" redirect page, verbatim script
+  fragment beginning `window._config_ = {"action":"captcha", ...}`). NEITHER attempt reached the
+  actual listing, so IT IS UNKNOWN whether this offer is even Ziina-related - it is recorded as
+  blocked and unverified, not as a lead, and should not be treated as evidence of anything.
+
+  A METHODOLOGY CAVEAT WORTH RECORDING: a general web-search tool's own generated summary, when
+  asked about "Ziina Star speed cube manufacturer OEM", asserted "CubeIn is listed as the
+  manufacturer/distributor for Ziina Star products". THIS IS A SEARCH-SUMMARY INFERENCE, NOT A
+  FOUND FACT - no page in the underlying result set makes that claim, CubeIn (cubein.cn) is a
+  retailer/storefront in this archive's own evidence (see
+  ziina-cubein-calendar-cube-packaging-2026-09, which fetches its product JSON directly), and the
+  claim is REJECTED here rather than propagated. Recorded because it is exactly the kind of
+  plausible-sounding but unsourced claim that could get miscited as evidence if not flagged.
+preservation_note: >-
+  Web searches run 2026-09-12 via the archive's search tool; twistypuzzles CGI endpoint fetched
+  directly by curl (HTTP 403) and by WebFetch (also blocked) on 2026-09-12; the 1688 offer id was
+  retried by both curl and WebFetch on 2026-09-12, both blocked by the same captcha interstitial.
+  All outcomes are recorded as blocked/negative-by-search-coverage, not as proof of absence.
+accessed: "2026-09-12"
+language: en
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 4, self-assigned archive sweep record, admissible only as a record that these avenues were
+  tried and what they returned.
+  ESTABLISHES: that Chinese-language search, the twistypuzzles museum/forum, and the Speedsolving
+  wiki surfaced no Ziina/Ziina Star manufacturer identity as of 2026-09-12; that 1688.com remains
+  inaccessible to this research method (both direct fetch and WebFetch blocked by the same
+  anti-bot mechanism); and that a search tool's own synthesized summary asserted an unsupported
+  "CubeIn = manufacturer" claim that this record explicitly rejects.
+  DOES NOT ESTABLISH: that no Chinese-language identity, 1688/Taobao listing, or specialist
+  database entry exists. Search-engine coverage and anti-bot blocking are not equivalent to
+  absence. The 1688 offer id found earlier in this session's scratchpad remains completely
+  unverified as to subject matter and must not be cited as a Ziina lead by any future pass unless
+  it is actually reached and read.
+status: sourced

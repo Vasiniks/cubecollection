@@ -1,0 +1,73 @@
+# source: ziina-star-packaging-photography-2026-09
+# Created 2026-09-12 for P4-10, Lane A (second attempt). Tests the highest-priority untried
+# avenue named in the task brief: packaging photography, on the theory that a Chinese
+# manufacturer commonly prints its own name on the box even when the retailer only prints the
+# brand. Examines TheCubicle's own product photography for "Ziina Space Magnetic 3x3" at full
+# native resolution, enhanced. No manufacturer, family or model was created from this record.
+id: ziina-star-packaging-photography-2026-09
+entity: source
+kind: retailer
+tier: 3
+title: "Ziina Space Magnetic 3x3 packaging photography — logo and Chinese product-name text (negative for a distinct maker identity)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/ziina-space-magnetic-3x3.json"
+preservation_method: excerpt
+excerpt: |-
+  IMAGE EXAMINED: the sole product image in TheCubicle's own product JSON for
+  ziina-space-magnetic-3x3, src
+  "https://cdn.shopify.com/s/files/1/0035/5205/1273/files/Ziina_20Space_20Magnetic_203x3_8e36d4e8-6efd-43de-9b2b-7482ffcfcd7b.jpg?v=1709317346",
+  alt "Ziina Space Magnetic 3x3 - Stickerless". Native resolution 900x600 (verified by direct
+  decode, not by the width/height Shopify reports in the tag). This is a genuine box-and-cube
+  product shot: a retail box stands at left, the assembled cube at right.
+
+  WHAT THE BOX SHOWS, read directly and by 5x-8x Lanczos-resized crops with contrast/sharpness
+  enhancement of the same source pixels (no external image substituted):
+  - Top-left corner of the box carries a small red rounded-rectangle logo badge with a
+    superscript "TM", containing a stylized red/orange hand-drawn wordmark and a star shape.
+    AT NATIVE RESOLUTION THE BADGE ITSELF IS BELOW THE LEGIBILITY FLOOR: it is roughly 30x30
+    source pixels, and no amount of resampling recovers detail that was never captured -
+    enhancement was attempted and is recorded as unsuccessful, not as absence of content.
+  - Immediately below that badge, in a separate, larger, plain sans-serif line, the box prints
+    "ZIINA STAR" in white-on-blue. This IS legible at native resolution and matches the known
+    brand name exactly - it does not introduce a second identity.
+  - Lower on the box face, Chinese text reads "星际" (xingji, "interstellar") set above the
+    English word "SPACE", and "磁力三阶" (cili sanjie, "magnetic third order [cube]") set below
+    it. Both are descriptive product-name translations paralleling the English name ("Space
+    Magnetic 3x3"), not a company, brand or manufacturer name in Chinese.
+  - No manufacturer name, factory name, address, or ICP/3C regulatory block is visible anywhere
+    on the single face this photograph shows. Retail product photography standardly shows only
+    the front face; back/bottom panels (where Chinese consumer packaging most often carries a
+    manufacturer/factory line) are simply not photographed here.
+
+  WHAT THE ASSEMBLED CUBE ITSELF SHOWS: one visible center cap carries a hand-drawn logo reading
+  "ZIINA STAR" in blue ink with a star flourish - the same brand mark as the box badge, printed
+  directly on the mechanism rather than only on retailer-controlled packaging or web copy. This
+  is stronger than a vendor field because it is physically part of the product as photographed,
+  but it still names only the already-known brand, not a manufacturer.
+preservation_note: >-
+  The source image was re-fetched directly from the URL above on 2026-09-12 (not taken from any
+  cached or unlabeled file), decoded with Pillow to confirm native pixel dimensions (900x600),
+  and cropped/enhanced (Lanczos resample + contrast/sharpness) entirely from those same decoded
+  pixels - no other image or source was substituted at any step. The enhancement is reproducible
+  from the cited URL alone.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 3: retailer product photography, examined directly rather than read from alt text or a
+  spec table. First-party for what a retailer chose to photograph and how the box is printed;
+  NOT first-party for who manufactures the product, since the photograph does not show whichever
+  panel (if any) would carry a factory/manufacturer line.
+  ESTABLISHES: that the packaging's visible branding is a stylized "Ziina Star" wordmark and
+  star logo, reinforced by matching text and by a matching mark on the cube's own center cap;
+  that the box's Chinese text is a product-name translation, not a company name; and that the
+  one small badge element too low-resolution to read carries no legible content beyond what the
+  clear text beside it already gives (the brand name), so packaging photography did not surface
+  a second, distinct manufacturer identity - a negative result on the box's front face only.
+  DOES NOT ESTABLISH: who manufactures the product. Only one face of one box was available for
+  examination; no back panel, bottom flap, or regulatory/factory block was seen, so this is not
+  a complete packaging inspection and does not rule out such text existing on a panel not
+  photographed. A failed read of one badge is not evidence that the badge contains nothing.
+status: sourced

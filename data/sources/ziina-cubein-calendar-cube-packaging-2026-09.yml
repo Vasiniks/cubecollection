@@ -1,0 +1,84 @@
+# source: ziina-cubein-calendar-cube-packaging-2026-09
+# Created 2026-09-12 for P4-10, Lane A (second attempt). Continues the packaging-photography
+# avenue at a second retailer, cubein.cn, whose own product JSON for a Ziina calendar cube
+# includes a photograph the first retailer (TheCubicle) did not have: a side panel of the actual
+# retail box, carrying regulatory markings. No manufacturer, family or model was created from
+# this record.
+id: ziina-cubein-calendar-cube-packaging-2026-09
+entity: source
+kind: retailer
+tier: 3
+title: "Ziina Heat Printed Calendar Cube — cubein.cn packaging photograph shows a GENERIC, unbranded box"
+publisher: "cubein.cn (Shopify storefront)"
+url: "https://cubein.cn/products/ziina-calendar-cube.json"
+preservation_method: excerpt
+excerpt: |-
+  PRODUCT: cubein.cn's own listing "Ziina Heat Printed Calendar Cube", vendor field "Ziina Star",
+  body_html reading (verbatim) "Brand Name: Ziina<br>Item name: Calendar Cube UV printed<br>
+  size: 5.6cm, 6.2cm<br>weight: ~90g, 120g<br>Retail packing may vary". Note the retailer's OWN
+  body copy calls it "Ziina" while the same retailer's structured vendor field says "Ziina Star"
+  - the two-form ambiguity this archive already tracks, now seen inside a SINGLE listing rather
+  than only across retailers.
+
+  NINE IMAGES IN THE PRODUCT JSON, at native 800x800 (verified by decode). Eight show the
+  assembled cube (CubeIn-watermarked), unbranded plain-colour center caps, no logo of any kind on
+  the mechanism - UNLIKE the TheCubicle "Space Magnetic" base cube, whose center cap carries a
+  hand-drawn "Ziina Star" star logo (see ziina-star-packaging-photography-2026-09). This is
+  consistent with the archive's existing understanding that the base speedcube carries the brand
+  mark while printed-theme variants do not.
+
+  THE NINTH IMAGE IS THE PACKAGING SHOT, AND IT IS UNEXPECTED. It shows a retail box next to the
+  finished cube, and the box carries NO "Ziina" OR "Ziina Star" text or logo anywhere on the
+  visible front or side. The front reads only "SPEED CUBE" in a plain red-to-blue gradient
+  design over a diamond pattern - a generic, undifferentiated toy-box style, not the
+  brand-specific "Ziina Star ... Space" box design photographed at TheCubicle.
+  The visible SIDE PANEL carries a standard small-parts/regulatory label: a CE mark, a "UKCA"
+  mark, a choking-hazard warning triangle reading "WARNING: CHOKING HAZARD - Small parts, Not
+  for children under 3 years", a "PRECAUTIONS" block, a recycling arrows symbol, a green oval
+  icon (a generic recycling/compliance mark, not a specific company logo), matching Arabic-script
+  text alongside each English block (aimed at a Middle Eastern export market), and "MADE IN
+  CHINA" printed vertically along the box's spine.
+  NO COMPANY NAME, FACTORY NAME, OR ADDRESS IS LEGIBLE ANYWHERE ON THIS PANEL, even after 6-10x
+  Lanczos enhancement with contrast/sharpness adjustment. Two small icon+text blocks at the top
+  of the label (rounded-rectangle outlines with tiny interior text) remain unreadable at native
+  resolution - a genuine legibility floor, not a content gap being asserted.
+
+  WHY THIS MATTERS BEYOND "still no name found": this is the first evidence in the whole P4-10
+  investigation that a "Ziina"-vendor-tagged product ships in packaging carrying NO Ziina
+  branding at all. Two readings are both consistent with this one data point and neither is
+  established: (a) cubein.cn repackages a stock/generic "Speed Cube" box for a themed variant
+  while TheCubicle's base-cube box is the brand's own dedicated tooling; or (b) "Ziina"/"Ziina
+  Star" is a storefront-level label applied over an anonymous, genuinely unbranded factory
+  product, which would tilt toward the OEM/private-label hypothesis (outcome 2) rather than an
+  independent manufacturer (outcome 1). This record does not adjudicate between them - it only
+  preserves the observation, which is new and was not visible from either retailer's structured
+  fields.
+preservation_note: >-
+  Product JSON fetched directly from the URL above on 2026-09-12. The ninth image
+  (https://cdn.shopify.com/s/files/1/0620/5053/3559/files/IMG_20251201_154302_a3a3cec6-2e9d-4e68-91bf-76f1a5d425d5.jpg?v=1764647001,
+  native 800x800, decode-verified) was downloaded directly and cropped/enhanced (Lanczos resample
+  + contrast/sharpness, 4-10x) entirely from those decoded pixels; no other image was substituted.
+  Reproducible from the cited product JSON URL alone.
+accessed: "2026-09-12"
+language: en
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 3: retailer product photography, examined directly. First-party for what cubein.cn
+  actually photographed and shipped in one case; NOT first-party for who manufactures the
+  product - a generic regulatory label of this kind is standard across countless unrelated
+  Chinese toy exports and identifies a compliance regime, not a company.
+  ESTABLISHES: that at least one cubein.cn "Ziina"-vendor product ships in a box with no Ziina
+  branding on the visible front/side, generic CE/UKCA/recycling marks, a choking-hazard warning,
+  Arabic-script export text, and "MADE IN CHINA" - and that no manufacturer name or address is
+  legible on the panel photographed.
+  DOES NOT ESTABLISH: who manufactures it.
+  THE LISTING ITSELF SAYS "Retail packing may vary", which is the retailer stating outright
+  that the box photographed may not be the box shipped - the strongest single caution against
+  reading anything about manufacture from this image, and it comes from the same body_html
+  quoted in the excerpt above.
+  A generic box does not prove OEM sourcing by itself -
+  retailers routinely repackage - and the illegible top-left icon blocks are an unresolved gap,
+  not a confirmed absence of text. Two small label elements remain unread at this photo's native
+  resolution; a higher-resolution or physical-copy inspection could still recover them.
+status: sourced

@@ -2622,6 +2622,56 @@ issues:
       do. Trademark registries returned nothing for "Ziina Star"; cubein.cn carries no ICP filing,
       no Chinese-character brand name and no company information, so it adds a market and not an
       identity. 1688/Taobao remain untried.
+
+      2026-09-12 — SECOND LANE, ALL FIVE UNTRIED AVENUES WORKED, OUTCOME STILL 4 (UNRESOLVED).
+      Who manufactures Ziina is not established and the admission threshold is not met. Three
+      sources preserved: ziina-star-packaging-photography-2026-09,
+      ziina-cubein-calendar-cube-packaging-2026-09, ziina-secondary-avenues-sweep-2026-09. Report
+      at research/qc/p4-10-ziina-lane-a.md.
+
+      PACKAGING PHOTOGRAPHY, the avenue flagged as most promising, WAS TRIED AND DID NOT RESOLVE
+      IT. TheCubicle's own box photograph was examined at native resolution and enhanced (Lanczos
+      resample, 4-10x): the corner logo badge is below the legibility floor even enhanced, and
+      every piece of legible text reads "ZIINA STAR" — the brand already known, not a second
+      identity. The Chinese text on the box, 星际 / 磁力三阶, is a descriptive product name
+      ("interstellar" / "magnetic third-order"), not a company name. No manufacturer or factory
+      block was found on any panel photographed.
+
+      ONE GENUINELY NEW OBSERVATION, AND IT CUTS BOTH WAYS. cubein.cn ships a "Ziina"-vendor
+      product — its Heat Printed Calendar Cube — in a COMPLETELY UNBRANDED box: the front reads
+      only "SPEED CUBE" in a generic gradient design, with no Ziina text or logo anywhere on the
+      visible faces, only boilerplate CE/UKCA/recycling/choking-hazard marks, Arabic export text
+      and "MADE IN CHINA". That is the first evidence of a Ziina-tagged product shipping with no
+      Ziina branding at all, which reads more like a distributor label over sourced stock than a
+      manufacturer's controlled brand. IT IS NOT ADJUDICATED EITHER WAY, and the record now
+      names the strongest caution against it: the listing's own body copy says "Retail packing
+      may vary", so the retailer is stating outright that the photographed box may not be the box
+      shipped.
+
+      A SECOND-ORDER FINDING worth keeping: the same cubein.cn listing calls the product "Ziina"
+      in its body copy while its structured vendor field says "Ziina Star". The two-form
+      ambiguity this issue has been tracking ACROSS retailers now appears INSIDE a single
+      listing.
+
+      VERIFIED INDEPENDENTLY BY THE MAIN SESSION before merging: the cubein.cn product JSON was
+      re-fetched and every checkable claim matched — title, vendor "Ziina Star", body "Brand
+      Name: Ziina", nine images all 800x800. The image CONTENT rests on the lane's own reading
+      and is recorded as such.
+
+      REMAINING AVENUES, now narrower. 1688.com is inaccessible to this method (anti-bot captcha
+      via both curl and retrieval). Chinese-language search and both named specialist databases
+      returned negative. Most box faces across the 50+ Ziina SKUs remain unphotographed by any
+      retailer, so packaging is not exhausted — only the two boxes reachable today are.
+
+      WHAT WOULD RESOLVE IT: for manufacturer confirmation, a first-party Ziina presence or
+      company registration naming an entity, or a legible factory block on a not-yet-photographed
+      box. For OEM confirmation, a mould-level physical match, or a first-party statement from a
+      named manufacturer comparable to the SpeedCubeShop/MoYu statement already on file but
+      naming Ziina.
+
+      THE LANE ALSO REJECTED A FABRICATION, which is worth recording: a web-search tool returned
+      a synthesized claim that "CubeIn is the manufacturer". It is unsupported by any cited page
+      and the lane flagged and refused it explicitly so it cannot be miscited downstream.
     counterevidence: >-
       Ziina's catalogue is dominated by printed novelty themes, and the archive's scope rules
       exclude novelties while admitting printed EDITIONS of real cubes - the LeFun precedent
