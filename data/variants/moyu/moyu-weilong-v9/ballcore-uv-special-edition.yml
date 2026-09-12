@@ -1,0 +1,65 @@
+# variant: moyu-weilong-v9--ballcore-uv-special-edition
+# Depth research 2026-09-12, from thecubicle-moyu-prefix-2026. A FIFTH V9 configuration. What
+# distinguishes it from the existing Ballcore variant is the tension system: that one is MagLev,
+# this one is springs.
+id: moyu-weilong-v9--ballcore-uv-special-edition
+entity: variant
+model_id: moyu-weilong-v9
+name: "MoYu WeiLong V9 (Ball-Core UV Special Edition)"
+scope_class: core
+config:
+  core_system: ball_core
+  maglev: none
+  coating: uv
+  materials:
+    plastic: "Light-blue internals, per the retailer's own description, distinguishing this configuration from the other four."
+edition:
+  types: [limited]
+  designation: "Ball-Core UV Special Edition"
+  limited:
+    is_limited: true
+    run_size: null
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wrm-v9-ballcore-uv-se-2023]
+    note: >-
+      The retailer's product title, "MoYu WeiLong WRM V9 3x3 (Ball-Core UV Special Edition)". No
+      MoYu first-party source naming the configuration was located this pass.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wrm-v9-ballcore-uv-se-2023]
+    note: >-
+      `limited` on the retailer's own words — "is a limited-edition cube from MoYu" — which is a
+      statement about the product rather than a title suffix.
+  /edition/limited/run_size:
+    confidence: unknown
+    note: "Searched and not found. The page says limited-edition and gives no number."
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wrm-v9-ballcore-uv-se-2023]
+    note: '"This one features a ball-core with springs (no MagLev)".'
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wrm-v9-ballcore-uv-se-2023]
+    note: >-
+      "(no MagLev)", stated parenthetically and unambiguously. THIS IS THE AXIS THAT MAKES THIS A
+      SEPARATE VARIANT rather than a restatement of moyu-weilong-v9--ballcore, which records
+      `maglev: maglev`. A ball core with springs and a ball core with MagLev are two tension
+      systems, and the source names which one this is.
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wrm-v9-ballcore-uv-se-2023]
+    note: '"UV coating", named in the description as well as the title.'
+  /config/materials/plastic:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wrm-v9-ballcore-uv-se-2023]
+    note: >-
+      "a new light-blue internal color". Recorded because internal colour is how this archive
+      already distinguishes V9 configurations — moyu-weilong-v9--maglev records purple
+      corner/edge stalks for the same reason.
+      ONE FURTHER CLAIM FROM THIS PAGE IS PRESERVED IN THE SOURCE AND DELIBERATELY NOT MAPPED:
+      "no edge-repelling magnets". vocab/magnet-configurations.yml has no term for edge
+      repulsion, which is a MoYu feature name rather than an archive concept, so forcing it into
+      `core_corner` or `core_corner_plus_piece` would assert a layout the source never describes.
