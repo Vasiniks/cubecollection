@@ -2000,6 +2000,61 @@ issues:
       event record and `data/events/` holds none for Rubik's 50th anniversary, which was also
       outside that pass's write lane.
       Both are the same shape: the archive knows something it cannot say.
+      RE-EXAMINED 2026-09-11, AND THE ISSUE'S PREMISE IS WRONG ON BOTH HALVES. Neither is a
+      schema gap. Filing them as one was an artefact of both escalations coming from lanes whose
+      WRITE SCOPE excluded the place the answer lived, which reads identically to a schema that
+      cannot express something.
+      (2) edition.commemorates IS EXPRESSIBLE AND THE MECHANISM ALREADY WORKS. `data/events/`
+      exists, has its own schema (schema/event.schema.json) and holds three records, and TWO
+      variants already populate commemorates with ids that resolve
+      (gan-flagship-16--maglev-max-dual-wr-limited-edition cites two event ids, both resolving;
+      gan-356-air--um-max-park-signature cites one). The escalation said data/events/ "holds none
+      for Rubik's 50th anniversary", which is true and is a MISSING DATA RECORD, not a structural
+      limitation. rubiks-classic-cube--retro already handles it exactly as this archive's own
+      semantics prescribe: `confidence: unknown` with a note saying the relational link is
+      unresolved pending an events record. `unknown` means searched-and-not-found, which is what
+      happened. Nothing is broken.
+      (1) THE JELLY LE IS A VARIANT, NOT AN INEXPRESSIBLE RECORD - and the real blocker is an
+      EVIDENCE gap wearing a schema gap's clothes. The live product page (fetched 2026-09-11)
+      reads "ShengShou Crazy 3x3 (Jelly LE) - limited to 1400 units worldwide!" with the single
+      option "Transparent Stickerless" and tags Manufacturer_ShengShou, limitededition. That is a
+      colourway/material limited edition, and this archive has a model for it to attach to -
+      TWO, in fact, and that is precisely the problem. `model_id` is required and the page states
+      nothing that distinguishes which mechanism generation it is built on (V1 8-piece ring or V2
+      9-piece ring). The escalation read the required field as the obstacle; the obstacle is not
+      knowing the answer.
+      ONE SUGGESTIVE MEASUREMENT, DELIBERATELY NOT ACTED ON: the Jelly LE listing carries a
+      shipping weight of 123g and the archive's source for the V2 records a Gross Weight of
+      124.0g, 1g apart. A Shopify `grams` field is a SHIPPING weight, not the retailer's stated
+      Gross Weight, and the two are not the same measurement - so this is a lead, not evidence,
+      and attaching a limited edition to a model on a 1g coincidence between two different
+      quantities is exactly the inference this archive refuses. Recorded so the next attempt
+      starts from it rather than rediscovering it.
+      WHAT WOULD RESOLVE IT: packaging or listing photography showing the ring piece count, a
+      ShengShou statement, or any retailer stating the generation. Wayback returned HTTP 504
+      throughout this attempt, so the archived captures were NOT checked and remain an open
+      avenue - a failed fetch is not evidence of absence.
+      RECLASSIFICATION: this is not a Type D schema/architecture issue. Half is a missing data
+      record (an events entry), half is a Type E ambiguous-evidence issue about model attachment.
+      Neither justifies widening the schema, which is what the recommendation warned against.
+      HALF RESOLVED 2026-09-11. The commemorates half is closed by creating the missing row, not
+      by touching the schema. data/events/rubiks-cube-50th-anniversary.yml now exists and
+      rubiks-classic-cube--retro links to it at `confirmed` on tier-1 evidence: Rubik's own
+      product page states "Launched to celebrate Rubik's 50th anniversary". All three
+      commemorates links in the archive now resolve, zero dangling.
+      AND THE SCHEMA WAS NEVER THE PROBLEM, which validate.mjs proves rather than my inspection:
+      rule 2 already treats `edition.commemorates` pointing at a non-event as a BLOCKING ERROR
+      (scripts/validate.mjs line 121). The relational integrity this issue said was missing has
+      been enforced the whole time. A lane with data/events/ outside its write scope could not
+      add the row, and "I cannot write there" reads identically to "this cannot be expressed" in
+      a report - that resemblance is the actual lesson here.
+      THE EVENT'S DATE IS DELIBERATELY WEAK. `circa 2024` at year precision, held `uncertain`.
+      The source dates nothing: it says the product was "launched to celebrate" the anniversary
+      and was captured 2024-06-13, which bounds the LAUNCH, not the anniversary. The commonly
+      cited 1974 invention year would place the 50th in 2024 and is consistent, but NO source
+      held by this archive states 1974, so it is noted as consistency and not used as the basis.
+      REMAINING: only the ShengShou Jelly LE half, which is a Type E evidence question about
+      which of two mechanism generations it attaches to - not a schema question.
     recommendation: >-
       Do not widen the schema to admit one record each. Decide first whether `data/events/`
       should exist as an entity at all - if it should, (2) resolves as ordinary data entry; if it

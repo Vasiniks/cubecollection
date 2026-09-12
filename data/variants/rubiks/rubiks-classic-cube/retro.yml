@@ -18,6 +18,7 @@ scope_class: core
 edition:
   types: [commemorative, anniversary]
   designation: "Retro"
+  commemorates: [rubiks-cube-50th-anniversary]
 colorway:
   designation: "Retro"
   scheme: custom
@@ -34,11 +35,14 @@ attestations:
     sources: [rubiks-com-classic-special-editions-2024]
     note: "Rubik's own product page name: 'Rubik's Retro.'"
   /edition/commemorates:
-    confidence: unknown
-    note: "No `event` record for Rubik's 50th anniversary exists in this archive; the fact is
-      recorded in `edition/types` and in this note, but the relational link to an `event`
-      entity is left unresolved pending an events-pass record (outside this session's write
-      lane)."
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "RESOLVED 2026-09-11 (ledger P4-13). This read `unknown` with a note that no event
+      record existed and the link was outside that session's write lane. The event record now
+      exists (data/events/rubiks-cube-50th-anniversary.yml) and the link resolves. The CLAIM was
+      never in doubt: Rubik's own product page says the cube was 'Launched to celebrate Rubik's
+      50th anniversary', which is tier 1 for the commemoration. Only the relational target was
+      missing - a missing row, not the schema gap P4-13 filed it as."
   /colorway/designation:
     confidence: confirmed
     sources: [rubiks-com-classic-special-editions-2024]

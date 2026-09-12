@@ -1,0 +1,45 @@
+# event: rubiks-cube-50th-anniversary
+# Created 2026-09-11 closing half of ledger P4-13. That issue read this as a SCHEMA gap - "the
+# archive knows something it cannot say". It is not: data/events/ exists with a schema and three
+# records, and two variants already resolve commemorates ids against it. What was missing was
+# this record, and it was missing because the lane that found the fact had data/events/ outside
+# its write lane. A missing row is not a structural limitation.
+id: rubiks-cube-50th-anniversary
+entity: event
+name: "Rubik's Cube 50th anniversary"
+kind: anniversary
+date:
+  value: "2024"
+  precision: year
+  qualifier: circa
+notes: |-
+  Commemorated by data/variants/rubiks/rubiks-classic-cube/retro.yml, whose own first-party
+  source states the connection directly: "Launched to celebrate Rubik's 50th anniversary, this
+  special edition Rubik's Cube looks and feels like it came right out of a time capsule!...
+  classic boxy edges, slower turning, stickers, gold side, and special anniversary logo,
+  presented in a retro plastic display case."
+
+  ON THE DATE. `circa 2024` at YEAR precision, and deliberately no finer. The anniversary is
+  Rubik's own framing of an occasion rather than a dated event, and what this archive actually
+  holds is a 2024-06-13 capture of a page announcing a launch "to celebrate" it. A capture date
+  is not an event date - that is a documented artefact class in this archive (ledger P4-7) - so
+  the year is taken from the launch context and qualified, not asserted.
+
+  The commonly cited invention year is 1974, which would place the 50th in 2024 and is
+  consistent with what the page implies. That is NOT the basis for the date here: no source
+  held by this archive states 1974, and reasoning from an uncited fact to a precise date is the
+  inference this archive refuses. The consistency is noted, not relied on.
+status: drafted
+
+attestations:
+  /name:
+    confidence: confirmed
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "Tier 1, Rubik's own product page, which names the anniversary in its own words."
+  /date:
+    confidence: uncertain
+    sources: [rubiks-com-classic-special-editions-2024]
+    note: "The source dates nothing. It says the product was 'launched to celebrate' the
+      anniversary and was captured 2024-06-13, which bounds the LAUNCH, not the anniversary.
+      Held at `uncertain` at year precision. A Rubik's corporate statement or press release
+      naming the anniversary date would settle it and is a cheap follow-up."
