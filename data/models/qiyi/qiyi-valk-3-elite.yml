@@ -16,6 +16,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 55.5
+  weight_g: 76.0
 description: |-
   Per TheCubicle's product page (thecubicle-valk-3-elite-m-product): "The Valk 3 Elite M is the
   long-awaited flagship from the famous Valk line by QiYi MoFangGe... This cube features a brand
@@ -42,6 +43,15 @@ attestations:
   /aliases:
     confidence: probable
     sources: [thecubicle-valk-3-elite-m-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-valk-3-elite-m-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 76.0g". Its "Gross Weight: 272g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 55.5mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12
+      from evidence the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: probable
     sources: [thecubicle-valk-3-elite-m-product]

@@ -16,6 +16,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 55.5
+  weight_g: 82.0
 description: |-
   Per TheCubicle's product page (thecubicle-qiyi-qimeng-v3-3x3-tiled-product): "The QiYi QiMeng
   V3 3x3 (Tiled) is a non-magnetic 3x3 that has great turning. If you're not a fan of magnets
@@ -41,6 +42,15 @@ attestations:
   /aliases:
     confidence: probable
     sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 82.0g". Its "Gross Weight: 90g" on the same
+      table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions field on
+      the same table reads 55.5mm, which matches this model's recorded size and is the cross-check
+      that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12 from evidence
+      the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: probable
     sources: [thecubicle-qiyi-qimeng-v3-3x3-tiled-product, thecubicle-qiyi-mofangge-collection-2025]

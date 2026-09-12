@@ -22,6 +22,7 @@ announced:
   qualifier: circa
 specs:
   size_mm: 56.5
+  weight_g: 84.0
 description: |-
   QiYi's original "Thunderclap" (LeiTing, 雷霆), per the Speedsolving wiki
   (speedsolving-wiki-qiyi-products: "Released Mid 2015. The QiYi Thunderclap was an improved
@@ -60,6 +61,15 @@ attestations:
       ceiling to 'probable' (one tier-2 source, uncontradicted, per the confidence table) while
       stopping short of 'confirmed', which requires either a tier-1 source or two independent
       tier-2 sources and this is one tier-2 plus one tier-3(-overridden) source."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-3x3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 84.0g". Its "Gross Weight: 127g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 56.5mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12
+      from evidence the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: reported
     sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-thunderclap-3x3-product]

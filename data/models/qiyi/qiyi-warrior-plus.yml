@@ -11,6 +11,9 @@ family_id: qiyi-warrior
 manufacturer_id: qiyi
 name: "QiYi Warrior Plus"
 scope_class: reference_only
+specs:
+  size_mm: 188.0
+  weight_g: 981.0
 scope_decided_by: agent-b-qiyi
 scope_decided_on: "2026-09-03"
 generation:
@@ -39,6 +42,27 @@ attestations:
   /generation/basis:
     confidence: reported
     sources: [thecubicle-qiyi-warrior-plus-3x3-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-plus-3x3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Dimensions: 188.0mm" - read as an edge length. Recorded
+      alongside the weight on 2026-09-12 because the two come from the same verified table and a
+      mass with no size cannot be sanity-checked by a reader: the page is titled "QiYi Warrior
+      Plus 3x3 (18.8cm)", so the 188.0mm table figure and the 18.8cm in the product name agree.
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-plus-3x3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 981.0g". Its "Gross Weight: 1200g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 188.0mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. This is an 18.8cm
+      puzzle. The page calls it "a massive 3x3... use it as furniture" and its Dimensions field
+      reads 188.0mm, so 981g is a plausible mass and rule 18 flags it correctly as outside the
+      normal 3x3 range. An impossible-looking number that survives checking is still a real one.
+      Recorded 2026-09-12 from evidence the archive had preserved and cited all along - see audit
+      sweep #14.
   /description:
     confidence: reported
     sources: [thecubicle-qiyi-warrior-plus-3x3-product, thecubicle-qiyi-mofangge-collection-2025]

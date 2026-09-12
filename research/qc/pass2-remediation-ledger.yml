@@ -2462,6 +2462,34 @@ issues:
       sources print Item and Gross side by side, so the source draws the distinction itself —
       the Tornado V2's are 72g against 300g. Weightless models 193 -> 187; the actionable queue
       40 -> 34.
+
+      2026-09-12 — the QiYi half of the sweep #14 queue worked, 18 models, and the guard that
+      finally made it safe was not a text matcher at all. Each candidate source's own
+      "Dimensions" field was compared against the model's already-recorded `size_mm`. That is an
+      INDEPENDENT discriminator: it does not depend on tokenisation, so it is immune to the
+      short-token failure that defeated every title-match attempt.
+
+      It resolved the trap case cleanly. `qiyi-valk-3` cites SEVEN sources carrying an item
+      weight, including the Valk 4 M (142g at 60.0mm) and Valk 5 M (136g at 62.0mm) — a 4x4 and
+      a 5x5, cited quite properly for lineage. Only `thecubicle-valk-3-product` reads 55.5mm,
+      matching the model. Recorded 82.3g. The Valk 3 M page's 85.0g is the magnetic
+      configuration and the Valk 3 Mini's 59.9g at 47.4mm is a different model; both are named
+      in the note so the next reader does not re-derive it.
+
+      Two more multi-candidate models were resolved the same way and their siblings recorded
+      rather than discarded: qiyi-m-pro-standard took 76.0g from the plain page, with the MagLev
+      page's 80.0g named; qiyi-valk-3-power took 87.4g, with the Power M's 94.4g named.
+
+      TWO NEW RULE-18 ADVISORIES ARE EXPECTED AND CORRECT, taking the archive from 26 to 28.
+      qiyi-qimeng-plus is 262g and qiyi-warrior-plus is 981g, and both are genuinely oversized
+      puzzles — 9cm and 18.8cm, stated in their own product titles and matching their Dimensions
+      fields. The 981g figure looked impossible and was checked for exactly that reason; the page
+      calls it "a massive 3x3... use it as furniture". An impossible-looking number that survives
+      checking is still a real one. Their sizes were recorded at the same time, from the same
+      verified table, so a reader meeting a 981g mass can see the 188mm beside it.
+
+      Queue after this batch: weightless models 193 -> 169, sources-with-a-gross-weight 78 -> 55,
+      actionable item weights 40 -> 16.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

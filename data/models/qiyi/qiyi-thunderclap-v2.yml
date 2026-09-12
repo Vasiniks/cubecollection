@@ -18,6 +18,7 @@ announced:
   qualifier: circa
 specs:
   size_mm: 56.0
+  weight_g: 88.5
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi Thunderclap V2 Released
   Mid 2016" (the same page elsewhere notes it was "generally inferior" to V1 in community
@@ -48,6 +49,15 @@ attestations:
     sources: [thecubicle-qiyi-thunderclap-v2-product]
     note: "'the hotly-anticipated successor to the original QiYi Thunderclap' is direct,
       explicit tier-2 succession language."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v2-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 88.5g". Its "Gross Weight: 141g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 56.0mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12
+      from evidence the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: reported
     sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-thunderclap-v2-product]

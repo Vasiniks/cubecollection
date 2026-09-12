@@ -17,6 +17,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 55.0
+  weight_g: 74.0
 description: |-
   Per TheCubicle's product page (thecubicle-qiyi-warrior-m-pro-3x3-product): "The QiYi Warrior M
   Pro 3x3 is an inexpensive magnetic 3x3 with good corner-cutting and decent performance. This
@@ -43,6 +44,15 @@ attestations:
   /specs/size_mm:
     confidence: probable
     sources: [thecubicle-qiyi-warrior-m-pro-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-warrior-m-pro-3x3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 74.0g". Its "Gross Weight: 84g" on the same
+      table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions field on
+      the same table reads 55.0mm, which matches this model's recorded size and is the cross-check
+      that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12 from evidence
+      the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: uncertain
     sources: [thecubicle-qiyi-warrior-m-pro-3x3-product]

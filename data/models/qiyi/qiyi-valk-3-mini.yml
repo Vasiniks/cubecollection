@@ -13,6 +13,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 47.4
+  weight_g: 59.9
 description: |-
   Per TheCubicle's product page (thecubicle-valk-3-mini-product): "The Valk 3 Mini is the
   miniature version of the highly-acclaimed Valk 3... At just 47.4mm across, the Valk 3 Mini
@@ -32,6 +33,15 @@ attestations:
   /specs/size_mm:
     confidence: probable
     sources: [thecubicle-valk-3-mini-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-valk-3-mini-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 59.9g". Its "Gross Weight: 191g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 47.4mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12
+      from evidence the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: probable
     sources: [thecubicle-valk-3-mini-product]

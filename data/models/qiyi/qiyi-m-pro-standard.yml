@@ -18,6 +18,7 @@ announced:
   qualifier: circa
 specs:
   size_mm: 55.0
+  weight_g: 76.0
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "Qiyi M Pro Released mid 2023.
   This was QiYi's budget magnetic 3x3 release... This 3x3 also has multiple versions" — Standard
@@ -48,6 +49,19 @@ attestations:
   /specs/size_mm:
     confidence: probable
     sources: [thecubicle-qiyi-m-pro-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-3x3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 76.0g". Its "Gross Weight: 140g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 55.0mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. The same model also
+      has a MagLev page (thecubicle-qiyi-m-pro-3x3-maglev-product, "Item Weight: 80.0g"). The
+      76.0g figure is taken from the page whose title matches this model exactly; the MagLev
+      figure belongs to that configuration and is left for a variant that records it. Recorded
+      2026-09-12 from evidence the archive had preserved and cited all along - see audit sweep
+      #14.
   /description:
     confidence: probable
     sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-m-pro-3x3-product,

@@ -8,6 +8,8 @@ family_id: qiyi-ms
 manufacturer_id: qiyi
 name: "QiYi MS 3x3"
 scope_class: core
+specs:
+  weight_g: 81.8
 generation:
   label: "MS"
   ordinal: 1
@@ -42,6 +44,14 @@ attestations:
       either source, so this is recorded as manufacturer_declared for the name itself while
       ordinal:1 is this archive's own placement (only one 3x3 generation was found under this
       name)."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-ms-3x3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 81.8g". Its "Gross Weight: 146g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Recorded
+      2026-09-12 from evidence the archive had preserved and cited all along - see audit sweep
+      #14.
   /description:
     confidence: probable
     sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-ms-3x3-product]

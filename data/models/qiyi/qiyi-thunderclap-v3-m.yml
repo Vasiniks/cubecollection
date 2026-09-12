@@ -20,6 +20,7 @@ announced:
   qualifier: circa
 specs:
   size_mm: 56.0
+  weight_g: 92.0
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "Qiyi Thunderclap V3/M Released
   Late 2019." TheCubicle's own product copy (thecubicle-qiyi-thunderclap-v3-m-product) names
@@ -59,6 +60,15 @@ attestations:
       V2 specifically as what it replaces; succession is inferred from the explicit sequential
       numbering (V1 unnumbered, V2, V3), not a direct textual succession statement, so confidence
       is held at `reported` rather than `probable`."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-thunderclap-v3-m-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 92.0g". Its "Gross Weight: 149g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 56.0mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12
+      from evidence the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: reported
     sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-thunderclap-v3-m-product,

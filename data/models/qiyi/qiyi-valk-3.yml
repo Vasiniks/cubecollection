@@ -27,6 +27,7 @@ announced:
   qualifier: exact
 specs:
   size_mm: 55.5
+  weight_g: 82.3
 description: |-
   The base (stickered, non-magnetic) Valk 3 configuration. Per TheCubicle's product page
   (thecubicle-valk-3-mini-product, describing the Mini's parent): "the highly-acclaimed Valk 3,
@@ -82,6 +83,20 @@ attestations:
   /aliases:
     confidence: probable
     sources: [thecubicle-valk-3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-valk-3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 82.3g". Its "Gross Weight: 191g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 55.5mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. THIS MODEL CITES SEVEN
+      SOURCES CARRYING AN ITEM WEIGHT, and most are about other puzzles - the Valk 4 M (142g,
+      60.0mm) and Valk 5 M (136g, 62.0mm) are a 4x4 and a 5x5, cited here for lineage. The figure
+      above comes from the page titled exactly "Valk 3", whose own Dimensions field of 55.5mm
+      matches this model's size. The Valk 3 M page (85.0g) is the magnetic configuration, and the
+      Valk 3 Mini page (59.9g, 47.4mm) is a different model. Recorded 2026-09-12 from evidence the
+      archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: probable
     sources: [thecubicle-valk-3-product, thecubicle-valk-3-mini-product, thecubicle-valk-3-m-product,

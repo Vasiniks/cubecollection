@@ -8,6 +8,9 @@ family_id: qiyi-qimeng
 manufacturer_id: qiyi
 name: "QiYi QiMeng Plus"
 scope_class: reference_only
+specs:
+  size_mm: 90.0
+  weight_g: 262.0
 scope_decided_by: agent-b-qiyi
 scope_decided_on: "2026-09-03"
 generation:
@@ -35,6 +38,26 @@ attestations:
   /generation/basis:
     confidence: reported
     sources: [thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product]
+  /specs/size_mm:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product]
+    note: >-
+      Single tier 2 retailer spec table, "Dimensions: 90.0mm" - read as an edge length. Recorded
+      alongside the weight on 2026-09-12 because the two come from the same verified table and a
+      mass with no size cannot be sanity-checked by a reader: the page is titled "QiYi QiMeng Plus
+      3x3 M (9cm)", so the 90.0mm table figure and the 9cm in the product name agree.
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 262.0g". Its "Gross Weight: 293g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 90.0mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. This is a 9cm puzzle -
+      the page is titled "QiYi QiMeng Plus 3x3 M (9cm)" and its Dimensions field reads 90.0mm - so
+      262g is a plausible mass and rule 18 flags it correctly as outside the normal 3x3 range.
+      Recorded 2026-09-12 from evidence the archive had preserved and cited all along - see audit
+      sweep #14.
   /description:
     confidence: reported
     sources: [thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product]

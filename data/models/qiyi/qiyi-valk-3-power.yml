@@ -15,6 +15,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 55.5
+  weight_g: 87.4
 description: |-
   Per TheCubicle's product page (thecubicle-valk-3-power-product): "The Valk 3 Power is the
   newest 3x3 under the iconic Valk line by QiYi MoFangGe. The Valk Power features a dual
@@ -40,6 +41,18 @@ attestations:
   /specs/size_mm:
     confidence: probable
     sources: [thecubicle-valk-3-power-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-valk-3-power-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 87.4g". Its "Gross Weight: 222g" on the
+      same table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions
+      field on the same table reads 55.5mm, which matches this model's recorded size and is the
+      cross-check that ties the figure to THIS model rather than a sibling. The Valk 3 Power M
+      page (thecubicle-valk-3-power-m-product) gives 94.4g for the magnetic configuration. The
+      figure above is from the non-magnetic page whose title matches this model exactly. Recorded
+      2026-09-12 from evidence the archive had preserved and cited all along - see audit sweep
+      #14.
   /description:
     confidence: probable
     sources: [thecubicle-valk-3-power-product, thecubicle-valk-3-power-m-product,

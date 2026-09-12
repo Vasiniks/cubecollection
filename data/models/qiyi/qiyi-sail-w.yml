@@ -19,6 +19,7 @@ announced:
   qualifier: circa
 specs:
   size_mm: 56.0
+  weight_g: 79.5
 description: |-
   Per the Speedsolving wiki (speedsolving-wiki-qiyi-products): "QiYi Sail W Released mid 2019...
   a new budget friendly puzzle." TheCubicle's own product page
@@ -44,6 +45,15 @@ attestations:
   /specs/size_mm:
     confidence: probable
     sources: [thecubicle-qiyi-sail-w-3x3-product]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-sail-w-3x3-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 79.5g". Its "Gross Weight: 88g" on the same
+      table is the PACKAGED figure and is refused under the rule-45 class. Its Dimensions field on
+      the same table reads 56.0mm, which matches this model's recorded size and is the cross-check
+      that ties the figure to THIS model rather than a sibling. Recorded 2026-09-12 from evidence
+      the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: reported
     sources: [speedsolving-wiki-qiyi-products, thecubicle-qiyi-sail-w-3x3-product,
