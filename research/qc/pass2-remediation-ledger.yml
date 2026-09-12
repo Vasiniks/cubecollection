@@ -1915,6 +1915,32 @@ issues:
       Elite or Elite V2. Their single-configuration state is now SEARCHED at this retailer and
       says so in the record, rather than being merely unexamined — which is the distinction 3.6a
       asks for and the one P4-3 draws between an assessed model and an unassessed one.
+
+      2026-09-12, CORRECTION TO THE ENTRY IMMEDIATELY ABOVE, and to commit c5c1139's message.
+      The MGC Sigma was NOT a new find. Pass 4 Agent C had already located it, preserved it as
+      `thecubicle-yj-mgc-sigma-3x3-product` on 2026-09-03, and escalated it under this issue —
+      the escalation names that source in its own evidence. The prefix sweep reached the same
+      path independently, which corroborates the enumeration method and discovers nothing.
+
+      Two further things in that entry were wrong and are corrected here. The duplicate source
+      `thecubicle-yj-mgc-sigma-2026` has been DELETED. And it claimed the capture carries "no
+      description and no specification beyond Manufacturer: YJ" — false. The pre-existing source
+      quotes a full product description from the SAME capture: "The YJ MGC Sigma is what the Beta
+      was trying to be. Larger core magnets lock the cube into place with smoother alignment.
+      Lighter corner-edge magnets create balance without hesitation. Sharper corner caps reduce
+      unwanted twists at the source." That is an explicit mechanism-change statement, which is
+      materially STRONGER evidence than the title-only reading, and the existing escalation
+      already says so. My extraction missed it and I wrote the failure up as a property of the
+      page.
+
+      So the count stands at TWO genuine new P4-9 candidates found today, not three: the MoYu
+      WeiLong V10 AI WCU Edition, and nothing else from the MGC line.
+
+      RULE 42 CAUGHT THIS, not a human reading. The duplicate shared its locator and capture with
+      the existing source and the lint said so on the next run. The lesson is the cheap one:
+      GREP FOR AN EXISTING SOURCE BEFORE WRITING A NEW ONE. The archive is large enough that
+      "this is new" is a claim needing a check, and the same mistake was made on 2026-09-11 with
+      a HuaMeng variant that already existed.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

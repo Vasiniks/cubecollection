@@ -1,0 +1,53 @@
+# variant: moyu-weilong-super--lite-8-magnet-ball-core-maglev
+# Depth research 2026-09-12, from thecubicle-moyu-prefix-2026. The Lite configurations mirror the
+# three the archive already holds; what distinguishes them is the PACKAGING, stated by the
+# retailer in its own words.
+id: moyu-weilong-super--lite-8-magnet-ball-core-maglev
+entity: variant
+model_id: moyu-weilong-super
+name: "MoYu WeiLong Super Lite (8-Core Magnetic + MagLev)"
+scope_class: core
+config:
+  core_system: ball_core
+  maglev: maglev
+  magnet_strength: "8-magnet ball-core, per the retailer's own listing title and description."
+edition:
+  types: [standard]
+  designation: "Lite 8-Core Magnetic + MagLev"
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-moyu-super-weilong-lite-2024]
+    note: >-
+      The retailer's product title, "MoYu Super WeiLong 3x3 Lite (8-Core Magnetic + MagLev)". "Lite" is MoYu's
+      own product-line word rather than the retailer's invention - it appears in the title of all
+      three Lite listings and in none of the three full ones.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-super-weilong-lite-2024]
+    note: >-
+      WHAT MAKES "LITE" A CONFIGURATION HERE IS PACKAGING, and the retailer says so plainly:
+      "This is the lite version which comes in a smaller box." DATA_MODEL 4.1 axis 11 is
+      packaging configuration, and the same reasoning admitted the MFJS MeiLong V2 Standard and
+      Lite pair, which differ by nothing else. Not a limited or commemorative edition: no run
+      size, no festival or anniversary naming, no collaboration.
+      This is the 8-Core Magnetic + MagLev mechanism, which is the SAME mechanism as the non-Lite sibling
+      already in the archive; the two are distinguished by the box, not by the puzzle.
+  /config/core_system:
+    confidence: probable
+    sources: [thecubicle-moyu-super-weilong-lite-2024]
+    note: >-
+      "This model features a maglev tension system, an 8-magnet ball core, and piece-to-piece magnetization."
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-moyu-super-weilong-lite-2024]
+    note: >-
+      "This model features a maglev tension system", stated in the description of this listing and absent from the spring-tension sibling.
+  /config/magnet_strength:
+    confidence: probable
+    sources: [thecubicle-moyu-super-weilong-lite-2024]
+    note: >-
+      From the retailer's own description of this listing. Recorded as free text rather than a
+      vocabulary value because the archive's three non-Lite Super WeiLong variants record the
+      same axis the same way.

@@ -1,0 +1,50 @@
+# variant: moyu-aolong-v2--limited-edition
+# Depth research 2026-09-12, from thecubicle-moyu-prefix-2026. The AoLong V2 is one of the most
+# historically significant 3x3s in the archive and carried exactly one configuration until now.
+id: moyu-aolong-v2--limited-edition
+entity: variant
+model_id: moyu-aolong-v2
+name: "MoYu AoLong V2 (LE)"
+scope_class: core
+edition:
+  types: [limited, commemorative]
+  name: "LE"
+  limited:
+    is_limited: true
+    run_size: null
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-moyu-aolong-v2-le-2020]
+    note: >-
+      "LE" is the retailer's own title abbreviation, expanded in its first sentence as "the
+      limited edition version". No first-party MoYu source naming the edition was located.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-aolong-v2-le-2020]
+    note: >-
+      `limited` because the retailer calls it "the limited edition version" in its own words.
+      `commemorative` because the set exists to mark a specific event and contains an artefact
+      that does nothing else: "the official collectible MoYu card for Lucas Etter", alongside a
+      display box and stand. A cube that ships with a card about a person and a box to display it
+      in is not merely a differently-packaged cube.
+  /edition/limited/run_size:
+    confidence: unknown
+    note: >-
+      Searched and not found. The page says "limited edition" and gives no number, and no
+      first-party MoYu source was located this pass. Recorded as unknown rather than omitted so
+      that the search is on the record.
+  /edition/commemorates:
+    confidence: unknown
+    note: >-
+      DELIBERATELY LEFT UNSET RATHER THAN LINKED, and this is the substantive decision on this
+      record. The source says the base AoLong V2 "was used by Lucas Etter to set the first sub-5
+      official WCA 3x3 solve on November 21st, 2015", and the set includes a card naming him.
+      That would justify BOTH an event record for the solve and a person record for Lucas Etter,
+      and `/edition/commemorates` is the field that would point at the event.
+      It is not created here because the evidence is a retailer's sentence. The archive's
+      existing people and events — Max Park, XuanYi Geng and three world-record events — rest on
+      stronger footing than that, and writing a person into the archive on a product blurb would
+      lower a standard the archive has otherwise kept. The lead is recorded in the source's
+      preservation_note; closing it means fetching WCA's own result for River Hill Fall 2015.

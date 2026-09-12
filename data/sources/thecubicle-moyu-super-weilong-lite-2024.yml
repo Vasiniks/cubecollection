@@ -1,0 +1,67 @@
+# source: thecubicle-moyu-super-weilong-lite-2024
+# Created 2026-09-12 from thecubicle-moyu-prefix-2026. Covers all THREE Super WeiLong Lite
+# listings in one record, because the three-way comparison is what establishes the mechanism of
+# each: the descriptions differ from one another in exactly one clause.
+id: thecubicle-moyu-super-weilong-lite-2024
+entity: source
+kind: retailer
+title: "MoYu Super WeiLong 3x3 Lite — three configurations — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-super-weilong-3x3-lite-8-core-magnetic-spring-tension"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240415074058id_/https://www.thecubicle.com/products/moyu-super-weilong-3x3-lite-8-core-magnetic-spring-tension"
+excerpt: |-
+  THREE SEPARATE LISTINGS, all captured 2024-04-15, all with distinct Shopify product ids.
+
+  (1) "MoYu Super WeiLong 3x3 Lite (8-Core Magnetic + Spring Tension)", product id 7189067497555.
+  Description, verbatim: "The Super WeiLong is MoYu's ultimate 2023 flagship 3x3. This model
+  features an 8-magnet ball core and piece-to-piece magnetization. In addition, the magnets
+  embedded in each corner foot are adjustable, allowing you to customize the level of magnetism
+  with the core. Elasticity is adjustable using MoYu's new multipurpose tool. This is the lite
+  version which comes in a smaller box. Comes with: Super WeiLong 3x3, Adjustment tool, Carrying
+  watch[case]..."
+
+  (2) "MoYu Super WeiLong 3x3 Lite (8-Core Magnetic + MagLev)", product id 7189067563091.
+  Description, verbatim, differing from (1) in ONE clause: "This model features A MAGLEV TENSION
+  SYSTEM, an 8-magnet ball core, and piece-to-piece magnetization." The rest, including "This is
+  the lite version which comes in a smaller box", is word for word identical.
+
+  (3) "MoYu Super WeiLong 3x3 Lite (20-Core Magnetic + MagLev)", product id 7189067661395.
+  Description, verbatim: "The MoYu Super WeiLong is MoYu's ultimate 2023 flagship 3x3. This new
+  model features A 20-MAGNET BALL CORE, giving the cube superior stability and hand feel. In
+  addition, the magnets embedded in each corner foot are adjustable... This is the lite version
+  that comes in a smaller box."
+
+  Specifications table, identical across all three: "Manufacturer: MoYu", "Type: 3x3",
+  "Added: 2024-03-13", "Gross Weight: 387g", "Dimensions: 55.0mm3".
+
+  WHAT "LITE" MEANS HERE IS STATED, NOT INFERRED: "This is the lite version which comes in a
+  smaller box." The distinguishing axis is packaging, not mechanism — each Lite listing names the
+  same mechanism as one of the three full listings.
+preservation_note: >-
+  All three captures fetched 2026-09-12 with content-encoding negotiation and read in full.
+  "Gross Weight: 387g" IS NOT RECORDED and is doubly unusable here. It is a packaged figure, the
+  rule-45 class, and it is IDENTICAL on all three listings including the two that differ in magnet
+  count — and identical to what a "smaller box" is supposed to distinguish. A single figure
+  repeated across three products it cannot describe is a catalogue default, not a measurement.
+  "Added: 2024-03-13" is a catalogue-ingestion stamp, identical across all three, and is not a
+  release date; MoYu's Super WeiLong is a 2023 product by the retailer's own first sentence.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product pages.
+  ESTABLISHES: that the Super WeiLong was sold in a "Lite" packaging configuration distinguished
+  by a smaller box; that the Lite range covered three mechanisms — 8-magnet ball core with spring
+  tension, 8-magnet ball core with MagLev, and 20-magnet ball core with MagLev; and that corner
+  magnets are user-adjustable across the line.
+  DOES NOT ESTABLISH: a release date, the puzzle's mass, what else differs between the Lite and
+  full boxes beyond size, or MoYu's own name for the packaging. The word "Lite" is in the
+  retailer's title; no first-party MoYu source was located this pass.
+  THE THREE-WAY COMPARISON IS THE METHOD. Reading one listing alone could not distinguish a
+  mechanism claim from boilerplate. Reading all three shows the descriptions are word-for-word
+  identical except in the clause naming the mechanism, which is what makes each clause load
+  bearing rather than decorative.
+status: sourced

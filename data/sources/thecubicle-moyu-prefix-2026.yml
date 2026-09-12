@@ -1,0 +1,77 @@
+# source: thecubicle-moyu-prefix-2026
+# Created 2026-09-12. THE SWEEP THE ARCHIVE'S MOST-CITED MANUFACTURER NEVER HAD. `npm run audit`
+# has been reporting MoYu at the top of "no sweep source" for weeks — 114 citations, no 3.6a
+# prefix sweep, no non-US source — and P4-9 found that MoYu accounts for 8 of the 14 model-layer
+# lines missing from the inventory. This closes the sweep half of that gap.
+id: thecubicle-moyu-prefix-2026
+entity: source
+kind: retailer
+title: "TheCubicle /products/moyu prefix enumeration (CDX, 2026-09)"
+publisher: "TheCubicle"
+url: "https://web.archive.org/cdx/search/cdx?url=thecubicle.com/products/moyu&matchType=prefix&fl=original&collapse=urlkey&filter=statuscode:200&limit=1200"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of thecubicle.com/products/moyu, run 2026-09-12, collapsed on urlkey and
+  filtered to status 200. 303 distinct paths after discarding query-string, .js and .oembed
+  duplicates. Reproducible with
+  `npm run wayback -- prefix thecubicle.com/products/moyu --limit 1200`.
+
+  3x3 PRODUCT PATHS NAMING A CONFIGURATION OF A MODEL THIS ARCHIVE HOLDS, verbatim:
+
+    moyu-super-weilong-3x3-lite-8-core-magnetic-spring-tension
+    moyu-super-weilong-3x3-lite-8-core-magnetic-maglev
+    moyu-super-weilong-3x3-lite-20-core-magnetic-maglev
+    moyu-aolong-v2-le
+    moyu-weilong-v2-unstickered
+    moyu-weilong-wr-m-2021-lite-3x3
+    moyu-weilong-gts-unstickered
+    moyu-weilong-diy-kit
+    moyu-weilong-gts2-diy-kit
+    moyu-weilong-gts2-m-le
+    moyu-weilong-gts2-m-wca-record-edition
+    moyu-weilong-gts3-lm
+    moyu-weilong-gts3-m-le
+    moyu-weilong-wrm-v9-3x3-ball-core-uv
+    moyu-weilong-wrm-v9-3x3-maglev
+    moyu-weilong-wrm-v9-3x3-ball-core-uv-special-edition
+    moyu-weilong-wrm-v9-3x3-20-core-magnetic-maglev-ball-core-uv
+    moyu-rs3-m-2020-3x3-uv-coated
+    moyu-rs3-m-2020-3x3-picube-core-magnetic
+    moyu-rs3-m-2021-3x3-maglev
+    moyu-ai-smart-cube-3x3-magnetic
+
+  3x3 PRODUCT PATHS NAMING A MODEL THIS ARCHIVE DOES NOT HOLD, verbatim. These are P4-9's
+  subject and nothing here admits any of them:
+
+    moyu-weilong-v10-ai-3x3, -lite, -uv, -maglev-uv
+    moyu-weilong-v11-3x3-magnetic and seven further V11 paths
+    moyu-weilong-wrm-v10-3x3 and six further WRM V10 paths
+    moyu-weilong-ferrocore-v2-3x3-uv-coated
+    moyu-weilong-ferrocore-uv-3x3-special-edition-wrm-v10
+    moyu-aolong-v5-8-magnet-ball-core-maglev-uv, -20-magnet-...
+    moyu-super-aolong-3x3-20-magnet-ball-core-maglev, -uv
+    moyu-super-weilong-3x3-v2-... (four paths)
+    moyu-rs3-m-v5-se-..., moyu-super-rs3-m-v2-... (several)
+
+  OLDER 3x3 LINES PRESENT AT THIS RETAILER AND HELD BY THE ARCHIVE: moyu-aolong, -aolong-gt,
+  -aolong-v2, -hualong, -huanying, -liying, -tanglong, -dianma, -moyan-i, -moyan-ii.
+preservation_note: >-
+  CDX output, not a page capture; the enumeration is the evidence and is reproducible from the
+  URL above. Individual product pages named here were fetched separately where they were acted
+  on. Paths for puzzles other than 3x3, and for apparel, spinners, bundles, tools, stands and
+  sticker sets, were excluded from the listing above — this retailer sells MoYu hoodies,
+  t-shirts, a cube chair and a 40cm fitness cube under the same prefix.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure.
+  ESTABLISHES: the set of MoYu-prefixed product paths this retailer has carried, and therefore a
+  recorded 3.6a discovery sweep for the archive's most heavily cited manufacturer.
+  DOES NOT ESTABLISH: that MoYu's catalogue is complete. This is ONE retailer in ONE market, and
+  the audit's own breadth check counts MoYu as ALSO having no non-US source — this sweep does not
+  fix that half. Ledger P26-3 records that slug form differs per brand, so a sweep of the `moyu-`
+  form is not a sweep of every form MoYu products appear under.
+status: sourced

@@ -33,9 +33,12 @@ excerpt: |-
     yj-mgc3-elite-v2-3x3
     yj-mgc3-ii
 
-  WHAT THIS SWEEP FOUND THAT THE ARCHIVE DOES NOT HOLD. `yj-mgc-sigma-3x3` names a product with
-  no counterpart among the archive's nine MGC models; it is preserved separately as
-  thecubicle-yj-mgc-sigma-2026 and escalated under ledger P4-9. `yj-mgc3-ii` is an open question:
+  WHAT THIS SWEEP FOUND THAT THE ARCHIVE DOES NOT HOLD, AND ALREADY KNEW IT DID NOT HOLD.
+  `yj-mgc-sigma-3x3` names a product with no counterpart among the archive's nine MGC models —
+  but this sweep did not discover that. Pass 4 Agent C had already found the Sigma, preserved it
+  as `thecubicle-yj-mgc-sigma-3x3-product` (accessed 2026-09-03, with the fuller product
+  description), and escalated it under ledger P4-9. This sweep independently reaches the same
+  path, which is corroboration of the enumeration method and nothing more. `yj-mgc3-ii` is an open question:
   it may be this retailer's earlier path for the model the archive holds as yj-mgc-v2, for which
   no path appears in this sweep, and nothing here settles it.
 

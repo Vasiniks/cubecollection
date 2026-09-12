@@ -1,0 +1,55 @@
+# source: thecubicle-moyu-aolong-v2-le-2020
+# Created 2026-09-12 from thecubicle-moyu-prefix-2026. The most historically loaded product found
+# in that sweep: a collector's edition of the cube used for the first sub-5 official WCA 3x3 solve.
+id: thecubicle-moyu-aolong-v2-le-2020
+entity: source
+kind: retailer
+title: "MoYu AoLong V2 (LE) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-aolong-v2-le"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918195305id_/https://www.thecubicle.com/products/moyu-aolong-v2-le"
+excerpt: |-
+  Page title as captured: "MoYu AoLong V2 (LE) – TheCubicle". Shopify product id 1532351217737.
+
+  Product description, verbatim and complete: "The MoYu AoLong V2 (LE) is the limited edition
+  version of the historic MoYu AoLong V2, which was used by Lucas Etter to set the first sub-5
+  official WCA 3x3 solve on November 21st, 2015. This collector's set includes a large display
+  box with a transparent green cube stand, as well as the official collectible MoYu card for
+  Lucas Etter. Please note that this puzzle is fully unstickered right out of the box, and it
+  includes a set of factory stickers."
+
+  Specifications table, verbatim: "Manufacturer: MoYu", "Type: 3x3", "Added: 2018-09-11",
+  "Gross Weight: 150g", "Dimensions: 57.0mm3".
+preservation_note: >-
+  Capture 20200918195305 fetched 2026-09-12 and read in full.
+  "Added: 2018-09-11" IS NOT A DATE FOR THIS PRODUCT. It is the archive's single most heavily
+  documented TheCubicle catalogue artefact — 29 occurrences across 22 sources and 13 brands — and
+  here it is plainly impossible as a release date, since the product commemorates a November 2015
+  solve and the base AoLong V2 predates it. "Gross Weight: 150g" is a packaged figure refused
+  under the rule-45 class, and for this product it is the weight of a display box and stand as
+  much as a puzzle.
+  THE HISTORICAL CLAIM IS THE RETAILER'S AND IS RECORDED AS SUCH. Lucas Etter's 4.90-second
+  single at River Hill Fall 2015 is a well-known result, but this archive holds no WCA-sourced
+  record of it and no person record for Lucas Etter. A person record and an event record would
+  both be justified by this find; NEITHER IS CREATED ON A RETAILER'S SENTENCE. The archive's
+  existing people and events (Max Park, XuanYi Geng, three world-record events) rest on stronger
+  footing, and matching that standard means fetching WCA's own result before writing a person
+  into the archive. Recorded here as a lead.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that MoYu sold a limited-edition AoLong V2 as a collector's set; that the set
+  included a large display box, a transparent green cube stand and a collectible card naming
+  Lucas Etter; and that the puzzle shipped UNSTICKERED with a set of factory stickers included.
+  DOES NOT ESTABLISH: a run size, a release date, the WCA result itself, or that MoYu rather than
+  the retailer authored the Lucas Etter association. "LE" is the title's own abbreviation.
+  NOTE THE UNSTICKERED DETAIL, because it is a configuration claim and not decoration: "fully
+  unstickered right out of the box, and it includes a set of factory stickers" is the same
+  factory surface state recorded this session for moyu-weilong-gts--unstickered, and it is
+  recorded on this variant for the same reason.
+status: sourced
