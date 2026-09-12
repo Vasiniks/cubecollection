@@ -1454,7 +1454,7 @@ issues:
 
   - id: P4-1
     severity: low
-    status: open
+    status: resolved
     title: "Rule 18 checks variants only, so out-of-range model sizes surface late and as false positives"
     category: tooling
     affected_records: "8 models; warnings appear on their variants, not on the models themselves"
@@ -1468,6 +1468,25 @@ issues:
       all for good reasons: maru-nano-original 15mm, cyclone-boys-mini-3x3-original 40mm,
       mfjs-mini-3x3-keychain-40mm 40mm, dayan-zhanchi-42mm 42mm, mfjs-mini-3x3-45mm 45mm,
       qiyi-valk-3-mini 47.4mm, shengshou-crazy-original 60.5mm, shengshou-legend-big 70mm.
+
+      2026-09-12 — RESOLVED, AND IT HAS BEEN FOR SOME TIME; the status was simply never moved.
+      This issue's own recommendation offered three options and named the third "check the model
+      directly". That is what rule 18 now does, and scripts/lint-semantic.mjs says so in a comment
+      at the implementation: the rule reports an out-of-range value ONCE on the model, with the
+      message "Reported once here rather than on each of its variants, which inherit it", and
+      separately reports a variant only when that variant "sets the value itself".
+
+      Verified against live output: all 14 current rule-18 warnings name `data/models/**` paths,
+      not variant paths, and each out-of-range model appears once per field rather than once per
+      variant. The false-positive shape this issue was filed about — a warning landing on a
+      variant that inherits a value and asserts nothing — cannot occur any more.
+
+      The eight models this issue listed are all still out of range and all still correct:
+      maru-nano 15mm, cyclone-boys-mini 40mm, mfjs-mini-keychain 40mm, dayan-zhanchi-42mm,
+      mfjs-mini-45mm, qiyi-valk-3-mini 47.4mm, shengshou-crazy 60.5mm, shengshou-legend-big 70mm.
+      Six more warnings have joined them since, on qiyi-qimeng-plus (90mm, 262g) and
+      qiyi-warrior-plus (188mm, 981g), and those are genuinely oversized cubes too. The rule is
+      doing its job; the range was never the problem.
     counterevidence: >-
       The rule is doing its job for standard speedcubes and has caught real errors before. These
       are genuine mini and oversized products, so the range is simply not calibrated for them.
@@ -2552,6 +2571,25 @@ issues:
       held by this archive states 1974, so it is noted as consistency and not used as the basis.
       REMAINING: only the ShengShou Jelly LE half, which is a Type E evidence question about
       which of two mechanism generations it attaches to - not a schema question.
+
+      2026-09-12 — HALF OF THIS IS NOW DONE, and the half that remains does not belong here.
+
+      (2) IS RESOLVED. `data/events/rubiks-cube-50th-anniversary.yml` exists and
+      `data/variants/rubiks/rubiks-classic-cube/retro.yml` links it through
+      `edition.commemorates`. The recommendation asked to decide first whether `data/events/`
+      should exist as an entity at all; it does, it now holds four records, and this resolved as
+      ordinary data entry exactly as predicted.
+
+      (1) IS NOT A SCHEMA QUESTION AND SHOULD BE TRACKED AS A P4-9 ONE. The ShengShou Crazy
+      "Jelly LE" cannot be recorded because no model exists for it, which is a frozen-inventory
+      admission question and not a limitation of the data model. This issue's own evidence
+      already says the premise is wrong on both halves; this entry records which half closed.
+
+      SEPARATELY AND RELEVANTLY: a ShengShou Lustrous Light-Up "Jelly Edition" was enumerated at
+      SpeedCubeShop on 2026-09-12 during the brand-facet work
+      (speedcubeshop-vendor-facet-sweep-2026-09) and is a DIFFERENT product from the Crazy Jelly
+      LE. Both are ShengShou, both are "Jelly", and neither is held. They should not be conflated
+      when either is adjudicated.
     recommendation: >-
       Do not widen the schema to admit one record each. Decide first whether `data/events/`
       should exist as an entity at all - if it should, (2) resolves as ordinary data entry; if it
