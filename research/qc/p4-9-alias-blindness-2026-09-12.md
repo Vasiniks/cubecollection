@@ -99,3 +99,43 @@ every comparison on the catalogue line's own `vendor` field removed them.
 Measured false-positive rate of the first source-title probe: **2 of 12 matches (17%)** —
 Calvin's Puzzle "Sudoku Cube 3x3" matched a *Lefun* product, and the X3+/X3 merge above. Both
 came from containment permitting extra tokens on the archive side.
+
+## The archive-wide sweep of this class: zero further instances
+
+The two repairs above were found by comparing live catalogue lines against model names. The
+obvious follow-up is whether the same divergence already sits inside the archive: does any
+**retailer source already bound to a model** name that product differently from the model's own
+name, with no alias bridging it?
+
+Swept all 467 bound retailer source titles against their models' names and aliases.
+**Zero word-order alias gaps.**
+
+Getting to that zero took two rounds, and the first round is the instructive one. It reported
+**79 gaps**, and nearly all of them were manufactured by the probe itself:
+
+- The probe drops non-discriminating tokens (`3x3`, `cube`, `speed`, …) before comparing. That
+  makes "GAN356 i Carry" and "GAN356 i Carry 3x3" identical multisets, so ~70 pairs differing
+  only in whether the title carries "3x3" were reported as word-order gaps. A word-order case
+  requires the kept-token **sequence** to differ, not merely the multiset; adding the sequence
+  test removed them.
+- Alias membership was tested by exact string, so models that **already carry** the alias still
+  flagged, because the product name retains a trailing "3x3" the alias does not. `yj-mgc-v2`
+  ("YJ MGC3 II"), `yj-mgc-elite-v2` ("YJ MGC3 Elite V2") and `escube-air-v1` ("ES3 Air") were all
+  already aliased. Testing membership by sequence removed them too.
+
+The tightened probe carries five controls, all passing: two synthetic word-order positives, and
+three negatives — a pair differing only by "3x3", a pair differing by a real semantic token
+(WeiLong V9 vs WRM V9, which is a different class), and a pair where the alias is already
+present.
+
+**Why zero is the expected answer, not a suspicious one.** The archive's names were written from
+the very pages its sources preserve, so names and bound sources track each other by construction.
+The divergence appears where a retailer *renames over time*, or where a *second* retailer orders
+the words differently — neither of which is visible in the archive's own preserved titles. That
+is precisely why both real instances were found against live catalogue lines and none here, and
+it is an argument for running the current-catalogue comparison rather than trusting an internal
+consistency check to stand in for it.
+
+One adjacent class was checked by hand after the first round surfaced it: spacing variants,
+"GAN356 M E" versus the retailer's "GAN356 ME". Both GAN models already carry the bridging
+alias (`gan-356-m-e` has "GAN356 Me"; `gan-356-me-v2` has "GAN356 M E V2"). No defect.
