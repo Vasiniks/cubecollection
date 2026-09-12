@@ -1,0 +1,66 @@
+# source: speedcubeshop-shengshou-yufeng-rename-2026
+# Created 2026-09-11. This record exists to preserve a REJECTED finding. The archive's own lead
+# counter surfaced four SpeedCubeShop YuFeng 3x3 paths against two held models, which looks like
+# two missing configurations. It is not: the retailer renamed each listing, and the SKUs prove it.
+# Evidence for a rejection has nowhere else to live, and without it the next pass re-derives the
+# same false lead from the same sweep source.
+id: speedcubeshop-shengshou-yufeng-rename-2026
+entity: source
+kind: retailer
+title: "ShengShou YuFeng 3x3 — SpeedCubeShop listing renames (V1 and V2), SKU comparison"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/shengshou-yufeng-3x3-v1-magnetic-core-magnets"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250422053858id_/https://speedcubeshop.com/products/shengshou-yufeng-3x3-v1-magnetic-core-magnets"
+excerpt: |-
+  FOUR SpeedCubeShop product paths exist for the YuFeng 3x3, against two models in this archive.
+  All four captures were fetched 2026-09-11 and compared on the dedup test this archive applies
+  before admitting any variant — product id, SKU, title, description, specifications.
+
+  THE V1 PAIR:
+    shengshou-yufeng-3x3-magnetic-magnetic-core   (capture 2023-03-06)
+      title "ShengShou YuFeng 3x3 Magnetic (Magnetic Core)", product id 6803683770481,
+      SKU "SS-YUF-3-M-STB"
+    shengshou-yufeng-3x3-v1-magnetic-core-magnets (capture 2025-04-22)
+      title "ShengShou YuFeng 3x3 V1 (Magnetic, Core Magnets)", product id 6844960702577,
+      SKU "SS-YUF-3-M-STB", Weight 70.3g
+
+  THE V2 PAIR:
+    shengshou-yufeng-v2-3x3-magnetic-magnetic-core   SKU "SS-YUF-3-V2-M-STB"
+    shengshou-yufeng-3x3-v2-magnetic-core-magnets    SKU "SS-YUF-3-V2-M-STB"
+
+  THE SKUs ARE IDENTICAL WITHIN EACH PAIR. The descriptions are also word-for-word identical
+  ("...is a great option for speedcubers who are looking for something that is easily
+  controllable while still maintaining a fast-turning feel"), differing only in the product name
+  the sentence opens with.
+
+  CONCLUSION: REJECTED as configurations. Each pair is ONE product under two retailer titles —
+  the listing was renamed from "Magnetic (Magnetic Core)" to "V1 (Magnetic, Core Magnets)" and
+  the V2 equivalently. No variant was created.
+
+  WHY THE PRODUCT IDS DIFFER AND WHY THAT IS NOT EVIDENCE AGAINST THIS. The two V1 pages carry
+  different Shopify product ids (6803683770481 vs 6844960702577), which normally indicates two
+  listings. A renamed product re-created as a new listing gets a new id while keeping the
+  merchant's own SKU, and the SKU is the field the merchant controls for stock identity. Where
+  the two disagree, the SKU and the identical copy outweigh the id.
+
+  THIS IS THE HAITUN ZHANLANG PATTERN, INVERTED. That documented false positive was one Cubezz
+  product id and SKU under two titles three months apart. Here the ids differ and the SKUs match,
+  and the conclusion is the same: a retailer rename is not a configuration.
+preservation_note: "Four archived captures fetched 2026-09-11 and compared field by field. The
+  locator is the V1 rename capture; the other three are named in the excerpt with their own
+  capture dates and are reproducible by the same method. No live JSON exists for any of the four
+  — all are discontinued listings."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer listings, compared against each other rather than read
+  individually — which is the only way this finding is visible.
+  ESTABLISHES: that the four YuFeng 3x3 paths resolve to two products, and that the extra paths
+  are renames.
+  DOES NOT ESTABLISH: that the YuFeng was never sold in a second configuration anywhere. It
+  bounds what SpeedCubeShop listed, and the rename explains the path count without needing one.
+status: sourced

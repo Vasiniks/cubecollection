@@ -18,12 +18,13 @@ edition:
 status: stub
 attestations:
   /edition/types:
-    confidence: reported
-    sources: [thecubicle-shengshou-yufeng-3x3-m-2023]
-    note: "ASSESSMENT RECORD, not a product claim. This model was assessed for
-      configuration axes during Pass 4 batch 1 (pass4-agent-d-dayan-shengshou); no magnetic,
-      coating, size, stickered/stickerless or named-edition axis was documented by any
-      source located, so the model's single regular retail configuration is recorded
-      here. The cited source establishes the product itself; no source was found
-      differentiating configurations of it. A later pass finding an axis should add
-      variants alongside this one rather than replacing it."
+    confidence: probable
+    sources: [speedcubeshop-shengshou-yufeng-rename-2026]
+    note: >-
+      DIFFERENTIATION SEARCH RECORDED 2026-09-11. SpeedCubeShop lists FOUR YuFeng 3x3 product
+      paths against this archive's two models, which reads as two missing configurations. It
+      is not. The two V1 paths carry the IDENTICAL SKU and word-for-word identical
+      descriptions; the listing was renamed. Rejected as a configuration and preserved as a
+      rejection, because evidence for a rejected finding has nowhere else to live and the
+      next pass would otherwise re-derive the same false lead from the same sweep source.
+      This record therefore remains a one-configuration baseline on a SEARCHED result.
