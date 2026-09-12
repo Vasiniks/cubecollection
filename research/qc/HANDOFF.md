@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  d9c4e8e
+HEAD:  8141c8a
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      501
-sources:       555
+variants:      505
+sources:       560
 events:        4
 
 VALIDATION
@@ -58,6 +58,22 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   FAILED (both its hits are renumbering artefacts), so the negative was written into the
   spec and the probe was NOT shipped. P4-9's methodology half is closed; admission is
   still the user's call.
+  SWEEP #12 COULD NOT SEE THE LEDGER, so it kept re-reporting DaYan paths rejected the day
+  before — commit c6e9c89 wrote that decision to the ledger and nowhere else. Scoping the
+  rejection harvest took three tries (too wide / too narrow / too many documents; 872 paths
+  at the worst point). Settled: source excerpts whole, ledger per issue, nothing else = 77
+  paths. Verified on two known negatives and one known positive, not on the count.
+  DEPTH: THE "unverified leads (no Wayback capture)" LIST WAS A RATE-LIMIT ARTEFACT, ALL
+  FIVE OF IT. Every path has captures. 4 variants added (DaYan LingYun V2 + LunHui DIY
+  kits, MoYu WeiLong DIY kit, MoYu WeiLong GTS Unstickered), 1 refused and escalated
+  (WeiLong V10 AI WCU Edition names a model the archive lacks — P4-9).
+  NOTE: commit 8141c8a's message says one-config went to 108. It went to 109 — only
+  moyu-weilong-original left the bare bucket, as the GTS already had two variants.
+  TWO REUSABLE FINDINGS. TheCubicle's "Type: DIY Kits" does NOT mean unassembled — the GTS
+  Unstickered page says "This DIY Kit actually comes assembled but without any stickers",
+  so that category value alone never evidences assembly state. And "Added: 2018-11-07" now
+  appears on FOUR products spanning 2011-2016 releases, which demonstrates the artefact
+  rather than asserting it; the same 114g gross weight appears on two different puzzles.
 
 PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
   CLOSED   P4-5 (rule 41 11 -> 0, every baseline SEARCHED not backfilled)
@@ -90,11 +106,14 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. DEPTH RESEARCH, systematically. Quantify one-config models by manufacturer/family
-     first, rank by historical significance + existing leads, then batch. Sweep #12 names
-     leads and excludes already-rejected ones. Sweep #13 names the stalest manufacturers.
-     One-config models are 112.
-  2. Depth research. One-config models are 112. Run `npm run audit` sweep #12 first;
+  1. DEPTH RESEARCH, continue. One-config models are 109 (was 112). Ranked bare families,
+     largest first: yj-mgc 7, dayan-zhanchi 5, witeden-mixup 4, yj-guanlong 4,
+     dayan-bermuda 4, qiyi-warrior 4. DaYan is the largest manufacturer gap (21 of 28
+     models bare) and the most historically significant. Sweep #12's remaining leads are
+     now trustworthy — its DaYan entry is `thecubicle-dayan-per-family-product-urls-2026`
+     (2 leads incl. speedcubeshop-dayan-zhanchi-size-diy-kits, which may cover 42mm/50mm
+     DIY kits). RE-TEST ANY "no capture" NOTE BEFORE BELIEVING IT.
+  2. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens. One-config models are 112. Run `npm run audit` sweep #12 first;
      it names the leads and now excludes ones already rejected.
   2. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens.
   3. 75 models rest on <=1 source AND <=1 variant — the thinnest records.
