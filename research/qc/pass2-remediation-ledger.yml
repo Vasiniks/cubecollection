@@ -2957,6 +2957,35 @@ issues:
       Both discarded probes failed the same way: they treated a DIFFERENCE as a DEFECT. In a
       model/variant archive the difference is usually the point, and a coherence check has to ask
       what combination is IMPOSSIBLE rather than what is unequal.
+
+      2026-09-12 — AUDIT SWEEP #7 WAS ACCUSING MANUFACTURERS OF HAVING NO FIRST-PARTY SOURCE
+      WHILE NOT READING THEIR OWN RECORDS. It iterated families, models and variants and never
+      `data/manufacturers/*.yml` — the one record most likely to carry a brand's founding
+      evidence. Two of the eight brands it named were wrong:
+
+      x-man-design cites `qiyitoys-company-history`, tier 1 and first-party through its parent
+      QiYi, carrying the dated 2015 entry 「奇艺首席设计师张小静创立「XMD」品牌」 — QiYi's chief
+      designer Zhang Xiaojing founded the XMD brand. The record is exemplary: it uses that source
+      to CORRECT an earlier reading taken from theqiyi-about-us, the Amazon-affiliate page later
+      demoted to tier 4, which had described XMD as a collaboration with an independent outside
+      designer. mefferts cites `mefferts-official-site-2024`. Both are precisely the evidence this
+      sweep exists to find, and it was looking everywhere except there.
+
+      The `isFirstParty` helper was already correct — it walks up to four parent hops and matches
+      the source host against the manufacturer's own recorded website, which is why X-Man
+      resolves through QiYi's qiyitoys.net. Only the iteration was wrong.
+
+      FIXING IT EXPOSED A SECOND PROBLEM AND A FLOOR WAS ADDED FOR IT. Counting manufacturer
+      records brought in six brands with no families, models or variants and exactly one citation
+      — hellocube, ninja, saocube, verypuzzle, xinlexin, zcube. "Resting on one publisher" is
+      technically true of each and tells a reader nothing: a single-citation stub has no source
+      CONCENTRATION, it has no sources. The sweep now requires 3 citations and prints how many it
+      omitted and why, so the omission is visible rather than silent.
+
+      Result: 8 -> 5, and the five that remain are real — lefun 35 cites, fanxin 15, newisland
+      10, cubestyle 7, pbcube 4, all on TheCubicle alone with no first-party source anywhere.
+      That is the genuine concentration risk this sweep was built to surface, and it is now the
+      whole of what it surfaces.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

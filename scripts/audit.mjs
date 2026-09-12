@@ -209,10 +209,20 @@ const isFirstParty = (s, mfr) => {
   }
   return false;
 };
+// THE MANUFACTURER'S OWN RECORD COUNTS, and leaving it out was a defect fixed 2026-09-12.
+// This swept families, models and variants and never read `data/manufacturers/*.yml`, so a
+// manufacturer whose OWN record cites first-party evidence was reported as having none. Two of
+// the eight it was accusing were like that: x-man-design cites qiyitoys-company-history (tier 1,
+// first-party through its parent QiYi, carrying the dated 2015 entry that QiYi's chief designer
+// founded the XMD brand), and mefferts cites mefferts-official-site-2024. Both are exactly the
+// evidence this sweep exists to look for, and it was looking everywhere except the one record
+// most likely to hold it.
 const per = new Map();
-for (const r of [...fam, ...mod, ...va]) {
+for (const r of [...mf, ...fam, ...mod, ...va]) {
   const doc = r.doc;
-  const mfr = doc.manufacturer_id ?? byId.get(doc.model_id)?.doc?.manufacturer_id;
+  const mfr = doc.entity === 'manufacturer'
+    ? doc.id
+    : (doc.manufacturer_id ?? byId.get(doc.model_id)?.doc?.manufacturer_id);
   if (!mfr) continue;
   if (!per.has(mfr)) per.set(mfr, { firstParty: 0, third: new Map(), langs: new Set() });
   const bucket = per.get(mfr);
@@ -226,12 +236,22 @@ for (const r of [...fam, ...mod, ...va]) {
     else bucket.third.set(s.publisher ?? '?', (bucket.third.get(s.publisher ?? '?') ?? 0) + 1);
   }
 }
-const solo = [...per.entries()]
-  .filter(([, b]) => b.firstParty === 0 && b.third.size === 1)
+// A FLOOR OF 3 CITATIONS, added 2026-09-12 with the manufacturer-record fix above and for the
+// same reason: to keep this list meaning what it says. Counting the manufacturer record brought
+// in brands that have no families, models or variants at all and exactly one citation —
+// hellocube, ninja, saocube, verypuzzle, xinlexin, zcube. "Resting on one publisher" is
+// technically true of each and tells a reader nothing: a single-citation stub has no source
+// CONCENTRATION, it has no sources. Concentration risk needs something concentrated.
+const CONCENTRATION_FLOOR = 3;
+const soloAll = [...per.entries()].filter(([, b]) => b.firstParty === 0 && b.third.size === 1);
+const solo = soloAll
+  .filter(([, b]) => [...b.third.values()][0] >= CONCENTRATION_FLOOR)
   .map(([m, b]) => [m, [...b.third.entries()][0], [...b.langs].join('/') || '-'])
   .sort((a, b) => b[1][1] - a[1][1]);
 line(`  manufacturers resting on ONE third-party publisher with NO first-party source : ${solo.length}`);
 for (const [m, [pub, n], langs] of solo) line(`     ${m.padEnd(18)}${String(n).padStart(3)} cites   ${pub}   [${langs}]`);
+line(`  (${soloAll.length - solo.length} further brands match but carry fewer than ${CONCENTRATION_FLOOR} citations and are`);
+line('   omitted: a stub with one source has no concentration to be at risk from.)');
 line('  (a manufacturer resting wholly on its own or its parent\'s official site is NOT listed —');
 line('   that is first-party evidence, the strongest there is, not narrow sourcing.)');
 
