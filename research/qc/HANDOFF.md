@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  8141c8a
+HEAD:  2491b13
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,7 +13,7 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      505
+variants:      507
 sources:       560
 events:        4
 
@@ -69,6 +69,17 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   (WeiLong V10 AI WCU Edition names a model the archive lacks — P4-9).
   NOTE: commit 8141c8a's message says one-config went to 108. It went to 109 — only
   moyu-weilong-original left the bare bucket, as the GTS already had two variants.
+  MORE DEPTH: 2 ZhanChi size DIY kits — the evidence was ALREADY in the archive and
+  already cited, while the 50mm baseline said "no axis was documented by any source
+  located" and cited a source titled "...50mm 3x3x3 DIY Kits". Probed that class
+  archive-wide: ZERO others (validated against the pre-fix record from git). NOT shipped
+  as a sweep — it keys on note prose, so a future zero would be meaningless.
+  YJ APPARI: the two SpeedCubeShop slugs are ONE Shopify product renamed — same product id
+  7129765478513 in three places, same SKU. REJECTED as a variant. The fetch also gave the
+  baseline its first config: core_corner_plus_piece + adjustment `other`.
+  PROBE CAVEAT: reading `"product_id"` page-wide returned a RECOMMENDED product's id and
+  would have inverted that answer. Read identity from the block bound to the page's own
+  handle, checked against the canonical URL.
   TWO REUSABLE FINDINGS. TheCubicle's "Type: DIY Kits" does NOT mean unassembled — the GTS
   Unstickered page says "This DIY Kit actually comes assembled but without any stickers",
   so that category value alone never evidences assembly state. And "Added: 2018-11-07" now
@@ -106,7 +117,7 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. DEPTH RESEARCH, continue. One-config models are 109 (was 112). Ranked bare families,
+  1. DEPTH RESEARCH, continue. One-config models are 106 (was 112 at session start). Ranked bare families,
      largest first: yj-mgc 7, dayan-zhanchi 5, witeden-mixup 4, yj-guanlong 4,
      dayan-bermuda 4, qiyi-warrior 4. DaYan is the largest manufacturer gap (21 of 28
      models bare) and the most historically significant. Sweep #12's remaining leads are
