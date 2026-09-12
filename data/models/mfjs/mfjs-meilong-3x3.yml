@@ -14,7 +14,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 55.5
-  weight_g: 62.4
+  weight_g: 62
 released:
   value: "2019-04-09"
   precision: day
@@ -29,7 +29,7 @@ description: |-
   of the Meilong 3 with magnets" (speedsolving-wiki-mofang-jiaoshi, tier 4) describes the same
   magnetic option in different words; no separate "Meilong 3x3 M" model is created.
 
-  `weight_g` is recorded from "2.2oz" (~62.4g) as the value on this product's own original
+  `weight_g` is recorded from "2.2oz" (62g, the two significant digits the source carries) as the value on this product's own original
   listing, but a later retailer source (speedcubeshop-moyu-meilong-3x3-v2-magnetic-product)
   gives a conflicting 69g for what it calls "V1" of this same product -- see the disputed
   attestation; the field is not treated as settled at either value.
@@ -41,10 +41,10 @@ attestations:
   /specs/weight_g:
     confidence: disputed
     disputed:
-      - value: 62.4
+      - value: 62
         sources: [speedcubeshop-mofang-jiaoshi-meilong-3x3-product]
         confidence: probable
-        note: "'Weight 2.2oz' on the product's own 2019 listing, converted (1 oz = 28.35g)."
+        note: "'Weight 2.2oz' on the product's own 2019 listing, converted. CORRECTED from 62.4 to 62 on 2026-09-11: 2.2oz carries two significant digits and means the interval 60.9-63.8g, so a tenth of a gram cannot be claimed from it. Same defect as mfjs-meilong-3c, corrected the same way."
       - value: 69
         sources: [speedcubeshop-moyu-meilong-3x3-v2-magnetic-product]
         confidence: probable
@@ -52,7 +52,7 @@ attestations:
           later product page. Possibly a different weighed configuration (e.g. magnetic vs.
           non-magnetic), an undocumented production change over six years, or a retailer
           inconsistency; not resolved this pass."
-    note: "`specs/weight_g` is set to 62.4 (the earlier, product-specific listing) so the field
+    note: "`specs/weight_g` is set to 62 (the earlier, product-specific listing) so the field
       is populated per rule 5, but confidence is `disputed` and both candidates are retained in
       full rather than silently choosing one."
   /released:

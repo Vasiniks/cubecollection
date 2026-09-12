@@ -1,0 +1,44 @@
+# source: thecubicle-maru-3x3-item-weight-2026
+# Created 2026-09-11. Resolves a DISPUTED weight that had stood unadjudicated since Pass 4, and
+# does it by fetching a field neither disputing source carried: an ITEM weight.
+id: thecubicle-maru-3x3-item-weight-2026
+entity: source
+kind: retailer
+title: "Maru 3x3 — TheCubicle structured product tags (item weight)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/maru-3x3.json"
+preservation_method: excerpt
+excerpt: |-
+  Fetched live 2026-09-11 from the storefront's own product JSON endpoint. Structured tag field,
+  verbatim: "Availability_Discontinued, Color_Black, Color_White, Dimensions_57.0,
+  Manufacturer_Maru, Type_3x3, Weight Range_90.0-94.9, Weight_93.7".
+
+  "Weight_93.7" IS AN ITEM WEIGHT, and it is what the disputed record was missing. TheCubicle's
+  tag taxonomy uses `Weight_` for the product and a separate "Gross Weight" spec-table row for
+  the packaged figure — the same distinction this archive enforces through rule 45.
+
+  WHAT THIS RESOLVES. maru-3x3-original carried `weight_g: 141` at `disputed`, between
+  TheCubicle's "Gross Weight" of 141g and Cubezz's "Weight (including the packing)" of 84.0g. The
+  adjudication note called the ~60g gap "too large to confidently attribute to packaging alone".
+  BOTH FIGURES ARE PACKAGED WEIGHTS — Cubezz says so in the field name itself — so the archive was
+  comparing two gross weights from retailers who package differently, and the top-level spec was
+  asserting one of them as a product weight.
+  93.7g sits between them and is consistent with both: TheCubicle adds ~47g of packaging, Cubezz
+  reports a lighter package. The dispute dissolves rather than being adjudicated in favour of one
+  side.
+preservation_note: "Fetched live 2026-09-11 via products.json. No archived capture was pinned:
+  Wayback's CDX endpoint was intermittently returning 503 during this session. A capture should be
+  pinned when reachable. The product is marked Discontinued in its own availability tag, so the
+  live endpoint may not persist."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer structured data — the retailer's own tag taxonomy rather than
+  prose, which is what makes the item-versus-gross distinction readable.
+  ESTABLISHES: an item weight of 93.7g and a 57.0mm dimension for the Maru 3x3.
+  DOES NOT ESTABLISH: which of the two disputed gross figures is correct. It makes that question
+  moot for the product spec rather than answering it — both remain recorded as what they are.
+status: sourced

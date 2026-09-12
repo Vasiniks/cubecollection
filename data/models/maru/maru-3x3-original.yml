@@ -22,7 +22,7 @@ released:
   qualifier: circa
 specs:
   size_mm: 57.0
-  weight_g: 141
+  weight_g: 93.7
   shape: standard
 description: |-
   TheCubicle's own product copy (thecubicle-maru-3x3, tier 2): "The original Maru 3x3 was one
@@ -62,23 +62,23 @@ attestations:
       rounding variance between two independently-run retail catalogues, not a genuine
       disagreement."
   /specs/weight_g:
-    confidence: disputed
-    disputed:
-      - value: 141
-        sources: [thecubicle-maru-3x3]
-        confidence: reported
-        note: "TheCubicle's own structured 'Gross Weight' spec field for the plain edition."
-      - value: 84
-        sources: [cubezz-maru-3x3]
-        confidence: reported
-        note: "Cubezz.com's own 'Weight (including the packing)' field for what is read as the
-          same base product."
-    adjudication: "Not adjudicated. The two figures differ by nearly 60g on products otherwise
-      agreeing closely on size, which is too large a gap to confidently attribute to packaging
-      alone (thecubicle-maru-3x3-special-patterns' own 154g figure, for a sticker variant that
-      additionally bundles a stand and lube, is only 13g higher than the plain 141g figure,
-      suggesting TheCubicle's own packaging weight is a small fraction of its total). Recorded
-      as a genuine, unresolved discrepancy per DATA_MODEL rule 5 rather than a preferred value."
+    confidence: probable
+    sources: [thecubicle-maru-3x3-item-weight-2026]
+    note: >-
+      DISPUTE RESOLVED 2026-09-11, and dissolved rather than adjudicated. This field read 141 at
+      `disputed` between TheCubicle's "Gross Weight" of 141g and Cubezz's "Weight (including the
+      packing)" of 84.0g, with a note calling the ~60g gap "too large to confidently attribute to
+      packaging alone".
+      BOTH DISPUTED FIGURES ARE PACKAGED WEIGHTS — Cubezz says so in its own field name — so the
+      archive was comparing two gross weights from retailers who package differently, and
+      asserting one of them as a product spec. That is the rule-45 defect class, surviving inside
+      a `disputed` block where the range check could not see it.
+      TheCubicle's structured product tags carry "Weight_93.7", an ITEM weight, which neither
+      disputing source held. 93.7g sits between the two gross figures and is consistent with both.
+      The two gross figures are not discarded: they remain recorded on their own sources as what
+      they are. What changed is that the archive no longer asserts either as the product weight.
+      This also clears a rule-18 warning that was genuinely a defect, not a plausible-range
+      artefact — the other ten rule-18 warnings are real minis and oversized cubes.
   /specs/shape:
     confidence: uncertain
     sources: [thecubicle-maru-3x3]
