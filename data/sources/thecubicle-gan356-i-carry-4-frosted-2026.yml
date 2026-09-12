@@ -1,0 +1,57 @@
+# source: thecubicle-gan356-i-carry-4-frosted-2026
+# Created 2026-09-12 from two unchased leads in thecubicle-gan356-slug-prefix-2026. Covers BOTH
+# i Carry 4 Frosted listings, because the pair is what the evidence is: two product ids, one
+# finish, and one of them also a festival edition the archive already held without its coating.
+id: thecubicle-gan356-i-carry-4-frosted-2026
+entity: source
+kind: retailer
+title: "GAN356 i Carry 4 3x3 (Frosted) and (Frosted, 2026 Year of the Horse Edition) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-i-carry-4-3x3-frosted"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260201162148id_/https://www.thecubicle.com/products/gan356-i-carry-4-3x3-frosted"
+excerpt: |-
+  FIRST PRODUCT, capture 20260201162148 of
+  thecubicle.com/products/gan356-i-carry-4-3x3-frosted.
+  Page title, verbatim: "GAN356 i Carry 4 3x3 (Frosted) – TheCubicle". Canonical URL declared by
+  the page: https://www.thecubicle.com/products/gan356-i-carry-4-3x3-frosted. Shopify product id
+  7867596046419. Price 34.99 USD. Colourway option offered: "Stickerless".
+
+  SECOND PRODUCT, capture 20260312164852 of
+  thecubicle.com/products/gan356-i-carry-4-3x3-frosted-2026-year-of-the-horse-edition.
+  Page title, verbatim: "GAN356 i Carry 4 3x3 (Frosted, 2026 Year of the Horse Edition) –
+  TheCubicle". Canonical URL declared by the page:
+  .../products/gan356-i-carry-4-3x3-frosted-2026-year-of-the-horse-edition. Shopify product id
+  7867597029459. Price 34.99 USD.
+
+  Storefront listing carrying both at once, verbatim, from the first page's own navigation:
+  "GAN356 i Carry 4 3x3 (Frosted, 2026 Year of the Horse Edition) $34.99 / GAN356 i Carry 4 3x3
+  (Frosted) $34.99".
+
+  THEY ARE TWO PRODUCTS, NOT ONE RENAMED. The product ids differ (7867596046419 against
+  7867597029459), each page declares its own canonical URL, and the storefront offers both
+  simultaneously at the same price. That test is applied here deliberately: the YJ Appari pair
+  examined the same day looked like two products by their titles and proved to be ONE Shopify
+  product renamed, with an identical product id and SKU.
+preservation_note: >-
+  Both captures fetched 2026-09-12 with content-encoding negotiation.
+  WHAT THESE CAPTURES DO NOT CONTAIN, stated so nobody re-reads them expecting it. TheCubicle's
+  2026 storefront is a JavaScript-rendered application, and neither capture preserves a product
+  description or a specification table in retrievable form — no dimensions, no weight, no magnet
+  description, no "Added" date. Title, canonical URL, product id, price and colourway option are
+  the whole of the evidence. That is enough to establish that each configuration was sold and
+  which is which; it is not enough for any specification, and none is attested from here.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product pages.
+  ESTABLISHES: that a frosted-finish configuration of the GAN356 i Carry 4 was sold as a regular
+  product; that a second, separate product paired that same frosted finish with a 2026 Year of
+  the Horse edition; and that both were offered concurrently in early 2026 at 34.99 USD.
+  DOES NOT ESTABLISH: any specification, any release date, or GAN's own naming — "Frosted" is
+  the retailer's product-title suffix. It also does not establish that the frosted finish is
+  exclusive to these two products rather than standard across the i Carry 4 line.
+status: sourced

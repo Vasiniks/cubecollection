@@ -7,6 +7,8 @@ entity: variant
 model_id: gan-i-carry-4
 name: "GAN i carry 4 Year of the Horse"
 scope_class: core
+config:
+  coating: frosted
 edition:
   name: "Year of the Horse"
   types: [limited, smart]
@@ -21,3 +23,14 @@ attestations:
   /edition/limited/run_size:
     confidence: unknown
     note: "Researched and not found. Never estimated."
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan356-i-carry-4-frosted-2026]
+    note: >-
+      Added 2026-09-12. This record carried no configuration at all until a retailer capture
+      supplied one: the product's own page is titled "GAN356 i Carry 4 3x3 (Frosted, 2026 Year
+      of the Horse Edition)", so the festival edition is also a frosted-finish one. The archive
+      had the edition and not the finish.
+      It is a SEPARATE PRODUCT from gan-i-carry-4--frosted, not a renaming of it: the two pages
+      declare different Shopify product ids (7867597029459 against 7867596046419) and their own
+      canonical URLs, and the storefront offered both at once at the same price.

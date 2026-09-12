@@ -1,0 +1,40 @@
+# variant: gan-i-carry-4--frosted
+# Depth research 2026-09-12, from an unchased lead in thecubicle-gan356-slug-prefix-2026.
+id: gan-i-carry-4--frosted
+entity: variant
+model_id: gan-i-carry-4
+name: "GAN356 i Carry 4 (Frosted)"
+scope_class: core
+config:
+  coating: frosted
+edition:
+  types: [standard, smart]
+  name: "Frosted"
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan356-i-carry-4-frosted-2026]
+    note: >-
+      From the retailer's product title, "GAN356 i Carry 4 3x3 (Frosted)", and from its
+      storefront offering this alongside a separate "(Frosted, 2026 Year of the Horse Edition)"
+      product. `frosted` in vocab/coatings.yml is a frosted surface finish, which is what the
+      title denotes.
+      RECORDED AT `probable`, NOT HIGHER, AND THE REASON IS THE CAPTURE. TheCubicle's 2026
+      storefront is JavaScript-rendered and neither capture preserves a description or
+      specification table, so the finish rests on the product title alone. No source located
+      this pass says whether the frosted finish distinguishes this product from the rest of the
+      i Carry 4 line or is simply named in the title of every i Carry 4 listing.
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan356-i-carry-4-frosted-2026]
+    note: >-
+      "Frosted" is the retailer's product-title suffix. No GAN first-party source naming the
+      configuration was located this pass.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-i-carry-4-frosted-2026]
+    note: >-
+      A regular retail configuration distinguished by a surface finish — no run size, no
+      festival or anniversary naming, no collaboration. `smart` is carried because the i Carry 4
+      is a smart cube line; the sibling variants on this model record the same.

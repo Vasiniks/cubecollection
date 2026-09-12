@@ -1,0 +1,38 @@
+# variant: gan-356-maglev--uv-coated
+# Depth research 2026-09-12, from an unchased lead in thecubicle-gan356-slug-prefix-2026.
+# Carries ONLY the axis that distinguishes it. The maglev and tension_compression values sit on
+# the baseline variant and are inherited; restating them here is what rule 23 catches.
+id: gan-356-maglev--uv-coated
+entity: variant
+model_id: gan-356-maglev
+name: "GAN356 MagLev (UV Coated)"
+scope_class: core
+config:
+  coating: uv
+edition:
+  types: [standard]
+  name: "UV"
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan356-maglev-uv-2023]
+    note: >-
+      The retailer states the treatment in a sentence of its own rather than leaving it to the
+      product title: "This version is UV-coated which aids with grip and gives the puzzle a
+      glossy finish." `uv` in vocab/coatings.yml is a manufacturer-applied UV-cured coating,
+      which is what "this version" denotes — a factory configuration of the product, not an
+      aftermarket service, so `aftermarket` would be the wrong value.
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan356-maglev-uv-2023]
+    note: >-
+      "UV" is the retailer's product-title suffix. No GAN first-party source naming the
+      configuration was located this pass.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-maglev-uv-2023]
+    note: >-
+      A regular retail configuration distinguished by a surface coating, not a limited or
+      commemorative edition. The page carries no run size, no anniversary or festival naming and
+      no collaboration.

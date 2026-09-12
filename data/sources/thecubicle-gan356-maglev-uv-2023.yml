@@ -1,0 +1,56 @@
+# source: thecubicle-gan356-maglev-uv-2023
+# Created 2026-09-12 from an unchased lead in thecubicle-gan356-slug-prefix-2026. The archive
+# held gan-356-maglev with a single baseline variant; this page establishes a second, UV-coated
+# configuration and describes the line's mechanism more fully than any source already on file.
+id: thecubicle-gan356-maglev-uv-2023
+entity: source
+kind: retailer
+title: "GAN356 MagLev UV 3x3 — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-maglev-uv-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231205054506id_/https://www.thecubicle.com/products/gan356-maglev-uv-3x3"
+excerpt: |-
+  Page title as captured: "GAN356 MagLev UV 3x3 – TheCubicle". Canonical URL declared by the
+  page: https://www.thecubicle.com/products/gan356-maglev-uv-3x3. Shopify product id
+  7099417264211.
+
+  Product Description, verbatim: "The GAN356 MagLev represents a new twist on a familiar
+  favorite. Joining the classic 356 series of GAN 3x3s, this new version incorporates the
+  innovation and technology of 2023. This one has repelling magnets in place of a spring,
+  offering not only a fresh approach but also enhanced performance. Featuring 6 tension
+  adjustments, 6 center travel adjustments, corner/core magnetization, and the classic honeycomb
+  pattern on its internals, this version has a lot of features. This is a more affordable GAN 3x3
+  with most of the features you would get in a flagship. THIS VERSION IS UV-COATED WHICH AIDS
+  WITH GRIP AND GIVES THE PUZZLE A GLOSSY FINISH." (Emphasis added to mark the sentence this
+  record is cited for; the wording is the retailer's.)
+
+  Specifications table, verbatim and complete: "Manufacturer: GAN", "Type: 3x3",
+  "Added: 2023-11-13", "Gross Weight: 250g", "Dimensions: 56.0mm3", "Magnets: Magnetic".
+preservation_note: >-
+  Capture 20231205054506 fetched 2026-09-12 with content-encoding negotiation and read in full.
+  "Gross Weight: 250g" IS NOT RECORDED — it is a packaged figure, the rule-45 class, and 250g is
+  not the mass of a 56mm 3x3. "Added: 2023-11-13" is a catalogue-ingestion stamp of the kind
+  documented across this retailer and is not a release date; no date is attested from this page.
+  TWO FACTS THIS PAGE ESTABLISHES ARE DELIBERATELY NOT WRITTEN TO A RECORD YET. "Dimensions:
+  56.0mm" and "corner/core magnetization" describe the GAN356 MagLev as a MODEL, not the UV
+  configuration specifically, so putting them on the UV variant would assert that they
+  distinguish it. They belong on gan-356-maglev, whose `specs` is currently empty, and are
+  preserved here so that a later pass enriching the model has the evidence to hand.
+  The mechanism sentences ("repelling magnets in place of a spring", "6 tension adjustments, 6
+  center travel adjustments") corroborate the maglev and tension_compression values the baseline
+  variant already carries from thecubicle-gan356-maglev; they are not re-attested, because
+  restating an inherited value is what rule 23 exists to catch.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a UV-coated configuration of the GAN356 MagLev was sold, in the retailer's
+  own words — "This version is UV-coated which aids with grip and gives the puzzle a glossy
+  finish" — and, for the model generally, a 56.0mm dimension and corner/core magnetisation.
+  DOES NOT ESTABLISH: a release date, the puzzle's mass, or GAN's own name for the
+  configuration. "UV" here is the retailer's product-title suffix.
+status: sourced
