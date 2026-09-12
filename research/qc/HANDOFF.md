@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      517
-sources:       575
+sources:       576
 events:        4
 
 VALIDATION
@@ -33,105 +33,62 @@ npm run selftest:      every check behaved as specified
 
 LEDGER: 34 resolved / 16 open / 9 needs_human_decision (of 59)
 
-SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
-  Audit sweep #10 printed a MISS rate under a heading that read as a HIT rate, so its
-  worst row looked like its best and I worked them in the wrong order. Fixed, and both
-  rows were then worked to the end: the 88% row was 8 sound citations defeated by
-  `mfjs` vs "MoFang JiaoShi" (manufacturer tokens now resolve through recorded aliases),
-  the 26% row was a real defect — gancube-cn-core-technology-history preserved only
-  headline sentences while three attestation notes quoted sentences it never captured.
-  Re-fetched, excerpt extended, 26% -> 5%. The re-fetch also found GAN's CN nav filing
-  GAN356 X/XS under 旗舰魔方 in Jan 2025 while the .com nav excludes them in Aug 2026;
-  both now preserved on `families/gan-356 /positioning`, value unchanged.
-  THE `disputed` BLIND SPOT IS A CLASS. After rules 45/48 (2026-09-11) and sweep #10 it
-  had been written three times, so every `att.sources` reader was classified. Rules 8,
-  12 and 42 all leaked; each was proved to leak against a fixture BEFORE being fixed.
-  Rule 42 now evaluates PER POSITION. One `citedSourceIds()` in lib/archive.mjs; rules
-  43 and 9 deliberately excluded, with reasons in the code. 4 new selftest assertions.
-  Archive impact zero — measured: 0 sources are cited ONLY from a disputed block.
-  METHODOLOGY: RESEARCH_SPEC 3.6b added — completeness is FOUR dimensions (historical /
-  current / generation / variant), each with its detector and its measurement. The
-  current dimension had no spec section at all, and that is where P4-9's misses are:
-  15 of 20 confirmed-missing first listed 2024-2026. New audit sweep #13 measures it —
-  17 of 42 manufacturers have NO 2026 observation, MoYu among them on 79 records.
-  Generation completeness got the OPPOSITE treatment: a contiguity probe was tested and
-  FAILED (both its hits are renumbering artefacts), so the negative was written into the
-  spec and the probe was NOT shipped. P4-9's methodology half is closed; admission is
-  still the user's call.
-  SWEEP #12 COULD NOT SEE THE LEDGER, so it kept re-reporting DaYan paths rejected the day
-  before — commit c6e9c89 wrote that decision to the ledger and nowhere else. Scoping the
-  rejection harvest took three tries (too wide / too narrow / too many documents; 872 paths
-  at the worst point). Settled: source excerpts whole, ledger per issue, nothing else = 77
-  paths. Verified on two known negatives and one known positive, not on the count.
-  DEPTH: THE "unverified leads (no Wayback capture)" LIST WAS A RATE-LIMIT ARTEFACT, ALL
-  FIVE OF IT. Every path has captures. 4 variants added (DaYan LingYun V2 + LunHui DIY
-  kits, MoYu WeiLong DIY kit, MoYu WeiLong GTS Unstickered), 1 refused and escalated
-  (WeiLong V10 AI WCU Edition names a model the archive lacks — P4-9).
-  NOTE: commit 8141c8a's message says one-config went to 108. It went to 109 — only
-  moyu-weilong-original left the bare bucket, as the GTS already had two variants.
-  MORE DEPTH: 2 ZhanChi size DIY kits — the evidence was ALREADY in the archive and
-  already cited, while the 50mm baseline said "no axis was documented by any source
-  located" and cited a source titled "...50mm 3x3x3 DIY Kits". Probed that class
-  archive-wide: ZERO others (validated against the pre-fix record from git). NOT shipped
-  as a sweep — it keys on note prose, so a future zero would be meaningless.
-  YJ APPARI: the two SpeedCubeShop slugs are ONE Shopify product renamed — same product id
-  7129765478513 in three places, same SKU. REJECTED as a variant. The fetch also gave the
-  baseline its first config: core_corner_plus_piece + adjustment `other`.
-  PROBE CAVEAT: reading `"product_id"` page-wide returned a RECOMMENDED product's id and
-  would have inverted that answer. Read identity from the block bound to the page's own
-  handle, checked against the canonical URL.
-  GAN LANE: gan-356-maglev--uv-coated (retailer states the coating in its own sentence);
-  gan-i-carry-4--frosted; and the Year of the Horse edition GAINED its coating — it had an
-  edition name and NO config at all. Applied the Appari lesson: checked product ids before
-  calling them two products (they differ; Appari's matched).
-  FIRST-PARTY WIN: gancube.com's own MagLev page gives 81.2g. The archive had NO weight,
-  because the only figure was TheCubicle's 250g GROSS, correctly refused. REFUSING A GROSS
-  WEIGHT IS NOT THE END OF THE QUESTION.
-  THAT GENERALISED INTO SWEEP #14: 193 of 269 models carry no weight; 78 have a gross
-  weight in their own sources; 40 have an "Item Weight" IN THE SAME TABLE, already cited,
-  never recorded. Six recorded by hand (now 187 / 73 / 34). SHIPPED AS A LEAD COUNTER
-  WITH NO "SAFE" AUTO-SUBSET, because three attempts to build one failed: shared sources
-  (one GuHong table, six generations), sibling-puzzle sources (valk-3 cites a Valk 4 page,
-  142g = a 4x4), and SHORT DISCRIMINATING TOKENS — tokenisers drop <3-char tokens and in
-  this domain that token IS the generation number. Same defect as mfjs `3c` in sweep #10.
-  WEIGHT QUEUE WORKED: 34 records added/corrected (6 + 18 QiYi + 9 variant-layer + 1
-  corrected `unknown`). Queue 40 -> 8; weightless models 193 -> 161. Advisories 26 -> 28,
-  both new ones CORRECT (qiyi-qimeng-plus 262g/9cm, qiyi-warrior-plus 981g/18.8cm).
-  THE GUARD THAT WORKS is the source's own Dimensions vs the model's size_mm — independent
-  of tokenisation. It resolved qiyi-valk-3 (which cites a 4x4 and a 5x5 page for lineage).
-  IT ALSO HAS A DOCUMENTED FALSE POSITIVE: dayan-guhong-v3-m is 54mm like the Pro M whose
-  table it is. RULE 23 caught the worse error there — GuHong Pro M sells in 54/55/56mm, so
-  size is a VARIANT axis and the weight belongs on the 54mm-standard variant, not the model.
-  A false `unknown` ("searched and not found" while the value sat in a cited source) turned
-  up twice; measured the class = 3 candidates, all now correctly handled. NOT shipped as a
-  sweep: post-fix its false-positive rate is 100%, from shared multi-product sources.
-  MOYU'S BREADTH GAP IS FULLY CLOSED — both the prefix sweep AND a non-US source
-  (cubelelo-moyu-products-prefix-2026, 132 paths, IN). Non-US 23 -> 24. The non-US catalogue
-  EARNED it: Cubelelo sells GuoGuan and HuaMeng UNDER the MoYu prefix (independent
-  sub-brand attribution) and carries every P4-9 candidate generation — so those are NOT a
-  US-market artefact. Both sweeps cited on the 7 older MoYu baselines = two markets searched.
-  INDEPENDENCE CASE STUDY: Cubelelo's AoLong V2 LE prose is WORD-FOR-WORD TheCubicle's
-  (= one chain, not corroboration) but its STRUCTURED table is its own and independent —
-  product weight 93g vs package 146g, and a Color Scheme field that RESOLVED whether the
-  CUBE or the STAND is transparent green. Cite the two halves of such a page differently.
-  DISCOVERY SWEEPS RUN (3.6a): YJ MGC line, and MOYU — the archive's most-cited
-  manufacturer, top of the audit's "no sweep source" list for weeks. 23 -> 24 with a sweep;
-  failing both 13 -> 12. CITING IT IS WHAT COUNTED: the breadth check reads sources CITED
-  BY a manufacturer's records, so an uncited sweep source is invisible (correctly). Cited
-  on 7 MoYu + 6 MGC baselines as a RECORDED SEARCH, not an absence.
-  DEPTH FROM THOSE SWEEPS: 3x Super WeiLong LITE (packaging axis, retailer states it),
-  moyu-aolong-v2--limited-edition (the Lucas Etter sub-5 collector set — /edition/commemorates
-  DELIBERATELY UNSET, linking it would mean creating a person on a product blurb),
-  moyu-weilong-v2--unstickered, gan-356-maglev--uv-coated, gan-i-carry-4--frosted.
-  MY OWN ERROR, caught by RULE 42: I created a duplicate Sigma source and claimed it as a new
-  P4-9 find. Pass 4 Agent C had already found and escalated it on 2026-09-03, and its source
-  has a FULLER description than I extracted. Deleted; ledger + commit corrected.
-  GREP FOR AN EXISTING SOURCE BEFORE WRITING ONE — second time this class has happened.
-  TWO REUSABLE FINDINGS. TheCubicle's "Type: DIY Kits" does NOT mean unassembled — the GTS
-  Unstickered page says "This DIY Kit actually comes assembled but without any stickers",
-  so that category value alone never evidences assembly state. And "Added: 2018-11-07" now
-  appears on FOUR products spanning 2011-2016 releases, which demonstrates the artefact
-  rather than asserting it; the same 114g gross weight appears on two different puzzles.
+SESSION 2026-09-12 — 39 commits from 6249aac
+  COUNTS: variants 501->517, sources 555->576, one-config models 112->104,
+          weightless models 193->160, audit sweeps 12->14. Advisories 26->28 (both new
+          ones CORRECT: qiyi-qimeng-plus 262g/9cm, qiyi-warrior-plus 981g/18.8cm).
+
+  A. PROBE AND RULE FIXES
+   - Sweep #10 printed a MISS rate under a heading that read as a HIT rate, so its worst row
+     looked like its best and I worked them in the wrong order. Also blind to disputed, and
+     ignorant of manufacturer aliases (`mfjs` vs "MoFang JiaoShi" = 88% false miss). All fixed.
+   - THE `disputed` BLIND SPOT IS A CLASS. After rules 45/48 and sweep #10 it had been written
+     3x, so every `att.sources` reader was classified. RULES 8, 12 and 42 ALL LEAKED; each was
+     PROVED to leak against a fixture BEFORE the fix. Rule 42 now evaluates PER POSITION.
+     One `citedSourceIds()` in lib/archive.mjs. Rules 43 and 9 deliberately excluded (reasons
+     in code). 4 new selftest assertions. Archive impact zero (measured).
+   - Sweep #12 could not see the LEDGER, where this project records decisions, so it kept
+     re-reporting rejected DaYan paths. Scoping the harvest took THREE tries (too wide / too
+     narrow / too many documents — 872 paths at worst). Settled: excerpts whole + ledger per
+     issue = 77. Verified on 2 known negatives and 1 known positive, not on the count.
+
+  B. METHODOLOGY (RESEARCH_SPEC)
+   - 3.6b ADDED: completeness is FOUR dimensions (historical / current / generation / variant),
+     each with detector + measurement. The CURRENT dimension had no section, and that is where
+     P4-9's misses are: 15 of 20 confirmed-missing first listed 2024-2026. New sweep #13.
+     Generation completeness got the OPPOSITE treatment — a contiguity probe was TESTED and
+     FAILED (both hits are renumbering artefacts), so the negative was written and the probe
+     NOT shipped.
+   - 3.6a THIRD CHECK ADDED: sweep the retailer's BRAND FACET (Shopify `vendor` in
+     /products/<handle>.json + brand collection), not only URL slugs. A prefix sweep is
+     evidence about slugs, not about stock.
+   - Sweep #14 ADDED: rule 45 refuses gross weights and left records with NO weight — 193 of
+     269 models. SHIPPED AS A LEAD COUNTER WITH NO AUTO-SUBSET because three attempts to build
+     one failed (shared sources / sibling-puzzle sources / short discriminating tokens).
+
+  C. RESEARCH
+   - WEIGHT QUEUE: 34 records added or corrected. Queue 40->8. THE GUARD THAT WORKS is the
+     source's own Dimensions vs the model's size_mm — independent of tokenisation. It resolved
+     qiyi-valk-3 (which cites a 4x4 and a 5x5 page for lineage) AND produced its own documented
+     false positive (dayan-guhong-v3-m is 54mm like the Pro M whose table it is). RULE 23 caught
+     the worse error there: GuHong Pro M sells in 54/55/56mm, so size is a VARIANT axis.
+   - THE "unverified leads (no Wayback capture)" LIST WAS A RATE-LIMIT ARTEFACT, ALL FIVE.
+   - 16 new variants incl. 2 DaYan DIY kits, 2 ZhanChi size DIY kits (evidence ALREADY cited by
+     the record that said "no axis found"), MoYu WeiLong DIY kit + GTS/V2 Unstickered, 3 Super
+     WeiLong LITE, WR M 2021 Lite, MoYu AI magnetic, WeiLong V9 5th config, GAN MagLev UV,
+     i Carry 4 Frosted, moyu-aolong-v2--limited-edition (Lucas Etter sub-5 collector set —
+     /edition/commemorates DELIBERATELY UNSET; linking it means creating a person on a blurb).
+   - MOYU'S BREADTH GAP FULLY CLOSED (prefix sweep + non-US Cubelelo). CITING a sweep is what
+     makes it count — the breadth check reads sources CITED BY a manufacturer's records.
+   - GAN's own page gave the MagLev's 81.2g. The archive had NO weight because the only figure
+     was a 250g GROSS, correctly refused. REFUSING A GROSS WEIGHT IS NOT THE END OF THE QUESTION.
+
+  D. MY OWN ERRORS, both caught by the archive's checks
+   - Created a DUPLICATE Ziina Sigma source and claimed it as a new P4-9 find; Pass 4 Agent C
+     had found and escalated it on 2026-09-03 with a FULLER description than I extracted.
+     RULE 42 caught it on locator+capture. Deleted; ledger and commit corrected.
+     GREP FOR AN EXISTING SOURCE BEFORE WRITING ONE.
+   - Wrote an attestation into an `availability:` block; the schema caught it.
 
 PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
   CLOSED   P4-5 (rule 41 11 -> 0, every baseline SEARCHED not backfilled)
