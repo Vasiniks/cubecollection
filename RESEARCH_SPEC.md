@@ -224,6 +224,71 @@ catalogues. Do not treat retailer taxonomy, URL slugs, or product naming as line
 that error produced the withdrawn DaYan/QiYi "Guhong migration" hypothesis. Forums and
 community sources are for **discovery and corroboration, never automatic truth**.
 
+### 3.6b Completeness is four questions, not one
+
+*Added 2026-09-12 after P4-9. Section 3.6a asks for ARCHIVED sweeps, which look backwards.
+Nothing in it requires anyone to look at what is on sale now, and that is the measured root
+cause of what P4-9 found.*
+
+"Is this manufacturer complete?" is four different questions with four different answers, four
+different failure modes and four different detectors. Conflating them is how an archive with
+555 sources and a documented discovery method misses the current flagship of its most-cited
+brand. Each dimension below states what it asks, how it is measured, and what the archive
+measured on 2026-09-12 — so a later reader can re-run the number rather than trust this
+paragraph.
+
+**1. Historical completeness — can the archive establish what existed?**
+Covered by 3.6a and by nothing else. Detector: archived `/products/` prefix sweeps and at least
+one non-US retailer. *Measured:* 23 of 42 manufacturers with cited sources carry a 3.6a-style
+sweep source; 19 do not. This is the dimension the method was built for and it is the one in
+best repair.
+
+**2. Current completeness — can the archive establish what is being sold NOW?**
+Covered by nothing in this spec before today. Detector: `npm run catalogue-gap -- --fetch`,
+which diffs live retailer catalogues against the inventory. *Measured:* of the 20 candidates
+P4-9 confirmed as genuinely missing, **15 first appeared in retailer catalogues in 2024-2026**
+and only 5 before that. The misses are not scattered through history; they are concentrated in
+the present. A second measurement says where to look: 17 of the 42 manufacturers with cited
+sources have **no observation from 2026 at all** among the sources their records cite — MoYu
+included, on 79 records, and MoYu accounts for 8 of the 14 model-layer lines P4-9 found
+missing. Note what this is NOT: the archive holds 115 cited 2026 sources overall, so the
+deficiency is uneven distribution, not an absence of recent looking.
+**Requirement:** a manufacturer's enumeration may not be called current without a recorded
+current-catalogue check, and the recorded outcome must name the date and the retailers queried.
+As with 3.6a, "checked, nothing new" is a result and must be written down; absence of a recorded
+check is *not searched*, never *nothing there*.
+
+**3. Generation completeness — does an admitted line include its meaningful succession?**
+Detector: **there is no reliable structural one, and this was tested rather than assumed.**
+A version-contiguity probe over all 132 families found 11 with two or more version-numbered
+models and flagged 2 as having interior gaps. Both are false positives. `moyu-weilong` appears
+to be "missing V3-V8" because the line actually ran V1, V2, GTS, GTS2, GTS3, WR, WR M 2020,
+WR M 2021, then **V9** — MoYu renumbered to match the generation count, so V3-V8 never existed
+as products. `moyu-rs3m` appears to skip V3-V4 across a 2020-to-V5 jump, and "Super RS3M V2" is
+a Super-line V2 rather than an RS3M one. A manufacturer that renames, renumbers or runs two
+parallel naming schemes defeats contiguity entirely, and this archive has all three.
+**Requirement:** succession is established from a manufacturer's own statements or from dated
+retail evidence, never from arithmetic on version numbers. A numeric gap is a lead to be
+researched and is not by itself evidence that anything is missing.
+
+**4. Variant completeness — does an admitted model have its evidenced configurations?**
+Already defined by §4.3 and P4-3, including the rule that zero variants means NOT ASSESSED and
+nothing else. Detector: `npm run audit`, variant-coverage block. *Measured:* 269 of 269 models
+assessed; 112 carry one configuration, 60 carry configuration detail, 97 carry several.
+
+**These do not substitute for one another, and improving one does not improve the others.** A
+manufacturer can be historically well-preserved and currently blind (MoYu), currently visible
+and historically thin (a 2026-only brand), or complete at model level and unassessed at variant
+level. Report them separately and never quote one as though it answered another.
+
+**What this section does not license.** It does not license adding models. A current-catalogue
+check produces *candidates*; admission still runs through identity, evidence, generation and
+eligibility, and the inventory stays frozen until those are satisfied. P4-9 is the worked
+example: 261 candidates were adjudicated and **48% were correctly not gaps** — 60 were not 3x3
+at all, 32 were retailer service listings, 14 were the archive's own models under another retail
+name, 12 were variants and 6 were bundles. A detector that fires is the beginning of research,
+not the end of it.
+
 ### 3.7 Translation
 
 Machine-translated material keeps the original text in `excerpt` and gets a

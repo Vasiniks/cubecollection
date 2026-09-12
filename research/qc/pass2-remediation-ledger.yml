@@ -1810,6 +1810,44 @@ issues:
       WRM V9 is wr-m-2021 under another scheme, that candidate is alternate_naming and the gap
       is smaller; if not, both V9 and V10 are missing. Settling it needs a statement tying a WRM
       version number to a year, which this pass did not find.
+
+      2026-09-12 — THE METHODOLOGY HALF OF THIS ISSUE IS NOW CLOSED, separately from the
+      admission half, which remains the user's decision. The question asked was whether the
+      archive needs more than one notion of completeness. It does, and the evidence is measured
+      rather than argued. RESEARCH_SPEC 3.6b now defines four dimensions and audit sweep #13
+      measures the one nothing covered.
+
+      WHY IT IS FOUR AND NOT TWO. Historical completeness (can we establish what existed) is
+      3.6a's subject and is the dimension in best repair: 23 of 42 manufacturers with cited
+      sources carry a sweep source. Current completeness (can we establish what is sold now) had
+      NO spec section at all, and is where the failure lives — of the 20 candidates this issue
+      confirmed as genuinely missing, 15 first appeared in retailer catalogues in 2024-2026 and
+      only 5 before. Generation completeness turned out to need a different treatment from
+      either. Variant completeness was already defined by §4.3.
+
+      THE RECENCY MEASUREMENT, AND WHAT IT IS NOT. 17 of the 42 manufacturers with cited sources
+      have no observation from 2026 among the sources their records cite. MoYu is on that list
+      carrying 79 records, and MoYu accounts for 8 of the 14 model-layer lines this issue found
+      missing — the correlation the audit predicted, now visible as a standing number. But the
+      archive holds 115 cited sources observed in 2026, so this is NOT an archive that stopped
+      looking. It is recent looking unevenly distributed, and the sweep says so in its own
+      output so the number cannot be quoted as the other thing.
+
+      GENERATION COMPLETENESS HAS NO STRUCTURAL DETECTOR, and this was TESTED rather than
+      assumed. A version-contiguity probe across all 132 families found 11 with two or more
+      version-numbered models and flagged 2 interior gaps. Both are false positives.
+      `moyu-weilong` looks to be missing V3-V8 because the line ran V1, V2, GTS, GTS2, GTS3, WR,
+      WR M 2020, WR M 2021, then V9 — MoYu renumbered to match the generation count, so V3-V8
+      never existed. `moyu-rs3m` looks to skip V3-V4 across a 2020-to-V5 jump, and its "Super
+      RS3M V2" is a Super-line V2, not an RS3M one. Renaming, renumbering and parallel naming
+      schemes each defeat contiguity, and this archive has all three. The probe was therefore
+      NOT shipped as a sweep: 3.6b records the negative result and requires succession to come
+      from manufacturer statements or dated retail evidence instead of arithmetic. Writing down
+      a detector that does not work is worth as much here as one that does.
+
+      NO TAXONOMY CHANGE. 3.6b states in its own text that a current-catalogue check produces
+      candidates and nothing more, and cites this issue as the worked example: 261 candidates
+      adjudicated, 48% correctly not gaps.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

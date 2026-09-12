@@ -553,5 +553,57 @@ line('  or a product held under a name too different to match. Every number need
 line('  NOTE the largest entries are usually MODEL-layer gaps, not variant work: the WeiLong V11');
 line('  and QiYi AI paths belong to P4-9 and cannot be acted on while the taxonomy is frozen.');
 
+// ---- 13. observation recency per manufacturer (RESEARCH_SPEC 3.6b, dimension 2) -----------
+//
+// The dimension 3.6a does not cover. 3.6a asks for ARCHIVED sweeps, which look backwards; this
+// asks whether anyone has looked at a manufacturer RECENTLY. P4-9 measured why it matters: of
+// the 20 candidates confirmed as genuinely missing from the inventory, 15 first appeared in
+// retailer catalogues in 2024-2026. The misses are concentrated in the present.
+//
+// READ THIS AS DISTRIBUTION, NOT VOLUME. The archive holds 115 cited sources observed in 2026,
+// so it is not short of recent looking - the recent looking is unevenly spread. MoYu is the
+// entry to read: the most heavily cited manufacturer in the archive, and the newest observation
+// any MoYu record cites is 2025, while MoYu accounts for 8 of the 14 model-layer lines P4-9
+// found missing.
+//
+// An observation year is the Wayback capture year where there is one, else the `accessed` year.
+// A manufacturer with no dated observation at all is not listed: that is rule 7 and sweep #2
+// business, not a recency question.
+head('Observation recency per manufacturer (RESEARCH_SPEC 3.6b)');
+const NOW_YEAR = new Date().getUTCFullYear();
+const obsYear = (sdoc) => {
+  const m = /\/web\/(\d{4})/.exec(sdoc?.archive_url ?? '');
+  if (m) return Number(m[1]);
+  const a = Number(String(sdoc?.accessed ?? '').slice(0, 4));
+  return Number.isInteger(a) && a > 1990 ? a : null;
+};
+const recency = new Map();
+for (const r of [...fam, ...mod, ...va]) {
+  const doc = r.doc;
+  const mfr = doc.manufacturer_id ?? byId.get(doc.model_id)?.doc?.manufacturer_id;
+  if (!mfr) continue;
+  if (!recency.has(mfr)) recency.set(mfr, { newest: null, records: 0 });
+  const e = recency.get(mfr);
+  e.records += 1;
+  for (const att of Object.values(doc.attestations ?? {})) {
+    for (const id of citedSourceIds(att)) {
+      const y = obsYear(srcById.get(id));
+      if (y && (e.newest === null || y > e.newest)) e.newest = y;
+    }
+  }
+}
+const datedMfrs = [...recency.entries()].filter(([, e]) => e.newest !== null);
+const stale = datedMfrs.filter(([, e]) => e.newest < NOW_YEAR).sort((a, b) => a[1].newest - b[1].newest);
+line(`  manufacturers with any dated observation : ${datedMfrs.length}`);
+line(`  whose newest observation predates ${NOW_YEAR}   : ${stale.length}`);
+line('  oldest first, with the record count each one is carrying:');
+for (const [mfr, e] of stale) {
+  line(`     ${String(e.newest)}  ${mfr.padEnd(18)} ${String(e.records).padStart(3)} records`);
+}
+line('  NOT A DEFECT LIST. A discontinued brand SHOULD have an old newest-observation; cube4you');
+line('  at 2017 is the archive working correctly. What this ranks is where a current-catalogue');
+line('  check under 3.6b would buy the most, and a large record count beside an old year is the');
+line('  signal - an actively researched manufacturer nobody has looked at lately.');
+
 line();
 line('audit complete — advisory only, nothing here blocks a build.');
