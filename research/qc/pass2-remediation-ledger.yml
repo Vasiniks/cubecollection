@@ -2673,6 +2673,33 @@ issues:
       80.0g it finds for `shengshou-yufeng-original` is the V2 page's — which that record's own
       note already states in plain words. A check that is right once and wrong twice, for a
       reason that cannot be filtered out, is not worth a reader's attention.
+
+      2026-09-12 — ADVERSARIAL PASS ON SOURCE CLASSIFICATION, prompted by finding that the
+      archive had caught `theqiyi.com` posing as QiYi's own site. Two probes, both clean.
+
+      FIRST: does a documented demotion actually apply? A source's reliability_note can say it
+      was demoted while the `tier` override that does the demoting was never written, and the
+      note would then describe something that did not happen — `sourceTier()` reads `tier` first
+      and falls back to the kind's tier, so a missing field silently restores tier 1. Twelve
+      sources claim a demotion or explicit override in their notes. All twelve carry an actual
+      integer `tier`. `theqiyi-about-us` computes to 4, as its note says.
+
+      SECOND, the inverse: is any `manufacturer_official` source hosted somewhere that is not the
+      manufacturer's? That is the shape the theqiyi case took. Eleven sources have a domain not
+      matching the citing manufacturer's recorded website, and ALL ELEVEN are explained. Six are
+      getgocube.com cited by particula — GoCube is Particula's own product brand. Two are
+      archive.org, an artefact of my own domain extraction reading a CDX query URL rather than
+      the page it enumerates. Three carry explicit reasoning already: cubingchina-about-mf8 is
+      first-party for CUBING CHINA's founding narrative, which is the claim it is cited for;
+      lanlantoy-made-in-china-profile says in its own note that it is classified
+      manufacturer_official rather than the vocabulary's default `marketplace` because the
+      content is vendor-authored; spinmaster-rubiks-acquisition-2021 is Spin Master's own
+      announcement, and Spin Master owns Rubik's.
+
+      NEITHER PROBE SHIPPED. The first has nothing left to find and would report zero forever;
+      the second has an 11-of-11 false-positive rate on this archive, two of those from the
+      probe's own URL handling. Recorded here so the next person does not spend the same hour
+      discovering that the archive already handled it.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
