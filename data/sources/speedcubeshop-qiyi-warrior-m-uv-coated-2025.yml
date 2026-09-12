@@ -1,0 +1,28 @@
+# source: speedcubeshop-qiyi-warrior-m-uv-coated-2025
+# Created 2026-09-12 from speedcubeshop-vendor-facet-sweep-2026-09 — the brand-collection
+# enumeration that RESEARCH_SPEC 3.6a's third check calls for. The archive held one configuration of the Warrior M; this is a second.
+id: speedcubeshop-qiyi-warrior-m-uv-coated-2025
+entity: source
+kind: retailer
+title: "QiYi Warrior M 3x3 (Magnetic, UV Coated) — SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/qiyi-warrior-m-3x3-magnetic-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250716231851id_/https://speedcubeshop.com/products/qiyi-warrior-m-3x3-magnetic-uv-coated"
+excerpt: |-
+  Page title as captured: "QiYi Warrior M 3x3 (Magnetic, UV Coated) | SpeedCubeShop". Shopify product id 7355366539377.
+  Colourway option offered: "Stickerless".
+
+  Product description, verbatim: "QiYi Warrior M 3x3 (Magnetic, UV Coated) strives to be the best entry-level speed cube while providing high-end features! UV Coating - Super glossy plastic, high grip. Magnetic - Faster, more accurate turning that "clicks" into place. Small magnets installed inside edge and corner pieces. Key features - Anti-stick piece design."
+preservation_note: >-
+  Capture 20250716231851 fetched 2026-09-12 with content-encoding negotiation and read in full. No specification table is preserved in this capture, and no size, weight or date is attested from it. The magnet sentence describes EDGE AND CORNER pieces, which is piece magnetisation and not a core system; it is quoted rather than mapped, because vocab/magnet-configurations.yml asks for a layout and "inside edge and corner pieces" names where the magnets sit without naming the archive's term for it.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a UV-coated configuration of the QiYi Warrior M was sold, described by the retailer as "super glossy plastic, high grip", in a stickerless body; and that the Warrior M's magnets sit inside edge and corner pieces.
+  DOES NOT ESTABLISH: a release date, any dimension or mass, or QiYi's own name for the configuration. "UV Coated" is the retailer's title suffix.
+status: sourced

@@ -1,0 +1,51 @@
+# variant: qiyi-warrior-w--jelly-edition
+# Depth research 2026-09-12, found by the brand-facet check. The axis is the PLASTIC, not a
+# printed or applied colour.
+id: qiyi-warrior-w--jelly-edition
+entity: variant
+model_id: qiyi-warrior-w
+name: "QiYi Warrior W (Jelly Edition)"
+scope_class: core
+colorway:
+  designation: "Jelly"
+  application: stickerless
+  body:
+    translucency: translucent
+edition:
+  types: [standard]
+  designation: "Jelly Edition"
+status: stub
+attestations:
+  /colorway/body/translucency:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-w-jelly-2023]
+    note: >-
+      "the TRANSLUCENT plastic will definitely stand out among your collection". `translucent`
+      rather than `transparent` because that is the retailer's own word; the archive records a
+      `transparent` value elsewhere where a source says transparent, and does not move a source
+      between the two.
+  /colorway/designation:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-w-jelly-2023]
+    note: '"Jelly", from the product title and the purchase option "Stickerless (Jelly)".'
+  /colorway/application:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-w-jelly-2023]
+    note: >-
+      The purchase option reads "Stickerless (Jelly)" — the colour is in the translucent plastic,
+      not applied over it.
+  /edition/designation:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-w-jelly-2023]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-w-jelly-2023]
+    note: >-
+      `standard` AND NOT `limited`, although the product is called an "Edition". Nothing on the
+      page states a bounded run, and this archive already draws that distinction explicitly on
+      yj-mgc-evo-ii--enhanced-core-positioning-edition: the word "Edition" in a product name is
+      not by itself evidence of a limited release.
+      FOUR OTHER PURCHASE OPTIONS ON THE SAME PAGE — "Factory", "Abstract Wave", "Distorted",
+      "Gamer" — are the retailer's own sticker sets and finishing options, not QiYi
+      configurations, and are deliberately not recorded. Same class as the "[CPS Serviced]"
+      option refused on the MoYu WR M 2021 Lite page.

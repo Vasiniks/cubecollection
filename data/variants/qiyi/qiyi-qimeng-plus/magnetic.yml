@@ -1,0 +1,39 @@
+# variant: qiyi-qimeng-plus--magnetic
+# Depth research 2026-09-12, found by the brand-facet check. The magnetic sibling of the 9cm
+# QiMeng Plus the archive already held.
+id: qiyi-qimeng-plus--magnetic
+entity: variant
+model_id: qiyi-qimeng-plus
+name: "QiYi QiMeng Plus (Magnetic)"
+scope_class: core
+config:
+  magnet_configuration: unknown
+edition:
+  types: [standard]
+  designation: "Magnetic"
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-plus-magnetic-2024]
+    note: >-
+      "Magnetic" is the retailer's title suffix, on a product listed separately from the
+      non-magnetic 9cm QiMeng Plus the archive already records.
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-plus-magnetic-2024]
+    note: >-
+      A regular retail configuration distinguished by magnetisation, offered in stickerless and
+      black bodies — STOCK COLOURWAYS, collapsed into this one variant. The "5ml", "10ml" and
+      "15ml" options on the same page are lubricant add-ons and are not configurations.
+  /config/magnet_configuration:
+    confidence: unknown
+    sources: [speedcubeshop-qiyi-qimeng-plus-magnetic-2024]
+    note: >-
+      SEARCHED AND NOT ESTABLISHED. The page says "Magnetic" in its title and nothing further
+      about magnets anywhere in its description; vocab/magnet-configurations.yml requires a
+      LAYOUT rather than a yes/no, so any specific value would be invented. `unknown` is the
+      honest record: this configuration IS magnetised — that is what distinguishes it — and the
+      layout is the open question.
+      The model's 90.0mm size and 262g mass are recorded from a different retailer and are NOT
+      restated here; nothing on this page measures anything.

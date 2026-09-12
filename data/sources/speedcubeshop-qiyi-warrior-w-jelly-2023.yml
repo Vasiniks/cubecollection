@@ -1,0 +1,28 @@
+# source: speedcubeshop-qiyi-warrior-w-jelly-2023
+# Created 2026-09-12 from speedcubeshop-vendor-facet-sweep-2026-09 — the brand-collection
+# enumeration that RESEARCH_SPEC 3.6a's third check calls for. The archive held one configuration of the Warrior W; this is a second.
+id: speedcubeshop-qiyi-warrior-w-jelly-2023
+entity: source
+kind: retailer
+title: "QiYi Warrior W 3x3 (Jelly Edition) — SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/qiyi-warrior-w-3x3-jelly-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20231004160956id_/https://speedcubeshop.com/products/qiyi-warrior-w-3x3-jelly-edition"
+excerpt: |-
+  Page title as captured: "QiYi Warrior W 3x3 (Jelly Edition) | SpeedCubeShop". Shopify product id 1521021124721.
+  Purchase options offered: "Stickerless (Jelly)", and separately "Factory", "Abstract Wave", "Distorted" and "Gamer" — the latter four being this retailer's own sticker or service options rather than QiYi configurations.
+
+  Product description, verbatim: "QiYi Warrior W 3x3 (Jelly Edition) is a "delicious" option when it comes to entry-level speedcubes! The Warrior W has controlled, smooth turning and the translucent plastic will definitely stand out among your collection! This Jelly cube is so good you will want to eat it!"
+preservation_note: >-
+  Capture 20231004160956 fetched 2026-09-12 with content-encoding negotiation and read in full. No specification table is preserved and no size, weight or date is attested. THE FOUR NON-JELLY PURCHASE OPTIONS ARE NOT CONFIGURATIONS OF THE PUZZLE: "Factory", "Abstract Wave", "Distorted" and "Gamer" are this retailer's own sticker sets and finishing options, the same class as the "[CPS Serviced]" option refused on the MoYu WR M 2021 Lite page.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a "Jelly Edition" of the QiYi Warrior W was sold, distinguished by TRANSLUCENT plastic, stickerless.
+  DOES NOT ESTABLISH: a release date, a run size, any dimension or mass, or whether "Jelly" is QiYi's word or the retailer's. Nothing here says the edition was limited and it is not recorded as one.
+status: sourced

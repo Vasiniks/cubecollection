@@ -1,0 +1,27 @@
+# source: speedcubeshop-qiyi-qimeng-v3-icy-amber-2025
+# Created 2026-09-12 from speedcubeshop-vendor-facet-sweep-2026-09 — the brand-collection
+# enumeration that RESEARCH_SPEC 3.6a's third check calls for. A named transparent colourway of the tiled QiMeng V3, alongside the Tiled Bumpy the archive already holds.
+id: speedcubeshop-qiyi-qimeng-v3-icy-amber-2025
+entity: source
+kind: retailer
+title: "QiYi QiMeng 3x3 V3 (Tiled) - Icy Amber — SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/qiyi-qimeng-3x3-v3-tiled-icy-amber"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250712132743id_/https://speedcubeshop.com/products/qiyi-qimeng-3x3-v3-tiled-icy-amber"
+excerpt: |-
+  Page title as captured: "QiYi QiMeng 3x3 V3 (Tiled) - Icy Amber | SpeedCubeShop". Shopify product id 7352478859377.
+
+  Product description, verbatim: "QiYi QiMeng 3x3 V3 (Tiled) - Icy Amber features a stunning transparent "ice" plastic with transparent colored tiles. The QiMeng V3 3x3 is an economical speed cube intended to provide superior entry-level performance. Key features - Transparent plastic. Colored tiles in place of vinyl stickers."
+preservation_note: >-
+  Capture 20250712132743 fetched 2026-09-12 with content-encoding negotiation and read in full. No specification table is preserved and no size, weight or date is attested. WHY THIS IS NOT COLLAPSED AS A STOCK COLOURWAY: the archive's anti-explosion rule folds black/white/stickerless stock options into one variant, and it applies to colour CHOICES within one product. This is a separately listed product with its own Shopify id whose distinguishing feature is the PLASTIC ITSELF being transparent, plus transparent tiles — a material claim, not a colour choice, and the same treatment the archive gives GAN's named Crystal Blue.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a named "Icy Amber" configuration of the tiled QiMeng V3 was sold, with transparent plastic and transparent coloured tiles in place of vinyl stickers.
+  DOES NOT ESTABLISH: a release date, a run size, or whether "Icy Amber" is QiYi's name or the retailer's. It is not recorded as a limited edition — nothing on the page says so.
+status: sourced

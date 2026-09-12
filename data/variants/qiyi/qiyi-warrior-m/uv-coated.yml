@@ -1,0 +1,39 @@
+# variant: qiyi-warrior-m--uv-coated
+# Depth research 2026-09-12, found by the brand-facet check RESEARCH_SPEC 3.6a added today.
+id: qiyi-warrior-m--uv-coated
+entity: variant
+model_id: qiyi-warrior-m
+name: "QiYi Warrior M (UV Coated)"
+scope_class: core
+config:
+  coating: uv
+edition:
+  types: [standard]
+  designation: "UV Coated"
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-m-uv-coated-2025]
+    note: >-
+      The retailer gives the treatment its own headed clause rather than leaving it to the title:
+      "UV Coating - Super glossy plastic, high grip." `uv` in vocab/coatings.yml is a
+      manufacturer-applied UV-cured coating, which is what a factory configuration of the product
+      denotes; `aftermarket` would be wrong, as no service is involved.
+  /edition/designation:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-m-uv-coated-2025]
+    note: >-
+      "UV Coated" is the retailer's title suffix. No QiYi first-party source naming the
+      configuration was located this pass.
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-warrior-m-uv-coated-2025]
+    note: >-
+      A regular retail configuration distinguished by a surface coating — no run size, no
+      festival or anniversary naming, no collaboration.
+      ONE CLAIM ON THIS PAGE IS DELIBERATELY NOT MAPPED. "Small magnets installed inside edge and
+      corner pieces" describes PIECE magnetisation, but vocab/magnet-configurations.yml asks for
+      a layout and the sentence names where the magnets sit without naming this archive's term
+      for it. It is preserved in the source rather than forced into `single_layer` or
+      `core_corner`, and it describes the Warrior M generally rather than this configuration.

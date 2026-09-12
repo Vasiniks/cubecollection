@@ -1,0 +1,54 @@
+# variant: qiyi-qimeng-v3--tiled-icy-amber
+# Depth research 2026-09-12, found by the brand-facet check. Sits alongside the Tiled Bumpy the
+# archive already holds; what distinguishes it is the plastic, not the tiling.
+id: qiyi-qimeng-v3--tiled-icy-amber
+entity: variant
+model_id: qiyi-qimeng-v3
+name: "QiYi QiMeng V3 (Tiled, Icy Amber)"
+scope_class: core
+colorway:
+  designation: "Icy Amber"
+  application: inlaid
+  body:
+    plastic_color_name: "transparent \"ice\" plastic"
+    translucency: transparent
+edition:
+  types: [standard]
+  designation: "Tiled Icy Amber"
+status: stub
+attestations:
+  /colorway/designation:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-v3-icy-amber-2025]
+    note: '"Icy Amber", from the retailer''s product title.'
+  /colorway/body/translucency:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-v3-icy-amber-2025]
+    note: >-
+      'a stunning transparent "ice" plastic with transparent colored tiles', and a key-features
+      line reading "Transparent plastic". `transparent` is the source's own word.
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-v3-icy-amber-2025]
+    note: 'The retailer''s descriptive term, kept verbatim as sourced.'
+  /colorway/application:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-v3-icy-amber-2025]
+    note: >-
+      "Colored tiles in place of vinyl stickers" — tiles are set into the piece faces, which is
+      vocab/colorway-application's `inlaid` and not `stickered`. The archive's sibling variant
+      records this model's tiled form too, under the designation "Tiled Bumpy".
+  /edition/designation:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-v3-icy-amber-2025]
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-qiyi-qimeng-v3-icy-amber-2025]
+    note: >-
+      WHY THIS IS NOT COLLAPSED AS A STOCK COLOURWAY, since that rule exists precisely to stop
+      records like this multiplying. The anti-explosion rule folds black, white and stickerless
+      CHOICES within one product into a single variant. This is a separately listed product with
+      its own Shopify id whose distinguishing feature is that the PLASTIC ITSELF is transparent
+      and the tiles with it — a material claim rather than a colour choice, and the same
+      treatment the archive gives GAN's named Crystal Blue and Love Pink.
+      Not recorded as limited: nothing on the page states a bounded run.

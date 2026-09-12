@@ -1,0 +1,28 @@
+# source: speedcubeshop-qiyi-qimeng-plus-magnetic-2024
+# Created 2026-09-12 from speedcubeshop-vendor-facet-sweep-2026-09 — the brand-collection
+# enumeration that RESEARCH_SPEC 3.6a's third check calls for. The archive held one configuration of the 9cm QiMeng Plus; this is its magnetic sibling.
+id: speedcubeshop-qiyi-qimeng-plus-magnetic-2024
+entity: source
+kind: retailer
+title: "QiYi QiMeng Plus Big 3x3 9cm (Magnetic) — SpeedCubeShop"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/qiyi-qimeng-plus-big-3x3-9cm-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240226173439id_/https://speedcubeshop.com/products/qiyi-qimeng-plus-big-3x3-9cm-magnetic"
+excerpt: |-
+  Page title as captured: "QiYi QiMeng Plus Big 3x3 9cm (Magnetic) | SpeedCubeShop". Shopify product id 6951568081009.
+  Purchase options offered: "Stickerless (Bright)" and "Black"; the "5ml", "10ml" and "15ml" options on the same page are lubricant add-ons, not cube configurations.
+
+  Product description, verbatim: "QiYi QiMeng Plus Big 3x3 9cm (Magnetic) is a larger-sized 3x3 that functions very well as a speed cube despite the increase in size! To our surprise, the QiMeng Plus corner cuts and turns very well and is able to be easily speedsolved! This item is a great gift idea and is tons of fun! *For reference, a typical 3x3 is usually 56mm. *Regular sized cube not included with purchase."
+preservation_note: >-
+  Capture 20240226173439 fetched 2026-09-12 with content-encoding negotiation and read in full. No specification table is preserved in this capture. The archive already records this model at 90.0mm and 262g from thecubicle-qiyi-qimeng-plus-3x3-m-9cm-product, and those figures are NOT re-attested here — this page corroborates the 9cm size in prose ("*For reference, a typical 3x3 is usually 56mm") but adds no measurement of its own.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a magnetic configuration of the 9cm QiYi QiMeng Plus was sold, in stickerless and black bodies.
+  DOES NOT ESTABLISH: a release date, a magnet layout — the page says "Magnetic" and nothing more — or any measurement.
+status: sourced
