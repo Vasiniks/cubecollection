@@ -4,8 +4,7 @@
 # defensible inference, but nothing a reader could check. This is the governing document itself.
 id: wca-regulations-2026-04
 entity: source
-kind: manufacturer_official
-tier: 1
+kind: standards_body
 title: "WCA Regulations, version April 1, 2026 (official commit 415be08)"
 publisher: "World Cube Association"
 url: "https://www.worldcubeassociation.org/regulations/full/"
@@ -55,11 +54,11 @@ last_checked: "2026-09-11"
 reliability_note: |-
   Tier 1. The WCA is the governing body and this is its own governing document — for questions of
   WCA competition legality there is no higher source.
-  `kind: manufacturer_official` is a deliberate compromise and is recorded as one: the archive's
-  source-kind vocabulary has no value for a standards body or governing organisation, and this is
-  neither a retailer, a press piece, a review, a forum, a wiki nor a marketplace. The tier is set
-  explicitly rather than derived, so the classification does not quietly understate it. A
-  `standards_body` kind would be the correct long-term fix.
+  `kind: standards_body` was ADDED to vocab/source-kinds.yml on 2026-09-11 for this record.
+  It was first filed as `manufacturer_official` with an explicit tier-1 override and a note
+  calling that a compromise; the vocabulary now has the right value, so the tier DERIVES
+  correctly and no override is needed. A governing body is not a manufacturer, and for questions
+  of competition legality it outranks one.
   ESTABLISHES: what the April 2026 Regulations require of a puzzle's coloured parts, modifications
   and size.
   DOES NOT ESTABLISH: whether any particular product complies. Applying 3d2 to a thermochromic or

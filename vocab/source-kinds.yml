@@ -21,6 +21,15 @@ values:
     tier: 1
     label: "Manual"
     description: "Documentation shipped with the product."
+  - value: standards_body
+    tier: 1
+    label: "Standards body"
+    description: "A governing or standards organisation's own regulations, rulings or official
+      publications - for this archive, principally the WCA Regulations. Added 2026-09-11
+      (ledger P4-12): the archive acquired its first WCA source and had nowhere correct to file
+      it, so it was recorded as `manufacturer_official` with an explicit tier override and a
+      note explaining the compromise. A governing body is not a manufacturer, and for questions
+      of competition legality it outranks one."
   - value: retailer
     tier: 2
     label: "Retailer"
