@@ -192,7 +192,7 @@ Note the counter-example, so this is not over-corrected: **Swift Block** was fou
 Sub-brands". Official sites remain the strongest evidence when they exist and are maintained.
 The amendment below is about what to do **in addition**, not instead.
 
-Two checks are therefore **required** before family enumeration for a manufacturer may be
+Three checks are therefore **required** before family enumeration for a manufacturer may be
 called complete. Both are cheap, and both must leave a written trace so a reviewer can verify
 they happened.
 
@@ -210,6 +210,22 @@ brand ("Drift", ~60 SKUs, "Brand: Cubelelo" on every listing) structurally ident
 TheCubicle and SpeedCubeShop house lines the archive has already canonicalised — and it is
 absent from the 54-entity register. One retailer's regional catalogue can hold an entire entity
 the rest of the method never sees. Record the retailer checked and the outcome.
+
+**3. Sweep the retailer's BRAND FACET, not only its URL slugs.** *Added 2026-09-12 after the
+second Ziina sweep (ledger P4-10).* A prefix sweep assumes the brand name appears in the product
+path. That assumption has now failed three times and once completely. Mild cases are spelling:
+`gan356-` against `gan-356-`, `monstergo-` against `monster-go-`, `gan12-ui` against `gan-ui` —
+ledger P26-3 records that the form differs **per brand**. The complete failure is Ziina Star at
+SpeedCubeShop, whose products are `cheese-3x3-uv-printed`, `calendar-3x3-v3-uv-printed`,
+`world-map-3x3-3d-uv-printed` and `1x1x2`. **The brand name is in none of them.** No prefix or
+keyword sweep of that retailer can return those products, and the archive's first Ziina sweep
+concluded "nothing found" partly for that reason.
+
+Retailers carry the brand somewhere structured even when the URL does not. On a Shopify
+storefront it is the `vendor` field, readable from `/products/<handle>.json`, and it usually has a
+matching collection page — SpeedCubeShop fronts "Ziina Star (34)". **Check the vendor field of at
+least one known product, and enumerate the brand collection, before recording a brand as
+enumerated.** A prefix sweep that returns nothing is evidence only about slugs.
 
 **Live-verify a `website` value before recording `/website` at `confirmed`.** A domain that was
 genuinely a manufacturer's own site in 2013 may today be expired, parked, or re-registered by

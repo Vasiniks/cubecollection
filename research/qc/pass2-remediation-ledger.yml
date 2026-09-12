@@ -984,6 +984,27 @@ issues:
       or a stand for a transparent-green CUBE. Cubelelo's own title and Color Scheme field say
       the CUBE. One page's structured data settling what another page's prose left open is
       corroboration of a kind the copied-prose test would have thrown away.
+
+      2026-09-12 — THIS ISSUE'S FINDING IS NOW A REQUIRED CHECK, because the Ziina sweep found
+      its severe form. RESEARCH_SPEC 3.6a had two mandatory checks and now has three: sweep the
+      retailer's BRAND FACET, not only its URL slugs.
+
+      The mild form is what this issue originally recorded: the slug spelling differs per brand,
+      `gan356-` against `gan-356-`, `monstergo-` against `monster-go-`, `gan12-ui` against
+      `gan-ui`. A sweep on one form is not a sweep of the line.
+
+      THE SEVERE FORM IS THAT THE BRAND NAME MAY NOT BE IN THE SLUG AT ALL. SpeedCubeShop's Ziina
+      Star products are `cheese-3x3-uv-printed`, `calendar-3x3-v3-uv-printed`,
+      `world-map-3x3-3d-uv-printed` and `1x1x2`. No prefix or keyword sweep of that retailer can
+      return them, by construction, and the archive's first Ziina sweep partly concluded "nothing
+      found" for that reason rather than because nothing was there.
+
+      THE FIX IS CHEAP AND STRUCTURAL. Retailers carry the brand somewhere structured even when
+      the URL does not: on Shopify it is the `vendor` field, readable from
+      `/products/<handle>.json`, and it usually has a matching collection page —
+      SpeedCubeShop fronts "Ziina Star (34)". 3.6a now requires checking the vendor field of at
+      least one known product and enumerating the brand collection before a brand is called
+      enumerated. A prefix sweep that returns nothing is evidence about slugs, not about stock.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven
