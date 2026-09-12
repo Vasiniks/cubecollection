@@ -14,8 +14,23 @@ colorway:
   designation: "Transparent"
 smart:
   is_smart: true
+config:
+  maglev: maglev
 status: stub
 attestations:
+  /config/maglev:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-maglev-10th-anniversary-2024]
+    note: >-
+      CORRECTION, lane F depth pass. This record's own name says "MagLev" but carried no `config`
+      block at all — inheritance runs MODEL -> VARIANT, never variant -> sibling, and
+      `gan-ui-12-maglev` the model carries no specs, so nothing was inherited from the sibling
+      `--standard` variant's `config.maglev`. The source already cited on this record states it
+      directly: both the page title and the product description, verbatim, are "GAN 12 UI MagLev
+      3x3 (10th Anniversary Edition)" / "The GAN 12 UI MagLev 3x3 (10th Anniversary Edition) is a
+      smart 3x3...". Held at `probable`, matching the sibling `--standard` variant's own
+      confidence for the same axis, not raised to `confirmed` since this is still a single tier-2
+      retailer page.
   /edition/types:
     confidence: probable
     sources: [thecubicle-gan12-ui-maglev-10th-anniversary-2024]

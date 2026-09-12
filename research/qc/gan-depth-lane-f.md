@@ -28,19 +28,61 @@ variant files under existing `data/variants/gan/<model-id>/`, new source files u
 6. Record negatives explicitly where a model is swept clean.
 
 ## STATUS
-In progress.
+In progress. Missing-axis defect batch (target 1-2) done and committed. Moving to targets 3-6.
 
 ## FINDINGS
-(populated as work proceeds)
+
+### Missing-axis defect — 5 confirmed instances, all fixed; systematic sweep found no more
+Ran a script over every GAN variant file checking whether the record's own `name` states an axis
+(maglev, uv, frosted, matte, ball-core) that its `config` block omits. Beyond the 5 instances the
+task already flagged, the sweep found none. Treating this defect class as closed for GAN pending
+any future record additions.
+
+Fixed, each citing the SAME source already bound to the record (the retailer's own product title,
+which states the axis directly — not an inference from a sibling variant):
+- `gan-ui-12-maglev--10th-anniversary`: added `config: {maglev: maglev}`. The record previously
+  had no `config` block at all. Source: `thecubicle-gan12-ui-maglev-10th-anniversary-2024`, whose
+  own excerpt already quotes the page title and description as "GAN 12 UI MagLev 3x3 (10th
+  Anniversary Edition)".
+- `gan-flagship-16--max-picube-20-magnet-ball-core-mod`: added `config.maglev: maglev`. Source:
+  `thecubicle-gan-v100-maglev-uv-picube-mod`, which lists this exact sibling product name,
+  "GAN16 MagLev MAX UV 3x3 (PiCube 20-Magnet Ball-Core Mod)", in its own excerpt.
+- `gan-flagship-16--picube-20-magnet-ball-core-mod`: same fix, name "GAN16 MagLev UV 3x3 (PiCube
+  20-Magnet Ball-Core Mod)", same source.
+- `gan-flagship-12--picube-20-magnet-ball-core-mod`: same fix, name "GAN12 MagLev UV 3x3 (PiCube
+  20-Magnet Ball-Core Mod)", same source.
+- `gan-v100-maglev--picube-20-magnet-ball-core-mod`: same fix. This one IS the source's own
+  product page (title "GAN V100 MagLev UV 3x3 (PiCube 20-Magnet Ball-Core Mod)"), the strongest
+  of the four.
+
+All four PiCube fixes recorded at `probable` (tier 2, single retailer, per rule 9), matching the
+confidence already used for `coating` and `core_system` on the same records. The 10th-anniversary
+fix is also `probable`, matching its `--standard` sibling's own confidence for the same axis.
 
 ## EVIDENCE
-(populated as work proceeds)
+No new source records needed for the defect-fix batch — all five fixes cite sources already bound
+to the record they corrected (`thecubicle-gan12-ui-maglev-10th-anniversary-2024` and
+`thecubicle-gan-v100-maglev-uv-picube-mod`), since the missing claim was already sitting,
+unused, in each source's own excerpt.
 
 ## CHANGES
-(populated as work proceeds)
+- `data/variants/gan/gan-ui-12-maglev/10th-anniversary.yml` — added `config.maglev` + attestation.
+- `data/variants/gan/gan-flagship-16/max-picube-20-magnet-ball-core-mod.yml` — added
+  `config.maglev` + attestation.
+- `data/variants/gan/gan-flagship-16/picube-20-magnet-ball-core-mod.yml` — added `config.maglev`
+  + attestation.
+- `data/variants/gan/gan-flagship-12/picube-20-magnet-ball-core-mod.yml` — added `config.maglev`
+  + attestation.
+- `data/variants/gan/gan-v100-maglev/picube-20-magnet-ball-core-mod.yml` — added `config.maglev`
+  + attestation.
+
+`npm run check`: 0 errors, 30 warnings after this batch (unchanged from the 30-warning baseline
+at base commit).
 
 ## UNRESOLVED
 (populated as work proceeds)
 
 ## NEXT
-(populated as work proceeds)
+- Target 3: verify the i-carry-2 combined UV+10th-anniversary slug is not a third product.
+- Target 4: the open PowerPod-2026-edition lead.
+- Target 5-6: sweep the 18 single-configuration models.
