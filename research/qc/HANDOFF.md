@@ -5,16 +5,16 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  a6a954f
-DATE:  2026-09-11
+HEAD:  a859520
+DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
                    find data/$d -name '*.yml' | wc -l; done)
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      500
-sources:       554
+variants:      501
+sources:       555
 events:        4
 
 VALIDATION
@@ -33,7 +33,24 @@ npm run selftest:      every check behaved as specified
 
 LEDGER: 34 resolved / 16 open / 9 needs_human_decision (of 59)
 
-THIS SESSION (2026-09-11) — 35 commits from c78ad75
+SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
+  Audit sweep #10 printed a MISS rate under a heading that read as a HIT rate, so its
+  worst row looked like its best and I worked them in the wrong order. Fixed, and both
+  rows were then worked to the end: the 88% row was 8 sound citations defeated by
+  `mfjs` vs "MoFang JiaoShi" (manufacturer tokens now resolve through recorded aliases),
+  the 26% row was a real defect — gancube-cn-core-technology-history preserved only
+  headline sentences while three attestation notes quoted sentences it never captured.
+  Re-fetched, excerpt extended, 26% -> 5%. The re-fetch also found GAN's CN nav filing
+  GAN356 X/XS under 旗舰魔方 in Jan 2025 while the .com nav excludes them in Aug 2026;
+  both now preserved on `families/gan-356 /positioning`, value unchanged.
+  THE `disputed` BLIND SPOT IS A CLASS. After rules 45/48 (2026-09-11) and sweep #10 it
+  had been written three times, so every `att.sources` reader was classified. Rules 8,
+  12 and 42 all leaked; each was proved to leak against a fixture BEFORE being fixed.
+  Rule 42 now evaluates PER POSITION. One `citedSourceIds()` in lib/archive.mjs; rules
+  43 and 9 deliberately excluded, with reasons in the code. 4 new selftest assertions.
+  Archive impact zero — measured: 0 sources are cited ONLY from a disputed block.
+
+PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
   CLOSED   P4-5 (rule 41 11 -> 0, every baseline SEARCHED not backfilled)
            P4-14 (last item closed via a non-US retailer)
            P4-15 (both YuXin naming questions)
@@ -64,7 +81,11 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. Depth research. One-config models 118 -> 112. Run `npm run audit` sweep #12 first;
+  1. METHODOLOGY (in progress): RESEARCH_SPEC has no CURRENT-completeness dimension.
+     3.6a asks for ARCHIVED sweeps, which look backwards only; that is the measured root
+     cause of P4-9's misses. Define historical / current / generation / variant
+     completeness as four separate dimensions and measure each. Do NOT open the taxonomy.
+  2. Depth research. One-config models are 112. Run `npm run audit` sweep #12 first;
      it names the leads and now excludes ones already rejected.
   2. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens.
   3. 75 models rest on <=1 source AND <=1 variant — the thinnest records.
