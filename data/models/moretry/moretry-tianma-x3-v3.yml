@@ -13,6 +13,7 @@ generation:
 scope_class: core
 specs:
   size_mm: 55.5
+  weight_g: 79.0
 description: |-
   TheCubicle's own product page (thecubicle-moretry-tianma-x3-v3-snap-2022, tier 2): "The
   Moretry Tianma X3 V3 (Snap) is a 3x3 from the new company that features traditional
@@ -39,6 +40,14 @@ attestations:
   /specs/size_mm:
     confidence: probable
     sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 79.0g". This page carries no gross weight, so there is no packaged figure to confuse it with.
+      Recorded 2026-09-12 from evidence the archive had preserved and cited since this source
+      was created — see audit sweep #14, which counts how often a refused gross weight left a
+      record with no weight at all while the admissible figure sat in the same table.
   /description:
     confidence: reported
     sources: [thecubicle-moretry-tianma-x3-v3-snap-2022]

@@ -15,6 +15,7 @@ generation:
   basis: manufacturer_declared
 specs:
   size_mm: 55.0
+  weight_g: 65.0
 description: |-
   Per TheCubicle's product page (thecubicle-x-man-xt3-v1-3x3-flagship-product): "The X-Man XT3
   V1 3x3 (Flagship) is a 3x3 release from X-Man that gives you flagship features without the
@@ -49,6 +50,14 @@ attestations:
       preserves the whole page, not only its excerpt, so this is a legitimate citation of the
       same source rather than an unsourced addition; the existing source file is not edited,
       per this pass's 'never overwrite a source created in another session' constraint."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 65.0g". Its "Gross Weight: 188g" on the same table is the PACKAGED figure and is refused under the rule-45 class; the two sit side by side, so the source draws the distinction itself rather than leaving it to this archive.
+      Recorded 2026-09-12 from evidence the archive had preserved and cited since this source
+      was created — see audit sweep #14, which counts how often a refused gross weight left a
+      record with no weight at all while the admissible figure sat in the same table.
   /description:
     confidence: reported
     sources: [thecubicle-x-man-xt3-v1-3x3-flagship-product]

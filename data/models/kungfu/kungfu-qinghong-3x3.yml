@@ -17,6 +17,7 @@ description: |-
   predecessor generation was found.
 specs:
   size_mm: 56.0
+  weight_g: 84.7
 status: drafted
 attestations:
   /specs/size_mm:
@@ -24,6 +25,14 @@ attestations:
     sources: [thecubicle-kungfu-qinghong-3x3-2021]
     note: "Single tier 2 retailer spec table ('Dimensions: 56.0mm³' — read as a 56.0mm edge
       length)."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-kungfu-qinghong-3x3-2021]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 84.7g". Its "Gross Weight: 104g" on the same table is the PACKAGED figure and is refused under the rule-45 class; the two sit side by side, so the source draws the distinction itself rather than leaving it to this archive.
+      Recorded 2026-09-12 from evidence the archive had preserved and cited since this source
+      was created — see audit sweep #14, which counts how often a refused gross weight left a
+      record with no weight at all while the admissible figure sat in the same table.
   /description:
     confidence: reported
     sources: [thecubicle-kungfu-qinghong-3x3-2021, speedsolving-wiki-kungfu]

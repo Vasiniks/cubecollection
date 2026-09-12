@@ -2434,6 +2434,34 @@ issues:
       mean nothing. A check whose green is uninformative is worse than no check. The negative
       and the method are recorded here instead, which is enough for a later researcher to re-run
       it by hand if a second instance ever appears.
+
+      2026-09-12 — RULE 45 HAS A SILENT COST NOBODY WAS COUNTING, and it is large. Refusing a
+      gross weight is correct, but it leaves the record with NO weight, and nothing measured how
+      often that happened. Measured now: 193 of 269 models carried no weight at all; 78 of those
+      had a GROSS weight sitting in their own cited sources; and 40 of THOSE had an "Item Weight"
+      preserved in the very same spec table — the admissible figure, already in the archive,
+      already cited, never written to a record. Audit sweep #14 now reports all three numbers.
+
+      THE ATTEMPT TO AUTOMATE IT IS THE USEFUL PART, BECAUSE IT FAILED THREE TIMES. SHARED
+      SOURCES: `thecubicle-dayan-guhong-descriptions` names six GuHong generations and carries
+      ONE spec table, so attributing its 67.0g to the five weightless GuHong models would have
+      invented four measurements. SIBLING-PUZZLE SOURCES: `qiyi-valk-3` properly cites
+      `thecubicle-valk-4-m-standard-product` for lineage, and that page's 142g belongs to a 4x4.
+      SHORT DISCRIMINATING TOKENS: a title-match guard did not rescue it, because tokenisers drop
+      tokens under three characters and in this domain the dropped token IS the generation
+      number — "valk 3" and "valk 4" differ by exactly the character a length filter eats. That
+      is the same defect that put `mfjs-meilong-3c` at 88% miss in sweep #10, found the same day
+      in a different script. It is a domain property, not a bug in one matcher.
+
+      So #14 ships as a LEAD COUNTER that says every row needs a human, and no auto-filtered
+      "safe" subset is offered, because this session demonstrated there isn't one.
+
+      SIX RECORDED BY HAND after reading each excerpt and confirming it is a single-product page
+      naming that model: kungfu-dot-cube 79.3g, kungfu-longyuan 70.2g, kungfu-qinghong 84.7g,
+      x-man-tornado-v2 72.0g, x-man-xt3-v1 65.0g, moretry-tianma-x3-v3 79.0g. Five of the six
+      sources print Item and Gross side by side, so the source draws the distinction itself —
+      the Tornado V2's are 72g against 300g. Weightless models 193 -> 187; the actionable queue
+      40 -> 34.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

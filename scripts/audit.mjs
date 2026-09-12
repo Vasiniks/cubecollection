@@ -650,5 +650,75 @@ line('  at 2017 is the archive working correctly. What this ranks is where a cur
 line('  check under 3.6b would buy the most, and a large record count beside an old year is the');
 line('  signal - an actively researched manufacturer nobody has looked at lately.');
 
+// ---- 14. weights the archive refused and never replaced ----------------------------------
+//
+// Rule 45 refuses a GROSS weight as a product spec, and it is right to. But refusing it leaves
+// the record with NO weight, and nothing has been counting how often that happened. Found
+// 2026-09-12 while sourcing the GAN356 MagLev: the archive held no weight for it at all, because
+// the only figure on file was TheCubicle's "Gross Weight: 250g". GAN's own product page says
+// 81.2 g. The right figure existed; nobody had gone to look. REFUSING A GROSS WEIGHT IS NOT THE
+// END OF THE QUESTION, and this counts the questions still open.
+//
+// The second number is the sharper one. TheCubicle's spec tables often carry "Item Weight"
+// BESIDE "Gross Weight" - the admissible figure, already preserved in an excerpt the archive
+// already cites, simply never written to a record.
+//
+// A LEAD COUNTER, NOT A FIX LIST, AND THE ATTEMPT TO MAKE IT ONE IS WHY. Three contamination
+// modes were found trying, and none of them can be filtered away safely:
+//
+//   SHARED SOURCES. `thecubicle-dayan-guhong-descriptions` names six GuHong generations and
+//   carries ONE spec table. Attributing its 67.0 g to all five weightless GuHong models would
+//   invent four measurements.
+//
+//   SIBLING-PUZZLE SOURCES. `qiyi-valk-3` cites `thecubicle-valk-4-m-standard-product`, quite
+//   properly, for lineage - and that page's 142 g belongs to a 4x4.
+//
+//   SHORT DISCRIMINATING TOKENS. Filtering by title match does not rescue it: tokenisers drop
+//   tokens under three characters, and in this domain the dropped token is the generation
+//   number. That is the same defect that put `mfjs-meilong-3c` at 88% miss in sweep #10, found
+//   the same day. "valk 3" and "valk 4" differ by exactly the character a length filter eats.
+//
+// So this prints a queue for a human and deliberately does not pretend to rank it.
+head('Weights refused and not replaced (rule 45 follow-up)');
+const ITEM_W = /item weight[^0-9]{0,12}([0-9]+(?:\.[0-9]+)?)\s*(?:g|grams)\b/i;
+const GROSS_W = /gross weight|weight \(including|packing|packaged weight|shipping weight/i;
+const variantsOf = new Map();
+for (const v of va) {
+  if (!variantsOf.has(v.doc.model_id)) variantsOf.set(v.doc.model_id, []);
+  variantsOf.get(v.doc.model_id).push(v.doc);
+}
+let noWeight = 0; const withGross = []; const withItem = [];
+for (const r of mod) {
+  const m = r.doc;
+  const kids = variantsOf.get(m.id) ?? [];
+  if (m.specs?.weight_g != null || kids.some((v) => v.config?.weight_g != null)) continue;
+  noWeight += 1;
+  const ids = new Set();
+  for (const doc of [m, ...kids]) {
+    for (const att of Object.values(doc.attestations ?? {})) for (const id of citedSourceIds(att)) ids.add(id);
+  }
+  let gross = false; let item = null;
+  for (const id of ids) {
+    const ex = String(srcById.get(id)?.excerpt ?? '');
+    if (GROSS_W.test(ex)) gross = true;
+    const hit = ITEM_W.exec(ex);
+    if (hit && item == null) item = [id, hit[1]];
+  }
+  if (gross) withGross.push(m.id);
+  if (item) withItem.push([m.id, m.manufacturer_id, item[1], item[0]]);
+}
+line(`  models carrying no weight at all                    : ${noWeight} of ${mod.length}`);
+line(`  of those, whose own sources show a GROSS weight     : ${withGross.length}   <- refused, never replaced`);
+line(`  of those, whose own sources ALSO preserve an ITEM weight : ${withItem.length}   <- evidence already held`);
+line('  the second list, by manufacturer:');
+const perMfr = new Map();
+for (const [, mfr] of withItem) perMfr.set(mfr, (perMfr.get(mfr) ?? 0) + 1);
+for (const [mfr, n] of [...perMfr.entries()].sort((a, b) => b[1] - a[1])) {
+  line(`     ${String(n).padStart(3)}  ${mfr}`);
+}
+line('  EVERY ROW NEEDS A HUMAN. A shared source, a sibling-puzzle source, or a generation number');
+line('  too short to survive tokenisation will each put a real figure against the wrong model.');
+line('  Read the excerpt and check it names THIS model before recording anything.');
+
 line();
 line('audit complete — advisory only, nothing here blocks a build.');
