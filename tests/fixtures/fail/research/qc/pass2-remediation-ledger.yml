@@ -1,0 +1,16 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 51, both branches. The chain check-escalations.mjs polices ends "-> status -> resolution",
+# and an issue whose status is missing or misspelt cannot be resolved, reopened or counted — it
+# simply drops out of every roll-up silently, which is the failure P26-2 exists to prevent.
+issues:
+  - id: P99-1
+    severity: low
+    status: open
+    title: "Fixture issue with a valid status, so the fail fixture is not uniformly broken"
+  - id: P99-2
+    severity: low
+    status: in-progress
+    title: "Fixture issue whose status is a TYPO — hyphen, not the underscore the vocabulary uses"
+  - id: P99-3
+    severity: low
+    title: "Fixture issue with NO status field at all"

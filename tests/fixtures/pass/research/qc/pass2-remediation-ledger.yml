@@ -1,0 +1,16 @@
+# SYNTHETIC FIXTURE — not archive data.
+# A miniature ledger whose every issue carries a status from the documented vocabulary, so
+# rule 51 has a clean case to stay silent on. A rule that only ever fires proves nothing.
+issues:
+  - id: P98-1
+    severity: low
+    status: open
+    title: "Fixture issue, open"
+  - id: P98-2
+    severity: low
+    status: resolved
+    title: "Fixture issue, resolved"
+  - id: P98-3
+    severity: medium
+    status: needs_human_decision
+    title: "Fixture issue, awaiting a human"

@@ -273,6 +273,31 @@ rmSync(TMP, { recursive: true, force: true });
 }
 
 // ---------------------------------------------------------------- 4. the gate must be able to fail
+console.log('\n  escalations — the linkage checker had no coverage at all until 2026-09-12');
+{
+  // check-escalations.mjs read research/qc and the ledger through HARDCODED relative paths, so
+  // nothing could exercise it against a synthetic archive and neither of its rules had ever been
+  // proved to fire. It now resolves both through CC_DATA_ROOT, the same override the record tree
+  // uses. BOTH FIXTURES WERE WRONG ON THE FIRST ATTEMPT — entries written at column 0, where the
+  // parser requires leading whitespace, and ids like ZZ1-1 that match no pattern in ID — and the
+  // block parsed as ZERO entries while looking perfectly fine. That is exactly the silence this
+  // checker exists to prevent, reproduced accidentally in its own test.
+  const fe = run('check-escalations.mjs', { dataRoot: FAIL });
+  const pe = run('check-escalations.mjs', { dataRoot: PASS });
+  const fr = rulesIn(fe.out);
+  fr.has(51) ? ok('rule 51 catches a bad ledger status', 'an "in-progress" typo and a missing status: field are both errors')
+             : bad('rule 51 catches a bad ledger status', 'no [51] on the fail fixture');
+  fr.has(50) ? ok('rule 50 catches a dangling escalation', 'a block citing a ledger id that does not exist')
+             : bad('rule 50 catches a dangling escalation', 'no [50] on the fail fixture');
+  fe.code === 0 ? bad('escalations fail fixture exits non-zero', 'it exited 0 despite errors')
+                : ok('escalations fail fixture exits non-zero');
+  // The allowance matters as much as the fail branch: without it these rules would be
+  // indistinguishable from ones that reject every ledger and every report.
+  pe.code === 0 && rulesIn(pe.out).size === 0
+    ? ok('escalations pass fixture is clean', 'a correctly linked block and a valid vocabulary raise nothing')
+    : bad('escalations pass fixture is clean', pe.out.trim());
+}
+
 console.log('\n  privacy — a gate that cannot fail is not a gate');
 {
   const poisoned = join(ROOT, 'tests/.tmp-poison');
