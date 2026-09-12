@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  c80b437
+HEAD:  21bc268
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      509
-sources:       564
+variants:      514
+sources:       569
 events:        4
 
 VALIDATION
@@ -26,7 +26,7 @@ npm run check:         0 errors, 26 advisory — EVERY ONE EXPLAINED:
                          4 r40  model-predates-family — P3-D2, needs human decision
                          2 r27  Rubik's Phantom/Impossible `core` + `not_legal`; reclassifying
                                 is a frozen-taxonomy call, escalated under P4-12
-npm run audit:         14 sweeps, advisory only
+npm run audit:         14 sweeps, advisory only (#14 is new: refused-weight follow-up)
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched
 npm run catalogue-gap: offline by default; --fetch to query three retailers
 npm run selftest:      every check behaved as specified
@@ -105,6 +105,19 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   A false `unknown` ("searched and not found" while the value sat in a cited source) turned
   up twice; measured the class = 3 candidates, all now correctly handled. NOT shipped as a
   sweep: post-fix its false-positive rate is 100%, from shared multi-product sources.
+  DISCOVERY SWEEPS RUN (3.6a): YJ MGC line, and MOYU — the archive's most-cited
+  manufacturer, top of the audit's "no sweep source" list for weeks. 23 -> 24 with a sweep;
+  failing both 13 -> 12. CITING IT IS WHAT COUNTED: the breadth check reads sources CITED
+  BY a manufacturer's records, so an uncited sweep source is invisible (correctly). Cited
+  on 7 MoYu + 6 MGC baselines as a RECORDED SEARCH, not an absence.
+  DEPTH FROM THOSE SWEEPS: 3x Super WeiLong LITE (packaging axis, retailer states it),
+  moyu-aolong-v2--limited-edition (the Lucas Etter sub-5 collector set — /edition/commemorates
+  DELIBERATELY UNSET, linking it would mean creating a person on a product blurb),
+  moyu-weilong-v2--unstickered, gan-356-maglev--uv-coated, gan-i-carry-4--frosted.
+  MY OWN ERROR, caught by RULE 42: I created a duplicate Sigma source and claimed it as a new
+  P4-9 find. Pass 4 Agent C had already found and escalated it on 2026-09-03, and its source
+  has a FULLER description than I extracted. Deleted; ledger + commit corrected.
+  GREP FOR AN EXISTING SOURCE BEFORE WRITING ONE — second time this class has happened.
   TWO REUSABLE FINDINGS. TheCubicle's "Type: DIY Kits" does NOT mean unassembled — the GTS
   Unstickered page says "This DIY Kit actually comes assembled but without any stickers",
   so that category value alone never evidences assembly state. And "Added: 2018-11-07" now
@@ -142,7 +155,13 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. DEPTH RESEARCH, continue. Sweep #14's weight queue is worked down to 8 (from 40) and
+  1. DEPTH RESEARCH, continue. Best remaining leads, all from thecubicle-moyu-prefix-2026
+     and already enumerated in its excerpt: moyu-weilong-wrm-v9-* (4 config paths vs the 4
+     variants v9 already has — check for a 5th, "ball-core-uv-special-edition"),
+     moyu-weilong-gts3-m-le, moyu-weilong-wr-m-2021-lite-3x3, moyu-rs3-m-2020-3x3-uv-coated,
+     moyu-ai-smart-cube-3x3-magnetic. Remaining no-sweep manufacturers: particula 28,
+     mf8 26, giiker 17, guoguan 16.
+     Sweep #14's weight queue is worked down to 8 (from 40) and
      the remainder are the hard ones. Sweep #12's remaining leads are mostly P4-9 MODEL
      layer = frozen. Best untouched targets are the bare families: yj-mgc 7, dayan-zhanchi,
      witeden-mixup 4, yj-guanlong 4, dayan-bermuda 4, qiyi-warrior 4.
