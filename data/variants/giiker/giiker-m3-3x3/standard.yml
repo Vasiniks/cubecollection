@@ -21,12 +21,20 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-giiker-m3-3x3-2020]
-    note: "Differentiation search performed: TheCubicle's own product page (the only surviving
+    sources: [thecubicle-giiker-m3-3x3-2020, giiker-com-store-enumeration-2026]
+    note: >-
+      Differentiation search performed: TheCubicle's own product page (the only surviving
       spec-bearing source found for this model at pass 3) offers no colourway, tier, or edition
       selector beyond the single listing described. No second GiiKER-M3 SKU was found at
       TheCubicle, SpeedCubeShop, or giiker.com in the captures reviewed this pass. Recorded as
-      the model's one assessed, sold configuration."
+      the model's one assessed, sold configuration. SWEEP RECORDED 2026-09-12 (RESEARCH_SPEC
+      3.6a, third check). giiker-com-store-enumeration-2026 enumerates GiiKER's OWN Shopify
+      storefront — 20 products, of which exactly ONE is typed "speed cube" — so this is a
+      first-party catalogue sweep rather than a retailer one. No configuration of this model
+      appears in it. GiiKER's current 3x3 range is a single product, so the archive's three
+      GiiKER models are not a thin sample of a large catalogue. A Wayback prefix sweep of
+      giiker.com was tried first and returned only Shopify infrastructure paths and no product
+      pages, which is precisely why 3.6a needed a brand-facet check.
   /config/magnet_strength:
     confidence: probable
     sources: [thecubicle-giiker-m3-3x3-2020]

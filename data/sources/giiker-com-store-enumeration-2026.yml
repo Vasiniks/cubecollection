@@ -1,0 +1,59 @@
+# source: giiker-com-store-enumeration-2026
+# Created 2026-09-12. A RESEARCH_SPEC 3.6a sweep for GiiKER, which had none — the audit has
+# listed it on "no sweep source" at 19 citations. Run with 3.6a's THIRD check (the brand facet,
+# added the same day) against the MANUFACTURER'S OWN STORE, which makes it first-party rather
+# than a retailer enumeration.
+id: giiker-com-store-enumeration-2026
+entity: source
+kind: manufacturer_official
+title: "GiiKER official store — full product enumeration (2026-09)"
+publisher: "GiiKER (giiker.com)"
+url: "https://giiker.com/collections/all/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Full enumeration of GiiKER's own Shopify storefront via its product JSON, fetched 2026-09-12.
+  20 products, every one carrying `"vendor": "GiiKER"` except a bundle listing. Reproducible from
+  the URL above.
+
+  EXACTLY ONE PRODUCT IS TYPED "speed cube", verbatim:
+    handle `supercube-electronic-bluetooth-speed-cube-3x`, title "SUPERCUBE® i3S".
+
+  The other nineteen, verbatim by title, are not 3x3 puzzles: "GiiKER Camp Guru", "GiiKER Smart
+  Four Board Games", "GiiKER Smart Sudoku", "GiiKER Super Blocks Puzzle Games", "GiiKER Super
+  Decoder", "GiiKER Super Ludo", "GiiKER Super Reversi", "GiiKER Super Slide Puzzle Games",
+  "GiiKER Tic-Tac-Toe Bolt", a ceramic mug, a shipping-fee line item, four spare-part
+  replacement listings, and duplicate listings of the Super Blocks, Super Slide and Tic-Tac-Toe
+  products. Their `product_type` values include "Board Game", "travel game, puzzle game,
+  learning & educational toy, kids toy" and "棋盘游戏/桌面游戏".
+
+  WHAT THIS SETTLES ABOUT THE ARCHIVE'S THREE GIIKER MODELS. GiiKER is a smart-puzzle company
+  whose current 3x3 range is a single product. The archive's giiker-m3-3x3, giiker-supercube-i3
+  and giiker-supercube-i3s are therefore NOT a thin sample of a large catalogue — there is no
+  large catalogue. The i3S is the survivor; the M3 and i3 are absent from the manufacturer's own
+  current store, which is consistent with their being discontinued and is not evidence that they
+  never existed.
+preservation_note: >-
+  LIVE CATALOGUE QUERY, NOT AN ARCHIVE CAPTURE, and it preserves nothing on its own. This record
+  therefore makes no specification, date or price claim about any product listed; it establishes
+  the SHAPE of the catalogue at one moment and is cited only for that.
+  A Wayback CDX prefix sweep of giiker.com was run first and returned almost nothing usable —
+  the index holds Shopify infrastructure paths (`/.well-known/shopify/...`, `/apps/cl-proxy/...`)
+  and no product pages. That is why the brand-facet method was used instead, and it is a worked
+  example of why RESEARCH_SPEC 3.6a needed a third check: a prefix sweep of this domain would
+  have returned nothing and meant nothing.
+  getgocube.com was swept the same way for comparison and is a WordPress marketing site — blog
+  pages, author archives, affiliate pages — with no /products/ catalogue at all. Recorded here so
+  the next person does not repeat that query.
+accessed: "2026-09-12"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 1, the manufacturer's own storefront, for the question of what GiiKER currently sells.
+  ESTABLISHES: that GiiKER's own store carried 20 products on 2026-09-12, exactly one of them a
+  3x3 speed cube, the SUPERCUBE i3S.
+  DOES NOT ESTABLISH: that GiiKER has never made other 3x3s — a current storefront says nothing
+  about discontinued products, and the archive's own M3 and i3 records rest on other evidence.
+  Nor does it establish any specification of the i3S; only that it is the current listing.
+status: sourced

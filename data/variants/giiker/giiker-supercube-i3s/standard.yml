@@ -20,12 +20,20 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [giiker-com-supercube-i3s-product-2022, giiker-com-supercube-i3s-2026-soldout, thecubicle-giiker-super-cube-i3s-2019]
-    note: "Differentiation search performed: GiiKER's own product page (2022 and 2026 captures)
-      and TheCubicle's listing describe one configuration each, with no colour/tier selector
-      found in either. No second i3S SKU was located at TheCubicle, SpeedCubeShop, or
-      giiker.com in captures reviewed this pass. Recorded as the model's one assessed, sold
-      configuration."
+    sources: [giiker-com-supercube-i3s-product-2022, giiker-com-supercube-i3s-2026-soldout, thecubicle-giiker-super-cube-i3s-2019, giiker-com-store-enumeration-2026]
+    note: >-
+      Differentiation search performed: GiiKER's own product page (2022 and 2026 captures) and
+      TheCubicle's listing describe one configuration each, with no colour/tier selector found
+      in either. No second i3S SKU was located at TheCubicle, SpeedCubeShop, or giiker.com in
+      captures reviewed this pass. Recorded as the model's one assessed, sold configuration.
+      SWEEP RECORDED 2026-09-12 (RESEARCH_SPEC 3.6a, third check).
+      giiker-com-store-enumeration-2026 enumerates GiiKER's OWN Shopify storefront — 20
+      products, of which exactly ONE is typed "speed cube" — so this is a first-party catalogue
+      sweep rather than a retailer one. No configuration of this model appears in it. GiiKER's
+      current 3x3 range is a single product, so the archive's three GiiKER models are not a thin
+      sample of a large catalogue. A Wayback prefix sweep of giiker.com was tried first and
+      returned only Shopify infrastructure paths and no product pages, which is precisely why
+      3.6a needed a brand-facet check.
   /colorway/application:
     confidence: probable
     sources: [thecubicle-giiker-super-cube-i3s-2019]

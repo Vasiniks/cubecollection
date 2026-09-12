@@ -19,15 +19,22 @@ status: stub
 attestations:
   /edition/types:
     confidence: uncertain
-    sources: [giiker-about-us-2022]
-    note: "Differentiation search performed: no product page for the bare 'i3' generation
-      survives at giiker.com, TheCubicle, or SpeedCubeShop in any capture found this pass or at
-      pass 3 (see the model record's own discovery sweep of 55+18+2 URLs). Existence rests on
-      GiiKER's own history page alone, which does not describe a second configuration; no
-      colourway or tier differentiation could be checked for lack of a surviving product page.
-      Recorded as the model's one assessed configuration at reduced confidence, reflecting the
-      thinness of the underlying model-identity evidence itself (see
-      giiker-supercube-i3.yml)."
+    sources: [giiker-about-us-2022, giiker-com-store-enumeration-2026]
+    note: >-
+      Differentiation search performed: no product page for the bare 'i3' generation survives at
+      giiker.com, TheCubicle, or SpeedCubeShop in any capture found this pass or at pass 3 (see
+      the model record's own discovery sweep of 55+18+2 URLs). Existence rests on GiiKER's own
+      history page alone, which does not describe a second configuration; no colourway or tier
+      differentiation could be checked for lack of a surviving product page. Recorded as the
+      model's one assessed configuration at reduced confidence, reflecting the thinness of the
+      underlying model-identity evidence itself (see giiker-supercube-i3.yml). SWEEP RECORDED
+      2026-09-12 (RESEARCH_SPEC 3.6a, third check). giiker-com-store-enumeration-2026 enumerates
+      GiiKER's OWN Shopify storefront — 20 products, of which exactly ONE is typed "speed cube"
+      — so this is a first-party catalogue sweep rather than a retailer one. No configuration of
+      this model appears in it. GiiKER's current 3x3 range is a single product, so the archive's
+      three GiiKER models are not a thin sample of a large catalogue. A Wayback prefix sweep of
+      giiker.com was tried first and returned only Shopify infrastructure paths and no product
+      pages, which is precisely why 3.6a needed a brand-facet check.
   /smart/is_smart:
     confidence: confirmed
     sources: [giiker-about-us-2022]
