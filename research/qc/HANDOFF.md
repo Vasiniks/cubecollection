@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  102469c
+HEAD:  66e3f9b
 DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      488
-sources:       541
+variants:      491
+sources:       543
 
 VALIDATION
 npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
@@ -109,9 +109,17 @@ THIRD WINDOW (2026-09-11)
   defects, four broken probes. No rule added: none describes an invariant the archive
   violates. Traps documented so the next sweep does not rediscover them.
 
+DEPTH RESEARCH IN PROGRESS (one-config models 118 -> 117)
+  Method that works: the alternate-slug CDX sweep (gan356-* not gan-356-*) surfaces named
+  editions the original passes could not see. GAN 356 line is the densest target.
+  Done: gan-356-me-v2--uv-coated, gan-356-m-e--brainstorm-voyage,
+        gan-356-m-e--lunar-new-year-2025.
+  Still listed in thecubicle-gan356-slug-prefix-2026 and NOT yet chased:
+        gan356-m-lite, gan356-m-3x3-uv-coated, gan356-me-uv-3x3-10th-anniversary-edition
+        (no capture found), gan356-i-play, gan356-x-ipg-v5.
+
 NEXT ACTION
-  1. Depth research on high-value baseline-only models (118 at one configuration).
-     Prioritise historically significant / iconic / highly configurable lines.
+  1. Continue depth on the GAN 356 line from the slug sweep's unchased list above.
   2. P4-14 remainder: huameng-tg-v2 needs a second independent source.
   3. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens.
 
