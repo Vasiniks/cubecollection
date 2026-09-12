@@ -1,0 +1,50 @@
+# source: thecubicle-moyu-ai-smart-cube-magnetic-2023
+# Created 2026-09-12 from thecubicle-moyu-prefix-2026. The archive's moyu-ai-original baseline
+# records `magnet_configuration: none` on the wiki's authority, which makes this page's "This is
+# the magnetic version" a complementary configuration rather than a contradiction.
+id: thecubicle-moyu-ai-smart-cube-magnetic-2023
+entity: source
+kind: retailer
+title: "MoYu AI Smart Cube 3x3 Magnetic — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-ai-smart-cube-3x3-magnetic"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20230904013622id_/https://www.thecubicle.com/products/moyu-ai-smart-cube-3x3-magnetic"
+excerpt: |-
+  Page title as captured: "MoYu AI Smart Cube 3x3 Magnetic – TheCubicle". Shopify product id
+  7019860164691. Colourway option offered: "Stickerless (Bright)".
+
+  Product description, verbatim and complete: "The MoYu AI Smart Cube is a 3x3 that can help you
+  learn to solve, get faster, and race anybody from around the world. This smart cube is designed
+  like a speedcube, so turning is fantastic! There is a free companion app with this puzzle, but
+  IT IS ONLY AVAILABLE IN CHINESE. THIS IS THE MAGNETIC VERSION." (Emphasis added; the wording is
+  the retailer's.)
+
+  Specifications table: "Manufacturer: MoYu", "Type: 3x3", "Added: 2023-08-21",
+  "Gross Weight: 274g", "Magnets: Magnetic".
+
+  THE LAST SENTENCE IS THE WHOLE CLAIM. "This is the magnetic version" presupposes a
+  non-magnetic one, which is what the archive already records as moyu-ai-original--standard with
+  `magnet_configuration: none` on speedsolving-wiki-moyu's authority. Two sources, arrived at
+  independently, describing two halves of one pair.
+preservation_note: >-
+  Capture 20230904013622 fetched 2026-09-12 and read in full. "Gross Weight: 274g" is a packaged
+  figure refused under the rule-45 class — a smart cube ships with a cable and often a stand, and
+  no item weight is given on this page. "Added: 2023-08-21" is a catalogue-ingestion stamp.
+  NOTE THE APP-LANGUAGE DETAIL, preserved because it is the kind of fact a digital exhibition
+  would want and no other source in this archive carries: the companion app was Chinese-only at
+  this capture. That is a statement about the SOFTWARE, not the puzzle, and is not attested on any
+  record.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a magnetic configuration of the MoYu AI Smart Cube was sold, stickerless, and
+  that it was sold as one of at least two versions distinguished by magnetisation.
+  DOES NOT ESTABLISH: the magnet layout — "Magnetic" and "the magnetic version" are all this page
+  says, and neither names core, corner or edge placement — nor a release date, a mass, or MoYu's
+  own name for the configuration.
+status: sourced

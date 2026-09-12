@@ -1,0 +1,30 @@
+# variant: moyu-weilong-wr-m-2021--lite
+# Depth research 2026-09-12, from thecubicle-moyu-prefix-2026.
+id: moyu-weilong-wr-m-2021--lite
+entity: variant
+model_id: moyu-weilong-wr-m-2021
+name: "MoYu WeiLong WR M 2021 Lite"
+scope_class: core
+edition:
+  types: [standard]
+  designation: "Lite"
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wr-m-2021-lite-2021]
+    note: >-
+      "Lite" is in the retailer's product title, "MoYu WeiLong WR M 2021 Lite 3x3".
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-wr-m-2021-lite-2021]
+    note: >-
+      A packaging configuration under DATA_MODEL 4.1 axis 11, not a limited or commemorative
+      edition. The retailer states the difference and states that it is the ONLY difference:
+      "just like the WeiLong WR M 2021 except this one comes with fewer accessories."
+      NOTE THAT "LITE" DOES NOT MEAN THE SAME THING ACROSS THIS MANUFACTURER. On the Super
+      WeiLong the retailer defines Lite as "comes in a smaller box"; here it defines it as fewer
+      accessories, and lists them. Both are packaging claims, but they are different claims and
+      neither was assumed from the other.
+      The page's "[CPS Serviced]" purchase option is a RETAILER SERVICE, not a configuration of
+      the manufacturer's product, and is deliberately not recorded here.

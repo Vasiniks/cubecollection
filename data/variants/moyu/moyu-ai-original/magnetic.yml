@@ -1,0 +1,41 @@
+# variant: moyu-ai-original--magnetic
+# Depth research 2026-09-12, from thecubicle-moyu-prefix-2026. The complement to the existing
+# baseline, which records `magnet_configuration: none`.
+id: moyu-ai-original--magnetic
+entity: variant
+model_id: moyu-ai-original
+name: "MoYu AI (Magnetic)"
+scope_class: core
+config:
+  magnet_configuration: unknown
+edition:
+  types: [standard, smart]
+  designation: "Magnetic"
+status: stub
+attestations:
+  /edition/designation:
+    confidence: probable
+    sources: [thecubicle-moyu-ai-smart-cube-magnetic-2023]
+    note: >-
+      "Magnetic" is in the retailer's product title and restated in its description: "This is the
+      magnetic version."
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-moyu-ai-smart-cube-magnetic-2023]
+    note: >-
+      A regular retail configuration distinguished by magnetisation, and `smart` because the AI
+      line is a smart-cube line — the sibling baseline records the same pair of types.
+      WHAT MAKES THIS A CONFIGURATION RATHER THAN A DUPLICATE is that the archive's own baseline
+      already records `magnet_configuration: none` for this model, on speedsolving-wiki-moyu's
+      authority. The retailer's "This is the magnetic version" presupposes a non-magnetic one, and
+      the archive independently holds exactly that. Two sources describing two halves of one pair.
+  /config/magnet_configuration:
+    confidence: unknown
+    sources: [thecubicle-moyu-ai-smart-cube-magnetic-2023]
+    note: >-
+      SEARCHED AND NOT ESTABLISHED, and recorded as `unknown` rather than guessed. The page says
+      "Magnetic" in its specification table and "the magnetic version" in its description, and
+      that is all: it never names core, corner or edge placement. vocab/magnet-configurations.yml
+      requires a layout, not a yes/no, so choosing `core_corner` or `single_layer` here would
+      invent one. The value is set to `unknown` deliberately — this model IS magnetised, and the
+      layout is the open question.

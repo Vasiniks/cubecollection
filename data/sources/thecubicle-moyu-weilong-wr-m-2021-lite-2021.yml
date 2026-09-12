@@ -1,0 +1,52 @@
+# source: thecubicle-moyu-weilong-wr-m-2021-lite-2021
+# Created 2026-09-12 from thecubicle-moyu-prefix-2026. The SECOND "Lite" pattern found in that
+# sweep, and it defines the axis more precisely than the Super WeiLong trio did.
+id: thecubicle-moyu-weilong-wr-m-2021-lite-2021
+entity: source
+kind: retailer
+title: "MoYu WeiLong WR M 2021 Lite 3x3 — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-weilong-wr-m-2021-lite-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20211027195408id_/https://www.thecubicle.com/products/moyu-weilong-wr-m-2021-lite-3x3"
+excerpt: |-
+  Page title as captured: "MoYu WeiLong WR M 2021 Lite 3x3 – TheCubicle". Shopify product id
+  6593109459027.
+
+  Product description, verbatim: "The MoYu WeiLong WR M 2021 Lite is JUST LIKE THE WEILONG WR M
+  2021 EXCEPT THIS ONE COMES WITH FEWER ACCESSORIES. If you want the cube without all of the
+  extras, this is what you're looking for. Comes with: WeiLong WR M 2021, Cube case/stand, 4
+  magnetic adjustment tools with holder, Screwdriver, Tension and compression adjustment tools."
+  (Emphasis added; the wording is the retailer's.)
+
+  Purchase options offered: "Stickerless (Bright)" and "Stickerless (Bright) [CPS Serviced]".
+
+  Specifications table: "Manufacturer: MoYu", "Type: 3x3", "Added: 2021-07-23",
+  "Gross Weight: 169g", "Dimensions: 55.x mm".
+
+  WHAT "LITE" MEANS HERE IS STATED, AND IT IS NOT WHAT IT MEANS ON THE SUPER WEILONG. There, the
+  retailer says the Lite "comes in a smaller box"; here it says the Lite "comes with fewer
+  accessories" and then lists what it does come with. Both are packaging-configuration claims
+  under DATA_MODEL 4.1 axis 11, but they are different claims, and neither should be assumed from
+  the other.
+preservation_note: >-
+  Capture 20211027195408 fetched 2026-09-12 and read in full. "Gross Weight: 169g" is a packaged
+  figure refused under the rule-45 class; no item weight is given. "Added: 2021-07-23" is a
+  catalogue-ingestion stamp and is not attested as a date.
+  THE "[CPS Serviced]" PURCHASE OPTION IS NOT RECORDED AS A CONFIGURATION. Cubicle Pro Shop
+  servicing is a RETAILER MODIFICATION of a cube the manufacturer made, which this archive models
+  through the `service` fields and only where a record is actually built for it — the
+  moyu-weilong-gts--illusion variant is the worked example. A purchase-time service option on a
+  dropdown is not by itself a distinct product, and creating one here would inflate the count.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the WeiLong WR M 2021 was sold in a "Lite" configuration identical to the
+  full one except in the accessory pack, and exactly what that pack contained.
+  DOES NOT ESTABLISH: any difference in the puzzle itself — the retailer says there is none — a
+  release date, a mass, or MoYu's own name for the configuration.
+status: sourced
