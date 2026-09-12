@@ -1,0 +1,44 @@
+# source: thecubicle-gan356-me-brainstorm-voyage-2024
+# Created 2026-09-11, depth research. Found via thecubicle-gan356-slug-prefix-2026 — the
+# alternate-slug-form sweep. Discontinued: no live JSON, only the archived capture.
+id: thecubicle-gan356-me-brainstorm-voyage-2024
+entity: source
+kind: retailer
+title: "GAN356 ME (Brainstorm Voyage Edition) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-me-brainstorm-voyage-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240519232922id_/https://www.thecubicle.com/products/gan356-me-brainstorm-voyage-edition"
+excerpt: |-
+  Product Description, verbatim: "The GAN356 ME (Brainstorm Voyage Edition) is a special edition
+  puzzle with cool packaging. This GAN356 ME has blue internals and orange magnet capsules. It
+  comes with a set of fancy stickers for you to place on one side of the puzzle. Comes with:
+  GAN356 ME (Brainstorm Voyage Edition), Brainstorm Voyage edition cube bag..."
+
+  Product Specifications table: "Manufacturer: GAN", "Dimensions: 56.0mm3", "Item Weight: 78.0g".
+
+  WHAT DIFFERS AND WHAT DOES NOT. The edition changes internal plastic colour (blue), magnet
+  capsule colour (orange), packaging and an included sticker set. It claims NO mechanical
+  difference from the base GAN356 ME, and the 56.0mm dimension matches the base product. This is
+  a colourway-and-packaging edition of one design.
+
+  NOTE THE SAME "Brainstorm Voyage" NAME appears on a GAN356 i Carry edition recorded separately
+  as thecubicle-gan-356-i-carry-brainstorm-voyage-2025. They are different products sharing a
+  promotional series name, not the same item — the i Carry edition is a smart cube at 79.0g under
+  its own handle.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted
+  description and the three specification fields. The live product page no longer returns JSON —
+  the product is discontinued — so the archived capture is the only evidence."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured spec table.
+  ESTABLISHES: that a named "Brainstorm Voyage Edition" of the GAN356 ME was sold, what
+  distinguished it, and the base product's dimensions and item weight.
+  DOES NOT ESTABLISH: a release date, a production run size, or that the edition was limited in
+  number. "Special edition" describes the packaging, not scarcity, and `edition.limited` is left
+  unset rather than inferred from the phrase.
+status: sourced

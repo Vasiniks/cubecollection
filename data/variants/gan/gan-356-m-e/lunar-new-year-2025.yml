@@ -1,0 +1,32 @@
+# variant: gan-356-m-e--lunar-new-year-2025
+# Depth research 2026-09-11. A separately named, separately marketed edition on its own product
+# handle, distinguished by a themed sticker set and presentation — not by mechanism.
+id: gan-356-m-e--lunar-new-year-2025
+entity: variant
+model_id: gan-356-m-e
+name: "GAN356 ME (2025 Lunar New Year Edition)"
+scope_class: core
+edition:
+  types: [commemorative]
+  name: "2025 Lunar New Year Edition"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-me-lunar-new-year-2025]
+    note: >-
+      The source frames it as "perfect for honoring Chinese New Year" with a Year-of-the-Wood-Snake
+      sticker set, so `commemorative` is the retailer's own framing of an occasion. NOT recorded
+      as `limited`: nothing states a run size, and inferring scarcity from "edition" is the
+      fabrication this archive refuses.
+      NO commemorates LINK. data/events/ holds no Lunar New Year record and inventing one for a
+      recurring calendar festival would be a different kind of claim from the dated, singular
+      events that directory holds (three world records and one product anniversary). Left
+      unlinked deliberately rather than forced.
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan356-me-lunar-new-year-2025]
+    note: >-
+      NO SPECS ARE RECORDED on this variant. The page states no weight or dimension, unlike its
+      Brainstorm Voyage sibling which states both. Copying the sibling's figures here would assert
+      values this source does not carry — the defect class rule 48 exists to catch.

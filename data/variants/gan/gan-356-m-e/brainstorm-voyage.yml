@@ -1,0 +1,38 @@
+# variant: gan-356-m-e--brainstorm-voyage
+# Depth research 2026-09-11. A separately named, separately marketed edition on its own product
+# handle. What differs is colourway and packaging, not mechanism — which is why it is a variant.
+id: gan-356-m-e--brainstorm-voyage
+entity: variant
+model_id: gan-356-m-e
+name: "GAN356 ME (Brainstorm Voyage Edition)"
+scope_class: core
+config:
+  size_mm: 56.0
+  weight_g: 78.0
+edition:
+  types: [promotional]
+  name: "Brainstorm Voyage Edition"
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-me-brainstorm-voyage-2024]
+    note: >-
+      The source calls it "a special edition puzzle with cool packaging" with "blue internals and
+      orange magnet capsules" and an included sticker set and cube bag. Recorded `promotional`
+      rather than `limited` or `commemorative`: nothing states a run size, and "Brainstorm
+      Voyage" names no anniversary or event this archive can point to. `edition.limited` is
+      deliberately unset.
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan356-me-brainstorm-voyage-2024]
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-gan356-me-brainstorm-voyage-2024]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-gan356-me-brainstorm-voyage-2024]
+    note: >-
+      Item Weight 78.0g, the source's own structured spec field. Note this differs from the
+      GAN356 i Carry Brainstorm Voyage edition at 79.0g — the two share a promotional series name
+      and are different products.
