@@ -1,0 +1,50 @@
+# source: thecubicle-moyu-weilong-gts-illusion-2020
+# Created 2026-09-11, depth research on the WeiLong line — the archive's most historically
+# significant MoYu lineage, and one whose earliest models rest on a single wiki source (P4-8).
+# Found via a CDX prefix sweep of thecubicle.com/products/moyu-weilong.
+id: thecubicle-moyu-weilong-gts-illusion-2020
+entity: source
+kind: retailer
+title: "MoYu WeiLong GTS - Illusion — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-weilong-gts-illusion"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200918195828id_/https://www.thecubicle.com/products/moyu-weilong-gts-illusion"
+excerpt: |-
+  Page title as captured: "MoYu WeiLong GTS - Illusion – TheCubicle".
+
+  Product Description, verbatim: "The MoYu WeiLong GTS - Illusion is the Black with White Caps
+  version of the WeiLong GTS. This variant is not available from the manufacturer -- they were
+  produced by our staff by swapping WeiLong GTS shells. Limited quantities available!"
+
+  Product Specifications table: "Manufacturer: MoYu", "Dimensions: 56.5mm3", "Item Weight: 83.1g".
+
+  THIS IS A RETAILER SERVICE PRODUCT, NOT A MOYU CONFIGURATION, and the page says so in its own
+  words: "not available from the manufacturer -- they were produced by our staff by swapping
+  WeiLong GTS shells." The spec table's "Manufacturer: MoYu" refers to who made the underlying
+  cube, not who made this product. Recording it as a MoYu colourway would assert that MoYu sold a
+  black-with-white-caps GTS, which this source explicitly denies.
+
+  This is exactly the distinction the archive's `service` block exists for, and exactly the
+  mis-reading its rules about retailer service tiers are meant to prevent.
+
+  "Limited quantities available" is a stock statement, not a production run size. No number is
+  given and none is inferred.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted title,
+  description and all three specification fields. The live product page no longer returns JSON —
+  the product is discontinued. Two sibling paths found in the same sweep,
+  moyu-weilong-diy-kit and moyu-weilong-gts-unstickered, returned NO Wayback capture at all and
+  are recorded as unverified leads rather than assumed."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page — and first-party in the strongest sense here, since
+  TheCubicle is describing a product its own staff made.
+  ESTABLISHES: that TheCubicle produced and sold a black-with-white-caps shell-swapped WeiLong
+  GTS, and the resulting cube's dimension and item weight.
+  DOES NOT ESTABLISH: a release date, a production run size, or anything about MoYu's own
+  colourway range. The source denies MoYu sold this configuration.
+status: sourced

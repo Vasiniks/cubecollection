@@ -15,8 +15,18 @@ colorway:
 status: stub
 attestations:
   /edition/types:
-    confidence: reported
-    sources: [speedsolving-wiki-moyu]
+    confidence: probable
+    sources: [speedsolving-wiki-moyu, thecubicle-moyu-weilong-gts-illusion-2020]
+    note: >-
+      ASSESSMENT UPDATED 2026-09-11. A CDX sweep of thecubicle.com/products/moyu-weilong found
+      no additional MANUFACTURER configuration of the GTS — the sibling paths are sticker sets,
+      hardware kits and adjustment tools, which are accessories rather than configurations. It
+      did find a retailer SERVICE product (moyu-weilong-gts--illusion, TheCubicle shell swap),
+      now recorded with its own service block. This record therefore remains the single
+      MANUFACTURER configuration, on a searched basis.
+      TWO PATHS COULD NOT BE CHECKED: moyu-weilong-diy-kit and moyu-weilong-gts-unstickered
+      returned no Wayback capture at all. Recorded as unverified rather than assumed — a failed
+      fetch is not evidence of absence, and an unstickered GTS would be a real configuration.
   /colorway/application:
     confidence: reported
     sources: [speedsolving-wiki-moyu]

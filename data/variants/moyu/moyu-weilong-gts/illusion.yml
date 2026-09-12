@@ -1,0 +1,71 @@
+# variant: moyu-weilong-gts--illusion
+# Depth research 2026-09-11. A RETAILER SERVICE product, not a MoYu configuration: TheCubicle's
+# own copy says "not available from the manufacturer -- they were produced by our staff by
+# swapping WeiLong GTS shells." Attached to the MoYu model with `service.serviced_by: thecubicle`,
+# which is how this archive records an aftermarket cube without crediting it to the manufacturer.
+id: moyu-weilong-gts--illusion
+entity: variant
+model_id: moyu-weilong-gts
+name: "MoYu WeiLong GTS - Illusion (TheCubicle shell swap)"
+scope_class: core
+config:
+  size_mm: 56.5
+  weight_g: 83.1
+colorway:
+  designation: "Illusion"
+  scheme: custom
+service:
+  serviced_by: thecubicle
+  program: "Illusion"
+  modifications:
+    - kind: other
+      detail: >-
+        Shells swapped by TheCubicle staff to produce a black body with white caps, a combination
+        the source states MoYu did not sell. Recorded as `other` because the service-modification
+        vocabulary has no value for a shell or part swap; the detail carries what was done.
+      source: thecubicle-moyu-weilong-gts-illusion-2020
+  note: >-
+    The spec table's "Manufacturer: MoYu" names who made the underlying cube, not who made this
+    product. Treating that field as the product's manufacturer would assert MoYu sold a
+    black-with-white-caps GTS, which the source explicitly denies.
+relationships:
+  - type: modified_from
+    target: moyu-weilong-gts--standard
+    target_entity: variant
+    note: "The unmodified WeiLong GTS this product was built from."
+status: stub
+attestations:
+  /relationships/0:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-illusion-2020]
+    note: >-
+      The source names the base product directly — "produced by our staff by swapping WeiLong
+      GTS shells" — so the modified_from target is stated rather than inferred from resemblance,
+      which is what rule 17 guards against. Tier 2, so `probable` rather than `confirmed`.
+  /service/serviced_by:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-illusion-2020]
+    note: >-
+      TheCubicle states it directly: "they were produced by our staff by swapping WeiLong GTS
+      shells." A retailer describing its own staff's work is the strongest available evidence for
+      who performed a modification.
+      HELD AT `probable`, NOT `confirmed`: rule 9 requires a tier 1 source or two
+      independent tier 1-2 sources, and this is one tier-2 retailer. The rule is right even
+      though the retailer is describing its own work — a single publisher is a single
+      publisher, and the archive should not make an exception because the claim feels
+      unusually direct.
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-illusion-2020]
+    note: "'Illusion' is TheCubicle's own product name for the shell-swap, describing the Black
+      with White Caps combination."
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-illusion-2020]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-moyu-weilong-gts-illusion-2020]
+    note: >-
+      Item Weight 83.1g, the source's own structured spec field. Recorded on the variant rather
+      than inherited because a shell swap can change the weight — this is the MODIFIED cube's
+      figure, not the base model's.
