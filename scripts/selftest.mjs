@@ -163,6 +163,18 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   /zz-bad-disputed-samepage[^\n]*\[42\]|\[42\][^\n]*zz-bad-disputed-samepage/.test(l.out)
     ? ok('rule 42 sees into disputed blocks', 'false corroboration inside one disputed position is caught')
     : bad('rule 42 sees into disputed blocks', 'no [42] message for the same-page disputed fixture');
+  // Rule 52 guards a class this project has ALREADY paid to clean up: dates read off
+  // TheCubicle's "Added:" field, which records catalogue ingestion and not release. It finds
+  // nothing on the real archive today, because all four real instances were downgraded to
+  // `uncertain` during the Pass 2 adjudication gate. A rule with no live violations is exactly
+  // the kind that rots unnoticed, so both branches are asserted here. The two fixtures cite the
+  // SAME source and differ only in confidence, which is the whole invariant.
+  /zz-added-date[^\n]*\[52\]|\[52\][^\n]*zz-added-date/.test(l.out)
+    ? ok('rule 52 artefact-date branch fires', 'a release year asserted from a catalogue-ingestion date is caught')
+    : bad('rule 52 artefact-date branch fires', 'no [52] message for the Added-date fixture');
+  /zz-ok-added-date[^\n]*\[52\]|\[52\][^\n]*zz-ok-added-date/.test(l.out)
+    ? bad('rule 52 spares a hedged artefact date', 'fired on an artefact date correctly held at uncertain')
+    : ok('rule 52 spares a hedged artefact date', 'an Added: date kept as a weak upper bound is not flagged');
   // Rule 49 removes a record from the PUBLIC bundle, so its allowance matters as much as its
   // fail branch: without zz-ok-signed-exclusion the rule would be indistinguishable from one
   // forbidding reference_only outright, and the archive uses that class legitimately.

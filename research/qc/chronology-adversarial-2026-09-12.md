@@ -290,3 +290,68 @@ pairs being "fixed", since those are deliberate.
 
 Recorded so the next person does not have to re-derive it. The threshold worth revisiting is
 near-identity (0.9+) rather than similarity, and at that threshold today's archive has zero pairs.
+
+# Dates resting on a rejected evidence artefact — 2026-09-12 (seventh sweep)
+
+The directive's chronology list includes a case the earlier six sweeps did not cover: *dates that
+cite an evidence artefact explicitly rejected elsewhere*. This archive has such an artefact and
+has named it repeatedly — TheCubicle's **`Added:`** spec-table field, which records when the
+retailer ingested a product into its catalogue, not when it was released. Four values are known
+artefacts (2018-09-11, 2018-11-07, 2018-10-14, 2018-07-16) and 2018-11-07 alone has been
+demonstrated on five products whose real releases span 2011 to 2016.
+
+## The measurement
+
+57 source records carry one of the four artefact dates somewhere in their text. Records were then
+matched at **whatever precision the record itself used** — because the dangerous derivation is
+not copying `2018-09-11` verbatim, it is reading that field and writing `2018`:
+
+| | n |
+|---|---|
+| records carrying a date value | 234 |
+| …citing a source that carries an artefact date | 38 |
+| …whose own date prefix-matches that artefact | **4** |
+
+The four: `gan-354-m` `/announced`, `gan-354` `/introduced`, `guojia-type-a-chun` `/introduced`,
+`yancheng-yan3` `/introduced`.
+
+## All four are already correct, which is the finding
+
+Every one is held at **`confidence: uncertain`** with qualifier `circa` or `before`, and every
+note names the artefact and says why it is weak. `gan-354-m`'s says so explicitly:
+
+> DOWNGRADED from `probable` on 2026-09-03 (Pass 2 adjudication gate) … the 'Added: 2018-09-11'
+> field is a TheCubicle catalogue-migration artifact, appearing verbatim 29 times across 22
+> sources and 13 unrelated brands, not a per-product date. It cannot carry a `probable`
+> announcement date. Retained as a weak upper bound only.
+
+So the sweep finds **zero defects**. The class was identified and repaired during Pass 2, and the
+repair held.
+
+### A first probe that got the count wrong, recorded because the failure is instructive
+
+The first version matched only full `YYYY-MM-DD` values and reported **9 records with a date at
+all**, out of 269 models and 523 variants. That number is absurd on its face, and the cause was
+the probe's own regex: dates are stored at day, month or year precision (9 / 64 / 59), and
+matching only full dates threw away 96% of the population *and* the entire failure mode worth
+looking for. Widening to the record's own precision took the population from 9 to 234 and
+produced the four real hits. A probe that silently examines 4% of its subject returns a
+confident, clean, meaningless zero.
+
+## Shipped as a regression guard: rule 52
+
+Zero live violations is precisely why this became a rule rather than a note. The class cost real
+adjudication effort once; nothing prevented its return.
+
+**Rule 52** warns when a date value prefix-matches a known `Added:` artefact carried by a source
+the attestation cites **and** the confidence is `reported` or better. The threshold is
+deliberately the *confidence*, not the *dependence* — using an artefact as a weak upper bound and
+saying so is legitimate, and all four real records do exactly that. Asserting it as `reported` or
+better is not, because the field does not report a release date at all. It reads both
+`att.sources` and `disputed[].sources` via `citedSourceIds()`.
+
+Two fixtures, citing the **same source** so that confidence is the only variable between them:
+`zz-added-date` (probable → must fire) and `zz-ok-added-date` (uncertain → must be spared).
+Without the second, the rule would be indistinguishable from one forbidding any reference to an
+`Added:` date, which would flag correct records forever. The rule was proved NOT to fire before
+it existed, then proved to fire after, and both branches are asserted in `npm run selftest`.

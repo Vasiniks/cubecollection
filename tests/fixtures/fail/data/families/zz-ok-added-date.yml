@@ -1,0 +1,20 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 52's SPARE path, and it cites THE SAME SOURCE as zz-added-date so that confidence is the
+# only variable between them. Depending on a catalogue-ingestion artefact as a weak upper bound,
+# said out loud, is legitimate — it is the shape all four of the archive's real instances take
+# (gan-354-m, gan-354, guojia-type-a-chun, yancheng-yan3), several of them DOWNGRADED to it
+# deliberately. Without this fixture, rule 52 would be indistinguishable from one forbidding any
+# reference to an Added: date, which would flag correct records forever.
+id: zz-ok-added-date
+entity: family
+manufacturer_id: zz-bad-brand
+name: ZZ OK Added Date Family
+introduced: { value: "2018", precision: year, qualifier: circa }
+status: stub
+attestations:
+  /introduced:
+    confidence: uncertain
+    sources: [zz-added-artefact]
+    note: "Fixture. The only datable field on the cited page is its \"Added:\" entry, a
+      catalogue-ingestion artefact rather than a release date. Retained as a weak upper bound
+      only; no stronger dating source was found."

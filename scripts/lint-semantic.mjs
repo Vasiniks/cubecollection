@@ -399,6 +399,57 @@ for (const [modelId, list] of variantsByModel) {
   }
 }
 
+// 52 — a date may not rest on a catalogue-ingestion artefact at more than `uncertain`
+//
+// TheCubicle's spec tables carry an "Added:" field. It is NOT a per-product date: it records
+// when the retailer ingested the product into its catalogue, and the same value appears verbatim
+// across products whose real releases span 2011-2016. Four values are known artefacts —
+// 2018-09-11, 2018-11-07, 2018-10-14 and 2018-07-16 — and 2018-11-07 alone has been demonstrated
+// on five products spanning 2011 to 2016.
+//
+// The archive was bitten by this and has already repaired it. A sweep on 2026-09-12 found FOUR
+// date claims that prefix-match an artefact date carried by the one source they cite:
+// gan-354-m /announced, gan-354 /introduced, guojia-type-a-chun /introduced and yancheng-yan3
+// /introduced. ALL FOUR ARE CORRECT AS THEY STAND — each is held at `uncertain` with qualifier
+// `circa` or `before`, and each note names the artefact and explains why it is weak. Several were
+// explicitly DOWNGRADED from `probable` during the Pass 2 adjudication gate.
+//
+// So this rule finds no defect today, and that is the point: it is a regression guard over a
+// class this project has already paid to clean up once. The threshold is deliberately the
+// confidence and not the dependence — depending on an artefact date as a weak upper bound, said
+// out loud, is legitimate and all four real cases do exactly that. Asserting it as `reported` or
+// better is not, because the field does not report a release date at all. Advisory: the honest
+// fix is to lower the confidence and say what the date actually rests on.
+{
+  const ARTEFACTS = ['2018-09-11', '2018-11-07', '2018-10-14', '2018-07-16'];
+  const OVERCLAIM = new Set(['confirmed', 'probable', 'reported']);
+  // Which sources carry an artefact date anywhere in their text (excerpt, note or title)?
+  const carriesArtefact = new Map();
+  for (const rec of (byEntity.get('source') ?? []).filter((r) => r.doc?.id)) {
+    const blob = JSON.stringify(rec.doc);
+    const hits = ARTEFACTS.filter((a) => blob.includes(a));
+    if (hits.length) carriesArtefact.set(rec.doc.id, hits);
+  }
+  for (const rec of records) {
+    for (const [ptr, att] of Object.entries(rec.doc?.attestations ?? {})) {
+      if (!OVERCLAIM.has(att?.confidence)) continue;
+      // the date this pointer refers to, at whatever precision the record used
+      const field = ptr.replace(/^\//, '').split('/')[0];
+      const value = rec.doc?.[field]?.value;
+      if (typeof value !== 'string' || !/^\d{4}(-\d{2}){0,2}$/.test(value)) continue;
+      // Sources in BOTH positions: att.sources and disputed[].sources.
+      const cited = citedSourceIds(att);
+      const carried = cited.flatMap((id) => carriesArtefact.get(id) ?? []);
+      if (!carried.length) continue;
+      // Only flag when the recorded date actually prefix-matches the artefact. A record citing
+      // such a source for an unrelated, independently evidenced date is not this defect.
+      const matched = carried.filter((a) => a.startsWith(value));
+      if (!matched.length) continue;
+      report.warn('52', rec.file, `${ptr} is "${att.confidence}" and its value "${value}" prefix-matches ${matched.join('/')}, a known TheCubicle "Added:" catalogue-ingestion artefact carried by a source it cites. That field records when the retailer catalogued the product, not when it was released — the same value appears across products released years apart. Hold such a date at "uncertain" as a weak upper bound and say so, as gan-354-m and gan-354 already do.`);
+    }
+  }
+}
+
 // 45 — a gross/packaged weight is not a product weight
 //
 // Retailers publish both: "Gross Weight: 213g / Item Weight: 89.9g". The gross figure includes

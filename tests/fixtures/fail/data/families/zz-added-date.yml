@@ -1,0 +1,15 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 52: a date claim whose only cited evidence carries a known catalogue-ingestion artefact,
+# held at `probable`. The archive's four real instances of this dependence are all correctly
+# held at `uncertain` with `circa`; this fixture is the shape that must never reappear.
+id: zz-added-date
+entity: family
+manufacturer_id: zz-bad-brand
+name: ZZ Added Date Family
+introduced: { value: "2018", precision: year, qualifier: exact }
+status: stub
+attestations:
+  /introduced:
+    confidence: probable
+    sources: [zz-added-artefact]
+    note: "Fixture. Asserts a release year that only prefix-matches the retailer's Added: field."

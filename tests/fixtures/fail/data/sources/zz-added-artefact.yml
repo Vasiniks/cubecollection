@@ -1,0 +1,14 @@
+# SYNTHETIC FIXTURE — not archive data.
+# A TheCubicle-style listing whose ONLY date evidence is the "Added:" spec-table field. That
+# field is a catalogue-INGESTION artefact, not a per-product date: the same value appears
+# verbatim across products whose real releases span 2011-2016. Exercises rule 52.
+id: zz-added-artefact
+entity: source
+kind: retailer
+title: ZZ listing carrying only an Added date
+publisher: "ZZ Catalogue Co"
+url: "https://zz-example.invalid/products/zz-added-artefact"
+preservation_method: excerpt
+excerpt: "Fixture excerpt. Specifications table, verbatim: \"Type: 3x3\", \"Added: 2018-09-11\". The page states no release date, no announcement date and no launch date anywhere, by design."
+reliability_note: Exercises rule 52. Carries a known catalogue-ingestion artefact date and nothing else datable.
+status: drafted
