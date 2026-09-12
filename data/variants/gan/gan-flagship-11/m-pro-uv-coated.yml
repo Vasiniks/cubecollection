@@ -27,7 +27,7 @@ attestations:
   /config/magnet_configuration:
     confidence: confirmed
     sources: [gancube-cn-core-technology-history, thecubicle-cubicle-custom-gan11-m-pro-uv]
-    note: "GAN's own history page: '8 omnidirectional magnetic components... an innovative omnidirectional core positioning magnetic system.' TheCubicle independently: 'the industry's first corner-core magnetic positioning system... 8 pairs of magnets stemming from the core to each corner base.'"
+    note: "GAN's own history page, 2020 section. The preserved Chinese reads “在轴心之上，搭载了8颗全向磁粒，一举推开了全向芯定位磁力系统的大门” — WORKING TRANSLATION: 'above the axis it carries 8 omnidirectional magnetic particles, throwing open the door to an omnidirectional core-positioning magnetic system.' Note that GAN's own sentence evidences the CORE half of this value only; the CORNER half rests on the second source. TheCubicle independently: 'the industry's first corner-core magnetic positioning system... 8 pairs of magnets stemming from the core to each corner base.'"
   /config/adjustment_system:
     confidence: probable
     sources: [thecubicle-cubicle-custom-gan11-m-pro-uv]

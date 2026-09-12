@@ -17,4 +17,4 @@ attestations:
   /config/adjustment_system:
     confidence: confirmed
     sources: [gancube-cn-core-technology-history]
-    note: "'an upgraded wing-shaped quantifiable adjustment core that bolstered both verticality and stability.'"
+    note: "GAN's own technology-history page, 2018 section, on the 2019 X S. The preserved Chinese reads “又将轴心升级为翼形数调轴，增加了翼形支撑，进一步加强了垂直度和稳定性”. WORKING TRANSLATION, not a verbatim English quote: 'further upgraded the core to a wing-shaped numerically-adjustable axis, adding wing supports and further strengthening verticality and stability.' The adjustment system itself is inherited from the X; what this sentence evidences is that the X S kept it."

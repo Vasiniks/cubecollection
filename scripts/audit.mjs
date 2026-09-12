@@ -367,23 +367,54 @@ line('  That is what `npm run catalogue-gap` covers, and why it had to be a sepa
 // evidence, and the moment that capture stopped resolving the claims became unverifiable. Both
 // affected sources were repaired by transcribing the product sections they were already citing.
 //
-// KNOWN LIMITATION, stated because it bounds how this number may be read. Subject matching is
-// token-based and does not know the archive's own abbreviations: `mfjs-meilong-3c` cited to a
-// page titled "MoFang JiaoShi MeiLong 3c" scores as a miss, because `mfjs` and `mofang jiaoshi`
-// share no tokens. That is why this is a REPORTED SWEEP and not a rule - it cannot be made
-// precise enough to block, and a check that cries wolf gets ignored. Read the share, not the row.
+// FIXED 2026-09-12, and worth recording because the fix came from the archive rather than from a
+// special case. The sweep used to know nothing of the archive's own abbreviations, so
+// `mfjs-meilong-3c` cited to a page titled "MoFang JiaoShi MeiLong 3c" scored as a miss: `mfjs`
+// and `mofang jiaoshi` share no tokens. That single mismatch put this source at 88% miss over 8
+// citations, all eight of which were sound. Manufacturer records already carry `name` and
+// `aliases`, so a manufacturer token now counts as present under any recorded spelling.
+//
+// TWO OTHER DEFECTS FOUND THE SAME DAY. The sweep counted only `att.sources` and was blind to
+// `disputed[].sources` - the identical blind spot rules 45 and 48 carried until 2026-09-11. And
+// the percentage it prints is a MISS rate, but the heading read as a HIT rate, so the worst row
+// looked like the best one and was worked last. Both fixed.
+//
+// STILL A REPORTED SWEEP, NOT A RULE. Token matching cannot be made precise enough to block, and
+// a check that cries wolf gets ignored. After the fixes the whole archive fits under 13% miss,
+// so the 25% threshold has real headroom - but read the share, not the row.
+// Manufacturer id -> every token of its recorded name and aliases. Built from the archive's own
+// manufacturer records, so a new alias needs no change here.
+const mfAliasToks = new Map(mf.map((r) => [
+  String(r.doc.id).toLowerCase(),
+  [...new Set([r.doc.name, ...(r.doc.aliases ?? [])]
+    .filter(Boolean)
+    .flatMap((n) => String(n).toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' '))
+    .filter((x) => x.length > 2))],
+]));
 head('Sources cited beyond what they preserve');
 const subjHits = new Map();
 for (const rec of records) {
   for (const att of Object.values(rec.doc?.attestations ?? {})) {
-    for (const id of att?.sources ?? []) {
+    // Disputed attestations cite sources too. Rules 45 and 48 were both blind to
+    // `disputed[].sources` until 2026-09-11; this sweep carried the same blind spot until
+    // 2026-09-12. A source cited ONLY from disputed blocks was invisible here.
+    const citedIds = [...(att?.sources ?? []), ...((att?.disputed ?? []).flatMap((d) => d.sources ?? []))];
+    for (const id of citedIds) {
       const s = srcById.get(id);
       if (!s) continue;
       if (!subjHits.has(id)) subjHits.set(id, { n: 0, miss: 0, blob: JSON.stringify(s).toLowerCase().replace(/[^a-z0-9]+/g, ' ') });
       const e = subjHits.get(id);
       e.n += 1;
       const toks = String(rec.doc.name ?? rec.doc.id).toLowerCase().replace(/[^a-z0-9]+/g, ' ').split(' ').filter((x) => x.length > 2);
-      const share = toks.length ? toks.filter((x) => e.blob.includes(x)).length / toks.length : 1;
+      // A record id carries the archive's OWN abbreviation for its manufacturer; a source names
+      // the manufacturer the way the publisher writes it. `mfjs-meilong-3c` cited to a page
+      // titled "MoFang JiaoShi MeiLong 3c" scored 88% miss purely on that mismatch - 8 of 8
+      // citations were sound. The archive already stores the mapping, so use it rather than
+      // guessing: a manufacturer token counts as present if the source names the manufacturer
+      // under ANY of its recorded name/alias spellings.
+      const share = toks.length
+        ? toks.filter((x) => e.blob.includes(x) || (mfAliasToks.get(x) ?? []).some((a) => e.blob.includes(a))).length / toks.length
+        : 1;
       if (share < 0.6) e.miss += 1;
     }
   }
@@ -392,11 +423,15 @@ const over = [...subjHits.entries()]
   .filter(([, e]) => e.n >= 8 && e.miss / e.n >= 0.25)
   .map(([id, e]) => [id, e.n, Math.round((100 * e.miss) / e.n)])
   .sort((a, b) => b[2] - a[2]);
-line(`  sources cited >=8 times whose preserved text names the citing record's subject in`);
-line(`  under 75% of cases : ${over.length}`);
-for (const [id, n, pct] of over) line(`     ${String(pct).padStart(3)}%  ${String(n).padStart(4)} cites  ${id}`);
-line('  Confirm each by hand before acting: token matching does not know this archive\'s');
-line('  abbreviations, so an `mfjs-*` record cited to a "MoFang JiaoShi" page scores as a miss.');
+// The number printed is the MISS rate: the share of citations whose subject the source's
+// preserved text does NOT name. It was previously printed under a heading that read as a HIT
+// rate, which inverted the ranking for a reader - the worst row looked like the best one. Say
+// which direction it runs, in the heading AND on every row.
+line(`  sources cited >=8 times that FAIL to name the citing record's subject in at least`);
+line(`  25% of those citations : ${over.length}   (higher % = worse; this is a MISS rate)`);
+for (const [id, n, pct] of over) line(`     ${String(pct).padStart(3)}% miss  ${String(n).padStart(4)} cites  ${id}`);
+line('  Confirm each by hand before acting. Manufacturer abbreviations are resolved through each');
+line('  manufacturer\'s recorded aliases, but model and edition wording still matches on tokens.');
 
 // ---- 11. reference_only against its own written criterion ---------------------------------
 //

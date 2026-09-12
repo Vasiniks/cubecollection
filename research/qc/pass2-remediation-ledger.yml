@@ -2257,6 +2257,50 @@ issues:
       HuaMeng-MoYu affiliation lead carried since Pass 4 with no second source. It does NOT
       establish the corporate relationship — a vendor field records who a product is sold AS, not
       who makes it, which is the same distinction that blocked Ziina's admission under P4-10.
+
+      2026-09-12 — audit sweep #10, the sweep this issue created, was re-run and both of its
+      remaining rows were worked to the end. BOTH the data and the probe turned out to be
+      defective.
+
+      DATA. `gancube-cn-core-technology-history` (19 citations, tier 1, GAN's own Chinese
+      axis-technology history) preserved only the dated headline sentences. Three attestation
+      notes quoted sentences from that page that the excerpt did not contain: the GAN356 X
+      digital-adjustment sentence behind `/config/adjustment_system`, the GAN356 X S wing-support
+      sentence behind the same pointer on the X S, and the GAN 11 M Pro omnidirectional
+      core-positioning clause behind `/config/magnet_configuration`. The capture was re-fetched
+      and read in full: every quoted sentence IS on the page, so no claim was wrong — the
+      evidence for them simply was not preserved. The excerpt was extended from the headline
+      sentences to the full timeline plus the store navigation, and the three notes now say they
+      carry working translations instead of presenting a rendered English sentence in quotation
+      marks as though it were verbatim. Miss rate 26% -> 5%.
+
+      A SECOND, UNLOOKED-FOR FINDING in the same capture. GAN's CN store navigation on 2025-01-18
+      carries a 旗舰魔方 ("flagship cubes") category that DOES list GAN356 XS and GAN356 X, while
+      the .com "Flagship Series" dropdown captured 2026-08-19 lists neither.
+      `families/gan-356 /positioning: mainline` rested on the second observation alone and read
+      as though GAN had never filed 356 as flagship. Both captures are now preserved and the note
+      states the regional and chronological split. The value did not change: still `probable`,
+      still flagged as the archive's own synthesis.
+
+      PROBE. `speedcubeshop-mofang-jiaoshi-meilong-3c-product` reported 88% miss over 8
+      citations. All eight were checked by hand and all eight are sound — size, weight, release
+      date, description and succession are each supported by the 341-character excerpt. The whole
+      88% came from one mismatch: `mfjs` is the archive's abbreviation and the page says "MoFang
+      JiaoShi", while `3c` is two characters and was dropped by the length filter, leaving a
+      single token to match on. This was the known limitation written into the sweep's own
+      header, sitting unfixed while it distorted the ranking.
+
+      THREE DEFECTS IN SWEEP #10 ITSELF, all fixed. (1) It counted only `att.sources` and was
+      blind to `disputed[].sources` — the identical blind spot rules 45 and 48 carried until
+      2026-09-11, reappearing in a sweep written the same week. (2) The percentage it prints is a
+      MISS rate under a heading that read as a HIT rate, so the worst row looked like the best
+      one: the 88% row was the strongest signal and was worked last, after the 26% row. Heading
+      and rows now both say "miss". (3) Manufacturer abbreviations now resolve through each
+      manufacturer's own recorded `name` and `aliases`, so the fix needs no per-brand table and a
+      new alias requires no code change. Verified by dropping the threshold to zero: 136 sources
+      qualify, the distribution runs 13% down to 0%, and nothing exceeds the 25% threshold. A
+      sweep reporting zero because it is broken and a sweep reporting zero because the archive is
+      clean look identical, so the distribution was inspected rather than the count.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

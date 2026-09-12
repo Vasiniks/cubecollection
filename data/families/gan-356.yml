@@ -53,7 +53,7 @@ attestations:
   /positioning:
     confidence: probable
     sources: [gancube-cn-core-technology-history, gancube-gan17-magdrive-product]
-    note: "Synthesised from two facts, each individually confirmed but requiring the archivist's own judgement to combine: GAN's own history page treats the 356 X/XS generation (2018-2019) as flagship-tier language-wise, and GAN's own 2026 site navigation ('Flagship Series') no longer includes any 356-branded product, placing 356 outside the current flagship grouping. No single source states 'GAN356 is our mainline'; this is the archive's own synthesis, flagged for review."
+    note: "Synthesised from two facts, each individually confirmed but requiring the archivist's own judgement to combine: GAN's own history page treats the 356 X/XS generation (2018-2019) as flagship-tier language-wise, and GAN's own 2026 site navigation ('Flagship Series') no longer includes any 356-branded product, placing 356 outside the current flagship grouping. The two captures behind this are now both preserved and they are NOT the same observation: the CN site captured 2025-01-18 (gancube-cn-core-technology-history) carries a 旗舰魔方 ('flagship cubes') category that DOES list GAN356 XS and GAN356 X, while the .com site captured 2026-08-19 (gancube-gan17-magdrive-product) carries a 'Flagship Series' dropdown that lists none of them. So the exclusion is recent and is evidenced on the international site only; this record does not claim the CN and .com merchandising agreed at any single moment. No single source states 'GAN356 is our mainline'; this is the archive's own synthesis, flagged for review."
   /aliases:
     confidence: probable
     sources: [gancube-2016-earliest-capture, thecubicle-gans-356-air]

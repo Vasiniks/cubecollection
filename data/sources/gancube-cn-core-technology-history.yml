@@ -15,20 +15,46 @@ url: "https://www.gancube.cn/gancubes-core-technology/"
 preservation_method: archive_url
 archive_url: "https://web.archive.org/web/20250118175543/https://www.gancube.cn/gancubes-core-technology/"
 excerpt: |-
-  "2015-2017 钢塑IPG轴心 [...] GAN深谙轴心的这一技术关键，并从2015 年开始，于GAN356上首度开发搭载了
-  第一根钢塑一体IPG轴。[...] 此后直到2017年，IPG轴心历经IPG v1-IPG v5五代精进。"
-  "2018 数调IPG轴心 [...] 2018年，GAN356 X 携全球第一根数字化调试轴心——数调钢塑IPG颠覆上阵。[...]
-  2019，GAN356 X S上市，又将轴心升级为翼形数调轴。"
-  "2019 智能球轴 [...] 2019，GAN智能元年。第一代竞速级智能魔方——GAN356 i 传奇登场，它最为重磅的智能
-  中枢，恰恰正是这根智能球轴。"
-  "2020 磁力轴 [...] 年度重磅旗舰——GAN 11 M Pro，为全球魔方圈奉上了一个久违的惊喜——磁力轴。它的神奇
-  之处，是在轴心之上，搭载了8颗全向磁粒。"
-  "2021，磁力轴2.0顺势上阵，宣告了磁悬浮时代的开启。这根磁力轴2.0，不止破纪录地实现了30°自动漂移归位，
-  更与角块卡角磁力绝妙配合，主导了磁斥力的惊艳亮相。"
-  Also, earlier on the same timeline: "2013 全塑一体成型轴心 [...] 于2013年 在 GAN3 上惊艳亮相" — a
-  product named "GAN3" from 2013, noted here as a lead for pass 3, not otherwise researched in
-  this pass.
-preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain every dated passage quoted above verbatim, including the 2015/GAN356, 2018/GAN356 X, 2019/GAN356 i, 2020/GAN 11 M Pro '旗舰' (flagship), and 2021 magnetic-levitation-era passages. Note: the staging file `research/staging/variants/gan-axis-core-systems.yml` and others cite this content at the URL `gancube.cn/en/gancubes-core-technology/` (an /en/ path); that exact URL has no capture in the CDX index as of this pass (`npm run wayback -- list` on it returns no captures). Only the CN-language URL without /en/ (used here) is archived. This source record supersedes that citation for reconciliation purposes."
+  Page heading: "GANCUBE 轴心技术发展历程" — "深入洞察竞速本质，发掘魔方核心技术的潜能，GANCUBE，坚持以技术创新，
+  驱动竞速运动的永续向前。" Standfirst on the core's role: "坐镇魔方中心稳定结构，更作为弹力系统的组件之一，
+  为弹力&轴距的调试强力助阵。"
+
+  "2013 全塑一体成型轴心 — 整根轴心，全由高强度塑料一体成型制成，并在轴端设计螺纹，以便通过更换弹力螺母调试
+  弹力。这一别具匠心的轴心设计，于2013年 在 GAN3 上惊艳亮相。它的到来，宣告了第一代分体式轴心结构在历史舞台上
+  的落幕。弹力的调试，从此不再通过修剪弹簧长度，而是更换弹力螺母轻快完成。"
+
+  "2015-2017 钢塑IPG轴心 — 轴心越垂直，各面松紧越一致，爆速越顺畅。GAN深谙轴心的这一技术关键，并从2015 年开始，
+  于GAN356上首度开发搭载了第一根钢塑一体IPG轴。与全塑一体轴心不同，它由高强度塑料与螺丝混合注塑而成，大幅提升了
+  轴心的强度和垂直度。此后直到2017年，IPG轴心历经IPG v1-IPG v5五代精进，一代比一代垂直稳定，助力GAN二阶、三阶、
+  四阶、五魔等各系产品大放异彩。"
+
+  "2018 数调IPG轴心 — 除了对轴心的垂直度精益求精，GAN也一直努力挖掘它在弹力调试上的潜能。2018年，GAN356 X 携
+  全球第一根数字化调试轴心——数调钢塑IPG颠覆上阵。它革命性地发明了数字调试系统，实现了弹力&轴距的徒手数字化调试。
+  2019，GAN356 X S上市，又将轴心升级为翼形数调轴，增加了翼形支撑，进一步加强了垂直度和稳定性。数调轴的面世，为
+  人人都是神调手创造了可能。"
+
+  "2019 智能球轴 — 2019，GAN智能元年。第一代竞速级智能魔方——GAN356 i 传奇登场，它最为重磅的智能中枢，恰恰正是
+  这根智能球轴。有了它，魔方与APP开始互连，魔方的状态开始被追踪，复原的数据开始被记录和分析……一场魔方玩法由传统
+  转向智能的变革大戏，由它唱响了主题曲。"
+
+  "2020 磁力轴 — 这一年，GAN这一磁力变革者，再度掀起了磁力系统的又一风潮。年度重磅旗舰——GAN 11 M Pro，为全球
+  魔方圈奉上了一个久违的惊喜——磁力轴。它的神奇之处，是在轴心之上，搭载了8颗全向磁粒，一举推开了全向芯定位磁力
+  系统的大门。"
+
+  "2021，磁力轴2.0顺势上阵，宣告了磁悬浮时代的开启。这根磁力轴2.0，不止破纪录地实现了30°自动漂移归位，更与角块
+  卡角磁力绝妙配合，主导了磁斥力的惊艳亮相，为悬浮竞速立下赫赫头功。"
+
+  Site navigation as captured on the same page (relevant to GAN's own product positioning). The
+  store menu carries a category "旗舰魔方" ("flagship cubes") listing, in this order: "GAN15
+  Maglev / GAN14 Maglev Pro / GAN 14 / GAN 13 / GAN 12 / GAN11 M PRO / GAN356 XS / GAN251 M pro /
+  GAN356 X". A separate "磁力系列" (magnetic series) category lists a superset including "GAN356
+  ME 2025新春版 / GAN460 M / GAN251 M / 356 Maglev / GAN11 DUO / GAN 356 M / GAN562 M", and a
+  "智能系列" (smart series) category lists "GAN12 ui FreePlay / 356 i carry 2 / 356 i carry /
+  356 i 3 / 356 i carry S / GAN12 ui Maglev".
+
+  Footer: "版权所有 © 2011-2023 广州淦源智能科技有限公司" (Guangzhou Ganyuan Intelligent Technology
+  Co., Ltd.), "粤ICP备16068632号".
+preservation_note: "Fetched directly via `npm run wayback -- get` on 2026-09-01 and confirmed to contain every dated passage quoted above verbatim, including the 2015/GAN356, 2018/GAN356 X, 2019/GAN356 i, 2020/GAN 11 M Pro '旗舰' (flagship), and 2021 magnetic-levitation-era passages. Note: the staging file `research/staging/variants/gan-axis-core-systems.yml` and others cite this content at the URL `gancube.cn/en/gancubes-core-technology/` (an /en/ path); that exact URL has no capture in the CDX index as of this pass (`npm run wayback -- list` on it returns no captures). Only the CN-language URL without /en/ (used here) is archived. This source record supersedes that citation for reconciliation purposes. RE-FETCHED AND REPAIRED 2026-09-12: the excerpt above previously preserved only the dated headline sentences, while three attestation notes in the archive quoted sentences from this page that the excerpt did not contain — the GAN356 X digital-adjustment sentence, the GAN356 X S wing-support sentence, and the GAN 11 M Pro omnidirectional-core-positioning clause. The capture was re-read in full and the excerpt extended so that every sentence the archive relies on is preserved here. The store navigation was added for the same reason: `families/gan-flagship-series` cites this source for a positioning claim that rests on GAN's own site navigation, which the earlier excerpt did not capture. No claim changed; the evidence for the existing claims is now actually present."
 accessed: "2026-09-01"
 language: zh
 region: CN
@@ -48,5 +74,15 @@ reliability_note: |-
   Core 2.0 followed, announcing the beginning of the magnetic-levitation era." This is GAN's own
   first-party technology history and is tier 1 for its own product/technology dating; "旗舰"
   (flagship) applied to the GAN 11 M Pro is GAN's own positioning word for that product, not a
-  third party's characterisation.
+  third party's characterisation. Translations of the three sentences added to the excerpt in
+  the 2026-09-12 repair: "It revolutionarily invented a digital adjustment system, achieving
+  hands-free digital adjustment of spring tension and axial distance (弹力&轴距)." / "[The X S]
+  added wing supports, further strengthening verticality and stability." / "[8 omnidirectional
+  magnetic particles above the axis] threw open the door to an omnidirectional core-positioning
+  magnetic system (全向芯定位磁力系统)." NOTE ON THE NAVIGATION: GAN's own "旗舰魔方" (flagship
+  cubes) store category includes GAN356 X, GAN356 XS and GAN251 M pro alongside the numbered
+  GAN11-GAN15 line. The archive files GAN356 X and XS under `gan-356`, whose `/positioning` is
+  `mainline`. That is a live tension between GAN's current retail merchandising and the archive's
+  historical family structure, recorded here as evidence rather than acted on: the taxonomy is
+  frozen and `/positioning` on `gan-356` is already only `probable`.
 status: sourced
