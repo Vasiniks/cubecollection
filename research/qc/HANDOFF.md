@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  c3075f3
+HEAD:  d70de30
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      509
-sources:       562
+sources:       564
 events:        4
 
 VALIDATION
@@ -26,7 +26,7 @@ npm run check:         0 errors, 26 advisory — EVERY ONE EXPLAINED:
                          4 r40  model-predates-family — P3-D2, needs human decision
                          2 r27  Rubik's Phantom/Impossible `core` + `not_legal`; reclassifying
                                 is a frozen-taxonomy call, escalated under P4-12
-npm run audit:         13 sweeps, advisory only
+npm run audit:         14 sweeps, advisory only
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched
 npm run catalogue-gap: offline by default; --fetch to query three retailers
 npm run selftest:      every check behaved as specified
@@ -84,6 +84,16 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   gan-i-carry-4--frosted; and the Year of the Horse edition GAINED its coating — it had an
   edition name and NO config at all. Applied the Appari lesson: checked product ids before
   calling them two products (they differ; Appari's matched).
+  FIRST-PARTY WIN: gancube.com's own MagLev page gives 81.2g. The archive had NO weight,
+  because the only figure was TheCubicle's 250g GROSS, correctly refused. REFUSING A GROSS
+  WEIGHT IS NOT THE END OF THE QUESTION.
+  THAT GENERALISED INTO SWEEP #14: 193 of 269 models carry no weight; 78 have a gross
+  weight in their own sources; 40 have an "Item Weight" IN THE SAME TABLE, already cited,
+  never recorded. Six recorded by hand (now 187 / 73 / 34). SHIPPED AS A LEAD COUNTER
+  WITH NO "SAFE" AUTO-SUBSET, because three attempts to build one failed: shared sources
+  (one GuHong table, six generations), sibling-puzzle sources (valk-3 cites a Valk 4 page,
+  142g = a 4x4), and SHORT DISCRIMINATING TOKENS — tokenisers drop <3-char tokens and in
+  this domain that token IS the generation number. Same defect as mfjs `3c` in sweep #10.
   TWO REUSABLE FINDINGS. TheCubicle's "Type: DIY Kits" does NOT mean unassembled — the GTS
   Unstickered page says "This DIY Kit actually comes assembled but without any stickers",
   so that category value alone never evidences assembly state. And "Added: 2018-11-07" now
@@ -121,7 +131,13 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. DEPTH RESEARCH, continue. One-config models are 106 (was 112 at session start).
+  1. WEIGHT QUEUE (sweep #14): 34 models still have an Item Weight preserved and unrecorded.
+     18 are QiYi. VERIFY EACH EXCERPT BY HAND — confirm it is a single-product page naming
+     that model — then add `specs.weight_g` + attestation to the MODEL (these are `drafted`,
+     so rules 6/8 do not bite, and size_mm already sits there from the same source).
+     DO NOT batch-apply: dayan-guhong (5 models, 1 shared table) and qiyi-valk-3 (cites a
+     Valk 4 page) are known traps.
+  2. DEPTH RESEARCH, continue. One-config models are 106 (was 112 at session start).
      REMAINING SWEEP-12 LEADS, triaged: gan356-m-e / gan356-maglev on gancube.com are
      FIRST-PARTY pages for models now resting on retailers — best provenance value.
      gan356-me-uv-...-10th-anniversary (me-v2 has uv-coated, no anniversary).
