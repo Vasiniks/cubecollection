@@ -355,3 +355,67 @@ Two fixtures, citing the **same source** so that confidence is the only variable
 Without the second, the rule would be indistinguishable from one forbidding any reference to an
 `Added:` date, which would flag correct records forever. The rule was proved NOT to fire before
 it existed, then proved to fire after, and both branches are asserted in `npm run selftest`.
+
+# Dates inferred from crawl dates — 2026-09-12 (eighth sweep)
+
+The sibling of the seventh sweep, and the other item on the directive's chronology list: a
+release date read off the *Wayback capture timestamp* of the source that evidences it.
+
+## Why the naive count is meaningless
+
+Matching every dated attestation against the capture dates of its cited sources returns **30
+hits out of 236**. Not one is a defect, because dating from the earliest capture is **documented,
+correct methodology in this archive** — the capture date *is* the evidence for "this existed by
+then". `gan-357` is the model case:
+
+```
+introduced: { value: "2016-08", precision: month, qualifier: before }
+  confidence: confirmed
+  note: "GAN's own site, tier 1, directly lists the product as for sale on 2016-08-08. The
+         qualifier 'before' with this date is a floor, not an estimate of the true
+         introduction date, which may be earlier."
+```
+
+**The discriminator is the `qualifier`, not the coincidence.** `before` means "existed by this
+date" and is exactly what a capture proves. Only `exact` or `circa` — a date claiming to *be* the
+event — is suspect when it lands on the crawl. Excluding `before` takes 30 hits to **11**.
+
+## The 11, adjudicated: zero defects
+
+Three are `/availability/production_status`, and they are a **probe artefact**: the value my
+matcher picked up was `last_seen_available`, whose date is the observation date *by definition*
+("GAN's own archived page is a non-purchasable, permanently 'Sold Out' display-only record as of
+the 2025-03-24 capture"). Matching a pointer's first sibling `value:` rather than the pointer's
+own field is the bug.
+
+The remaining eight are `/introduced` at `circa`, and every one states its reasoning:
+
+- **`moyu-huanying`** — "Retailer capture dated 2013-06-22 is the earliest evidence found; not a
+  stated launch date, so recorded `circa` per the **'two dating traps' guidance**." A record
+  citing the project's own rule for this exact trap.
+- **`gan-v100`** — the capture is not the only evidence: the page's own banner reads "GAN v100
+  Maglev is Available Now!", which is semantic evidence of a recent launch. Flags itself as a
+  single uncorroborated data point.
+- **`escube-es3`** — the source calls it the brand's "debut release". Again semantic, not merely
+  temporal.
+- **`qiyi-valk`** — reasons in the opposite direction and says so: "The 2018 storefront capture
+  already shows Valk 2 M and Valk 3 for sale, implying an earlier original Valk this pass did not
+  date directly; recorded circa 2018 as the **latest possible date, not the earliest**."
+- **`pbcube-wr`** — uses an `Added:` date and pre-empts the obvious objection: "Not the suspect
+  '2018-09-11' migration-artefact date flagged elsewhere in this batch — a distinct, plausible,
+  and very recent per-product date, consistent with the page's own '[Pre-Order]' status."
+
+That last one is worth noting against the seventh sweep: rule 52 does **not** fire on it, and
+should not. The rule is scoped to the four *demonstrated* artefact values, not to the `Added:`
+field in general, and `pbcube-wr` is precisely the legitimate use the narrower scope protects.
+
+## No rule shipped
+
+Unlike the seventh sweep, this class has no clean threshold. The legitimate uses — `before`
+floors, `last_seen_available` observations, and `circa` dates whose notes carry independent
+semantic evidence — are the overwhelming majority and are not mechanically separable from the
+defect, which does not currently exist. A rule here would fire on correct records forever, which
+is the "cries wolf" failure this project has refused three times now.
+
+Recorded as a measurement instead: **236 dated attestations, 30 coincide with a capture, 11
+survive the qualifier filter, 0 are defects.**
