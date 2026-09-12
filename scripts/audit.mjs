@@ -445,5 +445,64 @@ if (dated === 0 && inWindow.length === refOnly.length) {
   line('  the policy question is the user\'s to decide, not a data defect to fix.');
 }
 
+// ---- 12. product paths enumerated in our own sources but never chased ---------------------
+//
+// Found 2026-09-11 during depth research. The archive's sweep sources (CDX prefix enumerations)
+// record every product path a retailer published. The pass that created each one acted only on
+// what it was looking for at the time, so those excerpts are a QUEUE of leads — and reading them
+// is cheaper than new discovery.
+//
+// The DaYan case: thecubicle-dayan-guhong-product-urls and thecubicle-dayan-products-prefix-2026
+// between them named five DIY-kit paths, none of which had a variant record. Three became real
+// variants the same day. Archive-wide the DIY axis existed in only 5 variants before that,
+// despite having been enumerated in captures years old.
+//
+// This counts, per sweep source, how many enumerated paths contain a token that looks like a
+// CONFIGURATION AXIS this archive models — diy, uv, maglev, coated, frosted, lite, matte — and
+// how many of those tokens appear in no variant id for the same manufacturer. It is a lead
+// counter, not a defect detector: a path may be out of scope, a bundle, a non-3x3, or a product
+// the archive holds under another name. Every number here needs a human.
+head('Unchased leads in our own sweep sources');
+const AXIS = /\b(diy|uv|maglev|coated|frosted|lite|matte|magnetic|ballcore|ball-core)\b/;
+// Out of 3x3 scope by this archive's own rules. Without this the counter reports pyraminx,
+// megaminx and 4x4 paths as "unchased leads", which wastes the reader's attention on products
+// the archive correctly excludes — and a lead list nobody trusts is a lead list nobody reads.
+const NOT_3X3 = /\b(2x2|4x4|5x5|6x6|7x7|8x8|9x9|1[0-3]x1[0-3]|pyraminx|megaminx|skewb|square|clock|fto|cuboid|kilominx|ivy|gear|mirror|redi|axis|dino|windmill|fisher|ghost|tool|kit-for|sticker|stand|bag|lube)\b/;
+const variantIds = new Set(va.map((r) => r.doc.id));
+const rows = [];
+for (const s of src) {
+  const text = `${s.doc.excerpt ?? ''}`;
+  if (!/prefix|enumerat|CDX/i.test(`${s.doc.title ?? ''}${s.doc.preservation_note ?? ''}`)) continue;
+  const paths = [...new Set([...text.matchAll(/\b([a-z0-9]+(?:-[a-z0-9]+){2,})\b/g)].map((m) => m[1]))];
+  // Match on TOKEN SETS, not on a path tail. Retailer slugs reorder tokens freely —
+  // `monster-go-3x3-magnetic-cube` is the archive's `monster-go-magnetic-3x3--standard`, and a
+  // tail match calls it unchased. Tested: three of the first version's leads were products the
+  // archive already held.
+  const tokens = (s) => new Set(s.split(/[-_]/).filter((x) => x.length > 1 && !/^(3x3|cube|the|for|and|speed|puzzle|magic)$/.test(x)));
+  const variantTokens = va.map((r) => tokens(r.doc.id));
+  const leads = paths.filter((p) => {
+    if (!AXIS.test(p) || NOT_3X3.test(p)) return false;
+    const pt = tokens(p);
+    if (pt.size < 2) return false;
+    // held if some variant shares at least 70% of this path's tokens
+    return !variantTokens.some((vt) => {
+      const shared = [...pt].filter((x) => vt.has(x)).length;
+      return shared / pt.size >= 0.7;
+    });
+  });
+  if (leads.length) rows.push([s.doc.id, paths.length, leads.length, leads.slice(0, 3)]);
+}
+rows.sort((a, b) => b[2] - a[2]);
+line(`  sweep sources carrying enumerated paths : ${rows.length}`);
+line('  ranked by paths naming a configuration axis with no matching variant:');
+for (const [id, total, n, sample] of rows.slice(0, 8)) {
+  line(`     ${String(n).padStart(3)} of ${String(total).padStart(4)}  ${id}`);
+  line(`            e.g. ${sample.join(', ')}`);
+}
+line('  A LEAD COUNTER, NOT A DEFECT DETECTOR. A path may be a bundle, a retailer service tier,');
+line('  or a product held under a name too different to match. Every number needs a human.');
+line('  NOTE the largest entries are usually MODEL-layer gaps, not variant work: the WeiLong V11');
+line('  and QiYi AI paths belong to P4-9 and cannot be acted on while the taxonomy is frozen.');
+
 line();
 line('audit complete — advisory only, nothing here blocks a build.');
