@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      521
-sources:       584
+variants:      522
+sources:       586
 events:        4
 
 VALIDATION
@@ -211,7 +211,18 @@ MAIN-SESSION WORK SINCE THE RELAUNCH
   (newisland); ESCube, whose match was the word "prefix" inside "brand-word PREFIXED onto the
   product name"; and KungFu, which my own sweep source says returned zero products because the
   SLUG was wrong, not because the brand is unstocked. Citing either would have been false.
-  REMAINING NO-SWEEP (11): escube 11, kungfu 10, newisland 9, + 8 more.
+  ESCUBE THEN CLOSED ON A GENUINELY NEW SWEEP (its earlier match was the rejected false
+  positive), and the sweep FOUND A CONFIGURATION: escube-air-v1--20-magnet-ball-core-
+  transparent-core. Recorded as `standard` not `limited` (nothing states a bounded run) and
+  the transparent core sits in config/materials/plastic, NOT colorway.body.translucency —
+  that vocabulary describes the BODY and the claim is about the CORE.
+  BREADTH NOW: 32 with a sweep, 24 non-US, 10 remaining (kungfu 10, newisland 9, senhuan 8,
+  cubestyle 5, guojia 5, mohuanshousu 5, mojue 5, + 3 more). Slug-form probing found NO
+  collection at either retailer for any of those under their archive ids.
+  WAYBACK HAS BEEN HTTP 503 ALL DAY. Records made since rest on live fetches with
+  preservation_method: excerpt and a note that they need re-verifying against an archive_url.
+  Affected: thecubicle-escube-vendor-facet-2026,
+  thecubicle-dayan-void-cube-limited-edition-2026, and the UNMERGED GuHong V2 DIY kit.
 
 OPEN CRITICALS
   P4-9   adjudicated in full; taxonomy admission is the user's call
