@@ -1,0 +1,30 @@
+# variant: dayan-lunhui-v1--diy-kit
+# Depth research 2026-09-12. Recorded against the ORIGINAL LunHui rather than dayan-lunhui-2017
+# because the page describes "the fourth cube of the DaYan series and the first to feature
+# anti-pop torpedoes" — see the source's preservation_note.
+id: dayan-lunhui-v1--diy-kit
+entity: variant
+model_id: dayan-lunhui-v1
+name: "DaYan LunHui (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-dayan-lunhui-diy-kit-2020]
+    note: >-
+      "DIY Kit" is the retailer's product title and its own category value ("Type: DIY Kits").
+      No DaYan first-party source for the name was found this pass, so this is recorded as the
+      retailer's naming rather than the manufacturer's.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-dayan-lunhui-diy-kit-2020]
+    note: >-
+      An unassembled configuration of the same design, not a limited or commemorative edition.
+      What makes it a CONFIGURATION is that the retailer pairs them explicitly — "the DIY version
+      of this product... to see the Assembled version, click here" — so the boundary is stated by
+      the seller, not inferred by this archive. The black and white purchase options are STOCK
+      COLOURWAYS and are collapsed into this one variant under the anti-explosion rule.

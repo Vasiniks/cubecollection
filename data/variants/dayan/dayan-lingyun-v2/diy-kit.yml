@@ -1,0 +1,30 @@
+# variant: dayan-lingyun-v2--diy-kit
+# Depth research 2026-09-12. Assembly state is the axis, and the retailer states the pairing
+# itself rather than leaving it to be inferred — the same evidence shape that admitted the
+# ZhanChi, GuHong and PanShi DIY kits on 2026-09-11.
+id: dayan-lingyun-v2--diy-kit
+entity: variant
+model_id: dayan-lingyun-v2
+name: "DaYan LingYun V2 (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-dayan-lingyun-v2-diy-kit-2020]
+    note: >-
+      "DIY Kit" is the retailer's product title and its own category value ("Type: DIY Kits").
+      No DaYan first-party source for the name was found this pass, so this is recorded as the
+      retailer's naming rather than the manufacturer's.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-dayan-lingyun-v2-diy-kit-2020]
+    note: >-
+      An unassembled configuration of the same design, not a limited or commemorative edition.
+      What makes it a CONFIGURATION is that the retailer pairs them explicitly — "the DIY version
+      of this product... to see the Assembled version, click here" — so the boundary is stated by
+      the seller, not inferred by this archive. The black and white purchase options are STOCK
+      COLOURWAYS and are collapsed into this one variant under the anti-explosion rule.

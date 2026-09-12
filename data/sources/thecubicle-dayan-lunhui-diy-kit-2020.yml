@@ -1,0 +1,56 @@
+# source: thecubicle-dayan-lunhui-diy-kit-2020
+# Created 2026-09-12. Same provenance as the LingYun V2 sibling: the path was enumerated in
+# thecubicle-dayan-per-family-product-urls-2026 and sat on the handoff's "no Wayback capture"
+# list. The CDX index returns eight 200-captures, 2020 through 2025.
+id: thecubicle-dayan-lunhui-diy-kit-2020
+entity: source
+kind: retailer
+title: "DaYan LunHui - DIY Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-lunhui-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927014258id_/https://www.thecubicle.com/products/dayan-lunhui-diy-kit"
+excerpt: |-
+  Page title as captured: "DaYan LunHui - DIY Kit – TheCubicle".
+
+  Product Description, verbatim: "This is the Do-It-Yourself (DIY) version of this product. To
+  see the Assembled version of this product, please click here. The DaYan LunHui is the fourth
+  cube of the DaYan series and the first to feature anti-pop torpedoes." Followed by the
+  retailer's own assessment: "Stable and solid / Incredibly flexible with corner cutting / Turns
+  feel smooth and controlled / Features built-in torpedoes that minimize popping."
+
+  Purchase options offered, verbatim: "DaYan LunHui - DIY Kit - Black" (SKU 69_1_1) and "DaYan
+  LunHui - DIY Kit - White" (SKU 69_1_2), both priced 13.99 USD.
+
+  Specifications table, verbatim and complete: "Manufacturer: DaYan", "Type: DIY Kits",
+  "Added: 2018-11-07", "Gross Weight: 125g". No dimension is given anywhere on the page.
+
+  THE RETAILER PAIRS THE TWO ITSELF, which is what makes this a configuration rather than an
+  inference. "This is the Do-It-Yourself (DIY) version of this product. To see the Assembled
+  version of this product, please click here" is the seller naming two forms of ONE product.
+preservation_note: >-
+  Capture 20200927014258 fetched 2026-09-12 and read in full; every passage above is quoted from
+  it. TWO FIGURES ON THIS PAGE ARE DELIBERATELY NOT RECORDED AS PRODUCT FACTS. "Added:
+  2018-11-07" is one of this archive's documented TheCubicle catalogue-ingestion artefacts — it
+  is the SAME day this retailer stamps on the LingYun V2 DIY kit, two products released years
+  apart, which is what identifies it as an ingestion date rather than a release date. "Gross
+  Weight: 125g" is a PACKAGED figure, the rule-45 class, and is not the puzzle's mass. Neither
+  is attested anywhere.
+  WHICH LUNHUI THIS IS. TheCubicle lists both `dayan-lunhui` and `dayan-lunhui-2017`. This page's
+  own sentence — "the fourth cube of the DaYan series and the first to feature anti-pop
+  torpedoes" — describes the ORIGINAL, so the kit is recorded against dayan-lunhui-v1 and not
+  against the 2017 re-release. Its "Assembled version" link points at the legacy catalogue path
+  thecubicle.us/dayan-lunhui-p-31.html, which is consistent with that reading.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the LunHui was sold in a DIY (unassembled) configuration alongside an
+  assembled one; that the retailer treats them as two forms of one product; and that the DIY
+  configuration was offered in black and white body colours at one price.
+  DOES NOT ESTABLISH: a release date for either configuration, the puzzle's mass or dimensions,
+  or what DaYan itself called the configuration — "DIY Kit" is the retailer's product title.
+status: sourced

@@ -1,0 +1,60 @@
+# source: thecubicle-dayan-lingyun-v2-diy-kit-2020
+# Created 2026-09-12. The path was enumerated in thecubicle-dayan-per-family-product-urls-2026
+# and carried on the handoff's "unverified leads (no Wayback capture)" list. That note was WRONG:
+# the CDX index returns eight 200-captures for this path, 2020 through 2025. It was a rate-limit
+# artefact, which is exactly what the handoff warns never to read as absence.
+id: thecubicle-dayan-lingyun-v2-diy-kit-2020
+entity: source
+kind: retailer
+title: "DaYan LingYun V2 - DIY Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-lingyun-v2-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200927033537id_/https://www.thecubicle.com/products/dayan-lingyun-v2-diy-kit"
+excerpt: |-
+  Page title as captured: "DaYan LingYun V2 - DIY Kit – TheCubicle".
+
+  Product Description, verbatim: "This is the Do-It-Yourself (DIY) version of this product. To
+  see the Assembled version of this product, please click here. This is the second version of the
+  DaYan LingYun. It features torpedoes and has a distinct, crispy feel. This cube is light and
+  quick after lubing and is slightly smaller than its cousins, the GuHong and Zhanchi."
+
+  Purchase options offered, verbatim: "DaYan LingYun V2 - DIY Kit - Black" (SKU 505_1_1) and
+  "DaYan LingYun V2 - DIY Kit - White" (SKU 505_1_2), both priced 13.99 USD.
+
+  Specifications table, verbatim and complete: "Manufacturer: DaYan", "Type: DIY Kits",
+  "Added: 2018-11-07", "Gross Weight: 114g". No dimension is given anywhere on the page.
+
+  Frequently Asked Questions, verbatim: "Why does the DIY Kit cost more than the Assembled
+  version? The DIY Kit contains many small and loose parts, so it requires additional labor
+  compared to Assembled cubes, including screening them for missing, incorrect, or broken parts
+  and providing after-sale service."
+
+  THE RETAILER PAIRS THE TWO ITSELF, which is what makes this a configuration rather than an
+  inference. "This is the Do-It-Yourself (DIY) version of this product. To see the Assembled
+  version of this product, please click here" is the seller naming two forms of ONE product.
+preservation_note: >-
+  Capture 20200927033537 fetched 2026-09-12 and read in full; every passage above is quoted from
+  it. TWO FIGURES ON THIS PAGE ARE DELIBERATELY NOT RECORDED AS PRODUCT FACTS. "Added:
+  2018-11-07" is one of this archive's documented TheCubicle catalogue-ingestion artefacts, not a
+  release date — the LingYun V2 dates to 2011 and the page itself calls it the second version.
+  "Gross Weight: 114g" is a PACKAGED figure, the rule-45 class; the LingYun V2 is a 54.5mm-class
+  puzzle and 114g is not its mass. Neither is attested anywhere.
+  NOTE ON THE "Assembled version" LINK. Its href is the legacy catalogue page
+  thecubicle.us/dayan-lingyun-p-156.html, which is the unsuffixed LingYun path rather than a V2
+  one. The page's own sentence "This is the second version of the DaYan LingYun" is what
+  identifies the product, and it is preferred over a stale link target.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that the LingYun V2 was sold in a DIY (unassembled) configuration alongside an
+  assembled one; that the retailer treats them as two forms of one product; and that the DIY
+  configuration was offered in black and white body colours at one price.
+  DOES NOT ESTABLISH: a release date for either configuration, the puzzle's mass or dimensions,
+  or what DaYan itself called the configuration — "DIY Kit" is the retailer's product title and
+  its own category value.
+status: sourced
