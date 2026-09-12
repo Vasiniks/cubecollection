@@ -17,13 +17,22 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-guoguan-yuexiao-pro-2018]
-    note: "Differentiation search performed: a `scripts/wayback.mjs prefix
+    sources: [thecubicle-guoguan-yuexiao-pro-2018, cubelelo-moyu-products-prefix-2026]
+    note: >-
+      Differentiation search performed: a `scripts/wayback.mjs prefix
       thecubicle.com/products/guoguan` sweep found exactly one sibling configuration for this
-      model, the factory-magnetized 'Pro M' (recorded separately). TheCubicle's own page
-      states directly 'this particular variant is not magnetized' — explicit first-party
-      confirmation this is the non-magnetic configuration specifically, not merely the absence
-      of a magnet claim. No colourway edition or limited/commemorative status found."
+      model, the factory-magnetized 'Pro M' (recorded separately). TheCubicle's own page states
+      directly 'this particular variant is not magnetized' — explicit first-party confirmation
+      this is the non-magnetic configuration specifically, not merely the absence of a magnet
+      claim. No colourway edition or limited/commemorative status found. SWEEP RECORDED
+      2026-09-12 (RESEARCH_SPEC 3.6a). cubelelo-moyu-products-prefix-2026 is a CDX prefix
+      enumeration of an INDIAN retailer's /products/moyu- paths, 132 distinct, and GuoGuan
+      appears in it UNDER THE MOYU PREFIX — `moyu-guoguan-yuexiao-3x3-black` and
+      `moyu-guoguan-yuexiao-e-3x3-black`. That is a second retailer in a different market
+      independently attributing GuoGuan to MoYu, which is this sub-brand's parent relationship,
+      and it is also this manufacturer's first NON-US source. No configuration of THIS model
+      appears in the enumeration beyond what the archive already holds. One retailer in one
+      market is not the line, and ledger P26-3 records that slug form differs per brand.
   /edition/designation:
     confidence: uncertain
     sources: [thecubicle-guoguan-yuexiao-pro-2018]

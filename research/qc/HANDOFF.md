@@ -188,6 +188,24 @@ ACTIVE AGENT LANES — ALL FIVE DIED ON A SESSION LIMIT, FOUR RELAUNCHED FROM 48
   -10`, `git diff`. Recover committed AND uncommitted work before relaunching. Resume only the
   unfinished portion.
 
+MAIN-SESSION WORK SINCE THE RELAUNCH
+  BREADTH: manufacturers with a recognised 3.6a sweep 23 -> 30; failing BOTH checks 13 -> 8;
+  no-sweep list down to 12 (calvins-puzzle 12, escube 11, kungfu 10, + 9 more).
+  GiiKER closed by a NEW first-party enumeration (its own Shopify store: 20 products, exactly
+  ONE typed "speed cube"). MoYu closed earlier by two new sweeps. BUT Particula, Cube4you,
+  EastSheen and GuoGuan were all closed WITHOUT NEW RESEARCH — the archive already held the
+  enumeration and the detector could not read it.
+  THAT IS THE DURABLE FINDING. SWEEP_EVIDENCE identifies a research METHOD by VOCABULARY
+  ("prefix|enumerat|/collections/|catalogue structure|CDX"), so it mis-sorts in BOTH
+  directions: it over-matches notes that merely MENTION CDX as a method (widening it moved the
+  count 25->37, almost all false), and it MISSED four real enumerations that never used the
+  word — a first-party site navigation, a storefront category page, a wiki product listing,
+  and a sub-brand appearing under its parent's prefix. THE FIX WENT IN THE RECORDS, NOT THE
+  REGEX: each source now states plainly that it contains an enumeration. Precise, true, one
+  note each.
+  Two candidates were INSPECTED AND REJECTED (a single product's category membership, and a
+  single product page), which is what makes the four trustworthy.
+
 OPEN CRITICALS
   P4-9   adjudicated in full; taxonomy admission is the user's call
   P4-10  Ziina IS a manufacturer not a decorator; WHO MAKES IT is unestablished.

@@ -1102,6 +1102,21 @@ issues:
       real enumerations that never used the word. Loosening the regex was tried and made the
       false positives worse. Making each record state plainly what it contains is precise, true,
       and costs one note.
+
+      2026-09-12 — GUOGUAN CLOSED THE SAME WAY: the enumeration was already in the archive and
+      simply was not cited where the check could see it. Sweeps 29 -> 30; no-sweep list 13 -> 12.
+
+      `cubelelo-moyu-products-prefix-2026`, the Indian-retailer sweep recorded earlier today,
+      enumerates GuoGuan products UNDER THE MOYU PREFIX — `moyu-guoguan-yuexiao-3x3-black` and
+      `moyu-guoguan-yuexiao-e-3x3-black`. GuoGuan is a MoYu sub-brand, so a second retailer in a
+      different market filing its products under the parent's prefix is both a catalogue
+      enumeration for GuoGuan and independent corroboration of the parent relationship. Cited on
+      all three GuoGuan baselines.
+
+      The non-US count did NOT move, and that is correct rather than a bug: GuoGuan already held
+      a non-US source before this, which is why the audit never flagged it with "(also no non-US
+      source)". Checked rather than assumed — `s.region && s.region !== 'US'` would have counted
+      the Cubelelo source had it been the first.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven
