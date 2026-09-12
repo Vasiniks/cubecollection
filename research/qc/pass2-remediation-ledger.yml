@@ -954,6 +954,36 @@ issues:
       MoYu still has NO non-US source; the audit counts that separately and still counts it
       against MoYu. And ledger P26-3's own finding stands: the sweep covers the `moyu-` slug form
       at one retailer in one market, and slug form differs per brand.
+
+      2026-09-12 — MOYU'S BREADTH GAP IS NOW CLOSED ON BOTH AXES. The audit counted MoYu as
+      failing both 3.6a checks: no prefix sweep and no non-US source. The sweep was run earlier
+      today; the non-US half is closed by cubelelo-moyu-products-prefix-2026, a CDX enumeration
+      of an Indian retailer's /products/moyu- paths, 132 distinct. Manufacturers with a non-US
+      source 23 -> 24. Both sweeps are cited on the seven older MoYu baselines, so those records
+      now say TWO MARKETS were searched rather than one.
+
+      WHAT THE NON-US CATALOGUE ADDED THAT THE US ONE DID NOT, which is the point of 3.6a's
+      second check and not merely a box ticked. Cubelelo sells MoYu's GuoGuan and HuaMeng
+      sub-brands UNDER THE MOYU PREFIX — moyu-guoguan-yuexiao-3x3-black,
+      moyu-huameng-ys3m-maglev-3x3-cube and others — which is a second retailer in a different
+      market independently attributing both sub-brands to the same parent. And every P4-9
+      candidate generation is present there too: V11 in four forms, V10 AI, Super WeiLong V2,
+      RS3M V5 SE. That answers a question nobody had asked out loud but which P4-9's evidence
+      invited, since its candidates all came from US retailers: they are not a US-market artefact.
+
+      A CASE STUDY IN WHAT INDEPENDENCE MEANS came with it. Cubelelo's AoLong V2 LE page carries
+      a description that is WORD FOR WORD TheCubicle's, down to the Lucas Etter sentence. Under
+      RESEARCH_SPEC 3.2 that is one evidence chain written twice, so the Lucas Etter claim is no
+      better evidenced than before and the variant cites only one page for it. But Cubelelo's
+      STRUCTURED SPECIFICATION TABLE is its own house format with no counterpart on the other
+      page, and it is genuinely independent: "Product Weight (in grams): 93" separated from
+      "Package Weight (in grams): 146" — the rule-45 distinction drawn by the source itself — plus
+      a 57mm size and a "Color Scheme: Transparent Green" field.
+      That last field RESOLVED AN AMBIGUITY rather than repeating a claim. TheCubicle's "a large
+      display box with a transparent green cube stand" can be read as a transparent-green STAND
+      or a stand for a transparent-green CUBE. Cubelelo's own title and Color Scheme field say
+      the CUBE. One page's structured data settling what another page's prose left open is
+      corroboration of a kind the copied-prose test would have thrown away.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven

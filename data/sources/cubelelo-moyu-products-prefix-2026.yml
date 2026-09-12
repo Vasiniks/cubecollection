@@ -1,0 +1,60 @@
+# source: cubelelo-moyu-products-prefix-2026
+# Created 2026-09-12. THE OTHER HALF OF MOYU'S BREADTH GAP. `npm run audit` counted MoYu as
+# failing BOTH 3.6a checks: no prefix sweep (closed earlier today) and no non-US source. Cubelelo
+# is an Indian retailer, and RESEARCH_SPEC 3.6a names it as the example of a regional catalogue
+# holding what the rest of the method never sees.
+id: cubelelo-moyu-products-prefix-2026
+entity: source
+kind: retailer
+title: "Cubelelo /products/moyu- prefix enumeration (CDX, 2026-09)"
+publisher: "Cubelelo"
+url: "https://web.archive.org/cdx/search/cdx?url=cubelelo.com/products/moyu-&matchType=prefix&fl=original&collapse=urlkey&filter=statuscode:200&limit=800"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of cubelelo.com/products/moyu-, run 2026-09-12, collapsed on urlkey and
+  filtered to status 200. 132 distinct paths after discarding query-string and file-extension
+  duplicates. Reproducible with
+  `npm run wayback -- prefix cubelelo.com/products/moyu- --limit 800`.
+
+  WHAT A NON-US CATALOGUE ADDS THAT THE US ONE DID NOT.
+
+  Sub-brands sold UNDER THE MOYU PREFIX here, which TheCubicle files separately:
+    moyu-guoguan-yuexiao-3x3-black, moyu-guoguan-yuexiao-e-3x3-black
+    moyu-huameng-ys3m-maglev-3x3-cube, moyu-huameng-ys3-m-3x3-magnetic-refurbished
+    moyu-huameng-tg-3x3-magnetic-ball-core-maglev-uv-coated-limited-edition
+  This is independent corroboration of the GuoGuan and HuaMeng affiliations with MoYu, from a
+  retailer in a different market that chose the same parent attribution.
+
+  P4-9 CANDIDATES PRESENT AT A SECOND RETAILER IN A DIFFERENT MARKET, verbatim:
+    moyu-weilong-v11-3x3-magnetic, moyu-weilong-v11-3x3-18th-anniversary-magnetic,
+    moyu-weilong-v11-se-magnetic, moyu-weilong-ai-3x3-v11-magnetic-maglev,
+    moyu-weilong-v10-ai-gyroscope-core-charging-uv-coated-version,
+    moyu-super-weilong-v2-ai-gyroscope-smart-cube, moyu-super-weilong-v2-magnetic,
+    moyu-rs3m-v5-se-magnetic, moyu-super-rs3-m-3x3-magnetic-ball-core-uv-coated
+  These are NOT admitted here. They matter because P4-9's candidates were found at US retailers,
+  and a reader could reasonably ask whether they were a US-market artefact. They are not.
+
+  A CONFIGURATION OF A MODEL THE ARCHIVE HOLDS:
+    moyu-aolong-v2-3x3-transparent-green-limited-edition — see
+    cubelelo-moyu-aolong-v2-le-2021, recorded separately.
+
+  "-refurbished" PATHS ARE STOCK CONDITION, NOT CONFIGURATION, and this retailer has many of
+  them (rs3m-2021, rs3m-v5, super-rs3m x3, wr-m-2021-lite, huameng-ys3-m, guoguan-yuexiao).
+  The same reasoning rejected Cubelelo's DaYan "-refurbished" paths on 2026-09-11.
+preservation_note: >-
+  CDX output, not a page capture; the enumeration is the evidence and is reproducible from the
+  URL above. Individual pages named here were fetched separately where they were acted on.
+accessed: "2026-09-12"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure, NON-US market.
+  ESTABLISHES: the set of MoYu-prefixed paths an Indian retailer has carried; that MoYu's
+  GuoGuan and HuaMeng sub-brands are sold under the MoYu name in that market; and that the
+  P4-9 candidate generations are present outside the US market.
+  DOES NOT ESTABLISH: that this catalogue is complete, or that any listed product is a distinct
+  model. A retailer's parent-brand prefix is a merchandising choice, and this archive has a
+  documented false positive from reading retailer taxonomy as lineage evidence.
+status: sourced

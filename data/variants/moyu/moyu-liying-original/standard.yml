@@ -14,7 +14,7 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-us-moyu-early-3x3-lines, thecubicle-moyu-prefix-2026]
+    sources: [thecubicle-us-moyu-early-3x3-lines, thecubicle-moyu-prefix-2026, cubelelo-moyu-products-prefix-2026]
     note: >-
       TheCubicle's own 2014-03-05 product page sells this as one undifferentiated product; the
       Speedsolving wiki carries only a bare, empty section heading and adds nothing further.
@@ -26,4 +26,11 @@ attestations:
       sweep that carry three or more. Its single-configuration state is therefore SEARCHED at
       this retailer and recorded as such, not merely unexamined. One retailer in one market is
       not the line: the audit still counts MoYu as having no non-US source, and ledger P26-3
-      records that slug form differs per brand.
+      records that slug form differs per brand. SECOND MARKET CHECKED 2026-09-12:
+      cubelelo-moyu-products-prefix-2026, a CDX prefix enumeration of an INDIAN retailer's
+      /products/moyu- paths (132 distinct). RESEARCH_SPEC 3.6a names Cubelelo as the example of
+      a regional catalogue holding what the rest of the method never sees, and it closes the
+      second half of MoYu's breadth gap. This model carries no configuration path there either.
+      The two sweeps together are two markets, not one, which is the strongest statement this
+      archive can currently make about a MoYu single-configuration model - though neither is a
+      manufacturer source, and MoYu's own catalogue remains unswept.

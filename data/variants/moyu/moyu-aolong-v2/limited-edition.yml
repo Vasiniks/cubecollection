@@ -6,6 +6,16 @@ entity: variant
 model_id: moyu-aolong-v2
 name: "MoYu AoLong V2 (LE)"
 scope_class: core
+config:
+  size_mm: 57.0
+  weight_g: 93
+colorway:
+  designation: "Transparent Green"
+  limited_name: "Transparent Green"
+  scheme: custom
+  body:
+    plastic_color_name: "Transparent Green"
+    translucency: transparent
 edition:
   types: [limited, commemorative]
   name: "LE"
@@ -48,3 +58,47 @@ attestations:
       stronger footing than that, and writing a person into the archive on a product blurb would
       lower a standard the archive has otherwise kept. The lead is recorded in the source's
       preservation_note; closing it means fetching WCA's own result for River Hill Fall 2015.
+  /config/weight_g:
+    confidence: probable
+    sources: [cubelelo-moyu-aolong-v2-le-2021]
+    note: >-
+      Cubelelo's own structured table separates "Product Weight (in grams): 93" from "Package
+      Weight (in grams): 146" — the rule-45 distinction drawn by the source itself rather than
+      inferred here. 146g is the boxed collector's set, which contains a manual, stickers and a
+      stand as well as the puzzle.
+  /config/size_mm:
+    confidence: probable
+    sources: [cubelelo-moyu-aolong-v2-le-2021]
+    note: '"Dimensions (in mm): 57 x 57 x 57", read as a 57.0mm edge length.'
+  /colorway/designation:
+    confidence: probable
+    sources: [cubelelo-moyu-aolong-v2-le-2021]
+    note: >-
+      THIS RESOLVES AN AMBIGUITY RATHER THAN REPEATING A CLAIM. TheCubicle's sentence — "a large
+      display box with a transparent green cube stand" — can be read as a transparent-green STAND
+      or as a stand for a transparent-green CUBE, and on its own it does not say which. Cubelelo's
+      title names the cube "Transparent Green" and its own structured "Color Scheme" field reads
+      the same, which is a claim about the puzzle.
+      CUBELELO IS NOT CITED AS CORROBORATION OF THE LUCAS ETTER CLAIM, and the distinction
+      matters on this record. Its DESCRIPTION is word for word TheCubicle's, which under
+      RESEARCH_SPEC 3.2 is one evidence chain written twice. Only its structured specification
+      table, which has no counterpart on the other page, is independent — and that is all it is
+      cited for here.
+  /colorway/body/translucency:
+    confidence: probable
+    sources: [cubelelo-moyu-aolong-v2-le-2021]
+    note: >-
+      "Transparent Green" in the retailer's own Color Scheme field. `transparent` rather than
+      `translucent` because the source says transparent; the archive does not soften a source's
+      own word.
+  /colorway/scheme:
+    confidence: probable
+    sources: [cubelelo-moyu-aolong-v2-le-2021]
+    note: >-
+      `custom`, on the same reasoning the archive applies to GAN's Crystal Blue and Love Pink
+      colourways: a named, non-stock scheme sold as a distinct product.
+  /colorway/body/plastic_color_name:
+    confidence: probable
+    sources: [cubelelo-moyu-aolong-v2-le-2021]
+    note: >-
+      "Transparent Green", the retailer's own descriptive term, kept verbatim as sourced.

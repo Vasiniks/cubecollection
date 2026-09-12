@@ -1,0 +1,57 @@
+# source: cubelelo-moyu-aolong-v2-le-2021
+# Created 2026-09-12. A SECOND RETAILER FOR THE AOLONG V2 LE, AND A CASE STUDY IN WHAT COUNTS AS
+# INDEPENDENT. Its prose is copied from TheCubicle's; its specification table is its own. The two
+# halves of this page have to be cited differently, and the reliability_note says which is which.
+id: cubelelo-moyu-aolong-v2-le-2021
+entity: source
+kind: retailer
+title: "MoYu AoLong v2 3x3 Transparent Green (LE) — Cubelelo"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/moyu-aolong-v2-3x3-transparent-green-limited-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210127072108id_/https://www.cubelelo.com/products/moyu-aolong-v2-3x3-transparent-green-limited-edition"
+excerpt: |-
+  Page title as captured: "Buy 3x3 MoYu AoLong v2 Transparent Green (LE) Cube Puzzle | Cubelelo".
+
+  Description, verbatim: "The MoYu AoLong v2 3x3 Transparent Green is the limited edition version
+  of the historic MoYu AoLong v2, which was used by Lucas Etter to set the first sub-5 official
+  WCA 3x3 solve on November 21st, 2015. This collector's set includes a large display box with a
+  transparent green cube stand, as well as the official collectible MoYu card for Lucas Etter.
+  This puzzle is fully unstickered right out of the box, and it includes a set of factory
+  stickers."
+
+  Structured specification table, verbatim — THIS IS CUBELELO'S OWN AND HAS NO COUNTERPART ON
+  THECUBICLE'S PAGE: "Brand Name: MoYu", "Material: ABS Plastic", "Dimensions (in mm): 57 x 57 x
+  57", "Product Weight (in grams): 93", "Package Weight (in grams): 146", "Color Scheme:
+  Transparent Green", "Package Contents: 1 Unit Cube, 1 Manual, Sticker and 1 Cube Stand".
+preservation_note: >-
+  Capture 20210127072108 fetched 2026-09-12 with content-encoding negotiation and read in full.
+  THE PROSE IS NOT INDEPENDENT AND MUST NOT BE CITED AS CORROBORATION. Cubelelo's description is
+  word for word TheCubicle's, down to "a large display box with a transparent green cube stand,
+  as well as the official collectible MoYu card for Lucas Etter". Under RESEARCH_SPEC 3.2 that is
+  ONE evidence chain written twice, not two retailers agreeing. The Lucas Etter claim is
+  therefore no better evidenced than it was before this source existed, and nothing on the
+  variant cites both pages for it.
+  THE SPECIFICATION TABLE IS INDEPENDENT AND IS WHAT THIS SOURCE IS FOR. It is a structured field
+  set in Cubelelo's own house format, with no counterpart on the TheCubicle page, and it
+  separates "Product Weight (in grams): 93" from "Package Weight (in grams): 146" — the rule-45
+  distinction drawn by the source itself. 93g on a 57mm puzzle is plausible; 146g is the boxed
+  set.
+  IT ALSO RESOLVES AN AMBIGUITY IN THE COPIED PROSE. "a large display box with a transparent
+  green cube stand" can be read as a transparent-green STAND or a stand for a transparent-green
+  CUBE. Cubelelo's own title names the cube "Transparent Green" and its own "Color Scheme" field
+  reads "Transparent Green", which is a claim about the puzzle. The structured field settles what
+  the borrowed sentence left open.
+accessed: "2026-09-12"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page, NON-US market.
+  ESTABLISHES: a product weight of 93 g and a 57 mm size for the AoLong V2 LE; that the cube
+  itself is transparent green; and the set's contents — one cube, one manual, stickers and one
+  stand.
+  DOES NOT ESTABLISH: the Lucas Etter association or the WCA result, both of which are copied
+  prose from TheCubicle and add nothing to it; a run size; or a release date.
+status: sourced
