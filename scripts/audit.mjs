@@ -9,7 +9,7 @@
 
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
-import { loadVocabularies, loadSchemas, loadRecords, indexRecords, sourceTier, citedSourceIds } from './lib/archive.mjs';
+import { loadVocabularies, loadSchemas, loadRecords, indexRecords, sourceTier, citedSourceIds, ROOT } from './lib/archive.mjs';
 
 const vocabs = loadVocabularies();
 loadSchemas(vocabs);
@@ -497,18 +497,63 @@ if (dated === 0 && inWindow.length === refOnly.length) {
 // how many of those tokens appear in no variant id for the same manufacturer. It is a lead
 // counter, not a defect detector: a path may be out of scope, a bundle, a non-3x3, or a product
 // the archive holds under another name. Every number here needs a human.
+const readSafe = (f) => { try { return readFileSync(f, 'utf8'); } catch { return ''; } };
 head('Unchased leads in our own sweep sources');
 const AXIS = /\b(diy|uv|maglev|coated|frosted|lite|matte|magnetic|ballcore|ball-core)\b/;
 // Paths this archive has already adjudicated and REJECTED, read from the sources that record
 // those rejections. Without this the counter re-reports them every run and the reader learns to
 // ignore it — the ShengShou YuFeng renames were rejected on 2026-09-11 and would otherwise
 // reappear forever.
+//
+// TWO DEFECTS FIXED 2026-09-12, both found by this sweep still reporting DaYan paths that had
+// been adjudicated and rejected the day before.
+//
+// WHERE IT LOOKED. It read source excerpts only. The DaYan rejection was written to the
+// REMEDIATION LEDGER, which is where this project actually records adjudications — commit
+// c6e9c89 touched no other file — so the detector could not see the decision at all. The
+// ledger and the QC reports are now read too. A decision recorded in the place the project
+// recorded it must be visible to the check that would otherwise re-ask the question.
+//
+// HOW MUCH IT HARVESTED. It tested for rejection language anywhere in a document and then
+// harvested EVERY hyphenated token in that whole document. On a source excerpt that is merely
+// loose; on a 60-issue ledger it would silently suppress most of the archive's leads on the
+// strength of one "REJECTED" appearing somewhere in the file. Harvesting is now scoped to the
+// PARAGRAPH carrying the rejection language, so a rejection excludes what it is about and
+// nothing else. Over-exclusion is the dangerous direction here: a lead wrongly suppressed is
+// invisible, while a lead wrongly reported merely costs a reader a minute.
+//
+// SCOPE THE HARVEST TO THE DOCUMENT'S OWN UNIT OF TOPIC, AND ONLY TO DOCUMENTS THAT HAVE ONE.
+// Got wrong three ways on 2026-09-12, and the third is the one worth remembering.
+//
+// TOO WIDE: test for rejection language anywhere in a file, then harvest every hyphenated token
+// in it. Harmless on a source excerpt; catastrophic on a 60-issue ledger.
+//
+// TOO NARROW: scope to the paragraph. A source excerpt is ONE adjudication of ONE question and
+// states its verdict where a human would, at the end. `speedcubeshop-shengshou-yufeng-rename-
+// 2026` lists its four paths under "THE V1 PAIR"/"THE V2 PAIR" and writes "CONCLUSION: REJECTED"
+// three paragraphs later, so paragraph scoping un-rejected all four.
+//
+// TOO MANY DOCUMENTS: adding research/qc/*.md and *.yml took the harvest from 37 paths to 872.
+// `p4-9-adjudication.yml` alone contributed 205 — it is YAML, so there are no markdown headings
+// to split on, one "REJECTED" appears somewhere in it, and the whole file gets harvested. The
+// long agent reports behave the same way. Those documents are DISCUSSION; the ledger and the
+// source excerpts are where this project records a DECISION, and only those two are read here.
+//
+// Over-exclusion is the dangerous direction and that is why this errs small: a lead wrongly
+// suppressed is invisible, while a lead wrongly reported costs a reader one minute.
+const REJECTION = /REJECTED|rename|not a configuration|not a variant|stock colourway|stock colorway|spare-parts|correctly not/i;
+// Requires a letter somewhere, so "2024-05-09" is not mistaken for a product path.
+const PATHLIKE = /\b((?=[a-z0-9-]*[a-z])[a-z0-9]+(?:-[a-z0-9]+){2,})\b/g;
 const rejectedPaths = new Set();
-for (const s of src) {
-  const text = `${s.doc.excerpt ?? ''}`;
-  if (!/REJECTED|rename|not a configuration/i.test(text)) continue;
-  for (const m of text.matchAll(/\b([a-z0-9]+(?:-[a-z0-9]+){2,})\b/g)) rejectedPaths.add(m[1]);
-}
+const harvestRejections = (text, splitter) => {
+  const whole = String(text ?? '');
+  for (const unit of splitter ? whole.split(splitter) : [whole]) {
+    if (!REJECTION.test(unit)) continue;
+    for (const m of unit.matchAll(PATHLIKE)) rejectedPaths.add(m[1]);
+  }
+};
+for (const s of src) harvestRejections(s.doc.excerpt);                     // one excerpt, one topic
+harvestRejections(readSafe(join(ROOT, 'research/qc/pass2-remediation-ledger.yml')), /\n  - id: /);
 // Out of 3x3 scope by this archive's own rules. Without this the counter reports pyraminx,
 // megaminx and 4x4 paths as "unchased leads", which wastes the reader's attention on products
 // the archive correctly excludes — and a lead list nobody trusts is a lead list nobody reads.

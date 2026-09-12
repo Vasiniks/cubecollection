@@ -901,6 +901,37 @@ issues:
       slug form. It also carried a trap - its slug reads "i-carry-2" while its title, its
       description and its 79.0g item weight (against the i Carry 2's 88.0g) all say i Carry.
       Three signals against one, and the slug is the one that lies.
+
+      2026-09-12 — sweep #12 was still re-reporting the four Cubelelo DaYan paths adjudicated
+      and rejected the previous day. The cause was a gap between where this project RECORDS a
+      decision and where the detector LOOKS for one: `rejectedPaths` read source excerpts only,
+      and commit c6e9c89 wrote that rejection to the remediation ledger and to no other file.
+      The ledger is now read too, split per issue.
+
+      GETTING THE SCOPE RIGHT TOOK THREE ATTEMPTS and each failure is worth keeping. TOO WIDE
+      was the original: test for rejection language anywhere in a document, then harvest every
+      hyphenated token in it. That is merely loose on a source excerpt and catastrophic on a
+      60-issue ledger, where a single "REJECTED" would suppress most of the archive's leads.
+      TOO NARROW was the first fix: scope to the paragraph. That immediately un-rejected all
+      four ShengShou YuFeng paths, because a source excerpt is ONE adjudication of ONE question
+      and puts its verdict where a human would — `speedcubeshop-shengshou-yufeng-rename-2026`
+      lists the paths under "THE V1 PAIR"/"THE V2 PAIR" and writes "CONCLUSION: REJECTED" three
+      paragraphs later. TOO MANY DOCUMENTS was the second: adding research/qc/*.md and *.yml
+      took the harvest from 37 paths to 872. `p4-9-adjudication.yml` alone contributed 205 —
+      it is YAML, so there are no markdown headings to split on, one "REJECTED" appears
+      somewhere in it, and the entire file was harvested.
+
+      SETTLED SCOPE: source excerpts as whole documents, the ledger split per issue, and
+      nothing else. QC reports are DISCUSSION; the ledger and the source excerpts are where a
+      DECISION gets recorded. The harvest is 77 paths. Over-exclusion is the dangerous
+      direction and the comment says so: a lead wrongly suppressed is invisible, while a lead
+      wrongly reported costs a reader a minute.
+
+      VERIFIED WITH TWO KNOWN NEGATIVES AND ONE KNOWN POSITIVE rather than on the count.
+      `dayan-guhong-v3-m-stickerless-magnetic` (rejected in the ledger) is excluded;
+      `shengshou-yufeng-v2-3x3-magnetic-magnetic-core` (rejected in a source excerpt) is
+      excluded; `moyu-weilong-v11-...-uv-picube-se` (P4-9, open) is still reported. A date like
+      "2024-05-09" also used to match the path pattern, which the pattern now rejects.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven
