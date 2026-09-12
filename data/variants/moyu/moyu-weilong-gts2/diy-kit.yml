@@ -1,0 +1,32 @@
+# variant: moyu-weilong-gts2--diy-kit
+# Depth research 2026-09-11. Recorded on WEAKER evidence than the DaYan DIY kits added the same
+# day, and the attestations say so: this page has no pairing sentence, so "DIY" rests on the
+# product title alone.
+id: moyu-weilong-gts2--diy-kit
+entity: variant
+model_id: moyu-weilong-gts2
+name: "MoYu WeiLong GTS2 (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: uncertain
+    sources: [thecubicle-moyu-weilong-gts2-diy-kit-2019]
+    note: >-
+      "DIY Kit" is the retailer's product title and nothing more. Unlike the DaYan DIY kits
+      recorded the same day, this page carries NO "This is the Do-It-Yourself (DIY) version of
+      this product" sentence — its body copy describes the GTS2 generally and never mentions
+      assembly state. Held at `uncertain` for exactly that reason: a distinct product handle and
+      a title are good evidence a separate product was sold, but they are not a description of
+      what it was.
+  /edition/types:
+    confidence: uncertain
+    sources: [thecubicle-moyu-weilong-gts2-diy-kit-2019]
+    note: >-
+      Recorded as a configuration of the GTS2 on the strength of the product title and handle. NO
+      SPECS are recorded: the capture's spec table carries no manufacturer, dimension or weight
+      field, and copying figures from a sibling variant would assert values this source does not
+      hold.

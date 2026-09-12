@@ -1,0 +1,45 @@
+# source: thecubicle-moyu-weilong-gts2-diy-kit-2019
+# Created 2026-09-11, depth research on the WeiLong line. Found via a CDX prefix sweep of
+# thecubicle.com/products/moyu-weilong.
+#
+# NOTE THE EVIDENCE IS WEAKER THAN THE DAYAN DIY KITS recorded the same day: this page carries
+# NO "This is the Do-It-Yourself (DIY) version of this product" pairing sentence. The DIY claim
+# rests on the product title and the distinct product handle alone.
+id: thecubicle-moyu-weilong-gts2-diy-kit-2019
+entity: source
+kind: retailer
+title: "MoYu WeiLong GTS2 - DIY Kit — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moyu-weilong-gts2-diy-kit"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190720235830id_/https://www.thecubicle.com/products/moyu-weilong-gts2-diy-kit"
+excerpt: |-
+  Page title as captured: "MoYu WeiLong GTS2 - DIY Kit – TheCubicle".
+
+  Product Description, verbatim: "The MoYu WeiLong GTS2 is now available! This long-awaited remake
+  of the WeiLong GTS features a more compact size, thinner and more vivid stickers, and an overall
+  more comfortable handfeel, all while maintaining the enjoyable features of its predecessor. The
+  GTS2 also features an all-new 3-piece corn[er design...]"
+
+  WHAT THIS PAGE DOES NOT SAY, recorded because it bounds the claim. Unlike the DaYan DIY-kit
+  pages (thecubicle-dayan-guhong-diy-kit-2020 and siblings), this page carries NO "This is the
+  Do-It-Yourself (DIY) version of this product. To see the Assembled version... click here"
+  sentence. Its body copy describes the GTS2 generally and never mentions assembly state at all.
+  The DIY claim therefore rests on the product TITLE and the distinct product handle, not on
+  descriptive copy — weaker evidence than the DaYan kits, and recorded as such.
+
+  NO manufacturer, dimension or item weight field was present in the capture's spec table.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted title and
+  description. The live product page no longer returns JSON — the product is discontinued."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that TheCubicle sold a product titled "MoYu WeiLong GTS2 - DIY Kit" under its own
+  handle.
+  DOES NOT ESTABLISH: what the kit contained, whether MoYu sold it as a DIY product, a release
+  date, or any specification. The page's own copy never mentions assembly state.
+status: sourced
