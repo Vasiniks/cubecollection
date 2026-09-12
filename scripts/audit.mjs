@@ -368,12 +368,20 @@ line(`  no sweep source (${noSweep.length}), heaviest first:`);
 noSweep.slice(0, 8).forEach(([m, b]) => line(`     ${m.padEnd(18)}${String(b.cites).padStart(4)} cites${b.nonUS ? '' : '   (also no non-US source)'}`));
 if (noSweep.length > 8) line(`     ... and ${noSweep.length - 8} more`);
 line('');
-line('  MoYu is the entry to read: it is the archive\'s most heavily cited manufacturer and it');
-line('  fails BOTH checks — and it accounts for 8 of the 14 lines P4-9 found missing from the');
-line('  inventory. The correlation is real but NOT total: 4 of those 14 belong to manufacturers');
-line('  that DO satisfy 3.6a, so compliance would not by itself have prevented P4-9. 3.6a asks');
-line('  for ARCHIVED sweeps, which look backwards; nothing in it requires a CURRENT catalogue.');
-line('  That is what `npm run catalogue-gap` covers, and why it had to be a separate check.');
+// This commentary described MoYu as the entry to read because it failed BOTH checks. MoYu now
+// satisfies both (closed 2026-09-12) and the paragraph had become actively misleading — a tool
+// telling a reader to look at something that is no longer there. Rewritten to say what the
+// numbers now mean, which is a different and more useful thing.
+line('  WHAT THIS TABLE IS NOT. 3.6a asks for ARCHIVED sweeps, which look backwards, and a brand');
+line('  can satisfy both checks here while nobody has looked at its CURRENT catalogue for years.');
+line('  That is a separate dimension — RESEARCH_SPEC 3.6b calls it current completeness — and it');
+line('  is measured by `npm run catalogue-gap` and by sweep #13 below, not by this table.');
+line('  P4-9 is the worked example: MoYu accounted for 8 of the 14 model-layer lines it found');
+line('  missing, but 4 of those 14 belonged to manufacturers that ALREADY satisfied 3.6a. Full');
+line('  compliance with this table would not by itself have prevented any of it.');
+line('  A SWEEP MUST BE CITED BY A RECORD TO COUNT, and that is deliberate: an enumeration no');
+line('  record relies on has justified nothing. Six brands were cleared on 2026-09-12 by citing');
+line('  enumerations the archive already held but nothing pointed at.');
 
 // ---- 10. sources cited far beyond what they preserve ------------------------------------
 //
