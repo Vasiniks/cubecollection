@@ -3291,6 +3291,30 @@ issues:
       resembles the X-Man Tornado V2; QiYi M Pro is a mid-2023 BUDGET magnetic 3x3 at 55mm.
       Different year, positioning, size and family, and the same source distinguishes them in its
       own text.
+
+      2026-09-12 — RESILIENCE AUDIT, prompted by web.archive.org returning HTTP 503 all day. A
+      preservation archive that cannot be read without one third party is not preserving
+      anything, so the dependency was measured rather than assumed.
+
+      471 OF 586 SOURCES CARRY A SUBSTANTIAL LOCAL EXCERPT (200+ characters) ALONGSIDE THEIR
+      CAPTURE. If the Internet Archive disappeared tomorrow those records still hold the words
+      they rest on. A further 67 have a substantial excerpt and no archive_url at all. That is
+      the excerpt discipline working, and it is worth having as a number.
+
+      ONLY TWO CITED SOURCES HAVE NO EXCERPT AT ALL, and both explain themselves.
+      `cuboss-mfjs-brand-page` has none because its evidence is not prose — its own note says
+      "The evidentiary content is the URL path itself", the retailer filing MFJS under a `moyu`
+      brand path, and that path is in the record's `url` field. It survives an outage intact.
+      Checked further because it backs `mfjs` `/kind` and `/parent_id` at `confirmed`: those
+      attestations also cite moyucube-official-home-2022, MoYu's own site at tier 1, so the
+      confidence rests on first-party evidence and Cuboss is corroboration.
+      `licenseglobal-spinmaster-rubiks` has none because the captured body was site navigation;
+      it is cited once at `probable` corroborating Spin Master's own tier-1 announcement.
+
+      WHAT IS NOT CLEARED: 43 cited sources carry a 1-199 character excerpt.
+      `ganspuzzle-brand-intro-2011` is the one to watch — 81 characters, link_status dead, so its
+      live page is already gone and only the capture stands behind it. Not a defect today; a
+      dependency, and the shape a defect would take if the outage were permanent.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

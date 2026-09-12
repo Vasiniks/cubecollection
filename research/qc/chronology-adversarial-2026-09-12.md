@@ -199,3 +199,55 @@ absent are used interchangeably.
 Recording `maglev: none` on 109 fields would be asserting 109 claims, each needing a source.
 That is a decision about convention, not a cleanup, and it belongs to whoever owns DATA_MODEL
 rather than to an adversarial sweep. Documented here as a finding.
+
+---
+
+# Source resilience — what survives if web.archive.org does not — 2026-09-12 (fifth sweep)
+
+```
+SCOPE: how much of the archive's evidence depends on a single external service
+PROMPTED BY: web.archive.org returning HTTP 503 "Internet Archive: Temporarily Offline"
+             for the whole working day, across three independent attempts by two lanes.
+RESULT: the archive is substantially resilient. 2 edge cases, both already documented.
+```
+
+A preservation archive that cannot be read without one third party is not preserving anything.
+Today's outage made the question concrete rather than theoretical, so it was measured.
+
+## The distribution, all 586 sources
+
+| | excerpt ≥ 200 chars | excerpt 1–199 | no excerpt |
+|---|---|---|---|
+| has `archive_url` | **471** | 43 | 2 |
+| no `archive_url` | 67 | 3 | 0 |
+
+**471 of 586 carry a substantial local excerpt alongside their capture.** If the Internet Archive
+disappeared tomorrow, those records still hold the words they rest on. That is the archive's
+`excerpt` discipline doing exactly what it exists for, and it is worth stating as a number rather
+than an assumption.
+
+## The two cited sources with NO excerpt — both explained in their own records
+
+`cuboss-mfjs-brand-page` has no excerpt because its evidence is not prose. Its preservation_note
+says so: "The evidentiary content is the URL path itself" — the retailer files "Cubing Classroom
+(MFJS)" as a category nested under a `moyu` brand path, and that path is IN THE RECORD, in the
+`url` field. It survives a Wayback outage intact. It backs `mfjs` `/kind` and `/parent_id` at
+`confirmed`, which was checked: those attestations also cite `moyucube-official-home-2022`, MoYu's
+own site at tier 1, so the `confirmed` rests on first-party evidence and Cuboss is corroboration.
+
+`licenseglobal-spinmaster-rubiks` has none because the captured article body was "largely site
+navigation in the captured/tag-stripped form". It is cited once, on `rubiks` `/notes` at
+`probable`, corroborating `spinmaster-rubiks-acquisition-2021` — Spin Master's own announcement,
+tier 1. Low stakes and already redundant.
+
+Neither absence is accidental. Both records say why.
+
+## What this does not clear
+
+The 43 cited sources with a 1–199 character excerpt are thinner, and `ganspuzzle-brand-intro-2011`
+is the one to watch: 81 characters, `link_status: dead`, so its live page is already gone and only
+the capture stands behind it. That is not a defect today — it is a dependency, and it is the shape
+a defect would take if the Internet Archive's outage were permanent rather than a day.
+
+Re-verifying every record created during the outage against a real `archive_url` is listed in
+HANDOFF as a follow-up. Three are affected.
