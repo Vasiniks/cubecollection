@@ -156,68 +156,37 @@ PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
   THAT MADE 3.6a's THIRD REQUIRED CHECK: sweep the retailer's BRAND FACET (Shopify `vendor`
   in /products/<handle>.json + the brand collection page), not only URL slugs.
 
-ACTIVE AGENT LANES (launched 2026-09-12 from base 78d0097, all Sonnet 5, isolated worktrees)
-  LANE A  P4-10 Ziina manufacturer/OEM identity — untried avenues: packaging photography,
-          Chinese-language, 1688/Taobao, specialist DBs. Owns research/qc/p4-10-ziina-lane-a.md
-          + NEW data/sources/ziina-*. MAY NOT create a manufacturer.
-  LANE B  P4-9 enumeration METHODOLOGY — compares slug-prefix vs vendor-facet vs category
-          enumeration head-to-head and measures overlap/misses. Owns
-          research/qc/p4-9-enumeration-methods-lane-b.md + sources ending -lane-b-2026.
-  LANE C  P26-2 escalation linkage — measures the chain BOTH directions, ships a check with
-          fixtures + selftest OR a reasoned negative. Owns check-escalations.mjs, an APPENDED
-          audit sweep, selftest assertions, new tests/fixtures/.
-  LANE D  Provenance adversarial audit — READ-ONLY over data, report only. Hunting another
-          speedsolving-wiki-moyu (excerpt too narrow for the attestations it backs).
-          Owns research/qc/provenance-adversarial-lane-d.md.
-  LANE E  DaYan variant depth (21 of 28 models bare). Owns research/qc/dayan-depth-lane-e.md
-          + data/variants/dayan/** + new sources.
-  MAIN    (running independently; five lanes DONE so far, all committed)
-          1. CHRONOLOGY — clean. All 16 `exact` dates read by hand, 58 succession pairs, 0
-             inversions. A date-vs-capture probe was DISCARDED at 39/39 false; its durable
-             finding is that SOME SOURCES ARE GROUPED MULTI-CAPTURE RECORDS whose archive_url
-             holds only the FIRST capture (thecubicle-us-moyu-early-3x3-lines names six
-             snapshots through 2015-10 behind a 2013-06 locator). Any future locator-based
-             check will be wrong on those unless it knows.
-          2. SPEC COHERENCE — clean. Two probes discarded 9/9; both treated a DIFFERENCE as a
-             DEFECT, and in a model/variant archive the difference is the point. The sharp
-             question (a model spec value EVERY variant contradicts) returns zero.
-          3. AUDIT SWEEP #7 FIXED — it accused brands of having no first-party source while
-             never opening data/manufacturers/*.yml. x-man-design cites qiyitoys-company-history
-             (tier 1 via parent) and mefferts cites its own site. 8 -> 5, plus a 3-citation
-             floor so single-source stubs stop appearing as "concentration risk".
-          4. THE SAME FIX TRIED ON BREADTH + RECENCY AND REVERTED. Breadth went 25 -> 37 and
-             almost all of it was FALSE — SWEEP_EVIDENCE matches "CDX" in notes that merely
-             mention CDX as a method. #7 was safe because it matches on HOST. Both exclusions
-             are now commented as deliberate so nobody "fixes" them again.
-          6. TAXONOMY STRESS TEST — clean. 0 name collisions, 0 cross-manufacturer naming,
-             0 model/family mismatch. A 4th probe discarded 160/160 (generational names differ
-             by 1-2 chars BY DESIGN). The one real scare, qiyi-mp vs qiyi-m-pro, resolves:
-             2021 flagship 56mm vs 2023 budget 55mm, different families.
-          7. VARIANT SEMANTICS — found and CORRECTED MY OWN DEFECT from earlier today.
-             gan-356-maglev--uv-coated carried only `coating`, justified as "maglev is
-             inherited from the baseline variant". INHERITANCE RUNS MODEL -> VARIANT, NEVER
-             VARIANT -> SIBLING, and that model has specs: None. Rule 23 forbids restating the
-             MODEL's value, not a sibling's — I applied it one level too far. 5 more share the
-             shape (named in the report). WIDER PATTERN DOCUMENTED, NOT BULK-EDITED: 109 gaps
-             across 31 models where siblings record an axis another omits. Most are correct
-             (a non-MagLev baseline SHOULD lack maglev) but the archive uses `none` and
-             ABSENT interchangeably at the config layer while treating exactly that
-             distinction as load-bearing at the attestation layer. A convention decision for
-             whoever owns DATA_MODEL — escalated under P4-3, not acted on.
-          5. LEDGER: P4-1 CLOSED (rule 18 already checks models directly; 34 -> 35 resolved).
-             P4-13 half (2) resolved (the 50th-anniversary event exists AND is linked); half
-             (1) re-pointed at P4-9 as an admission question.
+ACTIVE AGENT LANES — ALL FIVE DIED ON A SESSION LIMIT, FOUR RELAUNCHED FROM 4873931
+  The first wave (A-E, base 78d0097) was killed simultaneously by an HTTP 429 session ceiling
+  ~9 minutes in. Every lane had COMMITTED its skeleton first, so nothing died silently. Full
+  recovery record: research/qc/agent-lane-recovery-2026-09-12.md.
+
+  LANE C IS DONE — recovered and FINISHED IN MAIN. check-escalations.mjs had ZERO test coverage
+  (hardcoded relative paths); it now resolves through CC_DATA_ROOT, has pass+fail fixtures under
+  tests/fixtures/*/research/qc/, and 4 selftest assertions. Rule 51 (ledger status vocabulary)
+  added on a CLEAN baseline — all 59 issues already valid. The reverse link (ledger -> report)
+  was MEASURED at 13 of 59 and DELIBERATELY NOT ENFORCED: a rule would fire on 46 of 59 forever
+  for structural reasons. Report: research/qc/p26-2-escalation-linkage.md.
+
+  RELAUNCHED (Sonnet 5, isolated worktrees, base 4873931), all told to COMMIT AFTER EVERY FINDING:
+    LANE A  P4-10 Ziina — packaging photography is now the priority avenue.
+    LANE B  P4-9 enumeration METHODOLOGY — three methods head-to-head, measured.
+    LANE D  Provenance adversarial, READ-ONLY over data.
+    LANE E  DaYan depth — FIRST TASK is re-verifying the recovered GuHong V2 DIY kit source.
+
+  ONE RECOVERED ARTEFACT IS DELIBERATELY NOT IN THE ARCHIVE. Lane E wrote a complete source for
+  `thecubicle-dayan-guhong-v2-diy-kit-2020` and I could not verify it — Wayback returned
+  "Internet Archive: Temporarily Offline" on both attempts. It is preserved VERBATIM in the
+  recovery report with the exact curl and the five strings to confirm. An unverified source does
+  not enter data/ on an agent's word.
 
   COORDINATION RULE IN FORCE: no agent may touch research/qc/pass2-remediation-ledger.yml or
-  research/qc/HANDOFF.md. MAIN owns both. Agents put ledger-bound text in their own reports and
-  main transcribes it at merge. This is what stops five lanes conflicting on one file.
+  research/qc/HANDOFF.md. MAIN owns both; agents put ledger-bound text in their own reports and
+  main transcribes at merge. This is what stops parallel lanes conflicting on one file.
 
-  LANE STATE AT LAST CHECK: all five running, all five had COMMITTED their report skeletons
-  (verified via `git -C .claude/worktrees/agent-* log`), so no lane can die silently.
-
-  IF THIS SESSION RESET: `git worktree list`, then for each lane worktree run `git status`,
-  `git log --oneline -10`, `git diff`. Recover committed AND uncommitted work and the report
-  skeleton before relaunching anything. Resume only the unfinished portion.
+  IF THIS SESSION RESET: `git worktree list`, then per worktree `git status`, `git log --oneline
+  -10`, `git diff`. Recover committed AND uncommitted work before relaunching. Resume only the
+  unfinished portion.
 
 OPEN CRITICALS
   P4-9   adjudicated in full; taxonomy admission is the user's call
