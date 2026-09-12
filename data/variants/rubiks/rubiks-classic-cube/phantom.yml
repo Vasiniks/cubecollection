@@ -18,8 +18,38 @@ colorway:
   pattern:
     kind: other
     description: "Thermochromic tiles: colour is hidden until revealed by the heat of touch."
+legality:
+  wca_status: not_legal
+  basis: >-
+    Thermochromic tiles whose colour is hidden until revealed by the heat of touch. Fails WCA Regulation 3d2, which requires colours to be solid and
+    uniform per face. See the /legality/wca_status attestation for the full inference.
 status: stub
 attestations:
+  /legality/wca_status:
+    confidence: probable
+    sources: [wca-regulations-2026-04]
+    note: >-
+      INFERRED FROM THE REGULATION, 2026-09-11, closing part of ledger P4-12. The family record
+      rubiks-classic.yml flagged this as a 'Legality note for a future pass, not resolved here'.
+      Regulation 3d2 requires that "The colors of the colored parts must be solid, with one
+      uniform color per face. Each color must be clearly distinct from the other colors." A
+      thermochromic tile presents no colour at all until warmed, so a scrambled Phantom does not
+      have a uniform colour per face in the state a competitor receives it. THE INFERENCE STEP
+      IS THE CLAIM AND IS STATED RATHER THAN HIDDEN: the WCA does not name this product, and
+      wca-regulations-2026-04's own reliability_note says applying 3d2 to a particular surface
+      is an inference from the regulation to the object. Held at `probable`, not `confirmed` - a
+      WCA Delegate ruling or a statement naming this product would raise it, and 3a+ shows the
+      Regulations do leave some judgements to Delegate discretion.
+      CONSEQUENCE NOT ACTED ON, and rule 27 is right to flag it. Recording this legality
+      makes the record `scope_class: core` with `wca_status: not_legal`, which rule 27
+      correctly reports as incoherent: a non-WCA-legal puzzle belongs under `conditional`
+      with a significance argument. Resolving that means either promoting these two
+      variants to `conditional` - and NO variant in this archive has ever diverged in
+      scope_class from its model, per the convention lint-semantic.mjs states in its own
+      rule 49 comment - or promoting the whole rubiks-classic-cube model, which would
+      reclassify five sibling variants that are ordinary legal cubes. Both are
+      frozen-taxonomy decisions. The evidence is recorded; the reclassification is
+      escalated under P4-12 and left to a taxonomy pass.
   /edition/types:
     confidence: probable
     sources: [rubiks-com-classic-special-editions-2024]

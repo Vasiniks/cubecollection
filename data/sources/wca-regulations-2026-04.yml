@@ -1,0 +1,68 @@
+# source: wca-regulations-2026-04
+# Created 2026-09-11. THE ARCHIVE'S FIRST WCA PRIMARY SOURCE. Before this, all 16 legality claims
+# in the archive were inferred from mechanism descriptions with no regulation text behind them -
+# defensible inference, but nothing a reader could check. This is the governing document itself.
+id: wca-regulations-2026-04
+entity: source
+kind: manufacturer_official
+tier: 1
+title: "WCA Regulations, version April 1, 2026 (official commit 415be08)"
+publisher: "World Cube Association"
+url: "https://www.worldcubeassociation.org/regulations/full/"
+preservation_method: excerpt
+excerpt: |-
+  Fetched live 2026-09-11. The page identifies itself as "Version: April 1, 2026 [official:
+  415be08]" — a dated version with a commit hash, so the text below is attributable to a specific
+  revision rather than to "the regulations" in general.
+
+  ARTICLE 3, PUZZLE REGULATIONS, the clauses bearing on surface appearance, verbatim:
+
+  3d) "Puzzles must have colored parts, which define the color scheme of the puzzle and must be
+  one and only one of the following: colored stickers, colored tiles, colored plastic, or
+  painted/printed colors. All colored parts of a puzzle must be made of a similar material.
+  Exception: for Clock, puzzles do not have colored parts."
+
+  3d2) "The colors of the colored parts must be solid, with one uniform color per face. Each
+  color must be clearly distinct from the other colors."
+
+  3h) "Modifications that enhance the basic concept of a puzzle are not permitted. Modified
+  versions of puzzles are permitted only if the modification does not make any additional
+  information available to the competitor (e.g. orientation or identity of pieces), compared to
+  an unmodified version of the same puzzle."
+  3h+) CLARIFICATION: "Puzzles may be refined internally by sanding, lubrication, or modifications
+  which improve stability (e.g. magnets)."
+
+  3a+) CLARIFICATION: "Competitors may use puzzles of any reasonable size, at the discretion of
+  the WCA Delegate."
+
+  3d1b+) CLARIFICATION, on the colour-blind exception: "Pieces must not have any features (e.g.
+  textures, pattern irregularities) that significantly distinguish them from similar pieces."
+
+  WHY 3a+ IS RECORDED HERE. It states there is NO fixed size limit — size is "any reasonable
+  size, at the discretion of the WCA Delegate". This archive has cited that fact before
+  (mfjs-mini-3x3-50mm's own scope reasoning paraphrases it) without ever holding the regulation
+  text. It does now.
+preservation_note: "Fetched live from the WCA's own site on 2026-09-11 and transcribed verbatim.
+  An archived capture was sought and NOT obtained: Wayback's CDX endpoint returned HTTP 503 for
+  this URL during this session, and the captures it did list are from 2024, predating this
+  version. A failed fetch is not evidence of absence — an archived capture of the April 2026
+  version should be pinned to this record when Wayback is reachable. The version string and
+  commit hash quoted above make the exact revision identifiable in the meantime."
+accessed: "2026-09-11"
+language: en
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 1. The WCA is the governing body and this is its own governing document — for questions of
+  WCA competition legality there is no higher source.
+  `kind: manufacturer_official` is a deliberate compromise and is recorded as one: the archive's
+  source-kind vocabulary has no value for a standards body or governing organisation, and this is
+  neither a retailer, a press piece, a review, a forum, a wiki nor a marketplace. The tier is set
+  explicitly rather than derived, so the classification does not quietly understate it. A
+  `standards_body` kind would be the correct long-term fix.
+  ESTABLISHES: what the April 2026 Regulations require of a puzzle's coloured parts, modifications
+  and size.
+  DOES NOT ESTABLISH: whether any particular product complies. Applying 3d2 to a thermochromic or
+  iridescent surface is an inference from the regulation to the object, and any record making it
+  must show that step rather than cite this source as though it named the product.
+status: sourced

@@ -1974,6 +1974,36 @@ issues:
       three tiers, so the materiality of the split is unverified.
       Every one is correctly reasoned and correctly NOT acted on. The defect is that six
       independent lanes each did the right thing and the findings still went nowhere.
+      ITEM (2) RESEARCHED 2026-09-11 - the Rubik's Impossible/Phantom legality question is now
+      ANSWERED on evidence, though the consequence is escalated rather than acted on.
+      The archive held NO WCA SOURCE AT ALL. All 16 legality claims in it were inferred from
+      mechanism descriptions with no regulation text behind them - defensible, but nothing a
+      reader could check. data/sources/wca-regulations-2026-04.yml is the archive's first WCA
+      primary source: the governing document itself, version April 1 2026, commit 415be08.
+      REGULATION 3d2 SETTLES THE QUESTION: "The colors of the colored parts must be solid, with
+      one uniform color per face. Each color must be clearly distinct from the other colors."
+      Phantom's thermochromic tiles present NO colour until warmed, so a scrambled cube has no
+      uniform colour per face in the state a competitor receives it. Impossible's iridescent
+      tiles change colour with viewing angle, so they are not solid and need not be clearly
+      distinct at a given angle. Both recorded `not_legal` at `probable`, with the inference from
+      regulation to object stated explicitly rather than hidden - the WCA does not name these
+      products, and the source's own reliability_note says so.
+      THE CONSEQUENCE IS THE PART I AM NOT ACTING ON, and the archive caught it: rule 27 now fires
+      on both, correctly, because `scope_class: core` with `wca_status: not_legal` is incoherent.
+      Resolving it means either promoting these two variants to `conditional` - and NO variant in
+      this archive has ever diverged in scope_class from its model - or promoting the whole
+      rubiks-classic-cube model, which would reclassify five sibling variants that are ordinary
+      legal cubes. Both are frozen-taxonomy decisions and belong to the batch adjudication this
+      issue already specifies. Both variants record the reasoning in their own notes so the two
+      rule-27 warnings are explained rather than unattended.
+      3a+ IS ALSO NOW HELD, incidentally and usefully: "Competitors may use puzzles of any
+      reasonable size, at the discretion of the WCA Delegate." The archive has cited that fact
+      before - mfjs-mini-3x3-50mm's own scope reasoning paraphrases it - without ever holding the
+      text. It bears directly on P4-11's size question and on the mini/keychain scope class.
+      A SOURCE-KIND GAP RECORDED, NOT PAPERED OVER: the vocabulary has no value for a standards
+      body, so the WCA source is filed `kind: manufacturer_official` with an EXPLICIT tier 1
+      override and a note saying why. A `standards_body` kind is the correct long-term fix.
+      The other five items under this issue are untouched and the batch instruction stands.
     recommendation: >-
       Adjudicate as a batch when the taxonomy next opens, not individually and not now. They
       share one question - what evidence promotes a variant to a model, or splits a model - and
