@@ -64,3 +64,43 @@ preservation notes, and a check that cannot be made precise is a check that gets
 
 None from this lane. The grouped-multi-capture observation is handed to whoever next writes a
 locator-based check.
+
+---
+
+# Specification coherence — 2026-09-12 (same lane, second sweep)
+
+```
+SCOPE: internal contradictions between model specs, variant config, and record names
+RESULT: no defects found. Two probes discarded; one refined probe returned a real zero.
+```
+
+Chosen to stay clear of the provenance lane, which asks whether a claim is EVIDENCED. This asks
+whether the archive's claims are CONSISTENT WITH EACH OTHER, which no source can settle.
+
+## Probes discarded — 9 of 9 false
+
+**"A variant config value that differs from its model's spec."** Eight hits, all correct records.
+This is what a variant override is FOR: `fangshi-jieyun-original--mini` is 54.6mm against a
+57.0mm model because it IS a mini, and the HuaMeng YS3M maglev variants are 83g against 76g
+because MagLev adds mass. Rule 23 already polices the opposite and real error — an override that
+RESTATES the model value and therefore changes nothing — and it currently reports zero.
+
+**"magnet_configuration: none on a record whose name says magnetic."** One hit,
+`mfjs-meilong-3x3--non-magnetic`, and the probe matched "magnetic" as a substring of
+"NON-magnetic". A textbook substring bug in a probe written to find textbook bugs.
+
+## The refined probe, and its real zero
+
+The sharp version of the first idea is not "does a variant differ from its model" but **"is
+there a model spec value that EVERY one of its variants contradicts?"** — because such a value
+would describe no product the manufacturer ever sold, while still being inherited by anything
+that does not override it.
+
+Zero across the archive. Every model spec value is either left unoverridden or agreed with by at
+least one of its own variants.
+
+## Note for the next person
+
+Both discarded probes failed in the same direction: they treated a DIFFERENCE as a DEFECT. In a
+model/variant archive the difference is usually the point. A coherence check has to ask what
+combination is IMPOSSIBLE, not what combination is unequal.

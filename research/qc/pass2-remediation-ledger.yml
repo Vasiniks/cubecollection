@@ -2925,6 +2925,38 @@ issues:
       the second has an 11-of-11 false-positive rate on this archive, two of those from the
       probe's own URL handling. Recorded here so the next person does not spend the same hour
       discovering that the archive already handled it.
+
+      2026-09-12 — TWO MAIN-SESSION ADVERSARIAL SWEEPS WHILE FIVE SPECIALIST LANES RAN OTHER
+      SCOPES. Both clean. Recorded at research/qc/chronology-adversarial-2026-09-12.md.
+
+      CHRONOLOGY. All 16 `exact`-qualifier dates were read by hand — the archive's strongest date
+      claims, and a class small enough to read entirely. All 16 are sound, each distinguishing a
+      stated release date from the retailer `Added:` ingestion artefact, each tier-calibrated
+      (tier 3 -> reported, tier 2 -> probable, tier 1 -> confirmed). 58 succession pairs checked
+      for inversion: zero. The discontinued-before-released check is VACUOUS and says so, because
+      no model carries both dates.
+
+      A THIRD CHRONOLOGY PROBE WAS DISCARDED AT 39 OF 39 FALSE, and its second cause is the
+      durable finding. Several sources are GROUPED MULTI-CAPTURE RECORDS: the `archive_url` field
+      holds the FIRST capture while the preservation_note names the others.
+      `thecubicle-us-moyu-early-3x3-lines` carries a 2013-06 archive_url and names six snapshots
+      through 2015-10-15, so its 2015 release claims rest on the 2015 captures — not on the one
+      in the locator field. Same shape on thecubicle-dayan-tengyun-descriptions and
+      thecubicle-fanxin-3x3-products. A SINGLE archive_url IS NOT THE WHOLE OF A GROUPED SOURCE'S
+      EVIDENCE, and any future locator-based check will be wrong on these records unless it knows
+      that. (The first cause was mine: normalising a bare year to December.)
+
+      SPECIFICATION COHERENCE. Two probes discarded at 9 of 9 false. "A variant config differing
+      from its model spec" is what an override IS FOR — a mini is legitimately 54.6mm against a
+      57mm model. "magnet_configuration none on a magnetic-sounding name" matched "magnetic"
+      inside "NON-magnetic", a substring bug in a probe written to find substring bugs. The
+      refined question is the one worth asking — IS THERE A MODEL SPEC VALUE THAT EVERY ONE OF
+      ITS VARIANTS CONTRADICTS, which would describe no product ever sold while still being
+      inherited — and it returns zero archive-wide.
+
+      Both discarded probes failed the same way: they treated a DIFFERENCE as a DEFECT. In a
+      model/variant archive the difference is usually the point, and a coherence check has to ask
+      what combination is IMPOSSIBLE rather than what is unequal.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
