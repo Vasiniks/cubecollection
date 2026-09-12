@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  a859520
+HEAD:  d9c4e8e
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -26,7 +26,7 @@ npm run check:         0 errors, 26 advisory — EVERY ONE EXPLAINED:
                          4 r40  model-predates-family — P3-D2, needs human decision
                          2 r27  Rubik's Phantom/Impossible `core` + `not_legal`; reclassifying
                                 is a frozen-taxonomy call, escalated under P4-12
-npm run audit:         12 sweeps, advisory only
+npm run audit:         13 sweeps, advisory only
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched
 npm run catalogue-gap: offline by default; --fetch to query three retailers
 npm run selftest:      every check behaved as specified
@@ -49,6 +49,15 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   Rule 42 now evaluates PER POSITION. One `citedSourceIds()` in lib/archive.mjs; rules
   43 and 9 deliberately excluded, with reasons in the code. 4 new selftest assertions.
   Archive impact zero — measured: 0 sources are cited ONLY from a disputed block.
+  METHODOLOGY: RESEARCH_SPEC 3.6b added — completeness is FOUR dimensions (historical /
+  current / generation / variant), each with its detector and its measurement. The
+  current dimension had no spec section at all, and that is where P4-9's misses are:
+  15 of 20 confirmed-missing first listed 2024-2026. New audit sweep #13 measures it —
+  17 of 42 manufacturers have NO 2026 observation, MoYu among them on 79 records.
+  Generation completeness got the OPPOSITE treatment: a contiguity probe was tested and
+  FAILED (both its hits are renumbering artefacts), so the negative was written into the
+  spec and the probe was NOT shipped. P4-9's methodology half is closed; admission is
+  still the user's call.
 
 PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
   CLOSED   P4-5 (rule 41 11 -> 0, every baseline SEARCHED not backfilled)
@@ -81,10 +90,10 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. METHODOLOGY (in progress): RESEARCH_SPEC has no CURRENT-completeness dimension.
-     3.6a asks for ARCHIVED sweeps, which look backwards only; that is the measured root
-     cause of P4-9's misses. Define historical / current / generation / variant
-     completeness as four separate dimensions and measure each. Do NOT open the taxonomy.
+  1. DEPTH RESEARCH, systematically. Quantify one-config models by manufacturer/family
+     first, rank by historical significance + existing leads, then batch. Sweep #12 names
+     leads and excludes already-rejected ones. Sweep #13 names the stalest manufacturers.
+     One-config models are 112.
   2. Depth research. One-config models are 112. Run `npm run audit` sweep #12 first;
      it names the leads and now excludes ones already rejected.
   2. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens.
