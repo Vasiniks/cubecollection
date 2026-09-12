@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      517
-sources:       576
+sources:       578
 events:        4
 
 VALIDATION
@@ -85,6 +85,19 @@ SESSION 2026-09-12 — 39 commits from 6249aac
      makes it count — the breadth check reads sources CITED BY a manufacturer's records.
    - GAN's own page gave the MagLev's 81.2g. The archive had NO weight because the only figure
      was a 250g GROSS, correctly refused. REFUSING A GROSS WEIGHT IS NOT THE END OF THE QUESTION.
+
+  E. THE BRAND-FACET CHECK'S FIRST RESULTS (3.6a's new third check)
+   - Ran on all 42 manufacturers at SpeedCubeShop, then on Calvin's at TheCubicle.
+   - CALVIN'S PUZZLE: 23 typed-3x3 at SCS and 24 at TheCubicle, and ALL of them at BOTH have
+     NO brand token in the handle. Invisible to every slug-based method. Archive holds 3.
+     CFOP/Practice trainers, a 6-generation Sudoku line, World Maps, Calendars, "Yummy" food
+     cubes. SAME PRODUCTS ARE NAMED DIFFERENTLY AT THE TWO RETAILERS (CFOP Trainer = Practice
+     Special) — adding the catalogues would double-count. TheCubicle's version numbers
+     reconcile SCS's five Sudoku names as V2-V6, plus a V1 only TheCubicle has.
+   - fanxin 1 hidden (color-brick-speed-cube), qiyi 1 hidden (bubble-3x3).
+   - ALL ESCALATED UNDER P4-9, NOTHING ADMITTED. These are LIVE queries that preserve nothing.
+   - P4-9 SHOULD NOW BE READ AS TWO MECHANISMS, not one: recency (15 of 20 first listed
+     2024-2026) AND discoverability (a product invisible to the method, at any date).
 
   D. MY OWN ERRORS, both caught by the archive's checks
    - Created a DUPLICATE Ziina Sigma source and claimed it as a new P4-9 find; Pass 4 Agent C
