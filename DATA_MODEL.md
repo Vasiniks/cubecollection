@@ -887,11 +887,20 @@ check cannot see because nothing about the record looks unusual.
 
 44. **A variant's id, its file path and its `model_id` must agree.**
 
-45. **A gross or packaged weight is not a product weight.** Retailers publish both; the gross
+45. **A gross or packaged weight is not a product weight.** *(amended 2026-09-11)* Retailers publish both; the gross
     figure includes the box and can exceed the puzzle by more than 100%. Sixteen records stored
     the gross figure, and rule 18 caught two — **the rest sat comfortably inside its plausible
     range.** A wrong value inside a plausible range is exactly what a range check cannot see, so
     this rule matches on the *value* being one the sources call gross, not on a phrase appearing.
+
+    **The amendment is the part worth reading.** Until 2026-09-11 this rule read only
+    `att.sources`, but a `disputed` attestation keeps its sources in `disputed[].sources` — so
+    the rule was blind to exactly the records with contested evidence. `maru-3x3-original`
+    carried 141 g, TheCubicle's *"Gross Weight"*, disputed against Cubezz's *"Weight (including
+    the packing)"* of 84 g. **Both were packaged figures**, the archive was asserting one as a
+    product spec, and neither this rule nor rule 18's range check could see it — because a
+    disputed value *looks handled*, and that is what made it durable. Rule 48 had the identical
+    blind spot and was fixed the same day. `zz-bad-disputed-gross` fixtures the path.
 
 46. **A size named in a variant's own designation must be expressed in `config`.** Twelve GuHong
     variants were named "54mm"/"55mm"/"56mm" with the size present only in free text, so the

@@ -1,0 +1,31 @@
+# SYNTHETIC FIXTURE — not archive data.
+# Rule 45, the DISPUTED path. A gross weight asserted as a product spec, where the sources live
+# inside a `disputed` block rather than in att.sources.
+#
+# This is the shape that survived undetected in the real archive until 2026-09-11:
+# maru-3x3-original carried TheCubicle's 141g "Gross Weight" disputed against Cubezz's 84g
+# "Weight (including the packing)". Both were packaged figures. Rule 45 read only att.sources and
+# never saw either, and rule 18's range check could not see it because a `disputed` value looks
+# handled. Without this fixture the fix is untested and can silently regress.
+id: zz-bad-disputed-gross
+entity: model
+family_id: zz-bad-family
+manufacturer_id: zz-bad-brand
+name: ZZ Bad Disputed Gross
+scope_class: core
+specs:
+  weight_g: 213
+status: stub
+attestations:
+  "/specs/weight_g":
+    confidence: disputed
+    disputed:
+      - value: 213
+        sources: [zz-gross-a]
+        note: Fixture value. The 213g figure the fixture source calls a Gross Weight.
+      - value: 180
+        sources: [zz-gross-b]
+        note: Fixture value. A second packaged figure from a differently-packaging retailer.
+    adjudication: >-
+      Fixture text. Deliberately unadjudicated, because the point is that the record LOOKS
+      handled while asserting a boxed figure as a product spec.

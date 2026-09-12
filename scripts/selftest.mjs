@@ -142,6 +142,12 @@ console.log('\n  fail fixture — records engineered to trip named rules');
   /zz-bad-solo[^\n]*\[25\]|\[25\][^\n]*zz-bad-solo/.test(l.out)
     ? ok('rule 25 still fires unsearched', 'a lone designated variant with no attestation is caught')
     : bad('rule 25 still fires unsearched', 'the escape swallowed the fail branch');
+  // Rule 45 read only att.sources until 2026-09-11, so a gross weight whose sources lived inside
+  // a `disputed` block was invisible — the shape that hid maru-3x3-original's 141g for months.
+  // A disputed value LOOKS handled, which is what made it durable. Assert the path directly.
+  /zz-bad-disputed-gross[^\n]*\[45\]|\[45\][^\n]*zz-bad-disputed-gross/.test(l.out)
+    ? ok('rule 45 sees into disputed blocks', 'a gross weight cited only in disputed[] is caught')
+    : bad('rule 45 sees into disputed blocks', 'no [45] message for the disputed fixture');
   // Rule 49 removes a record from the PUBLIC bundle, so its allowance matters as much as its
   // fail branch: without zz-ok-signed-exclusion the rule would be indistinguishable from one
   // forbidding reference_only outright, and the archive uses that class legitimately.

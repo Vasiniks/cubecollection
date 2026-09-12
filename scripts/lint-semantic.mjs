@@ -407,7 +407,15 @@ for (const [modelId, list] of variantsByModel) {
     const w = doc.specs?.weight_g ?? doc.config?.weight_g;
     if (typeof w !== 'number') continue;
     const att = (doc.attestations ?? {})['/specs/weight_g'] ?? (doc.attestations ?? {})['/config/weight_g'];
-    const blob = [JSON.stringify(doc), ...(att?.sources ?? []).map((id) => JSON.stringify(sourceById.get(id) ?? {}))].join(' ');
+    // A `disputed` attestation holds its sources inside disputed[].sources, NOT in att.sources,
+    // so reading only the latter left this rule blind to exactly the records most likely to be
+    // wrong. maru-3x3-original carried 141g — TheCubicle's "Gross Weight" — disputed against
+    // Cubezz's "Weight (including the packing)" of 84g. BOTH were packaged figures, the archive
+    // was asserting one as a product spec, and neither the range check nor this rule could see
+    // it, because a disputed value LOOKS handled. Found 2026-09-11; the fix is to read every
+    // source an attestation cites, however it cites them.
+    const citedIds = [...(att?.sources ?? []), ...((att?.disputed ?? []).flatMap((d) => d.sources ?? []))];
+    const blob = [JSON.stringify(doc), ...citedIds.map((id) => JSON.stringify(sourceById.get(id) ?? {}))].join(' ');
     const gross = grossOf(blob);
     if (!gross.some((g) => Math.abs(g - w) < 0.5)) continue;
     const item = itemOf(blob);
@@ -517,15 +525,20 @@ for (const [modelId, list] of variantsByModel) {
       for (const [field, value] of Object.entries(obj ?? {})) {
         if (typeof value !== 'number') continue;
         const att = (doc.attestations ?? {})[`/${group}/${field}`];
-        if (!att?.sources?.length) continue;
-        const text = att.sources.map((id) => JSON.stringify(sourceById.get(id) ?? {})).join(' ');
+        // Same blind spot rule 45 had: a `disputed` attestation keeps its sources in
+        // disputed[].sources, so reading only att.sources skips exactly the records with
+        // contested evidence. Found while fixing rule 45 on 2026-09-11 — the two rules shared
+        // the bug and only one of them had been noticed.
+        const cited = [...(att?.sources ?? []), ...((att?.disputed ?? []).flatMap((x) => x.sources ?? []))];
+        if (!cited.length) continue;
+        const text = cited.map((id) => JSON.stringify(sourceById.get(id) ?? {})).join(' ');
         if (forms(value).some((f) => text.includes(f))) continue;
         // Derived, with its basis preserved in the source? Then absence is expected.
         const note = String(att.note ?? '');
         const derived = /convert|\boz\b|\binch|\blb\b|significant digit|interval/i.test(note)
           && (note.match(/\d+(?:\.\d+)?/g) ?? []).some((n) => n !== String(value) && text.includes(n));
         if (derived) continue;
-        report.warn('48', rec.file, `/${group}/${field} is ${value}, and that number appears in none of the sources this attestation cites (${att.sources.join(', ')}). Whatever the capture may hold, THIS ARCHIVE does not hold it: the figure cannot be checked without a network round trip to a page that may not resolve. Re-fetch the capture already on the source and transcribe the figure into its excerpt.`);
+        report.warn('48', rec.file, `/${group}/${field} is ${value}, and that number appears in none of the sources this attestation cites (${cited.join(', ')}). Whatever the capture may hold, THIS ARCHIVE does not hold it: the figure cannot be checked without a network round trip to a page that may not resolve. Re-fetch the capture already on the source and transcribe the figure into its excerpt.`);
       }
     }
   }

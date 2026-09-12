@@ -1,0 +1,15 @@
+# SYNTHETIC FIXTURE — not archive data.
+# One half of the pair behind zz-bad-disputed-gross. Both sources state a PACKAGED weight and
+# neither states an item weight, which is the real-world shape rule 45 missed until 2026-09-11:
+# two gross figures from differently-packaging retailers, disputed against each other, with one
+# of them asserted as the product's weight.
+id: zz-gross-a
+entity: source
+kind: retailer
+title: ZZ packaged-weight listing a
+publisher: "ZZ Gross Co"
+url: "https://zz-example.invalid/products/zz-gross-a"
+preservation_method: excerpt
+excerpt: "Fixture excerpt. Product Specifications table: \"Gross Weight: 213g\". No item weight is stated anywhere on this fixture page, by design."
+reliability_note: Exercises rule 45's disputed path. States a packaged weight only.
+status: drafted
