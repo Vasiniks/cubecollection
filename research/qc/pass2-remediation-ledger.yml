@@ -2120,6 +2120,21 @@ issues:
       token-based and cannot resolve this archive's own abbreviations - `mfjs-meilong-3c` cited
       to a "MoFang JiaoShi MeiLong 3c" page scores as a miss - so it cannot be made precise
       enough to block. Both remaining flagged sources are exactly that artefact.
+      CUBETWIST WHITE-FACE GAP RE-EXAMINED 2026-09-11. The page still has not been independently
+      fetched - Wayback holds no capture of it, and ids 15, 16, 20, 21 and 22 all return 404 -
+      but the naming is now CORROBORATED rather than assumed, and the attestation rose from
+      `uncertain` to `probable`. The black-face page (showproduct.php?id=19) was fetched directly
+      and its own prev/next navigation reads verbatim "上一条: 三阶白面 下一条: 二阶黑面(50mm)":
+      THIRD-order white face, immediately preceding third-order black face in the manufacturer's
+      own catalogue order.
+      A CONFUSION FOUND AND RECORDED, because I nearly drew the wrong conclusion from it. The
+      same site sells 二阶白面(50mm) - a TWO-by-two white face - which appears in category listings
+      beside these items. Reading a category list rather than the prev/next chain would attach a
+      2x2 product to a 3x3 model. The 三阶/二阶 prefix is the only thing separating them, and the
+      variant record now says so.
+      HUAMENG-TG-V2 THINNESS IS UNCHANGED and remains the one open item under this issue: all six
+      of its attestations rest on a single TheCubicle source and four sit at `uncertain`. It needs
+      a second independent source, which this pass did not attempt.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

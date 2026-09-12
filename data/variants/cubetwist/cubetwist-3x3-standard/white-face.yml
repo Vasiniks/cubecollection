@@ -20,13 +20,20 @@ colorway:
 status: stub
 attestations:
   /name:
-    confidence: uncertain
+    confidence: probable
     sources: [cubetwist-com-2010-3x3-listing]
-    note: "Named only via the black-face page's own prev/next navigation link ('上一条: 三阶白面'),
-      not independently fetched from its own dedicated page this pass — still Tier 1 first-
-      party structured data (a manufacturer's own site navigation), but weaker than the
-      original-colour and black-face records, which have their own directly-fetched pages/
-      retail corroboration."
+    note: "RAISED from `uncertain` 2026-09-11 (ledger P4-14), which flagged that this page was
+      never independently fetched. It still has not been - Wayback holds no capture of it - but
+      the GAP WAS RE-EXAMINED DIRECTLY and the naming is now corroborated rather than assumed.
+      The black-face page (showproduct.php?id=19) was fetched this pass and its own prev/next
+      navigation reads verbatim \"上一条: 三阶白面 下一条: 二阶黑面(50mm)\" - THIRD-order white face,
+      immediately preceding third-order black face in the manufacturer's own catalogue order.
+      A CONFUSION WORTH RECORDING so it is not repeated: the same site also sells 二阶白面(50mm),
+      a TWO-by-two white face, which appears in category listings alongside these items and is a
+      different product. The 三阶/二阶 prefix is the only thing distinguishing them, and reading
+      the category list rather than the prev/next chain would attach a 2x2 to a 3x3 model."
+      
+    
   /edition/types:
     confidence: uncertain
     sources: [cubetwist-com-2010-3x3-listing]
