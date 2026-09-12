@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  21bc268
+HEAD:  5ab0b62
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      514
-sources:       569
+variants:      517
+sources:       572
 events:        4
 
 VALIDATION
@@ -158,9 +158,12 @@ NEXT ACTION
   1. DEPTH RESEARCH, continue. Best remaining leads, all from thecubicle-moyu-prefix-2026
      and already enumerated in its excerpt: moyu-weilong-wrm-v9-* (4 config paths vs the 4
      variants v9 already has — check for a 5th, "ball-core-uv-special-edition"),
-     moyu-weilong-gts3-m-le, moyu-weilong-wr-m-2021-lite-3x3, moyu-rs3-m-2020-3x3-uv-coated,
-     moyu-ai-smart-cube-3x3-magnetic. Remaining no-sweep manufacturers: particula 28,
-     mf8 26, giiker 17, guoguan 16.
+     — THOSE ARE NOW DONE (v9 5th config, wr-m-2021 lite, moyu-ai magnetic;
+     rs3-m-2020-uv was already held; gts3-m-le has NO CDX capture).
+     REMAINING NO-SWEEP MANUFACTURERS: particula 28, mf8 26, giiker 17, guoguan 16.
+     REMAINING ONE-PUBLISHER MANUFACTURERS (all TheCubicle, no first-party source):
+     lefun 34, x-man-design 27, fanxin 13, newisland 9, cubestyle 5, guojia 5, mefferts 3,
+     pbcube 3 — a first-party source for any of these is worth more than a variant.
      Sweep #14's weight queue is worked down to 8 (from 40) and
      the remainder are the hard ones. Sweep #12's remaining leads are mostly P4-9 MODEL
      layer = frozen. Best untouched targets are the bare families: yj-mgc 7, dayan-zhanchi,
