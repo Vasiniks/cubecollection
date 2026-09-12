@@ -1439,7 +1439,7 @@ issues:
 
   - id: P4-5
     severity: low
-    status: open
+    status: resolved
     title: "Eleven GAN-pilot lone baselines assert nothing and are flagged by rule 41"
     category: evidence-quality
     affected_records: >-
@@ -1476,6 +1476,29 @@ issues:
       for the i Carry 2, four for the i Carry 4, six across the Monster Go line, two for the
       Swift Block Super MagLev. A method that finds siblings when they are there and none when
       they are not is evidence.
+      FULLY CLOSED 2026-09-11. Rule 41 reports ZERO. The last two baselines were closed with
+      MANUFACTURER FIRST-PARTY evidence, which is what this issue demanded and what the retailer
+      sweeps could not supply.
+      monster-go-352-m: the blocker was that TheCubicle has no monstergo-352 path of any form, so
+      its catalogue could not speak to the model at all and promoting it would have been the weak
+      substitution this issue warns against. GAN'S OWN storefront was enumerated instead
+      (gancube.com/products/monster-go*, 14 paths, source gancube-monster-go-prefix-2026): exactly
+      one path for the 352 M, while the same sweep separates FOUR distinct 3x3 paths elsewhere in
+      the Monster Go line. A method that distinguishes four siblings in one line and one path in
+      another is measuring something real.
+      gan-356-i: GAN's own storefront swept on BOTH slug forms per P26-3
+      (source gancube-gan356-i-prefix-2026). One path for the base model; the other gan-356-i*
+      paths are the i Carry and i Carry S, separate models already held. The same sweeps return
+      five named editions of the 356 M-E alone and two of the i Carry 4, so GAN publishes editions
+      as separate paths when it has them.
+      A DISTINCTION WORTH RECORDING, because it was the crux for monster-go-352-m: MODEL EXISTENCE
+      and MODEL SPECIFICATIONS have different evidence requirements, and this model already had
+      `confirmed` size and weight from GAN's own spec table. Nothing about the model was in doubt.
+      What was missing was the VARIANT-LAYER assessment claim - whether the model was sold in more
+      than one configuration - and that is a different question needing a different sweep.
+      All 11 baselines are now closed by search rather than backfill. Two of the eleven carry
+      deliberately WEAKER claims than their siblings (gan-ui-mini-freeplay, where the retailer
+      never stocked the product) and say so in their own notes.
     counterevidence: >-
       The GAN pilot's other 12 lone baselines are NOT bare - gan-354-m carries config.size_mm
       with an attestation and gan-356-air carries its colourway plus the note that established

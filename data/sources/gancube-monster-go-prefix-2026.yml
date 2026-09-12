@@ -1,0 +1,62 @@
+# source: gancube-monster-go-prefix-2026
+# Created 2026-09-11 closing the monster-go-352-m half of ledger P4-5. The issue required GAN
+# FIRST-PARTY evidence and specifically warned against promoting retailer evidence in its place:
+# TheCubicle never stocked a monstergo-352 path, so its catalogue cannot speak to this model at
+# all. This is GAN's own storefront.
+id: gancube-monster-go-prefix-2026
+entity: source
+kind: manufacturer_official
+title: "gancube.com/products/monster-go* — product URL enumeration (GAN first-party)"
+publisher: "GANCUBE"
+url: "https://web.archive.org/cdx/search/cdx?url=gancube.com/products/monster-go&matchType=prefix&fl=original,timestamp,statuscode&collapse=urlkey&filter=statuscode:200&limit=150"
+preservation_method: excerpt
+excerpt: |-
+  CDX prefix enumeration of gancube.com/products/monster-go, 14 distinct product URLs,
+  not truncated. Reproducible with `npm run wayback -- prefix gancube.com/products/monster-go
+  --limit 150`. This is the MANUFACTURER'S OWN storefront, not a retailer's.
+
+  The distinct product paths, verbatim:
+
+    monster-go
+    monster-go-251-standard-2x2-puzzle-cube
+    monster-go-3-ai-smart-puzzle-cube
+    monster-go-328-spelling-cube-set
+    monster-go-352-m-beginner-magnetic-cube
+    monster-go-3x3-magnetic-cube
+    monster-go-cloud-rainbow-ut-3x3-magnetic-speed-cube
+    monster-go-cube-premium-set
+    monster-go-flower-twist-puzzle
+    monster-go-mirror-shape-mods-cube
+    monster-go-skewb-cube
+    monster-go-standard-3x3-speed-cube
+    monster-go-twist-puzzle-24-blocks
+    monster-go-twist-puzzle-set-24-blocks
+
+  WHAT THIS ESTABLISHES FOR monster-go-352-m. Exactly ONE path exists for this model,
+  `monster-go-352-m-beginner-magnetic-cube`, with no coated, edition or configuration sibling
+  anywhere on the manufacturer's own site.
+
+  WHY THAT IS A RESULT AND NOT A FAILED SEARCH. The same enumeration DOES separate products where
+  GAN separates them: the 3x3 line alone carries `monster-go-3x3-magnetic-cube`,
+  `monster-go-standard-3x3-speed-cube`, `monster-go-cloud-rainbow-ut-3x3-magnetic-speed-cube` and
+  `monster-go-3-ai-smart-puzzle-cube` as four distinct paths. A method that distinguishes four
+  siblings in one line and finds one path in another is measuring something real.
+
+  OUT OF 3x3 SCOPE, listed so the sweep is reproducible and complete: the 2x2 (251), skewb,
+  mirror, flower twist, the 24-block twist puzzles, the spelling cube set and the premium set.
+preservation_note: "CDX prefix enumeration output is the primary evidence; the locator is the CDX
+  query that reproduces it, per this archive's convention for evidence that does not reduce to one
+  page's text (RESEARCH_SPEC 3.5). Run 2026-09-11."
+accessed: "2026-09-11"
+language: en
+region: CN
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 1 by kind: GAN's own storefront structure for its own sub-brand, which is the strongest
+  available evidence of what GAN sold under the Monster Go name.
+  ESTABLISHES: which Monster Go product paths GAN has published, and therefore that the 352 M was
+  offered in a single configuration by its own manufacturer.
+  DOES NOT ESTABLISH: release dates, or that no regional or retailer-exclusive configuration
+  existed outside gancube.com. A manufacturer storefront bounds what the manufacturer listed.
+status: sourced

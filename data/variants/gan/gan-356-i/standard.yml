@@ -14,6 +14,19 @@ smart:
   companion_app: "Cube Station"
 status: stub
 attestations:
+  /edition/types:
+    confidence: probable
+    sources: [gancube-gan356-i-prefix-2026]
+    note: "ASSESSMENT CLAIM, added 2026-09-11 closing the last of ledger P4-5. WHAT WAS SEARCHED:
+      GAN's OWN storefront by CDX prefix on BOTH slug forms, `gan-356-i` and `gan356`, because a
+      sweep on one form is not a sweep of the line (P26-3); plus TheCubicle on both its forms, and
+      the three live retailer 3x3 catalogues.
+      WHAT WAS FOUND: exactly one path for the base model on the manufacturer's own site, with no
+      coated, edition or configuration sibling under either form. The other gan-356-i* paths are
+      the i Carry and i Carry S, separate models this archive already holds.
+      WHY THAT IS A RESULT AND NOT A FAILED SEARCH: the same sweeps return five named editions of
+      the 356 M-E alone and two of the i Carry 4, so GAN publishes editions as separate paths when
+      it has them. Bounds what GAN listed, not what any regional channel may have carried."
   /smart/is_smart:
     confidence: confirmed
     sources: [gancube-cn-core-technology-history]

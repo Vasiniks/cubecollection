@@ -10,3 +10,20 @@ scope_class: core
 edition:
   types: [standard]
 status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [gancube-monster-go-prefix-2026, gancube-monster-go-352-m-specifications]
+    note: "ASSESSMENT CLAIM, added 2026-09-11 closing the monster-go-352-m half of ledger P4-5.
+      WHAT WAS SEARCHED: this model needed FIRST-PARTY evidence and not a retailer substitute -
+      TheCubicle has no monstergo-352 path of any form, so its catalogue cannot speak to this
+      model. GAN's OWN storefront was enumerated by CDX prefix
+      (gancube.com/products/monster-go*, 14 distinct paths), plus the three live retailer 3x3
+      catalogues on 2026-09-09, which returned zero SKUs.
+      WHAT WAS FOUND: exactly one path on the manufacturer's own site,
+      `monster-go-352-m-beginner-magnetic-cube`, with no coated, edition or configuration sibling.
+      WHY THAT IS A RESULT AND NOT A FAILED SEARCH: the same enumeration separates four distinct
+      3x3 paths elsewhere in the Monster Go line (magnetic, standard, cloud-rainbow-ut, 3-ai), so
+      it distinguishes siblings from singletons within one sweep.
+      This bounds what GAN LISTED; a regional or retailer-exclusive configuration outside
+      gancube.com would not appear."
