@@ -8,28 +8,67 @@ kind: retailer
 title: "YJ Appari 3x3 (Magnetic, Speed Micro Actuator) — SpeedCubeShop product URL"
 publisher: "SpeedCubeShop"
 url: "https://www.speedcubeshop.com/products/yj-appari-3x3-magnetic-speed-micro-actuator"
-preservation_method: excerpt
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20240620190004id_/https://speedcubeshop.com/products/yj-appari-3x3-magnetic-speed-micro-actuator"
 excerpt: |-
-  CDX capture: https://speedcubeshop.com/products/yj-appari-3x3-magnetic-speed-micro-actuator,
-  first captured 2024-06-20, still resolving through a 2025-07-15 capture
-  (yj-appari-3x3-magnetic-core-magnets-speed-micro-actuator). SpeedCubeShop's own product-URL
-  naming independently uses "Speed Micro Actuator" for the mechanism TheCubicle's product page
-  names "Speed Micro Bearing" — different retailers, different wording, same underlying YJ
-  product, genuine independent corroboration rather than a copied listing (RESEARCH_SPEC 3.2).
-  Full page content was not fetched this pass (URL-level CDX enumeration only); the mechanism
-  description rests on thecubicle-yj-appari-3x3-2024's fuller product-page excerpt.
-preservation_note: "CDX enumeration output (reproducible via `npm run wayback -- prefix
-  https://www.speedcubeshop.com/products/yj-appari --limit 30`) is the primary evidence."
-accessed: "2026-09-07"
+  PAGE FETCHED IN FULL 2026-09-12, superseding this record's earlier URL-level enumeration.
+  Capture 20240620190004 of
+  speedcubeshop.com/products/yj-appari-3x3-magnetic-speed-micro-actuator.
+
+  Page title, verbatim: "YJ Appari 3x3 Magnetic (Speed-Micro Actuator) | 3x3 Speed Cubes |
+  SpeedCubeShop".
+
+  Product Description, verbatim: "YJ Appari 3x3 Magnetic (Speed-Micro Actuator) is a
+  fast-turning cube featuring YJ's new technology! Speed-Micro Actuator — A small washer below
+  the head of the screw equipped with bearings. The small bearings help increase turning speed.
+  Key features — Magnetic core corner/core magnets for better, more controllable turning; 6
+  Spring compression settings; Anti-stick piece design; 48 factory-installed magnets."
+
+  Product identity as declared by the page: Shopify product id 7129765478513, SKU
+  "YJ-MGC-APR-3-M", price 16.95 USD, colourway option "Stickerless (Bright)".
+
+  THE SECOND SLUG IS THE SAME PRODUCT, RENAMED — REJECTED as a configuration. A second path,
+  yj-appari-3x3-magnetic-core-magnets-speed-micro-actuator (capture 20250715171445), was fetched
+  and compared on this archive's dedup test. Its title is "YJ Appari 3x3 (Magnetic, Core
+  Magnets, Speed-Micro Actuator)", but it declares the SAME Shopify product id 7129765478513 —
+  in three independent places on the page, its analytics payload, its `resourceId` and its
+  product meta — and the SAME SKU "YJ-MGC-APR-3-M", at the same 16.95 USD price. Each page
+  carries its own canonical URL and its own handle and does not mention the other's, so this is
+  not capture bleed.
+
+  TWO FURTHER CORROBORATIONS OF THE RENAME READING. The renamed page's own description sentence
+  still opens "YJ Appari 3x3 (Magnetic, Speed-Micro Actuator)" — the OLD name, un-updated
+  underneath the new title. And the "Core Magnets" the new title advertises are already
+  described in the OLD page's body ("Magnetic core corner/core magnets"), so the rename spelled
+  out a feature the product always had rather than announcing a new one.
+
+preservation_note: >-
+  Both captures were fetched with content-encoding negotiation on 2026-09-12 and read in full;
+  every passage above is quoted from them. The CDX enumeration this record originally rested on
+  (`npm run wayback -- prefix https://www.speedcubeshop.com/products/yj-appari --limit 30`)
+  remains reproducible and is now corroboration rather than the whole of the evidence.
+  A PROBE CAVEAT WORTH KEEPING. Reading `"product_id"` from the page as a whole returned
+  6812120973425 for the first capture, which would have made the two pages look like different
+  products and inverted the conclusion. That id belongs to a recommended product elsewhere on
+  the page. Product identity must be read from the block bound to the page's OWN handle and
+  cross-checked against the canonical URL, which is what the figures above do.
+  "Gross Weight: 161g" on the sibling TheCubicle record is a PACKAGED figure and is not attested
+  as this product's mass anywhere.
+accessed: "2026-09-12"
 language: en
 region: US
 link_status: live
-last_checked: "2026-09-07"
+last_checked: "2026-09-12"
 reliability_note: |-
-  Tier 2, first-party retailer catalogue structure. Corroborates existence and currency
-  (2024-2025) only; does not itself supply a spec table or description text (URL-level
-  enumeration, not a full page fetch). Sufficient to raise confidence on existence from a
-  single-retailer `probable` toward independent-source `confirmed`-eligible per the confidence
-  ladder, once combined with thecubicle-yj-appari-3x3-2024 and cubelelo-yj-products-
-  prefix-2026.
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: the product's existence and currency (2024-2025); its Shopify product id and SKU,
+  which together establish that the two SpeedCubeShop paths are ONE product renamed; a
+  core-corner magnet arrangement; 48 factory-installed magnets; 6 spring compression settings;
+  and a stickerless body option.
+  DOES NOT ESTABLISH: the corner-edge ("piece") half of the magnet configuration. This page says
+  "core corner/core magnets" and gives a count; it is thecubicle-yj-appari-3x3-2024 that states
+  "core-corner magnets, classic corner-edge magnets" explicitly. The two retailers use
+  independent wording for the same mechanism — "Speed-Micro Actuator" against "Speed Micro
+  Bearing" — which is what makes them independent corroboration rather than one copied listing
+  (RESEARCH_SPEC 3.2), but only one of them carries the full magnet claim.
 status: sourced

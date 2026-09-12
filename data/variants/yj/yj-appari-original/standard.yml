@@ -15,6 +15,9 @@ name: "YJ Appari"
 scope_class: core
 edition:
   types: [standard]
+config:
+  magnet_configuration: core_corner_plus_piece
+  adjustment_system: other
 status: stub
 attestations:
   /edition/types:
@@ -27,3 +30,30 @@ attestations:
       here. The cited source establishes the product itself; no source was found
       differentiating configurations of it. A later pass finding an axis should add
       variants alongside this one rather than replacing it."
+  /config/magnet_configuration:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024, speedcubeshop-yj-appari-3x3-2024]
+    note: >-
+      TheCubicle carries the full claim in one sentence: "This model has core-corner magnets,
+      classic corner-edge magnets, and 6 spring compression settings" — core magnets AND piece
+      magnets, which is this vocabulary's `core_corner_plus_piece`.
+      THE TWO SOURCES DO NOT CARRY EQUAL WEIGHT HERE and the split is stated rather than
+      averaged. SpeedCubeShop independently describes "Magnetic core corner/core magnets" and
+      "48 factory-installed magnets", which corroborates the CORE-CORNER half and the magnet
+      count; it does not name corner-edge magnets, so the `plus_piece` half rests on TheCubicle
+      alone. They are genuinely independent — different publishers using different names for the
+      same mechanism, "Speed Micro Bearing" against "Speed-Micro Actuator" (RESEARCH_SPEC 3.2) —
+      but independence corroborates only what both actually say, so this is `probable` and not
+      `confirmed`.
+  /config/adjustment_system:
+    confidence: probable
+    sources: [thecubicle-yj-appari-3x3-2024, speedcubeshop-yj-appari-3x3-2024]
+    note: >-
+      "6 Spring compression settings", in those words on both retailers' pages — the one claim
+      here that both sources make identically.
+      RECORDED AS `other` DELIBERATELY. `tension_compression` is defined in
+      vocab/adjustment-systems.yml as INDEPENDENT tension and compression adjustment, and
+      neither source establishes that tension is separately adjustable; both describe discrete
+      compression settings only. Choosing the more specific value would assert something no
+      source says. If a first-party YJ source later establishes independent tension adjustment,
+      this should be revisited rather than left at `other`.
