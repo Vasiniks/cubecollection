@@ -18,12 +18,16 @@ sources:       582
 events:        4
 
 VALIDATION
-npm run check:         0 errors, 28 advisory — EVERY ONE EXPLAINED:
-                        14 r18  genuine minis and oversized cubes. 12 were pre-existing; TWO ARE
-                                NEW AND CORRECT — qiyi-qimeng-plus 262g (a 9cm cube) and
-                                qiyi-warrior-plus 981g (18.8cm, "use it as furniture"). Both
-                                sizes recorded from the same verified table so a reader meeting
-                                the mass sees the dimension beside it.
+npm run check:         0 errors, 30 advisory — EVERY ONE EXPLAINED:
+                        14 r18  genuine minis and oversized cubes. 10 pre-existing; FOUR ARE NEW
+                                AND ALL FOUR ARE CORRECT — qiyi-qimeng-plus (90mm AND 262g, a
+                                9cm cube) and qiyi-warrior-plus (188mm AND 981g, 18.8cm, "use it
+                                as furniture"). NOTE IT IS FOUR, NOT TWO: each oversized cube
+                                raises a warning for its size AND for its mass, because both
+                                were recorded from the same verified table so a reader meeting
+                                the mass sees the dimension beside it. Several commit messages
+                                this session said "26 -> 28" — that was my arithmetic slip
+                                (14+10+4+2 = 30) and this line is the correct figure.
                         10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
                                 citations where two captures ARE the claim
                          4 r40  model-predates-family — P3-D2, needs human decision
@@ -38,8 +42,9 @@ LEDGER: 34 resolved / 16 open / 9 needs_human_decision (of 59)
 
 SESSION 2026-09-12 — 39 commits from 6249aac
   COUNTS: variants 501->517, sources 555->576, one-config models 112->104,
-          weightless models 193->160, audit sweeps 12->14. Advisories 26->28 (both new
-          ones CORRECT: qiyi-qimeng-plus 262g/9cm, qiyi-warrior-plus 981g/18.8cm).
+          weightless models 193->160, audit sweeps 12->14. Advisories 26->30 (all four new
+          ones CORRECT: qiyi-qimeng-plus 90mm+262g, qiyi-warrior-plus 188mm+981g — each
+          oversized cube raises one for size and one for mass).
 
   A. PROBE AND RULE FIXES
    - Sweep #10 printed a MISS rate under a heading that read as a HIT rate, so its worst row
