@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  4f85754
+HEAD:  ba87dae
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      517
-sources:       574
+sources:       575
 events:        4
 
 VALIDATION
@@ -155,6 +155,16 @@ PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
            (form differs PER BRAND) and reading our own sweep sources for unchased
            paths. NEGATIVES recorded as sources: GAN flagships already complete;
            ShengShou YuFeng's 4 paths are 2 products (identical SKUs = a rename).
+
+  P4-10 ZIINA — PROGRESS, STILL UNRESOLVED. THE ARCHIVE HAD THE WRONG BRAND STRING: the
+  Shopify vendor field is "Ziina Star" (two words); SpeedCubeShop fronts a "Ziina Star (34)"
+  collection and cubein.cn (CN domain) has 13 more. AND THE SLUGS CARRY NO BRAND AT ALL —
+  cheese-3x3-uv-printed, world-map-3x3-3d-uv-printed, 1x1x2 — so a keyword sweep CANNOT find
+  them. Two community origin claims exist and CONTRADICT (OEM rebrand vs separate-maker
+  knockoff), which are exactly P4-10's two hypotheses. Strongest remaining avenue is now
+  narrower: PACKAGING PHOTOGRAPHY (product images show a box). 1688/Taobao still untried.
+  THAT MADE 3.6a's THIRD REQUIRED CHECK: sweep the retailer's BRAND FACET (Shopify `vendor`
+  in /products/<handle>.json + the brand collection page), not only URL slugs.
 
 OPEN CRITICALS
   P4-9   adjudicated in full; taxonomy admission is the user's call
