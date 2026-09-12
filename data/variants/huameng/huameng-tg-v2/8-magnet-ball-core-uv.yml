@@ -9,7 +9,6 @@ name: "HuaMeng TG V2 (8 Magnet Ball Core, UV)"
 scope_class: core
 config:
   coating: uv
-  core_system: ball_core
 edition:
   types: [standard]
   name: "8 Magnet Ball Core UV"
@@ -17,16 +16,16 @@ status: stub
 attestations:
   /edition/name:
     confidence: probable
-    sources: [cubelelo-moyu-huameng-tg-v2-2026]
-    note: >-
-      The retailer's own purchase-option name, with its own SKU (8 Magnet Ball Core UV).
-  /config/core_system:
-    confidence: probable
     sources: [cubelelo-moyu-huameng-tg-v2-2026, thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
     note: >-
-      "Ball-Core" is named in the option itself. Two INDEPENDENT retailers in different regions
-      now attest this model's ball-core system — Cubelelo (IN) and TheCubicle (US) — where before
-      2026-09-11 the model rested on TheCubicle alone (ledger P4-8, P4-14).
+      The retailer's own purchase-option name, with its own SKU (8 Magnet Ball Core UV).
+      NO config.core_system IS SET HERE, deliberately. The model already records
+      `core_system: ball_core` and a variant restating its model's value is noise (rule 23) —
+      the magnet COUNT is what distinguishes this configuration, and the archive's
+      core_system vocabulary does not express a count. The distinction lives in the option
+      name and this note.
+      Both sources are cited because two INDEPENDENT retailers in different regions now attest
+      this model, where before 2026-09-11 it rested on TheCubicle alone (ledger P4-8, P4-14).
   /edition/types:
     confidence: probable
     sources: [cubelelo-moyu-huameng-tg-v2-2026]
