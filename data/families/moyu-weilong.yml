@@ -48,11 +48,28 @@ attestations:
   /introduced:
     confidence: probable
     sources: [thecubicle-us-moyu-early-3x3-lines, speedsolving-wiki-moyu]
-    note: "TheCubicle's AoLong-era captures place the WeiLong V2 as already sold by 2015 (seen
-      as a 'customers also bought' item on the 2015-10-04 TangLong sticker-page capture within
+    note: >-
+      TheCubicle's AoLong-era captures place the WeiLong V2 as already sold by 2015 (seen as a
+      'customers also bought' item on the 2015-10-04 TangLong sticker-page capture within
       thecubicle-us-moyu-early-3x3-lines); the wiki's own 'WeiLong created after HuanYing'
       narrative and its listing of 'WeiLong V2' before 'WeiLong GTS (2016)' place the original
-      WeiLong at approximately 2014. No source states an exact date, so recorded `circa`."
+      WeiLong at approximately 2014. No source states an exact date, so recorded `circa`.
+      EVIDENCE GAP RECORDED 2026-09-12, found by an adversarial provenance audit. The 'customers
+      also bought' observation above IS NOT PRESERVED ANYWHERE. The phrase appears in this note
+      and nowhere else in the archive: thecubicle-us-moyu-early-3x3-lines' excerpt,
+      preservation_note and reliability_note contain no such text, and neither does any other
+      record. It is also not pinned — that source is a GROUPED six-capture record whose
+      archive_url names a different page, so even the specific 2015-10-04 TangLong capture the
+      claim rests on is not addressed by any locator here. This is the speedsolving-wiki-moyu
+      failure class again: the claim may well be correct, but the archive holds a pointer and a
+      paraphrase rather than the evidence, and if that capture stops resolving the observation
+      becomes unverifiable. THE VALUE IS UNCHANGED AND STILL SOUND, because it does not depend
+      on that half: the wiki's ordering of WeiLong V2 before WeiLong GTS (2016), cited
+      alongside, independently supports circa 2014, which is why this remains `probable` rather
+      than being downgraded. TO CLOSE THIS, re-fetch the 2015-10-04 capture and transcribe the
+      'customers also bought' block into the source's excerpt. NOT DONE TODAY: web.archive.org
+      returned HTTP 503 'Internet Archive: Temporarily Offline' all day, and a failed fetch is
+      never evidence of absence.
   /positioning:
     confidence: probable
     sources: [thecubicle-com-moyu-3x3-collection-2021, speedsolving-wiki-moyu]

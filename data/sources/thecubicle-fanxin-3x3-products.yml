@@ -19,6 +19,19 @@
 # Re-fetched to confirm the capture carries the quoted lines ("FanXin's first attempt at a
 # modern, magnetic puzzle", "papery/scratchy feel") verbatim. Neither other capture is lost;
 # each is its own record.
+#
+# THE PARAGRAPH ABOVE IS HISTORY AND NO LONGER DESCRIBES THIS FILE. Corrected 2026-09-12.
+# A LATER repair (commit 208f274, "six source records were one page split by a lane that would
+# not overwrite") moved the locator AGAIN, to the 2020-08-04 capture of `fanxin-magnetic-3x3`,
+# which is where it points now. The three FanXin records therefore hold THREE DIFFERENT PAGES
+# today — fanxin-3x3, fanxin-magnetic-3x3 and fanxin-hudong-light — so the one-capture-under-
+# two-ids collision described above is RESOLVED, not outstanding. Rule 42 confirms it: no FanXin
+# record is flagged.
+# THIS COMMENT COST SOMEONE REAL TIME. An adversarial provenance audit on 2026-09-12 read it as
+# current fact and reported two live double-citation defects, on fanxin-3x3-standard and
+# fanxin-hudong-3x3, that do not exist. A repair note describing a state the file has since left
+# is worse than no note: it is a signpost pointing at a defect already fixed. When a locator
+# moves again, the note about the previous move has to move with it.
 id: thecubicle-fanxin-3x3-products
 entity: source
 kind: retailer

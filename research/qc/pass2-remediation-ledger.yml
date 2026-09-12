@@ -3406,6 +3406,51 @@ issues:
       `ganspuzzle-brand-intro-2011` is the one to watch — 81 characters, link_status dead, so its
       live page is already gone and only the capture stands behind it. Not a defect today; a
       dependency, and the shape a defect would take if the outage were permanent.
+
+      2026-09-12 — THE PROVENANCE ADVERSARIAL LANE FOUND ONE REAL DEFECT AND TWO THAT WERE
+      ALREADY FIXED, and the reason it was wrong is itself the second finding. Report at
+      research/qc/provenance-adversarial-lane-d.md.
+
+      CONFIRMED, AND IT IS THE speedsolving-wiki-moyu CLASS AGAIN. `families/moyu-weilong.yml`
+      `/introduced` rests partly on an observation the archive does not hold: its note says the
+      WeiLong V2 was "seen as a 'customers also bought' item on the 2015-10-04 TangLong
+      sticker-page capture". Verified by full-text read and repo-wide grep — that phrase appears
+      in the note and NOWHERE else, not in the cited source's excerpt, preservation_note or
+      reliability_note, and not in any other record. It is not even pinned: the source is a
+      GROUPED six-capture record whose archive_url names a different page. The archive holds a
+      pointer and a paraphrase where it should hold evidence.
+      THE VALUE IS UNCHANGED AND STILL SOUND, because it does not depend on that half — the
+      wiki's ordering of WeiLong V2 before WeiLong GTS (2016), cited alongside, independently
+      supports circa 2014. The gap is recorded in the note with the exact fetch that would close
+      it. NOT CLOSED TODAY: Wayback returned HTTP 503 all day.
+
+      TWO REPORTED DEFECTS DO NOT EXIST, AND I CHECKED RATHER THAN ACCEPTING THEM. The lane
+      reported `fanxin-3x3-standard` and `fanxin-hudong-3x3` as citing two sources that are one
+      observation of one page, quoting the archive's own repair comment as its evidence. Tracing
+      the file's history shows a LATER repair (commit 208f274) moved the locator again, to the
+      2020-08-04 `fanxin-magnetic-3x3` capture. The three FanXin records today hold THREE
+      DIFFERENT PAGES, the collision is resolved, and rule 42 flags no FanXin record at all.
+
+      THE STALE COMMENT IS THE SECOND DEFECT. That file's own repair note still described the
+      pre-208f274 state as current, and an auditor read it as fact and reported two live defects
+      that had been fixed. A repair note describing a state the file has since left is worse than
+      no note — it is a signpost pointing at a defect that is already gone. The comment now
+      carries the correction, names the later commit, and says plainly that when a locator moves
+      again the note about the previous move has to move with it.
+
+      CLASSES THE LANE SWEPT CLEAN, all with stated method: archive_url-vs-url mismatches (0 of
+      516), Wayback CDX query URLs used as pinned captures (0), duplicate source ids (0),
+      cross-retailer copied-prose false independence (264 pairs, only the already-disclosed cases),
+      and 5 of 6 grouped multi-page source records.
+
+      TWO PROBES DISCARDED WITH MEASURED RATES: sweep #10 without its n>=8 floor (11 of 11 false,
+      all GAN356 tokenisation artefacts), and a quote-versus-excerpt cross-check at roughly 98%
+      false on a reviewed sample — though that one is what surfaced the confirmed defect, which is
+      a fair argument for running a noisy probe once by hand and not shipping it.
+
+      LEFT OPEN BY THE LANE: `check-duplicates.mjs` fingerprints variants only and never sources,
+      so no general check exists for source-identity duplication carried in prose rather than in
+      URLs.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
