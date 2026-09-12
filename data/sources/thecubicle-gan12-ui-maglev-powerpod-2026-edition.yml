@@ -7,7 +7,7 @@
 # WAYBACK STATUS: web.archive.org returned HTTP 503/504 on every attempt this session (CDX
 # search, the wayback/available API, and a direct /web/2026/ replay), retried across several
 # minutes. Per RESEARCH_SPEC, a failed archive fetch is never evidence of absence, so this
-# record uses the LIVE Shopify product JSON instead, with preservation_method: excerpt and no
+# record uses the LIVE Shopify product JSON instead, with preservation_method: archive_url and no
 # archive_url, and is flagged below for re-verification once the archive is reachable again.
 id: thecubicle-gan12-ui-maglev-powerpod-2026-edition
 entity: source
@@ -15,7 +15,8 @@ kind: retailer
 title: "GAN12 ui MagLev 3x3 (PowerPod, 2026 Edition) — TheCubicle"
 publisher: "TheCubicle"
 url: "https://www.thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition"
-preservation_method: excerpt
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260616195646/https://www.thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition"
 excerpt: |-
   Live Shopify product JSON fetched 2026-09-12 from
   https://www.thecubicle.com/products/gan12-ui-maglev-3x3-powerpod-2026-edition.json (the page
@@ -53,11 +54,24 @@ excerpt: |-
   separateness of listing is not the test for a variant; the test is a stated difference in the
   object, and none exists. This closes the lead the sibling source left open.
 preservation_note: >-
-  FLAG FOR RE-VERIFICATION: fetched from the live Shopify .json endpoint, not an archived
-  capture. web.archive.org returned 503/504 on every attempt during this session (CDX search,
-  wayback/available, and a direct timestamped replay), retried at intervals. When the archive is
-  reachable again, capture this page and this record's sibling
-  (thecubicle-gan12-ui-maglev-powerpod-2025) properly and add archive_url to both.
+  RE-VERIFIED 2026-09-12, FLAG CLEARED. This record was created during the Internet Archive's
+  day-long outage (503/504 on CDX, availability and direct replay) and was filed as
+  preservation_method: excerpt with a re-verification flag. The CDX API recovered later the same
+  day and returned exactly one capture of this URL, 2026-06-16 19:56:46, HTTP 200, which is now
+  cited above and was fetched and read in full.
+  WHAT THE CAPTURE CONFIRMS, read from the JSON block bound to this page's OWN handle rather
+  than by searching the page (the page carries recommended products, and a page-wide search
+  returns their ids and timestamps — doing exactly that during this check produced a created_at
+  93 seconds off this product's, which is how the contamination was noticed): product id
+  7995691008083, handle gan12-ui-maglev-3x3-powerpod-2026-edition, SKU "3RBM_1_153", title
+  "GAN12 ui MagLev 3x3 (PowerPod, 2026 Edition)", and the body copy quoted in the excerpt
+  including "the world's first MagLev smart cube" and "It comes with a GAN PowerPod for easy
+  charging and storage". The rejection recorded in this record therefore rests on archived
+  evidence and no longer on a live fetch alone.
+  WHAT THE CAPTURE DOES NOT CONFIRM, stated rather than quietly dropped: the price. The excerpt
+  records 109.99 USD from the live 2026-09-12 fetch; the 2026-06-16 capture shows "price":11999,
+  i.e. 119.99 USD, for the same SKU. That is a real price change between the two observations,
+  not a discrepancy in the record, and neither figure is attested as a launch price anywhere.
 accessed: "2026-09-12"
 language: en
 region: US

@@ -56,14 +56,20 @@ excerpt: |-
   packaging, not a Calvin's Puzzle design; the vendor field and the "Manufacturer_DaYan" tag
   both attribute manufacture to DaYan, not to Calvin's Puzzle or to TheCubicle.
 preservation_note: >-
-  Live Shopify storefront JSON only — web.archive.org (both the id_ replay endpoint and the CDX
-  search API) returned "Internet Archive: Temporarily Offline" (HTTP 503) on every attempt made
-  during this session (2026-09-12, three attempts spaced across the session), so no archive_url
-  could be obtained. preservation_method is `excerpt`, per the vocabulary's own guidance
-  ("preferred where archiving is impossible"), and the excerpt above reproduces the live JSON's
-  title, description, tags and variant table in full rather than a partial quotation. This
-  record should be re-verified against an archive_url once Wayback recovers; until then it
-  rests on the live fetch alone.
+  Live Shopify storefront JSON only. Created during the Internet Archive's day-long outage
+  (503 on both the id_ replay endpoint and the CDX search API, three attempts across that
+  session), so no archive_url could be obtained then, and the record was flagged for
+  re-verification.
+  FLAG RESOLVED 2026-09-12, AND THE ANSWER IS NOT THE ONE THE FLAG EXPECTED. The CDX API
+  recovered later the same day and was re-queried for this URL, with and without the `www`
+  host and with no status filter. It returns an EMPTY result set both ways. A control query
+  run in the same minute against a URL known to be archived returned its capture normally, so
+  CDX was answering and this is not a second outage.
+  This page has never been archived. The absence is therefore SEARCHED-AND-NOT-FOUND rather
+  than blocked, `preservation_method: excerpt` is permanent here rather than provisional, and
+  the excerpt above — which reproduces the live JSON's title, description, tags and variant
+  table in full rather than a partial quotation — is the only preservation this claim will
+  have unless the page is archived in future. Nothing further to retry.
 accessed: "2026-09-12"
 language: en
 region: US

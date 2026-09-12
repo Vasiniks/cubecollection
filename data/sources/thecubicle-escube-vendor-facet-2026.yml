@@ -48,18 +48,15 @@ excerpt: |-
   customized feel..." (Emphasis marks the clause this record is cited for; the wording is the
   retailer's.)
 preservation_note: >-
-  LIVE SHOPIFY STOREFRONT JSON, NOT AN ARCHIVE CAPTURE. web.archive.org was returning
-  "Internet Archive: Temporarily Offline" (HTTP 503) throughout 2026-09-12 — confirmed
-  independently by the main session and by the DaYan depth lane across three attempts plus the
-  CDX API — so no archive_url could be obtained for any of these paths. `preservation_method` is
-  `excerpt` and the excerpt reproduces the enumeration and the one new product's JSON in full
-  rather than partially. THIS RECORD SHOULD BE RE-VERIFIED AGAINST AN archive_url ONCE WAYBACK
-  RECOVERS; until then it rests on a live fetch alone.
-  THE PER-VARIANT `grams` VALUE (113) IS NOT A PRODUCT WEIGHT and is deliberately not quoted
-  above as one. Shopify's `grams` is a shipping weight the merchant sets for postage — the
-  rule-45 class — and no weight is attested from this source.
-  The "created_at" of 2025-12-03 is when the RETAILER created the listing, not a release date,
-  and is likewise not attested.
+  Live Shopify collection JSON only, captured during the Internet Archive's day-long outage and
+  flagged for re-verification.
+  FLAG RESOLVED 2026-09-12. CDX recovered and was re-queried for this URL; it returns an EMPTY
+  result set, while a control query against a known-archived URL in the same minute returned
+  its capture, so CDX was answering. `/collections/<brand>/products.json` endpoints are
+  parameterised storefront API paths and the Wayback crawler does not appear to collect them at
+  all — which is a general limitation of preserving VENDOR-FACET enumerations, not a fact about
+  ESCube. The excerpt is the preservation, permanently rather than provisionally, and it
+  reproduces the enumeration in full. Nothing further to retry.
 accessed: "2026-09-12"
 language: en
 region: US
