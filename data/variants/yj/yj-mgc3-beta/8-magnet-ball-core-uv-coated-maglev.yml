@@ -15,6 +15,7 @@ config:
   coating: uv
   maglev: ball_core_maglev
   magnet_strength: "8-magnet ball-core"
+  weight_g: 78.0
 status: stub
 attestations:
   /name:
@@ -34,3 +35,12 @@ attestations:
   /config/magnet_strength:
     confidence: probable
     sources: [thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-8-magnet-ball-core-uv-coated-maglev-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 78.0g". Its "Gross Weight: 145g" on the
+      same table is the PACKAGED figure, refused under the rule-45 class. Recorded on the variant:
+      the MGC3 Beta is listed per configuration and the Limited Edition page gives a different
+      figure, 82.0g. Dimensions 55.5mm on both. Recorded 2026-09-12 from evidence the archive had
+      preserved and cited all along - see audit sweep #14.

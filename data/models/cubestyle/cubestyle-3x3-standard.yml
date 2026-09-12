@@ -31,6 +31,7 @@ description: |-
 status: drafted
 specs:
   size_mm: 56.0
+  weight_g: 73.6
 attestations:
   /specs/size_mm:
     confidence: probable
@@ -41,6 +42,15 @@ attestations:
       pass could not confirm which, if either, is the naked cube's actual weight rather than a
       packaged/shipping figure — following the precedent already set on
       kungfu-qinghong-3x3/kungfu-longyuan-3x3 (Agent D, same ambiguity, same resolution)."
+  /specs/weight_g:
+    confidence: probable
+    sources: [thecubicle-cubestyle-3x3]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 73.6g". Its "Gross Weight: 82g" on the same
+      table is the PACKAGED figure, refused under the rule-45 class. The page's Dimensions field
+      reads 56.0mm, matching this model's recorded size, and this model has exactly one variant
+      and one such source, so there is no sibling to confuse it with. Recorded 2026-09-12 from
+      evidence the archive had preserved and cited all along - see audit sweep #14.
   /description:
     confidence: reported
     sources: [thecubicle-cubestyle-3x3]

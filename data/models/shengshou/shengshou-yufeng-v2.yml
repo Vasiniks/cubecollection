@@ -14,6 +14,7 @@ generation:
 scope_class: core
 specs:
   size_mm: 56.0
+  weight_g: 80.0
 relationships:
   - type: succeeds
     target: shengshou-yufeng-original
@@ -63,8 +64,19 @@ attestations:
     confidence: probable
     sources: [thecubicle-shengshou-yufeng-v2-3x3-m-2023, thecubicle-shengshou-products-prefix-2026]
   /specs/weight_g:
-    confidence: unknown
-    note: "Searched and not found."
+    confidence: probable
+    sources: [thecubicle-shengshou-yufeng-v2-3x3-m-2023]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 80.0g", beside a "Gross Weight: 224g" that
+      is refused under the rule-45 class. Dimensions 56.0mm matches this model. THIS ATTESTATION
+      PREVIOUSLY READ "Searched and not found" AT confidence: unknown, AND THAT WAS WRONG. The
+      figure was in thecubicle-shengshou-yufeng-v2-3x3-m-2023, a source this record already cited
+      - the same failure as the ZhanChi 50mm baseline that declared no axis while citing a page
+      titled for one. An "unknown" means searched and not found, so it is a claim about the
+      search, and it has to be retired when the thing turns out to have been in hand. DELIBERATELY
+      NOT ALSO RECORDED ON shengshou-yufeng-original, which cites this same source and is equally
+      weightless: the page is titled "ShengShou YuFeng V2 3x3 M" and is about the V2. The V1 keeps
+      no weight until a V1 page is found. Corrected 2026-09-12 - see audit sweep #14.
   /specs/core_system:
     confidence: unknown
     note: "Searched and not found. What changed mechanically between the first generation and V2

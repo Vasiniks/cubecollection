@@ -12,6 +12,7 @@ edition:
   name: "Enhanced Core Positioning Edition"
 config:
   magnet_configuration: core_corner
+  weight_g: 74.0
 status: stub
 attestations:
   /name:
@@ -37,5 +38,15 @@ attestations:
     sources: [thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
     note: "TheCubicle's own page carries 'This product has been discontinued indefinitely or we
       aren't sure when it will be back in stock' as of the 2024-04-18 capture."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-mgc-evo-ii-3x3-enhanced-core-positioning-edition-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 74.0g". Its "Gross Weight: 250g" on the
+      same table is the PACKAGED figure, refused under the rule-45 class. Recorded on the variant
+      rather than the model because the page is titled "YJ MGC Evo II 3x3 (Enhanced Core
+      Positioning Edition)" - this configuration - and the model's other variant has no page of
+      its own on file. Recorded 2026-09-12 from evidence the archive had preserved and cited all
+      along - see audit sweep #14.
 availability:
   production_status: discontinued

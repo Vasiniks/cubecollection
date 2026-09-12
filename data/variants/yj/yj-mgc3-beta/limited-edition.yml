@@ -24,6 +24,7 @@ config:
   maglev: ball_core_maglev
   coating: none
   magnet_strength: "8-magnet ball-core"
+  weight_g: 82.0
 status: stub
 attestations:
   /name:
@@ -73,3 +74,12 @@ attestations:
   /config/magnet_strength:
     confidence: uncertain
     sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-yj-mgc3-beta-limited-edition-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 82.0g". Its "Gross Weight: 147g" on the
+      same table is the PACKAGED figure, refused under the rule-45 class. Recorded on the variant:
+      the sibling UV-coated MagLev page gives 78.0g, so the 4g difference is a property of the
+      configuration and not of the model. Recorded 2026-09-12 from evidence the archive had
+      preserved and cited all along - see audit sweep #14.

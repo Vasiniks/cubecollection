@@ -10,6 +10,7 @@ scope_class: core
 config:
   maglev: ball_core_maglev
   coating: uv
+  weight_g: 85.0
 edition:
   types: [standard]
 colorway:
@@ -33,3 +34,15 @@ attestations:
     confidence: uncertain
     sources: [thecubicle-huameng-tg-3x3-maglev-ball-core-uv]
     note: "Inferred from the absence of sticker language; not a direct statement."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-maglev-ball-core-uv]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 85.0g". Its "Gross Weight: 226g" on the
+      same table is the PACKAGED figure, refused under the rule-45 class. RECORDED ON THE VARIANT,
+      NOT THE MODEL. The HuaMeng TG V1 has four separately listed configurations at TheCubicle and
+      each has its own page and its own item weight - 81.0g, 84.0g and 85.0g across them - so the
+      mass is a property of the configuration. This figure is from the page titled "HuaMeng TG 3x3
+      (MagLev + Ball-Core + UV)", which is this variant. All four pages read 55.5mm. Recorded
+      2026-09-12 from evidence the archive had preserved and cited all along - see audit sweep
+      #14.

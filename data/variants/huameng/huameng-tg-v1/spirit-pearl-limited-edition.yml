@@ -8,6 +8,8 @@ entity: variant
 model_id: huameng-tg-v1
 name: "HuaMeng TG 3x3 Spirit Pearl (Limited Edition)"
 scope_class: core
+config:
+  weight_g: 85.0
 edition:
   types: [limited]
   designation: "Spirit Pearl"
@@ -59,3 +61,14 @@ attestations:
     sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
     note: "Retailer's own itemised list: 'a custom cube box, custom inserts, an adjustment
       tool, and custom-cut stickers'."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-huameng-tg-3x3-spirit-pearl-limited-edition]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 85.0g". Its "Gross Weight: 687g" is the
+      PACKAGED figure and is refused under the rule-45 class - and it is worth noticing how far
+      apart the two are here. 687g against an 85g puzzle is eight times the article's mass, which
+      is what a limited edition in a presentation box weighs on a scale, not what the cube weighs.
+      The same retailer's ordinary TG pages show 218-226g gross. Recorded on the variant because
+      each TG configuration is listed and weighed separately. Recorded 2026-09-12 from evidence
+      the archive had preserved and cited all along - see audit sweep #14.

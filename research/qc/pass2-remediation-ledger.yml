@@ -2513,6 +2513,38 @@ issues:
       Worth keeping as a pattern: the sweep ranked the candidate, the dimension guard narrowed
       it, and an unrelated lint rule caught the placement. No single check would have got this
       right on its own.
+
+      2026-09-12 — the rest of the sweep #14 queue, and it split three ways rather than two.
+
+      RECORDED AT THE VARIANT LAYER, NOT THE MODEL (9 records). The HuaMeng TG V1, YJ MGC3 Beta,
+      YJ MGC Evo II, X-Man Tornado V3 and MsCube MS3L are each listed per CONFIGURATION at
+      TheCubicle, with a separate page and a separate item weight for each — the TG V1's four
+      pages read 81.0g, 84.0g and 85.0g. A mass is a property of a configuration wherever the
+      configurations are sold and weighed separately, so filing any of these on the model would
+      have asserted that its siblings share it.
+
+      ONE "unknown" RETIRED AS FALSE. `shengshou-yufeng-v2` carried
+      `/specs/weight_g: {confidence: unknown, note: "Searched and not found."}` while the figure
+      sat in thecubicle-shengshou-yufeng-v2-3x3-m-2023 — a source the record already cited. That
+      is the ZhanChi 50mm failure again: a claim about the SEARCH, not about the world, left
+      standing after the thing turned out to be in hand. Now 80.0g. Deliberately NOT copied to
+      shengshou-yufeng-original, which cites the same page: the page is about the V2.
+
+      ONE ROW DECLINED, LEAVING A PRIOR DECISION STANDING. `guoguan-yuexiao-edm` also carries an
+      `unknown`, but a REASONED one: it records that TheCubicle's 72.0g and Cubezz's 75g describe
+      slightly different configurations and that weight belongs on the variant where it may vary.
+      That is a judgement made on evidence, not an oversight, and nothing found today is new
+      evidence against it. Left alone. A queue is a list of questions, and some of them have
+      already been answered no.
+
+      A NOTE ON THE GUOGUAN DIMENSION FLAG, because it shows the cross-check reading correctly
+      when it appears to disagree. Sweep #14 marks that row uncorroborated because the page says
+      55.5mm while the model records 56.0. The model's own /specs/size_mm note already adjudicated
+      exactly that discrepancy — "a sub-millimetre rounding difference, not elevated to a
+      dispute". The guard flagged a real difference; the record explains it.
+
+      Queue across the whole session: weightless models 193 -> 161, sources carrying a gross
+      weight 78 -> 47, actionable item weights 40 -> 8. Advisories unchanged at 28.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

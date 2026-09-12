@@ -16,6 +16,7 @@ edition:
   designation: "Magnetic Core"
 config:
   magnet_configuration: core_corner
+  weight_g: 69.0
 status: stub
 attestations:
   /edition/types:
@@ -31,3 +32,14 @@ attestations:
     sources: [thecubicle-x-man-tornado-v3-m-standard-product]
     note: "'introducing core magnets' read as magnets acting between the core and corner
       pieces, the closest vocabulary match; not a precise specification."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-x-man-tornado-v3-m-standard-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 69.0g". Its "Gross Weight: 233g" on the
+      same table is the PACKAGED figure, refused under the rule-45 class. Dimensions 55.5mm,
+      matching the model. FILED AGAINST THE MAGNETIC-CORE CONFIGURATION, not the model, because
+      the page is "X-Man Tornado V3 M Standard" - the magnetic standard version - and this model
+      has five variants including MagLev, UV and a limited edition, which will not share a mass.
+      Recorded 2026-09-12 from evidence the archive had preserved and cited all along - see audit
+      sweep #14.

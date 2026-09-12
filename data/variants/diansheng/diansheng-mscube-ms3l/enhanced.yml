@@ -16,6 +16,7 @@ edition:
   designation: "Enhanced"
 config:
   magnet_configuration: unknown
+  weight_g: 76.0
   materials:
     plastic: "transparent blue corner stalks and torpedoes"
 status: stub
@@ -39,3 +40,12 @@ attestations:
   /config/materials:
     confidence: probable
     sources: [thecubicle-mscube-ms3l-3x3-enhanced-product]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-mscube-ms3l-3x3-enhanced-product]
+    note: >-
+      Single tier 2 retailer spec table, "Item Weight: 76.0g". Its "Gross Weight: 150g" on the
+      same table is the PACKAGED figure, refused under the rule-45 class. Filed against the
+      Enhanced configuration, not the model: the page is titled "MsCube MS3L 3x3 (Enhanced)" and
+      the model also has a standard variant with no page of its own on file. Recorded 2026-09-12
+      from evidence the archive had preserved and cited all along - see audit sweep #14.
