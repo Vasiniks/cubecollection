@@ -1,0 +1,40 @@
+# variant: huameng-tg-v2--8-magnet-ball-core-uv
+# Depth research 2026-09-11. The magnet-core count is the axis, named by the retailer itself:
+# "Available in two powerful variants... Choose Your Variant: 8 Magnet Ball-Core / 20 Magnet
+# Ball-Core", with distinct SKUs for each.
+id: huameng-tg-v2--8-magnet-ball-core-uv
+entity: variant
+model_id: huameng-tg-v2
+name: "HuaMeng TG V2 (8 Magnet Ball Core, UV)"
+scope_class: core
+config:
+  coating: uv
+  core_system: ball_core
+edition:
+  types: [standard]
+  name: "8 Magnet Ball Core UV"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [cubelelo-moyu-huameng-tg-v2-2026]
+    note: >-
+      The retailer's own purchase-option name, with its own SKU (8 Magnet Ball Core UV).
+  /config/core_system:
+    confidence: probable
+    sources: [cubelelo-moyu-huameng-tg-v2-2026, thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
+    note: >-
+      "Ball-Core" is named in the option itself. Two INDEPENDENT retailers in different regions
+      now attest this model's ball-core system — Cubelelo (IN) and TheCubicle (US) — where before
+      2026-09-11 the model rested on TheCubicle alone (ledger P4-8, P4-14).
+  /edition/types:
+    confidence: probable
+    sources: [cubelelo-moyu-huameng-tg-v2-2026]
+    note: >-
+      A magnet-count configuration, not a limited or commemorative edition.
+      NOTE ON THE DEDUP TEST: these two configurations are a DROPDOWN on one product page rather
+      than two product pages, which this archive normally treats as one listing. They are recorded
+      as separate variants because the retailer frames them as a choice between variants AND gives
+      them distinct SKUs — the merchandising is one page, the products are two.
+      NO WEIGHT IS RECORDED. The listing's 193g/203g are Shopify shipping weights covering the
+      packaged product, not product weights (rule 45).

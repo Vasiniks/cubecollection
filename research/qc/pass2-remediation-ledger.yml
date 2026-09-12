@@ -2133,7 +2133,7 @@ issues:
 
   - id: P4-14
     severity: low
-    status: open
+    status: resolved
     title: "Three claims rest on the archive's own interpretation or on an unfetched page, and say so"
     evidence: >-
       Three of the 18 unfiled escalations are self-reported evidence weaknesses - the honest kind,
@@ -2210,6 +2210,30 @@ issues:
       follow an explicit attribution to this source gives the real answer, which is zero.
       That is the same lesson as the adversarial sweep the same day: a probe's hit count is
       worthless until you have checked what it is actually matching.
+      LAST ITEM CLOSED 2026-09-11. huameng-tg-v2's thinness is resolved, and by the method P4-8
+      prescribes rather than by adding another US retailer.
+      Cubelelo — an Indian retailer, independent of TheCubicle in both ownership and region —
+      sells the cube and its listing does three things at once. It CORROBORATES the ball-core and
+      UV claims that previously rested on one TheCubicle page whose own description is a
+      placeholder ("more details coming soon!"), raising two attestations from `uncertain` to
+      `probable`. It REVEALS a configuration axis: "Available in two powerful variants... Choose
+      Your Variant: 8 Magnet Ball-Core / 20 Magnet Ball-Core", with distinct SKUs. And it
+      CORRECTS the archive's own record shape — huameng-tg-v2--standard is NAMED
+      "20-Magnet Ball-Core + UV", so it was never a baseline; it is one half of a two-way split,
+      and the 8-magnet sibling is now recorded.
+      THE ORIGINAL HEDGE WAS RIGHT. That variant's differentiation note said the sweep "found
+      only this one captured URL... not affirmatively confirmed to be the only one that ever
+      existed". It was correct to hedge, and the hedge is what made the correction cheap: the
+      record already said what it did not know.
+      A DEDUP-TEST NOTE recorded on the new variant: the two configurations are a DROPDOWN on one
+      Cubelelo page, not two product pages, which this archive normally treats as one listing.
+      They are recorded separately because the retailer frames them as a choice between variants
+      AND gives them distinct SKUs — the merchandising is one page, the products are two.
+      A SEPARATE FINDING, deliberately NOT conflated with the above: Cubelelo files this under
+      vendor "MoYu" and titles it "MoYu HuaMeng". That independently corroborates the
+      HuaMeng-MoYu affiliation lead carried since Pass 4 with no second source. It does NOT
+      establish the corporate relationship — a vendor field records who a product is sold AS, not
+      who makes it, which is the same distinction that blocked Ziina's admission under P4-10.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

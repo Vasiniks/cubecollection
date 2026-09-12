@@ -18,19 +18,28 @@ colorway:
 status: stub
 attestations:
   /edition/types:
-    confidence: uncertain
-    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
-    note: "Differentiation search performed: a dedicated wayback prefix sweep of
-      thecubicle.com/products/huameng-tg-v2 found only this one captured URL. The source
-      itself is a genuinely thin record — the product's own description is a placeholder
-      ('more details coming soon!') per the model record's own note — so this is the only
-      configuration found, not affirmatively confirmed to be the only one that ever existed.
-      Held at `uncertain` rather than `probable` given the placeholder description."
+    confidence: probable
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core, cubelelo-moyu-huameng-tg-v2-2026]
+    note: >-
+      RAISED from `uncertain` 2026-09-11 and the differentiation search CORRECTED. The earlier
+      note said a TheCubicle prefix sweep "found only this one captured URL... not affirmatively
+      confirmed to be the only one that ever existed" — honest, and now shown to have been right
+      to hedge. Cubelelo, an independent Indian retailer, sells this cube as one of TWO named
+      configurations: "Available in two powerful variants... Choose Your Variant: 8 Magnet
+      Ball-Core / 20 Magnet Ball-Core", with distinct SKUs.
+      THIS RECORD IS THE 20-MAGNET CONFIGURATION — its own name says so — so it is not a
+      baseline at all but one half of a two-way split. The 8-magnet sibling is
+      huameng-tg-v2--8-magnet-ball-core-uv.
+      The single-US-retailer dependence that produced the original hedge is exactly what ledger
+      P4-8 describes, and a non-US retailer is what resolved it.
   /config/coating:
-    confidence: uncertain
-    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]
-    note: "Read from the product's own bracketed name ('... + UV'), not a structured coating
-      field or descriptive sentence (the page's description is a placeholder)."
+    confidence: probable
+    sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core, cubelelo-moyu-huameng-tg-v2-2026]
+    note: >-
+      RAISED from `uncertain` 2026-09-11. Both retailers name UV in the product option itself
+      ("20 Magnet Ball Core UV" at Cubelelo, "... + UV" at TheCubicle). Two independent
+      publishers in different regions, so this no longer rests on one placeholder-description
+      page.
   /colorway/application:
     confidence: uncertain
     sources: [thecubicle-huameng-tg-v2-3x3-20-magnet-ball-core]

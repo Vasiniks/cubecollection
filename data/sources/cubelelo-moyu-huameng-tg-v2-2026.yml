@@ -1,0 +1,63 @@
+# source: cubelelo-moyu-huameng-tg-v2-2026
+# Created 2026-09-11 addressing TWO open items at once: P4-14's last remaining evidence weakness
+# (huameng-tg-v2 rested on ONE TheCubicle source, four attestations at `uncertain`) and P4-8's
+# single-US-retailer dependence for huameng. Cubelelo is an Indian retailer — an INDEPENDENT
+# publisher in a different region, which is what P4-8 asks for and what a second US retailer
+# mirroring TheCubicle's copy would not have provided.
+id: cubelelo-moyu-huameng-tg-v2-2026
+entity: source
+kind: retailer
+title: "MoYu HuaMeng TG v2 3x3 (Magnetic) — Cubelelo"
+publisher: "Cubelelo"
+url: "https://www.cubelelo.com/products/moyu-huameng-tg-v2-3x3-magentic"
+preservation_method: excerpt
+excerpt: |-
+  Fetched live 2026-09-11 from the storefront's own product JSON endpoint.
+
+  Title: "MoYu HuaMeng TG v2 3x3 (Magnetic)". Structured vendor field: "MoYu".
+
+  Product Description, verbatim: "MoYu HuaMeng TG V2 3x3 (Magnetic) brings a completely new
+  dimension to cube customization and performance. Built with an advanced gear-driven magnetic
+  adjustment system, this cube transforms tuning into a precise and responsive experience where
+  every adjustment is clearly felt. Available in two powerful variants, the HuaMeng TG V2 lets you
+  choose the perfect balance of speed, control, and magnetic strength based on your solving
+  style. Choose Your Variant: 8 Magnet Ball-Core – A lighter, balanced feel with smooth turning
+  and controlled performance. Ideal for cubers who prefer comfort and effortless solving. 20
+  Magnet Ball-Core – Enhanced magnetic strength with 88 total magnets and edge + corner magnetic
+  adjustment for maximum stability and precision. Perfect for competitive and high-speed solving."
+
+  Two purchase options with distinct SKUs: "20 Magnet Ball Core UV" (SKU 1031005) and "8 Magnet
+  Ball Core UV" (SKU 1031006).
+
+  TWO SEPARATE FINDINGS HERE, and they should not be conflated.
+
+  (1) A CONFIGURATION AXIS. The retailer names two magnet configurations of one cube and gives
+  them distinct SKUs. Note this is a DROPDOWN on one product page, not two product pages — the
+  archive's dedup test treats that as one listing, but the retailer's own "Choose Your Variant"
+  framing and separate SKUs make the configurations real regardless of how they are merchandised.
+
+  (2) MANUFACTURER ATTRIBUTION. Cubelelo files this under vendor "MoYu" and titles it "MoYu
+  HuaMeng". That is INDEPENDENT corroboration of the HuaMeng-MoYu affiliation lead this archive
+  has carried since Pass 4 without a second source. It does NOT by itself establish the corporate
+  relationship: a retailer's brand grouping is how it merchandises, not a statement of ownership,
+  and this archive's own rules (P4-10, the Ziina case) say a vendor field records who a product is
+  sold as, not who makes it.
+
+  THE 203g / 193g FIGURES ARE SHIPPING WEIGHTS (Shopify `grams`), not product weights, and are
+  refused as specs here — the rule-45 defect class.
+preservation_note: "Fetched live 2026-09-11 via products.json and transcribed verbatim. No
+  archived capture was pinned: this is a current listing and Wayback's CDX endpoint was
+  intermittently returning 503 during this session. A capture should be pinned when reachable."
+accessed: "2026-09-11"
+language: en
+region: IN
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page, and specifically a NON-US publisher independent of
+  TheCubicle — which is the point of citing it.
+  ESTABLISHES: that the HuaMeng TG V2 is sold in two magnet-core configurations, what
+  distinguishes them, and that at least one retailer files the brand under MoYu.
+  DOES NOT ESTABLISH: a product weight, a release date, or the HuaMeng-MoYu corporate
+  relationship. A vendor field is merchandising, not ownership.
+status: sourced
