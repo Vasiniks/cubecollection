@@ -127,6 +127,7 @@ report.note(`ledger status distribution: ${Object.entries(statusCounts).map(([k,
 
 const reports = DIRS.flatMap((d) => walk(d));
 let declared = 0, linked = 0, unfiled = 0, loose = 0, silent = 0, notfinding = 0;
+let silentTraceable = 0;
 const dangling = [];
 const reachedLedgerIds = new Set();
 
@@ -134,7 +135,15 @@ for (const file of reports) {
   const text = readFileSync(file, 'utf8');
   const block = /^escalations:\s*\n((?:[ \t]+.*\n)*)/m.exec(text);
   if (!block) {
-    if (LANGUAGE.test(text)) silent += 1;
+    if (LANGUAGE.test(text)) {
+      silent += 1;
+      // Does the prose name a REAL ledger id anywhere? If it does, the finding reached the
+      // ledger and only the machine-readable block is missing; if it does not, the report is
+      // untraceable by this check and needs a human to read it. This split is the difference
+      // between "not yet mechanised" and "possibly lost", and the bare count conflates them.
+      const ids = [...text.matchAll(new RegExp(ID.source, 'g'))].map((m) => m[1]);
+      if (ids.some((i) => ledgerIds.has(i))) silentTraceable += 1;
+    }
     continue;
   }
   for (const raw of block[1].split('\n')) {
@@ -154,7 +163,21 @@ report.note(`  linked to a ledger issue : ${linked}`);
 report.note(`  marked UNFILED           : ${unfiled}   <- loud on purpose, not an error`);
 report.note(`  marked NOTFINDING        : ${notfinding}   <- a run condition, not an archive defect`);
 report.note(`  free prose, no id at all : ${loose}   <- cannot be matched to anything`);
-report.note(`  reports with escalation language and no block : ${silent}`);
+// MEASURED, NOT ENFORCED, and qualified on purpose — a bare count here would be read as
+// "findings lost", which is what it is NOT. Adjudicated by hand on 2026-09-12 (full working in
+// research/qc/p26-2-escalation-linkage.md):
+//   - 36 of the 43 were CREATED BEFORE the block convention existed (2026-09-09). They could
+//     not have carried a block, and the P26-2 retrofit already swept them.
+//   - Of the 7 created since, every one is a roll-up, a report ABOUT this mechanism, or a
+//     DELIBERATE non-escalation. Zero lost findings.
+//   - The residue that names no ledger id is still dominated by vocabulary rather than state:
+//     a QUOTED COMMIT MESSAGE, "flagged for the main session" (a write-lane handoff between
+//     agents, not a ledger escalation), and escalations deliberately recorded in a RECORD's
+//     header comment instead of the ledger.
+// So no rule was added. This matches the treatment the reverse-direction line already gets, and
+// the precedent of the version-contiguity probe: a detector that does not work is written down
+// rather than shipped.
+report.note(`  reports with escalation language and no block : ${silent}   <- VOCABULARY, not state; see comment. ${silentTraceable} name a real ledger id in prose, ${silent - silentTraceable} name none`);
 // The reverse direction (ledger -> report), measured but deliberately not enforced — see the
 // P26-2 LANE C header comment above for why a rule here would be noise, not signal.
 report.note(`  ledger issues reached by at least one block (reverse direction) : ${reachedLedgerIds.size} of ${ledgerIds.size}   <- measured, NOT enforced (see the header)`);
