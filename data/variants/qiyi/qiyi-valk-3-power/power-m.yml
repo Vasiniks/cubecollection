@@ -11,6 +11,7 @@ edition:
   types: [standard]
 config:
   magnet_configuration: single_layer
+  weight_g: 94.4
 status: stub
 attestations:
   /edition/types:
@@ -21,3 +22,15 @@ attestations:
     sources: [thecubicle-valk-3-power-m-product]
     note: "'pre-magnetized by the factory' does not itself specify a precise arrangement;
       recorded at reduced confidence as the vocabulary's single generic magnetized layer."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-valk-3-power-m-product]
+    note: >-
+      SPEC-ADVERSARIAL LANE J REPAIR. This variant carried NO weight_g override and was
+      silently inheriting the base model's 87.4g (qiyi-valk-3-power's own non-magnetic-page
+      figure) — wrong for this configuration. This source's own spec table states "Item Weight:
+      94.4g" (Dimensions 55.5mm, matching this line's size; "Gross Weight: 231g" on the same
+      table is the packaged figure, refused under the rule-45 class). The model record's own
+      /specs/weight_g note had already identified this exact figure ("The Valk 3 Power M page
+      ... gives 94.4g for the magnetic configuration") during audit sweep #14 on 2026-09-12, but
+      no variant was ever updated to record it. Recorded here to close that loop.
