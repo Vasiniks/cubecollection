@@ -171,7 +171,27 @@ ACTIVE AGENT LANES (launched 2026-09-12 from base 78d0097, all Sonnet 5, isolate
           Owns research/qc/provenance-adversarial-lane-d.md.
   LANE E  DaYan variant depth (21 of 28 models bare). Owns research/qc/dayan-depth-lane-e.md
           + data/variants/dayan/** + new sources.
-  MAIN    Chronology/date adversarial QC — deliberately NOT in any agent's scope.
+  MAIN    (running independently; five lanes DONE so far, all committed)
+          1. CHRONOLOGY — clean. All 16 `exact` dates read by hand, 58 succession pairs, 0
+             inversions. A date-vs-capture probe was DISCARDED at 39/39 false; its durable
+             finding is that SOME SOURCES ARE GROUPED MULTI-CAPTURE RECORDS whose archive_url
+             holds only the FIRST capture (thecubicle-us-moyu-early-3x3-lines names six
+             snapshots through 2015-10 behind a 2013-06 locator). Any future locator-based
+             check will be wrong on those unless it knows.
+          2. SPEC COHERENCE — clean. Two probes discarded 9/9; both treated a DIFFERENCE as a
+             DEFECT, and in a model/variant archive the difference is the point. The sharp
+             question (a model spec value EVERY variant contradicts) returns zero.
+          3. AUDIT SWEEP #7 FIXED — it accused brands of having no first-party source while
+             never opening data/manufacturers/*.yml. x-man-design cites qiyitoys-company-history
+             (tier 1 via parent) and mefferts cites its own site. 8 -> 5, plus a 3-citation
+             floor so single-source stubs stop appearing as "concentration risk".
+          4. THE SAME FIX TRIED ON BREADTH + RECENCY AND REVERTED. Breadth went 25 -> 37 and
+             almost all of it was FALSE — SWEEP_EVIDENCE matches "CDX" in notes that merely
+             mention CDX as a method. #7 was safe because it matches on HOST. Both exclusions
+             are now commented as deliberate so nobody "fixes" them again.
+          5. LEDGER: P4-1 CLOSED (rule 18 already checks models directly; 34 -> 35 resolved).
+             P4-13 half (2) resolved (the 50th-anniversary event exists AND is linked); half
+             (1) re-pointed at P4-9 as an admission question.
 
   COORDINATION RULE IN FORCE: no agent may touch research/qc/pass2-remediation-ledger.yml or
   research/qc/HANDOFF.md. MAIN owns both. Agents put ledger-bound text in their own reports and
