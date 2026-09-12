@@ -79,10 +79,39 @@ unused, in each source's own excerpt.
 `npm run check`: 0 errors, 30 warnings after this batch (unchanged from the 30-warning baseline
 at base commit).
 
+### Target 3 — i-carry-2 "uv-3x3-10th-anniversary" slug is NOT a third product
+Checked whether `gan356-i-carry-2-uv-3x3-10th-anniversary-edition` (from
+`thecubicle-gan356-slug-prefix-2026`'s path list) names something beyond the archive's existing
+`gan-356-i-carry-2--10th-anniversary` (which already carries `config.coating: uv`) and
+`--uv-coated`. It does not: the URL
+`https://www.thecubicle.com/products/gan356-i-carry-2-uv-3x3-10th-anniversary-edition` is the
+EXACT url already recorded on `thecubicle-gan-356-i-carry-2-10th-anniversary-2026`, the source
+already backing `gan-356-i-carry-2--10th-anniversary`. Same page, same product, already a
+variant. No action needed — closing this lead as already covered, not new.
+
+### Target 4 — the open PowerPod-2026-edition lead: RESOLVED, REJECTED as a bundle
+`gan12-ui-maglev-3x3-powerpod-2026-edition` (Shopify id 7995691008083) was left open because
+TheCubicle's 2026 storefront is JS-rendered and the archived capture carried no description.
+Wayback is down this session (503/504 on CDX search, `wayback/available`, and a direct replay,
+retried across several minutes) so I fetched the live Shopify `.json` endpoint instead, which
+carries the same underlying product record the JS page renders from. Its `body_html` opens with
+a sentence IDENTICAL, word for word, to the already-rejected `gan12-ui-maglev-with-powerpod`
+listing ("The GAN 12 UI MagLev is everything you love about the GAN 12 UI Free Play, but with a
+MagLev tensioning system!... It comes with a GAN PowerPod for easy charging and storage."), and
+lists the same box contents (cube, PowerPod, manual, power station, USB-C cable, adjustment
+tool, swappable magnets, cube bag). Nothing on either page states a material or mechanical
+difference between the two listings' cubes. Verdict: "2026 Edition" is a restocked SKU under a
+new Shopify id and handle (created 2026-06-11 vs. the sibling's 2024-08-01), not a GAN-declared
+edition — the copy is a duplicate of the 2024 bundle description. REJECTED as a configuration of
+`gan-ui-12-maglev`, same reasoning as its sibling. New source:
+`thecubicle-gan12-ui-maglev-powerpod-2026-edition`, `preservation_method: excerpt` (no
+archive_url obtainable this session), explicitly flagged in its `preservation_note` for
+re-verification once web.archive.org is reachable again.
+
 ## UNRESOLVED
-(populated as work proceeds)
+- `thecubicle-gan12-ui-maglev-powerpod-2026-edition` rests on a live fetch, not an archived
+  capture — flagged in its own preservation_note for re-verification once Wayback recovers.
 
 ## NEXT
-- Target 3: verify the i-carry-2 combined UV+10th-anniversary slug is not a third product.
-- Target 4: the open PowerPod-2026-edition lead.
-- Target 5-6: sweep the 18 single-configuration models.
+- Targets 5-6: sweep the 18 single-configuration models across TheCubicle, gancube.com, and a
+  non-US retailer.
