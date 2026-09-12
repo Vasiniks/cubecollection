@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  ad0766c
+HEAD:  8140d78
 DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -17,7 +17,7 @@ variants:      488
 sources:       539
 
 VALIDATION
-npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
+npm run check:         0 errors, 25 advisory — EVERY ONE IS EXPLAINED, none is unattended:
                          10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
                                  citations where two captures ARE the claim
                          11 r18  genuinely out-of-range models (minis, oversized) — correct
@@ -86,14 +86,23 @@ THIRD WINDOW (2026-09-11)
   P4-13  Not a schema gap. data/events/ already existed + rule 2 already enforces the
          link as a BLOCKING error. Created the missing event row; all 3 commemorates
          links resolve. Jelly LE half reclassified Type E (which of 2 generations).
+  P4-14  Vocabulary gap `core_corner_plus_piece` added — the archive was splitting one
+         described magnet arrangement two ways. THEN the real finding: 172 attestations
+         rested on speedsolving-wiki-moyu's 839-char BRAND-HISTORY excerpt while 169 made
+         PRODUCT claims. Every claim was CORRECT; only preservation was truncated.
+         Excerpt 839 -> 10,380; measure 95% -> 2%. Same repair on -mofang-jiaoshi.
+         New audit sweep #10. CubeTwist white-face corroborated from sibling nav.
   P4-15  CLOSED. Kirin/Kylin are DISTINCT lines (both spellings are separate paths at
          two retailers) — merging would have destroyed a real distinction. Little Magic
          V3 raised uncertain -> probable.
 
 NEXT ACTION
-  1. P4-12 (six model/variant boundary questions), P4-14 (three evidence weaknesses),
-     P4-16 (reference_only's second undocumented meaning) — all untouched.
+  1. P4-16 (reference_only's second undocumented meaning) and P4-12 (six model/variant
+     boundary questions) — the last two of the P4-12..P4-16 batch still untouched.
   2. Then archive-wide adversarial QC per the phase plan.
+
+  P4-14 nearly closed: only huameng-tg-v2 thinness remains (6 attestations on ONE
+  TheCubicle source, 4 at `uncertain`; needs a second independent source).
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming
