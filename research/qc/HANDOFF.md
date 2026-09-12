@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  d70de30
+HEAD:  c80b437
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -94,6 +94,17 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   (one GuHong table, six generations), sibling-puzzle sources (valk-3 cites a Valk 4 page,
   142g = a 4x4), and SHORT DISCRIMINATING TOKENS — tokenisers drop <3-char tokens and in
   this domain that token IS the generation number. Same defect as mfjs `3c` in sweep #10.
+  WEIGHT QUEUE WORKED: 34 records added/corrected (6 + 18 QiYi + 9 variant-layer + 1
+  corrected `unknown`). Queue 40 -> 8; weightless models 193 -> 161. Advisories 26 -> 28,
+  both new ones CORRECT (qiyi-qimeng-plus 262g/9cm, qiyi-warrior-plus 981g/18.8cm).
+  THE GUARD THAT WORKS is the source's own Dimensions vs the model's size_mm — independent
+  of tokenisation. It resolved qiyi-valk-3 (which cites a 4x4 and a 5x5 page for lineage).
+  IT ALSO HAS A DOCUMENTED FALSE POSITIVE: dayan-guhong-v3-m is 54mm like the Pro M whose
+  table it is. RULE 23 caught the worse error there — GuHong Pro M sells in 54/55/56mm, so
+  size is a VARIANT axis and the weight belongs on the 54mm-standard variant, not the model.
+  A false `unknown` ("searched and not found" while the value sat in a cited source) turned
+  up twice; measured the class = 3 candidates, all now correctly handled. NOT shipped as a
+  sweep: post-fix its false-positive rate is 100%, from shared multi-product sources.
   TWO REUSABLE FINDINGS. TheCubicle's "Type: DIY Kits" does NOT mean unassembled — the GTS
   Unstickered page says "This DIY Kit actually comes assembled but without any stickers",
   so that category value alone never evidences assembly state. And "Added: 2018-11-07" now
@@ -131,12 +142,10 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. WEIGHT QUEUE (sweep #14): 34 models still have an Item Weight preserved and unrecorded.
-     18 are QiYi. VERIFY EACH EXCERPT BY HAND — confirm it is a single-product page naming
-     that model — then add `specs.weight_g` + attestation to the MODEL (these are `drafted`,
-     so rules 6/8 do not bite, and size_mm already sits there from the same source).
-     DO NOT batch-apply: dayan-guhong (5 models, 1 shared table) and qiyi-valk-3 (cites a
-     Valk 4 page) are known traps.
+  1. DEPTH RESEARCH, continue. Sweep #14's weight queue is worked down to 8 (from 40) and
+     the remainder are the hard ones. Sweep #12's remaining leads are mostly P4-9 MODEL
+     layer = frozen. Best untouched targets are the bare families: yj-mgc 7, dayan-zhanchi,
+     witeden-mixup 4, yj-guanlong 4, dayan-bermuda 4, qiyi-warrior 4.
   2. DEPTH RESEARCH, continue. One-config models are 106 (was 112 at session start).
      REMAINING SWEEP-12 LEADS, triaged: gan356-m-e / gan356-maglev on gancube.com are
      FIRST-PARTY pages for models now resting on retailers — best provenance value.

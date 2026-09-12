@@ -2545,6 +2545,30 @@ issues:
 
       Queue across the whole session: weightless models 193 -> 161, sources carrying a gross
       weight 78 -> 47, actionable item weights 40 -> 8. Advisories unchanged at 28.
+
+      2026-09-12 — a false `unknown` had now appeared twice in one day, so the class was measured
+      rather than fixed a third time. An `unknown` means SEARCHED AND NOT FOUND, so it is a claim
+      about the search, and a false one is worse than a missing field: it tells the next
+      researcher not to look.
+
+      THE CLASS IS CLEAN. A probe over every `unknown` on a size or weight pointer, checking
+      whether any source cited anywhere on that record preserves a matching LABELLED value
+      ("Item Weight", "Dimensions"), returns THREE candidates, and all three are correctly
+      handled. `shengshou-yufeng-v2` was the real one and was fixed earlier today.
+      `guoguan-yuexiao-edm` is a reasoned decline. `shengshou-gem-standard` explains that
+      TheCubicle's catalogue JSON tags that product `Dimensions_Other` against `Dimensions_56.0`
+      on a sibling — the retailer never assigned it a size, so nothing was overlooked.
+
+      The probe was validated on the way: `shengshou-yufeng-v2` no longer appears, which is how
+      its zero is known to be a real zero.
+
+      DELIBERATELY NOT SHIPPED AS A SWEEP. After the one genuine fix its false-positive rate on
+      this archive is 100%, and from the SAME contamination mode that defeated sweep #14's
+      automation attempts: both remaining hits come from multi-product sources. The 60.5mm it
+      finds for the Gem belongs to another ShengShou line in a shared catalogue source, and the
+      80.0g it finds for `shengshou-yufeng-original` is the V2 page's — which that record's own
+      note already states in plain words. A check that is right once and wrong twice, for a
+      reason that cannot be filtered out, is not worth a reader's attention.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet
