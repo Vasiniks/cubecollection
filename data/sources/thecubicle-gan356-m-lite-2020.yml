@@ -1,0 +1,40 @@
+# source: thecubicle-gan356-m-lite-2020
+# Created 2026-09-11, depth research. Found via thecubicle-gan356-slug-prefix-2026, the
+# alternate-slug sweep — the hyphenated `gan-356-` prefix does not return this product.
+id: thecubicle-gan356-m-lite-2020
+entity: source
+kind: retailer
+title: "GAN 356 M Lite — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-m-lite"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20200923195906id_/https://www.thecubicle.com/products/gan356-m-lite"
+excerpt: |-
+  Product Description, verbatim: "The GAN 356 M Lite is a modern, mid-range magnetic 3x3 speed
+  cube by popular manufacturer GAN. This version comes with GAN's unique hand adjustable
+  Numerical IPG Core and blue GES nuts installed. Out of the box, the GAN 356 M Lite has a fast,
+  stable feel that is very reminiscent of a mix between the GAN XS and GAN X V2..."
+
+  Product Specifications table: "Manufacturer: GAN", "Dimensions: 56.0mm3", "Item Weight: 74.0g".
+
+  WHY THIS IS A CONFIGURATION AND NOT A SEPARATE MODEL. "This version comes with..." is the
+  retailer's own framing, and what it names as distinguishing the Lite is which GES NUTS are
+  installed — blue rather than the standard set. GES nuts are GAN's user-swappable tension
+  hardware, so this is one design shipped with a different factory setup, not a different design.
+  The base GAN356 M page describes the same "hand-adjustable Numerical IPG Core" and ships "a set
+  of spare GES nuts".
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted
+  description and all three specification fields. The live product page no longer returns JSON —
+  the product is discontinued."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured spec table.
+  ESTABLISHES: that a "Lite" configuration of the GAN356 M was sold, what distinguished it, and
+  its dimensions and item weight.
+  DOES NOT ESTABLISH: a release date, or what GAN itself called this configuration. "Lite" is the
+  retailer's product title; no GAN first-party source for the name was found this pass.
+status: sourced

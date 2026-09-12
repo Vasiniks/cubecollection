@@ -1,0 +1,39 @@
+# variant: gan-356-m--lite
+# Depth research 2026-09-11. The axis is the factory GES-nut setup: the retailer's own copy says
+# "This version comes with... blue GES nuts installed", which is one design shipped differently
+# rather than a different design.
+id: gan-356-m--lite
+entity: variant
+model_id: gan-356-m
+name: "GAN 356 M Lite"
+scope_class: core
+config:
+  size_mm: 56.0
+  weight_g: 74.0
+edition:
+  types: [standard]
+  name: "Lite"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan356-m-lite-2020]
+    note: >-
+      "Lite" is the retailer's product title. No GAN first-party source naming this configuration
+      was found this pass, so the name is recorded as the retailer's rather than the
+      manufacturer's — the distinction matters for a configuration whose only stated difference
+      is which tension hardware ships in the box.
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-m-lite-2020]
+    note: >-
+      A standard configuration, not a limited or commemorative edition. Distinguished from the
+      base by blue GES nuts installed at the factory — GAN's user-swappable tension hardware — so
+      the difference is setup, not mechanism.
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-gan356-m-lite-2020]
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-gan356-m-lite-2020]
+    note: "Item Weight 74.0g, the source's own structured spec field."

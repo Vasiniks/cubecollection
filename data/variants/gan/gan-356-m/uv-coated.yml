@@ -1,0 +1,35 @@
+# variant: gan-356-m--uv-coated
+# Depth research 2026-09-11. Sold under its own product handle. NOTE the evidence is weaker than
+# it looks: the page's body copy is the base model's verbatim and never mentions the coating —
+# only the title does.
+id: gan-356-m--uv-coated
+entity: variant
+model_id: gan-356-m
+name: "GAN 356 M (UV Coated)"
+scope_class: core
+config:
+  coating: uv
+  size_mm: 56.0
+edition:
+  types: [standard]
+status: stub
+attestations:
+  /config/coating:
+    confidence: probable
+    sources: [thecubicle-gan356-m-uv-coated-2024]
+    note: >-
+      The coating rests on the retailer's product TITLE and its own distinct product handle
+      (gan356-m-3x3-uv-coated), NOT on descriptive copy — the page's body text is the base GAN
+      356 M description verbatim and never mentions a coating. Held at `probable` rather than
+      `confirmed` for that reason: a retailer naming a product "UV Coated" and selling it
+      separately is good evidence it is coated, but it is not a description of the finish.
+  /config/size_mm:
+    confidence: probable
+    sources: [thecubicle-gan356-m-uv-coated-2024]
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan356-m-uv-coated-2024]
+    note: >-
+      A standard configuration in a coated finish. NO WEIGHT IS RECORDED: this page states none,
+      while the GAN 356 M Lite sibling states 74.0g, and copying that figure here would assert a
+      value this source does not carry.

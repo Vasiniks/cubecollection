@@ -1,0 +1,41 @@
+# source: thecubicle-gan356-m-uv-coated-2024
+# Created 2026-09-11, depth research. Found via thecubicle-gan356-slug-prefix-2026.
+id: thecubicle-gan356-m-uv-coated-2024
+entity: source
+kind: retailer
+title: "GAN 356 M 3x3 (UV Coated) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan356-m-3x3-uv-coated"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241110185655id_/https://www.thecubicle.com/products/gan356-m-3x3-uv-coated"
+excerpt: |-
+  Product Description, verbatim: "The GAN 356 M is a modern, mid-range magnetic 3x3 speed cube.
+  This version comes with GAN's unique hand-adjustable Numerical IPG Core and a set of spare GES
+  nuts. The GAN 356 M checks off all the needs speedcubers have for a nice magnetic 3x3, and
+  makes a good cube of choice for cubers who like GAN engineering with a si[mpler...]"
+
+  Product Specifications table: "Manufacturer: GAN", "Dimensions: 56.0mm3".
+
+  NO ITEM WEIGHT APPEARS ON THIS PAGE, unlike the GAN 356 M Lite page which states 74.0g. That
+  absence is recorded rather than filled from the sibling: restating another page's figure as
+  though this source carried it is the defect class rule 48 exists to catch.
+
+  A NOTE ON THE DESCRIPTION. The body copy is the BASE GAN 356 M description verbatim and does
+  not mention the coating at all — only the product TITLE does. The coating claim therefore rests
+  on the retailer's own product name and its distinct product handle, not on descriptive copy,
+  and the variant record says so rather than implying the page describes the finish.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted
+  description and both specification fields. The live product page no longer returns JSON — the
+  product is discontinued."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a UV-coated configuration of the GAN356 M was sold under its own product
+  handle, and the product's dimension.
+  DOES NOT ESTABLISH: a release date, an item weight, or any described property of the coating —
+  the page's body copy is the uncoated model's and never mentions it.
+status: sourced

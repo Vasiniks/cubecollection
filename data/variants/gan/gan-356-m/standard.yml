@@ -13,4 +13,11 @@ status: stub
 attestations:
   /edition/types:
     confidence: probable
-    sources: [thecubicle-gan356-m]
+    sources: [thecubicle-gan356-m, thecubicle-gan356-m-lite-2020, thecubicle-gan356-m-uv-coated-2024]
+    note: >-
+      ASSESSMENT UPDATED 2026-09-11 during depth research. This was a lone baseline; a CDX sweep
+      of TheCubicle on the alternate `gan356-` slug form found TWO further configurations — a
+      Lite (blue GES nuts installed at the factory, 74.0g) and a UV Coated — now recorded as
+      sibling variants. This record is the base configuration of a three-way split.
+      The hyphenated `gan-356-` prefix returns neither sibling, which is why the original pass
+      found one configuration (ledger P26-3, slug-form blindness).
