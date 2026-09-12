@@ -1,0 +1,38 @@
+# variant: gan-ui-12-maglev--10th-anniversary
+# Depth research 2026-09-11. A named commemorative edition distinguished by MATERIAL (transparent
+# plastic) as well as packaging — which is what separates it from the PowerPod listings on the
+# same line, which are bundles.
+id: gan-ui-12-maglev--10th-anniversary
+entity: variant
+model_id: gan-ui-12-maglev
+name: "GAN 12 UI MagLev (10th Anniversary Edition)"
+scope_class: core
+edition:
+  types: [anniversary, commemorative, smart]
+  name: "10th Anniversary Edition"
+colorway:
+  designation: "Transparent"
+smart:
+  is_smart: true
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-maglev-10th-anniversary-2024]
+    note: >-
+      The source calls it "a smart 3x3 released in celebration of GAN and their 10-year
+      milestone", which is both the anniversary and the commemorative claim in the retailer's own
+      words. NOT marked `limited`: nothing states a run size, and inferring scarcity from
+      "special edition" is the fabrication this archive refuses.
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-maglev-10th-anniversary-2024]
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-maglev-10th-anniversary-2024]
+    note: >-
+      "It comes in transparent plastic" — a material property of the cube, not packaging. That is
+      what makes this a variant rather than a bundle, and it is the distinction that separates it
+      from the gan12-ui-maglev-with-powerpod and -powerpod-2026-edition listings on the same
+      line, which pair the same cube with a charging dock and are bundles.
+      NO SPECS RECORDED: the page states no dimension or weight.

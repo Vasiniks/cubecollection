@@ -1,0 +1,36 @@
+# source: thecubicle-gan12-ui-maglev-10th-anniversary-2024
+# Created 2026-09-11, depth research. Found via thecubicle-gan12-ui-slug-prefix-2026 and the
+# `npm run audit` unchased-leads sweep.
+id: thecubicle-gan12-ui-maglev-10th-anniversary-2024
+entity: source
+kind: retailer
+title: "GAN 12 UI MagLev 3x3 (10th Anniversary Edition) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/gan12-ui-maglev-3x3-10th-anniversary-edition"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20241213222803id_/https://www.thecubicle.com/products/gan12-ui-maglev-3x3-10th-anniversary-edition"
+excerpt: |-
+  Product Description, verbatim: "The GAN 12 UI MagLev 3x3 (10th Anniversary Edition) is a smart
+  3x3 released in celebration of GAN and their 10-year milestone. It comes in transparent plastic
+  with a special edition sticker set (one side) and a special edition cube bag. The GAN 12 UI
+  MagLev 3x3 is everything you love about..."
+
+  Product Specifications table: "Manufacturer: GAN". No dimension or item weight appears on this
+  page; recorded as absent rather than filled from a sibling.
+
+  WHAT DIFFERS: transparent plastic, a special-edition sticker set and a cube bag. The material
+  change is what separates this from a packaging-only edition — transparent plastic is a
+  colourway/material property of the cube itself.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted
+  description. The live product page no longer returns JSON — the product is discontinued."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page.
+  ESTABLISHES: that a named 10th Anniversary Edition of the GAN 12 UI MagLev was sold, in
+  transparent plastic with a special sticker set and bag.
+  DOES NOT ESTABLISH: a release date, a run size, dimensions or weight. None appears on the page.
+status: sourced

@@ -15,6 +15,17 @@ config:
   maglev: maglev
 status: stub
 attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-gan12-ui-maglev-10th-anniversary-2024]
+    note: >-
+      ASSESSMENT UPDATED 2026-09-11 during depth research. This was a lone baseline; the
+      gan12-ui slug sweep found a named 10th Anniversary Edition in transparent plastic, now
+      recorded as a sibling. This record is the standard-plastic configuration.
+      TWO FURTHER PATHS ON THIS LINE WERE CHECKED AND REFUSED as bundles rather than
+      configurations: gan12-ui-maglev-with-powerpod and gan12-ui-maglev-3x3-powerpod-2026-
+      edition pair the same cube with GAN's charging dock. What differs is box contents, and
+      this archive excludes a bundle from the variant layer.
   /config/maglev:
     confidence: probable
     sources: [gancube-collections-ui-series]
