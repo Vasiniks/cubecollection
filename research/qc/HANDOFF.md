@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  e6b9637
+HEAD:  102469c
 DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -105,10 +105,15 @@ THIRD WINDOW (2026-09-11)
          two retailers) — merging would have destroyed a real distinction. Little Magic
          V3 raised uncertain -> probable.
 
+  ADVERSARIAL QC DONE — research/qc/adversarial-sweep-2026-09-11.md. Six sweeps, ZERO real
+  defects, four broken probes. No rule added: none describes an invariant the archive
+  violates. Traps documented so the next sweep does not rediscover them.
+
 NEXT ACTION
-  1. Archive-wide adversarial QC per the phase plan (provenance / specs / variant
-     semantics / chronology / taxonomy sweeps).
-  2. Then depth research on high-value baseline-only models.
+  1. Depth research on high-value baseline-only models (118 at one configuration).
+     Prioritise historically significant / iconic / highly configurable lines.
+  2. P4-14 remainder: huameng-tg-v2 needs a second independent source.
+  3. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens.
 
   P4-14 nearly closed: only huameng-tg-v2 thinness remains (6 attestations on ONE
   TheCubicle source, 4 at `uncertain`; needs a second independent source).
