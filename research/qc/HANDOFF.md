@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  2491b13
+HEAD:  c3075f3
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      507
-sources:       560
+variants:      509
+sources:       562
 events:        4
 
 VALIDATION
@@ -80,6 +80,10 @@ SESSION 2026-09-12 (in progress) — 3 commits from 6249aac
   PROBE CAVEAT: reading `"product_id"` page-wide returned a RECOMMENDED product's id and
   would have inverted that answer. Read identity from the block bound to the page's own
   handle, checked against the canonical URL.
+  GAN LANE: gan-356-maglev--uv-coated (retailer states the coating in its own sentence);
+  gan-i-carry-4--frosted; and the Year of the Horse edition GAINED its coating — it had an
+  edition name and NO config at all. Applied the Appari lesson: checked product ids before
+  calling them two products (they differ; Appari's matched).
   TWO REUSABLE FINDINGS. TheCubicle's "Type: DIY Kits" does NOT mean unassembled — the GTS
   Unstickered page says "This DIY Kit actually comes assembled but without any stickers",
   so that category value alone never evidences assembly state. And "Added: 2018-11-07" now
@@ -117,7 +121,13 @@ OPEN CRITICALS
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
 NEXT ACTION
-  1. DEPTH RESEARCH, continue. One-config models are 106 (was 112 at session start). Ranked bare families,
+  1. DEPTH RESEARCH, continue. One-config models are 106 (was 112 at session start).
+     REMAINING SWEEP-12 LEADS, triaged: gan356-m-e / gan356-maglev on gancube.com are
+     FIRST-PARTY pages for models now resting on retailers — best provenance value.
+     gan356-me-uv-...-10th-anniversary (me-v2 has uv-coated, no anniversary).
+     gan12-ui-maglev powerpod x2 — likely BUNDLES, adjudicate and record the rejection.
+     gan356-i-carry-2-uv-...-10th-anniversary — i-carry-2 already has BOTH separately.
+     The rest of sweep 12's 20 thecubicle-3x3-collection leads are P4-9 MODEL layer = frozen. Ranked bare families,
      largest first: yj-mgc 7, dayan-zhanchi 5, witeden-mixup 4, yj-guanlong 4,
      dayan-bermuda 4, qiyi-warrior 4. DaYan is the largest manufacturer gap (21 of 28
      models bare) and the most historically significant. Sweep #12's remaining leads are
