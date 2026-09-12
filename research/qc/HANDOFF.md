@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  5a01f21
+HEAD:  db7cf1d
 DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      499
-sources:       552
+variants:      500
+sources:       553
 
 VALIDATION
 npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
@@ -48,7 +48,7 @@ P4-9 ANSWER — "both, at two layers, with different fixes"
   48% of candidates were correctly NOT gaps. The tool over-reports by design.
   WRM crux settled: "WRM V9" IS the archive's moyu-weilong-v9 under its full retail name.
 
-OPEN ISSUES  (24 of 54 not resolved; ledger research/qc/pass2-remediation-ledger.yml)
+OPEN ISSUES  (25 of 59 not resolved; ledger research/qc/pass2-remediation-ledger.yml)
   P4-9   crit  adjudicated; taxonomy admission is the user's call
   P4-10  crit  Ziina IS a manufacturer not a decorator (settled); WHO MAKES IT is not
   P26-2  crit  mechanism now built; 18 UNFILED escalations are the remaining work
@@ -121,9 +121,14 @@ DEPTH RESEARCH (one-config models 118 -> 113; variants 488 -> 496)
          moyu-weilong-gts--illusion (SERVICE variant, TheCubicle shell swap),
          moyu-weilong-gts2--diy-kit (at `uncertain` — its page never says DIY),
          shengshou-fangyuan-original--gift-box (retailer calls it a variant itself).
+         huameng-tg-v2--8-magnet-ball-core-uv (Cubelelo revealed a 2-config axis).
   VERIFIED COMPLETE: YJ MGC, QiYi, ShengShou Legend/Metallic and GAN flagships 12-15 are
   already fully covered — checked systematically, not assumed. Only yj-mgc-sigma is
   missing and that is the known P4-4 MODEL gap.
+  P4-14 CLOSED. P4-8 advanced: huameng resolved via a non-US retailer; the other 8 were
+  CHECKED — Cubelelo stocks none of them, Kewbz stocks only LeFun shape mods. Their
+  single-source dependence is partly a property of thin international distribution, so
+  the remedy is first-party/specialist evidence, not more retailers.
   NEGATIVE RESULTS, both recorded as sources so they are not re-derived:
    - GAN flagships 12-15 are ALREADY complete; every named LE was held.
    - ShengShou YuFeng's 4 retailer paths are 2 products (identical SKUs) — a rename.
