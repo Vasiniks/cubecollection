@@ -2341,6 +2341,50 @@ issues:
       STILL NOTHING ADMITTED. Both enumerations are live queries that preserve nothing, the
       250-product response was the requested limit rather than a catalogue size, so 24 is a floor,
       and no Calvin's Puzzle first-party source has been consulted at all.
+
+      2026-09-12 — A P4-9 CANDIDATE FROM THE DAYAN DEPTH LANE, and a clean negative alongside it.
+      Preserved as thecubicle-dayan-void-cube-limited-edition-2026; report at
+      research/qc/dayan-depth-lane-e.md.
+
+      "DaYan Void Cube (Limited Edition)", live on TheCubicle's DaYan vendor facet, product id
+      7639915364435, vendor "DaYan", product_type "3x3,Shape Mods", four stock colourways at
+      19.99 USD. Its own description states the defining feature: "With no center pieces, it adds
+      a fun twist to the classic puzzle."
+
+      IT IS A MODEL QUESTION AND NOT A VARIANT ONE, which is why it is escalated rather than
+      filed. A Void Cube's core omits the centre pieces entirely and the mechanism is reworked
+      around that, so it fails DATA_MODEL 4.2's separability test outright — no choice of parts,
+      materials or treatment at assembly turns a solid-centre 3x3 into one with none. No DaYan
+      model in this archive is a Void Cube.
+
+      ONE CROSS-BRAND DETAIL WORTH KEEPING: the retailer says these are "older versions that
+      aren't made anymore, packaged in Calvin's Puzzle boxes". Old DaYan stock cleared through
+      another brand's packaging — the vendor field and the "Manufacturer_DaYan" tag both
+      attribute manufacture to DaYan, and the packaging says nothing about who made it. Relevant
+      because Calvin's Puzzle is itself a live P4-9 subject after today's facet sweeps.
+
+      VERIFIED INDEPENDENTLY BY THE MAIN SESSION before merging: the live facet was re-fetched and
+      every claim matched exactly — product id, vendor, type, the verbatim description, all four
+      SKUs and the tag set.
+
+      ONE CORRECTION MADE ON MERGE. The lane's excerpt quoted the per-variant Shopify `grams`
+      values (125/129/127/127) as though they were weights. They are SHIPPING weights under this
+      archive's documented rule-45 class, and the product's own "Weight_112.0" tag contradicts
+      all four — which is itself a reason to trust none of them. The source now says so and
+      attests no weight at all.
+
+      THE NEGATIVE IS THE LARGER RESULT. All 16 remaining single-configuration DaYan models —
+      bermuda column/house-i/house-ii/star, guhong-v3-m/v4-m, lingyun-v1, lunhui-2017, taiyan-v1,
+      tengyun-m/v2-m/v3-m, xiangyun-v1, zhanchi-2017/2018/pro-m — were swept across TheCubicle,
+      SpeedCubeShop and Cubelelo by vendor facet, and ZERO second configurations were found. Two
+      apparent leads resolved as already-adjudicated aliases: TheCubicle's unsuffixed
+      `guhong-pro-3x3-*` is the GuHong Pro+, and SpeedCubeShop's "DaYan TengYun 3x3 (Magnetic)"
+      is the tengyun-m model itself. DaYan's single-configuration models are now SEARCHED, not
+      merely unexamined.
+
+      The GuHong V2 DIY kit recovered from the first wave REMAINS UNVERIFIED. Wayback was down
+      for the whole lane — three replay attempts plus the CDX and availability APIs, all HTTP 503
+      — so it is still held out of the archive in the recovery report. Top item for the next pass.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

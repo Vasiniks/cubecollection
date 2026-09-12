@@ -1,0 +1,84 @@
+# source: thecubicle-dayan-void-cube-limited-edition-2026
+# DaYan depth lane E (second attempt), live Shopify vendor-facet sweep of
+# thecubicle.com/collections/dayan/products.json, run 2026-09-12 as part of the RESEARCH_SPEC
+# 3.6a brand-facet check. This one product on the live facet names a MECHANISM the archive holds
+# no DaYan model for — a Void Cube (no center pieces) — and is preserved here as a P4-9 model
+# candidate. NOT used to create a model or variant: a Void Cube's core has no centre pieces at
+# all, a different internal geometry from every DaYan 3x3 model already on file, so it fails the
+# DATA_MODEL 4.2 separability-at-assembly test outright (no choice of parts at assembly turns a
+# solid-center 3x3 into one with none) and cannot be filed as a variant of any existing model.
+id: thecubicle-dayan-void-cube-limited-edition-2026
+entity: source
+kind: retailer
+title: "DaYan Void Cube (Limited Edition) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-void-cube-limited-edition"
+preservation_method: excerpt
+excerpt: |-
+  Live Shopify product JSON, thecubicle.com/collections/dayan/products.json (fetched
+  2026-09-12), product id 7639915364435, handle "dayan-void-cube-limited-edition", vendor
+  "DaYan", product_type "3x3,Shape Mods".
+
+  Title, verbatim: "DaYan Void Cube (Limited Edition)".
+
+  Description (body_html), verbatim: "The Dayan Void Cube is a throwback to one of the most
+  iconic 3x3 variations ever made. With no center pieces, it adds a fun twist to the classic
+  puzzle and feels like a piece of cubing history. These are older versions that aren't made
+  anymore, packaged in Calvin's Puzzle boxes. Great for collectors or anyone who remembers the
+  early days of modern cubing. Very limited stock."
+
+  Tags, verbatim: "Availability_Available", "Color_Green", "Color_Pink",
+  "Color_Transparent Green", "Color_Transparent Pink", "Dimensions_57.0", "limitededition",
+  "Manufacturer_DaYan", "Type_3x3", "Type_Shape Mods", "Weight Range_100.0-249.9",
+  "Weight_112.0".
+
+  Four colour variants, all priced $19.99, all "available": Green (sku 14305_1_52), Pink (sku
+  14305_1_249), Transparent Green (sku 14305_1_138), Transparent Pink (sku 14305_1_158). First
+  `created_at` 2025-06-27, most recent colour added 2025-09-30.
+
+  THE PER-VARIANT FIGURES 125 / 129 / 127 / 127 ARE SHOPIFY `grams` AND ARE NOT PRODUCT WEIGHTS.
+  This archive has a documented rule (the rule-45 class) that a Shopify `grams` field is a
+  SHIPPING weight the merchant sets for postage, not a measurement of the article, and they are
+  quoted here only so a later reader can see which numbers were refused. The tag-level
+  "Weight_112.0" disagrees with all four of them, which is itself a reason to trust none of
+  them as a mass.
+
+  WHY THIS IS A MODEL QUESTION, NOT A VARIANT ONE: the description states directly that this
+  SKU has "no center pieces" — the defining structural feature of a Void Cube mechanism (the
+  core omits center pieces and the mechanism is reworked so the cube still functions), not a
+  choice of magnet, coating, or size made on an ordinary DaYan 3x3 mould at assembly. No DaYan
+  model in this archive (dayan-guhong-*, dayan-lingyun-*, dayan-lunhui-*, dayan-panshi-v1,
+  dayan-taiyan-v1, dayan-tengyun-*, dayan-xiangyun-v1, dayan-zhanchi-*, dayan-bermuda-*) is a
+  Void Cube, and none of their records mentions one.
+
+  The retailer's own copy calls these "older versions that aren't made anymore, packaged in
+  Calvin's Puzzle boxes" — old DaYan-made stock being cleared through Calvin's Puzzle's own
+  packaging, not a Calvin's Puzzle design; the vendor field and the "Manufacturer_DaYan" tag
+  both attribute manufacture to DaYan, not to Calvin's Puzzle or to TheCubicle.
+preservation_note: >-
+  Live Shopify storefront JSON only — web.archive.org (both the id_ replay endpoint and the CDX
+  search API) returned "Internet Archive: Temporarily Offline" (HTTP 503) on every attempt made
+  during this session (2026-09-12, three attempts spaced across the session), so no archive_url
+  could be obtained. preservation_method is `excerpt`, per the vocabulary's own guidance
+  ("preferred where archiving is impossible"), and the excerpt above reproduces the live JSON's
+  title, description, tags and variant table in full rather than a partial quotation. This
+  record should be re-verified against an archive_url once Wayback recovers; until then it
+  rests on the live fetch alone.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product JSON (the storefront's own Shopify product feed, not a
+  page scrape), naming DaYan as vendor and manufacturer explicitly.
+  ESTABLISHES: that TheCubicle currently sells a DaYan-attributed Void Cube (no center pieces)
+  in four stock colourways, none priced or named as anything but stock colour choices.
+  DOES NOT ESTABLISH: a release date for DaYan's Void Cube design (the "older versions... not
+  made anymore" line places manufacture in the past but gives no date), or whether this is
+  DaYan's only Void Cube generation. IT ESTABLISHES NO WEIGHT AT ALL: the per-variant 125-129g
+  figures are Shopify `grams`, a shipping weight under the rule-45 class, and the tag-level
+  "Weight_112.0" contradicts all four of them. The 57.0mm dimension tag is uncorroborated by any
+  spec table here and is not attested from this source either. Recorded to preserve the lead, not to
+  source a model — no model or variant record is created from this source.
+status: sourced
