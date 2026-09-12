@@ -1,0 +1,52 @@
+# source: thecubicle-shengshou-fangyuan-gift-box-2019
+# Created 2026-09-11, depth research on ShengShou. Found via thecubicle-shengshou-products-prefix-2026,
+# an existing sweep source whose enumeration listed this path without it ever being chased.
+id: thecubicle-shengshou-fangyuan-gift-box-2019
+entity: source
+kind: retailer
+title: "ShengShou FangYuan 3x3 (Gift Box) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-fangyuan-3x3-gift-box"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20190718073540id_/https://www.thecubicle.com/products/shengshou-fangyuan-3x3-gift-box"
+excerpt: |-
+  Page title as captured: "ShengShou FangYuan 3x3 (Gift Box) – TheCubicle".
+
+  Product Description, verbatim: "This product has been discontinued indefinitely or we aren't
+  sure when it will be back in stock. The ShengShou FangYuan 3x3 is the latest and greatest 3x3
+  from ShengShou. With many modern features and improvements, like corner tracks and anti-corner
+  twist designs the FangYuan 3x3 is the most sophisticated 3x3 from ShengShou thus far, and it is
+  expected to be among the best mid-tier 3x3s on the market today. This product comes in a fancy
+  and sturdy box that is great for gifting. To see all variants of this puzzle, including the one
+  without the gift box, click here."
+
+  Product Specifications table: "Manufacturer: ShengShou", "Type: 3x3", "Dimensions: 56.5mm3",
+  "Item Weight: 89.1g", "Gross Weight: 181g".
+
+  THE RETAILER CALLS IT A VARIANT ITSELF: "To see all variants of this puzzle, including the one
+  without the gift box, click here." That is the seller stating the configuration boundary rather
+  than this archive inferring one — and it settles the bundle question, because what differs is
+  the box, not the contents.
+
+  THE SPECS CORROBORATE THE MODEL ATTACHMENT. 56.5mm and 89.1g are exactly the figures this
+  archive records on shengshou-fangyuan-original, so the gift box holds the same cube.
+
+  "Added: 2018-09-11" APPEARS ON THIS PAGE AND IS NOT USED. That is this archive's documented
+  catalogue-migration artefact — 29 occurrences across 22 sources and 13 unrelated brands — and
+  the standing rule is to discard it outright, not even as a bound. Recorded here only so a
+  future reader can see it was seen and refused.
+preservation_note: "Archived capture fetched 2026-09-11 and checked to carry the quoted title,
+  description and all five specification fields. The live product page no longer returns JSON —
+  the page itself says the product was discontinued."
+accessed: "2026-09-11"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-11"
+reliability_note: |-
+  Tier 2, first-party retailer product page with the retailer's own structured spec table.
+  ESTABLISHES: that the FangYuan 3x3 was sold in a gift-box configuration alongside a plain one,
+  that the retailer treats them as variants of one puzzle, and the product's dimension and item
+  weight.
+  DOES NOT ESTABLISH: a release date. The only date on the page is the refused artefact.
+status: sourced

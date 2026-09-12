@@ -18,12 +18,11 @@ edition:
 status: stub
 attestations:
   /edition/types:
-    confidence: reported
-    sources: [thecubicle-shengshou-fangyuan-3x3-product]
-    note: "ASSESSMENT RECORD, not a product claim. This model was assessed for
-      configuration axes during Pass 4 batch 1 (pass4-agent-d-dayan-shengshou); no magnetic,
-      coating, size, stickered/stickerless or named-edition axis was documented by any
-      source located, so the model's single regular retail configuration is recorded
-      here. The cited source establishes the product itself; no source was found
-      differentiating configurations of it. A later pass finding an axis should add
-      variants alongside this one rather than replacing it."
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-gift-box-2019]
+    note: >-
+      ASSESSMENT UPDATED 2026-09-11 during depth research. This was a lone baseline; the
+      archive's own shengshou-products-prefix sweep already listed a gift-box path that had
+      never been chased. The retailer treats the two as variants of one puzzle — "To see all
+      variants of this puzzle, including the one WITHOUT the gift box, click here" — so this
+      record is the plain-packaging configuration of a two-way split.

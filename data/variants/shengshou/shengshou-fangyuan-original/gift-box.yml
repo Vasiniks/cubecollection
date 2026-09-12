@@ -1,0 +1,40 @@
+# variant: shengshou-fangyuan-original--gift-box
+# Depth research 2026-09-11. Packaging is the axis, and the retailer states the pairing itself:
+# "To see all variants of this puzzle, including the one without the gift box, click here."
+id: shengshou-fangyuan-original--gift-box
+entity: variant
+model_id: shengshou-fangyuan-original
+name: "ShengShou FangYuan 3x3 (Gift Box)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "Gift Box"
+packaging:
+  notable: >-
+    "This product comes in a fancy and sturdy box that is great for gifting" — the retailer's own
+    words. The cube inside is the same: the page's 56.5mm and 89.1g match the model's recorded
+    specs exactly.
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-gift-box-2019]
+    note: >-
+      A packaging configuration, not a bundle and not a limited edition. What makes it a VARIANT
+      rather than a separate product is that the retailer says so — "To see all variants of this
+      puzzle, including the one without the gift box, click here" — and what makes it packaging
+      rather than a bundle is that nothing additional is listed as included; the difference is
+      the box itself.
+      DATA_MODEL 4.1 axis 11 admits packaging as a distinguishing axis, which is the same basis
+      as mfjs-meilong-3x3-v2--lite.
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-gift-box-2019]
+  /packaging/notable:
+    confidence: probable
+    sources: [thecubicle-shengshou-fangyuan-gift-box-2019]
+    note: >-
+      NO SPECS are recorded on this variant. The page's 56.5mm/89.1g are the base model's own
+      figures, already held there, and restating them here would denormalise rather than
+      override — the variant inherits them. Its 181g Gross Weight is a packaged figure and is
+      deliberately not recorded as a spec (rule 45).
