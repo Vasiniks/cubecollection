@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  (see git log — 46 commits from 6249aac)
+HEAD:  d76c892  (third window; see git log)
 DATE:  2026-09-12
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -14,7 +14,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      522
-sources:       586
+sources:       592
 events:        4
 
 VALIDATION
@@ -26,19 +26,56 @@ npm run check:         0 errors, 30 advisory — EVERY ONE EXPLAINED:
                                 raises a warning for its size AND for its mass, because both
                                 were recorded from the same verified table so a reader meeting
                                 the mass sees the dimension beside it. Several commit messages
-                                this session said "26 -> 28" — that was my arithmetic slip
+                                in window 2 said "26 -> 28" — that was my arithmetic slip
                                 (14+10+4+2 = 30) and this line is the correct figure.
                         10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
                                 citations where two captures ARE the claim
                          4 r40  model-predates-family — P3-D2, needs human decision
                          2 r27  Rubik's Phantom/Impossible `core` + `not_legal`; reclassifying
                                 is a frozen-taxonomy call, escalated under P4-12
-npm run audit:         14 sweeps, advisory only (#14 is new: refused-weight follow-up)
+npm run audit:         14 sweeps, advisory only
 npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched
-npm run catalogue-gap: offline by default; --fetch to query three retailers
+npm run catalogue-gap: offline by default; --fetch to query three retailers.
+                       --fetch NOW: 272 unmatched lines / 54 warnings (was 275 / 57 before
+                       the P4-9 alias repair — the 3-line drop is exactly the intended one)
 npm run selftest:      every check behaved as specified
 
 LEDGER: 34 resolved / 16 open / 9 needs_human_decision (of 59)
+
+SESSION 2026-09-12, WINDOW 3 — recovery after a session-limit kill, then P4-9
+
+  RECOVERED. Four lanes (F GAN depth, G slug facet, H Ziina challenge, I ShengShou depth) were
+  killed by the session limit. Only LANE F had committed: its worktree
+  (.claude/worktrees/agent-af92a32654071072c) held 3 commits, all verified and MERGED at e286e3f.
+  Lanes G, H and I left NO worktree and NO branch — their worktrees auto-clean when unchanged,
+  which means they committed nothing. Nothing was recoverable; their scopes were relaunched.
+
+  LANE F, verified before merge (do not blindly merge): five variants whose own NAME asserts
+  MagLev while their config block omitted it — the same class as gan-356-maglev--uv-coated,
+  caused by inheritance running MODEL -> VARIANT and the value sitting on a SIBLING. Checked
+  that the shared PiCube source really does name all four products (it does, from an explicitly
+  recorded collection listing, not a recommendation panel) and that `maglev: maglev` matches all
+  five siblings. Two slug leads closed.
+
+  P4-9 GAINED A FOURTH MECHANISM (main session). Alongside recency, discoverability and stock
+  suppression: the archive HOLDS the model but under a name no retailer uses, and 167 of 269
+  models carry no aliases at all. catalogue-gap matches on names AND aliases, so these surface
+  as false misses inside the "recency failure" bucket.
+    - REPAIRED: moyu-weilong-super <- "MoYu Super WeiLong"; moyu-weilong-v9 <- "MoYu WeiLong
+      WRM V9" / "MoYu WeiLong WR M V9". Both evidenced by sources ALREADY BOUND to the record.
+    - REFUSED: the M-vs-non-M pairs (yuxin-little-magic-v2/v3, yj-yulong-v2-m). Both makers sold
+      magnetic and non-magnetic versions, so the absent "M" may be a different product.
+    - ADMISSION RULE, reusable: alias admissible iff (a) token multiset identical modulo word
+      order, or (b) a source already bound to that model carries the retailer name verbatim.
+    - CONTROLLED BOTH WAYS: 275->272 unmatched, and WeiLong V10 is STILL reported missing —
+      the generation guard refused to let a V9 alias absorb it. V10/V11 remain genuinely absent
+      as models; the admission decision is still the taxonomy owner's.
+    - ARCHIVE-WIDE SWEEP OF THE SAME CLASS: 467 bound retailer titles, ZERO further instances.
+      First run said 79 and all were the probe's own artefacts (token-dropping made "X" and
+      "X 3x3" identical; alias membership tested by exact string missed models already covered).
+      Tightened probe carries 5 controls, all passing.
+    - Report: research/qc/p4-9-alias-blindness-2026-09-12.md
+
 
 SESSION 2026-09-12 — 39 commits from 6249aac
   COUNTS: variants 501->517, sources 555->576, one-config models 112->104,
