@@ -1030,6 +1030,42 @@ issues:
       THE SWEEP IS CITED ON mf8-legend-v2--standard, so the breadth check can see it and so that
       record now says its single-configuration state was searched against a whole catalogue
       rather than against its own product page.
+
+      2026-09-12 — PARTICULA LEAVES THE "no sweep source" LIST WITHOUT ANY NEW RESEARCH, because
+      the archive already held the enumeration and the detector could not see it. Sweeps 25 -> 27
+      (GiiKER also closed today); failing both breadth checks 11 -> 10.
+
+      `particula-tech-com-gocube-2026` captures the manufacturer's own site navigation under
+      "GoCube" and quotes it in full — "All Cubes / GoCube Edge Full Pack / GoCube 2x2 / Rubik's
+      Connected / GoCube Bundle Pack / Rubik's Connected BOGO DEAL / GoCube Accessories". That is
+      a manufacturer listing its entire product line on its own site, which is what 3.6a's
+      collection check asks for, and being first-party it is STRONGER than the retailer prefix
+      sweeps the check usually gets.
+
+      IT WAS INVISIBLE PURELY AS A MATTER OF WORDING. The breadth sweep detects an enumeration by
+      looking for "prefix", "enumerat", "/collections/", "catalogue structure" or "CDX" in a
+      source's notes. A first-party navigation capture is a catalogue enumeration while using
+      none of those words. SWEEP_EVIDENCE therefore has a false-NEGATIVE mode to match the
+      false-POSITIVE mode found earlier the same day, when widening it to read manufacturer
+      records moved the count 25 -> 37 on matches like "CDX returned a server error".
+
+      THE FIX WENT IN THE RECORD, NOT THE REGEX, and that is the point worth keeping. A detector
+      that identifies a research method by vocabulary will always mis-sort sources whose authors
+      chose different words; loosening it makes the false positives worse, as was demonstrated.
+      Making the source say plainly what it contains is precise, is true, and costs one note.
+
+      WHAT THE ENUMERATION ALSO SETTLES. Against the archive's three Particula models: GoCube
+      Edge and GoCube are held; GoCube 2x2 is out of scope under 2.4; "Rubik's Connected" is
+      filed under Rubik's; the Bundle Pack is a bundle. GoCube-X, which the archive holds, does
+      NOT appear in the 2026 navigation — consistent with discontinuation, and not evidence it
+      never existed.
+
+      ALSO CHECKED AND RECORDED AS A LIMITATION OF THE NEW BRAND-FACET METHOD: GoCube/Particula
+      cannot be enumerated by brand facet at either principal retailer. TheCubicle carries
+      `vendor: "GoCube"` but exposes no collection under gocube/particula/go-cube, its search
+      endpoint returns unrelated products for the query, and none of particula.tech, gocube.com
+      or getgocube.com is a Shopify store. The facet check works where a retailer exposes a
+      collection under a guessable slug, and not otherwise.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven

@@ -23,7 +23,24 @@ language: en
 region: US
 link_status: live
 last_checked: "2026-09-03"
-reliability_note: "Tier 1, first-party. Confirms the 'GoCube Edge' name and product line
+reliability_note: "THIS CAPTURE IS ALSO A COLLECTION ENUMERATION, recorded explicitly
+  2026-09-12 because it was not being recognised as one. The excerpt quotes the site's own
+  'GoCube' navigation in full — 'All Cubes / GoCube Edge Full Pack / GoCube 2x2 / Rubik's
+  Connected / GoCube Bundle Pack / Rubik's Connected BOGO DEAL / GoCube Accessories' — the
+  manufacturer listing its entire product line on its own site. That is what RESEARCH_SPEC 3.6a's
+  collection check asks for, and being first-party it is stronger than the retailer prefix sweeps
+  that check usually gets. It was invisible to the breadth sweep in `npm run audit` purely as a
+  matter of WORDING: that sweep detects an enumeration by looking for 'prefix', 'enumerat',
+  '/collections/', 'catalogue structure' or 'CDX' in a source's notes, and a first-party
+  navigation capture is a catalogue enumeration while using none of those words. The fix belongs
+  in this record rather than in a looser regex — widening that pattern was tried the same day and
+  produced mostly false positives, since it also matches notes that merely MENTION CDX as a
+  research method. WHAT THE ENUMERATION SHOWS against the archive's three Particula models:
+  GoCube Edge and GoCube are both held; GoCube 2x2 is out of scope under RESEARCH_SPEC 2.4;
+  'Rubik's Connected' is filed under Rubik's rather than Particula; the Bundle Pack is a bundle
+  and Accessories are not puzzles. GoCube-X, which the archive holds, does NOT appear — consistent
+  with it being discontinued by this 2026-08-26 capture, and not evidence it never existed.
+  Tier 1, first-party. Confirms the 'GoCube Edge' name and product line
   persisted, still as the flagship 3x3 SKU, through this 2026-08-26 capture — over six years
   after getgocube-com-2019-basic-edge-skus first attests it on sale. The site's own nav also
   files 'Rubik's Connected' under the same 'GoCube' shop category as a commercial grouping;
