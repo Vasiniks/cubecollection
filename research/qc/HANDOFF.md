@@ -156,37 +156,43 @@ PREVIOUS SESSION (2026-09-11) — 35 commits from c78ad75
   THAT MADE 3.6a's THIRD REQUIRED CHECK: sweep the retailer's BRAND FACET (Shopify `vendor`
   in /products/<handle>.json + the brand collection page), not only URL slugs.
 
-ACTIVE AGENT LANES — ALL FIVE DIED ON A SESSION LIMIT, FOUR RELAUNCHED FROM 4873931
-  The first wave (A-E, base 78d0097) was killed simultaneously by an HTTP 429 session ceiling
-  ~9 minutes in. Every lane had COMMITTED its skeleton first, so nothing died silently. Full
-  recovery record: research/qc/agent-lane-recovery-2026-09-12.md.
-
-  LANE C IS DONE — recovered and FINISHED IN MAIN. check-escalations.mjs had ZERO test coverage
-  (hardcoded relative paths); it now resolves through CC_DATA_ROOT, has pass+fail fixtures under
-  tests/fixtures/*/research/qc/, and 4 selftest assertions. Rule 51 (ledger status vocabulary)
-  added on a CLEAN baseline — all 59 issues already valid. The reverse link (ledger -> report)
-  was MEASURED at 13 of 59 and DELIBERATELY NOT ENFORCED: a rule would fire on 46 of 59 forever
-  for structural reasons. Report: research/qc/p26-2-escalation-linkage.md.
-
-  RELAUNCHED (Sonnet 5, isolated worktrees, base 4873931), all told to COMMIT AFTER EVERY FINDING:
-    LANE A  P4-10 Ziina — packaging photography is now the priority avenue.
-    LANE B  P4-9 enumeration METHODOLOGY — three methods head-to-head, measured.
+ACTIVE AGENT LANES (wave 2/3; wave 1 was wiped by a session limit — see
+research/qc/agent-lane-recovery-2026-09-12.md)
+  RUNNING:
     LANE D  Provenance adversarial, READ-ONLY over data.
-    LANE E  DaYan depth — FIRST TASK is re-verifying the recovered GuHong V2 DIY kit source.
+    LANE F  GAN variant depth (18 of 40 GAN models bare).
+    LANE G  Vendor-facet RE-SWEEP with each retailer's REAL collection slug.
+    LANE H  ADVERSARIAL REVIEW of Lane A's Ziina conclusion — told to CHALLENGE it, not repeat it.
+  MERGED AND CLOSED:
+    LANE C  escalation linkage — finished in main. check-escalations.mjs had ZERO coverage; now
+            fixture-backed with 4 selftest assertions. Reverse link MEASURED at 13/59 and
+            DELIBERATELY NOT ENFORCED (a rule would fire on 46/59 forever).
+    LANE E  DaYan depth — 16 models swept CLEAN across 3 retailers (a documented negative, its
+            most valuable output). One P4-9 candidate: a DaYan Void Cube ("no center pieces",
+            so it fails the 4.2 separability test and cannot be a variant). On merge I corrected
+            its excerpt, which quoted Shopify `grams` as weights — those are SHIPPING weights.
+    LANE A  P4-10 Ziina — OUTCOME 4, UNRESOLVED, all five untried avenues worked. Packaging
+            photography did NOT resolve it (box logo below legibility even at 8x; all legible
+            text reads "ZIINA STAR"). NEW: a cubein.cn Ziina-vendor product ships in a
+            COMPLETELY UNBRANDED "SPEED CUBE" box — but the listing itself says "Retail packing
+            may vary", which I added as the strongest caution. It also caught and refused a
+            FABRICATED search claim ("CubeIn is the manufacturer").
+    LANE B  P4-9 enumeration methods — vendor facet (99 lines) vs category (96), 96 overlap,
+            3 facet-only, ZERO category-only. Isolated the mechanism: SpeedCubeShop SUPPRESSES a
+            "Backordered" listing from its category collection while still serving it via the
+            facet — a third mechanism, distinct from recency and discoverability.
+            CAUGHT A ONE-DAY-OLD MISS: "QiYi M Pro 3x3 V3", published 2026-09-11, absent from
+            all 261 adjudicated candidates.
+            AND CORRECTED MY OWN WORK: TheCubicle's QiYi slug is `qiyi-mofangge`, not `qiyi` —
+            /collections/qiyi returns ZERO while qiyi-mofangge returns 247 (57 typed 3x3). My
+            facet sweep ran on archive ids, so its "returned zero" list must NEVER be read as
+            "this retailer does not stock that brand". Lane G is re-running it properly.
 
-  ONE RECOVERED ARTEFACT IS DELIBERATELY NOT IN THE ARCHIVE. Lane E wrote a complete source for
-  `thecubicle-dayan-guhong-v2-diy-kit-2020` and I could not verify it — Wayback returned
-  "Internet Archive: Temporarily Offline" on both attempts. It is preserved VERBATIM in the
-  recovery report with the exact curl and the five strings to confirm. An unverified source does
-  not enter data/ on an agent's word.
-
-  COORDINATION RULE IN FORCE: no agent may touch research/qc/pass2-remediation-ledger.yml or
-  research/qc/HANDOFF.md. MAIN owns both; agents put ledger-bound text in their own reports and
-  main transcribes at merge. This is what stops parallel lanes conflicting on one file.
-
-  IF THIS SESSION RESET: `git worktree list`, then per worktree `git status`, `git log --oneline
-  -10`, `git diff`. Recover committed AND uncommitted work before relaunching. Resume only the
-  unfinished portion.
+  COORDINATION RULE: no agent may touch the ledger or this handoff. MAIN owns both; agents put
+  ledger-bound text in their reports and main transcribes at merge.
+  MERGE RULE, and it has caught something every time: verify the agent's checkable claims
+  yourself before merging. Lane E's grams, Lane A's JSON facts and Lane B's slug were all
+  re-fetched independently.
 
 MAIN-SESSION WORK SINCE THE RELAUNCH
   BREADTH: manufacturers with a recognised 3.6a sweep 23 -> 30; failing BOTH checks 13 -> 8;
