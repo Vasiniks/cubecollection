@@ -189,6 +189,21 @@ ACTIVE AGENT LANES (launched 2026-09-12 from base 78d0097, all Sonnet 5, isolate
              almost all of it was FALSE — SWEEP_EVIDENCE matches "CDX" in notes that merely
              mention CDX as a method. #7 was safe because it matches on HOST. Both exclusions
              are now commented as deliberate so nobody "fixes" them again.
+          6. TAXONOMY STRESS TEST — clean. 0 name collisions, 0 cross-manufacturer naming,
+             0 model/family mismatch. A 4th probe discarded 160/160 (generational names differ
+             by 1-2 chars BY DESIGN). The one real scare, qiyi-mp vs qiyi-m-pro, resolves:
+             2021 flagship 56mm vs 2023 budget 55mm, different families.
+          7. VARIANT SEMANTICS — found and CORRECTED MY OWN DEFECT from earlier today.
+             gan-356-maglev--uv-coated carried only `coating`, justified as "maglev is
+             inherited from the baseline variant". INHERITANCE RUNS MODEL -> VARIANT, NEVER
+             VARIANT -> SIBLING, and that model has specs: None. Rule 23 forbids restating the
+             MODEL's value, not a sibling's — I applied it one level too far. 5 more share the
+             shape (named in the report). WIDER PATTERN DOCUMENTED, NOT BULK-EDITED: 109 gaps
+             across 31 models where siblings record an axis another omits. Most are correct
+             (a non-MagLev baseline SHOULD lack maglev) but the archive uses `none` and
+             ABSENT interchangeably at the config layer while treating exactly that
+             distinction as load-bearing at the attestation layer. A convention decision for
+             whoever owns DATA_MODEL — escalated under P4-3, not acted on.
           5. LEDGER: P4-1 CLOSED (rule 18 already checks models directly; 34 -> 35 resolved).
              P4-13 half (2) resolved (the 50th-anniversary event exists AND is linked); half
              (1) re-pointed at P4-9 as an admission question.
@@ -196,6 +211,9 @@ ACTIVE AGENT LANES (launched 2026-09-12 from base 78d0097, all Sonnet 5, isolate
   COORDINATION RULE IN FORCE: no agent may touch research/qc/pass2-remediation-ledger.yml or
   research/qc/HANDOFF.md. MAIN owns both. Agents put ledger-bound text in their own reports and
   main transcribes it at merge. This is what stops five lanes conflicting on one file.
+
+  LANE STATE AT LAST CHECK: all five running, all five had COMMITTED their report skeletons
+  (verified via `git -C .claude/worktrees/agent-* log`), so no lane can die silently.
 
   IF THIS SESSION RESET: `git worktree list`, then for each lane worktree run `git status`,
   `git log --oneline -10`, `git diff`. Recover committed AND uncommitted work and the report
