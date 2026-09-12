@@ -227,6 +227,28 @@ matching collection page — SpeedCubeShop fronts "Ziina Star (34)". **Check the
 least one known product, and enumerate the brand collection, before recording a brand as
 enumerated.** A prefix sweep that returns nothing is evidence only about slugs.
 
+**Facet evidence cannot be archived, and must therefore be preserved in full.** *Added
+2026-09-12.* Check 1 above asks for an **archived** sweep; check 3 cannot be met the same way,
+and the difference is structural rather than a matter of effort. Storefront facet endpoints are
+parameterised API paths (`/collections/<brand>/products.json?limit=250`) and the Wayback crawler
+does not appear to collect them at all. **Measured:** all **34** facet/API-style source URLs in
+this archive carry `preservation_method: excerpt` and **not one** carries an `archive_url`; five
+of them were re-queried against the CDX API after the 2026-09-12 outage ended — TheCubicle's
+3x3, `qiyi-mofangge` and `mf8` collections, SpeedCubeShop's 3x3 collection, and GiiKER's
+`all` — and **every one returns an empty result set**, while a control query against an ordinary
+`/products/` page run in the same minute returned its capture normally.
+
+Two consequences, both binding:
+
+- A facet source **must** reproduce its enumeration in full in the `excerpt` rather than
+  quoting a sample. The excerpt is not a pointer to the evidence; it **is** the evidence, and
+  there will be no second chance to fetch it.
+- `preservation_method: excerpt` on a facet source is **correct and permanent**, not a
+  provisional state awaiting repair. Do not flag such a record for re-verification, and do not
+  read the missing `archive_url` as a weakness in it. The corresponding weakness is real but
+  different: the claim rests on a single observation by a single observer at a single moment,
+  and the `preservation_note` should say when that moment was.
+
 **Live-verify a `website` value before recording `/website` at `confirmed`.** A domain that was
 genuinely a manufacturer's own site in 2013 may today be expired, parked, or re-registered by
 an unrelated company, and a `confirmed` claim resting on an old capture silently becomes false.
