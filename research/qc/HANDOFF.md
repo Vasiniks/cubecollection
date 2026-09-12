@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  3e75ee9
+HEAD:  5a01f21
 DATE:  2026-09-11
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
@@ -13,8 +13,8 @@ CANONICAL COUNTS  (verify: for d in manufacturers families models variants sourc
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      498
-sources:       551
+variants:      499
+sources:       552
 
 VALIDATION
 npm run check:         0 errors, 27 advisory — EVERY ONE IS EXPLAINED, none is unattended:
@@ -119,7 +119,11 @@ DEPTH RESEARCH (one-config models 118 -> 113; variants 488 -> 496)
          gan-356-m-e--brainstorm-voyage, gan-356-m-e--lunar-new-year-2025,
          dayan-{guhong-v1,panshi-v1,zhanchi-v1}--diy-kit,
          moyu-weilong-gts--illusion (SERVICE variant, TheCubicle shell swap),
-         moyu-weilong-gts2--diy-kit (at `uncertain` — its page never says DIY).
+         moyu-weilong-gts2--diy-kit (at `uncertain` — its page never says DIY),
+         shengshou-fangyuan-original--gift-box (retailer calls it a variant itself).
+  VERIFIED COMPLETE: YJ MGC, QiYi, ShengShou Legend/Metallic and GAN flagships 12-15 are
+  already fully covered — checked systematically, not assumed. Only yj-mgc-sigma is
+  missing and that is the known P4-4 MODEL gap.
   NEGATIVE RESULTS, both recorded as sources so they are not re-derived:
    - GAN flagships 12-15 are ALREADY complete; every named LE was held.
    - ShengShou YuFeng's 4 retailer paths are 2 products (identical SKUs) — a rename.
