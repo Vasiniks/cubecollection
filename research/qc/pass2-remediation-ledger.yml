@@ -1821,6 +1821,38 @@ issues:
       establish the brand exists and sells a base speedcube; it is NOT enough to establish who
       manufactures it, which is what admission turns on. A failed fetch is not evidence of
       absence, so this records a sweep outcome, not a conclusion that no first-party site exists.
+      FIRST-PARTY / SPECIALIST SWEEP RUN 2026-09-11 AND IT CAME BACK EMPTY. Evidence preserved as
+      data/sources/ziina-first-party-sweep-2026-09.yml. Checked: the Speedsolving wiki under three
+      title forms (all 404), six candidate first-party domains (all no-connect),
+      ziina.en.made-in-china.com (404), and cubezz.com, a Chinese-market retailer, which returns
+      zero occurrences of the name.
+      ONE APPARENT LEAD WAS TESTED AND REJECTED. ziinacube.en.alibaba.com and ziina.en.alibaba.com
+      both return HTTP 200 and look like supplier storefronts. A control request to
+      nonexistent-brand-xyzzy.en.alibaba.com returns a page of the same ~90KB size: Alibaba serves
+      a generic page for ANY subdomain, so a 200 there establishes nothing. Recorded because the
+      200 is inviting and would have been easy to cite as first-party evidence.
+      THE STRUCTURED LEAD THAT LOOKED LIKE AN ANSWER AND IS NOT. TheCubicle's product JSON carries
+      "Manufacturer_Ziina" AND "Supplier_REX" - a supplier field distinct from the manufacturer
+      field, which is precisely the OEM/distributor axis this issue asks about. Tested against
+      known brands on the same retailer: GAN -> Supplier_GAN, Maru -> Supplier_Maru, MoYu -> no
+      supplier tag, but LEFUN -> Supplier_Wells. LeFun is an established manufacturer in this
+      archive and still shows a third-party supplier, so `Supplier_` records who the RETAILER BUYS
+      FROM, not who makes the product. "Supplier_REX" is a distribution fact and answers nothing
+      about manufacture. Neither REX nor Wells is a recorded manufacturer here.
+      ADJUDICATION - OUTCOME 4 (UNRESOLVED), THEREFORE OUTCOME 5 (ADMISSION NOT JUSTIFIED).
+      What IS established, from the earlier work: Ziina is a brand under which a BASE speedcube is
+      sold (not merely a decorator), corroborated at two independent retailers. What remains
+      unestablished is the only thing admission turns on: whether Ziina manufactures, or is a
+      house brand, or is an OEM rebrand of an existing manufacturer - and the third case would
+      make it a VARIANT layer under someone else rather than a 55th manufacturer. Creating a
+      manufacturer record now would assert the first case on evidence that cannot distinguish it
+      from the third.
+      The 51 Ziina product lines stay recorded as P4-9 adjudication candidates classified
+      `missing_manufacturer`. They are findable; they are not admitted.
+      AVENUES NOT YET TRIED, so the next attempt does not repeat this one: packaging photography
+      (Chinese manufacturers commonly print the maker on the box), Chinese-language search for a
+      native brand name, trademark registries, and 1688/Taobao supplier listings. This sweep was
+      English-language and Western-retailer-centric, which is itself the P4-8 bias pattern.
     counterevidence: >-
       Ziina's catalogue is dominated by printed novelty themes, and the archive's scope rules
       exclude novelties while admitting printed EDITIONS of real cubes - the LeFun precedent
