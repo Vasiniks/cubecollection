@@ -1066,6 +1066,42 @@ issues:
       endpoint returns unrelated products for the query, and none of particula.tech, gocube.com
       or getgocube.com is a Shopify store. The facet check works where a retailer exposes a
       collection under a guessable slug, and not otherwise.
+
+      2026-09-12 — THE BREADTH DETECTOR'S FALSE-NEGATIVE MODE IS A CLASS, not one case, and
+      clearing it took no new research at all. After Particula, a sweep over every manufacturer
+      with NO recognised 3.6a sweep looked for sources whose EXCERPT reads like a product
+      enumeration while their notes avoid the detector's vocabulary. Two more turned up and both
+      are genuine.
+
+      `cube4you-3x3x3-diy-speed-cube-2017` is Cube4you's OWN storefront 3x3x3 category page —
+      "3x3x3 (54)", with a manufacturer filter naming every brand it resells — and it states the
+      negative outright: "No further named 3x3 line (beyond this generic DIY Speed Cube) appears
+      on this category page." A first-party collection enumeration with a stated negative.
+
+      `speedsolving-wiki-eastsheen` is stronger still. It enumerates EastSheen's whole product
+      line — 2x2 Types A/C/E/M, 4x4 A/C/E/M/P, 5x5 A/C/E/M/P, Mini and Multi — and states flatly
+      that "East Sheen does not produce 3x3 cubes." A complete product listing containing no 3x3
+      is the strongest form of enumeration 3.6a can get: it does not merely fail to find more, it
+      establishes there is no more to find. Tier 4 and single-sourced, so recorded as
+      corroboration for a negative rather than proof of one.
+
+      TWO CANDIDATES WERE INSPECTED AND REJECTED, which is why the two above are trustworthy.
+      `thecubicle-yancheng-yan3-2020` says only that one product is "listed under TheCubicle's
+      own 3x3 navigation category" — category MEMBERSHIP of a single product, not an enumeration
+      of a range. `thecubicle-newisland-phoenix-2019` is a single product page titled "Phoenix".
+      Neither enumerates anything.
+
+      RUNNING TOTAL FOR THE DAY: manufacturers with a recognised sweep 23 -> 29, failing both
+      breadth checks 13 -> 8. GiiKER was closed by a genuinely new first-party enumeration and
+      MoYu by two new sweeps; Particula, Cube4you and EastSheen were closed by making the archive
+      say plainly what it already contained.
+
+      THE GENERAL LESSON, worth more than the number. A detector that identifies a research
+      METHOD by VOCABULARY will mis-sort every source whose author chose other words, in both
+      directions — it over-matched notes that merely mention CDX as a method, and it missed three
+      real enumerations that never used the word. Loosening the regex was tried and made the
+      false positives worse. Making each record state plainly what it contains is precise, true,
+      and costs one note.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven

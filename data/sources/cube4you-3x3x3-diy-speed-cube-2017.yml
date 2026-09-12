@@ -25,8 +25,20 @@ language: en
 region: US
 link_status: dead
 last_checked: "2026-09-03"
-reliability_note: "Manufacturer's own storefront selling its own house brand — tier 1 for the
-  product's own existence, naming, and basic specifications (size, material) per DATA_MODEL
-  §5.1's rule that manufacturer material is tier 1 for its own specifications. Superlative
-  copy ('it will turn well') is marketing, not treated as a specification claim."
+reliability_note: |-
+  THIS IS ALSO A COLLECTION ENUMERATION, recorded explicitly 2026-09-12 so the breadth sweep
+  can see it. The excerpt is Cube4you's OWN storefront 3x3x3 category page - '3x3x3 (54)',
+  with a manufacturer filter listing every brand it resells - and it states the negative
+  directly: 'No further named 3x3 line (beyond this generic DIY Speed Cube) appears on this
+  category page.' That is a first-party collection enumeration of the brand's whole 3x3 range,
+  which is what RESEARCH_SPEC 3.6a's collection check asks for. It was invisible to the
+  breadth sweep purely by WORDING: that sweep looks for 'prefix', 'enumerat', '/collections/',
+  'catalogue structure' or 'CDX' in a source's notes, and a category-page capture is an
+  enumeration while using none of them. The fix belongs in the record rather than in a looser
+  regex - widening that pattern was tried the same day and produced mostly false positives.
+  
+  Manufacturer's own storefront selling its own house brand — tier 1 for the product's own
+  existence, naming, and basic specifications (size, material) per DATA_MODEL §5.1's rule that
+  manufacturer material is tier 1 for its own specifications. Superlative copy ('it will turn
+  well') is marketing, not treated as a specification claim.
 status: sourced
