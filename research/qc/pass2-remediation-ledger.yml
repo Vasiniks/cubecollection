@@ -2411,6 +2411,29 @@ issues:
       having to remember it. Four selftest assertions guard the four fixed rules. Archive impact:
       none — warnings are unchanged at 10 r42 / 10 r18 / 4 r40 / 2 r27, which matches the
       measurement that no source is cited only from a disputed block today.
+
+      2026-09-12 — A DIFFERENT KIND OF MISS, found while adding the ZhanChi size DIY kits: an
+      assessment can record "no axis" while CITING a source whose title names the axis. The
+      baseline `dayan-zhanchi-50mm--standard` states that "no magnetic, coating, size,
+      stickered/stickerless or named-edition axis was documented by any source located", and
+      cites `speedcubeshop-dayan-zhanchi-size-diy-kits` — titled "DaYan ZhanChi 42mm and 50mm
+      3x3x3 DIY Kits". The source was read, cited, and its title not acted on. This is distinct
+      from the unchased-sweep-source class: nobody failed to look, they looked at the right
+      document and missed what it was called. Both size models now carry DIY-kit variants and
+      the baseline's note is amended in place rather than rewritten, so the miss stays visible.
+
+      MEASURED ARCHIVE-WIDE AND THE CLASS IS CLEAN. A probe over every still-bare baseline whose
+      note asserts no axis, checking each cited source's TITLE for an axis word (DIY, UV,
+      Maglev, Unstickered, Anniversary, Coated, Lite, Premium, Gift Box, Keychain and others),
+      returns ZERO. Validated against the known positive by reconstructing the pre-fix 50mm
+      record from git: the probe fires on it on both halves, so the zero is a real zero and not
+      a broken matcher.
+
+      DELIBERATELY NOT SHIPPED AS A SWEEP. It keys on the PROSE of an assessment note, so a
+      baseline written with different wording would be invisible to it and a future zero would
+      mean nothing. A check whose green is uninformative is worse than no check. The negative
+      and the method are recorded here instead, which is enough for a later researcher to re-run
+      it by hand if a second instance ever appears.
     recommendation: >-
       Resolve opportunistically when a pass touches those manufacturers, not as a dedicated
       effort. (3) needs one successful fetch. (2) needs a manufacturer statement about the magnet

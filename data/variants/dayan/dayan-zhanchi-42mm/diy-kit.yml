@@ -1,0 +1,32 @@
+# variant: dayan-zhanchi-42mm--diy-kit
+# Depth research 2026-09-12. The evidence for this was ALREADY IN THE ARCHIVE and already cited:
+# speedcubeshop-dayan-zhanchi-size-diy-kits is titled for these very products. See the note on
+# /edition/types.
+id: dayan-zhanchi-42mm--diy-kit
+entity: variant
+model_id: dayan-zhanchi-42mm
+name: "DaYan ZhanChi 42mm (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]
+    note: >-
+      "DIY Kit" is the retailer's product title — "DaYan ZhanChi 42mm 3x3x3 DIY Kit". No DaYan
+      first-party source for the name was found this pass.
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]
+    note: >-
+      An unassembled configuration of the same design, not a limited or commemorative edition,
+      and consistent with the ZhanChi, GuHong, PanShi, LingYun V2, LunHui and WeiLong DIY kits
+      the archive already holds.
+      WHERE THIS EVIDENCE WAS FOUND IS THE POINT. The source is not new — it has been in the
+      archive and cited by this model's own records. The 50mm sibling's baseline variant cites
+      it while stating that "no ... axis was documented by any source located", and the source
+      it cites for that is titled "DaYan ZhanChi 50mm 3x3x3 DIY Kit". An assessment can miss an
+      axis named in its own citation, which is a different failure from not having looked.

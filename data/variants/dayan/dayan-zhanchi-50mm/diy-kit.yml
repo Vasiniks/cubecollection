@@ -1,0 +1,29 @@
+# variant: dayan-zhanchi-50mm--diy-kit
+# Depth research 2026-09-12. Same provenance as the 42mm sibling: the evidence was already in
+# the archive, already cited by this model's own baseline variant.
+id: dayan-zhanchi-50mm--diy-kit
+entity: variant
+model_id: dayan-zhanchi-50mm
+name: "DaYan ZhanChi 50mm (DIY Kit)"
+scope_class: core
+edition:
+  types: [standard]
+  name: "DIY Kit"
+status: stub
+attestations:
+  /edition/name:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]
+    note: >-
+      "DIY Kit" is the retailer's product title — "DaYan ZhanChi 50mm 3x3x3 DIY Kit". The
+      preserved capture of this page carries the title and no further descriptive copy, so the
+      title is the whole of the evidence; it is enough to establish that the configuration was
+      sold and is not enough for anything else.
+  /edition/types:
+    confidence: probable
+    sources: [speedcubeshop-dayan-zhanchi-size-diy-kits]
+    note: >-
+      An unassembled configuration of the same design, not a limited or commemorative edition.
+      Recorded at `probable` rather than higher deliberately: unlike the 42mm sibling and the
+      other DIY kits in this archive, this page's capture contains no sentence pairing it with
+      an assembled version — only the product title does the work.
