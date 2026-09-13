@@ -1,0 +1,76 @@
+# source: thecubicle-shengshou-crazy-jelly-le-versions-selector-2026
+# ShengShou depth lane I (2026-09-12), resolving ledger P4-13's remaining half. Wayback returned
+# HTTP 504 throughout the prior attempt (recorded on P4-13 and on
+# thecubicle-shengshou-crazy-3x3-generations-2026), so the archived captures of the Jelly LE page
+# were never examined before now. web.archive.org's CDX API is working again as of this session
+# (control query against a known-archived URL, shengshou-crazy-3x3-v2, returned 4 real captures
+# before this fetch was attempted). This source is the archived capture PLUS a live corroborating
+# fetch of the sibling V2 page, both showing TheCubicle's own "Versions" cross-product selector.
+id: thecubicle-shengshou-crazy-jelly-le-versions-selector-2026
+entity: source
+kind: retailer
+title: "ShengShou Crazy 3x3 (Jelly LE) and V2 — TheCubicle's own 'Versions' selector"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/shengshou-crazy-3x3-jelly-le"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20260718045732id_/https://www.thecubicle.com/products/shengshou-crazy-3x3-jelly-le"
+excerpt: |-
+  **Jelly LE's own page** (archived capture, 2026-07-18): badges "NEW" and "LIMITED EDITION";
+  single purchase option "Transparent Stickerless" at $13.99 (compare-at $16.99). Body copy:
+  "ShengShou Crazy 3x3 (Jelly LE) - limited to 1400 units worldwide!"
+
+  The page carries TheCubicle's own "Versions" cross-product selector — a structured table this
+  retailer uses site-wide to group sibling generations/configurations of the same product line
+  (the same UI element already used as decisive evidence for `yj-mgc3-beta--limited-edition`'s
+  model-vs-configuration attachment). This page's own Versions table reads, verbatim, in order:
+
+    Versions
+    V1                                $15.99
+    V1 (Jelly Limited Edition)        $13.99  $16.99
+    V2                                $21.99
+
+  **Corroborating live fetch of the sibling V2 page** (https://www.thecubicle.com/products/shengshou-crazy-3x3-v2,
+  fetched live 2026-09-12 because the V2 page's archived captures all predate the Jelly LE's
+  2026-06-04 creation date and so could not show it): the identical Versions table appears there
+  too, independently confirming the same three-way grouping and the same "V1 (Jelly Limited
+  Edition)" label from the OTHER product's own page rather than a rendering artefact of the Jelly
+  LE page alone:
+
+    Versions
+    V1                                $15.99
+    V1 (Jelly Limited Edition)        $14.99  $16.99
+    V2                                $21.99
+
+  (The $1 price difference between the two captures, $13.99 vs $14.99, is an ordinary price
+  change between the 2026-07-18 archived Jelly LE capture and the 2026-09-12 live V2 fetch, not a
+  second product — both list the same compare-at $16.99 and the same "V1 (Jelly Limited Edition)"
+  label.)
+
+  THIS RESOLVES THE GENERATION-ATTACHMENT QUESTION LEFT OPEN BY
+  thecubicle-shengshou-crazy-3x3-generations-2026 AND LEDGER P4-13: the retailer's own version
+  grouping — the same mechanism this archive already treats as tier-2 first-party attachment
+  evidence — places the Jelly LE under V1, explicitly labelled "V1 (Jelly Limited Edition)", not
+  under V2. No page states a ring-piece count for the Jelly LE directly; the Versions-selector
+  label is the evidence, exactly as it was for yj-mgc3-beta.
+preservation_note: "Jelly LE excerpt taken from the archived Wayback capture (id_ form, tags
+  stripped) via `npm run wayback -- get https://www.thecubicle.com/products/shengshou-crazy-3x3-jelly-le 20260718`,
+  confirmed reachable this session after the prior outage. The V2 corroboration is a live fetch
+  (`curl` against the live page) because no archived V2 capture postdates the Jelly LE's own
+  creation; flagged here so a future pass can re-verify against an archive_url once Wayback
+  crawls a post-2026-06-04 V2 snapshot."
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer structured product data, corroborated across TWO of the three
+  sibling pages in the group (Jelly LE's own archived capture and V2's live page), both showing
+  the identical label. This is the SAME evidentiary mechanism (a retailer's own Versions-selector
+  label) already accepted at `probable` for yj-mgc3-beta--limited-edition's model attachment
+  elsewhere in this archive — not a novel inference rule invented for this record. Sufficient at
+  `probable` for the Jelly LE's attachment to shengshou-crazy-original (V1), not
+  shengshou-crazy-v2. Does NOT state a ring-piece count directly, so the underlying mechanism
+  claim on shengshou-crazy-original (8 pieces per ring) is not independently re-confirmed for
+  this specific SKU — only the retailer's own generation grouping is.
+status: sourced

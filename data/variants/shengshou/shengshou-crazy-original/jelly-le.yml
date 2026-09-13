@@ -1,0 +1,72 @@
+# variant: shengshou-crazy-original--jelly-le
+# ShengShou depth lane I (2026-09-12). Resolves ledger P4-13's remaining half and the open
+# question left by thecubicle-shengshou-crazy-3x3-generations-2026: which mechanism generation
+# (V1 8-piece ring or V2 9-piece ring) this limited edition is built on. TheCubicle's own
+# "Versions" cross-product selector, present on BOTH the Jelly LE's own page and the V2 page,
+# labels it "V1 (Jelly Limited Edition)" — the same retailer mechanism this archive already
+# treats as decisive model-attachment evidence for yj-mgc3-beta--limited-edition. Attached to
+# shengshou-crazy-original (V1), not shengshou-crazy-v2.
+id: shengshou-crazy-original--jelly-le
+entity: variant
+model_id: shengshou-crazy-original
+name: "ShengShou Crazy 3x3 (Jelly LE)"
+scope_class: reference_only
+edition:
+  types: [limited]
+  name: "Jelly LE"
+  limited:
+    is_limited: true
+    run_size: 1400
+colorway:
+  designation: "Jelly"
+  application: stickerless
+  body:
+    translucency: transparent
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: >-
+      TheCubicle's own product name is "ShengShou Crazy 3x3 (Jelly LE)" and its body copy states
+      "limited to 1400 units worldwide" — a quantified production-run claim, not a marketing
+      superlative (RESEARCH_SPEC 3.3), the same reading already applied to this exact figure in
+      thecubicle-shengshou-crazy-3x3-generations-2026's own reliability_note.
+  /edition/name:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /edition/limited/is_limited:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /edition/limited/run_size:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: '"limited to 1400 units worldwide" is a directly stated, specific figure, not an
+      estimate — recorded rather than left null, unlike a limited edition whose page states no
+      number.'
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: 'The product''s own parenthetical name, "(Jelly LE)".'
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+    note: 'The retailer''s single purchase option for this SKU is "Transparent Stickerless".'
+  /colorway/body/translucency:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-3x3-generations-2026]
+  /model_id:
+    confidence: probable
+    sources: [thecubicle-shengshou-crazy-jelly-le-versions-selector-2026]
+    note: >-
+      THE GENERATION-ATTACHMENT QUESTION, open since thecubicle-shengshou-crazy-3x3-generations-2026
+      and tracked as ledger P4-13: no product page states a ring-piece count for this SKU
+      directly. TheCubicle's own "Versions" cross-product selector — present on both this
+      product's own archived page (2026-07-18 capture) and independently on the live V2 sibling
+      page — labels this SKU "V1 (Jelly Limited Edition)", grouping it with V1 ($15.99) and
+      distinct from V2 ($21.99). This is the SAME evidentiary mechanism (a retailer's own
+      Versions-selector label) already accepted at `probable` for
+      yj-mgc3-beta--limited-edition's model attachment elsewhere in this archive, not a novel
+      inference invented for this record. A prior attempt's shipping-weight coincidence (123g
+      vs. a Gross Weight of 124.0g on the V2 model) was correctly identified as comparing two
+      non-comparable quantities and is NOT used here as evidence for or against this attachment.

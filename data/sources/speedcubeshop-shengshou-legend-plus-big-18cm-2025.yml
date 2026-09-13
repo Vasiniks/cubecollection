@@ -1,0 +1,58 @@
+# source: speedcubeshop-shengshou-legend-plus-big-18cm-2025
+# ShengShou depth lane I (Lane I, 2026-09-12). Found via a fresh, full, unscoped wayback CDX
+# `prefix` sweep of speedcubeshop.com/products/shengshou* run this session (774 distinct URLs;
+# the archive's prior speedcubeshop-shengshou-products-prefix-2026 source explicitly recorded
+# that an unscoped sweep "could not be enumerated in one pass at this session's rate limit" and
+# used narrower sub-prefixes instead — this sweep closes that gap). Preserved because it names a
+# THIRD ShengShou Legend size (180mm) beyond the archive's two existing Legend models
+# (shengshou-legend-original, ~56.5mm, and shengshou-legend-big, 70mm) and neither creates nor
+# is intended to create a model or variant — see the depth-lane report's escalation section.
+id: speedcubeshop-shengshou-legend-plus-big-18cm-2025
+entity: source
+kind: retailer
+title: "ShengShou Legend Plus Big 3x3 - 18cm — SpeedCubeShop product page"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/shengshou-legend-plus-big-3x3-18cm"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20250712130444id_/https://speedcubeshop.com/products/shengshou-legend-plus-big-3x3-18cm"
+excerpt: |-
+  Page title: "ShengShou Legend Plus Big 3x3 - 18cm | SpeedCubeShop".
+
+  Description, verbatim: "ShengShou Legend Plus Big 3x3 - 18cm is a fantastic decoration and a
+  fully functional speed cube! While the large size makes this cube harder to handle, the
+  turning is smooth, and the screw/spring core allows for corner cutting!"
+
+  Product Details table: "Type: 3x3", "Brand: ShengShou", "Magnets: None", "Size: 180 mm",
+  "Weight: 920 g", "Released: 2024-11-04". Single sold option: "Stickerless", $37.95.
+
+  180mm and 920g are both roughly 2.5x the archive's existing `shengshou-legend-big` (70mm,
+  the largest ShengShou Legend-line model currently on file). No source found connects this
+  product's mechanism, mould, or design lineage to either existing Legend model beyond the
+  shared "Legend" name and a stated "screw/spring core" (a generic adjustment-system class, not
+  a specific claim of shared tooling).
+preservation_note: "Live fetch of https://speedcubeshop.com/products/shengshou-legend-plus-big-3x3-18cm.json
+  returned HTTP 404 on 2026-09-12 (delisted since the 2025-07-12 capture); the Wayback capture
+  above resolved fully via `npm run wayback -- get`, unlike several other SpeedCubeShop captures
+  this pass which returned only site chrome. archive_url is a full, working id_ replay."
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-12"
+reliability_note: |-
+  Tier 2, first-party retailer product page with a structured spec table including an unusually
+  direct "Released: 2024-11-04" field (SpeedCubeShop's own Product Details schema, not
+  TheCubicle's "Added:" catalogue-ingestion artefact class — a different retailer, a differently
+  named field, and not one of the four documented artefact dates — but not promoted into a model
+  release date by this depth-research lane, which has no authority to edit model records).
+
+  MODEL-VS-VARIANT READING (DATA_MODEL §4.2): an 18cm/920g cube cannot be produced from either
+  existing Legend model's mould (56.5mm or 70mm) by choosing different parts, materials, or
+  treatment at assembly — the size difference is an order of magnitude greater than the
+  56.5mm-to-70mm jump that already justified splitting shengshou-legend-big into its own model
+  from shengshou-legend-original. This reads as a THIRD, larger design in the same naming
+  family, i.e. a candidate for a new `shengshou-legend` family model, not a variant of
+  `shengshou-legend-big`. THE TAXONOMY IS FROZEN; no model was created. Recorded here as
+  evidence for a future pass with model-creation authority. See
+  research/qc/shengshou-depth-lane-i.md for the escalation write-up.
+status: sourced
