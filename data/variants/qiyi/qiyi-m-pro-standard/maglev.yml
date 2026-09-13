@@ -12,6 +12,7 @@ edition:
   designation: "MagLev"
 config:
   maglev: maglev
+  weight_g: 80.0
 status: stub
 attestations:
   /edition/types:
@@ -24,3 +25,16 @@ attestations:
     confidence: probable
     sources: [thecubicle-qiyi-m-pro-3x3-maglev-product]
     note: "'a maglev tension system' is TheCubicle's own direct description."
+  /config/weight_g:
+    confidence: probable
+    sources: [thecubicle-qiyi-m-pro-3x3-maglev-product]
+    note: >-
+      SPEC-ADVERSARIAL LANE J REPAIR. This variant carried NO weight_g override and was
+      silently inheriting the base model's 76.0g (qiyi-m-pro-standard's own non-magnetic-page
+      figure) — wrong for this configuration. This source's own spec table states "Item Weight:
+      80.0g" (Dimensions 55.0mm, matching this line's size; "Gross Weight: 143g" on the same
+      table is the packaged figure, refused under the rule-45 class). The model record's own
+      /specs/weight_g note had already identified this exact figure ("the MagLev figure belongs
+      to that configuration and is left for a variant that records it") during audit sweep #14
+      on 2026-09-12, but no variant was ever updated to record it — the evidence was preserved
+      and even cited in prose, but never written into config. Recorded here to close that loop.
