@@ -419,3 +419,73 @@ is the "cries wolf" failure this project has refused three times now.
 
 Recorded as a measurement instead: **236 dated attestations, 30 coincide with a capture, 11
 survive the qualifier filter, 0 are defects.**
+
+# P4-7, the test it asked for — run 2026-09-13 (ninth sweep)
+
+Ledger **P4-7** (`needs_human_decision`) asks a question the seventh sweep stepped around: is
+TheCubicle's `2018-09-11` worthless as a date, or only as a **release** date? It may still
+evidence **catalogue presence** at migration, which would make "existed by 2018-09" a legitimate
+and tighter bound than any capture provides. Its recommendation names a specific, cheap test.
+
+That test has now been run. **The status stays `needs_human_decision`** — the recommendation
+explicitly forbids resolving this by picking the reading that yields more data, and flipping the
+standing rule is a methodology change. What follows is evidence.
+
+## Strand 1 — the distribution separates batch stamps from per-product dates
+
+Every `Added:` value quoted in a source **excerpt** (excerpts only, so this reads pages' own
+spec fields and not commentary *about* artefacts): **42 distinct values**.
+
+| value | occurrences |
+|---|---|
+| 2018-09-11 | **31** |
+| 2018-11-07 | 7 |
+| 2018-10-14 | 6 |
+| every one of the other 37 values, spread across 2019–2026 | **1–4** |
+
+A batch stamp and a per-product date do not look alike in this distribution.
+
+## Strand 2 — later products carry their own dates
+
+Two products dated independently of TheCubicle, checked against archived captures of their
+TheCubicle pages:
+
+- **GAN 11 M Pro** — dated 2020 by GAN's own technology-history page (tier 1, already in this
+  archive as `gancube-cn-core-technology-history`) — carries **`Added: 2020-09-30`**.
+- **GAN356 i Carry 2** — carries **`Added: 2024-01-12`**.
+
+Neither carries the stamp.
+
+*A probe error worth recording:* the first extractor returned "no Added field" for both, which
+read as a clean negative result. TheCubicle puts the value in a `<td>` **after** a
+`<th>Added</th>`, with markup between, so a naive `Added.{0,40}date` regex matches nothing. The
+extractor was then validated against known-stamped controls (`mojue-m3`, `kungfu-qinghong-3x3`)
+before any conclusion was drawn from it — both returned `2018-09-11`, as they must.
+
+## Strand 3 — the direct test, and it finds none
+
+Of the 18 stamped products, **seven** carry dating evidence from a non-TheCubicle source, and
+every one of those dates is **before 2018**:
+
+| product | independent evidence |
+|---|---|
+| qj-candy-3x3, qj-pillowed-3x3 | qjcube.com's own catalogue, capture **2012-10-26** |
+| mohuanshousu-chufeng, senhuan-mars | Cubelelo, **2016** captures |
+| guoguan-yuexiao / -pro | Cubezz **2016** / **2017** |
+| mojue-m3 | Cubezz, capture **2017-04-02** |
+
+**Not one stamped product is independently dated after 2018-09-11.** That is exactly the sweep
+P4-7's recommendation says would settle it *for* the bound. These three source records were
+opened and read rather than inferred from their ids, which name years and could easily have been
+misleading.
+
+## What is still missing
+
+Stated so this is not read as stronger than it is: those seven independent dates are themselves
+**earliest-capture bounds**, not manufacturer launch statements. They establish "existed by" and
+not "launched in". They cannot be *contradicted* by the stamp, but neither do they prove it marks
+migration — only that nothing contradicts it. **A single stamped product with a first-party
+launch date after 2018-09-11 would overturn the whole reading.**
+
+No record was changed. `gan-354-m` stands as it is, and rule 52's threshold was deliberately
+placed at the intersection of both readings so the guard does not take a side.

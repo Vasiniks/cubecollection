@@ -2007,6 +2007,45 @@ issues:
       which is consistent with the stamp marking only what was present at migration; but no
       product known to have launched after 2018-09-11 has been checked for the stamp, which is
       the test that would actually settle it.
+      2026-09-13 - THE TEST THIS ISSUE ASKED FOR HAS NOW BEEN RUN, and every strand of it
+      points the same way. The status stays needs_human_decision because the recommendation
+      explicitly forbids resolving this by picking a reading, and because flipping the standing
+      rule is a methodology change that is not mine to make. What follows is evidence, not a
+      decision.
+      STRAND 1, THE DISTRIBUTION. Every "Added:" value quoted in a source EXCERPT was collected
+      (excerpts only, so this reads pages' own spec fields and not commentary about artefacts).
+      42 distinct values. The three known artefacts dominate absolutely - 2018-09-11 x31,
+      2018-11-07 x7, 2018-10-14 x6 - and EVERY ONE of the other 37 values occurs between 1 and 4
+      times, spread across 2019-2026. A batch stamp and a per-product date look completely
+      different in this distribution, and 2018-09-11 is unambiguously the former.
+      STRAND 2, LATER PRODUCTS CARRY THEIR OWN DATES. Two products whose launches are dated
+      independently of TheCubicle were checked directly against archived captures of their
+      TheCubicle pages. GAN 11 M Pro - dated 2020 by GAN's own technology-history page, tier 1,
+      already in this archive as gancube-cn-core-technology-history - carries "Added: 2020-09-30".
+      GAN356 i Carry 2 carries "Added: 2024-01-12". Neither carries the stamp.
+      STRAND 3, AND THIS IS THE DIRECT TEST. Of the 18 stamped products, seven carry dating
+      evidence from a NON-TheCubicle source, and every one of those dates is BEFORE 2018:
+      qj-candy-3x3 and qj-pillowed-3x3 (qjcube.com's own catalogue, capture 2012-10-26),
+      mohuanshousu-chufeng and senhuan-mars (Cubelelo, 2016 captures), guoguan-yuexiao (Cubezz
+      2016, Pro 2017), mojue-m3 (Cubezz, capture 2017-04-02). NOT ONE stamped product is
+      independently dated after 2018-09-11. That is precisely the sweep this issue's
+      recommendation says would settle it FOR the bound.
+      WHAT IS STILL MISSING, stated so nobody reads this as stronger than it is: the seven
+      independent dates are themselves earliest-capture bounds rather than manufacturer launch
+      statements, so they establish "existed by" and not "launched in". They cannot be
+      contradicted by the stamp, but they also cannot prove the stamp marks migration - only
+      that nothing contradicts it. A single stamped product with a first-party launch date after
+      2018-09-11 would still overturn the whole reading.
+      NO RECORD WAS CHANGED on the strength of this, and gan-354-m stands as it is.
+      A RELATED GUARD WAS ADDED and it deliberately does NOT take a side here. Lint rule 52
+      forbids a date that prefix-matches a known artefact from being held at `reported` or
+      better when a cited source carries that artefact. That is the INTERSECTION of both
+      readings of this issue - under the strict reading such a date should not be used at all,
+      and under the permissive reading it is a weak bound and belongs at `uncertain`. Both agree
+      it cannot be asserted as fact. The rule finds zero violations on the real archive today and
+      exists as a regression guard. It is scoped to the four DEMONSTRATED artefact values and
+      not to the "Added:" field in general, which is why it correctly does not fire on
+      pbcube-wr, whose "Added: 2026-08-25" is a genuine per-product date.
     recommendation: >-
       Do NOT resolve this by picking the reading that yields more data. The test is specific and
       cheap: find a product whose launch is independently dated AFTER 2018-09-11 and check

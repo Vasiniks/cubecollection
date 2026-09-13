@@ -420,6 +420,24 @@ for (const [modelId, list] of variantsByModel) {
 // out loud, is legitimate and all four real cases do exactly that. Asserting it as `reported` or
 // better is not, because the field does not report a release date at all. Advisory: the honest
 // fix is to lower the confidence and say what the date actually rests on.
+//
+// THIS RULE DOES NOT SETTLE LEDGER P4-7, and the threshold is chosen so that it cannot. That
+// issue asks whether the 2018-09-11 stamp is worthless as a date or only as a RELEASE date --
+// whether it can still bound CATALOGUE PRESENCE. The standing rule says discard it outright,
+// "not even as a bound"; gan-354-m keeps it as an explicit weak upper bound at `uncertain` and
+// says so. This rule sits at the INTERSECTION of the two readings: under the strict one such a
+// date should not be used at all, under the permissive one it is a bound and belongs at
+// `uncertain`, and BOTH agree it cannot be asserted as fact. So `reported` or better is the
+// only thing forbidden here. Evidence gathered 2026-09-13 and recorded under P4-7 leans toward
+// the migration-marker reading -- no stamped product is independently dated after 2018-09-11,
+// and later products carry their own distinct Added: values -- but the issue stays
+// needs_human_decision and no record was changed on the strength of it.
+//
+// SCOPED TO THE FOUR DEMONSTRATED VALUES, not to the "Added:" field in general. That is what
+// keeps pbcube-wr correct: its "Added: 2026-08-25" is a plausible per-product date consistent
+// with the page's own [Pre-Order] status, and the record says so. Audit sweep #6 covers the
+// same class from the other direction, by prose, and its comment explains why a rule could not
+// be built that way -- most records that NAME an artefact date do so in order to REFUSE it.
 {
   const ARTEFACTS = ['2018-09-11', '2018-11-07', '2018-10-14', '2018-07-16'];
   const OVERCLAIM = new Set(['confirmed', 'probable', 'reported']);
