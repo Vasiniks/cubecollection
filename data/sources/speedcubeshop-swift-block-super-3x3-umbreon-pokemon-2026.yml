@@ -1,0 +1,54 @@
+# source: speedcubeshop-swift-block-super-3x3-umbreon-pokemon-2026
+# P26-3 (Lane G, slug/facet re-sweep). Found via SpeedCubeShop's search-suggest API (a vendor-
+# facet check per RESEARCH_SPEC 3.6a check 3, not a collection-slug sweep — Swift Block has no
+# dedicated collection at SpeedCubeShop at all; the archive's existing swift-block-super-maglev
+# model was sourced entirely from GAN's own gancube.com pages). Tier 2, live-query.
+id: speedcubeshop-swift-block-super-3x3-umbreon-pokemon-2026
+entity: source
+kind: retailer
+title: "SpeedCubeShop product page — Swift Block Super 3x3 (Magnetic, MagLev) - Umbreon, Pokémon Series"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/products/super-3x3-magnetic-maglev-umbreon-pokmon-series"
+preservation_method: excerpt
+excerpt: |-
+  Queried live 2026-09-12 via `/products/super-3x3-magnetic-maglev-umbreon-pokmon-series.json`.
+  Shopify structured fields: vendor "Swift Block", product_type "3x3", tags include
+  "Backordered", "mag lev", "maglev", "Magnetic". published_at 2026-07-09 (a listing date, not
+  a release date).
+
+  Body copy: "The Swift Block Super 3x3 (Magnetic, MagLev) - Umbreon, Pokémon Series pairs a
+  genuine Pokémon collaboration with a dual magnetic ring MagLev core, giving you a
+  flagship-feel speed cube built around a nighttime Umbreon theme... 8-level GES tuning, and a
+  dedicated Umbreon center cap... An Umbreon-themed 3x3 with a dark-color pieces set and a
+  custom Umbreon center block — a collector-worthy cube that's still a real speed cube, not a
+  display piece." "Specs at a glance: Type: 3x3 speed cube / Magnet system: Magnetic, MagLev,
+  76-point magnetic layout with omnidirectional core / Tuning: 8-level GES elasticity system /
+  Size: 55mm x 55mm x 55mm / Weight: 71g / Material: Plastic / Finish: Stickerless / Theme:
+  Pokémon Series — Umbreon, with themed center block and magnetic capsules."
+
+  The stated size (55mm) and weight (71g, from the body-text "Specs at a glance" section — NOT
+  the Shopify variant `grams`/`weight` fields, which read 84g and are refused as a shipping
+  figure per rule 45) are IDENTICAL to the archive's existing `swift-block-super-maglev` model
+  specs (55mm / 71g, sourced from gancube-swift-block-super-maglev-specifications), and "dual
+  magnetic ring" / "MagLev" / "8-level GES" tuning match that model's description almost
+  verbatim. This is read as the same model in a Pokémon-licensed colourway/collaboration
+  edition, not a new model — the base mechanism claims are identical to the already-sourced
+  first-party description, only the theme/colourway and center-cap decoration differ.
+
+  Product id 7755787567217, created_at 2026-07-09. No archive.org capture obtained (see
+  preservation_note) — this excerpt is the sole preservation.
+preservation_note: >-
+  Live Shopify product JSON and page body only. RE-CHECKED 2026-09-12 after the Internet
+  Archive's CDX API recovered: this URL returns an EMPTY capture set, while a control query
+  against a known-archived product page in the same minute returned its capture normally. The
+  page has never been archived, so `preservation_method: excerpt` is permanent here rather than
+  provisional, and the excerpt is the preservation. Nothing further to retry.
+accessed: "2026-09-12"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-12"
+reliability_note: "Tier 2, live retailer query, single source. Corroborates rather than
+  contradicts the existing tier-1 GAN-site specs for the base model; the collaboration/edition
+  facts (Pokémon, Umbreon) are stated only here."
+status: sourced

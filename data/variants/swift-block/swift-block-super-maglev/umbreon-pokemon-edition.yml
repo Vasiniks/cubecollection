@@ -1,0 +1,33 @@
+# variant: swift-block-super-maglev--umbreon-pokemon-edition
+# P26-3 (Lane G). A Pokémon-licensed colourway/collaboration edition of the existing
+# swift-block-super-maglev model, found via a SpeedCubeShop vendor-facet search (Swift Block has
+# no dedicated collection at either TheCubicle or SpeedCubeShop; this model's base record rests
+# entirely on GAN's own gancube.com pages, which do not mention this edition). Stated size
+# (55mm) and weight (71g, body-text "Specs at a glance", not the Shopify shipping `grams` field)
+# match the base model exactly, so this is read as a colourway/collaboration option of the same
+# design, not a new model — per DATA_MODEL §4.2 a licensed decoration is squarely a variant
+# axis. `collaboration_with` is left empty because Pokémon is a licensed entertainment property,
+# not a person or manufacturer this schema can reference — same treatment as the archive's
+# existing gan-i-carry-4--minions-edition variant.
+id: swift-block-super-maglev--umbreon-pokemon-edition
+entity: variant
+model_id: swift-block-super-maglev
+name: "Swift Block Super 3x3 (Umbreon, Pokémon Series)"
+scope_class: core
+edition:
+  name: "Umbreon, Pokémon Series"
+  types: [collaboration]
+  collaboration_name: "Pokémon"
+colorway:
+  designation: "Umbreon, Pokémon Series"
+status: stub
+attestations:
+  /edition/collaboration_name:
+    confidence: probable
+    sources: [speedcubeshop-swift-block-super-3x3-umbreon-pokemon-2026]
+    note: "'Pairs a genuine Pokémon collaboration' / 'Theme: Pokémon Series — Umbreon' — a
+      single tier-2 retailer source, per rule 9 held at probable rather than confirmed."
+  /colorway/designation:
+    confidence: probable
+    sources: [speedcubeshop-swift-block-super-3x3-umbreon-pokemon-2026]
+
