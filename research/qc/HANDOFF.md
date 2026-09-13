@@ -5,42 +5,98 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  d76c892  (third window; see git log)
-DATE:  2026-09-12
+HEAD:  8378e4d   (window 3; 21 commits from e286e3f~1)
+DATE:  2026-09-13
 
 CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
                    find data/$d -name '*.yml' | wc -l; done)
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      522
-sources:       592
+variants:      525
+sources:       597
 events:        4
 
 VALIDATION
-npm run check:         0 errors, 30 advisory — EVERY ONE EXPLAINED:
-                        14 r18  genuine minis and oversized cubes. 10 pre-existing; FOUR ARE NEW
-                                AND ALL FOUR ARE CORRECT — qiyi-qimeng-plus (90mm AND 262g, a
-                                9cm cube) and qiyi-warrior-plus (188mm AND 981g, 18.8cm, "use it
-                                as furniture"). NOTE IT IS FOUR, NOT TWO: each oversized cube
-                                raises a warning for its size AND for its mass, because both
-                                were recorded from the same verified table so a reader meeting
-                                the mass sees the dimension beside it. Several commit messages
-                                in window 2 said "26 -> 28" — that was my arithmetic slip
-                                (14+10+4+2 = 30) and this line is the correct figure.
+npm run check:         0 errors, 30 advisory — baseline UNCHANGED all window. Breakdown:
+                        14 r18  genuine minis and oversized cubes (40mm/42mm/45mm/15mm minis;
+                                qiyi-qimeng-plus 90mm+262g; qiyi-warrior-plus 188mm+981g). Each
+                                oversized cube raises TWO — one for size, one for mass.
                         10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
                                 citations where two captures ARE the claim
                          4 r40  model-predates-family — P3-D2, needs human decision
-                         2 r27  Rubik's Phantom/Impossible `core` + `not_legal`; reclassifying
-                                is a frozen-taxonomy call, escalated under P4-12
+                         2 r27  Rubik's Phantom/Impossible `core` + `not_legal` — P4-12
 npm run audit:         14 sweeps, advisory only
-npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 unmatched
-npm run catalogue-gap: offline by default; --fetch to query three retailers.
-                       --fetch NOW: 272 unmatched lines / 54 warnings (was 275 / 57 before
-                       the P4-9 alias repair — the 3-line drop is exactly the intended one)
-npm run selftest:      every check behaved as specified
+npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 dangling
+                       "43 reports with escalation language and no block" is VOCABULARY, not
+                       lost findings — adjudicated, see below. Do not re-panic over it.
+npm run catalogue-gap: --fetch now 272 unmatched / 54 warnings (was 275 / 57)
+npm run selftest:      every check behaved as specified, incl. both rule-52 branches
+RULES:                 next free lint rule number is 53 (52 added this window)
 
-LEDGER: 34 resolved / 16 open / 9 needs_human_decision (of 59)
+LEDGER: 35 resolved / 15 open / 9 needs_human_decision (of 59)
+
+SESSION 2026-09-12/13, WINDOW 3 — agent recovery, P4-9 alias mechanism, rule 52, P4-7 evidence
+
+  AGENTS: ALL DEAD, AND DO NOT RELAUNCH BEFORE 4pm AMERICA/TORONTO. Lanes G/H/I/J were all
+  killed by a Sonnet SESSION limit (HTTP 429, "resets 4pm"). A new agent launched before that
+  reset will die immediately. Worktrees inspected and everything valuable is MERGED:
+    F (GAN depth)        merged e286e3f — 5 MagLev missing-axis defects + 2 slug leads closed
+    I (ShengShou depth)  merged — Jelly LE resolved, Legend 18cm escalation, 13 negatives
+    J (spec adversarial) merged — 3 wrong-configuration weights fixed, 5 classes swept clean
+    G (slug/facet)       uncommitted work recovered by hand — Umbreon edition + its source
+    H (Ziina challenge)  SKELETON ONLY, nothing recoverable. P4-10 still outcome 4, unresolved.
+  Lane worktrees may now be pruned; nothing unmerged remains in them.
+
+  P4-9 GAINED A FOURTH MECHANISM. Alongside recency, discoverability and stock suppression:
+  the archive HOLDS the model under a name no retailer uses. 167 of 269 models carry no aliases
+  and catalogue-gap matches on names AND aliases, so these surface as false misses inside the
+  "recency failure" bucket.
+    REPAIRED: moyu-weilong-super <- "MoYu Super WeiLong"; moyu-weilong-v9 <- "MoYu WeiLong
+      WRM V9" / "WR M V9". Both evidenced by sources ALREADY BOUND to the record.
+    REFUSED: the M-vs-non-M pairs (yuxin-little-magic-v2/v3, yj-yulong-v2-m) — both makers sold
+      magnetic and non-magnetic versions, so the absent "M" may be a different product.
+    RULE, reusable: an alias is admissible iff (a) token multiset identical modulo word order,
+      or (b) a source already bound to that model carries the retailer name verbatim.
+    CONTROLLED BOTH WAYS: 275->272 unmatched AND WeiLong V10 still reported missing — the
+      generation guard refused to let a V9 alias absorb it.
+    ARCHIVE-WIDE: 467 bound retailer titles swept, ZERO further instances.
+    Report: research/qc/p4-9-alias-blindness-2026-09-12.md
+
+  WAYBACK IS BACK (CDX 200; /wayback/available still 429s — use CDX). Outage queue cleared:
+    UPGRADED to archive_url: thecubicle-gan12-ui-maglev-powerpod-2026-edition
+    NEVER ARCHIVED, flags resolved permanently: the DaYan Void page, the ESCube vendor facet,
+      and lane G's Umbreon page. Each confirmed with a control query in the same minute.
+    RESEARCH_SPEC 3.6a now states that FACET evidence cannot be archived at all — measured,
+      34/34 facet URLs are excerpt-only and 5/5 return empty from CDX. Facet excerpts must
+      reproduce the enumeration IN FULL; `excerpt` there is permanent, not provisional.
+
+  RULE 52 (new): a date may not rest on a catalogue-ingestion artefact above `uncertain`.
+    Zero live violations — that is why it is a rule: the class cost real adjudication once.
+    Threshold is the CONFIDENCE, not the dependence. Fixtures zz-added-date (fires) and
+    zz-ok-added-date (spared) cite the SAME source so confidence is the only variable.
+
+  P4-7 — THE TEST IT ASKED FOR WAS RUN, ISSUE LEFT OPEN ON PURPOSE. Three strands all point to
+  2018-09-11 being a migration stamp that CAN bound catalogue presence: the distribution
+  (31/7/6 vs 1-4 for all 37 other values), later products carrying their own Added: dates
+  (GAN 11 M Pro 2020-09-30), and no stamped product independently dated after it (7 of 18 have
+  independent dates, all pre-2018). Still missing: those 7 are earliest-capture bounds, so one
+  stamped product with a first-party post-2018 launch date would overturn it. No record changed.
+
+  P26-2 — the "43 reports with escalation language and no block" number was adjudicated, not
+  enforced. 36 of 43 predate the block convention; of the 7 since, zero are lost findings. The
+  16 naming no ledger id are vocabulary: a quoted commit message, "flagged for the main session"
+  (a write-lane handoff), and escalations recorded in record headers. No rule added.
+  ONE ITEM FOR A HUMAN: pass3-escalation-valk.md documents E-VALK-1 and that id is in no ledger.
+
+  SWEPT CLEAN (negative results, all recorded rather than discarded):
+    crawl-date dating — 30 of 236 coincide with a capture, 11 survive the qualifier filter,
+      0 defects. The discriminator is `qualifier: before`. No rule: legitimate uses dominate.
+    name-asserted config axes — 21 gaps archive-wide, 0 are the lane-F defect class. Verified
+      with a CONTROL: the same probe run against 0040c5b flags exactly lane F's 5 known defects.
+    lane J's "left for a variant" class — only 2 models use that language and both figures are
+      correctly placed (59.9g really is the Valk 3 Mini's, and that model records it).
+
 
 SESSION 2026-09-12, WINDOW 3 — recovery after a session-limit kill, then P4-9
 
@@ -274,37 +330,49 @@ OPEN CRITICALS
          registries, 1688/Taobao. ziina.com is a UAE PAYMENTS COMPANY — never cite it.
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
-NEXT ACTION
-  1. DEPTH RESEARCH, continue. Best remaining leads, all from thecubicle-moyu-prefix-2026
-     and already enumerated in its excerpt: moyu-weilong-wrm-v9-* (4 config paths vs the 4
-     variants v9 already has — check for a 5th, "ball-core-uv-special-edition"),
-     — THOSE ARE NOW DONE (v9 5th config, wr-m-2021 lite, moyu-ai magnetic;
-     rs3-m-2020-uv was already held; gts3-m-le has NO CDX capture).
-     REMAINING NO-SWEEP MANUFACTURERS: particula 28, mf8 26, giiker 17, guoguan 16.
-     REMAINING ONE-PUBLISHER MANUFACTURERS (all TheCubicle, no first-party source):
+NEXT ACTION   (ordered; each is startable cold)
+
+  0. AGENTS: the Sonnet session limit resets 4pm America/Toronto. Do NOT launch a specialist
+     lane before then — it dies on the first call. Main-session work below needs no agent.
+     When agents are available again, the two lanes with unfinished scope are:
+       H — the Ziina adversarial challenge (P4-10). It committed a SKELETON ONLY; its whole
+           scope is unrun. Untried avenues: Chinese-language sources (Taobao/1688/Tmall),
+           trademark and business-registry records, owner photos of packaging and manuals,
+           moulded manufacturer marks. NEVER cite ziina.com — UAE payments company.
+       G — the slug/facet re-sweep (P26-3). Its Umbreon find is merged; the systematic
+           collection-slug-vs-manufacturer-id mismatch survey across all 54 manufacturers
+           is NOT done. The known severity-3 case is TheCubicle filing QiYi under
+           /collections/qiyi-mofangge.
+
+  1. LANE I LEFT ONE ESCALATION UNADJUDICATED: "ShengShou Legend Plus Big 3x3 - 18cm"
+     (180mm, 920g), found by an unscoped SpeedCubeShop CDX prefix sweep. It fails the
+     DATA_MODEL 4.2 tooling test against both existing Legend models, so it is a MODEL
+     candidate, and the taxonomy is frozen — the admission decision is the user's. Evidence
+     is preserved at data/sources/speedcubeshop-shengshou-legend-plus-big-18cm-2025.yml.
+     Note it would also raise two rule-18 advisories (size AND mass) if ever admitted.
+
+  2. P4-9 ALIAS MECHANISM, the part deliberately left undone. The two M-vs-non-M pairs were
+     REFUSED for want of evidence: yuxin-little-magic-v2 ("YuXin Little Magic M V2" vs the
+     catalogue's "Little Magic 3x3 V2"), yuxin-little-magic-v3, yj-yulong-v2-m. Settling any
+     one needs a source showing whether the maker sold a non-magnetic version under that
+     exact name. Each resolved pair removes a false gap from catalogue-gap's miss list.
+
+  3. DEPTH RESEARCH. Remaining no-sweep manufacturers: particula 28, mf8 26, giiker 17,
+     guoguan 16. One-publisher manufacturers (all TheCubicle, no first-party source):
      lefun 34, x-man-design 27, fanxin 13, newisland 9, cubestyle 5, guojia 5, mefferts 3,
-     pbcube 3 — a first-party source for any of these is worth more than a variant.
-     Sweep #14's weight queue is worked down to 8 (from 40) and
-     the remainder are the hard ones. Sweep #12's remaining leads are mostly P4-9 MODEL
-     layer = frozen. Best untouched targets are the bare families: yj-mgc 7, dayan-zhanchi,
-     witeden-mixup 4, yj-guanlong 4, dayan-bermuda 4, qiyi-warrior 4.
-  2. DEPTH RESEARCH, continue. One-config models are 106 (was 112 at session start).
-     REMAINING SWEEP-12 LEADS, triaged: gan356-m-e / gan356-maglev on gancube.com are
-     FIRST-PARTY pages for models now resting on retailers — best provenance value.
-     gan356-me-uv-...-10th-anniversary (me-v2 has uv-coated, no anniversary).
-     gan12-ui-maglev powerpod x2 — likely BUNDLES, adjudicate and record the rejection.
-     gan356-i-carry-2-uv-...-10th-anniversary — i-carry-2 already has BOTH separately.
-     The rest of sweep 12's 20 thecubicle-3x3-collection leads are P4-9 MODEL layer = frozen. Ranked bare families,
-     largest first: yj-mgc 7, dayan-zhanchi 5, witeden-mixup 4, yj-guanlong 4,
-     dayan-bermuda 4, qiyi-warrior 4. DaYan is the largest manufacturer gap (21 of 28
-     models bare) and the most historically significant. Sweep #12's remaining leads are
-     now trustworthy — its DaYan entry is `thecubicle-dayan-per-family-product-urls-2026`
-     (2 leads incl. speedcubeshop-dayan-zhanchi-size-diy-kits, which may cover 42mm/50mm
-     DIY kits). RE-TEST ANY "no capture" NOTE BEFORE BELIEVING IT.
-  2. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens. One-config models are 112. Run `npm run audit` sweep #12 first;
-     it names the leads and now excludes ones already rejected.
-  2. P4-12 items (1),(3),(4),(5),(6) — batch adjudication when the taxonomy opens.
-  3. 75 models rest on <=1 source AND <=1 variant — the thinnest records.
+     pbcube 3 — a FIRST-PARTY source for any of these is worth more than another variant.
+     Bare families, largest first: yj-mgc 7, dayan-zhanchi 5, witeden-mixup 4, yj-guanlong 4,
+     dayan-bermuda 4, qiyi-warrior 4. DaYan remains the largest and most historically
+     significant manufacturer gap.
+
+  4. P4-12 items (1),(3),(4),(5),(6) and P4-16 — all needs_human_decision, all blocked on the
+     taxonomy freeze. Batch-adjudicate only when the user opens it.
+
+  5. P4-7 is one experiment from resolvable. Find ONE product with a FIRST-PARTY launch date
+     after 2018-09-11 whose TheCubicle page carries "Added: 2018-09-11". Finding one overturns
+     the migration-marker reading; a wider sweep finding none settles it for. Use CDX, and
+     extract the value from the <td> AFTER <th>Added</th> — a naive regex returns a clean
+     false negative. Validate any extractor against mojue-m3 / kungfu-qinghong-3x3 first.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming
