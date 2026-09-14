@@ -5,11 +5,11 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  8378e4d   (window 3; 21 commits from e286e3f~1)
-DATE:  2026-09-13
+HEAD:  a1eecc0 + the handoff commit after it
+DATE:  2026-09-14
 
-CANONICAL COUNTS  (verify: for d in manufacturers families models variants sources; do
-                   find data/$d -name '*.yml' | wc -l; done)
+COUNTS  (verify: for d in manufacturers families models variants sources; do
+         find data/$d -name '*.yml' | wc -l; done)
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
@@ -18,23 +18,46 @@ sources:       597
 events:        4
 
 VALIDATION
-npm run check:         0 errors, 30 advisory — baseline UNCHANGED all window. Breakdown:
-                        14 r18  genuine minis and oversized cubes (40mm/42mm/45mm/15mm minis;
-                                qiyi-qimeng-plus 90mm+262g; qiyi-warrior-plus 188mm+981g). Each
-                                oversized cube raises TWO — one for size, one for mass.
-                        10 r42  5 Speedsolving pairs kept deliberately (D-M1) + 5 chronological
-                                citations where two captures ARE the claim
-                         4 r40  model-predates-family — P3-D2, needs human decision
-                         2 r27  Rubik's Phantom/Impossible `core` + `not_legal` — P4-12
-npm run audit:         14 sweeps, advisory only
-npm run escalations:   23 linked / 2 NOTFINDING / 0 unfiled / 0 dangling
-                       "43 reports with escalation language and no block" is VOCABULARY, not
-                       lost findings — adjudicated, see below. Do not re-panic over it.
-npm run catalogue-gap: --fetch now 272 unmatched / 54 warnings (was 275 / 57)
-npm run selftest:      every check behaved as specified, incl. both rule-52 branches
-RULES:                 next free lint rule number is 53 (52 added this window)
+npm run check:         0 errors, 30 advisory — baseline unchanged
+                        14 r18 minis/oversized (each oversized cube raises TWO: size + mass)
+                        10 r42 5 Speedsolving pairs (D-M1) + 5 chronological capture pairs
+                         4 r40 model-predates-family (P3-D2) · 2 r27 Rubik's Phantom/Impossible (P4-12)
+npm run audit:         14 sweeps, advisory only. link_status never checked: 18 of 597 (was 40)
+npm run escalations:   24 linked (was 23) / 2 NOTFINDING / 0 unfiled / 0 dangling
+npm run selftest:      every check behaved as specified
+RULES:                 next free lint rule number is 53
 
 LEDGER: 35 resolved / 15 open / 9 needs_human_decision (of 59)
+
+SESSION 2026-09-14, WINDOW 4 — a 40% run that ended on three external blockers
+
+  COMPLETED
+   - 22 of 40 never-checked source links verified LIVE; nothing marked dead. Two traps tested,
+     not assumed: rate-limiting read as death (controls: real handle 200, fake handle 404, so
+     this UA is not blocked), and a homepage redirect returning 200 (every effective URL was
+     compared with its original product path; all 22 stayed put).
+     Report: research/qc/link-status-verification-2026-09-14.md
+   - ShengShou Legend Plus Big 18cm ADJUDICATED: a distinct model by the 4.2 tooling test,
+     `reference_only` by the qiyi-warrior-plus precedent, NOT admitted. Filed to ledger P4-9
+     with an escalations: block (lane I had left it as untraceable prose). The packaged-weight
+     trap was ruled out by scaling from warrior-plus's verified item/gross weights.
+     Report: research/qc/shengshou-legend-plus-big-adjudication.md
+
+  NEW FINDINGS
+   - SpeedCubeShop's "Weight:" field cannot be classified from the archive: only 2 pairs, one
+     circular. Physical scaling against a verified precedent is the usable test until then.
+   - Lane I's Legend escalation shows the P26-2 gap is still live for NEW lane reports: a
+     prose-only escalation is invisible to the checker. Worth a line in the lane prompts.
+
+  BLOCKED — none of these are negative results, and none should be recorded as `unknown`
+   - P4-7 experiment and the Legend second-retailer check: Internet Archive "Temporarily
+     Offline", confirmed against a control query.
+   - P4-10 trademark registry: WIPO is a JS-rendered SPA. Chrome extension not connected;
+     Playwright connected but Chrome is not installed. Installing it was not done.
+   - Agents: lanes K (P4-7), L (Legend) and M (P4-9) all died on a WEEKLY limit that resets
+     Sep 17 12am America/Toronto. K and M committed nothing; L only a method skeleton, now
+     superseded. L's worktree .claude/worktrees/agent-a800d9553ace345d1 could not be removed —
+     the sandbox denies writes to .git/worktrees. It holds nothing unmerged; prune it by hand.
 
 SESSION 2026-09-12/13, WINDOW 3 — agent recovery, P4-9 alias mechanism, rule 52, P4-7 evidence
 
@@ -330,49 +353,40 @@ OPEN CRITICALS
          registries, 1688/Taobao. ziina.com is a UAE PAYMENTS COMPANY — never cite it.
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
-NEXT ACTION   (ordered; each is startable cold)
+NEXT ACTION   (ordered; check each blocker first — every item below was blocked on 2026-09-14)
 
-  0. AGENTS: the Sonnet session limit resets 4pm America/Toronto. Do NOT launch a specialist
-     lane before then — it dies on the first call. Main-session work below needs no agent.
-     When agents are available again, the two lanes with unfinished scope are:
-       H — the Ziina adversarial challenge (P4-10). It committed a SKELETON ONLY; its whole
-           scope is unrun. Untried avenues: Chinese-language sources (Taobao/1688/Tmall),
-           trademark and business-registry records, owner photos of packaging and manuals,
-           moulded manufacturer marks. NEVER cite ziina.com — UAE payments company.
-       G — the slug/facet re-sweep (P26-3). Its Umbreon find is merged; the systematic
-           collection-slug-vs-manufacturer-id mismatch survey across all 54 manufacturers
-           is NOT done. The known severity-3 case is TheCubicle filing QiYi under
-           /collections/qiyi-mofangge.
+  0. CHECK THE THREE BLOCKERS BEFORE PLANNING ANYTHING:
+       Wayback: curl the CDX API for thecubicle.com/products/gan-11-m-pro-3x3 — one capture
+                back means it is up; a "Temporarily Offline" page means it is not.
+       Agents:  the weekly limit resets Sep 17 12am America/Toronto. Launching earlier fails.
+       Browser: needs the Chrome extension connected, or Chrome installed for Playwright.
 
-  1. LANE I LEFT ONE ESCALATION UNADJUDICATED: "ShengShou Legend Plus Big 3x3 - 18cm"
-     (180mm, 920g), found by an unscoped SpeedCubeShop CDX prefix sweep. It fails the
-     DATA_MODEL 4.2 tooling test against both existing Legend models, so it is a MODEL
-     candidate, and the taxonomy is frozen — the admission decision is the user's. Evidence
-     is preserved at data/sources/speedcubeshop-shengshou-legend-plus-big-18cm-2025.yml.
-     Note it would also raise two rule-18 advisories (size AND mass) if ever admitted.
+  1. P4-7 — ONE EXPERIMENT FROM RESOLVABLE (needs Wayback). Find one product with a FIRST-PARTY
+     launch date after 2018-09-11 whose TheCubicle page carries "Added: 2018-09-11". Finding one
+     overturns the migration-marker reading; a sweep of 15+ finding none settles it for.
+     EXTRACTOR: the value is in the <td> AFTER <th>Added</th>; a naive regex returns a clean
+     false negative. Validate on mojue-m3 and kungfu-qinghong-3x3 (both 2018-09-11) and
+     gan-11-m-pro-3x3 (2020-09-30) first. Lane K reached exactly this point and confirmed all
+     three controls pass, then died before the sweep.
 
-  2. P4-9 ALIAS MECHANISM, the part deliberately left undone. The two M-vs-non-M pairs were
-     REFUSED for want of evidence: yuxin-little-magic-v2 ("YuXin Little Magic M V2" vs the
-     catalogue's "Little Magic 3x3 V2"), yuxin-little-magic-v3, yj-yulong-v2-m. Settling any
-     one needs a source showing whether the maker sold a non-magnetic version under that
-     exact name. Each resolved pair removes a false gap from catalogue-gap's miss list.
+  2. LEGEND PLUS BIG — second source (needs Wayback). CDX prefixes
+     thecubicle.com/products/shengshou-legend* and www.cubelelo.com/products/shengshou-legend*.
+     Admission still waits on P4-16 regardless.
 
-  3. DEPTH RESEARCH. Remaining no-sweep manufacturers: particula 28, mf8 26, giiker 17,
-     guoguan 16. One-publisher manufacturers (all TheCubicle, no first-party source):
-     lefun 34, x-man-design 27, fanxin 13, newisland 9, cubestyle 5, guojia 5, mefferts 3,
-     pbcube 3 — a FIRST-PARTY source for any of these is worth more than another variant.
-     Bare families, largest first: yj-mgc 7, dayan-zhanchi 5, witeden-mixup 4, yj-guanlong 4,
-     dayan-bermuda 4, qiyi-warrior 4. DaYan remains the largest and most historically
-     significant manufacturer gap.
+  3. P4-9 ALIAS CANDIDATES (lane M's scope, unrun). yuxin-little-magic-v2, yuxin-little-magic-v3
+     and yj-yulong-v2-m were refused as aliases because each maker sold magnetic and
+     non-magnetic versions. Settle each by finding whether a non-magnetic version was sold under
+     that exact name.
 
-  4. P4-12 items (1),(3),(4),(5),(6) and P4-16 — all needs_human_decision, all blocked on the
-     taxonomy freeze. Batch-adjudicate only when the user opens it.
+  4. P4-10 registry (needs a browser). WIPO Global Brand Database, search "ziina", Nice class 28,
+     read the REGISTRANT. Then CNIPA and gsxt.gov.cn. Never cite ziina.com (UAE payments).
 
-  5. P4-7 is one experiment from resolvable. Find ONE product with a FIRST-PARTY launch date
-     after 2018-09-11 whose TheCubicle page carries "Added: 2018-09-11". Finding one overturns
-     the migration-marker reading; a wider sweep finding none settles it for. Use CDX, and
-     extract the value from the <td> AFTER <th>Added</th> — a naive regex returns a clean
-     false negative. Validate any extractor against mojue-m3 / kungfu-qinghong-3x3 first.
+  5. link_status: 18 still unchecked. Top item is speedcubeshop-cubetwist-brand-page-2014, which
+     returned one 404 that could not be re-verified. Space requests well apart — TheCubicle and
+     SpeedCubeShop both rate-limited this IP after ~20 requests.
+
+  6. Needs a human, not a session: P4-12 (1)(3)-(6), P4-16, P4-4, and E-VALK-1 (documented in
+     pass3-escalation-valk.md, present in no ledger).
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming
