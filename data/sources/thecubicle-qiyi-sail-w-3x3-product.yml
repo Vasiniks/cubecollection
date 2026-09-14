@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description naming specific design changes ("reinforced mechanism", "rounded off center cap") over the base Sail, supporting model-level (not merely configuration-level) treatment, though no source found this pass states directly that Sail W succeeds the original Sail by name (the "W" suffix pattern mirrors Warrior W's, a naming-analogy lead only). `size_mm: 56.0` is taken from this table, distinct from the original Sail's 56.5mm.
 status: sourced

@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table, corroborating the Speedsolving wiki's dating and budget positioning of the original Sail. `size_mm: 56.5` is taken from this table.
 status: sourced

@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table. Same 55.0mm size as the base M Pro; combined with the Speedsolving wiki's explicit framing of Standard/Maglev/Maglev-with-Ballcore as "multiple versions" of one product, this is treated as a variant of the base qiyi-m-pro-standard model (a MagLev core-system configuration chosen at assembly, DATA_MODEL section 4.2 worked decision A), not a separate model, and is not modelled separately in this pass.
 status: sourced

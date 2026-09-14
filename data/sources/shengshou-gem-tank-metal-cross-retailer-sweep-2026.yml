@@ -70,8 +70,8 @@ preservation_note: "CDX prefix enumeration output (reproducible via `npm run way
 accessed: "2026-09-08"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-08"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer catalogue structure (URL-level CDX enumeration; the one fetched
   SpeedCubeShop page did not yield product-body text in this capture). Sufficient to establish

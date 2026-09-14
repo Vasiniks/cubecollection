@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description. "An updated version of the Warrior W, the Warrior S features an upgraded mechanism for better performance" is direct retailer evidence of both succession and a genuine mechanism change (not merely a configuration difference), the basis for treating Warrior S as its own model. `size_mm: 55.5` is taken from this table, distinct from Warrior W's 56.0mm.
 status: sourced

@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table. Generic marketing copy with no stated relationship to Warrior W/S/M; `size_mm: 55.0` is distinct again from Warrior M's 56.0mm, treated as further (weak) physical evidence of a separate model rather than a shared-shell configuration. See qiyi-warrior-m-pro.yml's own attestation.
 status: sourced

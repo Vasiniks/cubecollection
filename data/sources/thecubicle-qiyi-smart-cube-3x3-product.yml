@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description. Does not itself use the name "M Pro Elite" or state a shared design with it; that link comes solely from the Speedsolving wiki (speedsolving-wiki-qiyi-products: "QiYi M Pro Elite... the non smart version of the Qiyi Smartcube. It featured the same adjustment system"), a single tier-3(-overridden) source with no retailer corroboration of the cross-reference specifically. Cited here only for the Smart Cube's own existence and description, at tier 2; the Elite/Smart-Cube shared-design claim itself remains `reported` on the wiki alone. "hand-adjustable tensions", "48 magnets in the corners and edges" describe the shared shell design in enough qualitative detail to support treating stickerless-squared and black-rounded ("Art Version") as configuration-level ('faces'/'body' colorway and corner-finish) differences, not separate designs, but this is flagged as a pass-4 (variant) question, not resolved here.
 status: sourced

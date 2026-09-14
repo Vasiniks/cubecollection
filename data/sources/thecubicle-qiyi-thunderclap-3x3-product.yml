@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description. "The mechanism appears to be an improved version of the QiYi Bullfight" independently corroborates, at tier 2, the Speedsolving wiki's tier-3 claim that Thunderclap succeeds Bullfight — the two sources are worded differently, so this is treated as genuine independent corroboration, not the same sentence copied twice (RESEARCH_SPEC 3.2). `size_mm: 56.5` is taken from this table.
 status: sourced

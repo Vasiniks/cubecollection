@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description. Unlike the V1-to-V2 transition, this description names specific internal changes directly ("all primary plastic internals, a capped design... an updated anti-pop mechanism, tracks on the pieces... slots to assure correct magnet positioning"), i.e. genuine tooling/mechanism differences rather than only a marketing version number, the stronger of the two evidence classes DATA_MODEL section 4.2 distinguishes. `size_mm: 56.0` matches Thunderclap V2's figure; magnet configuration is not detailed precisely enough here to select a specific `magnet_architecture` vocabulary value.
 status: sourced

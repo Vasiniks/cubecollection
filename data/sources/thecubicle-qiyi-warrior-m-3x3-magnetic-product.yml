@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table. Unlike thecubicle-valk-3-m-product's explicit "factory magnetized version of" phrasing for a same-shell magnetic variant, this description never states Warrior M is a magnetized Warrior W or S; combined with a substantially lower item weight (58.0g) than either Warrior W (81.7g) or Warrior S (77.0g) at a similar or larger size, this is treated as physical evidence of a distinct model rather than a same-shell magnetic configuration, at reduced confidence given the description alone does not name an internal mechanism difference directly. See qiyi-warrior-m.yml's own attestation for the full reasoning.
 status: sourced

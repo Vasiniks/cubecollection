@@ -68,8 +68,8 @@ preservation_note: "archive_url points at the Crazy 3x3 capture; the other four 
 accessed: "2026-09-07"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-07"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer product pages with structured spec tables — sufficient for
   `probable` model-existence and specification claims per the Pass 3 admission policy. None of

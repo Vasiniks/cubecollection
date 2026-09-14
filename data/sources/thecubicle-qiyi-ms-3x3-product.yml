@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table, corroborating the Speedsolving wiki's positioning and existence claim for the MS 3x3 at a stronger tier. No Dimensions row appears in this particular capture's spec table, so `specs.size_mm` is left unset for the model rather than taken from the wiki's tier-3-only "56.5mm" claim, which RESEARCH_SPEC's S6 policy does not permit for a specification. "one of the best economy cubes ever produced" is marketing superlative, tier 4 under RESEARCH_SPEC 3.3, and is not treated as a specification or significance claim.
 status: sourced

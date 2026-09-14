@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table. The retailer's own product slug and copy both use "V2" directly, a manufacturer-declared version signal per DATA_MODEL section 4.2; the description itself does not state a mechanism difference from the base M Pro beyond "piece-to-piece magnetization", so the model/identity claim rests on the version-numbering signal alone rather than an explicit succession statement, and is recorded at reduced confidence accordingly. `size_mm: 55.5` differs from the base M Pro's 55.0mm.
 status: sourced

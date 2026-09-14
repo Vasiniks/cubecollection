@@ -34,8 +34,8 @@ preservation_note: "archive_url is the id_ (raw) Wayback capture, tags stripped 
 accessed: "2026-09-07"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-07"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer product page with a structured spec table (Manufacturer/Type/
   Gross Weight/Dimensions/Magnets) — sufficient for `probable` model-existence and

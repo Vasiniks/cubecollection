@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-14"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table; the only source located this pass for the QiMeng line's "V3" generation number (not present on the Speedsolving wiki, per qiyi-qimeng.yml's own notes). No corroborating second source, so existence/identity is `probable` rather than `confirmed`. `size_mm: 55.5` is taken from this table.
 status: sourced
