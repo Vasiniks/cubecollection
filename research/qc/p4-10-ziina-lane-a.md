@@ -169,3 +169,46 @@ OEM/private-label), stated exactly:
 Neither exists in the evidence gathered by this lane or the two prior sweeps. Recommend the
 ledger keep P4-10 at its current status; this lane found no basis to change the adjudication,
 only to narrow what remains untried (back/bottom panels of unexamined SKUs, and 1688 access).
+
+---
+
+## 2026-09-14 — the trademark/corporate-registry avenue: ATTEMPTED, BLOCKED, not exhausted
+
+This report's own "NEXT" list named trademark and business-registry records as the remaining
+untried avenue for the one question that blocks admission: **who makes Ziina**. A retailer's
+"Manufacturer" field records who the brand is sold *as*, not who produced it, and a trademark
+registration names a **registrant** — which is exactly the missing fact.
+
+The attempt, and why it stopped, recorded so the next session starts from here rather than
+rediscovering it:
+
+| endpoint | result |
+|---|---|
+| `tmsearch.uspto.gov/api-v1-0-0/tmsearch` | HTTP **404** — that API path no longer exists |
+| `developer.uspto.gov/ds-api/trademarks/v1/records` | HTTP **301** — moved, not followed |
+| `branddb.wipo.int` (WIPO Global Brand Database) | HTTP **200**, but the page is a **JS-rendered SPA**; a POST to `/api/search` returns the Angular HTML shell, not JSON |
+| browser automation (to render the SPA) | **unavailable this session** — the Chrome extension is not connected |
+
+**This is `blocked`, not `unknown`.** The distinction is load-bearing in this archive:
+`unknown` means searched and not found, and absence means not searched. Neither applies here —
+the registry data may well exist and simply could not be reached. Nothing about Ziina's
+manufacturer has been learned or ruled out by this attempt, and **no record was changed**.
+
+### How to actually run it next time
+
+WIPO's Global Brand Database needs a rendered browser — connect the Chrome extension and search
+`ziina` there, filtering to Nice class **28** (games, playthings, gymnastic and sporting
+articles), which is where twisty puzzles sit. The field that matters is the **registrant/owner**,
+not the mark itself. Then cross-check that name against the Chinese registries: CNIPA for the
+trademark and the National Enterprise Credit Information Publicity System (`gsxt.gov.cn`) for
+the company, since every plausible manufacturer here is Chinese.
+
+**Two cautions before anyone acts on a hit.** First, a trademark registrant is the brand's
+*owner*, which may still be a trading company rather than the factory — that would move the
+question, not settle it, and outcome 2 (confirmed OEM/private-label relationship) would need the
+relationship documented, not inferred. Second, and this has already cost this issue time:
+**`ziina.com` is a UAE payments company with no connection to the cube brand.** A name search
+will surface it repeatedly. It is not evidence and must never be cited.
+
+**P4-10 remains outcome 4, unresolved.** No avenue was exhausted here; one was opened and found
+to need a tool this session did not have.
