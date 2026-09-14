@@ -2495,6 +2495,23 @@ issues:
       any cell and catches both discoverability and stock suppression. Method 1 stays valuable for
       HISTORICAL completeness but its live-service dependency, demonstrated down all day,
       disqualifies it as a sole mandatory check. Method 3 remains a cheap secondary.
+2026-09-14 - A MODEL CANDIDATE OF THIS ISSUE'S CLASS, ADJUDICATED AND NOT ADMITTED. ShengShou
+depth lane I surfaced "ShengShou Legend Plus Big 3x3 - 18cm" (180mm, 920g, SpeedCubeShop,
+capture 20250712130444, now delisted) through an unscoped CDX prefix sweep, and recorded it only
+as free prose with no machine-readable escalation block - so the P26-2 checker could not see it.
+Filed here so it is traceable. Full working: research/qc/shengshou-legend-plus-big-adjudication.md.
+VERDICT: structurally a DISTINCT MODEL, by precedent a reference_only one, NOT admissible yet.
+The DATA_MODEL 4.2 tooling test rules out a variant: a 180mm cube cannot come from a 56.5mm or
+70mm mould, and the archive already split shengshou-legend-big to its own model on the tooling
+clause at only 70mm. Scope follows qiyi-warrior-plus (188mm), recorded reference_only because
+novelty framing ("use it as furniture") does not clear the RESEARCH_SPEC 2.2 bar for
+conditional; this listing calls itself "a fantastic decoration", the same kind of claim.
+ADMISSION IS BLOCKED ON TWO GROUNDS: P4-16 is needs_human_decision on exactly this class of
+in-window novelty record, and the evidence is one delisted tier-2 page. The second-retailer check
+could not run - the Internet Archive was offline, confirmed against a control query.
+The packaged-weight trap was tested and ruled out by scaling from warrior-plus's verified Item
+981g / Gross 1200g at 188mm: 920g at 180mm falls by the item range (861-899g) and 130-180g below
+the gross range. Plausibility, not measurement - so no weight should be recorded from it.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

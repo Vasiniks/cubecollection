@@ -212,3 +212,12 @@ will surface it repeatedly. It is not evidence and must never be cited.
 
 **P4-10 remains outcome 4, unresolved.** No avenue was exhausted here; one was opened and found
 to need a tool this session did not have.
+
+### Addendum, later 2026-09-14 — a browser became available; it still could not run
+
+A Playwright browser tool connected to the session after the note above was written, which
+would render the WIPO SPA. It failed to launch: `Chromium distribution 'chrome' is not found at
+/Applications/Google Chrome.app`. Installing a browser to proceed was not done — that is a
+change to the user's machine, not to this project. **Still blocked, still not `unknown`.**
+Whoever runs this next needs either the Chrome extension connected or Chrome installed for
+Playwright; the procedure above is unchanged.
