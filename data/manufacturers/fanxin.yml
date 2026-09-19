@@ -10,6 +10,10 @@ country: CN
 aliases:
   - "Fanxin"
   - "FanXin Toys"
+  # Chinese name, found 2026-09-19. The search key that matters: searching "FanXin" alone
+  # returns a Shanghai exhibition-props firm (凡欣) and a Ningbo kitchenware trader, neither
+  # of them this manufacturer.
+  - "泛新"
 notes: |-
   **Identity.** TheCubicle's own product spec table for the FanXin 3x3 gives "Manufacturer:
   FanXin" (thecubicle-fanxin-3x3) — tier 2 retailer, the only source located this pass directly
@@ -39,20 +43,41 @@ status: drafted
 
 attestations:
   /kind:
-    confidence: uncertain
-    sources: [thecubicle-fanxin-3x3]
-    note: "Single tier 2 retailer source. No independent corroboration located this pass."
+    confidence: probable
+    sources: [thecubicle-fanxin-3x3, maru-tw-fanxin-brand-page-2026]
+    note: >-
+      RAISED from `uncertain` 2026-09-19. It was `uncertain` because only one retailer named
+      FanXin as a manufacturer; a second, independent and non-US retailer now does. Taiwan's
+      store.maru.tw maintains "泛新FanXin" as a manufacturer entry with twelve products bound to
+      its id. Two tier 2 sources, so `probable` — not `confirmed`, which vocab/confidence.yml
+      reserves for tier 1 or two INDEPENDENT tier 2 sources, and two retailer taxonomies
+      agreeing is weaker corroboration than two unrelated publishers: retailers copy each
+      other's brand structures. No first-party FanXin source has been found.
   /country:
     confidence: uncertain
     sources: [thecubicle-fanxin-3x3]
     note: "Inferred only from FanXin being sold alongside, and manufactured in the same style
       as, contemporary Chinese puzzle brands; no direct statement of country was found."
   /aliases:
-    confidence: uncertain
-    sources: [thecubicle-fanxin-3x3]
+    confidence: probable
+    sources: [thecubicle-fanxin-3x3, maru-tw-fanxin-brand-page-2026]
+    note: >-
+      RAISED from `uncertain` 2026-09-19 by the addition of the Chinese name. 泛新 is FanXin's
+      name per store.maru.tw's brand-page title and heading, where it appears 26 times, and
+      twelve products are bound to that manufacturer id. The Latin-script variants remain as
+      before. NOTE ON A FORM NOT ADOPTED: a search-engine snippet for the same page rendered
+      the name 泛鑫, but 泛鑫 appears ZERO times in the page as actually loaded, so it is not
+      recorded — a snippet is not the page.
   /website:
     confidence: unknown
-    note: "Researched and not found: no FanXin-branded domain was located this pass."
+    note: >-
+      SEARCHED AGAIN 2026-09-19 AND STILL NOT FOUND. Two FanXin-named domains were located and
+      BOTH REJECTED: fanxin.cn is 上海凡欣展覽服務有限公司, a Shanghai retail-display and
+      exhibition-props company writing its name 凡欣 (different characters from the 泛新 this
+      manufacturer uses), and fanxin-collection.com is NINGBO FANXIN INTERNATIONAL TRADING
+      CO.,LTD, a kitchen and decoration exporter. Neither sells puzzles. The name collision is
+      itself worth recording: it is why a domain search for this brand returns confident wrong
+      answers, and why the Chinese name in /aliases is the better search key.
   /notes:
     confidence: uncertain
     sources: [thecubicle-fanxin-3x3, thecubicle-fanxin-hudong-2024]

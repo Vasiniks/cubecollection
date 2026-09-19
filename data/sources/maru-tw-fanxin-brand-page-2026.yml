@@ -1,0 +1,74 @@
+# source: maru-tw-fanxin-brand-page-2026
+# A SECOND publisher for FanXin, which had only TheCubicle (audit sweep #7: 15 cites, one
+# publisher, no first-party source). It also bears directly on the HuDong naming contradiction
+# that fanxin.yml and fanxin-hudong-3x3.yml both preserve as unresolved.
+id: maru-tw-fanxin-brand-page-2026
+entity: source
+kind: retailer
+title: "泛新FanXin — brand page, store.maru.tw (小丸號, Taiwan)"
+publisher: "store.maru.tw"
+url: "https://store.maru.tw/index.php?route=product/manufacturer/info&manufacturer_id=40"
+preservation_method: excerpt
+excerpt: |-
+  Visited 2026-09-19 in a rendering browser. This store's brand entry for manufacturer_id=40.
+
+  Document title and brand heading, verbatim: "泛新FanXin". The form 泛新 appears 26 times on
+  the page.
+
+  TWELVE distinct products are bound to this manufacturer id. They were identified by filtering
+  anchors whose href carries BOTH manufacturer_id=40 and a product_id, which excludes this
+  store's site-wide recommendation panels; the product names, verbatim:
+    "泛新 - 3x3x3 - 光三階 標準版 互動方塊"      (product_id=2995)
+    "泛新 - 3x3x3 - 光三階 旗艦版 互動方塊"      (product_id=2996)
+    "泛新 - 3x3x3 - 光三階 至臻版 互動方塊"      (product_id=2997)
+    "泛新 - 3x3x3 - 積木方塊"                    (product_id=2684)
+    "泛新 - 異形 - 恐龍系列 - 霸王龍"            (product_id=2859)
+    "泛新 - 異形 - 恐龍系列 - 梁龍"              (product_id=2858)
+    "泛新 - 異形 - 恐龍系列 - 三角龍"            (product_id=2863)
+    "泛新 - 異形 - 恐龍系列 - 甲龍"              (product_id=2862)
+    "泛新 - 異形 - 恐龍系列 - 劍龍"              (product_id=2861)
+    "泛新 - 異形 - 恐龍系列 - 副櫛龍"            (product_id=2860)
+    "泛新 - 異形 - 四階風火輪 4x4 windmill cube" (product_id=2445)
+    "泛新 - 異形 - 四階移棱 4x4 Fisher cube"     (product_id=2432)
+  Of these, only the four 3x3x3 entries are in this archive's scope; the 異形 (shape-mod) and
+  4x4 entries are recorded to show the enumeration is complete rather than filtered to taste.
+preservation_note: >-
+  ARCHIVABILITY UNDETERMINED, not unarchived. The CDX check attempted on 2026-09-19 returned an
+  empty result for a KNOWN-ARCHIVED control URL in the same minute, so no capture could be
+  confirmed or ruled out. `excerpt` is the safe treatment and reproduces every claim cited from
+  this page. Worth one re-check when the archive answers normally.
+accessed: "2026-09-19"
+language: zh
+region: TW
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  A Taiwanese specialist cube retailer's own brand taxonomy. Tier 2.
+
+  NAME. 泛新 is FanXin's Chinese name per this store's brand entry. NOTE ON A FORM NOT ADOPTED:
+  a search-engine snippet for this page rendered the name 泛鑫, but 泛鑫 appears ZERO times in
+  the page as actually loaded, so it is not recorded. A snippet is not the page.
+
+  BEARS ON THE HUDONG CONTRADICTION, and this is the substantive part. 互動 (simplified 互动)
+  is the ordinary Chinese word for "interactive", and "HuDong" is its pinyin. This store files
+  三 products named "光三階 ... 互動方塊" ("Light 3x3 ... Interactive Cube") under the
+  manufacturer 泛新FanXin. So a SECOND retailer, independently of TheCubicle, treats HuDong as a
+  FanXin product line rather than as a manufacturer.
+
+  That agrees with TheCubicle's PROSE ("The FanXin HuDong is a huge step for FanXin hardware")
+  and disagrees with TheCubicle's structured "Manufacturer: HuDong" field. It does not RESOLVE
+  the contradiction — both are retailer taxonomies, not first-party statements, and a retailer
+  can file a sub-brand under its parent as a convenience. It does make the prose reading the
+  better-corroborated one, and it explains how the error arises: 互動方塊 reads like a brand.
+
+  THE THREE TIERS CORROBORATE THE ARCHIVE'S VARIANT STRUCTURE. This store lists exactly three
+  configurations of the Light 3x3 — 標準版, 旗艦版, 至臻版 (standard / flagship / finest) — and
+  the archive independently holds exactly three variants of fanxin-hudong-3x3 (standard,
+  flagship-uv, ultra-maglev-uv), sourced from TheCubicle. The COUNT and ORDER correspond; the
+  tier names are recorded verbatim above rather than mapped one-to-one onto the archive's names,
+  because this page states no coating or core detail that would justify equating them term by
+  term.
+
+  IT ESTABLISHES NOTHING ABOUT COUNTRY OR OWNERSHIP. A Taiwanese store selling the brand says
+  nothing about where FanXin is based or who owns it.
+status: sourced

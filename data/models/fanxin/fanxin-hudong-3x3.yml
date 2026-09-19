@@ -25,6 +25,24 @@ description: |-
   configuration choices at assembly of the same underlying design per DATA_MODEL section 4.2,
   so this is recorded as one model.
 
+  **2026-09-19, a second retailer weighs in, and it favours the prose reading.** Taiwan's
+  store.maru.tw (maru-tw-fanxin-brand-page-2026) files three products named
+  "光三階 ... 互動方塊" — "Light 3x3 ... Interactive Cube" — under the manufacturer entry
+  "泛新FanXin". 互動 (simplified 互动) is simply the Chinese word for "interactive", and
+  "HuDong" is its pinyin, which is how a product-line name comes to look like a brand in a
+  Latin-script spec field. So a second, independent, non-US retailer treats HuDong as a FanXin
+  line rather than a manufacturer. This does NOT resolve the contradiction — both are retailer
+  taxonomies rather than first-party statements, and a retailer may file a sub-brand under its
+  parent for convenience — but it makes the prose reading the better-corroborated one, and it
+  explains the mechanism of the error. Still awaiting a FanXin or HuDong first-party source.
+
+  **The same page corroborates this model's three-configuration structure**, from a publisher
+  the archive did not previously have: it lists exactly three tiers of the Light 3x3 — 標準版,
+  旗艦版 and 至臻版 (standard / flagship / finest) — matching in count and order the three
+  variants recorded here from TheCubicle. The tier names are deliberately NOT mapped term by
+  term onto the archive's variant names, because that page states no coating or core detail
+  that would justify equating them.
+
   **Naming contradiction, preserved not resolved.** The dedicated product page's own structured
   "Manufacturer" spec field reads "HuDong" alone, while the same page's URL, title, and prose
   all read "FanXin HuDong" / "FanXin hardware" (thecubicle-fanxin-hudong-2024). This model
