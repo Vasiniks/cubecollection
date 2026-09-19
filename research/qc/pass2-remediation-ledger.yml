@@ -112,6 +112,32 @@ issues:
       Best-available-tier query across all 122 families: T1 25, T2 76, T3 0, T4+ 21. All 21 are
       also single-source. Validation cannot catch it because the tier rules are conditional on
       claimed confidence, not on existence.
+2026-09-19 - RE-MEASURED with the archive's OWN tier function, and the honest answer is three
+numbers rather than one. Measured with sourceTier() from scripts/lib/archive.mjs, which prefers a
+source's explicit `tier:` field over its kind default - 55 sources carry such an override, so a
+measurement using kind defaults alone is wrong. Control: speedsolving-wiki-moyu is kind `wiki`
+(default tier 4) and declares tier 3; the probe returns 3.
+OF THE 18 FAMILIES THIS ENTRY LISTS:
+  7 ARE STILL WEAK - single source, best tier still >=4: diansheng-3x3-m, diansheng-solar-s3m,
+    diansheng-stickerless-3x3, diansheng-type-e, yuxin-3x3, yuxin-fire, yuxin-water.
+  9 IMPROVED ONLY BY RE-TIERING, and this is the number not to misread: cyclone-boys-feichi,
+    -feijue, -feiwu, -metallic-3x3, -mini-3x3, yj-chilong, yj-ruilong, yj-sulong, dayan-taiyan.
+    Each still rests on ONE source from ONE publisher. What changed is that the Speedsolving
+    wiki source was given an explicit tier 3 rather than the kind default 4. That is a curation
+    judgement about the source's quality, NOT new corroboration, and it does not make these
+    families multi-sourced.
+  2 ARE GENUINELY CORROBORATED: mf8-crazy-3x3x3 (3 publishers, best tier 2) and mf8-legend
+    (2 publishers, best tier 2).
+SO THE HEADLINE "21 families on a single tier-4 source" is now 7 by the archive's own tier
+arithmetic - but only 2 of the 18 actually acquired independent corroboration. Reporting the 7
+alone would overstate the improvement by a factor of eight, which is why all three numbers are
+recorded here.
+ARCHIVE-WIDE CONTEXT from the same pass, so this family-layer issue is not read as worse than the
+whole: NO model and NO variant rests on tier-4-only evidence (0 of 269 and 0 of 527), and no
+record at any layer cites zero sources. The weakness is specific to the family layer and to
+these seven.
+STATUS STAYS OPEN with a concrete remaining scope: 7 families needing any tier<=3 source, and 9
+more needing a SECOND publisher rather than a better tier.
     counterevidence: >-
       The products are real; the families are not fabricated. This is under-evidencing, not error.
     recommendation: >-
@@ -365,6 +391,27 @@ issues:
       Quantified by Agent D beyond the tier-4 subset: 47.5% of families rest on one source,
       57.4% on one publisher, and 12 families cite several sources from a single publisher,
       giving the appearance of corroboration without the substance.
+2026-09-19 - RE-MEASURED archive-wide with the same pass that re-measured E2, using the archive's
+own sourceTier() (which honours the 55 explicit `tier:` overrides; a kind-default measurement is
+wrong).
+  families   132 total - 68 single-publisher (52%) - 7 with best tier >=4 - 0 with no source
+  models     269 total - 129 single-publisher (48%) - 0 with best tier >=4 - 0 with no source
+  variants   527 total - 421 single-publisher (80%) - 0 with best tier >=4 - 0 with no source
+AGAINST THIS ENTRY'S ORIGINAL FIGURES (57.4% of 122 families single-publisher), the family layer
+has improved slightly in proportion - 52% of a larger 132 - while the archive grew. The tier
+floor is now clean at the model and variant layers: nothing anywhere rests on tier-4-only
+evidence except the seven families named in E2.
+THE VARIANT FIGURE IS THE ONE TO READ CAREFULLY, and it is not the alarm it looks like. 80% of
+variants resting on one publisher is largely structural rather than a research failure: a variant
+is a specific sold CONFIGURATION, and configuration detail typically exists on exactly one
+retailer's product page. A second publisher often does not exist to find - the same conclusion
+P4-8 reached for budget and novelty brands, where TheCubicle is not merely the retailer searched
+first but the retailer that carries them.
+NOT ACTIONED, DELIBERATELY: this is a property to DOCUMENT as a known limitation of the archive
+rather than a defect to fix by hunting more retailers. The 2026-09-19 newisland attempt is the
+worked example of why - toypuzzleworld appeared to be a second publisher and its product copy is
+TheCubicle's verbatim, so under RESEARCH_SPEC 3.2 it is one source, not two. Chasing this metric
+directly rewards exactly that error.
     counterevidence: >-
       Single-source is not the same as wrong; many are tier 1-2 and adequate for what they claim.
     recommendation: >-
