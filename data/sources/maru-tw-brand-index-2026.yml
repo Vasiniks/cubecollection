@@ -1,0 +1,62 @@
+# source: maru-tw-brand-index-2026
+# store.maru.tw's own brand index. Its value to this archive is that it states Chinese<->Latin
+# name pairs for 49 brands in one place, from a NON-US publisher. The archive's Chinese-language
+# research has repeatedly failed for want of the Chinese name -- searching a Latin brand name
+# alone returns unrelated companies (see lefun.yml and fanxin.yml /website notes).
+id: maru-tw-brand-index-2026
+entity: source
+kind: retailer
+title: "尋找您喜愛的品牌 (brand index) — store.maru.tw (小丸號, Taiwan)"
+publisher: "store.maru.tw"
+url: "https://store.maru.tw/index.php?route=product/manufacturer"
+preservation_method: excerpt
+excerpt: |-
+  Visited 2026-09-19 in a rendering browser. Page title: "尋找您喜愛的品牌".
+
+  49 brand entries, each an anchor carrying a manufacturer_id. Listed verbatim as they appear,
+  with the store's internal id:
+
+  Ayi|33 · Calvin's Puzzle|37 · CubeSmith|14 · Cubesticker|39 · Megahouse|52 · Smaz|32 ·
+  SpeedStacks速疊杯|48 · SuperSede|13 · TheCubicle|53 · VeryPuzzle|47 · VIN CUBE|58 ·
+  XMD X-Man Design|59 · Z貼 Zstickers|12 · 合樹 He Shu|35 · 國丙 TypeC|27 · 國冠 Guo Guan|42 ·
+  國甲 TypeA|29 · 夢圖 MoreTry|56 · 大雁 DaYan|16 · 奇積 QJ|18 · 奇藝QiYi|21 · 小丸號 Maru|11 ·
+  御魔 Yumo|43 · 指尖飛輪 FidgetSpinner|50 · 方是 FangShi|25 · 方格By Cube Style|34 ·
+  木瓜 MuGua|20 · 梯色 CT|23 · 森幻 Senhuan|44 · 樂方 Lefun|55 · 永駿 YongJun|51 · 泛新FanXin|40 ·
+  洋蔥 YangCong|38 · 海豚 HaiTun|57 · 淦源 GanYuan|28 · 燕成 Yancheng|49 · 聖手 ShenShou|17 ·
+  英德Intex|36 · 藍藍 LanLan|24 · 裕鑫 YuXin|19 · 銘浩之 C4U|30 · 魔域 MoYu|15 ·
+  魔幻手速MoHuanShouSu|45 · 魔方吧 MF8|31 · 魔方格 MoFangGe|54 · 魔爵 Mojue|46 ·
+  魯比克 Rubik's|26 · 麥菲特 Meffert's|41 · 點盛 DianSheng|22
+
+  NOTE FOR A FUTURE PASS, not acted on here: "VIN CUBE|58" is one of the seven vendors ledger
+  P4-10 records as having no manufacturer record in this archive at all. This entry shows a
+  second, non-US retailer carrying the brand. It is a lead for P4-10, not an admission.
+preservation_note: >-
+  ARCHIVABILITY UNDETERMINED. The CDX check attempted on 2026-09-19 returned empty for a
+  known-archived control URL in the same minute, so no capture could be confirmed or ruled out.
+  The excerpt reproduces the whole index rather than a sample, so this record stands alone if the
+  page is never archived.
+accessed: "2026-09-19"
+language: zh
+region: TW
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2: a specialist retailer's own brand taxonomy, structured (each pair is an anchor with a
+  manufacturer id, not prose).
+
+  TRADITIONAL CHARACTERS. This is a Taiwanese store, so every Chinese form here is TRADITIONAL.
+  Mainland Chinese manufacturers write their own names in SIMPLIFIED characters, and the two
+  differ for several of these names (點盛/点盛, 藍藍/蓝蓝, 國冠/国冠, 夢圖/梦图, 奇積/奇积,
+  聖手/圣手, 樂方/乐方, 裕鑫 is the same in both). What this source attests is the traditional
+  form; a simplified form is the mechanical equivalent, but which form a given company uses of
+  ITSELF is a separate question this page cannot answer.
+
+  WESTERN BRANDS ARE TRANSLITERATIONS, NOT NAMES. 魯比克 (Rubik's) and 麥菲特 (Meffert's) are
+  Chinese-market renderings of a Western name, not what those companies call themselves. They
+  are useful search keys and nothing more, and must not be recorded as though the company chose
+  them.
+
+  A RETAILER'S BRAND LABEL IS NOT A COMPANY REGISTRATION. It establishes what this store calls
+  the brand, which for a Chinese manufacturer is strong evidence of the common name and no
+  evidence at all of the registered corporate entity.
+status: sourced

@@ -19,6 +19,10 @@ aliases:
   - "QJ Cube"
   - "QJ Puzzle"
   - "QJ Magic Cube"
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "奇積"
 notes: |-
   **Identity and founding.** QJ's own official site states: "QJ toy factory is located in
   Guangdong province. We have been doing magic cubes for ten years... we build our own mould,
@@ -52,7 +56,7 @@ attestations:
     sources: [qjcube-official-2013]
   /aliases:
     confidence: probable
-    sources: [qjcube-official-2013]
+    sources: [qjcube-official-2013, maru-tw-brand-index-2026]
   /website:
     confidence: unknown
     note: "Researched and not found: no capture of qjcube.com after 2013 was located; current

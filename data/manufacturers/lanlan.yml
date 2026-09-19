@@ -14,6 +14,10 @@ founded:
 aliases:
   - "Lanlan"
   - "Lanlan Toy Co., Ltd."
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "藍藍"
 notes: |-
   **Identity and founding.** No independently branded LanLan domain was located this pass
   (`lanlan-puzzle.com`, the guess carried in the pass-0 domain sweep, and `lanlantoy.com` both
@@ -47,7 +51,7 @@ attestations:
     sources: [lanlantoy-made-in-china-profile, speedsolving-wiki-lanlan]
   /aliases:
     confidence: probable
-    sources: [lanlantoy-made-in-china-profile]
+    sources: [lanlantoy-made-in-china-profile, maru-tw-brand-index-2026]
   /website:
     confidence: unknown
     note: "Researched and not found: neither lanlan-puzzle.com (the pass-0 domain guess) nor

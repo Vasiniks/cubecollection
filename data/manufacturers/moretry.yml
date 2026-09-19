@@ -12,6 +12,10 @@ name: "MoreTry"
 kind: manufacturer
 aliases:
   - "More Try"
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "夢圖"
 notes: |-
   **Identity and scale.** TheCubicle's own manufacturer-filtered collection page: "Brand:
   MoreTry 27" — 27 total products, 24 of them 3x3 cubes ("MoreTry Tianma X3" V1 through V4,
@@ -41,7 +45,7 @@ attestations:
       Speedsolving wiki's manufacturer list — recorded at probable rather than uncertain."
   /aliases:
     confidence: uncertain
-    sources: [thecubicle-moretry-live-2026]
+    sources: [thecubicle-moretry-live-2026, maru-tw-brand-index-2026]
   /notes:
     confidence: probable
     sources: [thecubicle-moretry-live-2026]

@@ -10,6 +10,10 @@ kind: manufacturer
 country: TW
 aliases:
   - "MaruCube"
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "小丸號"
 notes: |-
   **Identity.** Speedsolving wiki (speedsolving-wiki-maru, tier 4, unusually thin even for
   this tier): "Maru is a Taiwanese puzzle manufacturer," with founding and years-active both
@@ -45,7 +49,7 @@ attestations:
       claim as the company's founding date."
   /aliases:
     confidence: uncertain
-    sources: [speedsolving-wiki-maru]
+    sources: [speedsolving-wiki-maru, maru-tw-brand-index-2026]
   /website:
     confidence: unknown
     note: "maru.tw resolved with a cube-branded title as of a 2020 capture but yielded no

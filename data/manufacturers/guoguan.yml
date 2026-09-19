@@ -17,6 +17,10 @@ founded:
 aliases:
   - "Guoguan"
   - "Guo Guan"
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "國冠"
 notes: |-
   **Parent relationship.** The Speedsolving wiki's dedicated GuoGuan page states directly:
   "GuoGuan is a MoYu sub-brand made for cubes exclusively designed by Guoquan Zhang (张国全)"
@@ -68,7 +72,7 @@ attestations:
     sources: [speedsolving-wiki-guoguan, moyucube-official-home-2022]
   /aliases:
     confidence: uncertain
-    sources: [speedsolving-wiki-guoguan]
+    sources: [speedsolving-wiki-guoguan, maru-tw-brand-index-2026]
   /website:
     confidence: unknown
     note: "Wiki page states 'Website: [unknown]'; no independent GuoGuan domain located this

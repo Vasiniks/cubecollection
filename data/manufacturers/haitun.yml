@@ -12,6 +12,10 @@ aliases:
   - "Haitun Cube"
   - "Haitun"
   - "Dolphin"
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "海豚"
 notes: |-
   **Identity.** TheCubicle's own product page for the "HaiTun Waverider V1 3x3 (Flagship)"
   states directly: "The Waverider V1 is a new 3x3 speedcube by the emerging brand Haitun Cube,"
@@ -40,7 +44,7 @@ attestations:
       rather than uncertain accordingly."
   /aliases:
     confidence: probable
-    sources: [thecubicle-haitun-waverider-v1-2024, cubezz-haitun-waverider-v2-standard]
+    sources: [thecubicle-haitun-waverider-v1-2024, cubezz-haitun-waverider-v2-standard, maru-tw-brand-index-2026]
     note: "'Dolphin' added 2026-09-09 closing ledger P26-7. Cubezz's own structured
       Manufacturer field reads 'HAITUN CUBE (also referenced as Dolphin)' - a SOURCED
       confirmation of a gloss this archive had correctly declined to assert while it was

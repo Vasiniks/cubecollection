@@ -12,6 +12,10 @@ aliases:
   - "Fangshi"
   - "Funs"
   - "Funs Puzzle"
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "方是"
 notes: |-
   **FangShi vs "FZ" — the pass-0 brief's open question, resolved.** The two are unrelated.
   "FZ" is TheCubicle's own in-house premium tuning-line name (setup configurations sold on
@@ -59,8 +63,11 @@ attestations:
       registration was found."
   /aliases:
     confidence: uncertain
-    sources: [thecubicle-fangshi-shuangren-v2]
-    note: "'Funs'/'Funs Puzzle' rests on a single tier 2 source's product-description prose."
+    sources: [thecubicle-fangshi-shuangren-v2, maru-tw-brand-index-2026]
+    note: >-
+      'Funs'/'Funs Puzzle' rests on a single tier 2 source's product-description prose — that
+      clause still describes those two aliases only. The second source added 2026-09-19 backs a
+      different alias, the Chinese name 方是, and does not corroborate 'Funs'.
   /website:
     confidence: unknown
     note: "Researched and not found: fangshi.net is confirmed unrelated (domain broker); no

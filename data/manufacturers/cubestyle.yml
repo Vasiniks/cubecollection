@@ -8,7 +8,11 @@ id: cubestyle
 entity: manufacturer
 name: "CubeStyle"
 kind: manufacturer
-aliases: []
+aliases:
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "方格"
 notes: |-
   **Identity.** TheCubicle's own structured spec field names "CubeStyle" as Manufacturer on
   both a real, reviewed standard 3x3 (thecubicle-cubestyle-3x3, "CubeStyle 3x3", 18 reviews,
@@ -39,6 +43,12 @@ notes: |-
 status: drafted
 
 attestations:
+  /aliases:
+    confidence: probable
+    sources: [maru-tw-brand-index-2026]
+    note: >-
+      Chinese name from store.maru.tw's brand index. Traditional characters; a mainland
+      maker may write the simplified form of itself, which this source cannot settle.
   /kind:
     confidence: probable
     sources: [thecubicle-cubestyle-3x3, thecubicle-cubestyle-4x4]

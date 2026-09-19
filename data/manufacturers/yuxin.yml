@@ -16,6 +16,10 @@ aliases:
   - "YUXIN Magic Cube"
   - "Yu Xin Science And Educational Toys Co., Ltd."
   - "666toy.com"
+  # Chinese name, store.maru.tw brand index, 2026-09-19. TRADITIONAL characters, which is
+  # what that Taiwanese source attests; a mainland maker may write the simplified form of
+  # itself. Recorded because the Latin name alone is a poor search key.
+  - "裕鑫"
 website: "https://www.666toy.com/"
 notes: |-
   **Identity and founding.** YuXin's own "About Us" page states: "Yu Xin Science And
@@ -50,7 +54,7 @@ attestations:
     sources: [666toy-about-us]
   /aliases:
     confidence: probable
-    sources: [666toy-about-us]
+    sources: [666toy-about-us, maru-tw-brand-index-2026]
   /website:
     confidence: confirmed
     sources: [666toy-about-us]
