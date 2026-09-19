@@ -1245,7 +1245,7 @@ issues:
 
   - id: P26-6
     severity: medium
-    status: open
+    status: resolved
     title: "Eleven family-gap leads recorded in surviving Pass 3 reports were never verified"
     category: taxonomy-completeness
     affected_records: "none - leads only"
@@ -1299,6 +1299,28 @@ issues:
       Model attachment was checked rather than assumed: the GuHong DIY kit carries no version
       suffix, describes itself as "the cube that launched DaYan's presence into the market", and
       states 57.0mm against dayan-guhong-v3-m's recorded 54mm.
+2026-09-19 - CLOSED. This issue asked one question: were the eleven family-gap leads recorded in
+surviving Pass 3 reports ever verified? They were, on 2026-09-09, and this entry's own status
+line already said so - "leads verified, family creation still blocked by the freeze. This is no
+longer an unverified-leads issue." Marking it resolved brings the status into line with the
+evidence rather than changing anything about the archive.
+THE ELEVEN, ACCOUNTED FOR: six Cyclone Boys leads (FeiHong, FeiXuan, XuanFeng, JisuZhiYun,
+JisuZhiFeng, FeiKu) confirmed REAL, each with its own TheCubicle product path, which meets this
+issue's own bar of "retailer evidence, not wiki naming"; two Maru Mini leads confirmed real and
+still sold at three retailers today; two Maru leads (ShenLan Luminous, Maze) NOT confirmed at
+TheCubicle, whose Pass 3 evidence is cubezz ids this sweep neither confirms nor contradicts - a
+checked negative at one retailer and nothing more - with Maze additionally described in the
+source report as a STICKER product, likely out of 3x3 scope entirely; and Cubelelo "Drift"
+independently confirmed under P4-10.
+WHAT DOES NOT CLOSE WITH IT, stated so nothing is lost: the eight confirmed leads are queued
+ADMISSION decisions blocked by the frozen family taxonomy, not open research. Their evidence is
+preserved at data/sources/thecubicle-cycloneboys-maru-lead-verification-2026.yml. Drift's
+entity-level admission is tracked separately as C-B1. The two unconfirmed Maru leads would need a
+cubezz check to settle, which is a small, concrete, optional follow-up rather than a reason to
+keep a verification issue open.
+A METHOD NOTE FROM THIS ISSUE WORTH CARRYING FORWARD: the unhyphenated `cycloneboys` prefix
+returned one bare stub, the opposite of GAN and Monster Go where the unhyphenated form was the
+only one that worked. Slug form must be checked per brand, never assumed.
     counterevidence: >-
       These rest on a prior pass's report rather than on Pass 2.6's own evidence. The Cyclone
       Boys names are described there as wiki-sourced "older models", which is tier 4 and
@@ -1307,7 +1329,7 @@ issues:
     confidence: reported
     downstream_impact: "Would raise the missing-family count materially if they hold."
     owner: main
-    last_updated: "2026-09-07"
+    last_updated: "2026-09-19"
 
   - id: P26-7
     severity: low
@@ -2144,6 +2166,38 @@ launch date would still overturn it.
       returned exactly 70 matches for all three brands tried, including ones it does not stock -
       the page was echoing the query. Only counting PRODUCT PATHS, with a nonsense-brand control,
       gives a usable answer.
+2026-09-19 - RE-MEASURED, AND THE COUNT IS NOW TWO, NOT NINE. The sweep was re-run across every
+manufacturer, family, model and variant record attributed to each of the original nine, counting
+distinct publishers and flagging any non-US source and any first-party source.
+  lefun          37 cites  3 publishers  maru-tw-lefun-brand-page-2026 (TW)
+  x-man-design   30 cites  4 publishers  qiyitoys-company-history (CN)  -- AND FIRST-PARTY
+  huameng        20 cites  2 publishers  cubelelo-moyu-huameng-tg-v2-2026 (IN)
+  fanxin         16 cites  2 publishers  maru-tw-fanxin-brand-page-2026 (TW)
+  cubestyle       8 cites  2 publishers  maru-tw-brand-index-2026 (TW)
+  guojia          6 cites  2 publishers  baiqiang-guojia-mofang-profile (CN)
+  mefferts        4 cites  2 publishers  mefferts-official-site-2024 (HK) -- AND FIRST-PARTY
+  newisland      10 cites  1 publisher   NONE
+  pbcube          4 cites  1 publisher   NONE
+SEVEN OF THE NINE NO LONGER MATCH THIS ISSUE'S PREMISE. Two of those seven now carry FIRST-PARTY
+evidence, which is what this entry itself predicted the remedy would be - "the remedy is
+first-party or specialist evidence rather than more retailers". x-man-design, which this entry
+singled out as "the sharpest case and the most tractable" because its parent QiYi has a live
+official site already cited elsewhere in the archive, is resolved by exactly that source.
+A CAVEAT STATED RATHER THAN GLOSSED: for lefun, fanxin, cubestyle, guojia, mefferts and
+x-man-design the non-US source is cited on the MANUFACTURER record, not on a product record.
+That is legitimate for this issue, which is about a manufacturer's evidence BASE - but it is
+invisible to audit sweep #9, whose non-US column reads product records only (see
+research/qc/non-us-dimension-measurement-2026-09-19.md). huameng's Cubelelo source is at product
+level and counts in both.
+REMAINING SCOPE, and it is now small and concrete: newisland (10 citations) and pbcube (4), both
+still TheCubicle-only with no non-US and no first-party source. Neither appears in
+store.maru.tw's 49-brand index and china-magic-cube.com carries no category for either (checked
+2026-09-19). newisland's best untried lead is its AMAZON BRAND STORE, worth checking as
+first-party vendor material rather than as another retailer. DO NOT count toypuzzleworld.com: its
+product copy is TheCubicle's verbatim, so under RESEARCH_SPEC 3.2 it is ONE source, not two -
+rejected 2026-09-19.
+STATUS STAYS OPEN because two manufacturers still match the premise, but the issue is now a
+two-item list rather than a nine-item one.
     recommendation: >-
       Do NOT bulk-add sources to reduce the number. The requirement is INDEPENDENT corroboration,
       and adding a second US retailer that mirrors TheCubicle's own copy would satisfy the count
