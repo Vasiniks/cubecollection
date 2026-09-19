@@ -1,0 +1,79 @@
+# source: wipo-global-brand-database-ziina-2026-09
+# P4-10. The trademark/registry avenue this issue's own NEXT list had named as the remaining
+# untried one, and which two earlier sessions recorded as BLOCKED (no rendering browser). It has
+# now been RUN. The result does not identify a manufacturer, and the coverage caveat below is
+# the load-bearing part of the record: WIPO does not index China.
+id: wipo-global-brand-database-ziina-2026-09
+entity: source
+kind: review
+title: "WIPO Global Brand Database — trademark search for \"ziina\" (all classes, all offices)"
+publisher: "World Intellectual Property Organization"
+url: "https://branddb.wipo.int/en/similarname"
+preservation_method: excerpt
+excerpt: |-
+  Query run 2026-09-19 through a rendering browser (the database is an Angular SPA; its
+  /api/search endpoint returns the HTML shell to a plain fetch, which is why two earlier
+  sessions recorded this avenue as blocked rather than negative).
+
+  Search: Brand name "ziina", strategy "Embedded (results contain entered term)" — so
+  "Ziina Star" and any longer form containing the token would also match. No class, office or
+  status filter applied. Database self-describes as "Covering 76,749,495 records from 89 data
+  sources."
+
+  RESULT: "Displaying 1-5 of 5 results". All five, verbatim:
+
+  1. ZIINA — Owner "زينة منطقة حرة ذ.م.م" (UAE) — Nice class 42 — National Trademark
+     Registration, UAE — Registered (April 24, 2023) — No. 378891
+  2. ZIINA — Owner "Bianca Schönbichler" (Austria) — Nice classes 35, 41, 42 — Regional
+     Trademark Registration, European Union — Registered (February 4, 2021) — No. 018310312
+  3. ZIINA — Owner "زينة منطقة حرة ذ.م.م" (UAE) — Nice class 9 — National Trademark
+     Registration, UAE — Registered (April 24, 2023) — No. 378889
+  4. ZIINA — Owner "زينة منطقة حرة ذ.م.م" (UAE) — Nice class 36 — National Trademark
+     Registration, UAE — Registered (April 24, 2023) — No. 378890
+  5. ZIINA — Owner "IT-Consulting Christian Schuller GmbH" (Austria) — Nice classes 16, 21 —
+     Regional Trademark Registration, European Union — Registered (October 16, 2021) —
+     No. 018504285
+
+  NOT ONE IS IN NICE CLASS 28, which is the class covering games, toys and playthings, where a
+  twisty puzzle would be registered. No puzzle-class "Ziina" mark exists anywhere in this
+  database.
+
+  COVERAGE, read from the database's own /en/coverage page on the same visit and enumerated in
+  full: 89 offices, which matches the "89 data sources" the search page states — the match is
+  the control confirming the enumeration is complete and not truncated. The Asia region lists
+  JPO (JAPAN), MOIP (KOREA), CGDPTM (INDIA), IPOS (SINGAPORE), IP VIET NAM, MyIPO (MALAYSIA),
+  DGIP (INDONESIA), IPOM (MONGOLIA), DIP (THAILAND/CAMBODIA/LAOS/BHUTAN), NIPO (SRI LANKA),
+  IPOPHL (PHILIPPINES), and several Gulf and Central Asian offices including MoE (UAE).
+  CHINA IS NOT COVERED. There is no CNIPA entry, and no Hong Kong, Taiwan or Macao office.
+  The international registers Madrid (WIPO), Lisbon (WIPO), 6ter (WIPO) and EUIPO ARE covered.
+preservation_note: >-
+  Live database query, not an archived page — a result set rendered from a query has no stable
+  URL to pin and the underlying database changes as registrations are filed, so the excerpt
+  above IS the evidence and reproduces all five results in full rather than sampling them. The
+  same treatment RESEARCH_SPEC 3.6a prescribes for facet enumerations, and for the same reason.
+  Re-running the query is the way to verify it.
+accessed: "2026-09-19"
+language: en
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 1 for what it is: an official WIPO register aggregating 89 national and regional
+  offices. It establishes the CONTENT of those registers directly.
+
+  WHAT IT ESTABLISHES. The three UAE marks share one owner across classes 9 (software), 36
+  (financial services) and 42 (technology services) — that is the profile of a payments company,
+  and it positively identifies the entity behind ziina.com. The archive's standing rule never to
+  cite ziina.com has until now rested on assertion; it now rests on the register. The two
+  Austrian/EU marks are in unrelated classes (35/41/42 business-and-education, 16/21
+  paper-and-household) and are likewise not puzzle marks.
+
+  WHAT IT DOES NOT ESTABLISH, and this is the limit that matters: it does NOT show that no
+  "Ziina" puzzle trademark exists, because CHINA IS NOT IN THE 89 OFFICES and every plausible
+  manufacturer of these cubes is Chinese. A CNIPA-only registration would be invisible here.
+  This is a bounded negative, not an absence of the fact.
+
+  THE ONE INFERENCE IT DOES SUPPORT ABOUT CHINA is indirect and weak, and is stated as such: the
+  Madrid international register IS covered, so a Chinese proprietor who had sought international
+  protection for the mark would appear. None does. That is consistent with a domestic-only or
+  unregistered brand; it is not evidence of who manufactures it.
+status: sourced

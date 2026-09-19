@@ -221,3 +221,48 @@ would render the WIPO SPA. It failed to launch: `Chromium distribution 'chrome' 
 change to the user's machine, not to this project. **Still blocked, still not `unknown`.**
 Whoever runs this next needs either the Chrome extension connected or Chrome installed for
 Playwright; the procedure above is unchanged.
+
+### 2026-09-19 — the trademark avenue is no longer blocked. It was RUN, and it is a bounded negative
+
+A rendering browser became available, so the WIPO Global Brand Database query that two previous
+sessions could only record as *blocked* has now been executed. Evidence preserved as
+`wipo-global-brand-database-ziina-2026-09`.
+
+**Query:** brand name `ziina`, strategy "Embedded" (contains the term, so "Ziina Star" matches
+too), no class/office/status filter, against 76,749,495 records from 89 offices.
+**Result: 5 records, and not one is in Nice class 28** — the class covering games, toys and
+playthings, where a twisty puzzle would be registered.
+
+| mark | owner | classes | office |
+|---|---|---|---|
+| ZIINA | زينة منطقة حرة ذ.م.م (UAE) | 9 | UAE |
+| ZIINA | زينة منطقة حرة ذ.م.م (UAE) | 36 | UAE |
+| ZIINA | زينة منطقة حرة ذ.م.م (UAE) | 42 | UAE |
+| ZIINA | Bianca Schönbichler (Austria) | 35, 41, 42 | EU |
+| ZIINA | IT-Consulting Christian Schuller GmbH (Austria) | 16, 21 | EU |
+
+**One long-standing rule is now evidenced rather than asserted.** The three UAE marks share a
+single owner across classes 9 (software), 36 (financial services) and 42 (technology services) —
+the exact profile of a payments company. That positively identifies the entity behind
+`ziina.com`. The instruction never to cite it has until now rested on this project's say-so; it
+now rests on the register.
+
+**The finding does NOT resolve P4-10, and the reason is a coverage limit, not a judgement call.**
+The database's own coverage page was enumerated in full on the same visit: **89 offices, matching
+the 89 the search page claims** — that match is the control proving the enumeration was not
+truncated. Asia covers Japan, Korea, India, Singapore, Vietnam, Malaysia, Indonesia, Mongolia,
+Thailand and others. **China is absent. No CNIPA, no Hong Kong, no Taiwan, no Macao.** Every
+plausible manufacturer of these cubes is Chinese, so a CNIPA-only mark would be invisible here.
+
+This is a **bounded negative**: it rules out a registered puzzle-class "Ziina" in 89 registers,
+and says nothing about the one register that matters most.
+
+The single weak inference it does support is stated as weak: the **Madrid** international
+register *is* covered, so a Chinese proprietor who had sought international protection would
+appear, and none does. That is consistent with a domestic-only or unregistered brand. It is not
+evidence of who manufactures it.
+
+**P4-10 remains outcome 4, unresolved.** The avenue is now *run* rather than *blocked*, which
+changes its status from `blocked` to a genuine `unknown` — searched, and not found, within a
+stated boundary. **Next: CNIPA directly** (`sbj.cnipa.gov.cn`), which WIPO does not index, plus
+`gsxt.gov.cn` for the company record behind any hit.
