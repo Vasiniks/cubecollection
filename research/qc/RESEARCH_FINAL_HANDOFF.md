@@ -223,6 +223,34 @@ The contract already exists and predates this document: `scripts/build.mjs` emit
 which is worth revisiting, since all 13 are evidenced in-window and are excluded by a switch
 meant for out-of-window lineage stubs (ledger P4-16).
 
+**Verified by running it, 2026-09-19.** Three things Phase III must know, and the full working is
+in `docs/EXHIBITION_ARCHITECTURE.md` §10.
+
+1. **A default build emits ZERO records.** The gate is `--public-status=`, defaulting to
+   `published`, and *no record has that status* — everything is `drafted`, `sourced` or `stub`,
+   and **all 527 variants are `stub`**. Building with `--public-status=sourced,drafted,stub`
+   emits 1568 of 1597 records (4.1 MB) and passes. Either records get promoted through a
+   curation pass, or the exhibition build declares the statuses it accepts. A gate of `sourced`
+   alone would publish none of the variants, which are the objects visitors look at.
+
+2. **The bundle is richer than expected, and removes work from the frontend.** Public counts:
+   54 · 132 · 256 models · 511 variants · 609 sources. One JSON per entity plus prebuilt
+   `index/by-manufacturer`, `by-family`, `by-model` and `chronology`. Variant records already
+   carry `attestations` with confidence and source ids — so the evidence drawer is directly
+   supported — and **`resolved_specs`**, which has already resolved model→variant inheritance and
+   tags each value with the layer it came from. The frontend does not need to reimplement that.
+
+3. **The 3D blockers are enumerated per variant.** `representation.procedural.blockers` is
+   populated for every record. Across all 511: *face colours undocumented* 511, *logo placement
+   undocumented* 511, *no geometry profile* 511, *body plastic colour undocumented* 489 (22 are
+   documented). No variant has fewer than three. Rendering is blocked by missing **data** as much
+   as by missing assets, and the gaps are uniform rather than a long tail.
+
+   The consequential decision is **face colours**: the standard scheme is near-universal, but the
+   archive has deliberately not recorded it because it does not assert what it has not sourced.
+   Adopting it as a *documented rendering convention* unblocks all 511 at once and is the
+   recommendation — on the condition that the visitor can tell a convention from evidence.
+
 ---
 
 ## NEXT IMPLEMENTATION STEP

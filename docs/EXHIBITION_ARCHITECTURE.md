@@ -227,3 +227,72 @@ unknown.
 
 **If the slice cannot show an `unknown` honestly, the design is wrong**, because roughly half
 this archive's value is in what it declines to claim.
+
+---
+
+## 10. VERIFIED DATA CONTRACT (measured 2026-09-19, not assumed)
+
+The build was run and `dist/public` inspected. Three findings change what Phase III must plan
+for, and all three are better news than "nothing renders" suggested.
+
+### 10.1 The public bundle is EMPTY by default, and that is a gate, not a defect
+`build.mjs` filters on `--public-status=`, defaulting to **`published`** — and **no record in the
+archive has that status**. Statuses in use are `drafted` (manufacturers 32, families 122, models
+253), `sourced` (22 / 10 / 15, and all 609 sources) and `stub` (1 model and **all 527 variants**).
+
+So a default build emits **0 records**. Building with `--public-status=sourced,drafted,stub`
+emits **1568 of 1597 records, 4.1 MB**, and passes.
+
+**This is a decision Phase III needs before it can consume anything**: either promote records to
+`published` through a curation pass, or have the exhibition build declare the status set it
+accepts. Note that all 527 variants are `stub`, and the variant is the object on the plinth —
+so a gate of `sourced` alone would publish **zero** of the things visitors look at.
+
+### 10.2 The bundle is richer than expected
+Public counts: 54 manufacturers · 132 families · **256** models · **511** variants · 609 sources
+· 2 people · 4 events. (13 models and 16 variants are excluded by `PUBLIC_SCOPE = {core,
+conditional}` — the `reference_only` records discussed in §4.7.)
+
+Output is one JSON file per entity plus prebuilt indexes: `index/by-manufacturer.json`,
+`index/by-family.json`, `index/by-model.json`, `index/chronology.json`.
+
+A public **variant** record already carries: `attestations` (each with `confidence` and
+`sources`), `config`, **`resolved_specs`** — inheritance already resolved, each value tagged with
+where it came from (`"from": "variant"`) — plus `lineage`, `inbound_relationships`,
+`first_release`, `scope_class` and `fingerprint`.
+
+**Two consequences.** The evidence drawer of §6 is directly supported: confidence and source ids
+are already in the bundle. And the frontend does **not** need to implement model→variant
+inheritance — `resolved_specs` has done it, and says which layer each value came from.
+
+### 10.3 The 3D blockers are already enumerated per variant
+`representation.procedural` carries `geometry_profile_id`, `colorway_completeness`, `renderable`
+and an explicit **`blockers`** list. Measured across all 511 public variants:
+
+| blocker | variants affected |
+|---|---|
+| face colours undocumented (U, D, F, B, L, R) | **511** |
+| logo placement undocumented | **511** |
+| no geometry profile (reserved; none exist) | **511** |
+| body plastic colour undocumented | 489 (so 22 *are* documented) |
+
+No variant has fewer than three blockers. **Rendering is blocked by missing DATA at least as much
+as by missing assets**, and the gaps are uniform rather than a long tail — which makes them
+plannable.
+
+### 10.4 The face-colour decision, which is a genuine one
+Standard speedcube colour schemes are near-universal (white opposite yellow, red opposite orange,
+blue opposite green). The archive has deliberately **not** recorded them, because it does not
+assert what it has not sourced — the same discipline that produced 30 explained advisories and 11
+declared human decisions.
+
+Phase III must choose, explicitly:
+- **(a) Adopt the standard scheme as a documented rendering convention**, clearly labelled as a
+  convention and not as evidence about any particular cube. Unblocks all 511 at once.
+- **(b) Leave faces undocumented and render neutrally** (uncoloured or schematic), reserving
+  colour for the 22 variants with a documented body plastic and any future sourced colourway.
+
+**(a) is recommended, on the condition that the convention is visible to the visitor** — the
+exhibition may render a conventional cube, but it must not let a visitor believe the archive
+*sourced* that colour arrangement for that product. This is the §7 honesty constraint applied to
+the one field that blocks everything.
