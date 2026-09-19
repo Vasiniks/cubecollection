@@ -5,38 +5,72 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  00e93d7 + this handoff commit
-DATE:  2026-09-19
+HEAD:  0b0a972 + this handoff commit
+DATE:  2026-09-19 (late)
 
-COUNTS  (verify: for d in manufacturers families models variants sources; do
-         find data/$d -name '*.yml' | wc -l; done)
+COUNTS
 manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
-variants:      525
-sources:       602
+variants:      527
+sources:       607
 events:        4
 
 VALIDATION
-npm run check:         0 errors, 30 advisory — baseline unchanged all window
-                        14 r18 minis/oversized (each oversized cube raises TWO: size + mass)
-                        10 r42 5 Speedsolving pairs (D-M1) + 5 chronological capture pairs
-                         4 r40 model-predates-family — P3-D2, needs human decision
-                         2 r27 Rubik's Phantom/Impossible — P4-12
+npm run check:         0 errors, 30 advisory — unchanged all window
 npm run audit:         14 sweeps, advisory only
 npm run escalations:   24 linked / 2 NOTFINDING / 0 unfiled / 0 dangling
-link_status:           417 live · 182 dead · 2 altered · 1 unchecked  (was 40 unchecked)
+npm run catalogue-gap: --fetch now 51 warning lines (was 54 — the 3 closed are the lane D
+                       aliases; the fix is real, not a masking change, see below)
+link_status:           419 live · 185 dead · 2 altered · 1 unchecked
 RULES:                 next free lint rule number is 53
 
-ALL THREE PREVIOUS BLOCKERS ARE CLEARED — do not plan around them again:
-  Internet Archive  UP. NOTE: Bash's sandbox DENIES web.archive.org by default and the
-                    `<sandbox_violations>` block looks like an outage. It is not. Re-run that
-                    command with dangerouslyDisableSandbox: true. Same for github.com on push,
-                    and for retailer hosts.
-  Browser           WORKS (Playwright). This is what unblocked the WIPO trademark search.
-  Agents            WORK. The weekly limit reset; four lanes launched cleanly this window.
+ENVIRONMENT — all verified this window, do not re-derive
+  Internet Archive  UP. Bash's sandbox DENIES web.archive.org, github.com and sometimes retailer
+                    hosts; the `<sandbox_violations>` block LOOKS like an outage and is not.
+                    Re-run with dangerouslyDisableSandbox: true.
+  Browser           Playwright WORKS. This ran the WIPO search and every retailer page below.
+  Agents            Sonnet SESSION limit hit ~06:00; resets 6:10am America/Toronto. Four lanes
+                    died. Do not relaunch before the reset — they fail instantly.
+  $TMPDIR DIFFERS between sandboxed and unsandboxed Bash calls. A file written by one is missing
+  to the other, and every grep against it silently returns "not found". This produced one false
+  alarm this window. Write comparison files with mktemp inside the SAME command that reads them.
 
 LEDGER: 35 resolved / 15 open / 9 needs_human_decision (of 59)
+
+SESSION 2026-09-19, WINDOW 6 — four lanes launched, one completed, a real tool defect fixed
+
+  MERGED
+   - LANE D (P4-9) COMPLETE AND VERIFIED. The three "refused alias candidates" from 2026-09-12
+     were never candidates: they are catalogue-gap artefacts. All three settled as ALIASES on a
+     full facet enumeration whose CONTROL is visible in the evidence — TheCubicle lists the
+     Little Magic ORIGINAL generation as both a bare and a magnetic SKU, proving it publishes
+     bare non-magnetic titles where they exist, while V2 has only "V2 M"/"V2 M UV". So absence
+     is evidence, not silence. Verdict on Task 2: NO FIFTH MECHANISM (bounded — ~49 multi-SKU
+     warnings were bucket-scanned, not individually adjudicated; the lane states this itself).
+   - LANE E2 (DaYan), killed mid-run, records merged. Its METHOD finding matters more than its
+     two variants: dayan-zhanchi-pro-m was one of the 16 the PRIOR DaYan lane reported swept
+     clean across TheCubicle/SpeedCubeShop/Cubelelo. It was not clean — the configurations were
+     at cubezz.com, outside that host set. A "swept clean" is only as wide as its host list.
+   - LANE A (P4-7) and LANE C (provenance), killed early; only skeletons merged. Lane A DID
+     validate the Added: extractor against all three controls — do not redo that part.
+   All three merged reports carry an explicit KILLED MID-RUN banner so their empty FINDINGS
+   placeholders are not read as "nothing found".
+
+  FIXED: catalogue-gap could never match a model whose name carries a CONFIGURATION token.
+   The script truncates a retailer title at the first bracket (deliberate — it collapses
+   configurations into one line), then required an archive name to END with the line's
+   generation token. Names like "YuXin Little Magic V3 MagLev" and "YJ YuLong V2 M" put a config
+   token AFTER the generation, so they could never match and were reported missing for months.
+   Now compares generation TOKENS, not suffixes.
+   A SECOND DEFECT THE FIRST FIX EXPOSED: with matching relaxed, "MoreTry Tianma X3+ V4" began
+   matching "MoreTry TianMa X3 V4" because normalise stripped ALL punctuation, merging X3+ into
+   X3 — two separate models here. normalise now maps "+" to "plus". Verified by diffing the FULL
+   warning list before/after: exactly 3 lines close, ZERO newly reported, 6 known negatives
+   still reported.
+
+  P4-10 ADVANCED, STILL OUTCOME 4. WIPO run (see window 5). CNIPA is the register that would
+  settle it and is blocked by bot detection.
 
 SESSION 2026-09-19, WINDOW 5 — blockers cleared, P4-13 closed, and Chinese names at last
 
@@ -417,34 +451,34 @@ OPEN CRITICALS
          registries, 1688/Taobao. ziina.com is a UAE PAYMENTS COMPANY — never cite it.
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
-NEXT ACTION   (ordered; all three blockers are CLEARED, so these are all runnable)
+NEXT ACTION   (ordered)
 
-  1. FOUR AGENT LANES WERE RUNNING AT CHECKPOINT and had not reported. Check their worktrees
-     FIRST — recover committed and uncommitted work before relaunching anything:
-       Lane A  P4-7 experiment          -> research/qc/p4-7-catalogue-presence-experiment.md
-       Lane C  provenance adversarial   -> research/qc/provenance-adversarial-lane-c.md
-       Lane D  P4-9 targeted follow-up  -> research/qc/p4-9-lane-d.md
-       Lane E  DaYan depth (2nd pass)   -> research/qc/dayan-depth-lane-e2.md
-     `git worktree list`, then per worktree: git log --oneline main..HEAD, git status, git diff.
+  1. AGENTS RESET AT 6:10am AMERICA/TORONTO. Four lanes have unfinished scope; relaunch after
+     the reset, and READ each merged report's KILLED MID-RUN banner first so work is not redone:
+       P4-7 (lane A)      — extractor is validated; the 15+ product SWEEP never ran. This is
+                            still one experiment from resolving P4-7.
+       Provenance (C)     — unrun beyond its method. Its scope section is sound.
+       DaYan depth (E2)   — 15 of 16 targets unexamined by the deeper (non-US retailer) method.
+       MoYu depth (F)     — committed nothing; entire scope unrun.
 
-  2. P4-10, the one avenue that would settle it: CNIPA (sbj.cnipa.gov.cn), which WIPO does not
-     index. Blocked by bot detection from this session. Then gsxt.gov.cn for the company behind
-     any hit. The Chinese-name method above is the other half — nobody has yet found a Chinese
-     name for Ziina, and that is likely why every Chinese-language sweep has failed.
+  2. P4-9's REMAINING KNOWN GAPS, now that the tool is fixed: the 51 warning lines are a cleaner
+     signal than before. MoreTry Tianma X3+ V4 is a live candidate the fix deliberately keeps
+     visible — adjudicate whether it is the Plus line's V4 (distinct model) or a retailer
+     spelling of X3 V4.
 
-  3. SWEEP #7 REMAINDER: newisland (10 cites) and pbcube (4), both TheCubicle-only and neither
-     in maru.tw's index. Try cubezz, china-magic-cube.com, cubein.cn, championscubestore.
+  3. SWEEP #7 REMAINDER: newisland (10 cites) and pbcube (4), both TheCubicle-only. newisland's
+     best untried lead is its AMAZON BRAND STORE, worth checking as FIRST-PARTY vendor material.
+     Do NOT count toypuzzleworld — its copy is TheCubicle's verbatim, rejected this window.
 
-  4. P4-9 ALIAS CANDIDATES if lane D did not finish them: yuxin-little-magic-v2/v3 and
-     yj-yulong-v2-m were refused because each maker sold magnetic and non-magnetic versions.
-     Settle by finding whether a non-magnetic version was sold under that exact name.
+  4. P4-10: CNIPA (sbj.cnipa.gov.cn) needs a session that clears bot detection, then gsxt.gov.cn.
+     Nobody has yet found a CHINESE NAME for Ziina, which is likely why every Chinese-language
+     sweep has failed — the Chinese-name method that worked for eleven manufacturers this window
+     is the thing to try.
 
-  5. Needs a human, not a session: P4-12 (1)(3)-(6), P4-16, P4-4, P4-7's policy half, and
-     E-VALK-1 (documented in pass3-escalation-valk.md, present in no ledger).
+  5. Needs a human: P4-12 (1)(3)-(6), P4-16, P4-4, P4-7's policy half, E-VALK-1.
 
   HOUSEKEEPING: .claude/worktrees/agent-a800d9553ace345d1 is a half-deleted superseded skeleton
-  the sandbox will not let this session remove (it denies writes to .git/worktrees). It holds
-  nothing unmerged. Remove by hand: git worktree remove --force, then git branch -D.
+  the sandbox will not let this session remove. Nothing unmerged. Remove by hand.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming
