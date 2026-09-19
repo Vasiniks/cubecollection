@@ -79,3 +79,34 @@ Skeleton committed. Research not yet started.
 
 ## UNRESOLVED / NOT FINISHED
 (to be filled in)
+
+---
+
+## LANE STATE: KILLED MID-RUN, 2026-09-19 (merged anyway)
+
+This lane was terminated by a Sonnet session limit after committing its ZhanChi Pro M work but
+BEFORE writing up its FINDINGS, EVIDENCE, PROBE RELIABILITY and REJECTED CANDIDATES sections —
+those headings above are still empty placeholders and must not be read as "nothing found".
+
+WHAT IS ACTUALLY IN THE ARCHIVE from this lane, and it is verified and sound:
+`dayan-zhanchi-pro-m` gained `stickerless` and `light-green` variants, plus three sources
+(`cubezz-dayan-zhanchi-pro-m-light-green-2021`, `cubezz-dayan-zhanchi-pro-m-stickerless-2021`,
+`thecubicle-dayan-zhanchi-pro-m-colorway-options-2021`). The reasoning lives in the variant
+records' own header comments rather than here.
+
+**THE METHODOLOGICAL POINT IS WORTH MORE THAN THE TWO VARIANTS.** `dayan-zhanchi-pro-m` is one
+of the 16 models the PRIOR DaYan lane swept and reported clean — "zero second configurations
+found for any of the 16 targets across all three hosts by both historical and live-facet
+methods". It was not clean. The prior sweep covered TheCubicle, SpeedCubeShop and Cubelelo; this
+lane found the configurations at **cubezz.com**, a non-US retailer outside that set. A
+"swept clean" result is only as wide as its host list, and this is a concrete instance of
+RESEARCH_SPEC 3.6a check 2 earning its place.
+
+Light Green is NOT a bare colourway split, which the variant rule forbids: TheCubicle prices it
+separately ($37.99 vs $34.99 for Black and Stickerless), Cubezz sells it as its own SKU, and a
+claimed distinct ("rubbery") sticker material is held at `reported` on tier-4 customer-review
+evidence and deliberately not promoted. The lane also measured a false positive and refused it —
+Cubezz's "Soft silica pasters" bullet appears identically on the STICKERLESS listing, so it
+cannot serve as sticker-material evidence.
+
+REMAINING SCOPE: 15 of the 16 targets unexamined by this lane's deeper method.

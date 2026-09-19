@@ -77,3 +77,13 @@ _(repairs made this lane, if any, listed here with justification)_
 
 ## UNRESOLVED
 _(to be filled in)_
+
+---
+
+## LANE STATE: KILLED MID-RUN, 2026-09-19 (merged anyway)
+
+Terminated by a Sonnet session limit shortly after its skeleton. Its last action was resolving 30
+canonical (page, capture-id) pairs and beginning a collision check across the rest of the
+archive's sources. **No findings were committed and none should be inferred.** The scope and
+method above are sound and are the right starting point for a resumed lane; treat everything
+below the method as unrun.

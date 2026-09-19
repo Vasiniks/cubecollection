@@ -91,3 +91,18 @@ otherwise state exactly what remains ambiguous and what would settle it._
 ## Scope not finished
 
 _pending_
+
+---
+
+## LANE STATE: KILLED MID-RUN, 2026-09-19 (merged anyway)
+
+Terminated by a Sonnet session limit after validating its extractor and BEFORE running the
+sweep. **No verdict was reached and none should be inferred from this file.**
+
+WHAT IS ESTABLISHED: the extractor works. All three controls pass — `mojue-m3` and
+`kungfu-qinghong-3x3` return `2018-09-11`, `gan-11-m-pro-3x3` returns `2020-09-30` — using the
+`<th>Added</th>` followed by `<td>` shape rather than a naive proximity regex, which returns a
+clean false negative. That is the part worth not redoing.
+
+WHAT IS NOT DONE: the wide sweep of 15+ products independently dated after 2018-09-11, which is
+the experiment P4-7 actually asks for. P4-7 remains `needs_human_decision`.
