@@ -2870,7 +2870,7 @@ the gross range. Plausibility, not measurement - so no weight should be recorded
 
   - id: P4-13
     severity: low
-    status: open
+    status: resolved
     title: "Two records cannot be expressed because the schema has no place for them"
     evidence: >-
       Two of the 18 unfiled escalations are not research gaps but SCHEMA gaps - a lane found a
@@ -2956,6 +2956,26 @@ the gross range. Plausibility, not measurement - so no weight should be recorded
       (speedcubeshop-vendor-facet-sweep-2026-09) and is a DIFFERENT product from the Crazy Jelly
       LE. Both are ShengShou, both are "Jelly", and neither is held. They should not be conflated
       when either is adjudicated.
+2026-09-19 - CLOSED. Both halves are now resolved and neither needed the schema widened, which
+was this issue's own prediction and the reason its recommendation warned against widening.
+(2) closed 2026-09-11: data/events/rubiks-cube-50th-anniversary.yml exists and
+rubiks-classic-cube--retro links it through edition.commemorates. Ordinary data entry.
+(1) CLOSED 2026-09-12 by the ShengShou depth lane, and the blocker was exactly what the
+re-examination said it was - an EVIDENCE question about model attachment, not an inexpressible
+record. TheCubicle's own cross-product "Versions" selector labels the product
+"V1 (Jelly Limited Edition)", attaching it to shengshou-crazy-original rather than
+shengshou-crazy-v2; the capture (20260718045732) was re-fetched independently by the main
+session before merge and the selector is present in it. The same evidentiary mechanism the
+archive already accepts for yj-mgc3-beta--limited-edition. data/variants/shengshou/
+shengshou-crazy-original/jelly-le.yml now exists, with run_size 1400 as a stated figure.
+No model was created and the taxonomy is untouched: the record needed an existing model to
+attach to, and the Versions selector said which one.
+The 1g weight coincidence this entry recorded as suggestive was correctly NOT used - a Shopify
+shipping weight and a retailer's stated Gross Weight are different quantities.
+STILL OPEN AND DELIBERATELY NOT FOLDED IN HERE: the ShengShou Lustrous Light-Up "Jelly Edition"
+enumerated at SpeedCubeShop on 2026-09-12 is a DIFFERENT product from the Crazy Jelly LE and is
+still unheld. It is a P4-9 admission question, tracked there, and must not be conflated with
+this one.
     recommendation: >-
       Do not widen the schema to admit one record each. Decide first whether `data/events/`
       should exist as an entity at all - if it should, (2) resolves as ordinary data entry; if it
@@ -2966,7 +2986,7 @@ the gross range. Plausibility, not measurement - so no weight should be recorded
       Two known real editions are absent from the archive, and nothing in it records that they
       are absent for a structural rather than an evidentiary reason.
     owner: main
-    last_updated: "2026-09-09"
+    last_updated: "2026-09-19"
 
   - id: P4-14
     severity: low
