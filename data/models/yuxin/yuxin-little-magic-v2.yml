@@ -10,6 +10,22 @@ entity: model
 family_id: yuxin-little-magic
 manufacturer_id: yuxin
 name: "YuXin Little Magic M V2"
+aliases:
+  # P4-9 Lane D, 2026-09-19. Settles the refusal in p4-9-alias-blindness-2026-09-12.md: was the
+  # catalogue-gap candidate "YuXin Little Magic 3x3 V2" (no "M") a genuine non-magnetic product,
+  # since YuXin sells both magnetic and non-magnetic lines? Two companion facet sources reproduce
+  # the FULL "yuxin" brand collection at both TheCubicle and SpeedCubeShop filtered to "Little
+  # Magic": every 3x3 V2-generation SKU at both hosts carries an explicit magnetic designator
+  # ("M" at TheCubicle, "(Magnetic)" at SpeedCubeShop); none is bare. Both hosts DO list the
+  # ORIGINAL generation's non-magnetic and magnetic configurations as separate real SKUs (a
+  # control proving neither host suppresses non-magnetic titles where they exist), so the
+  # absence of a bare non-magnetic "V2" is evidence of absence, not a gap in the method. First
+  # alias is TheCubicle's own current title, a pure word-order match (archive: "M V2"; retailer:
+  # "V2 M") already partly evidenced by this model's own bound source thecubicle-yuxin-
+  # collection-2025 (slug yuxin-little-magic-3x3-v2-m). Second is SpeedCubeShop's spelled-out
+  # form of the same "M" already in this model's own name.
+  - "YuXin Little Magic 3x3 V2 M"
+  - "YuXin Little Magic 3x3 V2 (Magnetic)"
 scope_class: core
 generation:
   label: "V2"

@@ -14,6 +14,16 @@ manufacturer_id: yuxin
 name: "YuXin Little Magic V3 MagLev"
 aliases:
   - "YuXin Small Magic (MagLev 3x3, manufacturer's own product-page name for this item)"
+  # P4-9 Lane D, 2026-09-19. Settles the refusal in p4-9-alias-blindness-2026-09-12.md: was the
+  # catalogue-gap candidate "YuXin Little Magic 3x3 V3" (no "MagLev") a genuine non-MagLev
+  # product? thecubicle-yj-yuxin-magnet-facet-p4-9-lane-d-2026 reproduces TheCubicle's ENTIRE
+  # "yuxin" brand facet filtered to "Little Magic": the only two 3x3 V3-generation SKUs are both
+  # "(MagLev)" / "(MagLev + UV)"; neither is bare. The full, untruncated retailer title is an
+  # exact token-multiset match to this model's own name modulo word order and the non-
+  # discriminating "3x3" token — the candidate is a catalogue-gap title-truncation artefact (the
+  # script's line-splitting regex cuts the title at the first bracket, dropping "(MagLev)"), not
+  # a second product.
+  - "YuXin Little Magic 3x3 V3 (MagLev)"
 scope_class: core
 generation:
   label: "V3 (MagLev)"
