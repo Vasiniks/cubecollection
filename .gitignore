@@ -8,3 +8,6 @@ graphify-out/
 
 # Agent worktrees — transient, never part of the archive
 .claude/worktrees/
+
+# Playwright MCP scratch output (snapshots/console logs from browser research)
+.playwright-mcp/
