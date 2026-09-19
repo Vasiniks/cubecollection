@@ -266,3 +266,16 @@ evidence of who manufactures it.
 changes its status from `blocked` to a genuine `unknown` — searched, and not found, within a
 stated boundary. **Next: CNIPA directly** (`sbj.cnipa.gov.cn`), which WIPO does not index, plus
 `gsxt.gov.cn` for the company record behind any hit.
+
+#### CNIPA, attempted the same day: behind an anti-bot wall
+
+The WIPO finding above points at CNIPA as the register that would actually settle this. It was
+attempted immediately: `wcjs.sbj.cnipa.gov.cn/txnS01.do` returns HTTP 200 with the correct title
+(商标网上检索, "Trademark Online Search") but renders **an empty document** — `document.body`
+has zero length and the page contains **zero form inputs**. The served HTML is a
+`/_fec_sbu/fec_wrapper.js` loader plus an obfuscated token script, i.e. a bot-detection
+challenge that this browser does not clear. Waiting and re-reading changed nothing.
+
+Recorded as **blocked**, not as a negative result, and not retried further. A CNIPA search needs
+either a session that clears that challenge or a human at the keyboard. `gsxt.gov.cn`, for the
+company record behind any hit, was not attempted for the same reason.
