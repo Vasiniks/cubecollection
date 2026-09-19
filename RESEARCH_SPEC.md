@@ -211,6 +211,24 @@ TheCubicle and SpeedCubeShop house lines the archive has already canonicalised �
 absent from the 54-entity register. One retailer's regional catalogue can hold an entire entity
 the rest of the method never sees. Record the retailer checked and the outcome.
 
+*Known non-US channels, 2026-09-19.* Cubelelo (IN) is named above. **store.maru.tw** (小丸號,
+Taiwan) is a second, and it earns a mention for a specific reason: it publishes a **brand index**
+at `/index.php?route=product/manufacturer` pairing Chinese and Latin names for 49 brands, and
+per-brand pages at `?route=product/manufacturer/info&manufacturer_id=<id>`. The Chinese name is
+often the missing key — searching a Latin brand name alone has repeatedly returned unrelated
+companies (LeFun collides with a board-game site and an app studio; FanXin with a Shanghai
+exhibition-props firm 凡欣 and a Ningbo kitchenware exporter). Cubezz (CN) and
+china-magic-cube.com (CN) are also in use; the latter was checked on 2026-09-19 and carries no
+LeFun, Newisland, PBCube, CubeStyle or Ziina category, which is recorded so nobody re-checks it
+for those brands.
+
+**Two cautions when enumerating a brand page.** First, these storefronts render site-wide
+"you may like" and "bestseller" panels *on* a brand page; filter anchors on the brand's own
+manufacturer id **and** a product id, or you will read another brand's catalogue as this one's.
+Second, a Taiwanese source writes **traditional** characters while a mainland manufacturer writes
+**simplified** of itself (點盛/点盛, 藍藍/蓝蓝, 樂方/乐方). Record what the source actually shows
+and say which form it is; which form a company uses of *itself* is a separate question.
+
 **3. Sweep the retailer's BRAND FACET, not only its URL slugs.** *Added 2026-09-12 after the
 second Ziina sweep (ledger P4-10).* A prefix sweep assumes the brand name appears in the product
 path. That assumption has now failed three times and once completely. Mild cases are spelling:
