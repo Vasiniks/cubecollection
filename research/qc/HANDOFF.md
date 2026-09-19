@@ -5,7 +5,7 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  0b0a972 + this handoff commit
+HEAD:  860e073 + this handoff commit
 DATE:  2026-09-19 (late)
 
 COUNTS
@@ -13,7 +13,7 @@ manufacturers: 54
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      527
-sources:       607
+sources:       608
 events:        4
 
 VALIDATION
@@ -37,6 +37,30 @@ ENVIRONMENT — all verified this window, do not re-derive
   alarm this window. Write comparison files with mktemp inside the SAME command that reads them.
 
 LEDGER: 35 resolved / 15 open / 9 needs_human_decision (of 59)
+
+SESSION 2026-09-19, WINDOW 6b — P4-7's sweep RUN by main; MoreTry candidate adjudicated
+
+  P4-7's EMPIRICAL HALF NOW HAS AN ANSWER. Lane A validated the extractor and died before
+  sweeping; the main session ran the sweep. 18 products qualified by a NON-CIRCULAR rule — dated
+  2019+ by a source that is NOT TheCubicle. Of the 12 that yielded a value, ALL TWELVE carry
+  their own post-2018 Added: date and NONE carries 2018-09-11.
+    THE ONE APPARENT COUNTEREXAMPLE WAS FALSE and catching it is the point: dayan-zhanchi carries
+    the stamp, but the page is the ORIGINAL 57.0mm ZhanChi (2010-11), attached to the Pro M only
+    because thecubicle-dayan-zhanchi-descriptions covers FIVE generations in one record — the
+    same shared-source contamination audit sweep #14 records for GuHong. Unchecked, it would have
+    flipped the issue on a single bad row.
+    THREE strands now converge on the migration reading (this sweep, the value distribution, and
+    all seven stamped products with independent dating being pre-2018).
+    STATUS STAYS needs_human_decision: the remaining half is POLICY, and the issue forbids
+    resolving it by picking the reading that yields more data. Limits stated: 12 < the 15+ asked
+    for, pool skews QiYi/GAN, and a sweep can only fail to find a counterexample.
+
+  MORETRY X3+ V4 ADJUDICATED — a MODEL candidate, escalated to P4-9, not created. Its handle
+  (…x3-v4-3x3-maglev-uv) reads as a UV variant of a held model and I concluded that until I read
+  the page: the body calls it "the highly anticipated SUCCESSOR TO THE X3 V4" with "redesigned
+  internals". Different Shopify ids confirm two products. UNSETTLED and recorded as such: the
+  title says X3+ V4 (recency gap in the X3+ line the archive holds at V3) while the body says it
+  succeeds the PLAIN line's V4 — the retailer may be merging both lines under "+" branding.
 
 SESSION 2026-09-19, WINDOW 6 — four lanes launched, one completed, a real tool defect fixed
 
@@ -453,10 +477,10 @@ OPEN CRITICALS
 
 NEXT ACTION   (ordered)
 
-  1. AGENTS RESET AT 6:10am AMERICA/TORONTO. Four lanes have unfinished scope; relaunch after
+  1. AGENTS RESET AT 6:10am AMERICA/TORONTO. Three lanes have unfinished scope; relaunch after
      the reset, and READ each merged report's KILLED MID-RUN banner first so work is not redone:
-       P4-7 (lane A)      — extractor is validated; the 15+ product SWEEP never ran. This is
-                            still one experiment from resolving P4-7.
+       P4-7 (lane A)      — DONE by the main session, do NOT re-run. Only the POLICY half
+                            remains and it is the owner's, not a session's.
        Provenance (C)     — unrun beyond its method. Its scope section is sound.
        DaYan depth (E2)   — 15 of 16 targets unexamined by the deeper (non-US retailer) method.
        MoYu depth (F)     — committed nothing; entire scope unrun.
