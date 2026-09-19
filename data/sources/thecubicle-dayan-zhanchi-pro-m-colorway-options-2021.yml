@@ -1,0 +1,62 @@
+# source: thecubicle-dayan-zhanchi-pro-m-colorway-options-2021
+# Depth research 2026-09-19 (Lane E2). Same page and same archived capture as
+# thecubicle-dayan-zhanchi-descriptions (2021-09-22, https://www.thecubicle.com/products/dayan-zhanchi-pro-m-3x3),
+# NOT created by me this session -- that source's own excerpt covers only the generic
+# product-description paragraph. This is a NEW excerpt of the SAME capture, over the page's
+# structured "Options" selector and its embedded customer-review widget, neither of which the
+# existing source's excerpt reproduces. Per rule 42, this is one publisher and one capture, not
+# independent corroboration of the existing record -- it is cited here for a different claim
+# (colourway/configuration, not generic description), and is not treated as a second independent
+# tier-2 source alongside itself.
+id: thecubicle-dayan-zhanchi-pro-m-colorway-options-2021
+entity: source
+kind: retailer
+tier: 2
+title: "DaYan ZhanChi Pro M 3x3 -- colour options and customer reviews -- TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/dayan-zhanchi-pro-m-3x3"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210922083947id_/https://www.thecubicle.com/products/dayan-zhanchi-pro-m-3x3"
+excerpt: |-
+  Price/option list on the page: "Black - $34.99 USD", "Stickerless (Bright) - $34.99 USD",
+  "Light Green - $37.99 USD", "Black [CPS Serviced] - $39.99 USD", "Stickerless (Bright) [CPS
+  Serviced] - $39.99 USD". The page's own "Options" selector lists exactly three base colour
+  choices -- "Black", "Stickerless (Bright)", "Light Green" -- with "SELECTED: Black" as the
+  page's default. Directly beneath the price list, the page explains the two "[CPS Serviced]"
+  entries itself: "With Lube Service (+$5.00) *These are set up by the Cubicle Pro Shop (CPS)
+  with our in-house lubricants, and are ready for immediate shipment. Highly recommended when
+  available!" -- an optional lubrication add-on layered on top of a chosen colour, priced at a
+  flat +$5.00 over every base option, not a fourth DaYan-sold configuration.
+
+  Customer reviews embedded in the same capture (TheCubicle's own review widget, attributed
+  first-name + last-initial + country): Jarad L. (United States): "I got this cube in the green
+  plastic with rubber stickers and it is amazing." W.T. (United States): "it's nice but be aware
+  the black and green are not identical I just got the black one and it does not have the same
+  rubbery tiles like the green one does."
+preservation_note: "Fetched via `node scripts/wayback.mjs get` on 2026-09-19 against the exact
+  timestamp (20210922083947) already cited by thecubicle-dayan-zhanchi-descriptions, reproducing
+  a different section of the same capture (the Options/price widget and the customer-review
+  widget, both below the description paragraph that source already excerpts)."
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: dead
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2 for the price/options list -- TheCubicle's own structured selector and per-option
+  pricing, first-party retailer data, strong evidence that three distinct colourways were sold
+  as separately priced SKUs. The "[CPS Serviced]" pairing is read at face value from the page's
+  own explanatory text ("these are set up by... with our in-house lubricants") and is NOT
+  treated as a fourth or fifth colourway -- it is the checkout-time lube-service add-on
+  DATA_MODEL §4.3 excludes from variant status ("An optional service selected at checkout on a
+  cube the buyer already chose is not [a variant]").
+
+  The customer-review text is user-generated content hosted on a retailer page, not the
+  retailer's own copy -- held at tier 4 for that portion specifically (corroborates only, never
+  establishes alone), independent of the tier-2 rating given to the structured price/options
+  list above it. Used here only to corroborate the Speedsolving-wiki-adjacent claim that the
+  Light Green colourway carries a distinct ("rubbery"/non-vinyl) sticker material from Black,
+  never to establish the colourway axis itself, which rests on the tier-2 options list plus
+  independent tier-2 corroboration from Cubezz (see cubezz-dayan-zhanchi-pro-m-stickerless-2021
+  and cubezz-dayan-zhanchi-pro-m-light-green-2021).
+status: sourced

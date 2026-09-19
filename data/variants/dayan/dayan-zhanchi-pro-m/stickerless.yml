@@ -1,0 +1,39 @@
+# variant: dayan-zhanchi-pro-m--stickerless
+# Depth research 2026-09-19 (Lane E2). AXIS: colourway / sticker application. TheCubicle's own
+# "Options" selector for this exact product ("Black - $34.99 USD", "Stickerless (Bright) -
+# $34.99 USD", "Light Green - $37.99 USD") names this as one of three separately priced,
+# separately named colourways, and Cubezz.com independently sells it as its own SKU (DYZCPMC,
+# "Color: Stickerless"), a second retailer confirming it as a real sold configuration rather
+# than a TheCubicle-only naming choice. Two independent tier-2 sources -> `confirmed` per
+# rule 9. See research/qc/dayan-depth-lane-e2.md.
+id: dayan-zhanchi-pro-m--stickerless
+entity: variant
+model_id: dayan-zhanchi-pro-m
+name: "DaYan ZhanChi Pro M (Stickerless)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Stickerless (Bright)"
+  application: stickerless
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021, cubezz-dayan-zhanchi-pro-m-stickerless-2021]
+    note: >-
+      A stock colourway variation of the standard retail product, not a limited or
+      commemorative edition -- same treatment as gan-356-air--standard's stock-colour
+      baseline.
+  /colorway/designation:
+    confidence: confirmed
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021, cubezz-dayan-zhanchi-pro-m-stickerless-2021]
+    note: >-
+      TWO INDEPENDENT TIER-2 RETAILERS, non-identical wording: TheCubicle's own price/options
+      selector ("Stickerless (Bright) - $34.99 USD") and Cubezz's own structured spec field
+      ("Color: Stickerless") on its own SKU DYZCPMC. Rule 9's two-independent-tier-2 bar for
+      `confirmed` is met.
+  /colorway/application:
+    confidence: confirmed
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021, cubezz-dayan-zhanchi-pro-m-stickerless-2021]
+    note: "Both retailers use the word 'Stickerless' directly, not inferred."

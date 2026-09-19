@@ -1,0 +1,39 @@
+# source: cubezz-dayan-zhanchi-pro-m-stickerless-2021
+# Depth research 2026-09-19 (Lane E2). Non-US retailer (RESEARCH_SPEC §3.6a), independent
+# publisher from TheCubicle, corroborating the "Stickerless (Bright)" colourway TheCubicle's own
+# options list names -- a distinct SKU (DYZCPMC) rather than a generic mention.
+id: cubezz-dayan-zhanchi-pro-m-stickerless-2021
+entity: source
+kind: retailer
+tier: 2
+title: "DaYan ZhanChi Pro M Magnetic 3x3x3 Speed Cube Stickerless -- Cubezz.com"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-6554-DaYan+ZhanChi+Pro+M+Magnetic+3x3x3+Speed+Cube+Stickerless.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210616012529id_/https://cubezz.com/Buy-6554-DaYan+ZhanChi+Pro+M+Magnetic+3x3x3+Speed+Cube+Stickerless.html"
+excerpt: |-
+  "DaYan ZhanChi Pro M Magnetic 3x3x3 Speed Cube Stickerless ... Status : In Stock / Warranty :
+  One Year / SKU : DYZCPMC". "Features: .Brand new DaYan ZhanChi Pro M Magnetic 3x3x3 Speed Cube
+  Stickerless / . Twisting adjustment / .Handy control with stable feeling / .Soft silica
+  pasters / .Great for collection". "Specifications: .Brand: DaYan / .Color: Stickerless /
+  .Size: 56*56*56 mm / .Weight: 77g."
+preservation_note: "Fetched via `node scripts/wayback.mjs get` on 2026-09-19; URL and capture
+  timestamp located via a CDX filter sweep of cubezz.com for ZhanChi Pro M product pages."
+accessed: "2026-09-19"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US. The structured "Color: Stickerless" field and
+  the distinct SKU (DYZCPMC, separate from DYZCPMG below) are the load-bearing facts: an
+  independent second retailer selling this colourway as its own SKU. The "Soft silica pasters"
+  feature bullet is CUBEZZ'S OWN TEMPLATED BOILERPLATE, not evidence about this specific SKU --
+  it is reused verbatim on this retailer's Light Green ZhanChi Pro M listing too
+  (cubezz-dayan-zhanchi-pro-m-light-green-2021), and a stickerless cube cannot literally have
+  sticker "pasters" at all. This is flagged explicitly, per the mandate's evidence-discipline
+  instruction to report a probe's false-positive behaviour: a naive keyword sweep for
+  "silica"/"paster" text across Cubezz's DaYan catalogue would wrongly read this bullet as
+  differentiating evidence on every SKU it appears on. It is NOT used to support any claim in
+  this archive about this variant's sticker material.
+status: sourced
