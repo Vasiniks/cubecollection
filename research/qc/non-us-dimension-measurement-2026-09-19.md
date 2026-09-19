@@ -83,3 +83,54 @@ Does 3.6a check 2 mean **a non-US retailer used in discovery** (as written, and 
 **any non-US evidence**? They are different questions. The archive currently answers only the
 first, and now says so. If the answer is the second, the scan should widen and the twelve above
 are the immediate beneficiaries — but that is a methodology decision, not a reporting fix.
+
+---
+
+# A false second publisher, caught by §3.2 — and why this trap is built into the task
+
+Same session, same thread: closing out audit sweep #7's single-publisher list. **newisland** (10
+citations, TheCubicle only) appeared to gain a second publisher.
+`toypuzzleworld.com/product/newisland-lightning-black-primary/` sells the exact product the
+archive holds and carries a product description.
+
+It is **not** a second source. Its description is TheCubicle's, word for word:
+
+| | text |
+|---|---|
+| TheCubicle (`thecubicle-newisland-lightning`) | "The Newisland Lightning is a high-quality 3x3 speedcube marketed by Newisland. It rotates very smoothly right out of the box, and comes pre-lubricated from the factory." |
+| toypuzzleworld | "The Newisland Lightning is a high-quality 3x3 speedcube marketed by Newisland. It rotates very smoothly right out of the box, and comes pre-lubricated from the factory. It also comes with a mesh cube bag inside the sturdy box, as well as a maintenance/solution manual, replacement edge/…" |
+
+RESEARCH_SPEC 3.2 is unambiguous: *"Two listings with identical wording are one source."*
+**Nothing was recorded.**
+
+## Why this matters more than the missing citation
+
+The task "reduce single-publisher concentration" creates a direct incentive to find *a second
+retailer selling the same product* — and the cheapest such retailers are precisely the ones that
+copy the first one's product copy. Acting on this one would have:
+
+- moved sweep #7's concentration number without adding a single new fact;
+- given `newisland` a "second publisher" that is a mirror of the first;
+- created **false independent corroboration** — one of the provenance failure classes, and the
+  one §3.2 calls a human gate because no script can judge it.
+
+The metric would have improved and the archive would have got worse. That is the shape to watch
+for whenever a coverage number is the thing being optimised.
+
+## The check that catches it, and it is cheap
+
+Before recording any "second publisher", **diff its prose against the source already held**. Here
+it took one comparison. The tell was noticing the sentence rhythm looked familiar before the
+comparison was even run — a retailer writing its own copy does not usually reproduce another's
+clause order exactly.
+
+## Where this leaves the two remaining sweep-#7 targets
+
+- **newisland** (10 cites) — still TheCubicle only. The candidates found are an Amazon brand
+  store, ziicube, chickadvisor (a review aggregator) and toypuzzleworld (now rejected). Amazon is
+  tier 4 and a brand store is the vendor's own listing, which is worth checking as *first-party*
+  rather than as a second retailer.
+- **pbcube** (4 cites) — not attempted this session.
+
+Neither appears in store.maru.tw's brand index, and china-magic-cube.com carries no category for
+either.
