@@ -1,0 +1,45 @@
+# source: taobao-lefun-stickerless-3x3-2026
+# Corroborates the simplified-Chinese form of LeFun's name on an actual 3x3 (the maru.tw brand
+# page carries the traditional form, and its one bound product is a pyraminx). Tier 4 by kind:
+# a marketplace seller listing corroborates, it never establishes.
+id: taobao-lefun-stickerless-3x3-2026
+entity: source
+kind: marketplace
+title: "LEFUN乐方免贴纸三阶魔方 — Taobao listing (黄小姐的魔方店)"
+publisher: "Taobao"
+url: "https://www.taobao.com/list/item/bldyemowRVpSSklQTDd4cktuMlppZz09.htm"
+preservation_method: excerpt
+excerpt: |-
+  Visited 2026-09-19 in a rendering browser.
+
+  Document title, verbatim:
+  "LEFUN乐方免贴纸三阶魔方彩色实心顺滑扭转 初学者益智智力玩具-Taobao-Tmall"
+
+  Product heading on the page, verbatim:
+  "LEFUN乐方免贴纸三阶魔方彩色实心顺滑扭转 初学者益智智力玩具"
+
+  Category breadcrumb, verbatim: "首页 > 阿里B2C商城 > 车床/玩具 > 益智/魔方 > 魔方".
+  Price "¥ 9.80". Seller: "黄小姐的魔方店". No specification table, no dimensions, no weight.
+preservation_note: >-
+  ARCHIVABILITY UNDETERMINED, not unarchived — the same CDX attempt that covered
+  maru-tw-lefun-brand-page-2026 returned empty for a known-archived control in the same minute,
+  so nothing could be confirmed either way. Marketplace item URLs of this shape are also
+  session-ish and may not resolve indefinitely; the excerpt is the preservation.
+accessed: "2026-09-19"
+language: zh
+region: CN
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  TIER 4 by `vocab/source-kinds.yml`: a marketplace listing corroborates and never establishes.
+  It is cited for exactly one thing — that a seller pairs "LEFUN" with "乐方" on a 三阶魔方
+  (3x3 cube) — which corroborates the simplified form of the name mapping that
+  maru-tw-lefun-brand-page-2026 asserts in traditional characters.
+
+  Working translation of the title: "LEFUN Lefang stickerless 3x3 cube, colourful solid,
+  smooth turning, beginner educational puzzle toy". 乐方 reads literally as "happy square".
+
+  NOT INDEPENDENT CORROBORATION OF ANY SPEC. The page carries no specification table, so it is
+  cited for the name and nothing else. It also says nothing about the manufacturer's identity,
+  location or ownership — a Taobao seller is a reseller.
+status: sourced

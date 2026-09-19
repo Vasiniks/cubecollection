@@ -9,6 +9,11 @@ name: "LeFun"
 kind: manufacturer
 aliases:
   - "Lefun"
+  # LeFun's Chinese name, found 2026-09-19. Recorded because it is what any future first-party
+  # or Chinese-language search actually needs -- searching "LeFun" alone returns an online
+  # board-game site, an app studio and a lorem-ipsum shell company, none of them this brand.
+  - "乐方"
+  - "樂方"
 notes: |-
   **Identity.** TheCubicle's own structured spec field (thecubicle-lefun-formula-3x3, tier 2):
   "Manufacturer / Lefun", "Type / 3x3" on the "Lefun Formula 3x3" — a plain standard 3x3, not a
@@ -34,9 +39,29 @@ attestations:
   /country:
     confidence: unknown
     note: "Researched and not found this pass."
+  /aliases:
+    confidence: probable
+    sources: [maru-tw-lefun-brand-page-2026, taobao-lefun-stickerless-3x3-2026]
+    note: >-
+      乐方 (simplified) / 樂方 (traditional) is LeFun's Chinese name. The Taiwanese specialist
+      retailer store.maru.tw maintains "樂方 Lefun" as ONE brand entry -- in its document title,
+      its on-page heading, and the manufacturer id its product links carry -- which is a
+      structured assertion rather than a passing mention, and is the tier 2 source this
+      `probable` rests on. A Taobao seller listing independently pairs "LEFUN" with "乐方" on a
+      三阶魔方 (3x3), corroborating the simplified form; that source is tier 4 and corroborates
+      only. Held at `probable` rather than `confirmed`: one tier 2 source, uncontradicted.
   /website:
     confidence: unknown
-    note: "No domain checked or located this pass."
+    note: >-
+      SEARCHED 2026-09-19 AND NOT FOUND, which is what `unknown` means here -- upgraded from the
+      earlier "no domain checked" state. A Chinese-language search for the brand plus 魔方 and
+      官网 surfaced four LeFun-named domains and NONE is this manufacturer: lefun.fun is an
+      online board-game site, lefun.games and app.lefun.games are an unrelated app studio
+      ("LeFun Creative"), and lefungames.com presents as "Hong Kong Lefun Technology Co.,
+      Limited" but its body copy is still unedited lorem ipsum ("In at accumsan risus. Nam id
+      volutpat ante."), so it evidences nothing about anyone. The name collision is the finding:
+      it is why a domain search for this brand is unusually unreliable, and why the Chinese name
+      recorded in /aliases is the better search key.
   /notes:
     confidence: probable
     sources: [thecubicle-lefun-formula-3x3]

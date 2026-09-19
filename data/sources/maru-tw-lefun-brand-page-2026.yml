@@ -1,0 +1,60 @@
+# source: maru-tw-lefun-brand-page-2026
+# The FIRST non-TheCubicle publisher for LeFun in this archive. Audit sweep #7 lists lefun as
+# the archive's largest single-publisher concentration: 35 citations, all TheCubicle, no
+# first-party source. This does not fix that, but it breaks the single-publisher dependence for
+# one specific claim and supplies the brand's Chinese name, which is what any future first-party
+# search actually needs.
+id: maru-tw-lefun-brand-page-2026
+entity: source
+kind: retailer
+title: "樂方 Lefun — brand page, store.maru.tw (小丸號, Taiwan)"
+publisher: "store.maru.tw"
+url: "https://store.maru.tw/index.php?route=product/manufacturer/info&manufacturer_id=55"
+preservation_method: excerpt
+excerpt: |-
+  Visited 2026-09-19 in a rendering browser. The page is this store's brand entry for
+  manufacturer_id=55.
+
+  Document title, verbatim: "樂方 Lefun".
+  Brand heading on the page, verbatim: "樂方 Lefun" and "樂方 LEFUN".
+  Canonical URL as declared by the page:
+  "https://store.maru.tw/index.php?route=product/manufacturer/info&manufacturer_id=55".
+
+  One product is bound to this manufacturer id:
+  "樂方 - 異形方塊 - 鬼魔金字塔" (LeFun - shape mod - ghost pyraminx), product_id=2409,
+  linked as /index.php?route=product/product&manufacturer_id=55&product_id=2409.
+  It is a pyraminx, not a 3x3, and is therefore out of this archive's scope; it is recorded
+  here only because it demonstrates the brand entry carries a real product rather than being an
+  empty label.
+
+  WHAT IS DELIBERATELY NOT QUOTED FROM THIS PAGE. The page also renders about twenty products
+  under "猜你喜歡" (you may like), "最新商品" (newest) and "最熱賣" (bestsellers) — YuXin,
+  ShengShou, MuGua, DianSheng, YongJun, MoYu, QiYi and GanYuan items. Those are STORE-WIDE
+  RECOMMENDATION PANELS and belong to other brands; none is a LeFun product. Reading them as
+  this brand's catalogue is the recommendation-panel error this archive documents, and an
+  extraction pass on this page did exactly that before the products were checked by hand
+  against their brand labels.
+preservation_note: >-
+  ARCHIVABILITY UNDETERMINED, not unarchived. A CDX check was attempted on 2026-09-19 but the
+  Internet Archive was returning an empty result set for a KNOWN-ARCHIVED control URL in the
+  same minute, so no capture could be confirmed or ruled out for this URL. `excerpt` is used as
+  the safe treatment and the excerpt reproduces every claim this record is cited for. Worth one
+  re-check when the archive is answering normally; a query-string brand page may well never
+  have been crawled, in which case the excerpt is permanent.
+accessed: "2026-09-19"
+language: zh
+region: TW
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  A Taiwanese specialist cube retailer's own brand taxonomy. Tier 2 for the name mapping: the
+  store maintains 樂方 and Lefun as one brand entry, in its document title, its heading, and the
+  manufacturer id its product links carry. That is a structured assertion, not a passing mention.
+
+  Traditional characters 樂方 are the Taiwanese rendering; the simplified form is 乐方. The two
+  are the same name — see taobao-lefun-stickerless-3x3-2026, an independent publisher using the
+  simplified form on a 3x3.
+
+  IT DOES NOT ESTABLISH COUNTRY OR CORPORATE IDENTITY. A Taiwanese store selling the brand says
+  nothing about where LeFun is based or who owns it; `lefun.yml` keeps /country at `unknown`.
+status: sourced
