@@ -6,8 +6,13 @@
 # ownership and the public bundle all attach to the variant layer, never to the model.
 # A model with no variant cannot be exhibited at all.
 #
-# It does NOT assert that a product marketed as "Standard" was sold. It asserts that the
-# model was researched and no differentiated configuration was established.
+# UPDATED 2026-09-19 (Lane E2 depth research). The single-configuration assessment above is
+# SUPERSEDED: TheCubicle's own "Options" selector for this exact product sells three separately
+# priced colourways -- "Black", "Stickerless (Bright)", "Light Green" -- with "SELECTED: Black"
+# as the page default. This record is now recorded as the BLACK colourway specifically (the
+# retailer's own default/base option); its two siblings are
+# dayan-zhanchi-pro-m--stickerless and dayan-zhanchi-pro-m--light-green. See
+# research/qc/dayan-depth-lane-e2.md.
 id: dayan-zhanchi-pro-m--standard
 entity: variant
 model_id: dayan-zhanchi-pro-m
@@ -15,6 +20,11 @@ name: "DaYan ZhanChi Pro M"
 scope_class: core
 edition:
   types: [standard]
+colorway:
+  designation: "Black"
+  application: stickered
+  body:
+    plastic_color_name: "black"
 status: stub
 attestations:
   /edition/types:
@@ -26,4 +36,28 @@ attestations:
       source located, so the model's single regular retail configuration is recorded
       here. The cited source establishes the product itself; no source was found
       differentiating configurations of it. A later pass finding an axis should add
-      variants alongside this one rather than replacing it."
+      variants alongside this one rather than replacing it.
+
+      SUPERSEDED 2026-09-19: a colourway axis WAS found (see /colorway/designation below).
+      Left in place per house style (cf. dayan-zhanchi-v1--standard) rather than deleted, so
+      the history of the assessment stays visible."
+  /colorway/designation:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021]
+    note: >-
+      TheCubicle's own structured price/options selector lists "Black" as one of three
+      separately priced colourways ("Black - $34.99 USD"), pre-selected as the page default
+      ("SELECTED: Black"). Held at `probable` (single tier-2 retailer for Black specifically):
+      unlike Stickerless and Light Green, no independent second retailer (Cubezz swept this
+      pass) was found selling a plain "Black" ZhanChi Pro M SKU -- see
+      research/qc/dayan-depth-lane-e2.md for the negative check.
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021]
+    note: >-
+      Inferred from the three-way split against the explicitly named "Stickerless (Bright)"
+      sibling option: if one named option is stickerless, the other two (including this one)
+      are stickered by exclusion. No source uses the word "stickered" for Black specifically;
+      a TheCubicle customer review independently corroborates ordinary (non-"rubbery") stickers
+      on Black by contrast with Light Green ("the black one... does not have the same rubbery
+      tiles like the green one does" -- same source, its own excerpt).

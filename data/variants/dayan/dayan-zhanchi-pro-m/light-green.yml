@@ -1,0 +1,79 @@
+# variant: dayan-zhanchi-pro-m--light-green
+# Depth research 2026-09-19 (Lane E2). AXIS: colourway / sticker material. TheCubicle's own
+# "Options" selector prices this SEPARATELY from Black/Stickerless ("Light Green - $37.99 USD"
+# vs. $34.99 for the other two), and Cubezz.com independently sells it as its own SKU (DYZCPMG,
+# "Color: Light Green"). Two independent tier-2 sources -> `confirmed` for the colourway's
+# existence per rule 9. A further, narrower claim -- that this colourway uses a distinct
+# ("rubbery"/tiled) sticker material rather than ordinary vinyl stickers -- rests on tier-4
+# customer-review corroboration only and is held at `reported`, deliberately not promoted. See
+# research/qc/dayan-depth-lane-e2.md, including the measured false-positive rate on Cubezz's
+# templated "Soft silica pasters" marketing bullet (identical text also appears on the
+# STICKERLESS listing, so it cannot by itself be read as sticker-material evidence).
+id: dayan-zhanchi-pro-m--light-green
+entity: variant
+model_id: dayan-zhanchi-pro-m
+name: "DaYan ZhanChi Pro M (Light Green)"
+scope_class: core
+edition:
+  types: [standard]
+colorway:
+  designation: "Light Green"
+  application: stickered
+  body:
+    plastic_color_name: "light green"
+significance: >-
+  Community and customer-review evidence (never manufacturer-confirmed, so not entered into
+  `colorway.body.finish` or `faces[].material` at anything above `reported`) describes this
+  colourway as shipping with a distinctive non-vinyl sticker material, described as "rubbery"
+  and explicitly contrasted with the Black colourway on the SAME retailer page: TheCubicle
+  customer review, W.T. (United States): "be aware the black and green are not identical I just
+  got the black one and it does not have the same rubbery tiles like the green one does." A
+  second customer, Jarad L. (United States), independently describes "green plastic with rubber
+  stickers." The Speedsolving wiki, independently, uses closely matching language ("a light
+  green version that comes with rubbery stickers") but that source's own established policy
+  (speedsolving-wiki-dayan-products, reliability_note) forbids using it for specification-type
+  claims, so it is not cited here as an attestation source -- it is noted only as unattributed
+  corroborating context, consistent with (never the basis for) the customer-review evidence
+  that IS cited.
+status: stub
+attestations:
+  /edition/types:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021, cubezz-dayan-zhanchi-pro-m-light-green-2021]
+    note: >-
+      A stock colourway variation of the standard retail product, not a limited or
+      commemorative edition -- same treatment as gan-356-air--standard's stock-colour baseline,
+      despite the price premium (a pricing difference alone does not make an edition, per
+      DATA_MODEL §4.1: "price differences alone" do not require a new variant on their own, but
+      the colourway/sticker-material difference documented here independently does).
+  /colorway/designation:
+    confidence: confirmed
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021, cubezz-dayan-zhanchi-pro-m-light-green-2021]
+    note: >-
+      TWO INDEPENDENT TIER-2 RETAILERS, non-identical wording: TheCubicle's own price/options
+      selector ("Light Green - $37.99 USD", priced above the $34.99 base) and Cubezz's own
+      structured spec field ("Color: Light Green") on its own SKU DYZCPMG. Rule 9's
+      two-independent-tier-2 bar for `confirmed` is met.
+  /colorway/application:
+    confidence: probable
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021]
+    note: >-
+      Read as "stickered" by exclusion against the model's explicitly named "Stickerless
+      (Bright)" sibling. Held at `probable` rather than `confirmed` because no source uses the
+      word "stickered" for this SKU directly -- the strongest direct evidence instead describes
+      an unusual sticker MATERIAL, not merely that stickers are present (see below).
+  /colorway/body/plastic_color_name:
+    confidence: confirmed
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021, cubezz-dayan-zhanchi-pro-m-light-green-2021]
+    note: "Both retailers name the colour 'Light Green' directly in structured fields."
+  /significance:
+    confidence: reported
+    sources: [thecubicle-dayan-zhanchi-pro-m-colorway-options-2021]
+    note: >-
+      Tier 4 (customer reviews on a retailer page, not the retailer's own copy) is the ceiling
+      here; rule 9 forbids `confirmed` without tier 1 or two independent tier 1-2 sources, and
+      this rests on one page's embedded reviews. Recorded in `significance` prose rather than a
+      structured `colorway.body.finish`/`faces[].material` field because the schema's material
+      enum (plastic | vinyl_sticker | printed | inlay) has no value matching a "rubbery tile"
+      description, and forcing it into the nearest enum value would overstate precision this
+      evidence does not have.

@@ -1,0 +1,39 @@
+# source: cubezz-dayan-zhanchi-pro-m-light-green-2021
+# Depth research 2026-09-19 (Lane E2). Non-US retailer (RESEARCH_SPEC §3.6a), independent
+# publisher from TheCubicle, corroborating the "Light Green" colourway TheCubicle's own options
+# list names -- a distinct SKU (DYZCPMG) rather than a generic mention.
+id: cubezz-dayan-zhanchi-pro-m-light-green-2021
+entity: source
+kind: retailer
+tier: 2
+title: "DaYan ZhanChi Pro M Magnetic 3x3x3 Speed Cube Light Green -- Cubezz.com"
+publisher: "Cubezz.com"
+url: "https://cubezz.com/Buy-6599-DaYan+ZhanChi+Pro+M+Magnetic+3x3x3+Speed+Cube+Light+Green.html"
+preservation_method: archive_url
+archive_url: "https://web.archive.org/web/20210802092201id_/https://cubezz.com/Buy-6599-DaYan+ZhanChi+Pro+M+Magnetic+3x3x3+Speed+Cube+Light+Green.html"
+excerpt: |-
+  "DaYan ZhanChi Pro M Magnetic 3x3x3 Speed Cube Light Green ... Status : In Stock / Warranty :
+  One Year / SKU : DYZCPMG". "Features: .Brand new Light Green DaYan ZhanChi Pro M Magnetic
+  3x3x3 Speed Cube / . Twisting adjustment / .Handy control with stable feeling / .Soft silica
+  pasters / .Great for collection". "Specifications: .Brand: DaYan / .Color: Light Green /
+  .Size: 56*56*56 mm / .Weight: 77g." Related-top-sellers list on the same page names a distinct
+  sibling SKU, "DaYan ZhanChi Pro M Magnetic 3x3x3 Speed Cube Stickerless".
+preservation_note: "Fetched via `node scripts/wayback.mjs get` on 2026-09-19; URL and capture
+  timestamp located via a CDX filter sweep of cubezz.com for ZhanChi Pro M product pages."
+accessed: "2026-09-19"
+language: en
+region: CN
+link_status: dead
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, first-party retailer listing, non-US. The structured "Color: Light Green" field and
+  the distinct SKU (DYZCPMG) are the load-bearing facts establishing this as a second retailer's
+  own separately sold configuration, independent of TheCubicle's listing. The "Soft silica
+  pasters" feature bullet is CUBEZZ'S OWN TEMPLATED BOILERPLATE reused verbatim across this
+  retailer's ZhanChi Pro M SKUs (see cubezz-dayan-zhanchi-pro-m-stickerless-2021, where the
+  identical bullet appears on a stickerless listing that cannot have sticker "pasters" at all),
+  so it is NOT used alone to establish a distinctive sticker material for this specific SKU. The
+  distinctive sticker-material claim ("rubbery"/"tiled", as opposed to Black's ordinary
+  stickers) rests instead on thecubicle-dayan-zhanchi-pro-m-colorway-options-2021's tier-4
+  customer-review corroboration, held at `reported`, never `confirmed`.
+status: sourced
