@@ -700,7 +700,7 @@ keeps TheCubicle's own pages counted as first-party for its own division.
 
   - id: P3-T3
     severity: low
-    status: open
+    status: needs_human_decision
     title: "No relationship type for a shared manufacturing platform across brands"
     category: schema-gap
     affected_records: [vocab/relationship-types.yml]
@@ -714,6 +714,26 @@ keeps TheCubicle's own pages counted as first-party for its own division.
       TheCubicle's Connected listing was unchanged through Rubik's own rename; Particula's 2024
       storefront lists neither X SKU. No dimensions or weight for Connected X were found to
       compare against GoCube X's 57.0mm/103.0g.
+2026-09-19 - RECLASSIFIED to needs_human_decision. Nothing new was researched, and that is the
+point: this issue is not waiting on evidence.
+The investigation is complete and its verdict stands - Particula manufactures Rubik's Connected,
+so particula-gocube-x and rubiks-connected-x plausibly share a platform, but a shared
+manufacturer and a shared app do not establish shared hardware, and the identical-hardware
+sub-question was explicitly left unresolved. The archive correctly recorded NO relationship
+rather than misusing rebrand_of.
+WHAT REMAINS IS A VOCABULARY DESIGN DECISION, not a research task: whether to add a relationship
+type such as `manufactured_by` or `shared_platform_with` to vocab/relationship-types.yml.
+  OPTION A - add the type. The archive can then record a real, sourced commercial relationship it
+  currently has to leave silent. Cost: a new vocabulary value whose boundary needs defining
+  (every sub-brand relationship already handled by parent_id would become eligible to restate as
+  an edge), and every existing pair would want revisiting for consistency.
+  OPTION B - leave it unrecorded, as this entry recommends. Cost: a true fact stays absent, and
+  it is a fact an exhibition would plausibly want to show ("Particula manufactures Rubik's
+  Connected"). Benefit: no wrong typed edge, and this entry's own reasoning holds - "a wrong
+  typed edge is harder to retract than an absent one".
+NO EVIDENCE WILL DECIDE BETWEEN THESE. It is a modelling choice about what the data model should
+be able to say, which makes it the owner's rather than a session's. Moved out of `open` so the
+open list means "work remains" rather than "a decision is pending".
     counterevidence: >-
       A shared manufacturer and shared app do not establish shared hardware. The archive
       correctly recorded no relationship rather than forcing rebrand_of.
@@ -724,7 +744,7 @@ keeps TheCubicle's own pages counted as first-party for its own division.
     confidence: medium
     downstream_impact: "None for Pass 3. Relevant to Pass 4 variant work on smart cubes."
     owner: main
-    last_updated: "2026-09-04"
+    last_updated: "2026-09-19"
 
   - id: P3-T4
     severity: high
@@ -1624,7 +1644,7 @@ bounded residual, not an open research thread.
 
   - id: P26-15
     severity: low
-    status: open
+    status: resolved
     title: "Tank/Gem mould geometry remains unproven; the finding rests on naming"
     category: taxonomy-boundary
     affected_records:
@@ -1638,6 +1658,29 @@ bounded residual, not an open research thread.
       era, and no macro shot of edge or corner-cut geometry exists in any crawled asset. A web
       search for direct forum or review comparisons was cut short by budget and is recorded as
       not searched to completion rather than as nothing found.
+2026-09-19 - RESOLVED as a documented evidence limitation. Both evidence paths this entry named
+are now exhausted, and the finding it qualifies is unchanged.
+PATH 1, A MACRO GEOMETRY SHOT: established already by P26-12 - no macro shot of edge or
+corner-cut geometry exists in any crawled asset. Nothing new was found.
+PATH 2, A DIRECT COMPARISON REVIEW: this entry recorded the search as "cut short by budget and is
+recorded as not searched to completion rather than as nothing found". It has now been run to
+completion. A query requiring BOTH exact phrases, "ShengShou Tank" and "ShengShou Gem", returns
+NO RESULTS. A control in the same pass - the single phrase "ShengShou Gem" with 3x3 - returns six
+real product pages (TheCubicle, cubezz, AliExpress, championscubestore and others), so the engine
+answers and the term is indexed. The zero is therefore a genuine negative and not an engine
+failure: no indexed page discusses the two cubes together, so no direct comparison review exists
+to find.
+WHAT THIS CHANGES: nothing about the archive, and that is the correct outcome. P26-12's verdict
+stands exactly as recorded - Tank and Gem are DISTINCT at `probable`, resting on two unrelated
+native names on the manufacturer's own packaging (坦克 against 宝石) and on parallel-range
+catalogue behaviour, explicitly NOT on geometry. Both families stand, as this entry recommended.
+WHY IT CLOSES RATHER THAN STAYING OPEN: an issue should stay open when work remains. Here no
+evidence path remains that this archive can reach - proving mould geometry needs physical
+specimens or macro photography that does not exist in any reachable source. The limitation is
+real and is carried forward as a KNOWN LIMITATION of the archive rather than as an open research
+task. If a macro shot or a comparison review ever surfaces, this entry says what to do: revisit -
+and note that even a shared mould would not by itself merge two lines the manufacturer names
+differently.
     counterevidence: >-
       Two unrelated native names on the manufacturer's own packaging is strong evidence against a
       rename, and the parallel-range management (Gem's 4x4 added three months after Gem 3x3 was
@@ -1651,7 +1694,7 @@ bounded residual, not an open research thread.
       None material for Pass 4. Both families exist and each holds one model; variants enumerate
       under whichever parent they belong to regardless of whether the moulds turn out related.
     owner: main
-    last_updated: "2026-09-08"
+    last_updated: "2026-09-19"
 
   # ---- Pass 4 findings (2026-09-08) -------------------------------------------
 
