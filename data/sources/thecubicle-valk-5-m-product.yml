@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table. "Type: 5x5" and "a fast, smooth 5x5" are unambiguous. Out of scope per RESEARCH_SPEC section 2.4; no model created for it under qiyi-valk in this pass.
 status: sourced

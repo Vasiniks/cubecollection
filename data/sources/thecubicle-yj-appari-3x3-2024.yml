@@ -27,8 +27,8 @@ preservation_note: "archive_url is the id_ (raw) Wayback capture, tags stripped 
 accessed: "2026-09-07"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-07"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer product page with a structured spec table, describing a named,
   distinct mechanism ("speed-enhancing ball bearings" in an "innovative washer") not shared

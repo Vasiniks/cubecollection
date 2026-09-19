@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description. "a factory magnetized version of" the base Valk 3 is explicit, direct evidence of DATA_MODEL section 4.2's worked decision A (same shell, magnets chosen at assembly = variant, not model). Cited to support treating Valk 3 M as a variant of qiyi-valk-3, not modelled separately in this pass.
 status: sourced

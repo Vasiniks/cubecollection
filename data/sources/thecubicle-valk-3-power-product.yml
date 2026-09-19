@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description. "a dual vertical core, capped pieces, pure primary internals" names specific internal-construction features distinct from the base Valk 3's description, treated as evidence of a different underlying design (DATA_MODEL section 4.2), not a configuration of the base Valk 3. "the newest 3x3 under the iconic Valk line" is marketing framing (tier 4 under RESEARCH_SPEC 3.3) and is not relied on for release-order or succession claims.
 status: sourced

@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table, corroborating (independently of the qiyi-mp family's wiki-sourced mention of "the X-Man Tornado V2... 54.5mm") that Tornado V2 is a genuine, distinct, magnetic 3x3 generation. This source gives 55.0mm rather than the wiki's 54.5mm; recorded as the retailer's own directly-measured spec-table figure, preferred per RESEARCH_SPEC's tier ordering over the wiki's uncorroborated number, and the wiki's competing figure is not used for `specs.size_mm`.
 status: sourced

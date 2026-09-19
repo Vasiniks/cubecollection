@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table, confirming (via "Type: 4x4") that this is a magnet-strength configuration of the same 4x4 product as thecubicle-valk-4-m-standard-product, not a 3x3. Out of scope per RESEARCH_SPEC section 2.4; no model created.
 status: sourced

@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description. "which was first released to the market in August 2016" is an explicit dated release statement for the BASE Valk 3 (not merely a catalogue "Added" artifact), used as the basis for qiyi-valk-3's own `announced`/`released` date. "due to high-precision molding" at 47.4mm (vs the base's 55.5mm) is the basis for treating the Mini as its own model — a size difference of this magnitude requires distinct tooling, not a same-mold configuration choice.
 status: sourced

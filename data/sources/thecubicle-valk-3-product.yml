@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description and spec table for the base (stickered, non-magnetic) Valk 3 configuration. "Added: 2018-09-11" also appears in this table; per this archive's standing policy this catalogue-migration artifact is not used as a release date. `size_mm: 55.5` is taken from this table.
 status: sourced

@@ -21,8 +21,8 @@ preservation_note: "archive_url is the id_ (raw) Wayback capture, tags stripped 
 accessed: "2026-09-07"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-07"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer product page with a structured spec table. The "Added:
   2023-05-19" field is a retailer catalogue date, not a release date (see companion source

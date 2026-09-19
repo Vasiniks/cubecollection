@@ -27,11 +27,19 @@ excerpt: |-
   this retailer, "CubeTwist Bag" (an accessory, first captured 2012-12-08 as
   `Accessories/Accessories-CubeTwist-Bag`, later re-pathed to `accessories/cubetwist-bag` by
   2013-08-24), confirms the brand was carried with at least one real SKU in 2012-2013.
+preservation_note: >-
+  CONFIRMED DEAD 2026-09-19. This URL returned HTTP 404 on 2026-09-14 and again on
+  2026-09-19, five days apart, from a user agent that the same host answers 200 for on
+  other paths. The first observation was deliberately NOT acted on: re-verification
+  attempts that day all returned 429 because the host had rate-limited this IP, and one
+  unconfirmed observation is not enough to mark a source dead. A second independent 404
+  is. The evidence is unaffected either way -- this record preserves the page through its
+  archive_url, which is exactly the case archive_url exists for.
 accessed: "2026-09-08"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-08"
+link_status: dead
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer structured data (a dedicated manufacturer/brand page is a
   stronger signal of brand recognition than a product-title mention), non-China/Western

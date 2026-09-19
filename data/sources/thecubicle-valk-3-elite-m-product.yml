@@ -13,8 +13,8 @@ excerpt: |-
 accessed: "2026-09-03"
 language: en
 region: US
-link_status: unchecked
-last_checked: "2026-09-03"
+link_status: live
+last_checked: "2026-09-19"
 reliability_note: |-
   Tier 2, first-party retailer description. "a brand new magnetic system" combined with "QiYi introduced its own version of an elasticity adjustment system" is direct retailer language naming a new adjustment mechanism (not merely a magnet-strength option chosen at assembly on an existing shell), the basis for treating Elite as its own model under DATA_MODEL section 4.2 rather than a configuration of the base Valk 3 or of Valk 3 Power.
 status: sourced
