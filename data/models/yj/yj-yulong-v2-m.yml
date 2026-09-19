@@ -10,6 +10,17 @@ entity: model
 family_id: yj-yulong
 manufacturer_id: yj
 name: "YJ YuLong V2 M"
+aliases:
+  # P4-9 Lane D, 2026-09-19. Settles the refusal in p4-9-alias-blindness-2026-09-12.md: was the
+  # catalogue-gap candidate "YJ YuLong 3x3 V2" (no "M") a genuine non-magnetic product, since YJ
+  # sells both magnetic and non-magnetic lines? speedcubeshop-yj-yuxin-magnet-facet-p4-9-lane-d-2026
+  # reproduces SpeedCubeShop's ENTIRE "yj" brand facet filtered to "YuLong": all 3 SKUs under
+  # this line are explicitly "(Magnetic)"; none is bare or "(Non-Magnetic)". The candidate is a
+  # catalogue-gap title-truncation artefact (the script's line-splitting regex cuts the title at
+  # the first bracket, dropping "(Magnetic)"), not a second product. "(Magnetic)" is
+  # SpeedCubeShop's spelled-out form of the "M" already in this model's own name — no attribute
+  # is added or removed by expanding the abbreviation.
+  - "YJ YuLong 3x3 V2 (Magnetic)"
 scope_class: core
 generation:
   label: "V2 M"

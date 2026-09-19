@@ -1,0 +1,85 @@
+# source: thecubicle-yj-yuxin-magnet-facet-p4-9-lane-d-2026
+# Created 2026-09-19, P4-9 Lane D, Task 1. Companion to
+# `speedcubeshop-yj-yuxin-magnet-facet-p4-9-lane-d-2026`, same purpose, at TheCubicle: settles
+# whether a NON-magnetic "YJ YuLong V2", "YuXin Little Magic V2", or "YuXin Little Magic V3" was
+# ever sold under those exact bare names, per the ambiguity
+# `research/qc/p4-9-alias-blindness-2026-09-12.md` refused to resolve.
+id: thecubicle-yj-yuxin-magnet-facet-p4-9-lane-d-2026
+entity: source
+kind: retailer
+title: "TheCubicle YJ and YuXin brand-collection facets, filtered to YuLong V2 / Little Magic V2 and V3 (2026-09-19)"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/collections/yj/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Queried 2026-09-19: `/collections/yj/products.json?limit=250` (105 total products, single
+  page) and `/collections/yuxin/products.json?limit=250` (99 total products, single page).
+  Below is the FULL and complete set of returned products whose title contains "YuLong" or
+  "Little Magic" and is typed 3x3 (not 2x2/4x4/.../Megaminx/Pyraminx/Skewb/Square-1 siblings) —
+  not a sample; every matching product is listed.
+
+  yj collection, "YuLong", 3x3 line only (5 of 105 total products; the Pyraminx sibling is
+  listed for completeness but is out of 3x3 scope):
+    - "YJ YuLong 3x3 V3 M (UV Coated + Clicky)" — handle: yj-yulong-3x3-v3-m-uv-coated-clicky,
+      vendor: YJ, published_at: 2025-04-30 (yj-yulong-v3-m variant, not this record's subject)
+    - "YJ YuLong 3x3 V2 M" — handle: yj-yulong-v2-m, vendor: YJ, published_at: 2019-03-19
+    - "YJ YuLong 3x3 V3 M (UV Coated)" — handle: yj-yulong-3x3-v3-m-uv-coated, vendor: YJ,
+      published_at: 2025-04-24 (yj-yulong-v3-m variant, not this record's subject)
+    - "YJ YuLong 3x3 V3 M" — handle: yj-yulong-3x3-v3-m, vendor: YJ, published_at: 2025-04-02
+      (yj-yulong-v3-m, not this record's subject)
+    - "YJ YuLong Pyraminx V2 M" — handle: yj-yulong-pyraminx-v2-m, vendor: YJ (not a 3x3, listed
+      only so the filter above is not misread as incomplete)
+  The handle of the second line, `yj-yulong-v2-m`, is the EXACT slug the archive's own already-
+  bound source `thecubicle-yj-yulong-v2-m-product` cites for this model. Every V2-generation
+  YuLong title at this host carries "M" — none is bare "V2", and none is titled
+  "V2 (Non-Magnetic)".
+
+  yuxin collection, "Little Magic", 3x3 line only (10 of 99 total products; non-3x3 siblings —
+  2x2/4x4/5x5/6x6/7x7/10x10/11x11/Pyraminx/Skewb/Square-1/Megaminx — omitted as irrelevant):
+    - "YuXin Little Magic 3x3" — handle: yuxin-little-magic-3x3, vendor: YuXin,
+      published_at: 2018-09-11 (the non-magnetic ORIGINAL, yuxin-little-magic-original)
+    - "YuXin Little Magic 3x3 M" — handle: yuxin-little-magic-3x3-m, vendor: YuXin,
+      published_at: 2020-08-21 (magnetic configuration of the ORIGINAL generation, no "V2"
+      token — not this record's V2/V3 subject)
+    - "YuXin Little Magic 3x3 V2 M" — handle: yuxin-little-magic-3x3-v2-m, vendor: YuXin,
+      published_at: 2021-10-27 — the EXACT slug the model's own description
+      (yuxin-little-magic-v2.yml) already cites via thecubicle-yuxin-collection-2025
+    - "YuXin Little Magic 3x3 M UV" — handle: yuxin-little-magic-3x3-m-uv, vendor: YuXin,
+      published_at: 2024-09-26 (UV variant of the magnetic ORIGINAL, not V2)
+    - "YuXin Little Magic 3x3 V2 M UV" — handle: yuxin-little-magic-3x3-v2-m-uv, vendor: YuXin,
+      published_at: 2024-09-26 (UV variant of V2 M)
+    - "YuXin Little Magic 3x3 V3 (MagLev)" — handle: yuxin-little-magic-3x3-v3-maglev,
+      vendor: YuXin, published_at: 2024-12-30
+    - "YuXin Little Magic 3x3 V3 (MagLev + UV)" — handle: yuxin-little-magic-3x3-v3-maglev-uv,
+      vendor: YuXin, published_at: 2024-12-30
+  Every V2-generation title carries "M"; every V3-generation title carries "(MagLev)". None is
+  bare "V2" or "V3" alone, and none is titled "(Non-Magnetic)" or "(Non-MagLev)".
+
+  CONTROL, run before this claim was trusted: this same collection lists BOTH the non-magnetic
+  original ("YuXin Little Magic 3x3") AND its magnetic sibling ("YuXin Little Magic 3x3 M") as
+  separate real SKUs — proving TheCubicle DOES list bare non-magnetic titles where a non-magnetic
+  configuration actually exists, and does not suppress them. Its failure to list a bare,
+  non-magnetic "V2" or non-MagLev "V3" is therefore evidence of absence, not a method artefact.
+preservation_note: >-
+  Live catalogue query, not an archive capture — a vendor facet has no Wayback equivalent (see
+  RESEARCH_SPEC 3.6a). THIS RECORD PRESERVES NOTHING ON ITS OWN and makes no specification, date,
+  or identity claim beyond what Shopify's own JSON fields state (title, vendor, handle,
+  published_at). published_at is a LISTING date, never a release date. A single observation by a
+  single observer (this agent) at a single moment (2026-09-19).
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure, vendor-gated.
+  ESTABLISHES: TheCubicle sells no product titled bare "YJ YuLong V2", "YuXin Little Magic V2",
+  or "YuXin Little Magic V3" without an explicit magnetic/MagLev designator, as of 2026-09-19 —
+  resolving the ambiguity in p4-9-alias-blindness-2026-09-12.md. Also establishes that
+  TheCubicle's own naming for the V2 M and V3 MagLev lines already matches (V2 M) or is token-
+  identical modulo word order and the non-discriminating "3x3" token to (V3 MagLev) the
+  archive's existing model names, once the catalogue-gap script's bracket-truncation of the
+  full title is accounted for (see report).
+  DOES NOT ESTABLISH: that no non-magnetic V2 or non-MagLev V3 was EVER sold by any retailer at
+  any time — a single live snapshot, not a historical sweep.
+status: sourced

@@ -1,0 +1,83 @@
+# source: speedcubeshop-yj-yuxin-magnet-facet-p4-9-lane-d-2026
+# Created 2026-09-19, P4-9 Lane D, Task 1. Settles whether SpeedCubeShop ever sold a
+# NON-magnetic "YJ YuLong V2" or "YuXin Little Magic V2" under those exact bare names — the
+# ambiguity `research/qc/p4-9-alias-blindness-2026-09-12.md` refused to resolve, because YJ and
+# YuXin both sell magnetic and non-magnetic lines. Queried live via the vendor/brand facet
+# (`/collections/<brand>/products.json?limit=250`), the same method as
+# `qiyi-yj-yuxin-shengshou-vendor-facet-lane-b-2026`, for the two brands that facet did not cover.
+id: speedcubeshop-yj-yuxin-magnet-facet-p4-9-lane-d-2026
+entity: source
+kind: retailer
+title: "SpeedCubeShop YJ and YuXin brand-collection facets, filtered to YuLong V2 / Little Magic V2 (2026-09-19)"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/collections/yj/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Queried 2026-09-19: `/collections/yj/products.json?limit=250` (63 total products, single page,
+  no pagination needed) and `/collections/yuxin/products.json?limit=250` (45 total products,
+  single page). Below is the FULL and complete set of returned products whose title contains
+  "YuLong" (from the yj collection) or "Little Magic" (from the yuxin collection) — not a
+  sample; every matching product in each collection is listed, so the absence of a bare
+  non-magnetic "V2" title below is itself the evidence.
+
+  yj collection, titles containing "YuLong" (3 of 63 total products):
+    - "YJ YuLong 3x3 V2 (Magnetic, UV Coated) - Clicky, 2025 Edition"
+      handle: yj-yulong-3x3-v2-magnetic-uv-coated-clicky-2025-edition, vendor: YJ,
+      published_at: 2025-06-29
+    - "YJ YuLong 3x3 V2 (Magnetic) - 2025 Edition"
+      handle: yj-yulong-3x3-v2-magnetic-2025-edition, vendor: YJ, published_at: 2025-06-29
+    - "YJ YuLong 3x3 V2 (Magnetic, UV Coated) - 2025 Edition"
+      handle: yj-yulong-3x3-v2-magnetic-uv-coated-2025-edition, vendor: YJ,
+      published_at: 2025-06-29
+  ALL THREE carry "(Magnetic)" explicitly. None omits a magnetic designator. No SKU titled
+  bare "YJ YuLong 3x3 V2" or "YJ YuLong 3x3 V2 (Non-Magnetic)" exists in this collection.
+
+  yuxin collection, titles containing "Little Magic" (12 of 45 total products; only the 3x3,
+  non-"V3" lines are relevant here — the V3 MagLev line is covered by the companion TheCubicle
+  source):
+    - "YuXin Little Magic 3x3 V2 (Magnetic)"
+      handle: yuxin-little-magic-3x3-v2-magnetic, vendor: YuXin, published_at: 2021-10-23
+    - "YuXin Little Magic 3x3 V2 (Magnetic, UV Coated)"
+      handle: yuxin-little-magic-3x3-v2-magnetic-uv-coated, vendor: YuXin,
+      published_at: 2024-11-21
+    - "YuXin Little Magic 3x3 (Magnetic)"
+      handle: yuxin-little-magic-3x3-magnetic, vendor: YuXin, published_at: 2020-08-21
+      (magnetic configuration of the ORIGINAL Little Magic, no "V2" token — out of scope for
+      this record, listed only so the "V2" filter above is not misread as incomplete)
+    - "YuXin Little Magic 3x3"
+      handle: yuxin-little-magic-3x3, vendor: YuXin, published_at: 2017-08-26
+      (the non-magnetic ORIGINAL — yuxin-little-magic-original — not a V2 or V3 candidate)
+    - (the remaining 8 "Little Magic" titles in this collection are 2x2/Megaminx/Pyraminx/
+      Skewb/Square-1 puzzles, out of 3x3 scope, omitted here as irrelevant to this claim)
+  BOTH 3x3 V2 SKUs carry "(Magnetic)" explicitly. No SKU titled bare "YuXin Little Magic 3x3 V2"
+  or "...V2 (Non-Magnetic)" exists in this collection.
+
+  CONTROL, run before this claim was trusted: the same query surfaces
+  "YuXin Little Magic 3x3 (Magnetic)" as a DISTINCT product from the non-magnetic
+  "YuXin Little Magic 3x3" (both present, both real SKUs) for the ORIGINAL generation — proving
+  this storefront DOES list bare non-magnetic titles WHERE THEY EXIST, and does not systematically
+  suppress or rename them. Its failure to list one for V2 is therefore evidence of absence, not
+  an artefact of this method.
+preservation_note: >-
+  Live catalogue query, not an archive capture — a vendor facet has no Wayback equivalent (see
+  RESEARCH_SPEC 3.6a, "facet evidence cannot be archived"). THIS RECORD PRESERVES NOTHING ON ITS
+  OWN and makes no specification, date, or identity claim beyond what Shopify's own JSON fields
+  state (title, vendor, handle, published_at). published_at is a LISTING date, never a release
+  date. A single observation by a single observer (this agent) at a single moment (2026-09-19).
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, first-party retailer catalogue structure, vendor-gated (filtered on Shopify's own
+  `vendor` field via the collection itself, not on title parsing).
+  ESTABLISHES: SpeedCubeShop sells no product titled bare "YJ YuLong V2" or "YuXin Little Magic
+  V2" without an explicit magnetic designator, as of 2026-09-19 — resolving the specific
+  ambiguity raised in p4-9-alias-blindness-2026-09-12.md (YJ and YuXin both sell magnetic and
+  non-magnetic lines, so a bare "V2" title COULD have denoted a distinct non-magnetic product;
+  it does not here).
+  DOES NOT ESTABLISH: that no non-magnetic V2 was EVER sold by any retailer at any time — this
+  is a single live snapshot, not a historical sweep. Nor does it establish anything about
+  specification, price, or release date.
+status: sourced
