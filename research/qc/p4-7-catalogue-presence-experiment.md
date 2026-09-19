@@ -64,11 +64,17 @@ What would make a "settles FOR" conclusion look right while being wrong?
 
 ## Controls
 
+Extractor confirmed working (a naive `Added.{0,40}(\d{4}-\d{2}-\d{2})` would fail here — the
+value sits in a `<td>` after `<th>Added</th>` with markup between; verified on the raw HTML that
+this is exactly the shape TheCubicle uses).
+
 | control | expected | result | capture used |
 |---|---|---|---|
-| thecubicle.com/products/mojue-m3 | 2018-09-11 | _pending_ | _pending_ |
-| thecubicle.com/products/kungfu-qinghong-3x3 | 2018-09-11 | _pending_ | _pending_ |
-| thecubicle.com/products/gan-11-m-pro-3x3 | 2020-09-30 | _pending_ | _pending_ |
+| thecubicle.com/products/mojue-m3 | 2018-09-11 | **2018-09-11** — PASS | `20200927181355` |
+| thecubicle.com/products/kungfu-qinghong-3x3 | 2018-09-11 | **2018-09-11** — PASS | `20210121021815` |
+| thecubicle.com/products/gan-11-m-pro-3x3 | 2020-09-30 | **2020-09-30** — PASS | `20201113160538` |
+
+All three controls pass. Proceeding to the sweep.
 
 ## Sweep candidates (to be filled)
 
