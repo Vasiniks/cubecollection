@@ -42,7 +42,13 @@ const SERVICE = /griesser|tommy.cherry|cubicle pro shop|picube|saocube se|lube|s
 // The collections include non-3x3 puzzles and shape mods, which are out of this archive's scope.
 const NOT_3X3 = /\b(2x2|4x4|5x5|6x6|7x7|8x8|9x9|1[0-3]x1[0-3]|pyraminx|megaminx|skewb|square-?1|clock|fto|cuboid|kilominx|ivy|gear|mirror|redi|axis|dino|barrel|tower|windmill|fisher|ghost|void|mastermorphix)\b/i;
 
-const normalise = (s) => String(s ?? '').toLowerCase().replace(/[^a-z0-9]/g, '');
+// "+" IS A DISCRIMINATING CHARACTER AND MUST SURVIVE NORMALISATION. Stripping all punctuation
+// merged "MoreTry TianMa X3+" into "MoreTry TianMa X3", and this archive holds those as TWO
+// models with separate generation numbering (moretry-tianma-x3-plus carries the alias "Moretry
+// Tianma X3+ V3"; moretry-tianma-x3-v4 is the plain line's V4). Without this, a catalogue line
+// for "X3+ V4" matches the plain "X3 V4" and a potentially real miss disappears. Mapped to the
+// word rather than kept as a symbol so it still survives the [^a-z0-9] strip below.
+const normalise = (s) => String(s ?? '').toLowerCase().replace(/\+/g, 'plus').replace(/[^a-z0-9]/g, '');
 
 const report = new Report(`catalogue gap — products on sale with no model in the archive${FETCH ? '' : ' [offline: pass --fetch to query]'}`);
 const vocabs = loadVocabularies();
@@ -85,6 +91,11 @@ for (const rec of records) {
 // A generation token makes a name a different product, not a longer spelling of the same one.
 // "weilongv11" must never match "weilong" — that is the swallow this script exists to prevent.
 const GENERATION = /(v\d+|mk\d+|\d{4})$/;
+// Every generation token anywhere in a normalised name, not just a trailing one. Used to compare
+// a catalogue line's generation against an archive name's, so a trailing CONFIGURATION token
+// ("...v3maglev") no longer hides the generation it follows.
+const GEN_ANY = /v\d+|mk\d+|\d{4}/g;
+const gensOf = (s) => new Set(s.match(GEN_ANY) ?? []);
 report.note(`${known.size} distinct archive MODEL name(s) to match against (family names deliberately excluded).`);
 
 if (!FETCH) {
@@ -140,9 +151,20 @@ for (const [line, e] of lines) {
       if (a.length < 5) continue;
       // If the catalogue line carries a generation token, only an archive name carrying the SAME
       // token counts. Otherwise "MoYu WeiLong V11" matches "MoYu WeiLong V9" and disappears.
-      if (gen && !a.endsWith(gen[1])) continue;
-      // And a bare archive name must not absorb a versioned catalogue line either.
-      if (gen && !GENERATION.test(a)) continue;
+      //
+      // COMPARE TOKENS, NOT SUFFIXES. This used to test `a.endsWith(gen[1])`, which assumes the
+      // generation token is the LAST thing in an archive name. It often is not: this archive
+      // holds "YuXin Little Magic V3 MagLev", "YuXin Little Magic M V2" and "YJ YuLong V2 M",
+      // where a CONFIGURATION token follows the generation. Those names could never match their
+      // own retailer lines, because catalogue-gap deliberately truncates a retailer title at the
+      // first bracket (line ~117) to collapse configurations into one product line -- so the line
+      // is "YuXin Little Magic 3x3 V3" and the name is "...V3 MagLev". P4-9 lane D found three
+      // such cases on 2026-09-19 and they had been reported as missing models for months.
+      if (gen) {
+        const ag = gensOf(a);
+        if (!ag.has(gen[1])) continue;                      // must carry the SAME generation
+        if ([...ag].some((t) => t !== gen[1])) continue;     // and no OTHER generation
+      }
       if (a.includes(k) || k.includes(a)) { matched = true; break; }
     }
   }
