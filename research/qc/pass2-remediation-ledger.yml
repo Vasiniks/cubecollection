@@ -2046,6 +2046,31 @@ issues:
       exists as a regression guard. It is scoped to the four DEMONSTRATED artefact values and
       not to the "Added:" field in general, which is why it correctly does not fire on
       pbcube-wr, whose "Added: 2026-08-25" is a genuine per-product date.
+2026-09-19 - THE SWEEP THIS ISSUE ASKS FOR HAS NOW BEEN RUN. Full working:
+research/qc/p4-7-catalogue-presence-experiment.md. Status deliberately unchanged.
+18 products qualified by a non-circular rule: dated 2019 or later by a source that is NOT
+TheCubicle (GAN first-party pages, Speedsolving wiki, Cubezz, SpeedCubeShop, getgocube). Of the
+12 that yielded an Added: value, TWELVE carry their own post-2018 date and NONE carries
+2018-09-11. They track their releases closely - qiyi-sail-w announced 2019 / added 2019-06-04,
+gan13 released 2022 / added 2022-09-13, qiyi-m-pro-v2 announced 2024 / added 2024-11-25.
+Controls passed first: mojue-m3 and kungfu-qinghong-3x3 return 2018-09-11, gan-11-m-pro-3x3
+returns 2020-09-30.
+ONE APPARENT COUNTEREXAMPLE WAS CHECKED AND IS FALSE. thecubicle.com/products/dayan-zhanchi
+carries the stamp and was attached to dayan-zhanchi-pro-m (announced 2021-04); the page is
+titled "DaYan ZhanChi" at 57.0mm, the ORIGINAL 2010-2011 product, which predates the stamp. The
+cause is this archive's documented shared-source contamination - the citation
+thecubicle-dayan-zhanchi-descriptions covers five ZhanChi generations in one record, so the
+first TheCubicle handle cited on the Pro M record is the original's. Same failure audit sweep
+#14 records for thecubicle-dayan-guhong-descriptions.
+So THREE independent strands now converge on the migration-marker reading: this sweep, the
+Added:-value distribution, and the fact that all seven stamped products with independent dating
+are dated before 2018.
+WHY THE STATUS STAYS needs_human_decision. The remaining half is POLICY - whether a migration
+stamp may serve as a bound at all - and this issue's own recommendation forbids resolving it by
+picking the reading that yields more data. Residual limits: 12 tested is below the 15+ asked
+for (6 candidates had no capture or no Added: field), the pool skews to QiYi and GAN, and a
+sweep can only fail to find a counterexample - one stamped product with a first-party post-2018
+launch date would still overturn it.
     recommendation: >-
       Do NOT resolve this by picking the reading that yields more data. The test is specific and
       cheap: find a product whose launch is independently dated AFTER 2018-09-11 and check

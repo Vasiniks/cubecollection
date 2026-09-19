@@ -106,3 +106,70 @@ clean false negative. That is the part worth not redoing.
 
 WHAT IS NOT DONE: the wide sweep of 15+ products independently dated after 2018-09-11, which is
 the experiment P4-7 actually asks for. P4-7 remains `needs_human_decision`.
+
+---
+
+# THE SWEEP, RUN BY THE MAIN SESSION 2026-09-19
+
+Lane A validated the extractor and was killed before sweeping. The sweep has now been run.
+
+## Candidate selection — non-circular by construction
+
+A product qualifies only if the archive dates it **2019 or later** from a source that is **not
+TheCubicle**. Otherwise the test is circular: TheCubicle's own `Added:` field would be both the
+question and the evidence. 18 qualified, their dates resting on GAN's first-party product pages,
+the Speedsolving wiki, Cubezz, SpeedCubeShop and getgocube.com.
+
+## Result
+
+| outcome | n |
+|---|---|
+| carried their **own** post-2018 `Added:` date | **12** |
+| no capture of the TheCubicle page | 4 |
+| page captured but no `Added:` field | 2 |
+| carried `2018-09-11` | **1, and it is a false positive — see below** |
+
+Controls passed first, as always: `mojue-m3` → `2018-09-11`, `kungfu-qinghong-3x3` →
+`2018-09-11`, `gan-11-m-pro-3x3` → `2020-09-30`.
+
+The twelve track their own releases closely — `qiyi-sail-w-3x3` announced 2019 / added
+2019-06-04; `gan13-m-maglev-uv-3x3` released 2022 / added 2022-09-13; `qiyi-m-pro-v2` announced
+2024 / added 2024-11-25; `gan-v100-maglev-uv-3x3` announced 2025-10 / added 2025-10-16. For
+post-migration products, `Added:` behaves like a real listing date.
+
+## The one apparent counterexample, and why it is not one
+
+`thecubicle.com/products/dayan-zhanchi` carries `Added: 2018-09-11`, and my candidate list
+attached it to `dayan-zhanchi-pro-m` (announced 2021-04). Checked rather than reported: the page
+is titled **"DaYan ZhanChi"** with `Dimensions: 57.0mm`, i.e. the **original** ZhanChi — a
+2010-2011 product, comfortably *before* the stamp.
+
+The error is the archive's own documented **shared-source contamination**: the citation
+`thecubicle-dayan-zhanchi-descriptions` is titled "DaYan ZhanChi product pages (V1, 2017, 2018,
+Pro M, V5 M)" — one source record covering five generations. My matcher took the first
+TheCubicle handle cited on the Pro M record and got the original's. This is the same failure
+audit sweep #14 records for `thecubicle-dayan-guhong-descriptions`.
+
+**Corrected: 0 of 12 cleanly tested post-2018 products carry the stamp.**
+
+## What this means for P4-7 — and what it does not
+
+P4-7's own criterion: *"One such product settles it AGAINST the bound; a sweep finding none,
+across enough later products, settles it FOR."*
+
+Across 12 products independently dated 2019-2025, **none carries `2018-09-11`**, and every one
+carries its own later date instead. With window 5's two strands — the distribution (31/7/6 for
+the three artefacts versus 1-4 for all 37 other values) and the finding that all seven stamped
+products with independent dating are dated *before* 2018 — three independent lines now converge
+on the reading that `2018-09-11` marks catalogue presence at migration.
+
+**The status is NOT changed and should not be.** P4-7 is `needs_human_decision`, its
+recommendation explicitly forbids resolving it by picking the reading that yields more data, and
+the policy half — whether a migration stamp may be used as a bound at all — is the owner's call,
+not an empirical question. What has changed is that the empirical half now has an answer with
+its limits stated.
+
+**Residual limits, stated rather than buried.** 12 tested is below the 15+ the issue asks for,
+because 6 of the 18 candidates had no capture or no `Added:` field. The candidate pool is also
+skewed toward QiYi and GAN. And a sweep of this kind can only ever fail to find a counterexample;
+one stamped product with a first-party post-2018 launch date would still overturn it.
