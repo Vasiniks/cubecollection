@@ -192,6 +192,16 @@ Note the counter-example, so this is not over-corrected: **Swift Block** was fou
 Sub-brands". Official sites remain the strongest evidence when they exist and are maintained.
 The amendment below is about what to do **in addition**, not instead.
 
+**A discovery standard added after a pass completed does not retroactively validate that pass.**
+*Added 2026-09-19, closing ledger P26-3.* This section was added 2026-09-03, AFTER Pass 2 family
+enumeration finished. The frozen 132-family taxonomy therefore predates its own discovery
+standard, and no family in it was enumerated under these three checks. That is a real and bounded
+gap: it means "the taxonomy is frozen" and "the taxonomy was enumerated to this standard" are
+DIFFERENT claims, and only the first is true. Anyone citing family completeness must say which
+they mean. The remedy is to apply this existing rule to the existing taxonomy where it matters,
+not to write a further rule — and audit sweep #9 measures exactly that backlog, currently 32 of
+42 manufacturers with a 3.6a-style sweep.
+
 Three checks are therefore **required** before family enumeration for a manufacturer may be
 called complete. Both are cheap, and both must leave a written trace so a reviewer can verify
 they happened.

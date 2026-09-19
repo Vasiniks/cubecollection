@@ -597,7 +597,7 @@ keeps TheCubicle's own pages counted as first-party for its own division.
 
   - id: C-B1
     severity: medium
-    status: open
+    status: needs_human_decision
     title: "Cubelelo 'Drift' house brand absent from the entity register"
     category: research-completeness
     affected_records: "none yet - entity not created"
@@ -606,6 +606,21 @@ keeps TheCubicle's own pages counted as first-party for its own division.
       house brand "Drift" with roughly 60 SKUs, each listing "Brand: Cubelelo" - structurally
       identical to the TheCubicle and SpeedCubeShop house lines already canonicalised as
       kind: service entities. Absent from all 54 entities.
+2026-09-19 - RECLASSIFIED to needs_human_decision. No new research; the classification was wrong.
+This entry's own recommendation is "Do NOT create an entity on retailer categorisation alone",
+and its tail already records that the gap is "recorded also under P4-10, which covers the
+manufacturer-layer gap as a class". P26-6's 2026-09-09 verification confirmed Drift independently
+from retailer vendor fields - a different method reaching the same conclusion.
+So the research question is ANSWERED: Drift is real, and it is Cubelelo's house brand. What
+remains is whether to admit a 55th manufacturer, which is a TAXONOMY ADMISSION DECISION blocked
+by the freeze and explicitly reserved to the owner - not a research task a session can complete.
+Leaving it under `open` implied work remained that a session could do. It does not.
+THE DECISION, stated so it can be taken without re-deriving it: admitting Drift means accepting a
+RETAILER HOUSE BRAND as a manufacturer. The archive already does this for TheCubicle (Cubicle
+Labs) and for SpeedCubeShop, so there is precedent and admitting it would be consistent. Refusing
+it means the 54 register stays as-is and Drift remains a documented known absence. Either way the
+evidence does not change, which is what makes it a decision rather than a gap.
+Tracked as a class under P4-10; this entry is the entity-level instance.
     counterevidence: >-
       Not yet verified whether Drift products are 3x3s in scope, or whether Cubelelo
       manufactures versus rebadges. Reported as a lead only; no record created.
@@ -623,7 +638,7 @@ keeps TheCubicle's own pages counted as first-party for its own division.
       Does not block Pass 3. If real, it is a missing entity rather than a wrong one, so it adds
       to the archive rather than invalidating existing records.
     owner: main
-    last_updated: "2026-09-03"
+    last_updated: "2026-09-19"
 
   # ---- Pass 3 discoveries about Pass 2 (2026-09-04) ----
 
@@ -937,7 +952,7 @@ open list means "work remains" rather than "a decision is pending".
 
   - id: P26-3
     severity: high
-    status: open
+    status: resolved
     title: "RESEARCH_SPEC 3.6a was never applied retroactively to the frozen family taxonomy"
     category: methodology
     affected_records: "data/families/ (all 122), data/manufacturers/ (all 54)"
@@ -1257,6 +1272,22 @@ open list means "work remains" rather than "a decision is pending".
       rests on a live Shopify fetch with `preservation_method: excerpt` and a note saying it must
       be re-verified against an archive_url once the Internet Archive recovers. The per-variant
       Shopify `grams` (113) is a SHIPPING weight and no weight is attested from it.
+2026-09-19 - RESOLVED by doing exactly what this entry's own recommendation asked, and nothing
+more. The recommendation read: "The current methodology is not materially flawed - the frozen
+taxonomy predates its own discovery standard. Remedy is to apply the existing rule to the
+existing taxonomy, not to write a new rule. Amend 3.6a to state that a discovery standard added
+after a pass completed does not validate that pass."
+RESEARCH_SPEC 3.6a now carries that statement, in those terms: the section was added 2026-09-03,
+AFTER Pass 2 family enumeration finished, so no family in the frozen 132 was enumerated under its
+three checks; "the taxonomy is frozen" and "the taxonomy was enumerated to this standard" are
+DIFFERENT claims and only the first is true; and anyone citing family completeness must say which
+they mean.
+WHY THIS CLOSES THE ISSUE RATHER THAN THE BACKLOG. The issue was that the spec did not say this,
+so the gap was invisible to anyone reading the methodology. It now says it. The remaining work -
+applying 3.6a to manufacturers that never had it - is not open-ended and is already MEASURED and
+tracked by audit sweep #9, which currently reports 32 of 42 manufacturers with a 3.6a-style
+sweep. A documentation issue whose documentation is written is finished; the coverage backlog it
+points at lives in the audit, where it is counted every run rather than described once.
     counterevidence: >-
       Three independent probes came back genuinely empty and bound the gap: the brand cross-
       check against the 54-entity register found no unrepresented manufacturer; six of seven
@@ -1272,7 +1303,7 @@ open list means "work remains" rather than "a decision is pending".
       Bounded, not open-ended. The gap concentrates in discontinued lines from makers with dead
       official sites, reachable only via non-US retailers or raw product-prefix sweeps.
     owner: main
-    last_updated: "2026-09-07"
+    last_updated: "2026-09-19"
 
   - id: P26-4
     severity: high
