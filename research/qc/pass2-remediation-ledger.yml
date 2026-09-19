@@ -1542,6 +1542,31 @@ only one that worked. Slug form must be checked per brand, never assumed.
       from earliest Wayback captures, which bound page existence only. This matches the
       archive-wide measurement taken during Pass 2.6: 82 of 122 families rested on a single
       source for `introduced`, 29 had no date at all, and only 5 were `confirmed`.
+2026-09-19 - THE RECOMMENDED SEARCH HAS NOW BEEN RUN FOR FANGSHI, and it is a negative. This
+entry's recommendation was to "chase first-party or dated press evidence for all four when a
+later pass has Chinese-language search available - the FangShi first-party source has now eluded
+five consecutive passes". That capability now exists, and so does the missing ingredient: FangShi's
+Chinese name, 方是, recorded as an alias on 2026-09-19 from store.maru.tw's brand index.
+SEARCHED with the actual Chinese name (方是 魔方 FangShi 官网) rather than the Latin one. NO
+FIRST-PARTY FANGSHI SITE APPEARS. The nearest domain hit, fangshi.pro, is 方時能源 - DIFFERENT
+CHARACTERS (方時, not 方是) and an energy company, not a puzzle maker. This is the same
+Latin-name collision that made LeFun and FanXin unsearchable until their Chinese names were
+found, and it is why the Latin-only searches of five previous passes returned nothing usable.
+What the search DID return is retailer and marketplace material: store.maru.tw's 方是 FangShi
+brand entry, a Taobao brand page for 方是魔方, and a 1688 brand market page. None is first-party
+and none carries a dated founding or release statement.
+ONE INCIDENTAL CORROBORATION, recorded because it costs nothing: a Taobao listing reads
+"【方是】lim新品 夢幻閃蝶..." - pairing 方是 with the "lim" line, which independently supports the
+archive's existing limcube parent_id: fangshi relationship.
+SO THE SIXTH ATTEMPT FAILS TOO, but it now fails for a known reason rather than an unknown one:
+the search was run with the correct name and the first-party site does not appear in the index.
+That moves FangShi's thin dating from "not yet properly searched" to "searched with the right key
+and not found" - an evidence-availability limit, which is what this entry already suspected when
+it wrote "the weakness is in the available evidence, not in its representation".
+STAYS OPEN with a narrowed, concrete scope: the same Chinese-name search has NOT been run for the
+other three families (shengshou-yufeng, yj-appari and the fourth). The method is now cheap and
+documented - take the manufacturer's Chinese name from its aliases and search that, not the Latin
+name.
     counterevidence: >-
       Every bound is explicitly labelled a circulation bound in its own attestation note, and no
       retailer "Added:" field was used anywhere. The records are honest about what they do not
