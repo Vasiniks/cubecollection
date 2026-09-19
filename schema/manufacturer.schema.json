@@ -24,7 +24,7 @@
     "parent_id": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:[-.][a-z0-9]+)*(?:--[a-z0-9]+(?:[-.][a-z0-9]+)*)*$",
-      "description": "Parent manufacturer, for sub-brands."
+      "description": "Parent organisation. Used for sub-brands (kind: sub_brand), and also for a SERVICE organisation that operates as a division of its parent \u2014 cubicle-labs/thecubicle is the archive's one such case. Validation only requires the id to resolve to a manufacturer, and audit.mjs walks this chain for any kind when resolving first-party evidence, so the field was never restricted to sub-brands in behaviour; this description previously said it was. Widened 2026-09-19 closing ledger D-F5."
     },
     "country": {
       "type": "string",

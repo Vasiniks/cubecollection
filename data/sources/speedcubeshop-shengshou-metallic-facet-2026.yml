@@ -1,0 +1,57 @@
+# source: speedcubeshop-shengshou-metallic-facet-2026
+# Settles ledger P26-11, which recorded "ShengShou Metallic" as an unverified lead said to span
+# 2x2/3x3/4x4/5x5/Pyraminx. The earlier attempt fetched a product page and got only site chrome;
+# this reads the brand facet instead, which returns structured JSON.
+id: speedcubeshop-shengshou-metallic-facet-2026
+entity: source
+kind: retailer
+title: "SpeedCubeShop ShengShou brand facet, filtered to \"Metallic\" — full result"
+publisher: "SpeedCubeShop"
+url: "https://speedcubeshop.com/collections/shengshou/products.json?limit=250"
+preservation_method: excerpt
+excerpt: |-
+  Fetched 2026-09-19 from the brand facet endpoint. The facet returned 82 products for the
+  ShengShou collection, well under the 250 limit, so this is the COMPLETE current collection and
+  not a truncated page.
+
+  Filtering every returned product on "metallic" in its title or handle gives FOUR results, and
+  these are all of them, verbatim with their Shopify product_type:
+
+    "ShengShou Metallic Pyraminx (Magnetic)"        handle shengshou-metallic-pyraminx-magnetic
+                                                    product_type: Pyraminx
+    "ShengShou Metallic 5x5"                        handle shengshou-metallic-5x5
+                                                    product_type: 5x5
+    "ShengShou Mirror Cube 3x3 (Metallic)"          handle mirror-cube-metallic
+                                                    product_type: Mirror Puzzle
+    "ShengShou Mirror Cube 3x3 (Magnetic, Metallic)" handle mirror-cube-magnetic-metallic
+                                                    product_type: Mirror Puzzle
+
+  THERE IS NO PLAIN 3x3 UNDER THE "METALLIC" NAME. The only two carrying "3x3" in their titles
+  are Mirror Cubes, typed by the retailer itself as "Mirror Puzzle".
+
+  Direct product-handle fetches for shengshou-metallic-3x3, shengshou-metallic-3x3-magnetic and
+  shengshou-metallic-cube-3x3 each returned HTTP 404 in the same pass.
+preservation_note: >-
+  Facet endpoints are never archived — measured archive-wide, 34 of 34 such URLs are
+  excerpt-only and CDX returns nothing for them — so `preservation_method: excerpt` is correct
+  and PERMANENT here, per RESEARCH_SPEC 3.6a. The excerpt reproduces the complete filtered result
+  plus the unfiltered total, which is what that rule requires.
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, the retailer's own structured product feed rather than rendered marketing copy.
+
+  WHAT IT SETTLES. P26-11 suspected, in its own counterevidence, that "Metallic" reads as a
+  finish-naming convention rather than a metal-shelled novelty line. The facet supports exactly
+  that: the name is applied across a Pyraminx, a 5x5 and two Mirror Cubes — different puzzle
+  types sharing a finish word, not a product line with a 3x3 in it. Nothing in this archive's
+  3x3 scope exists under the name.
+
+  WHAT IT DOES NOT SETTLE, stated rather than glossed: this is TODAY's catalogue. The lead cited
+  a 2023-09-28 first-capture date, so a since-discontinued Metallic 3x3 is not excluded by a live
+  facet. Settling that would need an archived capture of this collection, and facet URLs are not
+  archived — which is the same limitation recorded above, working against the question this time.
+status: sourced

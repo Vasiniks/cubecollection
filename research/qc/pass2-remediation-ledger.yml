@@ -378,11 +378,26 @@ issues:
 
   - id: D-F5
     severity: low
-    status: open
+    status: resolved
     title: "cubicle-labs uses parent_id on a non-sub_brand record"
     category: schema-consistency
     affected_records: [data/manufacturers/cubicle-labs.yml]
     evidence: "The only manufacturer record using parent_id while kind is not sub_brand (it is service), against the schema field's own description."
+2026-09-19 - RESOLVED by taking the first of this entry's own two recommended options: the schema
+field description was widened, and no data changed.
+THE FINDING WAS NEVER A DATA ERROR, and this entry said so: the relationship it records (Cubicle
+Labs belongs to TheCubicle) is real, and the schema had no other field for it. What was actually
+wrong was the DESCRIPTION, which read "Parent manufacturer, for sub-brands" while nothing in the
+archive enforced that. validate.mjs (line 35) only requires parent_id to resolve to a
+manufacturer record; audit.mjs (line 208) walks the chain for ANY kind when resolving first-party
+citations up to a parent. So the behaviour already permitted service->parent; the description
+claimed otherwise, which is what made a correct record look like a violation.
+The description now states the sub-brand use, the service-division use, names cubicle-labs as the
+archive's one such case, and records that validation never restricted it.
+THE SECOND OPTION - a dedicated operator field - was deliberately NOT taken. It would add a field
+for exactly one record, and the archive already resolves the relationship correctly through
+parent_id, including in the P4-8 single-publisher measurement where walking this chain is what
+keeps TheCubicle's own pages counted as first-party for its own division.
     counterevidence: >-
       The relationship it expresses (Cubicle Labs belongs to TheCubicle) is real and worth
       recording; the schema simply has no other field for it.
@@ -392,7 +407,7 @@ issues:
     confidence: medium
     downstream_impact: "None for Pass 3."
     owner: main
-    last_updated: "2026-09-03"
+    last_updated: "2026-09-19"
 
   # ---- Pass 2.5 (2026-09-03) ----
 
@@ -1479,7 +1494,7 @@ only one that worked. Slug form must be checked per brand, never assumed.
 
   - id: P26-11
     severity: low
-    status: open
+    status: resolved
     title: "ShengShou Metallic is a new lead, distinct from the refused Metal Cube"
     category: taxonomy-completeness
     affected_records: "none"
@@ -1488,6 +1503,27 @@ only one that worked. Slug form must be checked per brand, never assumed.
       line, shengshou-metallic-*, spanning 2x2/3x3/4x4/5x5/Pyraminx in both magnetic and
       non-magnetic form from 2023-09-28 - earlier than TheCubicle's 2025 Metal Cube capture and
       with genuine cross-range naming, which Metal Cube lacks entirely.
+2026-09-19 - RESOLVED. The lead is checked and there is no in-scope product behind it. Evidence:
+speedcubeshop-shengshou-metallic-facet-2026.
+The earlier attempt failed because it fetched a PRODUCT PAGE and got only site chrome. Reading
+the BRAND FACET instead returns structured JSON: 82 products for the whole ShengShou collection,
+under the 250 limit, so a complete current enumeration. Filtering on "metallic" gives exactly
+four, and all four are out of this archive's 3x3 scope: "ShengShou Metallic Pyraminx (Magnetic)"
+(product_type Pyraminx), "ShengShou Metallic 5x5" (5x5), and two Mirror Cubes typed by the
+retailer itself as "Mirror Puzzle". Direct fetches for shengshou-metallic-3x3,
+-3x3-magnetic and shengshou-metallic-cube-3x3 all returned 404.
+THIS CONFIRMS THIS ENTRY'S OWN COUNTEREVIDENCE, which read "Metallic" as a finish-naming
+convention rather than a metal-shelled novelty. The word is applied across a Pyraminx, a 5x5 and
+two mirror cubes - different puzzle types sharing a finish word, not a product line containing a
+3x3. The claim that the line spans "2x2/3x3/4x4/5x5/Pyraminx" is not supported by the current
+enumeration.
+NOTHING WAS CREATED, which is what the recommendation asked for, and nothing needed to be: there
+is no 3x3 to conflate with Metal Cube in either direction.
+THE ONE LIMIT, stated rather than buried: this is TODAY's catalogue and the lead cited a
+2023-09-28 first capture, so a since-discontinued Metallic 3x3 is not excluded. Settling that
+would need an archived capture of the collection, and facet URLs are never archived - the same
+limitation that makes facet excerpts permanent, working against the question this time. That is a
+bounded residual, not an open research thread.
     counterevidence: >-
       A direct page fetch returned only site chrome with no product text, so the relationship to
       Metal Cube is unresolved in BOTH directions. "Metallic" reads as a finish-naming convention
@@ -1498,7 +1534,7 @@ only one that worked. Slug form must be checked per brand, never assumed.
     confidence: uncertain
     downstream_impact: "Minimal. One unverified lead among eleven others."
     owner: main
-    last_updated: "2026-09-08"
+    last_updated: "2026-09-19"
 
   # ---- P26-5 remediation applied (2026-09-08) ---------------------------------
 
