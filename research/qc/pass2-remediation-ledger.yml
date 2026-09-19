@@ -2537,6 +2537,25 @@ could not run - the Internet Archive was offline, confirmed against a control qu
 The packaged-weight trap was tested and ruled out by scaling from warrior-plus's verified Item
 981g / Gross 1200g at 188mm: 920g at 180mm falls by the item range (861-899g) and 130-180g below
 the gross range. Plausibility, not measurement - so no weight should be recorded from it.
+2026-09-19 - A MODEL CANDIDATE THE TOOL FIX DELIBERATELY KEPT VISIBLE, adjudicated and not
+admitted. Evidence: thecubicle-moretry-tianma-x3-plus-v4-2025.
+While fixing catalogue-gap's generation matching (see the fix commit), the relaxed match briefly
+SWALLOWED the line "MoreTry Tianma X3+ V4 3x3" by merging X3+ into X3 -- normalise stripped all
+punctuation. normalise now maps "+" to "plus", the line is reported again, and it was then
+adjudicated properly.
+THE HANDLE SAYS VARIANT AND THE BODY SAYS MODEL. The handle is
+moretry-tianma-x3-v4-3x3-maglev-uv -- the V4 MagLev's path with "-uv" appended -- which reads as
+a UV coating variant of the model the archive already holds. The body_html calls it "the highly
+anticipated SUCCESSOR TO THE X3 V4" with "redesigned internals" and "innovative magnet pods".
+Redesigned internals are not an assembly-time choice from one design, so under DATA_MODEL 4.2
+this is a distinct product. The two also carry different Shopify ids (7504440787027 vs
+6730997235795), which is this archive's own dedup test.
+WHICH LINE IT SUCCEEDS IS UNSETTLED and an admission decision would have to answer it first. The
+title says "X3+ V4" and the archive holds moretry-tianma-x3-plus = "X3+ V3", which reads as an
+ordinary recency gap in the X3+ line. But the body says it succeeds the PLAIN line's X3 V4, so
+the retailer may be merging both lines under the "+" branding. Nothing found settles it.
+NO MODEL CREATED; taxonomy stays 54/132/269. No weight recorded either - the JSON's "grams": 218
+is a Shopify shipping weight, refused under the rule-45 class.
     recommendation: >-
       This overturns a frozen inventory and is NOT this phase's call to make. No model or family
       was created; the evidence is preserved instead, which is what the freeze requires.

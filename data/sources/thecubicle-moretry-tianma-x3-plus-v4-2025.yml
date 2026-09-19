@@ -1,0 +1,65 @@
+# source: thecubicle-moretry-tianma-x3-plus-v4-2025
+# P4-9 model candidate, surfaced by the catalogue-gap fix of 2026-09-19 and deliberately kept
+# visible by it. Preserved as evidence; NO model was created (taxonomy frozen at 269).
+id: thecubicle-moretry-tianma-x3-plus-v4-2025
+entity: source
+kind: retailer
+title: "MoreTry Tianma X3+ V4 3x3 (MagLev + UV) — TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/moretry-tianma-x3-v4-3x3-maglev-uv"
+preservation_method: excerpt
+excerpt: |-
+  Live Shopify product JSON fetched 2026-09-19 from the handle's own .json endpoint.
+
+  "id": 7504440787027, "handle": "moretry-tianma-x3-v4-3x3-maglev-uv",
+  "title": "MoreTry Tianma X3+ V4 3x3 (MagLev + UV)", "vendor": "MoreTry", "product_type": "3x3",
+  "created_at": "2025-01-03", "published_at": "2025-01-03".
+  One variant: "Stickerless", SKU 13847_1_153, price 34.99 USD.
+
+  body_html, verbatim opening: "The Moretry Tianma X3+ V4 3x3 (MagLev + UV) is the highly
+  anticipated SUCCESSOR TO THE X3 V4, bringing a host of new improvements while maintaining the
+  features you loved. This cube is designed for maximum performance, precision, and
+  customization, perfect for solvers who demand the best. Key Features: Redesigned internals
+  reduce noise significantly, offering a smoother and quieter solving experience—perfect for any
+  setting. Innovative magnet pods make assembly and disassembly easier than ever, giving you
+  more control over your cube. Enlarged corner base magnets interact with center magnets to aid
+  in precise alignment for effortless turning."
+
+  FOR COMPARISON, fetched in the same pass: the handle
+  moretry-tianma-x3-v4-3x3-maglev is a DIFFERENT product — Shopify id 6730997235795, title
+  "MoreTry Tianma X3 V4 3x3 (MagLev)" (no "+"), created 2022-03-14. That is the product the
+  archive already holds as `moretry-tianma-x3-v4`.
+
+  Also fetched: moretry-tianma-x3-v3-plus-3x3, title "MoreTry Tianma X3+ V3 3x3", created
+  2024-09-09 — the product the archive holds as `moretry-tianma-x3-plus`.
+preservation_note: >-
+  Live JSON, not an archived capture. A CDX check on 2026-09-19 could not confirm or rule out a
+  capture because the archive was returning empty for a known-archived control in the same
+  minute. `excerpt` is the safe treatment and reproduces every field this record is cited for.
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, retailer product page with structured Shopify fields.
+
+  WHY THIS IS A MODEL CANDIDATE AND NOT A COATING VARIANT, which is what the handle suggests.
+  The handle reuses the V4 MagLev's path with "-uv" appended, and on that basis this looks like a
+  UV configuration of `moretry-tianma-x3-v4`. The BODY CONTRADICTS THE HANDLE: it calls the
+  product "the highly anticipated successor to the X3 V4" and describes "redesigned internals"
+  and "innovative magnet pods". Under DATA_MODEL 4.2 redesigned internals are not a choice made
+  at assembly from one design, so this reads as a distinct product rather than a configuration.
+  The two also carry DIFFERENT Shopify ids (7504440787027 vs 6730997235795), which is this
+  archive's own dedup test for "one product renamed" versus two products.
+
+  WHICH LINE IT SUCCEEDS is the open question. The title says "X3+ V4" and the archive holds
+  `moretry-tianma-x3-plus` = "X3+ V3" (TheCubicle: "MoreTry Tianma X3+ V3 3x3"), so the natural
+  reading is that the X3+ line has moved to V4 and the archive stops at V3 — an ordinary recency
+  gap. But the body says it succeeds "the X3 V4", the PLAIN line's V4, so the retailer may be
+  merging the two lines under the "+" branding. Nothing here settles that, and it is exactly the
+  question an admission decision would have to answer first.
+
+  NO WEIGHT IS RECORDED. The JSON's "grams": 218 is a Shopify SHIPPING weight and is refused
+  under the rule-45 class. The page states no item weight.
+status: sourced
