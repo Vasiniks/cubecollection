@@ -1,0 +1,92 @@
+# source: p4-10-six-manufacturer-escalation-sweep-2026-09
+# P4-10 covers seven absent manufacturers; Ziina is the substantial one and is closed separately
+# (see ziina-alibaba-wholesale-listings-2026-09 and ziina-lane-b-closure-sweep-2026-09, and
+# research/qc/p4-10-closure-lane-b.md). This record is escalation material ONLY for the other six
+# named in the ledger entry: VIN Cube/VIN3, Cubelelo "Drift", YZ, Cube Lab, ZePuzzles, Smart Cube
+# Labs. NO manufacturer, family, model or variant record was created from this sweep, per the
+# task's hard constraint that the 54/132/269 taxonomy stays frozen.
+id: p4-10-six-manufacturer-escalation-sweep-2026-09
+entity: source
+kind: review
+tier: 4
+title: "P4-10 — escalation sweep for the six non-Ziina absent manufacturers (VIN Cube, Drift, YZ, Cube Lab, ZePuzzles, Smart Cube Labs)"
+publisher: "cubecollection archive"
+url: "https://www.thecubicle.com/collections/vin-cube"
+preservation_method: excerpt
+excerpt: |-
+  SWEEP RUN 2026-09-19, moderate effort (per task brief: "if you have time after the Ziina work").
+  Goal: record what evidence exists, not adjudicate or admit anything.
+
+  VIN CUBE / VIN3 — the strongest of the six, already flagged in the ledger as present in
+  store.maru.tw's brand index (manufacturer_id=58), CONFIRMED this pass by direct fetch of
+  store.maru.tw/index.php?route=product/manufacturer/info&manufacturer_id=58: the brand name shown
+  is "VIN CUBE" (Latin script; the Traditional-Chinese-language page uses the English brand name
+  natively, i.e. this retailer treats "VIN CUBE" as the brand's OWN name rather than translating
+  it - no separate Chinese brand name was found). Two products listed there: "Vin - 3x3x3 - Vin3
+  Racer 競速版" (released May 2026) and "Vin - 4x4x4 - 磁力四階 UV版" (Q1 2024), the latter's own
+  page copy stating it is "designed by a former YongJun designer" - a lineage claim worth
+  preserving for any future research, tying VIN Cube's design origin to a named EXISTING
+  manufacturer's former staff (YJ/YongJun), which is exactly the kind of OEM/heritage lead this
+  issue is looking for across all seven brands. TheCubicle carries a "Vin Cube" collection
+  (thecubicle.com/collections/vin-cube) including "VIN3 3x3 Nova (Flagship Edition)"; SpeedCubeShop,
+  speedcubing.org, KewbzUK, cuboss.com and cubershop.com independently carry Nova/Nova
+  Lite/Nova Racer/Nova Flagship SKUs - at least five independent retailers beyond TheCubicle and
+  SpeedCubeShop, a materially stronger corroboration base than Ziina has. The ledger's "6 lines
+  (Nova, Lite, Racer)" reading holds up: Nova, Nova Lite, Nova Racer and Nova Flagship all appear
+  as named SKUs, i.e. one flagship line in (at least) four configurations, not six unrelated
+  products. Community framing (from search-summary, not independently verified against a primary
+  page) describes VIN Cube as "a new manufacturer" whose first 3x3 was Nova, having previously made
+  2x2/4x4/5x5 puzzles - if true this bears on whether VIN Cube is an independent maker with its own
+  non-3x3 track record, which would argue FOR manufacturer status rather than house-brand/OEM
+  status, but this is unverified community framing and is recorded as a lead only.
+
+  CUBELELO "DRIFT" — needs NO new research per the ledger's own P4-10 recommendation: it is
+  already open as C-B1 and independently corroborated by two methods (brand-page reasoning and the
+  P4-9 live-catalogue adjudication). Not re-swept this pass; see C-B1 and P4-9 material directly.
+
+  YZ — TheCubicle and SpeedCubeShop both carry the "YZ Electroplated Metal Alloy 3x3", described
+  by both retailers as a metal-alloy-shelled, plastic-internal novelty/collector cube explicitly
+  NOT tuned for competitive speed ("intended for casual solving," per SpeedCubeShop's own copy).
+  Two independent retailers is the same corroboration level Ziina had before this pass's Alibaba
+  finding. No first-party YZ source, no Chinese name, and no OEM/manufacturer lead surfaced by this
+  light sweep.
+
+  CUBE LAB — TheCubicle carries "Cube Lab Mini 3x3 (1.0cm)", described as the smallest
+  commercially available 3x3 currently on the market. Single retailer surfaced this pass; not
+  cross-checked against a second.
+
+  ZEPUZZLES — the WEAKEST fit for a future "manufacturer" admission of the six: multiple
+  independent retailers (TheCubicle, speedcubing.org, MasterCubeStore, and reportedly ZiiCube) carry
+  ZePuzzles products, but every product found is explicitly a SHAPE MOD or off-format puzzle
+  (1x4x4 Floppy Cube, Squished 3x3 with tiles, 1x6x6), described in one summary as "3D printed
+  PETG construction" rather than injection-moulded speedcube manufacturing. This may put ZePuzzles
+  at least partly outside RESEARCH_SPEC 2.4's 3x3x3 scope in the way the archive already treats
+  other 3D-printed/novelty makers - a scope question for whoever adjudicates this, not resolved
+  here.
+
+  SMART CUBE LABS — confirmed as a retailer-recognised manufacturer facet: TheCubicle filters both
+  its "Smart Cubes" and "Accessories" collections by "Manufacturer: Smart Cube Labs".
+  SpeedCubeShop's "CubeLab" collection may or may not be the same entity as "Smart Cube Labs" -
+  NOT the same as the unrelated "Cube Lab" (mini 3x3) entry above; the near-identical naming
+  ("Cube Lab" vs "CubeLab" vs "Smart Cube Labs") across three retailer facets is itself a hazard
+  for whoever researches this next and is flagged explicitly so it is not conflated into one
+  brand. No first-party source or further detail found this pass.
+preservation_note: >-
+  Fetches and searches issued 2026-09-19. The store.maru.tw VIN CUBE page was fetched directly and
+  its content quoted above; every other claim in this record is a WebSearch summary over multiple
+  retailer listings, not an independently re-fetched primary page, and is flagged as such inline
+  where the distinction matters.
+accessed: "2026-09-19"
+language: en
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 4, self-assigned. A deliberately light escalation sweep, not a Pass-1-equivalent
+  enumeration. ESTABLISHES: which of the six non-Ziina absent manufacturers already have
+  multi-retailer corroboration (VIN Cube strongest at 5+ retailers plus a Chinese-market
+  confirmation and a designer-lineage lead; YZ and Smart Cube Labs at 2; Cube Lab and ZePuzzles at
+  1-2) and flags one scope question (ZePuzzles' shape-mod/3D-printed products) and one naming
+  hazard (Cube Lab vs CubeLab vs Smart Cube Labs). DOES NOT ESTABLISH manufacturer status, OEM
+  relationships, or admission eligibility for any of the six - that is future research, and no
+  record was created from this sweep.
+status: sourced
