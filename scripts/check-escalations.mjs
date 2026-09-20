@@ -71,6 +71,56 @@
 // See research/qc/p26-2-escalation-linkage.md for the full measurement. (No audit sweep was
 // added for it: the number belongs next to the forward-direction counts it qualifies, not in a
 // separate place a reader has to know to look.)
+//
+// P26-2/P26-8/P26-14 CLOSURE REVIEW, LANE C ROUND 2, 2026-09-19. Re-measured, not re-litigated —
+// see research/qc/p26-2-closure-lane-c.md for the full working.
+//
+// FORWARD DIRECTION IS STABLE AND CLEAN. 95 reports now on file (was 74 on 2026-09-09), 24
+// linked / 2 NOTFINDING / 0 UNFILED / 0 free prose / 0 dangling. The mechanism this file adds has
+// not needed a single manual correction since 2026-09-12.
+//
+// THE REVERSE DIRECTION HAS NOT MOVED. Still 13 of 59 ledger issues reached by a block, unchanged
+// from the 2026-09-12 measurement despite +21 reports and a full pass of research since. New
+// lane reports are not adopting the backlink any faster than old ones were — expected, since
+// nothing enforces it, but worth stating so the next reader does not mistake a static number for
+// a stale one.
+//
+// THE "SILENT" LINE GREW (43 -> 47) BUT ONLY IN THE SAFE BUCKET. All four new entries are
+// traceable (name a real ledger id in prose); the untraceable 16 are byte-for-byte the same 16
+// files adjudicated on 2026-09-12 — same three false-positive mechanisms (a quoted commit
+// message, a write-lane handoff, an escalation recorded in a record's header instead of the
+// ledger). The 2026-09-12 "no rule" decision is not re-argued here; it still holds, and the
+// residue it describes is not growing.
+//
+// P26-14 MEASURED AND NOT SHIPPED. "Source ids cited in prose that don't resolve" was tested with
+// the most favourable heuristic available: backtick-quoted, hyphen-shaped tokens whose leading
+// segment matches a REAL retailer/publisher prefix used elsewhere in actual source ids (51
+// prefixes, derived from the 608 real source ids on file), which is already narrower than a bare
+// shape match. Raw hits: 761 backtick tokens that don't resolve to any record id anywhere in the
+// archive. Filtered to that prefix set: 192. Filtered further to drop literal `.yml`/`.com`
+// references and `NxN` product-size tokens (both unambiguous retailer-slug shapes): 30. Read all
+// 30 by hand: ZERO are live defects. One is the original P26-14 finding itself, already fixed,
+// now preserved as a self-disclosing "was never created" note quoted across three audit-trail
+// reports; a cluster are two source ids retired by a rule-42 duplicate merge, quoted only inside
+// the report that documents the retirement; a few are explicitly-labelled PROPOSED future source
+// ids from a remediation spec ("not created here"); the rest are retailer product-page slugs that
+// merely share a brand-name first segment with a real source-id prefix by coincidence. A prose
+// "source id" and a prose "retailer product slug" are the same charset by construction — nothing
+// short of parsing citation intent can tell them apart — so this is not shippable at any
+// filtering effort tried. Left open at its current severity (low); not converted to a rule.
+//
+// DETECTS, DOES NOT PREVENT — confirmed live, not just in theory. research/qc/HANDOFF.md's
+// "SESSION 2026-09-14, WINDOW 4" entry records a NEW occurrence found in-flight: "Lane I's Legend escalation
+// shows the P26-2 gap is still live for NEW lane reports: a prose-only escalation is invisible to
+// the checker. Worth a line in the lane prompts." That line was never added — no agent prompt,
+// RESEARCH_SPEC.md or DATA_MODEL.md file mentions the `escalations:` block anywhere as of this
+// writing — and the finding was only caught because a human read the report before merging it,
+// the same manual-recovery pattern P26-2 was filed to replace. Of the ledger's own four preferred
+// remediations for P26-2, only "add a lint rule" (this file) shipped; "write every escalation
+// into a record's notes too", "require a ledger entry before a lane counts as merged", and
+// "`report_lost: true` on an unrecovered kill" were never adopted as enforced practice —
+// `report_lost` appears nowhere as an actual field value, only in the three places that recommend
+// it. See the closure report for the full CLOSE / DO-NOT-CLOSE reasoning.
 
 import { readdirSync, readFileSync, existsSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
