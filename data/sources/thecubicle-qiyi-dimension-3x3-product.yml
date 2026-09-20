@@ -1,0 +1,57 @@
+# source: thecubicle-qiyi-dimension-3x3-product
+# Closes the research half of P4-2 for this one candidate. TheCubicle's own product page for
+# "QiYi Dimension 3x3", one of the four bare retailer slugs escalated by Pass 4 Agent B
+# (thecubicle-qiyi-mofangge-collection-2025 lists the slug with no product-level detail).
+# Fetched directly to assess against RESEARCH_SPEC 2.1/2.4, per P4-2's own recommendation.
+id: thecubicle-qiyi-dimension-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Dimension 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-dimension-3x3"
+preservation_method: excerpt
+excerpt: |-
+  Live Shopify product JSON fetched 2026-09-19 from the handle's own .json endpoint.
+
+  "id": 1532353740873, "handle": "qiyi-dimension-3x3", "title": "QiYi Dimension 3x3",
+  "vendor": "QiYi", "product_type": "3x3", "created_at": "2018-09-11", "published_at":
+  "2018-09-11". body_html, verbatim: "The QiYi Dimension 3x3 is a neat-looking 3x3 cube with
+  embedded plastic outlines instead of normal stickers." One variant: "Transparent Black", SKU
+  4380_1_140, price 6.99 USD, item weight 99g. Tags include "Dimensions_56.0" (mm, ordinary
+  3x3 size) and "Weight_84.0" (a second, lower weight figure than the variant's own 99g — the
+  tag and the variant weight disagree by 15g and neither is preferred here).
+preservation_note: >-
+  Live JSON, not an archived capture. A CDX list query for this URL returned HTTP 429
+  (rate-limited) on 2026-09-19, retried once with the same result — not confirmed absent, just
+  not obtained this session. `excerpt` is the safe treatment; a future pass should retry the
+  archive lookup. The "created_at"/"published_at" of 2018-09-11 is the same bulk
+  catalogue-migration timestamp already flagged as non-load-bearing elsewhere in this archive
+  (see thecubicle-mofang-jiaoshi-mini-3x3-keychain-30mm-product and -35mm-product, both also
+  dated "Added: 2018-09-11") — NOT treated as this product's real release date, and none is
+  recorded.
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, retailer product page with structured Shopify fields.
+
+  ASSESSED AGAINST RESEARCH_SPEC 2.1/2.4, per P4-2's own recommendation. This reads as an
+  ordinary-sized (56mm), standard-mechanism 3x3 whose only stated distinguishing feature is a
+  surface treatment — "embedded plastic outlines instead of normal stickers" — which is closer
+  to WCA regulation 3d's "colored tiles" category than to a shape or size departure. Nothing
+  found suggests this is a shape mod, an oversized novelty, or a miniature: the retailer's own
+  `product_type` is the plain "3x3" (contrast qiyi-fluffy-3x3's "Shape Mods", fetched the same
+  session). On that basis this looks like an ordinary in-scope 3x3, not a candidate for
+  `reference_only` under either reading of P4-16.
+
+  WHAT THIS DOES NOT SETTLE. No existing QiYi model in this archive is described with an
+  "embedded plastic outline" surface, so this does not read as an unattached configuration of a
+  model already held — it reads as its own named product ("Dimension") with no frozen model to
+  attach to. Under DATA_MODEL §4.2 a distinct piece-level surface treatment sold as its own
+  named product, with no existing model it configures, is model-shaped evidence, not
+  variant-shaped evidence. NO MODEL IS CREATED FROM THIS RECORD — the taxonomy is frozen at
+  269 models — this source only preserves the evidence and the scope assessment for whoever
+  next opens the QiYi model set.
+status: sourced

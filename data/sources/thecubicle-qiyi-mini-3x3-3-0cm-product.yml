@@ -1,0 +1,47 @@
+# source: thecubicle-qiyi-mini-3x3-3-0cm-product
+# Closes the research half of P4-2 for this one candidate. TheCubicle's own product page for
+# "QiYi Mini 3x3 (3.0cm)", one of the four bare retailer slugs escalated by Pass 4 Agent B.
+# Fetched directly to assess against RESEARCH_SPEC 2.1/2.4, per P4-2's own recommendation.
+id: thecubicle-qiyi-mini-3x3-3-0cm-product
+entity: source
+kind: retailer
+title: "QiYi Mini 3x3 (3.0cm) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-mini-3x3-3-0cm"
+preservation_method: excerpt
+excerpt: |-
+  Live Shopify product JSON fetched 2026-09-19 from the handle's own .json endpoint.
+
+  "id": 6557831626835, "handle": "qiyi-mini-3x3-3-0cm", "title": "QiYi Mini 3x3 (3.0cm)",
+  "vendor": "QiYi", "product_type": "3x3", "created_at": "2021-04-21". body_html, verbatim:
+  "The QiYi Mini 3x3 is a 30mm, fully functional puzzle with very smooth turning. Throw it in
+  your pocket or purse and have a puzzle with you all the time!" One variant, "White", SKU
+  11985_1_2, price 0.99 USD, item weight 13.0g. Tag "Dimensions_30.0" (mm).
+preservation_note: >-
+  Live JSON, not an archived capture. A CDX list query for this URL returned HTTP 429
+  (rate-limited) on 2026-09-19 — not confirmed absent, just not obtained this session.
+  `excerpt` is the safe treatment. `created_at` 2021-04-21 reads as a plausible real listing
+  date, distinct from the 2018-09-11 bulk-migration artifact seen on other QiYi/MFJS records.
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, retailer product page with structured Shopify fields.
+
+  ASSESSED AGAINST RESEARCH_SPEC 2.1/2.4, per P4-2's own recommendation. This is the same shape
+  as an already-precedented class already held in this archive: a functional, standard-mechanism
+  miniature 3x3 sold as its own named accessory-scale product — directly comparable to the
+  MFJS Mini 3x3 series (mfjs-mini-3x3-45mm, mfjs-mini-3x3-50mm, mfjs-mini-3x3-keychain-40mm),
+  all three already admitted at `scope_class: reference_only`. WCA regulation 3a+ ("competitors
+  may use puzzles of any reasonable size, at the discretion of the WCA Delegate" — held at
+  wca-regulations-2026-04) means size alone does not disqualify it from `core`; the MFJS minis
+  were placed at `reference_only` on a documented-significance reading, not a size-illegality
+  one (see each MFJS mini's own scope reasoning). SO THIS CANDIDATE'S DISPOSITION IS NOT A NEW
+  QUESTION: whatever P4-16 decides about the undocumented "in-window, no documented
+  significance" reading of `reference_only` governs this candidate the same way it already
+  governs the three MFJS minis and the other eight in that issue's list. It should be
+  adjudicated together with them, not separately. No model or variant record is created from
+  this source; the taxonomy is frozen at 269 models.
+status: sourced

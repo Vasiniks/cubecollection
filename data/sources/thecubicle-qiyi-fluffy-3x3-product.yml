@@ -1,0 +1,46 @@
+# source: thecubicle-qiyi-fluffy-3x3-product
+# Closes the research half of P4-2 for this one candidate. TheCubicle's own product page for
+# "QiYi Fluffy 3x3", one of the four bare retailer slugs escalated by Pass 4 Agent B. Fetched
+# directly to assess against RESEARCH_SPEC 2.1/2.4, per P4-2's own recommendation.
+id: thecubicle-qiyi-fluffy-3x3-product
+entity: source
+kind: retailer
+title: "QiYi Fluffy 3x3 – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-fluffy-3x3"
+preservation_method: excerpt
+excerpt: |-
+  Live Shopify product JSON fetched 2026-09-19 from the handle's own .json endpoint.
+
+  "id": 4474010992723, "handle": "qiyi-fluffy-3x3", "title": "QiYi Fluffy 3x3", "vendor": "QiYi",
+  "product_type": "Shape Mods", "created_at": "2020-06-01". body_html, verbatim: "The QiYi
+  Fluffy 3x3 is a new 3x3 modification with wavy lines, giving the puzzle a significantly
+  different solving experience compared to the standard 3x3. In spite of this more complex
+  design, the QiYi Fluffy 3x3 moves and corner cuts well." Two variants, "Stickerless" (107g)
+  and "Black" (110g), both 6.99 USD. Tags: "Type_Shape Mods" only — no "Type_3x3" tag, unlike
+  every other product checked this session (Dimension, Mini 3.0cm are tagged plain "3x3"; Void
+  Cube is dual-tagged "3x3,Shape Mods").
+preservation_note: >-
+  Live JSON, not an archived capture. A CDX list query for this URL returned HTTP 429
+  (rate-limited) on 2026-09-19 — not confirmed absent, just not obtained this session.
+  `excerpt` is the safe treatment.
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, retailer product page with structured Shopify fields.
+
+  ASSESSED AGAINST RESEARCH_SPEC 2.1/2.4, per P4-2's own recommendation, AND CLOSED AS
+  OUT OF SCOPE. TheCubicle files this SOLELY under `product_type: "Shape Mods"`, with no "3x3"
+  type tag at all — its own retailer taxonomy does not count this among its 3x3s. The body
+  copy corroborates the retailer's own classification rather than contradicting it: "wavy
+  lines" that give "a significantly different solving experience compared to the standard 3x3"
+  describes altered piece geometry, not a configuration of a standard 3x3x3 mechanism.
+  RESEARCH_SPEC 2.4 puts "puzzles other than 3×3×3" out of scope; a modified-geometry shape mod
+  that the retailer itself does not file as a 3x3 falls on that side of the line. No model or
+  variant record should be created from this candidate. This is the cleanest of the four QiYi
+  slugs to close: the retailer's own catalogue structure, not this archive's interpretation,
+  draws the boundary.
+status: sourced
