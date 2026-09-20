@@ -2,6 +2,12 @@
 # Pass 4. The assembled, factory-stickered baseline configuration — the model's own defining
 # spec (thecubicle-guoguan-yuexiao-2025: Item Weight 86.0g, Dimensions 56.0mm). Distinguished
 # from a DIY-kit configuration found this pass (guoguan-yuexiao-original--diy-kit-unstickered).
+# CORRECTION (lane E final adversarial sweep, 2026-09-19): the 56.0mm figure above is stated
+# here as if settled. It is not — the model's own /specs/size_mm attestation holds
+# `confidence: disputed` against a 2016 capture reading 55.0mm (cubezz-guoguan-yuexiao-2016),
+# left unadjudicated on purpose. This comment is not a schema field and no check reads it, so
+# the dispute status was invisible to anyone who read only this header. See
+# data/models/guoguan/guoguan-yuexiao-original.yml `/specs/size_mm` for the live dispute.
 id: guoguan-yuexiao-original--standard
 entity: variant
 model_id: guoguan-yuexiao-original
