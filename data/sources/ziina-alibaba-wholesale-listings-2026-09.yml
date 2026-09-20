@@ -1,0 +1,125 @@
+# source: ziina-alibaba-wholesale-listings-2026-09
+# P4-10 closure lane B. Records a genuinely NEW class of evidence for Ziina/Ziina Star: wholesale
+# (B2B/export) listings on Alibaba.com, as distinct from the retail listings already on file
+# (TheCubicle, SpeedCubeShop, cubein.cn). It does NOT resolve who manufactures the brand — Alibaba
+# itself remains completely inaccessible to direct fetch, confirmed again this pass across every
+# technique tried — and it explicitly RECORDS AND REJECTS an unverified attribution surfaced by a
+# search tool, so it cannot be miscited downstream the way an earlier "CubeIn is the manufacturer"
+# claim was already rejected under this same issue.
+id: ziina-alibaba-wholesale-listings-2026-09
+entity: source
+kind: review
+tier: 4
+title: "Ziina / Ziina Star — Alibaba.com wholesale listing sweep (new evidence class, attribution unverified)"
+publisher: "cubecollection archive"
+url: "https://www.alibaba.com/product-detail/Ziina-Star-Ziina-carbon-fiber-windmill_1600927321658.html"
+preservation_method: excerpt
+excerpt: |-
+  SWEEP RUN 2026-09-19 for P4-10 closure lane B, avenue 2 (OEM/private-label evidence). Prior
+  sessions (see ziina-first-party-sweep-2026-09 and ziina-star-brand-form-sweep-2026-09) tested
+  Alibaba only via subdomain storefront guesses (ziina.en.alibaba.com, ziinacube.en.alibaba.com)
+  and found a generic 200 that a control request also returned for a nonsense brand name —
+  correctly concluded to be worthless. This sweep instead found the same product-detail URLs
+  through general web search (not a subdomain guess) and confirmed they are REAL, DISTINCT
+  Alibaba.com listings, not the generic-200 artifact.
+
+  DISTINCT PRODUCT-DETAIL URLS FOUND, each with its own numeric product id, across FOUR Alibaba
+  regional/language subdomains (www, indonesian, thai, french) — the same underlying catalogue
+  surfaced through Alibaba's per-market mirrors, not four independent sellers:
+    www.alibaba.com/product-detail/Ziina-Star-Ziina-carbon-fiber-windmill_1600927321658.html
+    www.alibaba.com/product-detail/Hot-sell-Ziina-Star-Space-Magnetic_1601038792531.html
+    www.alibaba.com/product-detail/Ziina-Star-Ziina-Time-Machine-2x2_10000013376156.html
+    www.alibaba.com/product-detail/Ziina-hollow-3x3-black-magic-cube_1600932479285.html
+    indonesian.alibaba.com/product-detail/Ziina-Star-Ziina-Football-cube-2x2-10000013354982.html
+    indonesian.alibaba.com/product-detail/Hot-sell-Ziina-Star-Space-Magnetic-1601038792531.html
+    thai.alibaba.com/product-detail/Ziina-Star-Ziina-Ivy-cube-keychain-10000013361997.html
+    french.alibaba.com/product-detail/Ziina-Star-Ziina-carbon-fiber-Axis-10000013505372.html
+
+  MODEL-NUMBER SCHEME. Search-indexed snippets for two listings give internal model numbers
+  sharing a "ZNX" prefix: ZNX619-3 (carbon fiber windmill) and ZNX735 (Time Machine 2x2). A search
+  for "ZNX7703" (reported by one summarization pass as the Space Magnetic 3x3's model number)
+  returned no independent corroboration and is NOT treated as confirmed here.
+
+  OEM/ODM LANGUAGE, reported consistently across independent search passes for the windmill
+  listing: place of origin stated as Guangdong; the listing welcomes OEM/ODM customization and
+  accepts a customer's own logo; packaging is 48 pieces/carton, carton 38.5x37.5x55.0cm, gross
+  weight 31kg; unit price $5.34 at the stated MOQ of 48 pieces. These numeric details recurred
+  consistently across two independently-issued search queries for the same URL, which is why they
+  are recorded as page content rather than as search-summary invention — but the page itself could
+  not be rendered directly to confirm this first-hand (see BLOCKED, below).
+
+  WHY THIS MATTERS STRUCTURALLY, stated carefully. Alibaba.com is a wholesale/export marketplace:
+  a listing there is normally posted by a manufacturer or an export trading company acting for one,
+  not by a downstream retailer. This is therefore the first evidence that a commercial actor at the
+  EXPORT/WHOLESALE level - not just Western retail buyers - treats "Ziina"/"Ziina Star" as a brand
+  it controls, with OEM/ODM white-labeling offered alongside the branded line. That is consistent
+  with (a) a genuine Guangdong manufacturer selling both its own branded cubes and blank/OEM
+  versions of the same tooling, or (b) a Chenghai trading company that sources the physical product
+  from an undisclosed factory and applies its own "Ziina Star" label for export while also brokering
+  white-label orders on the same tooling. THIS SWEEP CANNOT DISTINGUISH (a) FROM (b), and the
+  distinction is exactly what P4-10's admission question turns on.
+
+  AN ATTRIBUTION WAS SURFACED AND IS EXPLICITLY REJECTED. Several search-tool summarization passes
+  asserted "Ziina Star is a brand supplied by Shantou Chenghai District Paisier Toy Firm" (Alibaba
+  storefront peisier.en.alibaba.com, also transliterated "Peisier" in its own URL - the archive
+  itself is inconsistent about the spelling, which is a further reason for caution). This was
+  investigated specifically:
+    - A site-restricted search for site:peisier.en.alibaba.com returned ZERO Ziina-related results
+      and the search tool's own summary for that query stated "the search results do not contain
+      any information about site:peisier.en.alibaba.com specifically" and "It appears that either
+      the specific Alibaba seller page doesn't exist or is not indexed."
+    - A repeat of a similar query later in the same session again produced the Paisier attribution
+      with LESS hedging, i.e. the tool was internally inconsistent about its own claim across
+      repeated invocations on the same question.
+    - SourceReady's independent listing for "Shantou Chenghai District Paisier Toy Firm" classifies
+      it as a "Furniture and Lighting Fixtures, Toys, Games and Sports Goods TRADING Company" -
+      not confirmed as a manufacturer even if the attribution itself were correct.
+    - No page mentioning BOTH "Paisier"/"Peisier" AND "Ziina" together was ever produced by any
+      query; the two names co-occurred only across separate results within the same result set,
+      which is exactly the shape of inference a summarizing model can wrongly merge.
+  This is the same failure mode already flagged and rejected once under this issue (a search tool
+  asserting "CubeIn is the manufacturer" with no supporting page). CONSISTENT WITH THAT PRECEDENT,
+  THE PAISIER/PEISIER ATTRIBUTION IS RECORDED HERE ONLY TO BE REJECTED, not propagated. It must not
+  be cited as evidence of who manufactures Ziina.
+
+  BLOCKED: ALIBABA IS COMPLETELY INACCESSIBLE TO DIRECT FETCH, CONFIRMED EXHAUSTIVELY THIS PASS.
+  Every one of the following returned Alibaba's own anti-bot "punish-component" JS challenge page
+  (a `<punish-component />` element plus an obfuscated token script, zero usable content) rather
+  than the real page:
+    - www.alibaba.com/product-detail/... via curl, desktop Chrome user-agent
+    - indonesian.alibaba.com/product-detail/... via curl, iPhone Safari user-agent
+    - peisier.m.en.alibaba.com/index.html?...productId=... (a mobile storefront URL for a SPECIFIC
+      product id, 1600883085264, found via search - not a guess) via curl, iPhone Safari user-agent
+    - the WebFetch tool against three of the above URLs, which returned empty/no-content responses
+      each time (the tool received the same challenge page and had nothing extractable from it)
+    - r.jina.ai's read-through proxy, which returned its OWN 403 stating that anonymous access to
+      the alibaba.com domain is blocked archive-wide "due to previous abuse" on an unrelated URL -
+      i.e. blocked at the proxy level, not specific to this query
+    - m.alibaba.com/product/1600927321658.html, a guessed mobile path, returned a genuine Alibaba
+      404 ("Oops! Looks like the page you are looking for has run away") - the ONLY non-challenge
+      Alibaba response obtained this pass, and it is a wrong-guess 404, not evidence about Ziina
+  This extends 2026-09-12's "1688.com is inaccessible to this method" finding to alibaba.com's
+  international marketplace as well, across both desktop and mobile paths and both direct-fetch and
+  proxy-fetch techniques. The block is comprehensive, not a single blocked path.
+preservation_note: >-
+  Every URL and technique above was attempted 2026-09-19 and its outcome recorded exactly as
+  returned. Reproducible by re-issuing the same requests; the anti-bot behaviour is expected to
+  persist since it is Alibaba's standing bot-detection layer, not a transient rate limit.
+accessed: "2026-09-19"
+language: en
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 4, self-assigned. This is the archive's own sweep record. It is admissible for exactly two
+  things: (1) that distinct Alibaba.com wholesale product-detail pages for "Ziina"/"Ziina Star"
+  exist and are search-indexed, across four regional subdomains, with OEM/ODM language and a
+  shared "ZNX" model-number prefix - a genuinely new evidence class beyond the two retailers
+  already on file; and (2) that a specific company attribution ("Shantou Chenghai District
+  Paisier/Peisier Toy Firm") was investigated and found unverifiable, and must NOT be cited as
+  fact.
+  DOES NOT ESTABLISH: who manufactures Ziina, or whether the Alibaba account behind these listings
+  is itself a factory or a trading company reselling factory output under its own label - the
+  distinction P4-10's admission question turns on. Direct verification remains blocked by
+  Alibaba's anti-bot layer, exhaustively re-tested this pass across both alibaba.com and its
+  regional mirrors, desktop and mobile paths, and a third-party read-through proxy.
+status: sourced

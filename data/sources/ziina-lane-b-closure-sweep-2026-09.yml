@@ -1,0 +1,71 @@
+# source: ziina-lane-b-closure-sweep-2026-09
+# P4-10 closure lane B. Records every avenue this pass attempted that returned negative or
+# blocked, so the closing adjudication does not need to re-describe each one inline and the next
+# reader can see exactly what was tried without repeating it. Complements
+# ziina-alibaba-wholesale-listings-2026-09 (the one avenue that returned genuinely new evidence).
+id: ziina-lane-b-closure-sweep-2026-09
+entity: source
+kind: review
+tier: 4
+title: "Ziina / Ziina Star — closure-lane negative and blocked avenues (Chinese search, marketplaces, physical evidence, CNIPA)"
+publisher: "cubecollection archive"
+url: "https://www.speedsolving.com/threads/scs-pro-speed-cube-the-same-as-zinna-star-3x3.94339/"
+preservation_method: excerpt
+excerpt: |-
+  SWEEP RUN 2026-09-19 for P4-10 closure lane B. Every avenue below was attempted and returned
+  negative or blocked; none is a new lead.
+
+  CHINESE-LANGUAGE SEARCH, re-run with new query forms beyond the prior sweep's: "Ziina Star 魔方
+  厂家" (manufacturer), ""Ziina" 魔方 厂家 阿里巴巴", "星际 磁力三阶 魔方 阿里巴巴" (the box's own
+  Chinese product-name text, "interstellar" / "magnetic 3rd-order", from
+  ziina-star-packaging-photography-2026-09), "ZNX 魔方 1688 厂家" (the Alibaba model-number
+  prefix). None surfaced a native Chinese brand or company name; all returned only unrelated
+  1688 category pages, the UAE fintech's Wikipedia page, or generic Rubik's-cube listings.
+
+  1688.com DIRECT SEARCH: "site:1688.com Ziina 魔方" returned no Ziina-specific listing, only
+  unrelated category pages. Consistent with, and extending, the 2026-09-12 finding that 1688.com
+  is inaccessible to direct fetch (anti-bot captcha) - this pass could not even get indexed
+  snippets naming a Ziina listing there, for whatever reason 1688 content is indexed.
+
+  OTHER B2B/MARKETPLACE DIRECTORIES: made-in-china.com and globalsources.com searches for "Ziina"
+  magic cube returned zero brand-specific results (only generic magic-cube category pages).
+  dhgate.com search for "Ziina" cube returned zero results. Trade-data platforms (Panjiva,
+  ImportGenius, ImportYeti) were checked for a Ziina shipment record; none of their public search
+  surfaces returned a hit through this method (their underlying shipment databases were not
+  queried directly, since that needs an account/paid access this session does not have - recorded
+  as untried-with-available-tools, not as a negative on the databases themselves).
+
+  A THIRD-PARTY TRADEMARK-SEARCH PROXY WAS TRIED AND WAS A DEAD END: registrationchina.com's
+  trademark search page (found via search results for a CNIPA query) is a marketing page
+  describing a paid search SERVICE, not a live queryable database - it returned no actual search
+  results for "ziina" and provides no path to run one without engaging their commercial service.
+  CNIPA itself was NOT re-attempted this pass: the same day's earlier entry in
+  research/qc/p4-10-ziina-lane-a.md already ran it (2026-09-19) and recorded it blocked behind a
+  bot-detection wall that renders an empty document; the task brief instructs against spending a
+  lane fighting bot detection, so this pass deferred to that existing, current-dated result rather
+  than repeating it.
+
+  PHYSICAL/COMMUNITY EVIDENCE RE-CHECKED: the SpeedSolving thread 94339 (the "Ziina Star 3x3 ==
+  knockoff of the Meilong 3M" vs "identical to SCS Pro" dispute already on file) was re-read in
+  full. It contains NO additional claim about visible markings, logos, or box text beyond what is
+  already recorded - only the same two contradictory manufacturer-identity claims, neither naming
+  a company. A YouTube unboxing ("Ziina Space magnetic 3x3 unboxing", search-surfaced) and a
+  TikTok unboxing were located but their video/audio content could not be inspected by any tool
+  available this session (WebFetch returns only YouTube's static shell, not the description or
+  captions, for a dynamically-loaded video page) - recorded as UNTRIED WITH AVAILABLE TOOLS, not
+  as a negative. An eBay search for a "Ziina" 3x3 listing (which sometimes carry additional seller
+  photos beyond a manufacturer's own retail images) returned no dedicated listing.
+preservation_note: >-
+  Every search and fetch above was issued 2026-09-19 and its outcome recorded as returned.
+  Reproducible by re-issuing the same queries, though marketplace search-index results can change
+  over time in ways a CDX-style capture cannot pin.
+accessed: "2026-09-19"
+language: en
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 4, self-assigned archive sweep record. Establishes that the listed avenues were attempted
+  2026-09-19 and what each returned - several negative, two (CNIPA, video-content inspection)
+  genuinely blocked or untried-with-available-tools rather than negative. Does not establish that
+  no evidence exists via these avenues, only that this pass's methods did not surface any.
+status: sourced
