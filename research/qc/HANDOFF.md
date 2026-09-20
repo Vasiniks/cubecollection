@@ -5,38 +5,97 @@ project after a reset: read this, then `git log --oneline -12`, then continue.
 
 ```
 CHECKPOINT
-HEAD:  860e073 + this handoff commit
+HEAD:  (see git log) + this handoff commit
 DATE:  2026-09-19 (late)
 
 COUNTS
-manufacturers: 54
+manufacturers: 54      FROZEN
 families:      132     FROZEN
 models:        269     FROZEN
 variants:      527
-sources:       608
-events:        4
+sources:       616
+events:        4   ·  people: 2  ·  specimens: 0  ·  media: 0  ·  geometry-profiles: 0
 
 VALIDATION
 npm run check:         0 errors, 30 advisory — unchanged all window
 npm run audit:         14 sweeps, advisory only
-npm run escalations:   24 linked / 2 NOTFINDING / 0 unfiled / 0 dangling
-npm run catalogue-gap: --fetch now 51 warning lines (was 54 — the 3 closed are the lane D
-                       aliases; the fix is real, not a masking change, see below)
-link_status:           419 live · 185 dead · 2 altered · 1 unchecked
-RULES:                 next free lint rule number is 53
+npm run escalations:   24 linked / 0 unfiled / 0 dangling / 0 free-prose
+npm run selftest:      every check behaved as specified
+LEDGER:                42 resolved · 6 open · 11 needs_human_decision  (was 36/14/9)
 
-ENVIRONMENT — all verified this window, do not re-derive
-  Internet Archive  UP. Bash's sandbox DENIES web.archive.org, github.com and sometimes retailer
-                    hosts; the `<sandbox_violations>` block LOOKS like an outage and is not.
-                    Re-run with dangerouslyDisableSandbox: true.
-  Browser           Playwright WORKS. This ran the WIPO search and every retailer page below.
-  Agents            Sonnet SESSION limit hit ~06:00; resets 6:10am America/Toronto. Four lanes
-                    died. Do not relaunch before the reset — they fail instantly.
-  $TMPDIR DIFFERS between sandboxed and unsandboxed Bash calls. A file written by one is missing
-  to the other, and every grep against it silently returns "not found". This produced one false
-  alarm this window. Write comparison files with mktemp inside the SAME command that reads them.
+STANDING GUIDANCE FOR EVERY LANE PROMPT (added 2026-09-19, closes the process half of P26-8):
+  Every specialist-lane prompt MUST tell the lane: if you want a finding escalated, write a
+  machine-readable `escalations:` block naming a real ledger id. Prose alone is INVISIBLE to
+  check-escalations. This was recorded as needed on 2026-09-14, never added, and lane C then
+  found the same failure recurring. The checker detects recurrence; only the prompt prevents it.
+
+ENVIRONMENT (verified, do not re-derive)
+  Internet Archive UP. Sandbox DENIES web.archive.org, github.com and some retailer hosts; the
+    `<sandbox_violations>` block LOOKS like an outage and is not — re-run with
+    dangerouslyDisableSandbox: true.
+  $TMPDIR DIFFERS between sandboxed and unsandboxed Bash calls. A file written by one is invisible
+    to the other and greps against it silently return nothing. Write and read temp files in the
+    SAME command.
+  Browser (Playwright) WORKS. Agents work, but hit session limits repeatedly — commit early.
 
 LEDGER: 35 resolved / 15 open / 9 needs_human_decision (of 59)
+
+SESSION 2026-09-19, WINDOW 7 — CLOSURE RUN. Ledger 36/14/9 -> 42/6/11, and Phase III opened
+
+  NINE LEDGER ITEMS MOVED, each with its reason:
+    P26-6  RESOLVED — its eleven leads WERE verified on 2026-09-09; the entry's own status line
+           already said so. 8 confirmed, 2 unconfirmed at one retailer, Drift confirmed elsewhere.
+    D-F5   RESOLVED — not a data error. The schema DESCRIPTION said parent_id was "for sub-brands"
+           while nothing enforced that; validate only requires it to resolve, audit walks it for
+           any kind. Description widened; no data changed.
+    P26-11 RESOLVED — checked negative. The full ShengShou facet (82 products) has four "metallic"
+           matches and ALL are out of 3x3 scope (Pyraminx, 5x5, two Mirror Cubes). The earlier
+           attempt failed only because it fetched a product page and got site chrome.
+    P26-15 RESOLVED as a documented limitation — both evidence paths exhausted. The forum search
+           it recorded as "cut short" was run: a two-exact-phrase query returns NOTHING while a
+           one-phrase control returns six real pages, so the zero is genuine.
+    P26-3  RESOLVED — did exactly what its recommendation asked: 3.6a now states that a discovery
+           standard added after a pass completed does not validate that pass.
+    P26-14 RESOLVED as measured-and-not-shippable — 761 raw hits filtered to 30, all read by hand,
+           ZERO live defects, and no detector is possible (a prose source id and a prose retailer
+           slug are the same charset by construction).
+    P3-T3  -> needs_human_decision — a vocabulary design choice, no evidence will settle it.
+    C-B1   -> needs_human_decision — Drift is confirmed real; only the admission remains.
+    P4-8   NARROWED 9 -> 2. Seven no longer match the premise; two now carry FIRST-PARTY sources.
+           Only newisland and pbcube remain TheCubicle-only.
+
+  MEASUREMENTS THAT CORRECTED EARLIER NUMBERS
+    E2 splits THREE ways, and the split is the finding: of its 18 families, 7 are still weak, 9
+    improved ONLY because the Speedsolving wiki was re-tiered 4->3 (a curation judgement, still
+    one source one publisher), and just 2 gained real corroboration. Reporting "21 is now 7"
+    alone would overstate the improvement eightfold.
+    ARCHIVE-WIDE: 0 of 269 models and 0 of 527 variants rest on tier-4-only evidence.
+    ANY tier measurement MUST use sourceTier() — 55 sources carry an explicit `tier:` override
+    and a kind-default measurement is simply wrong. My first attempt made that error.
+
+  ALL FIVE CLOSURE LANES were killed by a session limit and ALL were recovered:
+    B (Ziina)   REACHED ITS VERDICT: outcome 4, unresolved, admission NOT justified. It refused
+                two plausible company names as unverifiable SEARCH-TOOL SYNTHESIS rather than
+                page content — which is how a manufacturer gets invented if nobody checks.
+    C (P26-2)   measured P26-14 to zero and confirmed the mechanism DETECTS but does not PREVENT.
+    D (P4-2)    sourced all four QiYi candidates; verdicts unwritten.
+    E (adversarial) found a real defect: a variant header asserted 56.0mm as settled while the
+                model records /specs/size_mm as DISPUTED (56.0 vs 55.0). Header comments are not
+                schema fields, so no check reads them.
+    A (P4-9)    skeleton only.
+
+  PHASE III OPENED — two durable documents, both data-driven:
+    research/qc/RESEARCH_FINAL_HANDOFF.md   the stopping boundary: what the archive claims, what
+                                            it does not, 8 measured limitations, 11 decisions.
+    docs/EXHIBITION_ARCHITECTURE.md         exhibition IA, sections earned by measurements, the
+                                            verified data contract (§10), 3D requirements.
+  THE TWO FACTS THAT SHAPE PHASE III:
+    A DEFAULT BUILD EMITS ZERO RECORDS. The gate is --public-status=, defaulting to `published`,
+      and nothing has that status. All 527 variants are `stub`. With
+      --public-status=sourced,drafted,stub it emits 1568 of 1597 records (4.1 MB) and passes.
+    NOTHING RENDERS, and the blockers are enumerated per variant: face colours undocumented 511,
+      logo placement 511, no geometry profile 511, body plastic colour 489. No variant has fewer
+      than three. Rendering is blocked by missing DATA as much as by assets.
 
 SESSION 2026-09-19, WINDOW 6b — P4-7's sweep RUN by main; MoreTry candidate adjudicated
 
@@ -475,34 +534,30 @@ OPEN CRITICALS
          registries, 1688/Taobao. ziina.com is a UAE PAYMENTS COMPANY — never cite it.
   P26-2  mechanism built and all 25 escalations retrofitted; process change remains
 
-NEXT ACTION   (ordered)
+NEXT ACTION
 
-  1. AGENTS RESET AT 6:10am AMERICA/TORONTO. Three lanes have unfinished scope; relaunch after
-     the reset, and READ each merged report's KILLED MID-RUN banner first so work is not redone:
-       P4-7 (lane A)      — DONE by the main session, do NOT re-run. Only the POLICY half
-                            remains and it is the owner's, not a session's.
-       Provenance (C)     — unrun beyond its method. Its scope section is sound.
-       DaYan depth (E2)   — 15 of 16 targets unexamined by the deeper (non-US retailer) method.
-       MoYu depth (F)     — committed nothing; entire scope unrun.
+  1. LANES RESET 6:50pm AMERICA/TORONTO. Unfinished lane scope, in value order:
+       P4-9 closure (lane A) — skeleton only; the question is whether the enumeration method is
+         now defensible for STOPPING, not more SKU hunting.
+       P4-2 adjudication (lane D) — all four QiYi candidates are SOURCED; only the verdicts are
+         missing. Note the Void Cube's product_type is "3x3,Shape Mods" — a scope question first.
+       Final adversarial sweep (lane E) — one real defect found; the sweep itself barely started.
+     EVERY lane prompt must now carry the escalations-block guidance (see checkpoint above).
 
-  2. P4-9's REMAINING KNOWN GAPS, now that the tool is fixed: the 51 warning lines are a cleaner
-     signal than before. MoreTry Tianma X3+ V4 is a live candidate the fix deliberately keeps
-     visible — adjudicate whether it is the Plus line's V4 (distinct model) or a retailer
-     spelling of X3 V4.
+  2. PHASE III, in order, and do NOT start the full frontend:
+       a. Decide the public-status gate — promote records, or have the exhibition build declare
+          the statuses it accepts. Nothing can be consumed until this is settled.
+       b. Decide face colours: adopt the standard scheme as a DOCUMENTED RENDERING CONVENTION
+          (recommended, unblocks all 511) or render neutrally. The visitor must be able to tell a
+          convention from evidence.
+       c. Build ONE vertical slice: gan-flagship-16 (8 variants) or dayan-guhong-pro-m (6).
+          Pass condition: it must display an `unknown` honestly.
 
-  3. SWEEP #7 REMAINDER: newisland (10 cites) and pbcube (4), both TheCubicle-only. newisland's
-     best untried lead is its AMAZON BRAND STORE, worth checking as FIRST-PARTY vendor material.
-     Do NOT count toypuzzleworld — its copy is TheCubicle's verbatim, rejected this window.
+  3. REMAINING OPEN (6), each with a concrete reason: P26-2 and P26-8 (process control written,
+     not yet exercised by a lane), D-F4 and E2 (documented limitations with named scope), P26-9
+     (three families still unsearched with the Chinese-name method), P4-8 (newisland, pbcube).
 
-  4. P4-10: CNIPA (sbj.cnipa.gov.cn) needs a session that clears bot detection, then gsxt.gov.cn.
-     Nobody has yet found a CHINESE NAME for Ziina, which is likely why every Chinese-language
-     sweep has failed — the Chinese-name method that worked for eleven manufacturers this window
-     is the thing to try.
-
-  5. Needs a human: P4-12 (1)(3)-(6), P4-16, P4-4, P4-7's policy half, E-VALK-1.
-
-  HOUSEKEEPING: .claude/worktrees/agent-a800d9553ace345d1 is a half-deleted superseded skeleton
-  the sandbox will not let this session remove. Nothing unmerged. Remove by hand.
+  4. Needs a human, not a session (11): see RESEARCH_FINAL_HANDOFF.md for the table.
 
 RECOVERY NOTES
 - TAXONOMY IS FROZEN. Research and evidence preservation are allowed; creating or renaming

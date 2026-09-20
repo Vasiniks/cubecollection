@@ -1504,6 +1504,25 @@ only one that worked. Slug form must be checked per brand, never assumed.
       is confirmed by the same sweep: the ledger-id references that DO exist all resolve, so
       records and the ledger are consistent with each other. It is the report layer that carries
       findings nothing else can see.
+2026-09-19 - CONFIRMED LIVE, NOT JUST IN THEORY: the mechanism DETECTS recurrence but does not
+PREVENT it, and a fresh instance was found in flight. Lane C's review (research/qc/
+p26-2-closure-lane-c.md) noted that HANDOFF's window-4 entry records exactly this: "Lane I's
+Legend escalation shows the P26-2 gap is still live for NEW lane reports: a prose-only escalation
+is invisible to the checker." That was written on 2026-09-14 and the follow-up it recommended -
+"worth a line in the lane prompts" - was never added, so the same thing could recur on the next
+lane. It is now standing guidance in HANDOFF rather than a note in a superseded window entry.
+WHY PREVENTION IS HARD HERE AND DETECTION IS NOT: check-escalations runs after the fact on files
+already written. Nothing can stop an agent writing prose instead of a block; what CAN be done is
+tell every lane, in its prompt, that a finding it wants escalated must carry a machine-readable
+`escalations:` block naming a ledger id. That is a process control, not a code control, which is
+why no rule closes this issue.
+THE NUMBERS ARE STABLE, which is the other half of the answer. 95 reports on file (was 74),
+24 linked, 0 UNFILED, 0 dangling, 0 free-prose, and the mechanism has needed no manual correction
+since 2026-09-12. The reverse direction is unchanged at 13 of 59 - recorded explicitly so a static
+number is not mistaken for a stale one.
+STAYS OPEN, with a concrete reason: the process control is now written down but has not yet been
+exercised by a lane launched under it. One pass of lanes reading the new guidance and producing
+blocks would close it.
     counterevidence: >-
       No canonical data was lost in any of the four occurrences - only narrative. The records
       themselves have always survived, because agents commit at logical boundaries.
@@ -1722,7 +1741,7 @@ bounded residual, not an open research thread.
 
   - id: P26-14
     severity: low
-    status: open
+    status: resolved
     title: "Source ids cited in prose are unvalidated"
     category: tooling
     affected_records: "data/sources/thecubicle-shengshou-other-3x3-lines-2026.yml (fixed)"
@@ -1731,6 +1750,27 @@ bounded residual, not an open research thread.
       source id that has never existed. It sat inside an excerpt rather than an attestation
       sources list, so validate.mjs - which checks only attestation source refs - structurally
       cannot catch it. Fixed in place, but the class of defect remains undetectable.
+2026-09-19 - RESOLVED as measured-and-not-shippable. Zero live defects exist, and the detector
+this issue implies cannot be built. Full working: research/qc/p26-2-closure-lane-c.md.
+MEASURED with the most favourable heuristic available, not a naive one: backtick-quoted,
+hyphen-shaped tokens whose leading segment matches a REAL retailer or publisher prefix drawn from
+the 608 actual source ids on file (51 such prefixes). Raw: 761 backtick tokens that resolve to no
+record id anywhere. Filtered by that prefix set: 192. Filtered again to drop literal `.yml`/`.com`
+references and NxN product-size tokens: 30. ALL 30 WERE READ BY HAND. Zero are live defects.
+WHAT THEY ACTUALLY ARE: one is this issue's own original finding, already fixed and now preserved
+as a self-disclosing "was never created" note quoted across three audit-trail reports; a cluster
+are two source ids retired by a rule-42 duplicate merge, quoted only inside the report that
+documents the retirement; several are explicitly-labelled PROPOSED future source ids from a
+remediation spec that says "not created here"; the rest are retailer product-page slugs that share
+a brand-name first segment with a real source-id prefix by coincidence.
+WHY NO RULE IS POSSIBLE: a prose source id and a prose retailer product slug are THE SAME CHARSET
+BY CONSTRUCTION. Nothing short of parsing citation intent distinguishes them, and no filtering
+effort tried got the false-positive rate below 100%. Shipping this would have added a check that
+fires only on correct records - the "cries wolf" failure this project has refused four times now.
+It closes rather than staying open because an issue should stay open while work remains. Here the
+work was done: the class was measured, every survivor was read, and the answer is that the archive
+has no instances and no detector is available. The limitation is recorded in the checker's own
+comment so the next reader does not re-derive it.
     counterevidence: >-
       Attestation source refs, the ones that carry evidentiary weight, ARE validated and all
       resolve. A prose citation misleads a reader but does not corrupt a claim's evidence chain.
@@ -1741,7 +1781,7 @@ bounded residual, not an open research thread.
     confidence: confirmed
     downstream_impact: "A reader chasing a citation finds nothing. No claim rests on it."
     owner: main
-    last_updated: "2026-09-08"
+    last_updated: "2026-09-19"
 
   # ---- pre-Pass-4 QC complete (2026-09-08) ------------------------------------
 
@@ -3008,6 +3048,36 @@ is a Shopify shipping weight, refused under the rule-45 class.
       THE LANE ALSO REJECTED A FABRICATION, which is worth recording: a web-search tool returned
       a synthesized claim that "CubeIn is the manufacturer". It is unsupported by any cited page
       and the lane flagged and refused it explicitly so it cannot be miscited downstream.
+2026-09-19 - THE ZIINA RESEARCH LOOP IS CLOSED AS UNRESOLVED (outcome 4). Full working:
+research/qc/p4-10-closure-lane-b.md. The ISSUE stays needs_human_decision because its remaining
+half is an admission decision, not research.
+Who manufactures Ziina is unestablished, and the lane is explicit that this is not for lack of
+effort. It NARROWED the question: Alibaba wholesale listings disprove the hypothesis that Ziina
+is purely a Western-retailer-side label with no upstream reality - a real export-level commercial
+presence exists. But it cannot name that presence, cannot distinguish a manufacturer from a
+trading company reselling factory output under its own label, and cannot connect it to any
+existing manufacturer for an OEM finding.
+WHAT THE LANE REFUSED IS THE MOST IMPORTANT PART. Every concrete company-name lead surfaced this
+pass - "CubeIn is the manufacturer" (previously rejected) and "Shantou Chenghai District
+Paisier/Peisier Toy Firm" (rejected here) - proved to be unverifiable SEARCH-TOOL SYNTHESIS
+rather than content on any page, and the report propagates neither. That is exactly how a
+manufacturer gets invented if nobody checks, and it did not happen.
+EXHAUSTED: Chinese-language brand-name search; 1688.com and Alibaba.com direct access (anti-bot
+across every technique tried, including proxies and mobile paths); WIPO (bounded negative - China
+not covered); non-US specialist retailer brand indices; made-in-china.com, globalsources.com,
+dhgate.com; twistypuzzles.com; the speedsolving wiki; community forum threads.
+UNTRIED, named precisely so the next attempt does not repeat this one: video-frame inspection of
+located unboxing footage (this session's tools could not extract video content); CNIPA and
+gsxt.gov.cn with a browser that clears CNIPA's bot challenge - still the single most direct route,
+since it is the one registry that would index a China-originated mark and is exactly WIPO's
+coverage gap; and 1688/Alibaba from a different network path or logged-in session.
+THE OTHER SIX MANUFACTURERS are NOT covered by this closure. Escalation material for VIN Cube,
+Drift, YZ, Cube Lab, ZePuzzles and Smart Cube Labs is preserved at
+p4-10-six-manufacturer-escalation-sweep-2026-09. VIN Cube in particular now has a second non-US
+retailer carrying it (store.maru.tw, manufacturer_id=58).
+RECOMMENDATION TO THE OWNER: admission of Ziina is NOT justified on current evidence. The brand is
+real and well-evidenced; its MAKER is not, and RESEARCH_SPEC 2.3 / rule 17 exist precisely because
+a brand name is not a manufacturer identity.
     counterevidence: >-
       Ziina's catalogue is dominated by printed novelty themes, and the archive's scope rules
       exclude novelties while admitting printed EDITIONS of real cubes - the LeFun precedent
