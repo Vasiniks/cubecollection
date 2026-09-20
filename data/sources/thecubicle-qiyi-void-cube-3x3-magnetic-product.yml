@@ -1,0 +1,66 @@
+# source: thecubicle-qiyi-void-cube-3x3-magnetic-product
+# Closes the research half of P4-2 for this one candidate. TheCubicle's own product page for
+# "QiYi Speed Void Cube 3x3 (Magnetic)", one of the four bare retailer slugs escalated by Pass 4
+# Agent B. Fetched directly to assess against RESEARCH_SPEC 2.1/2.4, per P4-2's own
+# recommendation. A SECOND, independent Void Cube candidate already exists in this archive under
+# a different manufacturer — see thecubicle-dayan-void-cube-limited-edition-2026 — with the same
+# disposition reached independently: model-layer evidence, no record created.
+id: thecubicle-qiyi-void-cube-3x3-magnetic-product
+entity: source
+kind: retailer
+title: "QiYi Speed Void Cube 3x3 (Magnetic) – TheCubicle"
+publisher: "TheCubicle"
+url: "https://www.thecubicle.com/products/qiyi-void-cube-3x3-magnetic"
+preservation_method: excerpt
+excerpt: |-
+  Live Shopify product JSON fetched 2026-09-19 from the handle's own .json endpoint.
+
+  "id": 7567332638803, "handle": "qiyi-void-cube-3x3-magnetic", "title": "QiYi Speed Void
+  Cube 3x3 (Magnetic)", "vendor": "QiYi", "product_type": "3x3,Shape Mods", "created_at":
+  "2025-03-17". body_html, verbatim: "The QiYi Speed Void Cube (Magnetic) is a unique twist on
+  the classic 3x3 puzzle – literally! Unlike a standard 3x3 Cube, the Void Cube has no
+  centerpieces, creating a hollow, ring-like appearance that's both visually striking and
+  mechanically intriguing. This magnetic version has a 48-magnet edge/corner positioning system
+  to make your puzzle more stable and allow for more control when turning. Despite its unusual
+  design, the QiYi Speed Void Cube turns smoothly thanks to QiYi's signature engineering, making
+  it great for both casual solving and cube collections. The absence of centers adds an extra
+  challenge, as you'll need to rely solely on edge and corner positioning." One variant,
+  "Stickerless", SKU 14037_1_153, price 8.99 USD, item weight 91g.
+preservation_note: >-
+  Live JSON, not an archived capture. A CDX list query for this URL returned HTTP 429
+  (rate-limited) on 2026-09-19 — not confirmed absent, just not obtained this session.
+  `excerpt` is the safe treatment.
+accessed: "2026-09-19"
+language: en
+region: US
+link_status: live
+last_checked: "2026-09-19"
+reliability_note: |-
+  Tier 2, retailer product page with structured Shopify fields.
+
+  ASSESSED AGAINST RESEARCH_SPEC 2.1/2.4, per P4-2's own recommendation, AND NOT SETTLED —
+  recorded honestly as such rather than guessed. Two things are clear from this source alone.
+  First, this is a MODEL-layer question, not a variant-layer one: "no centerpieces" is a
+  different internal geometry from every QiYi 3x3 model already in this archive, which under
+  DATA_MODEL §4.2 fails the separability-at-assembly test outright — no choice of parts turns a
+  solid-center 3x3 into one with none. Second, TheCubicle's own `product_type` here is
+  "3x3,Shape Mods" (dual-tagged), unlike qiyi-fluffy-3x3's "Shape Mods" alone (fetched the same
+  session) — the retailer itself treats this as partially a 3x3 and partially a shape mod, not
+  cleanly one or the other.
+
+  WHAT IS NOT SETTLED IS WCA LEGALITY, and nothing here should be read as answering it. This
+  archive's own WCA primary source (wca-regulations-2026-04) holds Article 3 clauses on colour
+  (3d/3d2), permitted modifications (3h), and size (3a+), but nothing yet held addresses the
+  overall-shape/piece-completeness clause that would settle whether a Void Cube's missing
+  centre pieces are WCA-compliant for the standard 3x3x3 event. Applying 3d2 or 3h here would be
+  the same kind of regulation-to-object inference this archive made explicitly for
+  rubiks-classic-cube--impossible/--phantom under P4-12 item (2) — and that inference is not
+  made here because the specific clause it would rest on has not been located.
+
+  THIS IS THE SAME CANDIDATE CLASS AS AN EXISTING DAYAN RECORD. DaYan depth lane E2 preserved a
+  DaYan-vendor Void Cube (thecubicle-dayan-void-cube-limited-edition-2026) on 2026-09-12 with
+  the identical reasoning and the identical outcome: preserved as evidence, no model or variant
+  created, taxonomy untouched. The two should be adjudicated together as one mechanism question
+  ("does this archive admit a Void Cube model, and under what scope_class") rather than
+  separately per manufacturer. No model or variant record is created from this source.
+status: sourced
