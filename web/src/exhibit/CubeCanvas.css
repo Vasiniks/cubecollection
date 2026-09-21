@@ -1,0 +1,32 @@
+/* The plinth. Dark in both themes, so the object reads as lit rather than as a
+   page element — see tokens.css --surface-stage. */
+.cube-canvas {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--surface-stage);
+  overflow: hidden;
+}
+
+.cube-canvas canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.cube-canvas--unavailable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-4);
+  padding: var(--space-7);
+  color: var(--surface-stage-ink);
+}
+
+.cube-canvas__reason {
+  font-size: var(--text-300);
+  line-height: var(--leading-relaxed);
+  opacity: 0.8;
+  max-width: 44ch;
+  margin: 0;
+}

@@ -1,0 +1,222 @@
+/* The object on the plinth. Museum pacing: one column, generous rhythm, the
+   object large and early, the evidence never hidden behind an accordion. */
+
+.variant {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-11);
+}
+
+.variant__breadcrumb {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin-bottom: var(--space-4);
+}
+
+.variant__status {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  color: var(--ink-500);
+  margin: 0 0 var(--space-6);
+}
+
+.variant__stage {
+  max-width: 34rem;
+  margin: 0 auto var(--space-7);
+}
+
+.variant__name {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-700), 5vw, var(--text-900));
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-regular);
+  margin: 0 0 var(--space-8);
+  text-wrap: balance;
+}
+
+.variant__section-title {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  font-weight: var(--weight-regular);
+  border-top: 1px solid var(--ink-100);
+  padding-top: var(--space-4);
+  margin: var(--space-8) 0 var(--space-5);
+}
+
+.variant__lede {
+  font-size: var(--text-500);
+  line-height: var(--leading-relaxed);
+  max-width: 58ch;
+  margin: 0 0 var(--space-6);
+}
+
+.variant__convention-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-6);
+}
+
+.variant__convention {
+  border-left: 3px solid var(--evidence-convention);
+  padding-left: var(--space-5);
+  max-width: 68ch;
+}
+
+.variant__convention-text {
+  margin: var(--space-3) 0 var(--space-3);
+  line-height: var(--leading-relaxed);
+}
+
+.variant__convention-denial {
+  margin: 0;
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+}
+
+.variant__denial-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+/* ---------------------------------------------------------------- spec table
+   Confidence is a COLUMN, at the same type size as the value. It is never
+   smaller and never greyed to the point of being skippable: a visitor must not
+   be able to read this table and miss which claims are weak. */
+
+.spec {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-300);
+}
+
+.spec__caption {
+  text-align: left;
+  color: var(--ink-700);
+  margin-bottom: var(--space-4);
+  max-width: 62ch;
+  line-height: var(--leading-relaxed);
+}
+
+.spec thead th {
+  text-align: left;
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  font-weight: var(--weight-regular);
+  border-bottom: 1px solid var(--ink-300);
+  padding: var(--space-2) var(--space-3) var(--space-2) 0;
+}
+
+.spec__row > * {
+  border-bottom: 1px solid var(--ink-100);
+  padding: var(--space-4) var(--space-3) var(--space-4) 0;
+  vertical-align: baseline;
+  text-align: left;
+}
+
+.spec__term {
+  font-weight: var(--weight-regular);
+  color: var(--ink-700);
+  white-space: nowrap;
+}
+
+.spec__value {
+  font-size: var(--text-400);
+  color: var(--ink-900);
+}
+
+/* An unknown is a finding, not a broken cell. It is dimmed no further than
+   ink-700, which is AA at body size. */
+.spec__row[data-basis="unknown"] .spec__value {
+  color: var(--ink-700);
+  font-style: italic;
+}
+
+.spec__from,
+.spec__note {
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+}
+
+.spec__note { max-width: 40ch; }
+
+.spec__disputed { display: block; margin-top: var(--space-2); }
+
+/* ---------------------------------------------------------------- evidence */
+
+.evidence-list {
+  list-style: decimal;
+  padding-left: var(--space-5);
+  display: grid;
+  gap: var(--space-6);
+  margin: 0;
+}
+
+.evidence__title { margin: 0 0 var(--space-2); font-size: var(--text-400); }
+
+.evidence__meta {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  color: var(--ink-500);
+}
+
+.evidence__excerpt {
+  margin: var(--space-3) 0 0;
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--ink-100);
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+  max-width: 68ch;
+}
+
+.variant__return {
+  margin-top: var(--space-9);
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------- responsive
+   The spec table is the hard case on a phone. It becomes a stack of labelled
+   blocks rather than a horizontally scrolling table, because a table a visitor
+   has to scroll sideways is a table whose confidence column gets missed — and
+   that column is the one thing this page cannot afford to lose. */
+
+@media (max-width: 52rem) {
+  .variant { padding: var(--space-5) var(--space-4) var(--space-9); }
+
+  .spec thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .spec, .spec tbody, .spec__row, .spec__row > * { display: block; width: 100%; }
+  .spec__row {
+    border-bottom: 1px solid var(--ink-100);
+    padding: var(--space-5) 0;
+  }
+  .spec__row > * { border-bottom: none; padding: 0 0 var(--space-2); }
+  .spec__term {
+    font-family: var(--font-mono);
+    font-size: var(--text-200);
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--ink-500);
+    white-space: normal;
+  }
+  .spec__note { max-width: none; }
+}

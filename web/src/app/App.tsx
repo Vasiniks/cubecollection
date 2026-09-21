@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { loadMeta, isResearchPreview, type BundleMeta } from './bundle';
 import { useRoute, href, navigate } from './router';
 import { ConventionsPage } from './ConventionsPage';
+import { VariantPage } from '../exhibit/VariantPage';
 
 export function App() {
   const route = useRoute();
@@ -29,7 +30,9 @@ export function App() {
           Research preview — these records are researched, not curator-approved.
         </p>
       )}
-      {route.name === 'conventions' ? <ConventionsPage /> : (
+      {route.name === 'conventions' ? <ConventionsPage />
+       : route.name === 'variant' ? <VariantPage modelId={route.modelId} variantId={route.id} />
+       : (
       <main data-testid="shell">
         <h1>CubeCollection</h1>
         <p>
@@ -46,6 +49,19 @@ export function App() {
             How this exhibition draws what it cannot cite
           </a>
         </p>
+        <ul>
+          {[
+            ['gan-flagship-16--maglev-max-dual-wr-limited-edition', 'GAN16 Maglev MAX (Dual-WR Limited Edition)'],
+            ['gan-flagship-16--amyth-winter-limited-edition', 'Amyth — GAN16 Maglev MAX Winter Limited Edition'],
+          ].map(([id, name]) => {
+            const to = href({ name: 'variant', modelId: 'gan-flagship-16', id: id as string });
+            return (
+              <li key={id}>
+                <a href={to} onClick={(e) => { e.preventDefault(); navigate(to); }}>{name}</a>
+              </li>
+            );
+          })}
+        </ul>
       </main>
       )}
     </>
