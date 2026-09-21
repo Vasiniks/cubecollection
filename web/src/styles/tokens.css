@@ -16,50 +16,314 @@
  * every surface they appear on (see docs/design/VISUAL_LANGUAGE.md for the
  * measured ratios). Confidence must never be color-only: shape (fill amount,
  * outline vs. solid, dashed vs. continuous) always carries the same
- * distinction color does, and a text label always accompanies the glyph.
+ * distinction color does, and a text label always accompanies the glyph
+ * (see base.css §6, .evidence-badge).
  *
  * Both prefers-color-scheme: light and dark are supported ("Gallery" /
  * "Vitrine"), plus a manual [data-theme] override for a future UI toggle.
  *
  * No build tooling: plain CSS custom properties on :root, consumed by any
- * Vite/React app later. System font stacks only — see the typography section
- * for the optional, clearly-licensed webfont upgrade path (not applied here).
+ * Vite/React app later. System font stacks only — see §3 for the optional,
+ * clearly-licensed webfont upgrade path (not applied by default here).
  *
- * Sections below (values filled in over the next commits):
- *   1. Color — surfaces, ink/text, accent
- *   2. Color — confidence & evidence-treatment scale
- *   3. Typography — families, scale, weight, leading, tracking
- *   4. Spacing scale
- *   5. Radii
- *   6. Elevation
- *   7. Motion — durations & easings
- *   8. Z-layers
- *   9. Dark mode ("Vitrine") overrides
+ * All contrast ratios cited in comments are computed against the sRGB values
+ * actually shipped here (WCAG 2.1 relative-luminance formula), not estimated.
+ * Full working is in docs/design/VISUAL_LANGUAGE.md §9.
  */
 
 :root {
-  /* 1. COLOR — surfaces, ink/text, accent (light / "Gallery", the default) */
+  /* ---------------------------------------------------------------------
+   * 1. COLOR — surfaces, ink/text, accent (light / "Gallery", the default)
+   * --------------------------------------------------------------------- */
 
-  /* 2. COLOR — confidence & evidence-treatment scale */
+  /* Surfaces: warm, slightly desaturated off-whites, like museum card stock
+     and gallery wall paint rather than paper-white #fff or dashboard #f8f8f8. */
+  --surface-0: #faf9f5;   /* page / wall */
+  --surface-1: #f3f1ea;   /* panel / card */
+  --surface-2: #eae7dc;   /* recessed well — the evidence drawer's own bg */
+  --surface-stage: #14130f;  /* the plinth: hero object stage, dark even in light mode,
+                                 so the cube reads as a lit object rather than a page element */
+  --surface-stage-ink: #f1efe7; /* text/UI drawn on --surface-stage */
 
-  /* 3. TYPOGRAPHY */
+  /* Ink: warm near-black to warm pale stone, five steps. Body text is
+     ink-900 (16.85:1 on surface-0) and ink-700 (9.38:1); ink-500 is reserved
+     for genuinely tertiary metadata (5.14:1, still comfortably AA). ink-300
+     and ink-100 are sub-AA by design and restricted to non-text use
+     (hairlines, disabled-state borders) — see VISUAL_LANGUAGE.md §9 for the
+     explicit accent/text-vs-decoration split. */
+  --ink-900: #1a1812;
+  --ink-700: #46433a;
+  --ink-500: #6e6a5c;
+  --ink-300: #9a9686;
+  --ink-100: #dddace;
 
-  /* 4. SPACING SCALE */
+  /* Accent: one hue only, a museum brass/plaque bronze. Used for links,
+     active states, and the focus ring — never as page decoration.
+     5.57:1 on surface-0 (passes AA for normal text, i.e. it is safe to use
+     as link-colored body-sized text, not just large UI). */
+  --accent-500: #8a5a2b;
+  --accent-700: #6b4520; /* pressed/active */
+  --accent-100: #f1e4d3; /* hover tint background */
 
-  /* 5. RADII */
+  /* Focus ring reuses the accent so it never adds a new hue to the page. */
+  --focus-ring: var(--accent-500);
 
-  /* 6. ELEVATION */
+  /* ---------------------------------------------------------------------
+   * 2. COLOR — confidence & evidence-treatment scale
+   * ---------------------------------------------------------------------
+   * Three distinct FAMILIES, not one gradient, because they are three
+   * different epistemic claims, not three points on one axis:
+   *   - confirmed…uncertain: a warm bronze family (same family as --accent,
+   *     for "this is the archive's own voice"), varying in fill amount as
+   *     well as hue, so the distinction survives grayscale/color-blindness.
+   *   - disputed: a rust/oxide hue — a genuinely different color, because
+   *     "credible sources disagree" is a different kind of fact from "weak
+   *     single source", not just a weaker version of it.
+   *   - unknown: neutral grey, hollow/dashed glyph — absence, not a weak fact.
+   *   - convention (not a confidence value): a cool slate blue, a different
+   *     hue FAMILY from all of the above (warm bronze/rust vs. cool slate),
+   *     so a rendering default can never be mistaken for sourced evidence
+   *     at any saturation or lightness.
+   * Every value below is ≥3:1 against both --surface-0 and --surface-1
+   * (WCAG 1.4.11, non-text UI component contrast — these colors are used
+   * only for glyphs/borders; the adjoining label text is always --ink-900
+   * or --ink-700, which have their own already-verified AA text contrast).
+   */
+  --confidence-confirmed: #6b3e14;  /* 8.58:1 / 7.99:1 */
+  --confidence-probable:  #8a5a2b;  /* 5.57:1 / — same as accent, deliberately:
+                                        "probable" is the archive's ordinary
+                                        confident voice */
+  --confidence-reported:  #a97a3e;  /* 3.60:1 */
+  --confidence-uncertain: #8d8874;  /* 3.37:1 / 3.15:1 — desaturated stone, not
+                                        just a paler bronze, so low confidence
+                                        also reads as "muted" not just "light" */
+  --confidence-disputed:  #8b3a2b;  /* 7.28:1 — rust, distinct hue family */
+  --confidence-unknown:   #6e6e6e;  /* 4.84:1 / 4.51:1 — neutral grey */
+  --evidence-convention:  #4a5d6b;  /* 6.49:1 — slate, distinct hue family */
 
-  /* 7. MOTION */
+  /* ---------------------------------------------------------------------
+   * 3. TYPOGRAPHY
+   * ---------------------------------------------------------------------
+   * System stacks only — no font binaries, no network font request by
+   * default. Optional upgrade path (documented, not wired up):
+   *   display -> "Source Serif 4" (SIL Open Font License 1.1, Google Fonts)
+   *   body    -> "Inter"          (SIL Open Font License 1.1, Google Fonts)
+   *   mono    -> "IBM Plex Mono"  (SIL Open Font License 1.1, Google Fonts)
+   * Each has the matching system fallback already first/last in its stack
+   * below, so adding an @font-face for one of these later is a pure
+   * enhancement — nothing breaks without it and nothing here assumes it.
+   */
+  --font-display: ui-serif, "New York", "Iowan Old Style", Georgia,
+    "Times New Roman", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", "Roboto Mono", Menlo,
+    Consolas, monospace;
 
-  /* 8. Z-LAYERS */
+  /* Type scale: compressed ratio (~1.15–1.2x) at the small end, where dense
+     archival metadata (accession numbers, tiers, dates) needs fine steps
+     without becoming illegible; expanded ratio (~1.3–1.34x) at the large
+     end, where editorial drama (the landing claim, gallery titles) needs
+     real jumps. A single mechanical ratio across all ten steps produced
+     either a cramped small end or an absurd large end — this is a
+     deliberate two-speed scale, not an oversight. See VISUAL_LANGUAGE.md §3. */
+  --text-100: 0.625rem;  /* 10px — accession codes, tier labels */
+  --text-200: 0.75rem;   /* 12px — caption / meta */
+  --text-300: 0.875rem;  /* 14px — secondary UI */
+  --text-400: 1rem;      /* 16px — body (base) */
+  --text-500: 1.25rem;   /* 20px — lead paragraph */
+  --text-600: 1.5rem;    /* 24px — H4 */
+  --text-700: 2rem;      /* 32px — H3 */
+  --text-800: 2.625rem;  /* 42px — H2 */
+  --text-900: 3.5rem;    /* 56px — H1 / gallery title */
+  --text-950: 4.75rem;   /* 76px — display */
+  --text-1000: 6.25rem;  /* 100px — the landing page's one monumental claim */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-tight: 1.1;    /* display / hero */
+  --leading-snug: 1.25;    /* headings */
+  --leading-normal: 1.5;   /* body */
+  --leading-relaxed: 1.7;  /* long-form provenance / essay copy */
+
+  --tracking-tight: -0.01em;  /* large display serif */
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;    /* eyebrow labels, uppercase meta */
+  --tracking-wider: 0.08em;   /* smallest caption/accession text */
+
+  /* ---------------------------------------------------------------------
+   * 4. SPACING SCALE
+   * ---------------------------------------------------------------------
+   * 4px grid, widening geometrically at the top end so the largest steps
+   * can carry genuine museum-gallery breathing room (a single object with
+   * space around it, not a dense grid of thumbnails).
+   */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-7: 3rem;      /* 48px */
+  --space-8: 4rem;      /* 64px */
+  --space-9: 6rem;      /* 96px */
+  --space-10: 8rem;     /* 128px */
+  --space-11: 12rem;    /* 192px */
+  --space-12: 16rem;    /* 256px */
+
+  /* ---------------------------------------------------------------------
+   * 5. RADII
+   * ---------------------------------------------------------------------
+   * Deliberately restrained — "excessive rounded corners" is on the ban
+   * list. Sharp/near-sharp edges read as vitrine glass and plinth signage;
+   * --radius-pill exists ONLY for confidence/status chips, which are
+   * functional metadata tags, not decorative buttons.
+   */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;  /* 2px — subtle edge-easing on panels */
+  --radius-md: 0.25rem;   /* 4px — buttons, inputs, evidence-badge */
+  --radius-lg: 0.5rem;    /* 8px — large media containers / modal sheets only */
+  --radius-pill: 999px;   /* chips/tags only — never a card or button */
+
+  /* ---------------------------------------------------------------------
+   * 6. ELEVATION
+   * ---------------------------------------------------------------------
+   * Flat by default: most surface separation comes from --surface-0/1/2
+   * tone plus a 1px --ink-100 hairline, not a shadow (this is what "no
+   * glassmorphism, no card soup" means at the token level — a card is a
+   * bounded region, not a floating panel with a halo). Shadow is reserved
+   * for things that actually leave the page's plane: the evidence drawer,
+   * modals, and the hero object's own cast shadow (an object-photography
+   * effect, not a UI affordance).
+   */
+  --elevation-0: none;
+  --elevation-1: inset 0 0 0 1px var(--ink-100);
+  --elevation-2: 0 1px 2px rgba(26, 24, 18, 0.06), 0 2px 8px rgba(26, 24, 18, 0.04);
+  --elevation-3: 0 4px 16px rgba(26, 24, 18, 0.08), 0 12px 32px rgba(26, 24, 18, 0.10),
+    inset 0 0 0 1px var(--ink-100);
+  --elevation-stage: 0 24px 48px rgba(0, 0, 0, 0.28), 0 4px 12px rgba(0, 0, 0, 0.18);
+
+  /* ---------------------------------------------------------------------
+   * 7. MOTION — durations & easings
+   * ---------------------------------------------------------------------
+   * "Restrained and meaningful" and "museum pacing": short, snappy
+   * durations for feedback (the interface confirming it heard you);
+   * one long, deliberate duration reserved for genuine reveals (an object
+   * arriving on its plinth, a cross-fade between exhibits) — used sparingly,
+   * not as a default for every transition. See VISUAL_LANGUAGE.md §5 for
+   * the banned-pattern list (springs, parallax, autoplay, shimmer).
+   */
+  --duration-instant: 80ms;    /* micro feedback: button press */
+  --duration-fast: 150ms;      /* hover, focus */
+  --duration-base: 240ms;      /* standard transitions: panel/drawer open */
+  --duration-slow: 400ms;      /* page-level: cross-fade between exhibits */
+  --duration-deliberate: 700ms; /* the signature move: object reveal, plinth settle */
+
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);   /* default in/out */
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);          /* entrances */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);           /* exits */
+  --ease-emphasized: cubic-bezier(0.2, 0, 0, 1);   /* deliberate "settle",
+                                                        used only with
+                                                        --duration-deliberate */
+
+  /* ---------------------------------------------------------------------
+   * 8. Z-LAYERS
+   * --------------------------------------------------------------------- */
+  --z-base: 0;
+  --z-raised: 10;     /* hover-raised card within its own stacking context */
+  --z-sticky: 100;     /* wayfinding / return-path nav (see EXHIBITION_ARCHITECTURE §6) */
+  --z-overlay: 200;    /* evidence drawer */
+  --z-modal: 300;
+  --z-toast: 400;
+  --z-max: 999;        /* skip link */
 }
 
-/* 9. DARK MODE ("Vitrine") — system preference, then manual override */
+/* -----------------------------------------------------------------------
+ * 9. DARK MODE ("Vitrine") — system preference, then manual override
+ * -----------------------------------------------------------------------
+ * Not a palette inversion: dark mode is a second, independently designed
+ * environment (a gallery at night, the cube spotlit against near-black),
+ * so every value below is its own token, re-verified for contrast rather
+ * than computed from the light set. Elevation in dark mode comes from
+ * surfaces getting LIGHTER as they rise (surface-0 < surface-1 < surface-2
+ * in lightness, same as light mode) rather than from shadows, because a
+ * drop shadow barely reads against near-black — the Material dark-theme
+ * convention, adopted because it is honest about how shadows behave, not
+ * because it is fashionable.
+ * ----------------------------------------------------------------------- */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
+    --surface-0: #121210;
+    --surface-1: #1b1a17;
+    --surface-2: #24221d;
+    --surface-stage: #060605;   /* darker still: the plinth stays the darkest
+                                    plane in both modes */
+    --surface-stage-ink: #f1efe7;
+
+    --ink-900: #f1efe7;   /* 16.29:1 on surface-0 */
+    --ink-700: #c9c6b8;   /* 10.94:1 */
+    --ink-500: #9e9a8a;   /* 6.65:1 */
+    --ink-300: #6b6858;
+    --ink-100: #34322b;
+
+    --accent-500: #d9a257;  /* 8.27:1 on surface-0 */
+    --accent-700: #b9843f;
+    --accent-100: #3a2c1a;
+    --focus-ring: var(--accent-500);
+
+    --confidence-confirmed: #d9a257;  /* 8.27:1 — shares accent's tone:
+                                          "confirmed" is the strongest claim,
+                                          same status as an interactive
+                                          element the visitor can trust */
+    --confidence-probable:  #c08a4a;  /* 6.23:1 */
+    --confidence-reported:  #a67a52;  /* 4.94:1 */
+    --confidence-uncertain: #8f8a78;  /* 5.43:1 */
+    --confidence-disputed:  #c97056;  /* 5.30:1 */
+    --confidence-unknown:   #8c8c8c;  /* 5.58:1 */
+    --evidence-convention:  #7c93a3;  /* 5.86:1 */
+
+    --elevation-1: inset 0 0 0 1px var(--ink-100);
+    --elevation-2: 0 1px 2px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+    --elevation-3: 0 4px 16px rgba(0, 0, 0, 0.45), 0 12px 32px rgba(0, 0, 0, 0.35),
+      inset 0 0 0 1px var(--ink-100);
+    --elevation-stage: 0 24px 64px rgba(0, 0, 0, 0.6), 0 0 80px rgba(217, 162, 87, 0.06);
   }
 }
 
+/* Manual override hook for a future theme toggle — mirrors the media-query
+   block exactly so JS only ever needs to set data-theme, never touch tokens. */
 :root[data-theme="dark"] {
+  --surface-0: #121210;
+  --surface-1: #1b1a17;
+  --surface-2: #24221d;
+  --surface-stage: #060605;
+  --surface-stage-ink: #f1efe7;
+
+  --ink-900: #f1efe7;
+  --ink-700: #c9c6b8;
+  --ink-500: #9e9a8a;
+  --ink-300: #6b6858;
+  --ink-100: #34322b;
+
+  --accent-500: #d9a257;
+  --accent-700: #b9843f;
+  --accent-100: #3a2c1a;
+  --focus-ring: var(--accent-500);
+
+  --confidence-confirmed: #d9a257;
+  --confidence-probable: #c08a4a;
+  --confidence-reported: #a67a52;
+  --confidence-uncertain: #8f8a78;
+  --confidence-disputed: #c97056;
+  --confidence-unknown: #8c8c8c;
+  --evidence-convention: #7c93a3;
+
+  --elevation-1: inset 0 0 0 1px var(--ink-100);
+  --elevation-2: 0 1px 2px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 0, 0, 0.3);
+  --elevation-3: 0 4px 16px rgba(0, 0, 0, 0.45), 0 12px 32px rgba(0, 0, 0, 0.35),
+    inset 0 0 0 1px var(--ink-100);
+  --elevation-stage: 0 24px 64px rgba(0, 0, 0, 0.6), 0 0 80px rgba(217, 162, 87, 0.06);
 }
