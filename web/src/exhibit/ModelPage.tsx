@@ -6,6 +6,7 @@ import { adaptModel, adaptVariant, type RawSource } from '../data/adapter.ts';
 import type { ModelView, VariantView } from '../data/types.ts';
 import { isUnknown } from '../data/types.ts';
 import { SpecRow, SpecTable, BasisBadge, formatValue } from './values.tsx';
+import { Cite } from './Cite.tsx';
 import { href, navigate } from '../app/router.ts';
 import './ModelPage.css';
 
@@ -144,7 +145,7 @@ export function ModelPage({ modelId }: { modelId: string }) {
             {model.evidenceTrail.map((e) => (
               <li key={e.sourceId} className="evidence">
                 <p className="evidence__title">
-                  {e.url ? <a href={e.url} target="_blank" rel="noreferrer noopener">{e.title}</a> : e.title}
+                  {e.url ? <Cite url={e.url}>{e.title}</Cite> : e.title}
                 </p>
                 <p className="evidence__meta">
                   Tier {e.tier} · {e.kind.replace(/_/g, ' ')}

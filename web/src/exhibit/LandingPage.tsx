@@ -7,6 +7,7 @@ import { LazyCube } from './LazyCube.tsx';
 import { BasisBadge } from './values.tsx';
 import { pickFeatured } from './featured.ts';
 import { leadClaim, type LeadClaim } from './claim.ts';
+import { Cite } from './Cite.tsx';
 import { href, navigate } from '../app/router.ts';
 import './LandingPage.css';
 
@@ -90,7 +91,7 @@ export function LandingPage() {
                   {claimSources.map((s) => (
                     <span key={s.id}>
                       {s.url
-                        ? <a href={s.url} target="_blank" rel="noreferrer noopener">{s.title ?? s.id}</a>
+                        ? <Cite url={s.url}>{s.title ?? s.id}</Cite>
                         : (s.title ?? s.id)}
                       {s.accessed ? `, accessed ${s.accessed}` : ''}
                     </span>
