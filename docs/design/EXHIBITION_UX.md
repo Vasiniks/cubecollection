@@ -135,27 +135,45 @@ aesthetic directive bans, and it would misrepresent evidence depth as uniform).
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│  DEEP MAKERS — full galleries, lineage and mechanism depth            │
+│  DEEP MAKERS — full galleries, lineage and mechanism depth  (6 of 54) │
 │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────┐│
-│  │ GAN     │ │ DaYan   │ │ QiYi    │ │ MoYu    │ │ YJ      │ │Sheng-││
-│  │ 40 model│ │ 28 model│ │ 24 model│ │ 23 model│ │ 23 model│ │Shou  ││
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘ │18    ││
+│  │ GAN     │ │ DaYan   │ │ MoYu    │ │ YJ      │ │ QiYi    │ │Sheng-││
+│  │ 40 model│ │ 28 model│ │ 23 model│ │ 22 model│ │ 22 model│ │Shou  ││
+│  └─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘ │17    ││
 │                                                                └──────┘│
-│  MID MAKERS — one room, lineage without sub-navigation                │
-│   MFJS (10)  ·  [ …47 others, 8–15 models each ]                      │
+│  MID MAKERS — one room, lineage without sub-navigation      (11 of 54)│
+│   YuXin (8) · MFJS (7) · Diansheng (6) · [ …8 more, 4–5 models each ] │
 │                                                                        │
-│  THIN MAKERS — an archival card, not a gallery                        │
-│   YanCheng (1)  ·  pbcube (1)  ·  mojue (1)  ·  [ …others ]           │
+│  THIN MAKERS — an archival card, not a gallery              (37 of 54)│
+│   YanCheng (1) · pbcube (1) · mojue (1) · [ …34 others ]              │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
 **Reading order:** deep → mid → thin, matching evidentiary weight, not alphabetical (alphabetical
-would bury GAN's 40 models next to a 1-model card and imply parity).
+would bury GAN's 40 models next to a 1-model card and imply parity). The counts above are the
+*public* model counts (`scope_class` core or conditional; the 13 archive-wide `reference_only`
+models are excluded from every tier count here exactly as they are excluded from `dist/public` —
+this is why QiYi reads 22 rather than the 24 model files in `data/models/qiyi/`, and YJ 22 rather
+than 23: each excludes its own `reference_only` models, listed instead at `/edges`).
 **Hierarchy:** tier headers are structural, not decorative — they are the honesty mechanism: a
-thin-maker card must never be styled to look like it merely *hasn't loaded its gallery yet*.
+thin-maker card must never be styled to look like it merely *hasn't loaded its gallery yet*. The
+tier counts themselves are load-bearing: **37 of 54 manufacturers are thin**, not a residual handful
+— a version of this page that visually implies a fuller middle (a wall of similarly-sized mid
+cards, say) would misrepresent the archive's actual shape, which is a long thin tail under six deep
+makers and eleven mid ones.
 **Interactive:** every card/entry routes to `/makers/:manufacturerId`; tier groups collapse on
 mobile (§7) but never merge.
-**Empty/unknown:** none — every manufacturer has ≥1 model by construction.
+**Empty/unknown:** no manufacturer renders as a bare "0 models" without saying which of three
+different facts that zero is — see §5.6 for the full three-way treatment. In short: 5 manufacturers
+(`thecubicle`, `speedcubeshop`, `picube`, `saocube`, `cubicle-labs`, all `kind: service`) have zero
+models *structurally* — they are aftermarket/retail services, not omissions, and their work
+surfaces as variants on other makers' models instead (e.g. PiCube's own 20-magnet mod appears as
+`gan-flagship-16--picube-20-magnet-ball-core-mod`); 1 (`limcube`, `kind: sub_brand`) is a sub-brand
+record whose parent may carry the models; 6 (`hellocube`, `lanlan`, `ninja`, `verypuzzle`,
+`xinlexin`, `zcube`, all `kind: manufacturer`) are genuine research gaps — identity established,
+model enumeration not yet done. All three read differently on `/makers/:manufacturerId` (§2.3) and
+none of the three renders as a thin-maker card, since a thin card promises "one documented model,"
+which is a different claim than "no models researched yet" or "this maker doesn't make models."
 **Loading:** three skeleton tier-blocks in the same proportions; counts render as soon as
 `index/by-manufacturer.json` resolves, before the cards' own content.
 
@@ -186,9 +204,10 @@ renders as the confidence tag `disputed`, not as a single silently-chosen year.
 ```
 
 **Mid — `/makers/mfjs`.** One room, families listed but not sub-navigated into their own gallery
-chrome — MFJS is MoYu's sub-brand (`parent_id: moyu`, shown inline), 10 models in a flat roster
-under one lineage note, no "families (by depth)" panel since none of its lines have flagship-scale
-generational depth.
+chrome — MFJS is MoYu's sub-brand (`parent_id: moyu`, shown inline), 7 public models (10 model
+files exist in `data/models/mfjs/`; 3 — its 40mm/45mm/50mm mini/keychain 3x3s — are
+`scope_class: reference_only` and sit at `/edges` instead) in a flat roster under one lineage note,
+no "families (by depth)" panel since none of its lines have flagship-scale generational depth.
 
 **Thin — `/makers/yancheng`.** An archival card, deliberately smaller than a gallery shell:
 
