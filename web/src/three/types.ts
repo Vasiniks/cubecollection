@@ -320,13 +320,28 @@ export function resolveCubeVisualSpec(
     : unknown('not_researched');
 
   // faces — undocumented on all 511 public variants at the time EXHIBITION_ARCHITECTURE §10.3
-  // was measured. When the archive is silent AND the museum has opted into §10.4(a), fall back
+  // was measured. When the archive is SILENT and the museum has opted into §10.4(a), fall back
   // to the labelled standard scheme; otherwise stay `unknown` (§10.4(b)).
+  //
+  // "Silent" means the archive says nothing about this face at all. A face the
+  // archive named but never normalised to a hex is NOT silent: it is documented
+  // and merely unrenderable. Applying the convention there would put a colour on
+  // screen under a disclosure reading "the archive does not document this cube's
+  // colours" — a false statement about a face the archive did document. The
+  // convention layer exists to prevent exactly that, so the renderer must not
+  // reintroduce it.
   const faces = {} as Record<FaceNotation, Provenance<FaceColorSpec>>;
   for (const face of FACE_NOTATIONS) {
     const idx = (variant.colorway?.faces ?? []).findIndex((f) => f.face === face);
     const faceRecord = idx >= 0 ? variant.colorway?.faces?.[idx] : undefined;
     const hex = hexOrUndefined(faceRecord?.color_normalized);
+    const archiveSpokeButUnrenderable = !hex && Boolean(faceRecord?.color_name);
+    if (archiveSpokeButUnrenderable) {
+      // Rendered in the unknown treatment, and NOT counted as a convention: the
+      // gap is in the renderer's inputs, not in the research.
+      faces[face] = unknown('researched_not_found');
+      continue;
+    }
     if (hex) {
       faces[face] = sourceBacked(
         // colorName omitted rather than set to undefined: the archive having no

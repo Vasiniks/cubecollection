@@ -15,7 +15,7 @@
  * the brief asks for, while the two compose into exactly the parametric cube described.
  *
  * HARD-CONSTRAINTS NOTE — geometry may use a placeholder; colour may not. "Placeholder GEOMETRY
- * is acceptable; placeholder HISTORY is not." `size_mm` is documented for only 50 of 511 public
+ * is acceptable; placeholder HISTORY is not." `size_mm` is documented for 227 of 511 public
  * variants (EXHIBITION_ARCHITECTURE §4.4), and there is no geometry-profile record anywhere in
  * the archive to source a bevel from. Both may fall back to a labelled `convention` value (see
  * types.ts's `DEFAULT_SIZE_MM` / `DEFAULT_BEVEL`), unlike colour, which materials.ts refuses to

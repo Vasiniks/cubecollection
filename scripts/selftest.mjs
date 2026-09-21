@@ -359,6 +359,69 @@ console.log('\n  archive — real records only, no fixture contamination');
     : bad('no staging or fixture paths loaded as records', stagedInData.map((r) => r.file).join(', '));
 }
 
+// ---------------------------------------------------------------- 6. convention controls
+//
+// EXHIBITION_ARCHITECTURE §11.2 claims rules C1-C5 are control-tested by mutation.
+// That was true of a hand-run session and false as a standing property of the
+// repository — an adversarial review caught the gap. It is automated here, so the
+// claim is now something the build keeps true rather than something a commit
+// message once asserted.
+//
+// Each case mutates conventions/rendering-conventions.yml, runs the validator,
+// asserts the named rule fires, and ALWAYS restores the file.
+console.log('\n  conventions — rules C1-C5 actually fire');
+{
+  const registry = join(ROOT, 'conventions/rendering-conventions.yml');
+  const original = readFileSync(registry, 'utf8');
+
+  const cases = [
+    ['C1', 'a convention missing a required field', (t) => {
+      const i = t.indexOf('    visitor_disclosure:');
+      const j = t.indexOf('    if_removed:', i);
+      return t.slice(0, i) + t.slice(j);
+    }],
+    ['C2', 'two conventions sharing an id', (t) => {
+      const i = t.indexOf('  - id: cv-logo-omitted');
+      const j = t.indexOf('  - id: cv-geometry-generic-3x3');
+      return t.slice(0, j) + t.slice(i, j) + t.slice(j);
+    }],
+    ['C3', 'affected_records misstating its own reach', (t) =>
+      t.replace('affected_records: 505', 'affected_records: 12')],
+    ['C4', 'convention_basis citing an archive source', (t) =>
+      t.replace('      The WCA Regulations require', '      Per 666toy-about-us, the WCA Regulations require')],
+  ];
+
+  for (const [rule, what, mutate] of cases) {
+    try {
+      writeFileSync(registry, mutate(original));
+      const r = run('validate-conventions.mjs');
+      const fired = r.code !== 0 && new RegExp(`\\[${rule}\\]`).test(r.out);
+      fired ? ok(`${rule} fires on ${what}`) : bad(`${rule} fires on ${what}`, r.out.trim().slice(0, 300));
+    } finally {
+      writeFileSync(registry, original);
+    }
+  }
+
+  // C5 lives in data/, so it is mutated in a throwaway copy of a real record.
+  {
+    const probe = join(ROOT, 'data/variants/zz-convention-probe.yml');
+    try {
+      writeFileSync(probe, 'id: zz-convention-probe\nentity: variant\nnote: "rendered via cv-logo-omitted"\n');
+      const r = run('validate-conventions.mjs');
+      const fired = r.code !== 0 && /\[C5\]/.test(r.out);
+      fired ? ok('C5 fires on a record referencing a convention')
+            : bad('C5 fires on a record referencing a convention', r.out.trim().slice(0, 300));
+    } finally {
+      rmSync(probe, { force: true });
+    }
+  }
+
+  const restored = run('validate-conventions.mjs');
+  restored.code === 0
+    ? ok('registry restored clean after every mutation')
+    : bad('registry restored clean after every mutation', restored.out.trim().slice(0, 300));
+}
+
 rmSync(TMP, { recursive: true, force: true });
 console.log(`\n${failures ? `  FAIL — ${failures} check(s) failed` : '  PASS — every check behaved as specified'}\n`);
 process.exit(failures ? 1 : 0);

@@ -27,8 +27,12 @@ interface Loaded {
 function facesAgree(faces: VariantView['colorway']['faces']): boolean {
   const first = faces[0];
   if (!first || faces.length !== 6) return false;
-  const key = (v: typeof first.color) =>
-    `${v.basis}|${'value' in v ? JSON.stringify(v.value) : ''}|${'confidence' in v ? v.confidence : ''}|${'searched' in v ? v.searched : ''}`;
+  // The whole value, not a chosen subset of its fields. An earlier version
+  // compared basis, value, confidence and searched only, so six faces that
+  // differed in their note, their sourceIds, their unattestedValue or their
+  // disputed alternatives collapsed into one row and the difference vanished.
+  // Collapsing is only honest when the rows are genuinely identical.
+  const key = (v: typeof first.color) => JSON.stringify(v);
   const k = key(first.color);
   return faces.every((f) => key(f.color) === k);
 }
@@ -69,11 +73,21 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
   const { view, conventions } = state;
   // The record's own trail, indexed so each claim can show just its sources.
   const sourceMap = new Map(view.evidenceTrail.map((e) => [e.sourceId, e]));
-  const inForce = conventions.filter((c) =>
-    ['cv-face-colours-wca-standard', 'cv-geometry-generic-3x3', 'cv-logo-omitted'].includes(c.id)
-    || (c.id === 'cv-body-plastic-neutral' && isUnknown(view.colorway.body.plasticColor))
-    || (c.id === 'cv-size-56mm-fallback' && !view.resolvedSpecs.size_mm)
-    || (c.id === 'cv-surface-stickerless-fallback' && isUnknown(view.colorway.application)));
+  // Every convention is gated on the record's actual state, mirroring the
+  // registry's own `when_absent` rule. Three of these were previously hardcoded
+  // as always-in-force, which is true of the archive today but would become a
+  // false disclosure the moment one face, logo or geometry profile is
+  // researched — the page would tell a visitor the archive documents nothing
+  // about something it had just documented.
+  const inForceFor: Record<string, boolean> = {
+    'cv-face-colours-wca-standard': view.colorway.faces.some((f) => isUnknown(f.color)),
+    'cv-body-plastic-neutral': isUnknown(view.colorway.body.plasticColor),
+    'cv-logo-omitted': isUnknown(view.colorway.logo.placement),
+    'cv-geometry-generic-3x3': view.render.geometryProfileId === null,
+    'cv-size-56mm-fallback': !view.resolvedSpecs['size_mm'],
+    'cv-surface-stickerless-fallback': isUnknown(view.colorway.application),
+  };
+  const inForce = conventions.filter((c) => inForceFor[c.id]);
 
   const evidenceCount = view.evidenceTrail.length;
 

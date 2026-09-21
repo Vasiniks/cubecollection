@@ -521,8 +521,18 @@ export function adaptVariant(
     const rec = idx >= 0 ? cw?.faces?.[idx] : undefined;
     return {
       face,
-      color: attestedValue(att, `/colorway/faces/${idx}/color_normalized`,
-        rec?.color_normalized ?? rec?.color_name),
+      // The attestation is looked up at the pointer the VALUE actually came
+      // from. Always querying /color_normalized meant a colour recorded only as
+      // a name, and properly cited at /color_name, came back searched:false —
+      // reporting a sourced claim as never researched. Dormant in today's data
+      // (no face is documented at all) and wrong the moment one is.
+      color: attestedValue(
+        att,
+        rec?.color_normalized !== undefined
+          ? `/colorway/faces/${idx}/color_normalized`
+          : `/colorway/faces/${idx}/color_name`,
+        rec?.color_normalized ?? rec?.color_name,
+      ),
     };
   });
 
