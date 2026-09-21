@@ -77,7 +77,24 @@ for (const [entity, name] of Object.entries(SCHEMA_FOR_ENTITY)) {
 }
 
 // 5 — every schema file is either an entity schema or reachable by $ref
+//
+// Exempt: schemas that describe something which is deliberately NOT part of the
+// archive. rendering-convention describes the exhibition's presentation
+// defaults; if a record schema ever $ref'd it, a convention could be written
+// into a record, which is the exact confusion the separation exists to prevent.
+// Its unreachability is the invariant, not an oversight, so leaving a permanent
+// warning here would only teach us to ignore this rule.
+const UNREACHABLE_BY_DESIGN = new Set([
+  'https://cubecollection/schema/rendering-convention.schema.json',
+]);
 for (const [id, { file }] of raw) {
+  if (UNREACHABLE_BY_DESIGN.has(id)) {
+    if (refs.has(id)) {
+      report.error('reach', file,
+        'is $ref\'d by another schema, but this schema is unreachable by design. A record must never be able to carry a rendering convention inline.');
+    }
+    continue;
+  }
   const isEntity = Object.values(SCHEMA_FOR_ENTITY).some((n) => id.endsWith(`/${n}.schema.json`));
   if (!isEntity && !refs.has(id)) report.warn('reach', file, 'defined but referenced by no schema.');
 }

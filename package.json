@@ -10,6 +10,7 @@
   },
   "scripts": {
     "validate": "node scripts/validate.mjs",
+    "conventions": "node scripts/validate-conventions.mjs",
     "lint": "node scripts/lint-semantic.mjs",
     "audit": "node scripts/audit.mjs",
     "duplicates": "node scripts/check-duplicates.mjs",
@@ -20,7 +21,7 @@
     "build": "node scripts/build.mjs",
     "build:preview": "node scripts/build.mjs --mode=research-preview",
     "privacy": "node scripts/check-privacy.mjs",
-    "check": "npm run schemas && npm run validate && npm run lint && npm run duplicates && npm run escalations && npm run build && npm run privacy && npm run selftest && npm run coverage",
+    "check": "npm run schemas && npm run validate && npm run conventions && npm run lint && npm run duplicates && npm run escalations && npm run build && npm run privacy && npm run selftest && npm run coverage",
     "new": "node scripts/new-record.mjs",
     "selftest": "node scripts/selftest.mjs",
     "schemas": "node scripts/check-schemas.mjs",

@@ -1,0 +1,224 @@
+# rendering-conventions
+#
+# Visual defaults the EXHIBITION chose because the ARCHIVE makes no claim.
+#
+# Nothing in this file is evidence. Nothing in this file is a historical fact
+# about any cube. Every entry exists precisely because the archive was searched
+# and the property was not established. See docs/RENDERING_CONVENTIONS.md.
+#
+# Validated by scripts/validate-conventions.mjs against
+# schema/rendering-convention.schema.json, which has no property in which a
+# source, an attestation or a confidence level could be written.
+#
+# affected_records counts ARCHIVE variants (527), not bundle records. The
+# denominator is deliberately the archive rather than either build bundle: a
+# convention describes a gap in what was researched, and that gap does not
+# change when a build filter changes. 511 of the 527 currently reach the
+# research-preview bundle. scripts/validate-conventions.mjs re-measures every
+# figure below against the live archive and fails on drift.
+
+conventions:
+
+  - id: cv-face-colours-wca-standard
+    label: "Standard six-colour face scheme"
+    layer: rendering-convention
+    applies_to:
+      entity: variant
+      when_absent:
+        - /colorway/faces
+      affected_records: 527
+      measured_on: "2026-09-21"
+    value:
+      U: { name: white,  hex: "#F5F5F0" }
+      D: { name: yellow, hex: "#E6C200" }
+      F: { name: green,  hex: "#00843D" }
+      B: { name: blue,   hex: "#0051BA" }
+      L: { name: orange, hex: "#E8620C" }
+      R: { name: red,    hex: "#C41E3A" }
+    rationale: >-
+      The archive documents a face colour on zero of 527 variants. A cube
+      cannot be drawn without six face colours, so the exhibition either renders
+      nothing or renders a default. This default is the arrangement almost every
+      3x3 has shipped in for forty years, which makes it the least surprising
+      choice and, more importantly, the most recognisable as a convention: a
+      visitor who knows cubes reads it as "the usual scheme", not as a finding.
+    convention_basis: >-
+      The WCA Regulations require the standard scheme with opposite pairs
+      white/yellow, green/blue and orange/red for competition, and the colour
+      arrangement is near-universal across the period this archive covers. That
+      is a statement about the sport and the market in general. It is NOT
+      evidence that any specific product in this archive shipped in these
+      colours, and it is not a source for any record.
+    asserts_nothing_about: >-
+      Which colours this particular product shipped in, whether its scheme was
+      standard, bright, pastel or custom, the exact shades used, or whether the
+      colours were stickers, printed, inlaid or moulded plastic.
+    visitor_disclosure: >-
+      Rendering convention. The archive does not document this cube's colours.
+      The standard scheme is drawn so the object can be shown at all.
+    if_removed: >-
+      The cube is drawn in the unknown treatment — uncoloured faces — and the
+      variant page leads with the gap rather than with the object.
+    introduced: "2026-09-21"
+
+  - id: cv-body-plastic-neutral
+    label: "Neutral body plastic"
+    layer: rendering-convention
+    applies_to:
+      entity: variant
+      when_absent:
+        - /colorway/body/plastic_color_name
+      affected_records: 505
+      measured_on: "2026-09-21"
+    value:
+      plastic_color_name: neutral
+      hex: "#1A1A1A"
+      treatment: unpigmented-dark
+    rationale: >-
+      Body plastic colour is documented on 22 of 527 variants. Black is
+      the commonest body plastic in the period, but choosing black would quietly
+      claim a fact about 505 products. A neutral near-black that reads as
+      "unspecified material" rather than as "this cube was black" is the honest
+      default: it lets the geometry be legible without imitating a product photo.
+    convention_basis: >-
+      A distribution argument only: dark body plastic predominates in the market
+      this archive covers. Not evidence about any individual product.
+    asserts_nothing_about: >-
+      The body plastic colour, opacity, translucency or finish of this product.
+    visitor_disclosure: >-
+      Rendering convention. Body colour is not documented for this cube; a
+      neutral material is shown.
+    if_removed: >-
+      Body pieces render in the unknown treatment and are visually distinct from
+      the 22 variants whose body colour is documented.
+    introduced: "2026-09-21"
+
+  - id: cv-logo-omitted
+    label: "Logo omitted"
+    layer: rendering-convention
+    applies_to:
+      entity: variant
+      when_absent:
+        - /colorway/logo/placement
+      affected_records: 527
+      measured_on: "2026-09-21"
+    value:
+      render_logo: false
+    rationale: >-
+      Logo placement is documented on zero of 527 variants. Unlike face
+      colour, a logo is not needed to draw a cube, so there is no forced choice
+      here. Omission is the only defensible default: drawing a manufacturer's
+      mark in a guessed position would fabricate a specific, checkable, and
+      probably wrong historical detail — exactly the failure this project exists
+      to avoid. Absence of a logo in the rendering is not a claim that the
+      product carried none.
+    asserts_nothing_about: >-
+      Whether this product carried a logo, which face or piece it sat on, or how
+      it was applied.
+    visitor_disclosure: >-
+      Rendering convention. Logo placement is not documented for any cube in
+      this archive, so no logo is drawn on any of them.
+    if_removed: >-
+      No change to the rendering; the exhibition would simply stop disclosing an
+      omission it had stopped making.
+    introduced: "2026-09-21"
+
+  - id: cv-geometry-generic-3x3
+    label: "Generic 3x3 geometry"
+    layer: rendering-convention
+    applies_to:
+      entity: variant
+      when_absent:
+        - /representation/procedural/geometry_profile_id
+      affected_records: 527
+      measured_on: "2026-09-21"
+    value:
+      cubies: 26
+      bevel_ratio: 0.055
+      gap_ratio: 0.012
+      corner_cut_profile: none
+    rationale: >-
+      No geometry profile exists for any variant; the field is reserved and
+      unset on all 527. Every cube the exhibition draws therefore uses one
+      generic parametric shell, scaled by size where size is known. The shell is
+      deliberately plain: no ridged corners, no sculpted edges, no piece design
+      resembling any real manufacturer's mould. Placeholder geometry is
+      acceptable in this project; placeholder history is not, and an ornate
+      invented shell would be the latter dressed as the former.
+    asserts_nothing_about: >-
+      This product's piece design, mould, internal mechanism, corner-cutting
+      geometry, bevel, tile size or edge treatment.
+    visitor_disclosure: >-
+      Rendering convention. No cube in this archive has a documented piece
+      geometry. A generic shell stands in for every one of them.
+    if_removed: >-
+      Nothing can be rendered in 3D at all; the exhibition falls back to its
+      non-3D presentation everywhere.
+    introduced: "2026-09-21"
+
+  - id: cv-size-56mm-fallback
+    label: "56 mm fallback size"
+    layer: rendering-convention
+    applies_to:
+      entity: variant
+      when_absent:
+        - /config/size_mm
+        - /specs/size_mm
+      affected_records: 291
+      measured_on: "2026-09-21"
+    value:
+      size_mm: 56
+    rationale: >-
+      Size is resolved for 236 of 527 variants and absent for 291. Where it is
+      known the renderer must use the real figure — this convention applies only
+      to the remainder. 56 mm is both the mode (75 of 236) and the median of the
+      documented distribution, which runs 15 mm to 188 mm.
+    convention_basis: >-
+      The measured distribution of the 236 documented sizes in this archive.
+      That is a fact about the archive's coverage, not about the 291 products
+      whose size was never established.
+    asserts_nothing_about: >-
+      This product's actual dimensions. A cube shown at the fallback size may
+      have been any size; comparisons of apparent size between a documented and
+      an undocumented cube are meaningless.
+    visitor_disclosure: >-
+      Rendering convention. This cube's size is not documented; it is drawn at
+      56 mm so it can sit beside the others. Do not read its scale as a fact.
+    if_removed: >-
+      Undocumented cubes are drawn at a fixed presentation size that is visibly
+      not a measurement, or excluded from any size comparison view.
+    introduced: "2026-09-21"
+
+  - id: cv-surface-stickerless-fallback
+    label: "Stickerless surface fallback"
+    layer: rendering-convention
+    applies_to:
+      entity: variant
+      when_absent:
+        - /colorway/application
+      affected_records: 405
+      measured_on: "2026-09-21"
+    value:
+      application: stickerless
+    rationale: >-
+      Surface application is documented on 122 of 527 variants, and among those
+      stickerless leads (78 of 122, against 22 stickered, 15 printed, 4 hybrid,
+      2 inlaid, 1 explicitly unknown). Where it is documented the renderer must
+      use the documented value, including its confidence — 70 of those 122
+      attestations sit at uncertain and must not be presented as settled. The
+      fallback covers only the 405 with nothing on file. It is a material
+      choice, not a colour choice: it changes how light meets the face, not
+      which colour is there.
+    convention_basis: >-
+      The measured distribution of the 122 documented applications in this
+      archive. Not evidence about the 405.
+    asserts_nothing_about: >-
+      Whether this product was stickered, stickerless, printed, inlaid or
+      hybrid, and therefore nothing about sticker wear, tile shape or finish.
+    visitor_disclosure: >-
+      Rendering convention. This cube's surface type is not documented; a
+      stickerless finish is shown.
+    if_removed: >-
+      Faces render in the unknown treatment, which carries no surface material
+      at all.
+    introduced: "2026-09-21"

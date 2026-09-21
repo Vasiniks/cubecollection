@@ -27,7 +27,8 @@
 // a curator published, and a preview bundle is impossible to mistake for one. No record's
 // status is changed by either mode.
 
-import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdirSync, rmSync, writeFileSync, readFileSync } from 'node:fs';
+import yaml from 'js-yaml';
 import { join, dirname } from 'node:path';
 import {
   ROOT, loadVocabularies, loadSchemas, loadRecords, indexRecords,
@@ -167,7 +168,13 @@ function redact(entity, doc) {
 
 const outArg = process.argv.find((a) => a.startsWith('--out='))?.split('=')[1];
 const outDir = outArg ? (outArg.startsWith('/') ? outArg : join(ROOT, outArg)) : join(ROOT, 'dist');
-rmSync(outDir, { recursive: true, force: true });
+// Clear only the bundles THIS run writes. Wiping all of outDir would make the
+// two modes delete each other's output, so `npm run build:preview` would leave
+// dist/public missing rather than merely stale — a confusing failure for anything
+// pointed at it. Each bundle is still rebuilt from empty, so no stale file survives.
+for (const bundle of ['private', PUBLIC_BUNDLE]) {
+  rmSync(join(outDir, bundle), { recursive: true, force: true });
+}
 
 function write(bundle, relPath, data) {
   const p = join(outDir, bundle, relPath);
@@ -221,6 +228,19 @@ write(PUBLIC_BUNDLE, 'index/by-manufacturer.json', groupIndex('manufacturer_id')
 write(PUBLIC_BUNDLE, 'index/by-family.json', groupIndex('family_id'));
 write(PUBLIC_BUNDLE, 'index/by-model.json', groupIndex('model_id'));
 
+// ---------------------------------------------------------------- rendering conventions
+//
+// Conventions ship in a file of their own, never merged into a record. The
+// exhibition needs them to draw anything at all (no variant is renderable from
+// archival data), but a convention is a presentation choice, not a fact, and
+// the bundle layout is where that distinction stops being a promise and starts
+// being a file boundary. scripts/validate-conventions.mjs guarantees the
+// registry's own honesty; this only copies it across.
+const conventionRegistry = yaml.load(readFileSync(join(ROOT, 'conventions', 'rendering-conventions.yml'), 'utf8'));
+const conventions = conventionRegistry?.conventions ?? [];
+write(PUBLIC_BUNDLE, 'convention.json', conventions);
+write('private', 'convention.json', conventions);
+
 const meta = {
   built_at: new Date().toISOString(),
   generator: 'scripts/build.mjs',
@@ -232,11 +252,13 @@ const meta = {
     private: Object.fromEntries(Object.entries(priv).map(([k, v]) => [k, v.length])),
     public: Object.fromEntries(Object.entries(publicOut).map(([k, v]) => [k, v.length])),
   },
+  rendering_conventions: conventions.length,
   private_fields_removed: redactionCount,
   notes: [
     'dist/public excludes every specimen record, every archivist_paid price, every private field, and every image whose rights are unclear.',
     'No valuation and no numeric rarity score exist anywhere in this bundle, by design.',
     'representation.procedural.renderable is false throughout: geometry profiles are reserved and none exist in this phase.',
+    'convention.json holds RENDERING CONVENTIONS, not records. Each one is a visual default the exhibition chose because the archive documents nothing; each declares what it asserts nothing about and the words a visitor must be shown. A consumer that merges a convention into a record field without carrying its basis has broken the contract this bundle exists to keep.',
     ...(MODE === 'research-preview' ? [
       'RESEARCH PREVIEW — NOT A PUBLICATION. This bundle deliberately includes records whose status is stub, drafted or sourced. Their presence here asserts that they are RESEARCHED, not that a curator has approved them for display. No record status was changed to produce it.',
       'Anything consuming this bundle must surface record.status to the viewer rather than presenting every record as settled.',

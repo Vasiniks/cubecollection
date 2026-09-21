@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cubecollection/schema/rendering-convention.schema.json",
+  "title": "A rendering convention",
+  "description": "A visual default the exhibition chose BECAUSE the archive makes no claim. A convention is not a record and not a source. It is deliberately impossible to express evidence here: this schema has no 'sources', no 'attestations' and no 'confidence' property, and additionalProperties is false, so a convention cannot be made to look like an archival fact. Conventions live in conventions/, never in data/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "label",
+    "layer",
+    "applies_to",
+    "value",
+    "rationale",
+    "asserts_nothing_about",
+    "visitor_disclosure",
+    "if_removed",
+    "introduced"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^cv-[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Immutable identifier. The cv- prefix is reserved for conventions and may never collide with an archive record id."
+    },
+    "label": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short human name, used in the exhibition's own convention index."
+    },
+    "layer": {
+      "const": "rendering-convention",
+      "description": "Fixed. Present so that a convention object read out of context still declares which of the three layers it belongs to."
+    },
+    "applies_to": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "entity",
+        "when_absent",
+        "affected_records",
+        "measured_on"
+      ],
+      "properties": {
+        "entity": {
+          "enum": [
+            "variant",
+            "model"
+          ],
+          "description": "Which record kind the convention substitutes for."
+        },
+        "when_absent": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "description": "JSON Pointers into the record. The convention applies ONLY when every one of these is absent. If any is present, the archival value wins and the convention must not be used. Precedence is one-way and absolute: the archival value always wins over the convention."
+        },
+        "affected_records": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "How many records the convention covered when last measured. A measured number, not an estimate."
+        },
+        "measured_on": {
+          "type": "string",
+          "format": "date",
+          "description": "The date affected_records was measured. Re-measure when the archive grows."
+        }
+      }
+    },
+    "value": {
+      "description": "The default itself. Its shape depends on what the convention covers."
+    },
+    "rationale": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Why this default rather than another."
+    },
+    "convention_basis": {
+      "type": "string",
+      "description": "Optional. What makes the CHOICE OF DEFAULT defensible in general \u2014 a standard, a norm, a measured distribution over the archive. This justifies the convention and never the product: it is not evidence that any particular cube had this property, and it may not name an archive source id. Free text, not a citation."
+    },
+    "asserts_nothing_about": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The claim a visitor might wrongly read out of the rendering, stated so it can be denied explicitly."
+    },
+    "visitor_disclosure": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The exact words shown to a visitor wherever this convention is in force. Stored here rather than in a UI component so the disclosure cannot be dropped by a redesign, and so it is reviewable as data."
+    },
+    "if_removed": {
+      "type": "string",
+      "minLength": 1,
+      "description": "What the exhibition does if this convention is withdrawn. Every convention must be reversible; 'the cube cannot be drawn' is an acceptable and often correct answer."
+    },
+    "introduced": {
+      "type": "string",
+      "format": "date"
+    },
+    "supersedes": {
+      "type": "string",
+      "pattern": "^cv-[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "description": "Optional. A previous convention this one replaces. Conventions are superseded, never silently edited."
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}
