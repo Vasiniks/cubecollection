@@ -296,3 +296,77 @@ Phase III must choose, explicitly:
 exhibition may render a conventional cube, but it must not let a visitor believe the archive
 *sourced* that colour arrangement for that product. This is the §7 honesty constraint applied to
 the one field that blocks everything.
+
+---
+
+## 11. Blockers A and B, resolved
+
+Phase III could not begin until two decisions were made durable as architecture
+rather than as behaviour inside a component. Both are now resolved, enforced and
+reversible. Neither changed a single archive record.
+
+> **A note on denominators.** §10.3 counts the **511 variants in the public
+> bundle**; §11.2 and `conventions/` count all **527 variants in the archive**.
+> Both are correct in their own frame. The convention layer deliberately uses the
+> archive as its denominator, because a convention describes a gap in what was
+> *researched*, and that gap does not move when a build filter moves.
+
+### 11.1 Blocker A — the public status gate
+
+**Problem.** `dist/public` contained 0 records, because every record sits at
+`stub` while the build gate admits only `published`. The exhibition had nothing
+to read.
+
+**What was rejected.** Flipping hundreds of records from `stub` to `published`.
+Measurement showed all 527 variants carry attestations and 253 carry a config
+block, so the status field was never tracking the research — but that is a
+**curation gap for a human**, not a bug to be fixed by rewriting records. A
+status means "a curator approved this for display"; changing it in bulk would
+have destroyed the only signal that distinguishes reviewed from unreviewed work.
+
+**Decision.** Two build modes whose **output directory carries the claim**:
+
+| Mode | Command | Output | Admits |
+|---|---|---|---|
+| publication | `npm run build` | `dist/public` | `published` only |
+| research preview | `npm run build:preview` | `dist/preview` | `sourced`, `drafted`, `stub` |
+
+`dist/preview/meta.json` states in words that the bundle is **not a
+publication**, that the records' presence asserts they are *researched* and not
+*approved*, and that any consumer must surface `record.status` to the viewer.
+An explicit `--public-status=` still overrides, so the gate stays inspectable.
+No record status was changed to produce any of this.
+
+### 11.2 Blocker B — visual rendering data
+
+**Problem.** The archive documents almost no visual facts. `renderable` is
+`false` on all 527 variants. Face colour, logo placement and geometry profile
+are documented on **zero** of them.
+
+**Decision.** Render the object, and make the basis of every visual property
+inspectable. **Rendering conventions become a third layer**, stored in
+`conventions/` outside `data/`, under a schema that has no `sources`, no
+`attestations` and no `confidence` property — so a convention has nowhere to
+claim evidence even if someone tried.
+
+Six conventions are in force. The archive always wins: a convention applies only
+where every pointer in its `when_absent` is empty, so its reach shrinks
+automatically as research advances. Each one declares what it
+`asserts_nothing_about`, the exact `visitor_disclosure` a visitor must be shown,
+and `if_removed` — reversibility is a precondition of adoption.
+
+§10.4's recommendation (a) is adopted **with its condition met**: the standard
+scheme is drawn, and `cv-face-colours-wca-standard` carries the words that stop
+a visitor believing the archive sourced it.
+
+Enforced by `scripts/validate-conventions.mjs` rules C1–C5, all control-tested
+by mutation. Full rationale and the consumer contract:
+**`docs/RENDERING_CONVENTIONS.md`**.
+
+### 11.3 The contract this places on everything downstream
+
+Every value that reaches the interface carries its basis — `source-backed`,
+`convention`, or `unknown` — and these three must remain visually and
+structurally distinct all the way to the screen. An adapter that flattens them,
+or a component that renders a convention as though it were sourced, breaks the
+one thing this archive exists to be trusted about.
