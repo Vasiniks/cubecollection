@@ -555,9 +555,104 @@ aliases are searched too" (the archive records aliases explicitly, e.g. GAN's ow
 
 ## 3. Navigation model
 
-*Skeleton.* How a visitor descends manufacturer → family → model → variant → evidence and returns
-without losing place — breadcrumb behaviour, back-button semantics, and what persists across a
-descent (the evidence drawer, the current entry-path context).
+### 3.1 Every page is a real URL
+
+Every route in §1 is a real, bookmarkable, server-renderable URL — not a client-side view swap
+behind one path. This is the load-bearing decision the rest of §3 follows from: the browser's own
+back/forward, history, and bookmark mechanisms do most of "how a visitor doesn't get lost," for
+free, as long as the app does not fight them. A visitor who descends `/makers/gan` →
+`/families/gan-flagship-series` → `/models/gan-flagship-16` →
+`/models/gan-flagship-16/variants/gan-flagship-16--amyth-winter-limited-edition` can hit the
+browser's back button four times and land exactly where they started, with no app-level state to
+reconcile, because there is none — the URL *is* the state.
+
+### 3.2 The persistent header
+
+Every page carries the same header, three parts, always in this order:
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│  CUBECOLLECTION      [ ● BROWSE ]      Makers ▸ GAN ▸ GAN16      [⌕]  │
+└──────────────────────────────────────────────────────────────────────┘
+     ^ home              ^ entry-path      ^ breadcrumb          ^search
+       (never lost)         chip             trail
+```
+
+- **Home** always returns to `/`. It is the one link guaranteed present and identical on every
+  page in the archive.
+- **Entry-path chip** shows which of Browse / Trace / Interrogate the visitor is currently framed
+  in. It is not decorative: clicking it returns to *that path's own root* (`/makers`, `/lineage`
+  or `/mechanism`, `/case` or `/unknowns`) — a faster return than Home for a visitor mid-session.
+  It changes only on an explicit choice (clicking a different chip, or following a cross-path link
+  described in §3.4), never silently because of which route the visitor happens to be on — a
+  visitor who reaches `/models/gan-flagship-16` from a Trace mechanism view and one who reaches it
+  from Browse's maker room see the identical model page, but a different chip, because they are in
+  a genuinely different session context and the chip is the honest record of that.
+- **Breadcrumb trail** always shows the full entity path — manufacturer ▸ family ▸ model ▸ variant
+  — regardless of which entry path produced the visit. This is possible because every variant
+  record already carries its resolved `lineage` block (`manufacturer_id`, `family_id`, `model_id`,
+  `family_name`, `model_name` — already computed by `scripts/build.mjs`, not something the
+  frontend has to derive), so a visitor who arrives at a variant page via `/mechanism/maglev`
+  still sees "Makers ▸ GAN ▸ GAN Flagship Series ▸ GAN16 ▸ Dual-WR Limited Edition" and can climb
+  out through it even though they never visited `/makers/gan` this session.
+- Each breadcrumb segment is a working link to that level, not a label.
+
+### 3.3 The evidence drawer's own navigation contract
+
+The drawer (§2.8) is a same-page overlay, not a route change, but it is not invisible to
+navigation either: opening it sets a query parameter (`?evidence=<sourceId>`) rather than only
+component state. Consequences, deliberately:
+
+- **Shareable.** A link with `?evidence=` open reproduces the exact citation a visitor was
+  looking at — important for an archive whose whole differentiator is showing its evidence; a
+  visitor should be able to send someone the claim, not just the page.
+- **Back-button-safe.** Pressing back while the drawer is open closes the drawer and keeps the
+  visitor on the same page, one history step at a time — never a surprise jump two levels up the
+  hierarchy because a drawer-open didn't register as a navigable state.
+- **Never modal-blocking.** The rest of the page remains visible and scrollable behind the drawer
+  (a slide-in panel, not a full-screen takeover) so a visitor comparing a claim against its
+  neighbours in a spec table does not lose sight of the table while reading its evidence.
+
+### 3.4 Cross-path links: how a visitor moves *between* Browse, Trace and Interrogate
+
+The three entry paths are starting doors into the same building, not three separate sites, so
+every detail page carries at least one link that reframes the visitor into a different path
+without re-deriving context:
+
+- On a **model or variant page** (reached via Browse): a "Trace this lineage →" link beside the
+  predecessor/successor arrows switches the chip to Trace and opens `/families/:familyId`.
+- On a **variant page**: every confidence tag is also an Interrogate entry point — clicking one
+  opens the evidence drawer (chip does *not* switch, since the drawer is a same-page overlay, not
+  a path change) but the drawer's "View full source record →" link, which does navigate to
+  `/evidence/:sourceId`, switches the chip to Interrogate, because that click is a genuine change
+  of what the visitor is doing.
+- On `/evidence/:sourceId` or `/unknowns`: "See this claim in context →" links return to the
+  originating model/variant page and switch the chip back to whichever of Browse/Trace it came
+  from (tracked in the visit's own history state, not guessed).
+- On `/mechanism/:axis` (Trace): each tile is simultaneously a Browse exit (its breadcrumb-linked
+  maker) and stays in Trace if the visitor clicks the axis strip's own "next" affordance rather
+  than the tile.
+
+### 3.5 Preventing dead ends
+
+No detail page in this spec (§2) is a dead end — every model and variant page has, at minimum, a
+breadcrumb up, a predecessor/successor or sibling link, and an evidence link. The one deliberate
+exception is `/edges` and `/unknowns` cases with no further comparison available (e.g. a
+single-source, single-variant thin-maker model) — there the "next" affordance is explicitly the
+entry-path chip, not a fabricated related-items rail. **A museum should never manufacture a "you
+might also like" rail out of records that have nothing in common beyond both existing** — that
+would misrepresent the evidence exactly as a generic recommendation carousel would, and the
+project's banned-aesthetics list already rules out template patterns of this shape.
+
+### 3.6 What does *not* persist across navigation
+
+To keep the model simple and debuggable: comparison-table column order (§2.6), mechanism-axis
+sort order, and search scroll position reset per visit unless the URL itself encodes them (a
+comparison table's chosen column set could be a future query param; not required for the vertical
+slice in §9). Only the entry-path chip and the breadcrumb's derived lineage persist as session
+context, and both are cheap to reconstruct from the current URL alone — nothing here requires a
+client-side store that could drift from the URL and produce the exact "lost" experience this
+section exists to prevent.
 
 ---
 
@@ -619,7 +714,7 @@ Tracked here so a killed session leaves an honest state. Empty once §1–9 are 
 
 - [x] §1 route map — full table
 - [x] §2 page specs — all routes, wireframes
-- [ ] §3 navigation model
+- [x] §3 navigation model
 - [ ] §4 entry paths made concrete
 - [ ] §5 unknown experience
 - [ ] §6 microcopy
