@@ -97,6 +97,9 @@
 
 .maker { display: flex; flex-direction: column; gap: var(--space-1); }
 
+.maker__name { text-decoration: none; }
+.maker__name:hover { text-decoration: underline; }
+
 .tier__list[data-tier="deep"] .maker__name {
   font-family: var(--font-display);
   font-size: var(--text-600);

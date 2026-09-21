@@ -1,0 +1,126 @@
+/* One maker's room. Models grouped by family — the archive's own grouping,
+   unlike the depth tiers on /makers, which are the exhibition's. */
+
+.maker-room {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-11);
+}
+
+.maker-room__breadcrumb {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  margin-bottom: var(--space-5);
+}
+
+.maker-room__name {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-800), 6vw, var(--text-950));
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-regular);
+  margin: 0 0 var(--space-2);
+}
+
+.maker-room__native {
+  font-size: var(--text-500);
+  color: var(--ink-700);
+  margin: 0 0 var(--space-5);
+}
+
+/* Curatorial framing keeps the cool slate it has everywhere else, and always
+   states what it was computed from. */
+.maker-room__depth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-4);
+  border-left: 3px solid var(--evidence-convention);
+  padding-left: var(--space-4);
+  margin: 0 0 var(--space-7);
+}
+
+.maker-room__depth-value {
+  font-family: var(--font-display);
+  font-size: var(--text-600);
+  line-height: 1;
+}
+
+.maker-room__depth-basis {
+  font-size: var(--text-300);
+  color: var(--ink-700);
+}
+
+.maker-room__withheld {
+  border-left: 2px solid var(--confidence-unknown);
+  padding-left: var(--space-4);
+  margin: var(--space-6) 0 0;
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+}
+
+.maker-room__section-title {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  font-weight: var(--weight-regular);
+  border-top: 1px solid var(--ink-100);
+  padding-top: var(--space-4);
+  margin: var(--space-8) 0 var(--space-6);
+}
+
+.maker-room__empty {
+  font-size: var(--text-500);
+  line-height: var(--leading-relaxed);
+  color: var(--ink-700);
+  border-left: 2px solid var(--confidence-unknown);
+  padding-left: var(--space-4);
+}
+
+.family-group { margin-bottom: var(--space-7); }
+
+.family-group__name {
+  font-family: var(--font-display);
+  font-size: var(--text-600);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-snug);
+  margin: 0 0 var(--space-4);
+}
+
+.model-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.model-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  border-top: 1px solid var(--ink-100);
+  padding-top: var(--space-3);
+}
+
+.model-row > a {
+  font-size: var(--text-500);
+  text-decoration: none;
+}
+
+.model-row > a:hover { text-decoration: underline; }
+
+.model-row__meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  color: var(--ink-500);
+}
+
+@media (max-width: 52rem) {
+  .maker-room { padding: var(--space-5) var(--space-4) var(--space-9); }
+}

@@ -122,7 +122,11 @@ export function MakersPage() {
               const zero = zeroReading(m, withheld);
               return (
                 <li key={m.id} className="maker" data-zero={zero ? 'true' : undefined}>
-                  <span className="maker__name">{makerName(m)}</span>
+                  <a className="maker__name"
+                     href={href({ name: 'maker', id: m.id })}
+                     onClick={(e) => { e.preventDefault(); navigate(href({ name: 'maker', id: m.id })); }}>
+                    {makerName(m)}
+                  </a>
                   <span className="maker__count">
                     {m.modelCount === 0 ? 'no models' : `${m.modelCount} model${m.modelCount === 1 ? '' : 's'}`}
                   </span>

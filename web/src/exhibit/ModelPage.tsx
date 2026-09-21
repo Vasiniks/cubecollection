@@ -50,7 +50,10 @@ export function ModelPage({ modelId }: { modelId: string }) {
           Makers
         </a>
         <span aria-hidden="true"> / </span>
-        <span>{model.manufacturerId}</span>
+        <a href={href({ name: 'maker', id: model.manufacturerId })}
+           onClick={(e) => { e.preventDefault(); navigate(href({ name: 'maker', id: model.manufacturerId })); }}>
+          {model.manufacturerId}
+        </a>
         {model.familyName && <><span aria-hidden="true"> / </span><span>{model.familyName}</span></>}
       </nav>
 
