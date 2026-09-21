@@ -270,7 +270,14 @@
     --ink-100: #34322b;
 
     --accent-500: #d9a257;  /* 8.27:1 on surface-0 */
-    --accent-700: #b9843f;
+    /* In light mode --accent-700 is the DARKER pressed/active tone, which
+       raises contrast against a pale surface (5.57 -> 7.98:1). Carrying that
+       same darker value into dark mode inverted the gesture: hover and focus
+       LOWERED contrast (8.27 -> 5.75:1), so interacting with a link made it
+       recede. Dark mode is an independently designed theme, so the interaction
+       tone here is brighter than rest rather than darker, and the direction of
+       the gesture — interaction increases presence — matches light mode. */
+    --accent-700: #e8b978;  /* 10.40:1 on surface-0 */
     --accent-100: #3a2c1a;
     --focus-ring: var(--accent-500);
 
