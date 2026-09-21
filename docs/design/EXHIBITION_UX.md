@@ -1164,8 +1164,60 @@ posture the rest of this document takes toward every other kind of gap.
 
 ## 7. Responsive behaviour
 
-*Skeleton.* Desktop / tablet / mobile per page type, and what mobile sacrifices (the evidence
-drawer's persistence model changes first).
+Two breakpoints are already shipped, and they disagree with each other on purpose, because they are
+solving different problems: `LandingPage.css` collapses at **60rem** (a two-column exhibit becoming
+one column is a layout problem, and 60rem is where the label column would otherwise get
+uncomfortably narrow beside the object), and `VariantPage.css` collapses its specification table at
+**52rem** (a narrower point, because the table transform is triggered by content density — a table
+column, not a page layout — and holds out slightly longer than the landing grid before giving up
+horizontal space). Every page spec below should pick *its own* breakpoint the same way: by what
+actually gets cramped first, not by copying a shared number.
+
+### 7.1 Per page type
+
+| Page type | Desktop (>60rem) | Tablet (~40–60rem) | Mobile (<40rem) |
+|---|---|---|---|
+| **Landing** (built) | Two-column exhibit: object left, label right, side by side (`grid-template-columns: 5fr 6fr`) | Same two-column layout down to 60rem, object shrinking with the column | **Single column below 60rem** (`LandingPage.css`): object first, capped at 26rem and centred, label follows beneath it — "the object leads and the label follows, rather than the object being squeezed beside text that then has nowhere to go" (the file's own comment). Three-ways-in list and the count row both wrap via `auto-fit`/`flex-wrap`, no horizontal scroll anywhere. |
+| **Variant detail** (built) | Single centred column, max 72rem, spec table as a real `<table>` | Same column; table remains a table down to 52rem | **Below 52rem** (`VariantPage.css`): the spec table's `<thead>` is visually hidden (clipped, not `display:none`, so it stays in the accessibility tree) and each row becomes a labelled block — field name as a small caps mono label, value, basis badge and note stacked vertically. This is the one responsive transform this document treats as non-negotiable: **a confidence column a visitor must scroll sideways to find is one that gets missed**, so it is never allowed to become a horizontally-scrolling table at any width. |
+| **Makers root** (§2.2, not built) | Three tiers, deep tier as a fixed-size card row, mid tier as a denser row, thin tier as a compact list | Tiers keep their identity but the deep-tier row wraps to two lines of cards rather than one | Tiers **stack, never merge** (§2.2's own hierarchy rule) — each tier header stays, deep-tier cards go to one per row rather than shrinking illegibly, and the 37-entry thin tier becomes a plain scrollable list rather than a card grid at any width, since a 37-card grid was never the right shape even on desktop. |
+| **Maker room** (§2.3) | Header + families panel + model roster as three stacked sections, roster in a filterable grid | Same stacking, roster grid narrows to two columns | Roster grid becomes a single column list; the thin-maker archival card (§2.3's YanCheng example) does not change shape at all across breakpoints — it is already small, and further compression would start cutting its one paragraph of archivist's own words, which this document will not allow. |
+| **Family/lineage chain** (§2.4) | Horizontal chain, arrows and gap labels inline | Horizontal chain, condensed spacing, gap labels stay inline | **Chain rotates to vertical** — each generation becomes a stacked node top-to-bottom rather than a horizontal scroll, because a horizontally-scrolling succession chain would hide exactly the kind of gap (MoYu WeiLong's "V3–V8 never existed") this document has repeatedly insisted must never require a visitor to scroll to discover. The outlier panel (a family's off-chain model, §2.4) stays below the chain, never beside it, at any width. |
+| **Model detail + compare** (§2.5–§2.6) | Compare table as a real table, one column per variant | Compare table remains tabular to a point, then follows the exact §52rem transform already shipped on the variant page — **the same component, same rule, reused rather than redesigned**, since a comparison table's confidence glyphs are exactly the content the variant page's rule already protects | Compare becomes a stacked block per variant (not per axis) — each variant's differing axes listed together, so a visitor reads "this variant" as a unit rather than hunting one axis across N stacked mini-tables. |
+| **Mechanism / lineage / timeline roots** (§2.9–§2.10) | Strip/axis view with full population-count labels | Same, tiles narrow | Tiles stack to a single column strip, scrolling vertically (never horizontally-scrolling tile rails, which is the same anti-pattern as a sideways-scrolling spec table, applied to a different content shape) |
+| **Edges / Case / Unknowns** (§2.11–§2.13) | Each case/claim as its own full-width block | Same | Same — these pages are already single-column, prose-forward pages at every width the mandate covers; nothing here is a responsive design problem, which is itself worth stating so a future lane doesn't invent breakpoint work these pages don't need. |
+| **Evidence drawer** (§2.8, not built) | Slide-in panel from the right, ~28rem wide, page content remains visible and scrollable behind it (§3.3's "never modal-blocking" rule) | Same slide-in behaviour, narrower panel (~22rem) | **The one place this document lets §3.3's own rule bend, and says so explicitly** — see §7.2. |
+
+### 7.2 What mobile sacrifices: the evidence drawer's persistence model, first
+
+§3.3 sets three contracts for the drawer: shareable (`?evidence=`), back-button-safe, and "never
+modal-blocking" — the rest of the page stays visible and scrollable behind a slide-in side panel.
+The first two survive unchanged at every width; the third is the one this document explicitly
+relaxes on mobile, because a ~28rem side panel on a 22rem-wide viewport is not a panel beside the
+page, it is the entire page with extra steps, and pretending otherwise would be worse than admitting
+it plainly:
+
+- **Below 40rem, the drawer becomes a bottom sheet, not a side panel** — it rises from the bottom to
+  roughly 70% of the viewport height, leaving a visible strip of the underlying page above it. That
+  strip is the concession that keeps faith with §3.3's spirit even though the letter (page "remains
+  visible and scrollable behind") can't hold at full width: a visitor comparing a spec-table row
+  against its evidence still sees *something* of the row they came from, even if not the whole table.
+- **The sheet itself scrolls independently**, exactly as the desktop panel does — a long excerpt or
+  a source with many citing claims (§2.8's `/evidence/:sourceId` reverse index) does not push the
+  close button off-screen.
+- **Shareable and back-button-safe are non-negotiable at every width**, including mobile — `?evidence=`
+  in the URL and one history entry per open/close are cheaper to implement correctly than they are to
+  special-case away, and a visitor on a phone sharing a citation is exactly as real a use case as one
+  on a desktop.
+- **Nothing else about mobile is allowed to touch the drawer's other two contracts.** The temptation
+  on a small viewport is often to make an overlay non-dismissable-by-back-button "for simplicity" —
+  this document rules that out explicitly, because it is the exact "surprise jump two levels up the
+  hierarchy" §3.3 was written to prevent, and a phone visitor is not owed a worse navigation model
+  than a desktop one.
+
+No other page in this document sacrifices a *contract* on mobile, only layout — this is deliberate:
+a responsive pass that quietly drops a promise (evidence stays reachable, gaps stay visible, a chain
+gap never requires horizontal scrolling to find) on the narrowest, most common viewport would let the
+mobile experience of this museum be a lesser one precisely where the desktop experience is proudest.
 
 ---
 
@@ -1197,6 +1249,6 @@ Tracked here so a killed session leaves an honest state. Empty once §1–9 are 
 - [x] §4 entry paths made concrete
 - [x] §5 unknown experience
 - [x] §6 microcopy
-- [ ] §7 responsive behaviour
+- [x] §7 responsive behaviour
 - [ ] §8 accessibility
 - [ ] §9 vertical slice full spec
