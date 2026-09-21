@@ -1,11 +1,415 @@
-/* PLACEHOLDER — superseded by Lane B's design system.
-   Enough to prove the shell boots; no visual decisions are made here. */
-:root { color-scheme: dark light; }
-* { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; }
+/*
+ * CubeCollection — Base Styles
+ * Phase III, Lane B (visual design system).
+ *
+ * Depends on tokens.css being loaded first (custom properties on :root).
+ * This file does not @import it, to keep load order an explicit decision of
+ * whatever app consumes these files.
+ *
+ * STATED DIRECTION
+ * -----------------
+ * A quiet reset and quiet defaults: the interface recedes so the cube (and
+ * the evidence behind it) is the subject. No template hero, no card soup, no
+ * decorative motion.
+ *
+ * This file also carries the confidence/evidence-treatment UTILITY LAYER —
+ * the one piece of UI this design system commits to at the CSS layer, because
+ * it is the archive's defining strength (see EXHIBITION_ARCHITECTURE.md §4.1
+ * and the hard constraint on confidence/unknown/convention treatment). It is
+ * built from CSS shapes and gradients only — no icon font, no SVG asset.
+ */
+
+/* -----------------------------------------------------------------------
+ * 1. RESET / NORMALIZE
+ * ----------------------------------------------------------------------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  color-scheme: light dark;
+}
+
+html,
 body {
-  background: #0b0b0c;
-  color: #e8e6e1;
-  font: 16px/1.5 ui-sans-serif, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  height: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Only lists that opt in with a class are reset — a plain <ul> in prose
+   content still gets real bullets, which is a "base element styling"
+   decision, not an oversight: editorial body copy is allowed to look like
+   body copy. Component chrome (nav, filters) always carries a class. */
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* -----------------------------------------------------------------------
+ * 2. BASE ELEMENT STYLING
+ * ----------------------------------------------------------------------- */
+
+body {
+  min-height: 100dvh;
+  background-color: var(--surface-0);
+  color: var(--ink-900);
+  font-family: var(--font-body);
+  font-size: var(--text-400);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color var(--duration-slow) var(--ease-standard),
+    color var(--duration-slow) var(--ease-standard);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-tight);
+  color: var(--ink-900);
+}
+
+h1 {
+  font-size: var(--text-900);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-6);
+}
+
+h2 {
+  font-size: var(--text-800);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-5);
+}
+
+h3 {
+  font-size: var(--text-700);
+  line-height: var(--leading-snug);
+  margin-block-end: var(--space-4);
+}
+
+/* h4–h6 stay in the body sans, not the display serif — they are UI/section
+   labels (evidence panel headings, spec-group headings), not editorial
+   headlines, and shouldn't compete with h1–h3 for "this is the museum wall
+   text" attention. */
+h4,
+h5,
+h6 {
+  font-family: var(--font-body);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-normal);
+  color: var(--ink-900);
+  margin-block-end: var(--space-3);
+}
+
+h4 {
+  font-size: var(--text-600);
+}
+h5 {
+  font-size: var(--text-500);
+}
+h6 {
+  font-size: var(--text-400);
+}
+
+/* Editorial measure: body copy is capped at a readable line length
+   regardless of container width — a deliberate storytelling decision, not
+   a layout accident. */
+p {
+  max-width: 68ch;
+  margin-block-end: var(--space-4);
+}
+
+a {
+  color: var(--accent-500);
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.15em;
+  transition: color var(--duration-fast) var(--ease-standard);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-700);
+}
+
+/* Eyebrow / accession-label text: the tracked-out uppercase caption used for
+   museum wall-text labels, dates, and metadata throughout the exhibition. */
+small,
+.meta {
+  display: inline-block;
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--font-mono);
+}
+
+code {
+  background: var(--surface-1);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  font-size: 0.9em;
+}
+
+pre {
+  padding: var(--space-4);
+  background: var(--surface-1);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--ink-100);
+  margin-block: var(--space-7);
+}
+
+::selection {
+  background: var(--accent-100);
+  color: var(--ink-900);
+}
+
+/* -----------------------------------------------------------------------
+ * 3. FOCUS-VISIBLE TREATMENT
+ * -----------------------------------------------------------------------
+ * Only :focus-visible is styled — default :focus is left alone rather than
+ * suppressed, so an unsupported-but-still-focusing agent never loses the
+ * native ring. --focus-ring is the accent color in both themes, already
+ * verified at 5.57:1 (light) / 8.27:1 (dark) against surface-0, i.e. it
+ * clears the 3:1 non-text minimum (WCAG 2.4.11) with a wide margin.
+ * ----------------------------------------------------------------------- */
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* -----------------------------------------------------------------------
+ * 4. PREFERS-REDUCED-MOTION
+ * -----------------------------------------------------------------------
+ * Collapses the duration tokens themselves, so anything authored against
+ * var(--duration-*) is automatically reduced-motion-safe without a second
+ * media query per component. Animations still complete (iteration-count 1)
+ * rather than being deleted, so state changes that were communicated by
+ * motion are still visually resolved, just without the transition itself.
+ * ----------------------------------------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 0.01ms;
+    --duration-fast: 0.01ms;
+    --duration-base: 0.01ms;
+    --duration-slow: 0.01ms;
+    --duration-deliberate: 0.01ms;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* -----------------------------------------------------------------------
+ * 5. PREFERS-COLOR-SCHEME / color-scheme PLUMBING
+ * -----------------------------------------------------------------------
+ * The actual palette swap lives in tokens.css (§9). This is just the UA
+ * plumbing so native form controls, scrollbars, and the page background
+ * paint-before-first-frame match the active theme.
+ * ----------------------------------------------------------------------- */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* -----------------------------------------------------------------------
+ * 6. EVIDENCE & CONFIDENCE UTILITY LAYER
+ * -----------------------------------------------------------------------
+ * Markup contract (documented here since this file has no build step to
+ * enforce it):
+ *
+ *   <span class="evidence-badge" data-confidence="confirmed">
+ *     <span class="evidence-badge__glyph" aria-hidden="true"></span>
+ *     <span class="evidence-badge__label">Confirmed</span>
+ *   </span>
+ *
+ *   data-confidence: confirmed | probable | reported | uncertain | disputed
+ *                    | unknown
+ *
+ *   <span class="evidence-badge" data-evidence-kind="convention">
+ *     <span class="evidence-badge__glyph" aria-hidden="true"></span>
+ *     <span class="evidence-badge__label">Rendering convention</span>
+ *   </span>
+ *
+ * HARD RULE: evidence-badge__label is always rendered as visible text, never
+ * visually hidden (no sr-only pattern here). "A claim at uncertain must not
+ * look identical to one at confirmed" is a requirement for SIGHTED users;
+ * hiding the label and relying on the glyph's color/shape alone would fail
+ * that requirement even though it would still pass a screen-reader test.
+ *
+ * The glyph encodes the distinction three ways simultaneously — hue, fill
+ * amount, and stroke style — so it survives grayscale reproduction and
+ * common color-vision deficiencies without the label:
+ *   confirmed   solid filled circle
+ *   probable    circle, ~75% pie fill
+ *   reported    circle, ~40% pie fill
+ *   uncertain   circle, dotted outline, no fill
+ *   disputed    circle, split into two colors (evidence disagrees)
+ *   unknown     circle, dashed outline, no fill (absence, not weak fact)
+ *   convention  DIFFERENT SHAPE: a hatched diamond, never a circle —
+ *               a rendering default can never be mistaken for evidence
+ *               at any hue, lightness, or fill amount.
+ * ----------------------------------------------------------------------- */
+
+.evidence-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--surface-1);
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  line-height: 1;
+  /* Label text is always ink, regardless of the semantic hue below — one
+     contrast ratio to verify, reused for every confidence value. */
+  color: var(--ink-900);
+}
+
+.evidence-badge__glyph {
+  width: 0.625rem;
+  height: 0.625rem;
+  flex: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background: var(--ink-300); /* fallback if no data-* attribute matches */
+}
+
+.evidence-badge[data-confidence="confirmed"] .evidence-badge__glyph {
+  background: var(--confidence-confirmed);
+}
+
+.evidence-badge[data-confidence="probable"] .evidence-badge__glyph {
+  background: conic-gradient(
+    var(--confidence-probable) 0 75%,
+    transparent 75% 100%
+  );
+  border: 1.5px solid var(--confidence-probable);
+}
+
+.evidence-badge[data-confidence="reported"] .evidence-badge__glyph {
+  background: conic-gradient(
+    var(--confidence-reported) 0 40%,
+    transparent 40% 100%
+  );
+  border: 1.5px solid var(--confidence-reported);
+}
+
+.evidence-badge[data-confidence="uncertain"] .evidence-badge__glyph {
+  background: transparent;
+  border: 1.5px dotted var(--confidence-uncertain);
+}
+
+.evidence-badge[data-confidence="disputed"] .evidence-badge__glyph {
+  background: conic-gradient(
+    var(--confidence-disputed) 0 50%,
+    var(--ink-500) 50% 100%
+  );
+  border: none;
+}
+
+.evidence-badge[data-confidence="unknown"] .evidence-badge__glyph {
+  background: transparent;
+  border: 1.5px dashed var(--confidence-unknown);
+}
+
+/* Rendering convention: a different shape family entirely (see hard rule
+   above) — rotated square with a hatch fill, not a circle. */
+.evidence-badge[data-evidence-kind="convention"] .evidence-badge__glyph {
+  border-radius: var(--radius-sm);
+  transform: rotate(45deg);
+  background: repeating-linear-gradient(
+    45deg,
+    var(--evidence-convention) 0 1.5px,
+    transparent 1.5px 4px
+  );
+  border: 1px solid var(--evidence-convention);
+}
+
+/* Optional interactive variant, for a badge that opens the evidence drawer
+   (EXHIBITION_ARCHITECTURE.md §6). Motion is a plain color transition, not
+   a scale/bounce effect. */
+.evidence-badge--interactive {
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard);
+}
+
+.evidence-badge--interactive:hover {
+  background: var(--surface-2);
 }
