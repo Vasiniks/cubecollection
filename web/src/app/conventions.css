@@ -31,6 +31,22 @@
   margin: 0 0 var(--space-9);
 }
 
+/* Every page needs a way out. Without this the convention index was a dead
+   end with no focusable element on it at all — unreachable by keyboard and
+   unleavable by anyone. */
+.conventions__return {
+  margin: 0 0 var(--space-6);
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.conventions__return a::before {
+  content: "\2190";
+  margin-right: var(--space-2);
+}
+
 .conventions__eyebrow {
   font-family: var(--font-mono);
   font-size: var(--text-200);
@@ -156,6 +172,11 @@
   color: var(--ink-700);
   background: none;
   padding: 0;
+  /* JSON Pointers are long unbroken tokens and pushed the page 13px wider than
+     a 390px viewport. They wrap between segments now, so the page never scrolls
+     sideways. */
+  display: block;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 52rem) {

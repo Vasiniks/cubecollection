@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { loadConventions, type RenderingConvention } from './conventions';
+import { href, navigate } from './router';
 import './conventions.css';
 
 function Field({ term, children }: { term: string; children: React.ReactNode }) {
@@ -68,6 +69,15 @@ export function ConventionsPage() {
 
   return (
     <main className="conventions" data-testid="conventions">
+      <nav className="conventions__return" aria-label="Return">
+        <a
+          href={href({ name: 'home' })}
+          onClick={(e) => { e.preventDefault(); navigate(href({ name: 'home' })); }}
+        >
+          Back to the archive
+        </a>
+      </nav>
+
       <p className="conventions__eyebrow">How this exhibition draws what it cannot cite</p>
 
       <h1 className="conventions__claim">Every cube here is drawn, not photographed.</h1>
