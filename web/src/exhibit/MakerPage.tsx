@@ -9,6 +9,7 @@ import type { ManufacturerView, ModelView } from '../data/types.ts';
 import { isUnknown, isSourceBacked } from '../data/types.ts';
 import { SpecRow, SpecTable, formatValue } from './values.tsx';
 import { href, navigate } from '../app/router.ts';
+import './VariantPage.css';
 import './MakerPage.css';
 
 const bundle = createBundle('/bundle');
@@ -51,6 +52,7 @@ export function MakerPage({ manufacturerId }: { manufacturerId: string }) {
   if (!state) return <main className="maker-room"><p>Opening the room…</p></main>;
 
   const { maker, models, withheld } = state;
+  const sourceMap = new Map(maker.evidenceTrail.map((e) => [e.sourceId, e]));
   const name = isSourceBacked(maker.name) ? maker.name.value
     : isUnknown(maker.name) && maker.name.unattestedValue !== undefined
       ? String(maker.name.unattestedValue) : maker.id;
@@ -89,10 +91,10 @@ export function MakerPage({ manufacturerId }: { manufacturerId: string }) {
       </p>
 
       <SpecTable caption="What the archive establishes about this maker, and on what basis.">
-          <SpecRow term="name" value={maker.name} />
-          <SpecRow term="native name" value={maker.nativeName} />
-          <SpecRow term="country" value={maker.country} />
-          <SpecRow term="founded" value={maker.founded} />
+          <SpecRow sources={sourceMap} term="name" value={maker.name} />
+          <SpecRow sources={sourceMap} term="native name" value={maker.nativeName} />
+          <SpecRow sources={sourceMap} term="country" value={maker.country} />
+          <SpecRow sources={sourceMap} term="founded" value={maker.founded} />
       </SpecTable>
 
       {outOfScope > 0 && (

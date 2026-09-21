@@ -223,3 +223,69 @@
   }
   .spec__note { max-width: none; }
 }
+
+/* ---------------------------------------------------------------- claim evidence
+   Evidence attached to the claim it supports, rather than only listed at the
+   foot of the page where a visitor has to match the two by eye. */
+
+.spec__basis-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.spec__basis-hint {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  color: var(--accent-500);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  white-space: nowrap;
+}
+
+.spec__basis-button:hover .spec__basis-hint { color: var(--accent-700); }
+
+.spec__evidence-row > td {
+  padding: 0 0 var(--space-5);
+  border-bottom: 1px solid var(--ink-100);
+}
+
+.claim-evidence {
+  list-style: none;
+  margin: 0;
+  padding: var(--space-4) 0 0 var(--space-5);
+  border-left: 2px solid var(--confidence-probable);
+  display: grid;
+  gap: var(--space-5);
+}
+
+.claim-evidence__title { margin: 0 0 var(--space-1); font-size: var(--text-400); }
+
+.claim-evidence__meta {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  color: var(--ink-500);
+}
+
+.claim-evidence__excerpt {
+  margin: var(--space-3) 0 0;
+  padding-left: var(--space-4);
+  border-left: 2px solid var(--ink-100);
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+  max-width: 68ch;
+}
+
+@media (max-width: 52rem) {
+  .spec__evidence-row > td { padding-bottom: var(--space-4); }
+  .claim-evidence { padding-left: var(--space-4); }
+}

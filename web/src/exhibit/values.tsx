@@ -6,7 +6,9 @@
 // of being skippable. A visitor must not be able to read a page and miss which
 // claims are weak.
 
-import { isSourceBacked, isConvention, isUnknown, type Value } from '../data/types.ts';
+import { useId, useState } from 'react';
+import { isSourceBacked, isConvention, isUnknown, type Value, type EvidenceRef } from '../data/types.ts';
+import { Cite } from './Cite.tsx';
 
 /** The words shown for each confidence level. Museum voice: precise, unhedged. */
 const CONFIDENCE_LABEL: Record<string, string> = {
@@ -107,19 +109,50 @@ export function SpecTable({ caption, showFrom = false, children }: {
   );
 }
 
-/** One row of a specification table: value, basis, and the archive's own note. */
-export function SpecRow({ term, value, from, showFrom = false }: {
+/** One row of a specification table: value, basis, and the archive's own note.
+ *
+ *  When `sources` is supplied, the basis becomes a control that opens THIS
+ *  claim's evidence beneath it. Evidence listed only at the foot of a page makes
+ *  a visitor match a claim to a citation by eye; the point of this archive is
+ *  that the two are attached. */
+export function SpecRow({ term, value, from, showFrom = false, sources }: {
   term: string;
   value: Value<unknown>;
   from?: 'model' | 'variant';
   showFrom?: boolean;
+  sources?: Map<string, EvidenceRef>;
 }) {
+  const [open, setOpen] = useState(false);
+  const panelId = useId();
   const note = isSourceBacked(value) || isUnknown(value) ? value.note : undefined;
+  // Deduplicated: a source cited both on the claim and inside its dispute is one
+  // source, and listing it twice would overstate how much evidence there is —
+  // which is the opposite of what this panel exists to do.
+  const cited = isSourceBacked(value) ? [...new Set(value.sourceIds)] : [];
+  const refs = sources ? cited.map((id) => sources.get(id)).filter((r): r is EvidenceRef => Boolean(r)) : [];
+  const columns = showFrom ? 5 : 4;
+
   return (
+    <>
     <tr className="spec__row" data-basis={value.basis}>
       <th scope="row" className="spec__term">{term}</th>
       <td className="spec__value">{formatValue(value)}</td>
-      <td className="spec__basis"><BasisBadge value={value} /></td>
+      <td className="spec__basis">
+        {refs.length > 0 ? (
+          <button
+            type="button"
+            className="spec__basis-button"
+            aria-expanded={open}
+            aria-controls={panelId}
+            onClick={() => setOpen((o) => !o)}
+          >
+            <BasisBadge value={value} />
+            <span className="spec__basis-hint">
+              {open ? 'hide' : `${refs.length} source${refs.length === 1 ? '' : 's'}`}
+            </span>
+          </button>
+        ) : <BasisBadge value={value} />}
+      </td>
       {showFrom && (
         <td className="spec__from">
           {from === 'model' ? 'inherited from the model' : from === 'variant' ? 'this configuration' : ''}
@@ -135,5 +168,28 @@ export function SpecRow({ term, value, from, showFrom = false }: {
         )}
       </td>
     </tr>
+    {open && refs.length > 0 && (
+      <tr className="spec__evidence-row" id={panelId}>
+        <td colSpan={columns}>
+          <ol className="claim-evidence">
+            {refs.map((e) => (
+              <li key={e.sourceId}>
+                <p className="claim-evidence__title">
+                  {e.url ? <Cite url={e.url}>{e.title}</Cite> : e.title}
+                </p>
+                <p className="claim-evidence__meta">
+                  Tier {e.tier} · {e.kind.replace(/_/g, ' ')}
+                  {e.publisher ? ` · ${e.publisher}` : ''}
+                  {e.accessed ? ` · accessed ${e.accessed}` : ''}
+                  {e.missing ? ' · cited but not present in this bundle' : ''}
+                </p>
+                {e.excerpt && <blockquote className="claim-evidence__excerpt">{e.excerpt}</blockquote>}
+              </li>
+            ))}
+          </ol>
+        </td>
+      </tr>
+    )}
+    </>
   );
 }

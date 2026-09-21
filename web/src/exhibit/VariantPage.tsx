@@ -65,6 +65,8 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
   if (!state) return <main className="variant"><p>Opening the case…</p></main>;
 
   const { view, conventions } = state;
+  // The record's own trail, indexed so each claim can show just its sources.
+  const sourceMap = new Map(view.evidenceTrail.map((e) => [e.sourceId, e]));
   const inForce = conventions.filter((c) =>
     ['cv-face-colours-wca-standard', 'cv-geometry-generic-3x3', 'cv-logo-omitted'].includes(c.id)
     || (c.id === 'cv-body-plastic-neutral' && isUnknown(view.colorway.body.plasticColor))
@@ -131,24 +133,24 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
           caption="Every row carries the basis of its claim. A weak claim is printed as plainly as a strong one."
         >
             {Object.entries(view.resolvedSpecs).map(([field, spec]) => (
-              <SpecRow key={field} showFrom term={field.replace(/_/g, ' ')} value={spec.value} from={spec.from} />
+              <SpecRow key={field} showFrom sources={sourceMap} term={field.replace(/_/g, ' ')} value={spec.value} from={spec.from} />
             ))}
-            <SpecRow showFrom term="edition name" value={view.edition.name} />
-            <SpecRow showFrom term="edition types" value={view.edition.types} />
-            <SpecRow showFrom term="limited" value={view.edition.limited.isLimited} />
-            <SpecRow showFrom term="run size" value={view.edition.limited.runSize} />
-            <SpecRow showFrom term="colourway designation" value={view.colorway.designation} />
-            <SpecRow showFrom term="surface application" value={view.colorway.application} />
-            <SpecRow showFrom term="body plastic colour" value={view.colorway.body.plasticColor} />
-            <SpecRow showFrom term="logo placement" value={view.colorway.logo.placement} />
+            <SpecRow showFrom sources={sourceMap} term="edition name" value={view.edition.name} />
+            <SpecRow showFrom sources={sourceMap} term="edition types" value={view.edition.types} />
+            <SpecRow showFrom sources={sourceMap} term="limited" value={view.edition.limited.isLimited} />
+            <SpecRow showFrom sources={sourceMap} term="run size" value={view.edition.limited.runSize} />
+            <SpecRow showFrom sources={sourceMap} term="colourway designation" value={view.colorway.designation} />
+            <SpecRow showFrom sources={sourceMap} term="surface application" value={view.colorway.application} />
+            <SpecRow showFrom sources={sourceMap} term="body plastic colour" value={view.colorway.body.plasticColor} />
+            <SpecRow showFrom sources={sourceMap} term="logo placement" value={view.colorway.logo.placement} />
             {/* The archive documents no face colour on any cube, so six rows all
                 reading the same thing is noise rather than detail. They are
                 collapsed ONLY when all six genuinely agree; the moment one face
                 is researched, the rows separate again and the difference shows. */}
             {facesAgree(view.colorway.faces)
-              ? <SpecRow showFrom term="face colours (all six)" value={view.colorway.faces[0]!.color} />
+              ? <SpecRow showFrom sources={sourceMap} term="face colours (all six)" value={view.colorway.faces[0]!.color} />
               : view.colorway.faces.map((f) => (
-                  <SpecRow key={f.face} showFrom term={`face ${f.face}`} value={f.color} />
+                  <SpecRow key={f.face} showFrom sources={sourceMap} term={`face ${f.face}`} value={f.color} />
                 ))}
         </SpecTable>
       </section>

@@ -8,6 +8,7 @@ import { isUnknown } from '../data/types.ts';
 import { SpecRow, SpecTable, BasisBadge, formatValue } from './values.tsx';
 import { Cite } from './Cite.tsx';
 import { href, navigate } from '../app/router.ts';
+import './VariantPage.css';
 import './ModelPage.css';
 
 const bundle = createBundle('/bundle');
@@ -41,6 +42,7 @@ export function ModelPage({ modelId }: { modelId: string }) {
   if (!state) return <main className="model"><p>Opening the case…</p></main>;
 
   const { model, variants } = state;
+  const sourceMap = new Map(model.evidenceTrail.map((e) => [e.sourceId, e]));
   const single = variants.length === 1;
 
   return (
@@ -65,9 +67,9 @@ export function ModelPage({ modelId }: { modelId: string }) {
       </p>
 
       <SpecTable caption="What the archive establishes about this design, and on what basis.">
-          <SpecRow term="announced" value={model.announced} />
-          <SpecRow term="generation" value={model.generation} />
-          <SpecRow term="description" value={model.description} />
+          <SpecRow sources={sourceMap} term="announced" value={model.announced} />
+          <SpecRow sources={sourceMap} term="generation" value={model.generation} />
+          <SpecRow sources={sourceMap} term="description" value={model.description} />
       </SpecTable>
 
       {/* The roster is why a visitor came this deep, so it is the dominant block —
