@@ -1,0 +1,17 @@
+{
+  "name": "@cubecollection/three",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Reusable Three.js presentation primitives for the CubeCollection exhibition (Phase III, Lane C): provenance-typed parametric cube geometry, materials, a museum lighting/scene rig, and camera choreography. Not coupled to React; see src/three/README.md.",
+  "type": "module",
+  "sideEffects": false,
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "three": "^0.169.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
