@@ -179,7 +179,10 @@ export class SceneRig {
   private disposed = false;
 
   constructor(options: SceneRigOptions = {}) {
-    this.renderer = createRenderer({ canvas: options.canvas, pixelRatioCap: options.pixelRatioCap });
+    this.renderer = createRenderer({
+      ...(options.canvas !== undefined ? { canvas: options.canvas } : {}),
+      ...(options.pixelRatioCap !== undefined ? { pixelRatioCap: options.pixelRatioCap } : {}),
+    });
 
     this.scene = new THREE.Scene();
     // A neutral museum-wall dark; a page is free to override scene.background.

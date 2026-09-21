@@ -83,11 +83,38 @@ export type Provenance<T> = SourceBacked<T> | Convention<T> | Unknown;
 
 // ---------------------------------------------------------------- constructors
 
+/**
+ * Optional properties that may be passed as an explicit `undefined`.
+ *
+ * The project compiles with `exactOptionalPropertyTypes`, which distinguishes
+ * "key absent" from "key present holding undefined" — the same distinction the
+ * archive draws between a field never researched and one searched and not
+ * found. Callers naturally build these objects from values that may be
+ * undefined, so the constructors accept that and DROP the undefined keys, which
+ * keeps the distinction meaningful in the result instead of erasing it.
+ */
+type MaybeUndefined<T> = { [K in keyof T]?: T[K] | undefined };
+
 export function sourceBacked<T>(
   value: T,
-  extra: Partial<Pick<SourceBacked<T>, 'confidence' | 'sourceIds' | 'from'>> = {},
+  extra: MaybeUndefined<Pick<SourceBacked<T>, 'confidence' | 'sourceIds' | 'from'>> = {},
 ): SourceBacked<T> {
-  return { kind: 'source-backed', value, ...extra };
+  // Assigned key by key rather than spread: a spread would write the key with
+  // an explicit undefined, and under exactOptionalPropertyTypes that is not the
+  // same as leaving it out.
+  const out: {
+    kind: 'source-backed';
+    value: T;
+    // Exclude<..., undefined>: indexing an optional property yields `X | undefined`,
+    // which would reintroduce exactly the explicit-undefined this avoids.
+    confidence?: Exclude<SourceBacked<T>['confidence'], undefined>;
+    sourceIds?: Exclude<SourceBacked<T>['sourceIds'], undefined>;
+    from?: Exclude<SourceBacked<T>['from'], undefined>;
+  } = { kind: 'source-backed', value };
+  if (extra.confidence !== undefined) out.confidence = extra.confidence;
+  if (extra.sourceIds !== undefined) out.sourceIds = extra.sourceIds;
+  if (extra.from !== undefined) out.from = extra.from;
+  return out;
 }
 
 export function convention<T>(value: T, rationale: string): Convention<T> {
@@ -95,7 +122,9 @@ export function convention<T>(value: T, rationale: string): Convention<T> {
 }
 
 export function unknown(reason?: Unknown['reason']): Unknown {
-  return { kind: 'unknown', reason };
+  // Not `{ kind: 'unknown', reason }`: that writes an explicit undefined, which
+  // under exactOptionalPropertyTypes is a different thing from an absent key.
+  return reason === undefined ? { kind: 'unknown' } : { kind: 'unknown', reason };
 }
 
 // ---------------------------------------------------------------- guards

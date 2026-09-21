@@ -315,7 +315,13 @@ export function resolveCubeVisualSpec(
     const hex = hexOrUndefined(faceRecord?.color_normalized);
     if (hex) {
       faces[face] = sourceBacked(
-        { colorName: faceRecord?.color_name, colorHex: hex },
+        // colorName omitted rather than set to undefined: the archive having no
+        // name for a colour it did record is a different state from the name
+        // being present, and exactOptionalPropertyTypes keeps them apart.
+        {
+          colorHex: hex,
+          ...(faceRecord?.color_name !== undefined ? { colorName: faceRecord.color_name } : {}),
+        },
         {
           from: 'variant',
           confidence: attestationFor(att, `/colorway/faces/${idx}/color_normalized`)?.confidence,

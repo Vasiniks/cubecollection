@@ -87,9 +87,12 @@ export function createUnknownMaterial(): THREE.Material {
   const map = getUnknownTexture();
   unknownMaterial = new THREE.MeshStandardMaterial({
     color: map ? 0xffffff : 0x8a8a8a,
-    map,
     roughness: 0.9,
     metalness: 0,
+    // `map` is only set when a texture was actually produced. Passing an
+    // explicit undefined is rejected under exactOptionalPropertyTypes, and the
+    // flat colour above is the correct fallback anyway.
+    ...(map ? { map } : {}),
   });
   unknownMaterial.userData.provenance = 'unknown';
   return unknownMaterial;
