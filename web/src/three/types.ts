@@ -19,7 +19,7 @@
  *    whether a given archive record counts as source-backed, convention, or unknown.
  */
 
-import type { BevelTreatment } from './CubeGeometry.js';
+import type { BevelTreatment } from './CubeGeometry.ts';
 import {
   type Confidence,
   type Provenance,
@@ -27,7 +27,7 @@ import {
   convention,
   sourceBacked,
   unknown,
-} from './provenance.js';
+} from './provenance.ts';
 
 // ================================================================== vocab mirrors
 
@@ -132,30 +132,44 @@ export const STANDARD_SCHEME_RATIONALE =
   'claim about this specific product.';
 
 /** WCA-standard scheme, opposite-face pairs: U/D white/yellow, F/B green/blue, R/L red/orange. */
+/**
+ * Mirrors the `value` block of cv-face-colours-wca-standard. Not a palette
+ * choice made here: these are the exact hexes the registry publishes and the
+ * convention index shows, so the cube on screen is the cube the disclosure
+ * describes. src/data/adapter.ts mirrors the same six values, and
+ * conventions.test.ts holds all three in agreement.
+ */
 export const STANDARD_SCHEME_HEX: Readonly<Record<FaceNotation, HexColor>> = {
-  U: '#FFFFFF',
-  D: '#FFD500',
-  F: '#00A651',
+  U: '#F5F5F0',
+  D: '#E6C200',
+  F: '#00843D',
   B: '#0051BA',
-  L: '#FF5800',
-  R: '#B90000',
+  L: '#E8620C',
+  R: '#C41E3A',
 };
 
-export const DEFAULT_BEVEL: BevelTreatment = { radiusRatio: 0.08, segments: 3, gapRatio: 0.01 };
+/**
+ * Mirrors the `value` block of cv-geometry-generic-3x3 in
+ * conventions/rendering-conventions.yml, which is the single source of truth
+ * for every convention the exhibition applies. These numbers are not a
+ * modelling preference: drawing a bevel the registry does not describe would
+ * mean the disclosure shown to a visitor no longer matches what is on screen.
+ */
+export const DEFAULT_BEVEL: BevelTreatment = { radiusRatio: 0.055, segments: 3, gapRatio: 0.012 };
 
 export const DEFAULT_BEVEL_RATIONALE =
   'No geometry-profile record exists for any variant (data/geometry-profiles/ is empty; ' +
   'representation.procedural.geometry_profile_id is reserved and unset for all 511 public ' +
   'variants). This bevel/gap treatment is a modelling default, never an archive claim.';
 
-/** vocab/coatings.yml, vocab/colorway-*.yml and EXHIBITION_ARCHITECTURE §4.4 record size_mm as
- *  populated for only 50 of 511 public variants. 56mm is a common WCA-legal default. */
+/** Mirrors cv-size-56mm-fallback. */
 export const DEFAULT_SIZE_MM = 56;
 
 export const DEFAULT_SIZE_RATIONALE =
-  '`size_mm` is populated for only 50 of 511 public variants ' +
-  '(docs/EXHIBITION_ARCHITECTURE.md §4.4). 56mm, a common WCA-legal size, is used only when ' +
-  'the archive is silent — never presented as the archive’s own figure.';
+  '`size_mm` resolves for 227 of the 511 public variants (236 of 527 across the whole ' +
+  'archive). 56 mm is both the mode and the median of the documented distribution, and is ' +
+  'used only where the archive is silent — never presented as the archive\u2019s own figure. ' +
+  'See cv-size-56mm-fallback in conventions/rendering-conventions.yml.';
 
 // ================================================================== archive adapter
 

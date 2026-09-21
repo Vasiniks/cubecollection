@@ -30,3 +30,12 @@
   max-width: 44ch;
   margin: 0;
 }
+
+/* The plinth before the renderer arrives. Same box, so the label never
+   reflows when the object lands. */
+.cube-canvas--loading {
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-6);
+  color: var(--surface-stage-ink);
+}

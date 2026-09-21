@@ -3,6 +3,7 @@ import { loadMeta, isResearchPreview, type BundleMeta } from './bundle';
 import { useRoute, href, navigate } from './router';
 import { ConventionsPage } from './ConventionsPage';
 import { VariantPage } from '../exhibit/VariantPage';
+import { LandingPage } from '../exhibit/LandingPage';
 
 export function App() {
   const route = useRoute();
@@ -26,12 +27,17 @@ export function App() {
   return (
     <>
       {isResearchPreview(meta) && (
-        <p data-testid="preview-banner" role="note">
-          Research preview — these records are researched, not curator-approved.
+        <p className="preview-banner" data-testid="preview-banner" role="note">
+          <span className="preview-banner__tag">Research preview</span>
+          <span>
+            These records are researched, not curator-approved. Nothing here has passed
+            a curator's review, and each page states its own record status.
+          </span>
         </p>
       )}
       {route.name === 'conventions' ? <ConventionsPage />
        : route.name === 'variant' ? <VariantPage modelId={route.modelId} variantId={route.id} />
+       : route.name === 'home' ? <LandingPage />
        : (
       <main data-testid="shell">
         <h1>CubeCollection</h1>

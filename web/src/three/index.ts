@@ -3,16 +3,16 @@
  * page composes these modules.
  */
 
-export * from './provenance.js';
-export * from './types.js';
-export * from './CubeGeometry.js';
-export * from './materials.js';
-export * from './SceneRig.js';
-export * from './CameraStates.js';
+export * from './provenance.ts';
+export * from './types.ts';
+export * from './CubeGeometry.ts';
+export * from './materials.ts';
+export * from './SceneRig.ts';
+export * from './CameraStates.ts';
 
-import { assembleCube, geometryInputsFromSpec, type AssembleCubeResult } from './CubeGeometry.js';
-import { resolveCubieMaterials } from './materials.js';
-import type { CubeVisualSpec } from './types.js';
+import { assembleCube, geometryInputsFromSpec, type AssembleCubeResult } from './CubeGeometry.ts';
+import { resolveCubieMaterials } from './materials.ts';
+import type { CubeVisualSpec } from './types.ts';
 
 /**
  * The one-call convenience a page reaches for first: geometry + materials, composed, with

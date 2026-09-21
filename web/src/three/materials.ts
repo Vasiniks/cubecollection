@@ -24,15 +24,15 @@
  */
 
 import * as THREE from 'three';
-import { type Provenance, hasValue, isConvention, isUnknown, sourceBacked, unknown } from './provenance.js';
-import { FACE_GROUP_ORDER, type CubieLayout } from './CubeGeometry.js';
+import { type Provenance, hasValue, isConvention, isUnknown, sourceBacked, unknown } from './provenance.ts';
+import { FACE_GROUP_ORDER, type CubieLayout } from './CubeGeometry.ts';
 import type {
   Coating,
   ColorwayTranslucency,
   CubeVisualSpec,
   FaceColorSpec,
   HexColor,
-} from './types.js';
+} from './types.ts';
 
 // ================================================================== the unknown placeholder
 

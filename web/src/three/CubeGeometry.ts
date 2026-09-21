@@ -33,9 +33,9 @@ import * as THREE from 'three';
 // COULD NOT VERIFY IN A BROWSER: this import path and RoundedBoxGeometry's constructor signature
 // are asserted from three.js's documented/historical behaviour, not a running build.
 import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
-import { DEFAULT_BEVEL, DEFAULT_SIZE_MM } from './types.js';
-import type { ColorwayApplication, CubeVisualSpec, FaceNotation, PieceClass } from './types.js';
-import { type ProvenanceKind, resolveValue } from './provenance.js';
+import { DEFAULT_BEVEL, DEFAULT_SIZE_MM } from './types.ts';
+import type { ColorwayApplication, CubeVisualSpec, FaceNotation, PieceClass } from './types.ts';
+import { type ProvenanceKind, resolveValue } from './provenance.ts';
 
 /**
  * A cube's cubie bevel/gap treatment. Defined here, not types.ts, because it is a pure geometry

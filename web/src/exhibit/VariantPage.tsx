@@ -4,7 +4,7 @@ import { adaptVariant, type RawVariant, type RawModel, type RawSource } from '..
 import { resolveCubeVisualSpec, type CubeVisualSpec } from '../three/types.ts';
 import type { VariantView } from '../data/types.ts';
 import { isUnknown } from '../data/types.ts';
-import { CubeCanvas } from './CubeCanvas.tsx';
+import { LazyCube } from './LazyCube.tsx';
 import { SpecRow, BasisBadge } from './values.tsx';
 import { loadConventions, type RenderingConvention } from '../app/conventions.ts';
 import { href, navigate } from '../app/router.ts';
@@ -80,7 +80,7 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
       </p>
 
       <div className="variant__stage">
-        <CubeCanvas
+        <LazyCube
           spec={state.spec}
           label={`A drawn representation of ${view.name}. Its colours, piece geometry and surface are rendering conventions, not documented facts.`}
         />

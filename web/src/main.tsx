@@ -5,6 +5,7 @@ import { App } from './app/App';
 // not @import them, leaving load order to the consuming app.
 import './styles/tokens.css';
 import './styles/base.css';
+import './app/chrome.css';
 
 const el = document.getElementById('root');
 if (!el) throw new Error('#root missing from index.html');
