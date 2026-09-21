@@ -441,8 +441,17 @@ caller's explicit opt-in.
 | Route | What it is |
 |---|---|
 | `/` | The opening scene: one real object, one claim taken from the record's own note, its confidence, its source |
+| `/makers` | The roster, grouped by depth of coverage — 6 deep, 11 mid, 37 thin |
+| `/makers/:manufacturerId` | One maker's room, models grouped by family |
+| `/models/:modelId` | A design and the configurations it was sold in |
 | `/models/:modelId/variants/:variantId` | The object on the plinth — §2.7 of `docs/design/EXHIBITION_UX.md`, built |
 | `/conventions` | The convention index: every rendering default, its reach, and what it asserts nothing about |
+| `/unknowns` | The gaps as a room: render blockers, and answered against searched-in-vain per maker |
+
+All three entry paths lead somewhere built: Browse to the roster, Trace to a
+design's generations, Interrogate to the gaps. The chain
+`/makers → maker → model → variant` navigates in both directions, and succession
+relationships are followable from the model page.
 
 The landing page's featured object rotates over eight curated ids, each measured
 to carry at least seven attestations and a tier 1 or 2 source. Picking at random
@@ -500,8 +509,10 @@ written against them is safe without a per-component media query.
 - The cubie bevels catch the key light, so the seams read as a fine bright dashed
   line. A lighting interaction with placeholder geometry; fixing it properly means
   body-colouring the chamfer rather than face-colouring it.
-- `/makers`, `/families`, `/mechanism`, `/lineage`, `/timeline`, `/edges`,
-  `/case`, `/unknowns`, `/search` and the evidence drawer are specified in
+- `/families`, `/mechanism`, `/lineage`, `/timeline`, `/edges`, `/case`,
+  `/search`, `/models/:id/compare` and the evidence drawer are specified in
   `docs/design/EXHIBITION_UX.md` and **not built**.
+- `/unknowns` can count answered against searched-in-vain, but not the questions
+  never asked: an absent field leaves no record of itself. The page says so.
 - `dist/public` still contains 0 records. That is Blocker A's deliberate outcome,
   not a defect: promoting records out of `stub` is a curator's decision.

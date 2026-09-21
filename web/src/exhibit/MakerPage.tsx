@@ -7,7 +7,7 @@ import type { Withheld } from '../data/load.ts';
 import { adaptManufacturer, adaptModel, type RawSource } from '../data/adapter.ts';
 import type { ManufacturerView, ModelView } from '../data/types.ts';
 import { isUnknown, isSourceBacked } from '../data/types.ts';
-import { SpecRow, formatValue } from './values.tsx';
+import { SpecRow, SpecTable, formatValue } from './values.tsx';
 import { href, navigate } from '../app/router.ts';
 import './MakerPage.css';
 
@@ -88,24 +88,12 @@ export function MakerPage({ manufacturerId }: { manufacturerId: string }) {
         </span>
       </p>
 
-      <table className="spec">
-        <caption className="spec__caption">
-          What the archive establishes about this maker, and on what basis.
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Field</th><th scope="col">Value</th>
-            <th scope="col">Basis</th><th scope="col">Source of the value</th>
-            <th scope="col">Note</th>
-          </tr>
-        </thead>
-        <tbody>
+      <SpecTable caption="What the archive establishes about this maker, and on what basis.">
           <SpecRow term="name" value={maker.name} />
           <SpecRow term="native name" value={maker.nativeName} />
           <SpecRow term="country" value={maker.country} />
           <SpecRow term="founded" value={maker.founded} />
-        </tbody>
-      </table>
+      </SpecTable>
 
       {outOfScope > 0 && (
         <p className="maker-room__withheld">

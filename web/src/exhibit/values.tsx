@@ -77,11 +77,42 @@ export function BasisBadge({ value }: { value: Value<unknown> }) {
   );
 }
 
+/**
+ * A specification table.
+ *
+ * `showFrom` controls the inheritance column. Only a variant's resolved specs can
+ * be inherited from a model, so on a maker or model page that column is empty on
+ * every row — a header over nothing, which reads as missing data rather than as
+ * an inapplicable question.
+ */
+export function SpecTable({ caption, showFrom = false, children }: {
+  caption: string;
+  showFrom?: boolean;
+  children: React.ReactNode;
+}) {
+  return (
+    <table className="spec" data-show-from={showFrom ? 'true' : 'false'}>
+      <caption className="spec__caption">{caption}</caption>
+      <thead>
+        <tr>
+          <th scope="col">Field</th>
+          <th scope="col">Value</th>
+          <th scope="col">Basis</th>
+          {showFrom && <th scope="col">Source of the value</th>}
+          <th scope="col">Note</th>
+        </tr>
+      </thead>
+      <tbody>{children}</tbody>
+    </table>
+  );
+}
+
 /** One row of a specification table: value, basis, and the archive's own note. */
-export function SpecRow({ term, value, from }: {
+export function SpecRow({ term, value, from, showFrom = false }: {
   term: string;
   value: Value<unknown>;
   from?: 'model' | 'variant';
+  showFrom?: boolean;
 }) {
   const note = isSourceBacked(value) || isUnknown(value) ? value.note : undefined;
   return (
@@ -89,9 +120,11 @@ export function SpecRow({ term, value, from }: {
       <th scope="row" className="spec__term">{term}</th>
       <td className="spec__value">{formatValue(value)}</td>
       <td className="spec__basis"><BasisBadge value={value} /></td>
-      <td className="spec__from">
-        {from === 'model' ? 'inherited from the model' : from === 'variant' ? 'this configuration' : ''}
-      </td>
+      {showFrom && (
+        <td className="spec__from">
+          {from === 'model' ? 'inherited from the model' : from === 'variant' ? 'this configuration' : ''}
+        </td>
+      )}
       <td className="spec__note">
         {note}
         {isSourceBacked(value) && value.disputed && value.disputed.length > 0 && (

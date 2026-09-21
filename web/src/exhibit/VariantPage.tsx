@@ -5,7 +5,7 @@ import { resolveCubeVisualSpec, type CubeVisualSpec } from '../three/types.ts';
 import type { VariantView } from '../data/types.ts';
 import { isUnknown } from '../data/types.ts';
 import { LazyCube } from './LazyCube.tsx';
-import { SpecRow, BasisBadge } from './values.tsx';
+import { SpecRow, SpecTable, BasisBadge } from './values.tsx';
 import { loadConventions, type RenderingConvention } from '../app/conventions.ts';
 import { href, navigate } from '../app/router.ts';
 import './VariantPage.css';
@@ -126,41 +126,31 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
 
       <section aria-labelledby="spec-h">
         <h2 id="spec-h" className="variant__section-title">Specification</h2>
-        <table className="spec">
-          <caption className="spec__caption">
-            Every row carries the basis of its claim. A weak claim is printed as plainly
-            as a strong one.
-          </caption>
-          <thead>
-            <tr>
-              <th scope="col">Field</th><th scope="col">Value</th>
-              <th scope="col">Basis</th><th scope="col">Source of the value</th>
-              <th scope="col">Note</th>
-            </tr>
-          </thead>
-          <tbody>
+        <SpecTable
+          showFrom
+          caption="Every row carries the basis of its claim. A weak claim is printed as plainly as a strong one."
+        >
             {Object.entries(view.resolvedSpecs).map(([field, spec]) => (
-              <SpecRow key={field} term={field.replace(/_/g, ' ')} value={spec.value} from={spec.from} />
+              <SpecRow key={field} showFrom term={field.replace(/_/g, ' ')} value={spec.value} from={spec.from} />
             ))}
-            <SpecRow term="edition name" value={view.edition.name} />
-            <SpecRow term="edition types" value={view.edition.types} />
-            <SpecRow term="limited" value={view.edition.limited.isLimited} />
-            <SpecRow term="run size" value={view.edition.limited.runSize} />
-            <SpecRow term="colourway designation" value={view.colorway.designation} />
-            <SpecRow term="surface application" value={view.colorway.application} />
-            <SpecRow term="body plastic colour" value={view.colorway.body.plasticColor} />
-            <SpecRow term="logo placement" value={view.colorway.logo.placement} />
+            <SpecRow showFrom term="edition name" value={view.edition.name} />
+            <SpecRow showFrom term="edition types" value={view.edition.types} />
+            <SpecRow showFrom term="limited" value={view.edition.limited.isLimited} />
+            <SpecRow showFrom term="run size" value={view.edition.limited.runSize} />
+            <SpecRow showFrom term="colourway designation" value={view.colorway.designation} />
+            <SpecRow showFrom term="surface application" value={view.colorway.application} />
+            <SpecRow showFrom term="body plastic colour" value={view.colorway.body.plasticColor} />
+            <SpecRow showFrom term="logo placement" value={view.colorway.logo.placement} />
             {/* The archive documents no face colour on any cube, so six rows all
                 reading the same thing is noise rather than detail. They are
                 collapsed ONLY when all six genuinely agree; the moment one face
                 is researched, the rows separate again and the difference shows. */}
             {facesAgree(view.colorway.faces)
-              ? <SpecRow term="face colours (all six)" value={view.colorway.faces[0]!.color} />
+              ? <SpecRow showFrom term="face colours (all six)" value={view.colorway.faces[0]!.color} />
               : view.colorway.faces.map((f) => (
-                  <SpecRow key={f.face} term={`face ${f.face}`} value={f.color} />
+                  <SpecRow key={f.face} showFrom term={`face ${f.face}`} value={f.color} />
                 ))}
-          </tbody>
-        </table>
+        </SpecTable>
       </section>
 
       <section aria-labelledby="ev-h" className="variant__evidence">

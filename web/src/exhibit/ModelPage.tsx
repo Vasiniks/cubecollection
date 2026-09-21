@@ -5,7 +5,7 @@ import {
 import { adaptModel, adaptVariant, type RawSource } from '../data/adapter.ts';
 import type { ModelView, VariantView } from '../data/types.ts';
 import { isUnknown } from '../data/types.ts';
-import { SpecRow, BasisBadge, formatValue } from './values.tsx';
+import { SpecRow, SpecTable, BasisBadge, formatValue } from './values.tsx';
 import { href, navigate } from '../app/router.ts';
 import './ModelPage.css';
 
@@ -63,23 +63,11 @@ export function ModelPage({ modelId }: { modelId: string }) {
         Record status: <strong>{model.status}</strong>
       </p>
 
-      <table className="spec model__identity">
-        <caption className="spec__caption">
-          What the archive establishes about this design, and on what basis.
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Field</th><th scope="col">Value</th>
-            <th scope="col">Basis</th><th scope="col">Source of the value</th>
-            <th scope="col">Note</th>
-          </tr>
-        </thead>
-        <tbody>
+      <SpecTable caption="What the archive establishes about this design, and on what basis.">
           <SpecRow term="announced" value={model.announced} />
           <SpecRow term="generation" value={model.generation} />
           <SpecRow term="description" value={model.description} />
-        </tbody>
-      </table>
+      </SpecTable>
 
       {/* The roster is why a visitor came this deep, so it is the dominant block —
           except on a single-configuration model, where a roster of one would be
