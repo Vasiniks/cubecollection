@@ -82,7 +82,10 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
         <span aria-hidden="true"> / </span>
         <span>{view.lineage.familyName ?? view.lineage.manufacturerId}</span>
         <span aria-hidden="true"> / </span>
-        <span>{view.lineage.modelName ?? view.modelId}</span>
+        <a href={href({ name: 'model', id: view.modelId })}
+           onClick={(e) => { e.preventDefault(); navigate(href({ name: 'model', id: view.modelId })); }}>
+          {view.lineage.modelName ?? view.modelId}
+        </a>
       </nav>
 
       <p className="variant__status">

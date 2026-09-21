@@ -19,10 +19,11 @@ const CONFIDENCE_LABEL: Record<string, string> = {
 };
 
 export function formatValue(v: Value<unknown>): string {
-  if (isUnknown(v)) {
-    return v.unattestedValue !== undefined ? String(v.unattestedValue) : '—';
-  }
-  const raw = v.value;
+  // An unattested value still needs the same formatting as an attested one.
+  // Reading it straight through String() printed "[object Object]" for the
+  // structured fields — generation, dates — which is how a real record looked
+  // on screen until this was fixed.
+  const raw = isUnknown(v) ? v.unattestedValue : v.value;
   if (raw === null || raw === undefined) return '—';
   if (Array.isArray(raw)) return raw.join(', ');
   // Grouped, so a run size of 1111 reads as 1,111 rather than as a year.
@@ -36,6 +37,15 @@ export function formatValue(v: Value<unknown>): string {
       return `${q}${String(o.value)}`;
     }
     if ('label' in o && o.label !== undefined) return String(o.label);
+    // A generation with no label still carries meaning: its ordinal and the
+    // basis on which the archive assigned it.
+    if ('ordinal' in o || 'basis' in o) {
+      const parts = [
+        o.ordinal !== undefined ? `generation ${String(o.ordinal)}` : null,
+        o.basis !== undefined ? `by ${String(o.basis).replace(/_/g, ' ')}` : null,
+      ].filter(Boolean);
+      if (parts.length) return parts.join(', ');
+    }
     return JSON.stringify(raw);
   }
   return String(raw);

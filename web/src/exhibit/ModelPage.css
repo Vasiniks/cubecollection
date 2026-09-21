@@ -1,0 +1,127 @@
+/* The design, and the configurations it was sold in. */
+
+.model {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-5) var(--space-11);
+}
+
+.model__breadcrumb,
+.model__status {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin: 0 0 var(--space-4);
+}
+
+.model__name {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-800), 6vw, var(--text-950));
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-regular);
+  margin: 0 0 var(--space-3);
+  text-wrap: balance;
+}
+
+.model__section-title {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  font-weight: var(--weight-regular);
+  border-top: 1px solid var(--ink-100);
+  padding-top: var(--space-4);
+  margin: var(--space-8) 0 var(--space-5);
+}
+
+.model__identity { margin-top: var(--space-6); }
+
+.model__variants-note {
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+  margin: 0 0 var(--space-6);
+}
+
+/* The roster is the dominant block: it is the reason a visitor came this deep. */
+.variant-roster {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: var(--space-6);
+}
+
+.variant-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  border-top: 1px solid var(--ink-100);
+  padding-top: var(--space-4);
+}
+
+.variant-card a { text-decoration: none; }
+.variant-card a:hover .variant-card__name { text-decoration: underline; }
+
+.variant-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-500);
+  line-height: var(--leading-snug);
+  display: block;
+}
+
+.variant-card__meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  color: var(--ink-500);
+}
+
+.variant-card__edition {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  font-size: var(--text-300);
+  color: var(--ink-700);
+}
+
+.model__relationships {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+
+.model__relationships li {
+  display: grid;
+  grid-template-columns: 12rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: baseline;
+}
+
+.model__rel-type {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.model__rel-note {
+  grid-column: 2;
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+}
+
+@media (max-width: 52rem) {
+  .model { padding: var(--space-5) var(--space-4) var(--space-9); }
+  .variant-roster { grid-template-columns: minmax(0, 1fr); }
+  .model__relationships li { grid-template-columns: minmax(0, 1fr); gap: var(--space-1); }
+  .model__rel-note { grid-column: 1; }
+}

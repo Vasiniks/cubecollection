@@ -5,6 +5,7 @@ import { ConventionsPage } from './ConventionsPage';
 import { VariantPage } from '../exhibit/VariantPage';
 import { LandingPage } from '../exhibit/LandingPage';
 import { MakersPage } from '../exhibit/MakersPage';
+import { ModelPage } from '../exhibit/ModelPage';
 
 export function App() {
   const route = useRoute();
@@ -40,6 +41,7 @@ export function App() {
        : route.name === 'variant' ? <VariantPage modelId={route.modelId} variantId={route.id} />
        : route.name === 'home' ? <LandingPage />
        : route.name === 'makers' ? <MakersPage />
+       : route.name === 'model' ? <ModelPage modelId={route.id} />
        : (
       <main data-testid="shell">
         <h1>CubeCollection</h1>
