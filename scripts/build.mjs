@@ -8,6 +8,24 @@
 //   dist/public/   the archive with all private data removed.
 //
 // Phase B consumes dist/public only. No presentation code reads data/.
+//
+// TWO MODES, AND THE DIRECTORY NAME CARRIES THE CLAIM (added 2026-09-21, Phase III).
+//
+//   --mode=publication      (default)  -> dist/public/   status filter: published
+//   --mode=research-preview            -> dist/preview/  status filter: sourced,drafted,stub
+//
+// WHY A SEPARATE DIRECTORY RATHER THAN A WIDER FILTER ON dist/public. `published` is not a
+// synonym for "finished research": vocab/record-status.yml defines it as "Visible to the
+// exhibition", the last step of a nine-pass methodology whose review-and-publish pass has never
+// been run. Meanwhile every one of the 527 variants is `stub` ("Identity established, nothing
+// else") while ALL 527 carry attestations and 253 carry a config block — the status field never
+// tracked the research.
+//
+// So the exhibition needs to develop against real researched data, and the archive must not
+// claim that data is publication-ready. Widening dist/public's filter would have conflated the
+// two silently. A separate directory cannot: anything reading dist/public still gets only what
+// a curator published, and a preview bundle is impossible to mistake for one. No record's
+// status is changed by either mode.
 
 import { mkdirSync, rmSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -17,7 +35,19 @@ import {
   colorwayCompleteness, renderBlockers, dateStart,
 } from './lib/archive.mjs';
 
-const PUBLIC_STATUS = (process.argv.find((a) => a.startsWith('--public-status='))?.split('=')[1] ?? 'published')
+const MODE = process.argv.find((a) => a.startsWith('--mode='))?.split('=')[1] ?? 'publication';
+const MODES = {
+  publication: { bundle: 'public', status: ['published'] },
+  'research-preview': { bundle: 'preview', status: ['sourced', 'drafted', 'stub'] },
+};
+if (!MODES[MODE]) {
+  console.error(`build: unknown --mode=${MODE}. Use publication or research-preview.`);
+  process.exit(2);
+}
+const PUBLIC_BUNDLE = MODES[MODE].bundle;
+// An explicit --public-status= still wins, so the gate stays inspectable and overridable.
+const PUBLIC_STATUS = (process.argv.find((a) => a.startsWith('--public-status='))?.split('=')[1]
+  ?? MODES[MODE].status.join(','))
   .split(',').map((s) => s.trim());
 const PRIVATE_PRICE_KINDS = new Set(['archivist_paid']);
 const UNPUBLISHABLE_RIGHTS = new Set(['unclear', 'do_not_publish']);
@@ -171,11 +201,11 @@ for (const { entity, doc } of publicRecords) {
   redactionCount += removed.length;
   (publicOut[entity] ??= []).push(clean);
 }
-for (const [entity, list] of Object.entries(publicOut)) write('public', `${entity}.json`, list);
+for (const [entity, list] of Object.entries(publicOut)) write(PUBLIC_BUNDLE, `${entity}.json`, list);
 
 // indexes, public bundle only
 const publicVariants = publicOut.variant ?? [];
-write('public', 'index/chronology.json', [...publicVariants]
+write(PUBLIC_BUNDLE, 'index/chronology.json', [...publicVariants]
   .sort((a, b) => String(a.first_release ?? '9999').localeCompare(String(b.first_release ?? '9999')))
   .map((v) => ({ id: v.id, name: v.name, first_release: v.first_release, manufacturer_id: v.lineage?.manufacturer_id, model_id: v.model_id })));
 
@@ -187,14 +217,16 @@ const groupIndex = (key) => {
   }
   return m;
 };
-write('public', 'index/by-manufacturer.json', groupIndex('manufacturer_id'));
-write('public', 'index/by-family.json', groupIndex('family_id'));
-write('public', 'index/by-model.json', groupIndex('model_id'));
+write(PUBLIC_BUNDLE, 'index/by-manufacturer.json', groupIndex('manufacturer_id'));
+write(PUBLIC_BUNDLE, 'index/by-family.json', groupIndex('family_id'));
+write(PUBLIC_BUNDLE, 'index/by-model.json', groupIndex('model_id'));
 
 const meta = {
   built_at: new Date().toISOString(),
   generator: 'scripts/build.mjs',
   phase: 'A — data architecture. No exhibition consumes this yet.',
+  mode: MODE,
+  bundle: PUBLIC_BUNDLE,
   public_status_filter: PUBLIC_STATUS,
   counts: {
     private: Object.fromEntries(Object.entries(priv).map(([k, v]) => [k, v.length])),
@@ -205,9 +237,13 @@ const meta = {
     'dist/public excludes every specimen record, every archivist_paid price, every private field, and every image whose rights are unclear.',
     'No valuation and no numeric rarity score exist anywhere in this bundle, by design.',
     'representation.procedural.renderable is false throughout: geometry profiles are reserved and none exist in this phase.',
+    ...(MODE === 'research-preview' ? [
+      'RESEARCH PREVIEW — NOT A PUBLICATION. This bundle deliberately includes records whose status is stub, drafted or sourced. Their presence here asserts that they are RESEARCHED, not that a curator has approved them for display. No record status was changed to produce it.',
+      'Anything consuming this bundle must surface record.status to the viewer rather than presenting every record as settled.',
+    ] : []),
   ],
 };
-write('public', 'meta.json', meta);
+write(PUBLIC_BUNDLE, 'meta.json', meta);
 write('private', 'meta.json', meta);
 
 console.log('\nbuild');
@@ -216,5 +252,5 @@ console.log(`  records in         ${records.length}`);
 console.log(`  private bundle     ${privateRecords.length} record(s)`);
 console.log(`  public bundle      ${publicRecords.length} record(s)  [status: ${PUBLIC_STATUS.join(', ')}]`);
 console.log(`  private fields cut ${redactionCount}`);
-console.log(`  output             ${outDir.replace(ROOT, '')}/private, ${outDir.replace(ROOT, '')}/public`);
+console.log(`  output             dist/private, dist/${PUBLIC_BUNDLE}`);
 console.log('\n  PASS\n');

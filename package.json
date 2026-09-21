@@ -18,6 +18,7 @@
     "escalations": "node scripts/check-escalations.mjs",
     "coverage": "node scripts/report-coverage.mjs",
     "build": "node scripts/build.mjs",
+    "build:preview": "node scripts/build.mjs --mode=research-preview",
     "privacy": "node scripts/check-privacy.mjs",
     "check": "npm run schemas && npm run validate && npm run lint && npm run duplicates && npm run escalations && npm run build && npm run privacy && npm run selftest && npm run coverage",
     "new": "node scripts/new-record.mjs",
