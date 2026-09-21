@@ -1,0 +1,6 @@
+node_modules/
+dist/
+# Synced from the repository root's build output. Never edited by hand, never
+# committed: the bundle is generated, and committing it would create a second
+# copy of the archive that could silently drift from data/.
+public/bundle/
