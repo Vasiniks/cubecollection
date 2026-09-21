@@ -370,3 +370,138 @@ Every value that reaches the interface carries its basis — `source-backed`,
 structurally distinct all the way to the screen. An adapter that flattens them,
 or a component that renders a convention as though it were sourced, breaks the
 one thing this archive exists to be trusted about.
+
+---
+
+## 12. What is built
+
+**Status:** as of 2026-09-21. This section records what exists, not what is planned.
+Anything not listed here is not built.
+
+### 12.1 The stack, and why
+
+`web/` is its own npm project. The repository root remains the data pipeline and
+gained no dependencies.
+
+| Layer | Choice | Note |
+|---|---|---|
+| Build | Vite 8 | Route-level splitting; three.js isolated |
+| UI | React 19, TypeScript 5.9 | `strict` **plus `exactOptionalPropertyTypes`** |
+| 3D | three 0.186, R3F 9 available | The core is plain three; R3F is not required by it |
+| Router | ~40 lines, no dependency | The route set is small and stable |
+
+`exactOptionalPropertyTypes` is not incidental. It makes "key absent" a different
+type from "key present holding undefined" — the same distinction the archive
+draws between a field never researched and one searched and not found. This is
+the codebase where that distinction has to hold, so the flag stays on and code
+is written to it.
+
+`@react-three/drei` was dropped: it pulls optional Expo / React Native peers that
+cannot resolve against React 19, and the three.js core is deliberately
+framework-free, so drei would have added weight and a peer conflict for little
+return.
+
+### 12.2 The data path
+
+```
+data/**  →  npm run build:preview  →  dist/preview/
+         →  web/scripts/sync-bundle.mjs  →  web/public/bundle/
+         →  web/src/data/load.ts   (memoised per-file fetch)
+         →  web/src/data/adapter.ts (archive semantics, once)
+         →  web/src/exhibit/**     (presentation only)
+```
+
+No presentation code reads `data/`. The adapter is the only place archival
+semantics — inheritance, tiers, confidence, disputes — are interpreted, and it is
+pure: no I/O, no framework imports, fully testable.
+
+`web/public/bundle/` is generated and gitignored. Committing it would create a
+second copy of the archive that could silently drift.
+
+### 12.3 The provenance contract in code
+
+Every value reaching the interface is one of three things, and they are different
+TypeScript types rather than a flag on one type:
+
+- `SourceBackedValue<T>` — carries `confidence`, `sourceIds`, and the full
+  `disputed[]` array with the archive's own `adjudication` note. Never collapsed
+  to a winner.
+- `ConventionValue<T>` — carries `conventionId` and **cannot** carry `confidence`
+  or `sourceIds`. There is no way to read `.confidence` off a convention, because
+  that variant of the union does not have the field.
+- `UnknownValue<T>` — carries `searched`, which separates "the archive looked and
+  found nothing" from "nobody has examined this". A populated-but-uncited field is
+  kept in `unattestedValue` rather than discarded, without ever claiming evidence.
+
+The adapter never applies a rendering convention on its own. Applying one is the
+caller's explicit opt-in.
+
+### 12.4 Built pages
+
+| Route | What it is |
+|---|---|
+| `/` | The opening scene: one real object, one claim taken from the record's own note, its confidence, its source |
+| `/models/:modelId/variants/:variantId` | The object on the plinth — §2.7 of `docs/design/EXHIBITION_UX.md`, built |
+| `/conventions` | The convention index: every rendering default, its reach, and what it asserts nothing about |
+
+The landing page's featured object rotates over eight curated ids, each measured
+to carry at least seven attestations and a tier 1 or 2 source. Picking at random
+over all 511 would eventually land on a stub with nothing attested, which would
+undercut the page's whole argument.
+
+### 12.5 Three copies of the same six colours
+
+The standard scheme's hexes appear in `conventions/rendering-conventions.yml`,
+`web/src/three/types.ts` and `web/src/data/adapter.ts`. The registry is
+authoritative; the other two are mirrors, and **both are held to it by tests**.
+
+This is not hypothetical tidiness. The three.js copy had already drifted — it
+carried `#FFFFFF` where the registry says `#F5F5F0`, and a bevel of 0.08/0.01
+against the registry's 0.055/0.012. The registry's `visitor_disclosure` text is
+shown on screen beside the object, so a drifted value means the words a visitor
+reads no longer describe what they are looking at.
+
+### 12.6 Performance
+
+three.js is 542 kB (135 kB gzipped) — more than the rest of the exhibition
+combined — and sits behind `React.lazy`, so the wall label renders before the
+renderer loads rather than after it. Initial JS is 77 kB gzipped.
+
+The renderer draws **on demand**: once on mount, again on resize, and in a loop
+only while the camera is actually transitioning. A permanent animation loop on a
+static object costs a laptop its battery for nothing.
+
+Records load per entity file and are memoised by bundle URL, with the promise
+cached so concurrent callers share one request. No page pulls all 269 models or
+all 511 variants to show one object.
+
+### 12.7 Responsive and accessible
+
+Verified at 390, 768 and 1440 px: zero horizontal overflow on every built page.
+
+Below 52rem the specification table becomes labelled blocks rather than scrolling
+sideways, because a confidence column a visitor has to scroll to find is a
+confidence column that gets missed — and that column is the one thing these pages
+cannot afford to lose.
+
+Every confidence badge carries a **word** — Confirmed, Probable, Uncertain,
+Disputed, Not researched, Researched-not-found, Rendering convention — so none of
+the meaning depends on colour. Glyphs additionally vary by fill and stroke style,
+and a convention uses a different shape family entirely. The 3D object is exposed
+as `role="img"` with a label stating that it is drawn rather than photographed,
+and a WebGL failure renders a text fallback that says plainly that nothing is
+lost from the record.
+
+`prefers-reduced-motion` collapses the duration tokens themselves, so any rule
+written against them is safe without a per-component media query.
+
+### 12.8 Known gaps
+
+- The cubie bevels catch the key light, so the seams read as a fine bright dashed
+  line. A lighting interaction with placeholder geometry; fixing it properly means
+  body-colouring the chamfer rather than face-colouring it.
+- `/makers`, `/families`, `/mechanism`, `/lineage`, `/timeline`, `/edges`,
+  `/case`, `/unknowns`, `/search` and the evidence drawer are specified in
+  `docs/design/EXHIBITION_UX.md` and **not built**.
+- `dist/public` still contains 0 records. That is Blocker A's deliberate outcome,
+  not a defect: promoting records out of `stub` is a curator's decision.

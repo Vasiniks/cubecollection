@@ -108,6 +108,22 @@ test('the conventionId resolves to a real entry in the published registry', { sk
     `${STANDARD_FACE_COLOR_CONVENTION_ID} is not in the registry: ${ids.join(', ')}`);
 });
 
+test('the adapter\'s scheme colours match the published registry', { skip: !existsSync(join(BUNDLE, 'convention.json')) }, () => {
+  // The adapter mirrors the registry's six hexes, as does web/src/three/types.ts.
+  // Three copies of the same six values is three chances to drift, and drift here
+  // means the cube on screen stops being the cube the disclosure describes. This
+  // has already happened once, in the three.js copy.
+  const registry = JSON.parse(readFileSync(join(BUNDLE, 'convention.json'), 'utf8')) as
+    { id: string; value: Record<string, { hex: string }> }[];
+  const declared = registry.find((c) => c.id === STANDARD_FACE_COLOR_CONVENTION_ID)?.value;
+  assert.ok(declared, 'the face-colour convention is missing from the registry');
+  const scheme = standardFaceColorConvention();
+  for (const face of FACES) {
+    assert.equal(scheme[face].value.toUpperCase(), declared[face]?.hex?.toUpperCase(),
+      `face ${face} differs between the adapter and the registry`);
+  }
+});
+
 // ---------------------------------------------------------------- tiers
 
 test('an explicit per-source tier beats its kind default', () => {
