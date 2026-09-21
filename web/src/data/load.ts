@@ -1,7 +1,5 @@
 // CubeCollection — bundle loader.
 //
-// SKELETON. See README.md "Lazy loading (load.ts)" for the chunking strategy this fills in.
-//
 // Loads a built bundle (dist/preview or dist/public — this module doesn't care which; it takes
 // a base URL) with lazy, memoised, per-entity-file access, so a page that only needs one
 // manufacturer's models does not pull all 269 models or all 511 variants into memory.
@@ -35,63 +33,103 @@ export interface Bundle {
   fetchImpl?: typeof fetch;
 }
 
+// ---------------------------------------------------------------------------------------------
+// Memoisation. Keyed by bundle base URL and file name, so two Bundle objects over the same URL
+// share one in-flight request. The PROMISE is cached, not the result: concurrent callers during
+// the first fetch get the same request rather than racing several.
+// ---------------------------------------------------------------------------------------------
+
+const cache = new Map<string, Promise<unknown>>();
+
+const key = (bundle: Bundle, file: string) => `${bundle.baseUrl}::${file}`;
+
+function fetchJson<T>(bundle: Bundle, file: string): Promise<T> {
+  const k = key(bundle, file);
+  const hit = cache.get(k);
+  if (hit) return hit as Promise<T>;
+  const doFetch = bundle.fetchImpl ?? globalThis.fetch;
+  const p = doFetch(`${bundle.baseUrl}/${file}`).then((res) => {
+    if (!res.ok) {
+      // Evict, so a transient failure does not poison every later read.
+      cache.delete(k);
+      throw new Error(`bundle: ${file} could not be read (${res.status}).`);
+    }
+    return res.json() as Promise<T>;
+  }).catch((e: unknown) => {
+    cache.delete(k);
+    throw e;
+  });
+  cache.set(k, p);
+  return p as Promise<T>;
+}
+
 export function createBundle(baseUrl: string, fetchImpl?: typeof fetch): Bundle {
-  throw new Error('not implemented');
+  // Trailing slash stripped so the cache key for one bundle is stable whether a
+  // caller passed '/bundle' or '/bundle/'.
+  const base = baseUrl.replace(/\/+$/, '');
+  return fetchImpl ? { baseUrl: base, fetchImpl } : { baseUrl: base };
 }
 
 export async function loadMeta(bundle: Bundle): Promise<BundleMeta> {
-  throw new Error('not implemented');
+  return fetchJson<BundleMeta>(bundle, 'meta.json');
 }
 
 export async function loadIndex(bundle: Bundle, name: IndexFile): Promise<unknown> {
-  throw new Error('not implemented');
+  return fetchJson<unknown>(bundle, `index/${name}.json`);
 }
 
 export async function loadManufacturers(bundle: Bundle): Promise<RawManufacturer[]> {
-  throw new Error('not implemented');
+  return fetchJson<RawManufacturer[]>(bundle, 'manufacturer.json');
 }
 
 export async function loadFamilies(bundle: Bundle): Promise<RawFamily[]> {
-  throw new Error('not implemented');
+  return fetchJson<RawFamily[]>(bundle, 'family.json');
 }
 
 export async function loadModels(bundle: Bundle): Promise<RawModel[]> {
-  throw new Error('not implemented');
+  return fetchJson<RawModel[]>(bundle, 'model.json');
 }
 
 export async function loadVariants(bundle: Bundle): Promise<RawVariant[]> {
-  throw new Error('not implemented');
+  return fetchJson<RawVariant[]>(bundle, 'variant.json');
 }
 
 export async function loadSources(bundle: Bundle): Promise<RawSource[]> {
-  throw new Error('not implemented');
+  return fetchJson<RawSource[]>(bundle, 'source.json');
 }
 
 // ---------------------------------------------------------------------------------------------
-// Narrow accessors — combine an index file with a memoised entity-file fetch.
+// Narrow accessors
 // ---------------------------------------------------------------------------------------------
 
 export async function getManufacturer(bundle: Bundle, id: string): Promise<RawManufacturer | undefined> {
-  throw new Error('not implemented');
+  return (await loadManufacturers(bundle)).find((m) => m.id === id);
 }
 
 export async function getModelsForManufacturer(bundle: Bundle, manufacturerId: string): Promise<RawModel[]> {
-  throw new Error('not implemented');
+  return (await loadModels(bundle)).filter((m) => m.manufacturer_id === manufacturerId);
 }
 
 export async function getVariantsForModel(bundle: Bundle, modelId: string): Promise<RawVariant[]> {
-  throw new Error('not implemented');
+  return (await loadVariants(bundle)).filter((v) => v.model_id === modelId);
 }
 
 export async function getModel(bundle: Bundle, id: string): Promise<RawModel | undefined> {
-  throw new Error('not implemented');
+  return (await loadModels(bundle)).find((m) => m.id === id);
 }
 
 export async function getSourcesByIds(bundle: Bundle, ids: Iterable<string>): Promise<Map<string, RawSource>> {
-  throw new Error('not implemented');
+  const want = new Set(ids);
+  const out = new Map<string, RawSource>();
+  if (want.size === 0) return out;
+  for (const s of await loadSources(bundle)) {
+    if (want.has(s.id)) out.set(s.id, s);
+  }
+  return out;
 }
 
 /** Clears every memoised fetch for a bundle. Test-only escape hatch; the app never needs it. */
 export function _clearCache(bundle: Bundle): void {
-  throw new Error('not implemented');
+  const prefix = `${bundle.baseUrl}::`;
+  for (const k of [...cache.keys()]) if (k.startsWith(prefix)) cache.delete(k);
 }
