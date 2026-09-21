@@ -211,6 +211,7 @@ export interface RenderDiagnostics {
 
 export interface ManufacturerView {
   id: string;
+  kind?: string;
   status: RecordStatus;
   scopeClass?: ScopeClass;
   name: Value<string>;

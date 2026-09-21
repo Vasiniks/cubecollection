@@ -64,6 +64,10 @@ export interface RawSource {
 export interface RawManufacturer {
   id: string;
   entity: 'manufacturer';
+  /** vocab/manufacturer-kinds.yml. A `service` with no models is a structural
+   *  fact, not a research gap — its work appears as variants on other makers'
+   *  models — so the exhibition must be able to tell the two apart. */
+  kind?: string;
   name?: string;
   native_name?: string;
   country?: string;
@@ -440,6 +444,7 @@ export function adaptManufacturer(
     evidenceTrail: buildEvidenceTrail(allCitedIds(att), opts.sourcesById ?? new Map()),
     curatorial: { makerDepth: classifyMakerDepth(opts.modelCount) },
   };
+  if (raw.kind !== undefined) view.kind = raw.kind;
   if (raw.scope_class !== undefined) view.scopeClass = raw.scope_class;
   if (raw.website !== undefined) view.website = raw.website;
   return view;

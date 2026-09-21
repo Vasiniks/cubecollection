@@ -21,7 +21,21 @@ export interface BundleMeta {
 }
 
 export type EntityFile = 'manufacturer' | 'family' | 'model' | 'variant' | 'source' | 'person' | 'event';
-export type IndexFile = 'by-manufacturer' | 'by-family' | 'by-model' | 'chronology';
+export type IndexFile = 'by-manufacturer' | 'by-family' | 'by-model' | 'chronology' | 'withheld';
+
+/**
+ * What the build kept out of this bundle, per manufacturer, and under which rule.
+ * Counts only — no withheld record's content is published. It exists so a hole in
+ * the bundle cannot be mistaken for a hole in the research.
+ */
+export interface Withheld {
+  by_scope: Record<string, Record<string, number>>;
+  by_status: Record<string, Record<string, number>>;
+}
+
+export async function loadWithheld(bundle: Bundle): Promise<Withheld> {
+  return fetchJson<Withheld>(bundle, 'index/withheld.json');
+}
 
 /**
  * A bundle to read from. `baseUrl` points at a served `dist/preview/` or `dist/public/`

@@ -228,6 +228,31 @@ write(PUBLIC_BUNDLE, 'index/by-manufacturer.json', groupIndex('manufacturer_id')
 write(PUBLIC_BUNDLE, 'index/by-family.json', groupIndex('family_id'));
 write(PUBLIC_BUNDLE, 'index/by-model.json', groupIndex('model_id'));
 
+// ---------------------------------------------------------------- withheld counts
+//
+// A record kept out of the public bundle leaves a hole the exhibition cannot
+// read, and an unreadable hole gets described wrongly. A maker whose only model
+// is scope_class reference_only looks, from the bundle alone, exactly like a
+// maker nobody has researched — and the exhibition would then tell a visitor a
+// research gap exists where the truth is a deliberate scope decision.
+//
+// So the build states what it withheld, and why, as counts. No withheld record's
+// content is emitted: only that it exists and which rule excluded it.
+const withheld = { by_scope: {}, by_status: {} };
+for (const { entity, doc } of privateRecords) {
+  if (entity === 'specimen') continue;
+  const owner = doc.manufacturer_id ?? (entity === 'manufacturer' ? doc.id : null);
+  if (!owner) continue;
+  if (doc.scope_class && !PUBLIC_SCOPE.has(doc.scope_class)) {
+    ((withheld.by_scope[owner] ??= {})[entity] ??= 0);
+    withheld.by_scope[owner][entity] += 1;
+  } else if (!PUBLIC_STATUS.includes(doc.status)) {
+    ((withheld.by_status[owner] ??= {})[entity] ??= 0);
+    withheld.by_status[owner][entity] += 1;
+  }
+}
+write(PUBLIC_BUNDLE, 'index/withheld.json', withheld);
+
 // ---------------------------------------------------------------- rendering conventions
 //
 // Conventions ship in a file of their own, never merged into a record. The
@@ -258,6 +283,7 @@ const meta = {
     'dist/public excludes every specimen record, every archivist_paid price, every private field, and every image whose rights are unclear.',
     'No valuation and no numeric rarity score exist anywhere in this bundle, by design.',
     'representation.procedural.renderable is false throughout: geometry profiles are reserved and none exist in this phase.',
+    'index/withheld.json states, per manufacturer, how many records this build kept out and under which rule. It exists so a hole in the bundle cannot be mistaken by a consumer for a hole in the research.',
     'convention.json holds RENDERING CONVENTIONS, not records. Each one is a visual default the exhibition chose because the archive documents nothing; each declares what it asserts nothing about and the words a visitor must be shown. A consumer that merges a convention into a record field without carrying its basis has broken the contract this bundle exists to keep.',
     ...(MODE === 'research-preview' ? [
       'RESEARCH PREVIEW — NOT A PUBLICATION. This bundle deliberately includes records whose status is stub, drafted or sourced. Their presence here asserts that they are RESEARCHED, not that a curator has approved them for display. No record status was changed to produce it.',

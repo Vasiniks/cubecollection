@@ -116,9 +116,12 @@ export function LandingPage() {
         <h2 id="ways-h" className="landing__ways-title">Three ways in</h2>
         <ul className="landing__ways-list">
           <li>
-            <a href={to} onClick={(e) => { e.preventDefault(); navigate(to); }}>
+            <a href={href({ name: 'makers' })}
+               onClick={(e) => { e.preventDefault(); navigate(href({ name: 'makers' })); }}>
               <span className="landing__way-name">Browse</span>
-              <span className="landing__way-note">Wander the collection object by object.</span>
+              <span className="landing__way-note">
+                Start with the makers, ordered by how much of each one is actually known.
+              </span>
             </a>
           </li>
           <li>

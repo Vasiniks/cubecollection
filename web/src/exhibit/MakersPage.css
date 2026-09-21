@@ -1,0 +1,134 @@
+/*
+ * The roster. Three groups by depth of coverage, never one grid of 54 equal
+ * tiles — equal tiles would say the archive knows these makers equally well,
+ * and it does not. The tier headings are the honesty mechanism, not decoration.
+ */
+
+.makers {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-5) var(--space-11);
+}
+
+.makers__return {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  margin-bottom: var(--space-6);
+}
+
+.makers__return a::before { content: "\2190"; margin-right: var(--space-2); }
+
+.makers__title {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-800), 6vw, var(--text-950));
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-regular);
+  margin: 0 0 var(--space-5);
+}
+
+.makers__lede {
+  font-size: var(--text-500);
+  line-height: var(--leading-relaxed);
+  color: var(--ink-700);
+  margin: 0 0 var(--space-6);
+}
+
+/* Curatorial framing gets its own visual register — the cool slate reserved for
+   things the exhibition says rather than things the archive attests. */
+.makers__curatorial-note {
+  border-left: 3px solid var(--evidence-convention);
+  padding-left: var(--space-5);
+  margin: 0 0 var(--space-9);
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+}
+
+.makers__curatorial-note code {
+  background: none;
+  padding: 0;
+  font-size: 0.95em;
+}
+
+/* ---------------------------------------------------------------- tiers */
+
+.tier { margin-bottom: var(--space-9); }
+
+.tier__title {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  font-family: var(--font-display);
+  font-size: var(--text-700);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-snug);
+  border-top: 1px solid var(--ink-300);
+  padding-top: var(--space-4);
+  margin: 0 0 var(--space-3);
+}
+
+.tier__count {
+  font-family: var(--font-mono);
+  font-size: var(--text-300);
+  color: var(--ink-500);
+}
+
+.tier__note {
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+  margin: 0 0 var(--space-6);
+}
+
+.tier__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-5) var(--space-6);
+}
+
+/* A deep maker gets room; a thin maker gets a line. The layout itself carries
+   the difference, so the tiers cannot be skimmed as three identical grids. */
+.tier__list[data-tier="deep"] { grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); }
+.tier__list[data-tier="mid"]  { grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+.tier__list[data-tier="thin"] { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+
+.maker { display: flex; flex-direction: column; gap: var(--space-1); }
+
+.tier__list[data-tier="deep"] .maker__name {
+  font-family: var(--font-display);
+  font-size: var(--text-600);
+  line-height: var(--leading-snug);
+}
+
+.tier__list[data-tier="mid"] .maker__name { font-size: var(--text-500); }
+.tier__list[data-tier="thin"] .maker__name { font-size: var(--text-400); }
+
+.maker__count {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+/* A maker with no models must never read as a card that simply failed to load
+   its gallery. The reason is printed, at body contrast, every time. */
+.maker__zero {
+  font-size: var(--text-300);
+  line-height: var(--leading-relaxed);
+  color: var(--ink-700);
+  border-left: 2px solid var(--confidence-unknown);
+  padding-left: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+@media (max-width: 52rem) {
+  .makers { padding: var(--space-6) var(--space-4) var(--space-9); }
+  .tier__list,
+  .tier__list[data-tier="deep"],
+  .tier__list[data-tier="mid"],
+  .tier__list[data-tier="thin"] { grid-template-columns: minmax(0, 1fr); }
+}
