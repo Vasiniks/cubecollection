@@ -577,3 +577,48 @@ happen to agree today), but there is no compiler backstop if they diverge.
   forbids binding a listening socket in this sandbox), so no live rendering
   of `VariantPage`/`LandingPage`/`ConventionsPage` against a served bundle
   was observed — only their logic, traced and unit-tested.
+
+---
+
+## Resolution — what was done about these findings
+
+Appended by the main session on 2026-09-21, after working through the report.
+Every item below was independently reproduced before being changed.
+
+### Fixed
+
+| Finding | Fix |
+|---|---|
+| `resolveCubeVisualSpec` applied the standard scheme to a face documented by `color_name` only, under a disclosure saying the archive documents nothing | A face the archive named but never normalised is no longer silent: it renders in the unknown treatment and is not counted as a convention. Test written first and watched to fail (`web/src/three/faces.test.ts`). |
+| `VariantPage` hardcoded 3 of 6 conventions as always in force | All six are gated on the record's actual state, mirroring the registry's `when_absent` rule. |
+| `facesAgree()` collapsed faces differing in `note` / `sourceIds` / `unattestedValue` / `disputed[]` | Compares the whole value now, not a chosen subset of fields. |
+| Adapter looked up face attestations at `/color_normalized` even when the value came from `/color_name` | The pointer follows the value's actual origin. |
+| `CubeGeometry.ts` carried a second `"50 of 511"` | Corrected to 227, the measured figure. |
+| §11.2 claimed C1–C5 were "control-tested by mutation" with no automated coverage | All five are now control-tested in `scripts/selftest.mjs`, inside `npm run check`. §11.2 rewritten, and the previous overclaim named rather than quietly replaced. |
+| `as never` casts bridged two raw-record shapes and suppressed a real `tsc` error | `web/src/exhibit/bridge.ts` narrows at the boundary; an unrecognised vocabulary value becomes `unknown` rather than passing through. |
+| No 404 route state | Added, with its own copy — a bad URL is a different claim from a missing record — and three ways out. Adding it made the leftover debug shell provably unreachable, so it was removed. |
+| `adapter.ts::STANDARD_FACE_COLORS` unguarded | Guarded by a test against the published registry before this review landed; control-tested by drifting the adapter's white. |
+
+### Accepted, not changed
+
+- **Per-face convention application vs record-level `affected_records` accounting.**
+  Real and correctly identified. The registry counts records; the renderer decides
+  per face. Today they agree because no face is documented anywhere, so the
+  divergence is latent. Reconciling it properly means deciding whether a
+  partially-documented variant is "covered" by the face-colour convention at all,
+  which is a curatorial question rather than a bug to patch. Left open and named
+  here rather than settled by preference.
+- **`standardFaceColorConvention()` unused by any page.** It is deliberate opt-in
+  API — the adapter never applies a convention on its own, and this is how a
+  future curatorial layer would ask for one. Now guarded by a test, so the
+  drift risk the finding identified is closed even though the function stays.
+- **Remaining dead code** (`provenanceLabel()`, discarded `GeometryInputs`
+  provenance-kind fields, an unreachable branch in `materials.ts`). Harmless,
+  and not worth churning lane C's modules for in this pass.
+
+### Not verifiable by that lane
+
+The review could not run a browser. Everything it marked "could not verify" on
+those grounds has since been exercised in Chrome by the main session: the object
+renders, the convention gating behaves, the 404 resolves, and there is no
+horizontal overflow at 390, 768 or 1440 px.

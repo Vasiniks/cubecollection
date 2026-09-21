@@ -360,9 +360,14 @@ and `if_removed` — reversibility is a precondition of adoption.
 scheme is drawn, and `cv-face-colours-wca-standard` carries the words that stop
 a visitor believing the archive sourced it.
 
-Enforced by `scripts/validate-conventions.mjs` rules C1–C5, all control-tested
-by mutation. Full rationale and the consumer contract:
-**`docs/RENDERING_CONVENTIONS.md`**.
+Enforced by `scripts/validate-conventions.mjs` rules C1–C5. All five are
+control-tested by mutation **in `scripts/selftest.mjs`**, which runs as part of
+`npm run check`: each case mutates the registry, asserts the named rule fires,
+and restores the file. An earlier version of this sentence claimed the control
+testing without automating it — true of a hand-run session, false as a standing
+property of the repository, and caught by the adversarial review in
+`research/qc/PHASE3_ARCHITECTURE_REVIEW.md`. Full rationale and the consumer
+contract: **`docs/RENDERING_CONVENTIONS.md`**.
 
 ### 11.3 The contract this places on everything downstream
 
