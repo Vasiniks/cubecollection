@@ -997,8 +997,168 @@ one component at a time:
 
 ## 6. Microcopy
 
-*Skeleton.* The actual strings: confidence labels, unknown states, the rendering-convention
-disclosure, dispute framing. Museum voice — precise, unhedged, never apologetic, never salesy.
+The actual strings. Where a string is already shipped in `web/src/`, it is quoted verbatim and
+marked **[shipped]** — this document does not get to write a parallel version of copy that already
+exists in code, and neither does the next lane. Where a string is specified here for a page or state
+that is not yet built, it is marked **[specified]**. Where the registry's own `visitor_disclosure`
+is the authoritative wording, it is quoted from `conventions/rendering-conventions.yml` directly,
+per this lane's mandate — no paraphrase is offered beside it.
+
+### 6.1 The six confidence values
+
+Badge labels, **[shipped]**, `web/src/exhibit/values.tsx` `CONFIDENCE_LABEL`:
+
+> Confirmed · Probable · Reported · Uncertain · Disputed · Unknown
+
+One-line plain-language glosses, **[specified]**, for `/case`'s tier/confidence vocabulary panel
+(§2.12) — grounded in `vocab/confidence.yml`'s own definitions, not a new taxonomy:
+
+- **Confirmed** — "A tier 1 source states this directly, or two independent tier 2 sources agree."
+- **Probable** — "One tier 2 source states this, and nothing contradicts it."
+- **Reported** — "A tier 3 source states this — plausible and uncontradicted, and nothing stronger
+  was found."
+- **Uncertain** — "The evidence is weak, single-sourced, or sits oddly with what else is known."
+- **Disputed** — "Credible sources disagree. Both readings are kept here; neither is chosen for
+  you."
+- **Unknown** — "This was searched for and not found. That is not the same as not having been
+  searched — see below."
+
+### 6.2 The two unknown kinds
+
+Badge labels, **[shipped]**, `values.tsx` `BasisBadge`:
+
+> Researched, not found.
+> Not researched.
+
+Longer form, **[specified]**, for the note column when more room exists (§5.1's rules 2–3 vs.
+rule 1 respectively):
+
+- "Researched, not found." → *"This was looked for. No source states it, in either direction."*
+- "Not researched." → *"No source has been checked for this yet."*
+
+The unattested-value pattern (§5.3), **[specified]** — the one microcopy gap this lane is leaving
+named rather than silently unfixed:
+
+> *"Named in the archive's own record; no source was cited for this specific detail."*
+
+### 6.3 Rendering conventions — the registry's own words, quoted
+
+Per this lane's mandate: the registry is authoritative. These six are `visitor_disclosure`, copied
+verbatim from `conventions/rendering-conventions.yml` — **[shipped]**, rendered by
+`VariantPage.tsx`'s convention list and `ConventionsPage.tsx` without alteration:
+
+- **`cv-face-colours-wca-standard`** — "Rendering convention. The archive does not document this
+  cube's colours. The standard scheme is drawn so the object can be shown at all."
+- **`cv-body-plastic-neutral`** — "Rendering convention. Body colour is not documented for this
+  cube; a neutral material is shown."
+- **`cv-logo-omitted`** — "Rendering convention. Logo placement is not documented for any cube in
+  this archive, so no logo is drawn on any of them."
+- **`cv-geometry-generic-3x3`** — "Rendering convention. No cube in this archive has a documented
+  piece geometry. A generic shell stands in for every one of them."
+- **`cv-size-56mm-fallback`** — "Rendering convention. This cube's size is not documented; it is
+  drawn at 56 mm so it can sit beside the others. Do not read its scale as a fact."
+- **`cv-surface-stickerless-fallback`** — "Rendering convention. This cube's surface type is not
+  documented; a stickerless finish is shown."
+
+The badge label beside each, **[shipped]**: "Rendering convention" (never "Convention" alone —
+the full noun phrase disambiguates from a museum's other, ordinary sense of "convention" as in
+"gathering").
+
+### 6.4 Dispute framing
+
+Real, already-specified strings, consolidated here as the dispute-copy pattern for any future page
+to match rather than reinvent:
+
+- GAN's founding record, **[specified, §2.3]** — "DISPUTED ⓘ — four candidate events, not one
+  error." The parenthetical is load-bearing: it heads off the reading "the archive doesn't know
+  when GAN was founded" in favour of the true one, "the archive knows four candidate answers and
+  declines to pick."
+- A flagged-but-unresolved chain link, **[specified, §2.4]**, GAN13: "GAN13: seen in one 2025 maker
+  listing, absent from a later one — flagged, not resolved." Pattern: state the two observations
+  plainly, then name what has *not* happened to them (resolution), rather than implying one is more
+  likely correct.
+- A maker's own deliberate gap, **[specified, §2.4]**, MoYu WeiLong: "V3–V8 never existed" — printed
+  directly on the succession chain, not in a footnote, because this is the one dispute-adjacent case
+  that isn't a dispute at all: it is a documented fact about the maker's own numbering, and treating
+  it with the same hedging language as a real evidentiary conflict would misrepresent it as less
+  certain than it is.
+- The refusal case, **[specified, §2.12]**, `gan-354-m`: the page states the rejected reading
+  ("Added: 2018-09-11," a catalogue-migration artefact appearing verbatim 29 times across 22
+  sources and 13 unrelated brands) and the retained one (`uncertain`) side by side, plus the open
+  question it raised, by name — ledger item **P4-7**, "whether such a stamp may be used as a bound
+  at all."
+
+### 6.5 Record status vs. confidence — kept in different words on purpose
+
+Per §1.0, these are different axes and must never share vocabulary. Record status, **[specified]**,
+plain-language per value (`vocab/record-status.yml`, museum-voice gloss):
+
+- **stub** — "Researched, not yet reviewed by a curator." **[shipped]**, `VariantPage.tsx`'s exact
+  status line for the 527 variants and most models currently at this status.
+- **drafted** — "Under active research."
+- **sourced** — "Cited to at least one source; not yet reviewed."
+- **reviewed** — "Checked by a curator against its sources."
+- **published** — "Reviewed and released." (Not currently reachable: `meta.json`'s own
+  `research-preview` bundle emits zero records at this status.)
+- **disputed** (as a *record* status, not a field confidence) — "The record itself, not just one of
+  its fields, is contested."
+- **deprecated** — "Superseded or withdrawn; kept for the archive's own history."
+
+### 6.6 Empty states
+
+- Search, no match — **[shipped, §2.14]**: "No record matches '_x_' — try a manufacturer or model
+  name; aliases are searched too."
+- A record with no lead claim — **[shipped]**, `LandingPage.tsx`: "This record carries no
+  adjudicated claim yet. That is itself the finding."
+- A variant with no cited evidence — **[shipped]**, `VariantPage.tsx`: "No source is cited on this
+  record or the model it inherits from."
+- A manufacturer whose zero models is structural (§5.5) — **[specified]**, `kind: service`: *"[Name]
+  is a modification service. Its work is documented on the models and variants it modifies."*, with
+  a direct link to at least one (`picube` → `gan-flagship-16--picube-20-magnet-ball-core-mod`).
+- A manufacturer whose zero models is a sub-brand fact (§5.5) — **[specified]**, `kind: sub_brand`:
+  *"[Name] is recorded as a sub-brand. Its models, if any are documented, may be listed under its
+  parent."*
+- A manufacturer whose zero models is a real gap (§5.5) — **[specified]**, `kind: manufacturer`:
+  *"No models documented yet."* — never "not found," which in this vocabulary means *searched*; this
+  case has not been.
+- A family with only one model (§2.4) — no string needed: the chain itself renders as a single node
+  with no arrows, which is the honest visual, not a caption explaining the absence of a chain.
+
+### 6.7 Loading states
+
+Every one currently shipped skips a spinner and skips shimmer (`VISUAL_LANGUAGE.md` §5's banned-motion
+table: "a shimmering placeholder implies content is *about* to resolve into something specific" —
+false, here, more often than it's true) in favour of a short, plain present-participle line:
+
+- `LandingPage.tsx` — **[shipped]**: "Opening the archive…"
+- `VariantPage.tsx` — **[shipped]**: "Opening the case…"
+- `ConventionsPage.tsx` — **[shipped]**: "Reading the registry…"
+- `LazyCube.tsx`'s plinth, while the 3D engine chunk loads — **[shipped]**: "Placing the object…"
+- `App.tsx`, while `meta.json` itself is still loading, before any page can render — **[shipped]**:
+  "Opening the archive…" (shared with Landing's own loading line, since at this point in the
+  lifecycle no page has been selected yet).
+
+Pattern for pages not yet built, **[specified]**: present participle, object of the verb is the
+*thing being opened*, never the mechanism ("Opening the archive…", not "Fetching data…" or "Loading
+manufacturers.json…") — a visitor is waiting on a door, not a network request.
+
+### 6.8 Error states
+
+**This is a real, named gap, not a polished area.** Every error boundary shipped today
+(`LandingPage.tsx`, `VariantPage.tsx`, `ConventionsPage.tsx`) renders the caught JavaScript error's
+own `.message` verbatim and nothing else — technically honest (nothing is hidden) but not museum
+voice, since a raw `Error: No variant gan-flagship-16--nonexistent in this bundle.` string was
+written for a developer's console, not a visitor's eye. The rule this section proposes, **[specified]**,
+consistent with §6's "never apologetic, never salesy" constraint (no "Oops!", no "Something went
+wrong," no exclamation mark anywhere):
+
+> *"This [record / registry / page] could not be opened. [underlying detail, unedited]."*
+
+e.g. for the one error condition that can currently occur in the shipped code (`VariantPage.tsx`,
+a variant id absent from the bundle): *"This variant could not be opened. No variant
+gan-flagship-16--nonexistent in this bundle."* — the museum states the failure as a fact about the
+archive's own retrieval, then discloses the technical detail rather than swallowing it, the same
+posture the rest of this document takes toward every other kind of gap.
 
 ---
 
@@ -1036,7 +1196,7 @@ Tracked here so a killed session leaves an honest state. Empty once §1–9 are 
 - [x] §3 navigation model
 - [x] §4 entry paths made concrete
 - [x] §5 unknown experience
-- [ ] §6 microcopy
+- [x] §6 microcopy
 - [ ] §7 responsive behaviour
 - [ ] §8 accessibility
 - [ ] §9 vertical slice full spec
