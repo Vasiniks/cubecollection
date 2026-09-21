@@ -805,12 +805,193 @@ than the wandering §4.1 promises.
 
 ## 5. The `unknown` experience
 
-*Skeleton.* The hardest part. Distinguishes, on screen, three things the archive's own vocabulary
-already distinguishes in data — `unknown` (searched, not found), absent (not yet researched), and
-a declared rendering convention (§10.4 of the architecture doc, the standard face-colour scheme)
-— using the real blocker set computed by `scripts/build.mjs` (`renderBlockers`): face colours
-undocumented on all 511 public variants, logo placement on all 511, geometry profile on all 511,
-body plastic colour on 489 of 511.
+This is the section the rest of the document has been building toward. `docs/RENDERING_CONVENTIONS.md`
+§1 puts the scale of it plainly: measured against all 527 archive variants on 2026-09-21, face
+colour is documented on **0**, logo placement on **0**, geometry profile on **0**, body plastic
+colour on **22** (505 undocumented), surface application on **122** (405 undocumented), size on
+**236** (291 undocumented). A page that renders this archive is, on almost every field of almost
+every object, rendering an absence — and the entire argument of this section is that an absence
+handled honestly is still a finding, and a finding is not a broken page.
+
+### 5.1 The rule, stated exactly
+
+`web/src/data/types.ts` and `web/src/data/adapter.ts` (`attestedValue()`) already implement the
+rule; this is that rule in words, because every future page must implement it the same way rather
+than reinventing it per component. For any one field pointer (e.g. `/colorway/body/plastic_color_name`
+on a specific variant), the adapter asks, in this order:
+
+1. **Is there an attestation entry at this pointer at all?** If not — the archive never cited
+   anything here — the field is `UnknownValue { searched: false }`: **not researched**. This is
+   silence, not a finding.
+2. **If there is an attestation, does it carry `confidence: unknown`?** If so, the field is
+   `UnknownValue { searched: true }`: **researched, not found**. Someone looked, cited nothing
+   positive, and said so. This is itself a piece of archival work, not a gap in it.
+3. **If there is an attestation but the field's own value is empty** (an attestation can exist
+   for a pointer whose value is `null`), the field is also `UnknownValue { searched: true }` —
+   the archive attested to the absence, which reads the same as case 2 on screen.
+4. **Otherwise** — an attestation exists, carries a confidence other than `unknown`, and the field
+   is populated — the field is `SourceBackedValue`, at whatever confidence was actually recorded
+   (never invented, never raised: an attestation with no confidence field is reported at
+   `uncertain`, the weakest value that still means "attested," rather than promoted).
+
+A **rendering convention** is not a fifth branch of this rule. It is a separate, later, opt-in step
+that only ever fires *after* the rule above has already returned `unknown` for one of the six
+gap-defined pointers `conventions/rendering-conventions.yml` lists (`when_absent`), and it never
+overrides a `source-backed` value at any confidence — `docs/RENDERING_CONVENTIONS.md` §3 states this
+as precedence ("the archive always wins") and `scripts/validate-conventions.mjs` enforces it as a
+build rule, not a UI convention. Concretely in the shipped code: `resolveCubeVisualSpec()` and
+`VariantPage.tsx`'s `inForce` filter only ever apply `cv-body-plastic-neutral` when
+`isUnknown(view.colorway.body.plasticColor)` is already true — the convention fills a gap the rule
+above already found, it does not create one.
+
+So three states reach a page, and they must never be visually or verbally interchangeable:
+
+| State | Why it happened | What produced it |
+|---|---|---|
+| **Not researched** | Nobody has looked yet, or (per `RESEARCH_FINAL_HANDOFF.md` item 8) it is a known collection-wide gap never logged per record | No attestation entry (rule 1) |
+| **Researched, not found** | Someone looked and found nothing to attest | `confidence: unknown`, or an attested-empty field (rules 2–3) |
+| **Rendering convention** | The archive made no claim, and the exhibition drew something anyway so the object could be shown at all | `conventions/rendering-conventions.yml`, applied only where the rule above already returned unknown |
+
+### 5.2 How the three read on screen
+
+`values.tsx`'s `BasisBadge` already renders exactly these three, in exactly this order of
+precedence (convention checked first, since a convention-eligible pointer that is *also*
+`source-backed` never reaches the convention branch at all — see §5.1's precedence rule):
+
+```
+convention   ⬙  Rendering convention          (cool slate, hatched rotated square — never a circle)
+unknown      ○  Researched, not found          (neutral grey, dashed outline, no fill)
+unknown      ○  Not researched                 (identical glyph — see §5.3 on why the WORDS carry
+                                                 the distinction the glyph does not)
+confirmed…   ●◕◑◌◐  Confirmed / Probable / Reported / Uncertain / Disputed
+                                                 (warm bronze family + rust for disputed — §6 of
+                                                 VISUAL_LANGUAGE.md)
+```
+
+Two design facts do real work here, both already shipped:
+
+**The convention glyph is a different *shape*, not just a different colour** (a hatched, rotated
+square, never a circle) — `VISUAL_LANGUAGE.md` §7's own reasoning: a visitor who has learned "circle
+= the confidence system" still sees, correctly, that the convention badge is not part of that system
+at all, even in greyscale or with a colour-vision deficiency. A colour-only distinction here would
+be exactly the failure this section exists to prevent, because the convention badge sits closest of
+anything in this design system to *looking like evidence*.
+
+**"Researched, not found" and "not researched" share a glyph but never share words.**
+`BasisBadge` renders `value.searched ? 'Researched, not found' : 'Not researched'` as visible text,
+never abbreviated and never behind a tooltip — the two states are visually close (same grey, same
+dashed circle) precisely because they are close in what a visitor should feel about them: neither is
+evidence, and treating one as more alarming than the other would misstate the archive's own
+distinction (a `searched: true` field is *more* work, not less, than a `searched: false` one — the
+absence of a magnifying-glass icon or a "coming soon" label matters here: neither reads as
+provisional).
+
+### 5.3 The fourth pattern: a real value with no attestation at all
+
+§2.7's own two worked examples (`maglev-max-dual-wr-limited-edition`, `amyth-winter-limited-edition`)
+only show the clean cases — a value with a confidence, or a bare `— unknown —` placeholder. The
+adapter's rule 1 (§5.1) produces a case neither example shows: **a field the raw document actually
+populates, with no attestation ever written for that pointer.** This is real, not hypothetical —
+`data/variants/gan/gan-flagship-16/amyth-winter-limited-edition.yml` sets `colorway.scheme: custom`
+in its document body, and its `attestations` block cites `/colorway/designation`,
+`/colorway/body/plastic_color_name`, and `/edition/limited/run_size`, but never `/colorway/scheme`.
+`UnknownValue.unattestedValue` exists exactly for this: the adapter carries `"custom"` through rather
+than discarding it, tagged `basis: 'unknown', searched: false`.
+
+On screen this must read as a fourth, distinct pattern from the three in §5.2 — not a new badge, but
+a specific combination of the existing ones:
+
+```
+ colourway scheme        custom              Not researched     the archive's own document names
+                                              ○                  this value, but no source was ever
+                                                                  cited for it — shown, not sourced
+```
+
+`formatValue()` and `.spec__row[data-basis="unknown"] .spec__value` (`VariantPage.css`) already
+produce this correctly — the value prints in the value column, italicised and at `ink-700` rather
+than `ink-900`, with the "Not researched" badge sitting beside it exactly as it would beside a bare
+`—`. What is thin today is the note column: nothing currently tells a visitor *why* a real word is
+sitting next to "not researched" rather than a dash, and a visitor could reasonably read that
+combination as a bug. The fix is a one-line rule, not a new component: whenever
+`unattestedValue !== undefined`, the note column should read something to the effect of *"named in
+the archive's own record; no source was cited for this specific detail"* — distinguishing it from
+the bare-dash case, where there is nothing to name at all. This is the one place in §5 where the
+built pages are thinner than the rule they implement, and it is a small, named gap rather than a
+structural one.
+
+### 5.4 The aggregate view — `/unknowns`
+
+§2.13 already specifies the layout; this is the rule applied at the scale that page exists to show.
+`/unknowns` opens on the four headline blocker counts from `docs/RENDERING_CONVENTIONS.md` §1 —
+**0 of 527** for face colour, logo placement and geometry profile; **22 of 527** for body plastic
+colour — stated against the **archive's 527**, not the research-preview bundle's 511, and that
+choice is deliberate, not a rounding difference: `rendering-conventions.yml`'s own header explains
+it — "a convention describes a gap in what was researched, and that gap does not change when a
+build filter changes." A gap is a fact about the archive, not about which build filter happens to be
+active this week; showing 511 here would make the headline number drift every time a curation pass
+promotes a record's `status`, for no reason connected to whether that record's face colour is
+documented. Per-manufacturer bars beneath the headline split `unknown` (searched) from absent (not
+searched) using the same rule 1 vs. rules 2–3 distinction as §5.1, reproducing
+`report-coverage.mjs` rule 32's own computation rather than a new one — e.g. GAN: 213 attested / 161
+explicitly `unknown` / 1,456 absent, of 1,830 critical-field slots. A visitor clicking any segment
+filters straight to the underlying model/variant list — the dashboard is required to be a starting
+point for descent, not a terminal chart.
+
+### 5.5 Where the rule extends past a field: roster-level unknown
+
+Everything above is about one field on one record. The same three-way discipline has to survive at
+the *roster* level too, or Browse quietly reintroduces the exact confusion §5 exists to prevent —
+this was flagged directly against §2.2's original text, which claimed "every manufacturer has ≥1
+model by construction." Measured against `data/manufacturers/` and `data/models/`, that is false:
+**12 of 54 manufacturers have zero model records**, and — this is the part that matters — they are
+not one kind of zero:
+
+- **5 are `kind: service`** (`thecubicle`, `speedcubeshop`, `picube`, `saocube`, `cubicle-labs`) —
+  aftermarket modification services and retailers, not model-producing manufacturers at all. Zero
+  models is **permanent and correct**, not a gap: PiCube's own work is fully represented in the
+  archive, just as a *variant* on someone else's model —
+  `gan-flagship-16--picube-20-magnet-ball-core-mod` carries 19 attestations. A roster row reading
+  "0 models" for `picube` without saying why would misstate a structural fact as an unfinished one.
+- **1 is `kind: sub_brand`** (`limcube`) — a different structural case again: its models, if any are
+  ever enumerated, may belong to a parent manufacturer's roster instead, so "0" here is a
+  classification fact, not a research outcome.
+- **6 are `kind: manufacturer` with zero models** (`hellocube`, `lanlan`, `ninja`, `verypuzzle`,
+  `xinlexin`, `zcube`) — and these genuinely **are** research gaps: the manufacturer's identity is
+  established (each has its own record, `status: drafted` or `sourced`) but model enumeration has
+  not been done. This is the roster-level equivalent of `searched: false` — not researched — and it
+  is the only one of the three that should read as an open task rather than a closed fact.
+
+None of the three renders as a thin-maker card (§2.2's third tier: "an archival card, not a
+gallery," which promises *one documented model* — a positive claim these records cannot make).
+`/makers/picube` instead states the structural fact directly (something in the register of *"PiCube
+is a modification service. Its work is documented on the models and variants it modifies —
+see: GAN16 Maglev MAX 20-Magnet Mod →"* rather than an empty gallery shell), `/makers/limcube`
+states the sub-brand fact, and `/makers/zcube` (etc.) states the research gap in the same words
+`/makers/gan`'s founding date does when it is wholly `unknown` (§2.3): *"0 documented models —
+researched, not found"* would be wrong here, since these are `drafted`/`sourced` identity records
+whose model enumeration was never attempted, which is `searched: false` at the roster level, not
+`searched: true` — the correct string is **"No models documented yet."**, not "not found."
+
+### 5.6 What must never happen
+
+Collecting the non-negotiables this section has argued for, so a future page cannot drift from them
+one component at a time:
+
+- **A `searched: false` field must never render identically in wording to a `searched: true` one.**
+  Same glyph is acceptable (§5.2); same words are not.
+- **A convention must never be presented as if it could be evidence**, including by proximity —
+  §5.2's shape rule exists because a hue-only distinction was judged insufficient given how
+  consequential this one is (`VISUAL_LANGUAGE.md` §7).
+- **An unknown value must never be dimmed to the point of being skippable.** `spec__row[data-basis="unknown"]`
+  sits at `ink-700`, independently AA-verified at body size (`VISUAL_LANGUAGE.md` §9) — not `ink-500`
+  or lighter, which would relegate a finding to the visual status of a footnote.
+- **A gap must never be hidden by silently promoting `unknown` to a plausible-looking guess.** This
+  is the entire reason a convention exists as a separate, disclosed layer rather than as an
+  unlabelled default value slipped into the same field a source-backed value would occupy.
+- **A roster-level or aggregate zero must never collapse into one meaning.** §5.5's three-way split
+  is the same discipline as §5.1's field-level rule, applied one level up, and both must be built the
+  same way for the same reason: a zero that could mean three different things is not a finding until
+  the page says which one it is.
 
 ---
 
@@ -854,7 +1035,7 @@ Tracked here so a killed session leaves an honest state. Empty once §1–9 are 
 - [x] §2 page specs — all routes, wireframes
 - [x] §3 navigation model
 - [x] §4 entry paths made concrete
-- [ ] §5 unknown experience
+- [x] §5 unknown experience
 - [ ] §6 microcopy
 - [ ] §7 responsive behaviour
 - [ ] §8 accessibility
