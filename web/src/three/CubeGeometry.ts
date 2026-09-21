@@ -1,6 +1,5 @@
 /**
- * CubeGeometry.ts — SKELETON. Signatures and types are final; bodies are being implemented in a
- * follow-up commit (see the lane's "commit a skeleton first" instruction).
+ * CubeGeometry.ts
  *
  * A parametric 3x3x3 built from real parameters. 26 cubies (8 corner + 12 edge + 6 centre); the
  * 27th, always-hidden core cubie is never built at all, not built-and-hidden.
@@ -29,10 +28,32 @@
  */
 
 import * as THREE from 'three';
-import type { BevelTreatment, CubeVisualSpec, FaceNotation, PieceClass } from './types.js';
-import type { ProvenanceKind } from './provenance.js';
+// three.js ships RoundedBoxGeometry as an "example" module rather than a core export; it is
+// still a normal, typed part of the `three` npm package (see web/package.json's pinned version).
+// COULD NOT VERIFY IN A BROWSER: this import path and RoundedBoxGeometry's constructor signature
+// are asserted from three.js's documented/historical behaviour, not a running build.
+import { RoundedBoxGeometry } from 'three/examples/jsm/geometries/RoundedBoxGeometry.js';
+import { DEFAULT_BEVEL, DEFAULT_SIZE_MM } from './types.js';
+import type { ColorwayApplication, CubeVisualSpec, FaceNotation, PieceClass } from './types.js';
+import { type ProvenanceKind, resolveValue } from './provenance.js';
 
-export type { BevelTreatment };
+/**
+ * A cube's cubie bevel/gap treatment. Defined here, not types.ts, because it is a pure geometry
+ * concept: how rounded a cubie's corners are and how much air sits between adjacent cubies.
+ * types.ts imports this type to give `CubeVisualSpec.bevel` a `Provenance<BevelTreatment>`.
+ */
+export interface BevelTreatment {
+  /** Corner/edge rounding radius, as a fraction of one cubie's edge length. 0 disables rounding
+   *  entirely (a plain box) — see `buildCubieGeometry`. */
+  readonly radiusRatio: number;
+  /** Bevel tessellation. Higher looks smoother but adds triangles to a shape repeated 26 times
+   *  per cube (and once per distinct size/bevel combination in the shared-geometry cache — see
+   *  `acquireSharedCubieGeometry` — so this cost is not paid per cube, only per distinct
+   *  combination). 0 or fewer also disables rounding. */
+  readonly segments: number;
+  /** Gap between adjacent cubies, as a fraction of the whole cube's `size_mm`. */
+  readonly gapRatio: number;
+}
 
 /** One of the 26 non-core cubies. */
 export interface CubieLayout {
@@ -63,8 +84,63 @@ export const FACE_GROUP_ORDER: readonly FaceNotation[] = ['R', 'L', 'U', 'D', 'F
  * enough that this module does not bother memoising it itself.
  */
 export function layoutCube(): CubieLayout[] {
-  throw new Error('CubeGeometry.layoutCube: not yet implemented (skeleton commit)');
+  const axis = [-1, 0, 1] as const;
+  const layout: CubieLayout[] = [];
+  for (const gx of axis) {
+    for (const gy of axis) {
+      for (const gz of axis) {
+        if (gx === 0 && gy === 0 && gz === 0) continue; // the hidden core cubie — never built
+        const exposedFaces: FaceNotation[] = [];
+        if (gx === 1) exposedFaces.push('R');
+        if (gx === -1) exposedFaces.push('L');
+        if (gy === 1) exposedFaces.push('U');
+        if (gy === -1) exposedFaces.push('D');
+        if (gz === 1) exposedFaces.push('F');
+        if (gz === -1) exposedFaces.push('B');
+        const pieceClass: PieceClass =
+          exposedFaces.length === 3 ? 'corner' : exposedFaces.length === 2 ? 'edge' : 'centre';
+        layout.push({
+          id: `${pieceClass}-${exposedFaces.join('')}`,
+          pieceClass,
+          grid: [gx, gy, gz],
+          exposedFaces,
+        });
+      }
+    }
+  }
+  return layout; // 8 corners + 12 edges + 6 centres = 26
 }
+
+/**
+ * All 26 cubies of a real cube are, externally, the same small rounded box: corner, edge and
+ * centre pieces differ only in how many of their six faces are ever seen (CubieLayout's
+ * `exposedFaces`), not in their outer shape — the internal mechanism that actually distinguishes
+ * them is exactly the kind of fact this archive has no source for (0 geometry-profile records
+ * exist). So a single geometry, not three, is built and shared here; this is deliberately a
+ * stronger claim than the lane brief's "one instanced/shared geometry where possible" — it is
+ * one shared geometry, period, per distinct size/bevel combination.
+ */
+function buildCubieGeometry(sizeMm: number, bevel: BevelTreatment): THREE.BufferGeometry {
+  const gapRatio = Math.max(0, bevel.gapRatio);
+  const cubieEdge = (sizeMm / 3) * (1 - gapRatio);
+  const radiusRatio = Math.max(0, Math.min(0.49, bevel.radiusRatio));
+  const radius = radiusRatio * cubieEdge;
+  if (radius <= 0 || bevel.segments <= 0) {
+    return new THREE.BoxGeometry(cubieEdge, cubieEdge, cubieEdge);
+  }
+  return new RoundedBoxGeometry(cubieEdge, cubieEdge, cubieEdge, Math.floor(bevel.segments), radius);
+}
+
+function geometryCacheKey(sizeMm: number, bevel: BevelTreatment): string {
+  return `${sizeMm}|${bevel.radiusRatio}|${bevel.segments}|${bevel.gapRatio}`;
+}
+
+interface GeometryCacheEntry {
+  readonly geometry: THREE.BufferGeometry;
+  refCount: number;
+}
+
+const geometryCache = new Map<string, GeometryCacheEntry>();
 
 /**
  * Returns the single `BufferGeometry` shared by every cubie of a given size/bevel combination,
@@ -73,18 +149,33 @@ export function layoutCube(): CubieLayout[] {
  * position and material differ per instance. Pair with `releaseSharedCubieGeometry` on teardown.
  */
 export function acquireSharedCubieGeometry(sizeMm: number, bevel: BevelTreatment): THREE.BufferGeometry {
-  throw new Error('CubeGeometry.acquireSharedCubieGeometry: not yet implemented (skeleton commit)');
+  const key = geometryCacheKey(sizeMm, bevel);
+  let entry = geometryCache.get(key);
+  if (!entry) {
+    entry = { geometry: buildCubieGeometry(sizeMm, bevel), refCount: 0 };
+    geometryCache.set(key, entry);
+  }
+  entry.refCount += 1;
+  return entry.geometry;
 }
 
 /** Decrements the reference count for the geometry acquired with the same `sizeMm`/`bevel`,
  *  disposing the underlying GPU buffer once nothing else is using it. */
 export function releaseSharedCubieGeometry(sizeMm: number, bevel: BevelTreatment): void {
-  throw new Error('CubeGeometry.releaseSharedCubieGeometry: not yet implemented (skeleton commit)');
+  const key = geometryCacheKey(sizeMm, bevel);
+  const entry = geometryCache.get(key);
+  if (!entry) return;
+  entry.refCount -= 1;
+  if (entry.refCount <= 0) {
+    entry.geometry.dispose();
+    geometryCache.delete(key);
+  }
 }
 
 /** Test/teardown escape hatch: disposes every cached geometry regardless of reference count. */
 export function disposeAllSharedCubieGeometries(): void {
-  throw new Error('CubeGeometry.disposeAllSharedCubieGeometries: not yet implemented (skeleton commit)');
+  for (const entry of geometryCache.values()) entry.geometry.dispose();
+  geometryCache.clear();
 }
 
 export interface AssembleCubeOptions {
@@ -110,7 +201,35 @@ export function assembleCube(
   bevel: BevelTreatment,
   options: AssembleCubeOptions,
 ): AssembleCubeResult {
-  throw new Error('CubeGeometry.assembleCube: not yet implemented (skeleton commit)');
+  const layout = layoutCube();
+  const geometry = acquireSharedCubieGeometry(sizeMm, bevel);
+  const group = new THREE.Group();
+  group.name = 'cube';
+
+  const spacing = sizeMm / 3;
+  for (const cubie of layout) {
+    const material = options.materialResolver(cubie);
+    const mesh = new THREE.Mesh(geometry, material);
+    mesh.name = cubie.id;
+    mesh.position.set(cubie.grid[0] * spacing, cubie.grid[1] * spacing, cubie.grid[2] * spacing);
+    mesh.userData.cubie = cubie;
+    group.add(mesh);
+  }
+
+  let disposed = false;
+  return {
+    group,
+    layout,
+    dispose() {
+      if (disposed) return;
+      disposed = true;
+      group.clear();
+      // Geometry is reference-counted and may still be in use by other cubes built with the
+      // same sizeMm/bevel; release this cube's claim rather than disposing it outright.
+      releaseSharedCubieGeometry(sizeMm, bevel);
+      // Materials are NOT disposed here — see AssembleCubeResult.dispose()'s doc comment.
+    },
+  };
 }
 
 export interface GeometryInputs {
@@ -118,7 +237,7 @@ export interface GeometryInputs {
   readonly sizeMmProvenanceKind: ProvenanceKind;
   readonly bevel: BevelTreatment;
   readonly bevelProvenanceKind: ProvenanceKind;
-  readonly application: import('./types.js').ColorwayApplication;
+  readonly application: ColorwayApplication;
 }
 
 /**
@@ -129,5 +248,14 @@ export interface GeometryInputs {
  * making that UI decision.
  */
 export function geometryInputsFromSpec(spec: CubeVisualSpec): GeometryInputs {
-  throw new Error('CubeGeometry.geometryInputsFromSpec: not yet implemented (skeleton commit)');
+  const sizeMm = resolveValue(spec.sizeMm, DEFAULT_SIZE_MM);
+  const bevel = resolveValue(spec.bevel, DEFAULT_BEVEL);
+  const application = resolveValue(spec.application, 'unknown' as ColorwayApplication);
+  return {
+    sizeMm,
+    sizeMmProvenanceKind: spec.sizeMm.kind,
+    bevel,
+    bevelProvenanceKind: spec.bevel.kind,
+    application,
+  };
 }
