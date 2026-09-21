@@ -8,8 +8,10 @@ proves the chain before anything else is built. It consumes `dist/public` only, 
 `EXHIBITION_ARCHITECTURE.md` §8, and invents no archival content — every example below is a real
 record from `data/`, named as such.
 
-Status: in progress. Sections are being filled in order; §9 (open items) tracks what is not yet
-written.
+Status: §1–9 complete. "Open items" below is now a record of what this specification found still
+unbuilt against it (the model page and compare page, the evidence drawer, the persistent header,
+a `relationships` field on `VariantView`), not a list of unwritten sections — see §9.5 for the full,
+ordered list.
 
 ---
 
@@ -135,27 +137,45 @@ aesthetic directive bans, and it would misrepresent evidence depth as uniform).
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
-│  DEEP MAKERS — full galleries, lineage and mechanism depth            │
+│  DEEP MAKERS — full galleries, lineage and mechanism depth  (6 of 54) │
 │  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌──────┐│
-│  │ GAN     │ │ DaYan   │ │ QiYi    │ │ MoYu    │ │ YJ      │ │Sheng-││
-│  │ 40 model│ │ 28 model│ │ 24 model│ │ 23 model│ │ 23 model│ │Shou  ││
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘ │18    ││
+│  │ GAN     │ │ DaYan   │ │ MoYu    │ │ YJ      │ │ QiYi    │ │Sheng-││
+│  │ 40 model│ │ 28 model│ │ 23 model│ │ 22 model│ │ 22 model│ │Shou  ││
+│  └─────────┘ └─────────┘ └─────────┘ └─────────┘ └─────────┘ │17    ││
 │                                                                └──────┘│
-│  MID MAKERS — one room, lineage without sub-navigation                │
-│   MFJS (10)  ·  [ …47 others, 8–15 models each ]                      │
+│  MID MAKERS — one room, lineage without sub-navigation      (11 of 54)│
+│   YuXin (8) · MFJS (7) · Diansheng (6) · [ …8 more, 4–5 models each ] │
 │                                                                        │
-│  THIN MAKERS — an archival card, not a gallery                        │
-│   YanCheng (1)  ·  pbcube (1)  ·  mojue (1)  ·  [ …others ]           │
+│  THIN MAKERS — an archival card, not a gallery              (37 of 54)│
+│   YanCheng (1) · pbcube (1) · mojue (1) · [ …34 others ]              │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
 **Reading order:** deep → mid → thin, matching evidentiary weight, not alphabetical (alphabetical
-would bury GAN's 40 models next to a 1-model card and imply parity).
+would bury GAN's 40 models next to a 1-model card and imply parity). The counts above are the
+*public* model counts (`scope_class` core or conditional; the 13 archive-wide `reference_only`
+models are excluded from every tier count here exactly as they are excluded from `dist/public` —
+this is why QiYi reads 22 rather than the 24 model files in `data/models/qiyi/`, and YJ 22 rather
+than 23: each excludes its own `reference_only` models, listed instead at `/edges`).
 **Hierarchy:** tier headers are structural, not decorative — they are the honesty mechanism: a
-thin-maker card must never be styled to look like it merely *hasn't loaded its gallery yet*.
+thin-maker card must never be styled to look like it merely *hasn't loaded its gallery yet*. The
+tier counts themselves are load-bearing: **37 of 54 manufacturers are thin**, not a residual handful
+— a version of this page that visually implies a fuller middle (a wall of similarly-sized mid
+cards, say) would misrepresent the archive's actual shape, which is a long thin tail under six deep
+makers and eleven mid ones.
 **Interactive:** every card/entry routes to `/makers/:manufacturerId`; tier groups collapse on
 mobile (§7) but never merge.
-**Empty/unknown:** none — every manufacturer has ≥1 model by construction.
+**Empty/unknown:** no manufacturer renders as a bare "0 models" without saying which of three
+different facts that zero is — see §5.6 for the full three-way treatment. In short: 5 manufacturers
+(`thecubicle`, `speedcubeshop`, `picube`, `saocube`, `cubicle-labs`, all `kind: service`) have zero
+models *structurally* — they are aftermarket/retail services, not omissions, and their work
+surfaces as variants on other makers' models instead (e.g. PiCube's own 20-magnet mod appears as
+`gan-flagship-16--picube-20-magnet-ball-core-mod`); 1 (`limcube`, `kind: sub_brand`) is a sub-brand
+record whose parent may carry the models; 6 (`hellocube`, `lanlan`, `ninja`, `verypuzzle`,
+`xinlexin`, `zcube`, all `kind: manufacturer`) are genuine research gaps — identity established,
+model enumeration not yet done. All three read differently on `/makers/:manufacturerId` (§2.3) and
+none of the three renders as a thin-maker card, since a thin card promises "one documented model,"
+which is a different claim than "no models researched yet" or "this maker doesn't make models."
 **Loading:** three skeleton tier-blocks in the same proportions; counts render as soon as
 `index/by-manufacturer.json` resolves, before the cards' own content.
 
@@ -186,9 +206,10 @@ renders as the confidence tag `disputed`, not as a single silently-chosen year.
 ```
 
 **Mid — `/makers/mfjs`.** One room, families listed but not sub-navigated into their own gallery
-chrome — MFJS is MoYu's sub-brand (`parent_id: moyu`, shown inline), 10 models in a flat roster
-under one lineage note, no "families (by depth)" panel since none of its lines have flagship-scale
-generational depth.
+chrome — MFJS is MoYu's sub-brand (`parent_id: moyu`, shown inline), 7 public models (10 model
+files exist in `data/models/mfjs/`; 3 — its 40mm/45mm/50mm mini/keychain 3x3s — are
+`scope_class: reference_only` and sit at `/edges` instead) in a flat roster under one lineage note,
+no "families (by depth)" panel since none of its lines have flagship-scale generational depth.
 
 **Thin — `/makers/yancheng`.** An archival card, deliberately smaller than a gallery shell:
 
@@ -658,66 +679,831 @@ section exists to prevent.
 
 ## 4. The three entry paths, made concrete
 
-*Skeleton.* Browse (by maker, the default), Trace (by lineage or mechanism), Interrogate (by
-evidence, challenging a claim) — concrete starting screens, concrete first clicks, using real
-families and disputes already in the archive (e.g. the GAN founding-date dispute, the MoYu WeiLong
-numbering gap, ledger item P4-7's catalogue-artefact date).
+`EXHIBITION_ARCHITECTURE.md` §6 names three entry paths "because three genuinely different
+visitors exist" and gives each one line: Browse is by maker, the default; Trace is by lineage or
+mechanism, the enthusiast path; Interrogate is by evidence, the archivist path, and the one nobody
+else offers. §1 and §2 of this document already give each path its routes and page specs. This
+section makes each path a walk a visitor actually takes — first screen, the promise it opens on,
+and the next three or four clicks — using only records already named elsewhere in this document.
+
+A path is a way *in*, not a fence. §3.4 already establishes that every detail page carries a link
+that reframes the visitor into a different path (a model page's "Trace this lineage →", a drawer's
+"View full source record →"). What follows is each path's *own* shape before that reframing
+happens — the room a visitor is standing in when they haven't clicked anything else yet.
+
+### 4.1 Browse — by maker
+
+**First screen:** `/makers` (§2.2), and the promise is stated by the layout before any copy does:
+three tiers, deep first, so the first thing a Browse visitor learns is which makers this archive
+actually knows in depth. **What it promises:** *you don't need to know a name to start; wander, and
+the size of what you find tells you how well it's known.* No search box on this screen — Trace and
+Interrogate both open on a specific claim, Browse opens on breadth instead.
+
+**First click:** a deep-tier tile — GAN. **What that click lands on:** not a gallery grid, but
+`/makers/gan` (§2.3), and the very first thing under the header is not a roster, it's a dispute:
+GAN's own founding record carries four dated candidates (2010, 2011, 2013, 2014) and renders as
+`DISPUTED ⓘ — four candidate events, not one error`. A Browse visitor who expected an uncomplicated
+identity page gets, in one click, evidence that even "when was this company founded" is not settled
+here — which is the whole proposition, delivered before the visitor asked for it.
+
+**Second click:** a family row — GAN Flagship Series (8 models, ongoing). **Lands on:**
+`/families/gan-flagship-series` (§2.4), the succession chain GAN11 M Pro → … → GAN17, with GAN13
+flagged mid-chain (`* GAN13: seen in one 2025 maker listing, absent from a later one — flagged, not
+resolved`) and GAN Mini M Pro called out beside the chain as a sibling that never got an ordinal.
+Browse's wandering, two clicks in, has already produced a second unresolved question, presented as
+one — not smoothed over to keep the roster page tidy.
+
+**Third click:** GAN16 on the chain. **Lands on:** `/models/gan-flagship-16` (§2.5) — the vertical
+slice's model, 8 variants, differing by magnet count, coating and edition. **Fourth click:** any
+variant name, e.g. "Dual-WR Limited Edition" → `/models/gan-flagship-16/variants/gan-flagship-16--maglev-max-dual-wr-limited-edition`
+(§2.7) — the object on the plinth. Four clicks, no search, no prior knowledge of GAN's product
+naming, and the visitor has already met a founding dispute, a chain gap, and a fully-cited variant.
+
+**How a Browse visitor moves on:** back up the breadcrumb to try a different family, sideways via
+predecessor/successor arrows on the model page, or out through "Trace this lineage →" (§3.4) if the
+chain itself becomes the more interesting object.
+
+### 4.2 Trace — by lineage or mechanism
+
+Trace has two roots (§1: `/lineage` and `/mechanism`), because "follow a lineage" and "follow a
+mechanism across makers" are the same *kind* of path — a thread, not a room — but different
+threads. Both are described in full at §2.9–§2.10; this section gives each its concrete walk.
+
+**Lineage root — first screen:** `/lineage` (§2.10), seven named families with real generational
+depth (`gan-356` 13 models, `moyu-weilong` 10, `yj-mgc` 9, `gan-flagship-series` 8, `dayan-zhanchi`
+7, `dayan-guhong` 6, `qiyi-warrior` 6), with a standing note that 125 more families exist and are
+reachable through Browse, not hidden. **What it promises:** *depth is not evenly spread across this
+archive, and Trace shows you where it actually is, rather than making you guess by clicking through
+54 makers.*
+
+**First click:** `moyu-weilong` (10 models). **Lands on:** `/families/moyu-weilong`, the real gap
+`EXHIBITION_UX.md` has cited since §2.4's own model: WeiLong V2 → GTS → WR → V9, with **"V3–V8 never
+existed" printed on the chain itself** — a maker's own numbering choice, not a data-entry hole, and
+the chain says so rather than leaving six missing numbers for a visitor to wonder about. **Second
+click:** V9 (or WR) on the chain → `/models/:modelId`, then onward exactly as in §4.1's third/fourth
+clicks (variant roster → variant page) if `moyu-weilong` has a multi-configuration model, or
+straight to a single variant page (§2.5's "single-configuration model" case) if it doesn't.
+
+**Mechanism root — first screen:** `/mechanism` (§2.9), eight rows, each a population count —
+`maglev` 94, `coating` 84, `weight_g` 74, `magnet_configuration` 62, `size_mm` 50,
+`magnet_strength` 31, `adjustment_system` 25, `core_system` 21 — and nothing else, because the
+count *is* the content at this depth. **What it promises:** *pick a piece of technology, not a
+brand, and watch it cross every maker that used it.* **First click:** `maglev` →
+`/mechanism/maglev`, a cross-maker strip of the 94 variants where the axis is populated, grouped by
+value rather than by manufacturer — `gan-flagship-16--maglev-max-dual-wr-limited-edition` is one
+tile among makers Trace never asked the visitor to already know. **Second click:** that tile →
+the variant page directly (§2.7) — mechanism is the one root that can drop a Trace visitor straight
+onto the plinth with no model-page stop in between, because "what uses this mechanism" is itself
+the organizing question, not "what does this model look like."
+
+**How a Trace visitor moves on:** the lineage chain's own predecessor/successor links keep them in
+Trace; a mechanism tile's breadcrumb is a Browse exit (§3.4) the moment the visitor wants to see
+everything else that maker made, which switches the chip without asking Trace to explain itself.
+
+### 4.3 Interrogate — by evidence
+
+**First screen:** `/case` (§2.12), and it opens on a refusal, not an acceptance, because
+`RESEARCH_FINAL_HANDOFF.md` itself observes refusals are more persuasive. **What it promises:**
+*start by watching this archive say no to a source, and you'll trust what it says yes to.* The
+refusal: `gan-354-m`'s `announced` date, downgraded from `probable` to `uncertain` because its only
+apparent evidence — TheCubicle's "Added: 2018-09-11" — is a catalogue-migration artefact appearing
+verbatim 29 times across 22 sources and 13 unrelated brands, not a per-product date at all. The page
+shows the rejected reading and the retained one side by side, plus the still-open ledger question
+(**P4-7**: "whether such a stamp may be used as a bound at all," `needs_human_decision`) that the
+refusal raised. An Interrogate visitor's first click is optional by design — the refusal is legible
+without one — but the page offers two: the case's own link to `gan-354-m`, and a link to P4-7's
+plain-language framing.
+
+**First click (into the archive):** `gan-354-m` → its model page, where the *same* downgraded date
+now sits in context, next to the model's other, better-attested fields — the point being that one
+refusal does not make the whole record suspect, it makes this one field honestly weaker than its
+neighbours. **First click (into the method):** P4-7's framing, which is not the raw ledger YAML but
+a plain-language account of the open question — an Interrogate visitor came to test the archive's
+reasoning, not to read its issue tracker.
+
+**Second entry, from the same root:** `/unknowns` (§2.13), the archive-wide gap dashboard —
+opens on the render-blocker picture (face colour undocumented on all 527 variants; body plastic
+colour on 505 of 527) before any per-maker breakdown, because the *scale* of what is undocumented is
+itself the finding Interrogate exists to surface. §5 gives this page's full treatment.
+
+**How an Interrogate visitor moves on:** every confidence tag anywhere in the archive is already an
+Interrogate entry point (§3.4) — a visitor who arrived via Browse or Trace and clicks one *becomes*
+an Interrogate visitor mid-session, chip and all, without having started at `/case`.
+
+### 4.4 What exists today against this spec
+
+Only `/` (Landing), `/conventions`, and one variant page are built (`web/src/app/App.tsx`'s route
+switch); `/makers`, `/lineage`, `/mechanism`, `/case`, and `/unknowns` all fall through to a debug
+shell today, so none of the three walks above can be taken in the running app yet — §9 assesses this
+gap in full, against the vertical slice's own success criteria, rather than repeating it here. Two
+things are worth flagging in this section specifically, because they are shortcuts around Browse and
+Interrogate's *first screens*, not just missing pages: the built `LandingPage.tsx`'s "Browse" link
+goes straight to the featured variant's own page rather than to `/makers`, and its "Interrogate"
+link goes to `/conventions` rather than `/case` — both real, useful pages, but neither is the entry
+screen this section specifies, and a visitor clicking "Browse" today gets a single object rather
+than the wandering §4.1 promises.
 
 ---
 
 ## 5. The `unknown` experience
 
-*Skeleton.* The hardest part. Distinguishes, on screen, three things the archive's own vocabulary
-already distinguishes in data — `unknown` (searched, not found), absent (not yet researched), and
-a declared rendering convention (§10.4 of the architecture doc, the standard face-colour scheme)
-— using the real blocker set computed by `scripts/build.mjs` (`renderBlockers`): face colours
-undocumented on all 511 public variants, logo placement on all 511, geometry profile on all 511,
-body plastic colour on 489 of 511.
+This is the section the rest of the document has been building toward. `docs/RENDERING_CONVENTIONS.md`
+§1 puts the scale of it plainly: measured against all 527 archive variants on 2026-09-21, face
+colour is documented on **0**, logo placement on **0**, geometry profile on **0**, body plastic
+colour on **22** (505 undocumented), surface application on **122** (405 undocumented), size on
+**236** (291 undocumented). A page that renders this archive is, on almost every field of almost
+every object, rendering an absence — and the entire argument of this section is that an absence
+handled honestly is still a finding, and a finding is not a broken page.
+
+### 5.1 The rule, stated exactly
+
+`web/src/data/types.ts` and `web/src/data/adapter.ts` (`attestedValue()`) already implement the
+rule; this is that rule in words, because every future page must implement it the same way rather
+than reinventing it per component. For any one field pointer (e.g. `/colorway/body/plastic_color_name`
+on a specific variant), the adapter asks, in this order:
+
+1. **Is there an attestation entry at this pointer at all?** If not — the archive never cited
+   anything here — the field is `UnknownValue { searched: false }`: **not researched**. This is
+   silence, not a finding.
+2. **If there is an attestation, does it carry `confidence: unknown`?** If so, the field is
+   `UnknownValue { searched: true }`: **researched, not found**. Someone looked, cited nothing
+   positive, and said so. This is itself a piece of archival work, not a gap in it.
+3. **If there is an attestation but the field's own value is empty** (an attestation can exist
+   for a pointer whose value is `null`), the field is also `UnknownValue { searched: true }` —
+   the archive attested to the absence, which reads the same as case 2 on screen.
+4. **Otherwise** — an attestation exists, carries a confidence other than `unknown`, and the field
+   is populated — the field is `SourceBackedValue`, at whatever confidence was actually recorded
+   (never invented, never raised: an attestation with no confidence field is reported at
+   `uncertain`, the weakest value that still means "attested," rather than promoted).
+
+A **rendering convention** is not a fifth branch of this rule. It is a separate, later, opt-in step
+that only ever fires *after* the rule above has already returned `unknown` for one of the six
+gap-defined pointers `conventions/rendering-conventions.yml` lists (`when_absent`), and it never
+overrides a `source-backed` value at any confidence — `docs/RENDERING_CONVENTIONS.md` §3 states this
+as precedence ("the archive always wins") and `scripts/validate-conventions.mjs` enforces it as a
+build rule, not a UI convention. Concretely in the shipped code: `resolveCubeVisualSpec()` and
+`VariantPage.tsx`'s `inForce` filter only ever apply `cv-body-plastic-neutral` when
+`isUnknown(view.colorway.body.plasticColor)` is already true — the convention fills a gap the rule
+above already found, it does not create one.
+
+So three states reach a page, and they must never be visually or verbally interchangeable:
+
+| State | Why it happened | What produced it |
+|---|---|---|
+| **Not researched** | Nobody has looked yet, or (per `RESEARCH_FINAL_HANDOFF.md` item 8) it is a known collection-wide gap never logged per record | No attestation entry (rule 1) |
+| **Researched, not found** | Someone looked and found nothing to attest | `confidence: unknown`, or an attested-empty field (rules 2–3) |
+| **Rendering convention** | The archive made no claim, and the exhibition drew something anyway so the object could be shown at all | `conventions/rendering-conventions.yml`, applied only where the rule above already returned unknown |
+
+### 5.2 How the three read on screen
+
+`values.tsx`'s `BasisBadge` already renders exactly these three, in exactly this order of
+precedence (convention checked first, since a convention-eligible pointer that is *also*
+`source-backed` never reaches the convention branch at all — see §5.1's precedence rule):
+
+```
+convention   ⬙  Rendering convention          (cool slate, hatched rotated square — never a circle)
+unknown      ○  Researched, not found          (neutral grey, dashed outline, no fill)
+unknown      ○  Not researched                 (identical glyph — see §5.3 on why the WORDS carry
+                                                 the distinction the glyph does not)
+confirmed…   ●◕◑◌◐  Confirmed / Probable / Reported / Uncertain / Disputed
+                                                 (warm bronze family + rust for disputed — §6 of
+                                                 VISUAL_LANGUAGE.md)
+```
+
+Two design facts do real work here, both already shipped:
+
+**The convention glyph is a different *shape*, not just a different colour** (a hatched, rotated
+square, never a circle) — `VISUAL_LANGUAGE.md` §7's own reasoning: a visitor who has learned "circle
+= the confidence system" still sees, correctly, that the convention badge is not part of that system
+at all, even in greyscale or with a colour-vision deficiency. A colour-only distinction here would
+be exactly the failure this section exists to prevent, because the convention badge sits closest of
+anything in this design system to *looking like evidence*.
+
+**"Researched, not found" and "not researched" share a glyph but never share words.**
+`BasisBadge` renders `value.searched ? 'Researched, not found' : 'Not researched'` as visible text,
+never abbreviated and never behind a tooltip — the two states are visually close (same grey, same
+dashed circle) precisely because they are close in what a visitor should feel about them: neither is
+evidence, and treating one as more alarming than the other would misstate the archive's own
+distinction (a `searched: true` field is *more* work, not less, than a `searched: false` one — the
+absence of a magnifying-glass icon or a "coming soon" label matters here: neither reads as
+provisional).
+
+### 5.3 The fourth pattern: a real value with no attestation at all
+
+§2.7's own two worked examples (`maglev-max-dual-wr-limited-edition`, `amyth-winter-limited-edition`)
+only show the clean cases — a value with a confidence, or a bare `— unknown —` placeholder. The
+adapter's rule 1 (§5.1) produces a case neither example shows: **a field the raw document actually
+populates, with no attestation ever written for that pointer.** This is real, not hypothetical —
+`data/variants/gan/gan-flagship-16/amyth-winter-limited-edition.yml` sets `colorway.scheme: custom`
+in its document body, and its `attestations` block cites `/colorway/designation`,
+`/colorway/body/plastic_color_name`, and `/edition/limited/run_size`, but never `/colorway/scheme`.
+`UnknownValue.unattestedValue` exists exactly for this: the adapter carries `"custom"` through rather
+than discarding it, tagged `basis: 'unknown', searched: false`.
+
+On screen this must read as a fourth, distinct pattern from the three in §5.2 — not a new badge, but
+a specific combination of the existing ones:
+
+```
+ colourway scheme        custom              Not researched     the archive's own document names
+                                              ○                  this value, but no source was ever
+                                                                  cited for it — shown, not sourced
+```
+
+`formatValue()` and `.spec__row[data-basis="unknown"] .spec__value` (`VariantPage.css`) already
+produce this correctly — the value prints in the value column, italicised and at `ink-700` rather
+than `ink-900`, with the "Not researched" badge sitting beside it exactly as it would beside a bare
+`—`. What is thin today is the note column: nothing currently tells a visitor *why* a real word is
+sitting next to "not researched" rather than a dash, and a visitor could reasonably read that
+combination as a bug. The fix is a one-line rule, not a new component: whenever
+`unattestedValue !== undefined`, the note column should read something to the effect of *"named in
+the archive's own record; no source was cited for this specific detail"* — distinguishing it from
+the bare-dash case, where there is nothing to name at all. This is the one place in §5 where the
+built pages are thinner than the rule they implement, and it is a small, named gap rather than a
+structural one.
+
+### 5.4 The aggregate view — `/unknowns`
+
+§2.13 already specifies the layout; this is the rule applied at the scale that page exists to show.
+`/unknowns` opens on the four headline blocker counts from `docs/RENDERING_CONVENTIONS.md` §1 —
+**0 of 527** for face colour, logo placement and geometry profile; **22 of 527** for body plastic
+colour — stated against the **archive's 527**, not the research-preview bundle's 511, and that
+choice is deliberate, not a rounding difference: `rendering-conventions.yml`'s own header explains
+it — "a convention describes a gap in what was researched, and that gap does not change when a
+build filter changes." A gap is a fact about the archive, not about which build filter happens to be
+active this week; showing 511 here would make the headline number drift every time a curation pass
+promotes a record's `status`, for no reason connected to whether that record's face colour is
+documented. Per-manufacturer bars beneath the headline split `unknown` (searched) from absent (not
+searched) using the same rule 1 vs. rules 2–3 distinction as §5.1, reproducing
+`report-coverage.mjs` rule 32's own computation rather than a new one — e.g. GAN: 213 attested / 161
+explicitly `unknown` / 1,456 absent, of 1,830 critical-field slots. A visitor clicking any segment
+filters straight to the underlying model/variant list — the dashboard is required to be a starting
+point for descent, not a terminal chart.
+
+### 5.5 Where the rule extends past a field: roster-level unknown
+
+Everything above is about one field on one record. The same three-way discipline has to survive at
+the *roster* level too, or Browse quietly reintroduces the exact confusion §5 exists to prevent —
+this was flagged directly against §2.2's original text, which claimed "every manufacturer has ≥1
+model by construction." Measured against `data/manufacturers/` and `data/models/`, that is false:
+**12 of 54 manufacturers have zero model records**, and — this is the part that matters — they are
+not one kind of zero:
+
+- **5 are `kind: service`** (`thecubicle`, `speedcubeshop`, `picube`, `saocube`, `cubicle-labs`) —
+  aftermarket modification services and retailers, not model-producing manufacturers at all. Zero
+  models is **permanent and correct**, not a gap: PiCube's own work is fully represented in the
+  archive, just as a *variant* on someone else's model —
+  `gan-flagship-16--picube-20-magnet-ball-core-mod` carries 19 attestations. A roster row reading
+  "0 models" for `picube` without saying why would misstate a structural fact as an unfinished one.
+- **1 is `kind: sub_brand`** (`limcube`) — a different structural case again: its models, if any are
+  ever enumerated, may belong to a parent manufacturer's roster instead, so "0" here is a
+  classification fact, not a research outcome.
+- **6 are `kind: manufacturer` with zero models** (`hellocube`, `lanlan`, `ninja`, `verypuzzle`,
+  `xinlexin`, `zcube`) — and these genuinely **are** research gaps: the manufacturer's identity is
+  established (each has its own record, `status: drafted` or `sourced`) but model enumeration has
+  not been done. This is the roster-level equivalent of `searched: false` — not researched — and it
+  is the only one of the three that should read as an open task rather than a closed fact.
+
+None of the three renders as a thin-maker card (§2.2's third tier: "an archival card, not a
+gallery," which promises *one documented model* — a positive claim these records cannot make).
+`/makers/picube` instead states the structural fact directly (something in the register of *"PiCube
+is a modification service. Its work is documented on the models and variants it modifies —
+see: GAN16 Maglev MAX 20-Magnet Mod →"* rather than an empty gallery shell), `/makers/limcube`
+states the sub-brand fact, and `/makers/zcube` (etc.) states the research gap in the same words
+`/makers/gan`'s founding date does when it is wholly `unknown` (§2.3): *"0 documented models —
+researched, not found"* would be wrong here, since these are `drafted`/`sourced` identity records
+whose model enumeration was never attempted, which is `searched: false` at the roster level, not
+`searched: true` — the correct string is **"No models documented yet."**, not "not found."
+
+### 5.6 What must never happen
+
+Collecting the non-negotiables this section has argued for, so a future page cannot drift from them
+one component at a time:
+
+- **A `searched: false` field must never render identically in wording to a `searched: true` one.**
+  Same glyph is acceptable (§5.2); same words are not.
+- **A convention must never be presented as if it could be evidence**, including by proximity —
+  §5.2's shape rule exists because a hue-only distinction was judged insufficient given how
+  consequential this one is (`VISUAL_LANGUAGE.md` §7).
+- **An unknown value must never be dimmed to the point of being skippable.** `spec__row[data-basis="unknown"]`
+  sits at `ink-700`, independently AA-verified at body size (`VISUAL_LANGUAGE.md` §9) — not `ink-500`
+  or lighter, which would relegate a finding to the visual status of a footnote.
+- **A gap must never be hidden by silently promoting `unknown` to a plausible-looking guess.** This
+  is the entire reason a convention exists as a separate, disclosed layer rather than as an
+  unlabelled default value slipped into the same field a source-backed value would occupy.
+- **A roster-level or aggregate zero must never collapse into one meaning.** §5.5's three-way split
+  is the same discipline as §5.1's field-level rule, applied one level up, and both must be built the
+  same way for the same reason: a zero that could mean three different things is not a finding until
+  the page says which one it is.
 
 ---
 
 ## 6. Microcopy
 
-*Skeleton.* The actual strings: confidence labels, unknown states, the rendering-convention
-disclosure, dispute framing. Museum voice — precise, unhedged, never apologetic, never salesy.
+The actual strings. Where a string is already shipped in `web/src/`, it is quoted verbatim and
+marked **[shipped]** — this document does not get to write a parallel version of copy that already
+exists in code, and neither does the next lane. Where a string is specified here for a page or state
+that is not yet built, it is marked **[specified]**. Where the registry's own `visitor_disclosure`
+is the authoritative wording, it is quoted from `conventions/rendering-conventions.yml` directly,
+per this lane's mandate — no paraphrase is offered beside it.
+
+### 6.1 The six confidence values
+
+Badge labels, **[shipped]**, `web/src/exhibit/values.tsx` `CONFIDENCE_LABEL`:
+
+> Confirmed · Probable · Reported · Uncertain · Disputed · Unknown
+
+One-line plain-language glosses, **[specified]**, for `/case`'s tier/confidence vocabulary panel
+(§2.12) — grounded in `vocab/confidence.yml`'s own definitions, not a new taxonomy:
+
+- **Confirmed** — "A tier 1 source states this directly, or two independent tier 2 sources agree."
+- **Probable** — "One tier 2 source states this, and nothing contradicts it."
+- **Reported** — "A tier 3 source states this — plausible and uncontradicted, and nothing stronger
+  was found."
+- **Uncertain** — "The evidence is weak, single-sourced, or sits oddly with what else is known."
+- **Disputed** — "Credible sources disagree. Both readings are kept here; neither is chosen for
+  you."
+- **Unknown** — "This was searched for and not found. That is not the same as not having been
+  searched — see below."
+
+### 6.2 The two unknown kinds
+
+Badge labels, **[shipped]**, `values.tsx` `BasisBadge`:
+
+> Researched, not found.
+> Not researched.
+
+Longer form, **[specified]**, for the note column when more room exists (§5.1's rules 2–3 vs.
+rule 1 respectively):
+
+- "Researched, not found." → *"This was looked for. No source states it, in either direction."*
+- "Not researched." → *"No source has been checked for this yet."*
+
+The unattested-value pattern (§5.3), **[specified]** — the one microcopy gap this lane is leaving
+named rather than silently unfixed:
+
+> *"Named in the archive's own record; no source was cited for this specific detail."*
+
+### 6.3 Rendering conventions — the registry's own words, quoted
+
+Per this lane's mandate: the registry is authoritative. These six are `visitor_disclosure`, copied
+verbatim from `conventions/rendering-conventions.yml` — **[shipped]**, rendered by
+`VariantPage.tsx`'s convention list and `ConventionsPage.tsx` without alteration:
+
+- **`cv-face-colours-wca-standard`** — "Rendering convention. The archive does not document this
+  cube's colours. The standard scheme is drawn so the object can be shown at all."
+- **`cv-body-plastic-neutral`** — "Rendering convention. Body colour is not documented for this
+  cube; a neutral material is shown."
+- **`cv-logo-omitted`** — "Rendering convention. Logo placement is not documented for any cube in
+  this archive, so no logo is drawn on any of them."
+- **`cv-geometry-generic-3x3`** — "Rendering convention. No cube in this archive has a documented
+  piece geometry. A generic shell stands in for every one of them."
+- **`cv-size-56mm-fallback`** — "Rendering convention. This cube's size is not documented; it is
+  drawn at 56 mm so it can sit beside the others. Do not read its scale as a fact."
+- **`cv-surface-stickerless-fallback`** — "Rendering convention. This cube's surface type is not
+  documented; a stickerless finish is shown."
+
+The badge label beside each, **[shipped]**: "Rendering convention" (never "Convention" alone —
+the full noun phrase disambiguates from a museum's other, ordinary sense of "convention" as in
+"gathering").
+
+### 6.4 Dispute framing
+
+Real, already-specified strings, consolidated here as the dispute-copy pattern for any future page
+to match rather than reinvent:
+
+- GAN's founding record, **[specified, §2.3]** — "DISPUTED ⓘ — four candidate events, not one
+  error." The parenthetical is load-bearing: it heads off the reading "the archive doesn't know
+  when GAN was founded" in favour of the true one, "the archive knows four candidate answers and
+  declines to pick."
+- A flagged-but-unresolved chain link, **[specified, §2.4]**, GAN13: "GAN13: seen in one 2025 maker
+  listing, absent from a later one — flagged, not resolved." Pattern: state the two observations
+  plainly, then name what has *not* happened to them (resolution), rather than implying one is more
+  likely correct.
+- A maker's own deliberate gap, **[specified, §2.4]**, MoYu WeiLong: "V3–V8 never existed" — printed
+  directly on the succession chain, not in a footnote, because this is the one dispute-adjacent case
+  that isn't a dispute at all: it is a documented fact about the maker's own numbering, and treating
+  it with the same hedging language as a real evidentiary conflict would misrepresent it as less
+  certain than it is.
+- The refusal case, **[specified, §2.12]**, `gan-354-m`: the page states the rejected reading
+  ("Added: 2018-09-11," a catalogue-migration artefact appearing verbatim 29 times across 22
+  sources and 13 unrelated brands) and the retained one (`uncertain`) side by side, plus the open
+  question it raised, by name — ledger item **P4-7**, "whether such a stamp may be used as a bound
+  at all."
+
+### 6.5 Record status vs. confidence — kept in different words on purpose
+
+Per §1.0, these are different axes and must never share vocabulary. Record status, **[specified]**,
+plain-language per value (`vocab/record-status.yml`, museum-voice gloss):
+
+- **stub** — "Researched, not yet reviewed by a curator." **[shipped]**, `VariantPage.tsx`'s exact
+  status line for the 527 variants and most models currently at this status.
+- **drafted** — "Under active research."
+- **sourced** — "Cited to at least one source; not yet reviewed."
+- **reviewed** — "Checked by a curator against its sources."
+- **published** — "Reviewed and released." (Not currently reachable: `meta.json`'s own
+  `research-preview` bundle emits zero records at this status.)
+- **disputed** (as a *record* status, not a field confidence) — "The record itself, not just one of
+  its fields, is contested."
+- **deprecated** — "Superseded or withdrawn; kept for the archive's own history."
+
+### 6.6 Empty states
+
+- Search, no match — **[shipped, §2.14]**: "No record matches '_x_' — try a manufacturer or model
+  name; aliases are searched too."
+- A record with no lead claim — **[shipped]**, `LandingPage.tsx`: "This record carries no
+  adjudicated claim yet. That is itself the finding."
+- A variant with no cited evidence — **[shipped]**, `VariantPage.tsx`: "No source is cited on this
+  record or the model it inherits from."
+- A manufacturer whose zero models is structural (§5.5) — **[specified]**, `kind: service`: *"[Name]
+  is a modification service. Its work is documented on the models and variants it modifies."*, with
+  a direct link to at least one (`picube` → `gan-flagship-16--picube-20-magnet-ball-core-mod`).
+- A manufacturer whose zero models is a sub-brand fact (§5.5) — **[specified]**, `kind: sub_brand`:
+  *"[Name] is recorded as a sub-brand. Its models, if any are documented, may be listed under its
+  parent."*
+- A manufacturer whose zero models is a real gap (§5.5) — **[specified]**, `kind: manufacturer`:
+  *"No models documented yet."* — never "not found," which in this vocabulary means *searched*; this
+  case has not been.
+- A family with only one model (§2.4) — no string needed: the chain itself renders as a single node
+  with no arrows, which is the honest visual, not a caption explaining the absence of a chain.
+
+### 6.7 Loading states
+
+Every one currently shipped skips a spinner and skips shimmer (`VISUAL_LANGUAGE.md` §5's banned-motion
+table: "a shimmering placeholder implies content is *about* to resolve into something specific" —
+false, here, more often than it's true) in favour of a short, plain present-participle line:
+
+- `LandingPage.tsx` — **[shipped]**: "Opening the archive…"
+- `VariantPage.tsx` — **[shipped]**: "Opening the case…"
+- `ConventionsPage.tsx` — **[shipped]**: "Reading the registry…"
+- `LazyCube.tsx`'s plinth, while the 3D engine chunk loads — **[shipped]**: "Placing the object…"
+- `App.tsx`, while `meta.json` itself is still loading, before any page can render — **[shipped]**:
+  "Opening the archive…" (shared with Landing's own loading line, since at this point in the
+  lifecycle no page has been selected yet).
+
+Pattern for pages not yet built, **[specified]**: present participle, object of the verb is the
+*thing being opened*, never the mechanism ("Opening the archive…", not "Fetching data…" or "Loading
+manufacturers.json…") — a visitor is waiting on a door, not a network request.
+
+### 6.8 Error states
+
+**This is a real, named gap, not a polished area.** Every error boundary shipped today
+(`LandingPage.tsx`, `VariantPage.tsx`, `ConventionsPage.tsx`) renders the caught JavaScript error's
+own `.message` verbatim and nothing else — technically honest (nothing is hidden) but not museum
+voice, since a raw `Error: No variant gan-flagship-16--nonexistent in this bundle.` string was
+written for a developer's console, not a visitor's eye. The rule this section proposes, **[specified]**,
+consistent with §6's "never apologetic, never salesy" constraint (no "Oops!", no "Something went
+wrong," no exclamation mark anywhere):
+
+> *"This [record / registry / page] could not be opened. [underlying detail, unedited]."*
+
+e.g. for the one error condition that can currently occur in the shipped code (`VariantPage.tsx`,
+a variant id absent from the bundle): *"This variant could not be opened. No variant
+gan-flagship-16--nonexistent in this bundle."* — the museum states the failure as a fact about the
+archive's own retrieval, then discloses the technical detail rather than swallowing it, the same
+posture the rest of this document takes toward every other kind of gap.
 
 ---
 
 ## 7. Responsive behaviour
 
-*Skeleton.* Desktop / tablet / mobile per page type, and what mobile sacrifices (the evidence
-drawer's persistence model changes first).
+Two breakpoints are already shipped, and they disagree with each other on purpose, because they are
+solving different problems: `LandingPage.css` collapses at **60rem** (a two-column exhibit becoming
+one column is a layout problem, and 60rem is where the label column would otherwise get
+uncomfortably narrow beside the object), and `VariantPage.css` collapses its specification table at
+**52rem** (a narrower point, because the table transform is triggered by content density — a table
+column, not a page layout — and holds out slightly longer than the landing grid before giving up
+horizontal space). Every page spec below should pick *its own* breakpoint the same way: by what
+actually gets cramped first, not by copying a shared number.
+
+### 7.1 Per page type
+
+| Page type | Desktop (>60rem) | Tablet (~40–60rem) | Mobile (<40rem) |
+|---|---|---|---|
+| **Landing** (built) | Two-column exhibit: object left, label right, side by side (`grid-template-columns: 5fr 6fr`) | Same two-column layout down to 60rem, object shrinking with the column | **Single column below 60rem** (`LandingPage.css`): object first, capped at 26rem and centred, label follows beneath it — "the object leads and the label follows, rather than the object being squeezed beside text that then has nowhere to go" (the file's own comment). Three-ways-in list and the count row both wrap via `auto-fit`/`flex-wrap`, no horizontal scroll anywhere. |
+| **Variant detail** (built) | Single centred column, max 72rem, spec table as a real `<table>` | Same column; table remains a table down to 52rem | **Below 52rem** (`VariantPage.css`): the spec table's `<thead>` is visually hidden (clipped, not `display:none`, so it stays in the accessibility tree) and each row becomes a labelled block — field name as a small caps mono label, value, basis badge and note stacked vertically. This is the one responsive transform this document treats as non-negotiable: **a confidence column a visitor must scroll sideways to find is one that gets missed**, so it is never allowed to become a horizontally-scrolling table at any width. |
+| **Makers root** (§2.2, not built) | Three tiers, deep tier as a fixed-size card row, mid tier as a denser row, thin tier as a compact list | Tiers keep their identity but the deep-tier row wraps to two lines of cards rather than one | Tiers **stack, never merge** (§2.2's own hierarchy rule) — each tier header stays, deep-tier cards go to one per row rather than shrinking illegibly, and the 37-entry thin tier becomes a plain scrollable list rather than a card grid at any width, since a 37-card grid was never the right shape even on desktop. |
+| **Maker room** (§2.3) | Header + families panel + model roster as three stacked sections, roster in a filterable grid | Same stacking, roster grid narrows to two columns | Roster grid becomes a single column list; the thin-maker archival card (§2.3's YanCheng example) does not change shape at all across breakpoints — it is already small, and further compression would start cutting its one paragraph of archivist's own words, which this document will not allow. |
+| **Family/lineage chain** (§2.4) | Horizontal chain, arrows and gap labels inline | Horizontal chain, condensed spacing, gap labels stay inline | **Chain rotates to vertical** — each generation becomes a stacked node top-to-bottom rather than a horizontal scroll, because a horizontally-scrolling succession chain would hide exactly the kind of gap (MoYu WeiLong's "V3–V8 never existed") this document has repeatedly insisted must never require a visitor to scroll to discover. The outlier panel (a family's off-chain model, §2.4) stays below the chain, never beside it, at any width. |
+| **Model detail + compare** (§2.5–§2.6) | Compare table as a real table, one column per variant | Compare table remains tabular to a point, then follows the exact §52rem transform already shipped on the variant page — **the same component, same rule, reused rather than redesigned**, since a comparison table's confidence glyphs are exactly the content the variant page's rule already protects | Compare becomes a stacked block per variant (not per axis) — each variant's differing axes listed together, so a visitor reads "this variant" as a unit rather than hunting one axis across N stacked mini-tables. |
+| **Mechanism / lineage / timeline roots** (§2.9–§2.10) | Strip/axis view with full population-count labels | Same, tiles narrow | Tiles stack to a single column strip, scrolling vertically (never horizontally-scrolling tile rails, which is the same anti-pattern as a sideways-scrolling spec table, applied to a different content shape) |
+| **Edges / Case / Unknowns** (§2.11–§2.13) | Each case/claim as its own full-width block | Same | Same — these pages are already single-column, prose-forward pages at every width the mandate covers; nothing here is a responsive design problem, which is itself worth stating so a future lane doesn't invent breakpoint work these pages don't need. |
+| **Evidence drawer** (§2.8, not built) | Slide-in panel from the right, ~28rem wide, page content remains visible and scrollable behind it (§3.3's "never modal-blocking" rule) | Same slide-in behaviour, narrower panel (~22rem) | **The one place this document lets §3.3's own rule bend, and says so explicitly** — see §7.2. |
+
+### 7.2 What mobile sacrifices: the evidence drawer's persistence model, first
+
+§3.3 sets three contracts for the drawer: shareable (`?evidence=`), back-button-safe, and "never
+modal-blocking" — the rest of the page stays visible and scrollable behind a slide-in side panel.
+The first two survive unchanged at every width; the third is the one this document explicitly
+relaxes on mobile, because a ~28rem side panel on a 22rem-wide viewport is not a panel beside the
+page, it is the entire page with extra steps, and pretending otherwise would be worse than admitting
+it plainly:
+
+- **Below 40rem, the drawer becomes a bottom sheet, not a side panel** — it rises from the bottom to
+  roughly 70% of the viewport height, leaving a visible strip of the underlying page above it. That
+  strip is the concession that keeps faith with §3.3's spirit even though the letter (page "remains
+  visible and scrollable behind") can't hold at full width: a visitor comparing a spec-table row
+  against its evidence still sees *something* of the row they came from, even if not the whole table.
+- **The sheet itself scrolls independently**, exactly as the desktop panel does — a long excerpt or
+  a source with many citing claims (§2.8's `/evidence/:sourceId` reverse index) does not push the
+  close button off-screen.
+- **Shareable and back-button-safe are non-negotiable at every width**, including mobile — `?evidence=`
+  in the URL and one history entry per open/close are cheaper to implement correctly than they are to
+  special-case away, and a visitor on a phone sharing a citation is exactly as real a use case as one
+  on a desktop.
+- **Nothing else about mobile is allowed to touch the drawer's other two contracts.** The temptation
+  on a small viewport is often to make an overlay non-dismissable-by-back-button "for simplicity" —
+  this document rules that out explicitly, because it is the exact "surprise jump two levels up the
+  hierarchy" §3.3 was written to prevent, and a phone visitor is not owed a worse navigation model
+  than a desktop one.
+
+No other page in this document sacrifices a *contract* on mobile, only layout — this is deliberate:
+a responsive pass that quietly drops a promise (evidence stays reachable, gaps stay visible, a chain
+gap never requires horizontal scrolling to find) on the narrowest, most common viewport would let the
+mobile experience of this museum be a lesser one precisely where the desktop experience is proudest.
 
 ---
 
 ## 8. Accessibility
 
-*Skeleton.* Keyboard path per page, focus order, reduced-motion alternative, and the non-WebGL
-fallback — which, per the architecture doc §7, is not a hypothetical: 0 of 511 public variants are
-`render_ready` today, so the fallback *is* the current experience for the entire archive, not an
-edge case.
+`EXHIBITION_ARCHITECTURE.md` §7 states the fact this whole section has to design around: **0 of 527
+variants are `render_ready`.** Every cube this exhibition shows is, in some measure, the non-WebGL
+fallback's cousin already — a drawing standing in for a fact nobody has, not a scan. The fallback
+this section assesses is therefore not an edge case bolted on for a rare browser; it is a second,
+narrower instance of the same honesty problem every other page in this document solves.
+
+### 8.1 Keyboard path, per built page
+
+Only three pages exist to walk today; each is traced completely, since a complete trace of three
+real pages is worth more than a speculative one of twelve.
+
+**`/` (Landing):** the preview banner and the cube (`role="img"`) are correctly outside the tab
+order — neither is interactive, and a `role="img"` container is not a native focus target. The
+walkable path is short: **claim source link** (if the featured record's lead claim carries a URL)
+→ **"Everything the archive holds on this object"** → **Browse** → **Interrogate**. The pending
+**Trace** entry is a plain `<span>`, not a link (`.landing__way--pending` in `LandingPage.css`
+explicitly says so), and correctly never receives focus — an unbuilt path that could still be
+tabbed to and activated into nothing would be worse than one that is honestly absent from the tab
+order.
+
+**`/models/:modelId/variants/:variantId` (Variant):** **breadcrumb "Archive" link** → any
+**evidence citation with a URL** (in tier order, external, `target="_blank"`) → **"Every rendering
+convention in force"** link. Two gaps worth naming plainly rather than glossing: the confidence
+badges throughout the specification table (`BasisBadge`) are plain `<span>`s today, not buttons —
+so §3.4's promised behaviour ("every confidence tag is also an Interrogate entry point") is not yet
+keyboard-reachable per claim, only reachable in aggregate via the flat evidence list at the page's
+foot. A keyboard visitor can still reach every citation, just not scoped to the one row they were
+reading. And the rendering-convention list (`variant__convention-list`) is likewise inert — its
+`BasisBadge`s carry no `title`-triggered interaction a keyboard user can invoke, so the convention
+detail a mouse user gets from hovering the `title={value.conventionId}` attribute is not reachable
+by keyboard at all; the visible `visitor_disclosure` paragraph beside each item is the keyboard
+user's only access to that information, which is sufficient content-wise (nothing is withheld) but
+means the `title` attribute is decorative rather than a real access path.
+
+**`/conventions`:** **"Back to the archive"** link, then the page is a single long read with no
+further interactive elements — appropriate, since nothing on this page currently needs a second
+destination (a future "see an example on a real variant" link per convention would be a natural
+keyboard stop to add, and is not built).
+
+**What is not built at all:** the persistent header §3.2 specifies (home / entry-path chip /
+breadcrumb / search, present on every page) does not exist in `App.tsx` — each page currently
+supplies its own ad hoc "get back" link rather than sharing one component. There is also no skip
+link (`tokens.css`'s `--z-max` comment reserves the z-index for one — "skip link" — but nothing
+consumes it yet). Both are real, load-bearing gaps for keyboard use specifically: without the
+persistent header, "Home always returns to `/`... the one link guaranteed present and identical on
+every page" (§3.2) is not yet true, and without a skip link every keyboard visitor re-tabs through
+the same breadcrumb/banner chrome on every page load before reaching content.
+
+### 8.2 Focus order, restated as a rule for pages not yet built
+
+The pattern the three built pages already agree on, made explicit so the next twelve don't drift:
+**structural return-path link first (breadcrumb/back), primary content next in reading order,
+outbound citations in evidence order (never DOM-shuffled by hover state), single trailing
+cross-reference last.** Nothing in this document's built pages relies on `tabindex` greater than 0
+anywhere — source order *is* focus order throughout, which is also why §2's own "reading order" for
+every page spec doubles as its keyboard order with no translation needed.
+
+### 8.3 Reduced motion — two mechanisms, not one, because two rendering technologies are in play
+
+`base.css` §4 collapses `--duration-*` to near-zero under `prefers-reduced-motion: reduce`, which
+handles every CSS transition in the system (theme cross-fade, link colour, hover states) for free —
+a component author never writes a second media query as long as they animate against the tokens.
+That mechanism cannot reach into the 3D layer, because a CSS custom property cannot drive a
+`requestAnimationFrame` loop inside Three.js — so `CameraChoreographer` (`web/src/three/CameraStates.ts`)
+carries its **own**, independent check: `reducedMotion: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches`,
+wired in by `CubeCanvas.tsx`, read fresh at the moment of every `moveTo()` call rather than cached
+once. When it reads `true`, the camera **snaps** to the target state instead of tweening across
+`--duration-deliberate` (700ms) — the one motion `VISUAL_LANGUAGE.md` §5 calls "museum pacing"
+reserved for an object arriving on its plinth. Concretely, this also means the render loop
+(`CubeCanvas.tsx`'s on-demand `tick`) never spins up at all for a reduced-motion visitor loading a
+page whose camera starts already at its resting state — no animation to skip, so no per-frame cost
+either. **Both mechanisms are wired, not just the CSS one** — this is worth stating because it would
+have been easy to ship the CSS layer, believe "reduced motion is handled," and miss that the one
+piece of motion this design system treats as significant enough to name (§5's "one signature move")
+lives entirely outside CSS's reach.
+
+### 8.4 The non-WebGL fallback, assessed
+
+`CubeCanvas.tsx` wraps `new SceneRig(...)` in a `try/catch`; `SceneRig`'s own `THREE.WebGLRenderer`
+constructor throws when no WebGL context is available, and the catch sets a `failed` string that
+switches the component to `cube-canvas--unavailable`. What that state renders:
+
+> "This browser cannot draw the object. Nothing is lost from the record: the cube was never
+> photographed, only drawn, and everything it showed is described in words on this page."
+
+**What is right about it:** it does not apologise for the browser, and it does not treat the failure
+as a lesser experience — it reuses the exact honesty framing the rest of the archive uses for a
+missing fact ("nothing is lost... described in words") to describe a missing *rendering capability*,
+which is the correct move: a visitor who cannot see the cube loses precisely as much as a visitor who
+can, since what the cube shows is mostly convention rather than fact regardless. The fallback also
+reuses the *same* `aria-label` text the working `CubeCanvas` passes in (`LazyCube`'s `label` prop is
+shared across both branches), so a screen-reader visitor receives identical information whether or
+not their browser can render WebGL — the fallback is not a second-class description.
+
+**What is thin, on inspection:** three things, named precisely rather than hand-waved —
+
+1. **Only construction failure is caught.** A context that is created successfully and then lost
+   mid-session (`webglcontextlost`, a real event on GPU driver resets, especially on lower-end
+   mobile hardware) has no listener anywhere in `SceneRig` or `CubeCanvas` — a visitor in that
+   situation would be left with a blank or frozen canvas, not the honest fallback text, because the
+   `try/catch` already ran and succeeded before the loss occurred.
+2. **The fallback's own accessible name may not expose everything a sighted visitor sees.** The
+   `cube-canvas--unavailable` div carries `role="img" aria-label={label}` as a single node with two
+   visible `<p>` children (the label restated, then the reason). Several screen readers treat a
+   `role="img"` element's content as equivalent to an `<img>`'s — exposed only via its accessible
+   name, with DOM children not independently announced in browse mode. If that holds for the
+   assistive technology a given visitor uses, they would hear the `aria-label` text but not
+   necessarily the second paragraph's specific reassurance ("nothing is lost from the record")
+   as separate content — the same information is present in `label`, which already states "its
+   colours, piece geometry and surface are rendering conventions, not documented facts" (VariantPage)
+   or the equivalent (Landing), so nothing is actually withheld, but the two-paragraph structure
+   visible on screen is not guaranteed to be two announced units for every AT.
+3. **No listener for WebGL becoming unavailable *after* the component has already committed to the
+   working branch** at all (point 1's specific case), and no periodic re-check — reasonable for a
+   v1, but worth stating as a known boundary rather than an implicit one.
+
+None of the three is a reason to rebuild the fallback; the second is a candidate one-line fix
+(`aria-describedby` pointing at the reason paragraph, rather than relying on children of a
+`role="img"` node) for whichever lane next touches `CubeCanvas.tsx`, and the first and third are
+scoped, named follow-up work rather than an open-ended concern.
 
 ---
 
 ## 9. The vertical slice
 
-*Skeleton.* One model, end to end. Candidates checked against the real data in `data/variants/`:
-`gan-flagship-16` has 8 variant files, `dayan-guhong-pro-m` has 6. Chosen: `gan-flagship-16` — see
-§9 for the full justification, including why its specific 8 variants are an unusually good fit for
-demonstrating confidence variance and the `unknown` experience, not just variant count.
+### 9.1 The count, verified against real data
+
+`data/variants/gan/gan-flagship-16/` holds exactly **8** `.yml` files (`amyth-winter-limited-edition`,
+`aqualis-2026-summer-limited-edition`, `maglev-max-dual-wr-limited-edition`, `maglev-max-uv-coated`,
+`maglev-uv-coated`, `max-l-uv-coated`, `max-picube-20-magnet-ball-core-mod`,
+`picube-20-magnet-ball-core-mod`) — confirmed by directory listing for this document, not carried
+over from an earlier count. This agrees with §1's own compare-gate table (`/models/:modelId/compare`
+row: "`gan-flagship-16` 8") and with `EXHIBITION_ARCHITECTURE.md` §9's original candidate
+comparison. `dayan-guhong-pro-m` has 6, confirmed the same way — still the correct runner-up, still
+not chosen. The archive-wide totals this document has cited throughout also check out against real
+directory counts: **54** manufacturers (`data/manufacturers/*.yml`), **132** families
+(`data/families/*.yml`), **269** models (`data/models/**/*.yml`), **527** variants
+(`data/variants/**/*.yml`), **616** sources (`data/sources/*.yml`).
+
+One thing does not check out and is worth flagging precisely rather than silently working around:
+`EXHIBITION_ARCHITECTURE.md` §9 describes `gan-flagship-16` as "part of a 13-model lineage." Its
+actual family, per `data/models/gan/gan-flagship-16.yml`'s own `family_id`, is `gan-flagship-series`
+— **8 models** (§2.4 of this document uses that exact family as its worked lineage example: "GAN11
+M Pro through GAN17, plus GAN Mini M Pro"). The 13-model family in this archive is `gan-356`, a
+different GAN lineage entirely. This looks like a conflation in the architecture document rather
+than a fact about the data, and it sits outside this lane's file allow-list to correct at the
+source — noted here so the next lane that reads both documents doesn't inherit the error, and
+because it doesn't change the choice: `gan-flagship-16` is still the right slice, for reasons that
+don't depend on which of GAN's two lineages it sits in (§9.2).
+
+### 9.2 Why this model, specifically — beyond variant count
+
+Eight variants alone would justify the ≥2-variant compare gate but not necessarily a *vertical*
+slice. What makes `gan-flagship-16` the right choice is that its specific eight span nearly the
+entire range this document has argued a visitor needs to see in one object:
+
+- **A real confirmed fact sitting inside an all-`stub` record** — every one of the eight carries
+  `status: stub`, and `/config/maglev` on `gan-flagship-16--maglev-uv-coated` is independently
+  `confirmed`, sourced to GAN's own product page. This is the exact case §1.0 opens on: *stub* means
+  "not yet reviewed for publication," not "nothing is known," and a visitor needs to see both axes
+  refuse to collapse into one badge on the very object they're looking at.
+  - **A genuine judgement call, disclosed rather than hidden.** `maglev-max-dual-wr-limited-edition`'s
+  own source comment (`edition.signature_of` left populated while the archivist's note explains why
+  `signature` was nonetheless added to `edition.types`) is a real instance of an archivist reasoning
+  in the open, not a clean either/or.
+- **The full unknown taxonomy, not just one gap.** Across these eight: `run_size: null` at
+  `confidence: unknown` with an explicit "researched and not found. never estimated" note
+  (`amyth-winter-limited-edition`); `colorway.scheme: custom` present in the document with **no
+  attestation at all** (§5.3's real example, same record); `individually numbered: false` at
+  `uncertain` because absence of a numbering scheme is weak evidence rather than silence
+  (`maglev-max-dual-wr-limited-edition`); and, archive-wide, the six rendering conventions apply to
+  all eight uniformly (no face colour, no logo, no geometry profile documented for any of them).
+  One model produces every distinct unknown pattern this document names.
+- **A retailer-derived mod alongside manufacturer-sourced variants**, in
+  `picube-20-magnet-ball-core-mod` / `max-picube-20-magnet-ball-core-mod` — the same aftermarket
+  service (`picube`, `kind: service`, §5.5) whose zero-model roster entry this document had to
+  explain shows up here as *evidence*, not absence: a real, structural link between two sections of
+  this document (roster-level unknown and the object-level record) that a single-source-per-variant
+  model would never exercise.
+- **A named, dated, evidenced dispute at the model layer**, not just the variant layer: GAN13's
+  presence/absence flag on the same family's chain (§2.4) sits one hop away from this exact model,
+  so a visitor who lands here via Trace has the dispute one click behind them, not a hypothetical
+  elsewhere in the archive.
+
+### 9.3 Assessed against the architecture document's own five criteria
+
+`EXHIBITION_ARCHITECTURE.md` §9 sets five conditions the slice "must demonstrate." Taking each in
+turn, against what is actually built (`VariantPage.tsx`, `LandingPage.tsx`, `App.tsx`):
+
+| Criterion | Verdict | Evidence |
+|---|---|---|
+| A variant rendered from recorded parameters | **Met** | `resolveCubeVisualSpec()` builds a `CubeVisualSpec` from the variant's real `config`/`colorway` fields (size, coating, maglev) with per-field provenance (`three/types.ts`); conventions fill only the gaps that provenance marks unknown, per §5.1's precedence rule |
+| Switching configuration and seeing the model change | **Not met** | There is no way, inside a real page, to move from one `gan-flagship-16` variant to a sibling. `VariantPage.tsx` renders one variant with no links to the other seven; `/models/gan-flagship-16` and `/models/gan-flagship-16/compare` both fall through `App.tsx`'s route switch to the debug shell, which hardcodes exactly two of the eight variant links rather than deriving a roster. `VariantView` (`data/types.ts`) additionally carries no `relationships` field at all — unlike `ModelView`, which has both `relationships` and `inboundRelationships` — so even the `modified_from` link the PiCube mod variants need back to their base (§2.6, §2.7's own "sibling relationships... render as a link") has no view-model field to read from yet. This is the one criterion the built slice does not meet, and it is a real gap rather than a matter of interpretation. |
+| Confidence rendered rather than hidden | **Met, and beyond the bar** | `SpecRow`/`BasisBadge` render confidence as a full word at value-column type size on every field, including the six-value vocabulary, the two unknown kinds, and rendering conventions — §8.1 already documents the one shortfall (badges aren't independently keyboard-focusable), which is a *reachability* gap, not a *visibility* one |
+| The evidence drawer showing a real excerpt | **Partially met** | Real excerpts are shown — `VariantPage.tsx`'s evidence section renders verbatim `blockquote` excerpts with tier, kind, publisher and access date for every cited source, satisfying "a real excerpt" — but there is no *drawer*: no slide-in panel, no `?evidence=` query parameter, no `/evidence/:sourceId` permalink route, and no per-claim scoping (§3.3, §2.8). What's shown is the full, always-visible evidence list per §2.7's own layout, not the drawer component §2.8 specifies. |
+| One honest gap, displayed as unknown | **Met, strongly** | Both curated example variants carry real `UnknownValue`s rendered as findings, not blanks — §9.2 above lists three distinct patterns across this one model alone, more than the architecture document's own bar of one |
+
+**Net: three of five fully met, one partially, one not met.** The one full miss — configuration
+switching — is also the one the architecture document itself calls the sharpest test ("If the slice
+cannot show an `unknown` honestly, the design is wrong" is the stated bar for the *other* criterion;
+this document adds that a slice which cannot show a visitor moving between two configurations of the
+*same* model has not yet proven the "model" layer of the five-layer chain data → 3D object →
+interaction → historical context → exhibition presentation — only the "3D object" and "historical
+context" layers are exercised by a single, unlinked variant page).
+
+### 9.4 Built vs. specified, §2.7 line by line
+
+Structurally, the built `VariantPage.tsx` matches its own spec closely — closer than most
+first-implementation gaps this document has found elsewhere. Breadcrumb, status line, object stage,
+name, and a specification table with confidence as a same-size column are all present in the
+prescribed reading order. Two deliberate-looking departures, both improvements rather than defects:
+
+- **The convention disclosure moved from inline captions under the object to its own full section**
+  ("What you are looking at," between the name and the specification table) rather than the
+  wireframe's terse `[ face colours: STANDARD SCHEME (rendering convention) ⓘ ]` caption strip. The
+  built version is more thorough — full `visitor_disclosure` text and `asserts_nothing_about` for
+  every convention in force, not a one-line label — at the cost of moving further from the object
+  than the original wireframe placed it. Given §5.2's argument that a convention badge must never be
+  mistaken for evidence, more explanation earlier is the right trade.
+- **The evidence section has no on-demand drawer disclosure** — every citation's excerpt is always
+  rendered, rather than collapsed behind an "open evidence drawer →" affordance as §2.7's wireframe
+  shows. For a page with 1–4 citations (both curated examples), always-open reads as more honest,
+  not less; it would need reassessment on a variant with the archive's upper end of citation counts
+  before generalising as "the drawer is unnecessary."
+
+One place the built page is thinner than its own spec, not by redesign but by omission: §2.7's
+"Interactive" paragraph specifies that `modified_from`/sibling relationships "render as a link" —
+not built, per §9.3's finding on `VariantView`'s missing `relationships` field.
+
+### 9.5 What should be built next, in order
+
+1. **`/models/:modelId` and `/models/:modelId/compare`, for `gan-flagship-16` specifically.** This
+   closes the one unmet criterion (§9.3) and is the highest-leverage next step: it turns the slice
+   from "one plinth" into "one case with the plinth in context," which is the actual bar the
+   architecture document set.
+2. **A `relationships` field on `VariantView`**, mirroring `ModelView`'s, so the PiCube mod variants
+   (`max-picube-20-magnet-ball-core-mod` / `picube-20-magnet-ball-core-mod`) can link back to their
+   base configuration — a small, scoped type change that unblocks both the compare page's own
+   relationship column (§2.6) and §2.7's sibling-link promise.
+3. **The evidence drawer itself** (§2.8): the slide-in panel, `?evidence=` query-parameter state, and
+   the `/evidence/:sourceId` permalink route. Everything it needs is already in the view-model
+   (`EvidenceRef` in `data/types.ts`) — this is a component and a routing addition, not a data-layer
+   change.
+4. **The shared persistent header** (§3.2) and a skip link (§8.1) — every additional page built
+   without them multiplies the same gap rather than fixing it once.
+5. **Per-claim keyboard access to the evidence drawer** (§8.1) — once (3) exists, wiring
+   `BasisBadge` to open it scoped to one row is what actually delivers §3.4's "every confidence tag
+   is also an Interrogate entry point," not just the aggregate evidence list.
+6. **Component-level tests for the three built pages.** `web/src/data/adapter.test.ts` and
+   `web/src/three/conventions.test.ts` are the only test files in `web/src/`; nothing exercises
+   `LandingPage.tsx`, `VariantPage.tsx`, or `ConventionsPage.tsx` directly, so a future refactor has
+   no regression net for exactly the rules (§5.1's four branches, §5.2's badge precedence) this
+   document has spent the most words insisting must never drift.
+7. **The error-copy fix named in §6.8** and **an SPA-fallback rewrite rule for whatever host serves
+   this build** — `web/vite.config.ts` and the repository carry no `vercel.json`/`_redirects`/
+   `netlify.toml`, and this is a pure client-side router (`window.history.pushState`,
+   `web/src/app/router.ts`) with no server-rendering step, so a direct hit to `/conventions` on a
+   naively configured static host would 404 rather than resolve — a deployment concern, not a design
+   one, but one that would silently break every deep link this document has spent nine sections
+   insisting must be real and shareable (§3.1).
 
 ---
 
 ## Open items
 
-Tracked here so a killed session leaves an honest state. Empty once §1–9 are complete in full.
+All nine sections are complete. This checklist is kept as a record that they were, not as a
+tracker of unwritten prose — the actual open work this specification found against the running
+app is §9.5's ordered list (model page + compare page, a `relationships` field on `VariantView`,
+the evidence drawer, the shared header and skip link, per-claim keyboard access, component tests,
+error-copy, and an SPA-fallback hosting rule), plus the two smaller, named gaps in §5.3 (the
+unattested-value note column) and §8.4 (`webglcontextlost`, the fallback's accessible-name
+structure).
 
 - [x] §1 route map — full table
 - [x] §2 page specs — all routes, wireframes
 - [x] §3 navigation model
-- [ ] §4 entry paths made concrete
-- [ ] §5 unknown experience
-- [ ] §6 microcopy
-- [ ] §7 responsive behaviour
-- [ ] §8 accessibility
-- [ ] §9 vertical slice full spec
+- [x] §4 entry paths made concrete
+- [x] §5 unknown experience
+- [x] §6 microcopy
+- [x] §7 responsive behaviour
+- [x] §8 accessibility
+- [x] §9 vertical slice full spec
