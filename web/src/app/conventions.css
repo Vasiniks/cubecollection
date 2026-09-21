@@ -1,0 +1,170 @@
+/*
+ * The convention index — gallery signage for the museum's own presentation
+ * choices. Uses Lane B's tokens only; defines no colours or type sizes of
+ * its own.
+ */
+
+.conventions {
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: var(--space-9) var(--space-5) var(--space-11);
+}
+
+/* The opening claim. One monumental statement, then silence around it —
+   museum pacing, not a hero banner. */
+.conventions__claim {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-800), 7vw, var(--text-1000));
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-regular);
+  max-width: 18ch;
+  margin: 0 0 var(--space-7);
+  text-wrap: balance;
+}
+
+.conventions__standfirst {
+  font-size: var(--text-500);
+  line-height: var(--leading-relaxed);
+  color: var(--ink-700);
+  max-width: 54ch;
+  margin: 0 0 var(--space-9);
+}
+
+.conventions__eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin: 0 0 var(--space-5);
+}
+
+/* Each convention is a wall label: a rule on top, generous space, and the
+   disclosure set as the loudest thing in the entry after the title — because
+   the disclosure is the part a visitor must not miss. */
+.convention {
+  border-top: 1px solid var(--ink-100);
+  padding: var(--space-7) 0;
+  display: grid;
+  grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.convention__identity {
+  position: sticky;
+  top: var(--space-5);
+}
+
+.convention__name {
+  font-family: var(--font-display);
+  font-size: var(--text-600);
+  line-height: var(--leading-snug);
+  font-weight: var(--weight-regular);
+  margin: 0 0 var(--space-3);
+}
+
+.convention__id {
+  /* An accession number, not an inline code chip: base.css gives <code> a
+     surface-1 box, which reads as a snippet and fights the wall-label voice. */
+  font-family: var(--font-mono);
+  font-size: var(--text-100);
+  letter-spacing: var(--tracking-wider);
+  color: var(--ink-500);
+  display: block;
+  margin-bottom: var(--space-5);
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+/* The reach figure is the honest headline of each entry: how many records
+   this default stands in for. Set as data, in mono, at display size. */
+.convention__reach {
+  font-family: var(--font-mono);
+  font-size: var(--text-700);
+  line-height: 1;
+  color: var(--ink-900);
+}
+
+.convention__reach small {
+  display: block;
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin-top: var(--space-3);
+  line-height: var(--leading-normal);
+  max-width: 22ch;
+}
+
+/* The measurement date is one token; letting it wrap mid-date made it read
+   as two numbers. */
+.convention__measured {
+  display: block;
+  white-space: nowrap;
+}
+
+.convention__body > * + * {
+  margin-top: var(--space-6);
+}
+
+/* The disclosure is the one thing a visitor must not skim past, so it gets
+   the largest gap after it — the pause does the work that a heavier weight
+   would otherwise have to. */
+.convention__disclosure + .convention__field {
+  margin-top: var(--space-7);
+}
+
+.convention__disclosure {
+  font-size: var(--text-500);
+  line-height: var(--leading-relaxed);
+  color: var(--ink-900);
+  border-left: 3px solid var(--evidence-convention);
+  padding-left: var(--space-5);
+  margin: 0;
+}
+
+.convention__field {
+  margin: 0;
+}
+
+.convention__field + .convention__field {
+  margin-top: var(--space-6);
+}
+
+.convention__field dt {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin-bottom: var(--space-3);
+}
+
+.convention__field dd {
+  margin: 0;
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+  max-width: 68ch;
+}
+
+.convention__pointers {
+  font-family: var(--font-mono);
+  font-size: var(--text-300);
+  color: var(--ink-700);
+  background: none;
+  padding: 0;
+}
+
+@media (max-width: 52rem) {
+  .conventions { padding: var(--space-7) var(--space-4) var(--space-9); }
+  .convention {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+  }
+  /* Sticky identity is a desktop affordance; on a phone it would eat the
+     viewport the content needs. */
+  .convention__identity { position: static; }
+}

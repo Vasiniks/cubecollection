@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { loadMeta, isResearchPreview, type BundleMeta } from './bundle';
-import { useRoute } from './router';
+import { useRoute, href, navigate } from './router';
+import { ConventionsPage } from './ConventionsPage';
 
 export function App() {
   const route = useRoute();
@@ -28,6 +29,7 @@ export function App() {
           Research preview — these records are researched, not curator-approved.
         </p>
       )}
+      {route.name === 'conventions' ? <ConventionsPage /> : (
       <main data-testid="shell">
         <h1>CubeCollection</h1>
         <p>
@@ -36,7 +38,16 @@ export function App() {
           {meta.rendering_conventions} rendering conventions.
         </p>
         <p data-testid="route">route: {route.name}</p>
+        <p>
+          <a
+            href={href({ name: 'conventions' })}
+            onClick={(e) => { e.preventDefault(); navigate(href({ name: 'conventions' })); }}
+          >
+            How this exhibition draws what it cannot cite
+          </a>
+        </p>
       </main>
+      )}
     </>
   );
 }
