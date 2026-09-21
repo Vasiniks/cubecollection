@@ -11,6 +11,7 @@ export type Route =
   | { name: 'model'; id: string }
   | { name: 'variant'; modelId: string; id: string }
   | { name: 'conventions' }
+  | { name: 'unknowns' }
   | { name: 'notFound'; path: string };
 
 export function parse(pathname: string): Route {
@@ -22,6 +23,7 @@ export function parse(pathname: string): Route {
   if (a === 'models' && b && c === 'variants' && d) return { name: 'variant', modelId: b, id: d };
   if (a === 'models' && b) return { name: 'model', id: b };
   if (a === 'conventions') return { name: 'conventions' };
+  if (a === 'unknowns') return { name: 'unknowns' };
   return { name: 'notFound', path: pathname };
 }
 
@@ -33,6 +35,7 @@ export function href(route: Route): string {
     case 'model': return `/models/${route.id}`;
     case 'variant': return `/models/${route.modelId}/variants/${route.id}`;
     case 'conventions': return '/conventions';
+    case 'unknowns': return '/unknowns';
     case 'notFound': return route.path;
   }
 }

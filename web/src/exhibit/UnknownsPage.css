@@ -1,0 +1,140 @@
+/* The gaps, as a room of their own. */
+
+.unknowns {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-5) var(--space-11);
+}
+
+.unknowns__return,
+.unknowns__eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin: 0 0 var(--space-5);
+}
+
+.unknowns__return a::before { content: "\2190"; margin-right: var(--space-2); }
+
+.unknowns__claim {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-800), 7vw, var(--text-1000));
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-regular);
+  margin: 0 0 var(--space-6);
+  max-width: 16ch;
+}
+
+.unknowns__standfirst {
+  font-size: var(--text-500);
+  line-height: var(--leading-relaxed);
+  color: var(--ink-700);
+  margin: 0 0 var(--space-9);
+}
+
+.unknowns__section-title {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--ink-500);
+  font-weight: var(--weight-regular);
+  border-top: 1px solid var(--ink-300);
+  padding-top: var(--space-4);
+  margin: var(--space-9) 0 var(--space-6);
+}
+
+.unknowns__note { line-height: var(--leading-relaxed); color: var(--ink-700); }
+
+/* The page's own limit, set as plainly as its findings. */
+.unknowns__caveat {
+  border-left: 3px solid var(--confidence-unknown);
+  padding-left: var(--space-5);
+  color: var(--ink-700);
+  line-height: var(--leading-relaxed);
+  margin: var(--space-6) 0 var(--space-8);
+}
+
+/* ---------------------------------------------------------------- blockers */
+
+.blockers { list-style: none; margin: 0 0 var(--space-6); padding: 0; display: grid; gap: var(--space-5); }
+
+.blocker {
+  display: grid;
+  grid-template-columns: auto auto minmax(0, 1fr);
+  align-items: baseline;
+  gap: var(--space-2) var(--space-3);
+}
+
+.blocker__count {
+  font-family: var(--font-mono);
+  font-size: var(--text-700);
+  line-height: 1;
+  color: var(--ink-900);
+}
+
+.blocker__of {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+.blocker__name { font-size: var(--text-400); color: var(--ink-700); }
+
+.blocker__bar {
+  grid-column: 1 / -1;
+  display: block;
+  block-size: 3px;
+  background: var(--ink-100);
+}
+
+.blocker__bar > span {
+  display: block;
+  block-size: 100%;
+  background: var(--confidence-unknown);
+}
+
+/* ---------------------------------------------------------------- bars */
+
+.maker-bars { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-5); }
+
+.maker-bar {
+  display: grid;
+  grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-2) var(--space-4);
+}
+
+.maker-bar__name { font-size: var(--text-400); text-decoration: none; }
+.maker-bar__name:hover { text-decoration: underline; }
+
+.maker-bar__track { display: flex; block-size: 0.75rem; background: var(--ink-100); }
+
+/* Two segments, two different epistemic states — never one gradient. */
+.maker-bar__attested { background: var(--confidence-probable); }
+.maker-bar__searched {
+  background: repeating-linear-gradient(
+    45deg, var(--confidence-unknown) 0 2px, transparent 2px 5px
+  );
+  border-block: 1px solid var(--confidence-unknown);
+}
+
+.maker-bar__figures {
+  grid-column: 2;
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  color: var(--ink-500);
+}
+
+@media (max-width: 52rem) {
+  .unknowns { padding: var(--space-6) var(--space-4) var(--space-9); }
+  .maker-bar { grid-template-columns: minmax(0, 1fr); }
+  .maker-bar__figures { grid-column: 1; }
+  .blocker { grid-template-columns: auto minmax(0, 1fr); }
+}

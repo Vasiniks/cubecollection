@@ -42,10 +42,18 @@
   text-transform: uppercase;
 }
 
-.conventions__return a::before {
+.conventions__return {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-6);
+}
+
+.conventions__return a:first-child::before {
   content: "\2190";
   margin-right: var(--space-2);
 }
+
+.conventions__sibling::after { content: " \2192"; }
 
 .conventions__eyebrow {
   font-family: var(--font-mono);

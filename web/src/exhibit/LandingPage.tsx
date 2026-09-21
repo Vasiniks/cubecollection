@@ -125,19 +125,23 @@ export function LandingPage() {
             </a>
           </li>
           <li>
-            <a href={href({ name: 'conventions' })}
-               onClick={(e) => { e.preventDefault(); navigate(href({ name: 'conventions' })); }}>
+            <a href={href({ name: 'unknowns' })}
+               onClick={(e) => { e.preventDefault(); navigate(href({ name: 'unknowns' })); }}>
               <span className="landing__way-name">Interrogate</span>
               <span className="landing__way-note">
-                Start with what the exhibition invented, and why.
+                Start with what is missing, and with what the exhibition invented
+                to cover it.
               </span>
             </a>
           </li>
-          <li className="landing__way--pending">
-            <span className="landing__way-name">Trace</span>
-            <span className="landing__way-note">
-              Follow a lineage across generations. Not built yet.
-            </span>
+          <li>
+            <a href={href({ name: 'model', id: modelId })}
+               onClick={(e) => { e.preventDefault(); navigate(href({ name: 'model', id: modelId })); }}>
+              <span className="landing__way-name">Trace</span>
+              <span className="landing__way-note">
+                Follow one design across its generations and configurations.
+              </span>
+            </a>
           </li>
         </ul>
       </section>

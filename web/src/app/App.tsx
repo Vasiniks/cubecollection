@@ -7,6 +7,7 @@ import { LandingPage } from '../exhibit/LandingPage';
 import { MakersPage } from '../exhibit/MakersPage';
 import { ModelPage } from '../exhibit/ModelPage';
 import { MakerPage } from '../exhibit/MakerPage';
+import { UnknownsPage } from '../exhibit/UnknownsPage';
 
 export function App() {
   const route = useRoute();
@@ -44,6 +45,7 @@ export function App() {
        : route.name === 'makers' ? <MakersPage />
        : route.name === 'model' ? <ModelPage modelId={route.id} />
        : route.name === 'maker' ? <MakerPage manufacturerId={route.id} />
+       : route.name === 'unknowns' ? <UnknownsPage />
        : (
       <main data-testid="shell">
         <h1>CubeCollection</h1>

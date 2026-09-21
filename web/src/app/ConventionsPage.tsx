@@ -76,6 +76,13 @@ export function ConventionsPage() {
         >
           Back to the archive
         </a>
+        <a
+          className="conventions__sibling"
+          href={href({ name: 'unknowns' })}
+          onClick={(e) => { e.preventDefault(); navigate(href({ name: 'unknowns' })); }}
+        >
+          What this archive does not know
+        </a>
       </nav>
 
       <p className="conventions__eyebrow">How this exhibition draws what it cannot cite</p>
