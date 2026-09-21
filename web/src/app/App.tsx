@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { loadMeta, isResearchPreview, type BundleMeta } from './bundle';
 import { useRoute, href, navigate } from './router';
+import { Trouble } from '../exhibit/Trouble';
+import '../exhibit/Trouble.css';
 import { ConventionsPage } from './ConventionsPage';
 import { VariantPage } from '../exhibit/VariantPage';
 import { LandingPage } from '../exhibit/LandingPage';
@@ -25,7 +27,13 @@ export function App() {
     return () => ac.abort();
   }, []);
 
-  if (error) return <main data-testid="bundle-error"><p>{error}</p></main>;
+  if (error) {
+    return (
+      <main data-testid="bundle-error">
+        <Trouble detail={error}>The exhibition could not read its bundle.</Trouble>
+      </main>
+    );
+  }
   if (!meta) return <main data-testid="bundle-loading"><p>Opening the archive…</p></main>;
 
   return (

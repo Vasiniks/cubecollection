@@ -7,6 +7,8 @@ import { isUnknown } from '../data/types.ts';
 import { LazyCube } from './LazyCube.tsx';
 import { SpecRow, SpecTable, BasisBadge } from './values.tsx';
 import { loadConventions, type RenderingConvention } from '../app/conventions.ts';
+import { Trouble } from './Trouble.tsx';
+import './Trouble.css';
 import { href, navigate } from '../app/router.ts';
 import './VariantPage.css';
 
@@ -61,7 +63,7 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
     return () => { live = false; };
   }, [modelId, variantId]);
 
-  if (error) return <main className="variant"><p>{error}</p></main>;
+  if (error) return <main className="variant"><Trouble detail={error}>This object could not be brought out.</Trouble></main>;
   if (!state) return <main className="variant"><p>Opening the case…</p></main>;
 
   const { view, conventions } = state;
@@ -154,6 +156,28 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
                 ))}
         </SpecTable>
       </section>
+
+      {view.relationships.length > 0 && (
+        <section aria-labelledby="vrel-h">
+          <h2 id="vrel-h" className="variant__section-title">Built from</h2>
+          <ul className="variant__relationships">
+            {view.relationships.map((r, i) => {
+              const to = r.targetId && r.targetEntity === 'variant'
+                ? href({ name: 'variant', modelId, id: r.targetId }) : null;
+              return (
+                <li key={`${r.type}-${r.targetId ?? i}`}>
+                  <span className="variant__rel-type">{r.type.replace(/_/g, ' ')}</span>
+                  <span className="variant__rel-target">
+                    {to
+                      ? <a href={to} onClick={(e) => { e.preventDefault(); navigate(to); }}>{r.targetId}</a>
+                      : (r.targetId ?? '—')}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
 
       <section aria-labelledby="ev-h" className="variant__evidence">
         <h2 id="ev-h" className="variant__section-title">

@@ -321,6 +321,11 @@ export interface VariantView {
    * bundle's resolved_specs carries — the adapter does not hardcode the field list, so it never
    * drifts from build.mjs's SPEC_FIELDS. */
   resolvedSpecs: Record<string, ResolvedSpecView<unknown>>;
+  /** Sibling and base-product links — a modification service's variant points
+   *  back at the stock configuration it was built from. Present for the same
+   *  reason ModelView carries them: lineage is followable or it is decorative. */
+  relationships: RelationshipView[];
+  inboundRelationships: RelationshipView[];
   firstRelease: Value<string>;
   render: RenderDiagnostics;
   evidenceTrail: EvidenceRef[];

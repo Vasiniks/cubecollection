@@ -8,6 +8,8 @@ import { adaptManufacturer, adaptModel, type RawSource } from '../data/adapter.t
 import type { ManufacturerView, ModelView } from '../data/types.ts';
 import { isUnknown, isSourceBacked } from '../data/types.ts';
 import { SpecRow, SpecTable, formatValue } from './values.tsx';
+import { Trouble } from './Trouble.tsx';
+import './Trouble.css';
 import { href, navigate } from '../app/router.ts';
 import './VariantPage.css';
 import './MakerPage.css';
@@ -48,7 +50,7 @@ export function MakerPage({ manufacturerId }: { manufacturerId: string }) {
     return () => { live = false; };
   }, [manufacturerId]);
 
-  if (error) return <main className="maker-room"><p>{error}</p></main>;
+  if (error) return <main className="maker-room"><Trouble detail={error}>This maker&rsquo;s room could not be opened.</Trouble></main>;
   if (!state) return <main className="maker-room"><p>Opening the room…</p></main>;
 
   const { maker, models, withheld } = state;

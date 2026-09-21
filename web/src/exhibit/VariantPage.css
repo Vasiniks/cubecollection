@@ -289,3 +289,32 @@
   .spec__evidence-row > td { padding-bottom: var(--space-4); }
   .claim-evidence { padding-left: var(--space-4); }
 }
+
+/* A modified configuration points back at the stock one it was built from.
+   Lineage is followable or it is decorative. */
+.variant__relationships {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+
+.variant__relationships li {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: baseline;
+}
+
+.variant__rel-type {
+  font-family: var(--font-mono);
+  font-size: var(--text-200);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+@media (max-width: 52rem) {
+  .variant__relationships li { grid-template-columns: minmax(0, 1fr); gap: var(--space-1); }
+}

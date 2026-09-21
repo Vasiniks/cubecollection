@@ -216,9 +216,10 @@ Before any breadth, prove the chain end to end:
 data → 3D object → interaction → historical context → exhibition presentation
 ```
 
-**Candidate: `gan-flagship-16`** — 8 variants, a deep maker, populated mechanism axes, part of a
-13-model lineage. It exercises lineage, configuration comparison, mechanism and provenance in one
-object. `dayan-guhong-pro-m` (6 variants) is the historical alternative.
+**Candidate: `gan-flagship-16`** — 8 variants, a deep maker, populated mechanism axes, one of the
+8 models in the `gan-flagship-series` family. It exercises lineage, configuration comparison,
+mechanism and provenance in one object. (An earlier draft called this "a 13-model lineage"; 13 is
+the size of `gan-356`, a different GAN family.) `dayan-guhong-pro-m` (6 variants) is the historical alternative.
 
 The slice must demonstrate: a variant rendered from recorded parameters; switching configuration
 and seeing the model change; confidence rendered rather than hidden; the evidence drawer showing

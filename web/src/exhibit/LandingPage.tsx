@@ -8,6 +8,8 @@ import { BasisBadge } from './values.tsx';
 import { pickFeatured } from './featured.ts';
 import { leadClaim, type LeadClaim } from './claim.ts';
 import { Cite } from './Cite.tsx';
+import { Trouble } from './Trouble.tsx';
+import './Trouble.css';
 import { href, navigate } from '../app/router.ts';
 import './LandingPage.css';
 
@@ -52,7 +54,7 @@ export function LandingPage() {
     return () => { live = false; };
   }, []);
 
-  if (error) return <main className="landing"><p>{error}</p></main>;
+  if (error) return <main className="landing"><Trouble detail={error}>The archive could not be opened.</Trouble></main>;
   if (!state) return <main className="landing"><p className="landing__loading">Opening the archive…</p></main>;
 
   const { meta, raw, claim, claimSources, modelId } = state;

@@ -577,6 +577,8 @@ export function adaptVariant(
     edition,
     colorway,
     resolvedSpecs,
+    relationships: adaptRelationships(raw.relationships, att, '/relationships'),
+    inboundRelationships: adaptRelationships(raw.inbound_relationships, att, '/inbound_relationships'),
     firstRelease: attestedValue(att, '/first_release', raw.first_release),
     render: {
       geometryProfileId: proc?.geometry_profile_id ?? null,

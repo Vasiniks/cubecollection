@@ -7,6 +7,8 @@ import type { ModelView, VariantView } from '../data/types.ts';
 import { isUnknown } from '../data/types.ts';
 import { SpecRow, SpecTable, BasisBadge, formatValue } from './values.tsx';
 import { Cite } from './Cite.tsx';
+import { Trouble } from './Trouble.tsx';
+import './Trouble.css';
 import { href, navigate } from '../app/router.ts';
 import './VariantPage.css';
 import './ModelPage.css';
@@ -38,7 +40,7 @@ export function ModelPage({ modelId }: { modelId: string }) {
     return () => { live = false; };
   }, [modelId]);
 
-  if (error) return <main className="model"><p>{error}</p></main>;
+  if (error) return <main className="model"><Trouble detail={error}>This design could not be brought out.</Trouble></main>;
   if (!state) return <main className="model"><p>Opening the case…</p></main>;
 
   const { model, variants } = state;

@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { createBundle, loadVariants, loadModels, loadManufacturers } from '../data/load.ts';
 import type { RawAttestations } from '../data/adapter.ts';
+import { Trouble } from './Trouble.tsx';
+import './Trouble.css';
 import { href, navigate } from '../app/router.ts';
 import './UnknownsPage.css';
 
@@ -75,7 +77,7 @@ export function UnknownsPage() {
     return () => { live = false; };
   }, []);
 
-  if (error) return <main className="unknowns"><p>{error}</p></main>;
+  if (error) return <main className="unknowns"><Trouble detail={error}>The gaps could not be counted.</Trouble></main>;
   if (!state) return <main className="unknowns"><p>Counting the gaps…</p></main>;
 
   const { blockers, variantCount, makers, totals } = state;

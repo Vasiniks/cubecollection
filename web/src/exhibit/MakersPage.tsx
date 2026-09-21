@@ -4,6 +4,8 @@ import type { Withheld } from '../data/load.ts';
 import { adaptManufacturer } from '../data/adapter.ts';
 import type { ManufacturerView } from '../data/types.ts';
 import { isSourceBacked, isUnknown } from '../data/types.ts';
+import { Trouble } from './Trouble.tsx';
+import './Trouble.css';
 import { href, navigate } from '../app/router.ts';
 import './MakersPage.css';
 
@@ -80,7 +82,7 @@ export function MakersPage() {
     return () => { live = false; };
   }, []);
 
-  if (error) return <main className="makers"><p>{error}</p></main>;
+  if (error) return <main className="makers"><Trouble detail={error}>The roster could not be read.</Trouble></main>;
   if (!makers) return <main className="makers"><p>Reading the roster…</p></main>;
 
   const tiers: Record<Tier, ManufacturerView[]> = { deep: [], mid: [], thin: [] };
