@@ -52,6 +52,10 @@ export function CubeCanvas({ spec, cameraState = 'hero', label }: CubeCanvasProp
     host.appendChild(rig.renderer.domElement);
     rig.observeResize(host);
 
+    // Render on demand, not every frame. The object is static unless the camera
+    // is moving or the canvas resized, and a permanent rAF loop on a still image
+    // costs a laptop its battery for nothing. A museum label does not flicker
+    // sixty times a second either.
     let raf = 0;
     let last = performance.now();
     const tick = (now: number) => {
@@ -59,12 +63,24 @@ export function CubeCanvas({ spec, cameraState = 'hero', label }: CubeCanvasProp
       last = now;
       choreographer.update(dt);
       rig.render();
-      raf = requestAnimationFrame(tick);
+      raf = choreographer.isTransitioning ? requestAnimationFrame(tick) : 0;
     };
-    raf = requestAnimationFrame(tick);
+    const wake = () => {
+      last = performance.now();
+      if (!raf) raf = requestAnimationFrame(tick);
+    };
+
+    // First paint, plus a redraw whenever the element is resized.
+    rig.render();
+    const ro = new ResizeObserver(() => { rig.render(); });
+    ro.observe(host);
+
+    // Any camera move restarts the loop; it stops itself when the move ends.
+    wake();
 
     return () => {
-      cancelAnimationFrame(raf);
+      ro.disconnect();
+      if (raf) cancelAnimationFrame(raf);
       exhibit.dispose?.();
       rig.dispose();
       if (rig.renderer.domElement.parentNode === host) {

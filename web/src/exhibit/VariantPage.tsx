@@ -20,6 +20,17 @@ interface Loaded {
   conventions: RenderingConvention[];
 }
 
+/** True when every face carries the same basis and the same value, so one row
+ *  can stand for all six without hiding a difference. */
+function facesAgree(faces: VariantView['colorway']['faces']): boolean {
+  const first = faces[0];
+  if (!first || faces.length !== 6) return false;
+  const key = (v: typeof first.color) =>
+    `${v.basis}|${'value' in v ? JSON.stringify(v.value) : ''}|${'confidence' in v ? v.confidence : ''}|${'searched' in v ? v.searched : ''}`;
+  const k = key(first.color);
+  return faces.every((f) => key(f.color) === k);
+}
+
 export function VariantPage({ modelId, variantId }: { modelId: string; variantId: string }) {
   const [state, setState] = useState<Loaded | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -136,9 +147,15 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
             <SpecRow term="surface application" value={view.colorway.application} />
             <SpecRow term="body plastic colour" value={view.colorway.body.plasticColor} />
             <SpecRow term="logo placement" value={view.colorway.logo.placement} />
-            {view.colorway.faces.map((f) => (
-              <SpecRow key={f.face} term={`face ${f.face}`} value={f.color} />
-            ))}
+            {/* The archive documents no face colour on any cube, so six rows all
+                reading the same thing is noise rather than detail. They are
+                collapsed ONLY when all six genuinely agree; the moment one face
+                is researched, the rows separate again and the difference shows. */}
+            {facesAgree(view.colorway.faces)
+              ? <SpecRow term="face colours (all six)" value={view.colorway.faces[0]!.color} />
+              : view.colorway.faces.map((f) => (
+                  <SpecRow key={f.face} term={`face ${f.face}`} value={f.color} />
+                ))}
           </tbody>
         </table>
       </section>
