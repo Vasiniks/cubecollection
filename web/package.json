@@ -1,0 +1,14 @@
+{
+  "name": "@cubecollection/web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "CubeCollection Phase III exhibition frontend. src/data/ is the archive -> exhibition adapter; see src/data/README.md for the contract.",
+  "engines": {
+    "node": ">=23.6.0"
+  },
+  "scripts": {
+    "test": "node --test src/data/*.test.ts",
+    "test:legacy": "node --experimental-strip-types --test src/data/*.test.ts"
+  }
+}
