@@ -677,10 +677,129 @@ section exists to prevent.
 
 ## 4. The three entry paths, made concrete
 
-*Skeleton.* Browse (by maker, the default), Trace (by lineage or mechanism), Interrogate (by
-evidence, challenging a claim) — concrete starting screens, concrete first clicks, using real
-families and disputes already in the archive (e.g. the GAN founding-date dispute, the MoYu WeiLong
-numbering gap, ledger item P4-7's catalogue-artefact date).
+`EXHIBITION_ARCHITECTURE.md` §6 names three entry paths "because three genuinely different
+visitors exist" and gives each one line: Browse is by maker, the default; Trace is by lineage or
+mechanism, the enthusiast path; Interrogate is by evidence, the archivist path, and the one nobody
+else offers. §1 and §2 of this document already give each path its routes and page specs. This
+section makes each path a walk a visitor actually takes — first screen, the promise it opens on,
+and the next three or four clicks — using only records already named elsewhere in this document.
+
+A path is a way *in*, not a fence. §3.4 already establishes that every detail page carries a link
+that reframes the visitor into a different path (a model page's "Trace this lineage →", a drawer's
+"View full source record →"). What follows is each path's *own* shape before that reframing
+happens — the room a visitor is standing in when they haven't clicked anything else yet.
+
+### 4.1 Browse — by maker
+
+**First screen:** `/makers` (§2.2), and the promise is stated by the layout before any copy does:
+three tiers, deep first, so the first thing a Browse visitor learns is which makers this archive
+actually knows in depth. **What it promises:** *you don't need to know a name to start; wander, and
+the size of what you find tells you how well it's known.* No search box on this screen — Trace and
+Interrogate both open on a specific claim, Browse opens on breadth instead.
+
+**First click:** a deep-tier tile — GAN. **What that click lands on:** not a gallery grid, but
+`/makers/gan` (§2.3), and the very first thing under the header is not a roster, it's a dispute:
+GAN's own founding record carries four dated candidates (2010, 2011, 2013, 2014) and renders as
+`DISPUTED ⓘ — four candidate events, not one error`. A Browse visitor who expected an uncomplicated
+identity page gets, in one click, evidence that even "when was this company founded" is not settled
+here — which is the whole proposition, delivered before the visitor asked for it.
+
+**Second click:** a family row — GAN Flagship Series (8 models, ongoing). **Lands on:**
+`/families/gan-flagship-series` (§2.4), the succession chain GAN11 M Pro → … → GAN17, with GAN13
+flagged mid-chain (`* GAN13: seen in one 2025 maker listing, absent from a later one — flagged, not
+resolved`) and GAN Mini M Pro called out beside the chain as a sibling that never got an ordinal.
+Browse's wandering, two clicks in, has already produced a second unresolved question, presented as
+one — not smoothed over to keep the roster page tidy.
+
+**Third click:** GAN16 on the chain. **Lands on:** `/models/gan-flagship-16` (§2.5) — the vertical
+slice's model, 8 variants, differing by magnet count, coating and edition. **Fourth click:** any
+variant name, e.g. "Dual-WR Limited Edition" → `/models/gan-flagship-16/variants/gan-flagship-16--maglev-max-dual-wr-limited-edition`
+(§2.7) — the object on the plinth. Four clicks, no search, no prior knowledge of GAN's product
+naming, and the visitor has already met a founding dispute, a chain gap, and a fully-cited variant.
+
+**How a Browse visitor moves on:** back up the breadcrumb to try a different family, sideways via
+predecessor/successor arrows on the model page, or out through "Trace this lineage →" (§3.4) if the
+chain itself becomes the more interesting object.
+
+### 4.2 Trace — by lineage or mechanism
+
+Trace has two roots (§1: `/lineage` and `/mechanism`), because "follow a lineage" and "follow a
+mechanism across makers" are the same *kind* of path — a thread, not a room — but different
+threads. Both are described in full at §2.9–§2.10; this section gives each its concrete walk.
+
+**Lineage root — first screen:** `/lineage` (§2.10), seven named families with real generational
+depth (`gan-356` 13 models, `moyu-weilong` 10, `yj-mgc` 9, `gan-flagship-series` 8, `dayan-zhanchi`
+7, `dayan-guhong` 6, `qiyi-warrior` 6), with a standing note that 125 more families exist and are
+reachable through Browse, not hidden. **What it promises:** *depth is not evenly spread across this
+archive, and Trace shows you where it actually is, rather than making you guess by clicking through
+54 makers.*
+
+**First click:** `moyu-weilong` (10 models). **Lands on:** `/families/moyu-weilong`, the real gap
+`EXHIBITION_UX.md` has cited since §2.4's own model: WeiLong V2 → GTS → WR → V9, with **"V3–V8 never
+existed" printed on the chain itself** — a maker's own numbering choice, not a data-entry hole, and
+the chain says so rather than leaving six missing numbers for a visitor to wonder about. **Second
+click:** V9 (or WR) on the chain → `/models/:modelId`, then onward exactly as in §4.1's third/fourth
+clicks (variant roster → variant page) if `moyu-weilong` has a multi-configuration model, or
+straight to a single variant page (§2.5's "single-configuration model" case) if it doesn't.
+
+**Mechanism root — first screen:** `/mechanism` (§2.9), eight rows, each a population count —
+`maglev` 94, `coating` 84, `weight_g` 74, `magnet_configuration` 62, `size_mm` 50,
+`magnet_strength` 31, `adjustment_system` 25, `core_system` 21 — and nothing else, because the
+count *is* the content at this depth. **What it promises:** *pick a piece of technology, not a
+brand, and watch it cross every maker that used it.* **First click:** `maglev` →
+`/mechanism/maglev`, a cross-maker strip of the 94 variants where the axis is populated, grouped by
+value rather than by manufacturer — `gan-flagship-16--maglev-max-dual-wr-limited-edition` is one
+tile among makers Trace never asked the visitor to already know. **Second click:** that tile →
+the variant page directly (§2.7) — mechanism is the one root that can drop a Trace visitor straight
+onto the plinth with no model-page stop in between, because "what uses this mechanism" is itself
+the organizing question, not "what does this model look like."
+
+**How a Trace visitor moves on:** the lineage chain's own predecessor/successor links keep them in
+Trace; a mechanism tile's breadcrumb is a Browse exit (§3.4) the moment the visitor wants to see
+everything else that maker made, which switches the chip without asking Trace to explain itself.
+
+### 4.3 Interrogate — by evidence
+
+**First screen:** `/case` (§2.12), and it opens on a refusal, not an acceptance, because
+`RESEARCH_FINAL_HANDOFF.md` itself observes refusals are more persuasive. **What it promises:**
+*start by watching this archive say no to a source, and you'll trust what it says yes to.* The
+refusal: `gan-354-m`'s `announced` date, downgraded from `probable` to `uncertain` because its only
+apparent evidence — TheCubicle's "Added: 2018-09-11" — is a catalogue-migration artefact appearing
+verbatim 29 times across 22 sources and 13 unrelated brands, not a per-product date at all. The page
+shows the rejected reading and the retained one side by side, plus the still-open ledger question
+(**P4-7**: "whether such a stamp may be used as a bound at all," `needs_human_decision`) that the
+refusal raised. An Interrogate visitor's first click is optional by design — the refusal is legible
+without one — but the page offers two: the case's own link to `gan-354-m`, and a link to P4-7's
+plain-language framing.
+
+**First click (into the archive):** `gan-354-m` → its model page, where the *same* downgraded date
+now sits in context, next to the model's other, better-attested fields — the point being that one
+refusal does not make the whole record suspect, it makes this one field honestly weaker than its
+neighbours. **First click (into the method):** P4-7's framing, which is not the raw ledger YAML but
+a plain-language account of the open question — an Interrogate visitor came to test the archive's
+reasoning, not to read its issue tracker.
+
+**Second entry, from the same root:** `/unknowns` (§2.13), the archive-wide gap dashboard —
+opens on the render-blocker picture (face colour undocumented on all 527 variants; body plastic
+colour on 505 of 527) before any per-maker breakdown, because the *scale* of what is undocumented is
+itself the finding Interrogate exists to surface. §5 gives this page's full treatment.
+
+**How an Interrogate visitor moves on:** every confidence tag anywhere in the archive is already an
+Interrogate entry point (§3.4) — a visitor who arrived via Browse or Trace and clicks one *becomes*
+an Interrogate visitor mid-session, chip and all, without having started at `/case`.
+
+### 4.4 What exists today against this spec
+
+Only `/` (Landing), `/conventions`, and one variant page are built (`web/src/app/App.tsx`'s route
+switch); `/makers`, `/lineage`, `/mechanism`, `/case`, and `/unknowns` all fall through to a debug
+shell today, so none of the three walks above can be taken in the running app yet — §9 assesses this
+gap in full, against the vertical slice's own success criteria, rather than repeating it here. Two
+things are worth flagging in this section specifically, because they are shortcuts around Browse and
+Interrogate's *first screens*, not just missing pages: the built `LandingPage.tsx`'s "Browse" link
+goes straight to the featured variant's own page rather than to `/makers`, and its "Interrogate"
+link goes to `/conventions` rather than `/case` — both real, useful pages, but neither is the entry
+screen this section specifies, and a visitor clicking "Browse" today gets a single object rather
+than the wandering §4.1 promises.
 
 ---
 
@@ -734,7 +853,7 @@ Tracked here so a killed session leaves an honest state. Empty once §1–9 are 
 - [x] §1 route map — full table
 - [x] §2 page specs — all routes, wireframes
 - [x] §3 navigation model
-- [ ] §4 entry paths made concrete
+- [x] §4 entry paths made concrete
 - [ ] §5 unknown experience
 - [ ] §6 microcopy
 - [ ] §7 responsive behaviour
