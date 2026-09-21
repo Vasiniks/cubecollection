@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { loadMeta, isResearchPreview, type BundleMeta } from './bundle';
 import { useRoute, href, navigate } from './router';
-import { Trouble } from '../exhibit/Trouble';
+import { Trouble, NoSuchRoom } from '../exhibit/Trouble';
 import '../exhibit/Trouble.css';
 import { ConventionsPage } from './ConventionsPage';
 import { VariantPage } from '../exhibit/VariantPage';
@@ -54,38 +54,25 @@ export function App() {
        : route.name === 'model' ? <ModelPage modelId={route.id} />
        : route.name === 'maker' ? <MakerPage manufacturerId={route.id} />
        : route.name === 'unknowns' ? <UnknownsPage />
-       : (
-      <main data-testid="shell">
-        <h1>CubeCollection</h1>
-        <p>
-          {meta.counts.public.manufacturer} makers, {meta.counts.public.model} models,{' '}
-          {meta.counts.public.variant} variants, {meta.counts.public.source} sources,{' '}
-          {meta.rendering_conventions} rendering conventions.
-        </p>
-        <p data-testid="route">route: {route.name}</p>
-        <p>
-          <a
-            href={href({ name: 'conventions' })}
-            onClick={(e) => { e.preventDefault(); navigate(href({ name: 'conventions' })); }}
-          >
-            How this exhibition draws what it cannot cite
-          </a>
-        </p>
-        <ul>
-          {[
-            ['gan-flagship-16--maglev-max-dual-wr-limited-edition', 'GAN16 Maglev MAX (Dual-WR Limited Edition)'],
-            ['gan-flagship-16--amyth-winter-limited-edition', 'Amyth — GAN16 Maglev MAX Winter Limited Edition'],
-          ].map(([id, name]) => {
-            const to = href({ name: 'variant', modelId: 'gan-flagship-16', id: id as string });
-            return (
-              <li key={id}>
-                <a href={to} onClick={(e) => { e.preventDefault(); navigate(to); }}>{name}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </main>
-      )}
+       : route.name === 'notFound' ? (
+         <main className="makers">
+           <NoSuchRoom path={route.path} />
+           <p className="trouble__ways">
+             <a href={href({ name: 'makers' })}
+                onClick={(e) => { e.preventDefault(); navigate(href({ name: 'makers' })); }}>
+               The makers
+             </a>
+             <a href={href({ name: 'unknowns' })}
+                onClick={(e) => { e.preventDefault(); navigate(href({ name: 'unknowns' })); }}>
+               What is not known
+             </a>
+             <a href={href({ name: 'home' })}
+                onClick={(e) => { e.preventDefault(); navigate('/'); }}>
+               Back to the archive
+             </a>
+           </p>
+         </main>
+       ) : null}
     </>
   );
 }

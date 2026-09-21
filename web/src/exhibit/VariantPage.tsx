@@ -9,6 +9,7 @@ import { SpecRow, SpecTable, BasisBadge } from './values.tsx';
 import { loadConventions, type RenderingConvention } from '../app/conventions.ts';
 import { Trouble } from './Trouble.tsx';
 import './Trouble.css';
+import { toArchiveVariant, toArchiveModel } from './bridge.ts';
 import { href, navigate } from '../app/router.ts';
 import './VariantPage.css';
 
@@ -57,7 +58,7 @@ export function VariantPage({ modelId, variantId }: { modelId: string; variantId
       // The 3D spec is built with the standard-scheme convention applied, because
       // no face colour is documented for any cube. The convention notices below
       // are what keep that from reading as a fact.
-      const spec = resolveCubeVisualSpec(raw as never, (model ?? undefined) as never, {
+      const spec = resolveCubeVisualSpec(toArchiveVariant(raw), toArchiveModel(model), {
         applyStandardFaceScheme: true,
       });
       if (live) setState({ view, raw, model: model ?? null, spec, conventions });

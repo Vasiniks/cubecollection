@@ -6,6 +6,12 @@
   aspect-ratio: 1 / 1;
   background: var(--surface-stage);
   overflow: hidden;
+  /* In dark mode the stage (#060605) and the page (#121210) are close enough
+     that the plinth disappeared and the cube read as floating in the page. The
+     hairline restores the vitrine edge without adding a second surface colour;
+     in light mode it is invisible against the far paler page. */
+  outline: 1px solid var(--ink-100);
+  outline-offset: -1px;
 }
 
 .cube-canvas canvas {

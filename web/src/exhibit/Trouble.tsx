@@ -25,6 +25,23 @@ export function Trouble({ detail, children }: { detail: string; children?: React
   );
 }
 
+/** A URL that names no room. Distinct from NotHere, which is about a RECORD the
+ *  bundle does not contain — that case has to weigh research gap against
+ *  curatorial scope, and this one does not: there is simply no such page. */
+export function NoSuchRoom({ path }: { path: string }) {
+  return (
+    <div className="trouble" role="alert">
+      <p className="trouble__lede">There is no room at this address.</p>
+      <p className="trouble__reassure">
+        Nothing has been lost or withdrawn — this address has never named anything
+        in the exhibition. The archive is browsable by maker, by design, and by
+        what it does not know.
+      </p>
+      <p className="trouble__detail"><code>{path}</code></p>
+    </div>
+  );
+}
+
 /** A record the bundle does not contain. Not an error: a boundary. */
 export function NotHere({ what, detail }: { what: string; detail?: string }) {
   return (

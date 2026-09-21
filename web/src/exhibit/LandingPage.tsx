@@ -10,6 +10,7 @@ import { leadClaim, type LeadClaim } from './claim.ts';
 import { Cite } from './Cite.tsx';
 import { Trouble } from './Trouble.tsx';
 import './Trouble.css';
+import { toArchiveVariant, toArchiveModel } from './bridge.ts';
 import { href, navigate } from '../app/router.ts';
 import './LandingPage.css';
 
@@ -45,7 +46,7 @@ export function LandingPage() {
       const byId = new Map(sources.map((s) => [s.id, s]));
       const claimSources = (claim?.sourceIds ?? [])
         .map((id) => byId.get(id)).filter((s): s is RawSource => Boolean(s));
-      const spec = resolveCubeVisualSpec(raw as never, (model ?? undefined) as never,
+      const spec = resolveCubeVisualSpec(toArchiveVariant(raw), toArchiveModel(model),
         { applyStandardFaceScheme: true });
       if (live) setState({ meta, raw, model: model ?? null, spec, claim, claimSources, modelId: pick.modelId });
     })().catch((e: unknown) => {
