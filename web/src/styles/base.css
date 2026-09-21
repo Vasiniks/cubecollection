@@ -1,0 +1,40 @@
+/*
+ * CubeCollection — Base Styles
+ * Phase III, Lane B (visual design system).
+ *
+ * Depends on tokens.css being loaded first (custom properties on :root).
+ * This file does not @import it, to keep load order an explicit decision of
+ * whatever app consumes these files.
+ *
+ * STATED DIRECTION
+ * -----------------
+ * A quiet reset and quiet defaults: the interface recedes so the cube (and
+ * the evidence behind it) is the subject. No template hero, no card soup, no
+ * decorative motion.
+ *
+ * This file also carries the confidence/evidence-treatment UTILITY LAYER —
+ * the one piece of UI this design system commits to at the CSS layer, because
+ * it is the archive's defining strength (see EXHIBITION_ARCHITECTURE.md §4.1
+ * and the hard constraint on confidence/unknown/convention treatment). It is
+ * built from CSS shapes and gradients only — no icon font, no SVG asset.
+ *
+ * Sections (filled in over the next commits):
+ *   1. Reset / normalize
+ *   2. Base element styling (type, links, media, forms)
+ *   3. Focus-visible treatment
+ *   4. prefers-reduced-motion handling
+ *   5. prefers-color-scheme / color-scheme plumbing
+ *   6. Evidence & confidence utility layer (.evidence-badge)
+ */
+
+/* 1. RESET / NORMALIZE */
+
+/* 2. BASE ELEMENT STYLING */
+
+/* 3. FOCUS-VISIBLE TREATMENT */
+
+/* 4. PREFERS-REDUCED-MOTION */
+
+/* 5. PREFERS-COLOR-SCHEME / color-scheme PLUMBING */
+
+/* 6. EVIDENCE & CONFIDENCE UTILITY LAYER */

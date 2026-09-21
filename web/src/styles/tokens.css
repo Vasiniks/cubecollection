@@ -1,0 +1,65 @@
+/*
+ * CubeCollection — Design Tokens
+ * Phase III, Lane B (visual design system).
+ *
+ * STATED DIRECTION
+ * -----------------
+ * Museum/archival, not dashboard. Palette is a warm paper/ink neutral system
+ * (gallery card stock and printer's ink) with a single restrained brass/bronze
+ * accent used only for interaction, never decoration.
+ *
+ * The archive's defining feature is evidentiary: six confidence values
+ * (confirmed / probable / reported / uncertain / disputed / unknown) plus a
+ * third, non-evidentiary category — rendering convention — for values the
+ * exhibition displays by default without a historical source behind them.
+ * These get their own hue families below, verified for WCAG contrast against
+ * every surface they appear on (see docs/design/VISUAL_LANGUAGE.md for the
+ * measured ratios). Confidence must never be color-only: shape (fill amount,
+ * outline vs. solid, dashed vs. continuous) always carries the same
+ * distinction color does, and a text label always accompanies the glyph.
+ *
+ * Both prefers-color-scheme: light and dark are supported ("Gallery" /
+ * "Vitrine"), plus a manual [data-theme] override for a future UI toggle.
+ *
+ * No build tooling: plain CSS custom properties on :root, consumed by any
+ * Vite/React app later. System font stacks only — see the typography section
+ * for the optional, clearly-licensed webfont upgrade path (not applied here).
+ *
+ * Sections below (values filled in over the next commits):
+ *   1. Color — surfaces, ink/text, accent
+ *   2. Color — confidence & evidence-treatment scale
+ *   3. Typography — families, scale, weight, leading, tracking
+ *   4. Spacing scale
+ *   5. Radii
+ *   6. Elevation
+ *   7. Motion — durations & easings
+ *   8. Z-layers
+ *   9. Dark mode ("Vitrine") overrides
+ */
+
+:root {
+  /* 1. COLOR — surfaces, ink/text, accent (light / "Gallery", the default) */
+
+  /* 2. COLOR — confidence & evidence-treatment scale */
+
+  /* 3. TYPOGRAPHY */
+
+  /* 4. SPACING SCALE */
+
+  /* 5. RADII */
+
+  /* 6. ELEVATION */
+
+  /* 7. MOTION */
+
+  /* 8. Z-LAYERS */
+}
+
+/* 9. DARK MODE ("Vitrine") — system preference, then manual override */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  }
+}
+
+:root[data-theme="dark"] {
+}
