@@ -1223,10 +1223,126 @@ mobile experience of this museum be a lesser one precisely where the desktop exp
 
 ## 8. Accessibility
 
-*Skeleton.* Keyboard path per page, focus order, reduced-motion alternative, and the non-WebGL
-fallback — which, per the architecture doc §7, is not a hypothetical: 0 of 511 public variants are
-`render_ready` today, so the fallback *is* the current experience for the entire archive, not an
-edge case.
+`EXHIBITION_ARCHITECTURE.md` §7 states the fact this whole section has to design around: **0 of 527
+variants are `render_ready`.** Every cube this exhibition shows is, in some measure, the non-WebGL
+fallback's cousin already — a drawing standing in for a fact nobody has, not a scan. The fallback
+this section assesses is therefore not an edge case bolted on for a rare browser; it is a second,
+narrower instance of the same honesty problem every other page in this document solves.
+
+### 8.1 Keyboard path, per built page
+
+Only three pages exist to walk today; each is traced completely, since a complete trace of three
+real pages is worth more than a speculative one of twelve.
+
+**`/` (Landing):** the preview banner and the cube (`role="img"`) are correctly outside the tab
+order — neither is interactive, and a `role="img"` container is not a native focus target. The
+walkable path is short: **claim source link** (if the featured record's lead claim carries a URL)
+→ **"Everything the archive holds on this object"** → **Browse** → **Interrogate**. The pending
+**Trace** entry is a plain `<span>`, not a link (`.landing__way--pending` in `LandingPage.css`
+explicitly says so), and correctly never receives focus — an unbuilt path that could still be
+tabbed to and activated into nothing would be worse than one that is honestly absent from the tab
+order.
+
+**`/models/:modelId/variants/:variantId` (Variant):** **breadcrumb "Archive" link** → any
+**evidence citation with a URL** (in tier order, external, `target="_blank"`) → **"Every rendering
+convention in force"** link. Two gaps worth naming plainly rather than glossing: the confidence
+badges throughout the specification table (`BasisBadge`) are plain `<span>`s today, not buttons —
+so §3.4's promised behaviour ("every confidence tag is also an Interrogate entry point") is not yet
+keyboard-reachable per claim, only reachable in aggregate via the flat evidence list at the page's
+foot. A keyboard visitor can still reach every citation, just not scoped to the one row they were
+reading. And the rendering-convention list (`variant__convention-list`) is likewise inert — its
+`BasisBadge`s carry no `title`-triggered interaction a keyboard user can invoke, so the convention
+detail a mouse user gets from hovering the `title={value.conventionId}` attribute is not reachable
+by keyboard at all; the visible `visitor_disclosure` paragraph beside each item is the keyboard
+user's only access to that information, which is sufficient content-wise (nothing is withheld) but
+means the `title` attribute is decorative rather than a real access path.
+
+**`/conventions`:** **"Back to the archive"** link, then the page is a single long read with no
+further interactive elements — appropriate, since nothing on this page currently needs a second
+destination (a future "see an example on a real variant" link per convention would be a natural
+keyboard stop to add, and is not built).
+
+**What is not built at all:** the persistent header §3.2 specifies (home / entry-path chip /
+breadcrumb / search, present on every page) does not exist in `App.tsx` — each page currently
+supplies its own ad hoc "get back" link rather than sharing one component. There is also no skip
+link (`tokens.css`'s `--z-max` comment reserves the z-index for one — "skip link" — but nothing
+consumes it yet). Both are real, load-bearing gaps for keyboard use specifically: without the
+persistent header, "Home always returns to `/`... the one link guaranteed present and identical on
+every page" (§3.2) is not yet true, and without a skip link every keyboard visitor re-tabs through
+the same breadcrumb/banner chrome on every page load before reaching content.
+
+### 8.2 Focus order, restated as a rule for pages not yet built
+
+The pattern the three built pages already agree on, made explicit so the next twelve don't drift:
+**structural return-path link first (breadcrumb/back), primary content next in reading order,
+outbound citations in evidence order (never DOM-shuffled by hover state), single trailing
+cross-reference last.** Nothing in this document's built pages relies on `tabindex` greater than 0
+anywhere — source order *is* focus order throughout, which is also why §2's own "reading order" for
+every page spec doubles as its keyboard order with no translation needed.
+
+### 8.3 Reduced motion — two mechanisms, not one, because two rendering technologies are in play
+
+`base.css` §4 collapses `--duration-*` to near-zero under `prefers-reduced-motion: reduce`, which
+handles every CSS transition in the system (theme cross-fade, link colour, hover states) for free —
+a component author never writes a second media query as long as they animate against the tokens.
+That mechanism cannot reach into the 3D layer, because a CSS custom property cannot drive a
+`requestAnimationFrame` loop inside Three.js — so `CameraChoreographer` (`web/src/three/CameraStates.ts`)
+carries its **own**, independent check: `reducedMotion: () => window.matchMedia('(prefers-reduced-motion: reduce)').matches`,
+wired in by `CubeCanvas.tsx`, read fresh at the moment of every `moveTo()` call rather than cached
+once. When it reads `true`, the camera **snaps** to the target state instead of tweening across
+`--duration-deliberate` (700ms) — the one motion `VISUAL_LANGUAGE.md` §5 calls "museum pacing"
+reserved for an object arriving on its plinth. Concretely, this also means the render loop
+(`CubeCanvas.tsx`'s on-demand `tick`) never spins up at all for a reduced-motion visitor loading a
+page whose camera starts already at its resting state — no animation to skip, so no per-frame cost
+either. **Both mechanisms are wired, not just the CSS one** — this is worth stating because it would
+have been easy to ship the CSS layer, believe "reduced motion is handled," and miss that the one
+piece of motion this design system treats as significant enough to name (§5's "one signature move")
+lives entirely outside CSS's reach.
+
+### 8.4 The non-WebGL fallback, assessed
+
+`CubeCanvas.tsx` wraps `new SceneRig(...)` in a `try/catch`; `SceneRig`'s own `THREE.WebGLRenderer`
+constructor throws when no WebGL context is available, and the catch sets a `failed` string that
+switches the component to `cube-canvas--unavailable`. What that state renders:
+
+> "This browser cannot draw the object. Nothing is lost from the record: the cube was never
+> photographed, only drawn, and everything it showed is described in words on this page."
+
+**What is right about it:** it does not apologise for the browser, and it does not treat the failure
+as a lesser experience — it reuses the exact honesty framing the rest of the archive uses for a
+missing fact ("nothing is lost... described in words") to describe a missing *rendering capability*,
+which is the correct move: a visitor who cannot see the cube loses precisely as much as a visitor who
+can, since what the cube shows is mostly convention rather than fact regardless. The fallback also
+reuses the *same* `aria-label` text the working `CubeCanvas` passes in (`LazyCube`'s `label` prop is
+shared across both branches), so a screen-reader visitor receives identical information whether or
+not their browser can render WebGL — the fallback is not a second-class description.
+
+**What is thin, on inspection:** three things, named precisely rather than hand-waved —
+
+1. **Only construction failure is caught.** A context that is created successfully and then lost
+   mid-session (`webglcontextlost`, a real event on GPU driver resets, especially on lower-end
+   mobile hardware) has no listener anywhere in `SceneRig` or `CubeCanvas` — a visitor in that
+   situation would be left with a blank or frozen canvas, not the honest fallback text, because the
+   `try/catch` already ran and succeeded before the loss occurred.
+2. **The fallback's own accessible name may not expose everything a sighted visitor sees.** The
+   `cube-canvas--unavailable` div carries `role="img" aria-label={label}` as a single node with two
+   visible `<p>` children (the label restated, then the reason). Several screen readers treat a
+   `role="img"` element's content as equivalent to an `<img>`'s — exposed only via its accessible
+   name, with DOM children not independently announced in browse mode. If that holds for the
+   assistive technology a given visitor uses, they would hear the `aria-label` text but not
+   necessarily the second paragraph's specific reassurance ("nothing is lost from the record")
+   as separate content — the same information is present in `label`, which already states "its
+   colours, piece geometry and surface are rendering conventions, not documented facts" (VariantPage)
+   or the equivalent (Landing), so nothing is actually withheld, but the two-paragraph structure
+   visible on screen is not guaranteed to be two announced units for every AT.
+3. **No listener for WebGL becoming unavailable *after* the component has already committed to the
+   working branch** at all (point 1's specific case), and no periodic re-check — reasonable for a
+   v1, but worth stating as a known boundary rather than an implicit one.
+
+None of the three is a reason to rebuild the fallback; the second is a candidate one-line fix
+(`aria-describedby` pointing at the reason paragraph, rather than relying on children of a
+`role="img"` node) for whichever lane next touches `CubeCanvas.tsx`, and the first and third are
+scoped, named follow-up work rather than an open-ended concern.
 
 ---
 
@@ -1250,5 +1366,5 @@ Tracked here so a killed session leaves an honest state. Empty once §1–9 are 
 - [x] §5 unknown experience
 - [x] §6 microcopy
 - [x] §7 responsive behaviour
-- [ ] §8 accessibility
+- [x] §8 accessibility
 - [ ] §9 vertical slice full spec
