@@ -8,8 +8,10 @@ proves the chain before anything else is built. It consumes `dist/public` only, 
 `EXHIBITION_ARCHITECTURE.md` §8, and invents no archival content — every example below is a real
 record from `data/`, named as such.
 
-Status: in progress. Sections are being filled in order; §9 (open items) tracks what is not yet
-written.
+Status: §1–9 complete. "Open items" below is now a record of what this specification found still
+unbuilt against it (the model page and compare page, the evidence drawer, the persistent header,
+a `relationships` field on `VariantView`), not a list of unwritten sections — see §9.5 for the full,
+ordered list.
 
 ---
 
@@ -1348,16 +1350,153 @@ scoped, named follow-up work rather than an open-ended concern.
 
 ## 9. The vertical slice
 
-*Skeleton.* One model, end to end. Candidates checked against the real data in `data/variants/`:
-`gan-flagship-16` has 8 variant files, `dayan-guhong-pro-m` has 6. Chosen: `gan-flagship-16` — see
-§9 for the full justification, including why its specific 8 variants are an unusually good fit for
-demonstrating confidence variance and the `unknown` experience, not just variant count.
+### 9.1 The count, verified against real data
+
+`data/variants/gan/gan-flagship-16/` holds exactly **8** `.yml` files (`amyth-winter-limited-edition`,
+`aqualis-2026-summer-limited-edition`, `maglev-max-dual-wr-limited-edition`, `maglev-max-uv-coated`,
+`maglev-uv-coated`, `max-l-uv-coated`, `max-picube-20-magnet-ball-core-mod`,
+`picube-20-magnet-ball-core-mod`) — confirmed by directory listing for this document, not carried
+over from an earlier count. This agrees with §1's own compare-gate table (`/models/:modelId/compare`
+row: "`gan-flagship-16` 8") and with `EXHIBITION_ARCHITECTURE.md` §9's original candidate
+comparison. `dayan-guhong-pro-m` has 6, confirmed the same way — still the correct runner-up, still
+not chosen. The archive-wide totals this document has cited throughout also check out against real
+directory counts: **54** manufacturers (`data/manufacturers/*.yml`), **132** families
+(`data/families/*.yml`), **269** models (`data/models/**/*.yml`), **527** variants
+(`data/variants/**/*.yml`), **616** sources (`data/sources/*.yml`).
+
+One thing does not check out and is worth flagging precisely rather than silently working around:
+`EXHIBITION_ARCHITECTURE.md` §9 describes `gan-flagship-16` as "part of a 13-model lineage." Its
+actual family, per `data/models/gan/gan-flagship-16.yml`'s own `family_id`, is `gan-flagship-series`
+— **8 models** (§2.4 of this document uses that exact family as its worked lineage example: "GAN11
+M Pro through GAN17, plus GAN Mini M Pro"). The 13-model family in this archive is `gan-356`, a
+different GAN lineage entirely. This looks like a conflation in the architecture document rather
+than a fact about the data, and it sits outside this lane's file allow-list to correct at the
+source — noted here so the next lane that reads both documents doesn't inherit the error, and
+because it doesn't change the choice: `gan-flagship-16` is still the right slice, for reasons that
+don't depend on which of GAN's two lineages it sits in (§9.2).
+
+### 9.2 Why this model, specifically — beyond variant count
+
+Eight variants alone would justify the ≥2-variant compare gate but not necessarily a *vertical*
+slice. What makes `gan-flagship-16` the right choice is that its specific eight span nearly the
+entire range this document has argued a visitor needs to see in one object:
+
+- **A real confirmed fact sitting inside an all-`stub` record** — every one of the eight carries
+  `status: stub`, and `/config/maglev` on `gan-flagship-16--maglev-uv-coated` is independently
+  `confirmed`, sourced to GAN's own product page. This is the exact case §1.0 opens on: *stub* means
+  "not yet reviewed for publication," not "nothing is known," and a visitor needs to see both axes
+  refuse to collapse into one badge on the very object they're looking at.
+  - **A genuine judgement call, disclosed rather than hidden.** `maglev-max-dual-wr-limited-edition`'s
+  own source comment (`edition.signature_of` left populated while the archivist's note explains why
+  `signature` was nonetheless added to `edition.types`) is a real instance of an archivist reasoning
+  in the open, not a clean either/or.
+- **The full unknown taxonomy, not just one gap.** Across these eight: `run_size: null` at
+  `confidence: unknown` with an explicit "researched and not found. never estimated" note
+  (`amyth-winter-limited-edition`); `colorway.scheme: custom` present in the document with **no
+  attestation at all** (§5.3's real example, same record); `individually numbered: false` at
+  `uncertain` because absence of a numbering scheme is weak evidence rather than silence
+  (`maglev-max-dual-wr-limited-edition`); and, archive-wide, the six rendering conventions apply to
+  all eight uniformly (no face colour, no logo, no geometry profile documented for any of them).
+  One model produces every distinct unknown pattern this document names.
+- **A retailer-derived mod alongside manufacturer-sourced variants**, in
+  `picube-20-magnet-ball-core-mod` / `max-picube-20-magnet-ball-core-mod` — the same aftermarket
+  service (`picube`, `kind: service`, §5.5) whose zero-model roster entry this document had to
+  explain shows up here as *evidence*, not absence: a real, structural link between two sections of
+  this document (roster-level unknown and the object-level record) that a single-source-per-variant
+  model would never exercise.
+- **A named, dated, evidenced dispute at the model layer**, not just the variant layer: GAN13's
+  presence/absence flag on the same family's chain (§2.4) sits one hop away from this exact model,
+  so a visitor who lands here via Trace has the dispute one click behind them, not a hypothetical
+  elsewhere in the archive.
+
+### 9.3 Assessed against the architecture document's own five criteria
+
+`EXHIBITION_ARCHITECTURE.md` §9 sets five conditions the slice "must demonstrate." Taking each in
+turn, against what is actually built (`VariantPage.tsx`, `LandingPage.tsx`, `App.tsx`):
+
+| Criterion | Verdict | Evidence |
+|---|---|---|
+| A variant rendered from recorded parameters | **Met** | `resolveCubeVisualSpec()` builds a `CubeVisualSpec` from the variant's real `config`/`colorway` fields (size, coating, maglev) with per-field provenance (`three/types.ts`); conventions fill only the gaps that provenance marks unknown, per §5.1's precedence rule |
+| Switching configuration and seeing the model change | **Not met** | There is no way, inside a real page, to move from one `gan-flagship-16` variant to a sibling. `VariantPage.tsx` renders one variant with no links to the other seven; `/models/gan-flagship-16` and `/models/gan-flagship-16/compare` both fall through `App.tsx`'s route switch to the debug shell, which hardcodes exactly two of the eight variant links rather than deriving a roster. `VariantView` (`data/types.ts`) additionally carries no `relationships` field at all — unlike `ModelView`, which has both `relationships` and `inboundRelationships` — so even the `modified_from` link the PiCube mod variants need back to their base (§2.6, §2.7's own "sibling relationships... render as a link") has no view-model field to read from yet. This is the one criterion the built slice does not meet, and it is a real gap rather than a matter of interpretation. |
+| Confidence rendered rather than hidden | **Met, and beyond the bar** | `SpecRow`/`BasisBadge` render confidence as a full word at value-column type size on every field, including the six-value vocabulary, the two unknown kinds, and rendering conventions — §8.1 already documents the one shortfall (badges aren't independently keyboard-focusable), which is a *reachability* gap, not a *visibility* one |
+| The evidence drawer showing a real excerpt | **Partially met** | Real excerpts are shown — `VariantPage.tsx`'s evidence section renders verbatim `blockquote` excerpts with tier, kind, publisher and access date for every cited source, satisfying "a real excerpt" — but there is no *drawer*: no slide-in panel, no `?evidence=` query parameter, no `/evidence/:sourceId` permalink route, and no per-claim scoping (§3.3, §2.8). What's shown is the full, always-visible evidence list per §2.7's own layout, not the drawer component §2.8 specifies. |
+| One honest gap, displayed as unknown | **Met, strongly** | Both curated example variants carry real `UnknownValue`s rendered as findings, not blanks — §9.2 above lists three distinct patterns across this one model alone, more than the architecture document's own bar of one |
+
+**Net: three of five fully met, one partially, one not met.** The one full miss — configuration
+switching — is also the one the architecture document itself calls the sharpest test ("If the slice
+cannot show an `unknown` honestly, the design is wrong" is the stated bar for the *other* criterion;
+this document adds that a slice which cannot show a visitor moving between two configurations of the
+*same* model has not yet proven the "model" layer of the five-layer chain data → 3D object →
+interaction → historical context → exhibition presentation — only the "3D object" and "historical
+context" layers are exercised by a single, unlinked variant page).
+
+### 9.4 Built vs. specified, §2.7 line by line
+
+Structurally, the built `VariantPage.tsx` matches its own spec closely — closer than most
+first-implementation gaps this document has found elsewhere. Breadcrumb, status line, object stage,
+name, and a specification table with confidence as a same-size column are all present in the
+prescribed reading order. Two deliberate-looking departures, both improvements rather than defects:
+
+- **The convention disclosure moved from inline captions under the object to its own full section**
+  ("What you are looking at," between the name and the specification table) rather than the
+  wireframe's terse `[ face colours: STANDARD SCHEME (rendering convention) ⓘ ]` caption strip. The
+  built version is more thorough — full `visitor_disclosure` text and `asserts_nothing_about` for
+  every convention in force, not a one-line label — at the cost of moving further from the object
+  than the original wireframe placed it. Given §5.2's argument that a convention badge must never be
+  mistaken for evidence, more explanation earlier is the right trade.
+- **The evidence section has no on-demand drawer disclosure** — every citation's excerpt is always
+  rendered, rather than collapsed behind an "open evidence drawer →" affordance as §2.7's wireframe
+  shows. For a page with 1–4 citations (both curated examples), always-open reads as more honest,
+  not less; it would need reassessment on a variant with the archive's upper end of citation counts
+  before generalising as "the drawer is unnecessary."
+
+One place the built page is thinner than its own spec, not by redesign but by omission: §2.7's
+"Interactive" paragraph specifies that `modified_from`/sibling relationships "render as a link" —
+not built, per §9.3's finding on `VariantView`'s missing `relationships` field.
+
+### 9.5 What should be built next, in order
+
+1. **`/models/:modelId` and `/models/:modelId/compare`, for `gan-flagship-16` specifically.** This
+   closes the one unmet criterion (§9.3) and is the highest-leverage next step: it turns the slice
+   from "one plinth" into "one case with the plinth in context," which is the actual bar the
+   architecture document set.
+2. **A `relationships` field on `VariantView`**, mirroring `ModelView`'s, so the PiCube mod variants
+   (`max-picube-20-magnet-ball-core-mod` / `picube-20-magnet-ball-core-mod`) can link back to their
+   base configuration — a small, scoped type change that unblocks both the compare page's own
+   relationship column (§2.6) and §2.7's sibling-link promise.
+3. **The evidence drawer itself** (§2.8): the slide-in panel, `?evidence=` query-parameter state, and
+   the `/evidence/:sourceId` permalink route. Everything it needs is already in the view-model
+   (`EvidenceRef` in `data/types.ts`) — this is a component and a routing addition, not a data-layer
+   change.
+4. **The shared persistent header** (§3.2) and a skip link (§8.1) — every additional page built
+   without them multiplies the same gap rather than fixing it once.
+5. **Per-claim keyboard access to the evidence drawer** (§8.1) — once (3) exists, wiring
+   `BasisBadge` to open it scoped to one row is what actually delivers §3.4's "every confidence tag
+   is also an Interrogate entry point," not just the aggregate evidence list.
+6. **Component-level tests for the three built pages.** `web/src/data/adapter.test.ts` and
+   `web/src/three/conventions.test.ts` are the only test files in `web/src/`; nothing exercises
+   `LandingPage.tsx`, `VariantPage.tsx`, or `ConventionsPage.tsx` directly, so a future refactor has
+   no regression net for exactly the rules (§5.1's four branches, §5.2's badge precedence) this
+   document has spent the most words insisting must never drift.
+7. **The error-copy fix named in §6.8** and **an SPA-fallback rewrite rule for whatever host serves
+   this build** — `web/vite.config.ts` and the repository carry no `vercel.json`/`_redirects`/
+   `netlify.toml`, and this is a pure client-side router (`window.history.pushState`,
+   `web/src/app/router.ts`) with no server-rendering step, so a direct hit to `/conventions` on a
+   naively configured static host would 404 rather than resolve — a deployment concern, not a design
+   one, but one that would silently break every deep link this document has spent nine sections
+   insisting must be real and shareable (§3.1).
 
 ---
 
 ## Open items
 
-Tracked here so a killed session leaves an honest state. Empty once §1–9 are complete in full.
+All nine sections are complete. This checklist is kept as a record that they were, not as a
+tracker of unwritten prose — the actual open work this specification found against the running
+app is §9.5's ordered list (model page + compare page, a `relationships` field on `VariantView`,
+the evidence drawer, the shared header and skip link, per-claim keyboard access, component tests,
+error-copy, and an SPA-fallback hosting rule), plus the two smaller, named gaps in §5.3 (the
+unattested-value note column) and §8.4 (`webglcontextlost`, the fallback's accessible-name
+structure).
 
 - [x] §1 route map — full table
 - [x] §2 page specs — all routes, wireframes
@@ -1367,4 +1506,4 @@ Tracked here so a killed session leaves an honest state. Empty once §1–9 are 
 - [x] §6 microcopy
 - [x] §7 responsive behaviour
 - [x] §8 accessibility
-- [ ] §9 vertical slice full spec
+- [x] §9 vertical slice full spec
